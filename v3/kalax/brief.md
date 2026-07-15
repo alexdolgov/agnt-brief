@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Kalax (`kalax`)
 - Website: [https://kalax.io/](https://kalax.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: blast
-- Contract surface: 10 unique implementations (12 raw deployments)
+- Chains: blast, scroll
+- Contract surface: 16 unique implementations (39 raw deployments)
 - Coverage basis: 0/7 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $125,248.57
 - On-chain TVL (included contracts): n/a
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 10 contract row(s) across blast. Struct
 
 ## Fork Analysis
 
-0 of 5 contracts are derived from known codebases. 5 contracts have no detected origin.
+0 of 11 contracts are derived from known codebases. 11 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -52,6 +52,12 @@ The pinned logic-topography run contains 10 contract row(s) across blast. Struct
 
 ### Original Contracts (no fork detected - full audit scope)
 
+- UnnamedContract (`0x14ed42...880b4b`, chain 81457)
+- UnnamedContract (`0x552414...191ced`, chain 81457)
+- UnnamedContract (`0x67fb1a...bda10e`, chain 81457)
+- UnnamedContract (`0x8f0968...f2211b`, chain 81457)
+- UnnamedContract (`0xffeca8...5875b8`, chain 81457)
+- KalaxMultiRewardV2Farm (`0x528e67...3c712e`, chain 81457)
 - Token (`0x2f67f5...7e606d`, chain 81457)
 - TransparentUpgradeableProxy (`0xe63153...aef5a1`, chain 81457)
 - TransparentUpgradeableProxy (`0xfe8994...9142a5`, chain 81457)
@@ -60,7 +66,7 @@ The pinned logic-topography run contains 10 contract row(s) across blast. Struct
 
 ## Contract Surface Quality
 
-- Indexed contracts: 10; live-surface contracts included: 10 (9 live, 1 unknown).
+- Logic-topography rows: 10; live-surface rows included: 10 (10 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 9/10 live.
 - Detected codebases: none
@@ -71,15 +77,15 @@ The pinned logic-topography run contains 10 contract row(s) across blast. Struct
 - Coverage of address-book-owned deployed-live implementations: 0/7 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 9 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (1 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 8
-- Deployed-live implementations: 9 of 10 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/7
-- Verified + Unaudited implementations: 7
+- Outside the address book: 6 discovered implementations shown in the inventory but excluded from coverage (1 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 23
+- Confirmed-live implementations: 9 of 16 unique; 7 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/12
+- Verified + Unaudited implementations: 12
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 10
-- Raw deployments: 12
+- Unverified implementations: 4
+- Unique implementations: 16
+- Raw deployments: 39
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -98,17 +104,22 @@ The pinned logic-topography run contains 10 contract row(s) across blast. Struct
 
 - None
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (12)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| KalaxMultiRewardV2Farm | unknown | project_anchor | own_supporting | 3 | blast | unit-388086 (3 proxies) | 3 deployments: blast `0x1cb8f6...6c9115`; blast `0xe63153...aef5a1`; blast `0xfe8994...9142a5` | ⚠️ Unaudited |
+| KalaxMultiRewardV2Farm | unknown | project_anchor | own_supporting | 3 | blast | unit-388086 (3 proxies) | 4 deployments: blast `0x1cb8f6...6c9115`; blast `0x528e67...3c712e`; blast `0xe63153...aef5a1`; blast `0xfe8994...9142a5` | ⚠️ Unaudited |
 | Token | token | project_anchor | own_supporting | 0 | blast | unit-388083 | `0x2f67f5...7e606d` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388087 | `0x4c0013...4ae2db` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388088 | `0x70591e...da132d` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388090 | `0x7e0eae...de4d57` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388089 | `0x8273d9...9cdc80` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388085 | `0x8ab2a0...59f536` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | blast | n/a | 2 deployments: blast `0x0676e7...8b3598`; blast `0xb99aed...8980ed` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 6 | blast | n/a | 7 deployments: blast `0x14421b...4ace1a`; blast `0x31dd65...244adb`; blast `0x32066b...9a1b56`; blast `0x87a894...147a44`; blast `0x8d171d...1bfae1`; blast `0xbdf9ad...ed644f`; blast `0xd834c6...6467fc` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388085 | 2 deployments: blast `0x14ed42...880b4b`; blast `0x8ab2a0...59f536` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | blast | n/a | 3 deployments: blast `0x2bb41a...7cb513`; blast `0x4fbd0d...2a3166`; blast `0x9a8c08...2c6134` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 4 | blast | n/a | 5 deployments: blast `0x3b4733...22304a`; blast `0x87228e...9b0a05`; blast `0x8ac156...721e4a`; blast `0xa0fc27...191985`; blast `0xed3897...5a9f4f` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | blast | n/a | 3 deployments: blast `0x41ed90...d87059`; blast `0x98ae4a...b4340a`; blast `0xa6bb88...ee638c` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388087 | 2 deployments: blast `0x4c0013...4ae2db`; blast `0x552414...191ced` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388088 | 2 deployments: blast `0x67fb1a...bda10e`; blast `0x70591e...da132d` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388090 | 2 deployments: blast `0x7e0eae...de4d57`; blast `0xffeca8...5875b8` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-388089 | 2 deployments: blast `0x8273d9...9cdc80`; blast `0x8f0968...f2211b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -122,12 +133,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x6bf073...07cf86` | ❓ Unverified |
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | blast | unit-388084 | `0xd3f350...a98213` | ❓ Unverified |
 | veKALA token | unknown | project_anchor | own_supporting | 0 | blast | unit-388081 | `0x1aa622...fee02e` | ❓ Unverified |
 | xKALA token | unknown | project_anchor | own_supporting | 0 | blast | unit-388082 | `0x1f4f17...9f934a` | ❓ Unverified |
@@ -165,8 +177,8 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 2 |
 | upstream | 0 |
-| standard_library | 5 |
-| needs_review | 3 |
+| standard_library | 6 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 

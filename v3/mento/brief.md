@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Mento (`mento`)
 - Website: [https://www.mento.org/](https://www.mento.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: celo
-- Contract surface: 77 unique implementations (77 raw deployments)
+- Chains: celo, ethereum
+- Contract surface: 111 unique implementations (135 raw deployments)
 - Coverage basis: 17/21 confirmed own live verified implementations (81.0%); conservative 81.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $13,334,653.00
 - On-chain TVL (included contracts): n/a
@@ -179,7 +179,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 21; live-surface contracts included: 21 (21 live, 0 unknown).
+- Logic-topography rows: 21; live-surface rows included: 21 (21 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 77/77 live.
 - Detected codebases: none
@@ -190,15 +190,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 17/21 (81.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 77 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 2
-- Deployed-live implementations: 77 of 77 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 17/21
-- Verified + Unaudited implementations: 4
+- Outside the address book: 34 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 3
+- Confirmed-live implementations: 77 of 111 unique; 34 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 17/33
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
-- Unverified implementations: 56
-- Unique implementations: 77
-- Raw deployments: 77
+- Unverified implementations: 78
+- Unique implementations: 111
+- Raw deployments: 135
 - Audits discovered: 23 (23 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 9
 - ASD (verified + unaudited TVL): n/a
@@ -211,10 +211,10 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ChainSecurity | Tier 1 | 14 | 66.7% | 2026-02 |
-| 0xMacro | Tier 2 | 3 | 14.3% | 2024-03 |
-| Cyfrin | Tier 1 | 1 | 4.8% | 2024-07 |
-| OpenZeppelin | Tier 1 | 1 | 4.8% | 2021-02 |
+| ChainSecurity | Tier 1 | 14 | 42.4% | 2026-02 |
+| 0xMacro | Tier 2 | 3 | 9.1% | 2024-03 |
+| Cyfrin | Tier 1 | 1 | 3.0% | 2024-07 |
+| OpenZeppelin | Tier 1 | 1 | 3.0% | 2021-02 |
 
 ## Contract Surface
 
@@ -240,13 +240,25 @@ Removals (removed from original): none
 | TroveNFT | token | project_anchor | own_supporting | 0 | celo | unit-389111 | `0x46273a...72c6b6` | ✅ Audited |
 | VirtualPoolFactory | registry | project_anchor | own_supporting | 0 | celo | unit-389101 | `0x22abd4...e5acb3` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| Accounts | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 3 deployments: celo `0x0fe151...67ef53`; celo `0x565677...e2b98c`; celo `0xbac4a3...05f603` | ⚠️ Unaudited |
+| AttestationsProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 18 deployments: celo `0x2496fd...8e9a3d`; celo `0x252b03...5f1649`; celo `0x30b3c1...0595ac`; celo `0x3a4936...edb3f4`; celo `0x488deb...6c8fa6`; celo `0x4a241b...877da9`; celo `0x65e25c...799411`; celo `0x673f19...74eecb`; celo `0x68da81...504785`; celo `0x93d52a...a0ecf7`; celo `0xb53ce2...d8d96a`; celo `0xc834e7...359afd`; celo `0xcc6517...9e8fbe`; celo `0xdadd05...6f9303`; celo `0xdd944d...99f451`; celo `0xeaaf55...bc9149`; celo `0xf114c7...f5406a`; celo `0xff2ba5...c9fd2d` | ⚠️ Unaudited |
+| Election | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x169c94...3009bc`; celo `0x3db69c...9f6f28` | ⚠️ Unaudited |
+| EpochManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x91e35c...dfc535` | ⚠️ Unaudited |
+| EpochRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x4cadba...562aba`; celo `0x9dc549...f050d9` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | celo | n/a | `0x876477...9e9ae1` | ⚠️ Unaudited |
+| GoldToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x04a182...c7edb2`; celo `0xb16516...b2c19d` | ⚠️ Unaudited |
+| Governance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x40bca4...1824e6`; celo `0xf51d27...7a215d` | ⚠️ Unaudited |
+| GovernanceSlasher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb1b7b6...c51e9e` | ⚠️ Unaudited |
 | HintHelpers | periphery | project_anchor | own_supporting | 0 | celo | unit-389146 | `0xafd741...374d82` | ⚠️ Unaudited |
+| IntegerSortedLinkedList | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xa86051...0d047c` | ⚠️ Unaudited |
+| MultiSig | governance | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x68e231...ee3903`; celo `0xad52b8...14e7fc` | ⚠️ Unaudited |
 | MultiTroveGetter | unknown | project_anchor | own_supporting | 0 | celo | unit-389127 | `0x78fd33...f8327f` | ⚠️ Unaudited |
 | ReserveTroveFactory | registry | project_anchor | own_supporting | 0 | celo | unit-389092 | `0x028594...9519e1` | ⚠️ Unaudited |
+| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd3d2e5...2137e1` | ⚠️ Unaudited |
 | StableTokenCADProxy | token | project_anchor | own_supporting | 0 | celo | unit-389165 | `0xff4ab1...2b6325` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -261,21 +273,29 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (56)
+### ❓ Unverified (78)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x03e39a...7d1089` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389093 | `0x06346c...8aaa15` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389094 | `0x064d8b...cd74e9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x066f67...bd25f2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x08a4b5...f0bd29` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389096 | `0x0c0712...06dddb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x0cb6fd...42422f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389097 | `0x0feba7...53228d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389098 | `0x105d4a...c20d7b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x120c00...49e892` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389099 | `0x1b78f6...143e37` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x1e3d01...42ba5f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389102 | `0x247cb6...211663` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389103 | `0x2d5d7e...e8c1a5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x2dad1c...64f261` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389104 | `0x303ed1...24ab39` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x30584e...9f3f7d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389105 | `0x34c5bb...485d73` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389106 | `0x3efad8...c5a2d0` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389107 | `0x420fbd...dee148` | ❓ Unverified |
@@ -289,8 +309,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389119 | `0x4c3585...410bf6` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389120 | `0x4dbc33...87bf68` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389121 | `0x4e78bd...dcb985` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x4efa94...8bc05e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x55f3b4...ecb381` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x65534a...043372` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389122 | `0x70536e...f0de51` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389123 | `0x717550...f492f9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x72306f...72c33d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389124 | `0x73f93d...f29a08` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389125 | `0x765de8...b1282a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389126 | `0x777a82...6b4cad` | ❓ Unverified |
@@ -299,6 +323,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389131 | `0x815795...74c318` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389132 | `0x890db8...6e2147` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389133 | `0x8a567e...4041ea` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x8bc96d...272e59` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389135 | `0x8c0014...3fcb56` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389136 | `0x8cb051...b77f30` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389138 | `0x9380fa...ed4eb9` | ❓ Unverified |
@@ -309,14 +334,23 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389145 | `0xaa6a9b...e31823` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389147 | `0xb285d4...3ddd2d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389150 | `0xb55a79...ee131d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb658b5...be2b54` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb7feac...ff582a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389151 | `0xb910a7...671cdf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xb98746...ae9feb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xbcb789...c3a567` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389152 | `0xc16d23...1df5ff` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389153 | `0xc1b767...256059` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389154 | `0xc45ecf...892e20` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc682c3...67330d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xc99d54...dd411e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xcb32ea...d10f3f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389155 | `0xcc5bb0...872a8a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389156 | `0xccf663...a40746` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389157 | `0xcf7031...5b4ced` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xd0716c...015c3f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389158 | `0xd8763c...d6ca73` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xddf776...0b27fe` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389159 | `0xdebed1...7550fb` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389160 | `0xe2702b...a76f71` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-389161 | `0xe8537a...ab4787` | ❓ Unverified |
@@ -557,10 +591,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 21 |
+| native | 31 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 56 |
+| standard_library | 2 |
+| needs_review | 78 |
 
 ## Scope Matching Notes
 

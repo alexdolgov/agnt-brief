@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Piku Finance (`piku`)
 - Website: [https://piku.co/](https://piku.co/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 12 unique implementations (12 raw deployments)
+- Contract surface: 57 unique implementations (58 raw deployments)
 - Coverage basis: 1/8 confirmed own live verified implementations (12.5%); conservative 12.5% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $8,681,859.31
 - On-chain TVL (included contracts): n/a
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum. Str
 
 ## Fork Analysis
 
-0 of 7 contracts are derived from known codebases. 7 contracts have no detected origin.
+0 of 8 contracts are derived from known codebases. 8 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -52,6 +52,7 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum. Str
 
 ### Original Contracts (no fork detected - full audit scope)
 
+- ERC20IssuanceUpgradeable_Blacklist_v1 (`0x9e40b6...e20370`, chain 1)
 - PendleMarketV7 (`0x6354b7...7dcec4`, chain 1)
 - PendlePrincipalToken (`0x3ffaa9...04d129`, chain 1)
 - PendleYieldToken (`0xacd577...fdd6be`, chain 1)
@@ -62,7 +63,7 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum. Str
 
 ## Contract Surface Quality
 
-- Indexed contracts: 13; live-surface contracts included: 13 (8 live, 5 unknown).
+- Logic-topography rows: 13; live-surface rows included: 13 (9 live, 4 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 8/12 live.
 - Detected codebases: none
@@ -73,15 +74,15 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum. Str
 - Coverage of address-book-owned deployed-live implementations: 1/8 (12.5%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 8 own, 4 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 6
-- Deployed-live implementations: 8 of 12 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/8
-- Verified + Unaudited implementations: 7
+- Outside the address book: 45 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 2 standard proxy/library)
+- Proxy deployments represented within implementation groups: 46
+- Confirmed-live implementations: 8 of 57 unique; 49 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/55
+- Verified + Unaudited implementations: 54
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 12
-- Raw deployments: 12
+- Unverified implementations: 2
+- Unique implementations: 57
+- Raw deployments: 58
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -94,7 +95,7 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum. Str
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Omega Security | Tier 2 | 1 | 12.5% | 2025-07 |
+| Omega Security | Tier 2 | 1 | 1.8% | 2025-07 |
 
 ## Contract Surface
 
@@ -102,22 +103,65 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum. Str
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERC20IssuanceUpgradeable_Blacklist_v1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-251262 | `0x098697...e95fe6` | ✅ Audited |
+| ERC20IssuanceUpgradeable_Blacklist_v1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-251262 | 2 deployments: ethereum `0x098697...e95fe6`; ethereum `0x9e40b6...e20370` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (11)
+### ⚠️ Verified + Unaudited (54)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | AUT_Roles_v1 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-251259 | `0x2f7656...7c2fb3` | ⚠️ Unaudited |
 | FM_PC_Oracle_Redeeming_v1 | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-251264 | `0x7e0305...f9a797` | ⚠️ Unaudited |
 | LM_Oracle_Permissioned_v1 | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-251261 | `0x433471...b33552` | ⚠️ Unaudited |
+| Morpho | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbbbbbb...eeffcb` | ⚠️ Unaudited |
+| PendleAaveV3MerklRewardsSYUpg | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x514d2f...c102cb` | ⚠️ Unaudited |
+| PendleAaveV3MerklRewardsSYUpg | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x751d64...96940e` | ⚠️ Unaudited |
+| PendleAaveV3MerklRewardsSYUpg | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x936af9...773f54` | ⚠️ Unaudited |
+| PendleDoubleERC4626NoRedeemSY | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x77d2bc...bafb20` | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x095707...9c1dab` | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x399e42...80a209` | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x4a312f...e1ed36` | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x54c398...f7bc75` | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x6231e6...b9bed4` | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x725e18...3381aa` | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x785685...59f8e6` | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xc34e7d...ec4c8d` | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xdeb45c...03b75e` | ⚠️ Unaudited |
+| PendleERC20WithOracleSY | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xeefa42...0447c1` | ⚠️ Unaudited |
 | PendleERC20WithOracleSY | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-251260 | `0xf51453...62a2d9` | ⚠️ Unaudited |
+| PendleERC4626NoRedeemNoDepositUpgSY | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x3f0293...5614b0` | ⚠️ Unaudited |
+| PendleERC4626NoRedeemNoDepositUpgSY | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x44a4ff...08d2c3` | ⚠️ Unaudited |
+| PendleERC4626NoRedeemNoDepositUpgSY | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x47b50d...699629` | ⚠️ Unaudited |
+| PendleERC4626NoRedeemNoDepositUpgSY | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xc9950c...21283a` | ⚠️ Unaudited |
+| PendleERC4626NoRedeemWithAdapterAndSupplyCapSY | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x10c5e7...666409` | ⚠️ Unaudited |
+| PendleERC4626SYYieldTokenScaled18 | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x488110...9c2f0d` | ⚠️ Unaudited |
+| PendleERC4626SYYieldTokenScaled18 | token | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xadbeb9...82fb62` | ⚠️ Unaudited |
+| PendleLidoGGVSY | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x55cb95...a1c171` | ⚠️ Unaudited |
 | PendleMarketV7 | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-251257 | `0x6354b7...7dcec4` | ⚠️ Unaudited |
+| PendleMidasSY | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x093bb9...81bb4a` | ⚠️ Unaudited |
+| PendleMidasSY | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x457904...a059d6` | ⚠️ Unaudited |
+| PendleMidasSY | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xb3538a...d6bc17` | ⚠️ Unaudited |
+| PendleMidasSY | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xe1e22d...9b4e58` | ⚠️ Unaudited |
 | PendlePrincipalToken | token | project_anchor | own_supporting | 0 | ethereum | unit-251255 | `0x3ffaa9...04d129` | ⚠️ Unaudited |
+| PendleStrataMidasTrancheSY | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x460783...e3015e` | ⚠️ Unaudited |
+| PendleStrataMidasTrancheSY | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xfb71d1...b1fefb` | ⚠️ Unaudited |
+| PendleStrataNUSDTrancheSY | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x928990...873fe5` | ⚠️ Unaudited |
+| PendleStrataNUSDTrancheSY | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xdb8f1d...06c45f` | ⚠️ Unaudited |
+| PendleStrataUSDatTrancheSY | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x9d0fc5...563185` | ⚠️ Unaudited |
+| PendleStrataUSDatTrancheSY | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xa26938...6e3c6a` | ⚠️ Unaudited |
+| PendleStrataUSDETrancheSY | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x4f6673...c7d76f` | ⚠️ Unaudited |
+| PendleStrataUSDETrancheSY | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xc9bfeb...fd1b8e` | ⚠️ Unaudited |
+| PendleUniBTCSYUpgScaled18 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x8d5cf5...9e3908` | ⚠️ Unaudited |
+| PendleUniBTCSYUpgScaled18 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xb99509...8d7353` | ⚠️ Unaudited |
+| PendleUpshiftTokenizedVaultSY | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x832bbd...e5ef2e` | ⚠️ Unaudited |
+| PendleXPRISMSY | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x84760f...1dcfdf` | ⚠️ Unaudited |
+| PendleXStocksSY | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x1c44f9...724450` | ⚠️ Unaudited |
 | PendleYieldToken | token | project_anchor | own_supporting | 0 | ethereum | unit-251258 | `0xacd577...fdd6be` | ⚠️ Unaudited |
 | PIKU | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251254 | `0x2e4039...c02dc3` | ⚠️ Unaudited |
+| PoolManager | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000000...e08a90` | ⚠️ Unaudited |
 | PP_Queue_ManualExecution_v1 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-251263 | `0x5a2d08...0f6fd2` | ⚠️ Unaudited |
+| Safe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xe08b04...f8a36f` | ⚠️ Unaudited |
 | StakedPikuV2 | token | project_anchor | own_supporting | 0 | ethereum | unit-251256 | `0x5da17c...839df8` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x9e08c5...06896b` | ⚠️ Unaudited |
 | VaultV2 | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-251253 | `0x153bd1...d64a57` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -132,11 +176,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6f7d5e...41a94f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x83515b...d8cb41` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -208,10 +255,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 8 |
-| upstream | 4 |
-| standard_library | 0 |
-| needs_review | 0 |
+| native | 9 |
+| upstream | 44 |
+| standard_library | 2 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

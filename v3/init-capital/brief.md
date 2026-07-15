@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: INIT Capital (`init-capital`)
 - Website: [https://app.init.capital](https://app.init.capital)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: blast, mantle
-- Contract surface: 44 unique implementations (62 raw deployments)
+- Contract surface: 110 unique implementations (143 raw deployments)
 - Coverage basis: 0/20 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,971,814.69
 - On-chain TVL (included contracts): n/a
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 37 contract row(s) across blast, ethere
 
 ## Fork Analysis
 
-0 of 33 contracts are derived from known codebases. 33 contracts have no detected origin.
+0 of 35 contracts are derived from known codebases. 35 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -54,6 +54,7 @@ The pinned logic-topography run contains 37 contract row(s) across blast, ethere
 
 - UnnamedContract (`0x233493...82c0c3`, chain 5000)
 - UnnamedContract (`0x32f533...618b62`, chain 5000)
+- UnnamedContract (`0x442d03...7c4bda`, chain 5000)
 - UnnamedContract (`0xc01c99...2ae25b`, chain 5000)
 - UnnamedContract (`0xeed8a0...d9be34`, chain 5000)
 - UnnamedContract (`0xf525f9...977a0c`, chain 5000)
@@ -74,6 +75,7 @@ The pinned logic-topography run contains 37 contract row(s) across blast, ethere
 - UnnamedContract (`0xd20989...0c09f3`, chain 81457)
 - UnnamedContract (`0xd501a5...d6bf39`, chain 81457)
 - UnnamedContract (`0xd97bb3...4c68c1`, chain 81457)
+- UnnamedContract (`0xd9c015...805640`, chain 81457)
 - UnnamedContract (`0xe31686...75e2ef`, chain 81457)
 - UnnamedContract (`0xed9d7e...11904b`, chain 81457)
 - UnnamedContract (`0xf683ce...f33d21`, chain 81457)
@@ -88,7 +90,7 @@ The pinned logic-topography run contains 37 contract row(s) across blast, ethere
 
 ## Contract Surface Quality
 
-- Indexed contracts: 37; live-surface contracts included: 37 (37 live, 0 unknown).
+- Logic-topography rows: 37; live-surface rows included: 37 (37 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 44/46 live.
 - Detected codebases: none
@@ -99,15 +101,15 @@ The pinned logic-topography run contains 37 contract row(s) across blast, ethere
 - Coverage of address-book-owned deployed-live implementations: 0/20 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 44 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 21
-- Deployed-live implementations: 44 of 44 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/20
-- Verified + Unaudited implementations: 20
+- Outside the address book: 66 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 38
+- Confirmed-live implementations: 44 of 110 unique; 66 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/51
+- Verified + Unaudited implementations: 51
 - Verified by bytecode match: 0
-- Unverified implementations: 24
-- Unique implementations: 44
-- Raw deployments: 62
+- Unverified implementations: 59
+- Unique implementations: 110
+- Raw deployments: 143
 - Audits discovered: 7 (7 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -126,30 +128,61 @@ The pinned logic-topography run contains 37 contract row(s) across blast, ethere
 
 - None
 
-### ⚠️ Verified + Unaudited (20)
+### ⚠️ Verified + Unaudited (51)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | AccessControlManager | unknown | project_anchor | own_supporting | 0 | mantle | unit-387451 | `0xce3292...30675a` | ⚠️ Unaudited |
+| AgniSwapHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x2ac430...a8ac13` | ⚠️ Unaudited |
+| Api3OracleReader | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | 2 deployments: mantle `0x1450e7...41b4ae`; mantle `0x5fd18f...0f6198` | ⚠️ Unaudited |
+| BVM_ETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xdeadde...ad1111` | ⚠️ Unaudited |
 | Config | unknown | project_anchor | own_supporting | 1 | mantle | unit-387478 | 2 deployments: mantle `0x007f91...a553ac`; mantle `0x1dbd1e...a334cb` | ⚠️ Unaudited |
 | DoubleSlopeIRM | unknown | project_anchor | own_supporting | 0 | mantle | unit-387442 | `0x00fa41...4748ec` | ⚠️ Unaudited |
 | DoubleSlopeIRM | unknown | project_anchor | own_supporting | 0 | mantle | unit-387443 | `0x0959a6...1ae7e4` | ⚠️ Unaudited |
+| DoubleSlopeIRM | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 2 deployments: mantle `0x204e80...712255`; mantle `0xb4d787...bb640b` | ⚠️ Unaudited |
 | DoubleSlopeIRM | unknown | project_anchor | own_supporting | 0 | mantle | unit-387446 | `0x594485...d1fdbf` | ⚠️ Unaudited |
 | DoubleSlopeIRM | unknown | project_anchor | own_supporting | 0 | mantle | unit-387447 | `0x71e0b2...8b2cf6` | ⚠️ Unaudited |
 | DoubleSlopeIRM | unknown | project_anchor | own_supporting | 0 | mantle | unit-387454 | `0xf25e43...18398e` | ⚠️ Unaudited |
+| FusionXSwapHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xa0338a...238a48` | ⚠️ Unaudited |
 | InitCore | unknown | project_anchor | own_supporting | 1 | mantle | unit-387485 | 2 deployments: mantle `0x972bcb...bcafc5`; mantle `0xf8b855...dba05d` | ⚠️ Unaudited |
+| InitCore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x815e63...85494b` | ⚠️ Unaudited |
 | InitLens | unknown | project_anchor | own_supporting | 0 | mantle | unit-387448 | `0x7d2b27...456042` | ⚠️ Unaudited |
 | InitLens | unknown | project_anchor | own_supporting | 0 | blast | unit-387460 | `0x56fba2...b2860e` | ⚠️ Unaudited |
 | InitOracle | unknown | project_anchor | own_supporting | 1 | mantle | unit-387482 | 2 deployments: mantle `0x4e195a...2c0350`; mantle `0x792841...b14f81` | ⚠️ Unaudited |
+| L2cmETH | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | `0xe6829d...59e8fa` | ⚠️ Unaudited |
 | LendingPool | unknown | project_anchor | own_supporting | 8 | mantle | unit-387479 (8 proxies) | 9 deployments: mantle `0x00a556...227d06`; mantle `0x328243...581b1c`; mantle `0x423bb7...3329fd`; mantle `0x449496...4a2976`; mantle `0x5071c0...3a89df`; mantle `0x51ab74...11aec4`; mantle `0x9c9f28...afd552`; mantle `0xada66a...00ad09`; mantle `0xf08481...b3f63a` | ⚠️ Unaudited |
+| LendingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x22eb74...b0de11` | ⚠️ Unaudited |
 | LiqIncentiveCalculator | unknown | project_anchor | own_supporting | 0 | mantle | unit-387452 | `0xddc99a...0dacf3` | ⚠️ Unaudited |
+| MarginTradingHook | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | mantle | n/a | 3 deployments: mantle `0x213754...9718b5`; mantle `0x8bc7df...4dfcbb`; mantle `0xebf3ed...8cdefd` | ⚠️ Unaudited |
+| MarginTradingHook | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | `0x42aa4e...6aa7f9` | ⚠️ Unaudited |
 | MarginTradingHook | unknown | project_anchor | own_supporting | 3 | mantle | unit-387481 (3 proxies) | 4 deployments: mantle `0x497949...1c94bd`; mantle `0x956794...ae7d33`; mantle `0xe4fe22...1ad1ad`; mantle `0xefb43e...000763` | ⚠️ Unaudited |
 | MarginTradingHook | unknown | project_anchor | own_supporting | 0 | mantle | unit-387449 | `0x917a9f...d3dc14` | ⚠️ Unaudited |
+| METHL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xa1f06b...3c6a2c` | ⚠️ Unaudited |
+| METHL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | `0xcda86a...b90bb0` | ⚠️ Unaudited |
+| MoeSwapHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x31a099...5f7cee` | ⚠️ Unaudited |
 | MoneyMarketHook | unknown | project_anchor | own_supporting | 1 | mantle | unit-387476 | 2 deployments: mantle `0x06cab8...24da84`; mantle `0xf82cbc...337346` | ⚠️ Unaudited |
+| MoneyMarketHook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x214d40...8e4e4a` | ⚠️ Unaudited |
+| PepeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x8baf44...640477` | ⚠️ Unaudited |
 | PosManager | unknown | project_anchor | own_supporting | 1 | mantle | unit-387483 | 2 deployments: mantle `0x0e7401...8bba92`; mantle `0x995b3d...369dbf` | ⚠️ Unaudited |
+| PosManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x65d8d9...99f232` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xa55a59...e26f7a` | ⚠️ Unaudited |
+| Puff | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x26a6b0...3be140` | ⚠️ Unaudited |
 | RiskManager | unknown | project_anchor | own_supporting | 1 | mantle | unit-387484 | 2 deployments: mantle `0x0c03cd...92f951`; mantle `0xf34167...18002b` | ⚠️ Unaudited |
+| StakedUSDeOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x211cc4...5fe5d2` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x91a194...ec65e5` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | 2 deployments: mantle `0x013d02...253285`; mantle `0xb45206...6f9d68` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | 2 deployments: mantle `0x089d92...9046b7`; mantle `0x580df5...60ac6e` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | 2 deployments: mantle `0x0b375d...ae6197`; mantle `0xf42c7b...40995f` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | 2 deployments: mantle `0x1fe6b7...2b5d14`; mantle `0xe576e4...866b33` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | 2 deployments: mantle `0x3ab7de...664452`; mantle `0xb8020c...02ad72` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | 2 deployments: mantle `0x58fb83...7ae7ec`; mantle `0x6a905e...a0b27b` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | mantle | unit-387477 | `0x66bdbf...0550ad` | ⚠️ Unaudited |
-| TransparentUpgradeableProxyReceiveETH | unknown | project_anchor | own_supporting | 1 | mantle | unit-387480 | `0x7fa704...408eaa` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | 2 deployments: mantle `0xdc9311...b99a01`; mantle `0xe6239b...b2f092` | ⚠️ Unaudited |
+| TransparentUpgradeableProxyReceiveETH | unknown | project_anchor | own_supporting | 1 | mantle | unit-387480 | 2 deployments: mantle `0x442d03...7c4bda`; mantle `0x7fa704...408eaa` | ⚠️ Unaudited |
+| UniversalSwapHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xb6c2f1...00b638` | ⚠️ Unaudited |
+| USDeOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x5d3a1f...52ef34` | ⚠️ Unaudited |
+| USDYW | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | `0x5be265...57c5a6` | ⚠️ Unaudited |
+| WMANTLE | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x78c1b0...7f4cb8` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -163,33 +196,68 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (24)
+### ❓ Unverified (59)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| Proxy (impl: 0xd9c0154a09f09988e8f4be6d1e8d8bc9bd805640) | unknown | project_anchor | own_supporting | 2 | blast | unit-387486 (2 proxies) | 2 deployments: blast `0x531342...13ff28`; blast `0x85baba...250f68` | ❓ Unverified |
+| Proxy (impl: 0x2529c5e48ddcec4c235f7dba6cf3ce994899ddad) | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | blast | n/a | 2 deployments: blast `0x0bca18...4c9a02`; blast `0x2529c5...99ddad` | ❓ Unverified |
+| Proxy (impl: 0xd9c0154a09f09988e8f4be6d1e8d8bc9bd805640) | unknown | project_anchor | own_supporting | 2 | blast | unit-387486 (2 proxies) | 3 deployments: blast `0x531342...13ff28`; blast `0x85baba...250f68`; blast `0xd9c015...805640` | ❓ Unverified |
+| Proxy (impl: 0xfdb3cc1a63e6de98e7d9a36c683bd30a9b5237fa) | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | blast | n/a | 2 deployments: blast `0x5e51d9...8cac67`; blast `0xfdb3cc...5237fa` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x101762...86838e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x134377...944283` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x196d4e...4367e9` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-387444 | `0x233493...82c0c3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x2a81ff...d0bd7d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-387445 | `0x32f533...618b62` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x338489...7746ef` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x6859b1...85df2e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x7ae574...9f9915` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xb5695d...d3520b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xbe7d35...f518d3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-387450 | `0xc01c99...2ae25b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xccadc0...ca7f33` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xee6194...c9eaf0` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-387453 | `0xeed8a0...d9be34` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-387455 | `0xf525f9...977a0c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387456 | `0x027296...b28b40` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x0d87d1...365d32` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x126dcc...29a957` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387457 | `0x17f187...a3b85c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x1dac52...bb4257` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387458 | `0x265daa...560785` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x340b6c...d8d1f4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x3816ed...ae697a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x47dc59...dfba3a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x4a7ccb...5a011d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387459 | `0x4b246c...f0993a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x546851...c834f2` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387461 | `0x57200d...cea2f7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x5f1a7d...6248fc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x721ad8...577ce7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387462 | `0x72ee68...3b552a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x75d40b...ff1836` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x7971ad...172df9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x812607...095afe` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x8aa1cf...0cb288` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x92aa51...cee445` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x92e4af...15e542` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387463 | `0x95b864...2852d0` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387464 | `0xa0e172...2633fe` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387465 | `0xa7d36f...113a10` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xaf8512...dbfa47` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387466 | `0xc02819...424dd4` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387467 | `0xc5eac9...ab430f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387468 | `0xcd5fc1...22012e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xcd8175...dde280` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387469 | `0xd20989...0c09f3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xd23ec3...0b08e9` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387470 | `0xd501a5...d6bf39` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387471 | `0xd97bb3...4c68c1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xd9bb55...ea5cfa` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xdad140...dde412` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xe1d36e...32b18d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387472 | `0xe31686...75e2ef` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387473 | `0xed9d7e...11904b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-387475 | `0xf683ce...f33d21` | ❓ Unverified |
@@ -275,16 +343,15 @@ Verified + unaudited native implementations ranked by TVL:
 | mantle | `0x06cab8...24da84` | MoneyMarketHook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mantle | `0x0e7401...8bba92` | PosManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | mantle | `0x0c03cd...92f951` | RiskManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mantle | `0x7fa704...408eaa` | TransparentUpgradeableProxyReceiveETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 19 |
+| native | 40 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 24 |
+| standard_library | 6 |
+| needs_review | 64 |
 
 ## Scope Matching Notes
 

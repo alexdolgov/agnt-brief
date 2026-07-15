@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: GoldFinger (`goldfinger`)
 - Website: [https://goldfinger.finance/en](https://goldfinger.finance/en)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: bsc
-- Contract surface: 8 unique implementations (8 raw deployments)
+- Contract surface: 13 unique implementations (19 raw deployments)
 - Coverage basis: 7/7 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $23,884,814.65
 - On-chain TVL (included contracts): n/a
@@ -63,7 +63,7 @@ The pinned logic-topography run contains 8 contract row(s) across bsc. Structura
 
 ## Contract Surface Quality
 
-- Indexed contracts: 8; live-surface contracts included: 8 (8 live, 0 unknown).
+- Logic-topography rows: 8; live-surface rows included: 8 (8 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 8/8 live.
 - Detected codebases: none
@@ -74,15 +74,15 @@ The pinned logic-topography run contains 8 contract row(s) across bsc. Structura
 - Coverage of address-book-owned deployed-live implementations: 7/7 (100.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 7 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 5 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 8 of 8 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 7/7
-- Verified + Unaudited implementations: 0
+- Confirmed-live implementations: 8 of 13 unique; 5 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 7/12
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 8
-- Raw deployments: 8
+- Unverified implementations: 1
+- Unique implementations: 13
+- Raw deployments: 19
 - Audits discovered: 9 (9 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 8
 - ASD (verified + unaudited TVL): n/a
@@ -95,8 +95,8 @@ The pinned logic-topography run contains 8 contract row(s) across bsc. Structura
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| SolidProof | Tier 2 | 7 | 100.0% | 2025-11 |
-| unknown | Tier 2 | 1 | 14.3% | 2026-01 |
+| SolidProof | Tier 2 | 7 | 58.3% | 2025-11 |
+| unknown | Tier 2 | 1 | 8.3% | 2026-01 |
 
 ## Contract Surface
 
@@ -112,11 +112,15 @@ The pinned logic-topography run contains 8 contract row(s) across bsc. Structura
 | GFStaking | unknown | project_anchor | own_supporting | 0 | bsc | unit-266830 | `0x93639c...867e1e` | ✅ Audited |
 | GFToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-266827 | `0x6db461...c004e0` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | ARTToken | token | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | bsc | unit-266831 | `0xb8a1ed...feaae1` | ⚠️ Unaudited |
+| ARTVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xaa8cd8...234643` | ⚠️ Unaudited |
+| GFDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0xcee77c...d8572b`; bsc `0xeae164...18e32c`; bsc `0xf9e11e...efaa62` | ⚠️ Unaudited |
+| GFStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x65e580...c7ddb6`; bsc `0x96e451...1a77f8`; bsc `0xb04782...22e87d` | ⚠️ Unaudited |
+| GFToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0xbad711...c7792b`; bsc `0xdb399e...551dcc`; bsc `0xdb3fb4...dd77a3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -130,11 +134,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2232a5...06859a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -202,10 +208,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 8 |
+| native | 12 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

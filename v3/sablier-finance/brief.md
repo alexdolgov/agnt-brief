@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Sablier Lockup (`sablier-finance`)
 - Website: [https://sablier.com/](https://sablier.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, arbitrum-sepolia, avalanche, base, base-sepolia, berachain, bsc, ethereum, gnosis, goerli, hyperliquid, linea, mode, monad, optimism, polygon, scroll, sepolia, sonic, unichain, zksync-era
 - Contract surface: 256 unique implementations (256 raw deployments)
@@ -261,7 +261,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Logic-topography rows: 0; live-surface rows included: 0 (0 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 207/266 live.
 - Detected codebases: none
@@ -272,13 +272,13 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 207 own, 49 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 0 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 207 of 256 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Confirmed-live implementations: 207 of 256 unique; 49 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 207
+- Unverified implementations: 256
 - Unique implementations: 256
 - Raw deployments: 256
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)

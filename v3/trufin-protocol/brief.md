@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: TruStake (`trufin-protocol`)
 - Website: [https://app.truyields.com](https://app.truyields.com)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum, polygon
-- Contract surface: 3 unique implementations (3 raw deployments)
+- Contract surface: 12 unique implementations (25 raw deployments)
 - Coverage basis: 2/2 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -61,7 +61,7 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum, poly
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 3 (2 live, 1 unknown).
+- Logic-topography rows: 3; live-surface rows included: 3 (3 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 3/3 live.
 - Detected codebases: none
@@ -72,15 +72,15 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum, poly
 - Coverage of address-book-owned deployed-live implementations: 2/2 (100.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 3 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 2
-- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 2/2
-- Verified + Unaudited implementations: 0
+- Outside the address book: 9 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 7
+- Confirmed-live implementations: 3 of 12 unique; 9 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 2/10
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 3
-- Raw deployments: 3
+- Unverified implementations: 2
+- Unique implementations: 12
+- Raw deployments: 25
 - Audits discovered: 13 (13 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): n/a
@@ -93,9 +93,9 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum, poly
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Nethermind | Tier 2 | 2 | 100.0% | 2025-09 |
-| OpenZeppelin | Tier 1 | 1 | 50.0% | 2023-07 |
-| Zokyo | Tier 2 | 1 | 50.0% | 2023-05 |
+| Nethermind | Tier 2 | 2 | 20.0% | 2025-09 |
+| OpenZeppelin | Tier 1 | 1 | 10.0% | 2023-07 |
+| Zokyo | Tier 2 | 1 | 10.0% | 2023-05 |
 
 ## Contract Surface
 
@@ -104,11 +104,20 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum, poly
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | TruStakeMATICv2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-394277 | `0xa43a7c...8987ed` | ✅ Audited |
-| TruStakePOL | unknown | project_anchor | own_supporting | 1 | ethereum | unit-394278 | `0xc10214...c8e5e8` | ✅ Audited |
+| TruStakePOL | unknown | project_anchor | own_supporting | 1 | ethereum | unit-394278 | 2 deployments: ethereum `0xbe63b2...17f8db`; ethereum `0xc10214...c8e5e8` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (8)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| MasterWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x570177...439937`; ethereum `0x948ddf...6b14d8` | ⚠️ Unaudited |
+| MasterWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xb78610...3f0334`; ethereum `0xc90a7c...87757c` | ⚠️ Unaudited |
+| MasterWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf9bd69...c0c39e` | ⚠️ Unaudited |
+| PausableModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x65c3d9...7e990c`; ethereum `0xe6dcd7...84c246` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x022420...155158`; ethereum `0x567676...791131`; ethereum `0xf7a2a6...b5430a` | ⚠️ Unaudited |
+| Staker | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x1608b6...96a603`; ethereum `0xcfab85...89006d` | ⚠️ Unaudited |
+| TruStakeMATICv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 3 deployments: ethereum `0x0ee0f1...3863a4`; ethereum `0x6ba703...de5ad9`; ethereum `0xe0579d...6ceb71` | ⚠️ Unaudited |
+| TruStakeMATICv2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x2a9fd3...9faeae`; ethereum `0x8d991f...c59052`; ethereum `0xa51022...c4ea45`; ethereum `0xbf3b3b...4d1b31`; ethereum `0xe3f8d0...91bbad` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -122,12 +131,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x66d552...6ef9b5` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-394276 | `0xf33687...7165a2` | ❓ Unverified |
 
 ## Audit Inventory
@@ -242,10 +252,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 9 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 1 |
+| standard_library | 1 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

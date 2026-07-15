@@ -9,21 +9,23 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+
+⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
 
 ## Project Overview
 
 - Project: Ambire Wallet (`ambire-wallet`)
 - Website: [https://www.ambire.com](https://www.ambire.com)
-- Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Lifecycle: unknown (Tier 0, TVL trajectory)
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum, optimism, scroll
-- Contract surface: 14 unique implementations (14 raw deployments)
+- Contract surface: 24 unique implementations (25 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $8,998,043.13
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- On-chain TVL (included contracts): $8,796,446.28
+- TVL by chain: Ethereum $8,796,446.28
 
 ## Project Description
 
@@ -68,7 +70,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Logic-topography rows: 0; live-surface rows included: 0 (0 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 13/16 live.
 - Detected codebases: none
@@ -79,15 +81,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 13 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 10 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 13 of 14 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- Confirmed-live implementations: 13 of 24 unique; 11 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/2
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 13
-- Unique implementations: 14
-- Raw deployments: 14
+- Unverified implementations: 22
+- Unique implementations: 24
+- Raw deployments: 25
 - Audits discovered: 12 (12 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -95,6 +97,7 @@ The activated project remains an explicit cohort member with an empty normalized
 - Audit staleness (calendar age): 0 fresh, 2 aging, 6 stale, 4 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -106,9 +109,12 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (2)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| WALLETToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x888000...2794ae` | ⚠️ Unaudited |
+| StakingPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x47cd7e...c12935`; ethereum `0x4d3348...fe3d58` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -122,7 +128,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (14)
+### ❓ Unverified (22)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -130,16 +136,24 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x000000...000001` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378981 | `0x000000...7da032` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0604f2...ceaee7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e3c4f...f4bf3f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378982 | `0x0f2aa7...66c828` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1955db...f6440b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1bba61...b1b2dc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1f6a77...1c8dcc` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378983 | `0x26ce67...46dc2d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378984 | `0x3979ff...0d9bf1` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378986 | `0x3f58d8...f5b214` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378987 | `0x5a7fc1...f96f6d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378988 | `0x63c0c1...dae32b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378990 | `0x8d6220...226e20` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa69b80...24aaff` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378991 | `0xa8b267...572cf0` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378992 | `0xce0042...fdcf9f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xde0ed7...7b9159` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378994 | `0xe8340a...af4362` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf2dd37...4b110b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-378995 | `0x420000...00000f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-378996 | `0x530000...000002` | ❓ Unverified |
 
@@ -231,10 +245,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 14 |
+| needs_review | 22 |
 
 ## Scope Matching Notes
 

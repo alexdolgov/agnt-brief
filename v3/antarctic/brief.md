@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Antarctic (`antarctic`)
 - Website: [https://www.antarctic.exchange/](https://www.antarctic.exchange/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum
-- Contract surface: 3 unique implementations (3 raw deployments)
+- Contract surface: 13 unique implementations (16 raw deployments)
 - Coverage basis: 1/3 confirmed own live verified implementations (33.3%); conservative 33.3% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $9,838,626.51
 - On-chain TVL (included contracts): n/a
@@ -58,7 +58,7 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum. Stru
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Logic-topography rows: 3; live-surface rows included: 3 (3 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 3/3 live.
 - Detected codebases: none
@@ -69,15 +69,15 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum. Stru
 - Coverage of address-book-owned deployed-live implementations: 1/3 (33.3%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 3 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/3
-- Verified + Unaudited implementations: 2
+- Outside the address book: 10 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
+- Confirmed-live implementations: 3 of 13 unique; 10 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/9
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 3
-- Raw deployments: 3
+- Unverified implementations: 4
+- Unique implementations: 13
+- Raw deployments: 16
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -90,7 +90,7 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum. Stru
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| CertiK | Tier 2 | 1 | 33.3% | 2024-11 |
+| CertiK | Tier 2 | 1 | 11.1% | 2024-11 |
 
 ## Contract Surface
 
@@ -100,12 +100,18 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum. Stru
 |---|---|---|---|---:|---|---|---|---|
 | AMLP | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-266810 | `0x152f5e...993a4b` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AHLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5fd22d...34c2c4` | ⚠️ Unaudited |
+| AhlpManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc5f9d4...40bd9f` | ⚠️ Unaudited |
+| AhlpStaker | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x1ba274...408d85`; arbitrum `0x237455...175600` | ⚠️ Unaudited |
 | AmlpManager | governance | project_anchor | own_supporting | 0 | arbitrum | unit-266811 | `0x98a6ae...bcf8dd` | ⚠️ Unaudited |
+| AmlpStaker | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x3a66b8...a50999`; arbitrum `0x88ff0b...d52038` | ⚠️ Unaudited |
 | FundingVault | core_logic | project_anchor | own_supporting | 0 | arbitrum | unit-266809 | `0x07f169...df043f` | ⚠️ Unaudited |
+| sAHLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x50c30f...685ea9` | ⚠️ Unaudited |
+| sAMLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x4f2b37...24b6a7`; arbitrum `0xbc08f3...edb9db` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -119,11 +125,16 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x169dac...30378d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x734ec6...3597b8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf5ce87...2132fc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xfb323b...13bd68` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -160,10 +171,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 9 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 0 |
+| standard_library | 2 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

@@ -9,21 +9,23 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+
+⚠️ Lifecycle status: DECLINING - TVL dropped 22.8% over 90 days
 
 ## Project Overview
 
 - Project: Blasterswap (`blasterswap`)
 - Website: [https://blasterswap.com/](https://blasterswap.com/)
-- Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Lifecycle: declining (Tier 0, 98.4% below peak)
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: blast
-- Contract surface: 17 unique implementations (17 raw deployments)
+- Contract surface: 23 unique implementations (28 raw deployments)
 - Coverage basis: 0/16 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $288,534.00
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- On-chain TVL (included contracts): $2,361.66
+- TVL by chain: Blast $2,361.66
 
 ## Project Description
 
@@ -71,7 +73,7 @@ The pinned logic-topography run contains 16 contract row(s) across blast. Struct
 
 ## Contract Surface Quality
 
-- Indexed contracts: 16; live-surface contracts included: 16 (16 live, 0 unknown).
+- Logic-topography rows: 16; live-surface rows included: 16 (16 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 16/18 live.
 - Detected codebases: none
@@ -82,15 +84,15 @@ The pinned logic-topography run contains 16 contract row(s) across blast. Struct
 - Coverage of address-book-owned deployed-live implementations: 0/16 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 16 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 6 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 16 of 17 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/16
-- Verified + Unaudited implementations: 16
+- Confirmed-live implementations: 16 of 23 unique; 7 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/21
+- Verified + Unaudited implementations: 21
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 17
-- Raw deployments: 17
+- Unverified implementations: 2
+- Unique implementations: 23
+- Raw deployments: 28
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -98,6 +100,7 @@ The pinned logic-topography run contains 16 contract row(s) across blast. Struct
 - Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -109,10 +112,15 @@ The pinned logic-topography run contains 16 contract row(s) across blast. Struct
 
 - None
 
-### ⚠️ Verified + Unaudited (16)
+### ⚠️ Verified + Unaudited (21)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 3 deployments: blast `0x013249...a84260`; blast `0x0464a3...6f6e3f`; blast `0xc52fb7...58c91d` | ⚠️ Unaudited |
+| Andy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x0ecd76...e9d505`; blast `0xd43d8a...752cf8` | ⚠️ Unaudited |
+| Pacmoon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x5ffd9e...a29c06`; blast `0xde32f9...76c830` | ⚠️ Unaudited |
+| PacmoonAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x02ca0e...ae4af4`; blast `0x38834c...20638a` | ⚠️ Unaudited |
+| PacmoonAirdrop2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x937237...85f24d` | ⚠️ Unaudited |
 | UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380673 | `0x0fd12a...db8d15` | ⚠️ Unaudited |
 | UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380674 | `0x1a8027...e89d78` | ⚠️ Unaudited |
 | UnnamedContract | core_logic | project_anchor | own_supporting | 0 | blast | unit-380675 | `0x1c63c0...ae009b` | ⚠️ Unaudited |
@@ -142,13 +150,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-380679 | `0x3b5d3f...713add` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x44fa62...23ea6a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -182,10 +191,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 17 |
+| needs_review | 18 |
 
 ## Scope Matching Notes
 

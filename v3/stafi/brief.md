@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Stafi (`stafi`)
 - Website: [https://www.stafi.io/](https://www.stafi.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: ethereum
-- Contract surface: 2 unique implementations (2 raw deployments)
+- Chains: bsc, ethereum
+- Contract surface: 43 unique implementations (58 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $2,993,926.05
 - On-chain TVL (included contracts): n/a
@@ -50,7 +50,7 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 ## Contract Surface Quality
 
 - Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
-- Indexed contracts: 3; live/inactive and live-deployment-unit totals are withheld until liveness completes.
+- Logic-topography rows: 3; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -59,15 +59,15 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 1
+- Outside the address book: 41 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- All block-explorer-verified implementations audited (incl. non-live): 0/24
+- Verified + Unaudited implementations: 24
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 2
+- Unverified implementations: 19
+- Unique implementations: 43
+- Raw deployments: 58
 - Audits discovered: 9 (9 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -86,12 +86,34 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (24)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AddressSetStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x86d14d...e81506` | ⚠️ Unaudited |
+| Multisig | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x003aac...ee75d3`; ethereum `0x6aacff...999aa6` | ⚠️ Unaudited |
+| RateSender | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x655603...219665`; ethereum `0xc9e039...1e795d` | ⚠️ Unaudited |
+| RETHRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3d40f9...c1f1ac` | ⚠️ Unaudited |
 | RETHToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-256788 | `0x9559aa...9a3593` | ⚠️ Unaudited |
-| StafiWithdraw | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-256789 | `0x27d64d...f174cc` | ⚠️ Unaudited |
+| StafiDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x44da62...a16587`; ethereum `0x5a2ecb...cc689b`; ethereum `0x5db09e...6dba3d` | ⚠️ Unaudited |
+| StafiEther | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x54896f...d39fc1` | ⚠️ Unaudited |
+| StafiFeePool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6fb2aa...22df45` | ⚠️ Unaudited |
+| StafiLightNode | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1c9066...d44f4b` | ⚠️ Unaudited |
+| StafiNetworkSettings | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1a5474...2dc3f1` | ⚠️ Unaudited |
+| StafiNodeDeposit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x50db2c...9496a0`; ethereum `0xafcf0e...cef33d` | ⚠️ Unaudited |
+| StafiNodeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x342702...fa0caf`; ethereum `0x4fd35a...62d572`; ethereum `0xd8575c...2307a8` | ⚠️ Unaudited |
+| StafiSuperNode | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x588e85...aa9ff1` | ⚠️ Unaudited |
+| StafiSuperNodeFeePool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdc5a28...8d3bf0` | ⚠️ Unaudited |
+| StafiUpgrade | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd8737c...1bad41` | ⚠️ Unaudited |
+| StafiUserDeposit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x430cf6...bb3f28`; ethereum `0x625b7f...d357be`; ethereum `0xc12dfb...355058` | ⚠️ Unaudited |
+| StafiWithdraw | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-256789 | 2 deployments: ethereum `0x27d64d...f174cc`; ethereum `0x91630f...fddf9b` | ⚠️ Unaudited |
+| StakeERC20Portal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbebfd2...4b56e8` | ⚠️ Unaudited |
+| StakeERC20PortalWithRate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xefd240...cedde2` | ⚠️ Unaudited |
+| StakeManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x3aee3e...9f3899` | ⚠️ Unaudited |
+| StakeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x73822d...de957b`; ethereum `0xb804d7...065711`; ethereum `0xfd5a64...60c73c` | ⚠️ Unaudited |
+| StakePool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x48b1b0...3816cc`; ethereum `0x818dd8...eb9d31`; ethereum `0xed9d38...4c8af5` | ⚠️ Unaudited |
+| StakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x412330...c25f9e` | ⚠️ Unaudited |
+| TokenDropWithLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x630e78...42d460`; ethereum `0x85449d...057cd3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -105,11 +127,31 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (19)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x014b68...ceed90` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1c9890...fbed5a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3ad9a9...93353f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x473d3f...4f80f6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4d3c3b...bab094` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x536d6e...13c92b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x55f312...60df1d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6c2f7b...02e8b0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7acd9b...e6420b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8320c2...71f5be` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa21c50...ea8d42` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb0da55...f2b389` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc59ea6...c4fc96` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc59ff0...7cea8f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc8ce0b...7e336c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xda9726...91698d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe18dec...238fa9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe4534d...64d175` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeba81e...26d1ab` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -217,10 +259,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 24 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 19 |
 
 ## Scope Matching Notes
 

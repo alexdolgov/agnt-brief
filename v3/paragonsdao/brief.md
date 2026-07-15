@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: ParagonsDAO (`paragonsdao`)
 - Website: [https://app.paragonsdao.com](https://app.paragonsdao.com)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: base
-- Contract surface: 1 unique implementations (1 raw deployments)
+- Chains: base, ethereum
+- Contract surface: 5 unique implementations (5 raw deployments)
 - Coverage basis: 1/1 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $5,034,465.61
 - On-chain TVL (included contracts): n/a
@@ -36,7 +36,7 @@ This brief describes the observed EVM deployment and audit surface for ParagonsD
 
 ### Architecture
 
-The pinned logic-topography run contains 1 contract row(s) across base. Structural roles: 1 core. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 1 contract row(s) across base, ethereum. Structural roles: 1 core. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -61,7 +61,7 @@ The pinned logic-topography run contains 1 contract row(s) across base. Structur
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Logic-topography rows: 1; live-surface rows included: 1 (1 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 1/1 live.
 - Detected codebases: none
@@ -72,15 +72,15 @@ The pinned logic-topography run contains 1 contract row(s) across base. Structur
 - Coverage of address-book-owned deployed-live implementations: 1/1 (100.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/1
-- Verified + Unaudited implementations: 0
+- Outside the address book: 4 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Confirmed-live implementations: 1 of 5 unique; 4 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/5
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
+- Unique implementations: 5
+- Raw deployments: 5
 - Audits discovered: 8 (8 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
@@ -93,8 +93,8 @@ The pinned logic-topography run contains 1 contract row(s) across base. Structur
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Hashlock | Tier 2 | 1 | 100.0% | 2024-07 |
-| Zellic | Tier 2 | 1 | 100.0% | 2024-07 |
+| Hashlock | Tier 2 | 1 | 20.0% | 2024-07 |
+| Zellic | Tier 2 | 1 | 20.0% | 2024-07 |
 
 ## Contract Surface
 
@@ -104,9 +104,14 @@ The pinned logic-topography run contains 1 contract row(s) across base. Structur
 |---|---|---|---|---:|---|---|---|---|
 | StakedPDT | token | project_anchor | own_supporting | 0 | base | unit-390689 | `0x51e025...29aa3e` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (4)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| ERC20AutoStakeRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf3d415...d2eaa4` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x11117f...5bf9c9` | ⚠️ Unaudited |
+| PDTOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xeff2a4...61e07e` | ⚠️ Unaudited |
+| PDTStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe09c8a...2549d6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -177,9 +182,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 4 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

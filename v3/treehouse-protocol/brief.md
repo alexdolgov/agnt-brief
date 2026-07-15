@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Treehouse Protocol (`treehouse-protocol`)
 - Website: [https://www.treehouse.finance/](https://www.treehouse.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, avalanche, ethereum, hyperliquid
-- Contract surface: 20 unique implementations (21 raw deployments)
+- Chains: arbitrum, avalanche, ethereum, hyperliquid, mantle
+- Contract surface: 120 unique implementations (154 raw deployments)
 - Coverage basis: 5/14 confirmed own live verified implementations (35.7%); conservative 35.7% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $52,583,625.40
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for Treehouse
 
 ### Architecture
 
-The pinned logic-topography run contains 18 contract row(s) across arbitrum, avalanche, ethereum, hyperliquid. Structural roles: 11 unclassified, 4 core, 2 supporting, 1 infra. 3 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 18 contract row(s) across arbitrum, avalanche, ethereum, hyperliquid, mantle. Structural roles: 11 unclassified, 4 core, 2 supporting, 1 infra. 3 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -75,7 +75,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 18; live-surface contracts included: 18 (15 live, 3 unknown).
+- Logic-topography rows: 18; live-surface rows included: 18 (17 live, 1 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 20/20 live.
 - Detected codebases: none
@@ -86,15 +86,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 5/14 (35.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 20 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 4
-- Deployed-live implementations: 20 of 20 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 5/14
-- Verified + Unaudited implementations: 9
+- Outside the address book: 100 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 15
+- Confirmed-live implementations: 20 of 120 unique; 100 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 5/105
+- Verified + Unaudited implementations: 100
 - Verified by bytecode match: 0
-- Unverified implementations: 6
-- Unique implementations: 20
-- Raw deployments: 21
+- Unverified implementations: 15
+- Unique implementations: 120
+- Raw deployments: 154
 - Audits discovered: 20 (20 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): n/a
@@ -107,10 +107,10 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Sigma Prime | Tier 2 | 4 | 28.6% | 2025-03 |
-| Trail of Bits | Tier 1 | 4 | 28.6% | 2024-10 |
-| Fuzzland | Tier 2 | 2 | 14.3% | 2024-09 |
-| WatchPug | Tier 2 | 1 | 7.1% | 2026-05 |
+| Sigma Prime | Tier 2 | 4 | 3.8% | 2025-03 |
+| Trail of Bits | Tier 1 | 4 | 3.8% | 2024-10 |
+| Fuzzland | Tier 2 | 2 | 1.9% | 2024-09 |
+| WatchPug | Tier 2 | 1 | 1.0% | 2026-05 |
 
 ## Contract Surface
 
@@ -118,25 +118,116 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ActionExecutor | unknown | project_anchor | own_supporting | 2 | ethereum | unit-394266 (2 proxies) | 2 deployments: ethereum `0x60d2d9...2e5943`; ethereum `0xb27d68...cdce98` | ✅ Audited |
-| TAsset | unknown | project_anchor | own_supporting | 1 | ethereum | unit-394267 | `0xd11c45...6d5ed8` | ✅ Audited |
+| ActionExecutor | unknown | project_anchor | own_supporting | 2 | ethereum | unit-394266 (2 proxies) | 3 deployments: ethereum `0x60d2d9...2e5943`; ethereum `0xb15931...1e9e94`; ethereum `0xb27d68...cdce98` | ✅ Audited |
+| TAsset | unknown | project_anchor | own_supporting | 1 | ethereum | unit-394267 | 2 deployments: ethereum `0xd11c45...6d5ed8`; ethereum `0xd1a622...c95e38` | ✅ Audited |
 | TreehouseRouter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-394253 | `0xefa3fa...0628f5` | ✅ Audited |
 | TreehouseRouter | adapter | project_anchor | own_supporting | 0 | avalanche | unit-394258 | `0x5f4d2e...873d6e` | ✅ Audited |
 | Vault | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394249 | `0x551d15...5d761b` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (100)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AccountingOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x852ded...503cee` | ⚠️ Unaudited |
+| AccountingOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf3c5e0...79a1af` | ⚠️ Unaudited |
+| ActionExecutor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xa969fa...0fb54b` | ⚠️ Unaudited |
+| ActionRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: ethereum `0x94af59...c3073f`; avalanche `0x07fa18...35e0f5` | ⚠️ Unaudited |
+| ASAVAXRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xfa5fb1...e54a46` | ⚠️ Unaudited |
+| Authorizer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa331d8...3f3ae6` | ⚠️ Unaudited |
+| BenqiBorrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x18b0bb...6577ff` | ⚠️ Unaudited |
+| BenqiClaimReward | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x69c572...53f094` | ⚠️ Unaudited |
+| BenqiPayback | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x28c1d5...f75b19` | ⚠️ Unaudited |
+| BenqiSupply | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x6c1823...c7c702` | ⚠️ Unaudited |
+| BenqiWithdraw | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x87899c...4ad472` | ⚠️ Unaudited |
+| Burner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd15a67...9046d3` | ⚠️ Unaudited |
+| ComposableStablePool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1d1353...4dad14` | ⚠️ Unaudited |
 | ComposableStablePool | core_logic | project_anchor | own_supporting | 0 | arbitrum | unit-394254 | `0x65c2d9...251c21` | ⚠️ Unaudited |
+| CurveStableSwapNG | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x394a1e...41542f` | ⚠️ Unaudited |
 | CurveStableSwapNG | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-394252 | `0xa10d15...0dddb1` | ⚠️ Unaudited |
+| DepositSecurityModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc77f87...3cfc09` | ⚠️ Unaudited |
+| DorMigrator | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x83b78c...c9da2a` | ⚠️ Unaudited |
+| DorRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x5324e2...152a10`; ethereum `0x7ca353...bbc204` | ⚠️ Unaudited |
+| DorStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x478bf5...dd2192`; ethereum `0xc1b6a6...f51023` | ⚠️ Unaudited |
+| DummyEmptyContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6f6541...beda31` | ⚠️ Unaudited |
+| DWSTETHV3RateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf5760a...fbbf08` | ⚠️ Unaudited |
+| EIP712StETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8f73e4...3228b7` | ⚠️ Unaudited |
+| ESRV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xa1c069...4a94e1` | ⚠️ Unaudited |
+| FastlaneFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x434b68...1d6354`; avalanche `0xc41561...d0676b` | ⚠️ Unaudited |
+| FixedRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcbb64b...ba2860` | ⚠️ Unaudited |
+| GearboxDeposit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x879316...c22f31` | ⚠️ Unaudited |
+| GearboxDepositV31 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4deed6...cd234f` | ⚠️ Unaudited |
+| GearboxRedeem | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x150d67...718ece` | ⚠️ Unaudited |
+| GearboxRedeemV31 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x90a029...08257a` | ⚠️ Unaudited |
+| HashConsensus | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x7fadb6...df355a`; ethereum `0xd624b0...f0b288` | ⚠️ Unaudited |
+| InternalAccountingUnit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x1b6238...68ba92`; avalanche `0x5ac32e...4635a2` | ⚠️ Unaudited |
+| KPKWSTETHV3RateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc8efa0...459ac2` | ⚠️ Unaudited |
+| LegacyOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa29b81...2d7e0e` | ⚠️ Unaudited |
+| LendingPoolv3 | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x5fde59...eb357f` | ⚠️ Unaudited |
 | LockReleaseTokenPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394251 | `0x8113f0...ca8435` | ⚠️ Unaudited |
+| MerklClaim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x23bd2d...0f049e`; avalanche `0x8e41b7...442e46` | ⚠️ Unaudited |
+| NavBenqi | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x34a9c9...691485` | ⚠️ Unaudited |
+| NavErc20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: ethereum `0xa0a105...57af36`; avalanche `0x24fe44...3b10d1` | ⚠️ Unaudited |
+| NavErc20WithDebt | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: ethereum `0xff62ad...0c48bc`; avalanche `0x2e3559...2cf821` | ⚠️ Unaudited |
+| NavHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x86b238...62b6e6`; ethereum `0xf22ca8...75ff56` | ⚠️ Unaudited |
+| NavLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: ethereum `0xfda0b8...09b258`; avalanche `0x6276c3...5dbb6c` | ⚠️ Unaudited |
+| NavRegistry | registry | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: ethereum `0xe2d604...5451e9`; avalanche `0x950d85...cedcc6` | ⚠️ Unaudited |
+| NavUnSavax | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x2f1617...ce602f` | ⚠️ Unaudited |
+| NavUnStEth | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4c82f6...1e5e39` | ⚠️ Unaudited |
+| NodeOperatorsRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x853893...b6d8ed` | ⚠️ Unaudited |
+| OracleDaemonConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbf05a9...c23b09` | ⚠️ Unaudited |
+| OracleReportSanityChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9305c1...f0f1cc` | ⚠️ Unaudited |
+| PnlAccounting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 3 deployments: ethereum `0xdd317b...acaea7`; avalanche `0x30c030...be48c3`; avalanche `0x3cfd9a...60892d` | ⚠️ Unaudited |
+| PnlAccountingHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x57c23f...81437e`; ethereum `0xd88fb0...1337e1` | ⚠️ Unaudited |
+| ProtocolPoolController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x03a993...3f5e61`; avalanche `0x63fff9...63f183` | ⚠️ Unaudited |
+| QIAVAXBorrowRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf59a26...60ab48` | ⚠️ Unaudited |
+| QISAVAXSupplyRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xa3b087...e0d714` | ⚠️ Unaudited |
+| RateProviderRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: ethereum `0xd0b6c0...bedce7`; avalanche `0x8126f3...b3d9bb` | ⚠️ Unaudited |
+| RedemptionController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: ethereum `0xdf2ee4...eb2510`; avalanche `0x4d9f1b...706755` | ⚠️ Unaudited |
+| RefundLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x243347...ed53fd` | ⚠️ Unaudited |
+| SAVAXRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xcfc69c...6c7273` | ⚠️ Unaudited |
+| SavaxRedeem | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xd78718...90f7cb` | ⚠️ Unaudited |
+| SavaxRedeemOverdue | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x75e8f8...4bd200` | ⚠️ Unaudited |
+| SavaxSubmit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x9217e7...4d2b1a` | ⚠️ Unaudited |
+| SavaxUnlock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x6a5ebe...4e35b3` | ⚠️ Unaudited |
+| ShapellaUpgradeTemplate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa818ff...cd600a` | ⚠️ Unaudited |
+| SimpleStakingERC20 | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x5e4acc...779dcc`; mantle `0x5e4acc...779dcc` | ⚠️ Unaudited |
+| SpectraWrappedtAVAX | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x4c916a...8a2a09`; avalanche `0xad9ac7...29f2f3` | ⚠️ Unaudited |
 | StablePool | core_logic | project_anchor | own_supporting | 0 | avalanche | unit-394259 | `0x832f8e...ded1f0` | ⚠️ Unaudited |
+| StakingRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd8784e...0fb6df` | ⚠️ Unaudited |
+| StakingRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xfddf38...f12999` | ⚠️ Unaudited |
 | Strategy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394250 | `0x5ae0e4...284938` | ⚠️ Unaudited |
+| Strategy | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x98273a...c02455`; ethereum `0xbfdf0a...e02a9d` | ⚠️ Unaudited |
 | Strategy | core_logic | project_anchor | own_supporting | 0 | avalanche | unit-394257 | `0x568bf0...7a15bb` | ⚠️ Unaudited |
 | Strategy | unknown | project_anchor | own_supporting | 0 | avalanche | unit-394260 | `0x882fdc...f62316` | ⚠️ Unaudited |
-| TAsset | unknown | project_anchor | own_supporting | 1 | avalanche | unit-394268 | `0x14a84f...bc1646` | ⚠️ Unaudited |
+| StrategyExecutor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x89f57d...0ef50e`; avalanche `0xca8539...abbb51` | ⚠️ Unaudited |
+| StrategyStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: ethereum `0x97c03f...6f1f47`; avalanche `0x4728aa...97c080` | ⚠️ Unaudited |
+| TAsset | unknown | project_anchor | own_supporting | 1 | avalanche | unit-394268 | 2 deployments: avalanche `0x14a84f...bc1646`; avalanche `0xb63744...486d3a` | ⚠️ Unaudited |
+| TAvaxExchangeRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xe24fae...6fff6b` | ⚠️ Unaudited |
+| tETH | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x72cca9...761e96`; ethereum `0xa1150c...a5adab` | ⚠️ Unaudited |
+| TEthExchangeRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4bd1ec...55fa8d` | ⚠️ Unaudited |
+| TEthRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x077c21...9fdc1e` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2225da...ab467e` | ⚠️ Unaudited |
+| TkMrsR | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcf0a32...382018` | ⚠️ Unaudited |
+| TreehouseAccounting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: ethereum `0xb7ce3c...535709`; avalanche `0x6f5d00...f8a454` | ⚠️ Unaudited |
+| TreehouseFastlane | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: ethereum `0x829525...06c0d6`; avalanche `0x3d00a6...98a01c` | ⚠️ Unaudited |
+| TreehouseRedemption | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0618db...4ad09f` | ⚠️ Unaudited |
+| TreehouseRedemptionV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: ethereum `0xcd63a2...aabb85`; avalanche `0x765f6d...acf04b` | ⚠️ Unaudited |
+| TreehouseRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8ae023...c4d398` | ⚠️ Unaudited |
+| ValidatorsExitBusOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x0de4ea...bf5c6e` | ⚠️ Unaudited |
+| ValidatorsExitBusOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa89ea5...3bc42c` | ⚠️ Unaudited |
+| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xba1222...6bf2c8` | ⚠️ Unaudited |
 | Vault | core_logic | project_anchor | own_supporting | 0 | avalanche | unit-394256 | `0x3fc60a...ac99ed` | ⚠️ Unaudited |
+| VaultPull | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: ethereum `0x313ca6...5b3ab9`; avalanche `0x20df2d...c83055` | ⚠️ Unaudited |
+| VaultRescuer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1af329...db933a` | ⚠️ Unaudited |
+| VaultSend | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: ethereum `0xc78011...45fc3a`; avalanche `0xbb906a...b2b815` | ⚠️ Unaudited |
+| VDWAVAXRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x6406a2...2cdcd8` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf69753...d27862` | ⚠️ Unaudited |
+| WeETHExchangeRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x30ed8c...5595e4` | ⚠️ Unaudited |
+| WeightedPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8e9aa8...637de9` | ⚠️ Unaudited |
+| WithdrawalQueueERC721 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x889edc...12f9b1`; ethereum `0xe42c65...7d94d9` | ⚠️ Unaudited |
+| WithdrawalVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcc52f1...7f69fd` | ⚠️ Unaudited |
+| WstETHExchangeRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3ce02c...c6cd1e` | ⚠️ Unaudited |
+| WstETHRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa14a1a...fe6109` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -150,12 +241,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (15)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| Proxy (impl: 0x62c9e5e52351e02635f48072fa20c03bb650f787) | proxy | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xad744e...3d8db2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e3b23...875d6f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x94905e...784e6d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1f998...d211f3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1fa94...21588a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb14e42...ddd28b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdfcea9...eef9c1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe43f46...af73c1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe8e4ee...6685b5` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-394261 | `0x1620b7...a9d30a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-394262 | `0x932f2a...e340b7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-394263 | `0xa120f5...43f642` | ❓ Unverified |
@@ -374,10 +474,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 13 |
-| upstream | 1 |
-| standard_library | 0 |
-| needs_review | 6 |
+| native | 98 |
+| upstream | 6 |
+| standard_library | 1 |
+| needs_review | 15 |
 
 ## Scope Matching Notes
 

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: FLock.io (`flock.io`)
 - Website: [https://www.flock.io/](https://www.flock.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base
-- Contract surface: 1 unique implementations (1 raw deployments)
+- Contract surface: 19 unique implementations (35 raw deployments)
 - Coverage basis: 1/1 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $4,608,880.94
 - On-chain TVL (included contracts): n/a
@@ -49,7 +49,7 @@ The pinned logic-topography run contains 2 contract row(s) across base. Structur
 
 ## Contract Surface Quality
 
-- Indexed contracts: 2; live-surface contracts included: 2 (1 live, 1 unknown).
+- Logic-topography rows: 2; live-surface rows included: 2 (2 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 1/2 live.
 - Detected codebases: none
@@ -60,15 +60,15 @@ The pinned logic-topography run contains 2 contract row(s) across base. Structur
 - Coverage of address-book-owned deployed-live implementations: 1/1 (100.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 1
-- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/1
-- Verified + Unaudited implementations: 0
+- Outside the address book: 18 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 16
+- Confirmed-live implementations: 1 of 19 unique; 18 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/18
+- Verified + Unaudited implementations: 17
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
+- Unverified implementations: 1
+- Unique implementations: 19
+- Raw deployments: 35
 - Audits discovered: 4 (4 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -81,7 +81,7 @@ The pinned logic-topography run contains 2 contract row(s) across base. Structur
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| SlowMist | Tier 1 | 1 | 100.0% | 2025-04 |
+| SlowMist | Tier 1 | 1 | 5.6% | 2025-04 |
 
 ## Contract Surface
 
@@ -89,11 +89,29 @@ The pinned logic-topography run contains 2 contract row(s) across base. Structur
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| FlockTokenUpgradeable | unknown | project_anchor | own_supporting | 1 | base | unit-240015 | `0x5ab3d4...a7b691` | ✅ Audited |
+| FlockTokenUpgradeable | unknown | project_anchor | own_supporting | 1 | base | unit-240015 | 2 deployments: base `0x22754d...45f784`; base `0x5ab3d4...a7b691` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (17)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| FlockAirDrop | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x05379b...e93d66`; base `0x7c3eac...988daf` | ⚠️ Unaudited |
+| FlockConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 3 deployments: base `0x64e545...1e4997`; base `0x769cec...a2148a`; base `0xf79584...8fb833` | ⚠️ Unaudited |
+| FlockPoolManagerUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x1a15d5...d48af6`; base `0x2d2f27...20dd65` | ⚠️ Unaudited |
+| FlockPoolManagerV2Upgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x25c2d9...1f5137`; base `0x5c4155...7a1502` | ⚠️ Unaudited |
+| FlockRewardPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x86dbb3...1343a8`; base `0xde02bb...8682b5` | ⚠️ Unaudited |
+| FlockStakeInfoUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x2886fd...d17883`; base `0x8a83ef...6a400a` | ⚠️ Unaudited |
+| FlockStakeInfoV2Upgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x1b964b...9f1f98`; base `0xa799ec...f5bf63` | ⚠️ Unaudited |
+| FlockTaskManagerUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x05e42e...8b737a`; base `0xac24d8...7d8fe4`; base `0xe8e31e...980d6c` | ⚠️ Unaudited |
+| FlockTaskManagerUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x5813de...99aaa0`; base `0xc4d8cf...31846a` | ⚠️ Unaudited |
+| FlockTaskManagerV2Upgradeable | governance | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x29d4ec...e69fed` | ⚠️ Unaudited |
+| FlockTaskManagerV2Upgradeable | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x360406...466a3d`; base `0x8884e9...5acdad` | ⚠️ Unaudited |
+| FlockTokenUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x81e741...3ad626` | ⚠️ Unaudited |
+| gmFlockExchangeUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x9e0acc...def83f`; base `0xe1fa45...fc6123` | ⚠️ Unaudited |
+| gmFlockUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x781dd2...5cad24`; base `0x7fe6d7...0c816c` | ⚠️ Unaudited |
+| LinearVestingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x34e11c...dfb5b5`; base `0xf36088...752b53` | ⚠️ Unaudited |
+| ModelTokenLaunchUpgradeable | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x6f39fe...97f0b1` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb6523d...7e9f06` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -107,11 +125,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7bf579...5e195e` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -170,10 +190,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 17 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 0 |
+| standard_library | 1 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

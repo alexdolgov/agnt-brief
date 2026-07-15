@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: YieldFi (`yieldfi`)
 - Website: [https://yield.fi/](https://yield.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, avalanche, base, bsc, ethereum, linea, optimism, plasma, sonic
-- Contract surface: 77 unique implementations (77 raw deployments)
+- Contract surface: 90 unique implementations (102 raw deployments)
 - Coverage basis: 9/12 confirmed own live verified implementations (75.0%); conservative 75.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $10,325,276.74
 - On-chain TVL (included contracts): n/a
@@ -67,7 +67,7 @@ The pinned logic-topography run contains 39 contract row(s) across arbitrum, ava
 
 ## Contract Surface Quality
 
-- Indexed contracts: 39; live-surface contracts included: 39 (12 live, 27 unknown).
+- Logic-topography rows: 39; live-surface rows included: 39 (12 live, 27 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 12/56 live.
 - Detected codebases: none
@@ -78,15 +78,15 @@ The pinned logic-topography run contains 39 contract row(s) across arbitrum, ava
 - Coverage of address-book-owned deployed-live implementations: 9/12 (75.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 12 own, 44 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 21 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 51
-- Deployed-live implementations: 12 of 77 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 9/12
-- Verified + Unaudited implementations: 3
+- Outside the address book: 34 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 62
+- Confirmed-live implementations: 12 of 90 unique; 78 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 9/66
+- Verified + Unaudited implementations: 57
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 77
-- Raw deployments: 77
+- Unverified implementations: 24
+- Unique implementations: 90
+- Raw deployments: 102
 - Audits discovered: 10 (10 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 7
 - ASD (verified + unaudited TVL): n/a
@@ -99,9 +99,9 @@ The pinned logic-topography run contains 39 contract row(s) across arbitrum, ava
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Sherlock | Tier 1 | 9 | 75.0% | 2026-01 |
-| Cyfrin | Tier 1 | 2 | 16.7% | 2025-06 |
-| Halborn | Tier 2 | 1 | 8.3% | 2024-11 |
+| Sherlock | Tier 1 | 9 | 13.6% | 2026-01 |
+| Cyfrin | Tier 1 | 2 | 3.0% | 2025-06 |
+| Halborn | Tier 2 | 1 | 1.5% | 2024-11 |
 
 ## Contract Surface
 
@@ -119,10 +119,11 @@ The pinned logic-topography run contains 39 contract row(s) across arbitrum, ava
 | PriceOracle | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-263565 | `0x67dba3...241df5` | ✅ Audited |
 | VaultFactory | registry | project_anchor | own_supporting | 1 | ethereum | unit-263576 | `0x5c46ed...ba3878` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (44)
+### ⚠️ Verified + Unaudited (57)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| Administrator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x9305a0...29bdff`; ethereum `0xf2de80...51aa26` | ⚠️ Unaudited |
 | BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-263529 | `0x6be164...12b1ee` | ⚠️ Unaudited |
 | BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | optimism | unit-263534 | `0xa358f0...770604` | ⚠️ Unaudited |
 | BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-263545 | `0x383d63...6924ce` | ⚠️ Unaudited |
@@ -131,20 +132,30 @@ The pinned logic-topography run contains 39 contract row(s) across arbitrum, ava
 | BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-263541 | `0x8a264a...48f066` | ⚠️ Unaudited |
 | BridgeCCIP | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-263544 | `0xf6aebd...a9f9df` | ⚠️ Unaudited |
 | BridgeLR | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-263530 | `0x8484e4...942bdc` | ⚠️ Unaudited |
+| BridgeMB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0b7e6c...b19f60` | ⚠️ Unaudited |
+| LockBox | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x0407d3...5f4d6d`; ethereum `0xbc5c54...12d1c9` | ⚠️ Unaudited |
 | LockBox | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263555 | `0x659b5b...0e2231` | ⚠️ Unaudited |
+| LockBox | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaf60c7...d4355d` | ⚠️ Unaudited |
 | Manager | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263562 | `0x03acc3...08c8dc` | ⚠️ Unaudited |
-| Manager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263569 | `0x88538b...993935` | ⚠️ Unaudited |
+| Manager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263569 | 2 deployments: ethereum `0x88538b...993935`; ethereum `0xa356be...744dd2` | ⚠️ Unaudited |
 | Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x03acc3...08c8dc` | ⚠️ Unaudited |
 | Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x03acc3...08c8dc` | ⚠️ Unaudited |
+| Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x08fb98...c5f05c` | ⚠️ Unaudited |
 | Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x03acc3...08c8dc` | ⚠️ Unaudited |
 | Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x03acc3...08c8dc` | ⚠️ Unaudited |
 | Manager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x03acc3...08c8dc` | ⚠️ Unaudited |
-| Receipt | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263575 | `0x154e5d...b8deed` | ⚠️ Unaudited |
+| Receipt | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263575 | 2 deployments: ethereum `0x154e5d...b8deed`; ethereum `0xce1f3d...5f68f1` | ⚠️ Unaudited |
+| Receipt | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x441e2e...27a693` | ⚠️ Unaudited |
 | Registry | registry | project_anchor | own_supporting | 1 | ethereum | unit-263558 | `0x9a7664...0f7505` | ⚠️ Unaudited |
-| SToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263556 | `0x4f8e14...cb95f2` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xf4f447...ee55de` | ⚠️ Unaudited |
+| Registry | registry | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x9a7664...0f7505` | ⚠️ Unaudited |
+| SToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263556 | 2 deployments: ethereum `0x20b8f4...f4dc0d`; ethereum `0x4f8e14...cb95f2` | ⚠️ Unaudited |
+| SToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9f4a9e...2cedcc` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 3 deployments: ethereum `0x24bc41...cb6e01`; ethereum `0xaec8c1...337026`; ethereum `0xdfbd30...70db53` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x5c46ed...ba3878`; sonic `0xf4f447...ee55de` | ⚠️ Unaudited |
+| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 3 | ethereum | n/a | 3 deployments: ethereum `0x06c2c7...1c4f27`; ethereum `0x386e09...468e9c`; ethereum `0xd04ae7...b08ff0` | ⚠️ Unaudited |
 | Vault | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-263564 | `0x3edae9...4ee668` | ⚠️ Unaudited |
 | Vault | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-263577 | `0xdd5eff...318894` | ⚠️ Unaudited |
+| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0xdd5eff...318894` | ⚠️ Unaudited |
 | vyToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263567 | `0x1e2a56...749e1b` | ⚠️ Unaudited |
 | vyToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263572 | `0x2e3c5e...0d92fc` | ⚠️ Unaudited |
 | vyToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263571 | `0x307311...a5c9f9` | ⚠️ Unaudited |
@@ -155,8 +166,10 @@ The pinned logic-topography run contains 39 contract row(s) across arbitrum, ava
 | vyTokenL2 | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | arbitrum | unit-263581 | `0x8c93a6...6a7f90` | ⚠️ Unaudited |
 | vyTokenL2 | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | arbitrum | unit-263578 | `0xf4f447...ee55de` | ⚠️ Unaudited |
 | vyTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0xf4f447...ee55de` | ⚠️ Unaudited |
+| Yield | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xa52bc2...5df01a`; ethereum `0xf4ef3b...78427b` | ⚠️ Unaudited |
 | YToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263559 | `0x19ebd1...7f35cb` | ⚠️ Unaudited |
 | YToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263561 | `0x1ce7d9...845a97` | ⚠️ Unaudited |
+| YToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x79e243...f82c8d`; ethereum `0x8ae736...3fdd69` | ⚠️ Unaudited |
 | YToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263557 | `0x8464f6...ec123a` | ⚠️ Unaudited |
 | YToken | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-263560 | `0xa01200...fc6c43` | ⚠️ Unaudited |
 | YTokenL2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x4772d2...5c8121` | ⚠️ Unaudited |
@@ -423,9 +436,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 52 |
+| native | 64 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 2 |
 | needs_review | 24 |
 
 ## Scope Matching Notes

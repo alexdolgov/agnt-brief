@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: ForgeYields (`forgeyields`)
 - Website: [https://app.forgeyields.com](https://app.forgeyields.com)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, base, ethereum, monad
-- Contract surface: 42 unique implementations (42 raw deployments)
+- Contract surface: 43 unique implementations (43 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $1,232,889.40
 - On-chain TVL (included contracts): n/a
@@ -97,7 +97,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Logic-topography rows: 0; live-surface rows included: 0 (0 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 42/47 live.
 - Detected codebases: none
@@ -108,15 +108,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 42 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 1 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 42 of 42 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Confirmed-live implementations: 42 of 43 unique; 1 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 42
-- Unique implementations: 42
-- Raw deployments: 42
+- Unverified implementations: 43
+- Unique implementations: 43
+- Raw deployments: 43
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -151,7 +151,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (42)
+### ❓ Unverified (43)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -165,6 +165,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240050 | `0x2f99ea...b99ea6` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240051 | `0x4684b8...e3dca0` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240052 | `0x4e27bb...d20c01` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5d77ef...993dd6` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240053 | `0x6b37d7...e0ccf0` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240054 | `0x6d8b1b...3db22f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240055 | `0x76e7e4...81a972` | ❓ Unverified |
@@ -255,7 +256,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 42 |
+| needs_review | 43 |
 
 ## Scope Matching Notes
 

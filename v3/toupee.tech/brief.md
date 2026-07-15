@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: toupee.tech (`toupee.tech`)
 - Website: [https://www.toupee.tech](https://www.toupee.tech)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base
-- Contract surface: 25 unique implementations (25 raw deployments)
+- Contract surface: 27 unique implementations (28 raw deployments)
 - Coverage basis: 7/21 confirmed own live verified implementations (33.3%); conservative 33.3% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $4,702,291.57
 - On-chain TVL (included contracts): n/a
@@ -72,7 +72,7 @@ The pinned logic-topography run contains 21 contract row(s) across base. Structu
 
 ## Contract Surface Quality
 
-- Indexed contracts: 21; live-surface contracts included: 21 (21 live, 0 unknown).
+- Logic-topography rows: 21; live-surface rows included: 21 (21 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 25/25 live.
 - Detected codebases: none
@@ -83,15 +83,15 @@ The pinned logic-topography run contains 21 contract row(s) across base. Structu
 - Coverage of address-book-owned deployed-live implementations: 7/21 (33.3%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 25 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 2 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 25 of 25 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 7/21
-- Verified + Unaudited implementations: 14
+- Confirmed-live implementations: 25 of 27 unique; 2 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 7/23
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
 - Unverified implementations: 4
-- Unique implementations: 25
-- Raw deployments: 25
+- Unique implementations: 27
+- Raw deployments: 28
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
@@ -104,8 +104,8 @@ The pinned logic-topography run contains 21 contract row(s) across base. Structu
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| PeckShield | Tier 2 | 5 | 23.8% | 2023-09 |
-| unknown | Tier 2 | 4 | 19.0% | 2023-05 |
+| PeckShield | Tier 2 | 5 | 21.7% | 2023-09 |
+| unknown | Tier 2 | 4 | 17.4% | 2023-05 |
 
 ## Contract Surface
 
@@ -121,7 +121,7 @@ The pinned logic-topography run contains 21 contract row(s) across base. Structu
 | Voter | unknown | project_anchor | own_supporting | 0 | base | unit-258860 | `0x756fc5...492452` | ✅ Audited |
 | VTOKEN | token | project_anchor | own_supporting | 0 | base | unit-258859 | `0x60c087...b11515` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (14)
+### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
@@ -132,12 +132,14 @@ The pinned logic-topography run contains 21 contract row(s) across base. Structu
 | AeroPairPluginFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258871 | `0xeac050...eb0448` | ⚠️ Unaudited |
 | Controller | unknown | project_anchor | own_supporting | 0 | base | unit-258852 | `0x1eeb34...d4904e` | ⚠️ Unaudited |
 | MerkleClaim | unknown | project_anchor | own_supporting | 0 | base | unit-258857 | `0x5d8218...a037e1` | ⚠️ Unaudited |
+| Multicall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x3bb30c...f0947e`; base `0x752de9...facc71` | ⚠️ Unaudited |
 | Multicall | unknown | project_anchor | own_supporting | 0 | base | unit-258868 | `0xda81a3...aae82f` | ⚠️ Unaudited |
 | ScaleGaugePlugin | operational_periphery | project_anchor | own_supporting | 0 | base | unit-258874 | `0xf19a7b...5290b8` | ⚠️ Unaudited |
 | ScaleGaugePluginFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258872 | `0xece72a...71e22e` | ⚠️ Unaudited |
 | TOKEN | token | project_anchor | own_supporting | 0 | base | unit-258856 | `0x58dd17...79e9b9` | ⚠️ Unaudited |
 | TOKENGovernor | unknown | project_anchor | own_supporting | 0 | base | unit-258854 | `0x46e77d...8c64b4` | ⚠️ Unaudited |
 | VelociGaugePluginFactory | unknown | project_anchor | own_supporting | 0 | base | unit-258865 | `0xc40215...fc8abf` | ⚠️ Unaudited |
+| VelociGrapheneGaugePluginFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xed8b18...ef23a3` | ⚠️ Unaudited |
 | VTOKENRewarder | token | project_anchor | own_supporting | 0 | base | unit-258869 | `0xdd3e79...1de558` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -229,9 +231,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 20 |
+| native | 21 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 2 |
 | needs_review | 4 |
 
 ## Scope Matching Notes

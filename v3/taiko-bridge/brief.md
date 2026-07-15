@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Taiko Bridge (`taiko-bridge`)
 - Website: [https://bridge.taiko.xyz/](https://bridge.taiko.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 27 unique implementations (27 raw deployments)
+- Contract surface: 93 unique implementations (232 raw deployments)
 - Coverage basis: 6/7 confirmed own live verified implementations (85.7%); conservative 85.7% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $11,772,373.58
 - On-chain TVL (included contracts): n/a
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum. Str
 
 ## Fork Analysis
 
-0 of 1 contracts are derived from known codebases. 1 contracts have no detected origin.
+0 of 2 contracts are derived from known codebases. 2 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -53,12 +53,13 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum. Str
 ### Original Contracts (no fork detected - full audit scope)
 
 - UnnamedContract (`0x10dea6...54d800`, chain 1)
+- MainnetSharedAddressManager (`0xec1a9a...0c6449`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 13; live-surface contracts included: 13 (7 live, 6 unknown).
+- Logic-topography rows: 13; live-surface rows included: 13 (11 live, 2 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
-- Deployment units: 8/8 live.
+- Deployment units: 8/10 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -67,15 +68,15 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum. Str
 - Coverage of address-book-owned deployed-live implementations: 6/7 (85.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 8 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 19 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 7
-- Deployed-live implementations: 8 of 27 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 6/7
-- Verified + Unaudited implementations: 1
+- Outside the address book: 85 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 22
+- Confirmed-live implementations: 8 of 93 unique; 85 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 6/65
+- Verified + Unaudited implementations: 59
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 27
-- Raw deployments: 27
+- Unverified implementations: 28
+- Unique implementations: 93
+- Raw deployments: 232
 - Audits discovered: 8 (8 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): n/a
@@ -88,11 +89,11 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum. Str
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| OpenZeppelin | Tier 1 | 6 | 85.7% | 2026-01 |
-| Quill Audits | Tier 2 | 5 | 71.4% | 2024-02 |
-| Sigma Prime | Tier 2 | 5 | 71.4% | 2024-02 |
-| Code4rena | Tier 1 | 3 | 42.9% | 2024-03 |
-| Halborn | Tier 2 | 1 | 14.3% | 2025-03 |
+| OpenZeppelin | Tier 1 | 6 | 9.2% | 2026-01 |
+| Quill Audits | Tier 2 | 5 | 7.7% | 2024-02 |
+| Sigma Prime | Tier 2 | 5 | 7.7% | 2024-02 |
+| Code4rena | Tier 1 | 3 | 4.6% | 2024-03 |
+| Halborn | Tier 2 | 1 | 1.5% | 2025-03 |
 
 ## Contract Surface
 
@@ -101,17 +102,75 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum. Str
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | MainnetBridge | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257940 | `0xd60247...ddd8ec` | ✅ Audited |
-| MainnetERC1155Vault | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257941 | `0xaf1459...881702` | ✅ Audited |
+| MainnetERC1155Vault | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257941 | 2 deployments: ethereum `0x838ed4...99b9c8`; ethereum `0xaf1459...881702` | ✅ Audited |
 | MainnetERC20Vault | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257938 | `0x996282...4415ab` | ✅ Audited |
-| MainnetERC721Vault | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257942 | `0x0b470d...f419aa` | ✅ Audited |
-| QuotaManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257943 | `0x91f671...22f29e` | ✅ Audited |
+| MainnetERC721Vault | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257942 | 2 deployments: ethereum `0x0b470d...f419aa`; ethereum `0xa4c5c2...274c49` | ✅ Audited |
+| QuotaManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257943 | 2 deployments: ethereum `0x91f671...22f29e`; ethereum `0xdb627b...5bbc64` | ✅ Audited |
 | SignalService | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257939 | `0x9e0a24...35c77c` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (59)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| MainnetSharedAddressManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257944 | `0xef9eaa...65fbaa` | ⚠️ Unaudited |
+| AddressManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x9ca1ab...9c6a15`; ethereum `0xd912ab...360440`; ethereum `0xf1ca1f...e80943` | ⚠️ Unaudited |
+| AssignmentHook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x25206c...ada046`; ethereum `0x4f6642...dda170`; ethereum `0xe226fa...36fb0d` | ⚠️ Unaudited |
+| AssignmentHook | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x537a2f...1796f6`; ethereum `0xf77cbf...5e53f2` | ⚠️ Unaudited |
+| AutomataDcapV3Attestation | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x5f73f0...84e0b5`; ethereum `0x8d7c95...7ca8a3` | ⚠️ Unaudited |
+| AutomataDcapV3Attestation | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xde1b1f...303323`; ethereum `0xee8fc1...fcdafc` | ⚠️ Unaudited |
+| Bridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 11 deployments: ethereum `0x01e7d3...789986`; ethereum `0x02f21b...d782be`; ethereum `0x271bc3...f0b218`; ethereum `0x40f8be...d603f7`; ethereum `0x4a1091...cf853d`; ethereum `0x4cab75...7eabd0`; ethereum `0x71c2f4...8d6cd0`; ethereum `0x91d593...7bcf6f`; ethereum `0xc71cc3...a645ba`; ethereum `0xd28f2c...052561`; ethereum `0xe148cc...611e57` | ⚠️ Unaudited |
+| BridgedERC1155 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x39e4c1...42791d`; ethereum `0x3c9096...9c2c40`; ethereum `0xe7782d...0d689d` | ⚠️ Unaudited |
+| BridgedERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x79bc0a...3653e3`; ethereum `0xcc5d48...de7372` | ⚠️ Unaudited |
+| BridgedERC20V2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x656661...09a2e1`; ethereum `0x7714f5...860f8c` | ⚠️ Unaudited |
+| BridgedERC721 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xc33109...6a1bf7`; ethereum `0xc4096e...c12de7` | ⚠️ Unaudited |
+| ERC1155Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x01329a...2332fa`; ethereum `0x097bbb...a47dc3`; ethereum `0x7748da...3c6396`; ethereum `0xca9288...1a59c8`; ethereum `0xd90b5f...1cdcfe` | ⚠️ Unaudited |
+| ERC20Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 7 deployments: ethereum `0x15d9f7...4a4bec`; ethereum `0x4f750d...374ca1`; ethereum `0x540fe6...0b56ff`; ethereum `0x75b5e2...80eb22`; ethereum `0xa30378...722689`; ethereum `0xc722d9...b9bf8e`; ethereum `0xf8bdac...74e737` | ⚠️ Unaudited |
+| ERC721Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x2dfef0...3163ed`; ethereum `0x41a7bd...1495fa`; ethereum `0x55b5df...4732c4`; ethereum `0x7dae64...b1ed5c`; ethereum `0xec0484...94f692` | ⚠️ Unaudited |
+| GuardianProver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 7 deployments: ethereum `0x253e47...64b65e`; ethereum `0x468f6a...942d5c`; ethereum `0x717dc5...4ce9cf`; ethereum `0x750221...7942d2`; ethereum `0x7e717f...5bc8a4`; ethereum `0x97f5a0...03b28c`; ethereum `0xce6b40...877e15` | ⚠️ Unaudited |
+| L1RollupAddressManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x29a88d...154900`; ethereum `0x8af466...d07a9a`; ethereum `0x8eef31...903af6` | ⚠️ Unaudited |
+| L1SharedAddressManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x25d846...672b5c`; ethereum `0x949650...398a17` | ⚠️ Unaudited |
+| MainnetBridge | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257936 | `0x2705b1...67da2f` | ⚠️ Unaudited |
+| MainnetBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x3abf0f...75abf2`; ethereum `0x68756c...12f179`; ethereum `0xac96ff...915af3` | ⚠️ Unaudited |
+| MainnetERC1155Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x89c68b...85617b`; ethereum `0xec0fd4...e8674d` | ⚠️ Unaudited |
+| MainnetERC20Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x76d73a...b3ab63`; ethereum `0x7acfbb...c3ff30` | ⚠️ Unaudited |
+| MainnetERC20Vault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257937 | `0xb20c8f...790e63` | ⚠️ Unaudited |
+| MainnetERC721Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd961e3...5e3fec` | ⚠️ Unaudited |
+| MainnetGuardianProver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3c40cc...c8df98` | ⚠️ Unaudited |
+| MainnetGuardianProver | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 3 deployments: ethereum `0x579a8d...9e985c`; ethereum `0xb866e9...4f7b47`; ethereum `0xe3d777...5f43ac` | ⚠️ Unaudited |
+| MainnetInbox | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x06a9ab...feb19a` | ⚠️ Unaudited |
+| MainnetProverSet | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x280eab...fb55fa`; ethereum `0xa01d46...a9ddb3` | ⚠️ Unaudited |
+| MainnetProverSet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x3022ed...5e8763`; ethereum `0x74828e...72d652`; ethereum `0xce5a11...f2b15a`; ethereum `0xd0d3f0...a4f30b` | ⚠️ Unaudited |
+| MainnetRollupAddressManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x0079a7...79b36d`; ethereum `0x579f40...290780` | ⚠️ Unaudited |
+| MainnetRollupAddressManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 7 deployments: ethereum `0x08aab2...a0a6db`; ethereum `0x190d5d...e096be`; ethereum `0x3202fc...04ee37`; ethereum `0x4f6d5d...18e8e9`; ethereum `0x52ca3c...4fc788`; ethereum `0x6d8e6e...f6fb3d`; ethereum `0x85cd63...4f7bf6` | ⚠️ Unaudited |
+| MainnetSgxVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x7ee4ce...0f07f3`; ethereum `0xee5f66...88ff24` | ⚠️ Unaudited |
+| MainnetSgxVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x81dfea...7f0838`; ethereum `0xb0f318...b31f81` | ⚠️ Unaudited |
+| MainnetSharedAddressManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x2f7126...08e2fd`; ethereum `0xc99d6f...00bc5f` | ⚠️ Unaudited |
+| MainnetSharedAddressManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257944 | 2 deployments: ethereum `0xec1a9a...0c6449`; ethereum `0xef9eaa...65fbaa` | ⚠️ Unaudited |
+| MainnetSignalService | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x45fed1...f499f3`; ethereum `0x6e8804...51896a`; ethereum `0xbddf61...f7d37c`; ethereum `0xdf8642...f315df` | ⚠️ Unaudited |
+| MainnetTaikoL1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 14 deployments: ethereum `0x0205ea...aa4040`; ethereum `0x1de54d...64141a`; ethereum `0x278442...37588d`; ethereum `0x30923a...3ee5d9`; ethereum `0x4229d1...cdab2d`; ethereum `0x4b4051...6f1fd4`; ethereum `0x511063...74d7ca`; ethereum `0xa3e75e...dcdb17`; ethereum `0xb74a66...758162`; ethereum `0xba1d90...d83231`; ethereum `0xd4896d...d65e1c`; ethereum `0xe7c4b4...8e9a5b`; ethereum `0xede3c9...e395bc`; ethereum `0xf0e6d3...ffdf2f` | ⚠️ Unaudited |
+| MainnetTierRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 14 deployments: ethereum `0x02d6ab...33f915`; ethereum `0x082fb5...2fa572`; ethereum `0x1c02d1...0f34e3`; ethereum `0x2ae894...c26065`; ethereum `0x2cd242...c7afd0`; ethereum `0x394e30...1935b0`; ethereum `0x44d307...c86db6`; ethereum `0x46d230...3bfcce`; ethereum `0x6cc408...db269e`; ethereum `0x7037ae...a7bb75`; ethereum `0x8a4c69...e52e66`; ethereum `0x8f1c1d...6b5542`; ethereum `0xe93588...a58814`; ethereum `0xfb6a87...019d06` | ⚠️ Unaudited |
+| P256Verifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x11a9eb...fbeab0` | ⚠️ Unaudited |
+| PEMCertChainLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02772b...f46169` | ⚠️ Unaudited |
+| PreconfRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xd5aa0e...a9688a` | ⚠️ Unaudited |
+| PreconfWhitelist | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xfd0194...29b2ac` | ⚠️ Unaudited |
+| ProverSet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x500735...9742b9`; ethereum `0x518845...953c9a`; ethereum `0x5d5282...0bf5fd`; ethereum `0xd0aee9...14d85f`; ethereum `0xd547ca...18f9d1` | ⚠️ Unaudited |
+| ProxylessAssignmentHook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa641a2...085248` | ⚠️ Unaudited |
+| QuotaManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x49c5e5...25ef22` | ⚠️ Unaudited |
+| Risc0Verifier | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x55902b...508edc`; ethereum `0xefe30a...d9a2c3` | ⚠️ Unaudited |
+| RiscZeroGroth16Verifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x48e32e...83dd98`; ethereum `0x683a78...6192a9`; ethereum `0x7e8ce5...8f2da5`; ethereum `0xcf706d...e5308d`; ethereum `0xf31de4...2855e9` | ⚠️ Unaudited |
+| SgxVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x3f5406...aad175`; ethereum `0xb0b782...cc8e9f`; ethereum `0xf38186...2257e9` | ⚠️ Unaudited |
+| SignalService | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x3d59c1...e0f0bb`; ethereum `0xb11cd7...1e652d`; ethereum `0xe1d91b...c33c72` | ⚠️ Unaudited |
+| SigVerifyLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x47bb41...80e6e9` | ⚠️ Unaudited |
+| SP1Verifier | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x00c048...257c7b`; ethereum `0x1e1845...5a34bf` | ⚠️ Unaudited |
+| SP1Verifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 9 deployments: ethereum `0x0ad6f4...588b8c`; ethereum `0x2d33d7...16d067`; ethereum `0x2d4ce7...3b22dc`; ethereum `0x5673e3...942448`; ethereum `0x68593a...4f7371`; ethereum `0x7c3498...5bbe50`; ethereum `0x7e0fbf...f24e05`; ethereum `0xd024e0...0926c0`; ethereum `0xd05aed...e68287` | ⚠️ Unaudited |
+| SP1Verifier | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x5c44f2...8af452`; ethereum `0x5f5b83...6d7219` | ⚠️ Unaudited |
+| SP1Verifier | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x6e520f...536fa8`; ethereum `0xd31868...07d08f` | ⚠️ Unaudited |
+| TaikoL1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 11 deployments: ethereum `0x046874...7a20d5`; ethereum `0x3505a0...bf2944`; ethereum `0x4b2743...e4f3c5`; ethereum `0x5fc547...f1e31b`; ethereum `0x78bcda...7c2f00`; ethereum `0x99ba70...d85501`; ethereum `0x9fbbed...d712fe`; ethereum `0xa200c2...a85ceb`; ethereum `0xb9e1e5...334388`; ethereum `0xcee590...edd2c3`; ethereum `0xe0a5d3...4b44ef` | ⚠️ Unaudited |
+| TaikoToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x55833d...39bcf6`; ethereum `0x7df8bf...c4830f`; ethereum `0xcfe803...3869df`; ethereum `0xea53c0...6e9b3c` | ⚠️ Unaudited |
+| TierProviderV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x33879c...e931f2`; ethereum `0xf8254f...7fd52e` | ⚠️ Unaudited |
+| TierProviderV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x3a1a90...b71ddd`; ethereum `0x4cffe5...ae3a23` | ⚠️ Unaudited |
+| TierRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6e997f...43155a` | ⚠️ Unaudited |
+| TokenUnlock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x10edc3...cdefde`; ethereum `0x816628...b898a7`; ethereum `0xd6a337...6ff5e7` | ⚠️ Unaudited |
+| TokenUnlocking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x244108...191a62` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,7 +184,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (20)
+### ❓ Unverified (28)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -145,11 +204,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167013...000004` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167013...000005` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167013...000006` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2e7797...fd61d6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x464cc5...ba3691` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4876e7...bdf768` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4c70b7...9ed811` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6a4cf6...18ed80` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x779b67...c316c7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x79895c...9042d9` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7bbacc...e01b62` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x81ff6c...2c92c6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x920598...ac6416` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd4f138...98c5e9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdff555...f528ee` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe462cc...4f6a55` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf3b83e...e963da` | ❓ Unverified |
 
 ## Audit Inventory
@@ -398,16 +465,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xef9eaa...65fbaa` | MainnetSharedAddressManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xec1a9a...0c6449` | MainnetSharedAddressManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 7 |
+| native | 65 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 20 |
+| needs_review | 28 |
 
 ## Scope Matching Notes
 

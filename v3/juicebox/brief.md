@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Juicebox (`juicebox`)
 - Website: [https://juicebox.money/](https://juicebox.money/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, arbitrum-sepolia, base, base-sepolia, ethereum, optimism, optimism-sepolia, sepolia
-- Contract surface: 276 unique implementations (276 raw deployments)
+- Contract surface: 283 unique implementations (284 raw deployments)
 - Coverage basis: 1/194 confirmed own live verified implementations (0.5%); conservative 0.5% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $8,209,787.00
 - On-chain TVL (included contracts): n/a
@@ -249,7 +249,7 @@ The pinned logic-topography run contains 194 contract row(s) across arbitrum, ar
 
 ## Contract Surface Quality
 
-- Indexed contracts: 194; live-surface contracts included: 194 (194 live, 0 unknown).
+- Logic-topography rows: 194; live-surface rows included: 194 (194 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 194/259 live.
 - Detected codebases: none
@@ -260,15 +260,15 @@ The pinned logic-topography run contains 194 contract row(s) across arbitrum, ar
 - Coverage of address-book-owned deployed-live implementations: 1/194 (0.5%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 194 own, 56 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 26 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 33 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 194 of 276 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/194
-- Verified + Unaudited implementations: 193
+- Confirmed-live implementations: 194 of 283 unique; 89 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/201
+- Verified + Unaudited implementations: 200
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 276
-- Raw deployments: 276
+- Unverified implementations: 82
+- Unique implementations: 283
+- Raw deployments: 284
 - Audits discovered: 11 (11 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -291,7 +291,7 @@ The pinned logic-topography run contains 194 contract row(s) across arbitrum, ar
 |---|---|---|---|---:|---|---|---|---|
 | JBChainlinkV3PriceFeed | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-243646 | `0x6ed8ee...28bba4` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (193)
+### ⚠️ Verified + Unaudited (200)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
@@ -370,6 +370,7 @@ The pinned logic-topography run contains 194 contract row(s) across arbitrum, ar
 | JBController | governance | project_anchor | own_supporting | 0 | base | unit-243902 | `0xf3cc99...9987e1` | ⚠️ Unaudited |
 | JBController | governance | project_anchor | own_supporting | 0 | arbitrum | unit-243798 | `0x27da30...f7668a` | ⚠️ Unaudited |
 | JBController | governance | project_anchor | own_supporting | 0 | arbitrum | unit-243833 | `0xf3cc99...9987e1` | ⚠️ Unaudited |
+| JBController3_1 | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x97a5b9...4bb59b` | ⚠️ Unaudited |
 | JBDeadline1Day | unknown | project_anchor | own_supporting | 0 | ethereum | unit-243659 | `0xcffdd1...b924d7` | ⚠️ Unaudited |
 | JBDeadline1Day | unknown | project_anchor | own_supporting | 0 | optimism | unit-243711 | `0xcffdd1...b924d7` | ⚠️ Unaudited |
 | JBDeadline1Day | unknown | project_anchor | own_supporting | 0 | base | unit-243896 | `0xcffdd1...b924d7` | ⚠️ Unaudited |
@@ -394,6 +395,9 @@ The pinned logic-topography run contains 194 contract row(s) across arbitrum, ar
 | JBERC20 | token | project_anchor | own_supporting | 0 | optimism | unit-243708 | `0xaeac45...be5d31` | ⚠️ Unaudited |
 | JBERC20 | token | project_anchor | own_supporting | 0 | base | unit-243891 | `0xaeac45...be5d31` | ⚠️ Unaudited |
 | JBERC20 | token | project_anchor | own_supporting | 0 | arbitrum | unit-243823 | `0xaeac45...be5d31` | ⚠️ Unaudited |
+| JBETHPaymentTerminal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x594cb2...64ec63`; ethereum `0x7ae63f...3b8397` | ⚠️ Unaudited |
+| JBETHPaymentTerminal3_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfa391d...607a5c` | ⚠️ Unaudited |
+| JBETHPaymentTerminal3_1_2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1d9619...680cc0` | ⚠️ Unaudited |
 | JBFeelessAddresses | unknown | project_anchor | own_supporting | 0 | ethereum | unit-243669 | `0xfc702a...d91d53` | ⚠️ Unaudited |
 | JBFeelessAddresses | unknown | project_anchor | own_supporting | 0 | optimism | unit-243717 | `0xfc702a...d91d53` | ⚠️ Unaudited |
 | JBFeelessAddresses | unknown | project_anchor | own_supporting | 0 | base | unit-243903 | `0xfc702a...d91d53` | ⚠️ Unaudited |
@@ -432,6 +436,7 @@ The pinned logic-topography run contains 194 contract row(s) across arbitrum, ar
 | JBPrices | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-243705 | `0x9b90e5...e614c4` | ⚠️ Unaudited |
 | JBPrices | operational_periphery | project_anchor | own_supporting | 0 | base | unit-243889 | `0x9b90e5...e614c4` | ⚠️ Unaudited |
 | JBPrices | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-243820 | `0x9b90e5...e614c4` | ⚠️ Unaudited |
+| JBProjectHandles | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd75d2e...b0a3a4` | ⚠️ Unaudited |
 | JBProjects | unknown | project_anchor | own_supporting | 0 | ethereum | unit-243652 | `0x885f70...c8c1d4` | ⚠️ Unaudited |
 | JBProjects | unknown | project_anchor | own_supporting | 0 | optimism | unit-243703 | `0x885f70...c8c1d4` | ⚠️ Unaudited |
 | JBProjects | unknown | project_anchor | own_supporting | 0 | base | unit-243887 | `0x885f70...c8c1d4` | ⚠️ Unaudited |
@@ -488,6 +493,8 @@ The pinned logic-topography run contains 194 contract row(s) across arbitrum, ar
 | REVLoans | unknown | project_anchor | own_supporting | 0 | optimism | unit-243679 | `0x1880d8...d550bb` | ⚠️ Unaudited |
 | REVLoans | unknown | project_anchor | own_supporting | 0 | base | unit-243853 | `0x1880d8...d550bb` | ⚠️ Unaudited |
 | REVLoans | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-243796 | `0x1880d8...d550bb` | ⚠️ Unaudited |
+| TerminalV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd569d3...714431` | ⚠️ Unaudited |
+| TerminalV1_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x981c8e...2e5c68` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -943,7 +950,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 194 |
+| native | 201 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 82 |

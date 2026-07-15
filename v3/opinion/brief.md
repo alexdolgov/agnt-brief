@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: OPINION (`opinion`)
 - Website: [https://app.opinion.trade](https://app.opinion.trade)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: bsc
-- Contract surface: 5 unique implementations (5 raw deployments)
+- Chains: bsc, ethereum
+- Contract surface: 12 unique implementations (26 raw deployments)
 - Coverage basis: 2/3 confirmed own live verified implementations (66.7%); conservative 66.7% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $5,084,612.36
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for OPINION. 
 
 ### Architecture
 
-The pinned logic-topography run contains 3 contract row(s) across bsc. Structural roles: 2 supporting, 1 core. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 3 contract row(s) across bsc, ethereum. Structural roles: 2 supporting, 1 core. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -59,7 +59,7 @@ The pinned logic-topography run contains 3 contract row(s) across bsc. Structura
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Logic-topography rows: 3; live-surface rows included: 3 (3 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 4/4 live.
 - Detected codebases: none
@@ -70,15 +70,15 @@ The pinned logic-topography run contains 3 contract row(s) across bsc. Structura
 - Coverage of address-book-owned deployed-live implementations: 2/3 (66.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 4 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 1 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 4 of 5 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 2/3
-- Verified + Unaudited implementations: 1
+- Outside the address book: 8 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Confirmed-live implementations: 4 of 12 unique; 8 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 2/8
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 5
-- Raw deployments: 5
+- Unverified implementations: 4
+- Unique implementations: 12
+- Raw deployments: 26
 - Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
@@ -91,8 +91,8 @@ The pinned logic-topography run contains 3 contract row(s) across bsc. Structura
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ScaleBit | Tier 2 | 1 | 33.3% | 2025-10 |
-| unknown | Tier 2 | 1 | 33.3% | 2024-11 |
+| ScaleBit | Tier 2 | 1 | 12.5% | 2025-10 |
+| unknown | Tier 2 | 1 | 12.5% | 2024-11 |
 
 ## Contract Surface
 
@@ -103,11 +103,16 @@ The pinned logic-topography run contains 3 contract row(s) across bsc. Structura
 | ConditionalTokens | token | project_anchor | own_supporting | 0 | bsc | unit-390225 | `0xad1a38...10d774` | ✅ Audited |
 | CTFExchangeFeeManager | governance | project_anchor | own_supporting | 0 | bsc | unit-390226 | `0xc9063d...5d7c36` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| ConditionalTokens | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x51d1a6...c6eb54` | ⚠️ Unaudited |
+| CTFExchangeFeeManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 8 deployments: bsc `0x1b4922...b25236`; bsc `0x2b1493...70068c`; bsc `0x32b770...428293`; bsc `0x33d2c9...86afa4`; bsc `0x3bb81f...c17cbc`; bsc `0x3c13ce...ab25a8`; bsc `0x6ae1a7...c9e695`; bsc `0xe9ced7...81ca85` | ⚠️ Unaudited |
+| CTFExecutionEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 8 deployments: bsc `0x5f4534...7a7246`; bsc `0x76527e...2b6b12`; bsc `0x7aeef4...223d1d`; bsc `0x932a47...7398d3`; bsc `0x95665d...e20585`; bsc `0xa26fbc...9cf9b0`; bsc `0xd6e1c9...3cf2c3`; bsc `0xe682cc...24789a` | ⚠️ Unaudited |
 | MultiSend | unknown | project_anchor | own_supporting | 0 | bsc | unit-390224 | `0x998739...8f9eda` | ⚠️ Unaudited |
+| OpinionToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7977bf...0b06e0` | ⚠️ Unaudited |
+| SafeL2 | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0xe76e76...8cbb4b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -121,7 +126,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -129,6 +134,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x000000...000000` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-390223 | `0x38869b...43b526` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5948c9...1879b9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd8ac33...bfce2a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -221,10 +228,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 6 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 2 |
+| standard_library | 2 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

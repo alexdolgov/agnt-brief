@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Ekubo (`ekubo`)
 - Website: [https://ekubo.org/](https://ekubo.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum, sepolia
-- Contract surface: 30 unique implementations (30 raw deployments)
+- Contract surface: 31 unique implementations (31 raw deployments)
 - Coverage basis: 1/2 confirmed own live verified implementations (50.0%); conservative 50.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $20,683,454.92
 - On-chain TVL (included contracts): n/a
@@ -62,7 +62,7 @@ The pinned logic-topography run contains 8 contract row(s) across ethereum, sepo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 8; live-surface contracts included: 8 (2 live, 6 unknown).
+- Logic-topography rows: 8; live-surface rows included: 8 (2 live, 6 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 2/28 live.
 - Detected codebases: none
@@ -73,15 +73,15 @@ The pinned logic-topography run contains 8 contract row(s) across ethereum, sepo
 - Coverage of address-book-owned deployed-live implementations: 1/2 (50.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 2 own, 26 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 2 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 3 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 2 of 30 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/2
-- Verified + Unaudited implementations: 1
+- Confirmed-live implementations: 2 of 31 unique; 29 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/9
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 30
-- Raw deployments: 30
+- Unverified implementations: 22
+- Unique implementations: 31
+- Raw deployments: 31
 - Audits discovered: 16 (16 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -94,7 +94,7 @@ The pinned logic-topography run contains 8 contract row(s) across ethereum, sepo
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Cairo Security Clan | Tier 2 | 1 | 50.0% | 2025-01 |
+| Cairo Security Clan | Tier 2 | 1 | 11.1% | 2025-01 |
 
 ## Contract Surface
 
@@ -104,10 +104,11 @@ The pinned logic-topography run contains 8 contract row(s) across ethereum, sepo
 |---|---|---|---|---:|---|---|---|---|
 | StarknetOwnerProxy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384180 | `0x1e0ef4...a6e9cc` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| Core | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000000...1bd701` | ⚠️ Unaudited |
 | Core | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384193 | `0xe0e0e0...57d444` | ⚠️ Unaudited |
 | EkuboToken | token | project_anchor | own_supporting | 0 | ethereum | unit-384178 | `0x04c46e...317d0f` | ⚠️ Unaudited |
 | MEVResistRouter | adapter | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384179 | `0x0c95ea...44aeab` | ⚠️ Unaudited |
@@ -409,7 +410,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 8 |
+| native | 9 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 22 |

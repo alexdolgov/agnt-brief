@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ⚠️ Lifecycle status: DECLINING - TVL dropped 45.0% over 90 days
 
@@ -18,10 +18,10 @@
 - Project: Ambient (`ambient`)
 - Website: [https://ambient.finance/](https://ambient.finance/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: blast, ethereum, scroll, swellchain
-- Contract surface: 29 unique implementations (29 raw deployments)
+- Chains: blast, canto, ethereum, scroll, swellchain
+- Contract surface: 39 unique implementations (47 raw deployments)
 - Coverage basis: 0/6 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,748,323.91
 - On-chain TVL (included contracts): n/a
@@ -33,7 +33,7 @@ This brief describes the observed EVM deployment and audit surface for Ambient. 
 
 ### Architecture
 
-The pinned logic-topography run contains 10 contract row(s) across blast, ethereum, scroll, swellchain. Structural roles: 4 unclassified, 3 core, 3 supporting. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 10 contract row(s) across blast, canto, ethereum, scroll, swellchain. Structural roles: 4 unclassified, 3 core, 3 supporting. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -72,7 +72,7 @@ The pinned logic-topography run contains 10 contract row(s) across blast, ethere
 
 ## Contract Surface Quality
 
-- Indexed contracts: 10; live-surface contracts included: 10 (7 live, 3 unknown).
+- Logic-topography rows: 10; live-surface rows included: 10 (7 live, 3 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 18/30 live.
 - Detected codebases: none
@@ -83,15 +83,15 @@ The pinned logic-topography run contains 10 contract row(s) across blast, ethere
 - Coverage of address-book-owned deployed-live implementations: 0/6 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 17 own, 12 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 10 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 3
-- Deployed-live implementations: 18 of 29 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/6
-- Verified + Unaudited implementations: 6
+- Confirmed-live implementations: 18 of 39 unique; 21 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/17
+- Verified + Unaudited implementations: 17
 - Verified by bytecode match: 0
-- Unverified implementations: 11
-- Unique implementations: 29
-- Raw deployments: 29
+- Unverified implementations: 22
+- Unique implementations: 39
+- Raw deployments: 47
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -111,19 +111,27 @@ The pinned logic-topography run contains 10 contract row(s) across blast, ethere
 
 - None
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| ColdPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x70b161...e9dc4f`; blast `0x852c3a...0e9915` | ⚠️ Unaudited |
 | CrocImpact | unknown | project_anchor | own_supporting | 0 | blast | unit-226614 | `0x6a699a...5efdb9` | ⚠️ Unaudited |
 | CrocPolicy | unknown | project_anchor | own_supporting | 0 | blast | unit-226613 | `0x503e3d...8c162c` | ⚠️ Unaudited |
 | CrocQuery | unknown | project_anchor | own_supporting | 0 | blast | unit-226615 | `0xa3bd3b...36a8a7` | ⚠️ Unaudited |
 | CrocSwapDex | unknown | project_anchor | own_supporting | 0 | scroll | unit-226608 | `0xaaaaaa...a74106` | ⚠️ Unaudited |
 | CrocSwapRouter | adapter | project_anchor | own_supporting | 0 | scroll | unit-226611 | `0xfb5f26...5fd1fc` | ⚠️ Unaudited |
 | GnosisSafeL2 | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | blast | unit-226620 | `0xc73c8c...1e36ed` | ⚠️ Unaudited |
-| HotProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-226621 | `0xaaaaaa...1fb958` | ⚠️ Unaudited |
+| HotProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x6050cf...d5bb86` | ⚠️ Unaudited |
+| HotProxy | unknown | project_anchor | own_supporting | 1 | blast | unit-226621 | 2 deployments: blast `0x79cf6e...7ef6e9`; blast `0xaaaaaa...1fb958` | ⚠️ Unaudited |
+| KnockoutFlagPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0xd54874...1dcdc1`; blast `0xe3150c...fe0bfe` | ⚠️ Unaudited |
+| KnockoutLiqPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x67231c...6a53aa`; blast `0x6e2625...03132f` | ⚠️ Unaudited |
+| LongPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x07ec4a...65cfdd`; blast `0x646929...d93fa9` | ⚠️ Unaudited |
+| MicroPaths | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x8296b2...1d1534`; blast `0xc58f7a...220066` | ⚠️ Unaudited |
 | TimelockAccepts | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-226612 | `0x19d005...2dee94` | ⚠️ Unaudited |
+| TimelockAccepts | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x786fbc...71eb8f` | ⚠️ Unaudited |
 | WarmPath | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-226619 | `0xaaaaaa...34f688` | ⚠️ Unaudited |
+| WarmPath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 2 deployments: blast `0x62223e...0d6ddf`; blast `0x99f213...796ca5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -137,7 +145,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (20)
+### ❓ Unverified (22)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -157,6 +165,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-226603 | `0xaaaaaa...3bf24d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-226604 | `0xaab174...3f6194` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-226605 | `0xd83ef4...7e0362` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | canto | n/a | 2 deployments: swellchain `0xaaaaaa...237d85`; canto `0x9290c8...793618` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x754eef...928285` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-226616 | `0xaab174...3f6194` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-226618 | `0xd83ef4...7e0362` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-226606 | `0x62223e...0d6ddf` | ❓ Unverified |
@@ -312,16 +322,16 @@ Verified + unaudited native implementations ranked by TVL:
 | blast | `0xa3bd3b...36a8a7` | CrocQuery | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | scroll | `0xaaaaaa...a74106` | CrocSwapDex | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | scroll | `0xfb5f26...5fd1fc` | CrocSwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| blast | `0xaaaaaa...1fb958` | HotProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x79cf6e...7ef6e9` | HotProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 13 |
+| native | 22 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 15 |
+| needs_review | 16 |
 
 ## Scope Matching Notes
 

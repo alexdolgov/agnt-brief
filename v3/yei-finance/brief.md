@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Yei Finance (`yei-finance`)
 - Website: [https://www.yei.finance/](https://www.yei.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Chains: sei
+- Contract surface: 47 unique implementations (147 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $17,240,281.00
 - On-chain TVL (included contracts): n/a
@@ -50,7 +50,7 @@ The activated project remains an explicit cohort member with an empty normalized
 ## Contract Surface Quality
 
 - Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
-- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
+- Logic-topography rows: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -59,15 +59,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
+- Outside the address book: 47 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 5
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- All block-explorer-verified implementations audited (incl. non-live): 0/38
+- Verified + Unaudited implementations: 38
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unverified implementations: 9
+- Unique implementations: 47
+- Raw deployments: 147
 - Audits discovered: 7 (7 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -86,9 +86,48 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (38)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AaveProtocolDataProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x60c82a...07f0d6` | ⚠️ Unaudited |
+| ACLManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x241995...4d47f2`; sei `0x932b0d...f7c435`; sei `0xb948e8...745a77`; sei `0xc6f728...90eea6` | ⚠️ Unaudited |
+| AToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x36ac8c...479c0f`; sei `0x51c5fd...fad73b`; sei `0xd7bd61...0ba7ed`; sei `0xdbebd1...0108a7` | ⚠️ Unaudited |
+| BorrowLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x635901...348a41`; sei `0x99c952...a95d86`; sei `0x9c8a9f...a1279d`; sei `0xf7dd04...79b54e` | ⚠️ Unaudited |
+| BridgeLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x3b28c1...505643`; sei `0x6ddbd4...8c73a8`; sei `0xca7352...f41e00`; sei `0xdf9d79...609a95` | ⚠️ Unaudited |
+| Clovis | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 2 deployments: sei `0x8154d3...628555`; sei `0x81d3a2...bf89d2` | ⚠️ Unaudited |
+| Collector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 2 deployments: sei `0x1c6448...8f4ab1`; sei `0xa3c23d...7b8a0f` | ⚠️ Unaudited |
+| Collector | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sei | n/a | 2 deployments: sei `0x800f3e...6d532c`; sei `0xbf63c9...4d1d05` | ⚠️ Unaudited |
+| CollectorController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 3 deployments: sei `0x04c3d1...001b61`; sei `0x4ec5e3...5f39c7`; sei `0x88a899...433894` | ⚠️ Unaudited |
+| ConfiguratorLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 3 deployments: sei `0xbed702...f3cabf`; sei `0xc0e305...694266`; sei `0xc42743...1a9476` | ⚠️ Unaudited |
+| DefaultReserveInterestRateStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 21 deployments: sei `0x0df802...2d0b4b`; sei `0x33afe4...e96eac`; sei `0x571591...d2dfb9`; sei `0x58f864...5e3a20`; sei `0x58f9da...8d0575`; sei `0x5d3872...49829c`; sei `0x5ee1bc...28678b`; sei `0x660a1f...0bb61d`; sei `0x704d96...1987c8`; sei `0x78b5de...d3a852`; sei `0x807878...6680b8`; sei `0x80c1af...c8af2a`; sei `0x8c857e...6d72e5`; sei `0x9bd159...6f2700`; sei `0xa3322e...b6b628`; sei `0xa753cb...d8cfbb`; sei `0xaeb509...90e3f1`; sei `0xaeca84...c14447`; sei `0xc1901f...340a3c`; sei `0xf4be50...c1ee06`; sei `0xfff1c1...83b8a2` | ⚠️ Unaudited |
+| DelegationAwareAToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x5143e6...40ec9b`; sei `0x812b8e...be7f04`; sei `0xc6388f...83b74a`; sei `0xea54e3...c856c2` | ⚠️ Unaudited |
+| EmissionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x32bf49...f2a359`; sei `0x36757f...ac5c3f`; sei `0x69ea2c...91dafd`; sei `0x960200...46b2f1` | ⚠️ Unaudited |
+| EModeLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 3 deployments: sei `0x365549...3c3bef`; sei `0x81deec...46c038`; sei `0x859f69...b381ff` | ⚠️ Unaudited |
+| FlashLoanLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 3 deployments: sei `0x767148...a2cfd3`; sei `0xa4bfc8...f2bb19`; sei `0xdd66f9...41c857` | ⚠️ Unaudited |
+| InitializableAdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 3 deployments: sei `0x13206f...a80461`; sei `0x6e410a...8d9af8`; sei `0xdbc8d6...5b8dd4` | ⚠️ Unaudited |
+| LiquidateLoan | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x30bbfe...4be4cf` | ⚠️ Unaudited |
+| LiquidationLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 3 deployments: sei `0x5d1c6e...189c6b`; sei `0x6cfc88...ee0c5b`; sei `0xd4cf1d...abf8fa` | ⚠️ Unaudited |
+| NttManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sei | n/a | 2 deployments: sei `0x18b07b...1c3bcd`; sei `0x6724ed...7c4886` | ⚠️ Unaudited |
+| NttManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sei | n/a | 2 deployments: sei `0x68a91e...a72255`; sei `0xf846d7...9233c6` | ⚠️ Unaudited |
+| Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 3 deployments: sei `0x002081...17a1f2`; sei `0x84b7c6...f85645`; sei `0xd078c4...c8f305` | ⚠️ Unaudited |
+| PoolAddressesProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x5c5726...227642`; sei `0x74c69a...fa9149`; sei `0x7da484...f0e153`; sei `0xff33a7...8f2a1e` | ⚠️ Unaudited |
+| PoolAddressesProviderRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 6 deployments: sei `0x8138da...75b6cb`; sei `0xa0f196...8d73b2`; sei `0xcb0ac1...3ea721`; sei `0xd7a8b0...7c9adf`; sei `0xe949f1...6f64f6`; sei `0xff5dae...a76474` | ⚠️ Unaudited |
+| PoolConfigurator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 3 deployments: sei `0x1f22c3...6c7f61`; sei `0x80c4cd...91669d`; sei `0xf43fb6...285781` | ⚠️ Unaudited |
+| PoolLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 3 deployments: sei `0x2d245f...4f2775`; sei `0x8301b0...64254d`; sei `0xe3d1cb...4b0dd7` | ⚠️ Unaudited |
+| PullRewardsTransferStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x169863...f5a88c`; sei `0x6061fb...9595c7`; sei `0x67b440...fcc608`; sei `0xbb8a61...cf1627` | ⚠️ Unaudited |
+| ReservesSetupHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x103169...8a5789`; sei `0x3132fe...c3d5c6`; sei `0x361873...01e9c6`; sei `0x62901c...b40ceb` | ⚠️ Unaudited |
+| RewardsController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x034921...0b3843`; sei `0x117ab7...06b1c4`; sei `0x374865...826304`; sei `0x4cab4b...e43a8f` | ⚠️ Unaudited |
+| RewardsControllerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 3 deployments: sei `0xb1b2b6...ea9a12`; sei `0xc89104...6d6ee6`; sei `0xe8094b...2f8608` | ⚠️ Unaudited |
+| StableDebtToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x4f7fc2...05b5ce`; sei `0xd13fcb...cb99a1`; sei `0xe30023...8f861f`; sei `0xee2aaa...a0a4f3` | ⚠️ Unaudited |
+| SupplyLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 3 deployments: sei `0x0f8286...573421`; sei `0x1b94ed...043d8b`; sei `0x26355c...204718` | ⚠️ Unaudited |
+| UiIncentiveDataProviderV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x19162c...719cee`; sei `0xbef6c6...f3fb2a`; sei `0xbfb3d5...0d56c5`; sei `0xd25ce1...359c55` | ⚠️ Unaudited |
+| UiPoolDataProviderV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x186b51...b5f549`; sei `0x411958...e5c3e8`; sei `0xeb0cc2...f727da`; sei `0xfbc3db...5eaa1f` | ⚠️ Unaudited |
+| VariableDebtToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x0910ba...f91fd1`; sei `0x0a4feb...6bcf00`; sei `0x78b3dc...4d05b1`; sei `0xc7aea6...ac26f9` | ⚠️ Unaudited |
+| WalletBalanceProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x6c9648...18ea89`; sei `0x81fcee...2a57ae`; sei `0xd33ce3...f961d6`; sei `0xf43c32...f8a8f2` | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sei | n/a | `0x67a0a8...f86ed3` | ⚠️ Unaudited |
+| WormholeTransceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sei | n/a | `0xefe505...aab91a` | ⚠️ Unaudited |
+| WrappedTokenGatewayV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 4 deployments: sei `0x44a8aa...93bf3c`; sei `0x5d20a2...3cdd75`; sei `0xbc096b...eec8aa`; sei `0xd2a000...2c069f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -102,11 +141,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (9)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x05696a...bec7a3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x7cee89...ca9288` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x82d1ae...09d81f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xaf448e...405307` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xb2b323...60be79` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xc84490...e96bf6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xccefc4...f87b79` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xe721a9...f85578` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xf83c76...4180c4` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -157,10 +206,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 0 |
-| standard_library | 0 |
-| needs_review | 0 |
+| native | 34 |
+| upstream | 3 |
+| standard_library | 1 |
+| needs_review | 9 |
 
 ## Scope Matching Notes
 

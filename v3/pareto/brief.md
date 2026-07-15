@@ -9,16 +9,16 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Pareto (`pareto`)
 - Website: [https://pareto.credit/](https://pareto.credit/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, ethereum, optimism, polygon
+- Chains: arbitrum, ethereum, optimism, polygon, polygon-zkevm
 - Contract surface: 204 unique implementations (204 raw deployments)
 - Coverage basis: 0/4 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $202,329,760.00
@@ -87,7 +87,7 @@ The pinned logic-topography run contains 8 contract row(s) across arbitrum, ethe
 
 ## Contract Surface Quality
 
-- Indexed contracts: 8; live-surface contracts included: 8 (4 live, 4 unknown).
+- Logic-topography rows: 8; live-surface rows included: 8 (4 live, 4 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 32/50 live.
 - Detected codebases: none
@@ -98,13 +98,13 @@ The pinned logic-topography run contains 8 contract row(s) across arbitrum, ethe
 - Coverage of address-book-owned deployed-live implementations: 0/4 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 32 own, 18 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 154 discovered implementations excluded (0 third-party/infra; 29 standard proxy/library)
+- Outside the address book: 154 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 29 standard proxy/library)
 - Proxy deployments represented within implementation groups: 41
-- Deployed-live implementations: 32 of 204 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/4
-- Verified + Unaudited implementations: 4
+- Confirmed-live implementations: 32 of 204 unique; 172 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/162
+- Verified + Unaudited implementations: 162
 - Verified by bytecode match: 0
-- Unverified implementations: 28
+- Unverified implementations: 42
 - Unique implementations: 204
 - Raw deployments: 204
 - Audits discovered: 20 (20 direct, 0 inherited from forked code)

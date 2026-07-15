@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Shift Protocol (`shift-protocol`)
 - Website: [https://shiftprotocol.xyz](https://shiftprotocol.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: base
-- Contract surface: 1 unique implementations (1 raw deployments)
+- Chains: arbitrum, base
+- Contract surface: 9 unique implementations (24 raw deployments)
 - Coverage basis: 1/1 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $794,768.91
 - On-chain TVL (included contracts): n/a
@@ -36,7 +36,7 @@ This brief describes the observed EVM deployment and audit surface for Shift Pro
 
 ### Architecture
 
-The pinned logic-topography run contains 1 contract row(s) across base. Structural roles: 1 core. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 1 contract row(s) across arbitrum, base. Structural roles: 1 core. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -61,7 +61,7 @@ The pinned logic-topography run contains 1 contract row(s) across base. Structur
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Logic-topography rows: 1; live-surface rows included: 1 (1 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 1/1 live.
 - Detected codebases: none
@@ -72,15 +72,15 @@ The pinned logic-topography run contains 1 contract row(s) across base. Structur
 - Coverage of address-book-owned deployed-live implementations: 1/1 (100.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 8 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/1
-- Verified + Unaudited implementations: 0
+- Confirmed-live implementations: 1 of 9 unique; 8 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/9
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
+- Unique implementations: 9
+- Raw deployments: 24
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -93,7 +93,7 @@ The pinned logic-topography run contains 1 contract row(s) across base. Structur
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 100.0% | 2025-08 |
+| unknown | Tier 2 | 1 | 11.1% | 2025-08 |
 
 ## Contract Surface
 
@@ -103,9 +103,18 @@ The pinned logic-topography run contains 1 contract row(s) across base. Structur
 |---|---|---|---|---:|---|---|---|---|
 | ShiftVault | core_logic | project_anchor | own_supporting | 0 | base | unit-392402 | `0xaf69bf...ed1e0e` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (8)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| ExitWindow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: base `0x106f8a...4a9723`; base `0x19b32b...3198f4`; base `0x4ace31...0ee753`; base `0x878589...4e1562`; base `0xe98d8f...ab0aba` | ⚠️ Unaudited |
+| extUSDSY | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5453a2...7a3df4` | ⚠️ Unaudited |
+| ltPARASY | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x12bb79...a76123` | ⚠️ Unaudited |
+| ShiftAccessControl | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x092b55...d3132e`; base `0x35305e...a61ce6`; base `0x3ccc08...dc2773`; base `0x52dc22...326b56` | ⚠️ Unaudited |
+| ShiftMonoData | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5457ea...bea196` | ⚠️ Unaudited |
+| ShiftTvlFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x505171...9e6285`; base `0x619681...40f19b`; base `0x8a04ac...b9f110`; base `0xdbe599...ff67d3` | ⚠️ Unaudited |
+| ShiftVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 6 deployments: base `0x4ce3ec...1aa2e1`; base `0x89d63c...8a36b0`; base `0x8d8d46...872327`; arbitrum `0x6d7c89...7ae3c2`; arbitrum `0x7174f0...0a10bd`; arbitrum `0x956bdd...cb6964` | ⚠️ Unaudited |
+| SupplyValidator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x446a68...5f97be` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -160,7 +169,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 9 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

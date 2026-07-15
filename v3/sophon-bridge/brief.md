@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Sophon Bridge (`sophon-bridge`)
 - Website: [https://sophon.xyz/](https://sophon.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Chains: ethereum
+- Contract surface: 12 unique implementations (13 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $19,893,650.92
 - On-chain TVL (included contracts): n/a
@@ -50,7 +50,7 @@ The activated project remains an explicit cohort member with an empty normalized
 ## Contract Surface Quality
 
 - Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
-- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
+- Logic-topography rows: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -59,15 +59,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
+- Outside the address book: 12 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 6
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- All block-explorer-verified implementations audited (incl. non-live): 0/12
+- Verified + Unaudited implementations: 12
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
+- Unique implementations: 12
+- Raw deployments: 13
 - Audits discovered: 8 (8 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -86,9 +86,22 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (12)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AethirWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x1ecb43...33a13c`; ethereum `0x3f69bb...3f7fee` | ⚠️ Unaudited |
+| Bridgehub | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x303a46...eb5213` | ⚠️ Unaudited |
+| ChainAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe1eea4...ac2ad3` | ⚠️ Unaudited |
+| ChainAssetHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xdd5cb8...b61076` | ⚠️ Unaudited |
+| DiamondProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x05ede6...7241e3` | ⚠️ Unaudited |
+| L1NativeTokenVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xbed1eb...1111f6` | ⚠️ Unaudited |
+| L1Nullifier | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xd7f9f5...8cb2cb` | ⚠️ Unaudited |
+| LensRewardV2 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdf4aa3...8124ff` | ⚠️ Unaudited |
+| Safe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xe4644b...f052d1` | ⚠️ Unaudited |
+| SmartWalletChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb91eb8...41bed4` | ⚠️ Unaudited |
+| StAethir | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc96aa6...19e59c` | ⚠️ Unaudited |
+| VeAethir | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b49f5...1b7490` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -192,9 +205,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 11 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

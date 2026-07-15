@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Clober (`clober`)
 - Website: [https://clober.io](https://clober.io)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, base, berachain, monad, sonic
-- Contract surface: 30 unique implementations (30 raw deployments)
+- Chains: arbitrum, base, berachain, ethereum, monad, polygon, polygon-zkevm, sonic, zksync-era
+- Contract surface: 38 unique implementations (45 raw deployments)
 - Coverage basis: 2/7 confirmed own live verified implementations (28.6%); conservative 28.6% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $483,404.00
 - On-chain TVL (included contracts): n/a
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 11 contract row(s) across arbitrum, bas
 
 ## Fork Analysis
 
-2 of 26 contracts are derived from known codebases. 24 contracts have no detected origin.
+2 of 27 contracts are derived from known codebases. 25 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -90,12 +90,13 @@ Removals (removed from original): none
 - UnnamedContract (`0x067311...3ae03b`, chain 80094)
 - UnnamedContract (`0x4abb86...0a49a8`, chain 80094)
 - UnnamedContract (`0xded58e...75d1e4`, chain 80094)
+- BookViewer (`0xd0175b...cd7309`, chain 8453)
 - ERC1967Proxy (`0xcd166f...78f029`, chain 8453)
 - Minter (`0x2092a5...0c59d1`, chain 8453)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 11; live-surface contracts included: 11 (7 live, 4 unknown).
+- Logic-topography rows: 11; live-surface rows included: 11 (11 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 29/29 live.
 - Detected codebases: none
@@ -106,15 +107,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 2/7 (28.6%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 29 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 4
-- Deployed-live implementations: 29 of 30 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 2/7
-- Verified + Unaudited implementations: 5
+- Outside the address book: 8 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 7
+- Confirmed-live implementations: 29 of 38 unique; 9 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 2/11
+- Verified + Unaudited implementations: 9
 - Verified by bytecode match: 0
-- Unverified implementations: 22
-- Unique implementations: 30
-- Raw deployments: 30
+- Unverified implementations: 27
+- Unique implementations: 38
+- Raw deployments: 45
 - Audits discovered: 8 (8 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): n/a
@@ -127,9 +128,9 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| HickupHH | Tier 2 | 2 | 28.6% | 2026-02 |
-| unknown | Tier 2 | 1 | 14.3% | 2024-11 |
-| yAudit | Tier 2 | 1 | 14.3% | 2024-12 |
+| HickupHH | Tier 2 | 2 | 18.2% | 2026-02 |
+| unknown | Tier 2 | 1 | 9.1% | 2024-11 |
+| yAudit | Tier 2 | 1 | 9.1% | 2024-12 |
 
 ## Contract Surface
 
@@ -137,18 +138,22 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LiquidityVault | unknown | project_anchor | own_supporting | 1 | base | unit-232083 | `0xca1f6e...c0b834` | ✅ Audited |
-| SimpleOracleStrategy | unknown | project_anchor | own_supporting | 1 | base | unit-232081 | `0x29e071...5f2777` | ✅ Audited |
+| LiquidityVault | unknown | project_anchor | own_supporting | 1 | base | unit-232083 | 2 deployments: base `0xbfd645...189449`; base `0xca1f6e...c0b834` | ✅ Audited |
+| SimpleOracleStrategy | unknown | project_anchor | own_supporting | 1 | base | unit-232081 | 2 deployments: base `0x2913c4...b9246a`; base `0x29e071...5f2777` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | BookManager | governance | project_anchor | own_supporting | 0 | base | unit-232080 | `0x8ca3a6...380112` | ⚠️ Unaudited |
-| BookViewer | unknown | project_anchor | own_supporting | 1 | base | unit-232084 | `0xcd166f...78f029` | ⚠️ Unaudited |
+| BookViewer | unknown | project_anchor | own_supporting | 1 | base | unit-232084 | 2 deployments: base `0xcd166f...78f029`; base `0xd0175b...cd7309` | ⚠️ Unaudited |
 | Controller | governance | project_anchor | own_supporting | 0 | base | unit-232079 | `0x2610dc...520bca` | ⚠️ Unaudited |
+| LiquidityVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x5b351c...8c06b5`; base `0xfe87e2...83a76d` | ⚠️ Unaudited |
 | Minter | operational_periphery | project_anchor | own_supporting | 0 | base | unit-232078 | `0x2092a5...0c59d1` | ⚠️ Unaudited |
-| Operator | unknown | project_anchor | own_supporting | 1 | base | unit-232082 | `0x00f7a0...308625` | ⚠️ Unaudited |
+| Minter | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc8f98f...5f098f` | ⚠️ Unaudited |
+| Operator | unknown | project_anchor | own_supporting | 1 | base | unit-232082 | 2 deployments: base `0x00f7a0...308625`; base `0x82b54a...25a563` | ⚠️ Unaudited |
+| Operator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x7ba560...cb63fb`; base `0xe5141a...8d1a8b` | ⚠️ Unaudited |
+| SimpleOracleStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x063150...b5fb58`; base `0x454b85...6fe892` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -162,7 +167,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (23)
+### ❓ Unverified (27)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -182,6 +187,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232067 | `0xdd30f8...95554f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232068 | `0xe81e78...da5613` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-232069 | `0xf7e728...ac9a09` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x000000...64c133` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6657d1...be8ccc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x976f96...cd1efd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc23995...3e5ccc` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232070 | `0x21bb87...2ad7e1` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232071 | `0x536913...159830` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232072 | `0x74ffe4...8c2fdf` | ❓ Unverified |
@@ -316,10 +325,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 7 |
+| native | 11 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 23 |
+| needs_review | 27 |
 
 ## Scope Matching Notes
 

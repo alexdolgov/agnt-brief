@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Flexa (`flexa`)
 - Website: [https://amp.xyz/](https://amp.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 1 unique implementations (1 raw deployments)
+- Contract surface: 18 unique implementations (29 raw deployments)
 - Coverage basis: 1/1 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $751,905.25
 - On-chain TVL (included contracts): n/a
@@ -61,7 +61,7 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Logic-topography rows: 1; live-surface rows included: 1 (1 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 1/1 live.
 - Detected codebases: none
@@ -72,15 +72,15 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 - Coverage of address-book-owned deployed-live implementations: 1/1 (100.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/1
-- Verified + Unaudited implementations: 0
+- Outside the address book: 17 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 3
+- Confirmed-live implementations: 1 of 18 unique; 17 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/17
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
+- Unverified implementations: 1
+- Unique implementations: 18
+- Raw deployments: 29
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
@@ -93,8 +93,8 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Consensys Diligence | Tier 1 | 1 | 100.0% | 2020-06 |
-| Trail of Bits | Tier 1 | 1 | 100.0% | 2020-08 |
+| Consensys Diligence | Tier 1 | 1 | 5.9% | 2020-06 |
+| Trail of Bits | Tier 1 | 1 | 5.9% | 2020-08 |
 
 ## Contract Surface
 
@@ -104,9 +104,26 @@ The pinned logic-topography run contains 1 contract row(s) across ethereum. Stru
 |---|---|---|---|---:|---|---|---|---|
 | Amp | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240012 | `0xff2081...1095c2` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (16)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Anvil | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x2ca924...d01bfc`; ethereum `0xaeeaa5...5b5597` | ⚠️ Unaudited |
+| AnvilGovernorDelegate | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x00e83d...4874c9`; ethereum `0x123641...b49f49` | ⚠️ Unaudited |
+| AnvilGovernorDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 8 deployments: ethereum `0x081fe8...aed8d9`; ethereum `0x09c7ec...bc200f`; ethereum `0x33148e...2a3ba1`; ethereum `0x65eed5...99f602`; ethereum `0xa57365...f2b5e4`; ethereum `0xbb1470...187aa0`; ethereum `0xfd883f...4c5b8f`; ethereum `0xfe1118...42a361` | ⚠️ Unaudited |
+| AnvilTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4eeb7c...2cad21` | ⚠️ Unaudited |
+| Claim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xefd194...7e29ac` | ⚠️ Unaudited |
+| CollateralPoolPartitionValidator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x455a3b...3f1f61` | ⚠️ Unaudited |
+| CollateralVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5d2725...1d675f` | ⚠️ Unaudited |
+| Flexacoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4a57e6...adebde` | ⚠️ Unaudited |
+| FlexaCollateralManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x706d7f...e7c578` | ⚠️ Unaudited |
+| LetterOfCredit | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x14db9a...7c4808` | ⚠️ Unaudited |
+| LetterOfCredit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x1a3251...f42961`; ethereum `0x750ab7...59d5ad` | ⚠️ Unaudited |
+| PythPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc6f340...56ee05` | ⚠️ Unaudited |
+| Reward | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc6a06f...da22da` | ⚠️ Unaudited |
+| TimeBasedCollateralPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x1f00d6...9c9e14`; ethereum `0xcc437a...4cf29f` | ⚠️ Unaudited |
+| TimeBasedCollateralPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd042c2...db3e5a` | ⚠️ Unaudited |
+| TokenVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd2d14c...57d78d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -120,11 +137,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x78f5f5...0f8483` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -185,10 +204,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 17 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

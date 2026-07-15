@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: VNX (`vnx`)
 - Website: [https://vnx.li](https://vnx.li)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: base, ethereum, etherlink, polygon
-- Contract surface: 4 unique implementations (4 raw deployments)
+- Chains: arbitrum, avalanche, base, celo, ethereum, etherlink, fraxtal, polygon
+- Contract surface: 23 unique implementations (91 raw deployments)
 - Coverage basis: 0/3 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $5,338,354.15
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for VNX. It i
 
 ### Architecture
 
-The pinned logic-topography run contains 5 contract row(s) across base, ethereum, etherlink, polygon. Structural roles: 3 unclassified, 1 core, 1 supporting. 2 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 5 contract row(s) across arbitrum, avalanche, base, celo, ethereum, etherlink, fraxtal, polygon. Structural roles: 3 unclassified, 1 core, 1 supporting. 2 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 5 contract row(s) across base, ethereum
 
 ## Fork Analysis
 
-0 of 2 contracts are derived from known codebases. 2 contracts have no detected origin.
+0 of 4 contracts are derived from known codebases. 4 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -54,10 +54,12 @@ The pinned logic-topography run contains 5 contract row(s) across base, ethereum
 
 - UnnamedContract (`0x93f547...f8b9e9`, chain 42793)
 - TransparentUpgradeableProxy (`0xc8bb8e...400400`, chain 137)
+- VNXDGR (`0x1c17d6...d584c4`, chain 1)
+- VNXDGR (`0x709616...4a66c5`, chain 8453)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 5; live-surface contracts included: 5 (3 live, 2 unknown).
+- Logic-topography rows: 5; live-surface rows included: 5 (5 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 4/4 live.
 - Detected codebases: none
@@ -68,15 +70,15 @@ The pinned logic-topography run contains 5 contract row(s) across base, ethereum
 - Coverage of address-book-owned deployed-live implementations: 0/3 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 4 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 3
-- Deployed-live implementations: 4 of 4 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/3
-- Verified + Unaudited implementations: 3
+- Outside the address book: 19 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 24
+- Confirmed-live implementations: 4 of 23 unique; 19 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/17
+- Verified + Unaudited implementations: 17
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 4
-- Raw deployments: 4
+- Unverified implementations: 6
+- Unique implementations: 23
+- Raw deployments: 91
 - Audits discovered: 4 (4 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -95,13 +97,27 @@ The pinned logic-topography run contains 5 contract row(s) across base, ethereum
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| VNXDGR | unknown | project_anchor | own_supporting | 1 | ethereum | unit-261703 | `0x6d57b2...e4a488` | ⚠️ Unaudited |
+| VNXAnyTransferProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 11 deployments: ethereum `0xe4fadb...7f7619`; fraxtal `0x54849d...859173`; fraxtal `0x8f1352...4ffc1b`; base `0xae80e9...fb649b`; base `0xbf26b8...ef4e50`; arbitrum `0x2cf31b...7225d6`; arbitrum `0x4c0bd7...6aaee6`; celo `0x974587...04796e`; celo `0xa8bfc6...41757d`; avalanche `0x75203f...4cbd26`; avalanche `0xcd2e3c...30aa32` | ⚠️ Unaudited |
+| VNXCToken | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | ethereum | n/a | 4 deployments: ethereum `0x233db7...7cbfe3`; ethereum `0x34c9c6...9817cb`; ethereum `0x65faa4...a8a03b`; ethereum `0xf72ee0...6e6ba6` | ⚠️ Unaudited |
+| VNXCToken | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 3 deployments: ethereum `0x6ba75d...89b5d3`; ethereum `0x79d4f0...cfbf4f`; ethereum `0xd1d719...2f81fc` | ⚠️ Unaudited |
+| VNXCToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xc27925...e81584`; ethereum `0xfa792e...f87e65` | ⚠️ Unaudited |
+| VNXCToken | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | polygon | n/a | 3 deployments: polygon `0x5cb036...58ef32`; polygon `0xcdb386...84c9ae`; polygon `0xe4095d...33b097` | ⚠️ Unaudited |
+| VNXCToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 6 deployments: ethereum `0xeb8b5e...f11c53`; fraxtal `0x0410d2...9c88e4`; base `0x07bf6f...85ea94`; arbitrum `0x3c25ca...f1656f`; celo `0xaec61b...080132`; avalanche `0x4e8a3d...1d9c80` | ⚠️ Unaudited |
+| VNXCToken | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | fraxtal | n/a | 3 deployments: fraxtal `0x189129...c43b4a`; fraxtal `0x418126...57425d`; fraxtal `0x4c0bd7...6aaee6` | ⚠️ Unaudited |
+| VNXCToken | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | base | n/a | 4 deployments: base `0x0d12d7...782ab1`; base `0x1fca74...0fd5d8`; base `0x4ed9df...37f347`; base `0xaeb4bb...7bf411` | ⚠️ Unaudited |
+| VNXCToken | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | arbitrum | n/a | 3 deployments: arbitrum `0x02cea9...c75969`; arbitrum `0x4883c8...5d01f8`; arbitrum `0xd3bfc7...b5045a` | ⚠️ Unaudited |
+| VNXCToken | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | celo | n/a | 4 deployments: celo `0x7ae426...f4bb7f`; celo `0x9346f4...2d9cba`; celo `0xc5ebea...3af871`; celo `0xf3e535...62b569` | ⚠️ Unaudited |
+| VNXCToken | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | avalanche | n/a | 4 deployments: avalanche `0x228a48...d56c19`; avalanche `0x7678e1...e5fa0b`; avalanche `0x832cba...c51708`; avalanche `0x8ed06e...075f96` | ⚠️ Unaudited |
+| VNXDGR | unknown | project_anchor | own_supporting | 1 | ethereum | unit-261703 | 2 deployments: ethereum `0x1c17d6...d584c4`; ethereum `0x6d57b2...e4a488` | ⚠️ Unaudited |
 | VNXDGR | unknown | project_anchor | own_supporting | 1 | polygon | unit-261705 | `0xc8bb8e...400400` | ⚠️ Unaudited |
-| VNXDGR | unknown | project_anchor | own_supporting | 1 | base | unit-261708 | `0xac3fe2...ff3098` | ⚠️ Unaudited |
+| VNXDGR | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 9 deployments: fraxtal `0x7a7f80...353dfb`; fraxtal `0xd0b03c...cac886`; base `0x033302...4c7177`; arbitrum `0x0bd934...a910eb`; arbitrum `0x57afd4...2a312f`; celo `0xd404c2...335584`; celo `0xdf4910...40bceb`; avalanche `0x1512c8...2c9f54`; avalanche `0x8c66b9...4bd5e2` | ⚠️ Unaudited |
+| VNXDGR | unknown | project_anchor | own_supporting | 1 | base | unit-261708 | 2 deployments: base `0x709616...4a66c5`; base `0xac3fe2...ff3098` | ⚠️ Unaudited |
+| VNXManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 13 deployments: ethereum `0xcdb386...84c9ae`; fraxtal `0x7e36bf...ea13dc`; fraxtal `0x81c2e3...21737f`; base `0xb6622a...cb60ee`; base `0xc4c917...cf7d9d`; arbitrum `0x81c2e3...21737f`; arbitrum `0xa67ec5...c10278`; arbitrum `0xd4e94d...9b9cc2`; celo `0x86f3f1...6c387b`; celo `0xfc4210...d50eee`; avalanche `0x8b84f7...ffc31a`; avalanche `0x94b1fb...7654bf`; avalanche `0xd5f57f...ea0cde` | ⚠️ Unaudited |
+| VNXProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 11 deployments: ethereum `0xc8bb8e...400400`; fraxtal `0x516fec...13af5b`; fraxtal `0xa67ec5...c10278`; base `0x172476...b762c2`; base `0x35bb28...6b79e8`; arbitrum `0x200db8...b9c7f3`; arbitrum `0x3d3830...0a7165`; celo `0x20aac9...e7827f`; celo `0xe003bd...72fabc`; avalanche `0x511942...0cd8c3`; avalanche `0x9b357f...25a660` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -115,12 +131,17 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (6)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x78c1b5...d52938` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0410d2...9c88e4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x418126...57425d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7a7f80...353dfb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8f1352...4ffc1b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-261701 | `0x93f547...f8b9e9` | ❓ Unverified |
 
 ## Audit Inventory
@@ -162,18 +183,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0x6d57b2...e4a488` | VNXDGR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1c17d6...d584c4` | VNXDGR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | `0xc8bb8e...400400` | VNXDGR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xac3fe2...ff3098` | VNXDGR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x709616...4a66c5` | VNXDGR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 17 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 

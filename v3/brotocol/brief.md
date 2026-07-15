@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Brotocol (`brotocol`)
 - Website: [https://brotocol.xyz/](https://brotocol.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, avalanche, base, bsc, ethereum, linea, mode, sepolia
-- Contract surface: 108 unique implementations (109 raw deployments)
+- Chains: ailayer, arbitrum, avalanche, base, bsc, ethereum, linea, merlin, mode, sepolia
+- Contract surface: 145 unique implementations (260 raw deployments)
 - Coverage basis: 2/81 confirmed own live verified implementations (2.5%); conservative 2.5% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $707,392.17
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for Brotocol.
 
 ### Architecture
 
-The pinned logic-topography run contains 86 contract row(s) across arbitrum, avalanche, base, bsc, ethereum, linea, mode, sepolia. Structural roles: 38 unclassified, 32 supporting, 16 core. 13 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 86 contract row(s) across arbitrum, avalanche, base, bsc, ethereum, linea, merlin, mode, sepolia. Structural roles: 38 unclassified, 32 supporting, 16 core. 13 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -114,7 +114,7 @@ The pinned logic-topography run contains 86 contract row(s) across arbitrum, ava
 
 ## Contract Surface Quality
 
-- Indexed contracts: 86; live-surface contracts included: 86 (82 live, 4 unknown).
+- Logic-topography rows: 86; live-surface rows included: 86 (82 live, 4 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 92/185 live.
 - Detected codebases: none
@@ -125,15 +125,15 @@ The pinned logic-topography run contains 86 contract row(s) across arbitrum, ava
 - Coverage of address-book-owned deployed-live implementations: 2/81 (2.5%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 92 own, 16 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 37 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 7
-- Deployed-live implementations: 92 of 108 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 2/81
-- Verified + Unaudited implementations: 79
+- Confirmed-live implementations: 92 of 145 unique; 53 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 2/97
+- Verified + Unaudited implementations: 95
 - Verified by bytecode match: 0
-- Unverified implementations: 11
-- Unique implementations: 108
-- Raw deployments: 109
+- Unverified implementations: 48
+- Unique implementations: 145
+- Raw deployments: 260
 - Audits discovered: 14 (14 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): n/a
@@ -146,8 +146,8 @@ The pinned logic-topography run contains 86 contract row(s) across arbitrum, ava
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| CoinFabrik | Tier 2 | 2 | 2.5% | 2025-05 |
-| Defence (Thesis) | Tier 2 | 1 | 1.2% | 2025-08 |
+| CoinFabrik | Tier 2 | 2 | 2.1% | 2025-05 |
+| Defence (Thesis) | Tier 2 | 1 | 1.0% | 2025-08 |
 
 ## Contract Surface
 
@@ -158,18 +158,24 @@ The pinned logic-topography run contains 86 contract row(s) across arbitrum, ava
 | BridgeEndpoint | operational_periphery | project_anchor | own_supporting | 0 | mode | unit-231237 | `0xa18d96...b2aac9` | ✅ Audited |
 | BridgeRegistry | unknown | project_anchor | own_supporting | 0 | mode | unit-231236 | `0x88af5f...20d66c` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (83)
+### ⚠️ Verified + Unaudited (95)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | aeWETH | token | project_anchor | own_supporting | 1 | arbitrum | unit-231301 | `0x82af49...3fbab1` | ⚠️ Unaudited |
+| BatchTokenSender | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb15ee5...91fa37` | ⚠️ Unaudited |
+| BEP20LINK | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf8a0bf...1a51bd` | ⚠️ Unaudited |
 | BEP20Token | token | project_anchor | own_supporting | 0 | bsc | unit-231271 | `0x7130d2...3ead9c` | ⚠️ Unaudited |
+| BEP20Token | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe9e7ce...087d56` | ⚠️ Unaudited |
 | BEP20USDT | token | project_anchor | own_supporting | 0 | bsc | unit-231269 | `0x55d398...197955` | ⚠️ Unaudited |
+| BridgeConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x7062db...5d8711`; bsc `0x7062db...5d8711`; base `0xf99f62...88fc24`; mode `0xf99f62...88fc24`; arbitrum `0xf99f62...88fc24`; linea `0xf99f62...88fc24` | ⚠️ Unaudited |
 | BridgeConfig | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-231170 | `0x79d1c9...b38e8a` | ⚠️ Unaudited |
+| BridgeEndpoint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 18 deployments: ethereum `0x1c5ac4...fe38ea`; ethereum `0x4a5ccd...07340a`; ethereum `0x84254d...ce4547`; ethereum `0x9883fa...1ca925`; bsc `0x13b72a...626673`; bsc `0x2aed35...938430`; bsc `0xa18d96...b2aac9`; bsc `0xb17192...b369e7`; bsc `0xd851f6...e98661`; bsc `0xf4a617...273730`; base `0x79d1c9...b38e8a`; base `0xf6af0a...d6b600`; mode `0x79d1c9...b38e8a`; arbitrum `0x79d1c9...b38e8a`; arbitrum `0xc13a12...edcacb`; linea `0x790cd0...19edef`; linea `0x79d1c9...b38e8a`; linea `0xf6af0a...d6b600` | ⚠️ Unaudited |
 | BridgeEndpointWithSwap | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-231135 | `0x1a86ff...c56ce5` | ⚠️ Unaudited |
 | BridgeEndpointWithSwap | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-231192 | `0xb1c34a...31c94d` | ⚠️ Unaudited |
 | BridgeEndpointWithSwap | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-231268 | `0x529871...840092` | ⚠️ Unaudited |
 | BridgeEndpointWithSwap | operational_periphery | project_anchor | own_supporting | 0 | base | unit-231289 | `0x18c05e...438fa7` | ⚠️ Unaudited |
+| BridgeEndpointWithSwap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 37 deployments: ethereum `0x2df927...3d4ee4`; ethereum `0xb304ec...59e638`; ethereum `0xb89873...ae3f78`; ethereum `0xde8d0c...3dd35b`; ethereum `0xe79097...f9ef2c`; ethereum `0xf28f38...885028`; bsc `0x2543df...ea89d6`; bsc `0x3a7506...a399a7`; bsc `0x46b20f...fc6379`; bsc `0x4a1a70...6a5f7f`; bsc `0x82d25b...4b2aab`; bsc `0x99b034...34a2c3`; bsc `0xb75231...316a15`; bsc `0xc355e2...3a1334`; base `0x10eecc...aee32e`; base `0x144b42...432318`; base `0x916e5d...ed21cb`; base `0xa6420e...3531bb`; base `0xd15b99...81520d`; base `0xd89940...bef1ad`; base `0xe80e0c...f13e7e`; arbitrum `0x0d3c78...a6cf07`; arbitrum `0x31761a...233b0b`; arbitrum `0x430637...6cd41e`; arbitrum `0x4a5ccd...07340a`; arbitrum `0x73f0f5...217138`; arbitrum `0x916e5d...ed21cb`; arbitrum `0x9df50c...5a8522`; arbitrum `0xa18d96...b2aac9`; arbitrum `0xce83dd...0970cb`; linea `0x10eecc...aee32e`; linea `0x144b42...432318`; linea `0x4869f4...2f480c`; linea `0x87e352...e78fe5`; linea `0xa5171f...6f1c9e`; linea `0xd491f2...7bcac9`; linea `0xf4a617...273730` | ⚠️ Unaudited |
 | BridgeEndpointWithSwap | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-231247 | `0x7a5912...3a5baf` | ⚠️ Unaudited |
 | BridgeEndpointWithSwap | operational_periphery | project_anchor | own_supporting | 0 | linea | unit-231278 | `0x0f38ed...80ce03` | ⚠️ Unaudited |
 | BridgeRegistry | unknown | project_anchor | own_supporting | 0 | ethereum | unit-231130 | `0x13b72a...626673` | ⚠️ Unaudited |
@@ -213,6 +219,7 @@ The pinned logic-topography run contains 86 contract row(s) across arbitrum, ava
 | BridgeToken | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-231251 | `0xcd5ed0...fba378` | ⚠️ Unaudited |
 | BridgeToken | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-231252 | `0xdfd066...8caf71` | ⚠️ Unaudited |
 | BridgeToken | operational_periphery | project_anchor | own_supporting | 0 | avalanche | unit-231254 | `0x152b9d...943e50` | ⚠️ Unaudited |
+| BridgeToken | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 24 deployments: bsc `0x858d1d...07d38b`; bsc `0xcd5ed0...fba378`; base `0xc13a12...edcacb`; base `0xce83dd...0970cb`; base `0xe67640...33291d`; arbitrum `0x7baa28...d07113`; arbitrum `0xe67d6d...351bb0`; avalanche `0x19860c...8dde98`; avalanche `0x37b608...2e4f76`; avalanche `0x3bd2b1...5b2339`; avalanche `0x50b754...87b218`; avalanche `0x5947bb...3227a3`; avalanche `0x596fa4...cde0d2`; avalanche `0x63a728...d386d9`; avalanche `0x88128f...b72d42`; avalanche `0x8a0cac...e85cb9`; avalanche `0x8ebaf2...ba8580`; avalanche `0x98443b...690588`; avalanche `0x9eaac1...2f52dc`; avalanche `0xbec243...4b209b`; avalanche `0xc3048e...6e2437`; avalanche `0xc71984...b95118`; avalanche `0xd50128...28f267`; avalanche `0xd586e7...9d8d70` | ⚠️ Unaudited |
 | BridgeToken | operational_periphery | project_anchor | own_supporting | 0 | avalanche | unit-231255 | `0x49d5c2...c10bab` | ⚠️ Unaudited |
 | BridgeToken | unknown | project_anchor | own_supporting | 0 | linea | unit-231279 | `0x24a44c...aa29a7` | ⚠️ Unaudited |
 | BridgeToken | unknown | project_anchor | own_supporting | 0 | linea | unit-231281 | `0x707272...b257e2` | ⚠️ Unaudited |
@@ -224,9 +231,11 @@ The pinned logic-topography run contains 86 contract row(s) across arbitrum, ava
 | BridgeToken | operational_periphery | project_anchor | own_supporting | 0 | linea | unit-231288 | `0xdfd066...8caf71` | ⚠️ Unaudited |
 | ERC20BridgeToken | operational_periphery | project_anchor | own_supporting | 0 | avalanche | unit-231256 | `0x5e0e90...21fb59` | ⚠️ Unaudited |
 | FiatTokenV2_1 | token | project_anchor | own_supporting | 1 | base | unit-231304 | `0xcbb7c0...ed33bf` | ⚠️ Unaudited |
+| FiatTokenV2_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xa3fa3d...314890` | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | project_anchor | own_supporting | 1 | base | unit-231303 | `0x833589...a02913` | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | project_anchor | own_supporting | 1 | arbitrum | unit-231300 | `0xaf88d0...8e5831` | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | project_anchor | own_supporting | 1 | avalanche | unit-231302 | `0xb97ef9...c48a6e` | ⚠️ Unaudited |
+| MasterMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x223039...ed52e1`; avalanche `0xb7887f...82341a` | ⚠️ Unaudited |
 | MigrateToken | token | project_anchor | own_supporting | 0 | ethereum | unit-231150 | `0x430637...6cd41e` | ⚠️ Unaudited |
 | MigrateToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-231275 | `0xd15b99...81520d` | ⚠️ Unaudited |
 | MigrateTokenBOBFusionS1 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-231188 | `0xa6420e...3531bb` | ⚠️ Unaudited |
@@ -237,11 +246,14 @@ The pinned logic-topography run contains 86 contract row(s) across arbitrum, ava
 | MultisigWallet | governance | project_anchor | own_supporting | 0 | mode | unit-231243 | `0xf162b6...facf44` | ⚠️ Unaudited |
 | MultisigWallet | governance | project_anchor | own_supporting | 0 | arbitrum | unit-231253 | `0xf162b6...facf44` | ⚠️ Unaudited |
 | MultisigWallet | governance | project_anchor | own_supporting | 0 | avalanche | unit-231257 | `0x62f7d5...81e79c` | ⚠️ Unaudited |
+| MultisigWallet | governance | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 23 deployments: bsc `0x79d1c9...b38e8a`; mode `0x4869f4...2f480c`; mode `0x658064...32960e`; mode `0x65dfac...394090`; mode `0x916e5d...ed21cb`; mode `0x9883fa...1ca925`; mode `0xa6420e...3531bb`; mode `0xd491f2...7bcac9`; mode `0xedd6a2...1e3abb`; mode `0xeebb83...6c9051`; mode `0xf5866c...f05c3a`; arbitrum `0x46b20f...fc6379`; arbitrum `0xe9915e...fe7423`; linea `0x1a86ff...c56ce5`; linea `0x2aed35...938430`; linea `0x305a85...9a6ee9`; linea `0x46b20f...fc6379`; linea `0x7a5912...3a5baf`; linea `0x7d4de6...dd1d9d`; linea `0x80a33f...19b69f`; linea `0xec72d4...9ffcbc`; linea `0xf162b6...facf44`; linea `0xfc57d3...5dec8c` | ⚠️ Unaudited |
 | MultisigWallet | governance | project_anchor | own_supporting | 0 | linea | unit-231280 | `0x3280a4...649f37` | ⚠️ Unaudited |
 | PepeToken | token | project_anchor | own_supporting | 0 | arbitrum | unit-231244 | `0x25d887...aebb00` | ⚠️ Unaudited |
 | StandardArbERC20 | token | project_anchor | own_supporting | 2 | arbitrum | unit-231299 (2 proxies) | 2 deployments: arbitrum `0x2f2a25...fc5b0f`; arbitrum `0xf97f4d...539fb4` | ⚠️ Unaudited |
 | TBTC | unknown | project_anchor | own_supporting | 0 | ethereum | unit-231132 | `0x18084f...d93a88` | ⚠️ Unaudited |
+| TeamToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x55acc8...74940d` | ⚠️ Unaudited |
 | TeamToken | token | project_anchor | own_supporting | 0 | bsc | unit-231274 | `0x9bf543...defe3c` | ⚠️ Unaudited |
+| TimeLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 6 deployments: ethereum `0x858d1d...07d38b`; bsc `0x7a087e...5eafe0`; base `0x1dcae9...759ab3`; mode `0x1dcae9...759ab3`; arbitrum `0x1dcae9...759ab3`; linea `0x1dcae9...759ab3` | ⚠️ Unaudited |
 | Token | token | project_anchor | own_supporting | 0 | bsc | unit-231272 | `0x795d27...6703f3` | ⚠️ Unaudited |
 | WAVAX | unknown | project_anchor | own_supporting | 0 | avalanche | unit-231259 | `0xb31f66...fd66c7` | ⚠️ Unaudited |
 | WETH9 | token | project_anchor | own_supporting | 0 | base | unit-231290 | `0x420000...000006` | ⚠️ Unaudited |
@@ -258,7 +270,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (23)
+### ❓ Unverified (48)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -275,8 +287,33 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-231210 | `0xe0f63a...b2c56c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-231263 | `0x2170ed...f933f8` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-231264 | `0x25d887...aebb00` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | n/a | 6 deployments: merlin `0x7a087e...5eafe0`; merlin `0x858d1d...07d38b`; merlin `0x88af5f...20d66c`; merlin `0xa831a4...703f37`; merlin `0xc13a12...edcacb`; merlin `0xf162b6...facf44` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa5171f...6f1c9e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x02111c...dc84f3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x03c69e...a61154` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x108d36...93835c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x19e64a...d82c2f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x521064...9d88f3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x57b9b4...03fe4c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x715f26...5bf829` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x950cfb...a2c1dc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xa1c1f6...b40bd6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xe1a512...ade33b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xf4a617...273730` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x1dcae9...759ab3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x1fe74c...6d20e3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x3d3f8f...66c6bc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x4c90c8...38f4cf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x79d1c9...b38e8a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x7f2239...cd51c2` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-231258 | `0x88af5f...20d66c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb5dc66...67311a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-231260 | `0xd96f5d...26a060` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xe67640...33291d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xecc6ad...ae08d3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf162b6...facf44` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf99f62...88fc24` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xdd7124...9769bf` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-231223 | `0x02111c...dc84f3` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-231224 | `0x03c69e...a61154` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-231225 | `0x108d36...93835c` | ❓ Unverified |
@@ -464,10 +501,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 85 |
+| native | 97 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 23 |
+| needs_review | 48 |
 
 ## Scope Matching Notes
 

@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: InfinityPools (`infinitypools`)
 - Website: [https://infinitypools.finance/](https://infinitypools.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base
 - Contract surface: 15 unique implementations (15 raw deployments)
@@ -68,7 +68,7 @@ The pinned logic-topography run contains 4 contract row(s) across base. Structur
 
 ## Contract Surface Quality
 
-- Indexed contracts: 4; live-surface contracts included: 4 (4 live, 0 unknown).
+- Logic-topography rows: 4; live-surface rows included: 4 (4 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 13/14 live.
 - Detected codebases: none
@@ -79,11 +79,11 @@ The pinned logic-topography run contains 4 contract row(s) across base. Structur
 - Coverage of address-book-owned deployed-live implementations: 4/4 (100.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 13 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 2 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 2 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 2
-- Deployed-live implementations: 13 of 15 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 4/4
-- Verified + Unaudited implementations: 0
+- Confirmed-live implementations: 13 of 15 unique; 2 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 4/6
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 9
 - Unique implementations: 15
@@ -100,7 +100,7 @@ The pinned logic-topography run contains 4 contract row(s) across base. Structur
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ABDK | Tier 2 | 4 | 100.0% | 2025-01 |
+| ABDK | Tier 2 | 4 | 66.7% | 2025-01 |
 
 ## Contract Surface
 

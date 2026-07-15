@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: MONSTRO (`monstro`)
 - Website: [https://v2.monstro.fun](https://v2.monstro.fun)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base
-- Contract surface: 4 unique implementations (4 raw deployments)
+- Contract surface: 18 unique implementations (25 raw deployments)
 - Coverage basis: 0/3 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,359,293.96
 - On-chain TVL (included contracts): n/a
@@ -59,7 +59,7 @@ The pinned logic-topography run contains 3 contract row(s) across base. Structur
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Logic-topography rows: 3; live-surface rows included: 3 (3 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 4/4 live.
 - Detected codebases: none
@@ -70,15 +70,15 @@ The pinned logic-topography run contains 3 contract row(s) across base. Structur
 - Coverage of address-book-owned deployed-live implementations: 0/3 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 4 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 14 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 4 of 4 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/3
-- Verified + Unaudited implementations: 3
+- Confirmed-live implementations: 4 of 18 unique; 14 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/17
+- Verified + Unaudited implementations: 17
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 4
-- Raw deployments: 4
+- Unique implementations: 18
+- Raw deployments: 25
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -97,13 +97,27 @@ The pinned logic-topography run contains 3 contract row(s) across base. Structur
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AlgebraPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x174b09...154575` | ⚠️ Unaudited |
+| BasedLoansLendingLedger | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x278cfe...c5141f` | ⚠️ Unaudited |
+| HVOriginsNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xffec06...76d6a2` | ⚠️ Unaudited |
+| MasterbrewsNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfa94fe...fbd6d2` | ⚠️ Unaudited |
+| MonstroDataTracker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x813303...21f53f` | ⚠️ Unaudited |
+| MonstroNFT | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x553fa1...373cf0` | ⚠️ Unaudited |
+| MonstroNFTFeatures | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0d949b...28041d` | ⚠️ Unaudited |
+| MonstroNFTProps | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbb0c01...4b3452` | ⚠️ Unaudited |
+| MonstroNFTSale | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x53f3f5...f1ec7c`; base `0xcc0bec...29cec1`; base `0xcd6cda...76c76d`; base `0xf6509e...4ddcd4` | ⚠️ Unaudited |
+| MonstroPayUSDC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x37db84...ecbf6c` | ⚠️ Unaudited |
 | MonstroStaking | unknown | project_anchor | own_supporting | 0 | base | unit-389176 | `0x997417...f4742b` | ⚠️ Unaudited |
 | MonstroToken | token | project_anchor | own_supporting | 0 | base | unit-389175 | `0x1d3be1...e708f7` | ⚠️ Unaudited |
 | MonstroUSDC | unknown | project_anchor | own_supporting | 0 | base | unit-389178 | `0xfa68ac...6b0397` | ⚠️ Unaudited |
+| RatioDerivedAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb5391e...f88b52` | ⚠️ Unaudited |
+| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: base `0x4713b3...5a8dd0`; base `0xa67356...14085c`; base `0xa6cd98...5404dc`; base `0xcb7c19...9f4391`; base `0xce45b2...6f6b4a` | ⚠️ Unaudited |
+| WhelpsHighbornNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2d4a5b...104d3a` | ⚠️ Unaudited |
+| WhelpsNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x8ce5b9...e88a42` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -150,9 +164,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 16 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 1 |
 
 ## Scope Matching Notes

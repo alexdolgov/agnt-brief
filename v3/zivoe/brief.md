@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Zivoe (`zivoe`)
 - Website: [https://zivoe.com/](https://zivoe.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 29 unique implementations (29 raw deployments)
+- Contract surface: 39 unique implementations (47 raw deployments)
 - Coverage basis: 19/26 confirmed own live verified implementations (73.1%); conservative 73.1% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $13,777,805.68
 - On-chain TVL (included contracts): n/a
@@ -89,7 +89,7 @@ Removals (removed from original):
 
 ## Contract Surface Quality
 
-- Indexed contracts: 26; live-surface contracts included: 26 (26 live, 0 unknown).
+- Logic-topography rows: 26; live-surface rows included: 26 (26 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 29/29 live.
 - Detected codebases: none
@@ -100,15 +100,15 @@ Removals (removed from original):
 - Coverage of address-book-owned deployed-live implementations: 19/26 (73.1%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 29 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 29 of 29 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 19/26
-- Verified + Unaudited implementations: 7
+- Outside the address book: 10 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 4
+- Confirmed-live implementations: 29 of 39 unique; 10 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 19/36
+- Verified + Unaudited implementations: 17
 - Verified by bytecode match: 0
 - Unverified implementations: 3
-- Unique implementations: 29
-- Raw deployments: 29
+- Unique implementations: 39
+- Raw deployments: 47
 - Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): n/a
@@ -121,9 +121,9 @@ Removals (removed from original):
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 16 | 61.5% | 2023-08 |
-| Sherlock | Tier 1 | 7 | 26.9% | 2024-06 |
-| Runtime Verification | Tier 2 | 3 | 11.5% | 2025-03 |
+| unknown | Tier 2 | 16 | 44.4% | 2023-08 |
+| Sherlock | Tier 1 | 7 | 19.4% | 2024-06 |
+| Runtime Verification | Tier 2 | 3 | 8.3% | 2025-03 |
 
 ## Contract Surface
 
@@ -151,12 +151,22 @@ Removals (removed from original):
 | ZivoeVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-398245 | `0x94babe...fbedd4` | ✅ Audited |
 | ZivoeYDL | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398259 | `0xfb7920...474b2b` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| ATokenInstance | token | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x98c23e...e16f5c` | ⚠️ Unaudited |
+| FrxUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xcacd6f...586e29` | ⚠️ Unaudited |
+| OCC_Cycle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x09c977...ddb69c`; ethereum `0xb63c6a...986573` | ⚠️ Unaudited |
 | OCC_Cycle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398235 | `0x161c42...ccc17f` | ⚠️ Unaudited |
+| OCC_Modular | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x5d4c6c...b932b3`; ethereum `0x9d0613...c029b9`; ethereum `0xf02125...bb3341` | ⚠️ Unaudited |
+| OCC_Variable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x26ac86...26f29e` | ⚠️ Unaudited |
 | OCR_Cycle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398234 | `0x12e46e...78ad6f` | ⚠️ Unaudited |
+| OCR_CycleV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x060453...0fff3f` | ⚠️ Unaudited |
+| OCR_Instant | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x18e710...fa47eb`; ethereum `0x7720e6...2a89ec`; ethereum `0x90784f...20f737`; ethereum `0xa12d63...2c89ae`; ethereum `0xc25cd3...2be0d1` | ⚠️ Unaudited |
+| OCT_Convert | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8c5fa1...951a85` | ⚠️ Unaudited |
+| OCY_OUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x373a78...4270bb` | ⚠️ Unaudited |
+| Safe | unknown | non_address_book | standard_proxy_or_library (excluded) | 2 | ethereum | n/a | 2 deployments: ethereum `0x50c72f...eb0fd5`; ethereum `0xc8d624...d5f026` | ⚠️ Unaudited |
 | ZivoeRewards | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398232 | `0x0d45c2...9ded5d` | ⚠️ Unaudited |
 | ZivoeRewards | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398247 | `0xb397aa...6b2dce` | ⚠️ Unaudited |
 | ZivoeRewards | unknown | project_anchor | own_supporting | 0 | ethereum | unit-398250 | `0xcacdb1...78aa7c` | ⚠️ Unaudited |
@@ -274,9 +284,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 26 |
+| native | 35 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 3 |
 
 ## Scope Matching Notes

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Lido (`lido`)
 - Website: [https://lido.fi/](https://lido.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, base, bsc, ethereum, gnosis, linea, mantle, mode, moonbeam, moonriver, optimism, polygon, scroll, swellchain, unichain, zksync-era
-- Contract surface: 645 unique implementations (662 raw deployments)
+- Contract surface: 646 unique implementations (663 raw deployments)
 - Coverage basis: 90/109 confirmed own live verified implementations (82.6%); conservative 82.6% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $14,419,982,777.75
 - On-chain TVL (included contracts): n/a
@@ -432,7 +432,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 129; live-surface contracts included: 129 (109 live, 20 unknown).
+- Logic-topography rows: 129; live-surface rows included: 129 (109 live, 20 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 311/521 live.
 - Detected codebases: none
@@ -443,15 +443,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 90/109 (82.6%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 311 own, 98 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 236 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 237 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 59
-- Deployed-live implementations: 311 of 645 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 90/109
-- Verified + Unaudited implementations: 19
+- Confirmed-live implementations: 311 of 646 unique; 335 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 90/366
+- Verified + Unaudited implementations: 276
 - Verified by bytecode match: 0
-- Unverified implementations: 202
-- Unique implementations: 645
-- Raw deployments: 662
+- Unverified implementations: 280
+- Unique implementations: 646
+- Raw deployments: 663
 - Audits discovered: 145 (145 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 76
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/lido/information))
@@ -465,25 +465,25 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Statemind | Tier 2 | 46 | 42.2% | 2025-09 |
-| yAudit | Tier 2 | 42 | 38.5% | 2026-04 |
-| Ackee Blockchain | Tier 2 | 22 | 20.2% | 2026-02 |
-| Certora | Tier 1 | 22 | 20.2% | 2026-01 |
-| Oxorio | Tier 2 | 17 | 15.6% | 2024-08 |
-| MixBytes | Tier 1 | 14 | 12.8% | 2026-05 |
-| OpenZeppelin | Tier 1 | 9 | 8.3% | 2025-02 |
-| Runtime Verification | Tier 2 | 5 | 4.6% | 2025-02 |
-| ChainSecurity | Tier 1 | 4 | 3.7% | 2024-06 |
-| Hexens | Tier 2 | 2 | 1.8% | 2023-05 |
-| Quantstamp | Tier 2 | 2 | 1.8% | 2024-09 |
-| Sigma Prime | Tier 2 | 2 | 1.8% | 2026-01 |
-| Code4rena | Tier 1 | 1 | 0.9% | 2026-03 |
-| Composable Security | Tier 2 | 1 | 0.9% | 2026-06 |
-| Cyfrin | Tier 1 | 1 | 0.9% | 2026-05 |
-| Nethermind | Tier 2 | 1 | 0.9% | 2026-04 |
-| Pessimistic | Tier 2 | 1 | 0.9% | 2023-12 |
-| Spearbit | Tier 1 | 1 | 0.9% | 2026-03 |
-| Verilog | Tier 2 | 1 | 0.9% | 2023-09 |
+| Statemind | Tier 2 | 46 | 12.6% | 2025-09 |
+| yAudit | Tier 2 | 42 | 11.5% | 2026-04 |
+| Ackee Blockchain | Tier 2 | 22 | 6.0% | 2026-02 |
+| Certora | Tier 1 | 22 | 6.0% | 2026-01 |
+| Oxorio | Tier 2 | 17 | 4.6% | 2024-08 |
+| MixBytes | Tier 1 | 14 | 3.8% | 2026-05 |
+| OpenZeppelin | Tier 1 | 9 | 2.5% | 2025-02 |
+| Runtime Verification | Tier 2 | 5 | 1.4% | 2025-02 |
+| ChainSecurity | Tier 1 | 4 | 1.1% | 2024-06 |
+| Hexens | Tier 2 | 2 | 0.5% | 2023-05 |
+| Quantstamp | Tier 2 | 2 | 0.5% | 2024-09 |
+| Sigma Prime | Tier 2 | 2 | 0.5% | 2026-01 |
+| Code4rena | Tier 1 | 1 | 0.3% | 2026-03 |
+| Composable Security | Tier 2 | 1 | 0.3% | 2026-06 |
+| Cyfrin | Tier 1 | 1 | 0.3% | 2026-05 |
+| Nethermind | Tier 2 | 1 | 0.3% | 2026-04 |
+| Pessimistic | Tier 2 | 1 | 0.3% | 2023-12 |
+| Spearbit | Tier 1 | 1 | 0.3% | 2026-03 |
+| Verilog | Tier 2 | 1 | 0.3% | 2023-09 |
 
 ## Contract Surface
 
@@ -582,7 +582,7 @@ Removals (removed from original): none
 | WstEthL2Token | unknown | project_anchor | own_supporting | 1 | bsc | unit-245732 | 2 deployments: bsc `0x26c5e0...e9611c`; bsc `0x451d44...a73ee5` | ✅ Audited |
 | WstETHReferralStaker | unknown | project_anchor | own_supporting | 0 | ethereum | unit-245388 | `0xa88f03...20dd0d` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (275)
+### ⚠️ Verified + Unaudited (276)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
@@ -590,6 +590,7 @@ Removals (removed from original): none
 | AccessControlledOCR2Aggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1655ad...cb2419` | ⚠️ Unaudited |
 | AccessControlledOffchainAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0050d5...397af7` | ⚠️ Unaudited |
 | Accountant | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x15a94d...8ba7b6` | ⚠️ Unaudited |
+| AccountingModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x77fb6f...de469a` | ⚠️ Unaudited |
 | AccountingOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x010ecb...dcf9df` | ⚠️ Unaudited |
 | ACL | unknown | project_anchor | own_supporting | 1 | ethereum | unit-245711 | `0x9895f0...1b37bb` | ⚠️ Unaudited |
 | Address | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeffdcb...230e3e` | ⚠️ Unaudited |
@@ -3293,7 +3294,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 349 |
+| native | 350 |
 | upstream | 6 |
 | standard_library | 10 |
 | needs_review | 280 |

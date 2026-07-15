@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Zircuit Staking (`zircuit-staking`)
 - Website: [https://app.zircuit.com/liquidity-hub](https://app.zircuit.com/liquidity-hub)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base, ethereum, sepolia
-- Contract surface: 38 unique implementations (39 raw deployments)
+- Contract surface: 44 unique implementations (46 raw deployments)
 - Coverage basis: 3/14 confirmed own live verified implementations (21.4%); conservative 21.4% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $38,414,098.77
 - On-chain TVL (included contracts): n/a
@@ -79,7 +79,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 15; live-surface contracts included: 15 (15 live, 0 unknown).
+- Logic-topography rows: 15; live-surface rows included: 15 (15 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 14/26 live.
 - Detected codebases: none
@@ -90,15 +90,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 3/14 (21.4%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 14 own, 12 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 12 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 13
-- Deployed-live implementations: 14 of 38 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 3/14
-- Verified + Unaudited implementations: 11
+- Outside the address book: 18 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 18
+- Confirmed-live implementations: 14 of 44 unique; 30 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 3/19
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 38
-- Raw deployments: 39
+- Unverified implementations: 25
+- Unique implementations: 44
+- Raw deployments: 46
 - Audits discovered: 11 (11 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -111,7 +111,7 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Dedaub | Tier 2 | 3 | 21.4% | 2024-07 |
+| Dedaub | Tier 2 | 3 | 15.8% | 2024-07 |
 
 ## Contract Surface
 
@@ -123,21 +123,26 @@ Removals (removed from original): none
 | L2OutputOracle | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-263801 | `0x92ef6a...9245a4` | ✅ Audited |
 | OptimismPortal | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263810 | `0x17bfaf...043fb1` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (11)
+### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | CrisisControlRegistry | registry | project_anchor | own_supporting | 1 | ethereum | unit-263809 | `0x7d43eb...80f35e` | ⚠️ Unaudited |
 | ERC20RevocableComplianceTokenBasicPackageUpgradable | token | project_anchor | own_supporting | 1 | ethereum | unit-263804 | `0x48ab4e...02717f` | ⚠️ Unaudited |
+| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 2 | ethereum | n/a | 2 deployments: ethereum `0x2c0b27...2db276`; ethereum `0xc463ea...2baf38` | ⚠️ Unaudited |
 | L1CrossDomainMessenger | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263805 | `0x2a721c...5ea091` | ⚠️ Unaudited |
 | L1ERC721Bridge | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263808 | `0x994eeb...0dd244` | ⚠️ Unaudited |
 | OptimismMintableERC20Factory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263811 | `0xc77ece...90e932` | ⚠️ Unaudited |
 | ProxyAdmin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263771 | `0x5b1ef6...fc5257` | ⚠️ Unaudited |
 | ResolverRegistry | registry | project_anchor | own_supporting | 1 | ethereum | unit-263807 | `0x6c8910...d5cf0e` | ⚠️ Unaudited |
+| RSETH | token | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xa1290d...99e5a7` | ⚠️ Unaudited |
 | SP1VerifierGateway | periphery | project_anchor | own_supporting | 0 | ethereum | unit-263773 | `0xf35a40...e31f67` | ⚠️ Unaudited |
 | SuperchainConfig | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263803 | `0x745393...6d3da0` | ⚠️ Unaudited |
 | SystemConfig | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263806 | `0x30f82a...a428ff` | ⚠️ Unaudited |
 | TokenizedStrategy | core_logic | project_anchor | own_supporting | 2 | base | unit-263812 (2 proxies) | 2 deployments: base `0x1a48ce...37e1cc`; base `0xe83ef4...ab1dc5` | ⚠️ Unaudited |
+| Verifier | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x6bce74...a1447c` | ⚠️ Unaudited |
+| VerifierV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xc25d09...dc9737` | ⚠️ Unaudited |
+| ZtakingPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf047ab...aeafa6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -151,12 +156,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (24)
+### ❓ Unverified (25)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0792c4...df3f5b` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2b4913...6a1069` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3d3fc8...64463f` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4e21a7...702c21` | ❓ Unverified |
@@ -270,10 +276,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 13 |
+| native | 17 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 24 |
+| standard_library | 2 |
+| needs_review | 25 |
 
 ## Scope Matching Notes
 

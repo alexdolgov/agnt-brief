@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Infrared Finance (`infrared-finance`)
 - Website: [https://infrared.finance](https://infrared.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: berachain
-- Contract surface: 12 unique implementations (12 raw deployments)
+- Chains: berachain, bsc
+- Contract surface: 61 unique implementations (173 raw deployments)
 - Coverage basis: 11/12 confirmed own live verified implementations (91.7%); conservative 91.7% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $24,233,210.37
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for Infrared 
 
 ### Architecture
 
-The pinned logic-topography run contains 20 contract row(s) across berachain. Structural roles: 10 unclassified, 6 supporting, 4 core. 7 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 20 contract row(s) across berachain, bsc. Structural roles: 10 unclassified, 6 supporting, 4 core. 7 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -65,9 +65,9 @@ The pinned logic-topography run contains 20 contract row(s) across berachain. St
 
 ## Contract Surface Quality
 
-- Indexed contracts: 20; live-surface contracts included: 20 (12 live, 8 unknown).
+- Logic-topography rows: 20; live-surface rows included: 20 (19 live, 1 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
-- Deployment units: 12/12 live.
+- Deployment units: 12/13 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -76,15 +76,15 @@ The pinned logic-topography run contains 20 contract row(s) across berachain. St
 - Coverage of address-book-owned deployed-live implementations: 11/12 (91.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 12 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 8
-- Deployed-live implementations: 12 of 12 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 11/12
-- Verified + Unaudited implementations: 1
+- Outside the address book: 49 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 11
+- Confirmed-live implementations: 12 of 61 unique; 49 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 11/49
+- Verified + Unaudited implementations: 38
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 12
-- Raw deployments: 12
+- Unverified implementations: 12
+- Unique implementations: 61
+- Raw deployments: 173
 - Audits discovered: 27 (27 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 11
 - ASD (verified + unaudited TVL): n/a
@@ -97,9 +97,9 @@ The pinned logic-topography run contains 20 contract row(s) across berachain. St
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 11 | 91.7% | 2026-04 |
-| Spearbit | Tier 1 | 7 | 58.3% | 2026-03 |
-| Zellic | Tier 2 | 1 | 8.3% | 2024-10 |
+| unknown | Tier 2 | 11 | 22.4% | 2026-04 |
+| Spearbit | Tier 1 | 7 | 14.3% | 2026-03 |
+| Zellic | Tier 2 | 1 | 2.0% | 2024-10 |
 
 ## Contract Surface
 
@@ -107,23 +107,60 @@ The pinned logic-topography run contains 20 contract row(s) across berachain. St
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BribeCollectorV1_4 | operational_periphery | project_anchor | own_supporting | 1 | berachain | unit-387431 | `0x8d4417...21298c` | ✅ Audited |
-| InfraredBERADepositorV2 | unknown | project_anchor | own_supporting | 1 | berachain | unit-387433 | `0x04cddc...cab7d7` | ✅ Audited |
-| InfraredBERAFeeReceivor | unknown | project_anchor | own_supporting | 1 | berachain | unit-387429 | `0xf6a4a6...9fef97` | ✅ Audited |
-| InfraredBERAV2_1 | unknown | project_anchor | own_supporting | 1 | berachain | unit-387430 | `0x9b6761...cd3fe5` | ✅ Audited |
-| InfraredBERAWithdrawor | operational_periphery | project_anchor | own_supporting | 1 | berachain | unit-387426 | `0x8c0e12...2818e1` | ✅ Audited |
+| BribeCollectorV1_4 | operational_periphery | project_anchor | own_supporting | 1 | berachain | unit-387431 | 2 deployments: berachain `0x8d4417...21298c`; berachain `0xd5a302...668bcb` | ✅ Audited |
+| InfraredBERADepositorV2 | unknown | project_anchor | own_supporting | 1 | berachain | unit-387433 | 2 deployments: berachain `0x04cddc...cab7d7`; berachain `0xe18e88...c3e24b` | ✅ Audited |
+| InfraredBERAFeeReceivor | unknown | project_anchor | own_supporting | 1 | berachain | unit-387429 | 2 deployments: berachain `0xab2dad...b18254`; berachain `0xf6a4a6...9fef97` | ✅ Audited |
+| InfraredBERAV2_1 | unknown | project_anchor | own_supporting | 1 | berachain | unit-387430 | 2 deployments: berachain `0x9b6761...cd3fe5`; berachain `0xc06549...5d9dcf` | ✅ Audited |
+| InfraredBERAWithdrawor | unknown | project_anchor | own_supporting | 1 | berachain | unit-387426 | 2 deployments: berachain `0x367cbf...6bac8d`; berachain `0x8c0e12...2818e1` | ✅ Audited |
 | InfraredBGT | unknown | project_anchor | own_supporting | 0 | berachain | unit-387425 | `0xac03ca...bb2e6b` | ✅ Audited |
-| InfraredDistributor | unknown | project_anchor | own_supporting | 1 | berachain | unit-387428 | `0x1fad98...c4ccd6` | ✅ Audited |
+| InfraredDistributor | unknown | project_anchor | own_supporting | 1 | berachain | unit-387428 | 2 deployments: berachain `0x1fad98...c4ccd6`; berachain `0x742ebb...a90247` | ✅ Audited |
 | InfraredV1_10 | unknown | project_anchor | own_supporting | 1 | berachain | unit-387432 | `0xb71b3d...2fc126` | ✅ Audited |
 | InfraredVault | core_logic | project_anchor | own_supporting | 0 | berachain | unit-387423 | `0x75f3be...168301` | ✅ Audited |
-| StakedIR | token | project_anchor | own_supporting | 1 | berachain | unit-387427 | `0xb5e9cf...512756` | ✅ Audited |
+| StakedIR | unknown | project_anchor | own_supporting | 1 | berachain | unit-387427 | 2 deployments: berachain `0x4b5274...a71dbc`; berachain `0xb5e9cf...512756` | ✅ Audited |
 | WrappedRewardToken | token | project_anchor | own_supporting | 0 | berachain | unit-387421 | `0x4f3c10...670c1b` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (38)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| BatchClaimer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x7813a7...51de27` | ⚠️ Unaudited |
+| BatchClaimerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x78b5eb...d59d84` | ⚠️ Unaudited |
+| BatchClaimerV2_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xd45b10...96723c` | ⚠️ Unaudited |
+| BatchClaimerV2_2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | berachain | n/a | 2 deployments: berachain `0x1d6844...a9fb67`; berachain `0xa38e68...03f491` | ⚠️ Unaudited |
+| BribeCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x61bd35...21da40` | ⚠️ Unaudited |
+| BribeCollectorV1_2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xb704ce...bd29a8` | ⚠️ Unaudited |
+| BribeCollectorV1_3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xb3cec5...803b3f` | ⚠️ Unaudited |
+| BribeCollectorV1_4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x960a77...7c5301` | ⚠️ Unaudited |
+| BYUSDRewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 2 deployments: berachain `0x21c18c...4cc617`; berachain `0x88c017...a86725` | ⚠️ Unaudited |
+| CuttingBoardDutchAuctionV1_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x2b8b98...973da3` | ⚠️ Unaudited |
+| CuttingBoardDutchAuctionV1_2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x3ed920...c122e4` | ⚠️ Unaudited |
+| HarvestBaseCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xf8bfe8...d46c5d` | ⚠️ Unaudited |
+| HarvestBaseCollectorV1_2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | berachain | n/a | 2 deployments: berachain `0x733205...897da8`; berachain `0x8b498d...95c388` | ⚠️ Unaudited |
+| Infrared | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x559d13...88092f` | ⚠️ Unaudited |
+| InfraredBERA | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x94b5d5...546d81` | ⚠️ Unaudited |
+| InfraredBERADepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xef26bc...2fef87` | ⚠️ Unaudited |
+| InfraredBERARateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x776fd5...5c50a0` | ⚠️ Unaudited |
+| InfraredBERAV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x33f314...995fd8` | ⚠️ Unaudited |
+| InfraredBERAWithdraworLite | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x725a55...e92444` | ⚠️ Unaudited |
 | InfraredGovernanceTokenV1_2 | unknown | project_anchor | own_supporting | 0 | berachain | unit-387424 | `0xa1b644...28c7c9` | ⚠️ Unaudited |
+| InfraredV1_10 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | berachain | unit-387422 | `0x6d4e88...d331b5` | ⚠️ Unaudited |
+| InfraredV1_2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 2 deployments: berachain `0x4d87f8...b2eff5`; berachain `0x7333e2...6c8555` | ⚠️ Unaudited |
+| InfraredV1_3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x67b4e6...d85cd1` | ⚠️ Unaudited |
+| InfraredV1_4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xd34a43...16ef20` | ⚠️ Unaudited |
+| InfraredV1_5 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xb0713b...9a02dd` | ⚠️ Unaudited |
+| InfraredV1_7 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x8d5a82...9360b9` | ⚠️ Unaudited |
+| InfraredV1_8 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x39366e...86a635` | ⚠️ Unaudited |
+| InfraredV1_9 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xe9a3c9...bcd8ef` | ⚠️ Unaudited |
+| InfraredVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 4 deployments: berachain `0x12e9b8...38314c`; berachain `0x41c411...5588ce`; berachain `0x665309...189694`; berachain `0xf4c0ed...c5fe47` | ⚠️ Unaudited |
+| IRAuction | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | berachain | n/a | 2 deployments: berachain `0x283071...3defdb`; berachain `0xe772bc...d5a717` | ⚠️ Unaudited |
+| IROFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0xace9de...bdcb39`; bsc `0xd26004...5d10d9` | ⚠️ Unaudited |
+| IROFTAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xfd0fa4...f9c2b5` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 4 deployments: berachain `0x43d69c...8b4b17`; berachain `0x5f7915...6e6fc8`; berachain `0x777ceb...fd8e51`; berachain `0x9d57c9...e6d349` | ⚠️ Unaudited |
+| ProxyDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x0c7f08...208bf0` | ⚠️ Unaudited |
+| Redeemer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 2 deployments: berachain `0x3e8eda...681046`; berachain `0x5a2da5...3370cc` | ⚠️ Unaudited |
+| RewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x211407...d29576` | ⚠️ Unaudited |
+| WrappedRewardToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x334404...f9aab7` | ⚠️ Unaudited |
+| WrappedVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 93 deployments: berachain `0x021f62...eccb0d`; berachain `0x023e5d...3124f0`; berachain `0x03c2ef...02ba65`; berachain `0x04bd6e...e69bd5`; berachain `0x04edcc...81b739`; berachain `0x0cb3e2...42d009`; berachain `0x0fff6d...9ddc97`; berachain `0x104e92...738d71`; berachain `0x1109bf...80f954`; berachain `0x1453c6...eba339`; berachain `0x16275c...e730f4`; berachain `0x1a18f5...1a2241`; berachain `0x22a3fb...488715`; berachain `0x23ed71...fd8864`; berachain `0x2415fe...12cf8f`; berachain `0x27b03a...9086db`; berachain `0x2a447f...e69ac2`; berachain `0x2e1139...7ae031`; berachain `0x2e32dd...e2b00f`; berachain `0x2f5119...723c9b`; berachain `0x3904aa...e1ab84`; berachain `0x3b43d2...0462b5`; berachain `0x3fc37a...798d00`; berachain `0x42cd67...7262b6`; berachain `0x47590f...f0ab02`; berachain `0x4fce30...f64444`; berachain `0x57684b...da7ece`; berachain `0x5782d6...d5aaa5`; berachain `0x58b34e...2871fd`; berachain `0x58b61e...0ebe1e`; berachain `0x5d51a2...620224`; berachain `0x6503a8...1796c8`; berachain `0x6e0d09...86e20d`; berachain `0x70d6cf...1ad2ad`; berachain `0x732dfb...987a42`; berachain `0x78808a...9f503c`; berachain `0x79a27a...6f4ef8`; berachain `0x7bc28c...5a375a`; berachain `0x7c010b...c5b5c6`; berachain `0x7cc248...a4efe1`; berachain `0x7cde0a...e86d23`; berachain `0x7e3129...54e39a`; berachain `0x7e5717...286355`; berachain `0x7ef1f9...1f4730`; berachain `0x7f6ed5...87da17`; berachain `0x81ba24...6f490a`; berachain `0x81fb2a...893a1b`; berachain `0x82609f...62f587`; berachain `0x82d750...22dd2b`; berachain `0x855502...9034bc`; berachain `0x86fee0...0ac240`; berachain `0x8b492e...e030f9`; berachain `0x920598...9b139a`; berachain `0x9433cc...344e27`; berachain `0x95c1f2...14ebf7`; berachain `0x9f47f2...5d5c80`; berachain `0x9f898e...f7b732`; berachain `0xa2b10d...bf83d4`; berachain `0xa2e5e4...559ed4`; berachain `0xa3a376...80f26f`; berachain `0xa3fd52...93ce06`; berachain `0xa63ff9...ae4f88`; berachain `0xa6899c...c7a955`; berachain `0xa81dde...5abee4`; berachain `0xab71f6...7c42e6`; berachain `0xac36a9...e53529`; berachain `0xb0292f...a535ed`; berachain `0xb04a2a...ad3839`; berachain `0xb065f8...0f5088`; berachain `0xb17f63...a15a50`; berachain `0xb38b0d...26c9b9`; berachain `0xb59aa6...e85757`; berachain `0xba7f7d...825073`; berachain `0xbc4461...cda130`; berachain `0xbcd681...876a9d`; berachain `0xbf1961...13f5fe`; berachain `0xc2f574...eee206`; berachain `0xc6b6b0...479a29`; berachain `0xc9adf8...7250db`; berachain `0xcc0c3f...f6d05c`; berachain `0xcc824b...851a75`; berachain `0xd10759...f166f4`; berachain `0xd39b77...09f907`; berachain `0xd5ae03...37d25a`; berachain `0xde7472...687958`; berachain `0xdfd21d...3184ca`; berachain `0xe19333...84f34f`; berachain `0xeb6e02...3bbcce`; berachain `0xf3a956...1f3aa1`; berachain `0xf3cbc6...ad8c7b`; berachain `0xf4c35f...240796`; berachain `0xf69cf3...2f18a5`; berachain `0xfe7a78...c5f575` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -137,11 +174,24 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (12)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x01b775...85282a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x1ece52...ad441f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x718874...0bd3d4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x778e92...7e896e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x7d7631...7fec40` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x7de65e...d00262` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xb13a7d...f2d4d4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xbdc6d8...74bf12` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xd452dd...28e5cb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xd76707...5d5673` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xdd0a77...c3ee39` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xff343f...4deaa6` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -377,10 +427,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 12 |
+| native | 49 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 

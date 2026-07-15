@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Nado (`nado`)
 - Website: [https://app.nado.xyz?join=sP6or8A](https://app.nado.xyz?join=sP6or8A)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ink
-- Contract surface: 9 unique implementations (9 raw deployments)
+- Contract surface: 10 unique implementations (11 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $47,620,408.00
 - On-chain TVL (included contracts): n/a
@@ -64,7 +64,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Logic-topography rows: 0; live-surface rows included: 0 (0 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 9/20 live.
 - Detected codebases: none
@@ -75,15 +75,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 9 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 1 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 9 of 9 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Confirmed-live implementations: 9 of 10 unique; 1 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 9
-- Unique implementations: 9
-- Raw deployments: 9
+- Unverified implementations: 10
+- Unique implementations: 10
+- Raw deployments: 11
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -118,7 +118,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (9)
+### ❓ Unverified (10)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -128,6 +128,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389792 | `0x05ec92...65974e` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389794 | `0x09fb49...5b9651` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389809 | `0x687982...c9dff8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ink | n/a | 2 deployments: ink `0x79cc76...cfeea8`; ink `0xf8963f...e1fc0c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389813 | `0x8373c3...6994ab` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389817 | `0x9acdc6...fecf17` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-389823 | `0xd21810...44c5fe` | ❓ Unverified |
@@ -158,7 +159,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 9 |
+| needs_review | 10 |
 
 ## Scope Matching Notes
 

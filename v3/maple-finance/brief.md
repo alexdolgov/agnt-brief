@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Maple Finance (`maple-finance`)
 - Website: [https://www.maple.finance](https://www.maple.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum, sepolia
-- Contract surface: 43 unique implementations (43 raw deployments)
+- Contract surface: 44 unique implementations (44 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $6,696,956,834.00
 - On-chain TVL (included contracts): n/a
@@ -68,7 +68,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Logic-topography rows: 0; live-surface rows included: 0 (0 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 13/22 live.
 - Detected codebases: none
@@ -79,15 +79,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 13 own, 9 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 21 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 22 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Deployed-live implementations: 13 of 43 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- Confirmed-live implementations: 13 of 44 unique; 31 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/22
+- Verified + Unaudited implementations: 22
 - Verified by bytecode match: 0
-- Unverified implementations: 13
-- Unique implementations: 43
-- Raw deployments: 43
+- Unverified implementations: 22
+- Unique implementations: 44
+- Raw deployments: 44
 - Audits discovered: 27 (27 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/maple/information))
@@ -107,7 +107,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - None
 
-### ⚠️ Verified + Unaudited (21)
+### ⚠️ Verified + Unaudited (22)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
@@ -125,6 +125,7 @@ The activated project remains an explicit cohort member with an empty normalized
 | Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9c9499...ad8f2c` | ⚠️ Unaudited |
 | MplUserActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x59371c...b6c183` | ⚠️ Unaudited |
 | Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0fc84a...546ebe` | ⚠️ Unaudited |
+| PoolDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9ca99f...e079c2` | ⚠️ Unaudited |
 | PriceConsumer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7f7d99...22f242` | ⚠️ Unaudited |
 | RecapitalizationModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5dfe04...b3f69d` | ⚠️ Unaudited |
 | SimpleReadAccessController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4a9d21...82700d` | ⚠️ Unaudited |
@@ -435,7 +436,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 21 |
+| native | 22 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 22 |

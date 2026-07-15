@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Ethos (`ethos`)
 - Website: [https://www.ethos.network/](https://www.ethos.network/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base
-- Contract surface: 18 unique implementations (19 raw deployments)
+- Contract surface: 39 unique implementations (63 raw deployments)
 - Coverage basis: 10/18 confirmed own live verified implementations (55.6%); conservative 55.6% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,339,833.00
 - On-chain TVL (included contracts): n/a
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 32 contract row(s) across base. Structu
 
 ## Fork Analysis
 
-0 of 18 contracts are derived from known codebases. 18 contracts have no detected origin.
+0 of 29 contracts are derived from known codebases. 29 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -65,7 +65,18 @@ The pinned logic-topography run contains 32 contract row(s) across base. Structu
 - ERC1967Proxy (`0xc26f33...e059bf`, chain 8453)
 - ERC1967Proxy (`0xd56695...ecd194`, chain 8453)
 - ERC1967Proxy (`0xd89e6b...9a6fdd`, chain 8453)
+- EthosAttestation (`0xaf35ee...8e1386`, chain 8453)
+- EthosBond (`0xda592a...6d749a`, chain 8453)
+- EthosBroker (`0x6045d0...4aa9bd`, chain 8453)
+- EthosDiscussion (`0x89fb1c...e2e2f0`, chain 8453)
+- EthosListingPass (`0xd998f8...d94d60`, chain 8453)
+- EthosProject (`0xf00b5c...6aeda4`, chain 8453)
+- EthosReview (`0xf64108...4a83dc`, chain 8453)
+- EthosSlash (`0xe4c8fc...28dc73`, chain 8453)
+- EthosVote (`0x744bd5...e4b317`, chain 8453)
 - InteractionControl (`0x0a31c9...db4ce5`, chain 8453)
+- ReputationMarket (`0xe0da0e...bc7505`, chain 8453)
+- ReverseAuction (`0x323a83...43ca2a`, chain 8453)
 - SafeProxy (`0x72f04d...81018d`, chain 8453)
 - SafeProxy (`0x7a20d9...31c131`, chain 8453)
 - SafeProxy (`0xb4a9bc...cb4774`, chain 8453)
@@ -73,7 +84,7 @@ The pinned logic-topography run contains 32 contract row(s) across base. Structu
 
 ## Contract Surface Quality
 
-- Indexed contracts: 32; live-surface contracts included: 32 (19 live, 13 unknown).
+- Logic-topography rows: 32; live-surface rows included: 32 (32 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 18/26 live.
 - Detected codebases: none
@@ -84,15 +95,15 @@ The pinned logic-topography run contains 32 contract row(s) across base. Structu
 - Coverage of address-book-owned deployed-live implementations: 10/18 (55.6%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 18 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 15
-- Deployed-live implementations: 18 of 18 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 10/18
-- Verified + Unaudited implementations: 8
+- Outside the address book: 21 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 24
+- Confirmed-live implementations: 18 of 39 unique; 21 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 10/34
+- Verified + Unaudited implementations: 24
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 18
-- Raw deployments: 19
+- Unverified implementations: 5
+- Unique implementations: 39
+- Raw deployments: 63
 - Audits discovered: 4 (4 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -105,7 +116,7 @@ The pinned logic-topography run contains 32 contract row(s) across base. Structu
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Sherlock | Tier 1 | 10 | 55.6% | 2024-12 |
+| Sherlock | Tier 1 | 10 | 29.4% | 2024-12 |
 
 ## Contract Surface
 
@@ -114,28 +125,44 @@ The pinned logic-topography run contains 32 contract row(s) across base. Structu
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | ContractAddressManager | governance | project_anchor | own_supporting | 0 | base | unit-239539 | `0xc31252...0f3e9a` | ✅ Audited |
-| EthosAttestation | unknown | project_anchor | own_supporting | 1 | base | unit-239548 | `0x27499d...9d3c14` | ✅ Audited |
-| EthosDiscussion | unknown | project_anchor | own_supporting | 1 | base | unit-239547 | `0x2820b3...04e801` | ✅ Audited |
-| EthosProfile | unknown | project_anchor | own_supporting | 1 | base | unit-239542 | `0x209820...252a36` | ✅ Audited |
-| EthosReview | unknown | project_anchor | own_supporting | 1 | base | unit-239555 | `0x6d3a8f...aff325` | ✅ Audited |
-| EthosVote | unknown | project_anchor | own_supporting | 1 | base | unit-239546 | `0x89e6ff...60c2ed` | ✅ Audited |
-| EthosVouch | unknown | project_anchor | own_supporting | 1 | base | unit-239553 | `0xd89e6b...9a6fdd` | ✅ Audited |
+| EthosAttestation | unknown | project_anchor | own_supporting | 1 | base | unit-239548 | 2 deployments: base `0x27499d...9d3c14`; base `0xaf35ee...8e1386` | ✅ Audited |
+| EthosDiscussion | unknown | project_anchor | own_supporting | 1 | base | unit-239547 | 2 deployments: base `0x2820b3...04e801`; base `0x89fb1c...e2e2f0` | ✅ Audited |
+| EthosProfile | unknown | project_anchor | own_supporting | 1 | base | unit-239542 | 2 deployments: base `0x209820...252a36`; base `0x266171...369e3a` | ✅ Audited |
+| EthosReview | unknown | project_anchor | own_supporting | 1 | base | unit-239555 | 2 deployments: base `0x6d3a8f...aff325`; base `0xf64108...4a83dc` | ✅ Audited |
+| EthosVote | unknown | project_anchor | own_supporting | 1 | base | unit-239546 | 2 deployments: base `0x744bd5...e4b317`; base `0x89e6ff...60c2ed` | ✅ Audited |
+| EthosVouch | unknown | project_anchor | own_supporting | 1 | base | unit-239553 | 2 deployments: base `0xd89e6b...9a6fdd`; base `0xebe137...892801` | ✅ Audited |
 | InteractionControl | unknown | project_anchor | own_supporting | 0 | base | unit-239530 | `0x0a31c9...db4ce5` | ✅ Audited |
-| ReputationMarket | unknown | project_anchor | own_supporting | 1 | base | unit-239551 | `0xc26f33...e059bf` | ✅ Audited |
+| ReputationMarket | unknown | project_anchor | own_supporting | 1 | base | unit-239551 | 2 deployments: base `0xc26f33...e059bf`; base `0xe0da0e...bc7505` | ✅ Audited |
 | SignatureVerifier | periphery | project_anchor | own_supporting | 0 | base | unit-239536 | `0x78a32a...da7f57` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (8)
+### ⚠️ Verified + Unaudited (24)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| EthosBond | unknown | project_anchor | own_supporting | 1 | base | unit-239550 | `0x21380b...28384a` | ⚠️ Unaudited |
-| EthosBroker | unknown | project_anchor | own_supporting | 1 | base | unit-239545 | `0x5fab43...edc7e7` | ⚠️ Unaudited |
-| EthosListingPass | unknown | project_anchor | own_supporting | 1 | base | unit-239549 | `0xada5a6...923c54` | ⚠️ Unaudited |
-| EthosProject | unknown | project_anchor | own_supporting | 1 | base | unit-239554 | `0x8b92d2...731c35` | ⚠️ Unaudited |
-| EthosSlash | unknown | project_anchor | own_supporting | 1 | base | unit-239552 | `0xb2c41d...634a59` | ⚠️ Unaudited |
-| ReverseAuction | unknown | project_anchor | own_supporting | 1 | base | unit-239544 | `0xd56695...ecd194` | ⚠️ Unaudited |
+| ContractAddressManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe6f811...0b7436` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x78c322...c536a1`; base `0x7c7ad8...cdfbe0` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xbfced9...9e0ec9`; base `0xd8385e...852e3c` | ⚠️ Unaudited |
+| EthosAttestation | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x18e765...73aade`; base `0x493153...2128c6` | ⚠️ Unaudited |
+| EthosBond | unknown | project_anchor | own_supporting | 1 | base | unit-239550 | 2 deployments: base `0x21380b...28384a`; base `0xda592a...6d749a` | ⚠️ Unaudited |
+| EthosBroker | unknown | project_anchor | own_supporting | 1 | base | unit-239545 | 2 deployments: base `0x5fab43...edc7e7`; base `0x6045d0...4aa9bd` | ⚠️ Unaudited |
+| EthosDiscussion | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x249357...662f42`; base `0x7fdac5...7e74c9` | ⚠️ Unaudited |
+| EthosListingPass | unknown | project_anchor | own_supporting | 1 | base | unit-239549 | 2 deployments: base `0xada5a6...923c54`; base `0xd998f8...d94d60` | ⚠️ Unaudited |
+| EthosProfile | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x1d073a...126c6f`; base `0xd31d64...a1e3aa` | ⚠️ Unaudited |
+| EthosProfile | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x311df4...fc255c` | ⚠️ Unaudited |
+| EthosProject | unknown | project_anchor | own_supporting | 1 | base | unit-239554 | 2 deployments: base `0x8b92d2...731c35`; base `0xf00b5c...6aeda4` | ⚠️ Unaudited |
+| EthosReview | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x3dc215...bb31bd`; base `0x6af8b0...e0af03` | ⚠️ Unaudited |
+| EthosSlash | unknown | project_anchor | own_supporting | 1 | base | unit-239552 | 2 deployments: base `0xb2c41d...634a59`; base `0xe4c8fc...28dc73` | ⚠️ Unaudited |
+| EthosSlash | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb51b4a...dc1f1b` | ⚠️ Unaudited |
+| EthosVote | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x405f85...2c8429`; base `0x6f75bf...49d136` | ⚠️ Unaudited |
+| EthosVote | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfe086e...2d1d59` | ⚠️ Unaudited |
+| EthosVouch | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x5a9149...7ae9c3`; base `0x879989...b99d18` | ⚠️ Unaudited |
+| EthosVouch | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0xb7866c...fa53bd`; base `0xbbbdbe...827c47` | ⚠️ Unaudited |
+| InteractionControl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4fa643...c38b61` | ⚠️ Unaudited |
+| ReputationMarket | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xa65e32...32d164`; base `0xbad687...87cd9c` | ⚠️ Unaudited |
+| ReverseAuction | unknown | project_anchor | own_supporting | 1 | base | unit-239544 | 2 deployments: base `0x323a83...43ca2a`; base `0xd56695...ecd194` | ⚠️ Unaudited |
 | SafeL2 | unknown | project_anchor | own_supporting | 2 | base | unit-239543 (2 proxies) | 2 deployments: base `0x7a20d9...31c131`; base `0xb4a9bc...cb4774` | ⚠️ Unaudited |
 | SafeProxy | unknown | project_anchor | own_supporting | 0 | base | unit-239534 | `0x72f04d...81018d` | ⚠️ Unaudited |
+| SignatureVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0992bb...7b5b10` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -149,11 +176,17 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (5)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1a574e...d63b11` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x354fb4...d29186` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3a9271...22f3f9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x789888...f241ce` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xcaa2dc...9860a9` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -232,16 +265,16 @@ Verified + unaudited native implementations ranked by TVL:
 | base | `0xada5a6...923c54` | EthosListingPass | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0x8b92d2...731c35` | EthosProject | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0xb2c41d...634a59` | EthosSlash | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xd56695...ecd194` | ReverseAuction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x323a83...43ca2a` | ReverseAuction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 16 |
+| native | 30 |
 | upstream | 0 |
-| standard_library | 2 |
-| needs_review | 0 |
+| standard_library | 4 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 

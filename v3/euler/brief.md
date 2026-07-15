@@ -9,16 +9,16 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Euler (`euler`)
 - Website: [https://www.euler.finance](https://www.euler.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: bsc, ethereum, plasma, sonic, unichain
+- Chains: arbitrum, avalanche, base, berachain, bsc, ethereum, linea, mantle, plasma, sonic, swellchain, unichain
 - Contract surface: 128 unique implementations (128 raw deployments)
 - Coverage basis: 2/2 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,573,690,679.00
@@ -76,7 +76,7 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum,
 
 ## Contract Surface Quality
 
-- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
+- Logic-topography rows: 2; live-surface rows included: 2 (2 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 21/21 live.
 - Detected codebases: none
@@ -87,11 +87,11 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum,
 - Coverage of address-book-owned deployed-live implementations: 2/2 (100.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 21 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 107 discovered implementations excluded (3 third-party/infra; 1 standard proxy/library)
+- Outside the address book: 107 discovered implementations shown in the inventory but excluded from coverage (3 third-party/infra; 1 standard proxy/library)
 - Proxy deployments represented within implementation groups: 3
-- Deployed-live implementations: 21 of 128 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 2/2
-- Verified + Unaudited implementations: 0
+- Confirmed-live implementations: 21 of 128 unique; 107 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 2/109
+- Verified + Unaudited implementations: 107
 - Verified by bytecode match: 0
 - Unverified implementations: 19
 - Unique implementations: 128
@@ -108,10 +108,10 @@ The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum,
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ChainSecurity | Tier 1 | 1 | 50.0% | 2025-03 |
-| Cyfrin | Tier 1 | 1 | 50.0% | 2025-05 |
-| Spearbit | Tier 1 | 1 | 50.0% | 2025-11 |
-| yAudit | Tier 2 | 1 | 50.0% | 2026-02 |
+| ChainSecurity | Tier 1 | 1 | 0.9% | 2025-03 |
+| Cyfrin | Tier 1 | 1 | 0.9% | 2025-05 |
+| Spearbit | Tier 1 | 1 | 0.9% | 2025-11 |
+| yAudit | Tier 2 | 1 | 0.9% | 2026-02 |
 
 ## Contract Surface
 

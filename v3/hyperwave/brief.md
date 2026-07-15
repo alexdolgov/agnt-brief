@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: HyperWave (`hyperwave`)
 - Website: [https://app.hyperwavefi.xyz](https://app.hyperwavefi.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: hyperliquid
-- Contract surface: 21 unique implementations (21 raw deployments)
+- Chains: arbitrum, base, ethereum, hyperliquid
+- Contract surface: 27 unique implementations (38 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $3,360,966.76
 - On-chain TVL (included contracts): n/a
@@ -36,7 +36,7 @@ This brief describes the observed EVM deployment and audit surface for HyperWave
 
 ### Architecture
 
-The pinned logic-topography run contains 17 contract row(s) across hyperliquid. Structural roles: 11 supporting, 6 core. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 17 contract row(s) across base, ethereum, hyperliquid. Structural roles: 11 supporting, 6 core. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -50,7 +50,7 @@ The pinned logic-topography run contains 17 contract row(s) across hyperliquid. 
 ## Contract Surface Quality
 
 - Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
-- Indexed contracts: 17; live/inactive and live-deployment-unit totals are withheld until liveness completes.
+- Logic-topography rows: 17; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -59,15 +59,15 @@ The pinned logic-topography run contains 17 contract row(s) across hyperliquid. 
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 21 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
+- Outside the address book: 6 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 4
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- All block-explorer-verified implementations audited (incl. non-live): 0/23
+- Verified + Unaudited implementations: 23
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 21
-- Raw deployments: 21
+- Unverified implementations: 4
+- Unique implementations: 27
+- Raw deployments: 38
 - Audits discovered: 9 (9 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -86,7 +86,7 @@ The pinned logic-topography run contains 17 contract row(s) across hyperliquid. 
 
 - None
 
-### ⚠️ Verified + Unaudited (17)
+### ⚠️ Verified + Unaudited (23)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
@@ -94,13 +94,19 @@ The pinned logic-topography run contains 17 contract row(s) across hyperliquid. 
 | AccountantWithRateProviders | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-242292 | `0x78e3ac...d0b03e` | ⚠️ Unaudited |
 | AccountantWithRateProviders | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-242296 | `0xa77f32...46055d` | ⚠️ Unaudited |
 | AccountantWithRateProviders | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-242298 | `0xcf9be8...ee2a32` | ⚠️ Unaudited |
+| ATokenInstance | token | non_address_book | non_address_book_inventory (excluded) | 3 | ethereum | n/a | 3 deployments: ethereum `0x238789...d4086a`; ethereum `0x4f5923...12decf`; ethereum `0x98c23e...e16f5c` | ⚠️ Unaudited |
+| ATokenInstance | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x4e65fe...f5c0ab` | ⚠️ Unaudited |
+| BoringVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x9ba2ed...1bb160`; ethereum `0x9fd746...8d72d1` | ⚠️ Unaudited |
 | BoringVault | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-242288 | `0x4de03c...2f5858` | ⚠️ Unaudited |
 | BoringVault | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-242293 | `0x855ced...f55c4f` | ⚠️ Unaudited |
 | BoringVault | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-242294 | `0x9fd746...8d72d1` | ⚠️ Unaudited |
 | BoringVault | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-242295 | `0xa2f8da...a4ff77` | ⚠️ Unaudited |
+| ManagerWithMerkleVerification | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x519a4e...ae5618` | ⚠️ Unaudited |
 | ManagerWithMerkleVerification | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-242299 | `0xd0f20e...df11d2` | ⚠️ Unaudited |
 | ManagerWithMerkleVerification | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-242300 | `0xe3d3b6...0d1cc1` | ⚠️ Unaudited |
 | ManagerWithMerkleVerification | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-242302 | `0xf0cd28...1f1929` | ⚠️ Unaudited |
+| MetaMorpho | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0xbeef01...2a64cb`; ethereum `0xbeef04...0fcfba`; ethereum `0xbeefff...86f5bc`; ethereum `0xd63070...d33a3d` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 6 deployments: hyperliquid `0x2900ab...c06a76`; hyperliquid `0x835feb...6938ab`; hyperliquid `0x8a862f...8cea27`; hyperliquid `0xfc5126...7d151e`; base `0x616a4e...273738`; base `0x7bfa7c...cbf34a` | ⚠️ Unaudited |
 | RolesAuthority | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-242287 | `0x4d1cf3...9da917` | ⚠️ Unaudited |
 | RolesAuthority | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-242289 | `0x5ed141...6ff4cc` | ⚠️ Unaudited |
 | RolesAuthority | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | hyperliquid | unit-242297 | `0xce9dff...1e3b8f` | ⚠️ Unaudited |
@@ -284,8 +290,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 17 |
-| upstream | 0 |
+| native | 21 |
+| upstream | 2 |
 | standard_library | 0 |
 | needs_review | 4 |
 

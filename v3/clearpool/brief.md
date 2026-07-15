@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Clearpool (`clearpool`)
 - Website: [https://clearpool.finance](https://clearpool.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: ethereum, mantle, optimism, polygon, polygon-zkevm
-- Contract surface: 14 unique implementations (14 raw deployments)
+- Chains: arbitrum, avalanche, base, ethereum, mantle, optimism, polygon, polygon-zkevm
+- Contract surface: 73 unique implementations (118 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $44,431,289.00
 - On-chain TVL (included contracts): n/a
@@ -36,7 +36,7 @@ This brief describes the observed EVM deployment and audit surface for Clearpool
 
 ### Architecture
 
-The pinned logic-topography run contains 4 contract row(s) across ethereum, mantle, optimism, polygon, polygon-zkevm. Structural roles: 3 core, 1 unclassified. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 4 contract row(s) across avalanche, base, ethereum, mantle, optimism, polygon, polygon-zkevm. Structural roles: 3 core, 1 unclassified. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -50,7 +50,7 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum, mant
 ## Contract Surface Quality
 
 - Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
-- Indexed contracts: 4; live/inactive and live-deployment-unit totals are withheld until liveness completes.
+- Logic-topography rows: 4; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -59,15 +59,15 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum, mant
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 14 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (4 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 7
+- Outside the address book: 59 discovered implementations shown in the inventory but excluded from coverage (4 third-party/infra; 5 standard proxy/library)
+- Proxy deployments represented within implementation groups: 31
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- All block-explorer-verified implementations audited (incl. non-live): 0/47
+- Verified + Unaudited implementations: 47
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 14
-- Raw deployments: 14
+- Unverified implementations: 26
+- Unique implementations: 73
+- Raw deployments: 118
 - Audits discovered: 7 (7 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -86,20 +86,57 @@ The pinned logic-topography run contains 4 contract row(s) across ethereum, mant
 
 - None
 
-### ⚠️ Verified + Unaudited (10)
+### ⚠️ Verified + Unaudited (47)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AMPT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3f17cf...6819da` | ⚠️ Unaudited |
 | Auction | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-232006 | `0x5f04bc...a4f91a` | ⚠️ Unaudited |
+| Auction | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x3b194b...798d00`; polygon `0xdad6e9...c66453` | ⚠️ Unaudited |
 | Auction | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | polygon | unit-232019 | `0xf55ec6...96f150` | ⚠️ Unaudited |
+| Auction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 4 deployments: polygon `0x7e5034...d9251c`; mantle `0x661bf0...8519df`; mantle `0xa36937...1786f7`; base `0xb939a6...10d052` | ⚠️ Unaudited |
+| Auction | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | 2 deployments: mantle `0x7554fa...4479ae`; mantle `0xfe0c81...e74103` | ⚠️ Unaudited |
+| Auction | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x0762a9...dd2447` | ⚠️ Unaudited |
+| BondNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x022741...56729d` | ⚠️ Unaudited |
+| ClearpoolLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 2 deployments: polygon `0xe57bb7...d17148`; mantle `0x6278bc...b9e79b` | ⚠️ Unaudited |
+| CosineInterestRateModel | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 6 deployments: optimism `0xb98c68...edb66c`; optimism `0xf041a2...896a9b`; polygon `0x43cb89...e5afe5`; mantle `0x244ef5...33903d`; mantle `0x56713f...1db71b`; mantle `0xd4f764...1c6ef2` | ⚠️ Unaudited |
 | CPOOL | core_logic | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-232007 | `0x66761f...c2fac5` | ⚠️ Unaudited |
+| CPOOLOFT | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: optimism `0x379c8d...faacd9`; base `0x29157e...783a5c` | ⚠️ Unaudited |
 | CPOOLOFT20 | core_logic | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-232017 | `0xb08b36...3a2d91` | ⚠️ Unaudited |
 | CPOOLOFT20 | core_logic | external_dependency_or_infra | third_party_dependency (excluded) | 0 | mantle | unit-232020 | `0x0c8927...5279d8` | ⚠️ Unaudited |
+| MembershipStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x4a7e8e...3b7c2a`; polygon `0x67a24c...ac9b67` | ⚠️ Unaudited |
+| MembershipStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | 2 deployments: mantle `0x1f64d0...433db3`; mantle `0xe5860c...6a798a` | ⚠️ Unaudited |
+| NFTDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x34aeed...08d9de` | ⚠️ Unaudited |
+| Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x281af7...cd4197` | ⚠️ Unaudited |
+| Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 3 deployments: optimism `0xbdf557...b56943`; mantle `0x1de6ba...fc6a4c`; base `0x8e5573...ab2b7a` | ⚠️ Unaudited |
+| Pool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xb98c68...edb66c` | ⚠️ Unaudited |
 | PoolFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-232010 | `0xde204e...4c2d48` | ⚠️ Unaudited |
+| PoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x01af79...31f26d`; optimism `0xe3e26d...9eb755` | ⚠️ Unaudited |
 | PoolFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | optimism | unit-232012 | `0x99c10a...356b80` | ⚠️ Unaudited |
 | PoolFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | polygon | unit-232021 | `0x215cca...da79ba` | ⚠️ Unaudited |
+| PoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | mantle | n/a | 3 deployments: mantle `0xa7209c...42d729`; mantle `0xb217d9...bcde41`; mantle `0xd51f04...61e5ce` | ⚠️ Unaudited |
+| PoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: polygon `0x16497f...0c2508`; polygon `0x7de081...ccee87`; mantle `0x063d68...3850a7`; mantle `0x8e40e7...f25172`; base `0x01af79...31f26d` | ⚠️ Unaudited |
+| PoolFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x199a01...05dfad` | ⚠️ Unaudited |
+| PoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x721dbb...5cc5cd`; base `0xbdf557...b56943` | ⚠️ Unaudited |
+| PoolMaster | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | `0x45e766...dc1fe0` | ⚠️ Unaudited |
+| PoolMaster | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 8 deployments: optimism `0x616b66...9db213`; polygon `0x331781...c850ff`; polygon `0x9827d9...280cfd`; mantle `0xc15871...41fe72`; mantle `0xe16860...f8c7c7`; base `0x0fc1a1...0a2ff3`; base `0x207ac3...575a47`; base `0xca7aaa...738314` | ⚠️ Unaudited |
+| PoolMaster | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xa83b8f...78d27a` | ⚠️ Unaudited |
+| Prime | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0x5a9c1b...1e2be5`; optimism `0xc31761...ec16de` | ⚠️ Unaudited |
+| Prime | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xb8a7e3...b50865`; base `0xf041a2...896a9b` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 7 deployments: optimism `0x785395...cd9552`; polygon `0xee3eac...4aa19e`; mantle `0x8eff31...9bd1cc`; base `0x616b66...9db213`; base `0xe3e26d...9eb755`; avalanche `0x8bc02e...18b2b3`; avalanche `0xb8a7e3...b50865` | ⚠️ Unaudited |
 | TermPoolFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-232009 | `0x91a4a1...a2e60e` | ⚠️ Unaudited |
 | TermPoolFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | polygon | unit-232018 | `0xc3d7f8...4d35a7` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x7593e8...df23ff`; avalanche `0x7a0528...c89067` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x79740b...c58690`; avalanche `0xb4546c...b009df` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x8e5573...ab2b7a` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0xc31761...ec16de` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0xe3e26d...9eb755` | ⚠️ Unaudited |
+| UpgradeableBeacon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 3 deployments: mantle `0x0e07ce...002e7d`; base `0x379c8d...faacd9`; avalanche `0x785395...cd9552` | ⚠️ Unaudited |
+| UpgradeableBeacon | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x428d56...4d4dca` | ⚠️ Unaudited |
+| UpgradeableBeacon | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | avalanche | n/a | `0x721dbb...5cc5cd` | ⚠️ Unaudited |
+| ViaRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x2a4a34...c07322`; polygon `0x47a960...505a3b` | ⚠️ Unaudited |
+| WhitelistControl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: mantle `0xb4f37f...3cdd51`; base `0x72429e...d2fe0f` | ⚠️ Unaudited |
+| WhitelistControl | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x8ef02f...89b280` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -113,16 +150,38 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (4)
+### ❓ Unverified (26)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1c91b3...114aa9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x3786a1...9324e2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x544c91...8885af` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x5c328d...50642f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x612b62...9f3e37` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x703a49...7e1fb0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x7aada5...618af7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xad254c...7f9d41` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc4b4d0...c057fe` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xea2556...dc1ff1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xed7067...d6bcf3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xfa1152...044464` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xfd61cd...173776` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon-zkevm | unit-232013 | `0x04df6f...cd4445` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon-zkevm | unit-232014 | `0x5cda11...255900` | ❓ Unverified |
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon-zkevm | unit-232015 | `0xc3630b...f3d3fe` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon-zkevm | unit-232016 | `0xce3fec...c7ca16` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x8996e0...64200e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x919e83...a262c8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x01af79...31f26d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x246df1...ef50e0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x281af7...cd4197` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x5a9c1b...1e2be5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb98c68...edb66c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xbdf557...b56943` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf041a2...896a9b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -248,10 +307,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 32 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 10 |
+| standard_library | 7 |
+| needs_review | 34 |
 
 ## Scope Matching Notes
 

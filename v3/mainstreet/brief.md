@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Mainstreet (`mainstreet`)
 - Website: [https://mainstreet.finance/](https://mainstreet.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 10 unique implementations (11 raw deployments)
+- Contract surface: 14 unique implementations (18 raw deployments)
 - Coverage basis: 3/6 confirmed own live verified implementations (50.0%); conservative 50.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $74,181,335.26
 - On-chain TVL (included contracts): n/a
@@ -64,7 +64,7 @@ The pinned logic-topography run contains 10 contract row(s) across ethereum. Str
 
 ## Contract Surface Quality
 
-- Indexed contracts: 10; live-surface contracts included: 10 (7 live, 3 unknown).
+- Logic-topography rows: 10; live-surface rows included: 10 (7 live, 3 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 8/17 live.
 - Detected codebases: none
@@ -75,15 +75,15 @@ The pinned logic-topography run contains 10 contract row(s) across ethereum. Str
 - Coverage of address-book-owned deployed-live implementations: 3/6 (50.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 8 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (3 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 4 discovered implementations shown in the inventory but excluded from coverage (3 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 6
-- Deployed-live implementations: 8 of 10 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 3/6
-- Verified + Unaudited implementations: 3
+- Confirmed-live implementations: 8 of 14 unique; 6 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 3/12
+- Verified + Unaudited implementations: 9
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 10
-- Raw deployments: 11
+- Unique implementations: 14
+- Raw deployments: 18
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -96,7 +96,7 @@ The pinned logic-topography run contains 10 contract row(s) across ethereum. Str
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| WatchPug | Tier 2 | 3 | 50.0% | 2025-07 |
+| WatchPug | Tier 2 | 3 | 25.0% | 2025-07 |
 
 ## Contract Surface
 
@@ -108,15 +108,19 @@ The pinned logic-topography run contains 10 contract row(s) across ethereum. Str
 | msUSDSilo | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388743 | `0x6f1888...ea6871` | ✅ Audited |
 | StakedmsUSD | token | project_anchor | own_supporting | 1 | ethereum | unit-388753 | `0x890a51...0bd74a` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| CustodianManager | governance | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-388752 | `0x4cc941...935d0a` | ⚠️ Unaudited |
+| CustodianManager | governance | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-388752 | 2 deployments: ethereum `0x4cc941...935d0a`; ethereum `0x7d4ad0...125eab` | ⚠️ Unaudited |
 | FeeSilo | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388742 | `0x6665ef...b98b81` | ⚠️ Unaudited |
+| MainstreetMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1d08df...044fae` | ⚠️ Unaudited |
 | msYBridger | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-388750 | `0x22eb4e...bc98f2` | ⚠️ Unaudited |
 | Safe | unknown | project_anchor | third_party_dependency | 2 | ethereum | unit-388751 (2 proxies) | 2 deployments: ethereum `0x0eae4a...571858`; ethereum `0x6580ad...8dccc4` | ⚠️ Unaudited |
+| StablePool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x111ce2...998826`; ethereum `0x9054ae...c73a12` | ⚠️ Unaudited |
+| StakedmsUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42ced7...1471a7` | ⚠️ Unaudited |
 | StaticPriceOracle | operational_periphery | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-388738 | `0x098e47...3cd2af` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x42d9ee...37ebb6`; ethereum `0xcf72a8...2822a6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -180,7 +184,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 7 |
+| native | 11 |
 | upstream | 0 |
 | standard_library | 1 |
 | needs_review | 2 |

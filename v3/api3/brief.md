@@ -9,21 +9,21 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Api3 (`api3`)
 - Website: [https://api3.org/](https://api3.org/)
 - Lifecycle: active (Tier 0, 16.4% below peak)
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: apechain, apechain-curtis, arbitrum, arbitrum-sepolia, avalanche, avalanche-fuji, base, base-sepolia, bob, bsc, bsc-testnet, chain-10200, chain-1114, chain-1439, chain-1946, chain-202601, chain-2221, chain-3441006, chain-4, chain-46630, chain-48898, chain-50312, chain-534351, chain-808813, chain-919, chain-998, core, ethereum, fraxtal, gnosis, hoodi, hyperliquid, injective-evm, katana, katana-bokuto, kava, linea, manta-pacific, mantle, mantle-sepolia, mode, moonbase-alpha, moonbeam, optimism, optimism-sepolia, polygon, polygon-amoy, robinhood, ronin, scroll, sei, sei-testnet, sepolia, somnia, soneium, sonic, sonic-testnet, taiko, taiko-hoodi, unichain, unichain-sepolia, world, world-sepolia, zircuit
-- Contract surface: 526 unique implementations (526 raw deployments)
+- Contract surface: 558 unique implementations (560 raw deployments)
 - Coverage basis: 0/6 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $43,286,735.41
-- On-chain TVL (included contracts): $36,878,429.11
-- TVL by chain: Ethereum $36,878,429.11
+- On-chain TVL (included contracts): $50,989,882.02
+- TVL by chain: Ethereum $50,989,882.02
 
 ## Project Description
 
@@ -324,7 +324,7 @@ The pinned logic-topography run contains 6 contract row(s) across apechain, apec
 
 ## Contract Surface Quality
 
-- Indexed contracts: 6; live-surface contracts included: 6 (6 live, 0 unknown).
+- Logic-topography rows: 6; live-surface rows included: 6 (6 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 269/525 live.
 - Detected codebases: none
@@ -335,15 +335,15 @@ The pinned logic-topography run contains 6 contract row(s) across apechain, apec
 - Coverage of address-book-owned deployed-live implementations: 0/6 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 269 own, 257 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 2
-- Deployed-live implementations: 269 of 526 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/6
-- Verified + Unaudited implementations: 6
+- Outside the address book: 32 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 6
+- Confirmed-live implementations: 269 of 558 unique; 289 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/25
+- Verified + Unaudited implementations: 25
 - Verified by bytecode match: 0
-- Unverified implementations: 263
-- Unique implementations: 526
-- Raw deployments: 526
+- Unverified implementations: 533
+- Unique implementations: 558
+- Raw deployments: 560
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $36,878,429.11
@@ -362,16 +362,35 @@ The pinned logic-topography run contains 6 contract row(s) across apechain, apec
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (25)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | Api3Token | token | project_anchor | own_supporting | 0 | ethereum | unit-380818 | `0x0b3821...31b88a` | ⚠️ Unaudited |
+| VaultV2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x36cfe1...da2439`; ethereum `0x54210d...c6e3f4` | ⚠️ Unaudited |
+| VaultV2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xe2221a...a4e53b` | ⚠️ Unaudited |
+| AccessControlRegistry | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x92e512...3b6df1` | ⚠️ Unaudited |
 | ACL | governance | project_anchor | own_supporting | 1 | ethereum | unit-381363 | `0x1e7ecc...f4195a` | ⚠️ Unaudited |
+| AdaptiveCurveIrm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x870ac1...ba00bc` | ⚠️ Unaudited |
+| AirnodeRrpV0DryRun | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2e7682...75193f` | ⚠️ Unaudited |
+| Api3CirculatingSupply | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x5af02b...3a3fa7`; ethereum `0xcd34bc...8bd0a8` | ⚠️ Unaudited |
 | Api3Pool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-380826 | `0x6dd655...c76d76` | ⚠️ Unaudited |
+| Api3ReaderProxyV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x5b0cf2...9cd473` | ⚠️ Unaudited |
+| Api3ReaderProxyV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | `0x776e79...3be125` | ⚠️ Unaudited |
+| Api3Voting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc215c6...b0521a` | ⚠️ Unaudited |
 | Convenience | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380830 | `0x950872...c19636` | ⚠️ Unaudited |
 | Kernel | unknown | project_anchor | own_supporting | 1 | ethereum | unit-381362 | `0x593ea9...d06dba` | ⚠️ Unaudited |
+| LockedApi3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf84b11...87608f` | ⚠️ Unaudited |
+| Morpho | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbbbbbb...eeffcb` | ⚠️ Unaudited |
+| MorphoChainlinkOracleV2Factory | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3a7bb3...3ad766` | ⚠️ Unaudited |
+| MorphoMarketV1AdapterV2Factory | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x32bb1c...61ccc1` | ⚠️ Unaudited |
+| MorphoVaultV1AdapterFactory | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd1b8e2...f63394` | ⚠️ Unaudited |
+| RegistryList | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3696c5...d9364e` | ⚠️ Unaudited |
+| RequesterAuthorizerWithAirnode | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf18c10...9e6178` | ⚠️ Unaudited |
+| Safe | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x5a9aa3...2677c2` | ⚠️ Unaudited |
+| TimelockManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x41ab01...ba1f03` | ⚠️ Unaudited |
 | TimelockManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380836 | `0xfaef86...f02baa` | ⚠️ Unaudited |
+| VaultV2Factory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1d94f...6c0405` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -385,12 +404,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (520)
+### ❓ Unverified (533)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x156671...c9da27` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x18c7ce...de2994` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380819 | `0x1c8058...f26372` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380820 | `0x1fe170...843381` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380821 | `0x2aae69...f2c9e8` | ❓ Unverified |
@@ -398,13 +419,24 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380823 | `0x32d228...c873ae` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380824 | `0x3f5c77...c01811` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380825 | `0x556ecb...723ce0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5c9e3c...05bb15` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380827 | `0x709944...b3920a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7603fa...eb999d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380828 | `0x7b42df...1c8f12` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7bf904...87b416` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380829 | `0x81bc85...21f9a6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x83ae72...464cfb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x944018...4fd6e0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9f0566...31f75c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa20f2a...66dca6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xad738d...3bf5de` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xba26aa...85625a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc1dba9...4cdacd` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380831 | `0xcd7df5...431730` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380832 | `0xd9f80b...6704ae` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380833 | `0xdb6c81...a5170b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380834 | `0xe7af7c...432099` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xef2abc...9a4af9` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380835 | `0xf26304...285611` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4 | n/a | `0x000000...000001` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4 | unit-381093 | `0x269e1b...8c2672` | ❓ Unverified |
@@ -1043,10 +1075,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
-| upstream | 0 |
-| standard_library | 0 |
-| needs_review | 522 |
+| native | 19 |
+| upstream | 4 |
+| standard_library | 2 |
+| needs_review | 533 |
 
 ## Scope Matching Notes
 

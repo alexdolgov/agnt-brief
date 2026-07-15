@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Yearn (`yearn`)
 - Website: [https://yearn.fi/](https://yearn.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, base, ethereum, fantom, optimism, polygon
 - Contract surface: 823 unique implementations (823 raw deployments)
@@ -335,7 +335,7 @@ Removals (removed from original):
 
 ## Contract Surface Quality
 
-- Indexed contracts: 97; live-surface contracts included: 97 (97 live, 0 unknown).
+- Logic-topography rows: 97; live-surface rows included: 97 (97 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 245/257 live.
 - Detected codebases: none
@@ -346,13 +346,13 @@ Removals (removed from original):
 - Coverage of address-book-owned deployed-live implementations: 9/97 (9.3%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 245 own, 8 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 570 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 570 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 11
-- Deployed-live implementations: 245 of 823 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 9/97
-- Verified + Unaudited implementations: 88
+- Confirmed-live implementations: 245 of 823 unique; 578 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 9/666
+- Verified + Unaudited implementations: 657
 - Verified by bytecode match: 0
-- Unverified implementations: 148
+- Unverified implementations: 157
 - Unique implementations: 823
 - Raw deployments: 823
 - Audits discovered: 89 (89 direct, 0 inherited from forked code)
@@ -367,12 +367,12 @@ Removals (removed from original):
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| yAudit | Tier 2 | 4 | 4.1% | 2023-07 |
-| ChainSecurity | Tier 1 | 2 | 2.1% | 2023-11 |
-| MixBytes | Tier 1 | 1 | 1.0% | 2023-10 |
-| Quantstamp | Tier 2 | 1 | 1.0% | 2020-07 |
-| Trail of Bits | Tier 1 | 1 | 1.0% | 2021-04 |
-| yAcademy | Tier 2 | 1 | 1.0% | 2023-07 |
+| yAudit | Tier 2 | 4 | 0.6% | 2023-07 |
+| ChainSecurity | Tier 1 | 2 | 0.3% | 2023-11 |
+| MixBytes | Tier 1 | 1 | 0.2% | 2023-10 |
+| Quantstamp | Tier 2 | 1 | 0.2% | 2020-07 |
+| Trail of Bits | Tier 1 | 1 | 0.2% | 2021-04 |
+| yAcademy | Tier 2 | 1 | 0.2% | 2023-07 |
 
 ## Contract Surface
 

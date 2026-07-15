@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Velo Finance (`velo-finance`)
 - Website: [https://velofinance.io](https://velofinance.io)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: bsc
-- Contract surface: 1 unique implementations (1 raw deployments)
+- Contract surface: 35 unique implementations (42 raw deployments)
 - Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,406,611.82
 - On-chain TVL (included contracts): n/a
@@ -61,7 +61,7 @@ The pinned logic-topography run contains 1 contract row(s) across bsc. Structura
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Logic-topography rows: 1; live-surface rows included: 1 (1 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 1/1 live.
 - Detected codebases: none
@@ -72,15 +72,15 @@ The pinned logic-topography run contains 1 contract row(s) across bsc. Structura
 - Coverage of address-book-owned deployed-live implementations: 0/1 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/1
-- Verified + Unaudited implementations: 1
+- Outside the address book: 34 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 4
+- Confirmed-live implementations: 1 of 35 unique; 34 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/11
+- Verified + Unaudited implementations: 11
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
+- Unverified implementations: 24
+- Unique implementations: 35
+- Raw deployments: 42
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -99,10 +99,20 @@ The pinned logic-topography run contains 1 contract row(s) across bsc. Structura
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| DMMPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x8d5b39...35ceea` | ⚠️ Unaudited |
+| DMMRouter02DelegateCall | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x345617...22fb69` | ⚠️ Unaudited |
+| EarnOtherFixedAPRLockReward | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x2703e5...45caf9`; bsc `0x419175...8bebe8`; bsc `0x7dd617...3796b7`; bsc `0xba5640...788a3c` | ⚠️ Unaudited |
+| EVRY | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc2d4a3...aeabb6` | ⚠️ Unaudited |
+| EvryPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x526357...40b802`; bsc `0xfcd4bb...4226b8` | ⚠️ Unaudited |
+| EvryRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x296b7c...665c46` | ⚠️ Unaudited |
+| Farms | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0x334721...8a9252` | ⚠️ Unaudited |
+| Farms | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0xdd3e2d...a61945` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x6c2242...3bf912` | ⚠️ Unaudited |
+| Token | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x3c8ec1...b4a35f`; bsc `0x3db441...07400e`; bsc `0x584ffc...485b5d`; bsc `0xaf6feb...62a5ab` | ⚠️ Unaudited |
 | Token | token | project_anchor | own_supporting | 0 | bsc | unit-395632 | `0xf486ad...f6fd46` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -117,11 +127,36 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (24)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x00144d...686da4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x119e72...99341d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x36a613...a42506` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x405fb1...b43f7b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4d7c5e...4465e2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5f0625...4ab66e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6080b4...26706e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x61d705...9ac025` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6f001a...b20218` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x853fbd...a6fad5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x883be8...778cfa` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x953f99...8fb949` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa82ee9...0fa81d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb28b07...565add` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb2de66...5e121c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc3f903...99be6f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc5e5ac...101176` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc9cfba...54b83a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcd9357...a94fa5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd67f77...9573aa` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xdba5e5...29483e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xddace5...a908d1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xde79be...d542c7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf39541...bd7b23` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -146,10 +181,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 10 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 0 |
+| standard_library | 1 |
+| needs_review | 24 |
 
 ## Scope Matching Notes
 

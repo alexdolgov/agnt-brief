@@ -9,21 +9,23 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
+
+⚠️ Lifecycle status: DEAD - TVL dropped 18.5% over 90 days
 
 ## Project Overview
 
 - Project: BendDAO (`benddao`)
 - Website: [https://www.benddao.xyz](https://www.benddao.xyz)
-- Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Lifecycle: dead (Tier 1, dead)
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 27 unique implementations (27 raw deployments)
+- Contract surface: 36 unique implementations (42 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $5,763,832.00
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- On-chain TVL (included contracts): $246,324.55
+- TVL by chain: Ethereum $246,324.55
 
 ## Project Description
 
@@ -76,7 +78,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Logic-topography rows: 0; live-surface rows included: 0 (0 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 21/27 live.
 - Detected codebases: none
@@ -87,15 +89,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 21 own, 6 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (6 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 21 of 27 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- Outside the address book: 9 discovered implementations shown in the inventory but excluded from coverage (6 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 3
+- Confirmed-live implementations: 21 of 36 unique; 15 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/8
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
-- Unverified implementations: 21
-- Unique implementations: 27
-- Raw deployments: 27
+- Unverified implementations: 28
+- Unique implementations: 36
+- Raw deployments: 42
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -103,6 +105,7 @@ The activated project remains an explicit cohort member with an empty normalized
 - Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -114,9 +117,18 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (8)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BendToken | token | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x02863c...1e9153`; ethereum `0x0d0275...f56218` | ⚠️ Unaudited |
+| BendUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x607d11...6ca80f`; ethereum `0xf0dfc1...f159a0` | ⚠️ Unaudited |
+| InterestRate | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x710a2b...cbae02` | ⚠️ Unaudited |
+| MerkleDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x1b5d29...a5bc27` | ⚠️ Unaudited |
+| MerkleDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6d8138...efcaa6` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x859f6e...98cf66` | ⚠️ Unaudited |
+| PunkGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x2bbb6f...835ba0`; ethereum `0x791de2...fff6fd`; ethereum `0xa31955...defe39` | ⚠️ Unaudited |
+| WETHGateway | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x1302a7...971527`; ethereum `0x5fa288...7bc98d`; ethereum `0xe2b1fc...9b9868` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -130,7 +142,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (27)
+### ❓ Unverified (28)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -148,6 +160,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380316 | `0x4e208a...5c5773` | ❓ Unverified |
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-380317 | `0x510f81...f777a5` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380318 | `0x529a88...474639` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5e0785...1c0171` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380319 | `0x61ae6d...6efd73` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380320 | `0x63e6be...e40861` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380321 | `0x6fa43c...c530cc` | ❓ Unverified |
@@ -195,10 +208,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 5 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 27 |
+| standard_library | 2 |
+| needs_review | 29 |
 
 ## Scope Matching Notes
 

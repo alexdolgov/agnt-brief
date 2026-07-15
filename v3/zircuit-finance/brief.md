@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Zircuit Finance (`zircuit-finance`)
 - Website: [https://finance.zircuit.com/](https://finance.zircuit.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, arbitrum-sepolia, base, base-sepolia, ethereum, optimism, sepolia
-- Contract surface: 33 unique implementations (33 raw deployments)
+- Contract surface: 43 unique implementations (54 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $1,141,487.76
 - On-chain TVL (included contracts): n/a
@@ -71,7 +71,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Logic-topography rows: 0; live-surface rows included: 0 (0 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 16/33 live.
 - Detected codebases: none
@@ -82,15 +82,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 16 own, 17 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 16 of 33 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- Outside the address book: 10 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 19
+- Confirmed-live implementations: 16 of 43 unique; 27 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/10
+- Verified + Unaudited implementations: 10
 - Verified by bytecode match: 0
-- Unverified implementations: 16
-- Unique implementations: 33
-- Raw deployments: 33
+- Unverified implementations: 33
+- Unique implementations: 43
+- Raw deployments: 54
 - Audits discovered: 13 (13 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -109,9 +109,20 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (10)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AccountingReceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 2 deployments: base `0x43c4a9...e66c9c`; base `0x7fceb5...affd68` | ⚠️ Unaudited |
+| StrategyManager | core_logic | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 2 deployments: ethereum `0x075193...a04d94`; ethereum `0xf7e745...cd3374` | ⚠️ Unaudited |
+| TokenizedStrategy | core_logic | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 2 deployments: ethereum `0x28966c...332c49`; ethereum `0x6424c7...2b6e38` | ⚠️ Unaudited |
+| TokenizedStrategy | core_logic | non_address_book | non_address_book_inventory (excluded) | 3 | base | n/a | 3 deployments: base `0x1a48ce...37e1cc`; base `0xc91e44...e1aca7`; base `0xe83ef4...ab1dc5` | ⚠️ Unaudited |
+| UnderlyingOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 2 deployments: base `0x264d64...3c5330`; base `0xd7abc3...1c1c8b` | ⚠️ Unaudited |
+| UnderlyingOFTAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 2 deployments: ethereum `0x2d342d...835865`; ethereum `0xd58e8c...85d190` | ⚠️ Unaudited |
+| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 2 deployments: base `0x03067b...da4cae`; base `0x25d90a...fc832d` | ⚠️ Unaudited |
+| VaultComposer | core_logic | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 2 deployments: base `0x16ce6d...7ad96b`; base `0xbb801e...030923` | ⚠️ Unaudited |
+| VaultToken | core_logic | non_address_book | non_address_book_inventory (excluded) | 2 | ethereum | n/a | 2 deployments: ethereum `0x07c898...a1c1a9`; ethereum `0x8adbea...cf470a` | ⚠️ Unaudited |
+| ZtakingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x221c2b...d881f0`; ethereum `0xf047ab...aeafa6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -265,7 +276,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 10 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 33 |

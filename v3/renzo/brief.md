@@ -9,16 +9,16 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Renzo (`renzo`)
 - Website: [https://app.renzoprotocol.com/restake](https://app.renzoprotocol.com/restake)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, base, berachain, blast, bsc, ethereum, fraxtal, ink, linea, megaeth, mode, sei
+- Chains: arbitrum, base, berachain, blast, bsc, ethereum, fraxtal, ink, linea, megaeth, mode, optimism, sei
 - Contract surface: 113 unique implementations (113 raw deployments)
 - Coverage basis: 4/8 confirmed own live verified implementations (50.0%); conservative 50.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $88,294,760.28
@@ -88,7 +88,7 @@ The pinned logic-topography run contains 8 contract row(s) across arbitrum, base
 
 ## Contract Surface Quality
 
-- Indexed contracts: 8; live-surface contracts included: 8 (8 live, 0 unknown).
+- Logic-topography rows: 8; live-surface rows included: 8 (8 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 33/34 live.
 - Detected codebases: none
@@ -99,11 +99,11 @@ The pinned logic-topography run contains 8 contract row(s) across arbitrum, base
 - Coverage of address-book-owned deployed-live implementations: 4/8 (50.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 33 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 80 discovered implementations excluded (0 third-party/infra; 11 standard proxy/library)
+- Outside the address book: 80 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 11 standard proxy/library)
 - Proxy deployments represented within implementation groups: 28
-- Deployed-live implementations: 33 of 113 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 4/8
-- Verified + Unaudited implementations: 4
+- Confirmed-live implementations: 33 of 113 unique; 80 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 4/88
+- Verified + Unaudited implementations: 84
 - Verified by bytecode match: 0
 - Unverified implementations: 25
 - Unique implementations: 113
@@ -120,8 +120,8 @@ The pinned logic-topography run contains 8 contract row(s) across arbitrum, base
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Halborn | Tier 2 | 4 | 50.0% | 2024-09 |
-| Sigma Prime | Tier 2 | 3 | 37.5% | 2024-06 |
+| Halborn | Tier 2 | 4 | 4.5% | 2024-09 |
+| Sigma Prime | Tier 2 | 3 | 3.4% | 2024-06 |
 
 ## Contract Surface
 

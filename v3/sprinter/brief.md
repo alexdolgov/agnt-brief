@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Sprinter (`sprinter`)
 - Website: [https://sprinter.tech/](https://sprinter.tech/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: base
-- Contract surface: 4 unique implementations (4 raw deployments)
+- Chains: arbitrum, base, ethereum, optimism
+- Contract surface: 19 unique implementations (25 raw deployments)
 - Coverage basis: 3/3 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $680,662.50
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for Sprinter.
 
 ### Architecture
 
-The pinned logic-topography run contains 3 contract row(s) across base. Structural roles: 3 core. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 3 contract row(s) across arbitrum, base, ethereum, optimism. Structural roles: 3 core. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -59,7 +59,7 @@ The pinned logic-topography run contains 3 contract row(s) across base. Structur
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Logic-topography rows: 3; live-surface rows included: 3 (3 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 4/4 live.
 - Detected codebases: none
@@ -70,15 +70,15 @@ The pinned logic-topography run contains 3 contract row(s) across base. Structur
 - Coverage of address-book-owned deployed-live implementations: 3/3 (100.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 4 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 4 of 4 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 3/3
-- Verified + Unaudited implementations: 0
+- Outside the address book: 15 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 7
+- Confirmed-live implementations: 4 of 19 unique; 15 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 3/18
+- Verified + Unaudited implementations: 15
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 4
-- Raw deployments: 4
+- Unique implementations: 19
+- Raw deployments: 25
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -91,8 +91,8 @@ The pinned logic-topography run contains 3 contract row(s) across base. Structur
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Sygma Labs | Tier 2 | 3 | 100.0% | 2025-03 |
-| Spearbit | Tier 1 | 1 | 33.3% | 2026-03 |
+| Sygma Labs | Tier 2 | 3 | 16.7% | 2025-03 |
+| Spearbit | Tier 1 | 1 | 5.6% | 2026-03 |
 
 ## Contract Surface
 
@@ -104,9 +104,25 @@ The pinned logic-topography run contains 3 contract row(s) across base. Structur
 | LiquidityPoolAave | core_logic | project_anchor | own_supporting | 0 | base | unit-256650 | `0x7c2552...c09f4b` | ✅ Audited |
 | SprinterLiquidityMining | unknown | project_anchor | own_supporting | 0 | base | unit-256648 | `0x479d15...313c21` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (15)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| CensoredTransferFromMulticall | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7c472e...29b6bb` | ⚠️ Unaudited |
+| GnosisSafeProxy | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x83b8d2...71c1d6` | ⚠️ Unaudited |
+| LiquidityPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x0e1632...2810eb`; base `0x0e1632...2810eb`; arbitrum `0x0e1632...2810eb` | ⚠️ Unaudited |
+| LiquidityPoolAave | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x2022a5...5357b5`; base `0x2022a5...5357b5`; arbitrum `0x2022a5...5357b5` | ⚠️ Unaudited |
+| LiquidityPoolAaveLongTerm | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x52d0ee...257788` | ⚠️ Unaudited |
+| LiquidityPoolStablecoin | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa8d2c9...0a3672` | ⚠️ Unaudited |
+| Processor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xffdb38...16286d` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x2b5d04...1664cb`; base `0x818e81...ac5077`; base `0x998c73...91d47b` | ⚠️ Unaudited |
+| Rebalancer | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0xa85cf4...869888` | ⚠️ Unaudited |
+| Rebalancer | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xa85cf4...869888` | ⚠️ Unaudited |
+| Rebalancer | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xa85cf4...869888` | ⚠️ Unaudited |
+| Repayer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x36364a...439511` | ⚠️ Unaudited |
+| Repayer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x36364a...439511` | ⚠️ Unaudited |
+| Repayer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x36364a...439511` | ⚠️ Unaudited |
+| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4ea9e6...810636` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -214,9 +230,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 15 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 3 |
 | needs_review | 1 |
 
 ## Scope Matching Notes

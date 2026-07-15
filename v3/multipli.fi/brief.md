@@ -9,16 +9,16 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Multipli.fi (`multipli.fi`)
 - Website: [https://app.multipli.fi](https://app.multipli.fi)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, ethereum
+- Chains: arbitrum, avalanche, base, bsc, ethereum
 - Contract surface: 25 unique implementations (25 raw deployments)
 - Coverage basis: 0/18 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $55,122,019.27
@@ -91,7 +91,7 @@ Removals (removed from original):
 
 ## Contract Surface Quality
 
-- Indexed contracts: 18; live-surface contracts included: 18 (18 live, 0 unknown).
+- Logic-topography rows: 18; live-surface rows included: 18 (18 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 18/18 live.
 - Detected codebases: none
@@ -102,11 +102,11 @@ Removals (removed from original):
 - Coverage of address-book-owned deployed-live implementations: 0/18 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 18 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 7 discovered implementations excluded (0 third-party/infra; 1 standard proxy/library)
+- Outside the address book: 7 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
 - Proxy deployments represented within implementation groups: 2
-- Deployed-live implementations: 18 of 25 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/18
-- Verified + Unaudited implementations: 18
+- Confirmed-live implementations: 18 of 25 unique; 7 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/25
+- Verified + Unaudited implementations: 25
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 25

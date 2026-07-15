@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Hemi (`hemi`)
 - Website: [https://hemi.xyz/](https://hemi.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: ethereum, optimism
-- Contract surface: 46 unique implementations (46 raw deployments)
+- Chains: bsc, ethereum, optimism
+- Contract surface: 60 unique implementations (106 raw deployments)
 - Coverage basis: 0/11 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $519,962.55
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for Hemi. It 
 
 ### Architecture
 
-The pinned logic-topography run contains 17 contract row(s) across ethereum, optimism. Structural roles: 9 supporting, 8 core. 13 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 17 contract row(s) across bsc, ethereum, optimism. Structural roles: 9 supporting, 8 core. 13 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -70,7 +70,7 @@ The pinned logic-topography run contains 17 contract row(s) across ethereum, opt
 
 ## Contract Surface Quality
 
-- Indexed contracts: 17; live-surface contracts included: 17 (11 live, 6 unknown).
+- Logic-topography rows: 17; live-surface rows included: 17 (11 live, 6 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 15/46 live.
 - Detected codebases: none
@@ -81,15 +81,15 @@ The pinned logic-topography run contains 17 contract row(s) across ethereum, opt
 - Coverage of address-book-owned deployed-live implementations: 0/11 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 15 own, 20 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 11 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 25 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 13
-- Deployed-live implementations: 15 of 46 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/11
-- Verified + Unaudited implementations: 11
+- Confirmed-live implementations: 15 of 60 unique; 45 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/24
+- Verified + Unaudited implementations: 24
 - Verified by bytecode match: 0
-- Unverified implementations: 4
-- Unique implementations: 46
-- Raw deployments: 46
+- Unverified implementations: 36
+- Unique implementations: 60
+- Raw deployments: 106
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -108,14 +108,18 @@ The pinned logic-topography run contains 17 contract row(s) across ethereum, opt
 
 - None
 
-### ⚠️ Verified + Unaudited (17)
+### ⚠️ Verified + Unaudited (24)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| BinanceHemiOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x5ffd0e...5afc5b`; bsc `0xb8dbff...a2c3c3`; bsc `0xd275f9...42506e`; bsc `0xfc5538...e91575` | ⚠️ Unaudited |
 | EAS | unknown | project_anchor | own_supporting | 1 | optimism | unit-241871 | `0x420000...000021` | ⚠️ Unaudited |
 | GasPriceOracle | operational_periphery | project_anchor | own_supporting | 1 | optimism | unit-241864 | `0x420000...00000f` | ⚠️ Unaudited |
 | GnosisSafeProxyFactory | registry | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241842 | `0xa6b71e...896ab2` | ⚠️ Unaudited |
+| GnosisSafeProxyFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa6b71e...896ab2` | ⚠️ Unaudited |
 | GovernanceToken | token | project_anchor | own_supporting | 0 | optimism | unit-241858 | `0x420000...000042` | ⚠️ Unaudited |
+| Hemi | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeb964a...4f484d` | ⚠️ Unaudited |
+| HemiLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x0795a3...ff1026`; bsc `0x7070fa...fb89f9`; bsc `0x86bb2b...94046b`; bsc `0xfbe1ba...6eae8b` | ⚠️ Unaudited |
 | L1Block | unknown | project_anchor | own_supporting | 1 | optimism | unit-241865 | `0x420000...000015` | ⚠️ Unaudited |
 | L1StandardBridge | bridge_template | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241861 | `0x5eaa10...9f191e` | ⚠️ Unaudited |
 | L2CrossDomainMessenger | unknown | project_anchor | own_supporting | 1 | optimism | unit-241862 | `0x420000...000007` | ⚠️ Unaudited |
@@ -123,6 +127,9 @@ The pinned logic-topography run contains 17 contract row(s) across ethereum, opt
 | L2StandardBridge | operational_periphery | project_anchor | own_supporting | 1 | optimism | unit-241868 | `0x420000...000010` | ⚠️ Unaudited |
 | L2ToL1MessagePasser | unknown | project_anchor | own_supporting | 1 | optimism | unit-241863 | `0x420000...000016` | ⚠️ Unaudited |
 | MIPS | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241832 | `0x42ff66...ba9c2a` | ⚠️ Unaudited |
+| MockDstOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 35 deployments: bsc `0x04db2d...cec72c`; bsc `0x14c9bc...298fba`; bsc `0x182c58...8463a1`; bsc `0x25c304...77d608`; bsc `0x2dd586...1142a8`; bsc `0x3a82a4...9cd2f4`; bsc `0x3ea24e...fbbcad`; bsc `0x466140...53a8f3`; bsc `0x4f2acd...1bd83e`; bsc `0x4ff907...c0f538`; bsc `0x51bc60...865761`; bsc `0x656f1f...c9e4d0`; bsc `0x6e3ac5...245365`; bsc `0x760c66...4ba3b7`; bsc `0x790e5f...e36acb`; bsc `0x8e4f0e...6110bf`; bsc `0x8f1561...9c0bb3`; bsc `0x951f5d...7d2c1d`; bsc `0x9bfc21...722406`; bsc `0xa3ceec...ac4da2`; bsc `0xb908ca...0c476e`; bsc `0xbd5caa...128a66`; bsc `0xbf504a...fb3735`; bsc `0xbf7d0f...35b2e2`; bsc `0xc340d0...090657`; bsc `0xc9ffa2...a03b46`; bsc `0xd86a00...df086b`; bsc `0xdb2d0b...2c3766`; bsc `0xdbd9cf...3bd39a`; bsc `0xe002c5...9e0ed9`; bsc `0xe2a466...ba8cc8`; bsc `0xe2adb4...77f938`; bsc `0xf22873...9b7e0f`; bsc `0xf3b36c...5893e0`; bsc `0xffd74e...2dfd09` | ⚠️ Unaudited |
+| MockLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x32a21e...169a23`; bsc `0xded54c...aad82e` | ⚠️ Unaudited |
+| OFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 6 deployments: bsc `0x10061d...7b180c`; bsc `0x37d8c0...74d931`; bsc `0x64b5bb...609373`; bsc `0x707c24...412075`; bsc `0xa30e1a...076f30`; bsc `0xc141b6...a96515` | ⚠️ Unaudited |
 | OptimismMintableERC20Factory | registry | project_anchor | own_supporting | 1 | optimism | unit-241869 | `0x420000...000012` | ⚠️ Unaudited |
 | OptimismPortal | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241860 | `0x39a000...3a4d7e` | ⚠️ Unaudited |
 | PreimageOracle | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241836 | `0x613f36...24ed20` | ⚠️ Unaudited |
@@ -142,7 +149,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (29)
+### ❓ Unverified (36)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -165,6 +172,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241835 | `0x5ae686...5303c3` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7007dd...0b8f12` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241837 | `0x8434dc...25ea69` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9865bb...493754` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241839 | `0xa44633...6bede0` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241841 | `0xa5f377...9f5e43` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241846 | `0xbe81a9...fefb30` | ❓ Unverified |
@@ -177,6 +185,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241855 | `0x420000...000017` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241856 | `0x420000...000019` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241857 | `0x420000...00001a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0c3497...cb67d6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5687ba...d1ee0b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x963b5b...bd0a34` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd74432...4d5b30` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe38d19...b3ca10` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe55744...ef005a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -252,10 +266,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 16 |
+| native | 23 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 29 |
+| needs_review | 36 |
 
 ## Scope Matching Notes
 

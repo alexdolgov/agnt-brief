@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Polygon zkEVM Bridge (`polygon-zkevm-bridge`)
 - Website: [https://portal.polygon.technology/bridge](https://portal.polygon.technology/bridge)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: polygon
-- Contract surface: 1 unique implementations (1 raw deployments)
+- Chains: ethereum, polygon
+- Contract surface: 25 unique implementations (35 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $74,877,494.78
 - On-chain TVL (included contracts): n/a
@@ -50,7 +50,7 @@ The activated project remains an explicit cohort member with an empty normalized
 ## Contract Surface Quality
 
 - Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
-- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
+- Logic-topography rows: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -59,15 +59,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
+- Outside the address book: 24 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 9
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- All block-explorer-verified implementations audited (incl. non-live): 0/24
+- Verified + Unaudited implementations: 24
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
+- Unverified implementations: 1
+- Unique implementations: 25
+- Raw deployments: 35
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -86,9 +86,34 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (24)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AggchainECDSAMultisig | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x519e42...130987` | ⚠️ Unaudited |
+| AgglayerGER | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x580bda...ce3cfb` | ⚠️ Unaudited |
+| AgglayerManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x5132a1...1b7ab2` | ⚠️ Unaudited |
+| BridgeLib | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3622fc...a68ab3` | ⚠️ Unaudited |
+| DappnodeSmoothingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5cc9f1...e9a584` | ⚠️ Unaudited |
+| FflonkVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x0775e1...3edf81`; ethereum `0x1c3a3d...c1ebd8`; ethereum `0x21f65d...b5a3d6`; ethereum `0x4aabba...8ec7be`; ethereum `0x4f9a0e...38e6e9`; ethereum `0x5f4115...f5cbd5` | ⚠️ Unaudited |
+| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 2 | ethereum | n/a | 2 deployments: ethereum `0x242dae...413e21`; ethereum `0xf694c9...fce904` | ⚠️ Unaudited |
+| L1Escrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x4a27ac...2edb98` | ⚠️ Unaudited |
+| L1Escrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x70e70e...d755eb`; ethereum `0xa4e676...de14e6` | ⚠️ Unaudited |
+| PolygonDataCommittee | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x9ccd20...1ee0b0`; ethereum `0xf4e876...02e456` | ⚠️ Unaudited |
+| PolygonRollupManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3b82da...82053b` | ⚠️ Unaudited |
+| PolygonValidiumEtrog | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9cf80f...73ac30` | ⚠️ Unaudited |
+| PolygonValidiumStorageMigration | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x10d296...c6bd4c` | ⚠️ Unaudited |
+| PolygonZkEVM | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe262ea...03efef` | ⚠️ Unaudited |
+| PolygonZkEVMBridgeV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0feb85...9bdb65` | ⚠️ Unaudited |
+| PolygonZkEVMEtrog | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2650a9...c46f71` | ⚠️ Unaudited |
+| PolygonZkEVMExistentEtrog | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x79bcb8...67cde0` | ⚠️ Unaudited |
+| PolygonZkEVMGlobalExitRoot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbc1ea5...9b6bc3` | ⚠️ Unaudited |
+| PolygonZkEVMGlobalExitRootV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2e38cd...d85077` | ⚠️ Unaudited |
+| PolygonZkEVMTimelock | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xef1462...7ca4ef` | ⚠️ Unaudited |
+| PolygonZkEVMUpgraded | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x301442...d9ef7f`; ethereum `0xb15859...53b923` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x0f9973...7bcc4a`; ethereum `0x1963d7...b3d50d` | ⚠️ Unaudited |
+| SP1Verifier | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0459d5...84c459` | ⚠️ Unaudited |
+| WstETHBridgeL1 | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xf0cde1...582c01` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -191,9 +216,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 22 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 2 |
 | needs_review | 1 |
 
 ## Scope Matching Notes

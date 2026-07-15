@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Etherex (`etherex`)
 - Website: [https://etherex.finance/](https://etherex.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: linea
-- Contract surface: 31 unique implementations (31 raw deployments)
+- Contract surface: 85 unique implementations (143 raw deployments)
 - Coverage basis: 13/29 confirmed own live verified implementations (44.8%); conservative 44.8% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,361,034.00
 - On-chain TVL (included contracts): n/a
@@ -130,7 +130,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 31; live-surface contracts included: 31 (29 live, 2 unknown).
+- Logic-topography rows: 31; live-surface rows included: 31 (29 live, 2 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 29/32 live.
 - Detected codebases: none
@@ -141,15 +141,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 13/29 (44.8%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 29 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 6
-- Deployed-live implementations: 29 of 31 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 13/29
-- Verified + Unaudited implementations: 16
+- Outside the address book: 54 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 11
+- Confirmed-live implementations: 29 of 85 unique; 56 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 13/68
+- Verified + Unaudited implementations: 55
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 31
-- Raw deployments: 31
+- Unverified implementations: 17
+- Unique implementations: 85
+- Raw deployments: 143
 - Audits discovered: 4 (4 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -162,9 +162,9 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 13 | 44.8% | 2025-10 |
-| Code4rena | Tier 1 | 3 | 10.3% | 2024-10 |
-| Consensys Diligence | Tier 1 | 2 | 6.9% | 2024-08 |
+| Spearbit | Tier 1 | 13 | 19.1% | 2025-10 |
+| Code4rena | Tier 1 | 3 | 4.4% | 2024-10 |
+| Consensys Diligence | Tier 1 | 2 | 2.9% | 2024-08 |
 
 ## Contract Surface
 
@@ -186,28 +186,65 @@ Removals (removed from original): none
 | Voter | unknown | project_anchor | own_supporting | 1 | linea | unit-385025 | `0x942117...f889c1` | ✅ Audited |
 | XRex | unknown | project_anchor | own_supporting | 0 | linea | unit-385011 | `0xc93b31...f366cc` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (18)
+### ⚠️ Verified + Unaudited (55)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AccessHub | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 26 deployments: linea `0x00cc29...423b67`; linea `0x09aaa5...fbea2a`; linea `0x09d128...fc72a3`; linea `0x0cc5a7...2d666c`; linea `0x0d8ff3...e66422`; linea `0x3fd55d...d6d071`; linea `0x44f551...22f508`; linea `0x51a269...e80006`; linea `0x55cab4...4b40b1`; linea `0x582f3f...031c7a`; linea `0x5aae85...da036b`; linea `0x5e2f4d...e4b4e7`; linea `0x6a0673...1c99c1`; linea `0x7026f9...8dd004`; linea `0x7ac793...8c9026`; linea `0x8af8a0...71b734`; linea `0x8e394f...5b49e1`; linea `0x93948c...4351ed`; linea `0x967a7a...37854c`; linea `0x9ce2fb...709346`; linea `0xb61396...31a7b6`; linea `0xb66d0c...9fd40b`; linea `0xbb100b...008e31`; linea `0xd434fe...06805e`; linea `0xe345ad...ddc6bc`; linea `0xe6d0d3...cb5298` | ⚠️ Unaudited |
+| AutomatedFeeNotifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 8 deployments: linea `0x2e5c9e...7c10df`; linea `0x4bc655...6cb1f3`; linea `0x4dd0c2...ea2a4c`; linea `0x5ad9ec...b0e48c`; linea `0xb0b55d...af5939`; linea `0xbf0743...780d36`; linea `0xd7cb73...81ac2c`; linea `0xfd29fa...cf80e7` | ⚠️ Unaudited |
+| BribeHolder | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xf7a8b3...f9ea9b` | ⚠️ Unaudited |
+| Etherex | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0xbe8b8d...69f11d`; linea `0xf0c89c...0bd9eb` | ⚠️ Unaudited |
+| FeeCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x51a2a0...7f21a1` | ⚠️ Unaudited |
+| FeeDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xc2b256...767b7c` | ⚠️ Unaudited |
+| FeeDistributorFactory | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x61c56a...6f3f6f` | ⚠️ Unaudited |
+| FeeLiquidator | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x3add83...ba039b`; linea `0xe78966...98e856` | ⚠️ Unaudited |
 | FeeRecipientFactory | operational_periphery | project_anchor | own_supporting | 0 | linea | unit-385004 | `0x75430c...02d6a7` | ⚠️ Unaudited |
+| FrogAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x97b1b7...e38912`; linea `0xbe9d87...3a78c3` | ⚠️ Unaudited |
 | GaugeFactory | operational_periphery | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | linea | unit-385012 | `0xd766d9...c4a200` | ⚠️ Unaudited |
+| GaugeV3 | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 5 deployments: linea `0x18068c...3b0b25`; linea `0x84b465...04201b`; linea `0x9270d3...f81a74`; linea `0x9d5c0e...dc9cb4`; linea `0xeba9eb...eacb40` | ⚠️ Unaudited |
+| KingdomLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xf9edb3...63fd87` | ⚠️ Unaudited |
+| LGEHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x4c4190...b224ce`; linea `0x6b43ac...7c8812` | ⚠️ Unaudited |
+| MevModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x614f11...703abd`; linea `0xdf2787...088d5b` | ⚠️ Unaudited |
+| MevModule | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | `0x90fc1f...b4940d` | ⚠️ Unaudited |
+| MinimalizedFeePusher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x1b4e17...1c4efb`; linea `0x98af61...eb4a8c` | ⚠️ Unaudited |
+| Minter | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 3 deployments: linea `0x462e26...d2a966`; linea `0x76da79...da9f8f`; linea `0xf83962...0b6255` | ⚠️ Unaudited |
 | MixedRouteQuoterV1 | periphery | project_anchor | own_supporting | 0 | linea | unit-385002 | `0x59037f...3712a6` | ⚠️ Unaudited |
+| NileLGE | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x5b93eb...d5a605` | ⚠️ Unaudited |
 | NonfungiblePositionManager | governance | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 1 | linea | unit-385024 | `0xa04a9f...bb2f58` | ⚠️ Unaudited |
 | NonfungibleTokenPositionDescriptor | token | project_anchor | own_supporting | 0 | linea | unit-385019 | `0xfc65c6...8453c4` | ⚠️ Unaudited |
+| Oracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x389df9...7e7d55` | ⚠️ Unaudited |
+| Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x8418e9...4d81d8` | ⚠️ Unaudited |
 | PairFactory | registry | project_anchor | own_supporting | 0 | linea | unit-385010 | `0xc0b920...644592` | ⚠️ Unaudited |
+| Position | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x2832e1...bf9d6f` | ⚠️ Unaudited |
+| ProtocolActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x34413f...3140fd` | ⚠️ Unaudited |
 | ProxyAdmin | governance | project_anchor | own_supporting | 0 | linea | unit-384999 | `0x3950d9...542dc3` | ⚠️ Unaudited |
 | ProxyAdmin | governance | project_anchor | own_supporting | 0 | linea | unit-385013 | `0xdc78e9...3d384e` | ⚠️ Unaudited |
 | Quoter | periphery | project_anchor | own_supporting | 0 | linea | unit-385009 | `0xb593fa...4fe335` | ⚠️ Unaudited |
 | QuoterV2 | periphery | project_anchor | own_supporting | 0 | linea | unit-385015 | `0xe660c9...aba037` | ⚠️ Unaudited |
+| RamsesSwapHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x222da5...1e158e` | ⚠️ Unaudited |
+| RamsesTreasuryHelper | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x020079...d3200e`; linea `0x0efaae...31693b` | ⚠️ Unaudited |
+| RamsesTreasuryHelper | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | `0x15325a...5636a5` | ⚠️ Unaudited |
+| RamsesV3Pool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x90e8a5...44914b` | ⚠️ Unaudited |
+| RamsesV3PositionManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x4e710f...272bfb` | ⚠️ Unaudited |
+| Revivoor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x5da973...c5a3e9` | ⚠️ Unaudited |
+| RewardValidator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x7930ec...b1e0fc`; linea `0xe57600...c0a97c` | ⚠️ Unaudited |
+| REX33 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 4 deployments: linea `0x312b67...433ec0`; linea `0xbf42f6...639dff`; linea `0xc4b578...31509c`; linea `0xccfc11...f15749` | ⚠️ Unaudited |
 | Router | adapter | project_anchor | own_supporting | 0 | linea | unit-384998 | `0x32db39...929c54` | ⚠️ Unaudited |
 | SafeL2 | unknown | project_anchor | own_supporting | 1 | linea | unit-385021 | `0xde4b22...d388f7` | ⚠️ Unaudited |
 | SafeProxy | unknown | project_anchor | own_supporting | 0 | linea | unit-384995 | `0x007e78...539cce` | ⚠️ Unaudited |
 | SwapRouter | adapter | project_anchor | own_supporting | 0 | linea | unit-385007 | `0x8be024...a5052a` | ⚠️ Unaudited |
 | TickLens | periphery | project_anchor | own_supporting | 0 | linea | unit-385000 | `0x432a52...e8e2b8` | ⚠️ Unaudited |
 | TimeLock | governance | project_anchor | own_supporting | 0 | linea | unit-385018 | `0xf9a153...d89944` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | non_address_book | standard_proxy_or_library (excluded) | 1 | linea | n/a | `0xf26431...1bb458` | ⚠️ Unaudited |
 | UniswapInterfaceMulticall | periphery | project_anchor | own_supporting | 0 | linea | unit-384997 | `0x1211fb...ee5b3e` | ⚠️ Unaudited |
+| UniversalAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xae16b9...d13dcf` | ⚠️ Unaudited |
 | UniversalRouter | adapter | project_anchor | own_supporting | 0 | linea | unit-385006 | `0x859744...07826e` | ⚠️ Unaudited |
+| VeClaim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x9dec69...269cad`; linea `0xce65f3...2d4c6d` | ⚠️ Unaudited |
+| VoteModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xf70dc8...631ee4` | ⚠️ Unaudited |
+| Voter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 8 deployments: linea `0x1dac11...a94046`; linea `0x4961f7...fc7679`; linea `0x5f26a6...06fc19`; linea `0x706e4a...f157e1`; linea `0x891d28...45141c`; linea `0xa0b937...d4f116`; linea `0xade917...9d56d1`; linea `0xe8e8e8...2f8468` | ⚠️ Unaudited |
+| Voter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x56ebcf...dd256f`; linea `0x982c01...caa125` | ⚠️ Unaudited |
+| XRex | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x58d034...146997` | ⚠️ Unaudited |
+| YieldFarmingIndex | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x0449ec...b6b631` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -221,11 +258,29 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (17)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x05733c...ec3289` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x09666e...d239c7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x0ed01d...750acc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x1ddf72...7944b3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x35e755...ad5a69` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x3f91dd...3e7ce7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x471750...eb3e34` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x4f919b...af1415` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x7601df...7497b2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x762e61...7ecb16` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x88c987...d56756` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x971634...461ee0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xc0cd56...da1c2a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xcd73c9...635d61` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xd0dad8...1c3f5f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xf458a2...7f3d8e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xfb8561...c4950d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -320,10 +375,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 26 |
+| native | 62 |
 | upstream | 1 |
-| standard_library | 4 |
-| needs_review | 0 |
+| standard_library | 5 |
+| needs_review | 17 |
 
 ## Scope Matching Notes
 

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Aegis (`aegis`)
 - Website: [https://aegis.im/](https://aegis.im/)
 - Lifecycle: active (Tier 0, 19.4% below peak)
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: avalanche-fuji, bsc, bsc-testnet, chain-1337, ethereum, optimism-sepolia, sepolia
-- Contract surface: 63 unique implementations (64 raw deployments)
+- Contract surface: 78 unique implementations (106 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $35,767,707.00
 - On-chain TVL (included contracts): n/a
@@ -50,7 +50,7 @@ The pinned logic-topography run contains 23 contract row(s) across avalanche-fuj
 ## Contract Surface Quality
 
 - Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
-- Indexed contracts: 23; live/inactive and live-deployment-unit totals are withheld until liveness completes.
+- Logic-topography rows: 23; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -59,15 +59,15 @@ The pinned logic-topography run contains 23 contract row(s) across avalanche-fuj
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 63 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 2
+- Outside the address book: 15 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 5
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- All block-explorer-verified implementations audited (incl. non-live): 0/33
+- Verified + Unaudited implementations: 33
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 63
-- Raw deployments: 64
+- Unverified implementations: 45
+- Unique implementations: 78
+- Raw deployments: 106
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -86,28 +86,41 @@ The pinned logic-topography run contains 23 contract row(s) across avalanche-fuj
 
 - None
 
-### ⚠️ Verified + Unaudited (20)
+### ⚠️ Verified + Unaudited (33)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | AegisConfig | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-225682 | 2 deployments: ethereum `0x90ccf2...f1db00`; bsc `0xb9f1e8...4ca9da` | ⚠️ Unaudited |
+| AegisMinting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 9 deployments: ethereum `0x03a346...93dea7`; ethereum `0x90ad8f...0b6f77`; ethereum `0x9e2707...16b87f`; ethereum `0xa30644...bd815b`; ethereum `0xad8fe6...b5cda5`; ethereum `0xb341d7...153c94`; ethereum `0xe91710...f875c2`; bsc `0x39df2d...a2e141`; bsc `0x7c3f89...579134` | ⚠️ Unaudited |
 | AegisMinting | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-225685 | `0xc4df68...820fc2` | ⚠️ Unaudited |
 | AegisMinting | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-225688 | `0x02bf8f...ce65cf` | ⚠️ Unaudited |
+| AegisMintingJUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x7438a6...d7273e`; ethereum `0xf21a16...888a5d` | ⚠️ Unaudited |
 | AegisMintingJUSD | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-225684 | `0xbb0f32...09b520` | ⚠️ Unaudited |
 | AegisOracle | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-225679 | `0x2b4ad1...041aec` | ⚠️ Unaudited |
 | AegisOracle | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-225691 | `0x588fd0...d8cf15` | ⚠️ Unaudited |
 | AegisOracleJUSD | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-225687 | `0xfa449d...17e0e7` | ⚠️ Unaudited |
 | AegisRewards | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-225681 | `0x8adcfa...ddeafd` | ⚠️ Unaudited |
 | AegisRewards | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-225693 | `0x93efaa...e5b75e` | ⚠️ Unaudited |
+| AegisRewardsV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x8340f5...12eebd`; bsc `0xd859e9...21debd` | ⚠️ Unaudited |
+| AegisRewardsV2JUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6647c5...6758b7` | ⚠️ Unaudited |
 | FeedRegistry | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-225689 | `0x4274cd...a8da0a` | ⚠️ Unaudited |
 | JUSD | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-225686 | `0xc86168...9e4900` | ⚠️ Unaudited |
-| sJUSD | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-225696 | `0x4aa894...90bdb3` | ⚠️ Unaudited |
+| JUSDMintBurnOFTAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x70d4c4...a11f52` | ⚠️ Unaudited |
+| sJUSD | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-225696 | 2 deployments: ethereum `0x4aa894...90bdb3`; ethereum `0x4ccd1a...947e81` | ⚠️ Unaudited |
+| sJUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x616e4d...2ab792`; ethereum `0xa7f1de...152474` | ⚠️ Unaudited |
+| sJUSDOFTAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8edd6a...84ce0f` | ⚠️ Unaudited |
 | sJUSDSilo | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-225678 | `0x22dace...688d9a` | ⚠️ Unaudited |
-| sYUSD | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-225697 | `0xfe0ccc...a4cb64` | ⚠️ Unaudited |
+| sYUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 12 deployments: ethereum `0x180da2...4e1997`; ethereum `0x29dd50...1a9b63`; ethereum `0x4aa42b...ed735e`; ethereum `0x7c9428...32fd69`; ethereum `0xd2188c...27d08e`; ethereum `0xf07781...9ff9f7`; bsc `0x29dd50...1a9b63`; bsc `0x738338...976bb7`; bsc `0x7de450...89bbb5`; bsc `0xc48ea8...9382ec`; bsc `0xe13d56...faa55d`; bsc `0xf07781...9ff9f7` | ⚠️ Unaudited |
+| sYUSD | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-225697 | 2 deployments: ethereum `0xb0c63b...2676fe`; ethereum `0xfe0ccc...a4cb64` | ⚠️ Unaudited |
+| sYUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | 2 deployments: bsc `0x24db05...f93af2`; bsc `0x42940c...65415e` | ⚠️ Unaudited |
 | sYUSDOFT | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-225692 | `0x85636b...f2691e` | ⚠️ Unaudited |
 | sYUSDOFTAdapter | adapter | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-225677 | `0x1a7cde...0b41fc` | ⚠️ Unaudited |
+| sYUSDV1OptOut | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x2d701a...5ea7f6`; ethereum `0xec8430...32408a` | ⚠️ Unaudited |
+| sYUSDV1OptOut | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x91de89...b23a4c` | ⚠️ Unaudited |
+| YUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2332e3...646cf9` | ⚠️ Unaudited |
 | YUSD | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-225680 | `0x4274cd...a8da0a` | ⚠️ Unaudited |
 | YUSD | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-225694 | `0xab3dbc...22c61f` | ⚠️ Unaudited |
+| YUSDMintBurnOFTAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x7552d1...9b82a4`; bsc `0xd2188c...27d08e` | ⚠️ Unaudited |
 | YUSDMintBurnOFTAdapter | adapter | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-225683 | `0xaf12b0...143565` | ⚠️ Unaudited |
 | YUSDMintBurnOFTAdapter | adapter | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-225690 | `0x539e46...e602e3` | ⚠️ Unaudited |
 
@@ -123,12 +136,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (43)
+### ❓ Unverified (45)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x399b1c...45cd4a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xab3dbc...22c61f` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | bsc-testnet | n/a | `0x061dd9...13e81d` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | bsc-testnet | n/a | `0x094d11...418871` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | bsc-testnet | n/a | `0x2c87c9...c71d38` | ❓ Unverified |
@@ -233,10 +248,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 18 |
+| native | 32 |
 | upstream | 0 |
-| standard_library | 2 |
-| needs_review | 43 |
+| standard_library | 1 |
+| needs_review | 45 |
 
 ## Scope Matching Notes
 

@@ -9,18 +9,18 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Hypha (`hypha`)
 - Website: [https://www.hypha.sh/](https://www.hypha.sh/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: avalanche
-- Contract surface: 39 unique implementations (44 raw deployments)
-- Coverage basis: 12/34 confirmed own live verified implementations (35.3%); conservative 35.3% with 0 needs-review implementation(s)
+- Contract surface: 65 unique implementations (92 raw deployments)
+- Coverage basis: 12/35 confirmed own live verified implementations (34.3%); conservative 34.3% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $4,763,040.88
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 32 contract row(s) across avalanche. St
 
 ## Fork Analysis
 
-4 of 23 contracts are derived from known codebases. 19 contracts have no detected origin.
+5 of 24 contracts are derived from known codebases. 19 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -76,6 +76,15 @@ Additions (unaudited): none
 Removals (removed from original):
 - guardianWithdrawWAVAX(uint256,address)
 - setLastReward(uint192)
+
+**TokenggAVAX** (`0xfad33e...163752`, chain 43114)
+Origin: hypha (`0x84e71c...ceb922`)
+Containment: 100.0% - 16 functions inherited
+Centroid audit status: pending_validation
+
+Additions (unaudited): none
+
+Removals (removed from original): none
 
 **WithdrawQueue** (`0x4043da...b45e6e`, chain 43114)
 Origin: hypha (`0x472e82...f56238`)
@@ -111,7 +120,7 @@ Removals (removed from original):
 
 ## Contract Surface Quality
 
-- Indexed contracts: 32; live-surface contracts included: 32 (30 live, 2 unknown).
+- Logic-topography rows: 32; live-surface rows included: 32 (32 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 39/42 live.
 - Detected codebases: none
@@ -119,18 +128,18 @@ Removals (removed from original):
 
 ## Audit Coverage Summary
 
-- Coverage of address-book-owned deployed-live implementations: 12/34 (35.3%)
+- Coverage of address-book-owned deployed-live implementations: 12/35 (34.3%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 39 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 9
-- Deployed-live implementations: 39 of 39 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 12/34
-- Verified + Unaudited implementations: 22
+- Outside the address book: 26 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 13
+- Confirmed-live implementations: 39 of 65 unique; 26 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 12/56
+- Verified + Unaudited implementations: 44
 - Verified by bytecode match: 0
-- Unverified implementations: 5
-- Unique implementations: 39
-- Raw deployments: 44
+- Unverified implementations: 9
+- Unique implementations: 65
+- Raw deployments: 92
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -143,7 +152,7 @@ Removals (removed from original):
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Zellic | Tier 2 | 12 | 35.3% | 2023-02 |
+| Zellic | Tier 2 | 12 | 21.4% | 2023-02 |
 
 ## Contract Surface
 
@@ -160,36 +169,58 @@ Removals (removed from original):
 | ProtocolDAO | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242371 | `0xfc3ea3...d8051a` | ✅ Audited |
 | RewardsPool | operational_periphery | project_anchor | own_supporting | 0 | avalanche | unit-242358 | `0xaa8fd0...7c1b1d` | ✅ Audited |
 | Staking | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242362 | `0xb6ddbf...26aecb` | ✅ Audited |
-| TokenggAVAX | unknown | project_anchor | own_supporting | 1 | avalanche | unit-242381 | `0xa25eaf...b703e3` | ✅ Audited |
+| TokenggAVAX | unknown | project_anchor | own_supporting | 1 | avalanche | unit-242381 | 2 deployments: avalanche `0xa25eaf...b703e3`; avalanche `0xfad33e...163752` | ✅ Audited |
 | TokenGGP | token | project_anchor | own_supporting | 0 | avalanche | unit-242350 | `0x69260b...2cd11d` | ✅ Audited |
 | Vault | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242370 | `0xd45cb6...41e6ba` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (22)
+### ⚠️ Verified + Unaudited (44)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | ArtifactHardwareProvider | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242364 | `0xc095ec...24194c` | ⚠️ Unaudited |
+| AssetLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x376862...6b8853`; avalanche `0xd7c8f6...cbd07b` | ⚠️ Unaudited |
 | AvalancheHardwareRental | unknown | project_anchor | own_supporting | 1 | avalanche | unit-242375 | 2 deployments: avalanche `0x456a6e...76e87b`; avalanche `0xf45117...e27848` | ⚠️ Unaudited |
+| ClaimProtocolDAO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x6476a7...bb286c` | ⚠️ Unaudited |
 | CoqnetHardwareRental | unknown | project_anchor | own_supporting | 1 | avalanche | unit-242378 | 2 deployments: avalanche `0x7a212f...b9a6dc`; avalanche `0x8a2de3...9ac366` | ⚠️ Unaudited |
 | CREATE3Factory | registry | project_anchor | own_supporting | 0 | avalanche | unit-242356 | `0x9fbb3d...cd0abf` | ⚠️ Unaudited |
+| GGAVAXPriceFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x358283...af8020` | ⚠️ Unaudited |
+| GGAVAXRateProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x1bb74e...9a0a7f` | ⚠️ Unaudited |
 | GnosisSafeL2 | governance | project_anchor | own_supporting | 1 | avalanche | unit-242382 | `0x6c104d...29bcf3` | ⚠️ Unaudited |
+| GoGoGasStation | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x27ce13...f62b7e`; avalanche `0x52950f...8f7bd2` | ⚠️ Unaudited |
+| MinipoolManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 4 deployments: avalanche `0x9e6579...b280e9`; avalanche `0xb84fa0...d1ed08`; avalanche `0xc8de41...da7037`; avalanche `0xe51262...208dea` | ⚠️ Unaudited |
+| MinipoolStreamliner | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 3 deployments: avalanche `0x0a75a4...efa430`; avalanche `0x8c05d7...96115c`; avalanche `0xb5f2ed...90e560` | ⚠️ Unaudited |
 | MinipoolStreamliner | unknown | project_anchor | own_supporting | 1 | avalanche | unit-242376 | 2 deployments: avalanche `0x746f2c...c1ecd8`; avalanche `0x752ab1...163ae1` | ⚠️ Unaudited |
+| MinipoolStreamlinerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xae1e7b...3ce4b1` | ⚠️ Unaudited |
+| MOANI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x42edf5...948215` | ⚠️ Unaudited |
 | Multicall3 | periphery | project_anchor | own_supporting | 0 | avalanche | unit-242368 | `0xca11bd...76ca11` | ⚠️ Unaudited |
+| NodeAsAService | unknown | project_anchor | own_supporting | 1 | avalanche | unit-242374 | 2 deployments: avalanche `0x3ccef5...7e805a`; avalanche `0xb306c9...b20b04` | ⚠️ Unaudited |
+| NodeSale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x50db30...b77102` | ⚠️ Unaudited |
 | NodeSale | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242357 | `0xa60a66...83cfaa` | ⚠️ Unaudited |
+| Ocyticus | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x9189d1...ea210b` | ⚠️ Unaudited |
 | OonodzHardwareProvider | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242372 | `0xfe6ca6...e8fe3e` | ⚠️ Unaudited |
+| ParadiseTycoonPowerups | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: avalanche `0x9fa82e...966cd9`; avalanche `0xd0764d...c1823d` | ⚠️ Unaudited |
+| ProtocolDAO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 3 deployments: avalanche `0x41a763...195d0b`; avalanche `0x70fd1a...fd1b65`; avalanche `0xa008cc...8ef546` | ⚠️ Unaudited |
 | ProxyAdmin | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242349 | `0x5313c3...b247cf` | ⚠️ Unaudited |
 | ProxyAdmin | governance | project_anchor | own_supporting | 0 | avalanche | unit-242351 | `0x6e8fd3...aed940` | ⚠️ Unaudited |
 | ProxyAdmin | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242354 | `0x89cf78...b9b64d` | ⚠️ Unaudited |
 | ProxyAdmin | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242355 | `0x9484d5...416c71` | ⚠️ Unaudited |
 | ProxyAdmin | governance | project_anchor | own_supporting | 0 | avalanche | unit-242363 | `0xbc5627...e9e190` | ⚠️ Unaudited |
 | ProxyAdmin | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242367 | `0xc7fef2...d7a6c6` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf4c562...1620a9` | ⚠️ Unaudited |
+| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: avalanche `0x439776...374a5f`; avalanche `0x9946e6...531d00` | ⚠️ Unaudited |
+| StAvaxWavaxOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: avalanche `0x7759c6...cb618d`; avalanche `0xa582a3...bc3a4b` | ⚠️ Unaudited |
 | SubnetHardwareRentalMapping | unknown | project_anchor | own_supporting | 1 | avalanche | unit-242379 | 2 deployments: avalanche `0x8b85ca...f33d0b`; avalanche `0xf04aa1...f8a9ed` | ⚠️ Unaudited |
+| SubnetStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x697d7c...ba2c68`; avalanche `0x9bfade...590819` | ⚠️ Unaudited |
 | Timelock | governance | project_anchor | own_supporting | 0 | avalanche | unit-242369 | `0xcd385f...14af41` | ⚠️ Unaudited |
+| TokenggAVAX | token | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 3 deployments: avalanche `0x576d98...ca7323`; avalanche `0xd960ce...16e584`; avalanche `0xf80eb4...57843e` | ⚠️ Unaudited |
 | TokenggAVAX | token | project_anchor | own_supporting | 0 | avalanche | unit-242353 | `0x84e71c...ceb922` | ⚠️ Unaudited |
 | TokenpstAVAX | unknown | project_anchor | own_supporting | 1 | avalanche | unit-242377 | 2 deployments: avalanche `0x6b3775...e5aaf8`; avalanche `0x82e153...79b241` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x0146b8...9937af`; avalanche `0x22bafb...a1d073` | ⚠️ Unaudited |
+| TwapGGP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x3155a8...d56cfe` | ⚠️ Unaudited |
 | WAVAX | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242360 | `0xb31f66...fd66c7` | ⚠️ Unaudited |
+| WithdrawQueue | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 4 deployments: avalanche `0x3dc349...5d08e2`; avalanche `0x472e82...f56238`; avalanche `0x55eadf...bd8a16`; avalanche `0x87c1b4...b48a64` | ⚠️ Unaudited |
 | WithdrawQueue | operational_periphery | project_anchor | own_supporting | 0 | avalanche | unit-242346 | `0x4043da...b45e6e` | ⚠️ Unaudited |
-| WithdrawQueue | unknown | project_anchor | own_supporting | 1 | avalanche | unit-242380 | `0x61f908...5849a3` | ⚠️ Unaudited |
+| WithdrawQueue | unknown | project_anchor | own_supporting | 1 | avalanche | unit-242380 | 2 deployments: avalanche `0x61f908...5849a3`; avalanche `0xf25dc8...c10afd` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -203,16 +234,20 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (5)
+### ❓ Unverified (9)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| NodeAsAService | unknown | project_anchor | own_supporting | 1 | avalanche | unit-242374 | `0xb306c9...b20b04` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x17395a...222199` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242341 | `0x19da5d...d439f4` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242342 | `0x1cea17...dff1a9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x213a74...8df34a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242343 | `0x25314c...8b58aa` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x6c2e8c...cc4311` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x7cdf0d...fffb98` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x9a4536...f5ec4d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-242359 | `0xae6a7d...607d89` | ❓ Unverified |
 
 ## Audit Inventory
@@ -267,6 +302,7 @@ Verified + unaudited native implementations ranked by TVL:
 | avalanche | `0x7a212f...b9a6dc` | CoqnetHardwareRental | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | `0x9fbb3d...cd0abf` | CREATE3Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | `0x746f2c...c1ecd8` | MinipoolStreamliner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x3ccef5...7e805a` | NodeAsAService | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | `0xa60a66...83cfaa` | NodeSale | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | `0xfe6ca6...e8fe3e` | OonodzHardwareProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | `0x8b85ca...f33d0b` | SubnetHardwareRentalMapping | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -281,10 +317,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 26 |
+| native | 46 |
 | upstream | 0 |
-| standard_library | 8 |
-| needs_review | 5 |
+| standard_library | 9 |
+| needs_review | 10 |
 
 ## Scope Matching Notes
 

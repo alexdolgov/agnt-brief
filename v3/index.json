@@ -1,6 +1,6 @@
 {
   "schema_version": "repo_tree_export_index@v1",
-  "generated_at": "2026-07-15T18:00:00.000Z",
+  "generated_at": "2026-07-15T18:30:00.000Z",
   "network_policy": "offline_cache_only",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
@@ -12,7 +12,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "brief_export_input_receipt_sha256": "7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213"
+    "brief_export_input_receipt_sha256": "e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd"
   },
   "totals": {
     "projects": 1359,

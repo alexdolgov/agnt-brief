@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Canto Lending (`canto-lending`)
 - Website: [https://canto.io/lending](https://canto.io/lending)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: canto
-- Contract surface: 16 unique implementations (16 raw deployments)
+- Chains: canto, ethereum
+- Contract surface: 18 unique implementations (83 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $3,029,500.17
 - On-chain TVL (included contracts): n/a
@@ -71,7 +71,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Logic-topography rows: 0; live-surface rows included: 0 (0 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 16/16 live.
 - Detected codebases: none
@@ -82,15 +82,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 16 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 2 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 16 of 16 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- Confirmed-live implementations: 16 of 18 unique; 2 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/1
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 16
-- Unique implementations: 16
-- Raw deployments: 16
+- Unverified implementations: 17
+- Unique implementations: 18
+- Raw deployments: 83
 - Audits discovered: 4 (4 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -109,9 +109,11 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| CantoOFTV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x56c03b...b5b220` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,12 +127,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (16)
+### ❓ Unverified (17)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | canto | n/a | 66 deployments: canto `0x000000...000000`; canto `0x03f734...0b5e5f`; canto `0x04a724...648d9d`; canto `0x04e524...41900c`; canto `0x0c6cc7...39f43c`; canto `0x0e356b...40f2a3`; canto `0x1a4407...fe728c`; canto `0x1d2063...a85aa9`; canto `0x210b88...3d18c6`; canto `0x216400...718c8b`; canto `0x252631...7e31d5`; canto `0x260fcd...89a571`; canto `0x2bdf6c...bd964b`; canto `0x2db30a...a5c775`; canto `0x2fd02c...e219c6`; canto `0x2fed02...75f57c`; canto `0x308386...fb7b19`; canto `0x35db1f...7df833`; canto `0x395e6c...579fe3`; canto `0x3bee0a...80d0d8`; canto `0x40e41d...9678b2`; canto `0x45bafa...20589b`; canto `0x463e7d...74417a`; canto `0x46970b...18c2b8`; canto `0x4777dc...49928c`; canto `0x477eaf...57346f`; canto `0x4ced98...bd4228`; canto `0x4e71a2...e1e503`; canto `0x4f6dcf...5378aa`; canto `0x4fc300...e88b40`; canto `0x56c03b...b5b220`; canto `0x5fd55a...7ff687`; canto `0x637490...5a77c1`; canto `0x63c8fe...b03f67`; canto `0x648a5a...8e402d`; canto `0x760a17...10570c`; canto `0x79ecce...90ec08`; canto `0x80b5a3...87adcd`; canto `0x826551...d7a07b`; canto `0x831f74...fa44ed`; canto `0x85156b...9bd083`; canto `0x905d3d...06718b`; canto `0x90fccb...eb961b`; canto `0x9160c5...97d5b7`; canto `0x9290c8...793618`; canto `0x94d288...bbcecd`; canto `0x9514c0...5c231f`; canto `0x957199...e7228c`; canto `0xa252ee...825a8e`; canto `0xa51436...7fb77e`; canto `0xb2c551...d1dc81`; canto `0xbed263...26e190`; canto `0xc03955...12af22`; canto `0xc0ce84...7432f3`; canto `0xc51534...df3566`; canto `0xca0323...96410a`; canto `0xca11bd...76ca11`; canto `0xd567b3...a05e75`; canto `0xdb91f7...ead2db`; canto `0xe38706...c1cfba`; canto `0xe536cf...1a2c1a`; canto `0xebe265...d6c36d`; canto `0xeceeef...898265`; canto `0xecf044...095b44`; canto `0xf301c9...93f37f`; canto `0xfb8255...1df03b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | canto | unit-381701 | `0x0355e3...33c2f1` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | canto | unit-381702 | `0x3c96dc...49b16b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | canto | unit-381703 | `0x5e23dc...4bcc5c` | ❓ Unverified |
@@ -187,10 +190,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 16 |
+| needs_review | 17 |
 
 ## Scope Matching Notes
 

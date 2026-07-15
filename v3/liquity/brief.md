@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Liquity (`liquity`)
 - Website: [https://www.liquity.org/](https://www.liquity.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, avalanche, base, berachain, ethereum, hyperliquid, optimism, scroll, sonic, swellchain
-- Contract surface: 71 unique implementations (71 raw deployments)
+- Contract surface: 100 unique implementations (119 raw deployments)
 - Coverage basis: 5/65 confirmed own live verified implementations (7.7%); conservative 7.7% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $204,759,211.00
 - On-chain TVL (included contracts): n/a
@@ -225,7 +225,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 65; live-surface contracts included: 65 (65 live, 0 unknown).
+- Logic-topography rows: 65; live-surface rows included: 65 (65 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 70/70 live.
 - Detected codebases: none
@@ -236,15 +236,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 5/65 (7.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 70 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 29 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Deployed-live implementations: 70 of 71 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 5/65
-- Verified + Unaudited implementations: 60
+- Confirmed-live implementations: 70 of 100 unique; 30 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 5/87
+- Verified + Unaudited implementations: 82
 - Verified by bytecode match: 0
-- Unverified implementations: 5
-- Unique implementations: 71
-- Raw deployments: 71
+- Unverified implementations: 13
+- Unique implementations: 100
+- Raw deployments: 119
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -257,9 +257,9 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Coinspect | Tier 2 | 5 | 7.7% | 2025-01 |
-| yAudit | Tier 2 | 5 | 7.7% | 2021-03 |
-| Trail of Bits | Tier 1 | 3 | 4.6% | 2021-01 |
+| Coinspect | Tier 2 | 5 | 5.7% | 2025-01 |
+| yAudit | Tier 2 | 5 | 5.7% | 2021-03 |
+| Trail of Bits | Tier 1 | 3 | 3.4% | 2021-01 |
 
 ## Contract Surface
 
@@ -273,34 +273,42 @@ Removals (removed from original): none
 | LUSDToken | token | project_anchor | own_supporting | 0 | ethereum | unit-388532 | `0x5f9880...568ba0` | ✅ Audited |
 | MultiTroveGetter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388575 | `0xfa61db...31d235` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (60)
+### ⚠️ Verified + Unaudited (82)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | ActivePool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388529 | `0x531a8f...7919a0` | ⚠️ Unaudited |
 | ActivePool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388548 | `0x9074d7...79532f` | ⚠️ Unaudited |
+| ActivePool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdf9eb2...fe3d7f` | ⚠️ Unaudited |
 | ActivePool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388570 | `0xeb5a8c...b16afe` | ⚠️ Unaudited |
 | AddressesRegistry | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388520 | `0x20f7c9...417526` | ⚠️ Unaudited |
 | AddressesRegistry | registry | project_anchor | own_supporting | 0 | ethereum | unit-388533 | `0x610604...3e8789` | ⚠️ Unaudited |
 | AddressesRegistry | registry | project_anchor | own_supporting | 0 | ethereum | unit-388547 | `0x8d733f...3aac54` | ⚠️ Unaudited |
+| AddressSetStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd4ae25...1c6a16` | ⚠️ Unaudited |
 | BoldToken | token | project_anchor | own_supporting | 0 | ethereum | unit-388534 | `0x6440f1...beb01d` | ⚠️ Unaudited |
+| BorrowerOperations | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x24179c...83e007` | ⚠️ Unaudited |
 | BorrowerOperations | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388526 | `0x372abd...46bc65` | ⚠️ Unaudited |
 | BorrowerOperations | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388554 | `0xa741a3...7d5da3` | ⚠️ Unaudited |
 | BorrowerOperations | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388568 | `0xe8119f...a17329` | ⚠️ Unaudited |
 | BurnMintERC20 | token | project_anchor | own_supporting | 0 | optimism | unit-388576 | `0x03569c...81b01d` | ⚠️ Unaudited |
+| BurnMintERC20 | token | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xc6e53b...e6ae08` | ⚠️ Unaudited |
 | BurnMintERC20 | token | project_anchor | own_supporting | 0 | sonic | unit-388577 | `0xf05a20...8cb1c9` | ⚠️ Unaudited |
 | BurnMintERC20 | token | project_anchor | own_supporting | 0 | base | unit-388583 | `0x03569c...81b01d` | ⚠️ Unaudited |
 | BurnMintERC20 | token | project_anchor | own_supporting | 0 | arbitrum | unit-388579 | `0x03569c...81b01d` | ⚠️ Unaudited |
 | BurnMintERC20 | token | project_anchor | own_supporting | 0 | berachain | unit-388582 | `0xf05a20...8cb1c9` | ⚠️ Unaudited |
 | BurnMintERC20 | token | project_anchor | own_supporting | 0 | scroll | unit-388581 | `0x03569c...81b01d` | ⚠️ Unaudited |
+| BurnMintTokenPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 4 deployments: sonic `0x10a9de...4b7d92`; sonic `0xcfc509...bf3d1b`; berachain `0x10a9de...4b7d92`; berachain `0xcfc509...bf3d1b` | ⚠️ Unaudited |
 | CollateralRegistry | registry | project_anchor | own_supporting | 0 | ethereum | unit-388574 | `0xf94998...386684` | ⚠️ Unaudited |
 | CollSurplusPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388525 | `0x36e6cb...d0a235` | ⚠️ Unaudited |
+| CollSurplusPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3d32e8...ce5521` | ⚠️ Unaudited |
 | CollSurplusPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388558 | `0xba4a2b...3192bf` | ⚠️ Unaudited |
 | CollSurplusPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388571 | `0xedbe25...50e2bf` | ⚠️ Unaudited |
+| CommunityIssuance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd8c9d9...08d816` | ⚠️ Unaudited |
 | CurveStableSwapNG | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-388541 | `0x7ed17e...18f12b` | ⚠️ Unaudited |
 | CurveStableSwapNG | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-388572 | `0xefc651...a54b3e` | ⚠️ Unaudited |
 | CurveV2GaugeRewards | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-388557 | `0xba415a...ee33b4` | ⚠️ Unaudited |
 | DefaultPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388531 | `0x5cc5ce...ddcd6b` | ⚠️ Unaudited |
+| DefaultPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x896a3f...0d741c` | ⚠️ Unaudited |
 | DefaultPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388564 | `0xd45582...e5b1a0` | ⚠️ Unaudited |
 | DefaultPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388565 | `0xd796e1...6a22a1` | ⚠️ Unaudited |
 | GasCompZapper | adapter | project_anchor | own_supporting | 0 | ethereum | unit-388559 | `0xbd69d3...c4127d` | ⚠️ Unaudited |
@@ -308,30 +316,44 @@ Removals (removed from original): none
 | GasPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388527 | `0x45c81d...8dad41` | ⚠️ Unaudited |
 | GasPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388539 | `0x7b9ab3...bcf921` | ⚠️ Unaudited |
 | GasPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388546 | `0x8c44fb...81db1f` | ⚠️ Unaudited |
+| GasPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9555b0...49a8d9` | ⚠️ Unaudited |
 | GnosisSafeL2 | governance | project_anchor | own_supporting | 1 | ethereum | unit-388585 | `0xdc6f86...f7f690` | ⚠️ Unaudited |
 | Governance | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388543 | `0x807def...d6eee1` | ⚠️ Unaudited |
+| HintHelpers | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe84251...f997c0` | ⚠️ Unaudited |
 | LeverageLSTZapper | adapter | project_anchor | own_supporting | 0 | ethereum | unit-388537 | `0x75036b...3211a2` | ⚠️ Unaudited |
 | LeverageLSTZapper | adapter | project_anchor | own_supporting | 0 | ethereum | unit-388569 | `0xe85230...df0a56` | ⚠️ Unaudited |
 | LeverageWETHZapper | adapter | project_anchor | own_supporting | 0 | ethereum | unit-388566 | `0xdccbd7...770ae3` | ⚠️ Unaudited |
 | LiquidityGaugeV6 | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-388516 | `0x07a014...ad05e9` | ⚠️ Unaudited |
 | LiquidityGaugeV6 | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-388553 | `0xa37cdc...5d6c5c` | ⚠️ Unaudited |
+| MerkleDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdb46c2...546296` | ⚠️ Unaudited |
 | MetadataNFT | token | project_anchor | own_supporting | 0 | ethereum | unit-388522 | `0x340087...7171af` | ⚠️ Unaudited |
 | MetadataNFT | token | project_anchor | own_supporting | 0 | ethereum | unit-388524 | `0x362f82...f682a1` | ⚠️ Unaudited |
 | MetadataNFT | token | project_anchor | own_supporting | 0 | ethereum | unit-388550 | `0x9b36c3...af4a12` | ⚠️ Unaudited |
+| MultiTroveGetter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfc92d0...49922b` | ⚠️ Unaudited |
+| RedemptionHelper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb36625...f07b80` | ⚠️ Unaudited |
 | RETHPriceFeed | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388523 | `0x34f1e9...8b7b2b` | ⚠️ Unaudited |
 | RocketTokenRETH | token | project_anchor | own_supporting | 0 | ethereum | unit-388555 | `0xae7873...fc6393` | ⚠️ Unaudited |
 | SortedTroves | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388518 | `0x14d8d8...24f386` | ⚠️ Unaudited |
 | SortedTroves | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388544 | `0x84eb85...2e86f1` | ⚠️ Unaudited |
+| SortedTroves | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8fdd3f...a741a6` | ⚠️ Unaudited |
 | SortedTroves | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388551 | `0xa25269...3063f4` | ⚠️ Unaudited |
 | StabilityPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388530 | `0x5721cb...4cf9bf` | ⚠️ Unaudited |
+| StabilityPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x66017d...5a21bb` | ⚠️ Unaudited |
 | StabilityPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388549 | `0x9502b7...ebe56b` | ⚠️ Unaudited |
 | StabilityPool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-388563 | `0xd442e4...148695` | ⚠️ Unaudited |
+| TellorCaller | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xad4305...641112` | ⚠️ Unaudited |
 | TroveManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-388540 | `0x7bcb64...76cf5a` | ⚠️ Unaudited |
 | TroveManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-388552 | `0xa2895d...928b22` | ⚠️ Unaudited |
+| TroveManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa39739...cf4bb2` | ⚠️ Unaudited |
 | TroveManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-388556 | `0xb2b2ab...e3e19e` | ⚠️ Unaudited |
 | TroveNFT | token | project_anchor | own_supporting | 0 | ethereum | unit-388519 | `0x1a0fc0...838013` | ⚠️ Unaudited |
 | TroveNFT | token | project_anchor | own_supporting | 0 | ethereum | unit-388538 | `0x7ae430...4c0873` | ⚠️ Unaudited |
 | TroveNFT | token | project_anchor | own_supporting | 0 | ethereum | unit-388545 | `0x857aec...a31b04` | ⚠️ Unaudited |
+| Unipool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd37a77...bdf0d5` | ⚠️ Unaudited |
+| UniV4MerklRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x16897a...8d24b6`; ethereum `0xb42448...54f615`; ethereum `0xe9a4cf...1dff49` | ⚠️ Unaudited |
+| UniV4MerklRewardsWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x82e293...57238e` | ⚠️ Unaudited |
+| VotiumInitiative | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x69efec...9590d6`; ethereum `0xb5d64a...e66aaa` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 14 deployments: ethereum `0x513251...1affad`; ethereum `0x6875ce...34914f`; ethereum `0x707f91...963fc8`; ethereum `0x777cee...34051d`; ethereum `0x7859f9...f21ee4`; ethereum `0x7b64b0...3d6bdd`; ethereum `0x86bb5d...39c2ae`; ethereum `0xa9b2f5...7fa70e`; ethereum `0xb2022e...feaa52`; ethereum `0xdb99fd...bfa321`; ethereum `0xe3c8a4...697fb7`; ethereum `0xf8b237...c1ffad`; ethereum `0xfb2731...0da180`; ethereum `0xfef762...33fe27` | ⚠️ Unaudited |
 | WETH9 | token | project_anchor | own_supporting | 0 | ethereum | unit-388561 | `0xc02aaa...756cc2` | ⚠️ Unaudited |
 | WETHPriceFeed | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-388562 | `0xcc5f81...03c24f` | ⚠️ Unaudited |
 | WETHZapper | adapter | project_anchor | own_supporting | 0 | ethereum | unit-388536 | `0x7022a4...e70c1f` | ⚠️ Unaudited |
@@ -350,7 +372,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (13)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -359,7 +381,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x000000...000000` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388517 | `0x0c76ea...56ac7e` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-388521 | `0x2f60ba...8c8686` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5cca54...f563d0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x884acf...881c42` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf4a3fe...6483e4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x39b59c...c48b5e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x48fd11...f9aab1` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-388584 | `0x84533b...dbb11a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0xcfc509...bf3d1b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0xe9f1f1...0baaec` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-388578 | `0x1a17b2...bb0d8c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-388580 | `0x03569c...81b01d` | ❓ Unverified |
 
@@ -594,10 +623,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 60 |
+| native | 82 |
 | upstream | 4 |
 | standard_library | 1 |
-| needs_review | 6 |
+| needs_review | 13 |
 
 ## Scope Matching Notes
 

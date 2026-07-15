@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: BTCD (`btcd`)
 - Website: [https://btcd.fi/](https://btcd.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, ethereum
 - Contract surface: 86 unique implementations (86 raw deployments)
@@ -61,7 +61,7 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, ethe
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Logic-topography rows: 3; live-surface rows included: 3 (3 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 6/6 live.
 - Detected codebases: none
@@ -72,11 +72,11 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, ethe
 - Coverage of address-book-owned deployed-live implementations: 2/3 (66.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 6 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 80 discovered implementations excluded (9 third-party/infra; 2 standard proxy/library)
+- Outside the address book: 80 discovered implementations shown in the inventory but excluded from coverage (9 third-party/infra; 2 standard proxy/library)
 - Proxy deployments represented within implementation groups: 4
-- Deployed-live implementations: 6 of 86 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 2/3
-- Verified + Unaudited implementations: 1
+- Confirmed-live implementations: 6 of 86 unique; 80 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 2/83
+- Verified + Unaudited implementations: 81
 - Verified by bytecode match: 0
 - Unverified implementations: 3
 - Unique implementations: 86
@@ -93,8 +93,8 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, ethe
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Nethermind | Tier 2 | 1 | 33.3% | 2025-10 |
-| Omniscia | Tier 2 | 1 | 33.3% | 2025-12 |
+| Nethermind | Tier 2 | 1 | 1.2% | 2025-10 |
+| Omniscia | Tier 2 | 1 | 1.2% | 2025-12 |
 
 ## Contract Surface
 

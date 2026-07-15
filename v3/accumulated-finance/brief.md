@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ⚠️ Lifecycle status: UNKNOWN - TVL dropped 43.7% over 90 days
 
@@ -18,10 +18,10 @@
 - Project: Accumulated Finance (`accumulated-finance`)
 - Website: [https://accumulated.finance](https://accumulated.finance)
 - Lifecycle: unknown (Tier 0, 84.2% below peak)
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: bsc, ethereum, manta-pacific
-- Contract surface: 6 unique implementations (7 raw deployments)
+- Chains: arbitrum, bsc, ethereum, manta-pacific, sei
+- Contract surface: 49 unique implementations (59 raw deployments)
 - Coverage basis: 0/6 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $978,025.00
 - On-chain TVL (included contracts): $12,187.76
@@ -33,7 +33,7 @@ This brief describes the observed EVM deployment and audit surface for Accumulat
 
 ### Architecture
 
-The pinned logic-topography run contains 7 contract row(s) across bsc, ethereum, manta-pacific. Structural roles: 7 core. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 7 contract row(s) across arbitrum, bsc, ethereum, manta-pacific, sei. Structural roles: 7 core. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -64,7 +64,7 @@ The pinned logic-topography run contains 7 contract row(s) across bsc, ethereum,
 
 ## Contract Surface Quality
 
-- Indexed contracts: 7; live-surface contracts included: 7 (7 live, 0 unknown).
+- Logic-topography rows: 7; live-surface rows included: 7 (7 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 7/8 live.
 - Detected codebases: none
@@ -75,15 +75,15 @@ The pinned logic-topography run contains 7 contract row(s) across bsc, ethereum,
 - Coverage of address-book-owned deployed-live implementations: 0/6 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 6 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 6 of 6 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/6
-- Verified + Unaudited implementations: 6
+- Outside the address book: 43 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Confirmed-live implementations: 6 of 49 unique; 43 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/37
+- Verified + Unaudited implementations: 37
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 6
-- Raw deployments: 7
+- Unverified implementations: 12
+- Unique implementations: 49
+- Raw deployments: 59
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $12,187.76
@@ -103,16 +103,47 @@ The pinned logic-topography run contains 7 contract row(s) across bsc, ethereum,
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (37)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | WrappedToken | token | project_anchor | own_supporting | 0 | ethereum | unit-225531 | `0xdf4ef6...c01170` | ⚠️ Unaudited |
+| AccumulateBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xba0509...db7d0e`; arbitrum `0xba0509...db7d0e` | ⚠️ Unaudited |
+| ACMELiquidStaking | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xcf1a40...3c3217`; arbitrum `0xcf1a40...3c3217` | ⚠️ Unaudited |
+| ERC20MinterRedeem | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x050ae6...ced081` | ⚠️ Unaudited |
+| eSEI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xcba2ae...49681a` | ⚠️ Unaudited |
+| eSEIMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xcf1a40...3c3217` | ⚠️ Unaudited |
+| eSEIMinterWithdrawal | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 2 deployments: sei `0x6626bc...861ced`; sei `0xf85434...b116dd` | ⚠️ Unaudited |
+| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xd22f2d...93a17e` | ⚠️ Unaudited |
 | Manta | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-225533 | `0x95cef1...c544e5` | ⚠️ Unaudited |
 | rstETH | token | project_anchor | own_supporting | 0 | ethereum | unit-225529 | `0x684d7f...92dfa9` | ⚠️ Unaudited |
+| rstETHMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x76cefc...7dad3a` | ⚠️ Unaudited |
+| stACMEMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xdde19c...e9714f`; arbitrum `0xe54fb8...84ff5d` | ⚠️ Unaudited |
 | StakedACME | token | project_anchor | own_supporting | 0 | ethereum | unit-225530 | `0x7ac168...b3c547` | ⚠️ Unaudited |
+| StakedACME | token | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7ac168...b3c547` | ⚠️ Unaudited |
+| StakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: ethereum `0xe194d3...333b88`; arbitrum `0x8f0ecd...1f5325` | ⚠️ Unaudited |
+| stARB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xedd708...bae625` | ⚠️ Unaudited |
+| stARBMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xaa3d53...abbb86` | ⚠️ Unaudited |
+| stMANTA | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xcba2ae...49681a` | ⚠️ Unaudited |
+| stMANTAMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xcf1a40...3c3217` | ⚠️ Unaudited |
+| stMANTAMinterV203 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x1103a4...2cf662` | ⚠️ Unaudited |
+| stMANTAMinterWithdrawal | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | 2 deployments: manta-pacific `0x27741d...c8c1de`; manta-pacific `0xe2cf4e...4b01a5` | ⚠️ Unaudited |
 | stVLX | unknown | project_anchor | own_supporting | 0 | bsc | unit-225535 | `0xcba2ae...49681a` | ⚠️ Unaudited |
+| stVLXMinterBSC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5452f1...5a0fe8` | ⚠️ Unaudited |
+| stVLXMinterBSCV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x5683e8...a58652` | ⚠️ Unaudited |
 | stZETA | unknown | project_anchor | own_supporting | 0 | bsc | unit-225536 | 2 deployments: ethereum `0xf38fee...bb0cfc`; bsc `0xcf123d...e01a6b` | ⚠️ Unaudited |
+| stZETAMinterERC20 | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x0a2fe6...5138c0`; bsc `0xeed543...aaf0ff` | ⚠️ Unaudited |
+| WACME | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xdf4ef6...c01170` | ⚠️ Unaudited |
+| weSEI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x7ac168...b3c547` | ⚠️ Unaudited |
+| weSEILendingV100 | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x39d805...60085b` | ⚠️ Unaudited |
+| wrstETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x363290...1b84dc` | ⚠️ Unaudited |
+| wstACME | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: ethereum `0xa5e016...e54c2a`; arbitrum `0xa1372e...328080` | ⚠️ Unaudited |
+| wstARB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x02175c...820071` | ⚠️ Unaudited |
+| wstMANTA | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x7ac168...b3c547` | ⚠️ Unaudited |
+| wstMANTALendingV102 | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x66bf69...bba6b8` | ⚠️ Unaudited |
+| wstVLX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x7ac168...b3c547` | ⚠️ Unaudited |
+| wstZETA | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x4742ba...26884d`; bsc `0xfdb7d8...a127ea` | ⚠️ Unaudited |
+| Zeta | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf09186...2e9cc8` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -126,11 +157,24 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (12)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4781f0...bd23ad` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc16411...331740` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1c1347...f8e49c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb5408e...cb5769` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcf1a40...3c3217` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd702d7...e06f81` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf09186...2e9cc8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0xf09186...2e9cc8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xddb342...7555c5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0xed5796...ad4724` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x355737...0a3c49` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4781f0...bd23ad` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -186,10 +230,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 37 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 1 |
+| standard_library | 1 |
+| needs_review | 11 |
 
 ## Scope Matching Notes
 

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Flex (`flex`)
 - Website: [https://flexmeow.com/](https://flexmeow.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 5 unique implementations (5 raw deployments)
+- Contract surface: 19 unique implementations (26 raw deployments)
 - Coverage basis: 1/3 confirmed own live verified implementations (33.3%); conservative 33.3% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $2,626,576.49
 - On-chain TVL (included contracts): n/a
@@ -60,7 +60,7 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Logic-topography rows: 3; live-surface rows included: 3 (3 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 5/5 live.
 - Detected codebases: none
@@ -71,15 +71,15 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 - Coverage of address-book-owned deployed-live implementations: 1/3 (33.3%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 5 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 5 of 5 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/3
-- Verified + Unaudited implementations: 2
+- Outside the address book: 14 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 3
+- Confirmed-live implementations: 5 of 19 unique; 14 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/17
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
 - Unverified implementations: 2
-- Unique implementations: 5
-- Raw deployments: 5
+- Unique implementations: 19
+- Raw deployments: 26
 - Audits discovered: 4 (4 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -92,7 +92,7 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 33.3% | 2026-03 |
+| unknown | Tier 2 | 1 | 5.9% | 2026-03 |
 
 ## Contract Surface
 
@@ -102,12 +102,26 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 |---|---|---|---|---:|---|---|---|---|
 | Factory | registry | project_anchor | own_supporting | 0 | ethereum | unit-386063 | `0xe2c4a5...34753d` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AllocatorStrategyAprOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x84d1ae...899471` | ⚠️ Unaudited |
+| Auction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x10b07c...ac0bcf` | ⚠️ Unaudited |
+| Debt In Front Helper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa4119b...16ebd6` | ⚠️ Unaudited |
+| Dutch Desk | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3f1951...ed1efa` | ⚠️ Unaudited |
 | Leverage Zapper | adapter | project_anchor | own_supporting | 0 | ethereum | unit-386061 | `0xbf3e99...6137e0` | ⚠️ Unaudited |
+| Price Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x1356d2...383990`; ethereum `0x38cae0...49a15a`; ethereum `0x6d8d09...a54206`; ethereum `0xe8eb47...a7a18d`; ethereum `0xf58f5c...62e4c3` | ⚠️ Unaudited |
 | Registry | registry | project_anchor | own_supporting | 0 | ethereum | unit-386060 | `0x911744...7c77c8` | ⚠️ Unaudited |
+| Sorted Troves | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc489b9...119acc` | ⚠️ Unaudited |
+| StrategyAprOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfd6117...45b9d1` | ⚠️ Unaudited |
+| StrategyFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7a3b96...805266` | ⚠️ Unaudited |
+| Swap Executor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x91eb41...3d5421` | ⚠️ Unaudited |
+| TokenizedStrategy | core_logic | non_address_book | non_address_book_inventory (excluded) | 3 | ethereum | n/a | 3 deployments: ethereum `0x33c452...29b732`; ethereum `0x467ce1...b27751`; ethereum `0xfb4f83...70f95e` | ⚠️ Unaudited |
+| Trove Manager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd82db9...8e2e49` | ⚠️ Unaudited |
+| USDC Dutch Taker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x83cf6e...c63e7b`; ethereum `0xd8ce6e...ad68ec` | ⚠️ Unaudited |
+| Yearn V3 Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x863687...d0f7b8` | ⚠️ Unaudited |
+| Yearn Vault Auction Taker | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1ee35c...c47f07` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -200,8 +214,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
-| upstream | 0 |
+| native | 15 |
+| upstream | 2 |
 | standard_library | 0 |
 | needs_review | 2 |
 

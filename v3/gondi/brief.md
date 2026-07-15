@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Gondi (`gondi`)
 - Website: [https://www.gondi.xyz](https://www.gondi.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum, hyperliquid
-- Contract surface: 30 unique implementations (30 raw deployments)
+- Contract surface: 56 unique implementations (87 raw deployments)
 - Coverage basis: 8/28 confirmed own live verified implementations (28.6%); conservative 28.6% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $709,331.00
 - On-chain TVL (included contracts): n/a
@@ -84,7 +84,7 @@ The pinned logic-topography run contains 28 contract row(s) across ethereum, hyp
 
 ## Contract Surface Quality
 
-- Indexed contracts: 28; live-surface contracts included: 28 (28 live, 0 unknown).
+- Logic-topography rows: 28; live-surface rows included: 28 (28 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 30/33 live.
 - Detected codebases: none
@@ -95,15 +95,15 @@ The pinned logic-topography run contains 28 contract row(s) across ethereum, hyp
 - Coverage of address-book-owned deployed-live implementations: 8/28 (28.6%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 30 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 30 of 30 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 8/28
-- Verified + Unaudited implementations: 20
+- Outside the address book: 26 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Confirmed-live implementations: 30 of 56 unique; 26 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 8/41
+- Verified + Unaudited implementations: 33
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 30
-- Raw deployments: 30
+- Unverified implementations: 15
+- Unique implementations: 56
+- Raw deployments: 87
 - Audits discovered: 12 (12 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 8
 - ASD (verified + unaudited TVL): n/a
@@ -116,13 +116,13 @@ The pinned logic-topography run contains 28 contract row(s) across ethereum, hyp
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| 0xFoobar or 0xQuit | Tier 2 | 3 | 10.7% | 2023-11 |
-| Quantstamp | Tier 2 | 3 | 10.7% | 2023-10 |
-| unknown | Tier 2 | 2 | 7.1% | 2025-08 |
-| CertiK | Tier 2 | 1 | 3.6% | 2023-07 |
-| Code4Arena | Tier 2 | 1 | 3.6% | 2025-01 |
-| Trail of Bits | Tier 1 | 1 | 3.6% | 2023-07 |
-| Zenith | Tier 2 | 1 | 3.6% | 2026-02 |
+| 0xFoobar or 0xQuit | Tier 2 | 3 | 7.3% | 2023-11 |
+| Quantstamp | Tier 2 | 3 | 7.3% | 2023-10 |
+| unknown | Tier 2 | 2 | 4.9% | 2025-08 |
+| CertiK | Tier 2 | 1 | 2.4% | 2023-07 |
+| Code4Arena | Tier 2 | 1 | 2.4% | 2025-01 |
+| Trail of Bits | Tier 1 | 1 | 2.4% | 2023-07 |
+| Zenith | Tier 2 | 1 | 2.4% | 2026-02 |
 
 ## Contract Surface
 
@@ -139,23 +139,35 @@ The pinned logic-topography run contains 28 contract row(s) across ethereum, hyp
 | PurchaseBundler | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386895 | `0x3b59bf...ecdf5f` | ✅ Audited |
 | UserVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-386884 | `0x14a6dc...81976d` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (20)
+### ⚠️ Verified + Unaudited (33)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | AddressManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-386897 | `0x4150de...344927` | ⚠️ Unaudited |
 | AddressManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-386902 | `0x52ac42...0d7398` | ⚠️ Unaudited |
 | AddressManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-386928 | `0xf0e9ec...6e43af` | ⚠️ Unaudited |
+| AddressManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 8 deployments: ethereum `0x307521...987803`; ethereum `0x4fb610...35e056`; ethereum `0x8fb98c...0c1487`; ethereum `0xe7faa7...ffe259`; hyperliquid `0x18905f...75573b`; hyperliquid `0x350cd2...fdc6ab`; hyperliquid `0x51dc8d...9492fa`; hyperliquid `0xca5a49...7595bd` | ⚠️ Unaudited |
+| AddressMethodManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x443f16...cdbf51` | ⚠️ Unaudited |
 | AddressMethodManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-386900 | `0x4ecc15...3f8f09` | ⚠️ Unaudited |
 | AuctionWithBuyoutLoanLiquidator | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-386893 | `0x2995ae...f440f0` | ⚠️ Unaudited |
+| AuctionWithBuyoutLoanLiquidator | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb3d88d...90ada2` | ⚠️ Unaudited |
 | AuctionWithBuyoutLoanLiquidator | operational_periphery | project_anchor | own_supporting | 0 | hyperliquid | unit-386944 | `0xb166ec...f4c6ad` | ⚠️ Unaudited |
+| DelegateRegistry | registry | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x000000...bed493` | ⚠️ Unaudited |
+| Leverage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x13df57...0074e7`; ethereum `0x7b486e...d3cebd`; ethereum `0x87ce6e...1e233e`; ethereum `0xe4a6ac...6c1225` | ⚠️ Unaudited |
+| LiquidationDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 3 deployments: ethereum `0x6e9122...b198be`; ethereum `0xedfbee...2f51c5`; hyperliquid `0x47a297...ce0a0c` | ⚠️ Unaudited |
+| LoanManagerRegistry | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x1e0940...b7c9f5`; ethereum `0xcf0f38...0740f3`; hyperliquid `0x97ba36...5866d7` | ⚠️ Unaudited |
+| MultiAddressValidator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xddce55...103aa0` | ⚠️ Unaudited |
+| MultiSourceLoan | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x52cdce...bf7e54`; ethereum `0xdff887...859634` | ⚠️ Unaudited |
 | MultiSourceLoan | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386934 | `0xf65b99...a7d9a8` | ⚠️ Unaudited |
 | MultiSourceLoan | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386938 | `0x6ad675...927fd9` | ⚠️ Unaudited |
+| OldERC721Wrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x17770d...5dafff` | ⚠️ Unaudited |
 | OldERC721Wrapper | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386916 | `0xb14b31...46e0b9` | ⚠️ Unaudited |
 | OldERC721Wrapper | token | project_anchor | own_supporting | 0 | ethereum | unit-386919 | `0xc0ec4e...fc5497` | ⚠️ Unaudited |
+| PurchaseBundler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 16 deployments: ethereum `0x01981b...377530`; ethereum `0x0d886f...05f166`; ethereum `0x1cef7e...50df96`; ethereum `0x1f87ea...b8f302`; ethereum `0x1fba53...0fcd62`; ethereum `0x2f3d5c...51a53b`; ethereum `0x468a9a...10527a`; ethereum `0x500007...77c333`; ethereum `0x53ceda...489140`; ethereum `0x6fee50...cc28fd`; ethereum `0x857271...28fc25`; ethereum `0x893b2d...e9c6ec`; ethereum `0xc10472...c90814`; ethereum `0xd2f1c0...4a1445`; ethereum `0xe02d85...855a59`; ethereum `0xfd31a0...1aca61` | ⚠️ Unaudited |
 | PurchaseBundler | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386925 | `0xcea7ee...2d260a` | ⚠️ Unaudited |
 | PurchaseBundler | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386932 | `0xf46a58...506feb` | ⚠️ Unaudited |
 | PurchaseBundler | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386946 | `0xfaaff6...264157` | ⚠️ Unaudited |
+| RangeValidator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x039bc1...4f2b0a` | ⚠️ Unaudited |
 | RangeValidator | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386886 | `0x18905f...75573b` | ⚠️ Unaudited |
 | RangeValidator | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386891 | `0x265a38...d1fb00` | ⚠️ Unaudited |
 | RangeValidator | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386914 | `0xac9cd5...43a8b6` | ⚠️ Unaudited |
@@ -163,6 +175,7 @@ The pinned logic-topography run contains 28 contract row(s) across ethereum, hyp
 | SampleToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386908 | `0x7d60c8...cbb40e` | ⚠️ Unaudited |
 | UniswapV3TwapQuoter | periphery | project_anchor | own_supporting | 0 | ethereum | unit-386923 | `0xcad3b0...1af68a` | ⚠️ Unaudited |
 | UserVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-386910 | `0x823de2...7e4bfe` | ⚠️ Unaudited |
+| UserVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 2 deployments: ethereum `0xc9f152...edd15f`; hyperliquid `0x3f26ff...60a7ee` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -176,14 +189,27 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (15)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x125e1d...acc2cc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x17cb96...c1d8b4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8364dd...49a57a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x869f5b...9993fd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8aaad0...4886f7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386921 | `0xca5a49...7595bd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x125e1d...acc2cc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x237e44...e17091` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x4150de...344927` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x461990...c2f311` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x52ac42...0d7398` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x5bdcfa...b3edd9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x6c512d...c1c1c8` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-386940 | `0x754548...220048` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0xfe434a...7870e6` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -351,10 +377,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 27 |
+| native | 40 |
 | upstream | 1 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 15 |
 
 ## Scope Matching Notes
 

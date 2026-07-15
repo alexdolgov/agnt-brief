@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "project_key": "ethena",
-  "generated_at": "2026-07-15T18:00:00.000Z",
+  "generated_at": "2026-07-15T18:30:00.000Z",
   "authority": {
     "activation_id": "scope-prod-20260715-v1",
     "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
@@ -13,7 +13,7 @@
     "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
     "fork_detection_run_id": "fork-structural-canonical-production-20260712",
     "deployer_decision_run_id": "deployer-candidate-production-20260712",
-    "export_input_receipt_sha256": "7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213",
+    "export_input_receipt_sha256": "e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd",
     "canonical_network_policy": "offline_cache_only"
   },
   "production_state": {
@@ -44,11 +44,15 @@
     "address_book_proxy_deployments": 5,
     "total_deployments": 48,
     "audited_contracts": 4,
-    "unaudited_contracts": 3,
+    "unaudited_contracts": 22,
     "contracts_verified_audited": 4,
-    "contracts_verified_unaudited": 3,
+    "contracts_verified_unaudited": 22,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 5,
+    "contracts_unverified": 22,
+    "owned_contracts_verified_audited": 4,
+    "owned_contracts_verified_unaudited": 3,
+    "owned_contracts_verified_by_bytecode": 0,
+    "owned_contracts_unverified": 5,
     "coverage_pct": 57.1,
     "total_audits": 18,
     "direct_audits": 18,
@@ -5266,63 +5270,63 @@
       "auditor": "4naly3er",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 28.6,
+      "coverage_pct": 7.7,
       "latest_audit": "2023-10"
     },
     {
       "auditor": "bot",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 28.6,
+      "coverage_pct": 7.7,
       "latest_audit": "2023-10"
     },
     {
       "auditor": "Code4rena",
       "tier": 1,
       "contracts_covered": 2,
-      "coverage_pct": 28.6,
+      "coverage_pct": 7.7,
       "latest_audit": "2023-11"
     },
     {
       "auditor": "Pashov",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 28.6,
+      "coverage_pct": 7.7,
       "latest_audit": "2023-12"
     },
     {
       "auditor": "Pashov Audit Group",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 28.6,
+      "coverage_pct": 7.7,
       "latest_audit": "2024-10"
     },
     {
       "auditor": "Quantstamp",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 28.6,
+      "coverage_pct": 7.7,
       "latest_audit": "2024-10"
     },
     {
       "auditor": "Spearbit",
       "tier": 1,
       "contracts_covered": 2,
-      "coverage_pct": 28.6,
+      "coverage_pct": 7.7,
       "latest_audit": "2023-10"
     },
     {
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 14.3,
+      "coverage_pct": 3.8,
       "latest_audit": "2024-05"
     },
     {
       "auditor": "Zellic",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 14.3,
+      "coverage_pct": 3.8,
       "latest_audit": "2023-07"
     }
   ],

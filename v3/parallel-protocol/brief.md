@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Parallel Protocol (`parallel-protocol`)
 - Website: [https://parallel.best/](https://parallel.best/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, avalanche, base, berachain, bsc, ethereum, fraxtal, gnosis, hyperliquid, ink, linea, optimism, plasma, polygon, scroll, sei, sonic, unichain
-- Contract surface: 132 unique implementations (168 raw deployments)
+- Chains: arbitrum, avalanche, base, berachain, bsc, ethereum, fantom, fraxtal, gnosis, hyperliquid, ink, linea, optimism, plasma, polygon, scroll, sei, sonic, unichain
+- Contract surface: 155 unique implementations (242 raw deployments)
 - Coverage basis: 0/108 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $2,623,734.00
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for Parallel 
 
 ### Architecture
 
-The pinned logic-topography run contains 143 contract row(s) across arbitrum, avalanche, base, berachain, bsc, ethereum, fraxtal, gnosis, hyperliquid, ink, linea, optimism, plasma, polygon, scroll, sei, sonic, unichain. Structural roles: 71 unclassified, 59 supporting, 13 core. 5 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 143 contract row(s) across arbitrum, avalanche, base, berachain, bsc, ethereum, fantom, fraxtal, gnosis, hyperliquid, ink, linea, optimism, plasma, polygon, scroll, sei, sonic, unichain. Structural roles: 71 unclassified, 59 supporting, 13 core. 5 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -365,7 +365,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 143; live-surface contracts included: 143 (143 live, 0 unknown).
+- Logic-topography rows: 143; live-surface rows included: 143 (143 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 132/132 live.
 - Detected codebases: none
@@ -376,15 +376,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 0/108 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 132 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 36
-- Deployed-live implementations: 132 of 132 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/108
-- Verified + Unaudited implementations: 108
+- Outside the address book: 23 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 37
+- Confirmed-live implementations: 132 of 155 unique; 23 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/125
+- Verified + Unaudited implementations: 125
 - Verified by bytecode match: 0
-- Unverified implementations: 24
-- Unique implementations: 132
-- Raw deployments: 168
+- Unverified implementations: 30
+- Unique implementations: 155
+- Raw deployments: 242
 - Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -403,10 +403,11 @@ Removals (removed from original): none
 
 - None
 
-### ⚠️ Verified + Unaudited (108)
+### ⚠️ Verified + Unaudited (125)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| BridgeableToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 12 deployments: ethereum `0x5208f5...c4ca3f`; ethereum `0x624615...815bfb`; ethereum `0x74e3f9...f60e30`; ethereum `0x86afa5...9668e9`; ethereum `0xd4dee6...c838eb`; ethereum `0xe0a86c...5022b2`; polygon `0x1b03d0...583342`; polygon `0x431132...32273b`; polygon `0x5e6c85...f2be85`; polygon `0x7e6bc0...d0a433`; polygon `0x917b9d...51afd7`; polygon `0xe462df...6bc9a8` | ⚠️ Unaudited |
 | BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-251294 | `0x78bb48...95823c` | ⚠️ Unaudited |
 | BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-251306 | `0x76a9a0...759dd5` | ⚠️ Unaudited |
 | BridgeableTokenP | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-251347 | `0x7b54f3...420c72` | ⚠️ Unaudited |
@@ -428,6 +429,7 @@ Removals (removed from original): none
 | DiamondCut | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251377 | `0xa65821...1759df` | ⚠️ Unaudited |
 | DiamondCut | unknown | project_anchor | own_supporting | 0 | base | unit-251360 | `0x154524...9295b1` | ⚠️ Unaudited |
 | DiamondCut | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251335 | `0x657acb...ce0052` | ⚠️ Unaudited |
+| DiamondInitializer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 5 deployments: sonic `0xbe65f0...57d588`; hyperliquid `0x056566...cc2c3f`; hyperliquid `0x8b8997...7edaf1`; base `0x3997f0...2298d7`; avalanche `0x506ba3...7f3c5a` | ⚠️ Unaudited |
 | DiamondLoupe | unknown | project_anchor | own_supporting | 0 | sonic | unit-251316 | `0x2b6c7c...6e4dec` | ⚠️ Unaudited |
 | DiamondLoupe | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251379 | `0xbefbae...5f8826` | ⚠️ Unaudited |
 | DiamondLoupe | unknown | project_anchor | own_supporting | 0 | base | unit-251361 | `0x24cef2...13d3aa` | ⚠️ Unaudited |
@@ -459,12 +461,16 @@ Removals (removed from original): none
 | Getters | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251371 | `0x120805...06a9d2` | ⚠️ Unaudited |
 | Getters | unknown | project_anchor | own_supporting | 0 | base | unit-251365 | `0xbe65f0...57d588` | ⚠️ Unaudited |
 | Getters | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251339 | `0xf6cc47...e22dbb` | ⚠️ Unaudited |
+| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x25fc7f...706f9b` | ⚠️ Unaudited |
+| MainFeeDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: polygon `0x90337e...348545`; polygon `0xb4af56...7cbaa1`; base `0x5d49c8...59b7e3` | ⚠️ Unaudited |
+| MIMOVaultActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 6 deployments: polygon `0x1d5825...f4c595`; polygon `0x6ae3cf...d2d4fe`; polygon `0xa8b25d...c13546`; polygon `0xde91eb...02a434`; polygon `0xeb259d...b66d4b`; polygon `0xf6abf8...c51f58` | ⚠️ Unaudited |
 | ParallelAccessManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-251295 | `0x94ea88...355f7a` | ⚠️ Unaudited |
 | ParallelAccessManager | governance | project_anchor | own_supporting | 0 | optimism | unit-251305 | `0x0e4e7c...debf46` | ⚠️ Unaudited |
 | ParallelAccessManager | governance | project_anchor | own_supporting | 0 | bsc | unit-251348 | `0xfd28f1...85998e` | ⚠️ Unaudited |
 | ParallelAccessManager | governance | project_anchor | own_supporting | 0 | gnosis | unit-251308 | `0xfd28f1...85998e` | ⚠️ Unaudited |
 | ParallelAccessManager | governance | project_anchor | own_supporting | 0 | unichain | unit-251310 | `0xfd28f1...85998e` | ⚠️ Unaudited |
 | ParallelAccessManager | governance | project_anchor | own_supporting | 0 | polygon | unit-251313 | `0x7df74b...6e2811` | ⚠️ Unaudited |
+| ParallelAccessManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x8fcf91...4140f3`; sonic `0xa7eb07...55a75c` | ⚠️ Unaudited |
 | ParallelAccessManager | governance | project_anchor | own_supporting | 0 | sonic | unit-251317 | `0x8efb3d...094b78` | ⚠️ Unaudited |
 | ParallelAccessManager | governance | project_anchor | own_supporting | 0 | fraxtal | unit-251326 | `0xfd28f1...85998e` | ⚠️ Unaudited |
 | ParallelAccessManager | governance | project_anchor | own_supporting | 0 | hyperliquid | unit-251382 | `0xfd28f1...85998e` | ⚠️ Unaudited |
@@ -476,6 +482,8 @@ Removals (removed from original): none
 | ParallelAccessManager | governance | project_anchor | own_supporting | 0 | linea | unit-251356 | `0xfd28f1...85998e` | ⚠️ Unaudited |
 | ParallelAccessManager | governance | project_anchor | own_supporting | 0 | berachain | unit-251358 | `0xfd28f1...85998e` | ⚠️ Unaudited |
 | ParallelAccessManager | governance | project_anchor | own_supporting | 0 | scroll | unit-251346 | `0xfd28f1...85998e` | ⚠️ Unaudited |
+| PeripheralMigrationContract | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9c6885...5316cb` | ⚠️ Unaudited |
+| PeripheralPRL | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 5 deployments: optimism `0xfd28f1...85998e`; polygon `0x7790dd...2d5948`; sonic `0xfd28f1...85998e`; base `0xfd28f1...85998e`; arbitrum `0xfd28f1...85998e` | ⚠️ Unaudited |
 | Redeemer | unknown | project_anchor | own_supporting | 0 | sonic | unit-251322 | `0xe5c82b...032cc8` | ⚠️ Unaudited |
 | Redeemer | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251381 | `0xf92ed9...bdf594` | ⚠️ Unaudited |
 | Redeemer | unknown | project_anchor | own_supporting | 0 | base | unit-251368 | `0xe9fe47...5990e8` | ⚠️ Unaudited |
@@ -484,10 +492,12 @@ Removals (removed from original): none
 | RewardHandler | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251376 | `0xa5d9ca...5cbd18` | ⚠️ Unaudited |
 | RewardHandler | unknown | project_anchor | own_supporting | 0 | base | unit-251362 | `0x2b6c7c...6e4dec` | ⚠️ Unaudited |
 | RewardHandler | unknown | project_anchor | own_supporting | 0 | avalanche | unit-251331 | `0x36da06...12636c` | ⚠️ Unaudited |
+| RewardMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: polygon `0x7b54f3...420c72`; base `0x13e867...41a96b` | ⚠️ Unaudited |
 | SavingsNameable | unknown | project_anchor | own_supporting | 1 | sonic | unit-251395 | 2 deployments: sonic `0xae2fb6...403e2e`; sonic `0xe8a3da...77517b` | ⚠️ Unaudited |
 | SavingsNameable | unknown | project_anchor | own_supporting | 1 | hyperliquid | unit-251418 | 2 deployments: hyperliquid `0x769f53...d400fd`; hyperliquid `0x9b3a8f...e24459` | ⚠️ Unaudited |
 | SavingsNameable | unknown | project_anchor | own_supporting | 1 | base | unit-251411 | 2 deployments: base `0x472ed5...e3e7e7`; base `0xa65821...1759df` | ⚠️ Unaudited |
 | SavingsNameable | unknown | project_anchor | own_supporting | 1 | avalanche | unit-251401 | 2 deployments: avalanche `0x3dde24...a9a6c3`; avalanche `0x9d92c2...8ed3e0` | ⚠️ Unaudited |
+| SavingsNameable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x645fea...25884d` | ⚠️ Unaudited |
 | SettersGovernor | governance | project_anchor | own_supporting | 0 | sonic | unit-251319 | `0xc3bef2...8048ed` | ⚠️ Unaudited |
 | SettersGovernor | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251374 | `0x472ed5...e3e7e7` | ⚠️ Unaudited |
 | SettersGovernor | governance | project_anchor | own_supporting | 0 | base | unit-251364 | `0x90e4ae...a4ee43` | ⚠️ Unaudited |
@@ -496,6 +506,10 @@ Removals (removed from original): none
 | SettersGuardian | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251378 | `0xae2fb6...403e2e` | ⚠️ Unaudited |
 | SettersGuardian | governance | project_anchor | own_supporting | 0 | base | unit-251367 | `0xe5c82b...032cc8` | ⚠️ Unaudited |
 | SettersGuardian | governance | project_anchor | own_supporting | 0 | avalanche | unit-251338 | `0xbbc90e...43fe84` | ⚠️ Unaudited |
+| SideChainFeeCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 2 deployments: hyperliquid `0x2f77c2...908574`; avalanche `0x7d2c6c...4907c5` | ⚠️ Unaudited |
+| sPRL1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: ethereum `0xead729...1b5901`; polygon `0xdb7be3...aa9475`; sonic `0x7df74b...6e2811`; base `0x01fa35...922e48`; base `0xefc130...c4d2ce` | ⚠️ Unaudited |
+| sPRL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe8a2d8...322135` | ⚠️ Unaudited |
+| sPRL2V2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb22f5e...a00e24` | ⚠️ Unaudited |
 | Swapper | unknown | project_anchor | own_supporting | 1 | sonic | unit-251394 | 2 deployments: sonic `0xa65821...1759df`; sonic `0xbefbae...5f8826` | ⚠️ Unaudited |
 | Swapper | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-251373 | `0x1b2741...1b5179` | ⚠️ Unaudited |
 | Swapper | unknown | project_anchor | own_supporting | 1 | base | unit-251413 | 2 deployments: base `0xc3bef2...8048ed`; base `0xfb2d07...91e3f7` | ⚠️ Unaudited |
@@ -515,6 +529,9 @@ Removals (removed from original): none
 | TokenP | unknown | project_anchor | own_supporting | 1 | avalanche | unit-251402 | 2 deployments: avalanche `0x9ee196...f26aa4`; avalanche `0xcb3e56...de600b` | ⚠️ Unaudited |
 | TokenP | unknown | project_anchor | own_supporting | 1 | linea | unit-251407 | 2 deployments: linea `0x35c632...e0f1c7`; linea `0x8fcf91...4140f3` | ⚠️ Unaudited |
 | TokenP | unknown | project_anchor | own_supporting | 1 | berachain | unit-251408 | 2 deployments: berachain `0x9ee196...f26aa4`; berachain `0xcb3e56...de600b` | ⚠️ Unaudited |
+| VaultsCore | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 13 deployments: ethereum `0x173ae6...8c674b`; ethereum `0x4fbb33...20cd46`; ethereum `0x68e88c...509672`; ethereum `0x78c48a...a920e6`; ethereum `0x917b9d...51afd7`; ethereum `0xe26348...f93204`; polygon `0x0a9202...1b400f`; polygon `0x6cffe4...acd8c5`; polygon `0x78c48a...a920e6`; polygon `0x9912c1...11a172`; polygon `0xc0459e...16c1a4`; polygon `0xcababc...5e6e5f`; polygon `0xfaee16...6b5711` | ⚠️ Unaudited |
+| VaultsCoreState | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 6 deployments: ethereum `0x5362a6...e3de64`; ethereum `0x963d98...745249`; ethereum `0xdb7553...06386f`; polygon `0x02c69c...6f25d8`; polygon `0x0f3acb...662b48`; polygon `0xfad382...81f346` | ⚠️ Unaudited |
+| VaultsV2Feed | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 2 deployments: sei `0xd8cc2a...309862`; sei `0xeb1974...489095` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -528,7 +545,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (24)
+### ❓ Unverified (30)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -549,6 +566,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251302 | `0xc9b627...ba0bfc` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251303 | `0xd8cc2a...309862` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251304 | `0xeb1974...489095` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x098e37...02d8b6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9e7733...2c64ef` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd4dee6...c838eb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fantom | n/a | `0xf6abf8...c51f58` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0xca43ec...6b410a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xa360e5...41c2f5` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251349 | `0x9e0dcf...991277` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251350 | `0x9ee196...f26aa4` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-251351 | `0x9ffacb...c699ec` | ❓ Unverified |
@@ -770,10 +793,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 106 |
+| native | 122 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 25 |
+| standard_library | 2 |
+| needs_review | 31 |
 
 ## Scope Matching Notes
 

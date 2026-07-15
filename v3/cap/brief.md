@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: cap (`cap`)
 - Website: [https://cap.app/](https://cap.app/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
 - Contract surface: 141 unique implementations (143 raw deployments)
@@ -63,7 +63,7 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum. Str
 
 ## Contract Surface Quality
 
-- Indexed contracts: 11; live-surface contracts included: 11 (8 live, 3 unknown).
+- Logic-topography rows: 11; live-surface rows included: 11 (8 live, 3 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 8/29 live.
 - Detected codebases: none
@@ -74,13 +74,13 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum. Str
 - Coverage of address-book-owned deployed-live implementations: 2/8 (25.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 8 own, 13 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 120 discovered implementations excluded (1 third-party/infra; 15 standard proxy/library)
+- Outside the address book: 120 discovered implementations shown in the inventory but excluded from coverage (1 third-party/infra; 15 standard proxy/library)
 - Proxy deployments represented within implementation groups: 65
-- Deployed-live implementations: 8 of 141 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 2/8
-- Verified + Unaudited implementations: 6
+- Confirmed-live implementations: 8 of 141 unique; 133 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 2/140
+- Verified + Unaudited implementations: 138
 - Verified by bytecode match: 0
-- Unverified implementations: 0
+- Unverified implementations: 1
 - Unique implementations: 141
 - Raw deployments: 143
 - Audits discovered: 10 (10 direct, 0 inherited from forked code)
@@ -95,10 +95,10 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum. Str
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Octane | Tier 2 | 1 | 12.5% | 2026-03 |
-| Recon | Tier 2 | 1 | 12.5% | 2025-07 |
-| Sherlock | Tier 1 | 1 | 12.5% | 2025-09 |
-| Spearbit | Tier 1 | 1 | 12.5% | 2025-11 |
+| Octane | Tier 2 | 1 | 0.7% | 2026-03 |
+| Recon | Tier 2 | 1 | 0.7% | 2025-07 |
+| Sherlock | Tier 1 | 1 | 0.7% | 2025-09 |
+| Spearbit | Tier 1 | 1 | 0.7% | 2025-11 |
 
 ## Contract Surface
 

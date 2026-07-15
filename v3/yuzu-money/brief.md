@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Yuzu Money (`yuzu-money`)
 - Website: [https://app.yuzu.money](https://app.yuzu.money)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum, hyperliquid, monad, pharos, plasma
-- Contract surface: 16 unique implementations (16 raw deployments)
+- Contract surface: 24 unique implementations (31 raw deployments)
 - Coverage basis: 3/3 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $55,226,801.02
 - On-chain TVL (included contracts): n/a
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 6 contract row(s) across ethereum, hype
 
 ## Fork Analysis
 
-0 of 13 contracts are derived from known codebases. 13 contracts have no detected origin.
+0 of 14 contracts are derived from known codebases. 14 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -65,10 +65,11 @@ The pinned logic-topography run contains 6 contract row(s) across ethereum, hype
 - UnnamedContract (`0x0cddd7...1859e8`, chain 9745)
 - UnnamedContract (`0x57b269...bac5e5`, chain 9745)
 - UnnamedContract (`0x9dcb0d...373858`, chain 9745)
+- StakedYuzuUSDV2 (`0xa39825...e5e9c8`, chain 9745)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 6; live-surface contracts included: 6 (3 live, 3 unknown).
+- Logic-topography rows: 6; live-surface rows included: 6 (6 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 16/16 live.
 - Detected codebases: none
@@ -79,15 +80,15 @@ The pinned logic-topography run contains 6 contract row(s) across ethereum, hype
 - Coverage of address-book-owned deployed-live implementations: 3/3 (100.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 16 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 3
-- Deployed-live implementations: 16 of 16 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 3/3
-- Verified + Unaudited implementations: 0
+- Outside the address book: 8 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 8
+- Confirmed-live implementations: 16 of 24 unique; 8 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 3/11
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
 - Unverified implementations: 13
-- Unique implementations: 16
-- Raw deployments: 16
+- Unique implementations: 24
+- Raw deployments: 31
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -100,8 +101,8 @@ The pinned logic-topography run contains 6 contract row(s) across ethereum, hype
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Pashov Audit Group | Tier 2 | 3 | 100.0% | 2026-01 |
-| Dedaub | Tier 2 | 2 | 66.7% | 2026-01 |
+| Pashov Audit Group | Tier 2 | 3 | 27.3% | 2026-01 |
+| Dedaub | Tier 2 | 2 | 18.2% | 2026-01 |
 
 ## Contract Surface
 
@@ -109,13 +110,22 @@ The pinned logic-topography run contains 6 contract row(s) across ethereum, hype
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| StakedYuzuUSDV2 | unknown | project_anchor | own_supporting | 1 | plasma | unit-398369 | `0xc8a8df...0a1bf6` | ✅ Audited |
-| YuzuILPV2 | unknown | project_anchor | own_supporting | 1 | plasma | unit-398367 | `0xebfc8c...b50dca` | ✅ Audited |
-| YuzuUSDV2 | unknown | project_anchor | own_supporting | 1 | plasma | unit-398368 | `0x6695c0...7926dc` | ✅ Audited |
+| StakedYuzuUSDV2 | unknown | project_anchor | own_supporting | 1 | plasma | unit-398369 | 2 deployments: plasma `0xa39825...e5e9c8`; plasma `0xc8a8df...0a1bf6` | ✅ Audited |
+| YuzuILPV2 | unknown | project_anchor | own_supporting | 1 | plasma | unit-398367 | 2 deployments: plasma `0x326839...9309bc`; plasma `0xebfc8c...b50dca` | ✅ Audited |
+| YuzuUSDV2 | unknown | project_anchor | own_supporting | 1 | plasma | unit-398368 | 2 deployments: plasma `0x32d7d5...bf5cfe`; plasma `0x6695c0...7926dc` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (8)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x44f6e9...fb7e71` | ⚠️ Unaudited |
+| PSM | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | 2 deployments: plasma `0x2aa939...199dea`; plasma `0x933069...c863b2` | ⚠️ Unaudited |
+| PSM | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x7000b8...957544` | ⚠️ Unaudited |
+| StakedYuzuUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | 2 deployments: plasma `0x3fdd8e...d9e589`; plasma `0xb14e7d...32160f` | ⚠️ Unaudited |
+| StakedYuzuUSDV2 | token | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x926b29...130ec8` | ⚠️ Unaudited |
+| TokenizedVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | `0x517677...1e3eec` | ⚠️ Unaudited |
+| YuzuILP | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | 2 deployments: plasma `0x7e8bc5...249281`; plasma `0xa5913f...b51531` | ⚠️ Unaudited |
+| YuzuUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | plasma | n/a | 2 deployments: plasma `0x8e6026...9cc340`; plasma `0x90b1bc...674d85` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -259,9 +269,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 10 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 13 |
 
 ## Scope Matching Notes

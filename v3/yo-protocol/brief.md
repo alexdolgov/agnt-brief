@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: YO Protocol (`yo-protocol`)
 - Website: [https://app.yo.xyz](https://app.yo.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, base, ethereum, hyperliquid, monad, x-layer
-- Contract surface: 34 unique implementations (39 raw deployments)
+- Contract surface: 44 unique implementations (64 raw deployments)
 - Coverage basis: 3/15 confirmed own live verified implementations (20.0%); conservative 20.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $34,621,789.07
 - On-chain TVL (included contracts): n/a
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 24 contract row(s) across arbitrum, bas
 
 ## Fork Analysis
 
-0 of 30 contracts are derived from known codebases. 30 contracts have no detected origin.
+0 of 32 contracts are derived from known codebases. 32 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -82,10 +82,12 @@ The pinned logic-topography run contains 24 contract row(s) across arbitrum, bas
 - WETH9 (`0xc02aaa...756cc2`, chain 1)
 - WETH9 (`0x420000...000006`, chain 8453)
 - YoOracle (`0x6e879d...d396b0`, chain 1)
+- YoRegistry (`0x542d29...bc8ae8`, chain 8453)
+- yoUSDT (`0x0a09e9...df9716`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 24; live-surface contracts included: 24 (20 live, 4 unknown).
+- Logic-topography rows: 24; live-surface rows included: 24 (22 live, 2 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 27/42 live.
 - Detected codebases: none
@@ -96,15 +98,15 @@ The pinned logic-topography run contains 24 contract row(s) across arbitrum, bas
 - Coverage of address-book-owned deployed-live implementations: 3/15 (20.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 27 own, 4 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 3 discovered implementations excluded (4 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 16
-- Deployed-live implementations: 27 of 34 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 3/15
-- Verified + Unaudited implementations: 12
+- Outside the address book: 13 discovered implementations shown in the inventory but excluded from coverage (4 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 22
+- Confirmed-live implementations: 27 of 44 unique; 17 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 3/26
+- Verified + Unaudited implementations: 23
 - Verified by bytecode match: 0
-- Unverified implementations: 12
-- Unique implementations: 34
-- Raw deployments: 39
+- Unverified implementations: 18
+- Unique implementations: 44
+- Raw deployments: 64
 - Audits discovered: 18 (18 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 9
 - ASD (verified + unaudited TVL): n/a
@@ -117,12 +119,12 @@ The pinned logic-topography run contains 24 contract row(s) across arbitrum, bas
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 2 | 13.3% | 2026-06 |
-| unknown | Tier 2 | 2 | 13.3% | 2025-12 |
-| Accretion | Tier 2 | 1 | 6.7% | 2026-04 |
-| Aetheryc | Tier 2 | 1 | 6.7% | 2025-12 |
-| Offbeat | Tier 2 | 1 | 6.7% | 2025-01 |
-| Paladin | Tier 2 | 1 | 6.7% | 2025-11 |
+| Spearbit | Tier 1 | 2 | 7.7% | 2026-06 |
+| unknown | Tier 2 | 2 | 7.7% | 2025-12 |
+| Accretion | Tier 2 | 1 | 3.8% | 2026-04 |
+| Aetheryc | Tier 2 | 1 | 3.8% | 2025-12 |
+| Offbeat | Tier 2 | 1 | 3.8% | 2025-01 |
+| Paladin | Tier 2 | 1 | 3.8% | 2025-11 |
 
 ## Contract Surface
 
@@ -132,25 +134,35 @@ The pinned logic-topography run contains 24 contract row(s) across arbitrum, bas
 |---|---|---|---|---:|---|---|---|---|
 | TimelockController | governance | project_anchor | own_supporting | 0 | ethereum | unit-263629 | `0x38ce5e...186f48` | ✅ Audited |
 | YoOracle | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-263633 | `0x6e879d...d396b0` | ✅ Audited |
-| YoRegistry | unknown | project_anchor | own_supporting | 1 | base | unit-263660 | `0x56c311...502232` | ✅ Audited |
+| YoRegistry | unknown | project_anchor | own_supporting | 1 | base | unit-263660 | 2 deployments: base `0x542d29...bc8ae8`; base `0x56c311...502232` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (13)
+### ⚠️ Verified + Unaudited (23)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| Escrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0xc5da2b...70ebca`; base `0xfe4196...891e10` | ⚠️ Unaudited |
 | FiatTokenV2_1 | token | project_anchor | own_supporting | 1 | base | unit-263662 | `0xcbb7c0...ed33bf` | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | project_anchor | own_supporting | 2 | ethereum | unit-263655 (2 proxies) | 2 deployments: ethereum `0x1abaea...1bc33c`; ethereum `0xa0b869...06eb48` | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x60a3e3...1adb42` | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | project_anchor | own_supporting | 1 | base | unit-263659 | `0x833589...a02913` | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | project_anchor | own_supporting | 1 | arbitrum | unit-263658 | `0xaf88d0...8e5831` | ⚠️ Unaudited |
+| RoadrunnerWithdrawer | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4fd9f5...e7d7da` | ⚠️ Unaudited |
 | Safe | unknown | project_anchor | own_supporting | 2 | ethereum | unit-263654 (2 proxies) | 2 deployments: ethereum `0x67b6f6...44fcd2`; ethereum `0x93e526...fd5927` | ⚠️ Unaudited |
+| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xae11f1...a3d262` | ⚠️ Unaudited |
 | TetherToken | token | project_anchor | own_supporting | 1 | ethereum | unit-263656 | `0x687496...782f38` | ⚠️ Unaudited |
 | TetherToken | token | project_anchor | own_supporting | 0 | ethereum | unit-263646 | `0xdac17f...831ec7` | ⚠️ Unaudited |
 | WETH9 | token | project_anchor | own_supporting | 0 | ethereum | unit-263643 | `0xc02aaa...756cc2` | ⚠️ Unaudited |
 | WETH9 | token | project_anchor | own_supporting | 0 | base | unit-263650 | `0x420000...000006` | ⚠️ Unaudited |
-| YoGateway | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | base | unit-263663 | `0xf1eee0...4969fa` | ⚠️ Unaudited |
-| yoUSDT | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263653 | `0xb9a7da...5b721e` | ⚠️ Unaudited |
+| YoEscrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x05584e...7a0efb` | ⚠️ Unaudited |
+| YoGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x0cf9a8...7bb0cf`; base `0xecd62a...3c816e`; base `0xf5ebf5...556cae` | ⚠️ Unaudited |
+| YoGateway | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | base | unit-263663 | 2 deployments: base `0xc33660...6f903e`; base `0xf1eee0...4969fa` | ⚠️ Unaudited |
+| yoUSDT | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263653 | 2 deployments: ethereum `0x0a09e9...df9716`; ethereum `0xb9a7da...5b721e` | ⚠️ Unaudited |
+| yoUSDT | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcbb008...14435f` | ⚠️ Unaudited |
+| YoVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 6 deployments: ethereum `0xa9c5f1...443052`; ethereum `0xda92d2...2dc169`; base `0x32578e...d123f7`; base `0x957c92...792358`; base `0xd6e282...ed4c44`; base `0xda92d2...2dc169` | ⚠️ Unaudited |
+| YoVault_V2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 4 | ethereum | n/a | 4 deployments: ethereum `0x000000...588a65`; ethereum `0x3a43ae...0e9de7`; ethereum `0x50c749...c871e9`; ethereum `0xbcbc8c...60bcbc` | ⚠️ Unaudited |
 | YoVault_V2 | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-263657 | `0x586675...cc61a1` | ⚠️ Unaudited |
 | YoVault_V2 | core_logic | project_anchor | own_supporting | 4 | base | unit-263661 (4 proxies) | 4 deployments: base `0x000000...588a65`; base `0x3a43ae...0e9de7`; base `0x50c749...c871e9`; base `0xbcbc8c...60bcbc` | ⚠️ Unaudited |
+| YoVault_V2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x000000...588a65`; arbitrum `0x7e715d...f262bb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -338,7 +350,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | `0xdac17f...831ec7` | TetherToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0xc02aaa...756cc2` | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0x420000...000006` | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xb9a7da...5b721e` | yoUSDT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0a09e9...df9716` | yoUSDT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x586675...cc61a1` | YoVault_V2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0x000000...588a65` | YoVault_V2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -346,9 +358,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 14 |
+| native | 23 |
 | upstream | 0 |
-| standard_library | 2 |
+| standard_library | 3 |
 | needs_review | 18 |
 
 ## Scope Matching Notes

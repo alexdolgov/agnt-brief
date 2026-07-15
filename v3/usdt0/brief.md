@@ -9,21 +9,21 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: USDT0 (`usdt0`)
 - Website: [https://usdt0.to](https://usdt0.to)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, avalanche, berachain, bsc, celo, ethereum, hyperliquid, ink, mantle, optimism, plasma, polygon, sei, unichain
-- Contract surface: 104 unique implementations (106 raw deployments)
-- Coverage basis: 6/48 confirmed own live verified implementations (12.5%); conservative 12.5% with 0 needs-review implementation(s)
+- Contract surface: 132 unique implementations (219 raw deployments)
+- Coverage basis: 6/41 confirmed own live verified implementations (14.6%); conservative 14.6% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $3,624,558,073.84
-- On-chain TVL (included contracts): $33,170,512.69
-- TVL by chain: Ethereum $18,737,428.86 | Arbitrum $11,220,961.08 | Celo $3,212,122.75
+- On-chain TVL (included contracts): $42,178,136.11
+- TVL by chain: Ethereum $18,884,287.59 | Arbitrum $11,220,961.08 | Polygon $8,860,735.08 | Celo $3,212,152.07 | Hyperliquid $0.30
 
 ## Project Description
 
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 62 contract row(s) across arbitrum, ava
 
 ## Fork Analysis
 
-0 of 55 contracts are derived from known codebases. 55 contracts have no detected origin.
+0 of 56 contracts are derived from known codebases. 56 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -52,6 +52,7 @@ The pinned logic-topography run contains 62 contract row(s) across arbitrum, ava
 
 ### Original Contracts (no fork detected - full audit scope)
 
+- UnnamedContract (`0x571429...187f49`, chain 43114)
 - GnosisSafeProxy (`0x4dff9b...600bf8`, chain 1329)
 - GnosisSafeProxy (`0x4dff9b...600bf8`, chain 5000)
 - GnosisSafeProxy (`0x425d1d...beeb58`, chain 80094)
@@ -110,7 +111,7 @@ The pinned logic-topography run contains 62 contract row(s) across arbitrum, ava
 
 ## Contract Surface Quality
 
-- Indexed contracts: 62; live-surface contracts included: 62 (50 live, 12 unknown).
+- Logic-topography rows: 62; live-surface rows included: 62 (62 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 53/81 live.
 - Detected codebases: none
@@ -118,35 +119,35 @@ The pinned logic-topography run contains 62 contract row(s) across arbitrum, ava
 
 ## Audit Coverage Summary
 
-- Coverage of address-book-owned deployed-live implementations: 6/48 (12.5%)
+- Coverage of address-book-owned deployed-live implementations: 6/41 (14.6%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 53 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 51 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 41
-- Deployed-live implementations: 53 of 104 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 6/48
-- Verified + Unaudited implementations: 42
-- Verified by bytecode match: 0
-- Unverified implementations: 5
-- Unique implementations: 104
-- Raw deployments: 106
+- Address-book implementation classification: 46 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 86 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 50
+- Confirmed-live implementations: 46 of 132 unique; 86 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 6/65
+- Verified + Unaudited implementations: 57
+- Verified by bytecode match: 2
+- Unverified implementations: 67
+- Unique implementations: 132
+- Raw deployments: 219
 - Audits discovered: 20 (20 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 8
 - ASD (verified + unaudited TVL): $33,170,512.69
 - Latest audit: 2025-09 (fresh)
 - Audit staleness (calendar age): 1 fresh, 18 aging, 1 stale, 0 unknown
 - Coverage code basis (deployed vs audited code): 1 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 6 match-unverified
-- Tier 1 coverage: 8.3% (ChainSecurity, OpenZeppelin)
+- Tier 1 coverage: 9.8% (ChainSecurity, OpenZeppelin)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| OpenZeppelin | Tier 1 | 4 | 8.3% | 2025-09 |
-| Paladin | Tier 2 | 2 | 4.2% | 2025-01 |
-| ChainSecurity | Tier 1 | 1 | 2.1% | 2025-03 |
-| Guardian | Tier 2 | 1 | 2.1% | 2025-01 |
-| TonTech | Tier 2 | 1 | 2.1% | 2025-07 |
+| OpenZeppelin | Tier 1 | 4 | 6.2% | 2025-09 |
+| Paladin | Tier 2 | 2 | 3.1% | 2025-01 |
+| ChainSecurity | Tier 1 | 1 | 1.5% | 2025-03 |
+| Guardian | Tier 2 | 1 | 1.5% | 2025-01 |
+| TonTech | Tier 2 | 1 | 1.5% | 2025-07 |
 
 ## Contract Surface
 
@@ -158,36 +159,51 @@ The pinned logic-topography run contains 62 contract row(s) across arbitrum, ava
 | MultiHopComposer | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-260257 | `0x759ba4...4a2ad1` | ✅ Audited |
 | OAdapterUpgradeable | adapter | project_anchor | own_supporting | 1 | ethereum | unit-260285 | `0x6c96de...a41dee` | ✅ Audited |
 | TetherToken | token | project_anchor | own_supporting | 1 | ethereum | unit-260283 | `0x687496...782f38` | ✅ Audited |
-| TetherTokenOFTExtension | adapter | project_anchor | own_supporting | 1 | berachain | unit-260311 | `0x779ded...713736` | ✅ Audited |
+| TetherTokenOFTExtension | adapter | project_anchor | own_supporting | 1 | berachain | unit-260311 | 2 deployments: berachain `0x1ec7df...9ab6a3`; berachain `0x779ded...713736` | ✅ Audited |
 | UChildUSDT0 | token | project_anchor | own_supporting | 1 | polygon | unit-260298 | `0xc2132d...b58e8f` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (42)
+### ⚠️ Verified + Unaudited (57)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | UsdtOFT | token | project_anchor | own_supporting | 0 | ethereum | unit-260241 | `0x1f748c...15dfb0` | ⚠️ Unaudited |
 | UsdtOFT | token | project_anchor | own_supporting | 0 | arbitrum | unit-260258 | `0x77652d...919b92` | ⚠️ Unaudited |
+| ChildERC20 | token | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 4 deployments: polygon `0x53e0bc...abad39`; polygon `0x556f50...aa9e6d`; polygon `0x578360...11ed5f`; polygon `0x71b821...085978` | ⚠️ Unaudited |
 | UsdtOFT | token | project_anchor | own_supporting | 0 | celo | unit-260259 | `0xf10e16...2db243` | ⚠️ Unaudited |
+| UsdtOFT | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x811ed7...b0d5c0`; celo `0x811ed7...b0d5c0` | ⚠️ Unaudited |
+| UChildERC20Proxy | token | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x313d00...5bd604`; polygon `0x5a2fdf...908d19` | ⚠️ Unaudited |
+| EQBOFT | token | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 3 deployments: hyperliquid `0x3ce842...ad4e50`; hyperliquid `0x73e247...4cac8c`; hyperliquid `0xb4484a...2cefd1` | ⚠️ Unaudited |
+| ChildChainManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | `0xa6fa4f...d1c0aa` | ⚠️ Unaudited |
+| ChildERC1155 | token | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa0c68c...c77c77` | ⚠️ Unaudited |
+| ERC20Mock | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf1815b...045d14` | ⚠️ Unaudited |
+| FxChild | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x839725...afa28a` | ⚠️ Unaudited |
 | GnosisSafeL2 | governance | project_anchor | own_supporting | 1 | berachain | unit-260312 | `0x425d1d...beeb58` | ⚠️ Unaudited |
 | GnosisSafeProxy | governance | project_anchor | own_supporting | 0 | sei | unit-260250 | `0x4dff9b...600bf8` | ⚠️ Unaudited |
+| HyperLiquidComposer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 2 deployments: hyperliquid `0x036afc...44484b`; hyperliquid `0xcb768e...dc59cc` | ⚠️ Unaudited |
+| HyperLiquidComposer_V1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 14 deployments: hyperliquid `0x11ae59...e13083`; hyperliquid `0x19d317...0cabc2`; hyperliquid `0x2a661a...90dd93`; hyperliquid `0x37f027...0594df`; hyperliquid `0x408380...32bfd5`; hyperliquid `0x5bddd9...2dc486`; hyperliquid `0x5bfee5...6dc280`; hyperliquid `0x62855e...b82b58`; hyperliquid `0xc1c74b...8d4ffe`; hyperliquid `0xd9b7a2...3e04a6`; hyperliquid `0xe5aa9a...99d921`; hyperliquid `0xfa5c61...c5e756`; hyperliquid `0xfa616f...fa8aae`; hyperliquid `0xfb6761...f873d8` | ⚠️ Unaudited |
 | HyperLiquidComposer_V1 | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-260278 | `0x689f01...dc1802` | ⚠️ Unaudited |
+| HyperLiquidComposer_V1_FeeToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 3 deployments: hyperliquid `0x7a3220...eb05a0`; hyperliquid `0xa18199...4a62eb`; hyperliquid `0xb120da...a8123a` | ⚠️ Unaudited |
 | HyperLiquidComposer_V1_FeeToken | token | project_anchor | own_supporting | 0 | hyperliquid | unit-260279 | `0x80123a...2e7585` | ⚠️ Unaudited |
-| HyperliquidExtension | adapter | project_anchor | own_supporting | 1 | hyperliquid | unit-260321 | `0xb8ce59...625ebb` | ⚠️ Unaudited |
-| HyperliquidExtension | adapter | project_anchor | own_supporting | 1 | hyperliquid | unit-260318 | `0xf4d923...e37949` | ⚠️ Unaudited |
+| HyperliquidExtension | adapter | project_anchor | own_supporting | 2 | hyperliquid | unit-260318 | 4 deployments: hyperliquid `0x4bb133...61b259`; hyperliquid `0xb8ce59...625ebb`; hyperliquid `0xf4d923...e37949`; hyperliquid `0xf555a1...db34b9` | ⚠️ Unaudited |
+| MaticWETH | token | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x7ceb23...b9f619` | ⚠️ Unaudited |
 | OAdapterUpgradeable | adapter | project_anchor | own_supporting | 1 | ethereum | unit-260284 | `0xb9c232...fd696c` | ⚠️ Unaudited |
+| OFTMock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbc7f24...c14b84` | ⚠️ Unaudited |
+| OmniCounter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x519639...9a063a`; ethereum `0xe87fb1...432f94` | ⚠️ Unaudited |
 | OUpgradeable | proxy | project_anchor | own_supporting | 1 | optimism | unit-260288 | `0xf03b4d...51a0ad` | ⚠️ Unaudited |
-| OUpgradeable | proxy | project_anchor | own_supporting | 1 | bsc | unit-260310 | `0x53c3a6...0bcfc2` | ⚠️ Unaudited |
+| OUpgradeable | proxy | project_anchor | own_supporting | 1 | bsc | unit-260310 | 2 deployments: bsc `0x53c3a6...0bcfc2`; bsc `0xded166...b5cada` | ⚠️ Unaudited |
+| OUpgradeable | proxy | project_anchor | own_core | 2 | bsc | n/a | 4 deployments: bsc `0xaf37e8...0847ff`; bsc `0xcb768e...dc59cc`; mantle `0xaf37e8...0847ff`; mantle `0xcb768e...dc59cc` | ⚠️ Unaudited |
 | OUpgradeable | proxy | project_anchor | own_supporting | 1 | unichain | unit-260289 | `0xc07be8...f03ec3` | ⚠️ Unaudited |
 | OUpgradeable | proxy | project_anchor | own_supporting | 1 | polygon | unit-260296 | `0x5421cf...49e352` | ⚠️ Unaudited |
 | OUpgradeable | proxy | project_anchor | own_supporting | 1 | polygon | unit-260297 | `0x6ba103...829e13` | ⚠️ Unaudited |
 | OUpgradeable | proxy | project_anchor | own_supporting | 1 | hyperliquid | unit-260319 | `0x4e41cf...151daf` | ⚠️ Unaudited |
 | OUpgradeable | proxy | project_anchor | own_supporting | 1 | hyperliquid | unit-260320 | `0x904861...237e98` | ⚠️ Unaudited |
+| OUpgradeable | proxy | non_address_book | non_address_book_inventory (excluded) | 1 | hyperliquid | n/a | 2 deployments: hyperliquid `0xad11a8...b35afa`; hyperliquid `0xcd9a74...5aa7c8` | ⚠️ Unaudited |
 | OUpgradeable | proxy | project_anchor | own_supporting | 1 | sei | unit-260292 | `0x56fe74...85cc60` | ⚠️ Unaudited |
-| OUpgradeable | proxy | project_anchor | own_supporting | 1 | mantle | unit-260308 | `0xcb768e...dc59cc` | ⚠️ Unaudited |
 | OUpgradeable | proxy | project_anchor | own_supporting | 1 | plasma | unit-260316 | `0x02ca37...6a7cf9` | ⚠️ Unaudited |
 | OUpgradeable | proxy | project_anchor | own_supporting | 1 | plasma | unit-260315 | `0x63ab93...08e6f7` | ⚠️ Unaudited |
 | OUpgradeable | proxy | project_anchor | own_supporting | 1 | arbitrum | unit-260299 | `0x14e4a1...298d92` | ⚠️ Unaudited |
 | OUpgradeable | proxy | project_anchor | own_supporting | 1 | arbitrum | unit-260303 | `0xf40542...b6df39` | ⚠️ Unaudited |
+| OUpgradeable | proxy | non_address_book | non_address_book_inventory (excluded) | 1 | berachain | n/a | 2 deployments: berachain `0x322483...773772`; berachain `0x4970ea...0e8752` | ⚠️ Unaudited |
 | OUpgradeable | proxy | project_anchor | own_supporting | 1 | berachain | unit-260313 | `0x3dc963...0379cb` | ⚠️ Unaudited |
 | Safe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-260282 | `0x4dff9b...600bf8` | ⚠️ Unaudited |
 | SafeL2 | unknown | project_anchor | own_supporting | 1 | optimism | unit-260286 | `0x4dff9b...600bf8` | ⚠️ Unaudited |
@@ -197,16 +213,16 @@ The pinned logic-topography run contains 62 contract row(s) across arbitrum, ava
 | SafeL2 | unknown | project_anchor | own_supporting | 1 | plasma | unit-260314 | `0x4dff9b...600bf8` | ⚠️ Unaudited |
 | SafeL2 | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-260300 | `0x4dff9b...600bf8` | ⚠️ Unaudited |
 | SafeProxy | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-260280 | `0xb64a89...7fc541` | ⚠️ Unaudited |
-| TetherTokenOFTExtension | adapter | project_anchor | own_supporting | 1 | optimism | unit-260287 | `0x01bff4...bc1071` | ⚠️ Unaudited |
-| TetherTokenOFTExtension | adapter | project_anchor | own_supporting | 1 | bsc | unit-260309 | `0x21caef...96a3bf` | ⚠️ Unaudited |
-| TetherTokenOFTExtension | adapter | project_anchor | own_supporting | 1 | unichain | unit-260291 | `0x915143...60ecc5` | ⚠️ Unaudited |
-| TetherTokenOFTExtension | adapter | project_anchor | own_supporting | 1 | polygon | unit-260295 | `0xf1815b...045d14` | ⚠️ Unaudited |
+| SignatureChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 3 deployments: polygon `0xaf368c...bcbebf`; arbitrum `0xd94926...620cb4`; avalanche `0x6d2053...432c35` | ⚠️ Unaudited |
+| TetherTokenOFTExtension | adapter | project_anchor | own_supporting | 10 | optimism | unit-260287 | 24 deployments: optimism `0x01bff4...bc1071`; optimism `0xb8ce59...625ebb`; bsc `0x1ec7df...9ab6a3`; bsc `0x21caef...96a3bf`; bsc `0x915143...60ecc5`; unichain `0x01bff4...bc1071`; unichain `0x915143...60ecc5`; unichain `0xaf37e8...0847ff`; polygon `0x6d2053...432c35`; polygon `0xe1ad84...93681e`; polygon `0xf1815b...045d14`; hyperliquid `0xaf368c...bcbebf`; hyperliquid `0xd94926...620cb4`; hyperliquid `0xe1ad84...93681e`; hyperliquid `0xe9aba8...0f7de7`; mantle `0x1ec7df...9ab6a3`; mantle `0x779ded...713736`; arbitrum `0x404612...0d7159`; arbitrum `0x9001db...d25001`; avalanche `0x2775d5...d1dd32`; avalanche `0x824d8f...4e4cba`; avalanche `0xc6bc40...63e7f9`; avalanche `0xd94926...620cb4`; avalanche `0xf1815b...045d14` | ⚠️ Unaudited |
 | TetherTokenOFTExtension | adapter | project_anchor | own_supporting | 1 | sei | unit-260293 | 2 deployments: sei `0x915143...60ecc5`; sei `0xaf37e8...0847ff` | ⚠️ Unaudited |
-| TetherTokenOFTExtension | adapter | project_anchor | own_supporting | 1 | mantle | unit-260306 | `0x779ded...713736` | ⚠️ Unaudited |
 | TetherTokenOFTExtension | adapter | project_anchor | own_supporting | 2 | plasma | unit-260317 (2 proxies) | 2 deployments: plasma `0x1b64b9...d4d193`; plasma `0xb8ce59...625ebb` | ⚠️ Unaudited |
-| TetherTokenOFTExtension | adapter | project_anchor | own_supporting | 1 | arbitrum | unit-260302 | `0x404612...0d7159` | ⚠️ Unaudited |
-| TetherTokenOFTExtension | adapter | project_anchor | own_supporting | 1 | avalanche | unit-260305 | `0x2775d5...d1dd32` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | project_anchor | own_supporting | 1 | avalanche | unit-260304 | `0x7e7866...ba9a68` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x779ded...713736` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | avalanche | unit-260304 | 2 deployments: avalanche `0x571429...187f49`; avalanche `0x7e7866...ba9a68` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | non_address_book | standard_proxy_or_library (excluded) | 1 | berachain | n/a | `0x476b0a...07c4df` | ⚠️ Unaudited |
+| UChildERC20 | token | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x422432...804046` | ⚠️ Unaudited |
+| USDCOFTAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x67480c...df647f` | ⚠️ Unaudited |
+| WOFTAdapterFactory | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x69bfc7...a74d9f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -214,13 +230,16 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ⚠️ Verified by Bytecode + Unaudited (0)
+### ⚠️ Verified by Bytecode + Unaudited (2)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| OUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | berachain | n/a | 3 deployments: unichain `0x63f2f0...116ad8`; unichain `0xf48e70...cd32e3`; berachain `0x4eee45...d1d60b` | ⚠️ Unaudited (bytecode match) |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 24 deployments: ethereum `0x8ad82b...0778d4`; ethereum `0x943ed4...1ca66e`; optimism `0xe7cd86...0fc82d`; bsc `0x01bff4...bc1071`; bsc `0xedaba0...ccb027`; bsc `0xf555a1...db34b9`; unichain `0x818861...73c97a`; unichain `0xcb768e...dc59cc`; polygon `0xd94926...620cb4`; hyperliquid `0x6d2053...432c35`; hyperliquid `0x779ded...713736`; hyperliquid `0x880f61...89167f`; hyperliquid `0xb1eead...2b86c3`; hyperliquid `0xd8cf92...d6ff4d`; sei `0xcb768e...dc59cc`; mantle `0x01bff4...bc1071`; mantle `0xf555a1...db34b9`; plasma `0x322483...773772`; plasma `0x5be536...47d8b2`; plasma `0x779ded...713736`; avalanche `0xf8b07f...36cd80`; berachain `0xdbbf43...e9728c`; berachain `0xdfb6f2...718f79`; berachain `0xf555a1...db34b9` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (56)
+### ❓ Unverified (67)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -238,6 +257,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x21caef...96a3bf` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2775d5...d1dd32` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3dc963...0379cb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3e10cf...7a0597` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3f8294...3a34e4` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x404612...0d7159` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x425d1d...beeb58` | ❓ Unverified |
@@ -254,21 +274,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x759ba4...4a2ad1` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x77652d...919b92` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x789498...872105` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7916ac...fb8675` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7e7866...ba9a68` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x80123a...2e7585` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x904861...237e98` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x915143...60ecc5` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x94bcca...505554` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1438c...05b024` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1be15...a0dab2` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xacc6ef...58f5f4` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb64a89...7fc541` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb8ce59...625ebb` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc07be8...f03ec3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc1bc8b...5ace0c` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc2132d...b58e8f` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc57efa...5dd84a` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc95de5...a5dae2` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcb768e...dc59cc` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd8479f...d4171a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdd19d4...2fc3df` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe3119e...5a53d6` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe7cd86...0fc82d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf03b4d...51a0ad` | ❓ Unverified |
@@ -277,11 +301,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf4d923...e37949` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf50258...b50dac` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfd086b...9fcbb9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x593a21...fc905b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xee604b...624672` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x4fcec1...83ab0a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x603b73...72308a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-260263 | `0x0200c2...8470c1` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-260264 | `0x1cb6de...434a65` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-260265 | `0xa1be15...a0dab2` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-260266 | `0xc95de5...a5dae2` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ink | unit-260267 | `0xf50258...b50dac` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x928b57...12c577` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xcbafeb...35efad` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -493,41 +523,34 @@ Verified + unaudited native implementations ranked by TVL:
 | celo | `0xf10e16...2db243` | UsdtOFT | token | $3,212,122.75 | Verified native implementation with $3,212,122.75 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | hyperliquid | `0x689f01...dc1802` | HyperLiquidComposer_V1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | hyperliquid | `0x80123a...2e7585` | HyperLiquidComposer_V1_FeeToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0xb8ce59...625ebb` | HyperliquidExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | `0xf4d923...e37949` | HyperliquidExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | `0x4bb133...61b259` | HyperliquidExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0xb9c232...fd696c` | OAdapterUpgradeable | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | `0xf03b4d...51a0ad` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | `0x53c3a6...0bcfc2` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xaf37e8...0847ff` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | `0xc07be8...f03ec3` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | `0x5421cf...49e352` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | `0x6ba103...829e13` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | hyperliquid | `0x4e41cf...151daf` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | hyperliquid | `0x904861...237e98` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sei | `0x56fe74...85cc60` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mantle | `0xcb768e...dc59cc` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | plasma | `0x02ca37...6a7cf9` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | plasma | `0x63ab93...08e6f7` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | `0x14e4a1...298d92` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | `0xf40542...b6df39` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | berachain | `0x3dc963...0379cb` | OUpgradeable | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | `0x01bff4...bc1071` | TetherTokenOFTExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | `0x21caef...96a3bf` | TetherTokenOFTExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| unichain | `0x915143...60ecc5` | TetherTokenOFTExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | `0xf1815b...045d14` | TetherTokenOFTExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sei | `0x915143...60ecc5` | TetherTokenOFTExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| mantle | `0x779ded...713736` | TetherTokenOFTExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | plasma | `0x1b64b9...d4d193` | TetherTokenOFTExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0x404612...0d7159` | TetherTokenOFTExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| avalanche | `0x2775d5...d1dd32` | TetherTokenOFTExtension | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 37 |
+| native | 50 |
 | upstream | 0 |
-| standard_library | 11 |
-| needs_review | 56 |
+| standard_library | 13 |
+| needs_review | 69 |
 
 ## Scope Matching Notes
 

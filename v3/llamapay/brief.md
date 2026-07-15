@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: LlamaPay (`llamapay`)
 - Website: [https://llamapay.io](https://llamapay.io)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, avalanche, avalanche-fuji, base, blast, bsc, ethereum, fantom, gnosis, goerli, optimism, polygon
-- Contract surface: 43 unique implementations (43 raw deployments)
+- Chains: arbitrum, avalanche, avalanche-fuji, base, berachain, blast, bsc, cronos, ethereum, fantom, fraxtal, gnosis, goerli, linea, mantle, metis, mode, optimism, polygon, polygon-zkevm, scroll, sonic, zora
+- Contract surface: 52 unique implementations (93 raw deployments)
 - Coverage basis: 0/19 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $36,149,992.30
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for LlamaPay.
 
 ### Architecture
 
-The pinned logic-topography run contains 19 contract row(s) across arbitrum, avalanche, avalanche-fuji, base, blast, bsc, ethereum, fantom, gnosis, goerli, optimism, polygon. Structural roles: 8 supporting, 8 unclassified, 3 core. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 19 contract row(s) across arbitrum, avalanche, avalanche-fuji, base, berachain, blast, bsc, cronos, ethereum, fantom, gnosis, goerli, metis, optimism, polygon, sonic, zora. Structural roles: 8 supporting, 8 unclassified, 3 core. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -94,7 +94,7 @@ The pinned logic-topography run contains 19 contract row(s) across arbitrum, ava
 
 ## Contract Surface Quality
 
-- Indexed contracts: 19; live-surface contracts included: 19 (19 live, 0 unknown).
+- Logic-topography rows: 19; live-surface rows included: 19 (19 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 40/43 live.
 - Detected codebases: none
@@ -105,15 +105,15 @@ The pinned logic-topography run contains 19 contract row(s) across arbitrum, ava
 - Coverage of address-book-owned deployed-live implementations: 0/19 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 40 own, 3 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 9 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Deployed-live implementations: 40 of 43 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/19
-- Verified + Unaudited implementations: 19
+- Confirmed-live implementations: 40 of 52 unique; 12 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/25
+- Verified + Unaudited implementations: 25
 - Verified by bytecode match: 0
-- Unverified implementations: 21
-- Unique implementations: 43
-- Raw deployments: 43
+- Unverified implementations: 27
+- Unique implementations: 52
+- Raw deployments: 93
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -132,19 +132,23 @@ The pinned logic-topography run contains 19 contract row(s) across arbitrum, ava
 
 - None
 
-### ⚠️ Verified + Unaudited (19)
+### ⚠️ Verified + Unaudited (25)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | Disperse | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-245182 | `0x6f9fb4...56301a` | ⚠️ Unaudited |
 | Disperse | unknown | project_anchor | own_supporting | 0 | avalanche | unit-245189 | `0x6f9fb4...56301a` | ⚠️ Unaudited |
+| LlamaPayBot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 12 deployments: ethereum `0x0327a0...ae948e`; ethereum `0xe10eb2...218ee9`; optimism `0x6f9fb4...56301a`; arbitrum `0xb1870e...b184e0`; avalanche `0x0327a0...ae948e`; avalanche `0x0e52b1...c258cf`; avalanche `0x3addfd...b6cb0f`; avalanche `0x9410fb...1b633c`; avalanche `0xb7caa9...8b268c`; avalanche `0xda33d4...5294d1`; avalanche `0xe10eb2...218ee9`; avalanche `0xf13563...bac057` | ⚠️ Unaudited |
 | LlamaPayBot | unknown | project_anchor | own_supporting | 0 | ethereum | unit-245158 | `0xc5a4fe...074ab9` | ⚠️ Unaudited |
 | LlamaPayBot | unknown | project_anchor | own_supporting | 0 | bsc | unit-245194 | `0xc5a4fe...074ab9` | ⚠️ Unaudited |
 | LlamaPayBot | unknown | project_anchor | own_supporting | 0 | avalanche | unit-245187 | `0x57547f...0353d7` | ⚠️ Unaudited |
 | LlamaPayFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-245161 | `0xde1c04...f84c7f` | ⚠️ Unaudited |
 | LlamaPayFactory | registry | project_anchor | own_supporting | 0 | bsc | unit-245196 | `0xde1c04...f84c7f` | ⚠️ Unaudited |
+| LlamaPayFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | 6 deployments: metis `0x06bfb4...f92c38`; metis `0x0ebe05...9b411c`; metis `0x43634d...030600`; metis `0x4ddfc2...7567b7`; metis `0xcfb166...c937bc`; berachain `0x09c39b...3aea07` | ⚠️ Unaudited |
 | LlamaPayFactory | registry | project_anchor | own_supporting | 0 | base | unit-245198 | `0x09c39b...3aea07` | ⚠️ Unaudited |
 | LlamaPayFactory | registry | project_anchor | own_supporting | 0 | arbitrum | unit-245183 | `0xde1c04...f84c7f` | ⚠️ Unaudited |
+| Simple Vesting Escrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 12 deployments: ethereum `0x9dd5cf...14bad2`; bsc `0x4ace3e...2b84bd`; gnosis `0x4ace3e...2b84bd`; polygon `0x4ace3e...2b84bd`; sonic `0xb61915...75a8b4`; base `0x0d5e12...d62cce`; base `0x2b3a5d...d15e49`; base `0x4ace3e...2b84bd`; base `0x4c0f3d...6d4be5`; base `0xb61915...75a8b4`; arbitrum `0x4ace3e...2b84bd`; berachain `0xb93427...10411a` | ⚠️ Unaudited |
+| TokenEscrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02266e...121c01` | ⚠️ Unaudited |
 | TokenEscrow | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-245200 | `0x056e39...532b72` | ⚠️ Unaudited |
 | TokenEscrow | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-245163 | `0xb4e9d1...404779` | ⚠️ Unaudited |
 | TokenEscrow | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-245180 | `0x1564d7...528734` | ⚠️ Unaudited |
@@ -155,6 +159,8 @@ The pinned logic-topography run contains 19 contract row(s) across arbitrum, ava
 | Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | polygon | unit-245171 | `0x62e13b...cd4c10` | ⚠️ Unaudited |
 | Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | base | unit-245199 | `0x62e13b...cd4c10` | ⚠️ Unaudited |
 | Vesting Escrow Factory | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-245181 | `0x62e13b...cd4c10` | ⚠️ Unaudited |
+| Vesting Escrow Factory | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | 3 deployments: sonic `0xb93427...10411a`; berachain `0x4ace3e...2b84bd`; berachain `0xb61915...75a8b4` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 12 deployments: ethereum `0xb61915...75a8b4`; ethereum `0xb93427...10411a`; bsc `0xb61915...75a8b4`; bsc `0xb93427...10411a`; gnosis `0xb61915...75a8b4`; gnosis `0xb93427...10411a`; polygon `0xb61915...75a8b4`; polygon `0xb93427...10411a`; arbitrum `0xb61915...75a8b4`; arbitrum `0xb93427...10411a`; avalanche `0xb61915...75a8b4`; avalanche `0xb93427...10411a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -168,7 +174,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (24)
+### ❓ Unverified (27)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -180,6 +186,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-245164 | `0xc5a4fe...074ab9` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-245165 | `0xd152f5...452150` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-245166 | `0xde1c04...f84c7f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | cronos | n/a | 2 deployments: cronos `0x62e13b...cd4c10`; zora `0x62e13b...cd4c10` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-245192 | `0x02266e...121c01` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-245195 | `0xd152f5...452150` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-245168 | `0xd152f5...452150` | ❓ Unverified |
@@ -193,8 +200,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-245177 | `0xd152f5...452150` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-245178 | `0xda33d4...5294d1` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-245179 | `0xde1c04...f84c7f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb93427...10411a` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-245184 | `0x62e13b...cd4c10` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | unit-245185 | `0xc4705f...6a7d30` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x4ace3e...2b84bd` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-245188 | `0x62e13b...cd4c10` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-245190 | `0x7d507b...25f4a3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-245197 | `0x62e13b...cd4c10` | ❓ Unverified |
@@ -247,10 +256,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 17 |
+| native | 23 |
 | upstream | 2 |
 | standard_library | 0 |
-| needs_review | 24 |
+| needs_review | 27 |
 
 ## Scope Matching Notes
 

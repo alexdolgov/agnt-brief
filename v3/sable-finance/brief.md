@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Sable Finance (`sable-finance`)
 - Website: [https://sable.finance](https://sable.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: bsc
-- Contract surface: 27 unique implementations (27 raw deployments)
+- Contract surface: 33 unique implementations (33 raw deployments)
 - Coverage basis: 11/25 confirmed own live verified implementations (44.0%); conservative 44.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $571,941.06
 - On-chain TVL (included contracts): n/a
@@ -65,7 +65,7 @@ The pinned logic-topography run contains 25 contract row(s) across bsc. Structur
 
 ## Contract Surface Quality
 
-- Indexed contracts: 25; live-surface contracts included: 25 (25 live, 0 unknown).
+- Logic-topography rows: 25; live-surface rows included: 25 (25 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 27/27 live.
 - Detected codebases: none
@@ -76,15 +76,15 @@ The pinned logic-topography run contains 25 contract row(s) across bsc. Structur
 - Coverage of address-book-owned deployed-live implementations: 11/25 (44.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 27 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 6 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 27 of 27 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 11/25
-- Verified + Unaudited implementations: 14
+- Confirmed-live implementations: 27 of 33 unique; 6 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 11/29
+- Verified + Unaudited implementations: 18
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 27
-- Raw deployments: 27
+- Unverified implementations: 4
+- Unique implementations: 33
+- Raw deployments: 33
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -97,7 +97,7 @@ The pinned logic-topography run contains 25 contract row(s) across bsc. Structur
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| SlowMist | Tier 1 | 11 | 44.0% | 2023-05 |
+| SlowMist | Tier 1 | 11 | 37.9% | 2023-05 |
 
 ## Contract Surface
 
@@ -117,7 +117,7 @@ The pinned logic-topography run contains 25 contract row(s) across bsc. Structur
 | TroveHelper | unknown | project_anchor | own_supporting | 0 | bsc | unit-391922 | `0xd1bf4d...3d80f8` | ✅ Audited |
 | TroveManager | unknown | project_anchor | own_supporting | 0 | bsc | unit-391927 | `0xec0350...483b85` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (14)
+### ⚠️ Verified + Unaudited (18)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
@@ -126,9 +126,13 @@ The pinned logic-topography run contains 25 contract row(s) across bsc. Structur
 | DefaultPool | unknown | project_anchor | own_supporting | 0 | bsc | unit-391897 | `0x654ed8...121088` | ⚠️ Unaudited |
 | GasPool | unknown | project_anchor | own_supporting | 0 | bsc | unit-391925 | `0xe9bc9a...088d01` | ⚠️ Unaudited |
 | HintHelpers | unknown | project_anchor | own_supporting | 0 | bsc | unit-391879 | `0x08e260...5405e8` | ⚠️ Unaudited |
+| LPPoolTVLChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc8ffef...dc77af` | ⚠️ Unaudited |
 | MultiTroveGetter | unknown | project_anchor | own_supporting | 0 | bsc | unit-391910 | `0x97c984...2804e9` | ⚠️ Unaudited |
+| RewardsChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf75180...0b58f4` | ⚠️ Unaudited |
+| SableRedemption | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x41fa54...6a0483` | ⚠️ Unaudited |
 | SABLEToken | token | project_anchor | own_supporting | 0 | bsc | unit-391885 | `0x1ee098...5a878d` | ⚠️ Unaudited |
 | SortedTroves | unknown | project_anchor | own_supporting | 0 | bsc | unit-391907 | `0x97c131...9dc87c` | ⚠️ Unaudited |
+| StakedLPTVLChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb45fc0...f63331` | ⚠️ Unaudited |
 | USDSToken | token | project_anchor | own_supporting | 0 | bsc | unit-391881 | `0x0c6ed1...240fa0` | ⚠️ Unaudited |
 | VestingWallet | unknown | project_anchor | own_supporting | 0 | bsc | unit-391889 | `0x38c948...bd2ed0` | ⚠️ Unaudited |
 | VestingWallet | unknown | project_anchor | own_supporting | 0 | bsc | unit-391903 | `0x781285...7872b7` | ⚠️ Unaudited |
@@ -148,12 +152,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x43a146...6d652a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x466333...10696f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391891 | `0x57e561...f73dc9` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391912 | `0xa0d4e2...ecccb0` | ❓ Unverified |
 
@@ -212,10 +218,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 25 |
+| native | 29 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

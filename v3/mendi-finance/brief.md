@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Mendi Finance (`mendi-finance`)
 - Website: [https://malda.xyz/](https://malda.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: linea
-- Contract surface: 28 unique implementations (29 raw deployments)
+- Contract surface: 68 unique implementations (126 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $1,546,416.55
 - On-chain TVL (included contracts): n/a
@@ -49,7 +49,7 @@ The pinned logic-topography run contains 40 contract row(s) across linea. Struct
 
 ## Fork Analysis
 
-0 of 23 contracts are derived from known codebases. 23 contracts have no detected origin.
+0 of 35 contracts are derived from known codebases. 35 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -58,6 +58,15 @@ The pinned logic-topography run contains 40 contract row(s) across linea. Struct
 ### Original Contracts (no fork detected - full audit scope)
 
 - BribeV2 (`0xec9453...cc0f5a`, chain 59144)
+- CErc20Upgradable (`0x0a3b1e...fd5f0b`, chain 59144)
+- CErc20Upgradable (`0x1ce302...f9c920`, chain 59144)
+- CErc20Upgradable (`0x5a731d...865456`, chain 59144)
+- CErc20Upgradable (`0x6e0c50...f6c4f7`, chain 59144)
+- CErc20Upgradable (`0x801c4c...29216f`, chain 59144)
+- CErc20Upgradable (`0x883100...bcd40d`, chain 59144)
+- CErc20Upgradable (`0x8ce989...817045`, chain 59144)
+- CErc20Upgradable (`0xb52f4c...3129a5`, chain 59144)
+- CErc20Upgradable (`0xd910ea...5644ac`, chain 59144)
 - GnosisSafeProxy (`0xe3cda0...aee9ee`, chain 59144)
 - LGEDepositor (`0x8f1b13...49f14d`, chain 59144)
 - Mendi (`0x43e880...44065f`, chain 59144)
@@ -66,6 +75,9 @@ The pinned logic-topography run contains 40 contract row(s) across linea. Struct
 - OwnedDistributor (`0x5df210...2bc434`, chain 59144)
 - OwnedDistributor (`0x716f2d...1053f5`, chain 59144)
 - Pair (`0xe5e19b...7bf567`, chain 59144)
+- ReserveManagerV2 (`0x9a71e9...2b751f`, chain 59144)
+- StakedDistributor (`0x07d392...f26673`, chain 59144)
+- StakedDistributor (`0x7f13ef...e526f8`, chain 59144)
 - TimelockController (`0x6c81d7...b26902`, chain 59144)
 - TransparentUpgradeableProxy (`0x109f4a...29362a`, chain 59144)
 - TransparentUpgradeableProxy (`0x150b1e...4921ca`, chain 59144)
@@ -84,7 +96,7 @@ The pinned logic-topography run contains 40 contract row(s) across linea. Struct
 ## Contract Surface Quality
 
 - Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
-- Indexed contracts: 40; live/inactive and live-deployment-unit totals are withheld until liveness completes.
+- Logic-topography rows: 40; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -93,15 +105,15 @@ The pinned logic-topography run contains 40 contract row(s) across linea. Struct
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 1 exact-address-book context/dependencies excluded, 27 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 15
+- Outside the address book: 40 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 23
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- All block-explorer-verified implementations audited (incl. non-live): 0/57
+- Verified + Unaudited implementations: 57
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 28
-- Raw deployments: 29
+- Unverified implementations: 11
+- Unique implementations: 68
+- Raw deployments: 126
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -120,38 +132,67 @@ The pinned logic-topography run contains 40 contract row(s) across linea. Struct
 
 - None
 
-### ⚠️ Verified + Unaudited (28)
+### ⚠️ Verified + Unaudited (57)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| Api3AggregatorAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 3 deployments: linea `0x14d8ca...c6d6ca`; linea `0x392728...9a80a5`; linea `0xd707bd...6c84ba` | ⚠️ Unaudited |
+| Api3AggregatorDeviationAdaptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x6fecd2...b1ab9b` | ⚠️ Unaudited |
+| BasicLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x523546...92b69b`; linea `0xa9822b...e28f27` | ⚠️ Unaudited |
 | BribeV2 | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400475 | `0xec9453...cc0f5a` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400485 | `0x109f4a...29362a` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400489 | `0x1f27f8...9869aa` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400487 | `0x333d8b...e1b30d` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400482 | `0x8a90d2...074a67` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400490 | `0x9b4971...0753b5` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400480 | `0x9be5e2...88a40f` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400483 | `0xad7f33...fee6f3` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400478 | `0xceed85...86a782` | ⚠️ Unaudited |
-| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400486 | `0xf669c3...300e89` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x022e3a...6d799b`; linea `0x815c08...0b2cd7` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400478 | 2 deployments: linea `0x0a3b1e...fd5f0b`; linea `0xceed85...86a782` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x0b3a1b...4cbbe4`; linea `0x268eb0...e929b4` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400485 | 2 deployments: linea `0x109f4a...29362a`; linea `0x801c4c...29216f` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400480 | 2 deployments: linea `0x1ce302...f9c920`; linea `0x9be5e2...88a40f` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400489 | 2 deployments: linea `0x1f27f8...9869aa`; linea `0xb52f4c...3129a5` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400487 | 2 deployments: linea `0x333d8b...e1b30d`; linea `0x8ce989...817045` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400482 | 2 deployments: linea `0x5a731d...865456`; linea `0x8a90d2...074a67` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400483 | 2 deployments: linea `0x6e0c50...f6c4f7`; linea `0xad7f33...fee6f3` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400486 | 2 deployments: linea `0x883100...bcd40d`; linea `0xf669c3...300e89` | ⚠️ Unaudited |
+| CErc20Upgradable | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400490 | 2 deployments: linea `0x9b4971...0753b5`; linea `0xd910ea...5644ac` | ⚠️ Unaudited |
 | Comptroller | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400479 | 2 deployments: linea `0x1a1166...c3d9e3`; linea `0x1b4d3b...b93103` | ⚠️ Unaudited |
 | GnosisSafeL2 | governance | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400481 | `0xe3cda0...aee9ee` | ⚠️ Unaudited |
+| JumpRateModelV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x23b9cb...780cb7`; linea `0x85a58a...93ea19` | ⚠️ Unaudited |
 | JumpRateModelV4 | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400468 | `0x62c31a...5c02d0` | ⚠️ Unaudited |
 | LGEDepositor | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400471 | `0x8f1b13...49f14d` | ⚠️ Unaudited |
 | LiquidityGenerator | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400466 | `0x55231f...9e9144` | ⚠️ Unaudited |
+| LPDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x7b6763...a5939c`; linea `0x7d4483...1cfbba` | ⚠️ Unaudited |
+| LPDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x9cfbfc...98fc23`; linea `0xc321e5...29ce68` | ⚠️ Unaudited |
+| LPDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xbfd1b0...0a5e64` | ⚠️ Unaudited |
 | Mendi | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400465 | `0x43e880...44065f` | ⚠️ Unaudited |
+| MendiLoyaltyPoint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 4 deployments: linea `0x375654...55a50e`; linea `0x688ff5...26dea1`; linea `0xdaf3ba...3d6725`; linea `0xe5bcd7...dd90ea` | ⚠️ Unaudited |
 | MendiLoyaltyPoint | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400474 | `0xea5747...b7eb52` | ⚠️ Unaudited |
+| MixedPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xccbea2...cffec2` | ⚠️ Unaudited |
+| MixedPriceOracleV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 7 deployments: linea `0x4a0231...9cdc9c`; linea `0x7a6ef4...0fdcc1`; linea `0xd04f7a...bff23f`; linea `0xd2ed95...8fa012`; linea `0xd3e706...5bc1d3`; linea `0xe8de3a...78a27a`; linea `0xec598a...49d8fe` | ⚠️ Unaudited |
 | MixedPriceOracleV2 | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400472 | `0xc23f48...e24433` | ⚠️ Unaudited |
+| MixedPriceOracleV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x395abf...1ac5f2` | ⚠️ Unaudited |
 | MixedPriceOracleV4 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | linea | unit-400463 | `0x16f866...c90fbd` | ⚠️ Unaudited |
 | OwnedDistributor | operational_periphery | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400467 | `0x5df210...2bc434` | ⚠️ Unaudited |
+| OwnedDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 6 deployments: linea `0x5f9668...c38d61`; linea `0x957491...691fa7`; linea `0xa4fc54...d38e43`; linea `0xb43221...d69b95`; linea `0xec45fe...53a5e2`; linea `0xeda946...8fc474` | ⚠️ Unaudited |
 | OwnedDistributor | operational_periphery | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400470 | `0x716f2d...1053f5` | ⚠️ Unaudited |
+| OwnedDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x9b9274...7a7c40`; linea `0xe17d41...acf662` | ⚠️ Unaudited |
 | Pair | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400473 | `0xe5e19b...7bf567` | ⚠️ Unaudited |
-| ReserveManagerV2 | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400488 | `0x384be0...1546ea` | ⚠️ Unaudited |
-| RewardDistributor | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400476 | `0x3b9b93...013d40` | ⚠️ Unaudited |
-| StakedDistributor | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400477 | `0x150b1e...4921ca` | ⚠️ Unaudited |
-| StakedDistributor | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400484 | `0xcf8ded...284486` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x2f9386...bc733c`; linea `0x54b41d...d3bc8c` | ⚠️ Unaudited |
+| PythPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 4 deployments: linea `0x0d4173...db3636`; linea `0xa6b761...3a0df3`; linea `0xcc16cf...e2c749`; linea `0xe15903...4f1230` | ⚠️ Unaudited |
+| ReserveManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x7c2e7b...1a49e4`; linea `0xa16602...d5c5a8` | ⚠️ Unaudited |
+| ReserveManagerV2 | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400488 | 2 deployments: linea `0x384be0...1546ea`; linea `0x9a71e9...2b751f` | ⚠️ Unaudited |
+| RewardDistributor | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400476 | 2 deployments: linea `0x052932...8b7ca5`; linea `0x3b9b93...013d40` | ⚠️ Unaudited |
+| RewardHolder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x162218...ecc222`; linea `0x4664c7...3a26ed` | ⚠️ Unaudited |
+| RewardHolder | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x246db9...8d46da`; linea `0x5f6f83...08c832` | ⚠️ Unaudited |
+| RewardHolder | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x90c9cd...27fc8c`; linea `0x9589ff...341934` | ⚠️ Unaudited |
+| RewardHolder | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0xb05619...12a673`; linea `0xd114e0...bc923e` | ⚠️ Unaudited |
+| RewardManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x951e3e...1e79dc` | ⚠️ Unaudited |
+| RewardManagerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | 2 deployments: linea `0x04a716...ab7bd5`; linea `0x1ac9d6...5f6101` | ⚠️ Unaudited |
+| SimplePriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x75f0ad...901219` | ⚠️ Unaudited |
+| StakedDistributor | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400477 | 2 deployments: linea `0x07d392...f26673`; linea `0x150b1e...4921ca` | ⚠️ Unaudited |
+| StakedDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 8 deployments: linea `0x5bb5c0...490fea`; linea `0x62ffc7...d4820c`; linea `0x686fc5...c94c6e`; linea `0x8e8bdf...eaa113`; linea `0xbdea2a...cbd12c`; linea `0xc2ecfe...10fee9`; linea `0xcb0112...739b3d`; linea `0xe4e5e5...618dee` | ⚠️ Unaudited |
+| StakedDistributor | unknown | unclassified_address_book | needs_review (excluded) | 1 | linea | unit-400484 | 2 deployments: linea `0x7f13ef...e526f8`; linea `0xcf8ded...284486` | ⚠️ Unaudited |
 | TimelockController | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400469 | `0x6c81d7...b26902` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xae73a4...a3e8a7` | ⚠️ Unaudited |
 | VesterCliff | unknown | unclassified_address_book | needs_review (excluded) | 0 | linea | unit-400464 | `0x2938b0...495741` | ⚠️ Unaudited |
+| VesterCliff | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 2 deployments: linea `0x6cdf38...30b138`; linea `0xe79840...26bea5` | ⚠️ Unaudited |
+| VesterSale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | 4 deployments: linea `0x4ff038...d0e45b`; linea `0xbb4bba...c2c311`; linea `0xd63b16...41cd83`; linea `0xf90af8...3a702f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -165,11 +206,23 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (11)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x23c603...34b2b1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x2b2b78...1699c6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x7fab16...532492` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x8208dd...9d242d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x87f99c...a99788` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xacf19d...871e5f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xaef45c...596835` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xb1c144...cf1fe1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xb20b9a...8ba9a5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xc21b80...b18173` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xf40175...edc271` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -301,10 +354,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 23 |
+| native | 50 |
 | upstream | 0 |
-| standard_library | 2 |
-| needs_review | 3 |
+| standard_library | 4 |
+| needs_review | 14 |
 
 ## Scope Matching Notes
 

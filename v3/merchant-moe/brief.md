@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Merchant Moe (`merchant-moe`)
 - Website: [https://merchantmoe.com/](https://merchantmoe.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: mantle
-- Contract surface: 20 unique implementations (22 raw deployments)
+- Contract surface: 73 unique implementations (146 raw deployments)
 - Coverage basis: 13/17 confirmed own live verified implementations (76.5%); conservative 76.5% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $19,069,354.00
 - On-chain TVL (included contracts): n/a
@@ -80,7 +80,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 19; live-surface contracts included: 19 (19 live, 0 unknown).
+- Logic-topography rows: 19; live-surface rows included: 19 (19 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 17/17 live.
 - Detected codebases: none
@@ -91,15 +91,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 13/17 (76.5%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 17 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 3 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 2
-- Deployed-live implementations: 17 of 20 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 13/17
-- Verified + Unaudited implementations: 4
+- Outside the address book: 56 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 7
+- Confirmed-live implementations: 17 of 73 unique; 56 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 13/46
+- Verified + Unaudited implementations: 33
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 20
-- Raw deployments: 22
+- Unverified implementations: 27
+- Unique implementations: 73
+- Raw deployments: 146
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -112,7 +112,7 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Paladin | Tier 2 | 13 | 76.5% | 2023-12 |
+| Paladin | Tier 2 | 13 | 28.3% | 2023-12 |
 
 ## Contract Surface
 
@@ -134,14 +134,43 @@ Removals (removed from original): none
 | VeMoe | unknown | project_anchor | own_supporting | 0 | mantle | unit-266939 | `0x240616...f14ef1` | ✅ Audited |
 | VeMoeRewarder | unknown | project_anchor | own_supporting | 0 | mantle | unit-266936 | `0x151b82...d6aea8` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (33)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| FakeOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xa489e9...fb8467` | ⚠️ Unaudited |
+| FeeCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x97c62c...658b63` | ⚠️ Unaudited |
+| FeeConverterOdos | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 2 deployments: mantle `0xae6321...307298`; mantle `0xf4a929...124e8c` | ⚠️ Unaudited |
+| FeeManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x982ce5...929b12` | ⚠️ Unaudited |
+| ForwarderLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 2 deployments: mantle `0xb07877...83c146`; mantle `0xc04f29...ce8430` | ⚠️ Unaudited |
+| JoeDexLens | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | 2 deployments: mantle `0x0f60a6...61effa`; mantle `0x511914...7a86b3` | ⚠️ Unaudited |
+| JoeStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | `0x79f316...b69d44` | ⚠️ Unaudited |
+| JoeStakingRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 2 deployments: mantle `0x1fadd2...ff6c93`; mantle `0xed6436...f17f92` | ⚠️ Unaudited |
 | LBFactory | registry | project_anchor | own_supporting | 0 | mantle | unit-266944 | `0xa66306...104054` | ⚠️ Unaudited |
+| LBPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xf6863d...2ddb3b` | ⚠️ Unaudited |
+| LBQuoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xe25dc2...16f46d` | ⚠️ Unaudited |
 | LBRouter | adapter | project_anchor | own_supporting | 0 | mantle | unit-266934 | `0x013e13...d21e3a` | ⚠️ Unaudited |
+| LBRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xafb85a...0e782a` | ⚠️ Unaudited |
+| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 6 deployments: mantle `0x0ca2d3...fd2739`; mantle `0x10cc20...a3e9e6`; mantle `0x3fef7c...9a871e`; mantle `0x76d8d0...9b0cb5`; mantle `0xace736...dc79b3`; mantle `0xeb1d08...73ce2a` | ⚠️ Unaudited |
+| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | `0xa756f7...1955b5` | ⚠️ Unaudited |
+| MasterChefRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 7 deployments: mantle `0x2759a5...0a2678`; mantle `0x3b3a66...9a5181`; mantle `0x4141be...11b61a`; mantle `0x6b9b71...132b33`; mantle `0x75f0d0...5a0875`; mantle `0xb02e02...7167fd`; mantle `0xf5d738...310012` | ⚠️ Unaudited |
+| Moe | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x8764ab...161494` | ⚠️ Unaudited |
+| MoeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 2 deployments: mantle `0xc850df...92c5d2`; mantle `0xea2a8c...6846e0` | ⚠️ Unaudited |
+| MoeHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 2 deployments: mantle `0x3f0e20...78ca90`; mantle `0xfe8b6a...2d2d7a` | ⚠️ Unaudited |
+| MoeLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 3 deployments: mantle `0x768571...c8de7a`; mantle `0xaa61e8...7698ba`; mantle `0xdab599...da1f55` | ⚠️ Unaudited |
+| MoePair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xcb61a1...c8468b` | ⚠️ Unaudited |
+| MoeQuoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 3 deployments: mantle `0x1d0657...5be1a4`; mantle `0x1e47b3...31e99d`; mantle `0x72b507...2b59f4` | ⚠️ Unaudited |
+| MoeRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 2 deployments: mantle `0xaf6278...ffdeb8`; mantle `0xf311d5...376ce5` | ⚠️ Unaudited |
 | OdosRouterV2 | adapter | project_anchor | own_supporting | 0 | mantle | unit-266947 | `0xd9f4e8...c26745` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x7dc21a...40c579` | ⚠️ Unaudited |
+| ProxyAdmin2Step | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 2 deployments: mantle `0x886523...f6af2a`; mantle `0xc96543...c06429` | ⚠️ Unaudited |
+| RewarderFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | `0xe283db...848943` | ⚠️ Unaudited |
 | Router | adapter | project_anchor | own_supporting | 0 | mantle | unit-266941 | `0x45a62b...e2c86b` | ⚠️ Unaudited |
+| RouterLogic | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 2 deployments: mantle `0x4e2abc...63ff20`; mantle `0xb35033...dff9cf` | ⚠️ Unaudited |
+| VeMoe | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x4ceabd...920e4c` | ⚠️ Unaudited |
+| VeMoe | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | `0x55160b...01dee7` | ⚠️ Unaudited |
+| VeMoeRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 6 deployments: mantle `0x247af2...bfdcf1`; mantle `0x7399aa...55b1e5`; mantle `0x8eb084...1ee254`; mantle `0xa3a1a6...2daaa5`; mantle `0xbbf381...28136c`; mantle `0xda781a...84f2c4` | ⚠️ Unaudited |
+| VestingContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | 43 deployments: mantle `0x057b2f...d47494`; mantle `0x0a7a82...712048`; mantle `0x1549de...2a14f6`; mantle `0x183d63...c1b02c`; mantle `0x1c6c83...0c87e8`; mantle `0x1fbfc1...1e9fec`; mantle `0x315299...05a8c5`; mantle `0x3905f5...c157cd`; mantle `0x3f6cc1...eec185`; mantle `0x428177...deb515`; mantle `0x4a984b...e8cb8e`; mantle `0x4d46b8...70f0b5`; mantle `0x50554c...c62fe7`; mantle `0x55d86a...7bb554`; mantle `0x55e583...83b689`; mantle `0x55edc7...993fbb`; mantle `0x60fded...332d7c`; mantle `0x62fb9b...314a75`; mantle `0x70cd9e...be6c2f`; mantle `0x7520ae...267c85`; mantle `0x78bb8f...02894f`; mantle `0x7c7018...02dd8b`; mantle `0x82e8ae...d6855b`; mantle `0x83d76d...e64d0b`; mantle `0x8d8d3b...1b00ce`; mantle `0x920803...a925da`; mantle `0x9b5b4c...93de31`; mantle `0x9b86c2...80300f`; mantle `0xa0e97c...89dde1`; mantle `0xb342bf...695554`; mantle `0xb9e9dc...98f4c4`; mantle `0xb9f72c...512295`; mantle `0xc20ba4...43dc9f`; mantle `0xd9ecef...726ef0`; mantle `0xe273bf...6f9c22`; mantle `0xe4d55a...b9c747`; mantle `0xe660b7...d544a9`; mantle `0xe88778...5d2948`; mantle `0xeff8ee...047c1c`; mantle `0xfbdd09...8161f0`; mantle `0xfd0adb...01a291`; mantle `0xfd4085...4afde3`; mantle `0xffdeab...741602` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -155,15 +184,39 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (27)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x031839...b89eef` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x0980d1...658aa6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x1f8642...a0bf68` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x227dfd...742e5f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x28104d...f33f95` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x2d8879...72f414` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x4e3288...5d92bf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x4e9042...b1f5a7` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x501b8a...316c85` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x5cf0dc...c0049e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x654677...2944c1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x7097f0...e61476` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x794373...941579` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x7d2b63...523b76` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x85bd14...5fdba9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x88de50...a3e9fc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x8c5ee2...af58ab` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x8d3d65...ef103a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0x926faa...8911bf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xa669e7...be4e13` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xac041d...5f2e9d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xb9db0d...950515` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xca4239...fe9680` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xcefcc8...ca9159` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xcf5540...772559` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xcfe3d3...493e5e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mantle | n/a | `0xd804ba...8105fc` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -220,10 +273,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 17 |
+| native | 45 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 3 |
+| standard_library | 1 |
+| needs_review | 27 |
 
 ## Scope Matching Notes
 

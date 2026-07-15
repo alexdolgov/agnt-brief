@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Royco Protocol (`royco-protocol`)
 - Website: [https://www.royco.org](https://www.royco.org)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: ethereum
-- Contract surface: 6 unique implementations (6 raw deployments)
+- Chains: arbitrum, avalanche, base, berachain, ethereum, hyperliquid, sonic
+- Contract surface: 23 unique implementations (42 raw deployments)
 - Coverage basis: 3/5 confirmed own live verified implementations (60.0%); conservative 60.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $33,653,016.00
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for Royco Pro
 
 ### Architecture
 
-The pinned logic-topography run contains 3 contract row(s) across ethereum. Structural roles: 2 core, 1 supporting. 2 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 3 contract row(s) across arbitrum, avalanche, base, ethereum, hyperliquid, sonic. Structural roles: 2 core, 1 supporting. 2 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -60,7 +60,7 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 3 (2 live, 1 unknown).
+- Logic-topography rows: 3; live-surface rows included: 3 (2 live, 1 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 5/6 live.
 - Detected codebases: none
@@ -71,15 +71,15 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 - Coverage of address-book-owned deployed-live implementations: 3/5 (60.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 5 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 4
-- Deployed-live implementations: 5 of 6 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 3/5
-- Verified + Unaudited implementations: 2
+- Outside the address book: 17 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 8
+- Confirmed-live implementations: 5 of 23 unique; 18 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 3/21
+- Verified + Unaudited implementations: 18
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 6
-- Raw deployments: 6
+- Unverified implementations: 2
+- Unique implementations: 23
+- Raw deployments: 42
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -92,8 +92,8 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 3 | 60.0% | 2026-03 |
-| Enigma Ventures | Tier 2 | 1 | 20.0% | 2026-05 |
+| Spearbit | Tier 1 | 3 | 14.3% | 2026-03 |
+| Enigma Ventures | Tier 2 | 1 | 4.8% | 2026-05 |
 
 ## Contract Surface
 
@@ -105,13 +105,28 @@ The pinned logic-topography run contains 3 contract row(s) across ethereum. Stru
 | MultisigStrategy | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-391711 | `0xd3f8ed...7a6c2d` | ✅ Audited |
 | RoycoEntryPoint | unknown | project_anchor | own_supporting | 1 | ethereum | unit-391712 | `0x63da12...f2581b` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (18)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AccountantWithRateProviders | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x80f0b2...e6bac9`; sonic `0x830129...b0416e` | ⚠️ Unaudited |
 | AdaptiveCurveYDM | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391707 | `0x071b0f...e3dfac` | ⚠️ Unaudited |
+| ArcticArchitectureLens | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x90983e...16a396`; sonic `0x90983e...16a396` | ⚠️ Unaudited |
+| BoringVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x74d1fa...bad5cc`; sonic `0x74d1fa...bad5cc` | ⚠️ Unaudited |
+| ConcretePredepositVaultImpl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb1119e...903d8d` | ⚠️ Unaudited |
+| LayerZeroTeller | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x60ebb5...42b0b8` | ⚠️ Unaudited |
+| PredepostVaultOApp | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xb03c43...ea8f04` | ⚠️ Unaudited |
+| RecipeMarketHub | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 5 deployments: ethereum `0x783251...d937c0`; sonic `0xfcc593...95bdbd`; hyperliquid `0x6af057...6787fd`; base `0x783251...d937c0`; arbitrum `0x783251...d937c0` | ⚠️ Unaudited |
+| RoycoFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x7cc6fb...27253c` | ⚠️ Unaudited |
 | RoycoFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391708 | `0xd567cc...0bb71d` | ⚠️ Unaudited |
+| RoycoFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x7cc6fb...27253c` | ⚠️ Unaudited |
+| RoycoFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0x7cc6fb...27253c` | ⚠️ Unaudited |
 | Safe | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-391710 | `0x170ff0...4af6c8` | ⚠️ Unaudited |
+| VaultMarketHub | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0xa97ecc...769280`; arbitrum `0xa97ecc...769280` | ⚠️ Unaudited |
+| WeirollWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x40a1c0...309dc0`; sonic `0x40a1c0...309dc0`; base `0x40a1c0...309dc0`; arbitrum `0x40a1c0...309dc0` | ⚠️ Unaudited |
+| WeirollWalletHelper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x07899a...7c9911`; sonic `0x07899a...7c9911`; hyperliquid `0x07899a...7c9911`; base `0x07899a...7c9911`; arbitrum `0x07899a...7c9911` | ⚠️ Unaudited |
+| WhitelistUserDepositHook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5c4952...342f13` | ⚠️ Unaudited |
+| WrappedVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x3c44c2...eb3e66`; sonic `0xb0a396...e2bf33`; base `0x3c44c2...eb3e66`; base `0xb0a396...e2bf33`; arbitrum `0x3c44c2...eb3e66` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -125,11 +140,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x40a1c0...309dc0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x595ee7...e301fc` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -252,10 +270,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
-| upstream | 0 |
+| native | 16 |
+| upstream | 1 |
 | standard_library | 1 |
-| needs_review | 3 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 

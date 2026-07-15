@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Nucleus (`nucleus`)
 - Website: [https://www.nucleusearn.io](https://www.nucleusearn.io)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: ethereum
-- Contract surface: 15 unique implementations (21 raw deployments)
+- Chains: arbitrum, ethereum, swellchain
+- Contract surface: 19 unique implementations (37 raw deployments)
 - Coverage basis: 1/11 confirmed own live verified implementations (9.1%); conservative 9.1% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $23,883,431.14
 - On-chain TVL (included contracts): n/a
@@ -73,7 +73,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 11; live-surface contracts included: 11 (11 live, 0 unknown).
+- Logic-topography rows: 11; live-surface rows included: 11 (11 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 12/12 live.
 - Detected codebases: none
@@ -84,15 +84,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 1/11 (9.1%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 12 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 3 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 12 of 15 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/11
-- Verified + Unaudited implementations: 10
+- Outside the address book: 7 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
+- Confirmed-live implementations: 12 of 19 unique; 7 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/18
+- Verified + Unaudited implementations: 17
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 15
-- Raw deployments: 21
+- Unique implementations: 19
+- Raw deployments: 37
 - Audits discovered: 13 (13 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -105,7 +105,7 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Pashov Audit Group | Tier 2 | 1 | 9.1% | 2026-03 |
+| Pashov Audit Group | Tier 2 | 1 | 5.6% | 2026-03 |
 
 ## Contract Surface
 
@@ -115,23 +115,27 @@ Removals (removed from original): none
 |---|---|---|---|---:|---|---|---|---|
 | MultiChainLayerZeroTellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249910 | `0x9ff67b...a14fbc` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (13)
+### ⚠️ Verified + Unaudited (17)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AccountantWithRateProviders | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x603583...7a04cb`; ethereum `0x8c1902...926dfd` | ⚠️ Unaudited |
+| BoringVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 16 deployments: ethereum `0x11113f...9ee94b`; ethereum `0x593ccc...6388db`; ethereum `0x5d82ac...8d47a2`; ethereum `0x64ab17...afb855`; ethereum `0x66e47e...4d831a`; ethereum `0x6c5874...f7fd76`; ethereum `0x9ed153...775f22`; ethereum `0x9faaea...e301ce`; ethereum `0x9fbc36...ffdc4c`; ethereum `0xa5f78b...ec066c`; ethereum `0xa8a3a5...a3eb48`; ethereum `0xb52b09...2aa8a9`; ethereum `0xbfc577...ed19de`; ethereum `0xd3bfd6...7b5641`; ethereum `0xdea736...a200e3`; ethereum `0xe72fe6...938cb9` | ⚠️ Unaudited |
 | BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249893 | `0x170d84...c933a0` | ⚠️ Unaudited |
 | BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249895 | `0x196ead...bd3dcc` | ⚠️ Unaudited |
 | BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249897 | `0x19e099...3c0b32` | ⚠️ Unaudited |
 | BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249899 | `0x52e4d8...07a0d1` | ⚠️ Unaudited |
-| BoringVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x5d82ac...8d47a2`; ethereum `0x66e47e...4d831a`; ethereum `0x6c5874...f7fd76`; ethereum `0x9faaea...e301ce`; ethereum `0xa8a3a5...a3eb48` | ⚠️ Unaudited |
 | BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249906 | `0x722a85...1f883b` | ⚠️ Unaudited |
 | BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249908 | `0x82c40e...c7cab4` | ⚠️ Unaudited |
+| EETH | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x35fa16...118ac2` | ⚠️ Unaudited |
 | MultiChainLayerZeroTellerWithMultiAssetSupport | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x5cce6c...06be88`; ethereum `0x97d0b9...3918b9`; ethereum `0xd567b6...63e851` | ⚠️ Unaudited |
 | TellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249889 | `0x074364...182f0b` | ⚠️ Unaudited |
 | TellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249891 | `0x08eb2e...8a1d53` | ⚠️ Unaudited |
 | TellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249902 | `0x5d3fb4...1b54dd` | ⚠️ Unaudited |
 | TellerWithMultiAssetSupport | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x685adb...160429` | ⚠️ Unaudited |
 | TellerWithMultiAssetSupport | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-249904 | `0x6ae187...52e0bf` | ⚠️ Unaudited |
+| WeETH | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xcd5fe2...59b7ee` | ⚠️ Unaudited |
+| WETH9 | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc02aaa...756cc2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -344,7 +348,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 12 |
+| native | 16 |
 | upstream | 2 |
 | standard_library | 0 |
 | needs_review | 1 |

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: MorpheusAI (`morpheusai`)
 - Website: [https://mor.org](https://mor.org)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: base, base-sepolia
-- Contract surface: 6 unique implementations (6 raw deployments)
+- Chains: arbitrum, base, base-sepolia, ethereum
+- Contract surface: 71 unique implementations (142 raw deployments)
 - Coverage basis: 1/2 confirmed own live verified implementations (50.0%); conservative 50.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $19,900,852.82
 - On-chain TVL (included contracts): n/a
@@ -36,7 +36,7 @@ This brief describes the observed EVM deployment and audit surface for MorpheusA
 
 ### Architecture
 
-The pinned logic-topography run contains 2 contract row(s) across base, base-sepolia. Structural roles: 1 core, 1 unclassified. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 2 contract row(s) across arbitrum, base, base-sepolia, ethereum. Structural roles: 1 core, 1 unclassified. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -62,7 +62,7 @@ The pinned logic-topography run contains 2 contract row(s) across base, base-sep
 
 ## Contract Surface Quality
 
-- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
+- Logic-topography rows: 2; live-surface rows included: 2 (2 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 3/6 live.
 - Detected codebases: none
@@ -73,15 +73,15 @@ The pinned logic-topography run contains 2 contract row(s) across base, base-sep
 - Coverage of address-book-owned deployed-live implementations: 1/2 (50.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 3 own, 3 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 3 of 6 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/2
-- Verified + Unaudited implementations: 1
+- Outside the address book: 65 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 38
+- Confirmed-live implementations: 3 of 71 unique; 68 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/67
+- Verified + Unaudited implementations: 66
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 6
-- Raw deployments: 6
+- Unverified implementations: 4
+- Unique implementations: 71
+- Raw deployments: 142
 - Audits discovered: 18 (18 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -94,7 +94,7 @@ The pinned logic-topography run contains 2 contract row(s) across base, base-sep
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| yAudit | Tier 2 | 1 | 50.0% | 2025-07 |
+| yAudit | Tier 2 | 1 | 1.5% | 2025-07 |
 
 ## Contract Surface
 
@@ -104,11 +104,76 @@ The pinned logic-topography run contains 2 contract row(s) across base, base-sep
 |---|---|---|---|---:|---|---|---|---|
 | MOROFT | unknown | project_anchor | own_supporting | 0 | base | unit-389462 | `0x7431ad...82b8e3` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (66)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| Builders | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x7ec3dd...f31b79`; arbitrum `0x969c0f...e45382` | ⚠️ Unaudited |
+| BuildersTreasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: base `0xe5e06c...57c5ca`; arbitrum `0x232c15...416aa1` | ⚠️ Unaudited |
+| BuildersTreasuryV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x9eba62...8fc561`; base `0xe71eb0...ad57e5` | ⚠️ Unaudited |
+| BuildersTreasuryV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x031075...aa9308`; arbitrum `0xcbe3d2...96e257` | ⚠️ Unaudited |
+| BuildersV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x6db545...101dbc`; arbitrum `0xa86031...c14fe6` | ⚠️ Unaudited |
+| BuildersV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x2388be...f298ab`; arbitrum `0xccc067...d01532` | ⚠️ Unaudited |
+| BuildersV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x18faef...7513b0`; base `0x42bb44...7ef4b9` | ⚠️ Unaudited |
+| BuildersV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x6cce08...e4750e`; arbitrum `0xc0ed68...bcff3f` | ⚠️ Unaudited |
+| ChainLinkDataConsumer | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | ethereum | n/a | 3 deployments: ethereum `0x18faef...7513b0`; ethereum `0x2265ae...95ed50`; ethereum `0xd18226...3bbc5e` | ⚠️ Unaudited |
+| DelegateFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x1b4836...4ff924`; base `0x3b5198...8cf116` | ⚠️ Unaudited |
+| DelegateFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x281bc6...4b6375`; base `0x6ad6ef...830193` | ⚠️ Unaudited |
+| DelegateFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x8aac72...b66aac`; base `0xe16414...af5a91` | ⚠️ Unaudited |
+| DelegateFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x136538...cea76a`; arbitrum `0x37b94b...6eb7a5` | ⚠️ Unaudited |
+| Delegation | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x345b8b...012cb0`; arbitrum `0xe9d4b4...462d83` | ⚠️ Unaudited |
+| DepositPool | unknown | non_address_book | non_address_book_inventory (excluded) | 6 | ethereum | n/a | 7 deployments: ethereum `0x3b5198...8cf116`; ethereum `0x47176b...aa4790`; ethereum `0x6cce08...e4750e`; ethereum `0x9380d7...7cb384`; ethereum `0xccc067...d01532`; ethereum `0xdb10da...fbd670`; ethereum `0xde283f...277a42` | ⚠️ Unaudited |
+| Distribution | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x24c09a...ccc20b`; ethereum `0x2e1ff1...0092b7` | ⚠️ Unaudited |
+| DistributionExt | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x6948b5...d44f97`; ethereum `0x6cfe1d...a224a9` | ⚠️ Unaudited |
+| DistributionToArb | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc28172...4eaf57` | ⚠️ Unaudited |
+| DistributionToArbV5 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xefb3af...36b6d0` | ⚠️ Unaudited |
+| DistributionToBase | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x383ebf...d4f18e` | ⚠️ Unaudited |
+| DistributionToBaseV5 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6db545...101dbc` | ⚠️ Unaudited |
+| DistributionV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x31bf07...783294` | ⚠️ Unaudited |
+| DistributionV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaddd7b...f44ab9` | ⚠️ Unaudited |
+| DistributionV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x68b9d0...6da294` | ⚠️ Unaudited |
+| DistributionV5 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc1292b...96720a` | ⚠️ Unaudited |
+| Distributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5b660a...b45f64` | ⚠️ Unaudited |
+| DistributorV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x52f76e...dade03`; ethereum `0xdf1ac1...f64c7a` | ⚠️ Unaudited |
+| FeeConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x33e689...1cae83`; ethereum `0x55daa9...2613eb` | ⚠️ Unaudited |
+| FeeConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x2e1ff1...0092b7`; base `0x845fbb...1088ee` | ⚠️ Unaudited |
+| FeeConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x873940...51ff0e`; arbitrum `0xc03d87...7eb895` | ⚠️ Unaudited |
+| L1ArbSender | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc1588b...d2e90c` | ⚠️ Unaudited |
+| L1BaseSender | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfe8882...8a1331` | ⚠️ Unaudited |
+| L1FactoryToArb | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x969c0f...e45382`; ethereum `0xf6c6b6...64954c` | ⚠️ Unaudited |
+| L1FactoryToBase | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x890bfa...c4546c`; ethereum `0xa03ea6...d7f116` | ⚠️ Unaudited |
+| L1Sender | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x6b1a3d...1ae9fe`; ethereum `0x845fbb...1088ee` | ⚠️ Unaudited |
+| L1SenderV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2bc54c...66515a` | ⚠️ Unaudited |
+| L1SenderV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x2efd44...e5ff84`; ethereum `0x50e80e...467d1f` | ⚠️ Unaudited |
+| L1SenderV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x6fd267...4ed75a`; ethereum `0xa775b4...dfb78a` | ⚠️ Unaudited |
+| L2Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xd4a8ec...77d427`; base `0xe50009...0d76af` | ⚠️ Unaudited |
+| L2Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x890bfa...c4546c`; arbitrum `0xa03ea6...d7f116` | ⚠️ Unaudited |
+| L2MessageReceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x19eef4...e6495d`; base `0xb69dbf...299bad` | ⚠️ Unaudited |
+| L2MessageReceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x47176b...aa4790`; arbitrum `0x9cbcea...3d41c7` | ⚠️ Unaudited |
+| L2MessageReceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | arbitrum | n/a | 3 deployments: arbitrum `0x2efd44...e5ff84`; arbitrum `0x845fbb...1088ee`; arbitrum `0xd4a8ec...77d427` | ⚠️ Unaudited |
+| L2MessageReceiverV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7ec51d...56d699` | ⚠️ Unaudited |
+| L2TokenReceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: base `0x6b1a3d...1ae9fe`; arbitrum `0x24c09a...ccc20b`; arbitrum `0x383ebf...d4f18e` | ⚠️ Unaudited |
+| L2TokenReceiverV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x27353f...2d5ae4`; arbitrum `0x47176b...aa4790` | ⚠️ Unaudited |
+| L2TokenReceiverV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x2e1ff1...0092b7`; arbitrum `0x9eba62...8fc561` | ⚠️ Unaudited |
+| LinearDistributionIntervalDecrease | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 13 deployments: ethereum `0x0e2bb6...37ee9a`; ethereum `0x14a623...68478c`; ethereum `0x2388be...f298ab`; ethereum `0x37b94b...6eb7a5`; ethereum `0x3a1673...f33303`; ethereum `0x7431ad...82b8e3`; ethereum `0x9cbcea...3d41c7`; ethereum `0xc6eaf7...72584d`; ethereum `0xfb1a7d...a4825c`; base `0x2265ae...95ed50`; base `0xdf1ac1...f64c7a`; arbitrum `0x39e626...4d792a`; arbitrum `0x9380d7...7cb384` | ⚠️ Unaudited |
+| LockMultiplierMath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x345b8b...012cb0`; base `0x98c204...d36843`; arbitrum `0xde283f...277a42` | ⚠️ Unaudited |
 | LumerinDiamond | unknown | project_anchor | own_supporting | 0 | base | unit-389461 | `0x6abe1d...d3030a` | ⚠️ Unaudited |
+| Marketplace | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x5b660a...b45f64`; arbitrum `0xc37140...7f48a8` | ⚠️ Unaudited |
+| ModelRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: base `0xb7994d...d8df87`; arbitrum `0x2e96ce...9a3996` | ⚠️ Unaudited |
+| MOR | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: base `0x98e3cf...eaa20e`; arbitrum `0x7431ad...82b8e3` | ⚠️ Unaudited |
+| MOR20Deployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x2efd44...e5ff84`; arbitrum `0xfe8882...8a1331` | ⚠️ Unaudited |
+| MOROFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: ethereum `0xcbb8f1...9dcec0`; arbitrum `0x092baa...bcfc86`; arbitrum `0x3c3a26...55786e` | ⚠️ Unaudited |
+| ProviderRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe30279...d88a75` | ⚠️ Unaudited |
+| ProviderRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x8621e6...cb62a2`; arbitrum `0xde819a...a6c71b` | ⚠️ Unaudited |
+| ProvidersDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x031075...aa9308`; arbitrum `0xaddd7b...f44ab9` | ⚠️ Unaudited |
+| ReferrerLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x624966...7cdfbd`; ethereum `0x98c204...d36843`; ethereum `0x9a397c...6d2965` | ⚠️ Unaudited |
+| RewardPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xb7994d...d8df87`; ethereum `0xe30279...d88a75` | ⚠️ Unaudited |
+| RewardPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x4de9d5...04909d`; base `0xdc99a8...dc3980` | ⚠️ Unaudited |
+| RewardPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x281bc6...4b6375`; arbitrum `0x6ad6ef...830193` | ⚠️ Unaudited |
+| SessionRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x174852...401578`; base `0x3ec0d9...a871d6`; arbitrum `0xab493d...f96d4c` | ⚠️ Unaudited |
+| StETHMock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7ec3dd...f31b79` | ⚠️ Unaudited |
+| WETHMock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x52d004...5f82fe` | ⚠️ Unaudited |
+| WStETHMock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42bb44...7ef4b9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -270,8 +335,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
-| upstream | 0 |
+| native | 66 |
+| upstream | 1 |
 | standard_library | 0 |
 | needs_review | 4 |
 

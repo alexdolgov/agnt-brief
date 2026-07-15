@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ⚠️ Lifecycle status: DECLINING - TVL dropped 65.8% over 90 days
 
@@ -18,14 +18,14 @@
 - Project: Aegis Markets (`aegis-markets`)
 - Website: [https://aegis.markets/](https://aegis.markets/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: unichain
-- Contract surface: 10 unique implementations (10 raw deployments)
+- Chains: base, unichain
+- Contract surface: 30 unique implementations (39 raw deployments)
 - Coverage basis: 5/10 confirmed own live verified implementations (50.0%); conservative 50.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,694,151.43
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- On-chain TVL (included contracts): $20,765,282.15
+- TVL by chain: Base $18,084,727.89 | Unichain $2,680,554.25
 
 ## Project Description
 
@@ -33,7 +33,7 @@ This brief describes the observed EVM deployment and audit surface for Aegis Mar
 
 ### Architecture
 
-The pinned logic-topography run contains 10 contract row(s) across unichain. Structural roles: 5 supporting, 4 core, 1 unclassified. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 10 contract row(s) across base, unichain. Structural roles: 5 supporting, 4 core, 1 unclassified. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -67,7 +67,7 @@ The pinned logic-topography run contains 10 contract row(s) across unichain. Str
 
 ## Contract Surface Quality
 
-- Indexed contracts: 10; live-surface contracts included: 10 (10 live, 0 unknown).
+- Logic-topography rows: 10; live-surface rows included: 10 (10 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 10/10 live.
 - Detected codebases: none
@@ -78,15 +78,15 @@ The pinned logic-topography run contains 10 contract row(s) across unichain. Str
 - Coverage of address-book-owned deployed-live implementations: 5/10 (50.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 10 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 10 of 10 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 5/10
-- Verified + Unaudited implementations: 5
+- Outside the address book: 20 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
+- Confirmed-live implementations: 10 of 30 unique; 20 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 5/26
+- Verified + Unaudited implementations: 21
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 10
-- Raw deployments: 10
+- Unverified implementations: 4
+- Unique implementations: 30
+- Raw deployments: 39
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -100,7 +100,7 @@ The pinned logic-topography run contains 10 contract row(s) across unichain. Str
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 5 | 50.0% | 2025-06 |
+| Spearbit | Tier 1 | 5 | 19.2% | 2025-06 |
 
 ## Contract Surface
 
@@ -114,14 +114,30 @@ The pinned logic-topography run contains 10 contract row(s) across unichain. Str
 | Spot | unknown | project_anchor | own_supporting | 0 | unichain | unit-378638 | `0xa0b0d2...af10cc` | ✅ Audited |
 | TruncGeoOracleMulti | operational_periphery | project_anchor | own_supporting | 0 | unichain | unit-378636 | `0x22e086...8facb5` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (21)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| PoolManager | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x1f9840...000004`; base `0x498581...652b2b` | ⚠️ Unaudited |
+| AegisNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0xdb3a3d...8e718d` | ⚠️ Unaudited |
+| DynamicFeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x16b40c...94d958`; unichain `0x4a6770...a9429c` | ⚠️ Unaudited |
 | DynamicFeeManager | governance | project_anchor | own_supporting | 0 | unichain | unit-378643 | `0xd7deab...bb8d98` | ⚠️ Unaudited |
+| FullRangeLiquidityManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x6da0c0...0fe365` | ⚠️ Unaudited |
 | FullRangeLiquidityManager | governance | project_anchor | own_supporting | 0 | unichain | unit-378639 | `0xa7b3e2...4352a3` | ⚠️ Unaudited |
+| PoolInitAndBindRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0xb3b7bc...fea779` | ⚠️ Unaudited |
+| PoolPolicyManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x87cb5a...7e3e06`; unichain `0xa16eb8...7d3006` | ⚠️ Unaudited |
 | PoolPolicyManager | core_logic | project_anchor | own_supporting | 0 | unichain | unit-378644 | `0xe072d3...ec0ee7` | ⚠️ Unaudited |
+| PositionManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | unichain | n/a | `0x4529a0...2617bf` | ⚠️ Unaudited |
+| PositionManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x7c5f5a...429bdc` | ⚠️ Unaudited |
+| PreCcaBonusClaim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x37fcae...5f9332`; unichain `0xbead51...3c670d` | ⚠️ Unaudited |
+| RewardCenter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0xee8e37...62c0c3` | ⚠️ Unaudited |
+| SponsorAccount | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x8f9fa5...f02c86` | ⚠️ Unaudited |
+| SponsorCenter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x94e431...30b310` | ⚠️ Unaudited |
 | Spot | unknown | project_anchor | own_supporting | 0 | unichain | unit-378637 | `0x88c9ff...1cdacc` | ⚠️ Unaudited |
+| Spot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x88c9ff...1cdacc` | ⚠️ Unaudited |
+| TestToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0xf9a8f8...fae04a` | ⚠️ Unaudited |
+| Timelock | governance | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 5 deployments: unichain `0x5a09c0...d9d13f`; unichain `0x825b15...23c40e`; unichain `0x96573d...f6f3eb`; unichain `0xc754bc...52d245`; unichain `0xf0e74f...510603` | ⚠️ Unaudited |
+| TruncGeoOracleMulti | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | 2 deployments: unichain `0x23ff89...0984ba`; unichain `0x269956...be054a` | ⚠️ Unaudited |
 | TruncGeoOracleMulti | operational_periphery | project_anchor | own_supporting | 0 | unichain | unit-378642 | `0xbe4f23...be6abf` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -136,11 +152,16 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x508bc0...ee7dc2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x53e02d...de6544` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | unichain | n/a | `0x9c66d0...223ad4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa0b0d2...af10cc` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -199,10 +220,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 10 |
-| upstream | 0 |
+| native | 25 |
+| upstream | 1 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

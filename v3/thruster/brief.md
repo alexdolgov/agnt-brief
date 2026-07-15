@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Thruster (`thruster`)
 - Website: [https://app.thruster.finance/](https://app.thruster.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: blast
-- Contract surface: 19 unique implementations (19 raw deployments)
+- Contract surface: 44 unique implementations (44 raw deployments)
 - Coverage basis: 3/14 confirmed own live verified implementations (21.4%); conservative 21.4% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $4,558,132.00
 - On-chain TVL (included contracts): n/a
@@ -67,7 +67,7 @@ The pinned logic-topography run contains 16 contract row(s) across blast. Struct
 
 ## Contract Surface Quality
 
-- Indexed contracts: 16; live-surface contracts included: 16 (14 live, 2 unknown).
+- Logic-topography rows: 16; live-surface rows included: 16 (14 live, 2 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 15/19 live.
 - Detected codebases: none
@@ -78,15 +78,15 @@ The pinned logic-topography run contains 16 contract row(s) across blast. Struct
 - Coverage of address-book-owned deployed-live implementations: 3/14 (21.4%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 15 own, 4 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (1 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 25 discovered implementations shown in the inventory but excluded from coverage (1 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 2
-- Deployed-live implementations: 15 of 19 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 3/14
-- Verified + Unaudited implementations: 11
+- Confirmed-live implementations: 15 of 44 unique; 29 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 3/34
+- Verified + Unaudited implementations: 31
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 19
-- Raw deployments: 19
+- Unverified implementations: 10
+- Unique implementations: 44
+- Raw deployments: 44
 - Audits discovered: 13 (13 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): n/a
@@ -99,9 +99,9 @@ The pinned logic-topography run contains 16 contract row(s) across blast. Struct
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| 4naly3er | Tier 2 | 3 | 21.4% | n/a |
-| Code4rena | Tier 1 | 2 | 14.3% | 2024-02 |
-| oakcobalt | Tier 2 | 1 | 7.1% | n/a |
+| 4naly3er | Tier 2 | 3 | 8.8% | n/a |
+| Code4rena | Tier 1 | 2 | 5.9% | 2024-02 |
+| oakcobalt | Tier 2 | 1 | 2.9% | n/a |
 
 ## Contract Surface
 
@@ -113,15 +113,29 @@ The pinned logic-topography run contains 16 contract row(s) across blast. Struct
 | ThrusterPoolDeployer | unknown | project_anchor | own_supporting | 0 | blast | unit-394081 | `0xa08ae3...405aab` | ✅ Audited |
 | ThrusterPoolFactory | registry | project_anchor | own_supporting | 0 | blast | unit-394077 | `0x71b08f...016127` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (13)
+### ⚠️ Verified + Unaudited (31)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| BatchDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x0561fc...1056ab` | ⚠️ Unaudited |
+| Boost Delegation V2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x4f0ad2...c09d6f` | ⚠️ Unaudited |
+| Curve Fee Distribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xaafa3d...13c65c` | ⚠️ Unaudited |
 | FeeOnTransferDetector | unknown | project_anchor | own_supporting | 0 | blast | unit-394082 | `0xa9eaac...3475ab` | ⚠️ Unaudited |
+| FeeOnTransferDetector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc7867b...42ac99` | ⚠️ Unaudited |
 | FeeOnTransferDetector | unknown | project_anchor | own_supporting | 0 | blast | unit-394086 | `0xeae1b3...d09a52` | ⚠️ Unaudited |
+| Gauge Controller | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xd40fb8...db2756` | ⚠️ Unaudited |
+| Liquidity Gauge v5 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xb3c097...3d917d` | ⚠️ Unaudited |
+| LiquidityGaugeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xce9537...c4cdf8` | ⚠️ Unaudited |
+| MerklGauge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x9ef366...a54981` | ⚠️ Unaudited |
+| MerklGaugeConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x8e4cff...8336bb` | ⚠️ Unaudited |
+| MerklGaugeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x85c7e8...51e2af` | ⚠️ Unaudited |
 | NFTDescriptor | unknown | project_anchor | own_supporting | 0 | blast | unit-394085 | `0xe3cca3...083a8c` | ⚠️ Unaudited |
+| Pump | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x216a5a...b5630a` | ⚠️ Unaudited |
+| PumpDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x12dc5d...ebd991` | ⚠️ Unaudited |
 | QuoterV2 | unknown | project_anchor | own_supporting | 0 | blast | unit-394074 | `0x3b299f...a685be` | ⚠️ Unaudited |
+| SmartWalletChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xe95499...1c434d` | ⚠️ Unaudited |
 | SwapRouter | adapter | project_anchor | own_supporting | 1 | blast | unit-394088 | `0x337827...0c0555` | ⚠️ Unaudited |
+| Thrust | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xe36072...2c596e` | ⚠️ Unaudited |
 | ThrusterFactory | registry | project_anchor | own_supporting | 0 | blast | unit-394073 | `0x378368...b93fc4` | ⚠️ Unaudited |
 | ThrusterFactory | registry | project_anchor | own_supporting | 0 | blast | unit-394083 | `0xb4a7d9...aafa13` | ⚠️ Unaudited |
 | ThrusterMulticall | unknown | project_anchor | own_supporting | 0 | blast | unit-394072 | `0x2024c5...f834c5` | ⚠️ Unaudited |
@@ -130,6 +144,10 @@ The pinned logic-topography run contains 16 contract row(s) across blast. Struct
 | ThrusterRouter | adapter | project_anchor | own_supporting | 0 | blast | unit-394076 | `0x44889b...fb2b4e` | ⚠️ Unaudited |
 | ThrusterRouter | adapter | project_anchor | own_supporting | 0 | blast | unit-394080 | `0x98994a...1650f6` | ⚠️ Unaudited |
 | TickLens | unknown | project_anchor | own_supporting | 0 | blast | unit-394078 | `0x796b39...e02ef6` | ⚠️ Unaudited |
+| Token Minter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x90a4b9...641b59` | ⚠️ Unaudited |
+| TokenAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc9b92b...8a5572` | ⚠️ Unaudited |
+| TokenDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x29903f...a7f05e` | ⚠️ Unaudited |
+| Voting Escrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc6de1f...2386a4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -143,14 +161,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (10)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | NonfungibleTokenPositionDescriptor | unknown | project_anchor | own_supporting | 0 | blast | unit-394079 | `0x985924...735e4a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x18db7b...428397` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x32cad2...a5b412` | ❓ Unverified |
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | blast | unit-394075 | `0x414991...091711` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x44a2f2...7e968a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x609fdd...ef3358` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc4af38...72ba44` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xd3aad2...22b6d7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xe79513...11fd87` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | blast | unit-394087 | `0xf00da1...906537` | ❓ Unverified |
 
 ## Audit Inventory
@@ -268,10 +293,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 16 |
-| upstream | 0 |
+| native | 32 |
+| upstream | 2 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 10 |
 
 ## Scope Matching Notes
 

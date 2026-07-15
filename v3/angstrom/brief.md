@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ⚠️ Lifecycle status: DECLINING - TVL dropped 69.9% over 90 days
 
@@ -18,14 +18,14 @@
 - Project: Angstrom (`angstrom`)
 - Website: [https://angstrom.xyz/](https://angstrom.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base, ethereum, sepolia
-- Contract surface: 9 unique implementations (10 raw deployments)
+- Contract surface: 18 unique implementations (20 raw deployments)
 - Coverage basis: 1/5 confirmed own live verified implementations (20.0%); conservative 20.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $2,967,672.32
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- On-chain TVL (included contracts): $223,534,408.46
+- TVL by chain: Ethereum $205,311,400.31 | Base $18,223,008.14
 
 ## Project Description
 
@@ -63,7 +63,7 @@ The pinned logic-topography run contains 6 contract row(s) across base, ethereum
 
 ## Contract Surface Quality
 
-- Indexed contracts: 6; live-surface contracts included: 6 (6 live, 0 unknown).
+- Logic-topography rows: 6; live-surface rows included: 6 (6 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 6/8 live.
 - Detected codebases: none
@@ -74,15 +74,15 @@ The pinned logic-topography run contains 6 contract row(s) across base, ethereum
 - Coverage of address-book-owned deployed-live implementations: 1/5 (20.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 5 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 2 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 11 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 5 of 9 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/5
-- Verified + Unaudited implementations: 4
+- Confirmed-live implementations: 5 of 18 unique; 13 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/14
+- Verified + Unaudited implementations: 13
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 9
-- Raw deployments: 10
+- Unverified implementations: 4
+- Unique implementations: 18
+- Raw deployments: 20
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
@@ -96,7 +96,7 @@ The pinned logic-topography run contains 6 contract row(s) across base, ethereum
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 1 | 20.0% | 2025-07 |
+| Spearbit | Tier 1 | 1 | 7.1% | 2025-07 |
 
 ## Contract Surface
 
@@ -106,14 +106,23 @@ The pinned logic-topography run contains 6 contract row(s) across base, ethereum
 |---|---|---|---|---:|---|---|---|---|
 | Angstrom | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379014 | `0x000000...edfad4` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (13)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| PoolManager | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x000000...e08a90`; base `0x498581...652b2b` | ⚠️ Unaudited |
+| AngstromAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb535ae...4efbf8` | ⚠️ Unaudited |
+| AngstromInspector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd262c2...03b6c3` | ⚠️ Unaudited |
 | AngstromL2 | unknown | project_anchor | own_supporting | 0 | base | unit-379020 | 2 deployments: base `0x7fa49d...09e5cf`; base `0xcd256a...1de5cf` | ⚠️ Unaudited |
 | AngstromL2Factory | registry | project_anchor | own_supporting | 0 | base | unit-379019 | `0x000000...69cd05` | ⚠️ Unaudited |
+| AngstromVaultFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6582c7...0c169c` | ⚠️ Unaudited |
 | ControllerV1 | governance | project_anchor | own_supporting | 0 | ethereum | unit-379015 | `0x174648...315fd4` | ⚠️ Unaudited |
+| EventEmitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb3df86...8a00df` | ⚠️ Unaudited |
+| PerpsOracleAttested | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5d8555...a65c0b` | ⚠️ Unaudited |
+| PriceOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4cf26a...74b89d` | ⚠️ Unaudited |
+| Swapper | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x814e3b...ebf8cc` | ⚠️ Unaudited |
 | TimelockController | governance | project_anchor | own_supporting | 0 | ethereum | unit-379016 | `0x60d41d...526c01` | ⚠️ Unaudited |
+| VaultExtension | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x06d9f5...e06c79` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -218,8 +227,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
-| upstream | 0 |
+| native | 11 |
+| upstream | 2 |
 | standard_library | 1 |
 | needs_review | 4 |
 

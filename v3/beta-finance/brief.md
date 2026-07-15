@@ -9,16 +9,16 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Beta Finance (`beta-finance`)
 - Website: [https://betafinance.gitbook.io/betafinance](https://betafinance.gitbook.io/betafinance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: avalanche, bsc, ethereum
+- Chains: arbitrum, avalanche, bsc, ethereum
 - Contract surface: 188 unique implementations (188 raw deployments)
 - Coverage basis: 1/5 confirmed own live verified implementations (20.0%); conservative 20.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $537,517.00
@@ -78,7 +78,7 @@ The pinned logic-topography run contains 5 contract row(s) across avalanche, bsc
 
 ## Contract Surface Quality
 
-- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
+- Logic-topography rows: 5; live-surface rows included: 5 (5 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 23/23 live.
 - Detected codebases: none
@@ -89,11 +89,11 @@ The pinned logic-topography run contains 5 contract row(s) across avalanche, bsc
 - Coverage of address-book-owned deployed-live implementations: 1/5 (20.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 23 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 165 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 165 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 9
-- Deployed-live implementations: 23 of 188 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/5
-- Verified + Unaudited implementations: 4
+- Confirmed-live implementations: 23 of 188 unique; 165 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/170
+- Verified + Unaudited implementations: 169
 - Verified by bytecode match: 0
 - Unverified implementations: 18
 - Unique implementations: 188
@@ -110,9 +110,9 @@ The pinned logic-topography run contains 5 contract row(s) across avalanche, bsc
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| OpenZeppelin | Tier 1 | 1 | 20.0% | 2021-08 |
-| PeckShield | Tier 2 | 1 | 20.0% | 2021-05 |
-| Trail of Bits | Tier 1 | 1 | 20.0% | 2021-08 |
+| OpenZeppelin | Tier 1 | 1 | 0.6% | 2021-08 |
+| PeckShield | Tier 2 | 1 | 0.6% | 2021-05 |
+| Trail of Bits | Tier 1 | 1 | 0.6% | 2021-08 |
 
 ## Contract Surface
 

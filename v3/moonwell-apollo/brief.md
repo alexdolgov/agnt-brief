@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Moonwell Apollo (`moonwell-apollo`)
 - Website: [https://moonwell.fi](https://moonwell.fi)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base, ethereum, moonbeam, moonriver, optimism
-- Contract surface: 138 unique implementations (164 raw deployments)
+- Contract surface: 217 unique implementations (364 raw deployments)
 - Coverage basis: 2/60 confirmed own live verified implementations (3.3%); conservative 3.3% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $831,149.72
 - On-chain TVL (included contracts): n/a
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 114 contract row(s) across base, ethere
 
 ## Fork Analysis
 
-1 of 95 contracts are derived from known codebases. 94 contracts have no detected origin.
+1 of 100 contracts are derived from known codebases. 99 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -136,8 +136,13 @@ Removals (removed from original): none
 - MetaMorphoV1_1 (`0x3520e1...29642d`, chain 10)
 - Mfam (`0xbb8d88...1a58f1`, chain 1285)
 - MGlimmer (`0x091608...4c7955`, chain 1284)
+- MoonwellViewsV1 (`0x2a55ba...5a280f`, chain 1285)
+- MoonwellViewsV2 (`0x29ea8b...ae5b71`, chain 8453)
 - Morpho (`0xbbbbbb...eeffcb`, chain 8453)
 - SafeProxy (`0x5b7100...ea4026`, chain 1)
+- StakedWell (`0x701551...b0f5af`, chain 1)
+- StakedWell (`0x78feb7...266568`, chain 10)
+- StakedWell (`0xe2747a...454b29`, chain 8453)
 - TemporalGovernor (`0x17c9ba...7aff3d`, chain 10)
 - TemporalGovernor (`0x908df7...ea4689`, chain 1284)
 - TemporalGovernor (`0x8b6218...df7d51`, chain 8453)
@@ -156,7 +161,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 114; live-surface contracts included: 114 (81 live, 33 unknown).
+- Logic-topography rows: 114; live-surface rows included: 114 (95 live, 19 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 94/105 live.
 - Detected codebases: none
@@ -167,15 +172,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 2/60 (3.3%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 94 own, 11 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 33 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 56
-- Deployed-live implementations: 94 of 138 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 2/60
-- Verified + Unaudited implementations: 58
+- Outside the address book: 112 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 81
+- Confirmed-live implementations: 94 of 217 unique; 123 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 2/133
+- Verified + Unaudited implementations: 131
 - Verified by bytecode match: 0
-- Unverified implementations: 34
-- Unique implementations: 138
-- Raw deployments: 164
+- Unverified implementations: 84
+- Unique implementations: 217
+- Raw deployments: 364
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -188,7 +193,7 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Halborn | Tier 2 | 2 | 3.3% | 2022-02 |
+| Halborn | Tier 2 | 2 | 1.5% | 2022-02 |
 
 ## Contract Surface
 
@@ -199,36 +204,57 @@ Removals (removed from original): none
 | MGlimmer | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389374 | `0x091608...4c7955` | ✅ Audited |
 | Well | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389379 | `0x511ab5...2411e3` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (67)
+### ⚠️ Verified + Unaudited (131)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AutomationDeploy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7a949a...ffde96` | ⚠️ Unaudited |
 | Bundler3 | unknown | project_anchor | own_supporting | 0 | optimism | unit-389373 | `0xfbcd3c...507c05` | ⚠️ Unaudited |
 | Bundler3 | unknown | project_anchor | own_supporting | 0 | base | unit-389410 | `0x6bfd81...3920c4` | ⚠️ Unaudited |
+| ChainlinkBoundedCompositeOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x31d099...59dade` | ⚠️ Unaudited |
+| ChainlinkOEVMorphoWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | base | n/a | 3 deployments: base `0x593355...2fd66c`; base `0xaeee63...61f5f5`; base `0xf4dcca...3dadb9` | ⚠️ Unaudited |
 | ChainlinkOracle | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-389355 | `0x599a01...94b654` | ⚠️ Unaudited |
 | ChainlinkOracle | operational_periphery | project_anchor | own_supporting | 0 | base | unit-389425 | `0xec942b...a6a9d0` | ⚠️ Unaudited |
-| Comptroller | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389432 | `0xdec80b...5b21be` | ⚠️ Unaudited |
-| Comptroller | unknown | project_anchor | own_supporting | 1 | optimism | unit-389443 | `0xca889f...c511b9` | ⚠️ Unaudited |
-| Comptroller | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 1 | moonriver | unit-389450 | `0x0b7a0e...a4905e` | ⚠️ Unaudited |
-| EcosystemReserve | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389430 | `0xabd650...00c47c` | ⚠️ Unaudited |
-| EcosystemReserve | unknown | project_anchor | own_supporting | 1 | optimism | unit-389438 | `0x966450...78ef4b` | ⚠️ Unaudited |
-| EcosystemReserve | unknown | project_anchor | own_supporting | 1 | base | unit-389455 | `0x65a633...ab95b8` | ⚠️ Unaudited |
+| ChainlinkOracleProxy | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x696daf...19e14d` | ⚠️ Unaudited |
+| ChainlinkOracleProxy | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x98b14f...8017de` | ⚠️ Unaudited |
+| ChainlinkOracleProxy | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xe69de7...978e7b` | ⚠️ Unaudited |
+| Comptroller | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389432 | 2 deployments: ethereum `0x6698e6...08f58b`; ethereum `0xdec80b...5b21be` | ⚠️ Unaudited |
+| Comptroller | unknown | project_anchor | own_supporting | 1 | optimism | unit-389443 | 2 deployments: optimism `0x8dfbb2...a30ce2`; optimism `0xca889f...c511b9` | ⚠️ Unaudited |
+| Comptroller | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 1 | moonriver | unit-389450 | 2 deployments: moonriver `0x0b7a0e...a4905e`; moonriver `0x8529ea...2ff098` | ⚠️ Unaudited |
+| Core | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x7fbfcb...570b0e` | ⚠️ Unaudited |
+| CypherAutoLoad | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9e3ca3...112ac6` | ⚠️ Unaudited |
+| EcosystemReserve | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389430 | 2 deployments: ethereum `0x437113...0d04d5`; ethereum `0xabd650...00c47c` | ⚠️ Unaudited |
+| EcosystemReserve | unknown | project_anchor | own_supporting | 1 | optimism | unit-389438 | 2 deployments: optimism `0x0cada1...ba2a10`; optimism `0x966450...78ef4b` | ⚠️ Unaudited |
+| EcosystemReserve | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | 4 deployments: moonriver `0xc0ad7d...cf4a2e`; moonriver `0xcac071...a09fc5`; base `0xd1108d...e9cec4`; base `0xe007a0...bb5060` | ⚠️ Unaudited |
+| EcosystemReserve | unknown | project_anchor | own_supporting | 1 | base | unit-389455 | 2 deployments: base `0x3343b3...372af1`; base `0x65a633...ab95b8` | ⚠️ Unaudited |
+| EcosystemReserve | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x7e1d5f...c3cf4c`; base `0xa4908a...417307` | ⚠️ Unaudited |
+| EcosystemReserve | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xbad37d...472e6c`; base `0xf65194...4e55e0` | ⚠️ Unaudited |
+| EcosystemReserveController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 7 deployments: ethereum `0x98e708...d0157f`; optimism `0x1d776f...4dee1e`; moonriver `0x300fc6...fc9ad9`; moonriver `0xee793a...ee435c`; base `0x201116...2f90b3`; base `0x586569...19aa25`; base `0x938fd9...eed514` | ⚠️ Unaudited |
 | EcosystemReserveController | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | unit-389404 | `0xd94f82...f21044` | ⚠️ Unaudited |
+| EcosystemReserveMoonriver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x7793e0...167ba4` | ⚠️ Unaudited |
 | EcosystemReserveMoonriver | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 1 | moonriver | unit-389448 | `0xba1758...88908b` | ⚠️ Unaudited |
 | ERC4626EthRouter | unknown | project_anchor | own_supporting | 0 | base | unit-389419 | `0xc095cb...758d71` | ⚠️ Unaudited |
+| ERC4626RateLimitedAllowance | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf08cef...312072` | ⚠️ Unaudited |
 | Factory4626 | registry | project_anchor | own_supporting | 0 | base | unit-389423 | `0xe770bd...4c938a` | ⚠️ Unaudited |
 | Factory4626Eth | unknown | project_anchor | own_supporting | 0 | base | unit-389408 | `0x6250e2...ec811e` | ⚠️ Unaudited |
+| FeeSplitter | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1a8ae4...4c3cdb` | ⚠️ Unaudited |
 | GeneralAdapter1 | adapter | project_anchor | own_supporting | 0 | base | unit-389417 | `0xb98c94...ae746a` | ⚠️ Unaudited |
+| JumpRateModel | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 35 deployments: ethereum `0x6e13ed...76b2ed`; ethereum `0x9a714b...a39c58`; ethereum `0xb9ca0d...c1b945`; ethereum `0xe86b7b...dfc366`; optimism `0x04e632...160bd7`; optimism `0x2a55ba...5a280f`; optimism `0x612e73...6db9e9`; optimism `0x69ff8b...e0668e`; optimism `0x7b2fab...0c744e`; optimism `0x7c94e5...dfb4c1`; optimism `0xbd2fcf...0faae2`; optimism `0xdada7d...ae76d6`; optimism `0xea952a...e99b80`; optimism `0xeb7605...6c3b4a`; optimism `0xf5e4b6...21f12a`; moonriver `0xc862a3...6601bf`; base `0x01177f...ce9a7b`; base `0x048442...1b5bd8`; base `0x073848...0bd6ea`; base `0x100710...1cc193`; base `0x13820a...0452c2`; base `0x2a62ac...2d4da1`; base `0x310fbf...dbdb52`; base `0x36bd01...20b511`; base `0x55d58f...4dd0ce`; base `0x63f9f9...6f09b1`; base `0x6ac79d...2c0ed6`; base `0x6d8cb0...474c0c`; base `0x8b2988...e4e7ca`; base `0x8e834e...9efd76`; base `0x96e03a...48cb1c`; base `0xcb9557...d3463e`; base `0xcd72a1...88e8be`; base `0xcf1a33...dc87a1`; base `0xfea5a5...c7e58f` | ⚠️ Unaudited |
+| MamoStrategyRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xecd80f...9bc766` | ⚠️ Unaudited |
+| Math | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x405e3c...41bb3a`; base `0x6a85d8...8acdbc`; base `0x7befee...996e1a`; base `0x8abfd2...adc05e` | ⚠️ Unaudited |
 | Maximillion | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389393 | `0xe5ef93...a380c3` | ⚠️ Unaudited |
 | Maximillion | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | unit-389398 | `0x1650c0...a80ccc` | ⚠️ Unaudited |
+| MErc20Delegate | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe1eeaf...ce7d8a` | ⚠️ Unaudited |
+| MErc20Delegate | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x21d851...735eaf` | ⚠️ Unaudited |
 | MErc20Delegate | unknown | project_anchor | own_supporting | 8 | optimism | unit-389444 (8 proxies) | 9 deployments: optimism `0x3fe782...ead6b2`; optimism `0x4c2e35...53d321`; optimism `0x6e6ca5...f06fdb`; optimism `0x8e0861...155525`; optimism `0x95c84f...d78ba1`; optimism `0x9fc345...f01847`; optimism `0xa3a538...38bf84`; optimism `0xa9ce0a...b09dcc`; optimism `0xbb3b1a...b83f9d` | ⚠️ Unaudited |
-| MErc20Delegate | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 6 | moonriver | unit-389449 (6 proxies) | 6 deployments: moonriver `0x36918b...ffbf21`; moonriver `0x6503d9...2e77ae`; moonriver `0x6e7453...614d90`; moonriver `0x93ef8b...ba0e9d`; moonriver `0xa0d116...688e0f`; moonriver `0xd0670a...78bfa8` | ⚠️ Unaudited |
+| MErc20Delegate | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 6 | moonriver | unit-389449 (6 proxies) | 7 deployments: moonriver `0x36918b...ffbf21`; moonriver `0x45d17f...6cf75d`; moonriver `0x6503d9...2e77ae`; moonriver `0x6e7453...614d90`; moonriver `0x93ef8b...ba0e9d`; moonriver `0xa0d116...688e0f`; moonriver `0xd0670a...78bfa8` | ⚠️ Unaudited |
 | MErc20Delegate | unknown | project_anchor | own_supporting | 14 | base | unit-389452 (14 proxies) | 14 deployments: base `0x10ff57...c5d2ee`; base `0x2f90bb...66da32`; base `0x627fe3...14304b`; base `0x630820...904f3e`; base `0x73902f...369ba6`; base `0x9a858e...84a218`; base `0xb4fb8f...07e86d`; base `0xb6419c...25a357`; base `0xb80514...c3cfb3`; base `0xcb1dac...d45f44`; base `0xdc7810...f71ed1`; base `0xde8df9...fffc64`; base `0xf877ac...ad5976`; base `0xfc41b4...72f4b5` | ⚠️ Unaudited |
 | MErc20Delegator | token | project_anchor | own_supporting | 0 | ethereum | unit-389356 | `0x636080...aaee9f` | ⚠️ Unaudited |
 | MErc20Delegator | token | project_anchor | own_supporting | 0 | ethereum | unit-389358 | `0xb85ca1...9590c4` | ⚠️ Unaudited |
 | MErc20Delegator | token | project_anchor | own_supporting | 0 | ethereum | unit-389359 | `0xe65579...63e62e` | ⚠️ Unaudited |
 | MErc20Delegator | token | project_anchor | own_supporting | 0 | ethereum | unit-389360 | `0xeddc25...467011` | ⚠️ Unaudited |
 | MErc20Delegator | token | project_anchor | own_supporting | 0 | optimism | unit-389372 | `0xed37cd...8f8b33` | ⚠️ Unaudited |
+| MErc20Delegator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | 4 deployments: moonriver `0x159814...832840`; base `0x866b83...2003fc`; base `0xbb801e...39aaf2`; base `0xcb7565...0fc8a3` | ⚠️ Unaudited |
 | MErc20Delegator | token | project_anchor | own_supporting | 0 | base | unit-389422 | `0xd64bcb...7a9682` | ⚠️ Unaudited |
 | MetaMorpho | unknown | project_anchor | own_supporting | 0 | base | unit-389407 | `0x543257...f5a796` | ⚠️ Unaudited |
 | MetaMorpho | unknown | project_anchor | own_supporting | 0 | base | unit-389415 | `0xa0e430...3d0ff1` | ⚠️ Unaudited |
@@ -238,37 +264,80 @@ Removals (removed from original): none
 | Mfam | adapter | project_anchor | own_supporting | 0 | moonriver | unit-389403 | `0xbb8d88...1a58f1` | ⚠️ Unaudited |
 | MGlimmer | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | unit-389401 | `0x6a1a77...1cd07f` | ⚠️ Unaudited |
 | MoonwellGovernorApollo | governance | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | unit-389399 | `0x2be2e2...6e7370` | ⚠️ Unaudited |
-| MoonwellViewsV1 | unknown | project_anchor | own_supporting | 1 | moonriver | unit-389447 | `0xb4104c...d59a33` | ⚠️ Unaudited |
-| MoonwellViewsV2 | unknown | project_anchor | own_supporting | 1 | base | unit-389454 | `0x683477...79d459` | ⚠️ Unaudited |
-| MoonwellViewsV3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389437 | `0x2d85b9...f7786e` | ⚠️ Unaudited |
+| MoonwellStakingViews | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xcb4413...0a0e15`; ethereum `0xf5f2ae...ce5401` | ⚠️ Unaudited |
+| MoonwellViewsV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0xf5f2ae...ce5401` | ⚠️ Unaudited |
+| MoonwellViewsV1 | unknown | project_anchor | own_supporting | 1 | moonriver | unit-389447 | 2 deployments: moonriver `0x2a55ba...5a280f`; moonriver `0xb4104c...d59a33` | ⚠️ Unaudited |
+| MoonwellViewsV1Moonbeam | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x54ff1a...43310f` | ⚠️ Unaudited |
+| MoonwellViewsV2 | unknown | project_anchor | own_supporting | 1 | base | unit-389454 | 2 deployments: base `0x29ea8b...ae5b71`; base `0x683477...79d459` | ⚠️ Unaudited |
+| MoonwellViewsV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x511ab5...2411e3`; base `0xac7b31...aa2e91` | ⚠️ Unaudited |
+| MoonwellViewsV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x76871d...938f51` | ⚠️ Unaudited |
+| MoonwellViewsV3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389437 | 2 deployments: ethereum `0x2d85b9...f7786e`; ethereum `0xde5187...1c9ad7` | ⚠️ Unaudited |
 | Morpho | unknown | project_anchor | own_supporting | 0 | base | unit-389418 | `0xbbbbbb...eeffcb` | ⚠️ Unaudited |
+| MorphoVaultV2Views | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x8d1899...99cce0` | ⚠️ Unaudited |
+| MorphoViewsV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x7fc0db...d1ed31` | ⚠️ Unaudited |
+| MultichainGovernor | governance | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | 2 deployments: moonbeam `0x0ea816...4209ab`; moonbeam `0x65299e...a707ab` | ⚠️ Unaudited |
 | MultichainGovernorV2 | governance | project_anchor | own_supporting | 1 | ethereum | unit-389434 | `0x8769b7...d75838` | ⚠️ Unaudited |
 | MultichainVoteCollectionV2 | unknown | project_anchor | own_supporting | 1 | optimism | unit-389442 | `0x3c9684...037738` | ⚠️ Unaudited |
 | MultichainVoteCollectionV2 | unknown | project_anchor | own_supporting | 1 | base | unit-389457 | `0xe0278b...03e949` | ⚠️ Unaudited |
-| MultiRewardDistributor | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389431 | `0x60142b...71851c` | ⚠️ Unaudited |
-| MultiRewardDistributor | unknown | project_anchor | own_supporting | 1 | optimism | unit-389446 | `0xf9524b...7574aa` | ⚠️ Unaudited |
-| MWethDelegate | unknown | project_anchor | own_supporting | 1 | optimism | unit-389440 | `0xb4104c...d59a33` | ⚠️ Unaudited |
+| MultiRewardDistributor | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389431 | 2 deployments: ethereum `0x54ff1a...43310f`; ethereum `0x60142b...71851c` | ⚠️ Unaudited |
+| MultiRewardDistributor | unknown | project_anchor | own_supporting | 1 | optimism | unit-389446 | 2 deployments: optimism `0xf9524b...7574aa`; optimism `0xff0731...cde121` | ⚠️ Unaudited |
+| MultiRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x2eed2b...223d2b`; optimism `0xc92ab4...0c309c` | ⚠️ Unaudited |
+| MWethDelegate | unknown | project_anchor | own_supporting | 1 | optimism | unit-389440 | 2 deployments: optimism `0x66fb79...23227b`; optimism `0xb4104c...d59a33` | ⚠️ Unaudited |
+| MWethDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: ethereum `0x9b1eea...1021fe`; base `0x599d4a...d7c41a` | ⚠️ Unaudited |
+| MWethOwnerWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x179672...57c08e`; base `0x82e5e0...8f6250` | ⚠️ Unaudited |
+| OEVProtocolFeeRedeemer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 9 deployments: ethereum `0xb41ab9...1007f5`; optimism `0x2ad2f2...830845`; optimism `0xad3315...ff170b`; optimism `0xcb9557...d3463e`; optimism `0xee3f2c...948cf9`; base `0x75eba7...393c39`; base `0xab05f7...bfecf3`; base `0xb25b49...ff331d`; base `0xcd6e19...9cd6dd` | ⚠️ Unaudited |
+| ProposalView | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0xded4de...2d5c30` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 15 deployments: ethereum `0xb8a798...2d40e5`; ethereum `0xd5294c...991a7c`; ethereum `0xf6e7c2...9aca7f`; optimism `0x8568a6...3cfab1`; moonbeam `0xab9aad...386d4e`; moonriver `0x6658ed...2821a0`; moonriver `0x6e6ca5...f06fdb`; moonriver `0xce7602...a9ceb5`; base `0x243cd4...93247a`; base `0x3fca08...074dec`; base `0x7465c2...1d1486`; base `0x9837b1...9e0bc3`; base `0xc7867f...8adb2c`; base `0xf4cf0f...90099f`; base `0xff0731...cde121` | ⚠️ Unaudited |
+| RateLimitCommonLibrary | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbec9ea...627057` | ⚠️ Unaudited |
+| RateLimitMidpointCommonLibrary | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x56ed99...103c4d`; base `0xbae1c9...113e22`; base `0xc6cda5...8822da` | ⚠️ Unaudited |
 | Safe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389429 | `0x5b7100...ea4026` | ⚠️ Unaudited |
+| StakedMfam | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | 2 deployments: moonriver `0x740d4c...da8bde`; moonriver `0xb0ee65...1d9f5b` | ⚠️ Unaudited |
 | StakedMfam | adapter | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 1 | moonriver | unit-389451 | `0xcd76e6...9fda3a` | ⚠️ Unaudited |
-| StakedWell | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389433 | `0xb3a9e0...dd4357` | ⚠️ Unaudited |
-| StakedWell | unknown | project_anchor | own_supporting | 1 | optimism | unit-389441 | `0xfb26a4...7438c5` | ⚠️ Unaudited |
-| StakedWell | unknown | project_anchor | own_supporting | 1 | base | unit-389459 | `0xe66e3a...94dc17` | ⚠️ Unaudited |
+| StakedWell | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389433 | 2 deployments: ethereum `0x701551...b0f5af`; ethereum `0xb3a9e0...dd4357` | ⚠️ Unaudited |
+| StakedWell | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0xeb56c5...66012a`; ethereum `0xf03499...1dae7e` | ⚠️ Unaudited |
+| StakedWell | unknown | project_anchor | own_supporting | 1 | optimism | unit-389441 | 2 deployments: optimism `0x78feb7...266568`; optimism `0xfb26a4...7438c5` | ⚠️ Unaudited |
+| StakedWell | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: optimism `0xabd650...00c47c`; base `0x443964...cf556c`; base `0xdbffbc...0f9e24` | ⚠️ Unaudited |
+| StakedWell | unknown | project_anchor | own_supporting | 1 | base | unit-389459 | 2 deployments: base `0xe2747a...454b29`; base `0xe66e3a...94dc17` | ⚠️ Unaudited |
+| STIXToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfd1013...5d0d5e` | ⚠️ Unaudited |
 | TemporalGovernor | unknown | project_anchor | own_supporting | 0 | optimism | unit-389361 | `0x17c9ba...7aff3d` | ⚠️ Unaudited |
+| TemporalGovernor | governance | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x1e336f...7fb563` | ⚠️ Unaudited |
 | TemporalGovernor | governance | project_anchor | own_supporting | 0 | moonbeam | unit-389385 | `0x908df7...ea4689` | ⚠️ Unaudited |
 | TemporalGovernor | governance | project_anchor | own_supporting | 0 | base | unit-389414 | `0x8b6218...df7d51` | ⚠️ Unaudited |
 | Timelock | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | unit-389397 | `0x04e632...160bd7` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | 3 deployments: moonriver `0x66fb79...23227b`; moonriver `0xa4230d...483019`; moonriver `0xf27d72...785c67` | ⚠️ Unaudited |
 | TokenImplementation | token | project_anchor | own_supporting | 1 | base | unit-389456 | `0xff8ade...03493d` | ⚠️ Unaudited |
+| TokenSaleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | moonriver | n/a | 2 deployments: moonriver `0x17c9ba...7aff3d`; moonriver `0xac7b31...aa2e91` | ⚠️ Unaudited |
+| TokenSaleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | moonriver | n/a | 2 deployments: moonriver `0x293635...62b9cf`; moonriver `0x8568a6...3cfab1` | ⚠️ Unaudited |
+| TokenSaleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0xbec923...56f72e` | ⚠️ Unaudited |
+| TokenSaleDistributorProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x29ea8b...ae5b71` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x50837b...cead56` | ⚠️ Unaudited |
+| VotingPowerAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x1e336f...7fb563`; ethereum `0x908df7...ea4689` | ⚠️ Unaudited |
+| VotingPowerAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0xbac3dd...771501`; optimism `0xf2af8f...75c2a1` | ⚠️ Unaudited |
+| VotingPowerAggregator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x701551...b0f5af`; base `0xb3a9e0...dd4357` | ⚠️ Unaudited |
+| WETH9 | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x420000...000006` | ⚠️ Unaudited |
 | WETHRouter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-389357 | `0xa218a4...93ca22` | ⚠️ Unaudited |
 | WETHRouter | adapter | project_anchor | own_supporting | 0 | optimism | unit-389370 | `0xc4ab8c...0e11dc` | ⚠️ Unaudited |
+| WETHRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x31ccfb...2124c4`; base `0x41f2b7...fbcdc9` | ⚠️ Unaudited |
 | WETHRouter | adapter | project_anchor | own_supporting | 0 | base | unit-389412 | `0x70778c...75d0c9` | ⚠️ Unaudited |
+| WethUnwrapper | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x4605da...1da2f6`; base `0x7414df...e381b7`; base `0x876fa6...99d6ca`; base `0xcd57f6...0441ac` | ⚠️ Unaudited |
 | WethUnwrapper | unknown | project_anchor | own_supporting | 0 | optimism | unit-389368 | `0xa962f2...2aef16` | ⚠️ Unaudited |
 | WethUnwrapper | token | project_anchor | own_supporting | 0 | base | unit-389405 | `0x1382cf...9e4caf` | ⚠️ Unaudited |
 | WormholeBridgeAdapter | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-389435 | `0x734abb...a6dbb7` | ⚠️ Unaudited |
 | WormholeBridgeAdapter | operational_periphery | project_anchor | own_supporting | 1 | optimism | unit-389445 | `0x734abb...a6dbb7` | ⚠️ Unaudited |
+| WormholeBridgeAdapter | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x48e70f...8c6412` | ⚠️ Unaudited |
 | WormholeBridgeAdapter | operational_periphery | project_anchor | own_supporting | 1 | base | unit-389453 | `0x734abb...a6dbb7` | ⚠️ Unaudited |
-| xWELL | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389436 | `0xa88594...2296ae` | ⚠️ Unaudited |
-| xWELL | unknown | project_anchor | own_supporting | 1 | optimism | unit-389439 | `0xa88594...2296ae` | ⚠️ Unaudited |
-| xWELL | unknown | project_anchor | own_supporting | 1 | base | unit-389458 | `0xa88594...2296ae` | ⚠️ Unaudited |
+| WormholeBridgeAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x8318f3...b37e84` | ⚠️ Unaudited |
+| WormholeBridgeAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xf9ebc3...670872` | ⚠️ Unaudited |
+| WormholeUnwrapperAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x24af32...299c58` | ⚠️ Unaudited |
+| XERC20Lockbox | token | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x0d4503...51b460` | ⚠️ Unaudited |
+| xWELL | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x3b1bdd...700a7f`; base `0x3b1bdd...700a7f` | ⚠️ Unaudited |
+| xWELL | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389436 | 2 deployments: ethereum `0xa88594...2296ae`; ethereum `0xb84543...666df4` | ⚠️ Unaudited |
+| xWELL | unknown | project_anchor | own_supporting | 1 | optimism | unit-389439 | 2 deployments: optimism `0x3b1bdd...700a7f`; optimism `0xa88594...2296ae` | ⚠️ Unaudited |
+| xWELL | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x2585d8...9a14e3`; base `0x87e097...e5dd69` | ⚠️ Unaudited |
+| xWELL | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x54720d...8e5873`; base `0xe5fa98...08d0c8` | ⚠️ Unaudited |
+| xWELL | unknown | project_anchor | own_supporting | 1 | base | unit-389458 | 2 deployments: base `0xa88594...2296ae`; base `0xbe08a9...9e124a` | ⚠️ Unaudited |
+| xWELLBridgeFeePayer | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x342ef3...a39827` | ⚠️ Unaudited |
+| xWELLRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | 2 deployments: moonbeam `0x78c504...2db169`; moonbeam `0xfb26a4...7438c5` | ⚠️ Unaudited |
 | xWELLRouter | adapter | project_anchor | own_supporting | 0 | moonbeam | unit-389389 | `0xb84543...666df4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -283,7 +352,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (69)
+### ❓ Unverified (84)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -291,6 +360,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-389362 | `0x181ba7...58668e` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-389363 | `0x2f1490...746dcf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x701551...b0f5af` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-389365 | `0x79481c...f141f0` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-389366 | `0x866b83...2003fc` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-389367 | `0x90aa62...9451f8` | ❓ Unverified |
@@ -303,6 +373,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389380 | `0x540244...9cdd17` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389381 | `0x744b17...1d615b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389382 | `0x7793e0...167ba4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x826d8e...590c29` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389383 | `0x8568a6...3cfab1` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389384 | `0x8e00d5...86a180` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389386 | `0x9a8464...0f1af4` | ❓ Unverified |
@@ -314,16 +385,26 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389394 | `0xe76c8b...c73994` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389395 | `0xed301c...b665f9` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389396 | `0xfc4dfb...57666d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x2f5d37...85bc38` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x504bd1...f3fdc1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x511ab5...2411e3` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | unit-389400 | `0x5ded9d...0bb8db` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | unit-389402 | `0x892be7...3baf60` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0x9837b1...9e0bc3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | n/a | `0xdada7d...ae76d6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x03ca79...982aa1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x11d223...44c197` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x134263...c4622b` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x17c9ba...7aff3d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x181ba7...58668e` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2f1490...746dcf` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3520e1...29642d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x36918b...ffbf21` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389406 | `0x3bf937...09a5e5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3c9684...037738` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3fe782...ead6b2` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4c2e35...53d321` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x576276...5cfc4d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x60142b...71851c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389409 | `0x628ff6...09d457` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6503d9...2e77ae` | ❓ Unverified |
@@ -331,9 +412,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6e7453...614d90` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389411 | `0x703843...065cc8` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389413 | `0x73b06d...462417` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x78c29a...02f706` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x79481c...f141f0` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x8e0861...155525` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x90aa62...9451f8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x92cf58...416dfb` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x93ef8b...ba0e9d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x95c84f...d78ba1` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x966450...78ef4b` | ❓ Unverified |
@@ -345,6 +428,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb4104c...d59a33` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389416 | `0xb682c8...a501a2` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbb3b1a...b83f9d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc104a4...2c5896` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc4ab8c...0e11dc` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389421 | `0xc72fcc...72b42b` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xca889f...c511b9` | ❓ Unverified |
@@ -405,11 +489,11 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | optimism | `0xfbcd3c...507c05` | Bundler3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0x6bfd81...3920c4` | Bundler3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xdec80b...5b21be` | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0xca889f...c511b9` | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xabd650...00c47c` | EcosystemReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0x966450...78ef4b` | EcosystemReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x65a633...ab95b8` | EcosystemReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6698e6...08f58b` | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x8dfbb2...a30ce2` | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x437113...0d04d5` | EcosystemReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x0cada1...ba2a10` | EcosystemReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x3343b3...372af1` | EcosystemReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0xc095cb...758d71` | ERC4626EthRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0xe770bd...4c938a` | Factory4626 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0x6250e2...ec811e` | Factory4626Eth | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -424,15 +508,15 @@ Verified + unaudited native implementations ranked by TVL:
 | optimism | `0xed37cd...8f8b33` | MErc20Delegator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0xd64bcb...7a9682` | MErc20Delegator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | moonriver | `0xbb8d88...1a58f1` | Mfam | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| moonriver | `0xb4104c...d59a33` | MoonwellViewsV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x683477...79d459` | MoonwellViewsV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | `0x2a55ba...5a280f` | MoonwellViewsV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x29ea8b...ae5b71` | MoonwellViewsV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x2d85b9...f7786e` | MoonwellViewsV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x60142b...71851c` | MultiRewardDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x54ff1a...43310f` | MultiRewardDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | `0xf9524b...7574aa` | MultiRewardDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0xb4104c...d59a33` | MWethDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xb3a9e0...dd4357` | StakedWell | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0xfb26a4...7438c5` | StakedWell | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xe66e3a...94dc17` | StakedWell | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x66fb79...23227b` | MWethDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x701551...b0f5af` | StakedWell | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x78feb7...266568` | StakedWell | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xe2747a...454b29` | StakedWell | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | `0x17c9ba...7aff3d` | TemporalGovernor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | moonbeam | `0x908df7...ea4689` | TemporalGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0x8b6218...df7d51` | TemporalGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -446,7 +530,7 @@ Verified + unaudited native implementations ranked by TVL:
 | optimism | `0x734abb...a6dbb7` | WormholeBridgeAdapter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0x734abb...a6dbb7` | WormholeBridgeAdapter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0xa88594...2296ae` | xWELL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| optimism | `0xa88594...2296ae` | xWELL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x3b1bdd...700a7f` | xWELL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0xa88594...2296ae` | xWELL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | moonbeam | `0xb84543...666df4` | xWELLRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -454,10 +538,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 57 |
-| upstream | 11 |
-| standard_library | 1 |
-| needs_review | 69 |
+| native | 112 |
+| upstream | 18 |
+| standard_library | 3 |
+| needs_review | 84 |
 
 ## Scope Matching Notes
 

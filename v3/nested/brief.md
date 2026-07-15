@@ -9,16 +9,16 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Nested (`nested`)
 - Website: [https://nested.fi](https://nested.fi)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, bsc, ethereum, optimism, polygon
+- Chains: arbitrum, avalanche, bsc, ethereum, optimism, polygon
 - Contract surface: 18 unique implementations (18 raw deployments)
 - Coverage basis: 4/5 confirmed own live verified implementations (80.0%); conservative 80.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $125,324.22
@@ -60,7 +60,7 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, bsc,
 
 ## Contract Surface Quality
 
-- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
+- Logic-topography rows: 5; live-surface rows included: 5 (5 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 5/5 live.
 - Detected codebases: none
@@ -71,11 +71,11 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, bsc,
 - Coverage of address-book-owned deployed-live implementations: 4/5 (80.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 5 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 13 discovered implementations excluded (0 third-party/infra; 1 standard proxy/library)
+- Outside the address book: 13 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Deployed-live implementations: 5 of 18 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 4/5
-- Verified + Unaudited implementations: 1
+- Confirmed-live implementations: 5 of 18 unique; 13 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 4/18
+- Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 18
@@ -92,9 +92,9 @@ The pinned logic-topography run contains 5 contract row(s) across arbitrum, bsc,
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Code4rena | Tier 1 | 4 | 80.0% | 2022-06 |
-| Red4Sec | Tier 2 | 3 | 60.0% | 2021-11 |
-| PeckShield | Tier 2 | 1 | 20.0% | 2021-10 |
+| Code4rena | Tier 1 | 4 | 22.2% | 2022-06 |
+| Red4Sec | Tier 2 | 3 | 16.7% | 2021-11 |
+| PeckShield | Tier 2 | 1 | 5.6% | 2021-10 |
 
 ## Contract Surface
 

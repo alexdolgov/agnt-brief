@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Curve Finance (`curve-finance`)
 - Website: [https://curve.finance](https://curve.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, aurora, avalanche, base, bsc, celo, ethereum, etherlink, fantom, fraxtal, gnosis, hyperliquid, ink, kava, mantle, monad, moonbeam, optimism, plasma, polygon, sonic, unichain, x-layer
-- Contract surface: 1111 unique implementations (1111 raw deployments)
+- Chains: arbitrum, aurora, avalanche, base, bsc, celo, ethereum, etherlink, fantom, fraxtal, gnosis, harmony, hyperliquid, ink, kava, mantle, monad, moonbeam, optimism, plasma, polygon, sonic, unichain, x-layer
+- Contract surface: 1112 unique implementations (1112 raw deployments)
 - Coverage basis: 19/119 confirmed own live verified implementations (16.0%); conservative 16.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,618,703,513.95
 - On-chain TVL (included contracts): n/a
@@ -1045,7 +1045,7 @@ The pinned logic-topography run contains 119 contract row(s) across arbitrum, au
 
 ## Contract Surface Quality
 
-- Indexed contracts: 119; live-surface contracts included: 119 (119 live, 0 unknown).
+- Logic-topography rows: 119; live-surface rows included: 119 (119 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 990/1058 live.
 - Detected codebases: none
@@ -1056,15 +1056,15 @@ The pinned logic-topography run contains 119 contract row(s) across arbitrum, au
 - Coverage of address-book-owned deployed-live implementations: 19/119 (16.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 990 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 121 discovered implementations excluded (1 third-party/infra; 4 standard proxy/library)
+- Outside the address book: 122 discovered implementations shown in the inventory but excluded from coverage (1 third-party/infra; 4 standard proxy/library)
 - Proxy deployments represented within implementation groups: 18
-- Deployed-live implementations: 990 of 1111 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 19/119
-- Verified + Unaudited implementations: 100
+- Confirmed-live implementations: 990 of 1112 unique; 122 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 19/241
+- Verified + Unaudited implementations: 222
 - Verified by bytecode match: 0
 - Unverified implementations: 871
-- Unique implementations: 1111
-- Raw deployments: 1111
+- Unique implementations: 1112
+- Raw deployments: 1112
 - Audits discovered: 21 (21 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 11
 - ASD (verified + unaudited TVL): n/a
@@ -1077,9 +1077,9 @@ The pinned logic-topography run contains 119 contract row(s) across arbitrum, au
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ChainSecurity | Tier 1 | 11 | 9.2% | 2025-09 |
-| yAudit | Tier 2 | 8 | 6.7% | 2023-11 |
-| StateMind | Tier 2 | 2 | 1.7% | 2024-02 |
+| ChainSecurity | Tier 1 | 11 | 4.6% | 2025-09 |
+| yAudit | Tier 2 | 8 | 3.3% | 2023-11 |
+| StateMind | Tier 2 | 2 | 0.8% | 2024-02 |
 
 ## Contract Surface
 
@@ -1107,7 +1107,7 @@ The pinned logic-topography run contains 119 contract row(s) across arbitrum, au
 | VaultMessengerLZ | unknown | project_anchor | own_supporting | 0 | ethereum | unit-235460 | `0x159455...e3e6d9` | ✅ Audited |
 | Voting | unknown | project_anchor | own_supporting | 1 | ethereum | unit-236504 | `0xbcff8b...330399` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (221)
+### ⚠️ Verified + Unaudited (222)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
@@ -1250,6 +1250,7 @@ The pinned logic-topography run contains 119 contract row(s) across arbitrum, au
 | PCvxZaps | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6753f2...e48222` | ⚠️ Unaudited |
 | Peg Keeper Regulator | unknown | project_anchor | own_supporting | 0 | ethereum | unit-235477 | `0x36a04c...dd855f` | ⚠️ Unaudited |
 | Peg Keeper V2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-235482 | `0x3fa20e...2fe09c` | ⚠️ Unaudited |
+| PegKeeper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1ef89e...4dccae` | ⚠️ Unaudited |
 | PermittableToken | unknown | project_anchor | own_supporting | 1 | gnosis | unit-236506 | `0x712b3d...bdd0bd` | ⚠️ Unaudited |
 | PirexClaimAll | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0037eb...8f8aca` | ⚠️ Unaudited |
 | PirexClaims | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7ac09d...5dee7a` | ⚠️ Unaudited |
@@ -2497,7 +2498,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 224 |
+| native | 225 |
 | upstream | 6 |
 | standard_library | 10 |
 | needs_review | 871 |

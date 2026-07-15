@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: PepeTeam (`pepeteam`)
 - Website: [https://pepe.team](https://pepe.team)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: bsc, bsc-testnet, ethereum, polygon, polygon-mumbai, sepolia
-- Contract surface: 115 unique implementations (131 raw deployments)
+- Contract surface: 119 unique implementations (139 raw deployments)
 - Coverage basis: 0/45 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,049,591.00
 - On-chain TVL (included contracts): n/a
@@ -116,7 +116,7 @@ The pinned logic-topography run contains 61 contract row(s) across bsc, bsc-test
 
 ## Contract Surface Quality
 
-- Indexed contracts: 61; live-surface contracts included: 61 (61 live, 0 unknown).
+- Logic-topography rows: 61; live-surface rows included: 61 (61 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 45/115 live.
 - Detected codebases: none
@@ -127,15 +127,15 @@ The pinned logic-topography run contains 61 contract row(s) across bsc, bsc-test
 - Coverage of address-book-owned deployed-live implementations: 0/45 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 45 own, 70 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 16
-- Deployed-live implementations: 45 of 115 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/45
-- Verified + Unaudited implementations: 45
+- Outside the address book: 4 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 20
+- Confirmed-live implementations: 45 of 119 unique; 74 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/49
+- Verified + Unaudited implementations: 49
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 115
-- Raw deployments: 131
+- Unverified implementations: 70
+- Unique implementations: 119
+- Raw deployments: 139
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -154,7 +154,7 @@ The pinned logic-topography run contains 61 contract row(s) across bsc, bsc-test
 
 - None
 
-### ⚠️ Verified + Unaudited (45)
+### ⚠️ Verified + Unaudited (49)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
@@ -193,12 +193,16 @@ The pinned logic-topography run contains 61 contract row(s) across bsc, bsc-test
 | MintRootAdapter | unknown | project_anchor | own_supporting | 1 | polygon | unit-391005 | 2 deployments: polygon `0x1bda12...003e14`; polygon `0xa106a0...d649db` | ⚠️ Unaudited |
 | Multisig | unknown | project_anchor | own_supporting | 1 | bsc | unit-391009 | 2 deployments: bsc `0x28c3ec...5dc2dd`; bsc `0xd7fee5...ac1d42` | ⚠️ Unaudited |
 | Multisig | unknown | project_anchor | own_supporting | 1 | bsc | unit-391010 | 2 deployments: bsc `0x30965e...1991f1`; bsc `0x5f951d...4c4c12` | ⚠️ Unaudited |
+| Multisig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | 2 deployments: bsc `0x5d1ecf...013586`; bsc `0x6ee7fd...ffac9f` | ⚠️ Unaudited |
+| Multisig | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x033197...1e4e54`; polygon `0x7615c8...d6ed42` | ⚠️ Unaudited |
 | Multisig | unknown | project_anchor | own_supporting | 1 | polygon | unit-391001 | 2 deployments: polygon `0x22b643...fb4fb8`; polygon `0xa38ce8...6800ed` | ⚠️ Unaudited |
 | Multisig | unknown | project_anchor | own_supporting | 1 | polygon | unit-391002 | 2 deployments: polygon `0x2a6619...ccb3b0`; polygon `0x30965e...1991f1` | ⚠️ Unaudited |
 | SafeERC20Bridge | unknown | project_anchor | own_supporting | 0 | bsc | unit-390964 | `0xf57db8...f81e4a` | ⚠️ Unaudited |
 | SafeERC20Bridge | operational_periphery | project_anchor | own_supporting | 0 | polygon | unit-390962 | `0x5f89d0...66e37c` | ⚠️ Unaudited |
 | SafeERC20BridgeWithPool | operational_periphery | project_anchor | own_supporting | 1 | bsc | unit-391015 | 2 deployments: bsc `0x8df127...e9367a`; bsc `0xfe72ac...b03723` | ⚠️ Unaudited |
 | SafeERC20BridgeWithPool | unknown | project_anchor | own_supporting | 1 | polygon | unit-391006 | 2 deployments: polygon `0xc4e86c...d72970`; polygon `0xf57db8...f81e4a` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | 2 deployments: bsc `0xa3fb11...c42e51`; bsc `0xe239b6...207854` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0xcb0c5e...5a00cc`; polygon `0xea27b6...cabbbf` | ⚠️ Unaudited |
 | WavesCaller | unknown | project_anchor | own_supporting | 1 | bsc | unit-391008 | 2 deployments: bsc `0x1905f4...d76cc6`; bsc `0x8dc9ac...3c8a5f` | ⚠️ Unaudited |
 | WavesCaller | unknown | project_anchor | own_supporting | 1 | polygon | unit-391004 | 2 deployments: polygon `0x28c3ec...5dc2dd`; polygon `0x8dc9ac...3c8a5f` | ⚠️ Unaudited |
 | WavesMintAdapter | unknown | project_anchor | own_supporting | 1 | bsc | unit-391012 | 2 deployments: bsc `0x5dcb74...309ad5`; bsc `0xa38ce8...6800ed` | ⚠️ Unaudited |
@@ -334,7 +338,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 19 |
+| native | 23 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 96 |

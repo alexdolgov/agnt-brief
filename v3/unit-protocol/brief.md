@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Unit Protocol (`unit-protocol`)
 - Website: [https://unitprotocol.org/](https://unitprotocol.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, avalanche, bsc, ethereum, fantom, gnosis, optimism
 - Contract surface: 483 unique implementations (483 raw deployments)
@@ -131,7 +131,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 13; live-surface contracts included: 13 (7 live, 6 unknown).
+- Logic-topography rows: 13; live-surface rows included: 13 (7 live, 6 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 62/105 live.
 - Detected codebases: none
@@ -142,13 +142,13 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 1/7 (14.3%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 62 own, 42 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 379 discovered implementations excluded (64 third-party/infra; 10 standard proxy/library)
+- Outside the address book: 379 discovered implementations shown in the inventory but excluded from coverage (64 third-party/infra; 10 standard proxy/library)
 - Proxy deployments represented within implementation groups: 20
-- Deployed-live implementations: 62 of 483 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/7
-- Verified + Unaudited implementations: 6
+- Confirmed-live implementations: 62 of 483 unique; 421 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/392
+- Verified + Unaudited implementations: 391
 - Verified by bytecode match: 0
-- Unverified implementations: 55
+- Unverified implementations: 91
 - Unique implementations: 483
 - Raw deployments: 483
 - Audits discovered: 4 (4 direct, 0 inherited from forked code)
@@ -163,8 +163,8 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| LevelK | Tier 2 | 1 | 14.3% | 2021-01 |
-| yAudit | Tier 2 | 1 | 14.3% | 2020-10 |
+| LevelK | Tier 2 | 1 | 0.3% | 2021-01 |
+| yAudit | Tier 2 | 1 | 0.3% | 2020-10 |
 
 ## Contract Surface
 

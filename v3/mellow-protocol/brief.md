@@ -9,16 +9,16 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Mellow Protocol (`mellow-protocol`)
 - Website: [https://mellow.finance](https://mellow.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, base, bsc, ethereum, fraxtal, manta-pacific, mantle, optimism, plasma, polygon
+- Chains: arbitrum, base, bsc, ethereum, fraxtal, manta-pacific, mantle, optimism, plasma, polygon, polygon-zkevm
 - Contract surface: 833 unique implementations (839 raw deployments)
 - Coverage basis: 17/49 confirmed own live verified implementations (34.7%); conservative 34.7% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $200,876,073.00
@@ -496,7 +496,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 54; live-surface contracts included: 54 (53 live, 1 unknown).
+- Logic-topography rows: 54; live-surface rows included: 54 (53 live, 1 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 429/702 live.
 - Detected codebases: none
@@ -507,13 +507,13 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 17/49 (34.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 429 own, 30 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 374 discovered implementations excluded (30 third-party/infra; 2 standard proxy/library)
+- Outside the address book: 374 discovered implementations shown in the inventory but excluded from coverage (30 third-party/infra; 2 standard proxy/library)
 - Proxy deployments represented within implementation groups: 44
-- Deployed-live implementations: 429 of 833 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 17/49
-- Verified + Unaudited implementations: 32
+- Confirmed-live implementations: 429 of 833 unique; 404 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 17/424
+- Verified + Unaudited implementations: 407
 - Verified by bytecode match: 0
-- Unverified implementations: 380
+- Unverified implementations: 409
 - Unique implementations: 833
 - Raw deployments: 839
 - Audits discovered: 21 (21 direct, 0 inherited from forked code)
@@ -528,15 +528,15 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ChainSecurity | Tier 1 | 13 | 26.5% | 2025-02 |
-| BlockSec | Tier 2 | 4 | 8.2% | 2022-08 |
-| StateMind | Tier 2 | 3 | 6.1% | 2025-01 |
-| N/A | Tier 2 | 2 | 4.1% | 2025-11 |
-| Decurity | Tier 2 | 1 | 2.0% | 2025-03 |
-| Nethermind | Tier 2 | 1 | 2.0% | 2026-03 |
-| Pessimistic | Tier 2 | 1 | 2.0% | 2022-12 |
-| Sherlock | Tier 1 | 1 | 2.0% | 2025-07 |
-| yAudit | Tier 2 | 1 | 2.0% | 2025-06 |
+| ChainSecurity | Tier 1 | 13 | 3.1% | 2025-02 |
+| BlockSec | Tier 2 | 4 | 0.9% | 2022-08 |
+| StateMind | Tier 2 | 3 | 0.7% | 2025-01 |
+| N/A | Tier 2 | 2 | 0.5% | 2025-11 |
+| Decurity | Tier 2 | 1 | 0.2% | 2025-03 |
+| Nethermind | Tier 2 | 1 | 0.2% | 2026-03 |
+| Pessimistic | Tier 2 | 1 | 0.2% | 2022-12 |
+| Sherlock | Tier 1 | 1 | 0.2% | 2025-07 |
+| yAudit | Tier 2 | 1 | 0.2% | 2025-06 |
 
 ## Contract Surface
 

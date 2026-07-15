@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ⚠️ Lifecycle status: DECLINING - TVL dropped 42.6% over 90 days
 
@@ -18,14 +18,14 @@
 - Project: Beradrome (`beradrome`)
 - Website: [https://www.beradrome.com](https://www.beradrome.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: berachain
-- Contract surface: 1 unique implementations (3 raw deployments)
+- Contract surface: 11 unique implementations (13 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $6,836,174.59
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- On-chain TVL (included contracts): $3,276,244.79
+- TVL by chain: Berachain $3,276,244.79
 
 ## ⚠️ Limited Contract Surface
 
@@ -52,7 +52,7 @@ The pinned logic-topography run contains 3 contract row(s) across berachain. Str
 ## Contract Surface Quality
 
 - Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
-- Indexed contracts: 3; live/inactive and live-deployment-unit totals are withheld until liveness completes.
+- Logic-topography rows: 3; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -61,15 +61,15 @@ The pinned logic-topography run contains 3 contract row(s) across berachain. Str
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 10 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- All block-explorer-verified implementations audited (incl. non-live): 0/11
+- Verified + Unaudited implementations: 11
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 3
+- Unique implementations: 11
+- Raw deployments: 13
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -89,11 +89,21 @@ The pinned logic-topography run contains 3 contract row(s) across berachain. Str
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| TOKEN | token | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x7838ce...c74174` | ⚠️ Unaudited |
+| TOKENFees | token | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x06030c...eba5d3` | ⚠️ Unaudited |
+| BerachainPlugin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xac5922...500171` | ⚠️ Unaudited |
+| Bribe | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x5dba62...659edd` | ⚠️ Unaudited |
+| Gauge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x229fdf...4dcc38` | ⚠️ Unaudited |
+| GnosisSafeProxy | governance | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xab53af...58e09c` | ⚠️ Unaudited |
 | KodiakIslandWithRouter | adapter | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | berachain | unit-230135 | 3 deployments: berachain `0x63b0ed...8ce225`; berachain `0xbfbefc...742eb0`; berachain `0xe5a2ab...09aff9` | ⚠️ Unaudited |
+| RewardVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x63233e...fc09f0` | ⚠️ Unaudited |
+| Voter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0xd7ea36...e4ad47` | ⚠️ Unaudited |
+| VTOKEN | token | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x7f0976...fa2b69` | ⚠️ Unaudited |
+| VTOKENRewarder | token | non_address_book | non_address_book_inventory (excluded) | 0 | berachain | n/a | `0x8a5547...94865e` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -172,9 +182,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 9 |
 | upstream | 1 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

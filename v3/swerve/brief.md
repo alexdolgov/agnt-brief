@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Swerve (`swerve`)
 - Website: [https://swerve.fi/](https://swerve.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 14 unique implementations (14 raw deployments)
+- Contract surface: 20 unique implementations (21 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $305,074.76
 - On-chain TVL (included contracts): n/a
@@ -50,7 +50,7 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum. Str
 ## Contract Surface Quality
 
 - Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
-- Indexed contracts: 11; live/inactive and live-deployment-unit totals are withheld until liveness completes.
+- Logic-topography rows: 11; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -59,15 +59,15 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum. Str
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 14 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (8 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 2
+- Outside the address book: 6 discovered implementations shown in the inventory but excluded from coverage (8 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 3
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- All block-explorer-verified implementations audited (incl. non-live): 0/14
+- Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 14
-- Raw deployments: 14
+- Unverified implementations: 6
+- Unique implementations: 20
+- Raw deployments: 21
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -86,7 +86,7 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum. Str
 
 - None
 
-### ⚠️ Verified + Unaudited (11)
+### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
@@ -96,11 +96,14 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum. Str
 | Vyper_contract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257693 | `0x2638d2...11a95e` | ⚠️ Unaudited |
 | Vyper_contract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257694 | `0x2c988c...f67974` | ⚠️ Unaudited |
 | Vyper_contract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-257701 | `0x329239...f9f88d` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x3871dd...32c92f` | ⚠️ Unaudited |
 | Vyper_contract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-257695 | `0x77c6e4...83a059` | ⚠️ Unaudited |
 | Vyper_contract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-257702 | `0xa746c6...085431` | ⚠️ Unaudited |
 | Vyper_contract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257697 | `0xb4d0c9...6b4bfa` | ⚠️ Unaudited |
 | Vyper_contract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-257698 | `0xb8baa0...cbd433` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc716ea...2c9e3d` | ⚠️ Unaudited |
 | Vyper_contract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-257700 | `0xe5e7dd...bd7f02` | ⚠️ Unaudited |
+| YPoolDelegator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x853c87...0c2780`; ethereum `0xe9f8ca...a602b1` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -114,14 +117,17 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (6)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x6b1754...271d0f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7e12d7...5f49b4` | ❓ Unverified |
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0xa0b869...06eb48` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xba08a5...fb9979` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc1aaeb...6af74e` | ❓ Unverified |
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0xdac17f...831ec7` | ❓ Unverified |
 
 ## Audit Inventory
@@ -163,10 +169,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 11 |
+| native | 14 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 

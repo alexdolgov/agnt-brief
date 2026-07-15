@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Lets Get HAI (`lets-get-hai`)
 - Website: [https://www.letsgethai.com](https://www.letsgethai.com)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: optimism
-- Contract surface: 42 unique implementations (42 raw deployments)
+- Contract surface: 90 unique implementations (103 raw deployments)
 - Coverage basis: 0/2 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $969,423.70
 - On-chain TVL (included contracts): n/a
@@ -62,7 +62,7 @@ The pinned logic-topography run contains 7 contract row(s) across optimism. Stru
 
 ## Contract Surface Quality
 
-- Indexed contracts: 7; live-surface contracts included: 7 (2 live, 5 unknown).
+- Logic-topography rows: 7; live-surface rows included: 7 (2 live, 5 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 2/7 live.
 - Detected codebases: none
@@ -73,15 +73,15 @@ The pinned logic-topography run contains 7 contract row(s) across optimism. Stru
 - Coverage of address-book-owned deployed-live implementations: 0/2 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 2 own, 5 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 35 discovered implementations excluded (5 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 2 of 42 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/2
-- Verified + Unaudited implementations: 2
+- Outside the address book: 83 discovered implementations shown in the inventory but excluded from coverage (5 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Confirmed-live implementations: 2 of 90 unique; 88 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/54
+- Verified + Unaudited implementations: 54
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 42
-- Raw deployments: 42
+- Unverified implementations: 36
+- Unique implementations: 90
+- Raw deployments: 103
 - Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -100,17 +100,64 @@ The pinned logic-topography run contains 7 contract row(s) across optimism. Stru
 
 - None
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (54)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AccountingEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa49007...65bd10` | ⚠️ Unaudited |
+| AccountingJob | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc256c3...729ef0` | ⚠️ Unaudited |
+| BasicActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xd36b1b...da7bb0` | ⚠️ Unaudited |
+| BeefyVeloVaultRelayerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x02fe16...fdaabf`; optimism `0x6cbfa1...df67fd` | ⚠️ Unaudited |
+| CoinJoin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x30ce72...7c6ea3` | ⚠️ Unaudited |
+| CollateralAuctionHouseFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x81c5c2...94b427` | ⚠️ Unaudited |
+| CollateralBidActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbfac17...fc694d` | ⚠️ Unaudited |
+| CollateralJoinFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfe7987...536143` | ⚠️ Unaudited |
+| DebtAuctionHouse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7cde0d...f617b3` | ⚠️ Unaudited |
+| DebtBidActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfc55b8...9f8117` | ⚠️ Unaudited |
+| DelayedOracleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x41a600...97b3bb` | ⚠️ Unaudited |
+| DenominatedOracleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xc3a003...67fd35` | ⚠️ Unaudited |
+| GlobalSettlement | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x75880a...864218` | ⚠️ Unaudited |
+| GlobalSettlementActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa0a788...845fa1` | ⚠️ Unaudited |
 | GovernanceToken | token | project_anchor | own_supporting | 0 | optimism | unit-266873 | `0x420000...000042` | ⚠️ Unaudited |
+| HaiDelegatee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x2c6c63...aa2b63` | ⚠️ Unaudited |
+| HaiGovernor | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe807f3...a23777` | ⚠️ Unaudited |
+| HaiProxyFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xbafbcd...e03a27` | ⚠️ Unaudited |
+| HaiSafeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb0ff82...5106c3` | ⚠️ Unaudited |
+| HardcodedOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x8c212b...be0d39` | ⚠️ Unaudited |
+| HypERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | 2 deployments: optimism `0xbdf4a4...1f1152`; optimism `0xfdf059...aba0b1` | ⚠️ Unaudited |
+| LiquidationEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x8be588...891b56` | ⚠️ Unaudited |
+| LiquidationJob | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5ef157...1b3638` | ⚠️ Unaudited |
+| OracleJob | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xf4f182...f9fc22` | ⚠️ Unaudited |
+| OracleRelayer | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x627040...fdb3a6` | ⚠️ Unaudited |
+| PessimisticVeloSingleOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 5 deployments: optimism `0x2d442a...e26585`; optimism `0x557c24...a19e6c`; optimism `0x898e74...d1c91a`; optimism `0x8cb126...9d7bcb`; optimism `0xdfeb54...ff5448` | ⚠️ Unaudited |
+| PIDController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x6f9aec...72f609` | ⚠️ Unaudited |
+| PIDRateSetter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1f76f2...434d2f` | ⚠️ Unaudited |
 | Pool | core_logic | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266875 | `0xbded65...ea6b86` | ⚠️ Unaudited |
 | Pool | core_logic | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266876 | `0xf4638d...447238` | ⚠️ Unaudited |
+| PostSettlementSurplusAuctionHouse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1fa281...956d66` | ⚠️ Unaudited |
+| PostSettlementSurplusBidActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x48c341...463640` | ⚠️ Unaudited |
 | ProtocolToken | token | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266877 | `0xf467c7...1e1404` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1a3cbf...c66091` | ⚠️ Unaudited |
 | ProxyERC20 | token | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266874 | `0x8c6f28...1ec8d9` | ⚠️ Unaudited |
+| PythAggregatorV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 4 deployments: optimism `0x629b03...3c0958`; optimism `0xcabaac...a25224`; optimism `0xdaa95c...0d94d7`; optimism `0xefa456...9ecb75` | ⚠️ Unaudited |
+| RewardDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfed2eb...ac3d4d` | ⚠️ Unaudited |
+| RewardedActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb688d7...81cde7` | ⚠️ Unaudited |
+| RewardPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa6dcda...81b7ea` | ⚠️ Unaudited |
+| SAFEEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x9ff826...75a700` | ⚠️ Unaudited |
+| SettlementSurplusAuctioneer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7edad0...3afe43` | ⚠️ Unaudited |
+| StabilityFeeTreasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe9e54c...3c4f6f` | ⚠️ Unaudited |
+| StakingManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x1250f2...e6bc90`; optimism `0x13531b...fcd1d9`; optimism `0x70bf15...279e93` | ⚠️ Unaudited |
+| StakingToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0xaa46f6...62be0a`; optimism `0xcb7e5b...d1980f`; optimism `0xf632d7...881fc3` | ⚠️ Unaudited |
+| SurplusAuctionHouse | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x096125...1778e9` | ⚠️ Unaudited |
+| SurplusBidActions | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x632229...925cec` | ⚠️ Unaudited |
 | SystemCoin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-266871 | `0x10398a...10dc71` | ⚠️ Unaudited |
+| TaxCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x62b82c...1973c3` | ⚠️ Unaudited |
+| TokenDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xcb9654...cc9e02` | ⚠️ Unaudited |
+| TrustedRelayerIsm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5efe30...91d505` | ⚠️ Unaudited |
+| UniV3RelayerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb6a352...3948c1` | ⚠️ Unaudited |
 | WETH9 | token | project_anchor | own_supporting | 0 | optimism | unit-266872 | `0x420000...000006` | ⚠️ Unaudited |
+| WrappedToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x70f371...b1bb6a` | ⚠️ Unaudited |
+| WrappedTokenV2 | token | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x20a7ea...b5ddd6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,7 +171,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (35)
+### ❓ Unverified (36)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -149,6 +196,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x524fe1...2abcc6` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5c9842...8a44db` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x635362...8055fc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x6c797b...a0c200` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7c4407...687a81` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x7ddb1b...1fa66f` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x805a26...217d47` | ❓ Unverified |
@@ -374,10 +422,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 7 |
+| native | 53 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 35 |
+| standard_library | 1 |
+| needs_review | 36 |
 
 ## Scope Matching Notes
 

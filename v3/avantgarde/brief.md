@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Avantgarde (`avantgarde`)
 - Website: [https://app.morpho.org/ethereum/curator/avantgarde](https://app.morpho.org/ethereum/curator/avantgarde)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base, ethereum
 - Contract surface: 85 unique implementations (85 raw deployments)
@@ -68,7 +68,7 @@ Total inherited audits: 3. Inherited coverage reflects forked/shared code audite
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Logic-topography rows: 1; live-surface rows included: 1 (1 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 6/6 live.
 - Detected codebases: none
@@ -79,13 +79,13 @@ Total inherited audits: 3. Inherited coverage reflects forked/shared code audite
 - Coverage of address-book-owned deployed-live implementations: 4/6 (66.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 6 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 79 discovered implementations excluded (8 third-party/infra; 4 standard proxy/library)
+- Outside the address book: 79 discovered implementations shown in the inventory but excluded from coverage (8 third-party/infra; 4 standard proxy/library)
 - Proxy deployments represented within implementation groups: 6
-- Deployed-live implementations: 6 of 85 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 4/6
-- Verified + Unaudited implementations: 2
+- Confirmed-live implementations: 6 of 85 unique; 79 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 4/84
+- Verified + Unaudited implementations: 80
 - Verified by bytecode match: 0
-- Unverified implementations: 0
+- Unverified implementations: 1
 - Unique implementations: 85
 - Raw deployments: 85
 - Audits discovered: 3 (0 direct, 3 inherited from forked code)
@@ -100,9 +100,9 @@ Total inherited audits: 3. Inherited coverage reflects forked/shared code audite
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Blackthorn | Tier 2 | 4 | 66.7% | 2025-09 |
-| ChainSecurity | Tier 1 | 4 | 66.7% | 2025-09 |
-| Spearbit | Tier 1 | 4 | 66.7% | 2025-09 |
+| Blackthorn | Tier 2 | 4 | 4.8% | 2025-09 |
+| ChainSecurity | Tier 1 | 4 | 4.8% | 2025-09 |
+| Spearbit | Tier 1 | 4 | 4.8% | 2025-09 |
 
 ## Contract Surface
 

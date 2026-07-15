@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Kasu (`kasu`)
 - Website: [https://kasu.finance/](https://kasu.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base
-- Contract surface: 11 unique implementations (11 raw deployments)
+- Contract surface: 34 unique implementations (58 raw deployments)
 - Coverage basis: 7/11 confirmed own live verified implementations (63.6%); conservative 63.6% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $10,864,465.28
 - On-chain TVL (included contracts): n/a
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 17 contract row(s) across base. Structu
 
 ## Fork Analysis
 
-0 of 11 contracts are derived from known codebases. 11 contracts have no detected origin.
+0 of 15 contracts are derived from known codebases. 15 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -52,6 +52,10 @@ The pinned logic-topography run contains 17 contract row(s) across base. Structu
 
 ### Original Contracts (no fork detected - full audit scope)
 
+- ClearingCoordinator (`0x2889ea...175ed1`, chain 8453)
+- KasuPoolExternalTVL (`0xe477a8...2cb191`, chain 8453)
+- KSU (`0x792383...acf693`, chain 8453)
+- ManualKsuPrice (`0xb82992...ca4dc6`, chain 8453)
 - TransparentUpgradeableProxy (`0x193bb0...c41f69`, chain 8453)
 - TransparentUpgradeableProxy (`0x221a54...4e5c1b`, chain 8453)
 - TransparentUpgradeableProxy (`0x2cf12a...f57de2`, chain 8453)
@@ -66,7 +70,7 @@ The pinned logic-topography run contains 17 contract row(s) across base. Structu
 
 ## Contract Surface Quality
 
-- Indexed contracts: 17; live-surface contracts included: 17 (11 live, 6 unknown).
+- Logic-topography rows: 17; live-surface rows included: 17 (17 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 11/11 live.
 - Detected codebases: none
@@ -77,15 +81,15 @@ The pinned logic-topography run contains 17 contract row(s) across base. Structu
 - Coverage of address-book-owned deployed-live implementations: 7/11 (63.6%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 11 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 11
-- Deployed-live implementations: 11 of 11 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 7/11
-- Verified + Unaudited implementations: 4
+- Outside the address book: 23 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 22
+- Confirmed-live implementations: 11 of 34 unique; 23 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 7/32
+- Verified + Unaudited implementations: 25
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 11
-- Raw deployments: 11
+- Unverified implementations: 2
+- Unique implementations: 34
+- Raw deployments: 58
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -98,7 +102,7 @@ The pinned logic-topography run contains 17 contract row(s) across base. Structu
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ChainSecurity | Tier 1 | 7 | 63.6% | 2024-10 |
+| ChainSecurity | Tier 1 | 7 | 21.9% | 2024-10 |
 
 ## Contract Surface
 
@@ -106,22 +110,43 @@ The pinned logic-topography run contains 17 contract row(s) across base. Structu
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ClearingCoordinator | unknown | project_anchor | own_supporting | 1 | base | unit-266851 | `0x2cf12a...f57de2` | ✅ Audited |
-| KasuAllowList | unknown | project_anchor | own_supporting | 1 | base | unit-266856 | `0x807a7e...cbf8bb` | ✅ Audited |
+| ClearingCoordinator | unknown | project_anchor | own_supporting | 1 | base | unit-266851 | 2 deployments: base `0x2889ea...175ed1`; base `0x2cf12a...f57de2` | ✅ Audited |
+| KasuAllowList | unknown | project_anchor | own_supporting | 1 | base | unit-266856 | 2 deployments: base `0x6fd19b...c479bd`; base `0x807a7e...cbf8bb` | ✅ Audited |
 | KSULocking | unknown | project_anchor | own_supporting | 1 | base | unit-266860 | `0xb145c0...553ce1` | ✅ Audited |
 | LendingPoolManager | unknown | project_anchor | own_supporting | 1 | base | unit-266854 | `0xe1be32...2096b5` | ✅ Audited |
 | SystemVariables | unknown | project_anchor | own_supporting | 1 | base | unit-266855 | `0x193bb0...c41f69` | ✅ Audited |
 | UserLoyaltyRewards | unknown | project_anchor | own_supporting | 1 | base | unit-266858 | `0xb4784f...19d635` | ✅ Audited |
 | UserManager | governance | project_anchor | own_supporting | 1 | base | unit-266852 | `0x5dc8d3...3c93f3` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (25)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| KasuPoolExternalTVL | unknown | project_anchor | own_supporting | 1 | base | unit-266861 | `0x662379...9f3c9f` | ⚠️ Unaudited |
-| KSU | unknown | project_anchor | own_supporting | 1 | base | unit-266857 | `0x5d9b87...ceadba` | ⚠️ Unaudited |
-| KSULockBonus | unknown | project_anchor | own_supporting | 1 | base | unit-266853 | `0xeede30...e20b40` | ⚠️ Unaudited |
-| ManualKsuPrice | unknown | project_anchor | own_supporting | 1 | base | unit-266859 | `0x221a54...4e5c1b` | ⚠️ Unaudited |
+| AcceptedRequestsCalculation | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x0133c2...b3307a`; base `0x1e69dd...58bd0e` | ⚠️ Unaudited |
+| ClearingCoordinator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x273597...0b556c`; base `0x8d38a2...1737b7` | ⚠️ Unaudited |
+| FeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe2accc...227016` | ⚠️ Unaudited |
+| FeeManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xef956c...39b6b9` | ⚠️ Unaudited |
+| FixedTermDeposit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x1617b7...c0f833` | ⚠️ Unaudited |
+| FixedTermDeposit | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x757ab3...ae5ed3` | ⚠️ Unaudited |
+| KasuController | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xb0d7eb...5d2868`; base `0xe768e5...60b052` | ⚠️ Unaudited |
+| KasuPoolExternalTVL | unknown | project_anchor | own_supporting | 1 | base | unit-266861 | 2 deployments: base `0x662379...9f3c9f`; base `0xe477a8...2cb191` | ⚠️ Unaudited |
+| KSU | unknown | project_anchor | own_supporting | 1 | base | unit-266857 | 2 deployments: base `0x5d9b87...ceadba`; base `0x792383...acf693` | ⚠️ Unaudited |
+| KSULockBonus | unknown | project_anchor | own_supporting | 1 | base | unit-266853 | 2 deployments: base `0x39a4e4...89e41a`; base `0xeede30...e20b40` | ⚠️ Unaudited |
+| KSULocking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x0b98f5...397931`; base `0x601eab...c3d1ef` | ⚠️ Unaudited |
+| LendingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x2af3eb...d7ab31`; base `0x9b9ec3...efa621` | ⚠️ Unaudited |
+| LendingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x8855ec...926e8f`; base `0xcdc9b9...a1de99` | ⚠️ Unaudited |
+| LendingPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x263b5d...ab05a8` | ⚠️ Unaudited |
+| LendingPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x617b6e...03f9f3`; base `0xd8c77e...905190` | ⚠️ Unaudited |
+| LendingPoolManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x2cce4a...48e955`; base `0xc94216...67ebff`; base `0xd2812f...80c229` | ⚠️ Unaudited |
+| LendingPoolTranche | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x31b186...bac13f`; base `0x8f2b35...467f12`; base `0xec9980...d9c899`; base `0xef5d12...3033be` | ⚠️ Unaudited |
+| LendingPoolTranche | core_logic | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 2 deployments: base `0x94a699...00f3f9`; base `0xa2e999...4fb1d0` | ⚠️ Unaudited |
+| ManualKsuPrice | unknown | project_anchor | own_supporting | 1 | base | unit-266859 | 2 deployments: base `0x221a54...4e5c1b`; base `0xb82992...ca4dc6` | ⚠️ Unaudited |
+| PendingPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 2 | base | n/a | 2 deployments: base `0x080238...e05e1d`; base `0x6ecd74...c8e2e0` | ⚠️ Unaudited |
+| PendingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x0c5554...c7f4cc`; base `0x3cf856...c7dbf4`; base `0xc17f46...03e3a9` | ⚠️ Unaudited |
+| Swapper | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x1ca11e...261cf3`; base `0xe593ed...baa6d2` | ⚠️ Unaudited |
+| SystemVariables | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe91994...a3cd4a` | ⚠️ Unaudited |
+| UserLoyaltyRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf0e92a...364be9` | ⚠️ Unaudited |
+| UserManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0xaa81b5...7a5436`; base `0xcdb16b...48fed0` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -135,11 +160,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x59c8ea...d0eedc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xafb296...3a7765` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -200,17 +228,17 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | base | `0x662379...9f3c9f` | KasuPoolExternalTVL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0x5d9b87...ceadba` | KSU | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xeede30...e20b40` | KSULockBonus | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x39a4e4...89e41a` | KSULockBonus | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0x221a54...4e5c1b` | ManualKsuPrice | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 11 |
+| native | 32 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Safe (`safe`)
 - Website: [https://safe.global/](https://safe.global/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum, zksync-era
-- Contract surface: 62 unique implementations (62 raw deployments)
+- Contract surface: 66 unique implementations (66 raw deployments)
 - Coverage basis: 8/11 confirmed own live verified implementations (72.7%); conservative 72.7% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $57,679,293.19
 - On-chain TVL (included contracts): n/a
@@ -117,7 +117,7 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum, zks
 
 ## Contract Surface Quality
 
-- Indexed contracts: 11; live-surface contracts included: 11 (11 live, 0 unknown).
+- Logic-topography rows: 11; live-surface rows included: 11 (11 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 62/73 live.
 - Detected codebases: none
@@ -128,15 +128,15 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum, zks
 - Coverage of address-book-owned deployed-live implementations: 8/11 (72.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 62 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 62 of 62 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 8/11
-- Verified + Unaudited implementations: 3
+- Outside the address book: 4 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Confirmed-live implementations: 62 of 66 unique; 4 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 8/14
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
-- Unverified implementations: 51
-- Unique implementations: 62
-- Raw deployments: 62
+- Unverified implementations: 52
+- Unique implementations: 66
+- Raw deployments: 66
 - Audits discovered: 18 (18 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): n/a
@@ -149,8 +149,8 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum, zks
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Ackee Blockchain | Tier 2 | 6 | 54.5% | 2025-05 |
-| unknown | Tier 2 | 5 | 45.5% | 2025-07 |
+| Ackee Blockchain | Tier 2 | 6 | 42.9% | 2025-05 |
+| unknown | Tier 2 | 5 | 35.7% | 2025-07 |
 
 ## Contract Surface
 
@@ -167,13 +167,16 @@ The pinned logic-topography run contains 11 contract row(s) across ethereum, zks
 | SafeProxyFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-391947 | `0x14f298...165e7b` | ✅ Audited |
 | SignMessageLib | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391994 | `0xd53cd0...8012c9` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| GnosisSafe | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x8cf60b...0bd1d1` | ⚠️ Unaudited |
 | MultiSend | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391983 | `0xa238cb...7e7761` | ⚠️ Unaudited |
 | Safe | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391960 | `0x41675c...c7461a` | ⚠️ Unaudited |
+| Safe4337Module | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x75cf11...d5c226` | ⚠️ Unaudited |
 | SafeProxyFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-391962 | `0x4e1dcf...20ec67` | ⚠️ Unaudited |
+| VestingPool | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x96b71e...1ea4ff` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -187,7 +190,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (51)
+### ❓ Unverified (52)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -219,6 +222,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391980 | `0x998739...8f9eda` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391981 | `0x9b35af...0a1a52` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391982 | `0xa1dabe...44102b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa581c4...0b4037` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391984 | `0xa65387...cba3a2` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391985 | `0xa6b71e...896ab2` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391986 | `0xa83c33...8d1836` | ❓ Unverified |
@@ -471,10 +475,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
-| standard_library | 11 |
-| needs_review | 51 |
+| standard_library | 12 |
+| needs_review | 52 |
 
 ## Scope Matching Notes
 

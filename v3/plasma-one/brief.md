@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Plasma One (`plasma-one`)
 - Website: [https://www.plasma.to/one](https://www.plasma.to/one)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: plasma
-- Contract surface: 12 unique implementations (12 raw deployments)
+- Contract surface: 16 unique implementations (17 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $8,754,593.48
 - On-chain TVL (included contracts): n/a
@@ -67,7 +67,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Logic-topography rows: 0; live-surface rows included: 0 (0 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 12/13 live.
 - Detected codebases: none
@@ -78,15 +78,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 12 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 4 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 12 of 12 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- Confirmed-live implementations: 12 of 16 unique; 4 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/2
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 12
-- Unique implementations: 12
-- Raw deployments: 12
+- Unverified implementations: 14
+- Unique implementations: 16
+- Raw deployments: 17
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -105,9 +105,12 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (2)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BoringVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x1cf1c7...c53d77` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | 2 deployments: plasma `0x322483...773772`; plasma `0x5be536...47d8b2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -121,7 +124,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (12)
+### ❓ Unverified (14)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -131,8 +134,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-251420 | `0x000000...439497` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-251422 | `0x1820a4...5fad24` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-251423 | `0x319ed0...ff9654` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x42529d...e11acc` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-251425 | `0x4e59b4...b4956c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-251427 | `0x6100e3...d19873` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x779ded...713736` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-251429 | `0x914d7f...5643d7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-251430 | `0x9b35af...0a1a52` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | plasma | unit-251431 | `0xb8ce59...625ebb` | ❓ Unverified |
@@ -161,10 +166,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 12 |
+| standard_library | 1 |
+| needs_review | 14 |
 
 ## Scope Matching Notes
 

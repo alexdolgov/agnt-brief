@@ -1,6 +1,6 @@
 {
   "artifact_version": "normalized_brief_export_input_receipt@v1",
-  "generated_at": "2026-07-15T18:00:00.000Z",
+  "generated_at": "2026-07-15T18:30:00.000Z",
   "canonical_network_policy": "offline_cache_only",
   "authority": {
     "production_database": "audit_coverage_db_v2",
@@ -106,8 +106,8 @@
     },
     {
       "path": "/Users/alexdolgov/Meat-audit/meta-audit/src/scripts/v2/stages/run_brief_generation.ts",
-      "bytes": 230966,
-      "sha256": "204f3d0129da1015e2aaedff92c0b9f159d41c6dee82626e160548b03a35247b"
+      "bytes": 232691,
+      "sha256": "9f8681d82560186bab28e725cc33d2943cf547c6c5df70a7d64bb5df560f7227"
     },
     {
       "path": "/Users/alexdolgov/Meat-audit/meta-audit/src/scripts/v2/stages/run_source_extraction.ts",
@@ -116,11 +116,11 @@
     },
     {
       "path": "/Users/alexdolgov/Meat-audit/meta-audit/src/scripts/v2/tools/export_repo_tree.ts",
-      "bytes": 31509,
-      "sha256": "1773aa6ef9f2a35eabab9848c235c77adae182306f3a5cd04bd216658d3f6749"
+      "bytes": 32264,
+      "sha256": "8dc591a5ff63a498635aafb5ac80c3373165d689030fbee1853f9b52626386e1"
     }
   ],
-  "consumer_source_set_sha256": "0d90e22fb745f660d9b15bf1304a4eb90a782b4b94bc28d9665ce90a9a53e8a9",
+  "consumer_source_set_sha256": "1dc0dbf1d86c140438baeae62b4ac4b4d1b82f87d166ceaa21b205ea002182ce",
   "authority_inputs": [
     "scope_inventory_current_production_activation_v1",
     "scope_inventory_current_production_project_states_v1",
@@ -135,5 +135,5 @@
     "project_audit_scope_analysis",
     "historical_stage16_trace_mtime"
   ],
-  "receipt_sha256": "7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213"
+  "receipt_sha256": "e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd"
 }

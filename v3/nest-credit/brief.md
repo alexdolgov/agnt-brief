@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Nest Credit (`nest-credit`)
 - Website: [https://nest.credit/](https://nest.credit/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: ethereum
-- Contract surface: 32 unique implementations (32 raw deployments)
+- Chains: arbitrum, bsc, ethereum, plasma
+- Contract surface: 49 unique implementations (85 raw deployments)
 - Coverage basis: 2/8 confirmed own live verified implementations (25.0%); conservative 25.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $73,665,389.90
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for Nest Cred
 
 ### Architecture
 
-The pinned logic-topography run contains 8 contract row(s) across ethereum. Structural roles: 8 core. 2 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 8 contract row(s) across arbitrum, bsc, ethereum, plasma. Structural roles: 8 core. 2 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -84,7 +84,7 @@ The pinned logic-topography run contains 8 contract row(s) across ethereum. Stru
 
 ## Contract Surface Quality
 
-- Indexed contracts: 8; live-surface contracts included: 8 (8 live, 0 unknown).
+- Logic-topography rows: 8; live-surface rows included: 8 (8 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 29/33 live.
 - Detected codebases: none
@@ -95,15 +95,15 @@ The pinned logic-topography run contains 8 contract row(s) across ethereum. Stru
 - Coverage of address-book-owned deployed-live implementations: 2/8 (25.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 29 own, 3 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 2
-- Deployed-live implementations: 29 of 32 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 2/8
-- Verified + Unaudited implementations: 6
+- Outside the address book: 17 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 3
+- Confirmed-live implementations: 29 of 49 unique; 20 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 2/16
+- Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
-- Unverified implementations: 21
-- Unique implementations: 32
-- Raw deployments: 32
+- Unverified implementations: 33
+- Unique implementations: 49
+- Raw deployments: 85
 - Audits discovered: 16 (16 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
@@ -116,7 +116,7 @@ The pinned logic-topography run contains 8 contract row(s) across ethereum. Stru
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 2 | 25.0% | 2026-04 |
+| Spearbit | Tier 1 | 2 | 12.5% | 2026-04 |
 
 ## Contract Surface
 
@@ -127,16 +127,24 @@ The pinned logic-topography run contains 8 contract row(s) across ethereum. Stru
 | NestVault | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-248901 | `0xb72856...bc14a0` | ✅ Audited |
 | NestVaultOFT | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-248902 | `0x5e949f...657a2c` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AccountantWithRateProviders | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 11 deployments: ethereum `0x0b738c...6892ec`; ethereum `0x2ed2f7...94ed1d`; ethereum `0x3d6497...836b32`; ethereum `0x486e03...8b19f3`; ethereum `0xa67d20...f4dc2f`; ethereum `0xadb076...c15d93`; ethereum `0xb00bbb...12a55b`; ethereum `0xe0cf45...6421e1`; bsc `0x2ed2f7...94ed1d`; bsc `0x3d6497...836b32`; arbitrum `0x0b738c...6892ec` | ⚠️ Unaudited |
+| AtomicQueue | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x220dc6...6e8264`; plasma `0x220dc6...6e8264` | ⚠️ Unaudited |
+| AtomicQueueUCP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x228c44...5112e5` | ⚠️ Unaudited |
+| AtomicSolverV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x77fb09...7fc974`; bsc `0x77fb09...7fc974`; plasma `0x77fb09...7fc974` | ⚠️ Unaudited |
 | BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-248868 | `0x11113f...9ee94b` | ⚠️ Unaudited |
 | BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-248870 | `0x119dd7...299165` | ⚠️ Unaudited |
 | BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-248872 | `0x29bf22...2c0240` | ⚠️ Unaudited |
 | BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-248880 | `0x593ccc...6388db` | ⚠️ Unaudited |
 | BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-248889 | `0xa5f78b...ec066c` | ⚠️ Unaudited |
 | BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-248895 | `0xe72fe6...938cb9` | ⚠️ Unaudited |
+| BoringVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 8 deployments: ethereum `0x1639dc...a2fbfb`; ethereum `0x9fbc36...ffdc4c`; ethereum `0xbfc577...ed19de`; bsc `0x119dd7...299165`; bsc `0x1639dc...a2fbfb`; plasma `0x119dd7...299165`; plasma `0x1639dc...a2fbfb`; arbitrum `0xe72fe6...938cb9` | ⚠️ Unaudited |
+| BoringVaultSY | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xa08c5b...d84ed1` | ⚠️ Unaudited |
+| ManagerWithMerkleVerification | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 7 deployments: ethereum `0x8226b6...8f18cc`; ethereum `0xd476b7...600262`; ethereum `0xea452b...da0393`; bsc `0xd476b7...600262`; bsc `0xea452b...da0393`; plasma `0xd476b7...600262`; plasma `0xea452b...da0393` | ⚠️ Unaudited |
+| MultiChainLayerZeroTellerWithMultiAssetSupport | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 11 deployments: ethereum `0x149206...ea0c59`; ethereum `0x272002...759f9d`; ethereum `0x7d218b...8e0d25`; ethereum `0x8034c2...6f4ab9`; ethereum `0xa5f8e5...08a90b`; ethereum `0xad60d4...ffb89b`; ethereum `0xc9f6a4...324a35`; ethereum `0xd65d39...fc4c15`; ethereum `0xf288a0...a6551c`; bsc `0x8034c2...6f4ab9`; bsc `0xa5f8e5...08a90b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -150,7 +158,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (24)
+### ❓ Unverified (33)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -171,15 +179,24 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-248886 | `0x7de018...41d8be` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248887 | `0x84c18c...50d9e3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248888 | `0x937869...5a5ba4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1d572...6d41fd` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248891 | `0xd25802...a505c0` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248892 | `0xd99076...c46cba` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248893 | `0xd9b432...795440` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd9ec26...466063` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248894 | `0xdf45b8...ae0ee8` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248896 | `0xec593c...6fabee` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248897 | `0xf6c00a...190510` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf76bc9...ddcab9` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248898 | `0xf991a5...341f2b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248899 | `0xfabd98...a26835` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248900 | `0xfc0c42...6b9035` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x2ed2f7...94ed1d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x3d6497...836b32` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0x8034c2...6f4ab9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | plasma | n/a | `0xa5f8e5...08a90b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x149206...ea0c59` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf713a3...a34857` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -410,10 +427,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 8 |
-| upstream | 0 |
+| native | 15 |
+| upstream | 1 |
 | standard_library | 0 |
-| needs_review | 24 |
+| needs_review | 33 |
 
 ## Scope Matching Notes
 

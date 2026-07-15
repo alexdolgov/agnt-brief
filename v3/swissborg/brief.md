@@ -9,16 +9,16 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: SwissBorg (`swissborg`)
 - Website: [https://swissborg.com](https://swissborg.com)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: ethereum, sepolia
+- Chains: arbitrum, avalanche, berachain, bsc, ethereum, gnosis, moonbeam, optimism, polygon, sei, sepolia, sonic
 - Contract surface: 73 unique implementations (76 raw deployments)
 - Coverage basis: 2/6 confirmed own live verified implementations (33.3%); conservative 33.3% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $746,029,108.38
@@ -66,7 +66,7 @@ The pinned logic-topography run contains 6 contract row(s) across ethereum, sepo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 6; live-surface contracts included: 6 (6 live, 0 unknown).
+- Logic-topography rows: 6; live-surface rows included: 6 (6 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 8/14 live.
 - Detected codebases: none
@@ -77,13 +77,13 @@ The pinned logic-topography run contains 6 contract row(s) across ethereum, sepo
 - Coverage of address-book-owned deployed-live implementations: 2/6 (33.3%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 8 own, 4 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 61 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 61 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 4
-- Deployed-live implementations: 8 of 73 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 2/6
-- Verified + Unaudited implementations: 4
+- Confirmed-live implementations: 8 of 73 unique; 65 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 2/62
+- Verified + Unaudited implementations: 60
 - Verified by bytecode match: 0
-- Unverified implementations: 2
+- Unverified implementations: 11
 - Unique implementations: 73
 - Raw deployments: 76
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
@@ -98,7 +98,7 @@ The pinned logic-topography run contains 6 contract row(s) across ethereum, sepo
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Hacken | Tier 2 | 2 | 33.3% | 2023-08 |
+| Hacken | Tier 2 | 2 | 3.2% | 2023-08 |
 
 ## Contract Surface
 

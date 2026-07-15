@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ⚠️ Lifecycle status: DECLINING - TVL dropped 88.8% over 90 days
 
@@ -18,10 +18,10 @@
 - Project: Arch (`arch`)
 - Website: [https://www.arch.finance](https://www.arch.finance)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum, polygon
-- Contract surface: 18 unique implementations (21 raw deployments)
+- Contract surface: 22 unique implementations (29 raw deployments)
 - Coverage basis: 1/18 confirmed own live verified implementations (5.6%); conservative 5.6% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $214,722.06
 - On-chain TVL (included contracts): $153,736.71
@@ -84,7 +84,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 21; live-surface contracts included: 21 (21 live, 0 unknown).
+- Logic-topography rows: 21; live-surface rows included: 21 (21 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 21/21 live.
 - Detected codebases: none
@@ -95,15 +95,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 1/18 (5.6%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 18 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 4 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 2
-- Deployed-live implementations: 18 of 18 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/18
-- Verified + Unaudited implementations: 17
+- Confirmed-live implementations: 18 of 22 unique; 4 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/19
+- Verified + Unaudited implementations: 18
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 18
-- Raw deployments: 21
+- Unverified implementations: 3
+- Unique implementations: 22
+- Raw deployments: 29
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $153,736.71
@@ -117,7 +117,7 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 5.6% | 2023-02 |
+| unknown | Tier 2 | 1 | 5.3% | 2023-02 |
 
 ## Contract Surface
 
@@ -127,7 +127,7 @@ Removals (removed from original): none
 |---|---|---|---|---:|---|---|---|---|
 | Chamber | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379543 | `0xe15a66...7263cf` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (17)
+### ⚠️ Verified + Unaudited (18)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
@@ -144,6 +144,7 @@ Removals (removed from original): none
 | UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-379542 | `0xbb9300...0822a4` | ⚠️ Unaudited |
 | UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-379540 | `0x247027...bb10f2` | ⚠️ Unaudited |
 | Chamber | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379539 | `0x103bb3...a2e16b` | ⚠️ Unaudited |
+| Chamber | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 5 deployments: polygon `0x103bb3...a2e16b`; polygon `0x89c53b...87ef0b`; polygon `0xd1ce69...90f3d5`; polygon `0xde2925...43ed1c`; polygon `0xe15a66...7263cf` | ⚠️ Unaudited |
 | Chamber | unknown | project_anchor | own_supporting | 0 | polygon | unit-379549 | `0x8f0d56...1dbc23` | ⚠️ Unaudited |
 | Chamber | unknown | project_anchor | own_supporting | 0 | polygon | unit-379551 | `0xafb6e8...1e9f3c` | ⚠️ Unaudited |
 | Chamber | unknown | project_anchor | own_supporting | 0 | polygon | unit-379555 | `0xf401e2...7a1545` | ⚠️ Unaudited |
@@ -161,11 +162,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0d20e8...7f8951` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4e39ce...319318` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe8e848...67e601` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -211,10 +216,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 9 |
+| native | 10 |
 | upstream | 9 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

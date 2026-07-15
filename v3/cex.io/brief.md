@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: CEX.IO (`cex.io`)
 - Website: [http://cex.io/](http://cex.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: ethereum
-- Contract surface: 2 unique implementations (2 raw deployments)
+- Chains: bsc, ethereum, polygon
+- Contract surface: 4 unique implementations (6 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $6,555,417.71
 - On-chain TVL (included contracts): n/a
@@ -36,7 +36,7 @@ This brief describes the observed EVM deployment and audit surface for CEX.IO. I
 
 ### Architecture
 
-The pinned logic-topography run contains 2 contract row(s) across ethereum. Structural roles: 2 supporting. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 2 contract row(s) across bsc, ethereum, polygon. Structural roles: 2 supporting. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -50,7 +50,7 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 ## Contract Surface Quality
 
 - Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
-- Indexed contracts: 2; live/inactive and live-deployment-unit totals are withheld until liveness completes.
+- Logic-topography rows: 2; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -59,15 +59,15 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 2
+- Outside the address book: 2 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 3
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- All block-explorer-verified implementations audited (incl. non-live): 0/4
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 2
+- Unique implementations: 4
+- Raw deployments: 6
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -86,12 +86,14 @@ The pinned logic-topography run contains 2 contract row(s) across ethereum. Stru
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | GnosisSafe | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-231745 | `0x2818e5...5932ca` | ⚠️ Unaudited |
 | Safe | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-231744 | `0xc48c74...69d996` | ⚠️ Unaudited |
+| SafeL2 | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | bsc | n/a | `0x8e7b54...91684d` | ⚠️ Unaudited |
+| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 3 deployments: bsc `0xc48c74...69d996`; polygon `0x8e7b54...91684d`; polygon `0xc48c74...69d996` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -141,7 +143,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 2 |
+| standard_library | 4 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

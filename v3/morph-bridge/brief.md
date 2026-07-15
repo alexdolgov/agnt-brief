@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Morph Bridge (`morph-bridge`)
 - Website: [https://bridge.morphl2.io/](https://bridge.morphl2.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: chain-2910, ethereum, hoodi, morph
-- Contract surface: 25 unique implementations (25 raw deployments)
+- Contract surface: 31 unique implementations (31 raw deployments)
 - Coverage basis: 0/5 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $12,938,553.58
 - On-chain TVL (included contracts): n/a
@@ -68,7 +68,7 @@ The pinned logic-topography run contains 5 contract row(s) across chain-2910, et
 
 ## Contract Surface Quality
 
-- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
+- Logic-topography rows: 5; live-surface rows included: 5 (5 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 13/25 live.
 - Detected codebases: none
@@ -79,15 +79,15 @@ The pinned logic-topography run contains 5 contract row(s) across chain-2910, et
 - Coverage of address-book-owned deployed-live implementations: 0/5 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 13 own, 12 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 5
-- Deployed-live implementations: 13 of 25 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/5
-- Verified + Unaudited implementations: 5
+- Outside the address book: 6 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 10
+- Confirmed-live implementations: 13 of 31 unique; 18 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/11
+- Verified + Unaudited implementations: 11
 - Verified by bytecode match: 0
-- Unverified implementations: 8
-- Unique implementations: 25
-- Raw deployments: 25
+- Unverified implementations: 20
+- Unique implementations: 31
+- Raw deployments: 31
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -106,15 +106,21 @@ The pinned logic-topography run contains 5 contract row(s) across chain-2910, et
 
 - None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| L1CrossDomainMessenger | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xdc7136...623304` | ⚠️ Unaudited |
 | L1CustomERC20Gateway | token | project_anchor | own_supporting | 1 | ethereum | unit-389636 | `0xa534ba...b52ef1` | ⚠️ Unaudited |
 | L1ETHGateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389634 | `0x1c1ffb...8ade68` | ⚠️ Unaudited |
+| L1GatewayRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x749775...8f8a8a` | ⚠️ Unaudited |
+| L1Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x0dc417...0543f7` | ⚠️ Unaudited |
 | L1StandardERC20Gateway | token | project_anchor | own_supporting | 1 | ethereum | unit-389635 | `0x44c28f...ab2bd8` | ⚠️ Unaudited |
 | L1USDCGateway | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389637 | `0x2c8314...e1b289` | ⚠️ Unaudited |
 | L1WETHGateway | token | project_anchor | own_supporting | 1 | ethereum | unit-389633 | `0x788890...01877f` | ⚠️ Unaudited |
+| Rollup | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x759894...3cef60` | ⚠️ Unaudited |
+| TimelockControllerUpgradeable | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x542675...55b530` | ⚠️ Unaudited |
+| ZkEvmVerifierV1 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd9f244...3ad692` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -182,7 +188,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 11 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 20 |

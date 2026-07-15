@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ⚠️ Lifecycle status: DECLINING - TVL dropped 61.5% over 90 days
 
@@ -18,10 +18,10 @@
 - Project: Anvil (`anvil`)
 - Website: [https://anvil.xyz/](https://anvil.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 15 unique implementations (17 raw deployments)
+- Contract surface: 17 unique implementations (28 raw deployments)
 - Coverage basis: 7/12 confirmed own live verified implementations (58.3%); conservative 58.3% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $9,637,760.30
 - On-chain TVL (included contracts): $520,122.95
@@ -67,7 +67,7 @@ The pinned logic-topography run contains 16 contract row(s) across ethereum. Str
 
 ## Contract Surface Quality
 
-- Indexed contracts: 16; live-surface contracts included: 16 (13 live, 3 unknown).
+- Logic-topography rows: 16; live-surface rows included: 16 (14 live, 2 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 13/15 live.
 - Detected codebases: none
@@ -78,15 +78,15 @@ The pinned logic-topography run contains 16 contract row(s) across ethereum. Str
 - Coverage of address-book-owned deployed-live implementations: 7/12 (58.3%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 13 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 2 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 3
-- Deployed-live implementations: 13 of 15 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 7/12
-- Verified + Unaudited implementations: 5
+- Confirmed-live implementations: 13 of 17 unique; 4 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 7/16
+- Verified + Unaudited implementations: 9
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 15
-- Raw deployments: 17
+- Unique implementations: 17
+- Raw deployments: 28
 - Audits discovered: 4 (4 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): n/a
@@ -100,8 +100,8 @@ The pinned logic-topography run contains 16 contract row(s) across ethereum. Str
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| OpenZeppelin | Tier 1 | 7 | 58.3% | 2025-10 |
-| Trail of Bits | Tier 1 | 2 | 16.7% | 2023-12 |
+| OpenZeppelin | Tier 1 | 7 | 43.8% | 2025-10 |
+| Trail of Bits | Tier 1 | 2 | 12.5% | 2023-12 |
 
 ## Contract Surface
 
@@ -112,22 +112,24 @@ The pinned logic-topography run contains 16 contract row(s) across ethereum. Str
 | CollateralVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-379042 | `0x5d2725...1d675f` | ✅ Audited |
 | Anvil | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379040 | `0x2ca924...d01bfc` | ✅ Audited |
 | Anvil | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379046 | `0xaeeaa5...5b5597` | ✅ Audited |
-| AnvilGovernorDelegate | governance | project_anchor | own_supporting | 1 | ethereum | unit-379051 | `0x00e83d...4874c9` | ✅ Audited |
+| AnvilGovernorDelegate | governance | project_anchor | own_core | 1 | ethereum | unit-379051 | 9 deployments: ethereum `0x00e83d...4874c9`; ethereum `0x081fe8...aed8d9`; ethereum `0x09c7ec...bc200f`; ethereum `0x123641...b49f49`; ethereum `0x33148e...2a3ba1`; ethereum `0x65eed5...99f602`; ethereum `0xa57365...f2b5e4`; ethereum `0xbb1470...187aa0`; ethereum `0xfd883f...4c5b8f` | ✅ Audited |
 | AnvilTimelock | governance | project_anchor | own_supporting | 0 | ethereum | unit-379041 | `0x4eeb7c...2cad21` | ✅ Audited |
 | LetterOfCredit | unknown | project_anchor | own_supporting | 1 | ethereum | unit-379052 | 2 deployments: ethereum `0x14db9a...7c4808`; ethereum `0x24573b...70e27e` | ✅ Audited |
 | PythPriceOracle | unknown | project_anchor | own_supporting | 0 | ethereum | unit-379048 | `0xc6f340...56ee05` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | AnvilGovernorDelegate | governance | project_anchor | own_supporting | 0 | ethereum | unit-379050 | `0xfe1118...42a361` | ⚠️ Unaudited |
 | Claim | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-379049 | `0xefd194...7e29ac` | ⚠️ Unaudited |
+| LetterOfCredit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x1a3251...f42961`; ethereum `0x750ab7...59d5ad` | ⚠️ Unaudited |
 | PassThroughLiquidator | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-379045 | `0x9ae1ca...1342b8` | ⚠️ Unaudited |
 | Permit2PassThroughLiquidator | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-379044 | `0x8aa57e...e2eb4c` | ⚠️ Unaudited |
 | ProxyAdmin | governance | project_anchor | own_supporting | 0 | ethereum | unit-379039 | `0x12225b...6e341d` | ⚠️ Unaudited |
 | Reward | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-379047 | `0xc6a06f...da22da` | ⚠️ Unaudited |
 | TimeBasedCollateralPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-379053 | 2 deployments: ethereum `0x1f00d6...9c9e14`; ethereum `0xcc437a...4cf29f` | ⚠️ Unaudited |
+| TimeBasedCollateralPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd042c2...db3e5a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -218,7 +220,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 12 |
+| native | 14 |
 | upstream | 0 |
 | standard_library | 1 |
 | needs_review | 2 |

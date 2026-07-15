@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Dexalot (`dexalot`)
 - Website: [https://app.dexalot.com/](https://app.dexalot.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: avalanche, avalanche-fuji
-- Contract surface: 18 unique implementations (18 raw deployments)
+- Chains: arbitrum, avalanche, avalanche-fuji, base, bsc, ethereum
+- Contract surface: 25 unique implementations (29 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $8,063,794.00
 - On-chain TVL (included contracts): n/a
@@ -36,7 +36,7 @@ This brief describes the observed EVM deployment and audit surface for Dexalot. 
 
 ### Architecture
 
-The pinned logic-topography run contains 9 contract row(s) across avalanche, avalanche-fuji. Structural roles: 6 unclassified, 2 supporting, 1 core. 3 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 9 contract row(s) across avalanche, avalanche-fuji, bsc. Structural roles: 6 unclassified, 2 supporting, 1 core. 3 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -50,7 +50,7 @@ The pinned logic-topography run contains 9 contract row(s) across avalanche, ava
 ## Contract Surface Quality
 
 - Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
-- Indexed contracts: 9; live/inactive and live-deployment-unit totals are withheld until liveness completes.
+- Logic-topography rows: 9; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -59,15 +59,15 @@ The pinned logic-topography run contains 9 contract row(s) across avalanche, ava
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 18 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 4
+- Outside the address book: 7 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 8
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- All block-explorer-verified implementations audited (incl. non-live): 0/16
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 18
-- Raw deployments: 18
+- Unverified implementations: 9
+- Unique implementations: 25
+- Raw deployments: 29
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -86,16 +86,23 @@ The pinned logic-topography run contains 9 contract row(s) across avalanche, ava
 
 - None
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| DexalotToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x093783...47bc69` | ⚠️ Unaudited |
+| Exchange | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x16863a...4c67e5`; avalanche `0x4dc10a...81a09a` | ⚠️ Unaudited |
 | Exchange | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235254 | `0x807687...3d5885` | ⚠️ Unaudited |
+| MainnetRFQ | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x2a371c...ceb2dd` | ⚠️ Unaudited |
 | OrderBooks | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235259 | `0x3ece76...99669a` | ⚠️ Unaudited |
 | OrderBooks | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235255 | `0x9cf797...a9170e` | ⚠️ Unaudited |
+| OrderBooks | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0xcb1556...2c9d19`; avalanche `0xd95bcc...50584e` | ⚠️ Unaudited |
+| Portfolio | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x176e82...cb4ef2`; avalanche `0x43de3a...9cab1a` | ⚠️ Unaudited |
 | Portfolio | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235258 | `0x6f8205...6b5c6e` | ⚠️ Unaudited |
 | Portfolio | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235257 | `0xac0f30...0de0d4` | ⚠️ Unaudited |
 | ProxyAdmin | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235256 | `0x9faa0a...ae16f2` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb34f9c...402644` | ⚠️ Unaudited |
+| TradePairs | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x16d8a7...097bdd`; avalanche `0x2c0e18...09df10` | ⚠️ Unaudited |
 | TradePairs | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235253 | `0x625b7d...987ba1` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235261 | `0x12e2b3...694323` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235260 | `0x1d34b4...971e20` | ⚠️ Unaudited |
@@ -230,9 +237,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 6 |
+| native | 12 |
 | upstream | 0 |
-| standard_library | 3 |
+| standard_library | 4 |
 | needs_review | 9 |
 
 ## Scope Matching Notes

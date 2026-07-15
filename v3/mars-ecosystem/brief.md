@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Mars Ecosystem (`mars-ecosystem`)
 - Website: [https://marsecosystem.com/home](https://marsecosystem.com/home)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: bsc
 - Contract surface: 15 unique implementations (16 raw deployments)
@@ -66,7 +66,7 @@ The pinned logic-topography run contains 11 contract row(s) across bsc. Structur
 
 ## Contract Surface Quality
 
-- Indexed contracts: 11; live-surface contracts included: 11 (10 live, 1 unknown).
+- Logic-topography rows: 11; live-surface rows included: 11 (10 live, 1 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 11/11 live.
 - Detected codebases: none
@@ -77,11 +77,11 @@ The pinned logic-topography run contains 11 contract row(s) across bsc. Structur
 - Coverage of address-book-owned deployed-live implementations: 0/10 (0.0%)
 - Coverage assessment: partial (medium confidence) — Coverage is calculated only over confirmed own address-book implementations; review inventory is reported separately and included in the conservative percentage where live and verified.
 - Address-book implementation classification: 11 own, 0 exact-address-book context/dependencies excluded, 1 exact-address-book entries needing review
-- Outside the address book: 3 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 3 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 11 of 15 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/10
-- Verified + Unaudited implementations: 10
+- Confirmed-live implementations: 11 of 15 unique; 4 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/14
+- Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 15

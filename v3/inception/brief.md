@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Inception (`inception`)
 - Website: [https://www.inceptionlrt.com/](https://www.inceptionlrt.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, base, blast, bsc, ethereum, fraxtal, linea, mode, optimism, optimism-sepolia
-- Contract surface: 104 unique implementations (104 raw deployments)
+- Contract surface: 119 unique implementations (123 raw deployments)
 - Coverage basis: 2/16 confirmed own live verified implementations (12.5%); conservative 12.5% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $4,411,204.00
 - On-chain TVL (included contracts): n/a
@@ -149,7 +149,7 @@ The pinned logic-topography run contains 16 contract row(s) across arbitrum, arb
 
 ## Contract Surface Quality
 
-- Indexed contracts: 16; live-surface contracts included: 16 (16 live, 0 unknown).
+- Logic-topography rows: 16; live-surface rows included: 16 (16 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 95/106 live.
 - Detected codebases: none
@@ -160,15 +160,15 @@ The pinned logic-topography run contains 16 contract row(s) across arbitrum, arb
 - Coverage of address-book-owned deployed-live implementations: 2/16 (12.5%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 95 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 8 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 5
-- Deployed-live implementations: 95 of 104 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 2/16
-- Verified + Unaudited implementations: 14
+- Outside the address book: 23 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 6
+- Confirmed-live implementations: 95 of 119 unique; 24 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 2/30
+- Verified + Unaudited implementations: 28
 - Verified by bytecode match: 0
-- Unverified implementations: 79
-- Unique implementations: 104
-- Raw deployments: 104
+- Unverified implementations: 89
+- Unique implementations: 119
+- Raw deployments: 123
 - Audits discovered: 11 (11 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -181,9 +181,9 @@ The pinned logic-topography run contains 16 contract row(s) across arbitrum, arb
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Halborn | Tier 2 | 1 | 6.3% | 2024-10 |
-| Oxorio | Tier 2 | 1 | 6.3% | 2025-03 |
-| Veridise | Tier 2 | 1 | 6.3% | 2025-03 |
+| Halborn | Tier 2 | 1 | 3.3% | 2024-10 |
+| Oxorio | Tier 2 | 1 | 3.3% | 2025-03 |
+| Veridise | Tier 2 | 1 | 3.3% | 2025-03 |
 
 ## Contract Surface
 
@@ -194,14 +194,28 @@ The pinned logic-topography run contains 16 contract row(s) across arbitrum, arb
 | InceptionBridge | operational_periphery | project_anchor | own_supporting | 0 | mode | unit-242550 | `0xc00cd5...83b3ac` | ✅ Audited |
 | InceptionToken | unknown | project_anchor | own_supporting | 1 | ethereum | unit-242573 | `0x1aee5e...7649e2` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (14)
+### ⚠️ Verified + Unaudited (28)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AmphorSyntheticVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc4a324...f96489` | ⚠️ Unaudited |
+| AmphorSyntheticVaultWithPermit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2791eb...701744` | ⚠️ Unaudited |
+| AmphorVaultWithPermit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x0498b8...358a15`; ethereum `0x920f17...82c079`; ethereum `0xf97ecd...8f2e00` | ⚠️ Unaudited |
 | InceptionBridge | operational_periphery | project_anchor | own_supporting | 1 | optimism | unit-242574 | `0xc00cd5...83b3ac` | ⚠️ Unaudited |
 | InceptionBridge | operational_periphery | project_anchor | own_supporting | 1 | bsc | unit-242575 | `0xc00cd5...83b3ac` | ⚠️ Unaudited |
 | InceptionBridge | operational_periphery | project_anchor | own_supporting | 1 | base | unit-242577 | `0xc00cd5...83b3ac` | ⚠️ Unaudited |
+| InceptionBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xb81e55...4d1f1e` | ⚠️ Unaudited |
+| InceptionLibrary | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8a6a8a...d69f66` | ⚠️ Unaudited |
+| InceptionRatioFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xbf19ee...e8ab2e` | ⚠️ Unaudited |
+| InceptionRestaker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02e2fc...3a33f0` | ⚠️ Unaudited |
 | InETHRateProvider | unknown | project_anchor | own_supporting | 0 | mode | unit-242549 | `0x971b35...9efe1a` | ⚠️ Unaudited |
+| InVault_S_E2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xebc5b1...63ee53` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x80d69e...8802e2` | ⚠️ Unaudited |
+| RestakingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x0d6f76...a725bc`; ethereum `0x80c1ef...6bd0fc` | ⚠️ Unaudited |
+| RestakingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x512d8b...90285b` | ⚠️ Unaudited |
+| Silo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x06ecfa...8a8144`; ethereum `0x361a02...5880d9` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0xfe7153...735d5e` | ⚠️ Unaudited |
+| VaultZapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd697d2...5d05fb` | ⚠️ Unaudited |
 | XERC20 | token | project_anchor | own_supporting | 0 | optimism | unit-242535 | `0x5a7a18...b1d76d` | ⚠️ Unaudited |
 | XERC20 | token | project_anchor | own_supporting | 0 | optimism | unit-242537 | `0xd08c3f...9a4959` | ⚠️ Unaudited |
 | XERC20 | token | project_anchor | own_supporting | 0 | bsc | unit-242561 | `0x5a7a18...b1d76d` | ⚠️ Unaudited |
@@ -225,7 +239,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (88)
+### ❓ Unverified (89)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -304,6 +318,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-242546 | `0xe16207...3bbaa4` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-242572 | `0xb65593...4c944e` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | mode | unit-242547 | `0x5a32d4...a8064a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | mode | n/a | `0x5d9447...f80a46` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-242552 | `0x57a5a0...5878f2` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-242554 | `0x971b35...9efe1a` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x983c22...1b2630` | ❓ Unverified |
@@ -453,10 +468,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 16 |
+| native | 28 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 88 |
+| standard_library | 2 |
+| needs_review | 89 |
 
 ## Scope Matching Notes
 

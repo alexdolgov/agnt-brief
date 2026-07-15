@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Trisolaris (`trisolaris`)
 - Website: [https://www.trisolaris.io/#/swap](https://www.trisolaris.io/#/swap)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: aurora
-- Contract surface: 124 unique implementations (124 raw deployments)
+- Contract surface: 146 unique implementations (146 raw deployments)
 - Coverage basis: 0/4 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,142,980.13
 - On-chain TVL (included contracts): n/a
@@ -118,7 +118,7 @@ The pinned logic-topography run contains 4 contract row(s) across aurora. Struct
 
 ## Contract Surface Quality
 
-- Indexed contracts: 4; live-surface contracts included: 4 (4 live, 0 unknown).
+- Logic-topography rows: 4; live-surface rows included: 4 (4 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 67/124 live.
 - Detected codebases: none
@@ -129,15 +129,15 @@ The pinned logic-topography run contains 4 contract row(s) across aurora. Struct
 - Coverage of address-book-owned deployed-live implementations: 0/4 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 67 own, 57 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 22 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 67 of 124 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/4
-- Verified + Unaudited implementations: 4
+- Confirmed-live implementations: 67 of 146 unique; 79 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/5
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 63
-- Unique implementations: 124
-- Raw deployments: 124
+- Unverified implementations: 141
+- Unique implementations: 146
+- Raw deployments: 146
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -156,7 +156,7 @@ The pinned logic-topography run contains 4 contract row(s) across aurora. Struct
 
 - None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
@@ -164,6 +164,7 @@ The pinned logic-topography run contains 4 contract row(s) across aurora. Struct
 | StableLPMakerV2 | unknown | project_anchor | own_supporting | 0 | aurora | unit-395125 | `0x2df95b...8ab86b` | ⚠️ Unaudited |
 | SwapFlashLoan | unknown | project_anchor | own_supporting | 0 | aurora | unit-395144 | `0x51d96e...1a4064` | ⚠️ Unaudited |
 | UsdcMaker | unknown | project_anchor | own_supporting | 0 | aurora | unit-395149 | `0x5ebd5e...0aaade` | ⚠️ Unaudited |
+| UsdcMaker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0xe7d7fd...63f34a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -177,12 +178,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (120)
+### ❓ Unverified (141)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x0160b7...deb3df` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395101 | `0x028fbc...382101` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395102 | `0x03b666...7b29cd` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395103 | `0x044b6b...81dce7` | ❓ Unverified |
@@ -191,6 +193,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395106 | `0x08a8d7...299d72` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395107 | `0x0982eb...7ac663` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395108 | `0x0cc7e9...7e9594` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x107f0e...322a4e` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395109 | `0x114eca...959fc2` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395110 | `0x120e71...6ba50c` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395111 | `0x1616b2...f3e0f0` | ❓ Unverified |
@@ -205,6 +208,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395120 | `0x261ed5...4a42c7` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | aurora | unit-395121 | `0x26ec2a...53d9b9` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395122 | `0x29c160...9c28ba` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x29c857...1b2c58` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x2ade4f...f73064` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395123 | `0x2be951...7f1d09` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395124 | `0x2cb45e...06858b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395126 | `0x2f928d...a1abc2` | ❓ Unverified |
@@ -219,9 +224,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395135 | `0x42b950...c3cf63` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395136 | `0x44aa0e...0717aa` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395137 | `0x458459...0c3970` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x45e940...d2e01e` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395138 | `0x46f276...dcb2b8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x47372a...f12898` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395139 | `0x47924a...8948a4` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395140 | `0x48887c...0faa09` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x4ba3a1...270946` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395141 | `0x4bf289...3d24c6` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395142 | `0x4e0152...aa0c97` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395143 | `0x5174f1...1de94a` | ❓ Unverified |
@@ -233,11 +241,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | aurora | unit-395151 | `0x609137...e74748` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395152 | `0x61c9e0...30633c` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395153 | `0x6277f9...1b846a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x62f6de...97f7f0` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395154 | `0x63da4d...fcd198` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x641e05...39fb6e` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395155 | `0x644353...70dc8c` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395156 | `0x6a29e6...d6a114` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395157 | `0x6d28b0...da5e5c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x6e6e7b...a1a9ff` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395158 | `0x71dbeb...242698` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x7825c8...5ba12c` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395159 | `0x78edee...159df1` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395160 | `0x7b2732...23e505` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395161 | `0x7b9e31...9ce530` | ❓ Unverified |
@@ -255,9 +267,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395173 | `0x931e03...163066` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395174 | `0x94669d...63b9b5` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395175 | `0x9847f7...92c057` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x984bd0...b6e440` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395176 | `0x99364c...5d0baa` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395177 | `0x99cbfc...3c91e1` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395178 | `0x9a418a...3e97ae` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0x9dfec5...1a66cd` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395179 | `0x9f5104...1359be` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395180 | `0xa36df7...5f525a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395181 | `0xa57828...b8e50e` | ❓ Unverified |
@@ -278,6 +292,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395196 | `0xbc8a24...2174eb` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395197 | `0xbcea13...ba6fd1` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395198 | `0xbe753e...09f26c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0xbf6cf5...0a2aeb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0xc6618d...90adda` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395199 | `0xc66f59...b176e7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395200 | `0xc9bdee...fe3feb` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395202 | `0xccd878...6c2d65` | ❓ Unverified |
@@ -287,10 +303,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395206 | `0xd59c44...6055ee` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395207 | `0xd61a00...bbab6b` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395208 | `0xd62f9e...aa862f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0xd6b41c...f6465f` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395209 | `0xdac58a...997d50` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0xdaeac1...276b12` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395210 | `0xdc6d09...95a741` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395211 | `0xddadf8...9746f2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0xddbfd2...5575b1` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395212 | `0xdf8cbf...c47914` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0xe00a8a...91cfe7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0xe1fefe...6f249c` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395213 | `0xe4a4e3...28ed4f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395214 | `0xe55909...dcf689` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395215 | `0xe79345...8ae151` | ❓ Unverified |
@@ -298,6 +319,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395217 | `0xef802f...b0f87d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395218 | `0xf1469a...319448` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395219 | `0xf26721...de6e88` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | aurora | n/a | `0xf27fcc...9f012c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395220 | `0xf86119...9816d3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-395221 | `0xfa9434...c65abb` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | aurora | unit-395222 | `0xfbc4c4...8e127a` | ❓ Unverified |
@@ -330,10 +352,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 120 |
+| needs_review | 141 |
 
 ## Scope Matching Notes
 

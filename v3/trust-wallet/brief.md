@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Trust Wallet (`trust-wallet`)
 - Website: [https://trustwallet.com/](https://trustwallet.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: ethereum
-- Contract surface: 9 unique implementations (9 raw deployments)
+- Chains: bsc, ethereum
+- Contract surface: 24 unique implementations (35 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $28,902,678.00
 - On-chain TVL (included contracts): n/a
@@ -64,7 +64,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Logic-topography rows: 0; live-surface rows included: 0 (0 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 9/9 live.
 - Detected codebases: none
@@ -75,15 +75,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 9 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 9 of 9 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- Outside the address book: 15 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Confirmed-live implementations: 9 of 24 unique; 15 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/13
+- Verified + Unaudited implementations: 13
 - Verified by bytecode match: 0
-- Unverified implementations: 9
-- Unique implementations: 9
-- Raw deployments: 9
+- Unverified implementations: 11
+- Unique implementations: 24
+- Raw deployments: 35
 - Audits discovered: 10 (10 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -102,9 +102,23 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (13)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AgTokenSideChainMultiBridgeNameable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe91698...0ec84c` | ⚠️ Unaudited |
+| bscSUNDOG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xdc419c...1936a7` | ⚠️ Unaudited |
+| DistributionCreator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x46a9e9...c57829`; bsc `0x99fe85...924012`; bsc `0xc42b7a...3229d5` | ⚠️ Unaudited |
+| Distributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x04a7d1...65c199`; bsc `0x4195fa...a6a9a7`; bsc `0x44e3d3...628819`; bsc `0xa0e088...f53de4` | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x147f41...54c52d`; bsc `0xedbebe...8c24ba` | ⚠️ Unaudited |
+| PointToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1276d6...7932db` | ⚠️ Unaudited |
+| PullTokenWrapperAllow | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc9dfd5...e0c45b` | ⚠️ Unaudited |
+| RadiantMerklTokenWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | 2 deployments: bsc `0x1c6f6e...914442`; bsc `0x954ec7...7e1895` | ⚠️ Unaudited |
+| RadiantMerklTokenWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0xc3ef7e...eb5c5c`; bsc `0xe04db2...f5fd21` | ⚠️ Unaudited |
+| SavingsNameable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb5ecaa...d706bf` | ⚠️ Unaudited |
+| Token | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x799a29...7a872b` | ⚠️ Unaudited |
+| TokenLocker | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x0e7dd5...002c25`; bsc `0x3bffd2...0146b9`; bsc `0x5029f4...bfc2ed`; bsc `0x63dc02...cd740b` | ⚠️ Unaudited |
+| TrustWalletToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4b0f18...508003` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -118,7 +132,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (9)
+### ❓ Unverified (11)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -133,6 +147,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394363 | `0xce36b8...84ac7c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394365 | `0xee1af8...fd33e6` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-394367 | `0xfde532...728332` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x22b0ac...c47f5e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe0e2a2...0a32e3` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -274,10 +290,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 12 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 9 |
+| standard_library | 1 |
+| needs_review | 11 |
 
 ## Scope Matching Notes
 

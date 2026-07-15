@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Supernova (`supernova`)
 - Website: [https://supernova.xyz/](https://supernova.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 44 unique implementations (49 raw deployments)
+- Contract surface: 63 unique implementations (93 raw deployments)
 - Coverage basis: 21/44 confirmed own live verified implementations (47.7%); conservative 47.7% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $956,241.00
 - On-chain TVL (included contracts): n/a
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 62 contract row(s) across ethereum. Str
 
 ## Fork Analysis
 
-2 of 31 contracts are derived from known codebases. 29 contracts have no detected origin.
+2 of 41 contracts are derived from known codebases. 39 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -77,37 +77,47 @@ Removals (removed from original): none
 
 - AlgebraCustomPoolEntryPoint (`0xb86a85...831288`, chain 1)
 - AlgebraInterfaceMulticall (`0xc9ba2e...041f18`, chain 1)
+- AlgebraPoolAPI (`0xc0a4ba...56e95c`, chain 1)
+- AlgebraPoolAPIStorage (`0x42e71d...497bb8`, chain 1)
 - AlgebraPoolDeployer (`0x45bc0f...deba45`, chain 1)
 - AlgebraVaultFactory (`0xafc049...03038d`, chain 1)
 - BasePluginV3Factory (`0xdbfd67...f99b97`, chain 1)
 - BlackholePairAPIV2 (`0x2b9fc4...4963dc`, chain 1)
+- BribeFactoryV3 (`0x8bd718...89cbfb`, chain 1)
 - CustomPoolDeployer (`0x2493b3...89af4a`, chain 1)
 - FarmingCenter (`0x428ea5...6c91af`, chain 1)
 - FeeDiscountRegistry (`0x31eda5...3f5975`, chain 1)
+- GaugeManager (`0x120ea9...a6a9e3`, chain 1)
+- MinterUpgradeable (`0xa2b9c0...c32732`, chain 1)
 - NFTDescriptor (`0xabca00...851045`, chain 1)
 - NonfungiblePositionManager (`0x00d5bb...c8aaaa`, chain 1)
 - PairBootstrapper (`0x7f8f2b...c1cb66`, chain 1)
+- PairFactory (`0xb2fc25...5660d4`, chain 1)
 - PairGenerator (`0x42a7a5...69bbb8`, chain 1)
 - PermissionsRegistry (`0x344eec...67c28d`, chain 1)
 - PluginV3Deployer (`0x48012a...92eee3`, chain 1)
 - Quoter (`0xf9439c...529e41`, chain 1)
 - QuoterV2 (`0x821755...efb727`, chain 1)
 - RewardsDistributor (`0xb3410a...90ea97`, chain 1)
+- RouterHelper (`0x8e4387...a829a1`, chain 1)
 - RouterV2 (`0xbfae8e...e3058f`, chain 1)
 - SecurityRegistry (`0x454e62...79bdfd`, chain 1)
 - SuperNova (`0x00da84...200c78`, chain 1)
 - SuperNovaClaims (`0x313fdf...961309`, chain 1)
 - SwapRouter (`0x72d63a...91c8ac`, chain 1)
 - TickLens (`0x4e6a86...a7d6c9`, chain 1)
+- TokenAPI (`0xfc0d06...f4522d`, chain 1)
 - TokenHandler (`0xa1154f...6de201`, chain 1)
+- VeArtProxyUpgradeable (`0x19f5f9...621884`, chain 1)
 - veNFTAPI (`0x85dc70...9e5881`, chain 1)
 - VoterFactoryLib (`0xbd08f4...a95278`, chain 1)
+- VoterV3 (`0xa6ee38...5164f7`, chain 1)
 - VotingBalanceLogic (`0xed686a...319847`, chain 1)
 - VotingEscrow (`0x4c3e76...ee1d44`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 62; live-surface contracts included: 62 (49 live, 13 unknown).
+- Logic-topography rows: 62; live-surface rows included: 62 (62 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 44/91 live.
 - Detected codebases: none
@@ -118,15 +128,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 21/44 (47.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 44 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 19
-- Deployed-live implementations: 44 of 44 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 21/44
-- Verified + Unaudited implementations: 23
+- Outside the address book: 19 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 20
+- Confirmed-live implementations: 44 of 63 unique; 19 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 21/63
+- Verified + Unaudited implementations: 42
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 44
-- Raw deployments: 49
+- Unique implementations: 63
+- Raw deployments: 93
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -139,7 +149,7 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Paladin | Tier 2 | 21 | 47.7% | 2026-02 |
+| Paladin | Tier 2 | 21 | 33.3% | 2026-02 |
 
 ## Contract Surface
 
@@ -149,53 +159,72 @@ Removals (removed from original): none
 |---|---|---|---|---:|---|---|---|---|
 | AlgebraVaultFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393460 | `0xafc049...03038d` | ✅ Audited |
 | BasePluginV3Factory | registry | project_anchor | own_supporting | 0 | ethereum | unit-393473 | `0xdbfd67...f99b97` | ✅ Audited |
-| BribeFactoryV3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393497 | `0xeb37f1...37344c` | ✅ Audited |
+| BribeFactoryV3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393497 | 2 deployments: ethereum `0x8bd718...89cbfb`; ethereum `0xeb37f1...37344c` | ✅ Audited |
 | CustomPoolDeployer | unknown | project_anchor | own_supporting | 5 | ethereum | unit-393494 (5 proxies) | 6 deployments: ethereum `0x1c7986...59e963`; ethereum `0x2493b3...89af4a`; ethereum `0x42f5ec...2493da`; ethereum `0x44acd9...cdddc0`; ethereum `0xc815b4...928eb8`; ethereum `0xd7b7cc...ac090e` | ✅ Audited |
-| GaugeFactory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393499 | `0x66647a...16adb0` | ✅ Audited |
-| GaugeFactoryCL | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393491 | `0x8d3820...8cd674` | ✅ Audited |
-| GaugeManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393492 | `0x19a410...517ae2` | ✅ Audited |
-| MinterUpgradeable | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393500 | `0xfe29ea...da84a2` | ✅ Audited |
+| GaugeFactory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393499 | 2 deployments: ethereum `0x66647a...16adb0`; ethereum `0x92ec1b...646a0c` | ✅ Audited |
+| GaugeFactoryCL | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393491 | 2 deployments: ethereum `0x056f24...542c80`; ethereum `0x8d3820...8cd674` | ✅ Audited |
+| GaugeManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393492 | 2 deployments: ethereum `0x120ea9...a6a9e3`; ethereum `0x19a410...517ae2` | ✅ Audited |
+| MinterUpgradeable | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393500 | 2 deployments: ethereum `0xa2b9c0...c32732`; ethereum `0xfe29ea...da84a2` | ✅ Audited |
 | PairBootstrapper | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393444 | `0x7f8f2b...c1cb66` | ✅ Audited |
-| PairFactory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393502 | `0x5aef44...5bdc30` | ✅ Audited |
+| PairFactory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393502 | 2 deployments: ethereum `0x5aef44...5bdc30`; ethereum `0xb2fc25...5660d4` | ✅ Audited |
 | PairGenerator | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393432 | `0x42a7a5...69bbb8` | ✅ Audited |
 | PermissionsRegistry | registry | project_anchor | own_supporting | 0 | ethereum | unit-393428 | `0x344eec...67c28d` | ✅ Audited |
 | RewardsDistributor | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-393463 | `0xb3410a...90ea97` | ✅ Audited |
-| RouterHelper | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393498 | `0xd8377a...0803c6` | ✅ Audited |
+| RouterHelper | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393498 | 2 deployments: ethereum `0x8e4387...a829a1`; ethereum `0xd8377a...0803c6` | ✅ Audited |
 | SecurityRegistry | registry | project_anchor | own_supporting | 0 | ethereum | unit-393434 | `0x454e62...79bdfd` | ✅ Audited |
 | SuperNova | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393412 | `0x00da84...200c78` | ✅ Audited |
 | TokenHandler | token | project_anchor | own_supporting | 0 | ethereum | unit-393456 | `0xa1154f...6de201` | ✅ Audited |
 | veNFTAPI | token | project_anchor | own_supporting | 0 | ethereum | unit-393447 | `0x85dc70...9e5881` | ✅ Audited |
-| VoterV3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393501 | `0x1c7bf2...1d8171` | ✅ Audited |
+| VoterV3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393501 | 2 deployments: ethereum `0x1c7bf2...1d8171`; ethereum `0xa6ee38...5164f7` | ✅ Audited |
 | VotingBalanceLogic | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393480 | `0xed686a...319847` | ✅ Audited |
 | VotingEscrow | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-393437 | `0x4c3e76...ee1d44` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (23)
+### ⚠️ Verified + Unaudited (42)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | AlgebraCustomPoolEntryPoint | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-393464 | `0xb86a85...831288` | ⚠️ Unaudited |
 | AlgebraEternalFarming | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393422 | `0x1e8626...70a337` | ⚠️ Unaudited |
+| AlgebraFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x01f99c...3ade8c` | ⚠️ Unaudited |
 | AlgebraFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-393433 | `0x44b7fb...e89c55` | ⚠️ Unaudited |
 | AlgebraInterfaceMulticall | periphery | project_anchor | own_supporting | 0 | ethereum | unit-393470 | `0xc9ba2e...041f18` | ⚠️ Unaudited |
-| AlgebraPoolAPI | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393503 | `0x0ee855...12ea59` | ⚠️ Unaudited |
-| AlgebraPoolAPIStorage | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393496 | `0x3d219d...29337a` | ⚠️ Unaudited |
+| AlgebraPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7ec5e0...551738` | ⚠️ Unaudited |
+| AlgebraPoolAPI | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393503 | 2 deployments: ethereum `0x0ee855...12ea59`; ethereum `0xc0a4ba...56e95c` | ⚠️ Unaudited |
+| AlgebraPoolAPIStorage | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393496 | 2 deployments: ethereum `0x3d219d...29337a`; ethereum `0x42e71d...497bb8` | ⚠️ Unaudited |
 | AlgebraPoolDeployer | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-393435 | `0x45bc0f...deba45` | ⚠️ Unaudited |
+| AlgebraPoolDeployer | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xde5ffe...e71776` | ⚠️ Unaudited |
+| AlgebraVaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x789a0e...a43e62` | ⚠️ Unaudited |
+| ASSET | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf3212b...92e878` | ⚠️ Unaudited |
+| BlackholePairAPIV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1fd265...7535aa` | ⚠️ Unaudited |
 | BlackholePairAPIV2 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393423 | `0x2b9fc4...4963dc` | ⚠️ Unaudited |
+| Bribe | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x016ac7...5fc144` | ⚠️ Unaudited |
 | FarmingCenter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393431 | `0x428ea5...6c91af` | ⚠️ Unaudited |
 | FeeDiscountRegistry | registry | project_anchor | own_supporting | 0 | ethereum | unit-393426 | `0x31eda5...3f5975` | ⚠️ Unaudited |
+| GaugeCL | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x40f348...250935` | ⚠️ Unaudited |
+| GaugeV2 | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x094bef...359052` | ⚠️ Unaudited |
+| GSCORE | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0fd4a5...44a616` | ⚠️ Unaudited |
 | NFTDescriptor | token | project_anchor | own_supporting | 0 | ethereum | unit-393458 | `0xabca00...851045` | ⚠️ Unaudited |
 | NonfungiblePositionManager | governance | project_anchor | own_supporting | 1 | ethereum | unit-393490 | `0x00d5bb...c8aaaa` | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptor | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393495 | `0xf9bc94...b6535c` | ⚠️ Unaudited |
+| NonfungibleTokenPositionDescriptor | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393495 | 2 deployments: ethereum `0x405d79...ad2884`; ethereum `0xf9bc94...b6535c` | ⚠️ Unaudited |
+| Pair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x4f20c3...f86e94`; ethereum `0xa9eae0...d2f1b5`; ethereum `0xe3b07b...b9ccfe`; ethereum `0xf2c6e6...de3a83` | ⚠️ Unaudited |
+| PairFees | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x35b842...ec59a1` | ⚠️ Unaudited |
 | PluginV3Deployer | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393436 | `0x48012a...92eee3` | ⚠️ Unaudited |
 | Quoter | periphery | project_anchor | own_supporting | 0 | ethereum | unit-393485 | `0xf9439c...529e41` | ⚠️ Unaudited |
 | QuoterV2 | periphery | project_anchor | own_supporting | 0 | ethereum | unit-393445 | `0x821755...efb727` | ⚠️ Unaudited |
+| RouterHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x2d0a16...cff5c9`; ethereum `0xbaed8d...6f00da` | ⚠️ Unaudited |
+| RouterHelper | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x46b6f6...335620`; ethereum `0x4ead88...55dae2`; ethereum `0xb7796f...370396`; ethereum `0xb8b5b1...89a4ba` | ⚠️ Unaudited |
+| RouterHelperZap | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x15783a...d95564`; ethereum `0xb3a44f...d76af1`; ethereum `0xc3201a...220ef8`; ethereum `0xeed02a...779af7` | ⚠️ Unaudited |
+| RouterV2 | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x3ce467...95813b`; ethereum `0xf07567...d97ec9`; ethereum `0xfed77c...3d2c64` | ⚠️ Unaudited |
 | RouterV2 | adapter | project_anchor | own_supporting | 0 | ethereum | unit-393466 | `0xbfae8e...e3058f` | ⚠️ Unaudited |
+| SHARE | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x62e134...63f0e2` | ⚠️ Unaudited |
 | SuperNovaClaims | governance | project_anchor | own_supporting | 0 | ethereum | unit-393424 | `0x313fdf...961309` | ⚠️ Unaudited |
 | SwapRouter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-393443 | `0x72d63a...91c8ac` | ⚠️ Unaudited |
 | TickLens | periphery | project_anchor | own_supporting | 0 | ethereum | unit-393438 | `0x4e6a86...a7d6c9` | ⚠️ Unaudited |
-| TokenAPI | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393504 | `0x227534...810b31` | ⚠️ Unaudited |
-| VeArtProxyUpgradeable | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393493 | `0x87e398...397551` | ⚠️ Unaudited |
+| TokenAPI | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393504 | 2 deployments: ethereum `0x227534...810b31`; ethereum `0xfc0d06...f4522d` | ⚠️ Unaudited |
+| VeArtProxyUpgradeable | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393493 | 2 deployments: ethereum `0x19f5f9...621884`; ethereum `0x87e398...397551` | ⚠️ Unaudited |
+| veNFTAPIV0 | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x703fb6...715db6` | ⚠️ Unaudited |
 | VoterFactoryLib | registry | project_anchor | own_supporting | 0 | ethereum | unit-393465 | `0xbd08f4...a95278` | ⚠️ Unaudited |
+| VotingBalanceLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1de64c...a20e28` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -287,7 +316,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | `0x31eda5...3f5975` | FeeDiscountRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0xabca00...851045` | NFTDescriptor | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x00d5bb...c8aaaa` | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xf9bc94...b6535c` | NonfungibleTokenPositionDescriptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x405d79...ad2884` | NonfungibleTokenPositionDescriptor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x48012a...92eee3` | PluginV3Deployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0xf9439c...529e41` | Quoter | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x821755...efb727` | QuoterV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -296,14 +325,14 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | `0x72d63a...91c8ac` | SwapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x4e6a86...a7d6c9` | TickLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x227534...810b31` | TokenAPI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x87e398...397551` | VeArtProxyUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x19f5f9...621884` | VeArtProxyUpgradeable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0xbd08f4...a95278` | VoterFactoryLib | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 44 |
+| native | 63 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

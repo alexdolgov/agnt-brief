@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Ante Finance (`ante-finance`)
 - Website: [https://ante.finance](https://ante.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, aurora, avalanche, bsc, ethereum, fantom, goerli, optimism, polygon, polygon-mumbai, zksync-era
 - Contract surface: 90 unique implementations (90 raw deployments)
@@ -69,7 +69,7 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, auro
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Logic-topography rows: 3; live-surface rows included: 3 (3 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 14/23 live.
 - Detected codebases: none
@@ -80,13 +80,13 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, auro
 - Coverage of address-book-owned deployed-live implementations: 1/3 (33.3%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 14 own, 3 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 73 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 73 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Deployed-live implementations: 14 of 90 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/3
-- Verified + Unaudited implementations: 2
+- Confirmed-live implementations: 14 of 90 unique; 76 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/72
+- Verified + Unaudited implementations: 71
 - Verified by bytecode match: 0
-- Unverified implementations: 11
+- Unverified implementations: 18
 - Unique implementations: 90
 - Raw deployments: 90
 - Audits discovered: 4 (4 direct, 0 inherited from forked code)
@@ -102,9 +102,9 @@ The pinned logic-topography run contains 3 contract row(s) across arbitrum, auro
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Immunefi | Tier 1 | 1 | 33.3% | n/a |
-| Trail of Bits | Tier 1 | 1 | 33.3% | 2022-06 |
-| Zellic | Tier 2 | 1 | 33.3% | 2022-05 |
+| Immunefi | Tier 1 | 1 | 1.4% | n/a |
+| Trail of Bits | Tier 1 | 1 | 1.4% | 2022-06 |
+| Zellic | Tier 2 | 1 | 1.4% | 2022-05 |
 
 ## Contract Surface
 

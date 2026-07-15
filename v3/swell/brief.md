@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Swell (`swell`)
 - Website: [https://www.swellnetwork.io/](https://www.swellnetwork.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: ethereum
-- Contract surface: 39 unique implementations (40 raw deployments)
+- Chains: ethereum, swellchain
+- Contract surface: 52 unique implementations (61 raw deployments)
 - Coverage basis: 13/28 confirmed own live verified implementations (46.4%); conservative 46.4% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $92,570,809.48
 - On-chain TVL (included contracts): n/a
@@ -137,7 +137,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 37; live-surface contracts included: 37 (28 live, 9 unknown).
+- Logic-topography rows: 37; live-surface rows included: 37 (28 live, 9 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 29/39 live.
 - Detected codebases: none
@@ -148,15 +148,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 13/28 (46.4%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 29 own, 10 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 8
-- Deployed-live implementations: 29 of 39 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 13/28
-- Verified + Unaudited implementations: 15
+- Outside the address book: 13 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 12
+- Confirmed-live implementations: 29 of 52 unique; 23 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 13/50
+- Verified + Unaudited implementations: 37
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 39
-- Raw deployments: 40
+- Unverified implementations: 2
+- Unique implementations: 52
+- Raw deployments: 61
 - Audits discovered: 16 (16 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 10
 - ASD (verified + unaudited TVL): n/a
@@ -169,11 +169,11 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ChainSecurity | Tier 1 | 8 | 28.6% | 2024-08 |
-| Nethermind | Tier 2 | 6 | 21.4% | 2024-08 |
-| Sigma Prime | Tier 2 | 5 | 17.9% | 2024-07 |
-| Cyfrin | Tier 1 | 3 | 10.7% | 2024-02 |
-| Hexens | Tier 2 | 3 | 10.7% | 2024-04 |
+| ChainSecurity | Tier 1 | 8 | 16.0% | 2024-08 |
+| Nethermind | Tier 2 | 6 | 12.0% | 2024-08 |
+| Sigma Prime | Tier 2 | 5 | 10.0% | 2024-07 |
+| Cyfrin | Tier 1 | 3 | 6.0% | 2024-02 |
+| Hexens | Tier 2 | 3 | 6.0% | 2024-04 |
 
 ## Contract Surface
 
@@ -195,7 +195,7 @@ Removals (removed from original): none
 | TokenizedStrategy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393608 | 2 deployments: ethereum `0x8041ba...e86ae3`; ethereum `0x975304...5eaa50` | ✅ Audited |
 | WithdrawLimitModule | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-393563 | `0x4c86cb...493c22` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (24)
+### ⚠️ Verified + Unaudited (37)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
@@ -205,17 +205,30 @@ Removals (removed from original): none
 | BoringVault | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-393567 | `0x66e47e...4d831a` | ⚠️ Unaudited |
 | BoringVault | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-393593 | `0x9ed153...775f22` | ⚠️ Unaudited |
 | DelayedWithdraw | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-393579 | `0x755a07...05cf85` | ⚠️ Unaudited |
+| DelayedWithdraw | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xec6de7...df773c` | ⚠️ Unaudited |
 | EigenPod | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-393607 | `0x8d0b4d...ee7258` | ⚠️ Unaudited |
+| L1ERC20TokenBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x7e9793...5e65a2`; ethereum `0xecf337...d24121` | ⚠️ Unaudited |
 | ManagerWithMerkleVerification | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-393570 | `0x69fc70...4f50c0` | ⚠️ Unaudited |
 | ManagerWithMerkleVerification | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-393575 | `0x6cea0a...e91e06` | ⚠️ Unaudited |
+| OFTAdapterSwETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2c1b34...6f94e2` | ⚠️ Unaudited |
+| OracleAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa41902...605981` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x674822...0931a9`; ethereum `0x95e8ba...151ef6` | ⚠️ Unaudited |
 | Registry | registry | project_anchor | own_supporting | 0 | ethereum | unit-393583 | `0x88b96f...88603a` | ⚠️ Unaudited |
 | Registry | registry | project_anchor | own_supporting | 0 | ethereum | unit-393604 | `0xe5fcbd...2c5f91` | ⚠️ Unaudited |
 | RegistryFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-393605 | `0xff22ea...cfb077` | ⚠️ Unaudited |
 | ReleaseRegistry | registry | project_anchor | own_supporting | 0 | ethereum | unit-393577 | `0x70f8ac...1da901` | ⚠️ Unaudited |
+| RoleManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x1bb44f...975bf3`; ethereum `0x8413e6...f4d6af`; ethereum `0xd90541...d5b4a1` | ⚠️ Unaudited |
 | RolesAuthority | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-393554 | `0x1f5ddd...d3a016` | ⚠️ Unaudited |
+| RolesAuthority | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2db758...efa4dd` | ⚠️ Unaudited |
 | RolesAuthority | governance | project_anchor | own_supporting | 0 | ethereum | unit-393591 | `0x9d663f...68f377` | ⚠️ Unaudited |
 | RolesAuthority | governance | project_anchor | own_supporting | 0 | ethereum | unit-393599 | `0xa9bd69...0558d6` | ⚠️ Unaudited |
+| RSwellOFTAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x428cda...b2ac58` | ⚠️ Unaudited |
+| SimpleStakingERC20 | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x38d43a...31d774` | ⚠️ Unaudited |
+| SwBtcOFTAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x584cd3...e7dae2`; ethereum `0xa5bd95...2aa3e2` | ⚠️ Unaudited |
+| SwellOFTAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x093410...9d85b7` | ⚠️ Unaudited |
 | SwellToken | token | project_anchor | own_supporting | 0 | ethereum | unit-393549 | `0x0a6e7b...b35676` | ⚠️ Unaudited |
+| SwETHOFTAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x9b07fb...33f562`; ethereum `0xd98f5c...c27b5e` | ⚠️ Unaudited |
+| SymbioticAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | ethereum | n/a | 3 deployments: ethereum `0x2a6a2b...c0caf8`; ethereum `0x69dda9...41836a`; ethereum `0x9e07af...3fdae7` | ⚠️ Unaudited |
 | TellerWithMultiAssetSupport | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-393552 | `0x1da9ce...76ece1` | ⚠️ Unaudited |
 | TellerWithMultiAssetSupport | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-393569 | `0x685adb...160429` | ⚠️ Unaudited |
 | TokenizedStrategy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393609 | `0x473f0a...cf0e05` | ⚠️ Unaudited |
@@ -487,9 +500,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 33 |
+| native | 45 |
 | upstream | 4 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 2 |
 
 ## Scope Matching Notes

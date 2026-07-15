@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Credbull (`credbull`)
 - Website: [https://credbull.io/](https://credbull.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: polygon
-- Contract surface: 3 unique implementations (3 raw deployments)
+- Chains: arbitrum, polygon
+- Contract surface: 90 unique implementations (130 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $10,940,088.68
 - On-chain TVL (included contracts): n/a
@@ -63,7 +63,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Logic-topography rows: 0; live-surface rows included: 0 (0 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 3/18 live.
 - Detected codebases: none
@@ -74,15 +74,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 3 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- Outside the address book: 87 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 3
+- Confirmed-live implementations: 3 of 90 unique; 87 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/85
+- Verified + Unaudited implementations: 85
 - Verified by bytecode match: 0
-- Unverified implementations: 3
-- Unique implementations: 3
-- Raw deployments: 3
+- Unverified implementations: 5
+- Unique implementations: 90
+- Raw deployments: 130
 - Audits discovered: 8 (8 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -101,9 +101,95 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (85)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AddressListRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x5ae15b...a248f8` | ⚠️ Unaudited |
+| AllowedAdapterIncomingAssetsPolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc192fd...cdd482` | ⚠️ Unaudited |
+| AllowedAdaptersPerManagerPolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x30ed4e...0bb710` | ⚠️ Unaudited |
+| AllowedAdaptersPolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x421878...d27a4a` | ⚠️ Unaudited |
+| AllowedAssetsForRedemptionPolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x71b825...86b3b6` | ⚠️ Unaudited |
+| AllowedDepositRecipientsPolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe18535...a459ff` | ⚠️ Unaudited |
+| AllowedExternalPositionTypesPerManagerPolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xb6367c...ede28c` | ⚠️ Unaudited |
+| AllowedExternalPositionTypesPolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x5a739d...76d8e7` | ⚠️ Unaudited |
+| AllowedRedeemersForSpecificAssetsPolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9f99e9...122195` | ⚠️ Unaudited |
+| AllowedSharesTransferRecipientsPolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x3b6913...0194bd` | ⚠️ Unaudited |
+| ArbitraryLoanFixedInterestModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x29b6e5...99c781`; polygon `0xa67be9...bf9ff2` | ⚠️ Unaudited |
+| ArbitraryLoanPositionLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 3 deployments: polygon `0x4c3da7...67c2e7`; polygon `0x7fec9c...398289`; polygon `0xf45071...f206d3` | ⚠️ Unaudited |
+| ArbitraryLoanPositionParser | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x2e4646...7a7d05`; polygon `0xe8a5da...860131` | ⚠️ Unaudited |
+| ArbitraryLoanTotalNominalDeltaOracleModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x6fd4a0...7ba6a2`; polygon `0x9301b3...e4121d` | ⚠️ Unaudited |
+| ArrakisV2Adapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xf0409b...e7011d` | ⚠️ Unaudited |
+| ArrakisV2PriceFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xcc8090...ac678a` | ⚠️ Unaudited |
+| AssetValueCalculator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe9d4d8...d27d86` | ⚠️ Unaudited |
+| CBL | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x577349...381a08`; arbitrum `0xd6b3d8...b95cb6` | ⚠️ Unaudited |
+| ComptrollerLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xf5fc0e...1eb441` | ⚠️ Unaudited |
+| ConvertedQuoteAggregatorFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xf19652...76857d` | ⚠️ Unaudited |
+| CredbullFixedYieldVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 10 deployments: arbitrum `0x096227...c72874`; arbitrum `0x1e0d68...4b0b8b`; arbitrum `0x581d72...e9cbff`; arbitrum `0x797ccf...f62e4b`; arbitrum `0x8b261a...6bb4bb`; arbitrum `0x8f87e1...83f29b`; arbitrum `0xace0d7...ce5516`; arbitrum `0xb89846...4bb9f9`; arbitrum `0xc0c1da...b7403f`; arbitrum `0xe4a4d8...e76b91` | ⚠️ Unaudited |
+| CumulativeSlippageTolerancePolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x133236...706bf2` | ⚠️ Unaudited |
+| DepositWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 5 deployments: polygon `0x2baa64...e82c87`; polygon `0x30c439...fcbafa`; polygon `0x5100ef...c49114`; polygon `0x6e84a0...b12289`; polygon `0xb545e7...874cb8` | ⚠️ Unaudited |
+| Dispatcher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x2e2527...032733`; polygon `0xf9fe9a...5778d2` | ⚠️ Unaudited |
+| DispatcherOwnedBeaconFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xa82586...048017` | ⚠️ Unaudited |
+| EntranceRateBurnFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x01460b...055f16` | ⚠️ Unaudited |
+| EntranceRateDirectFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x88c9a1...fb78b8` | ⚠️ Unaudited |
+| EnzymeV4VaultAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x51b47d...7d7f56` | ⚠️ Unaudited |
+| EnzymeVaultPriceFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd72324...ca0cf1` | ⚠️ Unaudited |
+| ERC4626Adapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x79567a...5df87d` | ⚠️ Unaudited |
+| ERC4626PriceFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xb13f73...cadab0` | ⚠️ Unaudited |
+| ERC4626RateAggregatorFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x3b5730...6791e8` | ⚠️ Unaudited |
+| ExitRateBurnFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x0bbb96...d37879` | ⚠️ Unaudited |
+| ExitRateDirectFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc5c7f7...99b848` | ⚠️ Unaudited |
+| ExternalPositionFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x067eee...f6580d` | ⚠️ Unaudited |
+| ExternalPositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9513b3...fd7f47` | ⚠️ Unaudited |
+| FeeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xddd743...461deb` | ⚠️ Unaudited |
+| FundDataProviderRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 4 deployments: polygon `0x2e6b6f...64d0bb`; polygon `0x4e518b...d9636f`; polygon `0xf03dc1...dace6b`; polygon `0xfb41e1...7f0e84` | ⚠️ Unaudited |
+| FundDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x188d35...12284f` | ⚠️ Unaudited |
+| FundValueCalculator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xcdf038...4b7a33` | ⚠️ Unaudited |
+| FundValueCalculatorRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd70389...d93f08` | ⚠️ Unaudited |
+| FundValueCalculatorUsdWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xdaa8bb...e37323` | ⚠️ Unaudited |
+| GasRelayPaymasterFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xed0578...cdc4ca` | ⚠️ Unaudited |
+| GasRelayPaymasterLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 4 deployments: polygon `0x190e70...d63715`; polygon `0x44654b...5f5592`; polygon `0x9feea9...3dc7a0`; polygon `0xbedae7...d01676` | ⚠️ Unaudited |
+| GatedRedemptionQueueSharesWrapperFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x7a68d5...8c17d4` | ⚠️ Unaudited |
+| GatedRedemptionQueueSharesWrapperLib | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x1ad5e5...4b62e3`; polygon `0x993212...b6d7c9` | ⚠️ Unaudited |
+| GatedRedemptionQueueSharesWrapperLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 4 deployments: polygon `0x334ed8...394b7d`; polygon `0x585527...f8cefa`; polygon `0xcee23e...3a53f3`; polygon `0xe6ae7b...69586f` | ⚠️ Unaudited |
+| GlobalConfigLib | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x905448...9be837`; polygon `0xcbbd50...c67a64` | ⚠️ Unaudited |
+| GlobalConfigLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xce699a...948dd1` | ⚠️ Unaudited |
+| IdleAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x5d2135...4b8434` | ⚠️ Unaudited |
+| IdlePriceFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x99a8fe...740a58` | ⚠️ Unaudited |
+| IntegrationManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x92fcde...a0884b` | ⚠️ Unaudited |
+| ManagementFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x97f13b...dbd843` | ⚠️ Unaudited |
+| ManualValueOracleFactory | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x735615...c4354f` | ⚠️ Unaudited |
+| MinAssetBalancesPostRedemptionPolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9d940b...f8251e` | ⚠️ Unaudited |
+| MinMaxInvestmentPolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x8ac04e...dbbc9a` | ⚠️ Unaudited |
+| MinSharesSupplyFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xeb45b9...df19a3` | ⚠️ Unaudited |
+| NoDepegOnRedeemSharesForSpecificAssetsPolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x006911...cf8b04` | ⚠️ Unaudited |
+| OneInchV5Adapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x2f4a9c...23b457` | ⚠️ Unaudited |
+| OnlyRemoveDustExternalPositionPolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc0f495...abab99` | ⚠️ Unaudited |
+| OnlyUntrackDustOrPricelessAssetsPolicy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x9f8563...b5c9d2` | ⚠️ Unaudited |
+| ParaSwapV5Adapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 6 deployments: polygon `0x2a5106...95d616`; polygon `0x5ef0dc...5e14d6`; polygon `0xa6402b...6530e7`; polygon `0xb665e9...4ab0df`; polygon `0xb98c40...514293`; polygon `0xe9293a...5879d4` | ⚠️ Unaudited |
+| ParaSwapV6Adapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x4c8026...72d53c`; polygon `0xe01f05...83638e` | ⚠️ Unaudited |
+| PeggedDerivativesPriceFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xbfa102...fcc5b1` | ⚠️ Unaudited |
+| PeggedRateDeviationAggregatorFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x124fda...a22f4a` | ⚠️ Unaudited |
+| PerformanceFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xbc63af...479bdf` | ⚠️ Unaudited |
+| PolicyManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x5a8ee0...f5546f` | ⚠️ Unaudited |
+| PoolTogetherV4Adapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe1ade6...3dc63b` | ⚠️ Unaudited |
+| PoolTogetherV4PriceFeed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xf35a9f...682f69` | ⚠️ Unaudited |
+| ProtocolFeeReserveLib | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | 2 deployments: polygon `0x309d2f...95fe46`; polygon `0xf0bfee...d68b2d` | ⚠️ Unaudited |
+| ProtocolFeeReserveLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x420811...aaad5b` | ⚠️ Unaudited |
+| ProtocolFeeTracker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xb8e6ed...6e23d5` | ⚠️ Unaudited |
+| SharePriceThrottledAssetManagerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x42637a...fea3de`; polygon `0x63b3fb...de8c5a` | ⚠️ Unaudited |
+| SharePriceThrottledAssetManagerLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x65d920...9a349c` | ⚠️ Unaudited |
+| SharesSplitterFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1a0e33...9b8944` | ⚠️ Unaudited |
+| SingleAssetDepositQueueLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xd33e75...71233a` | ⚠️ Unaudited |
+| SingleAssetRedemptionQueueFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x4b6b34...e026b9` | ⚠️ Unaudited |
+| SingleAssetRedemptionQueueLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xe54065...cf0b87` | ⚠️ Unaudited |
+| TransferAssetsAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x52e83a...a92a17` | ⚠️ Unaudited |
+| UintListRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x6ddd87...166519` | ⚠️ Unaudited |
+| UnpermissionedActionsWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x1648cc...d2b17b` | ⚠️ Unaudited |
+| ValueInterpreter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x66de7e...8a0f45` | ⚠️ Unaudited |
+| VaultLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xddb8eb...2e1612` | ⚠️ Unaudited |
+| VaultProxy | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0x2eda17...8ccd6d` | ⚠️ Unaudited |
+| ZeroExV4Adapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 2 deployments: polygon `0x34558a...4fb687`; polygon `0xce663e...f1448a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -117,7 +203,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (5)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -125,7 +211,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---:|---|---|---|---|
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-234473 | `0x3c499c...5c3359` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-234475 | `0x8f87e1...83f29b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xaad57f...6044f1` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-234476 | `0xb89846...4bb9f9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | `0xc088fe...d91224` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -266,10 +354,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 85 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 

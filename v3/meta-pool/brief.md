@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Meta Pool (`meta-pool`)
 - Website: [https://metapool.app](https://metapool.app)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: aurora, ethereum
-- Contract surface: 18 unique implementations (18 raw deployments)
+- Contract surface: 30 unique implementations (37 raw deployments)
 - Coverage basis: 3/7 confirmed own live verified implementations (42.9%); conservative 42.9% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $62,138,405.00
 - On-chain TVL (included contracts): n/a
@@ -67,7 +67,7 @@ The pinned logic-topography run contains 11 contract row(s) across aurora, ether
 
 ## Contract Surface Quality
 
-- Indexed contracts: 11; live-surface contracts included: 11 (7 live, 4 unknown).
+- Logic-topography rows: 11; live-surface rows included: 11 (11 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 16/26 live.
 - Detected codebases: none
@@ -78,15 +78,15 @@ The pinned logic-topography run contains 11 contract row(s) across aurora, ether
 - Coverage of address-book-owned deployed-live implementations: 3/7 (42.9%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 16 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 5
-- Deployed-live implementations: 16 of 18 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 3/7
-- Verified + Unaudited implementations: 4
+- Outside the address book: 12 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 6
+- Confirmed-live implementations: 16 of 30 unique; 14 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 3/11
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
-- Unverified implementations: 9
-- Unique implementations: 18
-- Raw deployments: 18
+- Unverified implementations: 19
+- Unique implementations: 30
+- Raw deployments: 37
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
@@ -99,7 +99,7 @@ The pinned logic-topography run contains 11 contract row(s) across aurora, ether
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 3 | 42.9% | 2025-02 |
+| unknown | Tier 2 | 3 | 27.3% | 2025-02 |
 
 ## Contract Surface
 
@@ -107,18 +107,22 @@ The pinned logic-topography run contains 11 contract row(s) across aurora, ether
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| LiquidUnstakePool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247620 | `0xdf261f...4f03cc` | ✅ Audited |
-| Staking | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247618 | `0xd06f6a...6f4a0e` | ✅ Audited |
-| Withdrawal | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247617 | `0xe55e5f...36af49` | ✅ Audited |
+| LiquidUnstakePool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247620 | 2 deployments: ethereum `0xdf261f...4f03cc`; ethereum `0xea9fec...a1aa81` | ✅ Audited |
+| Staking | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247618 | 2 deployments: ethereum `0xd06f6a...6f4a0e`; ethereum `0xd3db79...9513ac` | ✅ Audited |
+| Withdrawal | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247617 | 2 deployments: ethereum `0xcb894c...a03c61`; ethereum `0xe55e5f...36af49` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | GnosisSafe | governance | project_anchor | own_supporting | 1 | ethereum | unit-247619 | `0x24d966...79d971` | ⚠️ Unaudited |
+| LiquidUnstakePool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xaba64e...37513c`; ethereum `0xcadd97...66d675` | ⚠️ Unaudited |
 | MpDaoToken | token | project_anchor | own_supporting | 0 | ethereum | unit-247598 | `0x798bcb...8b361d` | ⚠️ Unaudited |
 | ProxyAdmin | governance | project_anchor | own_supporting | 0 | ethereum | unit-247599 | `0x806f87...a1f182` | ⚠️ Unaudited |
-| VotingPowerV1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247616 | `0xf8709e...104113` | ⚠️ Unaudited |
+| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x374748...5a111a`; ethereum `0xb11284...f27b39` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x48afbb...d81710`; ethereum `0x56c517...8f7ffa` | ⚠️ Unaudited |
+| VotingPowerV1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-247616 | 2 deployments: ethereum `0x00b6e9...e4bb89`; ethereum `0xf8709e...104113` | ⚠️ Unaudited |
+| Withdrawal | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe3355f...833cd9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -132,13 +136,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (11)
+### ❓ Unverified (19)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x20b911...17605b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x48e562...bc9340` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8edfe3...1fc543` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa8e57a...1a4a84` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaedec0...4a75b7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb19915...148db1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc29541...0f17f2` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-247602 | `0xfbb18e...551a02` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfe394b...ee2106` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247603 | `0x07f9f7...332e30` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247605 | `0x158efd...375eec` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | aurora | unit-247606 | `0x1cc2f3...115d01` | ❓ Unverified |
@@ -214,16 +226,16 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | `0x798bcb...8b361d` | MpDaoToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xf8709e...104113` | VotingPowerV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x00b6e9...e4bb89` | VotingPowerV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 8 |
 | upstream | 0 |
-| standard_library | 2 |
-| needs_review | 11 |
+| standard_library | 3 |
+| needs_review | 19 |
 
 ## Scope Matching Notes
 

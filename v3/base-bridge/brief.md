@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Base Bridge (`base-bridge`)
 - Website: [https://docs.base.org/base-chain/network-information/bridges-mainnet](https://docs.base.org/base-chain/network-information/bridges-mainnet)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base, base-sepolia, ethereum, sepolia
 - Contract surface: 163 unique implementations (163 raw deployments)
@@ -106,7 +106,7 @@ The pinned logic-topography run contains 31 contract row(s) across base, base-se
 
 ## Contract Surface Quality
 
-- Indexed contracts: 31; live-surface contracts included: 31 (31 live, 0 unknown).
+- Logic-topography rows: 31; live-surface rows included: 31 (31 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 51/156 live.
 - Detected codebases: none
@@ -117,13 +117,13 @@ The pinned logic-topography run contains 31 contract row(s) across base, base-se
 - Coverage of address-book-owned deployed-live implementations: 0/31 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 51 own, 31 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 81 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 81 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 26
-- Deployed-live implementations: 51 of 163 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/31
-- Verified + Unaudited implementations: 31
+- Confirmed-live implementations: 51 of 163 unique; 112 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/56
+- Verified + Unaudited implementations: 56
 - Verified by bytecode match: 0
-- Unverified implementations: 20
+- Unverified implementations: 107
 - Unique implementations: 163
 - Raw deployments: 163
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)

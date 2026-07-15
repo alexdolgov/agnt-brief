@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: OnX Finance (`onx-finance`)
 - Website: [https://onx.finance/](https://onx.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: avalanche, bsc, ethereum, fantom, polygon
 - Contract surface: 149 unique implementations (149 raw deployments)
@@ -67,7 +67,7 @@ The pinned logic-topography run contains 5 contract row(s) across avalanche, bsc
 
 ## Contract Surface Quality
 
-- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
+- Logic-topography rows: 5; live-surface rows included: 5 (5 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 12/13 live.
 - Detected codebases: none
@@ -78,11 +78,11 @@ The pinned logic-topography run contains 5 contract row(s) across avalanche, bsc
 - Coverage of address-book-owned deployed-live implementations: 2/5 (40.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 12 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 137 discovered implementations excluded (3 third-party/infra; 15 standard proxy/library)
+- Outside the address book: 137 discovered implementations shown in the inventory but excluded from coverage (3 third-party/infra; 15 standard proxy/library)
 - Proxy deployments represented within implementation groups: 22
-- Deployed-live implementations: 12 of 149 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 2/5
-- Verified + Unaudited implementations: 3
+- Confirmed-live implementations: 12 of 149 unique; 137 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 2/142
+- Verified + Unaudited implementations: 140
 - Verified by bytecode match: 0
 - Unverified implementations: 7
 - Unique implementations: 149
@@ -99,7 +99,7 @@ The pinned logic-topography run contains 5 contract row(s) across avalanche, bsc
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 2 | 40.0% | 2021-08 |
+| unknown | Tier 2 | 2 | 1.4% | 2021-08 |
 
 ## Contract Surface
 

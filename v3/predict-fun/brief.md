@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Predict Fun (`predict-fun`)
 - Website: [https://predict.fun](https://predict.fun)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: bsc
-- Contract surface: 29 unique implementations (29 raw deployments)
+- Chains: blast, bsc
+- Contract surface: 57 unique implementations (70 raw deployments)
 - Coverage basis: 5/29 confirmed own live verified implementations (17.2%); conservative 17.2% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $23,808,868.15
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for Predict F
 
 ### Architecture
 
-The pinned logic-topography run contains 29 contract row(s) across bsc. Structural roles: 20 core, 9 supporting. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 29 contract row(s) across blast, bsc. Structural roles: 20 core, 9 supporting. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -154,7 +154,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 29; live-surface contracts included: 29 (29 live, 0 unknown).
+- Logic-topography rows: 29; live-surface rows included: 29 (29 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 29/29 live.
 - Detected codebases: none
@@ -165,15 +165,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 5/29 (17.2%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 29 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 28 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 29 of 29 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 5/29
-- Verified + Unaudited implementations: 24
+- Confirmed-live implementations: 29 of 57 unique; 28 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 5/42
+- Verified + Unaudited implementations: 37
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 29
-- Raw deployments: 29
+- Unverified implementations: 15
+- Unique implementations: 57
+- Raw deployments: 70
 - Audits discovered: 9 (9 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): n/a
@@ -186,9 +186,9 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Collaborative (multiple) | Tier 2 | 5 | 17.2% | 2025-11 |
-| Cyfrin | Tier 1 | 2 | 6.9% | 2026-04 |
-| TenArmor | Tier 2 | 2 | 6.9% | 2025-12 |
+| Collaborative (multiple) | Tier 2 | 5 | 11.9% | 2025-11 |
+| Cyfrin | Tier 1 | 2 | 4.8% | 2026-04 |
+| TenArmor | Tier 2 | 2 | 4.8% | 2025-12 |
 
 ## Contract Surface
 
@@ -202,34 +202,47 @@ Removals (removed from original): none
 | YieldBearingNegRiskAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391157 | `0x41dce1...0b2a40` | ✅ Audited |
 | YieldBearingWrappedCollateral | unknown | project_anchor | own_supporting | 0 | bsc | unit-391171 | `0xcfb9be...3334d9` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (24)
+### ⚠️ Verified + Unaudited (37)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AddressFinder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0xc31bb9...b6f24a` | ⚠️ Unaudited |
+| AdminAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x69e6be...868c4a` | ⚠️ Unaudited |
 | ConditionalTokens | token | project_anchor | own_supporting | 0 | bsc | unit-391153 | `0x22da18...c9d244` | ⚠️ Unaudited |
 | ConditionalTokens | token | project_anchor | own_supporting | 0 | bsc | unit-391178 | `0xf64b0b...19a07f` | ⚠️ Unaudited |
 | ConditionalTokensFeesHandler | token | project_anchor | own_supporting | 0 | bsc | unit-391168 | `0xb4d9f1...645f6e` | ⚠️ Unaudited |
 | ConditionalTokensFeesHandler | token | project_anchor | own_supporting | 0 | bsc | unit-391173 | `0xd63206...e64030` | ⚠️ Unaudited |
+| ConditionalTokensFeesHandlerV2 | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 5 deployments: bsc `0x13ba3d...81d8fa`; bsc `0x2d4370...24093e`; bsc `0x57f12f...883ab2`; bsc `0x7bd1a1...252b84`; bsc `0xd573f4...2b5f3b` | ⚠️ Unaudited |
+| CTFAutoRedemptionHelper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x6422e0...f235e3`; bsc `0xfca64d...47cbec` | ⚠️ Unaudited |
 | CTFExchange | unknown | project_anchor | own_supporting | 0 | bsc | unit-391160 | `0x6beb5a...decfa5` | ⚠️ Unaudited |
 | CTFExchange | unknown | project_anchor | own_supporting | 0 | bsc | unit-391164 | `0x8bc070...94b689` | ⚠️ Unaudited |
 | FeeModuleV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-391174 | `0xf1f8f5...fa9783` | ⚠️ Unaudited |
 | FeeModuleV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-391179 | `0xfbc225...7ba34f` | ⚠️ Unaudited |
+| FeeModuleV2Adapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc63467...49a7b6` | ⚠️ Unaudited |
+| FeeModuleV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0xdcffeb...4891a1`; bsc `0xf291a6...f0a279` | ⚠️ Unaudited |
 | NegRiskCtfExchange | unknown | project_anchor | own_supporting | 0 | bsc | unit-391156 | `0x365fb8...d8d58a` | ⚠️ Unaudited |
 | NegRiskCtfExchange | unknown | project_anchor | own_supporting | 0 | bsc | unit-391163 | `0x8a289d...81b41d` | ⚠️ Unaudited |
 | NegRiskFeeModuleV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-391172 | `0xd172f3...da6057` | ⚠️ Unaudited |
 | NegRiskFeeModuleV2 | unknown | project_anchor | own_supporting | 0 | bsc | unit-391175 | `0xf2311c...b3132f` | ⚠️ Unaudited |
+| NegRiskFeeModuleV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x098994...a5fd63`; bsc `0x765636...73768e` | ⚠️ Unaudited |
 | NegRiskOperator | unknown | project_anchor | own_supporting | 0 | bsc | unit-391158 | `0x56020f...6ecffd` | ⚠️ Unaudited |
 | NegRiskOperator | unknown | project_anchor | own_supporting | 0 | bsc | unit-391169 | `0xbb7250...e3e175` | ⚠️ Unaudited |
 | RegisterTokenHelper | token | project_anchor | own_supporting | 0 | bsc | unit-391162 | `0x89f92c...fd8e5e` | ⚠️ Unaudited |
 | RegisterTokenHelper | token | project_anchor | own_supporting | 0 | bsc | unit-391167 | `0xa48c26...9c2089` | ⚠️ Unaudited |
+| RegisterTokenHelper | token | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x54dc9c...4cb63a` | ⚠️ Unaudited |
 | RewardDistributor | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-391152 | `0x14e3cb...d436ae` | ⚠️ Unaudited |
+| RewardDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x54870a...f77a3c`; blast `0xfebfe1...dba20d` | ⚠️ Unaudited |
+| ThreePoAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe82ae4...06f28c` | ⚠️ Unaudited |
 | UmaCompatibleCtfAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391154 | `0x242e1b...22613d` | ⚠️ Unaudited |
 | UmaCompatibleCtfAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391155 | `0x26b366...df8172` | ⚠️ Unaudited |
+| UmaCompatibleCtfAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 4 deployments: bsc `0x2c8635...6a0388`; bsc `0x7c7818...54df64`; bsc `0xb51797...4641cf`; bsc `0xe338e6...e3eb27` | ⚠️ Unaudited |
 | UmaCompatibleCtfAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391166 | `0x947cc0...53d7b4` | ⚠️ Unaudited |
 | UmaCompatibleCtfAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-391177 | `0xf61198...17902f` | ⚠️ Unaudited |
 | Vault | core_logic | project_anchor | own_supporting | 0 | bsc | unit-391151 | `0x09f683...7410c5` | ⚠️ Unaudited |
+| Vault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xfcba72...c8de7a` | ⚠️ Unaudited |
 | WrappedCollateral | unknown | project_anchor | own_supporting | 0 | bsc | unit-391159 | `0x66239b...cd39e7` | ⚠️ Unaudited |
 | ZeroDevWithdrawalHelper | operational_periphery | project_anchor | own_supporting | 0 | bsc | unit-391176 | `0xf4aa30...a77b00` | ⚠️ Unaudited |
+| ZeroDevWithdrawalHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | 3 deployments: blast `0x834b7e...8600de`; blast `0xc45343...bde7fd`; blast `0xd25366...e71d37` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -243,11 +256,27 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (15)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x011297...221181` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x036b7f...b5dc10` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x23364c...7219ff` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3f253a...cae74c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x479e6e...aff3a5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x502c53...e9634c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x6bc913...53820a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x84f569...0f924e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xa757f5...71b971` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb1ac4e...3e84aa` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xc3fe54...89a97d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd018f6...3cfff5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd06d15...ff3e85` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xeea370...6c2236` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf543b7...9060f3` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -387,10 +416,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 29 |
+| native | 42 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 15 |
 
 ## Scope Matching Notes
 

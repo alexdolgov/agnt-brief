@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: zkSwap Finance (`zkswap-finance`)
 - Website: [https://zkswap.finance](https://zkswap.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: sonic, zksync-era
-- Contract surface: 72 unique implementations (72 raw deployments)
+- Contract surface: 114 unique implementations (136 raw deployments)
 - Coverage basis: 10/17 confirmed own live verified implementations (58.8%); conservative 58.8% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $843,085.00
 - On-chain TVL (included contracts): n/a
@@ -122,7 +122,7 @@ The pinned logic-topography run contains 18 contract row(s) across sonic, zksync
 
 ## Contract Surface Quality
 
-- Indexed contracts: 18; live-surface contracts included: 18 (17 live, 1 unknown).
+- Logic-topography rows: 18; live-surface rows included: 18 (18 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 72/72 live.
 - Detected codebases: none
@@ -133,15 +133,15 @@ The pinned logic-topography run contains 18 contract row(s) across sonic, zksync
 - Coverage of address-book-owned deployed-live implementations: 10/17 (58.8%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 72 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 42 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Deployed-live implementations: 72 of 72 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 10/17
-- Verified + Unaudited implementations: 7
+- Confirmed-live implementations: 72 of 114 unique; 42 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 10/40
+- Verified + Unaudited implementations: 30
 - Verified by bytecode match: 0
-- Unverified implementations: 55
-- Unique implementations: 72
-- Raw deployments: 72
+- Unverified implementations: 74
+- Unique implementations: 114
+- Raw deployments: 136
 - Audits discovered: 22 (22 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 13
 - ASD (verified + unaudited TVL): n/a
@@ -154,12 +154,12 @@ The pinned logic-topography run contains 18 contract row(s) across sonic, zksync
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Solidproof | Tier 2 | 6 | 35.3% | 2024-03 |
-| MythX | Tier 2 | 4 | 23.5% | 2023-12 |
-| unknown | Tier 2 | 3 | 17.6% | 2024-01 |
-| CertiK | Tier 2 | 2 | 11.8% | 2023-12 |
-| Bailsec | Tier 2 | 1 | 5.9% | 2024-04 |
-| VitalBlock | Tier 2 | 1 | 5.9% | 2023-06 |
+| Solidproof | Tier 2 | 6 | 15.0% | 2024-03 |
+| MythX | Tier 2 | 4 | 10.0% | 2023-12 |
+| unknown | Tier 2 | 3 | 7.5% | 2024-01 |
+| CertiK | Tier 2 | 2 | 5.0% | 2023-12 |
+| Bailsec | Tier 2 | 1 | 2.5% | 2024-04 |
+| VitalBlock | Tier 2 | 1 | 2.5% | 2023-06 |
 
 ## Contract Surface
 
@@ -167,7 +167,7 @@ The pinned logic-topography run contains 18 contract row(s) across sonic, zksync
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| NonfungibleTokenPositionDescriptor | unknown | project_anchor | own_supporting | 1 | sonic | unit-263965 | `0xf5fb98...2ae0d5` | ✅ Audited |
+| NonfungibleTokenPositionDescriptor | unknown | project_anchor | own_supporting | 1 | sonic | unit-263965 | 2 deployments: sonic `0x49685f...835af5`; sonic `0xf5fb98...2ae0d5` | ✅ Audited |
 | QuoterV2 | unknown | project_anchor | own_supporting | 0 | sonic | unit-263898 | `0x3a59bf...ca1caa` | ✅ Audited |
 | TickLens | unknown | project_anchor | own_supporting | 0 | sonic | unit-263902 | `0x783438...7ca5ac` | ✅ Audited |
 | UniversalRouter | adapter | project_anchor | own_supporting | 0 | sonic | unit-263904 | `0x957dbe...8f18ec` | ✅ Audited |
@@ -178,17 +178,40 @@ The pinned logic-topography run contains 18 contract row(s) across sonic, zksync
 | ZFV3Factory | unknown | project_anchor | own_supporting | 0 | sonic | unit-263901 | `0x6d977f...8032a4` | ✅ Audited |
 | ZFV3PoolDeployer | unknown | project_anchor | own_supporting | 0 | sonic | unit-263895 | `0x0ff168...89eea2` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (30)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | AggregatorSmart | unknown | project_anchor | own_supporting | 0 | sonic | unit-263894 | `0x0edd6e...f6f5b3` | ⚠️ Unaudited |
+| AggregatorSmart | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x55dfa5...679d2a`; sonic `0xbd1c10...59ca60` | ⚠️ Unaudited |
 | AggregatorSmart | unknown | project_anchor | own_supporting | 0 | sonic | unit-263905 | `0xc9c497...c85849` | ⚠️ Unaudited |
+| AggregatorSmartV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x7f2038...2aac65` | ⚠️ Unaudited |
+| BulkSender | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xaf02a2...d5533e` | ⚠️ Unaudited |
 | GnosisSafeProxy | governance | project_anchor | own_supporting | 0 | sonic | unit-263900 | `0x4780ea...7c2262` | ⚠️ Unaudited |
+| GnosisSafeProxy | governance | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x825e62...ff1e13` | ⚠️ Unaudited |
+| LongOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0xbdd352...f6146f`; sonic `0xfe5714...1ecd49` | ⚠️ Unaudited |
+| MixedRouteQuoterV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x8708a6...e02962` | ⚠️ Unaudited |
+| Multicall3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x3be99d...a84917` | ⚠️ Unaudited |
+| NFTDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xcf7ff4...d5b585` | ⚠️ Unaudited |
 | NonfungiblePositionManager | governance | project_anchor | own_supporting | 0 | sonic | unit-263897 | `0x2e1164...0094f5` | ⚠️ Unaudited |
 | NonfungiblePositionManager | governance | project_anchor | own_supporting | 0 | zksync-era | unit-263959 | `0xe8a9c6...683860` | ⚠️ Unaudited |
+| NonfungibleTokenPositionDescriptor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xf82343...687b6b` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x486d7c...def71b` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x646a26...45b377` | ⚠️ Unaudited |
+| UnsupportedProtocol | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x0c5310...70db17` | ⚠️ Unaudited |
+| ZFGovernanceStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 4 deployments: sonic `0x0cc7d6...a171d5`; sonic `0x476151...1a9d3f`; sonic `0x54de11...0e106d`; sonic `0xb255ec...e1e876` | ⚠️ Unaudited |
+| ZFOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 9 deployments: sonic `0x3ebf33...00997f`; sonic `0x513ac0...ffddd2`; sonic `0x606606...108e1c`; sonic `0x61e09b...2e84ec`; sonic `0x7a2f54...0f42d7`; sonic `0xaeff85...c78838`; sonic `0xb62690...197cbf`; sonic `0xd25b7a...ac3891`; sonic `0xf8850e...ccf360` | ⚠️ Unaudited |
+| ZFRewardDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 5 deployments: sonic `0x66349d...2344fe`; sonic `0x807fa0...3e795f`; sonic `0xb2d779...b74de5`; sonic `0xda85e0...d23e8d`; sonic `0xfcc8d3...5d3164` | ⚠️ Unaudited |
 | ZFRewardDistributor | operational_periphery | project_anchor | own_supporting | 0 | sonic | unit-263903 | `0x78caac...dbc5d5` | ⚠️ Unaudited |
 | ZFRouter | adapter | project_anchor | own_supporting | 0 | sonic | unit-263907 | `0xcd219a...5d1822` | ⚠️ Unaudited |
+| ZFRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xf5cf2b...392285` | ⚠️ Unaudited |
+| ZFStableSwapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x447fd2...b90c50` | ⚠️ Unaudited |
+| ZFStableSwapLPFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x5271d6...a1d04c` | ⚠️ Unaudited |
+| ZFStableSwapThreePoolDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xc19a30...b06e37` | ⚠️ Unaudited |
+| ZFStableSwapThreePoolInfo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x734711...3b94aa` | ⚠️ Unaudited |
+| ZFStableSwapTwoPoolDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xf43fc4...c28189` | ⚠️ Unaudited |
+| ZFStableSwapTwoPoolInfo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x9829e4...0a7f6c` | ⚠️ Unaudited |
+| ZFSwap2EarnRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 5 deployments: sonic `0x3e5239...0cb362`; sonic `0x43589b...b15843`; sonic `0x4784a5...3a96b7`; sonic `0x750591...93155b`; sonic `0xc98628...1e453c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -202,18 +225,27 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (55)
+### ❓ Unverified (74)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1ad6bc...35168a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-263896 | `0x1e9ebc...fc6e88` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x273fff...eb88cc` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-263899 | `0x3ec487...0cf971` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x45728a...4f877a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x5ebdc3...a45644` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x8328ea...ef1434` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xced359...ceda27` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xead549...c83bb2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0x010012...39e069` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263910 | `0x056f19...dc0c8e` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263911 | `0x0d64c4...2238c0` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263912 | `0x1191bf...7a0df6` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263913 | `0x12c944...9adf4f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0x13bd7a...854042` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263914 | `0x142096...98c08c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263915 | `0x15309a...5b1dd7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263917 | `0x1a5fb6...a4a0c9` | ❓ Unverified |
@@ -223,21 +255,27 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263921 | `0x3b3393...da415b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263922 | `0x40ad8e...52ed65` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263923 | `0x4305cf...97917a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0x470034...c473d5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0x4780ea...7c2262` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263924 | `0x484a72...7990a4` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263925 | `0x4ca2ac...5f1987` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263926 | `0x525990...e4983d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0x571407...c5ddab` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263927 | `0x57d28a...ad4cfb` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263928 | `0x58d8dd...3f3c11` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0x5ae21a...1f6eb7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263929 | `0x5ca90e...a72c20` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263930 | `0x61278a...48ea9b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263931 | `0x63d8e7...8f19fc` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263932 | `0x652138...736a75` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263933 | `0x65300d...586a0f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263934 | `0x65ea05...63987b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0x6f4fc7...e4c215` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263935 | `0x743944...745228` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263936 | `0x79354d...f1eaf4` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263937 | `0x7ab617...b6bbc7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263938 | `0x801903...0d8c75` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0x825e62...ff1e13` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263939 | `0x82e07a...d6bf11` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263940 | `0x876cfc...5aabca` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263941 | `0x8770ad...3c17be` | ❓ Unverified |
@@ -250,7 +288,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263948 | `0xaab6e2...be50d3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263949 | `0xabca8c...21762f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263950 | `0xae3af5...a34783` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0xb392e1...097f50` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0xb71dca...f961e6` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263951 | `0xb76f08...f66b0b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0xc008dc...9c0269` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263952 | `0xc824f2...103907` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263953 | `0xc93397...1d5a59` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263954 | `0xc9e2c1...756900` | ❓ Unverified |
@@ -260,6 +301,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263958 | `0xdbe9b7...e5ba52` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263960 | `0xf1802d...e6a821` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263961 | `0xf560df...01e53e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0xfe6b01...6a41b5` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263962 | `0xff16ea...f5cf22` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263963 | `0xffd6f2...2d38f7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-263964 | `0xffdef4...3f069f` | ❓ Unverified |
@@ -398,10 +440,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 16 |
+| native | 35 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 55 |
+| standard_library | 5 |
+| needs_review | 74 |
 
 ## Scope Matching Notes
 

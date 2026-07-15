@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Butter Network (`butter-network`)
 - Website: [https://www.butterswap.io/swap](https://www.butterswap.io/swap)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ailayer, arbitrum, avalanche, base, blast, bsc, ethereum, kaia, linea, mantle, merlin, optimism, polygon, scroll, unichain, x-layer, zksync-era
-- Contract surface: 61 unique implementations (61 raw deployments)
+- Contract surface: 71 unique implementations (74 raw deployments)
 - Coverage basis: 0/42 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,318,173.20
 - On-chain TVL (included contracts): n/a
@@ -113,7 +113,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Logic-topography rows: 0; live-surface rows included: 0 (0 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 58/64 live.
 - Detected codebases: none
@@ -124,15 +124,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: 0/42 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 58 own, 3 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 58 of 61 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/42
-- Verified + Unaudited implementations: 42
+- Outside the address book: 10 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 7
+- Confirmed-live implementations: 58 of 71 unique; 13 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/50
+- Verified + Unaudited implementations: 50
 - Verified by bytecode match: 0
-- Unverified implementations: 16
-- Unique implementations: 61
-- Raw deployments: 61
+- Unverified implementations: 21
+- Unique implementations: 71
+- Raw deployments: 74
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -151,10 +151,17 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - None
 
-### ⚠️ Verified + Unaudited (42)
+### ⚠️ Verified + Unaudited (50)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
+| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | polygon | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
+| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | mantle | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
+| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
+| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
+| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | linea | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
+| Bridge | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | blast | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
 | ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381823 | `0xee030e...655b86` | ⚠️ Unaudited |
 | ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | optimism | unit-381827 | `0xee030e...655b86` | ⚠️ Unaudited |
 | ButterRouterV3 | unknown | project_anchor | own_supporting | 0 | bsc | unit-381868 | `0xee030e...655b86` | ⚠️ Unaudited |
@@ -174,6 +181,7 @@ The activated project remains an explicit cohort member with an empty normalized
 | ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381855 | `0xee0319...1bd69a` | ⚠️ Unaudited |
 | ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | avalanche | unit-381858 | `0xee0319...1bd69a` | ⚠️ Unaudited |
 | ButterRouterV31 | unknown | project_anchor | own_supporting | 0 | linea | unit-381875 | `0xee0319...1bd69a` | ⚠️ Unaudited |
+| OmniServiceProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | `0x000031...8f6a56` | ⚠️ Unaudited |
 | Receiver | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381825 | `0xff031c...9900a5` | ⚠️ Unaudited |
 | Receiver | unknown | project_anchor | own_supporting | 0 | optimism | unit-381829 | `0xff031c...9900a5` | ⚠️ Unaudited |
 | Receiver | unknown | project_anchor | own_supporting | 0 | bsc | unit-381870 | `0xff031c...9900a5` | ⚠️ Unaudited |
@@ -210,7 +218,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (19)
+### ❓ Unverified (21)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -224,8 +232,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | zksync-era | unit-381846 | `0x73e0d6...10492e` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-381847 | `0xac74fe...f15861` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-381848 | `0xbd8df7...f112a9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | zksync-era | n/a | `0xdef84c...02fa3d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ailayer | unit-381841 | `0xaa3010...944a8f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ailayer | unit-381842 | `0xee030e...655b86` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | merlin | n/a | 4 deployments: merlin `0x000031...8f6a56`; merlin `0x41d903...fb0f71`; kaia `0x000031...8f6a56`; kaia `0xd077a4...3e4fdb` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | merlin | unit-381850 | `0xaa3010...944a8f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | merlin | unit-381851 | `0xee030e...655b86` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | merlin | unit-381852 | `0xff031c...9900a5` | ❓ Unverified |
@@ -285,10 +295,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 8 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 61 |
+| needs_review | 63 |
 
 ## Scope Matching Notes
 

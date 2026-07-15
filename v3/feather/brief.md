@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Feather (`feather`)
 - Website: [https://app.feather.zone/](https://app.feather.zone/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, base, ethereum, hyperliquid, plasma, sei, sepolia
-- Contract surface: 20 unique implementations (20 raw deployments)
+- Chains: arbitrum, base, celo, ethereum, hyperliquid, kaia, plasma, sei, sepolia
+- Contract surface: 24 unique implementations (29 raw deployments)
 - Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $16,939,129.86
 - On-chain TVL (included contracts): n/a
@@ -36,7 +36,7 @@ This brief describes the observed EVM deployment and audit surface for Feather. 
 
 ### Architecture
 
-The pinned logic-topography run contains 6 contract row(s) across arbitrum, base, bsc, cronos, ethereum, etherlink, hyperliquid, kaia, linea, plasma, sei, sepolia. Structural roles: 3 core, 3 supporting. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 6 contract row(s) across arbitrum, base, bsc, celo, cronos, ethereum, etherlink, hyperliquid, kaia, linea, plasma, sei, sepolia. Structural roles: 3 core, 3 supporting. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -50,7 +50,7 @@ The pinned logic-topography run contains 6 contract row(s) across arbitrum, base
 ## Contract Surface Quality
 
 - Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
-- Indexed contracts: 6; live/inactive and live-deployment-unit totals are withheld until liveness completes.
+- Logic-topography rows: 6; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -59,15 +59,15 @@ The pinned logic-topography run contains 6 contract row(s) across arbitrum, base
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - Address-book implementation classification: 0 own, 20 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (6 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 4 discovered implementations shown in the inventory but excluded from coverage (6 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
 - Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- All block-explorer-verified implementations audited (incl. non-live): 0/9
+- Verified + Unaudited implementations: 9
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 20
-- Raw deployments: 20
+- Unverified implementations: 15
+- Unique implementations: 24
+- Raw deployments: 29
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -86,16 +86,19 @@ The pinned logic-topography run contains 6 contract row(s) across arbitrum, base
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (9)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | AdaptiveCurveIrm | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-239850 | `0x6efa8e...ea56c4` | ⚠️ Unaudited |
 | Bundler3 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-239854 | `0xf94573...5761ad` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | 6 deployments: sei `0x015f10...03e41c`; sei `0x50715a...28bfe8`; sei `0x8e1812...0a7223`; sei `0x948fcc...2a4923`; sei `0x94e6a8...5eb79c`; sei `0xbd1836...963dc5` | ⚠️ Unaudited |
 | MetaMorphoV1_1Factory | registry | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-239851 | `0x8dea49...118291` | ⚠️ Unaudited |
 | Morpho | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-239852 | `0xc9cdac...a9094c` | ⚠️ Unaudited |
 | MorphoChainlinkOracleV2Factory | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-239849 | `0x4bd68c...f23f07` | ⚠️ Unaudited |
+| PreLiquidationFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | sei | n/a | `0x65ed61...f6d27b` | ⚠️ Unaudited |
 | PublicAllocator | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | sei | unit-239853 | `0xd87850...159d6b` | ⚠️ Unaudited |
+| SafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x81c76f...2f091f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -109,7 +112,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (14)
+### ❓ Unverified (15)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -118,6 +121,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x58d97b...69c2b2` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | n/a | `0x9994e3...330999` | ❓ Unverified |
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | hyperliquid | n/a | `0xeb476f...6f9af5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | kaia | n/a | `0x6ba8f7...5a133e` | ❓ Unverified |
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | n/a | `0xbaa5cc...2a0842` | ❓ Unverified |
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | plasma | n/a | `0x5476ae...525f7a` | ❓ Unverified |
 | UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | n/a | `0x40bd67...40df48` | ❓ Unverified |
@@ -151,10 +155,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
-| upstream | 3 |
-| standard_library | 0 |
-| needs_review | 14 |
+| native | 4 |
+| upstream | 4 |
+| standard_library | 1 |
+| needs_review | 15 |
 
 ## Scope Matching Notes
 

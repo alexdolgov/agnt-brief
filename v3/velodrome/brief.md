@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Velodrome (`velodrome`)
 - Website: [https://velodrome.finance](https://velodrome.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base, bob, celo, fraxtal, ink, lisk, metal-l2, mode, optimism, soneium, superseed, swellchain, unichain
-- Contract surface: 196 unique implementations (196 raw deployments)
+- Contract surface: 210 unique implementations (213 raw deployments)
 - Coverage basis: 6/81 confirmed own live verified implementations (7.4%); conservative 7.4% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $33,671,001.00
 - On-chain TVL (included contracts): n/a
@@ -274,7 +274,7 @@ Removals (removed from original):
 
 ## Contract Surface Quality
 
-- Indexed contracts: 82; live-surface contracts included: 82 (81 live, 1 unknown).
+- Logic-topography rows: 82; live-surface rows included: 82 (81 live, 1 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 195/197 live.
 - Detected codebases: none
@@ -285,15 +285,15 @@ Removals (removed from original):
 - Coverage of address-book-owned deployed-live implementations: 6/81 (7.4%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 195 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 1
-- Deployed-live implementations: 195 of 196 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 6/81
-- Verified + Unaudited implementations: 75
+- Outside the address book: 14 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 3
+- Confirmed-live implementations: 195 of 210 unique; 15 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 6/96
+- Verified + Unaudited implementations: 90
 - Verified by bytecode match: 0
 - Unverified implementations: 114
-- Unique implementations: 196
-- Raw deployments: 196
+- Unique implementations: 210
+- Raw deployments: 213
 - Audits discovered: 8 (8 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/velodromefinance/information))
@@ -307,8 +307,8 @@ Removals (removed from original):
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 6 | 7.4% | 2024-01 |
-| Sherlock | Tier 1 | 1 | 1.2% | 2024-10 |
+| Spearbit | Tier 1 | 6 | 6.3% | 2024-01 |
+| Sherlock | Tier 1 | 1 | 1.0% | 2024-10 |
 
 ## Contract Surface
 
@@ -323,11 +323,22 @@ Removals (removed from original):
 | Voter | unknown | project_anchor | own_supporting | 0 | optimism | unit-396417 | `0x41c914...5abf3c` | ✅ Audited |
 | VotingEscrow | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-396442 | `0xfaf8fd...06787d` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (76)
+### ⚠️ Verified + Unaudited (90)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| CLFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xcc0bdd...1cd12f` | ⚠️ Unaudited |
+| CustomFeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x8d9c67...9107a7` | ⚠️ Unaudited |
+| CustomSwapFeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xbcae2d...89572e` | ⚠️ Unaudited |
+| CustomUnstakedFeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x21fcc0...413b92`; celo `0xb8e41d...42d5c5` | ⚠️ Unaudited |
+| DynamicSwapFeeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xfffee3...cb99b2` | ⚠️ Unaudited |
 | GnosisSafeL2 | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | optimism | unit-396603 | `0x838352...ee2b3f` | ⚠️ Unaudited |
+| MixedRouteQuoterV1 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xff79ec...b44722` | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0x416b43...dc6f29` | ⚠️ Unaudited |
+| NonfungiblePositionManager | governance | non_address_book | non_address_book_inventory (excluded) | 1 | optimism | n/a | `0xbb5dfe...56adf4` | ⚠️ Unaudited |
+| QuoterV2 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x89d821...621466` | ⚠️ Unaudited |
+| SinkManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5aee5f...abcdae` | ⚠️ Unaudited |
+| SlipstreamSugar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | 2 deployments: celo `0x928bb6...3f2be5`; celo `0xee03e0...153590` | ⚠️ Unaudited |
 | Superchain emergencyCouncil | unknown | project_anchor | own_supporting | 0 | optimism | unit-396441 | `0xf7a15f...defeda` | ⚠️ Unaudited |
 | Superchain leafFeeModule | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396531 | `0xc60a68...b62e31` | ⚠️ Unaudited |
 | Superchain leafGaugeFactory | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-396524 | `0x42e403...38c445` | ⚠️ Unaudited |
@@ -391,6 +402,9 @@ Removals (removed from original):
 | Superchain rootTokenBridgeVault | unknown | project_anchor | own_supporting | 0 | optimism | unit-396419 | `0x479bec...22242b` | ⚠️ Unaudited |
 | Superchain rootVotingRewardsFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-396425 | `0x7dc9fd...f4fb2f` | ⚠️ Unaudited |
 | Superchain rootXVelo | unknown | project_anchor | own_supporting | 0 | optimism | unit-396426 | `0x7f9adf...a28a81` | ⚠️ Unaudited |
+| SwapRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0792a6...cc9676` | ⚠️ Unaudited |
+| UniversalRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x4bf3e3...1142fc`; optimism `0xf132bd...3eb817` | ⚠️ Unaudited |
+| UnsupportedProtocol | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0xefc371...d4518e` | ⚠️ Unaudited |
 | V2 ArtProxy | unknown | project_anchor | own_supporting | 0 | optimism | unit-396420 | `0x4a9ea0...1782dd` | ⚠️ Unaudited |
 | V2 FactoryRegistry | unknown | project_anchor | own_supporting | 0 | optimism | unit-396440 | `0xf4c67c...aa1d7b` | ⚠️ Unaudited |
 | V2 Forwarder | unknown | project_anchor | own_supporting | 0 | optimism | unit-396408 | `0x06824d...29ab74` | ⚠️ Unaudited |
@@ -658,7 +672,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 6 |
+| native | 20 |
 | upstream | 0 |
 | standard_library | 1 |
 | needs_review | 189 |

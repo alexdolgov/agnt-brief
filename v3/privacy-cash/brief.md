@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Privacy Cash (`privacy-cash`)
 - Website: [https://privacycash.org/](https://privacycash.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base, ethereum
-- Contract surface: 8 unique implementations (8 raw deployments)
+- Contract surface: 15 unique implementations (25 raw deployments)
 - Coverage basis: 0/4 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,273,358.11
 - On-chain TVL (included contracts): n/a
@@ -63,7 +63,7 @@ The pinned logic-topography run contains 8 contract row(s) across base, ethereum
 
 ## Contract Surface Quality
 
-- Indexed contracts: 8; live-surface contracts included: 8 (4 live, 4 unknown).
+- Logic-topography rows: 8; live-surface rows included: 8 (8 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 8/9 live.
 - Detected codebases: none
@@ -74,15 +74,15 @@ The pinned logic-topography run contains 8 contract row(s) across base, ethereum
 - Coverage of address-book-owned deployed-live implementations: 0/4 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 8 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 4
-- Deployed-live implementations: 8 of 8 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/4
-- Verified + Unaudited implementations: 4
+- Outside the address book: 7 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 5
+- Confirmed-live implementations: 8 of 15 unique; 7 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/6
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
-- Unverified implementations: 4
-- Unique implementations: 8
-- Raw deployments: 8
+- Unverified implementations: 9
+- Unique implementations: 15
+- Raw deployments: 25
 - Audits discovered: 10 (10 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -101,14 +101,16 @@ The pinned logic-topography run contains 8 contract row(s) across base, ethereum
 
 - None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ERCPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-251954 | `0xc88f4d...a7527f` | ⚠️ Unaudited |
-| ERCPool | unknown | project_anchor | own_supporting | 1 | base | unit-251956 | `0xe91dd4...5a905b` | ⚠️ Unaudited |
-| EtherPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-251955 | `0x77a10a...830dd0` | ⚠️ Unaudited |
-| EtherPool | unknown | project_anchor | own_supporting | 1 | base | unit-251957 | `0x7f6737...b081ec` | ⚠️ Unaudited |
+| ERCPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-251954 | 2 deployments: ethereum `0x803db1...583958`; ethereum `0xc88f4d...a7527f` | ⚠️ Unaudited |
+| ERCPool | unknown | project_anchor | own_supporting | 1 | base | unit-251956 | 2 deployments: base `0x6b5365...447c9a`; base `0xe91dd4...5a905b` | ⚠️ Unaudited |
+| EtherPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-251955 | 2 deployments: ethereum `0x77a10a...830dd0`; ethereum `0xec5266...f3b738` | ⚠️ Unaudited |
+| EtherPool | unknown | project_anchor | own_supporting | 1 | base | unit-251957 | 2 deployments: base `0x7f6737...b081ec`; base `0xa9cefe...99ecdd` | ⚠️ Unaudited |
+| EtherPool | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0xbcffce...982c98`; base `0xfee24c...c832a1` | ⚠️ Unaudited |
+| Verifier2 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 6 deployments: ethereum `0x9926a4...d56313`; ethereum `0xbcffce...982c98`; ethereum `0xfee24c...c832a1`; base `0x41187a...ff7c6f`; base `0x870755...6dabd0`; base `0xe24f4c...225b7c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -122,16 +124,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (4)
+### ❓ Unverified (9)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1d4fe6...d3106d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x22d850...391f77` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251949 | `0xa0b869...06eb48` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251950 | `0xdac17f...831ec7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x045596...88d2e3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-251951 | `0x44eb99...f0a3ce` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-251952 | `0x833589...a02913` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbb0c7f...c9013f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf48b36...24e9ac` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -223,8 +230,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xc88f4d...a7527f` | ERCPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0xe91dd4...5a905b` | ERCPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x803db1...583958` | ERCPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x6b5365...447c9a` | ERCPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x77a10a...830dd0` | EtherPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0x7f6737...b081ec` | EtherPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -232,10 +239,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 6 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 4 |
+| needs_review | 9 |
 
 ## Scope Matching Notes
 

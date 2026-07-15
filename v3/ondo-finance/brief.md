@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Ondo Finance (`ondo-finance`)
 - Website: [https://ondo.finance](https://ondo.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, bsc, ethereum, mantle, polygon, sei
 - Contract surface: 128 unique implementations (128 raw deployments)
@@ -84,7 +84,7 @@ The pinned logic-topography run contains 15 contract row(s) across arbitrum, bsc
 
 ## Contract Surface Quality
 
-- Indexed contracts: 15; live-surface contracts included: 15 (15 live, 0 unknown).
+- Logic-topography rows: 15; live-surface rows included: 15 (15 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 29/33 live.
 - Detected codebases: none
@@ -95,13 +95,13 @@ The pinned logic-topography run contains 15 contract row(s) across arbitrum, bsc
 - Coverage of address-book-owned deployed-live implementations: 6/15 (40.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 29 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 98 discovered implementations excluded (4 third-party/infra; 1 standard proxy/library)
+- Outside the address book: 98 discovered implementations shown in the inventory but excluded from coverage (4 third-party/infra; 1 standard proxy/library)
 - Proxy deployments represented within implementation groups: 10
-- Deployed-live implementations: 29 of 128 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 6/15
-- Verified + Unaudited implementations: 9
+- Confirmed-live implementations: 29 of 128 unique; 99 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 6/109
+- Verified + Unaudited implementations: 103
 - Verified by bytecode match: 0
-- Unverified implementations: 14
+- Unverified implementations: 19
 - Unique implementations: 128
 - Raw deployments: 128
 - Audits discovered: 31 (31 direct, 0 inherited from forked code)
@@ -117,8 +117,8 @@ The pinned logic-topography run contains 15 contract row(s) across arbitrum, bsc
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Code4rena | Tier 1 | 3 | 20.0% | 2024-03 |
-| Halborn | Tier 2 | 3 | 20.0% | 2025-02 |
+| Code4rena | Tier 1 | 3 | 2.8% | 2024-03 |
+| Halborn | Tier 2 | 3 | 2.8% | 2025-02 |
 
 ## Contract Surface
 

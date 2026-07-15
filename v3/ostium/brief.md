@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Ostium (`ostium`)
 - Website: [https://www.ostium.io/](https://www.ostium.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, arbitrum-sepolia
-- Contract surface: 32 unique implementations (32 raw deployments)
+- Contract surface: 48 unique implementations (58 raw deployments)
 - Coverage basis: 14/14 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $57,611,789.99
 - On-chain TVL (included contracts): n/a
@@ -65,7 +65,7 @@ The pinned logic-topography run contains 14 contract row(s) across arbitrum, arb
 
 ## Contract Surface Quality
 
-- Indexed contracts: 14; live-surface contracts included: 14 (14 live, 0 unknown).
+- Logic-topography rows: 14; live-surface rows included: 14 (14 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 14/33 live.
 - Detected codebases: none
@@ -76,15 +76,15 @@ The pinned logic-topography run contains 14 contract row(s) across arbitrum, arb
 - Coverage of address-book-owned deployed-live implementations: 14/14 (100.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 14 own, 18 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 9
-- Deployed-live implementations: 14 of 32 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 14/14
-- Verified + Unaudited implementations: 0
+- Outside the address book: 16 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 12
+- Confirmed-live implementations: 14 of 48 unique; 34 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 14/30
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 32
-- Raw deployments: 32
+- Unverified implementations: 18
+- Unique implementations: 48
+- Raw deployments: 58
 - Audits discovered: 7 (7 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 7
 - ASD (verified + unaudited TVL): n/a
@@ -97,8 +97,8 @@ The pinned logic-topography run contains 14 contract row(s) across arbitrum, arb
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Pashov Audit Group | Tier 2 | 14 | 100.0% | 2026-01 |
-| Zellic | Tier 2 | 13 | 92.9% | 2025-11 |
+| Pashov Audit Group | Tier 2 | 14 | 46.7% | 2026-01 |
+| Zellic | Tier 2 | 13 | 43.3% | 2025-11 |
 
 ## Contract Surface
 
@@ -121,9 +121,26 @@ The pinned logic-topography run contains 14 contract row(s) across arbitrum, arb
 | OstiumVerifier | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-390469 | `0xccf233...6c47ad` | ✅ Audited |
 | ProxyAdmin | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-390464 | `0x083f97...1f4025` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (16)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| OstiumOpenPnl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x2ab490...b72146`; arbitrum `0x6bf0c7...ea58eb` | ⚠️ Unaudited |
+| OstiumPairInfos | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x1da56c...27ae13`; arbitrum `0xf77957...9f99f8` | ⚠️ Unaudited |
+| OstiumPairsStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x54c1ce...a6d0c2`; arbitrum `0xb7cfba...09d248` | ⚠️ Unaudited |
+| OstiumPriceRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x5126c2...63d0ba`; arbitrum `0xab3333...4c4473` | ⚠️ Unaudited |
+| OstiumPriceRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x52453f...f161b4` | ⚠️ Unaudited |
+| OstiumPriceRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7151fc...ddb306` | ⚠️ Unaudited |
+| OstiumPriceUpKeep | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x8b26fe...53ad06`; arbitrum `0xba99c3...ad8a02` | ⚠️ Unaudited |
+| OstiumPrivatePriceUpKeep | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0xb7138b...a0c29c`; arbitrum `0xefa6a2...5e81dc` | ⚠️ Unaudited |
+| OstiumPrivatePriceUpKeep | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xb71ec9...7a3d36` | ⚠️ Unaudited |
+| OstiumTimelockOwner | governance | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xeb85dc...23bbf7` | ⚠️ Unaudited |
+| OstiumTradesUpKeep | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x98e569...479a83` | ⚠️ Unaudited |
+| OstiumTrading | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0x3aa5cc...259652`; arbitrum `0x4298cc...89cc0b`; arbitrum `0xe6bc4e...5f4217` | ⚠️ Unaudited |
+| OstiumTradingCallbacks | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x4ca659...8ef37e`; arbitrum `0xe75d8a...65f30d` | ⚠️ Unaudited |
+| OstiumTradingStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x496a34...e43f2c`; arbitrum `0xf2e345...ff87ad` | ⚠️ Unaudited |
+| OstiumVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x51221d...238208` | ⚠️ Unaudited |
+| TradingCallbacksLib | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x10b454...2b6066` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -326,7 +343,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 13 |
+| native | 29 |
 | upstream | 0 |
 | standard_library | 1 |
 | needs_review | 18 |

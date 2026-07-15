@@ -9,16 +9,16 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Balancer (`balancer`)
 - Website: [https://balancer.fi](https://balancer.fi)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, avalanche, base, ethereum, fraxtal, gnosis, optimism, polygon, polygon-zkevm
+- Chains: arbitrum, avalanche, base, ethereum, fraxtal, gnosis, mode, optimism, plasma, polygon, polygon-zkevm
 - Contract surface: 259 unique implementations (260 raw deployments)
 - Coverage basis: 17/61 confirmed own live verified implementations (27.9%); conservative 27.9% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $176,902,882.00
@@ -274,7 +274,7 @@ Removals (removed from original):
 
 ## Contract Surface Quality
 
-- Indexed contracts: 61; live-surface contracts included: 61 (61 live, 0 unknown).
+- Logic-topography rows: 61; live-surface rows included: 61 (61 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 145/145 live.
 - Detected codebases: none
@@ -285,13 +285,13 @@ Removals (removed from original):
 - Coverage of address-book-owned deployed-live implementations: 17/61 (27.9%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 145 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 114 discovered implementations excluded (0 third-party/infra; 2 standard proxy/library)
+- Outside the address book: 114 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 2 standard proxy/library)
 - Proxy deployments represented within implementation groups: 7
-- Deployed-live implementations: 145 of 259 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 17/61
-- Verified + Unaudited implementations: 44
+- Confirmed-live implementations: 145 of 259 unique; 114 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 17/151
+- Verified + Unaudited implementations: 134
 - Verified by bytecode match: 0
-- Unverified implementations: 84
+- Unverified implementations: 108
 - Unique implementations: 259
 - Raw deployments: 260
 - Audits discovered: 32 (32 direct, 0 inherited from forked code)
@@ -307,11 +307,11 @@ Removals (removed from original):
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Certora | Tier 1 | 15 | 24.6% | 2026-01 |
-| Trail of Bits | Tier 1 | 7 | 11.5% | 2024-12 |
-| Spearbit | Tier 1 | 5 | 8.2% | 2024-12 |
-| OpenZeppelin | Tier 1 | 2 | 3.3% | 2021-10 |
-| ABDK | Tier 2 | 1 | 1.6% | 2022-05 |
+| Certora | Tier 1 | 15 | 9.9% | 2026-01 |
+| Trail of Bits | Tier 1 | 7 | 4.6% | 2024-12 |
+| Spearbit | Tier 1 | 5 | 3.3% | 2024-12 |
+| OpenZeppelin | Tier 1 | 2 | 1.3% | 2021-10 |
+| ABDK | Tier 2 | 1 | 0.7% | 2022-05 |
 
 ## Contract Surface
 

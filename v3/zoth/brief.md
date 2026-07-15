@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Zoth (`zoth`)
 - Website: [https://zoth.io](https://zoth.io)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: avalanche, ethereum, metis
-- Contract surface: 28 unique implementations (28 raw deployments)
+- Chains: avalanche, base, ethereum, manta-pacific, metis
+- Contract surface: 47 unique implementations (69 raw deployments)
 - Coverage basis: 1/8 confirmed own live verified implementations (12.5%); conservative 12.5% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $2,197,730.00
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for Zoth. It 
 
 ### Architecture
 
-The pinned logic-topography run contains 18 contract row(s) across avalanche, ethereum, metis. Structural roles: 11 unclassified, 4 infra, 3 core. 7 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 18 contract row(s) across avalanche, base, ethereum, manta-pacific, metis. Structural roles: 11 unclassified, 4 infra, 3 core. 7 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 18 contract row(s) across avalanche, et
 
 ## Fork Analysis
 
-0 of 24 contracts are derived from known codebases. 24 contracts have no detected origin.
+0 of 30 contracts are derived from known codebases. 30 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -69,6 +69,7 @@ The pinned logic-topography run contains 18 contract row(s) across avalanche, et
 - UnnamedContract (`0xe81250...d61a22`, chain 1)
 - UnnamedContract (`0xfed3d6...35864b`, chain 1)
 - UnnamedContract (`0x2d3d1a...e27a77`, chain 1088)
+- AccessManager (`0xb02757...b7ab18`, chain 1)
 - ERC1967Proxyy (`0x061a58...011d95`, chain 1)
 - ERC1967Proxyy (`0x255f6b...0d25a6`, chain 1)
 - ERC1967Proxyy (`0x400b18...454803`, chain 1)
@@ -76,10 +77,15 @@ The pinned logic-topography run contains 18 contract row(s) across avalanche, et
 - ERC1967Proxyy (`0x675d73...902a18`, chain 1)
 - ERC1967Proxyy (`0x70072c...31d36d`, chain 1)
 - ERC1967Proxyy (`0xc59f3b...5f34ec`, chain 1)
+- Registry (`0xc3274b...464309`, chain 1)
+- USYCVault (`0x598fed...c393b2`, chain 1)
+- VaultRegistry (`0x2dfc03...9dbe1c`, chain 1)
+- WithdrawalSystem (`0xe1ad81...69c0fb`, chain 1)
+- ZeUSD_CDP (`0x1ba928...4507b0`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 18; live-surface contracts included: 18 (8 live, 10 unknown).
+- Logic-topography rows: 18; live-surface rows included: 18 (16 live, 2 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 25/26 live.
 - Detected codebases: none
@@ -90,15 +96,15 @@ The pinned logic-topography run contains 18 contract row(s) across avalanche, et
 - Coverage of address-book-owned deployed-live implementations: 1/8 (12.5%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 25 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 2 discovered implementations excluded (1 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 10
-- Deployed-live implementations: 25 of 28 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/8
-- Verified + Unaudited implementations: 7
+- Outside the address book: 21 discovered implementations shown in the inventory but excluded from coverage (1 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 17
+- Confirmed-live implementations: 25 of 47 unique; 22 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/25
+- Verified + Unaudited implementations: 24
 - Verified by bytecode match: 0
-- Unverified implementations: 17
-- Unique implementations: 28
-- Raw deployments: 28
+- Unverified implementations: 22
+- Unique implementations: 47
+- Raw deployments: 69
 - Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -111,7 +117,7 @@ The pinned logic-topography run contains 18 contract row(s) across avalanche, et
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| SolidityScan | Tier 2 | 1 | 12.5% | 2025-01 |
+| SolidityScan | Tier 2 | 1 | 4.0% | 2025-01 |
 
 ## Contract Surface
 
@@ -119,20 +125,36 @@ The pinned logic-topography run contains 18 contract row(s) across avalanche, et
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| ZeUSD | unknown | project_anchor | own_supporting | 1 | ethereum | unit-264005 | `0xb16eb1...389809` | ✅ Audited |
+| ZeUSD | unknown | project_anchor | own_supporting | 1 | ethereum | unit-264005 | 2 deployments: ethereum `0xb16eb1...389809`; ethereum `0xf2552a...b8377d` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (8)
+### ⚠️ Verified + Unaudited (24)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| AccessManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-264002 | `0xc59f3b...5f34ec` | ⚠️ Unaudited |
-| PriceOracle | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-263997 | `0xdd5f64...15c17f` | ⚠️ Unaudited |
-| Registry | unknown | project_anchor | own_supporting | 1 | ethereum | unit-264003 | `0x675d73...902a18` | ⚠️ Unaudited |
-| USYCVault | unknown | project_anchor | own_supporting | 1 | ethereum | unit-264000 | `0x255f6b...0d25a6` | ⚠️ Unaudited |
-| VaultRegistry | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263999 | `0x70072c...31d36d` | ⚠️ Unaudited |
-| WithdrawalSystem | unknown | project_anchor | own_supporting | 1 | ethereum | unit-264004 | `0x4fb32d...4008b8` | ⚠️ Unaudited |
-| ZeUSD_CDP | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263998 | `0x400b18...454803` | ⚠️ Unaudited |
-| ZeUSDRouterV2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-264001 | `0x061a58...011d95` | ⚠️ Unaudited |
+| AccessManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x062b76...99c672`; ethereum `0x600b26...420430`; ethereum `0x7e43e3...5c8d58`; ethereum `0x80099b...43ee02`; ethereum `0xc1ce24...a2be5f` | ⚠️ Unaudited |
+| AccessManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x19af4a...5fbbd6`; ethereum `0xfafede...5d8a6f` | ⚠️ Unaudited |
+| AccessManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x4daffd...3ebedc`; ethereum `0xc14814...37b934` | ⚠️ Unaudited |
+| AccessManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x63f477...5f84e5`; ethereum `0xd48d7a...5a9951` | ⚠️ Unaudited |
+| AccessManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-264002 | 2 deployments: ethereum `0xb02757...b7ab18`; ethereum `0xc59f3b...5f34ec` | ⚠️ Unaudited |
+| FunctionsAccessControl | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x58722c...859cb7` | ⚠️ Unaudited |
+| PriceOracle | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-263997 | 2 deployments: ethereum `0x0c6c7e...e5bbb4`; ethereum `0xdd5f64...15c17f` | ⚠️ Unaudited |
+| PriceOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2756bf...6715eb` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5a9916...b79b84` | ⚠️ Unaudited |
+| RedemptionVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x87e86d...e9b403`; base `0xe64403...454734` | ⚠️ Unaudited |
+| RedemptionVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbaa2de...81755e` | ⚠️ Unaudited |
+| Registry | unknown | project_anchor | own_supporting | 1 | ethereum | unit-264003 | 2 deployments: ethereum `0x675d73...902a18`; ethereum `0xc3274b...464309` | ⚠️ Unaudited |
+| UpgradeTimelock | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xff0820...fd6856` | ⚠️ Unaudited |
+| USYCVault | unknown | project_anchor | own_supporting | 1 | ethereum | unit-264000 | 2 deployments: ethereum `0x255f6b...0d25a6`; ethereum `0x598fed...c393b2` | ⚠️ Unaudited |
+| VaultRegistry | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263999 | 2 deployments: ethereum `0x2dfc03...9dbe1c`; ethereum `0x70072c...31d36d` | ⚠️ Unaudited |
+| WithdrawalSystem | unknown | project_anchor | own_supporting | 1 | ethereum | unit-264004 | 2 deployments: ethereum `0x4fb32d...4008b8`; ethereum `0xe1ad81...69c0fb` | ⚠️ Unaudited |
+| ZeUSD_CDP | unknown | project_anchor | own_supporting | 1 | ethereum | unit-263998 | 2 deployments: ethereum `0x1ba928...4507b0`; ethereum `0x400b18...454803` | ⚠️ Unaudited |
+| ZeUSD_OFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | n/a | `0x7dc974...8ea761` | ⚠️ Unaudited |
+| ZeUSDRouterV2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-264001 | 2 deployments: ethereum `0x061a58...011d95`; ethereum `0xac6e62...505bd8` | ⚠️ Unaudited |
+| ZeUSDRouterV2 | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x8154db...498551`; ethereum `0xf1fd73...681f5c` | ⚠️ Unaudited |
+| zOPAL | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x2e9705...557f24`; base `0x79c89e...68bccb` | ⚠️ Unaudited |
+| zOPAL | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x83ca3d...1203e5`; base `0xe60320...52a1d8` | ⚠️ Unaudited |
+| zOPALDepositVault | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x06ff0b...79a751`; base `0x6578fe...ffe850` | ⚠️ Unaudited |
+| ZothAccessControl | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | 2 deployments: base `0x11e5c2...a9cbb1`; base `0x532587...fcfa14` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -146,7 +168,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (19)
+### ❓ Unverified (22)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -171,6 +193,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263994 | `0xe81250...d61a22` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263995 | `0xfed3d6...35864b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | metis | unit-263996 | `0x2d3d1a...e27a77` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x15925a...65683e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x973bd2...7b2f04` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb9dd43...a314c6` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -311,22 +336,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | `0xc59f3b...5f34ec` | AccessManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb02757...b7ab18` | AccessManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x675d73...902a18` | Registry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x255f6b...0d25a6` | USYCVault | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x70072c...31d36d` | VaultRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2dfc03...9dbe1c` | VaultRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x4fb32d...4008b8` | WithdrawalSystem | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0x400b18...454803` | ZeUSD_CDP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1ba928...4507b0` | ZeUSD_CDP | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x061a58...011d95` | ZeUSDRouterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 9 |
+| native | 24 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 19 |
+| standard_library | 1 |
+| needs_review | 22 |
 
 ## Scope Matching Notes
 

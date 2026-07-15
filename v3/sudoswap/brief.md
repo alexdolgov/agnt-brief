@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Sudoswap (`sudoswap`)
 - Website: [https://sudoswap.xyz](https://sudoswap.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, base, berachain, ethereum, goerli
 - Contract surface: 97 unique implementations (97 raw deployments)
@@ -76,7 +76,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 8; live-surface contracts included: 8 (8 live, 0 unknown).
+- Logic-topography rows: 8; live-surface rows included: 8 (8 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 15/27 live.
 - Detected codebases: none
@@ -87,13 +87,13 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 8/8 (100.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 15 own, 12 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 70 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 70 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 1
-- Deployed-live implementations: 15 of 97 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 8/8
-- Verified + Unaudited implementations: 0
+- Confirmed-live implementations: 15 of 97 unique; 82 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 8/66
+- Verified + Unaudited implementations: 58
 - Verified by bytecode match: 0
-- Unverified implementations: 7
+- Unverified implementations: 31
 - Unique implementations: 97
 - Raw deployments: 97
 - Audits discovered: 5 (5 direct, 0 inherited from forked code)
@@ -108,10 +108,10 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Cyfrin | Tier 1 | 8 | 100.0% | 2023-06 |
-| Spearbit | Tier 1 | 7 | 87.5% | 2023-04 |
-| ABDK | Tier 2 | 3 | 37.5% | 2022-04 |
-| Narya | Tier 2 | 1 | 12.5% | 2023-02 |
+| Cyfrin | Tier 1 | 8 | 12.1% | 2023-06 |
+| Spearbit | Tier 1 | 7 | 10.6% | 2023-04 |
+| ABDK | Tier 2 | 3 | 4.5% | 2022-04 |
+| Narya | Tier 2 | 1 | 1.5% | 2023-02 |
 
 ## Contract Surface
 

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Synthetix (`synthetix`)
 - Website: [https://synthetix.io](https://synthetix.io)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, arbitrum-sepolia, base, base-sepolia, ethereum, optimism, sepolia
-- Contract surface: 176 unique implementations (176 raw deployments)
+- Contract surface: 275 unique implementations (459 raw deployments)
 - Coverage basis: 0/15 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,304,903.00
 - On-chain TVL (included contracts): n/a
@@ -144,9 +144,9 @@ The pinned logic-topography run contains 16 contract row(s) across arbitrum, arb
 
 ## Contract Surface Quality
 
-- Indexed contracts: 16; live-surface contracts included: 16 (15 live, 1 unknown).
+- Logic-topography rows: 16; live-surface rows included: 16 (15 live, 1 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
-- Deployment units: 90/176 live.
+- Deployment units: 89/176 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
@@ -155,15 +155,15 @@ The pinned logic-topography run contains 16 contract row(s) across arbitrum, arb
 - Coverage of address-book-owned deployed-live implementations: 0/15 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 90 own, 86 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 9
-- Deployed-live implementations: 90 of 176 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/15
-- Verified + Unaudited implementations: 15
+- Outside the address book: 99 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 3 standard proxy/library)
+- Proxy deployments represented within implementation groups: 13
+- Confirmed-live implementations: 90 of 275 unique; 185 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/85
+- Verified + Unaudited implementations: 85
 - Verified by bytecode match: 0
-- Unverified implementations: 75
-- Unique implementations: 176
-- Raw deployments: 176
+- Unverified implementations: 190
+- Unique implementations: 275
+- Raw deployments: 459
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -182,25 +182,95 @@ The pinned logic-topography run contains 16 contract row(s) across arbitrum, arb
 
 - None
 
-### ⚠️ Verified + Unaudited (15)
+### ⚠️ Verified + Unaudited (85)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AccountModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 8 deployments: optimism `0x12a948...ec89e9`; optimism `0x162847...f4712b`; optimism `0x3b078d...872649`; optimism `0x435358...a003ec`; optimism `0x786e8e...a78923`; optimism `0xd007f8...85ce2d`; base `0x35606a...c69a8d`; base `0xd5fccd...186869` | ⚠️ Unaudited |
+| AccountRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x52899a...0f6665`; base `0x7e06f2...a3ac67`; base `0x7f2227...dc7d3e` | ⚠️ Unaudited |
+| AccountTokenModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x9977bd...cb9743`; base `0xd10cd9...cfecdd`; base `0xf28e37...bc11a1` | ⚠️ Unaudited |
+| AssociateDebtModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 12 deployments: optimism `0x098be3...c97a87`; optimism `0x12e3f8...dc9332`; optimism `0x1588fc...0a36b2`; optimism `0x1a122d...87a0f4`; optimism `0x243670...7da400`; optimism `0x7782a4...93ca30`; optimism `0xc09a31...c21b9b`; optimism `0xd57521...02d025`; optimism `0xe48954...523135`; optimism `0xef35b9...dde7cb`; base `0x2f9158...f231aa`; base `0x3091ac...0c8506` | ⚠️ Unaudited |
+| AssociatedSystemsModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x0daea0...8a359c`; base `0xdae65a...917515` | ⚠️ Unaudited |
+| AsyncOrderCancelModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x0b08d5...6b11ee`; base `0xd7c1ea...d96b34`; base `0xfb1037...75e86a` | ⚠️ Unaudited |
+| AsyncOrderConfigurationModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x72054f...e1b940`; base `0x86770a...b162a4` | ⚠️ Unaudited |
+| AsyncOrderModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: base `0x171633...58374d`; base `0x4636c5...a6a10e`; base `0x740444...1fe299`; base `0xad3549...56ba77`; base `0xdb497a...069eec` | ⚠️ Unaudited |
+| AsyncOrderSettlementModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x98d601...40de1c`; base `0xf32688...538d74` | ⚠️ Unaudited |
+| AsyncOrderSettlementPythModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x030c3c...350242`; base `0x66afcc...fa920e`; base `0xb1204d...3598fa` | ⚠️ Unaudited |
+| AtomicOrderModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x4e8f55...bffeb5`; base `0x6d9a85...dde85e` | ⚠️ Unaudited |
+| CcipReceiverModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x46f438...5c6e7a`; base `0x978d4b...6604c5` | ⚠️ Unaudited |
+| CollateralConfigurationModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 4 deployments: optimism `0x5d94ee...8bc647`; optimism `0x7c67fe...a4b08b`; base `0xb16a8b...d0c1a3`; base `0xfc10ce...643a41` | ⚠️ Unaudited |
+| CollateralModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 13 deployments: optimism `0x12346f...097f8d`; optimism `0x3caa81...c18e36`; optimism `0x5c4909...8e064e`; optimism `0x5e528c...4e9381`; optimism `0x8e4461...f11ec5`; optimism `0x917271...3df1a3`; optimism `0x9476e8...ad9d9e`; optimism `0xbdef7a...421b64`; optimism `0xcbcdab...944ea6`; optimism `0xeb30f4...626d26`; optimism `0xef738d...9a81f9`; base `0x7ea002...e1ca5d`; base `0xe082bd...ebecb0` | ⚠️ Unaudited |
+| CoreModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x7bc5ec...c8414b`; base `0xf12b26...b59202` | ⚠️ Unaudited |
 | CoreRouter | adapter | project_anchor | own_supporting | 1 | ethereum | unit-393822 | `0xffffff...875847` | ⚠️ Unaudited |
+| CoreRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 5 deployments: optimism `0x32ed65...108002`; optimism `0x71727f...bd840f`; optimism `0xe3b41f...c60e0e`; base `0x6c3edb...31cfe1`; base `0xaae20d...5bc639` | ⚠️ Unaudited |
 | CoreRouter | adapter | project_anchor | own_supporting | 1 | optimism | unit-393823 | `0xffffff...875847` | ⚠️ Unaudited |
 | CoreRouter | adapter | project_anchor | own_supporting | 1 | base | unit-393828 | `0x32c222...72c696` | ⚠️ Unaudited |
 | CoreRouter | adapter | project_anchor | own_supporting | 1 | arbitrum | unit-393825 | `0xffffff...875847` | ⚠️ Unaudited |
+| CrossChainUSDModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0xcee752...5b433d`; base `0xf5c78b...44e0f5` | ⚠️ Unaudited |
+| DebtRepayer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbd8004...3f7e37` | ⚠️ Unaudited |
+| Depot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x15ed8d...c4fcf5` | ⚠️ Unaudited |
+| ExchangeRates | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x73b172...9eb21c` | ⚠️ Unaudited |
+| FeatureFlagModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 6 deployments: base `0x27a64e...448376`; base `0x569e1a...5bdc8d`; base `0x6a8a99...d8bee5`; base `0x7e2308...42faee`; base `0xd966c6...f58d70`; base `0xe00ce1...deddbc` | ⚠️ Unaudited |
+| FeePool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xebdbac...a86e32` | ⚠️ Unaudited |
+| GlobalPerpsMarketModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x0ddf6f...eb3eac`; base `0xdebc93...3342d0`; base `0xf9332c...30319d` | ⚠️ Unaudited |
+| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xeb3107...917769` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | base | n/a | `0xbb63ca...e83c82` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0xd3dfa1...13a93b` | ⚠️ Unaudited |
+| InitialModuleBundle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x6dff97...28bc34` | ⚠️ Unaudited |
+| Issuer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x16476e...3bd571`; optimism `0x232ee7...28b889`; optimism `0x49acf9...c133a7` | ⚠️ Unaudited |
+| IssueUSDModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 11 deployments: optimism `0x058dc9...d094f7`; optimism `0x0a1708...660400`; optimism `0x3a6061...317524`; optimism `0x5c68b5...33776d`; optimism `0x608bb8...201718`; optimism `0x7beac3...21670c`; optimism `0xcf195e...360fa2`; optimism `0xe63606...3d59a4`; optimism `0xf02b4c...727f92`; base `0xb3da45...baa25c`; base `0xe8f3c0...3763b9` | ⚠️ Unaudited |
 | L2TBTC | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-393826 | `0x6c84a8...d0de40` | ⚠️ Unaudited |
 | LegacyMarket | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393821 | `0x3acf16...38b2f5` | ⚠️ Unaudited |
-| LegacyMarket | unknown | project_anchor | own_supporting | 1 | optimism | unit-393824 | `0x19f03f...66170c` | ⚠️ Unaudited |
+| LegacyMarket | unknown | project_anchor | own_supporting | 1 | optimism | unit-393824 | 2 deployments: optimism `0x19f03f...66170c`; optimism `0xa9056e...3348ab` | ⚠️ Unaudited |
+| LegacyMarket | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x24a307...f23dba`; optimism `0x883532...c66f86` | ⚠️ Unaudited |
+| LiquidationModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 14 deployments: optimism `0x23e161...b65d10`; optimism `0x4cb44d...e9159e`; optimism `0x6e045e...0b8424`; optimism `0x7a1351...d2ba67`; optimism `0x93ee4d...f5d677`; optimism `0x973e9a...dc354f`; optimism `0xaa2c0b...8e95f9`; optimism `0xd5603b...11d74a`; optimism `0xe1ba4a...bdc965`; base `0x661a88...d6f9ba`; base `0x6f7e8e...237a02`; base `0x72e13c...d807d2`; base `0x94433f...f4ab7b`; base `0xbc4804...07088b` | ⚠️ Unaudited |
+| MarketCollateralModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 5 deployments: optimism `0x8b9b5a...3497f1`; optimism `0x91b618...1ac9e9`; optimism `0xbb46f9...2beaaf`; base `0xa29c7b...b729f0`; base `0xf326af...f2b027` | ⚠️ Unaudited |
+| MarketConfigurationModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 5 deployments: base `0x1174e8...f7f65e`; base `0x38c9e0...de1801`; base `0x6ebf18...389caa`; base `0xb919ed...73229b`; base `0xc29930...e1fa62` | ⚠️ Unaudited |
+| MarketManagerModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x0cb4bf...1094dc`; base `0x758a39...5e72e4`; base `0xf273aa...9dd93e` | ⚠️ Unaudited |
+| Migration_HanOptimism | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x360825...d27e2e` | ⚠️ Unaudited |
+| MultipleMerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x6fa4b5...f50764`; optimism `0xa059f5...10aa01`; optimism `0xd2a4c0...288421` | ⚠️ Unaudited |
+| NodeModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x1fa923...3fe786`; base `0x67a5a7...0c95b1`; base `0x94d473...602b77` | ⚠️ Unaudited |
+| OracleRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 3 deployments: optimism `0x27d97f...5562cb`; base `0x3f5ec5...da0a2d`; base `0xb5dc6c...529000` | ⚠️ Unaudited |
+| Permit2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000000...c78ba3` | ⚠️ Unaudited |
+| PerpsAccountModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x12de57...79f95f`; base `0x484dd4...7fd4b7`; base `0x4a0471...b8f0d6`; base `0x741702...8d22bf` | ⚠️ Unaudited |
+| PerpsMarketFactoryModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x60f83b...07e266`; base `0x9e7317...021659`; base `0xd002ba...acf0ce` | ⚠️ Unaudited |
+| PerpsMarketModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x0ac30c...3caa73`; base `0xe0d1a1...ccc7c7`; base `0xe77913...d7dc60` | ⚠️ Unaudited |
+| PerpsMarketRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: base `0x020eda...c81c3c`; base `0x0f5ccd...7cafc0`; base `0x5e28b2...8e9540`; base `0xdcc310...c06ac6` | ⚠️ Unaudited |
 | PerpsMarketRouter | adapter | project_anchor | own_supporting | 1 | base | unit-393829 | `0x0a2af9...e1c9ce` | ⚠️ Unaudited |
+| Pool420 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 7 deployments: optimism `0x22f86f...201cdc`; optimism `0x24c001...95fe1e`; optimism `0x29f2f1...326ab0`; optimism `0x2fd250...77b308`; optimism `0x2ffba7...859113`; optimism `0x5032c1...5fb675`; optimism `0xa3fdf8...b31bea` | ⚠️ Unaudited |
+| Pool420Migrate | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x2305f5...b247af` | ⚠️ Unaudited |
+| Pool420Withdraw | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x67108f...071cce`; optimism `0x74177d...6b446d` | ⚠️ Unaudited |
+| PoolConfigurationModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: optimism `0x3093cb...3bf927`; base `0x2fac35...415eac`; base `0x3f10b7...7a8c46` | ⚠️ Unaudited |
+| PoolModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: optimism `0x600f30...a13cf3`; base `0x026969...026b03`; base `0xbcc471...29bfb7` | ⚠️ Unaudited |
+| PositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x040962...510115`; optimism `0x8d99de...e45cdb` | ⚠️ Unaudited |
+| PositionManagerNewPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x693cd9...636f48` | ⚠️ Unaudited |
+| Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 10 deployments: ethereum `0x29a904...65f7d0`; ethereum `0x3eb064...00e037`; ethereum `0x559e84...28b2cf`; ethereum `0x62492f...29af88`; ethereum `0x64d5df...f09a99`; ethereum `0xb440dd...92d309`; ethereum `0xdce506...368a33`; ethereum `0xe05d80...c2bfa3`; ethereum `0xed4699...fd381a`; ethereum `0xf48129...713258` | ⚠️ Unaudited |
 | ProxyERC20 | token | project_anchor | own_supporting | 0 | optimism | unit-393672 | `0x8700da...7599b4` | ⚠️ Unaudited |
 | PythERC7412Wrapper | unknown | project_anchor | own_supporting | 0 | base | unit-393778 | `0x9cb0b4...b1953a` | ⚠️ Unaudited |
+| RetiredSynthsUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x9614b0...dcb1c3` | ⚠️ Unaudited |
 | RewardsDistributor | unknown | project_anchor | own_supporting | 0 | base | unit-393768 | `0x45063d...1d6593` | ⚠️ Unaudited |
 | RewardsDistributor | unknown | project_anchor | own_supporting | 0 | base | unit-393787 | `0xe92bcd...28263b` | ⚠️ Unaudited |
+| RewardsManagerModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 10 deployments: optimism `0x17996f...f541c8`; optimism `0x3d3161...0e43a9`; optimism `0x69052d...21968a`; optimism `0x7cea62...feec27`; optimism `0xcb3707...32e144`; optimism `0xd0683a...51ac63`; optimism `0xe4cf03...a36ce2`; optimism `0xf93e40...f42788`; base `0x184f59...7f2477`; base `0xa51b34...b1675b` | ⚠️ Unaudited |
+| SafeDecimalMath | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x84d626...8f3e7b` | ⚠️ Unaudited |
+| SimpleNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0f2816...a28482` | ⚠️ Unaudited |
+| SpotMarketFactoryModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x3400f8...7f351b`; base `0x6a7921...2fc7e0` | ⚠️ Unaudited |
 | SpotMarketRouter | adapter | project_anchor | own_supporting | 1 | base | unit-393827 | `0x181415...4caa61` | ⚠️ Unaudited |
+| SpotMarketRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x293347...db26e7`; base `0x333e0b...853569` | ⚠️ Unaudited |
+| Synth | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 8 deployments: ethereum `0x0cbe2d...df2f25`; ethereum `0x112d5f...0a5601`; ethereum `0x297270...44a9c3`; ethereum `0x48414e...e35ea6`; ethereum `0xb03dfc...fcf00d`; ethereum `0xc2bb52...338a10`; ethereum `0xd9e5a0...d71325`; ethereum `0xdf846d...e9188c` | ⚠️ Unaudited |
+| Synthetix | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x07ec35...44c0b9`; ethereum `0x457cd1...eca529`; ethereum `0x58a4cd...527bff` | ⚠️ Unaudited |
+| SynthetixDepositContract | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xd62595...dbd37b` | ⚠️ Unaudited |
+| SynthetixState | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x4b9ca5...2d5b82`; ethereum `0x7e2958...05c185`; ethereum `0xffd79c...a896d3` | ⚠️ Unaudited |
+| SynthRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x531217...ab00d1`; base `0x6d200d...d44415` | ⚠️ Unaudited |
+| SynthTokenModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x832258...c0f116`; base `0x889d9f...debd31` | ⚠️ Unaudited |
+| TokenState | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x20569b...078a4f`; ethereum `0x249a10...e5a596`; ethereum `0x4dfacf...8361ed`; ethereum `0x6568d9...0529c4`; ethereum `0xbf0933...c159d5`; ethereum `0xcb29d2...d55203` | ⚠️ Unaudited |
+| TreasuryStakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x6ace5b...2453e4`; optimism `0xf65063...cf3365` | ⚠️ Unaudited |
 | TrustedMulticallForwarder | periphery | project_anchor | own_supporting | 0 | base | unit-393785 | `0xe2c565...5a1e3e` | ⚠️ Unaudited |
 | TrustedMulticallForwarder | periphery | project_anchor | own_supporting | 0 | arbitrum | unit-393723 | `0xe2c565...5a1e3e` | ⚠️ Unaudited |
+| USDRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: optimism `0x95ac74...132637`; base `0x199e5d...23ad16`; base `0x8d8e99...8546ec` | ⚠️ Unaudited |
+| USDTokenModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: optimism `0xdaf89f...697b91`; base `0x3a650e...5bfd13`; base `0x6e78b9...9601c4` | ⚠️ Unaudited |
+| UtilsModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: optimism `0x750714...7168d3`; base `0x6dd6e5...2ec76b`; base `0xfcad0f...2f127a` | ⚠️ Unaudited |
+| VaultModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 11 deployments: optimism `0x0dce58...a093a8`; optimism `0x255fd9...414e7d`; optimism `0x52c89f...4ca334`; optimism `0xa49ef9...a01158`; optimism `0xa861ed...e06f63`; optimism `0xae3d2a...c3514d`; optimism `0xdb83d8...9a32af`; optimism `0xec09d3...a36a9b`; optimism `0xf69845...29faa0`; base `0xd9f395...cb8783`; base `0xebe6f4...d2a7c2` | ⚠️ Unaudited |
+| WrapperModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x20042b...0dbdec`; base `0xf87ce3...66632a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -214,7 +284,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (161)
+### ❓ Unverified (190)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -231,17 +301,45 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393662 | `0xc011a7...af2a6f` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393663 | `0xd71170...9421b3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393664 | `0xe2c565...5a1e3e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x00e047...433134` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x058850...eef8c9` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-393665 | `0x08b2a7...ce42be` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-393666 | `0x0aaf30...cb42e3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-393667 | `0x0e4296...d77dac` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x1b7484...509c07` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x228f4a...086494` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x26d4ff...7587b8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x299ece...be312c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x2b75d3...e1699d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-393668 | `0x38908e...c74595` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3b5940...5db619` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3ee05e...34c94b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x3f0535...dbbac4` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-393669 | `0x420000...000006` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-393670 | `0x421dec...f6bf04` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x46eaf2...a67102` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x4e2d8d...2bfc64` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x514130...73b542` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5764ba...07e130` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-393671 | `0x5a41f6...abb3bf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x5d379c...cc7c9f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x683a66...c3221f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x70da0e...e52ad4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x8a6102...d16585` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x90e42b...67fe38` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-393673 | `0xa0639f...5b12fe` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa7ae6d...ef672f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xa99616...ce4a0b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-393674 | `0xb2f30a...f38175` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb36393...15416a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb606f2...b57e1a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xb87b56...671e91` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-393675 | `0xdfa2d3...bc5adb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe0385f...e21cf8` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-393676 | `0xe2c565...5a1e3e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xe7f85b...e7c2bf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfcb6e4...f2c78e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0xfdb10b...8b0643` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-393762 | `0x09d515...1a23c3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-393763 | `0x2ae3f1...0dec22` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-393764 | `0x2f64ad...488e65` | ❓ Unverified |
@@ -266,6 +364,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-393786 | `0xe8183a...769052` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-393788 | `0xede1d0...bd071c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-393789 | `0xfa24be...7e0080` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfe46d0...f5bbed` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-393697 | `0x0aaf30...cb42e3` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-393698 | `0x0e4296...d77dac` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-393699 | `0x211cc4...5fe5d2` | ❓ Unverified |
@@ -469,10 +568,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 15 |
+| native | 80 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 161 |
+| standard_library | 5 |
+| needs_review | 190 |
 
 ## Scope Matching Notes
 

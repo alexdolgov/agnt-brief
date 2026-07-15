@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Suzaku (`suzaku`)
 - Website: [https://www.suzaku.network/](https://www.suzaku.network/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: avalanche
-- Contract surface: 27 unique implementations (27 raw deployments)
+- Contract surface: 67 unique implementations (106 raw deployments)
 - Coverage basis: 1/24 confirmed own live verified implementations (4.2%); conservative 4.2% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,010,414.75
 - On-chain TVL (included contracts): n/a
@@ -150,7 +150,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 25; live-surface contracts included: 25 (24 live, 1 unknown).
+- Logic-topography rows: 25; live-surface rows included: 25 (25 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 27/27 live.
 - Detected codebases: none
@@ -161,15 +161,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 1/24 (4.2%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 27 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 2
-- Deployed-live implementations: 27 of 27 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/24
-- Verified + Unaudited implementations: 23
+- Outside the address book: 40 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 4
+- Confirmed-live implementations: 27 of 67 unique; 40 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/37
+- Verified + Unaudited implementations: 36
 - Verified by bytecode match: 0
-- Unverified implementations: 3
-- Unique implementations: 27
-- Raw deployments: 27
+- Unverified implementations: 30
+- Unique implementations: 67
+- Raw deployments: 106
 - Audits discovered: 2 (0 direct, 2 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -182,7 +182,7 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ChainSecurity | Tier 1 | 1 | 4.2% | 2024-05 |
+| ChainSecurity | Tier 1 | 1 | 2.7% | 2024-05 |
 
 ## Contract Surface
 
@@ -192,12 +192,15 @@ Removals (removed from original): none
 |---|---|---|---|---:|---|---|---|---|
 | DefaultCollateralFactory | registry | project_anchor | own_supporting | 0 | avalanche | unit-393598 | `0xe52966...41a93c` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (23)
+### ⚠️ Verified + Unaudited (36)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AlgebraPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x9ee747...f995de` | ⚠️ Unaudited |
+| AvalancheL1Middleware | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 7 deployments: avalanche `0x1bdc44...2427a7`; avalanche `0x3fc510...56f00b`; avalanche `0x4817d2...636710`; avalanche `0x881f38...cbb037`; avalanche `0x8d453f...791830`; avalanche `0xa6170c...a7e14b`; avalanche `0xbd02b1...2b26f4` | ⚠️ Unaudited |
 | AvalancheL1Middleware | unknown | project_anchor | own_supporting | 0 | avalanche | unit-393574 | `0x941130...f0dc34` | ⚠️ Unaudited |
 | BalancerValidatorManager | governance | project_anchor | own_supporting | 1 | avalanche | unit-393603 | `0xcff0fc...fa8ac7` | ⚠️ Unaudited |
+| BoringVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 3 deployments: avalanche `0x72ab67...75d9b5`; avalanche `0xdf788a...f52f67`; avalanche `0xe684f6...9f0025` | ⚠️ Unaudited |
 | DefaultCollateral | unknown | project_anchor | own_supporting | 0 | avalanche | unit-393555 | `0x0cec09...aaf9af` | ⚠️ Unaudited |
 | DefaultCollateral | unknown | project_anchor | own_supporting | 0 | avalanche | unit-393557 | `0x1d8bd3...5fef62` | ⚠️ Unaudited |
 | DefaultCollateral | unknown | project_anchor | own_supporting | 0 | avalanche | unit-393559 | `0x203e91...19df0d` | ⚠️ Unaudited |
@@ -208,17 +211,27 @@ Removals (removed from original): none
 | DefaultCollateral | unknown | project_anchor | own_supporting | 0 | avalanche | unit-393594 | `0xe3c983...93d5b7` | ⚠️ Unaudited |
 | DelegatorFactory | registry | project_anchor | own_supporting | 0 | avalanche | unit-393571 | `0x657741...c8c2be` | ⚠️ Unaudited |
 | L1Registry | registry | project_anchor | own_supporting | 0 | avalanche | unit-393580 | `0xaa59b1...746110` | ⚠️ Unaudited |
+| L1RestakeDelegator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x826414...598096` | ⚠️ Unaudited |
 | L1RestakeDelegator | unknown | project_anchor | own_supporting | 0 | avalanche | unit-393590 | `0xd90a72...3273ef` | ⚠️ Unaudited |
+| LSTWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x017d60...eef453` | ⚠️ Unaudited |
+| LSTWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x119c46...16b68c`; avalanche `0xa1c16a...438c7e` | ⚠️ Unaudited |
+| LSTWrapperFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x6389b8...dfefcb` | ⚠️ Unaudited |
 | LSTWrapperFactory | registry | project_anchor | own_supporting | 0 | avalanche | unit-393588 | `0xd096f4...535a77` | ⚠️ Unaudited |
+| MiddlewareVaultManager | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 26 deployments: avalanche `0x08c151...a64f81`; avalanche `0x14d4fe...d23a76`; avalanche `0x21a2b3...09f328`; avalanche `0x239023...72bff8`; avalanche `0x2d4c52...f96a66`; avalanche `0x348d67...b8b082`; avalanche `0x382db9...c080dd`; avalanche `0x3d078d...00559a`; avalanche `0x430d60...86faed`; avalanche `0x6a1212...fe4d41`; avalanche `0x763afa...c1fad9`; avalanche `0x7e844e...fadb0d`; avalanche `0x81a170...b38b52`; avalanche `0x91e112...36e329`; avalanche `0xb2a341...2c083f`; avalanche `0xbb2676...8d8a6f`; avalanche `0xbb9f20...f4d84f`; avalanche `0xbd1550...d8dfbf`; avalanche `0xc3b4d9...4aa5b8`; avalanche `0xc5f945...dca1b4`; avalanche `0xcc0bd1...6a2129`; avalanche `0xcf29f0...d2c418`; avalanche `0xd8e7db...648592`; avalanche `0xea47a2...153e4d`; avalanche `0xf34617...66e189`; avalanche `0xfd9387...27b408` | ⚠️ Unaudited |
 | OperatorL1OptInService | unknown | project_anchor | own_supporting | 0 | avalanche | unit-393566 | `0x48a990...1fa574` | ⚠️ Unaudited |
 | OperatorRegistry | registry | project_anchor | own_supporting | 0 | avalanche | unit-393586 | `0xcccb4e...36936e` | ⚠️ Unaudited |
 | OperatorVaultOptInService | core_logic | project_anchor | own_supporting | 0 | avalanche | unit-393596 | `0xe437b5...92da47` | ⚠️ Unaudited |
 | PoASecurityModule | unknown | project_anchor | own_supporting | 0 | avalanche | unit-393551 | `0x01daeb...56fafd` | ⚠️ Unaudited |
-| RewardsNativeToken | unknown | project_anchor | own_supporting | 1 | avalanche | unit-393600 | `0x0f388c...dbcb00` | ⚠️ Unaudited |
+| RewardsNativeToken | unknown | project_anchor | own_supporting | 1 | avalanche | unit-393600 | 2 deployments: avalanche `0x0f388c...dbcb00`; avalanche `0x430e1e...d1d077` | ⚠️ Unaudited |
+| RewardsNativeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | 2 deployments: avalanche `0x3d0330...5d6d32`; avalanche `0xff5d88...9efdd4` | ⚠️ Unaudited |
 | SlasherFactory | registry | project_anchor | own_supporting | 0 | avalanche | unit-393561 | `0x2eb000...5f4415` | ⚠️ Unaudited |
 | SuzakuToken | token | project_anchor | own_supporting | 0 | avalanche | unit-393564 | `0x451532...f6f5ef` | ⚠️ Unaudited |
+| UptimeTracker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: avalanche `0x2e0425...698639`; avalanche `0xd6ecff...44ceaf` | ⚠️ Unaudited |
 | VaultFactory | registry | project_anchor | own_supporting | 0 | avalanche | unit-393562 | `0x3e669b...75694a` | ⚠️ Unaudited |
+| VaultHelper | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: avalanche `0x76e0b9...98402a`; avalanche `0x9677f7...8d95b8` | ⚠️ Unaudited |
 | VaultHelper | core_logic | project_anchor | own_supporting | 0 | avalanche | unit-393576 | `0x9985e0...1bf970` | ⚠️ Unaudited |
+| VaultTokenized | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xce634f...e2f8ed` | ⚠️ Unaudited |
+| VestingWallet | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | 2 deployments: avalanche `0x42de24...fc1aa0`; avalanche `0x9afb65...9bef1f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -232,15 +245,42 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (30)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x073626...b03b3a` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-393553 | `0x093783...47bc69` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x128af5...ed6d13` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x21de60...a5632a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x2385be...087ff6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x4537f5...d79c13` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x49c0d6...b441ac` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x4df49f...506a33` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x5681e8...dbd327` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x78e17c...7083fb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x79aca8...893171` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x82dec7...93393b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x879436...bc3876` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x8ee73c...4e9c02` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x963fd1...1d3779` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xa24a69...3b2f82` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xa2767e...5fbd6b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xa59bea...bdb626` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb29799...0ad0b1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xb322a6...e4e78d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xc504d5...5efb7b` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-393584 | `0xc9a25f...2471a2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xcffcba...1ed685` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xd3ebe0...8d6220` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-393592 | `0xdc1c44...0da403` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xdd7011...c7eae0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xec25e1...366337` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf385b2...f69574` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xf8a6b2...e3453b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0xfe9f3a...ca0cc9` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -304,10 +344,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 23 |
+| native | 36 |
 | upstream | 1 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 30 |
 
 ## Scope Matching Notes
 

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Rank Trading (`rank-trading`)
 - Website: [https://rank.trading/](https://rank.trading/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: bsc
-- Contract surface: 12 unique implementations (12 raw deployments)
+- Contract surface: 30 unique implementations (45 raw deployments)
 - Coverage basis: 2/12 confirmed own live verified implementations (16.7%); conservative 16.7% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,804,906.58
 - On-chain TVL (included contracts): n/a
@@ -67,7 +67,7 @@ The pinned logic-topography run contains 12 contract row(s) across bsc. Structur
 
 ## Contract Surface Quality
 
-- Indexed contracts: 12; live-surface contracts included: 12 (12 live, 0 unknown).
+- Logic-topography rows: 12; live-surface rows included: 12 (12 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 12/12 live.
 - Detected codebases: none
@@ -78,15 +78,15 @@ The pinned logic-topography run contains 12 contract row(s) across bsc. Structur
 - Coverage of address-book-owned deployed-live implementations: 2/12 (16.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 12 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 12 of 12 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 2/12
-- Verified + Unaudited implementations: 10
+- Outside the address book: 18 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Confirmed-live implementations: 12 of 30 unique; 18 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 2/24
+- Verified + Unaudited implementations: 22
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 12
-- Raw deployments: 12
+- Unverified implementations: 6
+- Unique implementations: 30
+- Raw deployments: 45
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -99,7 +99,7 @@ The pinned logic-topography run contains 12 contract row(s) across bsc. Structur
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Hashlock | Tier 2 | 2 | 16.7% | 2025-01 |
+| Hashlock | Tier 2 | 2 | 8.3% | 2025-01 |
 
 ## Contract Surface
 
@@ -110,10 +110,17 @@ The pinned logic-topography run contains 12 contract row(s) across bsc. Structur
 | RankStrategy | unknown | project_anchor | own_supporting | 0 | bsc | unit-266968 | `0xf9b185...1aaffd` | ✅ Audited |
 | RankToken | token | project_anchor | own_supporting | 0 | bsc | unit-266964 | `0x978ab3...cbf952` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (10)
+### ⚠️ Verified + Unaudited (22)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| Erc20Simple | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x7d322e...8a9cc5` | ⚠️ Unaudited |
+| ExposedV3Math | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x15022f...d23a54`; bsc `0x6c7a2f...873f9c`; bsc `0xc98f2a...caa232` | ⚠️ Unaudited |
+| FeeResolver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe9b5f4...b4b21f` | ⚠️ Unaudited |
+| FullRangeConvertor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 3 deployments: bsc `0x247358...9d538c`; bsc `0x4a8d60...83a953`; bsc `0x955fae...c91db5` | ⚠️ Unaudited |
+| FullRangeConvertorV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0xf67875...55cd71`; bsc `0xf8ec48...c51066` | ⚠️ Unaudited |
+| MigrateV3NFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 5 deployments: bsc `0x2df9b3...8620ab`; bsc `0x51907a...ba3201`; bsc `0x6113e8...7892c5`; bsc `0x8a3c8b...54d88c`; bsc `0xe4c7d0...13a52c` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x9e155e...c357cd` | ⚠️ Unaudited |
 | RankFactory | registry | project_anchor | own_supporting | 0 | bsc | unit-266957 | `0x1563c9...447227` | ⚠️ Unaudited |
 | RankFactory | registry | project_anchor | own_supporting | 0 | bsc | unit-266958 | `0x185f8b...31c82e` | ⚠️ Unaudited |
 | RankFactory | registry | project_anchor | own_supporting | 0 | bsc | unit-266959 | `0x276ee9...a17eb8` | ⚠️ Unaudited |
@@ -124,6 +131,11 @@ The pinned logic-topography run contains 12 contract row(s) across bsc. Structur
 | RankFactory | registry | project_anchor | own_supporting | 0 | bsc | unit-266965 | `0xab5389...40e452` | ⚠️ Unaudited |
 | RankFactory | registry | project_anchor | own_supporting | 0 | bsc | unit-266966 | `0xcbabba...b5a679` | ⚠️ Unaudited |
 | RankFactory | registry | project_anchor | own_supporting | 0 | bsc | unit-266967 | `0xf86ada...5b70db` | ⚠️ Unaudited |
+| StakingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xb2a7af...f96ec5` | ⚠️ Unaudited |
+| StakingPool | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | n/a | `0xd6a07b...cd1074` | ⚠️ Unaudited |
+| UNCX_LiquidityLocker_UniV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0xac03f8...77b9d9`; bsc `0xfe88da...bf1557` | ⚠️ Unaudited |
+| UNCX_ProofOfReservesUniV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | 6 deployments: bsc `0x0a1886...7eb41a`; bsc `0x0d2959...93886c`; bsc `0x54460a...4de1df`; bsc `0x7f5c64...858234`; bsc `0x94da79...d4bc10`; bsc `0xda9b14...99b57f` | ⚠️ Unaudited |
+| UNCX_ProofOfReservesV2_UniV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xf1f7f2...341990` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -137,11 +149,18 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (6)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3d413f...ad7a36` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x582c5a...31a3b0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xcb8b00...fb62ec` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd041c5...e441c2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xd2b1c1...bb53f0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe0c497...200ec3` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -188,10 +207,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 12 |
+| native | 23 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 0 |
+| standard_library | 1 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 

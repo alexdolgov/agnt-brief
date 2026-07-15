@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Frax Finance (`frax-finance`)
 - Website: [https://frax.com/](https://frax.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, aurora, avalanche, base, berachain, blast, bsc, ethereum, fraxtal, hyperliquid, ink, linea, mode, optimism, plasma, polygon, polygon-zkevm, scroll, sei, sonic, unichain, zksync-era
-- Contract surface: 490 unique implementations (490 raw deployments)
+- Chains: arbitrum, aurora, avalanche, base, berachain, blast, bsc, ethereum, fantom, fraxtal, hyperliquid, ink, linea, mode, moonbeam, optimism, plasma, polygon, polygon-zkevm, scroll, sei, sonic, unichain, zksync-era
+- Contract surface: 494 unique implementations (500 raw deployments)
 - Coverage basis: 3/7 confirmed own live verified implementations (42.9%); conservative 42.9% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $283,527,119.51
 - On-chain TVL (included contracts): n/a
@@ -160,7 +160,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 7; live-surface contracts included: 7 (7 live, 0 unknown).
+- Logic-topography rows: 7; live-surface rows included: 7 (7 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 99/165 live.
 - Detected codebases: none
@@ -171,15 +171,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 3/7 (42.9%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 99 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 391 discovered implementations excluded (0 third-party/infra; 1 standard proxy/library)
-- Proxy deployments represented within implementation groups: 29
-- Deployed-live implementations: 99 of 490 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 3/7
-- Verified + Unaudited implementations: 4
+- Outside the address book: 395 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 30
+- Confirmed-live implementations: 99 of 494 unique; 395 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 3/402
+- Verified + Unaudited implementations: 399
 - Verified by bytecode match: 0
 - Unverified implementations: 92
-- Unique implementations: 490
-- Raw deployments: 490
+- Unique implementations: 494
+- Raw deployments: 500
 - Audits discovered: 20 (20 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): n/a
@@ -192,8 +192,8 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Trail of Bits | Tier 1 | 2 | 28.6% | 2024-03 |
-| Zellic | Tier 2 | 1 | 14.3% | 2025-09 |
+| Trail of Bits | Tier 1 | 2 | 0.5% | 2024-03 |
+| Zellic | Tier 2 | 1 | 0.2% | 2025-09 |
 
 ## Contract Surface
 
@@ -205,7 +205,7 @@ Removals (removed from original): none
 | FRAXStablecoin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240811 | `0x853d95...75b99e` | ✅ Audited |
 | FrxUSD | unknown | project_anchor | own_supporting | 1 | ethereum | unit-240921 | `0xcacd6f...586e29` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (395)
+### ⚠️ Verified + Unaudited (399)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
@@ -328,6 +328,8 @@ Removals (removed from original): none
 | FpiOracleAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xcacc09...90c60d` | ⚠️ Unaudited |
 | FPIS | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240832 | `0xc2544a...901fdb` | ⚠️ Unaudited |
 | FpisDepositor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x27445d...a7a04b` | ⚠️ Unaudited |
+| FPISLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 4 deployments: fraxtal `0x36b406...b09840`; fraxtal `0xb4fdd7...02da35`; fraxtal `0xbbb3a1...126850`; fraxtal `0xe91488...e61c01` | ⚠️ Unaudited |
+| FPISLockerUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | 3 deployments: fraxtal `0x858afb...027aea`; fraxtal `0x8a3399...2da974`; fraxtal `0xf82385...732414` | ⚠️ Unaudited |
 | FpisRewardHook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb93989...a3238d` | ⚠️ Unaudited |
 | FraxAMOMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x36a0b6...8deb8c` | ⚠️ Unaudited |
 | FraxEtherRedemptionQueue | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5fa025...f21a6d` | ⚠️ Unaudited |
@@ -391,6 +393,7 @@ Removals (removed from original): none
 | frxETHMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2dd1b4...b3b532` | ⚠️ Unaudited |
 | FrxUSDCustodianWithOracle | unknown | project_anchor | own_supporting | 1 | ethereum | unit-240923 | `0x5fbaa3...504f33` | ⚠️ Unaudited |
 | FrxUSDCustodianWithReceiver | unknown | project_anchor | own_supporting | 1 | ethereum | unit-240922 | `0x860cc7...ef7857` | ⚠️ Unaudited |
+| FXB | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0de54c...f1df1e` | ⚠️ Unaudited |
 | FXS1559_AMO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9c6a04...1f51ee` | ⚠️ Unaudited |
 | FXS1559_AMO_V2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xc80c48...717c24` | ⚠️ Unaudited |
 | FXS1559_AMO_V3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7301bb...cedae5` | ⚠️ Unaudited |
@@ -508,7 +511,7 @@ Removals (removed from original): none
 | SfrxEthDualOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0xa36a19...f7e7f2` | ⚠️ Unaudited |
 | SfrxEthOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x27942a...9ac97b` | ⚠️ Unaudited |
 | SfrxEthSfraxInverseOracleAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x1010e2...77fa2c` | ⚠️ Unaudited |
-| SfrxUsd2OracleImplementation | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | fraxtal | n/a | `0x1b680f...d3f1ff` | ⚠️ Unaudited |
+| SfrxUsd2OracleImplementation | unknown | non_address_book | non_address_book_inventory (excluded) | 2 | fraxtal | n/a | 2 deployments: fraxtal `0x1b680f...d3f1ff`; fraxtal `0xf75063...07fc60` | ⚠️ Unaudited |
 | ShibbolethTokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2d915c...97904c` | ⚠️ Unaudited |
 | ShortNameAuctionController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x699c7f...919d17` | ⚠️ Unaudited |
 | SimpleRewarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x595cce...318eb5` | ⚠️ Unaudited |
@@ -588,6 +591,7 @@ Removals (removed from original): none
 | veFXSYieldDistributorV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc6764e...1fa872` | ⚠️ Unaudited |
 | VeSDLRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc7b10d...2078ae` | ⚠️ Unaudited |
 | VestedEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe98984...e28fcc` | ⚠️ Unaudited |
+| VestedFXS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fraxtal | n/a | `0x54bd5c...24ee5c` | ⚠️ Unaudited |
 | Vesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf8504e...1dc30b` | ⚠️ Unaudited |
 | vlCvxExtraRewardDistribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8ed4bb...1e0602` | ⚠️ Unaudited |
 | VoteDelegateExtension | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5349ff...67fb07` | ⚠️ Unaudited |
@@ -983,7 +987,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 371 |
+| native | 375 |
 | upstream | 20 |
 | standard_library | 7 |
 | needs_review | 92 |

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Centrifuge (`centrifuge`)
 - Website: [https://centrifuge.io/](https://centrifuge.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, avalanche, base, bsc, ethereum, hyperliquid, monad, optimism, pharos
-- Contract surface: 231 unique implementations (415 raw deployments)
+- Contract surface: 258 unique implementations (520 raw deployments)
 - Coverage basis: 0/134 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,799,152,243.00
 - On-chain TVL (included contracts): $727,709,329.43
@@ -655,7 +655,7 @@ Removals (removed from original):
 
 ## Contract Surface Quality
 
-- Indexed contracts: 318; live-surface contracts included: 318 (318 live, 0 unknown).
+- Logic-topography rows: 318; live-surface rows included: 318 (318 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 414/418 live.
 - Detected codebases: none
@@ -666,15 +666,15 @@ Removals (removed from original):
 - Coverage of address-book-owned deployed-live implementations: 0/134 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 230 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (1 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 27 discovered implementations shown in the inventory but excluded from coverage (1 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 230 of 231 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/134
-- Verified + Unaudited implementations: 134
-- Verified by bytecode match: 0
-- Unverified implementations: 96
-- Unique implementations: 231
-- Raw deployments: 415
+- Confirmed-live implementations: 230 of 258 unique; 28 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/157
+- Verified + Unaudited implementations: 156
+- Verified by bytecode match: 1
+- Unverified implementations: 101
+- Unique implementations: 258
+- Raw deployments: 520
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $727,709,329.43
@@ -693,7 +693,7 @@ Removals (removed from original):
 
 - None
 
-### ⚠️ Verified + Unaudited (134)
+### ⚠️ Verified + Unaudited (156)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
@@ -739,6 +739,8 @@ Removals (removed from original):
 | BalanceSheet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-232205 | 4 deployments: ethereum `0x12a110...d0f43e`; bsc `0x12a110...d0f43e`; base `0x12a110...d0f43e`; arbitrum `0x12a110...d0f43e` | ⚠️ Unaudited |
 | BalanceSheet | unknown | project_anchor | own_supporting | 0 | optimism | unit-232264 | 2 deployments: optimism `0x12a110...d0f43e`; hyperliquid `0x12a110...d0f43e` | ⚠️ Unaudited |
 | BatchRequestManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-232244 | 6 deployments: ethereum `0xc52bd1...1dfe77`; optimism `0xc52bd1...1dfe77`; bsc `0xc52bd1...1dfe77`; hyperliquid `0xc52bd1...1dfe77`; base `0xc52bd1...1dfe77`; arbitrum `0xc52bd1...1dfe77` | ⚠️ Unaudited |
+| CentrifugeRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 9 deployments: ethereum `0x2f445b...69a1f4`; ethereum `0x32043a...4cab57`; ethereum `0xb1a07d...3d3281`; base `0x54836e...2fca7b`; base `0x5b82ff...ed1231`; base `0xf35501...f5009d`; arbitrum `0x2f445b...69a1f4`; arbitrum `0xa3ce97...e78cf0`; arbitrum `0xf35501...f5009d` | ⚠️ Unaudited |
+| CFG | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0xcccccc...4e8a94`; bsc `0xcccccc...4e8a94`; base `0xcccccc...4e8a94`; arbitrum `0xcccccc...4e8a94`; avalanche `0xcccccc...4e8a94` | ⚠️ Unaudited |
 | ChainlinkAdapter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-232217 | `0x39cf67...57d955` | ⚠️ Unaudited |
 | ChainlinkAdapter | adapter | project_anchor | own_supporting | 0 | optimism | unit-232273 | `0x39cf67...57d955` | ⚠️ Unaudited |
 | ChainlinkAdapter | adapter | project_anchor | own_supporting | 0 | bsc | unit-232476 | `0x39cf67...57d955` | ⚠️ Unaudited |
@@ -747,6 +749,9 @@ Removals (removed from original):
 | ChainlinkAdapter | adapter | project_anchor | own_supporting | 0 | arbitrum | unit-232417 | `0x39cf67...57d955` | ⚠️ Unaudited |
 | CircleDecoder | unknown | project_anchor | own_supporting | 0 | ethereum | unit-232248 | 6 deployments: ethereum `0xd40871...60931d`; optimism `0xd40871...60931d`; bsc `0xd40871...60931d`; hyperliquid `0xd40871...60931d`; base `0xd40871...60931d`; arbitrum `0xd40871...60931d` | ⚠️ Unaudited |
 | ContractUpdater | unknown | project_anchor | own_supporting | 0 | ethereum | unit-232218 | 6 deployments: ethereum `0x3b150b...298f71`; optimism `0x3b150b...298f71`; bsc `0x3b150b...298f71`; hyperliquid `0x3b150b...298f71`; base `0x3b150b...298f71`; arbitrum `0x3b150b...298f71` | ⚠️ Unaudited |
+| DelayedAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x255999...ed9028`; base `0x255999...ed9028`; arbitrum `0xfe364b...4cc4ac` | ⚠️ Unaudited |
+| ERC20 | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 3 deployments: base `0x2b51e2...81ba97`; base `0x9abb03...370166`; base `0xf949df...1e68c1` | ⚠️ Unaudited |
+| ERC7540VaultFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 9 deployments: ethereum `0x6f9dba...ec24b8`; ethereum `0x7f192f...056994`; ethereum `0xed590d...1e47c2`; base `0x6215b2...f5ab35`; base `0xcad01f...e4462c`; base `0xe79f06...285d20`; arbitrum `0x32043a...4cab57`; arbitrum `0x6f9dba...ec24b8`; arbitrum `0xaffc66...325fc7` | ⚠️ Unaudited |
 | FreelyTransferable | unknown | project_anchor | own_supporting | 0 | ethereum | unit-232213 | 4 deployments: ethereum `0x2a9b9c...7a1a61`; bsc `0x2a9b9c...7a1a61`; base `0x2a9b9c...7a1a61`; arbitrum `0x2a9b9c...7a1a61` | ⚠️ Unaudited |
 | FreelyTransferable | unknown | project_anchor | own_supporting | 0 | optimism | unit-232270 | 2 deployments: optimism `0x2a9b9c...7a1a61`; hyperliquid `0x2a9b9c...7a1a61` | ⚠️ Unaudited |
 | FreezeOnly | unknown | project_anchor | own_supporting | 0 | ethereum | unit-232250 | 4 deployments: ethereum `0xd5b243...0731c1`; bsc `0xd5b243...0731c1`; base `0xd5b243...0731c1`; arbitrum `0xd5b243...0731c1` | ⚠️ Unaudited |
@@ -757,6 +762,7 @@ Removals (removed from original):
 | GasService | unknown | project_anchor | own_supporting | 0 | optimism | unit-232287 | `0xbebef2...6754be` | ⚠️ Unaudited |
 | GasService | unknown | project_anchor | own_supporting | 0 | bsc | unit-232495 | `0xbebef2...6754be` | ⚠️ Unaudited |
 | GasService | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-232599 | `0xbebef2...6754be` | ⚠️ Unaudited |
+| GasService | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 4 deployments: ethereum `0x3c9c09...a28f27`; base `0x09ab10...c7f5e8`; base `0x32043a...4cab57`; arbitrum `0x3c9c09...a28f27` | ⚠️ Unaudited |
 | GasService | unknown | project_anchor | own_supporting | 0 | base | unit-232555 | `0xbebef2...6754be` | ⚠️ Unaudited |
 | GasService | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232434 | `0xbebef2...6754be` | ⚠️ Unaudited |
 | Gateway | unknown | project_anchor | own_supporting | 0 | ethereum | unit-232207 | `0x19a524...7d3172` | ⚠️ Unaudited |
@@ -764,14 +770,19 @@ Removals (removed from original):
 | Gateway | unknown | project_anchor | own_supporting | 0 | bsc | unit-232468 | `0x19a524...7d3172` | ⚠️ Unaudited |
 | Gateway | unknown | project_anchor | own_supporting | 0 | hyperliquid | unit-232579 | `0x19a524...7d3172` | ⚠️ Unaudited |
 | Gateway | unknown | project_anchor | own_supporting | 0 | base | unit-232522 | `0x19a524...7d3172` | ⚠️ Unaudited |
+| Gateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 6 deployments: ethereum `0x634f03...7a0037`; ethereum `0x7829e5...7a3b8c`; base `0x3423d2...aa4361`; base `0x634f03...7a0037`; base `0xbbaf0e...b22d29`; arbitrum `0x7829e5...7a3b8c` | ⚠️ Unaudited |
 | Gateway | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-232409 | `0x19a524...7d3172` | ⚠️ Unaudited |
+| Guardian | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x09ab10...c7f5e8`; base `0x427a1c...2ea7e9`; base `0xa0e3a5...9d9e18`; arbitrum `0x09ab10...c7f5e8` | ⚠️ Unaudited |
 | Holdings | unknown | project_anchor | own_supporting | 0 | ethereum | unit-232219 | 6 deployments: ethereum `0x3f0c8d...4c918d`; optimism `0x3f0c8d...4c918d`; bsc `0x3f0c8d...4c918d`; hyperliquid `0x3f0c8d...4c918d`; base `0x3f0c8d...4c918d`; arbitrum `0x3f0c8d...4c918d` | ⚠️ Unaudited |
 | Hub | unknown | project_anchor | own_supporting | 0 | ethereum | unit-232236 | 6 deployments: ethereum `0xa4a7bb...341953`; optimism `0xa4a7bb...341953`; bsc `0xa4a7bb...341953`; hyperliquid `0xa4a7bb...341953`; base `0xa4a7bb...341953`; arbitrum `0xa4a7bb...341953` | ⚠️ Unaudited |
 | HubHandler | unknown | project_anchor | own_supporting | 0 | ethereum | unit-232204 | 6 deployments: ethereum `0x0defb4...c3392c`; optimism `0x0defb4...c3392c`; bsc `0x0defb4...c3392c`; hyperliquid `0x0defb4...c3392c`; base `0x0defb4...c3392c`; arbitrum `0x0defb4...c3392c` | ⚠️ Unaudited |
 | HubRegistry | registry | project_anchor | own_supporting | 0 | ethereum | unit-232208 | 6 deployments: ethereum `0x19f46d...fade93`; optimism `0x19f46d...fade93`; bsc `0x19f46d...fade93`; hyperliquid `0x19f46d...fade93`; base `0x19f46d...fade93`; arbitrum `0x19f46d...fade93` | ⚠️ Unaudited |
 | IdentityValuation | unknown | project_anchor | own_supporting | 0 | ethereum | unit-232203 | 6 deployments: ethereum `0x05e22c...6133cf`; optimism `0x05e22c...6133cf`; bsc `0x05e22c...6133cf`; hyperliquid `0x05e22c...6133cf`; base `0x05e22c...6133cf`; arbitrum `0x05e22c...6133cf` | ⚠️ Unaudited |
+| InvestmentManager | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 12 deployments: ethereum `0x1bfa7e...103164`; ethereum `0x427a1c...2ea7e9`; ethereum `0xbbf0ab...6dd73a`; ethereum `0xe79f06...285d20`; base `0x36b87b...f00f03`; base `0x3c9c09...a28f27`; base `0xbbf0ab...6dd73a`; base `0xc43751...f752d4`; arbitrum `0x6b8d01...52fd64`; arbitrum `0x7f192f...056994`; arbitrum `0xa85cb6...1aaed7`; arbitrum `0xe79f06...285d20` | ⚠️ Unaudited |
+| IouCfg | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xacf3c0...523069` | ⚠️ Unaudited |
 | LayerZeroAdapter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-232249 | 5 deployments: ethereum `0xd517bc...750295`; optimism `0xd517bc...750295`; bsc `0xd517bc...750295`; base `0xd517bc...750295`; arbitrum `0xd517bc...750295` | ⚠️ Unaudited |
 | LayerZeroAdapter | adapter | project_anchor | own_supporting | 0 | hyperliquid | unit-232608 | `0xd517bc...750295` | ⚠️ Unaudited |
+| LiquidityPoolFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x77f48b...41386a`; ethereum `0x7f93ed...95bf2c`; ethereum `0x8273e3...64f165`; base `0x77f48b...41386a`; arbitrum `0x77f48b...41386a` | ⚠️ Unaudited |
 | MerkleProofManagerFactory | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-232243 | 6 deployments: ethereum `0xc5243b...37a18b`; optimism `0xc5243b...37a18b`; bsc `0xc5243b...37a18b`; hyperliquid `0xc5243b...37a18b`; base `0xc5243b...37a18b`; arbitrum `0xc5243b...37a18b` | ⚠️ Unaudited |
 | MessageDispatcher | unknown | project_anchor | own_supporting | 0 | ethereum | unit-232257 | `0xf837a2...f30b27` | ⚠️ Unaudited |
 | MessageDispatcher | unknown | project_anchor | own_supporting | 0 | optimism | unit-232305 | `0xf837a2...f30b27` | ⚠️ Unaudited |
@@ -791,14 +802,18 @@ Removals (removed from original):
 | OnOfframpManagerFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-232211 | 6 deployments: ethereum `0x2539e6...b0aaf6`; optimism `0x2539e6...b0aaf6`; bsc `0x2539e6...b0aaf6`; hyperliquid `0x2539e6...b0aaf6`; base `0x2539e6...b0aaf6`; arbitrum `0x2539e6...b0aaf6` | ⚠️ Unaudited |
 | OpsGuardian | governance | project_anchor | own_supporting | 0 | ethereum | unit-232202 | 6 deployments: ethereum `0x055589...86d0de`; optimism `0x055589...86d0de`; bsc `0x055589...86d0de`; hyperliquid `0x055589...86d0de`; base `0x055589...86d0de`; arbitrum `0x055589...86d0de` | ⚠️ Unaudited |
 | OracleValuation | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-232245 | 6 deployments: ethereum `0xcbdb6e...c26e6d`; optimism `0xcbdb6e...c26e6d`; bsc `0xcbdb6e...c26e6d`; hyperliquid `0xcbdb6e...c26e6d`; base `0xcbdb6e...c26e6d`; arbitrum `0xcbdb6e...c26e6d` | ⚠️ Unaudited |
+| PauseAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: ethereum `0xce8647...c8067c`; base `0xce8647...c8067c`; arbitrum `0x634f03...7a0037` | ⚠️ Unaudited |
 | PoolEscrowFactory | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-232224 | 4 deployments: ethereum `0x5187a5...478ce3`; bsc `0x5187a5...478ce3`; base `0x5187a5...478ce3`; arbitrum `0x5187a5...478ce3` | ⚠️ Unaudited |
 | PoolEscrowFactory | operational_periphery | project_anchor | own_supporting | 0 | optimism | unit-232277 | 2 deployments: optimism `0x5187a5...478ce3`; hyperliquid `0x5187a5...478ce3` | ⚠️ Unaudited |
+| PoolManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 7 deployments: ethereum `0x78e9e6...e58142`; ethereum `0x91808b...4b9e29`; base `0x7829e5...7a3b8c`; base `0x78e9e6...e58142`; base `0x7f192f...056994`; arbitrum `0x884171...976067`; arbitrum `0x91808b...4b9e29` | ⚠️ Unaudited |
 | ProtocolGuardian | governance | project_anchor | own_supporting | 0 | ethereum | unit-232247 | 4 deployments: ethereum `0xceb7ed...9635c6`; bsc `0xceb7ed...9635c6`; base `0xceb7ed...9635c6`; arbitrum `0xceb7ed...9635c6` | ⚠️ Unaudited |
 | ProtocolGuardian | governance | project_anchor | own_supporting | 0 | optimism | unit-232294 | 2 deployments: optimism `0xceb7ed...9635c6`; hyperliquid `0xceb7ed...9635c6` | ⚠️ Unaudited |
 | QueueManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-232234 | 6 deployments: ethereum `0x971aca...18d220`; optimism `0x971aca...18d220`; bsc `0x971aca...18d220`; hyperliquid `0x971aca...18d220`; base `0x971aca...18d220`; arbitrum `0x971aca...18d220` | ⚠️ Unaudited |
 | RedemptionRestrictions | unknown | project_anchor | own_supporting | 0 | ethereum | unit-232253 | 4 deployments: ethereum `0xe5423e...317f06`; bsc `0xe5423e...317f06`; base `0xe5423e...317f06`; arbitrum `0xe5423e...317f06` | ⚠️ Unaudited |
 | RedemptionRestrictions | unknown | project_anchor | own_supporting | 0 | optimism | unit-232301 | 2 deployments: optimism `0xe5423e...317f06`; hyperliquid `0xe5423e...317f06` | ⚠️ Unaudited |
 | RefundEscrowFactory | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-232242 | 6 deployments: ethereum `0xc4f9a1...fd3d5b`; optimism `0xc4f9a1...fd3d5b`; bsc `0xc4f9a1...fd3d5b`; hyperliquid `0xc4f9a1...fd3d5b`; base `0xc4f9a1...fd3d5b`; arbitrum `0xc4f9a1...fd3d5b` | ⚠️ Unaudited |
+| RelinkV2Eth | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5a110b...274a06` | ⚠️ Unaudited |
+| RestrictionManagerFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0xf4d7f6...9ae7ac`; base `0xf4d7f6...9ae7ac`; arbitrum `0xf4d7f6...9ae7ac` | ⚠️ Unaudited |
 | Root | unknown | project_anchor | own_supporting | 0 | ethereum | unit-232229 | 4 deployments: ethereum `0x7ed48c...88368f`; bsc `0x7ed48c...88368f`; base `0x7ed48c...88368f`; arbitrum `0x7ed48c...88368f` | ⚠️ Unaudited |
 | Root | unknown | project_anchor | own_supporting | 0 | optimism | unit-232300 | 2 deployments: optimism `0xdc9456...b7235e`; hyperliquid `0xdc9456...b7235e` | ⚠️ Unaudited |
 | ShareClassManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-232239 | 6 deployments: ethereum `0xaffc26...d69bef`; optimism `0xaffc26...d69bef`; bsc `0xaffc26...d69bef`; hyperliquid `0xaffc26...d69bef`; base `0xaffc26...d69bef`; arbitrum `0xaffc26...d69bef` | ⚠️ Unaudited |
@@ -810,7 +825,11 @@ Removals (removed from original):
 | ShareToken | token | project_anchor | own_supporting | 0 | avalanche | unit-232458 | `0xa5d465...a2627b` | ⚠️ Unaudited |
 | ShareToken | token | project_anchor | own_supporting | 0 | avalanche | unit-232459 | `0xa62330...42dc72` | ⚠️ Unaudited |
 | SimplePriceManager | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-232212 | 6 deployments: ethereum `0x280c94...000823`; optimism `0x280c94...000823`; bsc `0x280c94...000823`; hyperliquid `0x280c94...000823`; base `0x280c94...000823`; arbitrum `0x280c94...000823` | ⚠️ Unaudited |
-| Spoke | unknown | project_anchor | own_supporting | 0 | ethereum | unit-232254 | 6 deployments: ethereum `0xec3582...8525ab`; optimism `0xec3582...8525ab`; bsc `0xec3582...8525ab`; hyperliquid `0xec3582...8525ab`; base `0xec3582...8525ab`; arbitrum `0xec3582...8525ab` | ⚠️ Unaudited |
+| Spell | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 5 deployments: ethereum `0x464d30...1e44e0`; ethereum `0x48c134...1963fd`; ethereum `0x7b2004...ab602f`; ethereum `0xa3ce97...e78cf0`; ethereum `0xcfbd14...6948a7` | ⚠️ Unaudited |
+| SpellArbitrum | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x9f0828...32f22f` | ⚠️ Unaudited |
+| SpellBase | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x4035fc...07f4fa`; base `0x4a9731...8ce880` | ⚠️ Unaudited |
+| SpellEthereum | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x200116...be0420`; ethereum `0xf35501...f5009d`; arbitrum `0x36b87b...f00f03` | ⚠️ Unaudited |
+| Spoke | unknown | project_anchor | own_supporting | 0 | ethereum | n/a | 12 deployments: ethereum `0xd30da1...23fa2b`; ethereum `0xec3582...8525ab`; optimism `0xec3582...8525ab`; bsc `0xd30da1...23fa2b`; bsc `0xec3582...8525ab`; hyperliquid `0xec3582...8525ab`; base `0xd30da1...23fa2b`; base `0xec3582...8525ab`; arbitrum `0xd30da1...23fa2b`; arbitrum `0xec3582...8525ab`; avalanche `0xd30da1...23fa2b`; avalanche `0xec3582...8525ab` | ⚠️ Unaudited |
 | SubsidyManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-232241 | 6 deployments: ethereum `0xbfc7b6...b9d646`; optimism `0xbfc7b6...b9d646`; bsc `0xbfc7b6...b9d646`; hyperliquid `0xbfc7b6...b9d646`; base `0xbfc7b6...b9d646`; arbitrum `0xbfc7b6...b9d646` | ⚠️ Unaudited |
 | SyncDepositVaultFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-232252 | 4 deployments: ethereum `0xdb9c27...df700a`; bsc `0xdb9c27...df700a`; base `0xdb9c27...df700a`; arbitrum `0xdb9c27...df700a` | ⚠️ Unaudited |
 | SyncDepositVaultFactory | registry | project_anchor | own_supporting | 0 | optimism | unit-232299 | 2 deployments: optimism `0xdb9c27...df700a`; hyperliquid `0xdb9c27...df700a` | ⚠️ Unaudited |
@@ -824,7 +843,10 @@ Removals (removed from original):
 | Tranche | core_logic | project_anchor | own_supporting | 0 | base | unit-232540 | `0x5a0f93...7dcf64` | ⚠️ Unaudited |
 | Tranche | core_logic | project_anchor | own_supporting | 0 | base | unit-232542 | `0x8c213e...8c4b86` | ⚠️ Unaudited |
 | Tranche | core_logic | project_anchor | own_supporting | 0 | arbitrum | unit-232425 | `0x8c213e...8c4b86` | ⚠️ Unaudited |
+| TrancheTokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2712fe...f18dca` | ⚠️ Unaudited |
+| UserEscrow | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x9fc3a3...17c9d7`; base `0x9fc3a3...17c9d7`; arbitrum `0x9fc3a3...17c9d7` | ⚠️ Unaudited |
 | VaultDecoder | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-232231 | 6 deployments: ethereum `0x8ca537...be6d38`; optimism `0x8ca537...be6d38`; bsc `0x8ca537...be6d38`; hyperliquid `0x8ca537...be6d38`; base `0x8ca537...be6d38`; arbitrum `0x8ca537...be6d38` | ⚠️ Unaudited |
+| VaultOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xdf515b...3a30d8` | ⚠️ Unaudited |
 | VaultRegistry | registry | project_anchor | own_supporting | 0 | ethereum | unit-232251 | 6 deployments: ethereum `0xd9531a...f2ca7b`; optimism `0xd9531a...f2ca7b`; bsc `0xd9531a...f2ca7b`; hyperliquid `0xd9531a...f2ca7b`; base `0xd9531a...f2ca7b`; arbitrum `0xd9531a...f2ca7b` | ⚠️ Unaudited |
 | VaultRouter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-232256 | 6 deployments: ethereum `0xf68401...da63f6`; optimism `0xf68401...da63f6`; bsc `0xf68401...da63f6`; hyperliquid `0xf68401...da63f6`; base `0xf68401...da63f6`; arbitrum `0xf68401...da63f6` | ⚠️ Unaudited |
 | WormholeAdapter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-232223 | `0x4be430...c706a7` | ⚠️ Unaudited |
@@ -838,18 +860,22 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ⚠️ Verified by Bytecode + Unaudited (0)
+### ⚠️ Verified by Bytecode + Unaudited (1)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Messages | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 4 deployments: ethereum `0xaf9f6a...b58ea5`; base `0xaf9f6a...b58ea5`; arbitrum `0x811f7b...9d92c3`; arbitrum `0xaf9f6a...b58ea5` | ⚠️ Unaudited (bytecode match) |
 
-### ❓ Unverified (97)
+### ❓ Unverified (101)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2712fe...f18dca` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb31234...14595d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232307 | `0x050206...6a7396` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232308 | `0x055589...86d0de` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | monad | unit-232309 | `0x05e22c...6133cf` | ❓ Unverified |
@@ -945,6 +971,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | pharos | unit-232400 | `0xf68401...da63f6` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | pharos | unit-232401 | `0xf837a2...f30b27` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | pharos | unit-232402 | `0xff8ed1...6e273d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x78e9e6...e58142` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xfd3791...06d0da` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-232454 | `0x1121f4...897784` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-232462 | `0xfe6920...dfd77a` | ❓ Unverified |
 
@@ -1092,7 +1120,7 @@ Verified + unaudited native implementations ranked by TVL:
 | avalanche | `0xa5d465...a2627b` | ShareToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | `0xa62330...42dc72` | ShareToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x280c94...000823` | SimplePriceManager | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xec3582...8525ab` | Spoke | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd30da1...23fa2b` | Spoke | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0xbfc7b6...b9d646` | SubsidyManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0xdb9c27...df700a` | SyncDepositVaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | optimism | `0xdb9c27...df700a` | SyncDepositVaultFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -1118,10 +1146,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 134 |
+| native | 157 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 97 |
+| needs_review | 101 |
 
 ## Scope Matching Notes
 

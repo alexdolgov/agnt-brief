@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: MORE Markets (`more-markets`)
 - Website: [https://www.more.markets](https://www.more.markets)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: ethereum
-- Contract surface: 22 unique implementations (22 raw deployments)
+- Chains: arbitrum, avalanche, base, ethereum
+- Contract surface: 25 unique implementations (25 raw deployments)
 - Coverage basis: 0/22 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $9,829,470.20
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for MORE Mark
 
 ### Architecture
 
-The pinned logic-topography run contains 22 contract row(s) across ethereum. Structural roles: 12 core, 10 supporting. 7 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 22 contract row(s) across arbitrum, avalanche, base, ethereum. Structural roles: 12 core, 10 supporting. 7 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -77,7 +77,7 @@ The pinned logic-topography run contains 22 contract row(s) across ethereum. Str
 
 ## Contract Surface Quality
 
-- Indexed contracts: 22; live-surface contracts included: 22 (22 live, 0 unknown).
+- Logic-topography rows: 22; live-surface rows included: 22 (22 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 22/22 live.
 - Detected codebases: none
@@ -88,15 +88,15 @@ The pinned logic-topography run contains 22 contract row(s) across ethereum. Str
 - Coverage of address-book-owned deployed-live implementations: 0/22 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 22 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 3
-- Deployed-live implementations: 22 of 22 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/22
+- Outside the address book: 3 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 6
+- Confirmed-live implementations: 22 of 25 unique; 3 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/22
 - Verified + Unaudited implementations: 22
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 22
-- Raw deployments: 22
+- Unverified implementations: 3
+- Unique implementations: 25
+- Raw deployments: 25
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -154,11 +154,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| VaultsFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x7bdb8b...56bb0c` | ❓ Unverified |
+| VaultsFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x7bdb8b...56bb0c` | ❓ Unverified |
+| VaultsFactory | registry | non_address_book | non_address_book_inventory (excluded) | 1 | avalanche | n/a | `0x7bdb8b...56bb0c` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -203,7 +207,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 18 |
 | upstream | 4 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

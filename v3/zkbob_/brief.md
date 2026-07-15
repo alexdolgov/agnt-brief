@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: zkBob_ (`zkbob_`)
 - Website: [https://www.zkbob.com/](https://www.zkbob.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: optimism, polygon, sepolia
 - Contract surface: 54 unique implementations (54 raw deployments)
@@ -73,7 +73,7 @@ The pinned logic-topography run contains 12 contract row(s) across optimism, pol
 
 ## Contract Surface Quality
 
-- Indexed contracts: 12; live-surface contracts included: 12 (12 live, 0 unknown).
+- Logic-topography rows: 12; live-surface rows included: 12 (12 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 18/30 live.
 - Detected codebases: none
@@ -84,13 +84,13 @@ The pinned logic-topography run contains 12 contract row(s) across optimism, pol
 - Coverage of address-book-owned deployed-live implementations: 2/12 (16.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 18 own, 9 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 27 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 27 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 10
-- Deployed-live implementations: 18 of 54 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 2/12
-- Verified + Unaudited implementations: 10
+- Confirmed-live implementations: 18 of 54 unique; 36 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 2/39
+- Verified + Unaudited implementations: 37
 - Verified by bytecode match: 0
-- Unverified implementations: 6
+- Unverified implementations: 15
 - Unique implementations: 54
 - Raw deployments: 54
 - Audits discovered: 4 (4 direct, 0 inherited from forked code)
@@ -105,7 +105,7 @@ The pinned logic-topography run contains 12 contract row(s) across optimism, pol
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Decurity | Tier 2 | 2 | 16.7% | 2023-01 |
+| Decurity | Tier 2 | 2 | 5.1% | 2023-01 |
 
 ## Contract Surface
 

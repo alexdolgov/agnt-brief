@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Generic.Money (`generic.money`)
 - Website: [https://www.generic.money/](https://www.generic.money/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 15 unique implementations (15 raw deployments)
+- Contract surface: 22 unique implementations (26 raw deployments)
 - Coverage basis: 6/14 confirmed own live verified implementations (42.9%); conservative 42.9% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,048,044.24
 - On-chain TVL (included contracts): n/a
@@ -44,7 +44,7 @@ The pinned logic-topography run contains 17 contract row(s) across ethereum. Str
 
 ## Fork Analysis
 
-1 of 12 contracts are derived from known codebases. 11 contracts have no detected origin.
+1 of 14 contracts are derived from known codebases. 13 contracts have no detected origin.
 
 ### Forked Contracts
 
@@ -59,10 +59,12 @@ Removals (removed from original): none
 
 ### Original Contracts (no fork detected - full audit scope)
 
+- BridgeCoordinatorL1 (`0xcecf6e...d056b9`, chain 1)
 - Controller (`0xf056d4...92825c`, chain 1)
 - ERC1967Proxy (`0x3794d7...5e3d17`, chain 1)
 - GenericDepositor (`0x79b4cd...35f919`, chain 1)
 - GenericUnit (`0x8c307b...172502`, chain 1)
+- GenericUSD (`0x933e1a...feacc0`, chain 1)
 - GenericUSD (`0xac8c1a...98589b`, chain 1)
 - GenericVault (`0x4825ef...3c1c3f`, chain 1)
 - GenericVault (`0x6133da...89892a`, chain 1)
@@ -73,7 +75,7 @@ Removals (removed from original): none
 
 ## Contract Surface Quality
 
-- Indexed contracts: 17; live-surface contracts included: 17 (15 live, 2 unknown).
+- Logic-topography rows: 17; live-surface rows included: 17 (17 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 15/18 live.
 - Detected codebases: none
@@ -84,15 +86,15 @@ Removals (removed from original): none
 - Coverage of address-book-owned deployed-live implementations: 6/14 (42.9%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 14 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (1 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 4
-- Deployed-live implementations: 15 of 15 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 6/14
-- Verified + Unaudited implementations: 8
+- Outside the address book: 7 discovered implementations shown in the inventory but excluded from coverage (1 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 7
+- Confirmed-live implementations: 15 of 22 unique; 7 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 6/22
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 15
-- Raw deployments: 15
+- Unique implementations: 22
+- Raw deployments: 26
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -105,7 +107,7 @@ Removals (removed from original): none
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 6 | 42.9% | 2026-01 |
+| Spearbit | Tier 1 | 6 | 27.3% | 2026-01 |
 
 ## Contract Surface
 
@@ -113,26 +115,33 @@ Removals (removed from original): none
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
-| BridgeCoordinatorL1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386804 | `0x0503f2...cb6a01` | ✅ Audited |
+| BridgeCoordinatorL1 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386804 | 2 deployments: ethereum `0x0503f2...cb6a01`; ethereum `0xcecf6e...d056b9` | ✅ Audited |
 | GenericDepositor | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386793 | `0x79b4cd...35f919` | ✅ Audited |
 | GenericUnit | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386794 | `0x8c307b...172502` | ✅ Audited |
 | LayerZeroAdapter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-386787 | `0x05a166...b0144e` | ✅ Audited |
 | LineaBridgeAdapter | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-386799 | `0xe39d67...b9ab93` | ✅ Audited |
 | OneInchSwapper | adapter | project_anchor | own_supporting | 0 | ethereum | unit-386796 | `0xb23684...7aeffc` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | AggregationRouterV6 | adapter | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-386788 | `0x111111...842a65` | ⚠️ Unaudited |
+| Controller | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e4b88...086b28` | ⚠️ Unaudited |
 | Controller | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386802 | `0x3a64d2...c973ae` | ⚠️ Unaudited |
+| Controller | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x6a7af8...bc998b` | ⚠️ Unaudited |
 | Controller | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386800 | `0xf056d4...92825c` | ⚠️ Unaudited |
 | DAO | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386801 | `0x3794d7...5e3d17` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x12dc03...1bd5b9`; ethereum `0x17a8b3...383562` | ⚠️ Unaudited |
+| GenericUnit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xee77df...3d69d7` | ⚠️ Unaudited |
+| GenericUSD | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386803 | 2 deployments: ethereum `0x933e1a...feacc0`; ethereum `0xece811...399edf` | ⚠️ Unaudited |
 | GenericUSD | unknown | project_anchor | own_supporting | 0 | ethereum | unit-386795 | `0xac8c1a...98589b` | ⚠️ Unaudited |
-| GenericUSD | unknown | project_anchor | own_supporting | 1 | ethereum | unit-386803 | `0xece811...399edf` | ⚠️ Unaudited |
+| GenericUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xbcfafe...42b738` | ⚠️ Unaudited |
 | GenericVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-386789 | `0x4825ef...3c1c3f` | ⚠️ Unaudited |
 | GenericVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-386791 | `0x6133da...89892a` | ⚠️ Unaudited |
+| GenericVault | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x844584...d71b1b`; ethereum `0xfce133...6b73cf` | ⚠️ Unaudited |
 | GenericVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-386797 | `0xb82809...8157fe` | ⚠️ Unaudited |
+| OneInchSwapper | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc1c8db...200a50` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -218,8 +227,8 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | `0x3a64d2...c973ae` | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0xf056d4...92825c` | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x3794d7...5e3d17` | DAO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x933e1a...feacc0` | GenericUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0xac8c1a...98589b` | GenericUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | `0xece811...399edf` | GenericUSD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x4825ef...3c1c3f` | GenericVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0x6133da...89892a` | GenericVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | `0xb82809...8157fe` | GenericVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -228,9 +237,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 15 |
+| native | 21 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

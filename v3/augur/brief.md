@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Augur (`augur`)
 - Website: [https://augur.net/](https://augur.net/)
 - Lifecycle: active (Tier 0, 90.5% below peak)
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 29 unique implementations (29 raw deployments)
+- Contract surface: 135 unique implementations (145 raw deployments)
 - Coverage basis: 9/23 confirmed own live verified implementations (39.1%); conservative 39.1% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,260,713.35
 - On-chain TVL (included contracts): $4,454,398.26
@@ -84,7 +84,7 @@ The pinned logic-topography run contains 23 contract row(s) across ethereum. Str
 
 ## Contract Surface Quality
 
-- Indexed contracts: 23; live-surface contracts included: 23 (23 live, 0 unknown).
+- Logic-topography rows: 23; live-surface rows included: 23 (23 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 29/29 live.
 - Detected codebases: none
@@ -95,15 +95,15 @@ The pinned logic-topography run contains 23 contract row(s) across ethereum. Str
 - Coverage of address-book-owned deployed-live implementations: 9/23 (39.1%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 29 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 1
-- Deployed-live implementations: 29 of 29 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 9/23
-- Verified + Unaudited implementations: 14
+- Outside the address book: 106 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 4
+- Confirmed-live implementations: 29 of 135 unique; 106 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 9/80
+- Verified + Unaudited implementations: 71
 - Verified by bytecode match: 0
-- Unverified implementations: 6
-- Unique implementations: 29
-- Raw deployments: 29
+- Unverified implementations: 55
+- Unique implementations: 135
+- Raw deployments: 145
 - Audits discovered: 7 (7 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): n/a
@@ -116,9 +116,9 @@ The pinned logic-topography run contains 23 contract row(s) across ethereum. Str
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Zeppelin | Tier 2 | 9 | 39.1% | 2018-03 |
-| LeastAuthority | Tier 2 | 3 | 13.0% | 2017-12 |
-| ChainSecurity | Tier 1 | 1 | 4.3% | 2017-12 |
+| Zeppelin | Tier 2 | 9 | 11.3% | 2018-03 |
+| LeastAuthority | Tier 2 | 3 | 3.8% | 2017-12 |
+| ChainSecurity | Tier 1 | 1 | 1.3% | 2017-12 |
 
 ## Contract Surface
 
@@ -136,24 +136,81 @@ The pinned logic-topography run contains 23 contract row(s) across ethereum. Str
 | Trade | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227342 | `0x0cd32f...915667` | ✅ Audited |
 | Universe | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227353 | `0x49244b...46e5aa` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (14)
+### ⚠️ Verified + Unaudited (71)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | Affiliates | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227350 | `0x3a4131...e635b3` | ⚠️ Unaudited |
 | AffiliateValidator | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227347 | `0x2a2565...0be659` | ⚠️ Unaudited |
+| Augur | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x75228d...551599` | ⚠️ Unaudited |
 | AugurTrading | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227357 | `0x63a1ee...02881e` | ⚠️ Unaudited |
 | AugurWalletRegistry | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227364 | `0x9fa160...8e5128` | ⚠️ Unaudited |
 | BuyParticipationTokens | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227343 | `0x1aacc9...602483` | ⚠️ Unaudited |
+| CancelOrder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x344820...1e3aaf` | ⚠️ Unaudited |
+| CaptureTheFlag | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2faf44...006396` | ⚠️ Unaudited |
+| Cash | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x9b4af4...ee960e`; ethereum `0xd55241...76b96b` | ⚠️ Unaudited |
+| ChaiBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x77c31e...4d7438` | ⚠️ Unaudited |
+| ClaimTradingProceeds | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x433447...07872a` | ⚠️ Unaudited |
+| CompleteSets | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6bff4...afe5ab` | ⚠️ Unaudited |
+| Controlled | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6da4e6...66759c` | ⚠️ Unaudited |
+| Controller | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb33371...0ff3e7` | ⚠️ Unaudited |
+| Coordinator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9401f3...f6a201` | ⚠️ Unaudited |
+| CreateOrder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7f27b0...e97999` | ⚠️ Unaudited |
+| Delegator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x10b558...e15806`; ethereum `0xd7a140...db74d2` | ⚠️ Unaudited |
+| DevUtils | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xdaed44...e87046`; ethereum `0xf15fba...f8fb1e` | ⚠️ Unaudited |
+| DisputeCrowdsourcer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x183614...c8d360` | ⚠️ Unaudited |
+| DisputeCrowdsourcerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1be986...733bf7` | ⚠️ Unaudited |
+| ERC20BridgeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8ed95d...b20db0` | ⚠️ Unaudited |
+| Eth2DaiBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0ac2d6...38ad3f` | ⚠️ Unaudited |
 | Exchange | unknown | project_anchor | own_supporting | 1 | ethereum | unit-227370 | `0x61935c...93b7ef` | ⚠️ Unaudited |
+| Exchange | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb27f1d...1400c0` | ⚠️ Unaudited |
+| FeeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe0dfed...e6e2de` | ⚠️ Unaudited |
+| FeeTokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe86a4b...e808a8` | ⚠️ Unaudited |
+| FeeWindow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x56cc82...061881` | ⚠️ Unaudited |
+| FeeWindowFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5b4140...c5b663` | ⚠️ Unaudited |
+| FillOrder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x39c230...bd0303` | ⚠️ Unaudited |
+| Forwarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x132a04...cefa9a`; ethereum `0x4699d5...f24f53`; ethereum `0x4ef40d...dbc5ce` | ⚠️ Unaudited |
+| InitialReporter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4fa2b6...fcde6d` | ⚠️ Unaudited |
+| InitialReporterFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbca52c...0f4c59` | ⚠️ Unaudited |
+| Mailbox | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4dcb58...4b3b66` | ⚠️ Unaudited |
+| MailboxFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe33ca1...763540` | ⚠️ Unaudited |
+| Map | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x94c014...0763d9` | ⚠️ Unaudited |
+| MapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x67f53b...86777e` | ⚠️ Unaudited |
+| Market | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x380070...d8ce01`; ethereum `0xb9fb1a...fc1dcb` | ⚠️ Unaudited |
+| MarketFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x518530...7494ee` | ⚠️ Unaudited |
+| OICash | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x12f513...4fa4fe` | ⚠️ Unaudited |
+| Order | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x75d789...005f8f` | ⚠️ Unaudited |
+| Orders | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd0ba86...83191a` | ⚠️ Unaudited |
+| OrdersFetcher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa97a3e...b2e692` | ⚠️ Unaudited |
+| OrdersFinder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x01f2ab...6ba3df` | ⚠️ Unaudited |
+| Penalizer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x67c6e8...e768fa` | ⚠️ Unaudited |
 | ProfitLoss | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227348 | `0x2c1672...f26c01` | ⚠️ Unaudited |
 | RedeemStake | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227362 | `0x9ac7b2...f58401` | ⚠️ Unaudited |
 | RelayHub | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227354 | `0x5648b6...ee0db5` | ⚠️ Unaudited |
+| Reporting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x12702a...d6e6ae` | ⚠️ Unaudited |
+| RepPriceOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x023e27...686aa6` | ⚠️ Unaudited |
+| ReputationToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6c114b...7e43d1` | ⚠️ Unaudited |
+| ReputationTokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8fee0d...9a3643` | ⚠️ Unaudited |
+| ShareToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2a21d9...f14663` | ⚠️ Unaudited |
+| ShareTokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x60a977...50e51d` | ⚠️ Unaudited |
+| StakeManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5ae81a...3141ea` | ⚠️ Unaudited |
+| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x2a17c3...2503f3`; ethereum `0x69cb36...4660e7`; ethereum `0xce0382...6fc0aa` | ⚠️ Unaudited |
+| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x5fc73b...15b8b1`; ethereum `0xe533d7...356beb` | ⚠️ Unaudited |
+| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xa26e80...ffa777` | ⚠️ Unaudited |
+| StakingProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9c427e...f7ce12` | ⚠️ Unaudited |
+| TestPaymasterEverythingAccepted | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf50b17...7476c7` | ⚠️ Unaudited |
+| Time | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe9f0e0...2fc527` | ⚠️ Unaudited |
+| Trade | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x24e2b1...3ca6cd` | ⚠️ Unaudited |
+| TradingEscapeHatch | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9e130e...9e0d13` | ⚠️ Unaudited |
 | UniswapV2Factory | registry | project_anchor | own_supporting | 0 | ethereum | unit-227356 | `0x5c69be...c5aa6f` | ⚠️ Unaudited |
 | UniswapV2Pair | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227365 | `0xa478c2...33eb11` | ⚠️ Unaudited |
 | UniswapV2Router02 | adapter | project_anchor | own_supporting | 0 | ethereum | unit-227359 | `0x7a250d...f2488d` | ⚠️ Unaudited |
+| Universe | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfbcd5e...a400ff` | ⚠️ Unaudited |
+| UniverseFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe62e47...01bb95` | ⚠️ Unaudited |
 | WarpSync | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227369 | `0xe0c69a...c7fc4d` | ⚠️ Unaudited |
+| ZeroExGovernor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7d3455...271392` | ⚠️ Unaudited |
 | ZeroXTrade | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227360 | `0x8346f3...780eed` | ⚠️ Unaudited |
+| ZrxVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0xba7f8b...7a5eaf`; ethereum `0xce2a4b...7fa85e` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -167,18 +224,67 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (55)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x061ba3...29bc92` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x06eb3b...eaacb9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x08d170...b0b0b8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x16c0e7...0c14cb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1c36b0...0c3312` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227344 | `0x1dd864...a20e18` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e8229...c5fcaf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x205019...495d3e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x251803...974091` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2d78ac...cc3e05` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x38a795...12c722` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3900f5...a15f72` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x393a1f...043088` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227349 | `0x3a1b0d...3bf32a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3ba1f0...e6471b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3fc457...1664ff` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x47b336...3960c4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x533344...f5355f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x55dc8f...68e335` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227355 | `0x5836be...a35d7d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5ff2c4...97b14f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x60c880...249a96` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x60f7f3...117ed7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x65d136...e4193d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6a3b7c...7bf415` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6bc8cf...11eb37` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6cb9a1...2d6751` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x71995a...39caac` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227358 | `0x739615...b18887` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7fbb87...73fd36` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8d69d7...8c6ead` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x96ddba...414744` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9c0906...cb62dd` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9ea309...87edb8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa00703...ecc5aa` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa3ac98...e289e3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xac8ba6...9dda9e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xaef4d0...1b606e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb4fc3a...effb25` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbae04c...069ee4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbcc994...208799` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbf1e3a...28a9fe` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbfe7b0...deb8be` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227366 | `0xc2930a...f91c4e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc76121...7492dc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xccc243...fc463f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcd53c6...a26a2f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcf0c58...43c175` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-227368 | `0xd2a04e...75b9cf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd5ac4d...3b080e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd69769...25976d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe35e72...3aa1db` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe97ea9...7717f9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xeead9c...87b834` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf342f3...64ee62` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -395,10 +501,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 20 |
+| native | 77 |
 | upstream | 3 |
 | standard_library | 0 |
-| needs_review | 6 |
+| needs_review | 55 |
 
 ## Scope Matching Notes
 

@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: RAGE Protocol (`rage-protocol`)
 - Website: [https://ultraroundmoney.com/rage](https://ultraroundmoney.com/rage)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base
-- Contract surface: 4 unique implementations (5 raw deployments)
+- Contract surface: 23 unique implementations (31 raw deployments)
 - Coverage basis: 3/3 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $232,093.81
 - On-chain TVL (included contracts): n/a
@@ -63,7 +63,7 @@ The pinned logic-topography run contains 3 contract row(s) across base. Structur
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Logic-topography rows: 3; live-surface rows included: 3 (3 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 3/3 live.
 - Detected codebases: none
@@ -74,15 +74,15 @@ The pinned logic-topography run contains 3 contract row(s) across base. Structur
 - Coverage of address-book-owned deployed-live implementations: 3/3 (100.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 3 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 1 discovered implementations excluded (1 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 20 discovered implementations shown in the inventory but excluded from coverage (1 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 2
-- Deployed-live implementations: 3 of 4 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 3/3
-- Verified + Unaudited implementations: 0
+- Confirmed-live implementations: 3 of 23 unique; 20 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 3/22
+- Verified + Unaudited implementations: 19
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 4
-- Raw deployments: 5
+- Unverified implementations: 1
+- Unique implementations: 23
+- Raw deployments: 31
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -95,7 +95,7 @@ The pinned logic-topography run contains 3 contract row(s) across base. Structur
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 3 | 100.0% | 2025-09 |
+| unknown | Tier 2 | 3 | 13.6% | 2025-09 |
 
 ## Contract Surface
 
@@ -107,9 +107,29 @@ The pinned logic-topography run contains 3 contract row(s) across base. Structur
 | RageBuyingProtocol | unknown | project_anchor | own_supporting | 0 | base | unit-391266 | `0xff70cd...b6da4c` | ✅ Audited |
 | RageChaosEngine | unknown | project_anchor | own_supporting | 0 | base | unit-391262 | `0x4c15f7...2813fe` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (19)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Circle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5babfc...dec402` | ⚠️ Unaudited |
+| CircleTemple | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe77b94...1fb987` | ⚠️ Unaudited |
+| Hestia | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbc7755...6259d8` | ⚠️ Unaudited |
+| HestiaChaosEngine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4e5524...1887b8` | ⚠️ Unaudited |
+| HestiaMine | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc10aa7...61ddc3` | ⚠️ Unaudited |
+| RageCalculation | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb8ed15...c75ae1` | ⚠️ Unaudited |
+| RageDepot | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x33e11f...da40de`; base `0xa87008...84c82c` | ⚠️ Unaudited |
+| RageOptionNft | token | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe29a22...421178` | ⚠️ Unaudited |
+| RageOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9b8a45...42874c` | ⚠️ Unaudited |
+| RageOtc | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 6 deployments: base `0x022118...d12b6c`; base `0x43a3a8...90c224`; base `0x4d9593...9441e4`; base `0xaee9b9...6ecbe1`; base `0xc95e30...8ad6a1`; base `0xdcb26d...a8be85` | ⚠️ Unaudited |
+| RagePresale | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x96cd71...4db3ac` | ⚠️ Unaudited |
+| RageSwapper | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x03fee5...750c44` | ⚠️ Unaudited |
+| RageTreasury | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x94e29a...adae30` | ⚠️ Unaudited |
+| Urm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf0e334...997837` | ⚠️ Unaudited |
+| UrmFlankingTower | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: base `0x8a0f28...c3e62c`; base `0xf25898...be6657` | ⚠️ Unaudited |
+| UrmFortress | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x5e06b7...0f1fc3` | ⚠️ Unaudited |
+| UrmOracle | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa51e78...2e45a1` | ⚠️ Unaudited |
+| UrmSwapper | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x52c540...cde13c` | ⚠️ Unaudited |
+| UrmSwapperRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3cb81b...d0ee31` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -166,7 +186,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 22 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 1 |

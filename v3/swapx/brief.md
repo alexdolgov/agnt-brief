@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: SwapX (`swapx`)
 - Website: [https://swapx.fi/](https://swapx.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, avalanche, base, blast, bsc, celo, ethereum, fantom, kava, linea, mantle, opbnb, polygon, polygon-zkevm, scroll, sonic, zksync-era
-- Contract surface: 39 unique implementations (39 raw deployments)
+- Contract surface: 86 unique implementations (140 raw deployments)
 - Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $420,582.00
 - On-chain TVL (included contracts): n/a
@@ -90,7 +90,7 @@ The activated project remains an explicit cohort member with an empty normalized
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Logic-topography rows: 0; live-surface rows included: 0 (0 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 35/35 live.
 - Detected codebases: none
@@ -101,15 +101,15 @@ The activated project remains an explicit cohort member with an empty normalized
 - Coverage of address-book-owned deployed-live implementations: not assessable
 - Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
 - Address-book implementation classification: 35 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 4 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 35 of 39 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/0
-- Verified + Unaudited implementations: 0
+- Outside the address book: 51 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 30
+- Confirmed-live implementations: 35 of 86 unique; 51 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/47
+- Verified + Unaudited implementations: 47
 - Verified by bytecode match: 0
-- Unverified implementations: 35
-- Unique implementations: 39
-- Raw deployments: 39
+- Unverified implementations: 39
+- Unique implementations: 86
+- Raw deployments: 140
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -128,9 +128,57 @@ The activated project remains an explicit cohort member with an empty normalized
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (47)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AirdropClaim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 8 deployments: sonic `0x0797c9...f0c260`; sonic `0x10e075...56d350`; sonic `0x354a24...5e63ba`; sonic `0x4183f0...b0fb66`; sonic `0x5df06c...478734`; sonic `0x9ad934...953cfc`; sonic `0xeafc39...3a6e99`; sonic `0xf30ff9...019e46` | ⚠️ Unaudited |
+| AlgebraVaultFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0xc21af3...e4e5e6`; sonic `0xdf18a1...cde881` | ⚠️ Unaudited |
+| BribeFactoryV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x1fb164...85b6b3`; sonic `0xdaea57...629bb0` | ⚠️ Unaudited |
+| BribeFactoryV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x99a257...55e095`; sonic `0xb5659d...5a0382` | ⚠️ Unaudited |
+| ClaimFeesMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x0fe846...4a2f83`; sonic `0xdb3e03...00b1a9` | ⚠️ Unaudited |
+| GaugeFactoryV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x50ead8...875458`; sonic `0x6a36b9...7c68da` | ⚠️ Unaudited |
+| GaugeFactoryV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0xa1462d...ef819c`; sonic `0xff2e7c...85b8f3` | ⚠️ Unaudited |
+| GaugeFactoryV2_CL | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x0326bc...69b120`; sonic `0x4293d5...d1add7` | ⚠️ Unaudited |
+| GaugeFactoryV2_CL | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x27e774...cae300`; sonic `0x41c1ef...b33922` | ⚠️ Unaudited |
+| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x66f28a...5eacb1`; sonic `0x7529f6...0e226c` | ⚠️ Unaudited |
+| MerkleTree | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 6 deployments: sonic `0x36daa5...6f6419`; sonic `0x3deac0...1d64be`; sonic `0xac4d45...859642`; sonic `0xbf0073...e1d39b`; sonic `0xcedbc0...aeab7d`; sonic `0xe4b7bb...b55f60` | ⚠️ Unaudited |
+| MerkleTreeSWPxNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x665bd4...dd8e5f`; sonic `0xfccbb2...48ad59` | ⚠️ Unaudited |
+| MinterUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x4fe93c...f80589`; sonic `0x8b8c58...c83364` | ⚠️ Unaudited |
+| MinterUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x6991a1...3d859c`; sonic `0xc68f07...e0afbe` | ⚠️ Unaudited |
+| MonolithicVoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 3 deployments: sonic `0x51f029...f12ee0`; sonic `0x75b07f...520937`; sonic `0xf3bb60...b20b4d` | ⚠️ Unaudited |
+| NFTSalesSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x55e342...2e1532`; sonic `0xda1073...4b5a4d` | ⚠️ Unaudited |
+| NFTSalesSplitter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x883b6c...4f9338` | ⚠️ Unaudited |
+| NFTSalesSplitter_V1 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x86fa3c...1345c0` | ⚠️ Unaudited |
+| PairAPI | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x2ec58a...31c4ff`; sonic `0x422601...a46a7b` | ⚠️ Unaudited |
+| PairAPI | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x33a353...d21f84`; sonic `0xa8bcba...e81e61` | ⚠️ Unaudited |
+| PairFactoryUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x05c1be...7f5663`; sonic `0xd887a7...502251` | ⚠️ Unaudited |
+| PairFactoryUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x1e58fe...2b858f`; sonic `0xeaed11...ff3828` | ⚠️ Unaudited |
+| PairV2Helper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x43cec2...52a86e` | ⚠️ Unaudited |
+| PermissionsRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x8751ea...4ed487`; sonic `0x8cefa4...0c30c8` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 3 deployments: sonic `0xb8de83...4e122f`; sonic `0xbc427b...389feb`; sonic `0xed37cb...7241c7` | ⚠️ Unaudited |
+| ReferralDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x85b08f...884422`; sonic `0x968ff4...285e28` | ⚠️ Unaudited |
+| RewardsDistributor | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x1c236d...4c94d3`; sonic `0x8f1795...374430` | ⚠️ Unaudited |
+| RouterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0xbfe77a...282c18`; sonic `0xf5f723...b29c27` | ⚠️ Unaudited |
+| Royalties | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x522dc8...1a9cd3`; sonic `0x7ab97f...a8b43b` | ⚠️ Unaudited |
+| SwapxTimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x3648af...e76a76`; sonic `0x650abd...3c82fd` | ⚠️ Unaudited |
+| SWPx | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x90c442...d8ebdf`; sonic `0xa04bc7...fb0e70` | ⚠️ Unaudited |
+| SWPxNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x619057...754ba0`; sonic `0xc83f36...e72f78` | ⚠️ Unaudited |
+| SWPxNFTFeeConverter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x4053ec...c07de0`; sonic `0xe983a6...d4e060` | ⚠️ Unaudited |
+| VeArtProxyUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x8ee87f...31b275`; sonic `0xe69667...e9792b` | ⚠️ Unaudited |
+| VeArtProxyUpgradeableV1_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0xa194e7...a43846` | ⚠️ Unaudited |
+| VeArtProxyUpgradeableV1_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0xf62fed...c896fd` | ⚠️ Unaudited |
+| veNFTAPI | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x7912f3...e01b3b`; sonic `0xe76c57...b6bec7` | ⚠️ Unaudited |
+| veNFTAPI | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x94584d...fb3d05`; sonic `0xae5417...7c6cb3` | ⚠️ Unaudited |
+| Vesting | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x082c47...7f4069` | ⚠️ Unaudited |
+| Vesting | unknown | non_address_book | non_address_book_inventory (excluded) | 3 | sonic | n/a | 4 deployments: sonic `0x1786fb...572cfd`; sonic `0x3a4744...44ee85`; sonic `0x91cc71...21460b`; sonic `0x972e71...f258ec` | ⚠️ Unaudited |
+| Vesting | unknown | non_address_book | non_address_book_inventory (excluded) | 4 | sonic | n/a | 5 deployments: sonic `0x58af3e...e38084`; sonic `0x8aa601...22da64`; sonic `0x90ff9c...0022ac`; sonic `0xd76c85...fdd7f3`; sonic `0xdf5390...fe0591` | ⚠️ Unaudited |
+| VoterV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | 2 deployments: sonic `0x40247b...d5bf3f`; sonic `0x53ff76...5d098f` | ⚠️ Unaudited |
+| VoterV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x838505...00a26d` | ⚠️ Unaudited |
+| VoterV3_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0xc1ae27...c407f2` | ⚠️ Unaudited |
+| VotingEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | 2 deployments: sonic `0x3dc1dd...2ca12e`; sonic `0xff5b46...f1b2ef` | ⚠️ Unaudited |
+| VotingEscrowV1_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x329d9c...83e397` | ⚠️ Unaudited |
+| VotingEscrowV1_1 | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0xaa30f0...576ca3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -249,9 +297,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 46 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 39 |
 
 ## Scope Matching Notes

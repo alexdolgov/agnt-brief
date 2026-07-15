@@ -9,7 +9,7 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ⚠️ Lifecycle status: DECLINING - TVL dropped 88.6% over 90 days
 
@@ -18,14 +18,14 @@
 - Project: Blend Money (`blend-money`)
 - Website: [https://blend.money/](https://blend.money/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, base, ethereum, hyperliquid, scroll
-- Contract surface: 15 unique implementations (21 raw deployments)
-- Coverage basis: 3/15 confirmed own live verified implementations (20.0%); conservative 20.0% with 0 needs-review implementation(s)
+- Chains: arbitrum, base, ethereum, hyperliquid, polygon, scroll
+- Contract surface: 29 unique implementations (97 raw deployments)
+- Coverage basis: 3/14 confirmed own live verified implementations (21.4%); conservative 21.4% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $122,738.61
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- On-chain TVL (included contracts): $8,101.70
+- TVL by chain: Arbitrum $8,101.70
 
 ## Project Description
 
@@ -33,7 +33,7 @@ This brief describes the observed EVM deployment and audit surface for Blend Mon
 
 ### Architecture
 
-The pinned logic-topography run contains 21 contract row(s) across arbitrum, base, ethereum, hyperliquid, scroll. Structural roles: 11 supporting, 10 core. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 21 contract row(s) across arbitrum, base, ethereum, hyperliquid, polygon, scroll. Structural roles: 11 supporting, 10 core. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -78,7 +78,7 @@ The pinned logic-topography run contains 21 contract row(s) across arbitrum, bas
 
 ## Contract Surface Quality
 
-- Indexed contracts: 21; live-surface contracts included: 21 (21 live, 0 unknown).
+- Logic-topography rows: 21; live-surface rows included: 21 (21 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 21/21 live.
 - Detected codebases: none
@@ -86,33 +86,33 @@ The pinned logic-topography run contains 21 contract row(s) across arbitrum, bas
 
 ## Audit Coverage Summary
 
-- Coverage of address-book-owned deployed-live implementations: 3/15 (20.0%)
+- Coverage of address-book-owned deployed-live implementations: 3/14 (21.4%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
-- Address-book implementation classification: 15 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Address-book implementation classification: 14 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 15 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 15 of 15 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 3/15
-- Verified + Unaudited implementations: 12
+- Confirmed-live implementations: 14 of 29 unique; 15 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 3/26
+- Verified + Unaudited implementations: 23
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 15
-- Raw deployments: 21
+- Unverified implementations: 3
+- Unique implementations: 29
+- Raw deployments: 97
 - Audits discovered: 12 (12 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-06 (fresh)
 - Audit staleness (calendar age): 12 fresh, 0 aging, 0 stale, 0 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
-- Tier 1 coverage: 13.3% (Spearbit)
+- Tier 1 coverage: 14.3% (Spearbit)
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 2 | 13.3% | 2025-10 |
-| Zellic | Tier 2 | 1 | 6.7% | 2025-10 |
+| Spearbit | Tier 1 | 2 | 7.7% | 2025-10 |
+| Zellic | Tier 2 | 1 | 3.8% | 2025-10 |
 
 ## Contract Surface
 
@@ -121,25 +121,36 @@ The pinned logic-topography run contains 21 contract row(s) across arbitrum, bas
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | RolesBroadcaster | unknown | project_anchor | own_supporting | 0 | base | unit-381233 | `0x6f94ac...061263` | ✅ Audited |
-| SwapAdapter | adapter | project_anchor | own_supporting | 0 | base | unit-381238 | `0xbf76d8...72def4` | ✅ Audited |
+| SwapAdapter | adapter | project_anchor | own_core | 0 | base | unit-381238 | `0xbf76d8...72def4` | ✅ Audited |
 | WhitelistedSwapAdapter | adapter | project_anchor | own_supporting | 0 | scroll | unit-381215 | `0x44c6dc...d3b437` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (12)
+### ⚠️ Verified + Unaudited (23)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| VaultV2 | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 5 deployments: arbitrum `0x567c1b...3b4e87`; arbitrum `0x75e9d4...7acb4f`; arbitrum `0x9ce8a7...128f45`; arbitrum `0xa47c52...7f4df9`; arbitrum `0xe3637c...9ece6e` | ⚠️ Unaudited |
+| AcrossXChainAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x26c1f8...b4677c`; ethereum `0x3f4196...b96a86`; ethereum `0x8d74ec...d633d6` | ⚠️ Unaudited |
+| CCTPXChainAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 7 deployments: ethereum `0x2809ff...f4b8da`; ethereum `0x60ee48...8ae793`; ethereum `0x68b0f8...64feb6`; ethereum `0xa40cff...45628c`; ethereum `0xbb62cb...c46cce`; polygon `0x44c6dc...d3b437`; hyperliquid `0x2809ff...f4b8da` | ⚠️ Unaudited |
+| GeneralAdapter1 | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x7eae59...48fb8b` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | 3 deployments: scroll `0x8a23d8...e3a0a7`; scroll `0xd39df2...e8a8ad`; scroll `0xec5906...995d59` | ⚠️ Unaudited |
+| MockRolesReceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x1be406...d72bdb` | ⚠️ Unaudited |
 | MorphoVaultController | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-381200 | `0xfeb458...0e3031` | ⚠️ Unaudited |
+| MorphoVaultController | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 6 deployments: ethereum `0xad7188...9c3449`; polygon `0x05824d...269b24`; polygon `0x107b98...a98fed`; hyperliquid `0x44c6dc...d3b437`; hyperliquid `0x9f4fb6...f96037`; arbitrum `0xad7188...9c3449` | ⚠️ Unaudited |
 | MorphoVaultController | core_logic | project_anchor | own_supporting | 0 | base | unit-381226 | `0x20baf0...4229c3` | ⚠️ Unaudited |
 | MorphoVaultController | core_logic | project_anchor | own_supporting | 0 | base | unit-381230 | `0x26c1f8...b4677c` | ⚠️ Unaudited |
 | MorphoVaultController | core_logic | project_anchor | own_supporting | 0 | arbitrum | unit-381211 | `0xfe07c5...b45304` | ⚠️ Unaudited |
 | MorphoVaultController | core_logic | project_anchor | own_supporting | 0 | scroll | unit-381218 | `0xab8436...45ed50` | ⚠️ Unaudited |
+| OFTXChainAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 3 deployments: ethereum `0x3fb0c3...156cf9`; polygon `0x9e622e...f3ab6b`; hyperliquid `0x26c1f8...b4677c` | ⚠️ Unaudited |
 | RolesGuard | governance | project_anchor | own_supporting | 0 | hyperliquid | unit-381244 | `0xab6a8f...debc49` | ⚠️ Unaudited |
-| RolesGuard | governance | project_anchor | own_supporting | 0 | base | unit-381223 | 2 deployments: base `0x0a55aa...75f718`; arbitrum `0x7d55a2...0acddf` | ⚠️ Unaudited |
+| RolesGuard | governance | project_anchor | own_core | 0 | base | unit-381223 | 5 deployments: ethereum `0xbb4021...c6156c`; polygon `0xad7188...9c3449`; hyperliquid `0x920029...3dd7bf`; base `0x0a55aa...75f718`; arbitrum `0x7d55a2...0acddf` | ⚠️ Unaudited |
 | RolesGuard | governance | project_anchor | own_supporting | 0 | scroll | unit-381221 | `0xad7188...9c3449` | ⚠️ Unaudited |
-| RolesReceiver | unknown | project_anchor | own_supporting | 0 | base | unit-381236 | 2 deployments: base `0x994455...7c5d6e`; arbitrum `0xa03f41...4a82e8` | ⚠️ Unaudited |
-| RolesReceiver | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-381202 | 2 deployments: base `0xe4e0f5...431360`; arbitrum `0x107b98...a98fed` | ⚠️ Unaudited |
+| RolesReceiver | unknown | project_anchor | own_core | 0 | ethereum | n/a | 11 deployments: ethereum `0x05824d...269b24`; ethereum `0x7d55a2...0acddf`; polygon `0x920029...3dd7bf`; polygon `0xfe07c5...b45304`; hyperliquid `0xab8436...45ed50`; hyperliquid `0xfe07c5...b45304`; base `0x994455...7c5d6e`; base `0xe4e0f5...431360`; arbitrum `0x107b98...a98fed`; arbitrum `0xa03f41...4a82e8`; scroll `0x6f94ac...061263` | ⚠️ Unaudited |
 | RolesReceiver | unknown | project_anchor | own_supporting | 0 | scroll | unit-381213 | `0x2af296...92a4c9` | ⚠️ Unaudited |
-| SwapAdapter | adapter | project_anchor | own_supporting | 0 | base | unit-381228 | 4 deployments: ethereum `0x30c743...b5e135`; hyperliquid `0x9e622e...f3ab6b`; base `0x220718...925754`; arbitrum `0x920029...3dd7bf` | ⚠️ Unaudited |
+| SwapAdapter | unknown | project_anchor | own_supporting | 0 | polygon | n/a | 14 deployments: ethereum `0x30c743...b5e135`; ethereum `0x8ccedc...db3406`; ethereum `0x9095bf...f12f53`; ethereum `0x920029...3dd7bf`; polygon `0x20baf0...4229c3`; polygon `0x9f4fb6...f96037`; polygon `0xa12e4f...c0354e`; hyperliquid `0x3d39b3...b7f5ae`; hyperliquid `0x7fba4a...c4b45e`; hyperliquid `0x9e622e...f3ab6b`; hyperliquid `0xad7188...9c3449`; base `0x220718...925754`; arbitrum `0x6f94ac...061263`; arbitrum `0x920029...3dd7bf` | ⚠️ Unaudited |
+| TimelockController | governance | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | 6 deployments: ethereum `0x107b98...a98fed`; polygon `0x6f94ac...061263`; hyperliquid `0x086d13...0ce76a`; hyperliquid `0x30c743...b5e135`; hyperliquid `0x6f94ac...061263`; hyperliquid `0xfeb458...0e3031` | ⚠️ Unaudited |
+| UserWithdrawController | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | polygon | n/a | 8 deployments: ethereum `0x509ce0...260303`; ethereum `0xb50d1f...b74089`; ethereum `0xfd5ce7...b32a50`; ethereum `0xfd99c8...e3a648`; polygon `0x086d13...0ce76a`; polygon `0x994455...7c5d6e`; hyperliquid `0xbb62cb...c46cce`; hyperliquid `0xd78357...01e652` | ⚠️ Unaudited |
+| UserWithdrawVaultAction | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x4dd1f0...5b9fe3`; polygon `0xab8436...45ed50`; polygon `0xe7c7c7...78dcb3`; hyperliquid `0xe4e0f5...431360` | ⚠️ Unaudited |
+| XChainVaultAction | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 6 deployments: ethereum `0x220718...925754`; ethereum `0x34f8b7...f44d12`; ethereum `0x79635a...27ca9a`; ethereum `0xe5db83...6985b1`; polygon `0x2af296...92a4c9`; hyperliquid `0x8d74ec...d633d6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -153,11 +164,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | hyperliquid | n/a | `0x3f4196...b96a86` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | `0x107b98...a98fed` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | scroll | n/a | `0x9f4fb6...f96037` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -281,19 +296,18 @@ Verified + unaudited native implementations ranked by TVL:
 | hyperliquid | `0xab6a8f...debc49` | RolesGuard | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | `0x0a55aa...75f718` | RolesGuard | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | scroll | `0xad7188...9c3449` | RolesGuard | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x994455...7c5d6e` | RolesReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0x107b98...a98fed` | RolesReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x05824d...269b24` | RolesReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | scroll | `0x2af296...92a4c9` | RolesReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | `0x220718...925754` | SwapAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x20baf0...4229c3` | SwapAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 10 |
-| upstream | 5 |
-| standard_library | 0 |
-| needs_review | 0 |
+| native | 18 |
+| upstream | 7 |
+| standard_library | 1 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

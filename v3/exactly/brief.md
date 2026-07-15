@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Exactly (`exactly`)
 - Website: [https://exact.ly](https://exact.ly)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base, ethereum, goerli, optimism
-- Contract surface: 115 unique implementations (115 raw deployments)
+- Contract surface: 133 unique implementations (143 raw deployments)
 - Coverage basis: 0/3 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $5,102,377.13
 - On-chain TVL (included contracts): n/a
@@ -115,7 +115,7 @@ The pinned logic-topography run contains 3 contract row(s) across base, ethereum
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Logic-topography rows: 3; live-surface rows included: 3 (3 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 60/84 live.
 - Detected codebases: none
@@ -126,15 +126,15 @@ The pinned logic-topography run contains 3 contract row(s) across base, ethereum
 - Coverage of address-book-owned deployed-live implementations: 0/3 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 60 own, 24 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 31 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 60 of 115 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/3
-- Verified + Unaudited implementations: 3
+- Outside the address book: 49 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 2 standard proxy/library)
+- Proxy deployments represented within implementation groups: 10
+- Confirmed-live implementations: 60 of 133 unique; 73 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/20
+- Verified + Unaudited implementations: 20
 - Verified by bytecode match: 0
-- Unverified implementations: 57
-- Unique implementations: 115
-- Raw deployments: 115
+- Unverified implementations: 113
+- Unique implementations: 133
+- Raw deployments: 143
 - Audits discovered: 33 (33 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/exactly/information))
@@ -154,13 +154,30 @@ The pinned logic-topography run contains 3 contract row(s) across base, ethereum
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (20)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| DeadAllower | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x136d84...0cc9da` | ⚠️ Unaudited |
+| EXA | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x0810a8...d4c076`; optimism `0x3c3a02...ed3442` | ⚠️ Unaudited |
+| ExaAccountFactory | registry | non_address_book | non_address_book_inventory (excluded) | 4 | ethereum | n/a | 4 deployments: ethereum `0x3427a5...79616e`; ethereum `0x6e1b5a...ed297b`; ethereum `0x8d493a...702163`; ethereum `0xcbeaaf...5a9668` | ⚠️ Unaudited |
+| ExaAccountFactory | registry | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x3427a5...79616e`; optimism `0xcbeaaf...5a9668` | ⚠️ Unaudited |
+| ExaAccountFactory | registry | non_address_book | non_address_book_inventory (excluded) | 4 | base | n/a | 4 deployments: base `0x3427a5...79616e`; base `0x6e1b5a...ed297b`; base `0x8d493a...702163`; base `0xcbeaaf...5a9668` | ⚠️ Unaudited |
+| ExaPlugin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x0aa352...860469` | ⚠️ Unaudited |
+| ExaPreviewer | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x48ccc0...e70727` | ⚠️ Unaudited |
+| FlashLoanAdapter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd2b94b...69bde2` | ⚠️ Unaudited |
+| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x7a6582...e843aa` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | non_address_book | standard_proxy_or_library (excluded) | 1 | optimism | n/a | `0xc0d6bc...9286d3` | ⚠️ Unaudited |
+| InterestRateModel | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x163538...4198ff` | ⚠️ Unaudited |
 | InterestRateModel | operational_periphery | project_anchor | own_supporting | 0 | base | unit-385236 | `0x406e73...4e35a4` | ⚠️ Unaudited |
 | InterestRateModel | operational_periphery | project_anchor | own_supporting | 0 | base | unit-385246 | `0xe963cd...7453b7` | ⚠️ Unaudited |
 | InterestRateModel | operational_periphery | project_anchor | own_supporting | 0 | base | unit-385247 | `0xf9b612...6380f2` | ⚠️ Unaudited |
+| IssuerChecker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9adcf1...0ff6bd` | ⚠️ Unaudited |
+| ProposalManager | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb92e0a...8c648f` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfba759...4b941a` | ⚠️ Unaudited |
+| Refunder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | 2 deployments: optimism `0xd5f8c9...fdd228`; base `0xaec84e...a782df` | ⚠️ Unaudited |
+| TimelockController | governance | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | 2 deployments: optimism `0x92024c...8eb58b`; base `0x92024c...8eb58b` | ⚠️ Unaudited |
+| WebauthnOwnerPlugin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbd9c70...7a1583` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -174,7 +191,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (112)
+### ❓ Unverified (113)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -252,6 +269,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-385232 | `0xd6e103...794d4c` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385186 | `0x057e3e...594d04` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385187 | `0x0b9d4a...06bc7a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x0dbd48...cf83b2` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385188 | `0x1a4fc2...142d4d` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385189 | `0x225561...7809d9` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-385190 | `0x22ab31...36533f` | ❓ Unverified |
@@ -538,10 +556,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 16 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 112 |
+| standard_library | 4 |
+| needs_review | 113 |
 
 ## Scope Matching Notes
 

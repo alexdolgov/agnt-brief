@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Eventum Bridge (`eventum-bridge`)
 - Website: [https://evedex.com/en-US/](https://evedex.com/en-US/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, ethereum
-- Contract surface: 48 unique implementations (64 raw deployments)
+- Contract surface: 79 unique implementations (116 raw deployments)
 - Coverage basis: 4/23 confirmed own live verified implementations (17.4%); conservative 17.4% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $2,518,168.45
 - On-chain TVL (included contracts): n/a
@@ -116,7 +116,7 @@ Removals (removed from original):
 
 ## Contract Surface Quality
 
-- Indexed contracts: 40; live-surface contracts included: 40 (38 live, 2 unknown).
+- Logic-topography rows: 40; live-surface rows included: 40 (40 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 47/94 live.
 - Detected codebases: none
@@ -127,15 +127,15 @@ Removals (removed from original):
 - Coverage of address-book-owned deployed-live implementations: 4/23 (17.4%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 47 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 31
-- Deployed-live implementations: 47 of 48 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 4/23
-- Verified + Unaudited implementations: 19
+- Outside the address book: 31 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 49
+- Confirmed-live implementations: 47 of 79 unique; 32 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 4/46
+- Verified + Unaudited implementations: 42
 - Verified by bytecode match: 0
-- Unverified implementations: 24
-- Unique implementations: 48
-- Raw deployments: 64
+- Unverified implementations: 33
+- Unique implementations: 79
+- Raw deployments: 116
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -148,7 +148,7 @@ Removals (removed from original):
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| HashEx | Tier 2 | 4 | 17.4% | 2025-08 |
+| HashEx | Tier 2 | 4 | 8.7% | 2025-08 |
 
 ## Contract Surface
 
@@ -161,29 +161,52 @@ Removals (removed from original):
 | GovernorMultisig | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-239744 | `0xeb71a9...291bf8` | ✅ Audited |
 | TreasuryV1 | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-239760 | `0x0a9591...b5735a` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (19)
+### ⚠️ Verified + Unaudited (42)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | aeWETH | token | project_anchor | own_supporting | 1 | arbitrum | unit-239758 | `0x82af49...3fbab1` | ⚠️ Unaudited |
 | ArbitrumExtensionV2 | adapter | project_anchor | own_supporting | 1 | arbitrum | unit-239754 | `0xfd086b...9fcbb9` | ⚠️ Unaudited |
+| BadgeV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 5 | arbitrum | n/a | 5 deployments: arbitrum `0x050738...83919b`; arbitrum `0x6b25e2...ca402e`; arbitrum `0x7101f6...30d568`; arbitrum `0xb8d4b9...fb2945`; arbitrum `0xbe0a8f...6dda52` | ⚠️ Unaudited |
+| BadgeV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1750e2...bb892b` | ⚠️ Unaudited |
+| BadgeV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 3 deployments: arbitrum `0x28d509...094b4f`; arbitrum `0x6a60af...05a890`; arbitrum `0xa2f387...704825` | ⚠️ Unaudited |
 | BridgeMiddleware | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-239710 | `0x254e69...35be16` | ⚠️ Unaudited |
 | BridgeMiddleware | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-239711 | `0x26052f...5fa503` | ⚠️ Unaudited |
+| BridgeMiddleware | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x683c48...0e3e40` | ⚠️ Unaudited |
 | BridgeMiddlewareV2 | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-239714 | `0x4721ae...b251a9` | ⚠️ Unaudited |
-| DepositManager | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-239765 | `0x665842...f8a2d0` | ⚠️ Unaudited |
+| BridgeMiddlewareV2 | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x5fbf44...521b82`; arbitrum `0xfdaf74...2826b8` | ⚠️ Unaudited |
+| BurnRegistryV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x79cec0...fe79a5` | ⚠️ Unaudited |
+| DepositManager | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-239765 | 2 deployments: arbitrum `0x665842...f8a2d0`; arbitrum `0xc14225...64562e` | ⚠️ Unaudited |
+| DepositManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xf6ec90...56d45b` | ⚠️ Unaudited |
+| DVFDepositContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa3db75...b93b47` | ⚠️ Unaudited |
+| DVFDepositContract | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xbca303...045afa` | ⚠️ Unaudited |
+| DVFSunset | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x73699b...bd2704`; ethereum `0xec9093...0cf9b5` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x14b993...6d8552`; ethereum `0xe15357...76f38e` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x378d87...3c1d8e`; ethereum `0xd35e56...ff4b71` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x438b5a...cfde9c`; ethereum `0xa78951...c5e4b2` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x636915...842a74`; ethereum `0xcac639...f167b8` | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | project_anchor | own_supporting | 1 | arbitrum | unit-239757 | `0xaf88d0...8e5831` | ⚠️ Unaudited |
 | Inbox | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-239756 | `0xa0a1b4...a11296` | ⚠️ Unaudited |
 | L1ERC20Gateway | unknown | project_anchor | own_supporting | 2 | arbitrum | unit-239752 (2 proxies) | 3 deployments: arbitrum `0x08e9dc...11f424`; arbitrum `0x8d21df...33d4b1`; arbitrum `0xad3026...086b38` | ⚠️ Unaudited |
 | L1GatewayRouter | adapter | project_anchor | own_supporting | 1 | arbitrum | unit-239759 | `0x1628ce...59e66a` | ⚠️ Unaudited |
 | MinimalProxyFactory | registry | project_anchor | own_supporting | 0 | arbitrum | unit-239707 | `0x1ee981...fdd057` | ⚠️ Unaudited |
 | MinimalProxyFactory | registry | project_anchor | own_supporting | 0 | arbitrum | unit-239728 | `0x99be07...52977a` | ⚠️ Unaudited |
+| Multicall2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0dbbd1...fb70a5` | ⚠️ Unaudited |
+| OpenfortUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x19e7e0...04cec1`; ethereum `0x90ec5b...342d8c` | ⚠️ Unaudited |
+| OpenfortUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x237b7a...5a58f3`; ethereum `0x850af9...104aac` | ⚠️ Unaudited |
+| OpenfortUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x3a2dd0...d41820`; ethereum `0x8d289c...d746f8` | ⚠️ Unaudited |
 | Outbox | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-239753 | `0xec32bd...dbc040` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x709116...ed87bf`; ethereum `0x92650d...b60175` | ⚠️ Unaudited |
+| PythAggregatorV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7ad6d5...ef78be` | ⚠️ Unaudited |
+| PythUpgradable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x26dd80...595e85`; ethereum `0x35a58b...746b13`; ethereum `0xdd24f8...5bbd21` | ⚠️ Unaudited |
 | RollupAdminLogic | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-239766 | `0xd226bd...1abbbc` | ⚠️ Unaudited |
 | SequencerInbox | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-239751 | `0x8696d3...6db025` | ⚠️ Unaudited |
 | StandardArbERC20 | token | project_anchor | own_supporting | 1 | arbitrum | unit-239755 | `0x2f2a25...fc5b0f` | ⚠️ Unaudited |
 | Storage | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-239737 | `0xc7c194...a3ea0c` | ⚠️ Unaudited |
-| SwapManager | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-239761 | `0xe575f5...75daa4` | ⚠️ Unaudited |
+| SwapManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0x770722...def2f6` | ⚠️ Unaudited |
+| SwapManager | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-239761 | 2 deployments: arbitrum `0xac3450...a22291`; arbitrum `0xe575f5...75daa4` | ⚠️ Unaudited |
 | VaultV1 | core_logic | project_anchor | own_supporting | 1 | arbitrum | unit-239764 | `0x2e8d8b...4ca8fe` | ⚠️ Unaudited |
+| VaultV1 | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | `0xa526c0...0c9684` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -197,13 +220,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (25)
+### ❓ Unverified (33)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| Proxy (impl: 0x87047526937246727e4869c5f76a347160e08672) | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x74f09c...e3e94e`; ethereum `0x870475...e08672` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239679 | `0x2880ab...c17b43` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5e023c...fcacd1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5ee2d7...cfec95` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7c56d1...0afd70` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb0d4a9...3a7c49` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc643e5...2d8941` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe9d69c...5c8adc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf19229...a47a3a` | ❓ Unverified |
 | UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0x000000...000000` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-239697 | `0x02c07b...5908f1` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-239698 | `0x071360...63be14` | ❓ Unverified |
@@ -281,17 +312,17 @@ Verified + unaudited native implementations ranked by TVL:
 | arbitrum | `0x8696d3...6db025` | SequencerInbox | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | `0x2f2a25...fc5b0f` | StandardArbERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | `0xc7c194...a3ea0c` | Storage | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | `0xe575f5...75daa4` | SwapManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0xac3450...a22291` | SwapManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | `0x2e8d8b...4ca8fe` | VaultV1 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 22 |
+| native | 38 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 26 |
+| standard_library | 5 |
+| needs_review | 36 |
 
 ## Scope Matching Notes
 

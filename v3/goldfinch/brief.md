@@ -9,14 +9,14 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Goldfinch (`goldfinch`)
 - Website: [https://goldfinch.finance](https://goldfinch.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base, base-sepolia, chain-31337, ethereum
 - Contract surface: 171 unique implementations (180 raw deployments)
@@ -135,7 +135,7 @@ The pinned logic-topography run contains 28 contract row(s) across base, base-se
 
 ## Contract Surface Quality
 
-- Indexed contracts: 28; live-surface contracts included: 28 (28 live, 0 unknown).
+- Logic-topography rows: 28; live-surface rows included: 28 (28 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 71/153 live.
 - Detected codebases: none
@@ -146,13 +146,13 @@ The pinned logic-topography run contains 28 contract row(s) across base, base-se
 - Coverage of address-book-owned deployed-live implementations: 0/28 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 71 own, 81 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 19 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 19 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 9
-- Deployed-live implementations: 71 of 171 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/28
-- Verified + Unaudited implementations: 28
+- Confirmed-live implementations: 71 of 171 unique; 100 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/47
+- Verified + Unaudited implementations: 47
 - Verified by bytecode match: 0
-- Unverified implementations: 43
+- Unverified implementations: 124
 - Unique implementations: 171
 - Raw deployments: 180
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)

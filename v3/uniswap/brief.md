@@ -9,16 +9,16 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Uniswap (`uniswap`)
 - Website: [https://app.uniswap.org/](https://app.uniswap.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum, avalanche, base, base-sepolia, blast, bsc, celo, ethereum, gnosis, linea, manta-pacific, mantle, monad, moonbeam, optimism, polygon, sei, sepolia, sonic, unichain, x-layer, zksync-era, zora
+- Chains: arbitrum, avalanche, base, base-sepolia, blast, boba, bsc, celo, ethereum, gnosis, ink, linea, manta-pacific, mantle, monad, moonbeam, optimism, plasma, polygon, polygon-zkevm, scroll, sei, sepolia, sonic, unichain, x-layer, zksync-era, zora
 - Contract surface: 581 unique implementations (581 raw deployments)
 - Coverage basis: 0/33 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $2,839,201,157.00
@@ -315,7 +315,7 @@ The pinned logic-topography run contains 33 contract row(s) across arbitrum, ava
 
 ## Contract Surface Quality
 
-- Indexed contracts: 33; live-surface contracts included: 33 (33 live, 0 unknown).
+- Logic-topography rows: 33; live-surface rows included: 33 (33 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 260/406 live.
 - Detected codebases: none
@@ -326,13 +326,13 @@ The pinned logic-topography run contains 33 contract row(s) across arbitrum, ava
 - Coverage of address-book-owned deployed-live implementations: 0/33 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 260 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 319 discovered implementations excluded (0 third-party/infra; 6 standard proxy/library)
+- Outside the address book: 319 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 6 standard proxy/library)
 - Proxy deployments represented within implementation groups: 40
-- Deployed-live implementations: 260 of 581 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/33
-- Verified + Unaudited implementations: 33
+- Confirmed-live implementations: 260 of 581 unique; 321 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/340
+- Verified + Unaudited implementations: 340
 - Verified by bytecode match: 0
-- Unverified implementations: 227
+- Unverified implementations: 241
 - Unique implementations: 581
 - Raw deployments: 581
 - Audits discovered: 20 (20 direct, 0 inherited from forked code)

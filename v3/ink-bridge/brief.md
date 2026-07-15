@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Ink Bridge (`ink-bridge`)
 - Website: [https://inkonchain.com/bridge](https://inkonchain.com/bridge)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: ethereum, ink, sepolia
-- Contract surface: 92 unique implementations (92 raw deployments)
+- Chains: ethereum, ink, optimism, sepolia
+- Contract surface: 108 unique implementations (113 raw deployments)
 - Coverage basis: 9/13 confirmed own live verified implementations (69.2%); conservative 69.2% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $41,858,116.04
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for Ink Bridg
 
 ### Architecture
 
-The pinned logic-topography run contains 13 contract row(s) across ethereum, ink, sepolia. Structural roles: 11 supporting, 2 core. 9 row(s) use upgradeable patterns.
+The pinned logic-topography run contains 13 contract row(s) across ethereum, ink, optimism, sepolia. Structural roles: 11 supporting, 2 core. 9 row(s) use upgradeable patterns.
 
 ## Logic Topography
 
@@ -109,7 +109,7 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum, ink
 
 ## Contract Surface Quality
 
-- Indexed contracts: 13; live-surface contracts included: 13 (13 live, 0 unknown).
+- Logic-topography rows: 13; live-surface rows included: 13 (13 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 54/81 live.
 - Detected codebases: none
@@ -120,15 +120,15 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum, ink
 - Coverage of address-book-owned deployed-live implementations: 9/13 (69.2%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 54 own, 27 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 11 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 9
-- Deployed-live implementations: 54 of 92 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 9/13
-- Verified + Unaudited implementations: 4
+- Outside the address book: 27 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 15
+- Confirmed-live implementations: 54 of 108 unique; 54 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 9/27
+- Verified + Unaudited implementations: 18
 - Verified by bytecode match: 0
-- Unverified implementations: 41
-- Unique implementations: 92
-- Raw deployments: 92
+- Unverified implementations: 81
+- Unique implementations: 108
+- Raw deployments: 113
 - Audits discovered: 17 (17 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 8
 - ASD (verified + unaudited TVL): n/a
@@ -141,9 +141,9 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum, ink
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 9 | 69.2% | 2025-03 |
-| Sherlock | Tier 1 | 4 | 30.8% | 2024-05 |
-| Trail of Bits | Tier 1 | 2 | 15.4% | 2023-01 |
+| Spearbit | Tier 1 | 9 | 33.3% | 2025-03 |
+| Sherlock | Tier 1 | 4 | 14.8% | 2024-05 |
+| Trail of Bits | Tier 1 | 2 | 7.4% | 2023-01 |
 
 ## Contract Surface
 
@@ -161,14 +161,28 @@ The pinned logic-topography run contains 13 contract row(s) across ethereum, ink
 | OptimismPortal2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-387979 | `0x5d66c1...5d3e4f` | ✅ Audited |
 | SystemConfig | governance | project_anchor | own_supporting | 1 | ethereum | unit-387971 | `0x62c0a1...6e8364` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (18)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | AddressManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-387901 | `0x9b7c9b...a71153` | ⚠️ Unaudited |
+| Create2Deployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x13b0d8...e9bef2` | ⚠️ Unaudited |
+| CreateX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xba5ed0...8ba5ed` | ⚠️ Unaudited |
+| EntryPoint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x000000...7da032`; ethereum `0x5ff137...6d2789` | ⚠️ Unaudited |
 | ERC5564Announcer | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387899 | `0x55649e...d45564` | ⚠️ Unaudited |
 | ERC6538Registry | registry | project_anchor | own_supporting | 0 | ethereum | unit-387900 | `0x6538e6...5d6538` | ⚠️ Unaudited |
+| ETHLockbox | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xbd4abb...325a14` | ⚠️ Unaudited |
+| GnosisSafe | governance | non_address_book | standard_proxy_or_library (excluded) | 4 | ethereum | n/a | 4 deployments: ethereum `0x5a0aae...7c3d2a`; ethereum `0x847b5c...5b9d92`; ethereum `0xbea2bc...fa9bbb`; ethereum `0xc2819d...e3bd03` | ⚠️ Unaudited |
+| GnosisSafe | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x69f4d1...6e2938` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfb1bff...7191ea` | ⚠️ Unaudited |
+| Multicall3 | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xca11bd...76ca11` | ⚠️ Unaudited |
+| MultiSend | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x998739...8f9eda` | ⚠️ Unaudited |
+| MultiSendCallOnly | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa1dabe...44102b` | ⚠️ Unaudited |
+| Permit2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000000...c78ba3` | ⚠️ Unaudited |
+| Proxy | proxy | non_address_book | non_address_book_inventory (excluded) | 0 | optimism | n/a | `0x420000...000028` | ⚠️ Unaudited |
 | ProxyAdmin | governance | project_anchor | own_supporting | 0 | ethereum | unit-387902 | `0xd56045...241f79` | ⚠️ Unaudited |
+| SenderCreator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 2 deployments: ethereum `0x7fc984...088348`; ethereum `0xefc2c1...7a167c` | ⚠️ Unaudited |
+| SuperchainConfig | governance | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x95703e...f04a4c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -182,7 +196,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (79)
+### ❓ Unverified (81)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -192,10 +206,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x180ac4...2ac456` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x33f607...51901c` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3454f9...4f3197` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4e59b4...b4956c` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5c1d29...66a1d7` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x686f78...6674f0` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x860e62...db3d5d` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x89126a...dcea1a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x914d7f...5643d7` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9fe1d3...c1acc2` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd1c901...ae68c7` | ❓ Unverified |
 | UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd7db31...442c8d` | ❓ Unverified |
@@ -517,10 +533,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 12 |
+| native | 16 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 79 |
+| standard_library | 11 |
+| needs_review | 81 |
 
 ## Scope Matching Notes
 

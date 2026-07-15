@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: SQD.ai (`sqd.ai`)
 - Website: [https://www.sqd.ai/](https://www.sqd.ai/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
-- Chains: arbitrum
-- Contract surface: 16 unique implementations (17 raw deployments)
+- Chains: arbitrum, base, bsc, ethereum
+- Contract surface: 42 unique implementations (55 raw deployments)
 - Coverage basis: 11/16 confirmed own live verified implementations (68.8%); conservative 68.8% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $21,978,065.61
 - On-chain TVL (included contracts): n/a
@@ -31,7 +31,7 @@ This brief describes the observed EVM deployment and audit surface for SQD.ai. I
 
 ### Architecture
 
-The pinned logic-topography run contains 18 contract row(s) across arbitrum. Structural roles: 9 unclassified, 5 core, 4 supporting. No upgradeable pattern was identified in these rows.
+The pinned logic-topography run contains 18 contract row(s) across arbitrum, base, bsc, ethereum. Structural roles: 9 unclassified, 5 core, 4 supporting. No upgradeable pattern was identified in these rows.
 
 ## Logic Topography
 
@@ -64,7 +64,7 @@ The pinned logic-topography run contains 18 contract row(s) across arbitrum. Str
 
 ## Contract Surface Quality
 
-- Indexed contracts: 18; live-surface contracts included: 18 (17 live, 1 unknown).
+- Logic-topography rows: 18; live-surface rows included: 18 (18 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 16/44 live.
 - Detected codebases: none
@@ -75,15 +75,15 @@ The pinned logic-topography run contains 18 contract row(s) across arbitrum. Str
 - Coverage of address-book-owned deployed-live implementations: 11/16 (68.8%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 16 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 2
-- Deployed-live implementations: 16 of 16 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 11/16
-- Verified + Unaudited implementations: 5
+- Outside the address book: 26 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 5
+- Confirmed-live implementations: 16 of 42 unique; 26 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 11/39
+- Verified + Unaudited implementations: 28
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 16
-- Raw deployments: 17
+- Unverified implementations: 3
+- Unique implementations: 42
+- Raw deployments: 55
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -96,7 +96,7 @@ The pinned logic-topography run contains 18 contract row(s) across arbitrum. Str
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ChainSecurity | Tier 1 | 11 | 68.8% | 2024-04 |
+| ChainSecurity | Tier 1 | 11 | 28.2% | 2024-04 |
 
 ## Contract Surface
 
@@ -116,15 +116,38 @@ The pinned logic-topography run contains 18 contract row(s) across arbitrum. Str
 | VestingFactory | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-392982 | `0x1f8f83...4e4ece` | ✅ Audited |
 | WorkerRegistration | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392990 | `0x36e2b1...fcae4e` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (28)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| AllocationsViewer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xa99020...6d78f5` | ⚠️ Unaudited |
+| BuyBack | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4efab2...425b48` | ⚠️ Unaudited |
 | DistributedRewardsDistribution | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392994 | `0x4de282...362aea` | ⚠️ Unaudited |
+| DistributedRewardsDistribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0xa0780e...764f74`; arbitrum `0xab690d...376d8f` | ⚠️ Unaudited |
+| EqualStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x17cdf7...206d84` | ⚠️ Unaudited |
+| FeeRouterModule | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x59c074...92a787` | ⚠️ Unaudited |
+| FiatTokenV2_1 | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa2327a...4cbdcf` | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xa0b869...06eb48` | ⚠️ Unaudited |
+| GatewayRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x17776c...a2c7ca`; arbitrum `0x2cc72e...a3ce5f` | ⚠️ Unaudited |
 | GatewayRegistry | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392986 | `0x259112...df2152` | ⚠️ Unaudited |
-| GatewayRegistry | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-393022 | `0x8a90a1...eb8c4b` | ⚠️ Unaudited |
+| GatewayRegistry | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-393022 | 2 deployments: arbitrum `0x8a90a1...eb8c4b`; arbitrum `0xa20ee6...5adc58` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 5 deployments: arbitrum `0x070feb...0d7c25`; arbitrum `0x59eae7...86c0d4`; arbitrum `0x641355...de4e34`; arbitrum `0x703928...e69f55`; arbitrum `0xa7ceb6...1cc66f` | ⚠️ Unaudited |
+| NetworkController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 4 deployments: arbitrum `0x159550...b88847`; arbitrum `0xd03b4e...d5768b`; arbitrum `0xe57c18...ca7f99`; arbitrum `0xf5462e...82d68d` | ⚠️ Unaudited |
+| OptimismMintableERC20 | bridge_template | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd4554b...9b3e78` | ⚠️ Unaudited |
+| OverTheCounter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x1c77ad...f9f16c` | ⚠️ Unaudited |
+| PeerToken | token | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xe50e3d...7fcc13` | ⚠️ Unaudited |
+| RewardCalculation | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xfa4727...aa2082` | ⚠️ Unaudited |
+| RewardTreasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xce1f5a...9af27c` | ⚠️ Unaudited |
+| Router | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | arbitrum | n/a | 2 deployments: arbitrum `0x0afe1d...867099`; arbitrum `0x3b88a5...67e492` | ⚠️ Unaudited |
 | Router | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-393021 | 2 deployments: arbitrum `0x4a7c41...ae86aa`; arbitrum `0x67f56d...9da941` | ⚠️ Unaudited |
+| SoftCap | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | 2 deployments: arbitrum `0x635143...cc5bad`; arbitrum `0xde29d5...4c87d0` | ⚠️ Unaudited |
+| SQD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x133742...6f8ab1` | ⚠️ Unaudited |
 | SQD | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392980 | `0x133742...6f8ab1` | ⚠️ Unaudited |
+| Staking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xd2dcb9...f895f5` | ⚠️ Unaudited |
+| SubequalStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x554df4...6e61a2` | ⚠️ Unaudited |
+| TemporaryHoldingFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf83ac4...f122c1` | ⚠️ Unaudited |
+| VestingFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7508bc...25816c` | ⚠️ Unaudited |
+| WorkerRegistration | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6a5659...971ad4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -138,11 +161,15 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa9d1e0...1d3e43` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x365709...2d8306` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xf7b057...7d8cc4` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -199,10 +226,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 16 |
+| native | 39 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

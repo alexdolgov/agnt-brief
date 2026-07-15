@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: NetSwap (`netswap`)
 - Website: [https://netswap.io/#/home](https://netswap.io/#/home)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: metis
-- Contract surface: 24 unique implementations (24 raw deployments)
+- Contract surface: 64 unique implementations (101 raw deployments)
 - Coverage basis: 5/22 confirmed own live verified implementations (22.7%); conservative 22.7% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,229,900.75
 - On-chain TVL (included contracts): n/a
@@ -79,7 +79,7 @@ The pinned logic-topography run contains 22 contract row(s) across metis. Struct
 
 ## Contract Surface Quality
 
-- Indexed contracts: 22; live-surface contracts included: 22 (22 live, 0 unknown).
+- Logic-topography rows: 22; live-surface rows included: 22 (22 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 24/24 live.
 - Detected codebases: none
@@ -90,15 +90,15 @@ The pinned logic-topography run contains 22 contract row(s) across metis. Struct
 - Coverage of address-book-owned deployed-live implementations: 5/22 (22.7%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 24 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Outside the address book: 40 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
 - Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 24 of 24 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 5/22
-- Verified + Unaudited implementations: 17
+- Confirmed-live implementations: 24 of 64 unique; 40 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 5/40
+- Verified + Unaudited implementations: 35
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 24
-- Raw deployments: 24
+- Unverified implementations: 24
+- Unique implementations: 64
+- Raw deployments: 101
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
@@ -111,7 +111,7 @@ The pinned logic-topography run contains 22 contract row(s) across metis. Struct
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| yAudit | Tier 2 | 5 | 22.7% | 2022-01 |
+| yAudit | Tier 2 | 5 | 12.5% | 2022-01 |
 
 ## Contract Surface
 
@@ -125,23 +125,41 @@ The pinned logic-topography run contains 22 contract row(s) across metis. Struct
 | NETT | unknown | project_anchor | own_supporting | 0 | metis | unit-249770 | `0x90fe08...1ab278` | ✅ Audited |
 | NETTFarm | unknown | project_anchor | own_supporting | 0 | metis | unit-249771 | `0x9d1dbb...0cb052` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (17)
+### ⚠️ Verified + Unaudited (35)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| BaseOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xba34fc...e339c4` | ⚠️ Unaudited |
+| BasicModel | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x846b62...8b98f7` | ⚠️ Unaudited |
 | BoostedNETTFarm | unknown | project_anchor | own_supporting | 0 | metis | unit-249752 | `0x0ecdc3...36f553` | ⚠️ Unaudited |
+| Bricked | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x1b3da6...14df3b` | ⚠️ Unaudited |
 | CommunityTreasury | operational_periphery | project_anchor | own_supporting | 0 | metis | unit-249758 | `0x2dc348...e75ed7` | ⚠️ Unaudited |
+| ERC20Mock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xe7491f...c08be1` | ⚠️ Unaudited |
 | FarmLens | periphery | project_anchor | own_supporting | 0 | metis | unit-249769 | `0x8d8be2...66df60` | ⚠️ Unaudited |
+| L2StandardTokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x4f2185...de8eae` | ⚠️ Unaudited |
+| LaunchpadHelper | periphery | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x35c312...50d07f` | ⚠️ Unaudited |
+| LPOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xdf4b24...496076` | ⚠️ Unaudited |
+| Mining | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | 2 deployments: metis `0x3751a5...02262a`; metis `0x7077f3...980271` | ⚠️ Unaudited |
+| NetswapPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | 7 deployments: metis `0x0724d3...c72861`; metis `0x1cad5f...4280ea`; metis `0x3d60af...a7c5a1`; metis `0x59051b...b3610d`; metis `0x5ae3ee...465091`; metis `0x60312d...931cbd`; metis `0xf59888...12c253` | ⚠️ Unaudited |
+| NetswapRouter | adapter | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xf8c8c4...1efb25` | ⚠️ Unaudited |
+| NETT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x8196b2...99b7d2` | ⚠️ Unaudited |
 | PadFactory | registry | project_anchor | own_supporting | 0 | metis | unit-249762 | `0x587e87...b87f76` | ⚠️ Unaudited |
+| ProxyAdmin | governance | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | 3 deployments: metis `0x31fb08...0956ed`; metis `0x4196aa...307873`; metis `0x757251...e7e3cd` | ⚠️ Unaudited |
+| SimpleRewarderPerSec | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | 25 deployments: metis `0x1c5f80...2fcadf`; metis `0x1ddf97...553634`; metis `0x2bd9e5...b5a0b7`; metis `0x38d283...e530f6`; metis `0x4ccced...f4b294`; metis `0x53ba27...37b146`; metis `0x579a58...311261`; metis `0x66496b...6cbb6c`; metis `0x6770bc...b39c81`; metis `0x7c2551...a54f2e`; metis `0x82e7fb...4838ce`; metis `0x876488...f7da66`; metis `0xa0ffb3...2ef762`; metis `0xa7c260...78e284`; metis `0xa83a56...871c8a`; metis `0xb7d2ab...f60f21`; metis `0xbedf6e...4ffe97`; metis `0xcae5ca...a5eb1e`; metis `0xd56c7f...c6fba7`; metis `0xd5a3ea...bea7a1`; metis `0xd64894...a521e8`; metis `0xd8a5ee...236e08`; metis `0xdd70c3...95ce64`; metis `0xe2bc43...7f2db5`; metis `0xfabe5d...879a33` | ⚠️ Unaudited |
+| StakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | 3 deployments: metis `0x2ac666...9c096b`; metis `0x35a316...07b02c`; metis `0x551df4...b63c33` | ⚠️ Unaudited |
 | StakingRewards | unknown | project_anchor | own_supporting | 0 | metis | unit-249760 | `0x4d2f0f...9c9c27` | ⚠️ Unaudited |
 | StakingRewards | unknown | project_anchor | own_supporting | 0 | metis | unit-249761 | `0x54f683...84532b` | ⚠️ Unaudited |
 | StakingRewards | unknown | project_anchor | own_supporting | 0 | metis | unit-249767 | `0x7fe9f0...f08300` | ⚠️ Unaudited |
 | StakingRewards | unknown | project_anchor | own_supporting | 0 | metis | unit-249773 | `0xb43452...460329` | ⚠️ Unaudited |
+| TestERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xd6ceae...a2de4d` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | 3 deployments: metis `0x045df9...29bfc3`; metis `0xa030a0...1dc8e8`; metis `0xef18f2...d0fbb4` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | project_anchor | own_supporting | 0 | metis | unit-249757 | `0x276164...d9db9d` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | project_anchor | own_supporting | 0 | metis | unit-249759 | `0x3c1367...bc9961` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | project_anchor | own_supporting | 0 | metis | unit-249763 | `0x5e1f9c...840efa` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | project_anchor | own_supporting | 0 | metis | unit-249774 | `0xd365e3...7110fa` | ⚠️ Unaudited |
 | Unlimited | unknown | project_anchor | own_supporting | 0 | metis | unit-249753 | `0x0f21d3...0def34` | ⚠️ Unaudited |
+| Unlimited | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xe5991f...3ab4db` | ⚠️ Unaudited |
+| UnlimitedModel | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x7b32ac...ba3342` | ⚠️ Unaudited |
 | VeNETT | unknown | project_anchor | own_supporting | 0 | metis | unit-249764 | `0x6535db...cc2bd5` | ⚠️ Unaudited |
 | VeNETTStaking | unknown | project_anchor | own_supporting | 0 | metis | unit-249772 | `0xa9d674...6b31a3` | ⚠️ Unaudited |
 | wNETT | unknown | project_anchor | own_supporting | 0 | metis | unit-249768 | `0x8738e9...7b81a5` | ⚠️ Unaudited |
@@ -159,14 +177,36 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (24)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x0cf4c4...921210` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x116123...8de045` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | metis | unit-249754 | `0x12cd49...43c0a7` | ❓ Unverified |
 | UnnamedContract | unknown | project_anchor | own_supporting | 0 | metis | unit-249755 | `0x142f0f...3e7238` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x18e728...4624b4` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x1cf24b...bd9d1a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x1eefea...b59425` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x4492ee...a590c3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x4912b4...faa85f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x574b30...f05fff` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x6a873f...c63c97` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x6aa0ab...68b279` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0x966d65...e05908` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xa68923...2ba4b1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xaa7437...245f00` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xaece9c...c68084` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xc4a5f6...2f6984` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xd14bf8...889e7c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xd332b8...e3e22b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xd45ad4...dcfe43` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xe75aad...f81a1b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xf39ce3...b7c865` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xf720ba...2694d3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | metis | n/a | `0xf8cafa...0267ef` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -233,10 +273,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 17 |
+| native | 33 |
 | upstream | 0 |
-| standard_library | 5 |
-| needs_review | 2 |
+| standard_library | 7 |
+| needs_review | 24 |
 
 ## Scope Matching Notes
 

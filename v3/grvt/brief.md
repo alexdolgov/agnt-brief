@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Grvt (`grvt`)
 - Website: [https://grvt.io/](https://grvt.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: chain-326, chain-327, ethereum, grvt-exchange
-- Contract surface: 17 unique implementations (17 raw deployments)
+- Contract surface: 31 unique implementations (36 raw deployments)
 - Coverage basis: 1/3 confirmed own live verified implementations (33.3%); conservative 33.3% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $43,740,313.00
 - On-chain TVL (included contracts): n/a
@@ -59,7 +59,7 @@ The pinned logic-topography run contains 7 contract row(s) across chain-326, cha
 
 ## Contract Surface Quality
 
-- Indexed contracts: 7; live-surface contracts included: 7 (3 live, 4 unknown).
+- Logic-topography rows: 7; live-surface rows included: 7 (3 live, 4 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 4/17 live.
 - Detected codebases: none
@@ -70,15 +70,15 @@ The pinned logic-topography run contains 7 contract row(s) across chain-326, cha
 - Coverage of address-book-owned deployed-live implementations: 1/3 (33.3%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 4 own, 13 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (3 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 4
-- Deployed-live implementations: 4 of 17 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 1/3
-- Verified + Unaudited implementations: 2
+- Outside the address book: 14 discovered implementations shown in the inventory but excluded from coverage (3 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 10
+- Confirmed-live implementations: 4 of 31 unique; 27 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 1/21
+- Verified + Unaudited implementations: 20
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 17
-- Raw deployments: 17
+- Unverified implementations: 10
+- Unique implementations: 31
+- Raw deployments: 36
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -91,7 +91,7 @@ The pinned logic-topography run contains 7 contract row(s) across chain-326, cha
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 1 | 33.3% | 2025-12 |
+| Spearbit | Tier 1 | 1 | 4.8% | 2025-12 |
 
 ## Contract Surface
 
@@ -101,16 +101,30 @@ The pinned logic-topography run contains 7 contract row(s) across chain-326, cha
 |---|---|---|---|---:|---|---|---|---|
 | GRVTBridgeProxy | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-387139 | `0xe17aed...113a65` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (20)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
 | AaveV3Strategy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-387145 | `0x1ff873...07a5e4` | ⚠️ Unaudited |
+| ATokenInstance | token | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x238789...d4086a` | ⚠️ Unaudited |
+| Bridgehub | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x303a46...eb5213` | ⚠️ Unaudited |
+| ChainAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x51a561...be7c95` | ⚠️ Unaudited |
+| Governance | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe81d64...fea9d1` | ⚠️ Unaudited |
+| GRVTBaseToken | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x633040...2d3af8`; ethereum `0xab3b12...95bb95` | ⚠️ Unaudited |
+| GRVTBridgeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf7b67b...f00780` | ⚠️ Unaudited |
 | GRVTL1TreasuryVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-387113 | `0x11f6ee...a4ef2e` | ⚠️ Unaudited |
 | GRVTL1TreasuryVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-387143 | `0xc95fed...b48f45` | ⚠️ Unaudited |
+| GRVTTransactionFilterer | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x3cd52b...25109a`; ethereum `0x8319fe...a0f541` | ⚠️ Unaudited |
 | L1NativeTokenVault | core_logic | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-387141 | `0xbed1eb...1111f6` | ⚠️ Unaudited |
+| NativeBridgeGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x17cbac...161915`; ethereum `0xf1d59a...3c599c` | ⚠️ Unaudited |
+| NativeBridgeGateway | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x6e93c9...864473`; ethereum `0xa0b497...761f8d`; ethereum `0xa20697...aebf65` | ⚠️ Unaudited |
+| NativeVaultGateway | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x81ef29...12c7b9` | ⚠️ Unaudited |
+| PoolInstance | core_logic | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x87870b...4fa4e2` | ⚠️ Unaudited |
 | TimelockController | governance | project_anchor | own_supporting | 0 | ethereum | unit-387118 | `0x4e2971...ea36de` | ⚠️ Unaudited |
 | Vault ProxyAdmin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387126 | `0xf57be7...381575` | ⚠️ Unaudited |
+| VaultBridgeLib | operational_periphery | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xff61d6...89a915` | ⚠️ Unaudited |
+| VaultStrategyOpsLib | core_logic | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xff41bb...c8d86f` | ⚠️ Unaudited |
+| WithdrawalFinalizer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc107eb...421249` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -182,7 +196,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 18 |
 | upstream | 1 |
 | standard_library | 1 |
 | needs_review | 11 |

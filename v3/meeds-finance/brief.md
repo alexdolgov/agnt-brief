@@ -9,17 +9,17 @@
 - Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
 - Logic topography: `logic-topography-normalized-candidate-20260715-v1`
 - Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
-- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+- Export-input receipt: `e9e09d06b414f9cd852c36a58d42ce16279465f2d9791cd2a8178f3f54b89ecd`
 
 ## Project Overview
 
 - Project: Meeds Finance (`meeds-finance`)
 - Website: [https://www.meeds.io/](https://www.meeds.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-15T18:00:00.000Z
+- Generated: 2026-07-15T18:30:00.000Z
 - Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, base, ethereum, optimism, polygon
-- Contract surface: 13 unique implementations (13 raw deployments)
+- Contract surface: 18 unique implementations (20 raw deployments)
 - Coverage basis: 0/9 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,271,759.10
 - On-chain TVL (included contracts): n/a
@@ -68,7 +68,7 @@ The pinned logic-topography run contains 9 contract row(s) across arbitrum, base
 
 ## Contract Surface Quality
 
-- Indexed contracts: 9; live-surface contracts included: 9 (9 live, 0 unknown).
+- Logic-topography rows: 9; live-surface rows included: 9 (9 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 uninitialized.
 - Deployment units: 13/13 live.
 - Detected codebases: none
@@ -79,15 +79,15 @@ The pinned logic-topography run contains 9 contract row(s) across arbitrum, base
 - Coverage of address-book-owned deployed-live implementations: 0/9 (0.0%)
 - Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
 - Address-book implementation classification: 13 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
-- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
-- Proxy deployments represented within implementation groups: 0
-- Deployed-live implementations: 13 of 13 unique (rest dead/inactive/uninitialized)
-- All verified address-book-owned implementations audited (incl. non-live): 0/9
-- Verified + Unaudited implementations: 9
+- Outside the address book: 5 discovered implementations shown in the inventory but excluded from coverage (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
+- Confirmed-live implementations: 13 of 18 unique; 5 retained implementation(s) lack confirmed-live status
+- All block-explorer-verified implementations audited (incl. non-live): 0/14
+- Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
 - Unverified implementations: 4
-- Unique implementations: 13
-- Raw deployments: 13
+- Unique implementations: 18
+- Raw deployments: 20
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -106,10 +106,14 @@ The pinned logic-topography run contains 9 contract row(s) across arbitrum, base
 
 - None
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---:|---|---|---|---|
+| Deed | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0143b7...558090` | ⚠️ Unaudited |
+| DeedRenting | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x0af49e...1fd76c`; ethereum `0x427aa8...693baa` | ⚠️ Unaudited |
+| DeedTenantProvisioning | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x45595f...e84681` | ⚠️ Unaudited |
+| DeedTenantProvisioning | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | 2 deployments: ethereum `0x49c0cf...22e1f0`; ethereum `0x887a70...e4b9d0` | ⚠️ Unaudited |
 | MeedsToken | token | project_anchor | own_supporting | 0 | ethereum | unit-246312 | `0x8503a7...0547b7` | ⚠️ Unaudited |
 | TokenFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-246310 | `0x1b37d0...386050` | ⚠️ Unaudited |
 | UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-246313 | `0xc82b1c...12b3d1` | ⚠️ Unaudited |
@@ -119,6 +123,7 @@ The pinned logic-topography run contains 9 contract row(s) across arbitrum, base
 | UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | base | unit-246321 | `0xada40f...51dd55` | ⚠️ Unaudited |
 | UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | arbitrum | unit-246319 | `0xc76979...7225a1` | ⚠️ Unaudited |
 | Vyper_contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246311 | `0x440701...f37dfa` | ⚠️ Unaudited |
+| XMeedsNFTRewarding | token | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x44d6d6...e1bcd4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -168,7 +173,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 8 |
 | upstream | 6 |
 | standard_library | 0 |
 | needs_review | 4 |

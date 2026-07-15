@@ -1,8 +1,16 @@
 {
   "component": "AsyncVault-5",
   "main_contract": "AsyncVault",
+  "source_entry_count": 40,
   "source_file_count": 40,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AsyncVault-5\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x04ffdbd63626942d5cabf12120805465b7a17547",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xe897e7f16e8f4ed568a62955b17744bcb3207d6e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392988"
     }
   ]
 }

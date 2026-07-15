@@ -1,7 +1,15 @@
 {
   "component": "BancorV1Migration",
   "main_contract": "BancorV1Migration",
+  "source_entry_count": 42,
   "source_file_count": 42,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BancorV1Migration\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -15,7 +23,9 @@
       "address": "0xd761d538240e23b465c9c08236d781029dc3cc96",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391987"
     }
   ]
 }

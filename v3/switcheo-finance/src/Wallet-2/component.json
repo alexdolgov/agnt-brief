@@ -1,7 +1,15 @@
 {
   "component": "Wallet-2",
   "main_contract": "Wallet",
-  "source_file_count": 4,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Wallet-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x3792d288d9f0993971f23e4758acb719f285f6ef",
+      "address": "0xecf8db4968a8817e21bdd5ecda830e413089b534",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,8 +1,16 @@
 {
   "component": "LiveTradingProcessor-5",
   "main_contract": "LiveTradingProcessor",
+  "source_entry_count": 27,
   "source_file_count": 27,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LiveTradingProcessor-5\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,19 @@
       "address": "0xe645580eeeaad9372594c0a5147e84567f139d97",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4ff31890f66b9e314d0c9683888d292f407ea7ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
@@ -20,7 +40,9 @@
       "address": "0x809215729d5803f59082cdcd0cde0316ddfaa8ac",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

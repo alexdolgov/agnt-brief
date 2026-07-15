@@ -1,99 +1,113 @@
 # Agentic Audit Brief: Yamato Protocol
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 3 across 1 audit(s)
+- Eligible audit results: 3 (1 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Yamato Protocol (`yamato-protocol`)
 - Website: [https://app.yamato.fi/#/](https://app.yamato.fi/#/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:16.619Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 47 unique implementations (54 raw deployments)
+- Contract surface: 4 unique implementations (4 raw deployments)
+- Coverage basis: 3/4 confirmed own live verified implementations (75.0%); conservative 75.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,058,179.34
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-CDP. Structurally: 49 project-authored contract(s) across 1 chain(s); 4 ERC20 tokens, 1 Chainlink feed; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Yamato Protocol. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 4 functional families. Its contracts share 8 common project-authored base contract(s) (yamatoaction, yamatobase, uupsbase). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 5 contract row(s) across ethereum. Structural roles: 3 core, 1 infra, 1 unclassified. 1 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 5
+- Structural roles: core (3), infra (1), unclassified (1)
+- Contract kinds: contract (5)
+- Detected standards: erc20 (2), erc20permit (2), erc1967proxy (1)
+- Frameworks: openzeppelin (4), openzeppelin-upgradeable (1)
+- Upgradeable-pattern rows: 1
+
+## Fork Analysis
+
+0 of 4 contracts are derived from known codebases. 4 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- CJPY (`0x1cfa56...298372`, chain 1)
+- ERC1967Proxy (`0x02fe72...84f257`, chain 1)
+- veYMT (`0x9e3ce7...b66a0c`, chain 1)
+- YMT (`0x0f4fc7...4c9c09`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 113; live-surface contracts included: 54 (37 live, 17 unknown).
-- Excluded by liveness: 59 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 5; live-surface contracts included: 5 (4 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 4/4 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 11/30 (36.7%)
-- Deployed-live implementations: 30 of 47 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 11/30
-- Verified + Unaudited implementations: 19
+- Coverage of address-book-owned deployed-live implementations: 3/4 (75.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 4 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Deployed-live implementations: 4 of 4 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 3/4
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 17
-- Unique implementations: 47
-- Raw deployments: 54
+- Unverified implementations: 0
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 3
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-08 (aging)
 - Audit staleness (calendar age): 0 fresh, 1 aging, 2 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 9 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| BlockApex | Tier 2 | 11 | 36.7% | 2024-08 |
+| BlockApex | Tier 2 | 3 | 75.0% | 2024-08 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (11)
+### ✅ Verified + Audited (3)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| CurrencyOSV2 | unknown | ethereum | n/a | [`0xe85cb2...418acd`](./contracts/ethereum-1/0xe85cb27b3720d6ec23bb99b3378e6cb5c1418acd/) | ✅ Audited |
-| PledgeLib | unknown | ethereum | n/a | 3 deployments: ethereum [`0x25026b...8aad07`](./contracts/ethereum-1/0x25026b8e547500c57ba63596de177da0808aad07/); ethereum `0x364c7f...464b69`; ethereum `0xfd5fca...ce86bf` | ✅ Audited |
-| PoolV2 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x2d6cda...6638ea`](./contracts/ethereum-1/0x2d6cdade756ce8eec74c2037bb88323f8d6638ea/); ethereum `0x9c1f0e...745f0b` | ✅ Audited |
-| PriceFeedV3 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x3f4e4d...6fff2f`](./contracts/ethereum-1/0x3f4e4dad0ac01da50a774f3389b70506c96fff2f/); ethereum `0x7d8b9e...df3275` | ✅ Audited |
-| PriorityRegistryV6 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x0c9bdf...f4190b`](./contracts/ethereum-1/0x0c9bdf09de9eacbe692db2c17a75bfdb5ff4190b/); ethereum `0xac9f41...019d2d` | ✅ Audited |
-| veYMT | unknown | ethereum | n/a | 2 deployments: ethereum [`0x9e3ce7...b66a0c`](./contracts/ethereum-1/0x9e3ce75131bd03ef6ea79e5ed68e889cc9b66a0c/); ethereum `0xf13fa0...3cb016` | ✅ Audited |
-| YamatoDepositorV2 | unknown | ethereum | n/a | [`0xf42123...d0ae33`](./contracts/ethereum-1/0xf421237f7651787153511fdf0ca6d8de8ad0ae33/) | ✅ Audited |
-| YamatoRedeemerV4 | unknown | ethereum | n/a | [`0x97150f...a5f60d`](./contracts/ethereum-1/0x97150fbfc8819e712999cf0609e58e3ca0a5f60d/) | ✅ Audited |
-| YamatoV3 | unknown | ethereum | n/a | [`0xdc7cde...2f9da7`](./contracts/ethereum-1/0xdc7cdec9c2485ead231d9184ea650439b42f9da7/) | ✅ Audited |
-| YamatoWithdrawerV2 | unknown | ethereum | n/a | [`0x1988b0...4a45ea`](./contracts/ethereum-1/0x1988b06eae3a742f3128f6e65fa50efe594a45ea/) | ✅ Audited |
-| YMT | unknown | ethereum | n/a | 2 deployments: ethereum [`0x0f4fc7...4c9c09`](./contracts/ethereum-1/0x0f4fc7d24f28c4373097733aae53f0025d4c9c09/); ethereum `0x4a232b...16f20e` | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| veYMT | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262585 | `0x9e3ce7...b66a0c` | ✅ Audited |
+| YamatoV4 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262587 | `0x02fe72...84f257` | ✅ Audited |
+| YMT | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262582 | `0x0f4fc7...4c9c09` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (19)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| CJPY | unknown | ethereum | n/a | [`0x1cfa56...298372`](./contracts/ethereum-1/0x1cfa5641c01406ab8ac350ded7d735ec41298372/) | ⚠️ Unaudited |
-| CurrencyOSV3 | unknown | ethereum | n/a | [`0x811ce7...039542`](./contracts/ethereum-1/0x811ce73639a05f436a56ea71480cd921a4039542/) | ⚠️ Unaudited |
-| CurveTwocryptoOptimized | unknown | ethereum | n/a | [`0x592878...f211cc`](./contracts/ethereum-1/0x592878b920101946fb5915ab97961bc546f211cc/) | ⚠️ Unaudited |
-| DistributorReceiver | operational_periphery | ethereum | n/a | [`0x3d0955...40c6a5`](./contracts/ethereum-1/0x3d095553fe2a3b138b31f9d47a26e2adf340c6a5/) | ⚠️ Unaudited |
-| ScoreRegistry | unknown | ethereum | n/a | [`0x02f2ce...aefbeb`](./contracts/ethereum-1/0x02f2ceb46aa1b499ba0df22e55d6e97e73aefbeb/) | ⚠️ Unaudited |
-| VotingEscrow | operational_periphery | ethereum | n/a | [`0x168c2f...c7d113`](./contracts/ethereum-1/0x168c2f7d4924bd6e4282f7edbb0cfdcca1c7d113/) | ⚠️ Unaudited |
-| YamatoBorrower | unknown | ethereum | n/a | [`0x7edfd3...cb4cc1`](./contracts/ethereum-1/0x7edfd33fc389c9b9c0e3350ac618912053cb4cc1/) | ⚠️ Unaudited |
-| YamatoBorrowerV2 | unknown | ethereum | n/a | [`0xf63271...8dba54`](./contracts/ethereum-1/0xf63271eefc761dcace3d22137b513941dc8dba54/) | ⚠️ Unaudited |
-| YamatoDepositor | unknown | ethereum | n/a | [`0x3fe24a...23aa69`](./contracts/ethereum-1/0x3fe24ab7bf7885acde4343b0ce90d79d1623aa69/) | ⚠️ Unaudited |
-| YamatoDepositorV3 | unknown | ethereum | n/a | [`0x011d33...2b9881`](./contracts/ethereum-1/0x011d338006b3c189aa4e86a8703114e2c82b9881/) | ⚠️ Unaudited |
-| YamatoRedeemerV5 | unknown | ethereum | n/a | [`0xd869dd...53a019`](./contracts/ethereum-1/0xd869dd57566daf8f160090fc0f3ff362f953a019/) | ⚠️ Unaudited |
-| YamatoRepayerV2 | unknown | ethereum | n/a | [`0x955b82...81bb88`](./contracts/ethereum-1/0x955b82f4dd992a75d454265ed9337036d881bb88/) | ⚠️ Unaudited |
-| YamatoRepayerV3 | unknown | ethereum | n/a | [`0x9ab920...aedae8`](./contracts/ethereum-1/0x9ab920c44c0bc5b8afc4437c004d985364aedae8/) | ⚠️ Unaudited |
-| YamatoSweeperV2 | unknown | ethereum | n/a | [`0x01a761...413389`](./contracts/ethereum-1/0x01a7619e0cac10847279d17c43cc6bbbda413389/) | ⚠️ Unaudited |
-| YamatoSweeperV3 | unknown | ethereum | n/a | [`0x91dc6c...bd253c`](./contracts/ethereum-1/0x91dc6c1463889d90dcb6cc8629e9db6b20bd253c/) | ⚠️ Unaudited |
-| YamatoV4 | unknown | ethereum | n/a | [`0x0bfa59...9a4838`](./contracts/ethereum-1/0x0bfa59f9fbe9565c240cd64311c86e90e59a4838/) | ⚠️ Unaudited |
-| YamatoWithdrawerV3 | unknown | ethereum | n/a | [`0x84c854...197505`](./contracts/ethereum-1/0x84c854552ef439ad28a25d328156a05c2e197505/) | ⚠️ Unaudited |
-| YmtVesting | operational_periphery | ethereum | n/a | [`0x5ed64b...2c925f`](./contracts/ethereum-1/0x5ed64bf0764202be868b5df2deda467ae12c925f/) | ⚠️ Unaudited |
-| YMWK | unknown | ethereum | n/a | [`0x15dac0...ec4f87`](./contracts/ethereum-1/0x15dac05c93e1c5f31a29547340997ba9f6ec4f87/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| CJPY | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262583 | `0x1cfa56...298372` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -107,60 +121,100 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (17)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x12318f...f6112b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2170f3...c97b03` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x296ec3...a9c3b5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2eaa42...4cb469` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x36b404...b33add` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3d1e11...ee10c2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3f9c83...15b64e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x565b10...1e6dab` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7bed97...f1363c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x817ffe...4af9dc` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8a979c...cc907f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa5398c...8ca550` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xbb4025...cf4e95` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd0c89e...30500d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xddf9b0...a31e8e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf18035...7700ce` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf48ac4...36e1fe` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Yamato Protocol Final Audit.pdf](https://github.com/BlockApex/Audit-Reports/blob/master/Yamato%20Protocol%20Final%20Audit.pdf) | BlockApex | Audit | 2022-09 | stale | Direct | contract_name | 12 | high |
-| [Yamato Protocol Final Audit (Extended).pdf](https://github.com/BlockApex/Audit-Reports/blob/master/Yamato%20Protocol%20Final%20Audit%20(Extended).pdf) | BlockApex | Audit | 2023-07 | stale | Direct | contract_name | 3 | high |
-| [Yamato Protocol V2 - Final Audit.pdf](https://github.com/BlockApex/Audit-Reports/blob/master/Yamato%20Protocol%20V2%20-%20Final%20Audit.pdf) | BlockApex | Audit | 2024-08 | aging | Direct | contract_name | 2 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Yamato Protocol Final Audit.pdf](https://github.com/BlockApex/Audit-Reports/blob/master/Yamato%20Protocol%20Final%20Audit.pdf) | BlockApex | Audit | 2022-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 15 | high |
+| [Yamato Protocol Final Audit (Extended).pdf](https://github.com/BlockApex/Audit-Reports/blob/master/Yamato%20Protocol%20Final%20Audit%20(Extended).pdf) | BlockApex | Audit | 2023-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [Yamato Protocol V2 - Final Audit.pdf](https://github.com/BlockApex/Audit-Reports/blob/master/Yamato%20Protocol%20V2%20-%20Final%20Audit.pdf) | BlockApex | Audit | 2024-08 | aging | Direct | n/a | matched | 3 | 1 | 0 | 11 | n/a |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [3069] Yamato Protocol Final Audit.pdf — no match: Extracted contract names from findings and informatory sections; audit date from 'Final Audit Completed: Sep 5th, 2022'.
+- [3070] Yamato Protocol Final Audit (Extended).pdf — no match: Main contract PriceFeedV3 and interfaces IPriceFeedV3, IPriceFeedFlexV3, IPriorityRegistryFlexV6, IPriorityRegistryV6 are in scope. Audit date from 'Final Audit (Fixed): July 24th, 2023'.
+- [3071] Yamato Protocol V2 - Final Audit.pdf — matched: No reason recorded
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Yamato Protocol Final Audit.pdf | Currency | unmatched — not counted | — | Critical-risk issue 1 | no |
+| Yamato Protocol Final Audit.pdf | UUPSBase | unmatched — not counted | — | High-risk issue 2 | no |
+| Yamato Protocol Final Audit.pdf | PoolV2 | unmatched — not counted | — | Medium-risk issue 3 | no |
+| Yamato Protocol Final Audit.pdf | YamatoDepositorV2 | unmatched — not counted | — | Medium-risk issues 4 and 5 | no |
+| Yamato Protocol Final Audit.pdf | PledgeLib | unmatched — not counted | — | Low-risk issue 6 | no |
+| Yamato Protocol Final Audit.pdf | YamatoWithdrawerV2 | unmatched — not counted | — | Low-risk issues 7 and 12 | no |
+| Yamato Protocol Final Audit.pdf | YamatoRedeemerV4 | unmatched — not counted | — | Low-risk issues 8 and 9 | no |
+| Yamato Protocol Final Audit.pdf | Ownable | unmatched — not counted | — | Low-risk issue 11 | no |
+| Yamato Protocol Final Audit.pdf | YamatoStore | unmatched — not counted | — | Low-risk issue 11 and informatory | no |
+| Yamato Protocol Final Audit.pdf | YamatoBase | unmatched — not counted | — | Informatory: Mark Variable Visibility Explicitly | no |
+| Yamato Protocol Final Audit.pdf | YamatoV3 | unmatched — not counted | — | Informatory: Mark Variable Visibility Explicitly | no |
+| Yamato Protocol Final Audit.pdf | PriorityRegistryV6 | unmatched — not counted | — | Informatory: Mark Variable Visibility Explicitly | no |
+| Yamato Protocol Final Audit.pdf | PriceFeedV2 | unmatched — not counted | — | Informatory: Mark Variable Visibility Explicitly | no |
+| Yamato Protocol Final Audit.pdf | CurrencyOSV2 | unmatched — not counted | — | Informatory: Mark Function Visibility Explicitly | no |
+| Yamato Protocol Final Audit.pdf | YamatorRepayerV2 | unmatched — not counted | — | Informatory: In YamatorRepayerV2.sol | no |
+| Yamato Protocol Final Audit (Extended).pdf | PriceFeedV3 | unmatched — not counted | — | listed in scope and findings | no |
+| Yamato Protocol Final Audit (Extended).pdf | IPriceFeedV3 | unmatched — not counted | — | listed in scope and findings | no |
+| Yamato Protocol Final Audit (Extended).pdf | IPriceFeedFlexV3 | unmatched — not counted | — | mentioned in system architecture | no |
+| Yamato Protocol Final Audit (Extended).pdf | IPriorityRegistryFlexV6 | unmatched — not counted | — | mentioned in system architecture | no |
+| Yamato Protocol Final Audit (Extended).pdf | IPriorityRegistryV6 | unmatched — not counted | — | mentioned in system architecture | no |
+| Yamato Protocol V2 - Final Audit.pdf | CurrencyOSV3 | unmatched — not counted | — | — | no |
+| Yamato Protocol V2 - Final Audit.pdf | FeePoolV2 | unmatched — not counted | — | — | no |
+| Yamato Protocol V2 - Final Audit.pdf | ScoreRegistry | unmatched — not counted | — | — | no |
+| Yamato Protocol V2 - Final Audit.pdf | ScoreWeightController | unmatched — not counted | — | — | no |
+| Yamato Protocol V2 - Final Audit.pdf | YMT | own contract | YMT (selected) `0x0f4fc7...4c9c09` — deployed 2025-05-26 14:42:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Yamato Protocol V2 - Final Audit.pdf | YamatoBorrowerV2 | unmatched — not counted | — | — | no |
+| Yamato Protocol V2 - Final Audit.pdf | YamatoDepositorV3 | unmatched — not counted | — | — | no |
+| Yamato Protocol V2 - Final Audit.pdf | YamatoRedeemerV5 | unmatched — not counted | — | — | no |
+| Yamato Protocol V2 - Final Audit.pdf | YamatoRepayerV3 | unmatched — not counted | — | — | no |
+| Yamato Protocol V2 - Final Audit.pdf | YamatoSweeperV3 | unmatched — not counted | — | — | no |
+| Yamato Protocol V2 - Final Audit.pdf | YamatoV4 | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x02fe72...84f257` — deployed 2023-07-27 04:06:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Yamato Protocol V2 - Final Audit.pdf | YamatoWithdrawerV3 | unmatched — not counted | — | — | no |
+| Yamato Protocol V2 - Final Audit.pdf | YmtMinter | unmatched — not counted | — | — | no |
+| Yamato Protocol V2 - Final Audit.pdf | veYMT | own contract | veYMT (selected) `0x9e3ce7...b66a0c` — deployed 2025-05-26 14:43:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x1cfa56...298372` | CJPY | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 4 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 47 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 3 own (1 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 31 unmatched
+- Matched-own operational status: 3 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: high=2
-- Match method counts: contract_name=2, extraction_exact=15
+- Match method counts: unique_name=3
+
+Zero-match audit list:
+
+- [3069] Yamato Protocol Final Audit.pdf
+- [3070] Yamato Protocol Final Audit (Extended).pdf
 
 Fork inheritance lineage and inherited audits are included when available.

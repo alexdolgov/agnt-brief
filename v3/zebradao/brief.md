@@ -1,39 +1,69 @@
 # Agentic Audit Brief: ZebraDAO
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: ZebraDAO (`zebradao`)
+- Website: [https://zebradao.finance/](https://zebradao.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:17.929Z
-- Pipeline run: v2-2026-07-02-1ba3fd
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base
 - Contract surface: 11 unique implementations (11 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $401,169.65
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Lending. Structurally: 11 project-authored contract(s) across 1 chain(s); 7 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for ZebraDAO. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Its contracts share 11 common project-authored base contract(s) (eip712, ctokeninterface, ctokenstorage). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 1 contract row(s) across base. Structural roles: 1 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 1
+- Structural roles: core (1)
+- Contract kinds: contract (1)
+- Detected standards: erc20 (1), erc20permit (1), ownable (1)
+- Frameworks: openzeppelin (1)
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 11; live-surface contracts included: 11 (11 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 1; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/11 (0.0%)
-- Deployed-live implementations: 11 of 11 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/11
-- Verified + Unaudited implementations: 11
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 10 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 5
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 11
@@ -58,19 +88,19 @@ The protocol comprises 2 functional families. Its contracts share 11 common proj
 
 ### ⚠️ Verified + Unaudited (11)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| CErc20Delegate | unknown | base | n/a | [`0x798937...6b3e42`](./contracts/base-8453/0x798937a81cea1cc124545210b6b45719516b3e42/) | ⚠️ Unaudited |
-| CErc20Delegator | unknown | base | n/a | [`0x8b5114...9d93f1`](./contracts/base-8453/0x8b51143530a92f703c954ab0d261ef688d9d93f1/) | ⚠️ Unaudited |
-| CEtherDelegate | unknown | base | n/a | [`0x4b20db...7c6b36`](./contracts/base-8453/0x4b20dbdd4d5a7a762f788796df5e0487007c6b36/) | ⚠️ Unaudited |
-| CometProxyAdmin | unknown | base | n/a | [`0xb42b4a...bed4ed`](./contracts/base-8453/0xb42b4a20d0b381ad9539a2f01f346245abbed4ed/) | ⚠️ Unaudited |
-| Comptroller | unknown | base | n/a | [`0xbea1d5...5ed6e7`](./contracts/base-8453/0xbea1d596ae022fae90d84ffaf0907e38a25ed6e7/) | ⚠️ Unaudited |
-| JumpRateModelV2 | unknown | base | n/a | [`0xe77969...50199d`](./contracts/base-8453/0xe779696e43df41c23c1a4d190ac8144c4250199d/) | ⚠️ Unaudited |
-| RewardDistributor | unknown | base | n/a | [`0x4da03b...7b7e05`](./contracts/base-8453/0x4da03b673e9b3a21e76ab389c6cf145bfb7b7e05/) | ⚠️ Unaudited |
-| StakedDistributor | unknown | base | n/a | [`0x0b42a3...5f5f89`](./contracts/base-8453/0x0b42a3d7290a94df04cf4193f62856950a5f5f89/) | ⚠️ Unaudited |
-| TimelockController | unknown | base | n/a | [`0x536652...b11378`](./contracts/base-8453/0x5366523cb3dcefb854eb81913fef1abf8cb11378/) | ⚠️ Unaudited |
-| Token | unknown | base | n/a | [`0xf0ce1d...af899e`](./contracts/base-8453/0xf0ce1d83b5fc9c67f157d8b97fd09e2cf8af899e/) | ⚠️ Unaudited |
-| TokenVesting | unknown | base | n/a | [`0x15682f...b4f9c7`](./contracts/base-8453/0x15682f9a45a2eaff039a5884105b8139c3b4f9c7/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| CErc20Delegate | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x798937...6b3e42` | ⚠️ Unaudited |
+| CErc20Delegator | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x8b5114...9d93f1` | ⚠️ Unaudited |
+| CEtherDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x4b20db...7c6b36` | ⚠️ Unaudited |
+| CometProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb42b4a...bed4ed` | ⚠️ Unaudited |
+| Comptroller | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0xbea1d5...5ed6e7` | ⚠️ Unaudited |
+| JumpRateModelV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xe77969...50199d` | ⚠️ Unaudited |
+| RewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4da03b...7b7e05` | ⚠️ Unaudited |
+| StakedDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | base | n/a | `0x0b42a3...5f5f89` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x536652...b11378` | ⚠️ Unaudited |
+| Token | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | unit-263664 | `0xf0ce1d...af899e` | ⚠️ Unaudited |
+| TokenVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x15682f...b4f9c7` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -92,8 +122,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -105,10 +141,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 10 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 11 |
+| standard_library | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -116,6 +152,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

@@ -1,26 +1,48 @@
 {
   "component": "LiveTradingProcessor-2",
   "main_contract": "LiveTradingProcessor",
-  "source_file_count": 30,
-  "deployment_count": 2,
+  "source_entry_count": 34,
+  "source_file_count": 34,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LiveTradingProcessor-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x1eab81b2461601c74f1cbc2b8b803ffec54768b8",
+      "address": "0x22a5fb185241e8f06a3379af2ab568bd02d15d9f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x076c84d7691008045984bece7a3e595903039017",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xef0f33029e27a578618c23016a10f7a636364f16",
+      "address": "0x2552364fa12bf79623a8785ceea1c910ee28329a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

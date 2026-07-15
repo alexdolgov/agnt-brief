@@ -1,7 +1,15 @@
 {
   "component": "BimaWrappedCollateralFactory",
   "main_contract": "BimaWrappedCollateralFactory",
+  "source_entry_count": 23,
   "source_file_count": 23,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BimaWrappedCollateralFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392097"
     },
     {
       "chain": "bsc",
@@ -20,7 +30,9 @@
       "address": "0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392113"
     },
     {
       "chain": "chain-146",
@@ -28,7 +40,9 @@
       "address": "0x76de9b5df6dcaa70f88e4e0949e17367c4129dbf",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392119"
     }
   ]
 }

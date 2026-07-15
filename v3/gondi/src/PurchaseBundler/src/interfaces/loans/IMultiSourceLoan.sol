@@ -52,12 +52,16 @@ interface IMultiSourceLoan {
     /// @dev It's advised that borrowers only set an expirationTime close to the actual time they will execute the loan
     ///      to avoid replays.
     /// @param offerExecution List of offers to be filled and amount for each.
+    /// @param loanId Loan ID. Optionally used in refinances from borrower for an existing loan.
+    /// @param nftCollateralAddress Address of the NFT collateral.
     /// @param tokenId NFT collateral token ID.
     /// @param amount The amount the borrower is willing to take (must be <= _loanOffer principalAmount)
     /// @param expirationTime Expiration time of the signed offer by the borrower.
     /// @param callbackData Data to pass to the callback.
     struct ExecutionData {
         OfferExecution[] offerExecution;
+        uint256 loanId;
+        address nftCollateralAddress;
         uint256 tokenId;
         uint256 duration;
         uint256 expirationTime;
@@ -156,7 +160,7 @@ interface IMultiSourceLoan {
         uint256 duration;
     }
 
-    event LoanLiquidated(uint256 loanId);
+    event LoanLiquidated(uint256 loanId, bool foreclosed);
     event LoanEmitted(uint256 loanId, uint256[] offerId, Loan loan, uint256 fee);
     event LoanRefinanced(uint256 renegotiationId, uint256 oldLoanId, uint256 newLoanId, Loan loan, uint256 fee);
     event LoanRepaid(uint256 loanId, uint256 totalRepayment, uint256 fee);
@@ -283,9 +287,4 @@ interface IMultiSourceLoan {
     /// @param _target Target address for the flash action contract to interact with.
     /// @param _data Data to be passed to be passed to the ultimate contract.
     function executeFlashAction(uint256 _loanId, Loan calldata _loan, address _target, bytes calldata _data) external;
-
-    /// @notice Called by the liquidator for accounting purposes.
-    /// @param _loanId The id of the loan.
-    /// @param _loan The loan object.
-    function loanLiquidated(uint256 _loanId, Loan calldata _loan) external;
 }

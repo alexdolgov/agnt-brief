@@ -1,8 +1,16 @@
 {
   "component": "FreeBetsHolder-7",
   "main_contract": "FreeBetsHolder",
+  "source_entry_count": 20,
   "source_file_count": 20,
-  "deployment_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FreeBetsHolder-7\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,19 @@
       "address": "0x9a2aab3e81f917c04fbeab63a81f9cd7090d1ec0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xde20d9d6a359802218473788148a2229533b1263",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

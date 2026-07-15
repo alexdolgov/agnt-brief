@@ -116,11 +116,6 @@ contract CTokenStorage {
      * @notice Mapping of account addresses to outstanding borrow balances
      */
     mapping(address => BorrowSnapshot) internal accountBorrows;
-
-    /**
-     * @notice Share of seized collateral that is added to reserves
-     */
-    uint public constant protocolSeizeShareMantissa = 5.0e16; // 5.0%
 }
 
 abstract contract CTokenInterface is CTokenStorage {
@@ -260,38 +255,6 @@ abstract contract CErc20Interface is CErc20Storage {
 
     function mint(uint mintAmount) external virtual returns (uint);
     function redeem(uint redeemTokens) external virtual returns (uint);
-    function redeemUnderlying(uint redeemAmount) external virtual returns (uint);
-    function borrow(uint borrowAmount) external virtual returns (uint);
-    function repayBorrow(uint repayAmount) external virtual returns (uint);
-    function repayBorrowBehalf(address borrower, uint repayAmount) external virtual returns (uint);
-    function liquidateBorrow(address borrower, uint repayAmount, CTokenInterface cTokenCollateral) external virtual returns (uint);
-
-
-    /*** Admin Functions ***/
-
-    function _addReserves(uint addAmount) external virtual returns (uint);
-}
-
-contract CErc721Storage {
-    /**
-     * @notice Underlying asset for this CToken
-     */
-    address public underlying;
-
-    /**
-     * @dev User deposit tokens map
-     */
-    mapping (address => uint256[]) public userTokens;
-}
-
-abstract contract CErc721Interface is CErc721Storage {
-
-    /*** User Interface ***/
-
-    function mint(uint tokenId) external virtual returns (uint);
-    function redeem(uint redeemTokens) external virtual returns (uint);
-    function mints(uint[] calldata tokenIds) external virtual returns (uint[] memory);
-    function redeems(uint[] calldata redeemTokenIds) external virtual returns (uint[] memory);
     function redeemUnderlying(uint redeemAmount) external virtual returns (uint);
     function borrow(uint borrowAmount) external virtual returns (uint);
     function repayBorrow(uint repayAmount) external virtual returns (uint);

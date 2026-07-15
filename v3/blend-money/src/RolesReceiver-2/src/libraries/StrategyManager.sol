@@ -14,6 +14,7 @@ import {Enum} from "safe-contracts/libraries/Enum.sol";
  * @notice Abstract contract responsible for managing strategy configurations
  * @dev This contract provides storage and management functions for strategy configurations,
  *      separating the concern of strategy management from other contract responsibilities.
+ *      Security: Reentrancy protection is provided by the onlyExecutor modifier and per-vault rate limiting.
  */
 abstract contract StrategyManager {
     /*//////////////////////////////////////////////////////////////
@@ -23,6 +24,10 @@ abstract contract StrategyManager {
     /// @notice Mapping to store market configurations for each vault
     /// @dev Maps VaultId to their corresponding array of MarketConfigs
     mapping(address => VaultConfig) public strategyConfig;
+
+    /// @notice A mapping of (safe, vault) pairs to the timestamp of their last completed operation
+    /// @dev Key is keccak256(abi.encodePacked(safe, vault)). Used to enforce per-vault rate limiting and prevent rapid-fire operations
+    mapping(bytes32 => uint256) public lastOperationTimestamp;
 
     /// @notice Boolean flag that the `executeRebalance` function has been entered
     /// @dev In practice, this will only be set to true if inside the `executeRebalance` function
@@ -34,6 +39,9 @@ abstract contract StrategyManager {
 
     /// @notice This is the address that is able to execute transactions on the strategy manager
     address public executor;
+
+    /// @notice The minimum time between operations in seconds
+    uint256 public immutable MIN_SECONDS_BETWEEN_OPERATIONS;
 
     /// @notice Storage slot to avoid collisions for temporary seen items mapping
     bytes32 private constant TEMP_SEEN_SLOT = keccak256("blend.temp.seen.items");
@@ -78,6 +86,12 @@ abstract contract StrategyManager {
 
     /// @notice Thrown when the `execBalance` function has already been entered
     error AlreadyInitiated();
+
+    /// @notice Thrown when an operation is performed too frequently
+    error RateLimited();
+
+    /// @notice Thrown when the minimum seconds between operations specified in constructor is zero
+    error InvalidMinSecondsBetweenOperations();
 
     /*//////////////////////////////////////////////////////////////
                             MODIFIERS
@@ -134,6 +148,23 @@ abstract contract StrategyManager {
         isVaultActionInitiated = true;
         _;
         isVaultActionInitiated = false;
+    }
+
+    /*//////////////////////////////////////////////////////////////
+                            CONSTRUCTOR
+    //////////////////////////////////////////////////////////////*/
+
+    /**
+     * @notice Constructor for the StrategyManager
+     * @param _minSecondsBetweenOperations The minimum time in seconds that must elapse between operations on the same safe
+     * @dev Reverts if _minSecondsBetweenOperations is zero or greater than 300 seconds
+     */
+    constructor(uint256 _minSecondsBetweenOperations) {
+        require(
+            _minSecondsBetweenOperations > 0 && _minSecondsBetweenOperations <= 300,
+            InvalidMinSecondsBetweenOperations()
+        );
+        MIN_SECONDS_BETWEEN_OPERATIONS = _minSecondsBetweenOperations;
     }
 
     /*//////////////////////////////////////////////////////////////
@@ -219,6 +250,19 @@ abstract contract StrategyManager {
         strategyConfig[vaultId] = newConfig;
     }
 
+    /**
+     * @notice Internal function to verify the rate limit for a safe-vault pair
+     * @param safe The address of the safe
+     * @param vault The address of the vault
+     * @dev This function checks if the minimum seconds between operations has elapsed since the last operation on this safe-vault pair
+     * @custom:reverts RateLimited if insufficient time has passed since the last operation on this safe-vault pair
+     */
+    function _verifyRateLimit(address safe, address vault) internal {
+        bytes32 safeVaultKey = keccak256(abi.encodePacked(safe, vault));
+        require(block.timestamp - lastOperationTimestamp[safeVaultKey] > MIN_SECONDS_BETWEEN_OPERATIONS, RateLimited());
+        lastOperationTimestamp[safeVaultKey] = block.timestamp;
+    }
+
     /*//////////////////////////////////////////////////////////////
                             EXTERNAL FUNCTIONS
     //////////////////////////////////////////////////////////////*/
@@ -228,14 +272,18 @@ abstract contract StrategyManager {
      * @param safe The address of the safe that will execute the rebalance
      * @param vault The address of the vault that will be rebalanced
      * @param rebalanceData The data for the rebalance
+     * @dev Enforces rate limiting per (safe, vault) pair by checking that MIN_SECONDS_BETWEEN_OPERATIONS has elapsed since the last operation
+     * @custom:reverts RateLimited if insufficient time has passed since the last operation on this safe-vault pair
+     * @custom:reverts SafeExecutionError if the safe's execTransactionFromModule call fails
      */
     function executeRebalance(address safe, address vault, RebalanceData[] calldata rebalanceData)
         public
-        virtual
         onlyExecutor
         validVault(vault)
         initiateRebalance
     {
+        _verifyRateLimit(safe, vault);
+
         bool success = IModuleManager(safe).execTransactionFromModule(
             address(strategyConfig[vault].control),
             0,
@@ -253,10 +301,13 @@ abstract contract StrategyManager {
      *      `actionController`. This ensures actions are executed within the safe's context.
      *      The function is protected by modifiers to ensure the caller is the executor, the vault is valid,
      *      and the action controller is approved for the given vault.
+     *      Enforces rate limiting per (safe, vault) pair by checking that MIN_SECONDS_BETWEEN_OPERATIONS has elapsed since the last operation.
      * @param safe The address of the user's Gnosis Safe that will execute the transaction.
      * @param vault The address of the vault being acted upon. Used for validation purposes.
      * @param actionController The controller contract responsible for executing the specific action.
      * @param data The ABI-encoded calldata for the action to be executed by the `actionController`.
+     * @custom:reverts RateLimited if insufficient time has passed since the last operation on this safe-vault pair
+     * @custom:reverts SafeExecutionError if the safe's execTransactionFromModule call fails
      */
     function executeVaultAction(
         address safe,
@@ -264,6 +315,8 @@ abstract contract StrategyManager {
         IVaultActionController actionController,
         bytes calldata data
     ) external onlyExecutor validVault(vault) validActionController(vault, actionController) initiateVaultAction {
+        _verifyRateLimit(safe, vault);
+
         VaultConfig memory vaultConfig = strategyConfig[vault];
         bytes memory strategyData;
         for (uint256 i = 0; i < vaultConfig.actions.length; i++) {

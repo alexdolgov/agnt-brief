@@ -2,7 +2,6 @@
 
 /**
  * @title Stake Contract
- * @version 1.2.0
  * @notice Mint Club V2 - Staking Contract
  * @dev Allows users to create staking pools for any ERC20 tokens with timestamp-based reward distribution
  *
@@ -194,10 +193,6 @@ contract Stake is Ownable, ReentrancyGuard {
             endTime = pool.cancelledAt;
 
         uint256 toTime = currentTime > endTime ? endTime : currentTime;
-
-        // Prevent arithmetic underflow: if toTime < lastRewardUpdatedAt, no time has passed
-        if (toTime <= pool.lastRewardUpdatedAt) return pool.accRewardPerShare;
-
         uint256 timePassed = toTime - pool.lastRewardUpdatedAt;
 
         if (timePassed == 0) return pool.accRewardPerShare;
@@ -339,12 +334,6 @@ contract Stake is Ownable, ReentrancyGuard {
             endTime = cancelledAt;
         }
         uint256 toTime = currentTime > endTime ? endTime : currentTime;
-
-        // Prevent arithmetic underflow: if toTime < lastRewardUpdatedAt, no time has passed
-        if (toTime <= lastRewardUpdatedAt) {
-            return;
-        }
-
         uint256 timePassed = toTime - lastRewardUpdatedAt;
 
         // Track allocated rewards if there are stakers and time has passed
@@ -682,14 +671,13 @@ contract Stake is Ownable, ReentrancyGuard {
         if (userStake.stakedAmount < amount)
             revert Stake__InsufficientBalance();
 
-        // Always update pool to ensure accurate reward calculations for remaining users
         _updatePool(poolId);
 
         // Regular unstake: claim rewards
         if (shouldClaimRewards) {
             _claimRewards(poolId, msg.sender); // Transfers rewards and updates rewardDebt
         }
-        // Emergency unstake: skip claiming rewards in case we encounter issues
+        // Emergency unstake: skip reward claiming (rewards are forfeited)
 
         // Update user and pool's staked amount
         unchecked {
@@ -1053,7 +1041,7 @@ contract Stake is Ownable, ReentrancyGuard {
      * @return The version string
      */
     function version() external pure returns (string memory) {
-        return "1.2.0";
+        return "1.1.0";
     }
 
     // MARK: - ERC1155 Receiver

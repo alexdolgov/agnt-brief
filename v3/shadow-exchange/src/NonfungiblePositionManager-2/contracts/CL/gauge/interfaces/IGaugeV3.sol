@@ -4,7 +4,7 @@ pragma solidity ^0.8.26;
 interface IGaugeV3 {
     error NOT_AUTHORIZED();
     error NOT_VOTER();
-    error NOT_GT_ZERO(uint256 amt);
+    error NOT_GT_ZERO();
     error CANT_CLAIM_FUTURE();
     error RETRO();
 

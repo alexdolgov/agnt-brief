@@ -1,4 +1,17 @@
 // SPDX-License-Identifier: MIT
+//
+//      _                    _ __        __    _ _      _   _  ___ _
+//     / \   __ _  ___ _ __ | |\ \      / /_ _| | | ___| |_| |/ (_) |_
+//    / _ \ / _` |/ _ \ '_ \| __\ \ /\ / / _` | | |/ _ \ __| ' /| | __|
+//   / ___ \ (_| |  __/ | | | |_ \ V  V / (_| | | |  __/ |_| . \| | |_
+//  /_/   \_\__, |\___|_| |_|\__| \_/\_/ \__,_|_|_|\___|\__|_|\_\_|\__|
+//          |___/
+//
+//  Build verifiably secure onchain agents
+//  https://agentwalletkit.tokenpage.xyz
+//
+//  For technical queries or guidance contact @krishan711
+//
 pragma solidity 0.8.28;
 
 import {AWKAdapterRegistry as AdapterRegistry} from "./AWKAdapterRegistry.sol";
@@ -15,6 +28,15 @@ import {MessageHashUtils} from "@openzeppelin/contracts/utils/cryptography/Messa
 import {BaseAccount} from "account-abstraction/core/BaseAccount.sol";
 import {IEntryPoint} from "account-abstraction/interfaces/IEntryPoint.sol";
 import {UserOperation} from "account-abstraction/interfaces/UserOperation.sol";
+
+error AdapterIsBlocked(address adapter);
+error TargetIsBlocked(address target);
+error AdapterExecutionFailed(bytes reason);
+error TransferFailed();
+error NotApprovedImplementation();
+error InvalidRegistry();
+error InvalidState();
+error NotAllowed();
 
 /**
  * @title AgentWalletStorageV1
@@ -45,15 +67,20 @@ library AgentWalletStorageV1 {
 
 /**
  * @title AWKAgentWalletV1
- * @notice ERC-4337 v0.6 smart wallet for yield-seeking agents.
+ * @notice Abstract ERC-4337 v0.6 smart wallet for yield-seeking agents.
  * @dev Implements:
  *      - ERC-4337 v0.6 Account (BaseAccount)
  *      - Single owner ECDSA validation
  *      - UUPS Upgradeability
  *      - ERC-7201 namespaced storage
  *      - "Onchain Proof" enforcement (executeViaAdapter only)
+ *
+ *      IMPORTANT: This contract is abstract and must be inherited. Subclasses should:
+ *      1. Override withdrawal functions to enforce fee collection (see YieldSeekerAgentWalletV1)
+ *      2. Add any protocol-specific storage and logic
+ *      3. Ensure the paired Factory calls initialize() atomically during deployment
  */
-contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUpgradeable {
+abstract contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUpgradeable {
     using ECDSA for bytes32;
     using MessageHashUtils for bytes32;
     using SafeERC20 for IERC20;
@@ -97,6 +124,16 @@ contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUp
 
     // ============ Initializers ============
 
+    /**
+     * @notice Initialize the wallet with owner and index
+     * @param _owner The owner address for the wallet
+     * @param _ownerAgentIndex Index of this agent for the owner
+     * @dev SECURITY: This function is intentionally public without caller restrictions because:
+     *      1. The `initializer` modifier prevents re-initialization after first call
+     *      2. Factory subclasses MUST call initialize() atomically in the same transaction as deployment
+     *      3. See YieldSeekerAgentWalletFactory.createAgentWallet() for the correct pattern
+     *      Factories that expose deployment without atomic initialization would create a vulnerability.
+     */
     function initialize(address _owner, uint256 _ownerAgentIndex) public virtual initializer {
         _initializeV1(_owner, _ownerAgentIndex);
     }
@@ -236,8 +273,8 @@ contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUp
 
         // AdapterRegistry
         address registryAddr = FACTORY.adapterRegistry();
-        if (registryAddr == address(0)) revert AWKErrors.InvalidRegistry();
-        if (registryAddr.code.length == 0) revert AWKErrors.InvalidRegistry();
+        if (registryAddr == address(0)) revert InvalidRegistry();
+        if (registryAddr.code.length == 0) revert InvalidRegistry();
         $.adapterRegistry = AdapterRegistry(registryAddr);
 
         emit SyncedFromFactory(registryAddr);
@@ -253,16 +290,12 @@ contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUp
     function _validateSignature(UserOperation calldata userOp, bytes32 userOpHash) internal virtual override returns (uint256 validationData) {
         bytes32 hash = userOpHash.toEthSignedMessageHash();
         address signer = hash.recover(userOp.signature);
-
-        // Allow either the owner or the centralized AWKServer to sign
         if (signer == owner()) {
             return 0;
         }
-
         if (isAgentOperator(signer)) {
             return 0;
         }
-
         return SIG_VALIDATION_FAILED;
     }
 
@@ -270,14 +303,14 @@ contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUp
      * @notice Standard execute disallowed to enforce authorized adapter usage
      */
     function execute(address, uint256, bytes calldata) external virtual {
-        revert AWKErrors.NotAllowed();
+        revert NotAllowed();
     }
 
     /**
      * @notice Standard executeBatch disallowed to enforce authorized adapter usage
      */
     function executeBatch(address[] calldata, bytes[] calldata) external virtual {
-        revert AWKErrors.NotAllowed();
+        revert NotAllowed();
     }
 
     // ============ Execution (Via Adapter) ============
@@ -292,10 +325,10 @@ contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUp
 
         // Check user-level blocklists first (owner sovereignty)
         if ($.blockedAdapters[adapter]) {
-            revert AWKErrors.AdapterBlocked(adapter);
+            revert AdapterIsBlocked(adapter);
         }
         if ($.blockedTargets[target]) {
-            revert AWKErrors.TargetBlocked(target);
+            revert TargetIsBlocked(target);
         }
 
         // Then check global registry validation
@@ -308,7 +341,7 @@ contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUp
         bool success;
         (success, result) = adapter.delegatecall(callData);
         if (!success) {
-            revert AWKErrors.AdapterExecutionFailed(result);
+            revert AdapterExecutionFailed(result);
         }
     }
 
@@ -327,7 +360,7 @@ contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUp
      */
     function executeViaAdapterBatch(address[] calldata adapters, address[] calldata targets, bytes[] calldata datas) external onlyExecutors returns (bytes[] memory results) {
         uint256 length = adapters.length;
-        if (length != targets.length || length != datas.length) revert AWKErrors.InvalidState();
+        if (length != targets.length || length != datas.length) revert InvalidState();
         results = new bytes[](length);
         for (uint256 i; i < length; ++i) {
             results[i] = _executeAdapterCall(adapters[i], targets[i], datas[i]);
@@ -354,7 +387,7 @@ contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUp
     function _authorizeUpgrade(address newImplementation) internal view override onlyOwner {
         address approvedImplementation = FACTORY.agentWalletImplementation();
         if (newImplementation != approvedImplementation) {
-            revert AWKErrors.NotApprovedImplementation();
+            revert NotApprovedImplementation();
         }
     }
 
@@ -367,11 +400,6 @@ contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUp
      * @param amount Amount to withdraw
      */
     function withdrawAssetToUser(address recipient, address asset, uint256 amount) external virtual onlyOwner {
-        if (recipient == address(0)) revert AWKErrors.ZeroAddress();
-        if (asset == address(0)) revert AWKErrors.ZeroAddress();
-        IERC20 token = IERC20(asset);
-        uint256 balance = token.balanceOf(address(this));
-        if (balance < amount) revert AWKErrors.InsufficientBalance();
         _withdrawAsset(recipient, asset, amount);
     }
 
@@ -381,8 +409,6 @@ contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUp
      * @param asset Address of the ERC20 token to withdraw
      */
     function withdrawAllAssetToUser(address recipient, address asset) external virtual onlyOwner {
-        if (recipient == address(0)) revert AWKErrors.ZeroAddress();
-        if (asset == address(0)) revert AWKErrors.ZeroAddress();
         IERC20 token = IERC20(asset);
         uint256 balance = token.balanceOf(address(this));
         _withdrawAsset(recipient, asset, balance);
@@ -395,6 +421,8 @@ contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUp
      * @param amount Amount to withdraw
      */
     function _withdrawAsset(address recipient, address asset, uint256 amount) internal {
+        if (recipient == address(0)) revert AWKErrors.ZeroAddress();
+        if (asset == address(0)) revert AWKErrors.ZeroAddress();
         IERC20 token = IERC20(asset);
         token.safeTransfer(recipient, amount);
         emit WithdrewTokenToUser(owner(), recipient, asset, amount);
@@ -406,8 +434,6 @@ contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUp
      * @param amount Amount of ETH to withdraw
      */
     function withdrawEthToUser(address recipient, uint256 amount) external onlyOwner {
-        uint256 balance = address(this).balance;
-        if (balance < amount) revert AWKErrors.InsufficientBalance();
         _withdrawEth(recipient, amount);
     }
 
@@ -428,7 +454,7 @@ contract AWKAgentWalletV1 is IAWKAgentWallet, BaseAccount, Initializable, UUPSUp
     function _withdrawEth(address recipient, uint256 amount) internal {
         if (recipient == address(0)) revert AWKErrors.ZeroAddress();
         (bool success,) = recipient.call{value: amount}("");
-        if (!success) revert AWKErrors.TransferFailed();
+        if (!success) revert TransferFailed();
         emit WithdrewEthToUser(owner(), recipient, amount);
     }
 }

@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at snowtrace.io on 2023-02-06
-*/
-
 // Sources flattened with hardhat v2.5.0 https://hardhat.org
 
 // File contracts/interfaces/IAdmin.sol
@@ -85,7 +81,7 @@ interface IAvalaunchMarketplace {
 }
 
 
-// File @openzeppelin/contracts/cryptography/[email protected]
+// File @openzeppelin/contracts/cryptography/ECDSA.sol@v3.4.1
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -174,7 +170,7 @@ library ECDSA {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/[email protected]
+// File @openzeppelin/contracts/token/ERC20/IERC20.sol@v3.4.1
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -254,7 +250,7 @@ interface IERC20 {
 }
 
 
-// File @openzeppelin/contracts/math/[email protected]
+// File @openzeppelin/contracts/math/SafeMath.sol@v3.4.1
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -471,7 +467,7 @@ library SafeMath {
 }
 
 
-// File @openzeppelin/contracts/utils/[email protected]
+// File @openzeppelin/contracts/utils/Address.sol@v3.4.1
 
 
 pragma solidity >=0.6.2 <0.8.0;
@@ -663,7 +659,7 @@ library Address {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/[email protected]
+// File @openzeppelin/contracts/token/ERC20/SafeERC20.sol@v3.4.1
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -739,7 +735,7 @@ library SafeERC20 {
 }
 
 
-// File @openzeppelin/contracts/proxy/[email protected]
+// File @openzeppelin/contracts/proxy/Initializable.sol@v3.4.1
 
 
 // solhint-disable-next-line compiler-version

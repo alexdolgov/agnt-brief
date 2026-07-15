@@ -1,0 +1,19 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "zunami-protocol",
+  "missing": [
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x8d4d612d96d69c9df83c2607f08f6e361983e598",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0xadfa8e4c7004a9373426ac4f37f146a42ae699ab",
+      "canonical_source_address": null
+    }
+  ]
+}

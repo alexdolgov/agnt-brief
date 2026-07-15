@@ -1,10 +1,28 @@
 {
   "component": "AdminUpgradeabilityProxy",
   "main_contract": "AdminUpgradeabilityProxy",
+  "source_entry_count": 68,
   "source_file_count": 68,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AdminUpgradeabilityProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sherlock-audit/2022-10-union-finance-judging/blob/main/Audit_Report.pdf",
+    "https://github.com/sherlock-audit/2023-02-union-judging",
+    "https://github.com/sherlock-audit/2023-02-union-judging/blob/main/Audit_Report.pdf",
+    "https://github.com/sherlock-audit/2024-06-union-finance-update-2-judging",
+    "https://github.com/sherlock-audit/2024-06-union-finance-update-2-judging/blob/main/Audit_Report.pdf",
+    "https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2023.03.21%20-%20Final%20-%20Union%20Finance%20Update%20Audit%20Report.pdf",
+    "https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2024.07.13%20-%20Final%20-%20Union%20Finance%20Update%202%20Audit%20Report.pdf",
+    "https://raw.githubusercontent.com/sherlock-protocol/sherlock-reports/main/audits/2023.03.21%20-%20Final%20-%20Union%20Finance%20Update%20Audit%20Report.pdf",
+    "https://raw.githubusercontent.com/sherlock-protocol/sherlock-reports/main/audits/2024.07.13%20-%20Final%20-%20Union%20Finance%20Update%202%20Audit%20Report.pdf"
+  ],
   "addresses": [
     {
       "chain": "optimism",
@@ -12,7 +30,9 @@
       "address": "0x06a31efa04453c5f9c0a711cdb96075308c9d6e3",
       "is_proxy": true,
       "implementation_address": "0xd3664e708972c0d1848de9a916eb440458b68e01",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404529"
     },
     {
       "chain": "optimism",
@@ -20,7 +40,9 @@
       "address": "0x9c69fc4edcce8d3410ab59e9f9d9e65e5f41350b",
       "is_proxy": true,
       "implementation_address": "0x5753e92afb0b43c6606c6c547696ee0fe0231814",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404530"
     }
   ]
 }

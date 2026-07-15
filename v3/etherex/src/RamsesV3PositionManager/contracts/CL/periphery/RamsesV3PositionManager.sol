@@ -40,7 +40,9 @@ contract RamsesV3PositionManager is
     /// @dev details about the Ramses position
     struct Position {
         /// @dev the ID of the pool with which this token is connected
-        uint80 poolId;
+        uint48 poolId;
+        /// @dev last updated timestamp
+        uint32 lastModified;
         /// @dev the tick range of the position
         int24 tickLower;
         int24 tickUpper;
@@ -55,10 +57,10 @@ contract RamsesV3PositionManager is
     }
 
     /// @dev IDs of pools assigned by this contract
-    mapping(address pool => uint80 id) private _poolIds;
+    mapping(address pool => uint48 id) private _poolIds;
 
     /// @dev Pool keys by pool ID, to save on SSTOREs for position data
-    mapping(uint80 id => PoolAddress.PoolKey key) private _poolIdToPoolKey;
+    mapping(uint48 id => PoolAddress.PoolKey key) private _poolIdToPoolKey;
 
     /// @dev The token ID position data
     mapping(uint256 tokenId => Position position) private _positions;
@@ -66,7 +68,7 @@ contract RamsesV3PositionManager is
     /// @dev The ID of the next token that will be minted. Skips 0
     uint176 private _nextId = 1;
     /// @dev The ID of the next pool that is used for the first time. Skips 0
-    uint80 private _nextPoolId = 1;
+    uint48 private _nextPoolId = 1;
 
     /// @dev The address of the token descriptor contract, which handles generating token URIs for position tokens
     address private immutable _tokenDescriptor;
@@ -75,12 +77,9 @@ contract RamsesV3PositionManager is
     IAccessHub private immutable accessHub;
 
     /// @dev the address of the voter contract
-    address private voter;
+    IVoter private voter;
     address private ram;
     address private xRam;
-
-    /// @dev cache the last modified timestamp for each tokenId
-    mapping(uint256 => uint32) public positionLastModified;
 
     constructor(
         address _deployer,
@@ -130,7 +129,7 @@ contract RamsesV3PositionManager is
     }
 
     /// @dev Caches a pool key
-    function cachePoolKey(address pool, PoolAddress.PoolKey memory poolKey) private returns (uint80 poolId) {
+    function cachePoolKey(address pool, PoolAddress.PoolKey memory poolKey) private returns (uint48 poolId) {
         poolId = _poolIds[pool];
         if (poolId == 0) {
             _poolIds[pool] = (poolId = _nextPoolId++);
@@ -174,13 +173,14 @@ contract RamsesV3PositionManager is
         (, uint256 feeGrowthInside0LastX128, uint256 feeGrowthInside1LastX128, , ) = pool.positions(positionKey);
 
         /// @dev idempotent set
-        uint80 poolId = cachePoolKey(
+        uint48 poolId = cachePoolKey(
             address(pool),
             PoolAddress.PoolKey({token0: params.token0, token1: params.token1, tickSpacing: params.tickSpacing})
         );
 
         _positions[tokenId] = Position({
             poolId: poolId,
+            lastModified: uint32(block.timestamp),
             tickLower: params.tickLower,
             tickUpper: params.tickUpper,
             liquidity: liquidity,
@@ -189,8 +189,6 @@ contract RamsesV3PositionManager is
             tokensOwed0: 0,
             tokensOwed1: 0
         });
-
-        positionLastModified[tokenId] = uint32(block.timestamp);
 
         emit IncreaseLiquidity(tokenId, liquidity, amount0, amount1);
     }
@@ -206,9 +204,9 @@ contract RamsesV3PositionManager is
         return INonfungibleTokenPositionDescriptor(_tokenDescriptor).tokenURI(this, tokenId);
     }
 
-    function _tryClaimRewards(uint256 tokenId, PoolAddress.PoolKey memory poolKey) private {
-        if (voter != address(0)) {
-            address gauge = IVoter(voter).gaugeForPool(PoolAddress.computeAddress(deployer, poolKey));
+    function _tryClaimRewards(uint256 tokenId, IRamsesV3Pool pool) private {
+        if (voter != IVoter(address(0))) {
+            address gauge = voter.gaugeForPool(address(pool));
             if (gauge != address(0)) {
                 // only claim protocol tokens to prevent gas bomb attacks
                 address[] memory rewardTokens = new address[](2);
@@ -236,10 +234,6 @@ contract RamsesV3PositionManager is
         Position storage position = _positions[params.tokenId];
 
         PoolAddress.PoolKey memory poolKey = _poolIdToPoolKey[position.poolId];
-        
-
-        _tryClaimRewards(params.tokenId, poolKey);
-
         IRamsesV3Pool pool;
         (liquidity, amount0, amount1, pool) = addLiquidity(
             AddLiquidityParams({
@@ -256,6 +250,8 @@ contract RamsesV3PositionManager is
                 index: params.tokenId
             })
         );
+        /// @dev claim rewards after modifying liquidity ensures period already advanced for first claims
+        _tryClaimRewards(params.tokenId, pool);
 
         bytes32 positionKey = PositionKey.compute(
             address(this),
@@ -292,7 +288,7 @@ contract RamsesV3PositionManager is
         }
         
         // checkpoint
-        positionLastModified[params.tokenId] = uint32(block.timestamp);
+        position.lastModified = uint32(block.timestamp);
 
         emit IncreaseLiquidity(params.tokenId, liquidity, amount0, amount1);
     }
@@ -316,10 +312,11 @@ contract RamsesV3PositionManager is
 
         PoolAddress.PoolKey memory poolKey = _poolIdToPoolKey[position.poolId];
         
-        _tryClaimRewards(params.tokenId, poolKey);
         
         IRamsesV3Pool pool = IRamsesV3Pool(PoolAddress.computeAddress(deployer, poolKey));
         (amount0, amount1) = pool.burn(params.tokenId, position.tickLower, position.tickUpper, params.liquidity);
+        /// @dev claim rewards after modifying liquidity ensures period already advanced for first claims
+        _tryClaimRewards(params.tokenId, pool);
 
         if (amount0 < params.amount0Min || amount1 < params.amount1Min) revert CheckSlippage();
 
@@ -361,7 +358,7 @@ contract RamsesV3PositionManager is
         }
 
         // checkpoint
-        positionLastModified[params.tokenId] = uint32(block.timestamp);
+        position.lastModified = uint32(block.timestamp);
 
         emit DecreaseLiquidity(params.tokenId, params.liquidity, amount0, amount1);
     }
@@ -442,9 +439,29 @@ contract RamsesV3PositionManager is
 
 
         PoolAddress.PoolKey memory poolKey = _poolIdToPoolKey[position.poolId];
-        IGaugeV3 gauge = IGaugeV3(IVoter(voter).gaugeForPool(PoolAddress.computeAddress(deployer, poolKey)));
+        IGaugeV3 gauge = IGaugeV3(voter.gaugeForPool(PoolAddress.computeAddress(deployer, poolKey)));
         
         gauge.getRewardForOwner(tokenId, tokens);
+    }
+
+    /// @inheritdoc IRamsesV3PositionManager
+    function getPeriodReward(
+        uint256 period, 
+        uint256 tokenId, 
+        address[] calldata tokens,
+        address receiver
+    ) external payable isAuthorizedForToken(tokenId) {
+        Position storage position = _positions[tokenId];
+        
+        PoolAddress.PoolKey memory poolKey = _poolIdToPoolKey[position.poolId];
+        address gauge = voter.gaugeForPool(PoolAddress.computeAddress(deployer, poolKey));
+            
+        IGaugeV3(gauge).getPeriodReward(period, tokens, address(this), tokenId, position.tickLower, position.tickUpper, receiver);
+    }
+
+    /// @inheritdoc IRamsesV3PositionManager
+    function positionLastModified(uint256 tokenId) external view returns (uint32) {
+        return _positions[tokenId].lastModified;
     }
 
     /// @inheritdoc INonfungiblePositionManager
@@ -457,13 +474,13 @@ contract RamsesV3PositionManager is
 
     /// @notice extra function that allows for the 2-step deployment of CL first, then governance later
     /// @dev gated to the timelock
-    function setVoter(address _voter) external {
+    function setVoter(IVoter _voter) external {
         require(msg.sender == accessHub.timelock());
         voter = _voter;
         
         // cache rex and xrex addresses to save gas on every claim
-        ram = IVoter(_voter).ram();
-        xRam = IVoter(_voter).xRam();
+        ram = _voter.ram();
+        xRam = _voter.xRam();
     }
 
     //** Overrides */

@@ -1,7 +1,15 @@
 {
   "component": "MintClubToken",
   "main_contract": "MintClubToken",
-  "source_file_count": 6,
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MintClubToken\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x19128727a8a7a6276e17a1d1acb224b4b711e4eb",
+      "address": "0x1f3af095cda17d63cad238358837321e95fc5915",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

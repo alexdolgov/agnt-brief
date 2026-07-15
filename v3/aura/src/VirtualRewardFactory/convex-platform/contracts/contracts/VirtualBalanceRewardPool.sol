@@ -204,12 +204,16 @@ contract VirtualBalanceRewardPool is VirtualBalanceWrapper {
     function getReward() external{
         getReward(msg.sender);
     }
-
-    function donate(uint256 _amount) external returns(bool){
-        IERC20(rewardToken).safeTransferFrom(msg.sender, address(this), _amount);
-        queuedRewards = queuedRewards.add(_amount);
+    /**
+     * @dev Processes queued rewards in isolation, providing the period has finished.
+     *      This allows a cheaper way to trigger rewards on low value pools.
+     */
+    function processIdleRewards() external {
+        if (block.timestamp >= periodFinish && queuedRewards > 0) {
+            notifyRewardAmount(queuedRewards);
+            queuedRewards = 0;
+        }
     }
-
     function queueNewRewards(uint256 _rewards) external{
         require(msg.sender == operator, "!authorized");
 

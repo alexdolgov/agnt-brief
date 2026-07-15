@@ -1,44 +1,72 @@
 # Agentic Audit Brief: Tulipa Capital
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Tulipa Capital (`tulipa-capital`)
 - Website: [https://www.tulipa.capital](https://www.tulipa.capital)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:02.132Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
-- Chains: base, berachain, ethereum
-- Contract surface: 6 unique implementations (10 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $39,008,576.17
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+The closed normalized authority records no EVM contract logic or eligible security audit for this project. This is an explicit cohort state, not a skipped export.
+
 ## Project Description
 
-Risk Curators. Structurally: 7 project-authored contract(s) across 2 chain(s); 3 ERC4626 vaults, 3 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for Tulipa Capital in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol forms a single structural family (Core Logic) of 8 contract(s).
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 22; live-surface contracts included: 10 (10 live, 0 unknown).
-- Excluded by liveness: 12 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/6 (0.0%)
-- Deployed-live implementations: 6 of 6 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/6
-- Verified + Unaudited implementations: 6
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 6
-- Raw deployments: 10
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,16 +85,9 @@ The protocol forms a single structural family (Core Logic) of 8 contract(s).
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BoringVault | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x699e04...976490`](./contracts/ethereum-1/0x699e04f98de2fc395a7dcbf36b48ec837a976490/); ethereum `0x6bf340...1c3ddf` | ⚠️ Unaudited |
-| EVault | core_logic | ethereum | n/a | [`0x3b028b...73f228`](./contracts/ethereum-1/0x3b028b4b6c567ef5f8ca1144da4fbaa0d973f228/) | ⚠️ Unaudited |
-| EVault | core_logic | berachain | n/a | [`0xe932da...54c444`](./contracts/berachain-80094/0xe932da5a4d00536c224f8153f299cdcd8054c444/) | ⚠️ Unaudited |
-| LendingVault | core_logic | base | n/a | [`0x61a860...ae47d4`](./contracts/base-8453/0x61a8606e04d350dfa1d1aaa68b37260746ae47d4/) | ⚠️ Unaudited |
-| Vault | core_logic | ethereum | n/a | 4 deployments: ethereum [`0x7895a0...6f6396`](./contracts/ethereum-1/0x7895a046b26cc07272b022a0c9bafc046e6f6396/); ethereum `0x7a12d4...37e428`; ethereum `0x936fac...d81bc7`; ethereum `0xce0b79...b574f3` | ⚠️ Unaudited |
-| Vault | core_logic | base | n/a | [`0xee6a60...c8b150`](./contracts/base-8453/0xee6a60be216058afd7a0643795b4f1e197c8b150/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,8 +109,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -104,7 +131,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 6 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -112,6 +139,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

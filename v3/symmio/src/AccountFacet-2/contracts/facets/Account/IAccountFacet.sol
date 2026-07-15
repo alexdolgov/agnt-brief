@@ -2,33 +2,34 @@
 // This contract is licensed under the SYMM Core Business Source License 1.1
 // Copyright (c) 2023 Symmetry Labs AG
 // For more information, see https://docs.symm.io/legal-disclaimer/license
-pragma solidity >=0.8.18;
+pragma solidity >=0.8.19;
 
-import "./IAccountEvents.sol";
-import "../../storages/MuonStorage.sol";
+import { UpnlSig } from "../../types/WithdrawTypes.sol";
+
+import { IAccountEvents } from "./IAccountEvents.sol";
 
 interface IAccountFacet is IAccountEvents {
-	//Party A
-	function deposit(uint256 amount) external;
+	function deposit(address collateral, uint256 amount) external;
 
-	function depositFor(address user, uint256 amount) external;
+	function virtualDepositFor(address collateral, address user, uint256 amount) external;
 
-	function withdraw(uint256 amount) external;
+	function depositFor(address collateral, address user, uint256 amount) external;
 
-	function withdrawTo(address user, uint256 amount) external;
+	function internalTransfer(address collateral, address user, uint256 amount) external;
 
-	function allocate(uint256 amount) external;
+	function initiateWithdraw(address collateral, uint256 amount, address to) external;
 
-	function depositAndAllocate(uint256 amount) external;
+	function completeWithdraw(uint256 id) external;
 
-	function deallocate(uint256 amount, SingleUpnlSig memory upnlSig) external;
+	function cancelWithdraw(uint256 id) external;
 
-	function internalTransfer(address user, uint256 amount) external;
+	function syncBalances(address collateral, address partyA, address[] calldata partyBs) external;
 
-		// PartyB
-	function allocateForPartyB(uint256 amount, address partyA) external;
+	function allocate(address collateral, address counterParty, uint256 amount) external;
 
-	function deallocateForPartyB(uint256 amount, address partyA, SingleUpnlSig memory upnlSig) external;
+	function deallocate(address collateral, address counterParty, uint256 amount, bool isPartyB, UpnlSig memory upnlSig) external;
 
-	function transferAllocation(uint256 amount, address origin, address recipient, SingleUpnlSig memory upnlSig) external;
+	function allocateToReserveBalance(address collateral, uint256 amount) external;
+
+	function deallocateFromReserveBalance(address collateral, uint256 amount) external;
 }

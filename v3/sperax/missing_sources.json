@@ -1,0 +1,19 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "sperax",
+  "missing": [
+    {
+      "chain_id": 42161,
+      "chain": "arbitrum",
+      "address": "0x45bc6b44107837e7abb21e2cacbe7612fce222e0",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 42161,
+      "chain": "arbitrum",
+      "address": "0xfbc0d3ca777722d234fe01dba94dededb277afe3",
+      "canonical_source_address": null
+    }
+  ]
+}

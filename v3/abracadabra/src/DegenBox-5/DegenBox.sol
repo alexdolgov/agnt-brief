@@ -27,7 +27,7 @@ pragma experimental ABIEncoderV2;
 // solhint-disable not-rely-on-time
 // solhint-disable no-inline-assembly
 
-// File @boringcrypto/boring-solidity/contracts/interfaces/IERC20.sol@v1.2.0
+// File @boringcrypto/boring-solidity/contracts/interfaces/[email protected]
 // License-Identifier: MIT
 
 interface IERC20 {
@@ -125,7 +125,7 @@ interface IStrategy {
     function exit(uint256 balance) external returns (int256 amountAdded);
 }
 
-// File @boringcrypto/boring-solidity/contracts/libraries/BoringERC20.sol@v1.2.0
+// File @boringcrypto/boring-solidity/contracts/libraries/[email protected]
 // License-Identifier: MIT
 
 library BoringERC20 {
@@ -166,7 +166,7 @@ library BoringERC20 {
     }
 }
 
-// File @boringcrypto/boring-solidity/contracts/libraries/BoringMath.sol@v1.2.0
+// File @boringcrypto/boring-solidity/contracts/libraries/[email protected]
 // License-Identifier: MIT
 
 /// @notice A library for performing overflow-/underflow-safe math,
@@ -233,7 +233,7 @@ library BoringMath32 {
     }
 }
 
-// File @boringcrypto/boring-solidity/contracts/libraries/BoringRebase.sol@v1.2.0
+// File @boringcrypto/boring-solidity/contracts/libraries/[email protected]
 // License-Identifier: MIT
 
 struct Rebase {
@@ -341,7 +341,7 @@ library RebaseLibrary {
     }
 }
 
-// File @boringcrypto/boring-solidity/contracts/BoringOwnable.sol@v1.2.0
+// File @boringcrypto/boring-solidity/contracts/[email protected]
 // License-Identifier: MIT
 
 // Source: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol + Claimable.sol
@@ -405,7 +405,7 @@ contract BoringOwnable is BoringOwnableData {
     }
 }
 
-// File @boringcrypto/boring-solidity/contracts/interfaces/IMasterContract.sol@v1.2.0
+// File @boringcrypto/boring-solidity/contracts/interfaces/[email protected]
 // License-Identifier: MIT
 
 interface IMasterContract {
@@ -416,7 +416,7 @@ interface IMasterContract {
     function init(bytes calldata data) external payable;
 }
 
-// File @boringcrypto/boring-solidity/contracts/BoringFactory.sol@v1.2.0
+// File @boringcrypto/boring-solidity/contracts/[email protected]
 // License-Identifier: MIT
 
 contract BoringFactory {
@@ -599,7 +599,7 @@ contract MasterContractManager is BoringOwnable, BoringFactory {
     }
 }
 
-// File @boringcrypto/boring-solidity/contracts/BoringBatchable.sol@v1.2.0
+// File @boringcrypto/boring-solidity/contracts/[email protected]
 // License-Identifier: MIT
 
 contract BaseBoringBatchable {

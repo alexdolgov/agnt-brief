@@ -96,7 +96,7 @@ library VaultRouterLib {
 	}
 
 	/**
-	 * @notice Swap with reporting of the tokens swapped
+	 * @notice Swap with reporting of all the tokens to ensure consistency
 	 * @param tokenIn The address of the input token
 	 * @param amountIn The amount of input token to swap
 	 * @param tokenOut The address of the output token
@@ -112,14 +112,8 @@ library VaultRouterLib {
 		address selectedRouter,
 		bytes32[] memory swapData
 	) external {
-		address referenceAsset = VaultConfigLib.referenceAsset();
-		if (referenceAsset != tokenIn) {
-			IVaultManagerAPI(VaultConfigLib.manager()).reportReserveFromVault(tokenIn);
-		}
+		IVaultManagerAPI(VaultConfigLib.manager()).reportAllReservesFromVault();
 		_swap(tokenIn, amountIn, tokenOut, minAmountOut, selectedRouter, swapData);
-		if (referenceAsset != tokenOut) {
-			IVaultManagerAPI(VaultConfigLib.manager()).reportReserveFromVault(tokenOut);
-		}
 	}
 
 	/**

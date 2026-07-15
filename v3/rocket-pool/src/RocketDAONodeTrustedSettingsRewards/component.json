@@ -1,0 +1,32 @@
+{
+  "component": "RocketDAONodeTrustedSettingsRewards",
+  "main_contract": "RocketDAONodeTrustedSettingsRewards",
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RocketDAONodeTrustedSettingsRewards\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://rocketpool.net/files/audits/cantina-audit-saturn-1.pdf",
+    "https://rocketpool.net/files/audits/consensys-audit-atlas.pdf",
+    "https://rocketpool.net/files/audits/sigma-prime-audit-redstone.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7322c24752f79c05ffd1e2a6fcb97020c1c264f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403961"
+    }
+  ]
+}

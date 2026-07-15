@@ -1,18 +1,28 @@
 {
   "component": "Redeemer-3",
   "main_contract": "Redeemer",
+  "source_entry_count": 36,
   "source_file_count": 36,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Redeemer-3\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xe9fe4720fa99f9b28584da44abb8cf91f15990e8",
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6efeddf9269c3683ba516cb0e2124fe335f262a2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397670"
     }
   ]
 }

@@ -1,26 +1,28 @@
 {
   "component": "AvalaunchSaleV2",
   "main_contract": "AvalaunchSaleV2",
-  "source_file_count": 3,
-  "deployment_count": 4,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AvalaunchSaleV2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x4e05033e96ecb624507835ffccb451ecea1e7156",
+      "address": "0x60d57fe620dbcf7d8d96b8bcfbf504fd3135ec42",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x74bafbb89b4dd318d399bf748fede0df262de47d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "avalanche",
@@ -28,7 +30,9 @@
       "address": "0xc354d85c24a724fda55084075fdf25c9e9cf35aa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "avalanche",
@@ -36,7 +40,9 @@
       "address": "0xeef28e34ed3d0f64a01ecbfa3f7757014be8548b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -30,7 +30,9 @@ contract L2BridgeZap {
         synapseBridge = _synapseBridge;
         swapMap[tokenOne] = _swapOne;
         swapMap[tokenTwo] = _swapTwo;
-        // IERC20(_wethAddress).safeIncreaseAllowance(address(_synapseBridge), MAX_UINT256);
+        if (_wethAddress != address(0)) {
+            IERC20(_wethAddress).safeIncreaseAllowance(address(_synapseBridge), MAX_UINT256);
+        }
         if (address(_swapOne) != address(0)) {
             {
                 uint8 i;
@@ -277,6 +279,31 @@ contract L2BridgeZap {
     }
 
 
+  /**
+   * @notice Wraps SynapseBridge depositAndSwap() function to make it compatible w/ ETH -> WETH conversions
+   * @param to address on other chain to bridge assets to
+   * @param chainId which chain to bridge assets onto
+   * @param amount Amount in native token decimals to transfer cross-chain pre-fees
+   * @param tokenIndexFrom the token the user wants to swap from
+   * @param tokenIndexTo the token the user wants to swap to
+   * @param minDy the min amount the user would like to receive, or revert to only minting the SynERC20 token crosschain.
+   * @param deadline latest timestamp to accept this transaction
+   **/
+  function depositETHAndSwap(
+    address to,
+    uint256 chainId,
+    uint256 amount,
+    uint8 tokenIndexFrom,
+    uint8 tokenIndexTo,
+    uint256 minDy,
+    uint256 deadline
+    ) external payable {
+      require(msg.value > 0 && msg.value == amount, 'INCORRECT MSG VALUE');
+      IWETH9(WETH_ADDRESS).deposit{value: msg.value}();
+      synapseBridge.depositAndSwap(to, chainId, IERC20(WETH_ADDRESS), amount, tokenIndexFrom, tokenIndexTo, minDy, deadline);
+    }
+
+
     function swapETHAndRedeem(
         address to,
         uint256 chainId,
@@ -411,5 +438,26 @@ contract L2BridgeZap {
             liqMinAmount,
             liqDeadline
         );
+    }
+
+    /**
+    * @notice Wraps SynapseBridge redeemv2() function
+   * @param to address on other chain to bridge assets to
+   * @param chainId which chain to bridge assets onto
+   * @param token ERC20 compatible token to redeem into the bridge
+   * @param amount Amount in native token decimals to transfer cross-chain pre-fees
+   **/
+    function redeemv2(
+        bytes32 to,
+        uint256 chainId,
+        IERC20 token,
+        uint256 amount
+    ) external {
+        token.safeTransferFrom(msg.sender, address(this), amount);
+
+        if (token.allowance(address(this), address(synapseBridge)) < amount) {
+            token.safeApprove(address(synapseBridge), MAX_UINT256);
+        }
+        synapseBridge.redeemv2(to, chainId, token, amount);
     }
 }

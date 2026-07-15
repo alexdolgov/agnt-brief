@@ -33,16 +33,27 @@ contract AlgebraV2Adapter is YakAdapter, IAlgebraV2Adapter {
     uint160 internal constant MIN_SQRT_RATIO = 4_295_128_739;
 
     address public immutable FACTORY;
+    address public immutable ROUTER;
 
     address public quoter;
     address public tempPoolAddress;
+    uint256 public quoterGasLimit;
 
     /// @inheritdoc IAlgebraV2Adapter
     mapping(bytes32 => address[]) public deployers;
 
-    constructor(string memory _name, address _quoter, address _factory) YakAdapter(_name) {
-        if (_factory == address(0) || _quoter == address(0)) revert AddressZero();
+    constructor(
+        string memory _name,
+        uint256 _quoterGasLimit,
+        address _router,
+        address _quoter,
+        address _factory
+    ) YakAdapter(_name) {
+        if (_factory == address(0) || _router == address(0)) revert AddressZero();
         FACTORY = _factory;
+        ROUTER = _router;
+
+        setQuoterGasLimit(_quoterGasLimit);
         setQuoter(_quoter);
     }
 
@@ -62,6 +73,13 @@ contract AlgebraV2Adapter is YakAdapter, IAlgebraV2Adapter {
         if (newQuoter == address(0)) revert AddressZero();
         quoter = newQuoter;
         emit QuoterSet(newQuoter);
+    }
+
+    function setQuoterGasLimit(uint256 newGasLimit) public onlyMaintainer {
+        if (newGasLimit == 0) revert InvalidGasLimit();
+
+        quoterGasLimit = newGasLimit;
+        emit QuoterGasLimitSet(newGasLimit);
     }
 
     /// @inheritdoc IAlgebraV2Adapter
@@ -146,6 +164,9 @@ contract AlgebraV2Adapter is YakAdapter, IAlgebraV2Adapter {
 
         if (amountOut < _amountOut) revert InsufficientAmount();
         tempPoolAddress = address(0);
+
+        uint256 remainingBalance = IERC20(_tokenIn).balanceOf(address(this));
+        if (remainingBalance > 0) IERC20(_tokenIn).safeTransfer(ROUTER, remainingBalance);
 
         _returnTo(_tokenOut, amountOut, _to);
     }
@@ -234,8 +255,9 @@ contract AlgebraV2Adapter is YakAdapter, IAlgebraV2Adapter {
             address customPool = getCustomPool(deployers[key][i], params.tokenIn, params.tokenOut);
             if (customPool != address(0)) {
                 uint256 tempQuote = getQuoteForPool(customPool, params);
-                bool isBetter =
-                    params.exactIn ? tempQuote > quote : (tempQuote != 0 && tempQuote < quote);
+                bool isBetter = params.exactIn
+                    ? tempQuote > quote
+                    : (tempQuote != 0 && (quote == 0 || tempQuote < quote));
                 if (isBetter) {
                     quote = tempQuote;
                     bestDeployer = deployers[key][i];
@@ -296,7 +318,7 @@ contract AlgebraV2Adapter is YakAdapter, IAlgebraV2Adapter {
         view
         returns (bool, bytes memory)
     {
-        (bool success, bytes memory data) = quoter.staticcall(calldata_);
+        (bool success, bytes memory data) = quoter.staticcall{gas: quoterGasLimit}(calldata_);
         return (success, data);
     }
 

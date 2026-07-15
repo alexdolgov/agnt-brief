@@ -1,0 +1,31 @@
+{
+  "component": "FinixToken",
+  "main_contract": "FinixToken",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FinixToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/thesixnetwork/definix-audit/blob/main/Certik/REP-Six_Network_LP_Farm_Contracts-22_04_2021.pdf",
+    "https://github.com/thesixnetwork/definix-audit/blob/main/Techrate/The%20Six%20Network-24_04_2021.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402838"
+    }
+  ]
+}

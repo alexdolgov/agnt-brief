@@ -1,106 +1,136 @@
 # Agentic Audit Brief: SwapX
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 3 (0 matched; 3 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: SwapX (`swapx`)
 - Website: [https://swapx.fi/](https://swapx.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:57.357Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-43c7
-- Chains: sonic
-- Contract surface: 37 unique implementations (63 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: arbitrum, avalanche, base, blast, bsc, celo, ethereum, fantom, kava, linea, mantle, opbnb, polygon, polygon-zkevm, scroll, sonic, zksync-era
+- Contract surface: 39 unique implementations (39 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $420,582.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Dexs. Structurally: 24 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens, 3 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for SwapX in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 7 functional families. Contracts are linked by 9 cross-contract reference(s). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 35 contracts are derived from known codebases. 35 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x111111...6bc4d6`, chain 1)
+- UnnamedContract (`0x5a40df...f26112`, chain 1)
+- UnnamedContract (`0x8dd509...715094`, chain 1)
+- UnnamedContract (`0xeaec81...832b3e`, chain 1)
+- UnnamedContract (`0x065356...0f51b7`, chain 56)
+- UnnamedContract (`0xac9314...f5d501`, chain 56)
+- UnnamedContract (`0x117005...db6e8a`, chain 137)
+- UnnamedContract (`0x2d2c72...a73fc0`, chain 137)
+- UnnamedContract (`0xb2f44d...2a5da7`, chain 137)
+- UnnamedContract (`0xadda3a...6035f1`, chain 204)
+- UnnamedContract (`0x89ffda...fa5f34`, chain 250)
+- UnnamedContract (`0x932e19...b95c5e`, chain 250)
+- UnnamedContract (`0x8a76c2...b94148`, chain 324)
+- UnnamedContract (`0x1721cb...8115b1`, chain 1101)
+- UnnamedContract (`0xe8532d...b8c23f`, chain 1101)
+- UnnamedContract (`0x2d2c72...a73fc0`, chain 2222)
+- UnnamedContract (`0x797ebb...432433`, chain 5000)
+- UnnamedContract (`0x92bce3...effe5b`, chain 5000)
+- UnnamedContract (`0xbbb97d...f46ad3`, chain 5000)
+- UnnamedContract (`0xabe5b5...8ab3b3`, chain 8453)
+- UnnamedContract (`0xfbf389...607065`, chain 8453)
+- UnnamedContract (`0xedac86...fb44a6`, chain 42161)
+- UnnamedContract (`0xfbf389...607065`, chain 42161)
+- UnnamedContract (`0x9fab4b...d7418f`, chain 42220)
+- UnnamedContract (`0xdd2346...9dc72d`, chain 43114)
+- UnnamedContract (`0x0248b9...9cfe4b`, chain 59144)
+- UnnamedContract (`0x259268...00195e`, chain 59144)
+- UnnamedContract (`0x6e3eb9...772b53`, chain 59144)
+- UnnamedContract (`0xa29f3d...4f544e`, chain 59144)
+- UnnamedContract (`0xb0e787...70a6e7`, chain 59144)
+- UnnamedContract (`0x2145b1...1ead93`, chain 81457)
+- UnnamedContract (`0x9fab4b...d7418f`, chain 81457)
+- UnnamedContract (`0xb42d59...114f15`, chain 81457)
+- UnnamedContract (`0x9fab4b...d7418f`, chain 534352)
+- UnnamedContract (`0xb42d59...114f15`, chain 534352)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 96; live-surface contracts included: 55 (55 live, 0 unknown).
-- Excluded by liveness: 41 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 35/35 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 14/37 (37.8%)
-- Deployed-live implementations: 37 of 37 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 14/37
-- Verified + Unaudited implementations: 23
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 35 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 4 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 35 of 39 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 37
-- Raw deployments: 63
-- Audits discovered: 4 (4 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 2
+- Unverified implementations: 35
+- Unique implementations: 39
+- Raw deployments: 39
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-07 (stale)
-- Audit staleness (calendar age): 0 fresh, 0 aging, 3 stale, 1 unknown
-- Coverage code basis (deployed vs audited code): 12 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
+- Audit staleness (calendar age): 0 fresh, 0 aging, 3 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| unknown | Tier 2 | 14 | 37.8% | 2024-07 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (14)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BribeFactoryV3 | unknown | sonic | n/a | 2 deployments: sonic [`0x1fb164...85b6b3`](./contracts/sonic-146/0x1fb16400652f999b79f62c3a4cea3ebc7185b6b3/); sonic `0xdaea57...629bb0` | ✅ Audited |
-| BribeFactoryV3 | unknown | sonic | n/a | 2 deployments: sonic [`0x99a257...55e095`](./contracts/sonic-146/0x99a2576c20f3e764fa0250ac3da029cbbe55e095/); sonic `0xb5659d...5a0382` | ✅ Audited |
-| GaugeFactoryV2 | unknown | sonic | n/a | 2 deployments: sonic [`0x50ead8...875458`](./contracts/sonic-146/0x50ead88c9f4fa95bda7b21310f26c96402875458/); sonic `0x6a36b9...7c68da` | ✅ Audited |
-| GaugeFactoryV2 | unknown | sonic | n/a | 2 deployments: sonic [`0xa1462d...ef819c`](./contracts/sonic-146/0xa1462dbfb0198ef054454a2e9b5757392cef819c/); sonic `0xff2e7c...85b8f3` | ✅ Audited |
-| GaugeFactoryV2_CL | unknown | sonic | n/a | 2 deployments: sonic [`0x0326bc...69b120`](./contracts/sonic-146/0x0326bc059cbeeed569f285fdeb7365ff6369b120/); sonic `0x4293d5...d1add7` | ✅ Audited |
-| GaugeFactoryV2_CL | unknown | sonic | n/a | 2 deployments: sonic [`0x27e774...cae300`](./contracts/sonic-146/0x27e774110e4dd1f3a249bfce40d1f6bda4cae300/); sonic `0x41c1ef...b33922` | ✅ Audited |
-| MasterChef | unknown | sonic | n/a | [`0x66f28a...5eacb1`](./contracts/sonic-146/0x66f28a0d830e9be7c2bb2c626d9cdf528a5eacb1/) | ✅ Audited |
-| MinterUpgradeable | unknown | sonic | n/a | 2 deployments: sonic [`0x4fe93c...f80589`](./contracts/sonic-146/0x4fe93ced1a0a96bd559ba4572c9da8d76ef80589/); sonic `0x8b8c58...c83364` | ✅ Audited |
-| MinterUpgradeable | unknown | sonic | n/a | 2 deployments: sonic [`0x6991a1...3d859c`](./contracts/sonic-146/0x6991a1615e76ba15e8ad04848a1e1c89d23d859c/); sonic `0xc68f07...e0afbe` | ✅ Audited |
-| MonolithicVoter | unknown | sonic | n/a | 2 deployments: sonic [`0x75b07f...520937`](./contracts/sonic-146/0x75b07f81dd25d408ff2ab0b5ebe44182fd520937/); sonic `0xf3bb60...b20b4d` | ✅ Audited |
-| Royalties | unknown | sonic | n/a | [`0x7ab97f...a8b43b`](./contracts/sonic-146/0x7ab97fca4ec80c41106881f56a3a3fe3e9a8b43b/) | ✅ Audited |
-| VoterV3 | unknown | sonic | n/a | 2 deployments: sonic [`0x40247b...d5bf3f`](./contracts/sonic-146/0x40247ba1012404134958da41b6bd93be1cd5bf3f/); sonic `0x53ff76...5d098f` | ✅ Audited |
-| VoterV3 | unknown | sonic | n/a | [`0x838505...00a26d`](./contracts/sonic-146/0x8385056229f18bc54487f3ca37f968131a00a26d/) | ✅ Audited |
-| VotingEscrow | unknown | sonic | n/a | 2 deployments: sonic [`0x3dc1dd...2ca12e`](./contracts/sonic-146/0x3dc1dd69b7f4ac386f94f30de69994b5622ca12e/); sonic `0xff5b46...f1b2ef` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (23)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| ClaimFeesMulticall | periphery | sonic | n/a | [`0xdb3e03...00b1a9`](./contracts/sonic-146/0xdb3e0332fa9361ac80bda96222d9580a5c00b1a9/) | ⚠️ Unaudited |
-| MerkleTree | operational_periphery | sonic | n/a | [`0xe4b7bb...b55f60`](./contracts/sonic-146/0xe4b7bb7e4f7b27f2c1def2c8055b9988ddb55f60/) | ⚠️ Unaudited |
-| NFTSalesSplitter | unknown | sonic | n/a | 2 deployments: sonic [`0x55e342...2e1532`](./contracts/sonic-146/0x55e3427906795d833ac6810486e977dca72e1532/); sonic `0xda1073...4b5a4d` | ⚠️ Unaudited |
-| NFTSalesSplitter_V1 | unknown | sonic | n/a | [`0x86fa3c...1345c0`](./contracts/sonic-146/0x86fa3c42928927364d3ac5a79989f3056b1345c0/) | ⚠️ Unaudited |
-| PairAPI | unknown | sonic | n/a | 2 deployments: sonic [`0x2ec58a...31c4ff`](./contracts/sonic-146/0x2ec58a0caae0e8c27e28833ede5ab7415c31c4ff/); sonic `0x422601...a46a7b` | ⚠️ Unaudited |
-| PairAPI | unknown | sonic | n/a | 2 deployments: sonic [`0x33a353...d21f84`](./contracts/sonic-146/0x33a3539cf9ba96884acbbffe735bccb88ad21f84/); sonic `0xa8bcba...e81e61` | ⚠️ Unaudited |
-| PairFactoryUpgradeable | unknown | sonic | n/a | 2 deployments: sonic [`0x05c1be...7f5663`](./contracts/sonic-146/0x05c1be79d3ac21cc4b727eed58c9b2ff757f5663/); sonic `0xd887a7...502251` | ⚠️ Unaudited |
-| PairFactoryUpgradeable | unknown | sonic | n/a | 2 deployments: sonic [`0x1e58fe...2b858f`](./contracts/sonic-146/0x1e58feab693e488dc370cf86b38d5625d22b858f/); sonic `0xeaed11...ff3828` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | sonic | n/a | 3 deployments: sonic [`0xb8de83...4e122f`](./contracts/sonic-146/0xb8de8352dcc13a1145d29bb80533a8979e4e122f/); sonic `0xbc427b...389feb`; sonic `0xed37cb...7241c7` | ⚠️ Unaudited |
-| RewardsDistributor | operational_periphery | sonic | n/a | [`0x1c236d...4c94d3`](./contracts/sonic-146/0x1c236d74f61c6199e6d23201d53a59753f4c94d3/) | ⚠️ Unaudited |
-| RouterV2 | adapter | sonic | n/a | [`0xf5f723...b29c27`](./contracts/sonic-146/0xf5f7231073b3b41c04ba655e1a7438b1a7b29c27/) | ⚠️ Unaudited |
-| SWPx | unknown | sonic | n/a | [`0xa04bc7...fb0e70`](./contracts/sonic-146/0xa04bc7140c26fc9bb1f36b1a604c7a5a88fb0e70/) | ⚠️ Unaudited |
-| SWPxNFT | token | sonic | n/a | [`0xc83f36...e72f78`](./contracts/sonic-146/0xc83f364827b9f0d7b27a9c48b2419e4a14e72f78/) | ⚠️ Unaudited |
-| VeArtProxyUpgradeableV1_1 | unknown | sonic | n/a | [`0xa194e7...a43846`](./contracts/sonic-146/0xa194e79ffe35a07d640d2595b8f3e0d788a43846/) | ⚠️ Unaudited |
-| VeArtProxyUpgradeableV1_1 | unknown | sonic | n/a | [`0xf62fed...c896fd`](./contracts/sonic-146/0xf62fedd845443ae86d2ffd1fa4c5486938c896fd/) | ⚠️ Unaudited |
-| veNFTAPI | unknown | sonic | n/a | 2 deployments: sonic [`0x94584d...fb3d05`](./contracts/sonic-146/0x94584d370edf0f9a913c8cdcf88153deb6fb3d05/); sonic `0xae5417...7c6cb3` | ⚠️ Unaudited |
-| veNFTAPI | unknown | sonic | n/a | [`0xe76c57...b6bec7`](./contracts/sonic-146/0xe76c57f200e7057e340da1c28fdc27e180b6bec7/) | ⚠️ Unaudited |
-| Vesting | unknown | sonic | n/a | [`0x082c47...7f4069`](./contracts/sonic-146/0x082c47f07a879a1b3680f2295fce12f41d7f4069/) | ⚠️ Unaudited |
-| Vesting | unknown | sonic | n/a | 4 deployments: sonic [`0x1786fb...572cfd`](./contracts/sonic-146/0x1786fb5eea6a815007f40ec1aecf0d4fe4572cfd/); sonic `0x3a4744...44ee85`; sonic `0x91cc71...21460b`; sonic `0x972e71...f258ec` | ⚠️ Unaudited |
-| Vesting | unknown | sonic | n/a | 5 deployments: sonic [`0x58af3e...e38084`](./contracts/sonic-146/0x58af3e6fdf9f8a607b54d492757cc43777e38084/); sonic `0x8aa601...22da64`; sonic `0x90ff9c...0022ac`; sonic `0xd76c85...fdd7f3`; sonic `0xdf5390...fe0591` | ⚠️ Unaudited |
-| VoterV3_1 | unknown | sonic | n/a | [`0xc1ae27...c407f2`](./contracts/sonic-146/0xc1ae2779903cfb84cb9dee5c03eceac32dc407f2/) | ⚠️ Unaudited |
-| VotingEscrowV1_1 | unknown | sonic | n/a | [`0x329d9c...83e397`](./contracts/sonic-146/0x329d9ca4fad82d10f128050535c138d3bd83e397/) | ⚠️ Unaudited |
-| VotingEscrowV1_1 | operational_periphery | sonic | n/a | [`0xaa30f0...576ca3`](./contracts/sonic-146/0xaa30f0977620d4d46b3bb3cf0794fe645d576ca3/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -114,20 +144,100 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (39)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-257763 | `0x111111...6bc4d6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-257764 | `0x5a40df...f26112` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-257765 | `0x8dd509...715094` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-257766 | `0xeaec81...832b3e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-257786 | `0x065356...0f51b7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-257787 | `0xac9314...f5d501` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-257769 | `0x117005...db6e8a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-257770 | `0x2d2c72...a73fc0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-257771 | `0xb2f44d...2a5da7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x1b0ef0...a4cd63` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x242cd1...ab65de` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x7c6389...605f6d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xb62399...090a71` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | opbnb | unit-257772 | `0xadda3a...6035f1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-257774 | `0x89ffda...fa5f34` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-257775 | `0x932e19...b95c5e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-257776 | `0x8a76c2...b94148` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-257767 | `0x1721cb...8115b1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon-zkevm | unit-257768 | `0xe8532d...b8c23f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | kava | unit-257773 | `0x2d2c72...a73fc0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-257781 | `0x797ebb...432433` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-257782 | `0x92bce3...effe5b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-257783 | `0xbbb97d...f46ad3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-257796 | `0xabe5b5...8ab3b3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-257797 | `0xfbf389...607065` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-257777 | `0xedac86...fb44a6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-257778 | `0xfbf389...607065` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-257779 | `0x9fab4b...d7418f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-257780 | `0xdd2346...9dc72d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-257788 | `0x0248b9...9cfe4b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-257789 | `0x259268...00195e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-257790 | `0x6e3eb9...772b53` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-257791 | `0xa29f3d...4f544e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-257792 | `0xb0e787...70a6e7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-257793 | `0x2145b1...1ead93` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-257794 | `0x9fab4b...d7418f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-257795 | `0xb42d59...114f15` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-257784 | `0x9fab4b...d7418f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-257785 | `0xb42d59...114f15` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Bailsec_SwapX_Exchange_Final_Report.pdf](https://swapx.fi/Bailsec_SwapX_Exchange_Final_Report.pdf) | unknown | Audit | 2024-05 | stale | Direct | contract_name | 23 | high |
-| [Bailsec_Algebra_Finance_SwapX_Fee_Plugin_Final_Report.pdf](https://swapx.fi/Bailsec_Algebra_Finance_SwapX_Fee_Plugin_Final_Report.pdf) | unknown | Audit | 2024-07 | stale | Direct | n/a | 0 | n/a |
-| [Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf](https://swapx.fi/Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf) | unknown | Audit | 2024-06 | stale | Direct | contract_name | 2 | n/a |
-| [bailsec.io](https://bailsec.io/) | BailSec | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Bailsec_SwapX_Exchange_Final_Report.pdf](https://swapx.fi/Bailsec_SwapX_Exchange_Final_Report.pdf) | unknown | Audit | 2024-05 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 13 | high |
+| [Bailsec_Algebra_Finance_SwapX_Fee_Plugin_Final_Report.pdf](https://swapx.fi/Bailsec_Algebra_Finance_SwapX_Fee_Plugin_Final_Report.pdf) | unknown | Audit | 2024-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+| [Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf](https://swapx.fi/Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf) | unknown | Audit | 2024-06 | stale | Direct | n/a | no match | 0 | 0 | 0 | 10 | n/a |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [13953] Bailsec_SwapX_Exchange_Final_Report.pdf — no match: All contracts explicitly listed in scope sections of the report. Audit date inferred from 'May 2024' in title and report date.
+- [13954] Bailsec_Algebra_Finance_SwapX_Fee_Plugin_Final_Report.pdf — no match: Three contracts explicitly listed in scope: NonfungiblePositionManager, BasePluginV1Factory, AlgebraBasePluginV1. Audit date inferred from title 'July 2024'.
+- [13955] Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf — no match: No reason recorded
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Bailsec_SwapX_Exchange_Final_Report.pdf | BribeFactoryV3 | unmatched — not counted | — | listed in scope section 'Factories' | no |
+| Bailsec_SwapX_Exchange_Final_Report.pdf | GaugeFactoryV2 | unmatched — not counted | — | listed in scope section 'Factories' | no |
+| Bailsec_SwapX_Exchange_Final_Report.pdf | GaugeFactoryV2_CL | unmatched — not counted | — | listed in scope section 'Factories' | no |
+| Bailsec_SwapX_Exchange_Final_Report.pdf | GaugeV2 | unmatched — not counted | — | listed in scope section 'Gauges' | no |
+| Bailsec_SwapX_Exchange_Final_Report.pdf | GaugeV2_CL | unmatched — not counted | — | listed in scope section 'Gauges' | no |
+| Bailsec_SwapX_Exchange_Final_Report.pdf | GaugeExtraRewarder | unmatched — not counted | — | listed in scope section 'Gauges' | no |
+| Bailsec_SwapX_Exchange_Final_Report.pdf | CLFeesVault | unmatched — not counted | — | listed in scope section 'Gauges' | no |
+| Bailsec_SwapX_Exchange_Final_Report.pdf | CLFeesVault2 | unmatched — not counted | — | listed in scope section 'Gauges' | no |
+| Bailsec_SwapX_Exchange_Final_Report.pdf | VotingEscrow | unmatched — not counted | — | listed in scope section 'Core' | no |
+| Bailsec_SwapX_Exchange_Final_Report.pdf | VoterV3 | unmatched — not counted | — | listed in scope section 'Core' | no |
+| Bailsec_SwapX_Exchange_Final_Report.pdf | MinterUpgradeable | unmatched — not counted | — | listed in scope section 'Core' | no |
+| Bailsec_SwapX_Exchange_Final_Report.pdf | Bribe | unmatched — not counted | — | listed in scope section 'Bribes' | no |
+| Bailsec_SwapX_Exchange_Final_Report.pdf | MonolithicVoter | unmatched — not counted | — | listed in scope section 'MonolithicVoter' | no |
+| Bailsec_Algebra_Finance_SwapX_Fee_Plugin_Final_Report.pdf | NonfungiblePositionManager | unmatched — not counted | — | listed in scope and diffchecker links | no |
+| Bailsec_Algebra_Finance_SwapX_Fee_Plugin_Final_Report.pdf | BasePluginV1Factory | unmatched — not counted | — | listed in scope and diffchecker links | no |
+| Bailsec_Algebra_Finance_SwapX_Fee_Plugin_Final_Report.pdf | AlgebraBasePluginV1 | unmatched — not counted | — | listed in scope and diffchecker links | no |
+| Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf | AirdropClaim | unmatched — not counted | — | — | no |
+| Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf | MasterChef | unmatched — not counted | — | — | no |
+| Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf | MerkleTree | unmatched — not counted | — | — | no |
+| Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf | MerkleTreeSWPxNFT | unmatched — not counted | — | — | no |
+| Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf | NFTSalesSplitter | unmatched — not counted | — | — | no |
+| Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf | Royalties | unmatched — not counted | — | — | no |
+| Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf | SWPx | unmatched — not counted | — | — | no |
+| Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf | SWPxNFT | unmatched — not counted | — | — | no |
+| Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf | SWPxNFTFeeConverter | unmatched — not counted | — | — | no |
+| Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf | Vesting | unmatched — not counted | — | — | no |
 
 ## Coverage Gaps
 
@@ -142,20 +252,23 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 37 |
+| needs_review | 39 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: contract_name=2, extraction_exact=23
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 26 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=2
+- Match method counts: n/a
 
 Zero-match audit list:
 
+- [13953] Bailsec_SwapX_Exchange_Final_Report.pdf
 - [13954] Bailsec_Algebra_Finance_SwapX_Fee_Plugin_Final_Report.pdf
-- [13956] bailsec.io
+- [13955] Bailsec_SwapX_Staking_Airdrop_Vesting_Final_Report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

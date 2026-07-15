@@ -27,7 +27,6 @@ abstract contract StrategyBase is Ownable, ILiquidStrategy, ReentrancyGuard {
     mapping(address => bool) public isVaultApproved;
 
     IERC20 public immutable asset;
-    uint256 public immutable divisor;
 
     address public lendingVault;
     address public oracle;
@@ -98,6 +97,7 @@ abstract contract StrategyBase is Ownable, ILiquidStrategy, ReentrancyGuard {
 
     /**
      * @notice  - Approves a vault for use with the strategy
+     * @dev     - Can only approve vaults with the same native asset as the Strategy contract.
      * @param _vault    - Address of the vault to approve
      */
     function approveVault(address _vault) external virtual onlyOwner {
@@ -114,6 +114,7 @@ abstract contract StrategyBase is Ownable, ILiquidStrategy, ReentrancyGuard {
 
     // See approveVault
     function _approveVault(address _vault) internal virtual {
+        _onlyNativeAsset(_vault);
         uint256 len = vaults.length;
         for (uint256 x = 0; x < len; x++) {
             if (vaults[x] == _vault) return;

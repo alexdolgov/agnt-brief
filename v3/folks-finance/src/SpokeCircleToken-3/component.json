@@ -1,42 +1,28 @@
 {
   "component": "SpokeCircleToken-3",
   "main_contract": "SpokeCircleToken",
-  "source_file_count": 25,
-  "deployment_count": 4,
+  "source_entry_count": 29,
+  "source_file_count": 29,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SpokeCircleToken-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xd4f7fa03a4e8063825840c083abb42ce327a3a38",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0700b2cb26688c035bd5dbbda070be408c20779c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xf4c542518320f09943c35db6773b2f9feb2f847e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xe0c45ab4295e96ec1259d787e2ed22c16a3d0d8f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xf4c542518320f09943c35db6773b2f9feb2f847e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394612"
     }
   ]
 }

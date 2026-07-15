@@ -1,34 +1,28 @@
 {
   "component": "BackedTokenProxy",
   "main_contract": "BackedTokenProxy",
-  "source_file_count": 27,
-  "deployment_count": 9,
+  "source_entry_count": 24,
+  "source_file_count": 24,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BackedTokenProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x0f76d32cdccdcbd602a55af23eaf58fd1ee17245",
-      "is_proxy": true,
-      "implementation_address": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x1e2c4fb7ede391d116e6b41cd0608260e8801d59",
-      "is_proxy": true,
-      "implementation_address": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
       "address": "0x20c64dee8fda5269a78f2d5bdba861ca1d83df7a",
       "is_proxy": true,
       "implementation_address": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",
@@ -36,7 +30,9 @@
       "address": "0x2f11eeee0bf21e7661a22dbbbb9068f4ad191b86",
       "is_proxy": true,
       "implementation_address": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",
@@ -44,7 +40,9 @@
       "address": "0x3f95aa88ddbb7d9d484aa3d482bf0a80009c52c9",
       "is_proxy": true,
       "implementation_address": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",
@@ -52,7 +50,9 @@
       "address": "0x52d134c6db5889fad3542a09eaf7aa90c0fdf9e4",
       "is_proxy": true,
       "implementation_address": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",
@@ -60,7 +60,9 @@
       "address": "0xade6057fcafa57d6d51ffa341c64ce4814995995",
       "is_proxy": true,
       "implementation_address": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",
@@ -68,7 +70,9 @@
       "address": "0xbbcb0356bb9e6b3faa5cbf9e5f36185d53403ac9",
       "is_proxy": true,
       "implementation_address": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",
@@ -76,7 +80,9 @@
       "address": "0xca30c93b02514f86d5c86a6e375e3a330b435fb5",
       "is_proxy": true,
       "implementation_address": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

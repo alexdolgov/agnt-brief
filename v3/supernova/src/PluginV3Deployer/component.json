@@ -1,7 +1,15 @@
 {
   "component": "PluginV3Deployer",
   "main_contract": "PluginV3Deployer",
-  "source_file_count": 46,
+  "source_entry_count": 42,
+  "source_file_count": 42,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PluginV3Deployer\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x48012a780779f12b27f0f7f558cab5511d92eee3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399826"
     }
   ]
 }

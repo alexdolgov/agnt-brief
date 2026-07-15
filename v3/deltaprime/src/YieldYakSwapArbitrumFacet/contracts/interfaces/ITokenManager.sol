@@ -35,6 +35,4 @@ interface ITokenManager {
     function tokenAddressToSymbol ( address ) external view returns ( bytes32 );
     function tokenToStatus ( address ) external view returns ( uint256 );
     function transferOwnership ( address newOwner ) external;
-    function increasePendingExposure ( bytes32 , address, uint256 ) external;
-    function setPendingExposureToZero ( bytes32, address ) external;
 }

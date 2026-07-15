@@ -1,15 +1,22 @@
 {
   "component": "ERC20Bridged",
   "main_contract": "ERC20Bridged",
+  "source_entry_count": 10,
   "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC20Bridged\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/lidofinance/audits/blob/main/L2/Lido-L2-2022-07-Oxorio-Smart-Contracts-Security-Audit-Report.pdf",
     "https://github.com/lidofinance/audits/blob/main/L2/Zircuit_2024-10-02-Quantstamp-wstETH-deployment-verification.pdf",
     "https://github.com/lidofinance/audits/blob/main/L2/stETH-on-Optimism-2024-06-Ackee-Blockchain-Audit-report.pdf",
-    "https://github.com/lidofinance/audits/blob/main/L2/stETH-on-Optimism-2024-06-MixBytes-Audit-Report.pdf",
-    "https://github.com/lidofinance/audits/blob/main/L2/wstETH-on-Lisk-2025-04-MixBytes-deployment-verification.pdf"
+    "https://github.com/lidofinance/audits/blob/main/L2/stETH-on-Optimism-2024-06-MixBytes-Audit-Report.pdf"
   ],
   "addresses": [
     {
@@ -18,7 +25,9 @@
       "address": "0x0fbcbaea96ce0cf7ee00a8c19c3ab6f5dc8e1921",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402022"
     }
   ]
 }

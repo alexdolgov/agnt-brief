@@ -15,7 +15,6 @@ import { IVirtualRewards, IVirtualRewardFactory } from "../interfaces/IVirtualRe
  * @title   GenericUnionVault
  * @author  llama.airforce -> AuraFinance
  * @notice  Changes:
- *          - remove withdraw penalty
  *          - remove platform fee
  *          - add extra rewards logic
  */
@@ -35,7 +34,6 @@ contract GenericUnionVault is ERC20, IERC4626, Ownable, ReentrancyGuard {
 
     event WithdrawalPenaltyUpdated(uint256 _penalty);
     event Harvest(address indexed _caller, uint256 _value);
-    event CallerIncentiveUpdated(uint256 _incentive);
     event StrategySet(address indexed _strategy);
     event ExtraRewardAdded(address indexed _reward, address extraReward);
     event ExtraRewardCleared(address indexed _reward);
@@ -141,12 +139,6 @@ contract GenericUnionVault is ERC20, IERC4626, Ownable, ReentrancyGuard {
             shares = (_amount * totalSupply()) / _before;
         }
 
-        // Stake into extra rewards before we update the users
-        // balancers and update totalSupply/totalUnderlying
-        for (uint256 i = 0; i < extraRewards.length; i++) {
-            IBasicRewards(extraRewards[i]).stake(_receiver, shares);
-        }
-
         IERC20(underlying).safeTransferFrom(msg.sender, strategy, _amount);
         IStrategy(strategy).stake(_amount);
 
@@ -203,11 +195,6 @@ contract GenericUnionVault is ERC20, IERC4626, Ownable, ReentrancyGuard {
             uint256 currentAllowance = allowance(_owner, msg.sender);
             require(currentAllowance >= _shares, "ERC4626: redeem exceeds allowance");
             _approve(_owner, msg.sender, currentAllowance - _shares);
-        }
-
-        // Withdraw from extra rewards
-        for (uint256 i = 0; i < extraRewards.length; i++) {
-            IBasicRewards(extraRewards[i]).withdraw(_owner, _shares);
         }
 
         // Withdraw requested amount of underlying

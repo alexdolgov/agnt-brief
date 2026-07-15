@@ -1,8 +1,16 @@
 {
   "component": "MiniChefV2",
   "main_contract": "MiniChefV2",
+  "source_entry_count": 9,
   "source_file_count": 9,
-  "deployment_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MiniChefV2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,9 @@
       "address": "0xd10ef2a513cee0db54e959ef16cac711470b62cf",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400088"
     },
     {
       "chain": "bsc",
@@ -20,7 +30,9 @@
       "address": "0x8f5bbb2bb8c2ee94639e55d5f41de9b4839c1280",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400101"
     },
     {
       "chain": "polygon",
@@ -28,15 +40,9 @@
       "address": "0x7875af1a6878bda1c129a4e2356a3fd040418be5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x5d5f01aaec428356b54ee091502dbbeaa935f21a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400106"
     },
     {
       "chain": "arbitrum",
@@ -44,7 +50,9 @@
       "address": "0x73186f2cf2493f20836b17b21ae79fc12934e207",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400131"
     },
     {
       "chain": "avalanche",
@@ -52,7 +60,9 @@
       "address": "0x3a01521f8e7f012eb37eaaf1cb9490a5d9e18249",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400136"
     }
   ]
 }

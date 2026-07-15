@@ -1,7 +1,15 @@
 {
   "component": "GFRegistry",
   "main_contract": "GFRegistry",
-  "source_file_count": 12,
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GFRegistry\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -15,7 +23,9 @@
       "address": "0xd1ab3ba1882e7f2a1de63849048ed20a97f17a9a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394742"
     }
   ]
 }

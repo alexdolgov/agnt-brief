@@ -1,7 +1,15 @@
 {
   "component": "MarkdownController",
   "main_contract": "MarkdownController",
-  "source_file_count": 52,
+  "source_entry_count": 48,
+  "source_file_count": 48,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MarkdownController\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -15,7 +23,9 @@
       "address": "0xf0eae71092f3c9411a9eab8f81e7d91d29726214",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390480"
     }
   ]
 }

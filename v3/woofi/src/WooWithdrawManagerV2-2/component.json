@@ -1,7 +1,15 @@
 {
   "component": "WooWithdrawManagerV2-2",
   "main_contract": "WooWithdrawManagerV2",
+  "source_entry_count": 12,
   "source_file_count": 12,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WooWithdrawManagerV2-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x3fe2c827ff572b8fe03b7d16695c88f21448b3b9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401144"
     },
     {
       "chain": "arbitrum",
@@ -20,7 +30,9 @@
       "address": "0xe76c97897a9c3f8aaafc3fe86457fe460553d3fe",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401308"
     }
   ]
 }

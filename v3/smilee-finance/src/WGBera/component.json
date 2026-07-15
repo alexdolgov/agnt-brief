@@ -1,7 +1,15 @@
 {
   "component": "WGBera",
   "main_contract": "WGBera",
+  "source_entry_count": 20,
   "source_file_count": 20,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WGBera\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -15,7 +23,9 @@
       "address": "0xd77552d3849ab4d8c3b189a9582d0ba4c1f4f912",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399043"
     }
   ]
 }

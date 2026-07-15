@@ -1,5 +1,16 @@
 # Agentic Audit Brief: BabyDogeCoin
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ⚠️ Lifecycle status: DECLINING - TVL dropped 5.9% over 90 days
 
 ## Project Overview
@@ -7,76 +18,92 @@
 - Project: BabyDogeCoin (`babydogecoin`)
 - Website: [https://swap.babydoge.com/](https://swap.babydoge.com/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-03T21:05:32.575Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
-- Chains: bsc, ethereum
-- Contract surface: 21 unique implementations (29 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: bsc
+- Contract surface: 4 unique implementations (4 raw deployments)
+- Coverage basis: 0/2 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,875,233.00
-- On-chain TVL (included contracts): $121,443,880.55
-- TVL by chain: Bsc $121,443,880.55
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Dexs. Structurally: 48 project-authored contract(s) across 2 chain(s); 7 ERC20 tokens, 3 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for BabyDogeCoin. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Its contracts share 2 common project-authored base contract(s) (lpmanager, babydogeerc20). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 2 contract row(s) across bsc. Structural roles: 1 supporting, 1 unclassified. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 2
+- Structural roles: supporting (1), unclassified (1)
+- Contract kinds: contract (2)
+- Detected standards: none
+- Frameworks: openzeppelin (1)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 2 contracts are derived from known codebases. 2 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0xbb4cdb...bc095c`, chain 56)
+- BabyDogeRouter (`0xc9a0f6...af3c47`, chain 56)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 155; live-surface contracts included: 29 (18 live, 11 unknown).
-- Excluded by liveness: 126 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 3/3 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 2/10 (20.0%)
-- Deployed-live implementations: 10 of 21 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 2/10
-- Verified + Unaudited implementations: 8
+- Coverage of address-book-owned deployed-live implementations: 0/2 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 3 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 3 of 4 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/2
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 11
-- Unique implementations: 21
-- Raw deployments: 29
+- Unverified implementations: 1
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): $121,443,880.55
+- Scoreable audits (matched contracts): 0
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-08 (fresh)
 - Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 2 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $121,443,880.55 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| CertiK | Tier 2 | 2 | 20.0% | 2025-08 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (2)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| FarmDeployer20FixEnd | unknown | bsc | n/a | [`0x103def...f31b9d`](./contracts/bsc-56/0x103def784e1d0aaad0de95936610fd836bf31b9d/) | ✅ Audited |
-| FarmDeployer721 | unknown | bsc | n/a | 8 deployments: bsc [`0x0579db...778644`](./contracts/bsc-56/0x0579db6324274c07a6b6e13024a3747b97778644/); bsc `0x2003e0...7f0196`; bsc `0x559a1b...291425`; bsc `0x65f9d9...509a15`; bsc `0xa04fb9...247d44`; bsc `0xb15429...49300c`; bsc `0xb9e324...03698a`; bsc `0xda907b...158f52` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (8)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| CoinToken | token | bsc | n/a | [`0xc74867...02e8de`](./contracts/bsc-56/0xc748673057861a797275cd8a068abb95a902e8de/) | ⚠️ Unaudited |
-| BabyDogeFactory | unknown | bsc | n/a | 2 deployments: bsc [`0x3cda75...501d68`](./contracts/bsc-56/0x3cda751aa61609064551fc9cdb49b667af501d68/); bsc `0x4693b6...f43137` | ⚠️ Unaudited |
-| BabyDogeLocker | unknown | bsc | n/a | [`0x36b343...4541be`](./contracts/bsc-56/0x36b34364e17373c05300bc3e827bf7cac34541be/) | ⚠️ Unaudited |
-| BabyDogePair | unknown | bsc | n/a | [`0x6e0d52...10652d`](./contracts/bsc-56/0x6e0d5230637d50dbe58e674e746614fc8210652d/) | ⚠️ Unaudited |
-| BabyDogeRouter | adapter | bsc | n/a | [`0xc9a0f6...af3c47`](./contracts/bsc-56/0xc9a0f685f39d05d835c369036251ee3aeaaf3c47/) | ⚠️ Unaudited |
-| BbdNftStaking | token | ethereum | n/a | [`0xee1f84...75c9f8`](./contracts/ethereum-1/0xee1f8496e48ac25061bdc6f4512faa443475c9f8/) | ⚠️ Unaudited |
-| BurnPortal | unknown | bsc | n/a | [`0xbb667d...4e0396`](./contracts/bsc-56/0xbb667d8f8a1fd68ded52c616a314a294294e0396/) | ⚠️ Unaudited |
-| FarmDeployer | unknown | bsc | n/a | [`0x210dbf...49d5b2`](./contracts/bsc-56/0x210dbf538ef70750e0eb6149005bf2d40d49d5b2/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BabyDogeFactory | unknown | project_anchor | own_supporting | 0 | bsc | unit-380084 | `0x4693b6...f43137` | ⚠️ Unaudited |
+| BabyDogeRouter | adapter | project_anchor | own_supporting | 0 | bsc | unit-380086 | `0xc9a0f6...af3c47` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,29 +117,35 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (11)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x4a0c81...636f06` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x06d972...1579bb` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x0b6997...a900eb` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x22b75c...e45d71` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x2bc67f...085ae5` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x4a0c81...636f06` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x4fc9d5...1c7608` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x89d3af...22fb4f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xa1c14e...b700c2` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe1b202...603572` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe6616d...da1ca9` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x000000...000000` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-380085 | `0xbb4cdb...bc095c` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [skynet.certik.com/projects/baby-doge-coin](https://skynet.certik.com/projects/baby-doge-coin) | CertiK | Audit | 2025-08 | fresh | Direct | contract_name | 9 | high |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [skynet.certik.com/projects/baby-doge-coin](https://skynet.certik.com/projects/baby-doge-coin) | CertiK | Audit | 2025-08 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 2 | medium |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [2926] skynet.certik.com/projects/baby-doge-coin — no match: Extracted from 'Audited Files/SHA256' section listing two contracts. Date from 'Last Audit was delivered on 8/7/2025'.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| skynet.certik.com/projects/baby-doge-coin | FarmDeployer721 | unmatched — not counted | — | listed in audited files | no |
+| skynet.certik.com/projects/baby-doge-coin | ERC20FarmFixEnd | unmatched — not counted | — | listed in audited files | no |
 
 ## Coverage Gaps
 
@@ -120,30 +153,31 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0xc74867...02e8de`](./contracts/bsc-56/0xc748673057861a797275cd8a068abb95a902e8de/) | CoinToken | token | $121,443,880.55 | Verified native implementation with $121,443,880.55 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x36b343...4541be`](./contracts/bsc-56/0x36b34364e17373c05300bc3e827bf7cac34541be/) | BabyDogeLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x6e0d52...10652d`](./contracts/bsc-56/0x6e0d5230637d50dbe58e674e746614fc8210652d/) | BabyDogePair | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xc9a0f6...af3c47`](./contracts/bsc-56/0xc9a0f685f39d05d835c369036251ee3aeaaf3c47/) | BabyDogeRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xee1f84...75c9f8`](./contracts/ethereum-1/0xee1f8496e48ac25061bdc6f4512faa443475c9f8/) | BbdNftStaking | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0xbb667d...4e0396`](./contracts/bsc-56/0xbb667d8f8a1fd68ded52c616a314a294294e0396/) | BurnPortal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x210dbf...49d5b2`](./contracts/bsc-56/0x210dbf538ef70750e0eb6149005bf2d40d49d5b2/) | FarmDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x4693b6...f43137` | BabyDogeFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xc9a0f6...af3c47` | BabyDogeRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 7 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 14 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=9
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 2 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: medium=1
+- Match method counts: n/a
+
+Zero-match audit list:
+
+- [2926] skynet.certik.com/projects/baby-doge-coin
 
 Fork inheritance lineage and inherited audits are included when available.

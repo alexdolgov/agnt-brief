@@ -1,8 +1,16 @@
 {
   "component": "CoinToken",
   "main_contract": "CoinToken",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CoinToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,23 +20,9 @@
       "address": "0x6396f960d14d285e70f9e8dc44452ccff7075896",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xa27cf315b7f9e529f3d56223a5c3a590b6100e15",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xf919ea3ee19a22e067df0217d21c76077f245a4b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

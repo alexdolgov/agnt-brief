@@ -10,9 +10,7 @@ interface IBalancerMetaStablePool {
 
     function getLastInvariant() external view returns (uint256);
 
-    function getLatest(
-        uint8 x
-    ) external view returns (uint256);
+    function getLatest(uint8 x) external view returns (uint256);
 
     function totalSupply() external view returns (uint256);
 

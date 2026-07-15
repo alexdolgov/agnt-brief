@@ -1,18 +1,32 @@
 {
   "component": "NegRiskAdapter",
   "main_contract": "NegRiskAdapter",
-  "source_file_count": 14,
+  "source_entry_count": 13,
+  "source_file_count": 13,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/NegRiskAdapter\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Polymarket/contract-security/blob/main/audit-reports/Polymarket%20V2%20-%20Cantina%20-%20April%202026.pdf",
+    "https://github.com/Polymarket/contract-security/blob/main/audit-reports/cs_neg_risk_adapter.pdf",
+    "https://github.com/Polymarket/contract-security/blob/main/audit-reports/oz_neg_risk_adapter.pdf"
+  ],
   "addresses": [
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x000ce7ac9cc86e65729d74315c449eebb5534def",
+      "address": "0xd91e80cf2e7be2e162c6513ced06f1dd0da35296",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403755"
     }
   ]
 }

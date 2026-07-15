@@ -1,87 +1,115 @@
 # Agentic Audit Brief: NodeDAO
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 7 (0 matched; 7 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: NodeDAO (`nodedao`)
 - Website: [https://www.nodedao.com](https://www.nodedao.com)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:36.499Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 16 unique implementations (24 raw deployments)
+- Contract surface: 11 unique implementations (11 raw deployments)
+- Coverage basis: 0/2 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $22,322,204.64
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Liquid Staking. Structurally: 24 project-authored contract(s) across 1 chain(s); 5 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for NodeDAO. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Its contracts share 22 common project-authored base contract(s) (proxy, erc1967upgrade, oftadapter). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 2 contract row(s) across ethereum. Structural roles: 1 core, 1 supporting. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 2
+- Structural roles: core (1), supporting (1)
+- Contract kinds: contract (2)
+- Detected standards: ownable (2), erc20 (1)
+- Frameworks: openzeppelin (2)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 11 contracts are derived from known codebases. 11 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x0d6f76...a725bc`, chain 1)
+- UnnamedContract (`0x16f692...b5735b`, chain 1)
+- UnnamedContract (`0x54f661...d1ea62`, chain 1)
+- UnnamedContract (`0x9efdeb...a3b75c`, chain 1)
+- UnnamedContract (`0xa9d213...dee8f3`, chain 1)
+- UnnamedContract (`0xbdfe7f...def3d8`, chain 1)
+- UnnamedContract (`0xc65720...c7789a`, chain 1)
+- UnnamedContract (`0xd7c049...812121`, chain 1)
+- UnnamedContract (`0xf3c794...c07c18`, chain 1)
+- CumulativeMerkleDrop (`0x1349a8...7b6610`, chain 1)
+- LsdETH (`0x9dc7e1...b97c5b`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 47; live-surface contracts included: 24 (24 live, 0 unknown).
-- Excluded by liveness: 23 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 11/11 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 11/16 (68.8%)
-- Deployed-live implementations: 16 of 16 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 11/16
-- Verified + Unaudited implementations: 5
+- Coverage of address-book-owned deployed-live implementations: 0/2 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 11 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 11 of 11 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/2
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 16
-- Raw deployments: 24
+- Unverified implementations: 9
+- Unique implementations: 11
+- Raw deployments: 11
 - Audits discovered: 7 (7 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 3
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-08 (aging)
 - Audit staleness (calendar age): 0 fresh, 1 aging, 6 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 11 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| CertiK | Tier 2 | 9 | 56.3% | 2024-08 |
-| Beosin | Tier 2 | 2 | 12.5% | 2023-02 |
-| MetaScan | Tier 2 | 2 | 12.5% | 2023-03 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (11)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| DefiStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x174799...bfc410`](./contracts/ethereum-1/0x174799af838f3883e88161f04011e2a316bfc410/); ethereum `0x59c384...73382d` | ✅ Audited |
-| DefiStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5b14af...a7f503`](./contracts/ethereum-1/0x5b14afdb6cbab7289e7d73df7d3dbad48aa7f503/); ethereum `0xfc2891...14c4a7` | ✅ Audited |
-| DefiStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x75b2e4...775bae`](./contracts/ethereum-1/0x75b2e41c6096eb4a8110e0d23c3eeb749e775bae/); ethereum `0x8446c9...ddf8f5` | ✅ Audited |
-| ELVault | unknown | ethereum | n/a | 2 deployments: ethereum [`0x3dd8d9...afac23`](./contracts/ethereum-1/0x3dd8d9074f2a2656144125a3dd04abce01afac23/); ethereum `0xa9d213...dee8f3` | ✅ Audited |
-| ELVault | unknown | ethereum | n/a | 2 deployments: ethereum [`0x96714c...c3f04e`](./contracts/ethereum-1/0x96714ca83bdabd4d45ccf61e171d81178fc3f04e/); ethereum `0xbdfe7f...def3d8` | ✅ Audited |
-| MintStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0xb97ab3...1f67a0`](./contracts/ethereum-1/0xb97ab3198f6117d2d093807faa670eb1c11f67a0/); ethereum `0xdd2d80...43e6fe` | ✅ Audited |
-| ObeliskNetwork | unknown | ethereum | n/a | [`0x934cbd...ebad42`](./contracts/ethereum-1/0x934cbd2af86c074478a1fe1d10d2c5d4adebad42/) | ✅ Audited |
-| ObeliskNetwork | unknown | ethereum | n/a | 2 deployments: ethereum [`0xe423b9...1cd999`](./contracts/ethereum-1/0xe423b99af103c4423ce9edf37d4790e9ab1cd999/); ethereum `0xef2df4...43e80b` | ✅ Audited |
-| OBTC | unknown | ethereum | n/a | [`0xb1e128...de0e3c`](./contracts/ethereum-1/0xb1e12802831da99d2d47b6a55049d69bf7de0e3c/) | ✅ Audited |
-| OYBTCB2 | unknown | ethereum | n/a | [`0x7f58f8...3d24b6`](./contracts/ethereum-1/0x7f58f8d540324a7a895794bb819f2d635c3d24b6/) | ✅ Audited |
-| StrategyManager | unknown | ethereum | n/a | 2 deployments: ethereum [`0x36f57f...a16e16`](./contracts/ethereum-1/0x36f57f0379cb36e54248d219954274ee86a16e16/); ethereum `0x995f4e...8d5e38` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| CumulativeMerkleDrop | operational_periphery | ethereum | n/a | [`0x1349a8...7b6610`](./contracts/ethereum-1/0x1349a8d352b1971cbebeacf55fb75526f47b6610/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | [`0x718b78...2d6a1d`](./contracts/ethereum-1/0x718b7885fec8511dc8f2a378d3045c90e82d6a1d/) | ⚠️ Unaudited |
-| LsdETH | unknown | ethereum | n/a | [`0x9dc7e1...b97c5b`](./contracts/ethereum-1/0x9dc7e196092dac94f0c76cfb020b60fa75b97c5b/) | ⚠️ Unaudited |
-| NethOFTAdapter | adapter | ethereum | n/a | [`0x3343f9...3283ce`](./contracts/ethereum-1/0x3343f9de5612b6f8a433abc3eaae245cfa3283ce/) | ⚠️ Unaudited |
-| RNethOFTAdapter | adapter | ethereum | n/a | [`0xcea368...8ded56`](./contracts/ethereum-1/0xcea3681131dd151ee72a5c8dbba555cb8b8ded56/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| CumulativeMerkleDrop | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-389860 | `0x1349a8...7b6610` | ⚠️ Unaudited |
+| LsdETH | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389863 | `0x9dc7e1...b97c5b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,52 +123,130 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (9)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389859 | `0x0d6f76...a725bc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389861 | `0x16f692...b5735b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389862 | `0x54f661...d1ea62` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389864 | `0x9efdeb...a3b75c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389865 | `0xa9d213...dee8f3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389866 | `0xbdfe7f...def3d8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389867 | `0xc65720...c7789a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389868 | `0xd7c049...812121` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389869 | `0xf3c794...c07c18` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [CertiK-Obelisk-final-20240805T174639Z.pdf](https://github.com/NodeDAO/audit/blob/main/CertiK-Obelisk-final-20240805T174639Z.pdf) | CertiK | Audit | 2024-08 | aging | Direct | contract_name | 15 | high |
-| [Beosin_NodeDAO-Protocol_202302011759.pdf](https://github.com/NodeDAO/audits/blob/main/Beosin_NodeDAO-Protocol_202302011759.pdf) | Beosin | Audit | 2023-02 | stale | Direct | contract_name | 4 | high |
-| [Beosin_NodeDAO-Protocol_202302161759.pdf](https://github.com/NodeDAO/audits/blob/main/Beosin_NodeDAO-Protocol_202302161759.pdf) | Beosin | Audit | 2023-02 | stale | Direct | n/a | 0 | n/a |
-| [Beosin_Validator-NFT_202210251808.pdf](https://github.com/NodeDAO/audits/blob/main/Beosin_Validator-NFT_202210251808.pdf) | Beosin | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
-| [MetaScan_Report_NodeDAO_20230301.pdf](https://github.com/NodeDAO/audits/blob/main/MetaScan_Report_NodeDAO_20230301.pdf) | MetaScan | Audit | 2023-03 | stale | Direct | contract_name | 4 | high |
-| [MetaTrust.pdf](https://www.nodedao.com/paf/MetaTrust.pdf) | unknown | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
-| [BEOSIN.pdf](https://www.nodedao.com/paf/BEOSIN.pdf) | unknown | Audit | 2023-02 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [CertiK-Obelisk-final-20240805T174639Z.pdf](https://github.com/NodeDAO/audit/blob/main/CertiK-Obelisk-final-20240805T174639Z.pdf) | CertiK | Audit | 2024-08 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 17 | high |
+| [Beosin_NodeDAO-Protocol_202302011759.pdf](https://github.com/NodeDAO/audits/blob/main/Beosin_NodeDAO-Protocol_202302011759.pdf) | Beosin | Audit | 2023-02 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [Beosin_NodeDAO-Protocol_202302161759.pdf](https://github.com/NodeDAO/audits/blob/main/Beosin_NodeDAO-Protocol_202302161759.pdf) | Beosin | Audit | 2023-02 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [Beosin_Validator-NFT_202210251808.pdf](https://github.com/NodeDAO/audits/blob/main/Beosin_Validator-NFT_202210251808.pdf) | Beosin | Audit | 2022-10 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [MetaScan_Report_NodeDAO_20230301.pdf](https://github.com/NodeDAO/audits/blob/main/MetaScan_Report_NodeDAO_20230301.pdf) | MetaScan | Audit | 2023-03 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 7 | high |
+| [MetaTrust.pdf](https://www.nodedao.com/paf/MetaTrust.pdf) | unknown | Audit | 2023-05 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [BEOSIN.pdf](https://www.nodedao.com/paf/BEOSIN.pdf) | unknown | Audit | 2023-02 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [3976] CertiK-Obelisk-final-20240805T174639Z.pdf — no match: Extracted 17 contract names from the audit scope table and file paths. Audit date found on cover page and executive summary.
+- [3977] Beosin_NodeDAO-Protocol_202302011759.pdf — no match: Audit scope includes Oracle module, Registry module, Rewards module, Timelock Controller module, and staking module. Contracts identified from findings and scope description.
+- [3978] Beosin_NodeDAO-Protocol_202302161759.pdf — no match: Audit scope includes Oracle module, Registry module, Vault module, Timelock Controller module, and staking module. Specific contracts mentioned in findings: NodeOperatorRegistry and LiquidStaking.
+- [3979] Beosin_Validator-NFT_202210251808.pdf — no match: Contracts explicitly mentioned in scope: Aggregator, NodeRewardVault, NodeCapitalVault, ValidatorNft. Audit date from cover page.
+- [3980] MetaScan_Report_NodeDAO_20230301.pdf — no match: Contracts extracted from 'File(s) Affected' in findings and from the informational section listing centralized roles. No explicit scope section found, but these are the contracts mentioned as audited.
+- [15360] MetaTrust.pdf — no match: Extracted contract names from 'File(s) Affected' in findings. No explicit scope section; audit date from cover page.
+- [15361] BEOSIN.pdf — no match: Audit scope includes Oracle module, Registry module, Vault module, Timelock Controller module and staking module. Specific contracts mentioned in findings: NodeOperatorRegistry and LiquidStaking. Other modules (Oracle, Vault, TimelockController) are not explicitly named as contracts in the provided text.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| CertiK-Obelisk-final-20240805T174639Z.pdf | ObeliskNetwork | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | MintStrategy | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | StrategyManager | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | Strategy | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | Version | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | WithdrawalRequest | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | BaseStrategy | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | CefiStrategy | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | BaseToken | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | OBTC | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | OLTC | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | OYBTCB2 | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | OYBTCBBL | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | Assets | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | BlackList | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | Dao | unmatched — not counted | — | listed in scope table | no |
+| CertiK-Obelisk-final-20240805T174639Z.pdf | DefiStrategy | unmatched — not counted | — | listed in scope table | no |
+| Beosin_NodeDAO-Protocol_202302011759.pdf | BeaconOracle | unmatched — not counted | — | listed in scope and findings | no |
+| Beosin_NodeDAO-Protocol_202302011759.pdf | ReportUtils | unmatched — not counted | — | listed in findings | no |
+| Beosin_NodeDAO-Protocol_202302011759.pdf | NodeOperatorRegistry | unmatched — not counted | — | listed in findings | no |
+| Beosin_NodeDAO-Protocol_202302011759.pdf | LiquidStaking | unmatched — not counted | — | listed in findings | no |
+| Beosin_NodeDAO-Protocol_202302011759.pdf | ELVault | unmatched — not counted | — | listed in findings | no |
+| Beosin_NodeDAO-Protocol_202302161759.pdf | NodeOperatorRegistry | unmatched — not counted | — | listed in findings and scope | no |
+| Beosin_NodeDAO-Protocol_202302161759.pdf | LiquidStaking | unmatched — not counted | — | listed in findings and scope | no |
+| Beosin_Validator-NFT_202210251808.pdf | Aggregator | unmatched — not counted | — | mentioned in project description and findings | no |
+| Beosin_Validator-NFT_202210251808.pdf | NodeRewardVault | unmatched — not counted | — | mentioned in project description and findings | no |
+| Beosin_Validator-NFT_202210251808.pdf | NodeCapitalVault | unmatched — not counted | — | mentioned in project description | no |
+| Beosin_Validator-NFT_202210251808.pdf | ValidatorNft | unmatched — not counted | — | mentioned in project description and findings | no |
+| MetaScan_Report_NodeDAO_20230301.pdf | BeaconOracle | unmatched — not counted | — | File(s) Affected in findings | no |
+| MetaScan_Report_NodeDAO_20230301.pdf | LiquidStaking | unmatched — not counted | — | File(s) Affected in findings | no |
+| MetaScan_Report_NodeDAO_20230301.pdf | NodeOperatorRegistry | unmatched — not counted | — | File(s) Affected in findings | no |
+| MetaScan_Report_NodeDAO_20230301.pdf | ConsensusVault | unmatched — not counted | — | File(s) Affected in findings | no |
+| MetaScan_Report_NodeDAO_20230301.pdf | ELVault | unmatched — not counted | — | File(s) Affected in findings | no |
+| MetaScan_Report_NodeDAO_20230301.pdf | ELVaultFactory | unmatched — not counted | — | File(s) Affected in findings | no |
+| MetaScan_Report_NodeDAO_20230301.pdf | VNFT | unmatched — not counted | — | File(s) Affected in findings | no |
+| MetaTrust.pdf | OperatorSlash | unmatched — not counted | — | File(s) Affected in finding MSA-001 | no |
+| MetaTrust.pdf | VNFT | unmatched — not counted | — | File(s) Affected in findings MSA-002 and MSA-004 | no |
+| MetaTrust.pdf | NodeOperatorRegistry | unmatched — not counted | — | File(s) Affected in finding MSA-003 | no |
+| MetaTrust.pdf | VaultManager | unmatched — not counted | — | File(s) Affected in finding MSA-005 | no |
+| BEOSIN.pdf | NodeOperatorRegistry | unmatched — not counted | — | listed in findings and scope | no |
+| BEOSIN.pdf | LiquidStaking | unmatched — not counted | — | listed in findings and scope | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x1349a8...7b6610` | CumulativeMerkleDrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9dc7e1...b97c5b` | LsdETH | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 16 |
+| needs_review | 9 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=3
-- Match method counts: extraction_exact=23
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 41 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=7
+- Match method counts: n/a
 
 Zero-match audit list:
 
+- [3976] CertiK-Obelisk-final-20240805T174639Z.pdf
+- [3977] Beosin_NodeDAO-Protocol_202302011759.pdf
 - [3978] Beosin_NodeDAO-Protocol_202302161759.pdf
 - [3979] Beosin_Validator-NFT_202210251808.pdf
+- [3980] MetaScan_Report_NodeDAO_20230301.pdf
 - [15360] MetaTrust.pdf
 - [15361] BEOSIN.pdf
 

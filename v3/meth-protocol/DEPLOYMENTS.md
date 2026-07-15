@@ -1,7 +1,6 @@
 # meth-protocol — deployments
 
-1 verified deployment(s) across 1 component(s).
+0 verified deployment(s) across 0 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| ethereum | `0x9f0c013016e8656bc256f948cd4b79ab25c7b94d` | Proxy | proxy | live | no |

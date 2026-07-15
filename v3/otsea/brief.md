@@ -1,75 +1,112 @@
 # Agentic Audit Brief: OTSea
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 1 across 1 audit(s)
+- Eligible audit results: 3 (1 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: OTSea (`otsea`)
+- Website: [https://www.otsea.io/](https://www.otsea.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:38.740Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base, ethereum
-- Contract surface: 20 unique implementations (21 raw deployments)
+- Contract surface: 4 unique implementations (4 raw deployments)
+- Coverage basis: 1/3 confirmed own live verified implementations (33.3%); conservative 33.3% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $372,435.16
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Dexs. Structurally: 7 project-authored contract(s) across 2 chain(s); 1 ERC20 token; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for OTSea. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Its contracts share 2 common project-authored base contract(s) (signaturehelper, whitelisthelper). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 3 contract row(s) across base, ethereum. Structural roles: 3 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 3
+- Structural roles: core (3)
+- Contract kinds: contract (3)
+- Detected standards: ownable (3), pausable (2), erc20 (1)
+- Frameworks: openzeppelin (3), uniswap-v2 (1)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 4 contracts are derived from known codebases. 4 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x0adedc...730d90`, chain 1)
+- OTSea (`0x6e8b67...5353b4`, chain 1)
+- OTSea (`0xa836af...8c5fd5`, chain 8453)
+- OTSeaERC20 (`0x5da151...09cb09`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 26; live-surface contracts included: 21 (7 live, 14 unknown).
-- Excluded by liveness: 5 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 4/4 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 2/6 (33.3%)
-- Deployed-live implementations: 6 of 20 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 2/6
-- Verified + Unaudited implementations: 4
+- Coverage of address-book-owned deployed-live implementations: 1/3 (33.3%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 4 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 4 of 4 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 1/3
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 14
-- Unique implementations: 20
-- Raw deployments: 21
+- Unverified implementations: 1
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 2
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-01 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 3 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| PeckShield | Tier 2 | 2 | 33.3% | 2024-01 |
-| Dedaub | Tier 2 | 1 | 16.7% | 2023-12 |
+| PeckShield | Tier 2 | 1 | 33.3% | 2024-01 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (2)
+### ✅ Verified + Audited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| OTSea | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6e8b67...5353b4`](./contracts/ethereum-1/0x6e8b67b315b44519f8c2befdbbe11097c45353b4/); base `0xa836af...8c5fd5` | ✅ Audited |
-| OTSeaERC20 | token | ethereum | n/a | [`0x5da151...09cb09`](./contracts/ethereum-1/0x5da151b95657e788076d04d56234bd93e409cb09/) | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| OTSeaERC20 | token | project_anchor | own_supporting | 0 | ethereum | unit-390498 | `0x5da151...09cb09` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| OTSeaMigration | unknown | ethereum | n/a | [`0xe4eacc...fe50e9`](./contracts/ethereum-1/0xe4eacc41aa1a8208d57c1b4766b6b69e1cfe50e9/) | ⚠️ Unaudited |
-| OTSeaRevenueDistributor | unknown | ethereum | n/a | [`0x34bccf...cca7ff`](./contracts/ethereum-1/0x34bccf4af03870265fe99cec262524f343cca7ff/) | ⚠️ Unaudited |
-| OTSeaStable | unknown | ethereum | n/a | [`0x1c3c44...1885b8`](./contracts/ethereum-1/0x1c3c442c0ece529e6a8d7815b33c014e641885b8/) | ⚠️ Unaudited |
-| OTSeaStaking | unknown | ethereum | n/a | [`0xf2c8e8...f30916`](./contracts/ethereum-1/0xf2c8e860ca12cde3f3195423ecf54427a4f30916/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| OTSea | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390499 | `0x6e8b67...5353b4` | ⚠️ Unaudited |
+| OTSea | unknown | project_anchor | own_supporting | 0 | base | unit-390500 | `0xa836af...8c5fd5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -83,61 +120,79 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (14)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x14d727...4f73f2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x20662e...23343d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2ef116...33c0ed` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x40e0c6...2aa0ff` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x56a3c6...dd70e9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x81077a...fffec2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x902f26...0c4ea8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x92cd50...b77a0c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa0aa24...be2ad7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa1f4bf...8e3fbe` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb2f99e...052505` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd8119b...0d02d9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xdb0429...28c1f9` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x34bccf...cca7ff` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390497 | `0x0adedc...730d90` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [dedaub.com/audits/otsea/otsea-dec-18-2023](https://dedaub.com/audits/otsea/otsea-dec-18-2023) | Dedaub | Audit | 2023-12 | stale | Direct | contract_name | 1 | n/a |
-| [dedaub.com/audits/otsea](https://dedaub.com/audits/otsea) | Dedaub | Audit | 2018-12 | stale | Direct | n/a | 0 | n/a |
-| [PeckShield-Audit-Report-OTSea-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-OTSea-v1.0.pdf) | PeckShield | Audit | 2024-01 | stale | Direct | contract_name | 2 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [dedaub.com/audits/otsea/otsea-dec-18-2023](https://dedaub.com/audits/otsea/otsea-dec-18-2023) | Dedaub | Audit | 2023-12 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [dedaub.com/audits/otsea](https://dedaub.com/audits/otsea) | Dedaub | Audit | 2018-12 | stale | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [PeckShield-Audit-Report-OTSea-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-OTSea-v1.0.pdf) | PeckShield | Audit | 2024-01 | stale | Direct | contract_name | matched | 1 | 0 | 0 | 4 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [13642] dedaub.com/audits/otsea/otsea-dec-18-2023 — no match: Audit report for OTSea platform; scope includes OTSea and FeeSplitter contracts; other contracts (TransferHelper, ListHelper, WhitelistHelper) are part of the codebase and mentioned in findings.
+- [13643] dedaub.com/audits/otsea — no match: The provided text is a navigation snippet from a website, not the full audit report. No contract names, scope section, or audit date could be identified.
+- [13644] PeckShield-Audit-Report-OTSea-v1.0.pdf — matched: Scope explicitly lists five contracts: OTSea.sol, OTSeaERC20.sol, OTSeaMigration.sol, OTSeaStaking.sol, OTSeaRevenueDistributor.sol. Audit date is January 30, 2024 from cover page and table.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| dedaub.com/audits/otsea/otsea-dec-18-2023 | OTSea | ambiguous — not counted | OTSea (alternative) `0x6e8b67...5353b4` — deployed 2024-04-17 00:16:47+03 — liveness: live (current_address_book_code)<br>OTSea (alternative) `0xa836af...8c5fd5` — deployed 2024-04-12 18:24:41+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| dedaub.com/audits/otsea/otsea-dec-18-2023 | FeeSplitter | unmatched — not counted | — | audited contract | no |
+| dedaub.com/audits/otsea/otsea-dec-18-2023 | TransferHelper | unmatched — not counted | — | mentioned in findings | no |
+| dedaub.com/audits/otsea/otsea-dec-18-2023 | ListHelper | unmatched — not counted | — | mentioned in findings | no |
+| dedaub.com/audits/otsea/otsea-dec-18-2023 | WhitelistHelper | unmatched — not counted | — | mentioned in findings | no |
+| PeckShield-Audit-Report-OTSea-v1.0.pdf | OTSea | ambiguous — not counted | OTSea (alternative) `0x6e8b67...5353b4` — deployed 2024-04-17 00:16:47+03 — liveness: live (current_address_book_code)<br>OTSea (alternative) `0xa836af...8c5fd5` — deployed 2024-04-12 18:24:41+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| PeckShield-Audit-Report-OTSea-v1.0.pdf | OTSeaERC20 | own contract | OTSeaERC20 (selected) `0x5da151...09cb09` — deployed 2024-01-30 10:01:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-OTSea-v1.0.pdf | OTSeaMigration | unmatched — not counted | — | listed in scope | no |
+| PeckShield-Audit-Report-OTSea-v1.0.pdf | OTSeaStaking | unmatched — not counted | — | listed in scope | no |
+| PeckShield-Audit-Report-OTSea-v1.0.pdf | OTSeaRevenueDistributor | unmatched — not counted | — | listed in scope | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x6e8b67...5353b4` | OTSea | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xa836af...8c5fd5` | OTSea | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 20 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: contract_name=3
+- Address-book scope dispositions: 1 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 2 ambiguous, 7 unmatched
+- Matched-own operational status: 1 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=2, low=1
+- Match method counts: unique_name=1
 
 Zero-match audit list:
 
+- [13642] dedaub.com/audits/otsea/otsea-dec-18-2023
 - [13643] dedaub.com/audits/otsea
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,71 +1,8 @@
 # angles — deployments
 
-65 verified deployment(s) across 26 component(s).
+2 verified deployment(s) across 1 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| chain-146 | `0x0140f9b548565bf913020f186402ced1e8fa6f3f` | SonicUsdtRateProvider | impl | inactive | no |
-| chain-146 | `0x01ddde7f3b29fe9571f8bee23a48daab39493b1a` | PoolOwner | impl | inactive | no |
-| chain-146 | `0x033f4a109fc11a11d3afb92dca0ab6c30bb3c722` | PoolV2 | impl | live | no |
-| chain-146 | `0x035b1c84051e8c6988e3e7ed39991b6e683e3f20` | Timelock | impl | inactive | no |
-| chain-146 | `0x097df3dfb8c5b090e661296563f1fe24701bfb0f` | Vault | impl | live | no |
-| chain-146 | `0x0af78f0ccb7d1a042d13f3d4def51cec7c189a00` | AnglesSmartRouter | impl | live | no |
-| chain-146 | `0x0c4e186eae8acaa7f7de1315d5ad174be39ec987` | anSProxy | proxy | inactive | no |
-| chain-146 | `0x117b60ddd662c9165cbe7f442f5d79e98311c9b8` | RingsVaultRateProvider | impl | inactive | no |
-| chain-146 | `0x135cb0ebeacb89738a17d3ee6b3caf392af98c47` | RolesAuthority | impl | inactive | no |
-| chain-146 | `0x142e7af40de1a225cc1436b363d4187f8403fbb3` | RingsVaultRateProvider | impl | inactive | no |
-| chain-146 | `0x15e96cdeca34b9de1b31586c1206206adb92e69d` | Vault-2 | impl | live | no |
-| chain-146 | `0x1c8a00371ed3e66d2b9e45676d421a29848c5635` | Vault | impl | live | no |
-| chain-146 | `0x1e360058e211dd88d695926ba0683034477ad01f` | SiloBorrowableWsRateProvider | impl | inactive | no |
-| chain-146 | `0x1edbcc4bf6e1524715f55544113430f4e451945e` | Vault | impl | live | no |
-| chain-146 | `0x2210a9357d51ff909eaa43570b3f1275e76cb6d6` | PoolOwner | impl | inactive | no |
-| chain-146 | `0x2280753c0f14e1f48352ca760cde48dfc2a4079a` | PoolOwner | impl | inactive | no |
-| chain-146 | `0x22f74995f88d4fd631bb8f64fa523af0da5a348c` | AtomicQueue | impl | inactive | no |
-| chain-146 | `0x2f45b61b90b821efdb4525f89162cfd857ef51fd` | PoolToken | impl | live | no |
-| chain-146 | `0x2f6679945c215729608f9896f081d2af42b39b45` | PoolToken | impl | live | no |
-| chain-146 | `0x3bcb4f5c22758b145820e1126e69d96f891d5f8b` | PoolToken | impl | live | no |
-| chain-146 | `0x3df5a1f8e1742f225e485afb99ccfe910d3a077a` | BeetsLpRateProvider | impl | inactive | no |
-| chain-146 | `0x3eac5eb19c1b300e301874e2113bc2eced43ce7a` | anSProxy | impl | inactive | no |
-| chain-146 | `0x451d0084cceaa2cc7ef7ecc71631c54f4e62666e` | PoolToken | impl | live | no |
-| chain-146 | `0x4bf2d4868e7c8514093a4d548b8edf5ae4ce9eea` | PoolV2 | impl | live | no |
-| chain-146 | `0x4cc72cafb1d87068cae2da03243317f96e863a9e` | FeeSplitter | impl | inactive | no |
-| chain-146 | `0x5c6e05d97af61637fdf5144ad4ed81a12bfd35b0` | AnglesLiquidVaultRateProvider | impl | inactive | no |
-| chain-146 | `0x615ee09caa940a91ef4738fdea8935f659156ed5` | WsRateProvider | impl | inactive | no |
-| chain-146 | `0x6c2a529921f70eaf44d689ef882d96f09041c452` | Pool | impl | live | no |
-| chain-146 | `0x6d06b7fac4f6393672fd038083370d38f3b0ac35` | Aggregator | impl | live | no |
-| chain-146 | `0x71e558d352125a4950301e1fb7027b09303d6a54` | Pool | impl | live | no |
-| chain-146 | `0x71f589c4032a2152c377903c0c2485d1b41b4472` | anSProxy | impl | inactive | no |
-| chain-146 | `0x7a1f5fb31506274ee22afb1acf4d3c1a3f736465` | Vault | impl | live | no |
-| chain-146 | `0x8417bdef7fe41743cd26e591f1e4f0d19c00552f` | Aggregator | impl | live | no |
-| chain-146 | `0x87b2948046431022d2633d5e8107ed70d4a672a4` | BeetsLpAddHelper | impl | inactive | no |
-| chain-146 | `0x88cf500da90ac0351a5b886b73678d183bc3bb7d` | PoolToken | impl | live | no |
-| chain-146 | `0x8a3b3aa843aab44944209700ca878e9ea5dd2d39` | SonicUsdtRateProvider | impl | inactive | no |
-| chain-146 | `0x94869d505fe7bab884505f45a48c24628fc288da` | Timelock | impl | inactive | no |
-| chain-146 | `0x9786db1486a2f67977ef1e3dfbd0eb01e407be7b` | ManualRegistry | impl | live | no |
-| chain-146 | `0x9b2e90317888c0ca88041a2caecd03a6f63e206e` | AnglesLiquidVaultRateProvider | impl | inactive | no |
-| chain-146 | `0xa342a00f66783a4ca59d0c0716f2d24f593b9070` | Aggregator | impl | live | no |
-| chain-146 | `0xa633c15e09ca2a8dbb6cd52aae915a3b379deeb3` | RingsVaultRateProvider | impl | inactive | no |
-| chain-146 | `0xa93c9411f8fecf5e6acd81ecd99a71c165d48c4d` | PoolToken | impl | live | no |
-| chain-146 | `0xa96ac774bd4b8e513b4eb3bad7f3639ee50a685e` | RingsVaultRateProvider | impl | inactive | no |
-| chain-146 | `0xa9e4c941f4677fa4eff10173cdbdfb2e909e1788` | PoolOwner | impl | inactive | no |
-| chain-146 | `0xba3bb17d19e556900e42e7c1e9e89dc6d3207a64` | wanS | impl | inactive | no |
-| chain-146 | `0xbe4d17ecb01b6173ae7c168ea9b654a64d18595a` | BeetsLpAddHelper | impl | inactive | no |
-| chain-146 | `0xc8291d518fe771b5612ecc0d6a99d5dc03db3dd8` | Pool | impl | live | no |
-| chain-146 | `0xc83d8ab2978f93dea406a3f4f575bf35e03225bd` | BeetsLpAddHelper | impl | inactive | no |
-| chain-146 | `0xc85ada86a52dc74e3b0bbd71e5a7e6b0770b928f` | Pool | impl | live | no |
-| chain-146 | `0xcafd8145535a9abb7e15262fb6e2ba6452e14d41` | Vault | impl | live | no |
-| chain-146 | `0xd4012c5f3cbcc383d358c5086da694757463e1f2` | AnglesVault | impl | inactive | no |
-| chain-146 | `0xd822b488bd5b0e5fcd4d3fcb6ba9867b6b409f30` | RingsVaultRateProvider | impl | inactive | no |
-| chain-146 | `0xd965e9210caf1cdc1ed2f0a8936329c12ba727ef` | PoolOwner | impl | inactive | no |
-| chain-146 | `0xde4452a4a4851356e72db53ebfbc9b5b6d520033` | Deployer | impl | inactive | no |
-| chain-146 | `0xe0c7af51b39f4cb8d4816a07d0713fe59024eb48` | PoolToken | impl | live | no |
-| chain-146 | `0xe14e14cc32b939957742d7586e9debc9631282e7` | Timelock | impl | inactive | no |
-| chain-146 | `0xe4b84fdd6979a872dd57973f3e4a45921c103175` | AnglesSmartRouter | impl | inactive | no |
-| chain-146 | `0xe5203be1643465b3c0de28fd2154843497ef4269` | anSProxy | proxy | live | no |
-| chain-146 | `0xedea2647cfe580c9b6f2148c270f9aae6b08bca5` | Vault | impl | live | no |
-| chain-146 | `0xef7073465ff7674d886f1705ed8e471ef61237eb` | Pool | impl | live | no |
-| chain-146 | `0xf14aeeb00e51d8447f5064f73c519e23a9b5a416` | SonicUsdcRateProvider | impl | inactive | no |
-| chain-146 | `0xfa85fe5a8f5560e9039c04f2b0a90de1415abd70` | anSProxy | proxy | live | no |
-| chain-146 | `0xfb644cea02886ddc1b56d6d9fece811c941d41cd` | Aggregator | impl | live | no |
-| chain-146 | `0xfc00face00000000000000000000000000000000` | ERC1967Proxy | proxy | live | no |
-| chain-146 | `0xfd1ba507a7bb118af057671568551f6ac7d2b010` | FeeSplitter | impl | inactive | no |
+| chain-146 | `0xe5203be1643465b3c0de28fd2154843497ef4269` | AnglesVaultProxy | proxy | live | yes |
+| chain-146 | `0xfa85fe5a8f5560e9039c04f2b0a90de1415abd70` | AnglesVaultProxy | proxy | live | yes |

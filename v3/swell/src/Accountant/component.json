@@ -1,8 +1,16 @@
 {
   "component": "Accountant",
   "main_contract": "Accountant",
-  "source_file_count": 14,
-  "deployment_count": 1,
+  "source_entry_count": 11,
+  "source_file_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Accountant\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/ChainSecurity_Swell_swBTC_audit.pdf"
@@ -14,7 +22,19 @@
       "address": "0x15a94d49fac6e23e17c1366c999117a1de8ba7b6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399963"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x48dacb0b938aa6d5752ca2ea23cd8593fafb3825",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399970"
     }
   ]
 }

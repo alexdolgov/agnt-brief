@@ -7,12 +7,12 @@ import {AccessControl} from "@openzeppelin/contracts/access/AccessControl.sol";
 contract Token is ERC20, AccessControl {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant BURNER_ROLE = keccak256("BURNER_ROLE");
-
     constructor(
         string memory _name,
-        string memory _symbol
+        string memory _symbol,
+        address _admin
     ) ERC20(_name, _symbol) {
-        _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
+        _grantRole(DEFAULT_ADMIN_ROLE, _admin);
     }
 
     function mint(address _to, uint256 _amount) external onlyRole(MINTER_ROLE) {

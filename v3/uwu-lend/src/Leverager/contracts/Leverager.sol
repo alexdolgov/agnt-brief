@@ -64,6 +64,7 @@ contract Leverager {
   ) external {
     uint16 referralCode = 0;
     IERC20(asset).safeTransferFrom(msg.sender, address(this), amount);
+    IERC20(asset).safeApprove(address(lendingPool), 0);
     IERC20(asset).safeApprove(address(lendingPool), type(uint256).max);
     lendingPool.deposit(asset, amount, msg.sender, referralCode);
     for (uint256 i = 0; i < loopCount; i += 1) {

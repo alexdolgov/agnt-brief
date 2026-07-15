@@ -1,8 +1,16 @@
 {
   "component": "MetaRouterGateway",
   "main_contract": "MetaRouterGateway",
+  "source_entry_count": 2,
   "source_file_count": 2,
-  "deployment_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MetaRouterGateway\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/core/Symbiosis%20Protocol%20Audit%20-%20Zokyo.pdf",
@@ -15,47 +23,9 @@
       "address": "0xfcef2fe72413b65d3f393d278a714cad87512bcd",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x200a0fe876421dc49a26508e3efd0a1008fd12b5",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xa9a96ee51dd54b9f51d46b1fbd2a19c1295ec75b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xab83653fd41511d638b69229afbf998eb9b0f30c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x80dddda846e779ccee463bdc0bcc2ae296fedaf9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x4cfa66497fa84d739a0f785fbcee9196f1c64e4a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400029"
     }
   ]
 }

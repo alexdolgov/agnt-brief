@@ -70,9 +70,6 @@ interface IBunniHub is IUnlockCallback, IOwnable {
     /// @param bunniToken The BunniToken associated with the call
     /// @param poolId The Uniswap V4 pool's ID
     event NewBunni(IBunniToken indexed bunniToken, PoolId indexed poolId);
-    /// @notice Emitted when the recipient of referral rewards of the default referrer address(0) is set
-    /// @param newReferralRewardRecipient The new recipient of referral rewards of the default referrer address(0)
-    event SetReferralRewardRecipient(address indexed newReferralRewardRecipient);
     /// @notice Emitted when a new address is added to or removed from the pauser set
     /// @param guy The address that was added or removed from the pauser set
     /// @param isPauser True if the address was added to the pauser set, false if it was removed
@@ -82,6 +79,10 @@ interface IBunniHub is IUnlockCallback, IOwnable {
     event SetPauseFlags(uint8 indexed pauseFlags);
     /// @notice Emitted when the pause fuse is burned
     event BurnPauseFuse();
+    /// @notice Emitted when a hook is whitelisted or blacklisted
+    /// @param hook The hook that was whitelisted or blacklisted
+    /// @param whitelisted True if the hook was whitelisted, false if it was blacklisted
+    event SetHookWhitelist(IBunniHook indexed hook, bool indexed whitelisted);
 
     /// @param poolKey The PoolKey of the Uniswap V4 pool
     /// @param recipient The recipient of the minted share tokens
@@ -93,7 +94,6 @@ interface IBunniHub is IUnlockCallback, IOwnable {
     /// @param vaultFee0 When we deposit token0 into vault0, the deposit amount is multiplied by WAD / (WAD - vaultFee0),
     /// @param vaultFee1 When we deposit token1 into vault1, the deposit amount is multiplied by WAD / (WAD - vaultFee1),
     /// @param deadline The time by which the transaction must be included to effect the change
-    /// @param referrer The referrer of the liquidity provider. Used for fee sharing.
     struct DepositParams {
         PoolKey poolKey;
         address recipient;
@@ -105,7 +105,6 @@ interface IBunniHub is IUnlockCallback, IOwnable {
         uint256 vaultFee0;
         uint256 vaultFee1;
         uint256 deadline;
-        address referrer;
     }
 
     /// @notice Increases the amount of liquidity in a position, with tokens paid by the `msg.sender`
@@ -229,6 +228,7 @@ interface IBunniHub is IUnlockCallback, IOwnable {
 
     /// @notice Deploys the BunniToken contract for a Bunni position. This token
     /// represents a user's share in the Uniswap V4 LP position.
+    /// Only whitelisted hooks may be used.
     /// @dev The BunniToken is deployed via CREATE3, which allows for a deterministic address.
     /// @param params The input parameters
     /// currency0 The token0 of the Uniswap V4 pool
@@ -267,17 +267,31 @@ interface IBunniHub is IUnlockCallback, IOwnable {
     /// @param zeroForOne True if the swap is for token0->token1, false if token1->token0
     /// @param inputAmount The amount of the input token to pull from the hook
     /// @param outputAmount The amount of the output token to push to the hook
-    function hookHandleSwap(PoolKey calldata key, bool zeroForOne, uint256 inputAmount, uint256 outputAmount)
-        external;
+    /// @param shouldSurge True if the pool should surge before the swap
+    function hookHandleSwap(
+        PoolKey calldata key,
+        bool zeroForOne,
+        uint256 inputAmount,
+        uint256 outputAmount,
+        bool shouldSurge
+    ) external;
 
     /// @notice Called by the hook to set the idle balance of a Bunni pool.
     /// @param key The PoolKey of the Uniswap V4 pool
     /// @param newIdleBalance The new idle balance of the pool
     function hookSetIdleBalance(PoolKey calldata key, IdleBalance newIdleBalance) external;
 
-    /// @notice Sets the address of the recipient of referral rewards belonging to the default referrer address(0). Only callable by the owner.
-    /// @param newReferralRewardRecipient The new address of the recipient of referral rewards
-    function setReferralRewardRecipient(address newReferralRewardRecipient) external;
+    /// @notice Called by the hook to give assets to a Bunni pool it manages.
+    /// The assets are given in the form of PoolManager ERC-6909 claim tokens.
+    /// @dev This function does NOT use nonReentrant in order to support rebalancing.
+    /// Thus it is kept as simple as possible, the only external call it makes is to PoolManager,
+    /// and it follows the checks-effects-interactions pattern.
+    /// It only updates the raw balance and thus could push the raw balance ratio beyond the max,
+    /// but we're OK with it since the next user swap will fix it. This decision is also to maximize simplicity.
+    /// @param key The PoolKey of the Uniswap V4 pool
+    /// @param isCurrency0 True if the amount is for currency0, false if it's for currency1
+    /// @param amount The amount of currency to give to the pool
+    function hookGive(PoolKey calldata key, bool isCurrency0, uint256 amount) external;
 
     /// @notice Adds or removes an address from the pauser set. Only callable by the owner.
     /// @param guy The address to add or remove from the pauser set
@@ -292,13 +306,15 @@ interface IBunniHub is IUnlockCallback, IOwnable {
     /// All functions are permanently unpaused after this function is called.
     function burnPauseFuse() external;
 
+    /// @notice Whitelists or blacklists a hook. Only callable by the owner.
+    /// Only whitelisted hooks may be used when creating a new Bunni pool.
+    /// @param hook The hook to whitelist or blacklist
+    /// @param whitelisted True if the hook should be whitelisted, false if it should be blacklisted
+    function setHookWhitelist(IBunniHook hook, bool whitelisted) external;
+
     /// @notice Called by key.hooks to lock BunniHub before a rebalance order's execution.
     /// @param key The PoolKey of the Uniswap v4 pool
     function lockForRebalance(PoolKey calldata key) external;
-
-    /// @notice Called by key.hooks to unlock BunniHub after a rebalance order's execution.
-    /// @param key The PoolKey of the Uniswap v4 pool
-    function unlockForRebalance(PoolKey calldata key) external;
 
     /// @notice The state of a Bunni pool.
     function poolState(PoolId poolId) external view returns (PoolState memory);
@@ -308,6 +324,9 @@ interface IBunniHub is IUnlockCallback, IOwnable {
 
     /// @notice The BunniToken of a given pool. address(0) if the pool is not a Bunni pool.
     function bunniTokenOfPool(PoolId poolId) external view returns (IBunniToken);
+
+    /// @notice The hooklet of a given pool. address(0) if the pool is not a Bunni pool.
+    function hookletOfPool(PoolId poolId) external view returns (IHooklet);
 
     /// @notice The params of the given Bunni pool's hook. bytes("") if the pool is not a Bunni pool.
     function hookParams(PoolId poolId) external view returns (bytes memory);
@@ -324,9 +343,6 @@ interface IBunniHub is IUnlockCallback, IOwnable {
     /// @notice The idle balance of a Bunni pool.
     function idleBalance(PoolId poolId) external view returns (IdleBalance);
 
-    /// @notice The address of the recipient of referral rewards belonging to the default referrer address(0).
-    function getReferralRewardRecipient() external view returns (address);
-
     /// @notice Returns true if the given address is a pauser who can pause/unpause external functions.
     function isPauser(address guy) external view returns (bool);
 
@@ -338,4 +354,8 @@ interface IBunniHub is IUnlockCallback, IOwnable {
     /// @notice The init data of a Bunni pool. Stored in transient storage and used
     /// during the IHooks.afterInitialize() call.
     function poolInitData() external view returns (bytes memory);
+
+    /// @notice Whether the given hook is whitelisted.
+    /// @param hook The hook to check
+    function hookIsWhitelisted(IBunniHook hook) external view returns (bool);
 }

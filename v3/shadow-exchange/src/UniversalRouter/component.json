@@ -1,42 +1,28 @@
 {
   "component": "UniversalRouter",
   "main_contract": "UniversalRouter",
+  "source_entry_count": 44,
   "source_file_count": 44,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UniversalRouter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0x18e9c03b486ef96d2de3a73567f8ed0cace38c73",
+      "address": "0x92643dc4f75c374b689774160cdea09a0704a9c2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x7ec31452cf4e40cbca7207d507ec040c6166a03d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x90b9c23cd9085dcff6b88da618ad0189a5993a96",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0xa5ec3ff1381fc99e65e8c72fce7802d93163b687",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398914"
     }
   ]
 }

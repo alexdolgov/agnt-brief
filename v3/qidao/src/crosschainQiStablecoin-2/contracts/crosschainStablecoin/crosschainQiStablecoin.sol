@@ -1,4 +1,4 @@
-pragma solidity 0.5.17;
+pragma solidity 0.5.16;
 
 import "@openzeppelin/contracts/ownership/Ownable.sol";
 import "./crosschainStablecoin.sol";
@@ -45,6 +45,14 @@ contract crosschainQiStablecoin is crosschainStablecoin, Ownable {
         _minimumCollateralPercentage = minimumCollateralPercentage;
     }
 
+    function setClosingFee(uint256 amount) external onlyOwner() {
+        closingFee = amount;
+    }
+
+    function setOpeningFee(uint256 amount) external onlyOwner() {
+        openingFee = amount;
+    }
+
     function setTreasury(uint256 _treasury) external onlyOwner() {
         require(_exists(_treasury), "Vault does not exist");
         treasury = _treasury;
@@ -52,7 +60,7 @@ contract crosschainQiStablecoin is crosschainStablecoin, Ownable {
 
     function burn(uint256 amountToken) public onlyOwner() {
         // Burn 
-        mai.transfer(address(1), amountToken);
+        mai.transfer(address(0), amountToken);
     }
 
     function setTokenURI(string memory _uri) public onlyOwner() {

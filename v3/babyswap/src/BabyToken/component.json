@@ -1,58 +1,28 @@
 {
   "component": "BabyToken",
   "main_contract": "BabyToken",
+  "source_entry_count": 7,
   "source_file_count": 7,
-  "deployment_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BabyToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x2b1d01c316a41c11dc1a3d691a9aca66c63e74e9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
       "address": "0x53e562b9b7e5e94b81f10e96ee70ad06df3d2657",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x98ce25b2a1e8aa4cc3b81e31feca307a846603d7",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xbaa6ef4298b7b1a0cc461dc9f6c303de461e66f7",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xd7dda7284522aa6085fc534bcec975beb4f1b160",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xf2c313a1dd63fb27c8d396aa567acf8c7a08c535",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391812"
     }
   ]
 }

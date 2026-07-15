@@ -1,7 +1,15 @@
 {
   "component": "UpgradeableOwnableProxy",
   "main_contract": "UpgradeableOwnableProxy",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UpgradeableOwnableProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x68145f3319f819b8e01dfa3c094fa8205e9efb9a",
       "is_proxy": true,
       "implementation_address": "0xbe8bb797eacfb39690a2a79b93745d0b849efb2c",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404028"
     },
     {
       "chain": "bsc",
@@ -20,7 +30,9 @@
       "address": "0xf92aba2a79dc133278de2cddb38db775a4b5b024",
       "is_proxy": true,
       "implementation_address": "0xfbfa6d26925862e63bd5fc2e323f57a3ca6fe65b",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404032"
     }
   ]
 }

@@ -1,138 +1,28 @@
 {
   "component": "HakkaRewardsVesting",
   "main_contract": "HakkaRewardsVesting",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 16,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HakkaRewardsVesting\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x022977346c7fbbe7c004cbb77e0583c1759e3bdc",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf4d1f9674c8e9f29a69dc2e6f841292e675b7977",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x25a1f8f0b666e5c17e91cf9f5322aad0780b588e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x3d14c8cee44183232805a3e933937e35a8be8114",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x459fb73f0b9be0caa85fcbdf151eab2d1269823a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x4d5054708982e96f284d02c7a46f31d6f7291c56",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x51de1eef029b5cc1ef359e62aa98101f56f29be6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x5dd2777c42c34ed155fd3cc063a956d03f92448f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x6fa4970ae0a9fb50f7d8026830d2526db7e7e201",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x87c2829ccd44d2a96e76e1d3bf56d504d5cb1536",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x9933ad4d38702cdc28c5db2f421f1f02cf530780",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xb9407bd5086b77e5fbd2e8a2c53778ccfac356e4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xc231f05dcaf9a87f1706fc8c3b54ba8fc3b05ee1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xc7596671f9aca915b9c73c428f264f9aa2405db3",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xda54678fd782a162a2bae0ea9e250a325c4f6de9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xf55eabb6b9460badb569b5bff0ad0efdf2264d5a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xf8b5351f4bcbf6321cab7911d775da3fac3b5410",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394890"
     }
   ]
 }

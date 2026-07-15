@@ -1,8 +1,16 @@
 {
   "component": "PythRandomnessProbe",
   "main_contract": "PythRandomnessProbe",
+  "source_entry_count": 7,
   "source_file_count": 7,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PythRandomnessProbe\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,19 @@
       "address": "0x4b4062def3979c0795335ee48d65b4d973fa58b7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc551b6a13f5d247352d786a7ebb24f26a0119180",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
@@ -20,7 +40,9 @@
       "address": "0x158bb6816e190e8f19635a00084dc1b38b65f859",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

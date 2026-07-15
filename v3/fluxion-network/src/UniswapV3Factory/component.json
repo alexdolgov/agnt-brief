@@ -1,0 +1,30 @@
+{
+  "component": "UniswapV3Factory",
+  "main_contract": "UniswapV3Factory",
+  "source_entry_count": 33,
+  "source_file_count": 33,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UniswapV3Factory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Fluxion-Exchange/Security-Programs/blob/main/Fluxion-Exchange%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xf883162ed9c7e8ef604214c964c678e40c9b737c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

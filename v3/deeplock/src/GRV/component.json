@@ -1,7 +1,15 @@
 {
   "component": "GRV",
   "main_contract": "GRV",
+  "source_entry_count": 4,
   "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GRV\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x1337ace33c2b3fc17d85f33dbd0ed73a896148b5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

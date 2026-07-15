@@ -1,8 +1,16 @@
 {
   "component": "SportsAMMV2RiskManager",
   "main_contract": "SportsAMMV2RiskManager",
+  "source_entry_count": 14,
   "source_file_count": 14,
-  "deployment_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SportsAMMV2RiskManager\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,47 +20,9 @@
       "address": "0x0ed59ac63a7fad0e87fb2dbd17a2e15f36905778",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x2234ab17ab462ac4fe18c15d3a25ab9689d01fc6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x2980af3d701e6eafa3c3165c8566edb0bafb06d8",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x32077d9f7bf3994f3a0e905b3eeff34410eca9a5",
-      "is_proxy": true,
-      "implementation_address": "0x7cb330c48cb4501e3ae50b077d80ba68fd0d1abb",
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xa624147b463aec4aa5a51a03e23bf88bb9739d4a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xf9581c6ac16444f47addb6549668d83c34f2a5a2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",
@@ -60,7 +30,9 @@
       "address": "0xe58ba556bc3871d8add080e85db0b4e7f7103949",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
@@ -68,7 +40,9 @@
       "address": "0x55a2a341508f23cf2466b8646c226a21a1c581d0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

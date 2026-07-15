@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.17;
 
 /// @title PausableVault
@@ -135,7 +135,6 @@ abstract contract PausableVault {
         if (!withdrawalPaused()) {
             _pauseWithdrawal();
         }
-        emit Paused(msg.sender);
     }
 
     /**
@@ -152,7 +151,6 @@ abstract contract PausableVault {
         if (withdrawalPaused()) {
             _unpauseWithdrawal();
         }
-        emit Unpaused(msg.sender);
     }
 
     /**
@@ -164,7 +162,7 @@ abstract contract PausableVault {
      */
     function _pauseDeposit() internal virtual whenDepositNotPaused {
         _depositsPaused = true;
-        emit Paused(msg.sender);
+        emit DepositsPaused(msg.sender);
     }
 
     /**
@@ -176,7 +174,7 @@ abstract contract PausableVault {
      */
     function _unpauseDeposit() internal virtual whenDepositPaused {
         _depositsPaused = false;
-        emit Unpaused(msg.sender);
+        emit DepositsUnpaused(msg.sender);
     }
 
     /**
@@ -188,7 +186,7 @@ abstract contract PausableVault {
      */
     function _pauseWithdrawal() internal virtual whenWithdrawalNotPaused {
         _withdrawalPaused = true;
-        emit Paused(msg.sender);
+        emit WithdrawalsPaused(msg.sender);
     }
 
     /**
@@ -200,6 +198,6 @@ abstract contract PausableVault {
      */
     function _unpauseWithdrawal() internal virtual whenWithdrawalPaused {
         _withdrawalPaused = false;
-        emit Unpaused(msg.sender);
+        emit WithdrawalsUnpaused(msg.sender);
     }
 }

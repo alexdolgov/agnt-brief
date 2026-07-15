@@ -16,13 +16,10 @@ contract SpeedMarket {
         uint64 _strikeTime;
         int64 _strikePrice;
         uint64 _strikePricePublishTime;
-        ISpeedMarketsAMM.OracleSource _oracleSource;
         Direction _direction;
-        address _collateral;
         uint _buyinAmount;
         uint _safeBoxImpact;
         uint _lpFee;
-        uint _payout;
     }
 
     enum Direction {
@@ -35,11 +32,9 @@ contract SpeedMarket {
     uint64 public strikeTime;
     int64 public strikePrice;
     uint64 public strikePricePublishTime;
-    ISpeedMarketsAMM.OracleSource public oracleSource;
     Direction public direction;
     uint public buyinAmount;
-    uint public payout;
-    address public collateral;
+
     bool public resolved;
     int64 public finalPrice;
     Direction public result;
@@ -48,6 +43,7 @@ contract SpeedMarket {
 
     uint public safeBoxImpact;
     uint public lpFee;
+
     uint256 public createdAt;
 
     /* ========== CONSTRUCTOR ========== */
@@ -63,14 +59,11 @@ contract SpeedMarket {
         strikeTime = params._strikeTime;
         strikePrice = params._strikePrice;
         strikePricePublishTime = params._strikePricePublishTime;
-        oracleSource = params._oracleSource;
         direction = params._direction;
         buyinAmount = params._buyinAmount;
         safeBoxImpact = params._safeBoxImpact;
         lpFee = params._lpFee;
-        collateral = params._collateral;
-        payout = params._payout;
-        IERC20Upgradeable(params._collateral).approve(params._speedMarketsAMM, type(uint256).max);
+        speedMarketsAMM.sUSD().approve(params._speedMarketsAMM, type(uint256).max);
         createdAt = block.timestamp;
     }
 
@@ -87,16 +80,11 @@ contract SpeedMarket {
         } else {
             result = direction == Direction.Up ? Direction.Down : Direction.Up;
         }
-        uint payoutToTransfer = IERC20Upgradeable(collateral).balanceOf(address(this));
 
         if (direction == result) {
-            if (payoutToTransfer > payout) {
-                IERC20Upgradeable(collateral).safeTransfer(address(speedMarketsAMM), payoutToTransfer - payout);
-                payoutToTransfer = payout;
-            }
-            IERC20Upgradeable(collateral).safeTransfer(user, payoutToTransfer);
+            speedMarketsAMM.sUSD().safeTransfer(user, speedMarketsAMM.sUSD().balanceOf(address(this)));
         } else {
-            IERC20Upgradeable(collateral).safeTransfer(address(speedMarketsAMM), payoutToTransfer);
+            speedMarketsAMM.sUSD().safeTransfer(address(speedMarketsAMM), speedMarketsAMM.sUSD().balanceOf(address(this)));
         }
 
         emit Resolved(finalPrice, result, direction == result);

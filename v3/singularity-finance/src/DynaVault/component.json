@@ -1,90 +1,38 @@
 {
   "component": "DynaVault",
   "main_contract": "DynaVault",
-  "source_file_count": 36,
-  "deployment_count": 10,
+  "source_entry_count": 35,
+  "source_file_count": 35,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DynaVault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x0c8886b089b303d183bdc4204d06559efc57270f",
+      "address": "0x9a3fba281b004882497d29b863c244619f2574b7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x1bf9785c13b9bd7a567470544035a27fdf68e2f1",
+      "address": "0xc6b3345612ad9f385d5c8ffd1ece98f7318ecf52",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x1cda1ffdfac2936765101ca24db187e48a9e5aea",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x22d298c6ca8c1d102a11046966ad547d1f54f3cc",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x4314e0a6e4bbe98426541e211208075886950008",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x67b93f6676bd1911c5fae7ffa90fff5f35e14dcd",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x6beb9298743b4f70c7bb607d222d501442e1a937",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x8bb92d108d957810fc048d8aee346336925d507e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xbba62ab384db1cbf43410f841a89679860a1b6ae",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xea7975c2fec1ae9e3058bb5f99d8e26dbc816811",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

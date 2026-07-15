@@ -59,6 +59,10 @@ contract TaxModule is Ownable {
 
   mapping(address => TaxParams) public taxParams;
 
+  mapping(address token => address yieldToken) public tokenToYieldToken;
+
+  address public yieldManager;
+
   constructor(address _fyde) Ownable(msg.sender) {
     FYDE = IFyde(_fyde);
   }
@@ -85,6 +89,17 @@ contract TaxModule is Ownable {
     for (uint256 i; i < _assets.length; ++i) {
       taxParams[_assets[i]] = _taxParams[i];
     }
+  }
+
+  function setYieldManager(address _yieldManager) external onlyOwner {
+    yieldManager = _yieldManager;
+  }
+
+  function registerYieldToken(address _baseToken, address _yieldToken) external {
+    if (msg.sender != yieldManager) revert Unauthorized();
+    tokenToYieldToken[_baseToken] = _yieldToken;
+    // set taxparams to nonzero for taxfree deposit
+    taxParams[_yieldToken] = TaxParams(1, 1);
   }
 
   /*//////////////////////////////////////////////////////////////
@@ -381,9 +396,11 @@ contract TaxModule is Ownable {
     view
     returns (uint256)
   {
+    address yToken = tokenToYieldToken[_asset];
+    uint256 yTokenAmount = yToken == address(0x0) ? 0 : FYDE.totalAssetAccounting(yToken);
     return _protocolAUM == 0
       ? 0
-      : (1e20 * FYDE.totalAssetAccounting(_asset) / _protocolAUM * _usdQuote / PREC);
+      : (1e20 * (FYDE.totalAssetAccounting(_asset) + yTokenAmount) / _protocolAUM * _usdQuote / PREC);
   }
 
   function _getTargetConcentrationDeposit(address _asset) internal view returns (uint256) {

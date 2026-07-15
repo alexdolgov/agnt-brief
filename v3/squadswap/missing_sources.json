@@ -1,0 +1,49 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "squadswap",
+  "missing": [
+    {
+      "chain_id": 10,
+      "chain": "optimism",
+      "address": "0x16fbb33001d74e4fb6d1423189a74f89da058788",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 10,
+      "chain": "optimism",
+      "address": "0x53616b1baa9e224092bbaf64f2fb5da2b11dd62a",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 10,
+      "chain": "optimism",
+      "address": "0x84ff9b09b56c3858c38cc7aa678fabb73b9f3898",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 10,
+      "chain": "optimism",
+      "address": "0x89c0619e7a798309193438b3cff11f1f31266711",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 10,
+      "chain": "optimism",
+      "address": "0xb124a847306f695e3ad44bd62a6356e75683212e",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 10,
+      "chain": "optimism",
+      "address": "0xb6171582c75421a740dcc15e4d873a34cb2ebb48",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 10,
+      "chain": "optimism",
+      "address": "0xcf2a34727c53be4ae5f6fed10a00a64e6f80ae3b",
+      "canonical_source_address": null
+    }
+  ]
+}

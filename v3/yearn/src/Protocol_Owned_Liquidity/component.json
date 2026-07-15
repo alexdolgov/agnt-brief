@@ -1,10 +1,21 @@
 {
   "component": "Protocol_Owned_Liquidity",
   "main_contract": "Protocol Owned Liquidity",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Protocol_Owned_Liquidity\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/mixbytes/audits_public/blob/master/Yearn%20Finance/yETH-bootstrap/Yearn%20Finance%20yETH-bootstrap%20Security%20Audit%20Report.pdf",
+    "https://github.com/yearn/yearn-security/blob/master/audits/20230711_MixBytes_yeth-bootstrap/Yearn%20Finance%20yETH-bootstrap%20Security%20Audit%20Report%20-%20Mixbytes.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +23,9 @@
       "address": "0x929401e30aab6bd648def2d30ff44952bab04478",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405118"
     }
   ]
 }

@@ -12,6 +12,7 @@ import { Errors } from "src/utils/Errors.sol";
 import { ERC4626DestinationVault } from "src/vault/ERC4626DestinationVault.sol";
 import { SafeERC20 } from "openzeppelin-contracts/token/ERC20/utils/SafeERC20.sol";
 import { EnumerableSet } from "openzeppelin-contracts/utils/structs/EnumerableSet.sol";
+import { IDistributor } from "src/interfaces/external/merkl/IDistributor.sol";
 
 /// @title Destination Vault to interact with Morpho 4626 vaults
 contract MorphoDestinationVault is ERC4626DestinationVault {
@@ -100,6 +101,17 @@ contract MorphoDestinationVault is ERC4626DestinationVault {
     /// @notice Returns all registered claimable assets
     function getClaimableAssets() external view returns (address[] memory claimable) {
         claimable = registeredClaimableAssets.values();
+    }
+
+    /// @notice Allow a trusted operator to claim on behalf of this account
+    /// @dev Does not emit state change events
+    /// @param distributor Token distributor we'll call the fn on
+    /// @param trustedOperator Account allowed to claim on behalf of the Destination
+    function toggleMerklOperator(
+        address distributor,
+        address trustedOperator
+    ) external hasRole(Roles.DESTINATION_MERKLE_CLAIM_MANAGER) {
+        IDistributor(distributor).toggleOperator(address(this), trustedOperator);
     }
 
     /// @notice Used to claim rewards distributed via merkle root for Morpho

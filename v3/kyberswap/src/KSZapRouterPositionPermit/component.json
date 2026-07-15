@@ -1,7 +1,15 @@
 {
   "component": "KSZapRouterPositionPermit",
   "main_contract": "KSZapRouterPositionPermit",
+  "source_entry_count": 36,
   "source_file_count": 36,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/KSZapRouterPositionPermit\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x638d935eecd1646991a8b2ce9c2a2b7b840ccabb",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395874"
     }
   ]
 }

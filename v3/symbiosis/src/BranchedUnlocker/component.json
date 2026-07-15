@@ -1,0 +1,60 @@
+{
+  "component": "BranchedUnlocker",
+  "main_contract": "BranchedUnlocker",
+  "source_entry_count": 92,
+  "source_file_count": 92,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BranchedUnlocker\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/depository/Symbiosis%20Depository%20Audit%20-%20Decurity.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x22278fe9a52a8ccb3a914f3f61bb6c70fe5fd9a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400010"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x84deb7fc54a1f734aef6ddc0c0f74182bdf941a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400015"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcd108089057dd0e9f841eb9e00fcf5105534341e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400022"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xec148f80d699b0eaf65dd5438cde4b380ded8a3b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400027"
+    }
+  ]
+}

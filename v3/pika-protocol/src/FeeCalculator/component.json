@@ -1,106 +1,28 @@
 {
   "component": "FeeCalculator",
   "main_contract": "FeeCalculator",
-  "source_file_count": 11,
-  "deployment_count": 12,
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FeeCalculator\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x0192fad4f58bce8e9c833808de67625435d04dc0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x22b23fa2bafc12774490d47f1c9f7205d668ad14",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x5f417a5460590f37df878084abb995bfa6fdc380",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x7902b9ac56ad10d71683324b938a591e012ed4dd",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x7d29bff5b90987314b7ee5026b4d0fac1f993e35",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x8d65d220c5a73bf61abf07ea79c6c89aed4208c9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x918ed9e3aaf3bb2a39055d3eeb745f4ddf7396e8",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xbddfc30b212fae5770c92b22194c35cb6a8ad7ba",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xc61030609aa87223c9acae126afbe36303dc67af",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xe15b5b76c1182d88a2fdd6cbb1bd3ba9d097bbf2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
       "address": "0xe3451b170806aab3e24b5cd03a331c1ccdb4d7c1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xf201ce7490cd14993b232258ad9dbc5dff41fdbe",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397808"
     }
   ]
 }

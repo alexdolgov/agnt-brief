@@ -1,10 +1,20 @@
 {
   "component": "SatlayerPool-4",
   "main_contract": "SatlayerPool",
+  "source_entry_count": 17,
   "source_file_count": 17,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SatlayerPool-4\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/satlayer/deposit-contract-public/blob/main/audits/SatLayer%20Pool%20-%20Zellic%20Audit%20Report%20(Patch).pdf"
+  ],
   "addresses": [
     {
       "chain": "chain-80094",
@@ -12,7 +22,9 @@
       "address": "0x50198b5e1330753f167f6e0544e4c8af829bc99d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398671"
     }
   ]
 }

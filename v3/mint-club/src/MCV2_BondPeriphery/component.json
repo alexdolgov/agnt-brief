@@ -1,8 +1,16 @@
 {
   "component": "MCV2_BondPeriphery",
   "main_contract": "MCV2_BondPeriphery",
+  "source_entry_count": 5,
   "source_file_count": 5,
-  "deployment_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MCV2_BondPeriphery\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,9 @@
       "address": "0x7b09b728ee8c6a714dc3f10367b5df9b217fe633",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "optimism",
@@ -20,15 +30,9 @@
       "address": "0x841a2bd2fc97dcb865b4ddb352540148bad2db09",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x364e0f814a2c5524d26e82937815c574f8bb86c1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "chain-130",
@@ -36,7 +40,9 @@
       "address": "0x621c335b4bd8f2165e120dc70d3afcafc6628681",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "polygon",
@@ -44,7 +50,9 @@
       "address": "0x6c0e6c7f1c97bb4ba7df001d30a939425d9846f1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",
@@ -52,7 +60,9 @@
       "address": "0x492c412369db76c9cdd9939e6c521579301473a3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",
@@ -60,7 +70,9 @@
       "address": "0xa3dfa8828a7a8fa7d8539884b168526b4602f22f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
@@ -68,7 +80,9 @@
       "address": "0x5fbdc7941a735685eb08c51776ba77098ebe1eb7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "avalanche",
@@ -76,7 +90,9 @@
       "address": "0x5dff49313d616c30599f6007b04bab71619c5687",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "blast",
@@ -84,7 +100,9 @@
       "address": "0x5dff49313d616c30599f6007b04bab71619c5687",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

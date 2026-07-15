@@ -1,7 +1,15 @@
 {
   "component": "OCR_Cycle",
   "main_contract": "OCR_Cycle",
-  "source_file_count": 23,
+  "source_entry_count": 19,
+  "source_file_count": 19,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OCR_Cycle\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x12e46e69623350ab3ae6d52cab86a152a078ad6f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401544"
     }
   ]
 }

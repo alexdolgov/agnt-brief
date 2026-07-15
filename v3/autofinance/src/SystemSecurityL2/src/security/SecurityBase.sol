@@ -3,7 +3,7 @@
 pragma solidity ^0.8.24;
 
 import { IAccessController } from "src/interfaces/security/IAccessController.sol";
-import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
+import { Errors } from "src/utils/Errors.sol";
 
 contract SecurityBase {
     IAccessController public immutable accessController;
@@ -26,7 +26,7 @@ contract SecurityBase {
     modifier hasRole(
         bytes32 role
     ) {
-        if (!accessController.hasRole(role, msg.sender)) revert AutopilotErrors.AccessDenied();
+        if (!accessController.hasRole(role, msg.sender)) revert Errors.AccessDenied();
         _;
     }
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { Roles } from "src/libs/Roles.sol";
 import { Errors } from "src/utils/Errors.sol";
@@ -48,16 +48,15 @@ contract DestinationVaultFactory is SystemComponent, IDestinationVaultFactory, S
     }
 
     /// @inheritdoc IDestinationVaultFactory
-    function setDefaultRewardRatio(
-        uint256 rewardRatio
-    ) public hasRole(Roles.DESTINATION_VAULT_FACTORY_MANAGER) {
+    function setDefaultRewardRatio(uint256 rewardRatio) public hasRole(Roles.DESTINATION_VAULT_FACTORY_MANAGER) {
         _setDefaultRewardRatio(rewardRatio);
     }
 
     /// @inheritdoc IDestinationVaultFactory
-    function setDefaultRewardBlockDuration(
-        uint256 blockDuration
-    ) public hasRole(Roles.DESTINATION_VAULT_FACTORY_MANAGER) {
+    function setDefaultRewardBlockDuration(uint256 blockDuration)
+        public
+        hasRole(Roles.DESTINATION_VAULT_FACTORY_MANAGER)
+    {
         _setDefaultRewardBlockDuration(blockDuration);
     }
 
@@ -101,17 +100,13 @@ contract DestinationVaultFactory is SystemComponent, IDestinationVaultFactory, S
         systemRegistry.destinationVaultRegistry().register(vault);
     }
 
-    function _setDefaultRewardRatio(
-        uint256 rewardRatio
-    ) private {
+    function _setDefaultRewardRatio(uint256 rewardRatio) private {
         defaultRewardRatio = rewardRatio;
 
         emit DefaultRewardRatioSet(rewardRatio);
     }
 
-    function _setDefaultRewardBlockDuration(
-        uint256 blockDuration
-    ) private {
+    function _setDefaultRewardBlockDuration(uint256 blockDuration) private {
         defaultRewardBlockDuration = blockDuration;
 
         emit DefaultBlockDurationSet(blockDuration);

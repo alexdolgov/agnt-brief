@@ -723,6 +723,8 @@ contract AutopoolETH is
     ) public nonReentrant whenNotPaused trackNavOps {
         _ensureCallerHasRole(Roles.SOLVER);
 
+        emit RebalanceStarted(address(receiver), rebalanceParams);
+
         AutopoolState storage $ = AutopoolStorage.load();
         bytes memory hooks = $.getHookBytes();
 
@@ -747,6 +749,8 @@ contract AutopoolETH is
             uint256(HookFunctionIndex.onRebalanceComplete),
             abi.encodeCall(IStrategyHook.onRebalanceComplete, (params, msg.sender))
         );
+
+        emit RebalanceCompleted(updatedAssets);
     }
 
     /// @notice Returns the name of the token

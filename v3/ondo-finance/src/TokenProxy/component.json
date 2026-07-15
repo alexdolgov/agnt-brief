@@ -1,7 +1,15 @@
 {
   "component": "TokenProxy",
   "main_contract": "TokenProxy",
+  "source_entry_count": 9,
   "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TokenProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x5be26527e817998a7206475496fde1e68957c5a6",
       "is_proxy": true,
       "implementation_address": "0x3b355a7a25e75a320f631f9736afb3dcc9f3ef66",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402017"
     }
   ]
 }

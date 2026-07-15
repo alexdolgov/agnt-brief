@@ -1,7 +1,15 @@
 {
   "component": "BabyBearsONFTAdapter",
   "main_contract": "BabyBearsONFTAdapter",
-  "source_file_count": 42,
+  "source_entry_count": 38,
+  "source_file_count": 38,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BabyBearsONFTAdapter\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x6eea9a804ec883abc9734d1f97a453502f3ab4ef",
+      "address": "0xc48c54e92d135b356dd0cbf50f803a8c8d38968b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392039"
     }
   ]
 }

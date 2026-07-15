@@ -1,0 +1,36 @@
+{
+  "component": "TimelockConfig",
+  "main_contract": "TimelockConfig",
+  "source_entry_count": 83,
+  "source_file_count": 83,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TimelockConfig\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/gmx-io/gmx-synthetics/blob/main/audits/guardian/2025-07-29_GMX_Crosschain_V2.2_2_report.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/main/audits/guardian/2025-07-29_GMX_Crosschain_V2.2_4_report.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/main/audits/guardian/2025-11-04_GMX_Fee_Automations_report.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/main/audits/guardian/2026-06-16_GMX_V2_Review_Report.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/updates/audits/guardian/2025-07-29_GMX_Crosschain_V2.2_2_report.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/updates/audits/guardian/2025-07-29_GMX_Crosschain_V2.2_4_report.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/updates/audits/guardian/2025-11-04_GMX_Fee_Automations_report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x37e1aeb6118b0106810d2ef7662875c414e39ca4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403094"
+    }
+  ]
+}

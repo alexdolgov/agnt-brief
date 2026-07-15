@@ -1,18 +1,28 @@
 {
   "component": "ReqTokenProxy-2",
   "main_contract": "ReqTokenProxy",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ReqTokenProxy-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xc4d1e935f02a44d44985e6b1c0ee1ee616fc146a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x26d0e4707af1c1daad8e9ba21b99cda7fd24c40b",
+      "is_proxy": true,
+      "implementation_address": "0xbb9ce7c152f9d6fbbebd90e9b06d021f64e6052b",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

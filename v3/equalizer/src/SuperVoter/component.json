@@ -1,34 +1,28 @@
 {
   "component": "SuperVoter",
   "main_contract": "SuperVoter",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SuperVoter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0x107240e7ab30f602ebc792e30d6579b0b3a0d008",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x2792f2dafb583e034124f7196ad8c019c2fa62cd",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
       "address": "0xb6dfc39b3270f059f32eb9d680d994cdecfad93f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394128"
     }
   ]
 }

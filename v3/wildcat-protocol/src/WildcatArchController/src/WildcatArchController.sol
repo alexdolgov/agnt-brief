@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: Apache-2.0
+// SPDX-License-Identifier: Apache-2.0 WITH LicenseRef-Commons-Clause-1.0
 pragma solidity >=0.8.20;
 
 import { EnumerableSet } from 'openzeppelin/contracts/utils/structs/EnumerableSet.sol';
@@ -235,8 +235,6 @@ contract WildcatArchController is SphereXConfig, Ownable {
   function getBlacklistedAssetsCount() external view returns (uint256) {
     return _assetBlacklist.length();
   }
-
-
 
   /* ========================================================================== */
   /*                            Controller Factories                            */

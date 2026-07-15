@@ -1,138 +1,31 @@
 {
   "component": "ERC1967Proxy",
   "main_contract": "ERC1967Proxy",
+  "source_entry_count": 71,
   "source_file_count": 71,
-  "deployment_count": 16,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Proxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://blog.openzeppelin.com/across-v3-incremental-audit?hs_preview=lerUtAnm-157915368784",
+    "https://www.openzeppelin.com/news/uma-across-v2-audit"
+  ],
   "addresses": [
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x038e789392f8b3f5df8e5974ea25575ba9d63730",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c7bcd6e7de5423a257d81b442095a1a6ced35c5",
       "is_proxy": true,
-      "implementation_address": "0xfcdfac59ad1f6391698c2999da612b7454179874",
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x18569278f3a7ef1d73e36c5ef30f37d366580c7d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x39e7ffa77a4ac4d34021c6bbe4c8778d47f684f2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x477f34de55874729fd4f7e60b121338e7aa95145",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x4fba8542080ffb82a12e3b596125b1b02d213424",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x57825d1bf50ad918b39563a57070b0915464d1a8",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x5be04e53b465c6fd89ecff3d36ddf666d198e31a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x7e63a5f1a8f0b4d0934b2f2327daed3f6bb2ee75",
-      "is_proxy": true,
-      "implementation_address": "0x9187be534efeb258933ef7eff4b67fe80209afcd",
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x861e127036b28d32f3777b4676f6bbb9e007d195",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x8eaeff0b5a55268e6a5076d65f160c517efd5795",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x9187be534efeb258933ef7eff4b67fe80209afcd",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0xad7c5516b25661e0a204646b08024cd82ffe6c48",
-      "is_proxy": true,
-      "implementation_address": "0x5be04e53b465c6fd89ecff3d36ddf666d198e31a",
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0xd6fc66498ae366892bda974fd4ef903ca7202f76",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0xe8de4bce27f6214dce18d8a7629f233c66a97b84",
-      "is_proxy": true,
-      "implementation_address": "0x39e7ffa77a4ac4d34021c6bbe4c8778d47f684f2",
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0xef4998e4cda2232c5f1824eac8c5060f28bfaeec",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0xfcdfac59ad1f6391698c2999da612b7454179874",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "implementation_address": "0x5e5b726c81f43b953a62ad87e2835c85c4d9dd3b",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390534"
     }
   ]
 }

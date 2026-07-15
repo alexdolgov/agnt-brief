@@ -1,8 +1,16 @@
 {
   "component": "Universe",
   "main_contract": "Universe",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Universe\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/AugurProject/augur-audits/blob/master/augur-core/ChainSecurity%20-%20Augur%20Core%20v1.pdf",
@@ -17,15 +25,9 @@
       "address": "0x49244bd018ca9fd1f06ecc07b9e9de773246e5aa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xfbcd5e4dbf9e95ce56d55cb3a4fd72415ca400ff",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391425"
     }
   ]
 }

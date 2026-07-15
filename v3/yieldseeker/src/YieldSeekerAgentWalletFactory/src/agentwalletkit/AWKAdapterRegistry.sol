@@ -1,10 +1,25 @@
 // SPDX-License-Identifier: MIT
+//
+//      _                    _ __        __    _ _      _   _  ___ _
+//     / \   __ _  ___ _ __ | |\ \      / /_ _| | | ___| |_| |/ (_) |_
+//    / _ \ / _` |/ _ \ '_ \| __\ \ /\ / / _` | | |/ _ \ __| ' /| | __|
+//   / ___ \ (_| |  __/ | | | |_ \ V  V / (_| | | |  __/ |_| . \| | |_
+//  /_/   \_\__, |\___|_| |_|\__| \_/\_/ \__,_|_|_|\___|\__|_|\_\_|\__|
+//          |___/
+//
+//  Build verifiably secure onchain agents
+//  https://agentwalletkit.tokenpage.xyz
+//
+//  For technical queries or guidance contact @krishan711
+//
 pragma solidity 0.8.28;
 
 import {AWKErrors} from "./AWKErrors.sol";
 import {AccessControl} from "@openzeppelin/contracts/access/AccessControl.sol";
 import {Pausable} from "@openzeppelin/contracts/utils/Pausable.sol";
 import {EnumerableMap} from "@openzeppelin/contracts/utils/structs/EnumerableMap.sol";
+
+error TargetNotRegistered(address target);
 
 contract AWKAdapterRegistry is AccessControl, Pausable {
     using EnumerableMap for EnumerableMap.AddressToAddressMap;
@@ -84,7 +99,7 @@ contract AWKAdapterRegistry is AccessControl, Pausable {
      */
     function removeTarget(address target) external onlyRole(EMERGENCY_ROLE) {
         (bool exists, address adapter) = _targetToAdapter.tryGet(target);
-        if (!exists) revert AWKErrors.TargetNotRegistered(target);
+        if (!exists) revert TargetNotRegistered(target);
         _targetToAdapter.remove(target);
         emit TargetRemoved(target, adapter);
     }

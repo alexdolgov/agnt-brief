@@ -1,100 +1,117 @@
 # Agentic Audit Brief: Taiko Bridge
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 23 across 6 audit(s)
+- Eligible audit results: 8 (6 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Taiko Bridge (`taiko-bridge`)
 - Website: [https://bridge.taiko.xyz/](https://bridge.taiko.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:59.435Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 42 unique implementations (90 raw deployments)
+- Contract surface: 27 unique implementations (27 raw deployments)
+- Coverage basis: 6/7 confirmed own live verified implementations (85.7%); conservative 85.7% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $11,772,373.58
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Canonical Bridge. Structurally: 38 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 1 ERC721 NFT, 1 ERC1155 multi-token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Taiko Bridge. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 4 functional families. Its contracts share 7 common project-authored base contract(s) (addressmanager, rollupaddresscache, addresscache). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 13 contract row(s) across ethereum. Structural roles: 12 unclassified, 1 core. 1 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 13
+- Structural roles: unclassified (12), core (1)
+- Contract kinds: contract (13)
+- Detected standards: erc1967proxy (1), ownable (1), ownable2step (1), pausable (1)
+- Frameworks: openzeppelin (1), openzeppelin-upgradeable (1)
+- Upgradeable-pattern rows: 1
+
+## Fork Analysis
+
+0 of 1 contracts are derived from known codebases. 1 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x10dea6...54d800`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 208; live-surface contracts included: 77 (69 live, 8 unknown).
-- Excluded by liveness: 131 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 13; live-surface contracts included: 13 (7 live, 6 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 8/8 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/34 (0.0%)
-- Deployed-live implementations: 34 of 42 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/34
-- Verified + Unaudited implementations: 34
+- Coverage of address-book-owned deployed-live implementations: 6/7 (85.7%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 8 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 19 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 7
+- Deployed-live implementations: 8 of 27 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 6/7
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 8
-- Unique implementations: 42
-- Raw deployments: 90
+- Unverified implementations: 1
+- Unique implementations: 27
+- Raw deployments: 27
 - Audits discovered: 8 (8 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 0
+- Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025 (aging)
-- Audit staleness (calendar age): 0 fresh, 2 aging, 3 stale, 3 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
-- Tier 1 coverage: No Tier 1 coverage
+- Latest audit: 2026-01 (fresh)
+- Audit staleness (calendar age): 1 fresh, 3 aging, 4 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 7 match-unverified
+- Tier 1 coverage: 85.7% (Code4rena, OpenZeppelin)
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| OpenZeppelin | Tier 1 | 6 | 85.7% | 2026-01 |
+| Quill Audits | Tier 2 | 5 | 71.4% | 2024-02 |
+| Sigma Prime | Tier 2 | 5 | 71.4% | 2024-02 |
+| Code4rena | Tier 1 | 3 | 42.9% | 2024-03 |
+| Halborn | Tier 2 | 1 | 14.3% | 2025-03 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (6)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| MainnetBridge | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257940 | `0xd60247...ddd8ec` | ✅ Audited |
+| MainnetERC1155Vault | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257941 | `0xaf1459...881702` | ✅ Audited |
+| MainnetERC20Vault | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257938 | `0x996282...4415ab` | ✅ Audited |
+| MainnetERC721Vault | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257942 | `0x0b470d...f419aa` | ✅ Audited |
+| QuotaManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257943 | `0x91f671...22f29e` | ✅ Audited |
+| SignalService | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257939 | `0x9e0a24...35c77c` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (34)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AssignmentHook | unknown | ethereum | n/a | 2 deployments: ethereum [`0x537a2f...1796f6`](./contracts/ethereum-1/0x537a2f0d3a5879b41bcb5a2afe2ea5c4961796f6/); ethereum `0xf77cbf...5e53f2` | ⚠️ Unaudited |
-| AutomataDcapV3Attestation | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5f73f0...84e0b5`](./contracts/ethereum-1/0x5f73f0adc7daa6134fe751c4a78d524f9384e0b5/); ethereum `0x8d7c95...7ca8a3` | ⚠️ Unaudited |
-| BridgedERC1155 | unknown | ethereum | n/a | 3 deployments: ethereum [`0x39e4c1...42791d`](./contracts/ethereum-1/0x39e4c1214e733639d059979079a151911e42791d/); ethereum `0x3c9096...9c2c40`; ethereum `0xe7782d...0d689d` | ⚠️ Unaudited |
-| BridgedERC20 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x79bc0a...3653e3`](./contracts/ethereum-1/0x79bc0aada00fcf6e7ab514bfeb093b5fae3653e3/); ethereum `0xcc5d48...de7372` | ⚠️ Unaudited |
-| BridgedERC20V2 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x656661...09a2e1`](./contracts/ethereum-1/0x65666141a541423606365123ed280ab16a09a2e1/); ethereum `0x7714f5...860f8c` | ⚠️ Unaudited |
-| BridgedERC721 | unknown | ethereum | n/a | 2 deployments: ethereum [`0xc33109...6a1bf7`](./contracts/ethereum-1/0xc3310905e2bc9cfb198695b75ef3e5b69c6a1bf7/); ethereum `0xc4096e...c12de7` | ⚠️ Unaudited |
-| ERC1155Vault | unknown | ethereum | n/a | 5 deployments: ethereum [`0x01329a...2332fa`](./contracts/ethereum-1/0x01329a1cde2509421cbe99dd3feb3c1b212332fa/); ethereum `0x097bbb...a47dc3`; ethereum `0x7748da...3c6396`; ethereum `0xca9288...1a59c8`; ethereum `0xd90b5f...1cdcfe` | ⚠️ Unaudited |
-| ERC20Vault | unknown | ethereum | n/a | 7 deployments: ethereum [`0x15d9f7...4a4bec`](./contracts/ethereum-1/0x15d9f7e12aea18daef5c651fbf97567cad4a4bec/); ethereum `0x4f750d...374ca1`; ethereum `0x540fe6...0b56ff`; ethereum `0x75b5e2...80eb22`; ethereum `0xa30378...722689`; ethereum `0xc722d9...b9bf8e`; ethereum `0xf8bdac...74e737` | ⚠️ Unaudited |
-| ERC721Vault | unknown | ethereum | n/a | 5 deployments: ethereum [`0x2dfef0...3163ed`](./contracts/ethereum-1/0x2dfef0339009ce10786fc118c883bb97af3163ed/); ethereum `0x41a7bd...1495fa`; ethereum `0x55b5df...4732c4`; ethereum `0x7dae64...b1ed5c`; ethereum `0xec0484...94f692` | ⚠️ Unaudited |
-| MainnetBridge | unknown | ethereum | n/a | 2 deployments: ethereum [`0x2705b1...67da2f`](./contracts/ethereum-1/0x2705b12a971da766a3f9321a743d61cead67da2f/); ethereum `0xd60247...ddd8ec` | ⚠️ Unaudited |
-| MainnetERC1155Vault | unknown | ethereum | n/a | 2 deployments: ethereum [`0x838ed4...99b9c8`](./contracts/ethereum-1/0x838ed469db456b67eb3b0b74d759be4da999b9c8/); ethereum `0xaf1459...881702` | ⚠️ Unaudited |
-| MainnetERC1155Vault | unknown | ethereum | n/a | 2 deployments: ethereum [`0x89c68b...85617b`](./contracts/ethereum-1/0x89c68bc7028f8b1e69a91382b0a4b1825085617b/); ethereum `0xec0fd4...e8674d` | ⚠️ Unaudited |
-| MainnetERC20Vault | unknown | ethereum | n/a | 2 deployments: ethereum [`0x76d73a...b3ab63`](./contracts/ethereum-1/0x76d73ac0a0c89bdb75068901d51431694ab3ab63/); ethereum `0x7acfbb...c3ff30` | ⚠️ Unaudited |
-| MainnetERC20Vault | unknown | ethereum | n/a | 2 deployments: ethereum [`0x996282...4415ab`](./contracts/ethereum-1/0x996282ca11e5deb6b5d122cc3b9a1fcaad4415ab/); ethereum `0xb20c8f...790e63` | ⚠️ Unaudited |
-| MainnetERC721Vault | unknown | ethereum | n/a | 2 deployments: ethereum [`0x0b470d...f419aa`](./contracts/ethereum-1/0x0b470dd3a0e1c41228856fb319649e7c08f419aa/); ethereum `0xa4c5c2...274c49` | ⚠️ Unaudited |
-| MainnetERC721Vault | unknown | ethereum | n/a | [`0xd961e3...5e3fec`](./contracts/ethereum-1/0xd961e3ef2d7df58cdc67bfd9055255430e5e3fec/) | ⚠️ Unaudited |
-| MainnetGuardianProver | unknown | ethereum | n/a | 3 deployments: ethereum [`0x579a8d...9e985c`](./contracts/ethereum-1/0x579a8d63a2db646284cbfe31fe5082c9989e985c/); ethereum `0xb866e9...4f7b47`; ethereum `0xe3d777...5f43ac` | ⚠️ Unaudited |
-| MainnetInbox | unknown | ethereum | n/a | [`0x06a9ab...feb19a`](./contracts/ethereum-1/0x06a9ab27c7e2255df1815e6cc0168d7755feb19a/) | ⚠️ Unaudited |
-| MainnetProverSet | unknown | ethereum | n/a | 2 deployments: ethereum [`0x280eab...fb55fa`](./contracts/ethereum-1/0x280eabfd252f017b78e15b69580f249f45fb55fa/); ethereum `0xa01d46...a9ddb3` | ⚠️ Unaudited |
-| MainnetProverSet | unknown | ethereum | n/a | 4 deployments: ethereum [`0x3022ed...5e8763`](./contracts/ethereum-1/0x3022ed0346cce0c08268c8ad081458afd95e8763/); ethereum `0x74828e...72d652`; ethereum `0xce5a11...f2b15a`; ethereum `0xd0d3f0...a4f30b` | ⚠️ Unaudited |
-| MainnetRollupAddressManager | unknown | ethereum | n/a | 2 deployments: ethereum [`0x0079a7...79b36d`](./contracts/ethereum-1/0x0079a79e5d8dda67029051d505e5a11de279b36d/); ethereum `0x579f40...290780` | ⚠️ Unaudited |
-| MainnetSgxVerifier | unknown | ethereum | n/a | 2 deployments: ethereum [`0x81dfea...7f0838`](./contracts/ethereum-1/0x81dfea931500cdcf0460e9ec45fa283a6b7f0838/); ethereum `0xb0f318...b31f81` | ⚠️ Unaudited |
-| MainnetSharedAddressManager | unknown | ethereum | n/a | 2 deployments: ethereum [`0xec1a9a...0c6449`](./contracts/ethereum-1/0xec1a9aa1c648f047752fe4eedb2c21ceab0c6449/); ethereum `0xef9eaa...65fbaa` | ⚠️ Unaudited |
-| PreconfRouter | adapter | ethereum | n/a | [`0xd5aa0e...a9688a`](./contracts/ethereum-1/0xd5aa0e20e8a6e9b04f080cf8797410fafaa9688a/) | ⚠️ Unaudited |
-| PreconfWhitelist | unknown | ethereum | n/a | [`0xfd0194...29b2ac`](./contracts/ethereum-1/0xfd019460881e6eec632258222393d5821029b2ac/) | ⚠️ Unaudited |
-| ProverSet | unknown | ethereum | n/a | 5 deployments: ethereum [`0x500735...9742b9`](./contracts/ethereum-1/0x500735343372dd6c9b84dbc7a75babf4479742b9/); ethereum `0x518845...953c9a`; ethereum `0x5d5282...0bf5fd`; ethereum `0xd0aee9...14d85f`; ethereum `0xd547ca...18f9d1` | ⚠️ Unaudited |
-| QuotaManager | unknown | ethereum | n/a | 2 deployments: ethereum [`0x91f671...22f29e`](./contracts/ethereum-1/0x91f67118dd47d502b1f0c354d0611997b022f29e/); ethereum `0xdb627b...5bbc64` | ⚠️ Unaudited |
-| Risc0Verifier | unknown | ethereum | n/a | 2 deployments: ethereum [`0x55902b...508edc`](./contracts/ethereum-1/0x55902b2d3df2a65370a89c86ae9dd71ecd508edc/); ethereum `0xefe30a...d9a2c3` | ⚠️ Unaudited |
-| SignalService | unknown | ethereum | n/a | [`0x9e0a24...35c77c`](./contracts/ethereum-1/0x9e0a24964e5397b566c1ed39258e21ab5e35c77c/) | ⚠️ Unaudited |
-| SP1Verifier | unknown | ethereum | n/a | 2 deployments: ethereum [`0x00c048...257c7b`](./contracts/ethereum-1/0x00c04822ba7aea1113b2a7a29bbcdca70e257c7b/); ethereum `0x1e1845...5a34bf` | ⚠️ Unaudited |
-| SP1Verifier | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5c44f2...8af452`](./contracts/ethereum-1/0x5c44f2239925b0d86d2bfee539f19cd0a08af452/); ethereum `0x5f5b83...6d7219` | ⚠️ Unaudited |
-| SP1Verifier | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6e520f...536fa8`](./contracts/ethereum-1/0x6e520fc0b5ca5b9903d88ca1076e8dd63a536fa8/); ethereum `0xd31868...07d08f` | ⚠️ Unaudited |
-| TierProviderV2 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x33879c...e931f2`](./contracts/ethereum-1/0x33879cdf01121dc7bce011b461e64d791ae931f2/); ethereum `0xf8254f...7fd52e` | ⚠️ Unaudited |
-| TokenUnlock | unknown | ethereum | n/a | 3 deployments: ethereum [`0x10edc3...cdefde`](./contracts/ethereum-1/0x10edc3b383dd87e675e88623ff1cbb09b3cdefde/); ethereum `0x816628...b898a7`; ethereum `0xd6a337...6ff5e7` | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| MainnetSharedAddressManager | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257944 | `0xef9eaa...65fbaa` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -108,67 +125,304 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (8)
+### ❓ Unverified (20)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x2e7797...fd61d6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x464cc5...ba3691` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x779b67...c316c7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x79895c...9042d9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x920598...ac6416` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd4f138...98c5e9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xdff555...f528ee` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe462cc...4f6a55` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0857cd...b59ab0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-257935 | `0x10dea6...54d800` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167000...000001` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167000...000002` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167000...000003` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167000...000004` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167000...000005` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167000...000006` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167013...000001` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167013...000002` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167013...000003` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167013...000004` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167013...000005` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x167013...000006` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4876e7...bdf768` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4c70b7...9ed811` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6a4cf6...18ed80` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7bbacc...e01b62` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x81ff6c...2c92c6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf3b83e...e963da` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [code4rena-2024-03-taiko-final-report.md](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/code4rena-2024-03-taiko-final-report.md) | Code4rena | Contest | 2024-03 | stale | Direct | n/a | 0 | n/a |
-| [halborn-taiko-alethia-protocol-audit-for-pacaya-upgrade.pdf](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/halborn-taiko-alethia-protocol-audit-for-pacaya-upgrade.pdf) | Halborn | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [halborn-taiko-dao-contract-audit.pdf](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/halborn-taiko-dao-contract-audit.pdf) | Halborn | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [open_zeppelin_taiko_protocol_audit_june_2024.pdf](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/open_zeppelin_taiko_protocol_audit_june_2024.pdf) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf) | OpenZeppelin | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [quill_audits_taiko_smart_contract_audit_report.pdf](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/quill_audits_taiko_smart_contract_audit_report.pdf) | Quill Audits | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
-| [sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf) | Sigma Prime | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [code4rena-2024-03-taiko-final-report.md](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/code4rena-2024-03-taiko-final-report.md) | Code4rena | Contest | 2024-03 | stale | Direct | contract_name | matched | 4 | 3 | 0 | 33 | high |
+| [halborn-taiko-alethia-protocol-audit-for-pacaya-upgrade.pdf](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/halborn-taiko-alethia-protocol-audit-for-pacaya-upgrade.pdf) | Halborn | Audit | 2025-03 | aging | Direct | contract_name | matched | 1 | 1 | 0 | 3 | high |
+| [halborn-taiko-dao-contract-audit.pdf](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/halborn-taiko-dao-contract-audit.pdf) | Halborn | Audit | 2025-02 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 13 | high |
+| [open_zeppelin_taiko_protocol_audit_june_2024.pdf](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/open_zeppelin_taiko_protocol_audit_june_2024.pdf) | OpenZeppelin | Audit | 2024-06 | stale | Direct | contract_name | matched | 7 | 6 | 0 | 60 | high |
+| [open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf) | OpenZeppelin | Audit | 2024-11 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 14 | high |
+| [open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf) | OpenZeppelin | Audit | 2026-01 | fresh | Direct | contract_name | matched | 1 | 1 | 0 | 31 | high |
+| [quill_audits_taiko_smart_contract_audit_report.pdf](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/quill_audits_taiko_smart_contract_audit_report.pdf) | Quill Audits | Audit | 2024-02 | stale | Direct | contract_name | matched | 5 | 5 | 0 | 6 | high |
+| [sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf](https://github.com/taikoxyz/taiko-mono/blob/main/packages/protocol/audit/sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf) | Sigma Prime | Audit | 2024-02 | stale | Direct | contract_name | matched | 5 | 5 | 0 | 24 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [21026] code4rena-2024-03-taiko-final-report.md — matched: Extracted 37 contract names from the audit report scope and findings. The audit date is the end date of the audit period (March 6-27, 2024).
+- [21027] halborn-taiko-alethia-protocol-audit-for-pacaya-upgrade.pdf — matched: Scope section explicitly lists four contracts: ERC20Vault.sol, TaikoWrapper.sol, ForcedInclusionStore.sol, TaikoInbox.sol. Audit date from engagement end date March 7, 2025.
+- [21028] halborn-taiko-dao-contract-audit.pdf — no match: Extracted 13 contract names from the scope section listing files and repository. Audit date from engagement end date: February 24th, 2025.
+- [21029] open_zeppelin_taiko_protocol_audit_june_2024.pdf — matched: Extracted all contracts from the Scope section (Phases 1,2,3) and the file listings. The audit date is from the cover page: 'June 19, 2024'.
+- [21030] open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf — no match: All contracts listed in the Scope section of the audit report.
+- [21031] open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf — matched: Extracted all contracts from the Scope section file listing. Audit date from cover page.
+- [21032] quill_audits_taiko_smart_contract_audit_report.pdf — matched: Extracted contract names from audit report scope and findings. Audit date inferred from 'February, 2024' on cover and last page, using last day of month.
+- [21033] sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf — matched: Scope explicitly lists all Solidity files in directories: 4844/, bridge/, common/, L1/, L2/, libs/, signal/, thirdparty/, tokenvaults/. Excludes OpenZeppelin dependencies. Audit date from cover page: 'February, 2024' -> last day of month.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| code4rena-2024-03-taiko-final-report.md | TaikoL2 | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | LibProving | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | LibVerifying | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | ERC20Airdrop2 | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | AssignmentHook | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | LibProposing | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | TimelockTokenPool | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | LibDepositing | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | TaikoL1 | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | Bridge | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xd60247...ddd8ec` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| code4rena-2024-03-taiko-final-report.md | ERC20Vault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x996282...4415ab` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| code4rena-2024-03-taiko-final-report.md | USDCAdapter | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | TaikoToken | own contract | 0x10dea6… (selected) `0x10dea6...54d800` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| code4rena-2024-03-taiko-final-report.md | EssentialContract | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | AddressResolver | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | GuardianProver | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | MainnetTierProvider | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | TestnetTierProvider | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | PEMCertChainLib | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | SgxVerifier | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | AutomataDcapV3Attestation | unmatched — not counted | — | listed in scope and findings | no |
+| code4rena-2024-03-taiko-final-report.md | Lib1559Math | unmatched — not counted | — | referenced in findings | no |
+| code4rena-2024-03-taiko-final-report.md | LibSignals | unmatched — not counted | — | referenced in findings | no |
+| code4rena-2024-03-taiko-final-report.md | SignalService | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x9e0a24...35c77c` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| code4rena-2024-03-taiko-final-report.md | IBridgedERC20 | unmatched — not counted | — | referenced in findings | no |
+| code4rena-2024-03-taiko-final-report.md | IMessageInvocable | unmatched — not counted | — | referenced in findings | no |
+| code4rena-2024-03-taiko-final-report.md | ITierProvider | unmatched — not counted | — | referenced in findings | no |
+| code4rena-2024-03-taiko-final-report.md | IAddressManager | unmatched — not counted | — | referenced in findings | no |
+| code4rena-2024-03-taiko-final-report.md | IHook | unmatched — not counted | — | referenced in findings | no |
+| code4rena-2024-03-taiko-final-report.md | ISignalService | unmatched — not counted | — | referenced in findings | no |
+| code4rena-2024-03-taiko-final-report.md | ITaikoL1 | unmatched — not counted | — | referenced in findings | no |
+| code4rena-2024-03-taiko-final-report.md | LibTiers | unmatched — not counted | — | referenced in findings | no |
+| code4rena-2024-03-taiko-final-report.md | TaikoData | unmatched — not counted | — | referenced in findings | no |
+| code4rena-2024-03-taiko-final-report.md | IPEMCertChainLib | unmatched — not counted | — | referenced in findings | no |
+| code4rena-2024-03-taiko-final-report.md | TCBInfoStruct | unmatched — not counted | — | referenced in findings | no |
+| code4rena-2024-03-taiko-final-report.md | X509DateUtils | unmatched — not counted | — | referenced in findings | no |
+| code4rena-2024-03-taiko-final-report.md | ECDSA | unmatched — not counted | — | referenced in findings | no |
+| halborn-taiko-alethia-protocol-audit-for-pacaya-upgrade.pdf | ERC20Vault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x996282...4415ab` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| halborn-taiko-alethia-protocol-audit-for-pacaya-upgrade.pdf | TaikoWrapper | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-alethia-protocol-audit-for-pacaya-upgrade.pdf | ForcedInclusionStore | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-alethia-protocol-audit-for-pacaya-upgrade.pdf | TaikoInbox | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-dao-contract-audit.pdf | ITaikoL1 | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-dao-contract-audit.pdf | StandardProposalCondition | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-dao-contract-audit.pdf | TaikoDaoFactory | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-dao-contract-audit.pdf | proxy | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-dao-contract-audit.pdf | EmergencyMultisigPluginSetup | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-dao-contract-audit.pdf | MultisigPluginSetup | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-dao-contract-audit.pdf | OptimisticTokenVotingPluginSetup | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-dao-contract-audit.pdf | DelegationWall | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-dao-contract-audit.pdf | EmergencyMultisig | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-dao-contract-audit.pdf | EncryptionRegistry | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-dao-contract-audit.pdf | Multisig | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-dao-contract-audit.pdf | OptimisticTokenVotingPlugin | unmatched — not counted | — | listed in scope | no |
+| halborn-taiko-dao-contract-audit.pdf | SignerList | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | Bridge | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xd60247...ddd8ec` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | IBridge | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | AddressManager | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | AddressResolver | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | EssentialContract | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | IAddressManager | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | IAddressResolver | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | ITaikoL1 | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | TaikoData | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | TaikoErrors | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | TaikoEvents | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | TaikoL1 | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | TaikoToken | own contract | 0x10dea6… (selected) `0x10dea6...54d800` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | TaikoGovernor | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | TaikoTimelockController | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | AssignmentHook | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | IHook | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | LibDepositing | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | LibProposing | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | LibProving | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | LibUtils | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | LibVerifying | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | GuardianProver | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | Guardians | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | DevnetTierProvider | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | ITierProvider | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | MainnetTierProvider | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | TestnetTierProvider | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | CrossChainOwned | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | Lib1559Math | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | TaikoL2 | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | TaikoL2EIP1559Configurable | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | Lib4844 | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | LibAddress | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | LibMath | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | LibTrieProof | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | ISignalService | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | LibSignals | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | SignalService | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x9e0a24...35c77c` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | TimelockTokenPool | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | ERC20Airdrop | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | MerkleClaimable | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | ExcessivelySafeCall | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | Bytes | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | RLPReader | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | RLPWriter | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | MerkleTrie | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | SecureMerkleTrie | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | LibFixedPointMath | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | BaseNFTVault | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | BaseVault | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | BridgedERC1155 | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | BridgedERC20 | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | BridgedERC20Base | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | BridgedERC721 | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | ERC1155Vault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xaf1459...881702` — deployed 2024-05-01 11:03:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | ERC20Vault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x996282...4415ab` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | ERC721Vault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x0b470d...f419aa` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | IBridgedERC20 | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | LibBridgedToken | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | USDCAdapter | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | GuardianVerifier | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | IVerifier | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | SgxVerifier | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | DelegateOwner | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | QuotaManager | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x91f671...22f29e` — deployed 2024-05-13 08:27:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| open_zeppelin_taiko_protocol_audit_june_2024.pdf | BridgedTaikoToken | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf | LibBonds | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf | LibData | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf | LibProposing | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf | LibProving | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf | LibUtils | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf | LibVerifying | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf | TaikoData | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf | TaikoL1 | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf | ComposeVerifier | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf | TeeAnyVerifier | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf | ZkAndTeeVerifier | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf | ZkAnyVerifier | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf | Lib1559Math | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf | TaikoL2 | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | IBondManager | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | ICodec | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | IForcedInclusionStore | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | IInbox | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | IProverWhitelist | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | Codec | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | Inbox | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | ProverWhitelist | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | LibBonds | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | LibBlobs | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | LibForcedInclusion | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | LibHashOptimized | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | LibInboxSetup | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | LibPackUnpack | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | LibProposeInputCodec | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | LibProposedEventCodec | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | LibProveInputCodec | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | LibTransitionCodec | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | MainnetInbox | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | PreconfWhitelist | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | IProofVerifier | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | LibPublicInput | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | Risc0Verifier | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | SP1Verifier | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | SgxVerifier | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | ComposeVerifier | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | Anchor | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | AnchorForkRouter | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | BondManager | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | IBondProcessor | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | ForkRouter | unmatched — not counted | — | listed in scope | no |
+| open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf | SignalService | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x9e0a24...35c77c` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| quill_audits_taiko_smart_contract_audit_report.pdf | Bridge | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xd60247...ddd8ec` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| quill_audits_taiko_smart_contract_audit_report.pdf | ERC20Vault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x996282...4415ab` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| quill_audits_taiko_smart_contract_audit_report.pdf | ERC721Vault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x0b470d...f419aa` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| quill_audits_taiko_smart_contract_audit_report.pdf | ERC1155Vault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xaf1459...881702` — deployed 2024-05-01 11:03:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| quill_audits_taiko_smart_contract_audit_report.pdf | BridgedERC721 | unmatched — not counted | — | mentioned in findings | no |
+| quill_audits_taiko_smart_contract_audit_report.pdf | BridgedERC1155 | unmatched — not counted | — | mentioned in findings | no |
+| quill_audits_taiko_smart_contract_audit_report.pdf | SignalService | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x9e0a24...35c77c` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| quill_audits_taiko_smart_contract_audit_report.pdf | OwnerUUPSUpgradable | unmatched — not counted | — | mentioned in findings | no |
+| quill_audits_taiko_smart_contract_audit_report.pdf | AddressManager | unmatched — not counted | — | mentioned in findings | no |
+| quill_audits_taiko_smart_contract_audit_report.pdf | EssentialContract | unmatched — not counted | — | mentioned in findings | no |
+| quill_audits_taiko_smart_contract_audit_report.pdf | LibAddress | unmatched — not counted | — | mentioned in findings | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | Bridge | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xd60247...ddd8ec` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | SignalService | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x9e0a24...35c77c` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | SgxVerifier | unmatched — not counted | — | listed in scope directories: L1/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | ERC20Vault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x996282...4415ab` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | LibProposing | unmatched — not counted | — | listed in scope directories: L1/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | AssignmentHook | unmatched — not counted | — | listed in scope directories: L1/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | LibProving | unmatched — not counted | — | listed in scope directories: L1/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | TaikoL1 | unmatched — not counted | — | listed in scope directories: L1/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | LibVerifying | unmatched — not counted | — | listed in scope directories: L1/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | TaikoL2 | unmatched — not counted | — | listed in scope directories: L2/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | BridgedERC20Base | unmatched — not counted | — | listed in scope directories: tokenvaults/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | LibBytesUtils | unmatched — not counted | — | listed in scope directories: thirdparty/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | Lib4844 | unmatched — not counted | — | listed in scope directories: 4844/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | TaikoTimelockController | unmatched — not counted | — | listed in scope directories: L1/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | PseZkVerifier | unmatched — not counted | — | listed in scope directories: L1/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | Guardians | unmatched — not counted | — | listed in scope directories: L1/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | TaikoGovernor | unmatched — not counted | — | listed in scope directories: L1/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | TaikoA6TierProvider | unmatched — not counted | — | listed in scope directories: L1/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | AddressManager | unmatched — not counted | — | listed in scope directories: common/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | LibDepositing | unmatched — not counted | — | listed in scope directories: L1/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | LibMerkleTrie | unmatched — not counted | — | listed in scope directories: thirdparty/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | LibRLPReader | unmatched — not counted | — | listed in scope directories: thirdparty/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | LibUint512Math | unmatched — not counted | — | listed in scope directories: thirdparty/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | ERC1155Vault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xaf1459...881702` — deployed 2024-05-01 11:03:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | ERC721Vault | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x0b470d...f419aa` — deployed 2024-05-01 11:03:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | AuthorizableContract | unmatched — not counted | — | listed in scope directories: common/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | EssentialContract | unmatched — not counted | — | listed in scope directories: common/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | OwnerUUPSUpgradable | unmatched — not counted | — | listed in scope directories: common/ | no |
+| sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf | AddressResolver | unmatched — not counted | — | listed in scope directories: common/ | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0xef9eaa...65fbaa` | MainnetSharedAddressManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 7 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 42 |
+| needs_review | 20 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 8
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Address-book scope dispositions: 23 own (21 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 184 unmatched
+- Matched-own operational status: 23 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=8
+- Match method counts: unique_name=23
 
 Zero-match audit list:
 
-- [21026] code4rena-2024-03-taiko-final-report.md
-- [21027] halborn-taiko-alethia-protocol-audit-for-pacaya-upgrade.pdf
 - [21028] halborn-taiko-dao-contract-audit.pdf
-- [21029] open_zeppelin_taiko_protocol_audit_june_2024.pdf
 - [21030] open_zeppelin_taiko_protocol_ontake_audit_nov_2024.pdf.pdf
-- [21031] open_zeppelin_taiko_protocol_shasta_audit_jan_2026.pdf
-- [21032] quill_audits_taiko_smart_contract_audit_report.pdf
-- [21033] sigma_prime_taiko_smart_contract_security_assessment_report_v2_0.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

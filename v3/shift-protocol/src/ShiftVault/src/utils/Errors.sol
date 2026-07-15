@@ -17,7 +17,6 @@ error MoreThan18Decimals();
 error ParamOutOfBounds(string _param);
 error IndexOutOfBounds();
 error CountMustBePositive();
-error SupplyMissmatch();
 
 // ==== Request & Claim Errors ====
 error AlreadyAllowed();

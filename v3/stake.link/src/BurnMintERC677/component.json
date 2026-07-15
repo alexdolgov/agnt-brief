@@ -1,7 +1,15 @@
 {
   "component": "BurnMintERC677",
   "main_contract": "BurnMintERC677",
-  "source_file_count": 21,
+  "source_entry_count": 17,
+  "source_file_count": 17,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BurnMintERC677\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x3106e2e148525b3db36795b04691d444c24972fb",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399462"
     },
     {
       "chain": "arbitrum",
@@ -20,7 +30,9 @@
       "address": "0xdfea35757264f5b6c0ff21104151d9f991d0eec0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399463"
     }
   ]
 }

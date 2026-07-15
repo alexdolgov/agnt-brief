@@ -5,10 +5,6 @@ pragma solidity ^0.8.4;
 import "../core/RedstoneConsumerNumericBase.sol";
 
 contract AvalancheDataServiceConsumerBase is RedstoneConsumerNumericBase {
-  function getDataServiceId() public view virtual override returns (string memory) {
-    return "redstone-avalanche-prod";
-  }
-
   function getUniqueSignersThreshold() public view virtual override returns (uint8) {
     return 3;
   }

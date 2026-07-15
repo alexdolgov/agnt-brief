@@ -1,4 +1,40 @@
-// SPDX-License-Identifier: UNLICENSED
+/**
+                                             .::.
+                                          .=***#*+:
+                                        .=*********+.
+                                      .=++++*********=.
+                                    .=++=++++++++******-
+                                  .=++=++++++++++++******-
+                                .=++==+++++++++++==+******+:
+                              .=+===+++++++++++++===+*******=
+                            .=+===+++++++++++++++===-=*******=
+                           .=====++++++++++++++++====-=*****#*.
+                           :-===++++++++++++++++++====--+*###=
+                          :==+++++++++++++++++++++====---=+*-
+                        :=++***************++++++++====--:-
+                      .-+*########*************++++++===-:
+                     .=##%%##################*****++++===-.
+                     =#%%%%%%###########%%#######***+++==--
+                     +%@@#****************##%%%#####**++==-.
+                     -%#==*##**********##*****#%%%####**+==:
+                      *-=*%+##*******##%@@#******#%%###**+=-
+                      :=+%%#@%******#%=*@@%*********#%##*++-
+                      :=*%@@@**####*#@@@@@%********++*###*+.
+                      =+**##*#######*#@@@%#####****++++**+-
+                +*-  .+**#**#########*****######****+++=+-
+               -#**+:-**++**########***###%%%%##**+++++=.
+             ::-**+-=*#*=+**#######***#*###%%%##**++++*+=         :=-
+            -###****##%==+**######*******#######**+===*#*+-::::-=*##*
+            .#%#******==+***##%%%#********######**++==+%%%##**#####%*
+              +#%##******###%%%####****+++*#%%%##*********#%%%%%%%%*.
+               :%%%%%%%#%%%%###=.+##**********##########%%##%%%###=
+                 #%#%%%%%##**=.  :########%%#:-**#%%%%%##*+++*+-:
+                  ::+#**#+=-.     =#%%%%#%%#*.  :=*****=:
+                                   :+##*##+=       ..
+                                     :-.::
+
+*/
+// SPDX-License-Identifier: GPL-3.0-only
 pragma solidity 0.8.20;
 
 import "@openzeppelin/contracts/access/AccessControl.sol";
@@ -13,10 +49,7 @@ import "./interfaces/INetworkController.sol";
 contract NetworkController is AccessControl, INetworkController {
   uint256 internal constant ONE_BASIS_POINT = 10_000;
 
-  /// @notice deprecated
   uint128 public epochLength;
-
-  uint128 public workerEpochLength;
   uint128 public firstEpochBlock;
   uint256 public bondAmount;
   uint256 public stakingDeadlock = 2;
@@ -26,7 +59,7 @@ contract NetworkController is AccessControl, INetworkController {
   uint256 public override yearlyRewardCapCoefficient = 3000;
   mapping(address => bool) public isAllowedVestedTarget;
 
-  constructor(uint128 _epochLength, uint128 _firstEpochBlock, uint128 _epochCheckpoint, uint256 _bondAmount, address[] memory _allowedVestedTargets) {
+  constructor(uint128 _epochLength, uint256 _bondAmount, address[] memory _allowedVestedTargets) {
     require(_epochLength > 1, "Epoch length too short");
     require(_epochLength < 100000, "Epoch length too long");
 
@@ -34,9 +67,8 @@ contract NetworkController is AccessControl, INetworkController {
     for (uint256 i = 0; i < _allowedVestedTargets.length; i++) {
       setAllowedVestedTarget(_allowedVestedTargets[i], true);
     }
-    workerEpochLength = _epochLength;
-    firstEpochBlock = _firstEpochBlock;
-    epochCheckpoint = _epochCheckpoint;
+    epochLength = _epochLength;
+    firstEpochBlock = nextEpoch();
     emit EpochLengthUpdated(_epochLength);
 
     setBondAmount(_bondAmount);
@@ -50,22 +82,9 @@ contract NetworkController is AccessControl, INetworkController {
     uint128 nextEpochStart = nextEpoch();
     epochCheckpoint = epochNumber();
     firstEpochBlock = nextEpochStart;
-    workerEpochLength = _epochLength;
+    epochLength = _epochLength;
 
     emit EpochLengthUpdated(_epochLength);
-  }
-
-  /// @dev Set how long the
-  function setLockPeriod(uint128 _lockPeriod) external onlyRole(DEFAULT_ADMIN_ROLE) {
-    require(_lockPeriod > 1, "Lock period too short");
-
-    epochLength = _lockPeriod;
-
-    emit LockPeriodUpdated(_lockPeriod);
-  }
-
-  function lockPeriod() external view returns (uint128) {
-    return epochLength;
   }
 
   /// @dev Set amount of tokens required to register a worker
@@ -120,13 +139,13 @@ contract NetworkController is AccessControl, INetworkController {
   function nextEpoch() public view returns (uint128) {
     uint128 blockNumber = uint128(block.number);
     if (blockNumber < firstEpochBlock) return firstEpochBlock;
-    return ((blockNumber - firstEpochBlock) / workerEpochLength + 1) * workerEpochLength + firstEpochBlock;
+    return ((blockNumber - firstEpochBlock) / epochLength + 1) * epochLength + firstEpochBlock;
   }
 
   /// @inheritdoc INetworkController
   function epochNumber() public view returns (uint128) {
     uint128 blockNumber = uint128(block.number);
     if (blockNumber < firstEpochBlock) return epochCheckpoint;
-    return (blockNumber - firstEpochBlock) / workerEpochLength + epochCheckpoint + 1;
+    return (blockNumber - firstEpochBlock) / epochLength + epochCheckpoint + 1;
   }
 }

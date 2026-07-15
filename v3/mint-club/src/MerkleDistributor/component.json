@@ -1,8 +1,16 @@
 {
   "component": "MerkleDistributor",
   "main_contract": "MerkleDistributor",
+  "source_entry_count": 8,
   "source_file_count": 8,
-  "deployment_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MerkleDistributor\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,23 +20,9 @@
       "address": "0x1349a9ddee26fe16d0d44e35b3cb9b0ca18213a4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xa4021a8907197df92341f1218b32e26b250f6798",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x1349a9ddee26fe16d0d44e35b3cb9b0ca18213a4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "polygon",
@@ -36,7 +30,9 @@
       "address": "0x1349a9ddee26fe16d0d44e35b3cb9b0ca18213a4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",
@@ -44,7 +40,9 @@
       "address": "0x1349a9ddee26fe16d0d44e35b3cb9b0ca18213a4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
@@ -52,7 +50,19 @@
       "address": "0x1349a9ddee26fe16d0d44e35b3cb9b0ca18213a4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x841a2bd2fc97dcb865b4ddb352540148bad2db09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

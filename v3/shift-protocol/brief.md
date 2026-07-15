@@ -1,74 +1,111 @@
 # Agentic Audit Brief: Shift Protocol
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 1 across 1 audit(s)
+- Eligible audit results: 1 (1 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Shift Protocol (`shift-protocol`)
 - Website: [https://shiftprotocol.xyz](https://shiftprotocol.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:54.123Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-0679
-- Chains: arbitrum, base
-- Contract surface: 5 unique implementations (17 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: base
+- Contract surface: 1 unique implementations (1 raw deployments)
+- Coverage basis: 1/1 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $794,768.91
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Onchain Capital Allocator. Structurally: 8 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 1 ERC721 NFT; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Shift Protocol. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 6 common project-authored base contract(s) (erc165, pendleerc20, tokenhelper). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 1 contract row(s) across base. Structural roles: 1 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 1
+- Structural roles: core (1)
+- Contract kinds: contract (1)
+- Detected standards: erc20 (1)
+- Frameworks: openzeppelin (1), prb-math (1)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 1 contracts are derived from known codebases. 1 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- ShiftVault (`0xaf69bf...ed1e0e`, chain 8453)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 24; live-surface contracts included: 17 (17 live, 0 unknown).
-- Excluded by liveness: 7 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 1/1 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 3/5 (60.0%)
-- Deployed-live implementations: 5 of 5 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 3/5
-- Verified + Unaudited implementations: 2
+- Coverage of address-book-owned deployed-live implementations: 1/1 (100.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 1/1
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 5
-- Raw deployments: 17
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-08 (fresh)
 - Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 3 | 60.0% | 2025-08 |
+| unknown | Tier 2 | 1 | 100.0% | 2025-08 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (3)
+### ✅ Verified + Audited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| ShiftAccessControl | governance | base | n/a | 4 deployments: base [`0x092b55...d3132e`](./contracts/base-8453/0x092b558d933f069c7145c0ef4ad4c966e5d3132e/); base `0x35305e...a61ce6`; base `0x3ccc08...dc2773`; base `0x52dc22...326b56` | ✅ Audited |
-| ShiftTvlFeed | unknown | base | n/a | 4 deployments: base [`0x505171...9e6285`](./contracts/base-8453/0x5051713489d8128f8fd7c96362616fe5e29e6285/); base `0x619681...40f19b`; base `0x8a04ac...b9f110`; base `0xdbe599...ff67d3` | ✅ Audited |
-| ShiftVault | core_logic | base | n/a | 7 deployments: base [`0x4ce3ec...1aa2e1`](./contracts/base-8453/0x4ce3ec1b7b4ffb33a0b70c64a0560a3f341aa2e1/); base `0x89d63c...8a36b0`; base `0x8d8d46...872327`; base `0xaf69bf...ed1e0e`; arbitrum `0x6d7c89...7ae3c2`; arbitrum `0x7174f0...0a10bd`; arbitrum `0x956bdd...cb6964` | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| ShiftVault | core_logic | project_anchor | own_supporting | 0 | base | unit-392402 | `0xaf69bf...ed1e0e` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| ShiftMonoData | unknown | base | n/a | [`0x5457ea...bea196`](./contracts/base-8453/0x5457ead979d04598d6d16eff13b60d15bebea196/) | ⚠️ Unaudited |
-| SupplyValidator | unknown | base | n/a | [`0x446a68...5f97be`](./contracts/base-8453/0x446a687552d337804f9efd63656beef09f5f97be/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,9 +127,28 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [shift-sbsecurity-audit-2025.pdf](https://github.com/SHIFT-NebulaLabs/shift-contracts/blob/main/audits/shift-sbsecurity-audit-2025.pdf) | unknown | Audit | 2025-08 | fresh | Direct | contract_name | 3 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [shift-sbsecurity-audit-2025.pdf](https://github.com/SHIFT-NebulaLabs/shift-contracts/blob/main/audits/shift-sbsecurity-audit-2025.pdf) | unknown | Audit | 2025-08 | fresh | Direct | n/a | matched | 1 | 0 | 0 | 5 | n/a |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [13826] shift-sbsecurity-audit-2025.pdf — matched: No reason recorded
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| shift-sbsecurity-audit-2025.pdf | AccessModifier | unmatched — not counted | — | — | no |
+| shift-sbsecurity-audit-2025.pdf | Constants | unmatched — not counted | — | — | no |
+| shift-sbsecurity-audit-2025.pdf | ShiftAccessControl | unmatched — not counted | — | — | no |
+| shift-sbsecurity-audit-2025.pdf | ShiftManager | unmatched — not counted | — | — | no |
+| shift-sbsecurity-audit-2025.pdf | ShiftTvlFeed | unmatched — not counted | — | — | no |
+| shift-sbsecurity-audit-2025.pdf | ShiftVault | own contract | ShiftVault (selected) `0xaf69bf...ed1e0e` — deployed 2025-09-18 16:15:19+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
@@ -104,10 +160,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 5 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -115,7 +171,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 1 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 5 unmatched
+- Matched-own operational status: 1 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
-- Match method counts: contract_name=3
+- Match method counts: unique_name=1
 
 Fork inheritance lineage and inherited audits are included when available.

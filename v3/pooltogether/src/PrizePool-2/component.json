@@ -1,8 +1,16 @@
 {
   "component": "PrizePool-2",
   "main_contract": "PrizePool",
+  "source_entry_count": 40,
   "source_file_count": 40,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PrizePool-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x7865d01da4c9ba2f69b7879e6d2483ab6b354d95",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xa6bff884a85306cd1ab61dc010e3dca94f39cbec",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397869"
     }
   ]
 }

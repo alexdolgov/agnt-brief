@@ -1,42 +1,28 @@
 {
   "component": "RolesGuard",
   "main_contract": "RolesGuard",
+  "source_entry_count": 19,
   "source_file_count": 19,
-  "deployment_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RolesGuard\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xbb4021d387a48ffe32150f8154c57892e6c6156c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xad7188d0970cbedbdb233f0e5b7367cf149c3449",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-999",
-      "chain_id": 999,
-      "address": "0x920029f02b87c7bb0013c8e17e245209c03dd7bf",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "chain-999",
       "chain_id": 999,
       "address": "0xab6a8f5a37cee7a979622138524c4ddf22debc49",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392199"
     },
     {
       "chain": "arbitrum",
@@ -44,7 +30,9 @@
       "address": "0x7d55a2bd88ed4e886ba8a95871df823db70acddf",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392209"
     }
   ]
 }

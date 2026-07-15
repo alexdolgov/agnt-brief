@@ -1,10 +1,21 @@
 {
   "component": "sUSDeCooldownRequestImpl",
   "main_contract": "sUSDeCooldownRequestImpl",
+  "source_entry_count": 11,
   "source_file_count": 11,
-  "deployment_count": 6,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/sUSDeCooldownRequestImpl\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2025-10-08-cyfrin-strata-tranches-v2.0.pdf",
+    "https://github.com/GuardianAudits/Audits/blob/main/Strata/Strata_Tranches_report.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,47 +23,9 @@
       "address": "0x00a96056c30a22b684ff7a09f4a0afeae426dde2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x3f7041df827d7c5be4b62ca82e0a44996479a2cc",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x97f7e9def63e55b6eda4a103d23fd9d1cfd62e69",
-      "is_proxy": true,
-      "implementation_address": "0x00a96056c30a22b684ff7a09f4a0afeae426dde2",
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x9c8c72b670f514154242a71d74420383527ad6a8",
-      "is_proxy": true,
-      "implementation_address": "0x00a96056c30a22b684ff7a09f4a0afeae426dde2",
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xc5827b30218813679cbfd524b65f8394270c76a4",
-      "is_proxy": true,
-      "implementation_address": "0x3f7041df827d7c5be4b62ca82e0a44996479a2cc",
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xe5e4febbd1c528b3c0a30c2bc678b8c611fa42c8",
-      "is_proxy": true,
-      "implementation_address": "0x3f7041df827d7c5be4b62ca82e0a44996479a2cc",
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399550"
     }
   ]
 }

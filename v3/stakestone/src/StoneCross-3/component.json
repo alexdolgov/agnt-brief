@@ -1,15 +1,24 @@
 {
   "component": "StoneCross-3",
   "main_contract": "StoneCross",
+  "source_entry_count": 19,
   "source_file_count": 19,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://3335806686-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCQc6hVwS1NTaUDN4XLdQ%2Fuploads%2F1jDHW15wSaMaAYlhsgJd%2FSlowMist%20Audit%20Report%20-%20StakeStone.pdf",
-    "https://3335806686-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCQc6hVwS1NTaUDN4XLdQ%2Fuploads%2FBP2QLRtKlu74IXditjFj%2FVAR_StakeStone_231208-Final.pdf",
-    "https://3335806686-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCQc6hVwS1NTaUDN4XLdQ%2Fuploads%2FVPMwYQsoShkgFtcw3SbM%2FStakeStone_final_Secure3_Audit_Report.pdf",
-    "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SlowMist%20Audit%20Report%20-%20StakeStone_en-us.pdf"
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/token/StoneCross.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-761e3fb23125-StoneCross.sol",
+      "reason": "unsafe_path"
+    }
   ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StoneCross-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "linea",
@@ -17,7 +26,9 @@
       "address": "0x93f4d0ab6a8b4271f4a28db399b5e30612d21116",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399491"
     }
   ]
 }

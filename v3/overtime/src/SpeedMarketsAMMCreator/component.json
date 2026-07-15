@@ -1,7 +1,15 @@
 {
   "component": "SpeedMarketsAMMCreator",
   "main_contract": "SpeedMarketsAMMCreator",
-  "source_file_count": 38,
+  "source_entry_count": 37,
+  "source_file_count": 37,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SpeedMarketsAMMCreator\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
@@ -9,34 +17,42 @@
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x04c59ad182a27c42facf0cca3fafc2467b7df04a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
       "address": "0x2a64b494bbb26cd5399562bab4bc4f7eeccf0aab",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x897d181c93672c60e65489629826b498ff6ff3c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0xb79bb051a80a8c4330ce3875d56061712ea8d88b",
+      "address": "0xe368aabf284bb715800a9a449c42c54d06cb7690",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x524ebb4db0b92fddba9b33ff16ed0d28818fa39b",
+      "address": "0x14de9f308bb6a5ee0ce90fe4c74fb7b719b50318",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

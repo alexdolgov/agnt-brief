@@ -42,7 +42,7 @@ contract ZFGovernanceStaking is yZFToken, ReentrancyGuard, Ownable, Pausable {
 
     address immutable public zfToken;
     uint256 public startTime;
-    uint256 public endTime = 1788220799;
+    uint256 public endTime = 1835481600; // 2028-03-01 00:00:00 UTC    
     uint256 public zfLastRewardTime;
     uint256 public zfRewardRate;
     address public rewardDistributorAddress;
@@ -75,6 +75,7 @@ contract ZFGovernanceStaking is yZFToken, ReentrancyGuard, Ownable, Pausable {
 
     event SetPenaltyPercent(uint256 newFee);
     event SetStartTime(uint256 startTime);
+    event SetEndTime(uint256 endTime);
     event SetRewardRate(uint256 newRewardRate);
     event SetDistributor(address indexed previousDistributor, address indexed newDistributor);
 
@@ -139,7 +140,8 @@ contract ZFGovernanceStaking is yZFToken, ReentrancyGuard, Ownable, Pausable {
             shares = amount;
         }
         else {
-            shares = amount * totalSupply / poolBalance;
+            // Multiply by 1e18 for precision, then divide
+            shares = (amount * totalSupply * PRECISION) / poolBalance / PRECISION;
         }
 
         require(shares != 0, "stake: shares is zero");
@@ -194,11 +196,11 @@ contract ZFGovernanceStaking is yZFToken, ReentrancyGuard, Ownable, Pausable {
 
     // The _transferTokens function is overridden with updateZFStakedAmount calls to update the user's staking information.
     function _transferTokens(address src, address dst, uint96 amount) override internal {
-        require(src != address(0), "Uni::_transferTokens: cannot transfer from the zero address");
-        require(dst != address(0), "Uni::_transferTokens: cannot transfer to the zero address");
+        require(src != address(0), "yZF::_transferTokens: cannot transfer from the zero address");
+        require(dst != address(0), "yZF::_transferTokens: cannot transfer to the zero address");
 
-        balances[src] = sub96(balances[src], amount, "Uni::_transferTokens: transfer amount exceeds balance");
-        balances[dst] = add96(balances[dst], amount, "Uni::_transferTokens: transfer amount overflows");
+        balances[src] = sub96(balances[src], amount, "yZF::_transferTokens: transfer amount exceeds balance");
+        balances[dst] = add96(balances[dst], amount, "yZF::_transferTokens: transfer amount overflows");
         emit Transfer(src, dst, amount);
 
         _moveDelegates(delegates[src], delegates[dst], amount);
@@ -293,6 +295,13 @@ contract ZFGovernanceStaking is yZFToken, ReentrancyGuard, Ownable, Pausable {
         zfLastRewardTime = startTimestamp;
 
         emit SetStartTime(startTimestamp);
+    }
+
+     // Set the end time of the staking period.
+    function setEndTime(uint256 endTimestamp) external onlyOwner {
+        endTime = endTimestamp;
+
+        emit SetEndTime(endTimestamp);
     }
 
 

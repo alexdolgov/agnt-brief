@@ -14,7 +14,7 @@ abstract contract WithProtocolFee is TwoStepOwned {
         uint256 fraction;
     }
 
-    uint256 public constant FEE_UPDATE_NOTICE = 30 days;
+    uint256 public constant FEE_UPDATE_NOTICE = 7 days;
 
     /// @notice Protocol fee charged on gains.
     ProtocolFee internal _protocolFee;

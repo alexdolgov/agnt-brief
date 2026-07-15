@@ -1,154 +1,31 @@
 {
   "component": "ParaSwapFacet",
   "main_contract": "ParaSwapFacet",
-  "source_file_count": 86,
-  "deployment_count": 18,
-  "audited": false,
-  "audits_covering": [],
+  "source_entry_count": 75,
+  "source_file_count": 75,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ParaSwapFacet\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/AstraSec-AuditReport-DeltaPrime-Final.pdf",
+    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/blocksec_deltaprime_v1.0-signed.pdf"
+  ],
   "addresses": [
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x0aa196a803a1866ec51522ef0e762bf0aa5986c6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x29126bfd72960d943617e3f69108650331f680a4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x34cb5fc3b28215713682de95daf2b00a4619db03",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x394c6ac658cc5b53843d7c4d1b7fa35585ba5783",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0x3b963b73561adec65b51e730a8bcb153bc066ac3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x641493cb5143980e9e71f45442144d65cb19f90a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x88f6f474185782095d19f3a8b08ed3cf1fa5a67d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x8cb22e806bb19a60bf67f7584e65a38a15c7009a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x91fa628876e5de5f5d270bcaa01467edd002de01",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x941421ec8553ad46a3c67fd2bc8dc33912305c90",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x9b80b7a6392a91d0b2d9e03056486704f2dcf9ea",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xa64a538d8a4aece4ca51851d575ce5711a32043d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xaa50e9d6bb29b613061c1441c3f90756e34b317a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xb54804ac420fde59251b1205f44bfb8d1eaa9684",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xbbf3d742a178cb5bfbef70be66e702a53da8696c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xca7e2b6b6d27f01f401a6b8201541de1425925cf",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xed01f33f13a146d3eedd68468d6587aab8f61ee0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xf45297dfeaa37a2d0b586957b3aa9725cfc5a30b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393593"
     }
   ]
 }

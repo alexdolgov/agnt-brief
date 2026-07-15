@@ -128,6 +128,17 @@ library Errors {
   uint256 internal constant UNSORTED_TOKENS = 102;
   uint256 internal constant INPUT_LENGTH_MISMATCH = 103;
   uint256 internal constant ZERO_ADDRESS = 104;
+  uint256 internal constant INVALID_TARGET = 105;
+
+  // Swap related errors (500-599)
+  uint256 internal constant SWAP_CALLER_NOT_OWNER = 500;
+  uint256 internal constant SWAP_INVALID_INPUT_TOKEN = 501;
+  uint256 internal constant SWAP_INVALID_OUTPUT_TOKEN = 502;
+  uint256 internal constant SWAP_INVALID_TARGET = 503;
+  uint256 internal constant SWAP_APPROVAL_FAILED = 504;
+  uint256 internal constant SWAP_EXECUTION_FAILED = 505;
+  uint256 internal constant SWAP_INSUFFICIENT_OUTPUT = 506;
+  uint256 internal constant SWAP_TRANSFER_FAILED = 507;
 
   // Bridge Endpoint
   uint256 internal constant BRIDGE_PAUSED = 200;
@@ -150,6 +161,7 @@ library Errors {
   uint256 internal constant FEE_PCT_GREATER_THAN_ONE = 217;
   uint256 internal constant MIN_AMT_GREATER_THAN_MAX = 218;
   uint256 internal constant MIN_FEE_GREATER_THAN_MIN_AMT = 219;
+  uint256 internal constant SWAP_EXPIRED = 220;
 
   // Token
   uint256 internal constant TRANSFER_NOT_ALLOWED = 300;

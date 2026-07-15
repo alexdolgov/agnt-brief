@@ -9,7 +9,6 @@ import "./interface/IReceiptToken.sol";
 /// @title Receipt token
 /// @notice A mintable/burnable ERC20 token given to user as a receipt after staking assets in the Satlayer pool
 contract ReceiptToken is IReceiptToken, Ownable, ERC20 {
-
     uint8 private _decimals;
 
     constructor(string memory name, string memory symbol, uint8 __decimals) Ownable(msg.sender) ERC20(name, symbol) {
@@ -35,4 +34,3 @@ contract ReceiptToken is IReceiptToken, Ownable, ERC20 {
         _burn(from, amount);
     }
 }
-

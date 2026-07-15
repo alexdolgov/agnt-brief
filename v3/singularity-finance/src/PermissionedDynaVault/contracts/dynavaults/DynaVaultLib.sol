@@ -158,7 +158,7 @@ library DynaVaultLib {
 	function _convertToSharesGivenTotalSupply(uint256 assets, uint256 givenTotalSupply, Math.Rounding rounding) private view returns (uint256 shares) {
 		if (assets == 0) return 0;
 		uint256 _freeFunds = _manager().freeFunds();
-		if (_freeFunds == 0) {
+		if (givenTotalSupply == 0 || _freeFunds == 0) {
 			return _fullMulDiv(assets, PRECISION, vaultStorage().depositPrecision, rounding);
 		} else {
 			return _fullMulDiv(assets, givenTotalSupply, _freeFunds, rounding);
@@ -180,7 +180,7 @@ library DynaVaultLib {
 		Math.Rounding rounding
 	) private view returns (uint256 shares) {
 		if (assets == 0) return 0;
-		if (givenFreeFunds == 0) return _fullMulDiv(assets, PRECISION, vaultStorage().depositPrecision, rounding);
+		if (givenTotalSupply == 0 || givenFreeFunds == 0) return _fullMulDiv(assets, PRECISION, vaultStorage().depositPrecision, rounding);
 		return _fullMulDiv(assets, givenTotalSupply, givenFreeFunds, rounding);
 	}
 

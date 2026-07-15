@@ -1,18 +1,36 @@
 {
   "component": "Frankencoin",
   "main_contract": "Frankencoin",
-  "source_file_count": 13,
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Frankencoin\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2023-04-frankencoin",
+    "https://frankencoin.com/AuditReport-Frankencoin.pdf",
+    "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V1/ChainSecurity-audit.pdf",
+    "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V1/blockbite-audit.pdf",
+    "https://github.com/Frankencoin-ZCHF/Frankencoin/blob/main/audits/V2/ChainSecurity_Frankencoin_Frankencoin_v2024.pdf",
+    "https://www.chainsecurity.com/security-audit/frankencoin-smart-contracts",
+    "https://www.chainsecurity.com/security-audit/frankencoin-v2024"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x422d17ccc1442501d039595ffcaaa71b4686bf4e",
+      "address": "0xb58e61c3098d85632df34eecfb899a1ed80921cb",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394646"
     }
   ]
 }

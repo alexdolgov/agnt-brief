@@ -1,12 +1,18 @@
 {
   "component": "Timelock",
   "main_contract": "Timelock",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Timelock\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://hatsfinance.medium.com/gravita-audit-competition-final-writeup-dfb28463a0dc"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
@@ -14,7 +20,9 @@
       "address": "0x09dfdf392a56e4316e97a13e20b09c415fcd3d7b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403140"
     }
   ]
 }

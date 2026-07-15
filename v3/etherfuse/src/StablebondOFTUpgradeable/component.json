@@ -1,7 +1,15 @@
 {
   "component": "StablebondOFTUpgradeable",
   "main_contract": "StablebondOFTUpgradeable",
+  "source_entry_count": 45,
   "source_file_count": 45,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StablebondOFTUpgradeable\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x43d59d6d5a88787822c233b6f34db81eaca4aa1d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "polygon",
@@ -20,7 +30,9 @@
       "address": "0x7fe752c0697d75cb5805c11480210892148dbd35",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "polygon",
@@ -28,7 +40,9 @@
       "address": "0x9ad50946f11e5e315c71abba2742c23b302020e8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "polygon",
@@ -36,7 +50,9 @@
       "address": "0xd660bb3aaca8668e674b2c7d248feb39b15acfcb",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

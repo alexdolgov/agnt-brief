@@ -14,6 +14,8 @@ library ConfigOptions {
   // You can rename or append. But NEVER change the order.
   enum Numbers {
     TransactionLimit,
+    /// @dev: TotalFundsLimit used to represent a total cap on senior pool deposits
+    /// but is now deprecated
     TotalFundsLimit,
     MaxUnderwriterLimit,
     ReserveDenominator,
@@ -22,117 +24,39 @@ library ConfigOptions {
     LatenessMaxDays,
     DrawdownPeriodInSeconds,
     TransferRestrictionPeriodInDays,
-    LeverageRatio
+    LeverageRatio,
+    /// A number in the range [0, 10000] representing basis points of FIDU taken as a fee
+    /// when a withdrawal request is canceled.
+    SeniorPoolWithdrawalCancelationFeeInBps
   }
+  /// @dev TrustedForwarder is deprecated because we no longer use GSN. CreditDesk
+  ///   and Pool are deprecated because they are no longer used in the protocol.
   enum Addresses {
-    Pool,
+    Pool, // deprecated
     CreditLineImplementation,
     GoldfinchFactory,
-    CreditDesk,
+    CreditDesk, // deprecated
     Fidu,
     USDC,
     TreasuryReserve,
     ProtocolAdmin,
     OneInch,
-    TrustedForwarder,
+    TrustedForwarder, // deprecated
     CUSDCContract,
     GoldfinchConfig,
     PoolTokens,
-    TranchedPoolImplementation,
+    TranchedPoolImplementation, // deprecated
     SeniorPool,
     SeniorPoolStrategy,
     MigratedTranchedPoolImplementation,
-    BorrowerImplementation
-  }
-
-  function getNumberName(uint256 number) public pure returns (string memory) {
-    Numbers numberName = Numbers(number);
-    if (Numbers.TransactionLimit == numberName) {
-      return "TransactionLimit";
-    }
-    if (Numbers.TotalFundsLimit == numberName) {
-      return "TotalFundsLimit";
-    }
-    if (Numbers.MaxUnderwriterLimit == numberName) {
-      return "MaxUnderwriterLimit";
-    }
-    if (Numbers.ReserveDenominator == numberName) {
-      return "ReserveDenominator";
-    }
-    if (Numbers.WithdrawFeeDenominator == numberName) {
-      return "WithdrawFeeDenominator";
-    }
-    if (Numbers.LatenessGracePeriodInDays == numberName) {
-      return "LatenessGracePeriodInDays";
-    }
-    if (Numbers.LatenessMaxDays == numberName) {
-      return "LatenessMaxDays";
-    }
-    if (Numbers.DrawdownPeriodInSeconds == numberName) {
-      return "DrawdownPeriodInSeconds";
-    }
-    if (Numbers.TransferRestrictionPeriodInDays == numberName) {
-      return "TransferRestrictionPeriodInDays";
-    }
-    if (Numbers.LeverageRatio == numberName) {
-      return "LeverageRatio";
-    }
-    revert("Unknown value passed to getNumberName");
-  }
-
-  function getAddressName(uint256 addressKey) public pure returns (string memory) {
-    Addresses addressName = Addresses(addressKey);
-    if (Addresses.Pool == addressName) {
-      return "Pool";
-    }
-    if (Addresses.CreditLineImplementation == addressName) {
-      return "CreditLineImplementation";
-    }
-    if (Addresses.GoldfinchFactory == addressName) {
-      return "GoldfinchFactory";
-    }
-    if (Addresses.CreditDesk == addressName) {
-      return "CreditDesk";
-    }
-    if (Addresses.Fidu == addressName) {
-      return "Fidu";
-    }
-    if (Addresses.USDC == addressName) {
-      return "USDC";
-    }
-    if (Addresses.TreasuryReserve == addressName) {
-      return "TreasuryReserve";
-    }
-    if (Addresses.ProtocolAdmin == addressName) {
-      return "ProtocolAdmin";
-    }
-    if (Addresses.OneInch == addressName) {
-      return "OneInch";
-    }
-    if (Addresses.TrustedForwarder == addressName) {
-      return "TrustedForwarder";
-    }
-    if (Addresses.CUSDCContract == addressName) {
-      return "CUSDCContract";
-    }
-    if (Addresses.PoolTokens == addressName) {
-      return "PoolTokens";
-    }
-    if (Addresses.TranchedPoolImplementation == addressName) {
-      return "TranchedPoolImplementation";
-    }
-    if (Addresses.SeniorPool == addressName) {
-      return "SeniorPool";
-    }
-    if (Addresses.SeniorPoolStrategy == addressName) {
-      return "SeniorPoolStrategy";
-    }
-    if (Addresses.MigratedTranchedPoolImplementation == addressName) {
-      return "MigratedTranchedPoolImplementation";
-    }
-    if (Addresses.BorrowerImplementation == addressName) {
-      return "BorrowerImplementation";
-    }
-    revert("Unknown value passed to getAddressName");
+    BorrowerImplementation,
+    GFI,
+    Go,
+    BackerRewards,
+    StakingRewards,
+    FiduUSDCCurveLP,
+    TranchedPoolImplementationRepository,
+    WithdrawalRequestToken,
+    MonthlyScheduleRepo
   }
 }

@@ -103,9 +103,8 @@ contract SwapFlashLoan is Swap {
     ) external nonReentrant {
         uint8 tokenIndex = getTokenIndex(address(token));
         uint256 availableLiquidityBefore = token.balanceOf(address(this));
-        uint256 protocolBalanceBefore = availableLiquidityBefore.sub(
-            swapStorage.balances[tokenIndex]
-        );
+        uint256 protocolBalanceBefore =
+            availableLiquidityBefore.sub(swapStorage.balances[tokenIndex]);
         require(
             amount > 0 && availableLiquidityBefore >= amount,
             "invalid amount"
@@ -136,8 +135,8 @@ contract SwapFlashLoan is Swap {
         );
 
         swapStorage.balances[tokenIndex] = availableLiquidityAfter
-        .sub(protocolBalanceBefore)
-        .sub(protocolFee);
+            .sub(protocolBalanceBefore)
+            .sub(protocolFee);
         emit FlashLoan(receiver, tokenIndex, amount, amountFee, protocolFee);
     }
 

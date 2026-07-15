@@ -1,165 +1,226 @@
 # Agentic Audit Brief: Nomad
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Nomad (`nomad`)
 - Website: [https://nomad.xyz](https://nomad.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:36.509Z
-- Pipeline run: v2-2026-07-02-1ba3fd
-- Chains: ethereum, moonbeam
-- Contract surface: 86 unique implementations (86 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: avalanche, ethereum, moonbeam
+- Contract surface: 116 unique implementations (117 raw deployments)
+- Coverage basis: 0/7 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $323,640.16
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Bridge. Structurally: 86 project-authored contract(s) across 2 chain(s); 18 ERC20 tokens, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Nomad. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Its contracts share 18 common project-authored base contract(s) (version0, container, initializableadminupgradeabilityproxy). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 7 contract row(s) across avalanche, ethereum, moonbeam. Structural roles: 5 supporting, 2 core. 1 row(s) use upgradeable patterns.
 
-## Fork Lineage
+## Logic Topography
 
-This project reuses audited code from **Hinkal** (`hinkal`) in the DarknodeRegistry, DarknodeRegistryLogicV2, MintGatewayLogicV2 subsystem.
-8 audits inherited from `hinkal`, scoped to that subsystem.
+- Exact-run contract rows: 7
+- Structural roles: supporting (5), core (2)
+- Contract kinds: contract (7)
+- Detected standards: ownable (1)
+- Frameworks: openzeppelin (5), openzeppelin-upgradeable (1)
+- Upgradeable-pattern rows: 1
 
-Total inherited audits: 8. Inherited coverage reflects forked/shared code audited by the origin project — it is not a direct audit of this project.
+## Fork Analysis
+
+0 of 38 contracts are derived from known codebases. 38 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x0876df...298b71`, chain 1)
+- UnnamedContract (`0x0a627a...a4eb70`, chain 1)
+- UnnamedContract (`0x3009c9...a4777a`, chain 1)
+- UnnamedContract (`0x4ad644...aa47ba`, chain 1)
+- UnnamedContract (`0x4d5ff8...911f98`, chain 1)
+- UnnamedContract (`0x569d80...819de0`, chain 1)
+- UnnamedContract (`0x5bae47...30033a`, chain 1)
+- UnnamedContract (`0x5d9430...6daeba`, chain 1)
+- UnnamedContract (`0x67833a...d6c981`, chain 1)
+- UnnamedContract (`0x7f58bb...8e831b`, chain 1)
+- UnnamedContract (`0x88a69b...ad30a3`, chain 1)
+- UnnamedContract (`0x8ca56e...5a2fb2`, chain 1)
+- UnnamedContract (`0x8f184d...815b6f`, chain 1)
+- UnnamedContract (`0x9272c9...57f715`, chain 1)
+- UnnamedContract (`0x92d340...cff4c8`, chain 1)
+- UnnamedContract (`0x9f7ea8...56ac4f`, chain 1)
+- UnnamedContract (`0xa7e4fe...855c1b`, chain 1)
+- UnnamedContract (`0xb70588...f5fb00`, chain 1)
+- UnnamedContract (`0xba8d75...2ea663`, chain 1)
+- UnnamedContract (`0xd3dfd3...efce2d`, chain 1)
+- UnnamedContract (`0xef9898...d0f766`, chain 1)
+- UnnamedContract (`0xfe8874...593b2f`, chain 1)
+- UnnamedContract (`0x1dc78a...6d95e0`, chain 1284)
+- UnnamedContract (`0x21a8da...829aec`, chain 1284)
+- UnnamedContract (`0x30d2a9...d916a7`, chain 1284)
+- UnnamedContract (`0x5130ca...b11f2b`, chain 1284)
+- UnnamedContract (`0x8d6e23...b0308e`, chain 1284)
+- UnnamedContract (`0x8e70cd...a0e594`, chain 1284)
+- UnnamedContract (`0x8f552a...f01ec9`, chain 1284)
+- UnnamedContract (`0xc234a6...b52413`, chain 1284)
+- UnnamedContract (`0x38dcf0...cd60a6`, chain 43114)
+- ETHHelper (`0x2d6775...d1f304`, chain 1)
+- GnosisSafe (`0x93277b...fbf68a`, chain 1)
+- GnosisSafeProxy (`0x2d23b3...2d9ef7`, chain 1284)
+- Replica (`0x049b51...2f20ef`, chain 1)
+- TokenRegistry (`0x0a6f56...ef3b79`, chain 1)
+- UpgradeBeacon (`0x063e87...0084cc`, chain 1)
+- UpgradeBeaconController (`0xdb3785...9dfd7e`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 86; live-surface contracts included: 86 (86 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 7; live-surface contracts included: 7 (7 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 37/71 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 3/86 (3.5%)
-- Deployed-live implementations: 86 of 86 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 3/86
-- Verified + Unaudited implementations: 83
+- Coverage of address-book-owned deployed-live implementations: 0/7 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 37 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 79 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 7
+- Deployed-live implementations: 37 of 116 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/7
+- Verified + Unaudited implementations: 7
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 86
-- Raw deployments: 86
-- Audits discovered: 8 (0 direct, 8 inherited from forked code)
-- Scoreable audits (matched contracts): 8
+- Unverified implementations: 30
+- Unique implementations: 116
+- Raw deployments: 117
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 8 unknown
-- Coverage code basis (deployed vs audited code): 3 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
-- Tier 1 coverage: 3.5% (Immunefi)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| Immunefi | Tier 1 | 3 | 3.5% | n/a |
-| Quantstamp | Tier 2 | 3 | 3.5% | n/a |
-| unknown | Tier 2 | 3 | 3.5% | n/a |
-| yAudit | Tier 2 | 3 | 3.5% | n/a |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (3)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| DarknodeRegistry | unknown | ethereum | n/a | [`0x379900...341c2f`](./contracts/ethereum-1/0x3799006a87fde3ccfc7666b3e6553b03ed341c2f/) | ✅ Audited |
-| DarknodeRegistryLogicV2 | unknown | ethereum | n/a | [`0x7f9822...4acecb`](./contracts/ethereum-1/0x7f98228b464101a3b19bf1cc337a9b88c84acecb/) | ✅ Audited |
-| MintGatewayLogicV2 | unknown | ethereum | n/a | [`0x1a5628...ce22b4`](./contracts/ethereum-1/0x1a562822f99d11e8f993f6bcda86277123ce22b4/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (83)
+### ⚠️ Verified + Unaudited (86)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AllowListNFTRecoveryAccountant | unknown | ethereum | n/a | [`0x09da34...83a794`](./contracts/ethereum-1/0x09da34a0cedb4e84b5b68cc0d2f47e921d83a794/) | ⚠️ Unaudited |
-| BasicAdapter | unknown | ethereum | n/a | [`0x0807d0...41b7c3`](./contracts/ethereum-1/0x0807d0810714d85b49e40349a3002f06e841b7c3/) | ⚠️ Unaudited |
-| BCH_DAI_Reserve | unknown | ethereum | n/a | [`0xa2d578...b69772`](./contracts/ethereum-1/0xa2d578e21f430d7469cbc135952dfe5c34b69772/) | ⚠️ Unaudited |
-| BCHGateway | unknown | ethereum | n/a | [`0xcabb5e...e1a461`](./contracts/ethereum-1/0xcabb5e9e48f22cb6736d5f5cd3f1b652d7e1a461/) | ⚠️ Unaudited |
-| BCHShifter | unknown | ethereum | n/a | [`0x2095be...0de6cd`](./contracts/ethereum-1/0x2095be01f9a30a8ac8302245fdfa524fb20de6cd/) | ⚠️ Unaudited |
-| BridgeRouter | unknown | moonbeam | n/a | [`0x0e6a3f...63a892`](./contracts/moonbeam-1284/0x0e6a3fd785f2169a086e179004710ba6b663a892/) | ⚠️ Unaudited |
-| BridgeToken | unknown | moonbeam | n/a | [`0x18bd26...896048`](./contracts/moonbeam-1284/0x18bd26b4763912176a26b422b3f6677901896048/) | ⚠️ Unaudited |
-| BTC_DAI_Reserve | unknown | ethereum | n/a | [`0x11716a...aee110`](./contracts/ethereum-1/0x11716a1f51fad053e9b43da1025e8ace32aee110/) | ⚠️ Unaudited |
-| BTCShifter | unknown | ethereum | n/a | [`0x1258d7...61902a`](./contracts/ethereum-1/0x1258d7ff385d1d81017d4a3d464c02f74c61902a/) | ⚠️ Unaudited |
-| Cards | unknown | ethereum | n/a | [`0x3d6f0d...1752d9`](./contracts/ethereum-1/0x3d6f0dea3ac3c607b3998e6ce14b6350721752d9/) | ⚠️ Unaudited |
-| CardsVesting | unknown | ethereum | n/a | [`0xc3d732...7cdd7b`](./contracts/ethereum-1/0xc3d732815ecddd8c7d044eee2e3e428edd7cdd7b/) | ⚠️ Unaudited |
-| Charlie | unknown | ethereum | n/a | [`0xf1a91c...d30268`](./contracts/ethereum-1/0xf1a91c7d44768070f711c68f33a7ca25c8d30268/) | ⚠️ Unaudited |
-| CovalentQueryToken | unknown | ethereum | n/a | [`0xd41714...ef6240`](./contracts/ethereum-1/0xd417144312dbf50465b1c641d016962017ef6240/) | ⚠️ Unaudited |
-| CSWAP | unknown | ethereum | n/a | [`0x3b3f95...950883`](./contracts/ethereum-1/0x3b3f95938958a4029fa8b01873e2721b02950883/) | ⚠️ Unaudited |
-| DarknodePayment | unknown | ethereum | n/a | [`0x098e17...c370b9`](./contracts/ethereum-1/0x098e1708b920efbdd7afe33adb6a4cba30c370b9/) | ⚠️ Unaudited |
-| DarknodePaymentMigrator | unknown | ethereum | n/a | [`0x085d9b...05f54d`](./contracts/ethereum-1/0x085d9b18be81f2b0c35086972caa46177205f54d/) | ⚠️ Unaudited |
-| DarknodePaymentStore | unknown | ethereum | n/a | [`0x311999...effe49`](./contracts/ethereum-1/0x311999ee72b5826d664fd4f3ac09c0c462effe49/) | ⚠️ Unaudited |
-| DarknodeRegistryForwarder | unknown | ethereum | n/a | [`0xb03201...3058fa`](./contracts/ethereum-1/0xb032012073765a74f8f8fe2e6685ad70253058fa/) | ⚠️ Unaudited |
-| DarknodeRegistryProxy | unknown | ethereum | n/a | [`0x09e343...017405`](./contracts/ethereum-1/0x09e3435c7a92d3296d1221161cb0cbaafa017405/) | ⚠️ Unaudited |
-| DarknodeRegistryProxy | unknown | ethereum | n/a | [`0x2d7b6c...054f0a`](./contracts/ethereum-1/0x2d7b6c95afeffa50c068d50f89c5c0014e054f0a/) | ⚠️ Unaudited |
-| DarknodeRegistryStore | unknown | ethereum | n/a | [`0x14add4...98897a`](./contracts/ethereum-1/0x14add4ca443e7445a3418bb572d6079bfc98897a/) | ⚠️ Unaudited |
-| DarknodeRegistryV1ToV2Preupgrader | unknown | ethereum | n/a | [`0x1e69da...c38f1e`](./contracts/ethereum-1/0x1e69da530e2051cd08259221ef1dacc703c38f1e/) | ⚠️ Unaudited |
-| DarknodeRegistryV1ToV2Upgrader | unknown | ethereum | n/a | [`0x5945bb...9cfaa5`](./contracts/ethereum-1/0x5945bbe065b7a723fd4cf9485a726cb5529cfaa5/) | ⚠️ Unaudited |
-| DarknodeRewardVault | unknown | ethereum | n/a | [`0x880407...3cd588`](./contracts/ethereum-1/0x880407c9cd119bef48b1821cdfc434e3ca3cd588/) | ⚠️ Unaudited |
-| DarknodeSlasher | unknown | ethereum | n/a | [`0x04ed8f...2962f2`](./contracts/ethereum-1/0x04ed8f5730dd4d2b2064cdb6a5bffc26a72962f2/) | ⚠️ Unaudited |
-| DEX | unknown | ethereum | n/a | [`0x8ff192...a8373a`](./contracts/ethereum-1/0x8ff192e634ef6463be60792a384e5f1219a8373a/) | ⚠️ Unaudited |
-| DEXAdapter | unknown | ethereum | n/a | [`0x9992e9...8d3a58`](./contracts/ethereum-1/0x9992e9341e496be5bc8f424dfc1f78a7388d3a58/) | ⚠️ Unaudited |
-| EthereumBridgeRouter | unknown | ethereum | n/a | [`0x7f6d98...7f7177`](./contracts/ethereum-1/0x7f6d9862cd7442e831123cfa288bb1fef47f7177/) | ⚠️ Unaudited |
-| ETHHelper | unknown | ethereum | n/a | [`0x2d6775...d1f304`](./contracts/ethereum-1/0x2d6775c1673d4ce55e1f827a0d53e62c43d1f304/) | ⚠️ Unaudited |
-| GatewayRegistry | unknown | ethereum | n/a | [`0x503670...67a24e`](./contracts/ethereum-1/0x503670ec851c55ec1acfb5230192da921467a24e/) | ⚠️ Unaudited |
-| GERO | unknown | ethereum | n/a | [`0x3431f9...005fb5`](./contracts/ethereum-1/0x3431f91b3a388115f00c5ba9fdb899851d005fb5/) | ⚠️ Unaudited |
-| GetOperatorDarknodes | unknown | ethereum | n/a | [`0x4e27a3...b8b5f0`](./contracts/ethereum-1/0x4e27a3e21e747cf875ad5829b6d9cb7700b8b5f0/) | ⚠️ Unaudited |
-| GnosisSafe | unknown | ethereum | n/a | [`0x93277b...fbf68a`](./contracts/ethereum-1/0x93277b8f5939975b9e6694d5fd2837143afbf68a/) | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | moonbeam | n/a | [`0x2d23b3...2d9ef7`](./contracts/moonbeam-1284/0x2d23b3865d5b7cd88ce9ce7514a13545672d9ef7/) | ⚠️ Unaudited |
-| GovernanceRouter | unknown | ethereum | n/a | [`0x02842e...398f96`](./contracts/ethereum-1/0x02842e47a45be8bb4bc60a7fe0ce3cc5d7398f96/) | ⚠️ Unaudited |
-| HBTCStorage | unknown | ethereum | n/a | [`0xc72869...26eefd`](./contracts/ethereum-1/0xc728693dcf6b257bf88577d6c92e52028426eefd/) | ⚠️ Unaudited |
-| HBTCToken | unknown | ethereum | n/a | [`0x0316eb...c6d380`](./contracts/ethereum-1/0x0316eb71485b0ab14103307bf65a021042c6d380/) | ⚠️ Unaudited |
-| HCTToken | unknown | ethereum | n/a | [`0x60b920...9dd9ad`](./contracts/ethereum-1/0x60b920ed2e048b10d087ffc63f1adc303e9dd9ad/) | ⚠️ Unaudited |
-| HDTToken | unknown | ethereum | n/a | [`0xe42ef5...cd06a6`](./contracts/ethereum-1/0xe42ef56340bca5072e3c7ba07df835a65ecd06a6/) | ⚠️ Unaudited |
-| Home | unknown | ethereum | n/a | [`0x0dcc98...5a9c72`](./contracts/ethereum-1/0x0dcc98ad3733fd2d788a80545d1c244dd45a9c72/) | ⚠️ Unaudited |
-| HUSDToken | unknown | ethereum | n/a | [`0x2a683d...13e846`](./contracts/ethereum-1/0x2a683d58afa5ce9f54cc498672a33c4a0e13e846/) | ⚠️ Unaudited |
-| IAGON | unknown | ethereum | n/a | [`0x40eb74...8a1fc8`](./contracts/ethereum-1/0x40eb746dee876ac1e78697b7ca85142d178a1fc8/) | ⚠️ Unaudited |
-| InitializableAdminUpgradeabilityProxy | unknown | ethereum | n/a | [`0x7a43b0...51ee52`](./contracts/ethereum-1/0x7a43b06ed73fcd3707f1a681ca645d758a51ee52/) | ⚠️ Unaudited |
-| MapMyAddress | unknown | ethereum | n/a | [`0x23e447...942719`](./contracts/ethereum-1/0x23e4470a671d4264e76e80c7315ca72cd6942719/) | ⚠️ Unaudited |
-| MintGatewayProxy | unknown | ethereum | n/a | [`0x05387a...c6b1aa`](./contracts/ethereum-1/0x05387a10bb3ef789b6c2a9ce2d6c21d5a8c6b1aa/) | ⚠️ Unaudited |
-| MintGatewayUpgrader | unknown | ethereum | n/a | [`0x137730...b04804`](./contracts/ethereum-1/0x13773093cdad89e8e1615f581a37c7eeabb04804/) | ⚠️ Unaudited |
-| Orderbook | unknown | ethereum | n/a | [`0x6b8bb1...2598e0`](./contracts/ethereum-1/0x6b8bb175c092de7d81860b18db360b734a2598e0/) | ⚠️ Unaudited |
-| ProtocolLogic | unknown | ethereum | n/a | [`0x547516...bdbadf`](./contracts/ethereum-1/0x54751636e04092ee76f25b2b3c50dcdcfebdbadf/) | ⚠️ Unaudited |
-| ProtocolLogicV1 | unknown | ethereum | n/a | [`0x637278...2447c8`](./contracts/ethereum-1/0x637278bf72127c76d98d9a9be36d2121fb2447c8/) | ⚠️ Unaudited |
-| ProtocolProxy | unknown | ethereum | n/a | [`0x4d880b...69b47a`](./contracts/ethereum-1/0x4d880bb27b1cd850d4bc331b1654af01bd69b47a/) | ⚠️ Unaudited |
-| ProxyERC20 | unknown | ethereum | n/a | [`0xfe18be...63cfc6`](./contracts/ethereum-1/0xfe18be6b3bd88a2d2a7f928d00292e7a9963cfc6/) | ⚠️ Unaudited |
-| Raffle | unknown | ethereum | n/a | [`0x45ef56...34f2e2`](./contracts/ethereum-1/0x45ef567d82f0fa70b5a4d56dc9c79b2da934f2e2/) | ⚠️ Unaudited |
-| RenERC20LogicV1 | unknown | ethereum | n/a | [`0x0a2d36...8c1bee`](./contracts/ethereum-1/0x0a2d368e4eecbd515033ba29253909f2978c1bee/) | ⚠️ Unaudited |
-| RenERC20Proxy | unknown | ethereum | n/a | [`0xee2740...7894a7`](./contracts/ethereum-1/0xee274080b8389ac5add6499df348b653447894a7/) | ⚠️ Unaudited |
-| RenExAtomicSwapper | unknown | ethereum | n/a | [`0xc3fed6...a01cc3`](./contracts/ethereum-1/0xc3fed6eb39178a541d274e6fc748d48f0ca01cc3/) | ⚠️ Unaudited |
-| RenExBalances | unknown | ethereum | n/a | [`0x5ec18b...a77efd`](./contracts/ethereum-1/0x5ec18b477b20af940807b5478db5a64cd4a77efd/) | ⚠️ Unaudited |
-| RenExBrokerVerifier | unknown | ethereum | n/a | [`0x31a0d1...d2e383`](./contracts/ethereum-1/0x31a0d1a199631d244761eeba67e8501296d2e383/) | ⚠️ Unaudited |
-| RenExSettlement | unknown | ethereum | n/a | [`0x908262...2b21e1`](./contracts/ethereum-1/0x908262de0366e42d029b0518d5276762c92b21e1/) | ⚠️ Unaudited |
-| RenExTokens | unknown | ethereum | n/a | [`0x7cade4...744ec4`](./contracts/ethereum-1/0x7cade4fbc8761817bb62a080733d1b6cad744ec4/) | ⚠️ Unaudited |
-| RenProxyAdmin | unknown | ethereum | n/a | [`0x044906...0ad01c`](./contracts/ethereum-1/0x04490672449654b1d9ad6f0aae14e6e4c60ad01c/) | ⚠️ Unaudited |
-| RenToken | unknown | ethereum | n/a | [`0x8e0679...eb40ed`](./contracts/ethereum-1/0x8e0679d0d4691ea345fb8c2aec9bf9c1d3eb40ed/) | ⚠️ Unaudited |
-| Replica | unknown | ethereum | n/a | [`0x049b51...2f20ef`](./contracts/ethereum-1/0x049b51e531fd8f90da6d92ea83dc4125002f20ef/) | ⚠️ Unaudited |
-| RepublicToken | unknown | ethereum | n/a | [`0x21c482...9fcebd`](./contracts/ethereum-1/0x21c482f153d0317fe85c60be1f7fa079019fcebd/) | ⚠️ Unaudited |
-| SettlementRegistry | unknown | ethereum | n/a | [`0x119da7...551036`](./contracts/ethereum-1/0x119da7a8500ade0766f758d934808179dc551036/) | ⚠️ Unaudited |
-| SHFLFarmer | unknown | ethereum | n/a | [`0xba4c39...c920d2`](./contracts/ethereum-1/0xba4c394eb34eb2392e40c67502b22f2541c920d2/) | ⚠️ Unaudited |
-| ShifterRegistry | unknown | ethereum | n/a | [`0x1d4713...876cac`](./contracts/ethereum-1/0x1d4713b74e79a3696722aebe05de976979876cac/) | ⚠️ Unaudited |
-| Staker | unknown | ethereum | n/a | [`0xad2fd1...5a438e`](./contracts/ethereum-1/0xad2fd18932c39fa5085429853e1f0d39a65a438e/) | ⚠️ Unaudited |
-| Timelock | unknown | ethereum | n/a | [`0xfe43c3...314fdb`](./contracts/ethereum-1/0xfe43c3a01102eda295333f5ad6cc747f03314fdb/) | ⚠️ Unaudited |
-| TokenRegistry | unknown | ethereum | n/a | [`0x0a6f56...ef3b79`](./contracts/ethereum-1/0x0a6f564c5c9bebd66f1595f1b51d1f3de6ef3b79/) | ⚠️ Unaudited |
-| UpdaterManager | unknown | moonbeam | n/a | [`0x2e09ed...9e03ac`](./contracts/moonbeam-1284/0x2e09edd238eeaea6e4da705fbe5922b1979e03ac/) | ⚠️ Unaudited |
-| UpgradeBeacon | unknown | ethereum | n/a | [`0x063e87...0084cc`](./contracts/ethereum-1/0x063e871f8db991cead34b557a00b157b360084cc/) | ⚠️ Unaudited |
-| UpgradeBeaconController | unknown | ethereum | n/a | [`0xdb3785...9dfd7e`](./contracts/ethereum-1/0xdb378579c2af11817eea21474a39f95b5b9dfd7e/) | ⚠️ Unaudited |
-| UpgradeBeaconProxy | unknown | moonbeam | n/a | [`0x030932...383e61`](./contracts/moonbeam-1284/0x030932a76f53dbf30fcfd51a8b3eed6833383e61/) | ⚠️ Unaudited |
-| WMTDrop | unknown | ethereum | n/a | [`0x7944b4...beed07`](./contracts/ethereum-1/0x7944b4407796014d7d3191960a44478056beed07/) | ⚠️ Unaudited |
-| XAppConnectionManager | unknown | moonbeam | n/a | [`0xdb3785...9dfd7e`](./contracts/moonbeam-1284/0xdb378579c2af11817eea21474a39f95b5b9dfd7e/) | ⚠️ Unaudited |
-| XXXXToken | unknown | ethereum | n/a | [`0xf8f560...c1dc1a`](./contracts/ethereum-1/0xf8f56001db32932f34f18101e6d6f9b4d1c1dc1a/) | ⚠️ Unaudited |
-| zBCH | unknown | ethereum | n/a | [`0x0e68ee...8f1a73`](./contracts/ethereum-1/0x0e68ee104c768078cb3624396aaf9285c58f1a73/) | ⚠️ Unaudited |
-| zBTC | unknown | ethereum | n/a | [`0x88c64a...78bb7d`](./contracts/ethereum-1/0x88c64a7d2ecc882d558dd16abc1537515a78bb7d/) | ⚠️ Unaudited |
-| ZEC_DAI_Reserve | unknown | ethereum | n/a | [`0x7b3b73...407bf9`](./contracts/ethereum-1/0x7b3b7383bc88b645bdefd7624d9c6fb981407bf9/) | ⚠️ Unaudited |
-| ZECGateway | unknown | ethereum | n/a | [`0x37a486...62ef93`](./contracts/ethereum-1/0x37a4860728e292e5852b215c46dbe7a18862ef93/) | ⚠️ Unaudited |
-| ZECGateway | unknown | ethereum | n/a | [`0x52c883...ada49d`](./contracts/ethereum-1/0x52c883b626637ae7c2b93909ad40c24676ada49d/) | ⚠️ Unaudited |
-| ZECShifter | unknown | ethereum | n/a | [`0x2b59ef...461d5b`](./contracts/ethereum-1/0x2b59ef3eb28c7388c7ec69d43a9b8e585c461d5b/) | ⚠️ Unaudited |
-| zZEC | unknown | ethereum | n/a | [`0x09aa07...f65295`](./contracts/ethereum-1/0x09aa07ae98fde91d66775c13107e9f082ff65295/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AllowListNFTRecoveryAccountant | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x09da34...83a794` | ⚠️ Unaudited |
+| BasicAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0807d0...41b7c3` | ⚠️ Unaudited |
+| BCH_DAI_Reserve | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa2d578...b69772` | ⚠️ Unaudited |
+| BCHGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcabb5e...e1a461` | ⚠️ Unaudited |
+| BCHShifter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2095be...0de6cd` | ⚠️ Unaudited |
+| BridgeRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x0e6a3f...63a892` | ⚠️ Unaudited |
+| BridgeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x18bd26...896048` | ⚠️ Unaudited |
+| BTC_DAI_Reserve | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x11716a...aee110` | ⚠️ Unaudited |
+| BTCShifter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1258d7...61902a` | ⚠️ Unaudited |
+| Cards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3d6f0d...1752d9` | ⚠️ Unaudited |
+| CardsVesting | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc3d732...7cdd7b` | ⚠️ Unaudited |
+| Charlie | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf1a91c...d30268` | ⚠️ Unaudited |
+| CovalentQueryToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd41714...ef6240` | ⚠️ Unaudited |
+| CSWAP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3b3f95...950883` | ⚠️ Unaudited |
+| DarknodePayment | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x098e17...c370b9` | ⚠️ Unaudited |
+| DarknodePaymentMigrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x085d9b...05f54d` | ⚠️ Unaudited |
+| DarknodePaymentStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x311999...effe49` | ⚠️ Unaudited |
+| DarknodeRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x379900...341c2f` | ⚠️ Unaudited |
+| DarknodeRegistryForwarder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb03201...3058fa` | ⚠️ Unaudited |
+| DarknodeRegistryLogicV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7f9822...4acecb` | ⚠️ Unaudited |
+| DarknodeRegistryProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x09e343...017405` | ⚠️ Unaudited |
+| DarknodeRegistryProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x2d7b6c...054f0a` | ⚠️ Unaudited |
+| DarknodeRegistryStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x14add4...98897a` | ⚠️ Unaudited |
+| DarknodeRegistryV1ToV2Preupgrader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e69da...c38f1e` | ⚠️ Unaudited |
+| DarknodeRegistryV1ToV2Upgrader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5945bb...9cfaa5` | ⚠️ Unaudited |
+| DarknodeRewardVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x880407...3cd588` | ⚠️ Unaudited |
+| DarknodeSlasher | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x04ed8f...2962f2` | ⚠️ Unaudited |
+| DEX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8ff192...a8373a` | ⚠️ Unaudited |
+| DEXAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9992e9...8d3a58` | ⚠️ Unaudited |
+| EthereumBridgeRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7f6d98...7f7177` | ⚠️ Unaudited |
+| ETHHelper | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249871 | `0x2d6775...d1f304` | ⚠️ Unaudited |
+| GatewayRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x503670...67a24e` | ⚠️ Unaudited |
+| GERO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3431f9...005fb5` | ⚠️ Unaudited |
+| GetOperatorDarknodes | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4e27a3...b8b5f0` | ⚠️ Unaudited |
+| GnosisSafe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-249944 | `0x93277b...fbf68a` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | project_anchor | own_supporting | 1 | moonbeam | unit-249945 | `0x2d23b3...2d9ef7` | ⚠️ Unaudited |
+| GovernanceRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02842e...398f96` | ⚠️ Unaudited |
+| HBTCStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc72869...26eefd` | ⚠️ Unaudited |
+| HBTCToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0316eb...c6d380` | ⚠️ Unaudited |
+| HCTToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x60b920...9dd9ad` | ⚠️ Unaudited |
+| HDTToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe42ef5...cd06a6` | ⚠️ Unaudited |
+| Home | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0dcc98...5a9c72` | ⚠️ Unaudited |
+| HUSDToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2a683d...13e846` | ⚠️ Unaudited |
+| IAGON | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x40eb74...8a1fc8` | ⚠️ Unaudited |
+| InitializableAdminUpgradeabilityProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7a43b0...51ee52` | ⚠️ Unaudited |
+| MapMyAddress | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x23e447...942719` | ⚠️ Unaudited |
+| MintGatewayLogicV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1a5628...ce22b4` | ⚠️ Unaudited |
+| MintGatewayProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x05387a...c6b1aa` | ⚠️ Unaudited |
+| MintGatewayUpgrader | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x137730...b04804` | ⚠️ Unaudited |
+| Orderbook | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6b8bb1...2598e0` | ⚠️ Unaudited |
+| ProtocolLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x547516...bdbadf` | ⚠️ Unaudited |
+| ProtocolLogicV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x637278...2447c8` | ⚠️ Unaudited |
+| ProtocolProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4d880b...69b47a` | ⚠️ Unaudited |
+| ProxyERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfe18be...63cfc6` | ⚠️ Unaudited |
+| Raffle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x45ef56...34f2e2` | ⚠️ Unaudited |
+| RenERC20LogicV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0a2d36...8c1bee` | ⚠️ Unaudited |
+| RenERC20Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xee2740...7894a7` | ⚠️ Unaudited |
+| RenExAtomicSwapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc3fed6...a01cc3` | ⚠️ Unaudited |
+| RenExBalances | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5ec18b...a77efd` | ⚠️ Unaudited |
+| RenExBrokerVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x31a0d1...d2e383` | ⚠️ Unaudited |
+| RenExSettlement | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x908262...2b21e1` | ⚠️ Unaudited |
+| RenExTokens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7cade4...744ec4` | ⚠️ Unaudited |
+| RenProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x044906...0ad01c` | ⚠️ Unaudited |
+| RenToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8e0679...eb40ed` | ⚠️ Unaudited |
+| Replica | unknown | project_anchor | own_supporting | 1 | ethereum | unit-249942 | `0x049b51...2f20ef` | ⚠️ Unaudited |
+| RepublicToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x21c482...9fcebd` | ⚠️ Unaudited |
+| SettlementRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x119da7...551036` | ⚠️ Unaudited |
+| SHFLFarmer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xba4c39...c920d2` | ⚠️ Unaudited |
+| ShifterRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1d4713...876cac` | ⚠️ Unaudited |
+| Staker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xad2fd1...5a438e` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfe43c3...314fdb` | ⚠️ Unaudited |
+| TokenRegistry | unknown | project_anchor | own_supporting | 1 | ethereum | unit-249943 | 2 deployments: ethereum `0x0a6f56...ef3b79`; ethereum `0xa7e4fe...855c1b` | ⚠️ Unaudited |
+| UpdaterManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x2e09ed...9e03ac` | ⚠️ Unaudited |
+| UpgradeBeacon | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249863 | `0x063e87...0084cc` | ⚠️ Unaudited |
+| UpgradeBeaconController | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249923 | `0xdb3785...9dfd7e` | ⚠️ Unaudited |
+| UpgradeBeaconProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0x030932...383e61` | ⚠️ Unaudited |
+| WMTDrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7944b4...beed07` | ⚠️ Unaudited |
+| XAppConnectionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonbeam | n/a | `0xdb3785...9dfd7e` | ⚠️ Unaudited |
+| XXXXToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf8f560...c1dc1a` | ⚠️ Unaudited |
+| zBCH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0e68ee...8f1a73` | ⚠️ Unaudited |
+| zBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x88c64a...78bb7d` | ⚠️ Unaudited |
+| ZEC_DAI_Reserve | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7b3b73...407bf9` | ⚠️ Unaudited |
+| ZECGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x37a486...62ef93` | ⚠️ Unaudited |
+| ZECGateway | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x52c883...ada49d` | ⚠️ Unaudited |
+| ZECShifter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2b59ef...461d5b` | ⚠️ Unaudited |
+| zZEC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x09aa07...f65295` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -173,39 +234,74 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (30)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249864 | `0x0876df...298b71` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249865 | `0x0a627a...a4eb70` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249872 | `0x3009c9...a4777a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249878 | `0x4ad644...aa47ba` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249879 | `0x4d5ff8...911f98` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249882 | `0x569d80...819de0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249886 | `0x5bae47...30033a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249887 | `0x5d9430...6daeba` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249890 | `0x67833a...d6c981` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249892 | `0x7f58bb...8e831b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249898 | `0x88a69b...ad30a3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249900 | `0x8ca56e...5a2fb2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249905 | `0x8f184d...815b6f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249909 | `0x9272c9...57f715` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249911 | `0x92d340...cff4c8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249914 | `0x9f7ea8...56ac4f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249917 | `0xb70588...f5fb00` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249918 | `0xba8d75...2ea663` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249922 | `0xd3dfd3...efce2d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249925 | `0xef9898...d0f766` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-249927 | `0xfe8874...593b2f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-249928 | `0x1dc78a...6d95e0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-249929 | `0x21a8da...829aec` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-249930 | `0x30d2a9...d916a7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-249933 | `0x5130ca...b11f2b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-249934 | `0x8d6e23...b0308e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-249935 | `0x8e70cd...a0e594` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-249936 | `0x8f552a...f01ec9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-249938 | `0xc234a6...b52413` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-249941 | `0x38dcf0...cd60a6` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Hinkal_Zokyo_Feb20th_2024.pdf](https://github.com/zokyo-sec/audit-reports/blob/main/Hinkal/Hinkal_Zokyo_Feb20th_2024.pdf) | unknown | Audit | n/a | unknown | Inherited from Hinkal — forked code, scoped to DarknodeRegistry, DarknodeRegistryLogicV2, MintGatewayLogicV2 | inherited | 3 | n/a |
-| [index.html](https://certificate.quantstamp.com/full/hinkal-protocol/66b9b783-8b42-4a4e-89ed-3ef2a2df5958/index.html) | Quantstamp | Audit | n/a | unknown | Inherited from Hinkal — forked code, scoped to DarknodeRegistry, DarknodeRegistryLogicV2, MintGatewayLogicV2 | inherited | 3 | n/a |
-| [www.zksecurity.xyz/reports/hinkal-audit](https://www.zksecurity.xyz/reports/hinkal-audit) | unknown | Audit | n/a | unknown | Inherited from Hinkal — forked code, scoped to DarknodeRegistry, DarknodeRegistryLogicV2, MintGatewayLogicV2 | inherited | 3 | n/a |
-| [immunefi.com/audit-competition/hinkal-iop/leaderboard](https://immunefi.com/audit-competition/hinkal-iop/leaderboard) | Immunefi | Contest | n/a | unknown | Inherited from Hinkal — forked code, scoped to DarknodeRegistry, DarknodeRegistryLogicV2, MintGatewayLogicV2 | inherited | 3 | n/a |
-| [drive.google.com/file/d/1DomEnIQ0o4Fv7ELFvnVAIP9vgd6Ez__A/view](https://drive.google.com/file/d/1DomEnIQ0o4Fv7ELFvnVAIP9vgd6Ez__A/view?usp=sharing&utm_source=immunefi) | unknown | Contest | n/a | unknown | Inherited from Hinkal — forked code, scoped to DarknodeRegistry, DarknodeRegistryLogicV2, MintGatewayLogicV2 | inherited | 3 | n/a |
-| [security-audits.md](https://hinkal-team.gitbook.io/hinkal/technical-description/security-audits.md) | yAudit | Audit | n/a | unknown | Inherited from Hinkal — forked code, scoped to DarknodeRegistry, DarknodeRegistryLogicV2, MintGatewayLogicV2 | inherited | 3 | n/a |
-| [drive.google.com/file/d/1A0kGmlg04X88-_c4uU0F5WvaMGTDUT3s/view](https://drive.google.com/file/d/1A0kGmlg04X88-_c4uU0F5WvaMGTDUT3s/view?usp=sharing) | Quantstamp | Audit | n/a | unknown | Inherited from Hinkal — forked code, scoped to DarknodeRegistry, DarknodeRegistryLogicV2, MintGatewayLogicV2 | inherited | 3 | n/a |
-| [drive.google.com/file/d/1SclKWU99HSVgVxfIh7zz4BWuJO46Jd9W/view](https://drive.google.com/file/d/1SclKWU99HSVgVxfIh7zz4BWuJO46Jd9W/view?usp=sharing) | Quantstamp | Audit | n/a | unknown | Inherited from Hinkal — forked code, scoped to DarknodeRegistry, DarknodeRegistryLogicV2, MintGatewayLogicV2 | inherited | 3 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x2d6775...d1f304` | ETHHelper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x049b51...2f20ef` | Replica | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0a6f56...ef3b79` | TokenRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x063e87...0084cc` | UpgradeBeacon | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xdb3785...9dfd7e` | UpgradeBeaconController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 83 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 86 |
+| standard_library | 3 |
+| needs_review | 30 |
 
 ## Scope Matching Notes
 
@@ -213,7 +309,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
-- Match method counts: inherited_name_remap=24
+- Match method counts: n/a
 
 Fork inheritance lineage and inherited audits are included when available.

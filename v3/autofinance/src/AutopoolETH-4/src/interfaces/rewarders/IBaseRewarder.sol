@@ -1,20 +1,14 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 interface IBaseRewarder {
     error RecoverDurationPending();
 
     event RewardAdded(
-        uint256 reward,
-        uint256 rewardRate,
-        uint256 lastUpdateBlock,
-        uint256 periodInBlockFinish,
-        uint256 historicalRewards
+        uint256 reward, uint256 rewardRate, uint256 lastUpdateTime, uint256 periodFinish, uint256 historicalRewards
     );
-    event UserRewardUpdated(
-        address indexed user, uint256 amount, uint256 rewardPerTokenStored, uint256 lastUpdateBlock
-    );
+    event UserRewardUpdated(address indexed user, uint256 amount, uint256 rewardPerTokenStored, uint256 lastUpdateTime);
     event Staked(address indexed user, uint256 amount);
     event Withdrawn(address indexed user, uint256 amount);
     event RewardPaid(address indexed user, address indexed recipient, uint256 reward);
@@ -48,19 +42,19 @@ interface IBaseRewarder {
     ) external view returns (uint256);
 
     /**
-     * @notice Calculates the rewards per token for the current block.
+     * @notice Calculates the rewards per token for the current second.
      * @dev The total amount of rewards available in the system is fixed, and it needs to be distributed among the users
      * based on their token balances and staking duration.
-     * Rewards per token represent the amount of rewards that each token is entitled to receive at the current block.
+     * Rewards per token represent the amount of rewards that each token is entitled to receive at the current second.
      * The calculation takes into account the reward rate, the time duration since the last update,
      * and the total supply of tokens in the staking pool.
-     * @return The updated rewards per token value for the current block.
+     * @return The updated rewards per token value for the current second.
      */
     function rewardPerToken() external view returns (uint256);
 
     /**
-     * @notice Get the current reward rate per block.
-     * @return The current reward rate per block.
+     * @notice Get the current reward rate per second.
+     * @return The current reward rate per second.
      */
     function rewardRate() external view returns (uint256);
 
@@ -71,10 +65,10 @@ interface IBaseRewarder {
     function tokeLockDuration() external view returns (uint256);
 
     /**
-     * @notice Get the last block where rewards are applicable.
-     * @return The last block number where rewards are applicable.
+     * @notice Get the last timestamp where rewards are applicable.
+     * @return The last timestamp where rewards are applicable.
      */
-    function lastBlockRewardApplicable() external view returns (uint256);
+    function lastTimeRewardApplicable() external view returns (uint256);
 
     /**
      * @notice The total amount of tokens staked

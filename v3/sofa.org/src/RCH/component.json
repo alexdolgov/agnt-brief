@@ -1,10 +1,19 @@
 {
   "component": "RCH",
   "main_contract": "RCH",
+  "source_entry_count": 23,
   "source_file_count": 23,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RCH\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
+    "https://github.com/sigp/public-audits/blob/master/reports/sofa/review.pdf",
     "https://raw.githubusercontent.com/sigp/public-audits/48f7de362df66942a77e1dd5954b580f28ed367f/reports/sofa/review.pdf"
   ],
   "addresses": [
@@ -14,7 +23,9 @@
       "address": "0x57b96d4af698605563a4653d882635da59bf11af",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399122"
     }
   ]
 }

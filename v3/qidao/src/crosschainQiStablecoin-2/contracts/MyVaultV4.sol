@@ -1,6 +1,6 @@
 // contracts/MyVaultNFT.sol
 // SPDX-License-Identifier: MIT
-pragma solidity 0.5.17;
+pragma solidity 0.5.16;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721Full.sol";
 

@@ -1,26 +1,28 @@
 {
   "component": "PrizePool-3",
   "main_contract": "PrizePool",
+  "source_entry_count": 43,
   "source_file_count": 43,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PrizePool-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xc6ae7db3b9552dad4a0adf92d67857ebfb48042d",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x0c08c2999e1a14569554eddbcda9da5e1918120f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xe32e5e1c5f0c80bd26def2d0ea5008c107000d6a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397899"
     }
   ]
 }

@@ -1,18 +1,28 @@
 {
   "component": "DODOMineV3Proxy-4",
   "main_contract": "DODOMineV3Proxy",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DODOMineV3Proxy-4\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0xa6d0066328edbcf3220cf8f61e8527e589dd9719",
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x5d6e6a0bfb2176afcc4fb809822d8e009216b245",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393997"
     }
   ]
 }

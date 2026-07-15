@@ -1,19 +1,22 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
+import {ERC20} from "@solmate/tokens/ERC20.sol";
+import {ERC4626} from "@solmate/tokens/ERC4626.sol";
+import {SafeTransferLib} from "@solmate/utils/SafeTransferLib.sol";
+
 import {IRewardVault as IBerachainRewardsVault} from
     "@berachain/pol/interfaces/IRewardVault.sol";
-import {ERC20} from "@solmate/tokens/ERC20.sol";
-import {SafeTransferLib} from "@solmate/utils/SafeTransferLib.sol";
+
 import {IInfraredDistributor} from "src/interfaces/IInfraredDistributor.sol";
 import {IBerachainBGTStaker} from "src/interfaces/IBerachainBGTStaker.sol";
 import {IInfraredVault} from "src/interfaces/IInfraredVault.sol";
 import {ConfigTypes} from "src/core/libraries/ConfigTypes.sol";
 import {IBerachainBGT} from "src/interfaces/IBerachainBGT.sol";
 import {IInfrared} from "src/interfaces/IInfrared.sol";
+import {IInfraredV1_9} from "src/interfaces/upgrades/IInfraredV1_9.sol";
 import {IReward} from "src/voting/interfaces/IReward.sol";
 import {IVoter} from "src/voting/interfaces/IVoter.sol";
-import {DataTypes} from "src/utils/DataTypes.sol";
 import {IWBERA} from "src/interfaces/IWBERA.sol";
 import {IInfraredBGT} from "src/interfaces/IInfraredBGT.sol";
 import {IInfraredGovernanceToken} from
@@ -320,6 +323,34 @@ library RewardsLib {
         } catch {
             return 0;
         }
+    }
+
+    /// @notice Alternative to Harvet base rewards, auctioning iBGT on harvestBaseCollector, from BGT rewards from Distributor
+    ///     ref - https://github.com/berachain/contracts-monorepo/blob/main/src/pol/rewards/Distributor.sol#L160
+    /// @notice The BGT accumilates in the contract, therfore can check balance(this) since all other BGT rewards are claimed and harvested atomically
+    /// @param ibgt     The address of the InfraredBGT toke
+    /// @param bgt      The address of the BGT token
+    /// @param harvestBaseCollector The address of the harvestBaseCollector contract
+    /// @return bgtAmt  The amount of BGT rewards harvested
+    function auctionBase(
+        address ibgt,
+        address bgt,
+        address harvestBaseCollector
+    ) external returns (uint256 bgtAmt) {
+        // Since BGT balance has accrued to this contract, we check for what we've already accounted for
+        uint256 minted = IInfraredBGT(ibgt).totalSupply();
+
+        // The balance of BGT in the contract is the rewards accumulated from base rewards since the last harvest
+        // Since is paid out every block our validators propose (have a `Distributor::distibuteFor()` call)
+        uint256 balance = IBerachainBGT(bgt).balanceOf(address(this));
+        if (balance == 0) return 0;
+
+        // @dev the amount that will be minted is the difference between the balance accrued since the last harvestVault and the current balance in the contract.
+        // This difference should keep getting bigger as the contract accumilates more bgt from `Distributor::distibuteFor()` calls.
+        bgtAmt = balance - minted;
+
+        // @dev mint equivilent of iBGT to the harvestBaseCollector
+        IInfraredBGT(ibgt).mint(harvestBaseCollector, bgtAmt);
     }
 
     /// @notice Harvests the accrued BGT rewards to a vault.
@@ -640,6 +671,18 @@ library RewardsLib {
         );
     }
 
+    /// @notice redeem ibgt for bera
+    /// @param bgt              The address of the BGT token
+    /// @param ibgt             The address of the iBGT token
+    /// @param amount           Amount of ibgt to redeem
+    function redeemIbgtForBera(address bgt, address ibgt, uint256 amount)
+        external
+    {
+        ERC20(ibgt).safeTransferFrom(msg.sender, address(this), amount);
+        IInfraredBGT(ibgt).burn(amount);
+        IBerachainBGT(bgt).redeem(msg.sender, amount);
+    }
+
     /*´:°•.°+.*•´.*:˚.°*.˚•´.°:°•.°•.*•´.*:˚.°*.˚•´.°:°•.°+.*•´.*:*/
     /*                       CALLBACK                             */
     /*.•°:°.´+˚.*°.˚:*.´•*.+°.•°:´*.´•*.•°.•°:°.´:•˚°.*°.˚:*.´+°.•*/
@@ -692,6 +735,61 @@ library RewardsLib {
             wbera,
             voter,
             amtIbgtVault,
+            feeTotal,
+            feeProtocol,
+            rewardsDuration
+        );
+    }
+
+    /// @notice Callback from the BribeCollector to payout the iBGT bribes were auctioned off for
+    ///     ref - https://github.com/infrared-dao/infrared-contracts/blob/develop/src/core/BribeCollector.sol#L87
+    /// @param $        Storage pointer for reward accumulators
+    /// @param _amount          The amount of iBGT our bribes were auctioned off for
+    /// @param ibgt            The address of the iBGT token
+    /// @param ibgtVault        The address of the InfraredBGT vault
+    /// @param voter            The address of the voter (address(0) if IR token is not live)
+    /// @param harvestBaseCollector The address of base collector auction contract
+    /// @param rewardsDuration  The duration of the rewards
+    ///
+    /// @notice iBGT is split between the iBERA product (where it is redeemed for BERA) and the rest is sent to the IBGT vault.
+    /// @return amtInfraredBERA The amount of iBGT sent to the iBERA product
+    /// @return amtIbgtVault    The amount of iBGT sent to the IBGT vault
+    function collectBribesInIBGT(
+        RewardsStorage storage $,
+        uint256 _amount,
+        address ibgt,
+        address ibgtVault,
+        address voter,
+        address harvestBaseCollector,
+        uint256 rewardsDuration
+    ) external returns (uint256 amtInfraredBERA, uint256 amtIbgtVault) {
+        // transfer iBGT from bribe collector
+        ERC20(ibgt).safeTransferFrom(msg.sender, address(this), _amount);
+
+        // determine amount to send to iBERA and IBGT vault
+        amtInfraredBERA = (_amount * $.bribeSplitRatio) / UNIT_DENOMINATOR;
+        amtIbgtVault = _amount - amtInfraredBERA;
+
+        // Send iBGT to harvestBaseCollector to auction for BERA to send to IBERA receivor for compounding
+        ERC20(ibgt).safeTransfer(harvestBaseCollector, amtInfraredBERA);
+
+        // Get Fee totals (voter + protocol)
+        uint256 feeTotal =
+            $.fees[uint256(ConfigTypes.FeeType.HarvestBribesFeeRate)];
+        uint256 feeProtocol =
+            $.fees[uint256(ConfigTypes.FeeType.HarvestBribesProtocolRate)];
+
+        address wiBGT = IInfraredV1_9(address(this)).wiBGT();
+        uint256 wibgtAmount =
+            ERC4626(wiBGT).deposit(amtIbgtVault, address(this));
+
+        // Charge fees and notify rewards
+        _handleTokenRewardsForVault(
+            $,
+            IInfraredVault(ibgtVault),
+            wiBGT,
+            voter,
+            wibgtAmount,
             feeTotal,
             feeProtocol,
             rewardsDuration

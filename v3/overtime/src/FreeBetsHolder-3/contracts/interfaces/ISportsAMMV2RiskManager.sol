@@ -57,6 +57,12 @@ interface ISportsAMMV2RiskManager {
         bool _isLive
     ) external view returns (uint cap);
 
+    function calculateTotalRiskOnGame(
+        bytes32 _gameId,
+        uint16 _sportId,
+        uint _maturity
+    ) external view returns (uint totalRisk);
+
     function checkRisks(
         ISportsAMMV2.TradeData[] memory _tradeData,
         uint _buyInAmount,
@@ -110,4 +116,7 @@ interface ISportsAMMV2RiskManager {
     ) external view returns (uint systemBetPayout, uint systemBetQuote);
 
     function generateCombinations(uint8 n, uint8 k) external pure returns (uint8[][] memory);
+
+    function getCashoutSafeBoxFeeMultiplier() external view returns (uint);
+    function getCashoutCooldown() external view returns (uint);
 }

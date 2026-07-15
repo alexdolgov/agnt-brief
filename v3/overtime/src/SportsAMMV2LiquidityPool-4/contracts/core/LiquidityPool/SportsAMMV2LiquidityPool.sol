@@ -10,7 +10,6 @@ import "@openzeppelin/contracts/proxy/Clones.sol";
 import "../../utils/proxy/ProxyReentrancyGuard.sol";
 import "../../utils/proxy/ProxyOwned.sol";
 
-import "@thales-dao/contracts/contracts/interfaces/IStakingThales.sol";
 import "@thales-dao/contracts/contracts/interfaces/IPriceFeed.sol";
 import "@thales-dao/contracts/contracts/interfaces/IAddressManager.sol";
 
@@ -22,6 +21,48 @@ import "../../interfaces/ISportsAMMV2.sol";
 import "../../interfaces/ISportsAMMV2RiskManager.sol";
 
 contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradeable, ProxyReentrancyGuard {
+    /* ========== CUSTOM ERRORS ========== */
+
+    error LPHasStarted();
+    error CantStartWithoutDeposits();
+    error CantDepositDirectlyAsDefaultLP();
+    error MaxUsersReached();
+    error PoolNotStarted();
+    error ZeroAmount();
+    error AmountExceedsUtilRate();
+    error InvalidRound();
+    error OnlyDefaultRound();
+    error TicketNotInCurrentRound();
+    error ArraysLengthsMustMatch();
+    error TicketIndexMustBeGreaterThan0();
+    error TicketNotFoundInInputArray();
+    error InvalidWithdrawalValue();
+    error CantCloseRound();
+    error RoundClosingNotPrepared();
+    error AllUsersProcessed();
+    error BatchSizeZero();
+    error NotAllUsersProcessed();
+    error DefaultLPNotSet();
+    error RoundPoolMastercopyNotSet();
+    error RoundAlreadyClosed();
+    error TicketNotInRound();
+    error TicketAlreadyExercised();
+    error TicketAlreadyResolved();
+    error TicketNotFound();
+    error ZeroAddress();
+    error CantChangeAfterPoolStart();
+    error UtilRateTooHigh();
+    error SafeBoxImpactTooHigh();
+    error CantDepositDuringWithdrawalRequested();
+    error AmountExceedsLPCap();
+    error AmountLessThanMinDeposit();
+    error WithdrawalAlreadyRequested();
+    error NothingToWithdraw();
+    error CantWithdrawWhenDepositedForNextRound();
+    error OnlyFromAMM();
+    error NotAllowedWhenRoundClosingPrepared();
+    error InvalidSender();
+
     /* ========== LIBRARIES ========== */
 
     using SafeERC20 for IERC20;
@@ -48,6 +89,8 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     uint private constant ONE = 1e18;
     uint private constant ONE_PERCENT = 1e16;
     uint private constant MAX_APPROVAL = type(uint256).max;
+    uint private constant MAX_CURSOR_MOVES_PER_BATCH = 1000;
+    uint private constant DEFAULT_ROUND = 1;
 
     /* ========== STATE VARIABLES ========== */
 
@@ -102,6 +145,8 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
 
     bytes32 public collateralKey;
 
+    mapping(uint => uint) public nextExerciseIndexPerRound;
+
     /* ========== CONSTRUCTOR ========== */
 
     function initialize(InitParams calldata params) external initializer {
@@ -113,26 +158,24 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
         collateral = params._collateral;
         collateralKey = params._collateralKey;
         roundLength = params._roundLength;
-        maxAllowedDeposit = params._maxAllowedDeposit;
-        minDepositAmount = params._minDepositAmount;
-        maxAllowedUsers = params._maxAllowedUsers;
-        require(params._utilizationRate <= 1e18, "Utilization rate can't exceed 100%");
-        utilizationRate = params._utilizationRate;
-        safeBox = params._safeBox;
 
-        require(params._safeBoxImpact <= 1e18, "Safe Box impact can't exceed 100%");
-        safeBoxImpact = params._safeBoxImpact;
+        _setMaxAllowedDeposit(params._maxAllowedDeposit);
+        _setMinDepositAmount(params._minDepositAmount);
+        _setMaxAllowedUsers(params._maxAllowedUsers);
+
+        _setUtilizationRate(params._utilizationRate);
+        _setSafeBoxParams(params._safeBox, params._safeBoxImpact);
 
         collateral.approve(params._sportsAMM, MAX_APPROVAL);
-        round = 1;
+        round = DEFAULT_ROUND;
     }
 
     /* ========== EXTERNAL WRITE FUNCTIONS ========== */
 
     /// @notice start pool and begin round #2
     function start() external onlyOwner {
-        require(!started, "LP has already started");
-        require(allocationPerRound[2] > 0, "Can not start with 0 deposits");
+        if (started) revert LPHasStarted();
+        if (allocationPerRound[2] == 0) revert CantStartWithoutDeposits();
 
         firstRoundStartTime = block.timestamp;
         round = 2;
@@ -157,11 +200,11 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
         address roundPool = _getOrCreateRoundPool(nextRound);
         collateral.safeTransferFrom(msg.sender, roundPool, amount);
 
-        require(msg.sender != defaultLiquidityProvider, "Can't deposit directly as default LP");
+        if (msg.sender == defaultLiquidityProvider) revert CantDepositDirectlyAsDefaultLP();
 
         // new user enters the pool
         if (balancesPerRound[round][msg.sender] == 0 && balancesPerRound[nextRound][msg.sender] == 0) {
-            require(usersCurrentlyInPool < maxAllowedUsers, "Max amount of users reached");
+            if (usersCurrentlyInPool >= maxAllowedUsers) revert MaxUsersReached();
             usersPerRound[nextRound].push(msg.sender);
             usersCurrentlyInPool = usersCurrentlyInPool + 1;
         }
@@ -178,18 +221,17 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     /// @param ticket to trade
     /// @param amount amount to get
     function commitTrade(address ticket, uint amount) external nonReentrant whenNotPaused onlyAMM roundClosingNotPrepared {
-        require(started, "Pool has not started");
-        require(amount > 0, "Can't commit a zero trade");
+        if (!started) revert PoolNotStarted();
+        if (amount == 0) revert ZeroAmount();
         uint ticketRound = getTicketRound(ticket);
         roundPerTicket[ticket] = ticketRound;
         address liquidityPoolRound = _getOrCreateRoundPool(ticketRound);
         if (ticketRound == round) {
             collateral.safeTransferFrom(liquidityPoolRound, address(sportsAMM), amount);
-            require(
-                collateral.balanceOf(liquidityPoolRound) >=
-                    (allocationPerRound[round] - ((allocationPerRound[round] * utilizationRate) / ONE)),
-                "Amount exceeds available utilization for round"
-            );
+            if (
+                collateral.balanceOf(liquidityPoolRound) <
+                (allocationPerRound[round] - ((allocationPerRound[round] * utilizationRate) / ONE))
+            ) revert AmountExceedsUtilRate();
         } else if (ticketRound > round) {
             uint poolBalance = collateral.balanceOf(liquidityPoolRound);
             if (poolBalance >= amount) {
@@ -200,11 +242,43 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
                 collateral.safeTransferFrom(liquidityPoolRound, address(sportsAMM), amount);
             }
         } else {
-            require(ticketRound == 1, "Invalid round");
+            if (ticketRound != DEFAULT_ROUND) revert InvalidRound();
             _provideAsDefault(amount);
         }
         tradingTicketsPerRound[ticketRound].push(ticket);
         isTradingTicketInARound[ticketRound][ticket] = true;
+    }
+
+    /// @notice Track a default-round ticket without pulling profit from LP.
+    ///         AMM sends buyIn to defaultLiquidityProvider for safekeeping.
+    /// @param ticket the ticket to track
+    /// @param buyInAmount the user's buy-in to deposit into LP
+    function commitTradeDeferred(
+        address ticket,
+        uint buyInAmount
+    ) external nonReentrant whenNotPaused onlyAMM roundClosingNotPrepared {
+        if (!started) revert PoolNotStarted();
+        if (buyInAmount == 0) revert ZeroAmount();
+        if (getTicketRound(ticket) != DEFAULT_ROUND) revert OnlyDefaultRound();
+        roundPerTicket[ticket] = DEFAULT_ROUND;
+        _getOrCreateRoundPool(DEFAULT_ROUND);
+
+        // Take buyIn from AMM and deposit into defaultLiquidityProvider
+        collateral.safeTransferFrom(address(sportsAMM), defaultLiquidityProvider, buyInAmount);
+
+        tradingTicketsPerRound[DEFAULT_ROUND].push(ticket);
+        isTradingTicketInARound[DEFAULT_ROUND][ticket] = true;
+    }
+
+    /// @notice Pull funds from defaultLiquidityProvider to AMM for ticket resolution.
+    ///         Only for default-round tickets with deferred collateralization.
+    /// @param ticket the ticket being resolved
+    /// @param amount the amount to pull from LP to AMM
+    function provideForResolution(address ticket, uint amount) external whenNotPaused onlyAMM {
+        uint ticketRound = getTicketRound(ticket);
+        if (ticketRound != DEFAULT_ROUND) revert OnlyDefaultRound();
+        if (amount == 0) revert ZeroAmount();
+        collateral.safeTransferFrom(defaultLiquidityProvider, address(sportsAMM), amount);
     }
 
     /// @notice transfer collateral amount from AMM to LP (ticket liquidity pool round)
@@ -213,11 +287,13 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
         uint ticketRound = getTicketRound(_ticket);
 
         // if this is a past round, but not the default one, then we send the funds to the current round
-        if (ticketRound > 1 && ticketRound < round) {
+        if (ticketRound > DEFAULT_ROUND && ticketRound < round) {
             ticketRound = round;
         }
         if (_amount > 0) {
-            address liquidityPoolRound = ticketRound <= 1 ? defaultLiquidityProvider : _getOrCreateRoundPool(ticketRound);
+            address liquidityPoolRound = ticketRound <= DEFAULT_ROUND
+                ? defaultLiquidityProvider
+                : _getOrCreateRoundPool(ticketRound);
             collateral.safeTransferFrom(address(sportsAMM), liquidityPoolRound, _amount);
         }
         if (isTradingTicketInARound[ticketRound][_ticket]) {
@@ -235,7 +311,7 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
         uint _ticketIndexInRound
     ) external onlyWhitelistedAddresses(msg.sender) roundClosingNotPrepared {
         uint ticketRound = getTicketRound(_ticket);
-        require(ticketRound == round, "TicketNotInCurrentRound");
+        if (ticketRound != round) revert TicketNotInCurrentRound();
         _migrateTicketToNewRound(_ticket, _newRound == 0 ? round + 1 : _newRound, _ticketIndexInRound);
     }
 
@@ -254,10 +330,10 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
                 _migrateTicketToNewRound(_tickets[i], _newRound, 0);
             }
         } else {
-            require(_tickets.length == _ticketsIndexInRound.length, "ArraysLengthsMustMatch");
+            if (_tickets.length != _ticketsIndexInRound.length) revert ArraysLengthsMustMatch();
             uint tradingTicketsLength = tradingTicketsPerRound[round].length;
             for (uint i = 0; i < _tickets.length; i++) {
-                require(_ticketsIndexInRound[i] > 0, "TicketIndexMustBeGreaterThan0");
+                if (_ticketsIndexInRound[i] == 0) revert TicketIndexMustBeGreaterThan0();
                 // check if the ticket index has not been migrated yet
                 if (_ticketsIndexInRound[i] < tradingTicketsLength - i) {
                     _migrateTicketToNewRound(_tickets[i], _newRound, _ticketsIndexInRound[i]);
@@ -273,7 +349,7 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
                         }
                         ++n;
                     }
-                    require(found, "TicketNotFoundInInputArray");
+                    if (!found) revert TicketNotFoundInInputArray();
                     _migrateTicketToNewRound(_tickets[i], _newRound, _ticketsIndexInRound[n]);
                 }
             }
@@ -296,7 +372,7 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     /// @notice request partial withdrawal from the LP
     /// @param _share the percentage the user is wihdrawing from his total deposit
     function partialWithdrawalRequest(uint _share) external nonReentrant canWithdraw whenNotPaused roundClosingNotPrepared {
-        require(_share >= ONE_PERCENT * 10 && _share <= ONE_PERCENT * 90, "Share has to be between 10% and 90%");
+        if (_share < ONE_PERCENT * 10 || _share > ONE_PERCENT * 90) revert InvalidWithdrawalValue();
 
         uint toWithdraw = (balancesPerRound[round][msg.sender] * _share) / ONE;
         if (totalDeposited > toWithdraw) {
@@ -312,26 +388,11 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
 
     /// @notice prepare round closing - exercise tickets and ensure there are no tickets left unresolved, handle SB profit and calculate PnL
     function prepareRoundClosing() external nonReentrant whenNotPaused roundClosingNotPrepared {
-        // standard path: we also exercise tickets on-chain
-        require(canCloseCurrentRound(), "Can't close current round");
+        // do this first to move the cursor if needed
         exerciseTicketsReadyToBeExercised();
-        _prepareRoundClosingInternal();
-    }
 
-    /// @notice admin-only variant of prepareRoundClosing that assumes all tickets
-    ///         that needed to be exercised already were, and skips the exercise step.
-    /// @dev Use with extreme care – if tickets are still exercisable, LP accounting can be wrong.
-    function adminPrepareClosing() external nonReentrant whenNotPaused roundClosingNotPrepared onlyOwner {
-        // admin path: skip exercising, just run closing logic
-        _prepareRoundClosingInternal();
-    }
+        if (!canCloseCurrentRound()) revert CantCloseRound();
 
-    /// @dev shared logic for preparing round closing:
-    ///      - checks canCloseCurrentRound
-    ///      - handles SafeBox share
-    ///      - computes PnL
-    ///      - sets roundClosingPrepared and emits event
-    function _prepareRoundClosingInternal() internal {
         address roundPool = roundPools[round];
         // final balance is the final amount of collateral in the round pool
         uint currentBalance = collateral.balanceOf(roundPool);
@@ -361,9 +422,9 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     /// @notice process round closing batch - update balances and handle withdrawals
     /// @param _batchSize size of batch
     function processRoundClosingBatch(uint _batchSize) external nonReentrant whenNotPaused {
-        require(roundClosingPrepared, "Round closing not prepared");
-        require(usersProcessedInRound < usersPerRound[round].length, "All users already processed");
-        require(_batchSize > 0, "Batch size has to be greater than 0");
+        if (!roundClosingPrepared) revert RoundClosingNotPrepared();
+        if (usersProcessedInRound >= usersPerRound[round].length) revert AllUsersProcessed();
+        if (_batchSize == 0) revert BatchSizeZero();
 
         address roundPool = roundPools[round];
 
@@ -401,8 +462,8 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
 
     /// @notice close current round and begin next round - calculate cumulative PnL
     function closeRound() external nonReentrant whenNotPaused {
-        require(roundClosingPrepared, "Round closing not prepared");
-        require(usersProcessedInRound == usersPerRound[round].length, "Not all users processed yet");
+        if (!roundClosingPrepared) revert RoundClosingNotPrepared();
+        if (usersProcessedInRound != usersPerRound[round].length) revert NotAllUsersProcessed();
         // set for next round to false
         roundClosingPrepared = false;
 
@@ -446,7 +507,7 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
 
     /// @notice iterate all tickets in the default round and exercise those ready to be exercised
     function exerciseDefaultRoundTicketsReadyToBeExercised() external whenNotPaused {
-        _exerciseTicketsReadyToBeExercised(1);
+        _exerciseTicketsReadyToBeExercised(DEFAULT_ROUND);
     }
 
     /// @notice iterate all tickets in the current round and exercise those ready to be exercised (batch)
@@ -462,7 +523,7 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     function exerciseDefaultRoundTicketsReadyToBeExercisedBatch(
         uint _batchSize
     ) external nonReentrant whenNotPaused roundClosingNotPrepared {
-        _exerciseTicketsReadyToBeExercisedBatch(_batchSize, 1);
+        _exerciseTicketsReadyToBeExercisedBatch(_batchSize, DEFAULT_ROUND);
     }
 
     /* ========== EXTERNAL READ FUNCTIONS ========== */
@@ -497,7 +558,11 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
 
         Ticket ticket;
         address ticketAddress;
-        for (uint i = 0; i < tradingTicketsPerRound[round].length; i++) {
+
+        uint len = tradingTicketsPerRound[round].length;
+        uint cursor = nextExerciseIndexPerRound[round];
+
+        for (uint i = cursor; i < len; ++i) {
             ticketAddress = tradingTicketsPerRound[round][i];
             if (!ticketAlreadyExercisedInRound[round][ticketAddress]) {
                 ticket = Ticket(ticketAddress);
@@ -518,13 +583,18 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     /// @notice iterate all tickets in the default round and return true if at least one can be exercised
     /// @return bool
     function hasDefaultRoundTicketsReadyToBeExercised() external view returns (bool) {
-        return _hasTicketsReadyToBeExercised(1);
+        return _hasTicketsReadyToBeExercised(DEFAULT_ROUND);
     }
 
     function _hasTicketsReadyToBeExercised(uint _round) internal view returns (bool) {
         Ticket ticket;
         address ticketAddress;
-        for (uint i = 0; i < tradingTicketsPerRound[_round].length; i++) {
+
+        uint len = tradingTicketsPerRound[_round].length;
+        uint cursor = nextExerciseIndexPerRound[_round];
+
+        // Only check from the current cursor onward
+        for (uint i = cursor; i < len; i++) {
             ticketAddress = tradingTicketsPerRound[_round][i];
             if (!ticketAlreadyExercisedInRound[_round][ticketAddress]) {
                 ticket = Ticket(ticketAddress);
@@ -579,12 +649,12 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
                     } else {
                         // if ticket is cross rounds, use the default round
                         if (((maturity - firstRoundStartTime) / roundLength + 2) != ticketRound) {
-                            ticketRound = 1;
+                            ticketRound = DEFAULT_ROUND;
                             break;
                         }
                     }
                 } else {
-                    ticketRound = 1;
+                    ticketRound = DEFAULT_ROUND;
                     break;
                 }
             }
@@ -630,20 +700,82 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     /* ========== INTERNAL FUNCTIONS ========== */
 
     function _exerciseTicketsReadyToBeExercisedBatch(uint _batchSize, uint _roundNumber) internal {
-        require(_batchSize > 0, "Batch size has to be greater than 0");
-        uint count = 0;
-        for (uint i = 0; i < tradingTicketsPerRound[_roundNumber].length; i++) {
-            if (count == _batchSize) break;
-            if (_exerciseTicket(_roundNumber, tradingTicketsPerRound[_roundNumber][i])) {
-                count += 1;
+        if (_batchSize == 0) revert BatchSizeZero();
+
+        uint len = tradingTicketsPerRound[_roundNumber].length;
+        uint cursor = nextExerciseIndexPerRound[_roundNumber];
+        uint cursorMoves;
+
+        // 0) Pre-compaction: skip already exercised tickets, up to 1000 moves
+        while (
+            cursor < len &&
+            ticketAlreadyExercisedInRound[_roundNumber][tradingTicketsPerRound[_roundNumber][cursor]] &&
+            cursorMoves < MAX_CURSOR_MOVES_PER_BATCH
+        ) {
+            unchecked {
+                ++cursor;
+                ++cursorMoves;
             }
         }
+
+        // ✅ Early exit if we spent this batch just moving the cursor
+        if (cursorMoves >= MAX_CURSOR_MOVES_PER_BATCH) {
+            nextExerciseIndexPerRound[_roundNumber] = cursor;
+            return;
+        }
+
+        uint processed;
+
+        // 1) Process at most _batchSize *exercised* tickets starting from the current cursor
+        for (uint i = cursor; i < len && processed < _batchSize; ++i) {
+            if (_exerciseTicket(_roundNumber, tradingTicketsPerRound[_roundNumber][i])) {
+                unchecked {
+                    ++processed;
+                }
+            }
+        }
+
+        // 2) Post-compaction: move cursor again, up to the same remaining allowance
+        while (
+            cursor < len &&
+            ticketAlreadyExercisedInRound[_roundNumber][tradingTicketsPerRound[_roundNumber][cursor]] &&
+            cursorMoves < MAX_CURSOR_MOVES_PER_BATCH
+        ) {
+            unchecked {
+                ++cursor;
+                ++cursorMoves;
+            }
+        }
+
+        nextExerciseIndexPerRound[_roundNumber] = cursor;
     }
 
     function _exerciseTicketsReadyToBeExercised(uint _roundNumber) internal {
-        for (uint i = 0; i < tradingTicketsPerRound[_roundNumber].length; i++) {
+        uint len = tradingTicketsPerRound[_roundNumber].length;
+        uint cursor = nextExerciseIndexPerRound[_roundNumber];
+
+        // 0) Pre-compaction: skip over any tickets that were marked exercised
+        // since last time (e.g. via transferToPool or batch calls)
+        while (cursor < len && ticketAlreadyExercisedInRound[_roundNumber][tradingTicketsPerRound[_roundNumber][cursor]]) {
+            unchecked {
+                ++cursor;
+            }
+        }
+
+        // 1) Process from the (updated) cursor onward
+        for (uint i = cursor; i < len; ++i) {
             _exerciseTicket(_roundNumber, tradingTicketsPerRound[_roundNumber][i]);
         }
+
+        // 2) Post-compaction: some tickets starting at `cursor` may now be exercised;
+        // move cursor forward over that newly-exercised prefix.
+        while (cursor < len && ticketAlreadyExercisedInRound[_roundNumber][tradingTicketsPerRound[_roundNumber][cursor]]) {
+            unchecked {
+                ++cursor;
+            }
+        }
+
+        nextExerciseIndexPerRound[_roundNumber] = cursor;
     }
 
     function _exerciseTicket(uint _roundNumber, address ticketAddress) internal returns (bool exercised) {
@@ -671,7 +803,7 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     }
 
     function _depositAsDefault(uint _amount, address _roundPool, uint _round) internal {
-        require(defaultLiquidityProvider != address(0), "Default LP not set");
+        if (defaultLiquidityProvider == address(0)) revert DefaultLPNotSet();
 
         collateral.safeTransferFrom(defaultLiquidityProvider, _roundPool, _amount);
 
@@ -682,24 +814,24 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     }
 
     function _provideAsDefault(uint _amount) internal {
-        require(defaultLiquidityProvider != address(0), "Default LP not set");
+        if (defaultLiquidityProvider == address(0)) revert DefaultLPNotSet();
 
         collateral.safeTransferFrom(defaultLiquidityProvider, address(sportsAMM), _amount);
 
-        balancesPerRound[1][defaultLiquidityProvider] += _amount;
-        allocationPerRound[1] += _amount;
+        balancesPerRound[DEFAULT_ROUND][defaultLiquidityProvider] += _amount;
+        allocationPerRound[DEFAULT_ROUND] += _amount;
 
-        emit Deposited(defaultLiquidityProvider, _amount, 1);
+        emit Deposited(defaultLiquidityProvider, _amount, DEFAULT_ROUND);
     }
 
     function _getOrCreateRoundPool(uint _round) internal returns (address roundPool) {
         roundPool = roundPools[_round];
         if (roundPool == address(0)) {
-            if (_round == 1) {
+            if (_round == DEFAULT_ROUND) {
                 roundPools[_round] = defaultLiquidityProvider;
                 roundPool = defaultLiquidityProvider;
             } else {
-                require(poolRoundMastercopy != address(0), "Round pool mastercopy not set");
+                if (poolRoundMastercopy == address(0)) revert RoundPoolMastercopyNotSet();
                 SportsAMMV2LiquidityPoolRound newRoundPool = SportsAMMV2LiquidityPoolRound(
                     Clones.clone(poolRoundMastercopy)
                 );
@@ -717,30 +849,13 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
         }
     }
 
-    function _updateStakingVolume(
-        IStakingThales stakingThales,
-        address _forUser,
-        uint _amount,
-        bool _isDefaultCollateral
-    ) internal {
-        if (address(stakingThales) != address(0)) {
-            uint collateralDecimals = ISportsAMMV2Manager(address(collateral)).decimals();
-
-            if (!_isDefaultCollateral) {
-                _amount = (_amount * getCollateralPrice()) / ONE;
-            }
-
-            stakingThales.updateVolumeAtAmountDecimals(_forUser, _amount, collateralDecimals);
-        }
-    }
-
     function _migrateTicketToNewRound(address _ticket, uint _newRound, uint _ticketIndexInRound) internal {
-        require(_newRound > round || _newRound == 1, "RoundAlreadyClosed");
+        if (_newRound <= round && _newRound != DEFAULT_ROUND) revert RoundAlreadyClosed();
         uint ticketRound = getTicketRound(_ticket);
-        require(ticketRound == round, "Ticket not in current round");
-        require(isTradingTicketInARound[ticketRound][_ticket], "TicketNotInCurrentRound");
-        require(!ticketAlreadyExercisedInRound[ticketRound][_ticket], "TicketAlreadyExercised");
-        require(!Ticket(_ticket).resolved(), "TicketAlreadyResolved");
+        if (ticketRound != round) revert TicketNotInRound();
+        if (!isTradingTicketInARound[ticketRound][_ticket]) revert TicketNotInCurrentRound();
+        if (ticketAlreadyExercisedInRound[ticketRound][_ticket]) revert TicketAlreadyExercised();
+        if (Ticket(_ticket).resolved()) revert TicketAlreadyResolved();
 
         // removing from old round
         delete isTradingTicketInARound[ticketRound][_ticket];
@@ -781,7 +896,14 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
                 _ticketIndexInRound < tradingTicketsPerRound[_round].length &&
                 tradingTicketsPerRound[_round][_ticketIndexInRound] == _ticket;
         }
-        require(found, "TicketNotFound");
+        if (!found) revert TicketNotFound();
+
+        // adjust cursor if needed so we don't skip anything
+        uint cursor = nextExerciseIndexPerRound[_round];
+        if (_ticketIndexInRound < cursor) {
+            nextExerciseIndexPerRound[_round] = _ticketIndexInRound;
+        }
+
         tradingTicketsPerRound[_round][_ticketIndexInRound] = tradingTicketsPerRound[_round][
             tradingTicketsPerRound[_round].length - 1
         ];
@@ -799,7 +921,7 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     /// @notice Set _poolRoundMastercopy
     /// @param _poolRoundMastercopy to clone round pools from
     function setPoolRoundMastercopy(address _poolRoundMastercopy) external onlyOwner {
-        require(_poolRoundMastercopy != address(0), "Can not set a zero address!");
+        if (_poolRoundMastercopy == address(0)) revert ZeroAddress();
         poolRoundMastercopy = _poolRoundMastercopy;
         emit PoolRoundMastercopyChanged(poolRoundMastercopy);
     }
@@ -807,20 +929,34 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     /// @notice Set max allowed deposit
     /// @param _maxAllowedDeposit Deposit value
     function setMaxAllowedDeposit(uint _maxAllowedDeposit) external onlyOwner {
-        maxAllowedDeposit = _maxAllowedDeposit;
-        emit MaxAllowedDepositChanged(_maxAllowedDeposit);
+        _setMaxAllowedDeposit(_maxAllowedDeposit);
     }
 
     /// @notice Set min allowed deposit
     /// @param _minDepositAmount Deposit value
     function setMinAllowedDeposit(uint _minDepositAmount) external onlyOwner {
-        minDepositAmount = _minDepositAmount;
-        emit MinAllowedDepositChanged(_minDepositAmount);
+        _setMinDepositAmount(_minDepositAmount);
     }
 
     /// @notice Set _maxAllowedUsers
     /// @param _maxAllowedUsers Deposit value
     function setMaxAllowedUsers(uint _maxAllowedUsers) external onlyOwner {
+        _setMaxAllowedUsers(_maxAllowedUsers);
+    }
+
+    // ==================== INTERNAL HELPERS ====================
+
+    function _setMaxAllowedDeposit(uint _maxAllowedDeposit) internal {
+        maxAllowedDeposit = _maxAllowedDeposit;
+        emit MaxAllowedDepositChanged(_maxAllowedDeposit);
+    }
+
+    function _setMinDepositAmount(uint _minDepositAmount) internal {
+        minDepositAmount = _minDepositAmount;
+        emit MinAllowedDepositChanged(_minDepositAmount);
+    }
+
+    function _setMaxAllowedUsers(uint _maxAllowedUsers) internal {
         maxAllowedUsers = _maxAllowedUsers;
         emit MaxAllowedUsersChanged(_maxAllowedUsers);
     }
@@ -828,7 +964,7 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     /// @notice Set SportsAMM contract
     /// @param _sportsAMM SportsAMM address
     function setSportsAMM(ISportsAMMV2 _sportsAMM) external onlyOwner {
-        require(address(_sportsAMM) != address(0), "Can not set a zero address!");
+        if (address(_sportsAMM) == address(0)) revert ZeroAddress();
         if (address(sportsAMM) != address(0)) {
             collateral.approve(address(sportsAMM), 0);
         }
@@ -840,7 +976,7 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     /// @notice Set defaultLiquidityProvider wallet
     /// @param _defaultLiquidityProvider default liquidity provider
     function setDefaultLiquidityProvider(address _defaultLiquidityProvider) external onlyOwner {
-        require(_defaultLiquidityProvider != address(0), "Can not set a zero address!");
+        if (_defaultLiquidityProvider == address(0)) revert ZeroAddress();
         defaultLiquidityProvider = _defaultLiquidityProvider;
         emit DefaultLiquidityProviderChanged(_defaultLiquidityProvider);
     }
@@ -848,7 +984,7 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     /// @notice Set length of rounds
     /// @param _roundLength Length of a round in seconds
     function setRoundLength(uint _roundLength) external onlyOwner {
-        require(!started, "Can't change round length after start");
+        if (started) revert CantChangeAfterPoolStart();
         roundLength = _roundLength;
         emit RoundLengthChanged(_roundLength);
     }
@@ -856,17 +992,25 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     /// @notice set utilization rate parameter
     /// @param _utilizationRate value as percentage
     function setUtilizationRate(uint _utilizationRate) external onlyOwner {
-        require(_utilizationRate <= 1e18, "Utilization rate can't exceed 100%");
-        utilizationRate = _utilizationRate;
-        emit UtilizationRateChanged(_utilizationRate);
+        _setUtilizationRate(_utilizationRate);
     }
 
     /// @notice set SafeBox params
     /// @param _safeBox where to send a profit reserved for protocol from each round
     /// @param _safeBoxImpact how much is the SafeBox percentage
     function setSafeBoxParams(address _safeBox, uint _safeBoxImpact) external onlyOwner {
+        _setSafeBoxParams(_safeBox, _safeBoxImpact);
+    }
+
+    function _setUtilizationRate(uint _utilizationRate) internal {
+        if (_utilizationRate > ONE) revert UtilRateTooHigh();
+        utilizationRate = _utilizationRate;
+        emit UtilizationRateChanged(_utilizationRate);
+    }
+
+    function _setSafeBoxParams(address _safeBox, uint _safeBoxImpact) internal {
+        if (_safeBoxImpact > ONE) revert SafeBoxImpactTooHigh();
         safeBox = _safeBox;
-        require(safeBoxImpact <= 1e18, "Safe Box impact can't exceed 100%");
         safeBoxImpact = _safeBoxImpact;
         emit SetSafeBoxParams(_safeBox, _safeBoxImpact);
     }
@@ -874,37 +1018,35 @@ contract SportsAMMV2LiquidityPool is Initializable, ProxyOwned, PausableUpgradea
     /* ========== MODIFIERS ========== */
 
     modifier canDeposit(uint amount) {
-        require(!withdrawalRequested[msg.sender], "Withdrawal is requested, cannot deposit");
-        require(totalDeposited + amount <= maxAllowedDeposit, "Deposit amount exceeds AMM LP cap");
+        if (withdrawalRequested[msg.sender]) revert CantDepositDuringWithdrawalRequested();
+        if (totalDeposited + amount > maxAllowedDeposit) revert AmountExceedsLPCap();
         if (balancesPerRound[round][msg.sender] == 0 && balancesPerRound[round + 1][msg.sender] == 0) {
-            require(amount >= minDepositAmount, "Amount less than minDepositAmount");
+            if (amount < minDepositAmount) revert AmountLessThanMinDeposit();
         }
         _;
     }
 
     modifier canWithdraw() {
-        require(started, "Pool has not started");
-        require(!withdrawalRequested[msg.sender], "Withdrawal already requested");
-        require(balancesPerRound[round][msg.sender] > 0, "Nothing to withdraw");
-        require(balancesPerRound[round + 1][msg.sender] == 0, "Can't withdraw as you already deposited for next round");
+        if (!started) revert PoolNotStarted();
+        if (withdrawalRequested[msg.sender]) revert WithdrawalAlreadyRequested();
+        if (balancesPerRound[round][msg.sender] == 0) revert NothingToWithdraw();
+        if (balancesPerRound[round + 1][msg.sender] != 0) revert CantWithdrawWhenDepositedForNextRound();
         _;
     }
 
     modifier onlyAMM() {
-        require(msg.sender == address(sportsAMM), "Only the AMM may perform these methods");
+        if (msg.sender != address(sportsAMM)) revert OnlyFromAMM();
         _;
     }
 
     modifier roundClosingNotPrepared() {
-        require(!roundClosingPrepared, "Not allowed during roundClosingPrepared");
+        if (roundClosingPrepared) revert NotAllowedWhenRoundClosingPrepared();
         _;
     }
 
     modifier onlyWhitelistedAddresses(address sender) {
-        require(
-            sender == owner || sportsAMM.manager().isWhitelistedAddress(sender, ISportsAMMV2Manager.Role.MARKET_RESOLVING),
-            "Invalid sender"
-        );
+        if (sender != owner && !sportsAMM.manager().isWhitelistedAddress(sender, ISportsAMMV2Manager.Role.MARKET_RESOLVING))
+            revert InvalidSender();
         _;
     }
 

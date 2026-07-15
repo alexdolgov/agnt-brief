@@ -1,7 +1,15 @@
 {
   "component": "Rewards",
   "main_contract": "Rewards",
-  "source_file_count": 11,
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Rewards\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -14,7 +22,9 @@
       "address": "0xf306ad6a3e2abd5cfd6687a2c86998f1d9c31205",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400549"
     }
   ]
 }

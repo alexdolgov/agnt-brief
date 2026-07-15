@@ -1,10 +1,22 @@
 {
   "component": "BYTES2",
   "main_contract": "BYTES2",
-  "source_file_count": 14,
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BYTES2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2023-03-neotokyo",
+    "https://github.com/code-423n4/2023-03-neotokyo",
+    "https://github.com/code-423n4/2023-03-neotokyo-findings/blob/main/report.md"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +24,9 @@
       "address": "0xa19f5264f7d7be11c451c093d8f92592820bea86",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397186"
     }
   ]
 }

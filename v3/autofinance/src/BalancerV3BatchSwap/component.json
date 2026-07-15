@@ -1,26 +1,28 @@
 {
   "component": "BalancerV3BatchSwap",
   "main_contract": "BalancerV3BatchSwap",
+  "source_entry_count": 21,
   "source_file_count": 21,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BalancerV3BatchSwap\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
-    {
-      "chain": "chain-9745",
-      "chain_id": 9745,
-      "address": "0x6de328ea43d143e3993e8dbc8dd2499ab6729033",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0xbd6beb16d6ccf62142588fb0ce26e589254c741b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391830"
     }
   ]
 }

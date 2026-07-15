@@ -1,54 +1,28 @@
 {
   "component": "RebalanceIncentivesController",
   "main_contract": "RebalanceIncentivesController",
-  "source_file_count": 40,
-  "deployment_count": 8,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/OmegaAudits/audits/blob/main/202505-Altitude.pdf",
-    "https://oxor-io.github.io/public_audits/Altitude/Altitude-Audit-Report.pdf",
-    "https://oxor-io.github.io/public_audits/Altitude/Altitude-v2-Audit-Report.pdf"
-  ],
+  "source_entry_count": 36,
+  "source_file_count": 36,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RebalanceIncentivesController\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x052f21dce83f8f9e5a0396a79500d875c05c6f16",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x299cd3ed77d886a3a0078ebf1cd9c59029006e62",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x4386611ed3a7a52082891be671843d8a7679119e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
     {
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x5603578cad65ca5ccb9e3d1e8c2f346481ae768d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x5e55dfe72567ab4f8cd4c5d0ae6d46a7e0fc5f04",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390840"
     },
     {
       "chain": "ethereum",
@@ -56,23 +30,9 @@
       "address": "0x8f18b32a89ddf6f89bf972d7f8203bacb8dc4d52",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xbe79243bfd165fa679d030d754ae521bcb5e3d26",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xdfc7c843df69b269f140464837b4741c0bd5cd90",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390846"
     }
   ]
 }

@@ -1,7 +1,36 @@
 {
   "component": "GTokenOpenPnlFeed-2",
   "main_contract": "GTokenOpenPnlFeed",
+  "source_entry_count": 16,
   "source_file_count": 16,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/v6.3/GTokenOpenPnlFeed.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-9471a994970c-GTokenOpenPnlFeed.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IOwnable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-c660f6f436c6-IOwnable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IOpenTradesPnlFeed.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-2ee370c8e0d7-IOpenTradesPnlFeed.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IGToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-81efdc3257ff-IGToken.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GTokenOpenPnlFeed-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +41,9 @@
       "address": "0x8d687276543b92819f2f2b5c3faad4ad27f4440c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394716"
     }
   ]
 }

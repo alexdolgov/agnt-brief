@@ -1,20 +1,38 @@
 {
   "component": "UniswapAdapter-2",
   "main_contract": "UniswapAdapter",
-  "source_file_count": 21,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/cyberscope-io/audits/blob/main/ezmanager/audit.pdf"
-  ],
+  "source_entry_count": 17,
+  "source_file_count": 17,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UniswapAdapter-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x0c10cb1fe66e0e452183d918e78b714026900bd3",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaebfc272e575cf38721c30a60a018c6de49cfd3f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394496"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc0fac58f632b4be80e9c040134cb6867b0f6fc1d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394525"
     }
   ]
 }

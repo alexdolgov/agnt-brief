@@ -1,7 +1,15 @@
 {
   "component": "GenericButtonswapRouter",
   "main_contract": "GenericButtonswapRouter",
+  "source_entry_count": 21,
   "source_file_count": 21,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GenericButtonswapRouter\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0xf4a25f7d15fa822e060f64d0eb83bf7200657071",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",
@@ -20,7 +30,9 @@
       "address": "0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

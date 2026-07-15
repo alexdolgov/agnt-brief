@@ -1,8 +1,16 @@
 {
   "component": "AerodromeStandardModulePrivate",
   "main_contract": "AerodromeStandardModulePrivate",
+  "source_entry_count": 34,
   "source_file_count": 34,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AerodromeStandardModulePrivate\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x0e4afbdab305206465ee48f7766da185157d417e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xd9e51fe9f8e0e1a21b444414a89bd8c7ddadefd1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391324"
     }
   ]
 }

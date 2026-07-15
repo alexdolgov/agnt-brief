@@ -1,8 +1,16 @@
 {
   "component": "RelayHub",
   "main_contract": "RelayHub",
+  "source_entry_count": 39,
   "source_file_count": 39,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RelayHub\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,23 +20,9 @@
       "address": "0x5648b6306380689af8d2de7bdd23d916b9ee0db5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x5ae81a75aa2ea4647a31f099c239bc76433141ea",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xf50b17a7ca64447ae782dc6c4aabe992c37476c7",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391426"
     }
   ]
 }

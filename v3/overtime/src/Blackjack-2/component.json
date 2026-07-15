@@ -1,26 +1,48 @@
 {
   "component": "Blackjack-2",
   "main_contract": "Blackjack",
+  "source_entry_count": 21,
   "source_file_count": 21,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Blackjack-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x0dc9652f01d92619bb8766463566afc1750c3268",
+      "address": "0x3e23bd48249a6288702d2b56cc2ba0844b95d4a8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6755d8edd46e93348d4f0907305d60e1fba0ff1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x4c16fee98d467b4e0c9965f0540f2c27b81ed7b7",
+      "address": "0xcaa229dc9c660432f2b71a6340f10102e88f7777",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

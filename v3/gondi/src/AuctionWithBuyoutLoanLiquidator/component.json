@@ -1,8 +1,16 @@
 {
   "component": "AuctionWithBuyoutLoanLiquidator",
   "main_contract": "AuctionWithBuyoutLoanLiquidator",
+  "source_entry_count": 28,
   "source_file_count": 28,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AuctionWithBuyoutLoanLiquidator\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x2995ae7233fa89b314b5a707465b57a582f440f0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xb3d88d4a1dcd26bd3adfca69194db7810c90ada2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394749"
     }
   ]
 }

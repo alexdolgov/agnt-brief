@@ -3,6 +3,7 @@ pragma solidity >=0.8.0;
 
 // ============ Internal Imports ============
 import {IValidatorAnnounce} from "../../interfaces/IValidatorAnnounce.sol";
+import {IMailbox} from "../../interfaces/IMailbox.sol";
 import {TypeCasts} from "../../libs/TypeCasts.sol";
 import {MailboxClient} from "../../client/MailboxClient.sol";
 
@@ -25,11 +26,10 @@ contract ValidatorAnnounce is MailboxClient, IValidatorAnnounce {
     // The set of validators that have announced
     EnumerableSet.AddressSet private validators;
     // Storage locations of validator signed checkpoints
-    mapping(address validator => string[] storageLocations)
-        private storageLocations;
+    mapping(address => string[]) private storageLocations;
     // Mapping to prevent the same announcement from being registered
     // multiple times.
-    mapping(bytes32 replayID => bool isAnnounced) private replayProtection;
+    mapping(bytes32 => bool) private replayProtection;
 
     // ============ Events ============
 

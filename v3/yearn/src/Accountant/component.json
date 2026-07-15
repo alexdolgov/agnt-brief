@@ -1,20 +1,28 @@
 {
   "component": "Accountant",
   "main_contract": "Accountant",
-  "source_file_count": 13,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Accountant\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/yearn/yearn-security/blob/master/disclosures/2025-08-13.md"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x590dd9399bb53f1085097399c3265c7137c1c4cf",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1f399808fe52d0e960cab84b6b54d5707ab27c8a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405095"
     }
   ]
 }

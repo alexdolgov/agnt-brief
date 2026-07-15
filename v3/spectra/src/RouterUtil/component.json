@@ -1,10 +1,20 @@
 {
   "component": "RouterUtil",
   "main_contract": "RouterUtil",
+  "source_entry_count": 17,
   "source_file_count": 17,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RouterUtil\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://raw.githubusercontent.com/pashov/audits/bed0a845f5af0047206ce423d111673183dba1e9/team/pdf/Spectra-security-review.pdf"
+  ],
   "addresses": [
     {
       "chain": "chain-999",
@@ -12,7 +22,9 @@
       "address": "0xf19eaaab5432086eeedc7e5e24007202da2b5420",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399246"
     }
   ]
 }

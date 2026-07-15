@@ -1,60 +1,28 @@
 {
   "component": "MCV2_Token",
   "main_contract": "MCV2_Token",
+  "source_entry_count": 6,
   "source_file_count": 6,
-  "deployment_count": 6,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Steemhunt/mint.club-v2-contract/blob/main/security-audits/CertiK-20240118.pdf"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MCV2_Token\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xaa70bc79fd1cb4a6fba717018351f0c3c64b79df",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xaa70bc79fd1cb4a6fba717018351f0c3c64b79df",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xaa70bc79fd1cb4a6fba717018351f0c3c64b79df",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xaa70bc79fd1cb4a6fba717018351f0c3c64b79df",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "base",
       "chain_id": 8453,
       "address": "0xff45161474c39cb00699070dd49582e417b57a7e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xaa70bc79fd1cb4a6fba717018351f0c3c64b79df",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

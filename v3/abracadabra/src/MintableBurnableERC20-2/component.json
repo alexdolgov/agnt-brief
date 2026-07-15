@@ -1,26 +1,28 @@
 {
   "component": "MintableBurnableERC20-2",
   "main_contract": "MintableBurnableERC20",
+  "source_entry_count": 5,
   "source_file_count": 5,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MintableBurnableERC20-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "linea",
       "chain_id": 59144,
-      "address": "0x4a3a6dd60a34bb2aba60d73b4c88315e9ceb6a3d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
       "address": "0xdd3b8084af79b9bae3d1b668c0de08ccc2c9429a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390664"
     }
   ]
 }

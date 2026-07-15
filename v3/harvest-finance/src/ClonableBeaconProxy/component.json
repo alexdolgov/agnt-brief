@@ -1,8 +1,16 @@
 {
   "component": "ClonableBeaconProxy",
   "main_contract": "ClonableBeaconProxy",
+  "source_entry_count": 11,
   "source_file_count": 11,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ClonableBeaconProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x8553d254cb6934b16f87d2e486b64bbd24c83c70",
       "is_proxy": true,
       "implementation_address": "0x3f770ac673856f105b586bb393d122721265ad46",
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x9dca587dc65ac0a043828b0acd946d71eb8d46c1",
-      "is_proxy": true,
-      "implementation_address": "0x3f770ac673856f105b586bb393d122721265ad46",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395250"
     }
   ]
 }

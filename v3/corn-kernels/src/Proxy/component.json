@@ -1,7 +1,15 @@
 {
   "component": "Proxy",
   "main_contract": "Proxy",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Proxy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x7a56e1c57c7475ccf742a1832b028f0456652f97",
       "is_proxy": true,
       "implementation_address": "0xa4b6cf2baaa235ab7fe10eadb84b82460165b38f",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402725"
     }
   ]
 }

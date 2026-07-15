@@ -511,6 +511,33 @@ library DynaVaultLib {
 	}
 
 	/**
+	 * @notice Calculates shares for fees with given values for total supply and free funds
+	 * @param feeAmount The amount for fees
+	 * @param feeToken The address of fee token
+	 * @param givenTotalSupply The amount of total supply to use in calculation
+	 * @param givenFreeFunds The amount of free funds to use in calculation
+	 * @return feeShares The amount of shares to mint for fees
+	 */
+	function calcSharesForFeeAmountUsingGivenTotalSupplyAndFreeFunds(
+		uint256 feeAmount,
+		address feeToken,
+		uint256 givenTotalSupply,
+		uint256 givenFreeFunds
+	) internal view returns (uint256 feeShares) {
+		address depositToken = _asset();
+		uint256 feeAmountInDepositToken = (feeToken == depositToken) ? feeAmount : tokenValueInQuoteAsset(feeToken, feeAmount, depositToken);
+		if (givenFreeFunds != 0) {
+			uint256 lastFeeSharesApproximation;
+			for (uint8 i = 0; i < FEE_CALC_ITERATIONS; ++i) {
+				// Calculate the Error Term and refine the approximation
+				feeShares += ((feeAmountInDepositToken * (givenTotalSupply + feeShares)) / givenFreeFunds) - feeShares;
+				if (feeShares == lastFeeSharesApproximation) break;
+				lastFeeSharesApproximation = feeShares;
+			}
+		}
+	}
+
+	/**
 	 * @dev Deposit/mint common workflow.
 	 * @param caller The address of caller
 	 * @param assetsIncludingFees The amount of assets including fees

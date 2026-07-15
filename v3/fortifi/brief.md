@@ -1,44 +1,86 @@
 # Agentic Audit Brief: FortiFi
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 2 (0 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: FortiFi (`fortifi`)
 - Website: [https://www.fortifi.pro](https://www.fortifi.pro)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:52.414Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: avalanche
-- Contract surface: 67 unique implementations (67 raw deployments)
+- Contract surface: 1 unique implementations (1 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $348,664.02
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Yield Aggregator. Structurally: 20 project-authored contract(s) across 1 chain(s); 4 ERC20 tokens, 7 ERC1155 multi-tokens; built on openzeppelin.
+No contract logic was present for FortiFi in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 1 common project-authored base contract(s) (fortifistrategy). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 1 contracts are derived from known codebases. 1 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x88c7e2...dbd348`, chain 43114)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 107; live-surface contracts included: 67 (2 live, 65 unknown).
-- Excluded by liveness: 40 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 1/1 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/2 (0.0%)
-- Deployed-live implementations: 2 of 67 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/2
-- Verified + Unaudited implementations: 2
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 65
-- Unique implementations: 67
-- Raw deployments: 67
+- Unverified implementations: 1
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,12 +99,9 @@ The protocol comprises 3 functional families. Its contracts share 1 common proje
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| FortiFiWNativeMASSVaultV2 | core_logic | avalanche | n/a | [`0x853e7a...9d2d73`](./contracts/avalanche-43114/0x853e7a9dcc5037cd624834dc5f33151aa49d2d73/) | ⚠️ Unaudited |
-| FortiFiWombatGGAvaxZapper | adapter | avalanche | n/a | [`0xdf4280...558a5d`](./contracts/avalanche-43114/0xdf4280b0e67f8cdd90bd1d4b441ac00d29558a5d/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -76,84 +115,44 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (65)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | avalanche | n/a | `0x03d813...265414` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x053849...fed27b` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x09dd7e...d8da39` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x11f40b...4186d5` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x1306c5...27a54b` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x14517a...a718d1` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x1a5f90...a91ab0` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x1acd9e...ea2184` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x20a70f...e8945c` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x231bf4...7a180f` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x26585c...4ed414` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x2dc798...ea4ce0` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x3158fc...d56d7e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x33ab93...c9a11d` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x37b5b7...21e4e5` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x404b56...71983e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x45c53f...22be3b` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x461bba...d2a7fb` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x486af6...344386` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x4a47ef...935971` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x521617...da1a94` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x57bbc4...0e9e20` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x5dfee5...132921` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x642fda...895be8` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x6aa5aa...5646c9` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x6f24c8...54ad9f` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x7022ad...eb1cc0` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x70e9c5...69c63a` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x714a70...c3affe` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x715801...995078` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x747998...2bcaae` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x75f833...3579bd` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x78a840...6816d5` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x79b2a0...d5920e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x839b76...e2544e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x91aaf4...fc4230` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x92581e...bffd36` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x98b57e...1b9904` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x9baceb...ca9b0c` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x9e103d...1cdd02` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x9f1ee7...ccf575` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xa2daec...72c032` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xa4d0b2...6ef63d` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xac01cd...1bf087` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xaf7665...5bfe74` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xb70784...02134f` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xb97afc...435731` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xbbfba3...fcf8c2` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xc3630c...cbeb39` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xc5fbcb...429f86` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xd10f91...845e36` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xd174d9...59a15e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xd3ed15...3fef9c` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xd69391...3a5ee4` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xd6c70d...6f6b10` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xdae240...0854cc` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xdcb2ea...61600e` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xe017f5...61d117` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xe20792...4be3f4` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xe5c4a9...1d6ec2` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xe64233...3d0550` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xee758d...489f3a` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xf0f55e...ba4db0` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xfc7427...9d898b` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xfd3196...293b14` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-386578 | `0x88c7e2...dbd348` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [FortiFi-audit-report-[26-Oct-2023].pdf](https://github.com/blaize-security/blaize-security-audits/blob/main/f/fortifi/FortiFi-audit-report-%5B26-Oct-2023%5D.pdf) | unknown | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
-| [blaize.tech/clients/smart-contract-security-audit-for-fortifi](https://blaize.tech/clients/smart-contract-security-audit-for-fortifi) | Blaize | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [FortiFi-audit-report-[26-Oct-2023].pdf](https://github.com/blaize-security/blaize-security-audits/blob/main/f/fortifi/FortiFi-audit-report-%5B26-Oct-2023%5D.pdf) | unknown | Audit | 2023-10 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 10 | high |
+| [blaize.tech/clients/smart-contract-security-audit-for-fortifi](https://blaize.tech/clients/smart-contract-security-audit-for-fortifi) | Blaize | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [13131] FortiFi-audit-report-[26-Oct-2023].pdf — no match: All contracts listed in scope section on page 2. Date from cover page.
+- [13132] blaize.tech/clients/smart-contract-security-audit-for-fortifi — no match: The report text does not list specific contract names, file paths, or a scope section. It only mentions 'FortiFi Vaults Ecosystem' and 'MASS Vaults' generically, without naming individual contracts.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| FortiFi-audit-report-[26-Oct-2023].pdf | FortiFiFeeCalculator | unmatched — not counted | — | listed in scope | no |
+| FortiFi-audit-report-[26-Oct-2023].pdf | FortiFiFeeManager | unmatched — not counted | — | listed in scope | no |
+| FortiFi-audit-report-[26-Oct-2023].pdf | FortiFiDPFortress | unmatched — not counted | — | listed in scope | no |
+| FortiFi-audit-report-[26-Oct-2023].pdf | FortiFiDPStrategy | unmatched — not counted | — | listed in scope | no |
+| FortiFi-audit-report-[26-Oct-2023].pdf | FortiFiFortress | unmatched — not counted | — | listed in scope | no |
+| FortiFi-audit-report-[26-Oct-2023].pdf | FortiFiStrategy | unmatched — not counted | — | listed in scope | no |
+| FortiFi-audit-report-[26-Oct-2023].pdf | FortiFiVectorFortress | unmatched — not counted | — | listed in scope | no |
+| FortiFi-audit-report-[26-Oct-2023].pdf | FortiFiVectorStrategy | unmatched — not counted | — | listed in scope | no |
+| FortiFi-audit-report-[26-Oct-2023].pdf | FortiFiMASSVault | unmatched — not counted | — | listed in scope | no |
+| FortiFi-audit-report-[26-Oct-2023].pdf | FortiFiSAMSVault | unmatched — not counted | — | listed in scope | no |
 
 ## Coverage Gaps
 
@@ -168,7 +167,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 67 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -176,7 +175,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 10 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1, low=1
 - Match method counts: n/a
 
 Zero-match audit list:

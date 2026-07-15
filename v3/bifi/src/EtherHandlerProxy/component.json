@@ -1,18 +1,28 @@
 {
   "component": "EtherHandlerProxy",
   "main_contract": "EtherHandlerProxy",
-  "source_file_count": 3,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EtherHandlerProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x8aba88e8a4ab28319b782199cb17f0001ee67984",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf86d8218bcc15874f5d25c191fddd43f2334c3eb",
+      "is_proxy": true,
+      "implementation_address": "0x77c59ef81bcb6b5aa5efefa58b9914b2b115941b",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

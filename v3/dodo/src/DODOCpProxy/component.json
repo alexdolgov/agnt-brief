@@ -1,26 +1,28 @@
 {
   "component": "DODOCpProxy",
   "main_contract": "DODOCpProxy",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DODOCpProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x6bd3747577d164159dc34b85c3c960addc8138fa",
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x2f66c5aaf006bd9c51615d617589c16c0ed35fd3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x973cab76c35bb1da47e044a63546c69a8ac1143c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393957"
     }
   ]
 }

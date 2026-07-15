@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at snowtrace.io on 2022-04-05
-*/
-
 // Sources flattened with hardhat v2.5.0 https://hardhat.org
 
 // File contracts/interfaces/IAdmin.sol
@@ -13,78 +9,87 @@ interface IAdmin {
 }
 
 
-// File contracts/interfaces/ISalesFactory.sol
-
-pragma solidity 0.6.12;
-
-interface ISalesFactory {
-    function isSaleCreatedThroughFactory(address sale) external view returns (bool);
-}
+// File @openzeppelin/contracts/token/ERC20/IERC20.sol@v3.4.1
 
 
-// File contracts/interfaces/IAllocationStaking.sol
-
-pragma solidity 0.6.12;
-
-interface IAllocationStaking {
-    function redistributeXava(uint256 _pid, address _user, uint256 _amountToBurn) external;
-    function deposited(uint256 _pid, address _user) external view returns (uint256);
-    function setTokensUnlockTime(uint256 _pid, address _user, uint256 _tokensUnlockTime) external;
-}
-
-
-// File contracts/interfaces/IERC20Metadata.sol
-
-
-pragma solidity ^0.6.12;
+pragma solidity >=0.6.0 <0.8.0;
 
 /**
- * @dev Interface for the optional metadata functions from the ERC20 standard.
+ * @dev Interface of the ERC20 standard as defined in the EIP.
  */
-interface IERC20Metadata {
-	/**
-	 * @dev Returns the name of the token.
+interface IERC20 {
+    /**
+     * @dev Returns the amount of tokens in existence.
      */
-	function name() external view returns (string memory);
+    function totalSupply() external view returns (uint256);
 
-	/**
-	 * @dev Returns the symbol of the token.
+    /**
+     * @dev Returns the amount of tokens owned by `account`.
      */
-	function symbol() external view returns (string memory);
+    function balanceOf(address account) external view returns (uint256);
 
-	/**
-	 * @dev Returns the decimals places of the token.
+    /**
+     * @dev Moves `amount` tokens from the caller's account to `recipient`.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
      */
-	function decimals() external view returns (uint8);
+    function transfer(address recipient, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Returns the remaining number of tokens that `spender` will be
+     * allowed to spend on behalf of `owner` through {transferFrom}. This is
+     * zero by default.
+     *
+     * This value changes when {approve} or {transferFrom} are called.
+     */
+    function allowance(address owner, address spender) external view returns (uint256);
+
+    /**
+     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * IMPORTANT: Beware that changing an allowance with this method brings the risk
+     * that someone may use both the old and the new allowance by unfortunate
+     * transaction ordering. One possible solution to mitigate this race
+     * condition is to first reduce the spender's allowance to 0 and set the
+     * desired value afterwards:
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     *
+     * Emits an {Approval} event.
+     */
+    function approve(address spender, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Moves `amount` tokens from `sender` to `recipient` using the
+     * allowance mechanism. `amount` is then deducted from the caller's
+     * allowance.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Emitted when `value` tokens are moved from one account (`from`) to
+     * another (`to`).
+     *
+     * Note that `value` may be zero.
+     */
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    /**
+     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
+     * a call to {approve}. `value` is the new allowance.
+     */
+    event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
 
-// File contracts/interfaces/IDexalotPortfolio.sol
-
-pragma solidity ^0.6.12;
-
-/**
- * IDexalotPortfolio contract.
- * Date created: 28.1.22.
- */
-interface IDexalotPortfolio {
-    function depositTokenFromContract(address _from, bytes32 _symbol, uint _quantity) external;
-}
-
-
-// File contracts/interfaces/ICollateral.sol
-
-pragma solidity ^0.6.12;
-
-interface ICollateral {
-    function saleAutoBuyers(address user, address sale) external view returns (bool);
-    function depositCollateral() external payable;
-    function withdrawCollateral() external payable;
-    function totalBalance() external view returns (uint256);
-}
-
-
-// File @openzeppelin/contracts/cryptography/[email protected]
+// File @openzeppelin/contracts/cryptography/ECDSA.sol@v3.4.1
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -173,87 +178,7 @@ library ECDSA {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/[email protected]
-
-
-pragma solidity >=0.6.0 <0.8.0;
-
-/**
- * @dev Interface of the ERC20 standard as defined in the EIP.
- */
-interface IERC20 {
-    /**
-     * @dev Returns the amount of tokens in existence.
-     */
-    function totalSupply() external view returns (uint256);
-
-    /**
-     * @dev Returns the amount of tokens owned by `account`.
-     */
-    function balanceOf(address account) external view returns (uint256);
-
-    /**
-     * @dev Moves `amount` tokens from the caller's account to `recipient`.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transfer(address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Returns the remaining number of tokens that `spender` will be
-     * allowed to spend on behalf of `owner` through {transferFrom}. This is
-     * zero by default.
-     *
-     * This value changes when {approve} or {transferFrom} are called.
-     */
-    function allowance(address owner, address spender) external view returns (uint256);
-
-    /**
-     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * IMPORTANT: Beware that changing an allowance with this method brings the risk
-     * that someone may use both the old and the new allowance by unfortunate
-     * transaction ordering. One possible solution to mitigate this race
-     * condition is to first reduce the spender's allowance to 0 and set the
-     * desired value afterwards:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
-     * Emits an {Approval} event.
-     */
-    function approve(address spender, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Moves `amount` tokens from `sender` to `recipient` using the
-     * allowance mechanism. `amount` is then deducted from the caller's
-     * allowance.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Emitted when `value` tokens are moved from one account (`from`) to
-     * another (`to`).
-     *
-     * Note that `value` may be zero.
-     */
-    event Transfer(address indexed from, address indexed to, uint256 value);
-
-    /**
-     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
-     * a call to {approve}. `value` is the new allowance.
-     */
-    event Approval(address indexed owner, address indexed spender, uint256 value);
-}
-
-
-// File @openzeppelin/contracts/math/[email protected]
+// File @openzeppelin/contracts/math/SafeMath.sol@v3.4.1
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -470,7 +395,7 @@ library SafeMath {
 }
 
 
-// File @openzeppelin/contracts/utils/[email protected]
+// File @openzeppelin/contracts/utils/Address.sol@v3.4.1
 
 
 pragma solidity >=0.6.2 <0.8.0;
@@ -662,7 +587,7 @@ library Address {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/[email protected]
+// File @openzeppelin/contracts/token/ERC20/SafeERC20.sol@v3.4.1
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -738,59 +663,25 @@ library SafeERC20 {
 }
 
 
-// File @openzeppelin/contracts/proxy/[email protected]
+// File contracts/interfaces/ISalesFactory.sol
+
+pragma solidity 0.6.12;
+
+interface ISalesFactory {
+    function setSaleOwnerAndToken(address saleOwner, address saleToken) external;
+    function isSaleCreatedThroughFactory(address sale) external view returns (bool);
+}
 
 
-// solhint-disable-next-line compiler-version
-pragma solidity >=0.4.24 <0.8.0;
+// File contracts/interfaces/IAllocationStaking.sol
 
-/**
- * @dev This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed
- * behind a proxy. Since a proxied contract can't have a constructor, it's common to move constructor logic to an
- * external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer
- * function so it can only be called once. The {initializer} modifier provided by this contract will have this effect.
- *
- * TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as
- * possible by providing the encoded function call as the `_data` argument to {UpgradeableProxy-constructor}.
- *
- * CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure
- * that all initializers are idempotent. This is not verified automatically as constructors are by Solidity.
- */
-abstract contract Initializable {
 
-    /**
-     * @dev Indicates that the contract has been initialized.
-     */
-    bool private _initialized;
+pragma solidity 0.6.12;
 
-    /**
-     * @dev Indicates that the contract is in the process of being initialized.
-     */
-    bool private _initializing;
-
-    /**
-     * @dev Modifier to protect an initializer function from being invoked twice.
-     */
-    modifier initializer() {
-        require(_initializing || _isConstructor() || !_initialized, "Initializable: contract is already initialized");
-
-        bool isTopLevelCall = !_initializing;
-        if (isTopLevelCall) {
-            _initializing = true;
-            _initialized = true;
-        }
-
-        _;
-
-        if (isTopLevelCall) {
-            _initializing = false;
-        }
-    }
-
-    /// @dev Returns true if and only if the function is running in the constructor
-    function _isConstructor() private view returns (bool) {
-        return !Address.isContract(address(this));
-    }
+interface IAllocationStaking {
+    function redistributeXava(uint256 _pid, address _user, uint256 _amountToBurn) external;
+    function deposited(uint256 _pid, address _user) external view returns (uint256);
+    function setTokensUnlockTime(uint256 _pid, address _user, uint256 _tokensUnlockTime) external;
 }
 
 
@@ -803,10 +694,7 @@ pragma solidity 0.6.12;
 
 
 
-
-
-
-contract AvalaunchSale is Initializable {
+contract AvalaunchSale {
     using ECDSA for bytes32;
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
@@ -817,20 +705,14 @@ contract AvalaunchSale is Initializable {
     ISalesFactory public factory;
     // Admin contract
     IAdmin public admin;
-    // Avalaunch collateral contract
-    ICollateral public collateral;
-    // Pointer to dexalot portfolio smart-contract
-    IDexalotPortfolio public dexalotPortfolio;
 
     struct Sale {
         // Token being sold
         IERC20 token;
         // Is sale created
         bool isCreated;
-        // Are earnings withdrawn
+        // Are earnings and leftover withdrawn
         bool earningsWithdrawn;
-        // Is leftover withdrawn
-        bool leftoverWithdrawn;
         // Have tokens been deposited
         bool tokensDeposited;
         // Address of sale owner
@@ -845,8 +727,8 @@ contract AvalaunchSale is Initializable {
         uint256 totalAVAXRaised;
         // Sale end time
         uint256 saleEnd;
-        // Price of the token quoted in USD
-        uint256 tokenPriceInUSD;
+        // When tokens can be withdrawn
+        uint256 tokensUnlockTime;
     }
 
     // Participation structure
@@ -856,10 +738,6 @@ contract AvalaunchSale is Initializable {
         uint256 timeParticipated;
         uint256 roundId;
         bool[] isPortionWithdrawn;
-        bool[] isPortionWithdrawnToDexalot;
-        bool isParticipationBoosted;
-        uint256 boostedAmountAVAXPaid;
-        uint256 boostedAmountBought;
     }
 
     // Round structure
@@ -878,6 +756,7 @@ contract AvalaunchSale is Initializable {
     Sale public sale;
     // Registration
     Registration public registration;
+
     // Number of users participated in the sale.
     uint256 public numberOfParticipants;
     // Array storing IDS of rounds (IDs start from 1, so they can't be mapped as array indexes
@@ -890,6 +769,8 @@ contract AvalaunchSale is Initializable {
     mapping(address => uint256) public addressToRoundRegisteredFor;
     // mapping if user is participated or not
     mapping(address => bool) public isParticipated;
+    // One ether in weis
+    uint256 public constant one = 10**18;
     // Times when portions are getting unlocked
     uint256[] public vestingPortionsUnlockTime;
     // Percent of the participation user can withdraw
@@ -898,49 +779,29 @@ contract AvalaunchSale is Initializable {
     uint256 public portionVestingPrecision;
     // Added configurable round ID for staking round
     uint256 public stakingRoundId;
-    // Added configurable round ID for staking round
-    uint256 public boosterRoundId;
     // Max vesting time shift
     uint256 public maxVestingTimeShift;
     // Registration deposit AVAX, which will be paid during the registration, and returned back during the participation.
     uint256 public registrationDepositAVAX;
     // Accounting total AVAX collected, after sale admin can withdraw this
     uint256 public registrationFees;
-    // Price update percent threshold
-    uint8 updateTokenPriceInAVAXPercentageThreshold;
-    // Price update time limit
-    uint256 updateTokenPriceInAVAXTimeLimit;
-    // Token price in AVAX latest update timestamp
-    uint256 updateTokenPriceInAVAXLastCallTimestamp;
-    // If Dexalot Withdrawals are supported
-    bool public supportsDexalotWithdraw;
-    // Represent amount of seconds before 0 portion unlock users can at earliest move their tokens to dexalot
-    uint256 public dexalotUnlockTime;
-    // Sale setter gate flag
-    bool public gateClosed;
 
     // Restricting calls only to sale owner
     modifier onlySaleOwner() {
-        require(msg.sender == sale.saleOwner, "Restricted to sale owner.");
+        require(msg.sender == sale.saleOwner, "OnlySaleOwner:: Restricted");
         _;
     }
 
-    // Restricting calls only to sale admin
     modifier onlyAdmin() {
         require(
             admin.isAdmin(msg.sender),
-            "Restricted to admins."
+            "Only admin can call this function."
         );
         _;
     }
 
-    // Restricting setter calls after gate closing
-    modifier onlyIfGateOpen() {
-        require(!gateClosed, "Gate is closed.");
-        _;
-    }
+    // EVENTS
 
-    // Events
     event TokensSold(address user, uint256 amount);
     event UserRegistered(address user, uint256 roundId);
     event TokenPriceSet(uint256 newPrice);
@@ -951,7 +812,7 @@ contract AvalaunchSale is Initializable {
         uint256 tokenPriceInAVAX,
         uint256 amountOfTokensToSell,
         uint256 saleEnd,
-        uint256 tokenPriceInUSD
+        uint256 tokensUnlockTime
     );
     event RegistrationTimeSet(
         uint256 registrationTimeStarts,
@@ -962,24 +823,14 @@ contract AvalaunchSale is Initializable {
         uint256 startTime,
         uint256 maxParticipation
     );
-    event RegistrationAVAXRefunded(address user, uint256 amountRefunded);
-    event TokensWithdrawnToDexalot(address user, uint256 amount);
-    event GateClosed(uint256 time);
-    event ParticipationBoosted(address user, uint256 amountAVAX, uint256 amountTokens);
 
-    // Constructor replacement for upgradable contracts
-    function initialize(
-        address _admin,
-        address _allocationStaking,
-        address _collateral
-    ) public initializer {
+    // Constructor, always initialized through SalesFactory
+    constructor(address _admin, address _allocationStaking) public {
         require(_admin != address(0));
         require(_allocationStaking != address(0));
-        require(_collateral != address(0));
         admin = IAdmin(_admin);
         factory = ISalesFactory(msg.sender);
         allocationStakingContract = IAllocationStaking(_allocationStaking);
-        collateral = ICollateral(_collateral);
     }
 
     /// @notice         Function to set vesting params
@@ -987,16 +838,13 @@ contract AvalaunchSale is Initializable {
         uint256[] memory _unlockingTimes,
         uint256[] memory _percents,
         uint256 _maxVestingTimeShift
-    )
-        external
-        onlyAdmin
-    {
+    ) external onlyAdmin {
         require(
             vestingPercentPerPortion.length == 0 &&
             vestingPortionsUnlockTime.length == 0
         );
         require(_unlockingTimes.length == _percents.length);
-        require(portionVestingPrecision > 0, "Sale params not set.");
+        require(portionVestingPrecision > 0, "Safeguard for making sure setSaleParams get first called.");
         require(_maxVestingTimeShift <= 30 days, "Maximal shift is 30 days.");
 
         // Set max vesting time shift
@@ -1004,36 +852,24 @@ contract AvalaunchSale is Initializable {
 
         uint256 sum;
 
-        // Require that locking times are later than sale end
-        require(_unlockingTimes[0] > sale.saleEnd, "Unlock time must be after the sale ends.");
-
-        // Set vesting portions percents and unlock times
         for (uint256 i = 0; i < _unlockingTimes.length; i++) {
-            if(i > 0) {
-                require(_unlockingTimes[i] > _unlockingTimes[i-1], "Unlock time must be greater than previous.");
-            }
             vestingPortionsUnlockTime.push(_unlockingTimes[i]);
             vestingPercentPerPortion.push(_percents[i]);
-            sum = sum.add(_percents[i]);
+            sum += _percents[i];
         }
 
         require(sum == portionVestingPrecision, "Percent distribution issue.");
     }
 
-    /// @notice     Admin function to shift vesting unlocking times
     function shiftVestingUnlockingTimes(uint256 timeToShift)
         external
         onlyAdmin
     {
         require(
             timeToShift > 0 && timeToShift < maxVestingTimeShift,
-            "Invalid shift time."
+            "Shift can not be greater than 30 days."
         );
 
-        // Time can be shifted only once.
-        maxVestingTimeShift = 0;
-
-        // Shift the unlock time
         for (uint256 i = 0; i < vestingPortionsUnlockTime.length; i++) {
             vestingPortionsUnlockTime[i] = vestingPortionsUnlockTime[i].add(
                 timeToShift
@@ -1048,28 +884,25 @@ contract AvalaunchSale is Initializable {
         uint256 _tokenPriceInAVAX,
         uint256 _amountOfTokensToSell,
         uint256 _saleEnd,
+        uint256 _tokensUnlockTime,
         uint256 _portionVestingPrecision,
         uint256 _stakingRoundId,
-        uint256 _registrationDepositAVAX,
-        uint256 _tokenPriceInUSD
-    )
-        external
-        onlyAdmin
-    {
-        require(!sale.isCreated, "Sale already created.");
+        uint256 _registrationDepositAVAX
+    ) external onlyAdmin {
+        require(!sale.isCreated, "setSaleParams: Sale is already created.");
         require(
             _saleOwner != address(0),
-            "Invalid sale owner address."
+            "setSaleParams: Sale owner address can not be 0."
         );
         require(
             _tokenPriceInAVAX != 0 &&
-            _amountOfTokensToSell != 0 &&
-            _saleEnd > block.timestamp &&
-            _tokenPriceInUSD != 0,
-            "Invalid input."
+                _amountOfTokensToSell != 0 &&
+                _saleEnd > block.timestamp &&
+                _tokensUnlockTime > block.timestamp,
+            "setSaleParams: Bad input"
         );
         require(_portionVestingPrecision >= 100, "Should be at least 100");
-        require(_stakingRoundId > 0, "Invalid staking round id.");
+        require(_stakingRoundId > 0, "Staking round ID can not be 0.");
 
         // Set params
         sale.token = IERC20(_token);
@@ -1078,7 +911,7 @@ contract AvalaunchSale is Initializable {
         sale.tokenPriceInAVAX = _tokenPriceInAVAX;
         sale.amountOfTokensToSell = _amountOfTokensToSell;
         sale.saleEnd = _saleEnd;
-        sale.tokenPriceInUSD = _tokenPriceInUSD;
+        sale.tokensUnlockTime = _tokensUnlockTime;
 
         // Deposit in AVAX, sent during the registration
         registrationDepositAVAX = _registrationDepositAVAX;
@@ -1086,43 +919,26 @@ contract AvalaunchSale is Initializable {
         portionVestingPrecision = _portionVestingPrecision;
         // Set staking round id
         stakingRoundId = _stakingRoundId;
-        // Set booster round id
-        boosterRoundId = _stakingRoundId.add(1);
-
+        // Mark in factory
+        factory.setSaleOwnerAndToken(sale.saleOwner, address(sale.token));
         // Emit event
         emit SaleCreated(
             sale.saleOwner,
             sale.tokenPriceInAVAX,
             sale.amountOfTokensToSell,
             sale.saleEnd,
-            sale.tokenPriceInUSD
+            sale.tokensUnlockTime
         );
     }
 
-    /// @notice  If sale supports early withdrawals to Dexalot.
-    function setAndSupportDexalotPortfolio(
-        address _dexalotPortfolio,
-        uint256 _dexalotUnlockTime
+    /// @notice     Function to retroactively set sale token address
+    function setSaleToken(
+        address saleToken
     )
     external
     onlyAdmin
     {
-        require(address(dexalotPortfolio) == address(0x0), "Dexalot Portfolio already set.");
-        require(_dexalotPortfolio != address(0x0), "Invalid address.");
-        dexalotPortfolio = IDexalotPortfolio(_dexalotPortfolio);
-        dexalotUnlockTime = _dexalotUnlockTime;
-        supportsDexalotWithdraw = true;
-    }
-
-    // @notice     Function to retroactively set sale token address after initial contract creation has passed.
-    //             Added as an option for teams which are not having token at the moment of sale launch.
-    function setSaleToken(
-        address saleToken
-    )
-        external
-        onlyAdmin
-        onlyIfGateOpen
-    {
+        require(address(sale.token) == address(0));
         sale.token = IERC20(saleToken);
     }
 
@@ -1131,13 +947,9 @@ contract AvalaunchSale is Initializable {
     function setRegistrationTime(
         uint256 _registrationTimeStarts,
         uint256 _registrationTimeEnds
-    )
-        external
-        onlyAdmin
-        onlyIfGateOpen
-    {
-        // Require that the sale is created
-        require(sale.isCreated);
+    ) external onlyAdmin {
+        require(sale.isCreated == true);
+        require(registration.registrationTimeStarts == 0);
         require(
             _registrationTimeStarts >= block.timestamp &&
                 _registrationTimeEnds > _registrationTimeStarts
@@ -1150,7 +962,6 @@ contract AvalaunchSale is Initializable {
             );
         }
 
-        // Set registration start and end time
         registration.registrationTimeStarts = _registrationTimeStarts;
         registration.registrationTimeEnds = _registrationTimeEnds;
 
@@ -1160,29 +971,23 @@ contract AvalaunchSale is Initializable {
         );
     }
 
-    /// @notice     Setting rounds for sale.
     function setRounds(
         uint256[] calldata startTimes,
         uint256[] calldata maxParticipations
-    )
-        external
-        onlyAdmin
-    {
-        require(sale.isCreated);
+    ) external onlyAdmin {
+        require(sale.isCreated == true);
         require(
             startTimes.length == maxParticipations.length,
-            "Invalid array lengths."
+            "setRounds: Bad input."
         );
-        require(roundIds.length == 0, "Rounds set already.");
+        require(roundIds.length == 0, "setRounds: Rounds are set already.");
         require(startTimes.length > 0);
 
         uint256 lastTimestamp = 0;
-
-        require(startTimes[0] > registration.registrationTimeEnds);
-        require(startTimes[0] >= block.timestamp);
-
         for (uint256 i = 0; i < startTimes.length; i++) {
+            require(startTimes[i] > registration.registrationTimeEnds);
             require(startTimes[i] < sale.saleEnd);
+            require(startTimes[i] >= block.timestamp);
             require(maxParticipations[i] > 0);
             require(startTimes[i] > lastTimestamp);
             lastTimestamp = startTimes[i];
@@ -1207,19 +1012,15 @@ contract AvalaunchSale is Initializable {
     /// @notice     Registration for sale.
     /// @param      signature is the message signed by the backend
     /// @param      roundId is the round for which user expressed interest to participate
-    function registerForSale(
-        bytes memory signature,
-        uint256 signatureExpirationTimestamp,
-        uint256 roundId
-    )
+    function registerForSale(bytes memory signature, uint256 roundId)
         external
         payable
     {
         require(
             msg.value == registrationDepositAVAX,
-            "Registration deposit doesn't match."
+            "Registration deposit does not match."
         );
-        require(roundId != 0, "Invalid round id.");
+        require(roundId != 0, "Round ID can not be 0.");
         require(roundId <= roundIds.length, "Invalid round id");
         require(
             block.timestamp >= registration.registrationTimeStarts &&
@@ -1227,13 +1028,12 @@ contract AvalaunchSale is Initializable {
             "Registration gate is closed."
         );
         require(
-            checkRegistrationSignature(signature, signatureExpirationTimestamp, msg.sender, roundId),
-            "Invalid signature."
+            checkRegistrationSignature(signature, msg.sender, roundId),
+            "Invalid signature"
         );
-        require(block.timestamp < signatureExpirationTimestamp, "Signature expired.");
         require(
             addressToRoundRegisteredFor[msg.sender] == 0,
-            "User already registered."
+            "User can not register twice."
         );
 
         // Rounds are 1,2,3
@@ -1259,32 +1059,7 @@ contract AvalaunchSale is Initializable {
     /// @dev        This will be updated with an oracle during the sale every N minutes, so the users will always
     ///             pay initialy set $ value of the token. This is to reduce reliance on the AVAX volatility.
     function updateTokenPriceInAVAX(uint256 price) external onlyAdmin {
-        // Zero check on the first set
-        if(sale.tokenPriceInAVAX != 0) {
-            // Require that function params are properly set
-            require(
-                updateTokenPriceInAVAXTimeLimit != 0 && updateTokenPriceInAVAXPercentageThreshold != 0,
-                "Params not set."
-            );
-
-            // Require that the price does not differ more than 'N%' from previous one
-            uint256 maxPriceChange = sale.tokenPriceInAVAX.mul(updateTokenPriceInAVAXPercentageThreshold).div(100);
-            require(
-                price < sale.tokenPriceInAVAX.add(maxPriceChange) &&
-                price > sale.tokenPriceInAVAX.sub(maxPriceChange),
-                "Price too different from the previous."
-            );
-
-            // Require that 'N' time has passed since last call
-            require(
-                updateTokenPriceInAVAXLastCallTimestamp.add(updateTokenPriceInAVAXTimeLimit) < block.timestamp,
-                "Not enough time passed since last call."
-            );
-        }
-
-        // Set latest call time to current timestamp
-        updateTokenPriceInAVAXLastCallTimestamp = block.timestamp;
-
+        require(price > 0, "Price can not be 0.");
         // Allowing oracle to run and change the sale value
         sale.tokenPriceInAVAX = price;
         emit TokenPriceSet(price);
@@ -1299,13 +1074,12 @@ contract AvalaunchSale is Initializable {
         // Iterate through all registered rounds and postpone them
         for (uint256 i = 0; i < roundIds.length; i++) {
             Round storage round = roundIdToRound[roundIds[i]];
-            // Require that timeToShift does not extend sale over it's end
-            require(
-                round.startTime.add(timeToShift) < sale.saleEnd,
-                "Start time can not be greater than end time."
-            );
             // Postpone sale
             round.startTime = round.startTime.add(timeToShift);
+            require(
+                round.startTime + timeToShift < sale.saleEnd,
+                "Start time can not be greater than end time."
+            );
         }
     }
 
@@ -1327,16 +1101,14 @@ contract AvalaunchSale is Initializable {
         external
         onlyAdmin
     {
-        // Require that round has not already started
         require(
             block.timestamp < roundIdToRound[roundIds[0]].startTime,
             "1st round already started."
         );
-        require(rounds.length == caps.length, "Invalid array length.");
+        require(rounds.length == caps.length, "Arrays length is different.");
 
-        // Set max participation per round
         for (uint256 i = 0; i < rounds.length; i++) {
-            require(caps[i] > 0, "Max participation can't be 0.");
+            require(caps[i] > 0, "Can't set max participation to 0");
 
             Round storage round = roundIdToRound[rounds[i]];
             round.maxParticipation = caps[i];
@@ -1346,55 +1118,40 @@ contract AvalaunchSale is Initializable {
     }
 
     // Function for owner to deposit tokens, can be called only once.
-    function depositTokens()
-        external
-        onlySaleOwner
-        onlyIfGateOpen
-    {
-        // Require that setSaleParams was called
+    function depositTokens() external onlySaleOwner {
         require(
-            sale.amountOfTokensToSell > 0,
-            "Sale parameters not set."
+            !sale.tokensDeposited, "Deposit can be done only once"
         );
 
-        // Require that tokens are not deposited
-        require(
-            !sale.tokensDeposited,
-            "Tokens already deposited."
-        );
-
-        // Mark that tokens are deposited
-        sale.tokensDeposited = true;
-
-        // Perform safe transfer
         sale.token.safeTransferFrom(
             msg.sender,
             address(this),
             sale.amountOfTokensToSell
         );
+        sale.tokensDeposited = true;
     }
 
-    // Participate function for collateral auto-buy
-    function autoParticipate(
-        address user,
+    // Function to participate in the sales
+    function participate(
+        bytes memory signature,
         uint256 amount,
         uint256 amountXavaToBurn,
         uint256 roundId
     ) external payable {
-        require(msg.sender == address(collateral), "Only collateral.");
-        _participate(user, msg.value, amount, amountXavaToBurn, roundId);
-    }
 
-    // Participate function for manual participation
-    function participate(
-        uint256 amount,
-        uint256 amountXavaToBurn,
-        uint256 roundId,
-        bytes calldata signature
-    ) external payable {
-        require(msg.sender == tx.origin, "Only direct calls.");
-        // Require that user doesn't have autoBuy activated
-        require(!collateral.saleAutoBuyers(address(this), msg.sender), "Cannot participate manually, autoBuy activated.");
+        require(roundId != 0, "Round can not be 0.");
+
+        require(
+            amount <= roundIdToRound[roundId].maxParticipation,
+            "Overflowing maximal participation for this round."
+        );
+
+        // User must have registered for the round in advance
+        require(
+            addressToRoundRegisteredFor[msg.sender] == roundId,
+            "Not registered for this round"
+        );
+
         // Verify the signature
         require(
             checkParticipationSignature(
@@ -1404,36 +1161,14 @@ contract AvalaunchSale is Initializable {
                 amountXavaToBurn,
                 roundId
             ),
-            "Invalid signature."
-        );
-
-        _participate(msg.sender, msg.value, amount, amountXavaToBurn, roundId);
-    }
-
-    // Function to participate in the sales
-    function _participate(
-        address user,
-        uint256 amountAVAX,
-        uint256 amount,
-        uint256 amountXavaToBurn,
-        uint256 roundId
-    ) internal {
-
-        require(roundId != 0, "Round can not be 0.");
-
-        require(
-            amount <= roundIdToRound[roundId].maxParticipation,
-            "Crossing max participation."
-        );
-
-        // User must have registered for the round in advance
-        require(
-            addressToRoundRegisteredFor[user] == roundId,
-            "Not registered for this round."
+            "Invalid signature. Verification failed"
         );
 
         // Check user haven't participated before
-        require(!isParticipated[user], "Already participated.");
+        require(!isParticipated[msg.sender], "User can participate only once.");
+
+        // Disallow contract calls.
+        require(msg.sender == tx.origin, "Only direct contract calls.");
 
         // Get current active round
         uint256 currentRound = getCurrentRound();
@@ -1441,12 +1176,13 @@ contract AvalaunchSale is Initializable {
         // Assert that
         require(
             roundId == currentRound,
-            "Invalid round."
+            "You can not participate in this round."
         );
 
         // Compute the amount of tokens user is buying
-        uint256 amountOfTokensBuying =
-            (amountAVAX).mul(uint(10) ** IERC20Metadata(address(sale.token)).decimals()).div(sale.tokenPriceInAVAX);
+        uint256 amountOfTokensBuying = (msg.value).mul(one).div(
+            sale.tokenPriceInAVAX
+        );
 
         // Must buy more than 0 tokens
         require(amountOfTokensBuying > 0, "Can't buy 0 tokens");
@@ -1454,109 +1190,8 @@ contract AvalaunchSale is Initializable {
         // Check in terms of user allo
         require(
             amountOfTokensBuying <= amount,
-            "Exceeding allowance."
+            "Trying to buy more than allowed."
         );
-
-        // Require that amountOfTokensBuying is less than sale token leftover cap
-        require(
-            amountOfTokensBuying <= sale.amountOfTokensToSell.sub(sale.totalTokensSold),
-            "Not enough tokens to sell."
-        );
-
-        // Increase amount of sold tokens
-        sale.totalTokensSold = sale.totalTokensSold.add(amountOfTokensBuying);
-
-        // Increase amount of AVAX raised
-        sale.totalAVAXRaised = sale.totalAVAXRaised.add(amountAVAX);
-
-        // Empty bool array used to be set as initial for 'isPortionWithdrawn' and 'isPortionWithdrawnToDexalot'
-        // Size determined by number of sale portions
-        bool[] memory _empty = new bool[](
-            vestingPortionsUnlockTime.length
-        );
-
-        // Create participation object
-        Participation memory p = Participation({
-            amountBought: amountOfTokensBuying,
-            amountAVAXPaid: amountAVAX,
-            timeParticipated: block.timestamp,
-            roundId: roundId,
-            isPortionWithdrawn: _empty,
-            isPortionWithdrawnToDexalot: _empty,
-            isParticipationBoosted: false,
-            boostedAmountAVAXPaid: 0,
-            boostedAmountBought: 0
-        });
-
-        // Staking round only.
-        if (roundId == stakingRoundId) {
-            // Burn XAVA from this user.
-            allocationStakingContract.redistributeXava(
-                0,
-                user,
-                amountXavaToBurn
-            );
-        }
-
-        // Add participation for user.
-        userToParticipation[user] = p;
-        // Mark user is participated
-        isParticipated[user] = true;
-        // Increment number of participants in the Sale.
-        numberOfParticipants++;
-        // Decrease of available registration fees
-        registrationFees = registrationFees.sub(registrationDepositAVAX);
-        // Transfer registration deposit amount in AVAX back to the users.
-        safeTransferAVAX(user, registrationDepositAVAX);
-
-        emit RegistrationAVAXRefunded(user, registrationDepositAVAX);
-        emit TokensSold(user, amountOfTokensBuying);
-    }
-
-    // Function to boost user's sale participation
-    function boostParticipation(
-        address user,
-        uint256 amount,
-        uint256 amountXavaToBurn,
-        uint256 roundId
-    ) external payable {
-        require(msg.sender == address(collateral), "Only collateral.");
-        require(roundId == boosterRoundId && roundId == getCurrentRound(), "Invalid round.");
-
-        // Check user has participated before
-        require(isParticipated[user], "User needs to participate first.");
-
-        Participation storage p = userToParticipation[user];
-        require(!p.isParticipationBoosted, "Participation already boosted.");
-        // Mark participation as boosted
-        p.isParticipationBoosted = true;
-
-        // Compute the amount of tokens user is buying
-        uint256 amountOfTokensBuying =
-            (msg.value).mul(uint(10) ** IERC20Metadata(address(sale.token)).decimals()).div(sale.tokenPriceInAVAX);
-
-        require(amountOfTokensBuying <= amount, "Exceeding allowance.");
-
-        // Require that amountOfTokensBuying is less than sale token leftover cap
-        require(
-            amountOfTokensBuying <= sale.amountOfTokensToSell.sub(sale.totalTokensSold),
-            "Not enough tokens to sell."
-        );
-
-        require(
-            amountOfTokensBuying <= roundIdToRound[boosterRoundId].maxParticipation,
-            "Crossing max participation."
-        );
-
-        // Add msg.value to boosted avax paid
-        p.boostedAmountAVAXPaid = msg.value;
-        // Add amountOfTokensBuying as boostedAmount
-        p.boostedAmountBought = amountOfTokensBuying;
-
-        // Increase total amount avax paid
-        p.amountAVAXPaid = p.amountAVAXPaid.add(msg.value);
-        // Increase total amount of tokens bought
-        p.amountBought = p.amountBought.add(amountOfTokensBuying);
 
         // Increase amount of sold tokens
         sale.totalTokensSold = sale.totalTokensSold.add(amountOfTokensBuying);
@@ -1564,106 +1199,67 @@ contract AvalaunchSale is Initializable {
         // Increase amount of AVAX raised
         sale.totalAVAXRaised = sale.totalAVAXRaised.add(msg.value);
 
-        // Burn / Redistribute XAVA from this user.
-        allocationStakingContract.redistributeXava(
-            0,
-            user,
-            amountXavaToBurn
+        bool[] memory _isPortionWithdrawn = new bool[](
+            vestingPortionsUnlockTime.length
         );
 
-        // Emit participation boosted event
-        emit ParticipationBoosted(user, p.boostedAmountAVAXPaid, p.boostedAmountBought);
-    }
+        // Create participation object
+        Participation memory p = Participation({
+            amountBought: amountOfTokensBuying,
+            amountAVAXPaid: msg.value,
+            timeParticipated: block.timestamp,
+            roundId: roundId,
+            isPortionWithdrawn: _isPortionWithdrawn
+        });
 
-    // Expose function where user can withdraw multiple unlocked portions at once.
-    function withdrawMultiplePortions(uint256 [] calldata portionIds) external {
-        uint256 totalToWithdraw = 0;
-
-        // Retrieve participation from storage
-        Participation storage p = userToParticipation[msg.sender];
-
-        for(uint i=0; i < portionIds.length; i++) {
-            uint256 portionId = portionIds[i];
-            require(portionId < vestingPercentPerPortion.length);
-
-            if (
-                !p.isPortionWithdrawn[portionId] &&
-                vestingPortionsUnlockTime[portionId] <= block.timestamp
-            ) {
-                // Mark participation as withdrawn
-                p.isPortionWithdrawn[portionId] = true;
-                // Compute amount withdrawing
-                uint256 amountWithdrawing = p
-                    .amountBought
-                    .mul(vestingPercentPerPortion[portionId])
-                    .div(portionVestingPrecision);
-                // Withdraw percent which is unlocked at that portion
-                totalToWithdraw = totalToWithdraw.add(amountWithdrawing);
-            }
-        }
-
-        if(totalToWithdraw > 0) {
-            // Transfer tokens to user
-            sale.token.safeTransfer(msg.sender, totalToWithdraw);
-            // Trigger an event
-            emit TokensWithdrawn(msg.sender, totalToWithdraw);
-        }
-    }
-
-    /// Expose function where user can withdraw multiple unlocked portions to Dexalot Portfolio at once
-    /// @dev first portion can be deposited before it's unlocking time, while others can only after
-    function withdrawMultiplePortionsToDexalot(uint256 [] calldata portionIds) external {
-
-        // Security check
-        performDexalotChecks();
-
-        uint256 totalToWithdraw = 0;
-
-        // Retrieve participation from storage
-        Participation storage p = userToParticipation[msg.sender];
-
-        for(uint i=0; i < portionIds.length; i++) {
-            uint256 portionId = portionIds[i];
-            require(portionId < vestingPercentPerPortion.length);
-
-            bool eligible;
-
-            if(!p.isPortionWithdrawn[portionId]) {
-                if(portionId > 0) {
-                    if(vestingPortionsUnlockTime[portionId] <= block.timestamp) {
-                        eligible = true;
-                    }
-                } else { // if portion id == 0
-                    eligible = true;
-                } // modifier checks for portionId == 0 case
-            }
-
-            if(eligible) {
-                // Mark participation as withdrawn
-                p.isPortionWithdrawn[portionId] = true;
-                // Mark portion as withdrawn to dexalot
-                p.isPortionWithdrawnToDexalot[portionId] = true;
-                // Compute amount withdrawing
-                uint256 amountWithdrawing = p
-                    .amountBought
-                    .mul(vestingPercentPerPortion[portionId])
-                    .div(portionVestingPrecision);
-                // Withdraw percent which is unlocked at that portion
-                totalToWithdraw = totalToWithdraw.add(amountWithdrawing);
-            }
-        }
-
-        if(totalToWithdraw > 0) {
-            // Transfer tokens to user's wallet prior to dexalot deposit
-            sale.token.safeTransfer(msg.sender, totalToWithdraw);
-
-            // Deposit tokens to dexalot contract - Withdraw from sale contract
-            dexalotPortfolio.depositTokenFromContract(
-                msg.sender, getTokenSymbolBytes32(), totalToWithdraw
+        // Staking round only.
+        if (roundId == stakingRoundId) {
+            // Burn XAVA from this user.
+            allocationStakingContract.redistributeXava(
+                0,
+                msg.sender,
+                amountXavaToBurn
             );
+        }
 
-            // Trigger an event
-            emit TokensWithdrawnToDexalot(msg.sender, totalToWithdraw);
+        // Add participation for user.
+        userToParticipation[msg.sender] = p;
+        // Mark user is participated
+        isParticipated[msg.sender] = true;
+        // Increment number of participants in the Sale.
+        numberOfParticipants++;
+        // Decrease of available registration fees
+        registrationFees = registrationFees.sub(registrationDepositAVAX);
+        // Transfer registration deposit amount in AVAX back to the users.
+        safeTransferAVAX(msg.sender, registrationDepositAVAX);
+
+        emit TokensSold(msg.sender, amountOfTokensBuying);
+    }
+
+    /// Users can claim their participation
+    function withdrawTokens(uint256 portionId) external {
+        require(
+            block.timestamp >= sale.tokensUnlockTime,
+            "Tokens can not be withdrawn yet."
+        );
+        require(portionId < vestingPercentPerPortion.length);
+
+        Participation storage p = userToParticipation[msg.sender];
+
+        if (
+            !p.isPortionWithdrawn[portionId] &&
+            vestingPortionsUnlockTime[portionId] <= block.timestamp
+        ) {
+            p.isPortionWithdrawn[portionId] = true;
+            uint256 amountWithdrawing = p
+                .amountBought
+                .mul(vestingPercentPerPortion[portionId])
+                .div(portionVestingPrecision);
+            // Withdraw percent which is unlocked at that portion
+            sale.token.safeTransfer(msg.sender, amountWithdrawing);
+            emit TokensWithdrawn(msg.sender, amountWithdrawing);
+        } else {
+            revert("Tokens already withdrawn.");
         }
     }
 
@@ -1674,73 +1270,41 @@ contract AvalaunchSale is Initializable {
     }
 
     /// Function to withdraw all the earnings and the leftover of the sale contract.
-    function withdrawEarningsAndLeftover() external onlySaleOwner {
-        withdrawEarningsInternal();
-        withdrawLeftoverInternal();
-    }
-
-    // Function to withdraw only earnings
-    function withdrawEarnings() external onlySaleOwner {
-        withdrawEarningsInternal();
-    }
-
-    // Function to withdraw only leftover
-    function withdrawLeftover() external onlySaleOwner {
-        withdrawLeftoverInternal();
-    }
-
-    // Function to withdraw earnings
-    function withdrawEarningsInternal() internal  {
+    function withdrawEarningsAndLeftover(bool withBurn) external onlySaleOwner {
         // Make sure sale ended
         require(block.timestamp >= sale.saleEnd);
 
         // Make sure owner can't withdraw twice
         require(!sale.earningsWithdrawn);
         sale.earningsWithdrawn = true;
+
         // Earnings amount of the owner in AVAX
         uint256 totalProfit = sale.totalAVAXRaised;
-
-        safeTransferAVAX(msg.sender, totalProfit);
-    }
-
-    // Function to withdraw leftover
-    function withdrawLeftoverInternal() internal {
-        // Make sure sale ended
-        require(block.timestamp >= sale.saleEnd);
-
-        // Make sure owner can't withdraw twice
-        require(!sale.leftoverWithdrawn);
-        sale.leftoverWithdrawn = true;
 
         // Amount of tokens which are not sold
         uint256 leftover = sale.amountOfTokensToSell.sub(sale.totalTokensSold);
 
-        if (leftover > 0) {
+        safeTransferAVAX(msg.sender, totalProfit);
+
+        if (leftover > 0 && !withBurn) {
             sale.token.safeTransfer(msg.sender, leftover);
+            return;
+        }
+
+        if (withBurn) {
+            sale.token.safeTransfer(address(1), leftover);
         }
     }
 
     // Function after sale for admin to withdraw registration fees if there are any left.
     function withdrawRegistrationFees() external onlyAdmin {
-        require(block.timestamp >= sale.saleEnd, "Require that sale has ended.");
+        require(block.timestamp >= sale.saleEnd);
         require(registrationFees > 0, "No earnings from registration fees.");
 
         // Transfer AVAX to the admin wallet.
         safeTransferAVAX(msg.sender, registrationFees);
         // Set registration fees to be 0
         registrationFees = 0;
-    }
-
-    // Function where admin can withdraw all unused funds.
-    function withdrawUnusedFunds() external onlyAdmin {
-        uint256 balanceAVAX = address(this).balance;
-
-        uint256 totalReservedForRaise = sale.earningsWithdrawn ? 0 : sale.totalAVAXRaised;
-
-        safeTransferAVAX(
-            msg.sender,
-            balanceAVAX.sub(totalReservedForRaise.add(registrationFees))
-        );
     }
 
     /// @notice     Get current round in progress.
@@ -1771,15 +1335,34 @@ contract AvalaunchSale is Initializable {
     /// @param      roundId is the round for which user is submitting registration
     function checkRegistrationSignature(
         bytes memory signature,
-        uint256 signatureExpirationTimestamp,
         address user,
         uint256 roundId
     ) public view returns (bool) {
         bytes32 hash = keccak256(
-            abi.encodePacked(signatureExpirationTimestamp, user, roundId, address(this))
+            abi.encodePacked(user, roundId, address(this))
         );
         bytes32 messageHash = hash.toEthSignedMessageHash();
         return admin.isAdmin(messageHash.recover(signature));
+    }
+
+    // Function to check if admin was the message signer
+    function checkParticipationSignature(
+        bytes memory signature,
+        address user,
+        uint256 amount,
+        uint256 amountXavaToBurn,
+        uint256 round
+    ) public view returns (bool) {
+        return
+            admin.isAdmin(
+                getParticipationSigner(
+                    signature,
+                    user,
+                    amount,
+                    amountXavaToBurn,
+                    round
+                )
+            );
     }
 
     /// @notice     Check who signed the message
@@ -1787,13 +1370,13 @@ contract AvalaunchSale is Initializable {
     /// @param      user is the address of user for which we're signing the message
     /// @param      amount is the maximal amount of tokens user can buy
     /// @param      roundId is the Id of the round user is participating.
-    function checkParticipationSignature(
+    function getParticipationSigner(
         bytes memory signature,
         address user,
         uint256 amount,
         uint256 amountXavaToBurn,
         uint256 roundId
-    ) public view returns (bool) {
+    ) public view returns (address) {
         bytes32 hash = keccak256(
             abi.encodePacked(
                 user,
@@ -1804,7 +1387,7 @@ contract AvalaunchSale is Initializable {
             )
         );
         bytes32 messageHash = hash.toEthSignedMessageHash();
-        return admin.isAdmin(messageHash.recover(signature));
+        return messageHash.recover(signature);
     }
 
     /// @notice     Function to get participation for passed user address
@@ -1816,11 +1399,7 @@ contract AvalaunchSale is Initializable {
             uint256,
             uint256,
             uint256,
-            bool[] memory,
-            bool[] memory,
-            bool,
-            uint256,
-            uint256
+            bool[] memory
         )
     {
         Participation memory p = userToParticipation[_user];
@@ -1829,11 +1408,7 @@ contract AvalaunchSale is Initializable {
             p.amountAVAXPaid,
             p.timeParticipated,
             p.roundId,
-            p.isPortionWithdrawn,
-            p.isPortionWithdrawnToDexalot,
-            p.isParticipationBoosted,
-            p.boostedAmountBought,
-            p.boostedAmountAVAXPaid
+            p.isPortionWithdrawn
         );
     }
 
@@ -1850,91 +1425,4 @@ contract AvalaunchSale is Initializable {
     {
         return (vestingPortionsUnlockTime, vestingPercentPerPortion);
     }
-
-    /// @notice     Function to remove stuck tokens from sale contract
-    function removeStuckTokens(
-        address token,
-        address beneficiary
-    )
-        external
-        onlyAdmin
-    {
-        // Require that token address does not match with sale token
-        require(token != address(sale.token), "Can't withdraw sale token.");
-        // Safe transfer token from sale contract to beneficiary
-        IERC20(token).safeTransfer(beneficiary, IERC20(token).balanceOf(address(this)));
-    }
-
-    /// @notice     Function to set params for updatePriceInAVAX function
-    function setUpdateTokenPriceInAVAXParams(
-        uint8 _updateTokenPriceInAVAXPercentageThreshold,
-        uint256 _updateTokenPriceInAVAXTimeLimit
-    )
-        external
-        onlyAdmin
-        onlyIfGateOpen
-    {
-        // Require that arguments don't equal zero
-        require(
-            _updateTokenPriceInAVAXTimeLimit != 0 && _updateTokenPriceInAVAXPercentageThreshold != 0,
-            "Can't set zero value."
-        );
-        // Require that percentage threshold is less or equal 100%
-        require(
-            _updateTokenPriceInAVAXPercentageThreshold <= 100,
-            "Threshold can't be higher than 100%."
-        );
-        // Set new values
-        updateTokenPriceInAVAXPercentageThreshold = _updateTokenPriceInAVAXPercentageThreshold;
-        updateTokenPriceInAVAXTimeLimit = _updateTokenPriceInAVAXTimeLimit;
-    }
-
-    /// @notice     Function to secure dexalot portfolio interactions
-    function performDexalotChecks() internal view {
-        require(
-            supportsDexalotWithdraw,
-            "Dexalot Portfolio not supported."
-        );
-        require(
-            block.timestamp >= dexalotUnlockTime,
-            "Dexalot Portfolio not unlocked."
-        );
-    }
-
-    /// @notice     Function to get sale.token symbol and parse as bytes32
-    function getTokenSymbolBytes32() internal view returns (bytes32 _symbol) {
-        // get token symbol as string memory
-        string memory symbol = IERC20Metadata(address(sale.token)).symbol();
-        // parse token symbol to bytes32 format - to fit dexalot function interface
-        assembly {
-            _symbol := mload(add(symbol, 32))
-        }
-    }
-
-    /// @notice     Function close setter gate after all params are set
-    function closeGate() external onlyAdmin onlyIfGateOpen {
-        // Require that sale is created
-        require(sale.isCreated, "Sale not created.");
-        // Require that sale token is set
-        require(address(sale.token) != address(0), "Token not set.");
-        // Require that tokens were deposited
-        require(sale.tokensDeposited, "Tokens not deposited.");
-        // Require that token price updating params are set
-        require(
-            updateTokenPriceInAVAXPercentageThreshold != 0 && updateTokenPriceInAVAXTimeLimit != 0,
-            "Params for updating AVAX price not set."
-        );
-        // Require that registration times are set
-        require(
-            registration.registrationTimeStarts != 0 && registration.registrationTimeEnds != 0,
-            "Registration params not set."
-        );
-
-        // Close the gate
-        gateClosed = true;
-        emit GateClosed(block.timestamp);
-    }
-
-    // Function to act as a fallback and handle receiving AVAX.
-    receive() external payable {}
 }

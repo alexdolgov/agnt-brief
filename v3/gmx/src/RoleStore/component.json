@@ -1,7 +1,15 @@
 {
   "component": "RoleStore",
   "main_contract": "RoleStore",
-  "source_file_count": 11,
+  "source_entry_count": 5,
+  "source_file_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RoleStore\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -33,10 +41,12 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x00261e5da1f20c93bb5258e384591293da24a4f6",
+      "address": "0x3c3d99fd298f679dbc2cecd132b4ec4d0f5e6e72",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403085"
     }
   ]
 }

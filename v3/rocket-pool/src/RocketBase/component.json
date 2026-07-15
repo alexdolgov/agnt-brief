@@ -1,18 +1,34 @@
 {
   "component": "RocketBase",
   "main_contract": "RocketBase",
-  "source_file_count": 15,
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RocketBase\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://rocketpool.net/files/audits/cantina-audit-saturn-1.pdf",
+    "https://rocketpool.net/files/audits/consensys-audit-atlas.pdf",
+    "https://rocketpool.net/files/audits/sigma-prime-audit-saturn-1.pdf",
+    "https://rocketpool.net/files/audits/sigma-prime-audit.pdf",
+    "https://rocketpool.net/files/sigma-prime-audit.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x029d946f28f93399a5b0d09c879fc8c94e596aeb",
+      "address": "0x1d9f14c6bfd8358b589964bad8665add248e9473",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403941"
     }
   ]
 }

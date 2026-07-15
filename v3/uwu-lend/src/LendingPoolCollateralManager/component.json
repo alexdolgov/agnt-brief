@@ -1,7 +1,15 @@
 {
   "component": "LendingPoolCollateralManager",
   "main_contract": "LendingPoolCollateralManager",
+  "source_entry_count": 30,
   "source_file_count": 30,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LendingPoolCollateralManager\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x2e9f846ce3820531b52c08d3d4543be5c8fe7ddb",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400661"
     }
   ]
 }

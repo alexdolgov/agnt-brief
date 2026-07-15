@@ -1,44 +1,85 @@
 # Agentic Audit Brief: LUSD ChickenBonds
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 17 across 6 audit(s)
+- Eligible audit results: 7 (6 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: LUSD ChickenBonds (`lusd-chickenbonds`)
 - Website: [https://www.chickenbonds.org](https://www.chickenbonds.org)
 - Lifecycle: unknown
-- Generated: 2026-07-04T11:05:42.076Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16da
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 5 unique implementations (9 raw deployments)
+- Contract surface: 5 unique implementations (5 raw deployments)
+- Coverage basis: 3/5 confirmed own live verified implementations (60.0%); conservative 60.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,499,600.88
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Yield Aggregator. Structurally: 4 project-authored contract(s) across 1 chain(s); 1 ERC20 token, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for LUSD ChickenBonds. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Contracts are linked by 3 cross-contract reference(s). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 5 contract row(s) across ethereum. Structural roles: 2 core, 2 unclassified, 1 supporting. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 5
+- Structural roles: core (2), unclassified (2), supporting (1)
+- Contract kinds: contract (3), unclassified (2)
+- Detected standards: ownable (2), erc165 (1), erc20 (1), erc721 (1)
+- Frameworks: openzeppelin (2)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 5 contracts are derived from known codebases. 5 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- BLUSDToken (`0xb9d7dd...3f79c3`, chain 1)
+- BondNFT (`0xa83848...4029ee`, chain 1)
+- ChickenBondManager (`0x57619f...e37137`, chain 1)
+- Vyper_contract (`0x74ed5d...7b901c`, chain 1)
+- Vyper_contract (`0xda0dd1...9c2db4`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 9; live-surface contracts included: 9 (9 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 5/5 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 3/5 (60.0%)
+- Coverage of address-book-owned deployed-live implementations: 3/5 (60.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 5 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
 - Deployed-live implementations: 5 of 5 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 3/5
+- All verified address-book-owned implementations audited (incl. non-live): 3/5
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 5
-- Raw deployments: 9
+- Raw deployments: 5
 - Audits discovered: 7 (7 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): n/a
@@ -58,18 +99,18 @@ The protocol comprises 2 functional families. Contracts are linked by 3 cross-co
 
 ### ✅ Verified + Audited (3)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BLUSDToken | token | ethereum | n/a | [`0xb9d7dd...3f79c3`](./contracts/ethereum-1/0xb9d7dddca9a4ac480991865efef82e01273f79c3/) | ✅ Audited |
-| BondNFT | token | ethereum | n/a | [`0xa83848...4029ee`](./contracts/ethereum-1/0xa8384862219188a8f03c144953cf21fc124029ee/) | ✅ Audited |
-| ChickenBondManager | governance | ethereum | n/a | [`0x57619f...e37137`](./contracts/ethereum-1/0x57619fe9c539f890b19c61812226f9703ce37137/) | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BLUSDToken | token | project_anchor | own_supporting | 0 | ethereum | unit-245800 | `0xb9d7dd...3f79c3` | ✅ Audited |
+| BondNFT | token | project_anchor | own_supporting | 0 | ethereum | unit-245799 | `0xa83848...4029ee` | ✅ Audited |
+| ChickenBondManager | governance | project_anchor | own_supporting | 0 | ethereum | unit-245797 | `0x57619f...e37137` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| GnosisSafe | governance | ethereum | n/a | [`0xfeb4ac...faff52`](./contracts/ethereum-1/0xfeb4acf3df3cdea7399794d0869ef76a6efaff52/) | ⚠️ Unaudited |
-| Vyper_contract | unknown | ethereum | n/a | 5 deployments: ethereum [`0x5fa5b6...3c56a6`](./contracts/ethereum-1/0x5fa5b62c8af877cb37031e0a3b2f34a78e3c56a6/); ethereum `0x74ed5d...7b901c`; ethereum `0xbebc44...2ff1c7`; ethereum `0xda0dd1...9c2db4`; ethereum `0xed279f...23f0ca` | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Vyper_contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-245798 | `0x74ed5d...7b901c` | ⚠️ Unaudited |
+| Vyper_contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-245801 | `0xda0dd1...9c2db4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,30 +132,135 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [B.Protocol - Chicken Bonds Audit.pdf](https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/B.Protocol%20-%20Chicken%20Bonds%20Audit.pdf) | B.Protocol | Audit | 2022-07 | stale | Direct | n/a | 0 | n/a |
-| [Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf](https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Liquity%20ChickenBond.pdf) | Coinspect | Audit | 2022-05 | stale | Direct | contract_name | 3 | n/a |
-| [Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf](https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Liquity%20ChickenBonds%202nd%20v220803.pdf) | Coinspect | Audit | 2022-07 | stale | Direct | contract_name | 3 | n/a |
-| [Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf](https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Liquity%20ChickenBonds%203rd%20v220929.pdf) | Coinspect | Audit | 2022-09 | stale | Direct | contract_name | 3 | n/a |
-| [Coinspect - Smart Contract Audit - Liquity ChickenBonds 4th v221021.pdf](https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Liquity%20ChickenBonds%204th%20v221021.pdf) | Coinspect | Audit | 2022-10 | stale | Direct | contract_name | 2 | n/a |
-| [Dedaub_Chicken Bonds Audit.pdf](https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Dedaub_Chicken%20Bonds%20Audit.pdf) | Dedaub | Audit | 2022-07 | stale | Direct | contract_name | 3 | n/a |
-| [Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf](https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Dedaub_Chicken%20Bonds%20Delta%20Audit%20(NFT%20additions).pdf) | Dedaub | Audit | 2022-09 | stale | Direct | contract_name | 3 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [B.Protocol - Chicken Bonds Audit.pdf](https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/B.Protocol%20-%20Chicken%20Bonds%20Audit.pdf) | B.Protocol | Audit | 2022-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf](https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Liquity%20ChickenBond.pdf) | Coinspect | Audit | 2022-05 | stale | Direct | n/a | matched | 3 | 0 | 0 | 19 | n/a |
+| [Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf](https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Liquity%20ChickenBonds%202nd%20v220803.pdf) | Coinspect | Audit | 2022-07 | stale | Direct | n/a | matched | 3 | 0 | 0 | 14 | n/a |
+| [Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf](https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Liquity%20ChickenBonds%203rd%20v220929.pdf) | Coinspect | Audit | 2022-09 | stale | Direct | n/a | matched | 3 | 0 | 0 | 21 | n/a |
+| [Coinspect - Smart Contract Audit - Liquity ChickenBonds 4th v221021.pdf](https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Liquity%20ChickenBonds%204th%20v221021.pdf) | Coinspect | Audit | 2022-10 | stale | Direct | n/a | matched | 2 | 0 | 0 | 2 | n/a |
+| [Dedaub_Chicken Bonds Audit.pdf](https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Dedaub_Chicken%20Bonds%20Audit.pdf) | Dedaub | Audit | 2022-07 | stale | Direct | n/a | matched | 3 | 0 | 0 | 2 | n/a |
+| [Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf](https://github.com/liquity/ChickenBond/blob/main/LUSDChickenBonds/audits/Dedaub_Chicken%20Bonds%20Delta%20Audit%20(NFT%20additions).pdf) | Dedaub | Audit | 2022-09 | stale | Direct | n/a | matched | 3 | 0 | 0 | 4 | n/a |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [14520] B.Protocol - Chicken Bonds Audit.pdf — no match: Scope explicitly lists four files: BAMM.sol, GemSeller.sol, GemSellerController.sol, UniV3Twap.sol. PriceFormula.sol excluded. Audit date from title line.
+- [14521] Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf — matched: No reason recorded
+- [14522] Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf — matched: No reason recorded
+- [14523] Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf — matched: No reason recorded
+- [14524] Coinspect - Smart Contract Audit - Liquity ChickenBonds 4th v221021.pdf — matched: No reason recorded
+- [14525] Dedaub_Chicken Bonds Audit.pdf — matched: No reason recorded
+- [14526] Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf — matched: No reason recorded
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| B.Protocol - Chicken Bonds Audit.pdf | BAMM | unmatched — not counted | — | listed in scope | no |
+| B.Protocol - Chicken Bonds Audit.pdf | GemSeller | unmatched — not counted | — | listed in scope | no |
+| B.Protocol - Chicken Bonds Audit.pdf | GemSellerController | unmatched — not counted | — | listed in scope | no |
+| B.Protocol - Chicken Bonds Audit.pdf | UniV3Twap | unmatched — not counted | — | listed in scope | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dd...3f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | BaseMath | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | BondNFT | own contract | BondNFT (selected) `0xa83848...4029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619f...e37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | ChickenBondOperationsScript | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | ChickenMath | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | IBLUSDToken | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | IBondNFT | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | IChickenBondManager | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | ICurveLiquidityGaugeV4 | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | ICurvePool | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | ILUSDToken | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | IYearnRegistry | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | IYearnVault | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | LUSDSilo | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | MockCurveLiquidityGaugeV4 | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | MockCurvePool | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | MockLUSDToken | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | MockYearnRegistry | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | MockYearnVault | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | StrategyAPI | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBond.pdf | console | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dd...3f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | BaseMath | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | BondNFT | own contract | BondNFT (selected) `0xa83848...4029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619f...e37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | ChickenBondOperationsScript | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | ChickenMath | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | IBAMM | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | IBLUSDToken | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | IBondNFT | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | IBondNFTArtwork | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | IChickenBondManager | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | ICurveLiquidityGaugeV4 | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | ICurvePool | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | ILUSDToken | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | IYearnRegistry | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | IYearnVault | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 2nd v220803.pdf | StrategyAPI | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dd...3f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | BaseMath | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | BondNFT | own contract | BondNFT (selected) `0xa83848...4029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619f...e37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | ChickenBondOperationsScript | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | ChickenMath | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | EggTraitWeights | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | GenerativeEggArtwork | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | IBAMM | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | IBLUSDToken | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | IBondNFT | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | IBondNFTArtwork | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | IChickenBondManager | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | ICurveGaugeController | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | ICurveLiquidityGaugeV5 | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | ICurvePool | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | ILQTYStaking | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | ILUSDToken | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | IPickleJar | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | ITroveManager | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | IYearnRegistry | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | IYearnVault | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | SimpleEggArtwork | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 3rd v220929.pdf | StrategyAPI | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 4th v221021.pdf | BLUSDLPZAP | unmatched — not counted | — | — | no |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 4th v221021.pdf | BondNFT | own contract | BondNFT (selected) `0xa83848...4029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 4th v221021.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619f...e37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Coinspect - Smart Contract Audit - Liquity ChickenBonds 4th v221021.pdf | ChickenInArtwork | unmatched — not counted | — | — | no |
+| Dedaub_Chicken Bonds Audit.pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dd...3f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub_Chicken Bonds Audit.pdf | BaseMath | unmatched — not counted | — | — | no |
+| Dedaub_Chicken Bonds Audit.pdf | BondNFT | own contract | BondNFT (selected) `0xa83848...4029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub_Chicken Bonds Audit.pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619f...e37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub_Chicken Bonds Audit.pdf | ChickenMath | unmatched — not counted | — | — | no |
+| Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | BLUSDToken | own contract | BLUSDToken (selected) `0xb9d7dd...3f79c3` — deployed 2022-10-04 13:02:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | BaseMath | unmatched — not counted | — | — | no |
+| Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | BondNFT | own contract | BondNFT (selected) `0xa83848...4029ee` — deployed 2022-10-04 13:03:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | ChickenBondManager | own contract | ChickenBondManager (selected) `0x57619f...e37137` — deployed 2022-10-04 13:04:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | ChickenMath | unmatched — not counted | — | — | no |
+| Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | GenerativeEggArtwork | unmatched — not counted | — | — | no |
+| Dedaub_Chicken Bonds Delta Audit (NFT additions).pdf | SimpleEggArtwork | unmatched — not counted | — | — | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x74ed5d...7b901c` | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xda0dd1...9c2db4` | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 5 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -122,8 +268,10 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: contract_name=17
+- Address-book scope dispositions: 17 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 66 unmatched
+- Matched-own operational status: 17 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1
+- Match method counts: unique_name=17
 
 Zero-match audit list:
 

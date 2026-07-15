@@ -1,7 +1,15 @@
 {
   "component": "YearnBoostedStaker",
   "main_contract": "YearnBoostedStaker",
-  "source_file_count": 7,
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/YearnBoostedStaker\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x3ea13660e4b4319a1418c5a5e9fe98263e65ac4f",
+      "address": "0x5d2ea33449a60a70e8fcdc5251fdd86a030fad91",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405061"
     }
   ]
 }

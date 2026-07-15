@@ -24,7 +24,7 @@ contract AppStakingMigrator is AppAccessControlled {
         __AppAccessControlled_init(_authority);
     }
 
-    function migratePositions(Migration[] memory migrations) external onlyPolicy {
+    function migratePositions(Migration[] memory migrations) external onlyExecutor {
         for (uint256 i = 0; i < migrations.length; i++) {
             _migratePosition(migrations[i].to, migrations[i].tokenId, migrations[i].position);
         }

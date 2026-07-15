@@ -1,5 +1,13 @@
 /**
- *Submitted for verification at Etherscan.io on 2020-10-26
+ *Submitted for verification at moonriver.moonscan.io on 2021-11-09
+*/
+
+/**
+ *Submitted for verification at BscScan.com on 2021-03-26
+*/
+
+/**
+ *Submitted for verification at BscScan.com on 2021-03-25
 */
 
 // File: contracts/components/Proxy.sol
@@ -442,35 +450,16 @@ interface IRC20Protocol {
 pragma solidity 0.4.26;
 
 interface IQuota {
-  function userMintLock(uint tokenId, bytes32 storemanGroupId, uint value) external;
-  function userMintRevoke(uint tokenId, bytes32 storemanGroupId, uint value) external;
-  function userMintRedeem(uint tokenId, bytes32 storemanGroupId, uint value) external;
+  function userLock(uint tokenId, bytes32 storemanGroupId, uint value) external;
+  function userBurn(uint tokenId, bytes32 storemanGroupId, uint value) external;
 
-  function smgMintLock(uint tokenId, bytes32 storemanGroupId, uint value) external;
-  function smgMintRevoke(uint tokenId, bytes32 storemanGroupId, uint value) external;
-  function smgMintRedeem(uint tokenId, bytes32 storemanGroupId, uint value) external;
+  function smgRelease(uint tokenId, bytes32 storemanGroupId, uint value) external;
+  function smgMint(uint tokenId, bytes32 storemanGroupId, uint value) external;
 
-  function userBurnLock(uint tokenId, bytes32 storemanGroupId, uint value) external;
-  function userBurnRevoke(uint tokenId, bytes32 storemanGroupId, uint value) external;
-  function userBurnRedeem(uint tokenId, bytes32 storemanGroupId, uint value) external;
+  function upgrade(bytes32 storemanGroupId) external;
 
-  function smgBurnLock(uint tokenId, bytes32 storemanGroupId, uint value) external;
-  function smgBurnRevoke(uint tokenId, bytes32 storemanGroupId, uint value) external;
-  function smgBurnRedeem(uint tokenId, bytes32 storemanGroupId, uint value) external;
-
-  function userFastMint(uint tokenId, bytes32 storemanGroupId, uint value) external;
-  function userFastBurn(uint tokenId, bytes32 storemanGroupId, uint value) external;
-
-  function smgFastMint(uint tokenId, bytes32 storemanGroupId, uint value) external;
-  function smgFastBurn(uint tokenId, bytes32 storemanGroupId, uint value) external;
-
-  function assetLock(bytes32 srcStoremanGroupId, bytes32 dstStoremanGroupId) external;
-  function assetRedeem(bytes32 srcStoremanGroupId, bytes32 dstStoremanGroupId) external;
-  function assetRevoke(bytes32 srcStoremanGroupId, bytes32 dstStoremanGroupId) external;
-
-  function debtLock(bytes32 srcStoremanGroupId, bytes32 dstStoremanGroupId) external;
-  function debtRedeem(bytes32 srcStoremanGroupId, bytes32 dstStoremanGroupId) external;
-  function debtRevoke(bytes32 srcStoremanGroupId, bytes32 dstStoremanGroupId) external;
+  function transferAsset(bytes32 srcStoremanGroupId, bytes32 dstStoremanGroupId) external;
+  function receiveDebt(bytes32 srcStoremanGroupId, bytes32 dstStoremanGroupId) external;
 
   function getUserMintQuota(uint tokenId, bytes32 storemanGroupId) external view returns (uint);
   function getSmgMintQuota(uint tokenId, bytes32 storemanGroupId) external view returns (uint);
@@ -563,9 +552,12 @@ interface ITokenManager {
     function getTokenPairInfoSlim(uint id) external view 
       returns (uint origChainID, bytes tokenOrigAccount, uint shadowChainID);
 
-    function mintToken(uint id, address to,uint value) external;
+    function getAncestorInfo(uint id) external view
+      returns (bytes account, string name, string symbol, uint8 decimals, uint chainId);
 
-    function burnToken(uint id, uint value) external;
+    function mintToken(address tokenAddress, address to, uint value) external;
+
+    function burnToken(address tokenAddress, address from, uint value) external;
 }
 
 // File: contracts/interfaces/ISignatureVerifier.sol
@@ -720,7 +712,7 @@ library HTLCTxLib {
 
     /// @notice tx info status
     /// @notice uninitialized,locked,redeemed,revoked
-    enum TxStatus {None, Locked, Redeemed, Revoked}
+    enum TxStatus {None, Locked, Redeemed, Revoked, AssetLocked, DebtLocked}
 
     /**
      *
@@ -926,7 +918,8 @@ library HTLCTxLib {
     /// @param  srcSmgID            ID of source storeman group
     /// @param  destSmgID           ID of the storeman which will take over of the debt of source storeman group
     /// @param  lockedTime          HTLC lock time
-    function addDebtTx(Data storage self, bytes32 xHash, bytes32 srcSmgID, bytes32 destSmgID, uint lockedTime)
+    /// @param  status              Status, should be 'Locked' for asset or 'DebtLocked' for debt
+    function addDebtTx(Data storage self, bytes32 xHash, bytes32 srcSmgID, bytes32 destSmgID, uint lockedTime, TxStatus status)
         external
     {
         DebtTx memory debtTx = self.mapHashXDebtTxs[xHash];
@@ -934,7 +927,7 @@ library HTLCTxLib {
         require(debtTx.baseTx.status == TxStatus.None, "Debt tx exists");
 
         debtTx.baseTx.smgID = destSmgID;
-        debtTx.baseTx.status = TxStatus.Locked;
+        debtTx.baseTx.status = status;//TxStatus.Locked;
         debtTx.baseTx.lockedTime = lockedTime;
         debtTx.baseTx.beginLockedTime = now;
         debtTx.srcSmgID = srcSmgID;
@@ -944,14 +937,16 @@ library HTLCTxLib {
 
     /// @notice                     refund coins from HTLC transaction
     /// @param x                    HTLC random number
-    function redeemDebtTx(Data storage self, bytes32 x)
+    /// @param status               Status, should be 'Locked' for asset or 'DebtLocked' for debt
+    function redeemDebtTx(Data storage self, bytes32 x, TxStatus status)
         external
         returns(bytes32 xHash)
     {
         xHash = sha256(abi.encodePacked(x));
 
         DebtTx storage debtTx = self.mapHashXDebtTxs[xHash];
-        require(debtTx.baseTx.status == TxStatus.Locked, "Status is not locked");
+        // require(debtTx.baseTx.status == TxStatus.Locked, "Status is not locked");
+        require(debtTx.baseTx.status == status, "Status is not locked");
         require(now < debtTx.baseTx.beginLockedTime.add(debtTx.baseTx.lockedTime), "Redeem timeout");
 
         debtTx.baseTx.status = TxStatus.Redeemed;
@@ -961,11 +956,13 @@ library HTLCTxLib {
 
     /// @notice                     revoke debt transaction, which is used for source storeman group
     /// @param  xHash               hash of HTLC random number
-    function revokeDebtTx(Data storage self, bytes32 xHash)
+    /// @param  status              Status, should be 'Locked' for asset or 'DebtLocked' for debt
+    function revokeDebtTx(Data storage self, bytes32 xHash, TxStatus status)
         external
     {
         DebtTx storage debtTx = self.mapHashXDebtTxs[xHash];
-        require(debtTx.baseTx.status == TxStatus.Locked, "Status is not locked");
+        // require(debtTx.baseTx.status == TxStatus.Locked, "Status is not locked");
+        require(debtTx.baseTx.status == status, "Status is not locked");
         require(now >= debtTx.baseTx.beginLockedTime.add(debtTx.baseTx.lockedTime), "Revoke is not permitted");
 
         debtTx.baseTx.status = TxStatus.Revoked;

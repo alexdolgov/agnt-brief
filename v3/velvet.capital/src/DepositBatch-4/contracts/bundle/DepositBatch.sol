@@ -1,13 +1,14 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity 0.8.17;
 
-import { IERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import { TransferHelper } from "@uniswap/lib/contracts/libraries/TransferHelper.sol";
-import { IAllowanceTransfer } from "../core/interfaces/IAllowanceTransfer.sol";
-import { ErrorLibrary } from "../library/ErrorLibrary.sol";
-import { IPortfolio } from "../core/interfaces/IPortfolio.sol";
-import { FunctionParameters } from "../FunctionParameters.sol";
-import { ReentrancyGuard } from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import {IERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import {TransferHelper} from "@uniswap/lib/contracts/libraries/TransferHelper.sol";
+import {IAllowanceTransfer} from "../core/interfaces/IAllowanceTransfer.sol";
+import {ErrorLibrary} from "../library/ErrorLibrary.sol";
+import {IPortfolio} from "../core/interfaces/IPortfolio.sol";
+import {FunctionParameters} from "../FunctionParameters.sol";
+import {ReentrancyGuard} from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+
 /**
  * @title DepositBatch
  * @notice A contract for performing multi-token swap and deposit operations.
@@ -15,11 +16,7 @@ import { ReentrancyGuard } from "@openzeppelin/contracts/security/ReentrancyGuar
  */
 contract DepositBatch is ReentrancyGuard {
   // The address of Enso's swap execution logic; swaps are delegated to this target.
-  address immutable SWAP_TARGET;
-
-  constructor(address _swapTarget) {
-    SWAP_TARGET = _swapTarget;
-  }
+  address constant SWAP_TARGET = 0x38147794FF247e5Fc179eDbAE6C37fff88f68C52;
 
   /**
    * @notice Performs a multi-token swap and deposit operation for the user.
@@ -36,7 +33,7 @@ contract DepositBatch is ReentrancyGuard {
 
     _multiTokenSwapAndDeposit(data, user);
 
-    (bool sent, ) = user.call{ value: address(this).balance }("");
+    (bool sent, ) = user.call{value: address(this).balance}("");
     if (!sent) revert ErrorLibrary.TransferFailed();
   }
 
@@ -85,14 +82,14 @@ contract DepositBatch is ReentrancyGuard {
       } else {
         uint256 balanceBefore = _getTokenBalance(_token, address(this));
         (bool success, ) = SWAP_TARGET.delegatecall(data._callData[i]);
-        if (!success) revert ErrorLibrary.DepositBatchCallFailed();
+        if (!success) revert ErrorLibrary.CallFailed();
         uint256 balanceAfter = _getTokenBalance(_token, address(this));
         balance = balanceAfter - balanceBefore;
       }
       if (balance == 0) revert ErrorLibrary.InvalidBalanceDiff();
 
-      _safeApprove(_token, target, balance);
-
+      IERC20(_token).approve(target, 0);
+      IERC20(_token).approve(target, balance);
       depositAmounts[i] = balance;
     }
 
@@ -110,17 +107,6 @@ contract DepositBatch is ReentrancyGuard {
         TransferHelper.safeTransfer(_token, user, portfoliodustReturn);
       }
     }
-  }
-
-  /**
-   * @notice Helper function to safely approve a token for a spender.
-   * @param token The address of the token to approve.
-   * @param spender The address of the spender.
-   * @param amount The amount to approve.
-   */
-  function _safeApprove(address token, address spender, uint256 amount) internal {
-    try IERC20(token).approve(spender, 0) {} catch {}
-    TransferHelper.safeApprove(token, spender, amount);
   }
 
   /**

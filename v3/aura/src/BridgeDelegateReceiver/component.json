@@ -1,10 +1,20 @@
 {
   "component": "BridgeDelegateReceiver",
   "main_contract": "BridgeDelegateReceiver",
+  "source_entry_count": 7,
   "source_file_count": 7,
-  "deployment_count": 12,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BridgeDelegateReceiver\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/aurafinance/aura-contracts/blob/main/audits/sidechain/halborn_sidechain_audit_report.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,95 +22,9 @@
       "address": "0x397a2d4d23c6fd1316ce25000820779006e80cd7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x430113ce763a9b35664bfcf96088fb4caa3f36f6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x60421ffaa36f3a8e69c25887e575689f52b055f7",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x6992640358de1e18da8486c80d4ad11db1af8ec4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x73b4cec14883d7e861157ecfe6e282042763c909",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x7eb87c3a4eabdad158781d0dbb7ab3589b9c2b4c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x80b1116fc9f5334bc8d6502e59dc4c42ce98ab8d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x98b6dc58053570cee332ebf664df745d8ffcaece",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xac962acd42f93c6f26e1cf83271d2a53b208daa6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xb6d84df0ea2c8b04ef76053d1cc46e90c75ccc11",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xb8ca2ae3e199587078d9955c999d4f1555d75dad",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xbcf3b107a5ecdd8efb70a74f44b827a1f7108c48",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391443"
     }
   ]
 }

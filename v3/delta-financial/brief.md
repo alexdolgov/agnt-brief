@@ -1,44 +1,86 @@
 # Agentic Audit Brief: Delta Financial
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Delta Financial (`delta-financial`)
 - Website: [https://www.delta.finance](https://www.delta.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:42.689Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 22 unique implementations (22 raw deployments)
+- Contract surface: 2 unique implementations (2 raw deployments)
+- Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $7,496,097.82
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Options. Structurally: 39 project-authored contract(s) across 1 chain(s); 4 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Delta Financial. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 10 common project-authored base contract(s) (baseadminupgradeabilityproxy, baseupgradeabilityproxy, proxy). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 3 contract row(s) across ethereum. Structural roles: 2 unclassified, 1 supporting. 1 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 3
+- Structural roles: unclassified (2), supporting (1)
+- Contract kinds: contract (3)
+- Detected standards: erc1967proxy (1)
+- Frameworks: openzeppelin (1), openzeppelin-upgradeable (1)
+- Upgradeable-pattern rows: 1
+
+## Fork Analysis
+
+0 of 1 contracts are derived from known codebases. 1 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- TransparentUpgradeableProxy (`0x6b29a3...9de848`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 102; live-surface contracts included: 22 (7 live, 15 unknown).
-- Excluded by liveness: 80 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 3; live-surface contracts included: 3 (1 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 1/2 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/7 (0.0%)
-- Deployed-live implementations: 7 of 22 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/8
-- Verified + Unaudited implementations: 8
+- Coverage of address-book-owned deployed-live implementations: 0/1 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 1 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
+- Deployed-live implementations: 1 of 2 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/1
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 14
-- Unique implementations: 22
-- Raw deployments: 22
+- Unverified implementations: 0
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,18 +99,12 @@ The protocol comprises 3 functional families. Its contracts share 10 common proj
 
 - None
 
-### ⚠️ Verified + Unaudited (8)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| CORE | unknown | ethereum | n/a | [`0x62359e...fa23d7`](./contracts/ethereum-1/0x62359ed7505efc61ff1d56fef82158ccaffa23d7/) | ⚠️ Unaudited |
-| coreDAI | unknown | ethereum | n/a | [`0x00a661...f37642`](./contracts/ethereum-1/0x00a66189143279b6db9b77294688f47959f37642/) | ⚠️ Unaudited |
-| CoreDAO | unknown | ethereum | n/a | [`0xf66cd2...32dd58`](./contracts/ethereum-1/0xf66cd2f8755a21d3c8683a10269f795c0532dd58/) | ⚠️ Unaudited |
-| DELTA_Deep_Vault_Withdrawal | operational_periphery | ethereum | n/a | [`0x251bbe...60a943`](./contracts/ethereum-1/0x251bbe8c7abc2a1ca8d0b25fc1149abe6160a943/) | ⚠️ Unaudited |
-| DELTA_Distributor | operational_periphery | ethereum | n/a | [`0xf249c5...667461`](./contracts/ethereum-1/0xf249c5b422758d91d8f05e1cc5fc85cf4b667461/) | ⚠️ Unaudited |
-| FannyVault | core_logic | ethereum | n/a | [`0xbb791b...9d7816`](./contracts/ethereum-1/0xbb791bc6106e4d949863e2ab76fc01ac0a9d7816/) | ⚠️ Unaudited |
-| Unimplemented | unknown | ethereum | n/a | [`0x0c53b4...7e363c`](./contracts/ethereum-1/0x0c53b4b0a343c70a9e610bde28a269610d7e363c/) | ⚠️ Unaudited |
-| wCORE | unknown | ethereum | n/a | [`0x17b8c1...23b669`](./contracts/ethereum-1/0x17b8c1a92b66b1cf3092c5d223cb3a129023b669/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| OVLTransferHandler | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-383712 | `0x9ea3b5...7b20ef` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-383711 | `0x6b29a3...9de848` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,32 +118,32 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (14)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x25858c...fe71da` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x398ab4...02c954` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x48f32c...06e199` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x708722...5059d2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7c0f5f...d6e01a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x80af36...7c4cdd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x859b2f...66c20e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9e20ec...54c38b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa1a957...de71d0` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa53369...a98e0e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa8a9da...42b8a4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb0a3f8...788654` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc1fa5b...0403cf` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd8a55f...ccf506` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [skynet.certik.com/projects/delta-finance](https://skynet.certik.com/projects/delta-finance) | CertiK | Audit | 2022-07 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [skynet.certik.com/projects/delta-finance](https://skynet.certik.com/projects/delta-finance) | CertiK | Audit | 2022-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | medium |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [21299] skynet.certik.com/projects/delta-finance — no match: Extracted from 'Audited Files' section; only two files listed with truncated SHA256 hashes. Audit date from 'Last Audit was delivered on 7/23/2022'.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| skynet.certik.com/projects/delta-finance | ISwapAggregator | unmatched — not counted | — | listed in Audited Files | no |
+| skynet.certik.com/projects/delta-finance | Curve | unmatched — not counted | — | listed in Audited Files | no |
 
 ## Coverage Gaps
 
@@ -119,10 +155,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 22 |
+| standard_library | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -130,7 +166,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 2 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: medium=1
 - Match method counts: n/a
 
 Zero-match audit list:

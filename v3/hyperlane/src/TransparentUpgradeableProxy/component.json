@@ -1,18 +1,28 @@
 {
   "component": "TransparentUpgradeableProxy",
   "main_contract": "TransparentUpgradeableProxy",
-  "source_file_count": 296,
+  "source_entry_count": 248,
+  "source_file_count": 248,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1329",
-      "chain_id": 1329,
-      "address": "0x018ee58c3668e5971e0f6e0ec7f693a3d1b39beb",
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x02d16bc51af6bfd153d67ca61754cf912e82c4d9",
       "is_proxy": true,
-      "implementation_address": "0x94b0f5b70afe911c0aeffa72e10f72a6f38e21cd",
-      "liveness": "live"
+      "implementation_address": "0x2f9db5616fa3fad1ab06cb2c906830ba63d135e3",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403150"
     }
   ]
 }

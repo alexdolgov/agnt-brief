@@ -1,6 +1,6 @@
 // File: contracts/ownership/Ownable.sol
 
-pragma solidity ^0.5.0;
+pragma solidity <6.0 >=0.4.0;
 
 
 /**

@@ -1,18 +1,38 @@
 {
   "component": "PermissionedDynaVault",
   "main_contract": "PermissionedDynaVault",
+  "source_entry_count": 36,
   "source_file_count": 36,
-  "deployment_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PermissionedDynaVault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x1631ca6543adcb61e2b9e30189c8477981258274",
+      "address": "0x67b93f6676bd1911c5fae7ffa90fff5f35e14dcd",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xea7975c2fec1ae9e3058bb5f99d8e26dbc816811",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

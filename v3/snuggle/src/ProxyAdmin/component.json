@@ -1,26 +1,30 @@
 {
   "component": "ProxyAdmin",
   "main_contract": "ProxyAdmin",
-  "source_file_count": 12,
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "source_entry_count": 14,
+  "source_file_count": 14,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ProxyAdmin\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.snuggle.fi/security"
+  ],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x8bca45df8659debdffb4baca911a5b9c84e037df",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x269dc2f974abed1c7a55a447758fcaef2dcca86f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x999a74ddfde1575c4db454a0300d5f0351a891de",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399050"
     }
   ]
 }

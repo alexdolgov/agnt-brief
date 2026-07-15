@@ -1,8 +1,16 @@
 {
   "component": "UniswapV3Pool-2",
   "main_contract": "UniswapV3Pool",
+  "source_entry_count": 31,
   "source_file_count": 31,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UniswapV3Pool-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,9 @@
       "address": "0x39baac62266af129f24104bc8b1800350563edb9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391146"
     },
     {
       "chain": "polygon",
@@ -20,7 +30,9 @@
       "address": "0x538b2b1acf51b6c9a620f57de8619f9b428ebf9d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391147"
     },
     {
       "chain": "polygon",
@@ -28,15 +40,9 @@
       "address": "0xb485c3048911225de1ad8b446432aed0fbdef211",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xefba86413285584582cbeb556e1b89914b67ed02",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391153"
     }
   ]
 }

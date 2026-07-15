@@ -1,49 +1,78 @@
 # Agentic Audit Brief: EigenCloud
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 5 (0 matched; 5 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: EigenCloud (`eigencloud`)
 - Website: [https://www.eigencloud.xyz](https://www.eigencloud.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:46.214Z
-- Pipeline run: v2-2026-07-02-1ba3fd
-- Chains: ethereum
-- Contract surface: 17 unique implementations (17 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: ethereum, sepolia
+- Contract surface: 75 unique implementations (75 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $4,439,614,231.57
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Restaking. Structurally: 15 project-authored contract(s) across 1 chain(s); role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for EigenCloud. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 3 common project-authored base contract(s) (ownableupgradeable, contextupgradeable, reentrancyguardupgradeable). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 7 contract row(s) across ethereum, sepolia. Structural roles: 5 supporting, 1 core, 1 infra. 6 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 7
+- Structural roles: supporting (5), core (1), infra (1)
+- Contract kinds: abstract (6), contract (1)
+- Detected standards: erc1967proxy (5), ownable (1), ownable2step (1)
+- Frameworks: openzeppelin (7), openzeppelin-upgradeable (6)
+- Upgradeable-pattern rows: 6
 
 ## Contract Surface Quality
 
-- Indexed contracts: 17; live-surface contracts included: 17 (17 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 7; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/17 (0.0%)
-- Deployed-live implementations: 17 of 17 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/17
-- Verified + Unaudited implementations: 17
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 65 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 10 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 8
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 17
-- Raw deployments: 17
-- Audits discovered: 24 (24 direct, 0 inherited from forked code)
+- Unique implementations: 75
+- Raw deployments: 75
+- Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2026-05 (fresh)
-- Audit staleness (calendar age): 6 fresh, 11 aging, 6 stale, 1 unknown
+- Latest audit: 2025-07 (aging)
+- Audit staleness (calendar age): 0 fresh, 2 aging, 2 stale, 1 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
@@ -59,25 +88,25 @@ The protocol comprises 3 functional families. Its contracts share 3 common proje
 
 ### ⚠️ Verified + Unaudited (17)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BackingEigen | unknown | ethereum | n/a | [`0x83e911...456e75`](./contracts/ethereum-1/0x83e9115d334d248ce39a6f36144aeab5b3456e75/) | ⚠️ Unaudited |
-| DelayedWithdrawalRouter | unknown | ethereum | n/a | [`0x44bcb0...83e2af`](./contracts/ethereum-1/0x44bcb0e01cd0c5060d4bb1a07b42580ef983e2af/) | ⚠️ Unaudited |
-| DelegationManager | unknown | ethereum | n/a | [`0x39053d...8ef37a`](./contracts/ethereum-1/0x39053d51b77dc0d36036fc1fcc8cb819df8ef37a/) | ⚠️ Unaudited |
-| Eigen | unknown | ethereum | n/a | [`0x1b716d...aae451`](./contracts/ethereum-1/0x1b716d0ce7c19445152171c6f6e92d10b6aae451/) | ⚠️ Unaudited |
-| EigenPod | unknown | ethereum | n/a | [`0x5a2a4f...909073`](./contracts/ethereum-1/0x5a2a4f2f3c18f09179b6703e63d9edd165909073/) | ⚠️ Unaudited |
-| EigenPodManager | unknown | ethereum | n/a | [`0x91e677...d3a338`](./contracts/ethereum-1/0x91e677b07f7af907ec9a428aafa9fc14a0d3a338/) | ⚠️ Unaudited |
-| EigenStrategy | unknown | ethereum | n/a | [`0x27e7a3...c00428`](./contracts/ethereum-1/0x27e7a3a81741b9fcc5ad7edcbf9f8a72a5c00428/) | ⚠️ Unaudited |
-| EmptyContract | unknown | ethereum | n/a | [`0x179f00...eb55ba`](./contracts/ethereum-1/0x179f0063d87bb7ca4f75ca693566018ca9eb55ba/) | ⚠️ Unaudited |
-| PauserRegistry | unknown | ethereum | n/a | [`0x0c431c...977060`](./contracts/ethereum-1/0x0c431c66f4de941d089625e5b423d00707977060/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x8b9566...b72444`](./contracts/ethereum-1/0x8b9566ada63b64d1e1dcf1418b43fd1433b72444/) | ⚠️ Unaudited |
-| SignedDistributor | unknown | ethereum | n/a | [`0x035bda...d4ad02`](./contracts/ethereum-1/0x035bdaeab85e47710c27eda7fd754ba80ad4ad02/) | ⚠️ Unaudited |
-| Slasher | unknown | ethereum | n/a | [`0xd92145...c1c3cd`](./contracts/ethereum-1/0xd92145c07f8ed1d392c1b88017934e301cc1c3cd/) | ⚠️ Unaudited |
-| StrategyBaseTVLLimits | unknown | ethereum | n/a | [`0x1bee69...25dcd2`](./contracts/ethereum-1/0x1bee69b7dfffa4e2d53c2a2df135c388ad25dcd2/) | ⚠️ Unaudited |
-| StrategyManager | unknown | ethereum | n/a | [`0x5d25ee...e342fb`](./contracts/ethereum-1/0x5d25eef8cfedaa47d31fe2346726de1c21e342fb/) | ⚠️ Unaudited |
-| Timelock | unknown | ethereum | n/a | [`0xa6db1a...210eaf`](./contracts/ethereum-1/0xa6db1a8c5a981d1536266d2a393c5f8ddb210eaf/) | ⚠️ Unaudited |
-| TimelockController | unknown | ethereum | n/a | [`0x2520c6...9e9ff2`](./contracts/ethereum-1/0x2520c6b2c1fbe1813ab5c7c1018cda39529e9ff2/) | ⚠️ Unaudited |
-| UpgradeableBeacon | unknown | ethereum | n/a | [`0xab2346...f8e0c1`](./contracts/ethereum-1/0xab23463e3f7098488ef1a299dbd377c027f8e0c1/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BackingEigen | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-236696 | `0x83e911...456e75` | ⚠️ Unaudited |
+| DelayedWithdrawalRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x44bcb0...83e2af` | ⚠️ Unaudited |
+| DelegationManager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-236695 | `0x39053d...8ef37a` | ⚠️ Unaudited |
+| Eigen | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x1b716d...aae451` | ⚠️ Unaudited |
+| EigenPod | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-236692 | `0x5a2a4f...909073` | ⚠️ Unaudited |
+| EigenPodManager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-236694 | `0x91e677...d3a338` | ⚠️ Unaudited |
+| EigenStrategy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x27e7a3...c00428` | ⚠️ Unaudited |
+| EmptyContract | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x179f00...eb55ba` | ⚠️ Unaudited |
+| PauserRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0c431c...977060` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-236691 | `0x8b9566...b72444` | ⚠️ Unaudited |
+| SignedDistributor | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-236690 | `0x035bda...d4ad02` | ⚠️ Unaudited |
+| Slasher | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xd92145...c1c3cd` | ⚠️ Unaudited |
+| StrategyBaseTVLLimits | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-236693 | `0x1bee69...25dcd2` | ⚠️ Unaudited |
+| StrategyManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5d25ee...e342fb` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6db1a...210eaf` | ⚠️ Unaudited |
+| TimelockController | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2520c6...9e9ff2` | ⚠️ Unaudited |
+| UpgradeableBeacon | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xab2346...f8e0c1` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,40 +120,118 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (58)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x0011fa...a8dd38` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x066cf9...79730d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x0b415f...c81536` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x0e19e5...0cacf4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x0f264e...b00f5c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x12988b...383173` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x151ece...2175d4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x1afc1e...2c68e6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x1bef05...c51b5b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x287381...a1352a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x2e3d6c...c47a5d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x321604...136d69` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x3f98d8...fbc5ac` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x41675c...c7461a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x424246...f5efbc` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x425830...002d07` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x427e62...2697d3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x44632d...8f5a37` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x46cfa3...9616db` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x49a800...eb5adb` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x4a93d2...713084` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x4fda89...4470f2` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x56bfeb...56034a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x56e88c...946fa1` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x59b11b...fcf525` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x59c8d7...e16bf4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x5ac170...0bff61` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x5ae815...029349` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x63aae4...9d20f3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x65147e...ee2d6f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x67cec1...562ac6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x6f8459...4fbac6` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x6ffe77...83672b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x7a2b8c...b18f5d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x7d59f2...37e6f1` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x7ec6a0...bfbd6f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x87cffb...2e4f31` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x8b29d9...86a574` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x8e9324...17d1d5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0x8f31bf...9e5cef` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xa4db30...db162a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xa59163...344c28` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xa6fec5...33c0f5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xa789c9...7af545` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xb02a15...e11476` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xb094ba...4923b0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xb1b6da...d3b533` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xb3cd1a...70a96f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xb99cc5...f96b26` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xbe2f96...95a0b5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xc5b857...77eb5c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xd4a7e1...42e84b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xd9db27...709552` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xe8e469...487afc` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xebda1f...15b720` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xee4182...c9ca1a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xfc8685...ab7b26` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | n/a | `0xff58a3...43373a` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Certora - Eigenlayer Duration Vaults.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/Certora%20-%20Eigenlayer%20Duration%20Vaults.pdf) | Certora | Audit | 2026-01 | fresh | Direct | n/a | 0 | n/a |
-| [Certora - Eigenlayer Incentive Council.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/Certora%20-%20Eigenlayer%20Incentive%20Council.pdf) | Certora | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [EigenLayer Hourglass pt1 - Certora - Security Assessment Final Report - August 2025.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/EigenLayer%20Hourglass%20pt1%20-%20Certora%20-%20Security%20Assessment%20Final%20Report%20-%20August%202025.pdf) | Certora | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
-| [EigenLayer Hourglass pt2 - Certora - Security Assessment Final Report - August 2025.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/EigenLayer%20Hourglass%20pt2%20-%20Certora%20-%20Security%20Assessment%20Final%20Report%20-%20August%202025.pdf) | Certora | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
-| [EigenLayer Merkle - Certora - Security Assessment Final Report - July 2025.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/EigenLayer%20Merkle%20-%20Certora%20-%20Security%20Assessment%20Final%20Report%20-%20July%202025.pdf) | Certora | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
-| [EigenLayer Multichain PT1 - Certora - Security Assessment Final Report2 - July 2025.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/EigenLayer%20Multichain%20PT1%20-%20Certora%20-%20Security%20Assessment%20Final%20Report2%20-%20July%202025.pdf) | Certora | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
-| [EigenLayer Multichain pt2 - Certora - Security Assessment Final Report - July 2025.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/EigenLayer%20Multichain%20pt2%20-%20Certora%20-%20Security%20Assessment%20Final%20Report%20-%20July%202025.pdf) | Certora | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
-| [Eigenlayer - Slashing UX Improvements Audit.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/Eigenlayer%20-%20Slashing%20UX%20Improvements%20Audit.pdf) | Unknown | Audit | 2025-12 | fresh | Direct | n/a | 0 | n/a |
-| [M1 Mainnet - Diligence - Mar 2023.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/M1%20Mainnet%20-%20Diligence%20-%20Mar%202023.pdf) | Consensys Diligence | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
-| [M1 Mainnet - Sigma Prime - May 2023.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/M1%20Mainnet%20-%20Sigma%20Prime%20-%20May%202023.pdf) | Sigma Prime | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
-| [M2 Mainnet - Cantina - Apr 2024.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/M2%20Mainnet%20-%20Cantina%20-%20Apr%202024.pdf) | Spearbit | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
-| [M2 Mainnet - Sigma Prime - Feb 2024.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/M2%20Mainnet%20-%20Sigma%20Prime%20-%20Feb%202024.pdf) | Sigma Prime | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
-| [M4 Mainnet (PEPE) - Certora - Aug 2024.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/M4%20Mainnet%20(PEPE)%20-%20Certora%20-%20Aug%202024.pdf) | Certora | Audit | 2024-08 | aging | Direct | n/a | 0 | n/a |
-| [M4 Mainnet (PEPE) - Sigma Prime - Jul 2024 - Updated Aug 2025.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/M4%20Mainnet%20(PEPE)%20-%20Sigma%20Prime%20-%20Jul%202024%20-%20Updated%20Aug%202025.pdf) | Sigma Prime | Audit | 2024-07 | stale | Direct | n/a | 0 | n/a |
-| [Permissionless Strategies - Sigma Prime - Aug 2024.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/Permissionless%20Strategies%20-%20Sigma%20Prime%20-%20Aug%202024.pdf) | Sigma Prime | Audit | 2024-08 | aging | Direct | n/a | 0 | n/a |
-| [Redistribution Slash Delay (v1.13.0) - Certora - May 2026.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/Redistribution%20Slash%20Delay%20(v1.13.0)%20-%20Certora%20-%20May%202026.pdf) | Certora | Audit | 2026-05 | fresh | Direct | n/a | 0 | n/a |
-| [Rewards v2 - SigmaPrime - Dec 2024.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/Rewards%20v2%20-%20SigmaPrime%20-%20Dec%202024.pdf) | Sigma Prime | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
-| [Rewards v2.2 - Sigma Prime - Feb 2026.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/Rewards%20v2.2%20-%20Sigma%20Prime%20-%20Feb%202026.pdf) | Sigma Prime | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
-| [RewardsCoordinator - Sigma Prime - May 2024.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/RewardsCoordinator%20-%20Sigma%20Prime%20-%20May%202024.pdf) | Sigma Prime | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
-| [Token + Programmatic Incentives - Sigma Prime - Sep 2024.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/Token%20%2B%20Programmatic%20Incentives%20-%20Sigma%20Prime%20-%20Sep%202024.pdf) | Sigma Prime | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
-| [V1.0.0 (Slashing) - Certora - Feb 2025.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/V1.0.0%20(Slashing)%20-%20Certora%20-%20Feb%202025.pdf) | Certora | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
-| [V1.0.0 (Slashing) - Sigma Prime - Feb 2025.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/V1.0.0%20(Slashing)%20-%20Sigma%20Prime%20-%20Feb%202025.pdf) | Sigma Prime | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
-| [V1.6.0 (MOOCOW) - Certora - June 2025.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/V1.6.0%20(MOOCOW)%20-%20Certora%20-%20June%202025.pdf) | Certora | Audit | 2025-06 | aging | Direct | n/a | 0 | n/a |
-| [V1.0.0 (Slashing) - Cantina - March 2025.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/V1.0.0%20(Slashing)%20-%20Cantina%20%20-%20March%202025.pdf) | Spearbit | Audit | 2025-03 | aging | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Certora - Eigenlayer Incentive Council.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/Certora%20-%20Eigenlayer%20Incentive%20Council.pdf) | Certora | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [EigenLayer Merkle - Certora - Security Assessment Final Report - July 2025.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/EigenLayer%20Merkle%20-%20Certora%20-%20Security%20Assessment%20Final%20Report%20-%20July%202025.pdf) | Certora | Audit | 2025-07 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+| [M1 Mainnet - Sigma Prime - May 2023.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/M1%20Mainnet%20-%20Sigma%20Prime%20-%20May%202023.pdf) | Sigma Prime | Audit | 2023-05 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [Rewards v2 - SigmaPrime - Dec 2024.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/Rewards%20v2%20-%20SigmaPrime%20-%20Dec%202024.pdf) | Sigma Prime | Audit | 2024-12 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 14 | high |
+| [RewardsCoordinator - Sigma Prime - May 2024.pdf](https://github.com/Layr-Labs/eigenlayer-contracts/blob/main/audits/RewardsCoordinator%20-%20Sigma%20Prime%20-%20May%202024.pdf) | Sigma Prime | Audit | 2024-05 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [20688] Certora - Eigenlayer Incentive Council.pdf — no match: The provided text is a GitHub page navigation and does not contain the actual audit report content. No contracts or dates could be extracted.
+- [20691] EigenLayer Merkle - Certora - Security Assessment Final Report - July 2025.pdf — no match: Only one contract in scope: Merkle library.
+- [20696] M1 Mainnet - Sigma Prime - May 2023.pdf — no match: Contracts extracted from 'Asset' fields in detailed findings. Date from cover page: 'May, 2023' -> last day of month.
+- [20703] Rewards v2 - SigmaPrime - Dec 2024.pdf — no match: Extracted contracts from scope section and findings assets. Date from cover page: 'January, 2025' -> last day of month.
+- [20705] RewardsCoordinator - Sigma Prime - May 2024.pdf — no match: Only one contract in scope: RewardsCoordinator (originally PaymentCoordinator). Offchain rewards calculation docs were also reviewed but are not a smart contract.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| EigenLayer Merkle - Certora - Security Assessment Final Report - July 2025.pdf | Merkle | unmatched — not counted | — | listed in scope | no |
+| M1 Mainnet - Sigma Prime - May 2023.pdf | Slasher | unmatched — not counted | — | Asset listed in findings: EGN2-01, EGN2-05 | no |
+| M1 Mainnet - Sigma Prime - May 2023.pdf | StrategyManager | unmatched — not counted | — | Asset listed in findings: EGN2-01, EGN2-02, EGN2-04 | no |
+| M1 Mainnet - Sigma Prime - May 2023.pdf | DelegationManager | unmatched — not counted | — | Asset listed in finding: EGN2-02 | no |
+| M1 Mainnet - Sigma Prime - May 2023.pdf | DelayedWithdrawalRouter | unmatched — not counted | — | Asset listed in finding: EGN2-03 | no |
+| M1 Mainnet - Sigma Prime - May 2023.pdf | EigenPod | unmatched — not counted | — | Referenced in test suite and finding EGN2-03 | no |
+| Rewards v2 - SigmaPrime - Dec 2024.pdf | RewardsCoordinator | unmatched — not counted | — | listed in scope | no |
+| Rewards v2 - SigmaPrime - Dec 2024.pdf | RewardsCoordinatorStorage | unmatched — not counted | — | listed in scope | no |
+| Rewards v2 - SigmaPrime - Dec 2024.pdf | IRewardsCoordinator | unmatched — not counted | — | listed in scope | no |
+| Rewards v2 - SigmaPrime - Dec 2024.pdf | ServiceManagerBase | unmatched — not counted | — | listed in scope | no |
+| Rewards v2 - SigmaPrime - Dec 2024.pdf | ServiceManagerBaseStorage | unmatched — not counted | — | listed in scope | no |
+| Rewards v2 - SigmaPrime - Dec 2024.pdf | IServiceManager | unmatched — not counted | — | listed in scope | no |
+| Rewards v2 - SigmaPrime - Dec 2024.pdf | ECDSAServiceManagerBase | unmatched — not counted | — | listed in scope | no |
+| Rewards v2 - SigmaPrime - Dec 2024.pdf | operatorAvsSplitSnapshots | unmatched — not counted | — | mentioned in findings as asset | no |
+| Rewards v2 - SigmaPrime - Dec 2024.pdf | operatorPISplitSnapshots | unmatched — not counted | — | mentioned in findings as asset | no |
+| Rewards v2 - SigmaPrime - Dec 2024.pdf | operatorDirectedRewardSubmissions | unmatched — not counted | — | mentioned in findings as asset | no |
+| Rewards v2 - SigmaPrime - Dec 2024.pdf | baseEigenState | unmatched — not counted | — | mentioned in findings as asset | no |
+| Rewards v2 - SigmaPrime - Dec 2024.pdf | OperatorPISplitModel | unmatched — not counted | — | mentioned in findings as asset | no |
+| Rewards v2 - SigmaPrime - Dec 2024.pdf | OperatorDirectedRewardSubmissionsModel | unmatched — not counted | — | mentioned in findings as asset | no |
+| Rewards v2 - SigmaPrime - Dec 2024.pdf | OperatorDirectedRewardSubmission | unmatched — not counted | — | mentioned in findings as asset | no |
+| RewardsCoordinator - Sigma Prime - May 2024.pdf | RewardsCoordinator | unmatched — not counted | — | Scope section states: 'strictly limited to PaymentCoordinator.sol file at commit 3eec97d. Note, the file in scope has been later renamed to RewardsCoordinator.sol at commit d8ac41a.' | no |
 
 ## Coverage Gaps
 
@@ -136,45 +243,28 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 14 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 17 |
+| standard_library | 3 |
+| needs_review | 58 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 24
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 21 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=4, low=1
 - Match method counts: n/a
 
 Zero-match audit list:
 
-- [20687] Certora - Eigenlayer Duration Vaults.pdf
 - [20688] Certora - Eigenlayer Incentive Council.pdf
-- [20689] EigenLayer Hourglass pt1 - Certora - Security Assessment Final Report - August 2025.pdf
-- [20690] EigenLayer Hourglass pt2 - Certora - Security Assessment Final Report - August 2025.pdf
 - [20691] EigenLayer Merkle - Certora - Security Assessment Final Report - July 2025.pdf
-- [20692] EigenLayer Multichain PT1 - Certora - Security Assessment Final Report2 - July 2025.pdf
-- [20693] EigenLayer Multichain pt2 - Certora - Security Assessment Final Report - July 2025.pdf
-- [20694] Eigenlayer - Slashing UX Improvements Audit.pdf
-- [20695] M1 Mainnet - Diligence - Mar 2023.pdf
 - [20696] M1 Mainnet - Sigma Prime - May 2023.pdf
-- [20697] M2 Mainnet - Cantina - Apr 2024.pdf
-- [20698] M2 Mainnet - Sigma Prime - Feb 2024.pdf
-- [20699] M4 Mainnet (PEPE) - Certora - Aug 2024.pdf
-- [20700] M4 Mainnet (PEPE) - Sigma Prime - Jul 2024 - Updated Aug 2025.pdf
-- [20701] Permissionless Strategies - Sigma Prime - Aug 2024.pdf
-- [20702] Redistribution Slash Delay (v1.13.0) - Certora - May 2026.pdf
 - [20703] Rewards v2 - SigmaPrime - Dec 2024.pdf
-- [20704] Rewards v2.2 - Sigma Prime - Feb 2026.pdf
 - [20705] RewardsCoordinator - Sigma Prime - May 2024.pdf
-- [20706] Token + Programmatic Incentives - Sigma Prime - Sep 2024.pdf
-- [20707] V1.0.0 (Slashing) - Certora - Feb 2025.pdf
-- [20708] V1.0.0 (Slashing) - Sigma Prime - Feb 2025.pdf
-- [20709] V1.6.0 (MOOCOW) - Certora - June 2025.pdf
-- [20710] V1.0.0 (Slashing) - Cantina - March 2025.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

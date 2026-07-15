@@ -1,10 +1,52 @@
 {
   "component": "UniswapV2CycloneRouter",
   "main_contract": "UniswapV2CycloneRouter",
+  "source_entry_count": 6,
   "source_file_count": 6,
+  "source_path_remaps": [
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/ICycloneV2.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-501e58b74531-ICycloneV2.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/math/SafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-32d7b65be9a9-SafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/token/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-c40de834baea-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/token/IERC20Basic.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-b555b44e83cb-IERC20Basic.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/uniswapv2/IRouter.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-ee4d743fb789-IRouter.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/uniswapv2/UniswapV2CycloneRouter.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-235c4c23dae6-UniswapV2CycloneRouter.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UniswapV2CycloneRouter\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://4040024839-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-MNeAQGL5skC11vu82Sy%2F-MVwM2h1RmXM94Ik7NAO%2F-MVwMB3sAAKGp9zma217%2FSmart%20Contract%20Audit%20Report%20-%20Cyclone%20Protocol%20v2.pdf",
+    "https://4040024839-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-MNeAQGL5skC11vu82Sy%2F-MY3RBSlDMhVlkrMsx5Y%2F-MY3RKd1R4T7nq41E4hA%2FSmart%20Contract%20Security%20Audit%20Report%20-%20Cyclone.pdf"
+  ],
   "addresses": [
     {
       "chain": "polygon",
@@ -12,7 +54,9 @@
       "address": "0xfcb851ad3d98bd241dbe395ca1e6080f489d4624",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393344"
     }
   ]
 }

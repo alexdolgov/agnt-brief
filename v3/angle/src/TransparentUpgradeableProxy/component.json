@@ -1,74 +1,48 @@
 {
   "component": "TransparentUpgradeableProxy",
   "main_contract": "TransparentUpgradeableProxy",
+  "source_entry_count": 8,
   "source_file_count": 8,
-  "deployment_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x075a2660901430dc5714ca50282e5a2a1eec4e59",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x52f0c256e58c579bf9e41e4332669b4f7c7209c5",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xc1f9266c6d3389e981639ee873121199a7acdb8f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x3e9ea799c447b3c65702c82f8193085f330a1db0",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0022228a2cc5e7ef0274a7baa600d44da5ab5776",
       "is_proxy": true,
-      "implementation_address": "0xc16b81af351ba9e64c1a069e3ab18c244a1e3049",
-      "liveness": "live"
+      "implementation_address": "0x2c28bd22ab59341892e85ad76d159d127c4b03fa",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391040"
     },
     {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x4dd4758f594b60551dc64f30289204d34ccd077d",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0022228a2cc5e7ef0274a7baa600d44da5ab5776",
       "is_proxy": true,
-      "implementation_address": "0x1033dd8415a282db52f14902e91de6e91868ac6d",
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x67b9c7c45bbdd1a78aed4b8ff3b1bb3c8170bdab",
-      "is_proxy": true,
-      "implementation_address": "0x31429d1856ad1377a8a0079410b297e1a9e214c2",
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0xfd0dfc837fe7ed19b23df589b6f6da5a775f99e0",
-      "is_proxy": true,
-      "implementation_address": "0x31429d1856ad1377a8a0079410b297e1a9e214c2",
-      "liveness": "live"
+      "implementation_address": "0x2c28bd22ab59341892e85ad76d159d127c4b03fa",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391068"
     },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xb38ba207d02f07653a37b53c1c0a250b04f97e82",
+      "address": "0x0022228a2cc5e7ef0274a7baa600d44da5ab5776",
       "is_proxy": true,
-      "implementation_address": "0x5183f032bf42109cd370b9559fd22207e432301e",
-      "liveness": "live"
+      "implementation_address": "0x2c28bd22ab59341892e85ad76d159d127c4b03fa",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391105"
     }
   ]
 }

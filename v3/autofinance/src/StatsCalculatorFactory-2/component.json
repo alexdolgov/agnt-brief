@@ -1,18 +1,28 @@
 {
   "component": "StatsCalculatorFactory-2",
   "main_contract": "StatsCalculatorFactory",
-  "source_file_count": 66,
+  "source_entry_count": 60,
+  "source_file_count": 60,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StatsCalculatorFactory-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x9f6ed306ff5a217ce54e8fd9a69abb0ca715dace",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd82664a9b7a766b2c311b76c9e4384e8838b0a1c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391735"
     }
   ]
 }

@@ -2,7 +2,7 @@
  * Created by Pragma Labs
  * SPDX-License-Identifier: BUSL-1.1
  */
-pragma solidity ^0.8.34;
+pragma solidity ^0.8.30;
 
 import { Compounder } from "./Compounder.sol";
 import { Slipstream } from "../base/Slipstream.sol";
@@ -21,13 +21,6 @@ import { Slipstream } from "../base/Slipstream.sol";
  * ensuring that the execution remains within a controlled price range.
  */
 contract CompounderSlipstream is Compounder, Slipstream {
-    /* //////////////////////////////////////////////////////////////
-                                CONSTANTS
-    ////////////////////////////////////////////////////////////// */
-
-    // The version of the Asset Manager.
-    string public constant VERSION = "2.1.0";
-
     /* //////////////////////////////////////////////////////////////
                             CONSTRUCTOR
     ////////////////////////////////////////////////////////////// */

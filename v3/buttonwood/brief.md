@@ -1,78 +1,94 @@
 # Agentic Audit Brief: Buttonwood
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Buttonwood (`buttonwood`)
 - Website: [https://www.button.finance](https://www.button.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:38.377Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-43c7
-- Chains: base, ethereum
-- Contract surface: 13 unique implementations (22 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $300,030.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Yield. Structurally: 39 project-authored contract(s) across 2 chain(s); 6 ERC20 tokens, 2 ERC721 NFTs, 1 ERC1155 multi-token; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for Buttonwood in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 4 functional families. Its contracts share 6 common project-authored base contract(s) (instanceregistry, iinstanceregistry, igeyser). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 71; live-surface contracts included: 19 (15 live, 4 unknown).
-- Excluded by liveness: 52 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 4/9 (44.4%)
-- Deployed-live implementations: 9 of 13 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 4/9
-- Verified + Unaudited implementations: 5
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 4
-- Unique implementations: 13
-- Raw deployments: 22
+- Unverified implementations: 0
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 1
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-07 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 4 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| CertiK | Tier 2 | 4 | 44.4% | 2021-07 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (4)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BondController | unknown | ethereum | n/a | [`0x84d7a3...19cc04`](./contracts/ethereum-1/0x84d7a34f3efbe552b2855d158b10c3970b19cc04/) | ✅ Audited |
-| BondFactory | unknown | ethereum | n/a | 2 deployments: ethereum [`0x019fa3...b04ac0`](./contracts/ethereum-1/0x019fa32d71bb96922695c6cdea33774fdeb04ac0/); ethereum `0x17550f...91fd54` | ✅ Audited |
-| ButtonToken | unknown | base | n/a | 5 deployments: ethereum `0x97040a...f4eac5`; ethereum `0x9af5c1...010fb3`; ethereum `0xab4691...53e9f9`; base [`0x23aafb...daca85`](./contracts/base-8453/0x23aafbcd479d14ca802bd39d70a03c7384daca85/); base `0x5f9348...ed4cc1` | ✅ Audited |
-| Tranche | unknown | ethereum | n/a | [`0x367874...6af137`](./contracts/ethereum-1/0x36787412f5ddc051c95c313138b8ae4e396af137/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| GenericButtonswapRouter | adapter | base | n/a | 2 deployments: ethereum `0xf4a25f...657071`; base [`0xa6c9d0...ed2e2f`](./contracts/base-8453/0xa6c9d0cb8fff7a47db726ab8b31206dd69ed2e2f/) | ⚠️ Unaudited |
-| MarzResources | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7532e3...1be5cb`](./contracts/ethereum-1/0x7532e3e303e721b81f8a2492344e8b15f11be5cb/); ethereum `0xc4a0a5...ae4d45` | ⚠️ Unaudited |
-| MarzResources | unknown | ethereum | n/a | 2 deployments: ethereum [`0x75376c...50b3fa`](./contracts/ethereum-1/0x75376c8b1afc6a6d7cd18617cf2ada431d50b3fa/); ethereum `0xf77648...22fd30` | ⚠️ Unaudited |
-| Plot | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6795ee...18519a`](./contracts/ethereum-1/0x6795eef1ac76ee5dbb1e9eb219e72171ad18519a/); ethereum `0xd0ba8b...d3142b` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0xdb4229...d99652`](./contracts/ethereum-1/0xdb422932496bc97aa626ae9f8efaf1344cd99652/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,22 +102,35 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (4)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x626e7d...6d5cce` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x83f639...508798` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa94fd1...571a84` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe8a48c...771cd4` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Certik-2021-07-30.pdf](https://github.com/buttonwood-protocol/tranche/blob/main/audits/Certik-2021-07-30.pdf) | CertiK | Audit | 2021-07 | stale | Direct | contract_name | 9 | high |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Certik-2021-07-30.pdf](https://github.com/buttonwood-protocol/tranche/blob/main/audits/Certik-2021-07-30.pdf) | CertiK | Audit | 2021-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [12877] Certik-2021-07-30.pdf — no match: Extracted from audit report header and findings sections. Audit scope table was not fully populated but file paths were inferred from findings locations.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Certik-2021-07-30.pdf | BondController | unmatched — not counted | — | listed in scope and findings | no |
+| Certik-2021-07-30.pdf | BondFactory | unmatched — not counted | — | listed in findings | no |
+| Certik-2021-07-30.pdf | ButtonToken | unmatched — not counted | — | listed in findings | no |
+| Certik-2021-07-30.pdf | ChainlinkOracle | unmatched — not counted | — | listed in findings | no |
+| Certik-2021-07-30.pdf | Tranche | unmatched — not counted | — | listed in findings | no |
 
 ## Coverage Gaps
 
@@ -116,15 +145,21 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 13 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 5 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=9
+- Match method counts: n/a
+
+Zero-match audit list:
+
+- [12877] Certik-2021-07-30.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

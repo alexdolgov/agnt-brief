@@ -3,6 +3,8 @@
 pragma solidity >=0.5.16;
 
 interface IMultiCollateralOnOffRamp {
+    function collateralSupported(address collateral) external returns (bool);
+
     function onramp(address collateral, uint collateralAmount) external returns (uint);
 
     function onrampWithEth(uint amount) external payable returns (uint);

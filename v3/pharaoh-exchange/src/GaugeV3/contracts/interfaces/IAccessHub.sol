@@ -138,6 +138,9 @@ interface IAccessHub {
     /// @notice enables or disables the governance in xRam
     function toggleXRamGovernance(bool enable) external;
 
+    /// @notice allows redemption from the operator
+    function operatorRedeemXRam(uint256 _amount) external;
+
     /// @notice rescues any trapped tokens in xRam
     function rescueTrappedTokens(address[] calldata _tokens, uint256[] calldata _amounts) external;
 
@@ -152,17 +155,15 @@ interface IAccessHub {
      * Minter Functions
      */
 
-    /// @notice adjusts emissions by a basis points change
-    /// @param _basisPointsChange The basis points to change emissions by (-2500 = -25%, +2500 = +25%)
-    /// @dev For epochs < 3: Bounded to ±10000 (±100%)
-    /// @dev For epochs >= 3: Bounded to ±2500 (±25%)
-    function adjustEmissionsInMinter(int256 _basisPointsChange) external;
+    /// @notice sets the inflation multiplier
+    /// @param _multiplier the multiplier
+    function setEmissionsMultiplierInMinter(uint256 _multiplier) external;
 
     /**
      * Reward List Functions
      */
     /// @notice function for removing rewards for feeDistributors
-    function removeFeeDistributorRewards(address[] calldata _pools, address[] calldata _rewards) external;
+        function removeFeeDistributorRewards(address[] calldata _pools, address[] calldata _rewards) external;
 
     /**
      * FeeCollector functions

@@ -1,7 +1,15 @@
 {
   "component": "MulticallExecutor",
   "main_contract": "MulticallExecutor",
+  "source_entry_count": 10,
   "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MulticallExecutor\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x16d02ebd89988cad1ce945807b963ab7a9fd22e1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398712"
     },
     {
       "chain": "base",
@@ -20,7 +30,9 @@
       "address": "0x9d04f65b58ced1fddef50aec8b0b3d64fe64220e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398756"
     }
   ]
 }

@@ -112,11 +112,17 @@ abstract contract AutopilotRouterBase is
 
     /// @inheritdoc IAutopilotRouterBase
     function claimAutopoolRewards(IAutopool vault, IMainRewarder rewarder, address recipient) external payable {
-        _checkVault(address(vault));
-        _checkRewarder(vault, address(rewarder));
+        _claimAutopoolRewards(vault, rewarder, recipient, true);
+    }
 
-        // Always claims any extra rewards that exist.
-        rewarder.getReward(msg.sender, recipient, true);
+    /// @inheritdoc IAutopilotRouterBase
+    function claimAutopoolRewards(
+        IAutopool vault,
+        IMainRewarder rewarder,
+        address recipient,
+        bool claimExtras
+    ) external payable {
+        _claimAutopoolRewards(vault, rewarder, recipient, claimExtras);
     }
 
     /// @inheritdoc IAutopilotRouterBase
@@ -127,6 +133,18 @@ abstract contract AutopilotRouterBase is
         if (timestamp < block.timestamp) {
             revert TimestampTooOld();
         }
+    }
+
+    function _claimAutopoolRewards(
+        IAutopool vault,
+        IMainRewarder rewarder,
+        address recipient,
+        bool claimExtras
+    ) internal {
+        _checkVault(address(vault));
+        _checkRewarder(vault, address(rewarder));
+
+        rewarder.getReward(msg.sender, recipient, claimExtras);
     }
 
     // Helper function for repeat functionalities.

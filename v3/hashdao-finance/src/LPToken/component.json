@@ -1,42 +1,28 @@
 {
   "component": "LPToken",
   "main_contract": "LPToken",
-  "source_file_count": 21,
-  "deployment_count": 4,
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LPToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x048e77257df92787cc1af4015b6e9a7d521775a2",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7d5332df67aec9cb1df73ba8115e6a9211cf021f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x52d7096812b8d37d351e424e541b9a5424fd63f2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x5dad2ee9e3896172554516e5d7841184eed46125",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xfc453553a9bdfe5cefd880aebcc026fd1ed4d881",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

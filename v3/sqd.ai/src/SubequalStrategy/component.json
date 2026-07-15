@@ -1,26 +1,30 @@
 {
   "component": "SubequalStrategy",
   "main_contract": "SubequalStrategy",
+  "source_entry_count": 8,
   "source_file_count": 8,
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SubequalStrategy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.chainsecurity.com/reports/Subsquid/ChainSecurity_Subsquid_Subsquid_Audit.pdf"
+  ],
   "addresses": [
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x554df4ad609d08ec913f9ad2ce2cc4a85a6e61a2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0xf197094d96f45325ee8bd2c43c5d25c05d66ab62",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399349"
     }
   ]
 }

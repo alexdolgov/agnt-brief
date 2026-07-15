@@ -1,44 +1,28 @@
 {
   "component": "StargateMultiRewarder",
   "main_contract": "StargateMultiRewarder",
-  "source_file_count": 15,
-  "deployment_count": 4,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/stargate-protocol/stargate-v2/blob/main/audits/Stargate%20V2%20-%20Zellic%20FINAL%20Audit%20Report.pdf"
-  ],
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StargateMultiRewarder\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x09d428a066e77806f9de48fe3a57e837ccd0912f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "chain-1088",
       "chain_id": 1088,
       "address": "0x1f605162282570dfa6255d27895587f4117f52fa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x362fae9a75b27bbc550aac28a7c1f96c8d483120",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x503c5cfea3477e0a576c8cf5354023854b7a06ff",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399590"
     }
   ]
 }

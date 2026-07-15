@@ -301,7 +301,7 @@ library EulerRewardLib {
     ) private returns (bool haveREUL) {
         address[] memory distributors = $.merkleDistributorsWhitelist.values();
         uint256 nDistributors = distributors.length;
-        uint256 count;
+        uint256 count = 0;
 
         for (uint256 i = 0; i < nDistributors; ++i) {
             address[] memory distributorTokens = $.distributorRewardTokens[distributors[i]].values();

@@ -57,7 +57,7 @@ library ERC20Fixed {
     address _spender,
     uint256 _amount
   ) internal returns (bool) {
-    _token.safeApprove(_spender, _amount / (10 ** (18 - _token.decimals())));
+    _token.forceApprove(_spender, _amount / (10 ** (18 - _token.decimals())));
     return true;
   }
 
@@ -135,7 +135,7 @@ library ERC20Fixed {
     address _spender,
     uint256 _amount
   ) internal returns (bool) {
-    _token.safeApprove(_spender, _amount / (10 ** (18 - _token.decimals())));
+    _token.forceApprove(_spender, _amount / (10 ** (18 - _token.decimals())));
     return true;
   }
 

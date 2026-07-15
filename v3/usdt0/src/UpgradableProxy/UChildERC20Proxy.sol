@@ -1,6 +1,3 @@
-/**
-* https://firebird.finance DeFi multi-chain yield farms deployer & DEXs aggregator.
-*/
 
 // File: contracts/common/Proxy/IERCProxy.sol
 

@@ -1,7 +1,15 @@
 {
   "component": "GasMovr",
   "main_contract": "GasMovr",
+  "source_entry_count": 4,
   "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GasMovr\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0xb584d4be1a5470ca1a8778e9b86c81e165204599",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "polygon",
@@ -20,7 +30,9 @@
       "address": "0xac313d7491910516e06fbfc2a0b5bb49bb072d91",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
@@ -28,7 +40,9 @@
       "address": "0xc0e02aa55d10e38855e13b64a8e1387a04681a00",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

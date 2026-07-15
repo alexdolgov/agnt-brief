@@ -1,7 +1,15 @@
 {
   "component": "RZROFTAdapter-2",
   "main_contract": "RZROFTAdapter",
+  "source_entry_count": 43,
   "source_file_count": 43,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RZROFTAdapter-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x6419f05d56944dd140954be8ad9907304abb2f3a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398436"
     }
   ]
 }

@@ -1,44 +1,87 @@
 # Agentic Audit Brief: Immutable zkEVM
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 5 (0 matched; 5 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Immutable zkEVM (`immutable-zkevm`)
 - Website: [https://www.immutable.com/](https://www.immutable.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:01.041Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 9 unique implementations (9 raw deployments)
+- Contract surface: 7 unique implementations (7 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $21,345,034.53
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Chain. Structurally: 3 project-authored contract(s) across 1 chain(s); 1 ERC20 token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for Immutable zkEVM in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol forms a single structural family (Core Logic) of 3 contract(s).
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 7 contracts are derived from known codebases. 7 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x177eaf...83e154`, chain 1)
+- UnnamedContract (`0x4f49b5...4e8932`, chain 1)
+- UnnamedContract (`0x8804a8...19fad1`, chain 1)
+- UnnamedContract (`0xa06015...d836e2`, chain 1)
+- UnnamedContract (`0xba5e35...d13eb6`, chain 1)
+- UnnamedContract (`0xde2bcd...b51ec8`, chain 1)
+- UnnamedContract (`0xe2e91c...323345`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 13; live-surface contracts included: 9 (2 live, 7 unknown).
-- Excluded by liveness: 4 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 7/10 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/2 (0.0%)
-- Deployed-live implementations: 2 of 9 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/2
-- Verified + Unaudited implementations: 2
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 7 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 7 of 7 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 7
-- Unique implementations: 9
-- Raw deployments: 9
+- Unique implementations: 7
+- Raw deployments: 7
 - Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,12 +100,9 @@ The protocol forms a single structural family (Core Logic) of 3 contract(s).
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AxelarGasService | unknown | ethereum | n/a | [`0x2d5d7d...082712`](./contracts/ethereum-1/0x2d5d7d31f671f86c782533cc367f14109a082712/) | ⚠️ Unaudited |
-| AxelarGateway | unknown | ethereum | n/a | [`0x4f4495...8d56a5`](./contracts/ethereum-1/0x4f4495243837681061c4743b74b3eedf548d56a5/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -80,25 +120,157 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x3bd586...e946df` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x50b5a9...b1d523` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x59c38b...609c28` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5be3f2...b9f12d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7ef80c...4f8edc` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8e6b93...34f157` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc34e97...7f2516` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387373 | `0x177eaf...83e154` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387376 | `0x4f49b5...4e8932` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387377 | `0x8804a8...19fad1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387378 | `0xa06015...d836e2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387380 | `0xba5e35...d13eb6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387381 | `0xde2bcd...b51ec8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387382 | `0xe2e91c...323345` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Perimeter-Fuzzing-2024-09-10.pdf](https://github.com/immutable/zkevm-bridge-contracts/blob/main/audits/Perimeter-Fuzzing-2024-09-10.pdf) | Perimeter | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
-| [202309_Halborn_Final.pdf](https://github.com/immutable/wallet-contracts/blob/main/audits/202309_Halborn_Final.pdf) | Halborn | Audit | 2023-07 | stale | Direct | n/a | 0 | n/a |
-| [Quantstamp_Arcadeum_Report_Final.pdf](https://github.com/immutable/wallet-contracts/blob/main/audits/Quantstamp_Arcadeum_Report_Final.pdf) | Quantstamp | Audit | 2020-06 | stale | Direct | n/a | 0 | n/a |
-| [sequence_quantstamp_audit_feb_2021.pdf](https://github.com/immutable/wallet-contracts/blob/main/audits/sequence_quantstamp_audit_feb_2021.pdf) | Quantstamp | Audit | 2021-02 | stale | Direct | n/a | 0 | n/a |
-| [202309_audit_background.md](https://github.com/immutable/wallet-contracts/blob/main/audits/202309_audit_background.md) | Unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Perimeter-Fuzzing-2024-09-10.pdf](https://github.com/immutable/zkevm-bridge-contracts/blob/main/audits/Perimeter-Fuzzing-2024-09-10.pdf) | Perimeter | Audit | 2024-09 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 7 | high |
+| [202309_Halborn_Final.pdf](https://github.com/immutable/wallet-contracts/blob/main/audits/202309_Halborn_Final.pdf) | Halborn | Audit | 2023-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 23 | high |
+| [Quantstamp_Arcadeum_Report_Final.pdf](https://github.com/immutable/wallet-contracts/blob/main/audits/Quantstamp_Arcadeum_Report_Final.pdf) | Quantstamp | Audit | 2020-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 37 | high |
+| [sequence_quantstamp_audit_feb_2021.pdf](https://github.com/immutable/wallet-contracts/blob/main/audits/sequence_quantstamp_audit_feb_2021.pdf) | Quantstamp | Audit | 2021-02 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 41 | high |
+| [202309_audit_background.md](https://github.com/immutable/wallet-contracts/blob/main/audits/202309_audit_background.md) | Unknown | Audit | n/a | unknown | Direct | contract_name | no match | 0 | 0 | 0 | 7 | medium |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [1814] Perimeter-Fuzzing-2024-09-10.pdf — no match: All contracts from the Files in Scope section extracted. Audit date from cover page.
+- [1815] 202309_Halborn_Final.pdf — no match: Extracted contracts from scope section, findings code locations, upgradeability storage layouts, and test files. Audit date from engagement end date.
+- [1817] Quantstamp_Arcadeum_Report_Final.pdf — no match: All contracts listed in the file signatures appendix and mentioned in findings are included. The audit date is the latest update date (2020-06-30) from the changelog.
+- [1818] sequence_quantstamp_audit_feb_2021.pdf — no match: The audit scope is the entire repository as per the file signatures appendix. The date is from the changelog: 2021-02-18 - Report finalization.
+- [15117] 202309_audit_background.md — no match: No explicit scope section or date found. Contracts are identified from descriptions of added/modified contracts. LatestWalletImplLocator is included as it is part of the startup wallet architecture.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Perimeter-Fuzzing-2024-09-10.pdf | ChildERC20Bridge | unmatched — not counted | — | listed in Files in Scope | no |
+| Perimeter-Fuzzing-2024-09-10.pdf | ChildERC20 | unmatched — not counted | — | listed in Files in Scope | no |
+| Perimeter-Fuzzing-2024-09-10.pdf | WIMX | unmatched — not counted | — | listed in Files in Scope | no |
+| Perimeter-Fuzzing-2024-09-10.pdf | FlowRateDetection | unmatched — not counted | — | listed in Files in Scope | no |
+| Perimeter-Fuzzing-2024-09-10.pdf | FlowRateWithdrawalQueue | unmatched — not counted | — | listed in Files in Scope | no |
+| Perimeter-Fuzzing-2024-09-10.pdf | RootERC20BridgeFlowRate | unmatched — not counted | — | listed in Files in Scope | no |
+| Perimeter-Fuzzing-2024-09-10.pdf | RootERC20Bridge | unmatched — not counted | — | listed in Files in Scope | no |
+| 202309_Halborn_Final.pdf | WalletProxy | unmatched — not counted | — | mentioned in scope and appendix | no |
+| 202309_Halborn_Final.pdf | Factory | unmatched — not counted | — | mentioned in scope and test files | no |
+| 202309_Halborn_Final.pdf | MultiCallDeploy | unmatched — not counted | — | mentioned in scope and test files | no |
+| 202309_Halborn_Final.pdf | LatestWalletImplLocator | unmatched — not counted | — | mentioned in scope and test files | no |
+| 202309_Halborn_Final.pdf | StartupWalletImpl | unmatched — not counted | — | mentioned in scope and test files | no |
+| 202309_Halborn_Final.pdf | ImmutableSigner | unmatched — not counted | — | mentioned in scope and test files | no |
+| 202309_Halborn_Final.pdf | MainModuleDynamicAuth | unmatched — not counted | — | mentioned in scope and upgradeability section | no |
+| 202309_Halborn_Final.pdf | MainModule | unmatched — not counted | — | mentioned in upgradeability section | no |
+| 202309_Halborn_Final.pdf | GuestModule | unmatched — not counted | — | mentioned in upgradeability section | no |
+| 202309_Halborn_Final.pdf | MainModuleGasEstimation | unmatched — not counted | — | mentioned in upgradeability section | no |
+| 202309_Halborn_Final.pdf | MainModuleUpgradable | unmatched — not counted | — | mentioned in upgradeability section | no |
+| 202309_Halborn_Final.pdf | ModuleAuth | unmatched — not counted | — | code location in finding HAL-01 | no |
+| 202309_Halborn_Final.pdf | ModuleCreator | unmatched — not counted | — | code location in finding HAL-02 | no |
+| 202309_Halborn_Final.pdf | ModuleStorage | unmatched — not counted | — | mentioned in findings and upgradeability | no |
+| 202309_Halborn_Final.pdf | ModuleIgnoreNonceCalls | unmatched — not counted | — | code location in findings HAL-03 and HAL-05 | no |
+| 202309_Halborn_Final.pdf | ModuleIgnoreAuthUpgradable | unmatched — not counted | — | code location in finding HAL-03 | no |
+| 202309_Halborn_Final.pdf | ModuleHooks | unmatched — not counted | — | code location in finding HAL-03 | no |
+| 202309_Halborn_Final.pdf | ModuleCalls | unmatched — not counted | — | code location in finding HAL-03 | no |
+| 202309_Halborn_Final.pdf | ModuleAuthUpgradable | unmatched — not counted | — | code location in finding HAL-03 | no |
+| 202309_Halborn_Final.pdf | CallReceiverMock | unmatched — not counted | — | mentioned in test files | no |
+| 202309_Halborn_Final.pdf | DelegateCallStorageMock | unmatched — not counted | — | mentioned in test files | no |
+| 202309_Halborn_Final.pdf | IWalletProxy | unmatched — not counted | — | mentioned in test files | no |
+| 202309_Halborn_Final.pdf | IModuleCalls | unmatched — not counted | — | mentioned in test files | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | Factory | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | Wallet | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | MainModule | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | MainModuleUpgradable | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | ModuleCalls | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | ModuleCreator | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | ModuleAuth | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | ModuleAuthFixed | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | ModuleAuthUpgradable | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | ModuleERC165 | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | ModuleHooks | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | ModuleSelfAuth | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | ModuleStorage | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | ModuleUpdate | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | Implementation | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | LibAddress | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | LibBytes | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | SignatureValidator | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | IERC1271Wallet | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | IERC223Receiver | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | IERC1155Receiver | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | IERC721Receiver | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | IModuleHooks | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | IModuleCalls | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | IModuleCreator | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | IModuleUpdate | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | IModuleAuthUpgradable | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | IModuleAuth | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | Migrations | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | CallReceiverMock | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | DelegateCallMock | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | ERC165CheckerMock | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | GasBurnerMock | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | HookCallerMock | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | HookMock | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | LibBytesImpl | unmatched — not counted | — | listed in scope | no |
+| Quantstamp_Arcadeum_Report_Final.pdf | ModuleMock | unmatched — not counted | — | listed in scope | no |
+| sequence_quantstamp_audit_feb_2021.pdf | Factory | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | Wallet | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | IERC1271Wallet | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | IERC223Receiver | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | IERC1155Receiver | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | IERC721Receiver | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | GuestModule | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | MainModule | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | MainModuleUpgradable | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | SequenceUtils | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | RequireUtils | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | MultiCallUtils | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | ModuleCalls | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | ModuleCreator | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | ModuleAuth | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | ModuleERC165 | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | ModuleHooks | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | ModuleStorage | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | Implementation | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | ModuleUpdate | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | ModuleSelfAuth | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | ModuleAuthFixed | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | ModuleAuthUpgradable | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | IModuleHooks | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | IModuleCalls | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | IModuleCreator | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | IModuleUpdate | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | IModuleAuthUpgradable | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | IModuleAuth | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | LibAddress | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | SignatureValidator | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | LibBytes | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | Migrations | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | CallReceiverMock | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | LibBytesImpl | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | HookCallerMock | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | GasBurnerMock | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | DelegateCallMock | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | HookMock | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | ModuleMock | unmatched — not counted | — | listed in file signatures appendix | no |
+| sequence_quantstamp_audit_feb_2021.pdf | ERC165CheckerMock | unmatched — not counted | — | listed in file signatures appendix | no |
+| 202309_audit_background.md | MultiCallDeploy | unmatched — not counted | — | listed in scope as added contract | no |
+| 202309_audit_background.md | ImmutableSigner | unmatched — not counted | — | listed in scope as added contract | no |
+| 202309_audit_background.md | StartupWalletImpl | unmatched — not counted | — | listed in scope as added contract | no |
+| 202309_audit_background.md | WalletProxy | unmatched — not counted | — | listed in scope as added contract | no |
+| 202309_audit_background.md | MainModuleDynamicAuth | unmatched — not counted | — | listed in scope as added contract | no |
+| 202309_audit_background.md | Factory | unmatched — not counted | — | listed in scope as modified contract | no |
+| 202309_audit_background.md | LatestWalletImplLocator | unmatched — not counted | — | mentioned in StartupWalletImpl description as interface used | no |
 
 ## Coverage Gaps
 
@@ -113,7 +285,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 9 |
+| needs_review | 7 |
 
 ## Scope Matching Notes
 
@@ -121,7 +293,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 115 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=4, medium=1
 - Match method counts: n/a
 
 Zero-match audit list:

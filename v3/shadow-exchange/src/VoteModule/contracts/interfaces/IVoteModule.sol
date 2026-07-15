@@ -71,8 +71,6 @@ interface IVoteModule {
     function earned(address account) external view returns (uint256 _reward);
     /// @notice the time which users can deposit and withdraw
     function unlockTime() external view returns (uint256 _timestamp);
-    /// @notice the accumulated dust in the contract from precision rollover
-    function dust() external view returns (uint256 _dust);
 
     /// @notice claims pending rebase rewards
     function getReward() external;

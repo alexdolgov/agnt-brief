@@ -1,43 +1,82 @@
 # Agentic Audit Brief: Levinswap
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Levinswap (`levinswap`)
+- Website: [https://levinswap.org/](https://levinswap.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:21.460Z
-- Pipeline run: v2-2026-07-02-1ba3fd
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: gnosis
-- Contract surface: 10 unique implementations (10 raw deployments)
+- Contract surface: 11 unique implementations (11 raw deployments)
+- Coverage basis: 0/2 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $105,837.67
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Dexs. Structurally: 10 project-authored contract(s) across 1 chain(s); 4 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Levinswap. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Contracts are linked by 2 cross-contract reference(s). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 2 contract row(s) across gnosis. Structural roles: 1 core, 1 supporting. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 2
+- Structural roles: core (1), supporting (1)
+- Contract kinds: contract (2)
+- Detected standards: none
+- Frameworks: openzeppelin (2)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 2 contracts are derived from known codebases. 2 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0xb18d4f...ef7c53`, chain 100)
+- UniswapV2Factory (`0x965769...2975a5`, chain 100)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 10; live-surface contracts included: 10 (10 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 2/2 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/10 (0.0%)
-- Deployed-live implementations: 10 of 10 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/10
-- Verified + Unaudited implementations: 10
+- Coverage of address-book-owned deployed-live implementations: 0/2 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 2 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 9 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 2 of 11 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/2
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 10
-- Raw deployments: 10
+- Unique implementations: 11
+- Raw deployments: 11
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -56,20 +95,21 @@ The protocol comprises 2 functional families. Contracts are linked by 2 cross-co
 
 - None
 
-### ⚠️ Verified + Unaudited (10)
+### ⚠️ Verified + Unaudited (11)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| EternalStorageProxy | unknown | gnosis | n/a | [`0x17e649...809034`](./contracts/gnosis-100/0x17e64926d5f92251822f66736ebd405e03809034/) | ⚠️ Unaudited |
-| ForeignAMBErc677ToErc677 | unknown | gnosis | n/a | [`0x0d0385...046fba`](./contracts/gnosis-100/0x0d03852adf8877574f2537663760bd2174046fba/) | ⚠️ Unaudited |
-| LevinBar | unknown | gnosis | n/a | [`0x6a5f3d...4f6bb3`](./contracts/gnosis-100/0x6a5f3d605613bd3b6515d803f8f7dc617f4f6bb3/) | ⚠️ Unaudited |
-| LevinMaker | unknown | gnosis | n/a | [`0x6d81dd...018e49`](./contracts/gnosis-100/0x6d81dda24b7ff5b4a65039ff15d06a076e018e49/) | ⚠️ Unaudited |
-| LevinTimelock | unknown | gnosis | n/a | [`0x061cc9...1304f2`](./contracts/gnosis-100/0x061cc9d4bda1805eac1dc27979e58dc4c01304f2/) | ⚠️ Unaudited |
-| LevinToken | unknown | gnosis | n/a | [`0x1698cd...9e42aa`](./contracts/gnosis-100/0x1698cd22278ef6e7c0df45a8dea72edbea9e42aa/) | ⚠️ Unaudited |
-| MasterChefLVN | unknown | gnosis | n/a | [`0x37a714...f4a072`](./contracts/gnosis-100/0x37a714661820927b6d1a6bdbb7dfd2bc23f4a072/) | ⚠️ Unaudited |
-| MasterLevin | unknown | gnosis | n/a | [`0x0f2b0e...15eca1`](./contracts/gnosis-100/0x0f2b0e9db46c6b538e9276d2cf0c6ce8d515eca1/) | ⚠️ Unaudited |
-| Moloch | unknown | gnosis | n/a | [`0x78f967...e98cff`](./contracts/gnosis-100/0x78f96767012ae634c9a9554e7b46bcd29ae98cff/) | ⚠️ Unaudited |
-| UniswapV2Factory | unknown | gnosis | n/a | [`0x965769...2975a5`](./contracts/gnosis-100/0x965769c9cea8a7667246058504dcdcdb1e2975a5/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| EternalStorageProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x17e649...809034` | ⚠️ Unaudited |
+| ForeignAMBErc677ToErc677 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x0d0385...046fba` | ⚠️ Unaudited |
+| LevinBar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x6a5f3d...4f6bb3` | ⚠️ Unaudited |
+| LevinMaker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x6d81dd...018e49` | ⚠️ Unaudited |
+| LevinTimelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x061cc9...1304f2` | ⚠️ Unaudited |
+| LevinToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x1698cd...9e42aa` | ⚠️ Unaudited |
+| MasterChefLVN | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x37a714...f4a072` | ⚠️ Unaudited |
+| MasterLevin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x0f2b0e...15eca1` | ⚠️ Unaudited |
+| Moloch | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | gnosis | n/a | `0x78f967...e98cff` | ⚠️ Unaudited |
+| UniswapV2Factory | unknown | project_anchor | own_supporting | 0 | gnosis | unit-388479 | `0x965769...2975a5` | ⚠️ Unaudited |
+| UnnamedContract | periphery | project_anchor | own_supporting | 0 | gnosis | unit-388480 | `0xb18d4f...ef7c53` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,8 +131,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -104,10 +150,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 0 |
+| native | 9 |
+| upstream | 1 |
 | standard_library | 0 |
-| needs_review | 10 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -115,6 +161,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

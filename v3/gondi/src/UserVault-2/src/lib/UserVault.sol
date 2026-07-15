@@ -14,16 +14,22 @@ import "./AddressManager.sol";
 /// @title Auction Loan Liquidator
 /// @author Florida St
 /// @notice NFTs that represent bundles.
-/// @dev This vault does not support rebasing tokens. Rebasing tokens can cause accounting
+/// @dev This vault does not support rebasing tokens. Rebasing tokens can cause accounting 
 /// @dev errors since the vault tracks balances internally and won't update when rebases occur.
 
-contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVault {
+contract UserVault is
+    ERC721,
+    ERC721TokenReceiver,
+    ERC1155TokenReceiver,
+    IUserVault
+{
     using SafeTransferLib for ERC20;
 
     string private constant _BASE_URI = "https://gondi.xyz/user_vaults/";
     uint256 private _nextId = 0;
 
-    address public constant ETH = address(0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE);
+    address public constant ETH =
+        address(0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE);
 
     /// @notice IDs that were burnt are pending withdrawal
     mapping(uint256 vaultId => address claimer) _readyForWithdrawal;
@@ -45,13 +51,23 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
 
     event ERC20Deposited(uint256 vaultId, address token, uint256 amount);
 
-    event ERC1155Deposited(uint256 vaultId, address token, uint256 tokenId, uint256 amount);
+    event ERC1155Deposited(
+        uint256 vaultId,
+        address token,
+        uint256 tokenId,
+        uint256 amount
+    );
 
     event ERC721Withdrawn(uint256 vaultId, address collection, uint256 tokenId);
 
     event ERC20Withdrawn(uint256 vaultId, address token, uint256 amount);
 
-    event ERC1155Withdrawn(uint256 vaultId, address token, uint256 tokenId, uint256 amount);
+    event ERC1155Withdrawn(
+        uint256 vaultId,
+        address token,
+        uint256 tokenId,
+        uint256 amount
+    );
 
     error CurrencyNotWhitelistedError();
 
@@ -73,7 +89,10 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
 
     /// @param currencyManager Address of the CurrencyManager contract.
     /// @param collectionManager Address of the CollectionManager contract.
-    constructor(address currencyManager, address collectionManager) ERC721("GONDI_USER_VAULT", "GUV") {
+    constructor(
+        address currencyManager,
+        address collectionManager
+    ) ERC721("GONDI_USER_VAULT", "GUV") {
         _currencyManager = AddressManager(currencyManager);
         _collectionManager = AddressManager(collectionManager);
     }
@@ -107,21 +126,21 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
         if (totalCollections != _tokenIds.length) {
             revert LengthMismatchError();
         }
-        for (uint256 i = 0; i < totalCollections;) {
+        for (uint256 i = 0; i < totalCollections; ) {
             _withdrawERC721(_vaultId, _collections[i], _tokenIds[i]);
             unchecked {
                 ++i;
             }
         }
         uint256 totalTokens = _tokens.length;
-        for (uint256 i = 0; i < totalTokens;) {
+        for (uint256 i = 0; i < totalTokens; ) {
             _withdrawERC20(_vaultId, _tokens[i]);
             unchecked {
                 ++i;
             }
         }
         uint256 totalERC1155Tokens = _erc1155Tokens.length;
-        for (uint256 i = 0; i < totalERC1155Tokens;) {
+        for (uint256 i = 0; i < totalERC1155Tokens; ) {
             _withdrawERC1155(_vaultId, _erc1155Tokens[i], _erc1155TokensIds[i]);
             unchecked {
                 ++i;
@@ -130,20 +149,34 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
         _withdrawEth(_vaultId);
     }
 
-    function ERC721OwnerOf(address _collection, uint256 _tokenId) external view returns (uint256) {
+    function ERC721OwnerOf(
+        address _collection,
+        uint256 _tokenId
+    ) external view returns (uint256) {
         return _vaultERC721s[_collection][_tokenId];
     }
 
-    function ERC20BalanceOf(uint256 _vaultId, address _token) external view returns (uint256) {
+    function ERC20BalanceOf(
+        uint256 _vaultId,
+        address _token
+    ) external view returns (uint256) {
         return _vaultERC20s[_token][_vaultId];
     }
 
-    function ERC1155BalanceOf(uint256 _vaultId, address _token, uint256 _tokenId) external view returns (uint256) {
+    function ERC1155BalanceOf(
+        uint256 _vaultId,
+        address _token,
+        uint256 _tokenId
+    ) external view returns (uint256) {
         return _vaultERC1155s[_token][_tokenId][_vaultId];
     }
 
     /// @inheritdoc IUserVault
-    function depositERC721(uint256 _vaultId, address _collection, uint256 _tokenId) external {
+    function depositERC721(
+        uint256 _vaultId,
+        address _collection,
+        uint256 _tokenId
+    ) external {
         _vaultExists(_vaultId);
 
         if (!_collectionManager.isWhitelisted(_collection)) {
@@ -154,13 +187,17 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
 
     /// @inheritdoc IUserVault
     /// @dev Read `depositERC721`.
-    function depositERC721s(uint256 _vaultId, address _collection, uint256[] calldata _tokenIds) external {
+    function depositERC721s(
+        uint256 _vaultId,
+        address _collection,
+        uint256[] calldata _tokenIds
+    ) external {
         _vaultExists(_vaultId);
         if (!_collectionManager.isWhitelisted(_collection)) {
             revert CollectionNotWhitelistedError();
         }
         uint256 totalTokens = _tokenIds.length;
-        for (uint256 i = 0; i < totalTokens;) {
+        for (uint256 i = 0; i < totalTokens; ) {
             _depositERC721(msg.sender, _vaultId, _collection, _tokenIds[i]);
             unchecked {
                 ++i;
@@ -170,7 +207,11 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
 
     /// @inheritdoc IUserVault
     /// @dev Read `depositERC721`.
-    function depositERC20(uint256 _vaultId, address _token, uint256 _amount) external {
+    function depositERC20(
+        uint256 _vaultId,
+        address _token,
+        uint256 _amount
+    ) external {
         _vaultExists(_vaultId);
 
         if (_token == ETH) {
@@ -181,7 +222,12 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
 
     /// @inheritdoc IUserVault
     /// @dev Read `depositERC1155`.
-    function depositERC1155(uint256 _vaultId, address _token, uint256 _tokenId, uint256 _amount) external {
+    function depositERC1155(
+        uint256 _vaultId,
+        address _token,
+        uint256 _tokenId,
+        uint256 _amount
+    ) external {
         _vaultExists(_vaultId);
 
         if (!_collectionManager.isWhitelisted(_token)) {
@@ -204,8 +250,14 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
             revert CollectionNotWhitelistedError();
         }
         uint256 totalTokens = _tokenIds.length;
-        for (uint256 i = 0; i < totalTokens;) {
-            _depositERC1155(msg.sender, _vaultId, _collection, _tokenIds[i], _amounts[i]);
+        for (uint256 i = 0; i < totalTokens; ) {
+            _depositERC1155(
+                msg.sender,
+                _vaultId,
+                _collection,
+                _tokenIds[i],
+                _amounts[i]
+            );
             unchecked {
                 ++i;
             }
@@ -223,19 +275,25 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
     }
 
     /// @inheritdoc IUserVault
-    function withdrawERC721(uint256 _vaultId, address _collection, uint256 _tokenId) external {
+    function withdrawERC721(
+        uint256 _vaultId,
+        address _collection,
+        uint256 _tokenId
+    ) external {
         _withdrawERC721(_vaultId, _collection, _tokenId);
     }
 
     /// @inheritdoc IUserVault
-    function withdrawERC721s(uint256 _vaultId, address[] calldata _collections, uint256[] calldata _tokenIds)
-        external
-    {
+    function withdrawERC721s(
+        uint256 _vaultId,
+        address[] calldata _collections,
+        uint256[] calldata _tokenIds
+    ) external {
         if (_collections.length != _tokenIds.length) {
             revert LengthMismatchError();
         }
         uint256 totalCollections = _collections.length;
-        for (uint256 i = 0; i < totalCollections;) {
+        for (uint256 i = 0; i < totalCollections; ) {
             _withdrawERC721(_vaultId, _collections[i], _tokenIds[i]);
             unchecked {
                 ++i;
@@ -249,8 +307,11 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
     }
 
     /// @inheritdoc IUserVault
-    function withdrawERC20s(uint256 _vaultId, address[] calldata _tokens) external {
-        for (uint256 i = 0; i < _tokens.length;) {
+    function withdrawERC20s(
+        uint256 _vaultId,
+        address[] calldata _tokens
+    ) external {
+        for (uint256 i = 0; i < _tokens.length; ) {
             _withdrawERC20(_vaultId, _tokens[i]);
             unchecked {
                 ++i;
@@ -259,17 +320,25 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
     }
 
     /// @inheritdoc IUserVault
-    function withdrawERC1155(uint256 _vaultId, address _token, uint256 _tokenId) external {
+    function withdrawERC1155(
+        uint256 _vaultId,
+        address _token,
+        uint256 _tokenId
+    ) external {
         _withdrawERC1155(_vaultId, _token, _tokenId);
     }
 
     /// @inheritdoc IUserVault
-    function withdrawERC1155s(uint256 _vaultId, address[] calldata _tokens, uint256[] calldata _tokenIds) external {
+    function withdrawERC1155s(
+        uint256 _vaultId,
+        address[] calldata _tokens,
+        uint256[] calldata _tokenIds
+    ) external {
         if (_tokens.length != _tokenIds.length) {
             revert LengthMismatchError();
         }
         uint256 totalCollections = _tokens.length;
-        for (uint256 i = 0; i < totalCollections;) {
+        for (uint256 i = 0; i < totalCollections; ) {
             _withdrawERC1155(_vaultId, _tokens[i], _tokenIds[i]);
             unchecked {
                 ++i;
@@ -283,11 +352,18 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
     }
 
     /// @inheritdoc ERC721
-    function tokenURI(uint256 _vaultId) public pure override returns (string memory) {
+    function tokenURI(
+        uint256 _vaultId
+    ) public pure override returns (string memory) {
         return string.concat(_BASE_URI, Strings.toString(_vaultId));
     }
 
-    function _depositERC721(address _depositor, uint256 _vaultId, address _collection, uint256 _tokenId) private {
+    function _depositERC721(
+        address _depositor,
+        uint256 _vaultId,
+        address _collection,
+        uint256 _tokenId
+    ) private {
         ERC721(_collection).transferFrom(_depositor, address(this), _tokenId);
 
         _vaultERC721s[_collection][_tokenId] = _vaultId;
@@ -295,7 +371,12 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
         emit ERC721Deposited(_vaultId, _collection, _tokenId);
     }
 
-    function _depositERC20(address _depositor, uint256 _vaultId, address _token, uint256 _amount) private {
+    function _depositERC20(
+        address _depositor,
+        uint256 _vaultId,
+        address _token,
+        uint256 _amount
+    ) private {
         if (!_currencyManager.isWhitelisted(_token)) {
             revert CurrencyNotWhitelistedError();
         }
@@ -305,10 +386,20 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
         emit ERC20Deposited(_vaultId, _token, _amount);
     }
 
-    function _depositERC1155(address _depositor, uint256 _vaultId, address _token, uint256 _tokenId, uint256 _amount)
-        private
-    {
-        ERC1155(_token).safeTransferFrom(_depositor, address(this), _tokenId, _amount, "");
+    function _depositERC1155(
+        address _depositor,
+        uint256 _vaultId,
+        address _token,
+        uint256 _tokenId,
+        uint256 _amount
+    ) private {
+        ERC1155(_token).safeTransferFrom(
+            _depositor,
+            address(this),
+            _tokenId,
+            _amount,
+            ""
+        );
 
         _vaultERC1155s[_token][_tokenId][_vaultId] += _amount;
         emit ERC1155Deposited(_vaultId, _token, _tokenId, _amount);
@@ -317,7 +408,11 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
     /// @dev We are allowing anyone to deposit NFTs into a vault (not just the owner). Because of this we call transferFrom
     /// and not safeTransferFrom to avoid someone locking assets by transferring an ERC721 with the hook corrupted (we do
     /// have a whitelist to avoid this but being extra cautious.)
-    function _withdrawERC721(uint256 _vaultId, address _collection, uint256 _tokenId) private {
+    function _withdrawERC721(
+        uint256 _vaultId,
+        address _collection,
+        uint256 _tokenId
+    ) private {
         _onlyReadyForWithdrawal(_vaultId);
 
         if (_vaultERC721s[_collection][_tokenId] != _vaultId) {
@@ -344,7 +439,11 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
         emit ERC20Withdrawn(_vaultId, _token, amount);
     }
 
-    function _withdrawERC1155(uint256 _vaultId, address _token, uint256 _tokenId) private {
+    function _withdrawERC1155(
+        uint256 _vaultId,
+        address _token,
+        uint256 _tokenId
+    ) private {
         _onlyReadyForWithdrawal(_vaultId);
 
         uint256 amount = _vaultERC1155s[_token][_tokenId][_vaultId];
@@ -353,7 +452,13 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
         }
         delete _vaultERC1155s[_token][_tokenId][_vaultId];
 
-        ERC1155(_token).safeTransferFrom(address(this), msg.sender, _tokenId, amount, "");
+        ERC1155(_token).safeTransferFrom(
+            address(this),
+            msg.sender,
+            _tokenId,
+            amount,
+            ""
+        );
 
         emit ERC1155Withdrawn(_vaultId, _token, _tokenId, amount);
     }
@@ -374,7 +479,7 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
         }
         delete _vaultERC20s[ETH][_vaultId];
 
-        (bool sent,) = payable(msg.sender).call{value: amount}("");
+        (bool sent, ) = payable(msg.sender).call{value: amount}("");
         if (!sent) {
             revert WithdrawingETHError();
         }
@@ -395,8 +500,9 @@ contract UserVault is ERC721, ERC721TokenReceiver, ERC1155TokenReceiver, IUserVa
 
     function _onlyApproved(uint256 _vaultId) private view {
         if (
-            msg.sender != ownerOf(_vaultId) && !isApprovedForAll[ownerOf(_vaultId)][msg.sender]
-                && getApproved[_vaultId] != msg.sender
+            msg.sender != ownerOf(_vaultId) &&
+            !isApprovedForAll[ownerOf(_vaultId)][msg.sender] &&
+            getApproved[_vaultId] != msg.sender
         ) {
             revert NotApprovedError(_vaultId);
         }

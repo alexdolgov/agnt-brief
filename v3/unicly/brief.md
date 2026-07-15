@@ -1,74 +1,107 @@
 # Agentic Audit Brief: Unicly
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 1 across 1 audit(s)
+- Eligible audit results: 1 (1 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Unicly (`unicly`)
+- Website: [https://www.unic.ly/](https://www.unic.ly/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:02.395Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-43c7
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 27 unique implementations (35 raw deployments)
+- Contract surface: 1 unique implementations (1 raw deployments)
+- Coverage basis: 1/1 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $352,634.03
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Dexs. Structurally: 38 project-authored contract(s) across 1 chain(s); 6 ERC20 tokens, 3 ERC721 NFTs, 2 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Unicly. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 7 common project-authored base contract(s) (erc1155burnable, erc165, erc1155receiver). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 1 contract row(s) across ethereum. Structural roles: 1 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 1
+- Structural roles: core (1)
+- Contract kinds: contract (1)
+- Detected standards: erc20 (1), ownable (1)
+- Frameworks: openzeppelin (1)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 1 contracts are derived from known codebases. 1 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- Unic (`0x94e0ba...513ad5`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 77; live-surface contracts included: 35 (19 live, 16 unknown).
-- Excluded by liveness: 42 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 1/1 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 11/11 (100.0%)
-- Deployed-live implementations: 11 of 27 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 11/11
+- Coverage of address-book-owned deployed-live implementations: 1/1 (100.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 1/1
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 16
-- Unique implementations: 27
-- Raw deployments: 35
+- Unverified implementations: 0
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-03 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 11 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| yAudit | Tier 2 | 11 | 100.0% | 2021-03 |
+| yAudit | Tier 2 | 1 | 100.0% | 2021-03 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (11)
+### ✅ Verified + Audited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AdvStakingProxyFarmer | unknown | ethereum | n/a | [`0x2e30b5...664031`](./contracts/ethereum-1/0x2e30b5fa7bfa8d51a4668284c763af112e664031/) | ✅ Audited |
-| GovernorAlpha | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8bf26a...768d2d`](./contracts/ethereum-1/0x8bf26a3bffd9072ce12c7bfd5e3b1fce33768d2d/); ethereum `0xb86b0d...f19c12` | ✅ Audited |
-| LockedLP | unknown | ethereum | n/a | [`0x394721...af341e`](./contracts/ethereum-1/0x3947215350049b787177bfa90bce52856caf341e/) | ✅ Audited |
-| ProxyCreator | unknown | ethereum | n/a | [`0xa63973...9ef177`](./contracts/ethereum-1/0xa63973a8b5b2b3d496b32395f5c9f256399ef177/) | ✅ Audited |
-| ProxyFarmer | unknown | ethereum | n/a | [`0x1f2f77...34d1c8`](./contracts/ethereum-1/0x1f2f77dcf34c55c119a27e74249f4f234934d1c8/) | ✅ Audited |
-| Timelock | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1e3497...ff5ee4`](./contracts/ethereum-1/0x1e3497f72440aa93b5149516225e342a29ff5ee4/); ethereum `0xf33079...4bc889` | ✅ Audited |
-| Unic | unknown | ethereum | n/a | 2 deployments: ethereum [`0x719c3a...107755`](./contracts/ethereum-1/0x719c3abf7c2435be34ed479b98db85342d107755/); ethereum `0x94e0ba...513ad5` | ✅ Audited |
-| UnicFactory | unknown | ethereum | n/a | 2 deployments: ethereum [`0x4e3023...c89b28`](./contracts/ethereum-1/0x4e30235a3c556ff509cd4f71ad6168ec60c89b28/); ethereum `0x8696bd...e0c007` | ✅ Audited |
-| UnicFarm | unknown | ethereum | n/a | 2 deployments: ethereum [`0x2bf120...0bc6e3`](./contracts/ethereum-1/0x2bf120458d1270d0f666cc75a70e8379270bc6e3/); ethereum `0x4a25e4...6ee818` | ✅ Audited |
-| UnicGallery | unknown | ethereum | n/a | 2 deployments: ethereum [`0x79161d...f8207e`](./contracts/ethereum-1/0x79161df977aa152152ba8d07f701a14376f8207e/); ethereum `0xa62fb0...db919a` | ✅ Audited |
-| UnicPumper | unknown | ethereum | n/a | 3 deployments: ethereum [`0x9e5b1f...69ca85`](./contracts/ethereum-1/0x9e5b1f637a03976f2c472265806aa1bcc969ca85/); ethereum `0xc763dc...2afa94`; ethereum `0xfce761...269dd2` | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Unic | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395244 | `0x94e0ba...513ad5` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -86,34 +119,38 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (16)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x21ce52...467d1b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x22e8b7...cf7851` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2499d1...c43721` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2e8166...1c8f0b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3547b2...850d50` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4b967c...79fe6c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x68187a...697aec` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7bbccf...f774fd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7f3372...6d9a08` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb945dc...9ea499` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xcae5bf...5b16fe` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xce924a...2d3164` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xcecf73...42aeec` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe111b7...3c07b9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe82f70...1f81c7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf06d5a...000c1e` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Unicly Security Audit.pdf](https://github.com/uniclyNFT/Resources/blob/main/Unicly%20Security%20Audit.pdf) | yAudit | Audit | 2021-03 | stale | Direct | contract_name | 19 | high |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Unicly Security Audit.pdf](https://github.com/uniclyNFT/Resources/blob/main/Unicly%20Security%20Audit.pdf) | yAudit | Audit | 2021-03 | stale | Direct | contract_name | matched | 1 | 0 | 0 | 7 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [14052] Unicly Security Audit.pdf — matched: Contracts explicitly listed in executive summary and contract files section.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Unicly Security Audit.pdf | Converter | unmatched — not counted | — | listed in scope | no |
+| Unicly Security Audit.pdf | GovernorAlpha | unmatched — not counted | — | listed in scope | no |
+| Unicly Security Audit.pdf | TimeLock | unmatched — not counted | — | listed in scope | no |
+| Unicly Security Audit.pdf | Unic | own contract | Unic (selected) `0x94e0ba...513ad5` — deployed 2021-05-15 02:41:50+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Unicly Security Audit.pdf | UnicFactory | unmatched — not counted | — | listed in scope | no |
+| Unicly Security Audit.pdf | UnicFarm | unmatched — not counted | — | listed in scope | no |
+| Unicly Security Audit.pdf | UnicGallery | unmatched — not counted | — | listed in scope | no |
+| Unicly Security Audit.pdf | UnicPumper | unmatched — not counted | — | listed in scope | no |
 
 ## Coverage Gaps
 
@@ -125,10 +162,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 27 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -136,7 +173,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 1 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 7 unmatched
+- Matched-own operational status: 1 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=19
+- Match method counts: unique_name=1
 
 Fork inheritance lineage and inherited audits are included when available.

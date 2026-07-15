@@ -1,39 +1,69 @@
 # Agentic Audit Brief: Alphadex
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 3 (0 matched; 3 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Alphadex (`alphadex`)
+- Website: [https://alphadex.io/](https://alphadex.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:27.008Z
-- Pipeline run: v2-2026-07-03-59f8b9
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: moonriver
 - Contract surface: 7 unique implementations (7 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $141,389.79
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Dexs. Structurally: 7 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens, 1 ERC721 NFT; role-gated via AccessControl; built on openzeppelin.
+No contract logic was present for Alphadex in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol forms a single structural family (Core Logic) of 7 contract(s).
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 7; live-surface contracts included: 7 (7 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/7 (0.0%)
-- Deployed-live implementations: 7 of 7 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/7
-- Verified + Unaudited implementations: 7
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 7 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 7
@@ -58,15 +88,15 @@ The protocol forms a single structural family (Core Logic) of 7 contract(s).
 
 ### ⚠️ Verified + Unaudited (7)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AlphaDEX | unknown | moonriver | n/a | [`0x8e7cd8...b02a60`](./contracts/moonriver-1285/0x8e7cd893d8f371051a39aa65976bca22d7b02a60/) | ⚠️ Unaudited |
-| LaunchpadFactory | unknown | moonriver | n/a | [`0xd9341f...157dd0`](./contracts/moonriver-1285/0xd9341fd84affa37af97747c08b9404ef30157dd0/) | ⚠️ Unaudited |
-| LPStaking | unknown | moonriver | n/a | [`0x29a31b...2ed820`](./contracts/moonriver-1285/0x29a31b6e45cf5133c0483496471226a6d22ed820/) | ⚠️ Unaudited |
-| MasterChef | unknown | moonriver | n/a | [`0x55a616...384f5c`](./contracts/moonriver-1285/0x55a616ac51d8bbe8a50c951acd5e941285384f5c/) | ⚠️ Unaudited |
-| RewardNft | unknown | moonriver | n/a | [`0xaa6535...266b5b`](./contracts/moonriver-1285/0xaa6535409e076f203e0f431c518b998d85266b5b/) | ⚠️ Unaudited |
-| Roar | unknown | moonriver | n/a | [`0x4829b5...7ab833`](./contracts/moonriver-1285/0x4829b57f0160427f768a5c0aa23cd3d33c7ab833/) | ⚠️ Unaudited |
-| RoarStaking | unknown | moonriver | n/a | [`0x70f0bf...873236`](./contracts/moonriver-1285/0x70f0bf009d24f2628762cb1e079a9d720e873236/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AlphaDEX | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121433 | `0x8e7cd8...b02a60` | ⚠️ Unaudited |
+| LaunchpadFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121435 | `0xd9341f...157dd0` | ⚠️ Unaudited |
+| LPStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121429 | `0x29a31b...2ed820` | ⚠️ Unaudited |
+| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121431 | `0x55a616...384f5c` | ⚠️ Unaudited |
+| RewardNft | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121434 | `0xaa6535...266b5b` | ⚠️ Unaudited |
+| Roar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121430 | `0x4829b5...7ab833` | ⚠️ Unaudited |
+| RoarStaking | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | moonriver | unit-121432 | `0x70f0bf...873236` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,9 +118,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [AlphaDex-Smart-Contract-Security-Report-16.6.22.pdf (also discovered via alternate URL)](https://web.archive.org/web/20220704153703/https://www.rdauditors.com/wp-content/uploads/2022/06/AlphaDex-Smart-Contract-Security-Report-16.6.22.pdf) | RD Auditors | Audit | 2022-06 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [AlphaDex-Smart-Contract-Security-Report-16.6.22.pdf (also discovered via alternate URL)](https://web.archive.org/web/20220704153703/https://www.rdauditors.com/wp-content/uploads/2022/06/AlphaDex-Smart-Contract-Security-Report-16.6.22.pdf) | RD Auditors | Audit | 2022-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [21370] AlphaDex-Smart-Contract-Security-Report-16.6.22.pdf — no match: Three files explicitly listed in scope table with hashes. Date found on page 3 as 'Date 16/06/2022'.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| AlphaDex-Smart-Contract-Security-Report-16.6.22.pdf | LP Staking Contract | unmatched — not counted | — | listed in scope table on page 3 | no |
+| AlphaDex-Smart-Contract-Security-Report-16.6.22.pdf | Roar Native Staking | unmatched — not counted | — | listed in scope table on page 3 | no |
+| AlphaDex-Smart-Contract-Security-Report-16.6.22.pdf | NFT Rewarder Contract | unmatched — not counted | — | listed in scope table on page 3 | no |
 
 ## Coverage Gaps
 
@@ -102,10 +148,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 7 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 7 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -113,7 +159,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 3 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1
 - Match method counts: n/a
 
 Zero-match audit list:

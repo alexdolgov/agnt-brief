@@ -1,102 +1,134 @@
 # Agentic Audit Brief: Snuggle
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 15 across 1 audit(s)
+- Eligible audit results: 3 (1 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Snuggle (`snuggle`)
 - Website: [https://snuggle.fi/](https://snuggle.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:54.476Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
-- Chains: arbitrum, base
-- Contract surface: 67 unique implementations (111 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: base
+- Contract surface: 16 unique implementations (16 raw deployments)
+- Coverage basis: 14/14 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,426,344.64
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Liquidity Manager. Structurally: 57 project-authored contract(s) across 2 chain(s); 1 ERC20 token, 2 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Snuggle. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 7 functional families. Its contracts share 23 common project-authored base contract(s) (multicall, erc721permit, blocktimestamp). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 14 contract row(s) across base. Structural roles: 11 supporting, 3 core. 1 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 14
+- Structural roles: supporting (11), core (3)
+- Contract kinds: contract (14)
+- Detected standards: ownable (3), ownable2step (2)
+- Frameworks: openzeppelin (11), uniswap-v3 (2), openzeppelin-upgradeable (1)
+- Upgradeable-pattern rows: 1
+
+## Fork Analysis
+
+0 of 16 contracts are derived from known codebases. 16 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x02415b...0224c0`, chain 8453)
+- UnnamedContract (`0xd3923b...6b7470`, chain 8453)
+- AerodromePositionAdapter (`0xe3efa7...f79589`, chain 8453)
+- AerodromeRewardAdapter (`0xcb16cb...d77306`, chain 8453)
+- FeeTransferHelper (`0x613ba8...28b1f3`, chain 8453)
+- KeepersHelper (`0x60431b...563345`, chain 8453)
+- PancakeSwapPositionAdapter (`0x0c0ba0...1b39e5`, chain 8453)
+- PancakeSwapRewardAdapter (`0x63de14...18b1cf`, chain 8453)
+- ProxyAdmin (`0x269dc2...cca86f`, chain 8453)
+- ReferralTracker (`0x2536a7...68d9ee`, chain 8453)
+- SnuggleRebalanceLib (`0xf84b57...1dcddc`, chain 8453)
+- SnuggleVaultAdminSatellite (`0x5a332c...e4d271`, chain 8453)
+- StakingManager (`0x3f928d...a270c1`, chain 8453)
+- TreasurySplitter (`0x93d0d1...a9ec12`, chain 8453)
+- UniswapV3Adapter (`0xf757c9...f33010`, chain 8453)
+- ViewHelper (`0x298028...976a1c`, chain 8453)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 173; live-surface contracts included: 107 (70 live, 37 unknown).
-- Excluded by liveness: 66 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 14; live-surface contracts included: 14 (14 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 16/16 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 12/33 (36.4%)
-- Deployed-live implementations: 33 of 67 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 12/33
-- Verified + Unaudited implementations: 21
+- Coverage of address-book-owned deployed-live implementations: 14/14 (100.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 16 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 16 of 16 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 14/14
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 34
-- Unique implementations: 67
-- Raw deployments: 111
+- Unverified implementations: 2
+- Unique implementations: 16
+- Raw deployments: 16
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-02 (fresh)
 - Audit staleness (calendar age): 2 fresh, 0 aging, 0 stale, 1 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 12 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 15 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 12 | 36.4% | 2026-02 |
+| unknown | Tier 2 | 14 | 100.0% | 2026-02 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (12)
+### ✅ Verified + Audited (14)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AerodromePositionAdapter | adapter | base | n/a | 2 deployments: base [`0x0aedee...9794d1`](./contracts/base-8453/0x0aedeed5ad8d45d3d928fb872161efaa559794d1/); base `0xe3efa7...f79589` | ✅ Audited |
-| AerodromeRewardAdapter | adapter | base | n/a | [`0xcb16cb...d77306`](./contracts/base-8453/0xcb16cb2cd32768c65418b22385888bd2c8d77306/) | ✅ Audited |
-| FeeTransferHelper | periphery | arbitrum | n/a | 3 deployments: base `0x613ba8...28b1f3`; arbitrum [`0x59c2a1...349461`](./contracts/arbitrum-42161/0x59c2a172e52a61c4f1bb6dbdcab41b76d9349461/); arbitrum `0xbfd8cf...0cabae` | ✅ Audited |
-| PancakeSwapPositionAdapter | adapter | base | n/a | 4 deployments: base [`0x0c0ba0...1b39e5`](./contracts/base-8453/0x0c0ba0b81a4ac60321c2414bdcef24c5851b39e5/); base `0xad35ec...bf0a71`; arbitrum `0x78bb36...bd4589`; arbitrum `0xf20bc2...2b84d9` | ✅ Audited |
-| PancakeSwapRewardAdapter | adapter | arbitrum | n/a | 4 deployments: base `0x63de14...18b1cf`; arbitrum [`0x4cd1a0...62a065`](./contracts/arbitrum-42161/0x4cd1a0b610117a688998325e3779e858ff62a065/); arbitrum `0x6af9c5...8d19a8`; arbitrum `0xb668e7...69f7c9` | ✅ Audited |
-| ProxyAdmin | governance | base | n/a | 4 deployments: base [`0x269dc2...cca86f`](./contracts/base-8453/0x269dc2f974abed1c7a55a447758fcaef2dcca86f/); arbitrum `0x427bf5...5396c1`; arbitrum `0x8bca45...e037df`; arbitrum `0x999a74...a891de` | ✅ Audited |
-| ReferralTracker | unknown | base | n/a | 3 deployments: base [`0x2536a7...68d9ee`](./contracts/base-8453/0x2536a771111861bc0be61bd986f0c2dc0f68d9ee/); arbitrum `0x6915b5...01cd00`; arbitrum `0xb52cca...e4705e` | ✅ Audited |
-| SnuggleRebalanceLib | unknown | base | n/a | [`0xf84b57...1dcddc`](./contracts/base-8453/0xf84b575e4e6d9fc07a3f2b863cb6a23cc11dcddc/) | ✅ Audited |
-| StakingManager | governance | arbitrum | n/a | 3 deployments: base `0x3f928d...a270c1`; arbitrum [`0x020ed2...9948bd`](./contracts/arbitrum-42161/0x020ed29a0b1ced89c4309b32709a2a97699948bd/); arbitrum `0xd977c0...e2b40d` | ✅ Audited |
-| TreasurySplitter | operational_periphery | arbitrum | n/a | 3 deployments: base `0x93d0d1...a9ec12`; arbitrum [`0x8c7d96...c176f6`](./contracts/arbitrum-42161/0x8c7d966b6bee480bf96b41870ccb89559ac176f6/); arbitrum `0xafe51c...84c92a` | ✅ Audited |
-| UniswapV3Adapter | adapter | arbitrum | n/a | 4 deployments: base `0xca4cf9...debabd`; base `0xf757c9...f33010`; arbitrum [`0x76bdb4...c44ef2`](./contracts/arbitrum-42161/0x76bdb43d2ec3b190087076649224f47a58c44ef2/); arbitrum `0xa6e465...be082c` | ✅ Audited |
-| ViewHelper | periphery | arbitrum | n/a | 4 deployments: base `0x286490...ce18bd`; base `0x298028...976a1c`; arbitrum [`0x0ef66d...3da5b6`](./contracts/arbitrum-42161/0x0ef66de171293285a8f8ffd0d0d564ca093da5b6/); arbitrum `0x4a14af...a19df9` | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AerodromePositionAdapter | adapter | project_anchor | own_supporting | 0 | base | unit-392628 | `0xe3efa7...f79589` | ✅ Audited |
+| AerodromeRewardAdapter | adapter | project_anchor | own_supporting | 0 | base | unit-392626 | `0xcb16cb...d77306` | ✅ Audited |
+| FeeTransferHelper | periphery | project_anchor | own_supporting | 0 | base | unit-392623 | `0x613ba8...28b1f3` | ✅ Audited |
+| KeepersHelper | operational_periphery | project_anchor | own_supporting | 0 | base | unit-392622 | `0x60431b...563345` | ✅ Audited |
+| PancakeSwapPositionAdapter | adapter | project_anchor | own_supporting | 0 | base | unit-392616 | `0x0c0ba0...1b39e5` | ✅ Audited |
+| PancakeSwapRewardAdapter | adapter | project_anchor | own_supporting | 0 | base | unit-392624 | `0x63de14...18b1cf` | ✅ Audited |
+| ProxyAdmin | governance | project_anchor | own_supporting | 0 | base | unit-392618 | `0x269dc2...cca86f` | ✅ Audited |
+| ReferralTracker | unknown | project_anchor | own_supporting | 0 | base | unit-392617 | `0x2536a7...68d9ee` | ✅ Audited |
+| SnuggleRebalanceLib | unknown | project_anchor | own_supporting | 0 | base | unit-392630 | `0xf84b57...1dcddc` | ✅ Audited |
+| SnuggleVaultAdminSatellite | core_logic | project_anchor | own_supporting | 0 | base | unit-392621 | `0x5a332c...e4d271` | ✅ Audited |
+| StakingManager | governance | project_anchor | own_supporting | 0 | base | unit-392620 | `0x3f928d...a270c1` | ✅ Audited |
+| TreasurySplitter | operational_periphery | project_anchor | own_supporting | 0 | base | unit-392625 | `0x93d0d1...a9ec12` | ✅ Audited |
+| UniswapV3Adapter | adapter | project_anchor | own_supporting | 0 | base | unit-392629 | `0xf757c9...f33010` | ✅ Audited |
+| ViewHelper | periphery | project_anchor | own_supporting | 0 | base | unit-392619 | `0x298028...976a1c` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (21)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| CamelotPositionAdapter | adapter | arbitrum | n/a | 2 deployments: arbitrum [`0x19ec46...47f217`](./contracts/arbitrum-42161/0x19ec46eb3cbcec146de2d9b4336187e4f147f217/); arbitrum `0xbfbf7d...9a8956` | ⚠️ Unaudited |
-| KeepersHelper | operational_periphery | arbitrum | n/a | 5 deployments: base `0x60431b...563345`; arbitrum [`0x0e7edc...8f9869`](./contracts/arbitrum-42161/0x0e7edc3856349ed0126f863cc39fc9bc008f9869/); arbitrum `0x408229...ea716f`; arbitrum `0x71b55e...7f30f7`; arbitrum `0xc962c9...8ad7d6` | ⚠️ Unaudited |
-| Multicall2 | periphery | arbitrum | n/a | [`0x80c7dd...a314de`](./contracts/arbitrum-42161/0x80c7dd17b01855a6d2347444a0fcc36136a314de/) | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptor | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x1ad8c5...e14abc`](./contracts/arbitrum-42161/0x1ad8c5aed1d18cb7c5f30cd2b486251e87e14abc/); arbitrum `0x52d2eb...b48325` | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptor | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x2d22aa...7606dc`](./contracts/arbitrum-42161/0x2d22aa1c50433eb018077e4bfc52fadc437606dc/); arbitrum `0x89a13b...b8a68a` | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptor | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x49f598...32067c`](./contracts/arbitrum-42161/0x49f5985a122028093c91bb63084eb29a7632067c/); arbitrum `0x674d07...e7a7ef` | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptorOffChain | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x3d00cd...652227`](./contracts/arbitrum-42161/0x3d00cdb4785f0ef20c903a13596e0b9b2c652227/); arbitrum `0xb099b4...456cff` | ⚠️ Unaudited |
-| Quoter | periphery | arbitrum | n/a | [`0x0fc730...4fa76e`](./contracts/arbitrum-42161/0x0fc73040b26e9bc8514fa028d998e73a254fa76e/) | ⚠️ Unaudited |
-| QuoterV2 | periphery | arbitrum | n/a | [`0xb048bb...e25997`](./contracts/arbitrum-42161/0xb048bbc1ee6b733fffcfb9e9cef7375518e25997/) | ⚠️ Unaudited |
-| SliverConfig | governance | arbitrum | n/a | [`0xe7b13b...e299f1`](./contracts/arbitrum-42161/0xe7b13bb95d5fc2ae028187d50e4f083573e299f1/) | ⚠️ Unaudited |
-| SnuggleHedgeHelper | periphery | arbitrum | n/a | 2 deployments: arbitrum [`0x8b3a79...03ef9f`](./contracts/arbitrum-42161/0x8b3a7989ae94dcf06abe07f5b4b95c63b603ef9f/); arbitrum `0xb1364a...feada7` | ⚠️ Unaudited |
-| SnuggleVaultAdminSatellite | core_logic | arbitrum | n/a | 3 deployments: base `0x5a332c...e4d271`; arbitrum [`0x1195c0...fe6dce`](./contracts/arbitrum-42161/0x1195c074f898b7644ba732407619c9804dfe6dce/); arbitrum `0x454059...d7d3f4` | ⚠️ Unaudited |
-| SnuggleVaultUpgradeable | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x0d8039...da22da`](./contracts/arbitrum-42161/0x0d803966d1a96aca169e203a0c0a8b86acda22da/); arbitrum `0x9da886...bab114` | ⚠️ Unaudited |
-| SnuggleVaultUpgradeable | core_logic | arbitrum | n/a | 3 deployments: arbitrum [`0x1638b6...894f9d`](./contracts/arbitrum-42161/0x1638b6a0477bf09163531279dc535d6c40894f9d/); arbitrum `0x572351...9cd430`; arbitrum `0xa86b81...a85c68` | ⚠️ Unaudited |
-| SnuggleVaultUpgradeable | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x413ca9...2630f6`](./contracts/arbitrum-42161/0x413ca90d38d964546c2fe03cb103df57372630f6/); arbitrum `0x4b1cbd...bcb07d` | ⚠️ Unaudited |
-| SwapRouter | adapter | arbitrum | n/a | 2 deployments: arbitrum [`0x1b81d6...13eb14`](./contracts/arbitrum-42161/0x1b81d678ffb9c0263b24a97847620c99d213eb14/); arbitrum `0xa55582...839ef5` | ⚠️ Unaudited |
-| SwapRouter | adapter | arbitrum | n/a | [`0x1f721e...339e18`](./contracts/arbitrum-42161/0x1f721e2e82f6676fce4ea07a5958cf098d339e18/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x5822a4...6bc460`](./contracts/arbitrum-42161/0x5822a45b05d08028baa3d19626870076d26bc460/); arbitrum `0xd8676f...0e34ae` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x903293...594c13`](./contracts/arbitrum-42161/0x903293c1e922a72a95a69c61ede74073c8594c13/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0xa76021...280b5c`](./contracts/arbitrum-42161/0xa760212bc60a77b24ba52e889b0dc9d99e280b5c/); arbitrum `0xf4c88b...e7dd41` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0xf53b4b...edd8c1`](./contracts/arbitrum-42161/0xf53b4b36d9b24e5b0086fe7c4532a3c5ddedd8c1/); arbitrum `0xfecbac...7e4321` | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -110,54 +142,59 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (34)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | arbitrum | n/a | `0x011e52...e2e581` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x145d82...522e6f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x1be211...7b1d6c` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x1c5771...0eb194` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x1cf9cf...e98a14` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x1f054c...46d8ec` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x258f7e...38b788` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x259ba0...85ea3c` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x2f6867...050066` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x3046cf...942dbd` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x30cea6...f943b1` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x351447...0b0187` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x3db923...7cb9ec` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x3fc3f7...d931af` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x400bb7...81e231` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x48813f...7caf33` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x4b5348...8c72f4` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x5629ce...d851d9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x67468e...f70792` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x6e9aed...a1bc56` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x790b6c...f049a8` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x8cc276...39b16e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x8dacff...225d38` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x92883a...fd8087` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x933951...0ff328` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x9dd655...abe2bb` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xbd87be...1736d9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xc27d4d...5e5657` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xdcd6a4...1232d3` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xe4331d...304d36` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xeae23c...c130ca` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf78031...cf9bef` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf8644a...243c33` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xfdd069...2eb659` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-392615 | `0x02415b...0224c0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-392627 | `0xd3923b...6b7470` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Abyss.pdf](https://d3cny4im7ppv5.cloudfront.net/Abyss.pdf) | unknown | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
-| [www.snuggle.fi/security](https://www.snuggle.fi/security) | unknown | Audit | 2026-02 | fresh | Direct | contract_name | 12 | n/a |
-| [valvessecurity.com](https://valvessecurity.com/) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Abyss.pdf](https://d3cny4im7ppv5.cloudfront.net/Abyss.pdf) | unknown | Audit | 2025-11 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [www.snuggle.fi/security](https://www.snuggle.fi/security) | unknown | Audit | 2026-02 | fresh | Direct | n/a | matched | 15 | 0 | 0 | 1 | n/a |
+| [valvessecurity.com](https://valvessecurity.com/) | yAudit | Audit | n/a | unknown | Direct | contract_name | no match | 0 | 0 | 0 | 1 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [3119] Abyss.pdf — no match: Scope table lists 5 source files. Audit dates: 10/11/2025 to 12/11/2025, so end date is 2025-11-12.
+- [3121] www.snuggle.fi/security — matched: No reason recorded
+- [11989] valvessecurity.com — no match: The document appears to be a marketing page for Valves Security, not an actual audit report. Only one contract name (VaultAudit) is mentioned in a code example, but no formal scope section or audit date is present.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Abyss.pdf | vault | unmatched — not counted | — | listed in scope table | no |
+| Abyss.pdf | vault_registry | unmatched — not counted | — | listed in scope table | no |
+| Abyss.pdf | fee_manager | unmatched — not counted | — | listed in scope table | no |
+| Abyss.pdf | constants | unmatched — not counted | — | listed in scope table | no |
+| Abyss.pdf | protocol_config | unmatched — not counted | — | listed in scope table | no |
+| www.snuggle.fi/security | AdminSatellite | own contract | SnuggleVaultAdminSatellite (selected) `0x5a332c...e4d271` — deployed 2026-02-16 00:07:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.snuggle.fi/security | AerodromePositionAdapter | own contract | AerodromePositionAdapter (selected) `0xe3efa7...f79589` — deployed 2026-02-16 00:08:13+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.snuggle.fi/security | AerodromeRewardAdapter | own contract | AerodromeRewardAdapter (selected) `0xcb16cb...d77306` — deployed 2026-02-16 00:08:15+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.snuggle.fi/security | FeeTransferHelper | own contract | FeeTransferHelper (selected) `0x613ba8...28b1f3` — deployed 2026-02-16 00:07:53+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.snuggle.fi/security | KeepersHelper V3 | own contract | KeepersHelper (selected) `0x60431b...563345` — deployed 2026-02-16 16:29:49+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.snuggle.fi/security | PancakeSwapPositionAdapter | own contract | PancakeSwapPositionAdapter (selected) `0x0c0ba0...1b39e5` — deployed 2026-02-16 00:08:17+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.snuggle.fi/security | PancakeSwapRewardAdapter | own contract | PancakeSwapRewardAdapter (selected) `0x63de14...18b1cf` — deployed 2026-02-16 00:08:19+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.snuggle.fi/security | ProxyAdmin | own contract | ProxyAdmin (selected) `0x269dc2...cca86f` — deployed 2026-02-16 00:07:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.snuggle.fi/security | ReferralTracker | own contract | ReferralTracker (selected) `0x2536a7...68d9ee` — deployed 2026-02-16 00:07:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.snuggle.fi/security | SnuggleRebalanceLib | own contract | SnuggleRebalanceLib (selected) `0xf84b57...1dcddc` — deployed 2026-02-16 00:07:37+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.snuggle.fi/security | SnuggleVault | unmatched — not counted | — | — | no |
+| www.snuggle.fi/security | SnuggleVault Implementation | own contract | 0x02415b… (selected) `0x02415b...0224c0` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.snuggle.fi/security | StakingManager | own contract | StakingManager (selected) `0x3f928d...a270c1` — deployed 2026-02-16 00:07:51+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.snuggle.fi/security | TreasurySplitter | own contract | TreasurySplitter (selected) `0x93d0d1...a9ec12` — deployed 2026-02-16 00:07:39+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.snuggle.fi/security | UniswapV3Adapter | own contract | UniswapV3Adapter (selected) `0xf757c9...f33010` — deployed 2026-02-16 00:08:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| www.snuggle.fi/security | ViewHelper | own contract | ViewHelper (selected) `0x298028...976a1c` — deployed 2026-02-16 00:08:05+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| valvessecurity.com | VaultAudit | unmatched — not counted | — | Mentioned in code snippet as VaultAudit.sol | no |
 
 ## Coverage Gaps
 
@@ -169,10 +206,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 13 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 67 |
+| standard_library | 1 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
@@ -180,8 +217,10 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: contract_name=12
+- Address-book scope dispositions: 15 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 7 unmatched
+- Matched-own operational status: 15 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1, low=1
+- Match method counts: unique_name=15
 
 Zero-match audit list:
 

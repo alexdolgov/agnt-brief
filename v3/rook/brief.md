@@ -1,48 +1,78 @@
 # Agentic Audit Brief: Rook
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 7 (0 matched; 7 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Rook (`rook`)
+- Website: [https://keeperdao.com/](https://keeperdao.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:51.129Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 14 unique implementations (14 raw deployments)
+- Contract surface: 2 unique implementations (2 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $1,219,064.47
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Dexs. Structurally: 66 project-authored contract(s) across 1 chain(s); 11 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for Rook in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 16 common project-authored base contract(s) (initializableadminupgradeabilityproxy, baseadminupgradeabilityproxy, baseupgradeabilityproxy). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 165; live-surface contracts included: 14 (6 live, 8 unknown).
-- Excluded by liveness: 151 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/6 (0.0%)
-- Deployed-live implementations: 6 of 14 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/6
-- Verified + Unaudited implementations: 6
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 8
-- Unique implementations: 14
-- Raw deployments: 14
+- Unverified implementations: 0
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 7 (7 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2021-01 (stale)
-- Audit staleness (calendar age): 0 fresh, 0 aging, 3 stale, 4 unknown
+- Latest audit: 2022-02 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 6 stale, 1 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
@@ -56,16 +86,9 @@ The protocol comprises 3 functional families. Its contracts share 16 common proj
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BorrowerProxy | unknown | ethereum | n/a | [`0xde9274...ea8002`](./contracts/ethereum-1/0xde92742213fea5f78c6840b6ecbf214115ea8002/) | ⚠️ Unaudited |
-| DEX | unknown | ethereum | n/a | [`0xf65d91...768594`](./contracts/ethereum-1/0xf65d91333b1d4d3887016b17741ad602d7768594/) | ⚠️ Unaudited |
-| LiquidityPoolV2 | core_logic | ethereum | n/a | [`0x35ffd6...5e40e5`](./contracts/ethereum-1/0x35ffd6e268610e764ff6944d07760d0efe5e40e5/) | ⚠️ Unaudited |
-| LiquidityPoolV4 | core_logic | ethereum | n/a | [`0x4f868c...6275e2`](./contracts/ethereum-1/0x4f868c1aa37fcf307ab38d215382e88fca6275e2/) | ⚠️ Unaudited |
-| RookToken | token | ethereum | n/a | [`0xfa5047...313d4a`](./contracts/ethereum-1/0xfa5047c9c78b8877af97bdcb85db743fd7313d4a/) | ⚠️ Unaudited |
-| zBTC | unknown | ethereum | n/a | [`0x88c64a...78bb7d`](./contracts/ethereum-1/0x88c64a7d2ecc882d558dd16abc1537515a78bb7d/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -79,32 +102,93 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (8)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x1d1d44...8e2c1a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2d7e24...6f7f5b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4012ef...d8f4f2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x48ace4...642524` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5be0e8...4fa359` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9d6e6e...b11198` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xab5ebc...3a5a6e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe175a2...490674` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x4c8cc2...d436b7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x82151c...bef3b8` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [peckshield_final.pdf](http://web.archive.org/web/20201117220335/https://github.com/keeperdao/docs/blob/master/audits/peckshield_final.pdf) | PeckShield | Audit | 2020-01 | stale | Direct | n/a | 0 | n/a |
-| [quantstamp_draft.pdf](http://web.archive.org/web/20201117220334/https://github.com/keeperdao/docs/blob/master/audits/quantstamp_draft.pdf) | Quantstamp | Audit | 2020-01 | stale | Direct | n/a | 0 | n/a |
-| [PeckShield-Audit-Report-KeeperDAOStaking-v1.0_1.pdf](http://web.archive.org/web/20221212181643/https://github.com/rookprotocol/docs/blob/master/audits/PeckShield-Audit-Report-KeeperDAOStaking-v1.0_1.pdf) | PeckShield | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [PeckShield-kCompound.pdf](http://web.archive.org/web/20221212174138/https://github.com/rookprotocol/docs/blob/master/audits/PeckShield-kCompound.pdf) | PeckShield | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Quantstamp-kCompound.pdf](http://web.archive.org/web/20221212181221/https://github.com/rookprotocol/docs/blob/master/audits/Quantstamp-kCompound.pdf) | Quantstamp | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [KeeperDAO Liquidity Pool and HidingVault - Report.pdf](http://web.archive.org/web/20210805222729/https://github.com/keeperdao/docs/blob/master/audits/KeeperDAO%20Liquidity%20Pool%20and%20HidingVault%20-%20Report.pdf) | unspecified | Audit | 2021-01 | stale | Direct | n/a | 0 | n/a |
-| [Manual audit seed](http://web.archive.org/web/20221212172733/https://github.com/rookprotocol/docs/tree/master/audits) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [peckshield_final.pdf](http://web.archive.org/web/20201117220335/https://github.com/keeperdao/docs/blob/master/audits/peckshield_final.pdf) | PeckShield | Audit | 2020-01 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | medium |
+| [quantstamp_draft.pdf](http://web.archive.org/web/20201117220334/https://github.com/keeperdao/docs/blob/master/audits/quantstamp_draft.pdf) | Quantstamp | Audit | 2020-01 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 6 | medium |
+| [PeckShield-Audit-Report-KeeperDAOStaking-v1.0_1.pdf](http://web.archive.org/web/20221212181643/https://github.com/rookprotocol/docs/blob/master/audits/PeckShield-Audit-Report-KeeperDAOStaking-v1.0_1.pdf) | PeckShield | Audit | 2022-02 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | medium |
+| [PeckShield-kCompound.pdf](http://web.archive.org/web/20221212174138/https://github.com/rookprotocol/docs/blob/master/audits/PeckShield-kCompound.pdf) | PeckShield | Audit | 2021-04 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [Quantstamp-kCompound.pdf](http://web.archive.org/web/20221212181221/https://github.com/rookprotocol/docs/blob/master/audits/Quantstamp-kCompound.pdf) | Quantstamp | Audit | 2021-05 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 13 | high |
+| [KeeperDAO Liquidity Pool and HidingVault - Report.pdf](http://web.archive.org/web/20210805222729/https://github.com/keeperdao/docs/blob/master/audits/KeeperDAO%20Liquidity%20Pool%20and%20HidingVault%20-%20Report.pdf) | unspecified | Audit | 2021-01 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 20 | high |
+| [Manual audit seed](http://web.archive.org/web/20221212172733/https://github.com/rookprotocol/docs/tree/master/audits) | unknown | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [21327] peckshield_final.pdf — no match: No explicit scope section; contract names extracted from findings targets and file paths in code snippets.
+- [21328] quantstamp_draft.pdf — no match: No explicit scope section; contracts inferred from findings and test output. Audit date from changelog: 2020-04-21.
+- [21329] PeckShield-Audit-Report-KeeperDAOStaking-v1.0_1.pdf — no match: No explicit scope table; contracts extracted from findings targets.
+- [21330] PeckShield-kCompound.pdf — no match: The report explicitly lists KComptroller, CompoundVars, JITU, and KCompoundPosition as targets in findings. No other contracts are mentioned as in scope. The audit date is clearly stated on the cover page and in the document properties.
+- [21331] Quantstamp-kCompound.pdf — no match: Extracted contracts from scope, findings, file signatures, and code coverage table. Audit date from revised report date (2021-05-04).
+- [21332] KeeperDAO Liquidity Pool and HidingVault - Report.pdf — no match: Extracted contract names from scope, findings, file signatures, and code coverage sections. Audit date from cover page.
+- [24474] Manual audit seed — no match: The provided text is a GitHub directory listing of audit reports, not the actual audit report content. No contract names or audit date could be extracted.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| peckshield_final.pdf | KToken | unmatched — not counted | — | Target in findings PVE-001, PVE-003 | no |
+| peckshield_final.pdf | LiquidityPoolV1 | unmatched — not counted | — | Target in findings PVE-002, PVE-003, PVE-004, PVE-007, PVE-008 | no |
+| peckshield_final.pdf | MarketContractProxy | unmatched — not counted | — | Target in findings PVE-005, PVE-006 | no |
+| quantstamp_draft.pdf | CompoundKeeper | unmatched — not counted | — | mentioned in findings QSP-2, QSP-3, QSP-4, QSP-5, QSP-6, QSP-10, and test output | no |
+| quantstamp_draft.pdf | CoreKeeper | unmatched — not counted | — | mentioned in test output as CoreKeeperV1 | no |
+| quantstamp_draft.pdf | KToken | unmatched — not counted | — | mentioned in findings QSP-7 and test output | no |
+| quantstamp_draft.pdf | FlashLoanReceiver | unmatched — not counted | — | mentioned in findings QSP-3, QSP-10 and test output | no |
+| quantstamp_draft.pdf | KeeperRoles | unmatched — not counted | — | mentioned in finding QSP-8 | no |
+| quantstamp_draft.pdf | Compound | unmatched — not counted | — | mentioned in finding QSP-11 | no |
+| PeckShield-Audit-Report-KeeperDAOStaking-v1.0_1.pdf | KRoles | unmatched — not counted | — | Target in finding PVE-001 | no |
+| PeckShield-Audit-Report-KeeperDAOStaking-v1.0_1.pdf | CoordinationPaymentChannels | unmatched — not counted | — | Target in findings PVE-002 and PVE-003 | no |
+| PeckShield-kCompound.pdf | KComptroller | unmatched — not counted | — | Listed as target in findings PVE-001, PVE-004, PVE-005, PVE-008; described as a gateway contract in the report. | no |
+| PeckShield-kCompound.pdf | CompoundVars | unmatched — not counted | — | Listed as target in finding PVE-002; described as protocol-wide registry. | no |
+| PeckShield-kCompound.pdf | JITU | unmatched — not counted | — | Listed as target in finding PVE-007; described as gateway contract for users. | no |
+| PeckShield-kCompound.pdf | KCompoundPosition | unmatched — not counted | — | Mentioned in findings PVE-006 and PVE-007; described as managing compound positions. | no |
+| Quantstamp-kCompound.pdf | CompoundVars | unmatched — not counted | — | listed in scope and findings | no |
+| Quantstamp-kCompound.pdf | KCompound | unmatched — not counted | — | listed in scope and findings | no |
+| Quantstamp-kCompound.pdf | CompoundMigrator | unmatched — not counted | — | listed in scope and findings | no |
+| Quantstamp-kCompound.pdf | KCompoundPosition | unmatched — not counted | — | listed in scope and findings | no |
+| Quantstamp-kCompound.pdf | KComptroller | unmatched — not counted | — | listed in scope and findings | no |
+| Quantstamp-kCompound.pdf | JITU | unmatched — not counted | — | listed in scope and findings | no |
+| Quantstamp-kCompound.pdf | KFactory | unmatched — not counted | — | listed in scope (code coverage table) | no |
+| Quantstamp-kCompound.pdf | Interfaces | unmatched — not counted | — | listed in file signatures | no |
+| Quantstamp-kCompound.pdf | Tokens | unmatched — not counted | — | listed in file signatures | no |
+| Quantstamp-kCompound.pdf | Comptroller | unmatched — not counted | — | listed in file signatures | no |
+| Quantstamp-kCompound.pdf | Exponential | unmatched — not counted | — | listed in file signatures | no |
+| Quantstamp-kCompound.pdf | CToken | unmatched — not counted | — | listed in file signatures | no |
+| Quantstamp-kCompound.pdf | ComptrollerErrorReporter | unmatched — not counted | — | listed in file signatures | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | LiquidityPool | unmatched — not counted | — | listed in scope and findings | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | HidingVaultNFT | unmatched — not counted | — | listed in scope and findings | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | JITUCore | unmatched — not counted | — | listed in scope and findings | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | JITUCompound | unmatched — not counted | — | listed in scope and findings | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | KCompound | unmatched — not counted | — | listed in scope and findings | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | HidingVault | unmatched — not counted | — | listed in file signatures | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | Proxy | unmatched — not counted | — | listed in file signatures | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | LibHidingVault | unmatched — not counted | — | listed in file signatures | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | IJITUCompound | unmatched — not counted | — | listed in file signatures | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | LibCompound | unmatched — not counted | — | listed in file signatures | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | LibCToken | unmatched — not counted | — | listed in file signatures | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | IKCompound | unmatched — not counted | — | listed in file signatures | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | BorrowerProxy | unmatched — not counted | — | listed in code coverage | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | CanReclaimTokens | unmatched — not counted | — | listed in code coverage | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | KRoles | unmatched — not counted | — | listed in code coverage | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | Tokens | unmatched — not counted | — | listed in code coverage | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | GelatoJITU | unmatched — not counted | — | listed in code coverage | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | Gelatofied | unmatched — not counted | — | listed in code coverage | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | MockKCompound | unmatched — not counted | — | listed in code coverage | no |
+| KeeperDAO Liquidity Pool and HidingVault - Report.pdf | Compound | unmatched — not counted | — | listed in code coverage | no |
 
 ## Coverage Gaps
 
@@ -119,7 +203,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 14 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
@@ -127,7 +211,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 48 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=3, low=1, medium=3
 - Match method counts: n/a
 
 Zero-match audit list:

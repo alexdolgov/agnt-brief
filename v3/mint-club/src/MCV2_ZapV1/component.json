@@ -1,8 +1,16 @@
 {
   "component": "MCV2_ZapV1",
   "main_contract": "MCV2_ZapV1",
+  "source_entry_count": 29,
   "source_file_count": 29,
-  "deployment_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MCV2_ZapV1\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x91523b39813f3f4e406ece406d0beaaa9de251fa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x91523b39813f3f4e406ece406d0beaaa9de251fa",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "polygon",
@@ -28,7 +30,9 @@
       "address": "0x91523b39813f3f4e406ece406d0beaaa9de251fa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",
@@ -36,7 +40,9 @@
       "address": "0x91523b39813f3f4e406ece406d0beaaa9de251fa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
@@ -44,7 +50,9 @@
       "address": "0x91523b39813f3f4e406ece406d0beaaa9de251fa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

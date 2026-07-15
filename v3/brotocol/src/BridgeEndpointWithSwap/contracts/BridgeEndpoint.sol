@@ -17,6 +17,17 @@ import "@openzeppelin/contracts/utils/cryptography/EIP712.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 
+/**
+ * @title BridgeEndpoint
+ * @dev Base contract for bridge operations that handles token transfers and message passing
+ * between different chains. This contract provides core functionality for:
+ * - Token transfers with fee calculation
+ * - Message passing with or without tokens
+ * - Unwrapping tokens for recipients
+ * - Time-locked transfers for large amounts
+ * - Validator signature verification
+ * - Access control and security features
+ */
 contract BridgeEndpoint is
   Ownable,
   EIP712,
@@ -27,15 +38,31 @@ contract BridgeEndpoint is
   using ERC20Fixed for ERC20;
   using FixedPoint for uint256;
 
+  // @dev The registry contract that manages approved tokens, validators, and fees
   BridgeRegistry public immutable registry;
 
+  // @dev The address where tokens are pegged in
   address public pegInAddress;
+
+  // @dev Mapping of order hashes to unwrap order packages
   mapping(bytes32 => OrderPackage) public unwrapSent;
 
+  // @dev The time lock contract for large transfers
   ITimeLock public timeLock;
+
+  // @dev Global threshold for time-locked transfers
   uint256 public timeLockThreshold = 0;
+
+  // @dev Token-specific thresholds for time-locked transfers
   mapping(address => uint256) public timeLockThresholdByToken;
 
+  /**
+   * @dev Struct to store unwrap order information
+   * @param recipient The address that will receive the tokens
+   * @param token The token address to be unwrapped
+   * @param amount The amount of tokens to unwrap
+   * @param sent Whether the tokens have been sent
+   */
   struct OrderPackage {
     address recipient;
     address token;
@@ -43,12 +70,19 @@ contract BridgeEndpoint is
     bool sent;
   }
 
+  /**
+   * @dev Struct to store validator signature information
+   * @param orderHash The hash of the order being signed
+   * @param signer The address of the validator who signed
+   * @param signature The actual signature data
+   */
   struct SignaturePackage {
     bytes32 orderHash;
     address signer;
     bytes signature;
   }
 
+  // Events
   event SendMessageEvent(address indexed from, uint256 value, bytes payload);
   event SendMessageWithTokenEvent(
     address indexed from,
@@ -71,7 +105,12 @@ contract BridgeEndpoint is
     address token,
     uint256 timeLockThreshold
   );
+  event SetPegInAddressEvent(address pegInAddress);
 
+  /**
+   * @dev Modifier to ensure the token is approved in the registry
+   * @param token The token address to check
+   */
   modifier onlyApprovedToken(address token) {
     _require(
       registry.hasRole(registry.APPROVED_TOKEN(), token),
@@ -80,6 +119,9 @@ contract BridgeEndpoint is
     _;
   }
 
+  /**
+   * @dev Modifier to ensure the caller is an approved relayer
+   */
   modifier onlyApprovedRelayer() {
     _require(
       registry.hasRole(registry.RELAYER_ROLE(), msg.sender),
@@ -88,20 +130,24 @@ contract BridgeEndpoint is
     _;
   }
 
-  // modifier notContract() {
-  //   _require(
-  //     tx.origin == msg.sender ||
-  //       MultisigWallet(payable(owner())).isApproved(msg.sender),
-  //     Errors.NOT_CONTRACT
-  //   );
-  //   _;
-  // }
-
+  /**
+   * @dev Modifier to ensure the recipient is not on the watchlist
+   * @param recipient The address to check
+   */
   modifier notWatchlist(address recipient) {
     _require(!registry.watchlist(recipient), Errors.RECIPIENT_ON_WATCHLIST);
     _;
   }
 
+  /**
+   * @dev Constructor for BridgeEndpoint
+   * @param _owner The owner of the contract
+   * @param name The name of the contract
+   * @param version The version of the contract
+   * @param _registry The address of the registry contract
+   * @param _pegInAddress The address for pegging in tokens
+   * @param _timeLock The address of the time lock contract
+   */
   constructor(
     address _owner,
     string memory name,
@@ -120,15 +166,24 @@ contract BridgeEndpoint is
     _transferOwnership(_owner);
   }
 
-  // external functions
-
+  /**
+   * @dev Sends a message without tokens
+   * @param payload The message data to send
+   * @notice Only callable by allowlisted addresses
+   */
   function sendMessage(
     bytes calldata payload
   ) external payable nonReentrant whenNotPaused onlyAllowlisted {
     emit SendMessageEvent(msg.sender, msg.value, payload);
   }
 
-  // @dev amount must be in 18-digit fixed
+  /**
+   * @dev Sends a message with tokens
+   * @param token The token address to send
+   * @param amount The amount of tokens to send (in 18-digit fixed point)
+   * @param payload The message data to send
+   * @notice Only callable by allowlisted addresses with approved tokens
+   */
   function sendMessageWithToken(
     address token,
     uint256 amount,
@@ -154,28 +209,47 @@ contract BridgeEndpoint is
     // bytes memory encodedData = abi.encodeWithSelector(selector, destToken, destChainId, destAddress, amount);
   }
 
-  // read-only functions
-
+  /**
+   * @dev Returns the domain separator for EIP-712
+   */
   function domainSeparatorV4() external view returns (bytes32) {
     return _domainSeparatorV4();
   }
 
+  /**
+   * @dev Returns the hash of a typed data structure for EIP-712
+   * @param structHash The hash of the struct to be signed
+   */
   function hashTypedDataV4(bytes32 structHash) external view returns (bytes32) {
     return _hashTypedDataV4(structHash);
   }
 
-  // priviledged functions
-
+  /**
+   * @dev Sets the time lock contract address
+   * @param _timeLock The new time lock contract address
+   * @notice Only callable by the owner
+   */
   function setTimeLock(address _timeLock) public virtual onlyOwner {
     timeLock = ITimeLock(_timeLock);
     emit SetTimeLockEvent(_timeLock);
   }
 
+  /**
+   * @dev Sets the global time lock threshold
+   * @param _timeLockThreshold The new threshold value
+   * @notice Only callable by the owner
+   */
   function setTimeLockThreshold(uint256 _timeLockThreshold) external onlyOwner {
     timeLockThreshold = _timeLockThreshold;
     emit SetTimeLockThresholdEvent(timeLockThreshold);
   }
 
+  /**
+   * @dev Sets the time lock threshold for a specific token
+   * @param token The token address
+   * @param _timeLockThreshold The new threshold value
+   * @notice Only callable by the owner
+   */
   function setTimeLockThresholdByToken(
     address token,
     uint256 _timeLockThreshold
@@ -185,9 +259,26 @@ contract BridgeEndpoint is
     emit SetTimeLockThresholdByTokenEvent(token, timeLockThreshold);
   }
 
-  // send unwrapped tokens to user
-  // @dev salt should be tx hash of source chain
-  // @dev amount must be in 18-digit fixed
+  /**
+   * @dev Sets the peg-in address
+   * @param _pegInAddress The new peg-in address
+   * @notice Only callable by the owner
+   */
+  function setPegInAddress(address _pegInAddress) external onlyOwner {
+    _require(_pegInAddress != address(0), Errors.ZERO_ADDRESS);
+    pegInAddress = _pegInAddress;
+    emit SetPegInAddressEvent(_pegInAddress);
+  }
+
+  /**
+   * @dev Transfers tokens to be unwrapped for a recipient
+   * @param token The token address
+   * @param recipient The recipient address
+   * @param amount The amount of tokens (in 18-digit fixed point)
+   * @param salt The transaction hash from the source chain
+   * @param proofs Array of validator signatures
+   * @notice Only callable by approved relayers with approved tokens
+   */
   function transferToUnwrap(
     address token,
     address recipient,
@@ -200,7 +291,6 @@ contract BridgeEndpoint is
     nonReentrant
     whenNotPaused
     onlyApprovedToken(token)
-    // notContract
     notWatchlist(recipient)
   {
     bytes32 orderHash = _hashTypedDataV4(
@@ -236,10 +326,13 @@ contract BridgeEndpoint is
     } else {
       unwrapSent[orderHash] = OrderPackage(recipient, token, amount, false);
     }
-
     emit TransferToUnwrapEvent(orderHash, salt, recipient, token, amount);
   }
 
+  /**
+   * @dev Finalizes multiple unwrap operations
+   * @param orderHash Array of order hashes to finalize
+   */
   function finalizeUnwrap(
     bytes32[] calldata orderHash
   ) external nonReentrant whenNotPaused {
@@ -248,10 +341,18 @@ contract BridgeEndpoint is
     }
   }
 
+  /**
+   * @dev Pauses the contract
+   * @notice Only callable by the owner
+   */
   function pause() external onlyOwner {
     _pause();
   }
 
+  /**
+   * @dev Unpauses the contract
+   * @notice Only callable by the owner
+   */
   function unpause() external onlyOwner {
     _unpause();
   }
@@ -272,8 +373,35 @@ contract BridgeEndpoint is
     _removeAllowlist(_removed);
   }
 
+  /**
+   * @dev Updates the unwrapSent mapping for a given order hash
+   * @param orderHash The hash of the order to update
+   * @param recipient The address that will receive the tokens
+   * @param token The token address to be unwrapped
+   * @param amount The amount of tokens to unwrap
+   * @param sent Whether the tokens have been sent
+   * @notice Only callable by the owner
+   */
+  function setUnwrapSent(
+    bytes32 orderHash,
+    address recipient,
+    address token,
+    uint256 amount,
+    bool sent
+  ) external onlyOwner {
+    _require(registry.orderSent(orderHash), Errors.INVALID_ORDER);
+
+    unwrapSent[orderHash] = OrderPackage(recipient, token, amount, sent);
+  }
+
   // internal functions
 
+  /**
+   * @dev Internal function to handle token transfers with fee calculation
+   * @param token The token address
+   * @param amount The amount of tokens
+   * @return feeDeducted The amount of fees deducted
+   */
   function _transfer(
     address token,
     uint256 amount
@@ -305,6 +433,11 @@ contract BridgeEndpoint is
     }
   }
 
+  /**
+   * @dev Internal function to validate an order with validator signatures
+   * @param orderHash The hash of the order
+   * @param proofs Array of validator signatures
+   */
   function _validateOrder(
     bytes32 orderHash,
     SignaturePackage[] calldata proofs
@@ -336,6 +469,10 @@ contract BridgeEndpoint is
     registry.setOrderSent(orderHash, true);
   }
 
+  /**
+   * @dev Internal function to finalize a single unwrap operation
+   * @param orderHash The hash of the order to finalize
+   */
   function _finalizeUnwrap(bytes32 orderHash) internal {
     OrderPackage memory orderPackage = unwrapSent[orderHash];
     _require(orderPackage.recipient != address(0), Errors.INVALID_ORDER);

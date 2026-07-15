@@ -1,7 +1,15 @@
 {
   "component": "YAMDelegator",
   "main_contract": "YAMDelegator",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/YAMDelegator\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x0aacfbec6a24756c20d41914f2caba817c0d8521",
       "is_proxy": true,
       "implementation_address": "0x27c5736b49b89d4765d03734a0a51c461f09672d",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405002"
     }
   ]
 }

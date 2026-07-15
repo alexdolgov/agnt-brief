@@ -1,10 +1,20 @@
 {
   "component": "UniswapV2Router02",
   "main_contract": "UniswapV2Router02",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UniswapV2Router02\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/solidproof/projects/blob/main/2023/RocketSwap/SmartContract_Audit_Solidproof_RocketSwap.pdf"
+  ],
   "addresses": [
     {
       "chain": "base",
@@ -12,7 +22,9 @@
       "address": "0x4cf76043b3f97ba06917cbd90f9e3a2aac1b306e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403977"
     }
   ]
 }

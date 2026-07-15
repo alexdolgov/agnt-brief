@@ -18,14 +18,14 @@ library Hash {
     );
 
     bytes32 private constant _EXECUTION_DATA_HASH = keccak256(
-        "ExecutionData(OfferExecution[] offerExecution,uint256 loanId,address nftCollateralAddress,uint256 tokenId,uint256 duration,uint256 expirationTime,address principalReceiver,bytes callbackData)LoanOffer(uint256 offerId,address lender,uint256 fee,uint256 capacity,address nftCollateralAddress,uint256 nftCollateralTokenId,address principalAddress,uint256 principalAmount,uint256 aprBps,uint256 expirationTime,uint256 duration,uint256 maxSeniorRepayment,OfferValidator[] validators)OfferExecution(LoanOffer offer,uint256 amount,bytes lenderOfferSignature)OfferValidator(address validator,bytes arguments)"
+        "ExecutionData(OfferExecution[] offerExecution,uint256 tokenId,uint256 duration,uint256 expirationTime,address principalReceiver,bytes callbackData)LoanOffer(uint256 offerId,address lender,uint256 fee,uint256 capacity,address nftCollateralAddress,uint256 nftCollateralTokenId,address principalAddress,uint256 principalAmount,uint256 aprBps,uint256 expirationTime,uint256 duration,uint256 maxSeniorRepayment,OfferValidator[] validators)OfferExecution(LoanOffer offer,uint256 amount,bytes lenderOfferSignature)OfferValidator(address validator,bytes arguments)"
     );
 
     bytes32 private constant _SIGNABLE_REPAYMENT_DATA_HASH =
         keccak256("SignableRepaymentData(uint256 loanId,bytes callbackData,bool shouldDelegate)");
 
     bytes32 private constant _MULTI_SOURCE_LOAN_HASH = keccak256(
-        "Loan(address borrower,uint256 nftCollateralTokenId,address nftCollateralAddress,address principalAddress,uint256 principalAmount,uint256 startTime,uint256 duration,Tranche[] tranche,uint256 protocolFee)Tranche(uint256 loanId,uint256 floor,uint256 principalAmount,address lender,uint256 accruedInterest,uint256 startTime,uint256 aprBps)"
+        "Loan(address borrower,uint256 nftCollateralTokenId,address nftCollateralAddress,address principalAddress,uint256 principalAmount,uint256 startTime,uint256 duration,Tranche[] tranche,uint256 protocolFee)Source(uint256 loanId,address lender,uint256 principalAmount,uint256 accruedInterest,uint256 startTime,uint256 aprBps)Tranche(uint256 floor,uint256 principalAmount,Source[] source)"
     );
 
     bytes32 private constant _TRANCHE_HASH = keccak256(
@@ -89,8 +89,6 @@ library Hash {
             abi.encode(
                 _EXECUTION_DATA_HASH,
                 keccak256(encodedOfferExecution),
-                _executionData.loanId,
-                _executionData.nftCollateralAddress,
                 _executionData.tokenId,
                 _executionData.duration,
                 _executionData.expirationTime,

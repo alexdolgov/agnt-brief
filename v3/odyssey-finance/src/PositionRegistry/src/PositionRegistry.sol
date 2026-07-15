@@ -1,11 +1,10 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.29;
+pragma solidity 0.8.23;
 
 import {OwnableUpgradeable} from "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import {Create2} from "@openzeppelin/contracts/utils/Create2.sol";
 import {ERC1967Proxy} from "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
 import {EnumerableSet} from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
-import {SwapAggregator} from "src/components/SwapAggregator.sol";
 
 /// @title Odyssey positions' registry
 /// @notice Allow users to deploy new positions from a set of strategies
@@ -39,15 +38,6 @@ contract PositionRegistry is OwnableUpgradeable {
     /// @notice Emitted when a keeper is removed
     event KeeperRemoved(address indexed keeper);
 
-    /// @notice Emitted when calldata is added to whitelist
-    event CalldataAddedToWhitelist(address indexed target, bytes callData);
-
-    /// @notice Emitted when calldata is removed from whitelist
-    event CalldataRemovedFromWhitelist(address indexed target, bytes callData);
-
-    /// @notice Emitted when the swap aggregator is updated
-    event SwapAggregatorUpdated(address indexed oldSwapAggregator, address indexed newSwapAggregator);
-
     error AddressIsNull();
     error StrategyAlreadyExists();
     error StrategyDoesNotExist();
@@ -61,7 +51,6 @@ contract PositionRegistry is OwnableUpgradeable {
     error CouldNotRemoveKeeper();
     error ImplementationAlreadyExists(uint256 at);
     error ImplementationDoesNotExist();
-    error InvalidImplementation();
 
     struct Strategy {
         address[] implementations;
@@ -79,9 +68,6 @@ contract PositionRegistry is OwnableUpgradeable {
         EnumerableSet.AddressSet _positions;
         mapping(address owner => EnumerableSet.AddressSet positions) _positionsOf;
         EnumerableSet.AddressSet _keepers;
-        // target => selector => calldataHash => isWhitelisted
-        mapping(address => mapping(bytes4 => mapping(bytes32 => bool))) _allowedCalldata;
-        SwapAggregator _swapAggregator;
     }
 
     bytes32 private constant PositionRegistryStorageLocation =
@@ -222,38 +208,6 @@ contract PositionRegistry is OwnableUpgradeable {
         if (_strategy.implementations[_index] != implementation_) revert ImplementationDoesNotExist();
     }
 
-    /// @notice Check if calldata is whitelisted for execution.
-    /// @param target_ The target contract address
-    /// @param callData_ The calldata to execute
-    /// @return true if the calldata is whitelisted, false otherwise
-    function isCalldataWhitelisted(address target_, bytes calldata callData_) external view returns (bool) {
-        PositionRegistryStorage storage $ = _getPositionRegistryStorage();
-
-        // Extract the 4-byte function selector from calldata
-        bytes4 selector_ = callData_.length >= 4 ? bytes4(callData_) : bytes4(0);
-
-        // Hash the calldata parameters (excluding selector) for mapping key
-        bytes32 dataHash = callData_.length > 4 ? keccak256(callData_[4:]) : keccak256("");
-        bytes32 emptyHash = keccak256("");
-
-        // Check if target + selector + calldata is whitelisted
-        if ($._allowedCalldata[target_][selector_][dataHash]) {
-            return true;
-        }
-
-        // Check if target + selector is whitelisted (ignoring calldata params)
-        if ($._allowedCalldata[target_][selector_][emptyHash]) {
-            return true;
-        }
-
-        // Check if target is whitelisted for any calldata (empty calldata case)
-        if ($._allowedCalldata[target_][bytes4(0)][emptyHash]) {
-            return true;
-        }
-
-        return false;
-    }
-
     /// @notice Get the positions of an account
     /// @dev This function is gas-intensive and should be used off-chain only
     /// @param account_ The position(s) owner
@@ -276,13 +230,6 @@ contract PositionRegistry is OwnableUpgradeable {
     function feeCollector() public view returns (address _feeCollector) {
         PositionRegistryStorage storage $ = _getPositionRegistryStorage();
         return $._feeCollector;
-    }
-
-    /// @notice Get swap aggregator
-    /// @return The swap aggregator
-    function swapAggregator() public view returns (SwapAggregator) {
-        PositionRegistryStorage storage $ = _getPositionRegistryStorage();
-        return $._swapAggregator;
     }
 
     /// @notice Check if a position exists
@@ -403,19 +350,6 @@ contract PositionRegistry is OwnableUpgradeable {
             if (newImplementation_ == _strategy.implementations[i]) revert ImplementationAlreadyExists(i);
         }
 
-        bytes memory _sig = abi.encodeWithSignature("NAME()");
-        // Verify that strategyId_, stored implementations and newImplementation_ are related.
-        // call NAME() on new implementation, revert if fail.
-        (bool _newSuccess, bytes memory _newName) = newImplementation_.staticcall(_sig);
-        if (!_newSuccess) revert InvalidImplementation();
-
-        address _oldImpl = _strategy.implementations[_length - 1];
-        // call NAME() from last stored, aka old, implementation
-        (bool _oldSuccess, bytes memory _oldName) = _oldImpl.staticcall(_sig);
-        // if succeed then name from both implementations must match.
-        // if oldImpl has no NAME() function then call will fail and we can skip the check for backward compatibility.
-        if (_oldSuccess && keccak256(_oldName) != keccak256(_newName)) revert InvalidImplementation();
-
         address _currentFeePolicy = _strategy.feePolicy;
 
         if (strategyExists(newImplementation_, _currentFeePolicy)) revert StrategyAlreadyExists();
@@ -450,41 +384,5 @@ contract PositionRegistry is OwnableUpgradeable {
         $._feeCollector = newFeeCollector_;
 
         emit FeeCollectorUpdated(_current, newFeeCollector_);
-    }
-
-    /// @notice Update swap aggregator
-    function updateSwapAggregator(SwapAggregator newSwapAggregator_) external onlyOwner {
-        if (address(newSwapAggregator_) == address(0)) revert AddressIsNull();
-
-        PositionRegistryStorage storage $ = _getPositionRegistryStorage();
-        SwapAggregator _current = $._swapAggregator;
-        $._swapAggregator = newSwapAggregator_;
-
-        emit SwapAggregatorUpdated(address(_current), address(newSwapAggregator_));
-    }
-
-    /// @notice Add calldata to whitelist
-    /// Allows to call any function of given target contract or allows to call specific target and selector only.
-    /// For more strict control, add function arguments in whitelist
-    /// @param target_ The target contract address
-    /// @param calldata_ The calldata (empty means any calldata)
-    function addCalldataToWhitelist(address target_, bytes calldata calldata_) external onlyOwner {
-        PositionRegistryStorage storage $ = _getPositionRegistryStorage();
-        bytes4 selector_ = calldata_.length >= 4 ? bytes4(calldata_) : bytes4(0);
-        bytes32 calldataHash = calldata_.length > 4 ? keccak256(calldata_[4:]) : keccak256("");
-        $._allowedCalldata[target_][selector_][calldataHash] = true;
-        emit CalldataAddedToWhitelist(target_, calldata_);
-    }
-
-    /// @notice Remove calldata from whitelist
-    /// @param target_ The target contract address
-    /// @param calldata_ The calldata
-    function removeCalldataFromWhitelist(address target_, bytes calldata calldata_) external onlyOwner {
-        PositionRegistryStorage storage $ = _getPositionRegistryStorage();
-        bytes4 selector_ = calldata_.length >= 4 ? bytes4(calldata_) : bytes4(0);
-        bytes32 calldataHash = calldata_.length > 4 ? keccak256(calldata_[4:]) : keccak256("");
-        $._allowedCalldata[target_][selector_][calldataHash] = false;
-
-        emit CalldataRemovedFromWhitelist(target_, calldata_);
     }
 }

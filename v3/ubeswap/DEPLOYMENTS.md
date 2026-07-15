@@ -1,30 +1,18 @@
 # ubeswap — deployments
 
-27 verified deployment(s) across 27 component(s).
+15 verified deployment(s) across 15 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| chain-42220 | `0x1d8c564cce485c2f053ef32652e4dba00d4265c4` | TickLens | impl | live | no |
 | chain-42220 | `0x388d611a57ac15dcc1b937f287e5e908ba5ff5c9` | VotableStakingRewards | impl | live | no |
 | chain-42220 | `0x3924c6b0003135683b59bab63c2b4a5631a6ae73` | UbeEcosystemVesting | impl | live | no |
 | chain-42220 | `0x3c255ded9b25f0bfb4ef1d14234bd2514d7a7a0d` | UniversalRouter | impl | live | no |
-| chain-42220 | `0x3cdb7098842621c22721f8c576d49dc366555167` | GnosisSafeProxy | impl | live | no |
-| chain-42220 | `0x4a27c059fd7e383854ea7de6be9c390a795f6ee3` | Create2Deployer | impl | live | no |
 | chain-42220 | `0x4d446f092461a0bfdebc72abc831541ca949d63f` | UniswapInterfaceMulticall | impl | live | no |
-| chain-42220 | `0x534408e91d755a0d898e1c508e987e8d0615b52c` | StakingRewards | impl | live | no |
-| chain-42220 | `0x5c76245413c6c4cbe7a3fae395a8f7af06fdcd65` | NonfungiblePositionManager | impl | live | no |
-| chain-42220 | `0x5cde4d414f27e331b6738f783bc84c5507d8ee7a` | SwapRouter02 | impl | live | no |
-| chain-42220 | `0x62d5b84be28a183abb507e125b384122d2c25fae` | UniswapV2Pair | impl | live | no |
-| chain-42220 | `0x65415d0bde9249e185d433a08823fd7fa7ebec66` | V3Migrator | impl | live | no |
+| chain-42220 | `0x62d5b84be28a183abb507e125b384122d2c25fae` | UniswapV2Factory | impl | live | no |
 | chain-42220 | `0x67fea58d5a5a4162ced847e13c2c81c73bf8aec4` | UniswapV3Factory | impl | live | no |
-| chain-42220 | `0x6bd9193bb82fdf663ec6aea0a3baf2ad0170e694` | ProxyAdmin | impl | live | no |
-| chain-42220 | `0x6e23691e355703fde907aa97fe9acabb2e4ffe67` | TransparentUpgradeableProxy | impl | live | no |
-| chain-42220 | `0x71e26d0e519d14591b9de9a0fe9513a398101490` | VotingPower | impl | live | no |
+| chain-42220 | `0x71e26d0e519d14591b9de9a0fe9513a398101490` | UbeToken | impl | live | no |
 | chain-42220 | `0x74d4983a29044b68aadd2bdb86bc82cf8c6c8b5c` | UbeTeamVesting | impl | live | no |
-| chain-42220 | `0x799a23da264a157db6f9c02be62f82ce8d602a45` | StakingRewardsCapped | impl | live | no |
 | chain-42220 | `0x936f5b0164b08bf0e123cdf356118343342fdaf6` | Timelock | impl | live | no |
-| chain-42220 | `0x9dfc135e0984fe88acd45d68e62a73e98dbb7a36` | UbeConvert | impl | live | no |
-| chain-42220 | `0xa6e9069cb055a425eb41d185b740b22ec8f51853` | UbeswapV3Farming | impl | live | no |
 | chain-42220 | `0xa8864a18fab1ed233ce1921f329a6a92dbcca56f` | QuoterV2 | impl | live | no |
 | chain-42220 | `0xae4634be8c69ff602e6dd9a1e3c5cecca3502968` | UbeMiningReserveVesting | impl | live | no |
 | chain-42220 | `0xd355a00220fba16b69cd8c4fbe16e02ca855f928` | RomulusDelegator | proxy | live | no |

@@ -51,7 +51,7 @@ contract Minter is IMinter {
 
     /// @inheritdoc IMinter
     function kickoff(
-        address _emissionsToken,
+        address _shadow,
         address _voter,
         uint256 _initialWeeklyEmissions,
         uint256 _initialMultiplier,
@@ -63,8 +63,8 @@ contract Minter is IMinter {
         require(address(shadow) == address(0), STARTED());
         require(_xShadow != address(0), INVALID_CONTRACT());
         require(_voter != address(0), INVALID_CONTRACT());
-        require(_emissionsToken != address(0), INVALID_CONTRACT());
-        shadow = IERC20Extended(_emissionsToken);
+        require(_shadow != address(0), INVALID_CONTRACT());
+        shadow = IERC20Extended(_shadow);
         xShadow = _xShadow;
         voter = _voter;
         /// @dev starting emissions
@@ -94,7 +94,7 @@ contract Minter is IMinter {
             if (weeklyEmissions > 0) {
                 /// @dev mint emissions to the Minter contract
                 shadow.mint(address(this), _weeklyEmissions);
-                /// @dev approvals for emissionsToken on voter
+                /// @dev approvals for shadow on voter
                 shadow.approve(voter, _weeklyEmissions);
 
                 /// @dev notify emissions to the voter contract

@@ -1,8 +1,27 @@
 {
   "component": "HoprTicketPriceOracle",
   "main_contract": "HoprTicketPriceOracle",
-  "source_file_count": 1,
-  "deployment_count": 15,
+  "source_entry_count": 3,
+  "source_file_count": 3,
+  "source_path_remaps": [
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-e985b3373675-Ownable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-7fa79d8b45c2-Context.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HoprTicketPriceOracle\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,63 +31,9 @@
       "address": "0x147899ca57111d9081df125c2bcbd839981f04c2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x27de67e72a57d18e99d0828a31298d4cc1c43d46",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x281a91fea199a3bab5d7d5f05833b257e2fd7741",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x344f8dd6dbcd5bc0b396ddd47f20fdc9a89c3c90",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x442df1d946303fb088c9377eefdaea84146da0a6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x46aa0d83b8a28005580ae83477056f4ada9afa2f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x4dd10ea363323935b933778f5d869d87747c7b44",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x624af123a0149670848fa95e972b35ffee6a48fb",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394971"
     },
     {
       "chain": "gnosis",
@@ -76,7 +41,9 @@
       "address": "0x95566efb62b7d1e95a9ba05e1e43042a95da1e42",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394986"
     },
     {
       "chain": "gnosis",
@@ -84,47 +51,9 @@
       "address": "0xca2c60433ec6a10ddeabbbe3ce7f9737b1a0628c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0xca5656fe6f2d847aca32cf5f38e51d2054ca1273",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0xca9559e2fba20bcdf455879b17158a28f26f6b39",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0xcffe25caf9b1cca3cc4b54842a4e0e520a05ae17",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0xf69a919baf23e16a83fcebb56f6b50602a91fd6e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0xfa251d4c367683d6181531afd5964e660acf43a0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394988"
     }
   ]
 }

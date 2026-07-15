@@ -1,50 +1,38 @@
 {
   "component": "SpeedMarketsAMM-2",
   "main_contract": "SpeedMarketsAMM",
-  "source_file_count": 29,
-  "deployment_count": 5,
+  "source_entry_count": 25,
+  "source_file_count": 25,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SpeedMarketsAMM-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xa496d9b5ddae8e6deda54c6d38eca7f91a138e9a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x92a131b93068c4abf20b42e868ea5330ec4c9dfe",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x2f4d2293aaf52fbb98fd961d26db4d65c9922d9c",
+      "address": "0x0caeac5dc4afaaa8993e16c2eafe3c0b176c7c79",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xda084487e0cab572aae5e629a3a526bfe9bf031f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x45155760c15d5cc8648229557e8ed77f240faa32",
+      "address": "0x659b8efb8f42084b9713b65fe8545acaba303d82",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

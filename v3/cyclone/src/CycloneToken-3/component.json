@@ -1,7 +1,66 @@
 {
   "component": "CycloneToken-3",
   "main_contract": "CycloneToken",
+  "source_entry_count": 10,
   "source_file_count": 10,
+  "source_path_remaps": [
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/lifecycle/Pausable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-14d917d00401-Pausable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/math/SafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-32d7b65be9a9-SafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/ownership/Ownable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-7aff6c3b1c4f-Ownable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/token/BasicToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-20fe60921cf0-BasicToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/token/CycloneToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-279417599f27-CycloneToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/token/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-c40de834baea-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/token/IERC20Basic.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-b555b44e83cb-IERC20Basic.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/token/IMintableToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-396195b41525-IMintableToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/token/ShadowToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-7069c7d0dfc9-ShadowToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/token/StandardToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-e6e87c61c80d-StandardToken.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CycloneToken-3\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +71,9 @@
       "address": "0xcfb54a6d2da14abecd231174fc5735b4436965d8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393343"
     }
   ]
 }

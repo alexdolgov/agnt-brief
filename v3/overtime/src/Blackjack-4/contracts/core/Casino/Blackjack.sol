@@ -393,7 +393,7 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
             return 0;
         }
 
-        requestId = _requestRandomWords(10);
+        requestId = _requestRandomWords(7);
         _registerVrf(handId, hand, requestId, VrfAction.STAND, HandStatus.AWAITING_STAND);
         emit StandRequested(handId, requestId, msg.sender);
     }
@@ -444,12 +444,12 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
             } else {
                 ss.amount2 = activeAmount * 2;
                 ss.isDoubled2 = true;
-                requestId = _requestRandomWords(11); // card + dealer
+                requestId = _requestRandomWords(7); // card + dealer
             }
         } else {
             hand.amount = activeAmount * 2;
             hand.isDoubledDown = true;
-            requestId = _requestRandomWords(11);
+            requestId = _requestRandomWords(7);
         }
 
         _registerVrf(handId, hand, requestId, VrfAction.DOUBLE_DOWN, HandStatus.AWAITING_DOUBLE);
@@ -497,8 +497,8 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
         isSplit[handId] = true;
 
         // 2 words for normal split (one second card per hand).
-        // 12 words for ace split: 2 player cards + 1 dealer hidden + 9 dealer draws (auto-resolve).
-        uint32 numWords = aceSplit ? 12 : 2;
+        // 9 words for ace split: 2 player cards + 1 dealer hidden + 6 dealer draws (auto-resolve).
+        uint32 numWords = aceSplit ? 9 : 2;
         requestId = _requestRandomWords(numWords);
 
         _registerVrf(handId, hand, requestId, VrfAction.SPLIT, HandStatus.AWAITING_SPLIT);
@@ -717,10 +717,9 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
             }
         }
 
-        // Dealer plays using randomWords[1..]. Production requests 11 words (1 player card + 10 dealer).
-        uint256 dealerLen = randomWords.length - 1;
-        uint256[] memory dealerWords = new uint256[](dealerLen);
-        for (uint i; i < dealerLen; ++i) {
+        // Dealer plays using randomWords[1..6]
+        uint256[] memory dealerWords = new uint256[](6);
+        for (uint i; i < 6; ++i) {
             dealerWords[i] = randomWords[i + 1];
         }
         _dealerPlayAndResolveFromMemory(handId, hand, dealerWords);
@@ -743,11 +742,9 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
         ++ss.player2CardCount;
 
         if (ss.isAceSplit) {
-            // One-card rule: both hands are final. Play dealer using words 2.. Production requests 12 words
-            // (2 player second cards + 10 dealer: 1 hidden + up to 9 draws).
-            uint256 dealerLen = randomWords.length - 2;
-            uint256[] memory dealerWords = new uint256[](dealerLen);
-            for (uint i; i < dealerLen; ++i) {
+            // One-card rule: both hands are final. Play dealer using words 2..8 (7 words).
+            uint256[] memory dealerWords = new uint256[](7);
+            for (uint i; i < 7; ++i) {
                 dealerWords[i] = randomWords[i + 2];
             }
             _dealerPlayAndResolveFromMemory(handId, hand, dealerWords);

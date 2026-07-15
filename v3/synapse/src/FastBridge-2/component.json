@@ -1,7 +1,15 @@
 {
   "component": "FastBridge-2",
   "main_contract": "FastBridge",
+  "source_entry_count": 18,
   "source_file_count": 18,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FastBridge-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x34f52752975222d5994c206ce08c1d5b329f24dd",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400141"
     },
     {
       "chain": "blast",
@@ -20,7 +30,9 @@
       "address": "0x34f52752975222d5994c206ce08c1d5b329f24dd",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400144"
     }
   ]
 }

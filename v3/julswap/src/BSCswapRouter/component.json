@@ -1,10 +1,20 @@
 {
   "component": "BSCswapRouter",
   "main_contract": "BSCswapRouter",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BSCswapRouter\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/JulSwap/audits/blob/main/25022021%20JULSWAP_SC_Audit_Report.pdf"
+  ],
   "addresses": [
     {
       "chain": "bsc",
@@ -12,7 +22,9 @@
       "address": "0xbd67d157502a23309db761c41965600c2ec788b2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403287"
     }
   ]
 }

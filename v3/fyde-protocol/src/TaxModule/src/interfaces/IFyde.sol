@@ -6,6 +6,10 @@ import {RequestData, RebalanceParam, ProcessParam, AssetInfo} from "src/core/Str
 interface IFyde {
   function protocolData() external view returns (uint256, uint72, uint16, uint48, uint72, uint48);
 
+  function addAssets(address[] calldata _assets, address[] calldata _uniswapPools) external;
+
+  function setTargetConcentrations(uint72[] calldata _targetConcentrations) external;
+
   function assetInfo(address) external view returns (AssetInfo memory);
 
   function isAnyNotSupported(address[] calldata _assets) external view returns (address);

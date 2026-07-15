@@ -1,0 +1,19 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "beta-finance",
+  "missing": [
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x06f12b17d97ef27152b68cba208e3415ea65369b",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x9136dfac5435cd0bc627b9400415a19690134a63",
+      "canonical_source_address": null
+    }
+  ]
+}

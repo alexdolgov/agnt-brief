@@ -1,34 +1,30 @@
 {
   "component": "LeverageTransformer-2",
   "main_contract": "LeverageTransformer",
+  "source_entry_count": 37,
   "source_file_count": 37,
-  "deployment_count": 3,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LeverageTransformer-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Revert-Lend-v1.0.pdf"
+  ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x79a7dba256317bdd84a4f9aeeb7fb0f7f9f079a5",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe5047b321071b939d48ae8aa34770c9838bb25e8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xaa740d62c2fdfdf7578fffcc95884d636115c0eb",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xfc3f986c78ebf6abc031106feac25cd53db30aa1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398492"
     }
   ]
 }

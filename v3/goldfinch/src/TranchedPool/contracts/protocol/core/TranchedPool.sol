@@ -3,135 +3,135 @@
 pragma solidity 0.6.12;
 pragma experimental ABIEncoderV2;
 
-import "@openzeppelin/contracts/drafts/IERC20Permit.sol";
-import "@openzeppelin/contracts-ethereum-package/contracts/math/Math.sol";
-import "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol";
+import {IERC20Permit} from "@openzeppelin/contracts/drafts/IERC20Permit.sol";
+import {Math} from "@openzeppelin/contracts-ethereum-package/contracts/math/Math.sol";
+import {SafeMath} from "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol";
+import {ITranchedPool} from "../../interfaces/ITranchedPool.sol";
+import {ITranchedPool} from "../../interfaces/ITranchedPool.sol";
+import {IRequiresUID} from "../../interfaces/IRequiresUID.sol";
+import {IERC20withDec} from "../../interfaces/IERC20withDec.sol";
+import {ICreditLine} from "../../interfaces/ICreditLine.sol";
+import {IBackerRewards} from "../../interfaces/IBackerRewards.sol";
+import {IPoolTokens} from "../../interfaces/IPoolTokens.sol";
+import {IVersioned} from "../../interfaces/IVersioned.sol";
+import {ISchedule} from "../../interfaces/ISchedule.sol";
+import {GoldfinchConfig} from "./GoldfinchConfig.sol";
+import {BaseUpgradeablePausable} from "./BaseUpgradeablePausable.sol";
+import {ConfigHelper} from "./ConfigHelper.sol";
+import {SafeERC20Transfer} from "../../library/SafeERC20Transfer.sol";
+import {TranchingLogic} from "./TranchingLogic.sol";
 
-import "../../interfaces/ITranchedPool.sol";
-import "../../interfaces/IERC20withDec.sol";
-import "../../interfaces/IV2CreditLine.sol";
-import "../../interfaces/IPoolTokens.sol";
-import "./GoldfinchConfig.sol";
-import "./BaseUpgradeablePausable.sol";
-import "./ConfigHelper.sol";
-import "../../external/FixedPoint.sol";
-import "../../library/SafeERC20Transfer.sol";
-
-contract TranchedPool is BaseUpgradeablePausable, ITranchedPool, SafeERC20Transfer {
+/// @title The main contract to faciliate lending. Backers and the Senior Pool fund the loan
+///   through this contract. The borrower draws down on and pays back a loan through this contract.
+/// @author Warbler Labs
+contract TranchedPool is BaseUpgradeablePausable, ITranchedPool, IRequiresUID, IVersioned {
   GoldfinchConfig public config;
+
   using ConfigHelper for GoldfinchConfig;
-  using FixedPoint for FixedPoint.Unsigned;
-  using FixedPoint for uint256;
+  using TranchingLogic for ITranchedPool.PoolSlice;
+  using TranchingLogic for ITranchedPool.TrancheInfo;
+  using SafeERC20Transfer for IERC20withDec;
 
   bytes32 public constant LOCKER_ROLE = keccak256("LOCKER_ROLE");
-  uint256 public constant FP_SCALING_FACTOR = 1e18;
-  uint256 public constant SECONDS_PER_DAY = 60 * 60 * 24;
-  uint256 public constant ONE_HUNDRED = 100; // Need this because we cannot call .div on a literal 100
+  bytes32 public constant SENIOR_ROLE = keccak256("SENIOR_ROLE");
+  uint8 internal constant MAJOR_VERSION = 1;
+  uint8 internal constant MINOR_VERSION = 0;
+  uint8 internal constant PATCH_VERSION = 0;
+
+  ICreditLine public override creditLine;
+  uint256 public override createdAt;
   uint256 public juniorFeePercent;
   bool public drawdownsPaused;
+  uint256[] public allowedUIDTypes;
+  uint256 public totalDeployed;
+  uint256 public fundableAt;
 
-  TrancheInfo internal seniorTranche;
-  TrancheInfo internal juniorTranche;
+  mapping(uint256 => ITranchedPool.PoolSlice) internal _poolSlices;
 
-  event DepositMade(address indexed owner, uint256 indexed tranche, uint256 indexed tokenId, uint256 amount);
-  event WithdrawalMade(
-    address indexed owner,
-    uint256 indexed tranche,
-    uint256 indexed tokenId,
-    uint256 interestWithdrawn,
-    uint256 principalWithdrawn
-  );
+  /// @inheritdoc ITranchedPool
+  uint256 public override numSlices;
 
-  event PaymentApplied(
-    address indexed payer,
-    address indexed pool,
-    uint256 interestAmount,
-    uint256 principalAmount,
-    uint256 remainingAmount,
-    uint256 reserveAmount
-  );
-  event SharePriceUpdated(
-    address indexed pool,
-    uint256 indexed tranche,
-    uint256 principalSharePrice,
-    int256 principalDelta,
-    uint256 interestSharePrice,
-    int256 interestDelta
-  );
-  event ReserveFundsCollected(address indexed from, uint256 amount);
-  event CreditLineMigrated(address indexed oldCreditLine, address indexed newCreditLine);
-  event DrawdownMade(address indexed borrower, uint256 amount);
-  event DrawdownsPaused(address indexed pool);
-  event DrawdownsUnpaused(address indexed pool);
-  event EmergencyShutdown(address indexed pool);
-
+  /// @inheritdoc ITranchedPool
   function initialize(
     address _config,
     address _borrower,
     uint256 _juniorFeePercent,
     uint256 _limit,
     uint256 _interestApr,
-    uint256 _paymentPeriodInDays,
-    uint256 _termInDays,
-    uint256 _lateFeeApr
+    ISchedule _schedule,
+    uint256 _lateFeeApr,
+    uint256 _fundableAt,
+    uint256[] calldata _allowedUIDTypes
   ) public override initializer {
-    require(
-      address(_config) != address(0) && address(_borrower) != address(0),
-      "Config and borrower addresses cannot be empty"
-    );
+    require(address(_config) != address(0) && address(_borrower) != address(0), "ZERO");
+    require(_juniorFeePercent <= 100, "JF");
 
     config = GoldfinchConfig(_config);
     address owner = config.protocolAdminAddress();
-    require(owner != address(0), "Owner address cannot be empty");
     __BaseUpgradeablePausable__init(owner);
-    seniorTranche = TrancheInfo({
-      id: uint256(ITranchedPool.Tranches.Senior),
-      principalSharePrice: usdcToSharePrice(1, 1),
-      interestSharePrice: 0,
-      principalDeposited: 0,
-      lockedUntil: 0
-    });
-    juniorTranche = TrancheInfo({
-      id: uint256(ITranchedPool.Tranches.Junior),
-      principalSharePrice: usdcToSharePrice(1, 1),
-      interestSharePrice: 0,
-      principalDeposited: 0,
-      lockedUntil: 0
-    });
-    createAndSetCreditLine(_borrower, _limit, _interestApr, _paymentPeriodInDays, _termInDays, _lateFeeApr);
+    _initializeNextSlice(_fundableAt);
+    _createAndSetCreditLine(_borrower, _limit, _interestApr, _schedule, _lateFeeApr);
 
     createdAt = block.timestamp;
     juniorFeePercent = _juniorFeePercent;
+    if (_allowedUIDTypes.length == 0) {
+      uint256[1] memory defaultAllowedUIDTypes = [config.getGo().ID_TYPE_0()];
+      allowedUIDTypes = defaultAllowedUIDTypes;
+    } else {
+      allowedUIDTypes = _allowedUIDTypes;
+    }
 
     _setupRole(LOCKER_ROLE, _borrower);
     _setupRole(LOCKER_ROLE, owner);
     _setRoleAdmin(LOCKER_ROLE, OWNER_ROLE);
+    _setRoleAdmin(SENIOR_ROLE, OWNER_ROLE);
 
-    // Unlock self for infinite amount
-    bool success = config.getUSDC().approve(address(this), uint256(-1));
-    require(success, "Failed to approve USDC");
+    // Give the senior pool the ability to deposit into the senior pool
+    _setupRole(SENIOR_ROLE, address(config.getSeniorPool()));
   }
 
-  /**
-   * @notice Deposit a USDC amount into the pool for a tranche. Mints an NFT to the caller representing the position
-   * @param tranche The number representing the tranche to deposit into
-   * @param amount The USDC amount to tranfer from the caller to the pool
-   * @return tokenId The tokenId of the NFT
-   */
-  function deposit(uint256 tranche, uint256 amount)
-    public
-    override
-    nonReentrant
-    whenNotPaused
-    returns (uint256 tokenId)
-  {
-    TrancheInfo storage trancheInfo = getTrancheInfo(tranche);
-    require(trancheInfo.lockedUntil == 0, "Tranche has been locked");
+  function setAllowedUIDTypes(uint256[] calldata ids) external onlyLocker {
+    require(
+      _poolSlices[0].juniorTranche.principalDeposited == 0 &&
+        _poolSlices[0].seniorTranche.principalDeposited == 0,
+      "has balance"
+    );
+    allowedUIDTypes = ids;
+  }
+
+  function getAllowedUIDTypes() external view override returns (uint256[] memory) {
+    return allowedUIDTypes;
+  }
+
+  /// @notice Intentionable no-op. Included to be compatible with the v1 pool interface
+  // solhint-disable-next-line no-empty-blocks
+  function assess() external override whenNotPaused {}
+
+  /// @inheritdoc ITranchedPool
+  /// @dev TL: tranche locked
+  /// @dev IA: invalid amount
+  /// @dev NA: not authorized. Must have correct UID or be go listed
+  function deposit(
+    uint256 tranche,
+    uint256 amount
+  ) public override nonReentrant whenNotPaused returns (uint256) {
+    ITranchedPool.TrancheInfo storage trancheInfo = _getTrancheInfo(tranche);
+    require(trancheInfo.lockedUntil == 0, "TL");
+    require(amount > 0, "IA");
+    require(hasAllowedUID(msg.sender), "NA");
+    require(block.timestamp >= fundableAt, "Not open");
+    // senior tranche ids are always odd numbered
+    if (TranchingLogic.isSeniorTrancheId(trancheInfo.id)) {
+      require(hasRole(SENIOR_ROLE, _msgSender()), "NA");
+    }
 
     trancheInfo.principalDeposited = trancheInfo.principalDeposited.add(amount);
-    IPoolTokens.MintParams memory params = IPoolTokens.MintParams({tranche: tranche, principalAmount: amount});
-    tokenId = config.getPoolTokens().mint(params, msg.sender);
-    safeERC20TransferFrom(config.getUSDC(), msg.sender, address(this), amount);
+    uint256 tokenId = config.getPoolTokens().mint(
+      IPoolTokens.MintParams({tranche: tranche, principalAmount: amount}),
+      msg.sender
+    );
+
+    config.getUSDC().safeERC20TransferFrom(msg.sender, address(this), amount);
     emit DepositMade(msg.sender, tranche, tokenId, amount);
     return tokenId;
   }
@@ -143,155 +143,219 @@ contract TranchedPool is BaseUpgradeablePausable, ITranchedPool, SafeERC20Transf
     uint8 v,
     bytes32 r,
     bytes32 s
-  ) public override returns (uint256 tokenId) {
+  ) public override whenNotPaused returns (uint256 tokenId) {
     IERC20Permit(config.usdcAddress()).permit(msg.sender, address(this), amount, deadline, v, r, s);
     return deposit(tranche, amount);
   }
 
-  /**
-   * @notice Withdraw an already deposited amount if the funds are available
-   * @param tokenId The NFT representing the position
-   * @param amount The amount to withdraw (must be <= interest+principal currently available to withdraw)
-   * @return interestWithdrawn The interest amount that was withdrawn
-   * @return principalWithdrawn The principal amount that was withdrawn
-   */
-  function withdraw(uint256 tokenId, uint256 amount)
-    public
-    override
-    onlyTokenHolder(tokenId)
-    nonReentrant
-    whenNotPaused
-    returns (uint256 interestWithdrawn, uint256 principalWithdrawn)
-  {
+  /// @inheritdoc ITranchedPool
+  function withdraw(
+    uint256 tokenId,
+    uint256 amount
+  ) public override nonReentrant whenNotPaused returns (uint256, uint256) {
     IPoolTokens.TokenInfo memory tokenInfo = config.getPoolTokens().getTokenInfo(tokenId);
-    TrancheInfo storage trancheInfo = getTrancheInfo(tokenInfo.tranche);
+    ITranchedPool.TrancheInfo storage trancheInfo = _getTrancheInfo(tokenInfo.tranche);
 
     return _withdraw(trancheInfo, tokenInfo, tokenId, amount);
   }
 
-  /**
-   * @notice Withdraw from many tokens (that the sender owns) in a single transaction
-   * @param tokenIds An array of tokens ids representing the position
-   * @param amounts An array of amounts to withdraw from the corresponding tokenIds
-   */
-  function withdrawMultiple(uint256[] calldata tokenIds, uint256[] calldata amounts) public override {
-    require(tokenIds.length == amounts.length, "TokensIds and Amounts must be the same length");
+  /// @inheritdoc ITranchedPool
+  /// @dev LEN: argument length mismatch
+  function withdrawMultiple(
+    uint256[] calldata tokenIds,
+    uint256[] calldata amounts
+  ) public override {
+    require(tokenIds.length == amounts.length, "LEN");
 
     for (uint256 i = 0; i < amounts.length; i++) {
       withdraw(tokenIds[i], amounts[i]);
     }
   }
 
-  /**
-   * @notice Similar to withdraw but will withdraw all available funds
-   * @param tokenId The NFT representing the position
-   * @return interestWithdrawn The interest amount that was withdrawn
-   * @return principalWithdrawn The principal amount that was withdrawn
-   */
-  function withdrawMax(uint256 tokenId)
+  /// @inheritdoc ITranchedPool
+  function withdrawMax(
+    uint256 tokenId
+  )
     external
     override
-    onlyTokenHolder(tokenId)
     nonReentrant
     whenNotPaused
     returns (uint256 interestWithdrawn, uint256 principalWithdrawn)
   {
     IPoolTokens.TokenInfo memory tokenInfo = config.getPoolTokens().getTokenInfo(tokenId);
-    TrancheInfo storage trancheInfo = getTrancheInfo(tokenInfo.tranche);
+    ITranchedPool.TrancheInfo storage trancheInfo = _getTrancheInfo(tokenInfo.tranche);
 
-    (uint256 interestRedeemable, uint256 principalRedeemable) = redeemableInterestAndPrincipal(trancheInfo, tokenInfo);
+    (uint256 interestRedeemable, uint256 principalRedeemable) = TranchingLogic
+      .redeemableInterestAndPrincipal(trancheInfo, tokenInfo);
 
     uint256 amount = interestRedeemable.add(principalRedeemable);
 
     return _withdraw(trancheInfo, tokenInfo, tokenId, amount);
   }
 
-  /**
-   * @notice Draws down the funds (and locks the pool) to the borrower address. Can only be called by the borrower
-   * @param amount The amount to drawdown from the creditline (must be < limit)
-   */
+  /// @inheritdoc ITranchedPool
+  /// @dev DP: drawdowns paused
+  /// @dev IF: insufficient funds
   function drawdown(uint256 amount) external override onlyLocker whenNotPaused {
-    require(!drawdownsPaused, "Drawdowns are currently paused");
-    if (!locked()) {
-      // Assumes the senior fund has invested already (saves the borrower a separate transaction to lock the pool)
+    require(!drawdownsPaused, "DP");
+    if (!_locked()) {
+      // Assumes the senior pool has invested already (saves the borrower a separate transaction to lock the pool)
       _lockPool();
     }
+    // Drawdown only draws down from the current slice for simplicity. It's harder to account for how much
+    // money is available from previous slices since depositors can redeem after unlock.
+    ITranchedPool.PoolSlice storage currentSlice = _poolSlices[numSlices - 1];
+    uint256 amountAvailable = TranchingLogic.sharePriceToUsdc(
+      currentSlice.juniorTranche.principalSharePrice,
+      currentSlice.juniorTranche.principalDeposited
+    );
+    amountAvailable = amountAvailable.add(
+      TranchingLogic.sharePriceToUsdc(
+        currentSlice.seniorTranche.principalSharePrice,
+        currentSlice.seniorTranche.principalDeposited
+      )
+    );
+
+    require(amount <= amountAvailable, "IF");
 
     creditLine.drawdown(amount);
 
     // Update the share price to reflect the amount remaining in the pool
-    uint256 amountRemaining = totalDeposited().sub(creditLine.balance());
-    uint256 oldJuniorPrincipalSharePrice = juniorTranche.principalSharePrice;
-    uint256 oldSeniorPrincipalSharePrice = seniorTranche.principalSharePrice;
-    juniorTranche.principalSharePrice = calculateExpectedSharePrice(amountRemaining, juniorTranche);
-    seniorTranche.principalSharePrice = calculateExpectedSharePrice(amountRemaining, seniorTranche);
+    uint256 amountRemaining = amountAvailable.sub(amount);
+    uint256 oldJuniorPrincipalSharePrice = currentSlice.juniorTranche.principalSharePrice;
+    uint256 oldSeniorPrincipalSharePrice = currentSlice.seniorTranche.principalSharePrice;
+    currentSlice.juniorTranche.principalSharePrice = currentSlice
+      .juniorTranche
+      .calculateExpectedSharePrice(amountRemaining, currentSlice);
+    currentSlice.seniorTranche.principalSharePrice = currentSlice
+      .seniorTranche
+      .calculateExpectedSharePrice(amountRemaining, currentSlice);
+    currentSlice.principalDeployed = currentSlice.principalDeployed.add(amount);
+    totalDeployed = totalDeployed.add(amount);
 
     address borrower = creditLine.borrower();
-    safeERC20TransferFrom(config.getUSDC(), address(this), borrower, amount);
+    IBackerRewards backerRewards = IBackerRewards(config.backerRewardsAddress());
+    backerRewards.onTranchedPoolDrawdown(numSlices - 1);
+    config.getUSDC().safeERC20Transfer(borrower, amount);
     emit DrawdownMade(borrower, amount);
     emit SharePriceUpdated(
       address(this),
-      juniorTranche.id,
-      juniorTranche.principalSharePrice,
-      int256(oldJuniorPrincipalSharePrice.sub(juniorTranche.principalSharePrice)) * -1,
-      juniorTranche.interestSharePrice,
+      currentSlice.juniorTranche.id,
+      currentSlice.juniorTranche.principalSharePrice,
+      int256(oldJuniorPrincipalSharePrice.sub(currentSlice.juniorTranche.principalSharePrice)) * -1,
+      currentSlice.juniorTranche.interestSharePrice,
       0
     );
     emit SharePriceUpdated(
       address(this),
-      seniorTranche.id,
-      seniorTranche.principalSharePrice,
-      int256(oldSeniorPrincipalSharePrice.sub(seniorTranche.principalSharePrice)) * -1,
-      seniorTranche.interestSharePrice,
+      currentSlice.seniorTranche.id,
+      currentSlice.seniorTranche.principalSharePrice,
+      int256(oldSeniorPrincipalSharePrice.sub(currentSlice.seniorTranche.principalSharePrice)) * -1,
+      currentSlice.seniorTranche.interestSharePrice,
       0
     );
   }
 
-  /**
-   * @notice Locks the junior tranche, preventing more junior deposits. Gives time for the senior to determine how
-   * much to invest (ensure leverage ratio cannot change for the period)
-   */
-  function lockJuniorCapital() external override onlyLocker whenNotPaused {
-    _lockJuniorCapital();
+  function NUM_TRANCHES_PER_SLICE() external pure returns (uint256) {
+    return TranchingLogic.NUM_TRANCHES_PER_SLICE;
   }
 
-  /**
-   * @notice Locks the pool (locks both senior and junior tranches and starts the drawdown period). Beyond the drawdown
-   * period, any unused capital is available to withdraw by all depositors
-   */
+  /// @inheritdoc ITranchedPool
+  function lockJuniorCapital() external override onlyLocker whenNotPaused {
+    _lockJuniorCapital(numSlices.sub(1));
+  }
+
+  /// @inheritdoc ITranchedPool
   function lockPool() external override onlyLocker whenNotPaused {
     _lockPool();
   }
 
-  /**
-   * @notice Triggers an assessment of the creditline and the applies the payments according the tranche waterfall
-   */
-  function assess() external override whenNotPaused {
-    _assess();
+  /// @inheritdoc ITranchedPool
+  function setFundableAt(uint256 newFundableAt) external override onlyLocker {
+    fundableAt = newFundableAt;
   }
 
-  /**
-   * @notice Allows repaying the creditline. Collects the USDC amount from the sender and triggers an assess
-   * @param amount The amount to repay
-   */
-  function pay(uint256 amount) external override whenNotPaused {
-    require(amount > 0, "Must pay more than zero");
-
-    collectPayment(amount);
-    _assess();
+  /// @inheritdoc ITranchedPool
+  /// @dev NL: not locked
+  /// @dev LP: late payment
+  /// @dev GP: beyond principal grace period
+  function initializeNextSlice(uint256 _fundableAt) external override onlyLocker whenNotPaused {
+    require(_locked(), "NL");
+    require(!creditLine.isLate(), "LP");
+    require(creditLine.withinPrincipalGracePeriod(), "GP");
+    _initializeNextSlice(_fundableAt);
+    emit SliceCreated(address(this), numSlices.sub(1));
   }
 
-  /**
-   * @notice Migrates to a new goldfinch config address
-   */
-  function updateGoldfinchConfig() external onlyAdmin {
-    config = GoldfinchConfig(config.configAddress());
-    creditLine.updateGoldfinchConfig();
+  /// @inheritdoc ITranchedPool
+  /// @dev IT: invalid timestamp
+  /// @dev LI: loan inactive
+  function getAmountsOwed(
+    uint256 timestamp
+  )
+    external
+    view
+    override
+    returns (uint256 interestOwed, uint256 interestAccrued, uint256 principalOwed)
+  {
+    require(timestamp >= block.timestamp, "IT");
+    require(creditLine.termEndTime() > 0, "LI");
+
+    return (
+      creditLine.interestOwedAt(timestamp),
+      creditLine.interestAccruedAt(timestamp),
+      creditLine.principalOwedAt(timestamp)
+    );
   }
 
-  /**
-   * @notice Pauses the pool and sweeps any remaining funds to the treasury reserve.
-   */
+  /// @inheritdoc ITranchedPool
+  /// @dev ZA: zero amount
+  function pay(
+    uint256 amount
+  ) external override nonReentrant whenNotPaused returns (PaymentAllocation memory) {
+    require(amount > 0, "ZA");
+    // Send money to the credit line. Only take what's actually owed
+    uint256 maxPayableAmount = creditLine.interestAccrued().add(creditLine.interestOwed()).add(
+      creditLine.balance()
+    );
+    uint256 amountToPay = Math.min(amount, maxPayableAmount);
+    config.getUSDC().safeERC20TransferFrom(msg.sender, address(this), amountToPay);
+
+    PaymentAllocation memory pa = _pay(amount);
+
+    // Payment remaining should always be 0 because we don't take excess usdc
+    assert(pa.paymentRemaining == 0);
+    return pa;
+  }
+
+  /// @inheritdoc ITranchedPool
+  /// @dev ZA: zero amount
+  function pay(
+    uint256 principalAmount,
+    uint256 interestAmount
+  ) external override nonReentrant whenNotPaused returns (PaymentAllocation memory) {
+    uint256 totalPayment = principalAmount.add(interestAmount);
+    require(totalPayment > 0, "ZA");
+
+    // If there is an excess principal payment then only take what we actually need
+    uint256 principalToPay = Math.min(principalAmount, creditLine.balance());
+
+    // If there is an excess interest payment then only take what we actually need
+    uint256 maxPayableInterest = creditLine.interestAccrued().add(creditLine.interestOwed());
+    uint256 interestToPay = Math.min(interestAmount, maxPayableInterest);
+    config.getUSDC().safeERC20TransferFrom(
+      msg.sender,
+      address(this),
+      principalToPay.add(interestToPay)
+    );
+    PaymentAllocation memory pa = _pay(principalToPay, interestToPay);
+
+    // Payment remaining should always be 0 because we don't take excess usdc
+    assert(pa.paymentRemaining == 0);
+    return pa;
+  }
+
+  /// @notice Pauses the pool and sweeps any remaining funds to the treasury reserve.
   function emergencyShutdown() public onlyAdmin {
     if (!paused()) {
       pause();
@@ -302,526 +366,327 @@ contract TranchedPool is BaseUpgradeablePausable, ITranchedPool, SafeERC20Transf
     // Sweep any funds to community reserve
     uint256 poolBalance = usdc.balanceOf(address(this));
     if (poolBalance > 0) {
-      safeERC20Transfer(usdc, reserveAddress, poolBalance);
+      config.getUSDC().safeERC20Transfer(reserveAddress, poolBalance);
     }
 
     uint256 clBalance = usdc.balanceOf(address(creditLine));
     if (clBalance > 0) {
-      safeERC20TransferFrom(usdc, address(creditLine), reserveAddress, clBalance);
+      usdc.safeERC20TransferFrom(address(creditLine), reserveAddress, clBalance);
     }
     emit EmergencyShutdown(address(this));
   }
 
-  /**
-   * @notice Pauses all drawdowns (but not deposits/withdraws)
-   */
+  /// @notice Pauses all drawdowns (but not deposits/withdraws)
   function pauseDrawdowns() public onlyAdmin {
     drawdownsPaused = true;
     emit DrawdownsPaused(address(this));
   }
 
-  /**
-   * @notice Unpause drawdowns
-   */
+  /// @notice Unpause drawdowns
   function unpauseDrawdowns() public onlyAdmin {
     drawdownsPaused = false;
     emit DrawdownsUnpaused(address(this));
   }
 
-  /**
-   * @notice Migrates the accounting variables from the current creditline to a brand new one
-   * @param _borrower The borrower address
-   * @param _limit The new limit
-   * @param _interestApr The new interest APR
-   * @param _paymentPeriodInDays The new payment period in days
-   * @param _termInDays The new term in days
-   * @param _lateFeeApr The new late fee APR
-   */
-  function migrateCreditLine(
-    address _borrower,
-    uint256 _limit,
-    uint256 _interestApr,
-    uint256 _paymentPeriodInDays,
-    uint256 _termInDays,
-    uint256 _lateFeeApr
-  ) public onlyAdmin {
-    require(_borrower != address(0), "Borrower must not be empty");
-    require(_paymentPeriodInDays != 0, "Payment period must not be empty");
-    require(_termInDays != 0, "Term must not be empty");
+  // CreditLine proxy method
+  function setLimit(uint256 newAmount) external onlyAdmin {
+    return creditLine.setLimit(newAmount);
+  }
 
-    address originalClAddr = address(creditLine);
-    IV2CreditLine originalCl = IV2CreditLine(originalClAddr);
+  function setMaxLimit(uint256 newAmount) external onlyAdmin {
+    return creditLine.setMaxLimit(newAmount);
+  }
 
-    createAndSetCreditLine(_borrower, _limit, _interestApr, _paymentPeriodInDays, _termInDays, _lateFeeApr);
+  /// @inheritdoc ITranchedPool
+  function getTranche(
+    uint256 tranche
+  ) public view override returns (ITranchedPool.TrancheInfo memory) {
+    return _getTrancheInfo(tranche);
+  }
 
-    IV2CreditLine newCl = creditLine;
-    address newClAddr = address(newCl);
+  /// @inheritdoc ITranchedPool
+  function poolSlices(
+    uint256 index
+  ) external view override returns (ITranchedPool.PoolSlice memory) {
+    return _poolSlices[index];
+  }
 
-    emit CreditLineMigrated(originalClAddr, newClAddr);
-
-    // Copy over all accounting variables
-    newCl.setBalance(originalCl.balance());
-    newCl.setInterestOwed(originalCl.interestOwed());
-    newCl.setPrincipalOwed(originalCl.principalOwed());
-    newCl.setTermEndTime(originalCl.termEndTime());
-    newCl.setNextDueTime(originalCl.nextDueTime());
-    newCl.setInterestAccruedAsOf(originalCl.interestAccruedAsOf());
-    newCl.setLastFullPaymentTime(originalCl.lastFullPaymentTime());
-    newCl.setTotalInterestAccrued(originalCl.totalInterestAccrued());
-
-    // Transfer any funds to new CL
-    uint256 clBalance = config.getUSDC().balanceOf(originalClAddr);
-    if (clBalance > 0) {
-      safeERC20TransferFrom(config.getUSDC(), originalClAddr, newClAddr, clBalance);
+  /// @inheritdoc ITranchedPool
+  function totalJuniorDeposits() external view override returns (uint256) {
+    uint256 total;
+    for (uint256 i = 0; i < numSlices; i++) {
+      total = total.add(_poolSlices[i].juniorTranche.principalDeposited);
     }
-
-    // Close out old CL
-    originalCl.setBalance(0);
-    originalCl.setLimit(0);
+    return total;
   }
 
-  /**
-   * @notice Migrates to a new creditline without copying the accounting variables
-   */
-  function migrateAndSetNewCreditLine(address newCl) public onlyAdmin {
-    require(newCl != address(0), "Creditline cannot be empty");
-    address originalClAddr = address(creditLine);
-    // Transfer any funds to new CL
-    uint256 clBalance = config.getUSDC().balanceOf(originalClAddr);
-    if (clBalance > 0) {
-      safeERC20TransferFrom(config.getUSDC(), originalClAddr, newCl, clBalance);
-    }
-
-    // Close out old CL
-    creditLine.setBalance(0);
-    creditLine.setLimit(0);
-
-    // set new CL
-    creditLine = IV2CreditLine(newCl);
-    // sanity check that the new address is in fact a creditline
-    creditLine.limit();
-
-    emit CreditLineMigrated(originalClAddr, address(creditLine));
-  }
-
-  // CreditLine proxy methods, for convenience
-  function limit() public view returns (uint256) {
-    return creditLine.limit();
-  }
-
-  function borrower() public view returns (address) {
-    return creditLine.borrower();
-  }
-
-  function interestApr() public view returns (uint256) {
-    return creditLine.interestApr();
-  }
-
-  function paymentPeriodInDays() public view returns (uint256) {
-    return creditLine.paymentPeriodInDays();
-  }
-
-  function termInDays() public view returns (uint256) {
-    return creditLine.termInDays();
-  }
-
-  function lateFeeApr() public view returns (uint256) {
-    return creditLine.lateFeeApr();
-  }
-
-  function getTranche(uint256 tranche) public view override returns (TrancheInfo memory) {
-    return getTrancheInfo(tranche);
-  }
-
-  /**
-   * @notice Converts USDC amounts to share price
-   * @param amount The USDC amount to convert
-   * @param totalShares The total shares outstanding
-   * @return The share price of the input amount
-   */
-  function usdcToSharePrice(uint256 amount, uint256 totalShares) public pure returns (uint256) {
-    return totalShares == 0 ? 0 : amount.mul(FP_SCALING_FACTOR).div(totalShares);
-  }
-
-  /**
-   * @notice Converts share price to USDC amounts
-   * @param sharePrice The share price to convert
-   * @param totalShares The total shares outstanding
-   * @return The USDC amount of the input share price
-   */
-  function sharePriceToUsdc(uint256 sharePrice, uint256 totalShares) public pure returns (uint256) {
-    return sharePrice.mul(totalShares).div(FP_SCALING_FACTOR);
-  }
-
-  /**
-   * @notice Determines the amount of interest and principal redeemable by a particular tokenId
-   * @param tokenId The token representing the position
-   * @return interestRedeemable The interest available to redeem
-   * @return principalRedeemable The principal available to redeem
-   */
-  function availableToWithdraw(uint256 tokenId)
-    public
-    view
-    override
-    returns (uint256 interestRedeemable, uint256 principalRedeemable)
-  {
+  /// @inheritdoc ITranchedPool
+  function availableToWithdraw(uint256 tokenId) public view override returns (uint256, uint256) {
     IPoolTokens.TokenInfo memory tokenInfo = config.getPoolTokens().getTokenInfo(tokenId);
-    TrancheInfo storage trancheInfo = getTrancheInfo(tokenInfo.tranche);
+    ITranchedPool.TrancheInfo storage trancheInfo = _getTrancheInfo(tokenInfo.tranche);
 
-    if (currentTime() > trancheInfo.lockedUntil) {
-      return redeemableInterestAndPrincipal(trancheInfo, tokenInfo);
+    if (block.timestamp > trancheInfo.lockedUntil) {
+      return TranchingLogic.redeemableInterestAndPrincipal(trancheInfo, tokenInfo);
     } else {
       return (0, 0);
     }
   }
 
+  function hasAllowedUID(address sender) public view override returns (bool) {
+    return config.getGo().goOnlyIdTypes(sender, allowedUIDTypes);
+  }
+
   /* Internal functions  */
 
-  function _withdraw(
-    TrancheInfo storage trancheInfo,
-    IPoolTokens.TokenInfo memory tokenInfo,
-    uint256 tokenId,
-    uint256 amount
-  ) internal returns (uint256 interestWithdrawn, uint256 principalWithdrawn) {
-    (uint256 interestRedeemable, uint256 principalRedeemable) = redeemableInterestAndPrincipal(trancheInfo, tokenInfo);
-    uint256 netRedeemable = interestRedeemable.add(principalRedeemable);
+  /// @dev NL: not locked
+  function _pay(
+    uint256 principalPayment,
+    uint256 interestPayment
+  ) internal returns (PaymentAllocation memory) {
+    // We need to make sure the pool is locked before we allocate rewards to ensure it's not
+    // possible to game rewards by sandwiching an interest payment to an unlocked pool
+    // It also causes issues trying to allocate payments to an empty slice (divide by zero)
+    require(_locked(), "NL");
 
-    require(amount <= netRedeemable, "Invalid redeem amount");
-    require(currentTime() > trancheInfo.lockedUntil, "Tranche is locked");
-
-    // If the tranche has not been locked, ensure the deposited amount is correct
-    if (trancheInfo.lockedUntil == 0) {
-      trancheInfo.principalDeposited = trancheInfo.principalDeposited.sub(amount);
-    }
-
-    uint256 interestToRedeem = Math.min(interestRedeemable, amount);
-    uint256 principalToRedeem = Math.min(principalRedeemable, amount.sub(interestToRedeem));
-
-    config.getPoolTokens().redeem(tokenId, principalToRedeem, interestToRedeem);
-    safeERC20TransferFrom(config.getUSDC(), address(this), msg.sender, principalToRedeem.add(interestToRedeem));
-
-    emit WithdrawalMade(msg.sender, tokenInfo.tranche, tokenId, interestToRedeem, principalToRedeem);
-
-    return (interestToRedeem, principalToRedeem);
-  }
-
-  function redeemableInterestAndPrincipal(TrancheInfo storage trancheInfo, IPoolTokens.TokenInfo memory tokenInfo)
-    internal
-    view
-    returns (uint256 interestRedeemable, uint256 principalRedeemable)
-  {
-    // This supports withdrawing before or after locking because principal share price starts at 1
-    // and is set to 0 on lock. Interest share price is always 0 until interest payments come back, when it increases
-    uint256 maxPrincipalRedeemable = sharePriceToUsdc(trancheInfo.principalSharePrice, tokenInfo.principalAmount);
-    // The principalAmount is used as the totalShares because we want the interestSharePrice to be expressed as a
-    // percent of total loan value e.g. if the interest is 10% APR, the interestSharePrice should approach a max of 0.1.
-    uint256 maxInterestRedeemable = sharePriceToUsdc(trancheInfo.interestSharePrice, tokenInfo.principalAmount);
-
-    interestRedeemable = maxInterestRedeemable.sub(tokenInfo.interestRedeemed);
-    principalRedeemable = maxPrincipalRedeemable.sub(tokenInfo.principalRedeemed);
-
-    return (interestRedeemable, principalRedeemable);
-  }
-
-  function _lockJuniorCapital() internal {
-    require(!locked(), "Pool already locked");
-    require(juniorTranche.lockedUntil == 0, "Junior tranche already locked");
-
-    juniorTranche.lockedUntil = currentTime().add(config.getDrawdownPeriodInSeconds());
-  }
-
-  function _lockPool() internal {
-    require(juniorTranche.lockedUntil > 0, "Junior tranche must be locked first");
-
-    creditLine.setLimit(Math.min(totalDeposited(), creditLine.limit()));
-
-    // We start the drawdown period, so backers can withdraw unused capital after borrower draws down
-    uint256 lockPeriod = config.getDrawdownPeriodInSeconds();
-    seniorTranche.lockedUntil = currentTime().add(lockPeriod);
-    juniorTranche.lockedUntil = currentTime().add(lockPeriod);
-  }
-
-  function collectInterestAndPrincipal(
-    address from,
-    uint256 interest,
-    uint256 principal
-  ) internal returns (uint256 totalReserveAmount) {
-    safeERC20TransferFrom(config.getUSDC(), from, address(this), principal.add(interest), "Failed to collect payment");
-
-    (uint256 interestAccrued, uint256 principalAccrued) = getTotalInterestAndPrincipal();
-    uint256 reserveFeePercent = ONE_HUNDRED.div(config.getReserveDenominator()); // Convert the denonminator to percent
-
-    uint256 interestRemaining = interest;
-    uint256 principalRemaining = principal;
-
-    // First determine the expected share price for the senior tranche. This is the gross amount the senior
-    // tranche should receive.
-    uint256 expectedInterestSharePrice = calculateExpectedSharePrice(interestAccrued, seniorTranche);
-    uint256 expectedPrincipalSharePrice = calculateExpectedSharePrice(principalAccrued, seniorTranche);
-
-    // Deduct the junior fee and the protocol reserve
-    uint256 desiredNetInterestSharePrice = scaleByFraction(
-      expectedInterestSharePrice,
-      ONE_HUNDRED.sub(juniorFeePercent.add(reserveFeePercent)),
-      ONE_HUNDRED
+    uint256 totalInterestAccruedAtLastCheckpoint = creditLine.totalInterestAccruedAt(
+      creditLine.interestAccruedAsOf()
     );
-    // Collect protocol fee interest received (we've subtracted this from the senior portion above)
-    uint256 reserveDeduction = scaleByFraction(interestRemaining, reserveFeePercent, ONE_HUNDRED);
-    totalReserveAmount = totalReserveAmount.add(reserveDeduction); // protocol fee
-    interestRemaining = interestRemaining.sub(reserveDeduction);
-
-    // Apply the interest remaining so we get up to the netInterestSharePrice
-    (interestRemaining, principalRemaining) = applyToTrancheBySharePrice(
-      interestRemaining,
-      principalRemaining,
-      desiredNetInterestSharePrice,
-      expectedPrincipalSharePrice,
-      seniorTranche
+    PaymentAllocation memory pa = creditLine.pay(principalPayment, interestPayment);
+    uint256 interestAccruedSinceLastCheckpoint = creditLine.totalInterestAccrued().sub(
+      totalInterestAccruedAtLastCheckpoint
     );
 
-    // Then fill up the junior tranche with all the interest remaining, upto the principal share price
-    expectedInterestSharePrice = juniorTranche.interestSharePrice.add(
-      usdcToSharePrice(interestRemaining, juniorTranche.principalDeposited)
-    );
-    expectedPrincipalSharePrice = calculateExpectedSharePrice(principalAccrued, juniorTranche);
-    (interestRemaining, principalRemaining) = applyToTrancheBySharePrice(
-      interestRemaining,
-      principalRemaining,
-      expectedInterestSharePrice,
-      expectedPrincipalSharePrice,
-      juniorTranche
-    );
-
-    // All remaining interest and principal is applied towards the junior tranche as interest
-    interestRemaining = interestRemaining.add(principalRemaining);
-    // Since any principal remaining is treated as interest (there is "extra" interest to be distributed)
-    // we need to make sure to collect the protocol fee on the additional interest (we only deducted the
-    // fee on the original interest portion)
-    reserveDeduction = scaleByFraction(principalRemaining, reserveFeePercent, ONE_HUNDRED);
-    totalReserveAmount = totalReserveAmount.add(reserveDeduction);
-    interestRemaining = interestRemaining.sub(reserveDeduction);
-    principalRemaining = 0;
-
-    (interestRemaining, principalRemaining) = applyToTrancheByAmount(
-      interestRemaining.add(principalRemaining),
-      0,
-      interestRemaining.add(principalRemaining),
-      0,
-      juniorTranche
-    );
-
-    sendToReserve(totalReserveAmount);
-
-    return totalReserveAmount;
+    distributeToSlicesAndAllocateBackerRewards(interestAccruedSinceLastCheckpoint, pa);
+    return pa;
   }
 
-  function getTotalInterestAndPrincipal() internal view returns (uint256 interestAccrued, uint256 principalAccrued) {
-    interestAccrued = creditLine.totalInterestAccrued();
-    principalAccrued = creditLine.principalOwed();
-    // Add any remaining balance we have to the principal accrued so expected share price will reflect partial
-    // drawdowns appropriately. (e.g. if 300K was drawndown from a 1M loan, current and expected share price should
-    // be 0.7 and not 0)
-    principalAccrued = principalAccrued.add(totalDeposited().sub(creditLine.balance()));
-    return (interestAccrued, principalAccrued);
+  function _pay(uint256 paymentAmount) internal returns (PaymentAllocation memory) {
+    // We need to make sure the pool is locked before we allocate rewards to ensure it's not
+    // possible to game rewards by sandwiching an interest payment to an unlocked pool
+    // It also causes issues trying to allocate payments to an empty slice (divide by zero)
+    require(_locked(), "NL");
+
+    uint256 interestAccrued = creditLine.totalInterestAccruedAt(creditLine.interestAccruedAsOf());
+    PaymentAllocation memory pa = creditLine.pay(paymentAmount);
+    interestAccrued = creditLine.totalInterestAccrued().sub(interestAccrued);
+
+    distributeToSlicesAndAllocateBackerRewards(interestAccrued, pa);
+    return pa;
   }
 
-  function calculateExpectedSharePrice(uint256 amount, TrancheInfo memory tranche) internal view returns (uint256) {
-    uint256 sharePrice = usdcToSharePrice(amount, tranche.principalDeposited);
-    return scaleByPercentOwnership(sharePrice, tranche);
-  }
-
-  // If the senior tranche is locked, then the pool is not open to any more deposits (could throw off leverage ratio)
-  function locked() internal view returns (bool) {
-    return seniorTranche.lockedUntil > 0;
-  }
-
-  function createAndSetCreditLine(
-    address _borrower,
-    uint256 _limit,
-    uint256 _interestApr,
-    uint256 _paymentPeriodInDays,
-    uint256 _termInDays,
-    uint256 _lateFeeApr
+  function distributeToSlicesAndAllocateBackerRewards(
+    uint256 interestAccrued,
+    PaymentAllocation memory pa
   ) internal {
-    address _creditLine = config.getGoldfinchFactory().createCreditLine();
-    creditLine = IV2CreditLine(_creditLine);
-    creditLine.initialize(
-      address(config),
-      address(this), // Set self as the owner
-      _borrower,
-      _limit,
-      _interestApr,
-      _paymentPeriodInDays,
-      _termInDays,
-      _lateFeeApr
-    );
-  }
-
-  function getTrancheInfo(uint256 tranche) internal view returns (TrancheInfo storage) {
-    require(
-      tranche == uint256(ITranchedPool.Tranches.Senior) || tranche == uint256(ITranchedPool.Tranches.Junior),
-      "Unsupported tranche"
-    );
-    TrancheInfo storage trancheInfo = tranche == uint256(ITranchedPool.Tranches.Senior) ? seniorTranche : juniorTranche;
-    return trancheInfo;
-  }
-
-  function scaleByPercentOwnership(uint256 amount, TrancheInfo memory tranche) internal view returns (uint256) {
-    uint256 totalDeposited = juniorTranche.principalDeposited.add(seniorTranche.principalDeposited);
-    return scaleByFraction(amount, tranche.principalDeposited, totalDeposited);
-  }
-
-  function scaleByFraction(
-    uint256 amount,
-    uint256 fraction,
-    uint256 total
-  ) internal pure returns (uint256) {
-    FixedPoint.Unsigned memory totalAsFixedPoint = FixedPoint.fromUnscaledUint(total);
-    FixedPoint.Unsigned memory fractionAsFixedPoint = FixedPoint.fromUnscaledUint(fraction);
-    return fractionAsFixedPoint.div(totalAsFixedPoint).mul(amount).div(FP_SCALING_FACTOR).rawValue;
-  }
-
-  function totalDeposited() internal view returns (uint256) {
-    return juniorTranche.principalDeposited.add(seniorTranche.principalDeposited);
-  }
-
-  function currentTime() internal view virtual returns (uint256) {
-    return block.timestamp;
-  }
-
-  function applyToTrancheBySharePrice(
-    uint256 interestRemaining,
-    uint256 principalRemaining,
-    uint256 desiredInterestSharePrice,
-    uint256 desiredPrincipalSharePrice,
-    TrancheInfo storage tranche
-  ) internal returns (uint256, uint256) {
-    uint256 totalShares = tranche.principalDeposited;
-
-    // If the desired share price is lower, then ignore it, and leave it unchanged
-    uint256 principalSharePrice = tranche.principalSharePrice;
-    if (desiredPrincipalSharePrice < principalSharePrice) {
-      desiredPrincipalSharePrice = principalSharePrice;
-    }
-    uint256 interestSharePrice = tranche.interestSharePrice;
-    if (desiredInterestSharePrice < interestSharePrice) {
-      desiredInterestSharePrice = interestSharePrice;
-    }
-    uint256 interestSharePriceDifference = desiredInterestSharePrice.sub(interestSharePrice);
-    uint256 desiredInterestAmount = sharePriceToUsdc(interestSharePriceDifference, totalShares);
-    uint256 principalSharePriceDifference = desiredPrincipalSharePrice.sub(principalSharePrice);
-    uint256 desiredPrincipalAmount = sharePriceToUsdc(principalSharePriceDifference, totalShares);
-
-    (interestRemaining, principalRemaining) = applyToTrancheByAmount(
-      interestRemaining,
-      principalRemaining,
-      desiredInterestAmount,
-      desiredPrincipalAmount,
-      tranche
-    );
-    return (interestRemaining, principalRemaining);
-  }
-
-  function applyToTrancheByAmount(
-    uint256 interestRemaining,
-    uint256 principalRemaining,
-    uint256 desiredInterestAmount,
-    uint256 desiredPrincipalAmount,
-    TrancheInfo storage tranche
-  ) internal returns (uint256, uint256) {
-    uint256 totalShares = tranche.principalDeposited;
-    uint256 newSharePrice;
-
-    (interestRemaining, newSharePrice) = applyToSharePrice(
-      interestRemaining,
-      tranche.interestSharePrice,
-      desiredInterestAmount,
-      totalShares
-    );
-    uint256 oldInterestSharePrice = tranche.interestSharePrice;
-    tranche.interestSharePrice = newSharePrice;
-
-    (principalRemaining, newSharePrice) = applyToSharePrice(
-      principalRemaining,
-      tranche.principalSharePrice,
-      desiredPrincipalAmount,
-      totalShares
-    );
-    uint256 oldPrincipalSharePrice = tranche.principalSharePrice;
-    tranche.principalSharePrice = newSharePrice;
-    emit SharePriceUpdated(
-      address(this),
-      tranche.id,
-      tranche.principalSharePrice,
-      int256(tranche.principalSharePrice.sub(oldPrincipalSharePrice)),
-      tranche.interestSharePrice,
-      int256(tranche.interestSharePrice.sub(oldInterestSharePrice))
-    );
-    return (interestRemaining, principalRemaining);
-  }
-
-  function applyToSharePrice(
-    uint256 amountRemaining,
-    uint256 currentSharePrice,
-    uint256 desiredAmount,
-    uint256 totalShares
-  ) internal pure returns (uint256, uint256) {
-    // If no money left to apply, or don't need any changes, return the original amounts
-    if (amountRemaining == 0 || desiredAmount == 0) {
-      return (amountRemaining, currentSharePrice);
-    }
-    if (amountRemaining < desiredAmount) {
-      // We don't have enough money to adjust share price to the desired level. So just use whatever amount is left
-      desiredAmount = amountRemaining;
-    }
-    uint256 sharePriceDifference = usdcToSharePrice(desiredAmount, totalShares);
-    return (amountRemaining.sub(desiredAmount), currentSharePrice.add(sharePriceDifference));
-  }
-
-  function sendToReserve(uint256 amount) internal {
-    emit ReserveFundsCollected(address(this), amount);
-    safeERC20TransferFrom(
-      config.getUSDC(),
-      address(this),
-      config.reserveAddress(),
-      amount,
-      "Failed to send to reserve"
-    );
-  }
-
-  function collectPayment(uint256 amount) internal {
-    safeERC20TransferFrom(config.getUSDC(), msg.sender, address(creditLine), amount, "Failed to collect payment");
-  }
-
-  function _assess() internal {
-    (uint256 paymentRemaining, uint256 interestPayment, uint256 principalPayment) = creditLine.assess();
-    if (interestPayment > 0 || principalPayment > 0) {
-      uint256 reserveAmount = collectInterestAndPrincipal(
-        address(creditLine),
-        interestPayment,
-        principalPayment.add(paymentRemaining)
+    // Split the interest accrued proportionally across slices so we know how much interest goes to each slice
+    // We need this because the slice start at different times, so we cannot retroactively allocate the interest
+    // linearly
+    uint256[] memory principalPaymentsPerSlice = new uint256[](numSlices);
+    for (uint256 i = 0; i < numSlices; i++) {
+      ITranchedPool.PoolSlice storage slice = _poolSlices[i];
+      uint256 interestForSlice = TranchingLogic.scaleByFraction(
+        interestAccrued,
+        slice.principalDeployed,
+        totalDeployed
       );
+      principalPaymentsPerSlice[i] = TranchingLogic.scaleByFraction(
+        pa.principalPayment.add(pa.additionalBalancePayment),
+        slice.principalDeployed,
+        totalDeployed
+      );
+      _poolSlices[i].totalInterestAccrued = _poolSlices[i].totalInterestAccrued.add(
+        interestForSlice
+      );
+    }
+
+    uint256 interestPayment = pa.owedInterestPayment.add(pa.accruedInterestPayment);
+    uint256 principalPayment = pa.principalPayment.add(pa.additionalBalancePayment);
+    if (interestPayment > 0 || principalPayment > 0) {
+      uint256 reserveAmount = _collectInterestAndPrincipal(interestPayment, principalPayment);
+
+      uint256 principalPaymentsToSlices = 0;
+      for (uint256 i = 0; i < numSlices; i++) {
+        _poolSlices[i].principalDeployed = _poolSlices[i].principalDeployed.sub(
+          principalPaymentsPerSlice[i]
+        );
+        principalPaymentsToSlices = principalPaymentsToSlices.add(principalPaymentsPerSlice[i]);
+      }
+
+      totalDeployed = totalDeployed.sub(principalPaymentsToSlices);
+
+      config.getBackerRewards().allocateRewards(interestPayment);
+
       emit PaymentApplied(
         creditLine.borrower(),
         address(this),
-        interestPayment,
+        pa.owedInterestPayment.add(pa.accruedInterestPayment),
         principalPayment,
-        paymentRemaining,
+        pa.paymentRemaining,
         reserveAmount
       );
     }
   }
 
-  modifier onlyLocker() {
-    require(hasRole(LOCKER_ROLE, msg.sender), "Must have locker role to perform this action");
-    _;
+  function _collectInterestAndPrincipal(
+    uint256 interest,
+    uint256 principal
+  ) internal returns (uint256) {
+    uint256 totalReserveAmount = TranchingLogic.applyToAllSlices(
+      _poolSlices,
+      numSlices,
+      interest,
+      principal,
+      uint256(100).div(config.getReserveDenominator()), // Convert the denominator to percent
+      totalDeployed,
+      creditLine,
+      juniorFeePercent
+    );
+
+    config.getUSDC().safeERC20Transfer(config.reserveAddress(), totalReserveAmount);
+
+    emit ReserveFundsCollected(address(this), totalReserveAmount);
+
+    return totalReserveAmount;
   }
 
-  modifier onlyTokenHolder(uint256 tokenId) {
-    require(
-      config.getPoolTokens().isApprovedOrOwner(msg.sender, tokenId),
-      "Only the token owner is allowed to call this function"
+  function _createAndSetCreditLine(
+    address _borrower,
+    uint256 _maxLimit,
+    uint256 _interestApr,
+    ISchedule _schedule,
+    uint256 _lateFeeApr
+  ) internal {
+    creditLine = ICreditLine(config.getGoldfinchFactory().createCreditLine());
+    creditLine.initialize(
+      address(config),
+      address(this), // Set self as the owner
+      _borrower,
+      _maxLimit,
+      _interestApr,
+      _schedule,
+      _lateFeeApr
     );
+  }
+
+  // // Internal //////////////////////////////////////////////////////////////////
+
+  /// @dev ZA: Zero amount
+  /// @dev IA: Invalid amount - amount too large
+  /// @dev TL: Tranched Locked
+  function _withdraw(
+    ITranchedPool.TrancheInfo storage trancheInfo,
+    IPoolTokens.TokenInfo memory tokenInfo,
+    uint256 tokenId,
+    uint256 amount
+  ) internal returns (uint256, uint256) {
+    /// @dev NA: not authorized
+    require(
+      config.getPoolTokens().isApprovedOrOwner(msg.sender, tokenId) && hasAllowedUID(msg.sender),
+      "NA"
+    );
+    require(amount > 0, "ZA");
+    (uint256 interestRedeemable, uint256 principalRedeemable) = TranchingLogic
+      .redeemableInterestAndPrincipal(trancheInfo, tokenInfo);
+    uint256 netRedeemable = interestRedeemable.add(principalRedeemable);
+
+    require(amount <= netRedeemable, "IA");
+    require(block.timestamp > trancheInfo.lockedUntil, "TL");
+
+    uint256 interestToRedeem = 0;
+    uint256 principalToRedeem = 0;
+
+    // If the tranche has not been locked, ensure the deposited amount is correct
+    if (trancheInfo.lockedUntil == 0) {
+      trancheInfo.principalDeposited = trancheInfo.principalDeposited.sub(amount);
+
+      principalToRedeem = amount;
+
+      config.getPoolTokens().withdrawPrincipal(tokenId, principalToRedeem);
+    } else {
+      interestToRedeem = Math.min(interestRedeemable, amount);
+      principalToRedeem = Math.min(principalRedeemable, amount.sub(interestToRedeem));
+
+      config.getPoolTokens().redeem(tokenId, principalToRedeem, interestToRedeem);
+    }
+
+    config.getUSDC().safeERC20Transfer(msg.sender, principalToRedeem.add(interestToRedeem));
+
+    emit WithdrawalMade(
+      msg.sender,
+      tokenInfo.tranche,
+      tokenId,
+      interestToRedeem,
+      principalToRedeem
+    );
+
+    return (interestToRedeem, principalToRedeem);
+  }
+
+  /// @dev TL: tranch locked or has been locked before
+  function _lockJuniorCapital(uint256 sliceId) internal {
+    require(!_locked() && _poolSlices[sliceId].juniorTranche.lockedUntil == 0, "TL");
+    TranchingLogic.lockTranche(_poolSlices[sliceId].juniorTranche, config);
+  }
+
+  /// @dev NL: Not locked
+  /// @dev TL: tranche locked. The senior pool has already been locked.
+  function _lockPool() internal {
+    ITranchedPool.PoolSlice storage slice = _poolSlices[numSlices.sub(1)];
+    require(slice.juniorTranche.lockedUntil > 0, "NL");
+    // Allow locking the pool only once; do not allow extending the lock of an
+    // already-locked pool. Otherwise the locker could keep the pool locked
+    // indefinitely, preventing withdrawals.
+    require(slice.seniorTranche.lockedUntil == 0, "TL");
+
+    uint256 currentTotal = slice.juniorTranche.principalDeposited.add(
+      slice.seniorTranche.principalDeposited
+    );
+    creditLine.setLimit(Math.min(creditLine.limit().add(currentTotal), creditLine.maxLimit()));
+
+    // We start the drawdown period, so backers can withdraw unused capital after borrower draws down
+    TranchingLogic.lockTranche(slice.juniorTranche, config);
+    TranchingLogic.lockTranche(slice.seniorTranche, config);
+  }
+
+  /// @dev SL: slice limit
+  function _initializeNextSlice(uint256 newFundableAt) internal {
+    require(numSlices < 5, "SL");
+    TranchingLogic.initializeNextSlice(_poolSlices, numSlices);
+    numSlices = numSlices.add(1);
+    fundableAt = newFundableAt;
+  }
+
+  // If the senior tranche of the current slice is locked, then the pool is not open to any more deposits
+  // (could throw off leverage ratio)
+  function _locked() internal view returns (bool) {
+    return numSlices == 0 || _poolSlices[numSlices - 1].seniorTranche.lockedUntil > 0;
+  }
+
+  function _getTrancheInfo(
+    uint256 trancheId
+  ) internal view returns (ITranchedPool.TrancheInfo storage) {
+    require(
+      trancheId > 0 && trancheId <= numSlices.mul(TranchingLogic.NUM_TRANCHES_PER_SLICE),
+      "invalid tranche"
+    );
+    uint256 sliceId = TranchingLogic.trancheIdToSliceIndex(trancheId);
+    ITranchedPool.PoolSlice storage slice = _poolSlices[sliceId];
+    ITranchedPool.TrancheInfo storage trancheInfo = TranchingLogic.isSeniorTrancheId(trancheId)
+      ? slice.seniorTranche
+      : slice.juniorTranche;
+    return trancheInfo;
+  }
+
+  // // Modifiers /////////////////////////////////////////////////////////////////
+
+  /// @inheritdoc IVersioned
+  function getVersion() external pure override returns (uint8[3] memory version) {
+    (version[0], version[1], version[2]) = (MAJOR_VERSION, MINOR_VERSION, PATCH_VERSION);
+  }
+
+  /// @dev NA: not authorized. not locker
+  modifier onlyLocker() {
+    require(hasRole(LOCKER_ROLE, msg.sender), "NA");
     _;
   }
 }

@@ -1,14 +1,15 @@
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.17;
 
-import { Auth, GlobalACL } from "../Auth.sol";
+import { GlobalACL } from "../Auth.sol";
 import { ERC20 } from "solmate/tokens/ERC20.sol";
 import { SafeTransferLib } from "solmate/utils/SafeTransferLib.sol";
+import { AggregateVault } from "src/vaults/AggregateVault.sol";
 
 uint256 constant PRECISION = 1e18;
 
 /// @title Vester
-/// @author Umami DAO
+/// @author Umami Devs
 /// @notice Vester contract to vest deposit and withdraw fee surplus into the aggregate vault
 contract Vester is GlobalACL {
     using SafeTransferLib for ERC20;
@@ -29,8 +30,8 @@ contract Vester is GlobalACL {
     mapping(address => VestingInfo) public vestingInfo;
     uint256 public vestDuration;
 
-    constructor(Auth _auth, address _aggregateVault, uint256 _vestDuration) GlobalACL(_auth) {
-        aggregateVault = _aggregateVault;
+    constructor(AggregateVault _aggregateVault, uint256 _vestDuration) GlobalACL(_aggregateVault.AUTH()) {
+        aggregateVault = address(_aggregateVault);
         _setVestDuration(_vestDuration);
     }
 
@@ -47,14 +48,14 @@ contract Vester is GlobalACL {
      * @param _asset The asset to claim
      */
     function claim(address _asset) public returns (uint256) {
-        uint256 vested = vested(_asset);
-        if (vested == 0) return 0;
+        uint256 _vested = vested(_asset);
+        if (_vested == 0) return 0;
 
         vestingInfo[_asset].lastClaim = block.timestamp;
-        emit Claimed(_asset, vested);
+        emit Claimed(_asset, _vested);
 
-        ERC20(_asset).safeTransfer(aggregateVault, vested);
-        return vested;
+        ERC20(_asset).safeTransfer(aggregateVault, _vested);
+        return _vested;
     }
 
     /**

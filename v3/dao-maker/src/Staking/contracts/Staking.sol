@@ -16,7 +16,7 @@ contract Staking is GlobalsAndUtility {
     )
     {
         require(IERC20Metadata(address(_stakingToken)).decimals() == TOKEN_DECIMALS, "STAKING: incompatible token decimals");
-        require(_launchTime >= block.timestamp, "STAKING: launch must be in future");
+        //require(_launchTime >= block.timestamp, "STAKING: launch must be in future");
         require(_originAddr != address(0), "STAKING: origin address is 0");
 
         stakingToken = _stakingToken;

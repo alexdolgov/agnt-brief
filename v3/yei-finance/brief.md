@@ -1,44 +1,73 @@
 # Agentic Audit Brief: Yei Finance
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 7 (0 matched; 7 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Yei Finance (`yei-finance`)
 - Website: [https://www.yei.finance/](https://www.yei.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:16.681Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
-- Chains: sei
-- Contract surface: 27 unique implementations (69 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $17,240,281.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Lending. Structurally: 40 project-authored contract(s) across 1 chain(s); 12 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on aave.
+No contract logic was present for Yei Finance in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Its contracts share 12 common project-authored base contract(s) (versionedinitializable, poolstorage, rewardsdistributor). Dominant framework: aave.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 143; live-surface contracts included: 69 (60 live, 9 unknown).
-- Excluded by liveness: 74 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/18 (0.0%)
-- Deployed-live implementations: 18 of 27 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/18
-- Verified + Unaudited implementations: 18
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 9
-- Unique implementations: 27
-- Raw deployments: 69
+- Unverified implementations: 0
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 7 (7 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,28 +86,9 @@ The protocol comprises 5 functional families. Its contracts share 12 common proj
 
 - None
 
-### ⚠️ Verified + Unaudited (18)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AaveProtocolDataProvider | unknown | sei | n/a | [`0x60c82a...07f0d6`](./contracts/sei-1329/0x60c82a40c57736a9c692c42e87a8849fb407f0d6/) | ⚠️ Unaudited |
-| ACLManager | governance | sei | n/a | [`0xc6f728...90eea6`](./contracts/sei-1329/0xc6f7283620683bd1fda0c20158a2a589a090eea6/) | ⚠️ Unaudited |
-| BorrowLogic | unknown | sei | n/a | 4 deployments: sei [`0x635901...348a41`](./contracts/sei-1329/0x635901ab3409d47da0e693e244b42baf4b348a41/); sei `0x99c952...a95d86`; sei `0x9c8a9f...a1279d`; sei `0xf7dd04...79b54e` | ⚠️ Unaudited |
-| BridgeLogic | unknown | sei | n/a | 4 deployments: sei [`0x3b28c1...505643`](./contracts/sei-1329/0x3b28c1c795f1382a083d822dc2997eef49505643/); sei `0x6ddbd4...8c73a8`; sei `0xca7352...f41e00`; sei `0xdf9d79...609a95` | ⚠️ Unaudited |
-| Clovis | unknown | sei | n/a | 2 deployments: sei [`0x8154d3...628555`](./contracts/sei-1329/0x8154d3161fc83ff69111b69b1120cd7475628555/); sei `0x81d3a2...bf89d2` | ⚠️ Unaudited |
-| DefaultReserveInterestRateStrategy | unknown | sei | n/a | 21 deployments: sei [`0x0df802...2d0b4b`](./contracts/sei-1329/0x0df8022519a8d1231293b24b2fd7a8bf992d0b4b/); sei `0x33afe4...e96eac`; sei `0x571591...d2dfb9`; sei `0x58f864...5e3a20`; sei `0x58f9da...8d0575`; sei `0x5d3872...49829c`; sei `0x5ee1bc...28678b`; sei `0x660a1f...0bb61d`; sei `0x704d96...1987c8`; sei `0x78b5de...d3a852`; sei `0x807878...6680b8`; sei `0x80c1af...c8af2a`; sei `0x8c857e...6d72e5`; sei `0x9bd159...6f2700`; sei `0xa3322e...b6b628`; sei `0xa753cb...d8cfbb`; sei `0xaeb509...90e3f1`; sei `0xaeca84...c14447`; sei `0xc1901f...340a3c`; sei `0xf4be50...c1ee06`; sei `0xfff1c1...83b8a2` | ⚠️ Unaudited |
-| EmissionManager | operational_periphery | sei | n/a | [`0x960200...46b2f1`](./contracts/sei-1329/0x96020007583c55abe6297090269179e6e046b2f1/) | ⚠️ Unaudited |
-| EModeLogic | unknown | sei | n/a | 3 deployments: sei [`0x365549...3c3bef`](./contracts/sei-1329/0x3655494c5c78102ecfe8e8f4b07e6de7413c3bef/); sei `0x81deec...46c038`; sei `0x859f69...b381ff` | ⚠️ Unaudited |
-| FlashLoanLogic | unknown | sei | n/a | 3 deployments: sei [`0x767148...a2cfd3`](./contracts/sei-1329/0x767148190d8b66ad7cd6a364866c1437d8a2cfd3/); sei `0xa4bfc8...f2bb19`; sei `0xdd66f9...41c857` | ⚠️ Unaudited |
-| LiquidationLogic | unknown | sei | n/a | 3 deployments: sei [`0x5d1c6e...189c6b`](./contracts/sei-1329/0x5d1c6e0d69e962851b315bc9eff92d5189189c6b/); sei `0x6cfc88...ee0c5b`; sei `0xd4cf1d...abf8fa` | ⚠️ Unaudited |
-| Pool | unknown | sei | n/a | 3 deployments: sei [`0x002081...17a1f2`](./contracts/sei-1329/0x00208103c28fba80e715435b8173361bb817a1f2/); sei `0x84b7c6...f85645`; sei `0xd078c4...c8f305` | ⚠️ Unaudited |
-| PoolAddressesProvider | core_logic | sei | n/a | [`0xff33a7...8f2a1e`](./contracts/sei-1329/0xff33a79d9190bd63d0e9a4946f7fccba0e8f2a1e/) | ⚠️ Unaudited |
-| PoolLogic | unknown | sei | n/a | 3 deployments: sei [`0x2d245f...4f2775`](./contracts/sei-1329/0x2d245f6181b5ee45ccd1bfa0a9b662f1594f2775/); sei `0x8301b0...64254d`; sei `0xe3d1cb...4b0dd7` | ⚠️ Unaudited |
-| SupplyLogic | unknown | sei | n/a | 3 deployments: sei [`0x0f8286...573421`](./contracts/sei-1329/0x0f8286f6aa0ecf83c9c1d87dac974871d0573421/); sei `0x1b94ed...043d8b`; sei `0x26355c...204718` | ⚠️ Unaudited |
-| UiPoolDataProviderV3 | unknown | sei | n/a | 4 deployments: sei [`0x186b51...b5f549`](./contracts/sei-1329/0x186b5114230d94c480c94f2ae9dd5f89ecb5f549/); sei `0x411958...e5c3e8`; sei `0xeb0cc2...f727da`; sei `0xfbc3db...5eaa1f` | ⚠️ Unaudited |
-| WormholeTransceiver | unknown | sei | n/a | [`0x67a0a8...f86ed3`](./contracts/sei-1329/0x67a0a897a32f0e5c76303666ca34178949f86ed3/) | ⚠️ Unaudited |
-| WormholeTransceiver | unknown | sei | n/a | [`0xefe505...aab91a`](./contracts/sei-1329/0xefe5054adf8c5fb416b4c6acca594b646caab91a/) | ⚠️ Unaudited |
-| WrappedTokenGatewayV3 | token | sei | n/a | [`0xbc096b...eec8aa`](./contracts/sei-1329/0xbc096b6a7d5404de916b3333ad223a1b32eec8aa/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -92,33 +102,50 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (9)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | sei | n/a | `0x05696a...bec7a3` | ❓ Unverified |
-| UnnamedContract | unknown | sei | n/a | `0x7cee89...ca9288` | ❓ Unverified |
-| UnnamedContract | unknown | sei | n/a | `0x82d1ae...09d81f` | ❓ Unverified |
-| UnnamedContract | unknown | sei | n/a | `0xaf448e...405307` | ❓ Unverified |
-| UnnamedContract | unknown | sei | n/a | `0xb2b323...60be79` | ❓ Unverified |
-| UnnamedContract | unknown | sei | n/a | `0xc84490...e96bf6` | ❓ Unverified |
-| UnnamedContract | unknown | sei | n/a | `0xccefc4...f87b79` | ❓ Unverified |
-| UnnamedContract | unknown | sei | n/a | `0xe721a9...f85578` | ❓ Unverified |
-| UnnamedContract | unknown | sei | n/a | `0xf83c76...4180c4` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [spaces/j0nufC5pf4ZbVoZ4vP67/uploads/WXhpES7EjLtpGpkH241h/Yei Finance - Zellic Audit Report.pdf](https://2983504023-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj0nufC5pf4ZbVoZ4vP67%2Fuploads%2FWXhpES7EjLtpGpkH241h%2FYei%20Finance%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
-| [spaces/j0nufC5pf4ZbVoZ4vP67/uploads/prx2e8i2NZ1apjDj20to/Yei Finance - Zellic Audit Report - Oracle.pdf](https://2983504023-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj0nufC5pf4ZbVoZ4vP67%2Fuploads%2Fprx2e8i2NZ1apjDj20to%2FYei%20Finance%20-%20Zellic%20Audit%20Report%20-%20Oracle.pdf) | Zellic | Audit | 2024-07 | stale | Direct | n/a | 0 | n/a |
-| [spaces/j0nufC5pf4ZbVoZ4vP67/uploads/dWGR2kDcaGsDkYGV1SOs/Yei Finance - PeckShield Audit Report - Yei Swap.pdf](https://2983504023-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj0nufC5pf4ZbVoZ4vP67%2Fuploads%2FdWGR2kDcaGsDkYGV1SOs%2FYei%20Finance%20-%20PeckShield%20Audit%20Report%20-%20Yei%20Swap.pdf) | PeckShield | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
-| [spaces/j0nufC5pf4ZbVoZ4vP67/uploads/5VaVd8HkMLq4gPN3m2Wv/Yei Finance - billh Security Review - Yei Swap.pdf](https://2983504023-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj0nufC5pf4ZbVoZ4vP67%2Fuploads%2F5VaVd8HkMLq4gPN3m2Wv%2FYei%20Finance%20-%20billh%20Security%20Review%20-%20Yei%20Swap.pdf) | billh | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
-| [spaces/j0nufC5pf4ZbVoZ4vP67/uploads/4lKFvt4Xg1KLvyEGZkre/Yei Finance - billh Security Review - YeiBridge.pdf](https://2983504023-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj0nufC5pf4ZbVoZ4vP67%2Fuploads%2F4lKFvt4Xg1KLvyEGZkre%2FYei%20Finance%20-%20billh%20Security%20Review%20-%20YeiBridge.pdf) | billh | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
-| [spaces/j0nufC5pf4ZbVoZ4vP67/uploads/ViAUJoj7zLwiCd8aCFgz/Yei Finance - billh Security Report - TGE.pdf](https://2983504023-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj0nufC5pf4ZbVoZ4vP67%2Fuploads%2FViAUJoj7zLwiCd8aCFgz%2FYei%20Finance%20-%20billh%20Security%20Report%20-%20TGE.pdf) | billh | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
-| [Yei Finance Oracle - Zellic Audit Report.pdf](https://github.com/Zellic/publications/blob/master/Yei%20Finance%20Oracle%20-%20Zellic%20Audit%20Report.pdf) | zellic | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [spaces/j0nufC5pf4ZbVoZ4vP67/uploads/WXhpES7EjLtpGpkH241h/Yei Finance - Zellic Audit Report.pdf](https://2983504023-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj0nufC5pf4ZbVoZ4vP67%2Fuploads%2FWXhpES7EjLtpGpkH241h%2FYei%20Finance%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2024-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+| [spaces/j0nufC5pf4ZbVoZ4vP67/uploads/prx2e8i2NZ1apjDj20to/Yei Finance - Zellic Audit Report - Oracle.pdf](https://2983504023-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj0nufC5pf4ZbVoZ4vP67%2Fuploads%2Fprx2e8i2NZ1apjDj20to%2FYei%20Finance%20-%20Zellic%20Audit%20Report%20-%20Oracle.pdf) | Zellic | Audit | 2024-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+| [spaces/j0nufC5pf4ZbVoZ4vP67/uploads/dWGR2kDcaGsDkYGV1SOs/Yei Finance - PeckShield Audit Report - Yei Swap.pdf](https://2983504023-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj0nufC5pf4ZbVoZ4vP67%2Fuploads%2FdWGR2kDcaGsDkYGV1SOs%2FYei%20Finance%20-%20PeckShield%20Audit%20Report%20-%20Yei%20Swap.pdf) | PeckShield | Audit | 2025-04 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [spaces/j0nufC5pf4ZbVoZ4vP67/uploads/5VaVd8HkMLq4gPN3m2Wv/Yei Finance - billh Security Review - Yei Swap.pdf](https://2983504023-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj0nufC5pf4ZbVoZ4vP67%2Fuploads%2F5VaVd8HkMLq4gPN3m2Wv%2FYei%20Finance%20-%20billh%20Security%20Review%20-%20Yei%20Swap.pdf) | billh | Audit | 2025-04 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 1 | medium |
+| [spaces/j0nufC5pf4ZbVoZ4vP67/uploads/4lKFvt4Xg1KLvyEGZkre/Yei Finance - billh Security Review - YeiBridge.pdf](https://2983504023-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj0nufC5pf4ZbVoZ4vP67%2Fuploads%2F4lKFvt4Xg1KLvyEGZkre%2FYei%20Finance%20-%20billh%20Security%20Review%20-%20YeiBridge.pdf) | billh | Audit | 2025-08 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+| [spaces/j0nufC5pf4ZbVoZ4vP67/uploads/ViAUJoj7zLwiCd8aCFgz/Yei Finance - billh Security Report - TGE.pdf](https://2983504023-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj0nufC5pf4ZbVoZ4vP67%2Fuploads%2FViAUJoj7zLwiCd8aCFgz%2FYei%20Finance%20-%20billh%20Security%20Report%20-%20TGE.pdf) | billh | Audit | 2025-08 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 1 | medium |
+| [Yei Finance Oracle - Zellic Audit Report.pdf](https://github.com/Zellic/publications/blob/master/Yei%20Finance%20Oracle%20-%20Zellic%20Audit%20Report.pdf) | zellic | Audit | 2024-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [12427] spaces/j0nufC5pf4ZbVoZ4vP67/uploads/WXhpES7EjLtpGpkH241h/Yei Finance - Zellic Audit Report.pdf — no match: Only one contract, Oracle.sol, is in scope. Audit date is June 4, 2024 from cover page.
+- [12428] spaces/j0nufC5pf4ZbVoZ4vP67/uploads/prx2e8i2NZ1apjDj20to/Yei Finance - Zellic Audit Report - Oracle.pdf — no match: Only one contract (Oracle.sol) is in scope. Audit date is July 9, 2024 from cover page.
+- [12429] spaces/j0nufC5pf4ZbVoZ4vP67/uploads/dWGR2kDcaGsDkYGV1SOs/Yei Finance - PeckShield Audit Report - Yei Swap.pdf — no match: Scope table lists 'Name: Yei Finance' but contracts in scope are YeiSwap and NonfungiblePositionManager based on findings targets.
+- [12430] spaces/j0nufC5pf4ZbVoZ4vP67/uploads/5VaVd8HkMLq4gPN3m2Wv/Yei Finance - billh Security Review - Yei Swap.pdf — no match: Only YeiSwap.sol is explicitly referenced in findings; no formal scope table provided.
+- [12431] spaces/j0nufC5pf4ZbVoZ4vP67/uploads/4lKFvt4Xg1KLvyEGZkre/Yei Finance - billh Security Review - YeiBridge.pdf — no match: Only one contract (YeiCctpV2Bridge) is explicitly referenced in the scope and findings. The scope section lists a GitHub repository and commit but no individual contract files; the contract name is extracted from the findings context.
+- [12432] spaces/j0nufC5pf4ZbVoZ4vP67/uploads/ViAUJoj7zLwiCd8aCFgz/Yei Finance - billh Security Report - TGE.pdf — no match: Scope section lists two GitHub repos but no specific contract files. Only YeiDistributor.sol is referenced in findings. Other contracts (feeDistributor, votingEscrow) are dependencies, not in scope.
+- [14969] Yei Finance Oracle - Zellic Audit Report.pdf — no match: Only one contract (Oracle.sol) is in scope. The audit date is June 4, 2024 from the cover page.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| spaces/j0nufC5pf4ZbVoZ4vP67/uploads/WXhpES7EjLtpGpkH241h/Yei Finance - Zellic Audit Report.pdf | Oracle | unmatched — not counted | — | listed in scope table and findings target | no |
+| spaces/j0nufC5pf4ZbVoZ4vP67/uploads/prx2e8i2NZ1apjDj20to/Yei Finance - Zellic Audit Report - Oracle.pdf | Oracle | unmatched — not counted | — | listed in scope section as 'Programs Oracle.sol' | no |
+| spaces/j0nufC5pf4ZbVoZ4vP67/uploads/dWGR2kDcaGsDkYGV1SOs/Yei Finance - PeckShield Audit Report - Yei Swap.pdf | YeiSwap | unmatched — not counted | — | Listed in scope table and findings target | no |
+| spaces/j0nufC5pf4ZbVoZ4vP67/uploads/dWGR2kDcaGsDkYGV1SOs/Yei Finance - PeckShield Audit Report - Yei Swap.pdf | NonfungiblePositionManager | unmatched — not counted | — | Mentioned as target in finding PVE-003 | no |
+| spaces/j0nufC5pf4ZbVoZ4vP67/uploads/5VaVd8HkMLq4gPN3m2Wv/Yei Finance - billh Security Review - Yei Swap.pdf | YeiSwap | unmatched — not counted | — | mentioned in findings context | no |
+| spaces/j0nufC5pf4ZbVoZ4vP67/uploads/4lKFvt4Xg1KLvyEGZkre/Yei Finance - billh Security Review - YeiBridge.pdf | YeiCctpV2Bridge | unmatched — not counted | — | mentioned in findings context | no |
+| spaces/j0nufC5pf4ZbVoZ4vP67/uploads/ViAUJoj7zLwiCd8aCFgz/Yei Finance - billh Security Report - TGE.pdf | YeiDistributor | unmatched — not counted | — | mentioned in findings context | no |
+| Yei Finance Oracle - Zellic Audit Report.pdf | Oracle | unmatched — not counted | — | listed in scope section as 'Program Oracle.sol' | no |
 
 ## Coverage Gaps
 
@@ -133,7 +160,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 27 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -141,7 +168,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 8 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=5, medium=2
 - Match method counts: n/a
 
 Zero-match audit list:

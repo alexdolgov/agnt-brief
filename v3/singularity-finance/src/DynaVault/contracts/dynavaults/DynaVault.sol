@@ -553,6 +553,23 @@ contract DynaVault is ERC20, IDynaVaultAPI, Clonable, ReentrancyGuard {
 	}
 
 	/**
+	 * @notice Calculates shares for fees with given values for total supply and free funds
+	 * @param feeAmount The amount for fee
+	 * @param feeToken The address of the fee token
+	 * @param givenTotalSupply The amount of total supply to use in calculation
+	 * @param givenFreeFunds The amount of free funds to use in calculation
+	 * @return feeShares The amount of shares to mint for fees
+	 */
+	function calcSharesForFeeAmountUsingGivenTotalSupplyAndFreeFunds(
+		uint256 feeAmount,
+		address feeToken,
+		uint256 givenTotalSupply,
+		uint256 givenFreeFunds
+	) external view returns (uint256 feeShares) {
+		return DynaVaultLib.calcSharesForFeeAmountUsingGivenTotalSupplyAndFreeFunds(feeAmount, feeToken, givenTotalSupply, givenFreeFunds);
+	}
+
+	/**
 	 * @notice Returns value of token in quote asset
 	 * @param base The address of the base token
 	 * @param amount The amount of base token

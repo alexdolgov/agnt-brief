@@ -1,12 +1,18 @@
 {
   "component": "WooStakingProxy",
   "main_contract": "WooStakingProxy",
+  "source_entry_count": 19,
   "source_file_count": 19,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WooStakingProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 4,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Zellic/publications/blob/master/WOOFI%20Stake%20-%20Zellic%20Audit%20Report.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -14,7 +20,9 @@
       "address": "0xba91ffd8a2b9f68231eca6af51623b3433a89b13",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401072"
     },
     {
       "chain": "optimism",
@@ -22,7 +30,9 @@
       "address": "0xba91ffd8a2b9f68231eca6af51623b3433a89b13",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401101"
     },
     {
       "chain": "polygon",
@@ -30,7 +40,9 @@
       "address": "0xba91ffd8a2b9f68231eca6af51623b3433a89b13",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401165"
     },
     {
       "chain": "avalanche",
@@ -38,7 +50,9 @@
       "address": "0x3bd96847c40de8b0f20da32568bd15462c1386e3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401326"
     }
   ]
 }

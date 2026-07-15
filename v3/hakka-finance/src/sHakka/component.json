@@ -1,7 +1,15 @@
 {
   "component": "sHakka",
   "main_contract": "sHakka",
-  "source_file_count": 3,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/sHakka\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xb925863a15ebdeae1a638bf2b6fd00d4db897a62",
+      "address": "0xd9958826bce875a75cc1789d5929459e6ff15040",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394888"
     }
   ]
 }

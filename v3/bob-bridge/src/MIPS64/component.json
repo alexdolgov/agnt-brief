@@ -1,7 +1,15 @@
 {
   "component": "MIPS64",
   "main_contract": "MIPS64",
-  "source_file_count": 15,
+  "source_entry_count": 19,
+  "source_file_count": 19,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MIPS64\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x17c64e93846935dfbd281a5540a14d4cd67195f7",
+      "address": "0xf027f4a985560fb13324e943edf55ad6f1d15dc1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392344"
     }
   ]
 }

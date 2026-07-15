@@ -2,20 +2,14 @@
 pragma solidity =0.7.6;
 
 import './interfaces/ISquadV3Factory.sol';
-import "./interfaces/ISquadV3PoolDeployer.sol";
+import './interfaces/ISquadV3PoolDeployer.sol';
 import './interfaces/ISquadV3Pool.sol';
-import './blast/SquadGas.sol';
-import './blast/interfaces/IBlastPoints.sol';
 
 /// @title Canonical SquadSwap V3 factory
 /// @notice Deploys SquadSwap V3 pools and manages ownership and control over pool protocol fees
-contract SquadV3Factory is ISquadV3Factory, SquadGas {
-
+contract SquadV3Factory is ISquadV3Factory {
     /// @inheritdoc ISquadV3Factory
     address public override owner;
-
-    /// Points adminf or Blast points
-    address public override pointsAdmin;
 
     address public immutable poolDeployer;
 
@@ -31,25 +25,22 @@ contract SquadV3Factory is ISquadV3Factory, SquadGas {
 
     address public override feeManager;
 
+    address public override poolManager;
+
     modifier onlyOwner() {
-        require(msg.sender == owner, "Not owner");
+        require(msg.sender == owner, 'Not owner');
         _;
     }
 
     modifier onlyOwnerOrLmPoolDeployer() {
-        require(msg.sender == owner || msg.sender == lmPoolDeployer, "Not owner or LM pool deployer");
+        require(msg.sender == owner || msg.sender == lmPoolDeployer, 'Not owner or LM pool deployer');
         _;
     }
 
-    address private constant BLAST_POINTS = 0x2536FE9ab3F511540F2f9e2eC2A805005C3Dd800; // mainnet
-    // address private constant BLAST_POINTS = 0x2fc95838c71e76ec69ff817983BFf17c710F34E0; // testnet
-
-    constructor(address _poolDeployer, address _pointsAdmin) SquadGas(msg.sender) {
+    constructor(address _poolDeployer) {
         poolDeployer = _poolDeployer;
         owner = msg.sender;
         emit OwnerChanged(address(0), msg.sender);
-        pointsAdmin = _pointsAdmin;
-        IBlastPoints(BLAST_POINTS).configurePointsOperator(_pointsAdmin);
 
         feeAmountTickSpacing[100] = 1;
         feeAmountTickSpacingExtraInfo[100] = TickSpacingExtraInfo({whitelistRequested: false, enabled: true});
@@ -70,19 +61,15 @@ contract SquadV3Factory is ISquadV3Factory, SquadGas {
     }
 
     /// @inheritdoc ISquadV3Factory
-    function createPool(
-        address tokenA,
-        address tokenB,
-        uint24 fee
-    ) external override returns (address pool) {
+    function createPool(address tokenA, address tokenB, uint24 fee) external override returns (address pool) {
         require(tokenA != tokenB);
         (address token0, address token1) = tokenA < tokenB ? (tokenA, tokenB) : (tokenB, tokenA);
         require(token0 != address(0));
         int24 tickSpacing = feeAmountTickSpacing[fee];
         TickSpacingExtraInfo memory info = feeAmountTickSpacingExtraInfo[fee];
-        require(tickSpacing != 0 && info.enabled, "fee is not available yet");
+        require(tickSpacing != 0 && info.enabled, 'fee is not available yet');
         if (info.whitelistRequested) {
-            require(_whiteListAddresses[msg.sender], "user should be in the white list for this fee tier");
+            require(_whiteListAddresses[msg.sender], 'user should be in the white list for this fee tier');
         }
         require(getPool[token0][token1][fee] == address(0));
         pool = ISquadV3PoolDeployer(poolDeployer).deploy(address(this), token0, token1, fee, tickSpacing);
@@ -115,18 +102,14 @@ contract SquadV3Factory is ISquadV3Factory, SquadGas {
 
     /// @inheritdoc ISquadV3Factory
     function setWhiteListAddress(address user, bool verified) public override onlyOwner {
-        require(_whiteListAddresses[user] != verified, "state not change");
+        require(_whiteListAddresses[user] != verified, 'state not change');
         _whiteListAddresses[user] = verified;
 
         emit WhiteListAdded(user, verified);
     }
 
     /// @inheritdoc ISquadV3Factory
-    function setFeeAmountExtraInfo(
-        uint24 fee,
-        bool whitelistRequested,
-        bool enabled
-    ) public override onlyOwner {
+    function setFeeAmountExtraInfo(uint24 fee, bool whitelistRequested, bool enabled) public override onlyOwner {
         require(feeAmountTickSpacing[fee] != 0);
 
         feeAmountTickSpacingExtraInfo[fee] = TickSpacingExtraInfo({
@@ -151,7 +134,7 @@ contract SquadV3Factory is ISquadV3Factory, SquadGas {
         uint128 amount0Requested,
         uint128 amount1Requested
     ) external override returns (uint128 amount0, uint128 amount1) {
-        require(msg.sender == feeManager, "no permission");
+        require(msg.sender == feeManager, 'no permission');
         return ISquadV3Pool(pool).collectProtocol(feeManager, amount0Requested, amount1Requested);
     }
 
@@ -164,13 +147,8 @@ contract SquadV3Factory is ISquadV3Factory, SquadGas {
         emit UpdateFeeManager(_manager);
     }
 
-    function claimDeployerGas(address _recipient) external {
-        require(msg.sender == owner);
-        ISquadV3PoolDeployer(poolDeployer).claimGas(_recipient);
-    }
-
-    function updatePointsAdmin(address _pointsAdmin) external {
-        require(msg.sender == owner);
-        pointsAdmin = _pointsAdmin;
+    function changePoolManager(address _manager) external override onlyOwner {
+        poolManager = _manager;
+        emit UpdatePoolManager(_manager);
     }
 }

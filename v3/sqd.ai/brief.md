@@ -1,82 +1,130 @@
 # Agentic Audit Brief: SQD.ai
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 11 across 1 audit(s)
+- Eligible audit results: 2 (1 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: SQD.ai (`sqd.ai`)
 - Website: [https://www.sqd.ai/](https://www.sqd.ai/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:56.533Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-1cbb
-- Chains: arbitrum, base, bsc, ethereum
-- Contract surface: 19 unique implementations (21 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: arbitrum
+- Contract surface: 16 unique implementations (17 raw deployments)
+- Coverage basis: 11/16 confirmed own live verified implementations (68.8%); conservative 68.8% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $21,978,065.61
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Developer Tools. Structurally: 33 project-authored contract(s) across 4 chain(s); 7 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for SQD.ai. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 7 functional families. Its contracts share 11 common project-authored base contract(s) (erc20basic, blacklistable, proxy). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 18 contract row(s) across arbitrum. Structural roles: 9 unclassified, 5 core, 4 supporting. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 18
+- Structural roles: unclassified (9), core (5), supporting (4)
+- Contract kinds: contract (16), abstract (2)
+- Detected standards: accesscontrol (7), erc165 (7), pausable (5), erc20 (1)
+- Frameworks: openzeppelin (8), prb-math (1)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 9 contracts are derived from known codebases. 9 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- AllocationsViewer (`0x88ce6d...c15c4c`, chain 42161)
+- DistributedRewardsDistribution (`0x4de282...362aea`, chain 42161)
+- LinearToSqrtCap (`0x0eb27b...616545`, chain 42161)
+- NetworkController (`0x4cf580...4f0da7`, chain 42161)
+- RewardTreasury (`0x237abf...a8a2a0`, chain 42161)
+- SQD (`0x133742...6f8ab1`, chain 42161)
+- Staking (`0xb31a0d...ac9a51`, chain 42161)
+- VestingFactory (`0x1f8f83...4e4ece`, chain 42161)
+- WorkerRegistration (`0x36e2b1...fcae4e`, chain 42161)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 60; live-surface contracts included: 21 (18 live, 3 unknown).
-- Excluded by liveness: 39 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 18; live-surface contracts included: 18 (17 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 16/44 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/16 (0.0%)
-- Deployed-live implementations: 16 of 19 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/16
-- Verified + Unaudited implementations: 16
+- Coverage of address-book-owned deployed-live implementations: 11/16 (68.8%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 16 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
+- Deployed-live implementations: 16 of 16 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 11/16
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 3
-- Unique implementations: 19
-- Raw deployments: 21
+- Unverified implementations: 0
+- Unique implementations: 16
+- Raw deployments: 17
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 0
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-04 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 1 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
-- Tier 1 coverage: No Tier 1 coverage
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 11 match-unverified
+- Tier 1 coverage: 68.8% (ChainSecurity)
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| ChainSecurity | Tier 1 | 11 | 68.8% | 2024-04 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (11)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AllocationsViewer | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-393004 | `0x88ce6d...c15c4c` | ✅ Audited |
+| EqualStrategy | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-393011 | `0xa604f8...277f8b` | ✅ Audited |
+| LinearToSqrtCap | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392979 | `0x0eb27b...616545` | ✅ Audited |
+| NetworkController | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392993 | `0x4cf580...4f0da7` | ✅ Audited |
+| RewardCalculation | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-393018 | `0xd3d2c1...516eb5` | ✅ Audited |
+| RewardTreasury | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-392984 | `0x237abf...a8a2a0` | ✅ Audited |
+| Staking | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-393014 | `0xb31a0d...ac9a51` | ✅ Audited |
+| SubequalStrategy | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-393019 | `0xf19709...66ab62` | ✅ Audited |
+| TemporaryHoldingFactory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392981 | `0x14926e...4d8d0d` | ✅ Audited |
+| VestingFactory | operational_periphery | project_anchor | own_supporting | 0 | arbitrum | unit-392982 | `0x1f8f83...4e4ece` | ✅ Audited |
+| WorkerRegistration | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392990 | `0x36e2b1...fcae4e` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (16)
+### ⚠️ Verified + Unaudited (5)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| DistributedRewardsDistribution | unknown | arbitrum | n/a | [`0x4de282...362aea`](./contracts/arbitrum-42161/0x4de282bd18ae4987b3070f4d5ef8c80756362aea/) | ⚠️ Unaudited |
-| FeeRouterModule | adapter | arbitrum | n/a | [`0x59c074...92a787`](./contracts/arbitrum-42161/0x59c074ee3dd85125620b4a5b452c008bc792a787/) | ⚠️ Unaudited |
-| FiatTokenV1 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x088247...57fe56`](./contracts/ethereum-1/0x0882477e7895bdc5cea7cb1552ed914ab157fe56/); ethereum `0x0fbbc6...49a77f` | ⚠️ Unaudited |
-| FiatTokenV2 | unknown | ethereum | n/a | [`0xb7277a...3778a2`](./contracts/ethereum-1/0xb7277a6e95992041568d9391d09d0122023778a2/) | ⚠️ Unaudited |
-| FiatTokenV2_1 | token | ethereum | n/a | [`0xa2327a...4cbdcf`](./contracts/ethereum-1/0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf/) | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | ethereum | n/a | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
-| NetworkController | governance | arbitrum | n/a | [`0xf5462e...82d68d`](./contracts/arbitrum-42161/0xf5462ef65ca8a9cca789c912bc8ada80b582d68d/) | ⚠️ Unaudited |
-| OptimismMintableERC20 | bridge_template | base | n/a | [`0xd4554b...9b3e78`](./contracts/base-8453/0xd4554bea546efa83c1e6b389ecac40ea999b3e78/) | ⚠️ Unaudited |
-| PeerToken | token | bsc | n/a | [`0xe50e3d...7fcc13`](./contracts/bsc-56/0xe50e3d1a46070444f44df911359033f2937fcc13/) | ⚠️ Unaudited |
-| RewardTreasury | operational_periphery | arbitrum | n/a | [`0x237abf...a8a2a0`](./contracts/arbitrum-42161/0x237abf43bc51fd5c50d0d598a1a4c26e56a8a2a0/) | ⚠️ Unaudited |
-| SQD | unknown | ethereum | n/a | 2 deployments: ethereum [`0x133742...6f8ab1`](./contracts/ethereum-1/0x1337420ded5adb9980cfc35f8f2b054ea86f8ab1/); arbitrum [`0x133742...6f8ab1`](./contracts/arbitrum-42161/0x1337420ded5adb9980cfc35f8f2b054ea86f8ab1/) | ⚠️ Unaudited |
-| Staking | unknown | arbitrum | n/a | [`0xb31a0d...ac9a51`](./contracts/arbitrum-42161/0xb31a0d39d2c69ed4b28d96e12cbf52c5f9ac9a51/) | ⚠️ Unaudited |
-| V2_1Upgrader | unknown | ethereum | n/a | [`0xd13689...b5259b`](./contracts/ethereum-1/0xd13689e8da0ed95b55100e27b7dbc95c03b5259b/) | ⚠️ Unaudited |
-| V2Upgrader | unknown | ethereum | n/a | [`0xed24bd...e272fc`](./contracts/ethereum-1/0xed24bd79a3f2ba4325e9c553164e299c65e272fc/) | ⚠️ Unaudited |
-| VestingFactory | operational_periphery | arbitrum | n/a | [`0x1f8f83...4e4ece`](./contracts/arbitrum-42161/0x1f8f83cd76baeca1cb5c064ad59203c82b4e4ece/) | ⚠️ Unaudited |
-| WorkerRegistration | unknown | arbitrum | n/a | [`0x36e2b1...fcae4e`](./contracts/arbitrum-42161/0x36e2b147db67e76ab67a4d07c293670ebefcae4e/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| DistributedRewardsDistribution | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392994 | `0x4de282...362aea` | ⚠️ Unaudited |
+| GatewayRegistry | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392986 | `0x259112...df2152` | ⚠️ Unaudited |
+| GatewayRegistry | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-393022 | `0x8a90a1...eb8c4b` | ⚠️ Unaudited |
+| Router | unknown | project_anchor | own_supporting | 1 | arbitrum | unit-393021 | 2 deployments: arbitrum `0x4a7c41...ae86aa`; arbitrum `0x67f56d...9da941` | ⚠️ Unaudited |
+| SQD | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392980 | `0x133742...6f8ab1` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,50 +138,85 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xa9d1e0...1d3e43` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x365709...2d8306` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf7b057...7d8cc4` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [ChainSecurity_Subsquid_Subsquid_Audit.pdf (also discovered via alternate URL)](https://www.chainsecurity.com/reports/Subsquid/ChainSecurity_Subsquid_Subsquid_Audit.pdf) | ChainSecurity | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
-| [Manual audit seed](https://www.chainsecurity.com/security-audit/subsquid-smart-contracts) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [ChainSecurity_Subsquid_Subsquid_Audit.pdf](https://www.chainsecurity.com/reports/Subsquid/ChainSecurity_Subsquid_Subsquid_Audit.pdf) | ChainSecurity | Audit | 2024-04 | stale | Direct | contract_name | matched | 11 | 0 | 0 | 7 | high |
+| [Manual audit seed](https://www.chainsecurity.com/security-audit/subsquid-smart-contracts) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [21283] ChainSecurity_Subsquid_Subsquid_Audit.pdf — matched: All contracts listed in the scope table under section 2.1. Extracted date from cover page: 'April 17, 2024'.
+- [24475] Manual audit seed — no match: No contract names or scope section found in the provided text.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | Executable | unmatched — not counted | — | listed in scope table | no |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | Vesting | unmatched — not counted | — | listed in scope table | no |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | GatewayRegistry | ambiguous — not counted | GatewayRegistry (alternative) `0x259112...df2152` — deployed 2024-05-06 14:35:30+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x8a90a1...eb8c4b` — deployed 2024-05-06 14:35:38+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | RewardCalculation | own contract | RewardCalculation (selected) `0xd3d2c1...516eb5` — deployed 2024-05-06 14:35:54+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | Staking | own contract | Staking (selected) `0xb31a0d...ac9a51` — deployed 2024-05-06 14:35:26+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | DistributedRewardDistribution | unmatched — not counted | — | listed in scope table | no |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | WorkerRegistration | own contract | WorkerRegistration (selected) `0x36e2b1...fcae4e` — deployed 2024-05-06 14:35:27+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | NetworkController | own contract | NetworkController (selected) `0x4cf580...4f0da7` — deployed 2024-05-06 14:35:18+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | AllocationsViewer | own contract | AllocationsViewer (selected) `0x88ce6d...c15c4c` — deployed 2024-05-06 14:35:43+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | SoftCap | own contract | LinearToSqrtCap (selected) `0x0eb27b...616545` — deployed 2024-06-19 13:18:48+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | TemporaryHolding | unmatched — not counted | — | listed in scope table | no |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | RewardTreasury | own contract | RewardTreasury (selected) `0x237abf...a8a2a0` — deployed 2024-05-06 14:35:28+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | EqualStrategy | own contract | EqualStrategy (selected) `0xa604f8...277f8b` — deployed 2024-05-06 14:35:41+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | SubequalStrategy | own contract | SubequalStrategy (selected) `0xf19709...66ab62` — deployed 2024-05-06 14:35:42+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | Router | ambiguous — not counted | Router (alternative) `0x4a7c41...ae86aa` — deployed 2024-05-06 14:35:15+03 — liveness: live (proxy_unit_reachable)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x67f56d...9da941` — deployed 2024-05-06 14:35:17+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | VestingFactory | own contract | VestingFactory (selected) `0x1f8f83...4e4ece` — deployed 2024-05-06 14:35:55+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | TemporaryHoldingFactory | own contract | TemporaryHoldingFactory (selected) `0x14926e...4d8d0d` — deployed 2024-05-06 14:35:56+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| ChainSecurity_Subsquid_Subsquid_Audit.pdf | AccessControlledPausable | unmatched — not counted | — | listed in scope table | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| arbitrum | `0x4de282...362aea` | DistributedRewardsDistribution | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x259112...df2152` | GatewayRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x8a90a1...eb8c4b` | GatewayRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x4a7c41...ae86aa` | Router | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x133742...6f8ab1` | SQD | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 16 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 19 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Address-book scope dispositions: 11 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 2 ambiguous, 5 unmatched
+- Matched-own operational status: 11 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1, low=1
+- Match method counts: unique_name=11
 
 Zero-match audit list:
 
-- [21283] ChainSecurity_Subsquid_Subsquid_Audit.pdf
 - [24475] Manual audit seed
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,18 +1,28 @@
 {
   "component": "FolioDeployer-3",
   "main_contract": "FolioDeployer",
-  "source_file_count": 104,
+  "source_entry_count": 83,
+  "source_file_count": 83,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FolioDeployer-3\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x4d201a6e5bf975e2cee9e5cbdfc803c0ff122073",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5bed18aca50e6057e6658fe8498004092eedcdcf",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398336"
     }
   ]
 }

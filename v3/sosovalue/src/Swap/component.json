@@ -1,42 +1,32 @@
 {
   "component": "Swap",
   "main_contract": "Swap",
-  "source_file_count": 37,
-  "deployment_count": 4,
-  "audited": false,
-  "audits_covering": [],
+  "source_entry_count": 26,
+  "source_file_count": 26,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Swap\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/blocksecteam/audit-reports/blob/main/solidity/blocksec_sosovaluelabs_ssi_v1.0-signed.pdf",
+    "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SSI%20Protocol%20-%20SlowMist%20Audit%20Report.pdf",
+    "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SSI%20Protocol%20Phase2%20-%20SlowMist%20Audit%20Report.pdf"
+  ],
   "addresses": [
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x008055f9450be15d1314f64e6ef04b7a802fcd5f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
     {
       "chain": "base",
       "chain_id": 8453,
       "address": "0x640cb7201810bc920835a598248c4fe4898bb5e0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xae9f646e42dec86abe64b88235894bf68240a43b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xf909bfa750721501b4f8433588fae5ce303db08b",
-      "is_proxy": true,
-      "implementation_address": "0xae9f646e42dec86abe64b88235894bf68240a43b",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405611"
     }
   ]
 }

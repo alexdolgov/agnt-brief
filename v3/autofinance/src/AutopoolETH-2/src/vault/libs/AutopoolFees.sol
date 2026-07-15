@@ -1,12 +1,11 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
 
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { IAutopool } from "src/interfaces/vault/IAutopool.sol";
 import { Math } from "openzeppelin-contracts/utils/math/Math.sol";
 import { AutopoolToken } from "src/vault/libs/AutopoolToken.sol";
-import { AutopoolState } from "src/vault/libs/AutopoolState.sol";
 
 library AutopoolFees {
     using Math for uint256;
@@ -21,7 +20,7 @@ library AutopoolFees {
     /// @notice Max periodic fee, 10%.  100% = 10_000.
     uint256 public constant MAX_PERIODIC_FEE_BPS = 1000;
 
-    uint256 public constant SECONDS_IN_YEAR = 365 days;
+    uint256 public constant SECONDS_IN_YEAR = 365 * 1 days;
 
     event FeeCollected(uint256 fees, address feeSink, uint256 mintedShares, uint256 profit, uint256 totalAssets);
     event PeriodicFeeCollected(uint256 fees, address feeSink, uint256 mintedShares);
@@ -42,41 +41,40 @@ library AutopoolFees {
 
     /// @notice Returns the amount of unlocked profit shares that will be burned
     function unlockedShares(
-        AutopoolState storage $
+        IAutopool.ProfitUnlockSettings storage profitUnlockSettings,
+        AutopoolToken.TokenData storage tokenData
     ) public view returns (uint256 shares) {
-        uint256 fullTime = $.profitUnlockSettings.fullProfitUnlockTime;
+        uint256 fullTime = profitUnlockSettings.fullProfitUnlockTime;
         if (fullTime > block.timestamp) {
-            shares = $.profitUnlockSettings.profitUnlockRate
-                * (block.timestamp - $.profitUnlockSettings.lastProfitUnlockTime) / MAX_BPS_PROFIT;
+            shares = profitUnlockSettings.profitUnlockRate
+                * (block.timestamp - profitUnlockSettings.lastProfitUnlockTime) / MAX_BPS_PROFIT;
         } else if (fullTime != 0) {
-            shares = $.token.balances[address(this)];
+            shares = tokenData.balances[address(this)];
         }
     }
 
     function initializeFeeSettings(
-        AutopoolState storage $
+        IAutopool.AutopoolFeeSettings storage settings
     ) external {
         uint256 timestamp = block.timestamp;
-
-        // Stops fees from being able to be claimed before init timestamp.
-        $.feeSettings.lastPeriodicFeeTake = timestamp;
-        $.feeSettings.navPerShareLastFeeMark = FEE_DIVISOR;
-        $.feeSettings.navPerShareLastFeeMarkTimestamp = timestamp;
-
+        settings.lastPeriodicFeeTake = timestamp; // Stops fees from being able to be claimed before init timestamp.
+        settings.navPerShareLastFeeMark = FEE_DIVISOR;
+        settings.navPerShareLastFeeMarkTimestamp = timestamp;
         emit LastPeriodicFeeTakeSet(timestamp);
     }
 
     function burnUnlockedShares(
-        AutopoolState storage $
+        IAutopool.ProfitUnlockSettings storage profitUnlockSettings,
+        AutopoolToken.TokenData storage tokenData
     ) external {
-        uint256 shares = unlockedShares($);
+        uint256 shares = unlockedShares(profitUnlockSettings, tokenData);
         if (shares == 0) {
             return;
         }
-        if ($.profitUnlockSettings.fullProfitUnlockTime > block.timestamp) {
-            $.profitUnlockSettings.lastProfitUnlockTime = uint48(block.timestamp);
+        if (profitUnlockSettings.fullProfitUnlockTime > block.timestamp) {
+            profitUnlockSettings.lastProfitUnlockTime = uint48(block.timestamp);
         }
-        $.token.burn(address(this), shares);
+        tokenData.burn(address(this), shares);
     }
 
     function _calculateEffectiveNavPerShareLastFeeMark(
@@ -140,9 +138,10 @@ library AutopoolFees {
     }
 
     function collectFees(
-        AutopoolState storage $,
         uint256 totalAssets,
         uint256 currentTotalSupply,
+        IAutopool.AutopoolFeeSettings storage settings,
+        AutopoolToken.TokenData storage tokenData,
         bool collectPeriodicFees
     ) external returns (uint256) {
         // If there's no supply then there should be no assets and so nothing
@@ -152,15 +151,13 @@ library AutopoolFees {
             return 0;
         }
 
-        uint256 decimalPad = IAutopool(address(this)).decimalPad();
-
         // slither-disable-start timestamp
         if (collectPeriodicFees) {
-            address periodicFeeSink = $.feeSettings.periodicFeeSink;
-            uint256 periodicFeeBps = $.feeSettings.periodicFeeBps;
+            address periodicFeeSink = settings.periodicFeeSink;
+            uint256 periodicFeeBps = settings.periodicFeeBps;
             // If there is a periodic fee and fee sink set, take the fee.
             if (periodicFeeBps > 0 && periodicFeeSink != address(0)) {
-                uint256 durationSinceLastPeriodicFeeTake = block.timestamp - $.feeSettings.lastPeriodicFeeTake;
+                uint256 durationSinceLastPeriodicFeeTake = block.timestamp - settings.lastPeriodicFeeTake;
                 uint256 timeAdjustedBps = durationSinceLastPeriodicFeeTake.mulDiv(
                     periodicFeeBps * FEE_DIVISOR, SECONDS_IN_YEAR, Math.Rounding.Up
                 );
@@ -169,33 +166,34 @@ library AutopoolFees {
                     _collectPeriodicFees(periodicFeeSink, timeAdjustedBps, currentTotalSupply, totalAssets);
 
                 currentTotalSupply += periodicShares;
-                $.token.mint(periodicFeeSink, periodicShares);
+                tokenData.mint(periodicFeeSink, periodicShares);
             }
 
             // Needs to be kept up to date so if a fee is suddenly turned on a large part of assets do not get
             // claimed as fees.
-            $.feeSettings.lastPeriodicFeeTake = block.timestamp;
+            settings.lastPeriodicFeeTake = block.timestamp;
             emit LastPeriodicFeeTakeSet(block.timestamp);
         }
+
         // slither-disable-end timestamp
-        uint256 currentNavPerShare = (totalAssets * decimalPad * FEE_DIVISOR) / currentTotalSupply;
+        uint256 currentNavPerShare = (totalAssets * FEE_DIVISOR) / currentTotalSupply;
 
         // If the high mark is disabled then this just returns the `navPerShareLastFeeMark`
         // Otherwise, it'll check if it needs to decay
         uint256 effectiveNavPerShareLastFeeMark =
-            _calculateEffectiveNavPerShareLastFeeMark($.feeSettings, block.timestamp, currentNavPerShare, totalAssets);
+            _calculateEffectiveNavPerShareLastFeeMark(settings, block.timestamp, currentNavPerShare, totalAssets);
 
         if (currentNavPerShare > effectiveNavPerShareLastFeeMark) {
             // Even if we aren't going to take the fee (haven't set a sink)
             // We still want to calculate so we can emit for off-chain analysis
-            uint256 profit = (currentNavPerShare - effectiveNavPerShareLastFeeMark).mulDiv(
-                currentTotalSupply, decimalPad, Math.Rounding.Up
-            );
-            uint256 fees = profit.mulDiv($.feeSettings.streamingFeeBps, (FEE_DIVISOR ** 2), Math.Rounding.Up);
+            uint256 profit = (currentNavPerShare - effectiveNavPerShareLastFeeMark) * currentTotalSupply;
+            uint256 fees = profit.mulDiv(settings.streamingFeeBps, (FEE_DIVISOR ** 2), Math.Rounding.Up);
 
             if (fees > 0) {
-                currentTotalSupply = _mintStreamingFee($, fees, profit, currentTotalSupply, totalAssets);
-                currentNavPerShare = (totalAssets * decimalPad * FEE_DIVISOR) / currentTotalSupply;
+                currentTotalSupply = _mintStreamingFee(
+                    tokenData, fees, settings.streamingFeeBps, profit, currentTotalSupply, totalAssets, settings.feeSink
+                );
+                currentNavPerShare = (totalAssets * FEE_DIVISOR) / currentTotalSupply;
             }
         }
 
@@ -205,39 +203,38 @@ library AutopoolFees {
         //      can go down
         //   2. When the high mark is enabled, then we only want to set `navPerShareLastFeeMark`
         //      when it is greater than the last time we captured fees (or would have)
-        if (currentNavPerShare >= effectiveNavPerShareLastFeeMark || !$.feeSettings.rebalanceFeeHighWaterMarkEnabled) {
-            $.feeSettings.navPerShareLastFeeMark = currentNavPerShare;
-            $.feeSettings.navPerShareLastFeeMarkTimestamp = block.timestamp;
+        if (currentNavPerShare >= effectiveNavPerShareLastFeeMark || !settings.rebalanceFeeHighWaterMarkEnabled) {
+            settings.navPerShareLastFeeMark = currentNavPerShare;
+            settings.navPerShareLastFeeMarkTimestamp = block.timestamp;
             emit NewNavShareFeeMark(currentNavPerShare, block.timestamp);
         }
 
         // Set our new high water mark for totalAssets, regardless if we took fees
-        if ($.feeSettings.totalAssetsHighMark < totalAssets) {
-            $.feeSettings.totalAssetsHighMark = totalAssets;
-            $.feeSettings.totalAssetsHighMarkTimestamp = block.timestamp;
-            emit NewTotalAssetsHighWatermark(
-                $.feeSettings.totalAssetsHighMark, $.feeSettings.totalAssetsHighMarkTimestamp
-            );
+        if (settings.totalAssetsHighMark < totalAssets) {
+            settings.totalAssetsHighMark = totalAssets;
+            settings.totalAssetsHighMarkTimestamp = block.timestamp;
+            emit NewTotalAssetsHighWatermark(settings.totalAssetsHighMark, settings.totalAssetsHighMarkTimestamp);
         }
 
         return currentTotalSupply;
     }
 
     function _mintStreamingFee(
-        AutopoolState storage $,
+        AutopoolToken.TokenData storage tokenData,
         uint256 fees,
+        uint256 streamingFeeBps,
         uint256 profit,
         uint256 currentTotalSupply,
-        uint256 totalAssets
+        uint256 totalAssets,
+        address sink
     ) private returns (uint256) {
-        address sink = $.feeSettings.feeSink;
         if (sink == address(0)) {
             return currentTotalSupply;
         }
 
         uint256 streamingFeeShares =
-            _calculateSharesToMintFeeCollection($.feeSettings.streamingFeeBps, profit, totalAssets, currentTotalSupply);
-        $.token.mint(sink, streamingFeeShares);
+            _calculateSharesToMintFeeCollection(streamingFeeBps, profit, totalAssets, currentTotalSupply);
+        tokenData.mint(sink, streamingFeeShares);
         currentTotalSupply += streamingFeeShares;
 
         emit Deposit(address(this), sink, 0, streamingFeeShares);
@@ -282,21 +279,25 @@ library AutopoolFees {
     }
 
     /// @dev If set to 0, existing shares will unlock immediately and increase nav/share. This is intentional
-    function setProfitUnlockPeriod(AutopoolState storage $, uint48 newUnlockPeriodInSeconds) external {
-        $.profitUnlockSettings.unlockPeriodInSeconds = newUnlockPeriodInSeconds;
+    function setProfitUnlockPeriod(
+        IAutopool.ProfitUnlockSettings storage settings,
+        AutopoolToken.TokenData storage tokenData,
+        uint48 newUnlockPeriodInSeconds
+    ) external {
+        settings.unlockPeriodInSeconds = newUnlockPeriodInSeconds;
 
         // If we are turning off the unlock, setting it to 0, then
         // unlock all existing shares
         if (newUnlockPeriodInSeconds == 0) {
-            uint256 currentShares = $.token.balances[address(this)];
+            uint256 currentShares = tokenData.balances[address(this)];
             if (currentShares > 0) {
-                $.profitUnlockSettings.lastProfitUnlockTime = uint48(block.timestamp);
-                $.token.burn(address(this), currentShares);
+                settings.lastProfitUnlockTime = uint48(block.timestamp);
+                tokenData.burn(address(this), currentShares);
             }
 
             // Reset vars so old values aren't used during a subsequent lockup
-            $.profitUnlockSettings.fullProfitUnlockTime = 0;
-            $.profitUnlockSettings.profitUnlockRate = 0;
+            settings.fullProfitUnlockTime = 0;
+            settings.profitUnlockRate = 0;
         }
 
         emit NewProfitUnlockTime(newUnlockPeriodInSeconds);
@@ -304,7 +305,7 @@ library AutopoolFees {
 
     function calculateProfitLocking(
         IAutopool.ProfitUnlockSettings storage settings,
-        AutopoolToken.TokenData storage token,
+        AutopoolToken.TokenData storage tokenData,
         uint256 feeShares,
         uint256 newTotalAssets,
         uint256 startTotalAssets,
@@ -356,11 +357,11 @@ library AutopoolFees {
         uint256 totalLockShares = previousLockShares - previousLockToBurn + newLockShares;
         if (totalLockShares > previousLockShares) {
             uint256 mintAmount = totalLockShares - previousLockShares;
-            token.mint(address(this), mintAmount);
+            tokenData.mint(address(this), mintAmount);
             startTotalSupply += mintAmount;
         } else if (totalLockShares < previousLockShares) {
             uint256 burnAmount = previousLockShares - totalLockShares;
-            token.burn(address(this), burnAmount);
+            tokenData.burn(address(this), burnAmount);
             startTotalSupply -= burnAmount;
         }
 
@@ -428,19 +429,24 @@ library AutopoolFees {
 
     /// @notice Set the fee that will be taken when profit is realized
     /// @dev Resets the high water to current value
-    /// @param $ Storage related to the calling Autopool.
     /// @param fee Percent. 100% == 10000
     /// @param oldestDebtReporting Debt reporting timestamp to be checked
-    function setStreamingFeeBps(AutopoolState storage $, uint256 fee, uint256 oldestDebtReporting) external {
+    /// @param debtReportQueueLength Total length of the debt reporting queue
+    function setStreamingFeeBps(
+        IAutopool.AutopoolFeeSettings storage feeSettings,
+        uint256 fee,
+        uint256 oldestDebtReporting,
+        uint256 debtReportQueueLength
+    ) external {
         if (fee >= FEE_DIVISOR) {
             revert InvalidFee(fee);
         }
 
-        _checkLastDebtReportingTime(oldestDebtReporting, $.debtReportQueue.size);
+        _checkLastDebtReportingTime(oldestDebtReporting, debtReportQueueLength);
 
         IAutopool vault = IAutopool(address(this));
 
-        $.feeSettings.streamingFeeBps = fee;
+        feeSettings.streamingFeeBps = fee;
 
         // Set the high mark when we change the fee so we aren't able to go farther back in
         // time than one debt reporting and claim fee's against past profits
@@ -448,9 +454,9 @@ library AutopoolFees {
         if (ts > 0) {
             uint256 ta = vault.totalAssets();
             if (ta > 0) {
-                $.feeSettings.navPerShareLastFeeMark = (ta * vault.decimalPad() * FEE_DIVISOR) / ts;
+                feeSettings.navPerShareLastFeeMark = (ta * FEE_DIVISOR) / ts;
             } else {
-                $.feeSettings.navPerShareLastFeeMark = FEE_DIVISOR;
+                feeSettings.navPerShareLastFeeMark = FEE_DIVISOR;
             }
         }
         emit StreamingFeeSet(fee);
@@ -458,19 +464,24 @@ library AutopoolFees {
 
     /// @notice Set the periodic fee taken.
     /// @dev Zero is allowed, no fee taken.
-    /// @param $ Storage related to the calling Autopool.
     /// @param fee Fee to update periodic fee to.
     /// @param oldestDebtReporting Debt reporting timestamp to be checked
-    function setPeriodicFeeBps(AutopoolState storage $, uint256 fee, uint256 oldestDebtReporting) external {
+    /// @param debtReportQueueLength Total length of the debt reporting queue
+    function setPeriodicFeeBps(
+        IAutopool.AutopoolFeeSettings storage feeSettings,
+        uint256 fee,
+        uint256 oldestDebtReporting,
+        uint256 debtReportQueueLength
+    ) external {
         if (fee > MAX_PERIODIC_FEE_BPS) {
             revert InvalidFee(fee);
         }
 
-        _checkLastDebtReportingTime(oldestDebtReporting, $.debtReportQueue.size);
+        _checkLastDebtReportingTime(oldestDebtReporting, debtReportQueueLength);
 
         // Fee checked to fit into uint16 above, able to be wrapped without safe cast here.
         emit PeriodicFeeSet(fee);
-        $.feeSettings.periodicFeeBps = uint16(fee);
+        feeSettings.periodicFeeBps = uint16(fee);
     }
 
     /// @notice Set the address that will receive fees

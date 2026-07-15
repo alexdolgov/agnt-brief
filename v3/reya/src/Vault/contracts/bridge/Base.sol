@@ -115,8 +115,6 @@ abstract contract Base is ReentrancyGuard, IBridge, RescueBase {
             (transferInfo, postHookData) = hook__.srcPreHookCall(
                 SrcPreHookCallParams(connector_, msg.sender, transferInfo_)
             );
-        } else {
-            transferInfo = transferInfo_;
         }
     }
 
@@ -128,7 +126,7 @@ abstract contract Base is ReentrancyGuard, IBridge, RescueBase {
      * @param msgGasLimit_ The gas limit for the outbound call.
      * @param connector_ The address of the connector responsible for the transfer.
      * @param options_ Additional options for the outbound call.
-     * @param postHookData_ Data returned from the source post-hook call.
+     * @param postSrcHookData_ Data returned from the source post-hook call.
      * @param transferInfo_ Information about the transfer.
      * @dev Reverts with `MessageIdMisMatched` if the returned message ID does not match the expected message ID.
      */
@@ -136,7 +134,7 @@ abstract contract Base is ReentrancyGuard, IBridge, RescueBase {
         uint256 msgGasLimit_,
         address connector_,
         bytes memory options_,
-        bytes memory postHookData_,
+        bytes memory postSrcHookData_,
         TransferInfo memory transferInfo_
     ) internal {
         TransferInfo memory transferInfo = transferInfo_;
@@ -145,7 +143,7 @@ abstract contract Base is ReentrancyGuard, IBridge, RescueBase {
                 SrcPostHookCallParams(
                     connector_,
                     options_,
-                    postHookData_,
+                    postSrcHookData_,
                     transferInfo_
                 )
             );
@@ -164,7 +162,7 @@ abstract contract Base is ReentrancyGuard, IBridge, RescueBase {
                 transferInfo.receiver,
                 transferInfo.amount,
                 messageId,
-                transferInfo.extraData
+                transferInfo.data
             ),
             options_
         );
@@ -215,8 +213,6 @@ abstract contract Base is ReentrancyGuard, IBridge, RescueBase {
                     transferInfo_
                 )
             );
-        } else {
-            transferInfo = transferInfo_;
         }
     }
 
@@ -264,7 +260,7 @@ abstract contract Base is ReentrancyGuard, IBridge, RescueBase {
      * and executes the pre-retry hook if defined.
      * @param connector_ The address of the connector responsible for the failed transaction.
      * @param messageId_ The unique identifier for the failed transaction.
-     * @return postHookData Data returned from the pre-retry hook call.
+     * @return postRetryHookData Data returned from the pre-retry hook call.
      * @return transferInfo Information about the transfer.
      * @dev Reverts with `InvalidConnector` if the connector is not valid.
      * Reverts with `NoPendingData` if there is no pending data for the given message ID.
@@ -274,7 +270,10 @@ abstract contract Base is ReentrancyGuard, IBridge, RescueBase {
         bytes32 messageId_
     )
         internal
-        returns (bytes memory postHookData, TransferInfo memory transferInfo)
+        returns (
+            bytes memory postRetryHookData,
+            TransferInfo memory transferInfo
+        )
     {
         if (!validConnectors[connector_]) revert InvalidConnector();
 
@@ -284,7 +283,7 @@ abstract contract Base is ReentrancyGuard, IBridge, RescueBase {
         );
 
         if (cacheData.identifierCache.length == 0) revert NoPendingData();
-        (postHookData, transferInfo) = hook__.preRetryHook(
+        (postRetryHookData, transferInfo) = hook__.preRetryHook(
             PreRetryHookCallParams(connector_, cacheData)
         );
     }
@@ -296,12 +295,12 @@ abstract contract Base is ReentrancyGuard, IBridge, RescueBase {
      * and updates cache data.
      * @param connector_ The address of the connector responsible for the failed transaction.
      * @param messageId_ The unique identifier for the failed transaction.
-     * @param postHookData Data returned from the pre-retry hook call.
+     * @param postRetryHookData Data returned from the pre-retry hook call.
      */
     function _afterRetry(
         address connector_,
         bytes32 messageId_,
-        bytes memory postHookData
+        bytes memory postRetryHookData
     ) internal {
         CacheData memory cacheData = CacheData(
             identifierCache[messageId_],
@@ -312,7 +311,7 @@ abstract contract Base is ReentrancyGuard, IBridge, RescueBase {
             PostRetryHookCallParams(
                 connector_,
                 messageId_,
-                postHookData,
+                postRetryHookData,
                 cacheData
             )
         );

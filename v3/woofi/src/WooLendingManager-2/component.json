@@ -1,34 +1,38 @@
 {
   "component": "WooLendingManager-2",
   "main_contract": "WooLendingManager",
+  "source_entry_count": 22,
   "source_file_count": 22,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WooLendingManager-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x385e063dea8908d06be024de85da5b8da4b10f73",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x79a5453865a39f67d3ffc7964cd760f1763be767",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401280"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x697c97a37bc00c2306f2b08ca14f3d55db6ffccd",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa780432f495e5c6851fd7903fe49ad77c952f7d8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xc8ec7f48a82a07d95110ff26faacde9757dd9dc7",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401292"
     }
   ]
 }

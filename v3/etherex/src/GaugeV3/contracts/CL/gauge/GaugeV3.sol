@@ -7,6 +7,8 @@ import {IFeeCollector} from "./interfaces/IFeeCollector.sol";
 import {FullMath} from "../core/libraries/FullMath.sol";
 
 import {IRamsesV3Pool} from "../core/interfaces/IRamsesV3Pool.sol";
+
+import {PoolStorage} from "../core/libraries/PoolStorage.sol";
 import {IRamsesV3PoolState} from "../core/interfaces/pool/IRamsesV3PoolState.sol";
 
 import {SafeERC20, IERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
@@ -25,12 +27,12 @@ contract GaugeV3 is IGaugeV3, Initializable {
     bool internal _unlocked;
 
     IRamsesV3Pool public pool;
-    address public voter;
-    IFeeCollector public feeCollector;
-    INonfungiblePositionManager public nfpManager;
+    address public  voter;
+    IFeeCollector public  feeCollector;
+    INonfungiblePositionManager public  nfpManager;
 
     /// @inheritdoc IGaugeV3
-    uint256 public firstPeriod;
+    uint256 public  firstPeriod;
 
     /// @inheritdoc IGaugeV3
     /// @dev period => token => total supply
@@ -69,95 +71,15 @@ contract GaugeV3 is IGaugeV3, Initializable {
         _;
     }
 
-    function initialize(
-        address _voter,
-        address _nfpManager,
-        address _feeCollector,
-        address _pool
-    ) public initializer {
-        _unlocked = true;
-
+    function initialize(address _voter, address _nfpManager, address _feeCollector, address _pool) public initializer {
         voter = _voter;
         feeCollector = IFeeCollector(_feeCollector);
         nfpManager = INonfungiblePositionManager(_nfpManager);
         pool = IRamsesV3Pool(_pool);
 
         firstPeriod = _blockTimestamp() / WEEK;
-
-        (address rex, address xrex) = (
-            IVoter(_voter).ram(),
-            IVoter(_voter).xRam()
-        );
-
-        (address token0, address token1) = (
-            IRamsesV3Pool(_pool).token0(),
-            IRamsesV3Pool(_pool).token1()
-        );
-
-        rewards.push(token0);
-        rewards.push(token1);
-        (isReward[token0], isReward[token1], isReward[xrex]) = (
-            true,
-            true,
-            true
-        );
-        /// @dev if token0 and token1 aren't shadow add shadow in the records
-        if (token0 != rex && token1 != rex) {
-            rewards.push(rex);
-            isReward[rex] = true;
-        }
-
-        for (uint256 i; i < rewards.length; i++) {
-            emit RewardAdded(rewards[i]);
-        }
+        
     }
-
-    function initializeV2(
-        address _voter,
-        address _nfpManager,
-        address _feeCollector,
-        address _pool
-    ) public {
-        // gated to accesshub
-        require(msg.sender == 0x683035188E3670fda1deF2a7Aa5742DEa28Ed5f3, Errors.NOT_AUTHORIZED(msg.sender));
-        _unlocked = true;
-
-        voter = _voter;
-        feeCollector = IFeeCollector(_feeCollector);
-        nfpManager = INonfungiblePositionManager(_nfpManager);
-        pool = IRamsesV3Pool(_pool);
-
-        firstPeriod = _blockTimestamp() / WEEK;
-
-        (address rex, address xrex) = (
-            IVoter(_voter).ram(),
-            IVoter(_voter).xRam()
-        );
-
-        (address token0, address token1) = (
-            IRamsesV3Pool(_pool).token0(),
-            IRamsesV3Pool(_pool).token1()
-        );
-
-        rewards.push(token0);
-        rewards.push(token1);
-        (isReward[token0], isReward[token1], isReward[xrex]) = (
-            true,
-            true,
-            true
-        );
-        /// @dev if token0 and token1 aren't rex add rex in the records
-        if (token0 != rex && token1 != rex) {
-            rewards.push(rex);
-            isReward[rex] = true;
-        }
-
-        for (uint256 i; i < rewards.length; i++) {
-            emit RewardAdded(rewards[i]);
-        }
-    }
-
-
 
     constructor() {
         _disableInitializers();
@@ -195,10 +117,7 @@ contract GaugeV3 is IGaugeV3, Initializable {
     }
 
     /// @inheritdoc IGaugeV3
-    function notifyRewardAmount(
-        address token,
-        uint256 amount
-    ) external override pushFees lock {
+    function notifyRewardAmount(address token, uint256 amount) external override pushFees lock {
         require(amount > 0, Errors.NOT_GT_ZERO(amount));
         require(isReward[token], Errors.NOT_WHITELISTED(token));
         IRamsesV3Pool(pool)._advancePeriod();

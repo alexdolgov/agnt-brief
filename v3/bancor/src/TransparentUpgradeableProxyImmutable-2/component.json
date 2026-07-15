@@ -1,45 +1,33 @@
 {
   "component": "TransparentUpgradeableProxyImmutable-2",
   "main_contract": "TransparentUpgradeableProxyImmutable",
+  "source_entry_count": 14,
   "source_file_count": 14,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxyImmutable-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/bancorprotocol/contracts-v3/blob/dev/docs/audits/ChainSecurity-V3-Audit-Report.pdf",
-    "https://github.com/bancorprotocol/contracts-v3/blob/dev/docs/audits/OpenZeppelin-V3-Audit-Report.pdf"
+    "https://github.com/bancorprotocol/contracts-v3/blob/dev/docs/audits/OpenZeppelin-AutoCompoundingRewards-Audit-Report.pdf",
+    "https://github.com/bancorprotocol/contracts-v3/blob/dev/docs/audits/OpenZeppelin-V3-Audit-Report.pdf",
+    "https://github.com/bancorprotocol/contracts-v3/blob/dev/docs/audits/PeckShield-Audit-Report-BancorV3-v1.0.pdf"
   ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x9f292ccb69ff9a0644475c7bc8d4651039e133d5",
+      "address": "0x02651e355d26f3506c1e644ba393fdd9ac95eaca",
       "is_proxy": true,
-      "implementation_address": "0xe7e533a9f1afcadff409bb44a2b87d2c15d274d4",
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xe18bd28677ec53c67d765521c8a586bc611f88e2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xe7e533a9f1afcadff409bb44a2b87d2c15d274d4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xf5de921004436f940e457b443af6e8b30e3d2b0f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "implementation_address": "0xfb07a644a9e53879f29f7b3f29362e9c95b1ffa3",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391968"
     }
   ]
 }

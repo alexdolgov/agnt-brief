@@ -1,50 +1,28 @@
 {
   "component": "XavaToken",
   "main_contract": "XavaToken",
-  "source_file_count": 1,
-  "deployment_count": 5,
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/XavaToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x1a7931de2b1ca136d54bd46f51892e0f0e23fde8",
+      "address": "0xd1c3f94de7e5b45fa4edbba472491a9f4b166fc4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x897ee1505958067c343ec6993398995f477ace17",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x90ee87f15ab3f5929513db072aec28a32222e2cc",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xc8d81593318e07d8aabe5ae1619f9e37888c4433",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xfbd59ab2c29bfbd5f37c587fb4ed1366d7b7be2b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

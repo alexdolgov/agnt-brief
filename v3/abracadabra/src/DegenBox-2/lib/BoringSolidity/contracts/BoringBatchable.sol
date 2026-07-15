@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
+pragma experimental ABIEncoderV2;
+
 // solhint-disable avoid-low-level-calls
 // solhint-disable no-inline-assembly
 
@@ -7,7 +9,7 @@ pragma solidity ^0.8.0;
 // Combining BoringBatchable with msg.value can cause double spending issues
 // https://www.paradigm.xyz/2021/08/two-rights-might-make-a-wrong/
 
-import {IERC20} from "./interfaces/IERC20.sol";
+import "./interfaces/IERC20.sol";
 
 contract BaseBoringBatchable {
     error BatchError(bytes innerError);

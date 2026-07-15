@@ -1,42 +1,38 @@
 {
   "component": "Core",
   "main_contract": "Core",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Core\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x009a0b7c38b542208936f1179151cd08e2943833",
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xb7a23fc0b066051de58b922dc1a08f33df748bbf",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395956"
     },
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x43eac5bfea14531b8de0b334e123ea98325de866",
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xec53c830f4444a8a56455c6836b5d2aa794289aa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x8505150f20cca81f61d967f581bd2c22c60577fb",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x887d6412e1839f123adc32943bf103084cfec715",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396004"
     }
   ]
 }

@@ -1,8 +1,16 @@
 {
   "component": "WOFT",
   "main_contract": "WOFT",
+  "source_entry_count": 45,
   "source_file_count": 45,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WOFT\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,9 @@
       "address": "0x88bb2bf040fa5bf2bd3b79ff9dfa035ed1289032",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394368"
     },
     {
       "chain": "chain-80094",
@@ -20,15 +30,9 @@
       "address": "0xf9ee98099f5078078bb8e17e6b4a4f95137e2037",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-80094",
-      "chain_id": 80094,
-      "address": "0xff9c599d51c407a45d631c6e89cb047efb88aef6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394372"
     }
   ]
 }

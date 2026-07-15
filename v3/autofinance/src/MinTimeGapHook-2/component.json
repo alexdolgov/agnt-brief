@@ -1,18 +1,28 @@
 {
   "component": "MinTimeGapHook-2",
   "main_contract": "MinTimeGapHook",
+  "source_entry_count": 65,
   "source_file_count": 65,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MinTimeGapHook-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x2e9894482fb8fe525ebaed0860eeede918dc3466",
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xb617bcc10ea25669dd99071be6a962d4b9532e67",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391890"
     }
   ]
 }

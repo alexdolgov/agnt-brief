@@ -1,7 +1,15 @@
 {
   "component": "NonfungiblePositionManager-6",
   "main_contract": "NonfungiblePositionManager",
+  "source_entry_count": 59,
   "source_file_count": 59,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/NonfungiblePositionManager-6\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x0c314190b0b78513fd908c3bfe3c83ef5f5bbde3",
+      "address": "0xe1f8cd9ac4e4a65f54f38a5cdafca44f6dd68b53",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391295"
     }
   ]
 }

@@ -1,7 +1,15 @@
 {
   "component": "ParaswapAdapter",
   "main_contract": "ParaswapAdapter",
-  "source_file_count": 61,
+  "source_entry_count": 58,
+  "source_file_count": 58,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ParaswapAdapter\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x03b5259bd204bfd4a616e5b79b0b786d90c6c38f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402030"
     }
   ]
 }

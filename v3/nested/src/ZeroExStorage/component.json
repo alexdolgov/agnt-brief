@@ -1,10 +1,21 @@
 {
   "component": "ZeroExStorage",
   "main_contract": "ZeroExStorage",
+  "source_entry_count": 3,
   "source_file_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ZeroExStorage\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/NestedFinance/nested-core-lego/blob/master/audits/Code4rena_Nested_Analysis_Report_2021_12.pdf",
+    "https://github.com/NestedFinance/nested-core-lego/blob/master/audits/Red4Sec_Nested_Security_Audit_Report_v3.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +23,9 @@
       "address": "0xa19d093d24d345fa25424d15202cab00a5fabe65",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403584"
     }
   ]
 }

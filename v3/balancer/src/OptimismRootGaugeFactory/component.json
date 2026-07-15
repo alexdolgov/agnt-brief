@@ -1,7 +1,15 @@
 {
   "component": "OptimismRootGaugeFactory",
   "main_contract": "OptimismRootGaugeFactory",
-  "source_file_count": 34,
+  "source_entry_count": 30,
+  "source_file_count": 30,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OptimismRootGaugeFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x3083a1c455ff38d39e58dbac5040f465cf73c5c8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402422"
     }
   ]
 }

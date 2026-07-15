@@ -1,37 +1,178 @@
 {
   "component": "TransparentUpgradeableProxy",
   "main_contract": "TransparentUpgradeableProxy",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 3,
-  "audited": true,
-  "audits_covering": [
-    "https://iosiro.com/audits/staked-thales-betting-proxy-smart-contract-audit",
-    "https://iosiro.com/audits/thales-airdrop-and-staking-smart-contract-audit"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 16,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x0b82e4db2971829bb13db8bf87118c065480fd10",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x43d19841d818b2ccc63a8b44ce8c7def8616d98e",
       "is_proxy": true,
-      "implementation_address": "0x45509d5e7d64eeb42780c18134e2719bdb30f56e",
-      "liveness": "live"
+      "implementation_address": "0x14f9520d6e038fe4c3b69e00a32b89a52596c405",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x5713ab44042d92c642444bd2f0fee9c2336f9e3b",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x842e89b7a7ef8ce099540b3613264c933ce0eba5",
       "is_proxy": true,
-      "implementation_address": "0xd26199e65cb3935560117c83c5ad87c80b9e4a11",
-      "liveness": "live"
+      "implementation_address": "0x53b78233c81e8cd4f1361ef5ccf0f09c3cdb8017",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x84ab38e42d8da33b480762cca543eeca6135e040",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x932de91bf3fc1c316ba1a2e0136beb9d4fb6b965",
       "is_proxy": true,
-      "implementation_address": "0x24af2757da0898d14a0691604d11542ad60b8bce",
-      "liveness": "live"
+      "implementation_address": "0x9f14ed1fd19b102afd873690031266facfb34288",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbaac5464bf6e767c9af0e8d4677c01be2065fd5f",
+      "is_proxy": true,
+      "implementation_address": "0x14f9520d6e038fe4c3b69e00a32b89a52596c405",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc10a0a6ff6496e0bd896f9f6da5a7b640b85ea40",
+      "is_proxy": true,
+      "implementation_address": "0x8552475d0e7a201187b9dd0e5777941ae4c69b77",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe599397ce97b8095d73ad72587649b2e9710a90d",
+      "is_proxy": true,
+      "implementation_address": "0x9f14ed1fd19b102afd873690031266facfb34288",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xfbffebfa2bf2cf84fdcf77917b358fc59ff5771e",
+      "is_proxy": true,
+      "implementation_address": "0x06927290dc36bef2af5f728c8c37ce003a29dca0",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfc7105da51017f2d990b9fe68db343ae38060c3b",
+      "is_proxy": true,
+      "implementation_address": "0x435767839ffcf5b85d174311cb9ca81581c17309",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0a29cddbdaaf56342507574820864dac967d2683",
+      "is_proxy": true,
+      "implementation_address": "0x7fef52131442dd40f6d0d57e2bf5ec28623c56fa",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x640c34d9595ad5351da8c5c833bbd1afd20519ea",
+      "is_proxy": true,
+      "implementation_address": "0x7fef52131442dd40f6d0d57e2bf5ec28623c56fa",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6848f7c1b5aa2da86f6529bed9d641a67663f0be",
+      "is_proxy": true,
+      "implementation_address": "0x0946bfe3c543e0b770b7f7e508c8a566947c4278",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8e9018b48456202aa9bb3e485192b8475822b874",
+      "is_proxy": true,
+      "implementation_address": "0x8d434ad4d29fb4d8db9f9db27850b31ad4ce1bf6",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa852a651377fbe23f3d3acf5919c3d092ad4b77d",
+      "is_proxy": true,
+      "implementation_address": "0x4d5540c56bea7a3f5aa3485e6e7ffb7a3002ac4a",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe26374c7afe71a2a6ab4a61080772547c43b87e6",
+      "is_proxy": true,
+      "implementation_address": "0x4d5540c56bea7a3f5aa3485e6e7ffb7a3002ac4a",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xea4c2343fd3c239c23dd37dd3ee51aec84544735",
+      "is_proxy": true,
+      "implementation_address": "0x0a2f77194f2359df5829d22a044e727258a5d7e2",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xff7aea98740fa1e2a9eb81680583e62aaff1e3ad",
+      "is_proxy": true,
+      "implementation_address": "0x4d5540c56bea7a3f5aa3485e6e7ffb7a3002ac4a",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

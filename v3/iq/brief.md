@@ -1,44 +1,86 @@
 # Agentic Audit Brief: IQ
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: IQ (`iq`)
 - Website: [https://iq.wiki](https://iq.wiki)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:14.129Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
-- Chains: ethereum, fraxtal
-- Contract surface: 22 unique implementations (22 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: base, bsc, ethereum, fraxtal, polygon
+- Contract surface: 6 unique implementations (6 raw deployments)
+- Coverage basis: 0/2 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $3,544,333.66
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Services. Structurally: 31 project-authored contract(s) across 2 chain(s); 1 ERC20 token; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for IQ. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Its contracts share 7 common project-authored base contract(s) (ownedv2, dualoraclebase, api3oraclewithmaxdelay). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 2 contract row(s) across base, bsc, ethereum, fraxtal, polygon. Structural roles: 1 core, 1 unclassified. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 2
+- Structural roles: core (1), unclassified (1)
+- Contract kinds: contract (1), unclassified (1)
+- Detected standards: erc20 (1), ownable (1)
+- Frameworks: openzeppelin (1)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 6 contracts are derived from known codebases. 6 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x0e37d7...5464e3`, chain 56)
+- UnnamedContract (`0xb96382...34a578`, chain 137)
+- UnnamedContract (`0x6efb84...712101`, chain 252)
+- UnnamedContract (`0xe59b07...8f7734`, chain 8453)
+- IQERC20 (`0x579cea...29b0c9`, chain 1)
+- Vyper_contract (`0x1bf545...4e16ba`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 78; live-surface contracts included: 22 (4 live, 18 unknown).
-- Excluded by liveness: 56 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 6/6 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/4 (0.0%)
-- Deployed-live implementations: 4 of 22 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/4
-- Verified + Unaudited implementations: 4
+- Coverage of address-book-owned deployed-live implementations: 0/2 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 6 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 6 of 6 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/2
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 18
-- Unique implementations: 22
-- Raw deployments: 22
+- Unverified implementations: 4
+- Unique implementations: 6
+- Raw deployments: 6
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,14 +99,12 @@ The protocol comprises 5 functional families. Its contracts share 7 common proje
 
 - None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BAMMFactory | registry | fraxtal | n/a | [`0x199281...7db0ba`](./contracts/fraxtal-252/0x19928170d739139bfbbb6614007f8eeed17db0ba/) | ⚠️ Unaudited |
-| FraxswapFactory | registry | fraxtal | n/a | [`0xe30521...a667e6`](./contracts/fraxtal-252/0xe30521fe7f3beb6ad556887b50739d6c7ca667e6/) | ⚠️ Unaudited |
-| IQERC20 | token | ethereum | n/a | [`0x579cea...29b0c9`](./contracts/ethereum-1/0x579cea1889991f68acc35ff5c3dd0621ff29b0c9/) | ⚠️ Unaudited |
-| Vyper_contract | unknown | ethereum | n/a | [`0x1bf545...4e16ba`](./contracts/ethereum-1/0x1bf5457ecaa14ff63cc89efd560e251e814e16ba/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| IQERC20 | token | project_anchor | own_supporting | 0 | ethereum | unit-387719 | `0x579cea...29b0c9` | ⚠️ Unaudited |
+| Vyper_contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387718 | `0x1bf545...4e16ba` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -78,50 +118,45 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (18)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | fraxtal | n/a | `0x0d9346...94185c` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0x18348d...707a13` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0x5854f4...d69909` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0x6bd868...b2e4cb` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0x8bf7af...1546f0` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0x954f18...478114` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0x9937ab...a8624a` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0x9fab6a...6896c5` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xad84da...4f071f` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xbb18f2...e85fc2` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xc4af86...d289dd` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xd5be3c...a28723` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xdbb6da...00f892` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xdcf13a...257508` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xdf567e...782427` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xe510cc...57704e` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xeec806...c7026a` | ❓ Unverified |
-| UnnamedContract | unknown | fraxtal | n/a | `0xffd3a9...60550d` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387722 | `0x0e37d7...5464e3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-387720 | `0xb96382...34a578` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fraxtal | unit-387721 | `0x6efb84...712101` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-387723 | `0xe59b07...8f7734` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x579cea...29b0c9` | IQERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1bf545...4e16ba` | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 22 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 
@@ -129,6 +164,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

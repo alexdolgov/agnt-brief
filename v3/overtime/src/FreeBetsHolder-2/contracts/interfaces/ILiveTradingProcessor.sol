@@ -13,10 +13,7 @@ interface ILiveTradingProcessor {
         uint _additionalSlippage;
         address _referrer;
         address _collateral;
-        uint24 _playerId; // 🆕 added for player props
     }
-
-    function freeBetsHolder() external view returns (address);
 
     function maxAllowedExecutionDelay() external view returns (uint);
 

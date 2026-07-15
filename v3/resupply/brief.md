@@ -1,111 +1,94 @@
 # Agentic Audit Brief: Resupply
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 8 (0 matched; 8 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Resupply (`resupply`)
 - Website: [https://resupply.fi/](https://resupply.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-04T11:05:46.450Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
-- Chains: ethereum
-- Contract surface: 50 unique implementations (71 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $38,229,554.93
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Lending. Structurally: 135 project-authored contract(s) across 1 chain(s); 11 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for Resupply in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 6 functional families. Its contracts share 6 common project-authored base contract(s) (rewarddistributormultiepoch, coreownable, epochtracker). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 177; live-surface contracts included: 71 (61 live, 10 unknown).
-- Excluded by liveness: 106 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 7/40 (17.5%)
-- Deployed-live implementations: 40 of 50 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 7/40
-- Verified + Unaudited implementations: 33
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 10
-- Unique implementations: 50
-- Raw deployments: 71
+- Unverified implementations: 0
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 8 (8 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 6
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-10 (fresh)
 - Audit staleness (calendar age): 4 fresh, 2 aging, 0 stale, 2 unknown
-- Coverage code basis (deployed vs audited code): 6 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
-- Tier 1 coverage: 17.5% (ChainSecurity)
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| ChainSecurity | Tier 1 | 7 | 17.5% | 2025-10 |
-| unknown | Tier 2 | 1 | 2.5% | 2025-09 |
-| yAudit | Tier 2 | 1 | 2.5% | 2024-12 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (7)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| CurveLendMinterFactory | unknown | ethereum | n/a | [`0xd99391...76afff`](./contracts/ethereum-1/0xd99391df68cdb38a89828a6d51f3976e3e76afff/) | ✅ Audited |
-| FeeDepositController | governance | ethereum | n/a | [`0xc70000...384df6`](./contracts/ethereum-1/0xc700000506423bad12d5eb6d55b35ea9f5384df6/) | ✅ Audited |
-| InterestRateCalculatorV2 | operational_periphery | ethereum | n/a | [`0x1972b5...bc14f7`](./contracts/ethereum-1/0x1972b5d65a690de0bc36278ac93d47fd98bc14f7/) | ✅ Audited |
-| PriceWatcher | operational_periphery | ethereum | n/a | [`0xaaaa00...dd9251`](./contracts/ethereum-1/0xaaaa0013e2ec451f76816d1e0a02aba596dd9251/) | ✅ Audited |
-| ResupplyRegistry | registry | ethereum | n/a | [`0x101010...1e7d94`](./contracts/ethereum-1/0x10101010e0c3171d894b71b3400668af311e7d94/) | ✅ Audited |
-| RewardHandler | unknown | ethereum | n/a | [`0x747474...d0b4b1`](./contracts/ethereum-1/0x74747408065d6a85dff07d23f22c921ce7d0b4b1/) | ✅ Audited |
-| SavingsReUSD | unknown | ethereum | n/a | [`0x557ab1...c33c35`](./contracts/ethereum-1/0x557ab1e003951a73c12d16f0fea8490e39c33c35/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (33)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AutoStakeCallback | unknown | ethereum | n/a | [`0x488820...128745`](./contracts/ethereum-1/0x4888205f02df9832274d470c685baa728f128745/) | ⚠️ Unaudited |
-| BasicVaultOracle | operational_periphery | ethereum | n/a | [`0xcb7e25...7f3c82`](./contracts/ethereum-1/0xcb7e25fbbd8afe4ce73d7dac647dbc3d847f3c82/) | ⚠️ Unaudited |
-| BorrowLimitController | core_logic | ethereum | n/a | [`0x095000...12bb7d`](./contracts/ethereum-1/0x0950000465476f4470e74aed93e7dd414012bb7d/) | ⚠️ Unaudited |
-| Core | unknown | ethereum | n/a | [`0xc07e00...7e0a7d`](./contracts/ethereum-1/0xc07e000044f95655c11fda4cd37f70a94d7e0a7d/) | ⚠️ Unaudited |
-| CurveStableSwapNG | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0xc522a6...6f4f50`](./contracts/ethereum-1/0xc522a6606bba746d7960404f22a3db936b6f4f50/); ethereum `0xed785a...99a441` | ⚠️ Unaudited |
-| CurveTwocryptoOptimized | unknown | ethereum | n/a | [`0xee351f...34578d`](./contracts/ethereum-1/0xee351f12eae8c2b8b9d1b9bfd3c5dd565234578d/) | ⚠️ Unaudited |
-| EmissionsController | operational_periphery | ethereum | n/a | [`0x333333...5a4706`](./contracts/ethereum-1/0x33333333df05b0d52edd13d230461e5a0f5a4706/) | ⚠️ Unaudited |
-| FeeDeposit | unknown | ethereum | n/a | [`0x07ad46...932c52`](./contracts/ethereum-1/0x07ad4630985ade5b5307806c43e57e0a9a932c52/) | ⚠️ Unaudited |
-| GovStaker | core_logic | ethereum | n/a | [`0x222222...d8b953`](./contracts/ethereum-1/0x22222222e9fe38f6f1fc8c61b25228adb4d8b953/) | ⚠️ Unaudited |
-| GuardianUpgradeable | governance | ethereum | n/a | [`0xa4745e...8974e3`](./contracts/ethereum-1/0xa4745e0b1f40ab3dcfd98f381835de591a8974e3/) | ⚠️ Unaudited |
-| InsurancePool | core_logic | ethereum | n/a | [`0x000000...e1b577`](./contracts/ethereum-1/0x00000000efe883b3304aff71eacf72dbc3e1b577/) | ⚠️ Unaudited |
-| InterestRateCalculator | operational_periphery | ethereum | n/a | [`0x777777...070d67`](./contracts/ethereum-1/0x77777777729c405efb6ac823493e6111f0070d67/) | ⚠️ Unaudited |
-| Keeper | operational_periphery | ethereum | n/a | [`0x49f7aa...6ee958`](./contracts/ethereum-1/0x49f7aa38af55322de009add5f10a602cd26ee958/) | ⚠️ Unaudited |
-| LiquidityGaugeV6 | operational_periphery | ethereum | n/a | 3 deployments: ethereum [`0x09f62a...8cda56`](./contracts/ethereum-1/0x09f62a6777032329c0d49f1fd4fbe9b3468cda56/); ethereum `0x5c0b03...45a4dd`; ethereum `0xaf01d6...b889b1` | ⚠️ Unaudited |
-| PairAdder | unknown | ethereum | n/a | [`0x095000...0e1d27`](./contracts/ethereum-1/0x09500002956877b910acec25c4b4dd57950e1d27/) | ⚠️ Unaudited |
-| PermaStaker | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x123412...0100e8`](./contracts/ethereum-1/0x12341234b35c8a48908c716266db79caea0100e8/); ethereum `0xcccccc...848901` | ⚠️ Unaudited |
-| RedemptionHandler | unknown | ethereum | n/a | [`0x5eeb06...37a025`](./contracts/ethereum-1/0x5eeb063d0abefbbc78f576e28d762a16b637a025/) | ⚠️ Unaudited |
-| ResupplyPair | unknown | ethereum | n/a | 14 deployments: ethereum [`0x08064a...009fdf`](./contracts/ethereum-1/0x08064a8eeecf71203449228f3eac65e462009fdf/); ethereum `0x212589...141ea0`; ethereum `0x22b121...eb3c7e`; ethereum `0x24ccbd...82c864`; ethereum `0x27ab44...768797`; ethereum `0x2d8ecd...1abc9d`; ethereum `0x39ea8e...28505c`; ethereum `0x3b0373...be5706`; ethereum `0x3f2b20...e6a5f7`; ethereum `0x4a7c64...095e33`; ethereum `0x55c49c...894adb`; ethereum `0xb5575f...d4e6c1`; ethereum `0xc5184c...9f34a1`; ethereum `0xcf1deb...96520d` | ⚠️ Unaudited |
-| ResupplyPairDeployer | unknown | ethereum | n/a | 2 deployments: ethereum [`0x555555...2c0417`](./contracts/ethereum-1/0x5555555524de7c56c1b20128dbeaace47d2c0417/); ethereum `0x555555...74c2ea` | ⚠️ Unaudited |
-| RetentionIncentives | unknown | ethereum | n/a | [`0xb94156...337892`](./contracts/ethereum-1/0xb9415639618e70abb71a0f4f8bbb2643bf337892/) | ⚠️ Unaudited |
-| RetentionReceiver | unknown | ethereum | n/a | [`0x6e7d5d...4906f1`](./contracts/ethereum-1/0x6e7d5dade33f76f480ea38e3c47f870de74906f1/) | ⚠️ Unaudited |
-| ReusdOracle | operational_periphery | ethereum | n/a | [`0x3a1e32...9928e4`](./contracts/ethereum-1/0x3a1e320f289eef2636b6d7aa5c0f9202ee9928e4/) | ⚠️ Unaudited |
-| Safe | unknown | ethereum | n/a | [`0xfe11a5...076af6`](./contracts/ethereum-1/0xfe11a5009f2121622271e7dd0fd470264e076af6/) | ⚠️ Unaudited |
-| SimpleReceiver | unknown | ethereum | n/a | 4 deployments: ethereum [`0x2d4e8b...4a37c9`](./contracts/ethereum-1/0x2d4e8bff0c23571016d7b329b9fd76441f4a37c9/); ethereum `0x70a187...3df61b`; ethereum `0x8b36ad...1155b4`; ethereum `0xc9a9c2...858c59` | ⚠️ Unaudited |
-| SimpleReceiverFactory | registry | ethereum | n/a | [`0x20d55f...9014d8`](./contracts/ethereum-1/0x20d55f2bb72ebde67a4325fb757348ea3d9014d8/) | ⚠️ Unaudited |
-| Swapper | adapter | ethereum | n/a | [`0x042f48...3f3b2e`](./contracts/ethereum-1/0x042f48346be16be381190a7397a80808243f3b2e/) | ⚠️ Unaudited |
-| SwapperOdos | adapter | ethereum | n/a | [`0x3ae884...d9194d`](./contracts/ethereum-1/0x3ae884d1a67650501278001fda40dca975d9194d/) | ⚠️ Unaudited |
-| Treasury | operational_periphery | ethereum | n/a | [`0x444444...a48324`](./contracts/ethereum-1/0x4444444455bf42de586a88426e5412971ea48324/) | ⚠️ Unaudited |
-| TreasuryManagerUpgradeable | operational_periphery | ethereum | n/a | [`0x4cf97a...b10403`](./contracts/ethereum-1/0x4cf97a55d58aad14c493a46c8151a0bfffb10403/) | ⚠️ Unaudited |
-| UnderlyingOracle | operational_periphery | ethereum | n/a | [`0x152ce2...fbd5ec`](./contracts/ethereum-1/0x152ce2e248a86bd11ca01502fb8fefbec0fbd5ec/) | ⚠️ Unaudited |
-| UpgradeOperator | unknown | ethereum | n/a | [`0x82ba27...8b5543`](./contracts/ethereum-1/0x82ba27ee62fc490f81fefce5ac9c2f238f8b5543/) | ⚠️ Unaudited |
-| VestManager | operational_periphery | ethereum | n/a | [`0x666666...0f919c`](./contracts/ethereum-1/0x6666666677b06cb55ebf802bb12f8876360f919c/) | ⚠️ Unaudited |
-| Voter | unknown | ethereum | n/a | [`0x111111...a412bc`](./contracts/ethereum-1/0x11111111408bd67b92c4f74b9d3cf96f1fa412bc/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -119,35 +102,155 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (10)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x1a938e...1cb854` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x33a344...0a7efa` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x398e2a...0aac3c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4c3c27...f3964b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x518543...d0342a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x577060...48fa7e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x68d9b8...1dc806` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa766e8...bfd086` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc692b1...5530da` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf570ad...147b36` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [ChainSecurity_Resupply_CurveLend_Operators_audit.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/ChainSecurity_Resupply_CurveLend_Operators_audit.pdf) | ChainSecurity | Audit | 2025-10 | fresh | Direct | contract_name | 1 | high |
-| [ChainSecurity_Resupply_Resupply_audit.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/ChainSecurity_Resupply_Resupply_audit.pdf) | ChainSecurity | Audit | 2025-02 | aging | Direct | contract_name | 1 | n/a |
-| [ChainSecurity_Resupply_audit_v2.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/ChainSecurity_Resupply_audit_v2.pdf) | ChainSecurity | Audit | 2025-08 | fresh | Direct | contract_name | 1 | n/a |
-| [ChainSecurity_Resupply_sreUSD_audit.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/ChainSecurity_Resupply_sreUSD_audit.pdf) | ChainSecurity | Audit | 2025-08 | fresh | Direct | contract_name | 5 | high |
-| [Electisec-Resupply-CurveLendOperator.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/Electisec-Resupply-CurveLendOperator.pdf) | unknown | Audit | 2025-09 | fresh | Direct | contract_name | 1 | high |
-| [Electisec-Resupply-Inflation-Fixes.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/Electisec-Resupply-Inflation-Fixes.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Electisec-Resupply-sreUSD.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/Electisec-Resupply-sreUSD.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [rsup_yaudit_report.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/rsup_yaudit_report.pdf) | yAudit | Audit | 2024-12 | aging | Direct | contract_name | 1 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [ChainSecurity_Resupply_CurveLend_Operators_audit.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/ChainSecurity_Resupply_CurveLend_Operators_audit.pdf) | ChainSecurity | Audit | 2025-10 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [ChainSecurity_Resupply_Resupply_audit.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/ChainSecurity_Resupply_Resupply_audit.pdf) | ChainSecurity | Audit | 2025-02 | aging | Direct | n/a | no match | 0 | 0 | 0 | 30 | n/a |
+| [ChainSecurity_Resupply_audit_v2.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/ChainSecurity_Resupply_audit_v2.pdf) | ChainSecurity | Audit | 2025-08 | fresh | Direct | n/a | no match | 0 | 0 | 0 | 29 | n/a |
+| [ChainSecurity_Resupply_sreUSD_audit.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/ChainSecurity_Resupply_sreUSD_audit.pdf) | ChainSecurity | Audit | 2025-08 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 7 | high |
+| [Electisec-Resupply-CurveLendOperator.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/Electisec-Resupply-CurveLendOperator.pdf) | unknown | Audit | 2025-09 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [Electisec-Resupply-Inflation-Fixes.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/Electisec-Resupply-Inflation-Fixes.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [Electisec-Resupply-sreUSD.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/Electisec-Resupply-sreUSD.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [rsup_yaudit_report.pdf](https://github.com/resupplyfi/resupply/blob/main/audits/rsup_yaudit_report.pdf) | yAudit | Audit | 2024-12 | aging | Direct | n/a | no match | 0 | 0 | 0 | 41 | n/a |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [5822] ChainSecurity_Resupply_CurveLend_Operators_audit.pdf — no match: Two contracts in scope: CurveLendMinterFactory and CurveLendOperator. Audit date from cover page.
+- [5823] ChainSecurity_Resupply_Resupply_audit.pdf — no match: No reason recorded
+- [5824] ChainSecurity_Resupply_audit_v2.pdf — no match: No reason recorded
+- [5825] ChainSecurity_Resupply_sreUSD_audit.pdf — no match: Scope table on page 5 lists 7 contracts with file paths. Audit date from cover page: August 19, 2025.
+- [5826] Electisec-Resupply-CurveLendOperator.pdf — no match: Two contracts in scope: CurveLendMinterFactory and CurveLendOperator, both under src/dao/. Audit date is September 16, 2025.
+- [5827] Electisec-Resupply-Inflation-Fixes.pdf — no match: The provided text is a GitHub page with navigation elements, not the actual audit report content. No contract names or audit date could be extracted.
+- [5828] Electisec-Resupply-sreUSD.pdf — no match: The provided text is a GitHub page navigation and does not contain the actual audit report content. No contracts or audit date could be extracted.
+- [5829] rsup_yaudit_report.pdf — no match: No reason recorded
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| ChainSecurity_Resupply_CurveLend_Operators_audit.pdf | CurveLendMinterFactory | unmatched — not counted | — | listed in scope table | no |
+| ChainSecurity_Resupply_CurveLend_Operators_audit.pdf | CurveLendOperator | unmatched — not counted | — | listed in scope table | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | BasicVaultOracle | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | Core | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | EmissionsController | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | FeeDeposit | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | FeeDepositController | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | GovStaker | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | GovStakerEscrow | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | GovToken | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | InsurancePool | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | InterestRateCalculator | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | LiquidationHandler | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | MultiRewardsDistributor | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | PermaStaker | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | RedemptionHandler | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | ResupplyPair | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | ResupplyPairConstants | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | ResupplyPairCore | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | ResupplyPairDeployer | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | ResupplyRegistry | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | RewardDistributorMultiEpoch | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | RewardHandler | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | SimpleReceiver | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | SimpleReceiverFactory | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | SimpleRewardStreamer | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | Stablecoin | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | Swapper | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | Treasury | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | VestManager | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | Voter | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_Resupply_audit.pdf | WriteOffToken | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | BasicVaultOracle | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | BorrowLimitController | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | Core | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | EmissionsController | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | FeeDeposit | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | FeeDepositController | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | GovStaker | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | GovStakerEscrow | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | GovToken | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | InsurancePool | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | InterestRateCalculator | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | LiquidationHandler | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | MultiRewardsDistributor | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | PermaStaker | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | RedemptionHandler | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | ResupplyPair | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | ResupplyPairCore | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | ResupplyPairDeployer | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | ResupplyRegistry | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | RewardDistributorMultiEpoch | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | RewardHandler | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | SimpleReceiver | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | SimpleReceiverFactory | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | SimpleRewardStreamer | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | Stablecoin | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | Swapper | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | Treasury | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | VestManager | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_audit_v2.pdf | Voter | unmatched — not counted | — | — | no |
+| ChainSecurity_Resupply_sreUSD_audit.pdf | LinearRewardsErc4626 | unmatched — not counted | — | listed in scope table | no |
+| ChainSecurity_Resupply_sreUSD_audit.pdf | sreUSD | unmatched — not counted | — | listed in scope table | no |
+| ChainSecurity_Resupply_sreUSD_audit.pdf | PriceWatcher | unmatched — not counted | — | listed in scope table | no |
+| ChainSecurity_Resupply_sreUSD_audit.pdf | InterestRateCalculatorV2 | unmatched — not counted | — | listed in scope table | no |
+| ChainSecurity_Resupply_sreUSD_audit.pdf | FeeLogger | unmatched — not counted | — | listed in scope table | no |
+| ChainSecurity_Resupply_sreUSD_audit.pdf | RewardHandler | unmatched — not counted | — | listed in scope table | no |
+| ChainSecurity_Resupply_sreUSD_audit.pdf | FeeDepositController | unmatched — not counted | — | listed in scope table | no |
+| Electisec-Resupply-CurveLendOperator.pdf | CurveLendMinterFactory | unmatched — not counted | — | listed in scope section | no |
+| Electisec-Resupply-CurveLendOperator.pdf | CurveLendOperator | unmatched — not counted | — | listed in scope section | no |
+| rsup_yaudit_report.pdf | BasicVaultOracle | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | Constants | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | Core | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | CoreOwnable | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | CorePausable | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | DelegatedOps | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | EmissionsController | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | EpochTracker | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | ExampleReceiver | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | FeeDeposit | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | FeeDepositController | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | GovStaker | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | GovStakerEscrow | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | GovToken | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | GuardianAuthHook | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | GuardianOperator | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | InsurancePool | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | InterestRateCalculator | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | LiquidationHandler | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | MathUtil | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | MultiRewardsDistributor | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | PermaLocker | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | RedemptionHandler | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | ResupplyPair | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | ResupplyPairConstants | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | ResupplyPairCore | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | ResupplyPairDeployer | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | ResupplyRegistry | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | RewardDistributorMultiEpoch | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | RewardHandler | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | SafeERC20 | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | SimpleReceiver | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | SimpleReceiverFactory | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | SimpleRewardStreamer | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | Stablecoin | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | Treasury | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | VaultAccount | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | VestManager | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | VestManagerBase | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | Voter | unmatched — not counted | — | — | no |
+| rsup_yaudit_report.pdf | WriteOffToken | unmatched — not counted | — | — | no |
 
 ## Coverage Gaps
 
@@ -162,20 +265,28 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 50 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 8
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=3
-- Match method counts: contract_name=3, extraction_exact=7
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 111 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=3, low=2
+- Match method counts: n/a
 
 Zero-match audit list:
 
+- [5822] ChainSecurity_Resupply_CurveLend_Operators_audit.pdf
+- [5823] ChainSecurity_Resupply_Resupply_audit.pdf
+- [5824] ChainSecurity_Resupply_audit_v2.pdf
+- [5825] ChainSecurity_Resupply_sreUSD_audit.pdf
+- [5826] Electisec-Resupply-CurveLendOperator.pdf
 - [5827] Electisec-Resupply-Inflation-Fixes.pdf
 - [5828] Electisec-Resupply-sreUSD.pdf
+- [5829] rsup_yaudit_report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

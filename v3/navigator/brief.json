@@ -1,22 +1,55 @@
 {
-  "schema_version": "2.0",
+  "schema_version": "3.0",
   "project_key": "navigator",
-  "generated_at": "2026-07-03T21:06:36.255Z",
-  "pipeline_run_id": "v2-2026-07-02-1ba3fd",
+  "generated_at": "2026-07-15T18:00:00.000Z",
+  "authority": {
+    "activation_id": "scope-prod-20260715-v1",
+    "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
+    "match_closure_sha256": "8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6",
+    "review_closure_sha256": "ba1f6f291d2f91f0993306e7ee30a8c54c9b49bfb0a4757f9de2abd218c8fd1d",
+    "topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+    "topography_closure_sha256": "a8c3fc7d9dc82143989157bb6855fbb7c23dddc63b6ddb6cd2d84d8d4aa4eca2",
+    "liveness_stage_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+    "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
+    "fork_detection_run_id": "fork-structural-canonical-production-20260712",
+    "deployer_decision_run_id": "deployer-candidate-production-20260712",
+    "export_input_receipt_sha256": "7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213",
+    "canonical_network_policy": "offline_cache_only"
+  },
+  "production_state": {
+    "state_kind": "blocked_no_audit_authority",
+    "cohort_ordinal": 1122,
+    "raw_selected_contract_rows": 0,
+    "selected_audits": 0,
+    "eligible_audit_results": 0,
+    "matched_audit_results": 0,
+    "no_match_audit_results": 0
+  },
+  "missing_evidence": {
+    "audit_dates": []
+  },
+  "pipeline_run_id": "brief-generation-scope-prod-20260715-v1",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
     "total_contracts": 12,
     "total_addresses": 12,
     "unique_implementations": 12,
+    "address_book_own_implementations": 0,
+    "address_book_context_implementations": 9,
+    "address_book_unclassified_implementations": 0,
+    "non_address_book_implementations": 3,
+    "third_party_or_infra_implementations": 0,
+    "standard_proxy_or_library_implementations": 0,
+    "address_book_proxy_deployments": 1,
     "total_deployments": 12,
     "audited_contracts": 0,
-    "unaudited_contracts": 12,
+    "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 12,
+    "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": null,
     "total_audits": 0,
     "direct_audits": 0,
     "inherited_audits": 0,
@@ -41,9 +74,27 @@
       "stale": 0,
       "unknown": 0
     },
-    "live_implementations": 12,
-    "live_verified_implementations": 12,
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
     "live_audited_implementations": 0,
+    "coverage_basis": "address_book_owned_live_verified_implementations",
+    "live_verified_own_confirmed": 0,
+    "live_audited_own_confirmed": 0,
+    "live_verified_needs_review": 0,
+    "live_verified_excluded_standard": 0,
+    "live_verified_excluded_third_party": 0,
+    "live_verified_excluded_inventory_pollution": 0,
+    "coverage_confidence": "low",
+    "coverage_assessment_status": "not_assessable",
+    "coverage_assessment_note": "No eligible owned address-book contracts are available for an operational-liveness denominator.",
+    "liveness_assessment_status": "not_applicable",
+    "liveness_eligible_contracts": 0,
+    "liveness_assessed_contracts": 0,
+    "liveness_unresolved_contracts": 0,
+    "liveness_run_ids": [],
+    "scope_analysis_pending_audits": 0,
+    "coverage_pct_conservative": null,
+    "live_verified_third_party_excluded": 0,
     "deploy_coverage_basis_breakdown": {
       "code_matched": 0,
       "diverged": 0,
@@ -51,25 +102,42 @@
     }
   },
   "topography": {
-    "project_purpose": "Derivatives. Structurally: 12 project-authored contract(s) across 2 chain(s); 4 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol forms a single structural family (Core Logic) of 12 contract(s).",
+    "project_purpose": "This brief describes the observed EVM deployment and audit surface for Navigator. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.",
+    "relationship_narrative": "The pinned logic-topography run contains 9 contract row(s) across arbitrum, sonic. Structural roles: 9 core. No upgradeable pattern was identified in these rows.",
     "product_family_count": 1,
-    "total_contracts_indexed": 12,
-    "live_contracts": 12,
+    "total_contracts_indexed": 9,
+    "live_contracts": 0,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 0,
+    "unknown_contracts": 9,
+    "deployment_units": 23,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
+  "logic_topography": {
+    "run_id": "logic-topography-normalized-candidate-20260715-v1",
+    "content_rows": 9,
+    "structural_roles": {
+      "core": 9
+    },
+    "contract_kinds": {
+      "contract": 9
+    },
+    "standards": {
+      "erc20": 2
+    },
+    "frameworks": {
+      "openzeppelin": 9
+    },
+    "upgradeable_contracts": 0
+  },
   "surface_sufficiency": {
-    "unique_implementations": 12,
+    "unique_implementations": 0,
     "has_non_token_contracts": false,
-    "is_skeletal": false
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -84,7 +152,7 @@
       "deployment_unit_proxy_count": null,
       "name": "EIP173Proxy",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -101,7 +169,11 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
         }
       ],
       "audits_covering": [],
@@ -110,7 +182,19 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": 0.75,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
       "effective_deploy_date": "2024-12-19 07:16:20+03",
       "deploy_coverage_basis": null
     },
@@ -118,11 +202,11 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0xf75d3c6f20fb65cc0b8f84687e5cbac3d7f4221e",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-248549",
+      "deployment_unit_proxy_count": 0,
       "name": "FastPriceEvents",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -134,12 +218,16 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xf75d3c6f20fb65cc0b8f84687e5cbac3d7f4221e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-248549",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:00:31.331+00"
         }
       ],
       "audits_covering": [],
@@ -148,7 +236,28 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
       "effective_deploy_date": "2023-06-02 07:24:39+03",
       "deploy_coverage_basis": null
     },
@@ -156,11 +265,11 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x41cd8cafc24a771031b9eb9c57cfc94d86045eb6",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-248535",
+      "deployment_unit_proxy_count": 0,
       "name": "GLP",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -172,12 +281,16 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x41cd8cafc24a771031b9eb9c57cfc94d86045eb6",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-248535",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:00:31.331+00"
         }
       ],
       "audits_covering": [],
@@ -186,7 +299,28 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
       "effective_deploy_date": "2023-06-02 07:23:17+03",
       "deploy_coverage_basis": null
     },
@@ -194,11 +328,11 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x65dcb38637b526305be55f14b24a4ab2bd177780",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-248538",
+      "deployment_unit_proxy_count": 0,
       "name": "GlpManager",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -210,12 +344,16 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x65dcb38637b526305be55f14b24a4ab2bd177780",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-248538",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:00:31.331+00"
         }
       ],
       "audits_covering": [],
@@ -224,7 +362,28 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
       "effective_deploy_date": "2023-06-02 07:23:33+03",
       "deploy_coverage_basis": null
     },
@@ -232,11 +391,11 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x2d270f66fee6ac9e27ff6551af5a8cfb5c8a7493",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-248532",
+      "deployment_unit_proxy_count": 0,
       "name": "MintableBaseToken",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -248,12 +407,16 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x2d270f66fee6ac9e27ff6551af5a8cfb5c8a7493",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-248532",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:00:31.331+00"
         }
       ],
       "audits_covering": [],
@@ -262,7 +425,28 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
       "effective_deploy_date": "2023-06-02 07:23:25+03",
       "deploy_coverage_basis": null
     },
@@ -274,7 +458,7 @@
       "deployment_unit_proxy_count": null,
       "name": "NAVI",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -291,7 +475,11 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
         }
       ],
       "audits_covering": [],
@@ -300,7 +488,19 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": 0.75,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
       "effective_deploy_date": "2024-12-19 09:17:19+03",
       "deploy_coverage_basis": null
     },
@@ -308,11 +508,11 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x3b2732c1e5a248bbdd0315e9e8845c64f5a6faf5",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-248534",
+      "deployment_unit_proxy_count": 0,
       "name": "PositionRouter",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -324,12 +524,16 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x3b2732c1e5a248bbdd0315e9e8845c64f5a6faf5",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-248534",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:00:31.331+00"
         }
       ],
       "audits_covering": [],
@@ -338,7 +542,28 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
       "effective_deploy_date": "2023-06-02 07:23:57+03",
       "deploy_coverage_basis": null
     },
@@ -346,11 +571,11 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0xb2a477c6ba5e96f6decbced836cb7d3d32ef9ecd",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-248544",
+      "deployment_unit_proxy_count": 0,
       "name": "PriceFeedTimelock",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -362,12 +587,16 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xb2a477c6ba5e96f6decbced836cb7d3d32ef9ecd",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-248544",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:00:31.331+00"
         }
       ],
       "audits_covering": [],
@@ -376,7 +605,28 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
       "effective_deploy_date": "2023-06-02 07:24:48+03",
       "deploy_coverage_basis": null
     },
@@ -388,7 +638,7 @@
       "deployment_unit_proxy_count": null,
       "name": "RewardTracker",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -405,7 +655,11 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
         }
       ],
       "audits_covering": [],
@@ -414,7 +668,19 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "non_address_book",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "non_address_book_inventory",
+      "surface_confidence": 0.45,
+      "surface_exclusion_reason": "Discovered project contract is not present at an exact chain/address key in the protocol address book; excluded from scope matching and coverage.",
+      "surface_evidence": {
+        "source": "exact_protocol_address_book_membership",
+        "has_exact_address_book_entry": false
+      },
       "effective_deploy_date": "2024-12-19 09:22:35+03",
       "deploy_coverage_basis": null
     },
@@ -422,11 +688,11 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x01e9b35785ef3f7ef2677c371442976bd550f320",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-248527",
+      "deployment_unit_proxy_count": 0,
       "name": "Router",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -438,12 +704,16 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x01e9b35785ef3f7ef2677c371442976bd550f320",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-248527",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:00:31.331+00"
         }
       ],
       "audits_covering": [],
@@ -452,7 +722,28 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
       "effective_deploy_date": "2023-06-02 07:23:45+03",
       "deploy_coverage_basis": null
     },
@@ -460,11 +751,11 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x304951d7172bcada54ccac1e4674862b3d5b3d5b",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-248533",
+      "deployment_unit_proxy_count": 0,
       "name": "Vault",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -476,12 +767,16 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x304951d7172bcada54ccac1e4674862b3d5b3d5b",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-248533",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:00:31.331+00"
         }
       ],
       "audits_covering": [],
@@ -490,7 +785,28 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
       "effective_deploy_date": "2023-06-02 07:23:08+03",
       "deploy_coverage_basis": null
     },
@@ -498,11 +814,11 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-248540",
+      "deployment_unit_proxy_count": 0,
       "name": "VaultPriceFeed",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -514,12 +830,16 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-248540",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 07:00:31.331+00"
         }
       ],
       "audits_covering": [],
@@ -528,7 +848,28 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
       "effective_deploy_date": "2023-06-02 07:24:26+03",
       "deploy_coverage_basis": null
     }
@@ -537,10 +878,10 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 12,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 12
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -548,7 +889,24 @@
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],
-    "inherited_remapped_matches": []
+    "audit_scope_outcomes": [],
+    "inherited_remapped_matches": [],
+    "analysis_disposition_counts": {
+      "extracted_references": 0,
+      "matched_own": 0,
+      "matched_own_proxies": 0,
+      "matched_own_live": 0,
+      "matched_own_inactive": 0,
+      "matched_own_uninitialized": 0,
+      "matched_own_liveness_unknown": 0,
+      "matched_third_party_or_infra": 0,
+      "matched_excluded_inventory": 0,
+      "matched_unclassified_address_book": 0,
+      "ambiguous": 0,
+      "unmatched": 0,
+      "accepted_scope_rows": 0
+    }
   },
-  "active_bug_bounty": null
+  "active_bug_bounty": null,
+  "out_of_scope": null
 }

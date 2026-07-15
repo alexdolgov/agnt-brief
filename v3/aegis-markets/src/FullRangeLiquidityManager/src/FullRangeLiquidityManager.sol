@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity ^0.8.26;
 
 // - - - OZ Deps - - -
 
@@ -33,6 +33,7 @@ import {PositionManager} from "v4-periphery/src/PositionManager.sol";
 import {IWETH9} from "v4-periphery/src/interfaces/external/IWETH9.sol";
 import {ISubscriber} from "v4-periphery/src/interfaces/ISubscriber.sol";
 import {PositionInfo} from "v4-periphery/src/libraries/PositionInfoLibrary.sol";
+import {ReentrancyGuard} from "solmate/src/utils/ReentrancyGuard.sol";
 
 // - - - Project Interfaces - - -
 
@@ -48,7 +49,7 @@ import {TruncGeoOracleMulti} from "./TruncGeoOracleMulti.sol";
 /// @title FullRangeLiquidityManager
 /// @notice Manages hook fees and liquidity for Spot pools
 /// @dev Handles fee collection, reinvestment, and allows users to contribute liquidity
-contract FullRangeLiquidityManager is IFullRangeLiquidityManager, ISubscriber, ERC6909Claims {
+contract FullRangeLiquidityManager is IFullRangeLiquidityManager, ISubscriber, ERC6909Claims, ReentrancyGuard {
     using SafeERC20 for IERC20;
     using PoolIdLibrary for PoolKey;
     using PoolIdLibrary for PoolId;
@@ -161,7 +162,7 @@ contract FullRangeLiquidityManager is IFullRangeLiquidityManager, ISubscriber, E
     }
 
     /// @inheritdoc IUnlockCallback
-    function unlockCallback(bytes calldata data) external override onlyPoolManager returns (bytes memory) {
+    function unlockCallback(bytes calldata data) external override onlyPoolManager nonReentrant returns (bytes memory) {
         if (data.length > 0) {
             // Decode the action type
             (CallbackAction action) = abi.decode(data[:32], (CallbackAction));
@@ -178,23 +179,23 @@ contract FullRangeLiquidityManager is IFullRangeLiquidityManager, ISubscriber, E
 
                 // Take tokens from PoolManager to this contract
                 if (amount0 > 0) {
-                    poolManager.take(currency0, address(this), amount0);
-                    // Burn ERC6909 tokens to balance the delta
-                    poolManager.burn(address(this), currency0.toId(), amount0);
-
                     // Track token balances when converting from ERC6909
                     accountedERC6909Balances[currency0] -= amount0;
                     accountedBalances[currency0] += amount0;
+
+                    poolManager.take(currency0, address(this), amount0);
+                    // Burn ERC6909 tokens to balance the delta
+                    poolManager.burn(address(this), currency0.toId(), amount0);
                 }
 
                 if (amount1 > 0) {
-                    poolManager.take(currency1, address(this), amount1);
-                    // Burn ERC6909 tokens to balance the delta
-                    poolManager.burn(address(this), currency1.toId(), amount1);
-
                     // Track token balances when converting from ERC6909
                     accountedERC6909Balances[currency1] -= amount1;
                     accountedBalances[currency1] += amount1;
+
+                    poolManager.take(currency1, address(this), amount1);
+                    // Burn ERC6909 tokens to balance the delta
+                    poolManager.burn(address(this), currency1.toId(), amount1);
                 }
             } else if (action == CallbackAction.SWEEP_EXCESS_TOKEN) {
                 // Decode sweep parameters
@@ -618,7 +619,7 @@ contract FullRangeLiquidityManager is IFullRangeLiquidityManager, ISubscriber, E
             } else {
                 // Handle ERC20 donation
                 uint256 balanceBefore = currency0.balanceOfSelf();
-                IERC20Minimal(Currency.unwrap(currency0)).transferFrom(msg.sender, address(this), amount0);
+                IERC20(Currency.unwrap(currency0)).safeTransferFrom(msg.sender, address(this), amount0);
                 uint256 balanceAfter = currency0.balanceOfSelf();
                 donated0 = balanceAfter - balanceBefore; // Account for potential transfer fees
             }
@@ -639,7 +640,7 @@ contract FullRangeLiquidityManager is IFullRangeLiquidityManager, ISubscriber, E
             } else {
                 // Handle ERC20 donation
                 uint256 balanceBefore = currency1.balanceOfSelf();
-                IERC20Minimal(Currency.unwrap(currency1)).transferFrom(msg.sender, address(this), amount1);
+                IERC20(Currency.unwrap(currency1)).safeTransferFrom(msg.sender, address(this), amount1);
                 uint256 balanceAfter = currency1.balanceOfSelf();
                 donated1 = balanceAfter - balanceBefore; // Account for potential transfer fees
             }
@@ -1077,14 +1078,15 @@ contract FullRangeLiquidityManager is IFullRangeLiquidityManager, ISubscriber, E
                 currency0.transfer(payer, excessNative);
             }
         } else {
+            if (msg.value != 0) revert Errors.NonzeroNativeValue();
             if (amount0 > 0) {
-                IERC20Minimal(Currency.unwrap(currency0)).transferFrom(payer, address(this), amount0);
+                IERC20(Currency.unwrap(currency0)).safeTransferFrom(payer, address(this), amount0);
             }
         }
 
         if (amount1 > 0) {
             // Given ordering currency1 is guaranteed to NOT be address(0)
-            IERC20Minimal(Currency.unwrap(currency1)).transferFrom(payer, address(this), amount1);
+            IERC20(Currency.unwrap(currency1)).safeTransferFrom(payer, address(this), amount1);
         }
     }
 

@@ -111,18 +111,14 @@ contract RolesReceiver is OApp, StrategyManager {
      * @param _owner The address that will own this contract and also be set as the OApp delegate
      * @param _trustedBroadcaster The address of the trusted broadcaster that can send role updates
      * @param _trustedChainId The LayerZero endpoint ID of the trusted source chain
-     * @param _minSecondsBetweenOperations The minimum time in seconds that must elapse between operations on the same safe
      * @dev The constructor sets up the OApp with the LayerZero endpoint and establishes the trusted source parameters.
      *      It is critical that the `_owner` is a Timelock or a secure multi-sig wallet to mitigate risks associated
      *      with the OApp delegate role. See the contract-level security notice for more details.
      */
-    constructor(
-        address _lzEndpoint,
-        address _owner,
-        address _trustedBroadcaster,
-        uint32 _trustedChainId,
-        uint256 _minSecondsBetweenOperations
-    ) OApp(_lzEndpoint, _owner) Ownable(_owner) StrategyManager(_minSecondsBetweenOperations) {
+    constructor(address _lzEndpoint, address _owner, address _trustedBroadcaster, uint32 _trustedChainId)
+        OApp(_lzEndpoint, _owner)
+        Ownable(_owner)
+    {
         TRUSTED_BROADCASTER = bytes32(uint256(uint160(_trustedBroadcaster)));
         TRUSTED_BROADCASTER_ADDRESS = _trustedBroadcaster;
         TRUSTED_CHAIN_ID = _trustedChainId;

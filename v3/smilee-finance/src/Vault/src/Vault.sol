@@ -8,6 +8,8 @@ import {Pausable} from "@openzeppelin/contracts/security/Pausable.sol";
 import {IERC20Metadata} from "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import {IAddressProvider} from "./interfaces/IAddressProvider.sol";
+import {IPriceOracle} from "./interfaces/IPriceOracle.sol";
+import {IMutableToken} from "./interfaces/IMutableToken.sol";
 import {IExchange} from "./interfaces/IExchange.sol";
 import {IVault} from "./interfaces/IVault.sol";
 import {IVaultAccessNFT} from "./interfaces/IVaultAccessNFT.sol";
@@ -23,10 +25,10 @@ contract Vault is IVault, ERC20, EpochControls, AccessControl, Pausable {
     using SafeERC20 for IERC20;
 
     /// @inheritdoc IVaultParams
-    address public immutable baseToken;
+    address public baseToken;
 
     /// @inheritdoc IVaultParams
-    address public immutable sideToken;
+    address public sideToken;
 
     /// @notice The address of the DVP paired with this vault
     address public dvp; // NOTE: public for frontend purposes
@@ -89,17 +91,18 @@ contract Vault is IVault, ERC20, EpochControls, AccessControl, Pausable {
     error InsufficientLiquidity(bytes4); // raise when accounting operations would break the system due to lack of liquidity
     error FailingDeltaHedge();
     error OutOfAllowedRange();
-    error TransferNotAllowed();
+    error ChangeTokenNotAllowed();
 
     event Deposit(uint256 amount);
     event Redeem(uint256 amount);
     event InitiateWithdraw(uint256 amount);
-    event Withdraw(uint256 amount);
+    event Withdraw(uint256 shares, uint256 amount);
     // Used by TheGraph for frontend needs:
     event MissingLiquidity(uint256 missing);
     event ChangedHedgeMargin(uint256 basisPoints);
     event Killed();
     event ChangedPauseState(bool paused);
+    event ChangedToken(address from, address to);
 
     constructor(
         address baseToken_,
@@ -217,7 +220,7 @@ contract Vault is IVault, ERC20, EpochControls, AccessControl, Pausable {
         @return baseTokenAmount The amount of baseToken currently locked in the vault
         @return sideTokenAmount The amount of sideToken currently locked in the vault
      */
-    function balances() public view returns (uint256 baseTokenAmount, uint256 sideTokenAmount) {
+    function balances() external view returns (uint256 baseTokenAmount, uint256 sideTokenAmount) {
         baseTokenAmount = _notionalBaseTokens();
         sideTokenAmount = _notionalSideTokens();
     }
@@ -561,7 +564,7 @@ contract Vault is IVault, ERC20, EpochControls, AccessControl, Pausable {
         _burn(address(this), sharesToWithdraw);
         IERC20(baseToken).safeTransfer(msg.sender, amountToWithdraw);
 
-        emit Withdraw(amountToWithdraw);
+        emit Withdraw(sharesToWithdraw, amountToWithdraw);
     }
 
     function rescueShares() external isDead whenNotPaused {
@@ -602,8 +605,6 @@ contract Vault is IVault, ERC20, EpochControls, AccessControl, Pausable {
         if (from == address(this) || to == address(this)) {
             return;
         }
-
-        // revert TransferNotAllowed();
 
         /**
          * As user may transfer their shares, we need to fix the accounting
@@ -910,5 +911,48 @@ contract Vault is IVault, ERC20, EpochControls, AccessControl, Pausable {
         _checkEpochFinished();
         (, uint256 sideTokens) = _tokenBalances();
         _sellSideTokens(sideTokens);
+    }
+
+    function changeToken(address from, address to) external {
+        _checkRole(ROLE_GOD);
+
+        bool isBaseToken = (from == baseToken);
+        bool isSideToken = (from == sideToken);
+        if ((!isBaseToken && !isSideToken) || from == to) {
+            revert ChangeTokenNotAllowed();
+        }
+        uint8 toDecimals = IERC20Metadata(to).decimals();
+        if (isBaseToken) {
+            if (toDecimals != _shareDecimals || to == sideToken) {
+                revert ChangeTokenNotAllowed();
+            }
+            baseToken = to;
+        }
+        if (isSideToken) {
+            uint8 fromDecimals = IERC20Metadata(sideToken).decimals();
+            if (toDecimals != fromDecimals || to == baseToken) {
+                revert ChangeTokenNotAllowed();
+            }
+            sideToken = to;
+        }
+
+        address exchangeAddress = _addressProvider.exchangeAdapter();
+        if (exchangeAddress == address(0)) {
+            revert AddressZero();
+        }
+        IExchange exchange = IExchange(exchangeAddress);
+
+        uint256 amount = IERC20(from).balanceOf(address(this));
+        IERC20(from).safeApprove(exchangeAddress, amount);
+        uint256 newAmount = exchange.swapIn(from, to, amount);
+
+        IPriceOracle oracle = IPriceOracle(_addressProvider.priceOracle());
+
+        if (oracle.getPrice(to, from) < 1e18 || newAmount < amount) {
+            revert ChangeTokenNotAllowed();
+        }
+
+        IMutableToken(dvp).changeToken(from, to);
+        emit ChangedToken(from, to);
     }
 }

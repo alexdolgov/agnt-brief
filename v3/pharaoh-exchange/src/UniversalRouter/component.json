@@ -1,34 +1,28 @@
 {
   "component": "UniversalRouter",
   "main_contract": "UniversalRouter",
-  "source_file_count": 42,
-  "deployment_count": 3,
+  "source_entry_count": 44,
+  "source_file_count": 44,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UniversalRouter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x0e3a7611956072960f92c5910abb13fb1373ceec",
+      "address": "0x5acc35397d2ce81ac54a4b1c6d9e1fb29f8ec6c6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x2919fbf8be554752a13b192e0ef8e572b97f880a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xaeb49808d6e62065012ebf03962bccdfcd1e7274",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397765"
     }
   ]
 }

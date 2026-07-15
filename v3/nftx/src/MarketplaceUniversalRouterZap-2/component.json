@@ -1,0 +1,28 @@
+{
+  "component": "MarketplaceUniversalRouterZap-2",
+  "main_contract": "MarketplaceUniversalRouterZap",
+  "source_entry_count": 89,
+  "source_file_count": 89,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MarketplaceUniversalRouterZap-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf56296b3010a59ef7f0915569dd44e1302b9ca40",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397337"
+    }
+  ]
+}

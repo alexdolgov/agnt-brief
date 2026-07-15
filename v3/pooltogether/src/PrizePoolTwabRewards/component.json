@@ -1,34 +1,58 @@
 {
   "component": "PrizePoolTwabRewards",
   "main_contract": "PrizePoolTwabRewards",
-  "source_file_count": 19,
-  "deployment_count": 3,
+  "source_entry_count": 15,
+  "source_file_count": 15,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PrizePoolTwabRewards\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "gnosis",
-      "chain_id": 100,
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3341dac0912b630f1a8c237b64f6861e9fa11d79",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397864"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x36be31e7acd4b0d755bcc7858ef04848a3ec66c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397882"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf4c47dacfda99be38793181af9fd1a2ec7576bbf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397935"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0x0d51a33975024e8afc55fde9f6b070c10aa71dd9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x6563996aa856649dbf1326490d2ec0c0627d7060",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x84090aea5370565b88108c4ffed378672a8afde6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397936"
     }
   ]
 }

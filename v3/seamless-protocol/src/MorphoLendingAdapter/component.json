@@ -1,15 +1,18 @@
 {
   "component": "MorphoLendingAdapter",
   "main_contract": "MorphoLendingAdapter",
-  "source_file_count": 38,
-  "deployment_count": 6,
-  "audited": true,
-  "audits_covering": [
-    "https://cantina.xyz/portfolio/16200c4b-d088-49b7-9a3f-b7c227ea416b",
-    "https://github.com/seamless-protocol/leverage-tokens/blob/main/audits/Cantina%20-%208%20May%202025.pdf",
-    "https://github.com/seamless-protocol/leverage-tokens/blob/main/audits/Sherlock%20-%208%20May%202025.pdf",
-    "https://github.com/sherlock-protocol/sherlock-reports/blob/ef0f3da32ef7305f21ad93d510765a8803a66d3b/audits/2025.05.19%20-%20Final%20-%20Seamless%20Protocol%20Collaborative%20Audit%20Report.pdf"
-  ],
+  "source_entry_count": 34,
+  "source_file_count": 34,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MorphoLendingAdapter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -17,15 +20,9 @@
       "address": "0x00c66934ebca0f2a845812bc368b230f6da11a5c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xb0764de7eef0ac69855c431334b7bc51a96e6dba",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398711"
     },
     {
       "chain": "ethereum",
@@ -33,7 +30,9 @@
       "address": "0xb224f589297a5a207e6069de5dafd4b120129817",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398719"
     },
     {
       "chain": "ethereum",
@@ -41,7 +40,9 @@
       "address": "0xcb1effb6f6e531137ccc1508a8d4982e873aee58",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398721"
     },
     {
       "chain": "ethereum",
@@ -49,7 +50,9 @@
       "address": "0xe33eaf6ee64f4b9353ff2ce3748fa05eeb9bd809",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398723"
     },
     {
       "chain": "ethereum",
@@ -57,7 +60,9 @@
       "address": "0xe9a32ae2d53459ac490f1dbe0cfd0786fb298f1f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398724"
     }
   ]
 }

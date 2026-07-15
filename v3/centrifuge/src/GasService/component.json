@@ -1,50 +1,68 @@
 {
   "component": "GasService",
   "main_contract": "GasService",
-  "source_file_count": 10,
+  "source_entry_count": 11,
+  "source_file_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GasService\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x09ab10a9c3e6eac1d18270a2322b6113f4c7f5e8",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x32043a41f4be198c4f6590312f7a7b91624cab57",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x427a1ce127b1775e4cbd4f58ad468b9f832ea7e9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xa0e3a5709995ef9900ab0f7fa070567fe89d9e18",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
+      "chain": "ethereum",
+      "chain_id": 1,
       "address": "0xbebef21d686a957dececce6a58455fa0f16754be",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392766"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbebef21d686a957dececce6a58455fa0f16754be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392813"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbebef21d686a957dececce6a58455fa0f16754be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392865"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xbebef21d686a957dececce6a58455fa0f16754be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392910"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbebef21d686a957dececce6a58455fa0f16754be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393019"
     }
   ]
 }

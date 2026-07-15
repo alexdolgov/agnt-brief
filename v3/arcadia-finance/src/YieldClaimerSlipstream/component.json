@@ -1,44 +1,28 @@
 {
   "component": "YieldClaimerSlipstream",
   "main_contract": "YieldClaimerSlipstream",
-  "source_file_count": 32,
-  "deployment_count": 5,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2026-01%20Sherlock.pdf"
-  ],
+  "source_entry_count": 27,
+  "source_file_count": 27,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/YieldClaimerSlipstream\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x1f75abf8a24782053b351d9b4ea6d1236ed59105",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x2a07d99ec1140e25db07283930160d4bde93d09f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
+      "chain": "chain-130",
+      "chain_id": 130,
       "address": "0x5a8278d37b7a787574b6aa7e18d8c02d994f18ba",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x8c1fbf38118fd5a704b6e7babcb7af1a9a291980",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391217"
     },
     {
       "chain": "base",
@@ -46,7 +30,9 @@
       "address": "0xc8bf4b2c740ff665864e9494832520f18822871c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391281"
     }
   ]
 }

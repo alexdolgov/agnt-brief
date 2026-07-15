@@ -1,26 +1,28 @@
 {
   "component": "OldERC721Wrapper",
   "main_contract": "OldERC721Wrapper",
-  "source_file_count": 16,
-  "deployment_count": 2,
+  "source_entry_count": 12,
+  "source_file_count": 12,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OldERC721Wrapper\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x17770d9d996b8266fd07b736a014d8f06a5dafff",
+      "address": "0xc0ec4e4ba06dfb2dfaf21a69fc78310d80fc5497",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xb14b3159785737ddbd0b5e9395394160b146e0b9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394760"
     }
   ]
 }

@@ -1,10 +1,20 @@
 {
   "component": "FraxVoterProxy",
   "main_contract": "FraxVoterProxy",
+  "source_entry_count": 11,
   "source_file_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FraxVoterProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +22,9 @@
       "address": "0x59cfcd384746ec3035299d90782be065e466800b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393090"
     }
   ]
 }

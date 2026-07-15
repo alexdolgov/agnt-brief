@@ -46,6 +46,9 @@ library PoolPositionUtilities {
             } else if (reserveB == 0) {
                 amountA = Math.mulDiv(reserveA, binLpTokenAmount, bin.totalSupply, Math.Rounding(1));
             } else {
+                // Rounding effects may lead to too little active bin being
+                // minted.  Pad amount by 0.1bps.
+                binLpTokenAmount = Math.mulDiv(binLpTokenAmount, 1.00001e18, 1e18, Math.Rounding(1)) + 1;
                 amountA = Math.mulDiv(reserveA, binLpTokenAmount, bin.totalSupply, Math.Rounding(1));
                 amountB = Math.max(Math.mulDiv(reserveB, amountA, reserveA, Math.Rounding(1)), Math.mulDiv(reserveB, binLpTokenAmount, bin.totalSupply, Math.Rounding(1)));
                 amountA = Math.mulDiv(reserveA, amountB, reserveB, Math.Rounding(1));

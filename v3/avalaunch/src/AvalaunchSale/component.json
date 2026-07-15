@@ -1,36 +1,28 @@
 {
   "component": "AvalaunchSale",
   "main_contract": "AvalaunchSale",
-  "source_file_count": 3,
-  "deployment_count": 3,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/avalaunch-app/xava-protocol/blob/master/audit/20220324_Paladin_AvalaunchScopeExtension_Final_Report.pdf"
-  ],
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AvalaunchSale\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x0a1a9eb0d984f1c194c85bace2070724101272e3",
+      "address": "0x16bc59978851012ada4843e49df2a314ea38665a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x6168bbf5ef2001981c8b300723d7f300f01871ff",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xea3283f19a56abb2640b704b2905606c9577f75a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

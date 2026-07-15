@@ -32,98 +32,98 @@ library Bits {
 
     // ============ Constants ============
 
-    uint256 internal constant ONE = 1;
+    uint internal constant ONE = 1;
     uint256 internal constant MAX_UINT_BITS = 256;
 
     // ============ Functions ============
 
-    function createBitmaps(uint256 maxLength) internal pure returns (uint256[] memory) {
-        return new uint256[]((maxLength / MAX_UINT_BITS) + ONE);
+    function createBitmaps(uint maxLength) internal pure returns (uint[] memory) {
+        return new uint[]((maxLength / MAX_UINT_BITS) + ONE);
     }
 
     function getMarketIdFromBit(
-        uint256 index,
-        uint256 bit
-    ) internal pure returns (uint256) {
+        uint index,
+        uint bit
+    ) internal pure returns (uint) {
         return (MAX_UINT_BITS * index) + bit;
     }
 
     function setBit(
-        uint256[] memory bitmaps,
-        uint256 marketId
+        uint[] memory bitmaps,
+        uint marketId
     ) internal pure {
-        uint256 bucketIndex = marketId / MAX_UINT_BITS;
-        uint256 indexFromRight = marketId % MAX_UINT_BITS;
+        uint bucketIndex = marketId / MAX_UINT_BITS;
+        uint indexFromRight = marketId % MAX_UINT_BITS;
         bitmaps[bucketIndex] |= (ONE << indexFromRight);
     }
 
     function hasBit(
-        uint256[] memory bitmaps,
-        uint256 marketId
+        uint[] memory bitmaps,
+        uint marketId
     ) internal pure returns (bool) {
-        uint256 bucketIndex = marketId / MAX_UINT_BITS;
-        uint256 indexFromRight = marketId % MAX_UINT_BITS;
-        uint256 bit = bitmaps[bucketIndex] & (ONE << indexFromRight);
-        return bit != 0;
+        uint bucketIndex = marketId / MAX_UINT_BITS;
+        uint indexFromRight = marketId % MAX_UINT_BITS;
+        uint bit = bitmaps[bucketIndex] & (ONE << indexFromRight);
+        return bit > 0;
     }
 
     function unsetBit(
-        uint256 bitmap,
-        uint256 bit
-    ) internal pure returns (uint256) {
-        return bitmap & ~(ONE << bit);
+        uint bitmap,
+        uint bit
+    ) internal pure returns (uint) {
+        return bitmap - (ONE << bit);
     }
 
     // solium-disable security/no-assign-params
-    function getLeastSignificantBit(uint256 x) internal pure returns (uint256) {
+    function getLeastSignificantBit(uint256 x) internal pure returns (uint) {
         // gas usage peaks at 350 per call
 
-        uint256 lsb = 255;
+        uint lsb = 255;
 
-        if (x & uint128(-1) != 0) {
+        if (x & uint128(-1) > 0) {
             lsb -= 128;
         } else {
             x >>= 128;
         }
 
-        if (x & uint64(-1) != 0) {
+        if (x & uint64(-1) > 0) {
             lsb -= 64;
         } else {
             x >>= 64;
         }
 
-        if (x & uint32(-1) != 0) {
+        if (x & uint32(-1) > 0) {
             lsb -= 32;
         } else {
             x >>= 32;
         }
 
-        if (x & uint16(-1) != 0) {
+        if (x & uint16(-1) > 0) {
             lsb -= 16;
         } else {
             x >>= 16;
         }
 
-        if (x & uint8(-1) != 0) {
+        if (x & uint8(-1) > 0) {
             lsb -= 8;
         } else {
             x >>= 8;
         }
 
-        if (x & 0xf != 0) {
+        if (x & 0xf > 0) {
             lsb -= 4;
         } else {
             x >>= 4;
         }
 
-        if (x & 0x3 != 0) {
+        if (x & 0x3 > 0) {
             lsb -= 2;
         } else {
             x >>= 2;
             // solium-enable security/no-assign-params
         }
 
-        if (x & 0x1 != 0) {
+        if (x & 0x1 > 0) {
             lsb -= 1;
         }
 

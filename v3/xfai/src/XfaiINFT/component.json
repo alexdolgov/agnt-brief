@@ -1,8 +1,16 @@
 {
   "component": "XfaiINFT",
   "main_contract": "XfaiINFT",
+  "source_entry_count": 18,
   "source_file_count": 18,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/XfaiINFT\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,23 +20,9 @@
       "address": "0xa155f12d3be29bf20b615e1e7f066ae9e3c5239a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0xca4ceca8750bf92373bab5448d75433372edc7f8",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0xf85cf376ac0dc4c756e5ce7a538cd8a0b3b235fe",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

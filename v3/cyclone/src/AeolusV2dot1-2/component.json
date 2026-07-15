@@ -1,7 +1,61 @@
 {
   "component": "AeolusV2dot1-2",
   "main_contract": "AeolusV2dot1",
+  "source_entry_count": 9,
   "source_file_count": 9,
+  "source_path_remaps": [
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/AeolusV2dot1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-866139b4ae8b-AeolusV2dot1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/math/SafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-32d7b65be9a9-SafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/ownership/Ownable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-7aff6c3b1c4f-Ownable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/token/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-c40de834baea-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/token/IERC20Basic.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-b555b44e83cb-IERC20Basic.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/token/IMintableToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-396195b41525-IMintableToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/token/SafeERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-cad0734f62c6-SafeERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/uniswapv2/IRouter.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-ee4d743fb789-IRouter.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ncysatnaf/app/cyclone/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-da47507e5bc0-Address.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AeolusV2dot1-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +66,9 @@
       "address": "0xa8c187d8773bc9e49a10554715ff49bdcf39d55d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393342"
     }
   ]
 }

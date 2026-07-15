@@ -3,7 +3,6 @@
 pragma solidity ^0.8.19;
 
 import { IERC20 } from "oz/token/ERC20/IERC20.sol";
-
 import { IAccessControlManager } from "interfaces/IAccessControlManager.sol";
 import { IAgToken } from "interfaces/IAgToken.sol";
 
@@ -42,20 +41,18 @@ enum QuoteType {
 enum OracleReadType {
     CHAINLINK_FEEDS,
     EXTERNAL,
-    NO_ORACLE
+    NO_ORACLE,
+    STABLE,
+    WSTETH,
+    CBETH,
+    RETH,
+    SFRXETH,
+    PYTH
 }
 
 enum OracleQuoteType {
     UNIT,
     TARGET
-}
-
-enum OracleTargetType {
-    STABLE,
-    WSTETH,
-    CBETH,
-    RETH,
-    SFRXETH
 }
 
 enum WhitelistType {
@@ -70,7 +67,7 @@ struct Permit2Details {
     address to;                                  // Address that will receive the funds
     uint256 nonce;                               // Nonce of the transaction
     bytes signature;                             // Permit signature of the user
-}       
+}
 
 struct FacetCut {
     address facetAddress;                        // Facet contract address
@@ -92,6 +89,10 @@ struct DiamondStorage {
     bytes4[] selectors;                          // List of all available selectors
     mapping(bytes4 => FacetInfo) selectorInfo;   // Selector to (address, position in list)
     IAccessControlManager accessControlManager;  // Contract handling access control
+}
+
+struct ImplementationStorage {
+    address implementation;                      // Dummy implementation address for Etherscan usability
 }
 
 struct ManagerStorage {
@@ -118,6 +119,7 @@ struct Collateral {
 struct TransmuterStorage {
     IAgToken agToken;                            // agToken handled by the system
     uint8 isRedemptionLive;                      // If redemption is unpaused
+    uint8 statusReentrant;                        // If call is reentrant or not
     uint128 normalizedStables;                   // Normalized amount of stablecoins issued by the system
     uint128 normalizer;                          // To reconcile `normalizedStables` values with the actual amount
     address[] collateralList;                    // List of collateral assets supported by the system

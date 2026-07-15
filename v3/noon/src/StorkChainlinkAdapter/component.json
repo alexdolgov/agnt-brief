@@ -1,7 +1,15 @@
 {
   "component": "StorkChainlinkAdapter",
   "main_contract": "StorkChainlinkAdapter",
+  "source_entry_count": 4,
   "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StorkChainlinkAdapter\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x9a137fdbe8bbb6065626098818dc82d26c20659b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397370"
     },
     {
       "chain": "chain-999",
@@ -20,7 +30,9 @@
       "address": "0xf08c4a8f113c8a90788f02b8151085eb9bc01e0e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397371"
     }
   ]
 }

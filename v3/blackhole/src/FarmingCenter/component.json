@@ -1,8 +1,16 @@
 {
   "component": "FarmingCenter",
   "main_contract": "FarmingCenter",
+  "source_entry_count": 27,
   "source_file_count": 27,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FarmingCenter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0xa47ad2c95fae476a73b85a355a5855adb4b3a449",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xcbf15ea9f0e44d563ed07d6496ceba01790932ab",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392264"
     },
     {
       "chain": "avalanche",
@@ -28,7 +30,9 @@
       "address": "0xcecc64211f1ed70a71bd47eb656f7067c1f45541",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392275"
     }
   ]
 }

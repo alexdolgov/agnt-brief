@@ -1,53 +1,42 @@
 {
   "component": "ERC1967Proxy",
   "main_contract": "ERC1967Proxy",
+  "source_entry_count": 8,
   "source_file_count": 8,
-  "deployment_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Proxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
-    "https://487956288-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F3KnzajNTqFNdyZr2k3l3%2Fuploads%2F1BUrZGcTaMl5rFRH00ph%2FTwyne%20-%20Aave%20integration.pdf",
+    "https://github.com/Enigma-Dark/security-review-reports/blob/main/2025-04_Invariant_Testing_Engagement_Twyne_v1.pdf",
+    "https://github.com/Enigma-Dark/security-review-reports/blob/main/2025-11_Invariant_Testing_Engagement_Twyne_Aave_integration.pdf",
     "https://reports.yaudit.dev/pdf/2025-11-Twyne-AAVE.pdf"
   ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x0af56afbddcb140323445bd7211ba90e54e5fd1c",
+      "address": "0x0acd3a3c8ab6a5f7b5a594c88dfa28999da858ac",
       "is_proxy": true,
-      "implementation_address": "0x41695d3304e38bc806f077a3541c5cd34f8f034b",
-      "liveness": "live"
+      "implementation_address": "0x318ee40f3e47261efad169c1c3affa2cd3ac8935",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400466"
     },
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x106ac75d7cc134af2f98ac4715f9b4289ffe8def",
+      "address": "0xa1517cce0be75700a8838ea1cee0dc383cd3a332",
       "is_proxy": true,
-      "implementation_address": "0xc78d4eab41a32ee94a0da9a7c0d4b64827f35b34",
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x10e67b758f43529d2634aaf7bd6f59a1a9ac5cb1",
-      "is_proxy": true,
-      "implementation_address": "0x923dca198510a6d9e85d1095a8960f6c898eda6f",
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x223d402b82d6b5c4f0b9bc0348960098228139ef",
-      "is_proxy": true,
-      "implementation_address": "0xff8cbf0bb4274cf82c23779ab04978d631a0a34e",
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xfaba8f777996c0c28fe9e6554d84cb30ca3e1881",
-      "is_proxy": true,
-      "implementation_address": "0xff8cbf0bb4274cf82c23779ab04978d631a0a34e",
-      "liveness": "live"
+      "implementation_address": "0x6076d1ec9668883766c035579b3605d91ebfc04d",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400474"
     }
   ]
 }

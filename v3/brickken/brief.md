@@ -1,81 +1,111 @@
 # Agentic Audit Brief: Brickken
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 2 (0 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Brickken (`brickken`)
 - Website: [https://www.brickken.com](https://www.brickken.com)
 - Lifecycle: unknown
-- Generated: 2026-07-04T11:05:40.791Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-43c7
-- Chains: base, ethereum, polygon
-- Contract surface: 21 unique implementations (45 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: ethereum
+- Contract surface: 3 unique implementations (3 raw deployments)
+- Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $42,164,586.14
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-RWA. Structurally: 41 project-authored contract(s) across 3 chain(s); 4 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Brickken. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 14 common project-authored base contract(s) (stoescrowupgradeable, ownableupgradeable, contextupgradeable). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 2 contract row(s) across ethereum. Structural roles: 2 core. 1 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 2
+- Structural roles: core (2)
+- Contract kinds: contract (2)
+- Detected standards: accesscontrol (1), erc165 (1), erc20 (1), erc20permit (1), ownable (1)
+- Frameworks: openzeppelin (2), openzeppelin-upgradeable (1)
+- Upgradeable-pattern rows: 1
+
+## Fork Analysis
+
+0 of 3 contracts are derived from known codebases. 3 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x8f523d...46ceb8`, chain 1)
+- UnnamedContract (`0xfc209e...7b5f82`, chain 1)
+- Brickken (`0x0a638f...dea36d`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 98; live-surface contracts included: 42 (31 live, 11 unknown).
-- Excluded by liveness: 56 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 2; live-surface contracts included: 2 (1 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 3/3 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 6/11 (54.5%)
-- Deployed-live implementations: 11 of 21 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 6/12
-- Verified + Unaudited implementations: 6
+- Coverage of address-book-owned deployed-live implementations: 0/1 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 3 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/1
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 9
-- Unique implementations: 21
-- Raw deployments: 45
+- Unverified implementations: 2
+- Unique implementations: 3
+- Raw deployments: 3
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 1
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-01 (fresh)
 - Audit staleness (calendar age): 1 fresh, 0 aging, 1 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 6 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| CertiK | Tier 2 | 6 | 50.0% | 2022-12 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (6)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| STOEscrowManagedUpgradeable | unknown | ethereum | n/a | 2 deployments: ethereum [`0x445943...9c4a6f`](./contracts/ethereum-1/0x4459432f1626cc4de0e0a004e74ff282ae9c4a6f/); ethereum `0xe2f8f2...7a713d` | ✅ Audited |
-| STOEscrowManagedUpgradeable | unknown | polygon | n/a | 2 deployments: polygon [`0x27576e...476f14`](./contracts/polygon-137/0x27576e72f8cd047e4de23c683acfbf8576476f14/); polygon `0xd1ba50...76ea5c` | ✅ Audited |
-| STOEscrowManagedUpgradeable | unknown | base | n/a | 2 deployments: base [`0x2c82a5...2aca94`](./contracts/base-8453/0x2c82a5eac210667e807b409d9e92cf607f2aca94/); base `0xd1ba50...76ea5c` | ✅ Audited |
-| STOTokenManagedUpgradeable | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5dc006...09618a`](./contracts/ethereum-1/0x5dc006a13c0f2cb4ea104b3b6ea1d1514a09618a/); ethereum `0x643630...e3af54` | ✅ Audited |
-| STOTokenManagedUpgradeable | unknown | polygon | n/a | 2 deployments: polygon [`0x5e4e3a...d13666`](./contracts/polygon-137/0x5e4e3a4ca61c1f8b3cd4bb560a0040270ad13666/); polygon `0xff3624...4aeb07` | ✅ Audited |
-| STOTokenManagedUpgradeable | unknown | base | n/a | 2 deployments: base [`0x478dff...158477`](./contracts/base-8453/0x478dff0e27ca0f8e4d6cd5dd586b9f8d28158477/); base `0x8bedc6...01ad48` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| ERC1967Proxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0xee0462...e8a546`](./contracts/ethereum-1/0xee046214759b58bb0eb10d760448e2783de8a546/); ethereum `0xf4f74d...2e7713` | ⚠️ Unaudited |
-| P2PHandler | unknown | base | n/a | 2 deployments: polygon `0x8ed660...0c5800`; base [`0x89b281...c7ba3b`](./contracts/base-8453/0x89b281df2702f19189fdd73f1d7865707bc7ba3b/) | ⚠️ Unaudited |
-| PriceAndSwapManager | unknown | ethereum | n/a | 3 deployments: ethereum [`0x36fb65...af8fd6`](./contracts/ethereum-1/0x36fb65754b70982d1aa0d5cedefd8bc614af8fd6/); polygon `0xd84620...bd19b0`; base `0xff3624...4aeb07` | ⚠️ Unaudited |
-| STOEscrowManagedUpgradeable | unknown | polygon | n/a | 8 deployments: ethereum `0x513f0b...7cbdeb`; ethereum `0xa6df46...f523d8`; ethereum `0xb75260...b6b3ee`; polygon [`0x409a37...9d86f7`](./contracts/polygon-137/0x409a37fa3636519380624cfb437e48ccaa9d86f7/); polygon `0xc6c230...bcde61`; base [`0x409a37...9d86f7`](./contracts/base-8453/0x409a37fa3636519380624cfb437e48ccaa9d86f7/); base `0x6d0432...685e89`; base `0xf6b623...079977` | ⚠️ Unaudited |
-| STOFactoryManagedUpgradeable | unknown | polygon | n/a | 8 deployments: ethereum `0xbb0b08...9e1b69`; ethereum `0xccda54...8bbd88`; ethereum `0xf48a42...83f0fa`; polygon [`0x26840f...1d40ff`](./contracts/polygon-137/0x26840ff7cb44ea734c68616714e3a5692d1d40ff/); polygon `0xd515ca...0a0634`; base `0x816e88...984607`; base `0xbc2074...d3f074`; base `0xe19619...703fe2` | ⚠️ Unaudited |
-| WBrickken | unknown | ethereum | n/a | [`0xf6b623...079977`](./contracts/ethereum-1/0xf6b6235f6725f84457f5d6f0b0aa3c962a079977/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Brickken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381505 | `0x0a638f...dea36d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,55 +119,69 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (9)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| PerpetualStakingV4 | unknown | ethereum | n/a | `0x8f523d...46ceb8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x21b78b...5384f4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x52292d...99238d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x75509c...f62482` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7b823e...ad1915` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe851c3...efba18` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa7a06b...9dd5a3` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xdecbcb...e06f5a` | ❓ Unverified |
-| WBKNVault | unknown | ethereum | n/a | `0xcaefc1...309c73` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| PerpetualStakingV4 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-381507 | `0x8f523d...46ceb8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381506 | `0xfc209e...7b5f82` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [skynet.certik.com/projects/brickken](https://skynet.certik.com/projects/brickken) | CertiK | Audit | 2022-12 | stale | Direct | contract_name | 6 | high |
-| [69e0f131a3c7f0b39a48f86d_BRICKKEN_AI 2026_signed.pdf](https://cdn.prod.website-files.com/680a2df699085611f5f9221a/69e0f131a3c7f0b39a48f86d_BRICKKEN_AI%202026_signed.pdf) | unknown | Audit | 2026-01 | fresh | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [skynet.certik.com/projects/brickken](https://skynet.certik.com/projects/brickken) | CertiK | Audit | 2022-12 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [69e0f131a3c7f0b39a48f86d_BRICKKEN_AI 2026_signed.pdf](https://cdn.prod.website-files.com/680a2df699085611f5f9221a/69e0f131a3c7f0b39a48f86d_BRICKKEN_AI%202026_signed.pdf) | unknown | Audit | 2026-01 | fresh | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [11550] skynet.certik.com/projects/brickken — no match: Extracted from 'Audited Files/SHA256' list in the report. Only two files explicitly listed; others referenced as 'View 13 Audited Files' but not named.
+- [12093] 69e0f131a3c7f0b39a48f86d_BRICKKEN_AI 2026_signed.pdf — no match: The document is an ISO/IEC 27001 certificate for Brickken Solutions, not a smart contract audit report. No smart contracts are mentioned.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| skynet.certik.com/projects/brickken | UpgradeableBeaconEscrow | unmatched — not counted | — | Audited Files/SHA256 section | no |
+| skynet.certik.com/projects/brickken | UpgradeableBeaconToken | unmatched — not counted | — | Audited Files/SHA256 section | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x0a638f...dea36d` | Brickken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 21 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=6
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 2 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1, low=1
+- Match method counts: n/a
 
 Zero-match audit list:
 
+- [11550] skynet.certik.com/projects/brickken
 - [12093] 69e0f131a3c7f0b39a48f86d_BRICKKEN_AI 2026_signed.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

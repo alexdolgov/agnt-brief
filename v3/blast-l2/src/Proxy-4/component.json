@@ -1,18 +1,31 @@
 {
   "component": "Proxy-4",
   "main_contract": "Proxy",
+  "source_entry_count": 13,
   "source_file_count": 13,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Proxy-4\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/BLASTchain/blast/blob/master/docs/security-reviews/2022_05-Bedrock_Contracts-Zeppelin.pdf",
+    "https://github.com/BLASTchain/blast/blob/master/docs/security-reviews/2022_09-Bedrock_and_Periphery-Zeppelin.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x5531dcff39ec1ec727c4c5d2fc49835368f805a9",
+      "address": "0xa45a0c7c47db8c6e99b2d7c4939f7f7cf69c8975",
       "is_proxy": true,
-      "implementation_address": "0xa150f19b681a06e1a0b7e03934299a9bf9238cb7",
-      "liveness": "live"
+      "implementation_address": "0x3b01adf2f199144233a536b08244d63e5eb691b8",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392300"
     }
   ]
 }

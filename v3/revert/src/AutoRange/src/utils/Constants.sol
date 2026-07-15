@@ -28,7 +28,6 @@ abstract contract Constants {
     error PriceDifferenceExceeded();
     error SequencerDown();
     error SequencerGracePeriodNotOver();
-    error SequencerUptimeFeedInvalid();
 
     error CollateralFail();
     error MinLoanSize();

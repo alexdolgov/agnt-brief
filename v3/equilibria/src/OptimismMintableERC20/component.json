@@ -1,8 +1,16 @@
 {
   "component": "OptimismMintableERC20",
   "main_contract": "OptimismMintableERC20",
+  "source_entry_count": 91,
   "source_file_count": 91,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OptimismMintableERC20\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,9 @@
       "address": "0x76c37f9949e05b37c8373d155c1fef46a6858481",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394206"
     },
     {
       "chain": "optimism",
@@ -20,15 +30,9 @@
       "address": "0xaf3a6f67af1624d3878a8d30b09fae7915dca2a0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xbc7b1ff1c6989f006a1185318ed4e7b5796e66e1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394214"
     }
   ]
 }

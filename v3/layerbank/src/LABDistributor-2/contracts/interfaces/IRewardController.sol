@@ -28,10 +28,8 @@ interface IRewardController {
     function individualEarlyExit(uint256 unlockTime) external;
     function exit() external;
 
-    function earnedBalances(
-        address user
-    ) external view returns (uint256 total, uint256 unlocked, EarnedBalance[] memory earningsData);
-    function withdrawableBalance(
-        address user
-    ) external view returns (uint256 amount, uint256 penaltyAmount, uint256 burnAmount);
+    function earnedBalances(address user) external view returns (uint256 total, uint256 unlocked, EarnedBalance[] memory earningsData);
+    function withdrawableBalance(address user) external view returns (uint256 amount, uint256 penaltyAmount, uint256 burnAmount);
+
 }
+

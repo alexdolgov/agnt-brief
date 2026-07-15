@@ -1,8 +1,16 @@
 {
   "component": "DeFiPlaza",
   "main_contract": "DeFiPlaza",
+  "source_entry_count": 9,
   "source_file_count": 9,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DeFiPlaza\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/pessimistic-io/audits/blob/main/DeFi%20Plaza%20Security%20Analysis%20by%20Pessimistic.pdf"
@@ -11,26 +19,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x134fc6beb54e710e30b21e52fb86ffed0c8e36c2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x2cb76169746e21d502db1d64aca1d5f8c04b2496",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
       "address": "0xe68c1d72340aeefe5be76eda63ae2f4bc7514110",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393513"
     }
   ]
 }

@@ -16,8 +16,8 @@ contract PairFactory is IPairFactory {
     address public immutable feeRecipientFactory;
 
     uint256 public fee;
-    /// @dev max swap fee set to 10%
-    uint256 public constant MAX_FEE = 100_000;
+    /// @dev max swap fee set to 50% (required for Dynamic Fee token)
+    uint256 public constant MAX_FEE = 500_000;
     uint256 public feeSplit;
 
     mapping(address token0 => mapping(address token1 => mapping(bool stable => address pair)))
@@ -27,7 +27,7 @@ contract PairFactory is IPairFactory {
     mapping(address pair => bool isPair) public isPair;
 
     /// @dev pair => fee
-    mapping(address pair => uint256 fee) public _pairFee;
+    mapping(address pair => uint256 fee) private _pairFee;
 
     /// @dev whether the pair has skim enabled or not
     mapping(address pair => bool skimEnabled) public skimEnabled;
@@ -158,8 +158,10 @@ contract PairFactory is IPairFactory {
 
         /// @dev initialize the pair upon creation
         IPair(pair).initialize(token0, token1, stable);
-        /// @dev should almost always always default to the global fee
+        /// @dev should almost always default to the global fee
         IPair(pair).setFee(fee);
+        /// @dev update the factory’s record so pairFee(_pair) returns the right value
+        _pairFee[pair] = fee;
 
         /// @dev if we want an active fee split for gaugeless pairs
         if (feeSplitWhenNoGauge) {

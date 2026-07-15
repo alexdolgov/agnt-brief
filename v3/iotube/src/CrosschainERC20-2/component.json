@@ -1,26 +1,28 @@
 {
   "component": "CrosschainERC20-2",
   "main_contract": "CrosschainERC20",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CrosschainERC20-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x300211def2a644b036a9bdd3e58159bb2074d388",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2aaf50869739e317ab80a57bf87caa35f5b60598",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xb0ed1f44833c6b2afa39a6a85ff62c8ad96f5275",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395393"
     }
   ]
 }

@@ -1,16 +1,19 @@
 {
   "component": "CollateralRegistry",
   "main_contract": "CollateralRegistry",
+  "source_entry_count": 29,
   "source_file_count": 29,
-  "deployment_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CollateralRegistry\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
-    "https://cantina.xyz/competitions/d86632df-ab33-4448-8198-64955eae6712",
-    "https://dedaub.com/audits/liquity/liquity-v2-aug-28-2024",
-    "https://github.com/GalloDaSballo/bold-review",
-    "https://github.com/GalloDaSballo/bold-review/blob/main/bold-report.md",
-    "https://github.com/GalloDaSballo/bold-review/blob/main/bold.pdf",
-    "https://www.coinspect.com/doc/Coinspect%20-%20Smart%20Contract%20Audit%20-%20Liquity%20-%20Bold%20-%20v241231.pdf"
+    "https://dedaub.com/audits/liquity/liquity-v2-aug-28-2024"
   ],
   "addresses": [
     {
@@ -19,39 +22,9 @@
       "address": "0x33d68055cd54061991b2e98b9ab326ffce4d60fe",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x447fd8743a7a545fc95a42bf4afd4122bdcaeff4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xa70d1455f393f709de0f94ab9e6d9f5777096650",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xcff0dcab01563e5324ef9d0adb0677d9c167d791",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xd5d9c0d32890be92d7680b65e785e4a95c366a35",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391360"
     }
   ]
 }

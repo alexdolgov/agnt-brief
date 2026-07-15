@@ -1,0 +1,28 @@
+{
+  "component": "UsdtHandlerProxy-2",
+  "main_contract": "UsdtHandlerProxy",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UsdtHandlerProxy-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2a29598cbc17ba112c8fd0e07fbf5402ef57e6b8",
+      "is_proxy": true,
+      "implementation_address": "0x77c59ef81bcb6b5aa5efefa58b9914b2b115941b",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

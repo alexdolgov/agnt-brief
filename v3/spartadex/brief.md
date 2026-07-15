@@ -1,39 +1,68 @@
 # Agentic Audit Brief: SpartaDex
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: SpartaDex (`spartadex`)
+- Website: [https://spartadex.io/](https://spartadex.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:56.318Z
-- Pipeline run: v2-2026-07-02-1ba3fd
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, linea
 - Contract surface: 11 unique implementations (11 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $144,171.52
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+The closed normalized authority records no EVM contract logic or eligible security audit for this project. This is an explicit cohort state, not a skipped export.
+
 ## Project Description
 
-Dexs. Structurally: 11 project-authored contract(s) across 2 chain(s); 3 ERC20 tokens, 1 ERC721 NFT; role-gated via AccessControl; built on openzeppelin.
+No contract logic was present for SpartaDex in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Its contracts share 2 common project-authored base contract(s) (zeroaddressguard, zeroamountguard). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 11; live-surface contracts included: 11 (11 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/11 (0.0%)
-- Deployed-live implementations: 11 of 11 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/11
-- Verified + Unaudited implementations: 11
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 11 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 11
@@ -58,19 +87,19 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 ### ⚠️ Verified + Unaudited (11)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Airdrop | unknown | arbitrum | n/a | [`0x0de811...361626`](./contracts/arbitrum-42161/0x0de811cfc8bbd855798a0da8f0fb893a20361626/) | ⚠️ Unaudited |
-| PaymentReceiver | unknown | arbitrum | n/a | [`0x933b0e...245cb7`](./contracts/arbitrum-42161/0x933b0ea2048438c11d53dac32d283115d5245cb7/) | ⚠️ Unaudited |
-| Polis | unknown | arbitrum | n/a | [`0x314494...471cb9`](./contracts/arbitrum-42161/0x31449423737538cde5f60c5052f122d599471cb9/) | ⚠️ Unaudited |
-| PolisManager | unknown | arbitrum | n/a | [`0xebc1dd...6ff3de`](./contracts/arbitrum-42161/0xebc1dd1f6560fc1045d30c0d0ac610c3336ff3de/) | ⚠️ Unaudited |
-| PolisMinter | unknown | arbitrum | n/a | [`0x39fdd0...4fe17f`](./contracts/arbitrum-42161/0x39fdd07893b8867be7b8ff02fe9b557ddc4fe17f/) | ⚠️ Unaudited |
-| Sparta | unknown | arbitrum | n/a | [`0x11f98c...5ce9a8`](./contracts/arbitrum-42161/0x11f98c7e42a367dab4f200d2fdc460fb445ce9a8/) | ⚠️ Unaudited |
-| SpartaAccessControl | unknown | arbitrum | n/a | [`0x01b364...075b22`](./contracts/arbitrum-42161/0x01b3646adb846061411da058757b944049075b22/) | ⚠️ Unaudited |
-| SpartaDexFactory | unknown | linea | n/a | [`0x9e4fc4...ea5a9e`](./contracts/linea-59144/0x9e4fc4a5a0769ba74088856c229c4a1db2ea5a9e/) | ⚠️ Unaudited |
-| SpartaDexPair | unknown | linea | n/a | [`0xb64b15...cf370b`](./contracts/linea-59144/0xb64b15dfdfb9d3edacf9291b0e8a65fc52cf370b/) | ⚠️ Unaudited |
-| SpartaDexRouter | unknown | linea | n/a | [`0xea2f47...8d399a`](./contracts/linea-59144/0xea2f47ac12e00e2fcc8f242561bc53bc288d399a/) | ⚠️ Unaudited |
-| StakedSparta | unknown | arbitrum | n/a | [`0xdeab92...ecf01f`](./contracts/arbitrum-42161/0xdeab92d6a3618f6d830c925d7ae8f1c87eecf01f/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Airdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167538 | `0x0de811...361626` | ⚠️ Unaudited |
+| PaymentReceiver | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167542 | `0x933b0e...245cb7` | ⚠️ Unaudited |
+| Polis | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167540 | `0x314494...471cb9` | ⚠️ Unaudited |
+| PolisManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167544 | `0xebc1dd...6ff3de` | ⚠️ Unaudited |
+| PolisMinter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167541 | `0x39fdd0...4fe17f` | ⚠️ Unaudited |
+| Sparta | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167539 | `0x11f98c...5ce9a8` | ⚠️ Unaudited |
+| SpartaAccessControl | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167537 | `0x01b364...075b22` | ⚠️ Unaudited |
+| SpartaDexFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | unit-167545 | `0x9e4fc4...ea5a9e` | ⚠️ Unaudited |
+| SpartaDexPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | unit-167546 | `0xb64b15...cf370b` | ⚠️ Unaudited |
+| SpartaDexRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | unit-167547 | `0xea2f47...8d399a` | ⚠️ Unaudited |
+| StakedSparta | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-167543 | `0xdeab92...ecf01f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -92,8 +121,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -105,10 +140,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 11 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 11 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -116,6 +151,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

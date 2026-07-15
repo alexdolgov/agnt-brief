@@ -1,8 +1,16 @@
 {
   "component": "FUSDv2",
   "main_contract": "FUSDv2",
+  "source_entry_count": 13,
   "source_file_count": 13,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FUSDv2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,31 +20,9 @@
       "address": "0x3c56f017d9ce85350df8f4b495033aaa15563a99",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x9ac98c4f1abf12b4db0976c6c08d1d64922ec2c7",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xcafab3ee74997bd8ff5357ea0edc9ced62550531",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xef2a8e57c5e972616edae297d9e0c7827ab3562a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394474"
     }
   ]
 }

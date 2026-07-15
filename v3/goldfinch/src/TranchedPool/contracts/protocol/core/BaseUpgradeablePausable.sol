@@ -3,16 +3,16 @@
 pragma solidity 0.6.12;
 pragma experimental ABIEncoderV2;
 
-import "@openzeppelin/contracts-ethereum-package/contracts/access/AccessControl.sol";
-import "@openzeppelin/contracts-ethereum-package/contracts/utils/ReentrancyGuard.sol";
-import "@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol";
-import "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol";
-import "./PauserPausable.sol";
+import {AccessControlUpgradeSafe} from "@openzeppelin/contracts-ethereum-package/contracts/access/AccessControl.sol";
+import {ReentrancyGuardUpgradeSafe} from "@openzeppelin/contracts-ethereum-package/contracts/utils/ReentrancyGuard.sol";
+import {Initializable} from "@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol";
+import {SafeMath} from "../../library/SafeMath.sol";
+import {PauserPausable} from "./PauserPausable.sol";
 
 /**
  * @title BaseUpgradeablePausable contract
  * @notice This is our Base contract that most other contracts inherit from. It includes many standard
- *  useful abilities like ugpradeability, pausability, access control, and re-entrancy guards.
+ *  useful abilities like upgradeability, pausability, access control, and re-entrancy guards.
  * @author Goldfinch
  */
 

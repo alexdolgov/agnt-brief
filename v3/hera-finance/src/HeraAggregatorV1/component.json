@@ -1,8 +1,16 @@
 {
   "component": "HeraAggregatorV1",
   "main_contract": "HeraAggregatorV1",
+  "source_entry_count": 4,
   "source_file_count": 4,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HeraAggregatorV1\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://468680357-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FRPd6E8y8uIj9QOgICwhl%2Fuploads%2FUXpADKAVfIgit4tFsFbq%2FHera%20Aggregatorv1_audit.pdf"
@@ -14,15 +22,9 @@
       "address": "0xafcb0803f96dc1e9768d14ce55b1a46b26deb24c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xc1aa2332d7577320f581b83414de26f6f6db94a9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394964"
     }
   ]
 }

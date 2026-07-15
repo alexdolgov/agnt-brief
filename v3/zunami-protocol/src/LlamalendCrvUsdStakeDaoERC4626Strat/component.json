@@ -1,0 +1,30 @@
+{
+  "component": "LlamalendCrvUsdStakeDaoERC4626Strat",
+  "main_contract": "LlamalendCrvUsdStakeDaoERC4626Strat",
+  "source_entry_count": 24,
+  "source_file_count": 24,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LlamalendCrvUsdStakeDaoERC4626Strat\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/ZunamiProtocol/ZunamiProtocolV2/blob/main/audit/Oxorio-zunami-v2-final-report-4-reaudit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8dfcd34b074517c446a7885c271afd365981ed47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405167"
+    }
+  ]
+}

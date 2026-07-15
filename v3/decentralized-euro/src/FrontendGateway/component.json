@@ -1,7 +1,15 @@
 {
   "component": "FrontendGateway",
   "main_contract": "FrontendGateway",
-  "source_file_count": 50,
+  "source_entry_count": 46,
+  "source_file_count": 46,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FrontendGateway\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -14,7 +22,9 @@
       "address": "0x5c49c00f897bd970d964bfb8c3065ae65a180994",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393495"
     }
   ]
 }

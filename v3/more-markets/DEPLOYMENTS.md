@@ -1,6 +1,6 @@
 # more-markets — deployments
 
-22 verified deployment(s) across 19 component(s).
+22 verified deployment(s) across 20 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -19,7 +19,7 @@
 | ethereum | `0x8d8be034ecfd018d67f9a1a25e27f99f52cbdfc1` | MoreVaultsComposer | impl | live | no |
 | ethereum | `0xa7b968ca75eb0224a396ca5cd482d18d4ca2041a` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xbfb5bf7129d80c582681e5f59aa21ba23834e708` | DiamondLoupeFacet | impl | live | no |
-| ethereum | `0xc04ea0b109bef3815232e9a78a7f56d7e8a6292a` | MoreLeverageFacet | impl | live | no |
+| ethereum | `0xc04ea0b109bef3815232e9a78a7f56d7e8a6292a` | MORELeverageFacet-2 | impl | live | no |
 | ethereum | `0xc3268c843a7704cc7c476edb6b38480038297117` | LzAdapter | impl | live | no |
 | ethereum | `0xc5c6844fe3a550748caaeaf8592d68386ca1f1b5` | ERC4626Facet | impl | live | no |
 | ethereum | `0xd08cab25309dfea0a48db8e9ef3d5afa58cd37bb` | BridgeFacet | impl | live | no |

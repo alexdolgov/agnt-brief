@@ -1,7 +1,15 @@
 {
   "component": "StablePool",
   "main_contract": "StablePool",
+  "source_entry_count": 46,
   "source_file_count": 46,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StablePool\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -9,12 +17,12 @@
     "https://github.com/balancer-labs/balancer-core-v2/blob/master/audits/openzeppelin/2021-03-15.pdf",
     "https://github.com/balancer-labs/balancer-core-v2/blob/master/audits/openzeppelin/2021-10-09.pdf",
     "https://github.com/balancer-labs/balancer-core-v2/blob/master/audits/trail-of-bits/2021-04-02.pdf",
-    "https://github.com/balancer-labs/balancer-core-v2/blob/master/audits/trail-of-bits/2021-10-08.pdf",
     "https://github.com/balancer/balancer-v2-monorepo/blob/master/audits/certora/2022-09-23.pdf",
     "https://github.com/balancer/balancer-v2-monorepo/blob/master/audits/openzeppelin/2021-03-15.pdf",
     "https://github.com/balancer/balancer-v2-monorepo/blob/master/audits/openzeppelin/2021-10-09.pdf",
     "https://github.com/balancer/balancer-v2-monorepo/blob/master/audits/trail-of-bits/2021-04-02.pdf",
-    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2026-01-26.pdf"
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/certora/2026-01-26.pdf",
+    "https://github.com/balancer/balancer-v3-monorepo/blob/main/audits/spearbit/2024-10-04.pdf"
   ],
   "addresses": [
     {
@@ -23,7 +31,9 @@
       "address": "0x0a8afe82eb901cd5b19834ec9ed764ce4d85dd5d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402403"
     }
   ]
 }

@@ -248,6 +248,7 @@ abstract contract ECDSAServiceManagerBase is
         uint256[] memory shares = IDelegationManager(delegationManager)
             .getOperatorShares(_operator, strategies);
 
+        address[] memory activeStrategies = new address[](count);
         uint256 activeCount;
         for (uint256 i; i < count; i++) {
             if (shares[i] > 0) {
@@ -257,11 +258,9 @@ abstract contract ECDSAServiceManagerBase is
 
         // Resize the array to fit only the active strategies
         address[] memory restakedStrategies = new address[](activeCount);
-        uint256 index;
         for (uint256 j = 0; j < count; j++) {
             if (shares[j] > 0) {
-                restakedStrategies[index] = address(strategies[j]);
-                index++;
+                restakedStrategies[j] = activeStrategies[j];
             }
         }
 

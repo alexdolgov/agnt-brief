@@ -1,7 +1,15 @@
 {
   "component": "StateChainGateway",
   "main_contract": "StateChainGateway",
+  "source_entry_count": 15,
   "source_file_count": 15,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StateChainGateway\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x6995ab7c4d7f4b03f467cf4c8e920427d9621dbd",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392673"
     }
   ]
 }

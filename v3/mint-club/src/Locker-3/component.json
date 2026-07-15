@@ -1,12 +1,18 @@
 {
   "component": "Locker-3",
   "main_contract": "Locker",
+  "source_entry_count": 9,
   "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Locker-3\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Steemhunt/mint.club-v2-contract/blob/main/security-audits/CertiK-20240118.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "avalanche",
@@ -14,7 +20,9 @@
       "address": "0x5b64cecc5cf3e4b1a668abd895d16bddc0c77a17",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -11,8 +11,8 @@ interface ILiquidStrategy {
     function totalAssets() external view returns (uint256);
     function deposit(uint256 _amount) external;
     function withdraw(uint256 _amount) external;
-    function migrateFrom4626(address _currentVault, address _newVault, uint256 _minAmount) external;
-    function reallocateFunds(address[] memory targets, uint256[] memory amounts, bool[] memory isDeposit, uint256[] memory minAmounts) external;
+    function migrateFrom4626(address _currentVault, address _newVault, uint256 _minDepositAmount, uint256 _minSharesOut) external;
+    function reallocateFunds(address[] memory targets, uint256[] memory amounts, bool[] memory isDeposit, uint256[] memory minAmountOuts) external;
 
     function setLendingVault(address) external;
     function setOracle(address) external;
@@ -61,5 +61,5 @@ interface ILiquidStrategy {
     error VaultNotApproved();
     error InvalidVaultAddress();
     error CannotBeZeroAddress();
-    error SlippageThresholdExceeded(uint256 depositAmount, uint256 minDepositAmount);
+    error SlippageThresholdExceeded(address target, bool isDeposit, uint256 amount, uint256 minAmount);
 }

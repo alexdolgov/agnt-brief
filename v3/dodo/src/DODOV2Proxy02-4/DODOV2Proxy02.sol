@@ -92,15 +92,6 @@ interface IDODOV2Proxy01 {
         uint256 deadLine
     ) external payable;
 
-    function createCrowdPooling(
-        address baseToken,
-        address quoteToken,
-        uint256 baseInAmount,
-        uint256[] memory timeLine,
-        uint256[] memory valueList,
-        bool isOpenTWAP,
-        uint256 deadLine
-    ) external payable returns (address payable newCrowdPooling);
 
     function bid(
         address cpAddress,
@@ -334,7 +325,6 @@ interface IDODOApprove {
 
 // File: contracts/lib/InitializableOwnable.sol
 
-
 /**
  * @title Ownable
  * @author DODO Breeder
@@ -385,7 +375,6 @@ contract InitializableOwnable {
 }
 
 // File: contracts/SmartRoute/DODOApproveProxy.sol
-
 
 
 interface IDODOApproveProxy {
@@ -468,6 +457,7 @@ contract DODOApproveProxy is InitializableOwnable {
 }
 
 // File: contracts/lib/SafeMath.sol
+
 
 /**
  * @title SafeMath
@@ -783,7 +773,6 @@ contract DODOSellHelper {
 
 // File: contracts/intf/IERC20.sol
 
-
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
@@ -858,7 +847,6 @@ interface IERC20 {
 
 
 
-
 interface IWETH {
     function totalSupply() external view returns (uint256);
 
@@ -883,8 +871,6 @@ interface IWETH {
 
 // File: contracts/SmartRoute/intf/IUni.sol
 
-
-
 interface IUni {
     function swapExactTokensForTokens(
         uint amountIn,
@@ -901,13 +887,6 @@ interface IUni {
     function token0() external view returns (address);
     
     function token1() external view returns (address);
-}
-
-// File: contracts/SmartRoute/intf/IChi.sol
-
-
-interface IChi {
-    function freeUpTo(uint256 value) external returns (uint256);
 }
 
 // File: contracts/lib/SafeERC20.sol
@@ -1067,169 +1046,17 @@ contract ReentrancyGuard {
     }
 }
 
-// File: contracts/DODOToken/DODOIncentive.sol
-
-
-
-
-
-interface IDODOIncentive {
-    function triggerIncentive(
-        address fromToken,
-        address toToken,
-        address assetTo
-    ) external;
-}
-
-/**
- * @title DODOIncentive
- * @author DODO Breeder
- *
- * @notice Trade Incentive in DODO platform
- */
-contract DODOIncentive is InitializableOwnable {
-    using SafeMath for uint256;
-    using SafeERC20 for IERC20;
-
-    // ============ Storage ============
-    address public immutable _DODO_TOKEN_;
-    address public _DODO_PROXY_;
-    uint256 public dodoPerBlock;
-    uint256 public defaultRate = 10;
-    mapping(address => uint256) public boosts;
-
-    uint32 public lastRewardBlock;
-    uint112 public totalReward;
-    uint112 public totalDistribution;
-
-    // ============ Events ============
-
-    event SetBoost(address token, uint256 boostRate);
-    event SetNewProxy(address dodoProxy);
-    event SetPerReward(uint256 dodoPerBlock);
-    event SetDefaultRate(uint256 defaultRate);
-    event Incentive(address user, uint256 reward);
-
-    constructor(address _dodoToken) public {
-        _DODO_TOKEN_ = _dodoToken;
-    }
-
-    // ============ Ownable ============
-
-    function changeBoost(address _token, uint256 _boostRate) public onlyOwner {
-        require(_token != address(0));
-        require(_boostRate + defaultRate <= 1000);
-        boosts[_token] = _boostRate;
-        emit SetBoost(_token, _boostRate);
-    }
-
-    function changePerReward(uint256 _dodoPerBlock) public onlyOwner {
-        _updateTotalReward();
-        dodoPerBlock = _dodoPerBlock;
-        emit SetPerReward(dodoPerBlock);
-    }
-
-    function changeDefaultRate(uint256 _defaultRate) public onlyOwner {
-        defaultRate = _defaultRate;
-        emit SetDefaultRate(defaultRate);
-    }
-
-    function changeDODOProxy(address _dodoProxy) public onlyOwner {
-        _DODO_PROXY_ = _dodoProxy;
-        emit SetNewProxy(_DODO_PROXY_);
-    }
-
-    function emptyReward(address assetTo) public onlyOwner {
-        uint256 balance = IERC20(_DODO_TOKEN_).balanceOf(address(this));
-        IERC20(_DODO_TOKEN_).transfer(assetTo, balance);
-    }
-
-    // ============ Incentive  function ============
-
-    function triggerIncentive(
-        address fromToken,
-        address toToken,
-        address assetTo
-    ) external {
-        require(msg.sender == _DODO_PROXY_, "DODOIncentive:Access restricted");
-
-        uint256 curTotalDistribution = totalDistribution;
-        uint256 fromRate = boosts[fromToken];
-        uint256 toRate = boosts[toToken];
-        uint256 rate = (fromRate >= toRate ? fromRate : toRate) + defaultRate;
-        require(rate <= 1000, "RATE_INVALID");
-        
-        uint256 _totalReward = _getTotalReward();
-        uint256 reward = ((_totalReward - curTotalDistribution) * rate) / 1000;
-        uint256 _totalDistribution = curTotalDistribution + reward;
-
-        _update(_totalReward, _totalDistribution);
-        if (reward != 0) {
-            IERC20(_DODO_TOKEN_).transfer(assetTo, reward);
-            emit Incentive(assetTo, reward);
-        }
-    }
-
-    function _updateTotalReward() internal {
-        uint256 _totalReward = _getTotalReward();
-        require(_totalReward < uint112(-1), "OVERFLOW");
-        totalReward = uint112(_totalReward);
-        lastRewardBlock = uint32(block.number);
-    }
-
-    function _update(uint256 _totalReward, uint256 _totalDistribution) internal {
-        require(
-            _totalReward < uint112(-1) && _totalDistribution < uint112(-1) && block.number < uint32(-1),
-            "OVERFLOW"
-        );
-        lastRewardBlock = uint32(block.number);
-        totalReward = uint112(_totalReward);
-        totalDistribution = uint112(_totalDistribution);
-    }
-
-    function _getTotalReward() internal view returns (uint256) {
-        if (lastRewardBlock == 0) {
-            return totalReward;
-        } else {
-            return totalReward + (block.number - lastRewardBlock) * dodoPerBlock;
-        }
-    }
-
-    // ============= Helper function ===============
-
-    function incentiveStatus(address fromToken, address toToken)
-        external
-        view
-        returns (
-            uint256 reward,
-            uint256 baseRate,
-            uint256 totalRate,
-            uint256 curTotalReward,
-            uint256 perBlockReward
-        )
-    {
-        baseRate = defaultRate;
-        uint256 fromRate = boosts[fromToken];
-        uint256 toRate = boosts[toToken];
-        totalRate = (fromRate >= toRate ? fromRate : toRate) + defaultRate;
-        uint256 _totalReward = _getTotalReward();
-        reward = ((_totalReward - totalDistribution) * totalRate) / 1000;
-        curTotalReward = _totalReward - totalDistribution;
-        perBlockReward = dodoPerBlock;
-    }
-}
-
 // File: contracts/SmartRoute/intf/IDODOAdapter.sol
+
 
 interface IDODOAdapter {
     
-    function sellBase(address to, address pool) external;
+    function sellBase(address to, address pool, bytes memory data) external;
 
-    function sellQuote(address to, address pool) external;
+    function sellQuote(address to, address pool, bytes memory data) external;
 }
 
 // File: contracts/SmartRoute/DODOV2Proxy02.sol
-
 
 
 
@@ -1253,11 +1080,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
     address public immutable _DODO_SELL_HELPER_;
     address public immutable _DVM_FACTORY_;
     address public immutable _DPP_FACTORY_;
-    address public immutable _CP_FACTORY_;
-    address public immutable _DODO_INCENTIVE_;
-    address public immutable _CHI_TOKEN_;
-    uint256 public _GAS_DODO_MAX_RETURN_ = 0;
-    uint256 public _GAS_EXTERNAL_RETURN_ = 0;
     mapping (address => bool) public isWhiteListed;
 
     // ============ Events ============
@@ -1284,21 +1106,15 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
     constructor(
         address dvmFactory,
         address dppFactory,
-        address cpFactory,
         address payable weth,
         address dodoApproveProxy,
-        address dodoSellHelper,
-        address chiToken,
-        address dodoIncentive
+        address dodoSellHelper
     ) public {
         _DVM_FACTORY_ = dvmFactory;
         _DPP_FACTORY_ = dppFactory;
-        _CP_FACTORY_ = cpFactory;
         _WETH_ = weth;
         _DODO_APPROVE_PROXY_ = dodoApproveProxy;
         _DODO_SELL_HELPER_ = dodoSellHelper;
-        _CHI_TOKEN_ = chiToken;
-        _DODO_INCENTIVE_ = dodoIncentive;
     }
 
     function addWhiteList (address contractAddr) public onlyOwner {
@@ -1307,11 +1123,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
 
     function removeWhiteList (address contractAddr) public onlyOwner {
         isWhiteListed[contractAddr] = false;
-    }
-
-    function updateGasReturn(uint256 newDodoGasReturn, uint256 newExternalGasReturn) public onlyOwner {
-        _GAS_DODO_MAX_RETURN_ = newDodoGasReturn;
-        _GAS_EXTERNAL_RETURN_ = newExternalGasReturn;
     }
 
     // ============ DVM Functions (create & add liquidity) ============
@@ -1530,7 +1341,7 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         uint256 minReturnAmount,
         address[] memory dodoPairs,
         uint256 directions,
-        bool isIncentive,
+        bool,
         uint256 deadLine
     )
         external
@@ -1541,7 +1352,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
     {
         require(dodoPairs.length > 0, "DODOV2Proxy02: PAIRS_EMPTY");
         require(minReturnAmount > 0, "DODOV2Proxy02: RETURN_AMOUNT_ZERO");
-        uint256 originGas = gasleft();
         
         uint256 originToTokenBalance = IERC20(toToken).balanceOf(msg.sender);
         IWETH(_WETH_).deposit{value: msg.value}();
@@ -1567,10 +1377,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         returnAmount = IERC20(toToken).balanceOf(msg.sender).sub(originToTokenBalance);
         require(returnAmount >= minReturnAmount, "DODOV2Proxy02: Return amount is not enough");
 
-        _dodoGasReturn(originGas);
-
-        _execIncentive(isIncentive, _ETH_ADDRESS_, toToken);
-
         emit OrderHistory(
             _ETH_ADDRESS_,
             toToken,
@@ -1586,7 +1392,7 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         uint256 minReturnAmount,
         address[] memory dodoPairs,
         uint256 directions,
-        bool isIncentive,
+        bool,
         uint256 deadLine
     )
         external
@@ -1596,7 +1402,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
     {
         require(dodoPairs.length > 0, "DODOV2Proxy02: PAIRS_EMPTY");
         require(minReturnAmount > 0, "DODOV2Proxy02: RETURN_AMOUNT_ZERO");
-        uint256 originGas = gasleft();
         
         IDODOApproveProxy(_DODO_APPROVE_PROXY_).claimTokens(fromToken, msg.sender, dodoPairs[0], fromTokenAmount);
 
@@ -1621,10 +1426,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         IWETH(_WETH_).withdraw(returnAmount);
         msg.sender.transfer(returnAmount);
 
-        _dodoGasReturn(originGas);
-
-        _execIncentive(isIncentive, fromToken, _ETH_ADDRESS_);
-
         emit OrderHistory(
             fromToken,
             _ETH_ADDRESS_,
@@ -1641,7 +1442,7 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         uint256 minReturnAmount,
         address[] memory dodoPairs,
         uint256 directions,
-        bool isIncentive,
+        bool,
         uint256 deadLine
     )
         external
@@ -1651,7 +1452,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
     {
         require(dodoPairs.length > 0, "DODOV2Proxy02: PAIRS_EMPTY");
         require(minReturnAmount > 0, "DODOV2Proxy02: RETURN_AMOUNT_ZERO");
-        uint256 originGas = gasleft();
 
         uint256 originToTokenBalance = IERC20(toToken).balanceOf(msg.sender);
         IDODOApproveProxy(_DODO_APPROVE_PROXY_).claimTokens(fromToken, msg.sender, dodoPairs[0], fromTokenAmount);
@@ -1674,10 +1474,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         }
         returnAmount = IERC20(toToken).balanceOf(msg.sender).sub(originToTokenBalance);
         require(returnAmount >= minReturnAmount, "DODOV2Proxy02: Return amount is not enough");
-        
-        _dodoGasReturn(originGas);
-
-        _execIncentive(isIncentive, fromToken, toToken);
 
         emit OrderHistory(
             fromToken,
@@ -1696,7 +1492,7 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         uint256 fromTokenAmount,
         uint256 minReturnAmount,
         bytes memory callDataConcat,
-        bool isIncentive,
+        bool,
         uint256 deadLine
     )
         external
@@ -1706,8 +1502,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         returns (uint256 returnAmount)
     {
         require(minReturnAmount > 0, "DODOV2Proxy02: RETURN_AMOUNT_ZERO");
-        require(fromToken != _CHI_TOKEN_, "DODOV2Proxy02: NOT_SUPPORT_SELL_CHI");
-        require(toToken != _CHI_TOKEN_, "DODOV2Proxy02: NOT_SUPPORT_BUY_CHI");
         
         uint256 toTokenOriginBalance = IERC20(toToken).universalBalanceOf(msg.sender);
         if (fromToken != _ETH_ADDRESS_) {
@@ -1733,10 +1527,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         returnAmount = IERC20(toToken).universalBalanceOf(msg.sender).sub(toTokenOriginBalance);
         require(returnAmount >= minReturnAmount, "DODOV2Proxy02: Return amount is not enough");
 
-        _externalGasReturn();
-
-        _execIncentive(isIncentive, fromToken, toToken);
-
         emit OrderHistory(
             fromToken,
             toToken,
@@ -1753,7 +1543,7 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         uint256 minReturnAmount,
         address[] memory dodoPairs,
         uint256 directions,
-        bool isIncentive,
+        bool,
         uint256 deadLine
     )
         external
@@ -1764,10 +1554,7 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
     {
         require(dodoPairs.length > 0, "DODOV2Proxy02: PAIRS_EMPTY");
         require(minReturnAmount > 0, "DODOV2Proxy02: RETURN_AMOUNT_ZERO");
-        require(fromToken != _CHI_TOKEN_, "DODOV2Proxy02: NOT_SUPPORT_SELL_CHI");
-        require(toToken != _CHI_TOKEN_, "DODOV2Proxy02: NOT_SUPPORT_BUY_CHI");
         
-        uint256 originGas = gasleft();
 
         address _fromToken = fromToken;
         address _toToken = toToken;
@@ -1778,13 +1565,11 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
             address curDodoPair = dodoPairs[i];
             if (directions & 1 == 0) {
                 address curDodoBase = IDODOV1(curDodoPair)._BASE_TOKEN_();
-                require(curDodoBase != _CHI_TOKEN_, "DODOV2Proxy02: NOT_SUPPORT_CHI");
                 uint256 curAmountIn = IERC20(curDodoBase).balanceOf(address(this));
                 IERC20(curDodoBase).universalApproveMax(curDodoPair, curAmountIn);
                 IDODOV1(curDodoPair).sellBaseToken(curAmountIn, 0, "");
             } else {
                 address curDodoQuote = IDODOV1(curDodoPair)._QUOTE_TOKEN_();
-                require(curDodoQuote != _CHI_TOKEN_, "DODOV2Proxy02: NOT_SUPPORT_CHI");
                 uint256 curAmountIn = IERC20(curDodoQuote).balanceOf(address(this));
                 IERC20(curDodoQuote).universalApproveMax(curDodoPair, curAmountIn);
                 uint256 canBuyBaseAmount = IDODOSellHelper(_DODO_SELL_HELPER_).querySellQuoteToken(
@@ -1807,10 +1592,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         require(returnAmount >= minReturnAmount, "DODOV2Proxy02: Return amount is not enough");
         IERC20(_toToken).universalTransfer(msg.sender, returnAmount);
 
-        _dodoGasReturn(originGas);
-
-        _execIncentive(isIncentive, _fromToken, _toToken);
-
         emit OrderHistory(_fromToken, _toToken, msg.sender, fromTokenAmount, returnAmount);
     }
 
@@ -1824,7 +1605,7 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         address[] memory mixPairs,
         address[] memory assetTo,
         uint256 directions,
-        bool isIncentive,
+        bool,
         uint256 deadLine
     ) external override payable judgeExpired(deadLine) returns (uint256 returnAmount) {
         require(mixPairs.length > 0, "DODOV2Proxy02: PAIRS_EMPTY");
@@ -1835,20 +1616,16 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         address _fromToken = fromToken;
         address _toToken = toToken;
         uint256 _fromTokenAmount = fromTokenAmount;
-
-        require(_fromToken != _CHI_TOKEN_, "DODOV2Proxy02: NOT_SUPPORT_SELL_CHI");
-        require(_toToken != _CHI_TOKEN_, "DODOV2Proxy02: NOT_SUPPORT_BUY_CHI");
         
-        uint256 originGas = gasleft();
         uint256 toTokenOriginBalance = IERC20(_toToken).universalBalanceOf(msg.sender);
         
         _deposit(msg.sender, assetTo[0], _fromToken, _fromTokenAmount, _fromToken == _ETH_ADDRESS_);
 
         for (uint256 i = 0; i < mixPairs.length; i++) {
             if (directions & 1 == 0) {
-                IDODOAdapter(mixAdapters[i]).sellBase(assetTo[i + 1],mixPairs[i]);
+                IDODOAdapter(mixAdapters[i]).sellBase(assetTo[i + 1],mixPairs[i], "");
             } else {
-                IDODOAdapter(mixAdapters[i]).sellQuote(assetTo[i + 1],mixPairs[i]);
+                IDODOAdapter(mixAdapters[i]).sellQuote(assetTo[i + 1],mixPairs[i], "");
             }
             directions = directions >> 1;
         }
@@ -1862,10 +1639,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         }
 
         require(returnAmount >= minReturnAmount, "DODOV2Proxy02: Return amount is not enough");
-        
-        _dodoGasReturn(originGas);
-
-        _execIncentive(isIncentive, _fromToken, _toToken);
 
         emit OrderHistory(
             _fromToken,
@@ -1876,43 +1649,7 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         );
     }
 
-    //============ CrowdPooling Functions (create & bid) ============
-
-    function createCrowdPooling(
-        address baseToken,
-        address quoteToken,
-        uint256 baseInAmount,
-        uint256[] memory timeLine,
-        uint256[] memory valueList,
-        bool isOpenTWAP,
-        uint256 deadLine
-    ) external override payable preventReentrant judgeExpired(deadLine) returns (address payable newCrowdPooling) {
-        address _baseToken = baseToken;
-        address _quoteToken = quoteToken == _ETH_ADDRESS_ ? _WETH_ : quoteToken;
-        
-        newCrowdPooling = IDODOV2(_CP_FACTORY_).createCrowdPooling();
-
-        _deposit(
-            msg.sender,
-            newCrowdPooling,
-            _baseToken,
-            baseInAmount,
-            false
-        );
-
-        newCrowdPooling.transfer(msg.value);
-
-        IDODOV2(_CP_FACTORY_).initCrowdPooling(
-            newCrowdPooling,
-            msg.sender,
-            _baseToken,
-            _quoteToken,
-            timeLine,
-            valueList,
-            isOpenTWAP
-        );
-    }
-
+    //============ CrowdPooling Functions (bid) ============
     function bid(
         address cpAddress,
         uint256 quoteAmount,
@@ -1987,29 +1724,4 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
             }
         }
     }
-
-    function _dodoGasReturn(uint256 originGas) internal {
-        uint256 _gasDodoMaxReturn = _GAS_DODO_MAX_RETURN_;
-        if(_gasDodoMaxReturn > 0) {
-            uint256 calcGasTokenBurn = originGas.sub(gasleft()) / 65000;
-            uint256 gasTokenBurn = calcGasTokenBurn > _gasDodoMaxReturn ? _gasDodoMaxReturn : calcGasTokenBurn;
-            if(gasTokenBurn >= 3 && gasleft() > 27710 + gasTokenBurn * 6080)
-                IChi(_CHI_TOKEN_).freeUpTo(gasTokenBurn);
-        }
-    }
-
-    function _externalGasReturn() internal {
-        uint256 _gasExternalReturn = _GAS_EXTERNAL_RETURN_;
-        if(_gasExternalReturn > 0) {
-            if(gasleft() > 27710 + _gasExternalReturn * 6080)
-                IChi(_CHI_TOKEN_).freeUpTo(_gasExternalReturn);
-        }
-    }
-
-    function _execIncentive(bool isIncentive, address fromToken,address toToken) internal {
-        if(isIncentive && gasleft() > 30000) {
-            IDODOIncentive(_DODO_INCENTIVE_).triggerIncentive(fromToken, toToken, msg.sender);
-        }
-    }
-
 }

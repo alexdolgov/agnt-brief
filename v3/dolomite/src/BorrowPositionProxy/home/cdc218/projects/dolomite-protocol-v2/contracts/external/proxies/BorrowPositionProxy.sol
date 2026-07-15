@@ -30,6 +30,8 @@ import { Actions } from "../../protocol/lib/Actions.sol";
 import { Require } from "../../protocol/lib/Require.sol";
 import { Types } from "../../protocol/lib/Types.sol";
 
+import { AccountActionHelper } from "../helpers/AccountActionHelper.sol";
+import { AccountBalanceHelper } from "../helpers/AccountBalanceHelper.sol";
 import { OnlyDolomiteMargin } from "../helpers/OnlyDolomiteMargin.sol";
 
 import { IBorrowPositionProxy } from "../interfaces/IBorrowPositionProxy.sol";
@@ -43,6 +45,7 @@ import { IBorrowPositionProxy } from "../interfaces/IBorrowPositionProxy.sol";
  *      minimizing call data
  */
 contract BorrowPositionProxy is IBorrowPositionProxy, OnlyDolomiteMargin, ReentrancyGuard {
+    using Types for Types.Par;
 
     constructor (
         address dolomiteMargin
@@ -52,43 +55,35 @@ contract BorrowPositionProxy is IBorrowPositionProxy, OnlyDolomiteMargin, Reentr
     {}
 
     function openBorrowPosition(
-        uint _fromAccountIndex,
-        uint _toAccountIndex,
-        uint _marketId,
-        uint _amountWei
+        uint256 _fromAccountIndex,
+        uint256 _toAccountIndex,
+        uint256 _marketId,
+        uint256 _amountWei,
+        AccountBalanceHelper.BalanceCheckFlag _balanceCheckFlag
     ) external {
-        Account.Info[] memory accounts = new Account.Info[](2);
-        accounts[0] = Account.Info(msg.sender, _fromAccountIndex);
-        accounts[1] = Account.Info(msg.sender, _toAccountIndex);
-
-        Actions.ActionArgs[] memory actions = new Actions.ActionArgs[](1);
-        Types.AssetAmount memory assetAmount = Types.AssetAmount({
-            sign: false,
-            denomination: Types.AssetDenomination.Wei,
-            ref: Types.AssetReference.Delta,
-            value: _amountWei
-        });
-        actions[0] = Actions.ActionArgs({
-            actionType : Actions.ActionType.Transfer,
-            accountId : 0,
-            amount : assetAmount,
-            primaryMarketId : _marketId,
-            secondaryMarketId : 0,
-            otherAddress : address(0),
-            otherAccountId : 1,
-            data : bytes("")
-        });
-
         // Emit this before the call to DolomiteMargin so indexers get it before the Transfer events are emitted
         emit BorrowPositionOpen(msg.sender, _toAccountIndex);
 
-        IDolomiteMargin(DOLOMITE_MARGIN).operate(accounts, actions);
+        AccountActionHelper.transfer(
+            IDolomiteMargin(DOLOMITE_MARGIN),
+            msg.sender,
+            _fromAccountIndex,
+            _toAccountIndex,
+            _marketId,
+            Types.AssetAmount({
+                sign: false,
+                denomination: Types.AssetDenomination.Wei,
+                ref: Types.AssetReference.Delta,
+                value: _amountWei
+            }),
+            _balanceCheckFlag
+        );
     }
 
     function closeBorrowPosition(
-        uint _borrowAccountIndex,
-        uint _toAccountIndex,
-        uint[] calldata _collateralMarketIds
+        uint256 _borrowAccountIndex,
+        uint256 _toAccountIndex,
+        uint256[] calldata _collateralMarketIds
     ) external {
         Account.Info[] memory accounts = new Account.Info[](2);
         accounts[0] = Account.Info(msg.sender, _borrowAccountIndex);
@@ -102,7 +97,7 @@ contract BorrowPositionProxy is IBorrowPositionProxy, OnlyDolomiteMargin, Reentr
             value: 0
         });
 
-        for (uint i = 0; i < _collateralMarketIds.length; i++) {
+        for (uint256 i = 0; i < _collateralMarketIds.length; i++) {
             actions[i] = Actions.ActionArgs({
                 actionType : Actions.ActionType.Transfer,
                 accountId : 0,
@@ -119,64 +114,57 @@ contract BorrowPositionProxy is IBorrowPositionProxy, OnlyDolomiteMargin, Reentr
     }
 
     function transferBetweenAccounts(
-        uint _fromAccountIndex,
-        uint _toAccountIndex,
-        uint _marketId,
-        uint _amountWei
+        uint256 _fromAccountIndex,
+        uint256 _toAccountIndex,
+        uint256 _marketId,
+        uint256 _amountWei,
+        AccountBalanceHelper.BalanceCheckFlag _balanceCheckFlag
     ) external {
-        Account.Info[] memory accounts = new Account.Info[](2);
-        accounts[0] = Account.Info(msg.sender, _fromAccountIndex);
-        accounts[1] = Account.Info(msg.sender, _toAccountIndex);
-
-        Actions.ActionArgs[] memory actions = new Actions.ActionArgs[](1);
-        Types.AssetAmount memory assetAmount = Types.AssetAmount({
-            sign: false,
-            denomination: Types.AssetDenomination.Wei,
-            ref: Types.AssetReference.Delta,
-            value: _amountWei
-        });
-        actions[0] = Actions.ActionArgs({
-            actionType : Actions.ActionType.Transfer,
-            accountId : 0,
-            amount : assetAmount,
-            primaryMarketId : _marketId,
-            secondaryMarketId : 0,
-            otherAddress : address(0),
-            otherAccountId : 1,
-            data : bytes("")
-        });
-
-        IDolomiteMargin(DOLOMITE_MARGIN).operate(accounts, actions);
+        AccountActionHelper.transfer(
+            IDolomiteMargin(DOLOMITE_MARGIN),
+            msg.sender,
+            _fromAccountIndex,
+            _toAccountIndex,
+            _marketId,
+            Types.AssetAmount({
+                sign: false,
+                denomination: Types.AssetDenomination.Wei,
+                ref: Types.AssetReference.Delta,
+                value: _amountWei
+            }),
+            _balanceCheckFlag
+        );
     }
 
+    // solium-disable-next-line security/no-assign-params
     function repayAllForBorrowPosition(
-        uint _fromAccountIndex,
-        uint _borrowAccountIndex,
-        uint _marketId
+        uint256 _fromAccountIndex,
+        uint256 _borrowAccountIndex,
+        uint256 _marketId,
+        AccountBalanceHelper.BalanceCheckFlag _balanceCheckFlag
     ) external {
-        Account.Info[] memory accounts = new Account.Info[](2);
-        accounts[0] = Account.Info(msg.sender, _borrowAccountIndex);
-        accounts[1] = Account.Info(msg.sender, _fromAccountIndex);
+        // reverse the ordering of the `_borrowAccountIndex` and `_fromAccountIndex`, so using `Target = 0` calculates
+        // on `_borrowAccountIndex`. We then need to reverse the `AccountBalanceHelper.BalanceCheckFlag` if it's set to
+        // `from` or `to`.
+        if (_balanceCheckFlag == AccountBalanceHelper.BalanceCheckFlag.To) {
+            _balanceCheckFlag = AccountBalanceHelper.BalanceCheckFlag.From;
+        } else if (_balanceCheckFlag == AccountBalanceHelper.BalanceCheckFlag.From) {
+            _balanceCheckFlag = AccountBalanceHelper.BalanceCheckFlag.To;
+        }
 
-        Actions.ActionArgs[] memory actions = new Actions.ActionArgs[](1);
-        // This works by transferring all debt from _borrowAccountIndex to _fromAccountIndex
-        Types.AssetAmount memory assetAmount = Types.AssetAmount({
-            sign: false,
-            denomination: Types.AssetDenomination.Wei,
-            ref: Types.AssetReference.Target,
-            value: 0
-        });
-        actions[0] = Actions.ActionArgs({
-            actionType : Actions.ActionType.Transfer,
-            accountId : 0,
-            amount : assetAmount,
-            primaryMarketId : _marketId,
-            secondaryMarketId : 0,
-            otherAddress : address(0),
-            otherAccountId : 1,
-            data : bytes("")
-        });
-
-        IDolomiteMargin(DOLOMITE_MARGIN).operate(accounts, actions);
+        AccountActionHelper.transfer(
+            IDolomiteMargin(DOLOMITE_MARGIN),
+            msg.sender,
+            _borrowAccountIndex,
+            _fromAccountIndex,
+            _marketId,
+            Types.AssetAmount({
+                sign: false,
+                denomination: Types.AssetDenomination.Wei,
+                ref: Types.AssetReference.Target,
+                value: 0
+            }),
+            _balanceCheckFlag
+        );
     }
 }

@@ -1,8 +1,16 @@
 {
   "component": "AerodromeAdapter",
   "main_contract": "AerodromeAdapter",
+  "source_entry_count": 17,
   "source_file_count": 17,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AerodromeAdapter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/cyberscope-io/audits/blob/main/ezmanager/audit.pdf"
@@ -11,18 +19,12 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x66a4acd86986afce3c0119383d2869ca5cfc0999",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
       "address": "0x9efde1640231a5306304317649f548be73a5fa28",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394517"
     }
   ]
 }

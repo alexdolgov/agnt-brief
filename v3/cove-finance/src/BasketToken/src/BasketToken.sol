@@ -54,8 +54,8 @@ contract BasketToken is
     uint16 private constant _MANAGEMENT_FEE_DECIMALS = 1e4;
     /// @notice Maximum management fee (30%) in BPS denominated in 1e4.
     uint16 private constant _MAX_MANAGEMENT_FEE = 3000;
-    string private constant _NAME_PREFIX = "CoveBasket ";
-    string private constant _SYMBOL_PREFIX = "cvt";
+    string private constant _NAME_PREFIX = "Cove ";
+    string private constant _SYMBOL_PREFIX = "cove";
 
     /// @notice Struct representing a deposit request.
     struct DepositRequestStruct {
@@ -550,14 +550,14 @@ contract BasketToken is
         // Get current pending deposits
         pendingDeposits = _depositRequests[nextDepositRequestId_].totalDepositAssets;
         if (pendingDeposits > 0) {
-            emit DepositRequestQueued(nextDepositRequestId_, pendingDeposits);
             nextDepositRequestId = nextDepositRequestId_ + 2;
+            emit DepositRequestQueued(nextDepositRequestId_, pendingDeposits);
         }
 
         pendingShares = _redeemRequests[nextRedeemRequestId_].totalRedeemShares;
         if (pendingShares > 0) {
-            emit RedeemRequestQueued(nextRedeemRequestId_, pendingShares);
             nextRedeemRequestId = nextRedeemRequestId_ + 2;
+            emit RedeemRequestQueued(nextRedeemRequestId_, pendingShares);
         }
 
         _harvestManagementFee(feeBps, feeCollector);

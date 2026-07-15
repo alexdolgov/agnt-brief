@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { IERC3156FlashBorrower } from "openzeppelin-contracts/interfaces/IERC3156FlashBorrower.sol";
 
@@ -8,15 +8,15 @@ interface IStrategy {
     /* ******************************** */
     /*      Events                      */
     /* ******************************** */
-    event DestinationVaultAdded(address destination);
-    event DestinationVaultRemoved(address destination);
-    event WithdrawalQueueSet(address[] destinations);
-    event AddedToRemovalQueue(address destination);
-    event RemovedFromRemovalQueue(address destination);
+    // event DestinationVaultAdded(address destination);
+    // event DestinationVaultRemoved(address destination);
+    // event WithdrawalQueueSet(address[] destinations);
+    // event AddedToRemovalQueue(address destination);
+    // event RemovedFromRemovalQueue(address destination);
 
-    error InvalidDestinationVault();
+    // error InvalidDestinationVault();
 
-    error RebalanceFailed(string message);
+    // error RebalanceFailed(string message);
 
     /// @notice gets the list of supported destination vaults for the Autopool/Strategy
     /// @return _destinations List of supported destination vaults
@@ -24,11 +24,15 @@ interface IStrategy {
 
     /// @notice add supported destination vaults for the Autopool/Strategy
     /// @param _destinations The list of destination vaults to add
-    function addDestinations(address[] calldata _destinations) external;
+    function addDestinations(
+        address[] calldata _destinations
+    ) external;
 
     /// @notice remove supported destination vaults for the Autopool/Strategy
     /// @param _destinations The list of destination vaults to remove
-    function removeDestinations(address[] calldata _destinations) external;
+    function removeDestinations(
+        address[] calldata _destinations
+    ) external;
 
     /// @param destinationIn The address / lp token of the destination vault that will increase
     /// @param tokenIn The address of the underlyer token that will be provided by the swapper

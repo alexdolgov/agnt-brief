@@ -1,10 +1,20 @@
 {
   "component": "YieldSeekerFeeTracker",
   "main_contract": "YieldSeekerFeeTracker",
+  "source_entry_count": 9,
   "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/YieldSeekerFeeTracker\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/tokenpage/yieldseeker-contracts/blob/main/audits/20260305-nethermind.pdf"
+  ],
   "addresses": [
     {
       "chain": "base",
@@ -12,7 +22,9 @@
       "address": "0x26f4bb36dbb42fd38956c6c1e6602a9182c957db",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401476"
     }
   ]
 }

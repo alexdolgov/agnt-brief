@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 struct SwapParams {
     /// @dev The address of the token to be sold.
@@ -43,5 +43,5 @@ interface IAsyncSwapper {
      */
     function swap(
         SwapParams memory swapParams
-    ) external returns (uint256 buyTokenAmountReceived);
+    ) external payable returns (uint256 buyTokenAmountReceived);
 }

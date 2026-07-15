@@ -1,54 +1,100 @@
 # Agentic Audit Brief: Ambire Wallet
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 12 (0 matched; 12 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
 
 ## Project Overview
 
 - Project: Ambire Wallet (`ambire-wallet`)
 - Website: [https://www.ambire.com](https://www.ambire.com)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-07-03T21:05:27.103Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
-- Chains: ethereum
-- Contract surface: 10 unique implementations (10 raw deployments)
+- Lifecycle: unknown
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: ethereum, optimism, scroll
+- Contract surface: 14 unique implementations (14 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $8,998,043.13
-- On-chain TVL (included contracts): $8,796,446.28
-- TVL by chain: Ethereum $8,796,446.28
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Wallets. Structurally: 2 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens.
+No contract logic was present for Ambire Wallet in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Contracts are linked by 1 cross-contract reference(s).
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 13 contracts are derived from known codebases. 13 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x000000...7da032`, chain 1)
+- UnnamedContract (`0x0f2aa7...66c828`, chain 1)
+- UnnamedContract (`0x26ce67...46dc2d`, chain 1)
+- UnnamedContract (`0x3979ff...0d9bf1`, chain 1)
+- UnnamedContract (`0x3f58d8...f5b214`, chain 1)
+- UnnamedContract (`0x5a7fc1...f96f6d`, chain 1)
+- UnnamedContract (`0x63c0c1...dae32b`, chain 1)
+- UnnamedContract (`0x8d6220...226e20`, chain 1)
+- UnnamedContract (`0xa8b267...572cf0`, chain 1)
+- UnnamedContract (`0xce0042...fdcf9f`, chain 1)
+- UnnamedContract (`0xe8340a...af4362`, chain 1)
+- UnnamedContract (`0x420000...00000f`, chain 10)
+- UnnamedContract (`0x530000...000002`, chain 534352)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 11; live-surface contracts included: 10 (2 live, 8 unknown).
-- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 13/16 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/2 (0.0%)
-- Deployed-live implementations: 2 of 10 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/2
-- Verified + Unaudited implementations: 2
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 13 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 13 of 14 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 8
-- Unique implementations: 10
-- Raw deployments: 10
+- Unverified implementations: 13
+- Unique implementations: 14
+- Raw deployments: 14
 - Audits discovered: 12 (12 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $8,796,446.28
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-02 (aging)
 - Audit staleness (calendar age): 0 fresh, 2 aging, 6 stale, 4 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $8,796,446.28 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -60,12 +106,9 @@ The protocol comprises 2 functional families. Contracts are linked by 1 cross-co
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| WALLETToken | token | ethereum | n/a | [`0x888000...2794ae`](./contracts/ethereum-1/0x88800092ff476844f74dc2fc427974bbee2794ae/) | ⚠️ Unaudited |
-| StakingPool | core_logic | ethereum | n/a | [`0x47cd7e...c12935`](./contracts/ethereum-1/0x47cd7e91c3cbaaf266369fe8518345fc4fc12935/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -79,55 +122,119 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (8)
+### ❓ Unverified (14)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x0604f2...ceaee7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x0e3c4f...f4bf3f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1955db...f6440b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1bba61...b1b2dc` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1f6a77...1c8dcc` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa69b80...24aaff` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xde0ed7...7b9159` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf2dd37...4b110b` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x000000...000001` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378981 | `0x000000...7da032` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378982 | `0x0f2aa7...66c828` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378983 | `0x26ce67...46dc2d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378984 | `0x3979ff...0d9bf1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378986 | `0x3f58d8...f5b214` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378987 | `0x5a7fc1...f96f6d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378988 | `0x63c0c1...dae32b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378990 | `0x8d6220...226e20` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378991 | `0xa8b267...572cf0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378992 | `0xce0042...fdcf9f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-378994 | `0xe8340a...af4362` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-378995 | `0x420000...00000f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | scroll | unit-378996 | `0x530000...000002` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Ambire-EIP-7702-Update-Hunter-Security-Audit-Report-0.1.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Ambire-EIP-7702-Update-Hunter-Security-Audit-Report-0.1.pdf) | Hunter Security | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
-| [Ambire-Hunter-Security-Assessment-26-01-2024.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Ambire-Hunter-Security-Assessment-26-01-2024.pdf) | Hunter Security | Audit | 2024-01 | stale | Direct | n/a | 0 | n/a |
-| [Ambire-stkWALLET-Hunter-Security-Audit-26-02-2024-1.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Ambire-stkWALLET-Hunter-Security-Audit-26-02-2024-1.pdf) | Hunter Security | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
-| [Ambire-stkWallet-Hunter-Security-Audit-Report-2025-1.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Ambire-stkWallet-Hunter-Security-Audit-Report-2025-1.pdf) | Hunter Security | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
-| [CuriousApple-AmbireRewview01.md](https://github.com/AmbireTech/ambire-common/blob/v2/audits/CuriousApple-AmbireRewview01.md) | CuriousApple | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
-| [ERC6492-Hunter-Security-Audit-Report-V1.0.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/ERC6492-Hunter-Security-Audit-Report-V1.0.pdf) | Hunter Security | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
-| [Pashov-Ambire-second-security-review.md](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Pashov-Ambire-second-security-review.md) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Pashov-Ambire-security-review.md](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Pashov-Ambire-security-review.md) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Pashov-Ambire-third-security-review.md](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Pashov-Ambire-third-security-review.md) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Shieldify-Ambire-Security-Review.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Shieldify-Ambire-Security-Review.pdf) | Shieldify | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
-| [code4rena - Ambire Wallet - Invitational.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/code4rena%20-%20Ambire%20Wallet%20-%20Invitational.pdf) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
-| [facu_2023-09-28_Ambire_Smart_Contracts_Audit_Report-1.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/facu_2023-09-28_Ambire_Smart_Contracts_Audit_Report-1.pdf) | Facu | Audit | 2023-09 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Ambire-EIP-7702-Update-Hunter-Security-Audit-Report-0.1.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Ambire-EIP-7702-Update-Hunter-Security-Audit-Report-0.1.pdf) | Hunter Security | Audit | 2025-02 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [Ambire-Hunter-Security-Assessment-26-01-2024.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Ambire-Hunter-Security-Assessment-26-01-2024.pdf) | Hunter Security | Audit | 2024-01 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [Ambire-stkWALLET-Hunter-Security-Audit-26-02-2024-1.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Ambire-stkWALLET-Hunter-Security-Audit-26-02-2024-1.pdf) | Hunter Security | Audit | 2024-02 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+| [Ambire-stkWallet-Hunter-Security-Audit-Report-2025-1.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Ambire-stkWallet-Hunter-Security-Audit-Report-2025-1.pdf) | Hunter Security | Audit | 2025-01 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+| [CuriousApple-AmbireRewview01.md](https://github.com/AmbireTech/ambire-common/blob/v2/audits/CuriousApple-AmbireRewview01.md) | CuriousApple | Audit | 2023-10 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+| [ERC6492-Hunter-Security-Audit-Report-V1.0.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/ERC6492-Hunter-Security-Audit-Report-V1.0.pdf) | Hunter Security | Audit | 2024-02 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [Pashov-Ambire-second-security-review.md](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Pashov-Ambire-second-security-review.md) | Pashov Audit Group | Audit | n/a | unknown | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [Pashov-Ambire-security-review.md](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Pashov-Ambire-security-review.md) | Pashov Audit Group | Audit | n/a | unknown | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [Pashov-Ambire-third-security-review.md](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Pashov-Ambire-third-security-review.md) | Pashov Audit Group | Audit | n/a | unknown | Direct | contract_name | no match | 0 | 0 | 0 | 3 | low |
+| [Shieldify-Ambire-Security-Review.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/Shieldify-Ambire-Security-Review.pdf) | Shieldify | Audit | 2024-02 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [code4rena - Ambire Wallet - Invitational.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/code4rena%20-%20Ambire%20Wallet%20-%20Invitational.pdf) | Code4rena | Contest | n/a | unknown | Direct | contract_name | no match | 0 | 0 | 0 | 4 | low |
+| [facu_2023-09-28_Ambire_Smart_Contracts_Audit_Report-1.pdf](https://github.com/AmbireTech/ambire-common/blob/v2/audits/facu_2023-09-28_Ambire_Smart_Contracts_Audit_Report-1.pdf) | Facu | Audit | 2023-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [2301] Ambire-EIP-7702-Update-Hunter-Security-Audit-Report-0.1.pdf — no match: Scope section explicitly lists four contracts in the 'Scope' bullet list.
+- [2302] Ambire-Hunter-Security-Assessment-26-01-2024.pdf — no match: Scope table on page 4 lists 5 contracts. Audit date from cover page.
+- [2303] Ambire-stkWALLET-Hunter-Security-Audit-26-02-2024-1.pdf — no match: Only one contract in scope: stkWALLET. Audit date from cover page.
+- [2304] Ambire-stkWallet-Hunter-Security-Audit-Report-2025-1.pdf — no match: Only one contract in scope: stkWALLET.sol
+- [2305] CuriousApple-AmbireRewview01.md — no match: Scope section explicitly lists three contracts: AmbireAccount.sol, AmbirePaymaster.sol, DKIMRecoverySigValidator.sol. Dependencies excluded. Audit date from cover page: 'Date of Delivery: 24 Oct 2023'.
+- [2306] ERC6492-Hunter-Security-Audit-Report-V1.0.pdf — no match: Scope explicitly lists 'ercs/ERCS/erc-6492.md' and mentions two contracts: UniversalSigValidator and ValidateSigOffchain.
+- [2307] Pashov-Ambire-second-security-review.md — no match: Scope section explicitly lists AmbireAccount and DKIMRecoverySigValidator. No date found in the report text.
+- [2308] Pashov-Ambire-security-review.md — no match: Scope section explicitly lists four contracts: libs/Bytes, libs/SignatureValidator, AmbireAccount, AmbireAccountFactory. No audit date found in the provided text.
+- [2309] Pashov-Ambire-third-security-review.md — no match: No explicit scope section; contracts inferred from report text.
+- [2310] Shieldify-Ambire-Security-Review.pdf — no match: All contracts listed in scope section of the report.
+- [2311] code4rena - Ambire Wallet - Invitational.pdf — no match: No explicit scope section found; extracted contract names from code snippets and mentions in the report.
+- [2312] facu_2023-09-28_Ambire_Smart_Contracts_Audit_Report-1.pdf — no match: Contracts explicitly named in the introduction as the scope of the audit.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Ambire-EIP-7702-Update-Hunter-Security-Audit-Report-0.1.pdf | AmbireAccount | unmatched — not counted | — | listed in scope | no |
+| Ambire-EIP-7702-Update-Hunter-Security-Audit-Report-0.1.pdf | AmbireAccount7702 | unmatched — not counted | — | listed in scope | no |
+| Ambire-EIP-7702-Update-Hunter-Security-Audit-Report-0.1.pdf | Eip712HashBuilder | unmatched — not counted | — | listed in scope | no |
+| Ambire-EIP-7702-Update-Hunter-Security-Audit-Report-0.1.pdf | IAmbireAccount | unmatched — not counted | — | listed in scope | no |
+| Ambire-Hunter-Security-Assessment-26-01-2024.pdf | AmbireAccount | unmatched — not counted | — | listed in scope table | no |
+| Ambire-Hunter-Security-Assessment-26-01-2024.pdf | AmbireAccountFactory | unmatched — not counted | — | listed in scope table | no |
+| Ambire-Hunter-Security-Assessment-26-01-2024.pdf | AmbirePaymaster | unmatched — not counted | — | listed in scope table | no |
+| Ambire-Hunter-Security-Assessment-26-01-2024.pdf | DKIMRecoverySigValidator | unmatched — not counted | — | listed in scope table | no |
+| Ambire-Hunter-Security-Assessment-26-01-2024.pdf | SignatureValidator | unmatched — not counted | — | listed in scope table | no |
+| Ambire-stkWALLET-Hunter-Security-Audit-26-02-2024-1.pdf | stkWALLET | unmatched — not counted | — | listed in scope table and executive summary | no |
+| Ambire-stkWallet-Hunter-Security-Audit-Report-2025-1.pdf | stkWALLET | unmatched — not counted | — | listed in scope | no |
+| CuriousApple-AmbireRewview01.md | AmbireAccount | unmatched — not counted | — | listed in scope | no |
+| CuriousApple-AmbireRewview01.md | AmbirePaymaster | unmatched — not counted | — | listed in scope | no |
+| CuriousApple-AmbireRewview01.md | DKIMRecoverySigValidator | unmatched — not counted | — | listed in scope | no |
+| ERC6492-Hunter-Security-Audit-Report-V1.0.pdf | UniversalSigValidator | unmatched — not counted | — | listed in scope and described as main smart contract | no |
+| ERC6492-Hunter-Security-Audit-Report-V1.0.pdf | ValidateSigOffchain | unmatched — not counted | — | listed in scope and described as helper smart contract | no |
+| Pashov-Ambire-second-security-review.md | AmbireAccount | unmatched — not counted | — | listed in scope | no |
+| Pashov-Ambire-second-security-review.md | DKIMRecoverySigValidator | unmatched — not counted | — | listed in scope | no |
+| Pashov-Ambire-security-review.md | Bytes | unmatched — not counted | — | listed in scope | no |
+| Pashov-Ambire-security-review.md | SignatureValidator | unmatched — not counted | — | listed in scope | no |
+| Pashov-Ambire-security-review.md | AmbireAccount | unmatched — not counted | — | listed in scope | no |
+| Pashov-Ambire-security-review.md | AmbireAccountFactory | unmatched — not counted | — | listed in scope | no |
+| Pashov-Ambire-third-security-review.md | AmbireAccount | unmatched — not counted | — | mentioned as audited contract | no |
+| Pashov-Ambire-third-security-review.md | AmbirePaymaster | unmatched — not counted | — | mentioned as audited contract | no |
+| Pashov-Ambire-third-security-review.md | DKIMRecoverySigValidator | unmatched — not counted | — | mentioned in finding L-01 | no |
+| Shieldify-Ambire-Security-Review.pdf | AmbireAccount | unmatched — not counted | — | listed in scope | no |
+| Shieldify-Ambire-Security-Review.pdf | SignatureValidator | unmatched — not counted | — | listed in scope | no |
+| Shieldify-Ambire-Security-Review.pdf | AmbireAccountFactory | unmatched — not counted | — | listed in scope | no |
+| Shieldify-Ambire-Security-Review.pdf | AmbirePaymaster | unmatched — not counted | — | listed in scope | no |
+| Shieldify-Ambire-Security-Review.pdf | DKIMRecoverySigValidator | unmatched — not counted | — | listed in scope | no |
+| code4rena - Ambire Wallet - Invitational.pdf | AmbireAccountFactory | unmatched — not counted | — | mentioned in report text | no |
+| code4rena - Ambire Wallet - Invitational.pdf | AmbireAccount | unmatched — not counted | — | mentioned in report text | no |
+| code4rena - Ambire Wallet - Invitational.pdf | SignatureValidator | unmatched — not counted | — | mentioned in report text | no |
+| code4rena - Ambire Wallet - Invitational.pdf | TestTryCatch | unmatched — not counted | — | mentioned in report text | no |
+| facu_2023-09-28_Ambire_Smart_Contracts_Audit_Report-1.pdf | AmbireAccount | unmatched — not counted | — | listed in scope | no |
+| facu_2023-09-28_Ambire_Smart_Contracts_Audit_Report-1.pdf | AmbirePaymaster | unmatched — not counted | — | listed in scope | no |
+| facu_2023-09-28_Ambire_Smart_Contracts_Audit_Report-1.pdf | DKIMRecoverySigValidator | unmatched — not counted | — | listed in scope | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x888000...2794ae`](./contracts/ethereum-1/0x88800092ff476844f74dc2fc427974bbee2794ae/) | WALLETToken | token | $8,796,446.28 | Verified native implementation with $8,796,446.28 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x47cd7e...c12935`](./contracts/ethereum-1/0x47cd7e91c3cbaaf266369fe8518345fc4fc12935/) | StakingPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 8 |
+| needs_review | 14 |
 
 ## Scope Matching Notes
 
@@ -135,7 +242,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 12
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 37 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=10, low=2
 - Match method counts: n/a
 
 Zero-match audit list:

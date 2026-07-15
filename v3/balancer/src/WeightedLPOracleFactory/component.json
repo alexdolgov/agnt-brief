@@ -1,7 +1,15 @@
 {
   "component": "WeightedLPOracleFactory",
   "main_contract": "WeightedLPOracleFactory",
+  "source_entry_count": 43,
   "source_file_count": 43,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WeightedLPOracleFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -14,7 +22,9 @@
       "address": "0x05503b3ade04aca81c8d6f88ecb73ba156982d2b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402400"
     }
   ]
 }

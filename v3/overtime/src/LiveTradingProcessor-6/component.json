@@ -1,7 +1,15 @@
 {
   "component": "LiveTradingProcessor-6",
   "main_contract": "LiveTradingProcessor",
+  "source_entry_count": 25,
   "source_file_count": 25,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LiveTradingProcessor-6\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x3b834149f21b9a6c2ddc9f6ce97f2fd1097f8eab",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

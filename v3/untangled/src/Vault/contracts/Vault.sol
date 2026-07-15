@@ -1,203 +1,330 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.21;
-import {BasedVault} from "./BasedVault.sol";
-import {IERC20} from "@openzeppelin/contracts/interfaces/IERC20.sol";
+import {IERC20, ERC20, ERC4626, SafeERC20} from "@openzeppelin/contracts/token/ERC20/extensions/ERC4626.sol";
 
-/// @title Meta Vault managing allocations across Market vaults
-/// @notice ERC4626-based vault that allocates its underlying asset into approved Market vaults behind a timelock.
-/// @dev
-/// - Inherits BasedVault for ERC4626 accounting and role-based access control:
-///   - onlyAdmin, onlyCurator, onlyCuratorOrAdmin, onlyGuardian modifiers.
-/// - Allocation increases/decreases are executed by depositing into or withdrawing from Market vaults.
-/// - If a Market exposes a non-zero hook(), approvals are granted to the hook instead of the Market.
-/// - Units for allocation amounts are in the underlying asset's decimals (asset()).
-/// @custom:security External calls are performed against Market vaults and their hooks; use trusted Markets only.
-/// @custom:security Be mindful of ERC20 approval race conditions; some tokens require setting allowance to 0 before updating.
-contract Vault is BasedVault {
-    /// @notice Desired allocation for a Market vault.
-    /// @dev amount is the target total allocation after this call (not a delta).
-    struct Allocation {
-        /// @notice Target Market (a BasedVault-compatible vault).
-        address market;
-        /// @notice Target amount of the underlying asset to be allocated to `market`, in asset() units.
-        uint256 amount;
+import {IVault} from "./interfaces/IVault.sol";
+import {IERC7540Redeem} from "./interfaces/IAsyncModule.sol";
+import {IAuthModule} from "./interfaces/IAuthModule.sol";
+import {IValuationModule} from "./interfaces/IValuationModule.sol";
+import {IFeeModule} from "./interfaces/IFeeModule.sol";
+
+import {AsyncWithdraw} from "./modules/AsyncWithdraw.sol";
+
+contract Keeper {
+    constructor(IERC20 underlying) {
+        underlying.approve(msg.sender, type(uint256).max);
     }
+}
 
-    /// @notice Tracks whether an address is an accepted Market.
-    mapping(address => bool) public isMarket;
+contract Vault is ERC4626, IVault {
+    address public treasury;
 
-    /// @notice Current amount of the underlying asset allocated to each Market, in asset() units.
-    mapping(address => uint256) public marketAllocations;
+    // module addresses
+    address withdrawModule;
+    address valuationModule;
+    address authModule;
+    address feeModule;
+    address crosschainModule;
 
-    /// @notice Timestamp when a Market was queued for acceptance; zero means not pending.
-    /// @dev A Market can be accepted after pendingMarket[market] + timelock has elapsed.
-    mapping(address => uint256) public pendingMarket;
+    address public claimableKeeper;
 
-    /// @notice Registry of all accepted Markets.
-    /// @dev Removal is O(n) by swapping with the last element.
-    address[] public markets;
+    bool public lockDeposit;
 
-    /// @notice Initialize the meta vault.
-    /// @param _name ERC20 name of the vault share token.
-    /// @param _symbol ERC20 symbol of the vault share token.
-    /// @param _asset Underlying ERC20 asset for ERC4626 operations.
-    /// @param _treasury Address that receives fees (as defined in BasedVault).
     constructor(
+        address _asset,
         string memory _name,
         string memory _symbol,
-        address _asset,
-        address _treasury
-    ) BasedVault(_name, _symbol, _asset, _treasury) {}
+        address _safeWalet
+    ) ERC4626(IERC20(_asset)) ERC20(_name, _symbol) {
+        treasury = _safeWalet;
+        claimableKeeper = treasury;
+    }
 
-    /// @notice Emitted when a Market is queued for acceptance.
-    /// @param market Address of the queued Market.
-    /// @param timestamp Block timestamp when the Market was queued.
-    event MarketQueued(address indexed market, uint256 timestamp);
+    modifier onlyTreasury() {
+        require(msg.sender == treasury, "Vault: Only Treasury");
+        _;
+    }
 
-    /// @notice Emitted when a Market is accepted.
-    /// @param market Address of the accepted Market.
-    /// @param timestamp Block timestamp when the Market was accepted.
-    event MarketAdded(address indexed market, uint256 timestamp);
+    // inheritdoc ERC20
+    function transfer(
+        address to,
+        uint256 value
+    ) public override(ERC20, IERC20) returns (bool) {
+        if (
+            authModule != address(0) &&
+            !IAuthModule(authModule).authenticate(to)
+        ) revert Unauthorized(to);
 
-    /// @notice Emitted when a Market is removed or a pending Market is vetoed.
-    /// @param market Address of the removed Market.
-    /// @param timestamp Block timestamp when the Market was removed.
-    event MarketRemoved(address indexed market, uint256 timestamp);
+        address owner = _msgSender();
+        _transfer(owner, to, value);
+        return true;
+    }
 
-    /// @notice Thrown when attempting to add a Market that already exists.
-    /// @param market Address of the existing Market.
-    error MarketAlreadyExists(address market);
+    // inheritdoc ERC20
+    function transferFrom(
+        address from,
+        address to,
+        uint256 value
+    ) public override(ERC20, IERC20) returns (bool) {
+        if (
+            authModule != address(0) &&
+            !IAuthModule(authModule).authenticate(to)
+        ) revert Unauthorized(to);
 
-    /// @notice Thrown when a Market is not found (neither pending nor accepted as applicable).
-    /// @param market Address of the non-existent Market.
-    error MarketDoesNotExist(address market);
+        address spender = _msgSender();
+        _spendAllowance(from, spender, value);
+        _transfer(from, to, value);
+        return true;
+    }
 
-    /// @notice Update target allocations across Markets by depositing to or withdrawing from them.
-    /// @dev
-    /// - For each Allocation:
-    ///   - If target < current, the Vault decreases allocation:
-    ///       1) Determine `diff = current - target`.
-    ///       2) Approve the Market's hook() if set, otherwise approve the Market, for `diff` Vault shares or as required by the hook.
-    ///       3) Call Market.withdraw(diff, address(this), address(this)).
-    ///   - If target > current, the Vault increases allocation:
-    ///       1) Determine `diff = target - current`.
-    ///       2) Approve the Market's hook() if set, otherwise approve the Market, for `diff` of the underlying asset.
-    ///       3) Call Market.deposit(diff, address(this)).
-    /// - Updates marketAllocations to reflect the new target amounts.
-    /// - Reverts if a referenced Market has not been accepted.
-    /// - Access: onlyCurator.
-    /// @param alloc Array of target allocations per Market (absolute targets, not deltas).
-    function allocate(Allocation[] memory alloc) external onlyCurator {
-        for (uint256 i = 0; i < alloc.length; i++) {
-            Allocation memory allocation = alloc[i];
-            if (!isMarket[allocation.market])
-                revert MarketDoesNotExist(allocation.market);
+    /**
+     * @dev Return the total value of the assets that the vault is currently holding, minus the fee (if have) accured within this vault.
+     */
+    function totalAssets() public view override returns (uint256) {
+        uint256 fee;
+        uint256 totalValue;
+        if (feeModule != address(0)) {
+            fee = IFeeModule(feeModule).getFeeAccrued();
+        }
 
-            if (marketAllocations[allocation.market] > allocation.amount) {
-                uint256 diff = marketAllocations[allocation.market] -
-                    allocation.amount;
-                // If the Market uses a hook, approve the hook; otherwise approve the Market itself.
-                address marketHook = address(
-                    BasedVault(allocation.market).hook()
-                );
-                if (marketHook == address(0)) {
-                    // Approve as required by the Market/hook to facilitate the withdrawal.
-                    BasedVault(allocation.market).approve(
-                        allocation.market,
-                        diff
-                    );
-                } else {
-                    BasedVault(allocation.market).approve(marketHook, diff);
-                }
+        if (valuationModule != address(0)) {
+            totalValue = IValuationModule(valuationModule).portfolioValue();
+        } else {
+            totalValue = getVaultBalance();
+        }
 
-                // Withdraw `diff` of underlying back to this Vault.
-                BasedVault(allocation.market).withdraw(
-                    diff,
-                    address(this),
-                    address(this)
-                );
-                marketAllocations[allocation.market] -= diff;
-                continue;
-            }
+        return totalValue - fee;
+    }
 
-            if (marketAllocations[allocation.market] < allocation.amount) {
-                uint256 diff = allocation.amount -
-                    marketAllocations[allocation.market];
-                // If the Market uses a hook, approve the hook to pull the underlying; otherwise approve the Market.
-                address marketHook = address(
-                    BasedVault(allocation.market).hook()
-                );
-                if (marketHook == address(0)) {
-                    IERC20(asset()).approve(allocation.market, diff);
-                } else {
-                    IERC20(asset()).approve(marketHook, diff);
-                }
-                // Deposit `diff` of underlying into the Market for this Vault.
-                BasedVault(allocation.market).deposit(diff, address(this));
+    /**
+     * @dev Override the original function to apply authentication condition (if have) on the receiver.
+     * @param caller address of the caller
+     * @param receiver address of the share receiver
+     * @param assets amount of assets to be deposited
+     * @param shares amount of shares to be minted
+     */
+    function _deposit(
+        address caller,
+        address receiver,
+        uint256 assets,
+        uint256 shares
+    ) internal override {
+        if (lockDeposit) revert DepositLocked();
+        // checking KYC condition
+        if (
+            authModule != address(0) &&
+            !IAuthModule(authModule).authenticate(receiver)
+        ) revert Unauthorized(receiver);
 
-                marketAllocations[allocation.market] += diff;
-                continue;
-            }
+        if (feeModule != address(0)) {
+            IFeeModule(feeModule).accrueFee();
+        }
+
+        SafeERC20.safeTransferFrom(IERC20(asset()), caller, treasury, assets);
+
+        _mint(receiver, shares);
+
+        if (valuationModule != address(0)) {
+            IValuationModule(valuationModule).updateAsset(asset());
+        }
+
+        emit Deposit(caller, receiver, assets, shares);
+    }
+
+    /**
+     * @dev Override the original function to apply asynchronous withdraw (if enabled)
+     * @param caller address of the caller
+     * @param receiver address of the receiver
+     * @param owner address of the owner of the share
+     * @param assets amount of asset to be withdrawn
+     * @param shares amount of share to be burned
+     */
+    function _withdraw(
+        address caller,
+        address receiver,
+        address owner,
+        uint256 assets,
+        uint256 shares
+    ) internal override {
+        if (feeModule != address(0)) {
+            IFeeModule(feeModule).accrueFee();
+        }
+
+        if (caller != owner) {
+            _spendAllowance(owner, caller, shares);
+        }
+
+        if (withdrawModule != address(0) && msg.sender != withdrawModule)
+            revert OnlyWithdrawModule();
+
+        _burn(owner, shares);
+
+        SafeERC20.safeTransferFrom(
+            IERC20(asset()),
+            claimableKeeper,
+            receiver,
+            assets
+        );
+
+        if (valuationModule != address(0)) {
+            IValuationModule(valuationModule).updateAsset(asset());
+        }
+
+        emit Withdraw(caller, receiver, owner, assets, shares);
+    }
+
+    /**
+     * @dev function to transfer share from owner to Keeper contract when create redeem request.
+     * @notice can only be call from withdraw module contract
+     * @param shares amount of share to be transferred to the Keeper contract
+     * @param sender address of the sender
+     * @param owner address of share's owner
+     */
+    function requestRedeem(
+        uint256 shares,
+        address sender,
+        address owner
+    ) external {
+        if (msg.sender != withdrawModule) {
+            revert OnlyWithdrawModule();
+        }
+        if (owner != sender) {
+            _spendAllowance(owner, sender, shares);
+        }
+
+        _update(
+            owner,
+            IERC7540Redeem(withdrawModule).getPendingKeeper(),
+            shares
+        );
+    }
+
+    /**
+     * @dev function to burn when fulfill the redeem request at the end of epoch
+     * @param shares the amount of share to be burned
+     */
+    function forceBurn(uint256 shares) external {
+        if (msg.sender != withdrawModule) revert OnlyWithdrawModule();
+        address pendingKeeper = IERC7540Redeem(withdrawModule)
+            .getPendingKeeper();
+
+        _burn(pendingKeeper, shares);
+        emit ForceBurn(shares, block.timestamp);
+    }
+
+    /**
+     * @dev function to mint share for a receiver of a crosschain deposit.
+     * @notice can only be call from crosschain module
+     * @param receiver address of the share receiver
+     * @param shares the amount of share to be minted
+     */
+    function forceMint(address receiver, uint256 shares) external {
+        if (msg.sender != crosschainModule) revert OnlyCrosschainModule();
+
+        _mint(receiver, shares);
+
+        emit ForceMint(receiver, shares, block.timestamp);
+    }
+
+    /**
+     * function to claim fee that is accrued within this vault.
+     * @param amount amount of underlying asset to be claimed
+     * @param beneficiary address of the fee's beneficiary
+     */
+    function claimFee(uint256 amount, address beneficiary) external {
+        if (msg.sender != feeModule) revert OnlyFeeModule();
+
+        uint256 vaultBalance = getVaultBalance();
+        if (amount > vaultBalance)
+            revert InsufficientBalance(amount, vaultBalance);
+        if (beneficiary == address(0)) revert InvalidBeneficiary();
+
+        SafeERC20.safeTransferFrom(
+            IERC20(asset()),
+            treasury,
+            beneficiary,
+            amount
+        );
+
+        emit FeeClaimed(amount, beneficiary, block.timestamp);
+    }
+
+    /**
+     * return the current balance of the treasury that holding Vault's fund.
+     */
+    function getVaultBalance() public view returns (uint256) {
+        return ERC20(asset()).balanceOf(treasury);
+    }
+
+    function getTreasury() public view returns (address) {
+        return treasury;
+    }
+
+    function enableAsyncWithdraw() external onlyTreasury {
+        if (withdrawModule != address(0))
+            revert WithdrawModuleInitialized(withdrawModule);
+
+        withdrawModule = address(new AsyncWithdraw(address(this)));
+        claimableKeeper = IERC7540Redeem(withdrawModule).getClaimableKeeper();
+
+        emit ModuleUpdated(withdrawModule, block.timestamp, 0);
+    }
+
+    function _setModule(address newModuleAddress, uint256 moduleType) internal {
+        if (moduleType == 0) {
+            withdrawModule = newModuleAddress;
+        } else if (moduleType == 1) {
+            valuationModule = newModuleAddress;
+        } else if (moduleType == 2) {
+            authModule = newModuleAddress;
+        } else if (moduleType == 3) {
+            feeModule = newModuleAddress;
+        } else if (moduleType == 4) {
+            crosschainModule = newModuleAddress;
+        } else {
+            revert InvalidModuleType(moduleType);
+        }
+        emit ModuleUpdated(newModuleAddress, moduleType, block.timestamp);
+    }
+
+    function setModule(
+        address newModuleAddress,
+        uint256 moduleType
+    ) external onlyTreasury {
+        _setModule(newModuleAddress, moduleType);
+    }
+
+    function setLockDeposit(bool state) external onlyTreasury {
+        if (lockDeposit == state) revert AlreadySet();
+
+        lockDeposit = state;
+
+        emit SetLockDeposit(state, block.timestamp);
+    }
+
+    function setModules(
+        address[] memory moduleAddresses,
+        uint256[] memory moduleTypes
+    ) external onlyTreasury {
+        if (moduleAddresses.length != moduleTypes.length)
+            revert LengthMismatch();
+
+        for (uint256 i = 0; i < moduleAddresses.length; i++) {
+            _setModule(moduleAddresses[i], moduleTypes[i]);
         }
     }
 
-    /// @notice Queue a Market for acceptance subject to timelock.
-    /// @dev
-    /// - Records the current block timestamp in pendingMarket[market].
-    /// - Reverts if the Market is already accepted.
-    /// - Access: onlyCuratorOrAdmin.
-    /// @param market Address of the Market to queue.
-    function addMarket(address market) external onlyCuratorOrAdmin {
-        if (isMarket[market]) revert MarketAlreadyExists(market);
-        pendingMarket[market] = block.timestamp;
-        emit MarketQueued(market, block.timestamp);
-    }
-
-    /// @notice Veto a queued Market before acceptance.
-    /// @dev
-    /// - Only affects Markets that are pending (queued). It does not remove accepted Markets.
-    /// - Reverts if the Market is neither accepted nor pending.
-    /// - Access: onlyGuardian.
-    /// @param market Address of the pending Market to veto.
-    function vetoMarket(address market) external onlyGuardian {
-        if (!isMarket[market] && pendingMarket[market] == 0)
-            revert MarketDoesNotExist(market);
-        delete pendingMarket[market];
-        emit MarketRemoved(market, block.timestamp);
-    }
-
-    /// @notice Accept a queued Market after the timelock has expired.
-    /// @dev
-    /// - Reverts if the Market is already accepted.
-    /// - Reverts with TimelockNotExpired (defined in BasedVault) if timelock has not elapsed.
-    /// - Access: onlyCuratorOrAdmin.
-    /// @param market Address of the queued Market to accept.
-    function acceptMarket(address market) external onlyCuratorOrAdmin {
-        if (isMarket[market]) revert MarketAlreadyExists(market);
-        if (pendingMarket[market] + timelock >= block.timestamp)
-            revert TimelockNotExpired();
-        isMarket[market] = true;
-        markets.push(market);
-        delete pendingMarket[market];
-        emit MarketAdded(market, block.timestamp);
-    }
-
-    /// @notice Remove an accepted Market.
-    /// @dev
-    /// - Marks the Market as not accepted and removes it from the `markets` array (swap-and-pop).
-    /// - Does not withdraw funds automatically; call allocate to reduce allocations first if desired.
-    /// - Access: onlyAdmin.
-    /// @param market Address of the Market to remove.
-    function removeMarket(address market) external onlyAdmin {
-        if (!isMarket[market]) revert MarketDoesNotExist(market);
-        isMarket[market] = false;
-        for (uint256 i = 0; i < markets.length; i++) {
-            if (markets[i] == market) {
-                markets[i] = markets[markets.length - 1];
-                markets.pop();
-                break;
-            }
-        }
-        emit MarketRemoved(market, block.timestamp);
+    function getModules()
+        external
+        view
+        returns (address, address, address, address, address)
+    {
+        return (
+            withdrawModule,
+            valuationModule,
+            authModule,
+            feeModule,
+            crosschainModule
+        );
     }
 }

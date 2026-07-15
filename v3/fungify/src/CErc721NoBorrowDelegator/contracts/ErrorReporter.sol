@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BSD-3-Clause
-pragma solidity 0.8.26;
+pragma solidity 0.8.23;
 
 contract ComptrollerErrorReporter {
     enum Error {
@@ -79,8 +79,8 @@ contract ComptrollerErrorReporter {
     error LiquidateSeizeTooMuch();
     error LiquidateSeizeBellowMinValue(uint minSeizedValue, uint liquidatedValueTotal);
     error ExcessRefundFailed();
+    error MintCapReached();
     error BorrowCapReached();
-    error SupplyCapReached();
     error MarketAlreadyAdded();
     error InvalidInput();
     error OnlyAdminCanUnpause();

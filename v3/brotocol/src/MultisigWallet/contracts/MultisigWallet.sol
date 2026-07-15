@@ -1,17 +1,13 @@
 // SPDX-License-Identifier: BUSL-1.1
 
-pragma solidity 0.8.17;
+pragma solidity ^0.8.17;
 
 import "./utils/Errors.sol";
 import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-contract MultisigWallet is AccessControlEnumerable, ReentrancyGuard {
+contract MultisigWallet is AccessControlEnumerable {
   bytes32 public constant APPROVED_ROLE = keccak256("APPROVED_ROLE");
   bytes32 public constant SIGNER_ROLE = keccak256("SIGNER_ROLE");
-
-  // Maximum number of signers to prevent potential issues with confirmation counting
-  uint8 public constant MAX_SIGNERS = 50;
 
   // Events
   event Deposit(address indexed sender, uint amount, uint balance);
@@ -71,19 +67,11 @@ contract MultisigWallet is AccessControlEnumerable, ReentrancyGuard {
 
   constructor(address[] memory _signers, uint8 _numConfirmationsRequired) {
     _require(_signers.length > 0, Errors.ZERO_OWNERS);
-    _require(_signers.length <= MAX_SIGNERS, Errors.INVALID_NUM_CONFIRMATIONS);
     _require(
       _numConfirmationsRequired > 0 &&
         _numConfirmationsRequired <= _signers.length,
       Errors.INVALID_NUM_CONFIRMATIONS
     );
-
-    // Check for duplicate addresses
-    for (uint i = 0; i < _signers.length; i++) {
-      for (uint j = i + 1; j < _signers.length; j++) {
-        _require(_signers[i] != _signers[j], Errors.NOT_AUTHORIZED);
-      }
-    }
 
     for (uint i = 0; i < _signers.length; i++) {
       address owner = _signers[i];
@@ -110,16 +98,9 @@ contract MultisigWallet is AccessControlEnumerable, ReentrancyGuard {
     address target
   ) public override(AccessControl, IAccessControl) onlySelf {
     _require(target != address(0), Errors.ZERO_ADDRESS);
-    _require(target != address(this), Errors.INVALID_TARGET); // Prevent self-granting
-
     if (role == SIGNER_ROLE) {
       _require(!hasRole(SIGNER_ROLE, target), Errors.NOT_AUTHORIZED);
-      _require(
-        getRoleMemberCount(SIGNER_ROLE) < MAX_SIGNERS,
-        Errors.INVALID_NUM_CONFIRMATIONS
-      );
     }
-
     _grantRole(role, target);
   }
 
@@ -128,16 +109,12 @@ contract MultisigWallet is AccessControlEnumerable, ReentrancyGuard {
     address target
   ) public override(AccessControl, IAccessControl) onlySelf {
     _require(target != address(0), Errors.ZERO_ADDRESS);
-    _require(target != address(this), Errors.INVALID_TARGET); // Prevent self-revoking
-
     if (role == SIGNER_ROLE) {
       _require(
         getRoleMemberCount(SIGNER_ROLE) > numConfirmationsRequired,
         Errors.INVALID_NUM_CONFIRMATIONS
       );
-      _require(hasRole(SIGNER_ROLE, target), Errors.NOT_AUTHORIZED); // Ensure target has the role
     }
-
     _revokeRole(role, target);
   }
 
@@ -146,10 +123,8 @@ contract MultisigWallet is AccessControlEnumerable, ReentrancyGuard {
     uint[] calldata _values,
     bytes[] calldata _data
   ) external onlyRole(SIGNER_ROLE) {
-    _require(_targets.length > 0, Errors.INVALID_TARGET);
     _require(_targets.length == _values.length, Errors.INPUT_LENGTH_MISMATCH);
     _require(_targets.length == _data.length, Errors.INPUT_LENGTH_MISMATCH);
-    _require(_targets.length <= 100, Errors.INPUT_LENGTH_MISMATCH); // Limit to prevent DoS
 
     uint txIndex = transactions.length;
 
@@ -177,10 +152,6 @@ contract MultisigWallet is AccessControlEnumerable, ReentrancyGuard {
     notConfirmed(_txIndex)
   {
     Transaction storage transaction = transactions[_txIndex];
-    _require(
-      transaction.numConfirmations < 255,
-      Errors.INVALID_NUM_CONFIRMATIONS
-    );
     transaction.numConfirmations += 1;
     isConfirmed[_txIndex][msg.sender] = true;
 
@@ -189,13 +160,7 @@ contract MultisigWallet is AccessControlEnumerable, ReentrancyGuard {
 
   function executeTransaction(
     uint _txIndex
-  )
-    external
-    onlyRole(SIGNER_ROLE)
-    txExists(_txIndex)
-    notExecuted(_txIndex)
-    nonReentrant
-  {
+  ) external onlyRole(SIGNER_ROLE) txExists(_txIndex) notExecuted(_txIndex) {
     Transaction storage transaction = transactions[_txIndex];
 
     _require(
@@ -203,26 +168,21 @@ contract MultisigWallet is AccessControlEnumerable, ReentrancyGuard {
       Errors.TX_CANNOT_EXECUTE
     );
 
+    transaction.executed = true;
+
     bytes[] memory results = new bytes[](transaction.data.length);
     for (uint256 i; i < transaction.targets.length; ++i) {
       (bool success, bytes memory data) = transaction.targets[i].call{
         value: transaction.values[i]
       }(transaction.data[i]);
       if (!success) {
-        // Handle different failure scenarios
-        if (data.length > 0) {
-          assembly {
-            revert(add(32, data), mload(data))
-          }
-        } else {
-          _require(false, Errors.TX_FAILED);
+        _require(data.length > 0, Errors.TX_FAILED);
+        assembly {
+          revert(add(32, data), mload(data))
         }
       }
       results[i] = data;
     }
-
-    // Set executed flag AFTER all external calls complete (checks-effects-interactions pattern)
-    transaction.executed = true;
     emit ExecuteTransaction(msg.sender, _txIndex, results);
   }
 
@@ -232,10 +192,6 @@ contract MultisigWallet is AccessControlEnumerable, ReentrancyGuard {
     Transaction storage transaction = transactions[_txIndex];
 
     _require(isConfirmed[_txIndex][msg.sender], Errors.TX_NOT_CONFIRMED);
-    _require(
-      transaction.numConfirmations > 0,
-      Errors.INVALID_NUM_CONFIRMATIONS
-    );
 
     transaction.numConfirmations -= 1;
     isConfirmed[_txIndex][msg.sender] = false;

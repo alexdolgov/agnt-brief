@@ -1,0 +1,13 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "zkswap-finance",
+  "missing": [
+    {
+      "chain_id": 324,
+      "chain": "zksync",
+      "address": "0x9f9d043fb77a194b4216784eb5985c471b979d67",
+      "canonical_source_address": null
+    }
+  ]
+}

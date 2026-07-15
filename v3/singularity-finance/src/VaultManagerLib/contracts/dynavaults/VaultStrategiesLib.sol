@@ -524,7 +524,8 @@ library VaultStrategiesLib {
 		if (_storage.tokenDebtRatio[_storage.strategies[strategy].want] == 0 || _storage.emergencyShutdown) {
 			return _storage.strategies[strategy].totalDebt;
 		}
-		uint256 strategyDebtLimit = (_storage.strategies[strategy].debtRatio * VaultTokensLib.totalTokenAssets(_storage.strategies[strategy].want)) / MAX_DEBT_RATIO;
+		uint256 strategyDebtLimit = (_storage.strategies[strategy].debtRatio * VaultTokensLib.totalTokenAssets(_storage.strategies[strategy].want)) /
+			MAX_DEBT_RATIO;
 		//
 		uint256 strategyTotalDebt = _storage.strategies[strategy].totalDebt;
 

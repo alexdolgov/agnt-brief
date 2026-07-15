@@ -1,7 +1,15 @@
 {
   "component": "vBABYToken",
   "main_contract": "vBABYToken",
+  "source_entry_count": 8,
   "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/vBABYToken\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x05134427ca04fe0712b29fb50c4d573f63e5cb22",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391805"
     }
   ]
 }

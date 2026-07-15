@@ -1,45 +1,73 @@
 # Agentic Audit Brief: SUN
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 3 (0 matched; 3 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: SUN (`sun`)
 - Website: [https://sun.io](https://sun.io)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:57.094Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16bc
-- Chains: arbitrum, bsc, ethereum
-- Contract surface: 2 unique implementations (3 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $308,617,760.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+No contract logic was present for SUN in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
+
+### Architecture
+
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/2 (0.0%)
-- Deployed-live implementations: 2 of 2 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/2
-- Verified + Unaudited implementations: 2
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 3
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -58,12 +86,9 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Safe | unknown | ethereum | n/a | [`0xa9c99a...ebeb1e`](./contracts/ethereum-1/0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e/) | ⚠️ Unaudited |
-| SafeProxy | unknown | bsc | n/a | 2 deployments: bsc [`0xa9c99a...ebeb1e`](./contracts/bsc-56/0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e/); arbitrum [`0xa9c99a...ebeb1e`](./contracts/arbitrum-42161/0xa9c99a9f70ccf9fcd23fc05f1ebdc76040ebeb1e/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,11 +110,40 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [audit-report-sun_en.pdf](https://sun.io/docs/audit-report-sun_en.pdf) | unknown | Audit | 2020-09 | stale | Direct | n/a | 0 | n/a |
-| [audit-report_en.pdf](https://sunswap.com/docs/audit-report_en.pdf) | unknown | Audit | 2020-08 | stale | Direct | n/a | 0 | n/a |
-| [Sunperp Dex - SlowMist Audit Report.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Sunperp%20Dex%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [audit-report-sun_en.pdf](https://sun.io/docs/audit-report-sun_en.pdf) | unknown | Audit | 2020-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [audit-report_en.pdf](https://sunswap.com/docs/audit-report_en.pdf) | unknown | Audit | 2020-08 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 9 | high |
+| [Sunperp Dex - SlowMist Audit Report.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Sunperp%20Dex%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2025-08 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [13943] audit-report-sun_en.pdf — no match: All four files listed in the scope section with their SHA256 hashes. Audit date is Sep.02,2020.
+- [13944] audit-report_en.pdf — no match: All contracts from project structure and code audit sections are in scope.
+- [13945] Sunperp Dex - SlowMist Audit Report.pdf — no match: Only SunperpVault is explicitly mentioned as the audited contract. Other contracts (PausableUpgradeable, etc.) are inherited dependencies, not in scope.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| audit-report-sun_en.pdf | SunStakerSimpleStandAlone | unmatched — not counted | — | listed in scope with hash | no |
+| audit-report-sun_en.pdf | SunStakerInterface | unmatched — not counted | — | listed in scope with hash | no |
+| audit-report-sun_en.pdf | SunStakerStorage | unmatched — not counted | — | listed in scope with hash | no |
+| audit-report-sun_en.pdf | SafeMath | unmatched — not counted | — | listed in scope with hash | no |
+| audit-report_en.pdf | JustswapExchange | unmatched — not counted | — | listed in project structure and code audit | no |
+| audit-report_en.pdf | JustswapFactory | unmatched — not counted | — | listed in project structure and code audit | no |
+| audit-report_en.pdf | TRC20 | unmatched — not counted | — | listed in project structure | no |
+| audit-report_en.pdf | SafeMath | unmatched — not counted | — | listed in project structure | no |
+| audit-report_en.pdf | ReentrancyGuard | unmatched — not counted | — | listed in project structure | no |
+| audit-report_en.pdf | TransferHelper | unmatched — not counted | — | listed in project structure | no |
+| audit-report_en.pdf | ITRC20 | unmatched — not counted | — | listed in project structure | no |
+| audit-report_en.pdf | IJustswapFactory | unmatched — not counted | — | listed in project structure | no |
+| audit-report_en.pdf | IJustswapExchange | unmatched — not counted | — | listed in project structure | no |
+| Sunperp Dex - SlowMist Audit Report.pdf | SunperpVault | unmatched — not counted | — | listed in scope and code overview | no |
 
 ## Coverage Gaps
 
@@ -104,7 +158,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -112,7 +166,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 14 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=3
 - Match method counts: n/a
 
 Zero-match audit list:

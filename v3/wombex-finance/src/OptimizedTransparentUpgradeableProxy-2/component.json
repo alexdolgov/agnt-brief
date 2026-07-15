@@ -1,26 +1,28 @@
 {
   "component": "OptimizedTransparentUpgradeableProxy-2",
   "main_contract": "OptimizedTransparentUpgradeableProxy",
-  "source_file_count": 8,
-  "deployment_count": 2,
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OptimizedTransparentUpgradeableProxy-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x191601af39927ba165bf89b238bfbf615bad205b",
+      "address": "0x0520451b19ad0bb00ed35ef391086a692cfc74b2",
       "is_proxy": true,
-      "implementation_address": "0x084c02db5e397e38ccd533953d7077bb1ff758c9",
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x1ee15673e07105bcf360139fa8cafebdd7754bef",
-      "is_proxy": true,
-      "implementation_address": "0x35560d75047589885f718a80ad9918b5fcd60482",
-      "liveness": "live"
+      "implementation_address": "0x342126f63e73f95ba5ed66dd162564ed881f175b",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404962"
     }
   ]
 }

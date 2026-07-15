@@ -1,7 +1,15 @@
 {
   "component": "CompoundV3MigrationBundler",
   "main_contract": "CompoundV3MigrationBundler",
-  "source_file_count": 32,
+  "source_entry_count": 28,
+  "source_file_count": 28,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CompoundV3MigrationBundler\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -18,7 +26,9 @@
       "address": "0x3a0e2e9fb9c95fbc843daf166276c90b6c479558",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402038"
     }
   ]
 }

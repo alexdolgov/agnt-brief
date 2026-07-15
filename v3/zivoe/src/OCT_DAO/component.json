@@ -1,7 +1,15 @@
 {
   "component": "OCT_DAO",
   "main_contract": "OCT_DAO",
-  "source_file_count": 24,
+  "source_entry_count": 20,
+  "source_file_count": 20,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OCT_DAO\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -14,7 +22,9 @@
       "address": "0xd702332915fddf588793d54d63872a97ad78d108",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401564"
     }
   ]
 }

@@ -1,8 +1,16 @@
 {
   "component": "ve",
   "main_contract": "ve",
+  "source_entry_count": 5,
   "source_file_count": 5,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ve\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,23 +20,9 @@
       "address": "0x7d9767e65612527beb51e0228f7ce17870c3ab3f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xa4c546c8f3ca15aa537d2ac3f62ee808d915b65b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xdff00310eeaec7a04b0808f266a57742c734808f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

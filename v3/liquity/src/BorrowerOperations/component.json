@@ -1,30 +1,28 @@
 {
   "component": "BorrowerOperations",
   "main_contract": "BorrowerOperations",
-  "source_file_count": 23,
-  "deployment_count": 4,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/trailofbits/publications/blob/master/reviews/Liquity.pdf",
-    "https://www.coinspect.com/doc/Liquity%20%2D%20Smart%20Contract%20Audit%202021%2Epdf",
-    "https://www.coinspect.com/doc/Liquity%20%2D%20Smart%20Contract%20Audit%202021.pdf"
-  ],
+  "source_entry_count": 46,
+  "source_file_count": 46,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BorrowerOperations\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x24179cd81c9e782a4096035f7ec97fb8b783e007",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x372abd1810eaf23cb9d941bbe7596dfb2c46bc65",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396035"
     },
     {
       "chain": "ethereum",
@@ -32,7 +30,9 @@
       "address": "0xa741a32f9dcfe6adba088fd0f97e90742d7d5da3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396063"
     },
     {
       "chain": "ethereum",
@@ -40,7 +40,9 @@
       "address": "0xe8119fc02953b27a1b48d2573855738485a17329",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396078"
     }
   ]
 }

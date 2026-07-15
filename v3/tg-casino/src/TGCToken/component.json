@@ -1,8 +1,16 @@
 {
   "component": "TGCToken",
   "main_contract": "TGCToken",
-  "source_file_count": 13,
-  "deployment_count": 2,
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TGCToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/Coinsult/solidity/blob/main/Coinsult_TG.Casino_0x25...b7cf_Audit.pdf"
@@ -11,18 +19,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x14bc78f0e6b9854da2a92f43a0526b31ceb547b0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
       "address": "0x25b4f5d4c314bcd5d7962734936c957b947cb7cf",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400221"
     }
   ]
 }

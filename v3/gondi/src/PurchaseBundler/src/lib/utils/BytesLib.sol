@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * @title Solidity Bytes Arrays Utils
- * @author Gon√ßalo S√° <goncalo.sa@consensys.net>
+ * @author Gonçalo Sá <goncalo.sa@consensys.net>
  *
  * @dev Bytes tightly packed arrays utility library for ethereum contracts written in Solidity.
  *      The library lets you concatenate, slice and type cast bytes arrays both in memory and storage.

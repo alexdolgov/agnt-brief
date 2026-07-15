@@ -1,22 +1,55 @@
 {
-  "schema_version": "2.0",
+  "schema_version": "3.0",
   "project_key": "blackwing",
-  "generated_at": "2026-07-03T21:05:35.827Z",
-  "pipeline_run_id": "v2-2026-07-02-1ba3fd",
+  "generated_at": "2026-07-15T18:00:00.000Z",
+  "authority": {
+    "activation_id": "scope-prod-20260715-v1",
+    "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
+    "match_closure_sha256": "8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6",
+    "review_closure_sha256": "ba1f6f291d2f91f0993306e7ee30a8c54c9b49bfb0a4757f9de2abd218c8fd1d",
+    "topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+    "topography_closure_sha256": "a8c3fc7d9dc82143989157bb6855fbb7c23dddc63b6ddb6cd2d84d8d4aa4eca2",
+    "liveness_stage_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+    "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
+    "fork_detection_run_id": "fork-structural-canonical-production-20260712",
+    "deployer_decision_run_id": "deployer-candidate-production-20260712",
+    "export_input_receipt_sha256": "7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213",
+    "canonical_network_policy": "offline_cache_only"
+  },
+  "production_state": {
+    "state_kind": "published_scope",
+    "cohort_ordinal": 853,
+    "raw_selected_contract_rows": 0,
+    "selected_audits": 0,
+    "eligible_audit_results": 6,
+    "matched_audit_results": 0,
+    "no_match_audit_results": 6
+  },
+  "missing_evidence": {
+    "audit_dates": []
+  },
+  "pipeline_run_id": "brief-generation-scope-prod-20260715-v1",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 5,
-    "unique_implementations": 5,
-    "total_deployments": 5,
+    "total_contracts": 39,
+    "total_addresses": 39,
+    "unique_implementations": 39,
+    "address_book_own_implementations": 0,
+    "address_book_context_implementations": 37,
+    "address_book_unclassified_implementations": 0,
+    "non_address_book_implementations": 2,
+    "third_party_or_infra_implementations": 0,
+    "standard_proxy_or_library_implementations": 0,
+    "address_book_proxy_deployments": 34,
+    "total_deployments": 39,
     "audited_contracts": 0,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 5,
+    "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": null,
     "total_audits": 4,
     "direct_audits": 4,
     "inherited_audits": 0,
@@ -29,6 +62,7 @@
     "website_url": "https://blackwing.fi/",
     "chains": [
       "arbitrum",
+      "bsc",
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
@@ -41,9 +75,27 @@
       "stale": 4,
       "unknown": 0
     },
-    "live_implementations": 5,
-    "live_verified_implementations": 5,
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
     "live_audited_implementations": 0,
+    "coverage_basis": "address_book_owned_live_verified_implementations",
+    "live_verified_own_confirmed": 0,
+    "live_audited_own_confirmed": 0,
+    "live_verified_needs_review": 0,
+    "live_verified_excluded_standard": 0,
+    "live_verified_excluded_third_party": 0,
+    "live_verified_excluded_inventory_pollution": 0,
+    "coverage_confidence": "low",
+    "coverage_assessment_status": "not_assessable",
+    "coverage_assessment_note": "No eligible owned address-book contracts are available for an operational-liveness denominator.",
+    "liveness_assessment_status": "not_applicable",
+    "liveness_eligible_contracts": 0,
+    "liveness_assessed_contracts": 0,
+    "liveness_unresolved_contracts": 0,
+    "liveness_run_ids": [],
+    "scope_analysis_pending_audits": 0,
+    "coverage_pct_conservative": null,
+    "live_verified_third_party_excluded": 0,
     "deploy_coverage_basis_breakdown": {
       "code_matched": 0,
       "diverged": 0,
@@ -51,25 +103,47 @@
     }
   },
   "topography": {
-    "project_purpose": "Farm. Structurally: 5 project-authored contract(s) across 2 chain(s); 2 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol forms a single structural family (Core Logic) of 5 contract(s).",
+    "project_purpose": "This brief describes the observed EVM deployment and audit surface for Blackwing. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.",
+    "relationship_narrative": "The pinned logic-topography run contains 5 contract row(s) across arbitrum, bsc, ethereum. Structural roles: 5 core. 4 row(s) use upgradeable patterns.",
     "product_family_count": 1,
     "total_contracts_indexed": 5,
-    "live_contracts": 5,
+    "live_contracts": 0,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 0,
+    "unknown_contracts": 5,
+    "deployment_units": 37,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
+  "logic_topography": {
+    "run_id": "logic-topography-normalized-candidate-20260715-v1",
+    "content_rows": 5,
+    "structural_roles": {
+      "core": 5
+    },
+    "contract_kinds": {
+      "contract": 5
+    },
+    "standards": {
+      "erc20": 2,
+      "erc165": 3,
+      "accesscontrol": 3,
+      "ownable": 1,
+      "pausable": 1
+    },
+    "frameworks": {
+      "openzeppelin": 5,
+      "openzeppelin-upgradeable": 4
+    },
+    "upgradeable_contracts": 4
+  },
   "surface_sufficiency": {
-    "unique_implementations": 5,
+    "unique_implementations": 0,
     "has_non_token_contracts": false,
-    "is_skeletal": false
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -80,11 +154,11 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x3b7df0cd432c8f3b01b969ad8d2a2a1405b1c04f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-230401",
+      "deployment_unit_proxy_count": 0,
       "name": "BlackwingNoopDeployer",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -96,12 +170,16 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x3b7df0cd432c8f3b01b969ad8d2a2a1405b1c04f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-230401",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
         }
       ],
       "audits_covering": [],
@@ -110,8 +188,92 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
       "effective_deploy_date": "2024-03-02 20:07:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3b7df0cd432c8f3b01b969ad8d2a2a1405b1c04f",
+      "deployment_unit": "unit-230424",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingNoopDeployer",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BlackwingNoopDeployer",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x3b7df0cd432c8f3b01b969ad8d2a2a1405b1c04f",
+          "deployment_unit": "unit-230424",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
       "deploy_coverage_basis": null
     },
     {
@@ -122,7 +284,7 @@
       "deployment_unit_proxy_count": null,
       "name": "BlackwingVault",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -139,7 +301,11 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
         }
       ],
       "audits_covering": [],
@@ -148,8 +314,215 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
       "effective_deploy_date": "2024-03-02 20:12:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc6ade8a68026d582ab37b879d188caf7e405dd09",
+      "deployment_unit": "unit-230411",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVault",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa92299289361fdcbb4ce9acbb512a84bd5fab37d",
+      "impl_name": "BlackwingVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc6ade8a68026d582ab37b879d188caf7e405dd09",
+          "deployment_unit": "unit-230411",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xd00789260984160a64dcf19a03896dff73bf4514",
+      "deployment_unit": "unit-230433",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVault",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xc6ade8a68026d582ab37b879d188caf7e405dd09",
+      "impl_name": "BlackwingVault",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd00789260984160a64dcf19a03896dff73bf4514",
+          "deployment_unit": "unit-230433",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xc6ade8a68026d582ab37b879d188caf7e405dd09",
+      "deployment_unit": "unit-230427",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVault",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa92299289361fdcbb4ce9acbb512a84bd5fab37d",
+      "impl_name": "BlackwingVault",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xc6ade8a68026d582ab37b879d188caf7e405dd09",
+          "deployment_unit": "unit-230427",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
       "deploy_coverage_basis": null
     },
     {
@@ -160,7 +533,7 @@
       "deployment_unit_proxy_count": null,
       "name": "BlackwingVaultToken",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -177,7 +550,11 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
         }
       ],
       "audits_covering": [],
@@ -186,20 +563,1802 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "none",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
       "effective_deploy_date": "2024-03-05 14:42:35+03",
       "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xd810362556296c834e30c9a61d8e21a5cf29eab4",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "PendlePrincipalToken",
+      "address": "0x10b939b5f820cd6687280f8d103056fb56a21517",
+      "deployment_unit": "unit-230398",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x522bf877c828977b3dfaec12b96ea50f6fa9ab0a",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x10b939b5f820cd6687280f8d103056fb56a21517",
+          "deployment_unit": "unit-230398",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x28d6f930462299c6597ac40b06f95dad3476477e",
+      "deployment_unit": "unit-230399",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x870824f50f0b18c56ebe2f3e9fa2904a4a3ba985",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x28d6f930462299c6597ac40b06f95dad3476477e",
+          "deployment_unit": "unit-230399",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x33f0d2e2b8588bcddb47728ee25c3ed6e1308cb7",
+      "deployment_unit": "unit-230400",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd0ffe6c7a7629d3376fed69865bc99f4fd92f205",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x33f0d2e2b8588bcddb47728ee25c3ed6e1308cb7",
+          "deployment_unit": "unit-230400",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x418d54b4dc069e8a3dda78df19aeb0cba11aaf9e",
+      "deployment_unit": "unit-230402",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4e20d2943b7f8c8e3dcf4910f5069726d71b190d",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x418d54b4dc069e8a3dda78df19aeb0cba11aaf9e",
+          "deployment_unit": "unit-230402",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x533a3a06680db5dafacde57691d3dd2a7f4fe332",
+      "deployment_unit": "unit-230403",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf962098614b4d33a3223b56e0f4a83144db7fba1",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x533a3a06680db5dafacde57691d3dd2a7f4fe332",
+          "deployment_unit": "unit-230403",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5635b051a97fc1cdcb480c760763fa2546298aef",
+      "deployment_unit": "unit-230404",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x69ae4230d59c6ea3f4b0ea5034de88aeeca1fd29",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5635b051a97fc1cdcb480c760763fa2546298aef",
+          "deployment_unit": "unit-230404",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x81a3b889b718be0503698e18f836bf44a0a8be22",
+      "deployment_unit": "unit-230405",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x010bd3cfe12cd3f57b7b0dcf23a7a8eb26845ec7",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x81a3b889b718be0503698e18f836bf44a0a8be22",
+          "deployment_unit": "unit-230405",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9a597101684cae355c1663ff23f20eb4fcb3a783",
+      "deployment_unit": "unit-230406",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd9beb11b967b3a96e15df83613951eae61bf8c14",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9a597101684cae355c1663ff23f20eb4fcb3a783",
+          "deployment_unit": "unit-230406",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9eede5f450e7a2b7ee632fd228bcfe322ecefcdf",
+      "deployment_unit": "unit-230407",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x79a22f422ba994297537473b9ef48faee37503fd",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9eede5f450e7a2b7ee632fd228bcfe322ecefcdf",
+          "deployment_unit": "unit-230407",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa451169fe5f41474e7a370acbfe390807008fbfe",
+      "deployment_unit": "unit-230408",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x43edc8040b3bb9aecc5871d6d42eedc2385b1533",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa451169fe5f41474e7a370acbfe390807008fbfe",
+          "deployment_unit": "unit-230408",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb943bd7da6948324363025e3fe789cd02c846c86",
+      "deployment_unit": "unit-230409",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x39c973162f2af3dd7dc8bfbecc7fdc0b8602b979",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb943bd7da6948324363025e3fe789cd02c846c86",
+          "deployment_unit": "unit-230409",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbf1253983b930fea513e2437e8d83520d9ddeaee",
+      "deployment_unit": "unit-230410",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x9a29788d21b424c5356038af5d7f04f03fd6109e",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbf1253983b930fea513e2437e8d83520d9ddeaee",
+          "deployment_unit": "unit-230410",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc7461574b8179c2ec6bdcbab7f63c30fa7d0d4bd",
+      "deployment_unit": "unit-230412",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x9a4b0d475a37a3aabb53d20c30a2d0b965cb6dbf",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc7461574b8179c2ec6bdcbab7f63c30fa7d0d4bd",
+          "deployment_unit": "unit-230412",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc7fa9aef1fe5b598e3671baa4fcab0f9024ea306",
+      "deployment_unit": "unit-230413",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x27ea06f9e5e4deb9349187a39edadef9142a46ec",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc7fa9aef1fe5b598e3671baa4fcab0f9024ea306",
+          "deployment_unit": "unit-230413",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc912b8fbc8310b714cd05263380f85834779ad7e",
+      "deployment_unit": "unit-230414",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x9cc34a8abffbb9a392fdb6c56ecab0317a64b54b",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc912b8fbc8310b714cd05263380f85834779ad7e",
+          "deployment_unit": "unit-230414",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc9fb68a2c76fdc07fb76df4ff8149f48482b1a16",
+      "deployment_unit": "unit-230415",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xce057c3305175ce440454bfe6b7a067d24211a04",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc9fb68a2c76fdc07fb76df4ff8149f48482b1a16",
+          "deployment_unit": "unit-230415",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcfd9020f41162eede87252885e2551a9377263a3",
+      "deployment_unit": "unit-230416",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb7f545a9b6a12407d1f20b09f17d8850446f1981",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcfd9020f41162eede87252885e2551a9377263a3",
+          "deployment_unit": "unit-230416",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd13dfb42bf50a9577a4b3b67ae3f41b152092f45",
+      "deployment_unit": "unit-230417",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xdcca89195a71190e9935d25a098735cf000bdaf0",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd13dfb42bf50a9577a4b3b67ae3f41b152092f45",
+          "deployment_unit": "unit-230417",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd821b54f27e4841ea75a414a0ebfec94c3f27098",
+      "deployment_unit": "unit-230419",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7e9e93f98d2da68ed553d07f1e853da178ee9f08",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd821b54f27e4841ea75a414a0ebfec94c3f27098",
+          "deployment_unit": "unit-230419",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xdcfe7cdb5b1bb7bfd4ed57b83efd49fe9cd19b2e",
+      "deployment_unit": "unit-230420",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7ae9431fa62f5be2da7dcb05dcb1fc5fb2fe7cc3",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xdcfe7cdb5b1bb7bfd4ed57b83efd49fe9cd19b2e",
+          "deployment_unit": "unit-230420",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf19e652679ab166fca767d853b1459c3922d0ae5",
+      "deployment_unit": "unit-230421",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x283d3d96b9aba96028a9a1cd6cafd4f78c003eaf",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf19e652679ab166fca767d853b1459c3922d0ae5",
+          "deployment_unit": "unit-230421",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf59ab8c53f2075339a1e31c16c227c51264e3359",
+      "deployment_unit": "unit-230422",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x032f155884dcc6b86dd70595cafdee0f7003d322",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf59ab8c53f2075339a1e31c16c227c51264e3359",
+          "deployment_unit": "unit-230422",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x1004dd758d318fa786ca13f46b2d37088cf32c12",
+      "deployment_unit": "unit-230431",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xdcfe7cdb5b1bb7bfd4ed57b83efd49fe9cd19b2e",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1004dd758d318fa786ca13f46b2d37088cf32c12",
+          "deployment_unit": "unit-230431",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xa767c903d8b801a2f3cc451134ead2d7903c0350",
+      "deployment_unit": "unit-230432",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb943bd7da6948324363025e3fe789cd02c846c86",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xa767c903d8b801a2f3cc451134ead2d7903c0350",
+          "deployment_unit": "unit-230432",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x27ea06f9e5e4deb9349187a39edadef9142a46ec",
+      "deployment_unit": "unit-230423",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa5e5c53edefe4ff90cf9f19edac730fff2b7ca27",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x27ea06f9e5e4deb9349187a39edadef9142a46ec",
+          "deployment_unit": "unit-230423",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x7ae9431fa62f5be2da7dcb05dcb1fc5fb2fe7cc3",
+      "deployment_unit": "unit-230425",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd1783ebb2d47ae0b24a66ebac28a7e160da2abeb",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x7ae9431fa62f5be2da7dcb05dcb1fc5fb2fe7cc3",
+          "deployment_unit": "unit-230425",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xb943bd7da6948324363025e3fe789cd02c846c86",
+      "deployment_unit": "unit-230426",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x39c973162f2af3dd7dc8bfbecc7fdc0b8602b979",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb943bd7da6948324363025e3fe789cd02c846c86",
+          "deployment_unit": "unit-230426",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xe8330250d7b996cde78bce829779005e35e48218",
+      "deployment_unit": "unit-230430",
+      "deployment_unit_proxy_count": 0,
+      "name": "BlackwingVaultToken",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf214afcb3d138bf9e96153dd76c89b7d025f2e80",
+      "impl_name": "BlackwingVaultToken",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xe8330250d7b996cde78bce829779005e35e48218",
+          "deployment_unit": "unit-230430",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd810362556296c834e30c9a61d8e21a5cf29eab4",
+      "deployment_unit": "unit-230418",
+      "deployment_unit_proxy_count": 0,
+      "name": "PendlePrincipalToken",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Pendle",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -210,12 +2369,16 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xd810362556296c834e30c9a61d8e21a5cf29eab4",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-230418",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
         }
       ],
       "audits_covering": [],
@@ -224,7 +2387,28 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
       "effective_deploy_date": "2024-04-23 14:19:23+03",
       "deploy_coverage_basis": null
     },
@@ -232,12 +2416,12 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x761b2ccdd37ef1cac84f8728687a5248c9efb78f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-230434",
+      "deployment_unit_proxy_count": 1,
       "name": "TransparentUpgradeableProxy",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -248,12 +2432,16 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x761b2ccdd37ef1cac84f8728687a5248c9efb78f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-230434",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
         }
       ],
       "audits_covering": [],
@@ -262,8 +2450,155 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
-      "is_live": true,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
       "effective_deploy_date": "2024-05-08 05:57:26+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xd18c3fc06b42f053ed485f233eb90b06a4f3d778",
+      "deployment_unit": "unit-230428",
+      "deployment_unit_proxy_count": 0,
+      "name": "TransparentUpgradeableProxy",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x9db97df1e818cc4ada61daf45e1717d1359e07ba",
+      "impl_name": "TransparentUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd18c3fc06b42f053ed485f233eb90b06a4f3d778",
+          "deployment_unit": "unit-230428",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xd2e23b76b44d568b77d65b64a2beff8439e437b6",
+      "deployment_unit": "unit-230429",
+      "deployment_unit_proxy_count": 0,
+      "name": "TransparentUpgradeableProxy",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Blackwing",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7273f0ecd087d1193c74cd121a62e19ff95ce7e4",
+      "impl_name": "TransparentUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xd2e23b76b44d568b77d65b64a2beff8439e437b6",
+          "deployment_unit": "unit-230429",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:58:32.335+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; address_book_entry_scope_unclassified; retained_scope_excluded_inventory.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "address_book_entry_scope_unclassified",
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
       "deploy_coverage_basis": null
     }
   ],
@@ -284,13 +2619,65 @@
       "inheritance_mode": null,
       "inheritance_scope": [],
       "scope_match": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BlackwingVault",
+        "VaultToken"
+      ],
       "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
+      "scope_note": "The scope section describes the program as 'blackwing-EVM-contracts' but does not list individual contract files. Contract names were inferred from findings: BlackwingVault (main contract) and VaultToken (token contract). No other contracts explicitly named.",
+      "extraction_confidence": "medium",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "The scope section describes the program as 'blackwing-EVM-contracts' but does not list individual contract files. Contract names were inferred from findings: BlackwingVault (main contract) and VaultToken (token contract). No other contracts explicitly named.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 2,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 2,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "BlackwingVault",
+          "normalized_name": "blackwingvault",
+          "file_path": "_evm/launch_vault/vault.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Referenced in findings OS-FRM-ADV-00 and OS-FRM-ADV-01 as the contract containing deposit and withdraw functions.",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "VaultToken",
+          "normalized_name": "vaulttoken",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Mentioned in general finding OS-FRM-SUG-00 as a token created within the system.",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 21346,
@@ -308,13 +2695,90 @@
       "inheritance_mode": null,
       "inheritance_scope": [],
       "scope_match": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "aave_deployer.sol",
+        "vault.sol",
+        "vault_token.sol"
+      ],
       "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
+      "scope_note": "Scope section lists three Solidity files: vault.sol, vault_token.sol, and deployer/aave_deployer.sol. Audit date is February 29, 2024 from cover page.",
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Scope section lists three Solidity files: vault.sol, vault_token.sol, and deployer/aave_deployer.sol. Audit date is February 29, 2024 from cover page.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 3,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 3,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "vault.sol",
+          "normalized_name": "vault.sol",
+          "file_path": "vault.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope section",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "vault_token.sol",
+          "normalized_name": "vault_token.sol",
+          "file_path": "vault_token.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope section",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "aave_deployer.sol",
+          "normalized_name": "aave_deployer.sol",
+          "file_path": "deployer/aave_deployer.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope section",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ],
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 21346,
+          "report_url": "https://raw.githubusercontent.com/ferumlabs/public-contracts/main/audits/zellic-evm-vault.pdf"
+        },
+        {
+          "audit_id": 26543,
+          "report_url": "https://github.com/ferumlabs/public-contracts/blob/main/audits/zellic-evm-vault.pdf"
+        }
+      ]
     },
     {
       "audit_id": 21347,
@@ -332,13 +2796,65 @@
       "inheritance_mode": null,
       "inheritance_scope": [],
       "scope_match": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BlackwingVault",
+        "VaultToken"
+      ],
       "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
+      "scope_note": "Scope section describes the program 'blackwing-EVM-contracts' but does not list individual contract files. Contract names extracted from findings: BlackwingVault and VaultToken.",
+      "extraction_confidence": "medium",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Scope section describes the program 'blackwing-EVM-contracts' but does not list individual contract files. Contract names extracted from findings: BlackwingVault and VaultToken.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 2,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 2,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "BlackwingVault",
+          "normalized_name": "blackwingvault",
+          "file_path": "_evm/launch_vault/vault.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings as containing deposit and withdraw functions",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "VaultToken",
+          "normalized_name": "vaulttoken",
+          "file_path": "_evm/launch_vault/vault.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings as created within BlackwingVault",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 21348,
@@ -356,26 +2872,106 @@
       "inheritance_mode": null,
       "inheritance_scope": [],
       "scope_match": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "aave_deployer.sol",
+        "vault.sol",
+        "vault_token.sol"
+      ],
       "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
+      "scope_note": "Scope section lists three Solidity files: vault.sol, vault_token.sol, and deployer/aave_deployer.sol. Audit date is February 29, 2024 from cover page.",
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Scope section lists three Solidity files: vault.sol, vault_token.sol, and deployer/aave_deployer.sol. Audit date is February 29, 2024 from cover page.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 3,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 3,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "vault.sol",
+          "normalized_name": "vault.sol",
+          "file_path": "vault.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope section",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "vault_token.sol",
+          "normalized_name": "vault_token.sol",
+          "file_path": "vault_token.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope section",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "aave_deployer.sol",
+          "normalized_name": "aave_deployer.sol",
+          "file_path": "deployer/aave_deployer.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope section",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ],
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 21348,
+          "report_url": "https://raw.githubusercontent.com/ferumlabs/evm-contracts/main/audits/zellic.pdf"
+        },
+        {
+          "audit_id": 26544,
+          "report_url": "https://github.com/ferumlabs/evm-contracts/blob/main/audits/zellic.pdf"
+        }
+      ]
     }
   ],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
-    "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 5
+    "native": 3,
+    "upstream": 1,
+    "standard_library": 1,
+    "needs_review": 34
   },
   "scope_matching_notes": {
     "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "extraction_confidence_counts": {
+      "high": 2,
+      "medium": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -396,7 +2992,53 @@
         "report_name": "zellic.pdf"
       }
     ],
-    "inherited_remapped_matches": []
+    "audit_scope_outcomes": [
+      {
+        "audit_id": 21345,
+        "report_name": "ottersec-evm-vault.pdf",
+        "status": "no_match",
+        "reason": "The scope section describes the program as 'blackwing-EVM-contracts' but does not list individual contract files. Contract names were inferred from findings: BlackwingVault (main contract) and VaultToken (token contract). No other contracts explicitly named.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 21346,
+        "report_name": "zellic-evm-vault.pdf",
+        "status": "no_match",
+        "reason": "Scope section lists three Solidity files: vault.sol, vault_token.sol, and deployer/aave_deployer.sol. Audit date is February 29, 2024 from cover page.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 21347,
+        "report_name": "ottersec.pdf",
+        "status": "no_match",
+        "reason": "Scope section describes the program 'blackwing-EVM-contracts' but does not list individual contract files. Contract names extracted from findings: BlackwingVault and VaultToken.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 21348,
+        "report_name": "zellic.pdf",
+        "status": "no_match",
+        "reason": "Scope section lists three Solidity files: vault.sol, vault_token.sol, and deployer/aave_deployer.sol. Audit date is February 29, 2024 from cover page.",
+        "operator_review": null
+      }
+    ],
+    "inherited_remapped_matches": [],
+    "analysis_disposition_counts": {
+      "extracted_references": 10,
+      "matched_own": 0,
+      "matched_own_proxies": 0,
+      "matched_own_live": 0,
+      "matched_own_inactive": 0,
+      "matched_own_uninitialized": 0,
+      "matched_own_liveness_unknown": 0,
+      "matched_third_party_or_infra": 0,
+      "matched_excluded_inventory": 0,
+      "matched_unclassified_address_book": 0,
+      "ambiguous": 0,
+      "unmatched": 10,
+      "accepted_scope_rows": 0
+    }
   },
-  "active_bug_bounty": null
+  "active_bug_bounty": null,
+  "out_of_scope": null
 }

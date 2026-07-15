@@ -1,18 +1,30 @@
 {
   "component": "VeToken",
   "main_contract": "VeToken",
-  "source_file_count": 5,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VeToken\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://3038127767-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FHdS59PJdwI8kEK3vLZuH%2Fuploads%2FcuHasqCbUeVSTz53smRl%2FPeckShield-Audit-Report-ExtraFi-v1.0.pdf"
+  ],
   "addresses": [
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x292a1f318b1ab0c7701f30f42603adc7f95f5e66",
+      "address": "0xe0bec4f45aef64cec9dcb9010d4beffb13e91466",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394446"
     }
   ]
 }

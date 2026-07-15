@@ -1,7 +1,15 @@
 {
   "component": "Amp",
   "main_contract": "Amp",
+  "source_entry_count": 4,
   "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Amp\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -15,7 +23,9 @@
       "address": "0xff20817765cb7f73d4bde2e66e067e58d11095c2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394457"
     }
   ]
 }

@@ -1,0 +1,33 @@
+{
+  "component": "OrigamiDelegated4626Vault",
+  "main_contract": "OrigamiDelegated4626Vault",
+  "source_entry_count": 33,
+  "source_file_count": 33,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OrigamiDelegated4626Vault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/SKY%2B/SKY%2B-jacopod.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/morpho-auto-compounder/morpho-auto-compounder-jacopod.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/oriBGT/oriBGT-audit-jacopod.pdf",
+    "https://github.com/TempleDAO/origami-public/blob/main/audits/oriBGT/oriBGT-audit-pyro.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x07c5500359161b81eb0dfff83097d5025d3cf5a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403604"
+    }
+  ]
+}

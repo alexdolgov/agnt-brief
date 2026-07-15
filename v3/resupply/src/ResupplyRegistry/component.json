@@ -1,14 +1,18 @@
 {
   "component": "ResupplyRegistry",
   "main_contract": "ResupplyRegistry",
+  "source_entry_count": 21,
   "source_file_count": 21,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ResupplyRegistry\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/resupplyfi/resupply/blob/main/audits/ChainSecurity_Resupply_Resupply_audit.pdf",
-    "https://github.com/resupplyfi/resupply/blob/main/audits/ChainSecurity_Resupply_audit_v2.pdf",
-    "https://github.com/resupplyfi/resupply/blob/main/audits/rsup_yaudit_report.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -16,7 +20,9 @@
       "address": "0x10101010e0c3171d894b71b3400668af311e7d94",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,26 +1,30 @@
 {
   "component": "DiamondLoupeFacet",
   "main_contract": "DiamondLoupeFacet",
-  "source_file_count": 27,
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "source_entry_count": 22,
+  "source_file_count": 22,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DiamondLoupeFacet\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/Smart_Contract_Audit_DeltaPrime_Protocol_04112022.pdf"
+  ],
   "addresses": [
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x5a501b5698eade321b3553ea633046c6a91e3763",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0x69bec70a49728544fc402ebb631fb5b0b172b23f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393618"
     }
   ]
 }

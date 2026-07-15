@@ -1,0 +1,30 @@
+{
+  "component": "OlympusMinter",
+  "main_contract": "OlympusMinter",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OlympusMinter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://web.archive.org/web/20231210045634/https://hackmd.io/@12og4u7y8i/Sk56otcBs"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x623164a9ee2556d524b08f34f1d2389d7b4e1a1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402755"
+    }
+  ]
+}

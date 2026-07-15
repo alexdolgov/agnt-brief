@@ -1,7 +1,15 @@
 {
   "component": "USDu",
   "main_contract": "USDu",
+  "source_entry_count": 21,
   "source_file_count": 21,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/USDu\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -17,7 +25,9 @@
       "address": "0xea953ea6634d55dac6697c436b1e81a679db5882",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400520"
     }
   ]
 }

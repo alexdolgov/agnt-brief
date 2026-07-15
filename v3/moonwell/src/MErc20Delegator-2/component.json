@@ -1,132 +1,38 @@
 {
   "component": "MErc20Delegator-2",
   "main_contract": "MErc20Delegator",
-  "source_file_count": 5,
-  "deployment_count": 15,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf"
-  ],
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MErc20Delegator-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0x04e6322d196e0e4ccbb2610dd8b8f2871e160bd7",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xed37cd7872c6fe4020982d35104be7919b8f8b33",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396960"
     },
     {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0x1c478c3d21e4f1d69c4b1bab8c9ac09a02eb3eb2",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd64bcb70c613a6d1f4d7d57ba64bb4a0767a9682",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0x21d851585840942b0ef9f20d842c00c5f3735eaf",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0x2be2e230e89c59c8e20e633c524ad2de246e7370",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0x314d8ba8292fd23659fde5cf02822a6d95bbb5de",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0x3fe782c2fe7668c2f1eb313acf3022a31fead6b2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0x64a815090ca8d4afa53ad2e8ff574c52e1ff199e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0x69ff8b55d6f08e2266feb10092ace88217e0668e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0x7a1bf5d21e5b51f3e6ec4fd578a2f98f979b1d1b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0x8618f8302a189cda1e95be5dae406c71d32f9f36",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0x9f3d5a5308b8c2b62ef13b5e96098557b77bb49b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0x9f785f479f620c2ae8ba180a1ca0e4319ba67ede",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0xa27aba7f954bb829f5b7a978a75c3a9789121b2d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0xcc56c39ff32647dd485f3a5ec018a1004432964f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0xfbb7fe66053634dc52a956e4a395fa6159a1fb38",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397052"
     }
   ]
 }

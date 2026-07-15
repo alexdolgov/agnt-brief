@@ -1,0 +1,48 @@
+{
+  "component": "AerodromeStandardModulePrivateFees",
+  "main_contract": "AerodromeStandardModulePrivateFees",
+  "source_entry_count": 35,
+  "source_file_count": 35,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AerodromeStandardModulePrivateFees\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x06baae482698c8995f7b59f51e3ba021bf7434ee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391323"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1a52733e4f0af7d01d0927f8d5c45e673b0c33aa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391325"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe7d57e70f7615eda3d3f3a998f316d303a2b2f43",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391336"
+    }
+  ]
+}

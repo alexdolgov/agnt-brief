@@ -1,7 +1,15 @@
 {
   "component": "Market-3",
   "main_contract": "Market",
-  "source_file_count": 6,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Market-3\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -9,18 +17,22 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x3363ad5780316fd5180bb9f34297b533fb9cb335",
+      "address": "0x63fad99705a255fe2d500e498dbb3a9ae5aa1ee8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395437"
     },
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x5caede3ad9e7c64ab512a3d774768fd8dc06d717",
+      "address": "0x79ef6d28c41e47a588e2f2ffb4140eb6d952aec4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395438"
     }
   ]
 }

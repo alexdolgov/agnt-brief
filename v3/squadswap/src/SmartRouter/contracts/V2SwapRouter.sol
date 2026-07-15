@@ -12,6 +12,8 @@ import './base/PeripheryPaymentsWithFeeExtended.sol';
 import './libraries/Constants.sol';
 import './libraries/SmartRouterHelper.sol';
 
+import "./interfaces/ISquadswapPair.sol";
+
 /// @title SquadSwap V2 Swap Router
 /// @notice Router for stateless execution of swaps against SquadSwap V2
 abstract contract V2SwapRouter is IV2SwapRouter, ImmutableState, PeripheryPaymentsWithFeeExtended, ReentrancyGuard {
@@ -24,16 +26,16 @@ abstract contract V2SwapRouter is IV2SwapRouter, ImmutableState, PeripheryPaymen
         for (uint256 i; i < path.length - 1; i++) {
             (address input, address output) = (path[i], path[i + 1]);
             (address token0, ) = SmartRouterHelper.sortTokens(input, output);
-            IUniswapV2Pair pair = IUniswapV2Pair(SmartRouterHelper.pairFor(factoryV2, input, output));
+            ISquadswapPair pair = ISquadswapPair(SmartRouterHelper.pairFor(factoryV2, input, output));
             uint256 amountInput;
             uint256 amountOutput;
             // scope to avoid stack too deep errors
             {
-                (uint256 reserve0, uint256 reserve1, ) = pair.getReserves();
+                (uint256 reserve0, uint256 reserve1, , uint256 fee) = pair.getReserves();
                 (uint256 reserveInput, uint256 reserveOutput) =
                     input == token0 ? (reserve0, reserve1) : (reserve1, reserve0);
                 amountInput = IERC20(input).balanceOf(address(pair)).sub(reserveInput);
-                amountOutput = SmartRouterHelper.getAmountOut(amountInput, reserveInput, reserveOutput);
+                amountOutput = SmartRouterHelper.getAmountOut(amountInput, reserveInput, reserveOutput, fee);
             }
             (uint256 amount0Out, uint256 amount1Out) =
                 input == token0 ? (uint256(0), amountOutput) : (amountOutput, uint256(0));

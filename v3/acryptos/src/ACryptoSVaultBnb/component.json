@@ -1,11 +1,18 @@
 {
   "component": "ACryptoSVaultBnb",
   "main_contract": "ACryptoSVaultBnb",
+  "source_entry_count": 4,
   "source_file_count": 4,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ACryptoSVaultBnb\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
-    "https://github.com/acryptos/acryptos-protocol/blob/main/audits/20210331-Hacken-Complete.pdf",
     "https://github.com/acryptos/acryptos-protocol/blob/main/audits/20211116-Hacken-Review.pdf"
   ],
   "addresses": [
@@ -15,23 +22,9 @@
       "address": "0x10137a821fd5aea332f682f4cbafc839e4373104",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x6fe6762e9314ad80803fef083c8bb16af435a628",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x9978992538bd3e70c1aff101dedd50e9e27cfbde",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390680"
     }
   ]
 }

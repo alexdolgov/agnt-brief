@@ -1,10 +1,22 @@
 {
   "component": "TokensFactory",
   "main_contract": "TokensFactory",
-  "source_file_count": 54,
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "source_entry_count": 51,
+  "source_file_count": 51,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TokensFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/OmegaAudits/audits/blob/main/202501-Altitude-parallel-farming.pdf",
+    "https://oxor-io.github.io/public_audits/Altitude/Altitude-Audit-Report.pdf",
+    "https://oxor-io.github.io/public_audits/Altitude/Altitude-v2-Audit-Report.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,15 +24,9 @@
       "address": "0x3c456b6fa3872e5c77eb77a84acc7cc39d7a11f9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x5c792d8e434b81c37fb8d871b4cae0001a885dc6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390836"
     }
   ]
 }

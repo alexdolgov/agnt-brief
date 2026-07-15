@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-// Last deployed from commit: 8c36e18a206b9e6649c00da51c54b92171ce3413;
+// Last deployed from commit: b75e073cf23a3eb181f55a89a800ef040b7ba456;
 pragma solidity 0.8.17;
 
 import "../../interfaces/ITokenManager.sol";
@@ -16,7 +16,7 @@ library DeploymentConstants {
     // Used for LiquidationBonus calculations
     uint256 private constant _PERCENTAGE_PRECISION = 1000;
 
-    bytes32 private constant _NATIVE_TOKEN_SYMBOL = 'ETH';
+    bytes32 private constant _NATIVE_TOKEN_SYMBOL = 'ARBI';
 
     address private constant _NATIVE_ADDRESS = 0x82aF49447D8a07e3bd95BD0d56f35241523fBab1;
 
@@ -27,10 +27,6 @@ library DeploymentConstants {
     address private constant _TOKEN_MANAGER_ADDRESS = 0x0a0D954d4b0F0b47a5990C0abd179A90fF74E255;
 
     address private constant _ADDRESS_PROVIDER = 0x6Aa0Fe94731aDD419897f5783712eBc13E8F3982;
-
-    address private constant _FEES_TREASURY_ADDREESS = 0x764a9756994f4E6cd9358a6FcD924d566fC2e666;
-
-    address private constant _STABILITY_POOL_ADDREESS = 0x6B9836D18978a2e865A935F12F4f958317DA4619;
 
     //implementation-specific
 
@@ -64,14 +60,6 @@ library DeploymentConstants {
 
     function getAddressProvider() internal pure returns (address) {
         return _ADDRESS_PROVIDER;
-    }
-
-    function getTreasuryAddress() internal pure returns (address) {
-        return _FEES_TREASURY_ADDREESS;
-    }
-
-    function getStabilityPoolAddress() internal pure returns (address) {
-        return _STABILITY_POOL_ADDREESS;
     }
 
     /**

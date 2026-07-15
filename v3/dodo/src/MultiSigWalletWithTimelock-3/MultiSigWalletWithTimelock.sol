@@ -1,8 +1,6 @@
-/**
- *Submitted for verification at hecoinfo.com on 2021-02-24
-*/
+// SPDX-License-Identifier: MIT
 
-pragma solidity 0.5.8;
+pragma solidity 0.8.16;
 
 contract MultiSigWalletWithTimelock {
 
@@ -100,7 +98,14 @@ contract MultiSigWalletWithTimelock {
     }
 
     /** @dev Fallback function allows to deposit ether. */
-    function() external payable {
+    receive() external payable {
+        if (msg.value > 0) {
+            emit Deposit(msg.sender, msg.value);
+        }
+    }
+
+    /** @dev Fallback function allows to deposit ether. */
+    fallback() external payable {
         if (msg.value > 0) {
             emit Deposit(msg.sender, msg.value);
         }
@@ -111,7 +116,6 @@ contract MultiSigWalletWithTimelock {
       * @param _required Number of required confirmations.
       */
     constructor(address[] memory _owners, uint256 _required)
-        public
         validRequirement(_owners.length, _required)
     {
         for (uint256 i = 0; i < _owners.length; i++) {
@@ -173,7 +177,7 @@ contract MultiSigWalletWithTimelock {
             }
         }
 
-        owners.length -= 1;
+        owners.pop();
 
         if (required > owners.length) {
             changeRequirement(owners.length);
@@ -232,7 +236,7 @@ contract MultiSigWalletWithTimelock {
       * @param destination Transaction target address.
       * @param value Transaction ether value.
       * @param data Transaction data payload.
-      * @return Returns transaction ID.
+      * @return transactionId Returns transaction ID.
       */
     function submitTransaction(address destination, uint256 value, bytes calldata data)
         external
@@ -325,12 +329,13 @@ contract MultiSigWalletWithTimelock {
         if (isConfirmed(transactionId)) {
             Transaction storage transaction = transactions[transactionId];
             transaction.executed = true;
-            (bool success, ) = transaction.destination.call.value(transaction.value)(transaction.data);
+            (bool success, ) = transaction.destination.call{value:transaction.value}(transaction.data);
             if (success)
                 emit Execution(transactionId);
             else {
                 emit ExecutionFailure(transactionId);
                 transaction.executed = false;
+                revert("TRANSACTION FAIL");
             }
         }
     }
@@ -363,7 +368,7 @@ contract MultiSigWalletWithTimelock {
 
     /** @dev Returns number of confirmations of a transaction.
       * @param transactionId Transaction ID.
-      * @return Number of confirmations.
+      * @return count Number of confirmations.
       */
     function getConfirmationCount(uint256 transactionId)
         external
@@ -380,7 +385,7 @@ contract MultiSigWalletWithTimelock {
     /** @dev Returns total number of transactions after filers are applied.
       * @param pending Include pending transactions.
       * @param executed Include executed transactions.
-      * @return Total number of transactions after filters are applied.
+      * @return count Total number of transactions after filters are applied.
       */
     function getTransactionCount(bool pending, bool executed)
         external
@@ -407,7 +412,7 @@ contract MultiSigWalletWithTimelock {
 
     /** @dev Returns array with owner addresses, which confirmed transaction.
       * @param transactionId Transaction ID.
-      * @return Returns array of owner addresses.
+      * @return _confirmations Returns array of owner addresses.
       */
     function getConfirmations(uint256 transactionId)
         external

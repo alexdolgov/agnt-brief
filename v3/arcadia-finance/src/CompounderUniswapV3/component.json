@@ -1,12 +1,18 @@
 {
   "component": "CompounderUniswapV3",
   "main_contract": "CompounderUniswapV3",
+  "source_entry_count": 33,
   "source_file_count": 33,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CompounderUniswapV3\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/arcadia-finance/arcadia-finance-audits/blob/main/audits-v2/2026-01%20Sherlock.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "optimism",
@@ -14,7 +20,9 @@
       "address": "0x02e1fa043214e51edf1f0478c6d0d3d5658a2dc3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391163"
     }
   ]
 }

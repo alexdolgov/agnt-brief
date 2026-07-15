@@ -1,26 +1,28 @@
 {
   "component": "LIQStakingDistributor",
   "main_contract": "LIQStakingDistributor",
-  "source_file_count": 17,
-  "deployment_count": 2,
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LIQStakingDistributor\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x4b591f40c9e2a8e11495837386e1c03c8605be16",
+      "address": "0xb81efc6be6622bf4086566210a6ad134cd0cdda4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xe84945285b92e0afc6e61acb1f2c45d0699f8e47",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395187"
     }
   ]
 }

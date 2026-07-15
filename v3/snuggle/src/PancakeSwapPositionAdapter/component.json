@@ -1,8 +1,16 @@
 {
   "component": "PancakeSwapPositionAdapter",
   "main_contract": "PancakeSwapPositionAdapter",
+  "source_entry_count": 11,
   "source_file_count": 11,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PancakeSwapPositionAdapter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://www.snuggle.fi/security"
@@ -14,15 +22,9 @@
       "address": "0x0c0ba0b81a4ac60321c2414bdcef24c5851b39e5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xad35ec92507566fc19581ab43a8ec9c6edbf0a71",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399048"
     }
   ]
 }

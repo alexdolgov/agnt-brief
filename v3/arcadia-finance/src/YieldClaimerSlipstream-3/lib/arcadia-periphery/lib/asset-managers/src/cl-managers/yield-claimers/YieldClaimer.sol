@@ -2,7 +2,7 @@
  * Created by Pragma Labs
  * SPDX-License-Identifier: BUSL-1.1
  */
-pragma solidity ^0.8.34;
+pragma solidity ^0.8.0;
 
 import { AbstractBase } from "../base/AbstractBase.sol";
 import { ActionData, IActionBase } from "../../../lib/accounts-v2/src/interfaces/IActionBase.sol";
@@ -27,13 +27,13 @@ abstract contract YieldClaimer is IActionBase, AbstractBase, Guardian {
     ////////////////////////////////////////////////////////////// */
 
     // The contract address of the Arcadia Factory.
-    IArcadiaFactory internal immutable ARCADIA_FACTORY;
+    IArcadiaFactory public immutable ARCADIA_FACTORY;
 
     /* //////////////////////////////////////////////////////////////
                                 STORAGE
     ////////////////////////////////////////////////////////////// */
 
-    // The Account to claim the yield for, used as transient storage.
+    // The Account to rebalance the fees for, used as transient storage.
     address internal account;
 
     // A mapping from account to account specific information.
@@ -164,8 +164,6 @@ abstract contract YieldClaimer is IActionBase, AbstractBase, Guardian {
         if (maxClaimFee > 1e18) revert InvalidValue();
 
         accountToInitiator[accountOwner][account_] = initiator;
-        // unsafe cast: maxClaimFee <= 1e18 < type(uint64).max.
-        // forge-lint: disable-next-line(unsafe-typecast)
         accountInfo[account_] = AccountInfo({ feeRecipient: feeRecipient, maxClaimFee: uint64(maxClaimFee) });
         metaData[account_] = metaData_;
 

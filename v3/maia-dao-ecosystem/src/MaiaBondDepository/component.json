@@ -1,50 +1,28 @@
 {
   "component": "MaiaBondDepository",
   "main_contract": "MaiaBondDepository",
-  "source_file_count": 5,
-  "deployment_count": 14,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MaiaBondDepository\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-1088",
       "chain_id": 1088,
-      "address": "0x3212c7f0d2f07707786dfe5e0a64aeffb4f072ac",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x3245f49dda5e717a69356e53fd407060e34dae69",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x5c89dcfb4b319b3878e2cfbffea75e681c24c2b6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x8037603aa8a69b2b02615048c06f600255c7f30a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
       "address": "0x83de931543ba68fe9c2684ab350985f2c10e501a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "chain-1088",
@@ -52,7 +30,9 @@
       "address": "0x89fef02c281cd1dcb4371dc9a32931e3dc8777c9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "chain-1088",
@@ -60,47 +40,9 @@
       "address": "0xa67af8fc9ba71d6d031488a0465df2480b2b853c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xb9791d1d5c33f79ca97f72fcd4c707da589ee28f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xd1395b72350ec98887dc3d9b388fcc92fb778183",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xd211a32199f9a36a9a75a506ee17c4808f9353f1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xddc272987d8db3584e48ef74761afaf5ecaa5297",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xec69ecd8d6f1301e4bd9de5a4e91364b01cdc963",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "chain-1088",
@@ -108,15 +50,9 @@
       "address": "0xee67fea89b6e165854fb8bcce0daee0e3a6cf980",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xf4d84c68c8a02530deddf5b67134b4d6f7c41a76",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

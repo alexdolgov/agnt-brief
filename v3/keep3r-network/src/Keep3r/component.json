@@ -1,8 +1,16 @@
 {
   "component": "Keep3r",
   "main_contract": "Keep3r",
-  "source_file_count": 1,
-  "deployment_count": 2,
+  "source_entry_count": 39,
+  "source_file_count": 39,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Keep3r\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/keep3r-network/keep3r.network/blob/master/audits/PeckShield-Audit-Report-Keep3r-v1.0.pdf"
@@ -11,18 +19,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x9696fea1121c938c861b94fcbee98d971de54b32",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
       "address": "0xeb02addcfd8b773a5ffa6b9d1fe99c566f8c44cc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395785"
     }
   ]
 }

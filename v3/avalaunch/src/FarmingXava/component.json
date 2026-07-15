@@ -1,13 +1,18 @@
 {
   "component": "FarmingXava",
   "main_contract": "FarmingXava",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://avalaunch.app/assets/audits/2022_03_Avalaunch_XAVA_Protocol_Audit.pdf",
-    "https://avalaunch.app/assets/audits/PRE_Avalaunch_Xava_Protocol_31_05_2021.pdf"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FarmingXava\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "avalanche",
@@ -15,15 +20,9 @@
       "address": "0x6e125b68f0f1963b09add1b755049e66f53cc1ea",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xe82aae7fc62547bdfc36689d0a83de36ff034a68",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

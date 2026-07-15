@@ -20,17 +20,6 @@ contract SolvencyMethods is DiamondHelper, ProxyConnector {
         );
     }
 
-    // This function executes SolvencyFacetProd.getDebtPayable()
-    function _getDebtPayable() internal virtual returns (uint256 debt) {
-        debt = abi.decode(
-            proxyDelegateCalldata(
-                DiamondHelper._getFacetAddress(SolvencyFacetProd.getDebtPayable.selector),
-                abi.encodeWithSelector(SolvencyFacetProd.getDebtPayable.selector)
-            ),
-            (uint256)
-        );
-    }
-
     // This function executes SolvencyFacetProd.getDebtWithPrices()
     function _getDebtWithPrices(SolvencyFacetProd.AssetPrice[] memory debtAssetsPrices) internal virtual returns (uint256 debt) {
         debt = abi.decode(
@@ -59,17 +48,6 @@ contract SolvencyMethods is DiamondHelper, ProxyConnector {
             proxyDelegateCalldata(
                 DiamondHelper._getFacetAddress(SolvencyFacetProd.isSolvent.selector),
                 abi.encodeWithSelector(SolvencyFacetProd.isSolvent.selector)
-            ),
-            (bool)
-        );
-    }
-
-    // This function executes SolvencyFacetProd.isSolventPayable()
-    function _isSolventPayable() internal virtual returns (bool solvent){
-        solvent = abi.decode(
-            proxyDelegateCalldata(
-                DiamondHelper._getFacetAddress(SolvencyFacetProd.isSolventPayable.selector),
-                abi.encodeWithSelector(SolvencyFacetProd.isSolventPayable.selector)
             ),
             (bool)
         );
@@ -108,17 +86,6 @@ contract SolvencyMethods is DiamondHelper, ProxyConnector {
         );
     }
 
-    // This function executes SolvencyFacetProd.getThresholdWeightedValuePayable()
-    function _getThresholdWeightedValuePayable() public virtual returns (uint256 twv) {
-        twv = abi.decode(
-            proxyDelegateCalldata(
-                DiamondHelper._getFacetAddress(SolvencyFacetProd.getThresholdWeightedValuePayable.selector),
-                abi.encodeWithSelector(SolvencyFacetProd.getThresholdWeightedValuePayable.selector)
-            ),
-            (uint256)
-        );
-    }
-
     // This function executes SolvencyFacetProd.getHealthRatioWithPrices()
     function _getHealthRatioWithPrices(SolvencyFacetProd.CachedPrices memory cachedPrices) public virtual returns (uint256 health) {
         health = abi.decode(
@@ -142,9 +109,9 @@ contract SolvencyMethods is DiamondHelper, ProxyConnector {
     }
 
     // This function executes SolvencyFacetProd.getPrices()
-    function getPrices(bytes32[] memory symbols) internal view virtual returns (uint256[] memory prices) {
+    function getPrices(bytes32[] memory symbols) public virtual returns (uint256[] memory prices) {
         prices = abi.decode(
-            proxyCalldataView(
+            proxyDelegateCalldata(
                 DiamondHelper._getFacetAddress(SolvencyFacetProd.getPrices.selector),
                 abi.encodeWithSelector(SolvencyFacetProd.getPrices.selector, symbols)
             ),
@@ -207,10 +174,10 @@ contract SolvencyMethods is DiamondHelper, ProxyConnector {
         );
     }
 
-    // This function executes SolvencyFacetProd.getPrice()
-    function getPrice(bytes32 symbol) public view virtual returns (uint256 price) {
+    // This function executes SolvencyFacetProd.getPrices()
+    function getPrice(bytes32 symbol) public virtual returns (uint256 price) {
         price = abi.decode(
-            proxyCalldataView(
+            proxyDelegateCalldata(
                 DiamondHelper._getFacetAddress(SolvencyFacetProd.getPrice.selector),
                 abi.encodeWithSelector(SolvencyFacetProd.getPrice.selector, symbol)
             ),
@@ -240,30 +207,6 @@ contract SolvencyMethods is DiamondHelper, ProxyConnector {
      **/
     function getERC20TokenInstance(bytes32 _asset, bool allowInactive) internal view returns (IERC20Metadata) {
         return IERC20Metadata(DeploymentConstants.getTokenManager().getAssetAddress(_asset, allowInactive));
-    }
-
-    function _decreaseExposure(ITokenManager tokenManager, address _token, uint256 _amount) internal {
-        if(_amount > 0) {
-            tokenManager.decreaseProtocolExposure(
-                tokenManager.tokenAddressToSymbol(_token),
-                _amount * 1e18 / 10**IERC20Metadata(_token).decimals()
-            );
-            if(IERC20Metadata(_token).balanceOf(address(this)) == 0){
-                DiamondStorageLib.removeOwnedAsset(tokenManager.tokenAddressToSymbol(_token));
-            }
-        }
-    }
-
-    function _increaseExposure(ITokenManager tokenManager, address _token, uint256 _amount) internal {
-        if(_amount > 0) {
-            tokenManager.increaseProtocolExposure(
-                tokenManager.tokenAddressToSymbol(_token),
-                _amount * 1e18 / 10**IERC20Metadata(_token).decimals()
-            );
-            if(IERC20Metadata(_token).balanceOf(address(this)) > 0){
-                DiamondStorageLib.addOwnedAsset(tokenManager.tokenAddressToSymbol(_token), _token);
-            }
-        }
     }
 
     modifier recalculateAssetsExposure() {

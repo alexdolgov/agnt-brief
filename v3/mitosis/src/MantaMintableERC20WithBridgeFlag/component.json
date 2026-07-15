@@ -1,50 +1,28 @@
 {
   "component": "MantaMintableERC20WithBridgeFlag",
   "main_contract": "MantaMintableERC20WithBridgeFlag",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MantaMintableERC20WithBridgeFlag\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-169",
       "chain_id": 169,
-      "address": "0x34c7ad65e4163306f8745996688b476914201ce0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
       "address": "0x77b6f99970f488cfa8bd41892900b6ce881c2300",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0x9bf486550523faf9902a8be78abb436d287a2c6c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0xa53e005cecd3d7c89a4ae814617cc14828b6527e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0xc8d4bcb4845f4583fd70a3ed22ed6623ef45b986",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396819"
     }
   ]
 }

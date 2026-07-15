@@ -1,44 +1,102 @@
 # Agentic Audit Brief: MORE Markets
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: MORE Markets (`more-markets`)
 - Website: [https://www.more.markets](https://www.more.markets)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:31.738Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16da
-- Chains: arbitrum, avalanche, base, ethereum
-- Contract surface: 24 unique implementations (25 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: ethereum
+- Contract surface: 22 unique implementations (22 raw deployments)
+- Coverage basis: 0/22 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $9,829,470.20
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Lending. Structurally: 21 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 1 ERC20 token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for MORE Markets. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 6 functional families. Its contracts share 3 common project-authored base contract(s) (contextupgradeable, proxy, pausableupgradeable). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 22 contract row(s) across ethereum. Structural roles: 12 core, 10 supporting. 7 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 22
+- Structural roles: core (12), supporting (10)
+- Contract kinds: contract (22)
+- Detected standards: erc1967proxy (3), ownable (3), pausable (3), erc165 (1), erc20 (1), erc4626 (1), ownable2step (1)
+- Frameworks: openzeppelin (22), chainlink (18), openzeppelin-upgradeable (7), solady (1), uniswap-v3 (1)
+- Upgradeable-pattern rows: 7
+
+## Fork Analysis
+
+0 of 22 contracts are derived from known codebases. 22 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- AaveV3Facet (`0x3172c3...362fbd`, chain 1)
+- AccessControlFacet (`0xfdf1c2...eed38c`, chain 1)
+- BridgeFacet (`0xd08cab...cd37bb`, chain 1)
+- ConfigurationFacet (`0x475d69...891441`, chain 1)
+- CurveFacet (`0x00f8ab...08c897`, chain 1)
+- CurveLiquidityGaugeV6Facet (`0x4fc8df...ff3aa1`, chain 1)
+- DiamondCutFacet (`0x0629d6...f38ee7`, chain 1)
+- DiamondLoupeFacet (`0xbfb5bf...34e708`, chain 1)
+- ERC4626Facet (`0xc5c684...a1f1b5`, chain 1)
+- ERC7540Facet (`0x5b49fb...b5633b`, chain 1)
+- LzAdapter (`0xc3268c...297117`, chain 1)
+- MoreLeverageFacet (`0x589ccd...da5fc3`, chain 1)
+- MORELeverageFacet (`0xc04ea0...a6292a`, chain 1)
+- MoreVaultsComposer (`0x8d8be0...cbdfc1`, chain 1)
+- MulticallFacet (`0x4c25db...d998e3`, chain 1)
+- MultiRewardsFacet (`0x65c89a...d6cd0f`, chain 1)
+- OFTAdapterFactory (`0xfa3f78...7ea659`, chain 1)
+- TransparentUpgradeableProxy (`0x6a0b37...553890`, chain 1)
+- TransparentUpgradeableProxy (`0x7bdb8b...56bb0c`, chain 1)
+- TransparentUpgradeableProxy (`0xa7b968...a2041a`, chain 1)
+- UniswapV3Facet (`0x3df592...59b5ad`, chain 1)
+- VaultFacet (`0xe405e2...db8878`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 25; live-surface contracts included: 25 (22 live, 3 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 22; live-surface contracts included: 22 (22 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 22/22 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/21 (0.0%)
-- Deployed-live implementations: 21 of 24 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/21
-- Verified + Unaudited implementations: 21
+- Coverage of address-book-owned deployed-live implementations: 0/22 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 22 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 3
+- Deployed-live implementations: 22 of 22 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/22
+- Verified + Unaudited implementations: 22
 - Verified by bytecode match: 0
-- Unverified implementations: 3
-- Unique implementations: 24
-- Raw deployments: 25
+- Unverified implementations: 0
+- Unique implementations: 22
+- Raw deployments: 22
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,31 +115,32 @@ The protocol comprises 6 functional families. Its contracts share 3 common proje
 
 - None
 
-### ⚠️ Verified + Unaudited (21)
+### ⚠️ Verified + Unaudited (22)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AaveV3Facet | unknown | ethereum | n/a | [`0x3172c3...362fbd`](./contracts/ethereum-1/0x3172c30821d61b97ed0c9b21c0fe42ff0b362fbd/) | ⚠️ Unaudited |
-| AccessControlFacet | governance | ethereum | n/a | [`0xfdf1c2...eed38c`](./contracts/ethereum-1/0xfdf1c242e8e9847f2edebab3c0f3be5f85eed38c/) | ⚠️ Unaudited |
-| BridgeFacet | operational_periphery | ethereum | n/a | [`0xd08cab...cd37bb`](./contracts/ethereum-1/0xd08cab25309dfea0a48db8e9ef3d5afa58cd37bb/) | ⚠️ Unaudited |
-| ConfigurationFacet | governance | ethereum | n/a | [`0x475d69...891441`](./contracts/ethereum-1/0x475d696b75fd49f48cd1d8a4389c7ad755891441/) | ⚠️ Unaudited |
-| CurveFacet | unknown | ethereum | n/a | [`0x00f8ab...08c897`](./contracts/ethereum-1/0x00f8abfe17b4c096440a647bb0549f326e08c897/) | ⚠️ Unaudited |
-| CurveLiquidityGaugeV6Facet | operational_periphery | ethereum | n/a | [`0x4fc8df...ff3aa1`](./contracts/ethereum-1/0x4fc8dfc9a4ace779e78591b17b83ea1988ff3aa1/) | ⚠️ Unaudited |
-| DiamondCutFacet | unknown | ethereum | n/a | [`0x0629d6...f38ee7`](./contracts/ethereum-1/0x0629d67cba46438458e96e7fd7bd46afe6f38ee7/) | ⚠️ Unaudited |
-| DiamondLoupeFacet | unknown | ethereum | n/a | [`0xbfb5bf...34e708`](./contracts/ethereum-1/0xbfb5bf7129d80c582681e5f59aa21ba23834e708/) | ⚠️ Unaudited |
-| ERC4626Facet | unknown | ethereum | n/a | [`0xc5c684...a1f1b5`](./contracts/ethereum-1/0xc5c6844fe3a550748caaeaf8592d68386ca1f1b5/) | ⚠️ Unaudited |
-| ERC7540Facet | unknown | ethereum | n/a | [`0x5b49fb...b5633b`](./contracts/ethereum-1/0x5b49fb340ee2a92ac9b5ae9a6920a54911b5633b/) | ⚠️ Unaudited |
-| LzAdapter | adapter | ethereum | n/a | [`0xc3268c...297117`](./contracts/ethereum-1/0xc3268c843a7704cc7c476edb6b38480038297117/) | ⚠️ Unaudited |
-| MoreLeverageFacet | unknown | ethereum | n/a | 2 deployments: ethereum [`0x589ccd...da5fc3`](./contracts/ethereum-1/0x589ccdaf387e265423c1d2f95cdc903fdfda5fc3/); ethereum `0xc04ea0...a6292a` | ⚠️ Unaudited |
-| MoreVaultsComposer | core_logic | ethereum | n/a | [`0x8d8be0...cbdfc1`](./contracts/ethereum-1/0x8d8be034ecfd018d67f9a1a25e27f99f52cbdfc1/) | ⚠️ Unaudited |
-| MulticallFacet | periphery | ethereum | n/a | [`0x4c25db...d998e3`](./contracts/ethereum-1/0x4c25db05c999081cdb24adfdd9cd871f70d998e3/) | ⚠️ Unaudited |
-| MultiRewardsFacet | unknown | ethereum | n/a | [`0x65c89a...d6cd0f`](./contracts/ethereum-1/0x65c89a8aef485d3da46ed3ee20bf9d59e4d6cd0f/) | ⚠️ Unaudited |
-| OFTAdapterFactory | adapter | ethereum | n/a | [`0xfa3f78...7ea659`](./contracts/ethereum-1/0xfa3f78123da6c25548ced8e2e194483a067ea659/) | ⚠️ Unaudited |
-| OracleRegistry | operational_periphery | ethereum | n/a | [`0xa7b968...a2041a`](./contracts/ethereum-1/0xa7b968ca75eb0224a396ca5cd482d18d4ca2041a/) | ⚠️ Unaudited |
-| UniswapV3Facet | unknown | ethereum | n/a | [`0x3df592...59b5ad`](./contracts/ethereum-1/0x3df5923afb843fdc530c144844c994db8e59b5ad/) | ⚠️ Unaudited |
-| VaultFacet | core_logic | ethereum | n/a | [`0xe405e2...db8878`](./contracts/ethereum-1/0xe405e2fec812bd73548e75c2544cfd176bdb8878/) | ⚠️ Unaudited |
-| VaultsFactory | registry | ethereum | n/a | [`0x7bdb8b...56bb0c`](./contracts/ethereum-1/0x7bdb8b17604b03125efaed33ca0c55fbf856bb0c/) | ⚠️ Unaudited |
-| VaultsRegistry | registry | ethereum | n/a | [`0x6a0b37...553890`](./contracts/ethereum-1/0x6a0b3724af49ce6f14669d07823650ec26553890/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AaveV3Facet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400443 | `0x3172c3...362fbd` | ⚠️ Unaudited |
+| AccessControlFacet | governance | project_anchor | own_supporting | 0 | ethereum | unit-400459 | `0xfdf1c2...eed38c` | ⚠️ Unaudited |
+| BridgeFacet | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-400456 | `0xd08cab...cd37bb` | ⚠️ Unaudited |
+| ConfigurationFacet | governance | project_anchor | own_supporting | 0 | ethereum | unit-400445 | `0x475d69...891441` | ⚠️ Unaudited |
+| CurveFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400441 | `0x00f8ab...08c897` | ⚠️ Unaudited |
+| CurveLiquidityGaugeV6Facet | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-400447 | `0x4fc8df...ff3aa1` | ⚠️ Unaudited |
+| DiamondCutFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400442 | `0x0629d6...f38ee7` | ⚠️ Unaudited |
+| DiamondLoupeFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400452 | `0xbfb5bf...34e708` | ⚠️ Unaudited |
+| ERC4626Facet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400455 | `0xc5c684...a1f1b5` | ⚠️ Unaudited |
+| ERC7540Facet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400449 | `0x5b49fb...b5633b` | ⚠️ Unaudited |
+| LzAdapter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-400454 | `0xc3268c...297117` | ⚠️ Unaudited |
+| MoreLeverageFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400448 | `0x589ccd...da5fc3` | ⚠️ Unaudited |
+| MORELeverageFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400453 | `0xc04ea0...a6292a` | ⚠️ Unaudited |
+| MoreVaultsComposer | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-400451 | `0x8d8be0...cbdfc1` | ⚠️ Unaudited |
+| MulticallFacet | periphery | project_anchor | own_supporting | 0 | ethereum | unit-400446 | `0x4c25db...d998e3` | ⚠️ Unaudited |
+| MultiRewardsFacet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400450 | `0x65c89a...d6cd0f` | ⚠️ Unaudited |
+| OFTAdapterFactory | adapter | project_anchor | own_supporting | 0 | ethereum | unit-400458 | `0xfa3f78...7ea659` | ⚠️ Unaudited |
+| OracleRegistry | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-400462 | `0xa7b968...a2041a` | ⚠️ Unaudited |
+| UniswapV3Facet | unknown | project_anchor | own_supporting | 0 | ethereum | unit-400444 | `0x3df592...59b5ad` | ⚠️ Unaudited |
+| VaultFacet | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-400457 | `0xe405e2...db8878` | ⚠️ Unaudited |
+| VaultsFactory | registry | project_anchor | own_supporting | 1 | ethereum | unit-400461 | `0x7bdb8b...56bb0c` | ⚠️ Unaudited |
+| VaultsRegistry | registry | project_anchor | own_supporting | 1 | ethereum | unit-400460 | `0x6a0b37...553890` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,35 +154,56 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| VaultsFactory | registry | base | n/a | `0x7bdb8b...56bb0c` | ❓ Unverified |
-| VaultsFactory | registry | arbitrum | n/a | `0x7bdb8b...56bb0c` | ❓ Unverified |
-| VaultsFactory | registry | avalanche | n/a | `0x7bdb8b...56bb0c` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0xfdf1c2...eed38c` | AccessControlFacet | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd08cab...cd37bb` | BridgeFacet | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x475d69...891441` | ConfigurationFacet | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0629d6...f38ee7` | DiamondCutFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xbfb5bf...34e708` | DiamondLoupeFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc5c684...a1f1b5` | ERC4626Facet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x5b49fb...b5633b` | ERC7540Facet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc3268c...297117` | LzAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x589ccd...da5fc3` | MoreLeverageFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc04ea0...a6292a` | MORELeverageFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x8d8be0...cbdfc1` | MoreVaultsComposer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x4c25db...d998e3` | MulticallFacet | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x65c89a...d6cd0f` | MultiRewardsFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xfa3f78...7ea659` | OFTAdapterFactory | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa7b968...a2041a` | OracleRegistry | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xe405e2...db8878` | VaultFacet | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x7bdb8b...56bb0c` | VaultsFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6a0b37...553890` | VaultsRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 0 |
+| native | 18 |
+| upstream | 4 |
 | standard_library | 0 |
-| needs_review | 24 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -131,6 +211,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

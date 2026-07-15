@@ -1,42 +1,30 @@
 {
   "component": "AeolusV2",
   "main_contract": "AeolusV2",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 4,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AeolusV2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://4040024839-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-MNeAQGL5skC11vu82Sy%2F-MVwM2h1RmXM94Ik7NAO%2F-MVwMB3sAAKGp9zma217%2FSmart%20Contract%20Audit%20Report%20-%20Cyclone%20Protocol%20v2.pdf"
+  ],
   "addresses": [
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x1fb0e0a9c8afb1be54f570fee1085a3dd9f9009a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x567da514637cfd7f9e1f185ae4aa163b3ebb5363",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x74fb687ad9c2c7635a8cab7dbb97d2b025fa85fa",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
     {
       "chain": "bsc",
       "chain_id": 56,
       "address": "0x92a737097d711bec4c31351997254e98e5f0d430",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393337"
     }
   ]
 }

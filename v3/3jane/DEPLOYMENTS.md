@@ -1,62 +1,17 @@
 # 3jane — deployments
 
-56 verified deployment(s) across 23 component(s).
+11 verified deployment(s) across 7 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| ethereum | `0x05367c7a76afeb7bdf7c06b479d7551d6536a06e` | sUSD3 | proxy | live | yes |
-| ethereum | `0x056b269eb1f75477a8666ae8c7fe01b64dd55ecc` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0x056b269eb1f75477a8666ae8c7fe01b64dd55ecc` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x1d434d2899f81f3c3fdf52c814a6e23318f9c7df` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0x1dccd4628d48a50c1a7adea3848bcc869f08f8c2` | TimelockController | impl | live | no |
 | ethereum | `0x26389b03298ba5da0664ffd6bf78cf3a7820c6a9` | CreditLine | impl | live | yes |
-| ethereum | `0x2a66f992bf227d2e50ef19edd21503c3c4f3f682` | Helper | impl | live | yes |
-| ethereum | `0x2e96b888c0f7d5362022de5f330e24dff5efb619` | RibbonThetaVaultWithSwap | impl | inactive | no |
 | ethereum | `0x333333330522f64ee8d0b3039c460b41670e3404` | Jane | impl | live | yes |
-| ethereum | `0x33333333bd7045f1a601a1e289d7ab21036fb5ef` | GnosisSafeProxy | proxy | live | no |
-| ethereum | `0x3fbb7b2f220e2b68f1ff14794543f01ed703fc5a` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0x4507b5b23340d248457d955a211c8b0634d29935` | InsuranceFund | impl | live | yes |
-| ethereum | `0x492a3dd7a6f4bc7ff7b2d001148e2c67b33d9f91` | sUSD3 | proxy | live | yes |
-| ethereum | `0x49ef4aef11d236a5e0879d07975fc30efd0df852` | sUSD3 | proxy | live | yes |
-| ethereum | `0x4a94a0743a69bee2a58c8fae7ef3881c2f5da126` | RibbonThetaVaultWithSwap | impl | inactive | no |
-| ethereum | `0x4c8ce0e024b8f53d5cac310c3046d82834a9944c` | RibbonThetaVaultWithSwap | impl | inactive | no |
-| ethereum | `0x4ef28605dd3921320da832cefe72a674da656b46` | ManualStrikeSelection | impl | inactive | no |
-| ethereum | `0x4f1fafbfe3a3a3f66e17ba674c5c79eb0cdc19ba` | VaultLifecycleWithSwap | impl | inactive | no |
-| ethereum | `0x4f6694dde9dacceea069b5bbf41735c029bc0645` | sUSD3 | proxy | live | yes |
-| ethereum | `0x64bc68ea388e42c73747668122eee3a5bfb70b98` | ProtocolConfig | impl | inactive | no |
-| ethereum | `0x65809c5dccde77ab8bb023c47e24d147eca803d0` | AdminUpgradeabilityProxy | proxy | inactive | no |
-| ethereum | `0x6b276a2a7dd8b629adba8a06ad6573d01c84f34e` | ProtocolConfig | proxy | live | no |
-| ethereum | `0x72d9bc9d8e65a690d12a92da249f3216ba42b2e5` | ERC1967Proxy | impl | inactive | no |
-| ethereum | `0x73092aef9fe617ab0e8c3261593cb431a56f2dc9` | RibbonThetaVaultWithSwap | impl | inactive | no |
-| ethereum | `0x74993710931113b1d383469a25596f525a8635c4` | ERC1967Proxy | impl | inactive | no |
-| ethereum | `0x792a1450a3d2023e2de6bb29208031dea52ea12c` | EmergencyController | impl | live | no |
-| ethereum | `0x79d674e544b27f67d584f424c9bd9ef4353d0a37` | ERC1967Proxy | impl | inactive | no |
-| ethereum | `0x82616ea8627f6d4def852fe918b2a61a2dc023c4` | ERC1967Proxy | impl | inactive | no |
+| ethereum | `0x6b276a2a7dd8b629adba8a06ad6573d01c84f34e` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x82736f81a56935c8429addbda4aebec737444505` | Helper | impl | live | yes |
-| ethereum | `0x83872df0cbdc2408ba61123004105372ce45f35a` | sUSD3 | proxy | live | yes |
-| ethereum | `0x84b31b84917485e221305edf590b8e3660d2e051` | EmergencyController | impl | live | no |
-| ethereum | `0x8ee376f98d739cc8bfad13ac9165e4a22955dafb` | RibbonThetaVaultWithSwap | impl | inactive | no |
-| ethereum | `0x8fe8d5e4eb0f60169fd5fb178595625dcec0dd11` | VaultLifecycleWithSwap | impl | inactive | no |
-| ethereum | `0x959744121d0a13d3c8752dd01f06417b2a41ea9f` | RibbonThetaVaultWithSwap | impl | inactive | no |
-| ethereum | `0xa235c6d0f94bc156d2f5f98cdf4e3296a9147572` | RibbonThetaVaultWithSwap | proxy | inactive | no |
-| ethereum | `0xa6f76b158300006a2612e9a39e67e893dc45f030` | RibbonThetaVaultWithSwap | proxy | inactive | no |
-| ethereum | `0xa7b3a9deba8d3b49a0dd75eda34ef64f6217a9d9` | ManualStrikeSelection | impl | inactive | no |
-| ethereum | `0xaa11ab352fd05094a2400609fb6100e755a9bf1e` | ProtocolConfig-2 | impl | live | yes |
-| ethereum | `0xab8e9492863be96643be447fe41854bd2cae4615` | ERC1967Proxy | impl | inactive | no |
 | ethereum | `0xac6985d4dbcd89ccad71db9bf0309eaf57f064e8` | RewardsDistributor | impl | live | yes |
-| ethereum | `0xacd147a5bbcb7166c5bb13a9354ad7a59b99fb4d` | RibbonThetaVaultWithSwap | proxy | live | no |
-| ethereum | `0xb9c6ac5f80e9fcd41adca55fd98438300558f73b` | ERC1967Proxy | impl | inactive | no |
-| ethereum | `0xbc8a59497d4e27f65f132c359cc6ccedbf6521a7` | RibbonThetaVaultWithSwap | impl | inactive | no |
-| ethereum | `0xbd35e3bd64eed7db85162bc2a4e4f37796247c2e` | sUSD3 | proxy | live | yes |
-| ethereum | `0xbfd433db118c459d8bf83ed839326a260de2e266` | PYTLocker | impl | inactive | no |
-| ethereum | `0xc95f8f5ff078b65125c7d00f2cc7b4ae062f555c` | RewardsDistributor | impl | live | yes |
-| ethereum | `0xd4fa2d31b7968e448877f69a96de69f5de8cd23e` | TransparentUpgradeableProxy-3 | proxy | live | no |
-| ethereum | `0xde6e08ac208088cc62812ba30608d852c6b0ecbc` | TransparentUpgradeableProxy-4 | proxy | live | yes |
-| ethereum | `0xe74ee9c836883fcf7c0f394a2429e82d97f45145` | ERC1967Proxy | impl | inactive | no |
-| ethereum | `0xeadf1de23cece2109cb72517da1b7b710b7509e5` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0xde6e08ac208088cc62812ba30608d852c6b0ecbc` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0xf0eae71092f3c9411a9eab8f81e7d91d29726214` | MarkdownController | impl | live | yes |
 | ethereum | `0xf689555121e529ff0463e191f9bd9d1e496164a7` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0xf733c71a6e9c46741fbcbd0af37a1543373304de` | sUSD3 | proxy | live | yes |
-| ethereum | `0xf7a18b1ec65b8471d80218a01bd4413ad8417e21` | ERC1967Proxy | proxy | live | no |
-| ethereum | `0xf914e25ff1d83eef6a871e9293199369a283adc6` | ERC1967Proxy | impl | inactive | no |
-| ethereum | `0xfd172699e44008d1f48fd945a0421a03d8118b5d` | MarkdownManager | impl | live | yes |
-| ethereum | `0xff031e9fcdee6207fc17e1f1fefc66d346fd72fc` | Jane | impl | live | yes |

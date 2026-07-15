@@ -3,13 +3,16 @@ pragma solidity =0.7.6;
 pragma abicoder v2;
 
 import '../interfaces/IStableSwapFactory.sol';
+import '../interfaces/ISquadswapPair.sol';
 import '../interfaces/IStableSwapInfo.sol';
 import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol';
 import '@squadswap/v3-core/contracts/libraries/LowGasSafeMath.sol';
 import '@squadswap/v3-core/contracts/interfaces/ISquadV3Pool.sol';
 
+
 library SmartRouterHelper {
     using LowGasSafeMath for uint256;
+    uint public constant FEE_DENOMINATOR = 1000000;
 
     /************************************************** Stable **************************************************/
 
@@ -21,12 +24,16 @@ library SmartRouterHelper {
         uint256 flag
     ) public view returns (uint256 i, uint256 j, address swapContract) {
         if (flag == 2) {
-            IStableSwapFactory.StableSwapPairInfo memory info = IStableSwapFactory(stableSwapFactory).getPairInfo(input, output);
+            IStableSwapFactory.StableSwapPairInfo memory info = IStableSwapFactory(stableSwapFactory).getPairInfo(
+                input,
+                output
+            );
             i = input == info.token0 ? 0 : 1;
             j = (i == 0) ? 1 : 0;
             swapContract = info.swapContract;
         } else if (flag == 3) {
-            IStableSwapFactory.StableSwapThreePoolPairInfo memory info = IStableSwapFactory(stableSwapFactory).getThreePoolPairInfo(input, output);
+            IStableSwapFactory.StableSwapThreePoolPairInfo memory info = IStableSwapFactory(stableSwapFactory)
+                .getThreePoolPairInfo(input, output);
 
             if (input == info.token0) i = 0;
             else if (input == info.token1) i = 1;
@@ -39,7 +46,7 @@ library SmartRouterHelper {
             swapContract = info.swapContract;
         }
 
-        require(swapContract != address(0), "getStableInfo: invalid pool address");
+        require(swapContract != address(0), 'getStableInfo: invalid pool address');
     }
 
     function getStableAmountsIn(
@@ -50,19 +57,22 @@ library SmartRouterHelper {
         uint256 amountOut
     ) public view returns (uint256[] memory amounts) {
         uint256 length = path.length;
-        require(length >= 2, "getStableAmountsIn: incorrect length");
+        require(length >= 2, 'getStableAmountsIn: incorrect length');
 
         amounts = new uint256[](length);
         amounts[length - 1] = amountOut;
 
         for (uint256 i = length - 1; i > 0; i--) {
             uint256 last = i - 1;
-            (uint256 k, uint256 j, address swapContract) = getStableInfo(stableSwapFactory, path[last], path[i], flag[last]);
+            (uint256 k, uint256 j, address swapContract) = getStableInfo(
+                stableSwapFactory,
+                path[last],
+                path[i],
+                flag[last]
+            );
             amounts[last] = IStableSwapInfo(stableSwapInfo).get_dx(swapContract, k, j, amounts[i], type(uint256).max);
         }
     }
-
-
 
     /************************************************** V2 **************************************************/
 
@@ -70,7 +80,9 @@ library SmartRouterHelper {
     // bytes32 internal constant V2_INIT_CODE_HASH = 0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5; // BSC
     // bytes32 internal constant V2_INIT_CODE_HASH = 0x57224589c67f3f30a6b0d7a1b54cf3153ab84563bc609ef41dfb34f8b2974d2d; // ETH, GOERLI
     // bytes32 internal constant V2_INIT_CODE_HASH = 0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66;
-    bytes32 internal constant V2_INIT_CODE_HASH = 0x58c2c3390cddef0a17aed31cf6b51cc4b11e96866b8b16a613fc7999daefb24e;
+    // bytes32 internal constant V2_INIT_CODE_HASH = 0x98859e91a2d7077a5647fc52bfa56461f1be3991cfafdee3a968bf5d9a947f22;
+    // bytes32 internal constant V2_INIT_CODE_HASH = 0x41e0df0624353a4378f242d8cd6d84cb2d88803272f3caa0c322a738b32f7409;
+    bytes32 internal constant V2_INIT_CODE_HASH = 0x666b17e0f0313ce8c608a4761ae7fd0e1c936c7c63eb833ac540370647c0efdb;
 
     // returns sorted token addresses, used to handle return values from pairs sorted in this order
     function sortTokens(address tokenA, address tokenB) public pure returns (address token0, address token1) {
@@ -80,21 +92,12 @@ library SmartRouterHelper {
     }
 
     // calculates the CREATE2 address for a pair without making any external calls
-    function pairFor(
-        address factory,
-        address tokenA,
-        address tokenB
-    ) public pure returns (address pair) {
+    function pairFor(address factory, address tokenA, address tokenB) public pure returns (address pair) {
         (address token0, address token1) = sortTokens(tokenA, tokenB);
         pair = address(
             uint256(
                 keccak256(
-                    abi.encodePacked(
-                        hex'ff',
-                        factory,
-                        keccak256(abi.encodePacked(token0, token1)),
-                        V2_INIT_CODE_HASH
-                    )
+                    abi.encodePacked(hex'ff', factory, keccak256(abi.encodePacked(token0, token1)), V2_INIT_CODE_HASH)
                 )
             )
         );
@@ -105,9 +108,10 @@ library SmartRouterHelper {
         address factory,
         address tokenA,
         address tokenB
-    ) public view returns (uint256 reserveA, uint256 reserveB) {
+    ) public view returns (uint256 reserveA, uint256 reserveB, uint256 fee) {
         (address token0, ) = sortTokens(tokenA, tokenB);
-        (uint256 reserve0, uint256 reserve1, ) = IUniswapV2Pair(pairFor(factory, tokenA, tokenB)).getReserves();
+        (uint256 reserve0, uint256 reserve1, , uint256 _fee) = ISquadswapPair(pairFor(factory, tokenA, tokenB)).getReserves();
+        fee = _fee;
         (reserveA, reserveB) = tokenA == token0 ? (reserve0, reserve1) : (reserve1, reserve0);
     }
 
@@ -115,13 +119,15 @@ library SmartRouterHelper {
     function getAmountOut(
         uint256 amountIn,
         uint256 reserveIn,
-        uint256 reserveOut
+        uint256 reserveOut,
+        uint256 fee
     ) public pure returns (uint256 amountOut) {
         require(amountIn > 0, 'INSUFFICIENT_INPUT_AMOUNT');
         require(reserveIn > 0 && reserveOut > 0);
-        uint256 amountInWithFee = amountIn.mul(9980);
+        uint256 _feeMult = FEE_DENOMINATOR - fee;
+        uint256 amountInWithFee = amountIn.mul(_feeMult);
         uint256 numerator = amountInWithFee.mul(reserveOut);
-        uint256 denominator = reserveIn.mul(10000).add(amountInWithFee);
+        uint256 denominator = reserveIn.mul(FEE_DENOMINATOR).add(amountInWithFee);
         amountOut = numerator / denominator;
     }
 
@@ -129,12 +135,14 @@ library SmartRouterHelper {
     function getAmountIn(
         uint256 amountOut,
         uint256 reserveIn,
-        uint256 reserveOut
+        uint256 reserveOut,
+        uint256 fee
     ) public pure returns (uint256 amountIn) {
         require(amountOut > 0, 'INSUFFICIENT_OUTPUT_AMOUNT');
         require(reserveIn > 0 && reserveOut > 0);
-        uint256 numerator = reserveIn.mul(amountOut).mul(10000);
-        uint256 denominator = reserveOut.sub(amountOut).mul(9980);
+        uint256 _feeMult = FEE_DENOMINATOR - fee;
+        uint256 numerator = reserveIn.mul(amountOut).mul(FEE_DENOMINATOR);
+        uint256 denominator = reserveOut.sub(amountOut).mul(_feeMult);
         amountIn = (numerator / denominator).add(1);
     }
 
@@ -148,16 +156,14 @@ library SmartRouterHelper {
         amounts = new uint256[](path.length);
         amounts[amounts.length - 1] = amountOut;
         for (uint256 i = path.length - 1; i > 0; i--) {
-            (uint256 reserveIn, uint256 reserveOut) = getReserves(factory, path[i - 1], path[i]);
-            amounts[i - 1] = getAmountIn(amounts[i], reserveIn, reserveOut);
+            (uint256 reserveIn, uint256 reserveOut, uint256 fee) = getReserves(factory, path[i - 1], path[i]);
+            amounts[i - 1] = getAmountIn(amounts[i], reserveIn, reserveOut, fee);
         }
     }
 
-
-
     /************************************************** V3 **************************************************/
 
-    bytes32 internal constant V3_INIT_CODE_HASH = 0x3c870cef9085d8414a331fbaed7d7650b12f50faaf182b986e0807b8c3fe58c8;
+    bytes32 internal constant V3_INIT_CODE_HASH = 0xff132c7c84e5449c9d69fc8490aba7f25fe4033e8889a13556c416128e1308cf;
 
     /// @notice The identifying key of the pool
     struct PoolKey {
@@ -171,11 +177,7 @@ library SmartRouterHelper {
     /// @param tokenB The second token of a pool, unsorted
     /// @param fee The fee level of the pool
     /// @return Poolkey The pool details with ordered token0 and token1 assignments
-    function getPoolKey(
-        address tokenA,
-        address tokenB,
-        uint24 fee
-    ) public pure returns (PoolKey memory) {
+    function getPoolKey(address tokenA, address tokenB, uint24 fee) public pure returns (PoolKey memory) {
         if (tokenA > tokenB) (tokenA, tokenB) = (tokenB, tokenA);
         return PoolKey({token0: tokenA, token1: tokenB, fee: fee});
     }
@@ -201,12 +203,7 @@ library SmartRouterHelper {
     }
 
     /// @dev Returns the pool for the given token pair and fee. The pool contract may or may not exist.
-    function getPool(
-        address deployer,
-        address tokenA,
-        address tokenB,
-        uint24 fee
-    ) public pure returns (ISquadV3Pool) {
+    function getPool(address deployer, address tokenA, address tokenB, uint24 fee) public pure returns (ISquadV3Pool) {
         return ISquadV3Pool(computeAddress(deployer, getPoolKey(tokenA, tokenB, fee)));
     }
 
@@ -229,11 +226,7 @@ library SmartRouterHelper {
     /// @param deployer The contract address of the SquadSwap V3 deployer
     /// @param poolKey The identifying key of the V3 pool
     /// @return pool The V3 pool contract address
-    function verifyCallback(address deployer, PoolKey memory poolKey)
-        public
-        view
-        returns (ISquadV3Pool pool)
-    {
+    function verifyCallback(address deployer, PoolKey memory poolKey) public view returns (ISquadV3Pool pool) {
         pool = ISquadV3Pool(computeAddress(deployer, poolKey));
         require(msg.sender == address(pool));
     }

@@ -19,17 +19,11 @@ contract DestinationVaultMainRewarder is MainRewarder {
         address _stakeTracker,
         address _rewardToken,
         uint256 _newRewardRatio,
-        uint256 _durationInBlock,
+        uint256 _duration,
         bool _allowExtraReward
     )
-        MainRewarder(
-            _systemRegistry,
-            _rewardToken,
-            _newRewardRatio,
-            _durationInBlock,
-            Roles.DV_REWARD_MANAGER,
-            _allowExtraReward
-        )
+        // solhint-disable-next-line max-line-length
+        MainRewarder(_systemRegistry, _rewardToken, _newRewardRatio, _duration, Roles.DV_REWARD_MANAGER, _allowExtraReward)
     {
         Errors.verifyNotZero(_stakeTracker, "_stakeTracker");
         stakeTracker = _stakeTracker;

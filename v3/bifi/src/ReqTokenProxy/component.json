@@ -1,29 +1,48 @@
 {
   "component": "ReqTokenProxy",
   "main_contract": "ReqTokenProxy",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/bifrost-platform/BIFI/blob/master/docs/ENG/(ENG)_BiFi_Lending_Sooho_EN_Public.pdf",
-    "https://github.com/bifrost-platform/BIFI/blob/master/docs/bifrost_bifi_audit.pdf"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ReqTokenProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x1b0ba3b6fc27c4189869e4a2ecef2404e3e3d996",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x93948aa8488f522d5b079af84fe411fbce476e9f",
+      "is_proxy": true,
+      "implementation_address": "0x47be3d1def039bd85e7570864bb5148e7491a65f",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x986eb51e67e154901ff9b482835788b8f3054076",
+      "is_proxy": true,
+      "implementation_address": "0x38b3a3b5b53987c9aaf4c41f3534425ac93369b8",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x26d0e4707af1c1daad8e9ba21b99cda7fd24c40b",
+      "address": "0x829ed2a2bef8b72e648f92cbf01587c7e12e8c1e",
       "is_proxy": true,
-      "implementation_address": "0xbb9ce7c152f9d6fbbebd90e9b06d021f64e6052b",
-      "liveness": "live"
+      "implementation_address": "0x77c59ef81bcb6b5aa5efefa58b9914b2b115941b",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

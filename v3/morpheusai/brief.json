@@ -1,26 +1,61 @@
 {
-  "schema_version": "2.0",
+  "schema_version": "3.0",
   "project_key": "morpheusai",
-  "generated_at": "2026-07-03T21:06:31.840Z",
-  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d640",
+  "generated_at": "2026-07-15T18:00:00.000Z",
+  "authority": {
+    "activation_id": "scope-prod-20260715-v1",
+    "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
+    "match_closure_sha256": "8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6",
+    "review_closure_sha256": "ba1f6f291d2f91f0993306e7ee30a8c54c9b49bfb0a4757f9de2abd218c8fd1d",
+    "topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+    "topography_closure_sha256": "a8c3fc7d9dc82143989157bb6855fbb7c23dddc63b6ddb6cd2d84d8d4aa4eca2",
+    "liveness_stage_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+    "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
+    "fork_detection_run_id": "fork-structural-canonical-production-20260712",
+    "deployer_decision_run_id": "deployer-candidate-production-20260712",
+    "export_input_receipt_sha256": "7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213",
+    "canonical_network_policy": "offline_cache_only"
+  },
+  "production_state": {
+    "state_kind": "published_scope",
+    "cohort_ordinal": 388,
+    "raw_selected_contract_rows": 1,
+    "selected_audits": 1,
+    "eligible_audit_results": 18,
+    "matched_audit_results": 1,
+    "no_match_audit_results": 17
+  },
+  "missing_evidence": {
+    "audit_dates": [
+      12364
+    ]
+  },
+  "pipeline_run_id": "brief-generation-scope-prod-20260715-v1",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 50,
-    "total_addresses": 108,
-    "unique_implementations": 50,
-    "total_deployments": 108,
-    "audited_contracts": 41,
-    "unaudited_contracts": 9,
-    "contracts_verified_audited": 41,
-    "contracts_verified_unaudited": 9,
+    "total_contracts": 6,
+    "total_addresses": 6,
+    "unique_implementations": 6,
+    "address_book_own_implementations": 3,
+    "address_book_context_implementations": 3,
+    "address_book_unclassified_implementations": 0,
+    "non_address_book_implementations": 0,
+    "third_party_or_infra_implementations": 0,
+    "standard_proxy_or_library_implementations": 0,
+    "address_book_proxy_deployments": 0,
+    "total_deployments": 6,
+    "audited_contracts": 1,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 82,
+    "contracts_unverified": 1,
+    "coverage_pct": 50,
     "total_audits": 18,
     "direct_audits": 18,
     "inherited_audits": 0,
-    "scoreable_audits": 16,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 19900852.82418,
     "tvl_usd": 19900852.82418,
     "tvl_source": "defillama",
@@ -28,15 +63,11 @@
     "asd_usd": null,
     "website_url": "https://mor.org",
     "chains": [
-      "arbitrum",
       "base",
-      "ethereum"
+      "base-sepolia"
     ],
-    "tier1_coverage_pct": 34,
-    "tier1_auditors": [
-      "Code4rena",
-      "Cyfrin"
-    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
     "latest_audit_date": "2025-08",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
@@ -45,2006 +76,108 @@
       "stale": 9,
       "unknown": 1
     },
-    "live_implementations": 50,
-    "live_verified_implementations": 50,
-    "live_audited_implementations": 41,
+    "live_implementations": 3,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 1,
+    "coverage_basis": "address_book_owned_live_verified_implementations",
+    "live_verified_own_confirmed": 2,
+    "live_audited_own_confirmed": 1,
+    "live_verified_needs_review": 0,
+    "live_verified_excluded_standard": 0,
+    "live_verified_excluded_third_party": 0,
+    "live_verified_excluded_inventory_pollution": 0,
+    "coverage_confidence": "high",
+    "coverage_assessment_status": "assessed",
+    "coverage_assessment_note": "Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.",
+    "liveness_assessment_status": "complete",
+    "liveness_eligible_contracts": 3,
+    "liveness_assessed_contracts": 3,
+    "liveness_unresolved_contracts": 0,
+    "liveness_run_ids": [
+      "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1"
+    ],
+    "scope_analysis_pending_audits": 0,
+    "coverage_pct_conservative": 50,
+    "live_verified_third_party_excluded": 0,
     "deploy_coverage_basis_breakdown": {
-      "code_matched": 41,
+      "code_matched": 0,
       "diverged": 0,
-      "match_unverified": 0
+      "match_unverified": 1
     }
   },
   "topography": {
-    "project_purpose": "AI Agents. Structurally: 53 project-authored contract(s) across 3 chain(s); 5 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 18 common project-authored base contract(s) (distribution, distributionv5, ownablediamondstorage). Dominant framework: openzeppelin.",
-    "product_family_count": 5,
-    "total_contracts_indexed": 132,
-    "live_contracts": 107,
-    "inactive_contracts": 25,
+    "project_purpose": "This brief describes the observed EVM deployment and audit surface for MorpheusAI. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.",
+    "relationship_narrative": "The pinned logic-topography run contains 2 contract row(s) across base, base-sepolia. Structural roles: 1 core, 1 unclassified. No upgradeable pattern was identified in these rows.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 2,
+    "live_contracts": 2,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 0,
-    "live_deployment_units": 0,
+    "deployment_units": 6,
+    "live_deployment_units": 3,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
+  "logic_topography": {
+    "run_id": "logic-topography-normalized-candidate-20260715-v1",
+    "content_rows": 2,
+    "structural_roles": {
+      "core": 1,
+      "unclassified": 1
+    },
+    "contract_kinds": {
+      "contract": 2
+    },
+    "standards": {
+      "ownable": 1
+    },
+    "frameworks": {
+      "openzeppelin": 1
+    },
+    "upgradeable_contracts": 0
+  },
   "surface_sufficiency": {
-    "unique_implementations": 50,
-    "has_non_token_contracts": true,
-    "is_skeletal": false
+    "unique_implementations": 3,
+    "has_non_token_contracts": false,
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
+  "fork_analysis": {
+    "summary": {
+      "total_contracts": 2,
+      "forked": 0,
+      "original": 2
+    },
+    "forked_contracts": [],
+    "original_contracts": [
+      {
+        "contract_address": "0x0eb467381abbc5b71f275df0c8a4e0ed8561f46f",
+        "chain_id": 8453,
+        "etherscan_name": null
+      },
+      {
+        "contract_address": "0x6abe1d282f72b474e54527d93b979a4f64d3030a",
+        "chain_id": 8453,
+        "etherscan_name": "LumerinDiamond"
+      }
+    ]
+  },
   "contracts": [
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x7ec3dda3e83ddd4b9f2cfcff0a5213bb8cf31b79",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "Builders",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Builders",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x7ec3dda3e83ddd4b9f2cfcff0a5213bb8cf31b79",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x969c0f87623dc33010b4069fea48316ba2e45382",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-12-30 13:02:09+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x6db545f73e32a0ba6f100803a2f0dce044101dbc",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "BuildersV2",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BuildersV2",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x6db545f73e32a0ba6f100803a2f0dce044101dbc",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xa8603114c7bce3a622f2d36286b29c6f51c14fe6",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12360"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-05-08 09:14:49+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x2388bef44cd71f18e984b8dbe88e1db717f298ab",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "BuildersV3",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BuildersV3",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x2388bef44cd71f18e984b8dbe88e1db717f298ab",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xccc06767533563fbdcff2e1800e4a266fbd01532",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-04-07 10:48:55+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x18faef315b40a6d9cf49628f1133b1aa507513b0",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "BuildersV4",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x18faef315b40a6d9cf49628f1133b1aa507513b0",
-      "impl_name": "BuildersV4",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x18faef315b40a6d9cf49628f1133b1aa507513b0",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x42bb446eae6dca7723a9ebdb81ea88afe77ef4b9",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-12-03 11:18:45+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x18faef315b40a6d9cf49628f1133b1aa507513b0",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "ChainLinkDataConsumer",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x94e6720a624ea275b44d357a7f21bfcf09ff7e11",
-      "impl_name": "ChainLinkDataConsumer",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x18faef315b40a6d9cf49628f1133b1aa507513b0",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2265ae4127a49218c1c562cb16822971f295ed50",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xd182263d06fdc463c96190005d6359cc3d3bbc5e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12357",
-        "audit-12359"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null,
-      "is_live": true,
-      "effective_deploy_date": "2025-09-17 10:44:35+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x1b48365e33802943b5d98954efabd366f04ff924",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "DelegateFactory",
-      "role": "registry",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x3b51989212bedab926794d6bf8e9e991218cf116",
-      "impl_name": "DelegateFactory",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x1b48365e33802943b5d98954efabd366f04ff924",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x3b51989212bedab926794d6bf8e9e991218cf116",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12363"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-12-20 00:00:41+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x281bc6f84952abe53f6921dcd76c879d3c4b6375",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "DelegateFactory",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x6ad6efba31cb05df2aa96aab03d2237746830193",
-      "impl_name": "DelegateFactory",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x281bc6f84952abe53f6921dcd76c879d3c4b6375",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x6ad6efba31cb05df2aa96aab03d2237746830193",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12363"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-12-17 15:51:21+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x8aac72b616420a7a9d76b11b56d841d2f5b66aac",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "DelegateFactory",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DelegateFactory",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x8aac72b616420a7a9d76b11b56d841d2f5b66aac",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xe1641453e8e437493a2127bc62d51d3dfbaf5a91",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12363"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-12-19 23:56:07+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x136538a0d320a29e29fe661fb893714a0ecea76a",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "DelegateFactory",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x136538a0d320a29e29fe661fb893714a0ecea76a",
-      "impl_name": "DelegateFactory",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x136538a0d320a29e29fe661fb893714a0ecea76a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x37b94bd80b6012fb214bb6790b31a5c40d6eb7a5",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12363"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-01-08 20:24:35+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x3b51989212bedab926794d6bf8e9e991218cf116",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "DepositPool",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xdb10daef167ea2233ba6811457dd24d676fbd670",
-      "impl_name": "DepositPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x3b51989212bedab926794d6bf8e9e991218cf116",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x47176b2af9885dc6c4575d4efd63895f7aaa4790",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6cce082851add4c535352f596662521b4de4750e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9380d72abbd6e0cc45095a2ef8c2ca87d77cb384",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xccc06767533563fbdcff2e1800e4a266fbd01532",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xdb10daef167ea2233ba6811457dd24d676fbd670",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xde283f8309fd1aa46c95d299f6b8310716277a42",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12357",
-        "audit-12359"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-09-17 11:31:11+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x24c09a0c047e8a439f26682ea51c7157b3ccc20b",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "Distribution",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x24c09a0c047e8a439f26682ea51c7157b3ccc20b",
-      "impl_name": "Distribution",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x24c09a0c047e8a439f26682ea51c7157b3ccc20b",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2e1ff173085a5ef12046c27e442f12f79a0092b7",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12358",
-        "audit-12364",
-        "audit-12365",
-        "audit-12366"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-02-07 23:16:47+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc281724c309118110d5d4073ff3cb732144eaf57",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "DistributionToArb",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DistributionToArb",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc281724c309118110d5d4073ff3cb732144eaf57",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-07-03 18:12:59+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xefb3af6505b343a206a39666884c25a07e36b6d0",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "DistributionToArbV5",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DistributionToArbV5",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xefb3af6505b343a206a39666884c25a07e36b6d0",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-11-19 21:47:23+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x383ebffd2e6a956242392581d73f60dfb4d4f18e",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "DistributionToBase",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DistributionToBase",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x383ebffd2e6a956242392581d73f60dfb4d4f18e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-06-13 22:11:47+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6db545f73e32a0ba6f100803a2f0dce044101dbc",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "DistributionToBaseV5",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DistributionToBaseV5",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6db545f73e32a0ba6f100803a2f0dce044101dbc",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-11-19 21:47:11+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x31bf07f9c4316d461db35b2435f1bec21c783294",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "DistributionV2",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DistributionV2",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x31bf07f9c4316d461db35b2435f1bec21c783294",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12365",
-        "audit-12367"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-07-25 12:54:11+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xaddd7bbedd9dd2e72649217ea784069821f44ab9",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "DistributionV3",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DistributionV3",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xaddd7bbedd9dd2e72649217ea784069821f44ab9",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12368"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-08-08 21:00:35+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x68b9d05add55769b1e4808a74b616fa37f6da294",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "DistributionV4",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DistributionV4",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x68b9d05add55769b1e4808a74b616fa37f6da294",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12370"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-09-24 11:12:47+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xc1292bed7df044c03d8f2cc6cb13d0bd6c96720a",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "DistributionV5",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "DistributionV5",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc1292bed7df044c03d8f2cc6cb13d0bd6c96720a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12370"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-10-31 23:26:23+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5b660ab78f3ac743953f9e68630a2d66e7b45f64",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "Distributor",
-      "role": "operational_periphery",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Distributor",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5b660ab78f3ac743953f9e68630a2d66e7b45f64",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12357",
-        "audit-12359"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null,
-      "is_live": true,
-      "effective_deploy_date": "2025-09-17 11:27:59+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x33e689846b1f143793c9d270a26016615a1cae83",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "FeeConfig",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x55daa99a07f5deabdcd94d0c5a592661b82613eb",
-      "impl_name": "FeeConfig",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x33e689846b1f143793c9d270a26016615a1cae83",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x55daa99a07f5deabdcd94d0c5a592661b82613eb",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12358"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-06-13 22:12:35+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x2e1ff173085a5ef12046c27e442f12f79a0092b7",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "FeeConfig",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x2e1ff173085a5ef12046c27e442f12f79a0092b7",
-      "impl_name": "FeeConfig",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x2e1ff173085a5ef12046c27e442f12f79a0092b7",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x845fbb4b3e2207bf03087b8b94d2430ab11088ee",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12358"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-12-30 13:02:49+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x8739402c1ee1868dfe92fda76f74ecfaaf51ff0e",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "FeeConfig",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x8739402c1ee1868dfe92fda76f74ecfaaf51ff0e",
-      "impl_name": "FeeConfig",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x8739402c1ee1868dfe92fda76f74ecfaaf51ff0e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xc03d87085e254695754a74d2cf76579e167eb895",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12358"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-12-18 23:27:23+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x6b1a3d8f84094667e38247d6fca6f814e11ae9fe",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "L1Sender",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x6b1a3d8f84094667e38247d6fca6f814e11ae9fe",
-      "impl_name": "L1Sender",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x6b1a3d8f84094667e38247d6fca6f814e11ae9fe",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x845fbb4b3e2207bf03087b8b94d2430ab11088ee",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12358",
-        "audit-12364",
-        "audit-12365",
-        "audit-12366"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-02-07 23:17:11+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2bc54ca13a75b24630070e73173cc2f35d66515a",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "L1SenderV2",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "L1SenderV2",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2bc54ca13a75b24630070e73173cc2f35d66515a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12357"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null,
-      "is_live": true,
-      "effective_deploy_date": "2025-11-07 18:16:59+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2efd4430489e1a05a89c2f51811ac661b7e5ff84",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "L1SenderV2",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x50e80ea310269c547b64cc8b8a606be0ec467d1f",
-      "impl_name": "L1SenderV2",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2efd4430489e1a05a89c2f51811ac661b7e5ff84",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x50e80ea310269c547b64cc8b8a606be0ec467d1f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12357"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-09-17 11:31:35+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xd4a8eccbe696295e68572a98b1aa70aa9277d427",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "L2Factory",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0xd4a8eccbe696295e68572a98b1aa70aa9277d427",
-      "impl_name": "L2Factory",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xd4a8eccbe696295e68572a98b1aa70aa9277d427",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xe50009c299fd3952564debd773b6e07f450d76af",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12358"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-06-13 22:24:29+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x890bfa255e6ee8db5c67ab32dc600b14ebc4546c",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "L2Factory",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xa03ea65026def258272ec4d063db49b853d7f116",
-      "impl_name": "L2Factory",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x890bfa255e6ee8db5c67ab32dc600b14ebc4546c",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xa03ea65026def258272ec4d063db49b853d7f116",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12358"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-07-03 18:20:14+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x19eef40a364f754ee77cdfba0995a3fbf1e6495d",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "L2MessageReceiver",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x19eef40a364f754ee77cdfba0995a3fbf1e6495d",
-      "impl_name": "L2MessageReceiver",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x19eef40a364f754ee77cdfba0995a3fbf1e6495d",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xb69dbf7c9ab4597d3b3bc284cc8771d580299bad",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12358",
-        "audit-12364",
-        "audit-12366"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-11-07 18:03:25+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x47176b2af9885dc6c4575d4efd63895f7aaa4790",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "L2MessageReceiver",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "L2MessageReceiver",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x47176b2af9885dc6c4575d4efd63895f7aaa4790",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x9cbceaeb45e566a95a4a755b1a526874163d41c7",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12358",
-        "audit-12364",
-        "audit-12366"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-07-03 18:19:45+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x2efd4430489e1a05a89c2f51811ac661b7e5ff84",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "L2MessageReceiver",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x2efd4430489e1a05a89c2f51811ac661b7e5ff84",
-      "impl_name": "L2MessageReceiver",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x2efd4430489e1a05a89c2f51811ac661b7e5ff84",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x845fbb4b3e2207bf03087b8b94d2430ab11088ee",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xd4a8eccbe696295e68572a98b1aa70aa9277d427",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12358",
-        "audit-12364",
-        "audit-12366"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-02-07 23:02:32+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x24c09a0c047e8a439f26682ea51c7157b3ccc20b",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "L2TokenReceiver",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "L2TokenReceiver",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x6b1a3d8f84094667e38247d6fca6f814e11ae9fe",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x24c09a0c047e8a439f26682ea51c7157b3ccc20b",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x383ebffd2e6a956242392581d73f60dfb4d4f18e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12358",
-        "audit-12364",
-        "audit-12365",
-        "audit-12366"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-07-03 18:19:52+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x27353ffadfd53538e8bdf81be7041c56ce2d5ae4",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "L2TokenReceiverV2",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x27353ffadfd53538e8bdf81be7041c56ce2d5ae4",
-      "impl_name": "L2TokenReceiverV2",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x27353ffadfd53538e8bdf81be7041c56ce2d5ae4",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x47176b2af9885dc6c4575d4efd63895f7aaa4790",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12357",
-        "audit-12371",
-        "audit-12372"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-05-02 14:23:07+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x2e1ff173085a5ef12046c27e442f12f79a0092b7",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "L2TokenReceiverV2",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x9eba628581896ce086cb8f1a513ea6097a8fc561",
-      "impl_name": "L2TokenReceiverV2",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x2e1ff173085a5ef12046c27e442f12f79a0092b7",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x9eba628581896ce086cb8f1a513ea6097a8fc561",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12357",
-        "audit-12371",
-        "audit-12372"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-04-29 16:51:59+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0e2bb6facf982ecb26bd448a758811a5cf37ee9a",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "LinearDistributionIntervalDecrease",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "LinearDistributionIntervalDecrease",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0e2bb6facf982ecb26bd448a758811a5cf37ee9a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x14a623403b26fdf24503685894425ac0a068478c",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2388bef44cd71f18e984b8dbe88e1db717f298ab",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x37b94bd80b6012fb214bb6790b31a5c40d6eb7a5",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x3a16730c7d512cdb5c00447af468b36f4bf33303",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x7431ada8a591c955a994a21710752ef9b882b8e3",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9cbceaeb45e566a95a4a755b1a526874163d41c7",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc6eaf7b4c7cddec02f25e260f8541d453a72584d",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xfb1a7d49ceb0ee8c929d67eb9762366506a4825c",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x2265ae4127a49218c1c562cb16822971f295ed50",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xdf1ac1ac255d91f5f4b1e3b4aef57c5350f64c7a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x39e6264cfba1f1c83a0bef6f3f6fa055e34d792a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x9380d72abbd6e0cc45095a2ef8c2ca87d77cb384",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12358",
-        "audit-12359",
-        "audit-12364",
-        "audit-12366"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-12-17 15:49:15+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x345b8b23c38f70f1d77560c60493bb583f012cb0",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "LockMultiplierMath",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "LockMultiplierMath",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x345b8b23c38f70f1d77560c60493bb583f012cb0",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x98c204b36b779617913f7e0d932e06f4a0d36843",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xde283f8309fd1aa46c95d299f6b8310716277a42",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-09-17 11:30:23+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
       "address": "0x6abe1d282f72b474e54527d93b979a4f64d3030a",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-389461",
+      "deployment_unit_proxy_count": 0,
       "name": "LumerinDiamond",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2056,12 +189,16 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x6abe1d282f72b474e54527d93b979a4f64d3030a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-389461",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "current_address_book_code",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:57.748+00"
         }
       ],
       "audits_covering": [],
@@ -2071,113 +208,27 @@
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
       "is_live": true,
+      "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "own_supporting",
+      "surface_confidence": null,
+      "surface_exclusion_reason": null,
+      "surface_evidence": null,
       "effective_deploy_date": "2025-12-17 15:49:01+03",
       "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0xb7994de339aee515c9b2792831cd83f3c9d8df87",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "ModelRegistry",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ModelRegistry",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xb7994de339aee515c9b2792831cd83f3c9d8df87",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12361",
-        "audit-12362",
-        "audit-12363"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-12-17 15:49:11+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
       "address": "0x7431ada8a591c955a994a21710752ef9b882b8e3",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "MOR",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MOR",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x98e3cfbdb9707df6107cb1a7bd03036052eaa20e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x7431ada8a591c955a994a21710752ef9b882b8e3",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12358",
-        "audit-12364",
-        "audit-12365"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-11-07 18:03:21+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x092baadb7def4c3981454dd9c0a0d7ff07bcfc86",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-389462",
+      "deployment_unit_proxy_count": 0,
       "name": "MOROFT",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2186,48 +237,19 @@
       "impl_name": "MOROFT",
       "deployments": [
         {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xcbb8f1bda10b9696c57e13bc128fe674769dcec0",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x7431ada8a591c955a994a21710752ef9b882b8e3",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-389462",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x092baadb7def4c3981454dd9c0a0d7ff07bcfc86",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x3c3a26c978bf6af40d7c1a36e9cbd3c1c055786e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
+          "is_audited": true,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "current_address_book_code",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:57.748+00"
         }
       ],
       "audits_covering": [
@@ -2237,507 +259,258 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-05-27 10:14:57+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0xe30279b79392aeff7fdf1883c23d52eba9d88a75",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "ProviderRegistry",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ProviderRegistry",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xe30279b79392aeff7fdf1883c23d52eba9d88a75",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12361",
-        "audit-12362",
-        "audit-12363"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-12-17 15:49:07+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xde819aaee474626e3f34ef0263373357e5a6c71b",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "ProviderRegistry",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x8621e6b808a3d925533446b767b7bca6accb62a2",
-      "impl_name": "ProviderRegistry",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xde819aaee474626e3f34ef0263373357e5a6c71b",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12361",
-        "audit-12362",
-        "audit-12363"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-11-15 22:30:27+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x031075f7a853e8d4bf0b525466a78374afaa9308",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "ProvidersDelegate",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ProvidersDelegate",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x031075f7a853e8d4bf0b525466a78374afaa9308",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xaddd7bbedd9dd2e72649217ea784069821f44ab9",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12363"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-12-17 15:51:33+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x62496604116c5172435adbd928edbf36ca7cdfbd",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "ReferrerLib",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ReferrerLib",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x62496604116c5172435adbd928edbf36ca7cdfbd",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x98c204b36b779617913f7e0d932e06f4a0d36843",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9a397c638bd9611539e7992b32e206102e6d2965",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12359"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-09-17 11:30:59+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xb7994de339aee515c9b2792831cd83f3c9d8df87",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "RewardPool",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xe30279b79392aeff7fdf1883c23d52eba9d88a75",
-      "impl_name": "RewardPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xb7994de339aee515c9b2792831cd83f3c9d8df87",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xe30279b79392aeff7fdf1883c23d52eba9d88a75",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12357",
-        "audit-12359"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-09-17 11:17:59+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x4de9d52a6a951c2dc7b22805eeec2bc41404909d",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "RewardPool",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x4de9d52a6a951c2dc7b22805eeec2bc41404909d",
-      "impl_name": "RewardPool",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x4de9d52a6a951c2dc7b22805eeec2bc41404909d",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xdc99a8596e395e52aba2bd08c623e1e428dc3980",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12357",
-        "audit-12359"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-12-03 11:18:35+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x281bc6f84952abe53f6921dcd76c879d3c4b6375",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "RewardPool",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0x6ad6efba31cb05df2aa96aab03d2237746830193",
-      "impl_name": "RewardPool",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x281bc6f84952abe53f6921dcd76c879d3c4b6375",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x6ad6efba31cb05df2aa96aab03d2237746830193",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12357",
-        "audit-12359"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-12-03 11:49:05+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x174852b955544986215f45d9ce161d5b35401578",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "SessionRouter",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SessionRouter",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x174852b955544986215f45d9ce161d5b35401578",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x3ec0d950abb82e0eb9b86f5cf244b34912a871d6",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xab493d93bd9c93c7590865df82f4e09f3df96d4c",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12361",
-        "audit-12362",
-        "audit-12363"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
       "contamination_flag": "review",
       "is_live": true,
-      "effective_deploy_date": "2025-12-17 15:51:09+03",
-      "deploy_coverage_basis": "code_matched"
+      "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "own_supporting",
+      "surface_confidence": null,
+      "surface_exclusion_reason": null,
+      "surface_evidence": null,
+      "effective_deploy_date": "2024-05-27 10:14:57+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x7ec3dda3e83ddd4b9f2cfcff0a5213bb8cf31b79",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0000000000000000000000000000000000000000",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
-      "name": "StETHMock",
+      "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": null,
+      "product_line": "Examples",
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": "StETHMock",
+      "impl_name": null,
       "deployments": [
         {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x7ec3dda3e83ddd4b9f2cfcff0a5213bb8cf31b79",
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0000000000000000000000000000000000000000",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
-          "source_verified": true,
+          "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": null,
+          "operational_liveness_run_id": null,
+          "operational_liveness_observed_at": null
         }
       ],
-      "audits_covering": [
-        "audit-12365"
-      ],
-      "is_audited": true,
-      "source_verified": true,
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-04-29 15:15:23+03",
-      "deploy_coverage_basis": "code_matched"
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "protocol_docs",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "address_book_excluded_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: non_contract_system_or_placeholder_address; non_contract_system_or_placeholder_address.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "project_anchor"
+        ],
+        "scope_match_exclusion_reasons": [
+          "non_contract_system_or_placeholder_address"
+        ],
+        "scope_inventory_reasons": [
+          "non_contract_system_or_placeholder_address"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x42bb446eae6dca7723a9ebdb81ea88afe77ef4b9",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "WStETHMock",
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0eb467381abbc5b71f275df0c8a4e0ed8561f46f",
+      "deployment_unit": "unit-389460",
+      "deployment_unit_proxy_count": 0,
+      "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": null,
+      "product_line": "B. Query for a model",
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": "WStETHMock",
+      "impl_name": null,
       "deployments": [
         {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x42bb446eae6dca7723a9ebdb81ea88afe77ef4b9",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x0eb467381abbc5b71f275df0c8a4e0ed8561f46f",
+          "deployment_unit": "unit-389460",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "current_address_book_code",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:57.748+00"
         }
       ],
-      "audits_covering": [
-        "audit-12365"
-      ],
-      "is_audited": true,
-      "source_verified": true,
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
       "is_live": true,
-      "effective_deploy_date": "2024-04-29 15:15:35+03",
-      "deploy_coverage_basis": "code_matched"
+      "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "own_supporting",
+      "surface_confidence": null,
+      "surface_exclusion_reason": null,
+      "surface_evidence": null,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 84532,
+      "chain_name": "base-sepolia",
+      "address": "0x5c80ddd187054e1e4abbffcd750498e81d34ffa3",
+      "deployment_unit": "unit-389464",
+      "deployment_unit_proxy_count": 0,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "BASE Sepolia (testnet)",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 84532,
+          "chain_name": "base-sepolia",
+          "address": "0x5c80ddd187054e1e4abbffcd750498e81d34ffa3",
+          "deployment_unit": "unit-389464",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:57.748+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "historical_or_testnet_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory",
+          "testnet_scope"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 84532,
+      "chain_name": "base-sepolia",
+      "address": "0x6e4d0b775e3c3b02683a6f277ac80240c4aff930",
+      "deployment_unit": "unit-389465",
+      "deployment_unit_proxy_count": 0,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "BASE Sepolia (testnet)",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 84532,
+          "chain_name": "base-sepolia",
+          "address": "0x6e4d0b775e3c3b02683a6f277ac80240c4aff930",
+          "deployment_unit": "unit-389465",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:57.748+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "retained_scope_excluded_inventory",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "historical_or_testnet_inventory",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs retain this address-book inventory for context, but mark it scope-match excluded: normalized_full_corpus:retained_scope_excluded_inventory:classified_context; retained_scope_excluded_inventory; testnet_scope.",
+      "surface_evidence": {
+        "source": "project_contracts.discovery_evidence",
+        "address_book_inventory_classes": [
+          "retained_scope_excluded_inventory"
+        ],
+        "scope_match_exclusion_reasons": [
+          "retained_scope_excluded_inventory",
+          "testnet_scope"
+        ],
+        "scope_inventory_reasons": [
+          "normalized_full_corpus:retained_scope_excluded_inventory:classified_context"
+        ]
+      },
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -2766,11 +539,116 @@
         "L2TokenReceiverV2",
         "RewardPool"
       ],
-      "matched_contracts": 24,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "Scope section states 6 smart contracts; extracted from file paths and findings. Audit date range Aug 15-25, 2025; end date used.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Scope section states 6 smart contracts; extracted from file paths and findings. Audit date range Aug 15-25, 2025; end date used.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 6,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 6,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "ChainLinkDataConsumer",
+          "normalized_name": "chainlinkdataconsumer",
+          "file_path": "contracts/capital-protocol/ChainLinkDataConsumer.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope and findings reference",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "Distributor",
+          "normalized_name": "distributor",
+          "file_path": "contracts/capital-protocol/Distributor.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope and findings reference",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "DepositPool",
+          "normalized_name": "depositpool",
+          "file_path": "contracts/capital-protocol/DepositPool.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope and findings reference",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "RewardPool",
+          "normalized_name": "rewardpool",
+          "file_path": "contracts/capital-protocol/RewardPool.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope and findings reference",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L1SenderV2",
+          "normalized_name": "l1senderv2",
+          "file_path": "contracts/capital-protocol/L1SenderV2.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope and findings reference",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L2TokenReceiverV2",
+          "normalized_name": "l2tokenreceiverv2",
+          "file_path": "contracts/capital-protocol/L2TokenReceiverV2.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope and findings reference",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12358,
@@ -2794,25 +672,179 @@
         "Factory",
         "FeeConfig",
         "FreezableBeaconProxy",
-        "IFactory",
-        "IFeeConfig",
-        "IFreezableBeaconProxy",
-        "IL1Factory",
-        "IL2Factory",
         "L1Factory",
         "L1Sender",
         "L2Factory",
         "L2MessageReceiver",
         "L2TokenReceiver",
-        "LinearDistributionIntervalDecrease",
-        "MOR",
         "MOR20"
       ],
-      "matched_contracts": 39,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "Extracted from audit report text. Scope section lists Repository, CommitHash, MitigationHash, Date. Contracts mentioned in findings and centralization risks.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Extracted from audit report text. Scope section lists Repository, CommitHash, MitigationHash, Date. Contracts mentioned in findings and centralization risks.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 10,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 10,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "Factory",
+          "normalized_name": "factory",
+          "file_path": "Factory.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and findings (M-1, M-3, I-2)",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L1Factory",
+          "normalized_name": "l1factory",
+          "file_path": "L1Factory.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and findings (M-3)",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L2Factory",
+          "normalized_name": "l2factory",
+          "file_path": "L2Factory.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and findings (M-3)",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "Distribution",
+          "normalized_name": "distribution",
+          "file_path": "Distribution.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and findings (M-2)",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "FeeConfig",
+          "normalized_name": "feeconfig",
+          "file_path": "FeeConfig.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and findings (L-1, I-1, I-3, I-4, I-5)",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "FreezableBeaconProxy",
+          "normalized_name": "freezablebeaconproxy",
+          "file_path": "FreezableBeaconProxy.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and findings (M-3, L-2)",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L1Sender",
+          "normalized_name": "l1sender",
+          "file_path": "L1Sender.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Mentioned in centralization risks as deployed behind FreezableBeaconProxy",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L2MessageReceiver",
+          "normalized_name": "l2messagereceiver",
+          "file_path": "L2MessageReceiver.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Mentioned in centralization risks as deployed behind FreezableBeaconProxy",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L2TokenReceiver",
+          "normalized_name": "l2tokenreceiver",
+          "file_path": "L2TokenReceiver.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Mentioned in centralization risks as deployed behind FreezableBeaconProxy",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "MOR20",
+          "normalized_name": "mor20",
+          "file_path": "MOR20.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Mentioned in centralization risks (MOR20.updateMinter())",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12359,
@@ -2839,11 +871,116 @@
         "ReferrerLib",
         "RewardPool"
       ],
-      "matched_contracts": 33,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "Scope explicitly lists 'contracts/capital-protocol/* (except DistributionV6.sol)'. All contracts referenced in findings are within that directory. Audit dates: July 22 to July 25, 2025.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Scope explicitly lists 'contracts/capital-protocol/* (except DistributionV6.sol)'. All contracts referenced in findings are within that directory. Audit dates: July 22 to July 25, 2025.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 6,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 6,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "DepositPool",
+          "normalized_name": "depositpool",
+          "file_path": "contracts/capital-protocol/DepositPool.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope as part of contracts/capital-protocol/* (except DistributionV6.sol) and referenced in findings C-1, M-1, L-3, L-4.",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "Distributor",
+          "normalized_name": "distributor",
+          "file_path": "contracts/capital-protocol/Distributor.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and referenced in findings C-1, H-1, M-2, L-2, I-2.",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "ChainLinkDataConsumer",
+          "normalized_name": "chainlinkdataconsumer",
+          "file_path": "contracts/capital-protocol/ChainLinkDataConsumer.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Referenced in finding L-1.",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "LinearDistributionIntervalDecrease",
+          "normalized_name": "lineardistributionintervaldecrease",
+          "file_path": "contracts/capital-protocol/LinearDistributionIntervalDecrease.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Referenced in findings L-2 and I-1.",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "RewardPool",
+          "normalized_name": "rewardpool",
+          "file_path": "contracts/capital-protocol/RewardPool.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Referenced in findings I-1 and throughout the report.",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "ReferrerLib",
+          "normalized_name": "referrerlib",
+          "file_path": "contracts/capital-protocol/ReferrerLib.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Referenced in finding L-4.",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12360,
@@ -2863,14 +1000,63 @@
       "scope_match": null,
       "scope_format": "contract_name",
       "extracted_names": [
-        "BuilderSubnets.sol",
-        "BuildersV2.sol"
+        "BuilderSubnets",
+        "BuildersV2"
       ],
-      "matched_contracts": 2,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "Two contracts in scope: BuildersV2.sol and BuilderSubnets.sol. Audit date from document versioning (0.4 21/03/25).",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Two contracts in scope: BuildersV2.sol and BuilderSubnets.sol. Audit date from document versioning (0.4 21/03/25).",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 2,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 2,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "BuildersV2",
+          "normalized_name": "buildersv2",
+          "file_path": "BuildersV2.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "BuilderSubnets",
+          "normalized_name": "buildersubnets",
+          "file_path": "BuilderSubnets.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12361,
@@ -2890,16 +1076,93 @@
       "scope_match": null,
       "scope_format": "contract_name",
       "extracted_names": [
-        "Marketplace.sol",
-        "ModelRegistry.sol",
-        "ProviderRegistry.sol",
-        "SessionRouter.sol"
+        "Marketplace",
+        "ModelRegistry",
+        "ProviderRegistry",
+        "SessionRouter"
       ],
-      "matched_contracts": 6,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "Scope explicitly lists four contracts: ModelRegistry.sol, ProviderRegistry.sol, Marketplace.sol, SessionRouter.sol. Audit date from cover page: August 8, 2024.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Scope explicitly lists four contracts: ModelRegistry.sol, ProviderRegistry.sol, Marketplace.sol, SessionRouter.sol. Audit date from cover page: August 8, 2024.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 4,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 4,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "ModelRegistry",
+          "normalized_name": "modelregistry",
+          "file_path": "ModelRegistry.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope section 2.1",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "ProviderRegistry",
+          "normalized_name": "providerregistry",
+          "file_path": "ProviderRegistry.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope section 2.1",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "Marketplace",
+          "normalized_name": "marketplace",
+          "file_path": "Marketplace.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope section 2.1",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "SessionRouter",
+          "normalized_name": "sessionrouter",
+          "file_path": "SessionRouter.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope section 2.1",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12362,
@@ -2927,11 +1190,130 @@
         "SessionRouter",
         "StatsStorage"
       ],
-      "matched_contracts": 6,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "Extracted 7 contracts from scope and findings. Audit date from cover page.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Extracted 7 contracts from scope and findings. Audit date from cover page.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 7,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 7,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "ModelRegistry",
+          "normalized_name": "modelregistry",
+          "file_path": "ModelRegistry.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "ProviderRegistry",
+          "normalized_name": "providerregistry",
+          "file_path": "ProviderRegistry.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "Marketplace",
+          "normalized_name": "marketplace",
+          "file_path": "Marketplace.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "SessionRouter",
+          "normalized_name": "sessionrouter",
+          "file_path": "SessionRouter.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "ModelStorage",
+          "normalized_name": "modelstorage",
+          "file_path": "ModelStorage.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "ProviderStorage",
+          "normalized_name": "providerstorage",
+          "file_path": "ProviderStorage.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "StatsStorage",
+          "normalized_name": "statsstorage",
+          "file_path": "StatsStorage.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12363,
@@ -2958,11 +1340,116 @@
         "ProvidersDelegate.sol",
         "SessionRouter.sol"
       ],
-      "matched_contracts": 16,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "Scope explicitly lists ModelRegistry.sol, ProviderRegistry.sol, Marketplace.sol, SessionRouter.sol. ProvidersDelegate.sol and DelegateFactory.sol are audited in findings.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Scope explicitly lists ModelRegistry.sol, ProviderRegistry.sol, Marketplace.sol, SessionRouter.sol. ProvidersDelegate.sol and DelegateFactory.sol are audited in findings.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 6,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 6,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "ModelRegistry.sol",
+          "normalized_name": "modelregistry.sol",
+          "file_path": "ModelRegistry.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "ProviderRegistry.sol",
+          "normalized_name": "providerregistry.sol",
+          "file_path": "ProviderRegistry.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "Marketplace.sol",
+          "normalized_name": "marketplace.sol",
+          "file_path": "Marketplace.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "SessionRouter.sol",
+          "normalized_name": "sessionrouter.sol",
+          "file_path": "SessionRouter.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "ProvidersDelegate.sol",
+          "normalized_name": "providersdelegate.sol",
+          "file_path": "ProvidersDelegate.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "DelegateFactory.sol",
+          "normalized_name": "delegatefactory.sol",
+          "file_path": "DelegateFactory.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12364,
@@ -2989,11 +1476,116 @@
         "LinearDistributionIntervalDecrease",
         "MOR"
       ],
-      "matched_contracts": 29,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "No explicit scope section found; contracts extracted from findings referencing specific files.",
       "extraction_confidence": "high",
       "scope_section_found": false,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "No explicit scope section found; contracts extracted from findings referencing specific files.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 6,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 6,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "Distribution",
+          "normalized_name": "distribution",
+          "file_path": "contracts/Distribution.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L1Sender",
+          "normalized_name": "l1sender",
+          "file_path": "contracts/L1Sender.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L2MessageReceiver",
+          "normalized_name": "l2messagereceiver",
+          "file_path": "contracts/L2MessageReceiver.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L2TokenReceiver",
+          "normalized_name": "l2tokenreceiver",
+          "file_path": "contracts/L2TokenReceiver.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "LinearDistributionIntervalDecrease",
+          "normalized_name": "lineardistributionintervaldecrease",
+          "file_path": "contracts/libs/LinearDistributionIntervalDecrease.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "MOR",
+          "normalized_name": "mor",
+          "file_path": "contracts/MOR.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12365,
@@ -3015,7 +1607,6 @@
       "extracted_names": [
         "Distribution",
         "DistributionV2",
-        "IL1Sender",
         "L1Sender",
         "L2TokenReceiver",
         "MOR",
@@ -3024,11 +1615,158 @@
         "SwapRouterMock",
         "WStETHMock"
       ],
-      "matched_contracts": 12,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "Extracted from contest summary dates: Jan 30th, 2024 - Feb 3rd, 2024. End date used.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Extracted from contest summary dates: Jan 30th, 2024 - Feb 3rd, 2024. End date used.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 9,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 9,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "Distribution",
+          "normalized_name": "distribution",
+          "file_path": "contracts/Distribution.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope and findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L1Sender",
+          "normalized_name": "l1sender",
+          "file_path": "contracts/L1Sender.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope and findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "DistributionV2",
+          "normalized_name": "distributionv2",
+          "file_path": "contracts/mock/DistributionV2.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "WStETHMock",
+          "normalized_name": "wstethmock",
+          "file_path": "contracts/mock/tokens/WStETHMock.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "StETHMock",
+          "normalized_name": "stethmock",
+          "file_path": "contracts/mock/tokens/StETHMock.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "SwapRouterMock",
+          "normalized_name": "swaproutermock",
+          "file_path": "contracts/mock/SwapRouterMock.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "NonfungiblePositionManagerMock",
+          "normalized_name": "nonfungiblepositionmanagermock",
+          "file_path": "contracts/mock/NonfungiblePositionManagerMock.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "MOR",
+          "normalized_name": "mor",
+          "file_path": "contracts/MOR.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings as reward token",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L2TokenReceiver",
+          "normalized_name": "l2tokenreceiver",
+          "file_path": "contracts/L2TokenReceiver.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12366,
@@ -3056,11 +1794,130 @@
         "L2TokenReceiver",
         "LinearDistributionIntervalDecrease"
       ],
-      "matched_contracts": 27,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "Extracted contracts from scope table and findings context. Audit date from cover page.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Extracted contracts from scope table and findings context. Audit date from cover page.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 7,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 7,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "Distribution",
+          "normalized_name": "distribution",
+          "file_path": "Distribution.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope and findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L1Sender",
+          "normalized_name": "l1sender",
+          "file_path": "L1Sender.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope and findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L2TokenReceiver",
+          "normalized_name": "l2tokenreceiver",
+          "file_path": "L2TokenReceiver.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope and findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "L2MessageReceiver",
+          "normalized_name": "l2messagereceiver",
+          "file_path": "L2MessageReceiver.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope and findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "LinearDistributionIntervalDecrease",
+          "normalized_name": "lineardistributionintervaldecrease",
+          "file_path": "LinearDistributionIntervalDecrease.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "IDistribution",
+          "normalized_name": "idistribution",
+          "file_path": "IDistribution.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "IL2MessageReceiver",
+          "normalized_name": "il2messagereceiver",
+          "file_path": "IL2MessageReceiver.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12367,
@@ -3080,14 +1937,48 @@
       "scope_match": null,
       "scope_format": "contract_name",
       "extracted_names": [
-        "DistributionV2",
-        "IDistributionV2"
+        "DistributionV2"
       ],
-      "matched_contracts": 1,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "Only DistributionV2 contract is in scope; the report mentions DistributionV2.sol as the audited contract.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Only DistributionV2 contract is in scope; the report mentions DistributionV2.sol as the audited contract.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 1,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 1,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "DistributionV2",
+          "normalized_name": "distributionv2",
+          "file_path": "DistributionV2.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope table and findings context",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12368,
@@ -3110,11 +2001,60 @@
         "DistributionV3",
         "IDistributionV3"
       ],
-      "matched_contracts": 1,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "Scope table lists 'Contract Smart Contracts' with DistributionV3.sol and IDistributionV3.sol implied by findings. Audit date from cover page and overview section.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Scope table lists 'Contract Smart Contracts' with DistributionV3.sol and IDistributionV3.sol implied by findings. Audit date from cover page and overview section.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 2,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 2,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "DistributionV3",
+          "normalized_name": "distributionv3",
+          "file_path": "DistributionV3.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope table and findings context",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "IDistributionV3",
+          "normalized_name": "idistributionv3",
+          "file_path": "IDistributionV3.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in findings context",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12369,
@@ -3135,10 +2075,30 @@
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
+      "scope_note": "No specific contract names or scope section found in the report. The report mentions 'SmartContracts' as a repository but does not list individual contract names.",
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "No specific contract names or scope section found in the report. The report mentions 'SmartContracts' as a repository but does not list individual contract names.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 0,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 0,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": []
     },
     {
       "audit_id": 12370,
@@ -3161,11 +2121,60 @@
         "DistributionV4",
         "DistributionV5"
       ],
-      "matched_contracts": 2,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "Audit report for DistributionContractV5. Referral Program (PR15|PR46) Version 2.0. Scope includes DistributionV5 and DistributionV4 contracts from SmartContracts and MOR20 repositories.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Audit report for DistributionContractV5. Referral Program (PR15|PR46) Version 2.0. Scope includes DistributionV5 and DistributionV4 contracts from SmartContracts and MOR20 repositories.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 2,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 2,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "DistributionV5",
+          "normalized_name": "distributionv5",
+          "file_path": "DistributionV5.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings context and scope",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "DistributionV4",
+          "normalized_name": "distributionv4",
+          "file_path": "DistributionV4.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in finding L-1 context",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12371,
@@ -3187,11 +2196,46 @@
       "extracted_names": [
         "L2TokenReceiverV2"
       ],
-      "matched_contracts": 4,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "Only one contract in scope: L2TokenReceiverV2. Audit date from cover page.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Only one contract in scope: L2TokenReceiverV2. Audit date from cover page.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 1,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 1,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "L2TokenReceiverV2",
+          "normalized_name": "l2tokenreceiverv2",
+          "file_path": "contracts/L2TokenReceiverV2.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope and findings",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12372,
@@ -3213,11 +2257,46 @@
       "extracted_names": [
         "L2TokenReceiverV2"
       ],
-      "matched_contracts": 4,
-      "scope_note": null,
+      "matched_contracts": 0,
+      "scope_note": "Only one contract in scope: L2TokenReceiverV2. Audit date from cover page: April 10, 2024.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Only one contract in scope: L2TokenReceiverV2. Audit date from cover page: April 10, 2024.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 1,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 1,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "L2TokenReceiverV2",
+          "normalized_name": "l2tokenreceiverv2",
+          "file_path": "contracts/L2TokenReceiverV2.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope table and mentioned throughout report",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12373,
@@ -3235,13 +2314,50 @@
       "inheritance_mode": null,
       "inheritance_scope": [],
       "scope_match": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "MorpheusAIsDynamicMinter"
+      ],
       "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
+      "scope_note": "Only one contract name found; no file paths or addresses provided.",
+      "extraction_confidence": "medium",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Only one contract name found; no file paths or addresses provided.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 1,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 1,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "MorpheusAIsDynamicMinter",
+          "normalized_name": "morpheusaisdynamicminter",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "listed in scope as project name and repository name",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 12374,
@@ -3263,63 +2379,328 @@
       "extracted_names": [
         "MOROFT"
       ],
-      "matched_contracts": 4,
-      "scope_note": null,
+      "matched_contracts": 1,
+      "scope_note": "Only one contract in scope: MOROFT.sol. Audit date from title line.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "matched",
+      "scope_result_reason": "Only one contract in scope: MOROFT.sol. Audit date from title line.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 1,
+        "matched_own": 1,
+        "matched_own_proxies": 0,
+        "matched_own_live": 1,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 0,
+        "accepted_scope_rows": 1
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "MOROFT",
+          "normalized_name": "moroft",
+          "file_path": "MOROFT.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Scope section: 'Only the MOROFT.sol was in the scope of this audit.'",
+          "disposition": "matched_own",
+          "match_basis": "unique_name",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "chain_id": 8453,
+              "address": "0x7431ada8a591c955a994a21710752ef9b882b8e3",
+              "name": "MOROFT",
+              "is_proxy": false,
+              "membership": "typed_address_book",
+              "inventory_class": "project_anchor",
+              "scope_match_eligible": true,
+              "coverage_denominator_eligible": true,
+              "brief_section": "own_surface",
+              "reason": "normalized_full_corpus:project_anchor:matcher_anchor",
+              "exclusion_reasons": [],
+              "source_urls": [
+                "https://nodedocs.mor.org/llms-full.txt"
+              ],
+              "deploy_date": "2024-05-27 10:14:57+03",
+              "product_line": null,
+              "address_book_label": null,
+              "address_book_section": null,
+              "operational_liveness": "live",
+              "operational_liveness_evidence_kind": "current_address_book_code",
+              "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+              "operational_liveness_snapshot_status": "complete",
+              "operational_liveness_observed_at": "2026-07-15 06:54:57.748+00",
+              "selected": true
+            }
+          ]
+        }
+      ]
     }
   ],
   "auditor_coverage": [
     {
       "auditor": "yAudit",
       "tier": 2,
-      "contracts_covered": 37,
-      "coverage_pct": 74,
+      "contracts_covered": 1,
+      "coverage_pct": 50,
       "latest_audit": "2025-07"
-    },
-    {
-      "auditor": "Code4rena",
-      "tier": 1,
-      "contracts_covered": 10,
-      "coverage_pct": 20,
-      "latest_audit": "2025-08"
-    },
-    {
-      "auditor": "Cyfrin",
-      "tier": 1,
-      "contracts_covered": 7,
-      "coverage_pct": 14,
-      "latest_audit": "2024-02"
     }
   ],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x6abe1d282f72b474e54527d93b979a4f64d3030a",
+      "name": "LumerinDiamond",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 2,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 50
+    "needs_review": 4
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 210
+      "unique_name": 1
     },
     "extraction_confidence_counts": {
-      "high": 16
+      "high": 16,
+      "low": 1,
+      "medium": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
+        "audit_id": 12357,
+        "report_name": "Code4rena x Morpheus Capital V2 Audit Report.pdf"
+      },
+      {
+        "audit_id": 12358,
+        "report_name": "MOR20 Contracts | Renascence.pdf"
+      },
+      {
+        "audit_id": 12359,
+        "report_name": "Morpheus Capital V2 Zenith Audit Report.pdf"
+      },
+      {
+        "audit_id": 12360,
+        "report_name": "Morpheus BuildersV2 Audit Report | Trust Security.pdf"
+      },
+      {
+        "audit_id": 12361,
+        "report_name": "Morpheus Lumerin Audit Report 1 | Renascence.pdf"
+      },
+      {
+        "audit_id": 12362,
+        "report_name": "Morpheus Lumerin Audit Report 2 | Renascence.pdf"
+      },
+      {
+        "audit_id": 12363,
+        "report_name": "Morpheus Lumerin Audit Report 3 | Renascence.pdf"
+      },
+      {
+        "audit_id": 12364,
+        "report_name": "Distribution V1 Audit | Community.md"
+      },
+      {
+        "audit_id": 12365,
+        "report_name": "Distribution V1 Public Bug Bounty | Code Hawks.md"
+      },
+      {
+        "audit_id": 12366,
+        "report_name": "Distribution V2 Audit | Renascence.pdf"
+      },
+      {
+        "audit_id": 12367,
+        "report_name": "Distribution V3 (Capital Staking) Audit | Renascence.pdf"
+      },
+      {
+        "audit_id": 12368,
+        "report_name": "Distribution V3 (Code Staking) Audit | Renascence.pdf"
+      },
+      {
         "audit_id": 12369,
         "report_name": "Distribution V4 (Claim Lock) Audit | Renascence.pdf"
+      },
+      {
+        "audit_id": 12370,
+        "report_name": "Distribution V5 (Referral Program) Audit | Renascence.pdf"
+      },
+      {
+        "audit_id": 12371,
+        "report_name": "L2TokenReceiverV2 Audit (Final) | Renascence.pdf"
+      },
+      {
+        "audit_id": 12372,
+        "report_name": "L2TokenReceiverV2 Audit (Initial) | Renascence.pdf"
       },
       {
         "audit_id": 12373,
         "report_name": "MOR Dynamic Minter Security Audit (Wormhole) | Renascence.pdf"
       }
     ],
-    "inherited_remapped_matches": []
+    "audit_scope_outcomes": [
+      {
+        "audit_id": 12357,
+        "report_name": "Code4rena x Morpheus Capital V2 Audit Report.pdf",
+        "status": "no_match",
+        "reason": "Scope section states 6 smart contracts; extracted from file paths and findings. Audit date range Aug 15-25, 2025; end date used.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12358,
+        "report_name": "MOR20 Contracts | Renascence.pdf",
+        "status": "no_match",
+        "reason": "Extracted from audit report text. Scope section lists Repository, CommitHash, MitigationHash, Date. Contracts mentioned in findings and centralization risks.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12359,
+        "report_name": "Morpheus Capital V2 Zenith Audit Report.pdf",
+        "status": "no_match",
+        "reason": "Scope explicitly lists 'contracts/capital-protocol/* (except DistributionV6.sol)'. All contracts referenced in findings are within that directory. Audit dates: July 22 to July 25, 2025.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12360,
+        "report_name": "Morpheus BuildersV2 Audit Report | Trust Security.pdf",
+        "status": "no_match",
+        "reason": "Two contracts in scope: BuildersV2.sol and BuilderSubnets.sol. Audit date from document versioning (0.4 21/03/25).",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12361,
+        "report_name": "Morpheus Lumerin Audit Report 1 | Renascence.pdf",
+        "status": "no_match",
+        "reason": "Scope explicitly lists four contracts: ModelRegistry.sol, ProviderRegistry.sol, Marketplace.sol, SessionRouter.sol. Audit date from cover page: August 8, 2024.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12362,
+        "report_name": "Morpheus Lumerin Audit Report 2 | Renascence.pdf",
+        "status": "no_match",
+        "reason": "Extracted 7 contracts from scope and findings. Audit date from cover page.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12363,
+        "report_name": "Morpheus Lumerin Audit Report 3 | Renascence.pdf",
+        "status": "no_match",
+        "reason": "Scope explicitly lists ModelRegistry.sol, ProviderRegistry.sol, Marketplace.sol, SessionRouter.sol. ProvidersDelegate.sol and DelegateFactory.sol are audited in findings.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12364,
+        "report_name": "Distribution V1 Audit | Community.md",
+        "status": "no_match",
+        "reason": "No explicit scope section found; contracts extracted from findings referencing specific files.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12365,
+        "report_name": "Distribution V1 Public Bug Bounty | Code Hawks.md",
+        "status": "no_match",
+        "reason": "Extracted from contest summary dates: Jan 30th, 2024 - Feb 3rd, 2024. End date used.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12366,
+        "report_name": "Distribution V2 Audit | Renascence.pdf",
+        "status": "no_match",
+        "reason": "Extracted contracts from scope table and findings context. Audit date from cover page.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12367,
+        "report_name": "Distribution V3 (Capital Staking) Audit | Renascence.pdf",
+        "status": "no_match",
+        "reason": "Only DistributionV2 contract is in scope; the report mentions DistributionV2.sol as the audited contract.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12368,
+        "report_name": "Distribution V3 (Code Staking) Audit | Renascence.pdf",
+        "status": "no_match",
+        "reason": "Scope table lists 'Contract Smart Contracts' with DistributionV3.sol and IDistributionV3.sol implied by findings. Audit date from cover page and overview section.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12369,
+        "report_name": "Distribution V4 (Claim Lock) Audit | Renascence.pdf",
+        "status": "no_match",
+        "reason": "No specific contract names or scope section found in the report. The report mentions 'SmartContracts' as a repository but does not list individual contract names.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12370,
+        "report_name": "Distribution V5 (Referral Program) Audit | Renascence.pdf",
+        "status": "no_match",
+        "reason": "Audit report for DistributionContractV5. Referral Program (PR15|PR46) Version 2.0. Scope includes DistributionV5 and DistributionV4 contracts from SmartContracts and MOR20 repositories.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12371,
+        "report_name": "L2TokenReceiverV2 Audit (Final) | Renascence.pdf",
+        "status": "no_match",
+        "reason": "Only one contract in scope: L2TokenReceiverV2. Audit date from cover page.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12372,
+        "report_name": "L2TokenReceiverV2 Audit (Initial) | Renascence.pdf",
+        "status": "no_match",
+        "reason": "Only one contract in scope: L2TokenReceiverV2. Audit date from cover page: April 10, 2024.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12373,
+        "report_name": "MOR Dynamic Minter Security Audit (Wormhole) | Renascence.pdf",
+        "status": "no_match",
+        "reason": "Only one contract name found; no file paths or addresses provided.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 12374,
+        "report_name": "MOR Token Contract | OpenZepellin.pdf",
+        "status": "matched",
+        "reason": "Only one contract in scope: MOROFT.sol. Audit date from title line.",
+        "operator_review": null
+      }
+    ],
+    "inherited_remapped_matches": [],
+    "analysis_disposition_counts": {
+      "extracted_references": 72,
+      "matched_own": 1,
+      "matched_own_proxies": 0,
+      "matched_own_live": 1,
+      "matched_own_inactive": 0,
+      "matched_own_uninitialized": 0,
+      "matched_own_liveness_unknown": 0,
+      "matched_third_party_or_infra": 0,
+      "matched_excluded_inventory": 0,
+      "matched_unclassified_address_book": 0,
+      "ambiguous": 0,
+      "unmatched": 71,
+      "accepted_scope_rows": 1
+    }
   },
-  "active_bug_bounty": null
+  "active_bug_bounty": null,
+  "out_of_scope": null
 }

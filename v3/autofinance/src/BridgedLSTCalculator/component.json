@@ -1,7 +1,15 @@
 {
   "component": "BridgedLSTCalculator",
   "main_contract": "BridgedLSTCalculator",
-  "source_file_count": 70,
+  "source_entry_count": 66,
+  "source_file_count": 66,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BridgedLSTCalculator\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x4cb4b14128c868f35afe9cac7c23cf821aa64f99",
+      "address": "0x58897ec6b7d7102bb24a29e99a14a6d9e517943e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391687"
     },
     {
       "chain": "base",
@@ -20,7 +30,9 @@
       "address": "0xa80b38da84e7c7a094e6d0093de374a00e892934",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391703"
     },
     {
       "chain": "base",
@@ -28,7 +40,9 @@
       "address": "0xb081af21468deb33aab9e37eae6f5004cc1cbdb0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391708"
     },
     {
       "chain": "base",
@@ -36,7 +50,9 @@
       "address": "0xb5182945caa19e3a9fa35e70502fc3269d1fa9ea",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391712"
     },
     {
       "chain": "base",
@@ -44,7 +60,9 @@
       "address": "0xbaf2ee1c91cc8a00b386b14d65bdb4918604e1a7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391717"
     }
   ]
 }

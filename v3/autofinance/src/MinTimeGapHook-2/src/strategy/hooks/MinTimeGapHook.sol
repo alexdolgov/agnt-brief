@@ -120,12 +120,7 @@ contract MinTimeGapHook is BaseStrategyHook {
     function _onUnregistered(
         bytes memory
     ) internal override {
-        autopoolData[msg.sender] = AutopoolData({
-            minSecondsGap: 0,
-            idleMinSecondsGap: 0,
-            lastRebalanceTimestamp: 0,
-            idleLastRebalanceTimestamp: 0
-        });
+        delete autopoolData[msg.sender];
         emit AutopoolMinTimeGapConfigured(msg.sender, 0, 0);
     }
 

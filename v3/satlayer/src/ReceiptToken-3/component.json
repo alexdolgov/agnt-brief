@@ -1,34 +1,38 @@
 {
   "component": "ReceiptToken-3",
   "main_contract": "ReceiptToken",
+  "source_entry_count": 8,
   "source_file_count": 8,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ReceiptToken-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x067e11ac5471c853aea205b3c1933a5f6367152f",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x422d6c77ee640fd4dd87bbacc2bad64e427f9802",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398664"
     },
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x17140b69ffadff9e87bf1d86d99119ee10ad24ff",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9ed4b12eddcf7ba4325d7d09e00dfa31d4165add",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xe2c6755c10d0b61d8b11dd2851ae8266cea912dc",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398666"
     }
   ]
 }

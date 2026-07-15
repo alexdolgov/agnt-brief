@@ -1,44 +1,107 @@
 # Agentic Audit Brief: Tarot
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Tarot (`tarot`)
 - Website: [https://www.tarot.to](https://www.tarot.to)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:59.634Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
-- Chains: arbitrum, avalanche, base, bsc, canto, ethereum, fantom, kava, linea, optimism, polygon
-- Contract surface: 57 unique implementations (134 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: arbitrum, bsc, fantom, optimism
+- Contract surface: 28 unique implementations (74 raw deployments)
+- Coverage basis: 0/27 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $953,039.12
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Lending. Structurally: 53 project-authored contract(s) across 8 chain(s); 4 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Tarot. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 6 functional families. Its contracts share 3 common project-authored base contract(s) (distributor, proxy, erc1967upgrade). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 27 contract row(s) across arbitrum, bsc, fantom, optimism. Structural roles: 21 unclassified, 3 core, 3 supporting. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 27
+- Structural roles: unclassified (21), core (3), supporting (3)
+- Contract kinds: contract (27)
+- Detected standards: ownable (2), erc20 (1), erc20permit (1)
+- Frameworks: openzeppelin (6)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 27 contracts are derived from known codebases. 27 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- AnyswapV6ERC20 (`0x375488...e736bf`, chain 10)
+- BDeployer (`0x54b006...7d5420`, chain 10)
+- BDeployer (`0x952e9c...30335a`, chain 10)
+- CDeployer (`0x5f90e2...e46401`, chain 10)
+- CDeployer (`0xeb5809...dfc12d`, chain 10)
+- Factory (`0x1d90fd...d0989e`, chain 10)
+- Factory (`0x49df1f...db62bf`, chain 10)
+- Factory (`0x8b2e28...9f0723`, chain 10)
+- Factory (`0xd7cabe...5fc83c`, chain 10)
+- Factory (`0x2217ae...8dba55`, chain 56)
+- Factory (`0xc20099...406d3a`, chain 56)
+- Factory (`0x2217ae...8dba55`, chain 42161)
+- Factory (`0x4b6dae...dd4723`, chain 42161)
+- Factory (`0xc20099...406d3a`, chain 42161)
+- Router02 (`0x88c81e...06172e`, chain 10)
+- Router02 (`0x8a3b1b...f53d8c`, chain 10)
+- Router02 (`0xa516b9...84405f`, chain 10)
+- Router02 (`0xd4a6a0...e01741`, chain 10)
+- Router02 (`0x002235...1d07b4`, chain 42161)
+- Router02 (`0x1cafcb...54b653`, chain 42161)
+- Router02 (`0x46fcde...301f30`, chain 42161)
+- Router03 (`0x8184fa...405990`, chain 56)
+- Router03 (`0xb6ed26...a97131`, chain 56)
+- VeloStableVaultTokenFactory (`0x66e9b3...9f4859`, chain 10)
+- VeloStableVaultTokenFactory (`0xee1ecc...96cf70`, chain 10)
+- VeloVaultTokenFactory (`0x19283d...92dc52`, chain 10)
+- ZipVaultTokenFactory (`0x54950c...909f57`, chain 10)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 277; live-surface contracts included: 134 (30 live, 104 unknown).
-- Excluded by liveness: 143 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 27; live-surface contracts included: 27 (27 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 27/27 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/9 (0.0%)
-- Deployed-live implementations: 9 of 57 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/9
-- Verified + Unaudited implementations: 9
+- Coverage of address-book-owned deployed-live implementations: 0/27 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 27 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 1 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 27 of 28 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/27
+- Verified + Unaudited implementations: 27
 - Verified by bytecode match: 0
-- Unverified implementations: 48
-- Unique implementations: 57
-- Raw deployments: 134
+- Unverified implementations: 0
+- Unique implementations: 28
+- Raw deployments: 74
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,19 +120,37 @@ The protocol comprises 6 functional families. Its contracts share 3 common proje
 
 - None
 
-### ⚠️ Verified + Unaudited (9)
+### ⚠️ Verified + Unaudited (27)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AnyswapV6ERC20 | token | optimism | n/a | [`0x375488...e736bf`](./contracts/optimism-10/0x375488f097176507e39b9653b88fdc52cde736bf/) | ⚠️ Unaudited |
-| ClaimAggregator | unknown | optimism | n/a | [`0xa782b2...7e6e1d`](./contracts/optimism-10/0xa782b2a4fb8b329f257e58122cda55310d7e6e1d/) | ⚠️ Unaudited |
-| Router02 | adapter | arbitrum | n/a | 4 deployments: optimism `0xa516b9...84405f`; bsc `0x1cafcb...54b653`; arbitrum [`0x002235...1d07b4`](./contracts/arbitrum-42161/0x0022358ebfd5261c325f8160c7c17bc8671d07b4/); arbitrum `0x19283d...92dc52` | ⚠️ Unaudited |
-| Router03 | adapter | arbitrum | n/a | 7 deployments: ethereum `0x3b47f0...e29771`; optimism `0x9761d4...b9a91e`; bsc `0x8184fa...405990`; base `0xd7cabe...5fc83c`; arbitrum [`0x11876c...ebf1ac`](./contracts/arbitrum-42161/0x11876c56204b2e1e9763a802b7f15fc942ebf1ac/); avalanche `0x6108fe...121834`; linea `0x2217ae...8dba55` | ⚠️ Unaudited |
-| SupplyVaultRouter01 | adapter | optimism | n/a | [`0x539fcd...2b36c9`](./contracts/optimism-10/0x539fcd9adbe7473768beb87bed88988b532b36c9/) | ⚠️ Unaudited |
-| SupplyVaultV2 | core_logic | optimism | n/a | 4 deployments: optimism [`0x4ac8af...8de471`](./contracts/optimism-10/0x4ac8af23f3ef7ededb3dc45c091406aeee8de471/); optimism `0x550d17...a0465d`; optimism `0x811c27...cdd744`; optimism `0x8d3474...cd03f8` | ⚠️ Unaudited |
-| TarotOFT | unknown | arbitrum | n/a | 7 deployments: ethereum `0xa10bf0...ea56e8`; optimism `0x1f514a...a737f7`; bsc `0x982e60...0690be`; polygon `0xb092e1...e36ac2`; base `0xf54425...952691`; arbitrum [`0x13278c...deebf7`](./contracts/arbitrum-42161/0x13278cd824d33a7adb9f0a9a84aca7c0d2deebf7/); avalanche `0x5ecfec...160f18` | ⚠️ Unaudited |
-| TowerLongPoolFactory | registry | optimism | n/a | [`0x8d92b5...c2ff05`](./contracts/optimism-10/0x8d92b5f12c1beba3583861e9c3067d088bc2ff05/) | ⚠️ Unaudited |
-| TowerPoolFactory | registry | arbitrum | n/a | 4 deployments: optimism `0x8f5301...7dfe50`; base `0xb0d74d...f57bee`; arbitrum [`0x27eef1...ca1b14`](./contracts/arbitrum-42161/0x27eef135dbc00e5c3cdf5658d690d4c05dca1b14/); linea `0x46fcde...301f30` | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AnyswapV6ERC20 | token | project_anchor | own_supporting | 0 | optimism | unit-258140 | `0x375488...e736bf` | ⚠️ Unaudited |
+| BDeployer | unknown | project_anchor | own_supporting | 0 | optimism | unit-258143 | `0x54b006...7d5420` | ⚠️ Unaudited |
+| BDeployer | unknown | project_anchor | own_supporting | 0 | optimism | unit-258149 | `0x952e9c...30335a` | ⚠️ Unaudited |
+| CDeployer | unknown | project_anchor | own_supporting | 0 | optimism | unit-258144 | `0x5f90e2...e46401` | ⚠️ Unaudited |
+| CDeployer | unknown | project_anchor | own_supporting | 0 | optimism | unit-258153 | `0xeb5809...dfc12d` | ⚠️ Unaudited |
+| Factory | unknown | project_anchor | own_supporting | 0 | optimism | unit-258139 | `0x1d90fd...d0989e` | ⚠️ Unaudited |
+| Factory | unknown | project_anchor | own_supporting | 0 | optimism | unit-258141 | `0x49df1f...db62bf` | ⚠️ Unaudited |
+| Factory | unknown | project_anchor | own_supporting | 0 | optimism | unit-258148 | `0x8b2e28...9f0723` | ⚠️ Unaudited |
+| Factory | unknown | project_anchor | own_supporting | 0 | optimism | unit-258152 | `0xd7cabe...5fc83c` | ⚠️ Unaudited |
+| Factory | unknown | project_anchor | own_supporting | 0 | bsc | unit-258161 | `0x2217ae...8dba55` | ⚠️ Unaudited |
+| Factory | unknown | project_anchor | own_supporting | 0 | bsc | unit-258164 | `0xc20099...406d3a` | ⚠️ Unaudited |
+| Factory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-258157 | `0x2217ae...8dba55` | ⚠️ Unaudited |
+| Factory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-258159 | `0x4b6dae...dd4723` | ⚠️ Unaudited |
+| Factory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-258160 | `0xc20099...406d3a` | ⚠️ Unaudited |
+| Router02 | unknown | project_anchor | own_supporting | 0 | optimism | unit-258146 | `0x88c81e...06172e` | ⚠️ Unaudited |
+| Router02 | unknown | project_anchor | own_supporting | 0 | optimism | unit-258147 | `0x8a3b1b...f53d8c` | ⚠️ Unaudited |
+| Router02 | adapter | project_anchor | own_supporting | 0 | optimism | unit-258150 | `0xa516b9...84405f` | ⚠️ Unaudited |
+| Router02 | unknown | project_anchor | own_supporting | 0 | optimism | unit-258151 | `0xd4a6a0...e01741` | ⚠️ Unaudited |
+| Router02 | adapter | project_anchor | own_supporting | 0 | arbitrum | unit-258155 | `0x002235...1d07b4` | ⚠️ Unaudited |
+| Router02 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-258156 | `0x1cafcb...54b653` | ⚠️ Unaudited |
+| Router02 | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-258158 | `0x46fcde...301f30` | ⚠️ Unaudited |
+| Router03 | adapter | project_anchor | own_supporting | 0 | bsc | unit-258162 | `0x8184fa...405990` | ⚠️ Unaudited |
+| Router03 | unknown | project_anchor | own_supporting | 0 | bsc | unit-258163 | `0xb6ed26...a97131` | ⚠️ Unaudited |
+| VeloStableVaultTokenFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-258145 | `0x66e9b3...9f4859` | ⚠️ Unaudited |
+| VeloStableVaultTokenFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-258154 | `0xee1ecc...96cf70` | ⚠️ Unaudited |
+| VeloVaultTokenFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-258138 | `0x19283d...92dc52` | ⚠️ Unaudited |
+| ZipVaultTokenFactory | unknown | project_anchor | own_supporting | 0 | optimism | unit-258142 | `0x54950c...909f57` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -83,81 +164,76 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (48)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | optimism | n/a | `0x0348e0...59b13c` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x0b9031...03b0b0` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x16a0c2...1c2b0d` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x2217ae...8dba55` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x232e84...609a66` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x3b47f0...e29771` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x40e625...f4deea` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x46fcde...301f30` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x4959f8...506ee9` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x5634c4...c7d061` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x5ed664...2f08dd` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x6237b5...7357ad` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x6e4c88...c08d9d` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x76d553...d0cd01` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x7c00da...a155e9` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x82b341...37da11` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x84ec15...28bce0` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x875f4e...738bb6` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x8a5226...e97615` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x8df7da...568ad7` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x9ec30a...516863` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xa384bc...0f4e0b` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xab4186...4a626b` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xc20099...406d3a` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xcceaed...8df8a9` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xd96ddb...fffb4b` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xe03746...dea803` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xebf1f9...c92861` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xfe9cc1...f49fa9` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x2973c9...58d21c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x2e4c7b...92b2e3` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xda0428...267a0e` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | n/a | 57 deployments: fantom `0x04d04f...0c565a`; fantom `0x075b7f...96283a`; fantom `0x0defef...5d968e`; fantom `0x17235b...121c35`; fantom `0x1a8c7d...75dd4d`; fantom `0x1f7a54...7420ed`; fantom `0x1f8e60...c5cdb7`; fantom `0x20aa24...f9754d`; fantom `0x2217ae...8dba55`; fantom `0x26b21e...e94572`; fantom `0x283e62...89ad98`; fantom `0x2f7134...b36558`; fantom `0x3303a5...d3622e`; fantom `0x35c052...3432ea`; fantom `0x36df0a...e38a35`; fantom `0x3e9d8f...3341a4`; fantom `0x3e9f34...a10251`; fantom `0x3f7e61...183a7c`; fantom `0x449ead...641561`; fantom `0x44f768...e0d47d`; fantom `0x466ebd...a6e86b`; fantom `0x46fcde...301f30`; fantom `0x4c0931...94ebef`; fantom `0x4f56f5...f8f897`; fantom `0x51d49f...560ba7`; fantom `0x5494b2...2a74df`; fantom `0x5b0390...721765`; fantom `0x63d555...febee6`; fantom `0x68d211...dacdfb`; fantom `0x6caa3e...1c33a8`; fantom `0x74d1d2...df92f4`; fantom `0x7e5f7d...febb9a`; fantom `0x80d741...cf014b`; fantom `0x80fe67...c81c7b`; fantom `0x87d057...b64a35`; fantom `0x9189a6...c595ed`; fantom `0x93d014...35eaac`; fantom `0xa45776...c3d452`; fantom `0xa90092...75d876`; fantom `0xb7c2dd...37a274`; fantom `0xbf76f8...cf7322`; fantom `0xc2218e...c902d1`; fantom `0xc5e2b0...8764cd`; fantom `0xcf8660...564889`; fantom `0xd204e3...c94d1e`; fantom `0xd4fcd1...0979ef`; fantom `0xdcaeee...c2eaed`; fantom `0xe034c8...89f7d8`; fantom `0xe1fe8b...e40e17`; fantom `0xe21ca4...1db6c7`; fantom `0xe62745...83c275`; fantom `0xf62faf...9815a6`; fantom `0xf6d943...dcd01b`; kava `0x54950c...909f57`; kava `0x82b341...37da11`; canto `0x82b341...37da11`; canto `0xb6193d...bd1bf2` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x0998d0...3c94d9` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x3b47f0...e29771` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x54950c...909f57` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x5bcd6c...746916` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x5bd75e...24e97f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x63f2a1...ae8bbc` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x8184fa...405990` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x991b6b...a2354f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xaa70d7...a9ad89` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xb4b567...40b62e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xb6ed26...a97131` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xbecbd5...3d10a7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xcc2587...d856bd` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xd91a46...cad8c0` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x35c052...3432ea` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | fantom | n/a | 47 deployments: fantom `0x04d04f...0c565a`; fantom `0x075b7f...96283a`; fantom `0x0defef...5d968e`; fantom `0x17235b...121c35`; fantom `0x1a8c7d...75dd4d`; fantom `0x1f7a54...7420ed`; fantom `0x1f8e60...c5cdb7`; fantom `0x20aa24...f9754d`; fantom `0x2217ae...8dba55`; fantom `0x26b21e...e94572`; fantom `0x283e62...89ad98`; fantom `0x2f7134...b36558`; fantom `0x3303a5...d3622e`; fantom `0x35c052...3432ea`; fantom `0x36df0a...e38a35`; fantom `0x3e9d8f...3341a4`; fantom `0x3e9f34...a10251`; fantom `0x3f7e61...183a7c`; fantom `0x449ead...641561`; fantom `0x44f768...e0d47d`; fantom `0x466ebd...a6e86b`; fantom `0x46fcde...301f30`; fantom `0x4c0931...94ebef`; fantom `0x4f56f5...f8f897`; fantom `0x51d49f...560ba7`; fantom `0x5494b2...2a74df`; fantom `0x68d211...dacdfb`; fantom `0x6caa3e...1c33a8`; fantom `0x74d1d2...df92f4`; fantom `0x7e5f7d...febb9a`; fantom `0x80d741...cf014b`; fantom `0x80fe67...c81c7b`; fantom `0x87d057...b64a35`; fantom `0x9189a6...c595ed`; fantom `0x93d014...35eaac`; fantom `0xa45776...c3d452`; fantom `0xbf76f8...cf7322`; fantom `0xc2218e...c902d1`; fantom `0xc5e2b0...8764cd`; fantom `0xcf8660...564889`; fantom `0xd4fcd1...0979ef`; fantom `0xdcaeee...c2eaed`; fantom `0xe1fe8b...e40e17`; fantom `0xe21ca4...1db6c7`; fantom `0xe62745...83c275`; fantom `0xf62faf...9815a6`; fantom `0xf6d943...dcd01b` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [skynet.certik.com/projects/tarot](https://skynet.certik.com/projects/tarot) | CertiK | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [skynet.certik.com/projects/tarot](https://skynet.certik.com/projects/tarot) | CertiK | Audit | 2022-08 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | medium |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [3202] skynet.certik.com/projects/tarot — no match: Extracted from 'Audited Files' section; only two files explicitly listed. The report mentions 'View 255 Audited Files' but only two are shown. Date from 'Last Audit was delivered on 8/3/2022'.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| skynet.certik.com/projects/tarot | InterestRateModel | unmatched — not counted | — | Audited Files/SHA256BInterestRateModel.solA80...A5AC | no |
+| skynet.certik.com/projects/tarot | Storage | unmatched — not counted | — | Audited Files/SHA256BStorage.sol0EC...083 | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| optimism | `0x54b006...7d5420` | BDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x952e9c...30335a` | BDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x5f90e2...e46401` | CDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xeb5809...dfc12d` | CDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x1d90fd...d0989e` | Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x49df1f...db62bf` | Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x8b2e28...9f0723` | Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xd7cabe...5fc83c` | Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x2217ae...8dba55` | Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xc20099...406d3a` | Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x2217ae...8dba55` | Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x4b6dae...dd4723` | Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0xc20099...406d3a` | Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x88c81e...06172e` | Router02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x8a3b1b...f53d8c` | Router02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xa516b9...84405f` | Router02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xd4a6a0...e01741` | Router02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x002235...1d07b4` | Router02 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x1cafcb...54b653` | Router02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x46fcde...301f30` | Router02 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x8184fa...405990` | Router03 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xb6ed26...a97131` | Router03 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x66e9b3...9f4859` | VeloStableVaultTokenFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xee1ecc...96cf70` | VeloStableVaultTokenFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x19283d...92dc52` | VeloVaultTokenFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x54950c...909f57` | ZipVaultTokenFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 0 |
+| native | 26 |
+| upstream | 1 |
 | standard_library | 0 |
-| needs_review | 57 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -165,7 +241,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 2 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: medium=1
 - Match method counts: n/a
 
 Zero-match audit list:

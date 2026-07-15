@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 /// @title Return stats on base LSTs
 interface ILSTStats {
@@ -21,7 +21,7 @@ interface ILSTStats {
     /// @return ethPerShare the backing eth for the LST
     function calculateEthPerToken() external view returns (uint256 ethPerShare);
 
-    /// @notice Get if the underlying LST token is rebasing
-    /// @return rebasing is true if the lst is a rebasing token
-    function isRebasing() external view returns (bool rebasing);
+    /// @notice Returns whether to use the market price when calculating discount
+    /// @dev Will be true for rebasing tokens and other non-standard tokens
+    function usePriceAsDiscount() external view returns (bool useAsDiscount);
 }

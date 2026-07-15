@@ -1,14 +1,26 @@
 # Agentic Audit Brief: Zama
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 3 (0 matched; 3 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Zama (`zama`)
 - Website: [https://www.zama.org/](https://www.zama.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:17.923Z
-- Pipeline run: v2-2026-07-02-1ba3fd
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
+- Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $141,503,669.16
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
@@ -20,21 +32,50 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+This brief describes the observed EVM deployment and audit surface for Zama. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
+
+### Architecture
+
+The pinned logic-topography run contains 1 contract row(s) across ethereum. Structural roles: 1 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 1
+- Structural roles: core (1)
+- Contract kinds: contract (1)
+- Detected standards: accesscontrol (1), erc165 (1), erc20 (1), erc20permit (1), pausable (1)
+- Frameworks: openzeppelin (1)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 1 contracts are derived from known codebases. 1 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- ZamaERC20 (`0xa12cc1...49f4f3`, chain 1)
 
 ## Contract Surface Quality
 
 - Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 1/1 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Coverage of address-book-owned deployed-live implementations: 0/1 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
 - Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/1
+- All verified address-book-owned implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
@@ -60,9 +101,9 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| ZamaERC20 | unknown | ethereum | n/a | [`0xa12cc1...49f4f3`](./contracts/ethereum-1/0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| ZamaERC20 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-263621 | `0xa12cc1...49f4f3` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,26 +125,70 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [www.openzeppelin.com/news/zama-confidential-fungible-token-audit](https://www.openzeppelin.com/news/zama-confidential-fungible-token-audit) | OpenZeppelin | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
-| [www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit](https://www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit) | OpenZeppelin | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
-| [www.openzeppelin.com/news/tokenops-zama-confidential-airdrop-audit](https://www.openzeppelin.com/news/tokenops-zama-confidential-airdrop-audit) | OpenZeppelin | Audit | 2026-01 | fresh | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [www.openzeppelin.com/news/zama-confidential-fungible-token-audit](https://www.openzeppelin.com/news/zama-confidential-fungible-token-audit) | OpenZeppelin | Audit | 2026-03 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 6 | high |
+| [www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit](https://www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit) | OpenZeppelin | Audit | 2026-03 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 16 | high |
+| [www.openzeppelin.com/news/tokenops-zama-confidential-airdrop-audit](https://www.openzeppelin.com/news/tokenops-zama-confidential-airdrop-audit) | OpenZeppelin | Audit | 2026-01 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [21254] www.openzeppelin.com/news/zama-confidential-fungible-token-audit — no match: All six files listed in the Scope section are extracted. The audit date is explicitly given as 'March 18, 2026' in the header.
+- [21255] www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit — no match: Extracted 16 contract names from the scope section listing files in the contracts/ directory. Audit date is March 18, 2026 from the title area.
+- [21256] www.openzeppelin.com/news/tokenops-zama-confidential-airdrop-audit — no match: All contracts listed in the Scope section of the report.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| www.openzeppelin.com/news/zama-confidential-fungible-token-audit | IConfidentialFungibleToken | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-fungible-token-audit | IConfidentialFungibleTokenReceiver | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-fungible-token-audit | ConfidentialFungibleTokenERC20Wrapper | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-fungible-token-audit | ConfidentialFungibleTokenUtils | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-fungible-token-audit | ConfidentialFungibleToken | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-fungible-token-audit | TFHESafeMath | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | VestingWalletConfidential | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | VestingWalletConfidentialFactory | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | IERC7984 | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | IERC7984Receiver | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | IERC7984Rwa | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | ERC7984 | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | ERC7984ERC20Wrapper | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | ERC7984Freezable | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | ERC7984ObserverAccess | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | ERC7984Omnibus | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | ERC7984Restricted | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | ERC7984Rwa | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | ERC7984Votes | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | ERC7984Utils | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | FHESafeMath | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/zama-confidential-contracts-0.3.0-release-audit | temporary-Checkpoints | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/tokenops-zama-confidential-airdrop-audit | CREATE3Deployer | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/tokenops-zama-confidential-airdrop-audit | ConfidentialAirdropFactory | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/tokenops-zama-confidential-airdrop-audit | IConfidentialAirdropCloneable | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/tokenops-zama-confidential-airdrop-audit | IConfidentialAirdropFactory | unmatched — not counted | — | listed in scope | no |
+| www.openzeppelin.com/news/tokenops-zama-confidential-airdrop-audit | ConfidentialAirdropCloneable | unmatched — not counted | — | listed in scope | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0xa12cc1...49f4f3` | ZamaERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -111,7 +196,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 27 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=3
 - Match method counts: n/a
 
 Zero-match audit list:

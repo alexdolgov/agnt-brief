@@ -41,18 +41,6 @@ contract Bridge is Pool {
     // min allowed max slippage uint32 value is slippage * 1M, eg. 0.5% -> 5000
     uint32 public minimalMaxSlippage;
 
-    /**
-     * @notice Send a cross-chain transfer via the liquidity pool-based bridge.
-     * NOTE: This function DOES NOT SUPPORT fee-on-transfer / rebasing tokens.
-     * @param _receiver The address of the receiver.
-     * @param _token The address of the token.
-     * @param _amount The amount of the transfer.
-     * @param _dstChainId The destination chain ID.
-     * @param _nonce A number input to guarantee uniqueness of transferId. Can be timestamp in practice.
-     * @param _maxSlippage The max slippage accepted, given as percentage in point (pip). Eg. 5000 means 0.5%.
-     * Must be greater than minimalMaxSlippage. Receiver is guaranteed to receive at least (100% - max slippage percentage) * amount or the
-     * transfer can be refunded.
-     */
     function send(
         address _receiver,
         address _token,
@@ -66,16 +54,6 @@ contract Bridge is Pool {
         emit Send(transferId, msg.sender, _receiver, _token, _amount, _dstChainId, _nonce, _maxSlippage);
     }
 
-    /**
-     * @notice Send a cross-chain transfer via the liquidity pool-based bridge using the native token.
-     * @param _receiver The address of the receiver.
-     * @param _amount The amount of the transfer.
-     * @param _dstChainId The destination chain ID.
-     * @param _nonce A unique number. Can be timestamp in practice.
-     * @param _maxSlippage The max slippage accepted, given as percentage in point (pip). Eg. 5000 means 0.5%.
-     * Must be greater than minimalMaxSlippage. Receiver is guaranteed to receive at least (100% - max slippage percentage) * amount or the
-     * transfer can be refunded.
-     */
     function sendNative(
         address _receiver,
         uint256 _amount,
@@ -103,7 +81,6 @@ contract Bridge is Pool {
         require(_maxSlippage > minimalMaxSlippage, "max slippage too small");
         bytes32 transferId = keccak256(
             // uint64(block.chainid) for consistency as entire system uses uint64 for chain id
-            // len = 20 + 20 + 20 + 32 + 8 + 8 + 8 = 116
             abi.encodePacked(msg.sender, _receiver, _token, _amount, _dstChainId, _nonce, uint64(block.chainid))
         );
         require(transfers[transferId] == false, "transfer exists");
@@ -111,14 +88,6 @@ contract Bridge is Pool {
         return transferId;
     }
 
-    /**
-     * @notice Relay a cross-chain transfer sent from a liquidity pool-based bridge on another chain.
-     * @param _relayRequest The serialized Relay protobuf.
-     * @param _sigs The list of signatures sorted by signing addresses in ascending order. A relay must be signed-off by
-     * +2/3 of the bridge's current signing power to be delivered.
-     * @param _signers The sorted list of signers.
-     * @param _powers The signing powers of the signers.
-     */
     function relay(
         bytes calldata _relayRequest,
         bytes[] calldata _sigs,
@@ -128,7 +97,6 @@ contract Bridge is Pool {
         bytes32 domain = keccak256(abi.encodePacked(block.chainid, address(this), "Relay"));
         verifySigs(abi.encodePacked(domain, _relayRequest), _sigs, _signers, _powers);
         PbBridge.Relay memory request = PbBridge.decRelay(_relayRequest);
-        // len = 20 + 20 + 20 + 32 + 8 + 8 + 32 = 140
         bytes32 transferId = keccak256(
             abi.encodePacked(
                 request.sender,

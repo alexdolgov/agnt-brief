@@ -1,13 +1,18 @@
 {
   "component": "JBPrices-2",
   "main_contract": "JBPrices",
+  "source_entry_count": 27,
   "source_file_count": 27,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/JBPrices-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://code4rena.com/reports/2022-07-juicebox",
-    "https://docs.juicebox.money/assets/files/certik-audit-report-12b48328d22ac38207dad74162cac1db.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -15,7 +20,9 @@
       "address": "0x9b90e507cf6b7eb681a506b111f6f50245e614c4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395604"
     }
   ]
 }

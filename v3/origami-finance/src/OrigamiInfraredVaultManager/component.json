@@ -1,7 +1,15 @@
 {
   "component": "OrigamiInfraredVaultManager",
   "main_contract": "OrigamiInfraredVaultManager",
+  "source_entry_count": 43,
   "source_file_count": 43,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OrigamiInfraredVaultManager\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -16,7 +24,9 @@
       "address": "0x05d3461514e769f657ffe71233d6fc2546457b79",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403622"
     }
   ]
 }

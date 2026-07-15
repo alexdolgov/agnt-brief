@@ -1,82 +1,31 @@
 {
   "component": "ERC1967Proxy-2",
   "main_contract": "ERC1967Proxy",
-  "source_file_count": 13,
-  "deployment_count": 9,
-  "audited": false,
-  "audits_covering": [],
+  "source_entry_count": 17,
+  "source_file_count": 17,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Proxy-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.chainsecurity.com/security-audit/openeden-usdo",
+    "https://www.chainsecurity.com/security-audit/openeden-usdoexpress"
+  ],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x5be49eb6f4a363212c0efe5441bd904e22c02657",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x5ddb321c2080ee2c307a76a6adf3265b987e536c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x6b0e0898e6b379a878a21ae3359c7fe52ea098ca",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x736056aea2e5e69395820dc60b6ca9584ba79453",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x73fa6025602f92018401b14a0832d56bb8c81e2c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x8ecfe01e93aafbabb35e20caef8b276e8d6f7cd4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x9351b31fe6a51592a4c40af46538a4f66b0190d5",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xe55ef49e8c205bd4b640f30beb70e00fe1b877ee",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xfce60bbc52a5705cec5b445501fbaf3274dc43d0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8238884ec9668ef77b90c6dff4d1a9f4f4823bfe",
+      "is_proxy": true,
+      "implementation_address": "0x87e3ba929c71c0e28fc1c817d107a888a59c523e",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397549"
     }
   ]
 }

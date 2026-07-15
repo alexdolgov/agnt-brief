@@ -1,45 +1,73 @@
 # Agentic Audit Brief: Hastra
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Hastra (`hastra`)
 - Website: [https://hastra.io/](https://hastra.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:58.334Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 3 unique implementations (5 raw deployments)
+- Contract surface: 7 unique implementations (12 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $407,592,146.84
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+This brief describes the observed EVM deployment and audit surface for Hastra. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
+
+### Architecture
+
+The pinned logic-topography run contains 12 contract row(s) across ethereum. Structural roles: 7 unclassified, 3 core, 2 infra. 5 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 12
+- Structural roles: unclassified (7), core (3), infra (2)
+- Contract kinds: contract (12)
+- Detected standards: erc1967proxy (5), accesscontrol (3), erc165 (3), pausable (3), erc20 (2), erc20permit (2), erc4626 (2)
+- Frameworks: openzeppelin (5), openzeppelin-upgradeable (3), chainlink (1)
+- Upgradeable-pattern rows: 5
 
 ## Contract Surface Quality
 
-- Indexed contracts: 18; live-surface contracts included: 5 (5 live, 0 unknown).
-- Excluded by liveness: 13 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 12; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/3 (0.0%)
-- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/3
-- Verified + Unaudited implementations: 3
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 7 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (1 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 6
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 3
-- Raw deployments: 5
+- Unique implementations: 7
+- Raw deployments: 12
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -58,13 +86,16 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (6)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| HastraAutoNavEngine | unknown | ethereum | n/a | 3 deployments: ethereum [`0x3c331b...69f443`](./contracts/ethereum-1/0x3c331b892f193fcdbb9f9c2f227fe56c6169f443/); ethereum `0x748d07...b14da3`; ethereum `0xd52452...29bc75` | ⚠️ Unaudited |
-| HastraNavEngine | unknown | ethereum | n/a | [`0x1376de...30c3a7`](./contracts/ethereum-1/0x1376de100324d42337f1a2c08351d7242f30c3a7/) | ⚠️ Unaudited |
-| HastraSMBNavEngine | unknown | ethereum | n/a | [`0x9fd0b0...db019e`](./contracts/ethereum-1/0x9fd0b0ef9fb4591a7c315bc19f0fb29a9edb019e/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AutoStakingVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241742 | `0x997e2e...ee1da9` | ⚠️ Unaudited |
+| FeedVerifier | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241744 | 2 deployments: ethereum `0xbc6023...a5d937`; ethereum `0xdf4ab2...64d6a3` | ⚠️ Unaudited |
+| HastraNavEngine | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241740 | 2 deployments: ethereum `0x1376de...30c3a7`; ethereum `0xfed839...e4eca9` | ⚠️ Unaudited |
+| SMBStakingVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241741 | 2 deployments: ethereum `0x49c62f...c59bec`; ethereum `0xbd4953...9bf3d9` | ⚠️ Unaudited |
+| StakingVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241743 | 2 deployments: ethereum `0x19ebb3...65f7f6`; ethereum `0x90fd84...5a5abd` | ⚠️ Unaudited |
+| YieldVault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241745 | 2 deployments: ethereum `0x6ad038...9a66cc`; ethereum `0xda962f...6d1a1d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -78,17 +109,34 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0xa0b869...06eb48` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Hastra_vault-mint_&_vault-stake_Solana_Programs_Summary_Audit_Report.pdf](https://hastra.io/Hastra_vault-mint_&_vault-stake_Solana_Programs_Summary_Audit_Report.pdf) | unknown | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Hastra_vault-mint_&_vault-stake_Solana_Programs_Summary_Audit_Report.pdf](https://hastra.io/Hastra_vault-mint_&_vault-stake_Solana_Programs_Summary_Audit_Report.pdf) | unknown | Audit | 2025-11 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [13220] Hastra_vault-mint_&_vault-stake_Solana_Programs_Summary_Audit_Report.pdf — no match: The report explicitly states the audit scope as the Hastra vault-mint and vault-stake Solana programs. The date is from the 'Last updated' field.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Hastra_vault-mint_&_vault-stake_Solana_Programs_Summary_Audit_Report.pdf | vault-mint | unmatched — not counted | — | mentioned as a Solana program in scope | no |
+| Hastra_vault-mint_&_vault-stake_Solana_Programs_Summary_Audit_Report.pdf | vault-stake | unmatched — not counted | — | mentioned as a Solana program in scope | no |
 
 ## Coverage Gaps
 
@@ -100,10 +148,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 6 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -111,7 +159,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 2 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1
 - Match method counts: n/a
 
 Zero-match audit list:

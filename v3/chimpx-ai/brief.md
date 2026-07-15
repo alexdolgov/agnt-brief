@@ -1,44 +1,85 @@
 # Agentic Audit Brief: ChimpX AI
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: ChimpX AI (`chimpx-ai`)
 - Website: [https://chimpx.ai/](https://chimpx.ai/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:39.416Z
-- Pipeline run: v2-2026-07-02-1ba3fd
-- Chains: linea
-- Contract surface: 5 unique implementations (5 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: bsc, linea
+- Contract surface: 6 unique implementations (6 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $118,141.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+The closed normalized authority records no EVM contract logic or eligible security audit for this project. This is an explicit cohort state, not a skipped export.
+
 ## Project Description
 
-DEX Aggregator. Structurally: 5 project-authored contract(s) across 1 chain(s); role-gated via AccessControl; built on openzeppelin.
+No contract logic was present for ChimpX AI in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol forms a single structural family (Core Logic) of 5 contract(s).
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 1 contracts are derived from known codebases. 1 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x6b6cda...993bd6`, chain 56)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 1/1 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/5 (0.0%)
-- Deployed-live implementations: 5 of 5 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/5
-- Verified + Unaudited implementations: 5
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 5 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 1 of 6 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 5
-- Raw deployments: 5
+- Unverified implementations: 1
+- Unique implementations: 6
+- Raw deployments: 6
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -59,13 +100,13 @@ The protocol forms a single structural family (Core Logic) of 5 contract(s).
 
 ### ⚠️ Verified + Unaudited (5)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Authorizer | unknown | linea | n/a | [`0x7adcda...64a1a1`](./contracts/linea-59144/0x7adcda7bbe51376b190814d76a423de6df64a1a1/) | ⚠️ Unaudited |
-| ComposableStablePoolFactory | unknown | linea | n/a | [`0x55813e...773524`](./contracts/linea-59144/0x55813edb4b83a3286bb69c826cb81bf8c7773524/) | ⚠️ Unaudited |
-| ProtocolFeePercentagesProvider | unknown | linea | n/a | [`0xd69300...57e5c9`](./contracts/linea-59144/0xd69300d71133cedba6b317d16a67aa794d57e5c9/) | ⚠️ Unaudited |
-| Vault | unknown | linea | n/a | [`0x286381...729695`](./contracts/linea-59144/0x286381aedd20e51f642fe4a200b5cb2fe3729695/) | ⚠️ Unaudited |
-| WeightedPoolFactory | unknown | linea | n/a | [`0x0a5064...e14b30`](./contracts/linea-59144/0x0a5064b28df6d028b8e04299ddb972d03be14b30/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Authorizer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x7adcda...64a1a1` | ⚠️ Unaudited |
+| ComposableStablePoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x55813e...773524` | ⚠️ Unaudited |
+| ProtocolFeePercentagesProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0xd69300...57e5c9` | ⚠️ Unaudited |
+| Vault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x286381...729695` | ⚠️ Unaudited |
+| WeightedPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | linea | n/a | `0x0a5064...e14b30` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -79,16 +120,24 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-381686 | `0x6b6cda...993bd6` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -100,10 +149,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 5 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -111,6 +160,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

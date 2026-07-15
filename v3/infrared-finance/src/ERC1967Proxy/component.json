@@ -1,8 +1,16 @@
 {
   "component": "ERC1967Proxy",
   "main_contract": "ERC1967Proxy",
+  "source_entry_count": 8,
   "source_file_count": 8,
-  "deployment_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Proxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 7,
   "audited": true,
   "audits_covering": [
     "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20-%20Zenith%20Audit%20Report%2009.07.2025.pdf",
@@ -13,7 +21,8 @@
     "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-1201.pdf",
     "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-5.pdf",
     "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared-pr647.pdf",
-    "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared.pdf"
+    "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared.pdf",
+    "https://github.com/infrared-dao/contracts/blob/master/audits/report-competition-infrared-contracts.pdf"
   ],
   "addresses": [
     {
@@ -22,7 +31,9 @@
       "address": "0x04cddc538ea65908106416986adaecefd4cab7d7",
       "is_proxy": true,
       "implementation_address": "0xe18e88631e0b497180f440ff895981d99bc3e24b",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395286"
     },
     {
       "chain": "chain-80094",
@@ -30,15 +41,9 @@
       "address": "0x1fad980dfaff71e3fdd9bef643ab2ff2bdc4ccd6",
       "is_proxy": true,
       "implementation_address": "0x742ebbf91a37064e89e5628d139070b73aa90247",
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-80094",
-      "chain_id": 80094,
-      "address": "0x742ebbf91a37064e89e5628d139070b73aa90247",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395287"
     },
     {
       "chain": "chain-80094",
@@ -46,7 +51,9 @@
       "address": "0x8c0e122960dc2e97dc0059c07d6901dce72818e1",
       "is_proxy": true,
       "implementation_address": "0x367cbfd767de1452415d24fae29c0fde206bac8d",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395294"
     },
     {
       "chain": "chain-80094",
@@ -54,15 +61,9 @@
       "address": "0x8d44170e120b80a7e898bfba8cb26b01ad21298c",
       "is_proxy": true,
       "implementation_address": "0xd5a302834425870db03c23bdc846f3078c668bcb",
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-80094",
-      "chain_id": 80094,
-      "address": "0x960a7791322e2ddf5aba61b467bd8718377c5301",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395295"
     },
     {
       "chain": "chain-80094",
@@ -70,7 +71,9 @@
       "address": "0x9b6761bf2397bb5a6624a856cc84a3a14dcd3fe5",
       "is_proxy": true,
       "implementation_address": "0xc0654903c7d76f7fe63f9ad2f01618c3b55d9dcf",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395296"
     },
     {
       "chain": "chain-80094",
@@ -78,31 +81,19 @@
       "address": "0xb71b3daea39012fb0f2b14d2a9c86da9292fc126",
       "is_proxy": true,
       "implementation_address": "0x6d4e881a7fefe098c6434fa9fa6d6695dad331b5",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395301"
     },
     {
       "chain": "chain-80094",
       "chain_id": 80094,
-      "address": "0xc0654903c7d76f7fe63f9ad2f01618c3b55d9dcf",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-80094",
-      "chain_id": 80094,
-      "address": "0xd5a302834425870db03c23bdc846f3078c668bcb",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-80094",
-      "chain_id": 80094,
-      "address": "0xe18e88631e0b497180f440ff895981d99bc3e24b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "address": "0xf6a4a6acecd5311327ae3866624486b6179fef97",
+      "is_proxy": true,
+      "implementation_address": "0xab2dadd15af962b036d361849c024a3f70b18254",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395305"
     }
   ]
 }

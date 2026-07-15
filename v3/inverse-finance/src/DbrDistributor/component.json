@@ -1,10 +1,20 @@
 {
   "component": "DbrDistributor",
   "main_contract": "DbrDistributor",
-  "source_file_count": 6,
+  "source_entry_count": 2,
+  "source_file_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DbrDistributor\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://www.inverse.finance/audits/firm-nomoi.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +22,9 @@
       "address": "0xdcd2d918511ba39f2872eb731bb88681ae184244",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395450"
     }
   ]
 }

@@ -1,58 +1,28 @@
 {
   "component": "RealityProxy",
   "main_contract": "RealityProxy",
-  "source_file_count": 6,
-  "deployment_count": 6,
+  "source_entry_count": 3,
+  "source_file_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RealityProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "gnosis",
       "chain_id": 100,
-      "address": "0x132bcfb0003234a791deb118f8271bcfda4037dd",
+      "address": "0xc260adfac11f97c001dc143d2a4f45b98e0f2d6c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x41ab65d6e3a0d015607cb765e1c20621a66aa10c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x691215e578dfe81fa7479814305fcdfb5b2c7d63",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0xdec7c093623e971ace6b023a15548b85a1c4a210",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0xee30cb9d605e04b4068fc09b30e182cf03503490",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0xf7e64845a8737466cad5687ffd718ef242e6e9af",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398783"
     }
   ]
 }

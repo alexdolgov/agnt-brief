@@ -1,8 +1,16 @@
 {
   "component": "mortgagefipoolusdtwbtc",
   "main_contract": "mortgagefipoolusdtwbtc",
-  "source_file_count": 18,
-  "deployment_count": 3,
+  "source_entry_count": 14,
+  "source_file_count": 14,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/mortgagefipoolusdtwbtc\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,23 +20,9 @@
       "address": "0x2f5aac46575f68fe600e99096ca38301a4520a91",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x9be2cf73e62dd3b5df4334d9a36888394822a33f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xc355f70f5f37f773e76e16d0e046c5f868d8ea72",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397147"
     }
   ]
 }

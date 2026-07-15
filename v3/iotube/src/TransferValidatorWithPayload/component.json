@@ -1,8 +1,16 @@
 {
   "component": "TransferValidatorWithPayload",
   "main_contract": "TransferValidatorWithPayload",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransferValidatorWithPayload\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,9 @@
       "address": "0xe7eba1cea51ec9b3accc16728e3b8786560c59d5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395391"
     },
     {
       "chain": "bsc",
@@ -20,15 +30,9 @@
       "address": "0x95c6f6af2c0fa069768203fda963d7626efc794a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x86b7a9470d93e5ebfd1c099e173bce86196c85b2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395396"
     },
     {
       "chain": "polygon",
@@ -36,7 +40,9 @@
       "address": "0x87e2d48de6cc2029ffc1a915462e4aa597890cd6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395401"
     }
   ]
 }

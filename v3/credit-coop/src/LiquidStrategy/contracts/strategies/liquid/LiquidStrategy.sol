@@ -38,7 +38,6 @@ contract LiquidStrategy is StrategyBase {
         asset = _asset;
         oracle = _oracle;
         ethenaEnabled = _ethenaEnabled;
-        divisor = 10 ** (18 - IERC20Metadata(address(_asset)).decimals());
     }
 
     /**
@@ -48,17 +47,6 @@ contract LiquidStrategy is StrategyBase {
         if (vault == sUSDe) {
             revert InvalidVaultAddress();
         }
-    }
-
-
-    /**
-     * @notice  - Approves a vault for use with the strategy
-     * @dev     - Only allows vaults that have the same native asset as the strategy
-     * @param _vault    - Address of the vault to approve
-     */
-    function _approveVault(address _vault) internal override {
-        _onlyNativeAsset(_vault);
-        super._approveVault(_vault);
     }
 
     /**
@@ -78,8 +66,8 @@ contract LiquidStrategy is StrategyBase {
     }
 
     /**
-     * @notice - Returns the value of the Ethena sUSDe held by the Strategy contract in terms of the Strategy's native asset.
-     * @return valueInAssets - Value of the USDA in terms of the Strategy's native asset.
+     * @notice - Returns the value of the Ethena assets held by the Strategy contract in terms of the Strategy's native asset.
+     * @return valueInAssets - Value of the Ethena assets in terms of the Strategy's native asset.
      */
     function valueOfUSDE() public view returns (uint256 valueInAssets) {
 
@@ -102,8 +90,16 @@ contract LiquidStrategy is StrategyBase {
         uint256 USDeAmount = IERC20(USDe).balanceOf(address(this));
 
         // calculate the value of the sUSDe in terms of the vault's native asset
-        valueInAssets += sUSDeAmount.mulDiv(sUSDePrice, assetPrice) / divisor;
-        valueInAssets += USDeAmount.mulDiv(USDePrice, assetPrice) / divisor;
+        if (IERC20Metadata(address(asset)).decimals() > 18) {
+            uint256 divisor = 10 ** (IERC20Metadata(address(asset)).decimals() - 18);
+            valueInAssets += sUSDeAmount.mulDiv(sUSDePrice, assetPrice) * divisor;
+            valueInAssets += USDeAmount.mulDiv(USDePrice, assetPrice) * divisor;
+        } else {
+            uint256 divisor = 10 ** (18 - IERC20Metadata(address(asset)).decimals());
+            valueInAssets += sUSDeAmount.mulDiv(sUSDePrice, assetPrice) / divisor;
+            valueInAssets += USDeAmount.mulDiv(USDePrice, assetPrice) / divisor;
+        }
+
     }
 
     /**
@@ -161,9 +157,9 @@ contract LiquidStrategy is StrategyBase {
      * @param targets   - Array of vaults to reallocate funds to/from.
      * @param amounts   - Array of amounts to reallocate to/from each vault (denominated in asset of the vault).
      * @param isDeposit - Array of booleans indicating whether to deposit or withdraw from each vault.
-     * @param minAmounts - Array of minimum assets to reallocate to/from each vault (denominated in asset of the vault).
+     * @param minAmountOuts - Array of minimum shares/assets to receive from each deposit/withdrawal.
      */
-    function reallocateFunds(address[] memory targets, uint256[] memory amounts, bool[] memory isDeposit, uint256[] memory minAmounts)
+    function reallocateFunds(address[] memory targets, uint256[] memory amounts, bool[] memory isDeposit, uint256[] memory minAmountOuts)
         external
         onlyOwner
         virtual
@@ -177,6 +173,10 @@ contract LiquidStrategy is StrategyBase {
             if (isDeposit[i]) {
                 asset.forceApprove(targets[i], amounts[i]);
                 uint256 sharesMinted = IERC4626(targets[i]).deposit(amounts[i], address(this));
+                if (minAmountOuts[i] > sharesMinted) {
+                    revert SlippageThresholdExceeded(targets[i], isDeposit[i], sharesMinted, minAmountOuts[i]);
+                }
+
                 emit VaultDeposit(targets[i], address(asset), amounts[i], sharesMinted);
                 asset.forceApprove(targets[i], 0);
             } else {
@@ -188,8 +188,8 @@ contract LiquidStrategy is StrategyBase {
 
                 // check slippage threshold is not exceeded after withdrawal
                 uint256 withdrawalAmount = asset.balanceOf(address(this)) - balanceBefore;
-                if (minAmounts[i] > withdrawalAmount) {
-                    revert SlippageThresholdExceeded(withdrawalAmount, minAmounts[i]);
+                if (minAmountOuts[i] > withdrawalAmount) {
+                    revert SlippageThresholdExceeded(targets[i], isDeposit[i], withdrawalAmount, minAmountOuts[i]);
                 }
 
                 emit VaultWithdraw(targets[i], address(asset), amounts[i], sharesBurned);
@@ -201,9 +201,10 @@ contract LiquidStrategy is StrategyBase {
      * @notice  - Migrates assets from one 4626 vault to another.
      * @param _currentVault - Address of the current 4626 vault to migrate from.
      * @param _newVault     - Address of the new 4626 vault to migrate to.
-     * @param _minAmount - Minimum amount of assets to migrate.
+     * @param _minDepositAmount - Minimum amount of assets to deposit into the new ERC4626 vault.
+     * @param _minSharesOut - Minimum amount of shares to mint in the new ERC4626 vault.
      */
-    function migrateFrom4626(address _currentVault, address _newVault, uint256 _minAmount) external onlyOwner {
+    function migrateFrom4626(address _currentVault, address _newVault, uint256 _minDepositAmount, uint256 _minSharesOut) external onlyOwner {
         _notStakedUSDE(_currentVault);
         _notStakedUSDE(_newVault);
         _approveVault(_newVault);
@@ -216,13 +217,17 @@ contract LiquidStrategy is StrategyBase {
 
         // Check amount to deposit into new vault is at least the minimum amount
         uint256 depositAmount = asset.balanceOf(address(this)) - balanceBefore;
-        if (_minAmount > depositAmount) {
-            revert SlippageThresholdExceeded(depositAmount, _minAmount);
+        if (_minDepositAmount > depositAmount) {
+            revert SlippageThresholdExceeded(address(asset), true, depositAmount, _minDepositAmount);
         }
 
         // Deposit the withdrawn assets into the new vault
         asset.forceApprove(_newVault, depositAmount);
         uint256 sharesMinted = IERC4626(_newVault).deposit(depositAmount, address(this));
+        if (_minSharesOut > sharesMinted) {
+            revert SlippageThresholdExceeded(_newVault, true, sharesMinted, _minSharesOut);
+        }
+
         emit VaultDeposit(_newVault, address(this), depositAmount, sharesMinted);
         asset.forceApprove(_newVault, 0);
     }

@@ -1,13 +1,17 @@
 // SPDX-License-Identifier: AGPL-3.0
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.21;
 
 import "@solmate/auth/Owned.sol";
 import "@solmate/utils/ReentrancyGuard.sol";
+
+import "./InputChecker.sol";
 
 /// @title AddressManager
 /// @notice A contract that handles a whitelist of addresses and their indexes.
 /// @dev We assume no more than 65535 addresses will be added to the directory.
 contract AddressManager is Owned, ReentrancyGuard {
+    using InputChecker for address;
+
     event AddressAdded(address address_added);
 
     event AddressRemovedFromWhitelist(address address_removed);
@@ -28,7 +32,7 @@ contract AddressManager is Owned, ReentrancyGuard {
 
     constructor(address[] memory _original) Owned(msg.sender) {
         uint256 total = _original.length;
-        for (uint256 i; i < total; ) {
+        for (uint256 i; i < total;) {
             _add(_original[i]);
             unchecked {
                 ++i;
@@ -38,14 +42,15 @@ contract AddressManager is Owned, ReentrancyGuard {
 
     /// @notice Adds an address to the directory. If it already exists,
     ///        reverts. It assumes it's whitelisted.
-    function add(
-        address _entry
-    ) external onlyOwner nonReentrant returns (uint16) {
+    /// @param _entry The address to add.
+    /// @return The index of the address in the directory.
+    function add(address _entry) external payable onlyOwner returns (uint16) {
         return _add(_entry);
     }
 
     /// @notice Whitelist an address that's already part of the directory.
-    function addToWhitelist(address _entry) external onlyOwner {
+    /// @param _entry The address to whitelist.
+    function addToWhitelist(address _entry) external payable onlyOwner {
         if (_directory[_entry] == 0) {
             revert AddressNotAddedError(_entry);
         }
@@ -57,7 +62,7 @@ contract AddressManager is Owned, ReentrancyGuard {
     /// @notice Removes an address from the whitelist. We still keep it
     ///         in the directory since this mapping is relevant across time.
     /// @param _entry The address to remove from the whitelist.
-    function removeFromWhitelist(address _entry) external onlyOwner {
+    function removeFromWhitelist(address _entry) external payable onlyOwner {
         _whitelist[_entry] = false;
 
         emit AddressRemovedFromWhitelist(_entry);
@@ -82,10 +87,13 @@ contract AddressManager is Owned, ReentrancyGuard {
     }
 
     function _add(address _entry) private returns (uint16) {
+        _entry.checkNotZero();
         if (_directory[_entry] != 0) {
             revert AddressAlreadyAddedError(_entry);
         }
-        ++_lastAdded;
+        unchecked {
+            ++_lastAdded;
+        }
         _directory[_entry] = _lastAdded;
         _inverseDirectory[_lastAdded] = _entry;
         _whitelist[_entry] = true;

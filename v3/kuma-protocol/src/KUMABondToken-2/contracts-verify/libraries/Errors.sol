@@ -25,4 +25,6 @@ library Errors {
     error EMPTY_CUSIP_AND_ISIN();
     error INVALID_MAX_COUPON();
     error INVALID_COUPON(uint256 coupon, uint256 minCoupon, uint256 maxCoupon);
+    error ANSWER_VARIATION_TOO_HIGH();
+    error CANNOT_SET_NEGATIVE_MAX_ANSWER();
 }

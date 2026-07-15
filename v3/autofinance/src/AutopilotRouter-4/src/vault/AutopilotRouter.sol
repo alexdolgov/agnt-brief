@@ -240,18 +240,6 @@ contract AutopilotRouter is IAutopilotRouter, AutopilotRouterBase, ReentrancyGua
         permit2.permitTransferFrom(permit, transferDetails, msg.sender, signature);
     }
 
-    /// @inheritdoc IAutopilotRouter
-    function redeemProrata(
-        IAutopool vault,
-        address to,
-        uint256 shares,
-        uint256 minAmountOut
-    ) public payable override returns (uint256 amountOut) {
-        if ((amountOut = vault.redeemProrata(shares, to, msg.sender)) < minAmountOut) {
-            revert MinAmountError();
-        }
-    }
-
     modifier validateAccToke(
         address accToke
     ) {

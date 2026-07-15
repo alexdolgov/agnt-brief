@@ -2,66 +2,29 @@
 // This contract is licensed under the SYMM Core Business Source License 1.1
 // Copyright (c) 2023 Symmetry Labs AG
 // For more information, see https://docs.symm.io/legal-disclaimer/license
-pragma solidity >=0.8.18;
+pragma solidity >=0.8.19;
 
-import "../libraries/LibLockedValues.sol";
-
-enum LiquidationType {
-	NONE,
-	NORMAL,
-	LATE,
-	OVERDUE
-}
-
-struct SettlementState {
-	int256 actualAmount;
-	int256 expectedAmount;
-	uint256 cva;
-	bool pending;
-}
-
-struct LiquidationDetail {
-	bytes liquidationId;
-	LiquidationType liquidationType;
-	int256 upnl;
-	int256 totalUnrealizedLoss;
-	uint256 deficit;
-	uint256 liquidationFee;
-	uint256 timestamp;
-	uint256 involvedPartyBCounts;
-	int256 partyAAccumulatedUpnl;
-	bool disputed;
-	uint256 liquidationTimestamp;
-}
-
-struct Price {
-	uint256 price;
-	uint256 timestamp;
-}
+import { Withdraw, ExpressWithdrawProviderConfig } from "../types/WithdrawTypes.sol";
+import { ScheduledReleaseBalance } from "../types/BalanceTypes.sol";
 
 library AccountStorage {
 	bytes32 internal constant ACCOUNT_STORAGE_SLOT = keccak256("diamond.standard.storage.account");
 
 	struct Layout {
-		// Users deposited amounts
-		mapping(address => uint256) balances;
-		mapping(address => uint256) allocatedBalances;
-		// position value will become pending locked before openPosition and will be locked after that
-		mapping(address => LockedValues) pendingLockedBalances;
-		mapping(address => LockedValues) lockedBalances;
-		mapping(address => mapping(address => uint256)) partyBAllocatedBalances;
-		mapping(address => mapping(address => LockedValues)) partyBPendingLockedBalances;
-		mapping(address => mapping(address => LockedValues)) partyBLockedBalances;
-		mapping(address => uint256) withdrawCooldown; // is better to call lastDeallocateTime
-		mapping(address => uint256) partyANonces;
-		mapping(address => mapping(address => uint256)) partyBNonces;
-		mapping(address => bool) suspendedAddresses;
-		mapping(address => LiquidationDetail) liquidationDetails;
-		mapping(address => mapping(uint256 => Price)) symbolsPrices;
-		mapping(address => address[]) liquidators;
-		mapping(address => uint256) partyAReimbursement;
-		// partyA => partyB => SettlementState
-		mapping(address => mapping(address => SettlementState)) settlementStates;
+		mapping(address => mapping(address => ScheduledReleaseBalance)) balances; // user => collateral => balance
+		mapping(address => bool) hasConfiguredInterval;
+		mapping(address => uint256) releaseIntervals;
+		uint256 defaultReleaseInterval;
+		uint256 maxConnectedCounterParties;
+		mapping(address => bool) manualSync; // allows unlimited counter parties but require user to manual sync their balances (should be set to true for partyBs)
+		mapping(address => mapping(address => uint256)) nonces;
+		/////////////////////////////////////////////////////////
+		mapping(uint256 => Withdraw) withdrawals;
+		uint256 lastWithdrawId;
+		address invalidWithdrawalsAmountsPool;
+		mapping(address => mapping(address => ExpressWithdrawProviderConfig)) expressWithdrawProviderConfigs; // provider => collateral => config
+		/////////////////////////////////////////////////////////
+		mapping(address => mapping(address => bool)) externalTransferTargets; // target => collateral => isValid
 	}
 
 	function layout() internal pure returns (Layout storage l) {

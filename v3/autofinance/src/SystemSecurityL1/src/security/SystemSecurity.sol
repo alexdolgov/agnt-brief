@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { Roles } from "src/libs/Roles.sol";
 import { Errors } from "src/utils/Errors.sol";
@@ -8,6 +8,7 @@ import { SystemComponent } from "src/SystemComponent.sol";
 import { SecurityBase } from "src/security/SecurityBase.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
 import { ISystemSecurity } from "src/interfaces/security/ISystemSecurity.sol";
+import { TransientStorage } from "src/libs/TransientStorage.sol";
 
 /**
  * @notice Cross-contract system-level functionality around pausing and various security features.
@@ -23,8 +24,10 @@ abstract contract SystemSecurity is SystemComponent, SecurityBase, ISystemSecuri
     error SystemAlreadyPaused();
     error SystemNotPaused();
 
+    uint256 private constant _ALLOWED_AUTOPOOL = uint256(keccak256(bytes("_ALLOWED_AUTOPOOL"))) - 1;
+
     /// @notice How many NAV/share changing operations are in progress in the system
-    uint256 public navOpsInProgress = 0;
+    uint256 private _navOpsInProgress = 0;
 
     modifier onlyAutopool() {
         if (!systemRegistry.autoPoolRegistry().isVault(msg.sender)) {
@@ -33,21 +36,40 @@ abstract contract SystemSecurity is SystemComponent, SecurityBase, ISystemSecuri
         _;
     }
 
-    constructor(ISystemRegistry _systemRegistry)
-        SystemComponent(_systemRegistry)
-        SecurityBase(address(_systemRegistry.accessController()))
-    { }
+    modifier onlyAutopoolRouter() {
+        if ((address(systemRegistry.autoPoolRouter()) != msg.sender)) {
+            revert Errors.AccessDenied();
+        }
+        _;
+    }
+
+    constructor(
+        ISystemRegistry _systemRegistry
+    ) SystemComponent(_systemRegistry) SecurityBase(address(_systemRegistry.accessController())) { }
+
+    /// @inheritdoc ISystemSecurity
+    /// @dev This is function is used as guard to prevent malicious calls from user payloads into a different autopool
+    /// via the AutopilotRouter
+    function navOpsInProgress() external view returns (uint256) {
+        if (TransientStorage.dataExists(_ALLOWED_AUTOPOOL)) {
+            address autopool = abi.decode(TransientStorage.getBytes(_ALLOWED_AUTOPOOL), (address));
+            if (autopool != msg.sender) {
+                revert Errors.AccessDenied();
+            }
+        }
+        return _navOpsInProgress;
+    }
 
     /// @inheritdoc ISystemSecurity
     /// @notice Enters a NAV/share changing operation from an Autopool
     function enterNavOperation() external override onlyAutopool {
-        ++navOpsInProgress;
+        ++_navOpsInProgress;
     }
 
     /// @inheritdoc ISystemSecurity
     /// @notice Exits a NAV/share changing operation from an Autopool
     function exitNavOperation() external override onlyAutopool {
-        --navOpsInProgress;
+        --_navOpsInProgress;
     }
 
     /// @notice Pause every pausable contract in the system
@@ -70,5 +92,21 @@ abstract contract SystemSecurity is SystemComponent, SecurityBase, ISystemSecuri
         _systemPaused = false;
 
         emit SystemUnpaused(msg.sender);
+    }
+
+    /// @inheritdoc ISystemSecurity
+    function setAllowedAutopool(
+        address autopool
+    ) external onlyAutopoolRouter {
+        if (TransientStorage.dataExists(_ALLOWED_AUTOPOOL)) {
+            revert Errors.AccessDenied();
+        }
+
+        TransientStorage.setBytes(abi.encode(autopool), _ALLOWED_AUTOPOOL);
+    }
+
+    /// @inheritdoc ISystemSecurity
+    function clearAllowedAutopool() external onlyAutopoolRouter {
+        TransientStorage.clearBytes(_ALLOWED_AUTOPOOL);
     }
 }

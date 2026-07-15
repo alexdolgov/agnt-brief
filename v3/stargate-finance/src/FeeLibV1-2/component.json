@@ -1,98 +1,28 @@
 {
   "component": "FeeLibV1-2",
   "main_contract": "FeeLibV1",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 13,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FeeLibV1-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0x43f2376d5d03553ae72f4a8093bbe9de4336eb08",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x13379b489fb2e76cedf96bceaa2441e5930d75e1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x1502fa4be69d526124d453619276faccab275d3d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x17d65bf79e77b6ab21d8a0afed3bc8657d8ee0b2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
     {
       "chain": "chain-1088",
       "chain_id": 1088,
       "address": "0x19cfce47ed54a88614648dc3f19a5980097007dd",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x24576fe78583e3618079890557cf18b96779fb6d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x3fc69cc4a842838bcdc9499178740226062b14e4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x585138287a60ae9ee232238f31e8613ffd7e8c81",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x5eb3bbd97f8e0b612733f11c9eb33356ecf874b5",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x6ce9bf8cdab780416ad1fd87b318a077d2f50eac",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xc2b638cb5042c1b3c5d5c969361fb50569840583",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399589"
     },
     {
       "chain": "chain-1088",
@@ -100,7 +30,9 @@
       "address": "0xce8cca271ebc0533920c83d39f417ed6a0abb7d0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399598"
     },
     {
       "chain": "chain-1088",
@@ -108,7 +40,9 @@
       "address": "0xe8cdf27acd73a434d661c84887215f7598e7d0d3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399599"
     }
   ]
 }

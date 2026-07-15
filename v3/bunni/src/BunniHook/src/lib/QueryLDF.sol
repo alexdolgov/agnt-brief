@@ -27,6 +27,8 @@ using FixedPointMathLib for uint256;
 /// @param ldfState The current state of the liquidity density function
 /// @param balance0 The balance of token0 in the pool
 /// @param balance1 The balance of token1 in the pool
+/// @param idleBalance The idle balance of the pool, which is removed from the corresponding balance0/balance1
+/// when computing totalLiquidity.
 /// @return totalLiquidity The total liquidity in the pool
 /// @return totalDensity0X96 The total density of token0 in the pool, scaled by Q96
 /// @return totalDensity1X96 The total density of token1 in the pool, scaled by Q96
@@ -73,7 +75,7 @@ function queryLDF(
     ) = ldf.query(key, roundedTick, arithmeticMeanTick, tick, ldfParams, ldfState);
 
     (uint256 density0OfRoundedTickX96, uint256 density1OfRoundedTickX96) = LiquidityAmounts.getAmountsForLiquidity(
-        sqrtPriceX96, roundedTickSqrtRatio, nextRoundedTickSqrtRatio, uint128(liquidityDensityOfRoundedTickX96), true
+        sqrtPriceX96, roundedTickSqrtRatio, nextRoundedTickSqrtRatio, liquidityDensityOfRoundedTickX96, true
     );
     totalDensity0X96 = density0RightOfRoundedTickX96 + density0OfRoundedTickX96;
     totalDensity1X96 = density1LeftOfRoundedTickX96 + density1OfRoundedTickX96;

@@ -1,0 +1,25 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "yfii",
+  "missing": [
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x16cac1403377978644e78769daa49d8f6b6cf565",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0xaffcd3d45cef58b1dfa773463824c6f6bb0dc13a",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0xb81d3cb2708530ea990a287142b82d058725c092",
+      "canonical_source_address": null
+    }
+  ]
+}

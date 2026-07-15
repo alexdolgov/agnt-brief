@@ -37,7 +37,10 @@ interface IPair {
         bytes calldata data,
         address referrer
     ) external;
-    function getReserves() external view returns (uint112 reserve0, uint112 reserve1, uint32 blockTimestampLast);
+    function getReserves()
+        external
+        view
+        returns (uint112 reserve0, uint112 reserve1, uint32 blockTimestampLast);
     function token0() external view returns (address);
     function token1() external view returns (address);
     function stableSwap() external view returns (bool);
@@ -71,53 +74,44 @@ contract CamelotAdapter is YakAdapter {
         view
         returns (uint256 quoteAmount, address pair)
     {
-        if (_exactIn) {
-            pair = IFactory(FACTORY).getPair(_tokenIn, _tokenOut);
-            if (pair != address(0)) {
+        pair = IFactory(FACTORY).getPair(_tokenIn, _tokenOut);
+        if (pair != address(0)) {
+            if (_exactIn) {
                 quoteAmount = IPair(pair).getAmountOut(_amount, _tokenIn);
-            }
-        } else {
-            // For exactOut, we need to calculate amountIn
-            pair = IFactory(FACTORY).getPair(_tokenIn, _tokenOut);
-            if (pair != address(0)) {
-                // Try calling getAmountIn on the pair first
-                // If it fails (old pairs), fall back to our calculation
-                try IPair(pair).getAmountIn(_amount, _tokenOut) returns (uint256 amountIn) {
-                    quoteAmount = amountIn;
-                } catch {
-                    // Fallback: calculate amountIn using reserves and pair data
-                    (uint112 reserve0, uint112 reserve1,) = IPair(pair).getReserves();
-                    address token0 = IPair(pair).token0();
-                    address token1 = IPair(pair).token1();
-                    
-                    // Try to get fee percentage and stable swap flag
-                    uint16 feePercent = 500; // default 0.5% for old pairs
-                    bool stableSwap = false; // default to non-stable for old pairs
-                    
-                    // Try to get the actual fee from the pair if available
-                    try IPair(pair).token0FeePercent() returns (uint16 fee0) {
-                        try IPair(pair).token1FeePercent() returns (uint16 fee1) {
-                            // Use the appropriate fee based on which token is the output
-                            feePercent = _tokenOut == token1 ? fee0 : fee1;
-                        } catch {}
+            } else {
+                // For exactOut, we need to calculate amountIn
+                // Calculate amountIn using reserves and pair data
+                (uint112 reserve0, uint112 reserve1,) = IPair(pair).getReserves();
+                address token0 = IPair(pair).token0();
+                address token1 = IPair(pair).token1();
+
+                // Try to get fee percentage and stable swap flag
+                uint16 feePercent = 500; // default 0.5% for old pairs
+                bool stableSwap = false; // default to non-stable for old pairs
+
+                // Try to get the actual fee from the pair if available
+                try IPair(pair).token0FeePercent() returns (uint16 fee0) {
+                    try IPair(pair).token1FeePercent() returns (uint16 fee1) {
+                        // Use the appropriate fee based on which token is the output
+                        feePercent = _tokenOut == token1 ? fee0 : fee1;
                     } catch {}
-                    
-                    // Try to get stable swap flag if available
-                    try IPair(pair).stableSwap() returns (bool isStable) {
-                        stableSwap = isStable;
-                    } catch {}
-                    
-                    quoteAmount = CamelotLibrary.getAmountIn(
-                        _amount,
-                        _tokenOut,
-                        uint256(reserve0),
-                        uint256(reserve1),
-                        token0,
-                        token1,
-                        feePercent,
-                        stableSwap
-                    );
-                }
+                } catch {}
+
+                // Try to get stable swap flag if available
+                try IPair(pair).stableSwap() returns (bool isStable) {
+                    stableSwap = isStable;
+                } catch {}
+
+                quoteAmount = CamelotLibrary.getAmountIn(
+                    _amount,
+                    _tokenOut,
+                    uint256(reserve0),
+                    uint256(reserve1),
+                    token0,
+                    token1,
+                    feePercent,
+                    stableSwap
+                );
             }
         }
     }
@@ -142,14 +136,14 @@ contract CamelotAdapter is YakAdapter {
     ) internal override {
         (uint256 amountOut, address pair) = getQuoteAndPair(_amountIn, _tokenIn, _tokenOut, true);
         if (amountOut < _amountOut) revert InsufficientOutputAmount(amountOut, _amountOut);
-        
+
         // Check balance before swap
         uint256 balanceBefore = IERC20(_tokenOut).balanceOf(to);
-        
+
         (uint256 amount0Out, uint256 amount1Out) =
             (_tokenIn < _tokenOut) ? (uint256(0), amountOut) : (amountOut, uint256(0));
         IPair(pair).swap(amount0Out, amount1Out, to, new bytes(0), referrer);
-        
+
         // Verify the recipient received at least the minimum amount
         uint256 balanceAfter = IERC20(_tokenOut).balanceOf(to);
         uint256 actualReceived = balanceAfter - balanceBefore;

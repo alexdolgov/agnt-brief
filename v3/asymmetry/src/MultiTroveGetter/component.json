@@ -1,14 +1,18 @@
 {
   "component": "MultiTroveGetter",
   "main_contract": "MultiTroveGetter",
+  "source_entry_count": 28,
   "source_file_count": 28,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MultiTroveGetter\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/GalloDaSballo/bold-review",
-    "https://github.com/GalloDaSballo/bold-review/blob/main/bold-report.md",
-    "https://github.com/GalloDaSballo/bold-review/blob/main/bold.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -16,7 +20,9 @@
       "address": "0xb3683a407bddddfb126cf06fb52d974a08fd7e80",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391390"
     }
   ]
 }

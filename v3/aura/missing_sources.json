@@ -1,0 +1,13 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "aura",
+  "missing": [
+    {
+      "chain_id": 1101,
+      "chain": "chain-1101",
+      "address": "0xffa4587c1b2e373469ab6a8fe0ce4dbdb10282d5",
+      "canonical_source_address": null
+    }
+  ]
+}

@@ -1,8 +1,16 @@
 {
   "component": "TimeTreasury",
   "main_contract": "TimeTreasury",
+  "source_entry_count": 5,
   "source_file_count": 5,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TimeTreasury\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x3d183e4f3eef0191ecffafd7ffc5df8d38520fa9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x9d99ad8f5f9ce04253a31e3e31f9a438bd894285",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

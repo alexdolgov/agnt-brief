@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-pragma solidity ^0.8.21;
+pragma solidity >=0.5.0;
 
 import {
     IMetaMorpho,
@@ -9,9 +9,10 @@ import {
     MarketParams
 } from "../../lib/metamorpho/src/interfaces/IMetaMorpho.sol";
 
-/// @dev Equal to type(uint128).max/2, so flow caps can always be stored on 128 bits.
+/// @dev Max settable flow cap, such that caps can always be stored on 128 bits.
 /// @dev The actual max possible flow cap is type(uint128).max-1.
-uint128 constant MAX_SETTABLE_FLOW_CAP = 170141183460469231731687303715884105727;
+/// @dev Equals to 170141183460469231731687303715884105727;
+uint128 constant MAX_SETTABLE_FLOW_CAP = type(uint128).max / 2;
 
 struct FlowCaps {
     /// @notice The maximum allowed inflow in a market.
@@ -21,7 +22,9 @@ struct FlowCaps {
 }
 
 struct FlowCapsConfig {
+    /// @notice Market for which to change flow caps.
     Id id;
+    /// @notice New flow caps for this market.
     FlowCaps caps;
 }
 
@@ -35,12 +38,11 @@ struct Withdrawal {
 /// @dev This interface is used for factorizing IPublicAllocatorStaticTyping and IPublicAllocator.
 /// @dev Consider using the IPublicAllocator interface instead of this one.
 interface IPublicAllocatorBase {
-    /// @notice The address of the Morpho contract.
+    /// @notice The Morpho contract.
     function MORPHO() external view returns (IMorpho);
 
-    /// @notice The address of the owner of the public allocator config for a given vault.
-    /// @dev The owner of the underlying vault always has the public allocator owner capabilities.
-    function owner(address vault) external view returns (address);
+    /// @notice The admin for a given vault.
+    function admin(address vault) external view returns (address);
 
     /// @notice The current ETH fee for a given vault.
     function fee(address vault) external view returns (uint256);
@@ -53,7 +55,7 @@ interface IPublicAllocatorBase {
     /// @param withdrawals The markets to withdraw from,and the amounts to withdraw.
     /// @param supplyMarketParams The market receiving total withdrawn to.
     /// @dev Will call MetaMorpho's `reallocate`.
-    /// @dev Checks that the public allocator constraints (flows, caps) are respected.
+    /// @dev Checks that the flow caps are respected.
     /// @dev Will revert when `withdrawals` contains a duplicate or is not sorted.
     /// @dev Will revert if `withdrawals` contains the supply market.
     /// @dev Will revert if a withdrawal amount is larger than available liquidity.
@@ -61,8 +63,8 @@ interface IPublicAllocatorBase {
         external
         payable;
 
-    /// @notice Sets the owner for a given vault.
-    function setOwner(address vault, address newOwner) external;
+    /// @notice Sets the admin for a given vault.
+    function setAdmin(address vault, address newAdmin) external;
 
     /// @notice Sets the fee for a given vault.
     function setFee(address vault, uint256 newFee) external;

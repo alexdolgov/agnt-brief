@@ -1,44 +1,89 @@
 # Agentic Audit Brief: Ancient8
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Ancient8 (`ancient8`)
 - Website: [https://ancient8.gg/](https://ancient8.gg/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:27.133Z
-- Pipeline run: v2-2026-07-02-1ba3fd
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 12 unique implementations (12 raw deployments)
+- Contract surface: 22 unique implementations (22 raw deployments)
+- Coverage basis: 0/7 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $170,248.21
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Chain. Structurally: 12 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Ancient8. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Contracts are linked by 6 cross-contract reference(s). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 7 contract row(s) across ethereum. Structural roles: 5 core, 2 supporting. 5 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 7
+- Structural roles: core (5), supporting (2)
+- Contract kinds: contract (7)
+- Detected standards: erc1967proxy (3), ownable (2)
+- Frameworks: openzeppelin (4), openzeppelin-upgradeable (2), solmate (2)
+- Upgradeable-pattern rows: 5
+
+## Fork Analysis
+
+0 of 9 contracts are derived from known codebases. 9 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0xb09dc0...277996`, chain 1)
+- UnnamedContract (`0xd5e3ed...950033`, chain 1)
+- AddressManager (`0x15a52f...12dc82`, chain 1)
+- L1CrossDomainMessenger (`0x012c34...4ce2af`, chain 1)
+- L1ERC721Bridge (`0x132b34...1ebcaa`, chain 1)
+- OptimismMintableERC20Factory (`0xf2b7b6...e7089e`, chain 1)
+- OptimismPortal2 (`0x639f2a...bacb68`, chain 1)
+- ProxyAdmin (`0x75a223...b4b492`, chain 1)
+- SystemConfig (`0x0b4cfc...e3e8ec`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 12; live-surface contracts included: 12 (12 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 7; live-surface contracts included: 7 (7 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 9/18 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/12 (0.0%)
-- Deployed-live implementations: 12 of 12 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/12
-- Verified + Unaudited implementations: 12
+- Coverage of address-book-owned deployed-live implementations: 0/7 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 9 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 13 discovered implementations excluded (1 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 5
+- Deployed-live implementations: 9 of 22 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/7
+- Verified + Unaudited implementations: 7
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 12
-- Raw deployments: 12
+- Unverified implementations: 2
+- Unique implementations: 22
+- Raw deployments: 22
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -59,20 +104,20 @@ The protocol comprises 2 functional families. Contracts are linked by 6 cross-co
 
 ### ⚠️ Verified + Unaudited (12)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AddressManager | unknown | ethereum | n/a | [`0x15a52f...12dc82`](./contracts/ethereum-1/0x15a52fed1c448028a240b603dd93f2697e12dc82/) | ⚠️ Unaudited |
-| Ancient8 | unknown | ethereum | n/a | [`0x3e5a19...4062df`](./contracts/ethereum-1/0x3e5a19c91266ad8ce2477b91585d1856b84062df/) | ⚠️ Unaudited |
-| ERC20 | unknown | ethereum | n/a | [`0xf2e04d...38f302`](./contracts/ethereum-1/0xf2e04d727bb448082e9f2f27f7b64be9f438f302/) | ⚠️ Unaudited |
-| L1CrossDomainMessenger | unknown | ethereum | n/a | [`0x012c34...4ce2af`](./contracts/ethereum-1/0x012c341506ee1939e56084f43ae5dbce224ce2af/) | ⚠️ Unaudited |
-| L1ERC721Bridge | unknown | ethereum | n/a | [`0x132b34...1ebcaa`](./contracts/ethereum-1/0x132b3456300332d488f946b818eb9512931ebcaa/) | ⚠️ Unaudited |
-| L1StandardBridge | unknown | ethereum | n/a | [`0x12d4e6...36fb80`](./contracts/ethereum-1/0x12d4e64e1b46d27a00fe392653a894c1dd36fb80/) | ⚠️ Unaudited |
-| L2OutputOracle | unknown | ethereum | n/a | [`0x1f6161...90fbf6`](./contracts/ethereum-1/0x1f61619e8c228fb67204cd157a3e50aa6690fbf6/) | ⚠️ Unaudited |
-| OptimismMintableERC20Factory | unknown | ethereum | n/a | [`0xf2b7b6...e7089e`](./contracts/ethereum-1/0xf2b7b677d14f4f570d084d7d615254f984e7089e/) | ⚠️ Unaudited |
-| OptimismPortal | unknown | ethereum | n/a | [`0x9fc6a6...59e75e`](./contracts/ethereum-1/0x9fc6a608b45c6f129650c26a34bbe5d26959e75e/) | ⚠️ Unaudited |
-| OptimismPortal2 | unknown | ethereum | n/a | [`0x639f2a...bacb68`](./contracts/ethereum-1/0x639f2aece398aa76b07e59ef6abe2cfe32bacb68/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x75a223...b4b492`](./contracts/ethereum-1/0x75a223fb459461b9fa61dd25109ea05522b4b492/) | ⚠️ Unaudited |
-| SystemConfig | unknown | ethereum | n/a | [`0x0b4cfc...e3e8ec`](./contracts/ethereum-1/0x0b4cfc49acc656ce6d03cb0794860da92be3e8ec/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AddressManager | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226624 | `0x15a52f...12dc82` | ⚠️ Unaudited |
+| Ancient8 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3e5a19...4062df` | ⚠️ Unaudited |
+| ERC20 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf2e04d...38f302` | ⚠️ Unaudited |
+| L1CrossDomainMessenger | unknown | project_anchor | own_supporting | 1 | ethereum | unit-226636 | `0x012c34...4ce2af` | ⚠️ Unaudited |
+| L1ERC721Bridge | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226623 | `0x132b34...1ebcaa` | ⚠️ Unaudited |
+| L1StandardBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x12d4e6...36fb80` | ⚠️ Unaudited |
+| L2OutputOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1f6161...90fbf6` | ⚠️ Unaudited |
+| OptimismMintableERC20Factory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-226639 | `0xf2b7b6...e7089e` | ⚠️ Unaudited |
+| OptimismPortal | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9fc6a6...59e75e` | ⚠️ Unaudited |
+| OptimismPortal2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-226638 | `0x639f2a...bacb68` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | project_anchor | third_party_dependency | 0 | ethereum | unit-226628 | `0x75a223...b4b492` | ⚠️ Unaudited |
+| SystemConfig | unknown | project_anchor | own_supporting | 1 | ethereum | unit-226637 | `0x0b4cfc...e3e8ec` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,31 +131,55 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (10)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000006` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000007` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000010` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000015` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42847d...463df0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x97423a...57c0e5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226631 | `0xb09dc0...277996` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb76d6e...108d4e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226632 | `0xd5e3ed...950033` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd812d6...f0d424` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x15a52f...12dc82` | AddressManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x012c34...4ce2af` | L1CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x132b34...1ebcaa` | L1ERC721Bridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf2b7b6...e7089e` | OptimismMintableERC20Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x639f2a...bacb68` | OptimismPortal2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0b4cfc...e3e8ec` | SystemConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 11 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 12 |
+| standard_library | 1 |
+| needs_review | 10 |
 
 ## Scope Matching Notes
 
@@ -118,6 +187,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

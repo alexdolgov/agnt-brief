@@ -40,4 +40,6 @@ interface IDynaRouterRegistryAPI {
 	function getDefaultPairRoute(address tokenIn, address tokenOut) external view returns (Route memory defaultRoute);
 
 	function getDefaultPairRouter(address tokenIn, address tokenOut) external view returns (address defaultRouter);
+
+	function setTokenRouters(address token, address[] memory newRouters) external;
 }

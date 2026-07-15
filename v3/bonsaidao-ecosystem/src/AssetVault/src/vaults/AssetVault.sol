@@ -1,27 +1,28 @@
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.17;
 
-import { ERC4626 } from "solmate/mixins/ERC4626.sol";
+import { BaseVault } from "./BaseVault.sol";
 import { ERC20 } from "solmate/tokens/ERC20.sol";
 import { SafeTransferLib } from "solmate/utils/SafeTransferLib.sol";
+import { ReentrancyGuard } from "solmate/utils/ReentrancyGuard.sol";
 import { ShareMath } from "../libraries/ShareMath.sol";
 
-import { IAggregateVault } from "../interfaces/IAggregateVault.sol";
-import { AggregateVault } from "./AggregateVault.sol";
-import { GlobalACL } from "../Auth.sol";
+import { GlobalACL, REQUEST_HANDLER, AGGREGATE_VAULT_ROLE } from "../Auth.sol";
 import { PausableVault } from "../PausableVault.sol";
+import { AggregateVault } from "./AggregateVault.sol";
+import { AggregateVaultStorage } from "../storage/AggregateVaultStorage.sol";
 
 /// @title AssetVault
 /// @author Umami DAO
-/// @notice ERC4626 implementation for vault receipt tokens
-contract AssetVault is ERC4626, PausableVault, GlobalACL {
+/// @notice ERC4626-like implementation for vault receipt tokens
+contract AssetVault is BaseVault, PausableVault, GlobalACL, ReentrancyGuard {
     using SafeTransferLib for ERC20;
 
     /// @dev the aggregate vault for the strategy
     AggregateVault public aggregateVault;
 
     constructor(ERC20 _asset, string memory _name, string memory _symbol, address _aggregateVault)
-        ERC4626(_asset, _name, _symbol)
+        BaseVault(_asset, _name, _symbol)
         GlobalACL(AggregateVault(payable(_aggregateVault)).AUTH())
     {
         aggregateVault = AggregateVault(payable(_aggregateVault));
@@ -33,167 +34,181 @@ contract AssetVault is ERC4626, PausableVault, GlobalACL {
     /**
      * @notice Deposit a specified amount of assets and mint corresponding shares to the receiver
      * @param assets The amount of assets to deposit
+     * @param minOutAfterFees Minimum amount out after fees
      * @param receiver The address to receive the minted shares
-     * @return shares The amount of shares minted for the deposited assets
+     * @return shares The estimate amount of shares minted for the deposited assets
      */
-    function deposit(uint256 assets, address receiver)
+    function deposit(uint256 assets, uint256 minOutAfterFees, address receiver)
         public
+        payable
         override
-        whitelistDisabled
         whenDepositNotPaused
+        nonReentrant
         returns (uint256 shares)
     {
         // Check for rounding error since we round down in previewDeposit.
         require((shares = previewDeposit(assets)) != 0, "ZERO_SHARES");
-        require(tvl() + assets <= previewVaultCap(), "AssetVault: over vault cap");
-        // lock in pps before deposit handling
-        uint256 depositPPS = pps();
+        require(
+            totalAssets() + assets <= previewVaultCap() + asset.balanceOf(address(this)), "AssetVault: over vault cap"
+        );
         // Transfer assets to aggregate vault, transfer before minting or ERC777s could reenter.
-        asset.safeTransferFrom(msg.sender, address(aggregateVault), assets);
-        assets = aggregateVault.handleDeposit(asset, assets, msg.sender);
-
-        shares = ShareMath.assetToShares(assets, depositPPS, decimals);
-        _mint(receiver, shares);
+        asset.safeTransferFrom(msg.sender, address(this), assets);
+        aggregateVault.handleDeposit{ value: msg.value }(assets, minOutAfterFees, receiver, msg.sender, address(0));
 
         emit Deposit(msg.sender, receiver, assets, shares);
-
-        afterDeposit(assets, shares);
-    }
-
-    /**
-     * @notice Mint a specified amount of shares and deposit the corresponding amount of assets to the receiver
-     * @param shares The amount of shares to mint
-     * @param receiver The address to receive the deposited assets
-     * @return assets The amount of assets deposited for the minted shares
-     */
-    function mint(uint256 shares, address receiver)
-        public
-        override
-        whitelistDisabled
-        whenDepositNotPaused
-        returns (uint256 assets)
-    {
-        assets = previewMint(shares); // No need to check for rounding error, previewMint rounds up.
-        require(tvl() + assets <= previewVaultCap(), "AssetVault: over vault cap");
-        // lock in pps before deposit handling
-        uint256 depositPPS = pps();
-        // Need to transfer before minting or ERC777s could reenter.
-        asset.safeTransferFrom(msg.sender, address(aggregateVault), assets);
-        assets = aggregateVault.handleDeposit(asset, assets, receiver);
-
-        shares = ShareMath.assetToShares(assets, depositPPS, decimals);
-        _mint(receiver, shares);
-
-        emit Deposit(msg.sender, receiver, assets, shares);
-
-        afterDeposit(assets, shares);
-    }
-
-    /**
-     * @notice Withdraw a specified amount of assets by burning corresponding shares from the owner
-     * @param assets The amount of assets to withdraw
-     * @param receiver The address to receive the withdrawn assets
-     * @param owner The address of the share owner
-     * @return shares The amount of shares burned for the withdrawn assets
-     */
-    function withdraw(uint256 assets, address receiver, address owner)
-        public
-        override
-        whenWithdrawalNotPaused
-        returns (uint256 shares)
-    {
-        assets += previewWithdrawalFee(assets);
-        shares = ShareMath.assetToShares(assets, pps(), decimals);
-        require(shares > 0, "AssetVault: !shares > 0");
-        if (msg.sender != owner) {
-            _checkAllowance(owner, shares);
-        }
-
-        beforeWithdraw(assets, shares);
-
-        _burn(owner, shares);
-
-        assets = aggregateVault.handleWithdraw(asset, assets, receiver);
-
-        emit Withdraw(msg.sender, receiver, owner, assets, shares);
     }
 
     /**
      * @notice Redeem a specified amount of shares by burning them and transferring the corresponding amount of assets to the receiver
      * @param shares The amount of shares to redeem
+     * @param minOutAfterFees Minimum amount out after fees
      * @param receiver The address to receive the corresponding assets
      * @param owner The address of the share owner
-     * @return assets The amount of assets transferred for the redeemed shares
+     * @return assets The estimate amount of assets transferred for the redeemed shares
      */
-    function redeem(uint256 shares, address receiver, address owner)
+    function redeem(uint256 shares, uint256 minOutAfterFees, address receiver, address owner)
         public
+        payable
         override
         whenWithdrawalNotPaused
+        nonReentrant
         returns (uint256 assets)
     {
         require(shares > 0, "AssetVault: !shares > 0");
         assets = totalSupply == 0 ? shares : ShareMath.sharesToAsset(shares, pps(), decimals);
-        if (msg.sender != owner) {
-            _checkAllowance(owner, shares);
-        }
+        if (msg.sender != owner) _checkAllowance(owner, shares);
+        require(assets <= asset.balanceOf(address(aggregateVault)), "AssetVault: assets not available");
 
         // Check for rounding error since we round down in previewRedeem.
         require(previewRedeem(shares) != 0, "ZERO_ASSETS");
 
-        beforeWithdraw(assets, shares);
+        // transfer shares in
+        ERC20(address(this)).safeTransferFrom(owner, address(this), shares);
 
-        _burn(owner, shares);
+        // handle withdraw
+        aggregateVault.handleWithdraw{ value: msg.value }(shares, minOutAfterFees, receiver, msg.sender, address(0));
 
-        assets = aggregateVault.handleWithdraw(asset, assets, receiver);
-
-        emit Withdraw(msg.sender, receiver, owner, assets, shares);
+        emit Withdraw(owner, receiver, owner, assets, shares);
     }
 
-    // WHITELIST DEPOSIT
+    // WITH CALLBACKS
     // ------------------------------------------------------------------------------------------
 
     /**
-     * @notice Deposit a specified amount of assets for whitelisted users and mint corresponding shares to the receiver
+     * @notice Deposit a specified amount of assets and mint corresponding shares to the receiver
      * @param assets The amount of assets to deposit
+     * @param minOutAfterFees Minimum amount out after fees
      * @param receiver The address to receive the minted shares
-     * @param merkleProof The merkle proof required for whitelisted deposits
-     * @return shares The amount of shares minted for the deposited assets
+     * @param callback The address to callback to after execution
+     * @return shares The estimate amount of shares minted for the deposited assets
      */
-    function whitelistDeposit(uint256 assets, address receiver, bytes32[] memory merkleProof)
+    function depositWithCallback(uint256 assets, uint256 minOutAfterFees, address receiver, address callback)
         public
-        whitelistEnabled
+        payable
         whenDepositNotPaused
+        nonReentrant
         returns (uint256 shares)
     {
-        // Check vault cap
-        require(tvl() + assets <= previewVaultCap(), "AssetVault: over vault cap");
         // Check for rounding error since we round down in previewDeposit.
         require((shares = previewDeposit(assets)) != 0, "ZERO_SHARES");
-        // checks for whitelist
-        aggregateVault.whitelistedDeposit(asset, msg.sender, assets, merkleProof);
-        // lock in pps before deposit handling
-        uint256 depositPPS = pps();
+        require(
+            totalAssets() + assets <= previewVaultCap() + asset.balanceOf(address(this)), "AssetVault: over vault cap"
+        );
         // Transfer assets to aggregate vault, transfer before minting or ERC777s could reenter.
-        asset.safeTransferFrom(msg.sender, address(aggregateVault), assets);
-        assets = aggregateVault.handleDeposit(asset, assets, msg.sender);
-
-        shares = ShareMath.assetToShares(assets, depositPPS, decimals);
-        _mint(receiver, shares);
-
+        asset.safeTransferFrom(msg.sender, address(this), assets);
+        aggregateVault.handleDeposit{ value: msg.value }(assets, minOutAfterFees, receiver, msg.sender, callback);
         emit Deposit(msg.sender, receiver, assets, shares);
+    }
 
-        afterDeposit(assets, shares);
+    /**
+     * @notice Redeem a specified amount of shares by burning them and transferring the corresponding amount of assets to the receiver
+     * @param shares The amount of shares to redeem
+     * @param minOutAfterFees Minimum amount out after fees
+     * @param receiver The address to receive the corresponding assets
+     * @param owner The address of the share owner
+     * @param callback The address to callback to after execution
+     * @return assets The estimate amount of assets transferred for the redeemed shares
+     */
+    function redeemWithCallback(
+        uint256 shares,
+        uint256 minOutAfterFees,
+        address receiver,
+        address owner,
+        address callback
+    ) public payable whenWithdrawalNotPaused nonReentrant returns (uint256 assets) {
+        require(shares > 0, "AssetVault: !shares > 0");
+        assets = totalSupply == 0 ? shares : ShareMath.sharesToAsset(shares, pps(), decimals);
+
+        if (msg.sender != owner) _checkAllowance(owner, shares);
+
+        // Check for rounding error since we round down in previewRedeem.
+        require(previewRedeem(shares) != 0, "ZERO_ASSETS");
+
+        // transfer shares in
+        ERC20(address(this)).safeTransferFrom(owner, address(this), shares);
+
+        // handle withdrawal
+        aggregateVault.handleWithdraw{ value: msg.value }(shares, minOutAfterFees, receiver, msg.sender, callback);
+
+        emit Withdraw(owner, receiver, owner, assets, shares);
+    }
+
+    /**
+     * @notice Cancels a vault request for this vault
+     * @param key The request key to cancel
+     */
+    function cancelRequest(uint256 key) external {
+        AggregateVaultStorage.OCRequest memory request = aggregateVault.getRequest(key);
+        require(request.vault == address(this), "AssetVault: invalid vault");
+        require(request.sender == msg.sender, "AssetVault: invalid account");
+
+        if (request.isDeposit) {
+            asset.safeTransfer(msg.sender, request.amount);
+        } else {
+            ERC20(address(this)).safeTransfer(msg.sender, request.amount);
+        }
+
+        aggregateVault.clearRequest(key);
     }
 
     // MATH
     // ------------------------------------------------------------------------------------------
 
     /**
-     * @notice Get the total assets in the vault
-     * @return - The total assets in the vault
+     * @notice Get the total value locked (TVL) of the vault
+     * @return totalValueLocked The current total value locked
      */
-    function totalAssets() public view override returns (uint256) {
-        return ShareMath.sharesToAsset(totalSupply, pps(), decimals);
+    function totalAssets() public view override returns (uint256 totalValueLocked) {
+        (bool success, bytes memory ret) =
+            address(aggregateVault).staticcall(abi.encodeCall(AggregateVault.getVaultTVL, (address(this), false)));
+
+        // bubble up error message
+        if (!success) {
+            assembly {
+                let length := mload(ret)
+                revert(add(32, ret), length)
+            }
+        }
+        totalValueLocked = abi.decode(ret, (uint256));
+    }
+
+    /**
+     * @notice Get the price per share (PPS) of the vault
+     * @return pricePerShare The current price per share
+     */
+    function pps() public view returns (uint256 pricePerShare) {
+        (bool success, bytes memory ret) =
+            address(aggregateVault).staticcall(abi.encodeCall(AggregateVault.getVaultPPS, (address(this), true, false)));
+
+        // bubble up error message
+        if (!success) {
+            assembly {
+                let length := mload(ret)
+                revert(add(32, ret), length)
+            }
+        }
+
+        pricePerShare = abi.decode(ret, (uint256));
     }
 
     /**
@@ -226,28 +241,6 @@ contract AssetVault is ERC4626, PausableVault, GlobalACL {
     }
 
     /**
-     * @notice Preview the amount of assets for a given mint amount
-     * @param shares The amount of shares to mint
-     * @return _mintAmount The amount of assets for the given mint amount
-     */
-    function previewMint(uint256 shares) public view override returns (uint256 _mintAmount) {
-        _mintAmount = totalSupply == 0 ? shares : ShareMath.sharesToAsset(shares, pps(), decimals);
-        // add deposit fee for minting fixed amount of shares
-        _mintAmount = _mintAmount + previewDepositFee(_mintAmount);
-    }
-
-    /**
-     * @notice Preview the amount of shares for a given withdrawal amount
-     * @param assets The amount of assets to withdraw
-     * @return _withdrawAmount The amount of shares for the given withdrawal amount
-     */
-    function previewWithdraw(uint256 assets) public view override returns (uint256 _withdrawAmount) {
-        uint256 assetFee = previewWithdrawalFee(assets);
-        if (assetFee >= assets) return 0;
-        _withdrawAmount = totalSupply == 0 ? assets : ShareMath.assetToShares(assets - assetFee, pps(), decimals);
-    }
-
-    /**
      * @notice Preview the amount of assets for a given redeem amount
      * @param shares The amount of shares to redeem
      * @return The amount of assets for the given redeem amount
@@ -269,8 +262,8 @@ contract AssetVault is ERC4626, PausableVault, GlobalACL {
      */
     function maxDeposit(address) public view override returns (uint256) {
         uint256 cap = previewVaultCap();
-        uint256 tvl = tvl();
-        return cap > tvl ? cap - tvl : 0;
+        uint256 tvl_ = totalAssets();
+        return cap > tvl_ ? cap - tvl_ : 0;
     }
 
     /**
@@ -278,8 +271,8 @@ contract AssetVault is ERC4626, PausableVault, GlobalACL {
      */
     function maxMint(address) public view override returns (uint256) {
         uint256 cap = previewVaultCap();
-        uint256 tvl = tvl();
-        return cap > tvl ? convertToShares(cap - tvl) : 0;
+        uint256 tvl_ = totalAssets();
+        return cap > tvl_ ? convertToShares(cap - tvl_) : 0;
     }
 
     /**
@@ -349,43 +342,6 @@ contract AssetVault is ERC4626, PausableVault, GlobalACL {
     }
 
     /**
-     * @notice Get the price per share (PPS) of the vault
-     * @return pricePerShare The current price per share
-     */
-    function pps() public view returns (uint256 pricePerShare) {
-        (bool success, bytes memory ret) =
-            address(aggregateVault).staticcall(abi.encodeCall(AggregateVault.getVaultPPS, address(this)));
-
-        // bubble up error message
-        if (!success) {
-            assembly {
-                let length := mload(ret)
-                revert(add(32, ret), length)
-            }
-        }
-
-        pricePerShare = abi.decode(ret, (uint256));
-    }
-
-    /**
-     * @notice Get the total value locked (TVL) of the vault
-     * @return totalValueLocked The current total value locked
-     */
-    function tvl() public view returns (uint256 totalValueLocked) {
-        (bool success, bytes memory ret) =
-            address(aggregateVault).staticcall(abi.encodeCall(AggregateVault.getVaultTVL, address(this)));
-
-        // bubble up error message
-        if (!success) {
-            assembly {
-                let length := mload(ret)
-                revert(add(32, ret), length)
-            }
-        }
-        totalValueLocked = abi.decode(ret, (uint256));
-    }
-
-    /**
      * @notice Update the aggregate vault to a new instance
      * @param _newAggregateVault The new aggregate vault instance to update to
      */
@@ -394,12 +350,43 @@ contract AssetVault is ERC4626, PausableVault, GlobalACL {
     }
 
     /**
-     * @notice Mint a specified amount of shares to a timelock contract
+     * @notice Mint a specified amount of shares to an address
      * @param _mintAmount The amount of shares to mint
-     * @param _timelockContract The address of the timelock contract to receive the minted shares
+     * @param _toAddress The address to mint
      */
-    function mintTimelockBoost(uint256 _mintAmount, address _timelockContract) external onlyAggregateVault {
-        _mint(_timelockContract, _mintAmount);
+    function mintTo(uint256 _mintAmount, address _toAddress) external validateMintCallAuth(_toAddress) {
+        _mint(_toAddress, _mintAmount);
+    }
+
+    /**
+     * @notice Burn tokens during order execution
+     * @param _burnAmount The amount of shares to burn
+     */
+    function burnShares(uint256 _burnAmount) external onlyRequestHandler {
+        _burn(address(this), _burnAmount);
+    }
+
+    /**
+     * @notice Lodge the underlying assets for a deposit execution
+     * @param _assetAmount The amount of assets to lodge
+     */
+    function lodgeAssets(uint256 _assetAmount, address feeReciever, uint256 _depositFees) external onlyRequestHandler {
+        asset.safeTransfer(address(aggregateVault), _assetAmount);
+        if (_depositFees > 0 && feeReciever != address(0)) asset.safeTransfer(feeReciever, _depositFees);
+    }
+
+    /**
+     * @notice Return deposited assets
+     */
+    function returnAssets(address _to, uint256 _amt) external onlyRequestHandler {
+        asset.safeTransfer(_to, _amt);
+    }
+
+    /**
+     * @notice Return withdraw request shares
+     */
+    function returnShares(address _to, uint256 _amt) external onlyRequestHandler {
+        ERC20(address(this)).safeTransfer(_to, _amt);
     }
 
     /**
@@ -408,8 +395,9 @@ contract AssetVault is ERC4626, PausableVault, GlobalACL {
      * @return totalDepositFee The total deposit fee for the specified amount of assets
      */
     function previewDepositFee(uint256 size) public view returns (uint256 totalDepositFee) {
-        (bool success, bytes memory ret) =
-            address(aggregateVault).staticcall(abi.encodeCall(AggregateVault.previewDepositFee, (size)));
+        (bool success, bytes memory ret) = address(aggregateVault).staticcall(
+            abi.encodeCall(AggregateVault.previewDepositFee, (address(asset), size, false))
+        );
         if (!success) {
             assembly {
                 let length := mload(ret)
@@ -426,7 +414,7 @@ contract AssetVault is ERC4626, PausableVault, GlobalACL {
      */
     function previewWithdrawalFee(uint256 size) public view returns (uint256 totalWithdrawalFee) {
         (bool success, bytes memory ret) = address(aggregateVault).staticcall(
-            abi.encodeCall(AggregateVault.previewWithdrawalFee, (address(asset), size))
+            abi.encodeCall(AggregateVault.previewWithdrawalFee, (address(asset), size, false))
         );
         if (!success) {
             assembly {
@@ -453,30 +441,13 @@ contract AssetVault is ERC4626, PausableVault, GlobalACL {
         if (allowed != type(uint256).max) allowance[owner][msg.sender] = allowed - shares;
     }
 
-    // MODIFIERS
-    // ------------------------------------------------------------------------------------------
-
-    /**
-     * @dev Modifier that throws if called by any account other than the admin (AggregateVault)
-     */
-    modifier onlyAggregateVault() {
-        require(msg.sender == address(aggregateVault), "AssetVault: Caller is not AggregateVault");
-        _;
-    }
-
-    /**
-     * @dev Modifier that throws if whitelist is not enabled
-     */
-    modifier whitelistEnabled() {
-        require(aggregateVault.whitelistEnabled());
-        _;
-    }
-
-    /**
-     * @dev Modifier that throws if whitelist is enabled
-     */
-    modifier whitelistDisabled() {
-        require(!aggregateVault.whitelistEnabled());
+    /// @dev validate the mint call
+    modifier validateMintCallAuth(address _mintTo) {
+        require(
+            (_mintTo == aggregateVault.getVaultTimelockAddress(address(asset)) && address(aggregateVault) == msg.sender)
+                || AUTH.hasRole(REQUEST_HANDLER, msg.sender),
+            "AssetVault: !validateMintCallAuth"
+        );
         _;
     }
 }

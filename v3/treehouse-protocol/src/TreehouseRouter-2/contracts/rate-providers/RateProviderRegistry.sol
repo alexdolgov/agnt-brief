@@ -10,44 +10,44 @@ interface IRateProviderRegistry {
 
   event RateProviderUpdated(address indexed _asset, address indexed _rateProvider, address _oldProvider);
 
-  function getRateInEth(address _asset) external view returns (uint _rateInEth);
+  function getRateInAvax(address _asset) external view returns (uint _rateInAvax);
 
   function checkHasRateProvider(address _asset) external view;
 
-  function getEthInUsd() external view returns (uint);
+  function getAvaxInUsd() external view returns (uint);
 }
 
 /**
  * @notice RateProviderRegistry stores the asset and corresponding rate providers used by the protocol
  */
 contract RateProviderRegistry is IRateProviderRegistry, Ownable2Step {
-  address public immutable WETH;
-  IRateProvider public immutable ETH_USD_ORACLE;
+  address public immutable WAVAX;
+  IRateProvider public immutable AVAX_USD_ORACLE;
   mapping(address => address) private rateProviders; //asset => rateProvider
 
-  constructor(address _creator, address _weth, IRateProvider _ethUsd) Ownable(_creator) {
-    WETH = _weth;
-    ETH_USD_ORACLE = _ethUsd;
+  constructor(address _creator, address _wavax, IRateProvider _avaxUsd) Ownable(_creator) {
+    WAVAX = _wavax;
+    AVAX_USD_ORACLE = _avaxUsd;
   }
 
   /**
-   * @notice Returns the rate of an asset in eth terms
+   * @notice Returns the rate of an asset in avax terms
    * @param _asset token address, must be the base currency (not quote)
-   * @return _rateInEth the exchange rate in 1e18
+   * @return _rateInAvax the exchange rate in 1e18
    */
-  function getRateInEth(address _asset) external view returns (uint _rateInEth) {
-    if (_asset == WETH) return 1e18;
+  function getRateInAvax(address _asset) external view returns (uint _rateInAvax) {
+    if (_asset == WAVAX) return 1e18;
 
     if (rateProviders[_asset] == address(0)) revert RateProviderNotFound();
-    _rateInEth = IRateProvider(rateProviders[_asset]).getRate();
+    _rateInAvax = IRateProvider(rateProviders[_asset]).getRate();
   }
 
   /**
-   * @notice Returns the rate eth in usd terms
+   * @notice Returns the rate avax in usd terms
    * @return the exchange rate in 1e18
    */
-  function getEthInUsd() external view returns (uint) {
-    return ETH_USD_ORACLE.getRate();
+  function getAvaxInUsd() external view returns (uint) {
+    return AVAX_USD_ORACLE.getRate();
   }
 
   /**
@@ -55,7 +55,7 @@ contract RateProviderRegistry is IRateProviderRegistry, Ownable2Step {
    * @param _asset provided asset
    */
   function checkHasRateProvider(address _asset) external view {
-    if (_asset == WETH) return;
+    if (_asset == WAVAX) return;
     if (rateProviders[_asset] == address(0)) revert RateProviderNotFound();
   }
 

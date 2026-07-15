@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
-pragma solidity ^0.8.15;
+pragma solidity 0.8.28;
 
 import "./IAppOracle.sol";
 
@@ -24,9 +24,13 @@ interface IAppTreasury {
      * @notice Returns the value of a token in RZR, 18 decimals
      * @param _token The address of the token
      * @param _amount The amount of the token
-     * @return value_ The value of the token in RZR
+     * @return rzrValue_ The value of the token in RZR
+     * @return usdValue_ The value of the token in USD
      */
-    function tokenValueE18(address _token, uint256 _amount) external view returns (uint256 value_);
+    function tokenValueE18(address _token, uint256 _amount)
+        external
+        view
+        returns (uint256 rzrValue_, uint256 usdValue_);
 
     /**
      * @notice allow approved address to mint app
@@ -39,9 +43,13 @@ interface IAppTreasury {
      * @notice allow approved address to manage the reserves of the treasury
      * @param _token address of the token to manage
      * @param _amount amount of the token to manage
-     * @return value amount of app that was managed
+     * @param _recipient address of the recipient
+     * @return rzrValue_ amount of app that was managed in RZR terms
+     * @return usdValue_ amount of app that was managed in USD terms
      */
-    function manage(address _token, uint256 _amount) external returns (uint256 value);
+    function manage(address _token, uint256 _amount, address _recipient)
+        external
+        returns (uint256 rzrValue_, uint256 usdValue_);
 
     /**
      * @notice allow approved address to enable a token as a reserve
@@ -106,10 +114,18 @@ interface IAppTreasury {
     function excessReserves() external view returns (uint256);
 
     /**
+     * @notice Returns the total reserves of the treasury in USD terms (including credit and debit)
+     * @return totalReserves_ The total reserves of the treasury in USD terms
+     * @dev This is the total USD reserves of the treasury, including credit and debit
+     */
+    function totalReservesUsd() external view returns (uint256);
+
+    /**
      * @notice Returns the total reserves of the treasury in RZR terms (including credit and debit)
      * @return totalReserves_ The total reserves of the treasury in RZR terms
+     * @dev This is the total RZR reserves of the treasury, including credit and debit
      */
-    function totalReserves() external view returns (uint256);
+    function totalReservesRzr() external view returns (uint256);
 
     /**
      * @notice Returns the total supply of RZR (including credit and debit)
@@ -136,15 +152,17 @@ interface IAppTreasury {
 
     /**
      * @notice Calculates the total reserves of the treasury in RZR terms (including credit and debit)
-     * @return reserves_ The total reserves of the treasury in RZR terms
+     * @return usdReserves_ The total reserves of the treasury in USD terms
+     * @return rzrReserves_ The total reserves of the treasury in RZR terms
      */
-    function calculateReserves() external view returns (uint256 reserves_);
+    function calculateReserves() external view returns (uint256 usdReserves_, uint256 rzrReserves_);
 
     /**
      * @notice Calculates the actual reserves of the treasury in RZR terms excluding credit and debit
-     * @return actualReserves_ The actual reserves of the treasury in RZR terms
+     * @return usdReserves_ The actual reserves of the treasury in USD terms
+     * @return rzrReserves_ The actual reserves of the treasury in RZR terms
      */
-    function calculateActualReserves() external view returns (uint256 actualReserves_);
+    function calculateActualReserves() external view returns (uint256 usdReserves_, uint256 rzrReserves_);
 
     /**
      * @notice Gets the reserve fee
@@ -189,10 +207,38 @@ interface IAppTreasury {
      */
     function enabledTokensLength() external view returns (uint256 length_);
 
+    /**
+     * @notice Gets the reserve cap for a token
+     * @param _token The address of the token
+     * @return cap_ The reserve cap for the token
+     */
+    function reserveCaps(address _token) external view returns (uint256 cap_);
+
+    /**
+     * @notice Gets the reserve debt for a token
+     * @param _token The address of the token
+     * @return debt_ The reserve debt for the token
+     */
+    function reserveDebts(address _token) external view returns (uint256 debt_);
+
+    /**
+     * @notice Sets the reserve cap for a token
+     * @param _token The address of the token
+     * @param _cap The reserve cap for the token
+     */
+    function setReserveCap(address _token, uint256 _cap) external;
+
+    /**
+     * @notice Sets the reserve debt for a token
+     * @param _token The address of the token
+     * @param _debt The reserve debt for the token
+     */
+    function setReserveDebt(address _token, uint256 _debt) external;
+
     /* ========== EVENTS ========== */
 
-    event Deposit(address indexed token, uint256 amount, uint256 value);
-    event Withdrawal(address indexed token, uint256 amount, uint256 value);
+    event Deposit(address indexed token, uint256 amount, uint256 usdValue, uint256 rzrValue);
+    event Withdrawal(address indexed token, uint256 amount, uint256 usdValue, uint256 rzrValue);
     event Managed(address indexed token, uint256 amount);
     event ReservesAudited(
         uint256 indexed totalReserves, uint256 indexed creditReserves, uint256 indexed totalReservesWithCredit
@@ -202,4 +248,6 @@ interface IAppTreasury {
     event CreditReservesSet(uint256 newCredit, uint256 oldCredit);
     event UnbackedSupplySet(uint256 newUnbacked, uint256 oldUnbacked);
     event ReserveFeeSet(uint256 newFee, uint256 oldFee);
+    event ReserveCapSet(address indexed token, uint256 cap);
+    event ReserveDebtSet(address indexed token, uint256 debt);
 }

@@ -1,7 +1,15 @@
 {
   "component": "ZivoeGovernorV2",
   "main_contract": "ZivoeGovernorV2",
-  "source_file_count": 31,
+  "source_entry_count": 27,
+  "source_file_count": 27,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ZivoeGovernorV2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -14,7 +22,9 @@
       "address": "0x94ac60103b6b0df0cd828086b16eff2a3e32a71e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401557"
     }
   ]
 }

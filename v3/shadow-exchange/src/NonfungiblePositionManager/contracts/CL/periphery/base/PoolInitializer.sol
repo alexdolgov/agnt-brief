@@ -3,6 +3,7 @@ pragma solidity ^0.8.26;
 
 import '../../core/interfaces/IRamsesV3Factory.sol';
 import '../../core/interfaces/IRamsesV3Pool.sol';
+import '../../core/interfaces/IRamsesV3PoolDeployer.sol';
 
 import './PeripheryImmutableState.sol';
 import '../interfaces/IPoolInitializer.sol';
@@ -17,10 +18,11 @@ abstract contract PoolInitializer is IPoolInitializer, PeripheryImmutableState {
         uint160 sqrtPriceX96
     ) external payable override returns (address pool) {
         require(token0 < token1);
-        pool = IRamsesV3Factory(deployer).getPool(token0, token1, tickSpacing);
+        IRamsesV3Factory factory = IRamsesV3Factory(IRamsesV3PoolDeployer(deployer).RamsesV3Factory());
+        pool = factory.getPool(token0, token1, tickSpacing);
 
         if (pool == address(0)) {
-            pool = IRamsesV3Factory(deployer).createPool(token0, token1, tickSpacing, sqrtPriceX96);
+            pool = factory.createPool(token0, token1, tickSpacing, sqrtPriceX96);
         } else {
             (uint160 sqrtPriceX96Existing, , , , , , ) = IRamsesV3Pool(pool).slot0();
             if (sqrtPriceX96Existing == 0) {

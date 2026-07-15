@@ -1,12 +1,18 @@
 {
   "component": "sUSDb",
   "main_contract": "sUSDb",
+  "source_entry_count": 39,
   "source_file_count": 39,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/sUSDb\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://beosin.com/audits/Bondlink_202412031841.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -14,7 +20,9 @@
       "address": "0xb73383430391f4fc9873c80be1f64a93273e85a6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

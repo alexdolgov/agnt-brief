@@ -1,7 +1,5 @@
 // SPDX-License-Identifier: MIT
-
 // File: contracts\interfaces\MathUtil.sol
-
 pragma solidity 0.6.12;
 
 /**
@@ -275,7 +273,6 @@ interface IERC20 {
 }
 
 // File: node_modules\@openzeppelin\contracts\math\SafeMath.sol
-
 pragma solidity >=0.6.0 <0.8.0;
 
 /**
@@ -785,6 +782,7 @@ library Math {
 }
 
 // File: node_modules\@openzeppelin\contracts\utils\Context.sol
+
 pragma solidity >=0.6.0 <0.8.0;
 
 /*
@@ -943,7 +941,6 @@ abstract contract ReentrancyGuard {
 pragma solidity 0.6.12;
 pragma experimental ABIEncoderV2;
 
-
 // CVX Locking contract for https://www.convexfinance.com/
 // CVX locked in this contract will be entitled to voting rights for the Convex Finance platform
 // Based on EPS Staking contract for http://ellipsis.finance/
@@ -1093,9 +1090,9 @@ contract CvxLocker is ReentrancyGuard, Ownable {
         rewardDistributors[_rewardsToken][_distributor] = _approved;
     }
 
-    //Set the staking contract for the underlying cvx. immutable to avoid foul play
+    //Set the staking contract for the underlying cvx. only allow change if nothing is currently staked
     function setStakingContract(address _staking) external onlyOwner {
-        require(stakingProxy == address(0), "staking contract immutable");
+        require(stakingProxy == address(0) || (minimumStake == 0 && maximumStake == 0), "!assign");
 
         stakingProxy = _staking;
     }

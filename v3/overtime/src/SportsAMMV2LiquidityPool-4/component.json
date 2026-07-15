@@ -1,18 +1,28 @@
 {
   "component": "SportsAMMV2LiquidityPool-4",
   "main_contract": "SportsAMMV2LiquidityPool",
-  "source_file_count": 23,
+  "source_entry_count": 22,
+  "source_file_count": 22,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SportsAMMV2LiquidityPool-4\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xbd3f8a7cb480dd0d4fe63994ea7ae796258f8d0a",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8f672638986f2d0b8842e8f949ac83c434340c5f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

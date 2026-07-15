@@ -2,66 +2,79 @@
 // This contract is licensed under the SYMM Core Business Source License 1.1
 // Copyright (c) 2023 Symmetry Labs AG
 // For more information, see https://docs.symm.io/legal-disclaimer/license
-pragma solidity >=0.8.18;
+pragma solidity >=0.8.19;
 
-import "../storages/MAStorage.sol";
-import "../storages/AccountStorage.sol";
-import "../storages/QuoteStorage.sol";
-import "../libraries/LibAccessibility.sol";
+import { LibAccessibility } from "../libraries/core/LibAccessibility.sol";
+import { LibParty } from "../libraries/models/LibParty.sol";
+
+import { TradeStorage } from "../storages/TradeStorage.sol";
+import { AccountStorage } from "../storages/AccountStorage.sol";
+import { StateControlStorage } from "../storages/StateControlStorage.sol";
+import { CounterPartyRelationsStorage } from "../storages/CounterPartyRelationsStorage.sol";
+import { AppStorage } from "../storages/AppStorage.sol";
+
+import { Trade } from "../types/TradeTypes.sol";
+import { Withdraw } from "../types/WithdrawTypes.sol";
+
+import { ValidationErrors } from "../errors/ValidationErrors.sol";
+import { PartyRelationsErrors } from "../errors/PartyRelationsErrors.sol";
+import { SystemErrors } from "../errors/SystemErrors.sol";
 
 abstract contract Accessibility {
-	modifier onlyPartyB() {
-		require(MAStorage.layout().partyBStatus[msg.sender], "Accessibility: Should be partyB");
+	using LibParty for address;
+
+	modifier onlyPartyB(address user) {
+		if (!user.isPartyB()) revert ValidationErrors.NotPartyB(user);
 		_;
 	}
 
-	modifier notPartyB() {
-		require(!MAStorage.layout().partyBStatus[msg.sender], "Accessibility: Shouldn't be partyB");
-		_;
-	}
-
-	modifier userNotPartyB(address user) {
-		require(!MAStorage.layout().partyBStatus[user], "Accessibility: Shouldn't be partyB");
+	modifier onlyNotPartyB(address user) {
+		if (user.isPartyB()) revert ValidationErrors.PartyBUser(user);
 		_;
 	}
 
 	modifier onlyRole(bytes32 role) {
-		require(LibAccessibility.hasRole(msg.sender, role), "Accessibility: Must has role");
+		if (!LibAccessibility.hasRole(msg.sender, role)) revert ValidationErrors.MissingRole(msg.sender, role);
 		_;
 	}
 
-	modifier notLiquidatedPartyA(address partyA) {
-		require(!MAStorage.layout().liquidationStatus[partyA], "Accessibility: PartyA isn't solvent");
+	modifier onlyPartyAOfTrade(uint256 tradeId) {
+		Trade storage trade = TradeStorage.layout().trades[tradeId];
+		if (trade.partyA != msg.sender) revert ValidationErrors.UnauthorizedSender(msg.sender, trade.partyA);
 		_;
 	}
 
-	modifier notLiquidatedPartyB(address partyB, address partyA) {
-		require(!MAStorage.layout().partyBLiquidationStatus[partyB][partyA], "Accessibility: PartyB isn't solvent");
+	modifier onlyPartyBOfTrade(uint256 tradeId) {
+		Trade storage trade = TradeStorage.layout().trades[tradeId];
+		if (trade.partyB != msg.sender) revert ValidationErrors.UnauthorizedSender(msg.sender, trade.partyB);
 		_;
 	}
 
-	modifier notLiquidated(uint256 quoteId) {
-		Quote storage quote = QuoteStorage.layout().quotes[quoteId];
-		require(!MAStorage.layout().liquidationStatus[quote.partyA], "Accessibility: PartyA isn't solvent");
-		require(!MAStorage.layout().partyBLiquidationStatus[quote.partyB][quote.partyA], "Accessibility: PartyB isn't solvent");
-		require(quote.quoteStatus != QuoteStatus.LIQUIDATED && quote.quoteStatus != QuoteStatus.CLOSED, "Accessibility: Invalid state");
+	modifier whenNotSuspended(address user) {
+		if (StateControlStorage.layout().suspendedAddresses[user]) revert SystemErrors.UserSuspended(user);
 		_;
 	}
 
-	modifier onlyPartyAOfQuote(uint256 quoteId) {
-		Quote storage quote = QuoteStorage.layout().quotes[quoteId];
-		require(quote.partyA == msg.sender, "Accessibility: Should be partyA of quote");
+	modifier whenWithdrawalNotSuspended(uint256 withdrawId) {
+		checkNotSuspendedWithdrawal(withdrawId); // To reduce code size
 		_;
 	}
 
-	modifier onlyPartyBOfQuote(uint256 quoteId) {
-		Quote storage quote = QuoteStorage.layout().quotes[quoteId];
-		require(quote.partyB == msg.sender, "Accessibility: Should be partyB of quote");
+	function checkNotSuspendedWithdrawal(uint256 withdrawId) internal view {
+		Withdraw storage withdrawObject = AccountStorage.layout().withdrawals[withdrawId];
+		StateControlStorage.Layout storage stateControlLayout = StateControlStorage.layout();
+		if (stateControlLayout.suspendedAddresses[withdrawObject.user]) revert SystemErrors.UserSuspended(withdrawObject.user);
+		if (stateControlLayout.suspendedAddresses[withdrawObject.to]) revert SystemErrors.UserSuspended(withdrawObject.to);
+		if (stateControlLayout.suspendedWithdrawal[withdrawId]) revert SystemErrors.WithdrawalSuspended(withdrawId);
+	}
+
+	modifier whenInstantModeIsNotActive(address sender) {
+		if (CounterPartyRelationsStorage.layout().instantActionsMode[sender] && !AppStorage.layout().callFromInstantLayer) revert PartyRelationsErrors.InstantModeActive(sender);
 		_;
 	}
 
-	modifier notSuspended(address user) {
-		require(!AccountStorage.layout().suspendedAddresses[user], "Accessibility: Sender is Suspended");
+	modifier whenInstantModeIsActive(address sender) {
+		if (!CounterPartyRelationsStorage.layout().instantActionsMode[sender]) revert PartyRelationsErrors.InstantModeNotActive(sender);
 		_;
 	}
 }

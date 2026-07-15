@@ -1,144 +1,149 @@
 # Agentic Audit Brief: Symbiosis
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 21 across 7 audit(s)
+- Eligible audit results: 15 (7 matched; 8 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Symbiosis (`symbiosis`)
 - Website: [https://symbiosis.finance](https://symbiosis.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-04T11:05:46.660Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
-- Chains: arbitrum, avalanche, base, cronos, ethereum, optimism, polygon
-- Contract surface: 177 unique implementations (308 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: ethereum, sepolia
+- Contract surface: 32 unique implementations (32 raw deployments)
+- Coverage basis: 7/18 confirmed own live verified implementations (38.9%); conservative 38.9% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $8,730,964.45
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Cross Chain Bridge. Structurally: 138 project-authored contract(s) across 6 chain(s); 19 ERC20 tokens, 3 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Symbiosis. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 8 functional families. Its contracts share 32 common project-authored base contract(s) (oapp, oappsender, oappcore). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 20 contract row(s) across ethereum, sepolia. Structural roles: 11 core, 6 supporting, 3 infra. 10 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 20
+- Structural roles: core (11), supporting (6), infra (3)
+- Contract kinds: contract (20)
+- Detected standards: erc1967proxy (7), erc20 (5), erc20permit (2), ownable (2), ownable2step (2), pausable (1)
+- Frameworks: openzeppelin (16), openzeppelin-upgradeable (7), uniswap (6), foundry (5), solady (4)
+- Upgradeable-pattern rows: 10
+
+## Fork Analysis
+
+0 of 18 contracts are derived from known codebases. 18 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- BranchedUnlocker (`0x22278f...5fd9a1`, chain 1)
+- BtcRefundUnlocker (`0x9a99eb...10c9f0`, chain 1)
+- Depository (`0x84deb7...f941a8`, chain 1)
+- ERC1967Proxy (`0xd9a442...306a72`, chain 1)
+- FiatTokenProxy (`0xa0b869...06eb48`, chain 1)
+- GravityTokenG (`0x9c7beb...260649`, chain 1)
+- MetaRouter (`0xf621fb...66ff7f`, chain 1)
+- MetaRouterGateway (`0xfcef2f...512bcd`, chain 1)
+- SimpleToken (`0x4d2244...594381`, chain 1)
+- Symbiosis (`0xd38bb4...c76dd9`, chain 1)
+- TetherToken (`0xdac17f...831ec7`, chain 1)
+- TimedUnlocker (`0xec148f...ed8a3b`, chain 1)
+- TransparentUpgradeableProxy (`0x552398...d7227e`, chain 1)
+- TransparentUpgradeableProxy (`0xb8f275...9e81a8`, chain 1)
+- TransparentUpgradeableProxy (`0xd7c3df...dd38b3`, chain 1)
+- WBTC (`0x2260fa...c2c599`, chain 1)
+- WETH9 (`0xc02aaa...756cc2`, chain 1)
+- WithdrawUnlocker (`0xcd1080...34341e`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 411; live-surface contracts included: 300 (179 live, 121 unknown).
-- Excluded by liveness: 111 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 20; live-surface contracts included: 20 (18 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 18/32 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 23/68 (33.8%)
-- Deployed-live implementations: 68 of 177 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 23/69
-- Verified + Unaudited implementations: 46
+- Coverage of address-book-owned deployed-live implementations: 7/18 (38.9%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 18 own, 14 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (1 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 6
+- Deployed-live implementations: 18 of 32 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 7/18
+- Verified + Unaudited implementations: 11
 - Verified by bytecode match: 0
-- Unverified implementations: 108
-- Unique implementations: 177
-- Raw deployments: 308
+- Unverified implementations: 0
+- Unique implementations: 32
+- Raw deployments: 32
 - Audits discovered: 15 (15 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 10
+- Scoreable audits (matched contracts): 7
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/symbiosis/information))
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-10 (fresh)
 - Audit staleness (calendar age): 1 fresh, 2 aging, 11 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 5 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 18 match-unverified
-- Tier 1 coverage: 19.1% (SlowMist)
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 7 match-unverified
+- Tier 1 coverage: 16.7% (SlowMist)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Zokyo | Tier 2 | 20 | 29.0% | 2024-10 |
-| Omniscia | Tier 2 | 13 | 18.8% | 2022-03 |
-| SlowMist | Tier 1 | 13 | 18.8% | 2022-02 |
-| Decurity | Tier 2 | 3 | 4.3% | 2025-07 |
-| HashCloak | Tier 2 | 2 | 2.9% | 2022-04 |
-| yAudit | Tier 2 | 1 | 1.4% | 2025-10 |
+| Zokyo | Tier 2 | 5 | 27.8% | 2024-10 |
+| HashCloak | Tier 2 | 3 | 16.7% | 2022-04 |
+| Omniscia | Tier 2 | 3 | 16.7% | 2022-03 |
+| SlowMist | Tier 1 | 3 | 16.7% | 2022-02 |
+| Decurity | Tier 2 | 1 | 5.6% | 2025-07 |
+| yAudit | Tier 2 | 1 | 5.6% | 2025-10 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (23)
+### ✅ Verified + Audited (7)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BranchedUnlocker | unknown | ethereum | n/a | [`0x22278f...5fd9a1`](./contracts/ethereum-1/0x22278fe9a52a8ccb3a914f3f61bb6c70fe5fd9a1/) | ✅ Audited |
-| Bridge | operational_periphery | arbitrum | n/a | [`0x85700e...56263f`](./contracts/arbitrum-42161/0x85700ed7c30625ed28613d75e85c58ef0056263f/) | ✅ Audited |
-| BridgeV2 | operational_periphery | ethereum | n/a | [`0x552398...d7227e`](./contracts/ethereum-1/0x5523985926aa12ba58dc5ad00ddca99678d7227e/) | ✅ Audited |
-| BridgeV2 | operational_periphery | polygon | n/a | 2 deployments: polygon [`0x552398...d7227e`](./contracts/polygon-137/0x5523985926aa12ba58dc5ad00ddca99678d7227e/); polygon `0x7057ab...59e365` | ✅ Audited |
-| BridgeV2 | unknown | base | n/a | 3 deployments: base [`0x0f9105...68f5d2`](./contracts/base-8453/0x0f91052dc5b4bae53d0fea5dae561a117268f5d2/); base `0x8097f0...bb222f`; base `0x88139a...ef9d89` | ✅ Audited |
-| BridgeV2 | operational_periphery | arbitrum | n/a | 2 deployments: arbitrum [`0x552398...d7227e`](./contracts/arbitrum-42161/0x5523985926aa12ba58dc5ad00ddca99678d7227e/); arbitrum `0xff9b21...48b0f6` | ✅ Audited |
-| BridgeV2 | operational_periphery | avalanche | n/a | 3 deployments: avalanche [`0x292fc5...824d62`](./contracts/avalanche-43114/0x292fc50e4eb66c3f6514b9e402dbc25961824d62/); avalanche `0x552398...d7227e`; avalanche `0x7057ab...59e365` | ✅ Audited |
-| Depository | unknown | arbitrum | n/a | 3 deployments: ethereum `0x84deb7...f941a8`; arbitrum [`0x84b104...108a73`](./contracts/arbitrum-42161/0x84b10469db07446d5fc7156aefdd6b7117108a73/); avalanche `0xe7eb02...3f5c4e` | ✅ Audited |
-| DSToken | unknown | ethereum | n/a | [`0x97bf1f...b71e0e`](./contracts/ethereum-1/0x97bf1ff371ceabbb9e821480d31dd743c4b71e0e/) | ✅ Audited |
-| MetaRouter | adapter | optimism | n/a | 23 deployments: ethereum `0xf621fb...66ff7f`; optimism [`0x0f9105...68f5d2`](./contracts/optimism-10/0x0f91052dc5b4bae53d0fea5dae561a117268f5d2/); optimism `0x1a039c...d59ec8`; optimism `0xce8f24...a0eb4c`; polygon `0x9a31ba...4393dd`; polygon `0xa260e3...077978`; polygon `0xb657f8...59ec61`; polygon `0xe75c7e...ba9877`; polygon `0xf95178...9d88c0`; base `0x1ceaed...544840`; base `0x691df9...82b946`; base `0x6f0f63...a139cf`; base `0x81ab74...72ec39`; base `0xc17d76...06d077`; base `0xda1c70...f880d8`; arbitrum `0x4f82ca...edd5e3`; arbitrum `0x57c361...0e238b`; arbitrum `0xca5067...2c84c2`; arbitrum `0xce8f24...a0eb4c`; arbitrum `0xf5b086...1d1e08`; arbitrum `0xf7e962...f45dde`; avalanche `0xa738e8...4304de`; avalanche `0xf1c374...c0a83b` | ✅ Audited |
-| MetaRouterGateway | adapter | optimism | n/a | 10 deployments: ethereum `0xfcef2f...512bcd`; optimism [`0x200a0f...fd12b5`](./contracts/optimism-10/0x200a0fe876421dc49a26508e3efd0a1008fd12b5/); optimism `0xa9a96e...5ec75b`; polygon `0x2ee955...ce7da0`; polygon `0xab8365...b0f30c`; base `0xa18348...2c8a9d`; arbitrum `0x3743c7...46dcbe`; arbitrum `0x80dddd...fedaf9`; avalanche `0x4cfa66...c64e4a`; avalanche `0xfec09b...c631c6` | ✅ Audited |
-| OnchainSwapV3 | unknown | base | n/a | 39 deployments: optimism `0x2b7aa8...6495e2`; optimism `0x45cfd6...45e5bf`; optimism `0x7775b2...927ab8`; optimism `0xa257f3...9eb932`; optimism `0xbbad2f...ffdd2c`; optimism `0xf8504d...adada0`; optimism `0xf85fc8...4e1ea4`; polygon `0x4fda05...c04d82`; polygon `0x624ffe...1e1d9c`; polygon `0x8e1d36...6d195d`; polygon `0x9d7480...437b4f`; polygon `0xa18348...2c8a9d`; polygon `0xb91d30...2a1dcf`; polygon `0xe24c54...3d820f`; polygon `0xf5b086...1d1e08`; base [`0x0f28f4...31aec8`](./contracts/base-8453/0x0f28f4a0250710adf2d95c7e7e297b2edd31aec8/); base `0x3338be...a7dd7e`; base `0x5b1bab...b28b62`; base `0x844e4a...34df30`; base `0x8dc315...33f027`; base `0x97cbe9...1c2aad`; base `0xf1c374...c0a83b`; base `0xf3040d...e27238`; base `0xf85fc8...4e1ea4`; base `0xf95178...9d88c0`; arbitrum `0x230cbb...1d0c68`; arbitrum `0x4fda05...c04d82`; arbitrum `0x6f0f63...a139cf`; arbitrum `0x77ed28...afb39a`; arbitrum `0x7f6fb9...32d421`; arbitrum `0xa257f3...9eb932`; arbitrum `0xbba322...538bb7`; avalanche `0x1ac4c5...bc0ea2`; avalanche `0x3e6a3e...391778`; avalanche `0x7775b2...927ab8`; avalanche `0x97cbe9...1c2aad`; avalanche `0xa257f3...9eb932`; avalanche `0xc17d76...06d077`; avalanche `0xf85fc8...4e1ea4` | ✅ Audited |
-| Portal | unknown | ethereum | n/a | [`0xb8f275...9e81a8`](./contracts/ethereum-1/0xb8f275fbf7a959f4bce59999a2ef122a099e81a8/) | ✅ Audited |
-| Portal | unknown | optimism | n/a | 2 deployments: optimism [`0x292fc5...824d62`](./contracts/optimism-10/0x292fc50e4eb66c3f6514b9e402dbc25961824d62/); optimism `0x7b4e28...f409f9` | ✅ Audited |
-| Portal | unknown | polygon | n/a | 2 deployments: polygon [`0x35d39b...b1f990`](./contracts/polygon-137/0x35d39bb2cbc51ce6c03f0306d0d8d56948b1f990/); polygon `0xb8f275...9e81a8` | ✅ Audited |
-| Portal | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x01a3c8...9c24d9`](./contracts/arbitrum-42161/0x01a3c8e513b758ebb011f7afaf6c37616c9c24d9/); arbitrum `0x2e0440...9d27c1` | ✅ Audited |
-| Portal | unknown | avalanche | n/a | 2 deployments: avalanche [`0x8dc315...33f027`](./contracts/avalanche-43114/0x8dc3151dccd58fcb6a0bec0df20c06fba133f027/); avalanche `0xe75c7e...ba9877` | ✅ Audited |
-| Symbiosis | unknown | ethereum | n/a | [`0xd38bb4...c76dd9`](./contracts/ethereum-1/0xd38bb40815d2b0c2d2c866e0c72c5728ffc76dd9/) | ✅ Audited |
-| SyntERC20 | token | ethereum | n/a | [`0x70b7f7...a0cda1`](./contracts/ethereum-1/0x70b7f7044d2ca8e2f1e999b90ef16d7cb7a0cda1/) | ✅ Audited |
-| SyntFabric | unknown | ethereum | n/a | [`0xbbfb7c...769428`](./contracts/ethereum-1/0xbbfb7cb70f84fb6fe1cb13e42a0b71efde769428/) | ✅ Audited |
-| Synthesis | unknown | ethereum | n/a | [`0xd7c3df...dd38b3`](./contracts/ethereum-1/0xd7c3df25683871d18bc838e4f619126442dd38b3/) | ✅ Audited |
-| TimedUnlocker | unknown | ethereum | n/a | [`0xec148f...ed8a3b`](./contracts/ethereum-1/0xec148f80d699b0eaf65dd5438cde4b380ded8a3b/) | ✅ Audited |
-| WithdrawUnlocker | operational_periphery | ethereum | n/a | [`0xcd1080...34341e`](./contracts/ethereum-1/0xcd108089057dd0e9f841eb9e00fcf5105534341e/) | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BridgeV2 | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-257757 | `0x552398...d7227e` | ✅ Audited |
+| Depository | unknown | project_anchor | own_supporting | 0 | ethereum | unit-257734 | `0x84deb7...f941a8` | ✅ Audited |
+| MetaRouter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-257742 | `0xf621fb...66ff7f` | ✅ Audited |
+| MetaRouterGateway | adapter | project_anchor | own_supporting | 0 | ethereum | unit-257743 | `0xfcef2f...512bcd` | ✅ Audited |
+| Portal | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257760 | `0xb8f275...9e81a8` | ✅ Audited |
+| Symbiosis | unknown | project_anchor | own_supporting | 0 | ethereum | unit-257739 | `0xd38bb4...c76dd9` | ✅ Audited |
+| Synthesis | unknown | project_anchor | own_supporting | 1 | ethereum | unit-257756 | `0xd7c3df...dd38b3` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (46)
+### ⚠️ Verified + Unaudited (13)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AgglayerGER | unknown | ethereum | n/a | [`0x580bda...ce3cfb`](./contracts/ethereum-1/0x580bda1e7a0cfae92fa7f6c20a3794f169ce3cfb/) | ⚠️ Unaudited |
-| AgglayerManager | unknown | ethereum | n/a | [`0x5132a1...1b7ab2`](./contracts/ethereum-1/0x5132a183e9f3cb7c848b0aac5ae0c4f0491b7ab2/) | ⚠️ Unaudited |
-| BridgeV2 | unknown | optimism | n/a | 2 deployments: optimism [`0x552398...d7227e`](./contracts/optimism-10/0x5523985926aa12ba58dc5ad00ddca99678d7227e/); optimism `0x7057ab...59e365` | ⚠️ Unaudited |
-| BridgeV2 | unknown | polygon | n/a | 2 deployments: polygon [`0x5be6e6...51a774`](./contracts/polygon-137/0x5be6e69ec8a59b1ed8201b184adb0774d551a774/); arbitrum `0x7057ab...59e365` | ⚠️ Unaudited |
-| BridgeV2 | unknown | polygon | n/a | 2 deployments: polygon [`0x8dc315...33f027`](./contracts/polygon-137/0x8dc3151dccd58fcb6a0bec0df20c06fba133f027/); polygon `0xfec09b...c631c6` | ⚠️ Unaudited |
-| BridgeV2 | unknown | base | n/a | 2 deployments: base [`0x1da522...2caa75`](./contracts/base-8453/0x1da522b35363c1eda4833bc121c8f3c67b2caa75/); base `0xda8057...81bfeb` | ⚠️ Unaudited |
-| BridgeV2 | unknown | arbitrum | n/a | 3 deployments: arbitrum [`0x5be6e6...51a774`](./contracts/arbitrum-42161/0x5be6e69ec8a59b1ed8201b184adb0774d551a774/); arbitrum `0x844e4a...34df30`; arbitrum `0xb657f8...59ec61` | ⚠️ Unaudited |
-| BtcRefundUnlocker | unknown | ethereum | n/a | [`0x9a99eb...10c9f0`](./contracts/ethereum-1/0x9a99eb7e9794ef5a7c00c87d64ee067cfc10c9f0/) | ⚠️ Unaudited |
-| DepositoryDst | unknown | arbitrum | n/a | [`0x4ac560...3be547`](./contracts/arbitrum-42161/0x4ac560a3a8fadd1662cf9439bb1114abaa3be547/) | ⚠️ Unaudited |
-| DepositorySrc | unknown | arbitrum | n/a | [`0x695eea...02e840`](./contracts/arbitrum-42161/0x695eeaece7ce4502850b1f6b4f14b97dba02e840/) | ⚠️ Unaudited |
-| ERC20Mock | token | ethereum | n/a | [`0xf1815b...045d14`](./contracts/ethereum-1/0xf1815bd50389c46847f0bda824ec8da914045d14/) | ⚠️ Unaudited |
-| FflonkVerifier | periphery | ethereum | n/a | [`0x4f9a0e...38e6e9`](./contracts/ethereum-1/0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9/) | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | ethereum | n/a | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
-| GravityTokenG | token | ethereum | n/a | [`0x9c7beb...260649`](./contracts/ethereum-1/0x9c7beba8f6ef6643abd725e45a4e8387ef260649/) | ⚠️ Unaudited |
-| OFTMock | unknown | ethereum | n/a | [`0xbc7f24...c14b84`](./contracts/ethereum-1/0xbc7f244e2b38657bd014a5f6f4e4ba1125c14b84/) | ⚠️ Unaudited |
-| Portal | unknown | polygon | n/a | 2 deployments: polygon [`0x3338be...a7dd7e`](./contracts/polygon-137/0x3338be49a5f60e2593337919f9ad7098e9a7dd7e/); polygon `0x97cbe9...1c2aad` | ⚠️ Unaudited |
-| Portal | unknown | base | n/a | 2 deployments: base [`0x253ddb...ff79d7`](./contracts/base-8453/0x253ddb32f0f45ffbc0ebcdfc5edd47857aff79d7/); base `0xee981b...4161f8` | ⚠️ Unaudited |
-| Portal | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x042584...c2e09a`](./contracts/arbitrum-42161/0x0425841529882628880fbd228ac90606e0c2e09a/); arbitrum `0xbd37c8...706437` | ⚠️ Unaudited |
-| Portal | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x97cbe9...1c2aad`](./contracts/arbitrum-42161/0x97cbe92630ec56a7f484d28bbbced857121c2aad/); arbitrum `0xfec09b...c631c6` | ⚠️ Unaudited |
-| Portal | unknown | avalanche | n/a | 2 deployments: arbitrum `0xaf4570...475e1a`; avalanche [`0x5be6e6...51a774`](./contracts/avalanche-43114/0x5be6e69ec8a59b1ed8201b184adb0774d551a774/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | polygon | n/a | 13 deployments: ethereum `0x8ad82b...0778d4`; ethereum `0x943ed4...1ca66e`; ethereum `0xc95801...726782`; ethereum `0xd04a69...86ec39`; optimism `0x1da522...2caa75`; polygon [`0x0f28f4...31aec8`](./contracts/polygon-137/0x0f28f4a0250710adf2d95c7e7e297b2edd31aec8/); polygon `0x1da522...2caa75`; polygon `0xda1c70...f880d8`; base `0x1ac4c5...bc0ea2`; base `0x552398...d7227e`; arbitrum `0x1da522...2caa75`; arbitrum `0x9a31ba...4393dd`; avalanche `0x1da522...2caa75` | ⚠️ Unaudited |
-| PufferVaultV5 | core_logic | ethereum | n/a | [`0xd9a442...306a72`](./contracts/ethereum-1/0xd9a442856c234a39a81a089c06451ebaa4306a72/) | ⚠️ Unaudited |
-| SignatureChecker | unknown | ethereum | n/a | [`0xdf7108...f86b6c`](./contracts/ethereum-1/0xdf7108f8b10f9b9ec1aba01cca057268cbf86b6c/) | ⚠️ Unaudited |
-| SimpleToken | token | ethereum | n/a | [`0x4d2244...594381`](./contracts/ethereum-1/0x4d224452801aced8b2f0aebe155379bb5d594381/) | ⚠️ Unaudited |
-| SymbiosisTokenVesting | operational_periphery | ethereum | n/a | [`0x931c67...9f48f6`](./contracts/ethereum-1/0x931c6728470394507049f5642bab16da029f48f6/) | ⚠️ Unaudited |
-| SymBtc | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x3ef3f0...a4763e`](./contracts/arbitrum-42161/0x3ef3f0e0f2e9e0b59efeb74f8c03538190a4763e/); arbitrum `0xf3040d...e27238` | ⚠️ Unaudited |
-| SyntFabric | unknown | base | n/a | 2 deployments: base [`0x44487a...e325d5`](./contracts/base-8453/0x44487a445a7595446309464a82244b4bd4e325d5/); base `0x464c30...203027` | ⚠️ Unaudited |
-| SyntFabric | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x2ee955...ce7da0`](./contracts/arbitrum-42161/0x2ee9559387b806e88fd46b9da160d64a29ce7da0/); arbitrum `0xf621fb...66ff7f` | ⚠️ Unaudited |
-| Synthesis | unknown | base | n/a | 2 deployments: base [`0x9d7480...437b4f`](./contracts/base-8453/0x9d74807b8fa79d49bb95cf988af3c25fb1437b4f/); base `0x9f6424...8e7a6e` | ⚠️ Unaudited |
-| Synthesis | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x326adb...da6d16`](./contracts/arbitrum-42161/0x326adbe46d7e6c1b3927e9309b96df478bda6d16/); arbitrum `0x394187...36cbb1` | ⚠️ Unaudited |
-| TetherToken | token | ethereum | n/a | [`0xdac17f...831ec7`](./contracts/ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | polygon | n/a | 3 deployments: polygon [`0x1ac4c5...bc0ea2`](./contracts/polygon-137/0x1ac4c50080871d7a24dd705de9efe5ff14bc0ea2/); polygon `0x7b4e28...f409f9`; polygon `0x88139a...ef9d89` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | polygon | n/a | 3 deployments: polygon [`0x6b1bbd...71bfaa`](./contracts/polygon-137/0x6b1bbd301782ff636601fc594cd7bfe74871bfaa/); polygon `0xb79a4f...aa84e0`; polygon `0xc17d76...06d077` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | base | n/a | 3 deployments: base [`0x17efc1...e3dcbd`](./contracts/base-8453/0x17efc1d70ea32eb04c6979c6500d12eee9e3dcbd/); base `0x7b4e28...f409f9`; base `0xa9a96e...5ec75b` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | base | n/a | 2 deployments: base [`0x292fc5...824d62`](./contracts/base-8453/0x292fc50e4eb66c3f6514b9e402dbc25961824d62/); base `0x5aa5f7...352fd4` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | base | n/a | 3 deployments: base [`0x318c2b...30135a`](./contracts/base-8453/0x318c2b9a03c37702742c3d40c72e4056e430135a/); base `0xbba322...538bb7`; base `0xf02bbc...9e5e0c` | ⚠️ Unaudited |
-| USDCOFTAdapter | adapter | ethereum | n/a | [`0x67480c...df647f`](./contracts/ethereum-1/0x67480c30ff8cc128cf0250e25616857302df647f/) | ⚠️ Unaudited |
-| WBTC | token | ethereum | n/a | [`0x2260fa...c2c599`](./contracts/ethereum-1/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599/) | ⚠️ Unaudited |
-| WETH9 | token | ethereum | n/a | [`0xc02aaa...756cc2`](./contracts/ethereum-1/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/) | ⚠️ Unaudited |
-| WOFTAdapterFactory | adapter | ethereum | n/a | [`0x69bfc7...a74d9f`](./contracts/ethereum-1/0x69bfc7b0deb166aa4341a2c7437956b13ea74d9f/) | ⚠️ Unaudited |
-| wstETHOFTAdapterUpgradeable | unknown | ethereum | n/a | 2 deployments: ethereum [`0x02dedc...7f808d`](./contracts/ethereum-1/0x02dedca9ccfdaa3a68fac4f368644416be7f808d/); ethereum `0x6cea30...795848` | ⚠️ Unaudited |
-| wstETHOFTAdapterUpgradeable | unknown | ethereum | n/a | 3 deployments: ethereum [`0x1a9dd4...41ce06`](./contracts/ethereum-1/0x1a9dd47b69e01a1a48a162bf52bd447b1b41ce06/); ethereum `0x8ac372...8c90ef`; ethereum `0xa2d339...19ee3f` | ⚠️ Unaudited |
-| wstETHOFTAdapterUpgradeable | unknown | ethereum | n/a | 2 deployments: ethereum [`0x4175d9...13ebe3`](./contracts/ethereum-1/0x4175d9dea315864ed0bcdc256805ea187b13ebe3/); ethereum `0x5c2973...be7362` | ⚠️ Unaudited |
-| wstETHOFTAdapterUpgradeable | unknown | ethereum | n/a | 2 deployments: ethereum [`0x734cef...f9610a`](./contracts/ethereum-1/0x734cef0c55c856ba82d82c209136b3f33df9610a/); ethereum `0xb8b21b...4e9339` | ⚠️ Unaudited |
-| wstETHOFTAdapterUpgradeable | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7bcdc4...8629d6`](./contracts/ethereum-1/0x7bcdc4c2d626c5c9d94dfceada5204b1798629d6/); ethereum `0xfe634e...6e001f` | ⚠️ Unaudited |
-| wstETHOFTAdapterUpgradeable | unknown | ethereum | n/a | 3 deployments: ethereum [`0x7bf810...fac855`](./contracts/ethereum-1/0x7bf810829004cd2f2cc26c464c7c6b821dfac855/); ethereum `0xa460c9...955839`; ethereum `0xfe146a...b4a337` | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BranchedUnlocker | unknown | project_anchor | own_supporting | 0 | ethereum | unit-257730 | `0x22278f...5fd9a1` | ⚠️ Unaudited |
+| BtcRefundUnlocker | unknown | project_anchor | own_supporting | 0 | ethereum | unit-257735 | `0x9a99eb...10c9f0` | ⚠️ Unaudited |
+| FflonkVerifier | periphery | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | ethereum | unit-257733 | `0x4f9a0e...38e6e9` | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | project_anchor | own_supporting | 1 | ethereum | unit-257759 | `0xa0b869...06eb48` | ⚠️ Unaudited |
+| GravityTokenG | token | project_anchor | own_supporting | 0 | ethereum | unit-257736 | `0x9c7beb...260649` | ⚠️ Unaudited |
+| PufferVaultV5 | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-257758 | `0xd9a442...306a72` | ⚠️ Unaudited |
+| SimpleToken | token | project_anchor | own_supporting | 0 | ethereum | unit-257732 | `0x4d2244...594381` | ⚠️ Unaudited |
+| SyntFabric | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-257761 | `0xbbfb7c...769428` | ⚠️ Unaudited |
+| TetherToken | token | project_anchor | own_supporting | 0 | ethereum | unit-257740 | `0xdac17f...831ec7` | ⚠️ Unaudited |
+| TimedUnlocker | unknown | project_anchor | own_supporting | 0 | ethereum | unit-257741 | `0xec148f...ed8a3b` | ⚠️ Unaudited |
+| WBTC | token | project_anchor | own_supporting | 0 | ethereum | unit-257731 | `0x2260fa...c2c599` | ⚠️ Unaudited |
+| WETH9 | token | project_anchor | own_supporting | 0 | ethereum | unit-257737 | `0xc02aaa...756cc2` | ⚠️ Unaudited |
+| WithdrawUnlocker | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-257738 | `0xcd1080...34341e` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -152,170 +157,213 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (108)
+### ❓ Unverified (12)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x0cbd55...390940` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x0d126c...c00c60` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x0d64d8...50fbd1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x102560...5df38b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x127f3c...a9199b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x15f73a...6f5605` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x183739...a98908` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1ee741...fc7bef` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1ff103...26f4da` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x20826b...363058` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x20bdda...9a55b7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x230557...37b15e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2c6f75...35b507` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2ff889...b8854d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x31d687...cda740` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x335926...f90c3a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x362b56...9dfce6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x384c53...293036` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3ad977...98f8a1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3bd1ee...3ca5af` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x402fa0...2584b1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x411ea3...9e93b9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x46695c...003ee7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x471208...0a8732` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4c209a...223d28` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4c9ad5...1c9acd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x56de9e...fa51a0` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5b4997...5c76c8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5b4ba4...789c09` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x76d8a5...b14646` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7916ac...fb8675` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7cf03c...55ea3f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7d3701...6b4877` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x824d8f...4e4cba` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x84f162...cbf197` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x897c79...ebc249` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x89f800...389aa3` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8b00a8...af293b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8cbd1d...aeed7a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9001db...d25001` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x92bfd0...fb3e9a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9843e5...bd50ac` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x98bc79...4cf142` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9b3093...8fa3d1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9e978e...73fdd1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9f4ef8...57df75` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9f6de3...1f2423` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9fcb31...35be6a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa1438c...05b024` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa71a6c...905627` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc1bc8b...5ace0c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc61d91...f4a581` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc77841...0cd5ab` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc882b9...2b0d9d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xcbc21c...efe931` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd3f3c5...8a8a89` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe6eaa2...a68e1d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe81930...a59891` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xef0594...5e8173` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf50db8...785f99` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf68393...8fbf14` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf85903...287c11` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf88cbc...c08ff4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xff0eb5...489010` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x3e6a3e...391778` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xf1c374...c0a83b` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | 6 deployments: cronos `0x292fc5...824d62`; cronos `0x2e818e...c5d3d7`; cronos `0x50c42d...f2634b`; cronos `0xaa5b84...64076c`; cronos `0xbc1000...000000`; cronos `0xe34c91...48b693` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x1a039c...d59ec8` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x45cfd6...45e5bf` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x5b1bab...b28b62` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x5eb4ed...b15da6` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x6df77a...1c3fd9` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x6f0f63...a139cf` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x7775b2...927ab8` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x77ed28...afb39a` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x81ab74...72ec39` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x844e4a...34df30` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x8a7f93...e3dedf` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xbbad2f...ffdd2c` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xca5067...2c84c2` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xce8f24...a0eb4c` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xda8057...81bfeb` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xf02bbc...9e5e0c` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xf7e962...f45dde` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x5be6e6...51a774` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x7057ab...59e365` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x8a7f93...e3dedf` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xb657f8...59ec61` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xb91d30...2a1dcf` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xd8db4f...404160` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x086488...ca7934` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x464c30...203027` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf02bbc...9e5e0c` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x01a3c8...9c24d9` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x45cfd6...45e5bf` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x4fda05...c04d82` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x5aa5f7...352fd4` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x624ffe...1e1d9c` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x6f0f63...a139cf` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x7b4e28...f409f9` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x8097f0...bb222f` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x8a7f93...e3dedf` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0x9a31ba...4393dd` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xb8f275...9e81a8` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xca5067...2c84c2` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xce8f24...a0eb4c` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xda8057...81bfeb` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xf8504d...adada0` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-257744 | `0x04cd23...899dfb` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-257745 | `0x331f40...26a6f8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-257746 | `0x3e6235...5d4192` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-257747 | `0x7dc13b...41b4e8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-257748 | `0x8b03ad...7c0029` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-257749 | `0xb4ade3...ec49ca` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-257750 | `0xbc4454...ca1e38` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-257751 | `0xc3b59b...84f53d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-257752 | `0xc532a7...694008` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-257753 | `0xea3f68...7f24d4` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-257754 | `0xed8691...ae23ce` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-257755 | `0xf3cfa3...7e1210` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [immunefi.com/bug-bounty/symbiosis/information](https://immunefi.com/bug-bounty/symbiosis/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
-| [Symbiosis Staking - Decurity.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Staking/Symbiosis%20Staking%20-%20Decurity.pdf) | Decurity | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
-| [Symbiosis Relayers Network 2022 - Decurity.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Relayers%20Network/Symbiosis%20Relayers%20Network%202022%20-%20Decurity.pdf) | Decurity | Audit | 2023-01 | stale | Direct | n/a | 0 | n/a |
-| [Symbiosis Relayers Network 2024 - Decurity.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Relayers%20Network/Symbiosis%20Relayers%20Network%202024%20-%20Decurity.pdf) | Decurity | Audit | 2024-07 | stale | Direct | contract_name | 2 | n/a |
-| [Symbiosis Frontend App - Decurity.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Frontend%20App/Symbiosis%20Frontend%20App%20-%20Decurity.pdf) | Decurity | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
-| [Symbiosis Protocol Audit - HashCloak.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol%20Terra/core/Symbiosis%20Protocol%20Audit%20-%20HashCloak.pdf) | HashCloak | Audit | 2022-04 | stale | Direct | contract_name | 2 | n/a |
-| [Symbiosis Protocol Audit - Omniscia.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/core/Symbiosis%20Protocol%20Audit%20-%20Omniscia.pdf) | Omniscia | Audit | 2022-03 | stale | Direct | contract_name | 13 | n/a |
-| [Symbiosis Protocol Audit - SlowMist.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/core/Symbiosis%20Protocol%20Audit%20-%20SlowMist.pdf) | SlowMist | Audit | 2022-02 | stale | Direct | contract_name | 13 | n/a |
-| [Symbiosis Protocol Audit - Zokyo.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/core/Symbiosis%20Protocol%20Audit%20-%20Zokyo.pdf) | Zokyo | Audit | 2022-02 | stale | Direct | contract_name | 14 | n/a |
-| [Symbiosis Depository Audit - Decurity.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/depository/Symbiosis%20Depository%20Audit%20-%20Decurity.pdf) | yAudit | Audit | 2025-10 | fresh | Direct | contract_name | 1 | n/a |
-| [Symbiosis Protocol MRv3 Audit - Zokyo.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/metarouter-v3/Symbiosis%20Protocol%20MRv3%20Audit%20-%20Zokyo.pdf) | Zokyo | Audit | 2022-05 | stale | Direct | contract_name | 15 | n/a |
-| [Symbiosis Onchain Swap Audit - Decurity.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/onchain-swap/Symbiosis%20Onchain%20Swap%20Audit%20-%20Decurity.pdf) | Decurity | Audit | 2023-09 | stale | Direct | contract_name | 39 | high |
-| [Symbiosis Pool Audit - Zokyo.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/pool/Symbiosis%20Pool%20Audit%20-%20Zokyo.pdf) | Zokyo | Audit | 2022-12 | stale | Direct | contract_name | 4 | high |
-| [Symbiosis TON Bridge - Zokyo.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/ton-bridge/Symbiosis%20TON%20Bridge%20-%20Zokyo.pdf) | Zokyo | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
-| [Symbiosis TON Bridge v2 - Zokyo.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/ton-bridge/Symbiosis%20TON%20Bridge%20v2%20-%20Zokyo.pdf) | Zokyo | Audit | 2024-10 | aging | Direct | contract_name | 1 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [immunefi.com/bug-bounty/symbiosis/information](https://immunefi.com/bug-bounty/symbiosis/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a | n/a | n/a | n/a | n/a |
+| [Symbiosis Staking - Decurity.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Staking/Symbiosis%20Staking%20-%20Decurity.pdf) | Decurity | Audit | 2025-07 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 6 | high |
+| [Symbiosis Relayers Network 2022 - Decurity.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Relayers%20Network/Symbiosis%20Relayers%20Network%202022%20-%20Decurity.pdf) | Decurity | Audit | 2023-01 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [Symbiosis Relayers Network 2024 - Decurity.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Relayers%20Network/Symbiosis%20Relayers%20Network%202024%20-%20Decurity.pdf) | Decurity | Audit | 2024-07 | stale | Direct | n/a | matched | 1 | 1 | 0 | 1 | n/a |
+| [Symbiosis Frontend App - Decurity.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Frontend%20App/Symbiosis%20Frontend%20App%20-%20Decurity.pdf) | Decurity | Audit | 2022-08 | stale | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [Symbiosis Protocol Audit - HashCloak.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol%20Terra/core/Symbiosis%20Protocol%20Audit%20-%20HashCloak.pdf) | HashCloak | Audit | 2022-04 | stale | Direct | n/a | matched | 3 | 1 | 0 | 2 | n/a |
+| [Symbiosis Protocol Audit - Omniscia.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/core/Symbiosis%20Protocol%20Audit%20-%20Omniscia.pdf) | Omniscia | Audit | 2022-03 | stale | Direct | n/a | matched | 3 | 3 | 0 | 7 | n/a |
+| [Symbiosis Protocol Audit - SlowMist.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/core/Symbiosis%20Protocol%20Audit%20-%20SlowMist.pdf) | SlowMist | Audit | 2022-02 | stale | Direct | n/a | matched | 3 | 3 | 0 | 11 | n/a |
+| [Symbiosis Protocol Audit - Zokyo.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/core/Symbiosis%20Protocol%20Audit%20-%20Zokyo.pdf) | Zokyo | Audit | 2022-02 | stale | Direct | n/a | matched | 6 | 4 | 0 | 10 | n/a |
+| [Symbiosis Depository Audit - Decurity.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/depository/Symbiosis%20Depository%20Audit%20-%20Decurity.pdf) | yAudit | Audit | 2025-10 | fresh | Direct | n/a | matched | 1 | 0 | 0 | 2 | n/a |
+| [Symbiosis Protocol MRv3 Audit - Zokyo.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/metarouter-v3/Symbiosis%20Protocol%20MRv3%20Audit%20-%20Zokyo.pdf) | Zokyo | Audit | 2022-05 | stale | Direct | n/a | matched | 5 | 3 | 0 | 14 | n/a |
+| [Symbiosis Onchain Swap Audit - Decurity.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/onchain-swap/Symbiosis%20Onchain%20Swap%20Audit%20-%20Decurity.pdf) | Decurity | Audit | 2023-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [Symbiosis Pool Audit - Zokyo.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/pool/Symbiosis%20Pool%20Audit%20-%20Zokyo.pdf) | Zokyo | Audit | 2022-12 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [Symbiosis TON Bridge - Zokyo.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/ton-bridge/Symbiosis%20TON%20Bridge%20-%20Zokyo.pdf) | Zokyo | Audit | 2024-05 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+| [Symbiosis TON Bridge v2 - Zokyo.pdf](https://github.com/symbiosis-finance/audits/blob/master/Symbiosis%20Protocol/ton-bridge/Symbiosis%20TON%20Bridge%20v2%20-%20Zokyo.pdf) | Zokyo | Audit | 2024-10 | aging | Direct | n/a | no match | 0 | 0 | 0 | 9 | n/a |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [2093] immunefi.com/bug-bounty/symbiosis/information — no match: The document is a bug bounty program description, not an audit report. No contracts in scope are listed; only a link to audit reports is provided.
+- [2094] Symbiosis Staking - Decurity.pdf — no match: Scope section explicitly lists 6 contracts. Audit period ends 18/07/2025.
+- [2095] Symbiosis Relayers Network 2022 - Decurity.pdf — no match: Extracted contracts from scope table and file paths. Audit date from summary table header.
+- [2096] Symbiosis Relayers Network 2024 - Decurity.pdf — matched: No reason recorded
+- [2097] Symbiosis Frontend App - Decurity.pdf — no match: The audit is a UI security assessment, not a smart contract audit. No smart contracts are in scope; only web app URLs and a repository are mentioned.
+- [2099] Symbiosis Protocol Audit - HashCloak.pdf — matched: No reason recorded
+- [14782] Symbiosis Protocol Audit - Omniscia.pdf — matched: No reason recorded
+- [14783] Symbiosis Protocol Audit - SlowMist.pdf — matched: No reason recorded
+- [14784] Symbiosis Protocol Audit - Zokyo.pdf — matched: No reason recorded
+- [14785] Symbiosis Depository Audit - Decurity.pdf — matched: No reason recorded
+- [14786] Symbiosis Protocol MRv3 Audit - Zokyo.pdf — matched: No reason recorded
+- [14787] Symbiosis Onchain Swap Audit - Decurity.pdf — no match: Two contracts in scope: OnchainGateway.sol and OnchainSwapV3.sol. Audit period ended 18/09/2023.
+- [14788] Symbiosis Pool Audit - Zokyo.pdf — no match: Scope explicitly lists 5 contracts: AggregateAccount.sol, DSMath.sol, SafeCast.sol, SignedSafeMath.sol, Pool.sol. Audit date from cover page: 'December 6th 2022'.
+- [14789] Symbiosis TON Bridge - Zokyo.pdf — no match: Only one contract, TonBridge.sol, is explicitly listed in scope.
+- [14790] Symbiosis TON Bridge v2 - Zokyo.pdf — no match: No reason recorded
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Symbiosis Staking - Decurity.pdf | Validator | unmatched — not counted | — | listed in scope | no |
+| Symbiosis Staking - Decurity.pdf | StakingView | unmatched — not counted | — | listed in scope | no |
+| Symbiosis Staking - Decurity.pdf | EventLogger | unmatched — not counted | — | listed in scope | no |
+| Symbiosis Staking - Decurity.pdf | RewardCounter | unmatched — not counted | — | listed in scope | no |
+| Symbiosis Staking - Decurity.pdf | SymbiToken | unmatched — not counted | — | listed in scope | no |
+| Symbiosis Staking - Decurity.pdf | Staking | unmatched — not counted | — | listed in scope | no |
+| Symbiosis Relayers Network 2022 - Decurity.pdf | Staking | unmatched — not counted | — | listed in scope table | no |
+| Symbiosis Relayers Network 2022 - Decurity.pdf | TxManager | unmatched — not counted | — | listed in scope table | no |
+| Symbiosis Relayers Network 2022 - Decurity.pdf | EpochManager | unmatched — not counted | — | listed in scope table | no |
+| Symbiosis Relayers Network 2022 - Decurity.pdf | Transaction | unmatched — not counted | — | listed in scope table | no |
+| Symbiosis Relayers Network 2024 - Decurity.pdf | Bridge | unmatched — not counted | — | — | no |
+| Symbiosis Relayers Network 2024 - Decurity.pdf | Synthesis | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd7c3df...dd38b3` — deployed 2026-01-28 15:08:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - HashCloak.pdf | bridge | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - HashCloak.pdf | metarouter | own contract | MetaRouter (selected) `0xf621fb...66ff7f` — deployed 2023-12-19 10:17:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - HashCloak.pdf | metarouter_gateway | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - HashCloak.pdf | portal | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb8f275...9e81a8` — deployed 2022-11-14 09:19:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - HashCloak.pdf | symbiosis | own contract | Symbiosis (selected) `0xd38bb4...c76dd9` — deployed 2021-11-18 22:54:31+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - Omniscia.pdf | BridgeV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x552398...d7227e` — deployed 2022-11-14 09:18:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - Omniscia.pdf | MetaRouteStructs | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Omniscia.pdf | MetaRouterV2 | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Omniscia.pdf | Portal | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb8f275...9e81a8` — deployed 2022-11-14 09:19:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - Omniscia.pdf | RelayRecipientUpgradeable | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Omniscia.pdf | SyntERC20 | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Omniscia.pdf | SyntFabric | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Omniscia.pdf | Synthesis | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd7c3df...dd38b3` — deployed 2026-01-28 15:08:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - Omniscia.pdf | Timelock | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Omniscia.pdf | Wrapper | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - SlowMist.pdf | AdminableUpgradeable | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - SlowMist.pdf | BridgeV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x552398...d7227e` — deployed 2022-11-14 09:18:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - SlowMist.pdf | BridgeV2Solana | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - SlowMist.pdf | MetaRouterV2 | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - SlowMist.pdf | MetaRouterV2Solana | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - SlowMist.pdf | Portal | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb8f275...9e81a8` — deployed 2022-11-14 09:19:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - SlowMist.pdf | RelayRecipientUpgradeable | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - SlowMist.pdf | SyntERC20 | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - SlowMist.pdf | SyntFabric | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - SlowMist.pdf | SyntFabricSolana | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - SlowMist.pdf | Synthesis | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd7c3df...dd38b3` — deployed 2026-01-28 15:08:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - SlowMist.pdf | SynthesisSolana | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - SlowMist.pdf | Timelock | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - SlowMist.pdf | Wrapper | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Zokyo.pdf | AdminableUpgradeable | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Zokyo.pdf | BridgeV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x552398...d7227e` — deployed 2022-11-14 09:18:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - Zokyo.pdf | MetaRouteStructs | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Zokyo.pdf | MetaRouterGateway | own contract | MetaRouterGateway (selected) `0xfcef2f...512bcd` — deployed 2023-12-19 10:17:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - Zokyo.pdf | MetaRouterV2 | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Zokyo.pdf | Portal | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb8f275...9e81a8` — deployed 2022-11-14 09:19:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - Zokyo.pdf | RelayRecipientUpgradeable | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Zokyo.pdf | SyntERC20 | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Zokyo.pdf | SyntFabric | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Zokyo.pdf | Synthesis | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd7c3df...dd38b3` — deployed 2026-01-28 15:08:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - Zokyo.pdf | Timelock | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Zokyo.pdf | Wrapper | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Zokyo.pdf | bridge | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Zokyo.pdf | ft | unmatched — not counted | — | — | no |
+| Symbiosis Protocol Audit - Zokyo.pdf | metarouter | own contract | MetaRouter (selected) `0xf621fb...66ff7f` — deployed 2023-12-19 10:17:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol Audit - Zokyo.pdf | portal | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb8f275...9e81a8` — deployed 2022-11-14 09:19:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Depository Audit - Decurity.pdf | DepositUnlockers | unmatched — not counted | — | — | no |
+| Symbiosis Depository Audit - Decurity.pdf | Depository | own contract | Depository (selected) `0x84deb7...f941a8` — deployed 2026-03-16 22:02:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Depository Audit - Decurity.pdf | Router | unmatched — not counted | — | — | no |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | AdminableUpgradeable | unmatched — not counted | — | — | no |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | BridgeV2 | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x552398...d7227e` — deployed 2022-11-14 09:18:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | BridgeV2Solana | unmatched — not counted | — | — | no |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | MetaRouteStructs | unmatched — not counted | — | — | no |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | MetaRouteStructsSolana | unmatched — not counted | — | — | no |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | MetaRouter | own contract | MetaRouter (selected) `0xf621fb...66ff7f` — deployed 2023-12-19 10:17:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | MetaRouterGateway | own contract | MetaRouterGateway (selected) `0xfcef2f...512bcd` — deployed 2023-12-19 10:17:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | MetaRouterV2 | unmatched — not counted | — | — | no |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | MetaRouterV2Solana | unmatched — not counted | — | — | no |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | MulticallRouter | unmatched — not counted | — | — | no |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | Portal | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb8f275...9e81a8` — deployed 2022-11-14 09:19:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | RelayRecipientUpgradeable | unmatched — not counted | — | — | no |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | SyntERC20 | unmatched — not counted | — | — | no |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | SyntFabric | unmatched — not counted | — | — | no |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | SyntFabricSolana | unmatched — not counted | — | — | no |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | Synthesis | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xd7c3df...dd38b3` — deployed 2026-01-28 15:08:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | SynthesisSolana | unmatched — not counted | — | — | no |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | Timelock | unmatched — not counted | — | — | no |
+| Symbiosis Protocol MRv3 Audit - Zokyo.pdf | Wrapper | unmatched — not counted | — | — | no |
+| Symbiosis Onchain Swap Audit - Decurity.pdf | OnchainGateway | unmatched — not counted | — | listed in scope section 2.2 | no |
+| Symbiosis Onchain Swap Audit - Decurity.pdf | OnchainSwapV3 | unmatched — not counted | — | listed in scope section 2.2 and findings | no |
+| Symbiosis Pool Audit - Zokyo.pdf | AggregateAccount | unmatched — not counted | — | listed in scope | no |
+| Symbiosis Pool Audit - Zokyo.pdf | DSMath | unmatched — not counted | — | listed in scope | no |
+| Symbiosis Pool Audit - Zokyo.pdf | SafeCast | unmatched — not counted | — | listed in scope | no |
+| Symbiosis Pool Audit - Zokyo.pdf | SignedSafeMath | unmatched — not counted | — | listed in scope | no |
+| Symbiosis Pool Audit - Zokyo.pdf | Pool | unmatched — not counted | — | listed in scope | no |
+| Symbiosis TON Bridge - Zokyo.pdf | TonBridge | unmatched — not counted | — | listed in scope as TonBridge.sol | no |
+| Symbiosis TON Bridge v2 - Zokyo.pdf | bridge | unmatched — not counted | — | — | no |
+| Symbiosis TON Bridge v2 - Zokyo.pdf | external_id | unmatched — not counted | — | — | no |
+| Symbiosis TON Bridge v2 - Zokyo.pdf | jetton-minter | unmatched — not counted | — | — | no |
+| Symbiosis TON Bridge v2 - Zokyo.pdf | jetton-utils | unmatched — not counted | — | — | no |
+| Symbiosis TON Bridge v2 - Zokyo.pdf | jetton-wallet | unmatched — not counted | — | — | no |
+| Symbiosis TON Bridge v2 - Zokyo.pdf | op-codes | unmatched — not counted | — | — | no |
+| Symbiosis TON Bridge v2 - Zokyo.pdf | params | unmatched — not counted | — | — | no |
+| Symbiosis TON Bridge v2 - Zokyo.pdf | stdlib | unmatched — not counted | — | — | no |
+| Symbiosis TON Bridge v2 - Zokyo.pdf | utils | unmatched — not counted | — | — | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x22278f...5fd9a1` | BranchedUnlocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9a99eb...10c9f0` | BtcRefundUnlocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa0b869...06eb48` | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9c7beb...260649` | GravityTokenG | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x4d2244...594381` | SimpleToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xdac17f...831ec7` | TetherToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xec148f...ed8a3b` | TimedUnlocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2260fa...c2c599` | WBTC | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc02aaa...756cc2` | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xcd1080...34341e` | WithdrawUnlocker | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 0 |
+| native | 19 |
+| upstream | 1 |
 | standard_library | 0 |
-| needs_review | 177 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: contract_name=61, extraction_exact=43
+- Address-book scope dispositions: 22 own (15 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 74 unmatched
+- Matched-own operational status: 22 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=5, low=2
+- Match method counts: unique_name=21
 
 Zero-match audit list:
 
 - [2094] Symbiosis Staking - Decurity.pdf
 - [2095] Symbiosis Relayers Network 2022 - Decurity.pdf
 - [2097] Symbiosis Frontend App - Decurity.pdf
+- [14787] Symbiosis Onchain Swap Audit - Decurity.pdf
+- [14788] Symbiosis Pool Audit - Zokyo.pdf
 - [14789] Symbiosis TON Bridge - Zokyo.pdf
+- [14790] Symbiosis TON Bridge v2 - Zokyo.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

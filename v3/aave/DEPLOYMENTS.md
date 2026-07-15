@@ -1,60 +1,7 @@
 # aave — deployments
 
-54 verified deployment(s) across 51 component(s).
+1 verified deployment(s) across 1 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| avalanche | `0x01ae7dda024ea9712344d9332c94d3168a91f342` | LendingPool-4 | impl | live | yes |
-| avalanche | `0x06c9d00cd51656791e2c2b435bee9dc1576478b2` | StableAndVariableTokensHelper | impl | live | no |
-| avalanche | `0x06f311395ba08ffb9e5b31b666f318e417b0feb0` | LendingPoolAddressesProviderRegistry | impl | live | yes |
-| avalanche | `0x0e6442d92365c65bfa24088bbe4fe83998262112` | AToken | impl | live | yes |
-| avalanche | `0x105c557444ed2f5ed34ee9548a0529e8c142c4e3` | LendingPoolCollateralManager | impl | live | yes |
-| avalanche | `0x161c6460dead6241041cd629cbacd4a699112a99` | DefaultReserveInterestRateStrategy | impl | live | yes |
-| avalanche | `0x195bd5faf93e0a04a8c00c680911d6e249f68669` | ChainlinkSourcesRegistry | impl | unknown | no |
-| avalanche | `0x286393ea182c9a20a8fedbe6f18533cbf14c42fa` | ATokensAndRatesHelper | impl | live | no |
-| avalanche | `0x467b92af281d14cb6809913ad016a607b5ba8a36` | BaseAdminUpgradeabilityProxy-4 | proxy | live | yes |
-| avalanche | `0x51c4ec68ebdbe196394c4e10bc73fc132941d36d` | DefaultReserveInterestRateStrategy-2 | impl | live | yes |
-| avalanche | `0x5b7d5f59e3defbe12a9f31a5ba6247d6b788bbac` | LendingPoolAddressesProvider | impl | live | yes |
-| avalanche | `0x6ff122fc51825eebeb8640592a30e1818ed6dfc6` | StableDebtToken | impl | live | yes |
-| avalanche | `0x8a47f74d1ee0e2edeb4f3a7e64ef3bd8e11d27c8` | WETHGateway | impl | live | yes |
-| avalanche | `0xa7da242e099136a71ff975b8d78b79aa543c9182` | UiPoolDataProviderV2V3 | impl | live | no |
-| avalanche | `0xf7fc20d9d1d8dfe55f5f2c3180272a5747dd327f` | ParaSwapLiquiditySwapAdapter | impl | live | yes |
-| avalanche | `0xfc9f4403d28d338f3a2814df9febf7e7f20a091c` | AaveCollector | impl | live | no |
-| ethereum | `0x057835ad21a177dbdd3090bb1cae03eacf78fc6d` | AaveProtocolDataProvider | impl | live | yes |
 | ethereum | `0x06002e9c4412cb7814a791ea3666d905871e536a` | TransparentUpgradeableProxy | proxy | live | no |
-| ethereum | `0x0671ca7e039af2cf2d2c5e7f1aa261ae78b3ffdf` | LendVoteStrategyToken | impl | live | no |
-| ethereum | `0x06abcc3b98b7310f50197f0f9cec6cf6e176ae68` | StakeUIHelper | impl | live | no |
-| ethereum | `0x1012cff81a1582ddd0616517efb97d02c5c17e25` | LendingPoolCore | proxy | live | yes |
-| ethereum | `0x1104c2f267861aad82a3bad48ec4bf78ef221c63` | IncentivizedERC20 | impl | live | yes |
-| ethereum | `0x1156c30b08dbf16281c803eae0d52eee7652f10c` | ConfigurableRightsPool | impl | live | no |
-| ethereum | `0x1438f4f4e8ffd2d08f373af7fc84be0164f09e67` | BaseAdminUpgradeabilityProxy | proxy | live | yes |
-| ethereum | `0x1967a31c31d4344f7a4f158bcf72838a25126110` | LendingPool-2 | impl | live | yes |
-| ethereum | `0x238fcb066a2e4662078836237a62b59664d6f76d` | AaveIncentivesVault | impl | live | no |
-| ethereum | `0x25f2226b597e8f9514b3f68f00f494cf4f286491` | InitializableAdminUpgradeabilityProxy | proxy | live | yes |
-| ethereum | `0x2f892d0905dd20e79595fabdeae9c45234615b39` | ReserveLogic | impl | live | yes |
-| ethereum | `0x317625234562b1526ea2fac4030ea499c5291de4` | InitializableAdminUpgradeabilityProxy-2 | proxy | live | yes |
-| ethereum | `0x36ec8f61d077909b2166f78c488f2525bca62e94` | AaveGenesisProposalPayload | impl | live | no |
-| ethereum | `0x3a95ee42f080ff7289c8b4a14eb483a8644d7521` | LendingPoolConfigurator | impl | live | yes |
-| ethereum | `0x3de0ff76e8b528c092d47b9dac775931cef80f49` | PendlePrincipalToken | impl | live | no |
-| ethereum | `0x3dfd23a6c5e8bbcfc9581d2e864a68feb6a076d3` | LendingPoolCore | proxy | live | yes |
-| ethereum | `0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f` | GhoToken | impl | live | yes |
-| ethereum | `0x41a08648c3766f9f9d85598ff102a08f4ef84f84` | BaseAdminUpgradeabilityProxy | proxy | live | yes |
-| ethereum | `0x481484ee9be4819842268487aeeb1f43810d03a1` | StakedAave | impl | live | no |
-| ethereum | `0x4da27a545c0c5b758a6ba100e3a049001de870f5` | InitializableAdminUpgradeabilityProxy-3 | proxy | live | yes |
-| ethereum | `0x59454304baefa37f299ffe6237e5467223d28261` | OracleAnchor | impl | live | no |
-| ethereum | `0x5ac493b8c2cef1f02f117b9ba2797e7da95574aa` | AssetVotingWeightProvider | impl | live | no |
-| ethereum | `0x62121b60a826b496f05bdd45dfe40c51fb549d97` | AssetListingProposalGenericExecutor | impl | live | no |
-| ethereum | `0x72bbcfc20d355fc3e8ac4ce8fcaf63874f746631` | AaveProtoGovernance | impl | live | no |
-| ethereum | `0x797ae69562588dd893567ba22dfcf8e842686b53` | BaseAdminUpgradeabilityProxy-2 | impl | live | yes |
-| ethereum | `0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9` | InitializableAdminUpgradeabilityProxy-4 | proxy | live | yes |
-| ethereum | `0x93b8cdac045c47d3eb4ef1ab02e0fcee850ff126` | IncentivizedERC20-2 | impl | live | yes |
-| ethereum | `0x9c0435779f5e52cec404d957c9baa6f7d674c8ba` | InitializableAdminUpgradeabilityProxy-5 | proxy | live | yes |
-| ethereum | `0xa1116930326d21fb917d5a27f1e9943a9595fb47` | BaseAdminUpgradeabilityProxy-3 | proxy | live | yes |
-| ethereum | `0xa5e83c1a6e56f27f7764e5c5d99a9b8786e3a391` | AaveVoteStrategyToken | impl | live | no |
-| ethereum | `0xd08e12367a7d68caa8ff080d3a56b2dc6650709b` | AIP9 | impl | live | no |
-| ethereum | `0xda8ad436e1dfe962091d86a341e957c6a5168a9d` | AaveProtoGovernance-2 | impl | live | no |
-| ethereum | `0xe648ab660954fa4637a50802a1703ead843c0c20` | LendingPool-3 | impl | live | yes |
-| ethereum | `0xf3b2c28c7245c49ea5e6c6db98026f180b443a06` | GovernanceParamsProvider | impl | live | no |
-| polygon | `0x0229f777b0fab107f9591a41d5f02e4e98db6f2d` | LendingPool | impl | live | yes |
-| polygon | `0x17f73aead876cc4059089ff815eda37052960dfb` | LendingPool | impl | live | yes |
-| polygon | `0x34aa032bc416cf2cdc45c0c8f065b1f19463d43e` | WalletBalanceProvider | impl | live | yes |

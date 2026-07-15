@@ -1,60 +1,38 @@
 {
   "component": "Router",
   "main_contract": "Router",
-  "source_file_count": 38,
-  "deployment_count": 6,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/dfx-finance/protocol/blob/main/audits/2021-05-03-Trail_of_Bits.pdf"
-  ],
+  "source_entry_count": 36,
+  "source_file_count": 36,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Router\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x0bf90521ebd840947845f4466018456aab08bb09",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x9bba6805f25b35bdf65e50a42015369e7825428e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393546"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x9d0950c595786aba7c26dfddf270d66a8b18b4fa",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x575f1ed1e14ac1152bf2f1cdfb2c1865ca246f51",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xa557373168c1914422b669cbaf9145b225066a7f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xc7da9f5bda76e2c62d3455bc18e836032fe87945",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xf04d98dbb50884250be010f25c2650579552b51b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393562"
     }
   ]
 }

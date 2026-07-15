@@ -1,10 +1,21 @@
 {
   "component": "SherlockProtocolManager",
   "main_contract": "SherlockProtocolManager",
+  "source_entry_count": 24,
   "source_file_count": 24,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SherlockProtocolManager\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sherlock-protocol/sherlock-v2-core/blob/main/audits/Sherlock%20-%20Code%20Arena%20Jan%202022.pdf",
+    "https://github.com/sherlock-protocol/sherlock-v2-core/blob/main/audits/Sherlock%20-%20Trail%20of%20Bits%20Dec%202021.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +23,9 @@
       "address": "0x3d0b8a0a10835ab9b0f0beb54c5400b8aacaa1d3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404049"
     }
   ]
 }

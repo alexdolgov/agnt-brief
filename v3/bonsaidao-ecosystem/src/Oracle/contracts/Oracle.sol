@@ -81,7 +81,7 @@ contract Oracle is IVendorOracle, Ownable {
             int256 priceInNative = _getLatestRoundData(nativeFeed);
             int256 nativePriceInUSD = _getNativeUSDPrice();
             // Do not compute price if price fetch failed for any specific component
-            if (priceInNative == NOT_FOUND || nativePriceInUSD == NOT_FOUND)
+            if (priceInNative < 0 || nativePriceInUSD < 0)
                 return NOT_FOUND;
             // Native feeds are returned in 18 decimals, so we need to update decimals in the result when converting to USD
             return (priceInNative * nativePriceInUSD) / 1e18;
@@ -102,11 +102,6 @@ contract Oracle is IVendorOracle, Ownable {
     ) external onlyOwner {
         if (_token == address(0) || _feed == address(0)) {
             revert ZeroAddress();
-        }
-        if (
-            feedsNATIVE[_token] != address(0) || feedsUSD[_token] != address(0)
-        ) {
-            revert FeedAlreadySet();
         }
         if (_isNative) {
             feedsNATIVE[_token] = _feed;

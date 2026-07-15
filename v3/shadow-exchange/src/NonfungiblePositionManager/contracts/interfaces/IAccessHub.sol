@@ -2,21 +2,49 @@
 pragma solidity ^0.8.26;
 
 interface IAccessHub {
+    error SAME_ADDRESS();
+    error NOT_TIMELOCK(address);
+    error MANUAL_EXECUTION_FAILURE(bytes);
+
+    /// @dev Struct to hold initialization parameters
+    struct InitParams {
+        address timelock;
+        address treasury;
+        address voter;
+        address minter;
+        address launcherPlugin;
+        address xShadow;
+        address x33;
+        address ramsesV3PoolFactory;
+        address poolFactory;
+        address clGaugeFactory;
+        address gaugeFactory;
+        address feeRecipientFactory;
+        address feeDistributorFactory;
+        address feeCollector;
+        address voteModule;
+    }
+
+    /// @notice protocol timelock address
     function timelock() external view returns (address timelock);
-    function set(
-        address _voter,
-        address _minter,
-        address _launcherPlugin,
-        address _xShadow,
-        address _ramsesV3PoolFactory,
-        address _poolFactory,
-        address _clGaugeFactory,
-        address _gaugeFactory,
-        address _feeRecipientFactory,
-        address _feeDistributorFactory,
-        address _feeCollector,
-        address _voteModule
-    ) external;
+
+    /// @notice protocol treasury address
+    function treasury() external view returns (address treasury);
+
+    /// @notice concentrated (v3) gauge factory
+    function clGaugeFactory() external view returns (address _clGaugeFactory);
+
+    /// @notice legacy gauge factory address
+    function gaugeFactory() external view returns (address _gaugeFactory);
+
+    /// @notice the feeDistributor factory address
+    function feeDistributorFactory()
+        external
+        view
+        returns (address _feeDistributorFactory);
+
+    /// @notice initializing function for setting values in the AccessHub
+    function initialize(InitParams calldata params) external;
 
     /// @notice sets the swap fees for multiple pairs
     function setSwapFees(
@@ -26,31 +54,78 @@ interface IAccessHub {
     ) external;
 
     /// @notice sets the split of fees between LPs and voters
-    function setFeeSplit(
+    function setFeeSplitCL(
         address[] calldata _pools,
-        uint8[] calldata _feeSplits,
-        bool[] calldata _concentrated
+        uint8[] calldata _feeProtocol
+    ) external;
+
+    /// @notice sets the split of fees between LPs and voters for legacy pools
+    function setFeeSplitLegacy(
+        address[] calldata _pools,
+        uint256[] calldata _feeSplits
     ) external;
 
     /** Voter governance */
 
+    /// @notice sets a new governor address in the voter.sol contract
     function setNewGovernorInVoter(address _newGovernor) external;
 
+    /// @notice whitelists a token for governance, or removes if boolean is set to false
     function governanceWhitelist(
         address[] calldata _token,
         bool[] calldata _whitelisted
     ) external;
-    /// @notice whitelists an address to be able to transfer xShadow
+
+    /// @notice kills active gauges, removing them from earning further emissions, and claims their fees prior
+    function killGauge(address[] calldata _pairs) external;
+
+    /// @notice revives inactive/killed gauges
+    function reviveGauge(address[] calldata _pairs) external;
+
+    /// @notice sets the ratio of xShadow/Shadow awarded globally to LPs
+    function setEmissionsRatioInVoter(uint256 _pct) external;
+
+    /// @notice allows governance to retrieve emissions in the voter contract that will not be distributed due to the gauge being inactive
+    /// @dev allows per-period retrieval for granularity
+    function retrieveStuckEmissionsToGovernance(
+        address _gauge,
+        uint256 _period
+    ) external;
+
+    /// @notice allows governance to designate a tickspacing as the "main" one, to prevent governance spam and confusion
+    function setMainTickSpacingInVoter(
+        address tokenA,
+        address tokenB,
+        int24 tickSpacing
+    ) external;
+
+    /** xShadow Functions */
+
+    /// @notice enables or disables the transfer whitelist in xShadow
     function transferWhitelistInXShadow(
         address[] calldata _who,
         bool[] calldata _whitelisted
     ) external;
-    /// @notice kills active gauges, removing them from earning further emissions, and claims their fees prior
-    function killGauge(address[] calldata _pairs) external;
-    /// @notice revives inactive/killed gauges
-    function reviveGauge(address[] calldata _pairs) external;
-    /// @notice sets the ratio of xShadow/Shadow awarded globally to LPs
-    function setEmissionsRatioInVoter(uint256 _pct) external;
+
+    /// @notice enables or disables the governance in xShadow
+    function toggleXShadowGovernance(bool enable) external;
+
+    /// @notice allows redemption from the operator
+    function operatorRedeemXShadow(uint256 _amount) external;
+
+    /// @notice migrates the xShadow operator
+    function migrateOperator(address _operator) external;
+
+    /// @notice rescues any trapped tokens in xShadow
+    function rescueTrappedTokens(
+        address[] calldata _tokens,
+        uint256[] calldata _amounts
+    ) external;
+
+    /** X33 Functions */
+
+    /// @notice transfers the x33 operator address
+    function transferOperatorInX33(address _newOperator) external;
 
     /** Minter Functions */
 
@@ -112,6 +187,12 @@ interface IAccessHub {
         string calldata _label
     ) external;
 
+    /// @notice governance ability to label each authority in the system with an arbitrary string
+    function labelAuthorityInLauncherPlugin(
+        address _authority,
+        string calldata _label
+    ) external;
+
     /// @notice removes authority from a contract/address
     /// @param _oldAuthority the to-be-removed authority
     function revokeAuthorityInLauncherPlugin(address _oldAuthority) external;
@@ -147,8 +228,31 @@ interface IAccessHub {
     /// @param initialFee The initial fee amount, denominated in hundredths of a bip (i.e. 1e-6)
     function enableTickSpacing(int24 tickSpacing, uint24 initialFee) external;
 
+    /// @notice sets the feeProtocol (feeSplit) for new CL pools and stored in the factory
+    function setGlobalClFeeProtocol(uint8 _feeProtocolGlobal) external;
+
     /// @notice sets the address of the voter in the v3 factory for gauge fee setting
     function setVoterAddressInFactoryV3(address _voter) external;
+
+    /// @notice sets the address of the feeCollector in the v3 factory for fee routing
+    function setFeeCollectorInFactoryV3(address _newFeeCollector) external;
+
+    /** Legacy Pool Factory functions */
+
+    /// @notice sets the treasury address in the legacy factory
+    function setTreasuryInLegacyFactory(address _treasury) external;
+
+    /// @notice enables or disables if there is a feeSplit when no gauge for legacy pairs
+    function setFeeSplitWhenNoGauge(bool status) external;
+
+    /// @notice set the default feeSplit in the legacy factory
+    function setLegacyFeeSplitGlobal(uint256 _feeSplit) external;
+
+    /// @notice set the default swap fee for legacy pools
+    function setLegacyFeeGlobal(uint256 _fee) external;
+
+    /// @notice sets whether a pair can have skim() called or not for rebasing purposes
+    function setSkimEnabledLegacy(address _pair, bool _status) external;
 
     /** VoteModule Functions*/
 
@@ -168,6 +272,7 @@ interface IAccessHub {
 
     /// @notice timelock gated payload execution in case tokens get stuck or other unexpected behaviors
     function execute(address _target, bytes calldata _payload) external;
+
     /// @notice timelock gated function to change the timelock
     function setNewTimelock(address _timelock) external;
 

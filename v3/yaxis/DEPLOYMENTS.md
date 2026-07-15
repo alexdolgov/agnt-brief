@@ -1,73 +1,11 @@
 # yaxis — deployments
 
-67 verified deployment(s) across 67 component(s).
+5 verified deployment(s) across 5 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| ethereum | `0x002688c4296a2c4d800f271fe6f01741111b09be` | CryptoFromPoolVaultWAgg | impl | live | no |
-| ethereum | `0x00702bbdead24c40647f235f15971db0867f6bdb` | Vyper_contract | impl | live | no |
-| ethereum | `0x00b71a425db7c8b65a46cf39c23a188e10a2de99` | LiquidityGaugeV6 | impl | live | no |
-| ethereum | `0x0167f82398775c1a1175d73e86ce06bfcfe3aac1` | MinterWrapper | impl | live | no |
-| ethereum | `0x01fef0d5d6fd6b5701ae913cafb11ddaee982c9a` | yAxisMetaVault | impl | live | no |
-| ethereum | `0x07374b547cae235227635c13266c69847a3e46fa` | CryptoWithStablePriceWBTC | impl | live | no |
-| ethereum | `0x0901b541beff2cd44859701619e245e82f48e62b` | AggMonetaryPolicy-monetarypolicybasedonaggregatedpricesforcrvUSD | impl | live | no |
-| ethereum | `0x0a758a25997167762e187f960dd0539a4ae3e9a6` | StakingRewards | impl | live | no |
-| ethereum | `0x0a9ae947495034c0bbbab845fd75b5bbafc91aab` | CryptoFromPoolsRateWAgg | impl | live | no |
 | ethereum | `0x0ada190c81b814548ddc2f6adc4a689ce7c1fe73` | YaxisToken | impl | live | no |
-| ethereum | `0x0b42b20280216d604bb2b6a8944fb9027b43df8d` | Vault | impl | live | no |
-| ethereum | `0x0c44393da03216e934b3a5503decf7f78174b2f3` | VaultToken | impl | live | no |
 | ethereum | `0x0d857688d6a223a2f4e58cdd44119abb7dc5a790` | StrategyControllerV2 | impl | live | no |
-| ethereum | `0x0ec8e0c868541df59ced49b39cc930c3a8dbd93a` | LLAMMA_-_crvUSD_AMM | impl | live | no |
-| ethereum | `0x17c6e1ddf1cce3d33240a53fce8a2ee48541f4d4` | crvUSD_Controller | impl | live | no |
-| ethereum | `0x18672b1b0c623a30089a280ed9256379fb0e4e62` | AggregatorStablePrice-aggregatorofstablecoinpricesforcrvUSD | impl | live | no |
-| ethereum | `0x188041ad83145351ef45f4bb91d08886648aeaf8` | Secondarymonetarypolicy | impl | live | no |
-| ethereum | `0x18dbefac8eb66fdf559e31d5c154f4ffbc63ff99` | yAxisMetaVaultHarvester | impl | live | no |
-| ethereum | `0x1ef89ed0edd93d1ec09e4c07373f69c49f4dccae` | PegKeeper | impl | live | no |
-| ethereum | `0x21dee38170f1e1f26baff2c30c0fc8f8362b6961` | LinkswapPair | impl | live | no |
-| ethereum | `0x21f5f6d3f90d0f56a6de307a3bd359d0a151b304` | CryptoWithStablePriceWsteth | impl | live | no |
-| ethereum | `0x226845c2ba216b8bb1aaadfd4e14de69426c5445` | PegPrice | impl | live | no |
-| ethereum | `0x226f9954a1221cde805c76cfb312a5d761630e14` | Rewards | impl | live | no |
-| ethereum | `0x22f72d1d79259ce8489e912f4bf613d192000b3e` | StrategyPickle3Crv | impl | live | no |
-| ethereum | `0x259ac58aa39a64614af1afe6a4c266cfe09510cf` | VaultHelper | impl | live | no |
-| ethereum | `0x27762c069c897ed2244e3e8164068e5f1f09e429` | yAxisMetaVaultManager | impl | live | no |
-| ethereum | `0x28d7880b5b67fb4a0b1c6ed6c33c33f365113c29` | CryptoWithStablePriceSfrxeth | impl | live | no |
-| ethereum | `0x293436d4e4a15fbc6ccc400c14a01735e5fc74fd` | wstETH-crvUSDleveragezap | impl | live | no |
-| ethereum | `0x2a09392a6fbe7c5b9ca686a5f89387cd0045ea35` | StableSwap3PoolOracle | impl | live | no |
-| ethereum | `0x2a28789645776eaa95f6d491ff375781ea5b40dd` | SemiLog_monetary_policy | impl | live | no |
-| ethereum | `0x2aeb5c8776567c4eeebda1450e343b1bef49ae32` | USD0LpOracle | impl | live | no |
-| ethereum | `0x2bc706b83ab08d0437b8a397242c3284b5f81d74` | crvUSDdeleveragezap | impl | live | no |
-| ethereum | `0x2d89d82ff68bae1357d746b3e8eac520bfe1d5ca` | CryptoFromPoolWAgg | impl | live | no |
-| ethereum | `0x2e93242202a13dd451c3147fc417ce95d49b0281` | StableSwap3PoolConverter | impl | live | no |
-| ethereum | `0x2ebe1461d2fc6dabf079882cfc51e5013bba49b6` | StrategyControllerV1 | impl | live | no |
-| ethereum | `0x32facb5a46e02decaf5f939ab12c123eee203a5f` | MultiClaim | impl | live | no |
-| ethereum | `0x34024ba3b6edaf5cdd1c24fefe1df5d03041f38c` | OneWayLendingFactory | impl | live | no |
-| ethereum | `0x3547dfca04358540891149559e691b146c6b0043` | MultiRewards | impl | live | no |
-| ethereum | `0x38e7627eb98a40e7528bcce709a80083093ba2f8` | CryptoFromPoolsRate | impl | live | no |
-| ethereum | `0x3b38ce23799dc56664ff6048892510abffdb7a25` | CryptoFromPool | impl | live | no |
-| ethereum | `0x43ecffe6c6c1b9f24aeb5c180e659c2a6fce11bc` | sfrxETH2crvUSDleveragezap | impl | live | no |
-| ethereum | `0x4e1f162fd143e4a829341efd6dd451b018b10f9c` | SecondarymonetarypolicyforWBTC | impl | live | no |
-| ethereum | `0x53e6c8a06f831c3281ccca5f0e349bbe0a65dcde` | CRVDisperse | impl | live | no |
-| ethereum | `0x66c5c16d13a38461648c1d097f219762d374b412` | TimelockHasOperator | impl | live | no |
-| ethereum | `0x738080868c83d65582d51ba63cc9f23064f92e41` | yAxisMetaVaultStrategists | impl | live | no |
-| ethereum | `0x834ebce3b3fb5b9647d9398a1f6f44a2e831ac60` | Controller | impl | live | no |
-| ethereum | `0x840231204dd17a57b44cb803843363ba926b4910` | SmartWalletChecker | impl | live | no |
-| ethereum | `0x87ee9bdb7241ebd95b22c0237e7bbc5d6be658eb` | Timelock | impl | live | no |
-| ethereum | `0x8fcfd0eec0cca95b5bcebd33a076b29fd8998884` | RewardClaimer | impl | live | no |
 | ethereum | `0x9354b082e5cedb41422fb9d4669ab8b7f8511aee` | StableSwap3PoolNonConverter | impl | live | no |
-| ethereum | `0x966cbdecefb60a289b0460f7638f4a75f432ca06` | CryptoWithStablePriceETH | impl | live | no |
-| ethereum | `0xa2518b71ee64e910741f5cf480b19e8e402de4d7` | WBTC-crvUSDleveragezap | impl | live | no |
-| ethereum | `0xab72cc293b63f6477baf9d514da735cf6caadc2d` | Manager | impl | live | no |
-| ethereum | `0xb556fa4c4752321b3154f08dfbdfcf34847f2eac` | LeveragezapforcrvUSDcontroller_sfrxETHmarket_ | impl | live | no |
-| ethereum | `0xbef434e2acf0fbad1f0579d2376fed0d1cfc4217` | CryptoWithStablePriceTBTC | impl | live | no |
-| ethereum | `0xbfbec72f2450ef9ab742e4a27441fa06ca79ea6a` | yAxisMetaVault-2 | impl | live | no |
-| ethereum | `0xc0ff761a9d4f4e5036cf3d0e1a02b0a7b275927e` | Harvester | impl | live | no |
-| ethereum | `0xc330e7e73717cd13fb6ba068ee871584cf8a194f` | YaxisChef | impl | live | no |
-| ethereum | `0xc9332fdcb1c491dcc683bae86fe3cb70360738bc` | crvUSDControllerFactory | impl | live | no |
 | ethereum | `0xcdf398537adbf8617a8401b14dcee7f67cf8c64b` | Swap | impl | live | no |
-| ethereum | `0xcf61ee62b136e3553fb545bd8fec11fb7f830d6a` | HealthcalculatorzapforcrvUSDcontroller | impl | live | no |
 | ethereum | `0xd0c9432625a181c823b3e63d5e6656f87231ae96` | MerkleDistributor | impl | live | no |
-| ethereum | `0xda3a068428a2a04d21dd628a4479f95bc98b6eab` | FeeDistributor | impl | live | no |
-| ethereum | `0xef31cb88048416e301fee1ea13e7664b887ba7e8` | YaxisBar | impl | live | no |
-| ethereum | `0xf0e3fdf48661cd10d56692f60bd4eccd01e9cf64` | UniswapV2Pair | impl | live | no |
-| ethereum | `0xf574cbebbd549273af82b42cd0230de9ea6efef7` | SusdeMonetaryPolicy | impl | live | no |
-| ethereum | `0xf939e0a03fb07f59a73314e73794be0e57ac1b4e` | crvUSDStablecoin | impl | live | no |

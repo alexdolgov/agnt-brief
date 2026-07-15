@@ -55,26 +55,10 @@ contract RoleModule {
     }
 
     /**
-     * @dev Only allows addresses with the LIMITED_CONFIG_KEEPER role to call the function.
-     */
-    modifier onlyLimitedConfigKeeper() {
-        _validateRole(Role.LIMITED_CONFIG_KEEPER, "LIMITED_CONFIG_KEEPER");
-        _;
-    }
-
-    /**
      * @dev Only allows addresses with the CONTROLLER role to call the function.
      */
     modifier onlyController() {
         _validateRole(Role.CONTROLLER, "CONTROLLER");
-        _;
-    }
-
-    /**
-     * @dev Only allows addresses with the GOV_TOKEN_CONTROLLER role to call the function.
-     */
-    modifier onlyGovTokenController() {
-        _validateRole(Role.GOV_TOKEN_CONTROLLER, "GOV_TOKEN_CONTROLLER");
         _;
     }
 
@@ -99,14 +83,6 @@ contract RoleModule {
      */
     modifier onlyFeeKeeper() {
         _validateRole(Role.FEE_KEEPER, "FEE_KEEPER");
-        _;
-    }
-
-    /**
-     * @dev Only allows addresses with the FEE_DISTRIBUTION_KEEPER role to call the function.
-     */
-    modifier onlyFeeDistributionKeeper() {
-        _validateRole(Role.FEE_DISTRIBUTION_KEEPER, "FEE_DISTRIBUTION_KEEPER");
         _;
     }
 
@@ -139,30 +115,6 @@ contract RoleModule {
      */
     modifier onlyAdlKeeper() {
         _validateRole(Role.ADL_KEEPER, "ADL_KEEPER");
-        _;
-    }
-
-    /**
-     * @dev Only allows addresses with the CONTRIBUTOR_KEEPER role to call the function.
-     */
-    modifier onlyContributorKeeper() {
-        _validateRole(Role.CONTRIBUTOR_KEEPER, "CONTRIBUTOR_KEEPER");
-        _;
-    }
-
-    /**
-     * @dev Only allows addresses with the CONTRIBUTOR_DISTRIBUTOR role to call the function.
-     */
-    modifier onlyContributorDistributor() {
-        _validateRole(Role.CONTRIBUTOR_DISTRIBUTOR, "CONTRIBUTOR_DISTRIBUTOR");
-        _;
-    }
-
-    /**
-     * @dev Only allows addresses with the CLAIM_ADMIN role to call the function.
-     */
-    modifier onlyClaimAdmin() {
-        _validateRole(Role.CLAIM_ADMIN, "CLAIM_ADMIN");
         _;
     }
 

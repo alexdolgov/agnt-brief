@@ -1,26 +1,41 @@
 {
   "component": "OrderBook",
   "main_contract": "OrderBook",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OrderBook\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/useboardwalk/morphex-contracts/blob/main/audits/Cantina_Audit_Jul_2025.pdf",
+    "https://github.com/useboardwalk/morphex-contracts/blob/main/audits/Sherlock_Audit_Jul_2025.pdf"
+  ],
   "addresses": [
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0x55f1234662bb538231d56636bb182915b43d4364",
+      "address": "0x7e3f5e2d89f6c83988301989fa3fc3a4ea3612a6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392379"
     },
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0xb8372b8c8fbb4e72938d9e1cdd66b135e43faa2a",
+      "address": "0xf9fc0b2859f9b6d33fd1cea5b0a9f1d56c258178",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392403"
     }
   ]
 }

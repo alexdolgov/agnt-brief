@@ -216,17 +216,17 @@ interface IAutopilotRouter is IAutopilotRouterBase {
      */
     function lockTokeFor(uint256 amount, uint256 duration) external payable;
 
-    /**
-     * @notice Redeem prorata from a AutopoolETH.
-     * @param vault The AutopoolETH to redeem shares from.
-     * @param to The destination of assets.
-     * @param shares The amount of shares to redeem from vault.
-     * @return amountOut the amount of assets received by `to`.
-     */
-    function redeemProrata(
-        IAutopool vault,
-        address to,
-        uint256 shares,
-        uint256 minAmountOut
-    ) external payable returns (uint256 amountOut);
+    // /**
+    //  * @notice Redeem prorata from a AutopoolETH.
+    //  * @param vault The AutopoolETH to redeem shares from.
+    //  * @param to The destination of assets.
+    //  * @param shares The amount of shares to redeem from vault.
+    //  * @return amountOut the amount of assets received by `to`.
+    //  */
+    // function redeemProrata(
+    //     IAutopool vault,
+    //     address to,
+    //     uint256 shares,
+    //     uint256 minAmountOut
+    // ) external payable returns (uint256 amountOut);
 }

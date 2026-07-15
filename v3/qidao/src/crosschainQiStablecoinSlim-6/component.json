@@ -1,18 +1,28 @@
 {
   "component": "crosschainQiStablecoinSlim-6",
   "main_contract": "crosschainQiStablecoinSlim",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/crosschainQiStablecoinSlim-6\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x4592e0bcf01121757e70404915f220a77ffb4e15",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1f0aa72b980d65518e88841ba1da075bd43fa933",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398160"
     }
   ]
 }

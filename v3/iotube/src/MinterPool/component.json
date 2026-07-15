@@ -1,50 +1,28 @@
 {
   "component": "MinterPool",
   "main_contract": "MinterPool",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MinterPool\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x3233ebc7d3f1ae364bb6e2f15f6bbb9be2f4b71c",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x964f4f19bc823e72cc1f806021937cfc06f63b45",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x4799d57abf5f12ca4ef5375c9dadf8fe7fa5a454",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x5cc65d3be29ba0f0b206abd7774ae6f58825e676",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xa1dae17bac2d400ccde5b77b29dc4adbd4db50f9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xb525af1aee7033c04a50eccddc15264bab6c82b0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395388"
     }
   ]
 }

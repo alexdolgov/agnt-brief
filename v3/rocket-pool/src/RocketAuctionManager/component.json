@@ -1,10 +1,25 @@
 {
   "component": "RocketAuctionManager",
   "main_contract": "RocketAuctionManager",
+  "source_entry_count": 13,
   "source_file_count": 13,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RocketAuctionManager\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://diligence.security/audits/2021/04/rocketpool",
+    "https://github.com/trailofbits/publications/blob/master/reviews/RocketPool.pdf",
+    "https://rocketpool.net/files/audits/cantina-audit-saturn-1.pdf",
+    "https://rocketpool.net/files/audits/consensys-audit-atlas.pdf",
+    "https://rocketpool.net/files/audits/sigma-prime-audit.pdf",
+    "https://rocketpool.net/files/sigma-prime-audit.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +27,9 @@
       "address": "0x1a2f00d187c9388fda3bf2dc46a6b4740849ecce",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403937"
     }
   ]
 }

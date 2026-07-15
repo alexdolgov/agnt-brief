@@ -1,7 +1,15 @@
 {
   "component": "BalancerComposableStablePoolCalculator-2",
   "main_contract": "BalancerComposableStablePoolCalculator",
+  "source_entry_count": 70,
   "source_file_count": 70,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BalancerComposableStablePoolCalculator-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x4fc45f7c2feb07d5698cc12717f5b8d4f30002a9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391683"
     },
     {
       "chain": "base",
@@ -20,7 +30,9 @@
       "address": "0x800f535ce3f430b1f5475575d7d2ff3a164820b3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391692"
     }
   ]
 }

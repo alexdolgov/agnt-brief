@@ -79,7 +79,7 @@ contract ve_dist {
     address public depositor;
 
     constructor(address _voting_escrow) {
-        uint _t = block.timestamp / WEEK * WEEK - WEEK;
+        uint _t = block.timestamp / WEEK * WEEK;
         start_time = _t;
         last_token_time = _t;
         time_cursor = _t;

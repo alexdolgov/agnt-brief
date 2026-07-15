@@ -1,0 +1,49 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "yearn",
+  "missing": [
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x1ab62413e0cf2ebeb73da7d40c70e7202ae14467",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x41b994c192183793bb9cc35baab8bd9c6885c6bf",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x444045c5c13c246e117ed36437303cac8e250ab0",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x90c1f9220d90d3966fbee24045edd73e1d588ad5",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0xb287a1964aee422911c7b8409f5e5a273c1412fa",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0xbb51273d6c746910c7c06fe718f30c936170fed0",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0xccd04073f4bdc4510927ea9ba350875c3c65bf81",
+      "canonical_source_address": null
+    }
+  ]
+}

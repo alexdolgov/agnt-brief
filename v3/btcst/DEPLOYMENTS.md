@@ -4,4 +4,4 @@
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| bsc | `0xba2ae424d960c26247dd6c32edc70b295c744c43` | Proxy | proxy | live | no |
+| bsc | `0xba2ae424d960c26247dd6c32edc70b295c744c43` | BEP20UpgradeableProxy | proxy | live | no |

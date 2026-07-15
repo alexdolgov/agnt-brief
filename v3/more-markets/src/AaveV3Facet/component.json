@@ -1,7 +1,15 @@
 {
   "component": "AaveV3Facet",
   "main_contract": "AaveV3Facet",
+  "source_entry_count": 42,
   "source_file_count": 42,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AaveV3Facet\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x3172c30821d61b97ed0c9b21c0fe42ff0b362fbd",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396895"
     }
   ]
 }

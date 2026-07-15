@@ -38,7 +38,6 @@ interface IProtocolFactory {
   function updateCoverImplementation(address _newImplementation) external returns (bool);
   /// @dev update this will only affect contracts deployed after
   function updateCoverERC20Implementation(address _newImplementation) external returns (bool);
-  function assignClaimManager(address _address) external returns (bool);
   function addProtocol(
     bytes32 _name,
     bool _active,
@@ -46,10 +45,10 @@ interface IProtocolFactory {
     uint48[] calldata _timestamps,
     bytes32[] calldata _timestampNames
   ) external returns (address);
+  function updateTreasury(address _address) external returns (bool);
+  function updateClaimManager(address _address) external returns (bool);
 
   /// @notice access restriction - governance
-  function updateClaimManager(address _address) external returns (bool);
   function updateFees(uint16 _redeemFeeNumerator, uint16 _redeemFeeDenominator) external returns (bool);
   function updateGovernance(address _address) external returns (bool);
-  function updateTreasury(address _address) external returns (bool);
 }  

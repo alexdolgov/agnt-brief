@@ -59,8 +59,6 @@ contract InitializableOwnable {
     }
 }
 
-// File: contracts/lib/FeeRateModel.sol
-
 
 
 interface IFeeRateImpl {
@@ -85,7 +83,6 @@ contract FeeRateModel is InitializableOwnable {
     }
 }
 
-// File: contracts/intf/IERC20.sol
 
 
 /**
@@ -158,7 +155,7 @@ interface IERC20 {
     ) external returns (bool);
 }
 
-// File: contracts/lib/SafeMath.sol
+
 
 
 /**
@@ -215,8 +212,6 @@ library SafeMath {
     }
 }
 
-// File: contracts/lib/DecimalMath.sol
-
 
 /**
  * @title DecimalMath
@@ -253,9 +248,23 @@ library DecimalMath {
     function reciprocalCeil(uint256 target) internal pure returns (uint256) {
         return uint256(10**36).divCeil(target);
     }
+
+    function powFloor(uint256 target, uint256 e) internal pure returns (uint256) {
+        if (e == 0) {
+            return 10 ** 18;
+        } else if (e == 1) {
+            return target;
+        } else {
+            uint p = powFloor(target, e.div(2));
+            p = p.mul(p) / (10**18);
+            if (e % 2 == 1) {
+                p = p.mul(target) / (10**18);
+            }
+            return p;
+        }
+    }
 }
 
-// File: contracts/lib/ReentrancyGuard.sol
 
 
 /**
@@ -277,7 +286,6 @@ contract ReentrancyGuard {
     }
 }
 
-// File: contracts/lib/DODOMath.sol
 
 /**
  * @title DODOMath
@@ -336,9 +344,6 @@ library DODOMath {
         uint256 i,
         uint256 k
     ) internal pure returns (uint256) {
-        if (V1 == 0) {
-            return 0;
-        }
         if (k == 0) {
             return V1.add(DecimalMath.mulFloor(i, delta));
         }
@@ -346,6 +351,10 @@ library DODOMath {
         // sqrt = √(1+4kidelta/V1)
         // premium = 1+(sqrt-1)/2k
         // uint256 sqrt = (4 * k).mul(i).mul(delta).div(V1).add(DecimalMath.ONE2).sqrt();
+
+        if (V1 == 0) {
+            return 0;
+        }
         uint256 sqrt;
         uint256 ki = (4 * k).mul(i);
         if (ki == 0) {
@@ -467,7 +476,8 @@ library DODOMath {
     }
 }
 
-// File: contracts/lib/PMMPricing.sol
+
+
 
 
 /**
@@ -712,7 +722,11 @@ library PMMPricing {
     }
 }
 
-// File: contracts/DODOPrivatePool/impl/DPPStorage.sol
+
+
+
+
+
 
 
 
@@ -787,7 +801,6 @@ contract DPPStorage is InitializableOwnable, ReentrancyGuard {
     }
 }
 
-// File: contracts/intf/IDODOCallee.sol
 
 
 interface IDODOCallee {
@@ -813,6 +826,13 @@ interface IDODOCallee {
         bytes calldata data
     ) external;
 
+    function DSPFlashLoanCall(
+        address sender,
+        uint256 baseAmount,
+        uint256 quoteAmount,
+        bytes calldata data
+    ) external;
+
     function CPCancelCall(
         address sender,
         uint256 amount,
@@ -825,9 +845,16 @@ interface IDODOCallee {
         uint256 quoteAmount,
         bytes calldata data
     ) external;
+
+    function NFTRedeemCall(
+        address payable assetTo,
+        uint256 quoteAmount,
+        bytes calldata
+    ) external;
 }
 
-// File: contracts/lib/SafeERC20.sol
+
+
 
 /**
  * @title SafeERC20
@@ -905,7 +932,11 @@ library SafeERC20 {
     }
 }
 
-// File: contracts/DODOPrivatePool/impl/DPPVault.sol
+
+
+
+
+
 
 
 
@@ -1064,7 +1095,10 @@ contract DPPVault is DPPStorage {
     }
 }
 
-// File: contracts/DODOPrivatePool/impl/DPPTrader.sol
+
+
+
+
 
 
 contract DPPTrader is DPPVault {
@@ -1296,7 +1330,9 @@ contract DPPTrader is DPPVault {
     }
 }
 
-// File: contracts/DODOPrivatePool/impl/DPP.sol
+
+
+
 
 /**
  * @title DODO PrivatePool
@@ -1345,7 +1381,6 @@ contract DPP is DPPTrader {
     }
 }
 
-// File: contracts/DODOPrivatePool/impl/DPPAdvanced.sol
 
 
 /**

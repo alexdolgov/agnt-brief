@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity >=0.8.0;
 
-import {SafeTransferLib} from "@solady/utils/SafeTransferLib.sol";
-import {ReentrancyGuard} from "@solady/utils/ReentrancyGuard.sol";
-import {IERC20} from "@openzeppelin/contracts/interfaces/IERC20.sol";
-import {IERC20Metadata} from "@openzeppelin/contracts/interfaces/IERC20Metadata.sol";
+import {SafeTransferLib} from "solady/utils/SafeTransferLib.sol";
+import {IERC20} from "openzeppelin-contracts/interfaces/IERC20.sol";
 import {Math} from "/mimswap/libraries/Math.sol";
 import {DecimalMath} from "/mimswap/libraries/DecimalMath.sol";
+import {IWETH} from "interfaces/IWETH.sol";
 import {IMagicLP} from "/mimswap/interfaces/IMagicLP.sol";
 import {IFactory} from "/mimswap/interfaces/IFactory.sol";
-import {IWETH} from "/interfaces/IWETH.sol";
+import {IERC20Metadata} from "openzeppelin-contracts/interfaces/IERC20Metadata.sol";
+import {ReentrancyGuard} from "solady/utils/ReentrancyGuard.sol";
 
 struct AddLiquidityImbalancedParams {
     address lp;
@@ -18,16 +18,6 @@ struct AddLiquidityImbalancedParams {
     uint256 quoteInAmount;
     bool remainingAmountToSwapIsBase;
     uint256 remainingAmountToSwap;
-    uint256 minimumShares;
-    uint256 deadline;
-}
-
-struct AddLiquidityOneSideParams {
-    address lp;
-    address to;
-    bool inAmountIsBase;
-    uint256 inAmount;
-    uint256 inAmountToSwap;
     uint256 minimumShares;
     uint256 deadline;
 }
@@ -506,63 +496,46 @@ contract Router is ReentrancyGuard {
     }
 
     function addLiquidityOneSide(
-      AddLiquidityOneSideParams calldata params
-    )
-        public
-        virtual
-        ensureDeadline(params.deadline)
-        onlyKnownPool(params.lp)
-        returns (
-            uint256 baseAdjustedInAmount,
-            uint256 quoteAdjustedInAmount,
-            uint256 shares,
-            uint256 swapOutAmount,
-            uint256 baseRefundAmount,
-            uint256 quoteRefundAmount
-        )
-    {
-        address baseToken = IMagicLP(params.lp)._BASE_TOKEN_();
-        address quoteToken = IMagicLP(params.lp)._QUOTE_TOKEN_();
+        address lp,
+        address to,
+        bool inAmountIsBase,
+        uint256 inAmount,
+        uint256 inAmountToSwap,
+        uint256 minimumShares,
+        uint256 deadline
+    ) public virtual ensureDeadline(deadline) onlyKnownPool(lp) returns (uint256 baseAmount, uint256 quoteAmount, uint256 shares) {
+        address baseToken = IMagicLP(lp)._BASE_TOKEN_();
+        address quoteToken = IMagicLP(lp)._QUOTE_TOKEN_();
 
-        uint256 baseAddLiquidityInAmount;
-        uint256 quoteAddLiquidityInAmount;
         // base -> quote
-        if (params.inAmountIsBase) {
-            baseAddLiquidityInAmount = params.inAmount - params.inAmountToSwap;
-
-            baseToken.safeTransferFrom(msg.sender, address(this), params.inAmount);
-            baseToken.safeTransfer(params.lp, params.inAmountToSwap);
-
-            swapOutAmount = IMagicLP(params.lp).sellBase(address(this));
-
-            quoteAddLiquidityInAmount = swapOutAmount;
+        if (inAmountIsBase) {
+            baseToken.safeTransferFrom(msg.sender, address(this), inAmount);
+            baseAmount = inAmount - inAmountToSwap;
+            baseToken.safeTransfer(lp, inAmountToSwap);
+            quoteAmount = IMagicLP(lp).sellBase(address(this));
         }
         // quote -> base
         else {
-            quoteAddLiquidityInAmount = params.inAmount - params.inAmountToSwap;
-
-            quoteToken.safeTransferFrom(msg.sender, address(this), params.inAmount);
-            quoteToken.safeTransfer(params.lp, params.inAmountToSwap);
-
-            swapOutAmount = IMagicLP(params.lp).sellQuote(address(this));
-
-            baseAddLiquidityInAmount = swapOutAmount;
+            quoteToken.safeTransferFrom(msg.sender, address(this), inAmount);
+            quoteAmount = inAmount - inAmountToSwap;
+            quoteToken.safeTransfer(lp, inAmountToSwap);
+            baseAmount = IMagicLP(lp).sellQuote(address(this));
         }
 
-        (baseAdjustedInAmount, quoteAdjustedInAmount) = _adjustAddLiquidity(params.lp, baseAddLiquidityInAmount, quoteAddLiquidityInAmount);
-        baseToken.safeTransfer(params.lp, baseAdjustedInAmount);
-        quoteToken.safeTransfer(params.lp, quoteAdjustedInAmount);
-        shares = _addLiquidity(params.lp, params.to, params.minimumShares);
+        (baseAmount, quoteAmount) = _adjustAddLiquidity(lp, baseAmount, quoteAmount);
+        baseToken.safeTransfer(lp, baseAmount);
+        quoteToken.safeTransfer(lp, quoteAmount);
+        shares = _addLiquidity(lp, to, minimumShares);
 
         // Refund remaining tokens
-        baseRefundAmount = baseAddLiquidityInAmount - baseAdjustedInAmount;
-        if (baseRefundAmount > 0) {
-            baseToken.safeTransfer(msg.sender, baseRefundAmount);
+        uint256 remaining = baseToken.balanceOf(address(this));
+        if (remaining > 0) {
+            baseToken.safeTransfer(msg.sender, remaining);
         }
 
-        quoteRefundAmount = quoteAddLiquidityInAmount - quoteAdjustedInAmount;
-        if (quoteRefundAmount > 0) {
-            quoteToken.safeTransfer(msg.sender, quoteRefundAmount);
+        remaining = quoteToken.balanceOf(address(this));
+        if (remaining > 0) {
+            quoteToken.safeTransfer(msg.sender, remaining);
         }
     }
 
@@ -611,14 +584,7 @@ contract Router is ReentrancyGuard {
         virtual
         ensureDeadline(params.deadline)
         onlyKnownPool(params.lp)
-        returns (
-            uint256 baseAdjustedInAmount,
-            uint256 quoteAdjustedInAmount,
-            uint256 shares,
-            uint256 swapOutAmount,
-            uint256 baseRefundAmount,
-            uint256 quoteRefundAmount
-        )
+        returns (uint256 baseAdjustedInAmount, uint256 quoteAdjustedInAmount, uint256 shares)
     {
         address baseToken = IMagicLP(params.lp)._BASE_TOKEN_();
         address quoteToken = IMagicLP(params.lp)._QUOTE_TOKEN_();
@@ -626,40 +592,36 @@ contract Router is ReentrancyGuard {
         baseToken.safeTransferFrom(msg.sender, address(this), params.baseInAmount);
         quoteToken.safeTransferFrom(msg.sender, address(this), params.quoteInAmount);
 
-        uint256 baseAddLiquidityInAmount;
-        uint256 quoteAddLiquidityInAmount;
+        (baseAdjustedInAmount, quoteAdjustedInAmount) = _adjustAddLiquidity(params.lp, params.baseInAmount, params.quoteInAmount);
+
         // base -> quote
         if (params.remainingAmountToSwapIsBase) {
-            baseAddLiquidityInAmount = params.baseInAmount - params.remainingAmountToSwap;
-
             baseToken.safeTransfer(params.lp, params.remainingAmountToSwap);
-            swapOutAmount = IMagicLP(params.lp).sellBase(address(this));
-            quoteAddLiquidityInAmount = params.quoteInAmount + swapOutAmount;
+            baseAdjustedInAmount += (params.baseInAmount - baseAdjustedInAmount) - params.remainingAmountToSwap;
+            quoteAdjustedInAmount += IMagicLP(params.lp).sellBase(address(this));
         }
         // quote -> base
         else {
-            quoteAddLiquidityInAmount = params.quoteInAmount - params.remainingAmountToSwap;
-
             quoteToken.safeTransfer(params.lp, params.remainingAmountToSwap);
-            swapOutAmount = IMagicLP(params.lp).sellQuote(address(this));
-            baseAddLiquidityInAmount = params.baseInAmount + swapOutAmount;
+            baseAdjustedInAmount += IMagicLP(params.lp).sellQuote(address(this));
+            quoteAdjustedInAmount += (params.quoteInAmount - quoteAdjustedInAmount) - params.remainingAmountToSwap;
         }
 
-        (baseAdjustedInAmount, quoteAdjustedInAmount) = _adjustAddLiquidity(params.lp, baseAddLiquidityInAmount, quoteAddLiquidityInAmount);
+        (baseAdjustedInAmount, quoteAdjustedInAmount) = _adjustAddLiquidity(params.lp, baseAdjustedInAmount, quoteAdjustedInAmount);
 
         baseToken.safeTransfer(params.lp, baseAdjustedInAmount);
         quoteToken.safeTransfer(params.lp, quoteAdjustedInAmount);
         shares = _addLiquidity(params.lp, params.to, params.minimumShares);
 
         // Refund remaining tokens
-        baseRefundAmount = baseAddLiquidityInAmount - baseAdjustedInAmount;
-        if (baseRefundAmount > 0) {
-            baseToken.safeTransfer(msg.sender, baseRefundAmount);
+        uint256 remaining = baseToken.balanceOf(address(this));
+        if (remaining > 0) {
+            baseToken.safeTransfer(msg.sender, remaining);
         }
 
-        quoteRefundAmount = quoteAddLiquidityInAmount - quoteAdjustedInAmount;
-        if (quoteRefundAmount > 0) {
-            quoteToken.safeTransfer(msg.sender, quoteRefundAmount);
+        remaining = quoteToken.balanceOf(address(this));
+        if (remaining > 0) {
+            quoteToken.safeTransfer(msg.sender, remaining);
         }
     }
 

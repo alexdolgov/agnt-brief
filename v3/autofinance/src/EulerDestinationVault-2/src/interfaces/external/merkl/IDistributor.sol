@@ -27,4 +27,7 @@ interface IDistributor {
     /// @param token The token address
     /// @return claimInfo The claim details
     function claimed(address user, address token) external view returns (Claim memory claimInfo);
+
+    /// @notice Toggles whitelisting for a given user and a given operator
+    function toggleOperator(address user, address operator) external;
 }

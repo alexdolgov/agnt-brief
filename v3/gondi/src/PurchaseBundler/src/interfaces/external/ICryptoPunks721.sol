@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.21;
 
-import {IERC721} from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+import {IERC721} from "@openzeppelin/token/ERC721/IERC721.sol";
 
 interface ICryptoPunks721 is IERC721 {
     function licensingTerms() external pure returns (string memory);

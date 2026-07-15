@@ -99,6 +99,9 @@ interface IAccessHub {
         int24 tickSpacing
     ) external;
 
+    /// @notice allows governance to create an arbitrary gauge using any deposit token that conforms to common token standards
+    function createArbitraryGauge(address _depositToken) external;
+
     /** xShadow Functions */
 
     /// @notice enables or disables the transfer whitelist in xShadow

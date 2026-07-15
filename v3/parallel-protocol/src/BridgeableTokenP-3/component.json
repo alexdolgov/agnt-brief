@@ -1,7 +1,15 @@
 {
   "component": "BridgeableTokenP-3",
   "main_contract": "BridgeableTokenP",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BridgeableTokenP-3\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397680"
     }
   ]
 }

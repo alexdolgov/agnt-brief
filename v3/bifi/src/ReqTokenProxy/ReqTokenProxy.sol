@@ -1,5 +1,4 @@
 // File: contracts/interfaces/IMarketManager.sol
-
 pragma solidity 0.6.12;
 
 /**
@@ -14,7 +13,7 @@ interface IMarketManager  {
 
 	function getTokenHandlerInfo(uint256 handlerID) external view returns (bool, address, string memory);
 
-	function handlerRegister(uint256 handlerID, address tokenHandlerAddr) external returns (bool);
+	function handlerRegister(uint256 handlerID, address tokenHandlerAddr, uint256 flashFeeRate) external returns (bool);
 
 	function applyInterestHandlers(address payable userAddr, uint256 callerID, bool allFlag) external returns (uint256, uint256, uint256, uint256, uint256, uint256);
 
@@ -54,10 +53,11 @@ interface IMarketManager  {
 
 	function rewardUpdateOfInAction(address payable userAddr, uint256 callerID) external returns (bool);
 	function ownerRewardTransfer(uint256 _amount) external returns (bool);
+ 	function getFeeTotal(uint256 handlerID) external returns (uint256);
+  function getFeeFromArguments(uint256 handlerID, uint256 amount, uint256 bifiAmount) external returns (uint256);
 }
 
 // File: contracts/interfaces/IInterestModel.sol
-
 pragma solidity 0.6.12;
 
 /**
@@ -71,7 +71,6 @@ interface IInterestModel {
 }
 
 // File: contracts/interfaces/IMarketHandlerDataStorage.sol
-
 pragma solidity 0.6.12;
 
 /**
@@ -177,8 +176,6 @@ interface IMarketHandlerDataStorage  {
 }
 
 // File: contracts/interfaces/IERC20.sol
-
-// SPDX-License-Identifier: MIT
 // from: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol
 pragma solidity 0.6.12;
 interface IERC20 {
@@ -194,9 +191,6 @@ interface IERC20 {
 }
 
 // File: contracts/interfaces/IMarketSIHandlerDataStorage.sol
-
-
-
 pragma solidity 0.6.12;
 
 /**
@@ -221,7 +215,6 @@ interface IMarketSIHandlerDataStorage  {
 }
 
 // File: contracts/Errors.sol
-
 pragma solidity 0.6.12;
 
 contract Modifier {
@@ -278,7 +271,7 @@ contract ManagerDataStorageErrors is ManagerModifier {
 }
 
 // File: contracts/ReqTokenProxy.sol
-
+// SPDX-License-Identifier: BSD-3-Clause
 pragma solidity 0.6.12;
 
 /**

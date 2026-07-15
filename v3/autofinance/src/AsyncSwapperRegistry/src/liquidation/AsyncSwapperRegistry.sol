@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { EnumerableSet } from "openzeppelin-contracts/utils/structs/EnumerableSet.sol";
 
@@ -16,14 +16,13 @@ contract AsyncSwapperRegistry is SystemComponent, IAsyncSwapperRegistry, Securit
 
     EnumerableSet.AddressSet private _swappers;
 
-    constructor(
-        ISystemRegistry _systemRegistry
-    ) SystemComponent(_systemRegistry) SecurityBase(address(_systemRegistry.accessController())) { }
+    constructor(ISystemRegistry _systemRegistry)
+        SystemComponent(_systemRegistry)
+        SecurityBase(address(_systemRegistry.accessController()))
+    { }
 
     /// @inheritdoc IAsyncSwapperRegistry
-    function register(
-        address swapperAddress
-    ) external override hasRole(Roles.AUTO_POOL_REGISTRY_UPDATER) {
+    function register(address swapperAddress) external override hasRole(Roles.AUTO_POOL_REGISTRY_UPDATER) {
         Errors.verifyNotZero(swapperAddress, "swapperAddress");
 
         if (!_swappers.add(swapperAddress)) revert Errors.ItemExists();
@@ -32,9 +31,7 @@ contract AsyncSwapperRegistry is SystemComponent, IAsyncSwapperRegistry, Securit
     }
 
     /// @inheritdoc IAsyncSwapperRegistry
-    function unregister(
-        address swapperAddress
-    ) external override hasRole(Roles.AUTO_POOL_REGISTRY_UPDATER) {
+    function unregister(address swapperAddress) external override hasRole(Roles.AUTO_POOL_REGISTRY_UPDATER) {
         Errors.verifyNotZero(swapperAddress, "swapperAddress");
 
         if (!_swappers.remove(swapperAddress)) revert Errors.ItemNotFound();
@@ -43,16 +40,12 @@ contract AsyncSwapperRegistry is SystemComponent, IAsyncSwapperRegistry, Securit
     }
 
     /// @inheritdoc IAsyncSwapperRegistry
-    function isRegistered(
-        address swapperAddress
-    ) external view override returns (bool) {
+    function isRegistered(address swapperAddress) external view override returns (bool) {
         return _swappers.contains(swapperAddress);
     }
 
     /// @inheritdoc IAsyncSwapperRegistry
-    function verifyIsRegistered(
-        address swapperAddress
-    ) external view override {
+    function verifyIsRegistered(address swapperAddress) external view override {
         if (!_swappers.contains(swapperAddress)) revert Errors.NotRegistered();
     }
 

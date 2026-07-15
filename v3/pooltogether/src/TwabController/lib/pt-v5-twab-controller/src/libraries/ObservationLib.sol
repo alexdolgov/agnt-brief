@@ -11,25 +11,25 @@ import "ring-buffer-lib/RingBufferLib.sol";
  * @dev The user Account.Account.cardinality parameter can NOT exceed the max cardinality variable.
  *      Preventing "corrupted" ring buffer lookup pointers and new observation checkpoints.
  */
-uint16 constant MAX_CARDINALITY = 9600; // with min period of 1 hour, this allows for minimum 400 days of history
+uint16 constant MAX_CARDINALITY = 17520; // with min period of 1 hour, this allows for minimum two years of history
 
 /**
- * @title Observation Library
+ * @title PoolTogether V5 Observation Library
+ * @author PoolTogether Inc. & G9 Software Inc.
  * @notice This library allows one to store an array of timestamped values and efficiently search them.
  * @dev Largely pulled from Uniswap V3 Oracle.sol: https://github.com/Uniswap/v3-core/blob/c05a0e2c8c08c460fb4d05cfdda30b3ad8deeaac/contracts/libraries/Oracle.sol
- * @author PoolTogether Inc.
  */
 library ObservationLib {
-
   /**
    * @notice Observation, which includes an amount and timestamp.
-   * @param balance `balance` at `timestamp`.
    * @param cumulativeBalance the cumulative time-weighted balance at `timestamp`.
+   * @param balance `balance` at `timestamp`.
    * @param timestamp Recorded `timestamp`.
    */
   struct Observation {
-    uint160 cumulativeBalance;
-    uint48 timestamp;
+    uint128 cumulativeBalance;
+    uint96 balance;
+    uint32 timestamp;
   }
 
   /**
@@ -53,9 +53,18 @@ library ObservationLib {
     Observation[MAX_CARDINALITY] storage _observations,
     uint24 _newestObservationIndex,
     uint24 _oldestObservationIndex,
-    uint48 _target,
+    uint32 _target,
     uint16 _cardinality
-  ) internal view returns (Observation memory beforeOrAt, uint16 beforeOrAtIndex, Observation memory afterOrAt, uint16 afterOrAtIndex) {
+  )
+    internal
+    view
+    returns (
+      Observation memory beforeOrAt,
+      uint16 beforeOrAtIndex,
+      Observation memory afterOrAt,
+      uint16 afterOrAtIndex
+    )
+  {
     uint256 leftSide = _oldestObservationIndex;
     uint256 rightSide = _newestObservationIndex < leftSide
       ? leftSide + _cardinality - 1
@@ -69,13 +78,7 @@ library ObservationLib {
 
       beforeOrAtIndex = uint16(RingBufferLib.wrap(currentIndex, _cardinality));
       beforeOrAt = _observations[beforeOrAtIndex];
-      uint48 beforeOrAtTimestamp = beforeOrAt.timestamp;
-
-      // We've landed on an uninitialized timestamp, keep searching higher (more recently).
-      if (beforeOrAtTimestamp == 0) {
-        leftSide = uint16(RingBufferLib.nextIndex(leftSide, _cardinality));
-        continue;
-      }
+      uint32 beforeOrAtTimestamp = beforeOrAt.timestamp;
 
       afterOrAtIndex = uint16(RingBufferLib.nextIndex(currentIndex, _cardinality));
       afterOrAt = _observations[afterOrAtIndex];

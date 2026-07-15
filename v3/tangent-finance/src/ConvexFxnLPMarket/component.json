@@ -1,10 +1,22 @@
 {
   "component": "ConvexFxnLPMarket",
   "main_contract": "ConvexFxnLPMarket",
+  "source_entry_count": 36,
   "source_file_count": 36,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ConvexFxnLPMarket\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/pashov/audits/blob/master/team/pdf/Tangent-security-review_2025-10-30.pdf",
+    "https://github.com/pashov/audits/blob/master/team/pdf/Tangent-security-review_2025-12-08.pdf",
+    "https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2025.09.11%20-%20Final%20-%20USG%20-%20Tangent%20Audit%20Report.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +24,9 @@
       "address": "0x849cf82e0ebcfeab8270cc5a3ea3b26cd481b754",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404154"
     }
   ]
 }

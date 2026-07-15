@@ -1,7 +1,15 @@
 {
   "component": "AllowedTokensRegistry",
   "main_contract": "AllowedTokensRegistry",
+  "source_entry_count": 9,
   "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AllowedTokensRegistry\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -14,7 +22,9 @@
       "address": "0x4ac40c34f8992bb1e5e856a448792158022551ca",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401928"
     }
   ]
 }

@@ -1,108 +1,93 @@
 # Agentic Audit Brief: Swellchain Bridge
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Swellchain Bridge (`swellchain-bridge`)
 - Website: [https://superbridge.swellnetwork.io](https://superbridge.swellnetwork.io)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:57.389Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-1cbb
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 26 unique implementations (36 raw deployments)
+- Contract surface: 14 unique implementations (14 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $261,947.07
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+The closed normalized authority records no EVM contract logic or eligible security audit for this project. This is an explicit cohort state, not a skipped export.
+
 ## Project Description
 
-Canonical Bridge. Structurally: 48 project-authored contract(s) across 1 chain(s); 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for Swellchain Bridge in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 8 functional families. Its contracts share 18 common project-authored base contract(s) (oftadapter, oftcore, oapp). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
 
-## Fork Lineage
+## Logic Topography
 
-This project reuses audited code from **Swell** (`swell`) in the Accountant, AeraStrategy, DelayedWithdraw, RoleManager subsystem.
-8 audits inherited from `swell`, scoped to that subsystem.
-
-Total inherited audits: 8. Inherited coverage reflects forked/shared code audited by the origin project — it is not a direct audit of this project.
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 49; live-surface contracts included: 35 (34 live, 1 unknown).
-- Excluded by liveness: 14 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 2/25 (8.0%)
-- Deployed-live implementations: 25 of 26 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 2/25
-- Verified + Unaudited implementations: 23
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 14 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 26
-- Raw deployments: 36
-- Audits discovered: 8 (0 direct, 8 inherited from forked code)
-- Scoreable audits (matched contracts): 8
+- Unverified implementations: 0
+- Unique implementations: 14
+- Raw deployments: 14
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2024-08 (aging)
-- Audit staleness (calendar age): 0 fresh, 2 aging, 6 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 2 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
-- Tier 1 coverage: 8.0% (ChainSecurity, Spearbit)
+- Latest audit: n/a (unknown)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| 0xMacro | Tier 2 | 2 | 8.0% | 2024-04 |
-| Barracude | Tier 2 | 2 | 8.0% | 2024-06 |
-| ChainSecurity | Tier 1 | 2 | 8.0% | 2024-08 |
-| Pashov Audit Group | Tier 2 | 2 | 8.0% | 2024-07 |
-| Sigma Prime | Tier 2 | 2 | 8.0% | 2024-07 |
-| Spearbit | Tier 1 | 2 | 8.0% | 2024-04 |
-| unknown | Tier 2 | 2 | 8.0% | 2024-08 |
-| yAudit | Tier 2 | 2 | 8.0% | 2024-04 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (2)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Accountant | unknown | ethereum | n/a | 2 deployments: ethereum [`0x15a94d...8ba7b6`](./contracts/ethereum-1/0x15a94d49fac6e23e17c1366c999117a1de8ba7b6/); ethereum `0x48dacb...fb3825` | ✅ Audited |
-| RoleManager | unknown | ethereum | n/a | 4 deployments: ethereum [`0x1bb44f...975bf3`](./contracts/ethereum-1/0x1bb44f9d91b4276621550aeea5d2d96279975bf3/); ethereum `0x8413e6...f4d6af`; ethereum `0xa1a325...b4e7c1`; ethereum `0xd90541...d5b4a1` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (23)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AddressManager | governance | ethereum | n/a | [`0xa54a84...dafc8a`](./contracts/ethereum-1/0xa54a84f17c2180148c762d79bc57bdff7fdafc8a/) | ⚠️ Unaudited |
-| AnchorStateRegistry | registry | ethereum | n/a | [`0x143874...174dd1`](./contracts/ethereum-1/0x14387438ee964e826a4eaeb95b2bce7754174dd1/) | ⚠️ Unaudited |
-| DisputeGameFactory | registry | ethereum | n/a | [`0x876906...2f0f57`](./contracts/ethereum-1/0x87690676786cdc8cca75a472e483af7c8f2f0f57/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | [`0x5a0aae...7c3d2a`](./contracts/ethereum-1/0x5a0aae59d09fccbddb6c6cceb07b7279367c3d2a/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | [`0x9ba6e0...006b3a`](./contracts/ethereum-1/0x9ba6e03d8b90de867373db8cf1a58d2f7f006b3a/) | ⚠️ Unaudited |
-| L1CrossDomainMessenger | unknown | ethereum | n/a | [`0xe6a99e...903759`](./contracts/ethereum-1/0xe6a99ef12995defc5ff47ec0e13252f0e6903759/) | ⚠️ Unaudited |
-| L1ERC20TokenBridge | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7e9793...5e65a2`](./contracts/ethereum-1/0x7e97935fbdf2a27ea35c4fdddacf5acd685e65a2/); ethereum `0xecf337...d24121` | ⚠️ Unaudited |
-| L1ERC721Bridge | operational_periphery | ethereum | n/a | [`0xfd7618...44bc1e`](./contracts/ethereum-1/0xfd7618330e63b493070dc8c491ad4ad26144bc1e/) | ⚠️ Unaudited |
-| L1StandardBridge | bridge_template | ethereum | n/a | [`0x7aa496...5aacc8`](./contracts/ethereum-1/0x7aa4960908b13d104bf056b23e2c76b43c5aacc8/) | ⚠️ Unaudited |
-| MIPS | unknown | ethereum | n/a | [`0x16e83c...344ce4`](./contracts/ethereum-1/0x16e83ce5ce29bf90ad9da06d2fe6a15d5f344ce4/) | ⚠️ Unaudited |
-| OFTAdapterSwETH | adapter | ethereum | n/a | [`0x2c1b34...6f94e2`](./contracts/ethereum-1/0x2c1b3426e557d6756d8a8859a0779373236f94e2/) | ⚠️ Unaudited |
-| OptimismMintableERC20Factory | registry | ethereum | n/a | [`0xc2b228...f3f603`](./contracts/ethereum-1/0xc2b228cd433ebae788de287ede2abe55b3f3f603/) | ⚠️ Unaudited |
-| OptimismPortal2 | unknown | ethereum | n/a | [`0x758e0e...b87812`](./contracts/ethereum-1/0x758e0ee66102816f5c3ec9ecc1188860fbb87812/) | ⚠️ Unaudited |
-| PermissionedDisputeGame | unknown | ethereum | n/a | [`0xa0cfbe...fa6893`](./contracts/ethereum-1/0xa0cfbe3402d6e0a74e96d3c360f74d5ea4fa6893/) | ⚠️ Unaudited |
-| PreimageOracle | operational_periphery | ethereum | n/a | [`0x9c065e...1be277`](./contracts/ethereum-1/0x9c065e11870b891d214bc2da7ef1f9ddfa1be277/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | ethereum | n/a | 3 deployments: ethereum [`0x4c4710...269dd6`](./contracts/ethereum-1/0x4c4710a4ec3f514a492cc6460818c4a6a6269dd6/); ethereum `0x674822...0931a9`; ethereum `0x95e8ba...151ef6` | ⚠️ Unaudited |
-| RSwellOFTAdapter | adapter | ethereum | n/a | [`0x428cda...b2ac58`](./contracts/ethereum-1/0x428cda6c1994b926f75a4830d5baedee9db2ac58/) | ⚠️ Unaudited |
-| Safe | unknown | ethereum | n/a | [`0x06f7fb...038d0e`](./contracts/ethereum-1/0x06f7fb1c74147e34fce04a6828c7bf809b038d0e/) | ⚠️ Unaudited |
-| SuperchainConfig | governance | ethereum | n/a | [`0x95703e...f04a4c`](./contracts/ethereum-1/0x95703e0982140d16f8eba6d158fccede42f04a4c/) | ⚠️ Unaudited |
-| SwBtcOFTAdapter | adapter | ethereum | n/a | 2 deployments: ethereum [`0x584cd3...e7dae2`](./contracts/ethereum-1/0x584cd37ba4ab54f074f1067c1f51cce8e6e7dae2/); ethereum `0xa5bd95...2aa3e2` | ⚠️ Unaudited |
-| SwellOFTAdapter | adapter | ethereum | n/a | [`0x093410...9d85b7`](./contracts/ethereum-1/0x09341022ea237a4db1644de7ccf8fa0e489d85b7/) | ⚠️ Unaudited |
-| SymbioticAdapter | unknown | ethereum | n/a | 3 deployments: ethereum [`0x2a6a2b...c0caf8`](./contracts/ethereum-1/0x2a6a2beebf6d65e03246087a41812db1c5c0caf8/); ethereum `0x69dda9...41836a`; ethereum `0x9e07af...3fdae7` | ⚠️ Unaudited |
-| SystemConfig | governance | ethereum | n/a | [`0xd3d4c6...7ff1a4`](./contracts/ethereum-1/0xd3d4c6b703978a5d24fecf3a70a51127667ff1a4/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -116,26 +101,37 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (14)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xd525bc...547c44` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000000...000000` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-171000 | `0x000000...7d2e1e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-171001 | `0x3154cf...0f2c35` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-171002 | `0x420000...000007` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-171003 | `0x420000...00000f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-171004 | `0x420000...000010` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-171005 | `0x420000...000014` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-171006 | `0x420000...000015` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-171007 | `0x420000...000016` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-171008 | `0x43edb8...2cb40e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-171009 | `0x490480...74e97e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-171010 | `0x56315b...8518a0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-171011 | `0xca11bd...76ca11` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-171012 | `0xce01f8...6cef67` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [ChainSecurity_Swell_swBTC_audit.pdf](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/ChainSecurity_Swell_swBTC_audit.pdf) | ChainSecurity | Audit | 2024-08 | aging | Inherited from Swell — forked code, scoped to Accountant, AeraStrategy, DelayedWithdraw, RoleManager | inherited | 6 | n/a |
-| [NM_0273_SWELL_BTC_LRT.pdf](https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/NM_0273_SWELL_BTC_LRT.pdf) | unknown | Audit | 2024-08 | aging | Inherited from Swell — forked code, scoped to Accountant, AeraStrategy, DelayedWithdraw, RoleManager | inherited | 6 | n/a |
-| [pashov-boring-vault.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-boring-vault.pdf) | Pashov Audit Group | Audit | 2024-07 | stale | Inherited from Swell — forked code, scoped to Accountant, AeraStrategy, DelayedWithdraw, RoleManager | inherited | 6 | n/a |
-| [Sigma_Prime_Swell_Network_Restaking_Contracts_Security_Assessment.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracude%20(LRT)/Sigma_Prime_Swell_Network_Restaking_Contracts_Security_Assessment.pdf) | Sigma Prime | Audit | 2024-07 | stale | Inherited from Swell — forked code, scoped to Accountant, AeraStrategy, DelayedWithdraw, RoleManager | inherited | 6 | n/a |
-| [NM0231_FINAL_SWELL.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracude%20(LRT)/NM0231_FINAL_SWELL.pdf) | Barracude | Audit | 2024-06 | stale | Inherited from Swell — forked code, scoped to Accountant, AeraStrategy, DelayedWithdraw, RoleManager | inherited | 6 | n/a |
-| [0xmacro-boring-vault-arctic-0.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-0.pdf) | 0xMacro | Audit | 2024-04 | stale | Inherited from Swell — forked code, scoped to Accountant, AeraStrategy, DelayedWithdraw, RoleManager | inherited | 6 | n/a |
-| [spearbit-boring-vault-arctic-0.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/spearbit-boring-vault-arctic-0.pdf) | Spearbit | Audit | 2024-04 | stale | Inherited from Swell — forked code, scoped to Accountant, AeraStrategy, DelayedWithdraw, RoleManager | inherited | 6 | n/a |
-| [Swell Staking Security Audit Report.pdf](https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Swell%20L2%20Pre%20Deposit/Swell%20Staking%20Security%20Audit%20Report.pdf) | yAudit | Audit | 2024-04 | stale | Inherited from Swell — forked code, scoped to Accountant, AeraStrategy, DelayedWithdraw, RoleManager | inherited | 6 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -150,7 +146,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 26 |
+| needs_review | 14 |
 
 ## Scope Matching Notes
 
@@ -158,7 +154,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
-- Match method counts: inherited_name_remap=48
+- Match method counts: n/a
 
 Fork inheritance lineage and inherited audits are included when available.

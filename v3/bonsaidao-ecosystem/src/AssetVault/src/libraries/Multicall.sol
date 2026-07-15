@@ -9,7 +9,7 @@ abstract contract Multicall {
         returns (bytes[] memory results, uint256[] memory gasEstimates)
     {
         results = new bytes[](data.length);
-        gasEstimates = new uint[](data.length);
+        gasEstimates = new uint256[](data.length);
 
         unchecked {
             for (uint256 i = 0; i < data.length; ++i) {

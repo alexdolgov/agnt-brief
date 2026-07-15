@@ -1,8 +1,16 @@
 {
   "component": "Controller",
   "main_contract": "Controller",
-  "source_file_count": 1,
-  "deployment_count": 2,
+  "source_entry_count": 83,
+  "source_file_count": 83,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Controller\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/akiratechhq/review-opyn-gamma-2021-08",
@@ -12,20 +20,14 @@
   ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x7c19858f2f317ccf413b3046c2bed49f346b7d0f",
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xeadf3d94b902c06c13a2e64b223b1df5057aa23d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xcc2fd280a669a4453b30b5e72871ad3e2a2663d0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397540"
     }
   ]
 }

@@ -155,6 +155,7 @@ contract Pair is IPair {
 
     // Accrue fees on token0
     function _update0(uint amount) internal {
+        _safeTransfer(token0, fees, amount); // transfer the fees out to PairFees
         uint256 _ratio = amount * 1e18 / totalSupply; // 1e18 adjustment is removed during claim
         if (_ratio > 0) {
             index0 += _ratio;
@@ -164,6 +165,7 @@ contract Pair is IPair {
 
     // Accrue fees on token1
     function _update1(uint amount) internal {
+        _safeTransfer(token1, fees, amount); // transfer the fees out to PairFees
         uint256 _ratio = amount * 1e18 / totalSupply;
 
         if (_ratio > 0) {

@@ -1,72 +1,14 @@
 # sudoswap — deployments
 
-66 verified deployment(s) across 66 component(s).
+8 verified deployment(s) across 8 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| arbitrum | `0x4f1627be4c72aeb9565d4c751550c4d262a96b51` | LSSVMPairFactory | impl | live | yes |
-| arbitrum | `0x705fd2868348df3ea3f560e52b00c4c3df6aeed2` | ArbitrumReceiver | impl | live | no |
-| arbitrum | `0xc166aa039e9e9898643154420e53880d22e22f10` | LSSVMPair-7 | impl | live | yes |
-| base | `0x2286e66cc3b3f15ae6d88164f618f98f1ce21581` | LSSVMPair-4 | impl | live | yes |
-| base | `0x37af63b1c64bc93e48da17cc018ed2b5f63802de` | LSSVMPairERC721ERC20 | impl | live | yes |
-| base | `0x4b1f0d7a960ef84181aeddd78e919a933e8246e8` | LSSVMPair-5 | impl | live | yes |
-| base | `0x53f0e31e2b8084ce4dd5991ecf157b181fc38bc1` | OptimismReceiver | impl | live | no |
-| base | `0xa43d2f748e73431983578a92ecd2d830126d5f17` | LSSVMPair-6 | impl | live | yes |
-| base | `0xd4e0c048d92267693fe36dfcf80034c9b7871856` | OrderBhook | impl | live | no |
-| chain-80094 | `0x0b846b2c739726012d1b9dd7ac5a1231b2f8d534` | RoyaltyEngine | impl | live | yes |
-| chain-80094 | `0x3f66e7cc503d5902ec1a65a8ec6b3f01dcc6d667` | TestRoyaltyRegistry | impl | live | no |
-| chain-80094 | `0x4806e67061a4288d710e2c5af0db79833a8351cb` | LSSVMPairERC1155ERC20 | impl | live | yes |
-| ethereum | `0x006dd6c488e90180d7346db5a026fd747af3b218` | ERC721Sender | impl | live | no |
-| ethereum | `0x031b216fabec82310fea3426b33455609b99afc1` | Clone | impl | live | yes |
-| ethereum | `0x0427743df720801825a5c82e0582b1e915e0f750` | MonMinter | impl | live | no |
-| ethereum | `0x078d3b62e82b5cee3ebdc0754cda976230517452` | HashmaskSwapper | impl | live | no |
-| ethereum | `0x08ce97807a81896e85841d74fb7e7b065ab3ef05` | LSSVMPairEnumerableETH | impl | live | yes |
-| ethereum | `0x090c236b62317db226e6ae6cd4c0fd25b7028b65` | LSSVMPair | impl | live | yes |
-| ethereum | `0x0b5c9081e818e3b2cf677e7f42391de34d6ab2f3` | XXMON | impl | live | no |
-| ethereum | `0x0f2f1b0959fcfa6556f8b9479b996ecbb3cfe031` | NFGasNames | impl | live | no |
-| ethereum | `0x1036f5c5278358ea004e6530a86e4b968687776a` | SVGGenerator2 | impl | live | no |
-| ethereum | `0x19dd2b11b886a88aecf30f1c804e86c4daf4cd87` | NFTLotteryPool | impl | live | no |
+| ethereum | `0x031b216fabec82310fea3426b33455609b99afc1` | PropertyCheckerFactory | impl | live | yes |
+| ethereum | `0x090c236b62317db226e6ae6cd4c0fd25b7028b65` | VeryFastRouter | impl | live | yes |
 | ethereum | `0x1fd5876d4a3860eb0159055a3b7cb79fdfff6b67` | GDACurve | impl | live | yes |
-| ethereum | `0x2031bd6c7861509ab48bf338e280a401ee8f9251` | NFTLotteryURI | impl | live | no |
-| ethereum | `0x25b5058670211a6c39f821d01aa51f4671e05afb` | PenguSVG | impl | live | no |
 | ethereum | `0x2b2e8cda09bba9660dca5cb6233787738ad68329` | LSSVMRouter | impl | live | yes |
-| ethereum | `0x2d824d66e1b7ba0f73b5caf75886abf812a13e67` | MonImageRegistry | impl | live | no |
-| ethereum | `0x3062627136de797f807bcb63f0d5399a21dfb6c8` | MultiRouter | impl | live | no |
-| ethereum | `0x3446dd70b2d52a6bf4a5a192d9b0a161295ab7f9` | ERC20Votes | impl | live | no |
-| ethereum | `0x3aada3e213abf8529606924d8d1c55cbdc70bf74` | XMON | impl | live | no |
-| ethereum | `0x3baa5ab805c7888e7a92cf6d32c20938ede344fb` | NFTLottery | impl | live | no |
 | ethereum | `0x432f962d8209781da23fb37b6b59ee15de7d9841` | ExponentialCurve | impl | live | yes |
-| ethereum | `0x4e4c16079d67c8058c89f1f8ce711c8b00ea4747` | SaltTokenURI | impl | live | no |
-| ethereum | `0x4fad5ddc4e0186b932e27baa7d37d97457dfc868` | MonSpawner | impl | live | no |
-| ethereum | `0x537edfb50100974af813f263ca7714ecc4c7ba40` | Nftnft | impl | live | no |
 | ethereum | `0x5b6ac51d9b1cede0068a1b26533cace807f883ee` | LinearCurve | impl | live | yes |
-| ethereum | `0x5c770425aeb064135b5e625d46b12619189b4077` | NFGas | impl | live | no |
-| ethereum | `0x608276a7becb0f26a9a986b339033a3b74cd4664` | ZeroExRouter2 | impl | live | no |
-| ethereum | `0x6853f8865ba8e9fbd9c8cce3155ce5023fb7eeb0` | Governor | impl | live | no |
-| ethereum | `0x7166e7db426228ba180694e0621613fc84ff84e5` | DoomRewarder | impl | live | no |
-| ethereum | `0x7942e264e21c5e6cbba45fe50785a15d3beb1da0` | LSSVMPair-2 | impl | live | yes |
-| ethereum | `0x7fff0326e0de62676f1bf60af435cbe1c7cb1d96` | skunk | proxy | live | no |
-| ethereum | `0x8d514cf4912c7ed280afe4cdf2738ef9282fa546` | RNGDistributor | impl | live | no |
-| ethereum | `0x925297edcb4893d0d914e6d28f49381d47b864b0` | XTokenClonable | impl | live | no |
-| ethereum | `0x92de3a1511ef22abcf3526c302159882a4755b22` | LSSVMPairMissingEnumerableERC20 | impl | live | yes |
-| ethereum | `0xa1c07dc4086af57db39821fd50417fda449348a3` | ProtoCards0 | impl | live | no |
-| ethereum | `0xa3300bfc13556fa5146ffde34e92a0230a1c3197` | MonStaker3 | impl | live | no |
-| ethereum | `0xa3a83528d0aa752f3bbe2b6877e222ed02462d22` | Unexpected | impl | live | no |
-| ethereum | `0xa76cee17463bd34df43418e9b1acdf508e929881` | XTokenFactory | impl | live | no |
-| ethereum | `0xabd9c0bd5628c90db7a8cf787c2580d1ef105026` | NFTLotteryPoolFactory | impl | live | no |
-| ethereum | `0xada31f59e70ad18665380f21ce49d4c43f9865c2` | Lockdrop | impl | live | no |
-| ethereum | `0xaed0c09de6f851c1ff7540ecdc239c0e4b01801d` | S3KS | impl | live | no |
-| ethereum | `0xaf488234796ca27dba8ecf17f803ea1f4ab33e15` | Blockmon | impl | live | no |
-| ethereum | `0xb7a9942ecd1349793b72c246c3be7d6210c10cd3` | ZeroExRouter | impl | live | no |
-| ethereum | `0xb7acb10b6e1d15d2e5760a9fb328e10008dfcc3c` | XStore | impl | live | no |
-| ethereum | `0xc17030798a6d6e1a76382cf8f439182eb0342d93` | Salt | impl | live | no |
-| ethereum | `0xc5802bcf619301bdc6b1b9eda4b6fd26e63339af` | NFTStaker | impl | live | no |
-| ethereum | `0xc653e1b3a971078812a72d11c45ad71e00f3ad1f` | Multisender | impl | live | no |
-| ethereum | `0xca11bde05977b3631167028862be2a173976ca11` | Multicall3 | impl | live | no |
-| ethereum | `0xcd80c916b1194beb48abf007d0b79a7238436d56` | LSSVMPairMissingEnumerableETH | impl | live | yes |
-| ethereum | `0xd06337a401b468657de2f9d3e390ce5b21c3c1c0` | MonStaker2 | impl | live | no |
-| ethereum | `0xd42638863462d2f21bb7d4275d7637ee5d5541eb` | LSSVMPairEnumerableERC20 | impl | live | yes |
-| ethereum | `0xe354ac0bb78a8013617fe0efa6099769749f027c` | NFTClaim | impl | live | no |
-| ethereum | `0xe37bb18b86d228831a61872f5df3b5f24b6218da` | Nftdns | impl | live | no |
-| ethereum | `0xf4f439a6a152cfecb1f34d726d490f82bcb3c2c7` | LSSVMPair-3 | impl | live | yes |
-| ethereum | `0xf83eee39e723526605d784917b6e38ebcf0f0207` | ERC721Batcher | impl | live | no |
+| ethereum | `0x7942e264e21c5e6cbba45fe50785a15d3beb1da0` | XykCurve | impl | live | yes |
+| ethereum | `0xf4f439a6a152cfecb1f34d726d490f82bcb3c2c7` | StandardSettingsFactory | impl | live | yes |

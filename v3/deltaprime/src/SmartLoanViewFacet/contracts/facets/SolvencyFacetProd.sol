@@ -1,23 +1,28 @@
 // SPDX-License-Identifier: BUSL-1.1
-// Last deployed from commit: ecd675d46c3f696de7562f6be071a442d97f37d9;
+// Last deployed from commit: ;
 pragma solidity 0.8.17;
 
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
-import "@redstone-finance/evm-connector/contracts/core/RedstoneConsumerNumericBase.sol";
-import "@openzeppelin/contracts/utils/math/Math.sol";
+import "@redstone-finance/evm-connector/contracts/data-services/AvalancheDataServiceConsumerBase.sol";
 import "../interfaces/ITokenManager.sol";
 import "../Pool.sol";
 import "../DiamondHelper.sol";
 import "../interfaces/IStakingPositions.sol";
 import "../interfaces/facets/avalanche/ITraderJoeV2Facet.sol";
+import "../interfaces/uniswap-v3-periphery/INonfungiblePositionManager.sol";
+import "../lib/uniswap-v3/UniswapV3IntegrationHelper.sol";
 import {PriceHelper} from "../lib/joe-v2/PriceHelper.sol";
 import {Uint256x256Math} from "../lib/joe-v2/math/Uint256x256Math.sol";
+import {TickMath} from "../lib/uniswap-v3/TickMath.sol";
+import {FullMath} from "../lib/uniswap-v3/FullMath.sol";
 
 //This path is updated during deployment
 import "../lib/arbitrum/DeploymentConstants.sol";
+//TODO: that probably can be removed later
+import "../interfaces/facets/avalanche/IUniswapV3Facet.sol";
 
-abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelper {
+contract SolvencyFacetProd is AvalancheDataServiceConsumerBase, DiamondHelper {
     using PriceHelper for uint256;
     using Uint256x256Math for uint256;
 
@@ -34,27 +39,13 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
         AssetPrice[] assetsToRepayPrices;
     }
 
-    struct PriceInfo {
-        address tokenX;
-        address tokenY;
-        uint256 priceX;
-        uint256 priceY;
-    }
-
     /**
       * Checks if the loan is solvent.
       * It means that the Health Ratio is greater than 1e18.
       * @dev This function uses the redstone-evm-connector
     **/
     function isSolvent() public view returns (bool) {
-        if(DiamondStorageLib.isAccountFrozen()){
-            revert AccountFrozen();
-        }
         return getHealthRatio() >= 1e18;
-    }
-
-    function isSolventPayable() external payable returns (bool) {
-        return isSolvent();
     }
 
     /**
@@ -146,12 +137,8 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
     }
 
     function copyToArray(bytes32[] memory target, bytes32[] memory source, uint256 offset, uint256 numberOfItems) pure internal {
-        if(numberOfItems > source.length){
-            revert ArrayLengthMismatch();
-        }
-        if(offset + numberOfItems > target.length){
-            revert ArrayLengthMismatch();
-        }
+        require(numberOfItems <= source.length, "numberOfItems > target array length");
+        require(offset + numberOfItems <= target.length, "offset + numberOfItems > target array length");
 
         for(uint i; i<numberOfItems; i++){
             target[i + offset] = source[i];
@@ -159,18 +146,10 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
     }
 
     function copyToAssetPriceArray(AssetPrice[] memory target, bytes32[] memory sourceAssets, uint256[] memory sourcePrices, uint256 offset, uint256 numberOfItems) pure internal {
-        if(numberOfItems > sourceAssets.length){
-            revert ArrayLengthMismatch();
-        }
-        if(numberOfItems > sourcePrices.length){
-            revert ArrayLengthMismatch();
-        }
-        if(offset + numberOfItems > sourceAssets.length){
-            revert ArrayLengthMismatch();
-        }
-        if(offset + numberOfItems > sourcePrices.length){
-            revert ArrayLengthMismatch();
-        }
+        require(numberOfItems <= sourceAssets.length, "numberOfItems > sourceAssets array length");
+        require(numberOfItems <= sourcePrices.length, "numberOfItems > sourcePrices array length");
+        require(offset + numberOfItems <= sourceAssets.length, "offset + numberOfItems > sourceAssets array length");
+        require(offset + numberOfItems <= sourcePrices.length, "offset + numberOfItems > sourcePrices array length");
 
         for(uint i; i<numberOfItems; i++){
             target[i] = AssetPrice({
@@ -232,16 +211,16 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
         AssetPrice[] memory assetsToRepayPrices = new AssetPrice[](assetsToRepay.length);
         for(uint i=0; i<assetsToRepay.length; i++){
             assetsToRepayPrices[i] = AssetPrice({
-                asset: allAssetsSymbols[i+offset],
-                price: allAssetsPrices[i+offset]
+            asset: allAssetsSymbols[i+offset],
+            price: allAssetsPrices[i+offset]
             });
         }
 
         result = CachedPrices({
-            ownedAssetsPrices: ownedAssetsPrices,
-            debtAssetsPrices: debtAssetsPrices,
-            stakedPositionsPrices: stakedPositionsPrices,
-            assetsToRepayPrices: assetsToRepayPrices
+        ownedAssetsPrices: ownedAssetsPrices,
+        debtAssetsPrices: debtAssetsPrices,
+        stakedPositionsPrices: stakedPositionsPrices,
+        assetsToRepayPrices: assetsToRepayPrices
         });
     }
 
@@ -279,17 +258,17 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
     /**
       * Returns TotalWeightedValue of OwnedAssets in USD based on the supplied array of Asset/Price struct, tokenBalance and debtCoverage
     **/
-    function _getTWVOwnedAssets(AssetPrice[] memory ownedAssetsPrices) internal virtual view returns (uint256) {
+    function _getTWVOwnedAssets(AssetPrice[] memory ownedAssetsPrices) internal view returns (uint256) {
         bytes32 nativeTokenSymbol = DeploymentConstants.getNativeTokenSymbol();
         ITokenManager tokenManager = DeploymentConstants.getTokenManager();
 
-        uint256 weightedValueOfTokens = ownedAssetsPrices[0].price * address(this).balance * tokenManager.tieredDebtCoverage(DiamondStorageLib.getPrimeLeverageTier(),tokenManager.getAssetAddress(nativeTokenSymbol, true)) / (10 ** 26);
+        uint256 weightedValueOfTokens = ownedAssetsPrices[0].price * address(this).balance * tokenManager.debtCoverage(tokenManager.getAssetAddress(nativeTokenSymbol, true)) / (10 ** 26);
 
         if (ownedAssetsPrices.length > 0) {
 
             for (uint256 i = 0; i < ownedAssetsPrices.length; i++) {
                 IERC20Metadata token = IERC20Metadata(tokenManager.getAssetAddress(ownedAssetsPrices[i].asset, true));
-                weightedValueOfTokens = weightedValueOfTokens + (ownedAssetsPrices[i].price * token.balanceOf(address(this)) * tokenManager.tieredDebtCoverage(DiamondStorageLib.getPrimeLeverageTier(),address(token)) / (10 ** token.decimals() * 1e8));
+                weightedValueOfTokens = weightedValueOfTokens + (ownedAssetsPrices[i].price * token.balanceOf(address(this)) * tokenManager.debtCoverage(address(token)) / (10 ** token.decimals() * 1e8));
             }
         }
         return weightedValueOfTokens;
@@ -305,9 +284,7 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
         uint256 weightedValueOfStaked;
 
         for (uint256 i; i < positions.length; i++) {
-            if(stakedPositionsPrices[i].asset != positions[i].symbol){
-                revert PriceSymbolPositionMismatch();
-            }
+            require(stakedPositionsPrices[i].asset == positions[i].symbol, "Position-price symbol mismatch.");
 
             (bool success, bytes memory result) = address(this).staticcall(abi.encodeWithSelector(positions[i].balanceSelector));
 
@@ -316,7 +293,7 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
 
                 IERC20Metadata token = IERC20Metadata(DeploymentConstants.getTokenManager().getAssetAddress(stakedPositionsPrices[i].asset, true));
 
-                weightedValueOfStaked += stakedPositionsPrices[i].price * balance * tokenManager.tieredDebtCoverageStaked(DiamondStorageLib.getPrimeLeverageTier(), positions[i].identifier) / (10 ** token.decimals() * 10**8);
+                weightedValueOfStaked += stakedPositionsPrices[i].price * balance * tokenManager.debtCoverageStaked(positions[i].identifier) / (10 ** token.decimals() * 10**8);
             }
 
 
@@ -325,7 +302,7 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
     }
 
     function _getThresholdWeightedValueBase(AssetPrice[] memory ownedAssetsPrices, AssetPrice[] memory stakedPositionsPrices) internal view virtual returns (uint256) {
-        return _getTWVOwnedAssets(ownedAssetsPrices) + _getTWVStakedPositions(stakedPositionsPrices) + _getTotalTraderJoeV2(true);
+        return _getTWVOwnedAssets(ownedAssetsPrices) + _getTWVStakedPositions(stakedPositionsPrices) + _getTotalTraderJoeV2(true) + _getTotalUniswapV3(true);
     }
 
     /**
@@ -336,10 +313,6 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
         AssetPrice[] memory ownedAssetsPrices = getOwnedAssetsWithNativePrices();
         AssetPrice[] memory stakedPositionsPrices = getStakedPositionsPrices();
         return _getThresholdWeightedValueBase(ownedAssetsPrices, stakedPositionsPrices);
-    }
-
-    function getThresholdWeightedValuePayable() external payable virtual returns (uint256) {
-        return getThresholdWeightedValue();
     }
 
     /**
@@ -380,10 +353,6 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
         return getDebtBase(debtAssetsPrices);
     }
 
-    function getDebtPayable() external payable returns (uint256){
-        return getDebt();
-    }
-
     /**
      * Returns the current debt denominated in USD
      * Uses provided AssetPrice struct array instead of extracting the pricing data from the calldata again.
@@ -397,7 +366,7 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
      * Returns the current value of Prime Account in USD including all tokens as well as staking and LP positions
      * Uses provided AssetPrice struct array instead of extracting the pricing data from the calldata again.
     **/
-    function _getTotalAssetsValueBase(AssetPrice[] memory ownedAssetsPrices) public virtual view returns (uint256) {
+    function _getTotalAssetsValueBase(AssetPrice[] memory ownedAssetsPrices) public view returns (uint256) {
         if (ownedAssetsPrices.length > 0) {
             ITokenManager tokenManager = DeploymentConstants.getTokenManager();
 
@@ -465,9 +434,7 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
         uint256 usdValue;
 
         for (uint256 i; i < positions.length; i++) {
-            if(stakedPositionsPrices[i].asset != positions[i].symbol){
-                revert PriceSymbolPositionMismatch();
-            }
+            require(stakedPositionsPrices[i].asset == positions[i].symbol, "Position-price symbol mismatch.");
 
             (bool success, bytes memory result) = address(this).staticcall(abi.encodeWithSelector(positions[i].balanceSelector));
 
@@ -494,7 +461,7 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
 
         ITraderJoeV2Facet.TraderJoeV2Bin[] memory ownedTraderJoeV2Bins = DiamondStorageLib.getTjV2OwnedBinsView();
 
-        PriceInfo memory priceInfo;
+        uint256[] memory prices = new uint256[](2);
 
         if (ownedTraderJoeV2Bins.length > 0) {
             for (uint256 i; i < ownedTraderJoeV2Bins.length; i++) {
@@ -504,19 +471,12 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
                 uint256 liquidity;
 
                 {
-                    address tokenXAddress = address(binInfo.pair.getTokenX());
-                    address tokenYAddress = address(binInfo.pair.getTokenY());
+                    bytes32[] memory symbols = new bytes32[](2);
 
-                    if (priceInfo.tokenX != tokenXAddress || priceInfo.tokenY != tokenYAddress) {
-                        bytes32[] memory symbols = new bytes32[](2);
+                    symbols[0] = DeploymentConstants.getTokenManager().tokenAddressToSymbol(address(binInfo.pair.getTokenX()));
+                    symbols[1] = DeploymentConstants.getTokenManager().tokenAddressToSymbol(address(binInfo.pair.getTokenY()));
 
-
-                        symbols[0] = DeploymentConstants.getTokenManager().tokenAddressToSymbol(tokenXAddress);
-                        symbols[1] = DeploymentConstants.getTokenManager().tokenAddressToSymbol(tokenYAddress);
-
-                        uint256[] memory prices = getOracleNumericValuesFromTxMsg(symbols);
-                        priceInfo = PriceInfo(tokenXAddress, tokenYAddress, prices[0], prices[1]);
-                    }
+                    prices = getOracleNumericValuesFromTxMsg(symbols);
                 }
 
                 {
@@ -524,24 +484,84 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
 
                     price = PriceHelper.convert128x128PriceToDecimal(binInfo.pair.getPriceFromId(binInfo.id)); // how is it denominated (what precision)?
 
-                    liquidity = price * binReserveX / 10 ** 18 + binReserveY;
+                    liquidity = price * binReserveX
+                        / 10 ** IERC20Metadata(address(binInfo.pair.getTokenX())).decimals()
+                        + binReserveY;
                 }
 
 
                 {
-                    uint256 debtCoverageX = weighted ? DeploymentConstants.getTokenManager().tieredDebtCoverage(DiamondStorageLib.getPrimeLeverageTier(),address(binInfo.pair.getTokenX())) : 1e18;
-                    uint256 debtCoverageY = weighted ? DeploymentConstants.getTokenManager().tieredDebtCoverage(DiamondStorageLib.getPrimeLeverageTier(),address(binInfo.pair.getTokenY())) : 1e18;
+                    uint256 debtCoverageX = weighted ? DeploymentConstants.getTokenManager().debtCoverage(address(binInfo.pair.getTokenX())) : 1e18;
+                    uint256 debtCoverageY = weighted ? DeploymentConstants.getTokenManager().debtCoverage(address(binInfo.pair.getTokenY())) : 1e18;
 
                     total = total +
                     Math.min(
-                        price > 10**24 ?
-                            debtCoverageX * liquidity / (price / 10 ** 18) / 10 ** IERC20Metadata(address(binInfo.pair.getTokenX())).decimals() * priceInfo.priceX / 10 ** 8
-                            :
-                            debtCoverageX * liquidity / price * 10**18 / 10 ** IERC20Metadata(address(binInfo.pair.getTokenX())).decimals() * priceInfo.priceX / 10 ** 8,
-                        debtCoverageY * liquidity / 10**(IERC20Metadata(address(binInfo.pair.getTokenY())).decimals()) * priceInfo.priceY / 10 ** 8
+                        debtCoverageX * liquidity * prices[0] / (price * 10 ** 8),
+                        debtCoverageY * liquidity / 10 ** IERC20Metadata(address(binInfo.pair.getTokenY())).decimals() * prices[1] / 10 ** 8
                     )
-                    .mulDivRoundDown(binInfo.pair.balanceOf(address(this), binInfo.id), 1e18)
-                    .mulDivRoundDown(1e18, binInfo.pair.totalSupply(binInfo.id));
+                    * binInfo.pair.balanceOf(address(this), binInfo.id) / binInfo.pair.totalSupply(binInfo.id);
+                }
+            }
+
+            return total;
+        } else {
+        return 0;
+        }
+    }
+
+    /**
+    **/
+    function getTotalUniswapV3() public view virtual returns (uint256) {
+        return getTotalUniswapV3WithPrices();
+    }
+
+    /**
+    **/
+    function _getTotalUniswapV3(bool weighted) internal view returns (uint256) {
+        uint256 total;
+
+        uint256[] memory ownedUniswapV3TokenIds = DiamondStorageLib.getUV3OwnedTokenIdsView();
+
+        if (ownedUniswapV3TokenIds.length > 0) {
+
+            for (uint256 i; i < ownedUniswapV3TokenIds.length; i++) {
+
+            IUniswapV3Facet.UniswapV3Position memory position = getUniswapV3Position(INonfungiblePositionManager(0x655C406EBFa14EE2006250925e54ec43AD184f8B), ownedUniswapV3TokenIds[0]);
+
+            uint256[] memory prices = new uint256[](2);
+
+            {
+                    bytes32[] memory symbols = new bytes32[](2);
+
+                    symbols[0] = DeploymentConstants.getTokenManager().tokenAddressToSymbol(position.token0);
+                    symbols[1] = DeploymentConstants.getTokenManager().tokenAddressToSymbol(position.token1);
+
+                    prices = getOracleNumericValuesFromTxMsg(symbols);
+                }
+
+                //TODO: check if this approach is not too harsh for Market Maker (Prime Account)
+                {
+                    uint256 debtCoverage0 = weighted ? DeploymentConstants.getTokenManager().debtCoverage(position.token0) : 1e18;
+                    uint256 debtCoverage1 = weighted ? DeploymentConstants.getTokenManager().debtCoverage(position.token1) : 1e18;
+
+                    uint160 sqrtPriceX96_a = TickMath.getSqrtRatioAtTick(position.tickLower);
+                    uint160 sqrtPriceX96_b = TickMath.getSqrtRatioAtTick(position.tickUpper);
+
+                    uint256 sqrtPrice_a = UniswapV3IntegrationHelper.sqrtPriceX96ToUint(sqrtPriceX96_a, IERC20Metadata(position.token0).decimals());
+                    uint256 sqrtPrice_b = UniswapV3IntegrationHelper.sqrtPriceX96ToUint(sqrtPriceX96_b, IERC20Metadata(position.token0).decimals());
+
+                    total = total +
+
+                    //TODO: there is an assumption here that the position value is the lowest at edges (x = 0 or y = 0). Need to confirm that!
+
+                    //TODO: tickerUpper = p_b, tickerLower = p_a, first check if that's correct, secondly check what's the denomination and accuracy of these numbers
+                    //TODO: check for possible under/overflowsL557
+
+
+                    Math.min(
+                        debtCoverage0 * position.liquidity / 1e18 * (1e36 / sqrtPrice_a - 1e36 / sqrtPrice_b) / 10 ** IERC20Metadata(position.token0).decimals() * prices[0] / 10 ** 8,
+                        debtCoverage1 * position.liquidity / 1e18 * (sqrtPrice_b - sqrtPrice_a) / 10 ** IERC20Metadata(position.token1).decimals() * prices[1] / 10 ** 8
+                    );
                 }
             }
 
@@ -549,6 +569,15 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
         } else {
             return 0;
         }
+    }
+
+
+    function getUniswapV3Position(
+        INonfungiblePositionManager positionManager,
+        uint256 tokenId) internal view returns (IUniswapV3Facet.UniswapV3Position memory position) {
+        (, , address token0, address token1, , int24 tickLower, int24 tickUpper, uint128 liquidity) = positionManager.positions(tokenId);
+
+        position = IUniswapV3Facet.UniswapV3Position(token0, token1, tickLower, tickUpper, liquidity);
     }
 
     /**
@@ -568,6 +597,14 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
     }
 
     /**
+     * Returns the current value of Uniswap V3 positions in USD.
+     * Uses provided AssetPrice struct array instead of extracting the pricing data from the calldata again.
+    **/
+    function getTotalUniswapV3WithPrices() public view returns (uint256) {
+        return _getTotalUniswapV3(false);
+    }
+
+    /**
      * Returns the current value of staked positions in USD.
      * @dev This function uses the redstone-evm-connector
     **/
@@ -581,15 +618,15 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
      * @dev This function uses the redstone-evm-connector
     **/
     function getTotalValue() public view virtual returns (uint256) {
-        return getTotalAssetsValue() + getStakedValue() + getTotalTraderJoeV2();
+        return getTotalAssetsValue() + getStakedValue() + getTotalTraderJoeV2() + getTotalUniswapV3();
     }
 
     /**
      * Returns the current value of Prime Account in USD including all tokens as well as staking and LP positions
      * Uses provided AssetPrice struct arrays instead of extracting the pricing data from the calldata again.
     **/
-    function getTotalValueWithPrices(AssetPrice[] memory ownedAssetsPrices, AssetPrice[] memory stakedPositionsPrices) public view virtual returns (uint256) {
-        return getTotalAssetsValueWithPrices(ownedAssetsPrices) + getStakedValueWithPrices(stakedPositionsPrices) + getTotalTraderJoeV2WithPrices();
+    function getTotalValueWithPrices(AssetPrice[] memory ownedAssetsPrices, AssetPrice[] memory assetsPrices, AssetPrice[] memory stakedPositionsPrices) public view virtual returns (uint256) {
+        return getTotalAssetsValueWithPrices(ownedAssetsPrices) + getStakedValueWithPrices(stakedPositionsPrices) + getTotalTraderJoeV2WithPrices() + getTotalUniswapV3WithPrices();
     }
 
     function getFullLoanStatus() public view returns (uint256[5] memory) {
@@ -604,11 +641,11 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
     function getHealthRatio() public view virtual returns (uint256) {
         CachedPrices memory cachedPrices = getAllPricesForLiquidation(new bytes32[](0));
         uint256 debt = getDebtWithPrices(cachedPrices.debtAssetsPrices);
+        uint256 thresholdWeightedValue = getThresholdWeightedValueWithPrices(cachedPrices.ownedAssetsPrices, cachedPrices.stakedPositionsPrices);
 
         if (debt == 0) {
             return type(uint256).max;
         } else {
-            uint256 thresholdWeightedValue = getThresholdWeightedValueWithPrices(cachedPrices.ownedAssetsPrices, cachedPrices.stakedPositionsPrices);
             return thresholdWeightedValue * 1e18 / debt;
         }
     }
@@ -620,19 +657,12 @@ abstract contract SolvencyFacetProd is RedstoneConsumerNumericBase, DiamondHelpe
      **/
     function getHealthRatioWithPrices(CachedPrices memory cachedPrices) public view virtual returns (uint256) {
         uint256 debt = getDebtWithPrices(cachedPrices.debtAssetsPrices);
+        uint256 thresholdWeightedValue = getThresholdWeightedValueWithPrices(cachedPrices.ownedAssetsPrices, cachedPrices.stakedPositionsPrices);
 
         if (debt == 0) {
             return type(uint256).max;
         } else {
-            uint256 thresholdWeightedValue = getThresholdWeightedValueWithPrices(cachedPrices.ownedAssetsPrices, cachedPrices.stakedPositionsPrices);
             return thresholdWeightedValue * 1e18 / debt;
         }
     }
-
-    // ERRORS
-    error PriceSymbolPositionMismatch();
-
-    error AccountFrozen();
-
-    error ArrayLengthMismatch();
 }

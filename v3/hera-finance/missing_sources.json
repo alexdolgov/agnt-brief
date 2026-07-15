@@ -1,0 +1,13 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "hera-finance",
+  "missing": [
+    {
+      "chain_id": 1088,
+      "chain": "chain-1088",
+      "address": "0x852d1fdd3982d8e21145845af74db7ae37d1f383",
+      "canonical_source_address": null
+    }
+  ]
+}

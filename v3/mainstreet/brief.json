@@ -1,21 +1,54 @@
 {
-  "schema_version": "2.0",
+  "schema_version": "3.0",
   "project_key": "mainstreet",
-  "generated_at": "2026-07-04T11:05:42.078Z",
-  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-66d5",
+  "generated_at": "2026-07-15T18:00:00.000Z",
+  "authority": {
+    "activation_id": "scope-prod-20260715-v1",
+    "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
+    "match_closure_sha256": "8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6",
+    "review_closure_sha256": "ba1f6f291d2f91f0993306e7ee30a8c54c9b49bfb0a4757f9de2abd218c8fd1d",
+    "topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+    "topography_closure_sha256": "a8c3fc7d9dc82143989157bb6855fbb7c23dddc63b6ddb6cd2d84d8d4aa4eca2",
+    "liveness_stage_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+    "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
+    "fork_detection_run_id": "fork-structural-canonical-production-20260712",
+    "deployer_decision_run_id": "deployer-candidate-production-20260712",
+    "export_input_receipt_sha256": "7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213",
+    "canonical_network_policy": "offline_cache_only"
+  },
+  "production_state": {
+    "state_kind": "published_scope",
+    "cohort_ordinal": 354,
+    "raw_selected_contract_rows": 4,
+    "selected_audits": 1,
+    "eligible_audit_results": 1,
+    "matched_audit_results": 1,
+    "no_match_audit_results": 0
+  },
+  "missing_evidence": {
+    "audit_dates": []
+  },
+  "pipeline_run_id": "brief-generation-scope-prod-20260715-v1",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 12,
-    "total_addresses": 16,
-    "unique_implementations": 12,
-    "total_deployments": 16,
-    "audited_contracts": 6,
-    "unaudited_contracts": 6,
-    "contracts_verified_audited": 6,
-    "contracts_verified_unaudited": 6,
+    "total_contracts": 10,
+    "total_addresses": 11,
+    "unique_implementations": 10,
+    "address_book_own_implementations": 8,
+    "address_book_context_implementations": 2,
+    "address_book_unclassified_implementations": 0,
+    "non_address_book_implementations": 0,
+    "third_party_or_infra_implementations": 3,
+    "standard_proxy_or_library_implementations": 0,
+    "address_book_proxy_deployments": 6,
+    "total_deployments": 11,
+    "audited_contracts": 3,
+    "unaudited_contracts": 3,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 2,
     "coverage_pct": 50,
     "total_audits": 1,
     "direct_audits": 1,
@@ -40,33 +73,74 @@
       "stale": 0,
       "unknown": 0
     },
-    "live_implementations": 12,
-    "live_verified_implementations": 12,
-    "live_audited_implementations": 6,
+    "live_implementations": 8,
+    "live_verified_implementations": 6,
+    "live_audited_implementations": 3,
+    "coverage_basis": "address_book_owned_live_verified_implementations",
+    "live_verified_own_confirmed": 6,
+    "live_audited_own_confirmed": 3,
+    "live_verified_needs_review": 0,
+    "live_verified_excluded_standard": 0,
+    "live_verified_excluded_third_party": 1,
+    "live_verified_excluded_inventory_pollution": 0,
+    "coverage_confidence": "high",
+    "coverage_assessment_status": "assessed",
+    "coverage_assessment_note": "Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.",
+    "liveness_assessment_status": "complete",
+    "liveness_eligible_contracts": 8,
+    "liveness_assessed_contracts": 8,
+    "liveness_unresolved_contracts": 0,
+    "liveness_run_ids": [
+      "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1"
+    ],
+    "scope_analysis_pending_audits": 0,
+    "coverage_pct_conservative": 50,
+    "live_verified_third_party_excluded": 1,
     "deploy_coverage_basis_breakdown": {
-      "code_matched": 6,
+      "code_matched": 0,
       "diverged": 0,
-      "match_unverified": 0
+      "match_unverified": 4
     }
   },
   "topography": {
-    "project_purpose": "Basis Trading. Structurally: 11 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 2 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.",
-    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 2 common project-authored base contract(s) (contextupgradeable, proxy). Dominant framework: openzeppelin-upgradeable.",
-    "product_family_count": 5,
-    "total_contracts_indexed": 16,
-    "live_contracts": 15,
-    "inactive_contracts": 1,
+    "project_purpose": "This brief describes the observed EVM deployment and audit surface for Mainstreet. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.",
+    "relationship_narrative": "The pinned logic-topography run contains 10 contract row(s) across ethereum. Structural roles: 6 supporting, 2 core, 2 unclassified. 7 row(s) use upgradeable patterns.",
+    "product_family_count": 3,
+    "total_contracts_indexed": 10,
+    "live_contracts": 7,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 0,
-    "live_deployment_units": 0,
+    "unknown_contracts": 3,
+    "deployment_units": 17,
+    "live_deployment_units": 8,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
+  "logic_topography": {
+    "run_id": "logic-topography-normalized-candidate-20260715-v1",
+    "content_rows": 10,
+    "structural_roles": {
+      "supporting": 6,
+      "unclassified": 2,
+      "core": 2
+    },
+    "contract_kinds": {
+      "contract": 9,
+      "abstract": 1
+    },
+    "standards": {
+      "erc1967proxy": 4,
+      "ownable": 1
+    },
+    "frameworks": {
+      "openzeppelin-upgradeable": 7
+    },
+    "upgradeable_contracts": 7
+  },
   "surface_sufficiency": {
-    "unique_implementations": 12,
+    "unique_implementations": 8,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -74,16 +148,71 @@
     "entries": [],
     "inherited_audit_count": 0
   },
+  "fork_analysis": {
+    "summary": {
+      "total_contracts": 9,
+      "forked": 0,
+      "original": 9
+    },
+    "forked_contracts": [],
+    "original_contracts": [
+      {
+        "contract_address": "0x4ba01f22827018b4772cd326c7627fb4956a7c00",
+        "chain_id": 1,
+        "etherscan_name": null
+      },
+      {
+        "contract_address": "0xb72db4e3bdf013b6386e3e17a5a999230a9a7f98",
+        "chain_id": 1,
+        "etherscan_name": null
+      },
+      {
+        "contract_address": "0x22eb4e61fe4d4e31113979e8b1f4377d46bc98f2",
+        "chain_id": 1,
+        "etherscan_name": "ERC1967Proxy"
+      },
+      {
+        "contract_address": "0x70c0c12fbb3acfff8e48abf027436971cf2ade14",
+        "chain_id": 1,
+        "etherscan_name": "ERC1967Proxy"
+      },
+      {
+        "contract_address": "0x890a5122aa1da30fec4286de7904ff808f0bd74a",
+        "chain_id": 1,
+        "etherscan_name": "ERC1967Proxy"
+      },
+      {
+        "contract_address": "0x6665efde9f1916a9e16f7f955375ecd392b98b81",
+        "chain_id": 1,
+        "etherscan_name": "FeeSilo"
+      },
+      {
+        "contract_address": "0x6f188821283923953121f35d74e69a5e73ea6871",
+        "chain_id": 1,
+        "etherscan_name": "msUSDSilo"
+      },
+      {
+        "contract_address": "0x0eae4acb10f3e5696cf6b0de33693ef8ec571858",
+        "chain_id": 1,
+        "etherscan_name": "SafeProxy"
+      },
+      {
+        "contract_address": "0x6580adacc5dd7328eabde0d7af257535c08dccc4",
+        "chain_id": 1,
+        "etherscan_name": "SafeProxy"
+      }
+    ]
+  },
   "contracts": [
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x4cc94169605069ddf82c815493cf6048f1935d0a",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-388752",
+      "deployment_unit_proxy_count": 1,
       "name": "CustodianManager",
       "role": "governance",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -95,23 +224,16 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x4cc94169605069ddf82c815493cf6048f1935d0a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-388752",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x7d4ad0e1161a7407dac817629bceb2e6d7125eab",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00"
         }
       ],
       "audits_covering": [],
@@ -119,8 +241,20 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "external_dependency_or_infra",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "third_party_dependency",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs identify this as third-party infrastructure; excluded from audit-scope coverage.",
+      "surface_evidence": {
+        "source": "project_contracts.provenance_hint",
+        "provenance_hint": "third_party_infra"
+      },
       "effective_deploy_date": "2025-12-04 22:49:11+03",
       "deploy_coverage_basis": null
     },
@@ -128,11 +262,11 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x6665efde9f1916a9e16f7f955375ecd392b98b81",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-388742",
+      "deployment_unit_proxy_count": 0,
       "name": "FeeSilo",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -144,12 +278,16 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x6665efde9f1916a9e16f7f955375ecd392b98b81",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-388742",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "current_address_book_code",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00"
         }
       ],
       "audits_covering": [],
@@ -159,58 +297,27 @@
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
       "is_live": true,
+      "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "own_supporting",
+      "surface_confidence": null,
+      "surface_exclusion_reason": null,
+      "surface_evidence": null,
       "effective_deploy_date": "2025-12-04 22:49:11+03",
       "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x1d08df027d12fd9c3441cf1829f1b47420044fae",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "MainstreetMinter",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MainstreetMinter",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1d08df027d12fd9c3441cf1829f1b47420044fae",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-4639"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-12-04 22:49:11+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x70c0c12fbb3acfff8e48abf027436971cf2ade14",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-388754",
+      "deployment_unit_proxy_count": 1,
       "name": "MainstreetMinter",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -222,12 +329,16 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x70c0c12fbb3acfff8e48abf027436971cf2ade14",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-388754",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": true,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "current_address_book_code",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00"
         }
       ],
       "audits_covering": [
@@ -239,18 +350,27 @@
       "verification_bucket": "verified_audited",
       "contamination_flag": null,
       "is_live": true,
+      "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "own_supporting",
+      "surface_confidence": null,
+      "surface_exclusion_reason": null,
+      "surface_evidence": null,
       "effective_deploy_date": "2025-12-04 22:49:11+03",
-      "deploy_coverage_basis": "code_matched"
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x6f188821283923953121f35d74e69a5e73ea6871",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-388743",
+      "deployment_unit_proxy_count": 0,
       "name": "msUSDSilo",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -262,12 +382,16 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x6f188821283923953121f35d74e69a5e73ea6871",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-388743",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": true,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "current_address_book_code",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00"
         }
       ],
       "audits_covering": [
@@ -279,18 +403,27 @@
       "verification_bucket": "verified_audited",
       "contamination_flag": null,
       "is_live": true,
+      "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "own_supporting",
+      "surface_confidence": null,
+      "surface_exclusion_reason": null,
+      "surface_evidence": null,
       "effective_deploy_date": "2025-12-04 22:49:11+03",
-      "deploy_coverage_basis": "code_matched"
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x22eb4e61fe4d4e31113979e8b1f4377d46bc98f2",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-388750",
+      "deployment_unit_proxy_count": 1,
       "name": "msYBridger",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -302,12 +435,16 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x22eb4e61fe4d4e31113979e8b1f4377d46bc98f2",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-388750",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "current_address_book_code",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00"
         }
       ],
       "audits_covering": [],
@@ -317,6 +454,15 @@
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
       "is_live": true,
+      "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "own_supporting",
+      "surface_confidence": null,
+      "surface_exclusion_reason": null,
+      "surface_evidence": null,
       "effective_deploy_date": "2025-12-04 22:02:47+03",
       "deploy_coverage_basis": null
     },
@@ -324,12 +470,12 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x0eae4acb10f3e5696cf6b0de33693ef8ec571858",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-388751",
+      "deployment_unit_proxy_count": 2,
       "name": "Safe",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "Gnosis Safe",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -340,23 +486,31 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x0eae4acb10f3e5696cf6b0de33693ef8ec571858",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-388751",
+          "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "proxy_unit_reachable",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00"
         },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x6580adacc5dd7328eabde0d7af257535c08dccc4",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-388751",
+          "deployment_unit_proxy_count": 2,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "current_address_book_code",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00"
         }
       ],
       "audits_covering": [],
@@ -366,107 +520,30 @@
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
       "is_live": true,
+      "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 2,
+      "coverage_surface_kind": "third_party_dependency",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs identify this as third-party infrastructure; excluded from audit-scope coverage.",
+      "surface_evidence": {
+        "source": "project_contracts.provenance_hint",
+        "provenance_hint": "third_party_infra"
+      },
       "effective_deploy_date": "2025-12-06 04:02:35+03",
       "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x111ce2a60c30f6058a57d0dbae1a39a42d998826",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "StablePool",
-      "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StablePool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x111ce2a60c30f6058a57d0dbae1a39a42d998826",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9054ae85300c7d3a325714fc2f1454d0b7c73a12",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null,
-      "is_live": true,
-      "effective_deploy_date": "2025-12-17 21:07:47+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x42ced7dce66df68a6828f74ea73612fb511471a7",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "StakedmsUSD",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StakedmsUSD",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x42ced7dce66df68a6828f74ea73612fb511471a7",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-4639"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2025-12-06 02:49:35+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x890a5122aa1da30fec4286de7904ff808f0bd74a",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-388753",
+      "deployment_unit_proxy_count": 1,
       "name": "StakedmsUSD",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -478,12 +555,16 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x890a5122aa1da30fec4286de7904ff808f0bd74a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-388753",
+          "deployment_unit_proxy_count": 1,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": true,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "current_address_book_code",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00"
         }
       ],
       "audits_covering": [
@@ -495,18 +576,27 @@
       "verification_bucket": "verified_audited",
       "contamination_flag": null,
       "is_live": true,
+      "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 1,
+      "coverage_surface_kind": "own_supporting",
+      "surface_confidence": null,
+      "surface_exclusion_reason": null,
+      "surface_evidence": null,
       "effective_deploy_date": "2025-12-04 22:02:47+03",
-      "deploy_coverage_basis": "code_matched"
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x098e47096856eb292d8b2d379b74e987e23cd2af",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "deployment_unit": "unit-388738",
+      "deployment_unit_proxy_count": 0,
       "name": "StaticPriceOracle",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -518,63 +608,16 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x098e47096856eb292d8b2d379b74e987e23cd2af",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "deployment_unit": "unit-388738",
+          "deployment_unit_proxy_count": 0,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-4639"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null,
-      "is_live": true,
-      "effective_deploy_date": "2025-12-04 22:29:35+03",
-      "deploy_coverage_basis": "code_matched"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x42d9ee7049f5dc573fe08330a3597af17437ebb6",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "Vyper_contract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Vyper_contract",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x42d9ee7049f5dc573fe08330a3597af17437ebb6",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xcf72a84edaae931385e84fb4c2edee07a32822a6",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "unknown",
+          "operational_liveness_evidence_kind": "code_present_context",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00"
         }
       ],
       "audits_covering": [],
@@ -583,8 +626,124 @@
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
       "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "external_dependency_or_infra",
+      "address_book_coverage_eligible": false,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "third_party_dependency",
+      "surface_confidence": null,
+      "surface_exclusion_reason": "Protocol docs identify this as third-party infrastructure; excluded from audit-scope coverage.",
+      "surface_evidence": {
+        "source": "project_contracts.provenance_hint",
+        "provenance_hint": "third_party_infra"
+      },
+      "effective_deploy_date": "2025-12-04 22:29:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4ba01f22827018b4772cd326c7627fb4956a7c00",
+      "deployment_unit": "unit-388739",
+      "deployment_unit_proxy_count": 0,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Mainstreet",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4ba01f22827018b4772cd326c7627fb4956a7c00",
+          "deployment_unit": "unit-388739",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "current_address_book_code",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00"
+        }
+      ],
+      "audits_covering": [
+        "audit-4639"
+      ],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
       "is_live": true,
-      "effective_deploy_date": "2025-12-22 18:37:11+03",
+      "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "own_supporting",
+      "surface_confidence": null,
+      "surface_exclusion_reason": null,
+      "surface_evidence": null,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb72db4e3bdf013b6386e3e17a5a999230a9a7f98",
+      "deployment_unit": "unit-388746",
+      "deployment_unit_proxy_count": 0,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Mainstreet",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb72db4e3bdf013b6386e3e17a5a999230a9a7f98",
+          "deployment_unit": "unit-388746",
+          "deployment_unit_proxy_count": 0,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "current_address_book_code",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00"
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "own_supporting",
+      "surface_confidence": null,
+      "surface_exclusion_reason": null,
+      "surface_evidence": null,
+      "effective_deploy_date": null,
       "deploy_coverage_basis": null
     }
   ],
@@ -617,32 +776,308 @@
         "msUSDV2",
         "msUSDV2Satellite"
       ],
-      "matched_contracts": 6,
-      "scope_note": null,
+      "matched_contracts": 4,
+      "scope_note": "Extracted contract names from the audit report's scope and findings sections. The report covers Mainstreet v2 smart contracts including MainstreetMinter, StakedmsUSD, msUSDV2, msUSDV2Satellite, StaticPriceOracle, msUSDSilo, and LayerZero utility contracts.",
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "matched",
+      "scope_result_reason": "Extracted contract names from the audit report's scope and findings sections. The report covers Mainstreet v2 smart contracts including MainstreetMinter, StakedmsUSD, msUSDV2, msUSDV2Satellite, StaticPriceOracle, msUSDSilo, and LayerZero utility contracts.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 9,
+        "matched_own": 4,
+        "matched_own_proxies": 2,
+        "matched_own_live": 4,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 5,
+        "accepted_scope_rows": 4
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "MainstreetMinter",
+          "normalized_name": "mainstreetminter",
+          "file_path": "src/MainstreetMinter.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and findings reference this contract.",
+          "disposition": "matched_own",
+          "match_basis": "unique_name",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "chain_id": 1,
+              "address": "0x70c0c12fbb3acfff8e48abf027436971cf2ade14",
+              "name": "ERC1967Proxy",
+              "is_proxy": true,
+              "membership": "typed_address_book",
+              "inventory_class": "project_anchor",
+              "scope_match_eligible": true,
+              "coverage_denominator_eligible": true,
+              "brief_section": "own_surface",
+              "reason": "normalized_full_corpus:project_anchor:matcher_anchor",
+              "exclusion_reasons": [],
+              "source_urls": [
+                "https://mainstreet-finance.gitbook.io/mainstreet.finance/technical/key-addresses"
+              ],
+              "deploy_date": "2025-12-04 22:49:11+03",
+              "product_line": null,
+              "address_book_label": null,
+              "address_book_section": null,
+              "operational_liveness": "live",
+              "operational_liveness_evidence_kind": "current_address_book_code",
+              "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+              "operational_liveness_snapshot_status": "complete",
+              "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00",
+              "selected": true
+            }
+          ]
+        },
+        {
+          "extracted_name": "StakedmsUSD",
+          "normalized_name": "stakedmsusd",
+          "file_path": "src/v2/StakedmsUSD.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and finding WP-L4 references this contract.",
+          "disposition": "matched_own",
+          "match_basis": "unique_name",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "chain_id": 1,
+              "address": "0x890a5122aa1da30fec4286de7904ff808f0bd74a",
+              "name": "ERC1967Proxy",
+              "is_proxy": true,
+              "membership": "typed_address_book",
+              "inventory_class": "project_anchor",
+              "scope_match_eligible": true,
+              "coverage_denominator_eligible": true,
+              "brief_section": "own_surface",
+              "reason": "normalized_full_corpus:project_anchor:matcher_anchor",
+              "exclusion_reasons": [],
+              "source_urls": [
+                "https://mainstreet-finance.gitbook.io/mainstreet.finance/technical/key-addresses"
+              ],
+              "deploy_date": "2025-12-04 22:02:47+03",
+              "product_line": null,
+              "address_book_label": null,
+              "address_book_section": null,
+              "operational_liveness": "live",
+              "operational_liveness_evidence_kind": "current_address_book_code",
+              "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+              "operational_liveness_snapshot_status": "complete",
+              "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00",
+              "selected": true
+            }
+          ]
+        },
+        {
+          "extracted_name": "msUSDV2",
+          "normalized_name": "msusdv2",
+          "file_path": "src/v2/msUSDV2.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and findings WP-I6, WP-I7 reference this contract.",
+          "disposition": "matched_own",
+          "match_basis": "unique_name",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "chain_id": 1,
+              "address": "0x4ba01f22827018b4772cd326c7627fb4956a7c00",
+              "name": null,
+              "is_proxy": false,
+              "membership": "typed_address_book",
+              "inventory_class": "project_anchor",
+              "scope_match_eligible": true,
+              "coverage_denominator_eligible": true,
+              "brief_section": "own_surface",
+              "reason": "normalized_full_corpus:project_anchor:matcher_anchor",
+              "exclusion_reasons": [],
+              "source_urls": [
+                "https://mainstreet-finance.gitbook.io/mainstreet.finance/technical/key-addresses"
+              ],
+              "deploy_date": null,
+              "product_line": "Mainstreet",
+              "address_book_label": null,
+              "address_book_section": null,
+              "operational_liveness": "live",
+              "operational_liveness_evidence_kind": "current_address_book_code",
+              "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+              "operational_liveness_snapshot_status": "complete",
+              "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00",
+              "selected": true
+            }
+          ]
+        },
+        {
+          "extracted_name": "msUSDV2Satellite",
+          "normalized_name": "msusdv2satellite",
+          "file_path": "src/v2/msUSDV2Satellite.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and finding WP-I7 references this contract.",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "StaticPriceOracle",
+          "normalized_name": "staticpriceoracle",
+          "file_path": "src/StaticPriceOracle.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and finding WP-N8 references this contract.",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "msUSDSilo",
+          "normalized_name": "msusdsilo",
+          "file_path": "src/v2/msUSDSilo.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and finding WP-N9 references this contract.",
+          "disposition": "matched_own",
+          "match_basis": "unique_name",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "chain_id": 1,
+              "address": "0x6f188821283923953121f35d74e69a5e73ea6871",
+              "name": "msUSDSilo",
+              "is_proxy": false,
+              "membership": "typed_address_book",
+              "inventory_class": "project_anchor",
+              "scope_match_eligible": true,
+              "coverage_denominator_eligible": true,
+              "brief_section": "own_surface",
+              "reason": "normalized_full_corpus:project_anchor:matcher_anchor",
+              "exclusion_reasons": [],
+              "source_urls": [
+                "https://mainstreet-finance.gitbook.io/mainstreet.finance/technical/key-addresses"
+              ],
+              "deploy_date": "2025-12-04 22:49:11+03",
+              "product_line": null,
+              "address_book_label": null,
+              "address_book_section": null,
+              "operational_liveness": "live",
+              "operational_liveness_evidence_kind": "current_address_book_code",
+              "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+              "operational_liveness_snapshot_status": "complete",
+              "operational_liveness_observed_at": "2026-07-15 06:54:46.106+00",
+              "selected": true
+            }
+          ]
+        },
+        {
+          "extracted_name": "NonblockingLzAppUpgradeable",
+          "normalized_name": "nonblockinglzappupgradeable",
+          "file_path": "src/utils/lzApp/NonblockingLzAppUpgradeable.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and finding WP-I6 references this contract.",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "OFTCoreUpgradeable",
+          "normalized_name": "oftcoreupgradeable",
+          "file_path": "src/utils/lzApp/OFTCoreUpgradeable.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and finding WP-I7 references this contract.",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "OFTUpgradeable",
+          "normalized_name": "oftupgradeable",
+          "file_path": "src/utils/lzApp/OFTUpgradeable.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Listed in scope and finding WP-I6 references this contract.",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     }
   ],
   "auditor_coverage": [
     {
       "auditor": "WatchPug",
       "tier": 2,
-      "contracts_covered": 6,
+      "contracts_covered": 3,
       "coverage_pct": 50,
       "latest_audit": "2025-07"
     }
   ],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6665efde9f1916a9e16f7f955375ecd392b98b81",
+      "name": "FeeSilo",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x22eb4e61fe4d4e31113979e8b1f4377d46bc98f2",
+      "name": "msYBridger",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 7,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 12
+    "standard_library": 1,
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 6
+      "unique_name": 4
     },
     "extraction_confidence_counts": {
       "high": 1
@@ -650,7 +1085,32 @@
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],
-    "inherited_remapped_matches": []
+    "audit_scope_outcomes": [
+      {
+        "audit_id": 4639,
+        "report_name": "Mainstreet_v2_Audit_Report_by_WatchPug.pdf",
+        "status": "matched",
+        "reason": "Extracted contract names from the audit report's scope and findings sections. The report covers Mainstreet v2 smart contracts including MainstreetMinter, StakedmsUSD, msUSDV2, msUSDV2Satellite, StaticPriceOracle, msUSDSilo, and LayerZero utility contracts.",
+        "operator_review": null
+      }
+    ],
+    "inherited_remapped_matches": [],
+    "analysis_disposition_counts": {
+      "extracted_references": 9,
+      "matched_own": 4,
+      "matched_own_proxies": 2,
+      "matched_own_live": 4,
+      "matched_own_inactive": 0,
+      "matched_own_uninitialized": 0,
+      "matched_own_liveness_unknown": 0,
+      "matched_third_party_or_infra": 0,
+      "matched_excluded_inventory": 0,
+      "matched_unclassified_address_book": 0,
+      "ambiguous": 0,
+      "unmatched": 5,
+      "accepted_scope_rows": 4
+    }
   },
-  "active_bug_bounty": null
+  "active_bug_bounty": null,
+  "out_of_scope": null
 }

@@ -1,0 +1,184 @@
+{
+  "component": "UniswapV3Pool-3",
+  "main_contract": "UniswapV3Pool",
+  "source_entry_count": 99,
+  "source_file_count": 99,
+  "source_path_remaps": [
+    {
+      "original_path": "contracts/NoDelegateCall.sol",
+      "exported_path": "__audit_export_path_conflicts__/0032-0bbfd1415dfc-NoDelegateCall.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/UniswapV3Pool.sol",
+      "exported_path": "__audit_export_path_conflicts__/0033-30c135842232-UniswapV3Pool.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/interfaces/IERC20Minimal.sol",
+      "exported_path": "__audit_export_path_conflicts__/0034-a61a1975c94d-IERC20Minimal.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/interfaces/IUniswapV3Factory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0035-1d82acb450ea-IUniswapV3Factory.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/interfaces/IUniswapV3Pool.sol",
+      "exported_path": "__audit_export_path_conflicts__/0036-c7f0614c573d-IUniswapV3Pool.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/interfaces/IUniswapV3PoolDeployer.sol",
+      "exported_path": "__audit_export_path_conflicts__/0037-d1884d0f7586-IUniswapV3PoolDeployer.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/interfaces/callback/IUniswapV3FlashCallback.sol",
+      "exported_path": "__audit_export_path_conflicts__/0038-f09e4251d2ff-IUniswapV3FlashCallback.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/interfaces/callback/IUniswapV3MintCallback.sol",
+      "exported_path": "__audit_export_path_conflicts__/0039-3f645183ecbc-IUniswapV3MintCallback.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/interfaces/callback/IUniswapV3SwapCallback.sol",
+      "exported_path": "__audit_export_path_conflicts__/0040-14e031154c47-IUniswapV3SwapCallback.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/interfaces/pool/IUniswapV3PoolActions.sol",
+      "exported_path": "__audit_export_path_conflicts__/0041-fce7d21460b9-IUniswapV3PoolActions.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol",
+      "exported_path": "__audit_export_path_conflicts__/0042-a95e2ca14652-IUniswapV3PoolDerivedState.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/interfaces/pool/IUniswapV3PoolEvents.sol",
+      "exported_path": "__audit_export_path_conflicts__/0043-308474e69ad6-IUniswapV3PoolEvents.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/interfaces/pool/IUniswapV3PoolImmutables.sol",
+      "exported_path": "__audit_export_path_conflicts__/0044-adc5dcd4469d-IUniswapV3PoolImmutables.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol",
+      "exported_path": "__audit_export_path_conflicts__/0045-08cbd9f0633a-IUniswapV3PoolOwnerActions.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/interfaces/pool/IUniswapV3PoolState.sol",
+      "exported_path": "__audit_export_path_conflicts__/0046-fce69bf03c5b-IUniswapV3PoolState.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/BitMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0047-2395b19b4b60-BitMath.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/FixedPoint128.sol",
+      "exported_path": "__audit_export_path_conflicts__/0048-653df220f3a0-FixedPoint128.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/FixedPoint96.sol",
+      "exported_path": "__audit_export_path_conflicts__/0049-f096c48ae5b3-FixedPoint96.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/LiquidityMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0050-ec4f2abc4ef6-LiquidityMath.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/LowGasSafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0051-a9656924cf82-LowGasSafeMath.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/SafeCast.sol",
+      "exported_path": "__audit_export_path_conflicts__/0052-1b1aa0899386-SafeCast.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/SqrtPriceMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0053-b28c7b26a4b6-SqrtPriceMath.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/SwapMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0054-9aad202b070a-SwapMath.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/TickBitmap.sol",
+      "exported_path": "__audit_export_path_conflicts__/0055-673e456ce852-TickBitmap.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/TransferHelper.sol",
+      "exported_path": "__audit_export_path_conflicts__/0056-0e5c098e4b2f-TransferHelper.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/UnsafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0057-34008071bf4c-UnsafeMath.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/FullMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0058-3fc32c4847f0-FullMath.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/Oracle.sol",
+      "exported_path": "__audit_export_path_conflicts__/0059-fcd129173c86-Oracle.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/Position.sol",
+      "exported_path": "__audit_export_path_conflicts__/0060-e049edbfc60f-Position.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/Tick.sol",
+      "exported_path": "__audit_export_path_conflicts__/0061-631ad8197032-Tick.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/libraries/TickMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0062-50574a511f96-TickMath.sol",
+      "reason": "case_or_duplicate_collision"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UniswapV3Pool-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x01f40d27b1a4379bfcb50aa1d20720219cdd21ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391137"
+    }
+  ]
+}

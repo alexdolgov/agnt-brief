@@ -1,7 +1,15 @@
 {
   "component": "GDACurve",
   "main_contract": "GDACurve",
+  "source_entry_count": 26,
   "source_file_count": 26,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GDACurve\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -14,7 +22,9 @@
       "address": "0x1fd5876d4a3860eb0159055a3b7cb79fdfff6b67",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404128"
     }
   ]
 }

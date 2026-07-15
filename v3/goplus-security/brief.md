@@ -1,49 +1,99 @@
 # Agentic Audit Brief: GoPlus Security
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 2 (0 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: GoPlus Security (`goplus-security`)
 - Website: [https://gopluslabs.io](https://gopluslabs.io)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:56.784Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
-- Chains: arbitrum, base, bsc, ethereum
-- Contract surface: 83 unique implementations (92 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: ethereum
+- Contract surface: 14 unique implementations (14 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $25,546,188.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Token Locker. Structurally: 58 project-authored contract(s) across 4 chain(s); 9 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for GoPlus Security in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 6 functional families. Its contracts share 16 common project-authored base contract(s) (dsmath, dsauth, dsauthevents). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 14 contracts are derived from known codebases. 14 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x0845f9...cd7184`, chain 1)
+- UnnamedContract (`0x0a33f7...07e410`, chain 1)
+- UnnamedContract (`0x24bfd4...d35024`, chain 1)
+- UnnamedContract (`0x35e575...b5fa07`, chain 1)
+- UnnamedContract (`0x4eaa7c...517e0e`, chain 1)
+- UnnamedContract (`0x6915dd...6cdd3a`, chain 1)
+- UnnamedContract (`0x7ed92f...e3ddb0`, chain 1)
+- UnnamedContract (`0x91228c...536a32`, chain 1)
+- UnnamedContract (`0xa3f64d...c7a366`, chain 1)
+- UnnamedContract (`0xbe5efb...a2e1fd`, chain 1)
+- UnnamedContract (`0xc25470...064253`, chain 1)
+- UnnamedContract (`0xd55bda...5cf17f`, chain 1)
+- UnnamedContract (`0xd5d7fb...4f8c31`, chain 1)
+- UnnamedContract (`0xe96a24...d35c6b`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 167; live-surface contracts included: 92 (21 live, 71 unknown).
-- Excluded by liveness: 75 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 14/32 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/12 (0.0%)
-- Deployed-live implementations: 12 of 83 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/12
-- Verified + Unaudited implementations: 12
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 14 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 14 of 14 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 71
-- Unique implementations: 83
-- Raw deployments: 92
-- Audits discovered: 2 (2 direct, 0 inherited from forked code)
+- Unverified implementations: 14
+- Unique implementations: 14
+- Raw deployments: 14
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-01 (aging)
-- Audit staleness (calendar age): 0 fresh, 2 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
@@ -57,22 +107,9 @@ The protocol comprises 6 functional families. Its contracts share 16 common proj
 
 - None
 
-### ⚠️ Verified + Unaudited (12)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| FiatTokenV2_2 | token | ethereum | n/a | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | bsc | n/a | [`0x34ebdd...23e34f`](./contracts/bsc-56/0x34ebddd30ccbd3f1e385b41bdadb30412323e34f/) | ⚠️ Unaudited |
-| GPS | unknown | base | n/a | [`0x0c1dc7...a0dca5`](./contracts/base-8453/0x0c1dc73159e30c4b06170f2593d3118968a0dca5/) | ⚠️ Unaudited |
-| LockFactory | registry | base | n/a | [`0x043f40...931a64`](./contracts/base-8453/0x043f4036202c54da27583a996a8c4b9471931a64/) | ⚠️ Unaudited |
-| RevenuePool | core_logic | bsc | n/a | [`0x648d7f...97706c`](./contracts/bsc-56/0x648d7f4ad39186949e37e9223a152435ab97706c/) | ⚠️ Unaudited |
-| SafeTokenFactory | registry | base | n/a | 2 deployments: base [`0x0d648e...579027`](./contracts/base-8453/0x0d648ed434f95f812e6a0e9b74825bad03579027/); arbitrum [`0x0d648e...579027`](./contracts/arbitrum-42161/0x0d648ed434f95f812e6a0e9b74825bad03579027/) | ⚠️ Unaudited |
-| StakingLock | unknown | bsc | n/a | [`0xeca8d7...ffee78`](./contracts/bsc-56/0xeca8d71c1f667f5c122b72af5f6e87b1dcffee78/) | ⚠️ Unaudited |
-| TokenLocker | token | ethereum | n/a | 4 deployments: ethereum [`0xf17a08...dec04b`](./contracts/ethereum-1/0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b/); bsc [`0xf17a08...dec04b`](./contracts/bsc-56/0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b/); base [`0xf17a08...dec04b`](./contracts/base-8453/0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b/); arbitrum [`0xf17a08...dec04b`](./contracts/arbitrum-42161/0xf17a08a7d41f53b24ad07eb322cbbda2ebdec04b/) | ⚠️ Unaudited |
-| TokenTemplate | token | arbitrum | n/a | [`0x24a9eb...bbfa0d`](./contracts/arbitrum-42161/0x24a9eb23de8e6f59bdb981b03e847f0f3abbfa0d/) | ⚠️ Unaudited |
-| UniV3LPLocker | unknown | ethereum | n/a | 4 deployments: ethereum [`0x25c9c4...a9bd52`](./contracts/ethereum-1/0x25c9c4b56e820e0dea438b145284f02d9ca9bd52/); bsc [`0x25c9c4...a9bd52`](./contracts/bsc-56/0x25c9c4b56e820e0dea438b145284f02d9ca9bd52/); base [`0x25c9c4...a9bd52`](./contracts/base-8453/0x25c9c4b56e820e0dea438b145284f02d9ca9bd52/); arbitrum [`0x25c9c4...a9bd52`](./contracts/arbitrum-42161/0x25c9c4b56e820e0dea438b145284f02d9ca9bd52/) | ⚠️ Unaudited |
-| UniV4LiquidityLocker | unknown | base | n/a | 3 deployments: ethereum `0x83eab3...53f7d7`; base [`0x4f26fa...95519e`](./contracts/base-8453/0x4f26fa33bce395d50671cbc8c7a5d3c55a95519e/); base `0xf5cdad...9fcca1` | ⚠️ Unaudited |
-| WETH9 | token | ethereum | n/a | [`0xc02aaa...756cc2`](./contracts/ethereum-1/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,90 +123,46 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (71)
+### ❓ Unverified (14)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x0cbd55...390940` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x0d126c...c00c60` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x0d64d8...50fbd1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x102560...5df38b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x127f3c...a9199b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x15f73a...6f5605` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x183739...a98908` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1ff103...26f4da` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x20826b...363058` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x20bdda...9a55b7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x230557...37b15e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x29ec7b...cc3c62` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2c6f75...35b507` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2ff889...b8854d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x31d687...cda740` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x335926...f90c3a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x362b56...9dfce6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x384c53...293036` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3ad977...98f8a1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3bd1ee...3ca5af` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x402fa0...2584b1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x411ea3...9e93b9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x46695c...003ee7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x471208...0a8732` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4c209a...223d28` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4c9ad5...1c9acd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x56de9e...fa51a0` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5b4997...5c76c8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5b4ba4...789c09` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x76d8a5...b14646` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7cf03c...55ea3f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7d3701...6b4877` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x84f162...cbf197` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x897c79...ebc249` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x89f800...389aa3` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8b00a8...af293b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8cbd1d...aeed7a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x92bfd0...fb3e9a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9843e5...bd50ac` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x98bc79...4cf142` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9a4cd4...acfd6a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9e978e...73fdd1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9f4ef8...57df75` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9f6de3...1f2423` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9fcb31...35be6a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa71a6c...905627` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc61d91...f4a581` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc77841...0cd5ab` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc882b9...2b0d9d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xcbc21c...efe931` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd3f3c5...8a8a89` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe6eaa2...a68e1d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe81930...a59891` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xef0594...5e8173` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xefa940...6de484` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf50db8...785f99` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf68393...8fbf14` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf85903...287c11` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf88cbc...c08ff4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xff0eb5...489010` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x03b957...c440ba` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x08aa22...22420c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x0a6d51...0054ee` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x50727f...c24197` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x71fed2...75cffd` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x9594fc...9489fb` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xaf41fa...da9e29` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xb988ba...4db763` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xc0d55d...13660c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xc75cd1...4ccb63` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd9a671...11f156` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387060 | `0x0845f9...cd7184` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387061 | `0x0a33f7...07e410` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387063 | `0x24bfd4...d35024` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387065 | `0x35e575...b5fa07` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387067 | `0x4eaa7c...517e0e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387072 | `0x6915dd...6cdd3a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387075 | `0x7ed92f...e3ddb0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387077 | `0x91228c...536a32` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387078 | `0xa3f64d...c7a366` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387083 | `0xbe5efb...a2e1fd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387084 | `0xc25470...064253` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387086 | `0xd55bda...5cf17f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387087 | `0xd5d7fb...4f8c31` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387089 | `0xe96a24...d35c6b` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [SafeToken+Protocol+-+SlowMist+Audit+Report.pdf](https://static2.gopluslabs.io/simg/SafeToken+Protocol+-+SlowMist+Audit+Report.pdf) | SlowMist | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
-| [SlowMist Audit Report - GoPlus Security(GPS).pdf (also discovered via alternate URL)](https://raw.githubusercontent.com/GoPlusSecurity/GPS-AUDIT/main/SlowMist%20Audit%20Report%20-%20GoPlus%20Security(GPS).pdf) | SlowMist | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [SlowMist Audit Report - GoPlus Security(GPS).pdf (also discovered via alternate URL)](https://raw.githubusercontent.com/GoPlusSecurity/GPS-AUDIT/main/SlowMist%20Audit%20Report%20-%20GoPlus%20Security(GPS).pdf) | SlowMist | Audit | 2025-01 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [21282] SlowMist Audit Report - GoPlus Security(GPS).pdf — no match: Only one contract GPS is in scope, as shown in the source code snippet.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| SlowMist Audit Report - GoPlus Security(GPS).pdf | GPS | unmatched — not counted | — | contract GPS is ERC20, ERC20Permit | no |
 
 ## Coverage Gaps
 
@@ -184,20 +177,21 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 83 |
+| needs_review | 14 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 1 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1
 - Match method counts: n/a
 
 Zero-match audit list:
 
-- [21281] SafeToken+Protocol+-+SlowMist+Audit+Report.pdf
 - [21282] SlowMist Audit Report - GoPlus Security(GPS).pdf
 
 Fork inheritance lineage and inherited audits are included when available.

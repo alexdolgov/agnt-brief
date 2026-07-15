@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.8.18;
+pragma solidity ^0.8.11;
 
 import "../libraries/LoanLibrary.sol";
 
@@ -17,12 +17,8 @@ import "../libraries/LoanLibrary.sol";
 // ==================================== ORIGINATION CONTROLLER ======================================
 /// @notice All errors prefixed with OC_, to separate from other contracts in the protocol.
 
-/**
- * @notice Zero address passed in where not allowed.
- *
- * @param addressType                  The name of the parameter for which a zero address was provided.
- */
-error OC_ZeroAddress(string addressType);
+/// @notice Zero address passed in where not allowed.
+error OC_ZeroAddress();
 
 /**
  * @notice Ensure valid loan state for loan lifceycle operations.
@@ -39,30 +35,27 @@ error OC_InvalidState(LoanLibrary.LoanState state);
 error OC_LoanDuration(uint256 durationSecs);
 
 /**
- * @notice Interest must be greater than 0.01% and less than 10,000%. (interestRate / 1e18 >= 1)
+ * @notice Interest must be greater than 0.01%. (interestRate / 1e18 >= 1)
  *
  * @param interestRate                  InterestRate with 1e18 multiplier.
  */
 error OC_InterestRate(uint256 interestRate);
 
 /**
+ * @notice Number of installment periods must be greater than 1 and less than or equal to 1000.
+ *
+ * @param numInstallments               Number of installment periods in loan.
+ */
+error OC_NumberInstallments(uint256 numInstallments);
+
+/**
  * @notice One of the predicates for item verification failed.
  *
- * @param borrower                      The address of the borrower.
- * @param lender                        The address of the lender.
  * @param verifier                      The address of the verifier contract.
- * @param collateralAddress             The address of the collateral token.
- * @param collateralId                  The token ID of the collateral.
  * @param data                          The verification data (to be parsed by verifier).
+ * @param vault                         The user's vault subject to verification.
  */
-error OC_PredicateFailed(
-    address borrower,
-    address lender,
-    address verifier,
-    address collateralAddress,
-    uint256 collateralId,
-    bytes data
-);
+error OC_PredicateFailed(address verifier, bytes data, address vault);
 
 /**
  * @notice The predicates array is empty.
@@ -107,13 +100,6 @@ error OC_InvalidVerifier(address verifier);
 error OC_CallerNotParticipant(address caller);
 
 /**
- * @notice Signer is attempting to take the wrong side of the loan.
- *
- * @param signer                       The address of the external signer.
- */
-error OC_SideMismatch(address signer);
-
-/**
  * @notice Two related parameters for batch operations did not match in length.
  */
 error OC_BatchLengthMismatch();
@@ -155,37 +141,8 @@ error OC_RolloverCollateralMismatch(
     uint256 newCollateralId
 );
 
-/**
- * @notice Provided payable currency address is not approved for lending.
- *
- * @param payableCurrency       ERC20 token address supplied in loan terms.
- */
-error OC_InvalidCurrency(address payableCurrency);
-
-/**
- * @notice Provided collateral address is not approved for lending.
- *
- * @param collateralAddress       ERC721 or ERC1155 token address supplied in loan terms.
- */
-error OC_InvalidCollateral(address collateralAddress);
-
-/**
- * @notice Provided token array does not hold any token addresses.
- */
-error OC_ZeroArrayElements();
-
-/**
- * @notice Provided token array holds more than 50 token addresses.
- */
-error OC_ArrayTooManyElements();
-
 // ==================================== ITEMS VERIFIER ======================================
 /// @notice All errors prefixed with IV_, to separate from other contracts in the protocol.
-
-/**
- * @notice The predicate payload was decoded successfully, but list of predicates is empty.
- */
-error IV_NoPredicates();
 
 /**
  * @notice Provided SignatureItem is missing an address.
@@ -202,52 +159,31 @@ error IV_ItemMissingAddress();
 error IV_InvalidCollateralType(address asset, uint256 cType);
 
 /**
- * @notice Provided signature item with no required amount. For single ERC721s, specify 1.
+ * @notice Provided ERC1155 signature item is requiring a non-positive amount.
  *
  * @param asset                         The NFT contract being checked.
  * @param amount                        The amount provided (should be 0).
  */
-error IV_NoAmount(address asset, uint256 amount);
+error IV_NonPositiveAmount1155(address asset, uint256 amount);
 
 /**
- * @notice Provided a wildcard for a non-ERC721.
+ * @notice Provided ERC1155 signature item is requiring an invalid token ID.
  *
  * @param asset                         The NFT contract being checked.
- */
-error IV_InvalidWildcard(address asset);
-
-/**
- * @notice The provided token ID is out of bounds for the given collection.
- *
  * @param tokenId                       The token ID provided.
  */
-error IV_InvalidTokenId(int256 tokenId);
+error IV_InvalidTokenId1155(address asset, int256 tokenId);
 
 /**
- * @notice The provided project ID does not exist on the target contract. Only
- *         used for ArtBlocks.
+ * @notice Provided ERC20 signature item is requiring a non-positive amount.
  *
- * @param projectId                     The project ID provided.
- * @param nextProjectId                 The contract's reported nextProjectId.
+ * @param asset                         The NFT contract being checked.
+ * @param amount                        The amount provided (should be 0).
  */
-error IV_InvalidProjectId(uint256 projectId, uint256 nextProjectId);
-
-/**
- * @notice The provided collateralId converts to a vault, but
- *         the vault's address does not convert back to the provided collateralId
- *         when casted to a uint256.
- */
-error IV_InvalidCollateralId(uint256 collateralId);
+error IV_NonPositiveAmount20(address asset, uint256 amount);
 
 // ==================================== REPAYMENT CONTROLLER ======================================
 /// @notice All errors prefixed with RC_, to separate from other contracts in the protocol.
-
-/**
- * @notice Zero address passed in where not allowed.
- *
- * @param addressType                  The name of the parameter for which a zero address was provided.
- */
-error RC_ZeroAddress(string addressType);
 
 /**
  * @notice Could not dereference loan from loan ID.
@@ -264,28 +200,67 @@ error RC_CannotDereference(uint256 target);
 error RC_InvalidState(LoanLibrary.LoanState state);
 
 /**
+ * @notice Repayment has already been completed for this loan without installments.
+ */
+error RC_NoPaymentDue();
+
+/**
  * @notice Caller is not the owner of lender note.
  *
- * @param lender                     The owner of the lender note.
  * @param caller                     Msg.sender of the function call.
  */
-error RC_OnlyLender(address lender, address caller);
+error RC_OnlyLender(address caller);
+
+/**
+ * @notice Loan has not started yet.
+ *
+ * @param startDate                 block timestamp of the startDate of loan stored in LoanData.
+ */
+error RC_BeforeStartDate(uint256 startDate);
+
+/**
+ * @notice Loan terms do not have any installments, use repay for repayments.
+ *
+ * @param numInstallments           Number of installments returned from LoanTerms.
+ */
+error RC_NoInstallments(uint256 numInstallments);
+
+/**
+ * @notice Loan terms have installments, use repaypart or repayPartMinimum for repayments.
+ *
+ * @param numInstallments           Number of installments returned from LoanTerms.
+ */
+error RC_HasInstallments(uint256 numInstallments);
+
+/**
+ * @notice No interest payment or late fees due.
+ *
+ * @param amount                    Minimum interest plus late fee amount returned
+ *                                  from minimum payment calculation.
+ */
+error RC_NoMinPaymentDue(uint256 amount);
+
+/**
+ * @notice Repaid amount must be larger than zero.
+ */
+error RC_RepayPartZero();
+
+/**
+ * @notice Amount paramater less than the minimum amount due.
+ *
+ * @param amount                    Amount function call parameter.
+ * @param minAmount                 The minimum amount due.
+ */
+error RC_RepayPartLTMin(uint256 amount, uint256 minAmount);
 
 // ==================================== Loan Core ======================================
 /// @notice All errors prefixed with LC_, to separate from other contracts in the protocol.
 
-/**
- * @notice Zero address passed in where not allowed.
- *
- * @param addressType                  The name of the parameter for which a zero address was provided.
- */
-error LC_ZeroAddress(string addressType);
+/// @notice Zero address passed in where not allowed.
+error LC_ZeroAddress();
 
 /// @notice Borrower address is same as lender address.
 error LC_ReusedNote();
-
-/// @notice Zero amount passed in where not allowed.
-error LC_ZeroAmount();
 
 /**
  * @notice Check collateral is not already used in a active loan.
@@ -294,40 +269,6 @@ error LC_ZeroAmount();
  * @param collateralId                  ID of the collateral token.
  */
 error LC_CollateralInUse(address collateralAddress, uint256 collateralId);
-
-/**
- * @notice The reported settlements are invalid, and LoanCore would lose tokens
- *         attempting to perform the requested operations.
- *
- *
- * @param payout                        Amount of tokens to be paid out.
- * @param collected                     Amount of tokens to collect - should be fewer than payout.
- */
-error LC_CannotSettle(uint256 payout, uint256 collected);
-
-/**
- * @notice User attempted to withdraw a pending balance that was in excess
- *         of what is available.
- *
- * @param amount                        Amount of tokens to be withdrawn.
- * @param available                     Amount of tokens available to withdraw.
- */
-error LC_CannotWithdraw(uint256 amount, uint256 available);
-
-/**
- * @notice Two arrays were provided that must be of matching length, but were not.
- *
- */
-error LC_ArrayLengthMismatch();
-
-/**
- * @notice A proposed affiliate split was submitted that is over the maximum.
- *
- * @param splitBps                     The proposed affiliate split.
- * @param maxSplitBps                  The maximum allowed affiliate split.
- *
- */
-error LC_OverMaxSplit(uint96 splitBps, uint96 maxSplitBps);
 
 /**
  * @notice Ensure valid loan state for loan lifceycle operations.
@@ -352,39 +293,32 @@ error LC_NotExpired(uint256 dueDate);
 error LC_NonceUsed(address user, uint160 nonce);
 
 /**
- * @notice Protocol attempted to set an affiliate code which already exists. Affiliate
- *         codes are immutable.
+ * @notice Installment loan has not defaulted.
+ */
+error LC_LoanNotDefaulted();
+
+// ================================== Full Insterest Amount Calc ====================================
+/// @notice All errors prefixed with FIAC_, to separate from other contracts in the protocol.
+
+/**
+ * @notice Interest must be greater than 0.01%. (interestRate / 1e18 >= 1)
  *
- * @param affiliateCode                 The affiliate code being set.
+ * @param interestRate                  InterestRate with 1e18 multiplier.
  */
-error LC_AffiliateCodeAlreadySet(bytes32 affiliateCode);
-
-/**
- * @notice Specified note token ID does not have a redeemable receipt.
- *
- * @param loanId                     The loanId being checked.
- */
-error LC_NoReceipt(uint256 loanId);
-
-/**
- * @notice Only Loan Core contract can call this function.
- */
-error LC_CallerNotLoanCore();
-
-/**
- * @notice The loan core contract has been irreversibly shut down.
- */
-error LC_Shutdown();
+error FIAC_InterestRate(uint256 interestRate);
 
 // ==================================== Promissory Note ======================================
 /// @notice All errors prefixed with PN_, to separate from other contracts in the protocol.
 
 /**
- * @notice Zero address passed in where not allowed.
- *
- * @param addressType                  The name of the parameter for which a zero address was provided.
+ * @notice Deployer is allowed to initialize roles. Caller is not deployer.
  */
-error PN_ZeroAddress(string addressType);
+error PN_CannotInitialize();
+
+/**
+ * @notice Roles have been initialized.
+ */
+error PN_AlreadyInitialized();
 
 /**
  * @notice Caller of mint function must have the MINTER_ROLE in AccessControl.
@@ -401,47 +335,14 @@ error PN_MintingRole(address caller);
 error PN_BurningRole(address caller);
 
 /**
- * @notice Non-existant token id provided as argument.
- *
- * @param tokenId                       The ID of the token to lookup the URI for.
+ * @notice No token transfers while contract is in paused state.
  */
-error PN_DoesNotExist(uint256 tokenId);
+error PN_ContractPaused();
 
 // ==================================== Fee Controller ======================================
 /// @notice All errors prefixed with FC_, to separate from other contracts in the protocol.
 
 /**
- * @notice Caller attempted to set a lending fee which is larger than the global maximum.
+ * @notice Caller attempted to set a fee which is larger than the global maximum.
  */
-error FC_LendingFeeOverMax(bytes32 selector, uint256 fee, uint256 maxFee);
-
-/**
- * @notice Caller attempted to set a vault mint fee which is larger than the global maximum.
- */
-error FC_VaultMintFeeOverMax(uint256 fee, uint256 maxFee);
-
-// ==================================== ERC721 Permit ======================================
-/// @notice All errors prefixed with ERC721P_, to separate from other contracts in the protocol.
-
-/**
- * @notice Deadline for the permit has expired.
- *
- * @param deadline                      Permit deadline parameter as a timestamp.
- */
-error ERC721P_DeadlineExpired(uint256 deadline);
-
-/**
- * @notice Address of the owner to also be the owner of the tokenId.
- *
- * @param owner                        Owner parameter for the function call.
- */
-error ERC721P_NotTokenOwner(address owner);
-
-/**
- * @notice Invalid signature.
- *
- * @param signer                        Signer recovered from ECDSA sugnature hash.
- */
-error ERC721P_InvalidSignature(address signer);
-
-
+error FC_FeeTooLarge();

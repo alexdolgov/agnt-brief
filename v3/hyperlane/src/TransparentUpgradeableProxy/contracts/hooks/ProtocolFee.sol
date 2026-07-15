@@ -32,10 +32,6 @@ contract ProtocolFee is AbstractPostDispatchHook, Ownable {
     using Address for address payable;
     using Message for bytes;
 
-    event ProtocolFeeSet(uint256 protocolFee);
-    event BeneficiarySet(address beneficiary);
-    event ProtocolFeePaid(address indexed sender, uint256 fee);
-
     // ============ Constants ============
 
     /// @notice The maximum protocol fee that can be set.
@@ -66,7 +62,7 @@ contract ProtocolFee is AbstractPostDispatchHook, Ownable {
 
     /// @inheritdoc IPostDispatchHook
     function hookType() external pure override returns (uint8) {
-        return uint8(IPostDispatchHook.HookTypes.PROTOCOL_FEE);
+        return uint8(IPostDispatchHook.Types.PROTOCOL_FEE);
     }
 
     /**
@@ -104,9 +100,12 @@ contract ProtocolFee is AbstractPostDispatchHook, Ownable {
             "ProtocolFee: insufficient protocol fee"
         );
 
-        emit ProtocolFeePaid(message.senderAddress(), protocolFee);
-
-        _refund(metadata, message, msg.value - protocolFee);
+        uint256 refund = msg.value - protocolFee;
+        if (refund > 0) {
+            payable(metadata.refundAddress(message.senderAddress())).sendValue(
+                refund
+            );
+        }
     }
 
     /// @inheritdoc AbstractPostDispatchHook
@@ -127,7 +126,6 @@ contract ProtocolFee is AbstractPostDispatchHook, Ownable {
             "ProtocolFee: exceeds max protocol fee"
         );
         protocolFee = _protocolFee;
-        emit ProtocolFeeSet(_protocolFee);
     }
 
     /**
@@ -137,6 +135,5 @@ contract ProtocolFee is AbstractPostDispatchHook, Ownable {
     function _setBeneficiary(address _beneficiary) internal {
         require(_beneficiary != address(0), "ProtocolFee: invalid beneficiary");
         beneficiary = _beneficiary;
-        emit BeneficiarySet(_beneficiary);
     }
 }

@@ -2,6 +2,7 @@
 pragma solidity ^0.8.26;
 
 import {Flaunch} from '@flaunch/Flaunch.sol';
+import {IFeeEscrowRegistry} from '@flaunch-interfaces/IFeeEscrowRegistry.sol';
 import {IManagerPermissions} from '@flaunch-interfaces/IManagerPermissions.sol';
 
 
@@ -104,5 +105,12 @@ interface ITreasuryManager {
      * @param _newManagerOwner The new address that will become the owner
      */
     function transferManagerOwnership(address _newManagerOwner) external;
+
+    /**
+     * Returns the fee escrow registry for the treasury manager.
+     *
+     * @return The fee escrow registry for the treasury manager
+     */
+    function feeEscrowRegistry() external view returns (IFeeEscrowRegistry);
 
 }

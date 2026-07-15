@@ -2,7 +2,7 @@
  * Created by Pragma Labs
  * SPDX-License-Identifier: BUSL-1.1
  */
-pragma solidity ^0.8.34;
+pragma solidity ^0.8.0;
 
 import { Owned } from "../../lib/accounts-v2/lib/solmate/src/auth/Owned.sol";
 
@@ -30,6 +30,13 @@ abstract contract Guardian is Owned {
     error OnlyGuardian();
 
     /* //////////////////////////////////////////////////////////////
+                                EVENTS
+    ////////////////////////////////////////////////////////////// */
+
+    event GuardianChanged(address indexed user, address indexed newGuardian);
+    event PauseFlagsUpdated(bool pauseUpdate);
+
+    /* //////////////////////////////////////////////////////////////
                                 MODIFIERS
     ////////////////////////////////////////////////////////////// */
 
@@ -37,24 +44,16 @@ abstract contract Guardian is Owned {
      * @dev Only guardians can call functions with this modifier.
      */
     modifier onlyGuardian() {
-        _onlyGuardian();
-        _;
-    }
-
-    function _onlyGuardian() internal view {
         if (msg.sender != guardian) revert OnlyGuardian();
+        _;
     }
 
     /**
      * @dev Throws if the Asset Manager is paused.
      */
     modifier whenNotPaused() {
-        _whenNotPaused();
-        _;
-    }
-
-    function _whenNotPaused() internal view {
         if (paused) revert Paused();
+        _;
     }
 
     /* //////////////////////////////////////////////////////////////
@@ -75,7 +74,7 @@ abstract contract Guardian is Owned {
      * @param guardian_ The address of the new guardian.
      */
     function changeGuardian(address guardian_) external onlyOwner {
-        guardian = guardian_;
+        emit GuardianChanged(msg.sender, guardian = guardian_);
     }
 
     /* //////////////////////////////////////////////////////////////
@@ -86,7 +85,7 @@ abstract contract Guardian is Owned {
      * @notice Pauses the Asset Manager.
      */
     function pause() external onlyGuardian whenNotPaused {
-        paused = true;
+        emit PauseFlagsUpdated(paused = true);
     }
 
     /**
@@ -94,6 +93,6 @@ abstract contract Guardian is Owned {
      * @param paused_ Flag indicating if the Asset Manager is paused.
      */
     function setPauseFlag(bool paused_) external onlyOwner {
-        paused = paused_;
+        emit PauseFlagsUpdated(paused = paused_);
     }
 }

@@ -1,7 +1,15 @@
 {
   "component": "JBDirectory",
   "main_contract": "JBDirectory",
+  "source_entry_count": 20,
   "source_file_count": 20,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/JBDirectory\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x0061e516886a0540f63157f112c0588ee0651dcf",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395616"
     },
     {
       "chain": "base",
@@ -20,7 +30,9 @@
       "address": "0x0061e516886a0540f63157f112c0588ee0651dcf",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395625"
     },
     {
       "chain": "arbitrum",
@@ -28,7 +40,9 @@
       "address": "0x0061e516886a0540f63157f112c0588ee0651dcf",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395633"
     }
   ]
 }

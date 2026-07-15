@@ -5,6 +5,7 @@ import {EnumerableSet} from '@openzeppelin/contracts/utils/structs/EnumerableSet
 
 import {PoolId} from '@uniswap/v4-core/src/types/PoolId.sol';
 
+import {ManagerFeeEscrow} from '@flaunch/libraries/ManagerFeeEscrow.sol';
 import {TreasuryManagerFactory} from '@flaunch/treasury/managers/TreasuryManagerFactory.sol';
 
 import {ITreasuryManager} from '@flaunch-interfaces/ITreasuryManager.sol';
@@ -110,7 +111,7 @@ abstract contract SupportsCreatorTokens {
         // `poolId` function as this was introduced in Flaunch 1.1. For this reason, we must manually apply the same helper
         // function logic to determine it.
         PoolId poolId = _flaunchToken.flaunch.positionManager().poolKey(_flaunchToken.flaunch.memecoin(_flaunchToken.tokenId)).toId();
-        _totalFeeAllocation[poolId] = _treasuryManagerFactory.feeEscrow().totalFeesAllocated(poolId);
+        _totalFeeAllocation[poolId] = ManagerFeeEscrow.totalPoolFees(poolId);
 
         // Increment our internalId counter and set up our internal mappings
         ++_nextInternalId;
@@ -167,7 +168,7 @@ abstract contract SupportsCreatorTokens {
 
             // Get the difference that the user can claim by finding the total fee allocation made
             // to this pool and reducing it by the cached internal total fee allocation.
-            uint newTotalFeeAllocation = _treasuryManagerFactory.feeEscrow().totalFeesAllocated(poolId) - _totalFeeAllocation[poolId];
+            uint newTotalFeeAllocation = ManagerFeeEscrow.totalPoolFees(poolId) - _totalFeeAllocation[poolId];
             balance_ += getCreatorFee(newTotalFeeAllocation);
         }
     }
@@ -194,7 +195,7 @@ abstract contract SupportsCreatorTokens {
 
         // Get the difference that the user can claim by finding the total fee allocation made
         // to this pool and reducing it by the cached internal total fee allocation.
-        uint newTotalFeeAllocation = _treasuryManagerFactory.feeEscrow().totalFeesAllocated(poolId);
+        uint newTotalFeeAllocation = ManagerFeeEscrow.totalPoolFees(poolId);
         creatorAvailableClaim_ = getCreatorFee(newTotalFeeAllocation - _totalFeeAllocation[poolId]);
 
         // Update the cached total fee allocation

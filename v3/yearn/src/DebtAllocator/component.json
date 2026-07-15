@@ -1,7 +1,15 @@
 {
   "component": "DebtAllocator",
   "main_contract": "DebtAllocator",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DebtAllocator\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x03d43df6ff894c848fc6f1a0a7e8a539ef9a4c18",
+      "address": "0x1e9eb053228b1156831759401de0e115356b8671",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405045"
     }
   ]
 }

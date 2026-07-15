@@ -1,96 +1,115 @@
 # Agentic Audit Brief: Arbswap
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 2 (0 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Arbswap (`arbswap`)
 - Website: [https://arbswap.io](https://arbswap.io)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:30.108Z
-- Pipeline run: v2-2026-07-03-89943a
-- Chains: arbitrum
-- Contract surface: 20 unique implementations (20 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: arbitrum, arbitrum-nova, chain-421613
+- Contract surface: 39 unique implementations (39 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $199,099.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Dexs. Structurally: 20 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 2 ERC721 NFTs; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Arbswap. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol forms a single structural family (Core Logic) of 20 contract(s).
+The pinned logic-topography run contains 5 contract row(s) across arbitrum, arbitrum-nova, chain-421613. Structural roles: 5 core. No upgradeable pattern was identified in these rows.
 
-## Fork Lineage
+## Logic Topography
 
-This project reuses audited code from **PancakeSwap** (`pancakeswap`) in the PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer subsystem.
-15 audits inherited from `pancakeswap`, scoped to that subsystem.
-
-Total inherited audits: 15. Inherited coverage reflects forked/shared code audited by the origin project — it is not a direct audit of this project.
+- Exact-run contract rows: 5
+- Structural roles: core (5)
+- Contract kinds: contract (5)
+- Detected standards: ownable (4), erc165 (1), erc20 (1), pausable (1)
+- Frameworks: openzeppelin (5)
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 20; live-surface contracts included: 20 (20 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 5; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 5/20 (25.0%)
-- Deployed-live implementations: 20 of 20 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 5/20
-- Verified + Unaudited implementations: 15
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 24 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 15 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 20
-- Raw deployments: 20
-- Audits discovered: 17 (2 direct, 15 inherited from forked code)
-- Scoreable audits (matched contracts): 2
+- Unique implementations: 39
+- Raw deployments: 39
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2026-06 (fresh)
-- Audit staleness (calendar age): 2 fresh, 5 aging, 10 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 5 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Latest audit: 2022-09 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| PeckShield | Tier 2 | 5 | 25.0% | 2023-03 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (5)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| ArbswapToken | unknown | arbitrum | n/a | [`0xd5f09e...29a099`](./contracts/arbitrum-42161/0xd5f09e5307ed5a26ac762a6ba5573c22d729a099/) | ✅ Audited |
-| MasterChefV3 | unknown | arbitrum | n/a | [`0x41210a...7eb0b0`](./contracts/arbitrum-42161/0x41210a7c9853da7a65cad516c32c25fa5c7eb0b0/) | ✅ Audited |
-| MirrorARBS | unknown | arbitrum | n/a | [`0xa04c34...089d36`](./contracts/arbitrum-42161/0xa04c348246efb67e5376da989d70175145089d36/) | ✅ Audited |
-| VestingMaster | unknown | arbitrum | n/a | [`0x2b84f4...f06735`](./contracts/arbitrum-42161/0x2b84f485c18daeb87b1ebdba4b2bc5b945f06735/) | ✅ Audited |
-| XARBSPool | unknown | arbitrum | n/a | [`0x6d6e38...f6a222`](./contracts/arbitrum-42161/0x6d6e388064eb7e3256539e9c3e9f16a829f6a222/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (15)
+### ⚠️ Verified + Unaudited (20)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| ArbEgg | unknown | arbitrum | n/a | [`0x3dd7d0...5e9b6d`](./contracts/arbitrum-42161/0x3dd7d034198357bf0d54c1e377f3d2ce2a5e9b6d/) | ⚠️ Unaudited |
-| ArbsProxyOFT | unknown | arbitrum | n/a | [`0x406822...3d844a`](./contracts/arbitrum-42161/0x4068224e09d400bf2ff3dd3035bfa5671e3d844a/) | ⚠️ Unaudited |
-| ArbswapAirdrop | unknown | arbitrum | n/a | [`0x3ceefa...13d3c3`](./contracts/arbitrum-42161/0x3ceefa452a8d7522786abd2f644367464f13d3c3/) | ⚠️ Unaudited |
-| ArbswapSmartRouter | unknown | arbitrum | n/a | [`0x4aef9d...88f2e9`](./contracts/arbitrum-42161/0x4aef9d850a71d0f0051e8c69bf865ae34188f2e9/) | ⚠️ Unaudited |
-| ArbswapStableSwapFactory | unknown | arbitrum | n/a | [`0x3a52e9...2c099d`](./contracts/arbitrum-42161/0x3a52e9200ed7403d9d21664fdee540c2d02c099d/) | ⚠️ Unaudited |
-| ArbswapStableSwapLPFactory | unknown | arbitrum | n/a | [`0x5bbebd...3718f1`](./contracts/arbitrum-42161/0x5bbebd93777dfa334f6346271fbc6a56ed3718f1/) | ⚠️ Unaudited |
-| ArbswapStableSwapThreePoolDeployer | unknown | arbitrum | n/a | [`0xc1b418...125e67`](./contracts/arbitrum-42161/0xc1b418879750fc785b2112a77d73498eaa125e67/) | ⚠️ Unaudited |
-| ArbswapStableSwapTwoPoolDeployer | unknown | arbitrum | n/a | [`0x6b23bb...69507c`](./contracts/arbitrum-42161/0x6b23bbdddbbef5f999b9cb7e9b579231ac69507c/) | ⚠️ Unaudited |
-| ArbswapStableSwapTwoPoolInfo | unknown | arbitrum | n/a | [`0xaa50d3...770d7f`](./contracts/arbitrum-42161/0xaa50d30612a58f2e7935c4482fa426b0aa770d7f/) | ⚠️ Unaudited |
-| ArbswapStableSwapWBNBHelper | unknown | arbitrum | n/a | [`0x318080...5283ab`](./contracts/arbitrum-42161/0x318080b1590e06db79d55ce7a348765c3d5283ab/) | ⚠️ Unaudited |
-| ArbswapStableSwapWETHHelper | unknown | arbitrum | n/a | [`0x8bf212...b71029`](./contracts/arbitrum-42161/0x8bf212f02d557f9dd4b75dd69bf1e6bf1bb71029/) | ⚠️ Unaudited |
-| IFODeployer | unknown | arbitrum | n/a | [`0x85855c...148a6f`](./contracts/arbitrum-42161/0x85855cada5f92206fa0ee01d0d792849ea148a6f/) | ⚠️ Unaudited |
-| MockNovaFarm | unknown | arbitrum | n/a | [`0x278235...c2531b`](./contracts/arbitrum-42161/0x278235c801e9a5d6cef1f687e59fc65470c2531b/) | ⚠️ Unaudited |
-| RealArbsian | unknown | arbitrum | n/a | [`0x700794...272932`](./contracts/arbitrum-42161/0x700794d18dee51eb308eed0dc0aacadc5d272932/) | ⚠️ Unaudited |
-| TestVM | unknown | arbitrum | n/a | [`0x7de026...0eafa4`](./contracts/arbitrum-42161/0x7de026ce716319d8e01c901f366719230f0eafa4/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| ArbEgg | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3dd7d0...5e9b6d` | ⚠️ Unaudited |
+| ArbsProxyOFT | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226960 | `0x406822...3d844a` | ⚠️ Unaudited |
+| ArbswapAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x3ceefa...13d3c3` | ⚠️ Unaudited |
+| ArbswapSmartRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x4aef9d...88f2e9` | ⚠️ Unaudited |
+| ArbswapStableSwapFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226959 | `0x3a52e9...2c099d` | ⚠️ Unaudited |
+| ArbswapStableSwapLPFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x5bbebd...3718f1` | ⚠️ Unaudited |
+| ArbswapStableSwapThreePoolDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xc1b418...125e67` | ⚠️ Unaudited |
+| ArbswapStableSwapTwoPoolDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6b23bb...69507c` | ⚠️ Unaudited |
+| ArbswapStableSwapTwoPoolInfo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xaa50d3...770d7f` | ⚠️ Unaudited |
+| ArbswapStableSwapWBNBHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x318080...5283ab` | ⚠️ Unaudited |
+| ArbswapStableSwapWETHHelper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x8bf212...b71029` | ⚠️ Unaudited |
+| ArbswapToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0xd5f09e...29a099` | ⚠️ Unaudited |
+| IFODeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x85855c...148a6f` | ⚠️ Unaudited |
+| MasterChefV3 | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226961 | `0x41210a...7eb0b0` | ⚠️ Unaudited |
+| MirrorARBS | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226962 | `0xa04c34...089d36` | ⚠️ Unaudited |
+| MockNovaFarm | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x278235...c2531b` | ⚠️ Unaudited |
+| RealArbsian | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x700794...272932` | ⚠️ Unaudited |
+| TestVM | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x7de026...0eafa4` | ⚠️ Unaudited |
+| VestingMaster | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-226958 | `0x2b84f4...f06735` | ⚠️ Unaudited |
+| XARBSPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x6d6e38...f6a222` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -104,33 +123,58 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (19)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0x6947a4...d07d62` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xd01319...b3e551` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xd394e9...850f1b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | `0xf50874...38458f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x11f620...706f18` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x5175be...320b86` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x67844f...e4655e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x7a8f5a...46e2da` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0x898531...367dfa` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0xd8eae1...25823a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0xee01c0...06f36f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum-nova | n/a | `0xf62394...4242fd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x3e9c5b...a40ec0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x7b2cde...c1854e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x7df7d7...662a48` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x81cd91...51d18c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0x8cbe91...063c44` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0xac53fd...448d90` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-421613 | n/a | `0xbe737d...025bf2` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [blocksec_pancake_vecake_v1.0-signed.pdf](https://github.com/blocksecteam/audit-reports/blob/main/solidity/blocksec_pancake_vecake_v1.0-signed.pdf) | yAudit | Audit | 2023-11 | stale | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
-| [SlowMist Audit Report - PancakeSwap_v3_Phase2_en-us.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SlowMist%20Audit%20Report%20-%20PancakeSwap_v3_Phase2_en-us.pdf) | SlowMist | Audit | 2023-03 | stale | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
-| [PeckShield-Audit-Report-PancakeSwapV3-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-PancakeSwapV3-v1.0.pdf) | PeckShield | Audit | 2023-03 | stale | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
-| [SlowMist Audit Report - PancakeSwap_v3_en-us.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SlowMist%20Audit%20Report%20-%20PancakeSwap_v3_en-us.pdf) | SlowMist | Audit | 2023-03 | stale | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
-| [spaces/-MHREX7DHcljbY5IkjgJ-1972196547/uploads/Ma0anQ4GXvFPyVLjFRxr/PancakeSwap-OFT-Audit-OtterSec.pdf](https://1397868517-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MHREX7DHcljbY5IkjgJ-1972196547%2Fuploads%2FMa0anQ4GXvFPyVLjFRxr%2FPancakeSwap-OFT-Audit-OtterSec.pdf) | yAudit | Audit | 2022-12 | stale | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
-| [PancakeSwap_Aptos_DEX_Move_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf](https://github.com/HalbornSecurity/PublicReports/blob/master/Move%20Smart%20Contract%20Audits/PancakeSwap_Aptos_DEX_Move_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-12 | stale | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
-| [PancakeSwap Aptos - Zellic Audit Report.pdf](https://github.com/Zellic/publications/blob/master/PancakeSwap%20Aptos%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2022-11 | stale | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
-| [SlowMist Audit Report - PancakeSwap_MOVE_en-us.pdf](https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/SlowMist%20Audit%20Report%20-%20PancakeSwap_MOVE_en-us.pdf) | SlowMist | Audit | 2022-10 | stale | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
-| [PeckShield-Audit-Report-Arbswap-MasterChef-w:-locked staking.pdf](https://github.com/Arbswap-Official/Audit-reports/blob/main/PeckShield-Audit-Report-Arbswap-MasterChef-w%3A-locked%20staking.pdf) | PeckShield | Audit | 2022-09 | stale | Direct | contract_name | 2 | high |
-| [PeckShield-Audit-Report-Arbswap-v1.0.pdf](https://github.com/Arbswap-Official/Audit-reports/blob/main/PeckShield-Audit-Report-Arbswap-v1.0.pdf) | PeckShield | Audit | 2022-05 | stale | Direct | contract_name | 3 | high |
-| [HashDit.pdf](https://github.com/pancakeswap/cake-token/blob/main/audits/HashDit.pdf) | yAudit | Audit | 2026-06 | fresh | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
-| [blocksec_1perp_feeearner_smart_contract_signed_20251104.pdf](https://github.com/blocksecteam/audit-reports/blob/main/solidity/blocksec_1perp_feeearner_smart_contract_signed_20251104.pdf) | unknown | Audit | 2025-11 | fresh | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
-| [burrasec-audit.pdf](https://github.com/pancakeswap/pancake-developer/blob/master/docs/public/crosschain/burrasec-audit.pdf) | yAudit | Audit | 2025-05 | aging | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
-| [pashov-audit.pdf](https://github.com/pancakeswap/pancake-developer/blob/master/docs/public/crosschain/pashov-audit.pdf) | Pashov Audit Group | Audit | 2025-05 | aging | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
-| [blocksec_pancake_aggregator_v1.0-signed.pdf](https://github.com/blocksecteam/audit-reports/blob/main/solidity/blocksec_pancake_aggregator_v1.0-signed.pdf) | yAudit | Audit | 2025-03 | aging | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
-| [Cyfrin.pdf](https://github.com/pancakeswap/infinity-universal-router/blob/main/audits/Cyfrin.pdf) | Cyfrin | Audit | 2025-03 | aging | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
-| [Zellic.pdf (also discovered via alternate URL)](https://github.com/pancakeswap/infinity-core/blob/main/docs/audits/Zellic.pdf) | Zellic | Audit | 2024-10 | aging | Inherited from PancakeSwap — forked code, scoped to PancakeStableSwapFactory, PancakeStableSwapTwoPoolDeployer | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [PeckShield-Audit-Report-Arbswap-MasterChef-w:-locked staking.pdf](https://github.com/Arbswap-Official/Audit-reports/blob/main/PeckShield-Audit-Report-Arbswap-MasterChef-w%3A-locked%20staking.pdf) | PeckShield | Audit | 2022-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [PeckShield-Audit-Report-Arbswap-v1.0.pdf](https://github.com/Arbswap-Official/Audit-reports/blob/main/PeckShield-Audit-Report-Arbswap-v1.0.pdf) | PeckShield | Audit | 2022-05 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [19459] PeckShield-Audit-Report-Arbswap-MasterChef-w:-locked staking.pdf — no match: Scope explicitly mentions contracts/MasterChefV3.sol and contracts/VestingMaster.sol. Audit date from cover page and version history.
+- [19460] PeckShield-Audit-Report-Arbswap-v1.0.pdf — no match: Contracts extracted from findings targets and file references. Audit date from cover page and table.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| PeckShield-Audit-Report-Arbswap-MasterChef-w:-locked staking.pdf | MasterChefV3 | unmatched — not counted | — | listed in scope: contracts/MasterChefV3.sol | no |
+| PeckShield-Audit-Report-Arbswap-MasterChef-w:-locked staking.pdf | VestingMaster | unmatched — not counted | — | listed in scope: contracts/VestingMaster.sol | no |
+| PeckShield-Audit-Report-Arbswap-v1.0.pdf | MirrorARBS | unmatched — not counted | — | Target in finding PVE-001 | no |
+| PeckShield-Audit-Report-Arbswap-v1.0.pdf | XARBSPool | unmatched — not counted | — | Target in finding PVE-002 | no |
+| PeckShield-Audit-Report-Arbswap-v1.0.pdf | MasterChef | unmatched — not counted | — | Target in findings PVE-003 and PVE-005 | no |
+| PeckShield-Audit-Report-Arbswap-v1.0.pdf | ArbswapToken | unmatched — not counted | — | Referenced in finding PVE-004 as ArbswapToken.sol | no |
 
 ## Coverage Gaps
 
@@ -142,36 +186,25 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 20 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 20 |
+| needs_review | 19 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 15
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 6 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=5
+- Match method counts: n/a
 
 Zero-match audit list:
 
-- [18807] blocksec_pancake_vecake_v1.0-signed.pdf
-- [18808] SlowMist Audit Report - PancakeSwap_v3_Phase2_en-us.pdf
-- [18809] PeckShield-Audit-Report-PancakeSwapV3-v1.0.pdf
-- [18810] SlowMist Audit Report - PancakeSwap_v3_en-us.pdf
-- [18811] spaces/-MHREX7DHcljbY5IkjgJ-1972196547/uploads/Ma0anQ4GXvFPyVLjFRxr/PancakeSwap-OFT-Audit-OtterSec.pdf
-- [18812] PancakeSwap_Aptos_DEX_Move_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf
-- [18813] PancakeSwap Aptos - Zellic Audit Report.pdf
-- [18814] SlowMist Audit Report - PancakeSwap_MOVE_en-us.pdf
-- [24566] HashDit.pdf
-- [24567] blocksec_1perp_feeearner_smart_contract_signed_20251104.pdf
-- [24568] burrasec-audit.pdf
-- [24569] pashov-audit.pdf
-- [24570] blocksec_pancake_aggregator_v1.0-signed.pdf
-- [24571] Cyfrin.pdf
-- [24572] Zellic.pdf
+- [19459] PeckShield-Audit-Report-Arbswap-MasterChef-w:-locked staking.pdf
+- [19460] PeckShield-Audit-Report-Arbswap-v1.0.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

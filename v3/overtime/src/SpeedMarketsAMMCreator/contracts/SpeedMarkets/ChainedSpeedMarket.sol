@@ -44,6 +44,7 @@ contract ChainedSpeedMarket {
     uint public payout;
     uint public safeBoxImpact;
     uint public payoutMultiplier;
+
     bool public resolved;
     int64[] public finalPrices;
     bool public isUserWinner;

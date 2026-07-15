@@ -1,34 +1,28 @@
 {
   "component": "CvxFxsZaps",
   "main_contract": "CvxFxsZaps",
-  "source_file_count": 24,
-  "deployment_count": 3,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CvxFxsZaps\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x3742235b332fac741ec3a4f1ab7115ae0621944d",
+      "address": "0x63f0797015489d407fc2ac7e3891467e1ed0166c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xd0e50af0696f8972439198771cdf759c901c0d58",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xf97d26bbf79cd7b319f54e5dd8a6f581605dafef",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396117"
     }
   ]
 }

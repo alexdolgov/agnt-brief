@@ -1,44 +1,93 @@
 # Agentic Audit Brief: Meeds Finance
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Meeds Finance (`meeds-finance`)
 - Website: [https://www.meeds.io/](https://www.meeds.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:22.862Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16da
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, base, ethereum, optimism, polygon
-- Contract surface: 4 unique implementations (9 raw deployments)
+- Contract surface: 13 unique implementations (13 raw deployments)
+- Coverage basis: 0/9 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,271,759.10
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Farm. Structurally: 7 project-authored contract(s) across 2 chain(s); 2 ERC20 tokens, 1 ERC1155 multi-token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Meeds Finance. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 2 common project-authored base contract(s) (managerrole, erc1967upgrade). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 9 contract row(s) across arbitrum, base, ethereum, optimism, polygon. Structural roles: 7 core, 1 supporting, 1 unclassified. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 9
+- Structural roles: core (7), supporting (1), unclassified (1)
+- Contract kinds: contract (8), unclassified (1)
+- Detected standards: ownable (2), erc20 (1)
+- Frameworks: openzeppelin (2), uniswap-v3 (1)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 13 contracts are derived from known codebases. 13 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0xdd462e...7940b9`, chain 10)
+- UnnamedContract (`0x6aca77...95289a`, chain 137)
+- UnnamedContract (`0xd9df94...14efa2`, chain 8453)
+- UnnamedContract (`0xe4db36...a56769`, chain 42161)
+- MeedsToken (`0x8503a7...0547b7`, chain 1)
+- TokenFactory (`0x1b37d0...386050`, chain 1)
+- UniswapV3Pool (`0xc82b1c...12b3d1`, chain 1)
+- UniswapV3Pool (`0xfa127d...f9989e`, chain 1)
+- UniswapV3Pool (`0xe13330...369b17`, chain 10)
+- UniswapV3Pool (`0x4e7d4e...b02a69`, chain 137)
+- UniswapV3Pool (`0xada40f...51dd55`, chain 8453)
+- UniswapV3Pool (`0xc76979...7225a1`, chain 42161)
+- Vyper_contract (`0x440701...f37dfa`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 16; live-surface contracts included: 9 (9 live, 0 unknown).
-- Excluded by liveness: 7 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 9; live-surface contracts included: 9 (9 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 13/13 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/4 (0.0%)
-- Deployed-live implementations: 4 of 4 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/4
-- Verified + Unaudited implementations: 4
+- Coverage of address-book-owned deployed-live implementations: 0/9 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 13 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 13 of 13 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/9
+- Verified + Unaudited implementations: 9
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 4
-- Raw deployments: 9
+- Unverified implementations: 4
+- Unique implementations: 13
+- Raw deployments: 13
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,14 +106,19 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 - None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (9)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| MeedsToken | token | ethereum | n/a | [`0x8503a7...0547b7`](./contracts/ethereum-1/0x8503a7b00b4b52692cc6c14e5b96f142e30547b7/) | ⚠️ Unaudited |
-| TokenFactory | registry | ethereum | n/a | [`0x1b37d0...386050`](./contracts/ethereum-1/0x1b37d04759ad542640cc44ff849a373040386050/) | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | polygon | n/a | 6 deployments: ethereum `0xc82b1c...12b3d1`; ethereum `0xfa127d...f9989e`; optimism `0xe13330...369b17`; polygon [`0x4e7d4e...b02a69`](./contracts/polygon-137/0x4e7d4e5fd3e4a68adcbeacaa3748b9c67bb02a69/); base `0xada40f...51dd55`; arbitrum `0xc76979...7225a1` | ⚠️ Unaudited |
-| XMeedsNFTRewarding | token | ethereum | n/a | [`0x44d6d6...e1bcd4`](./contracts/ethereum-1/0x44d6d6ab50401dd846336e9c706a492f06e1bcd4/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| MeedsToken | token | project_anchor | own_supporting | 0 | ethereum | unit-246312 | `0x8503a7...0547b7` | ⚠️ Unaudited |
+| TokenFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-246310 | `0x1b37d0...386050` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-246313 | `0xc82b1c...12b3d1` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-246314 | `0xfa127d...f9989e` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | optimism | unit-246316 | `0xe13330...369b17` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | polygon | unit-246317 | `0x4e7d4e...b02a69` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | base | unit-246321 | `0xada40f...51dd55` | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | project_anchor | own_supporting | 0 | arbitrum | unit-246319 | `0xc76979...7225a1` | ⚠️ Unaudited |
+| Vyper_contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-246311 | `0x440701...f37dfa` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -78,29 +132,44 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-246315 | `0xdd462e...7940b9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-246318 | `0x6aca77...95289a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-246322 | `0xd9df94...14efa2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-246320 | `0xe4db36...a56769` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x8503a7...0547b7` | MeedsToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1b37d0...386050` | TokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x440701...f37dfa` | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 0 |
+| native | 3 |
+| upstream | 6 |
 | standard_library | 0 |
 | needs_review | 4 |
 
@@ -110,6 +179,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

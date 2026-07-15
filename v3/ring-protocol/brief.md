@@ -1,125 +1,103 @@
 # Agentic Audit Brief: Ring Protocol
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 10 (0 matched; 10 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Ring Protocol (`ring-protocol`)
 - Website: [https://ring.exchange/](https://ring.exchange/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:46.110Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
-- Chains: arbitrum, avalanche, base, blast, bsc, celo, ethereum, ink, optimism, polygon, unichain, zora
-- Contract surface: 144 unique implementations (232 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: arbitrum, base, bsc, ethereum, unichain
+- Contract surface: 10 unique implementations (24 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $23,217,131.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Bridge. Structurally: 83 project-authored contract(s) across 8 chain(s); 7 ERC20 tokens, 8 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Ring Protocol. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 8 functional families. Its contracts share 39 common project-authored base contract(s) (immutablestate, dsmath, dsauth). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 22 contract row(s) across arbitrum, base, bsc, ethereum, unichain. Structural roles: 9 core, 7 supporting, 6 unclassified. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 22
+- Structural roles: core (9), supporting (7), unclassified (6)
+- Contract kinds: contract (22)
+- Detected standards: pausable (2)
+- Frameworks: uniswap (9), openzeppelin (8), solmate (6), uniswap-v2 (5), permit2 (1), uniswap-v3 (1)
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 316; live-surface contracts included: 231 (119 live, 112 unknown).
-- Excluded by liveness: 85 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 22; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 16/52 (30.8%)
-- Deployed-live implementations: 52 of 144 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 16/52
-- Verified + Unaudited implementations: 36
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 8 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 2 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 92
-- Unique implementations: 144
-- Raw deployments: 232
-- Audits discovered: 10 (10 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 6
+- Unverified implementations: 0
+- Unique implementations: 10
+- Raw deployments: 24
+- Audits discovered: 9 (9 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-11 (fresh)
-- Audit staleness (calendar age): 1 fresh, 6 aging, 3 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 11 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 5 match-unverified
-- Tier 1 coverage: 28.8% (OpenZeppelin, SlowMist, Spearbit)
+- Audit staleness (calendar age): 1 fresh, 4 aging, 4 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| ABDK | Tier 2 | 11 | 21.2% | 2025-11 |
-| OpenZeppelin | Tier 1 | 11 | 21.2% | 2024-09 |
-| Spearbit | Tier 1 | 8 | 15.4% | 2024-09 |
-| SlowMist | Tier 1 | 4 | 7.7% | 2024-01 |
-| BlockSec | Tier 2 | 2 | 3.8% | 2024-02 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (16)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Core | unknown | ethereum | n/a | [`0xb2799e...c087d4`](./contracts/ethereum-1/0xb2799ed78490ea642d2ecb23cb2ce9b8acc087d4/) | ✅ Audited |
-| FewETHHook | token | ethereum | n/a | [`0x044301...0c6888`](./contracts/ethereum-1/0x044301939deb7ca53c4733dd4d9b3bc5ea0c6888/) | ✅ Audited |
-| FewFactory | unknown | blast | n/a | 7 deployments: ethereum `0x7d8639...4464dd`; ethereum `0xb13a84...8fd2ad`; bsc `0xeee400...b972cd`; unichain `0x974cc3...ee556f`; base `0xb3ad77...a47920`; arbitrum `0x974cc3...ee556f`; blast [`0x455b20...e8cee9`](./contracts/blast-81457/0x455b20131d59f01d082df1225154fda813e8cee9/) | ✅ Audited |
-| FewTokenHook | token | ethereum | n/a | 3 deployments: ethereum [`0x4b2eb6...592888`](./contracts/ethereum-1/0x4b2eb653d13e6c9ac5a0a01fde22f2c8d6592888/); ethereum `0x4b3e2a...f22888`; ethereum `0x85b648...bde888` | ✅ Audited |
-| FewUSDTHook | token | ethereum | n/a | [`0xbadf77...486888`](./contracts/ethereum-1/0xbadf77d50478b4432ef1f243b9c0bc7869486888/) | ✅ Audited |
-| FewWrappedToken | token | blast | n/a | 2 deployments: blast [`0x66714d...fe7dd1`](./contracts/blast-81457/0x66714db8f3397c767d0a602458b5b4e3c0fe7dd1/); blast `0x866f2c...5a06d6` | ✅ Audited |
-| FixedStakingRewards | unknown | blast | n/a | [`0xeff87a...a15a24`](./contracts/blast-81457/0xeff87a51f5abd015f1afcd5737bbab450ea15a24/) | ✅ Audited |
-| PositionManager | governance | ethereum | n/a | [`0xbd2165...64ee9e`](./contracts/ethereum-1/0xbd216513d74c8cf14cf4747e6aaa6420ff64ee9e/) | ✅ Audited |
-| PositionManager | governance | optimism | n/a | 5 deployments: optimism [`0x3c3ea4...9a1017`](./contracts/optimism-10/0x3c3ea4b57a46241e54610e5f022e5c45859a1017/); bsc `0x7a4a5c...87f95b`; celo `0xf7965f...068ca9`; avalanche `0xb74b1f...ab8acd`; blast `0x4ad2f4...f1baad` | ✅ Audited |
-| PositionManager | governance | unichain | n/a | [`0x4529a0...2617bf`](./contracts/unichain-130/0x4529a01c7a0410167c5740c487a8de60232617bf/) | ✅ Audited |
-| PositionManager | governance | polygon | n/a | [`0x1ec2eb...3ceef9`](./contracts/polygon-137/0x1ec2ebf4f37e7363fdfe3551602425af0b3ceef9/) | ✅ Audited |
-| PositionManager | governance | base | n/a | [`0x7c5f5a...429bdc`](./contracts/base-8453/0x7c5f5a4bbd8fd63184577525326123b519429bdc/) | ✅ Audited |
-| PositionManager | governance | arbitrum | n/a | [`0xd88f38...3dd869`](./contracts/arbitrum-42161/0xd88f38f930b7952f2db2432cb002e7abbf3dd869/) | ✅ Audited |
-| Quoter | periphery | ethereum | n/a | [`0xb27308...ce5ab6`](./contracts/ethereum-1/0xb27308f9f90d607463bb33ea1bebb41c27ce5ab6/) | ✅ Audited |
-| StateView | unknown | blast | n/a | 10 deployments: ethereum `0x7ffe42...597227`; optimism `0xc18a31...75ecdb`; bsc `0xd13dd3...aee0c4`; unichain `0x86e863...dee8f2`; polygon `0x5ea1bd...b3ba5a`; base `0xa3c0c9...867a71`; arbitrum `0x76fd29...6e9990`; celo `0xbc21f8...6f2bfb`; avalanche `0xc3c9e1...b69286`; blast [`0x12a88a...85df30`](./contracts/blast-81457/0x12a88ae16f46dce4e8b15368008ab3380885df30/) | ✅ Audited |
-| UniversalRouter | adapter | polygon | n/a | 22 deployments: ethereum `0x5597ac...4c81c2`; ethereum `0x66a989...dba8af`; ethereum `0x7d80c9...fd484f`; ethereum `0xeff87a...a15a24`; optimism `0x851116...8b3507`; bsc `0x1906c1...4eae07`; bsc `0x1fb6ef...38cfcc`; unichain `0xef740b...c8eaf3`; polygon [`0x109569...c49223`](./contracts/polygon-137/0x1095692a6237d83c6a72f3f5efedb9a670c49223/); base `0x1fb6ef...38cfcc`; base `0x6ff569...299b43`; base `0x9a8c67...1f1e07`; base `0xe6d348...953a60`; arbitrum `0xa51afa...e381a3`; arbitrum `0xdb671f...6db8e5`; arbitrum `0xf29309...1749b8`; celo `0xcb695b...a0233a`; avalanche `0x94b753...aa73b7`; blast `0x6a7c92...6e0ee5`; blast `0xc9dd68...a3f201`; blast `0xce69ec...60a940`; blast `0xeabbcb...025be3` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (36)
+### ⚠️ Verified + Unaudited (8)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Dai | unknown | ethereum | n/a | [`0x6b1754...271d0f`](./contracts/ethereum-1/0x6b175474e89094c44da98b954eedeac495271d0f/) | ⚠️ Unaudited |
-| FewETHWrapper | token | base | n/a | 4 deployments: ethereum `0xada605...6b5ebb`; bsc `0xf9d7ff...97916f`; base [`0x20e6b1...9c4fe7`](./contracts/base-8453/0x20e6b1260d12910c0ab13c1abebcfe24ae9c4fe7/); blast `0xf272a4...eb065f` | ⚠️ Unaudited |
-| FewNonfungiblePositionManager | governance | blast | n/a | 5 deployments: blast [`0x44d8a7...23d995`](./contracts/blast-81457/0x44d8a7885c48c20861b49cd238e612056223d995/); blast `0x897050...2c536a`; blast `0x89cc75...177b90`; blast `0xaccba4...ab4949`; blast `0xb1486e...ea8f3b` | ⚠️ Unaudited |
-| MerkleDistributor | operational_periphery | ethereum | n/a | [`0x090d46...1d256e`](./contracts/ethereum-1/0x090d4613473dee047c3f2706764f49e0821d256e/) | ⚠️ Unaudited |
-| Multicall | unknown | unichain | n/a | [`0xb630bb...9da400`](./contracts/unichain-130/0xb630bbef1b6a9ca0c31699060321918a729da400/) | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | blast | n/a | 2 deployments: base `0xf9d7ff...97916f`; blast [`0xebec26...5300fa`](./contracts/blast-81457/0xebec263be79a02131258a1033d8490b11a5300fa/) | ⚠️ Unaudited |
-| NonfungibleTokenPositionDescriptor | unknown | ethereum | n/a | 2 deployments: ethereum [`0x91ae84...9294f3`](./contracts/ethereum-1/0x91ae842a5ffd8d12023116943e72a606179294f3/); ethereum `0xee6a57...c24785` | ⚠️ Unaudited |
-| PositionDescriptor | periphery | ethereum | n/a | [`0xd1428b...63f06c`](./contracts/ethereum-1/0xd1428ba554f4c8450b763a0b2040a4935c63f06c/) | ⚠️ Unaudited |
-| PositionDescriptor | periphery | optimism | n/a | [`0xedd814...a66743`](./contracts/optimism-10/0xedd81496169c46df161b8513a52ffecaaaa66743/) | ⚠️ Unaudited |
-| PositionDescriptor | periphery | bsc | n/a | [`0xf0432f...d380e1`](./contracts/bsc-56/0xf0432f360703ec3d33931a8356a75a77d8d380e1/) | ⚠️ Unaudited |
-| PositionDescriptor | periphery | unichain | n/a | [`0x9fb284...f7f722`](./contracts/unichain-130/0x9fb28449a191cd8c03a1b7abfb0f5996ecf7f722/) | ⚠️ Unaudited |
-| PositionDescriptor | periphery | polygon | n/a | [`0x089277...6e6794`](./contracts/polygon-137/0x0892771f0c1b78ad6013d6e5536007e1c16e6794/) | ⚠️ Unaudited |
-| PositionDescriptor | periphery | base | n/a | [`0x25d093...f3e7d5`](./contracts/base-8453/0x25d093633990dc94bedeed76c8f3cdaa75f3e7d5/) | ⚠️ Unaudited |
-| PositionDescriptor | periphery | celo | n/a | [`0x5727e2...102d8a`](./contracts/celo-42220/0x5727e22b25feee05e8dfa83c752b86f19d102d8a/) | ⚠️ Unaudited |
-| PositionDescriptor | periphery | avalanche | n/a | [`0x2b1aed...51f0a9`](./contracts/avalanche-43114/0x2b1aed9445b05ac1a3b203eccc1e25dd9351f0a9/) | ⚠️ Unaudited |
-| PositionDescriptor | periphery | blast | n/a | [`0x0747ad...676f97`](./contracts/blast-81457/0x0747ad2b2e1f5761b1dcf0d8672bd1ffc3676f97/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0xb75354...e90cf2`](./contracts/ethereum-1/0xb753548f6e010e7e680ba186f9ca1bdab2e90cf2/) | ⚠️ Unaudited |
-| QuoterV2 | periphery | ethereum | n/a | [`0x61ffe0...30b21e`](./contracts/ethereum-1/0x61ffe014ba17989e743c5f6cb21bf9697530b21e/) | ⚠️ Unaudited |
-| RingLaunchpad | unknown | base | n/a | [`0x833d47...c0da30`](./contracts/base-8453/0x833d4795fab8f030c790c8286f15553437c0da30/) | ⚠️ Unaudited |
-| RingPoint | unknown | blast | n/a | [`0x8bd2cd...fd7e94`](./contracts/blast-81457/0x8bd2cdadce9c978af3ddbd6c0c8488be1bfd7e94/) | ⚠️ Unaudited |
-| RingToken | token | blast | n/a | [`0x25f233...643c84`](./contracts/blast-81457/0x25f233c3e3676f9e900a89644a3fe5404d643c84/) | ⚠️ Unaudited |
-| SwapIncentive | unknown | blast | n/a | 2 deployments: blast [`0x4610a7...29c503`](./contracts/blast-81457/0x4610a79b9d0d075d7d63d112018a49059529c503/); blast `0xfe8d01...36e112` | ⚠️ Unaudited |
-| SwapRouter | adapter | ethereum | n/a | [`0xe59242...861564`](./contracts/ethereum-1/0xe592427a0aece92de3edee1f18e0157c05861564/) | ⚠️ Unaudited |
-| SwapRouter02 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x075b36...aa8a60`](./contracts/ethereum-1/0x075b36de1bd11cb361c5b3b1e80a9ab0e7aa8a60/); blast `0xa94f22...6ae522` | ⚠️ Unaudited |
-| SwapRouter02 | adapter | ethereum | n/a | [`0x68b346...65fc45`](./contracts/ethereum-1/0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45/) | ⚠️ Unaudited |
-| SwapV2Router | adapter | bsc | n/a | 5 deployments: ethereum `0x39d1d8...6d3519`; bsc [`0x20504f...e6bad0`](./contracts/bsc-56/0x20504f37a95ef80e3fc7476c4801fb39aae6bad0/); base `0x224749...4cd254`; arbitrum `0xd69ed5...baa46a`; blast `0x7001f7...1696ff` | ⚠️ Unaudited |
-| Timelock | governance | ethereum | n/a | [`0x1a9c81...be35bc`](./contracts/ethereum-1/0x1a9c8182c09f50c8318d769245bea52c32be35bc/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | base | n/a | [`0x1246fa...609442`](./contracts/base-8453/0x1246fa62467a9ac0892a2d2a9f9aafc2f5609442/) | ⚠️ Unaudited |
-| Uni | unknown | ethereum | n/a | [`0x1f9840...01f984`](./contracts/ethereum-1/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984/) | ⚠️ Unaudited |
-| UniswapV2Factory | registry | ethereum | n/a | [`0x5c69be...c5aa6f`](./contracts/ethereum-1/0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f/) | ⚠️ Unaudited |
-| UniswapV3Factory | registry | ethereum | n/a | [`0x1f9843...31f984`](./contracts/ethereum-1/0x1f98431c8ad98523631ae4a59f267346ea31f984/) | ⚠️ Unaudited |
-| V3Migrator | periphery | ethereum | n/a | [`0xa5644e...f92b34`](./contracts/ethereum-1/0xa5644e29708357803b5a882d272c41cc0df92b34/) | ⚠️ Unaudited |
-| V3Migrator | unknown | blast | n/a | [`0x3a02ec...4dd245`](./contracts/blast-81457/0x3a02ecb17f26b1ab294396d4750a740d774dd245/) | ⚠️ Unaudited |
-| V4Quoter | periphery | base | n/a | 9 deployments: ethereum `0x52f0e2...9e1203`; optimism `0x1f3131...f1a8d7`; bsc `0x9f75dd...9437b0`; unichain `0x333e3c...7491e0`; polygon `0xb3d5c3...2c81b9`; base [`0x0d5e0f...32048d`](./contracts/base-8453/0x0d5e0f971ed27fbff6c2837bf31316121532048d/); celo `0x28566d...1d66cd`; avalanche `0xbe4067...9845c2`; blast `0x6f71cd...f62bcf` | ⚠️ Unaudited |
-| WETH | unknown | ethereum | n/a | 3 deployments: ethereum [`0x353f89...c4bf52`](./contracts/ethereum-1/0x353f8931ce1c52f643121be129985aab09c4bf52/); ethereum `0x5503e7...a2808e`; ethereum `0xaec71b...3bc33d` | ⚠️ Unaudited |
-| WETH9 | token | ethereum | n/a | [`0xc02aaa...756cc2`](./contracts/ethereum-1/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| FewETHHook | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x044301...0c6888` | ⚠️ Unaudited |
+| FewETHWrapper | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | base | n/a | 4 deployments: ethereum `0xada605...6b5ebb`; bsc `0xf9d7ff...97916f`; unichain `0xc43a3d...89df42`; base `0x20e6b1...9c4fe7` | ⚠️ Unaudited |
+| FewFactory | registry | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | 4 deployments: ethereum `0x7d8639...4464dd`; bsc `0xeee400...b972cd`; base `0xb3ad77...a47920`; arbitrum `0x974cc3...ee556f` | ⚠️ Unaudited |
+| FewTokenHook | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | 3 deployments: ethereum `0x4b2eb6...592888`; ethereum `0x4b3e2a...f22888`; ethereum `0x85b648...bde888` | ⚠️ Unaudited |
+| FewUSDTHook | token | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0xbadf77...486888` | ⚠️ Unaudited |
+| SwapV2Factory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | n/a | 4 deployments: ethereum `0xeb2a62...d06416`; bsc `0x4de602...c4dd9b`; base `0x9bffc3...b4980e`; arbitrum `0x1246fa...609442` | ⚠️ Unaudited |
+| SwapV2Router | adapter | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | 4 deployments: ethereum `0x39d1d8...6d3519`; bsc `0x20504f...e6bad0`; base `0x224749...4cd254`; arbitrum `0xd69ed5...baa46a` | ⚠️ Unaudited |
+| UniversalRouter | adapter | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x1fb6ef...38cfcc` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -133,119 +111,218 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (92)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x0cbd55...390940` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x0d126c...c00c60` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x0d64d8...50fbd1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x102560...5df38b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x127f3c...a9199b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x15f73a...6f5605` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x183739...a98908` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1ff103...26f4da` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x20826b...363058` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x20bdda...9a55b7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x230557...37b15e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2c6f75...35b507` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2ff889...b8854d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x31d687...cda740` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x335926...f90c3a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x362b56...9dfce6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x384c53...293036` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3ad977...98f8a1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3bd1ee...3ca5af` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x402fa0...2584b1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x411ea3...9e93b9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x46695c...003ee7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x471208...0a8732` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4c209a...223d28` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4c9ad5...1c9acd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x56de9e...fa51a0` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5b4997...5c76c8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5b4ba4...789c09` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x76d8a5...b14646` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7cf03c...55ea3f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7d3701...6b4877` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x84f162...cbf197` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x897c79...ebc249` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x89f800...389aa3` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8b00a8...af293b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8cbd1d...aeed7a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x92bfd0...fb3e9a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9843e5...bd50ac` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x98bc79...4cf142` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9e978e...73fdd1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9f4ef8...57df75` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9f6de3...1f2423` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9fcb31...35be6a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa71a6c...905627` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc61d91...f4a581` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc77841...0cd5ab` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc882b9...2b0d9d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xcbc21c...efe931` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd3f3c5...8a8a89` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe6eaa2...a68e1d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe81930...a59891` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xef0594...5e8173` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf50db8...785f99` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf68393...8fbf14` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf85903...287c11` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf88cbc...c08ff4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xff0eb5...489010` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x1eebdd...409b6c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x224749...4cd254` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x4ea40d...bca913` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x93bdca...b36bdc` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x974cc3...ee556f` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0x1eebdd...409b6c` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0x3374be...c7af49` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0x3e2450...b8aa32` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0x41957b...7caa08` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0x5aa37f...3c55ed` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0x76c8dd...3d1d4e` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0x833d47...c0da30` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0x9bffc3...b4980e` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0xb981b9...fb2faf` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0xc76e66...46cfbd` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0xdb671f...6db8e5` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0xdddd32...d5af0a` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0xe17e4e...1b28af` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0xe945d6...a8486e` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0xf29309...1749b8` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0xf9cfaa...1635eb` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x974cc3...ee556f` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xc43a3d...89df42` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xdd8bd9...f9dfe1` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xeee400...b972cd` | ❓ Unverified |
-| UnnamedContract | unknown | ink | n/a | 21 deployments: ink `0x000000...c78ba3`; ink `0x112908...5d1fa0`; ink `0x1b35d1...deb566`; ink `0x360e68...b9fb32`; ink `0x3972c0...75a1c5`; ink `0x42e3cc...8e7f36`; ink `0x4cded7...a455df`; ink `0x76fd29...6e9990`; zora `0x000000...c78ba3`; zora `0x057533...7ca30f`; zora `0x3315ef...04b020`; zora `0x385785...df7328`; zora `0x51d394...eb71eb`; zora `0x55d235...e6c5c0`; zora `0x5edacc...5dc2c6`; zora `0x7d6463...68d55a`; zora `0x7da419...aeace4`; zora `0x8ac7be...b5e743`; zora `0xb1860d...d13f33`; zora `0xc585e0...fb41fa`; zora `0xf66c7b...543d63` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0x25df14...353866` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0x303085...700bb4` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0x35a337...a8c265` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0x36a1a6...db4a1e` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0x3af30c...57dcaa` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0x52cb39...50c91d` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0x8b34f9...0cf256` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0x8c6a81...681573` | ❓ Unverified |
-| UnnamedContract | unknown | blast | n/a | `0xa61111...55ff51` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-162693 | `0x000000...c78ba3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | unit-162692 | `0x000000...c78ba3` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [DRAFT_Certora_audit_core.pdf](https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/DRAFT_Certora_audit_core.pdf) | Certora | Audit | 2024-07 | stale | Direct | n/a | 0 | n/a |
-| [TrailOfBits_audit_core.pdf](https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/TrailOfBits_audit_core.pdf) | Trail of Bits | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
-| [DRAFT_Spearbit_audit_core.pdf](https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/DRAFT_Spearbit_audit_core.pdf) | Spearbit | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
-| [DRAFT_ABDK_audit_core.pdf](https://github.com/Uniswap/v4-core/blob/main/docs/security/audits/DRAFT_ABDK_audit_core.pdf) | ABDK | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
-| [OpenZeppelin_audit_periphery_universal_router.pdf](https://github.com/RingProtocol/v4-periphery/blob/main/audits/OpenZeppelin_audit_periphery_universal_router.pdf) | OpenZeppelin | Audit | 2024-09 | aging | Direct | contract_name | 45 | high |
-| [DRAFT_Spearbit_audit_periphery.pdf](https://github.com/RingProtocol/v4-periphery/blob/main/audits/DRAFT_Spearbit_audit_periphery.pdf) | Spearbit | Audit | 2024-09 | aging | Direct | contract_name | 8 | n/a |
-| [DRAFT_ABDK_audit_periphery_universal_router.pdf](https://github.com/RingProtocol/v4-periphery/blob/main/audits/DRAFT_ABDK_audit_periphery_universal_router.pdf) | ABDK | Audit | 2024-09 | aging | Direct | contract_name | 8 | n/a |
-| [ABDK_RingProtocol_Hook_v_1_0.pdf](https://github.com/RingProtocol/v4-periphery/blob/main/audits/ABDK_RingProtocol_Hook_v_1_0.pdf) | ABDK | Audit | 2025-11 | fresh | Direct | contract_name | 3 | n/a |
-| [SlowMist Audit Report - Ring Protocol_en-us.pdf](https://github.com/RingProtocol/audits/blob/main/SlowMist%20Audit%20Report%20-%20Ring%20Protocol_en-us.pdf) | SlowMist | Audit | 2024-01 | stale | Direct | contract_name | 4 | n/a |
-| [blocksec_ringcore_v1.0-signed.pdf](https://github.com/RingProtocol/audits/blob/main/blocksec_ringcore_v1.0-signed.pdf) | BlockSec | Audit | 2024-02 | stale | Direct | contract_name | 2 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [OpenZeppelin_audit_periphery_universal_router.pdf](https://github.com/RingProtocol/v4-periphery/blob/main/audits/OpenZeppelin_audit_periphery_universal_router.pdf) | OpenZeppelin | Audit | 2024-09 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 44 | high |
+| [DRAFT_Spearbit_audit_periphery.pdf](https://github.com/RingProtocol/v4-periphery/blob/main/audits/DRAFT_Spearbit_audit_periphery.pdf) | Spearbit | Audit | 2024-09 | aging | Direct | n/a | no match | 0 | 0 | 0 | 49 | n/a |
+| [DRAFT_ABDK_audit_periphery_universal_router.pdf](https://github.com/RingProtocol/v4-periphery/blob/main/audits/DRAFT_ABDK_audit_periphery_universal_router.pdf) | ABDK | Audit | 2024-09 | aging | Direct | n/a | no match | 0 | 0 | 0 | 41 | n/a |
+| [ABDK_RingProtocol_Hook_v_1_0.pdf (also discovered via alternate URL)](https://github.com/RingProtocol/v4-periphery/blob/main/audits/ABDK_RingProtocol_Hook_v_1_0.pdf) | ABDK | Audit | 2025-11 | fresh | Direct | contract_name|n/a | no match | 0 | 0 | 0 | 6 | high |
+| [SlowMist Audit Report - Ring Protocol_en-us.pdf](https://github.com/RingProtocol/audits/blob/main/SlowMist%20Audit%20Report%20-%20Ring%20Protocol_en-us.pdf) | SlowMist | Audit | 2024-01 | stale | Direct | n/a | no match | 0 | 0 | 0 | 8 | n/a |
+| [blocksec_ringcore_v1.0-signed.pdf](https://github.com/RingProtocol/audits/blob/main/blocksec_ringcore_v1.0-signed.pdf) | BlockSec | Audit | 2024-02 | stale | Direct | n/a | no match | 0 | 0 | 0 | 2 | n/a |
+| [RingLaunchpad - SlowMist Audit Report.pdf](https://github.com/RingProtocol/audits/blob/main/RingLaunchpad%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2024-11 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 7 | high |
+| [SlowMist Audit Report - Ring Protocol Contracts.pdf](https://github.com/RingProtocol/audits/blob/main/SlowMist%20Audit%20Report%20-%20Ring%20Protocol%20Contracts.pdf) | SlowMist | Audit | 2024-01 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [SlowMist Audit Report - Ring Protocol.pdf](https://github.com/RingProtocol/audits/blob/main/SlowMist%20Audit%20Report%20-%20Ring%20Protocol.pdf) | SlowMist | Audit | 2024-01 | stale | Direct | address | no match | 0 | 0 | 0 | 8 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [3969] OpenZeppelin_audit_periphery_universal_router.pdf — no match: Extracted all contracts and libraries from the scope section of the audit report. The audit date is from the report header: 'September 5, 2024'.
+- [3970] DRAFT_Spearbit_audit_periphery.pdf — no match: No reason recorded
+- [3971] DRAFT_ABDK_audit_periphery_universal_router.pdf — no match: No reason recorded
+- [3972] ABDK_RingProtocol_Hook_v_1_0.pdf — no match: Extracted from scope section listing files: FewETHHook.sol, FewTokenHook.sol, FewUSDTHook.sol. Also included BaseHook, DeltaResolver, IFewWrappedToken as they are part of the audited codebase. Audit date from changelog: 24.11.25.
+- [15030] SlowMist Audit Report - Ring Protocol_en-us.pdf — no match: No reason recorded
+- [15031] blocksec_ringcore_v1.0-signed.pdf — no match: No reason recorded
+- [27831] RingLaunchpad - SlowMist Audit Report.pdf — no match: The audit report focuses on the RingLaunchpad contract and its dependencies. The scope includes the RingLaunchpad contract itself, the Token contract created within it, and interfaces to external contracts (FewWrappedToken, FewFactory, UniswapV2Router02, IWETH, ERC20). The audit date is explicitly stated as 2024.11.27.
+- [27833] SlowMist Audit Report - Ring Protocol Contracts.pdf — no match: Contracts extracted from visibility tables and code references in the audit report. Audit date is the end date of the audit period (2024.01.26 - 2024.01.30).
+- [27834] SlowMist Audit Report - Ring Protocol.pdf — no match: Contracts in scope extracted from the 'Contracts Description' table and 'Visibility Description' section. The audit date is the end date of the audit period (2024.01.26 - 2024.01.30).
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| OpenZeppelin_audit_periphery_universal_router.pdf | PositionManager | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | V4Router | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | BaseActionsRouter | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | DeltaResolver | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | EIP712_v4 | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | ERC721Permit_v4 | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | ImmutableState | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | Multicall_v4 | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | Notifier | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | Permit2Forwarder | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | PoolInitializer | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | ReentrancyLock | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | SafeCallback | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | UnorderedNonce | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | BaseHook | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | IEIP712_v4 | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | IERC721Permit_v4 | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | IMulticall_v4 | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | INotifier | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | IPositionManager | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | IQuoter | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | ISubscriber | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | IV4Router | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | IERC20PermitAllowed | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | Quoter | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | StateView | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | ActionConstants | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | Actions | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | BipsLibrary | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | CalldataDecoder | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | ERC721PermitHash | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | Locker | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | PathKey | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | PoolTicksCounter | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | PositionConfig | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | SafeCast | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | SlippageCheck | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | UniversalRouter | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | Callbacks | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | Dispatcher | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | Lock | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | MigratorImmutables | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | V3ToV4Migrator | unmatched — not counted | — | listed in scope | no |
+| OpenZeppelin_audit_periphery_universal_router.pdf | V4SwapRouter | unmatched — not counted | — | listed in scope | no |
+| DRAFT_Spearbit_audit_periphery.pdf | ActionConstants | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | Actions | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | BalanceDelta | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | BalanceDeltaLibrary | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | BaseActionsRouter | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | BaseHook | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | BeforeSwapDelta | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | BeforeSwapDeltaLibrary | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | BipsLibrary | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | CalldataDecoder | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | Currency | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | DeltaResolver | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | EIP712_v4 | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | ERC1271 | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | ERC721PermitHashLibrary | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | ERC721Permit_v4 | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | Hooks | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | IERC20PermitAllowed | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | IERC721Permit_v4 | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | IHooks | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | INotifier | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | IPoolManager | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | IQuoter | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | IV4Router | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | ImmutableState | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | MockERC20 | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | MockHooks | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | Multicall_v4 | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | Notifier | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | PathKey | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | Pool | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | PoolId | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | PoolIdLibrary | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | PoolInitializer | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | PoolKey | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | PoolManager | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | PoolTicksCounter | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | PositionConfig | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | PositionConfigLibrary | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | PositionManager | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | Quoter | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | SafeCast | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | SignatureVerification | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | SlippageCheck | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | StateLibrary | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | StateView | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | TickBitmap | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | UnorderedNonce | unmatched — not counted | — | — | no |
+| DRAFT_Spearbit_audit_periphery.pdf | V4Router | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | ActionConstants | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | Actions | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | BaseActionsRouter | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | BipsLibrary | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | Callbacks | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | CalldataDecoder | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | DeltaResolver | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | Dispatcher | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | EIP712_v4 | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | ERC721PermitHash | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | ERC721Permit_v4 | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | IEIP712_v4 | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | IERC721Permit_v4 | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | IMulticall_v4 | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | INotifier | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | IPositionManager | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | IQuoter | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | ISubscriber | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | IV4Router | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | ImmutableState | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | Lock | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | Locker | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | MigratorImmutables | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | Multicall_v4 | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | Notifier | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | PathKey | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | Permit2Forwarder | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | PoolInitializer | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | PoolTicksCounter | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | PositionConfig | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | PositionManager | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | Quoter | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | ReentrancyLock | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | SafeCallback | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | SafeCast | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | SlippageCheck | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | UniversalRouter | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | UnorderedNonce | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | V3ToV4Migrator | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | V4Router | unmatched — not counted | — | — | no |
+| DRAFT_ABDK_audit_periphery_universal_router.pdf | V4SwapRouter | unmatched — not counted | — | — | no |
+| ABDK_RingProtocol_Hook_v_1_0.pdf | BaseHook | unmatched — not counted | — | mentioned as core component | no |
+| ABDK_RingProtocol_Hook_v_1_0.pdf | DeltaResolver | unmatched — not counted | — | mentioned as foundational module | no |
+| ABDK_RingProtocol_Hook_v_1_0.pdf | FewETHHook | unmatched — not counted | — | listed in scope | no |
+| ABDK_RingProtocol_Hook_v_1_0.pdf | FewTokenHook | unmatched — not counted | — | listed in scope | no |
+| ABDK_RingProtocol_Hook_v_1_0.pdf | FewUSDTHook | unmatched — not counted | — | listed in scope | no |
+| ABDK_RingProtocol_Hook_v_1_0.pdf | IFewWrappedToken | unmatched — not counted | — | mentioned as interface | no |
+| SlowMist Audit Report - Ring Protocol_en-us.pdf | BlastManager | unmatched — not counted | — | — | no |
+| SlowMist Audit Report - Ring Protocol_en-us.pdf | BlastManagerFromFactory | unmatched — not counted | — | — | no |
+| SlowMist Audit Report - Ring Protocol_en-us.pdf | Core | unmatched — not counted | — | — | no |
+| SlowMist Audit Report - Ring Protocol_en-us.pdf | CoreRef | unmatched — not counted | — | — | no |
+| SlowMist Audit Report - Ring Protocol_en-us.pdf | FewFactory | unmatched — not counted | — | — | no |
+| SlowMist Audit Report - Ring Protocol_en-us.pdf | FewWrappedToken | unmatched — not counted | — | — | no |
+| SlowMist Audit Report - Ring Protocol_en-us.pdf | FixedStakingRewards | unmatched — not counted | — | — | no |
+| SlowMist Audit Report - Ring Protocol_en-us.pdf | Permissions | unmatched — not counted | — | — | no |
+| blocksec_ringcore_v1.0-signed.pdf | FewWrappedToken | unmatched — not counted | — | — | no |
+| blocksec_ringcore_v1.0-signed.pdf | FixedStakingRewards | unmatched — not counted | — | — | no |
+| RingLaunchpad - SlowMist Audit Report.pdf | RingLaunchpad | unmatched — not counted | — | listed in scope and findings | no |
+| RingLaunchpad - SlowMist Audit Report.pdf | Token | unmatched — not counted | — | mentioned in deploy function and findings | no |
+| RingLaunchpad - SlowMist Audit Report.pdf | FewWrappedToken | unmatched — not counted | — | mentioned in deploy function | no |
+| RingLaunchpad - SlowMist Audit Report.pdf | FewFactory | unmatched — not counted | — | mentioned in deploy function | no |
+| RingLaunchpad - SlowMist Audit Report.pdf | UniswapV2Router02 | unmatched — not counted | — | mentioned in deploy function | no |
+| RingLaunchpad - SlowMist Audit Report.pdf | IWETH | unmatched — not counted | — | mentioned in deployETH function | no |
+| RingLaunchpad - SlowMist Audit Report.pdf | ERC20 | unmatched — not counted | — | mentioned in deployWETH function | no |
+| SlowMist Audit Report - Ring Protocol Contracts.pdf | FewFactory | unmatched — not counted | — | mentioned in visibility table and code overview | no |
+| SlowMist Audit Report - Ring Protocol Contracts.pdf | CoreRef | unmatched — not counted | — | mentioned in visibility table and finding N5 | no |
+| SlowMist Audit Report - Ring Protocol Contracts.pdf | FewWrappedToken | unmatched — not counted | — | mentioned in visibility table and findings | no |
+| SlowMist Audit Report - Ring Protocol Contracts.pdf | FixedStakingRewards | unmatched — not counted | — | mentioned in visibility table and findings | no |
+| SlowMist Audit Report - Ring Protocol.pdf | FewFactory | unmatched — not counted | — | listed in scope table and visibility section | no |
+| SlowMist Audit Report - Ring Protocol.pdf | FewWrappedToken | unmatched — not counted | — | listed in scope table and visibility section | no |
+| SlowMist Audit Report - Ring Protocol.pdf | FixedStakingRewards | unmatched — not counted | — | listed in scope table and visibility section | no |
+| SlowMist Audit Report - Ring Protocol.pdf | Core | unmatched — not counted | — | listed in scope table and visibility section | no |
+| SlowMist Audit Report - Ring Protocol.pdf | Permissions | unmatched — not counted | — | mentioned in vulnerability N1 and visibility section | no |
+| SlowMist Audit Report - Ring Protocol.pdf | CoreRef | unmatched — not counted | — | mentioned in vulnerability N5 and visibility section | no |
+| SlowMist Audit Report - Ring Protocol.pdf | BlastManager | unmatched — not counted | — | listed in visibility section | no |
+| SlowMist Audit Report - Ring Protocol.pdf | BlastManagerFromFactory | unmatched — not counted | — | listed in visibility section | no |
 
 ## Coverage Gaps
 
@@ -257,25 +334,32 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 8 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 144 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 9
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: contract_name=25, extraction_exact=45
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 169 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=5
+- Match method counts: n/a
 
 Zero-match audit list:
 
-- [3965] DRAFT_Certora_audit_core.pdf
-- [3966] TrailOfBits_audit_core.pdf
-- [3967] DRAFT_Spearbit_audit_core.pdf
-- [3968] DRAFT_ABDK_audit_core.pdf
+- [3969] OpenZeppelin_audit_periphery_universal_router.pdf
+- [3970] DRAFT_Spearbit_audit_periphery.pdf
+- [3971] DRAFT_ABDK_audit_periphery_universal_router.pdf
+- [3972] ABDK_RingProtocol_Hook_v_1_0.pdf
+- [15030] SlowMist Audit Report - Ring Protocol_en-us.pdf
+- [15031] blocksec_ringcore_v1.0-signed.pdf
+- [27831] RingLaunchpad - SlowMist Audit Report.pdf
+- [27833] SlowMist Audit Report - Ring Protocol Contracts.pdf
+- [27834] SlowMist Audit Report - Ring Protocol.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

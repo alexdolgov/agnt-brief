@@ -1,8 +1,16 @@
 {
   "component": "RedPill",
   "main_contract": "RedPill",
+  "source_entry_count": 8,
   "source_file_count": 8,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RedPill\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,23 +20,9 @@
       "address": "0x187d765829b5570c964f4b551d26d5745f9ed916",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x385e6fdc0c0e3e9535ef1ee4d9530f2f33344bd6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xf841df29c615c66ebf49aba5feba11c889f64dfb",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

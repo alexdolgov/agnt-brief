@@ -13,8 +13,12 @@ library Roles {
     bytes32 public constant DESTINATION_VAULT_FACTORY_MANAGER = keccak256("CREATE_DESTINATION_VAULT_ROLE");
     bytes32 public constant DESTINATION_VAULT_REGISTRY_MANAGER = keccak256("DESTINATION_VAULT_REGISTRY_MANAGER");
     bytes32 public constant DESTINATION_VAULT_MANAGER = keccak256("DESTINATION_VAULT_MANAGER");
+    bytes32 public constant DESTINATION_VAULT_REWARD_MANAGER = keccak256("DESTINATION_VAULT_REWARD_MANAGER");
+
     bytes32 public constant FLUID_DESTINATION_VAULT_MANAGER = keccak256("FLUID_DESTINATION_VAULT_MANAGER");
     bytes32 public constant DESTINATION_MERKLE_CLAIM_MANAGER = keccak256("DESTINATION_MERKLE_CLAIM_MANAGER");
+    bytes32 public constant EULER_REWARD_MANAGER = keccak256("EULER_REWARD_MANAGER");
+    bytes32 public constant EULER_REWARD_EXECUTOR = keccak256("EULER_REWARD_EXECUTOR");
 
     // Auto Pool Factory and Registry Management
     bytes32 public constant AUTO_POOL_REGISTRY_UPDATER = keccak256("REGISTRY_UPDATER");
@@ -81,4 +85,7 @@ library Roles {
 
     // Backing Oracle
     bytes32 public constant BACKING_ORACLE_MANAGER = keccak256("BACKING_ORACLE_MANAGER");
+
+    // Silo Vault Reward Manager
+    bytes32 public constant DESTINATION_VAULT_SILO_MANAGER = keccak256("DESTINATION_VAULT_SILO_MANAGER");
 }

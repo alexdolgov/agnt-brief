@@ -1,68 +1,38 @@
 {
   "component": "RolesReceiver",
   "main_contract": "RolesReceiver",
+  "source_entry_count": 31,
   "source_file_count": 31,
-  "deployment_count": 7,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/blendmoney/audits/blob/main/blend-25-08-10-0-cantinacode.pdf"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RolesReceiver\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x05824db4609ec96c77e99bc61c8fe0acf3269b24",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x7d55a2bd88ed4e886ba8a95871df823db70acddf",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xad7188d0970cbedbdb233f0e5b7367cf149c3449",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xfeb458a7c7284a220b20540b0a8d1e07cb0e3031",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-999",
-      "chain_id": 999,
-      "address": "0xab84362b57a83c4bcdc1de76835eb4dc9345ed50",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0xe4e0f5eb706084f4d598049ddd0abfd2f8431360",
+      "address": "0x9944555a71d6e188a4c2615545e443e7097c5d6e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392205"
     },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x107b9863c91383cb4b4683a1e8d4304216a98fed",
+      "address": "0xa03f41ede4d9a50f87e34fce042034eae74a82e8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392211"
     }
   ]
 }

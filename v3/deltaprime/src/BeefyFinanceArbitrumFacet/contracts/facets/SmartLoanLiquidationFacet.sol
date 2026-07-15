@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-// Last deployed from commit: 499a35c62f8a913d89f7faf78bf5c6b3cea2ee8b;
+// Last deployed from commit: d006dde9ed1c9c0e7a24b60635fdc62ea22cca7b;
 pragma solidity 0.8.17;
 
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
@@ -21,7 +21,7 @@ contract SmartLoanLiquidationFacet is ReentrancyGuardKeccak, SolvencyMethods {
     uint256 private constant _MAX_HEALTH_AFTER_LIQUIDATION = 1.042e18;
 
     //IMPORTANT: KEEP IT IDENTICAL ACROSS FACETS TO BE PROPERLY UPDATED BY DEPLOYMENT SCRIPTS
-    uint256 private constant _MAX_LIQUIDATION_BONUS = 200;
+    uint256 private constant _MAX_LIQUIDATION_BONUS = 100;
 
     using TransferHelper for address payable;
     using TransferHelper for address;
@@ -90,7 +90,7 @@ contract SmartLoanLiquidationFacet is ReentrancyGuardKeccak, SolvencyMethods {
     * @param amountsToRepay utin256[] amounts of tokens provided by liquidator for repayment
     * @param _liquidationBonusPercent per mille bonus for liquidator. Must be lower than or equal to getMaxliquidationBonus()
     **/
-    function unsafeLiquidateLoan(bytes32[] memory assetsToRepay, uint256[] memory amountsToRepay, uint256 _liquidationBonusPercent) external payable onlyWhitelistedLiquidators accountNotFrozen nonReentrant {
+    function unsafeLiquidateLoan(bytes32[] memory assetsToRepay, uint256[] memory amountsToRepay, uint256 _liquidationBonusPercent) external payable onlyWhitelistedLiquidators nonReentrant {
         liquidate(
             LiquidationConfig({
                 assetsToRepay : assetsToRepay,
@@ -112,7 +112,7 @@ contract SmartLoanLiquidationFacet is ReentrancyGuardKeccak, SolvencyMethods {
     * @param amountsToRepay utin256[] amounts of tokens provided by liquidator for repayment
     * @param _liquidationBonusPercent per mille bonus for liquidator. Must be lower than or equal to  getMaxLiquidationBonus()
     **/
-    function liquidateLoan(bytes32[] memory assetsToRepay, uint256[] memory amountsToRepay, uint256 _liquidationBonusPercent) external payable onlyWhitelistedLiquidators accountNotFrozen nonReentrant {
+    function liquidateLoan(bytes32[] memory assetsToRepay, uint256[] memory amountsToRepay, uint256 _liquidationBonusPercent) external payable onlyWhitelistedLiquidators nonReentrant {
         liquidate(
             LiquidationConfig({
                 assetsToRepay : assetsToRepay,
@@ -133,19 +133,19 @@ contract SmartLoanLiquidationFacet is ReentrancyGuardKeccak, SolvencyMethods {
     * @dev This function uses the redstone-evm-connector
     * @param config configuration for liquidation
     **/
-    function liquidate(LiquidationConfig memory config) internal {
+    function liquidate(LiquidationConfig memory config) internal recalculateAssetsExposure{
         SolvencyFacetProdAvalanche.CachedPrices memory cachedPrices = _getAllPricesForLiquidation(config.assetsToRepay);
-
+        
         uint256 initialTotal = _getTotalValueWithPrices(cachedPrices.ownedAssetsPrices, cachedPrices.stakedPositionsPrices); 
         uint256 initialDebt = _getDebtWithPrices(cachedPrices.debtAssetsPrices); 
 
         require(config.liquidationBonusPercent <= getMaxLiquidationBonus(), "Defined liquidation bonus higher than max. value");
-
         require(!_isSolventWithPrices(cachedPrices), "Cannot sellout a solvent account");
 
         //healing means bringing a bankrupt loan to a state when debt is smaller than total value again
         bool healingLoan = initialDebt > initialTotal;
         require(!healingLoan || config.allowUnprofitableLiquidation, "Trying to liquidate bankrupt loan");
+
 
         uint256 suppliedInUSD;
         uint256 repaidInUSD;
@@ -178,7 +178,10 @@ contract SmartLoanLiquidationFacet is ReentrancyGuardKeccak, SolvencyMethods {
             repaidInUSD += repayAmount * cachedPrices.assetsToRepayPrices[i].price * 10 ** 10 / 10 ** token.decimals();
 
             pool.repay(repayAmount);
-            _decreaseExposure(tokenManager, address(token), repayAmount - supplyAmount);
+
+            if (token.balanceOf(address(this)) == 0) {
+                DiamondStorageLib.removeOwnedAsset(config.assetsToRepay[i]);
+            }
 
             emit LiquidationRepay(msg.sender, config.assetsToRepay[i], repayAmount, block.timestamp);
         }
@@ -191,25 +194,18 @@ contract SmartLoanLiquidationFacet is ReentrancyGuardKeccak, SolvencyMethods {
         bonusInUSD = repaidInUSD * config.liquidationBonusPercent / DeploymentConstants.getPercentagePrecision();
 
         //meaning returning all tokens
-        uint256 partToReturnBonus = 10 ** 18; // 1
+        uint256 partToReturn = 10 ** 18; // 1
         uint256 assetsValue = _getTotalValueWithPrices(cachedPrices.ownedAssetsPrices, cachedPrices.stakedPositionsPrices);
 
         if (!healingLoan && assetsValue >= suppliedInUSD + bonusInUSD) {
             //in that scenario we calculate how big part of token to return
-            partToReturnBonus = (suppliedInUSD + bonusInUSD) * 10 ** 18 / assetsValue;
+            partToReturn = (suppliedInUSD + bonusInUSD) * 10 ** 18 / assetsValue;
         }
 
-        if(partToReturnBonus > 0){
+        if(partToReturn > 0){
             // Native token transfer
             if (address(this).balance > 0) {
-                uint256 transferAmount = address(this).balance * partToReturnBonus / 2 / 10 ** 18;
-                payable(DeploymentConstants.getStabilityPoolAddress()).safeTransferETH(transferAmount);
-                emit LiquidationTransfer(DeploymentConstants.getStabilityPoolAddress(), DeploymentConstants.getNativeTokenSymbol(), transferAmount, block.timestamp);
-
-                payable(DeploymentConstants.getTreasuryAddress()).safeTransferETH(transferAmount);
-                emit LiquidationFeesTransfer(DeploymentConstants.getTreasuryAddress(), DeploymentConstants.getNativeTokenSymbol(), transferAmount, block.timestamp);
-
-                _decreaseExposure(tokenManager, DeploymentConstants.getNativeToken(), transferAmount*2);
+                payable(msg.sender).safeTransferETH(address(this).balance * partToReturn / 10 ** 18);
             }
 
             for (uint256 i; i < assetsOwned.length; i++) {
@@ -219,18 +215,12 @@ contract SmartLoanLiquidationFacet is ReentrancyGuardKeccak, SolvencyMethods {
                 }
                 uint256 balance = token.balanceOf(address(this));
 
-                if(balance > 0){
-                    uint256 transferAmount = balance * partToReturnBonus / 2 / 10 ** 18;
-                    address(token).safeTransfer(DeploymentConstants.getStabilityPoolAddress(), transferAmount);
-                    emit LiquidationTransfer(DeploymentConstants.getStabilityPoolAddress(), assetsOwned[i], transferAmount, block.timestamp);
-
-                    address(token).safeTransfer(DeploymentConstants.getTreasuryAddress(), transferAmount);
-                    emit LiquidationFeesTransfer(DeploymentConstants.getTreasuryAddress(), assetsOwned[i], transferAmount, block.timestamp);
-
-                    _decreaseExposure(tokenManager, address(token), transferAmount*2);
-
+                if((balance * partToReturn / 10 ** 18) == 0){
+                    continue;
                 }
 
+                address(token).safeTransfer(msg.sender, balance * partToReturn / 10 ** 18);
+                emit LiquidationTransfer(msg.sender, assetsOwned[i], balance * partToReturn / 10 ** 18, block.timestamp);
             }
         }
 
@@ -251,11 +241,6 @@ contract SmartLoanLiquidationFacet is ReentrancyGuardKeccak, SolvencyMethods {
 
     modifier onlyOwner() {
         DiamondStorageLib.enforceIsContractOwner();
-        _;
-    }
-
-    modifier accountNotFrozen(){
-        require(!DiamondStorageLib.isAccountFrozen(), "Account is frozen");
         _;
     }
 
@@ -289,21 +274,12 @@ contract SmartLoanLiquidationFacet is ReentrancyGuardKeccak, SolvencyMethods {
 
     /**
      * @dev emitted when funds are sent to liquidator during liquidation
-     * @param treasury the address of stability pool
+     * @param liquidator the address initiating repayment
      * @param asset token sent to a liquidator
      * @param amount of sent funds
      * @param timestamp of the transfer
      **/
-    event LiquidationTransfer(address indexed treasury, bytes32 indexed asset, uint256 amount, uint256 timestamp);
-
-    /**
-     * @dev emitted when funds are sent to fees treasury during liquidation
-     * @param treasury the address of fees treasury
-     * @param asset token sent to a liquidator
-     * @param amount of sent funds
-     * @param timestamp of the transfer
-     **/
-    event LiquidationFeesTransfer(address indexed treasury, bytes32 indexed asset, uint256 amount, uint256 timestamp);
+    event LiquidationTransfer(address indexed liquidator, bytes32 indexed asset, uint256 amount, uint256 timestamp);
 
     /**
      * @dev emitted when a new liquidator gets whitelisted

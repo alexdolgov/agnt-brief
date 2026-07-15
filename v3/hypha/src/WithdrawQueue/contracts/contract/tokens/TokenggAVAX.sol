@@ -87,9 +87,6 @@ contract TokenggAVAX is Initializable, ERC4626Upgradeable, BaseUpgradeable {
 	/// @notice Role identifier for withdraw queue operations
 	bytes32 public constant WITHDRAW_QUEUE_ROLE = keccak256("WITHDRAW_QUEUE_ROLE");
 
-	/// @notice Role identifier for sync rewards operations
-	bytes32 public constant SYNC_REWARDS_ROLE = keccak256("SYNC_REWARDS_ROLE");
-
 	/// @notice Source identifier for minipool operations
 	bytes32 public constant MINIPOOL_SOURCE = bytes32("MINIPOOL_SOURCE");
 
@@ -151,9 +148,9 @@ contract TokenggAVAX is Initializable, ERC4626Upgradeable, BaseUpgradeable {
 		require(msg.sender == address(asset));
 	}
 
-	/// @notice Distributes rewards to TokenggAVAX holders. Only addresses with SYNC_REWARDS_ROLE can call.
+	/// @notice Distributes rewards to TokenggAVAX holders. Public, anyone can call.
 	/// 				All surplus `asset` balance of the contract over the internal balance becomes queued for the next cycle.
-	function syncRewards() public onlyRole(SYNC_REWARDS_ROLE) {
+	function syncRewards() public {
 		uint32 timestamp = block.timestamp.safeCastTo32();
 
 		if (timestamp < rewardsCycleEnd) {
@@ -579,25 +576,6 @@ contract TokenggAVAX is Initializable, ERC4626Upgradeable, BaseUpgradeable {
 	/// @return address The current admin address
 	function _getAdmin() internal view returns (address) {
 		return _currentAdmin;
-	}
-
-	/// @notice Allows the Guardian to withdraw any amount of WAVAX from the contract
-	/// @dev This function only transfers WAVAX and does not adjust any internal variables
-	/// @param amount The amount of WAVAX to withdraw
-	/// @param to The address to send the WAVAX to
-	function guardianWithdrawWAVAX(uint256 amount, address to) external onlyGuardian {
-		require(to != address(0), "Cannot withdraw to zero address");
-		require(amount > 0, "Amount must be greater than zero");
-		require(asset.balanceOf(address(this)) >= amount, "Insufficient WAVAX balance");
-
-		asset.safeTransfer(to, amount);
-	}
-
-	/// @notice Allows the Guardian to set the lastRewardsAmt to recover if syncRewards gets called
-	/// @dev This function allows the guardian to manually adjust the lastRewardsAmt in case of issues
-	/// @param newLastRewardsAmt The new value for lastRewardsAmt
-	function setLastReward(uint192 newLastRewardsAmt) external onlyGuardian {
-		lastRewardsAmt = newLastRewardsAmt;
 	}
 
 	/// @dev Storage gap for future upgrades

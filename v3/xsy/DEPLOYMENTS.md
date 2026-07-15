@@ -1,59 +1,6 @@
 # xsy — deployments
 
-53 verified deployment(s) across 8 component(s).
+0 verified deployment(s) across 0 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| avalanche | `0x0df9b7e7573f301a21abdfa07b44790e9a0a0926` | OFTExtended | impl | inactive | no |
-| avalanche | `0x110d9c781d30a99f61154b5d696772acc941a7fc` | ERC1967Proxy | proxy | live | no |
-| avalanche | `0x163f7b2a5bc41ef60de77b0f3692225adceeb735` | ERC1967Proxy | proxy | live | no |
-| avalanche | `0x3183236cdce208888c1857c2f718e3628c063b73` | ERC1967Proxy-2 | proxy | live | no |
-| avalanche | `0x386cdf40bc7a2262769f2a5bbe5de4ee630737cd` | OFTExtended | proxy | live | no |
-| avalanche | `0x3c6594cc722df7c5517518aca90d04742d37587a` | OFTExtended | impl | inactive | no |
-| avalanche | `0x3f64ed68e4cf48b36fad98b2534ea3719e025127` | OFTExtended | impl | inactive | no |
-| avalanche | `0x4906887b2702ced2a218b70c26045e376b17494d` | ERC1967Proxy | proxy | live | no |
-| avalanche | `0x580d5e1399157fd0d58218b7a514b60974f2ab01` | ERC1967Proxy-3 | proxy | live | no |
-| avalanche | `0x5c5864c283e53caca9fe2488dd82948b04dadfcb` | OFTExtended | proxy | live | no |
-| avalanche | `0x639c72eea35e50f5e2911891389fc4e8422587c4` | Unity | impl | live | yes |
-| avalanche | `0x65a83c6a678f7849d3d3aeab6bbabe9ad1d33b6e` | ERC1967Proxy-2 | proxy | live | no |
-| avalanche | `0x6ee31bd34f28f3ecc4790c58ca50920af0b4d1d0` | ERC1967Proxy | impl | inactive | no |
-| avalanche | `0x6fc9da5039e336a99c47afceccd8bd276a16688f` | OFTExtended | proxy | live | no |
-| avalanche | `0x76de251bee4a3b902857f6a0fce8a320c4167e40` | BeaconProxy | impl | live | no |
-| avalanche | `0x79fc5fd276c03aaa8418871ce3a5c5767a0241ef` | OFTExtended | impl | inactive | no |
-| avalanche | `0x902714c7661697c873c76dec426b63b2593ecc0a` | BeaconProxy | impl | live | no |
-| avalanche | `0x94b639eb528b6076a8f10739c74849bd8692b950` | OFTExtended | impl | inactive | no |
-| avalanche | `0x9b9cf4f6255f6b451132bdf7a3682c7299d4c77a` | ERC1967Proxy-2 | proxy | live | no |
-| avalanche | `0x9cf467e119750e64dbe473aea83633019def51f8` | ERC1967Proxy-2 | proxy | live | no |
-| avalanche | `0xa099f7e42c0cb56e24cc4d45f9c4f278b1d9f9bc` | ERC1967Proxy | impl | inactive | no |
-| avalanche | `0xa6c1ba278406bae69b1eb77c95f0afc7ba59ce61` | OFTExtended | proxy | live | no |
-| avalanche | `0xb422df4b86289a15913c035445a0754178c6f8ce` | ERC1967Proxy | impl | inactive | no |
-| avalanche | `0xca7bd86983a2474f3c7cb45207bc16760cee07cf` | ClBeaconProxy | proxy | live | no |
-| avalanche | `0xdbc5192a6b6ffee7451301bb4ec312f844f02b4a` | ERC1967Proxy-2 | proxy | live | no |
-| avalanche | `0xf8adf3fc13b50d840ad586490072ecbce7a401a9` | ERC1967Proxy-2 | proxy | live | no |
-| base | `0x0df9b7e7573f301a21abdfa07b44790e9a0a0926` | ERC1967Proxy | proxy | live | no |
-| base | `0x163f7b2a5bc41ef60de77b0f3692225adceeb735` | ERC1967Proxy | proxy | live | no |
-| base | `0x195edea3c7e1900eaffa9300cb7d55c8bfa6caa0` | ERC1967Proxy | impl | inactive | no |
-| base | `0x26e3b466395f47ed7529be5cfde46d106f83ce0c` | ERC1967Proxy | proxy | live | no |
-| base | `0x2ef787561f3a79371ee1165b7bee6dc6ffb09832` | VaultComposerSync | impl | live | no |
-| base | `0x386cdf40bc7a2262769f2a5bbe5de4ee630737cd` | ERC1967Proxy | impl | inactive | no |
-| base | `0x3c6594cc722df7c5517518aca90d04742d37587a` | ERC1967Proxy | impl | inactive | no |
-| base | `0x3f64ed68e4cf48b36fad98b2534ea3719e025127` | ERC1967Proxy | proxy | live | no |
-| base | `0x4906887b2702ced2a218b70c26045e376b17494d` | ERC1967Proxy | impl | inactive | no |
-| base | `0x58803c3d2a237a8c0c9954381f7dedf8138f4d93` | ERC1967Proxy | impl | inactive | no |
-| base | `0x5c5864c283e53caca9fe2488dd82948b04dadfcb` | VaultComposerSync | impl | inactive | no |
-| base | `0x6fc9da5039e336a99c47afceccd8bd276a16688f` | ERC1967Proxy | impl | inactive | no |
-| base | `0x8b6d04b43b908c5deaa7637c29ab0fbe6e00cc7d` | ERC1967Proxy | impl | inactive | no |
-| base | `0x94b639eb528b6076a8f10739c74849bd8692b950` | ERC1967Proxy | proxy | live | no |
-| base | `0xa099f7e42c0cb56e24cc4d45f9c4f278b1d9f9bc` | ERC1967Proxy | impl | inactive | no |
-| base | `0xa6c1ba278406bae69b1eb77c95f0afc7ba59ce61` | ERC1967Proxy | proxy | live | no |
-| base | `0xa8f057f7425beff236d69490341ea03fccb88104` | VaultComposerSync | impl | inactive | no |
-| base | `0xb422df4b86289a15913c035445a0754178c6f8ce` | ERC1967Proxy | proxy | live | no |
-| base | `0xba515304d8153c4b162dc79f867e152df9c127eb` | ERC1967Proxy | proxy | live | no |
-| base | `0xba515eed0119acb7cfe8fab3acd6b362f3ed5319` | ERC1967Proxy | proxy | live | no |
-| base | `0xc6fe7c5010621ab3ca5f4c018fad632f78b4d3f1` | ERC1967Proxy | proxy | live | no |
-| base | `0xcdf104a5c87110052a82eeb4bd37dda7dff430ef` | ERC1967Proxy | proxy | live | no |
-| base | `0xcfd564bbf4e50a248835ace8ca889f73217162d4` | ERC1967Proxy | proxy | live | no |
-| base | `0xd41421777c9ddd46e29fd4180ae6e51b05c6063a` | ERC1967Proxy | impl | inactive | no |
-| base | `0xd4c4efa40ff8e5e8f46c43ad1daa69ff7d1bf132` | ERC1967Proxy | impl | inactive | no |
-| base | `0xd84fdffd8e82c407b51ff2a763eb324014f61bbc` | ERC1967Proxy | impl | inactive | no |
-| base | `0xf2f6e1a62d3d1f0efb01c28e485f1dc8b173ce2b` | ERC1967Proxy | impl | inactive | no |

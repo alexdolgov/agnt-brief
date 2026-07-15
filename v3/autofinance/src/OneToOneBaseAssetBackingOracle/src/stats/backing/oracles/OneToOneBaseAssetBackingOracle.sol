@@ -2,7 +2,7 @@
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
 pragma solidity ^0.8.24;
 
-import { Errors } from "src/utils/Errors.sol";
+import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
 import { IBackingOracle } from "src/interfaces/stats/backing/IBackingOracle.sol";
 
 /// @notice Backing Oracle for tokens who, for our considerations, are backed 1:1-ETH/S/other L1 chain token
@@ -21,7 +21,7 @@ contract OneToOneBaseAssetBackingOracle is IBackingOracle {
     constructor(
         uint256 _backingValue
     ) {
-        Errors.verifyNotZero(_backingValue, "backingValue");
+        AutopilotErrors.verifyNotZero(_backingValue, "backingValue");
         backingValue = _backingValue;
     }
 

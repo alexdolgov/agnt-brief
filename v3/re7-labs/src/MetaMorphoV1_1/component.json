@@ -1,7 +1,15 @@
 {
   "component": "MetaMorphoV1_1",
   "main_contract": "MetaMorphoV1_1",
+  "source_entry_count": 41,
   "source_file_count": 41,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MetaMorphoV1_1\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x2c0f7e917257926ba6233b20de19d7fe3210858c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "chain-130",
@@ -20,7 +30,9 @@
       "address": "0x6af5e46456a8ac80bb53a02799965def99c26e52",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "chain-130",
@@ -28,7 +40,9 @@
       "address": "0xa48f8a10f16bb50a588606553d9fe7338050f8cd",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "polygon",
@@ -36,7 +50,9 @@
       "address": "0xf91d80e43272dbc610551e8c872e0438d62c1c69",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,8 +1,16 @@
 {
   "component": "CurveConvexDestinationVault",
   "main_contract": "CurveConvexDestinationVault",
+  "source_entry_count": 77,
   "source_file_count": 77,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CurveConvexDestinationVault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x356c79ab2b2cefab685004ce827146058a6c3e77",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xd78860acc0621d87aeea94f7d36eb7bb7cbe3631",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391564"
     }
   ]
 }

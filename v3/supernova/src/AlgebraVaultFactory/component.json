@@ -1,26 +1,30 @@
 {
   "component": "AlgebraVaultFactory",
   "main_contract": "AlgebraVaultFactory",
+  "source_entry_count": 9,
   "source_file_count": 9,
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AlgebraVaultFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://resources.supernova.xyz/Paladin_Supernova_Final_Report.pdf"
+  ],
   "addresses": [
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x789a0e0a6aedf3e6c090d305ac59cfaf75a43e62",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
     {
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xafc0497f052a3b5274659308d0b875271c03038d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399844"
     }
   ]
 }

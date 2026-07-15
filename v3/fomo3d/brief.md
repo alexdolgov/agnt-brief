@@ -1,43 +1,73 @@
 # Agentic Audit Brief: Fomo3D
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Fomo3D (`fomo3d`)
+- Website: [https://exitscam.me/](https://exitscam.me/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:52.402Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-ae05
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 17 unique implementations (17 raw deployments)
+- Contract surface: 1 unique implementations (1 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $1,869,722.54
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Farm. Structurally: 9 project-authored contract(s) across 1 chain(s); built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Fomo3D. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 2 common project-authored base contract(s) (f3devents, modularlong). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 1 contract row(s) across ethereum. Structural roles: 1 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 1
+- Structural roles: core (1)
+- Contract kinds: contract (1)
+- Detected standards: none
+- Frameworks: openzeppelin (1)
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 25; live-surface contracts included: 17 (4 live, 13 unknown).
-- Excluded by liveness: 8 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 1; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/4 (0.0%)
-- Deployed-live implementations: 4 of 17 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/4
-- Verified + Unaudited implementations: 4
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 13
-- Unique implementations: 17
-- Raw deployments: 17
+- Unverified implementations: 0
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -56,14 +86,11 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 - None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Divies | unknown | ethereum | n/a | [`0xc0c001...929ad0`](./contracts/ethereum-1/0xc0c001140319c5f114f8467295b1f22f86929ad0/) | ⚠️ Unaudited |
-| FoMo3Dlong | unknown | ethereum | n/a | [`0xa62142...389da1`](./contracts/ethereum-1/0xa62142888aba8370742be823c1782d17a0389da1/) | ⚠️ Unaudited |
-| FoMo3DSoon | unknown | ethereum | n/a | [`0x4e8ecf...bf00b8`](./contracts/ethereum-1/0x4e8ecf79ade5e2c49b9e30d795517a81e0bf00b8/) | ⚠️ Unaudited |
-| Hourglass | unknown | ethereum | n/a | [`0xb3775f...91efbe`](./contracts/ethereum-1/0xb3775fb83f7d12a36e0475abdd1fca35c091efbe/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| FoMo3Dlong | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-240044 | `0xa62142...389da1` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -77,30 +104,22 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (13)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x1fb546...ea51d3` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x27afcb...8adccb` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x32967d...37d590` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4c7b85...4420f5` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7e58d5...52d8ac` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x902d1a...d1aef4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xbf5772...91f5b1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc25d03...69570b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc6ffc9...17716f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd14f5d...58c708` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf7da96...93152d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf820cf...898277` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf9ba09...e48d7d` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -112,10 +131,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 17 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -123,6 +142,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

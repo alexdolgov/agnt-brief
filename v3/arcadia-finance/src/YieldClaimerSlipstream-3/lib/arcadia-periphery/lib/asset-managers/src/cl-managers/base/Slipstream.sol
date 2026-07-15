@@ -2,7 +2,7 @@
  * Created by Pragma Labs
  * SPDX-License-Identifier: BUSL-1.1
  */
-pragma solidity ^0.8.34;
+pragma solidity ^0.8.0;
 
 import { AbstractBase } from "./AbstractBase.sol";
 import { ICLPositionManager } from "../interfaces/ICLPositionManager.sol";
@@ -87,9 +87,10 @@ abstract contract Slipstream is AbstractBase {
      * @param positionManager the contract address of the position manager to check.
      */
     function isPositionManager(address positionManager) public view virtual override returns (bool) {
-        return (positionManager == address(STAKED_SLIPSTREAM_AM)
-                || positionManager == address(STAKED_SLIPSTREAM_WRAPPER)
-                || positionManager == address(POSITION_MANAGER));
+        return (
+            positionManager == address(STAKED_SLIPSTREAM_AM) || positionManager == address(STAKED_SLIPSTREAM_WRAPPER)
+                || positionManager == address(POSITION_MANAGER)
+        );
     }
 
     /* ///////////////////////////////////////////////////////////////
@@ -294,33 +295,13 @@ abstract contract Slipstream is AbstractBase {
      */
     function _burn(uint256[] memory balances, address, PositionState memory position) internal virtual override {
         // Remove liquidity of the position and claim outstanding fees.
-        _decreaseLiquidity(balances, address(0), position, position.liquidity);
-
-        // Burn the position.
-        POSITION_MANAGER.burn(position.id);
-    }
-
-    /* ///////////////////////////////////////////////////////////////
-                    DECREASE LIQUIDITY LOGIC
-    /////////////////////////////////////////////////////////////// */
-
-    /**
-     * @notice Decreases liquidity of the Liquidity Position.
-     * @param balances The balances of the underlying tokens.
-     * param positionManager The contract address of the Position Manager.
-     * @param position A struct with position and pool related variables.
-     * @param liquidity The amount of liquidity to decrease.
-     * @dev Must update the balances and delta liquidity after the decrease.
-     */
-    function _decreaseLiquidity(uint256[] memory balances, address, PositionState memory position, uint128 liquidity)
-        internal
-        virtual
-        override
-    {
-        // Remove liquidity of the position and claim outstanding fees.
         POSITION_MANAGER.decreaseLiquidity(
             ICLPositionManager.DecreaseLiquidityParams({
-                tokenId: position.id, liquidity: liquidity, amount0Min: 0, amount1Min: 0, deadline: block.timestamp
+                tokenId: position.id,
+                liquidity: position.liquidity,
+                amount0Min: 0,
+                amount1Min: 0,
+                deadline: block.timestamp
             })
         );
 
@@ -335,6 +316,9 @@ abstract contract Slipstream is AbstractBase {
         );
         balances[0] += amount0;
         balances[1] += amount1;
+
+        // Burn the position.
+        POSITION_MANAGER.burn(position.id);
     }
 
     /* ///////////////////////////////////////////////////////////////
@@ -348,21 +332,19 @@ abstract contract Slipstream is AbstractBase {
      * @param zeroToOne Bool indicating if token0 has to be swapped to token1 or opposite.
      * @param amountOut The amount of tokenOut that must be swapped to.
      */
-    // forge-lint: disable-next-item(unsafe-typecast)
     function _swapViaPool(uint256[] memory balances, PositionState memory position, bool zeroToOne, uint256 amountOut)
         internal
         virtual
         override
     {
         // Do the swap.
-        (int256 deltaAmount0, int256 deltaAmount1) = ICLPool(position.pool)
-            .swap(
-                address(this),
-                zeroToOne,
-                -int256(amountOut),
-                zeroToOne ? CLMath.MIN_SQRT_PRICE_LIMIT : CLMath.MAX_SQRT_PRICE_LIMIT,
-                abi.encode(position.tokens[0], position.tokens[1], position.tickSpacing)
-            );
+        (int256 deltaAmount0, int256 deltaAmount1) = ICLPool(position.pool).swap(
+            address(this),
+            zeroToOne,
+            -int256(amountOut),
+            zeroToOne ? CLMath.MIN_SQRT_PRICE_LIMIT : CLMath.MAX_SQRT_PRICE_LIMIT,
+            abi.encode(position.tokens[0], position.tokens[1], position.tickSpacing)
+        );
 
         // Update the balances.
         balances[0] = zeroToOne ? balances[0] - uint256(deltaAmount0) : balances[0] + uint256(-deltaAmount0);
@@ -386,7 +368,6 @@ abstract contract Slipstream is AbstractBase {
             revert OnlyPool();
         }
 
-        // forge-lint: disable-next-item(unsafe-typecast)
         if (amount0Delta > 0) {
             ERC20(token0).safeTransfer(msg.sender, uint256(amount0Delta));
         } else if (amount1Delta > 0) {
@@ -444,7 +425,7 @@ abstract contract Slipstream is AbstractBase {
     /////////////////////////////////////////////////////////////// */
 
     /**
-     * @notice Increases liquidity of the Liquidity Position.
+     * @notice Swaps one token for another to rebalance the Liquidity Position.
      * @param balances The balances of the underlying tokens.
      * param positionManager The contract address of the Position Manager.
      * @param position A struct with position and pool related variables.

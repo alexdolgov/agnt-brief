@@ -1,5 +1,16 @@
 # Agentic Audit Brief: Angles
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 1 across 1 audit(s)
+- Eligible audit results: 1 (1 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ⚠️ Lifecycle status: DECLINING - TVL dropped 58.3% over 90 days
 
 ## Project Overview
@@ -7,73 +18,97 @@
 - Project: Angles (`angles`)
 - Website: [https://angles.fi/](https://angles.fi/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-03T21:05:27.224Z
-- Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: sonic
-- Contract surface: 25 unique implementations (47 raw deployments)
+- Contract surface: 3 unique implementations (3 raw deployments)
+- Coverage basis: 1/3 confirmed own live verified implementations (33.3%); conservative 33.3% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $471,730.00
-- On-chain TVL (included contracts): $219,426.20
-- TVL by chain: Sonic $219,426.20
+- On-chain TVL (included contracts): $219,422.48
+- TVL by chain: Sonic $219,422.48
 
 ## Project Description
 
-Onchain Capital Allocator. Structurally: 28 project-authored contract(s) across 1 chain(s); 3 ERC4626 vaults, 5 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on solady.
+This brief describes the observed EVM deployment and audit surface for Angles. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 9 functional families. Its contracts share 2 common project-authored base contract(s) (initializegovernedupgradeabilityproxy, governable). Dominant framework: solady.
+The pinned logic-topography run contains 6 contract row(s) across sonic. Structural roles: 5 core, 1 unclassified. 5 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 6
+- Structural roles: core (5), unclassified (1)
+- Contract kinds: contract (6)
+- Detected standards: erc1967proxy (3), erc20 (1), erc4626 (1)
+- Frameworks: openzeppelin (5), openzeppelin-upgradeable (2)
+- Upgradeable-pattern rows: 5
+
+## Fork Analysis
+
+0 of 3 contracts are derived from known codebases. 3 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- AnglesVaultProxy (`0xe5203b...ef4269`, chain 146)
+- anSProxy (`0x0c4e18...9ec987`, chain 146)
+- WrappedAnsProxy (`0xfa85fe...5abd70`, chain 146)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 80; live-surface contracts included: 45 (30 live, 15 unknown).
-- Excluded by liveness: 35 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 6; live-surface contracts included: 6 (3 live, 3 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 3/3 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/10 (0.0%)
-- Deployed-live implementations: 10 of 25 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/10
-- Verified + Unaudited implementations: 10
+- Coverage of address-book-owned deployed-live implementations: 1/3 (33.3%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 3 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 3
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 1/3
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 15
-- Unique implementations: 25
-- Raw deployments: 47
+- Unverified implementations: 0
+- Unique implementations: 3
+- Raw deployments: 3
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $219,426.20
+- Scoreable audits (matched contracts): 1
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-02 (aging)
 - Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
-- Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $219,426.20 represents exposure in a protocol with declining activity.
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
+- Tier 1 coverage: 33.3% (Spearbit)
+- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| Spearbit | Tier 1 | 1 | 33.3% | 2025-02 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (1)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AnglesVault | core_logic | project_anchor | own_supporting | 1 | sonic | unit-379056 | `0xe5203b...ef4269` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (10)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AnglesVault | core_logic | sonic | n/a | 2 deployments: sonic [`0xd4012c...63e1f2`](./contracts/sonic-146/0xd4012c5f3cbcc383d358c5086da694757463e1f2/); sonic `0xe5203b...ef4269` | ⚠️ Unaudited |
-| PoolV2 | core_logic | sonic | n/a | 2 deployments: sonic [`0x033f4a...b3c722`](./contracts/sonic-146/0x033f4a109fc11a11d3afb92dca0ab6c30bb3c722/); sonic `0x4bf2d4...ce9eea` | ⚠️ Unaudited |
-| Pool | core_logic | sonic | n/a | 5 deployments: sonic [`0x6c2a52...41c452`](./contracts/sonic-146/0x6c2a529921f70eaf44d689ef882d96f09041c452/); sonic `0x71e558...3d6a54`; sonic `0xc8291d...db3dd8`; sonic `0xc85ada...0b928f`; sonic `0xef7073...1237eb` | ⚠️ Unaudited |
-| Aggregator | unknown | sonic | n/a | 4 deployments: sonic [`0x6d06b7...b0ac35`](./contracts/sonic-146/0x6d06b7fac4f6393672fd038083370d38f3b0ac35/); sonic `0x8417bd...00552f`; sonic `0xa342a0...3b9070`; sonic `0xfb644c...1d41cd` | ⚠️ Unaudited |
-| AnglesSmartRouter | adapter | sonic | n/a | [`0x0af78f...189a00`](./contracts/sonic-146/0x0af78f0ccb7d1a042d13f3d4def51cec7c189a00/) | ⚠️ Unaudited |
-| ManualRegistry | registry | sonic | n/a | [`0x9786db...07be7b`](./contracts/sonic-146/0x9786db1486a2f67977ef1e3dfbd0eb01e407be7b/) | ⚠️ Unaudited |
-| PoolToken | core_logic | sonic | n/a | 7 deployments: sonic [`0x2f45b6...ef51fd`](./contracts/sonic-146/0x2f45b61b90b821efdb4525f89162cfd857ef51fd/); sonic `0x2f6679...b39b45`; sonic `0x3bcb4f...1d5f8b`; sonic `0x451d00...62666e`; sonic `0x88cf50...c3bb7d`; sonic `0xa93c94...d48c4d`; sonic `0xe0c7af...24eb48` | ⚠️ Unaudited |
-| SFC | unknown | sonic | n/a | [`0xfc00fa...000000`](./contracts/sonic-146/0xfc00face00000000000000000000000000000000/) | ⚠️ Unaudited |
-| Vault | core_logic | sonic | n/a | 7 deployments: sonic [`0x097df3...1bfb0f`](./contracts/sonic-146/0x097df3dfb8c5b090e661296563f1fe24701bfb0f/); sonic `0x15e96c...92e69d`; sonic `0x1c8a00...8c5635`; sonic `0x1edbcc...51945e`; sonic `0x7a1f5f...736465`; sonic `0xcafd81...e14d41`; sonic `0xedea26...08bca5` | ⚠️ Unaudited |
-| wanS | unknown | sonic | n/a | 2 deployments: sonic [`0xba3bb1...207a64`](./contracts/sonic-146/0xba3bb17d19e556900e42e7c1e9e89dc6d3207a64/); sonic `0xfa85fe...5abd70` | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| anS | unknown | project_anchor | own_supporting | 1 | sonic | unit-379054 | `0x0c4e18...9ec987` | ⚠️ Unaudited |
+| wanS | unknown | project_anchor | own_supporting | 1 | sonic | unit-379055 | `0xfa85fe...5abd70` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,33 +122,31 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (15)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | sonic | n/a | `0x02b472...2cee57` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x093045...22d7bd` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x16fdf1...089993` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x1f88ea...2a5884` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x34fe76...228945` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x510d02...3e4ba4` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x5b52fa...2dc073` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x5dbba7...cba78f` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0x7f7eb9...ed4c31` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xa7b87c...08029e` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xb52a8d...e7207a` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xbe7cc6...d6fe53` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xd68c5c...ec840b` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xe904a7...c6f23d` | ❓ Unverified |
-| UnnamedContract | unknown | sonic | n/a | `0xf46b21...740497` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [spaces/llPyhrg6nxGZCqiOX61A/uploads/bSKwCaHEqGfKBo6FUXtL/SpearBit x Angles.pdf](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FllPyhrg6nxGZCqiOX61A%2Fuploads%2FbSKwCaHEqGfKBo6FUXtL%2FSpearBit%20x%20Angles.pdf?alt=media) | Spearbit | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [spaces/llPyhrg6nxGZCqiOX61A/uploads/bSKwCaHEqGfKBo6FUXtL/SpearBit x Angles.pdf](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FllPyhrg6nxGZCqiOX61A%2Fuploads%2FbSKwCaHEqGfKBo6FUXtL%2FSpearBit%20x%20Angles.pdf?alt=media) | Spearbit | Audit | 2025-02 | aging | Direct | contract_name | matched | 1 | 1 | 0 | 0 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [3224] spaces/llPyhrg6nxGZCqiOX61A/uploads/bSKwCaHEqGfKBo6FUXtL/SpearBit x Angles.pdf — matched: The report focuses on the AnglesVault contract. No other contracts are explicitly listed in scope.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| spaces/llPyhrg6nxGZCqiOX61A/uploads/bSKwCaHEqGfKBo6FUXtL/SpearBit x Angles.pdf | AnglesVault | own proxy deployment | AnglesVaultProxy (proxy) (selected) `0xe5203b...ef4269` — deployed 2025-01-21 13:52:52+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
@@ -121,34 +154,27 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| sonic | [`0x033f4a...b3c722`](./contracts/sonic-146/0x033f4a109fc11a11d3afb92dca0ab6c30bb3c722/) | PoolV2 | core_logic | $3.72 | Verified native implementation with $3.72 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x6c2a52...41c452`](./contracts/sonic-146/0x6c2a529921f70eaf44d689ef882d96f09041c452/) | Pool | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x6d06b7...b0ac35`](./contracts/sonic-146/0x6d06b7fac4f6393672fd038083370d38f3b0ac35/) | Aggregator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x0af78f...189a00`](./contracts/sonic-146/0x0af78f0ccb7d1a042d13f3d4def51cec7c189a00/) | AnglesSmartRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x9786db...07be7b`](./contracts/sonic-146/0x9786db1486a2f67977ef1e3dfbd0eb01e407be7b/) | ManualRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x2f45b6...ef51fd`](./contracts/sonic-146/0x2f45b61b90b821efdb4525f89162cfd857ef51fd/) | PoolToken | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| sonic | [`0x097df3...1bfb0f`](./contracts/sonic-146/0x097df3dfb8c5b090e661296563f1fe24701bfb0f/) | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x0c4e18...9ec987` | anS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xfa85fe...5abd70` | wanS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 22 |
+| native | 3 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 2 |
+| standard_library | 0 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
-
-Zero-match audit list:
-
-- [3224] spaces/llPyhrg6nxGZCqiOX61A/uploads/bSKwCaHEqGfKBo6FUXtL/SpearBit x Angles.pdf
+- Address-book scope dispositions: 1 own (1 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 1 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1
+- Match method counts: unique_name=1
 
 Fork inheritance lineage and inherited audits are included when available.

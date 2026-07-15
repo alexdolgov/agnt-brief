@@ -1,13 +1,12 @@
 // SPDX-License-Identifier: AGPL-3.0
 pragma solidity ^0.8.21;
 
-import "@solmate/auth/Owned.sol";
-
 /// @title TwoStepOwned
 /// @author Florida St
 /// @notice This contract is used to transfer ownership of a contract in two steps.
-abstract contract TwoStepOwned is Owned {
+abstract contract TwoStepOwned {
     event TransferOwnerRequested(address newOwner);
+    event OwnershipTransferred(address indexed user, address indexed newOwner);
 
     error TooSoonError();
     error InvalidInputError();
@@ -16,8 +15,10 @@ abstract contract TwoStepOwned is Owned {
 
     address public pendingOwner;
     uint256 public pendingOwnerTime;
+    address public owner;
 
-    constructor(address _owner, uint256 _minWaitTime) Owned(_owner) {
+    constructor(address _owner, uint256 _minWaitTime) {
+        owner = _owner;
         pendingOwnerTime = type(uint256).max;
         MIN_WAIT_TIME = _minWaitTime;
     }
@@ -40,10 +41,17 @@ abstract contract TwoStepOwned is Owned {
         if (newOwner != pendingOwner) {
             revert InvalidInputError();
         }
+        address previousOwner = owner;
         owner = newOwner;
         pendingOwner = address(0);
         pendingOwnerTime = type(uint256).max;
 
-        emit OwnershipTransferred(owner, newOwner);
+        emit OwnershipTransferred(previousOwner, newOwner);
+    }
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "UNAUTHORIZED");
+
+        _;
     }
 }

@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.0;
-
 import {Message} from "../libs/Message.sol";
 
 import {IPostDispatchHook} from "../interfaces/hooks/IPostDispatchHook.sol";
@@ -21,7 +20,7 @@ contract TestPostDispatchHook is AbstractPostDispatchHook {
 
     /// @inheritdoc IPostDispatchHook
     function hookType() external pure override returns (uint8) {
-        return uint8(IPostDispatchHook.HookTypes.UNUSED);
+        return uint8(IPostDispatchHook.Types.UNUSED);
     }
 
     function supportsMetadata(
@@ -36,8 +35,8 @@ contract TestPostDispatchHook is AbstractPostDispatchHook {
 
     // ============ Internal functions ============
     function _postDispatch(
-        bytes calldata,
-        /*metadata*/ bytes calldata message
+        bytes calldata /*metadata*/,
+        bytes calldata message
     ) internal override {
         messageDispatched[message.id()] = true;
     }

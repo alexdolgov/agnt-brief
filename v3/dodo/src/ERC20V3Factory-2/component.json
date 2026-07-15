@@ -1,7 +1,15 @@
 {
   "component": "ERC20V3Factory-2",
   "main_contract": "ERC20V3Factory",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC20V3Factory-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x7466c6fe28180c33e2a35989fd6833c8dd5a7e16",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393919"
     },
     {
       "chain": "polygon",
@@ -20,7 +30,9 @@
       "address": "0x5258db198f6e39889bfca6016786af562ab8be91",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393946"
     }
   ]
 }

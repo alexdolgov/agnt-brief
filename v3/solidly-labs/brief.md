@@ -1,71 +1,157 @@
 # Agentic Audit Brief: Solidly Labs
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 1 across 1 audit(s)
+- Eligible audit results: 3 (1 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Solidly Labs (`solidly-labs`)
 - Website: [https://solidly.com](https://solidly.com)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:54.527Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16bc
-- Chains: ethereum
-- Contract surface: 2 unique implementations (2 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: arbitrum, base, chain-4002, ethereum, fantom, goerli, optimism, sonic
+- Contract surface: 41 unique implementations (41 raw deployments)
+- Coverage basis: 1/21 confirmed own live verified implementations (4.8%); conservative 4.8% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $624,675.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+This brief describes the observed EVM deployment and audit surface for Solidly Labs. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
+
+### Architecture
+
+The pinned logic-topography run contains 26 contract row(s) across arbitrum, base, chain-4002, ethereum, fantom, goerli, optimism, sonic. Structural roles: 24 unclassified, 2 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 26
+- Structural roles: unclassified (24), core (2)
+- Contract kinds: contract (26)
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 26 contracts are derived from known codebases. 26 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- factory (`0x70fe4a...f0f687`, chain 1)
+- factory (`0x70fe4a...f0f687`, chain 10)
+- factory (`0x777fac...a8f630`, chain 146)
+- factory (`0x70fe4a...f0f687`, chain 250)
+- factory (`0x70fe4a...f0f687`, chain 8453)
+- factory (`0x70fe4a...f0f687`, chain 42161)
+- pool (`0x831bf4...f0801b`, chain 1)
+- pool (`0x3d9752...455781`, chain 250)
+- rewarder (`0x620780...989ae7`, chain 1)
+- rewarder (`0x777dfb...72cfe4`, chain 10)
+- rewarder (`0x777dfb...72cfe4`, chain 146)
+- rewarder (`0x777dfb...72cfe4`, chain 250)
+- rewarder (`0x777dfb...72cfe4`, chain 8453)
+- rewarder (`0x777dfb...72cfe4`, chain 42161)
+- SolidlyProxy (`0x77730e...eaaf73`, chain 1)
+- veSOLID / NFTBridge (`0x777b2c...4a6bf5`, chain 10)
+- veSOLID / NFTBridge (`0x777b2c...4a6bf5`, chain 146)
+- veSOLID / NFTBridge (`0x777b2c...4a6bf5`, chain 250)
+- veSOLID / NFTBridge (`0x777b2c...4a6bf5`, chain 8453)
+- veSOLID / NFTBridge (`0x777b2c...4a6bf5`, chain 42161)
+- voter (`0x777034...deae0a`, chain 1)
+- voter (`0x777bfc...e9a927`, chain 10)
+- voter (`0x777bfc...e9a927`, chain 146)
+- voter (`0x777bfc...e9a927`, chain 250)
+- voter (`0x777bfc...e9a927`, chain 8453)
+- voter (`0x777bfc...e9a927`, chain 42161)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 26; live-surface contracts included: 26 (21 live, 5 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 26/44 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 2/2 (100.0%)
-- Deployed-live implementations: 2 of 2 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 2/2
-- Verified + Unaudited implementations: 0
+- Coverage of address-book-owned deployed-live implementations: 1/21 (4.8%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 26 own, 15 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (7 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
+- Deployed-live implementations: 26 of 41 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 1/21
+- Verified + Unaudited implementations: 20
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 2
+- Unverified implementations: 5
+- Unique implementations: 41
+- Raw deployments: 41
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-05 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 1 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 2 | 100.0% | n/a |
+| unknown | Tier 2 | 1 | 4.8% | n/a |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (2)
+### ✅ Verified + Audited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BaseV2TokenInterface | token | ethereum | n/a | [`0x777172...a60990`](./contracts/ethereum-1/0x777172d858dc1599914a1c4c6c9fc48c99a60990/) | ✅ Audited |
-| VeV2Interface | unknown | ethereum | n/a | [`0x77730e...eaaf73`](./contracts/ethereum-1/0x77730ed992d286c53f3a0838232c3957daeaaf73/) | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| VeV2Interface | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392750 | `0x77730e...eaaf73` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (25)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BaseV2TokenInterface | token | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-392748 | `0x777172...a60990` | ⚠️ Unaudited |
+| factory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392686 | `0x70fe4a...f0f687` | ⚠️ Unaudited |
+| factory | unknown | project_anchor | own_supporting | 0 | optimism | unit-392690 | `0x70fe4a...f0f687` | ⚠️ Unaudited |
+| factory | unknown | project_anchor | own_supporting | 0 | sonic | unit-392699 | `0x777fac...a8f630` | ⚠️ Unaudited |
+| factory | unknown | project_anchor | own_supporting | 0 | base | unit-392738 | `0x70fe4a...f0f687` | ⚠️ Unaudited |
+| factory | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392721 | `0x70fe4a...f0f687` | ⚠️ Unaudited |
+| pool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392688 | `0x831bf4...f0801b` | ⚠️ Unaudited |
+| rewarder | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392685 | `0x620780...989ae7` | ⚠️ Unaudited |
+| rewarder | unknown | project_anchor | own_supporting | 0 | optimism | unit-392694 | `0x777dfb...72cfe4` | ⚠️ Unaudited |
+| rewarder | unknown | project_anchor | own_supporting | 0 | sonic | unit-392698 | `0x777dfb...72cfe4` | ⚠️ Unaudited |
+| rewarder | unknown | project_anchor | own_supporting | 0 | base | unit-392747 | `0x777dfb...72cfe4` | ⚠️ Unaudited |
+| rewarder | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392729 | `0x777dfb...72cfe4` | ⚠️ Unaudited |
+| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-392693 | `0x777cf5...c0f9dd` | ⚠️ Unaudited |
+| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | sonic | unit-392697 | `0x777cf5...c0f9dd` | ⚠️ Unaudited |
+| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-392745 | `0x777cf5...c0f9dd` | ⚠️ Unaudited |
+| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-392727 | `0x777cf5...c0f9dd` | ⚠️ Unaudited |
+| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | optimism | unit-392691 | `0x777b2c...4a6bf5` | ⚠️ Unaudited |
+| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | sonic | unit-392695 | `0x777b2c...4a6bf5` | ⚠️ Unaudited |
+| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | base | unit-392740 | `0x777b2c...4a6bf5` | ⚠️ Unaudited |
+| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392723 | `0x777b2c...4a6bf5` | ⚠️ Unaudited |
+| voter | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392687 | `0x777034...deae0a` | ⚠️ Unaudited |
+| voter | unknown | project_anchor | own_supporting | 0 | optimism | unit-392692 | `0x777bfc...e9a927` | ⚠️ Unaudited |
+| voter | unknown | project_anchor | own_supporting | 0 | sonic | unit-392696 | `0x777bfc...e9a927` | ⚠️ Unaudited |
+| voter | unknown | project_anchor | own_supporting | 0 | base | unit-392743 | `0x777bfc...e9a927` | ⚠️ Unaudited |
+| voter | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-392725 | `0x777bfc...e9a927` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -79,19 +165,87 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (15)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| factory | unknown | project_anchor | own_supporting | 0 | fantom | unit-392701 | `0x70fe4a...f0f687` | ❓ Unverified |
+| pool | unknown | project_anchor | own_supporting | 0 | fantom | unit-392700 | `0x3d9752...455781` | ❓ Unverified |
+| rewarder | unknown | project_anchor | own_supporting | 0 | fantom | unit-392707 | `0x777dfb...72cfe4` | ❓ Unverified |
+| SOLID | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | fantom | unit-392705 | `0x777cf5...c0f9dd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-392731 | `0x0e629b...8c2f48` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-392733 | `0x316353...271470` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | goerli | unit-392734 | `0xa4f7ba...d08d4b` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392709 | `0x356ed0...037583` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392710 | `0x54eb4a...921d4a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392712 | `0x9336dd...6072df` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392714 | `0xab045e...38d260` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | chain-4002 | unit-392716 | `0xcb8d90...c50bb3` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | chain-4002 | unit-392717 | `0xfa4bd0...4f6ee1` | ❓ Unverified |
+| veSOLID / NFTBridge | unknown | project_anchor | own_supporting | 0 | fantom | unit-392702 | `0x777b2c...4a6bf5` | ❓ Unverified |
+| voter | unknown | project_anchor | own_supporting | 0 | fantom | unit-392703 | `0x777bfc...e9a927` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Cyfrin_Memebox_Audit.pdf](https://github.com/SolidlyLabs/Solidly-Audits/blob/main/Memebox%20(Solidly%20V2%20Memecore)/Cyfrin_Memebox_Audit.pdf) | Cyfrin | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
-| [audit_solidly.pdf](https://github.com/SolidlyLabs/Solidly-Audits/blob/main/Solidly%20V2/audit_solidly.pdf) | unknown | Audit | n/a | unknown | Direct | contract_name | 2 | n/a |
-| [cyfrin_solidlyV3.pdf](https://github.com/SolidlyLabs/Solidly-Audits/blob/main/Solidly%20V3/cyfrin_solidlyV3.pdf) | Cyfrin | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Cyfrin_Memebox_Audit.pdf](https://github.com/SolidlyLabs/Solidly-Audits/blob/main/Memebox%20(Solidly%20V2%20Memecore)/Cyfrin_Memebox_Audit.pdf) | Cyfrin | Audit | 2024-05 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 6 | high |
+| [audit_solidly.pdf](https://github.com/SolidlyLabs/Solidly-Audits/blob/main/Solidly%20V2/audit_solidly.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | matched | 1 | 1 | 0 | 21 | n/a |
+| [cyfrin_solidlyV3.pdf](https://github.com/SolidlyLabs/Solidly-Audits/blob/main/Solidly%20V3/cyfrin_solidlyV3.pdf) | Cyfrin | Audit | 2024-04 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 9 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [13871] Cyfrin_Memebox_Audit.pdf — no match: All contracts from the flattened SolidlyV2-memecore.sol file are in scope.
+- [13872] audit_solidly.pdf — matched: No reason recorded
+- [13873] cyfrin_solidlyV3.pdf — no match: Extracted contracts from the Audit Scope section and file paths. Note: 'Status' appears in both v3-core and v3-rewards; only one entry included.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Cyfrin_Memebox_Audit.pdf | Math | unmatched — not counted | — | listed in scope | no |
+| Cyfrin_Memebox_Audit.pdf | SolidlyV2Accounting | unmatched — not counted | — | listed in scope | no |
+| Cyfrin_Memebox_Audit.pdf | SolidlyV2LockBox | unmatched — not counted | — | listed in scope | no |
+| Cyfrin_Memebox_Audit.pdf | SolidlyV2Pair | unmatched — not counted | — | listed in scope | no |
+| Cyfrin_Memebox_Audit.pdf | SolidlyV2ERC42069 | unmatched — not counted | — | listed in scope | no |
+| Cyfrin_Memebox_Audit.pdf | SolidlyV2Factory | unmatched — not counted | — | listed in scope | no |
+| audit_solidly.pdf | BaseV2 | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | BaseV2BribeFactory | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | BaseV2Factory | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | BaseV2FeeDistFactory | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | BaseV2Fees | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | BaseV2Minter | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | BaseV2Pair | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | BaseV2Router01 | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | BaseV2Voter | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | BribeV2 | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | FeeDistV2 | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | GaugeV2 | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | SolidlyChildImplementation | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | SolidlyChildProxy | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | SolidlyDeployer | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | SolidlyFactory | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | SolidlyImplementation | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | SolidlyLens | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | SolidlyProxy | own proxy deployment | SolidlyProxy (proxy) (selected) `0x77730e...eaaf73` — deployed 2022-12-31 12:56:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| audit_solidly.pdf | solidly_library | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | veV2 | unmatched — not counted | — | — | no |
+| audit_solidly.pdf | ve_distV2 | unmatched — not counted | — | — | no |
+| cyfrin_solidlyV3.pdf | SolidlyV3Factory | unmatched — not counted | — | listed in scope table | no |
+| cyfrin_solidlyV3.pdf | SolidlyV3Pool | unmatched — not counted | — | listed in scope table | no |
+| cyfrin_solidlyV3.pdf | SolidlyV3PoolDeployer | unmatched — not counted | — | listed in scope table | no |
+| cyfrin_solidlyV3.pdf | Position | unmatched — not counted | — | listed in scope table | no |
+| cyfrin_solidlyV3.pdf | Status | unmatched — not counted | — | listed in scope table (v3-core) | no |
+| cyfrin_solidlyV3.pdf | Tick | unmatched — not counted | — | listed in scope table | no |
+| cyfrin_solidlyV3.pdf | TransferHelper | unmatched — not counted | — | listed in scope table | no |
+| cyfrin_solidlyV3.pdf | Validation | unmatched — not counted | — | listed in scope table | no |
+| cyfrin_solidlyV3.pdf | RewardDistributor | unmatched — not counted | — | listed in scope table | no |
 
 ## Coverage Gaps
 
@@ -103,10 +257,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 39 |
 
 ## Scope Matching Notes
 
@@ -114,8 +268,10 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: contract_name=2
+- Address-book scope dispositions: 1 own (1 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 36 unmatched
+- Matched-own operational status: 1 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=2
+- Match method counts: unique_name=1
 
 Zero-match audit list:
 

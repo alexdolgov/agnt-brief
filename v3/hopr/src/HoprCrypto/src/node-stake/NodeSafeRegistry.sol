@@ -159,7 +159,7 @@ contract HoprNodeSafeRegistry is HoprNodeSafeRegistryEvents {
         bytes32 registerHash = keccak256(abi.encodePacked(bytes1(0x19), bytes1(0x01), domainSeparator, hashStruct));
 
         // Verify that the signature is from nodeChainKeyAddress
-        (address recovered, ECDSA.RecoverError error, ) = ECDSA.tryRecover(registerHash, sig);
+        (address recovered, ECDSA.RecoverError error,) = ECDSA.tryRecover(registerHash, sig);
         if (error != ECDSA.RecoverError.NoError || recovered != nodeChainKeyAddress) {
             revert NotValidSignatureFromNode();
         }

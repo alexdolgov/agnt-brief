@@ -1,42 +1,28 @@
 {
   "component": "Validator-2",
   "main_contract": "Validator",
-  "source_file_count": 65,
-  "deployment_count": 4,
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Validator-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x2ab09847aef39023e7bb784475914014c0fc05cd",
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x720a99762bb3d2b98c8ddd64e13b0851355ca0e7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x8569f61ffe206fbf61c811141697bb7c8880d306",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x86572fcc55e18b852fabcc95187c5e205c5d1fac",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xe12757790b75abda07720bdca570519a897957a5",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395988"
     }
   ]
 }

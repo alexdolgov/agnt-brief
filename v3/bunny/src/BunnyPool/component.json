@@ -1,18 +1,30 @@
 {
   "component": "BunnyPool",
   "main_contract": "BunnyPool",
+  "source_entry_count": 17,
   "source_file_count": 17,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BunnyPool\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/PancakeBunny-finance/Bunny/blob/main/audits/%5BHAECHI%20AUDIT%5D%20PancakeBunny%20Smart%20Contract%20Audit%20Report%20ver%202.0.pdf"
+  ],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0xb24633bacc60bb1f907633c4c507f6e6d5bc1f44",
+      "address": "0xcadc8cb26c8c7cb46500e61171b5f27e9bd7889d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392607"
     }
   ]
 }

@@ -4,7 +4,7 @@ pragma abicoder v2;
 
 import {ERC721} from '@openzeppelin/contracts/token/ERC721/ERC721.sol';
 import {ERC721Enumerable, IERC165} from '@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol';
-import {Multicall} from '@openzeppelin/contracts/utils/Multicall.sol';
+import {Multicall} from './base/Multicall.sol';
 
 import {IRamsesV3Pool} from '../core/interfaces/IRamsesV3Pool.sol';
 import {FixedPoint128} from '../core/libraries/FixedPoint128.sol';
@@ -21,7 +21,7 @@ import {PoolInitializer} from './base/PoolInitializer.sol';
 
 import {IGaugeV3} from '../gauge/interfaces/IGaugeV3.sol';
 import {IVoter} from '../../interfaces/IVoter.sol';
-import {IAccessHub} from "../../interfaces/IAccessHub.sol";
+import {IAccessHub} from '../../interfaces/IAccessHub.sol';
 
 /// @title NFT positions
 /// @notice Wraps Ramses V3 positions in the ERC721 non-fungible token interface
@@ -80,7 +80,7 @@ contract NonfungiblePositionManager is
         address _WETH9,
         address _tokenDescriptor_,
         address _accessHub
-    ) ERC721('Ramses V3 Positions NFT', 'RAM-V3-NFP') PeripheryImmutableState(_deployer, _WETH9) {
+    ) ERC721('Shadow V3 Positions NFT', 'SHADOW-V3-NFP') PeripheryImmutableState(_deployer, _WETH9) {
         _tokenDescriptor = _tokenDescriptor_;
         accessHub = IAccessHub(_accessHub);
     }

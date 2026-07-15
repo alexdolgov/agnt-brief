@@ -49,6 +49,10 @@ interface IGaugeV3 {
     /// @notice Retrieves the value of the firstPeriod variable.
     /// @return The value of the firstPeriod variable.
     function firstPeriod() external returns (uint256);
+    
+    /// @notice Retrieves the cached r33 address for gas optimization
+    /// @return The cached r33 address
+    function r33() external view returns (address);
 
     /// @notice Retrieves the total supply of a specific token for a given period.
     /// @param period The period for which to retrieve the total supply.
@@ -118,21 +122,26 @@ interface IGaugeV3 {
         int24 tickUpper
     ) external pure returns (bytes32);
 
-    /*
-    /// @notice Retrieves the liquidity and boosted liquidity for a specific NFP.
-    /// @param tokenId The identifier of the NFP.
-    /// @return liquidity The liquidity of the position token.
-    function positionInfo(
-        uint256 tokenId
-    ) external view returns (uint128 liquidity);
-    */
 
-    /// @notice Returns the amount of rewards earned for an NFP.
+    /// (legacy version for backward compatibility)
+    /// @notice Returns the amount of rewards earned for an NFP
     /// @param token The address of the token for which to retrieve the earned rewards.
     /// @param tokenId The identifier of the specific NFP for which to retrieve the earned rewards.
     /// @return reward The amount of rewards earned for the specified NFP and tokens.
     function earned(
         address token,
+        uint256 tokenId
+    ) external view returns (uint256 reward);
+
+    /// (new version with multiple NFP managers)
+    /// @notice Returns the amount of rewards earned for an NFP (new version)
+    /// @param token The address of the token for which to retrieve the earned rewards.
+    /// @param nfpManagerAddress The address of the NFP manager for which to retrieve the earned rewards.
+    /// @param tokenId The identifier of the specific NFP for which to retrieve the earned rewards.
+    /// @return reward The amount of rewards earned for the specified NFP and tokens.
+    function earned(
+        address token,
+        address nfpManagerAddress,
         uint256 tokenId
     ) external view returns (uint256 reward);
 
@@ -144,6 +153,19 @@ interface IGaugeV3 {
     function periodEarned(
         uint256 period,
         address token,
+        uint256 tokenId
+    ) external view returns (uint256);
+
+    /// @notice Returns the amount of rewards earned during a period for an NFP.
+    /// @param period The period for which to retrieve the earned rewards.
+    /// @param token The address of the token for which to retrieve the earned rewards.
+    /// @param nfpManagerAddress The address of the NFP manager for which to retrieve the earned rewards.
+    /// @param tokenId The identifier of the specific NFP for which to retrieve the earned rewards.
+    /// @return reward The amount of rewards earned for the specified NFP and tokens.
+    function periodEarned(
+        uint256 period,
+        address token,
+        address nfpManagerAddress,
         uint256 tokenId
     ) external view returns (uint256);
 
@@ -188,18 +210,6 @@ interface IGaugeV3 {
     /// @param token The address of the token for which to notify the reward amount.
     /// @param amount The amount of rewards to be distributed.
     function notifyRewardAmount(address token, uint256 amount) external;
-
-    /// @notice Retrieves the reward amount for a specific period, NFP, and token addresses.
-    /// @param period The period for which to retrieve the reward amount.
-    /// @param tokens The addresses of the tokens for which to retrieve the reward amount.
-    /// @param tokenId The identifier of the specific NFP for which to retrieve the reward amount.
-    /// @param receiver The address of the receiver of the reward amount.
-    function getPeriodReward(
-        uint256 period,
-        address[] calldata tokens,
-        uint256 tokenId,
-        address receiver
-    ) external;
 
     /// @notice Retrieves the rewards for a specific period, set of tokens, owner, index, tickLower, tickUpper, and receiver.
     /// @param period The period for which to retrieve the rewards.
@@ -268,19 +278,16 @@ interface IGaugeV3 {
         uint256 amount
     ) external;
 
-    /// @notice Synchronize the authorized NFP managers from the voter contract
-    function syncNfpManagers() external;
-    
-    /// @notice Synchronize the reward validator from the voter contract
-    /// @dev Can be called by anyone to sync the latest reward validator
-    function syncRewardValidator() external;
+    /// @notice Synchronize all cached values from voter in a single call for gas optimization
+    /// @dev Combines rewardValidator, nfpManagers, and r33 cache updates
+    function syncCache() external;
 
-    /// @notice Check if an address is an authorized NFP manager
-    /// @param manager The address to check
-    /// @return true if the address is an authorized NFP manager
-    function isValidNfpManager(address manager) external view returns (bool);
+    /// @notice Check if an address is an authorized claimer  
+    /// @param claimer The address to check
+    /// @return true if the address is an authorized claimer
+    function isAuthorizedClaimer(address claimer) external view returns (bool);
 
-    /// @notice Get all authorized NFP managers
-    /// @return Array of authorized NFP manager addresses
-    function getAuthorizedNfpManagers() external view returns (address[] memory);
+    /// @notice Get all authorized claimers
+    /// @return Array of authorized claimer addresses
+    function getAuthorizedClaimers() external view returns (address[] memory);
 }

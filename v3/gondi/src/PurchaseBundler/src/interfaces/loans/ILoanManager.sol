@@ -55,4 +55,8 @@ interface ILoanManager {
         uint256 received,
         uint256 startTime
     ) external;
+
+    /// @notice Returns true if this manager currently has any outstanding (active) loans.
+    /// @dev Used by LoanManagerRegistry to prevent removal while loans are live.
+    function hasActiveLoans() external view returns (bool);
 }

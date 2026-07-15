@@ -3,6 +3,7 @@ pragma solidity >=0.8.0;
 
 // ============ Internal Imports ============
 import {AbstractAggregationIsm} from "./AbstractAggregationIsm.sol";
+import {AggregationIsmMetadata} from "../../isms/libs/AggregationIsmMetadata.sol";
 import {MetaProxy} from "../../libs/MetaProxy.sol";
 
 /**
@@ -22,7 +23,7 @@ contract StaticAggregationIsm is AbstractAggregationIsm {
      */
     function modulesAndThreshold(
         bytes calldata
-    ) public view override returns (address[] memory, uint8) {
+    ) public view virtual override returns (address[] memory, uint8) {
         return abi.decode(MetaProxy.metadata(), (address[], uint8));
     }
 }

@@ -17,14 +17,15 @@ import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
  */
 contract DepositBatch is ReentrancyGuard, Ownable {
   // The address of Enso's swap execution logic; swaps are delegated to this target.
-  address constant SWAP_TARGET = 0x38147794FF247e5Fc179eDbAE6C37fff88f68C52;
+  address public SWAP_TARGET;
 
   using SafeERC20 for IERC20;
 
   mapping (address => bool) public zeroApprovalTokens;
 
 
-  constructor(address _owner){
+  constructor(address _owner, address _swapTarget){
+    SWAP_TARGET = _swapTarget;
     _transferOwnership(_owner);
   }
 

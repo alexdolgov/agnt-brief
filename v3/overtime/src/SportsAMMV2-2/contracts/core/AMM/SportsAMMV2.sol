@@ -561,6 +561,9 @@ contract SportsAMMV2 is Initializable, ProxyOwned, ProxyPausable, ProxyReentranc
         (, uint payoutAfterCashoutFee) = ticket.getCashoutQuoteAndPayout(approvedOddsPerLeg, isLegSettled);
         if (payoutAfterCashoutFee == 0) revert IllegalInputAmounts();
 
+        // Try storing snapshot (new tickets support this, old ones don't)
+        try ticket.setCashoutPerLegData(approvedOddsPerLeg, isLegSettled) {} catch {}
+
         cashoutAmount = ticket.cashout(payoutAfterCashoutFee, _recipient);
 
         IERC20 collateral = ticket.collateral();
@@ -568,7 +571,7 @@ contract SportsAMMV2 is Initializable, ProxyOwned, ProxyPausable, ProxyReentranc
         // protocol fees (safeBox/referrer), NOT cashout fee
         _handleFees(ticket.buyInAmount(), _recipient, collateral);
 
-        _finalizeTicketResolution(_ticket, _recipient, collateral, false);
+        _finalizeTicketResolution(_ticket, _recipient, collateral, true);
 
         emit TicketCashedOut(_ticket, _recipient, cashoutAmount);
     }
@@ -1030,7 +1033,7 @@ contract SportsAMMV2 is Initializable, ProxyOwned, ProxyPausable, ProxyReentranc
             );
         }
 
-        _finalizeTicketResolution(_ticket, ticketOwner, ticketCollateral, false);
+        _finalizeTicketResolution(_ticket, ticketOwner, ticketCollateral, ticket.isUserTheWinner());
     }
 
     function _applyBonusToOdd(uint odd, uint addedPayoutPercentage) internal pure returns (uint) {

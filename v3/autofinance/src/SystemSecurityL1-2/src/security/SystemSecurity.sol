@@ -8,7 +8,7 @@ import { SystemComponent } from "src/SystemComponent.sol";
 import { SecurityBase } from "src/security/SecurityBase.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
 import { ISystemSecurity } from "src/interfaces/security/ISystemSecurity.sol";
-import { TransientStorage } from "src/libs/TransientStorage.sol";
+// import { TransientStorage } from "src/libs/TransientStorage.sol";
 
 /**
  * @notice Cross-contract system-level functionality around pausing and various security features.
@@ -36,13 +36,6 @@ abstract contract SystemSecurity is SystemComponent, SecurityBase, ISystemSecuri
         _;
     }
 
-    modifier onlyAutopoolRouter() {
-        if ((address(systemRegistry.autoPoolRouter()) != msg.sender)) {
-            revert Errors.AccessDenied();
-        }
-        _;
-    }
-
     constructor(
         ISystemRegistry _systemRegistry
     ) SystemComponent(_systemRegistry) SecurityBase(address(_systemRegistry.accessController())) { }
@@ -50,13 +43,9 @@ abstract contract SystemSecurity is SystemComponent, SecurityBase, ISystemSecuri
     /// @inheritdoc ISystemSecurity
     /// @dev This is function is used as guard to prevent malicious calls from user payloads into a different autopool
     /// via the AutopilotRouter
+    /// @dev TEMPORARY: Skip TransientStorage check on Linea (London EVM - no TransientStorage support)
+    /// @dev TODO: Add back TransientStorage security check after Linea Beta v4 upgrade (Cancun support)
     function navOpsInProgress() external view returns (uint256) {
-        if (TransientStorage.dataExists(_ALLOWED_AUTOPOOL)) {
-            address autopool = abi.decode(TransientStorage.getBytes(_ALLOWED_AUTOPOOL), (address));
-            if (autopool != msg.sender) {
-                revert Errors.AccessDenied();
-            }
-        }
         return _navOpsInProgress;
     }
 
@@ -97,16 +86,18 @@ abstract contract SystemSecurity is SystemComponent, SecurityBase, ISystemSecuri
     /// @inheritdoc ISystemSecurity
     function setAllowedAutopool(
         address autopool
-    ) external onlyAutopoolRouter {
-        if (TransientStorage.dataExists(_ALLOWED_AUTOPOOL)) {
-            revert Errors.AccessDenied();
-        }
-
-        TransientStorage.setBytes(abi.encode(autopool), _ALLOWED_AUTOPOOL);
+    ) external virtual {
+        // TEMPORARY: Not supported on Linea (London EVM - no TransientStorage)
+        // TODO: Implement after Linea Beta v4 upgrade (Cancun support)
+        // solhint-disable-next-line gas-custom-errors
+        revert("NotSupported");
     }
 
     /// @inheritdoc ISystemSecurity
-    function clearAllowedAutopool() external onlyAutopoolRouter {
-        TransientStorage.clearBytes(_ALLOWED_AUTOPOOL);
+    function clearAllowedAutopool() external virtual {
+        // TEMPORARY: Not supported on Linea (London EVM - no TransientStorage)
+        // TODO: Implement after Linea Beta v4 upgrade (Cancun support)
+        // solhint-disable-next-line gas-custom-errors
+        revert("NotSupported");
     }
 }

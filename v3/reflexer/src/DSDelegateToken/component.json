@@ -1,8 +1,16 @@
 {
   "component": "DSDelegateToken",
   "main_contract": "DSDelegateToken",
+  "source_entry_count": 4,
   "source_file_count": 4,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DSDelegateToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/reflexer-labs/geb-audits/blob/master/quantstamp/helper-contracts/second-audit/Reflexer%20Second%20Engagement%20-%20Final%20Report.pdf",
@@ -15,15 +23,9 @@
       "address": "0x6243d8cea23066d098a15582d81a598b4e8391f4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xfdb58d359971ba3467430443067e8d8a8040e4b1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398125"
     }
   ]
 }

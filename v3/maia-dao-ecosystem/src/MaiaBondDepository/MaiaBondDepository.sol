@@ -417,6 +417,7 @@ library FixedPoint {
 interface ITreasury {
     function deposit( uint _amount, address _token, uint _profit ) external returns ( uint );
     function valueOfToken( address _token, uint _amount ) external view returns ( uint value_ );
+    function mintRewards( address _recipient, uint _amount ) external;
 }
 
 interface IBondCalculator {
@@ -685,27 +686,19 @@ contract MaiaBondDepository is Ownable {
         require( payout >= 10000000, "Bond too small" ); // must be > 0.01 Time ( underflow protection )
         require( payout <= maxPayout(), "Bond too large"); // size protection because there is no slippage
 
-        // profits are calculated
-        uint fee = (payout.mul( terms.fee )).div(10000);
-        uint profit = value.sub( payout ).sub( fee );
-
-        uint balanceBefore = Time.balanceOf(address(this));
         /**
             principle is transferred in
             approved and
-            deposited into the treasury, returning (_amount - profit) Time
+            deposited into the treasury
          */
-        principle.safeTransferFrom( msg.sender, address(this), _amount );
         principle.approve( address( treasury ), _amount );
-        treasury.deposit( _amount, address(principle), profit );
+        principle.safeTransferFrom( msg.sender, address(treasury), _amount );
+
+        treasury.mintRewards( address(this), payout );
         
-        if ( fee != 0 ) { // fee is transferred to dao 
-            Time.safeTransfer( DAO, fee ); 
-        }
-        require(balanceBefore.add(payout) == Time.balanceOf(address(this)), "Not enough Time to cover profit");
         // total debt is increased
         totalDebt = totalDebt.add( value ); 
-                
+               
         // depositor info is stored
         bondInfo[ _depositor ] = Bond({ 
             payout: bondInfo[ _depositor ].payout.add( payout ),
@@ -835,7 +828,7 @@ contract MaiaBondDepository is Ownable {
      *  @return uint
      */
     function payoutFor( uint _value ) public view returns ( uint ) {
-        return FixedPoint.fraction( _value, bondPrice() ).decode112with18() / 1e16 ;
+        return FixedPoint.fraction( _value, bondPrice() ).decode112with18() / 1e14 ;
     }
 
 
@@ -871,7 +864,7 @@ contract MaiaBondDepository is Ownable {
         if( isLiquidityBond ) {
             price_ = bondPrice().mul( bondCalculator.markdown( address(principle) ) ) / 100 ;
         } else {
-            price_ = bondPrice().mul( 10 ** principle.decimals() ) / 100;
+            price_ = bondPrice().mul( 10 ** principle.decimals() ) / 10000;
         }
     }
 

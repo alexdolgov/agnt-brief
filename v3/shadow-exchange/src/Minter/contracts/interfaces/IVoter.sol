@@ -95,7 +95,7 @@ interface IVoter {
     event Poke(address indexed user);
 
     function initialize(
-        address _emissionsToken,
+        address _shadow,
         address _legacyFactory,
         address _gauges,
         address _feeDistributorFactory,
@@ -220,8 +220,8 @@ interface IVoter {
     ) external view returns (bool _trueOrFalse);
 
     /// @notice returns the address of the emission's token
-    /// @return _emissionsToken emissions token contract address
-    function emissionsToken() external view returns (address _emissionsToken);
+    /// @return _shadow emissions token contract address
+    function shadow() external view returns (address _shadow);
 
     /// @notice returns the address of the pool's gauge, if any
     /// @param _pool pool address
@@ -351,6 +351,14 @@ interface IVoter {
     /// @param _gauges address of the gauges
     /// @param _tokens two dimensional array for the tokens to claim
     function claimRewards(
+        address[] calldata _gauges,
+        address[][] calldata _tokens
+    ) external;
+
+    /// @notice claim arbitrary rewards from specific legacy gauges, and exit to shadow
+    /// @param _gauges address of the gauges
+    /// @param _tokens two dimensional array for the tokens to claim
+    function claimLegacyRewardsAndExit(
         address[] calldata _gauges,
         address[][] calldata _tokens
     ) external;

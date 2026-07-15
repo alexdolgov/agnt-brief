@@ -1,18 +1,38 @@
 {
   "component": "AnzenLayerZeroAdapter",
   "main_contract": "AnzenLayerZeroAdapter",
+  "source_entry_count": 41,
   "source_file_count": 41,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AnzenLayerZeroAdapter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x547213367cfb08ab418e7b54d7883b2c2aa27fd7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390977"
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0xdd216101d84d513a12cb7bfb109f7abcf330d58e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390986"
     },
     {
       "chain": "blast",
@@ -20,7 +40,9 @@
       "address": "0x04d5ddf5f3a8939889f11e97f8c4bb48317f1938",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390987"
     },
     {
       "chain": "blast",
@@ -28,7 +50,9 @@
       "address": "0x5a1b8c0e9fe27b9db4913df6b361dea5e96ea129",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390990"
     }
   ]
 }

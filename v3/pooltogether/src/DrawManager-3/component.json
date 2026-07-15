@@ -1,18 +1,28 @@
 {
   "component": "DrawManager-3",
   "main_contract": "DrawManager",
-  "source_file_count": 47,
+  "source_entry_count": 43,
+  "source_file_count": 43,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DrawManager-3\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x7e8e79eb264b42dcba887047f40b6db12c4f0940",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x146efc8d651dc015225cc2e74707d87aa4d09067",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397902"
     }
   ]
 }

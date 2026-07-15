@@ -1,17 +1,18 @@
 {
   "component": "HarborCommand",
   "main_contract": "HarborCommand",
+  "source_entry_count": 15,
   "source_file_count": 15,
-  "deployment_count": 5,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/phoenixlabsresearch/spark-docs/blob/main/deployed-contracts/ChainSecurity_Oazo_Apps_Limited_Savings_Dai_audit.pdf",
-    "https://www.chainsecurity.com/security-audit/oasis-app-modular-proxy-actions",
-    "https://www.chainsecurity.com/security-audit/oasis-automation-consultancy-smart-contracts",
-    "https://www.chainsecurity.com/security-audit/oasis-multiply-fmm-extension",
-    "https://www.chainsecurity.com/security-audit/summer-fi-automation-v2-smart-contracts",
-    "https://www.chainsecurity.com/security-audit/summer-fi-defi-modular-actions-v2"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HarborCommand\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -19,23 +20,9 @@
       "address": "0x09eb323dbfecb43fd746c607a9321dacdfb0140f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x092c41c6e9a8a54577cede5d077971116ddd6f57",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x5de028b0ed0f1b5a81636eb97445236c6b4b2523",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "chain-146",
@@ -43,7 +30,19 @@
       "address": "0xa8e4716a1e8db9dd79f1812af30e073d3f4cf191",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x09eb323dbfecb43fd746c607a9321dacdfb0140f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
@@ -51,7 +50,9 @@
       "address": "0x09eb323dbfecb43fd746c607a9321dacdfb0140f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

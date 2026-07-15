@@ -1,42 +1,28 @@
 {
   "component": "Claimer-2",
   "main_contract": "Claimer",
-  "source_file_count": 49,
-  "deployment_count": 4,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Claimer-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x0b5a1dc536d5a67c66d00b337e6b189385bd8438",
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xb04d5c80a3f6da11532d3a67184bb7be11f00285",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x220c9398b0ee07472bf8906e44574cb9fe3b8d90",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x2589ff8614f74704741ee3b51851b4ae812f1a21",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x47b55748243314be6a341668ecda2066c0625f70",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397961"
     }
   ]
 }

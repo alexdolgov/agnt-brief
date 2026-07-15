@@ -1492,47 +1492,6 @@ abstract contract ERC20Permit is ERC20, IERC20Permit, EIP712 {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol
-
-
-// OpenZeppelin Contracts (last updated v4.5.0) (token/ERC20/extensions/ERC20Burnable.sol)
-
-pragma solidity ^0.8.0;
-
-
-
-/**
- * @dev Extension of {ERC20} that allows token holders to destroy both their own
- * tokens and those that they have an allowance for, in a way that can be
- * recognized off-chain (via event analysis).
- */
-abstract contract ERC20Burnable is Context, ERC20 {
-    /**
-     * @dev Destroys `amount` tokens from the caller.
-     *
-     * See {ERC20-_burn}.
-     */
-    function burn(uint256 amount) public virtual {
-        _burn(_msgSender(), amount);
-    }
-
-    /**
-     * @dev Destroys `amount` tokens from `account`, deducting from the caller's
-     * allowance.
-     *
-     * See {ERC20-_burn} and {ERC20-allowance}.
-     *
-     * Requirements:
-     *
-     * - the caller must have allowance for ``accounts``'s tokens of at least
-     * `amount`.
-     */
-    function burnFrom(address account, uint256 amount) public virtual {
-        _spendAllowance(account, _msgSender(), amount);
-        _burn(account, amount);
-    }
-}
-
 // File: contracts/FireVaultFBXV2.sol
 
 
@@ -1541,13 +1500,12 @@ pragma solidity ^0.8.17;
 
 
 
-
-interface IEP {
+interface IEP is IERC20 {
     function dailyFBXEmission() external view returns (uint256);
-    function claimFBXRewards() external returns (uint256);
-    function burnFBXToMintEP(uint256 amountEP) external;
+    function claimRewards() external returns (uint256);
+    function mintEP(uint256 amountEP) external;
     function stakeEP(uint256 amountEP) external;
-    function stakedEP(address account) external view returns (uint256);
+    function userInfos(address account) external view returns (uint256 stakedEP, uint256 lastClaim, uint256 amountClaimed);
 }
 
 interface ISushiRouter {
@@ -1555,40 +1513,39 @@ interface ISushiRouter {
     function swapExactTokensForTokens(uint256 amountIn, uint256 amountOutMin, address[] calldata path, address to, uint256 deadline) external returns (uint256[] memory amounts);
 }
 
-contract FireVaultFBXV2 is ERC20, ERC20Burnable, ERC20Permit {
-
-    address public constant SUSHI_ROUTER_ADDRESS = 0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506;
-    address public constant FBX_CONTRACT_ADDRESS = 0xD125443F38A69d776177c2B9c041f462936F8218;
-    address public constant EP_CONTRACT_ADDRESS = 0xF581bd6418603C2754701Ff80FB1EA983d7767AB; // <<TESTING to set before deployment>>
-    address[]  public sushiPath;
-
-    using SafeERC20 for IERC20;
-    IERC20 public constant SAFE_FBX = IERC20(FBX_CONTRACT_ADDRESS);
-    IERC20 public constant SAFE_EP = IERC20(EP_CONTRACT_ADDRESS);
-    IEP public constant EP = IEP(EP_CONTRACT_ADDRESS);
-    ISushiRouter public constant SUSHI_ROUTER = ISushiRouter(SUSHI_ROUTER_ADDRESS);
-
-    uint256 public constant REWARD_VALUATION_MULTIPLIER = 270;
-    uint256 public fireFBXPrice = 0;
+contract FireVaultFBXV2 is ERC20, ERC20Permit {
     
+    using SafeERC20 for IERC20;
+    using SafeERC20 for IEP;
+    IERC20 public constant FBX = IERC20(0xD125443F38A69d776177c2B9c041f462936F8218);
+    IEP public constant EP = IEP(0x60Ed6aCEF3a96F8CDaF0c0D207BbAfA66e751af2);
+    ISushiRouter public constant SUSHI_ROUTER = ISushiRouter(0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506);
+
+    address[] public sushiPath;
+    uint256 public constant REWARD_VALUATION_MULTIPLIER = 270;
+    uint256 public withdrawalRate = 0;
+
+    event Deposit(address indexed account, uint256 amountFBX);
+    event Withdraw(address indexed account, uint256 amountFBX);
 
     constructor() ERC20("FireVault FBX", "fireFBX") ERC20Permit("FireVault FBX") {
-        _mint(msg.sender, 1657016248857960000000000); // Airdrop for current fireFBX owners <<TESTING to calculate before deployment>>
+        _mint(msg.sender, 1683464363070200594102143); // Airdrop for V1 fireFBX owners
         sushiPath = new address[](2);
-	    sushiPath[0] = FBX_CONTRACT_ADDRESS;
-	    sushiPath[1] = EP_CONTRACT_ADDRESS;
+	    sushiPath[0] = address(FBX);
+	    sushiPath[1] = address(EP);
     }
 
     function EPValuation() public view returns (uint256) {
-        return REWARD_VALUATION_MULTIPLIER * 1e18 * EP.dailyFBXEmission() / SAFE_EP.totalSupply();
+        return REWARD_VALUATION_MULTIPLIER * 1e18 * EP.dailyFBXEmission() / EP.totalSupply();
     }
 
     function totalEPValuation() public view returns (uint256) {
-        return EPValuation() * EP.stakedEP(address(this)) / 1e18;
+        (uint256 stakedEP,,) = EP.userInfos(address(this));
+        return EPValuation() * stakedEP / 1e18;
     }
 
     function totalFBXBalance() public view returns (uint256) {
-        return SAFE_FBX.balanceOf(address(this));
+        return FBX.balanceOf(address(this));
     }
 
     function totalAssetsValuation() public view returns (uint256) {
@@ -1597,52 +1554,49 @@ contract FireVaultFBXV2 is ERC20, ERC20Burnable, ERC20Permit {
     
     function claimRewardsAndBalance() public {
         // Claim rewards
-        uint256 rewards = EP.claimFBXRewards();
+        uint256 rewards = EP.claimRewards();
         if (rewards > 0) {
             // Balance portfolio
             uint256 toSpend = rewards * totalFBXBalance() / totalAssetsValuation();
             if (toSpend > 0) {
                 uint256 buyableAmount = SUSHI_ROUTER.getAmountsOut(toSpend, sushiPath)[1];
                 if (buyableAmount > toSpend / 300) {
-                    SAFE_FBX.approve(SUSHI_ROUTER_ADDRESS, toSpend);
+                    FBX.approve(address(SUSHI_ROUTER), toSpend);
                     SUSHI_ROUTER.swapExactTokensForTokens(toSpend, buyableAmount * 995 / 1000, sushiPath, address(this), block.timestamp + 1);
                 }
                 else {
-                    SAFE_FBX.approve(EP_CONTRACT_ADDRESS, toSpend);
-                    EP.burnFBXToMintEP(toSpend / 300);
+                    FBX.approve(address(EP), toSpend);
+                    EP.mintEP(toSpend / 300);
                 }
             }
         }
         // Stake unstaked EP
-        uint256 unstakedEP = SAFE_EP.balanceOf(address(this));
+        uint256 unstakedEP = EP.balanceOf(address(this));
         if (unstakedEP > 0) {
-            SAFE_EP.approve(address(this), unstakedEP);
             EP.stakeEP(unstakedEP);
         }
         // Refresh fireFBX->FBX rate
         uint256 currentValuation = 1e18 * totalAssetsValuation() / totalSupply();
-        if (currentValuation > fireFBXPrice) {
-            fireFBXPrice = currentValuation;
+        if (currentValuation > withdrawalRate) {
+            withdrawalRate = currentValuation;
         }
     }
 
-    function deposit(uint256 amountFBX) public {
+    function deposit(uint256 amountFBX) external returns (uint256 amountFireFBX) {
+        require(amountFBX > 0, "Amount to deposit should be greater than 0.");
         claimRewardsAndBalance();
-        SAFE_FBX.safeTransferFrom(msg.sender, address(this), amountFBX);
-        _mint(msg.sender, uint256(1e18 * amountFBX / fireFBXPrice));
+        FBX.safeTransferFrom(msg.sender, address(this), amountFBX);
+        amountFireFBX = 1e18 * amountFBX / withdrawalRate;
+        _mint(msg.sender, amountFireFBX);
+        emit Deposit(msg.sender, amountFBX);
     }
 
-    function withdraw(uint256 amountFireFBX) public {
+    function withdraw(uint256 amountFireFBX) external returns (uint256 amountFBX) {
+        require(amountFireFBX > 0, "Amount to withdraw should be greater than 0.");
         claimRewardsAndBalance();
         _burn(msg.sender, amountFireFBX);
-        SAFE_FBX.safeTransfer(msg.sender, amountFireFBX * fireFBXPrice / 1e18);
-    }
-
-    function swapFBXforFireFBX(uint256 amountFBX) public {
-        deposit(amountFBX);
-    }
-
-    function swapFireFBXForFBX(uint256 amountFireFBX) public {
-        withdraw(amountFireFBX);
+        amountFBX = amountFireFBX * withdrawalRate / 1e18;
+        FBX.safeTransfer(msg.sender, amountFBX);
+        emit Withdraw(msg.sender, amountFBX);
     }
 }

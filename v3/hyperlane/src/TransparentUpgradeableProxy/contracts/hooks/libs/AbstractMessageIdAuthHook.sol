@@ -16,12 +16,11 @@ pragma solidity >=0.8.0;
 // ============ Internal Imports ============
 import {IPostDispatchHook} from "../../interfaces/hooks/IPostDispatchHook.sol";
 import {AbstractPostDispatchHook} from "./AbstractPostDispatchHook.sol";
+import {AbstractMessageIdAuthorizedIsm} from "../../isms/hook/AbstractMessageIdAuthorizedIsm.sol";
+import {TypeCasts} from "../../libs/TypeCasts.sol";
 import {Message} from "../../libs/Message.sol";
 import {StandardHookMetadata} from "./StandardHookMetadata.sol";
 import {MailboxClient} from "../../client/MailboxClient.sol";
-
-// ============ External Imports ============
-import {Address} from "@openzeppelin/contracts/utils/Address.sol";
 
 /**
  * @title AbstractMessageIdAuthHook
@@ -32,7 +31,6 @@ abstract contract AbstractMessageIdAuthHook is
     AbstractPostDispatchHook,
     MailboxClient
 {
-    using Address for address payable;
     using StandardHookMetadata for bytes;
     using Message for bytes;
 
@@ -60,18 +58,17 @@ abstract contract AbstractMessageIdAuthHook is
     }
 
     /// @inheritdoc IPostDispatchHook
-    function hookType() external pure virtual returns (uint8) {
-        return uint8(IPostDispatchHook.HookTypes.ID_AUTH_ISM);
+    function hookType() external pure returns (uint8) {
+        return uint8(IPostDispatchHook.Types.ID_AUTH_ISM);
     }
 
     // ============ Internal functions ============
 
     /// @inheritdoc AbstractPostDispatchHook
-    // solhint-disable-next-line hyperlane/no-virtual-override
     function _postDispatch(
         bytes calldata metadata,
         bytes calldata message
-    ) internal virtual override {
+    ) internal override {
         bytes32 id = message.id();
         require(
             _isLatestDispatched(id),
@@ -85,19 +82,20 @@ abstract contract AbstractMessageIdAuthHook is
             metadata.msgValue(0) < 2 ** 255,
             "AbstractMessageIdAuthHook: msgValue must be less than 2 ** 255"
         );
-
-        _sendMessageId(metadata, message);
-
-        _refund(metadata, message, address(this).balance);
+        bytes memory payload = abi.encodeCall(
+            AbstractMessageIdAuthorizedIsm.verifyMessageId,
+            id
+        );
+        _sendMessageId(metadata, payload);
     }
 
     /**
      * @notice Send a message to the ISM.
      * @param metadata The metadata for the hook caller
-     * @param message The message to send to the ISM
+     * @param payload The payload for call to the ISM
      */
     function _sendMessageId(
         bytes calldata metadata,
-        bytes calldata message
+        bytes memory payload
     ) internal virtual;
 }

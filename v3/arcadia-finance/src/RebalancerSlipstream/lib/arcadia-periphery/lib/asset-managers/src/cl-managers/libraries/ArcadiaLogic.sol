@@ -2,7 +2,7 @@
  * Created by Pragma Labs
  * SPDX-License-Identifier: BUSL-1.1
  */
-pragma solidity ^0.8.34;
+pragma solidity ^0.8.0;
 
 import { ActionData } from "../../../lib/accounts-v2/src/interfaces/IActionBase.sol";
 import { IPermit2 } from "../../../lib/accounts-v2/src/interfaces/IPermit2.sol";
@@ -92,22 +92,21 @@ library ArcadiaLogic {
         uint256[] memory types = new uint256[](count);
 
         // Encode liquidity position.
-        uint256 i;
-        if (id > 0) {
-            assets[0] = positionManager;
-            ids[0] = id;
-            amounts[0] = 1;
-            types[0] = 2;
-            i = 1;
-        }
+        assets[0] = positionManager;
+        ids[0] = id;
+        amounts[0] = 1;
+        types[0] = 2;
 
         // Encode underlying assets of the liquidity position.
-        for (uint256 j; j < balances.length; j++) {
-            if (balances[j] > 0) {
-                assets[i] = tokens[j];
-                amounts[i] = balances[j];
-                types[i] = 1;
-                i++;
+        if (count > 1) {
+            uint256 i = 1;
+            for (uint256 j; j < balances.length; j++) {
+                if (balances[j] > 0) {
+                    assets[i] = tokens[j];
+                    amounts[i] = balances[j];
+                    types[i] = 1;
+                    i++;
+                }
             }
         }
 

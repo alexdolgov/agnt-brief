@@ -1,7 +1,56 @@
 {
   "component": "StrategyACryptoSBsw",
   "main_contract": "StrategyACryptoSBsw",
+  "source_entry_count": 8,
   "source_file_count": 8,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/strategies/StrategyACryptoSBsw.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-e570eed019f5-StrategyACryptoSBsw.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/openzeppelin-contracts-2.5.1/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-e5215506cdcf-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/openzeppelin-contracts-2.5.1/contracts/token/ERC20/SafeERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-202f62d7b758-SafeERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/openzeppelin-contracts-2.5.1/contracts/token/ERC20/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-32ea7f989552-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/openzeppelin-contracts-2.5.1/contracts/math/SafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-93c93df544f2-SafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/openzeppelin-contracts-2.5.1/contracts/math/Math.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-93b4a90055db-Math.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/interfaces/yearn/Token.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-fd1178f38276-Token.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/interfaces/yearn/IController.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-b55fe319e3c3-IController.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StrategyACryptoSBsw\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +61,9 @@
       "address": "0x2aa23d513e9a9e6bd22862debb66161ab49354c5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390687"
     },
     {
       "chain": "bsc",
@@ -20,7 +71,9 @@
       "address": "0x577b47cba5673c06be37cb7397f9c906b6a29d51",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390698"
     }
   ]
 }

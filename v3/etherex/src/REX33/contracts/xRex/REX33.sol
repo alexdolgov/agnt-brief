@@ -158,7 +158,6 @@ contract REX33 is ERC4626, IREX33, ReentrancyGuard {
         IERC20(_token).transfer(msg.sender, _amount);
 
         /// @dev _token could be any malicious contract someone sent to the REX33 module
-        /// @dev extra security check to ensure xREX balance or allowance doesn't change when rescued
         require(totalAssets() >= snapshotxRamBalance, Errors.FORBIDDEN_TOKEN(address(xRex)));
     }
 

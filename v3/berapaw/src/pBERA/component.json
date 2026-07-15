@@ -1,10 +1,21 @@
 {
   "component": "pBERA",
   "main_contract": "pBERA",
+  "source_entry_count": 37,
   "source_file_count": 37,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/pBERA\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://drive.google.com/file/d/18EWumO-MPJrPbNMDQvWrT6mYXlFZGupw/view?usp=drive_link",
+    "https://drive.google.com/file/d/1lbUUP96kl8Z2Hba8aIEeLS8g8wtAJKTb/view?usp=drive_link"
+  ],
   "addresses": [
     {
       "chain": "chain-80094",
@@ -12,7 +23,9 @@
       "address": "0xdeadf18cb9233770fe8874c78d7483b4a126b34a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402494"
     }
   ]
 }

@@ -1,82 +1,142 @@
 # Agentic Audit Brief: Nest Credit
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 4 across 2 audit(s)
+- Eligible audit results: 16 (2 matched; 14 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Nest Credit (`nest-credit`)
 - Website: [https://nest.credit/](https://nest.credit/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:36.398Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
-- Chains: arbitrum, bsc, ethereum, plasma
-- Contract surface: 20 unique implementations (62 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: ethereum
+- Contract surface: 32 unique implementations (32 raw deployments)
+- Coverage basis: 2/8 confirmed own live verified implementations (25.0%); conservative 25.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $73,665,389.90
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-RWA. Structurally: 7 project-authored contract(s) across 2 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Nest Credit. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Contracts are linked by 6 cross-contract reference(s). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 8 contract row(s) across ethereum. Structural roles: 8 core. 2 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 8
+- Structural roles: core (8)
+- Contract kinds: contract (8)
+- Detected standards: erc165 (6), erc20permit (6), erc1967proxy (2)
+- Frameworks: openzeppelin (8), solmate (6)
+- Upgradeable-pattern rows: 2
+
+## Fork Analysis
+
+0 of 29 contracts are derived from known codebases. 29 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x0342ee...163c34`, chain 1)
+- UnnamedContract (`0x066d10...3cbdff`, chain 1)
+- UnnamedContract (`0x116dea...cae3d2`, chain 1)
+- UnnamedContract (`0x250c2d...bf7f12`, chain 1)
+- UnnamedContract (`0x2a3e30...f161cb`, chain 1)
+- UnnamedContract (`0x473838...95c5e7`, chain 1)
+- UnnamedContract (`0x5f35d1...a0dbb1`, chain 1)
+- UnnamedContract (`0x6330a1...89a651`, chain 1)
+- UnnamedContract (`0x63810d...b59e13`, chain 1)
+- UnnamedContract (`0x7195de...eb6c8e`, chain 1)
+- UnnamedContract (`0x84c18c...50d9e3`, chain 1)
+- UnnamedContract (`0x937869...5a5ba4`, chain 1)
+- UnnamedContract (`0xd25802...a505c0`, chain 1)
+- UnnamedContract (`0xd99076...c46cba`, chain 1)
+- UnnamedContract (`0xd9b432...795440`, chain 1)
+- UnnamedContract (`0xdf45b8...ae0ee8`, chain 1)
+- UnnamedContract (`0xec593c...6fabee`, chain 1)
+- UnnamedContract (`0xf6c00a...190510`, chain 1)
+- UnnamedContract (`0xf991a5...341f2b`, chain 1)
+- UnnamedContract (`0xfabd98...a26835`, chain 1)
+- UnnamedContract (`0xfc0c42...6b9035`, chain 1)
+- BoringVault (`0x11113f...9ee94b`, chain 1)
+- BoringVault (`0x119dd7...299165`, chain 1)
+- BoringVault (`0x29bf22...2c0240`, chain 1)
+- BoringVault (`0x593ccc...6388db`, chain 1)
+- BoringVault (`0xa5f78b...ec066c`, chain 1)
+- BoringVault (`0xe72fe6...938cb9`, chain 1)
+- TransparentUpgradeableProxy (`0x5e949f...657a2c`, chain 1)
+- TransparentUpgradeableProxy (`0xb72856...bc14a0`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 62; live-surface contracts included: 62 (52 live, 10 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 8; live-surface contracts included: 8 (8 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 29/33 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 8/10 (80.0%)
-- Deployed-live implementations: 10 of 20 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 8/10
-- Verified + Unaudited implementations: 2
+- Coverage of address-book-owned deployed-live implementations: 2/8 (25.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 29 own, 3 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
+- Deployed-live implementations: 29 of 32 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 2/8
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
-- Unverified implementations: 10
-- Unique implementations: 20
-- Raw deployments: 62
+- Unverified implementations: 21
+- Unique implementations: 32
+- Raw deployments: 32
 - Audits discovered: 16 (16 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 8
+- Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-04 (fresh)
 - Audit staleness (calendar age): 8 fresh, 4 aging, 4 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 5 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
-- Tier 1 coverage: 60.0% (Spearbit)
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
+- Tier 1 coverage: 25.0% (Spearbit)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Spearbit | Tier 1 | 6 | 60.0% | 2026-04 |
-| 0xMacro | Tier 2 | 4 | 40.0% | 2024-04 |
-| Pashov Audit Group | Tier 2 | 4 | 40.0% | 2026-03 |
-| zenith | Tier 2 | 2 | 20.0% | 2026-01 |
+| Spearbit | Tier 1 | 2 | 25.0% | 2026-04 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (8)
+### ✅ Verified + Audited (2)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AccountantWithRateProviders | operational_periphery | ethereum | n/a | 11 deployments: ethereum [`0x0b738c...6892ec`](./contracts/ethereum-1/0x0b738cd187872b265a689e8e4130c336e76892ec/); ethereum `0x2ed2f7...94ed1d`; ethereum `0x3d6497...836b32`; ethereum `0x486e03...8b19f3`; ethereum `0xa67d20...f4dc2f`; ethereum `0xadb076...c15d93`; ethereum `0xb00bbb...12a55b`; ethereum `0xe0cf45...6421e1`; bsc `0x2ed2f7...94ed1d`; bsc `0x3d6497...836b32`; arbitrum [`0x0b738c...6892ec`](./contracts/arbitrum-42161/0x0b738cd187872b265a689e8e4130c336e76892ec/) | ✅ Audited |
-| AtomicQueue | unknown | bsc | n/a | 2 deployments: bsc [`0x220dc6...6e8264`](./contracts/bsc-56/0x220dc6d4569c1f406d532f9633d5be5bc86e8264/); plasma [`0x220dc6...6e8264`](./contracts/plasma-9745/0x220dc6d4569c1f406d532f9633d5be5bc86e8264/) | ✅ Audited |
-| AtomicQueueUCP | unknown | ethereum | n/a | [`0x228c44...5112e5`](./contracts/ethereum-1/0x228c44bb4885c6633f4b6c83f14622f37d5112e5/) | ✅ Audited |
-| BoringVault | core_logic | ethereum | n/a | 14 deployments: ethereum [`0x11113f...9ee94b`](./contracts/ethereum-1/0x11113ff3a60c2450f4b22515cb760417259ee94b/); ethereum `0x119dd7...299165`; ethereum `0x1639dc...a2fbfb`; ethereum `0x29bf22...2c0240`; ethereum `0x593ccc...6388db`; ethereum `0x9fbc36...ffdc4c`; ethereum `0xa5f78b...ec066c`; ethereum `0xbfc577...ed19de`; ethereum `0xe72fe6...938cb9`; bsc `0x119dd7...299165`; bsc `0x1639dc...a2fbfb`; plasma `0x119dd7...299165`; plasma `0x1639dc...a2fbfb`; arbitrum `0xe72fe6...938cb9` | ✅ Audited |
-| ManagerWithMerkleVerification | operational_periphery | ethereum | n/a | 7 deployments: ethereum [`0x8226b6...8f18cc`](./contracts/ethereum-1/0x8226b661ebaf1cba4e2a92ae2616ccf2348f18cc/); ethereum `0xd476b7...600262`; ethereum `0xea452b...da0393`; bsc `0xd476b7...600262`; bsc `0xea452b...da0393`; plasma `0xd476b7...600262`; plasma `0xea452b...da0393` | ✅ Audited |
-| MultiChainLayerZeroTellerWithMultiAssetSupport | core_logic | ethereum | n/a | 11 deployments: ethereum [`0x149206...ea0c59`](./contracts/ethereum-1/0x1492062b3ae7996c71f87a2b390b6b82afea0c59/); ethereum `0x272002...759f9d`; ethereum `0x7d218b...8e0d25`; ethereum `0x8034c2...6f4ab9`; ethereum `0xa5f8e5...08a90b`; ethereum `0xad60d4...ffb89b`; ethereum `0xc9f6a4...324a35`; ethereum `0xd65d39...fc4c15`; ethereum `0xf288a0...a6551c`; bsc `0x8034c2...6f4ab9`; bsc `0xa5f8e5...08a90b` | ✅ Audited |
-| NestVault | core_logic | ethereum | n/a | [`0xb72856...bc14a0`](./contracts/ethereum-1/0xb7285655b17e28c343a8d5cb340947576fbc14a0/) | ✅ Audited |
-| NestVaultOFT | core_logic | ethereum | n/a | [`0x5e949f...657a2c`](./contracts/ethereum-1/0x5e949fa6401d7c49cdcb48e3a8bdc28f60657a2c/) | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| NestVault | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-248901 | `0xb72856...bc14a0` | ✅ Audited |
+| NestVaultOFT | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-248902 | `0x5e949f...657a2c` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (6)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AtomicSolverV3 | unknown | ethereum | n/a | 3 deployments: ethereum [`0x77fb09...7fc974`](./contracts/ethereum-1/0x77fb098a1c28a5b50bfadb69ca1bee515a7fc974/); bsc [`0x77fb09...7fc974`](./contracts/bsc-56/0x77fb098a1c28a5b50bfadb69ca1bee515a7fc974/); plasma [`0x77fb09...7fc974`](./contracts/plasma-9745/0x77fb098a1c28a5b50bfadb69ca1bee515a7fc974/) | ⚠️ Unaudited |
-| BoringVaultSY | core_logic | ethereum | n/a | [`0xa08c5b...d84ed1`](./contracts/ethereum-1/0xa08c5b18a05317dc0ed43c9eea9ea6db85d84ed1/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-248868 | `0x11113f...9ee94b` | ⚠️ Unaudited |
+| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-248870 | `0x119dd7...299165` | ⚠️ Unaudited |
+| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-248872 | `0x29bf22...2c0240` | ⚠️ Unaudited |
+| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-248880 | `0x593ccc...6388db` | ⚠️ Unaudited |
+| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-248889 | `0xa5f78b...ec066c` | ⚠️ Unaudited |
+| BoringVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-248895 | `0xe72fe6...938cb9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,77 +150,297 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (10)
+### ❓ Unverified (24)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x2a3e30...f161cb` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa1d572...6d41fd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd9ec26...466063` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf76bc9...ddcab9` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x2ed2f7...94ed1d` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x3d6497...836b32` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0x8034c2...6f4ab9` | ❓ Unverified |
-| UnnamedContract | unknown | plasma | n/a | `0xa5f8e5...08a90b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x149206...ea0c59` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf713a3...a34857` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248865 | `0x0342ee...163c34` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248866 | `0x066d10...3cbdff` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-248867 | `0x09a217...4cd6dd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248869 | `0x116dea...cae3d2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248871 | `0x250c2d...bf7f12` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248874 | `0x2a3e30...f161cb` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-248876 | `0x2de3ec...a113ea` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248878 | `0x473838...95c5e7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248882 | `0x5f35d1...a0dbb1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248883 | `0x6330a1...89a651` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248884 | `0x63810d...b59e13` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248885 | `0x7195de...eb6c8e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-248886 | `0x7de018...41d8be` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248887 | `0x84c18c...50d9e3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248888 | `0x937869...5a5ba4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248891 | `0xd25802...a505c0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248892 | `0xd99076...c46cba` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248893 | `0xd9b432...795440` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248894 | `0xdf45b8...ae0ee8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248896 | `0xec593c...6fabee` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248897 | `0xf6c00a...190510` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248898 | `0xf991a5...341f2b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248899 | `0xfabd98...a26835` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-248900 | `0xfc0c42...6b9035` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [slowmist.pdf](https://github.com/plumenetwork/contracts/blob/main/staking/audit/slowmist.pdf) | SlowMist | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
-| [slowmist2.pdf](https://github.com/plumenetwork/contracts/blob/main/staking/audit/slowmist2.pdf) | SlowMist | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
-| [report_cantinacode_2601.pdf](https://github.com/plumenetwork/nest-protocol/blob/main/audits/report_cantinacode_2601.pdf) | Spearbit | Audit | 2026-04 | fresh | Direct | contract_name | 2 | n/a |
-| [0xmacro-boring-vault-arctic-0.pdf](https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-0.pdf) | 0xMacro | Audit | 2024-03 | stale | Direct | contract_name | 4 | n/a |
-| [0xmacro-boring-vault-arctic-1.pdf](https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-1.pdf) | 0xMacro | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
-| [pashov-boring-vault.pdf](https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/pashov-boring-vault.pdf) | Pashov Audit Group | Audit | 2024-07 | stale | Direct | n/a | 0 | n/a |
-| [pashov-hyperlane.pdf](https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/pashov-hyperlane.pdf) | Pashov Audit Group | Audit | 2024-12 | aging | Direct | contract_name | 1 | high |
-| [report-cantinacode-plume-2511.pdf](https://github.com/plumenetwork/nest-protocol/blob/main/audits/report-cantinacode-plume-2511.pdf) | Spearbit | Audit | 2026-01 | fresh | Direct | contract_name | 2 | n/a |
-| [report-cantinacode-plume-pr11.pdf](https://github.com/plumenetwork/nest-protocol/blob/main/audits/report-cantinacode-plume-pr11.pdf) | Spearbit | Audit | 2026-01 | fresh | Direct | n/a | 0 | n/a |
-| [pashov-hlp-controller:account.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-hlp-controller%3Aaccount.pdf) | Pashov Audit Group | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
-| [pashov-one-to-one-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-one-to-one-queue.pdf) | Pashov Audit Group | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
-| [pashov-predicate-freeze-supply-cap.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-predicate-freeze-supply-cap.pdf) | Pashov Audit Group | Audit | 2026-03 | fresh | Direct | contract_name | 25 | high |
-| [pashov-withdraw-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-withdraw-queue.pdf) | Pashov Audit Group | Audit | 2026-02 | fresh | Direct | contract_name | 12 | high |
-| [zenith-one-to-one-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/zenith-one-to-one-queue.pdf) | zenith | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
-| [zenith-withdraw-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/zenith-withdraw-queue.pdf) | zenith | Audit | 2026-01 | fresh | Direct | contract_name | 12 | high |
-| [spearbit-boring-vault-arctic-0.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/spearbit-boring-vault-arctic-0.pdf) | Spearbit | Audit | 2024-04 | stale | Direct | contract_name | 33 | high |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [slowmist.pdf](https://github.com/plumenetwork/contracts/blob/main/staking/audit/slowmist.pdf) | SlowMist | Audit | 2024-10 | aging | Direct | address | no match | 0 | 0 | 0 | 3 | high |
+| [slowmist2.pdf](https://github.com/plumenetwork/contracts/blob/main/staking/audit/slowmist2.pdf) | SlowMist | Audit | 2024-10 | aging | Direct | address | no match | 0 | 0 | 0 | 6 | high |
+| [report_cantinacode_2601.pdf](https://github.com/plumenetwork/nest-protocol/blob/main/audits/report_cantinacode_2601.pdf) | Spearbit | Audit | 2026-04 | fresh | Direct | n/a | matched | 2 | 2 | 0 | 24 | n/a |
+| [0xmacro-boring-vault-arctic-0.pdf](https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-0.pdf) | 0xMacro | Audit | 2024-03 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 38 | high |
+| [0xmacro-boring-vault-arctic-1.pdf](https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/0xmacro-boring-vault-arctic-1.pdf) | 0xMacro | Audit | 2024-04 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 10 | high |
+| [pashov-boring-vault.pdf](https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/pashov-boring-vault.pdf) | Pashov Audit Group | Audit | 2024-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 10 | high |
+| [pashov-hyperlane.pdf](https://github.com/paxoslabs/nucleus-boring-vault/blob/master/audit/pashov-hyperlane.pdf) | Pashov Audit Group | Audit | 2024-12 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [report-cantinacode-plume-2511.pdf](https://github.com/plumenetwork/nest-protocol/blob/main/audits/report-cantinacode-plume-2511.pdf) | Spearbit | Audit | 2026-01 | fresh | Direct | n/a | matched | 2 | 2 | 0 | 4 | n/a |
+| [report-cantinacode-plume-pr11.pdf](https://github.com/plumenetwork/nest-protocol/blob/main/audits/report-cantinacode-plume-pr11.pdf) | Spearbit | Audit | 2026-01 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [pashov-hlp-controller:account.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-hlp-controller%3Aaccount.pdf) | Pashov Audit Group | Audit | 2025-07 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [pashov-one-to-one-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-one-to-one-queue.pdf) | Pashov Audit Group | Audit | 2025-11 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 10 | high |
+| [pashov-predicate-freeze-supply-cap.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-predicate-freeze-supply-cap.pdf) | Pashov Audit Group | Audit | 2026-03 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 15 | high |
+| [pashov-withdraw-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-withdraw-queue.pdf) | Pashov Audit Group | Audit | 2026-02 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [zenith-one-to-one-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/zenith-one-to-one-queue.pdf) | zenith | Audit | 2025-11 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 7 | high |
+| [zenith-withdraw-queue.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/zenith-withdraw-queue.pdf) | zenith | Audit | 2026-01 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [spearbit-boring-vault-arctic-0.pdf](https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/spearbit-boring-vault-arctic-0.pdf) | Spearbit | Audit | 2024-04 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 10 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [4751] slowmist.pdf — no match: Extracted from audit report sections 3.1 and 4.1. The audit covers RWAStaking and SBTCStaking contracts, with PlumePreStaking as proxy. Date from audit result table: 2024.10.08 - 2024.10.09, using end date.
+- [4752] slowmist2.pdf — no match: Extracted from scope table and contract descriptions. Audit date from audit result section: 2024.10.23 - 2024.10.24, using end date.
+- [4753] report_cantinacode_2601.pdf — matched: No reason recorded
+- [4754] 0xmacro-boring-vault-arctic-0.pdf — no match: All contracts listed in the 'Source Code' section of the audit report are included. The audit date is from the cover page: 'March 20, 2024'.
+- [4756] 0xmacro-boring-vault-arctic-1.pdf — no match: All contracts listed in the 'Source Code' section with file paths and SHA256 hashes.
+- [4757] pashov-boring-vault.pdf — no match: Scope section lists 10 smart contracts. Audit date is July 13th 2024 (end date of review period).
+- [4758] pashov-hyperlane.pdf — no match: Scope section lists 5 contracts. Audit date from header: December 14th - December 16th, using end date.
+- [4759] report-cantinacode-plume-2511.pdf — matched: No reason recorded
+- [4760] report-cantinacode-plume-pr11.pdf — no match: Scope section lists three contracts: BaseCCTPRelayer.sol, NestCCTPRelayer.sol, NestVaultComposer.sol. Additional contracts (VaultComposerSyncUpgradeable, NestVaultCore) are referenced in findings but not explicitly listed in scope; they are included as they are part of the audited codebase.
+- [4761] pashov-hlp-controller:account.pdf — no match: Scope section explicitly lists 4 contracts. Audit date is July 30th 2025 (end date of timeline).
+- [4762] pashov-one-to-one-queue.pdf — no match: Scope section explicitly lists 10 contracts/files. Audit date from cover page: November 22nd 2025 - November 26th 2025, using end date.
+- [4763] pashov-predicate-freeze-supply-cap.pdf — no match: All contracts listed in the Scope section of the report. Audit date is March 5th 2026 (end date of timeline).
+- [4764] pashov-withdraw-queue.pdf — no match: Scope section explicitly lists four contracts: WithdrawQueue.sol, TellerWithMultiAssetSupport.sol, CrossChainTellerBase.sol, AccountantWithRateProviders.sol. Audit date is the end date of the timeline: February 5th 2026.
+- [4765] zenith-one-to-one-queue.pdf — no match: Scope section lists two targets: CommunityCodeDepositor (wildcard path) and OneToOneQueue (with additional files). All contract names extracted from file paths and findings.
+- [4766] zenith-withdraw-queue.pdf — no match: Scope section lists 4 files; all are in scope.
+- [14375] spearbit-boring-vault-arctic-0.pdf — no match: The report does not have a dedicated scope section; contract names were extracted from findings and context throughout the report. The audit date is explicitly stated on the cover page as 'April 19, 2024'.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| slowmist.pdf | RWAStaking | unmatched — not counted | — | listed in scope and deployed address | no |
+| slowmist.pdf | SBTCStaking | unmatched — not counted | — | listed in scope | no |
+| slowmist.pdf | PlumePreStaking | unmatched — not counted | — | deployed proxy contract mentioned in scope | no |
+| slowmist2.pdf | ReserveStaking | unmatched — not counted | — | listed in scope table | no |
+| slowmist2.pdf | SBTC | unmatched — not counted | — | listed in scope table | no |
+| slowmist2.pdf | STONE | unmatched — not counted | — | listed in scope table | no |
+| slowmist2.pdf | PlumePreReserveFund | unmatched — not counted | — | listed in scope table | no |
+| slowmist2.pdf | PlumePreStaking | unmatched — not counted | — | listed in scope table | no |
+| slowmist2.pdf | RWAStaking | unmatched — not counted | — | listed in scope table | no |
+| report_cantinacode_2601.pdf | AddressUtils | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | BlacklistHook | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | BurnMessage | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | BurnMessageV2 | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | MessageV2 | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestAccountant | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestCCTPRelayer | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestShareOFT | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestShareSeizer | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestVault | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb72856...bc14a0` — deployed 2026-06-03 18:45:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| report_cantinacode_2601.pdf | NestVaultAccountingLogic | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestVaultAdminLogic | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestVaultComposer | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestVaultCore | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestVaultCoreTypes | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestVaultCoreValidationLogic | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestVaultDepositLogic | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestVaultOFT | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x5e949f...657a2c` — deployed 2026-06-02 17:28:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| report_cantinacode_2601.pdf | NestVaultOperatorLogic | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestVaultPermit2 | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestVaultRedeemLogic | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestVaultRedeemOperator | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | NestVaultTransferLogic | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | TypedMemView | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | VaultComposerAsyncUpgradeable | unmatched — not counted | — | — | no |
+| report_cantinacode_2601.pdf | VaultComposerSyncUpgradeable | unmatched — not counted | — | — | no |
+| 0xmacro-boring-vault-arctic-0.pdf | AtomicQueue | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | AtomicSolver | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | IAtomicSolver | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | BoringVault | ambiguous — not counted | BoringVault (alternative) `0xe72fe6...938cb9` — deployed 2024-12-18 08:12:59+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0x11113f...9ee94b` — deployed 2025-04-01 05:17:59+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0x29bf22...2c0240` — deployed 2025-10-27 05:32:59+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0xa5f78b...ec066c` — deployed 2025-04-14 00:16:47+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0x593ccc...6388db` — deployed 2025-04-04 00:11:47+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0x119dd7...299165` — deployed 2025-10-30 16:55:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 0xmacro-boring-vault-arctic-0.pdf | BaseDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | EtherFiLiquidDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | LidoLiquidDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | AaveV3DecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | AuraDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | BalancerV2DecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | ConvexDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | CurveDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | ERC4626DecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | EtherFiDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | GearboxDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | LidoDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | MorphoBlueDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | NativeWrapperDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | OneInchDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | PendleRouterDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | UniswapV3DecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | AccountantWithRateProviders | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | ManagerWithMerkleVerification | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | TellerWithMultiAssetSupport | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | BoringVaultV0Lens | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | AggregationRouterV5 | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | BalancerVault | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | BeforeTransferHook | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | DecoderCustomTypes | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | EtherFiLiquid1 | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | IRateProvider | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | IStaking | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | IUniswapV3Router | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | PriceRouter | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | RawDataDecoderAndSanitizerInterfaces | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | DexAggregatorUManager | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | DexSwapperUManager | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-0.pdf | CellarMigrationAdaptor | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-1.pdf | ITBPositionDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-1.pdf | AaveDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-1.pdf | BoringDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-1.pdf | ITBContractDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-1.pdf | Ownable2StepDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-1.pdf | WithdrawableDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-1.pdf | ConvexDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-1.pdf | CurveAndConvexDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-1.pdf | CurveNoConfigDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| 0xmacro-boring-vault-arctic-1.pdf | GearboxDecoderAndSanitizer | unmatched — not counted | — | listed in scope table | no |
+| pashov-boring-vault.pdf | CrossChainLayerZeroTellerWithMultiAssetSupport | unmatched — not counted | — | listed in scope | no |
+| pashov-boring-vault.pdf | CrossChainTellerBase | unmatched — not counted | — | listed in scope | no |
+| pashov-boring-vault.pdf | OAppAuth | unmatched — not counted | — | listed in scope | no |
+| pashov-boring-vault.pdf | OAppAuthCore | unmatched — not counted | — | listed in scope | no |
+| pashov-boring-vault.pdf | OAppAuthReceiver | unmatched — not counted | — | listed in scope | no |
+| pashov-boring-vault.pdf | OAppAuthSender | unmatched — not counted | — | listed in scope | no |
+| pashov-boring-vault.pdf | TellerWithMultiAssetSupport | unmatched — not counted | — | listed in scope | no |
+| pashov-boring-vault.pdf | BoringVaultCrossChainDepositor | unmatched — not counted | — | listed in scope | no |
+| pashov-boring-vault.pdf | BoringVaultL2OFT | unmatched — not counted | — | listed in scope | no |
+| pashov-boring-vault.pdf | BoringVaultOFTAdapter | unmatched — not counted | — | listed in scope | no |
+| pashov-hyperlane.pdf | MultiChainHyperlaneTellerWithMultiAssetSupport | unmatched — not counted | — | listed in scope section | no |
+| pashov-hyperlane.pdf | CrossChainTellerBase | unmatched — not counted | — | listed in scope section | no |
+| pashov-hyperlane.pdf | MultiChainTellerBase | unmatched — not counted | — | listed in scope section | no |
+| pashov-hyperlane.pdf | TellerWithMultiAssetSupport | unmatched — not counted | — | listed in scope section | no |
+| pashov-hyperlane.pdf | AtomicQueueUCP | unmatched — not counted | — | listed in scope section | no |
+| report-cantinacode-plume-2511.pdf | NestAccountant | unmatched — not counted | — | — | no |
+| report-cantinacode-plume-2511.pdf | NestShare | unmatched — not counted | — | — | no |
+| report-cantinacode-plume-2511.pdf | NestVault | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb72856...bc14a0` — deployed 2026-06-03 18:45:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| report-cantinacode-plume-2511.pdf | NestVaultCore | unmatched — not counted | — | — | no |
+| report-cantinacode-plume-2511.pdf | NestVaultOFT | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x5e949f...657a2c` — deployed 2026-06-02 17:28:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| report-cantinacode-plume-2511.pdf | NestVaultPredicateProxy | unmatched — not counted | — | — | no |
+| report-cantinacode-plume-pr11.pdf | BaseCCTPRelayer | unmatched — not counted | — | listed in scope | no |
+| report-cantinacode-plume-pr11.pdf | NestCCTPRelayer | unmatched — not counted | — | listed in scope | no |
+| report-cantinacode-plume-pr11.pdf | NestVaultComposer | unmatched — not counted | — | listed in scope | no |
+| report-cantinacode-plume-pr11.pdf | VaultComposerSyncUpgradeable | unmatched — not counted | — | mentioned in finding context | no |
+| report-cantinacode-plume-pr11.pdf | NestVaultCore | unmatched — not counted | — | mentioned in finding context | no |
+| pashov-hlp-controller:account.pdf | CoreWriterDecoderAndSanitizer | unmatched — not counted | — | listed in scope | no |
+| pashov-hlp-controller:account.pdf | WHLPDecoderAndSanitizer | unmatched — not counted | — | listed in scope | no |
+| pashov-hlp-controller:account.pdf | HLPAccount | unmatched — not counted | — | listed in scope | no |
+| pashov-hlp-controller:account.pdf | HLPController | unmatched — not counted | — | listed in scope | no |
+| pashov-one-to-one-queue.pdf | CommunityCodeDepositor | unmatched — not counted | — | listed in scope section | no |
+| pashov-one-to-one-queue.pdf | DistributorCodeDepositor | unmatched — not counted | — | listed in scope section | no |
+| pashov-one-to-one-queue.pdf | OneToOneQueue | unmatched — not counted | — | listed in scope section | no |
+| pashov-one-to-one-queue.pdf | QueueAccessAuthority | unmatched — not counted | — | listed in scope section | no |
+| pashov-one-to-one-queue.pdf | SimpleFeeModule | unmatched — not counted | — | listed in scope section | no |
+| pashov-one-to-one-queue.pdf | AccessAuthority | unmatched — not counted | — | listed in scope section | no |
+| pashov-one-to-one-queue.pdf | Pausable | unmatched — not counted | — | listed in scope section | no |
+| pashov-one-to-one-queue.pdf | VerboseAuth | unmatched — not counted | — | listed in scope section | no |
+| pashov-one-to-one-queue.pdf | IAccessAuthorityHook | unmatched — not counted | — | listed in scope section | no |
+| pashov-one-to-one-queue.pdf | IFeeModule | unmatched — not counted | — | listed in scope section | no |
+| pashov-predicate-freeze-supply-cap.pdf | BoringVault | ambiguous — not counted | BoringVault (alternative) `0xe72fe6...938cb9` — deployed 2024-12-18 08:12:59+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0x11113f...9ee94b` — deployed 2025-04-01 05:17:59+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0x29bf22...2c0240` — deployed 2025-10-27 05:32:59+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0xa5f78b...ec066c` — deployed 2025-04-14 00:16:47+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0x593ccc...6388db` — deployed 2025-04-04 00:11:47+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0x119dd7...299165` — deployed 2025-10-30 16:55:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| pashov-predicate-freeze-supply-cap.pdf | NucleusDecoderAndSanitizer | unmatched — not counted | — | listed in scope | no |
+| pashov-predicate-freeze-supply-cap.pdf | CrossChainTellerBase | unmatched — not counted | — | listed in scope | no |
+| pashov-predicate-freeze-supply-cap.pdf | MultiChainHyperlaneTellerWithMultiAssetSupport | unmatched — not counted | — | listed in scope | no |
+| pashov-predicate-freeze-supply-cap.pdf | MultiChainLayerZeroTellerWithMultiAssetSupport | unmatched — not counted | — | listed in scope | no |
+| pashov-predicate-freeze-supply-cap.pdf | TellerWithMultiAssetSupport | unmatched — not counted | — | listed in scope | no |
+| pashov-predicate-freeze-supply-cap.pdf | TellerWithMultiAssetSupportPredicateProxy | unmatched — not counted | — | listed in scope | no |
+| pashov-predicate-freeze-supply-cap.pdf | AssetSpecificFeeModule | unmatched — not counted | — | listed in scope | no |
+| pashov-predicate-freeze-supply-cap.pdf | DexAggregatorWrapperWithPredicateProxy | unmatched — not counted | — | listed in scope | no |
+| pashov-predicate-freeze-supply-cap.pdf | DistributorCodeDepositor | unmatched — not counted | — | listed in scope | no |
+| pashov-predicate-freeze-supply-cap.pdf | FreezeListBeforeTransferHook | unmatched — not counted | — | listed in scope | no |
+| pashov-predicate-freeze-supply-cap.pdf | WarpRouteWrapper | unmatched — not counted | — | listed in scope | no |
+| pashov-predicate-freeze-supply-cap.pdf | BeforeTransferHook | unmatched — not counted | — | listed in scope | no |
+| pashov-predicate-freeze-supply-cap.pdf | DecoderCustomTypes | unmatched — not counted | — | listed in scope | no |
+| pashov-predicate-freeze-supply-cap.pdf | IFallbackHook | unmatched — not counted | — | listed in scope | no |
+| pashov-withdraw-queue.pdf | WithdrawQueue | unmatched — not counted | — | listed in scope | no |
+| pashov-withdraw-queue.pdf | TellerWithMultiAssetSupport | unmatched — not counted | — | listed in scope | no |
+| pashov-withdraw-queue.pdf | CrossChainTellerBase | unmatched — not counted | — | listed in scope | no |
+| pashov-withdraw-queue.pdf | AccountantWithRateProviders | unmatched — not counted | — | listed in scope | no |
+| zenith-one-to-one-queue.pdf | CommunityCodeDepositor | unmatched — not counted | — | listed in scope | no |
+| zenith-one-to-one-queue.pdf | OneToOneQueue | unmatched — not counted | — | listed in scope | no |
+| zenith-one-to-one-queue.pdf | QueueAccessAuthority | unmatched — not counted | — | listed in scope | no |
+| zenith-one-to-one-queue.pdf | SimpleFeeModule | unmatched — not counted | — | listed in scope | no |
+| zenith-one-to-one-queue.pdf | AccessAuthority | unmatched — not counted | — | listed in scope | no |
+| zenith-one-to-one-queue.pdf | Pausable | unmatched — not counted | — | listed in scope | no |
+| zenith-one-to-one-queue.pdf | VerboseAuth | unmatched — not counted | — | listed in scope | no |
+| zenith-withdraw-queue.pdf | WithdrawQueue | unmatched — not counted | — | listed in scope | no |
+| zenith-withdraw-queue.pdf | TellerWithMultiAssetSupport | unmatched — not counted | — | listed in scope | no |
+| zenith-withdraw-queue.pdf | CrossChainTellerBase | unmatched — not counted | — | listed in scope | no |
+| zenith-withdraw-queue.pdf | AccountantWithRateProviders | unmatched — not counted | — | listed in scope | no |
+| spearbit-boring-vault-arctic-0.pdf | UniswapV3DecoderAndSanitizer | unmatched — not counted | — | Listed in findings context (e.g., 3.1.1) | no |
+| spearbit-boring-vault-arctic-0.pdf | DexAggregatorUManager | unmatched — not counted | — | Listed in findings context (e.g., 3.1.2) | no |
+| spearbit-boring-vault-arctic-0.pdf | DexSwapperUManager | unmatched — not counted | — | Listed in findings context (e.g., 3.1.2) | no |
+| spearbit-boring-vault-arctic-0.pdf | TellerWithMultiAssetSupport | unmatched — not counted | — | Listed in findings context (e.g., 3.1.4) | no |
+| spearbit-boring-vault-arctic-0.pdf | BoringVault | ambiguous — not counted | BoringVault (alternative) `0xe72fe6...938cb9` — deployed 2024-12-18 08:12:59+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0x11113f...9ee94b` — deployed 2025-04-01 05:17:59+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0x29bf22...2c0240` — deployed 2025-10-27 05:32:59+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0xa5f78b...ec066c` — deployed 2025-04-14 00:16:47+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0x593ccc...6388db` — deployed 2025-04-04 00:11:47+03 — liveness: live (current_address_book_code)<br>BoringVault (alternative) `0x119dd7...299165` — deployed 2025-10-30 16:55:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| spearbit-boring-vault-arctic-0.pdf | ManagerWithMerkleVerification | unmatched — not counted | — | Listed in findings context (e.g., 3.2.2) | no |
+| spearbit-boring-vault-arctic-0.pdf | AccountantWithRateProviders | unmatched — not counted | — | Listed in findings context (e.g., 3.2.4) | no |
+| spearbit-boring-vault-arctic-0.pdf | CurveDecoderAndSanitizer | unmatched — not counted | — | Listed in findings context (e.g., 3.2.5) | no |
+| spearbit-boring-vault-arctic-0.pdf | MorphoBlueDecoderAndSanitizer | unmatched — not counted | — | Listed in findings context (e.g., 3.2.1) | no |
+| spearbit-boring-vault-arctic-0.pdf | BalancerV2DecoderAndSanitizer | unmatched — not counted | — | Listed in findings context (e.g., 3.3.8) | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x11113f...9ee94b` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x119dd7...299165` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x29bf22...2c0240` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x593ccc...6388db` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa5f78b...ec066c` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xe72fe6...938cb9` | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 8 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 20 |
+| needs_review | 24 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 8
+- Audits with zero matched contracts: 14
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=5
-- Match method counts: contract_name=8, extraction_exact=83
+- Address-book scope dispositions: 4 own (4 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 3 ambiguous, 156 unmatched
+- Matched-own operational status: 4 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=14
+- Match method counts: unique_name=4
 
 Zero-match audit list:
 
 - [4751] slowmist.pdf
 - [4752] slowmist2.pdf
+- [4754] 0xmacro-boring-vault-arctic-0.pdf
 - [4756] 0xmacro-boring-vault-arctic-1.pdf
 - [4757] pashov-boring-vault.pdf
+- [4758] pashov-hyperlane.pdf
 - [4760] report-cantinacode-plume-pr11.pdf
 - [4761] pashov-hlp-controller:account.pdf
 - [4762] pashov-one-to-one-queue.pdf
+- [4763] pashov-predicate-freeze-supply-cap.pdf
+- [4764] pashov-withdraw-queue.pdf
 - [4765] zenith-one-to-one-queue.pdf
+- [4766] zenith-withdraw-queue.pdf
+- [14375] spearbit-boring-vault-arctic-0.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

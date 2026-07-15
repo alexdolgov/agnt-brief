@@ -1,39 +1,68 @@
 # Agentic Audit Brief: PinkSwap
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: PinkSwap (`pinkswap`)
+- Website: [https://www.pinkswap.finance/](https://www.pinkswap.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:42.381Z
-- Pipeline run: v2-2026-07-02-1ba3fd
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: bsc
 - Contract surface: 7 unique implementations (7 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $395,152.18
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+The closed normalized authority records no EVM contract logic or eligible security audit for this project. This is an explicit cohort state, not a skipped export.
+
 ## Project Description
 
-Dexs. Structurally: 7 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; built on openzeppelin.
+No contract logic was present for PinkSwap in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol forms a single structural family (Core Logic) of 7 contract(s).
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 7; live-surface contracts included: 7 (7 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/7 (0.0%)
-- Deployed-live implementations: 7 of 7 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/7
-- Verified + Unaudited implementations: 7
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 7 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 7
@@ -58,15 +87,15 @@ The protocol forms a single structural family (Core Logic) of 7 contract(s).
 
 ### ⚠️ Verified + Unaudited (7)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| MasterChef | unknown | bsc | n/a | [`0xe98167...80c595`](./contracts/bsc-56/0xe981676633dcf0256aa512f4923a7e8da180c595/) | ⚠️ Unaudited |
-| PinkSwapAirdrop | unknown | bsc | n/a | [`0x726d61...255c54`](./contracts/bsc-56/0x726d61af7c4a9a2b5dcd6a0a1f676fa582255c54/) | ⚠️ Unaudited |
-| PinkswapFactory | unknown | bsc | n/a | [`0x4fd09a...590daf`](./contracts/bsc-56/0x4fd09a7086aa26ec4a18f9c5192edbd578590daf/) | ⚠️ Unaudited |
-| PinkswapLocker | unknown | bsc | n/a | [`0xd9a679...36c7ce`](./contracts/bsc-56/0xd9a6797bbdab3ddda9722fa124b4aa758836c7ce/) | ⚠️ Unaudited |
-| PinkswapRouter | unknown | bsc | n/a | [`0x319ef6...0fa3ac`](./contracts/bsc-56/0x319ef69a98c8e8aab36aea561daba0bf3d0fa3ac/) | ⚠️ Unaudited |
-| PinkSwapToken | unknown | bsc | n/a | [`0x702b3f...21125d`](./contracts/bsc-56/0x702b3f41772e321aaccdea91e1fcef682d21125d/) | ⚠️ Unaudited |
-| Timelock | unknown | bsc | n/a | [`0xa85794...068863`](./contracts/bsc-56/0xa857941ae810e384185135cf5966abfe5f068863/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| MasterChef | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160376 | `0xe98167...80c595` | ⚠️ Unaudited |
+| PinkSwapAirdrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160366 | `0x726d61...255c54` | ⚠️ Unaudited |
+| PinkswapFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160360 | `0x4fd09a...590daf` | ⚠️ Unaudited |
+| PinkswapLocker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160373 | `0xd9a679...36c7ce` | ⚠️ Unaudited |
+| PinkswapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160357 | `0x319ef6...0fa3ac` | ⚠️ Unaudited |
+| PinkSwapToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160363 | `0x702b3f...21125d` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-160369 | `0xa85794...068863` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,8 +117,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -101,10 +136,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 7 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 7 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -112,6 +147,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

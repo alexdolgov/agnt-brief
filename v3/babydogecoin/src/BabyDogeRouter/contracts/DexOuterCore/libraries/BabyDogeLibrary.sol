@@ -35,7 +35,7 @@ library BabyDogeLibrary {
                         hex"ff",
                         factory,
                         keccak256(abi.encodePacked(token0, token1)),
-                        hex"88cc118e15a93295ff5b1fb9492dc2ccd70e8cbc560e9631e9a460f3a82437c1" // init code hash
+                        hex"5646bd1da4b93040d09d9a44666ac5ad7d4eb0711841defc40f00dce1aba0b06" // init code hash
                     )
                 )
             )

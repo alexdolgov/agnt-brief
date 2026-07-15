@@ -1,13 +1,18 @@
 {
   "component": "BoosterOwnerLite",
   "main_contract": "BoosterOwnerLite",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 6,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/aurafinance/aura-contracts/blob/main/audits/sidechain/hephyrius-internal-report.pdf",
-    "https://github.com/aurafinance/aura-contracts/blob/main/audits/sidechain/zellic_sidechain_audit_report.pdf"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BoosterOwnerLite\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "optimism",
@@ -15,7 +20,9 @@
       "address": "0xf044ee152c7d731825280350d876cf760181d96f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391468"
     },
     {
       "chain": "gnosis",
@@ -23,7 +30,9 @@
       "address": "0xa9802db57c6d9218ccfa5bed6364dfd0cf25d985",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391481"
     },
     {
       "chain": "polygon",
@@ -31,15 +40,9 @@
       "address": "0x8b9da502cccb32dbf19cd68e258e6fd05e1b5eee",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-252",
-      "chain_id": 252,
-      "address": "0x04798c9b4546d90a97f687188d346d170298703c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391495"
     },
     {
       "chain": "base",
@@ -47,7 +50,9 @@
       "address": "0x0f0ddad80025adf6c5ca45905237e5ca12b755fc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391504"
     },
     {
       "chain": "arbitrum",
@@ -55,7 +60,9 @@
       "address": "0x3af95ba5c362075bb28e5a2a42d7cd1e201a1b66",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391524"
     }
   ]
 }

@@ -1,155 +1,171 @@
 # Agentic Audit Brief: Alpaca Finance
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 19 across 6 audit(s)
+- Eligible audit results: 19 (6 matched; 13 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ⚠️ Lifecycle status: DECLINING - TVL dropped 9.7% over 90 days
 
 ## Project Overview
 
 - Project: Alpaca Finance (`alpaca-finance`)
+- Website: [https://www.alpacafinance.org/](https://www.alpacafinance.org/)
 - Lifecycle: declining (Tier 0, 97.9% below peak)
-- Generated: 2026-07-03T21:05:26.640Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-f007
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: bsc
-- Contract surface: 109 unique implementations (245 raw deployments)
+- Contract surface: 25 unique implementations (36 raw deployments)
+- Coverage basis: 12/25 confirmed own live verified implementations (48.0%); conservative 48.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $39,030,090.00
-- On-chain TVL (included contracts): $8,635,247.86
-- TVL by chain: Bsc $8,635,247.86
+- On-chain TVL (included contracts): $8,547,726.77
+- TVL by chain: Bsc $8,547,726.77
 
 ## Project Description
 
-Lending. Structurally: 120 project-authored contract(s) across 1 chain(s); 6 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Alpaca Finance. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 7 functional families. Its contracts share 12 common project-authored base contract(s) (upgradeabilityproxy, proxy, erc1967upgrade). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 40 contract row(s) across bsc. Structural roles: 23 unclassified, 10 core, 7 supporting. 9 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 40
+- Structural roles: unclassified (23), core (10), supporting (7)
+- Contract kinds: contract (40)
+- Detected standards: erc1967proxy (9), ownable (4), erc20 (1)
+- Frameworks: openzeppelin (15), openzeppelin-upgradeable (3)
+- Upgradeable-pattern rows: 9
+
+## Fork Analysis
+
+0 of 35 contracts are derived from known codebases. 35 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- AdminUpgradeabilityProxy (`0x02da70...aa7442`, chain 56)
+- AdminUpgradeabilityProxy (`0x08fc9b...1c24e7`, chain 56)
+- AdminUpgradeabilityProxy (`0x11362e...a9db40`, chain 56)
+- AdminUpgradeabilityProxy (`0x158da8...951e59`, chain 56)
+- AdminUpgradeabilityProxy (`0x262de1...1b59b2`, chain 56)
+- AdminUpgradeabilityProxy (`0x3282d2...8cd3cd`, chain 56)
+- AdminUpgradeabilityProxy (`0x3b4fbb...0fa4dc`, chain 56)
+- AdminUpgradeabilityProxy (`0x6a3487...2a55f9`, chain 56)
+- AdminUpgradeabilityProxy (`0x7c9e73...87592f`, chain 56)
+- AdminUpgradeabilityProxy (`0x92110a...258fe6`, chain 56)
+- AdminUpgradeabilityProxy (`0xb76ed4...aeaf84`, chain 56)
+- AdminUpgradeabilityProxy (`0xbff4a3...723afe`, chain 56)
+- AdminUpgradeabilityProxy (`0xd7d069...fc0063`, chain 56)
+- AdminUpgradeabilityProxy (`0xf1be8e...16d421`, chain 56)
+- DebtToken (`0x513813...e22cec`, chain 56)
+- DebtToken (`0xd19d62...029ebd`, chain 56)
+- FairLaunch (`0xa625ab...489a8f`, chain 56)
+- GnosisSafeProxy (`0x18f59e...475d01`, chain 56)
+- MerkleDistributor (`0x083c02...e58de7`, chain 56)
+- MerkleDistributor (`0x60bc40...514105`, chain 56)
+- MerkleDistributor (`0x63c60b...dc4412`, chain 56)
+- MerkleDistributor (`0xa33ff7...50ce58`, chain 56)
+- MerkleDistributor (`0xd193b3...21c4bf`, chain 56)
+- Multicall (`0x41263c...90e76c`, chain 56)
+- ProxyAdmin (`0x5379f3...94f452`, chain 56)
+- Shield (`0x1963f8...1b4656`, chain 56)
+- StronkAlpaca (`0x6f695b...6ce7a7`, chain 56)
+- Timelock (`0x2d5408...1d0a59`, chain 56)
+- TransparentUpgradeableProxy (`0x08b5a9...5afc7e`, chain 56)
+- TransparentUpgradeableProxy (`0x426bdf...c361f3`, chain 56)
+- TransparentUpgradeableProxy (`0x4f4054...c1cf43`, chain 56)
+- TransparentUpgradeableProxy (`0x50e574...1ddab7`, chain 56)
+- TransparentUpgradeableProxy (`0x800933...1e26d7`, chain 56)
+- TransparentUpgradeableProxy (`0xc4ed26...5d938b`, chain 56)
+- TransparentUpgradeableProxy (`0xff6934...b147eb`, chain 56)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 553; live-surface contracts included: 245 (216 live, 29 unknown).
-- Excluded by liveness: 308 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 40; live-surface contracts included: 40 (36 live, 4 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 25/25 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 67/80 (83.8%)
-- Deployed-live implementations: 80 of 109 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 67/80
+- Coverage of address-book-owned deployed-live implementations: 12/25 (48.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 25 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 23
+- Deployed-live implementations: 25 of 25 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 12/25
 - Verified + Unaudited implementations: 13
 - Verified by bytecode match: 0
-- Unverified implementations: 29
-- Unique implementations: 109
-- Raw deployments: 245
+- Unverified implementations: 0
+- Unique implementations: 25
+- Raw deployments: 36
 - Audits discovered: 19 (19 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 17
+- Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): $8,544,244.14
 - Latest audit: 2022-03 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 19 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 61 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 6 match-unverified
-- Tier 1 coverage: 2.5% (SlowMist)
+- Coverage code basis (deployed vs audited code): 6 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 6 match-unverified
+- Tier 1 coverage: 8.0% (SlowMist)
 - Note: This protocol is classified as [declining]. ASD of $8,544,244.14 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 53 | 66.3% | 2022-02 |
-| PeckShield | Tier 2 | 24 | 30.0% | 2022-03 |
-| CertiK | Tier 2 | 6 | 7.5% | 2021-05 |
-| SlowMist | Tier 1 | 2 | 2.5% | 2021-11 |
-| yAudit | Tier 2 | 2 | 2.5% | 2021-07 |
+| PeckShield | Tier 2 | 8 | 32.0% | 2022-03 |
+| CertiK | Tier 2 | 6 | 24.0% | 2021-05 |
+| SlowMist | Tier 1 | 2 | 8.0% | 2021-11 |
+| unknown | Tier 2 | 1 | 4.0% | 2022-02 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (67)
+### ✅ Verified + Audited (12)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AlpacaToken | token | bsc | n/a | [`0x8f0528...091d2f`](./contracts/bsc-56/0x8f0528ce5ef7b51152a59745befdd91d97091d2f/) | ✅ Audited |
-| Vault | core_logic | bsc | n/a | 2 deployments: bsc [`0x3282d2...8cd3cd`](./contracts/bsc-56/0x3282d2a151ca00bfe7ed17aa16e42880248cd3cd/); bsc `0xf1be8e...16d421` | ✅ Audited |
-| AccessControlConfig | unknown | bsc | n/a | 2 deployments: bsc [`0x0780d4...3a181a`](./contracts/bsc-56/0x0780d461480a3386031498f264a91f3d473a181a/); bsc `0x6b6997...6e3e5f` | ✅ Audited |
-| AlpacaOraclePriceFeed | unknown | bsc | n/a | 2 deployments: bsc [`0x333db3...a1c52b`](./contracts/bsc-56/0x333db3ede42a351fbcce6ef38ec35a74a9a1c52b/); bsc `0x8cc012...b44a8a` | ✅ Audited |
-| AlpacaStablecoin | unknown | bsc | n/a | 2 deployments: bsc [`0x561b8c...a1a0b4`](./contracts/bsc-56/0x561b8c4f2ac28801baf6a4461b63c954eea1a0b4/); bsc `0xdcecf0...d28a3f` | ✅ Audited |
-| AlpacaStablecoinProxyActions | unknown | bsc | n/a | 2 deployments: bsc [`0x1391fb...bf1481`](./contracts/bsc-56/0x1391fb5efc2394f33930a0cffb9d407abdbf1481/); bsc `0x9d9507...681c0a` | ✅ Audited |
-| AuthTokenAdapter | unknown | bsc | n/a | [`0xb689c0...a951d5`](./contracts/bsc-56/0xb689c00e7d3897aaa505abace6a1b590b5a951d5/) | ✅ Audited |
-| BookKeeper | unknown | bsc | n/a | 2 deployments: bsc [`0xc7d037...fb0e49`](./contracts/bsc-56/0xc7d037e67b09cb59c94e0fef231124fd01fb0e49/); bsc `0xd0aece...fd6e6c` | ✅ Audited |
-| CakeMaxiWorker | unknown | bsc | n/a | [`0x025ba0...8199c2`](./contracts/bsc-56/0x025ba0e82d45e29e831c53637bea2ce9d88199c2/) | ✅ Audited |
-| CakeMaxiWorker02 | unknown | bsc | n/a | 2 deployments: bsc [`0x0455ce...d8275d`](./contracts/bsc-56/0x0455ce6b16629883c52d54ac5d5fcb4622d8275d/); bsc `0xa14c9e...13a4d9` | ✅ Audited |
-| CakeMaxiWorker02 | unknown | bsc | n/a | 3 deployments: bsc [`0x9cbc68...c959c9`](./contracts/bsc-56/0x9cbc68b89fe7edde4609d0fcfca835c976c959c9/); bsc `0xc82aca...f6c8e3`; bsc `0xcdd640...dd2379` | ✅ Audited |
-| ChainLinkPriceOracle | unknown | bsc | n/a | [`0x634902...40fc71`](./contracts/bsc-56/0x634902128543b25265da350e2d961c7ff540fc71/) | ✅ Audited |
-| CollateralPoolConfig | unknown | bsc | n/a | [`0x064bb6...6bdac1`](./contracts/bsc-56/0x064bb6eea2339cad2bdaf895c3d3728e2c6bdac1/) | ✅ Audited |
-| CollateralPoolConfig | unknown | bsc | n/a | [`0x06d280...e87162`](./contracts/bsc-56/0x06d280abee1073b83a01fe778b6145e850e87162/) | ✅ Audited |
-| DeltaNeutralPancakeWorker02 | unknown | bsc | n/a | 5 deployments: bsc [`0x41d2e4...fa1123`](./contracts/bsc-56/0x41d2e4ac5b7373041c06a9d331b0624142fa1123/); bsc `0x5124ba...eb4f04`; bsc `0x539fc3...9e8dbd`; bsc `0x6e3314...463cef`; bsc `0xf9e292...3eeb70` | ✅ Audited |
-| DeltaNeutralPancakeWorker02 | unknown | bsc | n/a | [`0x4d5fc3...b8fe27`](./contracts/bsc-56/0x4d5fc3f859acf7525d7bc0faf540b827d0b8fe27/) | ✅ Audited |
-| DeltaNeutralVault | unknown | bsc | n/a | [`0xd22d90...ecbf99`](./contracts/bsc-56/0xd22d9012b1c06ae593d8f33b706becea58ecbf99/) | ✅ Audited |
-| DeltaNeutralVaultConfig | unknown | bsc | n/a | [`0x30275f...fe700f`](./contracts/bsc-56/0x30275f8980ade89febfd93023a4af67da0fe700f/) | ✅ Audited |
-| DeltaNeutralVaultGateway | unknown | bsc | n/a | 4 deployments: bsc [`0x1d2416...7c01b4`](./contracts/bsc-56/0x1d24165cefa83c14559f67f819b61c2c857c01b4/); bsc `0x595f76...796e2e`; bsc `0x933db5...ab9c6b`; bsc `0xd3f82e...ba413a` | ✅ Audited |
-| DeltaNeutralVaultGateway | unknown | bsc | n/a | [`0xdd0106...faf1c7`](./contracts/bsc-56/0xdd0106c3f2d74ecbfd86f39f5639ca5a7efaf1c7/) | ✅ Audited |
-| FairLaunch | unknown | bsc | n/a | [`0xa625ab...489a8f`](./contracts/bsc-56/0xa625ab01b08ce023b2a342dbb12a16f2c8489a8f/) | ✅ Audited |
-| FixedSpreadLiquidationStrategy | unknown | bsc | n/a | 2 deployments: bsc [`0x52d62b...50dbc1`](./contracts/bsc-56/0x52d62bd452b6b8d7d92ef4fe6e474fb55650dbc1/); bsc `0x9fa028...10d6d1` | ✅ Audited |
-| FixedSpreadLiquidationStrategy | unknown | bsc | n/a | [`0x5af5c2...f8f6b7`](./contracts/bsc-56/0x5af5c295300304d7988d5a6c7c7446d305f8f6b7/) | ✅ Audited |
-| FlashMintModule | unknown | bsc | n/a | 2 deployments: bsc [`0x0a7233...96fbd6`](./contracts/bsc-56/0x0a7233ade189237e4ecc86ff201d3bac2c96fbd6/); bsc `0xe7a49a...f75de3` | ✅ Audited |
-| GetPositions | unknown | bsc | n/a | 2 deployments: bsc [`0x878ef0...d26618`](./contracts/bsc-56/0x878ef0130340b8375de06287a47a6c9c2bd26618/); bsc `0x9f481c...17af03` | ✅ Audited |
-| GrazingRange | unknown | bsc | n/a | 2 deployments: bsc [`0x6bf5b3...feb343`](./contracts/bsc-56/0x6bf5b334409cc3fd336da9a2d3e3f9c870feb343/); bsc `0x815c54...83b77f` | ✅ Audited |
-| GrazingRange | unknown | bsc | n/a | [`0xd50a06...9bb869`](./contracts/bsc-56/0xd50a06e444d2a85098b3dbc66a5d1946789bb869/) | ✅ Audited |
-| IbTokenAdapter | unknown | bsc | n/a | 4 deployments: bsc [`0x2b356b...e9778d`](./contracts/bsc-56/0x2b356b9cd4b00658facc35f4d031df528ee9778d/); bsc `0x425b07...7dec64`; bsc `0x4bf047...1f6d39`; bsc `0x4f56a9...080e36` | ✅ Audited |
-| IbTokenPriceFeed | unknown | bsc | n/a | 4 deployments: bsc [`0x44b930...93c617`](./contracts/bsc-56/0x44b930f2e53231b3f85495229ea644724c93c617/); bsc `0x4a89f8...96f8ae`; bsc `0xbb403a...973d7d`; bsc `0xfb6a37...a00fd1` | ✅ Audited |
-| IbTokenPriceFeed | unknown | bsc | n/a | [`0xbac9d8...d9df49`](./contracts/bsc-56/0xbac9d8d59dbb0e2a21cc75323c9c8a1abbd9df49/) | ✅ Audited |
-| LiquidationEngine | unknown | bsc | n/a | [`0x5aa539...9a7026`](./contracts/bsc-56/0x5aa539cbe3d5bbeb89f633946e64e3c3419a7026/) | ✅ Audited |
-| MdexRestrictedStrategyAddBaseTokenOnly | unknown | bsc | n/a | 2 deployments: bsc [`0x632e03...d5517a`](./contracts/bsc-56/0x632e03943dd4c5c509486233b345fae86cd5517a/); bsc `0xeac60e...ff0548` | ✅ Audited |
-| MdexRestrictedStrategyAddTwoSidesOptimal | unknown | bsc | n/a | 9 deployments: bsc [`0x0768ef...fc6bee`](./contracts/bsc-56/0x0768ef9e891725c4c65f3e0fb671abcd66fc6bee/); bsc `0x090ff5...066137`; bsc `0x34cce2...77415a`; bsc `0x632188...a40214`; bsc `0xaa8f19...b710b4`; bsc `0xb16912...5833f9`; bsc `0xc9b12a...c8e7ad`; bsc `0xd8a128...599b7a`; bsc `0xf4c6b5...860593` | ✅ Audited |
-| MdexRestrictedStrategyLiquidate | unknown | bsc | n/a | 2 deployments: bsc [`0x812298...5ae475`](./contracts/bsc-56/0x812298f58b7cc413f06aa88f10fad71bd55ae475/); bsc `0xbd2c6b...166f1d` | ✅ Audited |
-| MdexRestrictedStrategyPartialCloseLiquidate | unknown | bsc | n/a | 2 deployments: bsc [`0xd7103a...df68b4`](./contracts/bsc-56/0xd7103ac4c3b888fdfe9c7adbe596c15e5ddf68b4/); bsc `0xdaf720...cf373e` | ✅ Audited |
-| MdexRestrictedStrategyPartialCloseMinimizeTrading | unknown | bsc | n/a | 2 deployments: bsc [`0x665a8e...816ce2`](./contracts/bsc-56/0x665a8e4b88f6bfa984b1568505cb4545f7816ce2/); bsc `0x889346...5e5b29` | ✅ Audited |
-| MdexRestrictedStrategyWithdrawMinimizeTrading | unknown | bsc | n/a | 2 deployments: bsc [`0x47f1c5...239b72`](./contracts/bsc-56/0x47f1c5f505043dee9604b98d99304f7ad4239b72/); bsc `0xa5e98c...2a3463` | ✅ Audited |
-| MdexWorker02 | unknown | bsc | n/a | [`0xe9005e...e515b7`](./contracts/bsc-56/0xe9005e936d7d8d28b7c8151be39195744ae515b7/) | ✅ Audited |
-| OracleMedianizer | unknown | bsc | n/a | 2 deployments: bsc [`0x329796...738303`](./contracts/bsc-56/0x3297961610d8a64f41cb4f577448bf3a57738303/); bsc `0x553b8a...2b880c` | ✅ Audited |
-| PancakeswapV2RestrictedSingleAssetStrategyAddBaseTokenOnly | unknown | bsc | n/a | 2 deployments: bsc [`0x5cb454...011f2b`](./contracts/bsc-56/0x5cb454fc86068e710212fbecbc93070b90011f2b/); bsc `0x9a5105...334d96` | ✅ Audited |
-| PancakeswapV2RestrictedSingleAssetStrategyAddBaseWithFarm | unknown | bsc | n/a | 5 deployments: bsc [`0x389126...5a4833`](./contracts/bsc-56/0x38912684b1d20fe9d725e8b39c39458fac5a4833/); bsc `0x67a2cd...3f50f0`; bsc `0x69b501...6ed0e1`; bsc `0x9a0bee...459b21`; bsc `0xb0951e...2ba029` | ✅ Audited |
-| PancakeswapV2RestrictedSingleAssetStrategyLiquidate | unknown | bsc | n/a | 2 deployments: bsc [`0x67420c...e3053f`](./contracts/bsc-56/0x67420cc8fda18b061fb4ba63777736cd8ae3053f/); bsc `0x6c0105...75d150` | ✅ Audited |
-| PancakeswapV2RestrictedSingleAssetStrategyLiquidate | unknown | bsc | n/a | [`0x75a6b8...565e83`](./contracts/bsc-56/0x75a6b8c95bb115706b111c50bcad3607b9565e83/) | ✅ Audited |
-| PancakeswapV2RestrictedSingleAssetStrategyPartialCloseLiquidate | unknown | bsc | n/a | 2 deployments: bsc [`0x23850a...7cc61c`](./contracts/bsc-56/0x23850a04f9dbf488780d998dd0048d472f7cc61c/); bsc `0xa6b2a3...960843` | ✅ Audited |
-| PancakeswapV2RestrictedSingleAssetStrategyWithdrawMinimizeTrading | unknown | bsc | n/a | 2 deployments: bsc [`0x94f5e8...dbe242`](./contracts/bsc-56/0x94f5e884e11fc054ca0b332e3a8773750bdbe242/); bsc `0xb7025d...91df77` | ✅ Audited |
-| PancakeswapV2RestrictedStrategyPartialCloseLiquidate | unknown | bsc | n/a | 2 deployments: bsc [`0x1313c5...e3ae55`](./contracts/bsc-56/0x1313c57c5db43f932a8c91e12d19c2890fe3ae55/); bsc `0x436263...f45316` | ✅ Audited |
-| PancakeswapV2Worker02 | unknown | bsc | n/a | 30 deployments: bsc [`0x03462f...7b0d9b`](./contracts/bsc-56/0x03462fb60aa5de5f1a068a597743f66e097b0d9b/); bsc `0x0e7b1e...119e2f`; bsc `0x1d0edc...985f42`; bsc `0x1dbdc3...0bdded`; bsc `0x255f31...907fdb`; bsc `0x2e7f32...176b1e`; bsc `0x315f5f...8fc726`; bsc `0x39bbc1...0258ca`; bsc `0x4193d3...ca015c`; bsc `0x4d3952...26991e`; bsc `0x532358...f36dca`; bsc `0x560173...316f0b`; bsc `0x651ebb...f5bfde`; bsc `0x68f131...1a5c34`; bsc `0x72bbcf...84b2a2`; bsc `0x730bce...26e472`; bsc `0x7be8f8...0063bd`; bsc `0x7d306d...804939`; bsc `0x807554...a73db2`; bsc `0x867d16...5e19c4`; bsc `0xa504af...e5d116`; bsc `0xa573ff...7c2ec8`; bsc `0xa726e9...6da393`; bsc `0xb800a8...3f5bcf`; bsc `0xb8e0b4...7a5eda`; bsc `0xbd861f...22f373`; bsc `0xc796e4...c0878d`; bsc `0xcfe0fa...eff11f`; bsc `0xd890f5...fc9e11`; bsc `0xf80c39...4cbe62` | ✅ Audited |
-| PancakeswapV2Worker02 | unknown | bsc | n/a | 2 deployments: bsc [`0xb6960f...ff521f`](./contracts/bsc-56/0xb6960faf74e7ada47bcbb3923d793da253ff521f/); bsc `0xc69c8c...c3708b` | ✅ Audited |
-| PositionManager | unknown | bsc | n/a | [`0xaba0b0...41ee19`](./contracts/bsc-56/0xaba0b03eaa3684eb84b51984add918290b41ee19/) | ✅ Audited |
-| PositionManager | unknown | bsc | n/a | [`0xbedf10...d461b6`](./contracts/bsc-56/0xbedf10b8a2af77051d3d1f82c048c2eccfd461b6/) | ✅ Audited |
-| PriceOracle | unknown | bsc | n/a | 2 deployments: bsc [`0x1afadb...3831af`](./contracts/bsc-56/0x1afadbe730d44b95aeec909846d4bfdd8d3831af/); bsc `0x4c7fb2...6ca367` | ✅ Audited |
-| ProxyWalletFactory | unknown | bsc | n/a | [`0x56f2d6...f4a116`](./contracts/bsc-56/0x56f2d6fe1acb1549a665ff3a6e7dc46753f4a116/) | ✅ Audited |
-| ProxyWalletRegistry | unknown | bsc | n/a | 2 deployments: bsc [`0x13e3bc...d30aea`](./contracts/bsc-56/0x13e3bc3c6a96ae3beadd1b08531fde979dd30aea/); bsc `0x951eb3...3e320f` | ✅ Audited |
-| ShowStopper | unknown | bsc | n/a | [`0xc19c71...798558`](./contracts/bsc-56/0xc19c71a2fc7d67fb10ffe4e13dab3acfef798558/) | ✅ Audited |
-| SingleAssetWorkerConfig | unknown | bsc | n/a | 3 deployments: bsc [`0x0a3617...b1f8aa`](./contracts/bsc-56/0x0a3617197113ed2a9bbcadfb3c4f417734b1f8aa/); bsc `0x9b659a...034d34`; bsc `0xfbefff...01bc27` | ✅ Audited |
-| StabilityFeeCollector | unknown | bsc | n/a | 2 deployments: bsc [`0x45040e...1129e6`](./contracts/bsc-56/0x45040e48c00b52d9c0bd11b8f577f188991129e6/); bsc `0xe35e00...c00aa0` | ✅ Audited |
-| StablecoinAdapter | unknown | bsc | n/a | 2 deployments: bsc [`0x713130...cacce3`](./contracts/bsc-56/0x713130e882b1dcb9ea7d960119f7b62429cacce3/); bsc `0xd409da...ce4749` | ✅ Audited |
-| StableSwapModule | unknown | bsc | n/a | 2 deployments: bsc [`0xd16004...513fac`](./contracts/bsc-56/0xd16004424b9c3f0a7c74c4c8dcda0d8c4d513fac/); bsc `0xfbd7b6...cfb4f6` | ✅ Audited |
-| StrictAlpacaOraclePriceFeed | unknown | bsc | n/a | 7 deployments: bsc [`0x2b9c18...f89559`](./contracts/bsc-56/0x2b9c18a7e2f067e006e4625a74174472e9f89559/); bsc `0x9cbb0e...0a93f1`; bsc `0x9f748f...9c0568`; bsc `0xde375d...4a0b61`; bsc `0xea4e46...d72ac7`; bsc `0xee1d99...190731`; bsc `0xf7e3b6...5cd534` | ✅ Audited |
-| StronkAlpaca | unknown | bsc | n/a | [`0x6f695b...6ce7a7`](./contracts/bsc-56/0x6f695bd5ffd25149176629f8491a5099426ce7a7/) | ✅ Audited |
-| SystemDebtEngine | unknown | bsc | n/a | 2 deployments: bsc [`0x4c98c7...df1cb8`](./contracts/bsc-56/0x4c98c712da02d48fa3aa53dc3fe3e6754ddf1cb8/); bsc `0xe09e20...501b0e` | ✅ Audited |
-| Timelock | governance | bsc | n/a | [`0x2d5408...1d0a59`](./contracts/bsc-56/0x2d5408f2287bf9f9b05404794459a846651d0a59/) | ✅ Audited |
-| WaultSwapRestrictedStrategyPartialCloseLiquidate | unknown | bsc | n/a | 2 deployments: bsc [`0x91c1f2...df2d24`](./contracts/bsc-56/0x91c1f2e7f7e6b77171ebda204f074a574edf2d24/); bsc `0xfe49af...fdf073` | ✅ Audited |
-| WaultSwapWorker02 | unknown | bsc | n/a | 27 deployments: bsc [`0x040a65...425da4`](./contracts/bsc-56/0x040a65cddb0b8c75c72936879aa603e0d7425da4/); bsc `0x0541c5...222b1d`; bsc `0x0c5ed4...94b9c2`; bsc `0x0e0806...1b281c`; bsc `0x184962...87e3ca`; bsc `0x195f4c...7cac7f`; bsc `0x20064f...50caf9`; bsc `0x3483f1...48423f`; bsc `0x50441d...43fee9`; bsc `0x5894ac...b62355`; bsc `0x6169a9...7a51a7`; bsc `0x63dd2d...78c435`; bsc `0x684e33...f57dd8`; bsc `0x74c979...70e5f7`; bsc `0x774d12...2ad294`; bsc `0x813a9a...c3a7f4`; bsc `0xb01a5f...5f6469`; bsc `0xb3e13a...75fa66`; bsc `0xb5000c...b9deda`; bsc `0xb5c425...3a00bb`; bsc `0xbe6bde...8babed`; bsc `0xcd4b63...29e88d`; bsc `0xe0d623...3c1581`; bsc `0xe29fd3...d36655`; bsc `0xf4b424...9a7f57`; bsc `0xfa4a3f...47ea66`; bsc `0xfaa8eb...0b8013` | ✅ Audited |
-| WaultSwapWorker02 | unknown | bsc | n/a | 2 deployments: bsc [`0x29a08f...31c88a`](./contracts/bsc-56/0x29a08f38af02fcc2a75e91144e3931e26d31c88a/); bsc `0xf9bda2...e04246` | ✅ Audited |
-| WaultSwapWorker02 | unknown | bsc | n/a | 3 deployments: bsc [`0x85fb19...46b0bf`](./contracts/bsc-56/0x85fb19fc1fed868e65bdfec58e64cccb8546b0bf/); bsc `0x97d328...0a20f4`; bsc `0xe8323f...b46df4` | ✅ Audited |
-| WorkerConfig | governance | bsc | n/a | [`0x3175ec...884a11`](./contracts/bsc-56/0x3175ec52c36fff63dce00e8a50e6066d38884a11/) | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Vault | core_logic | project_anchor | own_supporting | 2 | bsc | unit-226236 (2 proxies) | 2 deployments: bsc `0x3282d2...8cd3cd`; bsc `0xf1be8e...16d421` | ✅ Audited |
+| AdminUpgradeabilityProxy | proxy | project_anchor | own_supporting | 3 | bsc | unit-226237 (3 proxies) | 3 deployments: bsc `0x158da8...951e59`; bsc `0xd7d069...fc0063`; bsc `0xff6934...b147eb` | ✅ Audited |
+| AdminUpgradeabilityProxy | proxy | project_anchor | own_supporting | 1 | bsc | unit-226244 | `0x7c9e73...87592f` | ✅ Audited |
+| DebtToken | unknown | project_anchor | own_supporting | 8 | bsc | unit-226233 (8 proxies) | 8 deployments: bsc `0x02da70...aa7442`; bsc `0x11362e...a9db40`; bsc `0x262de1...1b59b2`; bsc `0x3b4fbb...0fa4dc`; bsc `0x426bdf...c361f3`; bsc `0x6a3487...2a55f9`; bsc `0x92110a...258fe6`; bsc `0xb76ed4...aeaf84` | ✅ Audited |
+| DebtToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-226224 | `0x513813...e22cec` | ✅ Audited |
+| DebtToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-226232 | `0xd19d62...029ebd` | ✅ Audited |
+| FairLaunch | unknown | project_anchor | own_supporting | 0 | bsc | unit-226230 | `0xa625ab...489a8f` | ✅ Audited |
+| GrazingRange | unknown | project_anchor | own_supporting | 1 | bsc | unit-226241 | `0x6bf5b3...feb343` | ✅ Audited |
+| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | bsc | unit-226225 | `0x5379f3...94f452` | ✅ Audited |
+| Shield | unknown | project_anchor | own_supporting | 0 | bsc | unit-226221 | `0x1963f8...1b4656` | ✅ Audited |
+| StronkAlpaca | unknown | project_anchor | own_supporting | 0 | bsc | unit-226228 | `0x6f695b...6ce7a7` | ✅ Audited |
+| Timelock | governance | project_anchor | own_supporting | 0 | bsc | unit-226222 | `0x2d5408...1d0a59` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (13)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| VaultAip25 | core_logic | bsc | n/a | 2 deployments: bsc [`0x08fc9b...1c24e7`](./contracts/bsc-56/0x08fc9ba2cac74742177e0afc3dc8aed6961c24e7/); bsc `0xbff4a3...723afe` | ⚠️ Unaudited |
-| AdminFacet | unknown | bsc | n/a | [`0x18a15b...0fdc4e`](./contracts/bsc-56/0x18a15bf2aa1e514dc660cc4b08d05f9f6f0fdc4e/) | ⚠️ Unaudited |
-| AdminUpgradeabilityProxy | proxy | bsc | n/a | 3 deployments: bsc [`0x158da8...951e59`](./contracts/bsc-56/0x158da805682bdc8ee32d52833ad41e74bb951e59/); bsc `0xd7d069...fc0063`; bsc `0xff6934...b147eb` | ⚠️ Unaudited |
-| AdminUpgradeabilityProxy | proxy | bsc | n/a | [`0x7c9e73...87592f`](./contracts/bsc-56/0x7c9e73d4c71dae564d41f78d56439bb4ba87592f/) | ⚠️ Unaudited |
-| DeltaNeutralPancakeMCV2Worker02 | unknown | bsc | n/a | 8 deployments: bsc [`0x07767d...62f3ae`](./contracts/bsc-56/0x07767daf4e84bdaabf3a72c80cec8c8eb962f3ae/); bsc `0x0d9faf...32efd9`; bsc `0x42da67...fb2b64`; bsc `0x4b70c4...7a4162`; bsc `0x54d321...ef4db5`; bsc `0x83a5d5...e52723`; bsc `0x8ef56e...2cb067`; bsc `0xfa4b1e...4fa832` | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | bsc | n/a | [`0x18f59e...475d01`](./contracts/bsc-56/0x18f59e8dddef9e000863082a37fc56a2a5475d01/) | ⚠️ Unaudited |
-| Multicall | periphery | bsc | n/a | [`0x41263c...90e76c`](./contracts/bsc-56/0x41263cba59eb80dc200f3e2544eda4ed6a90e76c/) | ⚠️ Unaudited |
-| RevenueTreasury02 | operational_periphery | bsc | n/a | [`0x08b5a9...5afc7e`](./contracts/bsc-56/0x08b5a95cb94f926a8b620e87ee92e675b35afc7e/) | ⚠️ Unaudited |
-| TerminateAV02 | unknown | bsc | n/a | 4 deployments: bsc [`0x8e5cfa...af6f16`](./contracts/bsc-56/0x8e5cfa7c06f187b56537f7f0cabfb55611af6f16/); bsc `0x9fe961...a99aa1`; bsc `0xc57876...92cc94`; bsc `0xe9bd0b...b711ab` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | bsc | n/a | [`0x6fee87...1ddc3c`](./contracts/bsc-56/0x6fee87f744fc612948001b09b2808c87b91ddc3c/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | bsc | n/a | [`0x800933...1e26d7`](./contracts/bsc-56/0x800933d685e7dc753758ceb77c8bd34abf1e26d7/) | ⚠️ Unaudited |
-| VaultAip42 | core_logic | bsc | n/a | [`0x5fd571...e67c26`](./contracts/bsc-56/0x5fd571bea8d104a28bfe44874f2aaf69f8e67c26/) | ⚠️ Unaudited |
-| xALPACAMigrator | periphery | bsc | n/a | [`0xb7d85a...ad24a9`](./contracts/bsc-56/0xb7d85ab25b9d478961face285fa3d8aaecad24a9/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| VaultAip25 | core_logic | project_anchor | own_supporting | 2 | bsc | unit-226239 (2 proxies) | 2 deployments: bsc `0x08fc9b...1c24e7`; bsc `0xbff4a3...723afe` | ⚠️ Unaudited |
+| EmissionForwarder | unknown | project_anchor | own_supporting | 1 | bsc | unit-226240 | `0x4f4054...c1cf43` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | project_anchor | own_supporting | 1 | bsc | unit-226235 | `0x18f59e...475d01` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | project_anchor | own_supporting | 0 | bsc | unit-226220 | `0x083c02...e58de7` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | project_anchor | own_supporting | 0 | bsc | unit-226226 | `0x60bc40...514105` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | project_anchor | own_supporting | 0 | bsc | unit-226227 | `0x63c60b...dc4412` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | project_anchor | own_supporting | 0 | bsc | unit-226229 | `0xa33ff7...50ce58` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | project_anchor | own_supporting | 0 | bsc | unit-226231 | `0xd193b3...21c4bf` | ⚠️ Unaudited |
+| Multicall | periphery | project_anchor | own_supporting | 0 | bsc | unit-226223 | `0x41263c...90e76c` | ⚠️ Unaudited |
+| ProxyToken | unknown | project_anchor | own_supporting | 1 | bsc | unit-226238 | `0x50e574...1ddab7` | ⚠️ Unaudited |
+| RevenueTreasury02 | operational_periphery | project_anchor | own_supporting | 1 | bsc | unit-226234 | `0x08b5a9...5afc7e` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | project_anchor | own_supporting | 1 | bsc | unit-226242 | `0x800933...1e26d7` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | project_anchor | own_supporting | 1 | bsc | unit-226243 | `0xc4ed26...5d938b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -163,65 +179,271 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (29)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x0eeca1...28561c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x14b3ca...1fee97` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x14ddb0...28a08a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x1e66af...e5ea84` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x274dd0...338bb2` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x284e25...6ad406` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x28a717...1798df` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x33c66c...bf1753` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x349dbc...ec5b80` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x4b8378...b5a3ab` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x4eca08...0d30b6` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x564c51...20400a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x61d5e9...b081c2` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x6a31f3...5094a7` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x799cb5...f2a55e` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x7a81cd...8b5ca6` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x7e1a28...afd0ff` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x83df8e...02353f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x8511e6...bcfbee` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x8d6576...233a2d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xabc591...7b6274` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xb4529a...bf220f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xcb1bf5...7f6b23` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd3bb23...4be6c8` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd88579...feda39` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe87822...f7372c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xec135a...b757f9` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xf7524a...a61f44` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xfe6586...9a578c` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [PeckShield-Audit-Report-Alpaca-addCollateral-v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/add-collateral-routine/PeckShield-Audit-Report-Alpaca-addCollateral-v1.0.pdf) | PeckShield | Audit | 2021-08 | stale | Direct | contract_name | 2 | n/a |
-| [Inspex_AUDIT2021002_Alpaca_CakeMaxi_FullReport_v3.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/cakemaxi/Inspex_AUDIT2021002_Alpaca_CakeMaxi_FullReport_v3.0.pdf) | unknown | Audit | 2021-06 | stale | Direct | contract_name | 4 | high |
-| [PeckShield-Audit-Report-Alpaca-CakeMaxi-v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/cakemaxi/PeckShield-Audit-Report-Alpaca-CakeMaxi-v1.0.pdf) | PeckShield | Audit | 2021-06 | stale | Direct | contract_name | 1 | high |
-| [Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_3.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/cakemaxi/Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_3.pdf) | unknown | Audit | 2021-06 | stale | Direct | contract_name | 16 | high |
-| [PeckShield-Audit-Report-AlpacaDeltaNeutral-v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/delta-neutral/PeckShield-Audit-Report-AlpacaDeltaNeutral-v1.0.pdf) | PeckShield | Audit | 2022-03 | stale | Direct | contract_name | 13 | high |
-| [alpaca_v1.0-signed.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/delta-neutral/alpaca_v1.0-signed.pdf) | unknown | Audit | 2022-02 | stale | Direct | contract_name | 7 | high |
-| [Alpaca_GrazingRange_SmartContractReview_fcd2f3c_Report.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/grazing-range/Alpaca_GrazingRange_SmartContractReview_fcd2f3c_Report.pdf) | unknown | Audit | 2021-05 | stale | Direct | contract_name | 3 | high |
-| [Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_1.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/grazing-range/Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_1.pdf) | unknown | Audit | 2021-05 | stale | Direct | contract_name | 3 | high |
-| [Inspex_AUDIT2021025_AlpacaFinance_MDEXIntegration_FullReport_v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/mdex-integration/Inspex_AUDIT2021025_AlpacaFinance_MDEXIntegration_FullReport_v1.0.pdf) | unknown | Audit | 2021-09 | stale | Direct | contract_name | 20 | high |
-| [Inspex_AUDIT2021009_Alpaca_OptimizedWorker_FinalReport_v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/optimized-worker/Inspex_AUDIT2021009_Alpaca_OptimizedWorker_FinalReport_v1.0.pdf) | unknown | Audit | 2021-07 | stale | Direct | contract_name | 69 | high |
-| [Smart Contract Security Audit Report - Alpaca Finance Oracle.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/oracle/Smart%20Contract%20Security%20Audit%20Report%20-%20Alpaca%20Finance%20Oracle.pdf) | yAudit | Audit | 2021-07 | stale | Direct | contract_name | 3 | high |
-| [PeckShield-Audit-Report-Alpaca-PartialCloseStrategies-v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/partial-close/PeckShield-Audit-Report-Alpaca-PartialCloseStrategies-v1.0.pdf) | PeckShield | Audit | 2021-07 | stale | Direct | contract_name | 6 | high |
-| [CertiK Security Assessment for Alpaca Finance 1.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/protocol/CertiK%20Security%20Assessment%20for%20Alpaca%20Finance%201.pdf) | CertiK | Audit | 2021-05 | stale | Direct | contract_name | 6 | n/a |
-| [PeckShield-Audit-Report-Alpaca-v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/protocol/PeckShield-Audit-Report-Alpaca-v1.0.pdf) | PeckShield | Audit | 2021-03 | stale | Direct | contract_name | 3 | n/a |
-| [Inspex_AUDIT2022008_Alpaca Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/spooky-minifl/Inspex_AUDIT2022008_Alpaca%20Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf) | unknown | Audit | 2022-02 | stale | Direct | n/a | 0 | n/a |
-| [Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf](https://github.com/alpaca-finance/alpaca-stablecoin/blob/main/audits/Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf) | unknown | Audit | 2021-11 | stale | Direct | contract_name | 53 | high |
-| [PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf](https://github.com/alpaca-finance/alpaca-stablecoin/blob/main/audits/PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf) | PeckShield | Audit | 2021-11 | stale | Direct | contract_name | 18 | high |
-| [SlowMist_Audit_Report_-_AlpacaStablecoin.pdf](https://github.com/alpaca-finance/alpaca-stablecoin/blob/main/audits/SlowMist_Audit_Report_-_AlpacaStablecoin.pdf) | SlowMist | Audit | 2021-11 | stale | Direct | contract_name | 2 | n/a |
-| [PeckShield-Audit-Report-Alpaca-Alpies-v1.0.pdf](https://github.com/alpaca-finance/alpies-contract/blob/main/audits/PeckShield-Audit-Report-Alpaca-Alpies-v1.0.pdf) | PeckShield | Audit | 2021-10 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [PeckShield-Audit-Report-Alpaca-addCollateral-v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/add-collateral-routine/PeckShield-Audit-Report-Alpaca-addCollateral-v1.0.pdf) | PeckShield | Audit | 2021-08 | stale | Direct | n/a | matched | 1 | 1 | 0 | 3 | n/a |
+| [Inspex_AUDIT2021002_Alpaca_CakeMaxi_FullReport_v3.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/cakemaxi/Inspex_AUDIT2021002_Alpaca_CakeMaxi_FullReport_v3.0.pdf) | unknown | Audit | 2021-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 7 | high |
+| [PeckShield-Audit-Report-Alpaca-CakeMaxi-v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/cakemaxi/PeckShield-Audit-Report-Alpaca-CakeMaxi-v1.0.pdf) | PeckShield | Audit | 2021-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_3.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/cakemaxi/Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_3.pdf) | unknown | Audit | 2021-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 6 | high |
+| [PeckShield-Audit-Report-AlpacaDeltaNeutral-v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/delta-neutral/PeckShield-Audit-Report-AlpacaDeltaNeutral-v1.0.pdf) | PeckShield | Audit | 2022-03 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [alpaca_v1.0-signed.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/delta-neutral/alpaca_v1.0-signed.pdf) | unknown | Audit | 2022-02 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [Alpaca_GrazingRange_SmartContractReview_fcd2f3c_Report.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/grazing-range/Alpaca_GrazingRange_SmartContractReview_fcd2f3c_Report.pdf) | unknown | Audit | 2021-05 | stale | Direct | contract_name | matched | 1 | 1 | 0 | 0 | high |
+| [Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_1.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/grazing-range/Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_1.pdf) | unknown | Audit | 2021-05 | stale | Direct | contract_name | matched | 1 | 1 | 0 | 0 | high |
+| [Inspex_AUDIT2021025_AlpacaFinance_MDEXIntegration_FullReport_v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/mdex-integration/Inspex_AUDIT2021025_AlpacaFinance_MDEXIntegration_FullReport_v1.0.pdf) | unknown | Audit | 2021-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 7 | high |
+| [Inspex_AUDIT2021009_Alpaca_OptimizedWorker_FinalReport_v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/optimized-worker/Inspex_AUDIT2021009_Alpaca_OptimizedWorker_FinalReport_v1.0.pdf) | unknown | Audit | 2021-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+| [Smart Contract Security Audit Report - Alpaca Finance Oracle.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/oracle/Smart%20Contract%20Security%20Audit%20Report%20-%20Alpaca%20Finance%20Oracle.pdf) | yAudit | Audit | 2021-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [PeckShield-Audit-Report-Alpaca-PartialCloseStrategies-v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/partial-close/PeckShield-Audit-Report-Alpaca-PartialCloseStrategies-v1.0.pdf) | PeckShield | Audit | 2021-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | medium |
+| [CertiK Security Assessment for Alpaca Finance 1.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/protocol/CertiK%20Security%20Assessment%20for%20Alpaca%20Finance%201.pdf) | CertiK | Audit | 2021-05 | stale | Direct | n/a | matched | 6 | 2 | 0 | 19 | n/a |
+| [PeckShield-Audit-Report-Alpaca-v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/protocol/PeckShield-Audit-Report-Alpaca-v1.0.pdf) | PeckShield | Audit | 2021-03 | stale | Direct | address | matched | 10 | 5 | 0 | 26 | high |
+| [Inspex_AUDIT2022008_Alpaca Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf](https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/spooky-minifl/Inspex_AUDIT2022008_Alpaca%20Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf) | unknown | Audit | 2022-02 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 9 | high |
+| [Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf](https://github.com/alpaca-finance/alpaca-stablecoin/blob/main/audits/Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf) | unknown | Audit | 2021-11 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 31 | high |
+| [PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf](https://github.com/alpaca-finance/alpaca-stablecoin/blob/main/audits/PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf) | PeckShield | Audit | 2021-11 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 10 | high |
+| [SlowMist_Audit_Report_-_AlpacaStablecoin.pdf](https://github.com/alpaca-finance/alpaca-stablecoin/blob/main/audits/SlowMist_Audit_Report_-_AlpacaStablecoin.pdf) | SlowMist | Audit | 2021-11 | stale | Direct | n/a | matched | 2 | 0 | 0 | 44 | n/a |
+| [PeckShield-Audit-Report-Alpaca-Alpies-v1.0.pdf](https://github.com/alpaca-finance/alpies-contract/blob/main/audits/PeckShield-Audit-Report-Alpaca-Alpies-v1.0.pdf) | PeckShield | Audit | 2021-10 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [5761] PeckShield-Audit-Report-Alpaca-addCollateral-v1.0.pdf — matched: No reason recorded
+- [5762] Inspex_AUDIT2021002_Alpaca_CakeMaxi_FullReport_v3.0.pdf — no match: Extracted 7 contracts from scope tables in sections 2.2 (pages 3-5). Date from cover page: Jun 14, 2021.
+- [5763] PeckShield-Audit-Report-Alpaca-CakeMaxi-v1.0.pdf — no match: Audit report for Alpaca Finance's CakeMaxiWorker and strategies. Scope explicitly mentions 'CakeMaxi Worker and its associated strategies'. Two contracts identified from findings: CakeMaxiWorker and CakeMaxiWorkerConfig.
+- [5764] Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_3.pdf — no match: Scope explicitly lists CakeMaxiWorker.sol, SingleAssetWorkerConfig.sol, and all strategies under a folder. The audit date is given as 2021.06.11 in the audit result table.
+- [5765] PeckShield-Audit-Report-AlpacaDeltaNeutral-v1.0.pdf — no match: Contracts extracted from scope description and findings targets. Audit date from cover page and version history.
+- [5766] alpaca_v1.0-signed.pdf — no match: Extracted from report title page and scope section. Contracts explicitly mentioned in scope and findings.
+- [5767] Alpaca_GrazingRange_SmartContractReview_fcd2f3c_Report.pdf — matched: Only one contract in scope: GrazingRange.sol. Date from cover page: '5 May 2021'.
+- [5768] Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_1.pdf — matched: Only one contract, GrazingRange, is in scope. Audit date from 'Audit Date' column in Audit Result table: 2021.05.04 - 2021.05.06, using end date.
+- [5769] Inspex_AUDIT2021025_AlpacaFinance_MDEXIntegration_FullReport_v1.0.pdf — no match: All 7 contracts listed in the scope section (Section 2.2) were extracted. The audit date is from the cover page: 'Date Issued: Sep 24, 2021'.
+- [5770] Inspex_AUDIT2021009_Alpaca_OptimizedWorker_FinalReport_v1.0.pdf — no match: Three contracts explicitly listed in scope table. Audit date from cover page.
+- [5771] Smart Contract Security Audit Report - Alpaca Finance Oracle.pdf — no match: Two contracts explicitly listed in scope: OracleMedianizer and ChainLinkPriceOracle. Audit date from audit result table: 2021.07.08 - 2021.07.12, using end date.
+- [5772] PeckShield-Audit-Report-Alpaca-PartialCloseStrategies-v1.0.pdf — no match: No explicit scope section; contracts extracted from findings and report description.
+- [5773] CertiK Security Assessment for Alpaca Finance 1.pdf — matched: No reason recorded
+- [5774] PeckShield-Audit-Report-Alpaca-v1.0.pdf — matched: The report does not have a dedicated scope section; contract names were extracted from findings targets and the deployment table.
+- [5775] Inspex_AUDIT2022008_Alpaca Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf — no match: All 9 contracts explicitly listed in scope table on page 3-4. Audit date from cover page: Feb 8, 2022.
+- [5776] Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf — no match: All contracts listed in the Scope section (2.2) of the audit report, both initial audit and reassessment, were extracted. The audit date is from the cover page: 'Date Issued: Nov 15, 2021'.
+- [5777] PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf — no match: Extracted contract names from findings targets and scope description. Audit date from cover page.
+- [5778] SlowMist_Audit_Report_-_AlpacaStablecoin.pdf — matched: No reason recorded
+- [5779] PeckShield-Audit-Report-Alpaca-Alpies-v1.0.pdf — no match: Audit report for Alpies NFT collection. Scope includes Alpies, AscendingStepModel, and DescendingStepModel contracts. Audit date is October 18, 2021.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| PeckShield-Audit-Report-Alpaca-addCollateral-v1.0.pdf | ConfigurableInterestVaultConfig | unmatched — not counted | — | — | no |
+| PeckShield-Audit-Report-Alpaca-addCollateral-v1.0.pdf | SingleAssetWorkerConfig | unmatched — not counted | — | — | no |
+| PeckShield-Audit-Report-Alpaca-addCollateral-v1.0.pdf | Vault | own proxy deployment | AdminUpgradeabilityProxy (proxy) (selected) `0x3282d2...8cd3cd` — deployed 2021-06-21 19:25:14+03 — liveness: live (current_address_book_code)<br>AdminUpgradeabilityProxy (proxy) (alternative) `0xf1be8e...16d421` — deployed 2021-04-25 09:45:01+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2021-06-21 was 41d from audit; next candidate 98d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-Alpaca-addCollateral-v1.0.pdf | WorkerConfig | unmatched — not counted | — | — | no |
+| Inspex_AUDIT2021002_Alpaca_CakeMaxi_FullReport_v3.0.pdf | CakeMaxiWorker | unmatched — not counted | — | Listed in scope tables for Round 1 and Round 2 | no |
+| Inspex_AUDIT2021002_Alpaca_CakeMaxi_FullReport_v3.0.pdf | CakeMaxiWorkerConfig | unmatched — not counted | — | Listed in scope table for Round 1 | no |
+| Inspex_AUDIT2021002_Alpaca_CakeMaxi_FullReport_v3.0.pdf | PancakeswapV2RestrictedCakeMaxiStrategyAddBaseTokenOnly | unmatched — not counted | — | Listed in scope tables for Round 1 and Round 2 | no |
+| Inspex_AUDIT2021002_Alpaca_CakeMaxi_FullReport_v3.0.pdf | PancakeswapV2RestrictedCakeMaxiStrategyAddBaseWithFarm | unmatched — not counted | — | Listed in scope tables for Round 1 and Round 2 | no |
+| Inspex_AUDIT2021002_Alpaca_CakeMaxi_FullReport_v3.0.pdf | PancakeswapV2RestrictedCakeMaxiStrategyLiquidate | unmatched — not counted | — | Listed in scope tables for Round 1 and Round 2 | no |
+| Inspex_AUDIT2021002_Alpaca_CakeMaxi_FullReport_v3.0.pdf | PancakeswapV2RestrictedCakeMaxiStrategyWithdrawMinimizeTrading | unmatched — not counted | — | Listed in scope tables for Round 1 and Round 2 | no |
+| Inspex_AUDIT2021002_Alpaca_CakeMaxi_FullReport_v3.0.pdf | SingleAssetWorkerConfig | unmatched — not counted | — | Listed in scope table for Round 2 | no |
+| PeckShield-Audit-Report-Alpaca-CakeMaxi-v1.0.pdf | CakeMaxiWorker | unmatched — not counted | — | Listed as target in findings (PVE-001) and mentioned in scope description. | no |
+| PeckShield-Audit-Report-Alpaca-CakeMaxi-v1.0.pdf | CakeMaxiWorkerConfig | unmatched — not counted | — | Listed as target in findings (PVE-002) and mentioned in scope description. | no |
+| Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_3.pdf | CakeMaxiWorker | unmatched — not counted | — | listed in scope and analyzed in report | no |
+| Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_3.pdf | SingleAssetWorkerConfig | unmatched — not counted | — | listed in scope and analyzed in report | no |
+| Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_3.pdf | PancakeswapV2RestrictedSingleAssetStrategyAddBaseTokenOnly | unmatched — not counted | — | all strategies under folder listed in scope | no |
+| Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_3.pdf | PancakeswapV2RestrictedSingleAssetStrategyAddBaseWithFarm | unmatched — not counted | — | all strategies under folder listed in scope | no |
+| Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_3.pdf | PancakeswapV2RestrictedSingleAssetStrategyLiquidate | unmatched — not counted | — | all strategies under folder listed in scope | no |
+| Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_3.pdf | PancakeswapV2RestrictedSingleAssetStrategyWithdrawMinimizeTrading | unmatched — not counted | — | all strategies under folder listed in scope | no |
+| PeckShield-Audit-Report-AlpacaDeltaNeutral-v1.0.pdf | DeltaNeutralVault | unmatched — not counted | — | mentioned as target in scope and findings | no |
+| PeckShield-Audit-Report-AlpacaDeltaNeutral-v1.0.pdf | DeltaNeutralPancakeWorker02 | unmatched — not counted | — | listed as associated worker in Section 1.1 | no |
+| PeckShield-Audit-Report-AlpacaDeltaNeutral-v1.0.pdf | DeltaNeutralMdexWorker02 | unmatched — not counted | — | listed as associated worker in Section 1.1 | no |
+| PeckShield-Audit-Report-AlpacaDeltaNeutral-v1.0.pdf | DeltaNeutralVaultConfig | unmatched — not counted | — | mentioned in finding PVE-001 as target | no |
+| PeckShield-Audit-Report-AlpacaDeltaNeutral-v1.0.pdf | DeltaNeutralVaultGateway | unmatched — not counted | — | mentioned in finding PVE-002 as target | no |
+| alpaca_v1.0-signed.pdf | DeltaNeutralVault | unmatched — not counted | — | listed in scope and findings | no |
+| alpaca_v1.0-signed.pdf | PriceHelper | unmatched — not counted | — | mentioned in finding 2.2.3 | no |
+| alpaca_v1.0-signed.pdf | DeltaNeutralPancakeWorker02 | unmatched — not counted | — | mentioned in finding 2.3.2 | no |
+| alpaca_v1.0-signed.pdf | DeltaNeutralMdexWorker02 | unmatched — not counted | — | mentioned in finding 2.3.2 | no |
+| Alpaca_GrazingRange_SmartContractReview_fcd2f3c_Report.pdf | GrazingRange | own proxy deployment | AdminUpgradeabilityProxy (proxy) (selected) `0x6bf5b3...feb343` — deployed 2021-05-05 14:15:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_1.pdf | GrazingRange | own proxy deployment | AdminUpgradeabilityProxy (proxy) (selected) `0x6bf5b3...feb343` — deployed 2021-05-05 14:15:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Inspex_AUDIT2021025_AlpacaFinance_MDEXIntegration_FullReport_v1.0.pdf | MdexWorker02 | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2021025_AlpacaFinance_MDEXIntegration_FullReport_v1.0.pdf | MdexRestrictedStrategyAddBaseTokenOnly | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2021025_AlpacaFinance_MDEXIntegration_FullReport_v1.0.pdf | MdexRestrictedStrategyWithdrawMinimizeTrading | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2021025_AlpacaFinance_MDEXIntegration_FullReport_v1.0.pdf | MdexRestrictedStrategyAddTwosidesOptimal | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2021025_AlpacaFinance_MDEXIntegration_FullReport_v1.0.pdf | MdexRestrictedStrategyLiquidate | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2021025_AlpacaFinance_MDEXIntegration_FullReport_v1.0.pdf | MdexRestrictedStrategyPartialCloseLiquidate | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2021025_AlpacaFinance_MDEXIntegration_FullReport_v1.0.pdf | MdexRestrictedStrategyPartialCloseMinimizeTrading | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2021009_Alpaca_OptimizedWorker_FinalReport_v1.0.pdf | PCSV2Worker02 | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2021009_Alpaca_OptimizedWorker_FinalReport_v1.0.pdf | WaultSwapWorker02 | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2021009_Alpaca_OptimizedWorker_FinalReport_v1.0.pdf | CakeMaxiWorker02 | unmatched — not counted | — | listed in scope table | no |
+| Smart Contract Security Audit Report - Alpaca Finance Oracle.pdf | OracleMedianizer | unmatched — not counted | — | listed in scope section with commit hash | no |
+| Smart Contract Security Audit Report - Alpaca Finance Oracle.pdf | ChainLinkPriceOracle | unmatched — not counted | — | listed in scope section with commit hash | no |
+| PeckShield-Audit-Report-Alpaca-PartialCloseStrategies-v1.0.pdf | PancakeswapV2RestrictedSingleAssetStrategyPartialCloseLiquidate | unmatched — not counted | — | Mentioned in findings as target contract | no |
+| PeckShield-Audit-Report-Alpaca-PartialCloseStrategies-v1.0.pdf | PancakeswapV2RestrictedStrategyPartialCloseLiquidate | unmatched — not counted | — | Mentioned in findings as target contract | no |
+| PeckShield-Audit-Report-Alpaca-PartialCloseStrategies-v1.0.pdf | WaultSwapRestrictedStrategyPartialCloseLiquidate | unmatched — not counted | — | Mentioned in findings as target contract | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | AlpacaMath | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | AlpacaToken | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | ConfigurableInterestVaultConfig | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | DebtToken | own proxy deployment | AdminUpgradeabilityProxy (proxy) (alternative) `0x6a3487...2a55f9` — deployed 2021-03-23 10:16:31+03 — liveness: live (current_address_book_code)<br>DebtToken (alternative) `0xd19d62...029ebd` — deployed 2021-02-26 14:28:40+03 — liveness: live (current_address_book_code)<br>AdminUpgradeabilityProxy (proxy) (alternative) `0x3b4fbb...0fa4dc` — deployed 2021-05-26 04:58:02+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x426bdf...c361f3` — deployed 2022-01-07 10:45:00+03 — liveness: live (current_address_book_code)<br>AdminUpgradeabilityProxy (proxy) (alternative) `0x92110a...258fe6` — deployed 2021-04-06 08:36:01+03 — liveness: live (current_address_book_code)<br>DebtToken (alternative) `0x513813...e22cec` — deployed 2021-02-26 14:20:37+03 — liveness: live (current_address_book_code)<br>AdminUpgradeabilityProxy (proxy) (alternative) `0x262de1...1b59b2` — deployed 2021-05-27 13:41:54+03 — liveness: live (current_address_book_code)<br>AdminUpgradeabilityProxy (proxy) (alternative) `0x02da70...aa7442` — deployed 2021-03-23 10:20:46+03 — liveness: live (current_address_book_code)<br>AdminUpgradeabilityProxy (proxy) (alternative) `0xb76ed4...aeaf84` — deployed 2021-06-21 19:24:47+03 — liveness: live (current_address_book_code)<br>AdminUpgradeabilityProxy (proxy) (selected) `0x11362e...a9db40` — deployed 2021-04-25 09:44:37+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2021-04-25 was 6d from audit; next candidate 25d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | FairLaunch | own contract | FairLaunch (selected) `0xa625ab...489a8f` — deployed 2021-02-26 13:57:43+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | FairLaunchV2 | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | IbTokenRouter | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | LinearRelease | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | PancakeswapWorker | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | PriceOracle | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | SafeToken | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | Shield | own contract | Shield (selected) `0x1963f8...1b4656` — deployed 2021-03-29 12:09:03+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | SimplePriceOracle | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | SimpleVaultConfig | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | StrategyAddBaseTokenOnly | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | StrategyAddTwoSidesOptimal | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | StrategyLiquidate | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | StrategyWithdrawMinimizeTrading | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | StronkAlpaca | own contract | StronkAlpaca (selected) `0x6f695b...6ce7a7` — deployed 2021-03-12 18:49:26+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | StronkAlpacaRelayer | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | Timelock | own contract | Timelock (selected) `0x2d5408...1d0a59` — deployed 2021-02-26 13:52:49+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | TripleSlopeModel | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | Vault | own proxy deployment | AdminUpgradeabilityProxy (proxy) (alternative) `0x3282d2...8cd3cd` — deployed 2021-06-21 19:25:14+03 — liveness: live (current_address_book_code)<br>AdminUpgradeabilityProxy (proxy) (selected) `0xf1be8e...16d421` — deployed 2021-04-25 09:45:01+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2021-04-25 was 6d from audit; next candidate 51d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | WNativeRelayer | unmatched — not counted | — | — | no |
+| CertiK Security Assessment for Alpaca Finance 1.pdf | WorkerConfig | unmatched — not counted | — | — | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | Vault | own proxy deployment | AdminUpgradeabilityProxy (proxy) (alternative) `0x3282d2...8cd3cd` — deployed 2021-06-21 19:25:14+03 — liveness: live (current_address_book_code)<br>AdminUpgradeabilityProxy (proxy) (selected) `0xf1be8e...16d421` — deployed 2021-04-25 09:45:01+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2021-04-25 was 36d from audit; next candidate 93d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | CollateralLocker | unmatched — not counted | — | Mentioned in finding PVE-003 as containing the issue | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | LiquidityLocker | unmatched — not counted | — | Mentioned in finding PVE-003 as containing the issue | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | LoanLib | unmatched — not counted | — | Mentioned in finding PVE-003 as containing the issue | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | StrategyAddBaseTokenOnly | unmatched — not counted | — | Listed as target in findings PVE-005, PVE-009 | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | StrategyAddTwoSidesOptimal | unmatched — not counted | — | Mentioned in findings PVE-005, PVE-009 | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | StrategyWithdrawMinimizeTrading | unmatched — not counted | — | Mentioned in finding PVE-009 | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | StrategyAllBNBOnly | unmatched — not counted | — | Mentioned in finding PVE-009 | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | StrategyLiquidate | unmatched — not counted | — | Mentioned in finding PVE-009 | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | PancakeswapWorker | unmatched — not counted | — | Listed as target in findings PVE-005, PVE-006, PVE-010 | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | ibTokenRouter | unmatched — not counted | — | Listed as target in findings PVE-006, PVE-007, PVE-008 | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | FairLaunch | own contract | FairLaunch (selected) `0xa625ab...489a8f` — deployed 2021-02-26 13:57:43+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | FairLaunchV2 | unmatched — not counted | — | Mentioned in findings PVE-012, PVE-013 | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | AlpacaToken | unmatched — not counted | — | Listed as target in finding PVE-011 | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | SimplePriceOracle | unmatched — not counted | — | Listed in deployment table (Table 3.1) | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | Timelock | own contract | Timelock (selected) `0x2d5408...1d0a59` — deployed 2021-02-26 13:52:49+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | ProxyAdmin | own contract | ProxyAdmin (selected) `0x5379f3...94f452` — deployed 2021-02-26 14:00:58+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | BUSD Vault | own proxy deployment | AdminUpgradeabilityProxy (proxy) (selected) `0x7c9e73...87592f` — deployed 2021-02-26 14:28:55+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | BUSD Vault Impl | unmatched — not counted | — | Listed in deployment table (Table 3.1) | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | BUSD Vault Config | unmatched — not counted | — | Listed in deployment table (Table 3.1) | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | BUSD Vault Config Impl | unmatched — not counted | — | Listed in deployment table (Table 3.1) | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | BNB Vault | own proxy deployment | AdminUpgradeabilityProxy (proxy) (selected) `0xd7d069...fc0063` — deployed 2021-02-26 14:20:55+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | BNB Vault Impl | unmatched — not counted | — | Listed in deployment table (Table 3.1) | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | BNB Vault Config | unmatched — not counted | — | Listed in deployment table (Table 3.1) | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | BNB Vault Config Impl | unmatched — not counted | — | Listed in deployment table (Table 3.1) | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | ALPACA | unmatched — not counted | — | Listed in deployment table (Table 3.1) | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | ALPACA-WBNB LP | unmatched — not counted | — | Listed in deployment table (Table 3.1) | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | WBNB | unmatched — not counted | — | Listed in deployment table (Table 3.1) | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | ibBNB | own proxy deployment | AdminUpgradeabilityProxy (proxy) (selected) `0xd7d069...fc0063` — deployed 2021-02-26 14:20:55+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | debtibBNB | own contract | DebtToken (selected) `0x513813...e22cec` — deployed 2021-02-26 14:20:37+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | ibBUSD | own proxy deployment | AdminUpgradeabilityProxy (proxy) (selected) `0x7c9e73...87592f` — deployed 2021-02-26 14:28:55+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | debtibBUSD | own contract | DebtToken (selected) `0xd19d62...029ebd` — deployed 2021-02-26 14:28:40+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | SimplePriceOracle Impl | unmatched — not counted | — | Listed in deployment table (Table 3.1) | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | StrategyAddBaseOnly | unmatched — not counted | — | Listed in deployment table (Table 3.1) | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | StrategyAddBaseOnly Impl | unmatched — not counted | — | Listed in deployment table (Table 3.1) | no |
+| PeckShield-Audit-Report-Alpaca-v1.0.pdf | StrategyLiquidate Impl | unmatched — not counted | — | Listed in deployment table (Table 3.1) | no |
+| Inspex_AUDIT2022008_Alpaca Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf | MiniFL | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2022008_Alpaca Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf | Rewarder1 | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2022008_Alpaca Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf | SpookyWorker03 | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2022008_Alpaca Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf | SpookySwapStrategyAddBaseTokenOnly | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2022008_Alpaca Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf | SpookySwapStrategyAddTwoSidesOptimal | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2022008_Alpaca Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf | SpookySwapStrategyLiquidate | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2022008_Alpaca Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf | SpookySwapStrategyPartialCloseLiquidate | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2022008_Alpaca Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf | SpookySwapStrategyPartialCloseMinimizeTrading | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2022008_Alpaca Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf | SpookySwapStrategyWithdrawMinimizeTrading | unmatched — not counted | — | listed in scope table | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | FlashMintModule | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | GetPositions | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | PositionHandler | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | PositionManager | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | AlpacaOraclePriceFeed | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | IbTokenPriceFeed | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | SimplePriceFeed | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | StrictAlpacaOraclePriceFeed | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | DexPriceOracle | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | AlpacaStablecoinProxyActions | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | AlpacaAuth | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | AlpacaNote | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | ProxyWallet | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | ProxyWalletCache | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | ProxyWalletFactory | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | ProxyWalletRegistry | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | IbTokenAdapter | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | AuthTokenAdapter | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | StablecoinAdapter | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | TokenAdapter | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | AccessControlConfig | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | CollateralPoolConfig | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | FixedSpreadLiquidationStrategy | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | AlpacaStablecoin | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | BookKeeper | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | LiquidationEngine | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | PriceOracle | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | ShowStopper | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | StabilityFeeCollector | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | StableSwapModule | unmatched — not counted | — | listed in scope | no |
+| Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf | SystemDebtEngine | unmatched — not counted | — | listed in scope | no |
+| PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf | BookKeeper | unmatched — not counted | — | Target in finding PVE-001 | no |
+| PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf | AlpacaStableCoin | unmatched — not counted | — | Target in findings PVE-002, PVE-009 | no |
+| PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf | TokenAdapter | unmatched — not counted | — | Target in findings PVE-003, PVE-005 | no |
+| PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf | FixedSpreadLiquidationStrategy | unmatched — not counted | — | Target in findings PVE-004, PVE-005 | no |
+| PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf | IbTokenAdapter | unmatched — not counted | — | Target in findings PVE-005, PVE-006, PVE-010, PVE-011 | no |
+| PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf | LiquidationEngine | unmatched — not counted | — | Target in findings PVE-005, PVE-011 | no |
+| PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf | ShowStopper | unmatched — not counted | — | Target in finding PVE-005 | no |
+| PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf | AuthTokenAdapter | unmatched — not counted | — | Target in finding PVE-008 | no |
+| PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf | AccessControlConfig | unmatched — not counted | — | Mentioned in findings PVE-001, PVE-007 | no |
+| PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf | SystemDebtEngine | unmatched — not counted | — | Target in finding PVE-011 | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | AccessControlConfig | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | AccessControlUpgradeable | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | AlpacaAuth | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | AlpacaAuthEvents | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | AlpacaNote | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | AlpacaOraclePriceFeed | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | AlpacaStablecoin | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | AlpacaStablecoinProxyActions | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | AlpacaToken | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | AuthTokenAdapter | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | BookKeeper | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | CollateralPoolConfig | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | Context | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | ContextUpgradeable | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | DexPriceOracle | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | ERC20 | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | FairLaunch | own contract | FairLaunch (selected) `0xa625ab...489a8f` — deployed 2021-02-26 13:57:43+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | FixedSpreadLiquidationStrategy | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | FlashLoanReceiverBase | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | FlashMintModule | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | GetPositions | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | IbTokenAdapter | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | IbTokenPriceFeed | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | Initializable | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | LiquidationEngine | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | Ownable | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | OwnableUpgradeable | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | PausableUpgradeable | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | PositionHandler | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | PositionManager | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | PriceOracle | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | ProxyWallet | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | ProxyWalletCache | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | ProxyWalletFactory | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | ProxyWalletRegistry | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | ReentrancyGuard | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | ReentrancyGuardUpgradeable | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | Shield | own contract | Shield (selected) `0x1963f8...1b4656` — deployed 2021-03-29 12:09:03+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | ShowStopper | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | SimplePriceFeed | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | StabilityFeeCollector | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | StableSwapModule | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | StablecoinAdapter | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | StrictAlpacaOraclePriceFeed | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | SystemDebtEngine | unmatched — not counted | — | — | no |
+| SlowMist_Audit_Report_-_AlpacaStablecoin.pdf | TokenAdapter | unmatched — not counted | — | — | no |
+| PeckShield-Audit-Report-Alpaca-Alpies-v1.0.pdf | Alpies | unmatched — not counted | — | Target of finding PVE-002; main contract of the protocol | no |
+| PeckShield-Audit-Report-Alpaca-Alpies-v1.0.pdf | AscendingStepModel | unmatched — not counted | — | Target of finding PVE-001; mentioned in code listing | no |
+| PeckShield-Audit-Report-Alpaca-Alpies-v1.0.pdf | DescendingStepModel | unmatched — not counted | — | Mentioned as sharing the same issue as AscendingStepModel in PVE-001 | no |
 
 ## Coverage Gaps
 
@@ -229,30 +451,48 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x18a15b...0fdc4e`](./contracts/bsc-56/0x18a15bf2aa1e514dc660cc4b08d05f9f6f0fdc4e/) | AdminFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x5fd571...e67c26`](./contracts/bsc-56/0x5fd571bea8d104a28bfe44874f2aaf69f8e67c26/) | VaultAip42 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x4f4054...c1cf43` | EmissionForwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x083c02...e58de7` | MerkleDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x60bc40...514105` | MerkleDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x63c60b...dc4412` | MerkleDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xa33ff7...50ce58` | MerkleDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xd193b3...21c4bf` | MerkleDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x50e574...1ddab7` | ProxyToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 7 |
+| native | 15 |
 | upstream | 0 |
 | standard_library | 8 |
-| needs_review | 94 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 13
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=13
-- Match method counts: contract_name=13, extraction_exact=216
+- Address-book scope dispositions: 21 own (10 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 184 unmatched
+- Matched-own operational status: 21 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=15, medium=1
+- Match method counts: address=6, temporal_name=4, unique_name=9
 
 Zero-match audit list:
 
+- [5762] Inspex_AUDIT2021002_Alpaca_CakeMaxi_FullReport_v3.0.pdf
+- [5763] PeckShield-Audit-Report-Alpaca-CakeMaxi-v1.0.pdf
+- [5764] Smart_Contract_Security_Audit_Report_Alpaca_Finance_Phase_3.pdf
+- [5765] PeckShield-Audit-Report-AlpacaDeltaNeutral-v1.0.pdf
+- [5766] alpaca_v1.0-signed.pdf
+- [5769] Inspex_AUDIT2021025_AlpacaFinance_MDEXIntegration_FullReport_v1.0.pdf
+- [5770] Inspex_AUDIT2021009_Alpaca_OptimizedWorker_FinalReport_v1.0.pdf
+- [5771] Smart Contract Security Audit Report - Alpaca Finance Oracle.pdf
+- [5772] PeckShield-Audit-Report-Alpaca-PartialCloseStrategies-v1.0.pdf
 - [5775] Inspex_AUDIT2022008_Alpaca Finance_SpookySwapIntegrationFantomExpansion_FullReport_v1.0.pdf
+- [5776] Inspex_AUDIT2021035_AlpacaFinance_AlpacaStablecoin_FullReport_v1.0.pdf
+- [5777] PeckShield-Audit-Report-Alpaca-USD-v1.0.pdf
 - [5779] PeckShield-Audit-Report-Alpaca-Alpies-v1.0.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

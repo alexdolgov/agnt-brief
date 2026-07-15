@@ -1,8 +1,16 @@
 {
   "component": "UniswapV2Pair",
   "main_contract": "UniswapV2Pair",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UniswapV2Pair\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x1000bb854fbc6d98dc9d859d6cb47e22a31eb8f9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xcffbfa978ac3fb10e829ca6b763c307daafe8a77",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394471"
     },
     {
       "chain": "polygon",
@@ -28,7 +30,9 @@
       "address": "0xe7b7cf919e2798defc1f08133312cd151e5a5bed",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394481"
     }
   ]
 }

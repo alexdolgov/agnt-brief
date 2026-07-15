@@ -66,16 +66,16 @@ interface IVoteModule {
     /// @param period the new period to start loops from
     function setUserLastClaimPeriod(uint256 period) external;
 
-    /// @notice deposits all xRam in the caller's wallet
+    /// @notice deposits all xREX in the caller's wallet
     function depositAll() external;
 
     /// @notice deposit a specified amount of xRam
     function deposit(uint256 amount) external;
 
-    /// @notice withdraw all xRam
+    /// @notice withdraw all xREX
     function withdrawAll() external;
 
-    /// @notice withdraw a specified amount of xRam
+    /// @notice withdraw a specified amount of xREX
     function withdraw(uint256 amount) external;
 
     /// @notice check for admin perms
@@ -88,13 +88,13 @@ interface IVoteModule {
     /// @param owner the owner to check against for permissions
     function isDelegateFor(address delegate, address owner) external view returns (bool approved);
 
-    /// @notice used by the xRam contract to notify pending rebases
-    /// @param amount the amount of Ram to be notified from exit penalties
+    /// @notice used by the xREX contract to notify pending rebases
+    /// @param amount the amount of REX to be notified from exit penalties
     function notifyRewardAmount(uint256 amount) external;
 
-    /// @notice the address of the xRam token (staking/voting token)
-    /// @return _xRam the address
-    function xRam() external view returns (address _xRam);
+    /// @notice the address of the xREX token (staking/voting token)
+    /// @return _xRex the address
+    function xRex() external view returns (address _xRex);
 
     /// @notice address of the voter contract
     /// @return _voter the voter contract address

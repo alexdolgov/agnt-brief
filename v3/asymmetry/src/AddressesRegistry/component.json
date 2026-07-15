@@ -1,13 +1,18 @@
 {
   "component": "AddressesRegistry",
   "main_contract": "AddressesRegistry",
+  "source_entry_count": 42,
   "source_file_count": 42,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AddressesRegistry\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 6,
-  "audited": true,
-  "audits_covering": [
-    "https://cantina.xyz/competitions/d86632df-ab33-4448-8198-64955eae6712",
-    "https://github.com/GalloDaSballo/bold-review"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -15,7 +20,9 @@
       "address": "0x0ad1c302203f0fbb6ca34641bdfef0bf4182377c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391344"
     },
     {
       "chain": "ethereum",
@@ -23,7 +30,9 @@
       "address": "0x0c7b6c6a60ae2016199d393695667c1482719c82",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391345"
     },
     {
       "chain": "ethereum",
@@ -31,7 +40,9 @@
       "address": "0x2c5a85a3fd181857d02baff169d1e1cb220ead6d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391357"
     },
     {
       "chain": "ethereum",
@@ -39,7 +50,9 @@
       "address": "0x330a0fdfc1818be022fedce96a041293e16dc6d1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391358"
     },
     {
       "chain": "ethereum",
@@ -47,7 +60,9 @@
       "address": "0x3414bd84dff0900a9046a987f4df2e0ef08fa1ce",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391361"
     },
     {
       "chain": "ethereum",
@@ -55,7 +70,9 @@
       "address": "0xbd9f75471990041a3e7c22872c814a273485e999",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391394"
     }
   ]
 }

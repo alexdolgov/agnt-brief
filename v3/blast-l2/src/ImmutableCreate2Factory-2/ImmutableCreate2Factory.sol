@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at Etherscan.io on 2019-07-30
-*/
-
 pragma solidity 0.5.10; // optimization enabled, 99999 runs, evm: petersburg
 
 

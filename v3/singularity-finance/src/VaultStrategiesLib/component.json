@@ -1,42 +1,28 @@
 {
   "component": "VaultStrategiesLib",
   "main_contract": "VaultStrategiesLib",
+  "source_entry_count": 18,
   "source_file_count": 18,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VaultStrategiesLib\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x0b43bcef4af1e9c52dcca264b78c1dd778d1777b",
+      "address": "0xf22bd338ccb6446a25920d1858e50d709b663e9e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x2214959df5eb012754e19c7af5819a85c5629d23",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x38df9f77e687576fdb888e569709cc26d5e73e28",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xc77df5462492a1cda83b83972a9f9efe0b391571",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

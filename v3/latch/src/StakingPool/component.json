@@ -1,7 +1,15 @@
 {
   "component": "StakingPool",
   "main_contract": "StakingPool",
+  "source_entry_count": 24,
   "source_file_count": 24,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StakingPool\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x29403b1ac2b745c806e4d4988e4c1b6f4c119b95",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395846"
     },
     {
       "chain": "ethereum",
@@ -20,7 +30,9 @@
       "address": "0x899f88b7c34a01ed0eea2bdb0952bd271ad3245b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395851"
     }
   ]
 }

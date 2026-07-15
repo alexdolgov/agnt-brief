@@ -1,26 +1,35 @@
 {
   "component": "SPCTPool",
   "main_contract": "SPCTPool",
-  "source_file_count": 20,
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "source_entry_count": 26,
+  "source_file_count": 26,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SPCTPool\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://496476276-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F8h7qQqQqo2Jc9kccJQTQ%2Fuploads%2FNcAASiVYTOLTj4qZjNKO%2FAnzen%20-%20Halborn%20Audit%20Report.pdf",
+    "https://496476276-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F8h7qQqQqo2Jc9kccJQTQ%2Fuploads%2FgekUuU3OoggR8PP1p0A5%2FAnzen%20-%20Zellic%20Audit%20Report.pdf",
+    "https://496476276-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F8h7qQqQqo2Jc9kccJQTQ%2Fuploads%2FkzYadNTHkZGdzuF8PTzj%2FAnzen%20-%20PeckShield%20Audit%20Report.pdf",
+    "https://github.com/Anzen-Finance/audits/blob/master/Anzen%20-%20Halborn%20Audit%20Report.pdf",
+    "https://github.com/Anzen-Finance/audits/blob/master/Anzen%20-%20PeckShield%20Audit%20Report.pdf",
+    "https://github.com/Anzen-Finance/audits/blob/master/Anzen%20-%20Zellic%20Audit%20Report.pdf"
+  ],
   "addresses": [
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xef5aacb3c38a5be7785a361008e27fb0328a62b5",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xf30a29f1c540724fd8c5c4be1af604a6c6800d29",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390966"
     }
   ]
 }

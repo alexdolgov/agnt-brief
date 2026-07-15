@@ -1,7 +1,15 @@
 {
   "component": "ParallelAccessManager-3",
   "main_contract": "ParallelAccessManager",
+  "source_entry_count": 14,
   "source_file_count": 14,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ParallelAccessManager-3\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397613"
     }
   ]
 }

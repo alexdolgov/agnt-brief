@@ -1,44 +1,58 @@
 {
   "component": "Asset-6",
   "main_contract": "Asset",
-  "source_file_count": 28,
+  "source_entry_count": 16,
+  "source_file_count": 16,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Asset-6\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 4,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-WombatV4-v1.0.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x88beb144352bd3109c79076202fac2bceab87117",
+      "address": "0x4f95fe57bea74b7f642cf9c097311959b9b988f7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400976"
     },
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0xbd459e33307a4ae92fffcb45c6893084cfc273b1",
+      "address": "0x9d0a463d5dcb82008e86bf506eb048708a15dd84",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400995"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xbd7568d25338940ba212e3f299d2ccc138fa35f0",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb43ee2863370a56d3b7743edcd8407259100b8e2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401004"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xf9c2356a21b60c0c4ddf2397f828dd158f82a274",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf319947ece3823b790dd87b0a509396fe325745a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401016"
     }
   ]
 }

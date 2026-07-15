@@ -50,6 +50,7 @@ contract PrimaryMarketV4 is IPrimaryMarketV3, ReentrancyGuard, ITrancheIndexV2, 
 
     address public immutable override fund;
     bool public immutable redemptionFlag;
+    bool public immutable splitFlag;
     IERC20 private immutable _tokenUnderlying;
 
     uint256 public redemptionFeeRate;
@@ -83,7 +84,8 @@ contract PrimaryMarketV4 is IPrimaryMarketV3, ReentrancyGuard, ITrancheIndexV2, 
         uint256 redemptionFeeRate_,
         uint256 mergeFeeRate_,
         uint256 fundCap_,
-        bool redemptionFlag_
+        bool redemptionFlag_,
+        bool splitFlag_
     ) public Ownable() {
         fund = fund_;
         _tokenUnderlying = IERC20(IFundV3(fund_).tokenUnderlying());
@@ -91,6 +93,7 @@ contract PrimaryMarketV4 is IPrimaryMarketV3, ReentrancyGuard, ITrancheIndexV2, 
         _updateMergeFeeRate(mergeFeeRate_);
         _updateFundCap(fundCap_);
         redemptionFlag = redemptionFlag_;
+        splitFlag = splitFlag_;
     }
 
     /// @notice Calculate the result of a creation.
@@ -151,12 +154,9 @@ contract PrimaryMarketV4 is IPrimaryMarketV3, ReentrancyGuard, ITrancheIndexV2, 
     /// @param inQ QUEEN amount spent for the redemption
     /// @return underlying Redeemed underlying amount
     /// @return feeQ QUEEN amount charged as redemption fee
-    function getRedemption(uint256 inQ)
-        public
-        view
-        override
-        returns (uint256 underlying, uint256 feeQ)
-    {
+    function getRedemption(
+        uint256 inQ
+    ) public view override returns (uint256 underlying, uint256 feeQ) {
         feeQ = inQ.multiplyDecimal(redemptionFeeRate);
         underlying = _getRedemption(inQ - feeQ);
     }
@@ -166,12 +166,9 @@ contract PrimaryMarketV4 is IPrimaryMarketV3, ReentrancyGuard, ITrancheIndexV2, 
     /// @dev The return value may not be the minimum solution due to rounding errors.
     /// @param minUnderlying Minimum received underlying amount
     /// @return inQ QUEEN amount that should be redeemed
-    function getRedemptionForUnderlying(uint256 minUnderlying)
-        external
-        view
-        override
-        returns (uint256 inQ)
-    {
+    function getRedemptionForUnderlying(
+        uint256 minUnderlying
+    ) external view override returns (uint256 inQ) {
         // Assume:
         //   minUnderlying * fundEquivalentTotalQ = a * fundUnderlying - b
         //   a * 1e18 = c * (1e18 - redemptionFeeRate) + d
@@ -191,8 +188,9 @@ contract PrimaryMarketV4 is IPrimaryMarketV3, ReentrancyGuard, ITrancheIndexV2, 
         //     = minUnderlying
         uint256 fundUnderlying = IFundV3(fund).getTotalUnderlying();
         uint256 fundEquivalentTotalQ = IFundV3(fund).getEquivalentTotalQ();
-        uint256 inQAfterFee =
-            minUnderlying.mul(fundEquivalentTotalQ).add(fundUnderlying - 1).div(fundUnderlying);
+        uint256 inQAfterFee = minUnderlying.mul(fundEquivalentTotalQ).add(fundUnderlying - 1).div(
+            fundUnderlying
+        );
         return inQAfterFee.divideDecimal(1e18 - redemptionFeeRate);
     }
 
@@ -332,13 +330,6 @@ contract PrimaryMarketV4 is IPrimaryMarketV3, ReentrancyGuard, ITrancheIndexV2, 
         IFundForPrimaryMarketV4(fund).primaryMarketMint(TRANCHE_Q, recipient, outQ, version);
         _tokenUnderlying.safeTransfer(fund, underlying);
         emit Created(recipient, underlying, outQ);
-
-        // Call an optional hook in the strategy and ignore errors.
-        (bool success, ) =
-            IFundV3(fund).strategy().call(abi.encodeWithSignature("onPrimaryMarketCreate()"));
-        if (!success) {
-            // ignore
-        }
     }
 
     /// @notice Redeem QUEEN to get underlying tokens back. Revert if there are still some
@@ -392,13 +383,6 @@ contract PrimaryMarketV4 is IPrimaryMarketV3, ReentrancyGuard, ITrancheIndexV2, 
         require(underlying <= _tokenUnderlying.balanceOf(fund), "Not enough underlying in fund");
         IFundForPrimaryMarketV4(fund).primaryMarketTransferUnderlying(recipient, underlying, feeQ);
         emit Redeemed(recipient, inQ, underlying, feeQ);
-
-        // Call an optional hook in the strategy and ignore errors.
-        (bool success, ) =
-            IFundV3(fund).strategy().call(abi.encodeWithSignature("onPrimaryMarketRedeem()"));
-        if (!success) {
-            // ignore
-        }
     }
 
     /// @notice Redeem QUEEN and wait in the redemption queue. Redeemed underlying tokens will
@@ -456,9 +440,8 @@ contract PrimaryMarketV4 is IPrimaryMarketV3, ReentrancyGuard, ITrancheIndexV2, 
             require(newHead <= oldTail, "Redemption queue out of bound");
         }
         // overflow is desired
-        uint256 requiredUnderlying =
-            queuedRedemptions[newHead].previousPrefixSum -
-                queuedRedemptions[oldHead].previousPrefixSum;
+        uint256 requiredUnderlying = queuedRedemptions[newHead].previousPrefixSum -
+            queuedRedemptions[oldHead].previousPrefixSum;
         // Redundant check for user-friendly revert message.
         require(
             requiredUnderlying <= _tokenUnderlying.balanceOf(fund),
@@ -475,12 +458,10 @@ contract PrimaryMarketV4 is IPrimaryMarketV3, ReentrancyGuard, ITrancheIndexV2, 
     /// @param account Recipient of the redemptions
     /// @param indices Indices of the redemptions in the queue, which must be in increasing order
     /// @return underlying Total claimed underlying amount
-    function claimRedemptions(address account, uint256[] calldata indices)
-        external
-        override
-        nonReentrant
-        returns (uint256 underlying)
-    {
+    function claimRedemptions(
+        address account,
+        uint256[] calldata indices
+    ) external override nonReentrant returns (uint256 underlying) {
         underlying = _claimRedemptions(account, indices);
         _tokenUnderlying.safeTransfer(account, underlying);
     }
@@ -490,22 +471,20 @@ contract PrimaryMarketV4 is IPrimaryMarketV3, ReentrancyGuard, ITrancheIndexV2, 
     /// @param account Recipient of the redemptions
     /// @param indices Indices of the redemptions in the queue, which must be in increasing order
     /// @return underlying Total claimed underlying amount
-    function claimRedemptionsAndUnwrap(address account, uint256[] calldata indices)
-        external
-        override
-        nonReentrant
-        returns (uint256 underlying)
-    {
+    function claimRedemptionsAndUnwrap(
+        address account,
+        uint256[] calldata indices
+    ) external override nonReentrant returns (uint256 underlying) {
         underlying = _claimRedemptions(account, indices);
         IWrappedERC20(address(_tokenUnderlying)).withdraw(underlying);
         (bool success, ) = account.call{value: underlying}("");
         require(success, "Transfer failed");
     }
 
-    function _claimRedemptions(address account, uint256[] calldata indices)
-        private
-        returns (uint256 underlying)
-    {
+    function _claimRedemptions(
+        address account,
+        uint256[] calldata indices
+    ) private returns (uint256 underlying) {
         uint256 count = indices.length;
         if (count == 0) {
             return 0;
@@ -533,7 +512,7 @@ contract PrimaryMarketV4 is IPrimaryMarketV3, ReentrancyGuard, ITrancheIndexV2, 
         address recipient,
         uint256 inQ,
         uint256 version
-    ) external override returns (uint256 outB) {
+    ) external override allowSplit returns (uint256 outB) {
         outB = getSplit(inQ);
         IFundForPrimaryMarketV4(fund).primaryMarketBurn(TRANCHE_Q, msg.sender, inQ, version);
         IFundForPrimaryMarketV4(fund).primaryMarketMint(TRANCHE_B, recipient, outB, version);
@@ -597,6 +576,11 @@ contract PrimaryMarketV4 is IPrimaryMarketV3, ReentrancyGuard, ITrancheIndexV2, 
 
     modifier allowRedemption() {
         require(redemptionFlag, "Redemption N/A");
+        _;
+    }
+
+    modifier allowSplit() {
+        require(splitFlag, "Split N/A");
         _;
     }
 }

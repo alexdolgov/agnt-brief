@@ -1,56 +1,78 @@
 # Agentic Audit Brief: Alchemist
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Alchemist (`alchemist`)
 - Website: [https://www.alchemist.wtf](https://www.alchemist.wtf)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:26.500Z
-- Pipeline run: v2-2026-07-02-1ba3fd
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
 - Contract surface: 14 unique implementations (14 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $184,230.47
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Yield. Structurally: 14 project-authored contract(s) across 1 chain(s); 3 ERC721 NFTs; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Alchemist. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol forms a single structural family (Core Logic) of 14 contract(s).
+The pinned logic-topography run contains 5 contract row(s) across ethereum. Structural roles: 5 core. 1 row(s) use upgradeable patterns.
 
-## Fork Lineage
+## Logic Topography
 
-This project reuses audited code from **DPEX** (`dpex`) in the LiquidriumFactory, Visor subsystem.
-2 audits inherited from `dpex`, scoped to that subsystem.
-
-Total inherited audits: 2. Inherited coverage reflects forked/shared code audited by the origin project — it is not a direct audit of this project.
+- Exact-run contract rows: 5
+- Structural roles: core (5)
+- Contract kinds: contract (5)
+- Detected standards: eip1271 (1), erc20 (1), erc20permit (1), ownable (1)
+- Frameworks: openzeppelin (5), uniswap (3)
+- Upgradeable-pattern rows: 1
 
 ## Contract Surface Quality
 
-- Indexed contracts: 14; live-surface contracts included: 14 (14 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 5; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/14 (0.0%)
-- Deployed-live implementations: 14 of 14 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/14
-- Verified + Unaudited implementations: 14
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 5 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 9 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 14
 - Raw deployments: 14
-- Audits discovered: 2 (0 direct, 2 inherited from forked code)
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2023-01 (stale)
-- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 1 unknown
+- Latest audit: n/a (unknown)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
@@ -66,22 +88,22 @@ Total inherited audits: 2. Inherited coverage reflects forked/shared code audite
 
 ### ⚠️ Verified + Unaudited (14)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Alchemist | unknown | ethereum | n/a | [`0x88acdd...ebb7ab`](./contracts/ethereum-1/0x88acdd2a6425c3faae4bc9650fd7e27e0bebb7ab/) | ⚠️ Unaudited |
-| Aludel | unknown | ethereum | n/a | [`0xf0d415...6cb24d`](./contracts/ethereum-1/0xf0d415189949d913264a454f57f4279ad66cb24d/) | ⚠️ Unaudited |
-| Crucible | unknown | ethereum | n/a | [`0x18cc48...3a110f`](./contracts/ethereum-1/0x18cc48140cfec90cef0035761d56d2d0ff3a110f/) | ⚠️ Unaudited |
-| CrucibleFactory | unknown | ethereum | n/a | [`0x54e039...273d56`](./contracts/ethereum-1/0x54e0395cfb4f39bef66dbcd5bd93cca4e9273d56/) | ⚠️ Unaudited |
-| EtherTulip | unknown | ethereum | n/a | [`0xd5fbd8...8ecc57`](./contracts/ethereum-1/0xd5fbd81cef9aba7464c5f17e529444918a8ecc57/) | ⚠️ Unaudited |
-| MerkleDistributor | unknown | ethereum | n/a | [`0x30642c...92f1ff`](./contracts/ethereum-1/0x30642caaf2a2b3f7ef3e7e891d9132340a92f1ff/) | ⚠️ Unaudited |
-| PowerSwitchFactory | unknown | ethereum | n/a | [`0x89d2d9...64fc24`](./contracts/ethereum-1/0x89d2d92eace71977dd0b159062f8ec90ea64fc24/) | ⚠️ Unaudited |
-| RewardPoolFactory | unknown | ethereum | n/a | [`0xf016fa...d27ccf`](./contracts/ethereum-1/0xf016fa84d5f3a252409a63b5cb89b555a0d27ccf/) | ⚠️ Unaudited |
-| StreamETH | unknown | ethereum | n/a | [`0xe58a21...375c36`](./contracts/ethereum-1/0xe58a2119ac17610718430774db0182bd6b375c36/) | ⚠️ Unaudited |
-| StreamV1 | unknown | ethereum | n/a | [`0x353420...8463ca`](./contracts/ethereum-1/0x35342016abce65720024aaaa61b4f7a0dd8463ca/) | ⚠️ Unaudited |
-| TokenManager | unknown | ethereum | n/a | [`0x1c428a...6d3562`](./contracts/ethereum-1/0x1c428a75181bc25509af3a5b7faee97b4b6d3562/) | ⚠️ Unaudited |
-| TransmuterV1 | unknown | ethereum | n/a | [`0xb772ce...ce456a`](./contracts/ethereum-1/0xb772ce9f14fc7c7db0d4525adb9349fbd7ce456a/) | ⚠️ Unaudited |
-| TulipBidding | unknown | ethereum | n/a | [`0xc11dbb...eb6e7c`](./contracts/ethereum-1/0xc11dbb4dbc2913650000e2eab4a3db44d2eb6e7c/) | ⚠️ Unaudited |
-| TulipFloorBidding | unknown | ethereum | n/a | [`0x40ab33...959eb6`](./contracts/ethereum-1/0x40ab332dd48f35ebd227708ef381c946c4959eb6/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Alchemist | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226133 | `0x88acdd...ebb7ab` | ⚠️ Unaudited |
+| Aludel | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf0d415...6cb24d` | ⚠️ Unaudited |
+| Crucible | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226131 | `0x18cc48...3a110f` | ⚠️ Unaudited |
+| CrucibleFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x54e039...273d56` | ⚠️ Unaudited |
+| EtherTulip | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd5fbd8...8ecc57` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x30642c...92f1ff` | ⚠️ Unaudited |
+| PowerSwitchFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226134 | `0x89d2d9...64fc24` | ⚠️ Unaudited |
+| RewardPoolFactory | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226135 | `0xf016fa...d27ccf` | ⚠️ Unaudited |
+| StreamETH | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe58a21...375c36` | ⚠️ Unaudited |
+| StreamV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x353420...8463ca` | ⚠️ Unaudited |
+| TokenManager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-226132 | `0x1c428a...6d3562` | ⚠️ Unaudited |
+| TransmuterV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb772ce...ce456a` | ⚠️ Unaudited |
+| TulipBidding | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc11dbb...eb6e7c` | ⚠️ Unaudited |
+| TulipFloorBidding | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x40ab33...959eb6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,10 +125,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [skynet.certik.com/projects/dpex](https://skynet.certik.com/projects/dpex) | CertiK | Audit | 2023-01 | stale | Inherited from DPEX — forked code, scoped to LiquidriumFactory, Visor | n/a | 0 | n/a |
-| [DPEX_Zokyo audit report.pdf](https://github.com/zokyo-sec/audit-reports/blob/main/DPEX/DPEX_Zokyo%20audit%20report.pdf) | unknown | Audit | n/a | unknown | Inherited from DPEX — forked code, scoped to LiquidriumFactory, Visor | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -118,23 +144,20 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 14 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 14 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [18805] skynet.certik.com/projects/dpex
-- [18806] DPEX_Zokyo audit report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

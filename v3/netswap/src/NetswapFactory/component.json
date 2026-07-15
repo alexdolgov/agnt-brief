@@ -1,7 +1,15 @@
 {
   "component": "NetswapFactory",
   "main_contract": "NetswapFactory",
+  "source_entry_count": 4,
   "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/NetswapFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -14,7 +22,9 @@
       "address": "0x70f51d68d16e8f9e418441280342bd43ac9dff9f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397241"
     }
   ]
 }

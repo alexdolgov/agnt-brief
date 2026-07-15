@@ -1,0 +1,48 @@
+{
+  "component": "OriginalTokenVaultV2",
+  "main_contract": "OriginalTokenVaultV2",
+  "source_entry_count": 103,
+  "source_file_count": 103,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OriginalTokenVaultV2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7510792a3b1969f9307f3845ce88e39578f2bae1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392690"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x11a0c9270d88c99e221360bca50c2f6fda44a980",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392698"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xea4b1b0aa3c110c55f650d28159ce4ad43a4a58b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392718"
+    }
+  ]
+}

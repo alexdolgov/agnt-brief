@@ -5,7 +5,7 @@ import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {IVoter} from "./IVoter.sol";
 
 interface IXShadow is IERC20 {
-     struct VestPosition {
+    struct VestPosition {
         /// @dev amount of xShadow
         uint256 amount;
         /// @dev start unix timestamp
@@ -68,7 +68,7 @@ interface IXShadow is IERC20 {
         view
         returns (uint256 amount, uint256 start, uint256 maxEnd, uint256 vestID);
 
-    /// @notice address of the emissionsToken
+    /// @notice address of the shadow token
     function SHADOW() external view returns (IERC20);
 
     /// @notice address of the voter
@@ -87,13 +87,16 @@ interface IXShadow is IERC20 {
     /// @notice max slashing amount
     function SLASHING_PENALTY() external view returns (uint256);
 
+    /// @notice denominator
+    function BASIS() external view returns (uint256);
+
     /// @notice the minimum vesting length
     function MIN_VEST() external view returns (uint256);
 
     /// @notice the maximum vesting length
     function MAX_VEST() external view returns (uint256);
 
-    function emissionsToken() external view returns (address);
+    function shadow() external view returns (address);
 
     /// @notice the last period rebases were distributed
     function lastDistributedPeriod() external view returns (uint256);
@@ -111,7 +114,7 @@ interface IXShadow is IERC20 {
     // General use functions
     /*****************************************************************/
 
-    /// @dev mints xShadows for each emissionsToken.
+    /// @dev mints xShadows for each shadow.
     function convertEmissionsToken(uint256 _amount) external;
 
     /// @notice function called by the minter to send the rebases once a week
@@ -120,7 +123,7 @@ interface IXShadow is IERC20 {
      * @dev exit instantly with a penalty
      * @param _amount amount of xShadows to exit
      */
-    function exit(uint256 _amount) external;
+    function exit(uint256 _amount) external returns(uint256 _exitedAmount);
 
     /// @dev vesting xShadows --> emissionToken functionality
     function createVest(uint256 _amount) external;
@@ -174,6 +177,9 @@ interface IXShadow is IERC20 {
     /// @notice returns the vest info for a user
     /// @param _who who to check
     /// @param _vestID vest ID to check
-    /// @return VestPosition vest info  
-    function getVestInfo(address _who, uint256 _vestID) external view returns (VestPosition memory);
+    /// @return VestPosition vest info
+    function getVestInfo(
+        address _who,
+        uint256 _vestID
+    ) external view returns (VestPosition memory);
 }

@@ -1,50 +1,30 @@
 {
   "component": "MasterChef",
   "main_contract": "MasterChef",
+  "source_entry_count": 22,
   "source_file_count": 22,
-  "deployment_count": 5,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MasterChef\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://paladinsec.co/projects/merchant-moe"
+  ],
   "addresses": [
-    {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0x0ca2d37789975be459ec08131df1a170fcfd2739",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0x3fef7c40ed721d149524b7d94029c4bf949a871e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0xace736070a9642f7df468e7a65f18344acdc79b3",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
     {
       "chain": "mantle",
       "chain_id": 5000,
       "address": "0xd4bd5e47548d8a6ba2a0bf4ce073cbf8fa523dcc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0xeb1d0861f15675f6550f167388479491fa73ce2a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396568"
     }
   ]
 }

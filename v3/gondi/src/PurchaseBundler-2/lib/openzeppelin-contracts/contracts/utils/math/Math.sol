@@ -143,9 +143,9 @@ library Math {
      */
     function mulDiv(uint256 x, uint256 y, uint256 denominator) internal pure returns (uint256 result) {
         unchecked {
-            // 512-bit multiply [prod1 prod0] = x * y. Compute the product mod 2²⁵⁶ and mod 2²⁵⁶ - 1, then use
+            // 512-bit multiply [prod1 prod0] = x * y. Compute the product mod 2¬≤‚Åµ‚Å∂ and mod 2¬≤‚Åµ‚Å∂ - 1, then use
             // use the Chinese Remainder Theorem to reconstruct the 512 bit result. The result is stored in two 256
-            // variables such that product = prod1 * 2²⁵⁶ + prod0.
+            // variables such that product = prod1 * 2¬≤‚Åµ‚Å∂ + prod0.
             uint256 prod0 = x * y; // Least significant 256 bits of the product
             uint256 prod1; // Most significant 256 bits of the product
             assembly {
@@ -161,7 +161,7 @@ library Math {
                 return prod0 / denominator;
             }
 
-            // Make sure the result is less than 2²⁵⁶. Also prevents denominator == 0.
+            // Make sure the result is less than 2¬≤‚Åµ‚Å∂. Also prevents denominator == 0.
             if (denominator <= prod1) {
                 Panic.panic(ternary(denominator == 0, Panic.DIVISION_BY_ZERO, Panic.UNDER_OVERFLOW));
             }
@@ -192,30 +192,30 @@ library Math {
                 // Divide [prod1 prod0] by twos.
                 prod0 := div(prod0, twos)
 
-                // Flip twos such that it is 2²⁵⁶ / twos. If twos is zero, then it becomes one.
+                // Flip twos such that it is 2¬≤‚Åµ‚Å∂ / twos. If twos is zero, then it becomes one.
                 twos := add(div(sub(0, twos), twos), 1)
             }
 
             // Shift in bits from prod1 into prod0.
             prod0 |= prod1 * twos;
 
-            // Invert denominator mod 2²⁵⁶. Now that denominator is an odd number, it has an inverse modulo 2²⁵⁶ such
-            // that denominator * inv ≡ 1 mod 2²⁵⁶. Compute the inverse by starting with a seed that is correct for
-            // four bits. That is, denominator * inv ≡ 1 mod 2⁴.
+            // Invert denominator mod 2¬≤‚Åµ‚Å∂. Now that denominator is an odd number, it has an inverse modulo 2¬≤‚Åµ‚Å∂ such
+            // that denominator * inv ‚â° 1 mod 2¬≤‚Åµ‚Å∂. Compute the inverse by starting with a seed that is correct for
+            // four bits. That is, denominator * inv ‚â° 1 mod 2‚Å¥.
             uint256 inverse = (3 * denominator) ^ 2;
 
             // Use the Newton-Raphson iteration to improve the precision. Thanks to Hensel's lifting lemma, this also
             // works in modular arithmetic, doubling the correct bits in each step.
-            inverse *= 2 - denominator * inverse; // inverse mod 2⁸
-            inverse *= 2 - denominator * inverse; // inverse mod 2¹⁶
-            inverse *= 2 - denominator * inverse; // inverse mod 2³²
-            inverse *= 2 - denominator * inverse; // inverse mod 2⁶⁴
-            inverse *= 2 - denominator * inverse; // inverse mod 2¹²⁸
-            inverse *= 2 - denominator * inverse; // inverse mod 2²⁵⁶
+            inverse *= 2 - denominator * inverse; // inverse mod 2‚Å∏
+            inverse *= 2 - denominator * inverse; // inverse mod 2¬π‚Å∂
+            inverse *= 2 - denominator * inverse; // inverse mod 2¬≥¬≤
+            inverse *= 2 - denominator * inverse; // inverse mod 2‚Å∂‚Å¥
+            inverse *= 2 - denominator * inverse; // inverse mod 2¬π¬≤‚Å∏
+            inverse *= 2 - denominator * inverse; // inverse mod 2¬≤‚Åµ‚Å∂
 
             // Because the division is now exact we can divide by multiplying with the modular inverse of denominator.
-            // This will give us the correct result modulo 2²⁵⁶. Since the preconditions guarantee that the outcome is
-            // less than 2²⁵⁶, this is the final result. We don't need to compute the high bits of the result and prod1
+            // This will give us the correct result modulo 2¬≤‚Åµ‚Å∂. Since the preconditions guarantee that the outcome is
+            // less than 2¬≤‚Åµ‚Å∂, this is the final result. We don't need to compute the high bits of the result and prod1
             // is no longer required.
             result = prod0 * inverse;
             return result;
@@ -249,7 +249,7 @@ library Math {
             // When the gcd is 1, then the inverse of a modulo n exists and it's x.
             // ax + ny = 1
             // ax = 1 + (-y)n
-            // ax ≡ 1 (mod n) # x is the inverse of a modulo n
+            // ax ‚â° 1 (mod n) # x is the inverse of a modulo n
 
             // If the remainder is 0 the gcd is n right away.
             uint256 remainder = a % n;
@@ -411,16 +411,16 @@ library Math {
                 return a;
             }
 
-            // In this function, we use Newton's method to get a root of `f(x) := x² - a`. It involves building a
+            // In this function, we use Newton's method to get a root of `f(x) := x¬≤ - a`. It involves building a
             // sequence x_n that converges toward sqrt(a). For each iteration x_n, we also define the error between
-            // the current value as `ε_n = | x_n - sqrt(a) |`.
+            // the current value as `Œµ_n = | x_n - sqrt(a) |`.
             //
             // For our first estimation, we consider `e` the smallest power of 2 which is bigger than the square root
-            // of the target. (i.e. `2**(e-1) ≤ sqrt(a) < 2**e`). We know that `e ≤ 128` because `(2¹²⁸)² = 2²⁵⁶` is
+            // of the target. (i.e. `2**(e-1) ‚â§ sqrt(a) < 2**e`). We know that `e ‚â§ 128` because `(2¬π¬≤‚Å∏)¬≤ = 2¬≤‚Åµ‚Å∂` is
             // bigger than any uint256.
             //
             // By noticing that
-            // `2**(e-1) ≤ sqrt(a) < 2**e → (2**(e-1))² ≤ a < (2**e)² → 2**(2*e-2) ≤ a < 2**(2*e)`
+            // `2**(e-1) ‚â§ sqrt(a) < 2**e ‚Üí (2**(e-1))¬≤ ‚â§ a < (2**e)¬≤ ‚Üí 2**(2*e-2) ‚â§ a < 2**(2*e)`
             // we can deduce that `e - 1` is `log2(a) / 2`. We can thus compute `x_n = 2**(e-1)` using a method similar
             // to the msb function.
             uint256 aa = a;
@@ -454,57 +454,57 @@ library Math {
                 xn <<= 1;
             }
 
-            // We now have x_n such that `x_n = 2**(e-1) ≤ sqrt(a) < 2**e = 2 * x_n`. This implies ε_n ≤ 2**(e-1).
+            // We now have x_n such that `x_n = 2**(e-1) ‚â§ sqrt(a) < 2**e = 2 * x_n`. This implies Œµ_n ‚â§ 2**(e-1).
             //
             // We can refine our estimation by noticing that the middle of that interval minimizes the error.
-            // If we move x_n to equal 2**(e-1) + 2**(e-2), then we reduce the error to ε_n ≤ 2**(e-2).
-            // This is going to be our x_0 (and ε_0)
-            xn = (3 * xn) >> 1; // ε_0 := | x_0 - sqrt(a) | ≤ 2**(e-2)
+            // If we move x_n to equal 2**(e-1) + 2**(e-2), then we reduce the error to Œµ_n ‚â§ 2**(e-2).
+            // This is going to be our x_0 (and Œµ_0)
+            xn = (3 * xn) >> 1; // Œµ_0 := | x_0 - sqrt(a) | ‚â§ 2**(e-2)
 
             // From here, Newton's method give us:
             // x_{n+1} = (x_n + a / x_n) / 2
             //
             // One should note that:
-            // x_{n+1}² - a = ((x_n + a / x_n) / 2)² - a
-            //              = ((x_n² + a) / (2 * x_n))² - a
-            //              = (x_n⁴ + 2 * a * x_n² + a²) / (4 * x_n²) - a
-            //              = (x_n⁴ + 2 * a * x_n² + a² - 4 * a * x_n²) / (4 * x_n²)
-            //              = (x_n⁴ - 2 * a * x_n² + a²) / (4 * x_n²)
-            //              = (x_n² - a)² / (2 * x_n)²
-            //              = ((x_n² - a) / (2 * x_n))²
-            //              ≥ 0
-            // Which proves that for all n ≥ 1, sqrt(a) ≤ x_n
+            // x_{n+1}¬≤ - a = ((x_n + a / x_n) / 2)¬≤ - a
+            //              = ((x_n¬≤ + a) / (2 * x_n))¬≤ - a
+            //              = (x_n‚Å¥ + 2 * a * x_n¬≤ + a¬≤) / (4 * x_n¬≤) - a
+            //              = (x_n‚Å¥ + 2 * a * x_n¬≤ + a¬≤ - 4 * a * x_n¬≤) / (4 * x_n¬≤)
+            //              = (x_n‚Å¥ - 2 * a * x_n¬≤ + a¬≤) / (4 * x_n¬≤)
+            //              = (x_n¬≤ - a)¬≤ / (2 * x_n)¬≤
+            //              = ((x_n¬≤ - a) / (2 * x_n))¬≤
+            //              ‚â• 0
+            // Which proves that for all n ‚â• 1, sqrt(a) ‚â§ x_n
             //
             // This gives us the proof of quadratic convergence of the sequence:
-            // ε_{n+1} = | x_{n+1} - sqrt(a) |
+            // Œµ_{n+1} = | x_{n+1} - sqrt(a) |
             //         = | (x_n + a / x_n) / 2 - sqrt(a) |
-            //         = | (x_n² + a - 2*x_n*sqrt(a)) / (2 * x_n) |
-            //         = | (x_n - sqrt(a))² / (2 * x_n) |
-            //         = | ε_n² / (2 * x_n) |
-            //         = ε_n² / | (2 * x_n) |
+            //         = | (x_n¬≤ + a - 2*x_n*sqrt(a)) / (2 * x_n) |
+            //         = | (x_n - sqrt(a))¬≤ / (2 * x_n) |
+            //         = | Œµ_n¬≤ / (2 * x_n) |
+            //         = Œµ_n¬≤ / | (2 * x_n) |
             //
             // For the first iteration, we have a special case where x_0 is known:
-            // ε_1 = ε_0² / | (2 * x_0) |
-            //     ≤ (2**(e-2))² / (2 * (2**(e-1) + 2**(e-2)))
-            //     ≤ 2**(2*e-4) / (3 * 2**(e-1))
-            //     ≤ 2**(e-3) / 3
-            //     ≤ 2**(e-3-log2(3))
-            //     ≤ 2**(e-4.5)
+            // Œµ_1 = Œµ_0¬≤ / | (2 * x_0) |
+            //     ‚â§ (2**(e-2))¬≤ / (2 * (2**(e-1) + 2**(e-2)))
+            //     ‚â§ 2**(2*e-4) / (3 * 2**(e-1))
+            //     ‚â§ 2**(e-3) / 3
+            //     ‚â§ 2**(e-3-log2(3))
+            //     ‚â§ 2**(e-4.5)
             //
-            // For the following iterations, we use the fact that, 2**(e-1) ≤ sqrt(a) ≤ x_n:
-            // ε_{n+1} = ε_n² / | (2 * x_n) |
-            //         ≤ (2**(e-k))² / (2 * 2**(e-1))
-            //         ≤ 2**(2*e-2*k) / 2**e
-            //         ≤ 2**(e-2*k)
-            xn = (xn + a / xn) >> 1; // ε_1 := | x_1 - sqrt(a) | ≤ 2**(e-4.5)  -- special case, see above
-            xn = (xn + a / xn) >> 1; // ε_2 := | x_2 - sqrt(a) | ≤ 2**(e-9)    -- general case with k = 4.5
-            xn = (xn + a / xn) >> 1; // ε_3 := | x_3 - sqrt(a) | ≤ 2**(e-18)   -- general case with k = 9
-            xn = (xn + a / xn) >> 1; // ε_4 := | x_4 - sqrt(a) | ≤ 2**(e-36)   -- general case with k = 18
-            xn = (xn + a / xn) >> 1; // ε_5 := | x_5 - sqrt(a) | ≤ 2**(e-72)   -- general case with k = 36
-            xn = (xn + a / xn) >> 1; // ε_6 := | x_6 - sqrt(a) | ≤ 2**(e-144)  -- general case with k = 72
+            // For the following iterations, we use the fact that, 2**(e-1) ‚â§ sqrt(a) ‚â§ x_n:
+            // Œµ_{n+1} = Œµ_n¬≤ / | (2 * x_n) |
+            //         ‚â§ (2**(e-k))¬≤ / (2 * 2**(e-1))
+            //         ‚â§ 2**(2*e-2*k) / 2**e
+            //         ‚â§ 2**(e-2*k)
+            xn = (xn + a / xn) >> 1; // Œµ_1 := | x_1 - sqrt(a) | ‚â§ 2**(e-4.5)  -- special case, see above
+            xn = (xn + a / xn) >> 1; // Œµ_2 := | x_2 - sqrt(a) | ‚â§ 2**(e-9)    -- general case with k = 4.5
+            xn = (xn + a / xn) >> 1; // Œµ_3 := | x_3 - sqrt(a) | ‚â§ 2**(e-18)   -- general case with k = 9
+            xn = (xn + a / xn) >> 1; // Œµ_4 := | x_4 - sqrt(a) | ‚â§ 2**(e-36)   -- general case with k = 18
+            xn = (xn + a / xn) >> 1; // Œµ_5 := | x_5 - sqrt(a) | ‚â§ 2**(e-72)   -- general case with k = 36
+            xn = (xn + a / xn) >> 1; // Œµ_6 := | x_6 - sqrt(a) | ‚â§ 2**(e-144)  -- general case with k = 72
 
-            // Because e ≤ 128 (as discussed during the first estimation phase), we know have reached a precision
-            // ε_6 ≤ 2**(e-144) < 1. Given we're operating on integers, then we can ensure that xn is now either
+            // Because e ‚â§ 128 (as discussed during the first estimation phase), we know have reached a precision
+            // Œµ_6 ‚â§ 2**(e-144) < 1. Given we're operating on integers, then we can ensure that xn is now either
             // sqrt(a) or sqrt(a) + 1.
             return xn - SafeCast.toUint(xn > a / xn);
         }

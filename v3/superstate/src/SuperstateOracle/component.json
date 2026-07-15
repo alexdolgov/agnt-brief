@@ -1,10 +1,20 @@
 {
   "component": "SuperstateOracle",
   "main_contract": "SuperstateOracle",
+  "source_entry_count": 5,
   "source_file_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SuperstateOracle\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://0xmacro.com/library/audits/superstate-3"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +22,9 @@
       "address": "0xe4fa682f94610ccd170680cc3b045d77d9e528a8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404140"
     }
   ]
 }

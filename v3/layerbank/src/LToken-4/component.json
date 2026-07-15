@@ -1,0 +1,58 @@
+{
+  "component": "LToken-4",
+  "main_contract": "LToken",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LToken-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x2ad69a0cf272b9941c7ddcada7b0273e9046c4b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395980"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xc7d8489dae3d2ebef075b1db2257e2c231c9d231",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395996"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xe33520c74bac3c537bfeee0f65e80471f3d564b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396000"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xea0f73296a6147fb56bae29306aae0ffaff9de5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396002"
+    }
+  ]
+}

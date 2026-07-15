@@ -1,6 +1,10 @@
+/**
+ *Submitted for verification at BscScan.com on 2022-01-19
+*/
+
 // Sources flattened with hardhat v2.6.8 https://hardhat.org
 
-// File @openzeppelin/contracts/token/ERC20/IERC20.sol@v3.4.2
+// File @openzeppelin/contracts/token/ERC20/[email protected]
 
 // SPDX-License-Identifier: MIT
 
@@ -81,7 +85,7 @@ interface IERC20 {
 }
 
 
-// File @openzeppelin/contracts/math/SafeMath.sol@v3.4.2
+// File @openzeppelin/contracts/math/[email protected]
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -298,7 +302,7 @@ library SafeMath {
 }
 
 
-// File @openzeppelin/contracts/utils/Address.sol@v3.4.2
+// File @openzeppelin/contracts/utils/[email protected]
 
 
 pragma solidity >=0.6.2 <0.8.0;
@@ -490,7 +494,7 @@ library Address {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/SafeERC20.sol@v3.4.2
+// File @openzeppelin/contracts/token/ERC20/[email protected]
 
 
 pragma solidity >=0.6.0 <0.8.0;

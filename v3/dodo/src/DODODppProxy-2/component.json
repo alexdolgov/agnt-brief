@@ -1,26 +1,89 @@
 {
   "component": "DODODppProxy-2",
   "main_contract": "DODODppProxy",
-  "source_file_count": 14,
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/SmartRoute/proxies/DODODppProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-2bd3bd1ad87a-DODODppProxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/intf/IWETH.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-cf1bf29efb5b-IWETH.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/SmartRoute/DODOApproveProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-f66320313c9c-DODOApproveProxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/SmartRoute/intf/IDODOV2.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-0ab5ffa4f33e-IDODOV2.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/intf/IDODOApprove.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-11655422dcdf-IDODOApprove.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/intf/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-be7a70a04a3b-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/lib/InitializableOwnable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-2bbc7350139c-InitializableOwnable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/lib/ReentrancyGuard.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-73931aaaee39-ReentrancyGuard.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/lib/SafeERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-c54fe9ac4245-SafeERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/lib/SafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-464eb0574a40-SafeMath.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DODODppProxy-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x0b1467f71c082d8d410af4376c685d9a6893cf36",
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xa5fc92ca57a21c87aa0477b1c8fe8b9bbf69d6c2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393982"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x49186e32fed50fd6b5604a2618c7b0b03cd41414",
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xcda4a6cc5997002b87f28d46852f9f0aa0f3c897",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394007"
     }
   ]
 }

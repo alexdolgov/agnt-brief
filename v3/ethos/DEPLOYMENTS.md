@@ -1,62 +1,16 @@
 # ethos — deployments
 
-56 verified deployment(s) across 23 component(s).
+10 verified deployment(s) across 4 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| base | `0x0992bb163b8f5615258defe98fb8bd63327b5b10` | SignatureVerifier | impl | inactive | no |
-| base | `0x0a31c99b8edd563cdf01534a82956eda5cdb4ce5` | InteractionControl | impl | inactive | no |
-| base | `0x18e76564ecaabde4665b753197df7e514973aade` | ERC1967Proxy | proxy | inactive | no |
-| base | `0x1d073a9cb370dd94496f921c17b591cac8126c6f` | ERC1967Proxy-2 | proxy | inactive | no |
-| base | `0x209820b843900ef77bd639455cde15f38a252a36` | ERC1967Proxy-2 | proxy | inactive | no |
-| base | `0x21380b24ee8b4a8d809a5049d0a9ac047828384a` | ERC1967Proxy-4 | proxy | unknown | no |
-| base | `0x24935729bbff8d4c6210d769eb058a1733662f42` | EthosDiscussion | impl | inactive | no |
-| base | `0x2661710d76c872681efc25300de84138a6369e3a` | ERC1967Proxy-2 | impl | live | no |
-| base | `0x27499d9a439d1c7b4538f247625cc7aa159d3c14` | ERC1967Proxy | proxy | inactive | no |
-| base | `0x2820b3ab3543adb80810f11f2651f0dd9a04e801` | EthosDiscussion | proxy | inactive | no |
-| base | `0x311df4d62055064b3047e3535b81f33eeffc255c` | EthosProfile | impl | live | yes |
-| base | `0x323a8314362a4ce13e26cf67e3590989d143ca2a` | ReverseAuction | impl | inactive | no |
-| base | `0x3dc2154b35e737dade925893e23068fbb3bb31bd` | ERC1967Proxy | proxy | inactive | no |
-| base | `0x405f85b6670f205252f14064c70b9a980a2c8429` | EthosVote | impl | inactive | no |
-| base | `0x4931536fc088037f913521daf0441786f22128c6` | ERC1967Proxy | impl | inactive | no |
-| base | `0x4fa6432cd0e2f2b4310c27d80c9726ea41c38b61` | InteractionControl-2 | impl | live | no |
-| base | `0x5a914935c56a9f62417726064a9a9aed5d7ae9c3` | EthosVouch | impl | live | no |
-| base | `0x5fab43b6e906f05d5d5e9d4b0582dd7b4eedc7e7` | ERC1967Proxy-5 | proxy | inactive | no |
-| base | `0x6045d0fcfe7a54c85c095a1b2877964baf4aa9bd` | ERC1967Proxy-5 | impl | inactive | no |
-| base | `0x6af8b0fc6998cc4801b9979503df557035e0af03` | ERC1967Proxy | impl | inactive | no |
-| base | `0x6d3a8fd5cf89f9a429bfadfd970968f646aff325` | ERC1967Proxy | proxy | inactive | no |
-| base | `0x6f75bfb43a28410c03aa2af4dc0196fa8049d136` | EthosVote | proxy | inactive | no |
-| base | `0x72f04d999e12d456fe7ee0acaa345124a081018d` | SafeProxy-2 | impl | live | no |
-| base | `0x744bd54140255e7a60a01c14d8fb7706b2e4b317` | EthosVote | impl | inactive | no |
-| base | `0x78a32a705bfc1600e0a2e056316e44877bda7f57` | SignatureVerifier | impl | live | no |
-| base | `0x78c322314013b5658536929e823be260f9c536a1` | ERC1967Proxy-6 | proxy | inactive | no |
-| base | `0x7a20d99307172d8f6b80bf1e904bbf069c31c131` | SafeProxy | proxy | live | no |
-| base | `0x7fdac5e0e137b9299107f4e4f77c315c477e74c9` | EthosDiscussion | proxy | inactive | no |
-| base | `0x879989c287e2a98a31f04f94eea408f3e1b99d18` | EthosVouch | proxy | inactive | no |
-| base | `0x89e6ff2ce8318433e011d848d8a35fbfee60c2ed` | EthosVote | proxy | inactive | no |
-| base | `0x89fb1c2a52634ac582f4380f29fe7800a9e2e2f0` | EthosDiscussion | impl | inactive | no |
-| base | `0x8b92d27846559abd7cee0c01435a35f3d7731c35` | ERC1967Proxy-7 | proxy | inactive | no |
-| base | `0xa65e325f3b788085739b5a0ab366b323d832d164` | ERC1967Proxy-3 | proxy | inactive | no |
-| base | `0xada5a6e455cb93e8a934d09eb564ff465d923c54` | ERC1967Proxy-8 | proxy | inactive | no |
-| base | `0xaf35ee91380c928d2752e67d55bb85628c8e1386` | ERC1967Proxy | impl | inactive | no |
-| base | `0xb2c41deba270e1ea6abbe0e2fa70432630634a59` | ERC1967Proxy-9 | proxy | inactive | no |
-| base | `0xb4a9bc5fb037ebd805a405f2b53cfadf4bcb4774` | SafeProxy | proxy | live | no |
-| base | `0xb51b4a6622d591785abcee24060796c5e5dc1f1b` | EthosSlash | impl | live | no |
-| base | `0xb7866ca9e586118fb7a97b5f198776f86afa53bd` | EthosVouch-2 | impl | live | yes |
-| base | `0xbad687c67afcd6e97e59b93661ccee753c87cd9c` | ERC1967Proxy-3 | impl | inactive | no |
-| base | `0xbbbdbebc1ad8e1081b31d341123577f1a5827c47` | EthosVouch | impl | live | no |
-| base | `0xbfced9932c2180d6e3db2f933d5d2512c59e0ec9` | ERC1967Proxy-6 | proxy | inactive | no |
-| base | `0xc26f339f4e46c776853b1c190ec17173dbe059bf` | ERC1967Proxy-3 | proxy | inactive | no |
-| base | `0xc31252d6be0252018f1b12def25f6582db0f3e9a` | ContractAddressManager | impl | live | no |
-| base | `0xd31d6486a4ccfc171b7e498fe69ff51feda1e3aa` | ERC1967Proxy-2 | impl | inactive | no |
-| base | `0xd56695235933ce2d9de477467b44378322ecd194` | ReverseAuction | proxy | inactive | no |
-| base | `0xd89e6b7687f862dd6d24b3b2d4d0dec6a89a6fdd` | EthosVouch | proxy | inactive | no |
-| base | `0xd998f84a46b874ff0f8f5b136f3bf54649d94d60` | ERC1967Proxy-8 | impl | inactive | no |
-| base | `0xda592a2c88456dec6d84f8203134303ec66d749a` | ERC1967Proxy-4 | impl | inactive | no |
-| base | `0xe0da0eda50376e111e1640db43b0c6a486bc7505` | ERC1967Proxy-3 | impl | inactive | no |
-| base | `0xe4c8fc01b416ee13c8b21171ff90f5274428dc73` | ERC1967Proxy-9 | impl | inactive | no |
-| base | `0xe6f811d8aed56d68d2b8658e01519069470b7436` | ContractAddressManager | impl | live | no |
-| base | `0xebe137ea60f980f40fd30e763d09b9c0ce892801` | EthosVouch | impl | live | no |
-| base | `0xf00b5cf6b357f7fb01721c21f03c5d6bed6aeda4` | ERC1967Proxy-7 | impl | inactive | no |
-| base | `0xf641089aa70d7bdaa2d9c02ca134fb7e014a83dc` | ERC1967Proxy | impl | inactive | no |
-| base | `0xfe086ebd36209bcbbbbe6c4e9af36365222d1d59` | EthosVote-2 | impl | live | no |
+| base | `0x0a31c99b8edd563cdf01534a82956eda5cdb4ce5` | InteractionControl | impl | live | yes |
+| base | `0x209820b843900ef77bd639455cde15f38a252a36` | ERC1967Proxy | proxy | live | yes |
+| base | `0x27499d9a439d1c7b4538f247625cc7aa159d3c14` | ERC1967Proxy | proxy | live | yes |
+| base | `0x2820b3ab3543adb80810f11f2651f0dd9a04e801` | ERC1967Proxy | proxy | live | yes |
+| base | `0x6d3a8fd5cf89f9a429bfadfd970968f646aff325` | ERC1967Proxy | proxy | live | yes |
+| base | `0x78a32a705bfc1600e0a2e056316e44877bda7f57` | SignatureVerifier | impl | live | yes |
+| base | `0x89e6ff2ce8318433e011d848d8a35fbfee60c2ed` | ERC1967Proxy | proxy | live | yes |
+| base | `0xc26f339f4e46c776853b1c190ec17173dbe059bf` | ERC1967Proxy | proxy | live | yes |
+| base | `0xc31252d6be0252018f1b12def25f6582db0f3e9a` | ContractAddressManager | impl | live | yes |
+| base | `0xd89e6b7687f862dd6d24b3b2d4d0dec6a89a6fdd` | ERC1967Proxy | proxy | live | yes |

@@ -1,7 +1,15 @@
 {
   "component": "ProtocolFeeController",
   "main_contract": "ProtocolFeeController",
+  "source_entry_count": 32,
   "source_file_count": 32,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ProtocolFeeController\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -17,7 +25,9 @@
       "address": "0x212f884252792ebaaa811fb0678444b21c7c2879",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402416"
     }
   ]
 }

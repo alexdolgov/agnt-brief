@@ -1,43 +1,86 @@
 # Agentic Audit Brief: sDAI
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: sDAI (`sdai`)
+- Website: [https://docs.spark.fi/dev/savings/sdai-token](https://docs.spark.fi/dev/savings/sdai-token)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:52.877Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
-- Chains: ethereum, gnosis
-- Contract surface: 77 unique implementations (101 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: ethereum
+- Contract surface: 1 unique implementations (1 raw deployments)
+- Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $66,118,976.31
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Yield. Structurally: 61 project-authored contract(s) across 2 chain(s); 3 ERC4626 vaults, 6 ERC20 tokens, 1 ERC721 NFT, 2 Chainlink feeds; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for sDAI. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Its contracts share 23 common project-authored base contract(s) (upgradeabilityownerstorage, upgradeabilityproxy, proxy). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 1 contract row(s) across ethereum. Structural roles: 1 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 1
+- Structural roles: core (1)
+- Contract kinds: contract (1)
+- Detected standards: erc20permit (1), erc4626 (1)
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 1 contracts are derived from known codebases. 1 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- SavingsDai (`0x83f20f...42beea`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 195; live-surface contracts included: 88 (41 live, 47 unknown).
-- Excluded by liveness: 107 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 1/1 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/30 (0.0%)
-- Deployed-live implementations: 30 of 77 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/30
-- Verified + Unaudited implementations: 30
+- Coverage of address-book-owned deployed-live implementations: 0/1 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/1
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 47
-- Unique implementations: 77
-- Raw deployments: 101
+- Unverified implementations: 0
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -56,40 +99,11 @@ The protocol comprises 5 functional families. Its contracts share 23 common proj
 
 - None
 
-### ⚠️ Verified + Unaudited (30)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AgaveTreasuryRedeemer | operational_periphery | gnosis | n/a | [`0x33805e...bbc457`](./contracts/gnosis-100/0x33805e4ef17cf0f391d25ead14fa9d2b74bbc457/) | ⚠️ Unaudited |
-| AgaveTreasuryWithdrawer | operational_periphery | gnosis | n/a | [`0x91ed56...890018`](./contracts/gnosis-100/0x91ed5609e5b9d6991f024570025c872382890018/) | ⚠️ Unaudited |
-| BridgeInterestReceiver | unknown | gnosis | n/a | 2 deployments: gnosis [`0x17780d...625122`](./contracts/gnosis-100/0x17780d40287eb6d9605ec8b324605cf98a625122/); gnosis `0x670dae...059088` | ⚠️ Unaudited |
-| BridgeRouter | operational_periphery | ethereum | n/a | [`0x9a8736...66a0b0`](./contracts/ethereum-1/0x9a873656c19efecbfb4f9fab5b7acdeab466a0b0/) | ⚠️ Unaudited |
-| BridgeValidators | unknown | gnosis | n/a | 2 deployments: gnosis [`0x26fc9f...823299`](./contracts/gnosis-100/0x26fc9fc1c98607e1634f87b47e6798d436823299/); gnosis `0xb289f0...3f1b6d` | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | [`0x42f38e...e7a3f6`](./contracts/ethereum-1/0x42f38ec5a75accec50054671233dfac9c0e7a3f6/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | gnosis | n/a | [`0x7a48da...0875bd`](./contracts/gnosis-100/0x7a48dac683da91e4faa5ab13d91ab5fd170875bd/) | ⚠️ Unaudited |
-| HashiManager | unknown | gnosis | n/a | 2 deployments: gnosis [`0x0d3cc0...3d8776`](./contracts/gnosis-100/0x0d3cc0e1934add62415243f22c1b1e3dd33d8776/); gnosis `0x6c70cd...bf2962` | ⚠️ Unaudited |
-| HashiManager | unknown | gnosis | n/a | 2 deployments: gnosis [`0x5483eb...e4440d`](./contracts/gnosis-100/0x5483ebc7522c5e2669a887a7a1edf256b3e4440d/); gnosis `0x60aa15...2ddb49` | ⚠️ Unaudited |
-| HashiManager | unknown | gnosis | n/a | 2 deployments: gnosis [`0x694bee...28b5b5`](./contracts/gnosis-100/0x694beeb84f912d0951e88cfcf76900b7c728b5b5/); gnosis `0x74caca...a7296e` | ⚠️ Unaudited |
-| HomeBridgeErcToNative | operational_periphery | gnosis | n/a | 2 deployments: gnosis [`0x7301cf...eb0aa6`](./contracts/gnosis-100/0x7301cfa0e1756b71869e93d4e4dca5c7d0eb0aa6/); gnosis `0xe6998b...782846` | ⚠️ Unaudited |
-| InitializableAdminUpgradeabilityProxy | unknown | gnosis | n/a | 5 deployments: gnosis [`0x1437f1...4eadfe`](./contracts/gnosis-100/0x1437f115bd1d206c1c0955ac70debafd964eadfe/); gnosis `0x315a82...ba0553`; gnosis `0x39ce83...48a050`; gnosis `0x65efaf...474c47`; gnosis `0xf1dc94...8cb26f` | ⚠️ Unaudited |
-| LendingPoolConfigurator | unknown | gnosis | n/a | [`0x4e7dfd...9304ca`](./contracts/gnosis-100/0x4e7dfd59060e2c91495b006617f7e429439304ca/) | ⚠️ Unaudited |
-| SavingsDai | unknown | ethereum | n/a | [`0x83f20f...42beea`](./contracts/ethereum-1/0x83f20f44975d03b1b09e64809b757c47f942beea/) | ⚠️ Unaudited |
-| SavingsXDai | unknown | gnosis | n/a | 2 deployments: gnosis [`0x4ab77f...a171d1`](./contracts/gnosis-100/0x4ab77f4883d099992c69d417ff8708220da171d1/); gnosis `0xaf2047...483701` | ⚠️ Unaudited |
-| SavingsXDaiAdapter | adapter | gnosis | n/a | 2 deployments: gnosis [`0xd499b5...591a94`](./contracts/gnosis-100/0xd499b51fcfc66bd31248ef4b28d656d67e591a94/); gnosis `0xfae3a9...fd7b9c` | ⚠️ Unaudited |
-| StaticATokenLM | unknown | gnosis | n/a | 2 deployments: gnosis [`0x01ac90...c5f6e2`](./contracts/gnosis-100/0x01ac9005f8446af28b065af87216b85faac5f6e2/); gnosis `0x248ce8...2acc13` | ⚠️ Unaudited |
-| StaticATokenLM | unknown | gnosis | n/a | 2 deployments: gnosis [`0x110e2d...3ec78b`](./contracts/gnosis-100/0x110e2d3d4c94596f5698c753d5cd43221d3ec78b/); gnosis `0x858227...fcb2f0` | ⚠️ Unaudited |
-| StaticATokenLM | unknown | gnosis | n/a | 2 deployments: gnosis [`0x13f2b8...9de3fb`](./contracts/gnosis-100/0x13f2b819b7165686f36af81d887e1459d19de3fb/); gnosis `0x6d9dc1...949f22` | ⚠️ Unaudited |
-| StaticATokenLM | unknown | gnosis | n/a | 2 deployments: gnosis [`0x20e5eb...43461f`](./contracts/gnosis-100/0x20e5eb701e8d711d419d444814308f8c2243461f/); gnosis `0xd28490...ce4ed2` | ⚠️ Unaudited |
-| StaticATokenLM | unknown | gnosis | n/a | 2 deployments: gnosis [`0x3d938f...5a9bbc`](./contracts/gnosis-100/0x3d938f90ac251c1bcf6b4e399dd72c8c685a9bbc/); gnosis `0xa95027...25cc68` | ⚠️ Unaudited |
-| StaticATokenLM | unknown | gnosis | n/a | 2 deployments: gnosis [`0x4a0c32...7e8adb`](./contracts/gnosis-100/0x4a0c32e9079bf9e42eeeac31f2a05dccd07e8adb/); gnosis `0x8e0dbc...2bc339` | ⚠️ Unaudited |
-| StaticATokenLM | unknown | gnosis | n/a | 2 deployments: gnosis [`0x9ae6d6...5c97ed`](./contracts/gnosis-100/0x9ae6d606d9ca14c59b703494bea2d8870e5c97ed/); gnosis `0xc15933...19d314` | ⚠️ Unaudited |
-| StaticATokenLM | unknown | gnosis | n/a | 2 deployments: gnosis [`0xa357ef...0ae61e`](./contracts/gnosis-100/0xa357efdaf20a1b3498400b029314a826b20ae61e/); gnosis `0xce02a2...d8daff` | ⚠️ Unaudited |
-| Swapper_UserProxyFactory | unknown | gnosis | n/a | 3 deployments: gnosis [`0x0f0a02...a6efa0`](./contracts/gnosis-100/0x0f0a02d56708e01af559f7d80b916c178ca6efa0/); gnosis `0x19bfaf...1abd10`; gnosis `0x456844...9179ff` | ⚠️ Unaudited |
-| USDSDepositContract | core_logic | gnosis | n/a | [`0x5c183c...7ff8c9`](./contracts/gnosis-100/0x5c183c8a49aba6e31049997a56d75600e27ff8c9/) | ⚠️ Unaudited |
-| WrappedAgTokenFactory | unknown | gnosis | n/a | [`0x6c1878...d434d2`](./contracts/gnosis-100/0x6c1878a83884b9f14a342c7d96fc00c9a0d434d2/) | ⚠️ Unaudited |
-| WrappedAgTokenUpgradeable | unknown | gnosis | n/a | 3 deployments: gnosis [`0x78eb5d...9c304b`](./contracts/gnosis-100/0x78eb5d51d620ff9e6c70ef02208e5ac7079c304b/); gnosis `0xa1d0ad...a6bdc5`; gnosis `0xfc4c44...b0d716` | ⚠️ Unaudited |
-| WXDAI | unknown | gnosis | n/a | [`0xe91d15...63a97d`](./contracts/gnosis-100/0xe91d153e0b41518a2ce8dd3d7944fa863463a97d/) | ⚠️ Unaudited |
-| XDaiForeignBridge | operational_periphery | ethereum | n/a | [`0x4aa421...045016`](./contracts/ethereum-1/0x4aa42145aa6ebf72e164c9bbc74fbd3788045016/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| SavingsDai | unknown | project_anchor | own_supporting | 0 | ethereum | unit-392087 | `0x83f20f...42beea` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,79 +117,39 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (47)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | gnosis | n/a | `0x02e2e6...c6eef5` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x071bf5...8b73c3` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x109f6f...8d23fa` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x17dce5...d55c71` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x1964b0...3ceff2` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x1c5b8d...ecf942` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x201959...9437a6` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x22df53...3b02c4` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x2ac1f9...4f1904` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x2ffaba...775aab` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x35dd00...b85db6` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x376739...40d42c` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x40d2e7...c67b39` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x46eb3f...cd581c` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x4c8b99...bfb961` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x4da5be...3eaae2` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x562e49...9ec2bc` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x5be5d4...c20dc3` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x678b93...1cc69c` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x6a0614...fc387a` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x6c8ae5...7beb75` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x7057a9...9c2e23` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x7b81e0...b93dc1` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x7eb44b...651fd4` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x832cd1...6c4ca2` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x8677a7...e27136` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x88be51...2ecb49` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x8b1fcd...15da34` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x8d43d5...0905b9` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x8eb798...46d250` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x9065d6...6e56a2` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x912824...0e7570` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x921571...5f89d4` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x9380d8...7f368f` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x95d0e8...470b3a` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0x9f1837...4ae99b` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0xae8988...50b423` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0xb69aa1...188dde` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0xb6f20b...679725` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0xbc07ce...152f0e` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0xbd5690...17ef81` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0xc1529e...830986` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0xc66e94...babc42` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0xcf6a20...fbe689` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0xd99d9d...e2f10e` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0xe7728d...3861e8` | ❓ Unverified |
-| UnnamedContract | unknown | gnosis | n/a | `0xed1d03...473a5e` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x83f20f...42beea` | SavingsDai | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 77 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -183,6 +157,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

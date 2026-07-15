@@ -5,7 +5,6 @@ pragma solidity 0.8.17;
 import { Errors } from "src/utils/Errors.sol";
 import { Ownable2Step } from "src/access/Ownable2Step.sol";
 import { IStatsCalculator } from "src/interfaces/stats/IStatsCalculator.sol";
-import { IIncentiveStatsCalculator } from "src/interfaces/stats/IIncentiveStatsCalculator.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
 import { IStatsCalculatorRegistry } from "src/interfaces/stats/IStatsCalculatorRegistry.sol";
 import { EnumerableSet } from "openzeppelin-contracts/utils/structs/EnumerableSet.sol";
@@ -16,15 +15,10 @@ contract ChainlinkStatsUpkeepV4 is Ownable2Step {
     EnumerableSet.AddressSet private _filteredCalculators;
 
     uint256 public maxPerCheck = 10;
-    address public constant CVX_TOKEN = 0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B;
-    address public constant AURA_TOKEN = 0xC0c293ce456fF0ED870ADd98a0828Dd4d2903DBF;
 
     function checkUpkeep(
         bytes calldata checkData
     ) external view returns (bool upkeepNeeded, bytes memory performData) {
-        // Get the current hour in UTC
-        // slither-disable-next-line weak-prng, timestamp
-        uint256 currentHourUTC = (block.timestamp / 3600) % 24;
         ISystemRegistry systemRegistry = ISystemRegistry(abi.decode(checkData, (address)));
         IStatsCalculatorRegistry statsCalcRegistry = systemRegistry.statsCalculatorRegistry();
         // slither-disable-next-line unused-return
@@ -35,35 +29,13 @@ contract ChainlinkStatsUpkeepV4 is Ownable2Step {
         uint256 count = 0;
 
         for (uint256 i = 0; i < len; ++i) {
-            if (_filteredCalculators.contains(addresses[i])) {
-                continue;
-            }
+            if (!_filteredCalculators.contains(addresses[i])) {
+                IStatsCalculator calc = IStatsCalculator(addresses[i]);
 
-            IStatsCalculator calc = IStatsCalculator(addresses[i]);
-            bool shouldCheck = false;
-
-            // Check if the calculator has platformToken() function
-            try IIncentiveStatsCalculator(address(calc)).platformToken() returns (address platformToken) {
-                if (platformToken == CVX_TOKEN || platformToken == AURA_TOKEN) {
-                    // For CVX or AURA, check every 6 hours, 2 hour window
-                    // slither-disable-next-line weak-prng, timestamp
-                    shouldCheck = currentHourUTC % 6 <= 1;
-                } else {
-                    // For others, check between 4-8 AM UTC
-                    // slither-disable-next-line weak-prng, timestamp
-                    shouldCheck = currentHourUTC >= 4 && currentHourUTC <= 8;
-                }
-            } catch {
-                // If platformToken() doesn't exist, use the default 4-8 AM UTC window
-                // slither-disable-next-line weak-prng, timestamp
-                shouldCheck = currentHourUTC >= 4 && currentHourUTC <= 8;
-            }
-
-            if (shouldCheck) {
                 try calc.shouldSnapshot() returns (bool shouldSnapshot) {
                     if (shouldSnapshot) {
                         ++count;
-                        found[i] = address(calc);
+                        found[i] = address(addresses[i]);
                     }
                 } catch { }
             }
@@ -94,10 +66,6 @@ contract ChainlinkStatsUpkeepV4 is Ownable2Step {
                 ++i;
             }
         }
-    }
-
-    function getFilteredList() external view returns (address[] memory) {
-        return _filteredCalculators.values();
     }
 
     function addToFilterList(

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { IAccessController } from "src/interfaces/security/IAccessController.sol";
 import { Errors } from "src/utils/Errors.sol";
@@ -10,7 +10,9 @@ contract SecurityBase {
 
     error UndefinedAddress();
 
-    constructor(address _accessController) {
+    constructor(
+        address _accessController
+    ) {
         if (_accessController == address(0)) revert UndefinedAddress();
 
         accessController = IAccessController(_accessController);
@@ -21,7 +23,9 @@ contract SecurityBase {
         _;
     }
 
-    modifier hasRole(bytes32 role) {
+    modifier hasRole(
+        bytes32 role
+    ) {
         if (!accessController.hasRole(role, msg.sender)) revert Errors.AccessDenied();
         _;
     }

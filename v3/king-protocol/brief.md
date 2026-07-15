@@ -1,78 +1,108 @@
 # Agentic Audit Brief: King Protocol
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 5 (0 matched; 5 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: King Protocol (`king-protocol`)
 - Website: [https://kingprotocol.org/](https://kingprotocol.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:19.936Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
-- Chains: arbitrum, base, mantle, swellchain
-- Contract surface: 21 unique implementations (35 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: arbitrum, base, ethereum, mantle, swellchain
+- Contract surface: 7 unique implementations (7 raw deployments)
+- Coverage basis: 0/2 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,181,064.78
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Liquid Restaking. Structurally: 5 project-authored contract(s) across 2 chain(s); 2 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for King Protocol. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
+The pinned logic-topography run contains 4 contract row(s) across arbitrum, base, ethereum, mantle, swellchain. Structural roles: 4 unclassified. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 4
+- Structural roles: unclassified (4)
+- Contract kinds: contract (4)
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 4 contracts are derived from known codebases. 4 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x747cac...52232e`, chain 1)
+- UnnamedContract (`0x8f08b7...8e6040`, chain 1)
+- UnnamedContract (`0x2e4124...fee275`, chain 42161)
+- UnnamedContract (`0xc2606a...cee6f8`, chain 1923)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 35; live-surface contracts included: 35 (11 live, 24 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 4; live-surface contracts included: 4 (2 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 6/6 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 4/7 (57.1%)
-- Deployed-live implementations: 7 of 21 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 4/9
-- Verified + Unaudited implementations: 5
+- Coverage of address-book-owned deployed-live implementations: 0/2 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 6 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 1 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
+- Deployed-live implementations: 6 of 7 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/2
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 12
-- Unique implementations: 21
-- Raw deployments: 35
+- Unverified implementations: 4
+- Unique implementations: 7
+- Raw deployments: 7
 - Audits discovered: 5 (5 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 1
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-03 (aging)
 - Audit staleness (calendar age): 0 fresh, 5 aging, 0 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 4 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| unknown | Tier 2 | 4 | 44.4% | 2025-02 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (4)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| KingOFTL2 | unknown | mantle | n/a | 2 deployments: mantle [`0x548c41...7b98ed`](./contracts/mantle-5000/0x548c4116a97e0138f78000088ea3f155717b98ed/); mantle `0x5a57eb...7a7ab0` | ✅ Audited |
-| KingOFTL2 | unknown | base | n/a | 2 deployments: base [`0x2a57db...9bb283`](./contracts/base-8453/0x2a57db06506ab9764db8dcf06ac17a5fed9bb283/); base `0x6d0431...91570d` | ✅ Audited |
-| KingOFTL2 | unknown | base | n/a | 2 deployments: base [`0x4d6a22...51beab`](./contracts/base-8453/0x4d6a22986acca58aa890fbb233f3b4563251beab/); base `0xe22c24...5fbac0` | ✅ Audited |
-| KingOFTL2 | unknown | base | n/a | 2 deployments: base [`0xcc0112...e852a9`](./contracts/base-8453/0xcc011273240610838aea80b485fbdff2b2e852a9/); base `0xf25768...1d689d` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| ArbitrageFoundation | unknown | base | n/a | 8 deployments: base [`0x117212...546dc2`](./contracts/base-8453/0x11721202e81eb2f7445bac9f9bf11f0b87546dc2/); base `0x2e7a78...d4eab1`; base `0x44d021...9b42fd`; base `0x506131...55dac7`; base `0x64f582...d7eae2`; base `0xb2bad5...3a18fe`; base `0xe5bb8e...6e29fb`; base `0xe92e65...47cedb` | ⚠️ Unaudited |
-| CurveTwocryptoOptimized | unknown | base | n/a | [`0x3253c8...9e0886`](./contracts/base-8453/0x3253c8105e8e70ae6abaf2fd21c703d8729e0886/) | ⚠️ Unaudited |
-| Pool | core_logic | base | n/a | [`0xdc5f7c...3015ac`](./contracts/base-8453/0xdc5f7c7916c7792603fdc17f05f7929b423015ac/) | ⚠️ Unaudited |
-| RamsesBeaconProxy | registry | arbitrum | n/a | [`0x93e6e5...7bc942`](./contracts/arbitrum-42161/0x93e6e571d04848de3ba31525fca36f1e4f7bc942/) | ⚠️ Unaudited |
-| UniswapV3Plugin | unknown | base | n/a | 4 deployments: base [`0x409994...200ec2`](./contracts/base-8453/0x409994fd2fdcfccddea418b7f203b4db51200ec2/); base `0x84acc4...983af0`; base `0x8bd78c...e4a459`; base `0xa12772...675ef7` | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| KingOFTL2 | unknown | project_anchor | own_supporting | 1 | mantle | unit-244213 | `0x548c41...7b98ed` | ⚠️ Unaudited |
+| KingOFTL2 | unknown | project_anchor | own_supporting | 1 | base | unit-244214 | `0xe22c24...5fbac0` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,61 +116,103 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (12)
+### ❓ Unverified (5)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | swellchain | n/a | `0xc2606a...cee6f8` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x63f237...077c6a` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xe63ba6...cce318` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x0e9315...6aca5a` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x155938...a33ac4` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x34b17b...fc1dc9` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x644403...436763` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x7e2a99...025844` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xaeab5e...d12dbe` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xb71612...e228e2` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xbd2e14...27586b` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xe592f9...3421b5` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2b9010...0f19e3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244209 | `0x747cac...52232e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-244210 | `0x8f08b7...8e6040` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | swellchain | unit-244211 | `0xc2606a...cee6f8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-244212 | `0x2e4124...fee275` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [NM_0452_King_Cross_Chain_FINAL.pdf](https://github.com/King-Protocol/king-cross-chain/blob/master/audit/NM_0452_King_Cross_Chain_FINAL.pdf) | unknown | Audit | 2025-02 | aging | Direct | contract_name | 8 | high |
-| [NM_0314_EtherFi_LRT_2.pdf](https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf) | NM | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
-| [NM_0390_LRT_Square_Strategies_DRAFT.pdf](https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf) | NM | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
-| [Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf](https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf) | Ether_Fi | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
-| [Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf](https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf) | Ether Fi | Audit | 2025-03 | aging | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [NM_0452_King_Cross_Chain_FINAL.pdf](https://github.com/King-Protocol/king-cross-chain/blob/master/audit/NM_0452_King_Cross_Chain_FINAL.pdf) | unknown | Audit | 2025-02 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [NM_0314_EtherFi_LRT_2.pdf](https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf) | NM | Audit | 2024-09 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 9 | high |
+| [NM_0390_LRT_Square_Strategies_DRAFT.pdf](https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf) | NM | Audit | 2024-11 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 9 | high |
+| [Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf](https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf) | Ether_Fi | Audit | 2025-01 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf](https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf) | Ether Fi | Audit | 2025-03 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [3122] NM_0452_King_Cross_Chain_FINAL.pdf — no match: All four contracts listed in the Audited Files section are in scope. The audit date is the final report date (Feb 14, 2025).
+- [3126] NM_0314_EtherFi_LRT_2.pdf — no match: All contracts listed in the 'Audited Files' section (Part I and Part II) are included. The audit date is the final report date (September 23, 2024).
+- [3127] NM_0390_LRT_Square_Strategies_DRAFT.pdf — no match: All contracts listed in the Audited Files table (Section 2) are in scope. The audit date is from the cover page and executive summary.
+- [3128] Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf — no match: Two contracts in scope: CumulativeMerkleCodec and CumulativeMerkleDrop. Audit date from 'Last Updated 03/12/2025' and engagement end date March 12, 2025.
+- [14854] Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf — no match: Scope section explicitly lists two contracts: CumulativeMerkleCodec and CumulativeMerkleDrop. Audit date is the end date of the engagement (March 11, 2025).
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| NM_0452_King_Cross_Chain_FINAL.pdf | KingOFTAdapterUpgradeable | unmatched — not counted | — | listed in Audited Files table | no |
+| NM_0452_King_Cross_Chain_FINAL.pdf | KingOFTAdapter | unmatched — not counted | — | listed in Audited Files table | no |
+| NM_0452_King_Cross_Chain_FINAL.pdf | PairwiseRateLimiter | unmatched — not counted | — | listed in Audited Files table | no |
+| NM_0452_King_Cross_Chain_FINAL.pdf | KingOFTUpgradeable | unmatched — not counted | — | listed in Audited Files table | no |
+| NM_0314_EtherFi_LRT_2.pdf | UUPSProxy | unmatched — not counted | — | Listed in audited files table (Part I) | no |
+| NM_0314_EtherFi_LRT_2.pdf | LrtSquare | unmatched — not counted | — | Listed in audited files table (Part I) | no |
+| NM_0314_EtherFi_LRT_2.pdf | Swapper1InchV6 | unmatched — not counted | — | Listed in audited files table (Part I and Part II) | no |
+| NM_0314_EtherFi_LRT_2.pdf | PriceProvider | unmatched — not counted | — | Listed in audited files table (Part I) | no |
+| NM_0314_EtherFi_LRT_2.pdf | BucketLimiter | unmatched — not counted | — | Listed in audited files table (Part I) | no |
+| NM_0314_EtherFi_LRT_2.pdf | IAggregatorV3 | unmatched — not counted | — | Listed in audited files table (Part I) | no |
+| NM_0314_EtherFi_LRT_2.pdf | IPriceProvider | unmatched — not counted | — | Listed in audited files table (Part I) | no |
+| NM_0314_EtherFi_LRT_2.pdf | IOneInch | unmatched — not counted | — | Listed in audited files table (Part I) | no |
+| NM_0314_EtherFi_LRT_2.pdf | ISwapper | unmatched — not counted | — | Listed in audited files table (Part I) | no |
+| NM_0390_LRT_Square_Strategies_DRAFT.pdf | BoringVaultPriceProvider | unmatched — not counted | — | listed in Audited Files table | no |
+| NM_0390_LRT_Square_Strategies_DRAFT.pdf | PriceProvider | unmatched — not counted | — | listed in Audited Files table | no |
+| NM_0390_LRT_Square_Strategies_DRAFT.pdf | SEthFiStrategy | unmatched — not counted | — | listed in Audited Files table | no |
+| NM_0390_LRT_Square_Strategies_DRAFT.pdf | BaseStrategy | unmatched — not counted | — | listed in Audited Files table | no |
+| NM_0390_LRT_Square_Strategies_DRAFT.pdf | EEigenStrategy | unmatched — not counted | — | listed in Audited Files table | no |
+| NM_0390_LRT_Square_Strategies_DRAFT.pdf | LRTSquaredAdmin | unmatched — not counted | — | listed in Audited Files table | no |
+| NM_0390_LRT_Square_Strategies_DRAFT.pdf | LRTSquaredCore | unmatched — not counted | — | listed in Audited Files table | no |
+| NM_0390_LRT_Square_Strategies_DRAFT.pdf | LRTSquaredStorage | unmatched — not counted | — | listed in Audited Files table | no |
+| NM_0390_LRT_Square_Strategies_DRAFT.pdf | LRTSquaredInitializer | unmatched — not counted | — | listed in Audited Files table | no |
+| Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf | CumulativeMerkleCodec | unmatched — not counted | — | listed in scope | no |
+| Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf | CumulativeMerkleDrop | unmatched — not counted | — | listed in scope | no |
+| Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf | CumulativeMerkleCodec | unmatched — not counted | — | listed in scope section | no |
+| Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf | CumulativeMerkleDrop | unmatched — not counted | — | listed in scope section | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| mantle | `0x548c41...7b98ed` | KingOFTL2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xe22c24...5fbac0` | KingOFTL2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 21 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=8
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 26 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=5
+- Match method counts: n/a
 
 Zero-match audit list:
 
+- [3122] NM_0452_King_Cross_Chain_FINAL.pdf
 - [3126] NM_0314_EtherFi_LRT_2.pdf
 - [3127] NM_0390_LRT_Square_Strategies_DRAFT.pdf
 - [3128] Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf

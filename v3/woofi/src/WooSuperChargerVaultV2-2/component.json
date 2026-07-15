@@ -1,12 +1,18 @@
 {
   "component": "WooSuperChargerVaultV2-2",
   "main_contract": "WooSuperChargerVaultV2",
-  "source_file_count": 26,
+  "source_entry_count": 22,
+  "source_file_count": 22,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WooSuperChargerVaultV2-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 4,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Zellic/publications/blob/master/WOOFI%20Stake%20-%20Zellic%20Audit%20Report.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "polygon",
@@ -14,31 +20,39 @@
       "address": "0x1109e03516eb25eab2150d0b274b8d4f5f3cf549",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401137"
     },
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x90a2aadba560040e604ca57ca75760ab89abd085",
+      "address": "0x697c97a37bc00c2306f2b08ca14f3d55db6ffccd",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401148"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x9dd5dd86b978f17628f01307a83347d9ec9b0699",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x44df096d2600c6a6db77899db3de3aecff746cb8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401229"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xedbb74da05d58b22f07184bb79ed9124791799ac",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb772122c4a37fe1754b46ab1799b909351e8cb43",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401245"
     }
   ]
 }

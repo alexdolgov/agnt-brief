@@ -1,8 +1,16 @@
 {
   "component": "Blacksmith",
   "main_contract": "Blacksmith",
+  "source_entry_count": 15,
   "source_file_count": 15,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Blacksmith\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/CoverProtocol/cover-security/blob/master/audits/Arcadia-Cover-Blacksmith-Audit.pdf",
@@ -16,23 +24,9 @@
       "address": "0xe0b94a7bb45dd905c79bb1992c9879f40f1caed5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xe98567885df519dfeb12c0e268dd5d9b798bd531",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xfcf3295b3b357e3e0d37ac5ee14823e06ffdfbc6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402779"
     }
   ]
 }

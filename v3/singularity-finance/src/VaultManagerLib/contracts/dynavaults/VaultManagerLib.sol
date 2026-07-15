@@ -124,7 +124,7 @@ library VaultManagerLib {
 	function lockedProfitWithGivenAssets(uint256 totalAssets) public view returns (uint256 calculatedLockedProfit) {
 		uint256 _currentLockedProfitRatio = _calculateCurrentLockedProfitRatio();
 		calculatedLockedProfit = (_currentLockedProfitRatio > 0)
-			? FixedPointMathLib.fullMulDivUp(_currentLockedProfitRatio, totalAssets, DEGRADATION_COEFFICIENT)
+			? FixedPointMathLib.fullMulDiv(_currentLockedProfitRatio, totalAssets, DEGRADATION_COEFFICIENT)
 			: 0;
 	}
 
@@ -205,48 +205,101 @@ library VaultManagerLib {
 	}
 
 	/**
-	 * @notice Should update locked profit in depositToken decimals
+	 * @notice Should calculate the fresh profit and fees in depositTokens
 	 * @notice Passes gain and totalFees in profitToken decimals
-	 * @dev Updates newLockedProfitRatio in storage
 	 * @param profitToken The address of the token with profit
 	 * @param deltaTotalAssets Updates total assets in fee shares calculation
-	 * @param totalFees The total amount of fees to exclude from locked profit
-	 * @param useDelta Indicates if we need to compensate for a delta in total assets
 	 */
-	function _updateLockedProfitRatio(address profitToken, uint256 deltaTotalAssets, uint256 totalFees, bool useDelta) private {
-		uint256 _totalAssets = VaultTokensLib.totalAssetsCached();
+	function calculateProfitAndFeesInDepositToken(
+		address profitToken,
+		uint256 deltaTotalAssets,
+		uint256 totalFees
+	) private view returns (uint256 deltaProfitInDepositToken, uint256 deltaFeesInDepositToken) {
 		address _depositToken = VaultTokensLib.token();
-		uint256 _currentLockedProfitRatio = _calculateCurrentLockedProfitRatio();
 		// convert gain and totalFees to deposit tokens for locked profit calculation
 		uint256 _profitTokenUnit = 10 ** IERC20Metadata(profitToken).decimals();
 		uint256 _profitTokenUnitInDeposit = (profitToken != _depositToken)
 			? IDynaVaultAPI(VaultGovernanceLib.vault()).tokenValueInQuoteAsset(profitToken, _profitTokenUnit, _depositToken)
 			: _profitTokenUnit;
-		uint256 _deltaInDepositToken = FixedPointMathLib.fullMulDiv(deltaTotalAssets, _profitTokenUnitInDeposit, _profitTokenUnit);
-		if (useDelta) {
-			_totalAssets += _deltaInDepositToken;
-		}
-		uint256 _deltaRatio = _totalAssets != 0 ? FixedPointMathLib.fullMulDiv(_deltaInDepositToken, DEGRADATION_COEFFICIENT, _totalAssets) : 0;
-		uint256 _totalFeesInDepositToken = FixedPointMathLib.fullMulDiv(totalFees, _profitTokenUnitInDeposit, _profitTokenUnit);
-		uint256 _totalFeesRatio = _totalAssets != 0 ? FixedPointMathLib.fullMulDiv(_totalFeesInDepositToken, DEGRADATION_COEFFICIENT, _totalAssets) : 0;
+		deltaProfitInDepositToken = FixedPointMathLib.fullMulDiv(deltaTotalAssets, _profitTokenUnitInDeposit, _profitTokenUnit);
+		deltaFeesInDepositToken = FixedPointMathLib.fullMulDiv(totalFees, _profitTokenUnitInDeposit, _profitTokenUnit);
+	}
+
+	/**
+	 * @notice Should update locked profit ratio based on delta profit and fees in deposit tokens
+	 * @notice Passes delta profit and delta fees in depositToken decimals
+	 */
+	function _updateLockedProfitRatio(uint256 deltaProfitInDepositToken, uint256 deltaFeesInDepositToken) private {
+		uint256 currentLockedProfitRatio = _calculateCurrentLockedProfitRatio();
+
+		// compensate deltaProfit for current locked profit ratio
+		uint256 _unlockedDeltaProfitInDepositToken = FixedPointMathLib.fullMulDiv(
+			deltaProfitInDepositToken,
+			DEGRADATION_COEFFICIENT - currentLockedProfitRatio,
+			DEGRADATION_COEFFICIENT
+		);
+		uint256 _totalAssets = VaultTokensLib.totalAssetsCached();
+		uint256 _deltaProfitRatio = _totalAssets != 0
+			? FixedPointMathLib.fullMulDivUp(_unlockedDeltaProfitInDepositToken, DEGRADATION_COEFFICIENT, _totalAssets)
+			: 0;
+		uint256 _deltaFeesRatio = _totalAssets != 0 ? FixedPointMathLib.fullMulDiv(deltaFeesInDepositToken, DEGRADATION_COEFFICIENT, _totalAssets) : 0;
+		uint256 _newLockedProfitRatio = (currentLockedProfitRatio + _deltaProfitRatio > _deltaFeesRatio)
+			? currentLockedProfitRatio + _deltaProfitRatio - _deltaFeesRatio
+			: 0;
+
+		// calculate the new locked profit ratio based on the total delta ratio from reporting one or more reserves
 		ManagerStorage storage _storage = managerStorage();
 		uint256 _remainingLockedProfitPeriod;
-		if (_currentLockedProfitRatio != 0) {
+		if (currentLockedProfitRatio != 0) {
 			uint256 _expectedLockedProfitPeriod = DEGRADATION_COEFFICIENT / (_storage.lockedProfitDegradationRate + _storage.extraLockedProfitDegradationRate);
 			uint256 _timePassed = (block.timestamp > _storage.lastLockedProfitDegradation) ? block.timestamp - _storage.lastLockedProfitDegradation : 0;
 			_remainingLockedProfitPeriod = (_expectedLockedProfitPeriod > _timePassed) ? _expectedLockedProfitPeriod - _timePassed : 0;
 		}
-		uint256 _newLockedProfitRatio = (_currentLockedProfitRatio + _deltaRatio > _totalFeesRatio)
-			? _currentLockedProfitRatio + _deltaRatio - _totalFeesRatio
-			: 0;
 		uint256 _newRemainingLockedProfitPeriod = DEGRADATION_COEFFICIENT / _storage.lockedProfitDegradationRate;
-		_storage.extraLockedProfitDegradationRate = FixedPointMathLib.fullMulDiv(
+		uint256 _newExtraLockedProfitDegradationRate = FixedPointMathLib.fullMulDiv(
 			_storage.lockedProfitDegradationRate,
 			_remainingLockedProfitPeriod,
 			_newRemainingLockedProfitPeriod
 		);
+
+		// update state
+		_storage.extraLockedProfitDegradationRate = _newExtraLockedProfitDegradationRate;
 		_storage.lastLockedProfitRatio = _newLockedProfitRatio;
 		_storage.lastLockedProfitDegradation = block.timestamp;
+	}
+
+	/**
+	 * @notice Reduces the locked profit ratio to avoid locking new deposits.
+	 * @param depositAmountWithoutFees The deposit amount
+	 */
+	function _reduceLockedProfitRatioForDeposit(uint256 depositAmountWithoutFees) private {
+		ManagerStorage storage _storage = managerStorage();
+		uint256 _lockedProfitRatioBeforeDeposit = _storage.lastLockedProfitRatio;
+		uint256 _totalAssets = VaultTokensLib.totalAssetsCached();
+		// depositAmountWithoutFees is already included in the total assets
+		uint256 _totalAssetsBeforeDeposit = _totalAssets - depositAmountWithoutFees;
+		uint256 _lockedAmount = FixedPointMathLib.fullMulDiv(_totalAssetsBeforeDeposit, _lockedProfitRatioBeforeDeposit, DEGRADATION_COEFFICIENT);
+		uint256 _newLockedProfitRatio = (_lockedAmount != 0 && _totalAssets != 0)
+			? FixedPointMathLib.fullMulDiv(DEGRADATION_COEFFICIENT, _lockedAmount, _totalAssets)
+			: 0;
+		_storage.lastLockedProfitRatio = _newLockedProfitRatio;
+	}
+
+	/**
+	 * @notice Increase the locked profit ratio to avoid unlocking too soon and changing the price per share.
+	 * @param withdrawalAmountIncludingFees The withdrawal amount
+	 */
+	function _increaseLockedProfitRatioForWithdraw(uint256 withdrawalAmountIncludingFees) private {
+		ManagerStorage storage _storage = managerStorage();
+		uint256 _lockedProfitRatioBeforeWithdrawal = _storage.lastLockedProfitRatio;
+		uint256 _totalAssetsAfterWithdrawal = VaultTokensLib.totalAssetsCached();
+		uint256 _totalAssetsBeforeWithdrawal = _totalAssetsAfterWithdrawal + withdrawalAmountIncludingFees;
+		uint256 _lockedAmount = FixedPointMathLib.fullMulDiv(_totalAssetsBeforeWithdrawal, _lockedProfitRatioBeforeWithdrawal, DEGRADATION_COEFFICIENT);
+		uint256 _newLockedProfitRatio = (_lockedAmount != 0 && _totalAssetsAfterWithdrawal != 0)
+			? FixedPointMathLib.fullMulDiv(DEGRADATION_COEFFICIENT, _lockedAmount, _totalAssetsAfterWithdrawal)
+			: 0;
+		if (_newLockedProfitRatio > DEGRADATION_COEFFICIENT) _newLockedProfitRatio = DEGRADATION_COEFFICIENT;
+		_storage.lastLockedProfitRatio = _newLockedProfitRatio;
 	}
 
 	/**
@@ -274,7 +327,9 @@ library VaultManagerLib {
 		strategyFees.vaultManagementFee = vaultManagementFee;
 		strategyFees.vaultPerformanceFee = vaultPerformanceFee;
 		strategyFees.totalFees = totalFees;
-		_updateLockedProfitRatio(want, _gain, totalFees, true);
+		// TODO: refactor to use new pattern
+		// _updateLockedProfitRatio(want, _gain, totalFees, true);
+
 		VaultStrategiesLib.registerGain(_strategy, _gain);
 		return strategyFees;
 	}
@@ -346,7 +401,9 @@ library VaultManagerLib {
 		}
 		if (loss != 0) _reportLoss(reporter, loss);
 		// make sure reportReserve runs before we increase/decrease tokenIdle or tokenDebt
-		ReserveFees memory reserveFees = _reportReserveAndCalculateFeesToMint(want); // updates locked profit ratio, calculates fees
+		// TODO: not refactored for locked profit ratio changes
+		(ReserveFees memory reserveFees, , ) = _reportReserveCalculateFeesToMintAndDeltaProfit(want); // updates locked profit ratio, calculates fees
+
 		// updates locked profit ratio, calculates, returns fees in want token
 		StrategyFees memory strategyFees = _registerStrategyFees(reporter, want, gain);
 		// convert from want to reference asset
@@ -411,7 +468,7 @@ library VaultManagerLib {
 		uint256 _lastLockedProfitRatio = _storage.lastLockedProfitRatio;
 		uint256 _timePassed = block.timestamp - _lastLockedProfitDegradation;
 		uint256 _lockedProfitRatioDegradation = _timePassed * (_storage.lockedProfitDegradationRate + _storage.extraLockedProfitDegradationRate);
-		uint256 _lockedProfitRatioDelta = FixedPointMathLib.fullMulDiv(_lastLockedProfitRatio, _lockedProfitRatioDegradation, DEGRADATION_COEFFICIENT);
+		uint256 _lockedProfitRatioDelta = FixedPointMathLib.fullMulDivUp(_lastLockedProfitRatio, _lockedProfitRatioDegradation, DEGRADATION_COEFFICIENT);
 		calculatedLockedProfitRatio = _lastLockedProfitRatio > _lockedProfitRatioDelta ? _lastLockedProfitRatio - _lockedProfitRatioDelta : 0;
 	}
 
@@ -518,14 +575,18 @@ library VaultManagerLib {
 	 * @notice Private function to report for a reserve token
 	 * @param tokenAddress The address of the reserve token to report
 	 * @return reserveFees The amounts of fees for token
+	 * @return reserveDeltaProfitInDepositToken The profit for given reserve token denominated in deposit tokens
+	 * @return reserveFeesInDepositToken The total fees for given reserve token denominated in deposit tokens
 	 */
-	function _reportReserveAndCalculateFeesToMint(address tokenAddress) private returns (ReserveFees memory reserveFees) {
+	function _reportReserveCalculateFeesToMintAndDeltaProfit(
+		address tokenAddress
+	) private returns (ReserveFees memory reserveFees, uint256 reserveDeltaProfitInDepositToken, uint256 reserveFeesInDepositToken) {
 		address vault = VaultGovernanceLib.vault();
 		VaultTokensLib.TokenStats memory stats = VaultTokensLib.stats(tokenAddress);
 		if (stats.lastReport == block.timestamp) {
 			// make sure we always update tokenIdle
 			VaultTokensLib.reportTokenIdle(tokenAddress, IERC20(tokenAddress).balanceOf(vault));
-			return (reserveFees);
+			return (reserveFees, 0, 0);
 		}
 		// 1. calc and report profit/loss
 		(uint256 reserveProfitInReferenceAsset, , uint256 reserveValue) = _reportProfitLoss(vault, tokenAddress, stats.lastReportedValue, stats.watermark);
@@ -547,10 +608,13 @@ library VaultManagerLib {
 		reserveFees.managementFee = managementFeeInReferenceAsset;
 		reserveFees.totalFees = totalFeesInReferenceAsset;
 		// 3. update locked profit with reference asset, since we pass profit and fees in reference asset token units, exclude profit since we updated token stats
-		_updateLockedProfitRatio(VaultTokensLib.referenceAsset(), reserveProfitInReferenceAsset, totalFeesInReferenceAsset, false);
+		(reserveDeltaProfitInDepositToken, reserveFeesInDepositToken) = calculateProfitAndFeesInDepositToken(
+			VaultTokensLib.referenceAsset(),
+			reserveProfitInReferenceAsset,
+			totalFeesInReferenceAsset
+		);
 		// 4. record report timestamp
 		VaultTokensLib.updateLastReport(tokenAddress, reserveValue);
-		return reserveFees;
 	}
 
 	/**
@@ -561,7 +625,12 @@ library VaultManagerLib {
 	function reportReserve(address tokenAddress) public returns (uint256 reward) {
 		VaultGovernanceLib.onlyManagementOrGovernance();
 		if (!(VaultTokensLib.tokenExists(tokenAddress))) revert DynaVaultErrors.InvalidToken();
-		ReserveFees memory reserveFees = _reportReserveAndCalculateFeesToMint(tokenAddress);
+		(
+			ReserveFees memory reserveFees,
+			uint256 reserveDeltaProfitInDepositToken,
+			uint256 reserveFeesInDepositToken
+		) = _reportReserveCalculateFeesToMintAndDeltaProfit(tokenAddress);
+		_updateLockedProfitRatio(reserveDeltaProfitInDepositToken, reserveFeesInDepositToken);
 		if (reserveFees.totalFees != 0) reward = _issueReserveTokenFees(VaultGovernanceLib.vault(), reserveFees);
 	}
 
@@ -573,12 +642,23 @@ library VaultManagerLib {
 	function reportReserves(address[] memory tokens) external returns (uint256 reward) {
 		VaultGovernanceLib.onlyManagementOrGovernance();
 		ReserveFees memory totalReserveFees;
+		uint256 totalDeltaProfitInDepositToken;
+		uint256 totalFeesInDepositToken;
 		for (uint256 i = 0; i < tokens.length; ++i) {
 			if (!(VaultTokensLib.tokenExists(tokens[i]))) revert DynaVaultErrors.InvalidToken();
-			ReserveFees memory reserveFees = _reportReserveAndCalculateFeesToMint(tokens[i]);
+			(
+				ReserveFees memory reserveFees,
+				uint256 reserveDeltaProfitInDepositToken,
+				uint256 reserveFeesInDepositToken
+			) = _reportReserveCalculateFeesToMintAndDeltaProfit(tokens[i]);
+			totalDeltaProfitInDepositToken += reserveDeltaProfitInDepositToken;
+			totalFeesInDepositToken += reserveFeesInDepositToken;
 			totalReserveFees.managementFee += reserveFees.managementFee;
 			totalReserveFees.totalFees += reserveFees.totalFees;
 		}
+		// apply totalDeltaLockedProfitRatio
+		_updateLockedProfitRatio(totalDeltaProfitInDepositToken, totalFeesInDepositToken);
+
 		address vault = VaultGovernanceLib.vault();
 		if (totalReserveFees.totalFees != 0) reward = _issueReserveTokenFees(vault, totalReserveFees);
 	}
@@ -590,23 +670,43 @@ library VaultManagerLib {
 	 */
 	function reportReserveFromVault(address tokenAddress) external returns (uint256 reward) {
 		VaultGovernanceLib.onlyVault();
-		ReserveFees memory reserveFees = _reportReserveAndCalculateFeesToMint(tokenAddress);
-		if (reserveFees.totalFees != 0) {
-			reward = _issueReserveTokenFees(msg.sender, reserveFees); //  assuming vault is caller
-		}
+		(
+			ReserveFees memory reserveFees,
+			uint256 reserveDeltaProfitInDepositToken,
+			uint256 reserveFeesInDepositToken
+		) = _reportReserveCalculateFeesToMintAndDeltaProfit(tokenAddress);
+		_updateLockedProfitRatio(reserveDeltaProfitInDepositToken, reserveFeesInDepositToken);
+
+		if (reserveFees.totalFees != 0) reward = _issueReserveTokenFees(msg.sender, reserveFees); //  assuming vault is caller
 	}
 
+	/**
+	 * @notice Report all reserve tokens called by vault
+	 * @return reportedFreeFunds The amount of free funds after reporting
+	 */
 	function reportAllReservesFromVault() external returns (uint256 reportedFreeFunds) {
 		VaultGovernanceLib.onlyVault();
 		address[] memory tokens = VaultTokensLib.allTokens();
 		uint256 nrOfTokens = tokens.length;
 		ReserveFees memory totalReserveFees;
 		VaultTokensLib.enablePriceCache();
+		uint256 totalDeltaProfitInDepositToken;
+		uint256 totalFeesInDepositToken;
+
 		for (uint256 i = 0; i < nrOfTokens; ++i) {
-			ReserveFees memory reserveFees = _reportReserveAndCalculateFeesToMint(tokens[i]);
+			(
+				ReserveFees memory reserveFees,
+				uint256 reserveDeltaProfitInDepositToken,
+				uint256 reserveFeesInDepositToken
+			) = _reportReserveCalculateFeesToMintAndDeltaProfit(tokens[i]);
+			totalDeltaProfitInDepositToken += reserveDeltaProfitInDepositToken;
+			totalFeesInDepositToken += reserveFeesInDepositToken;
 			totalReserveFees.managementFee += reserveFees.managementFee;
 			totalReserveFees.totalFees += reserveFees.totalFees;
 		}
+		// apply totalDeltaLockedProfitRatio
+		_updateLockedProfitRatio(totalDeltaProfitInDepositToken, totalFeesInDepositToken);
+
 		address vault = VaultGovernanceLib.vault();
 		if (totalReserveFees.totalFees != 0) {
 			_issueReserveTokenFees(vault, totalReserveFees);
@@ -620,25 +720,28 @@ library VaultManagerLib {
 
 	/**
 	 * @notice Deposit an amount of deposit token into the vault
-	 * @param depositAmount The amount of tokens to deposit
+	 * @param depositAmountIncludingFees The amount of tokens to deposit
 	 * @param feeAmount The amount of fees
 	 */
-	function depositDepositToken(uint256 depositAmount, uint256 feeAmount) external {
+	function depositDepositToken(uint256 depositAmountIncludingFees, uint256 feeAmount) external {
 		VaultGovernanceLib.onlyVault();
 		address depositToken = VaultTokensLib.token();
-		_reportReserveAndCalculateFeesToMint(depositToken);
-		VaultTokensLib.increaseDepositDebt(depositAmount, feeAmount);
+		VaultTokensLib.reportTokenIdle(depositToken, IERC20(depositToken).balanceOf(VaultGovernanceLib.vault()));
+		VaultTokensLib.increaseDepositDebt(depositAmountIncludingFees, feeAmount);
+		_reduceLockedProfitRatioForDeposit(depositAmountIncludingFees - feeAmount);
 	}
 
 	/**
 	 * @notice Withdraw deposit token from vault
-	 * @param withdrawAmount The amount of tokens to withdraw
+	 * @param withdrawAmountIncludingFees The amount of tokens to withdraw
 	 */
-	function withdrawDepositToken(uint256 withdrawAmount) external {
+	function withdrawDepositToken(uint256 withdrawAmountIncludingFees) external {
 		VaultGovernanceLib.onlyVault();
-		_reportReserveAndCalculateFeesToMint(VaultTokensLib.token());
-		VaultTokensLib.decreaseTokenIdle(VaultTokensLib.token(), withdrawAmount);
-		VaultTokensLib.decreaseDepositDebt(withdrawAmount);
+		address depositToken = VaultTokensLib.token();
+		VaultTokensLib.reportTokenIdle(depositToken, IERC20(depositToken).balanceOf(VaultGovernanceLib.vault()));
+		VaultTokensLib.decreaseTokenIdle(depositToken, withdrawAmountIncludingFees);
+		VaultTokensLib.decreaseDepositDebt(withdrawAmountIncludingFees);
+		_increaseLockedProfitRatioForWithdraw(withdrawAmountIncludingFees);
 	}
 
 	/**

@@ -1,7 +1,15 @@
 {
   "component": "RWADynamicOracle",
   "main_contract": "RWADynamicOracle",
+  "source_entry_count": 12,
   "source_file_count": 12,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RWADynamicOracle\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -14,7 +22,9 @@
       "address": "0xa0219aa5b31e65bc920b5b6dfb8edf0988121de0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401999"
     }
   ]
 }

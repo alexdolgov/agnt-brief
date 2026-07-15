@@ -1,18 +1,28 @@
 {
   "component": "AerodromeDestinationVault",
   "main_contract": "AerodromeDestinationVault",
-  "source_file_count": 82,
-  "deployment_count": 4,
+  "source_entry_count": 75,
+  "source_file_count": 75,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AerodromeDestinationVault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x20bace8353c3512ebf13b86d9c99b6da278a8107",
+      "address": "0x58c2233399b85b53c5506f78eaaae9b0dba1ed3e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391688"
     },
     {
       "chain": "base",
@@ -20,7 +30,9 @@
       "address": "0x945a4f719018edba445ca67bda43663c815835ad",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391696"
     },
     {
       "chain": "base",
@@ -28,7 +40,9 @@
       "address": "0xa94031ed4b316b043464fdd5482877f42a39845a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391704"
     },
     {
       "chain": "base",
@@ -36,7 +50,19 @@
       "address": "0xd18db4dd6af6a7536ad7f863c136463681e0cdad",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391733"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdbd14969b9313e5bfdfed2c7a29e813e6f02c627",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391737"
     }
   ]
 }

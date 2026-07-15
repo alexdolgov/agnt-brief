@@ -1,72 +1,94 @@
 # Agentic Audit Brief: Bass Exchange
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Bass Exchange (`bass-exchange`)
-- Lifecycle: active (Tier 0, 73.2% below peak)
-- Generated: 2026-07-03T21:05:33.388Z
-- Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
-- Chains: base
-- Contract surface: 10 unique implementations (17 raw deployments)
+- Website: [https://bass.exchange/](https://bass.exchange/)
+- Lifecycle: unknown
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $248,448.20
-- On-chain TVL (included contracts): $49,223.00
-- TVL by chain: Base $49,223.00
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Dexs. Structurally: 16 project-authored contract(s) across 1 chain(s); 4 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for Bass Exchange in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 8 functional families. Its contracts share 4 common project-authored base contract(s) (proxy, erc1967upgrade, pausableassets). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 34; live-surface contracts included: 16 (10 live, 6 unknown).
-- Excluded by liveness: 18 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 1/4 (25.0%)
-- Deployed-live implementations: 4 of 10 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 1/4
-- Verified + Unaudited implementations: 3
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 6
-- Unique implementations: 10
-- Raw deployments: 17
+- Unverified implementations: 0
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): $49,223.00
+- Scoreable audits (matched contracts): 0
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-09 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 25.0% | 2023-09 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Asset | unknown | base | n/a | 5 deployments: base [`0x127fce...e49dec`](./contracts/base-8453/0x127fce29004451beb4e62869adac635353e49dec/); base `0x1dd576...3bec6d`; base `0x38c9d8...a7d731`; base `0x57d00d...968c39`; base `0x65c252...45d8a9` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Token | token | base | n/a | [`0x1f23b7...aebad8`](./contracts/base-8453/0x1f23b787053802108fed5b67cf703f0778aebad8/) | ⚠️ Unaudited |
-| SkimmableAsset | unknown | base | n/a | 2 deployments: base [`0x2bcaa7...ec0a6a`](./contracts/base-8453/0x2bcaa79ab66af39a1d1d83749407845394ec0a6a/); base `0x2f4588...6ebff2` | ⚠️ Unaudited |
-| StakedDistributor | operational_periphery | base | n/a | 3 deployments: base [`0x62087a...5880c5`](./contracts/base-8453/0x62087a1ea1fab540e3da3c5ddd0c8721035880c5/); base `0xa5895b...344333`; base `0xb6d740...7f2832` | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -80,51 +102,74 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x0a6156...e48fb4` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x37917e...383eda` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x515829...521ba0` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x66a55a...8a82e0` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x6ba897...2ecaf2` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xb11f5e...8f9a9c` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Bass Exchange.pdf](https://github.com/EtherAuthority/Audit/blob/main/Bass%20Exchange.pdf) | unknown | Audit | 2023-09 | stale | Direct | contract_name | 1 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Bass Exchange.pdf](https://github.com/EtherAuthority/Audit/blob/main/Bass%20Exchange.pdf) | unknown | Audit | 2023-09 | stale | Direct | n/a | no match | 0 | 0 | 0 | 15 | n/a |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [12741] Bass Exchange.pdf — no match: No reason recorded
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Bass Exchange.pdf | ABnbcAsset | unmatched — not counted | — | — | no |
+| Bass Exchange.pdf | Asset | unmatched — not counted | — | — | no |
+| Bass Exchange.pdf | BnbxAsset | unmatched — not counted | — | — | no |
+| Bass Exchange.pdf | CoreV2 | unmatched — not counted | — | — | no |
+| Bass Exchange.pdf | DynamicAsset | unmatched — not counted | — | — | no |
+| Bass Exchange.pdf | DynamicPool | unmatched — not counted | — | — | no |
+| Bass Exchange.pdf | DynamicPoolV2 | unmatched — not counted | — | — | no |
+| Bass Exchange.pdf | HighCovRatioFeePool | unmatched — not counted | — | — | no |
+| Bass Exchange.pdf | HighCovRatioFeePoolV2 | unmatched — not counted | — | — | no |
+| Bass Exchange.pdf | MasterWombatV4 | unmatched — not counted | — | — | no |
+| Bass Exchange.pdf | MultiRewarderPerSec | unmatched — not counted | — | — | no |
+| Bass Exchange.pdf | PausableAssets | unmatched — not counted | — | — | no |
+| Bass Exchange.pdf | Pool | unmatched — not counted | — | — | no |
+| Bass Exchange.pdf | PoolV2 | unmatched — not counted | — | — | no |
+| Bass Exchange.pdf | StkbnbAsset | unmatched — not counted | — | — | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| base | [`0x1f23b7...aebad8`](./contracts/base-8453/0x1f23b787053802108fed5b67cf703f0778aebad8/) | Token | token | $49,223.00 | Verified native implementation with $49,223.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x2bcaa7...ec0a6a`](./contracts/base-8453/0x2bcaa79ab66af39a1d1d83749407845394ec0a6a/) | SkimmableAsset | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x62087a...5880c5`](./contracts/base-8453/0x62087a1ea1fab540e3da3c5ddd0c8721035880c5/) | StakedDistributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 6 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 15 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
-- Match method counts: contract_name=1
+- Match method counts: n/a
+
+Zero-match audit list:
+
+- [12741] Bass Exchange.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

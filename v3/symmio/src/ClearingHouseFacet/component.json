@@ -1,8 +1,16 @@
 {
   "component": "ClearingHouseFacet",
   "main_contract": "ClearingHouseFacet",
+  "source_entry_count": 38,
   "source_file_count": 38,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ClearingHouseFacet\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x77e7067c23d992e5d76e571d543626167bd876b6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xcccd87a82cd40d72d864ca0131376511084a37ab",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400032"
     }
   ]
 }

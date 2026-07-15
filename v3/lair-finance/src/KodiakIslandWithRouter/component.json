@@ -1,7 +1,15 @@
 {
   "component": "KodiakIslandWithRouter",
   "main_contract": "KodiakIslandWithRouter",
+  "source_entry_count": 23,
   "source_file_count": 23,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/KodiakIslandWithRouter\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x9f6cf7acb2f16f7d906eeecb0a6020a5cf91a41d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

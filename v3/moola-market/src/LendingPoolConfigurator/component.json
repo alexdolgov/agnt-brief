@@ -1,10 +1,19 @@
 {
   "component": "LendingPoolConfigurator",
   "main_contract": "LendingPoolConfigurator",
+  "source_entry_count": 22,
   "source_file_count": 22,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LendingPoolConfigurator\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
+    "https://drive.google.com/file/d/1qd1h0dujnp4Xxrl68ZTIMzbt4aXzMWY7/view",
     "https://www.openzeppelin.com/news/aave-protocol-audit"
   ],
   "addresses": [
@@ -14,7 +23,9 @@
       "address": "0x2cca742585b39e0538f7cc01ab8ffa005f1b1f1c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396884"
     }
   ]
 }

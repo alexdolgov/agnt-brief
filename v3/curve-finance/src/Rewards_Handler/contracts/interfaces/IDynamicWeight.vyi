@@ -1,7 +1,0 @@
-@view
-@external
-def weight() -> uint256:
-    ...
-
-
-# eip165 hash of this inteface is: 0xA1AAB33F

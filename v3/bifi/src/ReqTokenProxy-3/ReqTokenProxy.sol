@@ -861,7 +861,7 @@ contract ReqTokenProxy is RequestProxyErrors {
 // SPDX-License-Identifier: BSD-3-Clause
 pragma solidity 0.6.12;
 
-contract UsdtHandlerProxy is ReqTokenProxy {
+contract UsdcHandlerProxy is ReqTokenProxy {
     constructor()
     ReqTokenProxy() public {}
 }

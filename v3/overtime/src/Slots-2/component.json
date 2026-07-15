@@ -1,26 +1,48 @@
 {
   "component": "Slots-2",
   "main_contract": "Slots",
+  "source_entry_count": 21,
   "source_file_count": 21,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Slots-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x2e2ee482ba79df1cf23a9cfdb88b66adb602a14a",
+      "address": "0x62188ab6808ffbf6a24350db67ef6583748072d2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xea5e86c5b2f9e551f43c722498993dd73ce82ed8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x29e1b234911c07480441befd2d387798f8d37869",
+      "address": "0xfa904de83517dc3315bc64f08226232880a37cfb",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

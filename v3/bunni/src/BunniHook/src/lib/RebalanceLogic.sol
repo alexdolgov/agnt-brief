@@ -12,7 +12,6 @@ import "flood-contracts/src/interfaces/IOnChainOrders.sol";
 import {IEIP712} from "permit2/src/interfaces/IEIP712.sol";
 
 import {ERC20} from "solady/tokens/ERC20.sol";
-import {SafeTransferLib} from "solady/utils/SafeTransferLib.sol";
 import {FixedPointMathLib} from "solady/utils/FixedPointMathLib.sol";
 
 import "./VaultMath.sol";
@@ -22,12 +21,12 @@ import "../base/SharedStructs.sol";
 import {Oracle} from "./Oracle.sol";
 import {queryLDF} from "./QueryLDF.sol";
 import {FullMathX96} from "./FullMathX96.sol";
+import {BlockNumberLib} from "./BlockNumberLib.sol";
 import {BunniHookLogic} from "./BunniHookLogic.sol";
 import {OrderHashMemory} from "./OrderHashMemory.sol";
 
 library RebalanceLogic {
     using FullMathX96 for *;
-    using SafeTransferLib for *;
     using FixedPointMathLib for *;
     using IdleBalanceLibrary for *;
     using Oracle for Oracle.Observation[MAX_CARDINALITY];
@@ -201,14 +200,14 @@ library RebalanceLogic {
         IFloodPlain.Hook[] memory preHooks = new IFloodPlain.Hook[](1);
         preHooks[0] = IFloodPlain.Hook({
             target: address(this),
-            data: abi.encodeCall(IBunniHook.rebalanceOrderPreHook, (hookArgs))
+            data: abi.encodeCall(IBunniHook.rebalanceOrderHook, (true, hookArgs))
         });
 
         // posthook should push output tokens from BunniHook to BunniHub and update pool balances
         IFloodPlain.Hook[] memory postHooks = new IFloodPlain.Hook[](1);
         postHooks[0] = IFloodPlain.Hook({
             target: address(this),
-            data: abi.encodeCall(IBunniHook.rebalanceOrderPostHook, (hookArgs))
+            data: abi.encodeCall(IBunniHook.rebalanceOrderHook, (false, hookArgs))
         });
 
         IFloodPlain.Order memory order = IFloodPlain.Order({
@@ -218,7 +217,7 @@ library RebalanceLogic {
             offer: offer,
             consideration: consideration,
             deadline: block.timestamp + rebalanceOrderTTL,
-            nonce: uint256(keccak256(abi.encode(block.number, id))), // combine block.number and pool id to avoid nonce collisions between pools
+            nonce: uint256(keccak256(abi.encode(BlockNumberLib.getBlockNumber(), id))), // combine block number and pool id to avoid nonce collisions between pools
             preHooks: preHooks,
             postHooks: postHooks
         });
@@ -226,11 +225,6 @@ library RebalanceLogic {
         // record order for verification later
         (s.rebalanceOrderHash[id], s.rebalanceOrderPermit2Hash[id]) = _hashFloodOrder(order, env);
         s.rebalanceOrderDeadline[id] = order.deadline;
-
-        // approve input token to permit2
-        if (inputERC20Token.allowance(address(this), env.permit2) < inputAmount) {
-            address(inputERC20Token).safeApproveWithRetry(env.permit2, type(uint256).max);
-        }
 
         // etch order so fillers can pick it up
         // use PoolId as signature to enable isValidSignature() to find the correct order hash

@@ -1,7 +1,10 @@
+/**
+ *Submitted for verification at moonbeam.moonscan.io on 2022-02-23
+*/
+
 // File: @openzeppelin/contracts/token/ERC20/IERC20.sol
 
 
-// OpenZeppelin Contracts (last updated v4.6.0) (token/ERC20/IERC20.sol)
 
 pragma solidity ^0.8.0;
 
@@ -9,20 +12,6 @@ pragma solidity ^0.8.0;
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
 interface IERC20 {
-    /**
-     * @dev Emitted when `value` tokens are moved from one account (`from`) to
-     * another (`to`).
-     *
-     * Note that `value` may be zero.
-     */
-    event Transfer(address indexed from, address indexed to, uint256 value);
-
-    /**
-     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
-     * a call to {approve}. `value` is the new allowance.
-     */
-    event Approval(address indexed owner, address indexed spender, uint256 value);
-
     /**
      * @dev Returns the amount of tokens in existence.
      */
@@ -34,13 +23,13 @@ interface IERC20 {
     function balanceOf(address account) external view returns (uint256);
 
     /**
-     * @dev Moves `amount` tokens from the caller's account to `to`.
+     * @dev Moves `amount` tokens from the caller's account to `recipient`.
      *
      * Returns a boolean value indicating whether the operation succeeded.
      *
      * Emits a {Transfer} event.
      */
-    function transfer(address to, uint256 amount) external returns (bool);
+    function transfer(address recipient, uint256 amount) external returns (bool);
 
     /**
      * @dev Returns the remaining number of tokens that `spender` will be
@@ -68,7 +57,7 @@ interface IERC20 {
     function approve(address spender, uint256 amount) external returns (bool);
 
     /**
-     * @dev Moves `amount` tokens from `from` to `to` using the
+     * @dev Moves `amount` tokens from `sender` to `recipient` using the
      * allowance mechanism. `amount` is then deducted from the caller's
      * allowance.
      *
@@ -77,10 +66,24 @@ interface IERC20 {
      * Emits a {Transfer} event.
      */
     function transferFrom(
-        address from,
-        address to,
+        address sender,
+        address recipient,
         uint256 amount
     ) external returns (bool);
+
+    /**
+     * @dev Emitted when `value` tokens are moved from one account (`from`) to
+     * another (`to`).
+     *
+     * Note that `value` may be zero.
+     */
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    /**
+     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
+     * a call to {approve}. `value` is the new allowance.
+     */
+    event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
 // File: contracts/libraries/AdminUpgradeable.sol
@@ -209,11 +212,10 @@ interface IPair {
 
     function token1() external view returns (address);
 
-    function getReserves() external view returns (uint112 reserve0, uint112 reserve1, uint32 blockTimestampLast);
-
-    function price0CumulativeLast() external view returns (uint256);
-    function price1CumulativeLast() external view returns (uint256);
-    function kLast() external view returns (uint256);
+    function getReserves()
+        external
+        view
+        returns (uint112 reserve0, uint112 reserve1);
 
     function mint(address to) external returns (uint256 liquidity);
 
@@ -221,10 +223,11 @@ interface IPair {
         external
         returns (uint256 amount0, uint256 amount1);
 
-    function swap(uint256 amount0Out, uint256 amount1Out, address to, bytes calldata data) external;
-
-    function skim(address to) external;
-    function sync() external;
+    function swap(
+        uint256 amount0Out,
+        uint256 amount1Out,
+        address to
+    ) external;
 
     function initialize(address, address) external;
 }
@@ -317,7 +320,7 @@ library Helper {
         address tokenB
     ) internal view returns (uint256 reserveA, uint256 reserveB) {
         (address token0, ) = sortTokens(tokenA, tokenB);
-        (uint256 reserve0, uint256 reserve1, ) = IPair(
+        (uint256 reserve0, uint256 reserve1) = IPair(
             pairFor(factory, tokenA, tokenB)
         ).getReserves();
         (reserveA, reserveB) = tokenA == token0
@@ -477,7 +480,6 @@ contract Farming is AdminUpgradeable {
     mapping(uint256 => mapping(address => UserInfo)) private userInfo;
 
     event PoolAdded(address indexed farmingToken);
-    event ClaimableBlockUpdated(uint256 indexed pid, uint256 interval);
     event Charged(uint256 indexed pid, address[] rewards, uint256[] amounts);
     event WithdrawRewards(uint256 indexed pid, address[] rewards, uint256[] amounts);
     event Stake(address indexed user, uint256 indexed pid, uint256 amount);
@@ -544,15 +546,6 @@ contract Farming is AdminUpgradeable {
         PoolInfo storage pool = poolInfo[_pid];
         require(_rewardPerBlock.length == pool.rewardPerBlock.length, 'INVALID_REWARDS');
         pool.rewardPerBlock = _rewardPerBlock;
-    }
-
-    function setClaimableBlock(
-        uint256 _pid,
-        uint256 _interval
-    ) external onlyAdmin {
-        PoolInfo storage pool = poolInfo[_pid];
-        pool.claimableInterval = _interval;
-        emit ClaimableBlockUpdated(_pid, _interval);
     }
 
     // Charge the given pool's rewards. Can only be called by the admin.
@@ -684,7 +677,7 @@ contract Farming is AdminUpgradeable {
         returns(uint256 periods) 
     {
         PoolInfo memory pool = poolInfo[_pid];
-        if (block.number <= pool.startBlock || pool.claimableInterval == 0) return 0;
+        if (block.number <= pool.startBlock) return 0;
         uint256 blocksSinceStart = block.number.sub(pool.startBlock);
         periods = (blocksSinceStart / pool.claimableInterval).add(1);
         if (blocksSinceStart % pool.claimableInterval == 0) {
@@ -812,13 +805,12 @@ contract Farming is AdminUpgradeable {
     function emergencyWithdraw(uint256 _pid) external {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];
-        uint256 amount = user.amount;
-        pool.amount = pool.amount.sub(amount);
+        Helper.safeTransfer(pool.farmingToken, msg.sender, user.amount);
+        emit EmergencyWithdraw(msg.sender, _pid, user.amount);
+        pool.amount = pool.amount.sub(user.amount);
         user.amount = 0;
         user.pending = new uint256[](pool.accRewardPerShare.length);
         user.rewardDebt = new uint256[](pool.accRewardPerShare.length);
         user.nextClaimableBlock = 0;
-        Helper.safeTransfer(pool.farmingToken, msg.sender, amount);
-        emit EmergencyWithdraw(msg.sender, _pid, amount);
     }
 }

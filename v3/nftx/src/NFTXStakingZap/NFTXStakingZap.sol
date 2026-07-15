@@ -1,4 +1,4 @@
-// Sources flattened with hardhat v2.4.3 https://hardhat.org
+// Sources flattened with hardhat v2.8.2 https://hardhat.org
 
 // File contracts/solidity/interface/INFTXEligibility.sol
 
@@ -31,6 +31,87 @@ interface INFTXEligibility {
     function afterMintHook(uint256[] calldata tokenIds) external;
     function beforeRedeemHook(uint256[] calldata tokenIds) external;
     function afterRedeemHook(uint256[] calldata tokenIds) external;
+}
+
+
+// File contracts/solidity/token/IERC20Upgradeable.sol
+
+
+
+pragma solidity ^0.8.0;
+
+/**
+ * @dev Interface of the ERC20 standard as defined in the EIP.
+ */
+interface IERC20Upgradeable {
+    /**
+     * @dev Returns the amount of tokens in existence.
+     */
+    function totalSupply() external view returns (uint256);
+
+    /**
+     * @dev Returns the amount of tokens owned by `account`.
+     */
+    function balanceOf(address account) external view returns (uint256);
+
+    /**
+     * @dev Moves `amount` tokens from the caller's account to `recipient`.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transfer(address recipient, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Returns the remaining number of tokens that `spender` will be
+     * allowed to spend on behalf of `owner` through {transferFrom}. This is
+     * zero by default.
+     *
+     * This value changes when {approve} or {transferFrom} are called.
+     */
+    function allowance(address owner, address spender) external view returns (uint256);
+
+    /**
+     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * IMPORTANT: Beware that changing an allowance with this method brings the risk
+     * that someone may use both the old and the new allowance by unfortunate
+     * transaction ordering. One possible solution to mitigate this race
+     * condition is to first reduce the spender's allowance to 0 and set the
+     * desired value afterwards:
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     *
+     * Emits an {Approval} event.
+     */
+    function approve(address spender, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Moves `amount` tokens from `sender` to `recipient` using the
+     * allowance mechanism. `amount` is then deducted from the caller's
+     * allowance.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Emitted when `value` tokens are moved from one account (`from`) to
+     * another (`to`).
+     *
+     * Note that `value` may be zero.
+     */
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    /**
+     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
+     * a call to {approve}. `value` is the new allowance.
+     */
+    event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
 
@@ -67,15 +148,25 @@ interface INFTXVaultFactory is IBeacon {
   function feeDistributor() external view returns (address);
   function eligibilityManager() external view returns (address);
   function vault(uint256 vaultId) external view returns (address);
+  function allVaults() external view returns (address[] memory);
   function vaultsForAsset(address asset) external view returns (address[] memory);
   function isLocked(uint256 id) external view returns (bool);
   function excludedFromFees(address addr) external view returns (bool);
+  function factoryMintFee() external view returns (uint64);
+  function factoryRandomRedeemFee() external view returns (uint64);
+  function factoryTargetRedeemFee() external view returns (uint64);
+  function factoryRandomSwapFee() external view returns (uint64);
+  function factoryTargetSwapFee() external view returns (uint64);
+  function vaultFees(uint256 vaultId) external view returns (uint256, uint256, uint256, uint256, uint256);
 
   event NewFeeDistributor(address oldDistributor, address newDistributor);
   event NewZapContract(address oldZap, address newZap);
   event FeeExclusion(address feeExcluded, bool excluded);
   event NewEligibilityManager(address oldEligManager, address newEligManager);
   event NewVault(uint256 indexed vaultId, address vaultAddress, address assetAddress);
+  event UpdateVaultFees(uint256 vaultId, uint256 mintFee, uint256 randomRedeemFee, uint256 targetRedeemFee, uint256 randomSwapFee, uint256 targetSwapFee);
+  event DisableVaultFees(uint256 vaultId);
+  event UpdateFactoryFees(uint256 mintFee, uint256 randomRedeemFee, uint256 targetRedeemFee, uint256 randomSwapFee, uint256 targetSwapFee);
 
   // Write functions.
   function __NFTXVaultFactory_init(address _vaultImpl, address _feeDistributor) external;
@@ -90,6 +181,23 @@ interface INFTXVaultFactory is IBeacon {
   function setEligibilityManager(address _eligibilityManager) external;
   function setZapContract(address _zapContract) external;
   function setFeeExclusion(address _excludedAddr, bool excluded) external;
+
+  function setFactoryFees(
+    uint256 mintFee, 
+    uint256 randomRedeemFee, 
+    uint256 targetRedeemFee,
+    uint256 randomSwapFee, 
+    uint256 targetSwapFee
+  ) external; 
+  function setVaultFees(
+      uint256 vaultId, 
+      uint256 mintFee, 
+      uint256 randomRedeemFee, 
+      uint256 targetRedeemFee,
+      uint256 randomSwapFee, 
+      uint256 targetSwapFee
+  ) external;
+  function disableVaultFees(uint256 vaultId) external;
 }
 
 
@@ -100,25 +208,31 @@ interface INFTXVaultFactory is IBeacon {
 pragma solidity ^0.8.0;
 
 
-interface INFTXVault {
-    function manager() external returns (address);
-    function assetAddress() external returns (address);
-    function vaultFactory() external returns (INFTXVaultFactory);
-    function eligibilityStorage() external returns (INFTXEligibility);
 
-    function is1155() external returns (bool);
-    function allowAllItems() external returns (bool);
-    function enableMint() external returns (bool);
-    function enableRandomRedeem() external returns (bool);
-    function enableTargetRedeem() external returns (bool);
+interface INFTXVault is IERC20Upgradeable {
+    function manager() external view returns (address);
+    function assetAddress() external view returns (address);
+    function vaultFactory() external view returns (INFTXVaultFactory);
+    function eligibilityStorage() external view returns (INFTXEligibility);
 
-    function vaultId() external returns (uint256);
+    function is1155() external view returns (bool);
+    function allowAllItems() external view returns (bool);
+    function enableMint() external view returns (bool);
+    function enableRandomRedeem() external view returns (bool);
+    function enableTargetRedeem() external view returns (bool);
+    function enableRandomSwap() external view returns (bool);
+    function enableTargetSwap() external view returns (bool);
+
+    function vaultId() external view returns (uint256);
     function nftIdAt(uint256 holdingsIndex) external view returns (uint256);
     function allHoldings() external view returns (uint256[] memory);
     function totalHoldings() external view returns (uint256);
-    function mintFee() external returns (uint256);
-    function randomRedeemFee() external returns (uint256);
-    function targetRedeemFee() external returns (uint256);
+    function mintFee() external view returns (uint256);
+    function randomRedeemFee() external view returns (uint256);
+    function targetRedeemFee() external view returns (uint256);
+    function randomSwapFee() external view returns (uint256);
+    function targetSwapFee() external view returns (uint256);
+    function vaultFees() external view returns (uint256, uint256, uint256, uint256, uint256);
 
     event VaultInit(
         uint256 indexed vaultId,
@@ -134,10 +248,8 @@ interface INFTXVault {
     event EnableMintUpdated(bool enabled);
     event EnableRandomRedeemUpdated(bool enabled);
     event EnableTargetRedeemUpdated(bool enabled);
-
-    event MintFeeUpdated(uint256 mintFee);
-    event RandomRedeemFeeUpdated(uint256 randomRedeemFee);
-    event TargetRedeemFeeUpdated(uint256 targetRedeemFee);
+    event EnableRandomSwapUpdated(bool enabled);
+    event EnableTargetSwapUpdated(bool enabled);
 
     event Minted(uint256[] nftIds, uint256[] amounts, address to);
     event Redeemed(uint256[] nftIds, uint256[] specificIds, address to);
@@ -167,14 +279,19 @@ interface INFTXVault {
     function setVaultFeatures(
         bool _enableMint,
         bool _enableRandomRedeem,
-        bool _enableTargetRedeem
+        bool _enableTargetRedeem,
+        bool _enableRandomSwap,
+        bool _enableTargetSwap
     ) external;
 
     function setFees(
         uint256 _mintFee,
         uint256 _randomRedeemFee,
-        uint256 _targetRedeemFee
+        uint256 _targetRedeemFee,
+        uint256 _randomSwapFee,
+        uint256 _targetSwapFee
     ) external;
+    function disableVaultFees() external;
 
     // This function allows for an easy setup of any eligibility module contract from the EligibilityManager.
     // It takes in ABI encoded parameters for the desired module. This is to make sure they can all follow
@@ -228,6 +345,45 @@ interface INFTXVault {
 }
 
 
+// File contracts/solidity/interface/INFTXSimpleFeeDistributor.sol
+
+
+
+pragma solidity ^0.8.0;
+
+interface INFTXSimpleFeeDistributor {
+  
+  struct FeeReceiver {
+    uint256 allocPoint;
+    address receiver;
+    bool isContract;
+  }
+
+  function nftxVaultFactory() external view returns (address);
+  function lpStaking() external view returns (address);
+  function inventoryStaking() external view returns (address);
+  function treasury() external view returns (address);
+  function allocTotal() external view returns (uint256);
+
+  // Write functions.
+  function __SimpleFeeDistributor__init__(address _lpStaking, address _treasury) external;
+  function rescueTokens(address token) external;
+  function distribute(uint256 vaultId) external;
+  function addReceiver(uint256 _allocPoint, address _receiver, bool _isContract) external;
+  function initializeVaultReceivers(uint256 _vaultId) external;
+
+  function changeReceiverAlloc(uint256 _idx, uint256 _allocPoint) external;
+  function changeReceiverAddress(uint256 _idx, address _address, bool _isContract) external;
+  function removeReceiver(uint256 _receiverIdx) external;
+
+  // Configuration functions.
+  function setTreasuryAddress(address _treasury) external;
+  function setLPStakingAddress(address _lpStaking) external;
+  function setInventoryStakingAddress(address _inventoryStaking) external;
+  function setNFTXVaultFactory(address _factory) external;
+}
+
+
 // File contracts/solidity/interface/INFTXLPStaking.sol
 
 
@@ -241,7 +397,10 @@ interface INFTXLPStaking {
     function vaultToken(address _stakingToken) external view returns (address);
     function stakingToken(address _vaultToken) external view returns (address);
     function rewardDistributionToken(uint256 vaultId) external view returns (address);
-    function rewardDistributionTokenAddr(address stakingToken, address rewardToken) external view returns (address);
+    function newRewardDistributionToken(uint256 vaultId) external view returns (address);
+    function oldRewardDistributionToken(uint256 vaultId) external view returns (address);
+    function unusedRewardDistributionToken(uint256 vaultId) external view returns (address);
+    function rewardDistributionTokenAddr(address stakedToken, address rewardToken) external view returns (address);
     
     // Write functions.
     function __NFTXLPStaking__init(address _stakingTokenProvider) external;
@@ -252,11 +411,33 @@ interface INFTXLPStaking {
     function updatePoolForVaults(uint256[] calldata vaultId) external;
     function receiveRewards(uint256 vaultId, uint256 amount) external returns (bool);
     function deposit(uint256 vaultId, uint256 amount) external;
-    function depositFor(uint256 vaultId, uint256 amount, address to) external;
+    function timelockDepositFor(uint256 vaultId, address account, uint256 amount, uint256 timelockLength) external;
     function exit(uint256 vaultId, uint256 amount) external;
     function rescue(uint256 vaultId) external;
     function withdraw(uint256 vaultId, uint256 amount) external;
     function claimRewards(uint256 vaultId) external;
+}
+
+
+// File contracts/solidity/interface/INFTXInventoryStaking.sol
+
+
+
+pragma solidity ^0.8.0;
+
+interface INFTXInventoryStaking {
+    function nftxVaultFactory() external view returns (INFTXVaultFactory);
+    function vaultXToken(uint256 vaultId) external view returns (address);
+    function xTokenAddr(address baseToken) external view returns (address);
+    function xTokenShareValue(uint256 vaultId) external view returns (uint256);
+
+    function __NFTXInventoryStaking_init(address nftxFactory) external;
+    
+    function deployXTokenForVault(uint256 vaultId) external;
+    function receiveRewards(uint256 vaultId, uint256 amount) external returns (bool);
+    function timelockMintFor(uint256 vaultId, uint256 amount, address to, uint256 timelockLength) external returns (uint256);
+    function deposit(uint256 vaultId, uint256 _amount) external;
+    function withdraw(uint256 vaultId, uint256 _share) external;
 }
 
 
@@ -399,7 +580,7 @@ interface IUniswapV2Router01 {
 }
 
 
-// File contracts/solidity/interface/IERC165Upgradeable.sol
+// File contracts/solidity/testing/IERC165.sol
 
 
 
@@ -414,7 +595,7 @@ pragma solidity ^0.8.0;
  *
  * For an implementation, see {ERC165}.
  */
-interface IERC165Upgradeable {
+interface IERC165 {
     /**
      * @dev Returns true if this contract implements the interface defined by
      * `interfaceId`. See the corresponding
@@ -427,7 +608,7 @@ interface IERC165Upgradeable {
 }
 
 
-// File contracts/solidity/token/IERC721Upgradeable.sol
+// File contracts/solidity/testing/IERC721.sol
 
 
 
@@ -436,21 +617,33 @@ pragma solidity ^0.8.0;
 /**
  * @dev Required interface of an ERC721 compliant contract.
  */
-interface IERC721Upgradeable is IERC165Upgradeable {
+interface IERC721 is IERC165 {
     /**
      * @dev Emitted when `tokenId` token is transferred from `from` to `to`.
      */
-    event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
+    event Transfer(
+        address indexed from,
+        address indexed to,
+        uint256 indexed tokenId
+    );
 
     /**
      * @dev Emitted when `owner` enables `approved` to manage the `tokenId` token.
      */
-    event Approval(address indexed owner, address indexed approved, uint256 indexed tokenId);
+    event Approval(
+        address indexed owner,
+        address indexed approved,
+        uint256 indexed tokenId
+    );
 
     /**
      * @dev Emitted when `owner` enables or disables (`approved`) `operator` to manage all of its assets.
      */
-    event ApprovalForAll(address indexed owner, address indexed operator, bool approved);
+    event ApprovalForAll(
+        address indexed owner,
+        address indexed operator,
+        bool approved
+    );
 
     /**
      * @dev Returns the number of tokens in ``owner``'s account.
@@ -480,7 +673,11 @@ interface IERC721Upgradeable is IERC165Upgradeable {
      *
      * Emits a {Transfer} event.
      */
-    function safeTransferFrom(address from, address to, uint256 tokenId) external;
+    function safeTransferFrom(
+        address from,
+        address to,
+        uint256 tokenId
+    ) external;
 
     /**
      * @dev Transfers `tokenId` token from `from` to `to`.
@@ -496,7 +693,11 @@ interface IERC721Upgradeable is IERC165Upgradeable {
      *
      * Emits a {Transfer} event.
      */
-    function transferFrom(address from, address to, uint256 tokenId) external;
+    function transferFrom(
+        address from,
+        address to,
+        uint256 tokenId
+    ) external;
 
     /**
      * @dev Gives permission to `to` to transfer `tokenId` token to another account.
@@ -520,7 +721,10 @@ interface IERC721Upgradeable is IERC165Upgradeable {
      *
      * - `tokenId` must exist.
      */
-    function getApproved(uint256 tokenId) external view returns (address operator);
+    function getApproved(uint256 tokenId)
+        external
+        view
+        returns (address operator);
 
     /**
      * @dev Approve or remove `operator` as an operator for the caller.
@@ -539,22 +743,58 @@ interface IERC721Upgradeable is IERC165Upgradeable {
      *
      * See {setApprovalForAll}
      */
-    function isApprovedForAll(address owner, address operator) external view returns (bool);
+    function isApprovedForAll(address owner, address operator)
+        external
+        view
+        returns (bool);
 
     /**
-      * @dev Safely transfers `tokenId` token from `from` to `to`.
-      *
-      * Requirements:
-      *
-      * - `from` cannot be the zero address.
-      * - `to` cannot be the zero address.
-      * - `tokenId` token must exist and be owned by `from`.
-      * - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}.
-      * - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer.
-      *
-      * Emits a {Transfer} event.
-      */
-    function safeTransferFrom(address from, address to, uint256 tokenId, bytes calldata data) external;
+     * @dev Safely transfers `tokenId` token from `from` to `to`.
+     *
+     * Requirements:
+     *
+     * - `from` cannot be the zero address.
+     * - `to` cannot be the zero address.
+     * - `tokenId` token must exist and be owned by `from`.
+     * - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}.
+     * - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer.
+     *
+     * Emits a {Transfer} event.
+     */
+    function safeTransferFrom(
+        address from,
+        address to,
+        uint256 tokenId,
+        bytes calldata data
+    ) external;
+}
+
+
+// File contracts/solidity/interface/IERC165Upgradeable.sol
+
+
+
+pragma solidity ^0.8.0;
+
+/**
+ * @dev Interface of the ERC165 standard, as defined in the
+ * https://eips.ethereum.org/EIPS/eip-165[EIP].
+ *
+ * Implementers can declare support of contract interfaces, which can then be
+ * queried by others ({ERC165Checker}).
+ *
+ * For an implementation, see {ERC165}.
+ */
+interface IERC165Upgradeable {
+    /**
+     * @dev Returns true if this contract implements the interface defined by
+     * `interfaceId`. See the corresponding
+     * https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]
+     * to learn more about how these ids are created.
+     *
+     * This function call must use less than 30 000 gas.
+     */
+    function supportsInterface(bytes4 interfaceId) external view returns (bool);
 }
 
 
@@ -660,87 +900,6 @@ interface IERC1155Upgradeable is IERC165Upgradeable {
      * acceptance magic value.
      */
     function safeBatchTransferFrom(address from, address to, uint256[] calldata ids, uint256[] calldata amounts, bytes calldata data) external;
-}
-
-
-// File contracts/solidity/token/IERC20Upgradeable.sol
-
-
-
-pragma solidity ^0.8.0;
-
-/**
- * @dev Interface of the ERC20 standard as defined in the EIP.
- */
-interface IERC20Upgradeable {
-    /**
-     * @dev Returns the amount of tokens in existence.
-     */
-    function totalSupply() external view returns (uint256);
-
-    /**
-     * @dev Returns the amount of tokens owned by `account`.
-     */
-    function balanceOf(address account) external view returns (uint256);
-
-    /**
-     * @dev Moves `amount` tokens from the caller's account to `recipient`.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transfer(address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Returns the remaining number of tokens that `spender` will be
-     * allowed to spend on behalf of `owner` through {transferFrom}. This is
-     * zero by default.
-     *
-     * This value changes when {approve} or {transferFrom} are called.
-     */
-    function allowance(address owner, address spender) external view returns (uint256);
-
-    /**
-     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * IMPORTANT: Beware that changing an allowance with this method brings the risk
-     * that someone may use both the old and the new allowance by unfortunate
-     * transaction ordering. One possible solution to mitigate this race
-     * condition is to first reduce the spender's allowance to 0 and set the
-     * desired value afterwards:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
-     * Emits an {Approval} event.
-     */
-    function approve(address spender, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Moves `amount` tokens from `sender` to `recipient` using the
-     * allowance mechanism. `amount` is then deducted from the caller's
-     * allowance.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Emitted when `value` tokens are moved from one account (`from`) to
-     * another (`to`).
-     *
-     * Note that `value` may be zero.
-     */
-    event Transfer(address indexed from, address indexed to, uint256 value);
-
-    /**
-     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
-     * a call to {approve}. `value` is the new allowance.
-     */
-    event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
 
@@ -1093,11 +1252,298 @@ abstract contract OwnableUpgradeable is Initializable, ContextUpgradeable {
 }
 
 
+// File contracts/solidity/util/Address.sol
+
+
+
+pragma solidity ^0.8.0;
+
+/**
+ * @dev Collection of functions related to the address type
+ */
+library Address {
+    /**
+     * @dev Returns true if `account` is a contract.
+     *
+     * [IMPORTANT]
+     * ====
+     * It is unsafe to assume that an address for which this function returns
+     * false is an externally-owned account (EOA) and not a contract.
+     *
+     * Among others, `isContract` will return false for the following
+     * types of addresses:
+     *
+     *  - an externally-owned account
+     *  - a contract in construction
+     *  - an address where a contract will be created
+     *  - an address where a contract lived, but was destroyed
+     * ====
+     */
+    function isContract(address account) internal view returns (bool) {
+        // This method relies on extcodesize, which returns 0 for contracts in
+        // construction, since the code is only stored at the end of the
+        // constructor execution.
+
+        uint256 size;
+        // solhint-disable-next-line no-inline-assembly
+        assembly { size := extcodesize(account) }
+        return size > 0;
+    }
+
+    /**
+     * @dev Replacement for Solidity's `transfer`: sends `amount` wei to
+     * `recipient`, forwarding all available gas and reverting on errors.
+     *
+     * https://eips.ethereum.org/EIPS/eip-1884[EIP1884] increases the gas cost
+     * of certain opcodes, possibly making contracts go over the 2300 gas limit
+     * imposed by `transfer`, making them unable to receive funds via
+     * `transfer`. {sendValue} removes this limitation.
+     *
+     * https://diligence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].
+     *
+     * IMPORTANT: because control is transferred to `recipient`, care must be
+     * taken to not create reentrancy vulnerabilities. Consider using
+     * {ReentrancyGuard} or the
+     * https://solidity.readthedocs.io/en/v0.5.11/security-considerations.html#use-the-checks-effects-interactions-pattern[checks-effects-interactions pattern].
+     */
+    function sendValue(address payable recipient, uint256 amount) internal {
+        require(address(this).balance >= amount, "Address: insufficient balance");
+
+        // solhint-disable-next-line avoid-low-level-calls, avoid-call-value
+        (bool success, ) = recipient.call{ value: amount }("");
+        require(success, "Address: unable to send value, recipient may have reverted");
+    }
+
+    /**
+     * @dev Performs a Solidity function call using a low level `call`. A
+     * plain`call` is an unsafe replacement for a function call: use this
+     * function instead.
+     *
+     * If `target` reverts with a revert reason, it is bubbled up by this
+     * function (like regular Solidity function calls).
+     *
+     * Returns the raw returned data. To convert to the expected return value,
+     * use https://solidity.readthedocs.io/en/latest/units-and-global-variables.html?highlight=abi.decode#abi-encoding-and-decoding-functions[`abi.decode`].
+     *
+     * Requirements:
+     *
+     * - `target` must be a contract.
+     * - calling `target` with `data` must not revert.
+     *
+     * _Available since v3.1._
+     */
+    function functionCall(address target, bytes memory data) internal returns (bytes memory) {
+      return functionCall(target, data, "Address: low-level call failed");
+    }
+
+    /**
+     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`], but with
+     * `errorMessage` as a fallback revert reason when `target` reverts.
+     *
+     * _Available since v3.1._
+     */
+    function functionCall(address target, bytes memory data, string memory errorMessage) internal returns (bytes memory) {
+        return functionCallWithValue(target, data, 0, errorMessage);
+    }
+
+    /**
+     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],
+     * but also transferring `value` wei to `target`.
+     *
+     * Requirements:
+     *
+     * - the calling contract must have an ETH balance of at least `value`.
+     * - the called Solidity function must be `payable`.
+     *
+     * _Available since v3.1._
+     */
+    function functionCallWithValue(address target, bytes memory data, uint256 value) internal returns (bytes memory) {
+        return functionCallWithValue(target, data, value, "Address: low-level call with value failed");
+    }
+
+    /**
+     * @dev Same as {xref-Address-functionCallWithValue-address-bytes-uint256-}[`functionCallWithValue`], but
+     * with `errorMessage` as a fallback revert reason when `target` reverts.
+     *
+     * _Available since v3.1._
+     */
+    function functionCallWithValue(address target, bytes memory data, uint256 value, string memory errorMessage) internal returns (bytes memory) {
+        require(address(this).balance >= value, "Address: insufficient balance for call");
+        require(isContract(target), "Address: call to non-contract");
+
+        // solhint-disable-next-line avoid-low-level-calls
+        (bool success, bytes memory returndata) = target.call{ value: value }(data);
+        return _verifyCallResult(success, returndata, errorMessage);
+    }
+
+    /**
+     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],
+     * but performing a static call.
+     *
+     * _Available since v3.3._
+     */
+    function functionStaticCall(address target, bytes memory data) internal view returns (bytes memory) {
+        return functionStaticCall(target, data, "Address: low-level static call failed");
+    }
+
+    /**
+     * @dev Same as {xref-Address-functionCall-address-bytes-string-}[`functionCall`],
+     * but performing a static call.
+     *
+     * _Available since v3.3._
+     */
+    function functionStaticCall(address target, bytes memory data, string memory errorMessage) internal view returns (bytes memory) {
+        require(isContract(target), "Address: static call to non-contract");
+
+        // solhint-disable-next-line avoid-low-level-calls
+        (bool success, bytes memory returndata) = target.staticcall(data);
+        return _verifyCallResult(success, returndata, errorMessage);
+    }
+
+    /**
+     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],
+     * but performing a delegate call.
+     *
+     * _Available since v3.4._
+     */
+    function functionDelegateCall(address target, bytes memory data) internal returns (bytes memory) {
+        return functionDelegateCall(target, data, "Address: low-level delegate call failed");
+    }
+
+    /**
+     * @dev Same as {xref-Address-functionCall-address-bytes-string-}[`functionCall`],
+     * but performing a delegate call.
+     *
+     * _Available since v3.4._
+     */
+    function functionDelegateCall(address target, bytes memory data, string memory errorMessage) internal returns (bytes memory) {
+        require(isContract(target), "Address: delegate call to non-contract");
+
+        // solhint-disable-next-line avoid-low-level-calls
+        (bool success, bytes memory returndata) = target.delegatecall(data);
+        return _verifyCallResult(success, returndata, errorMessage);
+    }
+
+    function _verifyCallResult(bool success, bytes memory returndata, string memory errorMessage) private pure returns(bytes memory) {
+        if (success) {
+            return returndata;
+        } else {
+            // Look for revert reason and bubble it up if present
+            if (returndata.length > 0) {
+                // The easiest way to bubble the revert reason is using memory via assembly
+
+                // solhint-disable-next-line no-inline-assembly
+                assembly {
+                    let returndata_size := mload(returndata)
+                    revert(add(32, returndata), returndata_size)
+                }
+            } else {
+                revert(errorMessage);
+            }
+        }
+    }
+}
+
+
+// File contracts/solidity/util/SafeERC20Upgradeable.sol
+
+
+
+pragma solidity ^0.8.0;
+
+
+/**
+ * @title SafeERC20
+ * @dev Wrappers around ERC20 operations that throw on failure (when the token
+ * contract returns false). Tokens that return no value (and instead revert or
+ * throw on failure) are also supported, non-reverting calls are assumed to be
+ * successful.
+ * To use this library you can add a `using SafeERC20 for IERC20;` statement to your contract,
+ * which allows you to call the safe operations as `token.safeTransfer(...)`, etc.
+ */
+library SafeERC20Upgradeable {
+    using Address for address;
+
+    function safeTransfer(IERC20Upgradeable token, address to, uint256 value) internal {
+        _callOptionalReturn(token, abi.encodeWithSelector(token.transfer.selector, to, value));
+    }
+
+    function safeTransferFrom(IERC20Upgradeable token, address from, address to, uint256 value) internal {
+        _callOptionalReturn(token, abi.encodeWithSelector(token.transferFrom.selector, from, to, value));
+    }
+
+    /**
+     * @dev Deprecated. This function has issues similar to the ones found in
+     * {IERC20-approve}, and its usage is discouraged.
+     *
+     * Whenever possible, use {safeIncreaseAllowance} and
+     * {safeDecreaseAllowance} instead.
+     */
+    function safeApprove(IERC20Upgradeable token, address spender, uint256 value) internal {
+        // safeApprove should only be called when setting an initial allowance,
+        // or when resetting it to zero. To increase and decrease it, use
+        // 'safeIncreaseAllowance' and 'safeDecreaseAllowance'
+        // solhint-disable-next-line max-line-length
+        require((value == 0) || (token.allowance(address(this), spender) == 0),
+            "SafeERC20: approve from non-zero to non-zero allowance"
+        );
+        _callOptionalReturn(token, abi.encodeWithSelector(token.approve.selector, spender, value));
+    }
+
+    function safeIncreaseAllowance(IERC20Upgradeable token, address spender, uint256 value) internal {
+        uint256 newAllowance = token.allowance(address(this), spender) + value;
+        _callOptionalReturn(token, abi.encodeWithSelector(token.approve.selector, spender, newAllowance));
+    }
+
+    function safeDecreaseAllowance(IERC20Upgradeable token, address spender, uint256 value) internal {
+        unchecked {
+            uint256 oldAllowance = token.allowance(address(this), spender);
+            require(oldAllowance >= value, "SafeERC20: decreased allowance below zero");
+            uint256 newAllowance = oldAllowance - value;
+            _callOptionalReturn(token, abi.encodeWithSelector(token.approve.selector, spender, newAllowance));
+        }
+    }
+
+    /**
+     * @dev Imitates a Solidity high-level call (i.e. a regular function call to a contract), relaxing the requirement
+     * on the return value: the return value is optional (but if data is returned, it must not be false).
+     * @param token The token targeted by the call.
+     * @param data The call data (encoded using abi.encode or one of its variants).
+     */
+    function _callOptionalReturn(IERC20Upgradeable token, bytes memory data) private {
+        // We need to perform a low level call here, to bypass Solidity's return data size checking mechanism, since
+        // we're implementing it ourselves. We use {Address.functionCall} to perform this call, which verifies that
+        // the target address contains contract code and also asserts for success in the low-level call.
+
+        bytes memory returndata = address(token).functionCall(data, "SafeERC20: low-level call failed");
+        if (returndata.length > 0) { // Return data is optional
+            // solhint-disable-next-line max-line-length
+            require(abi.decode(returndata, (bool)), "SafeERC20: ERC20 operation did not succeed");
+        }
+    }
+}
+
+
+// File contracts/solidity/interface/ITimelockExcludeList.sol
+
+
+
+pragma solidity ^0.8.0;
+
+interface ITimelockExcludeList {
+    function isExcluded(address addr, uint256 vaultId) external view returns (bool);
+}
+
+
 // File contracts/solidity/NFTXStakingZap.sol
 
 
 
 pragma solidity ^0.8.0;
+
+
+
+
 
 
 
@@ -1242,48 +1688,123 @@ abstract contract Ownable {
 }
 
 contract NFTXStakingZap is Ownable, ReentrancyGuard, ERC721HolderUpgradeable, ERC1155HolderUpgradeable {
-  IWETH public WETH; 
+  using SafeERC20Upgradeable for IERC20Upgradeable;
+
+  IWETH public immutable WETH; 
   INFTXLPStaking public lpStaking;
+  INFTXInventoryStaking public inventoryStaking;
   INFTXVaultFactory public immutable nftxFactory;
-  IUniswapV2Router01 public sushiRouter;
+  IUniswapV2Router01 public immutable sushiRouter;
+  ITimelockExcludeList public timelockExcludeList;
 
-  uint256 public lockTime = 48 hours; 
-
-  mapping(uint256 => mapping(address => uint256)) private zapLock;
-  mapping(uint256 => mapping(address => uint256)) private lockedBalance;
-
-  uint256 constant BASE = 10**18;
+  uint256 public lpLockTime = 48 hours; 
+  uint256 public inventoryLockTime = 7 days; 
+  uint256 constant BASE = 1e18;
 
   event UserStaked(uint256 vaultId, uint256 count, uint256 lpBalance, uint256 timelockUntil, address sender);
-  event Withdraw(uint256 vaultId, uint256 lpBalance, address sender);
 
   constructor(address _nftxFactory, address _sushiRouter) Ownable() ReentrancyGuard() {
     nftxFactory = INFTXVaultFactory(_nftxFactory);
     sushiRouter = IUniswapV2Router01(_sushiRouter);
-    WETH = IWETH(sushiRouter.WETH());
-    IERC20Upgradeable(address(WETH)).approve(address(sushiRouter), type(uint256).max);
+    WETH = IWETH(IUniswapV2Router01(_sushiRouter).WETH());
+    IERC20Upgradeable(address(IUniswapV2Router01(_sushiRouter).WETH())).safeApprove(_sushiRouter, type(uint256).max);
   }
 
-  function setLpStakingAddress(address newLpStaking) external onlyOwner {
-    lpStaking = INFTXLPStaking(newLpStaking);
+  function assignStakingContracts() public {
+    require(address(lpStaking) == address(0) || address(inventoryStaking) == address(0), "not zero");
+    lpStaking = INFTXLPStaking(INFTXSimpleFeeDistributor(INFTXVaultFactory(nftxFactory).feeDistributor()).lpStaking());
+    inventoryStaking = INFTXInventoryStaking(INFTXSimpleFeeDistributor(INFTXVaultFactory(nftxFactory).feeDistributor()).inventoryStaking());
+  }
+
+  function setTimelockExcludeList(address addr) external onlyOwner {
+    timelockExcludeList = ITimelockExcludeList(addr);
+  }
+
+  function setLPLockTime(uint256 newLPLockTime) external onlyOwner {
+    require(newLPLockTime <= 7 days, "Lock too long");
+    lpLockTime = newLPLockTime;
   } 
 
-  function setLockTime(uint256 newLockTime) external onlyOwner {
-    lockTime = newLockTime;
-  } 
+  function setInventoryLockTime(uint256 newInventoryLockTime) external onlyOwner {
+    require(newInventoryLockTime <= 14 days, "Lock too long");
+    inventoryLockTime = newInventoryLockTime;
+  }
+
+  function isAddressTimelockExcluded(address addr, uint256 vaultId) public view returns (bool) {
+        if (address(timelockExcludeList) == address(0)) {
+            return false;
+        } else {
+            return timelockExcludeList.isExcluded(addr, vaultId);
+        }
+    }
+
+  function provideInventory721(uint256 vaultId, uint256[] calldata tokenIds) external {
+    uint256 count = tokenIds.length;
+    INFTXVault vault = INFTXVault(nftxFactory.vault(vaultId));
+    uint256 timelockTime = isAddressTimelockExcluded(msg.sender, vaultId) ? 0 : inventoryLockTime;
+    inventoryStaking.timelockMintFor(vaultId, count*BASE, msg.sender, timelockTime);
+    address xToken = inventoryStaking.vaultXToken(vaultId);
+    uint256 oldBal = IERC20Upgradeable(vault).balanceOf(xToken);
+    uint256[] memory amounts = new uint256[](0);
+    address assetAddress = vault.assetAddress();
+    uint256 length = tokenIds.length;
+    for (uint256 i; i < length; ++i) {
+      transferFromERC721(assetAddress, tokenIds[i], address(vault));
+      approveERC721(assetAddress, address(vault), tokenIds[i]);
+    }
+    vault.mintTo(tokenIds, amounts, address(xToken));
+    uint256 newBal = IERC20Upgradeable(vault).balanceOf(xToken);
+    require(newBal == oldBal + count*BASE, "Incorrect vtokens minted");
+    uint256 lockEndTime = block.timestamp + timelockTime;
+    emit UserStaked(vaultId, tokenIds.length, 0, lockEndTime, msg.sender);
+  }
+
+  function provideInventory1155(uint256 vaultId, uint256[] calldata tokenIds, uint256[] calldata amounts) external {
+    uint256 length = tokenIds.length;
+    require(length == amounts.length, "Not equal length");
+    uint256 count;
+    for (uint256 i; i < length; ++i) {
+      count += amounts[i];
+    }
+    INFTXVault vault = INFTXVault(nftxFactory.vault(vaultId));
+    uint256 timelockTime = isAddressTimelockExcluded(msg.sender, vaultId) ? 0 : inventoryLockTime;
+    inventoryStaking.timelockMintFor(vaultId, count*BASE, msg.sender, timelockTime);
+    address xToken = inventoryStaking.vaultXToken(vaultId);
+    uint256 oldBal = IERC20Upgradeable(vault).balanceOf(address(xToken));
+    IERC1155Upgradeable nft = IERC1155Upgradeable(vault.assetAddress());
+    nft.safeBatchTransferFrom(msg.sender, address(this), tokenIds, amounts, "");
+    nft.setApprovalForAll(address(vault), true);
+    vault.mintTo(tokenIds, amounts, address(xToken));
+    uint256 newBal = IERC20Upgradeable(vault).balanceOf(address(xToken));
+    require(newBal == oldBal + count*BASE, "Incorrect vtokens minted");
+    uint256 lockEndTime = block.timestamp + timelockTime;
+    emit UserStaked(vaultId, tokenIds.length, 0, lockEndTime, msg.sender);
+  }
 
   function addLiquidity721ETH(
     uint256 vaultId, 
-    uint256[] memory ids, 
+    uint256[] calldata ids, 
     uint256 minWethIn
+  ) external payable returns (uint256) {
+    return addLiquidity721ETHTo(vaultId, ids, minWethIn, msg.sender);
+  }
+
+  function addLiquidity721ETHTo(
+    uint256 vaultId, 
+    uint256[] memory ids, 
+    uint256 minWethIn,
+    address to
   ) public payable nonReentrant returns (uint256) {
+    require(to != address(0) && to != address(this));
     WETH.deposit{value: msg.value}();
-    (, uint256 amountEth, uint256 liquidity) = _addLiquidity721WETH(vaultId, ids, minWethIn, msg.value);
+    (, uint256 amountEth, uint256 liquidity) = _addLiquidity721WETH(vaultId, ids, minWethIn, msg.value, to);
 
     // Return extras.
-    if (amountEth < msg.value) {
-      WETH.withdraw(msg.value-amountEth);
-      msg.sender.call{value: msg.value-amountEth};
+    uint256 remaining = msg.value-amountEth;
+    if (remaining != 0) {
+      WETH.withdraw(remaining);
+      (bool success, ) = payable(to).call{value: remaining}("");
+      require(success, "Address: unable to send value, recipient may have reverted");
     }
 
     return liquidity;
@@ -1291,18 +1812,31 @@ contract NFTXStakingZap is Ownable, ReentrancyGuard, ERC721HolderUpgradeable, ER
 
   function addLiquidity1155ETH(
     uint256 vaultId, 
+    uint256[] calldata ids, 
+    uint256[] calldata amounts,
+    uint256 minEthIn
+  ) external payable returns (uint256) {
+    return addLiquidity1155ETHTo(vaultId, ids, amounts, minEthIn, msg.sender);
+  }
+
+  function addLiquidity1155ETHTo(
+    uint256 vaultId, 
     uint256[] memory ids, 
     uint256[] memory amounts,
-    uint256 minEthIn
+    uint256 minEthIn,
+    address to
   ) public payable nonReentrant returns (uint256) {
+    require(to != address(0) && to != address(this));
     WETH.deposit{value: msg.value}();
     // Finish this.
-    (, uint256 amountEth, uint256 liquidity) = _addLiquidity1155WETH(vaultId, ids, amounts, minEthIn, msg.value);
+    (, uint256 amountEth, uint256 liquidity) = _addLiquidity1155WETH(vaultId, ids, amounts, minEthIn, msg.value, to);
 
     // Return extras.
-    if (amountEth < msg.value) {
-      WETH.withdraw(msg.value-amountEth);
-      msg.sender.call{value: msg.value-amountEth};
+    uint256 remaining = msg.value-amountEth;
+    if (remaining != 0) {
+      WETH.withdraw(remaining);
+      (bool success, ) = payable(to).call{value: remaining}("");
+      require(success, "Address: unable to send value, recipient may have reverted");
     }
 
     return liquidity;
@@ -1310,16 +1844,28 @@ contract NFTXStakingZap is Ownable, ReentrancyGuard, ERC721HolderUpgradeable, ER
 
   function addLiquidity721(
     uint256 vaultId, 
-    uint256[] memory ids, 
+    uint256[] calldata ids, 
     uint256 minWethIn,
     uint256 wethIn
+  ) external returns (uint256) {
+    return addLiquidity721To(vaultId, ids, minWethIn, wethIn, msg.sender);
+  }
+
+  function addLiquidity721To(
+    uint256 vaultId, 
+    uint256[] memory ids, 
+    uint256 minWethIn,
+    uint256 wethIn,
+    address to
   ) public nonReentrant returns (uint256) {
-    IERC20Upgradeable(address(WETH)).transferFrom(msg.sender, address(this), wethIn);
-    (, uint256 amountEth, uint256 liquidity) = _addLiquidity721WETH(vaultId, ids, minWethIn, wethIn);
+    require(to != address(0) && to != address(this));
+    IERC20Upgradeable(address(WETH)).safeTransferFrom(msg.sender, address(this), wethIn);
+    (, uint256 amountEth, uint256 liquidity) = _addLiquidity721WETH(vaultId, ids, minWethIn, wethIn, to);
 
     // Return extras.
-    if (amountEth < wethIn) {
-      WETH.transfer(msg.sender, wethIn-amountEth);
+    uint256 remaining = wethIn-amountEth;
+    if (remaining != 0) {
+      WETH.transfer(to, remaining);
     }
 
     return liquidity;
@@ -1331,61 +1877,53 @@ contract NFTXStakingZap is Ownable, ReentrancyGuard, ERC721HolderUpgradeable, ER
     uint256[] memory amounts,
     uint256 minWethIn,
     uint256 wethIn
+  ) public returns (uint256) {
+    return addLiquidity1155To(vaultId, ids, amounts, minWethIn, wethIn, msg.sender);
+  }
+
+  function addLiquidity1155To(
+    uint256 vaultId, 
+    uint256[] memory ids,
+    uint256[] memory amounts,
+    uint256 minWethIn,
+    uint256 wethIn,
+    address to
   ) public nonReentrant returns (uint256) {
-    IERC20Upgradeable(address(WETH)).transferFrom(msg.sender, address(this), wethIn);
-    (, uint256 amountEth, uint256 liquidity) = _addLiquidity1155WETH(vaultId, ids, amounts, minWethIn, wethIn);
+    require(to != address(0) && to != address(this));
+    IERC20Upgradeable(address(WETH)).safeTransferFrom(msg.sender, address(this), wethIn);
+    (, uint256 amountEth, uint256 liquidity) = _addLiquidity1155WETH(vaultId, ids, amounts, minWethIn, wethIn, to);
 
     // Return extras.
-    if (amountEth < wethIn) {
-      WETH.transfer(msg.sender, wethIn-amountEth);
+    uint256 remaining = wethIn-amountEth; 
+    if (remaining != 0) {
+      WETH.transfer(to, remaining);
     }
 
     return liquidity;
-  }
-
-  function withdrawXLPTokens(uint256 vaultId) public {
-    uint256 lockedBal = lockedBalance[vaultId][msg.sender];
-    require(block.timestamp >= zapLock[vaultId][msg.sender], "NFTXZap: Locked");
-    require(lockedBal > 0, "NFTXZap: Nothing locked");
-    
-    zapLock[vaultId][msg.sender] = 0;
-    lockedBalance[vaultId][msg.sender] = 0;
-
-    address xLPtoken = lpStaking.rewardDistributionToken(vaultId);
-    IERC20Upgradeable(xLPtoken).transfer(msg.sender, lockedBal);
-
-    emit Withdraw(vaultId, lockedBal, msg.sender);
-  }
-
-  function lockedUntil(uint256 vaultId, address who) external view returns (uint256) {
-    return zapLock[vaultId][who];
-  }
-
-  function lockedLPBalance(uint256 vaultId, address who) external view returns (uint256) {
-    return lockedBalance[vaultId][who];
   }
 
   function _addLiquidity721WETH(
     uint256 vaultId, 
     uint256[] memory ids, 
     uint256 minWethIn,
-    uint256 wethIn
+    uint256 wethIn,
+    address to
   ) internal returns (uint256, uint256, uint256) {
+    require(nftxFactory.excludedFromFees(address(this)));
     address vault = nftxFactory.vault(vaultId);
-    require(vault != address(0), "NFTXZap: Vault does not exist");
 
     // Transfer tokens to zap and mint to NFTX.
     address assetAddress = INFTXVault(vault).assetAddress();
-    for (uint256 i = 0; i < ids.length; i++) {
-      transferFromERC721(assetAddress, ids[i]);
+    uint256 length = ids.length;
+    for (uint256 i; i < length; i++) {
+      transferFromERC721(assetAddress, ids[i], vault);
       approveERC721(assetAddress, vault, ids[i]);
     }
     uint256[] memory emptyIds;
-    uint256 count = INFTXVault(vault).mint(ids, emptyIds);
-    uint256 balance = (count * BASE); // We should not be experiencing fees.
-    require(balance == IERC20Upgradeable(vault).balanceOf(address(this)), "Did not receive expected balance");
+    INFTXVault(vault).mint(ids, emptyIds);
+    uint256 balance = length * BASE; // We should not be experiencing fees.
     
-    return _addLiquidityAndLock(vaultId, vault, balance, minWethIn, wethIn);
+    return _addLiquidityAndLock(vaultId, vault, balance, minWethIn, wethIn, to);
   }
 
   function _addLiquidity1155WETH(
@@ -1393,20 +1931,21 @@ contract NFTXStakingZap is Ownable, ReentrancyGuard, ERC721HolderUpgradeable, ER
     uint256[] memory ids,
     uint256[] memory amounts,
     uint256 minWethIn,
-    uint256 wethIn
+    uint256 wethIn,
+    address to
   ) internal returns (uint256, uint256, uint256) {
+    require(nftxFactory.excludedFromFees(address(this)));
     address vault = nftxFactory.vault(vaultId);
-    require(vault != address(0), "NFTXZap: Vault does not exist");
 
     // Transfer tokens to zap and mint to NFTX.
     address assetAddress = INFTXVault(vault).assetAddress();
     IERC1155Upgradeable(assetAddress).safeBatchTransferFrom(msg.sender, address(this), ids, amounts, "");
     IERC1155Upgradeable(assetAddress).setApprovalForAll(vault, true);
+    
     uint256 count = INFTXVault(vault).mint(ids, amounts);
     uint256 balance = (count * BASE); // We should not be experiencing fees.
-    require(balance == IERC20Upgradeable(vault).balanceOf(address(this)), "Did not receive expected balance");
     
-    return _addLiquidityAndLock(vaultId, vault, balance, minWethIn, wethIn);
+    return _addLiquidityAndLock(vaultId, vault, balance, minWethIn, wethIn, to);
   }
 
   function _addLiquidityAndLock(
@@ -1414,56 +1953,56 @@ contract NFTXStakingZap is Ownable, ReentrancyGuard, ERC721HolderUpgradeable, ER
     address vault, 
     uint256 minTokenIn, 
     uint256 minWethIn, 
-    uint256 wethIn
+    uint256 wethIn,
+    address to
   ) internal returns (uint256, uint256, uint256) {
     // Provide liquidity.
-    IERC20Upgradeable(vault).approve(address(sushiRouter), minTokenIn);
+    IERC20Upgradeable(vault).safeApprove(address(sushiRouter), minTokenIn);
     (uint256 amountToken, uint256 amountEth, uint256 liquidity) = sushiRouter.addLiquidity(
-      address(vault), 
-      sushiRouter.WETH(),
-      minTokenIn, 
-      wethIn, 
+      address(vault),
+      address(WETH),
+      minTokenIn,
+      wethIn,
       minTokenIn,
       minWethIn,
-      address(this), 
+      address(this),
       block.timestamp
     );
 
     // Stake in LP rewards contract 
-    address lpToken = pairFor(vault, address(WETH));
-    IERC20Upgradeable(lpToken).approve(address(lpStaking), liquidity);
-    lpStaking.depositFor(vaultId, liquidity, msg.sender);
+    IERC20Upgradeable(pairFor(vault, address(WETH))).safeApprove(address(lpStaking), liquidity);
+    uint256 timelockTime = isAddressTimelockExcluded(msg.sender, vaultId) ? 0 : lpLockTime;
+    lpStaking.timelockDepositFor(vaultId, to, liquidity, timelockTime);
     
-    lockedBalance[vaultId][msg.sender] += liquidity;
-    uint256 lockEndTime = block.timestamp + lockTime;
-    zapLock[vaultId][msg.sender] = lockEndTime;
-
-    if (amountToken < minTokenIn) {
-      IERC20Upgradeable(vault).transfer(msg.sender, minTokenIn-amountToken);
+    uint256 remaining = minTokenIn-amountToken;
+    if (remaining != 0) {
+      IERC20Upgradeable(vault).safeTransfer(to, remaining);
     }
 
-    emit UserStaked(vaultId, minTokenIn, liquidity, lockEndTime, msg.sender);
+    uint256 lockEndTime = block.timestamp + timelockTime;
+    emit UserStaked(vaultId, minTokenIn, liquidity, lockEndTime, to);
     return (amountToken, amountEth, liquidity);
   }
 
-  function transferFromERC721(address assetAddr, uint256 tokenId) internal virtual {
+  function transferFromERC721(address assetAddr, uint256 tokenId, address to) internal virtual {
     address kitties = 0x06012c8cf97BEaD5deAe237070F9587f8E7A266d;
     address punks = 0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB;
     bytes memory data;
     if (assetAddr == kitties) {
         // Cryptokitties.
-        data = abi.encodeWithSignature("transferFrom(address,address,uint256)", msg.sender, address(this), tokenId);
+        data = abi.encodeWithSignature("transferFrom(address,address,uint256)", msg.sender, to, tokenId);
     } else if (assetAddr == punks) {
         // CryptoPunks.
         // Fix here for frontrun attack. Added in v1.0.2.
         bytes memory punkIndexToAddress = abi.encodeWithSignature("punkIndexToAddress(uint256)", tokenId);
         (bool checkSuccess, bytes memory result) = address(assetAddr).staticcall(punkIndexToAddress);
-        (address owner) = abi.decode(result, (address));
-        require(checkSuccess && owner == msg.sender, "Not the owner");
+        (address nftOwner) = abi.decode(result, (address));
+        require(checkSuccess && nftOwner == msg.sender, "Not the NFT owner");
         data = abi.encodeWithSignature("buyPunk(uint256)", tokenId);
     } else {
         // Default.
-        data = abi.encodeWithSignature("safeTransferFrom(address,address,uint256)", msg.sender, address(this), tokenId);
+        // We push to the vault to avoid an unneeded transfer.
+        data = abi.encodeWithSignature("safeTransferFrom(address,address,uint256)", msg.sender, to, tokenId);
     }
     (bool success, bytes memory resultData) = address(assetAddr).call(data);
     require(success, string(resultData));
@@ -1475,27 +2014,26 @@ contract NFTXStakingZap is Ownable, ReentrancyGuard, ERC721HolderUpgradeable, ER
     bytes memory data;
     if (assetAddr == kitties) {
         // Cryptokitties.
-        data = abi.encodeWithSignature("approve(address,uint256)", to, tokenId);
+        // data = abi.encodeWithSignature("approve(address,uint256)", to, tokenId);
+        // No longer needed to approve with pushing.
+        return;
     } else if (assetAddr == punks) {
         // CryptoPunks.
         data = abi.encodeWithSignature("offerPunkForSaleToAddress(uint256,uint256,address)", tokenId, 0, to);
     } else {
-        if (IERC721Upgradeable(assetAddr).isApprovedForAll(address(this), to)) {
-          return;
-        }
-        // Default.
-        data = abi.encodeWithSignature("setApprovalForAll(address,bool)", to, true);
+      // No longer needed to approve with pushing.
+      return;
     }
     (bool success, bytes memory resultData) = address(assetAddr).call(data);
     require(success, string(resultData));
   }
 
   // calculates the CREATE2 address for a pair without making any external calls
-  function pairFor(address tokenA, address tokenB) internal pure returns (address pair) {
+  function pairFor(address tokenA, address tokenB) internal view returns (address pair) {
     (address token0, address token1) = sortTokens(tokenA, tokenB);
     pair = address(uint160(uint256(keccak256(abi.encodePacked(
       hex'ff',
-      0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac,
+      sushiRouter.factory(),
       keccak256(abi.encodePacked(token0, token1)),
       hex'e18a34eb0e04b04f7a0ac29a6e80748dca96319b42c54d679cb821dca90c6303' // init code hash
     )))));
@@ -1506,5 +2044,18 @@ contract NFTXStakingZap is Ownable, ReentrancyGuard, ERC721HolderUpgradeable, ER
       require(tokenA != tokenB, 'UniswapV2Library: IDENTICAL_ADDRESSES');
       (token0, token1) = tokenA < tokenB ? (tokenA, tokenB) : (tokenB, tokenA);
       require(token0 != address(0), 'UniswapV2Library: ZERO_ADDRESS');
+  }
+
+  receive() external payable {
+    require(msg.sender == address(WETH), "Only WETH");
+  }
+
+  function rescue(address token) external onlyOwner {
+    if (token == address(0)) {
+      (bool success, ) = payable(msg.sender).call{value: address(this).balance}("");
+      require(success, "Address: unable to send value, recipient may have reverted");
+    } else {
+      IERC20Upgradeable(token).safeTransfer(msg.sender, IERC20Upgradeable(token).balanceOf(address(this)));
+    }
   }
 }

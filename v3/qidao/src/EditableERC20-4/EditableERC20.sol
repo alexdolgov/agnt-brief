@@ -1,7 +1,3 @@
-/*
-since ur already here. go to mai.finance and check out the product ;)
-*/
-
 // Sources flattened with hardhat v2.6.8 https://hardhat.org
 
 // File @openzeppelin/contracts/GSN/Context.sol@v2.5.1

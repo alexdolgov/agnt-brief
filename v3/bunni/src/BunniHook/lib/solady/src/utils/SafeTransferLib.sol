@@ -51,7 +51,7 @@ library SafeTransferLib {
     /// storage reads and writes, but low enough to prevent griefing.
     uint256 internal constant GAS_STIPEND_NO_GRIEF = 100000;
 
-    /// @dev The unique EIP-712 domain domain separator for the DAI token contract.
+    /// @dev The unique EIP-712 domain separator for the DAI token contract.
     bytes32 internal constant DAI_DOMAIN_SEPARATOR =
         0xdbb8cf42e1ecb028be3f3dbc922e1d878b963f411dc388ced501601c60f7c6f7;
 
@@ -402,6 +402,27 @@ library SafeTransferLib {
                         staticcall(gas(), token, 0x10, 0x24, 0x20, 0x20)
                     )
                 )
+        }
+    }
+
+    /// @dev Performs a `token.balanceOf(account)` check.
+    /// `implemented` denotes whether the `token` does not implement `balanceOf`.
+    /// `amount` is zero if the `token` does not implement `balanceOf`.
+    function checkBalanceOf(address token, address account)
+        internal
+        view
+        returns (bool implemented, uint256 amount)
+    {
+        /// @solidity memory-safe-assembly
+        assembly {
+            mstore(0x14, account) // Store the `account` argument.
+            mstore(0x00, 0x70a08231000000000000000000000000) // `balanceOf(address)`.
+            implemented :=
+                and( // The arguments of `and` are evaluated from right to left.
+                    gt(returndatasize(), 0x1f), // At least 32 bytes returned.
+                    staticcall(gas(), token, 0x10, 0x24, 0x20, 0x20)
+                )
+            amount := mul(mload(0x20), implemented)
         }
     }
 

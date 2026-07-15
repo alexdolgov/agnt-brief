@@ -1,8 +1,16 @@
 {
   "component": "TwabRewards",
   "main_contract": "TwabRewards",
+  "source_entry_count": 13,
   "source_file_count": 13,
-  "deployment_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TwabRewards\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x90d383dea4dce52d3e5d3c93de75ef36da3ea9ea",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xefb96e28205360c1fa1d2158f7d02fe3c7749f99",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397892"
     },
     {
       "chain": "gnosis",
@@ -28,7 +30,9 @@
       "address": "0x1742157e6ef6e0cf7e49904f2c0d0fe38a276942",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397904"
     },
     {
       "chain": "base",
@@ -36,7 +40,9 @@
       "address": "0x86f0923d20810441efc593eb0f2825c6bff2dc09",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397926"
     },
     {
       "chain": "arbitrum",
@@ -44,7 +50,9 @@
       "address": "0xe21ac38a7e80104c4f6512ce4908a22bc09c59be",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397954"
     }
   ]
 }

@@ -1,26 +1,28 @@
 {
   "component": "PrizePoolTwabRewards-2",
   "main_contract": "PrizePoolTwabRewards",
-  "source_file_count": 21,
-  "deployment_count": 2,
+  "source_entry_count": 19,
+  "source_file_count": 19,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PrizePoolTwabRewards-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x3341dac0912b630f1a8c237b64f6861e9fa11d79",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x0d51a33975024e8afc55fde9f6b070c10aa71dd9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xf4cfa53df258d78aad153ac11c644703651983f5",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397901"
     }
   ]
 }

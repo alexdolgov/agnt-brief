@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.20;
+pragma solidity 0.8.28;
 
 import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -8,8 +8,9 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/utils/cryptography/EIP712.sol";
 import "@openzeppelin/contracts/interfaces/IERC1271.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
-import "./USN.sol";
+import "./interfaces/IUSN.sol";
 import "./interfaces/IMinterHandler.sol";
+import "./interfaces/ISUSNVault.sol";
 import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
 
 /**
@@ -31,6 +32,7 @@ contract MinterHandlerV2 is IMinterHandler, ReentrancyGuard, AccessControl, EIP7
     using SafeERC20 for IERC20;
 
     // Constants
+    /// @dev MINTER_ROLE can be granted to any address, including multisig wallets (e.g. Gnosis Safe).
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 private constant ORDER_TYPEHASH =
         keccak256(
@@ -42,11 +44,15 @@ contract MinterHandlerV2 is IMinterHandler, ReentrancyGuard, AccessControl, EIP7
     uint256 public constant ONE_USD = 1e8; // $1.00 with 8 decimals
 
     // State variables
-    USN public immutable usnToken;
+    IUSN public immutable usnToken;
     address public custodialWallet;
+    /// @dev sUSN vault (StakingVault) for mint-and-rebase; must grant REBASE_MANAGER_ROLE to this contract.
+    address public sUSNVault;
     uint256 public mintLimitPerBlock;
     uint256 public currentBlockMintAmount;
     uint256 public lastMintBlock;
+    /// @dev Max USN amount that can be rebased in a single mintAndRebase call; managed by DEFAULT_ADMIN_ROLE.
+    uint256 public rebaseLimit;
     
     // Direct mint config
     uint256 public priceThresholdBps = 100; // 1% = 100 bps (0.99 - 1.01)
@@ -69,12 +75,13 @@ contract MinterHandlerV2 is IMinterHandler, ReentrancyGuard, AccessControl, EIP7
         if (_usnToken == address(0)) {
             revert ZeroAddress();
         }
-        usnToken = USN(_usnToken);
+        usnToken = IUSN(_usnToken);
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         mintLimitPerBlock = 1000000 * 10 ** 18; // Default limit: 1 million USN
         directMintLimitPerDay = 100000 * 10 ** 18; // Default: 100k USN per day for direct mints
+        rebaseLimit = 30000 * 10 ** 18; // Default: 30,000 USN per mintAndRebase call
     }
-
+    
     // External functions
     function setCustodialWallet(address _custodialWallet) external onlyRole(DEFAULT_ADMIN_ROLE) {
         if (_custodialWallet == address(0)) {
@@ -87,6 +94,40 @@ contract MinterHandlerV2 is IMinterHandler, ReentrancyGuard, AccessControl, EIP7
     function setMintLimitPerBlock(uint256 _mintLimitPerBlock) external onlyRole(DEFAULT_ADMIN_ROLE) {
         mintLimitPerBlock = _mintLimitPerBlock;
         emit MintLimitPerBlockUpdated(_mintLimitPerBlock);
+    }
+
+    function setSUSNVault(address _sUSNVault) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        if (_sUSNVault == address(0)) revert ZeroAddress();
+        sUSNVault = _sUSNVault;
+        emit SUSNVaultSet(_sUSNVault);
+    }
+
+    /**
+     * @notice Set the maximum USN amount that can be rebased in a single mintAndRebase call.
+     * @param _rebaseLimit Max amount (18 decimals)
+     */
+    function setRebaseLimit(uint256 _rebaseLimit) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        rebaseLimit = _rebaseLimit;
+        emit RebaseLimitUpdated(_rebaseLimit);
+    }
+
+    /**
+     * @notice Mint USN and rebase the sUSN vault with that amount.
+     * @dev Callable by MINTER_ROLE (e.g. multisig). Mints USN to this contract, then calls
+     *      sUSNVault.rebase(amount). Requires: (1) sUSNVault set, (2) this contract has
+     *      REBASE_MANAGER_ROLE on the vault.
+     * @param amount Amount of USN to mint and transfer into the vault as rebase.
+     */
+    function mintAndRebase(uint256 amount) external nonReentrant onlyRole(MINTER_ROLE) {
+        if (sUSNVault == address(0)) revert SUSNVaultNotSet();
+        if (amount == 0) revert ZeroAmount();
+        if (amount > rebaseLimit) revert RebaseLimitExceeded(rebaseLimit, amount);
+
+        usnToken.mint(address(this), amount);
+        IERC20(address(usnToken)).approve(sUSNVault, amount);
+        ISUSNVault(sUSNVault).rebase(amount);
+
+        emit MintAndRebase(amount);
     }
 
     function mint(Order calldata order, bytes calldata signature) external nonReentrant onlyRole(MINTER_ROLE) {

@@ -1,26 +1,28 @@
 {
   "component": "Router",
   "main_contract": "Router",
-  "source_file_count": 4,
-  "deployment_count": 2,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Router\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1285",
-      "chain_id": 1285,
-      "address": "0x1006fff14e20fcc7d5975d4e81421becfb242fa6",
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x5c93cbf67c74daf14e36002d955ed5c7bd49887a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1285",
-      "chain_id": 1285,
-      "address": "0xe6fe3db4c5a2e4a9ab3301201b38724e578b35ca",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401503"
     }
   ]
 }

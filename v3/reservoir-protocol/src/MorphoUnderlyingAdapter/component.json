@@ -1,8 +1,16 @@
 {
   "component": "MorphoUnderlyingAdapter",
   "main_contract": "MorphoUnderlyingAdapter",
+  "source_entry_count": 17,
   "source_file_count": 17,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MorphoUnderlyingAdapter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,31 +20,9 @@
       "address": "0x841db2ca7e8a8c2fb06128e8c58aa162de0cfcbc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x99a95a9e38e927486fc878f41ff8b118eb632b10",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x99e8903bdefb9e44cd6a24b7f6f97ddd071549bc",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xb595ba80d38b8e4c9894a6734a1b9a7b198870a2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398356"
     }
   ]
 }

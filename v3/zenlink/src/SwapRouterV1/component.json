@@ -1,18 +1,28 @@
 {
   "component": "SwapRouterV1",
   "main_contract": "SwapRouterV1",
-  "source_file_count": 4,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SwapRouterV1\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1285",
-      "chain_id": 1285,
-      "address": "0x2f84b9713a96fb356683de7b44dd2d37658b189d",
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x5711112f7bce2dbbc95cf946db9eef0ca6572242",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401502"
     },
     {
       "chain": "chain-1285",
@@ -20,7 +30,9 @@
       "address": "0xfb45b575b66c99e0c8d2639acf237807d4ea1508",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401515"
     }
   ]
 }

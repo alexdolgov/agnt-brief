@@ -1,40 +1,69 @@
 # Agentic Audit Brief: Layer2 Finance
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Layer2 Finance (`layer2-finance`)
 - Website: [https://layer2.finance](https://layer2.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:20.865Z
-- Pipeline run: v2-2026-07-03-59f8b9
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
 - Contract surface: 5 unique implementations (5 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $208,573.10
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Yield. Structurally: 5 project-authored contract(s) across 1 chain(s); built on openzeppelin.
+No contract logic was present for Layer2 Finance in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Contracts are linked by 4 cross-contract reference(s). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/5 (0.0%)
-- Deployed-live implementations: 5 of 5 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/5
-- Verified + Unaudited implementations: 5
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 5 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 5
@@ -59,13 +88,13 @@ The protocol comprises 2 functional families. Contracts are linked by 4 cross-co
 
 ### ⚠️ Verified + Unaudited (5)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Registry | unknown | ethereum | n/a | [`0x11808d...e30836`](./contracts/ethereum-1/0x11808dd312fcdf6455b2de6ed197981fa9e30836/) | ⚠️ Unaudited |
-| RollupChain | unknown | ethereum | n/a | [`0xcf6659...0a1f2e`](./contracts/ethereum-1/0xcf665943b6bc32be29a3e2eaab1afed2880a1f2e/) | ⚠️ Unaudited |
-| StrategyCompoundEthLendingPool | unknown | ethereum | n/a | [`0x61fc4d...8aea8d`](./contracts/ethereum-1/0x61fc4d40d313eb01483f537a6db2b29fb38aea8d/) | ⚠️ Unaudited |
-| TransitionDisputer | unknown | ethereum | n/a | [`0x5d3c0f...7e007f`](./contracts/ethereum-1/0x5d3c0f4ca5ee99f8e8f59ff9a5fab04f6a7e007f/) | ⚠️ Unaudited |
-| TransitionEvaluator | unknown | ethereum | n/a | [`0x0762d3...381cb5`](./contracts/ethereum-1/0x0762d31185b1675a441008aba3eea22e1b381cb5/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Registry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149296 | `0x11808d...e30836` | ⚠️ Unaudited |
+| RollupChain | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149299 | `0xcf6659...0a1f2e` | ⚠️ Unaudited |
+| StrategyCompoundEthLendingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149298 | `0x61fc4d...8aea8d` | ⚠️ Unaudited |
+| TransitionDisputer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149297 | `0x5d3c0f...7e007f` | ⚠️ Unaudited |
+| TransitionEvaluator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-149295 | `0x0762d3...381cb5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,9 +116,35 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [REP-Celer Layer2 Finance v2-2021-06-25.pdf](https://github.com/celer-network/layer2-finance-v2-contracts/blob/main/audit/REP-Celer%20Layer2%20Finance%20v2-2021-06-25.pdf) | REP | Audit | 2021-06 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [REP-Celer Layer2 Finance v2-2021-06-25.pdf](https://github.com/celer-network/layer2-finance-v2-contracts/blob/main/audit/REP-Celer%20Layer2%20Finance%20v2-2021-06-25.pdf) | REP | Audit | 2021-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 13 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [24108] REP-Celer Layer2 Finance v2-2021-06-25.pdf — no match: Extracted 13 contracts from the scope table and findings locations. Audit date from delivery date.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| REP-Celer Layer2 Finance v2-2021-06-25.pdf | Registry | unmatched — not counted | — | listed in scope table | no |
+| REP-Celer Layer2 Finance v2-2021-06-25.pdf | RollupChain | unmatched — not counted | — | listed in scope table | no |
+| REP-Celer Layer2 Finance v2-2021-06-25.pdf | TransitionApplier1 | unmatched — not counted | — | listed in scope table | no |
+| REP-Celer Layer2 Finance v2-2021-06-25.pdf | TransitionApplier2 | unmatched — not counted | — | listed in scope table | no |
+| REP-Celer Layer2 Finance v2-2021-06-25.pdf | TransitionDisputer | unmatched — not counted | — | listed in scope table | no |
+| REP-Celer Layer2 Finance v2-2021-06-25.pdf | TransitionEvaluator | unmatched — not counted | — | listed in scope table | no |
+| REP-Celer Layer2 Finance v2-2021-06-25.pdf | DataTypes | unmatched — not counted | — | listed in scope table | no |
+| REP-Celer Layer2 Finance v2-2021-06-25.pdf | ErrMsg | unmatched — not counted | — | listed in scope table | no |
+| REP-Celer Layer2 Finance v2-2021-06-25.pdf | MerkleTree | unmatched — not counted | — | listed in scope table | no |
+| REP-Celer Layer2 Finance v2-2021-06-25.pdf | Transitions | unmatched — not counted | — | listed in scope table | no |
+| REP-Celer Layer2 Finance v2-2021-06-25.pdf | StrategyDummy | unmatched — not counted | — | listed in scope table | no |
+| REP-Celer Layer2 Finance v2-2021-06-25.pdf | IStrategy | unmatched — not counted | — | mentioned in finding ISK-01 location | no |
+| REP-Celer Layer2 Finance v2-2021-06-25.pdf | IWETH | unmatched — not counted | — | mentioned in finding IWE-01 location | no |
 
 ## Coverage Gaps
 
@@ -101,10 +156,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 5 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -112,7 +167,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 13 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1
 - Match method counts: n/a
 
 Zero-match audit list:

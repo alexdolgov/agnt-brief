@@ -1,0 +1,51 @@
+{
+  "component": "BeaconProxy",
+  "main_contract": "BeaconProxy",
+  "source_entry_count": 14,
+  "source_file_count": 14,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BeaconProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://1322102881-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5HvxIwoS8YhIHItpA1lt%2Fuploads%2FOaz0PbKGiCBzBI2hKZcv%2FNM_0434_METAPOOL_FINAL.pdf",
+    "https://github.com/Meta-Pool/staking-pool-aurora/blob/main/audits/MetaPool_ETH_Staking_Staking_Pools_Aurora_Smart_Contract_Security.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd06f6a56c5f599cb375b616df306f32b7f6f4a0e",
+      "is_proxy": true,
+      "implementation_address": "0xd3db79d2d00a6b82531d8ccf65c376d9ee9513ac",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396583"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdf261f967e87b2aa44e18a22f4ace5d7f74f03cc",
+      "is_proxy": true,
+      "implementation_address": "0xea9fec1ff24b523424f21eea5c249f9b29a1aa81",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396585"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe55e5fde6c25ac4ad75d867817d2d8a45836af49",
+      "is_proxy": true,
+      "implementation_address": "0xcb894c063c74053c9401ac8fdd9a9f2bb1a03c61",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396586"
+    }
+  ]
+}

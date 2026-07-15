@@ -1,9 +1,8 @@
 // SPDX-License-Identifier: MIT
 
-// From https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/ReentrancyGuard.sol
-// Subject to the MIT license.
+// File @openzeppelin/contracts/security/ReentrancyGuard.sol@v4.0.0
 
-pragma solidity >=0.6.0 <0.8.0;
+pragma solidity ^0.8.0;
 
 /**
  * @dev Contract module that helps prevent reentrant calls to a function.
@@ -38,7 +37,7 @@ abstract contract ReentrancyGuard {
 
     uint256 private _status;
 
-    constructor () internal {
+    constructor () {
         _status = _NOT_ENTERED;
     }
 

@@ -1,58 +1,30 @@
 {
   "component": "BeefyFinanceArbitrumFacet",
   "main_contract": "BeefyFinanceArbitrumFacet",
-  "source_file_count": 79,
-  "deployment_count": 6,
-  "audited": false,
-  "audits_covering": [],
+  "source_entry_count": 78,
+  "source_file_count": 78,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BeefyFinanceArbitrumFacet\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/AstraSec-AuditReport-DeltaPrime-Final.pdf"
+  ],
   "addresses": [
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x10aaefc8787a41f7ee44cb032859d1f412104c71",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0xa264670a3f118602acec40ec18228d50a4b026d6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xb7918417add60e9f2a48d00cf4cab6de90ee2ba1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xbfb4528921e9139ca8c454e388a4a356db15d59c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xd8659a6ef66a94c8d6fe469fd6f291e7c1c22072",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xf2e90df5388f00a2ab40f77f2ce663ca03dcf37a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393623"
     }
   ]
 }

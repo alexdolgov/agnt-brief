@@ -1,43 +1,72 @@
 # Agentic Audit Brief: BSCSwap
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: BSCSwap (`bscswap`)
+- Website: [https://bscswap.com/](https://bscswap.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-04T11:05:40.821Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
-- Chains: bsc
-- Contract surface: 16 unique implementations (19 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $4,162,856.01
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+The closed normalized authority records no EVM contract logic or eligible security audit for this project. This is an explicit cohort state, not a skipped export.
+
 ## Project Description
 
-Dexs. Structurally: 29 project-authored contract(s) across 1 chain(s); 11 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for BSCSwap in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 2 common project-authored base contract(s) (stakepool, erc20burnable). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 113; live-surface contracts included: 19 (11 live, 8 unknown).
-- Excluded by liveness: 94 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/8 (0.0%)
-- Deployed-live implementations: 8 of 16 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/8
-- Verified + Unaudited implementations: 8
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 8
-- Unique implementations: 16
-- Raw deployments: 19
+- Unverified implementations: 0
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -56,18 +85,9 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 - None
 
-### ⚠️ Verified + Unaudited (8)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BSCswap | unknown | bsc | n/a | [`0xacc234...d82584`](./contracts/bsc-56/0xacc234978a5eb941665fd051ca48765610d82584/) | ⚠️ Unaudited |
-| BSCswapFactory | unknown | bsc | n/a | [`0xce8fd6...d2b8d0`](./contracts/bsc-56/0xce8fd65646f2a2a897755a1188c04ace94d2b8d0/) | ⚠️ Unaudited |
-| BSCswapPair | unknown | bsc | n/a | 2 deployments: bsc [`0xc5c848...541616`](./contracts/bsc-56/0xc5c84863d32f41ad60eb2dead2d69c9553541616/); bsc `0xe61d0d...626e15` | ⚠️ Unaudited |
-| BSCswapRouter | adapter | bsc | n/a | [`0xd95455...21424a`](./contracts/bsc-56/0xd954551853f55deb4ae31407c423e67b1621424a/) | ⚠️ Unaudited |
-| BSWAPStaking | unknown | bsc | n/a | [`0x7b2dac...331e2d`](./contracts/bsc-56/0x7b2dac429df0b39390cd3d4e6a8b8bcceb331e2d/) | ⚠️ Unaudited |
-| BurnPool | core_logic | bsc | n/a | [`0xbeeb41...7e9a12`](./contracts/bsc-56/0xbeeb4173f906e3cb395b04c7ca8ed389a97e9a12/) | ⚠️ Unaudited |
-| LaunchField | unknown | bsc | n/a | 2 deployments: bsc [`0x62d6ee...d4cb08`](./contracts/bsc-56/0x62d6eeaf4e1895ce72bf10f8b0dbdb0e1dd4cb08/); bsc `0xe394b0...c2682a` | ⚠️ Unaudited |
-| LFIVault | core_logic | bsc | n/a | 2 deployments: bsc [`0x2fd8ad...56fca8`](./contracts/bsc-56/0x2fd8ad2546db48cc0666d6f1a12aba3ca056fca8/); bsc `0x785987...036863` | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,25 +101,22 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (8)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x018e97...d134c8` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x1e9c90...2fc1e7` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x3b00cf...0c7d15` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x587f50...9fd8e1` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x8ef09f...7d666c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe112f5...e7394f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe4aea0...91347f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xf6c797...81d63a` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -114,7 +131,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 16 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -122,6 +139,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

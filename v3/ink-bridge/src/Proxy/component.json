@@ -1,14 +1,26 @@
 {
   "component": "Proxy",
   "main_contract": "Proxy",
-  "source_file_count": 15,
-  "deployment_count": 1,
+  "source_entry_count": 16,
+  "source_file_count": 16,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Proxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 7,
   "audited": true,
   "audits_covering": [
+    "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_05-OpNode-TrailOfBits.pdf",
+    "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_11-Invariant_Testing-TrailOfBits.pdf",
+    "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2023_01-Bedrock_Updates-TrailOfBits.pdf",
     "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_02-MCP_L1-Cantina.pdf",
     "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_05-FaultProofs-Sherlock.pdf",
     "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2024_08_Fault-Proofs-No-MIPS_Spearbit.pdf",
-    "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_02-Upgrade13-Spearbit.pdf"
+    "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_02-Upgrade13-Spearbit.pdf",
+    "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2025_03-Interop-Contracts-Spearbit.pdf"
   ],
   "addresses": [
     {
@@ -17,7 +29,69 @@
       "address": "0x10d7b35078d3baabb96dd45a9143b94be65b12cd",
       "is_proxy": true,
       "implementation_address": "0xc040f392e52cb6970ca8e110c280fe24e07c5e2c",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395333"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x14773a8040ff22e3dcbb0c83ec8e33be7d920d38",
+      "is_proxy": true,
+      "implementation_address": "0x71e966ae981d1ce531a7b6d23dc0f27b38409087",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395339"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5d66c1782664115999c47c9fa5cd031f495d3e4f",
+      "is_proxy": true,
+      "implementation_address": "0x97cebbf8959e2a5476fbe9b98a21806ec234609b",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395348"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x62c0a111929fa32cec2f76adba54c16afb6e8364",
+      "is_proxy": true,
+      "implementation_address": "0xd392c27b84b1ca776528f2704bc67b82a62132d2",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395353"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x661235a238b11191211fa95d4dd9e423d521e0be",
+      "is_proxy": true,
+      "implementation_address": "0x74f1ac50eb0be98853805d381c884f5f9abdecf9",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395361"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa8b389a82e088b164cd03230e900980cced34d29",
+      "is_proxy": true,
+      "implementation_address": "0x8ee6fb13c6c9a7e401531168e196fbf8b05ceabb",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395377"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xde744491bcf6b2dd2f32146364ea1487d75e2509",
+      "is_proxy": true,
+      "implementation_address": "0x7a78aa7d5dec2f8b368ca13f00df2fa4e5de3c3f",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395380"
     }
   ]
 }

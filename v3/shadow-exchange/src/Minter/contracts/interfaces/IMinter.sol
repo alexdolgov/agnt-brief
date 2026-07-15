@@ -49,7 +49,7 @@ interface IMinter {
 
     /// @notice kicks off the initial minting and variable declarations
     function kickoff(
-        address _emissionsToken,
+        address _shadow,
         address _voter,
         uint256 _initialWeeklyEmissions,
         uint256 _initialMultiplier,

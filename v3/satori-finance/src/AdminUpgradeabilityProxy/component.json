@@ -1,42 +1,28 @@
 {
   "component": "AdminUpgradeabilityProxy",
   "main_contract": "AdminUpgradeabilityProxy",
-  "source_file_count": 4,
-  "deployment_count": 4,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AdminUpgradeabilityProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x2d8ba08c19ae55bb785ca5b3c720f78917aafc4f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x3bfce37b5401bef13c78830d3a9fb14294d18c4f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xb70f128f3e83bdc359c386528df371096006bc74",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xe7e39da693c9d60340554d3429879ac189b294ce",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "address": "0xe95a203b1a91a908f9b9ce46459d101078c2c3cb",
+      "is_proxy": true,
+      "implementation_address": "0xe672e0e0101a7f58d728751e2a5e6da5ff1fda64",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,7 +1,15 @@
 {
   "component": "BongBearsONFT",
   "main_contract": "BongBearsONFT",
+  "source_entry_count": 51,
   "source_file_count": 51,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BongBearsONFT\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x141de07e5d4c4759ec9301da106115d4841f66cd",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392044"
     }
   ]
 }

@@ -1,26 +1,28 @@
 {
   "component": "StakedSlipstreamAM",
   "main_contract": "StakedSlipstreamAM",
-  "source_file_count": 28,
-  "deployment_count": 3,
+  "source_entry_count": 24,
+  "source_file_count": 24,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StakedSlipstreamAM\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
+      "chain": "optimism",
+      "chain_id": 10,
       "address": "0x1dc7a0f5336f52724b650e39174cfcbbedd67bf1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xbed6c3e35b9b1e044b3bc71465769edfdc0fdd4c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391168"
     },
     {
       "chain": "base",
@@ -28,7 +30,9 @@
       "address": "0xe0f20be5886f11cbcd2cb5ba9987bcbbf1d8ca7b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391294"
     }
   ]
 }

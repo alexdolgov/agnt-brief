@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { IERC20Metadata } from "openzeppelin-contracts/token/ERC20/extensions/IERC20Metadata.sol";
 
@@ -146,8 +146,7 @@ interface IAccToke {
     ) external returns (uint256);
 
     /**
-     * @notice Preview the number of points that would be returned for the
-     * given amount and duration.
+     * @notice Calculate points based on duration from the staking system's start epoch to the user's staking end date
      *
      * @param amount TOKE to be staked
      * @param duration number of seconds to stake for

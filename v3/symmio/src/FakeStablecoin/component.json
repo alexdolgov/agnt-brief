@@ -1,7 +1,15 @@
 {
   "component": "FakeStablecoin",
   "main_contract": "FakeStablecoin",
+  "source_entry_count": 7,
   "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FakeStablecoin\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x50e88c692b137b8a51b6017026ef414651e0d5ba",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400031"
     }
   ]
 }

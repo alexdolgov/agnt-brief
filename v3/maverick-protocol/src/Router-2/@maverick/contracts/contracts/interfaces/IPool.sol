@@ -1,41 +1,17 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
-
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "./IFactory.sol";
-
 interface IPool {
-    event Swap(
-        address sender,
-        address recipient,
-        bool tokenAIn,
-        bool exactOutput,
-        uint256 amountIn,
-        uint256 amountOut,
-        int32 activeTick
-    );
-
+    event Swap(address sender, address recipient, bool tokenAIn, bool exactOutput, uint256 amountIn, uint256 amountOut, int32 activeTick);
     event AddLiquidity(address indexed sender, uint256 indexed tokenId, BinDelta[] binDeltas);
-
     event MigrateBinsUpStack(address indexed sender, uint128 binId, uint32 maxRecursion);
-
     event TransferLiquidity(uint256 fromTokenId, uint256 toTokenId, RemoveLiquidityParams[] params);
-
-    event RemoveLiquidity(
-        address indexed sender,
-        address indexed recipient,
-        uint256 indexed tokenId,
-        BinDelta[] binDeltas
-    );
-
+    event RemoveLiquidity(address indexed sender, address indexed recipient, uint256 indexed tokenId, BinDelta[] binDeltas);
     event BinMerged(uint128 indexed binId, uint128 reserveA, uint128 reserveB, uint128 mergeId);
-
     event BinMoved(uint128 indexed binId, int128 previousTick, int128 newTick);
-
     event ProtocolFeeCollected(uint256 protocolFee, bool isTokenA);
-
     event SetProtocolFeeRatio(uint256 protocolFee);
-
     /// @notice return parameters for Add/Remove liquidity
     /// @param binId of the bin that changed
     /// @param kind one of the 4 Kinds (0=static, 1=right, 2=left, 3=both)
@@ -53,7 +29,6 @@ interface IPool {
         int32 lowerTick;
         bool isActive;
     }
-
     /// @notice time weighted average state
     /// @param twa the twa at the last update instant
     /// @param value the new value that was passed in at the last update
@@ -64,7 +39,6 @@ interface IPool {
         int96 value;
         uint64 lastTimestamp;
     }
-
     /// @notice bin state parameters
     /// @param kind one of the 4 Kinds (0=static, 1=right, 2=left, 3=both)
     /// @param lowerTick is the lower price tick of the bin in its current state
@@ -82,7 +56,6 @@ interface IPool {
         uint8 kind;
         int32 lowerTick;
     }
-
     /// @notice Parameters for each bin that will get new liquidity
     /// @param kind one of the 4 Kinds (0=static, 1=right, 2=left, 3=both)
     /// @param pos bin position
@@ -97,7 +70,6 @@ interface IPool {
         uint128 deltaA;
         uint128 deltaB;
     }
-
     /// @notice Parameters for each bin that will have liquidity removed
     /// @param binId index of the bin losing liquidity
     /// @param amount LP balance amount to remove
@@ -105,7 +77,6 @@ interface IPool {
         uint128 binId;
         uint128 amount;
     }
-
     /// @notice State of the pool
     /// @param activeTick  current bin position that contains the active bins
     /// @param status pool status.  e.g. locked or unlocked; status values
@@ -119,40 +90,30 @@ interface IPool {
         uint128 binCounter;
         uint64 protocolFeeRatio;
     }
-
     /// @notice fee for pool in 18 decimal format
     function fee() external view returns (uint256);
-
     /// @notice tickSpacing of pool where 1.0001^tickSpacing is the bin width
     function tickSpacing() external view returns (uint256);
-
     /// @notice address of token A
     function tokenA() external view returns (IERC20);
-
     /// @notice address of token B
     function tokenB() external view returns (IERC20);
-
     /// @notice address of Factory
     function factory() external view returns (IFactory);
-
     /// @notice bitmap of active bins
     function binMap(int32 tick) external view returns (uint256);
-
     /// @notice mapping of tick/kind to binId
     function binPositions(int32 tick, uint256 kind) external view returns (uint128);
-
     /// @notice internal accounting of the sum tokenA balance across bins
     function binBalanceA() external view returns (uint128);
-
     /// @notice internal accounting of the sum tokenB balance across bins
     function binBalanceB() external view returns (uint128);
-
-    /// @notice log_binWidth of the time weighted average price
+    /// @notice Twa state values
     function getTwa() external view returns (TwaState memory);
-
+    /// @notice log base binWidth of the time weighted average price
+    function getCurrentTwa() external view returns (int256);
     /// @notice pool state
     function getState() external view returns (State memory);
-
     /// @notice Add liquidity to a pool.
     /// @param tokenId NFT token ID that will hold the position
     /// @param params array of AddLiquidityParams that specify the mode and
@@ -170,7 +131,6 @@ interface IPool {
             uint256 tokenBAmount,
             BinDelta[] memory binDeltas
         );
-
     /// @notice Transfer liquidity in an array of bins from one nft tokenId
     //to another
     /// @param fromTokenId NFT token ID that holds the position being transferred
@@ -181,7 +141,6 @@ interface IPool {
         uint256 toTokenId,
         RemoveLiquidityParams[] calldata params
     ) external;
-
     /// @notice Remove liquidity from a pool.
     /// @param recipient address that will receive the removed tokens
     /// @param tokenId NFT token ID that holds the position being removed
@@ -198,14 +157,12 @@ interface IPool {
             uint256 tokenBOut,
             BinDelta[] memory binDeltas
         );
-
     /// @notice Migrate bins up the linked list of merged bins so that its
     //mergeId is the currrent active bin.
     /// @param binId is an array of the binIds to be migrated
     /// @param maxRecursion is the maximum recursion depth of the migration. set to
     //zero to recurse until the active bin is found.
     function migrateBinUpStack(uint128 binId, uint32 maxRecursion) external;
-
     /// @notice swap tokens
     /// @param recipient address that will receive the output tokens
     /// @param amount amount of token that is either the input if exactOutput
@@ -227,20 +184,16 @@ interface IPool {
         uint256 sqrtPriceLimit,
         bytes calldata data
     ) external returns (uint256 amountIn, uint256 amountOut);
-
     /// @notice bin information for a given binId
     function getBin(uint128 binId) external view returns (BinState memory bin);
-
     /// @notice LP token balance for a given tokenId at a given binId
     function balanceOf(uint256 tokenId, uint128 binId) external view returns (uint256 lpToken);
-
     /// @notice tokenA scale value
     /// @dev msb is a flag to indicate whether tokenA has more or less than 18
     //decimals.  Scale is used in conjuction with Math.toScale/Math.fromScale
     //functions to convert from token amounts to D18 scale internal pool
     //accounting.
     function tokenAScale() external view returns (uint256);
-
     /// @notice tokenB scale value
     /// @dev msb is a flag to indicate whether tokenA has more or less than 18
     //decimals.  Scale is used in conjuction with Math.toScale/Math.fromScale

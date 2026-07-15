@@ -1,10 +1,20 @@
 {
   "component": "DemaxPlatform",
   "main_contract": "DemaxPlatform",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DemaxPlatform\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://drive.google.com/file/d/1WlKunRKaWzGyN1iWyT1bE8C7IHOrfikK/view?usp=sharing"
+  ],
   "addresses": [
     {
       "chain": "bsc",
@@ -12,7 +22,9 @@
       "address": "0x42591f57f707739b95c5c486c014b525f19d70ca",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402561"
     }
   ]
 }

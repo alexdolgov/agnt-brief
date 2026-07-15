@@ -1,11 +1,15 @@
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.17;
 
 bytes32 constant CONFIGURATOR_ROLE = keccak256("CONFIGURATOR");
+bytes32 constant AGGREGATE_VAULT_ROLE = keccak256("AGGREGATE_VAULT");
+bytes32 constant REQUEST_HANDLER = keccak256("REQUEST_HANDLER");
 bytes32 constant KEEPER_ROLE = keccak256("KEEPER_ROLE");
+bytes32 constant EXECUTION_KEEPER = keccak256("EXECUTION_KEEPER");
 bytes32 constant SWAP_KEEPER = keccak256("SWAP_KEEPER");
 
 /// @title Auth
-/// @author Umami Developers
+/// @author Umami Devs
 /// @notice Simple centralized ACL
 contract Auth {
     /// @dev user not authorized with given role
@@ -37,6 +41,8 @@ contract Auth {
     }
 }
 
+/// @title GlobalACL
+/// @author Umami Devs
 abstract contract GlobalACL {
     Auth public immutable AUTH;
 
@@ -47,6 +53,21 @@ abstract contract GlobalACL {
 
     modifier onlyConfigurator() {
         AUTH.onlyRole(CONFIGURATOR_ROLE, msg.sender);
+        _;
+    }
+
+    modifier onlyAggregateVault() {
+        AUTH.onlyRole(AGGREGATE_VAULT_ROLE, msg.sender);
+        _;
+    }
+
+    modifier onlyRequestHandler() {
+        AUTH.onlyRole(REQUEST_HANDLER, msg.sender);
+        _;
+    }
+
+    modifier onlyExecutionKeeper() {
+        AUTH.onlyRole(EXECUTION_KEEPER, msg.sender);
         _;
     }
 

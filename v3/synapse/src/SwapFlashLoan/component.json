@@ -1,8 +1,16 @@
 {
   "component": "SwapFlashLoan",
   "main_contract": "SwapFlashLoan",
+  "source_entry_count": 26,
   "source_file_count": 26,
-  "deployment_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SwapFlashLoan\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,9 @@
       "address": "0x1116898dda4015ed8ddefb84b6e8bc24528af2d8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400082"
     },
     {
       "chain": "bsc",
@@ -20,7 +30,9 @@
       "address": "0x28ec0b36f0819ecb5005cab836f4ed5a2eca4d13",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400100"
     },
     {
       "chain": "polygon",
@@ -28,15 +40,9 @@
       "address": "0x85fcd7dd0a1e1a9fcd5fd886ed522de8221c3ee5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xaa959ea09a10d1faced135cb4268aa942f64892c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400107"
     },
     {
       "chain": "avalanche",
@@ -44,7 +50,9 @@
       "address": "0xed2a7edd7413021d440b09d654f3b87712abab66",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400140"
     }
   ]
 }

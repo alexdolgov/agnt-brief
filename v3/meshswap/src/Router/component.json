@@ -1,10 +1,21 @@
 {
   "component": "Router",
   "main_contract": "Router",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Router\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/meshswap-fi/meshswap/blob/main/audit/%5BMoveLabs%5D_Security_Analysis_Report_Final.pdf",
+    "https://github.com/meshswap-fi/meshswap/blob/main/audit/%5BTheori%5D_meshswap_audit_rev1.0.pdf"
+  ],
   "addresses": [
     {
       "chain": "polygon",
@@ -12,7 +23,9 @@
       "address": "0x10f4a785f458bc144e3706575924889954946639",
       "is_proxy": true,
       "implementation_address": "0xd9276178f79631c3804f96b634c0250293ce8172",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403432"
     }
   ]
 }

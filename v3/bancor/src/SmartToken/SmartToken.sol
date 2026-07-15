@@ -1,34 +1,14 @@
-pragma solidity ^0.4.18;
+pragma solidity ^0.4.11;
 
 /*
-    Utilities & Common Modifiers
+    Overflow protected math functions
 */
-contract Utils {
+contract SafeMath {
     /**
         constructor
     */
-    function Utils() public {
+    function SafeMath() {
     }
-
-    // verifies that an amount is greater than zero
-    modifier greaterThanZero(uint256 _amount) {
-        require(_amount > 0);
-        _;
-    }
-
-    // validates an address - currently only checks that it isn't null
-    modifier validAddress(address _address) {
-        require(_address != address(0));
-        _;
-    }
-
-    // verifies that the address is different than this contract address
-    modifier notThis(address _address) {
-        require(_address != address(this));
-        _;
-    }
-
-    // Overflow protected math functions
 
     /**
         @dev returns the sum of _x and _y, asserts if the calculation overflows
@@ -38,7 +18,7 @@ contract Utils {
 
         @return sum
     */
-    function safeAdd(uint256 _x, uint256 _y) internal pure returns (uint256) {
+    function safeAdd(uint256 _x, uint256 _y) internal returns (uint256) {
         uint256 z = _x + _y;
         assert(z >= _x);
         return z;
@@ -52,7 +32,7 @@ contract Utils {
 
         @return difference
     */
-    function safeSub(uint256 _x, uint256 _y) internal pure returns (uint256) {
+    function safeSub(uint256 _x, uint256 _y) internal returns (uint256) {
         assert(_x >= _y);
         return _x - _y;
     }
@@ -65,19 +45,19 @@ contract Utils {
 
         @return product
     */
-    function safeMul(uint256 _x, uint256 _y) internal pure returns (uint256) {
+    function safeMul(uint256 _x, uint256 _y) internal returns (uint256) {
         uint256 z = _x * _y;
         assert(_x == 0 || z / _x == _y);
         return z;
     }
-}
+} 
 
 /*
     Owned contract interface
 */
 contract IOwned {
     // this function isn't abstract since the compiler emits automatically generated getter functions as external
-    function owner() public view returns (address) {}
+    function owner() public constant returns (address owner) { owner; }
 
     function transferOwnership(address _newOwner) public;
     function acceptOwnership() public;
@@ -90,12 +70,12 @@ contract Owned is IOwned {
     address public owner;
     address public newOwner;
 
-    event OwnerUpdate(address indexed _prevOwner, address indexed _newOwner);
+    event OwnerUpdate(address _prevOwner, address _newOwner);
 
     /**
         @dev constructor
     */
-    function Owned() public {
+    function Owned() {
         owner = msg.sender;
     }
 
@@ -107,7 +87,7 @@ contract Owned is IOwned {
 
     /**
         @dev allows transferring the contract ownership
-        the new owner still needs to accept the transfer
+        the new owner still need to accept the transfer
         can only be called by the contract owner
 
         @param _newOwner    new contract owner
@@ -124,7 +104,59 @@ contract Owned is IOwned {
         require(msg.sender == newOwner);
         OwnerUpdate(owner, newOwner);
         owner = newOwner;
-        newOwner = address(0);
+        newOwner = 0x0;
+    }
+}
+
+/*
+    Token Holder interface
+*/
+contract ITokenHolder is IOwned {
+    function withdrawTokens(IERC20Token _token, address _to, uint256 _amount) public;
+}
+
+/*
+    We consider every contract to be a 'token holder' since it's currently not possible
+    for a contract to deny receiving tokens.
+
+    The TokenHolder's contract sole purpose is to provide a safety mechanism that allows
+    the owner to send tokens that were sent to the contract by mistake back to their sender.
+*/
+contract TokenHolder is ITokenHolder, Owned {
+    /**
+        @dev constructor
+    */
+    function TokenHolder() {
+    }
+
+    // validates an address - currently only checks that it isn't null
+    modifier validAddress(address _address) {
+        require(_address != 0x0);
+        _;
+    }
+
+    // verifies that the address is different than this contract address
+    modifier notThis(address _address) {
+        require(_address != address(this));
+        _;
+    }
+
+    /**
+        @dev withdraws tokens held by the contract and sends them to an account
+        can only be called by the owner
+
+        @param _token   ERC20 token contract address
+        @param _to      account to receive the new amount
+        @param _amount  amount to withdraw
+    */
+    function withdrawTokens(IERC20Token _token, address _to, uint256 _amount)
+        public
+        ownerOnly
+        validAddress(_token)
+        validAddress(_to)
+        notThis(_to)
+    {
+        assert(_token.transfer(_to, _amount));
     }
 }
 
@@ -133,12 +165,12 @@ contract Owned is IOwned {
 */
 contract IERC20Token {
     // these functions aren't abstract since the compiler emits automatically generated getter functions as external
-    function name() public view returns (string) {}
-    function symbol() public view returns (string) {}
-    function decimals() public view returns (uint8) {}
-    function totalSupply() public view returns (uint256) {}
-    function balanceOf(address _owner) public view returns (uint256) { _owner; }
-    function allowance(address _owner, address _spender) public view returns (uint256) { _owner; _spender; }
+    function name() public constant returns (string name) { name; }
+    function symbol() public constant returns (string symbol) { symbol; }
+    function decimals() public constant returns (uint8 decimals) { decimals; }
+    function totalSupply() public constant returns (uint256 totalSupply) { totalSupply; }
+    function balanceOf(address _owner) public constant returns (uint256 balance) { _owner; balance; }
+    function allowance(address _owner, address _spender) public constant returns (uint256 remaining) { _owner; _spender; remaining; }
 
     function transfer(address _to, uint256 _value) public returns (bool success);
     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success);
@@ -148,7 +180,7 @@ contract IERC20Token {
 /**
     ERC20 Standard Token implementation
 */
-contract ERC20Token is IERC20Token, Utils {
+contract ERC20Token is IERC20Token, SafeMath {
     string public standard = 'Token 0.1';
     string public name = '';
     string public symbol = '';
@@ -167,12 +199,18 @@ contract ERC20Token is IERC20Token, Utils {
         @param _symbol      token symbol
         @param _decimals    decimal points, for display purposes
     */
-    function ERC20Token(string _name, string _symbol, uint8 _decimals) public {
+    function ERC20Token(string _name, string _symbol, uint8 _decimals) {
         require(bytes(_name).length > 0 && bytes(_symbol).length > 0); // validate input
 
         name = _name;
         symbol = _symbol;
         decimals = _decimals;
+    }
+
+    // validates an address - currently only checks that it isn't null
+    modifier validAddress(address _address) {
+        require(_address != 0x0);
+        _;
     }
 
     /**
@@ -246,61 +284,21 @@ contract ERC20Token is IERC20Token, Utils {
 }
 
 /*
-    Token Holder interface
-*/
-contract ITokenHolder is IOwned {
-    function withdrawTokens(IERC20Token _token, address _to, uint256 _amount) public;
-}
-
-/*
-    We consider every contract to be a 'token holder' since it's currently not possible
-    for a contract to deny receiving tokens.
-
-    The TokenHolder's contract sole purpose is to provide a safety mechanism that allows
-    the owner to send tokens that were sent to the contract by mistake back to their sender.
-*/
-contract TokenHolder is ITokenHolder, Owned, Utils {
-    /**
-        @dev constructor
-    */
-    function TokenHolder() public {
-    }
-
-    /**
-        @dev withdraws tokens held by the contract and sends them to an account
-        can only be called by the owner
-
-        @param _token   ERC20 token contract address
-        @param _to      account to receive the new amount
-        @param _amount  amount to withdraw
-    */
-    function withdrawTokens(IERC20Token _token, address _to, uint256 _amount)
-        public
-        ownerOnly
-        validAddress(_token)
-        validAddress(_to)
-        notThis(_to)
-    {
-        assert(_token.transfer(_to, _amount));
-    }
-}
-
-/*
     Smart Token interface
 */
-contract ISmartToken is IOwned, IERC20Token {
+contract ISmartToken is ITokenHolder, IERC20Token {
     function disableTransfers(bool _disable) public;
     function issue(address _to, uint256 _amount) public;
     function destroy(address _from, uint256 _amount) public;
 }
 
 /*
-    Smart Token v0.3
+    Smart Token v0.2
 
     'Owned' is specified here for readability reasons
 */
-contract SmartToken is ISmartToken, Owned, ERC20Token, TokenHolder {
-    string public version = '0.3';
+contract SmartToken is ISmartToken, ERC20Token, Owned, TokenHolder {
+    string public version = '0.2';
 
     bool public transfersEnabled = true;    // true if transfer/transferFrom are enabled, false if not
 
@@ -315,13 +313,13 @@ contract SmartToken is ISmartToken, Owned, ERC20Token, TokenHolder {
         @dev constructor
 
         @param _name       token name
-        @param _symbol     token short symbol, minimum 1 character
+        @param _symbol     token short symbol, 1-6 characters
         @param _decimals   for display purposes only
     */
     function SmartToken(string _name, string _symbol, uint8 _decimals)
-        public
         ERC20Token(_name, _symbol, _decimals)
     {
+        require(bytes(_symbol).length <= 6); // validate input
         NewSmartToken(address(this));
     }
 
@@ -363,14 +361,15 @@ contract SmartToken is ISmartToken, Owned, ERC20Token, TokenHolder {
 
     /**
         @dev removes tokens from an account and decreases the token supply
-        can be called by the contract owner to destroy tokens from any account or by any holder to destroy tokens from his/her own account
+        can only be called by the contract owner
 
         @param _from       account to remove the amount from
         @param _amount     amount to decrease the supply by
     */
-    function destroy(address _from, uint256 _amount) public {
-        require(msg.sender == _from || msg.sender == owner); // validate input
-
+    function destroy(address _from, uint256 _amount)
+        public
+        ownerOnly
+    {
         balanceOf[_from] = safeSub(balanceOf[_from], _amount);
         totalSupply = safeSub(totalSupply, _amount);
 
@@ -383,7 +382,7 @@ contract SmartToken is ISmartToken, Owned, ERC20Token, TokenHolder {
     /**
         @dev send coins
         throws on any error rather then return a false flag to minimize user errors
-        in addition to the standard checks, the function throws if transfers are disabled
+        note that when transferring to the smart token's address, the coins are actually destroyed
 
         @param _to      target address
         @param _value   transfer amount
@@ -392,13 +391,21 @@ contract SmartToken is ISmartToken, Owned, ERC20Token, TokenHolder {
     */
     function transfer(address _to, uint256 _value) public transfersAllowed returns (bool success) {
         assert(super.transfer(_to, _value));
+
+        // transferring to the contract address destroys tokens
+        if (_to == address(this)) {
+            balanceOf[_to] -= _value;
+            totalSupply -= _value;
+            Destruction(_value);
+        }
+
         return true;
     }
 
     /**
         @dev an account/contract attempts to get the coins
         throws on any error rather then return a false flag to minimize user errors
-        in addition to the standard checks, the function throws if transfers are disabled
+        note that when transferring to the smart token's address, the coins are actually destroyed
 
         @param _from    source address
         @param _to      target address
@@ -408,6 +415,14 @@ contract SmartToken is ISmartToken, Owned, ERC20Token, TokenHolder {
     */
     function transferFrom(address _from, address _to, uint256 _value) public transfersAllowed returns (bool success) {
         assert(super.transferFrom(_from, _to, _value));
+
+        // transferring to the contract address destroys tokens
+        if (_to == address(this)) {
+            balanceOf[_to] -= _value;
+            totalSupply -= _value;
+            Destruction(_value);
+        }
+
         return true;
     }
 }

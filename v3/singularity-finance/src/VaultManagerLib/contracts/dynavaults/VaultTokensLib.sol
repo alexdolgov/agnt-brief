@@ -724,13 +724,13 @@ library VaultTokensLib {
 	}
 
 	/**
-         * @notice Calculates totalAssets for vault without cache
-         * @return total The total assets denominated in deposit tokens
-         */
+	 * @notice Calculates totalAssets for vault without cache
+	 * @return total The total assets denominated in deposit tokens
+	 */
 	function totalAssets() external view returns (uint256 total) {
-	        address referenceAssetOracle = IDynaVaultAPI(VaultGovernanceLib.vault()).referenceAssetOracle();
+		address referenceAssetOracle = IDynaVaultAPI(VaultGovernanceLib.vault()).referenceAssetOracle();
 		TokenStorage storage _storage = tokenStorage();
-	        address depositToken = _storage.tokens[0];
+		address depositToken = _storage.tokens[0];
 		uint256 _nrOfTokens = _storage.tokens.length;
 		for (uint256 i = 0; i < _nrOfTokens; ++i) {
 			address tokenAddress = _storage.tokens[i];
@@ -739,19 +739,19 @@ library VaultTokensLib {
 				total += tokenAmount;
 			} else if (tokenAmount != 0) {
 				(uint256 price, ) = IReferenceAssetOracle(referenceAssetOracle).getPrice(tokenAddress, depositToken);
-		                total += FixedPointMathLib.fullMulDiv(price, tokenAmount, (10 ** IERC20Metadata(tokenAddress).decimals()));
+				total += FixedPointMathLib.fullMulDiv(price, tokenAmount, (10 ** IERC20Metadata(tokenAddress).decimals()));
 			}
 		}
 	}
-	
+
 	/**
-         * @notice Calculates totalAssets for vault using a local price cache to be used by reportAllReservesFromVault
-         * @return total The total assets denominated in deposit tokens
-         */
+	 * @notice Calculates totalAssets for vault using a local price cache to be used by reportAllReservesFromVault
+	 * @return total The total assets denominated in deposit tokens
+	 */
 	function totalAssetsCached() external returns (uint256 total) {
-	        address referenceAssetOracle = IDynaVaultAPI(VaultGovernanceLib.vault()).referenceAssetOracle();
+		address referenceAssetOracle = IDynaVaultAPI(VaultGovernanceLib.vault()).referenceAssetOracle();
 		TokenStorage storage _storage = tokenStorage();
-	        address depositToken = _storage.tokens[0];
+		address depositToken = _storage.tokens[0];
 		uint256 _nrOfTokens = _storage.tokens.length;
 		for (uint256 i = 0; i < _nrOfTokens; ++i) {
 			address tokenAddress = _storage.tokens[i];
@@ -762,28 +762,27 @@ library VaultTokensLib {
 				uint256 price;
 				if (_storage.priceCacheEnabled) price = _storage.priceCache[i];
 				if (price == 0) {
-				   (price, ) = IReferenceAssetOracle(referenceAssetOracle).getPrice(tokenAddress, depositToken);
-				   if (_storage.priceCacheEnabled) _storage.priceCache[i] = price;
+					(price, ) = IReferenceAssetOracle(referenceAssetOracle).getPrice(tokenAddress, depositToken);
+					if (_storage.priceCacheEnabled) _storage.priceCache[i] = price;
 				}
-		                total += FixedPointMathLib.fullMulDiv(price, tokenAmount, (10 ** IERC20Metadata(tokenAddress).decimals()));
+				total += FixedPointMathLib.fullMulDiv(price, tokenAmount, (10 ** IERC20Metadata(tokenAddress).decimals()));
 			}
 		}
 	}
 
-        /**
-         * @notice enables price cache to avoid refetching prices during reporting of reserves when no actions are happening affecting price
-         */
-        function enablePriceCache() external {
+	/**
+	 * @notice enables price cache to avoid refetching prices during reporting of reserves when no actions are happening affecting price
+	 */
+	function enablePriceCache() external {
 		TokenStorage storage _storage = tokenStorage();
-	        _storage.priceCache = new uint256[](_storage.tokens.length);
-	        _storage.priceCacheEnabled = true;
-        }
-        
-        /**
-         * @notice disables price cache to avoid stale prices when actions which affect price might take place after this
-         */
-        function disablePriceCache() external {
-	        tokenStorage().priceCacheEnabled = false;
-        }
+		_storage.priceCache = new uint256[](_storage.tokens.length);
+		_storage.priceCacheEnabled = true;
+	}
 
+	/**
+	 * @notice disables price cache to avoid stale prices when actions which affect price might take place after this
+	 */
+	function disablePriceCache() external {
+		tokenStorage().priceCacheEnabled = false;
+	}
 }

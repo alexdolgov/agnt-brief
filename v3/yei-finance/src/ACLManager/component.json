@@ -1,34 +1,28 @@
 {
   "component": "ACLManager",
   "main_contract": "ACLManager",
-  "source_file_count": 12,
-  "deployment_count": 3,
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ACLManager\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-1329",
       "chain_id": 1329,
-      "address": "0x241995b768c1ae629eb5a6f3749c6e7b8c4d47f2",
+      "address": "0xc6f7283620683bd1fda0c20158a2a589a090eea6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-1329",
-      "chain_id": 1329,
-      "address": "0x932b0def45af6b4df91a223a9e36f5ee62f7c435",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-1329",
-      "chain_id": 1329,
-      "address": "0xb948e837af263e0ac0bfc88e2438666289745a77",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

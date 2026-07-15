@@ -11,6 +11,8 @@ import "../interfaces/external/univ3/ISwapRouter.sol";
 import "../interfaces/vaults/IERC20Vault.sol";
 import "../interfaces/vaults/IUniV3Vault.sol";
 import "../libraries/ExceptionsLibrary.sol";
+import "../libraries/CommonLibrary.sol";
+import "../libraries/external/FullMath.sol";
 import "../libraries/external/TickMath.sol";
 import "../utils/DefaultAccessControlLateInit.sol";
 import "../utils/HStrategyHelper.sol";

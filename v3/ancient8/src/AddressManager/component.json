@@ -1,7 +1,15 @@
 {
   "component": "AddressManager",
   "main_contract": "AddressManager",
+  "source_entry_count": 10,
   "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AddressManager\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x012c341506ee1939e56084f43ae5dbce224ce2af",
       "is_proxy": true,
       "implementation_address": "0x09a25eb69b0d2858800a769da90934371c7174a9",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402252"
     }
   ]
 }

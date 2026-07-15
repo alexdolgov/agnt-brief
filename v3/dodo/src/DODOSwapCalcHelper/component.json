@@ -1,7 +1,15 @@
 {
   "component": "DODOSwapCalcHelper",
   "main_contract": "DODOSwapCalcHelper",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DODOSwapCalcHelper\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0xbcd2fdc3b884cf0dfd932f55ec2fe1fb7e8c62da",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393973"
     }
   ]
 }

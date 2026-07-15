@@ -1,7 +1,15 @@
 {
   "component": "FluidLiteVaultProxy",
   "main_contract": "FluidLiteVaultProxy",
+  "source_entry_count": 10,
   "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FluidLiteVaultProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x273da948aca9261043fbdb2a857bc255ecc29012",
       "is_proxy": true,
       "implementation_address": "0xe16ccc91a8134d428e7b6240177f9e2b227b9743",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403038"
     }
   ]
 }

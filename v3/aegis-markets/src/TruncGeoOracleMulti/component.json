@@ -1,10 +1,20 @@
 {
   "component": "TruncGeoOracleMulti",
   "main_contract": "TruncGeoOracleMulti",
+  "source_entry_count": 29,
   "source_file_count": 29,
-  "deployment_count": 4,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TruncGeoOracleMulti\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://drive.google.com/file/d/1vUWENoQsiQxDuex0WU6mZtwJVmE50Ddc/view?usp=sharing"
+  ],
   "addresses": [
     {
       "chain": "chain-130",
@@ -12,31 +22,9 @@
       "address": "0x22e086c085fbda3214db238f8a930d22228facb5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-130",
-      "chain_id": 130,
-      "address": "0x23ff89455d190e2cff95a65d2ae01d3f170984ba",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-130",
-      "chain_id": 130,
-      "address": "0x2699565b992723113794679b02eff025bebe054a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-130",
-      "chain_id": 130,
-      "address": "0xbe4f23b9488300c532a5d9d8d11b0b8163be6abf",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390499"
     }
   ]
 }

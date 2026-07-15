@@ -1,50 +1,78 @@
 # Agentic Audit Brief: Enosys
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 4 (0 matched; 4 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Enosys (`enosys`)
 - Website: [https://enosys.global](https://enosys.global)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:47.461Z
-- Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
-- Chains: ethereum
-- Contract surface: 2 unique implementations (3 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $14,552,658.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+No contract logic was present for Enosys in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
+
+### Architecture
+
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 4; live-surface contracts included: 3 (3 live, 0 unknown).
-- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/2 (0.0%)
-- Deployed-live implementations: 2 of 2 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/2
-- Verified + Unaudited implementations: 2
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 3
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-10 (fresh)
-- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 2 unknown
+- Audit staleness (calendar age): 1 fresh, 0 aging, 1 stale, 1 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
@@ -58,12 +86,9 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| StandardToken | token | ethereum | n/a | [`0x4a220e...254675`](./contracts/ethereum-1/0x4a220e6096b25eadb88358cb44068a3248254675/) | ⚠️ Unaudited |
-| WrapDepositRedeem | unknown | ethereum | n/a | 2 deployments: ethereum [`0x37aca9...b68970`](./contracts/ethereum-1/0x37aca97a99d1b4260a5e9821d0ef14947fb68970/); ethereum `0x893676...162c51` | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,11 +110,49 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [dedaub.com/audits/flare-finance/enosys-october-20-2025](https://dedaub.com/audits/flare-finance/enosys-october-20-2025) | Dedaub | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
-| [watchpug_audit.pdf (also discovered via alternate URL)](https://github.com/flrfinance/bridge-contracts/raw/main/watchpug_audit.pdf) | WatchPug | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Manual audit seed](https://dedaub.com/audits/flare-finance) | Dedaub | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [dedaub.com/audits/flare-finance/enosys-october-20-2025](https://dedaub.com/audits/flare-finance/enosys-october-20-2025) | Dedaub | Audit | 2025-10 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 19 | high |
+| [watchpug_audit.pdf (also discovered via alternate URL)](https://github.com/flrfinance/bridge-contracts/raw/main/watchpug_audit.pdf) | WatchPug | Audit | 2023-05 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [Manual audit seed](https://dedaub.com/audits/flare-finance) | Dedaub | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [21284] dedaub.com/audits/flare-finance/enosys-october-20-2025 — no match: Extracted contract names from the audit report's scope description and findings. The report states '2 auditors worked on the following contracts' and lists contracts in the findings. The audit date is explicitly given as 'Report Submission Date: October 20, 2025'.
+- [21285] watchpug_audit.pdf — no match: Extracted from the audit report summary and overview sections. The report explicitly lists the codebase and commit hash, and the findings reference these contracts.
+- [24091] Manual audit seed — no match: The provided text is a navigation snippet from a website, not the full audit report. No contract names, scope section, or audit date could be identified.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | Constants | unmatched — not counted | — | mentioned in P1 as containing protocol parameters | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | AddressesRegistry | unmatched — not counted | — | mentioned in P1 as containing variables | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | TroveManager | unmatched — not counted | — | mentioned in H1, M1, L1, L6, L7 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | TroveManagerRedemptionLiquidationFacet | unmatched — not counted | — | mentioned in H1 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | BorrowerOperations | unmatched — not counted | — | mentioned in H2, A2 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | GasPool | unmatched — not counted | — | mentioned in H3 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | SortedTroves | unmatched — not counted | — | mentioned in H4 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | ActivePool | unmatched — not counted | — | mentioned in L4, A3 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | LiquidationBot | unmatched — not counted | — | mentioned in M2, M3, L2, L3, A4, A5 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | PriceFeedFtsoV2Connector | unmatched — not counted | — | mentioned in L5 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | FixedAssetReader | unmatched — not counted | — | mentioned in A1 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | WETHZapper | unmatched — not counted | — | mentioned in L7 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | GasCompZapper | unmatched — not counted | — | mentioned in L7 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | TroveNFT | unmatched — not counted | — | mentioned in A6 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | IBoldToken | unmatched — not counted | — | mentioned in A8 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | ITroveNFT | unmatched — not counted | — | mentioned in A6 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | IERC721 | unmatched — not counted | — | mentioned in A6 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | ERC721Upgradeable | unmatched — not counted | — | mentioned in A6 | no |
+| dedaub.com/audits/flare-finance/enosys-october-20-2025 | INonfungiblePositionManager | unmatched — not counted | — | mentioned in A2 | no |
+| watchpug_audit.pdf | Multisig | unmatched — not counted | — | Listed in scope table and referenced in findings. | no |
+| watchpug_audit.pdf | Wrap | unmatched — not counted | — | Listed in scope table and referenced in findings. | no |
+| watchpug_audit.pdf | WrapDepositRedeem | unmatched — not counted | — | Listed in scope table and referenced in findings. | no |
+| watchpug_audit.pdf | WrapDepositRedeemCustodian | unmatched — not counted | — | Listed in scope table and referenced in findings. | no |
 
 ## Coverage Gaps
 
@@ -104,7 +167,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -112,7 +175,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 23 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=2, low=1
 - Match method counts: n/a
 
 Zero-match audit list:

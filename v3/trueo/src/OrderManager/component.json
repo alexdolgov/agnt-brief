@@ -1,7 +1,15 @@
 {
   "component": "OrderManager",
   "main_contract": "OrderManager",
-  "source_file_count": 68,
+  "source_entry_count": 66,
+  "source_file_count": 66,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OrderManager\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x1cdb1c43eb64e99780ea9d3c7162c23432c59a1a",
+      "address": "0x8e5e63f69bf7ef2a24f5247c2bfc3946b95e3da7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400461"
     }
   ]
 }

@@ -1,13 +1,18 @@
 {
   "component": "OriginalTokenVault-2",
   "main_contract": "OriginalTokenVault",
+  "source_entry_count": 16,
   "source_file_count": 16,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OriginalTokenVault-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/PeckShield_pegged.pdf",
-    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/SlowMist_pegged.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
@@ -15,7 +20,9 @@
       "address": "0x78bc5ee9f11d133a08b331c2e18fe81be0ed02dc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392701"
     },
     {
       "chain": "polygon",
@@ -23,7 +30,9 @@
       "address": "0xc1a2d967dfaa6a10f3461bc21864c23c1dd51eea",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392708"
     }
   ]
 }

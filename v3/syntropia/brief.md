@@ -1,83 +1,93 @@
 # Agentic Audit Brief: Syntropia
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Syntropia (`syntropia`)
 - Website: [https://syntropia.ai/](https://syntropia.ai/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:59.389Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
-- Chains: ethereum
-- Contract surface: 5 unique implementations (8 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $4,425,245.92
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+The closed normalized authority records no EVM contract logic or eligible security audit for this project. This is an explicit cohort state, not a skipped export.
+
 ## Project Description
 
-Yield Aggregator. Structurally: 6 project-authored contract(s) across 1 chain(s); 2 ERC4626 vaults, 2 ERC20 tokens, 1 Chainlink feed; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for Syntropia in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 4 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
 
-## Fork Lineage
+## Logic Topography
 
-This project reuses audited code from **Lagoon** (`lagoon`) in the Vault_v0_5_0 subsystem.
-11 audits inherited from `lagoon`, scoped to that subsystem.
-
-Total inherited audits: 11. Inherited coverage reflects forked/shared code audited by the origin project — it is not a direct audit of this project.
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 13; live-surface contracts included: 8 (7 live, 1 unknown).
-- Excluded by liveness: 5 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 1/4 (25.0%)
-- Deployed-live implementations: 4 of 5 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 1/4
-- Verified + Unaudited implementations: 3
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 5
-- Raw deployments: 8
-- Audits discovered: 11 (0 direct, 11 inherited from forked code)
-- Scoreable audits (matched contracts): 11
+- Unverified implementations: 0
+- Unique implementations: 0
+- Raw deployments: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2026-05 (fresh)
-- Audit staleness (calendar age): 3 fresh, 0 aging, 0 stale, 8 unknown
-- Coverage code basis (deployed vs audited code): 1 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
-- Tier 1 coverage: 25.0% (Trail of Bits)
+- Latest audit: n/a (unknown)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| HopperLabs | Tier 2 | 1 | 25.0% | n/a |
-| Nomic Foundation | Tier 2 | 1 | 25.0% | 2026-05 |
-| Trail of Bits | Tier 1 | 1 | 25.0% | 2026-05 |
-| unknown | Tier 2 | 1 | 25.0% | n/a |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Vault_v0_5_0 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x23fbda...d397cb`](./contracts/ethereum-1/0x23fbda54849e8904154c8f8436a59b95b1d397cb/); ethereum `0xc1d5f0...293cf8` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| DelayProxyAdmin | governance | ethereum | n/a | 3 deployments: ethereum [`0x358f9f...334542`](./contracts/ethereum-1/0x358f9ff9eee76bb6fade2a6f5d495e649b334542/); ethereum `0x78ac58...0f2cf4`; ethereum `0xdf2410...f96d24` | ⚠️ Unaudited |
-| OptinProxyFactory | unknown | ethereum | n/a | [`0x245d1c...cfc69d`](./contracts/ethereum-1/0x245d1c095a0ffa6f1af0f7df81818defc9cfc69d/) | ⚠️ Unaudited |
-| OptinProxyFactory | registry | ethereum | n/a | [`0x8d6f54...60f9b1`](./contracts/ethereum-1/0x8d6f5479b14348186fae9bc7e636e947c260f9b1/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,29 +101,22 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xf42bde...01e5a6` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [NM_0304_HopperLabs.pdf](https://content.gitbook.com/content/5vcVbvvRrtwZ0uaFrufF/blobs/aUGQBCCKrkRj2a2JqcU7/NM_0304_HopperLabs.pdf) | HopperLabs | Audit | n/a | unknown | Inherited from Lagoon — forked code, scoped to Vault_v0_5_0 | inherited | 2 | n/a |
-| [lagoon-review.pdf](https://content.gitbook.com/content/5vcVbvvRrtwZ0uaFrufF/blobs/inufZt8d5BRJq6tJWoED/lagoon-review.pdf) | unknown | Audit | n/a | unknown | Inherited from Lagoon — forked code, scoped to Vault_v0_5_0 | inherited | 2 | n/a |
-| [NM_0432_Lagoon.pdf](https://content.gitbook.com/content/5vcVbvvRrtwZ0uaFrufF/blobs/6mNZOJq6XeTjGMcMnM5N/NM_0432_Lagoon.pdf) | unknown | Audit | n/a | unknown | Inherited from Lagoon — forked code, scoped to Vault_v0_5_0 | inherited | 2 | n/a |
-| [spaces/5vcVbvvRrtwZ0uaFrufF/uploads/cjt5DaNb1FBoKp1EL22z/NM_0499_Lagoon.pdf](https://2098527692-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5vcVbvvRrtwZ0uaFrufF%2Fuploads%2Fcjt5DaNb1FBoKp1EL22z%2FNM_0499_Lagoon.pdf) | Nomic Foundation | Audit | n/a | unknown | Inherited from Lagoon — forked code, scoped to Vault_v0_5_0 | inherited | 2 | n/a |
-| [spaces/5vcVbvvRrtwZ0uaFrufF/uploads/6ikCSitYVQQdDDcWfVdp/NM_0516_Lagoon.pdf](https://2098527692-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5vcVbvvRrtwZ0uaFrufF%2Fuploads%2F6ikCSitYVQQdDDcWfVdp%2FNM_0516_Lagoon.pdf) | Nomic Foundation | Audit | n/a | unknown | Inherited from Lagoon — forked code, scoped to Vault_v0_5_0 | inherited | 2 | n/a |
-| [spaces/5vcVbvvRrtwZ0uaFrufF/uploads/8HkE2EU7hepf08gYGPsx/NM_0534_Lagoon.pdf](https://2098527692-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5vcVbvvRrtwZ0uaFrufF%2Fuploads%2F8HkE2EU7hepf08gYGPsx%2FNM_0534_Lagoon.pdf) | Nomic Foundation | Audit | n/a | unknown | Inherited from Lagoon — forked code, scoped to Vault_v0_5_0 | inherited | 2 | n/a |
-| [spaces/5vcVbvvRrtwZ0uaFrufF/uploads/9pXJSEmutn6clKhvly6m/NM_0581-FINAL_Lagoon.pdf](https://2098527692-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5vcVbvvRrtwZ0uaFrufF%2Fuploads%2F9pXJSEmutn6clKhvly6m%2FNM_0581-FINAL_Lagoon.pdf) | Nomic Foundation | Audit | n/a | unknown | Inherited from Lagoon — forked code, scoped to Vault_v0_5_0 | inherited | 2 | n/a |
-| [spaces/5vcVbvvRrtwZ0uaFrufF/uploads/tDP4IRcaDp90PdfyOytL/NM_0534_Bug_Disclosure.pdf](https://2098527692-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5vcVbvvRrtwZ0uaFrufF%2Fuploads%2FtDP4IRcaDp90PdfyOytL%2FNM_0534_Bug_Disclosure.pdf) | Nomic Foundation | Audit | n/a | unknown | Inherited from Lagoon — forked code, scoped to Vault_v0_5_0 | inherited | 2 | n/a |
-| [spaces/5vcVbvvRrtwZ0uaFrufF/uploads/rk5VgBBMxx0fkaXD65tQ/NM_0822_Lagoon.pdf](https://2098527692-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5vcVbvvRrtwZ0uaFrufF%2Fuploads%2Frk5VgBBMxx0fkaXD65tQ%2FNM_0822_Lagoon.pdf) | Nomic Foundation | Audit | 2026-05 | fresh | Inherited from Lagoon — forked code, scoped to Vault_v0_5_0 | inherited | 2 | n/a |
-| [spaces/5vcVbvvRrtwZ0uaFrufF/uploads/3Ig5AUs4tRCYQjsMIas1/ToB-v0.6.0.pdf](https://2098527692-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5vcVbvvRrtwZ0uaFrufF%2Fuploads%2F3Ig5AUs4tRCYQjsMIas1%2FToB-v0.6.0.pdf) | Trail of Bits | Audit | 2026-05 | fresh | Inherited from Lagoon — forked code, scoped to Vault_v0_5_0 | inherited | 2 | n/a |
-| [spaces/5vcVbvvRrtwZ0uaFrufF/uploads/ILDRIc5ZH9HblSRMBoLw/ToB-v0.5.0.pdf](https://2098527692-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F5vcVbvvRrtwZ0uaFrufF%2Fuploads%2FILDRIc5ZH9HblSRMBoLw%2FToB-v0.5.0.pdf) | Trail of Bits | Audit | 2026-03 | fresh | Inherited from Lagoon — forked code, scoped to Vault_v0_5_0 | inherited | 2 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -128,7 +131,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 5 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -136,7 +139,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
-- Match method counts: inherited_name_remap=22
+- Match method counts: n/a
 
 Fork inheritance lineage and inherited audits are included when available.

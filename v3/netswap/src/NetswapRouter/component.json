@@ -1,8 +1,16 @@
 {
   "component": "NetswapRouter",
   "main_contract": "NetswapRouter",
+  "source_entry_count": 5,
   "source_file_count": 5,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/NetswapRouter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://4122350423-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FEbMkSj6wrVk9IfPEsOGH%2Fuploads%2F9mkCS0SDBLKkPGAWCevh%2FNetSwap_audit.pdf"
@@ -14,15 +22,9 @@
       "address": "0x1e876cce41b7b844fde09e38fa1cf00f213bff56",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xf8c8c4b783651a6807742da5f724b465dd1efb25",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397235"
     }
   ]
 }

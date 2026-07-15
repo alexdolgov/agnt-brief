@@ -11,9 +11,8 @@ contract USDa is OFT, AccessControl, Pausable {
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
     bytes32 public constant MINT_ROLE = keccak256("MINT_ROLE");
     bytes32 public constant BURN_ROLE = keccak256("BURN_ROLE");
+    bytes32 public constant PAUSE_ROLE = keccak256("PAUSE_ROLE");
 
-    mapping(address => bool) public mintVault;
-    mapping(address => bool) public burnVault;
     mapping(address => bool) public isBlackListed;
 
     event AddedBlackList(address _addr);
@@ -30,6 +29,7 @@ contract USDa is OFT, AccessControl, Pausable {
         _setRoleAdmin(MANAGER_ROLE, ADMIN_ROLE);
         _setRoleAdmin(MINT_ROLE, ADMIN_ROLE);
         _setRoleAdmin(BURN_ROLE, ADMIN_ROLE);
+        _setRoleAdmin(PAUSE_ROLE, ADMIN_ROLE);
         _setRoleAdmin(ADMIN_ROLE, ADMIN_ROLE);
     }
 
@@ -43,11 +43,11 @@ contract USDa is OFT, AccessControl, Pausable {
         emit RemovedBlackList(_addr);
     }
 
-    function pause() external onlyOwner {
+    function pause() external onlyRole(PAUSE_ROLE) {
         Pausable._pause();
     }
 
-    function unpause() external onlyOwner {
+    function unpause() external onlyRole(PAUSE_ROLE) {
         Pausable._unpause();
     }
 
@@ -60,7 +60,7 @@ contract USDa is OFT, AccessControl, Pausable {
     }
 
     function _update(address from, address to, uint256 value) internal override whenNotPaused {
-        require(!isBlackListed[from] || !isBlackListed[to], "isBlackListed");
+        require(!isBlackListed[from] && !isBlackListed[to], "isBlackListed");
         super._update(from, to, value);
     }
 }

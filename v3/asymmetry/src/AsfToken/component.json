@@ -1,8 +1,16 @@
 {
   "component": "AsfToken",
   "main_contract": "AsfToken",
+  "source_entry_count": 7,
   "source_file_count": 7,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AsfToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,23 +20,9 @@
       "address": "0x59a529070fbb61e6d6c91f952ccb7f35c34cf8aa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x876f12e22c3471e3ca790cfd079a7842db29e7f7",
-      "is_proxy": true,
-      "implementation_address": "0x17969afc774ec28802f1316cd4474c537114600a",
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xdb0f0fd4cb6df6c0e3860336a1514e94f3552082",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391373"
     }
   ]
 }

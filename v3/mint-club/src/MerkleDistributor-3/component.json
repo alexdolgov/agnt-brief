@@ -1,45 +1,28 @@
 {
   "component": "MerkleDistributor-3",
   "main_contract": "MerkleDistributor",
-  "source_file_count": 10,
-  "deployment_count": 4,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Steemhunt/mint.club-v2-contract/blob/main/security-audits/CertiK-20240118.pdf",
-    "https://skynet.certik.com/projects/mint-club"
-  ],
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MerkleDistributor-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x1349a9ddee26fe16d0d44e35b3cb9b0ca18213a4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
+      "chain": "chain-130",
+      "chain_id": 130,
       "address": "0x3bc6b601196752497a68b2625db4f2205c3b150b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x621c335b4bd8f2165e120dc70d3afcafc6628681",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xf44939c1613143ad587c79602182de7dcf593e33",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

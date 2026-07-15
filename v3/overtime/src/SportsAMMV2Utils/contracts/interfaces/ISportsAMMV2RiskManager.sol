@@ -119,5 +119,4 @@ interface ISportsAMMV2RiskManager {
 
     function getCashoutSafeBoxFeeMultiplier() external view returns (uint);
     function getCashoutCooldown() external view returns (uint);
-    function defaultRoundHighQuoteThreshold() external view returns (uint);
 }

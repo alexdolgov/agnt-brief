@@ -1,50 +1,28 @@
 {
   "component": "AaveV3StataDestinationVault",
   "main_contract": "AaveV3StataDestinationVault",
+  "source_entry_count": 75,
   "source_file_count": 75,
-  "deployment_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AaveV3StataDestinationVault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
-    {
-      "chain": "chain-9745",
-      "chain_id": 9745,
-      "address": "0x5dffae9a249db6fc61906bae2c1e640045602ee7",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-9745",
-      "chain_id": 9745,
-      "address": "0x714ffc3c8418739f052c87ed7dea45d68f8ab8e9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-9745",
-      "chain_id": 9745,
-      "address": "0xde4d6c5416ff7584373020fa24f160d193f84855",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-9745",
-      "chain_id": 9745,
-      "address": "0xfc962a39c763f183e02458f6cf9343c0682e5069",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0x00e52ae3cfc140fdf3dff8932500d4ad919c5f4a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391757"
     },
     {
       "chain": "arbitrum",
@@ -52,7 +30,9 @@
       "address": "0xa087e1032dbef8f980c4512f3eb76748c4e7d7bb",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391815"
     },
     {
       "chain": "arbitrum",
@@ -60,7 +40,9 @@
       "address": "0xebcff8cacb781125c35b3742ef328d8639864991",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391857"
     }
   ]
 }

@@ -118,5 +118,4 @@ interface ISportsAMMV2RiskManager {
     function generateCombinations(uint8 n, uint8 k) external pure returns (uint8[][] memory);
 
     function getCashoutSafeBoxFeeMultiplier() external view returns (uint);
-    function getCashoutCooldown() external view returns (uint);
 }

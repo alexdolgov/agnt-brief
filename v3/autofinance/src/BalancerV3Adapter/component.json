@@ -1,26 +1,28 @@
 {
   "component": "BalancerV3Adapter",
   "main_contract": "BalancerV3Adapter",
+  "source_entry_count": 15,
   "source_file_count": 15,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BalancerV3Adapter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x9c8d18739f2d4ca2c35b060cafb172e8f782ec0a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0x19fa89cdadfe49ac70531c9ad714a27bc2c1a620",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391766"
     }
   ]
 }

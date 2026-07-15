@@ -1,14 +1,7 @@
 # definix — deployments
 
-8 verified deployment(s) across 8 component(s).
+1 verified deployment(s) across 1 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| bsc | `0x070a9867ea49ce7afc4505817204860e823489fe` | SIXToken | impl | live | no |
-| bsc | `0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d` | BEP20 | impl | live | no |
-| bsc | `0x151030a9fa62fbb202eee50bd4a4057ab9e826ad` | DefinixRouter | impl | live | no |
-| bsc | `0x1b4aec66ef4f942da16845d22ce2656d759d0a15` | Apollo | impl | live | no |
-| bsc | `0x43ebb0cb9bd53a3ed928dd662095ace1cef92d19` | DefinixPair | impl | live | no |
-| bsc | `0x6b51e8fdc32ead0b837deb334fcb79e24f3b105a` | BEP20-2 | impl | live | no |
-| bsc | `0x967bef27c509fa0772c10d59f47236a2d304cbfe` | TimelockController | impl | live | no |
-| bsc | `0xfaaa404735f33cdab5eae2fddfd375b92399853f` | BEP20-3 | impl | live | no |
+| bsc | `0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d` | FinixToken | impl | live | yes |

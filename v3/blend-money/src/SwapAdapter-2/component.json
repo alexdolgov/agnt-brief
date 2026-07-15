@@ -1,49 +1,30 @@
 {
   "component": "SwapAdapter-2",
   "main_contract": "SwapAdapter",
-  "source_file_count": 13,
-  "deployment_count": 4,
+  "source_entry_count": 15,
+  "source_file_count": 15,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SwapAdapter-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
-    "https://github.com/blendmoney/audits",
-    "https://github.com/blendmoney/audits/blob/main/blend-25-09-29-1-cantinacode.pdf",
-    "https://github.com/blendmoney/audits/blob/main/blend-25-10-02-0-zellic.pdf",
-    "https://github.com/blendmoney/audits/blob/main/blend-25-10-05-0-cantinacode.pdf",
-    "https://github.com/blendmoney/audits/blob/main/blend-25-12-05-0-sherlock.pdf",
-    "https://github.com/blendmoney/audits/blob/main/blend-26-01-22-0-sherlock.pdf"
+    "https://github.com/blendmoney/audits/blob/main/blend-25-09-29-1-cantinacode.pdf"
   ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x30c7437c1063fc3c7af022ac7ab01c897fb5e135",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-999",
-      "chain_id": 999,
-      "address": "0x9e622e93541da48a15d4dc0cd2d49bff10f3ab6b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x2207189bab0f177df87d77b7575102f2df925754",
+      "address": "0xbf76d87abb1c22a2a820888483956298a172def4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x920029f02b87c7bb0013c8e17e245209c03dd7bf",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392206"
     }
   ]
 }

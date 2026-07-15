@@ -1,8 +1,16 @@
 {
   "component": "StakingHelper",
   "main_contract": "StakingHelper",
+  "source_entry_count": 5,
   "source_file_count": 5,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StakingHelper\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x1c86afe9f9af4afc23bd1f50191c5c0192d47802",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xcee8b8d4c2bf24d44aff418bc113ea022d291533",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

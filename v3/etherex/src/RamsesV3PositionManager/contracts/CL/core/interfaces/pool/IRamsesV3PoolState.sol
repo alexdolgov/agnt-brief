@@ -135,7 +135,7 @@ interface IRamsesV3PoolState {
     /// @param index position index
     /// @param tickLower lower bound of range
     /// @param tickUpper upper bound of range
-    /// @return periodSecondsInsideX96 seconds the position was not in range for the period
+    /// @return periodSecondsInsideX96 seconds the position was in range for the period
     function positionPeriodSecondsInRange(
         uint256 period,
         address owner,

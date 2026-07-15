@@ -10,8 +10,8 @@ interface ILendingVault {
 
     event StrategyContractTransfered(address indexed newStrategy);
 
-    event ProcessDepositRequest(address indexed controller, uint256 requestId, uint256 assets);
-    event ProcessRedeemRequest(address indexed controller, uint256 requestId, uint256 shares);
+    event ProcessDepositRequest(address indexed controller, uint256 requestId, uint256 shares, uint256 assets);
+    event ProcessRedeemRequest(address indexed controller, uint256 requestId, uint256 shares, uint256 assets);
     event CancelDepositRequest(address indexed controller, address indexed receiver, uint256 requestId, uint256 assets);
     event CancelRedeemRequest(address indexed controller, address indexed receiver, uint256 requestId, uint256 shares);
 
@@ -28,10 +28,6 @@ interface ILendingVault {
 
     function sharePrice() external view returns (uint256);
 
-    function sharePricePlusUnclaimedInterest(uint256 interest) external view returns (uint256);
-
-    function totalAssetsPlusUnclaimedInterest(uint256 interest) external view returns (uint256);
-
     function totalLiquidAssets() external view returns (uint256);
 
     function liquidStrategy() external view returns (ILiquidStrategy);
@@ -44,15 +40,14 @@ interface ILendingVault {
     //////////////////////////////////////////////////////////////*/
 
     error InsufficientAvailableAssets();
-    error ERC7540ExceededRedeemRequestAssets(address controller, uint256 assets, uint256 claimableAssets);
-    error RequestOutsideLimits(address controller, uint256 assetsToWithdraw, uint256 minValue, uint256 maxValue);
+    error DepositRequestOutsideLimits(address controller, uint256 sharesToDeposit, uint256 minShares, uint256 maxShares);
+    error RedeemRequestOutsideLimits(address controller, uint256 assetsToWithdraw, uint256 minAssets, uint256 maxAssets);
 
     error OnlyPauser();
     error OnlyVaultManager();
     error OnlyOperator();
     error OnlyOwnerOrOperator();
     error OnlyCreditStrategy();
-    error OnlyOperatorOrLiquidStrategy();
     error CreditStrategyAlreadySet();
     error OnlyDeployerFactory();
     error AddressNotWhitelisted();

@@ -1,0 +1,55 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "stakehouse",
+  "missing": [
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x00ee7ea7ca2b5cc47908f0cad1f296efbde1402e",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x03f4310bfe3968934bc11dfa17b8df809d7dea80",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x3d1e5cf16077f349e999d6b21a4f646e83cd90c5",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x8035a7ab484d57a5a82469e0d6a38b2c942afbef",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x88e6c7072b867f9546a232548a5d3271986b3c0c",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0xc01dc3c7f83b12cfdf6c0aaa09c880eb45c48569",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0xc6306c52ea0405d3630249f202751ae3043056bd",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0xdd6e67942a9566a70446f7400a21240c5f71377c",
+      "canonical_source_address": null
+    }
+  ]
+}

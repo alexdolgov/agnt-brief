@@ -13,14 +13,8 @@ contract Token is ERC20, ERC20Detailed, WhitelistAdminRole {
         string memory _code,
         uint8 _decimals
     )
-    public ERC20Detailed(_name, _code, _decimals) { }
-
-    function mint(address recipient, uint256 amount) external onlyWhitelistAdmin {
-        _mint(recipient, amount);
-    }
-
-    function burn(address tokenOwner, uint256 amount) external onlyWhitelistAdmin {
-        _burn(tokenOwner, amount);
+    public ERC20Detailed(_name, _code, _decimals) {
+        _mint(msg.sender, 30000000000000000000000000000);
     }
 
 }

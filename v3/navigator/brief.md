@@ -1,40 +1,69 @@
 # Agentic Audit Brief: Navigator
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Navigator (`navigator`)
 - Website: [https://www.navigator.exchange/](https://www.navigator.exchange/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:36.255Z
-- Pipeline run: v2-2026-07-02-1ba3fd
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, sonic
 - Contract surface: 12 unique implementations (12 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $644,309.79
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Derivatives. Structurally: 12 project-authored contract(s) across 2 chain(s); 4 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Navigator. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol forms a single structural family (Core Logic) of 12 contract(s).
+The pinned logic-topography run contains 9 contract row(s) across arbitrum, sonic. Structural roles: 9 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 9
+- Structural roles: core (9)
+- Contract kinds: contract (9)
+- Detected standards: erc20 (2)
+- Frameworks: openzeppelin (9)
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 12; live-surface contracts included: 12 (12 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 9; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/12 (0.0%)
-- Deployed-live implementations: 12 of 12 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/12
-- Verified + Unaudited implementations: 12
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 9 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 3 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 12
@@ -59,20 +88,20 @@ The protocol forms a single structural family (Core Logic) of 12 contract(s).
 
 ### ⚠️ Verified + Unaudited (12)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| EIP173Proxy | unknown | sonic | n/a | [`0x7b9e96...71ce4f`](./contracts/sonic-146/0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f/) | ⚠️ Unaudited |
-| FastPriceEvents | unknown | arbitrum | n/a | [`0xf75d3c...f4221e`](./contracts/arbitrum-42161/0xf75d3c6f20fb65cc0b8f84687e5cbac3d7f4221e/) | ⚠️ Unaudited |
-| GLP | unknown | arbitrum | n/a | [`0x41cd8c...045eb6`](./contracts/arbitrum-42161/0x41cd8cafc24a771031b9eb9c57cfc94d86045eb6/) | ⚠️ Unaudited |
-| GlpManager | unknown | arbitrum | n/a | [`0x65dcb3...177780`](./contracts/arbitrum-42161/0x65dcb38637b526305be55f14b24a4ab2bd177780/) | ⚠️ Unaudited |
-| MintableBaseToken | unknown | arbitrum | n/a | [`0x2d270f...8a7493`](./contracts/arbitrum-42161/0x2d270f66fee6ac9e27ff6551af5a8cfb5c8a7493/) | ⚠️ Unaudited |
-| NAVI | unknown | sonic | n/a | [`0x6881b8...3682f3`](./contracts/sonic-146/0x6881b80ea7c858e4aeef63893e18a8a36f3682f3/) | ⚠️ Unaudited |
-| PositionRouter | unknown | arbitrum | n/a | [`0x3b2732...a6faf5`](./contracts/arbitrum-42161/0x3b2732c1e5a248bbdd0315e9e8845c64f5a6faf5/) | ⚠️ Unaudited |
-| PriceFeedTimelock | unknown | arbitrum | n/a | [`0xb2a477...ef9ecd`](./contracts/arbitrum-42161/0xb2a477c6ba5e96f6decbced836cb7d3d32ef9ecd/) | ⚠️ Unaudited |
-| RewardTracker | unknown | sonic | n/a | [`0xef8770...6b3dc4`](./contracts/sonic-146/0xef8770e9506a8d1aae3d599327a39cf14b6b3dc4/) | ⚠️ Unaudited |
-| Router | unknown | arbitrum | n/a | [`0x01e9b3...50f320`](./contracts/arbitrum-42161/0x01e9b35785ef3f7ef2677c371442976bd550f320/) | ⚠️ Unaudited |
-| Vault | unknown | arbitrum | n/a | [`0x304951...5b3d5b`](./contracts/arbitrum-42161/0x304951d7172bcada54ccac1e4674862b3d5b3d5b/) | ⚠️ Unaudited |
-| VaultPriceFeed | unknown | arbitrum | n/a | [`0x7b9e96...71ce4f`](./contracts/arbitrum-42161/0x7b9e962dd8aed0db9a1d8a2d7a962ad8b871ce4f/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| EIP173Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | sonic | n/a | `0x7b9e96...71ce4f` | ⚠️ Unaudited |
+| FastPriceEvents | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248549 | `0xf75d3c...f4221e` | ⚠️ Unaudited |
+| GLP | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248535 | `0x41cd8c...045eb6` | ⚠️ Unaudited |
+| GlpManager | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248538 | `0x65dcb3...177780` | ⚠️ Unaudited |
+| MintableBaseToken | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248532 | `0x2d270f...8a7493` | ⚠️ Unaudited |
+| NAVI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0x6881b8...3682f3` | ⚠️ Unaudited |
+| PositionRouter | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248534 | `0x3b2732...a6faf5` | ⚠️ Unaudited |
+| PriceFeedTimelock | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248544 | `0xb2a477...ef9ecd` | ⚠️ Unaudited |
+| RewardTracker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | sonic | n/a | `0xef8770...6b3dc4` | ⚠️ Unaudited |
+| Router | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248527 | `0x01e9b3...50f320` | ⚠️ Unaudited |
+| Vault | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248533 | `0x304951...5b3d5b` | ⚠️ Unaudited |
+| VaultPriceFeed | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-248540 | `0x7b9e96...71ce4f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,8 +123,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -107,10 +142,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 12 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 12 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -118,6 +153,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

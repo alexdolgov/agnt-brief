@@ -1,42 +1,38 @@
 {
   "component": "EditableERC20-2",
   "main_contract": "EditableERC20",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EditableERC20-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1285",
-      "chain_id": 1285,
-      "address": "0xfb2019dfd635a03cfff624d210aee6af2b00fc2c",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbf1aea8670d2528e08334083616dd9c5f3b087ae",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398229"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x3f56e0c36d275367b8c502090edf38289b3dea0d",
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xf3b001d64c656e30a62fbaaca003b1336b4ce12a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x5c49b268c9841aff1cc3b0a418ff5c3442ee3f3b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xb9c8f0d3254007ee4b98970b94544e473cd610ec",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398254"
     }
   ]
 }

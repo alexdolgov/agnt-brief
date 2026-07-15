@@ -1,11 +1,13 @@
-// Sources flattened with hardhat v2.12.7 https://hardhat.org
+// SPDX-License-Identifier: BUSL-1.1 AND MIT
 
-// File src/v0.8/ccip/libraries/Client.sol
+// File contracts/src/v0.8/ccip/libraries/Client.sol
 
+// Original license: SPDX_License_Identifier: MIT
 pragma solidity ^0.8.0;
 
 // End consumer library.
 library Client {
+  /// @dev RMN depends on this struct, if changing, please notify the RMN maintainers.
   struct EVMTokenAmount {
     address token; // token address on the local chain.
     uint256 amount; // Amount of tokens.
@@ -40,8 +42,9 @@ library Client {
 }
 
 
-// File src/v0.8/ccip/interfaces/IAny2EVMMessageReceiver.sol
+// File contracts/src/v0.8/ccip/interfaces/IAny2EVMMessageReceiver.sol
 
+// Original license: SPDX_License_Identifier: MIT
 pragma solidity ^0.8.0;
 
 /// @notice Application contracts that intend to receive messages from
@@ -56,8 +59,9 @@ interface IAny2EVMMessageReceiver {
 }
 
 
-// File src/v0.8/vendor/openzeppelin-solidity/v4.8.0/contracts/token/ERC20/IERC20.sol
+// File contracts/src/v0.8/vendor/openzeppelin-solidity/v4.8.0/contracts/token/ERC20/IERC20.sol
 
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.6.0) (token/ERC20/IERC20.sol)
 
 pragma solidity ^0.8.0;
@@ -137,8 +141,9 @@ interface IERC20 {
 }
 
 
-// File src/v0.8/ccip/interfaces/pools/IPool.sol
+// File contracts/src/v0.8/ccip/interfaces/pools/IPool.sol
 
+// Original license: SPDX_License_Identifier: MIT
 pragma solidity ^0.8.0;
 
 // Shared public interface for multiple pool types.
@@ -184,8 +189,49 @@ interface IPool {
 }
 
 
-// File src/v0.8/ccip/libraries/MerkleMultiProof.sol
+// File contracts/src/v0.8/ccip/interfaces/IEVM2AnyOnRampClient.sol
 
+// Original license: SPDX_License_Identifier: MIT
+pragma solidity ^0.8.0;
+
+interface IEVM2AnyOnRampClient {
+  /// @notice Get the fee for a given ccip message
+  /// @param destChainSelector The destination chain selector
+  /// @param message The message to calculate the cost for
+  /// @return fee The calculated fee
+  function getFee(uint64 destChainSelector, Client.EVM2AnyMessage calldata message) external view returns (uint256 fee);
+
+  /// @notice Get the pool for a specific token
+  /// @param destChainSelector The destination chain selector
+  /// @param sourceToken The source chain token to get the pool for
+  /// @return pool Token pool
+  function getPoolBySourceToken(uint64 destChainSelector, IERC20 sourceToken) external view returns (IPool);
+
+  /// @notice Gets a list of all supported source chain tokens.
+  /// @param destChainSelector The destination chain selector
+  /// @return tokens The addresses of all tokens that this onRamp supports the given destination chain
+  function getSupportedTokens(uint64 destChainSelector) external view returns (address[] memory tokens);
+
+  /// @notice Send a message to the remote chain
+  /// @dev only callable by the Router
+  /// @dev approve() must have already been called on the token using the this ramp address as the spender.
+  /// @dev if the contract is paused, this function will revert.
+  /// @param destChainSelector The destination chain selector
+  /// @param message Message struct to send
+  /// @param feeTokenAmount Amount of fee tokens for payment
+  /// @param originalSender The original initiator of the CCIP request
+  function forwardFromRouter(
+    uint64 destChainSelector,
+    Client.EVM2AnyMessage memory message,
+    uint256 feeTokenAmount,
+    address originalSender
+  ) external returns (bytes32);
+}
+
+
+// File contracts/src/v0.8/ccip/libraries/MerkleMultiProof.sol
+
+// Original license: SPDX_License_Identifier: BUSL-1.1
 pragma solidity ^0.8.0;
 
 library MerkleMultiProof {
@@ -300,59 +346,98 @@ library MerkleMultiProof {
 }
 
 
-// File src/v0.8/ccip/libraries/Internal.sol
+// File contracts/src/v0.8/ccip/libraries/Internal.sol
 
+// Original license: SPDX_License_Identifier: MIT
 pragma solidity ^0.8.0;
 
 
 // Library for CCIP internal definitions common to multiple contracts.
 library Internal {
+  /// @dev The minimum amount of gas to perform the call with exact gas.
+  /// We include this in the offramp so that we can redeploy to adjust it
+  /// should a hardfork change the gas costs of relevant opcodes in callWithExactGas.
+  uint16 internal constant GAS_FOR_CALL_EXACT_CHECK = 5_000;
+  // @dev We limit return data to a selector plus 4 words. This is to avoid
+  // malicious contracts from returning large amounts of data and causing
+  // repeated out-of-gas scenarios.
+  uint16 internal constant MAX_RET_BYTES = 4 + 4 * 32;
+
+  /// @notice A collection of token price and gas price updates.
+  /// @dev RMN depends on this struct, if changing, please notify the RMN maintainers.
   struct PriceUpdates {
     TokenPriceUpdate[] tokenPriceUpdates;
-    uint64 destChainSelector; // --┐ Destination chain selector
-    uint192 usdPerUnitGas; // -----┘ 1e18 USD per smallest unit (e.g. wei) of destination chain gas
+    GasPriceUpdate[] gasPriceUpdates;
   }
 
+  /// @notice Token price in USD.
+  /// @dev RMN depends on this struct, if changing, please notify the RMN maintainers.
   struct TokenPriceUpdate {
     address sourceToken; // Source token
-    uint192 usdPerToken; // 1e18 USD per smallest unit of token
+    uint224 usdPerToken; // 1e18 USD per smallest unit of token
   }
 
-  struct TimestampedUint192Value {
-    uint192 value; // -------┐ The price, in 1e18 USD.
-    uint64 timestamp; // ----┘ Timestamp of the most recent price update.
+  /// @notice Gas price for a given chain in USD, its value may contain tightly packed fields.
+  /// @dev RMN depends on this struct, if changing, please notify the RMN maintainers.
+  struct GasPriceUpdate {
+    uint64 destChainSelector; // Destination chain selector
+    uint224 usdPerUnitGas; // 1e18 USD per smallest unit (e.g. wei) of destination chain gas
   }
+
+  /// @notice A timestamped uint224 value that can contain several tightly packed fields.
+  struct TimestampedPackedUint224 {
+    uint224 value; // ───────╮ Value in uint224, packed.
+    uint32 timestamp; // ────╯ Timestamp of the most recent price update.
+  }
+
+  /// @dev Gas price is stored in 112-bit unsigned int. uint224 can pack 2 prices.
+  /// When packing L1 and L2 gas prices, L1 gas price is left-shifted to the higher-order bits.
+  /// Using uint8 type, which cannot be higher than other bit shift operands, to avoid shift operand type warning.
+  uint8 public constant GAS_PRICE_BITS = 112;
 
   struct PoolUpdate {
     address token; // The IERC20 token address
     address pool; // The token pool address
   }
 
+  /// @notice Report that is submitted by the execution DON at the execution phase.
+  /// @dev RMN depends on this struct, if changing, please notify the RMN maintainers.
   struct ExecutionReport {
     EVM2EVMMessage[] messages;
-    // Contains a bytes array for each message
-    // each inner bytes array contains bytes per transferred token
+    // Contains a bytes array for each message, each inner bytes array contains bytes per transferred token
     bytes[][] offchainTokenData;
     bytes32[] proofs;
     uint256 proofFlagBits;
   }
 
-  // @notice The cross chain message that gets committed to EVM chains
+  /// @notice The cross chain message that gets committed to EVM chains.
+  /// @dev RMN depends on this struct, if changing, please notify the RMN maintainers.
   struct EVM2EVMMessage {
-    uint64 sourceChainSelector;
-    uint64 sequenceNumber;
-    uint256 feeTokenAmount;
-    address sender;
-    uint64 nonce;
-    uint256 gasLimit;
-    bool strict;
-    // User fields
-    address receiver;
-    bytes data;
-    Client.EVMTokenAmount[] tokenAmounts;
-    address feeToken;
-    bytes32 messageId;
+    uint64 sourceChainSelector; // ─────────╮ the chain selector of the source chain, note: not chainId
+    address sender; // ─────────────────────╯ sender address on the source chain
+    address receiver; // ───────────────────╮ receiver address on the destination chain
+    uint64 sequenceNumber; // ──────────────╯ sequence number, not unique across lanes
+    uint256 gasLimit; //                      user supplied maximum gas amount available for dest chain execution
+    bool strict; // ────────────────────────╮ DEPRECATED
+    uint64 nonce; //                        │ nonce for this lane for this sender, not unique across senders/lanes
+    address feeToken; // ───────────────────╯ fee token
+    uint256 feeTokenAmount; //                fee token amount
+    bytes data; //                            arbitrary data payload supplied by the message sender
+    Client.EVMTokenAmount[] tokenAmounts; //  array of tokens and amounts to transfer
+    bytes[] sourceTokenData; //               array of token pool return values, one per token
+    bytes32 messageId; //                     a hash of the message data
   }
+
+  /// @dev EVM2EVMMessage struct has 13 fields, including 3 variable arrays.
+  /// Each variable array takes 1 more slot to store its length.
+  /// When abi encoded, excluding array contents,
+  /// EVM2EVMMessage takes up a fixed number of 16 lots, 32 bytes each.
+  /// For structs that contain arrays, 1 more slot is added to the front, reaching a total of 17.
+  uint256 public constant MESSAGE_FIXED_BYTES = 32 * 17;
+
+  /// @dev Each token transfer adds 1 EVMTokenAmount and 1 bytes.
+  /// When abiEncoded, each EVMTokenAmount takes 2 slots, each bytes takes 2 slots, excl bytes contents
+  uint256 public constant MESSAGE_FIXED_BYTES_PER_TOKEN = 32 * 4;
 
   function _toAny2EVMMessage(
     EVM2EVMMessage memory original,
@@ -367,24 +452,31 @@ library Internal {
     });
   }
 
-  bytes32 internal constant EVM_2_EVM_MESSAGE_HASH = keccak256("EVM2EVMMessageEvent");
+  bytes32 internal constant EVM_2_EVM_MESSAGE_HASH = keccak256("EVM2EVMMessageHashV2");
 
   function _hash(EVM2EVMMessage memory original, bytes32 metadataHash) internal pure returns (bytes32) {
+    // Fixed-size message fields are included in nested hash to reduce stack pressure.
+    // This hashing scheme is also used by RMN. If changing it, please notify the RMN maintainers.
     return
       keccak256(
         abi.encode(
           MerkleMultiProof.LEAF_DOMAIN_SEPARATOR,
           metadataHash,
-          original.sequenceNumber,
-          original.nonce,
-          original.sender,
-          original.receiver,
+          keccak256(
+            abi.encode(
+              original.sender,
+              original.receiver,
+              original.sequenceNumber,
+              original.gasLimit,
+              original.strict,
+              original.nonce,
+              original.feeToken,
+              original.feeTokenAmount
+            )
+          ),
           keccak256(original.data),
           keccak256(abi.encode(original.tokenAmounts)),
-          original.gasLimit,
-          original.strict,
-          original.feeToken,
-          original.feeTokenAmount
+          keccak256(abi.encode(original.sourceTokenData))
         )
       );
   }
@@ -395,6 +487,7 @@ library Internal {
   /// IN_PROGRESS currently being executed, used a replay protection
   /// SUCCESS successfully executed. End state
   /// FAILURE unsuccessfully executed, manual execution is now enabled.
+  /// @dev RMN depends on this enum, if changing, please notify the RMN maintainers.
   enum MessageExecutionState {
     UNTOUCHED,
     IN_PROGRESS,
@@ -404,26 +497,12 @@ library Internal {
 }
 
 
-// File src/v0.8/ccip/interfaces/IEVM2AnyOnRamp.sol
+// File contracts/src/v0.8/ccip/interfaces/IEVM2AnyOnRamp.sol
 
+// Original license: SPDX_License_Identifier: MIT
 pragma solidity ^0.8.0;
 
-
-interface IEVM2AnyOnRamp {
-  /// @notice Get the fee for a given ccip message
-  /// @param message The message to calculate the cost for
-  /// @return fee The calculated fee
-  function getFee(Client.EVM2AnyMessage calldata message) external view returns (uint256 fee);
-
-  /// @notice Get the pool for a specific token
-  /// @param sourceToken The source chain token to get the pool for
-  /// @return pool Token pool
-  function getPoolBySourceToken(IERC20 sourceToken) external view returns (IPool);
-
-  /// @notice Gets a list of all supported source chain tokens.
-  /// @return tokens The addresses of all tokens that this onRamp supports for sending.
-  function getSupportedTokens() external view returns (address[] memory tokens);
-
+interface IEVM2AnyOnRamp is IEVM2AnyOnRampClient {
   /// @notice Gets the next sequence number to be used in the onRamp
   /// @return the next sequence number to be used
   function getExpectedNextSequenceNumber() external view returns (uint64);
@@ -437,23 +516,12 @@ interface IEVM2AnyOnRamp {
   /// @param removes The tokens and pools to be removed
   /// @param adds The tokens and pools to be added.
   function applyPoolUpdates(Internal.PoolUpdate[] memory removes, Internal.PoolUpdate[] memory adds) external;
-
-  /// @notice Send a message to the remote chain
-  /// @dev only callable by the Router
-  /// @dev approve() must have already been called on the token using the this ramp address as the spender.
-  /// @dev if the contract is paused, this function will revert.
-  /// @param message Message struct to send
-  /// @param originalSender The original initiator of the CCIP request
-  function forwardFromRouter(
-    Client.EVM2AnyMessage memory message,
-    uint256 feeTokenAmount,
-    address originalSender
-  ) external returns (bytes32);
 }
 
 
-// File src/v0.8/ccip/interfaces/IRouter.sol
+// File contracts/src/v0.8/ccip/interfaces/IRouter.sol
 
+// Original license: SPDX_License_Identifier: MIT
 pragma solidity ^0.8.0;
 
 interface IRouter {
@@ -468,17 +536,19 @@ interface IRouter {
   /// the contract is called. If not, only tokens are transferred.
   /// @return success A boolean value indicating whether the ccip message was received without errors.
   /// @return retBytes A bytes array containing return data form CCIP receiver.
+  /// @return gasUsed the gas used by the external customer call. Does not include any overhead.
   function routeMessage(
     Client.Any2EVMMessage calldata message,
     uint16 gasForCallExactCheck,
     uint256 gasLimit,
     address receiver
-  ) external returns (bool success, bytes memory retBytes);
+  ) external returns (bool success, bytes memory retBytes, uint256 gasUsed);
 }
 
 
-// File src/v0.8/ccip/interfaces/IRouterClient.sol
+// File contracts/src/v0.8/ccip/interfaces/IRouterClient.sol
 
+// Original license: SPDX_License_Identifier: MIT
 pragma solidity ^0.8.0;
 
 interface IRouterClient {
@@ -521,8 +591,9 @@ interface IRouterClient {
 }
 
 
-// File src/v0.8/ccip/interfaces/IWrappedNative.sol
+// File contracts/src/v0.8/ccip/interfaces/IWrappedNative.sol
 
+// Original license: SPDX_License_Identifier: MIT
 pragma solidity ^0.8.0;
 
 interface IWrappedNative is IERC20 {
@@ -530,8 +601,9 @@ interface IWrappedNative is IERC20 {
 }
 
 
-// File src/v0.8/ccip/interfaces/IARM.sol
+// File contracts/src/v0.8/ccip/interfaces/IARM.sol
 
+// Original license: SPDX_License_Identifier: MIT
 pragma solidity ^0.8.0;
 
 /// @notice This interface contains the only ARM-related functions that might be used on-chain by other CCIP contracts.
@@ -550,17 +622,9 @@ interface IARM {
 }
 
 
-// File src/v0.8/interfaces/TypeAndVersionInterface.sol
+// File contracts/src/v0.8/shared/interfaces/IOwnable.sol
 
-pragma solidity ^0.8.0;
-
-abstract contract TypeAndVersionInterface {
-  function typeAndVersion() external pure virtual returns (string memory);
-}
-
-
-// File src/v0.8/shared/interfaces/IOwnable.sol
-
+// Original license: SPDX_License_Identifier: MIT
 pragma solidity ^0.8.0;
 
 interface IOwnable {
@@ -572,8 +636,9 @@ interface IOwnable {
 }
 
 
-// File src/v0.8/shared/access/ConfirmedOwnerWithProposal.sol
+// File contracts/src/v0.8/shared/access/ConfirmedOwnerWithProposal.sol
 
+// Original license: SPDX_License_Identifier: MIT
 pragma solidity ^0.8.0;
 
 /**
@@ -588,6 +653,7 @@ contract ConfirmedOwnerWithProposal is IOwnable {
   event OwnershipTransferred(address indexed from, address indexed to);
 
   constructor(address newOwner, address pendingOwner) {
+    // solhint-disable-next-line custom-errors
     require(newOwner != address(0), "Cannot set owner to zero");
 
     s_owner = newOwner;
@@ -608,6 +674,7 @@ contract ConfirmedOwnerWithProposal is IOwnable {
    * @notice Allows an ownership transfer to be completed by the recipient.
    */
   function acceptOwnership() external override {
+    // solhint-disable-next-line custom-errors
     require(msg.sender == s_pendingOwner, "Must be proposed owner");
 
     address oldOwner = s_owner;
@@ -628,6 +695,7 @@ contract ConfirmedOwnerWithProposal is IOwnable {
    * @notice validate, transfer ownership, and emit relevant events
    */
   function _transferOwnership(address to) private {
+    // solhint-disable-next-line custom-errors
     require(to != msg.sender, "Cannot transfer to self");
 
     s_pendingOwner = to;
@@ -639,6 +707,7 @@ contract ConfirmedOwnerWithProposal is IOwnable {
    * @notice validate access
    */
   function _validateOwnership() internal view {
+    // solhint-disable-next-line custom-errors
     require(msg.sender == s_owner, "Only callable by owner");
   }
 
@@ -652,8 +721,9 @@ contract ConfirmedOwnerWithProposal is IOwnable {
 }
 
 
-// File src/v0.8/shared/access/ConfirmedOwner.sol
+// File contracts/src/v0.8/shared/access/ConfirmedOwner.sol
 
+// Original license: SPDX_License_Identifier: MIT
 pragma solidity ^0.8.0;
 
 /**
@@ -665,8 +735,9 @@ contract ConfirmedOwner is ConfirmedOwnerWithProposal {
 }
 
 
-// File src/v0.8/shared/access/OwnerIsCreator.sol
+// File contracts/src/v0.8/shared/access/OwnerIsCreator.sol
 
+// Original license: SPDX_License_Identifier: MIT
 pragma solidity ^0.8.0;
 
 /// @title The OwnerIsCreator contract
@@ -676,8 +747,103 @@ contract OwnerIsCreator is ConfirmedOwner {
 }
 
 
-// File src/v0.8/vendor/openzeppelin-solidity/v4.8.0/contracts/token/ERC20/extensions/draft-IERC20Permit.sol
+// File contracts/src/v0.8/shared/call/CallWithExactGas.sol
 
+// Original license: SPDX_License_Identifier: MIT
+pragma solidity ^0.8.0;
+
+// solhint-disable chainlink-solidity/all-caps-constant-storage-variables
+library CallWithExactGas {
+  error NoContract();
+  error NoGasForCallExactCheck();
+  error NotEnoughGasForCall();
+
+  bytes4 internal constant NoContractSig = 0x0c3b563c;
+  bytes4 internal constant NoGasForCallExactCheckSig = 0xafa32a2c;
+  bytes4 internal constant NotEnoughGasForCallSig = 0x37c3be29;
+
+  /// @notice calls target address with exactly gasAmount gas and payload as calldata.
+  /// Account for gasForCallExactCheck gas that will be used by this function. Will revert
+  /// if the target is not a contact. Will revert when there is not enough gas to call the
+  /// target with gasAmount gas.
+  /// @dev Caps the return data length, which makes it immune to gas bomb attacks.
+  /// @dev Return data cap logic borrowed from
+  /// https://github.com/nomad-xyz/ExcessivelySafeCall/blob/main/src/ExcessivelySafeCall.sol.
+  /// @return success whether the call succeeded
+  /// @return retData the return data from the call, capped at maxReturnBytes bytes
+  /// @return gasUsed the gas used by the external call. Does not include the overhead of this function.
+  function _callWithExactGasSafeReturnData(
+    bytes memory payload,
+    address target,
+    uint256 gasLimit,
+    uint16 gasForCallExactCheck,
+    uint16 maxReturnBytes
+  ) internal returns (bool success, bytes memory retData, uint256 gasUsed) {
+    // allocate retData memory ahead of time
+    retData = new bytes(maxReturnBytes);
+
+    assembly {
+      // solidity calls check that a contract actually exists at the destination, so we do the same
+      // Note we do this check prior to measuring gas so gasForCallExactCheck (our "cushion")
+      // doesn't need to account for it.
+      if iszero(extcodesize(target)) {
+        mstore(0, NoContractSig)
+        revert(0, 0x4)
+      }
+
+      let g := gas()
+      // Compute g -= gasForCallExactCheck and check for underflow
+      // The gas actually passed to the callee is _min(gasAmount, 63//64*gas available).
+      // We want to ensure that we revert if gasAmount >  63//64*gas available
+      // as we do not want to provide them with less, however that check itself costs
+      // gas. gasForCallExactCheck ensures we have at least enough gas to be able
+      // to revert if gasAmount >  63//64*gas available.
+      if lt(g, gasForCallExactCheck) {
+        mstore(0, NoGasForCallExactCheckSig)
+        revert(0, 0x4)
+      }
+      g := sub(g, gasForCallExactCheck)
+      // if g - g//64 <= gasAmount, revert. We subtract g//64 because of EIP-150
+      if iszero(gt(sub(g, div(g, 64)), gasLimit)) {
+        mstore(0, NotEnoughGasForCallSig)
+        revert(0, 0x4)
+      }
+
+      // We save the gas before the call so we can calculate how much gas the call used
+      let gasBeforeCall := gas()
+      // call and return whether we succeeded. ignore return data
+      // call(gas,addr,value,argsOffset,argsLength,retOffset,retLength)
+      success := call(gasLimit, target, 0, add(payload, 0x20), mload(payload), 0, 0)
+      gasUsed := sub(gasBeforeCall, gas())
+
+      // limit our copy to maxReturnBytes bytes
+      let toCopy := returndatasize()
+      if gt(toCopy, maxReturnBytes) {
+        toCopy := maxReturnBytes
+      }
+      // Store the length of the copied bytes
+      mstore(retData, toCopy)
+      // copy the bytes from retData[0:_toCopy]
+      returndatacopy(add(retData, 0x20), 0, toCopy)
+    }
+    return (success, retData, gasUsed);
+  }
+}
+
+
+// File contracts/src/v0.8/shared/interfaces/ITypeAndVersion.sol
+
+// Original license: SPDX_License_Identifier: MIT
+pragma solidity ^0.8.0;
+
+interface ITypeAndVersion {
+  function typeAndVersion() external pure returns (string memory);
+}
+
+
+// File contracts/src/v0.8/vendor/openzeppelin-solidity/v4.8.0/contracts/token/ERC20/extensions/draft-IERC20Permit.sol
+
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/draft-IERC20Permit.sol)
 
 pragma solidity ^0.8.0;
@@ -739,8 +905,9 @@ interface IERC20Permit {
 }
 
 
-// File src/v0.8/vendor/openzeppelin-solidity/v4.8.0/contracts/utils/Address.sol
+// File contracts/src/v0.8/vendor/openzeppelin-solidity/v4.8.0/contracts/utils/Address.sol
 
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.8.0) (utils/Address.sol)
 
 pragma solidity ^0.8.1;
@@ -978,8 +1145,9 @@ library Address {
 }
 
 
-// File src/v0.8/vendor/openzeppelin-solidity/v4.8.0/contracts/token/ERC20/utils/SafeERC20.sol
+// File contracts/src/v0.8/vendor/openzeppelin-solidity/v4.8.0/contracts/token/ERC20/utils/SafeERC20.sol
 
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.8.0) (token/ERC20/utils/SafeERC20.sol)
 
 pragma solidity ^0.8.0;
@@ -1074,8 +1242,9 @@ library SafeERC20 {
 }
 
 
-// File src/v0.8/vendor/openzeppelin-solidity/v4.8.0/contracts/utils/structs/EnumerableSet.sol
+// File contracts/src/v0.8/vendor/openzeppelin-solidity/v4.8.0/contracts/utils/structs/EnumerableSet.sol
 
+// Original license: SPDX_License_Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.8.0) (utils/structs/EnumerableSet.sol)
 // This file was procedurally generated from scripts/generate/templates/EnumerableSet.js.
 
@@ -1455,540 +1624,12 @@ library EnumerableSet {
 }
 
 
-// File src/v0.8/vendor/openzeppelin-solidity/v4.8.0/contracts/utils/structs/EnumerableMap.sol
+// File contracts/src/v0.8/ccip/Router.sol
 
-// OpenZeppelin Contracts (last updated v4.8.0) (utils/structs/EnumerableMap.sol)
-// This file was procedurally generated from scripts/generate/templates/EnumerableMap.js.
-
-pragma solidity ^0.8.0;
-
-/**
- * @dev Library for managing an enumerable variant of Solidity's
- * https://solidity.readthedocs.io/en/latest/types.html#mapping-types[`mapping`]
- * type.
- *
- * Maps have the following properties:
- *
- * - Entries are added, removed, and checked for existence in constant time
- * (O(1)).
- * - Entries are enumerated in O(n). No guarantees are made on the ordering.
- *
- * ```
- * contract Example {
- *     // Add the library methods
- *     using EnumerableMap for EnumerableMap.UintToAddressMap;
- *
- *     // Declare a set state variable
- *     EnumerableMap.UintToAddressMap private myMap;
- * }
- * ```
- *
- * The following map types are supported:
- *
- * - `uint256 -> address` (`UintToAddressMap`) since v3.0.0
- * - `address -> uint256` (`AddressToUintMap`) since v4.6.0
- * - `bytes32 -> bytes32` (`Bytes32ToBytes32Map`) since v4.6.0
- * - `uint256 -> uint256` (`UintToUintMap`) since v4.7.0
- * - `bytes32 -> uint256` (`Bytes32ToUintMap`) since v4.7.0
- *
- * [WARNING]
- * ====
- * Trying to delete such a structure from storage will likely result in data corruption, rendering the structure
- * unusable.
- * See https://github.com/ethereum/solidity/pull/11843[ethereum/solidity#11843] for more info.
- *
- * In order to clean an EnumerableMap, you can either remove all elements one by one or create a fresh instance using an
- * array of EnumerableMap.
- * ====
- */
-library EnumerableMap {
-  using EnumerableSet for EnumerableSet.Bytes32Set;
-
-  // To implement this library for multiple types with as little code
-  // repetition as possible, we write it in terms of a generic Map type with
-  // bytes32 keys and values.
-  // The Map implementation uses private functions, and user-facing
-  // implementations (such as Uint256ToAddressMap) are just wrappers around
-  // the underlying Map.
-  // This means that we can only create new EnumerableMaps for types that fit
-  // in bytes32.
-
-  struct Bytes32ToBytes32Map {
-    // Storage of keys
-    EnumerableSet.Bytes32Set _keys;
-    mapping(bytes32 => bytes32) _values;
-  }
-
-  /**
-   * @dev Adds a key-value pair to a map, or updates the value for an existing
-   * key. O(1).
-   *
-   * Returns true if the key was added to the map, that is if it was not
-   * already present.
-   */
-  function set(
-    Bytes32ToBytes32Map storage map,
-    bytes32 key,
-    bytes32 value
-  ) internal returns (bool) {
-    map._values[key] = value;
-    return map._keys.add(key);
-  }
-
-  /**
-   * @dev Removes a key-value pair from a map. O(1).
-   *
-   * Returns true if the key was removed from the map, that is if it was present.
-   */
-  function remove(Bytes32ToBytes32Map storage map, bytes32 key) internal returns (bool) {
-    delete map._values[key];
-    return map._keys.remove(key);
-  }
-
-  /**
-   * @dev Returns true if the key is in the map. O(1).
-   */
-  function contains(Bytes32ToBytes32Map storage map, bytes32 key) internal view returns (bool) {
-    return map._keys.contains(key);
-  }
-
-  /**
-   * @dev Returns the number of key-value pairs in the map. O(1).
-   */
-  function length(Bytes32ToBytes32Map storage map) internal view returns (uint256) {
-    return map._keys.length();
-  }
-
-  /**
-   * @dev Returns the key-value pair stored at position `index` in the map. O(1).
-   *
-   * Note that there are no guarantees on the ordering of entries inside the
-   * array, and it may change when more entries are added or removed.
-   *
-   * Requirements:
-   *
-   * - `index` must be strictly less than {length}.
-   */
-  function at(Bytes32ToBytes32Map storage map, uint256 index) internal view returns (bytes32, bytes32) {
-    bytes32 key = map._keys.at(index);
-    return (key, map._values[key]);
-  }
-
-  /**
-   * @dev Tries to returns the value associated with `key`. O(1).
-   * Does not revert if `key` is not in the map.
-   */
-  function tryGet(Bytes32ToBytes32Map storage map, bytes32 key) internal view returns (bool, bytes32) {
-    bytes32 value = map._values[key];
-    if (value == bytes32(0)) {
-      return (contains(map, key), bytes32(0));
-    } else {
-      return (true, value);
-    }
-  }
-
-  /**
-   * @dev Returns the value associated with `key`. O(1).
-   *
-   * Requirements:
-   *
-   * - `key` must be in the map.
-   */
-  function get(Bytes32ToBytes32Map storage map, bytes32 key) internal view returns (bytes32) {
-    bytes32 value = map._values[key];
-    require(value != 0 || contains(map, key), "EnumerableMap: nonexistent key");
-    return value;
-  }
-
-  /**
-   * @dev Same as {get}, with a custom error message when `key` is not in the map.
-   *
-   * CAUTION: This function is deprecated because it requires allocating memory for the error
-   * message unnecessarily. For custom revert reasons use {tryGet}.
-   */
-  function get(
-    Bytes32ToBytes32Map storage map,
-    bytes32 key,
-    string memory errorMessage
-  ) internal view returns (bytes32) {
-    bytes32 value = map._values[key];
-    require(value != 0 || contains(map, key), errorMessage);
-    return value;
-  }
-
-  // UintToUintMap
-
-  struct UintToUintMap {
-    Bytes32ToBytes32Map _inner;
-  }
-
-  /**
-   * @dev Adds a key-value pair to a map, or updates the value for an existing
-   * key. O(1).
-   *
-   * Returns true if the key was added to the map, that is if it was not
-   * already present.
-   */
-  function set(
-    UintToUintMap storage map,
-    uint256 key,
-    uint256 value
-  ) internal returns (bool) {
-    return set(map._inner, bytes32(key), bytes32(value));
-  }
-
-  /**
-   * @dev Removes a value from a set. O(1).
-   *
-   * Returns true if the key was removed from the map, that is if it was present.
-   */
-  function remove(UintToUintMap storage map, uint256 key) internal returns (bool) {
-    return remove(map._inner, bytes32(key));
-  }
-
-  /**
-   * @dev Returns true if the key is in the map. O(1).
-   */
-  function contains(UintToUintMap storage map, uint256 key) internal view returns (bool) {
-    return contains(map._inner, bytes32(key));
-  }
-
-  /**
-   * @dev Returns the number of elements in the map. O(1).
-   */
-  function length(UintToUintMap storage map) internal view returns (uint256) {
-    return length(map._inner);
-  }
-
-  /**
-   * @dev Returns the element stored at position `index` in the set. O(1).
-   * Note that there are no guarantees on the ordering of values inside the
-   * array, and it may change when more values are added or removed.
-   *
-   * Requirements:
-   *
-   * - `index` must be strictly less than {length}.
-   */
-  function at(UintToUintMap storage map, uint256 index) internal view returns (uint256, uint256) {
-    (bytes32 key, bytes32 value) = at(map._inner, index);
-    return (uint256(key), uint256(value));
-  }
-
-  /**
-   * @dev Tries to returns the value associated with `key`. O(1).
-   * Does not revert if `key` is not in the map.
-   */
-  function tryGet(UintToUintMap storage map, uint256 key) internal view returns (bool, uint256) {
-    (bool success, bytes32 value) = tryGet(map._inner, bytes32(key));
-    return (success, uint256(value));
-  }
-
-  /**
-   * @dev Returns the value associated with `key`. O(1).
-   *
-   * Requirements:
-   *
-   * - `key` must be in the map.
-   */
-  function get(UintToUintMap storage map, uint256 key) internal view returns (uint256) {
-    return uint256(get(map._inner, bytes32(key)));
-  }
-
-  /**
-   * @dev Same as {get}, with a custom error message when `key` is not in the map.
-   *
-   * CAUTION: This function is deprecated because it requires allocating memory for the error
-   * message unnecessarily. For custom revert reasons use {tryGet}.
-   */
-  function get(
-    UintToUintMap storage map,
-    uint256 key,
-    string memory errorMessage
-  ) internal view returns (uint256) {
-    return uint256(get(map._inner, bytes32(key), errorMessage));
-  }
-
-  // UintToAddressMap
-
-  struct UintToAddressMap {
-    Bytes32ToBytes32Map _inner;
-  }
-
-  /**
-   * @dev Adds a key-value pair to a map, or updates the value for an existing
-   * key. O(1).
-   *
-   * Returns true if the key was added to the map, that is if it was not
-   * already present.
-   */
-  function set(
-    UintToAddressMap storage map,
-    uint256 key,
-    address value
-  ) internal returns (bool) {
-    return set(map._inner, bytes32(key), bytes32(uint256(uint160(value))));
-  }
-
-  /**
-   * @dev Removes a value from a set. O(1).
-   *
-   * Returns true if the key was removed from the map, that is if it was present.
-   */
-  function remove(UintToAddressMap storage map, uint256 key) internal returns (bool) {
-    return remove(map._inner, bytes32(key));
-  }
-
-  /**
-   * @dev Returns true if the key is in the map. O(1).
-   */
-  function contains(UintToAddressMap storage map, uint256 key) internal view returns (bool) {
-    return contains(map._inner, bytes32(key));
-  }
-
-  /**
-   * @dev Returns the number of elements in the map. O(1).
-   */
-  function length(UintToAddressMap storage map) internal view returns (uint256) {
-    return length(map._inner);
-  }
-
-  /**
-   * @dev Returns the element stored at position `index` in the set. O(1).
-   * Note that there are no guarantees on the ordering of values inside the
-   * array, and it may change when more values are added or removed.
-   *
-   * Requirements:
-   *
-   * - `index` must be strictly less than {length}.
-   */
-  function at(UintToAddressMap storage map, uint256 index) internal view returns (uint256, address) {
-    (bytes32 key, bytes32 value) = at(map._inner, index);
-    return (uint256(key), address(uint160(uint256(value))));
-  }
-
-  /**
-   * @dev Tries to returns the value associated with `key`. O(1).
-   * Does not revert if `key` is not in the map.
-   */
-  function tryGet(UintToAddressMap storage map, uint256 key) internal view returns (bool, address) {
-    (bool success, bytes32 value) = tryGet(map._inner, bytes32(key));
-    return (success, address(uint160(uint256(value))));
-  }
-
-  /**
-   * @dev Returns the value associated with `key`. O(1).
-   *
-   * Requirements:
-   *
-   * - `key` must be in the map.
-   */
-  function get(UintToAddressMap storage map, uint256 key) internal view returns (address) {
-    return address(uint160(uint256(get(map._inner, bytes32(key)))));
-  }
-
-  /**
-   * @dev Same as {get}, with a custom error message when `key` is not in the map.
-   *
-   * CAUTION: This function is deprecated because it requires allocating memory for the error
-   * message unnecessarily. For custom revert reasons use {tryGet}.
-   */
-  function get(
-    UintToAddressMap storage map,
-    uint256 key,
-    string memory errorMessage
-  ) internal view returns (address) {
-    return address(uint160(uint256(get(map._inner, bytes32(key), errorMessage))));
-  }
-
-  // AddressToUintMap
-
-  struct AddressToUintMap {
-    Bytes32ToBytes32Map _inner;
-  }
-
-  /**
-   * @dev Adds a key-value pair to a map, or updates the value for an existing
-   * key. O(1).
-   *
-   * Returns true if the key was added to the map, that is if it was not
-   * already present.
-   */
-  function set(
-    AddressToUintMap storage map,
-    address key,
-    uint256 value
-  ) internal returns (bool) {
-    return set(map._inner, bytes32(uint256(uint160(key))), bytes32(value));
-  }
-
-  /**
-   * @dev Removes a value from a set. O(1).
-   *
-   * Returns true if the key was removed from the map, that is if it was present.
-   */
-  function remove(AddressToUintMap storage map, address key) internal returns (bool) {
-    return remove(map._inner, bytes32(uint256(uint160(key))));
-  }
-
-  /**
-   * @dev Returns true if the key is in the map. O(1).
-   */
-  function contains(AddressToUintMap storage map, address key) internal view returns (bool) {
-    return contains(map._inner, bytes32(uint256(uint160(key))));
-  }
-
-  /**
-   * @dev Returns the number of elements in the map. O(1).
-   */
-  function length(AddressToUintMap storage map) internal view returns (uint256) {
-    return length(map._inner);
-  }
-
-  /**
-   * @dev Returns the element stored at position `index` in the set. O(1).
-   * Note that there are no guarantees on the ordering of values inside the
-   * array, and it may change when more values are added or removed.
-   *
-   * Requirements:
-   *
-   * - `index` must be strictly less than {length}.
-   */
-  function at(AddressToUintMap storage map, uint256 index) internal view returns (address, uint256) {
-    (bytes32 key, bytes32 value) = at(map._inner, index);
-    return (address(uint160(uint256(key))), uint256(value));
-  }
-
-  /**
-   * @dev Tries to returns the value associated with `key`. O(1).
-   * Does not revert if `key` is not in the map.
-   */
-  function tryGet(AddressToUintMap storage map, address key) internal view returns (bool, uint256) {
-    (bool success, bytes32 value) = tryGet(map._inner, bytes32(uint256(uint160(key))));
-    return (success, uint256(value));
-  }
-
-  /**
-   * @dev Returns the value associated with `key`. O(1).
-   *
-   * Requirements:
-   *
-   * - `key` must be in the map.
-   */
-  function get(AddressToUintMap storage map, address key) internal view returns (uint256) {
-    return uint256(get(map._inner, bytes32(uint256(uint160(key)))));
-  }
-
-  /**
-   * @dev Same as {get}, with a custom error message when `key` is not in the map.
-   *
-   * CAUTION: This function is deprecated because it requires allocating memory for the error
-   * message unnecessarily. For custom revert reasons use {tryGet}.
-   */
-  function get(
-    AddressToUintMap storage map,
-    address key,
-    string memory errorMessage
-  ) internal view returns (uint256) {
-    return uint256(get(map._inner, bytes32(uint256(uint160(key))), errorMessage));
-  }
-
-  // Bytes32ToUintMap
-
-  struct Bytes32ToUintMap {
-    Bytes32ToBytes32Map _inner;
-  }
-
-  /**
-   * @dev Adds a key-value pair to a map, or updates the value for an existing
-   * key. O(1).
-   *
-   * Returns true if the key was added to the map, that is if it was not
-   * already present.
-   */
-  function set(
-    Bytes32ToUintMap storage map,
-    bytes32 key,
-    uint256 value
-  ) internal returns (bool) {
-    return set(map._inner, key, bytes32(value));
-  }
-
-  /**
-   * @dev Removes a value from a set. O(1).
-   *
-   * Returns true if the key was removed from the map, that is if it was present.
-   */
-  function remove(Bytes32ToUintMap storage map, bytes32 key) internal returns (bool) {
-    return remove(map._inner, key);
-  }
-
-  /**
-   * @dev Returns true if the key is in the map. O(1).
-   */
-  function contains(Bytes32ToUintMap storage map, bytes32 key) internal view returns (bool) {
-    return contains(map._inner, key);
-  }
-
-  /**
-   * @dev Returns the number of elements in the map. O(1).
-   */
-  function length(Bytes32ToUintMap storage map) internal view returns (uint256) {
-    return length(map._inner);
-  }
-
-  /**
-   * @dev Returns the element stored at position `index` in the set. O(1).
-   * Note that there are no guarantees on the ordering of values inside the
-   * array, and it may change when more values are added or removed.
-   *
-   * Requirements:
-   *
-   * - `index` must be strictly less than {length}.
-   */
-  function at(Bytes32ToUintMap storage map, uint256 index) internal view returns (bytes32, uint256) {
-    (bytes32 key, bytes32 value) = at(map._inner, index);
-    return (key, uint256(value));
-  }
-
-  /**
-   * @dev Tries to returns the value associated with `key`. O(1).
-   * Does not revert if `key` is not in the map.
-   */
-  function tryGet(Bytes32ToUintMap storage map, bytes32 key) internal view returns (bool, uint256) {
-    (bool success, bytes32 value) = tryGet(map._inner, key);
-    return (success, uint256(value));
-  }
-
-  /**
-   * @dev Returns the value associated with `key`. O(1).
-   *
-   * Requirements:
-   *
-   * - `key` must be in the map.
-   */
-  function get(Bytes32ToUintMap storage map, bytes32 key) internal view returns (uint256) {
-    return uint256(get(map._inner, key));
-  }
-
-  /**
-   * @dev Same as {get}, with a custom error message when `key` is not in the map.
-   *
-   * CAUTION: This function is deprecated because it requires allocating memory for the error
-   * message unnecessarily. For custom revert reasons use {tryGet}.
-   */
-  function get(
-    Bytes32ToUintMap storage map,
-    bytes32 key,
-    string memory errorMessage
-  ) internal view returns (uint256) {
-    return uint256(get(map._inner, key, errorMessage));
-  }
-}
-
-
-// File src/v0.8/ccip/Router.sol
-
+// Original license: SPDX_License_Identifier: BUSL-1.1
 pragma solidity 0.8.19;
+
+
 
 
 
@@ -2002,13 +1643,13 @@ pragma solidity 0.8.19;
 /// @title Router
 /// @notice This is the entry point for the end user wishing to send data across chains.
 /// @dev This contract is used as a router for both on-ramps and off-ramps
-contract Router is IRouter, IRouterClient, TypeAndVersionInterface, OwnerIsCreator {
+contract Router is IRouter, IRouterClient, ITypeAndVersion, OwnerIsCreator {
   using SafeERC20 for IERC20;
-  using EnumerableMap for EnumerableMap.AddressToUintMap;
+  using EnumerableSet for EnumerableSet.UintSet;
 
   error FailedToSendValue();
   error InvalidRecipientAddress(address to);
-  error OffRampMismatch();
+  error OffRampMismatch(uint64 chainSelector, address offRamp);
   error BadARMSignal();
 
   event OnRampSet(uint64 indexed destChainSelector, address onRamp);
@@ -2027,7 +1668,7 @@ contract Router is IRouter, IRouterClient, TypeAndVersionInterface, OwnerIsCreat
   }
 
   // solhint-disable-next-line chainlink-solidity/all-caps-constant-storage-variables
-  string public constant override typeAndVersion = "Router 1.0.0";
+  string public constant override typeAndVersion = "Router 1.2.0";
   // We limit return data to a selector plus 4 words. This is to avoid
   // malicious contracts from returning large amounts of data and causing
   // repeated out-of-gas scenarios.
@@ -2041,10 +1682,9 @@ contract Router is IRouter, IRouterClient, TypeAndVersionInterface, OwnerIsCreat
   // destChainSelector => onRamp address
   // Only ever one onRamp enabled at a time for a given destChainSelector.
   mapping(uint256 destChainSelector => address onRamp) private s_onRamps;
-  // Mapping of offRamps to source chain ids
-  // Can be multiple offRamps enabled at a time for a given sourceChainSelector,
-  // for example during an no downtime upgrade while v1 messages are being flushed.
-  EnumerableMap.AddressToUintMap private s_offRamps;
+  // Stores [sourceChainSelector << 160 + offramp] as a pair to allow for
+  // lookups for specific chain/offramp pairs.
+  EnumerableSet.UintSet private s_chainSelectorAndOffRamps;
 
   constructor(address wrappedNative, address armProxy) {
     // Zero address indicates unsupported auto-wrapping, therefore, unsupported
@@ -2054,7 +1694,7 @@ contract Router is IRouter, IRouterClient, TypeAndVersionInterface, OwnerIsCreat
   }
 
   // ================================================================
-  // |                       Message sending                        |
+  // │                       Message sending                        │
   // ================================================================
 
   /// @inheritdoc IRouterClient
@@ -2068,7 +1708,7 @@ contract Router is IRouter, IRouterClient, TypeAndVersionInterface, OwnerIsCreat
     }
     address onRamp = s_onRamps[destinationChainSelector];
     if (onRamp == address(0)) revert UnsupportedDestinationChain(destinationChainSelector);
-    return IEVM2AnyOnRamp(onRamp).getFee(message);
+    return IEVM2AnyOnRamp(onRamp).getFee(destinationChainSelector, message);
   }
 
   /// @inheritdoc IRouterClient
@@ -2076,7 +1716,7 @@ contract Router is IRouter, IRouterClient, TypeAndVersionInterface, OwnerIsCreat
     if (!isChainSupported(chainSelector)) {
       return new address[](0);
     }
-    return IEVM2AnyOnRamp(s_onRamps[uint256(chainSelector)]).getSupportedTokens();
+    return IEVM2AnyOnRamp(s_onRamps[uint256(chainSelector)]).getSupportedTokens(chainSelector);
   }
 
   /// @inheritdoc IRouterClient
@@ -2098,7 +1738,7 @@ contract Router is IRouter, IRouterClient, TypeAndVersionInterface, OwnerIsCreat
       // as part of the native fee coin payment.
       message.feeToken = s_wrappedNative;
       // We rely on getFee to validate that the feeToken is whitelisted.
-      feeTokenAmount = IEVM2AnyOnRamp(onRamp).getFee(message);
+      feeTokenAmount = IEVM2AnyOnRamp(onRamp).getFee(destinationChainSelector, message);
       // Ensure sufficient native.
       if (msg.value < feeTokenAmount) revert InsufficientFeeTokenAmount();
       // Wrap and send native payment.
@@ -2109,7 +1749,7 @@ contract Router is IRouter, IRouterClient, TypeAndVersionInterface, OwnerIsCreat
     } else {
       if (msg.value > 0) revert InvalidMsgValue();
       // We rely on getFee to validate that the feeToken is whitelisted.
-      feeTokenAmount = IEVM2AnyOnRamp(onRamp).getFee(message);
+      feeTokenAmount = IEVM2AnyOnRamp(onRamp).getFee(destinationChainSelector, message);
       IERC20(message.feeToken).safeTransferFrom(msg.sender, onRamp, feeTokenAmount);
     }
 
@@ -2119,89 +1759,56 @@ contract Router is IRouter, IRouterClient, TypeAndVersionInterface, OwnerIsCreat
       // We rely on getPoolBySourceToken to validate that the token is whitelisted.
       token.safeTransferFrom(
         msg.sender,
-        address(IEVM2AnyOnRamp(onRamp).getPoolBySourceToken(token)),
+        address(IEVM2AnyOnRamp(onRamp).getPoolBySourceToken(destinationChainSelector, token)),
         message.tokenAmounts[i].amount
       );
     }
 
-    return IEVM2AnyOnRamp(onRamp).forwardFromRouter(message, feeTokenAmount, msg.sender);
+    return IEVM2AnyOnRamp(onRamp).forwardFromRouter(destinationChainSelector, message, feeTokenAmount, msg.sender);
   }
 
   // ================================================================
-  // |                      Message execution                       |
+  // │                      Message execution                       │
   // ================================================================
 
   /// @inheritdoc IRouter
-  /// @dev Handles the edge case where we want to pass a specific amount of gas,
-  /// @dev but EIP-150 sends all but 1/64 of the remaining gas instead so the user gets
-  /// @dev less gas than they paid for. The other 2 parts of EIP-150 do not apply since
-  /// @dev a) we hard code value=0 and b) we ensure code already exists.
-  /// @dev If we revert instead, then that will never happen.
-  /// @dev Separately we capture the return data up to a maximum size to avoid return bombs,
-  /// @dev borrowed from https://github.com/nomad-xyz/ExcessivelySafeCall/blob/main/src/ExcessivelySafeCall.sol.
+  /// @dev _callWithExactGas protects against return data bombs by capping the return data size at MAX_RET_BYTES.
   function routeMessage(
     Client.Any2EVMMessage calldata message,
     uint16 gasForCallExactCheck,
     uint256 gasLimit,
     address receiver
-  )
-    external
-    override
-    onlyOffRamp(message.sourceChainSelector)
-    whenHealthy
-    returns (bool success, bytes memory retData)
-  {
+  ) external override whenHealthy returns (bool success, bytes memory retData, uint256 gasUsed) {
+    // We only permit offRamps to call this function.
+    if (!isOffRamp(message.sourceChainSelector, msg.sender)) revert OnlyOffRamp();
+
     // We encode here instead of the offRamps to constrain specifically what functions
     // can be called from the router.
     bytes memory data = abi.encodeWithSelector(IAny2EVMMessageReceiver.ccipReceive.selector, message);
-    // allocate retData memory ahead of time
-    retData = new bytes(MAX_RET_BYTES);
 
-    // solhint-disable-next-line no-inline-assembly
-    assembly {
-      // solidity calls check that a contract actually exists at the destination, so we do the same
-      // Note we do this check prior to measuring gas so gasForCallExactCheck (our "cushion")
-      // doesn't need to account for it.
-      if iszero(extcodesize(receiver)) {
-        revert(0, 0)
-      }
+    (success, retData, gasUsed) = CallWithExactGas._callWithExactGasSafeReturnData(
+      data,
+      receiver,
+      gasLimit,
+      gasForCallExactCheck,
+      Internal.MAX_RET_BYTES
+    );
 
-      let g := gas()
-      // Compute g -= gasForCallExactCheck and check for underflow
-      // The gas actually passed to the callee is _min(gasAmount, 63//64*gas available).
-      // We want to ensure that we revert if gasAmount >  63//64*gas available
-      // as we do not want to provide them with less, however that check itself costs
-      // gas. gasForCallExactCheck ensures we have at least enough gas to be able
-      // to revert if gasAmount >  63//64*gas available.
-      if lt(g, gasForCallExactCheck) {
-        revert(0, 0)
-      }
-      g := sub(g, gasForCallExactCheck)
-      // if g - g//64 <= gasAmount, revert
-      // (we subtract g//64 because of EIP-150)
-      if iszero(gt(sub(g, div(g, 64)), gasLimit)) {
-        revert(0, 0)
-      }
-      // call and return whether we succeeded. ignore return data
-      // call(gas,addr,value,argsOffset,argsLength,retOffset,retLength)
-      success := call(gasLimit, receiver, 0, add(data, 0x20), mload(data), 0, 0)
-
-      // limit our copy to MAX_RET_BYTES bytes
-      let toCopy := returndatasize()
-      if gt(toCopy, MAX_RET_BYTES) {
-        toCopy := MAX_RET_BYTES
-      }
-      // Store the length of the copied bytes
-      mstore(retData, toCopy)
-      // copy the bytes from retData[0:_toCopy]
-      returndatacopy(add(retData, 0x20), 0, toCopy)
-    }
     emit MessageExecuted(message.messageId, message.sourceChainSelector, msg.sender, keccak256(data));
-    return (success, retData);
+    return (success, retData, gasUsed);
+  }
+
+  // @notice Merges a chain selector and offRamp address into a single uint256 by shifting the
+  // chain selector 160 bits to the left.
+  function _mergeChainSelectorAndOffRamp(
+    uint64 sourceChainSelector,
+    address offRampAddress
+  ) internal pure returns (uint256) {
+    return (uint256(sourceChainSelector) << 160) + uint160(offRampAddress);
   }
 
   // ================================================================
-  // |                           Config                             |
+  // │                           Config                             │
   // ================================================================
 
   /// @notice Gets the wrapped representation of the native fee coin.
@@ -2229,21 +1836,22 @@ contract Router is IRouter, IRouterClient, TypeAndVersionInterface, OwnerIsCreat
     return s_onRamps[destChainSelector];
   }
 
-  /// @notice Return a full list of configured offRamps.
   function getOffRamps() external view returns (OffRamp[] memory) {
-    OffRamp[] memory offRamps = new OffRamp[](s_offRamps.length());
-    for (uint256 i = 0; i < offRamps.length; ++i) {
-      (address offRamp, uint256 sourceChainSelector) = s_offRamps.at(i);
-      offRamps[i] = OffRamp({sourceChainSelector: uint64(sourceChainSelector), offRamp: offRamp});
+    uint256[] memory encodedOffRamps = s_chainSelectorAndOffRamps.values();
+    OffRamp[] memory offRamps = new OffRamp[](encodedOffRamps.length);
+    for (uint256 i = 0; i < encodedOffRamps.length; ++i) {
+      uint256 encodedOffRamp = encodedOffRamps[i];
+      offRamps[i] = OffRamp({
+        sourceChainSelector: uint64(encodedOffRamp >> 160),
+        offRamp: address(uint160(encodedOffRamp))
+      });
     }
     return offRamps;
   }
 
-  /// @notice Returns true if the given address is a permissioned offRamp
-  /// and sourceChainSelector if so.
-  function isOffRamp(address offRamp) external view returns (bool, uint64) {
-    (bool exists, uint256 sourceChainSelector) = s_offRamps.tryGet(offRamp);
-    return (exists, uint64(sourceChainSelector));
+  function isOffRamp(uint64 sourceChainSelector, address offRamp) public view returns (bool) {
+    // We have to encode the sourceChainSelector and offRamp into a uint256 to use as a key in the set.
+    return s_chainSelectorAndOffRamps.contains(_mergeChainSelectorAndOffRamp(sourceChainSelector, offRamp));
   }
 
   /// @notice applyRampUpdates applies a set of ramp changes which provides
@@ -2260,24 +1868,25 @@ contract Router is IRouter, IRouterClient, TypeAndVersionInterface, OwnerIsCreat
       s_onRamps[onRampUpdate.destChainSelector] = onRampUpdate.onRamp;
       emit OnRampSet(onRampUpdate.destChainSelector, onRampUpdate.onRamp);
     }
+
     // Apply ingress updates.
-    // We permit an empty list as a way to disable ingress.
     for (uint256 i = 0; i < offRampRemoves.length; ++i) {
-      uint64 rampSelector = offRampRemoves[i].sourceChainSelector;
-      address rampAddress = offRampRemoves[i].offRamp;
+      uint64 sourceChainSelector = offRampRemoves[i].sourceChainSelector;
+      address offRampAddress = offRampRemoves[i].offRamp;
 
-      if (s_offRamps.get(rampAddress) != uint256(rampSelector)) revert OffRampMismatch();
+      // If the selector-offRamp pair does not exist, revert.
+      if (!s_chainSelectorAndOffRamps.remove(_mergeChainSelectorAndOffRamp(sourceChainSelector, offRampAddress)))
+        revert OffRampMismatch(sourceChainSelector, offRampAddress);
 
-      if (s_offRamps.remove(rampAddress)) {
-        emit OffRampRemoved(rampSelector, rampAddress);
-      }
+      emit OffRampRemoved(sourceChainSelector, offRampAddress);
     }
-    for (uint256 i = 0; i < offRampAdds.length; ++i) {
-      uint64 rampSelector = offRampAdds[i].sourceChainSelector;
-      address rampAddress = offRampAdds[i].offRamp;
 
-      if (s_offRamps.set(rampAddress, rampSelector)) {
-        emit OffRampAdded(rampSelector, rampAddress);
+    for (uint256 i = 0; i < offRampAdds.length; ++i) {
+      uint64 sourceChainSelector = offRampAdds[i].sourceChainSelector;
+      address offRampAddress = offRampAdds[i].offRamp;
+
+      if (s_chainSelectorAndOffRamps.add(_mergeChainSelectorAndOffRamp(sourceChainSelector, offRampAddress))) {
+        emit OffRampAdded(sourceChainSelector, offRampAddress);
       }
     }
   }
@@ -2299,16 +1908,8 @@ contract Router is IRouter, IRouterClient, TypeAndVersionInterface, OwnerIsCreat
   }
 
   // ================================================================
-  // |                           Access                             |
+  // │                           Access                             │
   // ================================================================
-
-  /// @notice only lets permissioned offRamps execute
-  /// @dev We additionally restrict offRamps to specific source chains for defense in depth.
-  modifier onlyOffRamp(uint64 expectedSourceChainSelector) {
-    (bool exists, uint256 sourceChainSelector) = s_offRamps.tryGet(msg.sender);
-    if (!exists || expectedSourceChainSelector != uint64(sourceChainSelector)) revert OnlyOffRamp();
-    _;
-  }
 
   /// @notice Ensure that the ARM has not emitted a bad signal, and that the latest heartbeat is not stale.
   modifier whenHealthy() {

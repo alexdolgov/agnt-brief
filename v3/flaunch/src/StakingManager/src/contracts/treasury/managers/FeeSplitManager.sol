@@ -4,6 +4,7 @@ pragma solidity ^0.8.26;
 import {EnumerableSet} from '@openzeppelin/contracts/utils/structs/EnumerableSet.sol';
 import {ReentrancyGuard} from '@solady/utils/ReentrancyGuard.sol';
 
+import {ManagerFeeEscrow} from '@flaunch/libraries/ManagerFeeEscrow.sol';
 import {TreasuryManager, ITreasuryManager} from '@flaunch/treasury/managers/TreasuryManager.sol';
 import {SupportsCreatorTokens} from '@flaunch/treasury/managers/SupportsCreatorTokens.sol';
 import {SupportsOwnerFees} from '@flaunch/treasury/managers/SupportsOwnerFees.sol';
@@ -42,9 +43,10 @@ abstract contract FeeSplitManager is TreasuryManager, SupportsCreatorTokens, Sup
      * Sets up the contract with the initial required contract addresses.
      *
      * @param _treasuryManagerFactory The {TreasuryManagerFactory} that will launch this implementation
+     * @param _feeEscrowRegistry The {FeeEscrowRegistry} that will be used to withdraw fees
      */
-    constructor (address _treasuryManagerFactory)
-        TreasuryManager(_treasuryManagerFactory)
+    constructor (address _treasuryManagerFactory, address _feeEscrowRegistry)
+        TreasuryManager(_treasuryManagerFactory, _feeEscrowRegistry)
         SupportsCreatorTokens(_treasuryManagerFactory)
         SupportsOwnerFees(_treasuryManagerFactory) 
     {
@@ -158,7 +160,7 @@ abstract contract FeeSplitManager is TreasuryManager, SupportsCreatorTokens, Sup
         // Get the pending fees for the manager and add them to the already claimed manager
         // split fees (`splitFees`). If we have a creator or owner fee, then we reduce our manager
         // fees by the creator and owner shares.
-        uint pendingBalance = treasuryManagerFactory.feeEscrow().balances(address(this));
+        uint pendingBalance = ManagerFeeEscrow.feeEscrowBalance(address(this));
         return splitFees + pendingBalance - getCreatorFee(pendingBalance) - getOwnerFee(pendingBalance);
     }
 
@@ -178,7 +180,7 @@ abstract contract FeeSplitManager is TreasuryManager, SupportsCreatorTokens, Sup
 
         // Get the pending fees for the manager and add the creator share of those to the already
         // claimed creator fees (`creatorFees`).
-        uint pendingBalance = treasuryManagerFactory.feeEscrow().balances(address(this));
+        uint pendingBalance = ManagerFeeEscrow.feeEscrowBalance(address(this));
         return _creatorFees + getCreatorFee(pendingBalance);
     }
 
@@ -202,7 +204,7 @@ abstract contract FeeSplitManager is TreasuryManager, SupportsCreatorTokens, Sup
 
         // Withdraw fees earned from the held tokens, unwrapping into ETH, which will increment our
         // fee values in the `receive` function.
-        treasuryManagerFactory.feeEscrow().withdrawFees(address(this), true);
+        _withdrawAllFees(address(this), true);
 
         // Calculate the allocation for the caller, based on their individual lifetime claims and
         // the total amount that the manager has claimed. This will prevent recipients for claiming
@@ -258,12 +260,17 @@ abstract contract FeeSplitManager is TreasuryManager, SupportsCreatorTokens, Sup
     receive () external override payable {
         // If we have received fees from our FeeEscrow, then this should be handled as a claim
         // from the fee allocations of ERC721 tokens. This means that we allocate a portion of
-        // this fee to the creators pool
-        if (msg.sender == address(treasuryManagerFactory.feeEscrow())) {
-            // Calculate the creator fee and allocate it
-            uint creatorFee = getCreatorFee(msg.value);
-            if (creatorFee != 0) {
-                _creatorFees += creatorFee;
+        // this fee to the creators pool.
+        (bool isFeeEscrow, bool isLegacy) = ManagerFeeEscrow.isFeeEscrow(msg.sender);
+        if (isFeeEscrow) {
+            // Calculate the creator fee and allocate it. If the FeeEscrow is legacy we cannot
+            // allocate creator fees due to a lack of backwards compatibility.
+            uint creatorFee;
+            if (!isLegacy) {
+                creatorFee = getCreatorFee(msg.value);
+                if (creatorFee != 0) {
+                    _creatorFees += creatorFee;
+                }
             }
 
             // Calculate the owner fee and allocate it

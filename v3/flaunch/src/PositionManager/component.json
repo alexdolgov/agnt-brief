@@ -1,74 +1,41 @@
 {
   "component": "PositionManager",
   "main_contract": "PositionManager",
-  "source_file_count": 101,
-  "deployment_count": 8,
-  "audited": false,
-  "audits_covering": [],
+  "source_entry_count": 93,
+  "source_file_count": 93,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PositionManager\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://1229184497-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FoleIQgpsdD3uHYHcTay2%2Fuploads%2FLe4HhcXKikOZSlfl2bSl%2F2025-03_Security%20Review_FlayerLabs_Flaunch%20v1.1%20Protocol%20Upgrade.pdf",
+    "https://1229184497-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FoleIQgpsdD3uHYHcTay2%2Fuploads%2FvGZ6DMH5qc5WmOLDVo1R%2F2024-12_Security_Review_FlayerLabs_Flaunch.pdf"
+  ],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x2bc8cbfe237aeddc7c296436fefe239a0a22dabf",
+      "address": "0x23321f11a6d44fd1ab790044fdfde5758c902fdc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394459"
     },
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x8af174ed38891f0f3ea26a6cd692cc22eac913ee",
+      "address": "0x516af52d0c629b5e378da4dc64ecb0744ce10109",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xa9bd947751c6a6d33ccd0ef4a03c48466f24c172",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xc3c6dd2b13cbc2354e20a4eebc75b6ff71126763",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xe52de1801c10cf709cc8e62d43d783afe984b510",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xe70c28f21e3b40e6be7d0188706635356f318211",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xf9753e6e4fdd1869be40685690a28bff26b8b114",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xfa9e8528ee95eb109bffd1a2d59cb95b300a672a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394462"
     }
   ]
 }

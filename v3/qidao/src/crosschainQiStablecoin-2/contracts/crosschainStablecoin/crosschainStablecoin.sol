@@ -1,4 +1,4 @@
-pragma solidity 0.5.17;
+pragma solidity 0.5.16;
 
 import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -20,6 +20,7 @@ contract crosschainStablecoin is ReentrancyGuard, VaultNFTv4 {
 
     uint256 public vaultCount;
     uint256 public closingFee;
+    uint256 public openingFee;
 
     uint256 public treasury;
     uint256 public tokenPeg;
@@ -63,7 +64,7 @@ contract crosschainStablecoin is ReentrancyGuard, VaultNFTv4 {
         assert(minimumCollateralPercentage != 0);
                         //  | decimals start here
         closingFee=50; // 0.5%
-
+        openingFee=0; // 0.0%
         ethPriceSource = PriceSource(ethPriceSourceAddress);
         stabilityPool = address(0);
         tokenPeg = 100000000; // $1
@@ -94,6 +95,10 @@ contract crosschainStablecoin is ReentrancyGuard, VaultNFTv4 {
 
     function getClosingFee() external view returns (uint256){
         return closingFee;
+    }
+
+    function getOpeningFee() external view returns (uint256){
+        return openingFee;
     }
 
     function getTokenPriceSource() public view returns (uint256){

@@ -1,48 +1,89 @@
 # Agentic Audit Brief: Goose
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Goose (`goose`)
+- Website: [https://goose-docs.ai/](https://goose-docs.ai/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:56.733Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
-- Chains: arbitrum, ethereum, opbnb
-- Contract surface: 12 unique implementations (13 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: bsc
+- Contract surface: 4 unique implementations (4 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $12,794,956.85
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-CeDeFi. Structurally: 7 project-authored contract(s) across 3 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.
+No contract logic was present for Goose in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Contracts are linked by 4 cross-contract reference(s). Dominant framework: openzeppelin-upgradeable.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 4 contracts are derived from known codebases. 4 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x1ee38d...08e6fb`, chain 56)
+- UnnamedContract (`0x2ef488...42ab3a`, chain 56)
+- UnnamedContract (`0xe70e91...7f2e57`, chain 56)
+- UnnamedContract (`0xf952fc...5bfda6`, chain 56)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 14; live-surface contracts included: 13 (6 live, 7 unknown).
-- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 4/4 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/5 (0.0%)
-- Deployed-live implementations: 5 of 12 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/5
-- Verified + Unaudited implementations: 5
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 4 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 4 of 4 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 7
-- Unique implementations: 12
-- Raw deployments: 13
+- Unverified implementations: 4
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2021-03 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
@@ -56,15 +97,9 @@ The protocol comprises 3 functional families. Contracts are linked by 4 cross-co
 
 - None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| DataStorage | unknown | arbitrum | n/a | [`0x7da1ea...448ef3`](./contracts/arbitrum-42161/0x7da1ea975cfa94c230fe527b9d36a62a77448ef3/) | ⚠️ Unaudited |
-| LRTVault | core_logic | ethereum | n/a | [`0x234c01...4f6299`](./contracts/ethereum-1/0x234c013dccb6af642fcb7060a91c9c71504f6299/) | ⚠️ Unaudited |
-| Safe | unknown | ethereum | n/a | [`0x509b38...d695e0`](./contracts/ethereum-1/0x509b38c5f884067e2128c4fc89d1489813d695e0/) | ⚠️ Unaudited |
-| USDVault | core_logic | arbitrum | n/a | 2 deployments: ethereum `0xe8a01d...e7e9fb`; arbitrum [`0x0874f9...232899`](./contracts/arbitrum-42161/0x0874f961178879cdbde3500544c49f864f232899/) | ⚠️ Unaudited |
-| VaultFactory | registry | arbitrum | n/a | [`0xa988bf...ae6e3f`](./contracts/arbitrum-42161/0xa988bfe90492d701069702321e319628c9ae6e3f/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -78,25 +113,44 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (7)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | opbnb | n/a | `0x2618d3...a5230d` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x7da1ea...448ef3` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x857ab0...0c2d3b` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xa988bf...ae6e3f` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xbaa11f...97a6bb` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xc5db81...8563b9` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xe4bf4e...6ec8d3` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387046 | `0x1ee38d...08e6fb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387047 | `0x2ef488...42ab3a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387048 | `0xe70e91...7f2e57` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-387049 | `0xf952fc...5bfda6` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [assets/-MT5Nug3dG0o_JI3n0I1/-MWf8Zs18Nw7znkqTiVb/-MWf8krbtSdOclfHHMVi/Goose_SC_Audit_Report.pdf](https://2939915961-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-MT5Nug3dG0o_JI3n0I1%2F-MWf8Zs18Nw7znkqTiVb%2F-MWf8krbtSdOclfHHMVi%2FGoose_SC_Audit_Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [assets/-MT5Nug3dG0o_JI3n0I1/-MWf8Zs18Nw7znkqTiVb/-MWf8krbtSdOclfHHMVi/Goose_SC_Audit_Report.pdf](https://2939915961-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-MT5Nug3dG0o_JI3n0I1%2F-MWf8Zs18Nw7znkqTiVb%2F-MWf8krbtSdOclfHHMVi%2FGoose_SC_Audit_Report.pdf) | unknown | Audit | 2021-03 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 9 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [20719] assets/-MT5Nug3dG0o_JI3n0I1/-MWf8Zs18Nw7znkqTiVb/-MWf8krbtSdOclfHHMVi/Goose_SC_Audit_Report.pdf — no match: Scope section explicitly lists 9 contracts with file paths. Audit date is March 24, 2021 from the cover page.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| assets/-MT5Nug3dG0o_JI3n0I1/-MWf8Zs18Nw7znkqTiVb/-MWf8krbtSdOclfHHMVi/Goose_SC_Audit_Report.pdf | FeeProcessorFactory | unmatched — not counted | — | listed in scope | no |
+| assets/-MT5Nug3dG0o_JI3n0I1/-MWf8Zs18Nw7znkqTiVb/-MWf8krbtSdOclfHHMVi/Goose_SC_Audit_Report.pdf | HouseFactory | unmatched — not counted | — | listed in scope | no |
+| assets/-MT5Nug3dG0o_JI3n0I1/-MWf8Zs18Nw7znkqTiVb/-MWf8krbtSdOclfHHMVi/Goose_SC_Audit_Report.pdf | IncubatorChefFactory | unmatched — not counted | — | listed in scope | no |
+| assets/-MT5Nug3dG0o_JI3n0I1/-MWf8Zs18Nw7znkqTiVb/-MWf8krbtSdOclfHHMVi/Goose_SC_Audit_Report.pdf | TokenFactory | unmatched — not counted | — | listed in scope | no |
+| assets/-MT5Nug3dG0o_JI3n0I1/-MWf8Zs18Nw7znkqTiVb/-MWf8krbtSdOclfHHMVi/Goose_SC_Audit_Report.pdf | FeeProcessor | unmatched — not counted | — | listed in scope | no |
+| assets/-MT5Nug3dG0o_JI3n0I1/-MWf8Zs18Nw7znkqTiVb/-MWf8krbtSdOclfHHMVi/Goose_SC_Audit_Report.pdf | HouseChef | unmatched — not counted | — | listed in scope | no |
+| assets/-MT5Nug3dG0o_JI3n0I1/-MWf8Zs18Nw7znkqTiVb/-MWf8krbtSdOclfHHMVi/Goose_SC_Audit_Report.pdf | IncubatorChef | unmatched — not counted | — | listed in scope | no |
+| assets/-MT5Nug3dG0o_JI3n0I1/-MWf8Zs18Nw7znkqTiVb/-MWf8krbtSdOclfHHMVi/Goose_SC_Audit_Report.pdf | LayerFactory | unmatched — not counted | — | listed in scope | no |
+| assets/-MT5Nug3dG0o_JI3n0I1/-MWf8Zs18Nw7znkqTiVb/-MWf8krbtSdOclfHHMVi/Goose_SC_Audit_Report.pdf | GooseToken | unmatched — not counted | — | listed in scope | no |
 
 ## Coverage Gaps
 
@@ -111,7 +165,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 12 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 
@@ -119,7 +173,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 9 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1
 - Match method counts: n/a
 
 Zero-match audit list:

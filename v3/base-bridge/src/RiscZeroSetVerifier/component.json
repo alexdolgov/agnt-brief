@@ -1,7 +1,26 @@
 {
   "component": "RiscZeroSetVerifier",
   "main_contract": "RiscZeroSetVerifier",
-  "source_file_count": 4,
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [
+    {
+      "original_path": "../lib/openzeppelin-contracts/contracts/utils/cryptography/MerkleProof.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-974a896d0e52-MerkleProof.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../lib/openzeppelin-contracts/contracts/utils/cryptography/Hashes.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-cf35908e98b4-Hashes.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RiscZeroSetVerifier\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +31,9 @@
       "address": "0x5005aba3dff7c940fcc1e48dcccad611a80eeb85",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401637"
     }
   ]
 }

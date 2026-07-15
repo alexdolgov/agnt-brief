@@ -1,26 +1,48 @@
 {
   "component": "FreeBetsHolder-3",
   "main_contract": "FreeBetsHolder",
-  "source_file_count": 22,
-  "deployment_count": 2,
+  "source_entry_count": 23,
+  "source_file_count": 23,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FreeBetsHolder-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x33b5b4bf35ec8fcb97dc2f54e7110e3151914f3d",
+      "address": "0x44a484dff32af36fbbe798553a9caef61cced0ee",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x775858a85e7845f1dff1262f9eb7a901a39260a4",
+      "address": "0x330d8687942e73ce4bfd1e7b6c3217f37b8c1971",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x370ca488cf7859e20a7009d25acc8f4577c2a5e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

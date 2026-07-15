@@ -1,48 +1,90 @@
 # Agentic Audit Brief: Convergence Fi
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 5 (0 matched; 5 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Convergence Fi (`convergence-fi`)
+- Website: [https://app.cvg.finance/](https://app.cvg.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:42.101Z
-- Pipeline run: v2-2026-07-02-1ba3fd
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 51 unique implementations (51 raw deployments)
+- Contract surface: 56 unique implementations (56 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $526,539.10
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Yield. Structurally: 34 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for Convergence Fi in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Contracts are linked by 67 cross-contract reference(s). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 5 contracts are derived from known codebases. 5 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x0af815...3e35f7`, chain 1)
+- UnnamedContract (`0x794c31...27fcb9`, chain 1)
+- UnnamedContract (`0xcd6cfc...78b36c`, chain 1)
+- UnnamedContract (`0xd2be17...8cd856`, chain 1)
+- UnnamedContract (`0xd2c46b...f71dbb`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 51; live-surface contracts included: 51 (51 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 5/5 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/51 (0.0%)
-- Deployed-live implementations: 51 of 51 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/51
-- Verified + Unaudited implementations: 51
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 5 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 51 discovered implementations excluded (2 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 16
+- Deployed-live implementations: 5 of 56 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 51
-- Raw deployments: 51
+- Unverified implementations: 5
+- Unique implementations: 56
+- Raw deployments: 56
 - Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-11 (stale)
-- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 3 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 3 stale, 2 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
@@ -58,59 +100,59 @@ The protocol comprises 3 functional families. Contracts are linked by 67 cross-c
 
 ### ⚠️ Verified + Unaudited (51)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BondCalculator | unknown | ethereum | n/a | [`0x8022d1...0c9b3d`](./contracts/ethereum-1/0x8022d15c94f304d838c824cdcc5cd5eac50c9b3d/) | ⚠️ Unaudited |
-| BondDepository | unknown | ethereum | n/a | [`0x1e43b2...12597c`](./contracts/ethereum-1/0x1e43b2064d8f030d282c28e105d683a62f12597c/) | ⚠️ Unaudited |
-| BondDepositoryV2 | unknown | ethereum | n/a | [`0x52f15a...b46194`](./contracts/ethereum-1/0x52f15a0b2d27309a1096a40ad72a07a9fab46194/) | ⚠️ Unaudited |
-| BondLogo | unknown | ethereum | n/a | [`0x3916ba...cbeff5`](./contracts/ethereum-1/0x3916bad045ad47395ed8fdca14e762f25fcbeff5/) | ⚠️ Unaudited |
-| BondPositionManager | unknown | ethereum | n/a | [`0x52d89e...81251a`](./contracts/ethereum-1/0x52d89e9e324f235b67044adb21eac3a98281251a/) | ⚠️ Unaudited |
-| CloneFactory | unknown | ethereum | n/a | [`0xcb3ad8...a08537`](./contracts/ethereum-1/0xcb3ad849d3ea81bd579863cff96ca13c3ea08537/) | ⚠️ Unaudited |
-| CloneFactoryV2 | unknown | ethereum | n/a | [`0x15a2d4...fa6ec5`](./contracts/ethereum-1/0x15a2d42421b62e92fe0abd22e2aa6cac8ffa6ec5/) | ⚠️ Unaudited |
-| Cvg | unknown | ethereum | n/a | [`0x97effb...b77be8`](./contracts/ethereum-1/0x97effb790f2fbb701d88f89db4521348a2b77be8/) | ⚠️ Unaudited |
-| Cvg-Finance - Gauge Controller | unknown | ethereum | n/a | [`0xdb7789...e8190d`](./contracts/ethereum-1/0xdb77895ea7fbec05264423910ef9c9144ee8190d/) | ⚠️ Unaudited |
-| Cvg-Finance - veCVG | unknown | ethereum | n/a | [`0x5a35bc...d619d0`](./contracts/ethereum-1/0x5a35bca8e617526678a7c18fb9587417dbd619d0/) | ⚠️ Unaudited |
-| CvgControlTower | unknown | ethereum | n/a | [`0xfd7ea9...296e3e`](./contracts/ethereum-1/0xfd7ea97e967586b5dd79d23eae5a53a47b296e3e/) | ⚠️ Unaudited |
-| CvgControlTowerV2 | unknown | ethereum | n/a | [`0xb0afc8...aeaee7`](./contracts/ethereum-1/0xb0afc8363b8f36e0cce5d54251e20720ffaeaee7/) | ⚠️ Unaudited |
-| CvgCVX | unknown | ethereum | n/a | [`0x2191df...31d082`](./contracts/ethereum-1/0x2191df768ad71140f9f3e96c1e4407a4aa31d082/) | ⚠️ Unaudited |
-| CvgCvxStakingPositionService | unknown | ethereum | n/a | [`0x2c1d29...bab119`](./contracts/ethereum-1/0x2c1d293c50c6d1a4370ebb442a02c5956bbab119/) | ⚠️ Unaudited |
-| CvgOracle | unknown | ethereum | n/a | [`0x451ea5...b6d16c`](./contracts/ethereum-1/0x451ea5a1754a2c60fceaef39518d9e096eb6d16c/) | ⚠️ Unaudited |
-| CvgOracleUpgradeable | unknown | ethereum | n/a | [`0x955659...93b0c3`](./contracts/ethereum-1/0x955659bc4cc1d9fe2f00e422b524d1f24993b0c3/) | ⚠️ Unaudited |
-| CvgRewards | unknown | ethereum | n/a | [`0xd615c6...0bc9d7`](./contracts/ethereum-1/0xd615c6db5c472b446e6a9a067465cfe58a0bc9d7/) | ⚠️ Unaudited |
-| CvgRewardsV2 | unknown | ethereum | n/a | [`0x149bf8...6f5e7f`](./contracts/ethereum-1/0x149bf88ac48fbb2776d56f3e3e55b4e4056f5e7f/) | ⚠️ Unaudited |
-| CvgRewardsV3 | unknown | ethereum | n/a | [`0xa044fd...579109`](./contracts/ethereum-1/0xa044fd2e8254ec5de93b15b8b27d005899579109/) | ⚠️ Unaudited |
-| CvgSDT | unknown | ethereum | n/a | [`0x830614...6fcffc`](./contracts/ethereum-1/0x830614ae209ff9d8706d386fcdbc7a55206fcffc/) | ⚠️ Unaudited |
-| CvgSdtBuffer | unknown | ethereum | n/a | [`0x4df0a3...2cc6ae`](./contracts/ethereum-1/0x4df0a305fd635ac53c3acf9f8da3c8acbd2cc6ae/) | ⚠️ Unaudited |
-| CVX1 | unknown | ethereum | n/a | [`0x6c9815...078712`](./contracts/ethereum-1/0x6c9815826fdf8c7a45ccfed2064dbab33a078712/) | ⚠️ Unaudited |
-| CvxAssetStakerBuffer | unknown | ethereum | n/a | [`0x600c91...0dcb92`](./contracts/ethereum-1/0x600c91ae1ff05340d47507aee0e7cf8dd10dcb92/) | ⚠️ Unaudited |
-| CvxAssetStakingService | unknown | ethereum | n/a | [`0xc0d753...33e303`](./contracts/ethereum-1/0xc0d75399123aff2cd488293725290c68e533e303/) | ⚠️ Unaudited |
-| CvxRewardDistributor | unknown | ethereum | n/a | [`0x47c69e...c71f19`](./contracts/ethereum-1/0x47c69e8c909ce626af73c955a5e34a20b7c71f19/) | ⚠️ Unaudited |
-| CvxRewardDistributorV2 | unknown | ethereum | n/a | [`0x2b083b...3e7606`](./contracts/ethereum-1/0x2b083beaac310cc5e190b1d2507038ccb03e7606/) | ⚠️ Unaudited |
-| LockingLogo | unknown | ethereum | n/a | [`0x05816a...1e29e9`](./contracts/ethereum-1/0x05816acfe129553a3c387389980bf7e4871e29e9/) | ⚠️ Unaudited |
-| LockingPositionDelegate | unknown | ethereum | n/a | [`0xc375d5...5b2271`](./contracts/ethereum-1/0xc375d517775d74b9bb64a895bdb68c91c55b2271/) | ⚠️ Unaudited |
-| LockingPositionManager | unknown | ethereum | n/a | [`0x0edb88...a0c0ce`](./contracts/ethereum-1/0x0edb88aa3aa665782121fa2509b382f414a0c0ce/) | ⚠️ Unaudited |
-| LockingPositionService | unknown | ethereum | n/a | [`0x84728e...fad4d2`](./contracts/ethereum-1/0x84728ef58f70dd9ddb2d54869b5ad8d922fad4d2/) | ⚠️ Unaudited |
-| LockingPositionServiceV2 | unknown | ethereum | n/a | [`0xbd1d17...8f5009`](./contracts/ethereum-1/0xbd1d174b448cfb0c1680a88b0101daf6ae8f5009/) | ⚠️ Unaudited |
-| LockingPositionServiceV3 | unknown | ethereum | n/a | [`0xc809e0...cb1262`](./contracts/ethereum-1/0xc809e0729d7ea45b1ce6149baab79991e2cb1262/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0xf16d93...f59e89`](./contracts/ethereum-1/0xf16d93acf337de38ee55dfb2f2a276883ff59e89/) | ⚠️ Unaudited |
-| SdtBlackHole | unknown | ethereum | n/a | [`0x217771...deb77f`](./contracts/ethereum-1/0x21777106355ba506a31ff7984c0ae5c924deb77f/) | ⚠️ Unaudited |
-| SdtBuffer | unknown | ethereum | n/a | [`0xdb22d4...cd5871`](./contracts/ethereum-1/0xdb22d48e43dd9cf08987b85e21f172c515cd5871/) | ⚠️ Unaudited |
-| SdtBufferV2 | unknown | ethereum | n/a | [`0x31ab49...44ddcb`](./contracts/ethereum-1/0x31ab49528b37af1ee3ef9665cdc22e494a44ddcb/) | ⚠️ Unaudited |
-| SdtFeeCollector | unknown | ethereum | n/a | [`0x15cbdf...0c42ae`](./contracts/ethereum-1/0x15cbdf343fa37cd555d8f8cdeaa3948c1f0c42ae/) | ⚠️ Unaudited |
-| SdtRewardDistributor | unknown | ethereum | n/a | [`0x3554f7...1e4d66`](./contracts/ethereum-1/0x3554f7e8f87b4c60fba1e7ed9e3fdcee4d1e4d66/) | ⚠️ Unaudited |
-| SdtRewardDistributorV2 | unknown | ethereum | n/a | [`0x2af5ae...c1a704`](./contracts/ethereum-1/0x2af5ae072e8594a04e14a410fb0d865767c1a704/) | ⚠️ Unaudited |
-| SdtStakingLogo | unknown | ethereum | n/a | [`0x461754...fded02`](./contracts/ethereum-1/0x4617548f686be150c3c5c131926b5be287fded02/) | ⚠️ Unaudited |
-| SdtStakingPositionManager | unknown | ethereum | n/a | [`0x731966...d0dc48`](./contracts/ethereum-1/0x7319662ad7d7ce2d1595073ea042b723f6d0dc48/) | ⚠️ Unaudited |
-| SdtStakingPositionService | unknown | ethereum | n/a | [`0xdba753...dcf799`](./contracts/ethereum-1/0xdba75359b323cc61e02975760d89178f79dcf799/) | ⚠️ Unaudited |
-| SdtStakingViewer | unknown | ethereum | n/a | [`0xa3a8cd...b05ff0`](./contracts/ethereum-1/0xa3a8cda21f50b6737385e46fc9495a9998b05ff0/) | ⚠️ Unaudited |
-| SdtUtilities | unknown | ethereum | n/a | [`0x8d41fa...4b5474`](./contracts/ethereum-1/0x8d41faa4c774221aeddf324461864da3a14b5474/) | ⚠️ Unaudited |
-| StkCvg | unknown | ethereum | n/a | [`0x4b3bd8...3960c8`](./contracts/ethereum-1/0x4b3bd8906083bde267a79e4131af7a6f723960c8/) | ⚠️ Unaudited |
-| StratPostExploit | unknown | ethereum | n/a | [`0xf0c310...674d37`](./contracts/ethereum-1/0xf0c3107fa783b23ffb789953b868dc42f9674d37/) | ⚠️ Unaudited |
-| UpgradeableBeacon | unknown | ethereum | n/a | [`0x5d6088...cd2c33`](./contracts/ethereum-1/0x5d6088d6303fce50c0c5c76c47257c5d97cd2c33/) | ⚠️ Unaudited |
-| VestingCvg | unknown | ethereum | n/a | [`0xc929ba...2a0c30`](./contracts/ethereum-1/0xc929ba60ef82fe55de3bc848dd9453b3b12a0c30/) | ⚠️ Unaudited |
-| YsCrvDistributor | unknown | ethereum | n/a | [`0x5d3ea3...020ccd`](./contracts/ethereum-1/0x5d3ea3460f3e0248633786203db29dc349020ccd/) | ⚠️ Unaudited |
-| YsDistributor | unknown | ethereum | n/a | [`0xbc39db...422fb7`](./contracts/ethereum-1/0xbc39db78f6cd8562d2406474583613f0c2422fb7/) | ⚠️ Unaudited |
-| YsStreamer | unknown | ethereum | n/a | [`0x2841f1...84ac5a`](./contracts/ethereum-1/0x2841f1b3b370f56a3798a258d317052b4284ac5a/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BondCalculator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8022d1...0c9b3d` | ⚠️ Unaudited |
+| BondDepository | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1e43b2...12597c` | ⚠️ Unaudited |
+| BondDepositoryV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x52f15a...b46194` | ⚠️ Unaudited |
+| BondLogo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3916ba...cbeff5` | ⚠️ Unaudited |
+| BondPositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x52d89e...81251a` | ⚠️ Unaudited |
+| CloneFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcb3ad8...a08537` | ⚠️ Unaudited |
+| CloneFactoryV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x15a2d4...fa6ec5` | ⚠️ Unaudited |
+| Cvg | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x97effb...b77be8` | ⚠️ Unaudited |
+| Cvg-Finance - Gauge Controller | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xdb7789...e8190d` | ⚠️ Unaudited |
+| Cvg-Finance - veCVG | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x5a35bc...d619d0` | ⚠️ Unaudited |
+| CvgControlTower | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfd7ea9...296e3e` | ⚠️ Unaudited |
+| CvgControlTowerV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xb0afc8...aeaee7` | ⚠️ Unaudited |
+| CvgCVX | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x2191df...31d082` | ⚠️ Unaudited |
+| CvgCvxStakingPositionService | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x2c1d29...bab119` | ⚠️ Unaudited |
+| CvgOracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x451ea5...b6d16c` | ⚠️ Unaudited |
+| CvgOracleUpgradeable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x955659...93b0c3` | ⚠️ Unaudited |
+| CvgRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd615c6...0bc9d7` | ⚠️ Unaudited |
+| CvgRewardsV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x149bf8...6f5e7f` | ⚠️ Unaudited |
+| CvgRewardsV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xa044fd...579109` | ⚠️ Unaudited |
+| CvgSDT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x830614...6fcffc` | ⚠️ Unaudited |
+| CvgSdtBuffer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4df0a3...2cc6ae` | ⚠️ Unaudited |
+| CVX1 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x6c9815...078712` | ⚠️ Unaudited |
+| CvxAssetStakerBuffer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x600c91...0dcb92` | ⚠️ Unaudited |
+| CvxAssetStakingService | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc0d753...33e303` | ⚠️ Unaudited |
+| CvxRewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x47c69e...c71f19` | ⚠️ Unaudited |
+| CvxRewardDistributorV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x2b083b...3e7606` | ⚠️ Unaudited |
+| LockingLogo | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x05816a...1e29e9` | ⚠️ Unaudited |
+| LockingPositionDelegate | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xc375d5...5b2271` | ⚠️ Unaudited |
+| LockingPositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x0edb88...a0c0ce` | ⚠️ Unaudited |
+| LockingPositionService | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x84728e...fad4d2` | ⚠️ Unaudited |
+| LockingPositionServiceV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbd1d17...8f5009` | ⚠️ Unaudited |
+| LockingPositionServiceV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc809e0...cb1262` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0xf16d93...f59e89` | ⚠️ Unaudited |
+| SdtBlackHole | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x217771...deb77f` | ⚠️ Unaudited |
+| SdtBuffer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdb22d4...cd5871` | ⚠️ Unaudited |
+| SdtBufferV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x31ab49...44ddcb` | ⚠️ Unaudited |
+| SdtFeeCollector | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x15cbdf...0c42ae` | ⚠️ Unaudited |
+| SdtRewardDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3554f7...1e4d66` | ⚠️ Unaudited |
+| SdtRewardDistributorV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2af5ae...c1a704` | ⚠️ Unaudited |
+| SdtStakingLogo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x461754...fded02` | ⚠️ Unaudited |
+| SdtStakingPositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x731966...d0dc48` | ⚠️ Unaudited |
+| SdtStakingPositionService | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xdba753...dcf799` | ⚠️ Unaudited |
+| SdtStakingViewer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa3a8cd...b05ff0` | ⚠️ Unaudited |
+| SdtUtilities | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8d41fa...4b5474` | ⚠️ Unaudited |
+| StkCvg | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x4b3bd8...3960c8` | ⚠️ Unaudited |
+| StratPostExploit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf0c310...674d37` | ⚠️ Unaudited |
+| UpgradeableBeacon | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x5d6088...cd2c33` | ⚠️ Unaudited |
+| VestingCvg | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc929ba...2a0c30` | ⚠️ Unaudited |
+| YsCrvDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5d3ea3...020ccd` | ⚠️ Unaudited |
+| YsDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xbc39db...422fb7` | ⚠️ Unaudited |
+| YsStreamer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2841f1...84ac5a` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -124,21 +166,94 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (5)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381906 | `0x0af815...3e35f7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381907 | `0x794c31...27fcb9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381908 | `0xcd6cfc...78b36c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381909 | `0xd2be17...8cd856` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-381910 | `0xd2c46b...f71dbb` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui](https://ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui) | Halborn | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [audits.sherlock.xyz/contests/126](https://audits.sherlock.xyz/contests/126) | Sherlock | Contest | 2023-11 | stale | Direct | n/a | 0 | n/a |
-| [2023-11-convergence (GitHub directory)](https://github.com/sherlock-audit/2023-11-convergence) | Sherlock | Contest | 2023-11 | stale | Direct | n/a | 0 | n/a |
-| [app.hats.finance/audit-competitions/convergence-finance-0x0e410e7af8e70fc5bffcdbfbdf1673ee7b3d0777/scope](https://app.hats.finance/audit-competitions/convergence-finance-0x0e410e7af8e70fc5bffcdbfbdf1673ee7b3d0777/scope) | Hats Finance | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
-| [app.hats.finance/audit-competitions/convergence-convex-integration-0xb3df23e155b74ad2b93777f58980d6727e8b40bb/scope](https://app.hats.finance/audit-competitions/convergence-convex-integration-0xb3df23e155b74ad2b93777f58980d6727e8b40bb/scope) | Hats Finance | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui](https://ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui) | Halborn | Audit | 2023-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 31 | high |
+| [audits.sherlock.xyz/contests/126](https://audits.sherlock.xyz/contests/126) | Sherlock | Contest | 2023-11 | stale | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [2023-11-convergence (GitHub directory)](https://github.com/sherlock-audit/2023-11-convergence) | Sherlock | Contest | 2023-11 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 19 | high |
+| [app.hats.finance/audit-competitions/convergence-finance-0x0e410e7af8e70fc5bffcdbfbdf1673ee7b3d0777/scope](https://app.hats.finance/audit-competitions/convergence-finance-0x0e410e7af8e70fc5bffcdbfbdf1673ee7b3d0777/scope) | Hats Finance | Contest | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [app.hats.finance/audit-competitions/convergence-convex-integration-0xb3df23e155b74ad2b93777f58980d6727e8b40bb/scope](https://app.hats.finance/audit-competitions/convergence-convex-integration-0xb3df23e155b74ad2b93777f58980d6727e8b40bb/scope) | Hats Finance | Contest | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [21359] ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui — no match: All 31 contracts listed in scope section of the report.
+- [21360] audits.sherlock.xyz/contests/126 — no match: The provided text is a fragment of a contest page header with no contract names or audit report content.
+- [21361] 2023-11-convergence (GitHub directory) — no match: Extracted 19 contract names from the audit scope listing. No audit date found in the provided text.
+- [21362] app.hats.finance/audit-competitions/convergence-finance-0x0e410e7af8e70fc5bffcdbfbdf1673ee7b3d0777/scope — no match: The provided text is not an audit report; it appears to be a website requiring JavaScript. No contract names or audit details could be extracted.
+- [21363] app.hats.finance/audit-competitions/convergence-convex-integration-0xb3df23e155b74ad2b93777f58980d6727e8b40bb/scope — no match: The provided text is not an audit report but a generic message about JavaScript. No contracts or audit details found.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | BondCalculator | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | BondDepository | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | BondLogo | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | BondPositionManager | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | GaugeController | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | LockingLogo | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | LockingPositionDelegate | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | LockingPositionManager | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | veCVG | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | VveCVGCalculator | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | CvgOracle | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | CvgV3Aggregator | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | SeedPresaleCvg | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | VestingCvg | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | WlPresaleCvg | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | CvgRewards | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | TAssetBlackHole | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | YsDistributor | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | CvgTokeStaking | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | StakingLogo | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | StakingViewer | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | TAssetStaking | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | TokeStaker | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | TokeStakingCommon | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | Cvg | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | CvgERC721TimeLocking | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | CvgToke | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | CvgUtilities | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | SwapperFactory | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | CloneFactory | unmatched — not counted | — | listed in scope | no |
+| ipfs.io/ipfs/QmPyZZoeNJqt44GiFRoc8E9JctCyp5DYxkW254hhfkeUui | CvgControlTower | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | GaugeController | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | LockingPositionDelegate | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | LockingPositionManager | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | LockingPositionService | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | veCVG | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | CvgRewards | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | CvgSdtBuffer | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | SdtBlackHole | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | SdtBuffer | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | SdtFeeCollector | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | YsDistributor | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | SdtRewardReceiver | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | SdtStakingPositionManager | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | SdtStakingPositionService | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | Cvg | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | CvgERC721TimeLockingUpgradeable | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | CvgSDT | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | CvgUtilities | unmatched — not counted | — | listed in scope | no |
+| 2023-11-convergence (GitHub directory) | SdtUtilities | unmatched — not counted | — | listed in scope | no |
 
 ## Coverage Gaps
 
@@ -150,10 +265,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 49 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 51 |
+| standard_library | 2 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 
@@ -161,7 +276,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 50 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=2, low=3
 - Match method counts: n/a
 
 Zero-match audit list:

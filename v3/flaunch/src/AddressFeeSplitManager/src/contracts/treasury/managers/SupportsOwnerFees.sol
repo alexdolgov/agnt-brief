@@ -1,8 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.26;
 
-import {TreasuryManagerFactory} from '@flaunch/treasury/managers/TreasuryManagerFactory.sol';
 import {FullMath} from '@uniswap/v4-core/src/libraries/FullMath.sol';
+
+import {ManagerFeeEscrow} from '@flaunch/libraries/ManagerFeeEscrow.sol';
+import {TreasuryManagerFactory} from '@flaunch/treasury/managers/TreasuryManagerFactory.sol';
 
 
 /**
@@ -72,7 +74,7 @@ abstract contract SupportsOwnerFees {
      * @return uint The amount of ETH available to claim by the owner
      */
     function pendingOwnerFees() public view returns (uint) {
-        return getOwnerFee(__treasuryManagerFactory.feeEscrow().balances(address(this)));
+        return getOwnerFee(ManagerFeeEscrow.feeEscrowBalance(address(this)));
     }
 
     /**

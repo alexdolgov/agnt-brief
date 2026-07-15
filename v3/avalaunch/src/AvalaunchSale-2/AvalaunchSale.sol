@@ -9,87 +9,67 @@ interface IAdmin {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/IERC20.sol@v3.4.1
+// File contracts/interfaces/ISalesFactory.sol
 
+pragma solidity 0.6.12;
 
-pragma solidity >=0.6.0 <0.8.0;
-
-/**
- * @dev Interface of the ERC20 standard as defined in the EIP.
- */
-interface IERC20 {
-    /**
-     * @dev Returns the amount of tokens in existence.
-     */
-    function totalSupply() external view returns (uint256);
-
-    /**
-     * @dev Returns the amount of tokens owned by `account`.
-     */
-    function balanceOf(address account) external view returns (uint256);
-
-    /**
-     * @dev Moves `amount` tokens from the caller's account to `recipient`.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transfer(address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Returns the remaining number of tokens that `spender` will be
-     * allowed to spend on behalf of `owner` through {transferFrom}. This is
-     * zero by default.
-     *
-     * This value changes when {approve} or {transferFrom} are called.
-     */
-    function allowance(address owner, address spender) external view returns (uint256);
-
-    /**
-     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * IMPORTANT: Beware that changing an allowance with this method brings the risk
-     * that someone may use both the old and the new allowance by unfortunate
-     * transaction ordering. One possible solution to mitigate this race
-     * condition is to first reduce the spender's allowance to 0 and set the
-     * desired value afterwards:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
-     * Emits an {Approval} event.
-     */
-    function approve(address spender, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Moves `amount` tokens from `sender` to `recipient` using the
-     * allowance mechanism. `amount` is then deducted from the caller's
-     * allowance.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Emitted when `value` tokens are moved from one account (`from`) to
-     * another (`to`).
-     *
-     * Note that `value` may be zero.
-     */
-    event Transfer(address indexed from, address indexed to, uint256 value);
-
-    /**
-     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
-     * a call to {approve}. `value` is the new allowance.
-     */
-    event Approval(address indexed owner, address indexed spender, uint256 value);
+interface ISalesFactory {
+    function setSaleOwnerAndToken(address saleOwner, address saleToken) external;
+    function isSaleCreatedThroughFactory(address sale) external view returns (bool);
 }
 
 
-// File @openzeppelin/contracts/cryptography/ECDSA.sol@v3.4.1
+// File contracts/interfaces/IAllocationStaking.sol
+
+pragma solidity 0.6.12;
+
+interface IAllocationStaking {
+    function redistributeXava(uint256 _pid, address _user, uint256 _amountToBurn) external;
+    function deposited(uint256 _pid, address _user) external view returns (uint256);
+    function setTokensUnlockTime(uint256 _pid, address _user, uint256 _tokensUnlockTime) external;
+}
+
+
+// File contracts/interfaces/IERC20Metadata.sol
+
+
+pragma solidity ^0.6.12;
+
+/**
+ * @dev Interface for the optional metadata functions from the ERC20 standard.
+ */
+interface IERC20Metadata {
+	/**
+	 * @dev Returns the name of the token.
+     */
+	function name() external view returns (string memory);
+
+	/**
+	 * @dev Returns the symbol of the token.
+     */
+	function symbol() external view returns (string memory);
+
+	/**
+	 * @dev Returns the decimals places of the token.
+     */
+	function decimals() external view returns (uint8);
+}
+
+
+// File contracts/interfaces/IDexalotPortfolio.sol
+
+pragma solidity ^0.6.12;
+
+/**
+ * IDexalotPortfolio contract.
+ * Date created: 28.1.22.
+ */
+interface IDexalotPortfolio {
+    function depositTokenFromContract(address _from, bytes32 _symbol, uint _quantity) external;
+}
+
+
+// File @openzeppelin/contracts/cryptography/ECDSA.sol@v3.4.2
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -178,7 +158,87 @@ library ECDSA {
 }
 
 
-// File @openzeppelin/contracts/math/SafeMath.sol@v3.4.1
+// File @openzeppelin/contracts/token/ERC20/IERC20.sol@v3.4.2
+
+
+pragma solidity >=0.6.0 <0.8.0;
+
+/**
+ * @dev Interface of the ERC20 standard as defined in the EIP.
+ */
+interface IERC20 {
+    /**
+     * @dev Returns the amount of tokens in existence.
+     */
+    function totalSupply() external view returns (uint256);
+
+    /**
+     * @dev Returns the amount of tokens owned by `account`.
+     */
+    function balanceOf(address account) external view returns (uint256);
+
+    /**
+     * @dev Moves `amount` tokens from the caller's account to `recipient`.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transfer(address recipient, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Returns the remaining number of tokens that `spender` will be
+     * allowed to spend on behalf of `owner` through {transferFrom}. This is
+     * zero by default.
+     *
+     * This value changes when {approve} or {transferFrom} are called.
+     */
+    function allowance(address owner, address spender) external view returns (uint256);
+
+    /**
+     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * IMPORTANT: Beware that changing an allowance with this method brings the risk
+     * that someone may use both the old and the new allowance by unfortunate
+     * transaction ordering. One possible solution to mitigate this race
+     * condition is to first reduce the spender's allowance to 0 and set the
+     * desired value afterwards:
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     *
+     * Emits an {Approval} event.
+     */
+    function approve(address spender, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Moves `amount` tokens from `sender` to `recipient` using the
+     * allowance mechanism. `amount` is then deducted from the caller's
+     * allowance.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Emitted when `value` tokens are moved from one account (`from`) to
+     * another (`to`).
+     *
+     * Note that `value` may be zero.
+     */
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    /**
+     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
+     * a call to {approve}. `value` is the new allowance.
+     */
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+}
+
+
+// File @openzeppelin/contracts/math/SafeMath.sol@v3.4.2
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -395,7 +455,7 @@ library SafeMath {
 }
 
 
-// File @openzeppelin/contracts/utils/Address.sol@v3.4.1
+// File @openzeppelin/contracts/utils/Address.sol@v3.4.2
 
 
 pragma solidity >=0.6.2 <0.8.0;
@@ -587,7 +647,7 @@ library Address {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/SafeERC20.sol@v3.4.1
+// File @openzeppelin/contracts/token/ERC20/SafeERC20.sol@v3.4.2
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -663,31 +723,10 @@ library SafeERC20 {
 }
 
 
-// File contracts/interfaces/ISalesFactory.sol
-
-pragma solidity 0.6.12;
-
-interface ISalesFactory {
-    function setSaleOwnerAndToken(address saleOwner, address saleToken) external;
-    function isSaleCreatedThroughFactory(address sale) external view returns (bool);
-}
-
-
-// File contracts/interfaces/IAllocationStaking.sol
-
-
-pragma solidity 0.6.12;
-
-interface IAllocationStaking {
-    function redistributeXava(uint256 _pid, address _user, uint256 _amountToBurn) external;
-    function deposited(uint256 _pid, address _user) external view returns (uint256);
-    function setTokensUnlockTime(uint256 _pid, address _user, uint256 _tokensUnlockTime) external;
-}
-
-
 // File contracts/sales/AvalaunchSale.sol
 
 pragma solidity 0.6.12;
+
 
 
 
@@ -705,14 +744,18 @@ contract AvalaunchSale {
     ISalesFactory public factory;
     // Admin contract
     IAdmin public admin;
+    // Pointer to dexalot portfolio smart-contract
+    IDexalotPortfolio public dexalotPortfolio;
 
     struct Sale {
         // Token being sold
         IERC20 token;
         // Is sale created
         bool isCreated;
-        // Are earnings and leftover withdrawn
+        // Are earnings withdrawn
         bool earningsWithdrawn;
+        // Is leftover withdrawn
+        bool leftoverWithdrawn;
         // Have tokens been deposited
         bool tokensDeposited;
         // Address of sale owner
@@ -738,6 +781,7 @@ contract AvalaunchSale {
         uint256 timeParticipated;
         uint256 roundId;
         bool[] isPortionWithdrawn;
+        bool[] isPortionWithdrawnToDexalot;
     }
 
     // Round structure
@@ -756,7 +800,6 @@ contract AvalaunchSale {
     Sale public sale;
     // Registration
     Registration public registration;
-
     // Number of users participated in the sale.
     uint256 public numberOfParticipants;
     // Array storing IDS of rounds (IDs start from 1, so they can't be mapped as array indexes
@@ -769,7 +812,7 @@ contract AvalaunchSale {
     mapping(address => uint256) public addressToRoundRegisteredFor;
     // mapping if user is participated or not
     mapping(address => bool) public isParticipated;
-    // One ether in weis
+    // wei precision
     uint256 public constant one = 10**18;
     // Times when portions are getting unlocked
     uint256[] public vestingPortionsUnlockTime;
@@ -785,6 +828,10 @@ contract AvalaunchSale {
     uint256 public registrationDepositAVAX;
     // Accounting total AVAX collected, after sale admin can withdraw this
     uint256 public registrationFees;
+    // If Dexalot Withdrawals are supported
+    bool public supportsDexalotWithdraw;
+    // Represent amount of seconds before 0 portion unlock users can at earliest move their tokens to dexalot
+    uint256 public dexalotUnlockTime;
 
     // Restricting calls only to sale owner
     modifier onlySaleOwner() {
@@ -792,6 +839,7 @@ contract AvalaunchSale {
         _;
     }
 
+    // Restricting calls only to sale admin
     modifier onlyAdmin() {
         require(
             admin.isAdmin(msg.sender),
@@ -800,8 +848,7 @@ contract AvalaunchSale {
         _;
     }
 
-    // EVENTS
-
+    // Events
     event TokensSold(address user, uint256 amount);
     event UserRegistered(address user, uint256 roundId);
     event TokenPriceSet(uint256 newPrice);
@@ -823,6 +870,8 @@ contract AvalaunchSale {
         uint256 startTime,
         uint256 maxParticipation
     );
+    event RegistrationAVAXRefunded(address user, uint256 amountRefunded);
+    event TokensWithdrawnToDexalot(address user, uint256 amount);
 
     // Constructor, always initialized through SalesFactory
     constructor(address _admin, address _allocationStaking) public {
@@ -838,7 +887,10 @@ contract AvalaunchSale {
         uint256[] memory _unlockingTimes,
         uint256[] memory _percents,
         uint256 _maxVestingTimeShift
-    ) external onlyAdmin {
+    )
+        external
+        onlyAdmin
+    {
         require(
             vestingPercentPerPortion.length == 0 &&
             vestingPortionsUnlockTime.length == 0
@@ -861,15 +913,20 @@ contract AvalaunchSale {
         require(sum == portionVestingPrecision, "Percent distribution issue.");
     }
 
+    /// @notice     Admin function to shift vesting unlocking times
     function shiftVestingUnlockingTimes(uint256 timeToShift)
         external
         onlyAdmin
     {
         require(
             timeToShift > 0 && timeToShift < maxVestingTimeShift,
-            "Shift can not be greater than 30 days."
+            "Shift must be nonzero and smaller than maxVestingTimeShift."
         );
 
+        // Time can be shifted only once.
+        maxVestingTimeShift = 0;
+
+        // Shift the unlock time
         for (uint256 i = 0; i < vestingPortionsUnlockTime.length; i++) {
             vestingPortionsUnlockTime[i] = vestingPortionsUnlockTime[i].add(
                 timeToShift
@@ -888,7 +945,10 @@ contract AvalaunchSale {
         uint256 _portionVestingPrecision,
         uint256 _stakingRoundId,
         uint256 _registrationDepositAVAX
-    ) external onlyAdmin {
+    )
+        external
+        onlyAdmin
+    {
         require(!sale.isCreated, "setSaleParams: Sale is already created.");
         require(
             _saleOwner != address(0),
@@ -919,8 +979,6 @@ contract AvalaunchSale {
         portionVestingPrecision = _portionVestingPrecision;
         // Set staking round id
         stakingRoundId = _stakingRoundId;
-        // Mark in factory
-        factory.setSaleOwnerAndToken(sale.saleOwner, address(sale.token));
         // Emit event
         emit SaleCreated(
             sale.saleOwner,
@@ -931,7 +989,24 @@ contract AvalaunchSale {
         );
     }
 
-    /// @notice     Function to retroactively set sale token address
+    /// @notice  If sale supports early withdrawals to Dexalot.
+    function setAndSupportDexalotPortfolio(
+        address _dexalotPortfolio,
+        uint256 _dexalotUnlockTime
+    )
+    external
+    onlyAdmin
+    {
+        require(address(dexalotPortfolio) == address(0x0), "Dexalot Portfolio already set.");
+        require(_dexalotPortfolio != address(0x0), "Cannot set zero address as Dexalot Portfolio.");
+        dexalotPortfolio = IDexalotPortfolio(_dexalotPortfolio);
+        dexalotUnlockTime = _dexalotUnlockTime;
+        supportsDexalotWithdraw = true;
+    }
+
+    // @notice     Function to retroactively set sale token address, can be called only once,
+    //             after initial contract creation has passed. Added as an options for teams which
+    //             are not having token at the moment of sale launch.
     function setSaleToken(
         address saleToken
     )
@@ -948,7 +1023,7 @@ contract AvalaunchSale {
         uint256 _registrationTimeStarts,
         uint256 _registrationTimeEnds
     ) external onlyAdmin {
-        require(sale.isCreated == true);
+        require(sale.isCreated);
         require(registration.registrationTimeStarts == 0);
         require(
             _registrationTimeStarts >= block.timestamp &&
@@ -962,6 +1037,7 @@ contract AvalaunchSale {
             );
         }
 
+        // Set registration start and end time
         registration.registrationTimeStarts = _registrationTimeStarts;
         registration.registrationTimeEnds = _registrationTimeEnds;
 
@@ -971,11 +1047,15 @@ contract AvalaunchSale {
         );
     }
 
+    /// @notice     Setting rounds for sale.
     function setRounds(
         uint256[] calldata startTimes,
         uint256[] calldata maxParticipations
-    ) external onlyAdmin {
-        require(sale.isCreated == true);
+    )
+        external
+        onlyAdmin
+    {
+        require(sale.isCreated);
         require(
             startTimes.length == maxParticipations.length,
             "setRounds: Bad input."
@@ -1101,12 +1181,14 @@ contract AvalaunchSale {
         external
         onlyAdmin
     {
+        // Require that round has not already started
         require(
             block.timestamp < roundIdToRound[roundIds[0]].startTime,
             "1st round already started."
         );
         require(rounds.length == caps.length, "Arrays length is different.");
 
+        // Set max participation per round
         for (uint256 i = 0; i < rounds.length; i++) {
             require(caps[i] > 0, "Can't set max participation to 0");
 
@@ -1123,17 +1205,20 @@ contract AvalaunchSale {
             !sale.tokensDeposited, "Deposit can be done only once"
         );
 
+        // Mark that tokens are deposited
+        sale.tokensDeposited = true;
+
+        // Perform safe transfer
         sale.token.safeTransferFrom(
             msg.sender,
             address(this),
             sale.amountOfTokensToSell
         );
-        sale.tokensDeposited = true;
     }
 
     // Function to participate in the sales
     function participate(
-        bytes memory signature,
+        bytes calldata signature,
         uint256 amount,
         uint256 amountXavaToBurn,
         uint256 roundId
@@ -1199,7 +1284,9 @@ contract AvalaunchSale {
         // Increase amount of AVAX raised
         sale.totalAVAXRaised = sale.totalAVAXRaised.add(msg.value);
 
-        bool[] memory _isPortionWithdrawn = new bool[](
+        // Empty bool array used to be set as initial for 'isPortionWithdrawn' and 'isPortionWithdrawnToDexalot'
+        // Size determined by number of sale portions
+        bool[] memory _empty = new bool[](
             vestingPortionsUnlockTime.length
         );
 
@@ -1209,7 +1296,8 @@ contract AvalaunchSale {
             amountAVAXPaid: msg.value,
             timeParticipated: block.timestamp,
             roundId: roundId,
-            isPortionWithdrawn: _isPortionWithdrawn
+            isPortionWithdrawn: _empty,
+            isPortionWithdrawnToDexalot: _empty
         });
 
         // Staking round only.
@@ -1233,6 +1321,7 @@ contract AvalaunchSale {
         // Transfer registration deposit amount in AVAX back to the users.
         safeTransferAVAX(msg.sender, registrationDepositAVAX);
 
+        emit RegistrationAVAXRefunded(msg.sender, registrationDepositAVAX);
         emit TokensSold(msg.sender, amountOfTokensBuying);
     }
 
@@ -1255,11 +1344,156 @@ contract AvalaunchSale {
                 .amountBought
                 .mul(vestingPercentPerPortion[portionId])
                 .div(portionVestingPrecision);
+
             // Withdraw percent which is unlocked at that portion
-            sale.token.safeTransfer(msg.sender, amountWithdrawing);
-            emit TokensWithdrawn(msg.sender, amountWithdrawing);
+            if(amountWithdrawing > 0) {
+                sale.token.safeTransfer(msg.sender, amountWithdrawing);
+                emit TokensWithdrawn(msg.sender, amountWithdrawing);
+            }
         } else {
-            revert("Tokens already withdrawn.");
+            revert("Tokens already withdrawn or portion not unlocked yet.");
+        }
+    }
+
+    /// Users can deposit their participation to Dexalot Portfolio
+    /// @dev first portion can be deposited before it's unlocking time, while others can only after
+    function withdrawTokensToDexalot(uint256 portionId) external {
+
+        // Security check
+        performDexalotChecks();
+
+        require(
+            portionId < vestingPercentPerPortion.length,
+            "Portion id out of range."
+        );
+
+        // Retrieve participation from storage
+        Participation storage p = userToParticipation[msg.sender];
+
+        // Require that portion is not withdrawn
+        require(!p.isPortionWithdrawn[portionId], "Portion already withdrawn.");
+
+        if(portionId > 0) {
+            require(
+                vestingPortionsUnlockTime[portionId] <= block.timestamp,
+                "Portion not unlocked yet."
+            );
+        } // modifier checks for portionId == 0 case
+
+        // Mark portion as withdrawn
+        p.isPortionWithdrawn[portionId] = true;
+        // Mark portion as withdrawn to dexalot
+        p.isPortionWithdrawnToDexalot[portionId] = true;
+
+        // Compute amount withdrawing
+        uint256 amountWithdrawing = p
+            .amountBought
+            .mul(vestingPercentPerPortion[portionId])
+            .div(portionVestingPrecision);
+
+        // Withdraw percent which is unlocked at that portion
+        if(amountWithdrawing > 0) {
+            // Transfer tokens to user's wallet prior to dexalot deposit
+            sale.token.safeTransfer(msg.sender, amountWithdrawing);
+
+            // Deposit tokens to dexalot contract - Withdraw from sale contract
+            dexalotPortfolio.depositTokenFromContract(
+                msg.sender, getTokenSymbolBytes32(), amountWithdrawing
+            );
+            // Trigger event
+            emit TokensWithdrawnToDexalot(msg.sender, amountWithdrawing);
+        }
+    }
+
+    // Expose function where user can withdraw multiple unlocked portions at once.
+    function withdrawMultiplePortions(uint256 [] calldata portionIds) external {
+        uint256 totalToWithdraw = 0;
+
+        // Retrieve participation from storage
+        Participation storage p = userToParticipation[msg.sender];
+
+        for(uint i=0; i < portionIds.length; i++) {
+            uint256 portionId = portionIds[i];
+            require(portionId < vestingPercentPerPortion.length);
+
+            if (
+                !p.isPortionWithdrawn[portionId] &&
+                vestingPortionsUnlockTime[portionId] <= block.timestamp
+            ) {
+                // Mark participation as withdrawn
+                p.isPortionWithdrawn[portionId] = true;
+                // Compute amount withdrawing
+                uint256 amountWithdrawing = p
+                    .amountBought
+                    .mul(vestingPercentPerPortion[portionId])
+                    .div(portionVestingPrecision);
+                // Withdraw percent which is unlocked at that portion
+                totalToWithdraw = totalToWithdraw.add(amountWithdrawing);
+            }
+        }
+
+        if(totalToWithdraw > 0) {
+            // Transfer tokens to user
+            sale.token.safeTransfer(msg.sender, totalToWithdraw);
+            // Trigger an event
+            emit TokensWithdrawn(msg.sender, totalToWithdraw);
+        }
+    }
+
+    /// Expose function where user can withdraw multiple unlocked portions to Dexalot Portfolio at once
+    /// @dev first portion can be deposited before it's unlocking time, while others can only after
+    function withdrawMultiplePortionsToDexalot(uint256 [] calldata portionIds) external {
+
+        // Security check
+        performDexalotChecks();
+
+        uint256 totalToWithdraw = 0;
+
+        // Retrieve participation from storage
+        Participation storage p = userToParticipation[msg.sender];
+
+        for(uint i=0; i < portionIds.length; i++) {
+            uint256 portionId = portionIds[i];
+            require(portionId < vestingPercentPerPortion.length);
+
+            bool eligible;
+
+            if(!p.isPortionWithdrawn[portionId]) {
+                if(portionId > 0) {
+                    if(vestingPortionsUnlockTime[portionId] <= block.timestamp) {
+                        eligible = true;
+                    }
+                } else { // if portion id == 0
+                    eligible = true;
+                } // modifier checks for portionId == 0 case
+            }
+
+            if(eligible) {
+                // Mark participation as withdrawn
+                p.isPortionWithdrawn[portionId] = true;
+                // Mark portion as withdrawn to dexalot
+                p.isPortionWithdrawnToDexalot[portionId] = true;
+                // Compute amount withdrawing
+                uint256 amountWithdrawing = p
+                    .amountBought
+                    .mul(vestingPercentPerPortion[portionId])
+                    .div(portionVestingPrecision);
+                // Withdraw percent which is unlocked at that portion
+                totalToWithdraw = totalToWithdraw.add(amountWithdrawing);
+            }
+        }
+
+        if(totalToWithdraw > 0) {
+            // Transfer tokens to user's wallet prior to dexalot deposit
+            sale.token.safeTransfer(msg.sender, totalToWithdraw);
+
+            // Deposit tokens to dexalot contract - Withdraw from sale contract
+            dexalotPortfolio.depositTokenFromContract(
+                msg.sender, getTokenSymbolBytes32(), totalToWithdraw
+            );
+
+            // Trigger an event
+            emit TokensWithdrawnToDexalot(msg.sender, totalToWithdraw);
         }
     }
 
@@ -1270,41 +1504,73 @@ contract AvalaunchSale {
     }
 
     /// Function to withdraw all the earnings and the leftover of the sale contract.
-    function withdrawEarningsAndLeftover(bool withBurn) external onlySaleOwner {
+    function withdrawEarningsAndLeftover() external onlySaleOwner {
+        withdrawEarningsInternal();
+        withdrawLeftoverInternal();
+    }
+
+    // Function to withdraw only earnings
+    function withdrawEarnings() external onlySaleOwner {
+        withdrawEarningsInternal();
+    }
+
+    // Function to withdraw only leftover
+    function withdrawLeftover() external onlySaleOwner {
+        withdrawLeftoverInternal();
+    }
+
+    // Function to withdraw earnings
+    function withdrawEarningsInternal() internal  {
         // Make sure sale ended
         require(block.timestamp >= sale.saleEnd);
 
         // Make sure owner can't withdraw twice
         require(!sale.earningsWithdrawn);
         sale.earningsWithdrawn = true;
-
         // Earnings amount of the owner in AVAX
         uint256 totalProfit = sale.totalAVAXRaised;
+
+        safeTransferAVAX(msg.sender, totalProfit);
+    }
+
+    // Function to withdraw leftover
+    function withdrawLeftoverInternal() internal {
+        // Make sure sale ended
+        require(block.timestamp >= sale.saleEnd);
+
+        // Make sure owner can't withdraw twice
+        require(!sale.leftoverWithdrawn);
+        sale.leftoverWithdrawn = true;
 
         // Amount of tokens which are not sold
         uint256 leftover = sale.amountOfTokensToSell.sub(sale.totalTokensSold);
 
-        safeTransferAVAX(msg.sender, totalProfit);
-
-        if (leftover > 0 && !withBurn) {
+        if (leftover > 0) {
             sale.token.safeTransfer(msg.sender, leftover);
-            return;
-        }
-
-        if (withBurn) {
-            sale.token.safeTransfer(address(1), leftover);
         }
     }
 
     // Function after sale for admin to withdraw registration fees if there are any left.
     function withdrawRegistrationFees() external onlyAdmin {
-        require(block.timestamp >= sale.saleEnd);
+        require(block.timestamp >= sale.saleEnd, "Require that sale has ended.");
         require(registrationFees > 0, "No earnings from registration fees.");
 
         // Transfer AVAX to the admin wallet.
         safeTransferAVAX(msg.sender, registrationFees);
         // Set registration fees to be 0
         registrationFees = 0;
+    }
+
+    // Function where admin can withdraw all unused funds.
+    function withdrawUnusedFunds() external onlyAdmin {
+        uint256 balanceAVAX = address(this).balance;
+
+        uint256 totalReservedForRaise = sale.earningsWithdrawn ? 0 : sale.totalAVAXRaised;
+
+        safeTransferAVAX(
+            msg.sender,
+            balanceAVAX.sub(totalReservedForRaise.add(registrationFees))
+        );
     }
 
     /// @notice     Get current round in progress.
@@ -1399,6 +1665,7 @@ contract AvalaunchSale {
             uint256,
             uint256,
             uint256,
+            bool[] memory,
             bool[] memory
         )
     {
@@ -1408,7 +1675,8 @@ contract AvalaunchSale {
             p.amountAVAXPaid,
             p.timeParticipated,
             p.roundId,
-            p.isPortionWithdrawn
+            p.isPortionWithdrawn,
+            p.isPortionWithdrawnToDexalot
         );
     }
 
@@ -1424,5 +1692,32 @@ contract AvalaunchSale {
         returns (uint256[] memory, uint256[] memory)
     {
         return (vestingPortionsUnlockTime, vestingPercentPerPortion);
+    }
+
+    /// @notice     Function to secure dexalot portfolio interactions
+    function performDexalotChecks() internal view {
+        require(
+            supportsDexalotWithdraw,
+            "Dexalot Portfolio withdrawal not supported."
+        );
+        require(
+            block.timestamp >= dexalotUnlockTime,
+            "Dexalot Portfolio withdrawal not unlocked."
+        );
+    }
+
+    /// @notice     Function to get sale.token symbol and parse as bytes32
+    function getTokenSymbolBytes32() internal view returns (bytes32 _symbol) {
+        // get token symbol as string memory
+        string memory symbol = IERC20Metadata(address(sale.token)).symbol();
+        // parse token symbol to bytes32 format - to fit dexalot function interface
+        assembly {
+            _symbol := mload(add(symbol, 32))
+        }
+    }
+
+    // Function to act as a fallback and handle receiving AVAX.
+    receive() external payable {
+
     }
 }

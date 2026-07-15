@@ -1,6 +1,10 @@
+/**
+ *Submitted for verification at BscScan.com on 2022-01-19
+*/
+
 // Sources flattened with hardhat v2.6.8 https://hardhat.org
 
-// File @openzeppelin/contracts/math/SafeMath.sol@v3.4.2
+// File @openzeppelin/contracts/math/[email protected]
 
 // SPDX-License-Identifier: MIT
 
@@ -218,7 +222,7 @@ library SafeMath {
 }
 
 
-// File @openzeppelin/contracts/utils/Context.sol@v3.4.2
+// File @openzeppelin/contracts/utils/[email protected]
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -245,7 +249,7 @@ abstract contract Context {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/IERC20.sol@v3.4.2
+// File @openzeppelin/contracts/token/ERC20/[email protected]
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -325,7 +329,7 @@ interface IERC20 {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/ERC20.sol@v3.4.2
+// File @openzeppelin/contracts/token/ERC20/[email protected]
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -632,7 +636,7 @@ contract ERC20 is Context, IERC20 {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/ERC20Burnable.sol@v3.4.2
+// File @openzeppelin/contracts/token/ERC20/[email protected]
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -675,13 +679,13 @@ abstract contract ERC20Burnable is Context, ERC20 {
 }
 
 
-// File @openzeppelin/contracts/GSN/Context.sol@v3.4.2
+// File @openzeppelin/contracts/GSN/[email protected]
 
 
 pragma solidity >=0.6.0 <0.8.0;
 
 
-// File @openzeppelin/contracts/access/Ownable.sol@v3.4.2
+// File @openzeppelin/contracts/access/[email protected]
 
 
 pragma solidity >=0.6.0 <0.8.0;

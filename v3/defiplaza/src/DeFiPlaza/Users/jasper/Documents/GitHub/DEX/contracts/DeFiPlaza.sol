@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.7.6;
+pragma solidity ^0.8.6;
 
 import "../interfaces/IDeFiPlaza.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
 /**
  * @title DeFi Plaza exchange controct, multi token DEX.
@@ -14,7 +14,6 @@ import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
  * The number of tokens used is hard coded to 16 for efficiency reasons.
  */
 contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
-  using SafeMath for uint256;
   using SafeERC20 for IERC20;
 
   // States that each token can be in
@@ -50,7 +49,7 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
   * Initialize with ordered list of 15 token addresses (ETH is always listed)
   * Doesn't do any checks. Make sure you ONLY add well behaved ERC20s!!
   */
-  constructor(address[] memory tokensToList, string memory name_, string memory symbol_) ERC20(name_, symbol_) {
+  constructor(address[] memory tokensToList, uint256 mintAmount, string memory name_, string memory symbol_) ERC20(name_, symbol_) {
     // Basic exchange configuration
     Config memory config;
     config.unlocked = false;
@@ -72,7 +71,7 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
     }
 
     // Generate the LP tokens reflecting the initial liquidity (to be loaded externally)
-    _mint(msg.sender, 1600e18);
+    _mint(msg.sender, mintAmount);
   }
 
   // For bootstrapping ETH liquidity
@@ -143,7 +142,7 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
 
     // Send output tokens to whoever invoked the swap function
     if (outputToken == address(0)) {
-      address payable sender = msg.sender;
+      address payable sender = payable(msg.sender);
       sender.transfer(outputAmount);
     } else {
       IERC20(outputToken).safeTransfer(msg.sender, outputAmount);
@@ -154,7 +153,7 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
   }
 
   /**
-  * Single sided liquidity add. More economic at moderate liquidity amounts.
+  * Single sided liquidity add. More economic at low/moderate liquidity amounts.
   * Mathematically works as adding all tokens and swapping back to 1 token at no fee.
   *
   *         R = (1 + X_supplied/X_initial)^(1/N) - 1
@@ -162,6 +161,15 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
   *
   * When adding ETH, the inputToken address to be used is the NULL address.
   * A fee is applied to prevent zero fee swapping through liquidity add/remove.
+  *
+  * Note that this method suffers from two forms of slippage.
+  *   1. Slippage from single sided add which is modeled with 15 internal swaps
+  *   2. Slippage from the numerical approximation required for calculation.
+  *
+  * When adding a large amount of liquidity when compared with the existing
+  * liquidity for the selected token, the slippage can become quite significant.
+  * The smart contract limits the maximum input amount at 100% of the existing
+  * liquidity, at which point the slippage is 29.2% (due to 1) + 9.3% (due to 2)
   */
   function addLiquidity(address inputToken, uint256 inputAmount, uint256 minLP)
     external
@@ -187,7 +195,16 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
     // Prevent excessive liquidity add which runs of the approximation curve
     require(inputAmount < initialBalance, "DFP: Too much at once");
 
-    // 6th power binomial series approximation of R
+    // See https://en.wikipedia.org/wiki/Binomial_approximation for the below
+    // Compute the 6th power binomial series approximation of R.
+    //
+    //                   X   15 X^2   155 X^3   7285 X^4   91791 X^5   2417163 X^6
+    // (1+X)^1/16 - 1 ≈ -- - ------ + ------- - -------- + --------- - -----------
+    //                  16    512      8192      524288     8388608     268435456
+    //
+    // Note that we need to terminate at an even order to guarantee an underestimate
+    // for safety. The underestimation leads to slippage for higher amounts, but
+    // protects funds of those that are already invested.
     uint256 X = (inputAmount * _config.oneMinusTradingFee) / initialBalance;  // 0.64 bits
     uint256 X_ = X * X;                                // X^2   0.128 bits
     uint256 R_ = (X >> 4) - (X_ * 15 >> 73);           // R2    0.64 bits
@@ -231,7 +248,7 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
     require(tokens[0] == address(0), "DFP: No ETH found");
     require(maxAmounts[0] == msg.value, "DFP: Incorrect ETH amount");
     uint256 dexBalance = address(this).balance - msg.value;
-    uint256 actualRatio = msg.value.mul(1<<128) / dexBalance;
+    uint256 actualRatio = msg.value * (1<<128) / dexBalance;
 
     // Check ERC20 amounts/ratios
     uint256 currentRatio;
@@ -245,7 +262,7 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
         "DFP: Token not listed"
       );
       dexBalance = IERC20(token).balanceOf(address(this));
-      currentRatio = maxAmounts[i].mul(1 << 128) / dexBalance;
+      currentRatio = maxAmounts[i] * (1 << 128) / dexBalance;
       if (currentRatio < actualRatio) {
         actualRatio = currentRatio;
       }
@@ -253,15 +270,13 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
     }
 
     // Calculate how many LP will be generated
-    actualLP = (actualRatio.mul(totalSupply()) >> 64) * DFPconfig.oneMinusTradingFee >> 128;
+    actualLP = (actualRatio * totalSupply() >> 64) * DFPconfig.oneMinusTradingFee >> 128;
 
     // Collect ERC20 tokens
-    previous = address(0);
     for (uint256 i = 1; i < 16; i++) {
       token = tokens[i];
       dexBalance = IERC20(token).balanceOf(address(this));
-      IERC20(token).safeTransferFrom(msg.sender, address(this), dexBalance.mul(actualRatio) >> 128);
-      previous = token;
+      IERC20(token).safeTransferFrom(msg.sender, address(this), dexBalance * actualRatio >> 128);
     }
 
     // Mint the LP tokens
@@ -270,8 +285,8 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
 
     // Refund ETH change
     dexBalance = address(this).balance - msg.value;
-    address payable sender = msg.sender;
-    sender.transfer(msg.value - (dexBalance.mul(actualRatio) >> 128));
+    address payable sender = payable(msg.sender);
+    sender.transfer(msg.value - (dexBalance * actualRatio >> 128));
   }
 
   /**
@@ -311,7 +326,7 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
     // Burns the LP tokens and sends the output tokens
     _burn(msg.sender, LPamount);
     if (outputToken == address(0)) {
-      address payable sender = msg.sender;
+      address payable sender = payable(msg.sender);
       sender.transfer(actualOutput);
     } else {
       IERC20(outputToken).safeTransfer(msg.sender, actualOutput);
@@ -338,7 +353,7 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
 
     // Send the ETH first (use transfer to prevent reentrancy)
     uint256 dexBalance = address(this).balance;
-    address payable sender = msg.sender;
+    address payable sender = payable(msg.sender);
     sender.transfer(fraction * dexBalance >> 128);
 
     // Send the ERC20 tokens
@@ -384,7 +399,10 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
 
     // Calculate how many tokens to actually take in (clamp at max available)
     uint256 initialInputBalance = IERC20(inputToken).balanceOf(address(this));
-    uint256 availableAmount = tokenToList.listingTarget - initialInputBalance;
+    uint256 availableAmount;
+
+    // Intentionally underflow (zero clamping) is the cheapest way to gracefully prevent failing when target is already met
+    unchecked { availableAmount = tokenToList.listingTarget - initialInputBalance; }
     if (initialInputBalance >= tokenToList.listingTarget) { availableAmount = 1; }
     uint256 actualInputAmount = maxInputAmount > availableAmount ? availableAmount : maxInputAmount;
 
@@ -400,7 +418,7 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
 
     // Check how many of the output tokens should be given out and transfer those
     uint256 initialOutputBalance = IERC20(outputToken).balanceOf(address(this));
-    uint256 outputAmount = actualInputAmount.mul(initialOutputBalance).div(availableAmount);
+    uint256 outputAmount = actualInputAmount * initialOutputBalance / availableAmount;
     IERC20(outputToken).safeTransfer(msg.sender, outputAmount);
     fractionBootstrapped = uint64((actualInputAmount << 64) / tokenToList.listingTarget);
 
@@ -455,14 +473,14 @@ contract DeFiPlaza is IDeFiPlaza, Ownable, ERC20 {
     }
 
     // Calculate bonus amount
-    bonusAmount = (uint256(fractionBootstrapped) * bonusFactor).mul(bonusBalance) >> 128;
+    bonusAmount = uint256(fractionBootstrapped) * bonusFactor * bonusBalance >> 128;
 
     // Payout bonus tokens
     if (bonusToken == address(0)) {
-      address payable sender = msg.sender;
+      address payable sender = payable(msg.sender);
       sender.transfer(bonusAmount);
     } else {
-      IERC20(bonusToken).transfer(msg.sender, bonusAmount);
+      IERC20(bonusToken).safeTransfer(msg.sender, bonusAmount);
     }
 
     // Emit event to enable data driven governance

@@ -1,26 +1,28 @@
 {
   "component": "MorphoVaultController-2",
   "main_contract": "MorphoVaultController",
+  "source_entry_count": 71,
   "source_file_count": 71,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MorphoVaultController-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
-    {
-      "chain": "chain-999",
-      "chain_id": 999,
-      "address": "0x9f4fb60b8bf16b9b46134f803c39ceaa82f96037",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "base",
       "chain_id": 8453,
       "address": "0x20baf09df508c6e055be01b508478d3f674229c3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392201"
     },
     {
       "chain": "arbitrum",
@@ -28,7 +30,9 @@
       "address": "0xfe07c58d18e04f46ed32ed0e5c295fbba3b45304",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392212"
     }
   ]
 }

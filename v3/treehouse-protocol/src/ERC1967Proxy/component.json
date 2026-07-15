@@ -1,26 +1,32 @@
 {
   "component": "ERC1967Proxy",
   "main_contract": "ERC1967Proxy",
-  "source_file_count": 12,
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Proxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/treehouse-gaia/audit-report/blob/main/Fuzzland%20tETH%20Sep%20Audit%20Report%20vF.pdf",
+    "https://github.com/treehouse-gaia/audit-report/blob/main/Sigma%20Prime%20tETH%20Sep%20Audit%20Report%20vF.pdf",
+    "https://github.com/treehouse-gaia/audit-report/blob/main/Trail%20of%20Bits%20tETH%20Oct%20Audit%20Report%20vF.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x478bf562b2a39ff8530ee41ff0dfb39d8bdd2192",
+      "address": "0xd11c452fc99cf405034ee446803b6f6c1f6d5ed8",
       "is_proxy": true,
-      "implementation_address": "0xc1b6a630ae2252eac7b0b8c7f4a174b4d7f51023",
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xc1b6a630ae2252eac7b0b8c7f4a174b4d7f51023",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "implementation_address": "0xd1a622566f277aa76c3c47a30469432aaec95e38",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400376"
     }
   ]
 }

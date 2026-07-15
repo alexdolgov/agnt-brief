@@ -1,13 +1,18 @@
 {
   "component": "ZivoeRewards",
   "main_contract": "ZivoeRewards",
-  "source_file_count": 22,
+  "source_entry_count": 18,
+  "source_file_count": 18,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ZivoeRewards\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 3,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/runtimeverification/publications/blob/main/reports/smart-contracts/Zivoe_Core_Contracts.pdf",
-    "https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2024.04.25%20-%20Final%20-%20Zivoe%20Audit%20Report.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -15,7 +20,9 @@
       "address": "0x0d45c292bacdc47ce850e4c83a2fa2e8509ded5d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401542"
     },
     {
       "chain": "ethereum",
@@ -23,7 +30,9 @@
       "address": "0xb397aa1d78109115dcc57b907dcd9d61bb6b2dce",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401560"
     },
     {
       "chain": "ethereum",
@@ -31,7 +40,9 @@
       "address": "0xcacdb1a5a11f824e02de4ca6e7b2d12bb278aa7c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401563"
     }
   ]
 }

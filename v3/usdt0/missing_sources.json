@@ -1,0 +1,13 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "usdt0",
+  "missing": [
+    {
+      "chain_id": 57073,
+      "chain": "chain-57073",
+      "address": "0x0200c29006150606b650577bbe7b6248f58470c1",
+      "canonical_source_address": null
+    }
+  ]
+}

@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity 0.8.19;
+pragma solidity 0.8.13;
 
 import "lib/solmate/src/utils/SafeTransferLib.sol";
-
-error ZeroAddress();
+import "lib/solmate/src/tokens/ERC20.sol";
+import {ZeroAddress} from "../common/Errors.sol";
+import {ETH_ADDRESS} from "../common/Constants.sol";
 
 /**
  * @title RescueFundsLib
@@ -11,12 +12,6 @@ error ZeroAddress();
  */
 
 library RescueFundsLib {
-    /**
-     * @dev The address used to identify ETH.
-     */
-    address public constant ETH_ADDRESS =
-        address(0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE);
-
     /**
      * @dev thrown when the given token address don't have any code
      */

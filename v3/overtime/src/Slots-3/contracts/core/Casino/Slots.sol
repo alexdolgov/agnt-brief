@@ -303,7 +303,7 @@ contract Slots is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyGuard
         bool _isFreeBet
     ) internal returns (uint spinId, uint requestId) {
         if (symbolCount == 0) revert InvalidConfig();
-        if (!supportedCollateral[collateral]) revert InvalidCollateral();
+        // collateral support already validated by the external wrappers (spin / spinWithFreeBet)
         if (amount == 0) revert InvalidAmount();
 
         uint amountUsd = _getUsdValue(collateral, amount);
@@ -435,7 +435,6 @@ contract Slots is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyGuard
         }
     }
 
-    /// @notice Cancels a pending spin, releases reserved liquidity and refunds stake
     function _setReferrer(address _referrer, address _user) internal {
         if (_referrer != address(0) && address(referrals) != address(0)) {
             referrals.setReferrer(_referrer, _user);

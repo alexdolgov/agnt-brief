@@ -1,15 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.12;
 
-import {ECDSAStakeRegistryStorage, Quorum} from "./ECDSAStakeRegistryStorage.sol";
-import {StrategyParams} from "../interfaces/avs/vendored/IECDSAStakeRegistryEventsAndErrors.sol";
-
+import {ECDSAStakeRegistryStorage, Quorum, StrategyParams} from "./ECDSAStakeRegistryStorage.sol";
 import {IStrategy} from "../interfaces/avs/vendored/IStrategy.sol";
 import {IDelegationManager} from "../interfaces/avs/vendored/IDelegationManager.sol";
 import {ISignatureUtils} from "../interfaces/avs/vendored/ISignatureUtils.sol";
 import {IServiceManager} from "../interfaces/avs/vendored/IServiceManager.sol";
-
-import {PackageVersioned} from "../PackageVersioned.sol";
 
 import {OwnableUpgradeable} from "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import {CheckpointsUpgradeable} from "@openzeppelin/contracts-upgradeable/utils/CheckpointsUpgradeable.sol";
@@ -23,8 +19,7 @@ import {IERC1271Upgradeable} from "@openzeppelin/contracts-upgradeable/interface
 contract ECDSAStakeRegistry is
     IERC1271Upgradeable,
     OwnableUpgradeable,
-    ECDSAStakeRegistryStorage,
-    PackageVersioned
+    ECDSAStakeRegistryStorage
 {
     using SignatureCheckerUpgradeable for address;
     using CheckpointsUpgradeable for CheckpointsUpgradeable.History;

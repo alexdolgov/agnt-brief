@@ -1,0 +1,13 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "curve-finance",
+  "missing": [
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0xe5afcf332a5457e8fafcd668bce3df953762dfe7",
+      "canonical_source_address": null
+    }
+  ]
+}

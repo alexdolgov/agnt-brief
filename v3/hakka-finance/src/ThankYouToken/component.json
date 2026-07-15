@@ -1,10 +1,20 @@
 {
   "component": "ThankYouToken",
   "main_contract": "ThankYouToken",
-  "source_file_count": 3,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ThankYouToken\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/hakkafinance/audit-reports/blob/main/Hakka%20Finance%20Urban%20Giggle%20Audit.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +22,9 @@
       "address": "0x7f8093f5f49a9d7f0334f8017ff777f1893032d5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394883"
     }
   ]
 }

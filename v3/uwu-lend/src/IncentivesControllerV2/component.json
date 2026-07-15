@@ -1,34 +1,28 @@
 {
   "component": "IncentivesControllerV2",
   "main_contract": "IncentivesControllerV2",
-  "source_file_count": 12,
-  "deployment_count": 3,
+  "source_entry_count": 11,
+  "source_file_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/IncentivesControllerV2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x78f3fc482cb170012dc0402eb2007c5f40c346b2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x81a45d3d16d2621f4cd2a2398bc7e93347b7ad45",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
       "address": "0xdb5c23ae97f76dacc907f5f13bda54131c8e9e5a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400746"
     }
   ]
 }

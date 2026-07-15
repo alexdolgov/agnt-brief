@@ -1,44 +1,100 @@
 # Agentic Audit Brief: Ubeswap
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Ubeswap (`ubeswap`)
 - Website: [https://ubeswap.org](https://ubeswap.org)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:02.240Z
-- Pipeline run: v2-2026-07-02-1ba3fd
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: celo
-- Contract surface: 27 unique implementations (27 raw deployments)
+- Contract surface: 29 unique implementations (29 raw deployments)
+- Coverage basis: 0/18 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $763,526.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Dexs. Structurally: 27 project-authored contract(s) across 1 chain(s); 1 ERC721 NFT; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Ubeswap. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Its contracts share 11 common project-authored base contract(s) (rewardsdistributionrecipient, owned, v2swaprouter). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 18 contract row(s) across celo. Structural roles: 15 core, 3 supporting. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 18
+- Structural roles: core (15), supporting (3)
+- Contract kinds: contract (18)
+- Detected standards: erc165 (2), accesscontrol (1), erc20 (1), multicall (1)
+- Frameworks: openzeppelin (11), uniswap-v3 (2), permit2 (1), solmate (1), uniswap-v2 (1)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 20 contracts are derived from known codebases. 20 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x716733...de7a8a`, chain 42220)
+- UnnamedContract (`0x897387...6f8c8f`, chain 42220)
+- Create2Deployer (`0x4a27c0...5f6ee3`, chain 42220)
+- GnosisSafeProxy (`0x3cdb70...555167`, chain 42220)
+- QuoterV2 (`0xa8864a...cca56f`, chain 42220)
+- RomulusDelegate (`0xd355a0...55f928`, chain 42220)
+- Timelock (`0x936f5b...2fdaf6`, chain 42220)
+- UbeAdvisoryVesting (`0xf7d062...1f7d10`, chain 42220)
+- UbeEcosystemVesting (`0x3924c6...a6ae73`, chain 42220)
+- UbeMarketingVesting (`0xd733bc...0d0c5e`, chain 42220)
+- UbeMiningReserveVesting (`0xae4634...502968`, chain 42220)
+- UbeswapV3Farming (`0xa6e906...f51853`, chain 42220)
+- UbeTeamVesting (`0x74d498...6c8b5c`, chain 42220)
+- UbeToken (`0x71e26d...101490`, chain 42220)
+- UniswapInterfaceMulticall (`0x4d446f...49d63f`, chain 42220)
+- UniswapV2Factory (`0x62d5b8...c25fae`, chain 42220)
+- UniswapV2Router02 (`0xe3d8bd...f96121`, chain 42220)
+- UniswapV3Factory (`0x67fea5...f8aec4`, chain 42220)
+- UniversalRouter (`0x3c255d...7a7a0d`, chain 42220)
+- VotableStakingRewards (`0x388d61...5ff5c9`, chain 42220)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 27; live-surface contracts included: 27 (27 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 18; live-surface contracts included: 18 (18 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 20/20 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/27 (0.0%)
-- Deployed-live implementations: 27 of 27 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/27
-- Verified + Unaudited implementations: 27
+- Coverage of address-book-owned deployed-live implementations: 0/18 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 20 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 9 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Deployed-live implementations: 20 of 29 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/18
+- Verified + Unaudited implementations: 18
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 27
-- Raw deployments: 27
+- Unverified implementations: 2
+- Unique implementations: 29
+- Raw deployments: 29
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -59,35 +115,35 @@ The protocol comprises 2 functional families. Its contracts share 11 common proj
 
 ### ⚠️ Verified + Unaudited (27)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Create2Deployer | unknown | celo | n/a | [`0x4a27c0...5f6ee3`](./contracts/celo-42220/0x4a27c059fd7e383854ea7de6be9c390a795f6ee3/) | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | celo | n/a | [`0x3cdb70...555167`](./contracts/celo-42220/0x3cdb7098842621c22721f8c576d49dc366555167/) | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | celo | n/a | [`0x5c7624...fdcd65`](./contracts/celo-42220/0x5c76245413c6c4cbe7a3fae395a8f7af06fdcd65/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | celo | n/a | [`0x6bd919...70e694`](./contracts/celo-42220/0x6bd9193bb82fdf663ec6aea0a3baf2ad0170e694/) | ⚠️ Unaudited |
-| QuoterV2 | unknown | celo | n/a | [`0xa8864a...cca56f`](./contracts/celo-42220/0xa8864a18fab1ed233ce1921f329a6a92dbcca56f/) | ⚠️ Unaudited |
-| RomulusDelegate | unknown | celo | n/a | [`0xd355a0...55f928`](./contracts/celo-42220/0xd355a00220fba16b69cd8c4fbe16e02ca855f928/) | ⚠️ Unaudited |
-| StakingRewards | unknown | celo | n/a | [`0x534408...15b52c`](./contracts/celo-42220/0x534408e91d755a0d898e1c508e987e8d0615b52c/) | ⚠️ Unaudited |
-| StakingRewardsCapped | unknown | celo | n/a | [`0x799a23...602a45`](./contracts/celo-42220/0x799a23da264a157db6f9c02be62f82ce8d602a45/) | ⚠️ Unaudited |
-| SwapRouter02 | unknown | celo | n/a | [`0x5cde4d...d8ee7a`](./contracts/celo-42220/0x5cde4d414f27e331b6738f783bc84c5507d8ee7a/) | ⚠️ Unaudited |
-| TickLens | unknown | celo | n/a | [`0x1d8c56...4265c4`](./contracts/celo-42220/0x1d8c564cce485c2f053ef32652e4dba00d4265c4/) | ⚠️ Unaudited |
-| Timelock | unknown | celo | n/a | [`0x936f5b...2fdaf6`](./contracts/celo-42220/0x936f5b0164b08bf0e123cdf356118343342fdaf6/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | celo | n/a | [`0x6e2369...4ffe67`](./contracts/celo-42220/0x6e23691e355703fde907aa97fe9acabb2e4ffe67/) | ⚠️ Unaudited |
-| UbeAdvisoryVesting | unknown | celo | n/a | [`0xf7d062...1f7d10`](./contracts/celo-42220/0xf7d06202b0779f9c314d67bad8538b3c661f7d10/) | ⚠️ Unaudited |
-| UbeConvert | unknown | celo | n/a | [`0x9dfc13...bb7a36`](./contracts/celo-42220/0x9dfc135e0984fe88acd45d68e62a73e98dbb7a36/) | ⚠️ Unaudited |
-| UbeEcosystemVesting | unknown | celo | n/a | [`0x3924c6...a6ae73`](./contracts/celo-42220/0x3924c6b0003135683b59bab63c2b4a5631a6ae73/) | ⚠️ Unaudited |
-| UbeMarketingVesting | unknown | celo | n/a | [`0xd733bc...0d0c5e`](./contracts/celo-42220/0xd733bc0acd4583ffa0816d92ee7ef417370d0c5e/) | ⚠️ Unaudited |
-| UbeMiningReserveVesting | unknown | celo | n/a | [`0xae4634...502968`](./contracts/celo-42220/0xae4634be8c69ff602e6dd9a1e3c5cecca3502968/) | ⚠️ Unaudited |
-| UbeswapV3Farming | unknown | celo | n/a | [`0xa6e906...f51853`](./contracts/celo-42220/0xa6e9069cb055a425eb41d185b740b22ec8f51853/) | ⚠️ Unaudited |
-| UbeTeamVesting | unknown | celo | n/a | [`0x74d498...6c8b5c`](./contracts/celo-42220/0x74d4983a29044b68aadd2bdb86bc82cf8c6c8b5c/) | ⚠️ Unaudited |
-| UbeToken | unknown | celo | n/a | [`0x71e26d...101490`](./contracts/celo-42220/0x71e26d0e519d14591b9de9a0fe9513a398101490/) | ⚠️ Unaudited |
-| UniswapInterfaceMulticall | unknown | celo | n/a | [`0x4d446f...49d63f`](./contracts/celo-42220/0x4d446f092461a0bfdebc72abc831541ca949d63f/) | ⚠️ Unaudited |
-| UniswapV2Factory | unknown | celo | n/a | [`0x62d5b8...c25fae`](./contracts/celo-42220/0x62d5b84be28a183abb507e125b384122d2c25fae/) | ⚠️ Unaudited |
-| UniswapV2Router02 | unknown | celo | n/a | [`0xe3d8bd...f96121`](./contracts/celo-42220/0xe3d8bd6aed4f159bc8000a9cd47cffdb95f96121/) | ⚠️ Unaudited |
-| UniswapV3Factory | unknown | celo | n/a | [`0x67fea5...f8aec4`](./contracts/celo-42220/0x67fea58d5a5a4162ced847e13c2c81c73bf8aec4/) | ⚠️ Unaudited |
-| UniversalRouter | unknown | celo | n/a | [`0x3c255d...7a7a0d`](./contracts/celo-42220/0x3c255ded9b25f0bfb4ef1d14234bd2514d7a7a0d/) | ⚠️ Unaudited |
-| V3Migrator | unknown | celo | n/a | [`0x65415d...ebec66`](./contracts/celo-42220/0x65415d0bde9249e185d433a08823fd7fa7ebec66/) | ⚠️ Unaudited |
-| VotableStakingRewards | unknown | celo | n/a | [`0x388d61...5ff5c9`](./contracts/celo-42220/0x388d611a57ac15dcc1b937f287e5e908ba5ff5c9/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Create2Deployer | unknown | project_anchor | own_supporting | 0 | celo | unit-395280 | `0x4a27c0...5f6ee3` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | project_anchor | own_supporting | 0 | celo | unit-395278 | `0x3cdb70...555167` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x5c7624...fdcd65` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x6bd919...70e694` | ⚠️ Unaudited |
+| QuoterV2 | unknown | project_anchor | own_supporting | 0 | celo | unit-395300 | `0xa8864a...cca56f` | ⚠️ Unaudited |
+| RomulusDelegate | unknown | project_anchor | own_supporting | 1 | celo | unit-395309 | `0xd355a0...55f928` | ⚠️ Unaudited |
+| StakingRewards | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x534408...15b52c` | ⚠️ Unaudited |
+| StakingRewardsCapped | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x799a23...602a45` | ⚠️ Unaudited |
+| SwapRouter02 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x5cde4d...d8ee7a` | ⚠️ Unaudited |
+| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x1d8c56...4265c4` | ⚠️ Unaudited |
+| Timelock | unknown | project_anchor | own_supporting | 0 | celo | unit-395296 | `0x936f5b...2fdaf6` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x6e2369...4ffe67` | ⚠️ Unaudited |
+| UbeAdvisoryVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395308 | `0xf7d062...1f7d10` | ⚠️ Unaudited |
+| UbeConvert | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x9dfc13...bb7a36` | ⚠️ Unaudited |
+| UbeEcosystemVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395274 | `0x3924c6...a6ae73` | ⚠️ Unaudited |
+| UbeMarketingVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395304 | `0xd733bc...0d0c5e` | ⚠️ Unaudited |
+| UbeMiningReserveVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395302 | `0xae4634...502968` | ⚠️ Unaudited |
+| UbeswapV3Farming | unknown | project_anchor | own_supporting | 0 | celo | unit-395298 | `0xa6e906...f51853` | ⚠️ Unaudited |
+| UbeTeamVesting | unknown | project_anchor | own_supporting | 0 | celo | unit-395292 | `0x74d498...6c8b5c` | ⚠️ Unaudited |
+| UbeToken | unknown | project_anchor | own_supporting | 0 | celo | unit-395290 | `0x71e26d...101490` | ⚠️ Unaudited |
+| UniswapInterfaceMulticall | unknown | project_anchor | own_supporting | 0 | celo | unit-395282 | `0x4d446f...49d63f` | ⚠️ Unaudited |
+| UniswapV2Factory | unknown | project_anchor | own_supporting | 0 | celo | unit-395284 | `0x62d5b8...c25fae` | ⚠️ Unaudited |
+| UniswapV2Router02 | unknown | project_anchor | own_supporting | 0 | celo | unit-395306 | `0xe3d8bd...f96121` | ⚠️ Unaudited |
+| UniswapV3Factory | unknown | project_anchor | own_supporting | 0 | celo | unit-395286 | `0x67fea5...f8aec4` | ⚠️ Unaudited |
+| UniversalRouter | unknown | project_anchor | own_supporting | 0 | celo | unit-395276 | `0x3c255d...7a7a0d` | ⚠️ Unaudited |
+| V3Migrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | celo | n/a | `0x65415d...ebec66` | ⚠️ Unaudited |
+| VotableStakingRewards | unknown | project_anchor | own_supporting | 0 | celo | unit-395272 | `0x388d61...5ff5c9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -101,31 +157,53 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-395288 | `0x716733...de7a8a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | celo | unit-395294 | `0x897387...6f8c8f` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| celo | `0xa8864a...cca56f` | QuoterV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0xd355a0...55f928` | RomulusDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x936f5b...2fdaf6` | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0xf7d062...1f7d10` | UbeAdvisoryVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x3924c6...a6ae73` | UbeEcosystemVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0xd733bc...0d0c5e` | UbeMarketingVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0xae4634...502968` | UbeMiningReserveVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0xa6e906...f51853` | UbeswapV3Farming | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x74d498...6c8b5c` | UbeTeamVesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x71e26d...101490` | UbeToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x3c255d...7a7a0d` | UniversalRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| celo | `0x388d61...5ff5c9` | VotableStakingRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 0 |
-| standard_library | 0 |
-| needs_review | 27 |
+| native | 19 |
+| upstream | 4 |
+| standard_library | 4 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
@@ -133,6 +211,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

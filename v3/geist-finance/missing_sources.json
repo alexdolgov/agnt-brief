@@ -1,0 +1,13 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "geist-finance",
+  "missing": [
+    {
+      "chain_id": 250,
+      "chain": "fantom",
+      "address": "0xd8321aa83fb0a4ecd6348d4577431310a6e0814d",
+      "canonical_source_address": null
+    }
+  ]
+}

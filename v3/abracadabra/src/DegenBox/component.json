@@ -1,58 +1,28 @@
 {
   "component": "DegenBox",
   "main_contract": "DegenBox",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DegenBox\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x233332a01ebf20f770883ebff68374b015accb9c",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd96f48665a1410c0cd669a88898eca36b9fc2cce",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xb3f5c7d0ac3944a9d9a9623d6b50bcea85a26753",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x7a3b799e929c9bef403976405d8908fa92080449",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xe56f37ef2e54ecaa41a9675da1c3445736d60b42",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x7c8fef8ea9b1fe46a7689bfb8149341c90431d38",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xd825d06061fdc0585e4373f0a3f01a8c02b0e6a4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390588"
     }
   ]
 }

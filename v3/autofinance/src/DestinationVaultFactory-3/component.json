@@ -1,26 +1,28 @@
 {
   "component": "DestinationVaultFactory-3",
   "main_contract": "DestinationVaultFactory",
-  "source_file_count": 69,
-  "deployment_count": 2,
+  "source_entry_count": 63,
+  "source_file_count": 63,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DestinationVaultFactory-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-9745",
-      "chain_id": 9745,
-      "address": "0xc895bbd0fcb39bdcb66151fa6316b5b13f5c288a",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf34f7975df6cb3dd95849a6c3b9343196ae9abb6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xd6683672269b6a109a51825e71a015678559225a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391745"
     }
   ]
 }

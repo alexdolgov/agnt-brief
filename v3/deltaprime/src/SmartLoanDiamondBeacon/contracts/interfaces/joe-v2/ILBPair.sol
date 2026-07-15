@@ -119,8 +119,6 @@ interface ILBPair is ILBToken {
             uint24 maxVolatilityAccumulator
         );
 
-    function getLBHooksParameters() external view returns (bytes32 hooksParameters);
-
     function getVariableFeeParameters()
         external
         view

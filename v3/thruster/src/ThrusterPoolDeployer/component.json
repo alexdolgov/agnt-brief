@@ -1,10 +1,22 @@
 {
   "component": "ThrusterPoolDeployer",
   "main_contract": "ThrusterPoolDeployer",
+  "source_entry_count": 37,
   "source_file_count": 37,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ThrusterPoolDeployer\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2024-02-thruster",
+    "https://github.com/code-423n4/2024-02-thruster-findings/blob/main/report.md",
+    "https://github.com/code-423n4/2024-02-thruster/blob/main/4naly3er-report-thruster-clmm.md"
+  ],
   "addresses": [
     {
       "chain": "blast",
@@ -12,7 +24,9 @@
       "address": "0xa08ae3d3f4da51c22d3c041e468bdf4c61405aab",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400270"
     }
   ]
 }

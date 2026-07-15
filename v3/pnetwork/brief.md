@@ -1,56 +1,92 @@
 # Agentic Audit Brief: pNetwork
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: pNetwork (`pnetwork`)
 - Website: [https://p.network](https://p.network)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:42.815Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
-- Chains: polygon
-- Contract surface: 71 unique implementations (71 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: bsc, ethereum
+- Contract surface: 4 unique implementations (4 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $13,099,805.90
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Bridge. Structurally: 3 project-authored contract(s) across 1 chain(s); role-gated via AccessControl; built on openzeppelin.
+No contract logic was present for pNetwork in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol forms a single structural family (Core Logic) of 3 contract(s).
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
 
-## Fork Lineage
+## Logic Topography
 
-This project reuses audited code from **TEN Finance** (`ten-finance`) in the TENLock subsystem.
-3 audits inherited from `ten-finance`, scoped to that subsystem.
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
-Total inherited audits: 3. Inherited coverage reflects forked/shared code audited by the origin project — it is not a direct audit of this project.
+## Fork Analysis
+
+0 of 2 contracts are derived from known codebases. 2 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0xa0ee7a...a79720`, chain 1)
+- UnnamedContract (`0xa0ee7a...a79720`, chain 56)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 75; live-surface contracts included: 71 (1 live, 70 unknown).
-- Excluded by liveness: 4 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 2/15 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/1 (0.0%)
-- Deployed-live implementations: 1 of 71 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/1
-- Verified + Unaudited implementations: 1
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 2 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 2 of 4 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 70
-- Unique implementations: 71
-- Raw deployments: 71
-- Audits discovered: 4 (1 direct, 3 inherited from forked code)
+- Unverified implementations: 2
+- Unique implementations: 4
+- Raw deployments: 4
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 4 unknown
+- Latest audit: 2020-07 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
@@ -64,11 +100,9 @@ Total inherited audits: 3. Inherited coverage reflects forked/shared code audite
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AutoFarmV2_CrossChain | unknown | polygon | n/a | [`0x89d065...eb0b76`](./contracts/polygon-137/0x89d065572136814230a55ddeeddec9df34eb0b76/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,91 +116,38 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (70)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | polygon | n/a | `0x027da2...830a71` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x02a124...95194e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x086efc...e574c6` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x0eaa78...53bd04` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x11e963...cd8033` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x143371...8653bf` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x144c0c...2f9f22` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x17f619...60172f` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x1cae78...253067` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x1deaee...32ef38` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x20e260...73ceeb` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x31c818...c494eb` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x36ac93...dab483` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x37da0f...bea1ab` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x38d409...21c8a7` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x39acf8...68a98e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x3b4e26...fc0c5b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x3c7a4e...fc2d32` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x495682...e21b29` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x49a215...a3d89b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x4a9e97...f9ced2` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x4e176b...40be01` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x51567c...aabc80` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x533152...f60e6f` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x53bae3...036d17` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x582cc1...91deab` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x5d4346...055dee` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x5dd9ba...654572` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x5eb8ae...dcfa27` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x5fa81b...d0242e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x602817...525f4b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x61989e...a9372a` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x61b7bd...e60874` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x654776...e88733` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x65620c...187b62` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x67030a...1eb409` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x6841c2...fa34d9` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x7347c5...2aeaa0` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x7d29b5...558113` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x7ea728...f22681` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x7f7b23...563ff1` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x807c4d...03cc10` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x88bf81...760643` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x89d829...c48206` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x99c1de...98d27e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x9c5765...d13eea` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x9c9d29...377ebe` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x9e98b8...ff5f8f` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa92c75...04b04d` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xadb1c7...2c0297` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xae9720...4868e8` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xb09a88...2f36f9` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xb43ad6...ea7877` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xb6dddf...947499` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xbc8722...4b8db2` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xbe12ff...0b0395` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xca4b64...b3509a` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xd3be99...5dd0ed` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xd69fb7...fe7079` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xd717db...f8296b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xda4f3e...e4f86a` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xdbb5f3...f4e46e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xe457cd...0ef170` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xe5d2b9...fe6060` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xeba805...5fccfb` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xeca70a...9c3556` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xeeee27...222c95` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xf75687...9a2158` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xfbc177...2a3d1a` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xfbd96c...b63047` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | n/a | `0x000000...000000` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-391034 | `0xa0ee7a...a79720` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | n/a | `0x000000...000000` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-391041 | `0xa0ee7a...a79720` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [skynet.certik.com/projects/tenfinance](https://skynet.certik.com/projects/tenfinance) | CertiK | Audit | n/a | unknown | Inherited from TEN Finance — forked code, scoped to TENLock | n/a | 0 | n/a |
-| [audit.md](https://tenfinance.gitbook.io/ten/documentation-1/audit.md) | unknown | Audit | n/a | unknown | Inherited from TEN Finance — forked code, scoped to TENLock | n/a | 0 | n/a |
-| [spaces/-MTg9bsJ23imtGvbcYvG/uploads/a4RWF03WuDG7oB33JzOD/PeckShield-Audit-Report-TenLend-v1.0.pdf](https://3931236349-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MTg9bsJ23imtGvbcYvG%2Fuploads%2Fa4RWF03WuDG7oB33JzOD%2FPeckShield-Audit-Report-TenLend-v1.0.pdf) | PeckShield | Audit | n/a | unknown | Inherited from TEN Finance — forked code, scoped to TENLock | n/a | 0 | n/a |
-| [20200915_pNetwork DAO staking+reward audit.pdf](https://github.com/cryptonicsconsulting/audits/blob/master/pNetwork/20200915_pNetwork%20DAO%20staking%2Breward%20audit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [20200915_pNetwork DAO staking+reward audit.pdf](https://github.com/cryptonicsconsulting/audits/blob/master/pNetwork/20200915_pNetwork%20DAO%20staking%2Breward%20audit.pdf) | unknown | Audit | 2020-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [20632] 20200915_pNetwork DAO staking+reward audit.pdf — no match: Three contracts explicitly listed in scope: StakingManager.sol, VotingRewards.sol, Steroids.sol. Audit date from cover page.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| 20200915_pNetwork DAO staking+reward audit.pdf | StakingManager | unmatched — not counted | — | listed in scope and audited | no |
+| 20200915_pNetwork DAO staking+reward audit.pdf | VotingRewards | unmatched — not counted | — | listed in scope and audited | no |
+| 20200915_pNetwork DAO staking+reward audit.pdf | Steroids | unmatched — not counted | — | listed in scope and audited | no |
 
 ## Coverage Gaps
 
@@ -181,22 +162,21 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 71 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 3 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1
 - Match method counts: n/a
 
 Zero-match audit list:
 
-- [19125] skynet.certik.com/projects/tenfinance
-- [19126] audit.md
-- [19127] spaces/-MTg9bsJ23imtGvbcYvG/uploads/a4RWF03WuDG7oB33JzOD/PeckShield-Audit-Report-TenLend-v1.0.pdf
 - [20632] 20200915_pNetwork DAO staking+reward audit.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

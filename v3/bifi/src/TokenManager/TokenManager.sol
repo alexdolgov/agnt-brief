@@ -31,6 +31,10 @@ interface IManagerSlotSetter  {
   function setPositionStorageAddr(address _positionStorageAddr) external returns (bool);
   function setNFTAddr(address _nftAddr) external returns (bool);
   function setDiscountBase(uint256 handlerID, uint256 feeBase) external returns (bool);
+  function setFlashloanAddr(address _flashloanAddr) external returns (bool);
+  function sethandlerManagerAddr(address _handlerManagerAddr) external returns (bool);
+  function setSlotSetterAddr(address _slotSetterAddr) external returns (bool);
+  function setFlashloanFee(uint256 handlerID, uint256 flashFeeRate) external returns (bool);
 }
 
 // File: contracts/interfaces/IHandlerManager.sol
@@ -661,6 +665,36 @@ contract TokenManager is ManagerSlot {
     assert(result);
 	}
 
+	function setSlotSetterAddr(address _slotSetterAddr) onlyOwner external returns (bool result) {
+			bytes memory callData = abi.encodeWithSelector(
+					IManagerSlotSetter.setSlotSetterAddr.selector,
+					_slotSetterAddr
+				);
+
+			(result, ) = slotSetterAddr.delegatecall(callData);
+		assert(result);
+	}
+
+	function sethandlerManagerAddr(address _handlerManagerAddr) onlyOwner external returns (bool result) {
+			bytes memory callData = abi.encodeWithSelector(
+					IManagerSlotSetter.sethandlerManagerAddr.selector,
+					_handlerManagerAddr
+				);
+
+			(result, ) = slotSetterAddr.delegatecall(callData);
+		assert(result);
+	}
+
+	function setFlashloanAddr(address _flashloanAddr) onlyOwner external returns (bool result) {
+			bytes memory callData = abi.encodeWithSelector(
+					IManagerSlotSetter.setFlashloanAddr.selector,
+					_flashloanAddr
+				);
+
+			(result, ) = slotSetterAddr.delegatecall(callData);
+		assert(result);
+	}
+
 	function setPositionStorageAddr(address _positionStorageAddr) onlyOwner external returns (bool result) {
 			bytes memory callData = abi.encodeWithSelector(
 					IManagerSlotSetter.setPositionStorageAddr.selector,
@@ -681,12 +715,24 @@ contract TokenManager is ManagerSlot {
 		assert(result);
 	}
 
+	function setFlashloanFee(uint256 handlerID, uint256 flashFeeRate) onlyOwner external returns (bool result) {
+			bytes memory callData = abi.encodeWithSelector(
+					IManagerSlotSetter
+					.setFlashloanFee.selector,
+					handlerID,
+			    	flashFeeRate
+				);
+
+			(result, ) = slotSetterAddr.delegatecall(callData);
+		assert(result);
+	}
+
 	function setDiscountBase(uint256 handlerID, uint256 feeBase) onlyOwner external returns (bool result) {
 			bytes memory callData = abi.encodeWithSelector(
 					IManagerSlotSetter
 					.setDiscountBase.selector,
 					handlerID,
-			feeBase
+			    feeBase
 				);
 
 			(result, ) = slotSetterAddr.delegatecall(callData);

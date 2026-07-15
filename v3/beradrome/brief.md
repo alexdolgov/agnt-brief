@@ -1,5 +1,16 @@
 # Agentic Audit Brief: Beradrome
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 3 (0 matched; 3 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ⚠️ Lifecycle status: DECLINING - TVL dropped 42.6% over 90 days
 
 ## Project Overview
@@ -7,78 +18,82 @@
 - Project: Beradrome (`beradrome`)
 - Website: [https://www.beradrome.com](https://www.beradrome.com)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-03T21:05:35.597Z
-- Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: berachain
-- Contract surface: 11 unique implementations (13 raw deployments)
+- Contract surface: 1 unique implementations (3 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $6,836,174.59
-- On-chain TVL (included contracts): $3,276,244.79
-- TVL by chain: Berachain $3,276,244.79
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
+
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Yield. Structurally: 11 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Beradrome. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
+The pinned logic-topography run contains 3 contract row(s) across berachain. Structural roles: 3 supporting. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 3
+- Structural roles: supporting (3)
+- Contract kinds: contract (3)
+- Detected standards: erc20 (3), erc20permit (3), pausable (3)
+- Frameworks: openzeppelin (3), solady (3)
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 13; live-surface contracts included: 13 (13 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 3; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 5/11 (45.5%)
-- Deployed-live implementations: 11 of 11 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 5/11
-- Verified + Unaudited implementations: 6
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 11
-- Raw deployments: 13
+- Unique implementations: 1
+- Raw deployments: 3
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 2
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-01 (aging)
-- Audit staleness (calendar age): 0 fresh, 1 aging, 1 stale, 1 unknown
-- Coverage code basis (deployed vs audited code): 5 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Audit staleness (calendar age): 0 fresh, 1 aging, 2 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| PeckShield | Tier 2 | 5 | 45.5% | 2023-09 |
-| unknown | Tier 2 | 2 | 18.2% | 2025-01 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (5)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| TOKEN | token | berachain | n/a | [`0x7838ce...c74174`](./contracts/berachain-80094/0x7838cec5b11298ff6a9513fa385621b765c74174/) | ✅ Audited |
-| TOKENFees | token | berachain | n/a | [`0x06030c...eba5d3`](./contracts/berachain-80094/0x06030c39b241f5e7f3a2af25e0d10ca1f8eba5d3/) | ✅ Audited |
-| Gauge | operational_periphery | berachain | n/a | [`0x229fdf...4dcc38`](./contracts/berachain-80094/0x229fdff961392cebb08e93d630e7a6a5614dcc38/) | ✅ Audited |
-| Voter | unknown | berachain | n/a | [`0xd7ea36...e4ad47`](./contracts/berachain-80094/0xd7ea36eca1ca3e73bc262a6d05db01e60ae4ad47/) | ✅ Audited |
-| VTOKEN | token | berachain | n/a | [`0x7f0976...fa2b69`](./contracts/berachain-80094/0x7f0976b52f6c1ddcd4d6f639537c97de22fa2b69/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BerachainPlugin | unknown | berachain | n/a | [`0xac5922...500171`](./contracts/berachain-80094/0xac5922bccb16a0213684427f0412fcf8f9500171/) | ⚠️ Unaudited |
-| Bribe | operational_periphery | berachain | n/a | [`0x5dba62...659edd`](./contracts/berachain-80094/0x5dba62ae28e2efbd1f42ac372910f8df78659edd/) | ⚠️ Unaudited |
-| GnosisSafeProxy | governance | berachain | n/a | [`0xab53af...58e09c`](./contracts/berachain-80094/0xab53afb5c63e2552e7bd986c0a38e8a8dc58e09c/) | ⚠️ Unaudited |
-| KodiakIslandWithRouter | adapter | berachain | n/a | 3 deployments: berachain [`0x63b0ed...8ce225`](./contracts/berachain-80094/0x63b0edc427664d4330f72eec890a86b3f98ce225/); berachain `0xbfbefc...742eb0`; berachain `0xe5a2ab...09aff9` | ⚠️ Unaudited |
-| RewardVault | core_logic | berachain | n/a | [`0x63233e...fc09f0`](./contracts/berachain-80094/0x63233e055847ed2526d9275a6cd1d01caafc09f0/) | ⚠️ Unaudited |
-| VTOKENRewarder | token | berachain | n/a | [`0x8a5547...94865e`](./contracts/berachain-80094/0x8a5547dbdba815036ae67d36835db687fd94865e/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| KodiakIslandWithRouter | adapter | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | berachain | unit-230135 | 3 deployments: berachain `0x63b0ed...8ce225`; berachain `0xbfbefc...742eb0`; berachain `0xe5a2ab...09aff9` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -100,43 +115,83 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [spaces/zEE4RoSkf1KPe6qHUHZb/uploads/9amf3oq6oU9WdNOvESyc/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf](https://3573018453-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzEE4RoSkf1KPe6qHUHZb%2Fuploads%2F9amf3oq6oU9WdNOvESyc%2FPeckShield-Audit-Report-LilToken-v1.0rc%20(1).pdf) | PeckShield | Audit | 2023-09 | stale | Direct | contract_name | 5 | high |
-| [spaces/zEE4RoSkf1KPe6qHUHZb/uploads/BU79KHmtxM1caLQzs1CE/ZokyoAudit.pdf](https://3573018453-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzEE4RoSkf1KPe6qHUHZb%2Fuploads%2FBU79KHmtxM1caLQzs1CE%2FZokyoAudit.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [spaces/zEE4RoSkf1KPe6qHUHZb/uploads/UFxBvo4XJlvkU9Fzh8nH/AstraSec-AuditReport-Beradrome.pdf](https://3573018453-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzEE4RoSkf1KPe6qHUHZb%2Fuploads%2FUFxBvo4XJlvkU9Fzh8nH%2FAstraSec-AuditReport-Beradrome.pdf) | unknown | Audit | 2025-01 | aging | Direct | contract_name | 2 | high |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [spaces/zEE4RoSkf1KPe6qHUHZb/uploads/9amf3oq6oU9WdNOvESyc/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf](https://3573018453-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzEE4RoSkf1KPe6qHUHZb%2Fuploads%2F9amf3oq6oU9WdNOvESyc%2FPeckShield-Audit-Report-LilToken-v1.0rc%20(1).pdf) | PeckShield | Audit | 2023-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 10 | high |
+| [spaces/zEE4RoSkf1KPe6qHUHZb/uploads/BU79KHmtxM1caLQzs1CE/ZokyoAudit.pdf](https://3573018453-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzEE4RoSkf1KPe6qHUHZb%2Fuploads%2FBU79KHmtxM1caLQzs1CE%2FZokyoAudit.pdf) | unknown | Audit | 2023-05 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 10 | high |
+| [spaces/zEE4RoSkf1KPe6qHUHZb/uploads/UFxBvo4XJlvkU9Fzh8nH/AstraSec-AuditReport-Beradrome.pdf](https://3573018453-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzEE4RoSkf1KPe6qHUHZb%2Fuploads%2FUFxBvo4XJlvkU9Fzh8nH%2FAstraSec-AuditReport-Beradrome.pdf) | unknown | Audit | 2025-01 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 6 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [12594] spaces/zEE4RoSkf1KPe6qHUHZb/uploads/9amf3oq6oU9WdNOvESyc/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf — no match: The audit report clearly identifies LilToken as the target, and multiple contracts (TOKEN, Voter, Minter, etc.) are referenced in findings. The date is explicitly stated on the cover page and in the report header.
+- [12595] spaces/zEE4RoSkf1KPe6qHUHZb/uploads/BU79KHmtxM1caLQzs1CE/ZokyoAudit.pdf — no match: Contracts listed in scope section on page 3 of the audit report.
+- [12596] spaces/zEE4RoSkf1KPe6qHUHZb/uploads/UFxBvo4XJlvkU9Fzh8nH/AstraSec-AuditReport-Beradrome.pdf — no match: Extracted contract names from source code listing and vulnerability details. Audit date from document header.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/9amf3oq6oU9WdNOvESyc/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | LilToken | unmatched — not counted | — | Target of audit, mentioned in introduction and throughout | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/9amf3oq6oU9WdNOvESyc/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | TOKEN | unmatched — not counted | — | Mentioned in findings PVE-002, PVE-003, and as a token contract | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/9amf3oq6oU9WdNOvESyc/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | BASE | unmatched — not counted | — | Mentioned as backing token in TOKEN::buy() | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/9amf3oq6oU9WdNOvESyc/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | oTOKEN | unmatched — not counted | — | Mentioned in findings PVE-001, PVE-004 | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/9amf3oq6oU9WdNOvESyc/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | Voter | unmatched — not counted | — | Mentioned in findings PVE-001, PVE-004, PVE-005 | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/9amf3oq6oU9WdNOvESyc/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | VTOKEN | unmatched — not counted | — | Mentioned in finding PVE-001 | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/9amf3oq6oU9WdNOvESyc/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | Minter | unmatched — not counted | — | Mentioned in finding PVE-004 | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/9amf3oq6oU9WdNOvESyc/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | Plugin | unmatched — not counted | — | Mentioned in introduction and finding PVE-001 | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/9amf3oq6oU9WdNOvESyc/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | TOKENFees | unmatched — not counted | — | Mentioned in finding PVE-001 | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/9amf3oq6oU9WdNOvESyc/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf | Gauge | unmatched — not counted | — | Mentioned in introduction and finding PVE-005 | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/BU79KHmtxM1caLQzs1CE/ZokyoAudit.pdf | CantodexPairPlugin | unmatched — not counted | — | listed in scope | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/BU79KHmtxM1caLQzs1CE/ZokyoAudit.pdf | FortePairPlugin | unmatched — not counted | — | listed in scope | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/BU79KHmtxM1caLQzs1CE/ZokyoAudit.pdf | VelocimeterPairPlugin | unmatched — not counted | — | listed in scope | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/BU79KHmtxM1caLQzs1CE/ZokyoAudit.pdf | BribeFactory | unmatched — not counted | — | listed in scope | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/BU79KHmtxM1caLQzs1CE/ZokyoAudit.pdf | GaugeFactory | unmatched — not counted | — | listed in scope | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/BU79KHmtxM1caLQzs1CE/ZokyoAudit.pdf | Minter | unmatched — not counted | — | listed in scope | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/BU79KHmtxM1caLQzs1CE/ZokyoAudit.pdf | oSOUL | unmatched — not counted | — | listed in scope | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/BU79KHmtxM1caLQzs1CE/ZokyoAudit.pdf | SOUL | unmatched — not counted | — | listed in scope | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/BU79KHmtxM1caLQzs1CE/ZokyoAudit.pdf | Voter | unmatched — not counted | — | listed in scope | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/BU79KHmtxM1caLQzs1CE/ZokyoAudit.pdf | vSOUL | unmatched — not counted | — | listed in scope | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/UFxBvo4XJlvkU9Fzh8nH/AstraSec-AuditReport-Beradrome.pdf | Voter | unmatched — not counted | — | listed in scope and findings | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/UFxBvo4XJlvkU9Fzh8nH/AstraSec-AuditReport-Beradrome.pdf | TOKEN | unmatched — not counted | — | listed in scope and findings | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/UFxBvo4XJlvkU9Fzh8nH/AstraSec-AuditReport-Beradrome.pdf | HiveDistro | unmatched — not counted | — | mentioned in finding M-1 | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/UFxBvo4XJlvkU9Fzh8nH/AstraSec-AuditReport-Beradrome.pdf | HiveDistroFactory | unmatched — not counted | — | mentioned in finding M-1 target | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/UFxBvo4XJlvkU9Fzh8nH/AstraSec-AuditReport-Beradrome.pdf | KodiakPlugin | unmatched — not counted | — | mentioned in finding M-3 | no |
+| spaces/zEE4RoSkf1KPe6qHUHZb/uploads/UFxBvo4XJlvkU9Fzh8nH/AstraSec-AuditReport-Beradrome.pdf | KodiakPluginFactory | unmatched — not counted | — | mentioned in finding M-3 target | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| berachain | [`0xac5922...500171`](./contracts/berachain-80094/0xac5922bccb16a0213684427f0412fcf8f9500171/) | BerachainPlugin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x5dba62...659edd`](./contracts/berachain-80094/0x5dba62ae28e2efbd1f42ac372910f8df78659edd/) | Bribe | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x63233e...fc09f0`](./contracts/berachain-80094/0x63233e055847ed2526d9275a6cd1d01caafc09f0/) | RewardVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| berachain | [`0x8a5547...94865e`](./contracts/berachain-80094/0x8a5547dbdba815036ae67d36835db687fd94865e/) | VTOKENRewarder | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 9 |
+| native | 0 |
 | upstream | 1 |
-| standard_library | 1 |
+| standard_library | 0 |
 | needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=7
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 26 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=3
+- Match method counts: n/a
 
 Zero-match audit list:
 
+- [12594] spaces/zEE4RoSkf1KPe6qHUHZb/uploads/9amf3oq6oU9WdNOvESyc/PeckShield-Audit-Report-LilToken-v1.0rc (1).pdf
 - [12595] spaces/zEE4RoSkf1KPe6qHUHZb/uploads/BU79KHmtxM1caLQzs1CE/ZokyoAudit.pdf
+- [12596] spaces/zEE4RoSkf1KPe6qHUHZb/uploads/UFxBvo4XJlvkU9Fzh8nH/AstraSec-AuditReport-Beradrome.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

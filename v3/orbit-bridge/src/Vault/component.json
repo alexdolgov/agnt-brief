@@ -1,18 +1,28 @@
 {
   "component": "Vault",
   "main_contract": "Vault",
-  "source_file_count": 4,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Vault\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x506dc4c6408813948470a06ef6e4a1daf228dbd5",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x89c527764f03bcb7dc469707b23b79c1d7beb780",
       "is_proxy": true,
-      "implementation_address": "0xda4721c94ee5a93186a3f40414d091e6ff842303",
-      "liveness": "inactive"
+      "implementation_address": "0x263bafd5c9e241956835d9a0a8c85e251ec9f9ef",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397542"
     }
   ]
 }

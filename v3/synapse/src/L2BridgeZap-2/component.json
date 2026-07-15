@@ -1,7 +1,15 @@
 {
   "component": "L2BridgeZap-2",
   "main_contract": "L2BridgeZap",
+  "source_entry_count": 11,
   "source_file_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/L2BridgeZap-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x26532682e1830cdacccbb7e385cff6de14dd08d8",
+      "address": "0x37f9ae2e0ea6742b9cad5abcfb6bbc3475b3862b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400127"
     }
   ]
 }

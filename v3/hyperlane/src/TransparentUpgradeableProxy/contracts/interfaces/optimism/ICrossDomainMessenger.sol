@@ -30,23 +30,10 @@ interface ICrossDomainMessenger {
     function xDomainMessageSender() external view returns (address);
 
     function OTHER_MESSENGER() external view returns (address);
-
-    function PORTAL() external view returns (address);
-
-    function baseGas(
-        bytes calldata _message,
-        uint32 _minGasLimit
-    ) external pure returns (uint64);
-
-    function messageNonce() external view returns (uint256);
 }
 
 interface IL1CrossDomainMessenger is ICrossDomainMessenger {}
 
 interface IL2CrossDomainMessenger is ICrossDomainMessenger {
-    function messageNonce() external view returns (uint256);
-}
-
-interface IL2ToL1MessagePasser {
     function messageNonce() external view returns (uint256);
 }

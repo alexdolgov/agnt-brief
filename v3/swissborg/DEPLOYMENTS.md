@@ -1,68 +1,11 @@
 # swissborg — deployments
 
-62 verified deployment(s) across 61 component(s).
+5 verified deployment(s) across 4 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| ethereum | `0x000b2d5a56e8b2eacd8c9d9a6ead8d044fed87ac` | Asset | impl | live | no |
-| ethereum | `0x02086ce6fde7c1adf67140830972a3378bdb1b3a` | AssetProxy | impl | live | no |
-| ethereum | `0x0285d3178199d95602fe37a6f797e0036af62bc9` | EToken2Interface | impl | live | no |
-| ethereum | `0x0b34a04b77aa9bd2c07ef365c05f7d0234c95630` | OptheriumToken | impl | live | no |
-| ethereum | `0x0c8f3d80103181fb6a68229bcb8b410b831a4e45` | Asset-2 | impl | live | no |
-| ethereum | `0x0cbeae4005826a63153875d0fbbfe8a91736bd76` | OrderbookBTC | impl | live | no |
-| ethereum | `0x13eedd9cd79b55719fa1e656fbedc800d7f3d5f9` | GloboX | impl | live | no |
-| ethereum | `0x19da36dcf89327b2cc3d477b97dba499576f8e60` | ArmorCeramics | impl | live | no |
-| ethereum | `0x259c444b50e3ab173c4f850bb40d85a9ea0230f3` | GnosisSafeProxyFactory | proxy | live | no |
-| ethereum | `0x282eaf0c93b535731c1a2ef26a568e6131980c4a` | FluxCoin | impl | live | no |
-| ethereum | `0x2af703b86b8ccf30040d82b088b73842573d3d9c` | Asset-3 | impl | live | no |
-| ethereum | `0x38d3d9abbdba8305ebb8b72996efe55bf785aed0` | UnicornSPXSecurityToken | impl | live | no |
-| ethereum | `0x3fd5219b7280291dd83beb8baff96d15f22aab49` | OrderbookProfitShare | impl | live | no |
-| ethereum | `0x42a501903afaa1086b5975773375c80e363f4063` | CryptykTokens | impl | live | no |
-| ethereum | `0x446c9033e7516d820cc9a2ce2d0b7328b579406f` | HealthCareToken | impl | live | no |
 | ethereum | `0x45e581d6841f0a99fc34f70871ef56b353813ddb` | ERC1967Upgrade | proxy | live | no |
-| ethereum | `0x49a1cbb5d28cdedd55b7daa627f658fbd8cf1d23` | ETERBASE | impl | live | no |
-| ethereum | `0x49d51a0a38706a95ae6129f177bd293e8087e0f9` | Aura | impl | live | no |
-| ethereum | `0x4adbfb956bdb58e84a700b62a2bd8b4d5a302b80` | OpenGoodsToken | impl | live | no |
-| ethereum | `0x4e404415af8a8a9de725c4f9d3426e79e1571f7c` | TransceiverStructs | impl | live | no |
-| ethereum | `0x4e734332e8a6ee5ff779f8b7349d6b449ff97092` | TrustMeUpCoin | impl | live | no |
-| ethereum | `0x4fe327c5a809fa721d47b80c5038a0b393e61305` | IOTW | impl | live | no |
-| ethereum | `0x50ee674689d75c0f88e8f83cfe8c4b69e8fd590d` | EmphyCoin | impl | live | no |
-| ethereum | `0x537f77a805e81a7072fcb1b365727087b3496ddc` | TEST135 | impl | live | no |
-| ethereum | `0x55c2a0c171d920843560594de3d6eecc09efc098` | PEXToken | impl | live | no |
-| ethereum | `0x55f551ea41f7a8025412acbbc26701f968bdb4d5` | RetailGlobalToken | impl | live | no |
-| ethereum | `0x567f4f0b0b5209644c0390f7860c7859b0f82a90` | Coinoplex | impl | live | no |
-| ethereum | `0x584beba37d962edd0fb4b16b10771d146dc516c3` | EToken2Interface-2 | impl | live | no |
-| ethereum | `0x5e51f6841d2f188c42c7c33a6a5e77fb05cfbabe` | CREDITCOIN | impl | live | no |
-| ethereum | `0x5f3b30ecb4048eca205ce90a93f9949f74df3d8b` | GLOBO | impl | live | no |
-| ethereum | `0x62931ef690876142114ecf5aa52cf0fbbe5e910b` | ChsbToBorgMigrator | impl | live | no |
-| ethereum | `0x64d0f55cd8c7133a9d7102b13987235f486f2224` | SwissBorgToken | impl | live | no |
+| ethereum | `0x62931ef690876142114ecf5aa52cf0fbbe5e910b` | ChsbToBorgMigrator | impl | live | yes |
+| ethereum | `0x64d0f55cd8c7133a9d7102b13987235f486f2224` | SwissBorgToken | impl | live | yes |
 | ethereum | `0x66a28b080918184851774a89ab94850a41f6a1e5` | ERC1967Upgrade | proxy | live | no |
-| ethereum | `0x6710c63432a2de02954fc0f851db07146a6c0312` | SyncFab | impl | live | no |
-| ethereum | `0x6722b7ef27c774f7cacdea9e98a47641521c69fe` | EToken2Interface-3 | impl | live | no |
-| ethereum | `0x6ccc23875503c5a1cd901b3006bdb5eb84c17433` | SIXAToken | impl | live | no |
-| ethereum | `0x7a16a48435d90580e9f54ff83b472413dfafe846` | AVtest | impl | live | no |
-| ethereum | `0x83984d6142934bb535793a82adb0a46ef0f66b6d` | REMME | impl | live | no |
-| ethereum | `0x8458d484572ceb89ce70eebbe17dc84707b241ed` | TheDealCoin | impl | live | no |
-| ethereum | `0x8574634a96bc7e56847c7df729c8acdbbea37681` | CryptallionToken | impl | live | no |
-| ethereum | `0x85a0d3ff89813f17a968572e28af3d132aafc234` | AIR | impl | live | no |
-| ethereum | `0x90b567371fbb8f1637d0f41aeee420031b1ea63a` | REDL | impl | live | no |
-| ethereum | `0x926703fb558f46331b6a06322bcf9e9d017fe6ec` | K2G | impl | live | no |
-| ethereum | `0x9a540227a22f99ceb492e3c4935176a1e2364a4c` | Reputy | impl | live | no |
-| ethereum | `0xa48778849bf4ecee7a9de39e394930787717c2b5` | Zichain | impl | live | no |
-| ethereum | `0xa838be6e4b760e6061d4732d6b9f11bf578f9a76` | TokenForTelevision | impl | live | no |
 | ethereum | `0xaa854688caab725fe17b7d21b46fda5af365985a` | AdminUpgradeabilityProxy | proxy | live | no |
-| ethereum | `0xb048bad454a993537caed5a7917e7c944a720848` | OrderbookPresaleToken | impl | live | no |
-| ethereum | `0xb0ed9d9495971a23fd5f0b9244b3dbbb402707ee` | RAISON | impl | live | no |
-| ethereum | `0xba4f403fceda8eb77d95810a7db12399bf843b7e` | MITIO | impl | live | no |
-| ethereum | `0xc34e97712376ec830591e4dfd2efe8a8981143e2` | InspeerTest | impl | live | no |
-| ethereum | `0xc574d5f8f7e79c8a9c1d077be9154131aea84139` | EToken2Interface-4 | impl | live | no |
-| ethereum | `0xca075cf7496d7fee464ceb98ccfbd3b6408bdf63` | OrderbookUSD | impl | live | no |
-| ethereum | `0xcaf187eb618d2335b4130d784a697be96f4b07b9` | Terra | impl | live | no |
-| ethereum | `0xcdb2f2d5a5483be5dbe56234ca222eb4e1a8591d` | TraderStars | impl | live | no |
-| ethereum | `0xd10d9a35e84c4c04d46938276e40939b2bedeb25` | MRVL | impl | live | no |
-| ethereum | `0xd6b6a6258a521036dfa4b2c1b8b633ae89bb8f53` | ERC20Interface | impl | live | no |
-| ethereum | `0xe63ba55d9365ca962ec49d1c0e42a44109bf09d4` | VaultbankToken | impl | live | no |
-| ethereum | `0xf1c460ae47e06be0756f9a1831467ff2f5fa4ecc` | VOLUM | impl | live | no |
-| ethereum | `0xf453b5b9d4e0b5c62ffb256bb2378cc2bc8e8a89` | Mark | impl | live | no |
-| ethereum | `0xfe056d5c08c349beabc0369b79319636b0bf5d94` | RedCat | impl | live | no |
-| ethereum | `0xffc7a65176b532db7e1ac26c522ca07123f952e1` | BLOK | impl | live | no |

@@ -1,0 +1,25 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "symbiotic",
+  "missing": [
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x6f80fd397120164e44d23b9334910c8de41ce4ce",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x788823c9579a049d986eb76718bc758c0998594a",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x9983edcd02f57b8b94bd8de9d18e614dfb964d6d",
+      "canonical_source_address": null
+    }
+  ]
+}

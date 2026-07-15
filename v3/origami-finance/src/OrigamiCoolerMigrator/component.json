@@ -1,7 +1,15 @@
 {
   "component": "OrigamiCoolerMigrator",
   "main_contract": "OrigamiCoolerMigrator",
+  "source_entry_count": 34,
   "source_file_count": 34,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OrigamiCoolerMigrator\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -14,7 +22,9 @@
       "address": "0x6b3441b121cadba4af1e92e9dd9ed3c0aa415e26",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403610"
     }
   ]
 }

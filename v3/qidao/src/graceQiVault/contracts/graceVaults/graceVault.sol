@@ -129,8 +129,6 @@ contract graceVault is ReentrancyGuard, VaultNFTv5 {
     }
 
     modifier frontExists(uint256 vaultID) {
-        require(_exists(vaultID), "front end vault does not exist");
-        require(promoter[vaultID] <= TEN_THOUSAND && promoter[vaultID] > 0, "Front end not added");
         _;
     }
 
@@ -317,18 +315,12 @@ contract graceVault is ReentrancyGuard, VaultNFTv5 {
         onlyVaultOwner(vaultID)
         nonReentrant
     {
-        require(vaultDebt(vaultID) == 0, "Vault has outstanding debt");
-        uint256 collateralId = vaultCollateral[vaultID];
-
-        if (collateralId != 0) {
-            // withdraw leftover collateral
-            collateral.safeTransferFrom(address(this), ownerOf(vaultID), collateralId);
-        }
+        require((vaultDebt(vaultID) == 0) && (vaultCollateral[vaultID] == 0), "Vault has outstanding debt and collateral");
 
         _burn(vaultID);
 
         delete vaultCollateral[vaultID];
-        delete collateralToVaultId[collateralId];
+        delete collateralToVaultId[vaultCollateral[vaultID]];
         
         delete accumulatedVaultDebt[vaultID];
         delete lastInterest[vaultID];
@@ -589,82 +581,6 @@ contract graceVault is ReentrancyGuard, VaultNFTv5 {
 
     }
 
-    // CLAIMING REWARDS/FEES ADD-ON(s)
-    // The way they work is anyone can call but only the "owner" can recieve. 
-    // We, in theory, could do the same "approval" process, so that anyone with approval for the erc721 could interact on behalf of the user (like aerodrome)
-
-    /**
-     * @notice Claims bribes for a given vault by delegating to external claim logic contract.
-     * @param _bribes The addresses of the bribe contracts to claim from.
-     * @param _tokens The token addresses for each bribe contract to claim.
-     * @param vaultId The ID of the vault for which to claim bribes.
-     * @return The amounts of each token claimed.
-     */
-    function claimVaultBribes(address[] calldata _bribes, address[][] calldata _tokens, uint256 vaultId)
-        external
-        vaultExists(vaultId)
-        returns (uint256[] memory)
-    {
-        require(claimLogic != address(0), "Claim logic not set");
-        
-        uint256 tokenId = vaultCollateral[vaultId];
-        address vaultOwner = ownerOf(vaultId);
-        
-        // Prepare the delegatecall
-        bytes memory data = abi.encodeWithSignature(
-            "claimVaultBribes(address[],address[][],uint256,uint256,address,address)",
-            _bribes,
-            _tokens,
-            vaultId,
-            tokenId,
-            vaultOwner,
-            address(voter)
-        );
-        
-        // Execute delegatecall
-        (bool success, bytes memory result) = claimLogic.delegatecall(data);
-        require(success, "Claim bribes delegatecall failed");
-        
-        // Decode and return the result
-        return abi.decode(result, (uint256[]));
-    }
-
-    /**
-     * @notice Claims fees for a given vault by delegating to external claim logic contract.
-     * @param _fees The addresses of the fee contracts to claim from.
-     * @param _tokens The token addresses for each fee contract to claim.
-     * @param vaultId The ID of the vault for which to claim fees.
-     * @return The amounts of each token claimed.
-     */
-    function claimVaultFees(address[] calldata _fees, address[][] calldata _tokens, uint256 vaultId)
-        external
-        vaultExists(vaultId)
-        returns (uint256[] memory)
-    {
-        require(claimLogic != address(0), "Claim logic not set");
-        
-        uint256 tokenId = vaultCollateral[vaultId];
-        address vaultOwner = ownerOf(vaultId);
-        
-        // Prepare the delegatecall
-        bytes memory data = abi.encodeWithSignature(
-            "claimVaultFees(address[],address[][],uint256,uint256,address,address)",
-            _fees,
-            _tokens,
-            vaultId,
-            tokenId,
-            vaultOwner,
-            address(voter)
-        );
-        
-        // Execute delegatecall
-        (bool success, bytes memory result) = claimLogic.delegatecall(data);
-        require(success, "Claim fees delegatecall failed");
-        
-        // Decode and return the result
-        return abi.decode(result, (uint256[]));
-    }
-
     // claiming rebases doesn't need extra functions so we're good there. users can just claim on behalf of someone else.
     // Voting needs to be done here
 
@@ -769,16 +685,5 @@ contract graceVault is ReentrancyGuard, VaultNFTv5 {
 
         (bool success,) = address(voting).delegatecall(abi.encodeWithSignature("poke(uint256)", tokenId));
         require(success, "Failed to delegate poke vote");
-    }
-    
-    /**
-     * @notice Sets the external claim logic contract address
-     * @param _claimLogic The address of the claim logic contract
-     * @dev Only callable by the contract admin
-     */
-    function setClaimLogic(address _claimLogic) external {
-        require(msg.sender == adm, "Only admin");
-        require(_claimLogic != address(0), "Invalid claim logic address");
-        claimLogic = _claimLogic;
     }
 }

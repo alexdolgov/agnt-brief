@@ -134,7 +134,7 @@ abstract contract Swaps is ReentrancyGuard, PoolBalances {
         // Process asset deltas, by either transferring assets from the sender (for positive deltas) or to the recipient
         // (for negative deltas).
         uint256 wrappedEth = 0;
-        for (uint256 i; i < assets.length; ++i) {
+        for (uint256 i = 0; i < assets.length; ++i) {
             IAsset asset = assets[i];
             int256 delta = assetDeltas[i];
             _require(delta <= limits[i], Errors.SWAP_LIMIT);
@@ -221,7 +221,7 @@ abstract contract Swaps is ReentrancyGuard, PoolBalances {
         IERC20 previousTokenCalculated;
         uint256 previousAmountCalculated;
 
-        for (uint256 i; i < swaps.length; ++i) {
+        for (uint256 i = 0; i < swaps.length; ++i) {
             batchSwapStep = swaps[i];
 
             bool withinBounds = batchSwapStep.assetInIndex < assets.length &&
@@ -417,7 +417,7 @@ abstract contract Swaps is ReentrancyGuard, PoolBalances {
         uint256[] memory currentBalances = new uint256[](tokenAmount);
 
         request.lastChangeBlock = 0;
-        for (uint256 i; i < tokenAmount; ++i) {
+        for (uint256 i = 0; i < tokenAmount; i++) {
             // Because the iteration is bounded by `tokenAmount`, and no tokens are registered or deregistered here, we
             // know `i` is a valid token index and can use `unchecked_valueAt` to save storage reads.
             bytes32 balance = poolBalances.unchecked_valueAt(i);

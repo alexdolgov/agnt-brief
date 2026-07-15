@@ -10,6 +10,7 @@ import "IUniV2Router.sol";
 import "ICurveTriCrypto.sol";
 import "IERC4626.sol";
 import "IPirexCVX.sol";
+import "ILpxCvx.sol";
 
 contract PCvxZaps is UnionBase, ReentrancyGuard {
     using SafeERC20 for IERC20;
@@ -26,8 +27,8 @@ contract PCvxZaps is UnionBase, ReentrancyGuard {
         0xD51a44d3FaE010294C616388b506AcdA1bfAAE46;
     address private constant USDT_TOKEN =
         0xdAC17F958D2ee523a2206206994597C13D831ec7;
-    address private constant CURVE_CVX_PCVX_POOL =
-        0xF3456E8061461e144b3f252E69DcD5b6070fdEE0;
+    address private constant LPX_CVX =
+        0x389fB29230D02e67eB963C1F5A00f2b16f95BEb7;
     IERC4626 vault = IERC4626(PXCVX_VAULT);
     ICurveTriCrypto triCryptoSwap = ICurveTriCrypto(TRICRYPTO);
 
@@ -42,11 +43,11 @@ contract PCvxZaps is UnionBase, ReentrancyGuard {
         IERC20(CVX_TOKEN).safeApprove(CURVE_CVX_ETH_POOL, 0);
         IERC20(CVX_TOKEN).safeApprove(CURVE_CVX_ETH_POOL, type(uint256).max);
 
-        IERC20(CVX_TOKEN).safeApprove(CURVE_CVX_PCVX_POOL, 0);
-        IERC20(CVX_TOKEN).safeApprove(CURVE_CVX_PCVX_POOL, type(uint256).max);
+        IERC20(CVX_TOKEN).safeApprove(LPX_CVX, 0);
+        IERC20(CVX_TOKEN).safeApprove(LPX_CVX, type(uint256).max);
 
-        IERC20(PXCVX_TOKEN).safeApprove(CURVE_CVX_PCVX_POOL, 0);
-        IERC20(PXCVX_TOKEN).safeApprove(CURVE_CVX_PCVX_POOL, type(uint256).max);
+        IERC20(PXCVX_TOKEN).safeApprove(LPX_CVX, 0);
+        IERC20(PXCVX_TOKEN).safeApprove(LPX_CVX, type(uint256).max);
 
         IERC20(CVXCRV_TOKEN).safeApprove(CURVE_CVXCRV_CRV_POOL, 0);
         IERC20(CVXCRV_TOKEN).safeApprove(
@@ -64,17 +65,18 @@ contract PCvxZaps is UnionBase, ReentrancyGuard {
     function _deposit(
         uint256 _amount,
         uint256 _minAmountOut,
-        address _to
+        address _to,
+        bool _lock
     ) internal {
-        if (ICurveV2Pool(CURVE_CVX_PCVX_POOL).price_oracle() < 1 ether) {
-            uint256 _pxCvxAmount = ICurveV2Pool(CURVE_CVX_PCVX_POOL).exchange(
-                0,
-                1,
+        if (!_lock) {
+            ILpxCvx(LPX_CVX).swap(
+                ILpxCvx.Token.CVX,
                 _amount,
                 _minAmountOut,
-                false,
-                address(this)
+                0,
+                1
             );
+            uint256 _pxCvxAmount = IERC20(PXCVX_TOKEN).balanceOf(address(this));
             vault.deposit(_pxCvxAmount, _to);
         } else {
             require(_amount >= _minAmountOut, "slippage");
@@ -85,47 +87,54 @@ contract PCvxZaps is UnionBase, ReentrancyGuard {
     /// @notice Deposit into the pounder from ETH
     /// @param minAmountOut - min amount of pCVX tokens expected
     /// @param to - address to stake on behalf of
-    function depositFromEth(uint256 minAmountOut, address to)
-        external
-        payable
-        notToZeroAddress(to)
-    {
+    /// @param lock - whether to lock or swap cvx to pxcvx
+    function depositFromEth(
+        uint256 minAmountOut,
+        address to,
+        bool lock
+    ) external payable notToZeroAddress(to) {
         require(msg.value > 0, "cheap");
-        _depositFromEth(msg.value, minAmountOut, to);
+        _depositFromEth(msg.value, minAmountOut, to, lock);
     }
 
     /// @notice Deposit into the pounder from CRV
     /// @param minAmountOut - min amount of pCVX tokens expected
     /// @param to - address to stake on behalf of
+    /// @param lock - whether to lock or swap cvx to pxcvx
     function depositFromCrv(
         uint256 amount,
         uint256 minAmountOut,
-        address to
+        address to,
+        bool lock
     ) external notToZeroAddress(to) {
         IERC20(CRV_TOKEN).safeTransferFrom(msg.sender, address(this), amount);
         uint256 _ethBalance = _swapCrvToEth(amount);
-        _depositFromEth(_ethBalance, minAmountOut, to);
+        _depositFromEth(_ethBalance, minAmountOut, to, lock);
     }
 
     /// @notice Deposit into the pounder from CVX
     /// @param minAmountOut - min amount of pCVX tokens expected
     /// @param to - address to stake on behalf of
+    /// @param lock - whether to lock or swap cvx to pxcvx
     function depositFromCvx(
         uint256 amount,
         uint256 minAmountOut,
-        address to
+        address to,
+        bool lock
     ) external notToZeroAddress(to) {
         IERC20(CVX_TOKEN).safeTransferFrom(msg.sender, address(this), amount);
-        _deposit(amount, minAmountOut, to);
+        _deposit(amount, minAmountOut, to, lock);
     }
 
     /// @notice Deposit into the pounder from cvxCRV
     /// @param minAmountOut - min amount of pCVX tokens expected
     /// @param to - address to stake on behalf of
+    /// @param lock - whether to lock or swap cvx to pxcvx
     function depositFromCvxCrv(
         uint256 amount,
         uint256 minAmountOut,
-        address to
+        address to,
+        bool lock
     ) external notToZeroAddress(to) {
         IERC20(CVXCRV_TOKEN).safeTransferFrom(
             msg.sender,
@@ -134,20 +143,22 @@ contract PCvxZaps is UnionBase, ReentrancyGuard {
         );
         uint256 _crvBalance = _swapCvxCrvToCrv(amount, address(this));
         uint256 _ethBalance = _swapCrvToEth(_crvBalance);
-        _depositFromEth(_ethBalance, minAmountOut, to);
+        _depositFromEth(_ethBalance, minAmountOut, to, lock);
     }
 
     /// @notice Internal function to deposit ETH to the pounder
     /// @param _amount - amount of ETH
     /// @param _minAmountOut - min amount of tokens expected
     /// @param _to - address to stake on behalf of
+    /// @param _lock - whether to lock or swap cvx to pxcvx
     function _depositFromEth(
         uint256 _amount,
         uint256 _minAmountOut,
-        address _to
+        address _to,
+        bool _lock
     ) internal {
         uint256 _cvxBalance = _swapEthToCvx(_amount);
-        _deposit(_cvxBalance, _minAmountOut, _to);
+        _deposit(_cvxBalance, _minAmountOut, _to, _lock);
     }
 
     /// @notice Deposit into the pounder from any token via Uni interface
@@ -158,12 +169,14 @@ contract PCvxZaps is UnionBase, ReentrancyGuard {
     /// @param router - address of the router to use. e.g. 0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F for Sushi
     /// @param inputToken - address of the token to swap from, needs to have an ETH pair on router used
     /// @param to - address to stake on behalf of
+    /// @param lock - whether to lock or swap cvx to pxcvx
     function depositViaUniV2EthPair(
         uint256 amount,
         uint256 minAmountOut,
         address router,
         address inputToken,
-        address to
+        address to,
+        bool lock
     ) external notToZeroAddress(to) {
         require(router != address(0));
 
@@ -182,7 +195,7 @@ contract PCvxZaps is UnionBase, ReentrancyGuard {
             address(this),
             block.timestamp + 1
         );
-        _depositFromEth(address(this).balance, minAmountOut, to);
+        _depositFromEth(address(this).balance, minAmountOut, to, lock);
     }
 
     /// @notice Unstake and converts pxCVX to CVX
@@ -195,15 +208,16 @@ contract PCvxZaps is UnionBase, ReentrancyGuard {
         uint256 _minAmountOut,
         address _to
     ) internal returns (uint256) {
-        return
-            ICurveV2Pool(CURVE_CVX_PCVX_POOL).exchange(
-                1,
-                0,
-                _amount,
-                _minAmountOut,
-                false,
-                _to
-            );
+        ILpxCvx(LPX_CVX).swap(
+            ILpxCvx.Token.pxCVX,
+            _amount,
+            _minAmountOut,
+            1,
+            0
+        );
+        uint256 _cvxBalance = IERC20(CVX_TOKEN).balanceOf(address(this));
+        IERC20(CVX_TOKEN).safeTransfer(_to, _cvxBalance);
+        return _cvxBalance;
     }
 
     /// @notice Retrieves a user's vault shares and withdraw all
@@ -263,7 +277,7 @@ contract PCvxZaps is UnionBase, ReentrancyGuard {
         _claimAndWithdraw(_amount);
         uint256 _cvxAmount = _claimAsCvx(
             IERC20(PXCVX_TOKEN).balanceOf(address(this)),
-            0,
+            1,
             address(this)
         );
         return

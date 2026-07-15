@@ -1,29 +1,38 @@
 {
   "component": "UsdtOFT",
   "main_contract": "UsdtOFT",
-  "source_file_count": 34,
+  "source_entry_count": 30,
+  "source_file_count": 30,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UsdtOFT\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Everdawn-Labs/usdt0-audit-reports/blob/main/TonTech/USDT0%20Audit%20Report.pdf",
-    "https://github.com/Everdawn-Labs/usdt0-audit-reports/blob/main/Zellic/usdt_native_mesh_1.1_upgrade_-_zellic_audit_report_draft-1.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x1f748c76de468e9d11bd340fa9d5cbadf315dfb0",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x77652d5aba086137b595875263fc200182919b92",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400607"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x811ed79db9d34e83bdb73df6c3e07961cfb0d5c0",
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xf10e161027410128e63e75d0200fb6d34b2db243",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400611"
     }
   ]
 }

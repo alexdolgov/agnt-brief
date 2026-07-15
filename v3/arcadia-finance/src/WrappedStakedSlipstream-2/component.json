@@ -1,26 +1,28 @@
 {
   "component": "WrappedStakedSlipstream-2",
   "main_contract": "WrappedStakedSlipstream",
+  "source_entry_count": 11,
   "source_file_count": 11,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WrappedStakedSlipstream-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xc4d3d804ed64c1f78097799208d46b1db4252749",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
+      "chain": "chain-130",
+      "chain_id": 130,
       "address": "0xd74339e0f10fce96894916b93e5cc7de89c98272",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391234"
     }
   ]
 }

@@ -1,0 +1,31 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "yield-basis",
+  "missing": [
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x1be14811a3a06f6af4fa64310a636e1df04c1c21",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x370a449febb9411c95bf897021377fe0b7d100c0",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x60043a545e22424e73a2debb98f8cd4361fe3da0",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0xd11b416573ebc59b6b2387da0d2c0d1b3b1f7a90",
+      "canonical_source_address": null
+    }
+  ]
+}

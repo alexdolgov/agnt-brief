@@ -1,7 +1,15 @@
 {
   "component": "TellorMaster",
   "main_contract": "TellorMaster",
+  "source_entry_count": 6,
   "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TellorMaster\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x88df592f8eb5d7bd38bfef7deb0fbc02cf3778a0",
       "is_proxy": true,
       "implementation_address": "0xd3b9a1dcabd16c482785fd4265cb4580b84cded7",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396168"
     }
   ]
 }

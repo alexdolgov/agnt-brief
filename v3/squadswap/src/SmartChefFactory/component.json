@@ -1,26 +1,28 @@
 {
   "component": "SmartChefFactory",
   "main_contract": "SmartChefFactory",
-  "source_file_count": 11,
-  "deployment_count": 2,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SmartChefFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x04e54d8d216d55bec7ae9fb528168582a79407f7",
+      "address": "0x6427824d446e5be25326ab1b88c8102f0d52ec16",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x28aa1b87a5d7f8cfa7f3cc3bf7bd42d5a32ce150",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399391"
     }
   ]
 }

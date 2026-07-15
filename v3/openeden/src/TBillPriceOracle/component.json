@@ -1,18 +1,38 @@
 {
   "component": "TBillPriceOracle",
   "main_contract": "TBillPriceOracle",
-  "source_file_count": 12,
-  "deployment_count": 1,
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TBillPriceOracle\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x3347d0c6e2bd23b1148fbb7fef5f0fed281612a8",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xce9a6626eb99eaea829d7fa613d5d0a2eae45f40",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397552"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc0952c8ba068c887b675b4182f3a65420d045f46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397556"
     }
   ]
 }

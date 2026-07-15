@@ -1,49 +1,115 @@
 # Agentic Audit Brief: OmniBTC
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 3 (0 matched; 3 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: OmniBTC (`omnibtc`)
 - Website: [https://www.omnibtc.finance](https://www.omnibtc.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:37.614Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
-- Chains: arbitrum, avalanche, base, bsc, ethereum, optimism, polygon
-- Contract surface: 50 unique implementations (50 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: ethereum
+- Contract surface: 30 unique implementations (30 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $1,856,125.15
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Lending. Structurally: 25 project-authored contract(s) across 1 chain(s); built on openzeppelin.
+No contract logic was present for OmniBTC in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 1 common project-authored base contract(s) (swapper). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 30 contracts are derived from known codebases. 30 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x01c49c...a8bddb`, chain 1)
+- UnnamedContract (`0x03af06...e287c7`, chain 1)
+- UnnamedContract (`0x091792...bb889c`, chain 1)
+- UnnamedContract (`0x1056a9...fb792e`, chain 1)
+- UnnamedContract (`0x1f33a9...fb386e`, chain 1)
+- UnnamedContract (`0x2967e7...9b3820`, chain 1)
+- UnnamedContract (`0x3462f4...d0895a`, chain 1)
+- UnnamedContract (`0x34bdbe...5657a1`, chain 1)
+- UnnamedContract (`0x361c07...0c9b49`, chain 1)
+- UnnamedContract (`0x4af9be...3e7449`, chain 1)
+- UnnamedContract (`0x66f440...e7d8e2`, chain 1)
+- UnnamedContract (`0x681bc5...982c24`, chain 1)
+- UnnamedContract (`0x718348...b46cc2`, chain 1)
+- UnnamedContract (`0x72335f...9f3cf2`, chain 1)
+- UnnamedContract (`0x76acfa...fc819c`, chain 1)
+- UnnamedContract (`0x7857e0...492096`, chain 1)
+- UnnamedContract (`0x7c9bcc...a23acc`, chain 1)
+- UnnamedContract (`0x9c2d75...5d3d14`, chain 1)
+- UnnamedContract (`0xa7487a...e2fb04`, chain 1)
+- UnnamedContract (`0xad8542...f0e8a9`, chain 1)
+- UnnamedContract (`0xb3a814...badb10`, chain 1)
+- UnnamedContract (`0xba661e...373ea5`, chain 1)
+- UnnamedContract (`0xbb6670...1d3e96`, chain 1)
+- UnnamedContract (`0xc8df06...0446ac`, chain 1)
+- UnnamedContract (`0xd4756d...f2ddb7`, chain 1)
+- UnnamedContract (`0xda7bc7...f5193b`, chain 1)
+- UnnamedContract (`0xdae4db...b3cead`, chain 1)
+- UnnamedContract (`0xe4d1eb...113d37`, chain 1)
+- UnnamedContract (`0xec098c...f04331`, chain 1)
+- UnnamedContract (`0xf5110f...63a99d`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 76; live-surface contracts included: 50 (10 live, 40 unknown).
-- Excluded by liveness: 26 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 30/206 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/10 (0.0%)
-- Deployed-live implementations: 10 of 50 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/10
-- Verified + Unaudited implementations: 10
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 30 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 30 of 30 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 40
-- Unique implementations: 50
-- Raw deployments: 50
-- Audits discovered: 4 (4 direct, 0 inherited from forked code)
+- Unverified implementations: 30
+- Unique implementations: 30
+- Raw deployments: 30
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 4 unknown
+- Latest audit: 2024-03 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 3 stale, 0 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
@@ -57,20 +123,9 @@ The protocol comprises 3 functional families. Its contracts share 1 common proje
 
 - None
 
-### ⚠️ Verified + Unaudited (10)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| CCTPFacet | unknown | arbitrum | n/a | [`0x452b5f...0d343c`](./contracts/arbitrum-42161/0x452b5f476f4fa706a80c513c52729e47150d343c/) | ⚠️ Unaudited |
-| CelerFacet | unknown | arbitrum | n/a | [`0x930b39...ee004e`](./contracts/arbitrum-42161/0x930b39ecea81678a5033aa3c9cc1f804ffee004e/) | ⚠️ Unaudited |
-| DiamondCutFacet | unknown | arbitrum | n/a | [`0xdae4db...b3cead`](./contracts/arbitrum-42161/0xdae4db475aca613a5e2dc5fc304da7e962b3cead/) | ⚠️ Unaudited |
-| DiamondLoupeFacet | unknown | arbitrum | n/a | [`0xe4d1eb...113d37`](./contracts/arbitrum-42161/0xe4d1ebf03742a8238b546980261507fde0113d37/) | ⚠️ Unaudited |
-| GenericSwapFacet | unknown | arbitrum | n/a | [`0x6aa49f...3338be`](./contracts/arbitrum-42161/0x6aa49fa53d372329de88160017f9ca7c5d3338be/) | ⚠️ Unaudited |
-| OwnershipFacet | unknown | arbitrum | n/a | [`0xad8542...f0e8a9`](./contracts/arbitrum-42161/0xad85421c47e9b830602deb83fcf149c2a1f0e8a9/) | ⚠️ Unaudited |
-| StargateFacet | unknown | arbitrum | n/a | [`0x2967e7...9b3820`](./contracts/arbitrum-42161/0x2967e7bb9daa5711ac332caf874bd47ef99b3820/) | ⚠️ Unaudited |
-| StargateFacet | unknown | arbitrum | n/a | [`0x96568b...1db303`](./contracts/arbitrum-42161/0x96568bf35abeeb6c39910f6672f8e3fbeb1db303/) | ⚠️ Unaudited |
-| SystemPortal | unknown | arbitrum | n/a | [`0x9ab575...4753a5`](./contracts/arbitrum-42161/0x9ab575ab5b2c58c07345ce2db9b36f0cf54753a5/) | ⚠️ Unaudited |
-| WithdrawFacet | operational_periphery | arbitrum | n/a | [`0xa7487a...e2fb04`](./contracts/arbitrum-42161/0xa7487a536968be0d563901aeb3fc07b099e2fb04/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,61 +139,74 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (40)
+### ❓ Unverified (30)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xaa8b23...05b6fc` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x233dde...a28975` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x051914...618f23` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xc3eb69...4798c3` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x689530...329dfa` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x01ebb2...eea607` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x041fb4...a97048` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x098d26...af9cb4` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x0de3b6...32f2b6` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x135557...9d3824` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x13ee92...674aaa` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x14bd8e...b2ebcd` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x1ec3c0...8f18e2` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x1ff10d...c8fa08` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x26bda6...7c107c` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x2c71e7...fbaf4e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x3177d2...b7a973` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x37c150...79bf49` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x4d6cab...a11ce5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x4ddc3b...dac84b` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x4fbc3b...ccfef8` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x53ecc0...4c7935` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x5af12a...2d4f4e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x66f440...e7d8e2` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x6a8181...2fe9be` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x6f5b4b...5d2bac` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x76376c...75de3c` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xa0bfaa...88b477` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xa4c264...d7d210` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xb647e0...ff39db` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xba661e...373ea5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xbca5b6...918fdf` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xd43e7d...1674a5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xd7026d...f18505` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xe37890...df8c39` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xe44341...7dd771` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xe5d17c...71288f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xe9c847...903c1c` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xebb6a1...2df737` | ❓ Unverified |
-| UnnamedContract | unknown | avalanche | n/a | `0xc44c29...f3c554` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390228 | `0x01c49c...a8bddb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390229 | `0x03af06...e287c7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390231 | `0x091792...bb889c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390239 | `0x1056a9...fb792e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390257 | `0x1f33a9...fb386e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390267 | `0x2967e7...9b3820` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390272 | `0x3462f4...d0895a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390273 | `0x34bdbe...5657a1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390276 | `0x361c07...0c9b49` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390289 | `0x4af9be...3e7449` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390306 | `0x66f440...e7d8e2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390308 | `0x681bc5...982c24` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390315 | `0x718348...b46cc2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390317 | `0x72335f...9f3cf2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390323 | `0x76acfa...fc819c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390324 | `0x7857e0...492096` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390327 | `0x7c9bcc...a23acc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390353 | `0x9c2d75...5d3d14` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390357 | `0xa7487a...e2fb04` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390365 | `0xad8542...f0e8a9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390369 | `0xb3a814...badb10` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390380 | `0xba661e...373ea5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390382 | `0xbb6670...1d3e96` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390391 | `0xc8df06...0446ac` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390398 | `0xd4756d...f2ddb7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390406 | `0xda7bc7...f5193b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390407 | `0xdae4db...b3cead` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390411 | `0xe4d1eb...113d37` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390415 | `0xec098c...f04331` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-390421 | `0xf5110f...63a99d` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Sui-AMM-swap_Contracts_Audit_Report.pdf](https://github.com/OmniBTC/Sui-AMM-swap/blob/main/Sui-AMM-swap_Contracts_Audit_Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [audit-reports (GitHub directory)](https://github.com/GEBcore/audit-reports) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Audit-Report-BEVM-v1.0.pdf](https://github.com/btclayer2/audit-reports/blob/main/Audit-Report-BEVM-v1.0.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [audit-reports.md](https://documents.geb.network/audit-reports.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Sui-AMM-swap_Contracts_Audit_Report.pdf](https://github.com/OmniBTC/Sui-AMM-swap/blob/main/Sui-AMM-swap_Contracts_Audit_Report.pdf) | unknown | Audit | 2022-11 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 9 | high |
+| [audit-reports (GitHub directory)](https://github.com/GEBcore/audit-reports) | unknown | Audit | 2024-03 | stale | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [Audit-Report-BEVM-v1.0.pdf](https://github.com/btclayer2/audit-reports/blob/main/Audit-Report-BEVM-v1.0.pdf) | unknown | Audit | 2024-03 | stale | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [20905] Sui-AMM-swap_Contracts_Audit_Report.pdf — no match: Extracted contract names from Appendix 1 - Files in Scope. Audit timeline ends 2022-11-30.
+- [20906] audit-reports (GitHub directory) — no match: The provided text is a GitHub repository README, not an audit report. It mentions a project name 'BEVM Chain' and an auditor 'SUPREMACY' with date 'Mar 2024', but no contracts or scope details are present.
+- [20907] Audit-Report-BEVM-v1.0.pdf — no match: The audit scope only lists a repository and commit hash, not specific contract files. The report mentions Rust language and blockchain type, but no Solidity or smart contract names are explicitly listed. The findings reference files like 'weights.rs' and 'lib.rs' but these are not smart contracts in the traditional sense. No contract names could be extracted.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Sui-AMM-swap_Contracts_Audit_Report.pdf | beneficiary | unmatched — not counted | — | listed in Appendix 1 - Files in Scope | no |
+| Sui-AMM-swap_Contracts_Audit_Report.pdf | interface | unmatched — not counted | — | listed in Appendix 1 - Files in Scope | no |
+| Sui-AMM-swap_Contracts_Audit_Report.pdf | math | unmatched — not counted | — | listed in Appendix 1 - Files in Scope | no |
+| Sui-AMM-swap_Contracts_Audit_Report.pdf | comparator | unmatched — not counted | — | listed in Appendix 1 - Files in Scope | no |
+| Sui-AMM-swap_Contracts_Audit_Report.pdf | event | unmatched — not counted | — | listed in Appendix 1 - Files in Scope | no |
+| Sui-AMM-swap_Contracts_Audit_Report.pdf | controller | unmatched — not counted | — | listed in Appendix 1 - Files in Scope | no |
+| Sui-AMM-swap_Contracts_Audit_Report.pdf | implements | unmatched — not counted | — | listed in Appendix 1 - Files in Scope | no |
+| Sui-AMM-swap_Contracts_Audit_Report.pdf | faucet | unmatched — not counted | — | listed in Appendix 1 - Files in Scope | no |
+| Sui-AMM-swap_Contracts_Audit_Report.pdf | coins | unmatched — not counted | — | listed in Appendix 1 - Files in Scope | no |
 
 ## Coverage Gaps
 
@@ -153,15 +221,17 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 50 |
+| needs_review | 30 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 9 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1, low=2
 - Match method counts: n/a
 
 Zero-match audit list:
@@ -169,6 +239,5 @@ Zero-match audit list:
 - [20905] Sui-AMM-swap_Contracts_Audit_Report.pdf
 - [20906] audit-reports (GitHub directory)
 - [20907] Audit-Report-BEVM-v1.0.pdf
-- [20908] audit-reports.md
 
 Fork inheritance lineage and inherited audits are included when available.

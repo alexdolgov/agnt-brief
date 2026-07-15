@@ -13,6 +13,8 @@ import { ISwapRouterV2 } from "src/interfaces/swapper/ISwapRouterV2.sol";
  * @notice Extends the IAutopilotRouterBase with specific flows to save gas
  */
 interface IAutopilotRouter is IAutopilotRouterBase {
+    error PreviewRedeemWithRoutesResult(uint256);
+
     /**
      * ***************************   Deposit ********************************
      */
@@ -104,6 +106,19 @@ interface IAutopilotRouter is IAutopilotRouterBase {
         address to,
         uint256 minAmountOut
     ) external payable returns (uint256 amountOut);
+
+    /**
+     * @notice previewRedeem `shares` shares from a AutopoolETH with a custom route
+     * @param vault The AutopoolETH to redeem shares from.
+     * @param shares The amount of shares to redeem from vault.
+     * @param customRoute The custom route to use for the swap.
+     * @dev throws PreviewRedeemWithRoutesResult on all executions
+     */
+    function previewRedeemWithRoutes(
+        IAutopool vault,
+        uint256 shares,
+        ISwapRouterV2.UserSwapData[] calldata customRoute
+    ) external payable;
 
     /**
      * @notice redeem `shares` shares from a AutopoolETH with a custom route
@@ -200,4 +215,18 @@ interface IAutopilotRouter is IAutopilotRouterBase {
      * @param duration Number of cycles to lock for
      */
     function lockTokeFor(uint256 amount, uint256 duration) external payable;
+
+    // /**
+    //  * @notice Redeem prorata from a AutopoolETH.
+    //  * @param vault The AutopoolETH to redeem shares from.
+    //  * @param to The destination of assets.
+    //  * @param shares The amount of shares to redeem from vault.
+    //  * @return amountOut the amount of assets received by `to`.
+    //  */
+    // function redeemProrata(
+    //     IAutopool vault,
+    //     address to,
+    //     uint256 shares,
+    //     uint256 minAmountOut
+    // ) external payable returns (uint256 amountOut);
 }

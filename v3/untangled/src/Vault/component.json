@@ -1,34 +1,38 @@
 {
   "component": "Vault",
   "main_contract": "Vault",
-  "source_file_count": 22,
-  "deployment_count": 3,
+  "source_entry_count": 19,
+  "source_file_count": 19,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Vault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x02c25ac43ae068d5808b726af720f47b87b38a48",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
       "address": "0x3f48e00cfeba3e713db8bc3e28d634578c553e32",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400552"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xf532b78ec895183120aa18e5f6679e13493d4c0d",
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x2a68c98bd43aa24331396f29166aef2bfd51343f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400555"
     }
   ]
 }

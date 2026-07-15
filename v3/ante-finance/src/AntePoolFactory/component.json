@@ -1,10 +1,23 @@
 {
   "component": "AntePoolFactory",
   "main_contract": "AntePoolFactory",
+  "source_entry_count": 10,
   "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AntePoolFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/antefinance/ante-v0-core/blob/v0.5/audit/2022-06-22%20Ante%20v0.5%20Trail%20of%20Bits%20Fix%20Review.pdf",
+    "https://github.com/antefinance/ante-v0-core/blob/v0.5/audit/2022-06-22%20Ante%20v0.5%20Trail%20of%20Bits%20Security%20Assessment.pdf",
+    "https://github.com/antefinance/ante-v05-core/blob/v0.5/audit/2022-05-22%20Ante%20v0.5%20Zellic%20Audit%20Report.pdf",
+    "https://immunefi.com/bug-bounty/antefinance/information"
+  ],
   "addresses": [
     {
       "chain": "avalanche",
@@ -12,7 +25,9 @@
       "address": "0x18ab6357f673696375018f006b86fe44f195de1f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402261"
     }
   ]
 }

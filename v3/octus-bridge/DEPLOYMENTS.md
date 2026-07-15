@@ -1,7 +1,6 @@
 # octus-bridge — deployments
 
-1 verified deployment(s) across 1 component(s).
+0 verified deployment(s) across 0 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| polygon | `0x54c55369a6900731d22eacb0df7c0253cf19dfff` | ERC1967Upgrade | proxy | live | no |

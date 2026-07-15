@@ -1,94 +1,152 @@
 # Agentic Audit Brief: Velora
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Velora (`velora`)
 - Website: [https://app.velora.xyz](https://app.velora.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:10.284Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
-- Chains: avalanche, base, bsc, ethereum, optimism, polygon
-- Contract surface: 27 unique implementations (62 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: arbitrum, avalanche, base, bsc, ethereum, gnosis, optimism, polygon, unichain
+- Contract surface: 41 unique implementations (41 raw deployments)
+- Coverage basis: 0/9 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $226,515.14
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-DEX Aggregator. Structurally: 60 project-authored contract(s) across 6 chain(s); 12 ERC20 tokens; role-gated via AccessControl; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Velora. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 6 functional families. Its contracts share 34 common project-authored base contract(s) (eip712, dystopiauniswapv2fork, wethprovider). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 9 contract row(s) across arbitrum, avalanche, base, bsc, ethereum, gnosis, optimism, polygon, unichain. Structural roles: 9 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 9
+- Structural roles: core (9)
+- Contract kinds: contract (9)
+- Detected standards: ownable (2), erc20 (1), erc20permit (1), pausable (1)
+- Frameworks: openzeppelin (7), solady (2), permit2 (1)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 41 contracts are derived from known codebases. 41 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x000000...33c96d`, chain 10)
+- UnnamedContract (`0x007000...0010cc`, chain 10)
+- UnnamedContract (`0x0927fd...849f6d`, chain 10)
+- UnnamedContract (`0x0a0d53...406742`, chain 10)
+- UnnamedContract (`0x6a000f...001068`, chain 10)
+- UnnamedContract (`0x000000...33c96d`, chain 56)
+- UnnamedContract (`0x007000...0010cc`, chain 56)
+- UnnamedContract (`0x0a0d53...406742`, chain 56)
+- UnnamedContract (`0x6a000f...001068`, chain 56)
+- UnnamedContract (`0x007000...0010cc`, chain 100)
+- UnnamedContract (`0x6a000f...001068`, chain 100)
+- UnnamedContract (`0x92ead5...7ca241`, chain 100)
+- UnnamedContract (`0x000000...33c96d`, chain 130)
+- UnnamedContract (`0x007000...0010cc`, chain 130)
+- UnnamedContract (`0x0a0d53...406742`, chain 130)
+- UnnamedContract (`0x6a000f...001068`, chain 130)
+- UnnamedContract (`0x92ead5...7ca241`, chain 130)
+- UnnamedContract (`0x000000...33c96d`, chain 137)
+- UnnamedContract (`0x007000...0010cc`, chain 137)
+- UnnamedContract (`0x0a0d53...406742`, chain 137)
+- UnnamedContract (`0x6a000f...001068`, chain 137)
+- UnnamedContract (`0x000000...33c96d`, chain 8453)
+- UnnamedContract (`0x007000...0010cc`, chain 8453)
+- UnnamedContract (`0x0a0d53...406742`, chain 8453)
+- UnnamedContract (`0x6a000f...001068`, chain 8453)
+- UnnamedContract (`0x000000...33c96d`, chain 42161)
+- UnnamedContract (`0x007000...0010cc`, chain 42161)
+- UnnamedContract (`0x0927fd...849f6d`, chain 42161)
+- UnnamedContract (`0x0a0d53...406742`, chain 42161)
+- UnnamedContract (`0x6a000f...001068`, chain 42161)
+- UnnamedContract (`0x007000...0010cc`, chain 43114)
+- UnnamedContract (`0x6a000f...001068`, chain 43114)
+- Adapter (`0x000000...33c96d`, chain 1)
+- AugustusFeeVault (`0x007000...0010cc`, chain 1)
+- AugustusRFQ (`0xe92b58...f55a06`, chain 1)
+- AugustusRFQ (`0x8dcdfe...0288bb`, chain 56)
+- AugustusRFQ (`0xf3cd47...09a043`, chain 137)
+- AugustusRFQ (`0xa003df...ac5eed`, chain 8453)
+- AugustusRFQ (`0x34302c...9df51f`, chain 43114)
+- AugustusV6 (`0x6a000f...001068`, chain 1)
+- DeltaWrappedNative (`0x0a0d53...406742`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 192; live-surface contracts included: 62 (60 live, 2 unknown).
-- Excluded by liveness: 130 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 9; live-surface contracts included: 9 (9 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 41/41 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 1/25 (4.0%)
-- Deployed-live implementations: 25 of 27 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 1/25
-- Verified + Unaudited implementations: 24
+- Coverage of address-book-owned deployed-live implementations: 0/9 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 41 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Deployed-live implementations: 41 of 41 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/9
+- Verified + Unaudited implementations: 9
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 27
-- Raw deployments: 62
+- Unverified implementations: 32
+- Unique implementations: 41
+- Raw deployments: 41
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 1
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-01 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 4.0% | 2021-01 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AugustusSwapper | adapter | base | n/a | 4 deployments: polygon `0x64f72f...83aafc`; polygon `0xbd0950...6dac33`; base [`0x59c7c8...a08a52`](./contracts/base-8453/0x59c7c832e96d2568bea6db468c1aadcbbda08a52/); base `0x793a0b...db9443` | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (24)
+### ⚠️ Verified + Unaudited (9)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Adapter03 | unknown | ethereum | n/a | 4 deployments: ethereum [`0x43dad5...c8cca2`](./contracts/ethereum-1/0x43dad56947b20d5808fdb5d0913639cdadc8cca2/); ethereum `0x793592...33ee98`; ethereum `0xe59936...4b3879`; ethereum `0xe609ae...24818a` | ⚠️ Unaudited |
-| AugustusFeeVault | core_logic | ethereum | n/a | [`0x007000...0010cc`](./contracts/ethereum-1/0x00700052c0608f670705380a4900e0a8080010cc/) | ⚠️ Unaudited |
-| AugustusRFQ | unknown | avalanche | n/a | 5 deployments: ethereum `0xe92b58...f55a06`; bsc `0x8dcdfe...0288bb`; polygon `0xf3cd47...09a043`; base `0xa003df...ac5eed`; avalanche [`0x34302c...9df51f`](./contracts/avalanche-43114/0x34302c4267d0da0a8c65510282cc22e9e39df51f/) | ⚠️ Unaudited |
-| AugustusRFQRouter | unknown | ethereum | n/a | [`0x64f72f...83aafc`](./contracts/ethereum-1/0x64f72fcfd9c624e3e471223f043060981c83aafc/) | ⚠️ Unaudited |
-| AugustusV6 | unknown | ethereum | n/a | [`0x6a000f...001068`](./contracts/ethereum-1/0x6a000f20005980200259b80c5102003040001068/) | ⚠️ Unaudited |
-| AvalancheAdapter01 | unknown | avalanche | n/a | 4 deployments: avalanche [`0x5b9909...87b340`](./contracts/avalanche-43114/0x5b99094c3c2129f17b78ce5ebd1cd8adb887b340/); avalanche `0x5f7cf1...8c1bb9`; avalanche `0x6e8b66...bfc82d`; avalanche `0xb41ec6...4f19e7` | ⚠️ Unaudited |
-| AvalancheBuyAdapter | unknown | avalanche | n/a | [`0xe92b58...f55a06`](./contracts/avalanche-43114/0xe92b586627cca7a83dc919cc7127196d70f55a06/) | ⚠️ Unaudited |
-| BscAdapter01 | unknown | bsc | n/a | 2 deployments: bsc [`0x27eb32...4611b9`](./contracts/bsc-56/0x27eb327b7255a2bf666ebb4d60ab4752da4611b9/); bsc `0xc9229e...575ec5` | ⚠️ Unaudited |
-| BscBuyAdapter | unknown | bsc | n/a | [`0xf52523...48c37a`](./contracts/bsc-56/0xf52523b9d788f4e2dd256dc5077879af0448c37a/) | ⚠️ Unaudited |
-| BuyAdapter | unknown | ethereum | n/a | 3 deployments: ethereum [`0x737e64...f74383`](./contracts/ethereum-1/0x737e642eec6e5bd675022adc6d726eb19ff74383/); ethereum `0x760870...b1fdc1`; ethereum `0xe56823...24bd3a` | ⚠️ Unaudited |
-| CumulativeMerkleDistributor | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x2cf552...b36892`](./contracts/ethereum-1/0x2cf552a87adae03b1f53a760f81c0c0b5fb36892/); optimism `0x7e202c...d1cd4a` | ⚠️ Unaudited |
-| DeltaWrappedNative | unknown | ethereum | n/a | [`0x0a0d53...406742`](./contracts/ethereum-1/0x0a0d53b6684c7b32b4cbef5fe8483bfcc8406742/) | ⚠️ Unaudited |
-| FeeClaimer | operational_periphery | bsc | n/a | 8 deployments: ethereum `0xef1310...6952f7`; bsc [`0x2df174...b89347`](./contracts/bsc-56/0x2df17455b96dde3618fd6b1c3a9aa06d6ab89347/); polygon `0x8b5cf4...96c060`; polygon `0x8dcdfe...0288bb`; polygon `0xabb580...0b4fc3`; base `0x6c33c7...f1525b`; base `0x9aab4b...efb3c7`; avalanche `0xbfcd68...a29e67` | ⚠️ Unaudited |
-| L2StandardERC20 | token | optimism | n/a | [`0xd3594e...d49d48`](./contracts/optimism-10/0xd3594e879b358f430e20f82bea61e83562d49d48/) | ⚠️ Unaudited |
-| MerkleRedeem | operational_periphery | optimism | n/a | [`0xd57fd7...c21ce6`](./contracts/optimism-10/0xd57fd755f53666ce2d3ed8c862a8d06e38c21ce6/) | ⚠️ Unaudited |
-| PolygonAdapter02 | unknown | polygon | n/a | 6 deployments: polygon [`0x475928...ac087d`](./contracts/polygon-137/0x475928fe50a9e9adb706d6f5624fb97ee2ac087d/); polygon `0x74ef12...5d91fa`; polygon `0x97768f...ff0a93`; polygon `0xad1732...611be6`; polygon `0xb5e59e...3bbac9`; polygon `0xc69849...543299` | ⚠️ Unaudited |
-| PolygonBuyAdapter | unknown | polygon | n/a | 4 deployments: polygon [`0x40e11a...2f58a0`](./contracts/polygon-137/0x40e11ae88a9402a34208d05bfb7e88171d2f58a0/); polygon `0x9aa1b1...ee3ac3`; polygon `0xd7d3e2...446d8c`; polygon `0xdc514c...d00174` | ⚠️ Unaudited |
-| PreSignatureModule | unknown | ethereum | n/a | [`0x000000...33c96d`](./contracts/ethereum-1/0x0000000000bbf5c5fd284e657f01bd000933c96d/) | ⚠️ Unaudited |
-| PSP | unknown | ethereum | n/a | [`0xcafe00...7f3de5`](./contracts/ethereum-1/0xcafe001067cdef266afb7eb5a286dcfd277f3de5/) | ⚠️ Unaudited |
-| PSPStakingMigratorV1 | periphery | ethereum | n/a | [`0x81df86...18eed3`](./contracts/ethereum-1/0x81df863e89429b0d4230a2a922de4f37f718eed3/) | ⚠️ Unaudited |
-| sePSP | unknown | ethereum | n/a | 2 deployments: ethereum [`0x716fbc...c5ffab`](./contracts/ethereum-1/0x716fbc68e0c761684d9280484243ff094cc5ffab/); optimism `0x8c934b...348615` | ⚠️ Unaudited |
-| sePSP2 | unknown | optimism | n/a | 2 deployments: ethereum `0x593f39...03c485`; optimism [`0x26ee65...4fb2c8`](./contracts/optimism-10/0x26ee65874f5dbefa629eb103e7bbb2deaf4fb2c8/) | ⚠️ Unaudited |
-| sePSPStakingMigratorV1 | periphery | optimism | n/a | [`0x18e1a8...f8c583`](./contracts/optimism-10/0x18e1a8431ce39cbfe95958207da2d68a7ef8c583/) | ⚠️ Unaudited |
-| WeightedPool | core_logic | optimism | n/a | 2 deployments: ethereum `0xcb0e14...e5061d`; optimism [`0x11f0b5...c68440`](./contracts/optimism-10/0x11f0b5cca01b0f0a9fe6265ad6e8ee3419c68440/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AugustusFeeVault | core_logic | project_anchor | own_supporting | 0 | ethereum | unit-395680 | `0x007000...0010cc` | ⚠️ Unaudited |
+| AugustusRFQ | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395683 | `0xe92b58...f55a06` | ⚠️ Unaudited |
+| AugustusRFQ | unknown | project_anchor | own_supporting | 0 | bsc | unit-395714 | `0x8dcdfe...0288bb` | ⚠️ Unaudited |
+| AugustusRFQ | unknown | project_anchor | own_supporting | 0 | polygon | unit-395701 | `0xf3cd47...09a043` | ⚠️ Unaudited |
+| AugustusRFQ | unknown | project_anchor | own_supporting | 0 | base | unit-395719 | `0xa003df...ac5eed` | ⚠️ Unaudited |
+| AugustusRFQ | unknown | project_anchor | own_supporting | 0 | avalanche | unit-395708 | `0x34302c...9df51f` | ⚠️ Unaudited |
+| AugustusV6 | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395682 | `0x6a000f...001068` | ⚠️ Unaudited |
+| DeltaWrappedNative | unknown | project_anchor | own_supporting | 0 | ethereum | unit-395681 | `0x0a0d53...406742` | ⚠️ Unaudited |
+| PreSignatureModule | unknown | project_anchor | own_supporting | 1 | ethereum | unit-395720 | `0x000000...33c96d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -102,43 +160,109 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (32)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x358211...12336f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe46be3...28e053` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395684 | `0x000000...33c96d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395685 | `0x007000...0010cc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395686 | `0x0927fd...849f6d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395687 | `0x0a0d53...406742` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-395688 | `0x6a000f...001068` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-395710 | `0x000000...33c96d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-395711 | `0x007000...0010cc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-395712 | `0x0a0d53...406742` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-395713 | `0x6a000f...001068` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-395689 | `0x007000...0010cc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-395690 | `0x6a000f...001068` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | gnosis | unit-395691 | `0x92ead5...7ca241` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | unichain | unit-395692 | `0x000000...33c96d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | unichain | unit-395693 | `0x007000...0010cc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | unichain | unit-395694 | `0x0a0d53...406742` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | unichain | unit-395695 | `0x6a000f...001068` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | unichain | unit-395696 | `0x92ead5...7ca241` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-395697 | `0x000000...33c96d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-395698 | `0x007000...0010cc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-395699 | `0x0a0d53...406742` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-395700 | `0x6a000f...001068` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395715 | `0x000000...33c96d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395716 | `0x007000...0010cc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395717 | `0x0a0d53...406742` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-395718 | `0x6a000f...001068` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395702 | `0x000000...33c96d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395703 | `0x007000...0010cc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395704 | `0x0927fd...849f6d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395705 | `0x0a0d53...406742` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-395706 | `0x6a000f...001068` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-395707 | `0x007000...0010cc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-395709 | `0x6a000f...001068` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Audit Report - ParaSwap [20.01.2021].pdf](https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20ParaSwap%20%5B20.01.2021%5D.pdf) | unknown | Audit | 2021-01 | stale | Direct | contract_name | 1 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Audit Report - ParaSwap [20.01.2021].pdf](https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20ParaSwap%20%5B20.01.2021%5D.pdf) | unknown | Audit | 2021-01 | stale | Direct | n/a | no match | 0 | 0 | 0 | 7 | n/a |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [14112] Audit Report - ParaSwap [20.01.2021].pdf — no match: No reason recorded
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Audit Report - ParaSwap [20.01.2021].pdf | AugustusSwapper | unmatched — not counted | — | — | no |
+| Audit Report - ParaSwap [20.01.2021].pdf | Partner | unmatched — not counted | — | — | no |
+| Audit Report - ParaSwap [20.01.2021].pdf | PartnerRegistry | unmatched — not counted | — | — | no |
+| Audit Report - ParaSwap [20.01.2021].pdf | TokenTransferProxy | unmatched — not counted | — | — | no |
+| Audit Report - ParaSwap [20.01.2021].pdf | UniswapV3Lib | unmatched — not counted | — | — | no |
+| Audit Report - ParaSwap [20.01.2021].pdf | UniswapV3Router | unmatched — not counted | — | — | no |
+| Audit Report - ParaSwap [20.01.2021].pdf | Utils | unmatched — not counted | — | — | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x007000...0010cc` | AugustusFeeVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xe92b58...f55a06` | AugustusRFQ | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x8dcdfe...0288bb` | AugustusRFQ | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0xf3cd47...09a043` | AugustusRFQ | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xa003df...ac5eed` | AugustusRFQ | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | `0x34302c...9df51f` | AugustusRFQ | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x6a000f...001068` | AugustusV6 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0a0d53...406742` | DeltaWrappedNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x000000...33c96d` | PreSignatureModule | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 9 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 27 |
+| needs_review | 32 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 7 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
-- Match method counts: contract_name=1
+- Match method counts: n/a
+
+Zero-match audit list:
+
+- [14112] Audit Report - ParaSwap [20.01.2021].pdf
 
 Fork inheritance lineage and inherited audits are included when available.

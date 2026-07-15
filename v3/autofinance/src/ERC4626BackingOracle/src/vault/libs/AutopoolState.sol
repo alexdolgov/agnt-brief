@@ -62,6 +62,12 @@ struct AutopoolState {
     /// @notice Asset tracking for idle and debt values
     /// @dev Exposed via `getAssetBreakdown()`
     IAutopool.AssetBreakdown assetBreakdown;
+    /// @notice Destinations that we allow a direct underlying deposit to
+    /// @dev Exposed via `getAllowedDestinationDirectDeposits()`
+    EnumerableSet.AddressSet allowedDirectDeposits;
+    /// @notice Destinations that we allow a direct underlying withdraw from
+    /// @dev Exposed via `getAllowedDestinationDirectWithdrawals()`
+    EnumerableSet.AddressSet allowedDirectWithdrawals;
 }
 
 struct ProcessRebalanceParams {

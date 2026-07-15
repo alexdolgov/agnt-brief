@@ -1,67 +1,6 @@
 # aegis — deployments
 
-61 verified deployment(s) across 30 component(s).
+0 verified deployment(s) across 0 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| bsc | `0x02bf8f0e046f471709e578b1e633077096ce65cf` | AegisMinting | impl | live | no |
-| bsc | `0x24db057b19241eefb9b522e8627c293ed8f93af2` | BeaconProxy | proxy | live | no |
-| bsc | `0x29dd50b6637b1b117d678c20f01239e7091a9b63` | sYUSD-3 | impl | inactive | no |
-| bsc | `0x39df2d423df0bddba28f23c15c65a86554a2e141` | AegisMinting | impl | inactive | no |
-| bsc | `0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a` | FeedRegistry | impl | inactive | no |
-| bsc | `0x42940c329e2a4d0bd0e828b7815c90111065415e` | sYUSD-4 | impl | inactive | no |
-| bsc | `0x539e46827c37a3ef11c7ce521cc56b4d59e602e3` | OFTCore | impl | live | no |
-| bsc | `0x588fd039cadc77ec85d25a072582624ca8d8cf15` | AegisOracle-2 | impl | inactive | no |
-| bsc | `0x73833881e17d31df0ef7f17da0fd0a055a976bb7` | sYUSD | impl | inactive | no |
-| bsc | `0x7c3f89bfd3f293f603e429ed127d30e7f4579134` | AegisMinting | impl | inactive | no |
-| bsc | `0x7de45013e374bb6dcb1364a233bbe9d2ba89bbb5` | sYUSD-5 | impl | inactive | no |
-| bsc | `0x85636bf94ea95c32e945b0db30a7cdc614f2691e` | OFTCore-5 | impl | inactive | no |
-| bsc | `0x93efaa2d2f6c3600d794233ed7e751d086e5b75e` | AegisRewards-2 | impl | live | no |
-| bsc | `0xab3dbcd9b096c3ff76275038bf58eac10d22c61f` | JUSD-3 | impl | inactive | no |
-| bsc | `0xb9f1e8417abaedf6fd838212267ca8260c4ca9da` | AegisConfig-2 | impl | live | no |
-| bsc | `0xc48ea88272e723366e124d9fd2607216969382ec` | sYUSD-2 | impl | inactive | no |
-| bsc | `0xd2188c292f294e5de506594a82a2fc683f27d08e` | OFTCore | impl | inactive | no |
-| bsc | `0xd859e938258a62d684235f617d551149bf21debd` | AegisRewardsV2 | impl | inactive | no |
-| bsc | `0xe13d566be15893cf9e8e7ec9f660aebd15faa55d` | sYUSD-6 | impl | inactive | no |
-| bsc | `0xf07781182b47e728b040f9e35321260e359ff9f7` | sYUSD-2 | impl | inactive | no |
-| ethereum | `0x03a346a9ae09e0e8bf38de1c49be45575393dea7` | AegisMinting | impl | inactive | no |
-| ethereum | `0x180da28d5e9e9827a3d43a0c94e7a3ee684e1997` | sYUSD | impl | inactive | no |
-| ethereum | `0x1a7cde558d318052add800ca30dc7464920b41fc` | OFTCore-2 | impl | live | no |
-| ethereum | `0x22daceed48d7ee53f964a5aa3bdb6e4d3d688d9a` | sJUSDSilo | impl | live | no |
-| ethereum | `0x2332e3fdecb44695bad61428cacbd717c8646cf9` | JUSD | impl | inactive | no |
-| ethereum | `0x29dd50b6637b1b117d678c20f01239e7091a9b63` | sYUSD | impl | inactive | no |
-| ethereum | `0x2b4ad1d479561064cd1c311004aca93d15041aec` | AegisOracle | impl | live | no |
-| ethereum | `0x2d701a7b84b75746404ed27662d897bf6c5ea7f6` | BeaconProxy | proxy | live | no |
-| ethereum | `0x4274cd7277c7bb0806bd5fe84b9adae466a8da0a` | YUSD | impl | live | no |
-| ethereum | `0x4aa42b17bada0b24f0a6ff13c4e53605cced735e` | sYUSD | impl | inactive | no |
-| ethereum | `0x4aa8949bb47da4b4f27345404ba1e5e7ea90bdb3` | BeaconProxy | proxy | live | no |
-| ethereum | `0x4ccd1aa42259bfebc314f8454a1090538d947e81` | BeaconProxy | impl | live | no |
-| ethereum | `0x616e4d7d31a978e624f79f1a7e20ee37042ab792` | BeaconProxy | proxy | live | no |
-| ethereum | `0x6647c5936e30d8d9e0ede2508c3513eaef6758b7` | AegisRewardsV2JUSD | impl | inactive | no |
-| ethereum | `0x70d4c4f48f230037a9e154470ece79db85a11f52` | OFTCore-3 | impl | inactive | no |
-| ethereum | `0x7438a699e597794392376889bc7dd3dd1ad7273e` | AegisMintingJUSD | impl | inactive | no |
-| ethereum | `0x7552d1b6463f76ddf6dfd919970753bd689b82a4` | OFTCore | impl | inactive | no |
-| ethereum | `0x7c94288e79f6de6e9baf2e5029cb94cff032fd69` | sYUSD | impl | inactive | no |
-| ethereum | `0x8340f5af4d2eebb402102143e7267aca7112eebd` | AegisRewardsV2 | impl | inactive | no |
-| ethereum | `0x8adcfaf1b64cc514524b80565bcc732273ddeafd` | AegisRewards | impl | live | no |
-| ethereum | `0x8edd6a7c9b635490f4a94e0cb85d63d6a084ce0f` | OFTCore-4 | impl | inactive | no |
-| ethereum | `0x90ad8ff7b91bc705d50e5d92bee603b5620b6f77` | AegisMinting | impl | inactive | no |
-| ethereum | `0x90ccf2c4b3dee7aeac9af5950a7c60f89af1db00` | AegisConfig | impl | live | no |
-| ethereum | `0x91de8954bce3f2238ad1f0628879e507adb23a4c` | BeaconProxy | impl | inactive | no |
-| ethereum | `0x9e27075fbbfd7276e4fc105447049f761316b87f` | AegisMinting | impl | inactive | no |
-| ethereum | `0xa30644ca67e0a93805c443df4a6e1856d8bd815b` | AegisMinting-2 | impl | live | no |
-| ethereum | `0xa7f1de59ab1bf5fdc95229dd43d5ea45ad152474` | BeaconProxy | impl | live | no |
-| ethereum | `0xad8fe6475776e7dc312c731ed93210cb66b5cda5` | AegisMinting | impl | inactive | no |
-| ethereum | `0xaf12b0ae5a72d7b8a8ec675f3e76e2db56143565` | OFTCore | impl | live | no |
-| ethereum | `0xb0c63bb1667b6e9215aee562af2957739b2676fe` | sYUSD | impl | inactive | no |
-| ethereum | `0xb341d7a48eea1cef41a1ed2a9d2caa9d15153c94` | AegisMinting | impl | inactive | no |
-| ethereum | `0xbb0f32d176590faedc7bc552b7ead7a86809b520` | AegisMintingJUSD | impl | live | no |
-| ethereum | `0xc4df68e592245ca5202fe8b7c438d2b799820fc2` | AegisMinting | impl | live | no |
-| ethereum | `0xc86168d2424d28942ee0866f043c1206bc9e4900` | JUSD-2 | impl | inactive | no |
-| ethereum | `0xd2188c292f294e5de506594a82a2fc683f27d08e` | sYUSD | impl | inactive | no |
-| ethereum | `0xe91710246678f1fe8119c6de67a71e2012f875c2` | AegisMinting | impl | inactive | no |
-| ethereum | `0xec843093ce8e3d04b44263d18595a416c632408a` | BeaconProxy | impl | inactive | no |
-| ethereum | `0xf07781182b47e728b040f9e35321260e359ff9f7` | sYUSD | impl | inactive | no |
-| ethereum | `0xf21a16af7add0f958a1e15aadd64dd7c4c888a5d` | AegisMintingJUSD | impl | inactive | no |
-| ethereum | `0xfa449dc17194fdaca1dd2237c828938f1917e0e7` | AegisOracleJUSD | impl | live | no |
-| ethereum | `0xfe0ccc9942e98c963fe6b4e5194eb6e3baa4cb64` | BeaconProxy | proxy | live | no |

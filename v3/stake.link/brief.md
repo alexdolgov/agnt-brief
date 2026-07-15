@@ -1,130 +1,163 @@
 # Agentic Audit Brief: stake.link
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 40 across 15 audit(s)
+- Eligible audit results: 20 (15 matched; 5 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: stake.link (`stake.link`)
 - Website: [https://stake.link](https://stake.link)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:56.735Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: arbitrum, base, ethereum, polygon
-- Contract surface: 82 unique implementations (185 raw deployments)
+- Contract surface: 37 unique implementations (39 raw deployments)
+- Coverage basis: 17/32 confirmed own live verified implementations (53.1%); conservative 53.1% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $62,170,842.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Indexes. Structurally: 44 project-authored contract(s) across 3 chain(s); 10 ERC20 tokens, 1 ERC721 NFT; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for stake.link. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 8 functional families. Its contracts share 9 common project-authored base contract(s) (strategy, vaultcontrollerstrategy, erc677). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 51 contract row(s) across arbitrum, base, ethereum, polygon. Structural roles: 28 unclassified, 12 core, 11 supporting. 5 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 51
+- Structural roles: unclassified (28), core (12), supporting (11)
+- Contract kinds: contract (51)
+- Detected standards: ownable (14), erc20 (11), erc165 (7), erc1967proxy (5), pausable (3), accesscontrol (2)
+- Frameworks: openzeppelin (19), chainlink (5), openzeppelin-upgradeable (4)
+- Upgradeable-pattern rows: 5
+
+## Fork Analysis
+
+0 of 21 contracts are derived from known codebases. 21 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x031de5...91db9a`, chain 1)
+- UnnamedContract (`0x455e53...ffc3f6`, chain 1)
+- UnnamedContract (`0x514910...f986ca`, chain 1)
+- BurnMintERC20 (`0x1d0347...b4b2ae`, chain 137)
+- BurnMintERC677 (`0x3106e2...4972fb`, chain 42161)
+- BurnMintERC677 (`0xdfea35...d0eec0`, chain 42161)
+- ERC1967Proxy (`0x0b2ef9...48ca4d`, chain 1)
+- FactoryBurnMintERC20 (`0xc271a1...c20a9c`, chain 137)
+- FactoryBurnMintERC20 (`0xe5b64a...ce26e6`, chain 8453)
+- FactoryBurnMintERC20 (`0xf2f790...771297`, chain 8453)
+- GovernanceTimelock (`0xb72d8f...78349f`, chain 1)
+- RebaseController (`0x1711e9...bdbec4`, chain 1)
+- RebaseController (`0x5537f6...5ddb90`, chain 1)
+- RebaseController (`0xda669f...5b1c1f`, chain 1)
+- RewardsPoolWSD (`0x4a18ae...490342`, chain 1)
+- RewardsPoolWSD (`0x77f555...6b5a56`, chain 1)
+- RewardsPoolWSD (`0x8753c0...f8cc72`, chain 1)
+- StakingAllowance (`0xa95c5e...a28c23`, chain 1)
+- WrappedSDToken (`0x2091d8...9555e6`, chain 1)
+- WrappedSDToken (`0x43ff5f...f30a48`, chain 1)
+- WrappedSDToken (`0x911d86...c803da`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 207; live-surface contracts included: 178 (152 live, 26 unknown).
-- Excluded by liveness: 29 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 51; live-surface contracts included: 51 (34 live, 17 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 35/48 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 33/58 (56.9%)
-- Deployed-live implementations: 58 of 82 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 33/58
-- Verified + Unaudited implementations: 25
+- Coverage of address-book-owned deployed-live implementations: 17/32 (53.1%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 35 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (1 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 18
+- Deployed-live implementations: 35 of 37 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 17/32
+- Verified + Unaudited implementations: 15
 - Verified by bytecode match: 0
-- Unverified implementations: 24
-- Unique implementations: 82
-- Raw deployments: 185
+- Unverified implementations: 3
+- Unique implementations: 37
+- Raw deployments: 39
 - Audits discovered: 20 (20 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 18
+- Scoreable audits (matched contracts): 15
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-03 (fresh)
 - Audit staleness (calendar age): 4 fresh, 8 aging, 8 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 25 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 8 match-unverified
-- Tier 1 coverage: 51.7% (Cyfrin)
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 17 match-unverified
+- Tier 1 coverage: 43.8% (Cyfrin)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Cyfrin | Tier 1 | 30 | 51.7% | 2026-03 |
-| Sigma Prime | Tier 2 | 5 | 8.6% | 2023-01 |
-| unknown | Tier 2 | 4 | 6.9% | 2025-02 |
-| Zellic | Tier 2 | 1 | 1.7% | 2025-07 |
+| Cyfrin | Tier 1 | 14 | 43.8% | 2026-03 |
+| unknown | Tier 2 | 8 | 25.0% | 2025-02 |
+| Sigma Prime | Tier 2 | 5 | 15.6% | 2023-01 |
+| Zellic | Tier 2 | 2 | 6.3% | 2025-07 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (33)
+### ✅ Verified + Audited (17)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| CommunityVault | unknown | ethereum | n/a | 3 deployments: ethereum [`0x63b26e...803b5b`](./contracts/ethereum-1/0x63b26ebd8586c18ed7e0ddba8df2ff690d803b5b/); ethereum `0x94277a...33791a`; ethereum `0xe162e1...96a850` | ✅ Audited |
-| CommunityVCS | unknown | ethereum | n/a | 4 deployments: ethereum [`0x11721f...f4f864`](./contracts/ethereum-1/0x11721f9e0152b2abda99b8b86e77d7820ef4f864/); ethereum `0x2339ad...c3f647`; ethereum `0x96418d...fad41b`; ethereum `0xdd0c42...ec21e5` | ✅ Audited |
-| CommunityVCS | unknown | ethereum | n/a | 2 deployments: ethereum [`0x14024f...990744`](./contracts/ethereum-1/0x14024f4e7fef08cb19f8051456e39ee899990744/); ethereum `0xac1229...fbc1b5` | ✅ Audited |
-| EspressoFundFlowController | unknown | ethereum | n/a | 2 deployments: ethereum [`0x439709...db934f`](./contracts/ethereum-1/0x4397095f3d69c64aad1e8de61980064e3bdb934f/); ethereum `0xf36bdb...7104bd` | ✅ Audited |
-| EspressoStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0xc0d185...a6f70c`](./contracts/ethereum-1/0xc0d18551f249494f5900f5f99c03cf1d8ea6f70c/); ethereum `0xf0fb3a...540344` | ✅ Audited |
-| EspressoVault | unknown | ethereum | n/a | [`0xe3dd72...1c2ab8`](./contracts/ethereum-1/0xe3dd720ccf01493a4921b5ddf2a542ea1e1c2ab8/) | ✅ Audited |
-| FundFlowController | unknown | ethereum | n/a | 2 deployments: ethereum [`0xacbfc0...90a8e0`](./contracts/ethereum-1/0xacbfc09a1c4966f11c969080374010536090a8e0/); ethereum `0xd2e738...6a0200` | ✅ Audited |
-| FundFlowController | unknown | ethereum | n/a | [`0xb8cc47...013061`](./contracts/ethereum-1/0xb8cc47b8a76b33b5330dc1f6c5f2eee5d0013061/) | ✅ Audited |
-| LINKMigrator | periphery | ethereum | n/a | 2 deployments: ethereum [`0x08e11a...cf7786`](./contracts/ethereum-1/0x08e11a9a74e7acc51ace382b6d02abe8b7cf7786/); ethereum `0xda77b1...85fb15` | ✅ Audited |
-| LiquidSDIndexPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0x3509d9...293c14`](./contracts/ethereum-1/0x3509d9320660b2ffea0225b0006c98f1d6293c14/); ethereum `0x535321...6c1fa1` | ✅ Audited |
-| LSTRewardsSplitterController | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x5e1bfb...1f78c8`](./contracts/ethereum-1/0x5e1bfbb052c3f7bfe0e7386f435343982b1f78c8/); ethereum `0x73c433...72e154` | ✅ Audited |
-| MerkleDistributor | operational_periphery | ethereum | n/a | [`0x6f6fb6...319ac0`](./contracts/ethereum-1/0x6f6fb6fbec4fb65a6535357d9d7e8f4f62319ac0/) | ✅ Audited |
-| OperatorVault | unknown | ethereum | n/a | 16 deployments: ethereum [`0x025ca4...27bad1`](./contracts/ethereum-1/0x025ca436f644b61ded1bc9fcdb1f0b560b27bad1/); ethereum `0x42e71e...a7f883`; ethereum `0x63b835...d01a74`; ethereum `0x687967...619298`; ethereum `0x6df26a...c26a4b`; ethereum `0x7d96bd...7557ea`; ethereum `0x8d87cb...b7d03b`; ethereum `0xa3b3da...8c2835`; ethereum `0xa7c576...55facc`; ethereum `0xaa0eec...f82d0c`; ethereum `0xaabc1c...abd392`; ethereum `0xb6196b...3d68ac`; ethereum `0xc7f587...60c7a3`; ethereum `0xc96d63...b6394c`; ethereum `0xda8531...22c83f`; ethereum `0xdd629d...0a6d76` | ✅ Audited |
-| OperatorVault | unknown | ethereum | n/a | 4 deployments: ethereum [`0x6564fe...c6fb45`](./contracts/ethereum-1/0x6564fe0809e8b520a0e26ee644d98c4ea2c6fb45/); ethereum `0x73cf93...710387`; ethereum `0xac1d9c...c165ee`; ethereum `0xc4baf9...b4c2e4` | ✅ Audited |
-| OperatorVCS | unknown | ethereum | n/a | 2 deployments: ethereum [`0x25fb2b...baaf57`](./contracts/ethereum-1/0x25fb2b9030f8c0002d018bb02b7d86b844baaf57/); ethereum `0x4852e4...39d2a4` | ✅ Audited |
-| OperatorVCS | unknown | ethereum | n/a | 4 deployments: ethereum [`0x584338...07bc29`](./contracts/ethereum-1/0x584338dabae9e5429c334fc1ad41c46ac007bc29/); ethereum `0x6059ce...3fe286`; ethereum `0x9fe5d5...e049e6`; ethereum `0xfb8256...e30567` | ✅ Audited |
-| PolygonFundFlowController | unknown | ethereum | n/a | 2 deployments: ethereum [`0x70f7da...f65951`](./contracts/ethereum-1/0x70f7daba7f2d0866088ecb1e3b29401a97f65951/); ethereum `0xf11af8...f21e91` | ✅ Audited |
-| PolygonStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x0c1b99...07e129`](./contracts/ethereum-1/0x0c1b992616915871ba921bbe14bb51928a07e129/); ethereum `0x7d145a...0300aa` | ✅ Audited |
-| PolygonVault | unknown | ethereum | n/a | [`0x33db65...04414e`](./contracts/ethereum-1/0x33db657264a28555da73bd6696e810cfcb04414e/) | ✅ Audited |
-| PriorityPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0x090abe...4cee55`](./contracts/ethereum-1/0x090abe0e6bd58b8cd09b622ff1bde2b48b4cee55/); ethereum `0xdc2686...375fd3` | ✅ Audited |
-| PriorityPool | unknown | ethereum | n/a | 5 deployments: ethereum [`0x0bc122...def817`](./contracts/ethereum-1/0x0bc122c224b875ca79250a54a08a6e5df8def817/); ethereum `0x7f89e4...38c054`; ethereum `0x80faea...6e7b8d`; ethereum `0x855039...de1bc3`; ethereum `0xe18550...504923` | ✅ Audited |
-| PriorityPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6fb9cc...4d4d26`](./contracts/ethereum-1/0x6fb9cc7d10a5286a864e760c2756e7f6d44d4d26/); ethereum `0xddc796...fd60ea` | ✅ Audited |
-| PriorityPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8e0cd4...aaa40e`](./contracts/ethereum-1/0x8e0cd48bc25945114a173749c05ce9c7e7aaa40e/); ethereum `0xcfa197...8b9d67` | ✅ Audited |
-| RebaseController | governance | ethereum | n/a | 3 deployments: ethereum [`0x1711e9...bdbec4`](./contracts/ethereum-1/0x1711e93eec78ba83d38c26f0ff284eb478bdbec4/); ethereum `0x5537f6...5ddb90`; ethereum `0xda669f...5b1c1f` | ✅ Audited |
-| RewardsPoolWSD | operational_periphery | ethereum | n/a | 5 deployments: ethereum [`0x4a18ae...490342`](./contracts/ethereum-1/0x4a18aea755bd2ec7c0b7dd6f065bbb3725490342/); ethereum `0x77f555...6b5a56`; ethereum `0x8753c0...f8cc72`; ethereum `0xbcd10c...a307f0`; ethereum `0xd6dbdd...802c59` | ✅ Audited |
-| SDLPool | core_logic | ethereum | n/a | [`0x0b2ef9...48ca4d`](./contracts/ethereum-1/0x0b2ef910ad0b34bf575eb09d37fd7da6c148ca4d/) | ✅ Audited |
-| SDLVesting | operational_periphery | ethereum | n/a | 19 deployments: ethereum [`0x02a0f6...ba3aba`](./contracts/ethereum-1/0x02a0f6242c43a3cb59e58d5fa7acd9e79bba3aba/); ethereum `0x03c1c1...b1ff94`; ethereum `0x08c1d7...26a8b9`; ethereum `0x378971...5f59df`; ethereum `0x4ccb44...119c86`; ethereum `0x506c02...5ee9c7`; ethereum `0x5eb140...c341e5`; ethereum `0x6185a7...2fcb3d`; ethereum `0x8aaf17...c9f7d5`; ethereum `0x8b5194...61024f`; ethereum `0x8b5256...becfe3`; ethereum `0xb03697...cfd1d4`; ethereum `0xb57b3d...864b02`; ethereum `0xe05edf...0252a6`; ethereum `0xe22ee6...93081a`; ethereum `0xe6476f...7e51e0`; ethereum `0xf12cea...14ea43`; ethereum `0xf509c9...2e3032`; ethereum `0xf7a813...9dc8f2` | ✅ Audited |
-| StakingAllowance | operational_periphery | ethereum | n/a | [`0xa95c5e...a28c23`](./contracts/ethereum-1/0xa95c5ebb86e0de73b4fb8c47a45b792cfea28c23/) | ✅ Audited |
-| StakingPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1932a6...c182ba`](./contracts/ethereum-1/0x1932a66a2689560d041cb90efa7f623317c182ba/); ethereum `0xecd792...c63111` | ✅ Audited |
-| StakingPool | unknown | ethereum | n/a | 4 deployments: ethereum [`0x2fe5a3...308597`](./contracts/ethereum-1/0x2fe5a394f24b3dec644f982a9bb0bafe57308597/); ethereum `0x2ff439...541753`; ethereum `0x5273a7...cb6e50`; ethereum `0xb8b295...c43cd5` | ✅ Audited |
-| StakingPool | unknown | ethereum | n/a | 6 deployments: ethereum [`0x880a12...0103ba`](./contracts/ethereum-1/0x880a12f050376ffbd2b37a6ed78b50e93b0103ba/); ethereum `0x88d89a...be9f9a`; ethereum `0x9a9e3e...f3d314`; ethereum `0xb074db...1ae088`; ethereum `0xebc52a...e5f715`; ethereum `0xecb282...2866f8` | ✅ Audited |
-| VaultDepositController | unknown | ethereum | n/a | [`0x15fbab...4ea1bc`](./contracts/ethereum-1/0x15fbab6fd5d82fd7b326e4f3a1562a4d464ea1bc/) | ✅ Audited |
-| WrappedSDToken | token | ethereum | n/a | 3 deployments: ethereum [`0x2091d8...9555e6`](./contracts/ethereum-1/0x2091d83592d79b4de5fd2ce3d98679c32a9555e6/); ethereum `0x43ff5f...f30a48`; ethereum `0x911d86...c803da` | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| CommunityVCS | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393141 | `0xac1229...fbc1b5` | ✅ Audited |
+| EspressoFundFlowController | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393144 | `0xf36bdb...7104bd` | ✅ Audited |
+| EspressoStrategy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393152 | `0xf0fb3a...540344` | ✅ Audited |
+| FundFlowController | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393150 | `0xd2e738...6a0200` | ✅ Audited |
+| OperatorVCS | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393142 | `0x4852e4...39d2a4` | ✅ Audited |
+| PolygonFundFlowController | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393153 | `0x70f7da...f65951` | ✅ Audited |
+| PolygonStrategy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393140 | `0x7d145a...0300aa` | ✅ Audited |
+| PriorityPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393148 | `0xcfa197...8b9d67` | ✅ Audited |
+| PriorityPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393139 | `0xdc2686...375fd3` | ✅ Audited |
+| PriorityPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393145 | `0xddc796...fd60ea` | ✅ Audited |
+| RebaseController | governance | project_anchor | own_supporting | 0 | ethereum | unit-393107 | `0x1711e9...bdbec4` | ✅ Audited |
+| RebaseController | governance | project_anchor | own_supporting | 0 | ethereum | unit-393114 | `0x5537f6...5ddb90` | ✅ Audited |
+| SDLPool | core_logic | project_anchor | own_supporting | 1 | ethereum | unit-393147 | `0x0b2ef9...48ca4d` | ✅ Audited |
+| StakingAllowance | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-393119 | `0xa95c5e...a28c23` | ✅ Audited |
+| StakingPool | unknown | project_anchor | own_supporting | 3 | ethereum | unit-393143 (3 proxies) | 3 deployments: ethereum `0x2ff439...541753`; ethereum `0x5273a7...cb6e50`; ethereum `0xb8b295...c43cd5` | ✅ Audited |
+| WithdrawalPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393149 | `0xa60b51...d0c248` | ✅ Audited |
+| WrappedSDToken | token | project_anchor | own_supporting | 0 | ethereum | unit-393118 | `0x911d86...c803da` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (25)
+### ⚠️ Verified + Unaudited (17)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BurnMintERC20 | token | polygon | n/a | 5 deployments: polygon [`0x0f6c1f...fb6e84`](./contracts/polygon-137/0x0f6c1f639c76b8461476da030e654f25ddfb6e84/); polygon `0x1d0347...b4b2ae`; polygon `0x282d99...a52c54`; polygon `0x593722...aba494`; polygon `0xba754d...d8f553` | ⚠️ Unaudited |
-| BurnMintERC677 | token | arbitrum | n/a | 2 deployments: arbitrum [`0x3106e2...4972fb`](./contracts/arbitrum-42161/0x3106e2e148525b3db36795b04691d444c24972fb/); arbitrum `0xdfea35...d0eec0` | ⚠️ Unaudited |
-| BurnMintTokenPool | core_logic | polygon | n/a | [`0xb4d2c0...2376db`](./contracts/polygon-137/0xb4d2c033ea68674e56f6071b0d826d03152376db/) | ⚠️ Unaudited |
-| DelegatorPool | unknown | ethereum | n/a | [`0x7f8ced...5b6d75`](./contracts/ethereum-1/0x7f8ced381e6cc79f69721563157b1add0a5b6d75/) | ⚠️ Unaudited |
-| DelegatorPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0x86637a...ada2a3`](./contracts/ethereum-1/0x86637a9aba90204575db67451ba273b01cada2a3/); ethereum `0xaef186...1c2284` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x21bb83...3c131b`](./contracts/ethereum-1/0x21bb83f84d06ad561c7d35872b0dd5aa2f3c131b/); ethereum `0x7700a0...200164` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x2401e9...06f197`](./contracts/ethereum-1/0x2401e9ceada76a59753549f71858a3ece906f197/); ethereum `0x70f3b8...c78c4c` | ⚠️ Unaudited |
-| EspressoRewardsConsumer | operational_periphery | ethereum | n/a | [`0xe69d92...6e33f9`](./contracts/ethereum-1/0xe69d92f6910b45da1d6ddfb380efaa6af56e33f9/) | ⚠️ Unaudited |
-| FactoryBurnMintERC20 | registry | polygon | n/a | 3 deployments: polygon [`0xc271a1...c20a9c`](./contracts/polygon-137/0xc271a17db5ce6f53745a3f466077ec816bc20a9c/); base `0xe5b64a...ce26e6`; base `0xf2f790...771297` | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | [`0xb351ec...22493d`](./contracts/ethereum-1/0xb351ec0feaf4b99fdfd36b484d9ec90d0422493d/) | ⚠️ Unaudited |
-| GovernanceTimelock | governance | ethereum | n/a | [`0xb72d8f...78349f`](./contracts/ethereum-1/0xb72d8f5213b3e52faf13aa074b03c4788e78349f/) | ⚠️ Unaudited |
-| L1Strategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x142b98...bf6a64`](./contracts/ethereum-1/0x142b9850f26dc95ff8b8c972de7ce63eadbf6a64/); ethereum `0x93c3d7...b52ef1` | ⚠️ Unaudited |
-| L1Strategy | unknown | ethereum | n/a | [`0xd6999c...fe21ca`](./contracts/ethereum-1/0xd6999c1dcb675ae5568931bb0cfca0c4f4fe21ca/) | ⚠️ Unaudited |
-| L1Transmitter | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5e2a7b...f25cde`](./contracts/ethereum-1/0x5e2a7b992769e43d4e76a4bb92de9c0532f25cde/); ethereum `0xb1abe6...6b1063` | ⚠️ Unaudited |
-| LidoLSDIndexAdapter | unknown | ethereum | n/a | [`0xeb9f29...f0791d`](./contracts/ethereum-1/0xeb9f29b6395db28c0861c24f1cbfceee1ff0791d/) | ⚠️ Unaudited |
-| LockReleaseTokenPool | core_logic | ethereum | n/a | 5 deployments: ethereum [`0x20c0d7...37d461`](./contracts/ethereum-1/0x20c0d719c2ef30ff5ac6e822261ee655f037d461/); ethereum `0x28d314...f31b05`; ethereum `0x4a36c0...c5f68e`; ethereum `0x553636...e3a1bc`; polygon `0x48c5ca...4b4122` | ⚠️ Unaudited |
-| LPOG2 | token | ethereum | n/a | [`0x226ef9...a6ccd8`](./contracts/ethereum-1/0x226ef92ca9c42ab3a786e434f19c8148efa6ccd8/) | ⚠️ Unaudited |
-| PoolRouter | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6b4f81...979092`](./contracts/ethereum-1/0x6b4f81f9ebf8132d7fe114a1f96e333187979092/); ethereum `0x9ae789...668a9a` | ⚠️ Unaudited |
-| RewardsPool | unknown | ethereum | n/a | [`0x19282e...d226eb`](./contracts/ethereum-1/0x19282e0365a5b90c9864446448e29465a9d226eb/) | ⚠️ Unaudited |
-| RocketPoolLSDIndexAdapter | unknown | ethereum | n/a | [`0x602553...d66220`](./contracts/ethereum-1/0x6025533b9e095ab2730e1ad50219be8293d66220/) | ⚠️ Unaudited |
-| StakingProxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x05f534...3d8514`](./contracts/ethereum-1/0x05f5344d4f961643fa5075a4a56a6303923d8514/); ethereum `0xc1b7a5...7da740` | ⚠️ Unaudited |
-| Vesting | operational_periphery | ethereum | n/a | 5 deployments: ethereum [`0x7287d9...9a0997`](./contracts/ethereum-1/0x7287d90ed89d586d0d4b09f683c7f06a3e9a0997/); ethereum `0x8d0422...b3e8d9`; ethereum `0x8dbc80...5aefad`; ethereum `0xcc8f8f...4171cb`; ethereum `0xd9d1b5...ea2c6b` | ⚠️ Unaudited |
-| WithdrawalPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0x908b89...6d3690`](./contracts/ethereum-1/0x908b892276fb70fb6fd362ff97d58e7abf6d3690/); ethereum `0xbb7823...aa44fb` | ⚠️ Unaudited |
-| WithdrawalPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0x9e00fd...18ed17`](./contracts/ethereum-1/0x9e00fd7e4754cc0deca4d653c61190380318ed17/); ethereum `0xa60b51...d0c248` | ⚠️ Unaudited |
-| WithdrawalPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0xbfbf47...096458`](./contracts/ethereum-1/0xbfbf47b2a3b9e54a44257bf57d4b078170096458/); ethereum `0xf3683d...b897aa` | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BurnMintERC20 | token | project_anchor | own_supporting | 0 | polygon | unit-393122 | `0x1d0347...b4b2ae` | ⚠️ Unaudited |
+| BurnMintERC677 | token | project_anchor | own_supporting | 0 | arbitrum | unit-393135 | `0x3106e2...4972fb` | ⚠️ Unaudited |
+| BurnMintERC677 | token | project_anchor | own_supporting | 0 | arbitrum | unit-393136 | `0xdfea35...d0eec0` | ⚠️ Unaudited |
+| DelegatorPool | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 1 | ethereum | unit-393146 | `0xaef186...1c2284` | ⚠️ Unaudited |
+| DistributionOracle | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-393109 | `0x2285ac...b443cf` | ⚠️ Unaudited |
+| FactoryBurnMintERC20 | registry | project_anchor | own_supporting | 0 | polygon | unit-393132 | `0xc271a1...c20a9c` | ⚠️ Unaudited |
+| FactoryBurnMintERC20 | registry | project_anchor | own_supporting | 0 | base | unit-393137 | `0xe5b64a...ce26e6` | ⚠️ Unaudited |
+| FactoryBurnMintERC20 | registry | project_anchor | own_supporting | 0 | base | unit-393138 | `0xf2f790...771297` | ⚠️ Unaudited |
+| GovernanceTimelock | governance | project_anchor | own_supporting | 0 | ethereum | unit-393120 | `0xb72d8f...78349f` | ⚠️ Unaudited |
+| RebaseController | governance | project_anchor | own_supporting | 0 | ethereum | unit-393121 | `0xda669f...5b1c1f` | ⚠️ Unaudited |
+| RewardsPoolWSD | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-393112 | `0x4a18ae...490342` | ⚠️ Unaudited |
+| RewardsPoolWSD | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-393116 | `0x77f555...6b5a56` | ⚠️ Unaudited |
+| RewardsPoolWSD | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-393117 | `0x8753c0...f8cc72` | ⚠️ Unaudited |
+| WithdrawalPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393151 | `0x908b89...6d3690` | ⚠️ Unaudited |
+| WithdrawalPool | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393154 | `0xbfbf47...096458` | ⚠️ Unaudited |
+| WrappedSDToken | token | project_anchor | own_supporting | 0 | ethereum | unit-393108 | `0x2091d8...9555e6` | ⚠️ Unaudited |
+| WrappedSDToken | token | project_anchor | own_supporting | 0 | ethereum | unit-393110 | `0x43ff5f...f30a48` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -138,89 +171,282 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (24)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x08341b...dcec15` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x213636...c4b713` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x37ea41...c87de8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x39bbbd...45f947` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3b8234...29dbd2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x452401...5945d8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4d577e...f33ce7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5225ef...532041` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x528612...2227af` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x6c1e2d...2c1e82` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8aad08...3d674b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8ef5d8...b3aa12` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x90b143...c043a0` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x91aaa7...95dd96` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x96a591...173d01` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9aea3f...695aca` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9cbb38...90c394` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb3cae0...f432dd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xbd12aa...6bd705` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc548b1...c3b2b4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc5842e...97bb93` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xcee29d...d12547` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe0a48c...5fc9e0` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x9c3b66...2950a8` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393106 | `0x031de5...91db9a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393111 | `0x455e53...ffc3f6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393113 | `0x514910...f986ca` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [[2025-07-02] Zellic - Polygon Staking.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-07-02%5D%20Zellic%20-%20Polygon%20Staking.pdf) | Zellic | Audit | 2025-07 | aging | Direct | contract_name | 1 | n/a |
-| [[2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2022-08-01%5D%20Sigma%20Prime%20-%20Core%20Staking%20Contracts%20Report.pdf) | Sigma Prime | Audit | 2022-08 | stale | Direct | contract_name | 4 | n/a |
-| [[2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2023-01-01%5D%20Sigma%20Prime%20-%20Core%20%26%20LINK%20Staking%20Report.pdf) | Sigma Prime | Audit | 2023-01 | stale | Direct | contract_name | 4 | n/a |
-| [[2023-03-07] Cyfrin - LSD Index Pool Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2023-03-07%5D%20Cyfrin%20-%20LSD%20Index%20Pool%20Report.pdf) | Cyfrin | Audit | 2023-03 | stale | Direct | contract_name | 2 | high |
-| [[2023-08-06] Trust Security - SDLPool Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2023-08-06%5D%20Trust%20Security%20-%20SDLPool%20Report.pdf) | unknown | Audit | 2023-08 | stale | Direct | contract_name | 1 | n/a |
-| [[2023-08-25] Cyfrin - Priority Pool Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2023-08-25%5D%20Cyfrin%20-%20Priority%20Pool%20Report.pdf) | Cyfrin | Audit | 2023-08 | stale | Direct | contract_name | 1 | n/a |
-| [[2023-10-01] Trust Security - Priority Pool & LINK Staking v0.2 Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2023-10-01%5D%20Trust%20Security%20-%20Priority%20Pool%20%26%20LINK%20Staking%20v0.2%20Report.pdf) | unknown | Audit | 2023-10 | stale | Direct | contract_name | 2 | n/a |
-| [[2024-04-30] Trust Security - Insurance Pool Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2024-04-30%5D%20Trust%20Security%20-%20Insurance%20Pool%20Report.pdf) | unknown | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
-| [[2024-04-30] Trust Security - Metis Staking Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2024-04-30%5D%20Trust%20Security%20-%20Metis%20Staking%20Report.pdf) | unknown | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
-| [[2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2024-09-17%5D%20Cyfrin%20-%20LINK%20Staking%20Withdrawals.pdf) | Cyfrin | Audit | 2024-09 | aging | Direct | contract_name | 1 | n/a |
-| [[2024-11-27] Codehawks - LINK Staking Withdrawals.md](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2024-11-27%5D%20Codehawks%20-%20LINK%20Staking%20Withdrawals.md) | Cyfrin | Audit | 2024-11 | aging | Direct | contract_name | 3 | n/a |
-| [[2025-01-20] Cyfrin Staking Proxy.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-01-20%5D%20Cyfrin%20Staking%20Proxy.pdf) | Cyfrin | Audit | 2025-01 | aging | Direct | contract_name | 3 | n/a |
-| [[2025-02-04] Trust - LINK Staking Withdrawals.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-02-04%5D%20Trust%20-%20LINK%20Staking%20Withdrawals.pdf) | unknown | Audit | 2025-02 | aging | Direct | contract_name | 3 | n/a |
-| [[2025-02-28] Cyfrin - CL Rewards Claiming.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-02-28%5D%20Cyfrin%20-%20CL%20Rewards%20Claiming.pdf) | Cyfrin | Audit | 2025-02 | aging | Direct | contract_name | 38 | high |
-| [[2025-05-19] Cyfrin - Polygon Staking.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-05-19%5D%20Cyfrin%20-%20Polygon%20Staking.pdf) | Cyfrin | Audit | 2025-05 | aging | Direct | contract_name | 5 | high |
-| [[2025-06-04] Cyfrin - LINK Migrator.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-06-04%5D%20Cyfrin%20-%20LINK%20Migrator.pdf) | Cyfrin | Audit | 2025-06 | aging | Direct | contract_name | 2 | n/a |
-| [[2025-08-02] Cyfrin - SDL Vesting.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-08-02%5D%20Cyfrin%20-%20SDL%20Vesting.pdf) | Cyfrin | Audit | 2025-08 | fresh | Direct | contract_name | 1 | n/a |
-| [[2025-08-02] Cyfrin - Vesting.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-08-02%5D%20Cyfrin%20-%20Vesting.pdf) | Cyfrin | Audit | 2025-08 | fresh | Direct | contract_name | 1 | n/a |
-| [[2026-02-04] Cyfrin - Espresso Staking.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2026-02-04%5D%20Cyfrin%20-%20Espresso%20Staking.pdf) | Cyfrin | Audit | 2026-02 | fresh | Direct | contract_name | 5 | high |
-| [[2026-03-23] Cyfrin - Rebase Batching.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2026-03-23%5D%20Cyfrin%20-%20Rebase%20Batching.pdf) | Cyfrin | Audit | 2026-03 | fresh | Direct | contract_name | 36 | high |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [[2025-07-02] Zellic - Polygon Staking.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-07-02%5D%20Zellic%20-%20Polygon%20Staking.pdf) | Zellic | Audit | 2025-07 | aging | Direct | n/a | matched | 2 | 2 | 0 | 3 | n/a |
+| [[2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2022-08-01%5D%20Sigma%20Prime%20-%20Core%20Staking%20Contracts%20Report.pdf) | Sigma Prime | Audit | 2022-08 | stale | Direct | contract_name | matched | 1 | 0 | 0 | 15 | high |
+| [[2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2023-01-01%5D%20Sigma%20Prime%20-%20Core%20%26%20LINK%20Staking%20Report.pdf) | Sigma Prime | Audit | 2023-01 | stale | Direct | contract_name | matched | 5 | 3 | 0 | 20 | high |
+| [[2023-03-07] Cyfrin - LSD Index Pool Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2023-03-07%5D%20Cyfrin%20-%20LSD%20Index%20Pool%20Report.pdf) | Cyfrin | Audit | 2023-03 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [[2023-08-06] Trust Security - SDLPool Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2023-08-06%5D%20Trust%20Security%20-%20SDLPool%20Report.pdf) | unknown | Audit | 2023-08 | stale | Direct | n/a | matched | 2 | 2 | 0 | 3 | n/a |
+| [[2023-08-25] Cyfrin - Priority Pool Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2023-08-25%5D%20Cyfrin%20-%20Priority%20Pool%20Report.pdf) | Cyfrin | Audit | 2023-08 | stale | Direct | contract_name | matched | 1 | 1 | 0 | 1 | medium |
+| [[2023-10-01] Trust Security - Priority Pool & LINK Staking v0.2 Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2023-10-01%5D%20Trust%20Security%20-%20Priority%20Pool%20%26%20LINK%20Staking%20v0.2%20Report.pdf) | unknown | Audit | 2023-10 | stale | Direct | n/a | matched | 4 | 4 | 0 | 6 | n/a |
+| [[2024-04-30] Trust Security - Insurance Pool Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2024-04-30%5D%20Trust%20Security%20-%20Insurance%20Pool%20Report.pdf) | unknown | Audit | 2024-04 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [[2024-04-30] Trust Security - Metis Staking Report.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2024-04-30%5D%20Trust%20Security%20-%20Metis%20Staking%20Report.pdf) | unknown | Audit | 2024-04 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [[2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2024-09-17%5D%20Cyfrin%20-%20LINK%20Staking%20Withdrawals.pdf) | Cyfrin | Audit | 2024-09 | aging | Direct | contract_name | matched | 3 | 3 | 0 | 17 | high |
+| [[2024-11-27] Codehawks - LINK Staking Withdrawals.md](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2024-11-27%5D%20Codehawks%20-%20LINK%20Staking%20Withdrawals.md) | Cyfrin | Audit | 2024-11 | aging | Direct | contract_name | matched | 3 | 3 | 0 | 10 | high |
+| [[2025-01-20] Cyfrin Staking Proxy.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-01-20%5D%20Cyfrin%20Staking%20Proxy.pdf) | Cyfrin | Audit | 2025-01 | aging | Direct | contract_name | matched | 2 | 2 | 0 | 6 | high |
+| [[2025-02-04] Trust - LINK Staking Withdrawals.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-02-04%5D%20Trust%20-%20LINK%20Staking%20Withdrawals.pdf) | unknown | Audit | 2025-02 | aging | Direct | contract_name | matched | 5 | 4 | 0 | 6 | high |
+| [[2025-02-28] Cyfrin - CL Rewards Claiming.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-02-28%5D%20Cyfrin%20-%20CL%20Rewards%20Claiming.pdf) | Cyfrin | Audit | 2025-02 | aging | Direct | contract_name | matched | 3 | 3 | 0 | 7 | high |
+| [[2025-05-19] Cyfrin - Polygon Staking.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-05-19%5D%20Cyfrin%20-%20Polygon%20Staking.pdf) | Cyfrin | Audit | 2025-05 | aging | Direct | contract_name | matched | 2 | 2 | 0 | 1 | high |
+| [[2025-06-04] Cyfrin - LINK Migrator.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-06-04%5D%20Cyfrin%20-%20LINK%20Migrator.pdf) | Cyfrin | Audit | 2025-06 | aging | Direct | n/a | matched | 1 | 1 | 0 | 2 | n/a |
+| [[2025-08-02] Cyfrin - SDL Vesting.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-08-02%5D%20Cyfrin%20-%20SDL%20Vesting.pdf) | Cyfrin | Audit | 2025-08 | fresh | Direct | n/a | no match | 0 | 0 | 0 | 1 | n/a |
+| [[2025-08-02] Cyfrin - Vesting.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2025-08-02%5D%20Cyfrin%20-%20Vesting.pdf) | Cyfrin | Audit | 2025-08 | fresh | Direct | n/a | no match | 0 | 0 | 0 | 1 | n/a |
+| [[2026-02-04] Cyfrin - Espresso Staking.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2026-02-04%5D%20Cyfrin%20-%20Espresso%20Staking.pdf) | Cyfrin | Audit | 2026-02 | fresh | Direct | contract_name | matched | 2 | 2 | 0 | 1 | high |
+| [[2026-03-23] Cyfrin - Rebase Batching.pdf](https://github.com/stakedotlink/contracts/blob/main/audits/%5B2026-03-23%5D%20Cyfrin%20-%20Rebase%20Batching.pdf) | Cyfrin | Audit | 2026-03 | fresh | Direct | contract_name | matched | 4 | 3 | 0 | 8 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [4624] [2025-07-02] Zellic - Polygon Staking.pdf — matched: No reason recorded
+- [10452] [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf — matched: Scope section explicitly lists 16 Solidity files. Audit date is August 2022, mapped to last day of month.
+- [10453] [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf — matched: Extracted 25 contract names from the scope section and findings. Audit date is January 2023, mapped to last day of month.
+- [10454] [2023-03-07] Cyfrin - LSD Index Pool Report.pdf — no match: Scope section explicitly lists contracts in liquidSDIndex folder. Audit date from cover page: March 10, 2023.
+- [10455] [2023-08-06] Trust Security - SDLPool Report.pdf — matched: No reason recorded
+- [10456] [2023-08-25] Cyfrin - Priority Pool Report.pdf — matched: Scope section not explicitly present; contracts inferred from report content. Audit date from cover page.
+- [10457] [2023-10-01] Trust Security - Priority Pool & LINK Staking v0.2 Report.pdf — matched: No reason recorded
+- [10458] [2024-04-30] Trust Security - Insurance Pool Report.pdf — no match: Scope section lists 4 files; audit date from document versioning (30/04/24).
+- [10459] [2024-04-30] Trust Security - Metis Staking Report.pdf — no match: Scope section lists 4 files; audit date from document versioning (30/04/24).
+- [10460] [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf — matched: All contracts listed in the Audit Scope section were extracted. The audit date is from the cover page.
+- [10461] [2024-11-27] Codehawks - LINK Staking Withdrawals.md — matched: Extracted contract names from findings and scope references. Audit date from contest summary: Sep 30th, 2024 - Oct 17th, 2024, using end date.
+- [10462] [2025-01-20] Cyfrin Staking Proxy.pdf — matched: All contracts listed in Audit Scope section (page 2) are extracted. Date from cover page.
+- [10463] [2025-02-04] Trust - LINK Staking Withdrawals.pdf — matched: All 11 contracts listed in the Scope section of the audit report.
+- [10464] [2025-02-28] Cyfrin - CL Rewards Claiming.pdf — matched: All contracts listed in Audit Scope section (page 2) are extracted. Audit date from cover page: February 28, 2025.
+- [10465] [2025-05-19] Cyfrin - Polygon Staking.pdf — matched: Scope section explicitly lists three contracts: PolygonFundFlowController.sol, PolygonVault.sol, PolygonStrategy.sol. Audit date is May 19, 2025 from the cover page.
+- [10466] [2025-06-04] Cyfrin - LINK Migrator.pdf — matched: No reason recorded
+- [10468] [2025-08-02] Cyfrin - SDL Vesting.pdf — no match: No reason recorded
+- [10469] [2025-08-02] Cyfrin - Vesting.pdf — no match: No reason recorded
+- [10470] [2026-02-04] Cyfrin - Espresso Staking.pdf — matched: Audit scope explicitly lists three contracts: EspressoFundFlowController.sol, EspressoStrategy.sol, EspressoVault.sol. Date found on cover page: February 4, 2026.
+- [10471] [2026-03-23] Cyfrin - Rebase Batching.pdf — matched: Scope explicitly lists CommunityVCS.sol and VaultControllerStrategy.sol. Other contracts appear in PoC or findings but are not in scope.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| [2025-07-02] Zellic - Polygon Staking.pdf | LSTRewardsSplitter | unmatched — not counted | — | — | no |
+| [2025-07-02] Zellic - Polygon Staking.pdf | LSTRewardsSplitterController | unmatched — not counted | — | — | no |
+| [2025-07-02] Zellic - Polygon Staking.pdf | PolygonFundFlowController | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x70f7da...f65951` — deployed 2025-07-16 19:38:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-07-02] Zellic - Polygon Staking.pdf | PolygonStrategy | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x7d145a...0300aa` — deployed 2025-07-16 19:37:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-07-02] Zellic - Polygon Staking.pdf | PolygonVault | unmatched — not counted | — | — | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | MerkleDistributor | unmatched — not counted | — | listed in scope | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | BorrowingPool | unmatched — not counted | — | listed in scope | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | LendingPool | unmatched — not counted | — | listed in scope | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | PoolOwners | unmatched — not counted | — | listed in scope | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | PoolRouter | unmatched — not counted | — | listed in scope | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | RewardsPool | unmatched — not counted | — | listed in scope | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | StakingPool | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x5273a7...cb6e50` — deployed 2026-02-09 22:16:59+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0x2ff439...541753` — deployed 2025-07-16 19:34:11+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xb8b295...c43cd5` — deployed 2022-12-05 14:06:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | RewardsPoolController | unmatched — not counted | — | listed in scope | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | StakingRewardsPool | unmatched — not counted | — | listed in scope | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | Strategy | unmatched — not counted | — | listed in scope | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | LinkPoolNFT | unmatched — not counted | — | listed in scope | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | StakingAllowance | own contract | StakingAllowance (selected) `0xa95c5e...a28c23` — deployed 2022-12-05 13:59:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | WrappedSDToken | ambiguous — not counted | WrappedSDToken (alternative) `0x43ff5f...f30a48` — deployed 2026-02-09 22:18:35+03 — liveness: live (code_present_context)<br>WrappedSDToken (alternative) `0x2091d8...9555e6` — deployed 2025-07-16 19:36:11+03 — liveness: live (code_present_context)<br>WrappedSDToken (alternative) `0x911d86...c803da` — deployed 2022-12-05 14:07:23+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | ERC677 | unmatched — not counted | — | listed in scope | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | VirtualERC20 | unmatched — not counted | — | listed in scope | no |
+| [2022-08-01] Sigma Prime - Core Staking Contracts Report.pdf | VirtualERC677 | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | DelegatorPool | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | GovernanceController | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | PoolRouter | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | RewardsPool | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | RewardsPoolWSD | ambiguous — not counted | RewardsPoolWSD (alternative) `0x4a18ae...490342` — deployed 2026-02-09 22:19:59+03 — liveness: live (current_address_book_code)<br>RewardsPoolWSD (alternative) `0x77f555...6b5a56` — deployed 2025-07-16 19:38:47+03 — liveness: live (current_address_book_code)<br>RewardsPoolWSD (alternative) `0x8753c0...f8cc72` — deployed 2023-09-20 19:35:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | SlashingKeeper | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | StakingPool | own proxy deployment | ERC1967Proxy (proxy) (alternative) `0x5273a7...cb6e50` — deployed 2026-02-09 22:16:59+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0x2ff439...541753` — deployed 2025-07-16 19:34:11+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (selected) `0xb8b295...c43cd5` — deployed 2022-12-05 14:06:59+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2022-12-05 was 57d from audit; next candidate 897d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | RewardsPoolController | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | StakingRewardsPool | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | Strategy | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | Flat | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | RampUpCurve | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | LinkPoolNFT | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | LPLMigration | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | StakingAllowance | own contract | StakingAllowance (selected) `0xa95c5e...a28c23` — deployed 2022-12-05 13:59:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | WrappedSDToken | own contract | WrappedSDToken (alternative) `0x43ff5f...f30a48` — deployed 2026-02-09 22:18:35+03 — liveness: live (code_present_context)<br>WrappedSDToken (alternative) `0x2091d8...9555e6` — deployed 2025-07-16 19:36:11+03 — liveness: live (code_present_context)<br>WrappedSDToken (selected) `0x911d86...c803da` — deployed 2022-12-05 14:07:23+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2022-12-05 was 57d from audit; next candidate 897d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | ERC677 | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | ERC677Upgradeable | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | CommunityVault | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | CommunityVCS | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xac1229...fbc1b5` — deployed 2023-11-22 19:50:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | OperatorVault | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | OperatorVCS | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x4852e4...39d2a4` — deployed 2022-12-06 18:16:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | Vault | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | VaultControllerStrategy | unmatched — not counted | — | listed in scope | no |
+| [2023-01-01] Sigma Prime - Core & LINK Staking Report.pdf | FlatFee | unmatched — not counted | — | mentioned in findings as FlatFee.sol | no |
+| [2023-03-07] Cyfrin - LSD Index Pool Report.pdf | LiquidSDIndexPool | unmatched — not counted | — | listed in scope and findings | no |
+| [2023-03-07] Cyfrin - LSD Index Pool Report.pdf | LiquidSDAdapter | unmatched — not counted | — | listed in scope and findings | no |
+| [2023-03-07] Cyfrin - LSD Index Pool Report.pdf | LidoSTETHAdapter | unmatched — not counted | — | listed in scope and findings | no |
+| [2023-03-07] Cyfrin - LSD Index Pool Report.pdf | RocketPoolRETHAdapter | unmatched — not counted | — | listed in scope and findings | no |
+| [2023-03-07] Cyfrin - LSD Index Pool Report.pdf | LiquidSDAdapterMock | unmatched — not counted | — | listed in findings | no |
+| [2023-08-06] Trust Security - SDLPool Report.pdf | DelegatorPool | unmatched — not counted | — | — | no |
+| [2023-08-06] Trust Security - SDLPool Report.pdf | LinearBoostController | unmatched — not counted | — | — | no |
+| [2023-08-06] Trust Security - SDLPool Report.pdf | OperatorVCS | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x4852e4...39d2a4` — deployed 2022-12-06 18:16:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2023-08-06] Trust Security - SDLPool Report.pdf | OperatorVault | unmatched — not counted | — | — | no |
+| [2023-08-06] Trust Security - SDLPool Report.pdf | SDLPool | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x0b2ef9...48ca4d` — deployed 2023-09-20 19:34:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2023-08-25] Cyfrin - Priority Pool Report.pdf | PriorityPool | own proxy deployment | ERC1967Proxy (proxy) (alternative) `0xdc2686...375fd3` — deployed 2026-02-09 22:17:59+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (selected) `0xddc796...fd60ea` — deployed 2023-09-20 19:38:35+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xcfa197...8b9d67` — deployed 2025-07-16 19:34:47+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2023-09-20 was 26d from audit; next candidate 691d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2023-08-25] Cyfrin - Priority Pool Report.pdf | StakingQueue | unmatched — not counted | — | mentioned in executive summary and additional comments as original name | no |
+| [2023-10-01] Trust Security - Priority Pool & LINK Staking v0.2 Report.pdf | CommunityVCS | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xac1229...fbc1b5` — deployed 2023-11-22 19:50:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2023-10-01] Trust Security - Priority Pool & LINK Staking v0.2 Report.pdf | CommunityVault | unmatched — not counted | — | — | no |
+| [2023-10-01] Trust Security - Priority Pool & LINK Staking v0.2 Report.pdf | OperatorVCS | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x4852e4...39d2a4` — deployed 2022-12-06 18:16:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2023-10-01] Trust Security - Priority Pool & LINK Staking v0.2 Report.pdf | OperatorVault | unmatched — not counted | — | — | no |
+| [2023-10-01] Trust Security - Priority Pool & LINK Staking v0.2 Report.pdf | PriorityPool | own proxy deployment | ERC1967Proxy (proxy) (alternative) `0xdc2686...375fd3` — deployed 2026-02-09 22:17:59+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (selected) `0xddc796...fd60ea` — deployed 2023-09-20 19:38:35+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xcfa197...8b9d67` — deployed 2025-07-16 19:34:47+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2023-09-20 was 11d from audit; next candidate 654d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2023-10-01] Trust Security - Priority Pool & LINK Staking v0.2 Report.pdf | SlashingKeeper | unmatched — not counted | — | — | no |
+| [2023-10-01] Trust Security - Priority Pool & LINK Staking v0.2 Report.pdf | StakingPool | own proxy deployment | ERC1967Proxy (proxy) (alternative) `0x5273a7...cb6e50` — deployed 2026-02-09 22:16:59+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0x2ff439...541753` — deployed 2025-07-16 19:34:11+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (selected) `0xb8b295...c43cd5` — deployed 2022-12-05 14:06:59+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2022-12-05 was 300d from audit; next candidate 654d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2023-10-01] Trust Security - Priority Pool & LINK Staking v0.2 Report.pdf | StakingRewardsPool | unmatched — not counted | — | — | no |
+| [2023-10-01] Trust Security - Priority Pool & LINK Staking v0.2 Report.pdf | Vault | unmatched — not counted | — | — | no |
+| [2023-10-01] Trust Security - Priority Pool & LINK Staking v0.2 Report.pdf | VaultControllerStrategy | unmatched — not counted | — | — | no |
+| [2024-04-30] Trust Security - Insurance Pool Report.pdf | SequencerVault | unmatched — not counted | — | listed in scope | no |
+| [2024-04-30] Trust Security - Insurance Pool Report.pdf | SequencerVCS | unmatched — not counted | — | listed in scope | no |
+| [2024-04-30] Trust Security - Insurance Pool Report.pdf | SequencerRewardsCCIPReceiver | unmatched — not counted | — | listed in scope | no |
+| [2024-04-30] Trust Security - Insurance Pool Report.pdf | SequencerRewardsCCIPSender | unmatched — not counted | — | listed in scope | no |
+| [2024-04-30] Trust Security - Metis Staking Report.pdf | SequencerVault | unmatched — not counted | — | listed in scope | no |
+| [2024-04-30] Trust Security - Metis Staking Report.pdf | SequencerVCS | unmatched — not counted | — | listed in scope | no |
+| [2024-04-30] Trust Security - Metis Staking Report.pdf | SequencerRewardsCCIPReceiver | unmatched — not counted | — | listed in scope | no |
+| [2024-04-30] Trust Security - Metis Staking Report.pdf | SequencerRewardsCCIPSender | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | Vault | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | VaultControllerStrategy | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | CommunityVault | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | CommunityVCS | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xac1229...fbc1b5` — deployed 2023-11-22 19:50:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | OperatorVault | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | OperatorVCS | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x4852e4...39d2a4` — deployed 2022-12-06 18:16:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | FundFlowController | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xd2e738...6a0200` — deployed 2025-02-06 20:53:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | PPKeeper | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | SequencerVCS | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | PriorityPool | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0xdc2686...375fd3` — deployed 2026-02-09 22:17:59+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xddc796...fd60ea` — deployed 2023-09-20 19:38:35+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xcfa197...8b9d67` — deployed 2025-07-16 19:34:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | WithdrawalPool | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0xa60b51...d0c248` — deployed 2025-02-06 20:53:47+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xbfbf47...096458` — deployed 2025-07-16 19:36:11+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x908b89...6d3690` — deployed 2026-02-09 22:18:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | Strategy | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | StakingRewardsPool | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | IVault | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | IStrategy | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | IStaking | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | IRewardVault | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | IStakingPool | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | IPriorityPool | unmatched — not counted | — | listed in scope | no |
+| [2024-09-17] Cyfrin - LINK Staking Withdrawals.pdf | IWithdrawalPool | unmatched — not counted | — | listed in scope | no |
+| [2024-11-27] Codehawks - LINK Staking Withdrawals.md | OperatorStakingPool | unmatched — not counted | — | listed in scope and findings | no |
+| [2024-11-27] Codehawks - LINK Staking Withdrawals.md | LSTRewardsSplitterController | unmatched — not counted | — | listed in scope and findings | no |
+| [2024-11-27] Codehawks - LINK Staking Withdrawals.md | LSTRewardsSplitter | unmatched — not counted | — | listed in scope and findings | no |
+| [2024-11-27] Codehawks - LINK Staking Withdrawals.md | OperatorVCS | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x4852e4...39d2a4` — deployed 2022-12-06 18:16:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2024-11-27] Codehawks - LINK Staking Withdrawals.md | WithdrawalPool | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0xa60b51...d0c248` — deployed 2025-02-06 20:53:47+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xbfbf47...096458` — deployed 2025-07-16 19:36:11+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x908b89...6d3690` — deployed 2026-02-09 22:18:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| [2024-11-27] Codehawks - LINK Staking Withdrawals.md | PriorityPool | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0xdc2686...375fd3` — deployed 2026-02-09 22:17:59+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xddc796...fd60ea` — deployed 2023-09-20 19:38:35+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xcfa197...8b9d67` — deployed 2025-07-16 19:34:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| [2024-11-27] Codehawks - LINK Staking Withdrawals.md | StakingPool | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x5273a7...cb6e50` — deployed 2026-02-09 22:16:59+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0x2ff439...541753` — deployed 2025-07-16 19:34:11+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xb8b295...c43cd5` — deployed 2022-12-05 14:06:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| [2024-11-27] Codehawks - LINK Staking Withdrawals.md | StakingRewardsPool | unmatched — not counted | — | listed in scope and findings | no |
+| [2024-11-27] Codehawks - LINK Staking Withdrawals.md | FundFlowController | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xd2e738...6a0200` — deployed 2025-02-06 20:53:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2024-11-27] Codehawks - LINK Staking Withdrawals.md | VaultControllerStrategy | unmatched — not counted | — | listed in scope and findings | no |
+| [2024-11-27] Codehawks - LINK Staking Withdrawals.md | CommunityVCS | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xac1229...fbc1b5` — deployed 2023-11-22 19:50:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2024-11-27] Codehawks - LINK Staking Withdrawals.md | OperatorVault | unmatched — not counted | — | listed in scope and findings | no |
+| [2024-11-27] Codehawks - LINK Staking Withdrawals.md | VaultDepositController | unmatched — not counted | — | listed in scope and findings | no |
+| [2025-01-20] Cyfrin Staking Proxy.pdf | StakingProxy | unmatched — not counted | — | listed in scope | no |
+| [2025-01-20] Cyfrin Staking Proxy.pdf | PriorityPool | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0xdc2686...375fd3` — deployed 2026-02-09 22:17:59+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xddc796...fd60ea` — deployed 2023-09-20 19:38:35+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xcfa197...8b9d67` — deployed 2025-07-16 19:34:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| [2025-01-20] Cyfrin Staking Proxy.pdf | WithdrawalPool | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xa60b51...d0c248` — deployed 2025-02-06 20:53:47+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xbfbf47...096458` — deployed 2025-07-16 19:36:11+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x908b89...6d3690` — deployed 2026-02-09 22:18:23+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2025-02-06 was 17d from audit; next candidate 177d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-01-20] Cyfrin Staking Proxy.pdf | SDLPool | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x0b2ef9...48ca4d` — deployed 2023-09-20 19:34:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-01-20] Cyfrin Staking Proxy.pdf | RewardsPoolController | unmatched — not counted | — | listed in scope | no |
+| [2025-01-20] Cyfrin Staking Proxy.pdf | RewardsPool | unmatched — not counted | — | listed in scope | no |
+| [2025-01-20] Cyfrin Staking Proxy.pdf | RewardsPoolTimeBased | unmatched — not counted | — | listed in scope | no |
+| [2025-01-20] Cyfrin Staking Proxy.pdf | RewardsPoolWSD | ambiguous — not counted | RewardsPoolWSD (alternative) `0x4a18ae...490342` — deployed 2026-02-09 22:19:59+03 — liveness: live (current_address_book_code)<br>RewardsPoolWSD (alternative) `0x77f555...6b5a56` — deployed 2025-07-16 19:38:47+03 — liveness: live (current_address_book_code)<br>RewardsPoolWSD (alternative) `0x8753c0...f8cc72` — deployed 2023-09-20 19:35:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| [2025-02-04] Trust - LINK Staking Withdrawals.pdf | PriorityPool | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0xdc2686...375fd3` — deployed 2026-02-09 22:17:59+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xddc796...fd60ea` — deployed 2023-09-20 19:38:35+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xcfa197...8b9d67` — deployed 2025-07-16 19:34:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| [2025-02-04] Trust - LINK Staking Withdrawals.pdf | WithdrawalPool | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xa60b51...d0c248` — deployed 2025-02-06 20:53:47+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xbfbf47...096458` — deployed 2025-07-16 19:36:11+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x908b89...6d3690` — deployed 2026-02-09 22:18:23+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2025-02-06 was 2d from audit; next candidate 162d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-02-04] Trust - LINK Staking Withdrawals.pdf | VaultControllerStrategy | unmatched — not counted | — | listed in scope | no |
+| [2025-02-04] Trust - LINK Staking Withdrawals.pdf | FundFlowController | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xd2e738...6a0200` — deployed 2025-02-06 20:53:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-02-04] Trust - LINK Staking Withdrawals.pdf | StakingPool | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x5273a7...cb6e50` — deployed 2026-02-09 22:16:59+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0x2ff439...541753` — deployed 2025-07-16 19:34:11+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xb8b295...c43cd5` — deployed 2022-12-05 14:06:59+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| [2025-02-04] Trust - LINK Staking Withdrawals.pdf | RebaseController | own contract | RebaseController (alternative) `0xda669f...5b1c1f` — deployed 2025-07-16 19:35:23+03 — liveness: live (current_address_book_code)<br>RebaseController (selected) `0x1711e9...bdbec4` — deployed 2025-02-06 20:53:35+03 — liveness: live (current_address_book_code)<br>RebaseController (alternative) `0x5537f6...5ddb90` — deployed 2026-02-09 22:18:11+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2025-02-06 was 2d from audit; next candidate 162d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-02-04] Trust - LINK Staking Withdrawals.pdf | OperatorVCS | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x4852e4...39d2a4` — deployed 2022-12-06 18:16:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-02-04] Trust - LINK Staking Withdrawals.pdf | CommunityVCS | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xac1229...fbc1b5` — deployed 2023-11-22 19:50:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-02-04] Trust - LINK Staking Withdrawals.pdf | Vault | unmatched — not counted | — | listed in scope | no |
+| [2025-02-04] Trust - LINK Staking Withdrawals.pdf | OperatorVault | unmatched — not counted | — | listed in scope | no |
+| [2025-02-04] Trust - LINK Staking Withdrawals.pdf | CommunityVault | unmatched — not counted | — | listed in scope | no |
+| [2025-02-28] Cyfrin - CL Rewards Claiming.pdf | CommunityVCS | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xac1229...fbc1b5` — deployed 2023-11-22 19:50:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-02-28] Cyfrin - CL Rewards Claiming.pdf | CommunityVault | unmatched — not counted | — | listed in Audit Scope | no |
+| [2025-02-28] Cyfrin - CL Rewards Claiming.pdf | FundFlowController | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xd2e738...6a0200` — deployed 2025-02-06 20:53:59+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-02-28] Cyfrin - CL Rewards Claiming.pdf | OperatorVCS | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x4852e4...39d2a4` — deployed 2022-12-06 18:16:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-02-28] Cyfrin - CL Rewards Claiming.pdf | OperatorVault | unmatched — not counted | — | listed in Audit Scope | no |
+| [2025-02-28] Cyfrin - CL Rewards Claiming.pdf | Vault | unmatched — not counted | — | listed in Audit Scope | no |
+| [2025-02-28] Cyfrin - CL Rewards Claiming.pdf | VaultControllerStrategy | unmatched — not counted | — | listed in Audit Scope | no |
+| [2025-02-28] Cyfrin - CL Rewards Claiming.pdf | IDelegateRegistry | unmatched — not counted | — | listed in Audit Scope | no |
+| [2025-02-28] Cyfrin - CL Rewards Claiming.pdf | IVault | unmatched — not counted | — | listed in Audit Scope | no |
+| [2025-02-28] Cyfrin - CL Rewards Claiming.pdf | IVaultControllerStrategy | unmatched — not counted | — | listed in Audit Scope | no |
+| [2025-05-19] Cyfrin - Polygon Staking.pdf | PolygonFundFlowController | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x70f7da...f65951` — deployed 2025-07-16 19:38:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-05-19] Cyfrin - Polygon Staking.pdf | PolygonVault | unmatched — not counted | — | listed in scope | no |
+| [2025-05-19] Cyfrin - Polygon Staking.pdf | PolygonStrategy | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x7d145a...0300aa` — deployed 2025-07-16 19:37:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-06-04] Cyfrin - LINK Migrator.pdf | IPriorityPool | unmatched — not counted | — | — | no |
+| [2025-06-04] Cyfrin - LINK Migrator.pdf | LINKMigrator | unmatched — not counted | — | — | no |
+| [2025-06-04] Cyfrin - LINK Migrator.pdf | PriorityPool | own proxy deployment | ERC1967Proxy (proxy) (alternative) `0xdc2686...375fd3` — deployed 2026-02-09 22:17:59+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xddc796...fd60ea` — deployed 2023-09-20 19:38:35+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (selected) `0xcfa197...8b9d67` — deployed 2025-07-16 19:34:47+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2025-07-16 was 45d from audit; next candidate 253d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2025-08-02] Cyfrin - SDL Vesting.pdf | SDLVesting | unmatched — not counted | — | — | no |
+| [2025-08-02] Cyfrin - Vesting.pdf | SDLVesting | unmatched — not counted | — | — | no |
+| [2026-02-04] Cyfrin - Espresso Staking.pdf | EspressoFundFlowController | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xf36bdb...7104bd` — deployed 2026-02-09 22:19:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2026-02-04] Cyfrin - Espresso Staking.pdf | EspressoStrategy | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xf0fb3a...540344` — deployed 2026-02-09 22:19:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2026-02-04] Cyfrin - Espresso Staking.pdf | EspressoVault | unmatched — not counted | — | listed in scope | no |
+| [2026-03-23] Cyfrin - Rebase Batching.pdf | CommunityVCS | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xac1229...fbc1b5` — deployed 2023-11-22 19:50:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2026-03-23] Cyfrin - Rebase Batching.pdf | VaultControllerStrategy | unmatched — not counted | — | listed in scope | no |
+| [2026-03-23] Cyfrin - Rebase Batching.pdf | RebaseController | own contract | RebaseController (alternative) `0xda669f...5b1c1f` — deployed 2025-07-16 19:35:23+03 — liveness: live (current_address_book_code)<br>RebaseController (alternative) `0x1711e9...bdbec4` — deployed 2025-02-06 20:53:35+03 — liveness: live (current_address_book_code)<br>RebaseController (selected) `0x5537f6...5ddb90` — deployed 2026-02-09 22:18:11+03 — liveness: live (current_address_book_code) | deployment-date disambiguation: 2026-02-09 was 43d from audit; next candidate 251d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2026-03-23] Cyfrin - Rebase Batching.pdf | StakingPool | own proxy deployment | ERC1967Proxy (proxy) (selected) `0x5273a7...cb6e50` — deployed 2026-02-09 22:16:59+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0x2ff439...541753` — deployed 2025-07-16 19:34:11+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xb8b295...c43cd5` — deployed 2022-12-05 14:06:59+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2026-02-09 was 43d from audit; next candidate 251d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2026-03-23] Cyfrin - Rebase Batching.pdf | StrategyMock | unmatched — not counted | — | used in PoC but not in scope | no |
+| [2026-03-23] Cyfrin - Rebase Batching.pdf | CommunityVault | unmatched — not counted | — | deployed in PoC but not in scope | no |
+| [2026-03-23] Cyfrin - Rebase Batching.pdf | VaultDepositController | unmatched — not counted | — | deployed in PoC but not in scope | no |
+| [2026-03-23] Cyfrin - Rebase Batching.pdf | StakingRewardsMock | unmatched — not counted | — | deployed in PoC but not in scope | no |
+| [2026-03-23] Cyfrin - Rebase Batching.pdf | StakingMock | unmatched — not counted | — | deployed in PoC but not in scope | no |
+| [2026-03-23] Cyfrin - Rebase Batching.pdf | PriorityPool | own proxy deployment | ERC1967Proxy (proxy) (selected) `0xdc2686...375fd3` — deployed 2026-02-09 22:17:59+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xddc796...fd60ea` — deployed 2023-09-20 19:38:35+03 — liveness: live (code_present_context)<br>ERC1967Proxy (proxy) (alternative) `0xcfa197...8b9d67` — deployed 2025-07-16 19:34:47+03 — liveness: live (code_present_context) | deployment-date disambiguation: 2026-02-09 was 43d from audit; next candidate 251d; normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| [2026-03-23] Cyfrin - Rebase Batching.pdf | SecurityPool | unmatched — not counted | — | deployed in PoC but not in scope | no |
+| [2026-03-23] Cyfrin - Rebase Batching.pdf | ERC677 | unmatched — not counted | — | deployed in PoC but not in scope | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| polygon | `0x1d0347...b4b2ae` | BurnMintERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x3106e2...4972fb` | BurnMintERC677 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0xdfea35...d0eec0` | BurnMintERC677 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0xc271a1...c20a9c` | FactoryBurnMintERC20 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xe5b64a...ce26e6` | FactoryBurnMintERC20 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xf2f790...771297` | FactoryBurnMintERC20 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb72d8f...78349f` | GovernanceTimelock | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xda669f...5b1c1f` | RebaseController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x4a18ae...490342` | RewardsPoolWSD | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x77f555...6b5a56` | RewardsPoolWSD | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x8753c0...f8cc72` | RewardsPoolWSD | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x908b89...6d3690` | WithdrawalPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xbfbf47...096458` | WithdrawalPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2091d8...9555e6` | WrappedSDToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x43ff5f...f30a48` | WrappedSDToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 34 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 82 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=5
-- Match method counts: contract_name=27, extraction_exact=86
+- Address-book scope dispositions: 40 own (35 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 12 ambiguous, 109 unmatched
+- Matched-own operational status: 40 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=13, medium=1
+- Match method counts: temporal_name=12, unique_name=28
 
 Zero-match audit list:
 
+- [10454] [2023-03-07] Cyfrin - LSD Index Pool Report.pdf
 - [10458] [2024-04-30] Trust Security - Insurance Pool Report.pdf
 - [10459] [2024-04-30] Trust Security - Metis Staking Report.pdf
+- [10468] [2025-08-02] Cyfrin - SDL Vesting.pdf
+- [10469] [2025-08-02] Cyfrin - Vesting.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

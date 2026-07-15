@@ -1,8 +1,16 @@
 {
   "component": "SwapRouter02",
   "main_contract": "SwapRouter02",
+  "source_entry_count": 89,
   "source_file_count": 89,
-  "deployment_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SwapRouter02\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,39 +20,9 @@
       "address": "0x0c2bc01d435cfeb2dc6ad7cec0e473e2dbabdd87",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0xb75efbe431444667bbfc0b9faba9eab33e270445",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0xb8d86732fe95d3168669f4b2b73eda00fbc54d31",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0xbece4e11a73c209bfb6c8c96e5034dc1556bea4e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0xcbdeca132f93a71d963d26d8c93cfcced7f74362",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399320"
     }
   ]
 }

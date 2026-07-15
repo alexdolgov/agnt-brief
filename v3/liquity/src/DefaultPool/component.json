@@ -1,14 +1,18 @@
 {
   "component": "DefaultPool",
   "main_contract": "DefaultPool",
+  "source_entry_count": 42,
   "source_file_count": 42,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DefaultPool\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 3,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/trailofbits/publications/blob/master/reviews/Liquity.pdf",
-    "https://www.coinspect.com/doc/Liquity%20%2D%20Smart%20Contract%20Audit%202021%2Epdf",
-    "https://www.coinspect.com/doc/Liquity%20%2D%20Smart%20Contract%20Audit%202021.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -16,7 +20,9 @@
       "address": "0x5cc5cefd034fdc4728d487a72ca58a410cddcd6b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396040"
     },
     {
       "chain": "ethereum",
@@ -24,7 +30,9 @@
       "address": "0xd4558240d50c2e219a21c9d25afd513bb6e5b1a0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396073"
     },
     {
       "chain": "ethereum",
@@ -32,7 +40,9 @@
       "address": "0xd796e1648526400386cc4d12fa05e5f11e6a22a1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396074"
     }
   ]
 }

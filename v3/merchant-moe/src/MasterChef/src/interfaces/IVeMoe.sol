@@ -16,8 +16,6 @@ interface IVeMoe {
     error VeMoe__InvalidCaller();
     error VeMoe__InvalidBribeAddress();
     error VeMoe__InvalidPid(uint256 pid);
-    error VeMoe__InvalidWeight();
-    error VeMoe__InvalidAlpha();
     error VeMoe__CannotUnstakeWithVotes();
     error VeMoe__NoBribeForPid(uint256 pid);
     error VeMoe__TooManyPoolIds();
@@ -36,11 +34,6 @@ interface IVeMoe {
         uint256 reserve;
     }
 
-    struct BribeReward {
-        IVeMoeRewarder bribe;
-        uint256 rewardAmount;
-    }
-
     event BribesSet(address indexed account, uint256[] pids, IVeMoeRewarder[] bribes);
 
     event Claim(address indexed account, int256 deltaVeMoe);
@@ -50,8 +43,6 @@ interface IVeMoe {
     event Vote(address account, uint256[] pids, int256[] deltaVeAmounts);
 
     event VeMoePerSecondPerMoeSet(uint256 veMoePerSecondPerMoe);
-
-    event AlphaSet(uint256 alpha);
 
     function balanceOf(address account) external view returns (uint256 veMoe);
 
@@ -80,19 +71,13 @@ interface IVeMoe {
 
     function getTotalVotes() external view returns (uint256);
 
-    function getTotalWeight() external view returns (uint256);
-
     function getTotalVotesOf(address account) external view returns (uint256);
 
     function getVeMoePerSecondPerMoe() external view returns (uint256);
 
     function getVotes(uint256 pid) external view returns (uint256);
 
-    function getWeight(uint256 pid) external view returns (uint256);
-
     function getVotesOf(address account, uint256 pid) external view returns (uint256);
-
-    function getAlpha() external view returns (uint256);
 
     function getRewarderFactory() external view returns (IRewarderFactory);
 
@@ -104,8 +89,6 @@ interface IVeMoe {
     function setBribes(uint256[] memory pids, IVeMoeRewarder[] memory bribes) external;
 
     function setTopPoolIds(uint256[] memory pids) external;
-
-    function setAlpha(uint256 alpha) external;
 
     function setVeMoePerSecondPerMoe(uint256 veMoePerSecondPerMoe) external;
 

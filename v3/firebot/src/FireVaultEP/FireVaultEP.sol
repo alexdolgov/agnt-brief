@@ -1241,8 +1241,8 @@ contract FireVaultEP is ERC20 {
         return (getReserveEP().add(getReserveFBX().div(MINT_RATE))).mul(1e18).div(totalSupply());
     }
     
-    // Claim FBX rewards, mint new EP, and stake it
-    function claimMintStake() public {
+    // Claim FBX rewards, mint new EP
+    function claimAndMint() public {
         // Claim rewards
         uint256 rewards = EP.claimRewards();
         if (rewards > 0) {
@@ -1256,27 +1256,37 @@ contract FireVaultEP is ERC20 {
                 EP.mintEP(toSpend.div(MINT_RATE));
             }
         }
-        // Stake
+    }
+
+    // Stake available EP
+    function stake() public {
         uint256 unstakedEP = EP.balanceOf(address(this));
         if (unstakedEP > 0) {
             EP.stakeEP(unstakedEP);
         }
     }
 
+    // deposit EP
     function deposit(uint256 amountEP) external returns (uint256 amountFireEP) {
         require(amountEP > 0, "Amount to deposit should be greater than 0.");
+        claimAndMint();
         amountFireEP = amountEP.mul(1e18).div(withdrawalRate());
         EP.safeTransferFrom(msg.sender, address(this), amountEP);
-        claimMintStake();
+        stake();
         _mint(msg.sender, amountFireEP);
     }
 
+    // withdraw EP
     function withdraw(uint256 amountFireEP) external returns (uint256 amountEP) {
         require(amountFireEP > 0, "Amount to withdraw should be greater than 0.");
+        claimAndMint();
         amountEP = amountFireEP.mul(withdrawalRate()).div(1e18);
         _burn(msg.sender, amountFireEP);
-        EP.unstakeEP(amountEP.sub(EP.balanceOf(address(this))));
-        claimMintStake();
+        uint256 balanceEP = EP.balanceOf(address(this));
+        if (balanceEP < amountEP) {
+            EP.unstakeEP(amountEP.sub(balanceEP));
+        }
         EP.safeTransfer(msg.sender, amountEP);
+        stake();
     }
 }

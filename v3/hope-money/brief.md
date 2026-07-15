@@ -1,112 +1,113 @@
 # Agentic Audit Brief: HOPE Money
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 3 across 1 audit(s)
+- Eligible audit results: 5 (1 matched; 4 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: HOPE Money (`hope-money`)
+- Website: [https://docs.hope.money/](https://docs.hope.money/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:58.634Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 44 unique implementations (70 raw deployments)
+- Contract surface: 3 unique implementations (3 raw deployments)
+- Coverage basis: 3/3 confirmed own live verified implementations (100.0%); conservative 100.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,307,534.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Basis Trading. Structurally: 120 project-authored contract(s) across 1 chain(s); 10 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for HOPE Money. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Its contracts share 13 common project-authored base contract(s) (proxy, erc1967upgrade, accesscontrolupgradeable). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 5 contract row(s) across ethereum. Structural roles: 4 unclassified, 1 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 5
+- Structural roles: unclassified (4), core (1)
+- Contract kinds: contract (5)
+- Detected standards: erc20 (1), ownable (1), ownable2step (1)
+- Frameworks: openzeppelin (1), permit2 (1)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 1 contracts are derived from known codebases. 1 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- StakingHOPE (`0xf5c6d9...9fd4d8`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 135; live-surface contracts included: 55 (53 live, 2 unknown).
-- Excluded by liveness: 80 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 5; live-surface contracts included: 5 (3 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 3/3 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 15/42 (35.7%)
-- Deployed-live implementations: 42 of 44 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 15/42
-- Verified + Unaudited implementations: 27
+- Coverage of address-book-owned deployed-live implementations: 3/3 (100.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 3 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 3/3
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 44
-- Raw deployments: 70
+- Unverified implementations: 0
+- Unique implementations: 3
+- Raw deployments: 3
 - Audits discovered: 5 (5 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 4
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-04 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 4 stale, 1 unknown
-- Coverage code basis (deployed vs audited code): 15 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
-- Tier 1 coverage: 26.2% (SlowMist)
+- Coverage code basis (deployed vs audited code): 3 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: 100.0% (SlowMist)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| SlowMist | Tier 1 | 11 | 26.2% | 2023-03 |
-| PeckShield | Tier 2 | 7 | 16.7% | 2023-04 |
-| CertiK | Tier 2 | 6 | 14.3% | 2023-04 |
+| SlowMist | Tier 1 | 3 | 100.0% | 2023-03 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (15)
+### ✅ Verified + Audited (3)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| ApprovedTokenManager | unknown | ethereum | n/a | [`0x2ca1f5...173c78`](./contracts/ethereum-1/0x2ca1f5e429d423701052222e598e036016173c78/) | ✅ Audited |
-| BurnerManager | unknown | ethereum | n/a | [`0x0d80a7...966066`](./contracts/ethereum-1/0x0d80a72c9f98e5b1c7fb3e3dc4d58aeca5966066/) | ✅ Audited |
-| FeeDistributor | unknown | ethereum | n/a | 2 deployments: ethereum [`0x60498d...7285bb`](./contracts/ethereum-1/0x60498d57c18737f0a37e43f9bc20a3ce937285bb/); ethereum `0x99040c...2bb697` | ✅ Audited |
-| GaugeController | unknown | ethereum | n/a | [`0xa8b270...b4dd7e`](./contracts/ethereum-1/0xa8b2706b45eb95e5d14f8c29a3c5cf0cd5b4dd7e/) | ✅ Audited |
-| GaugeFeeDistributor | unknown | ethereum | n/a | 2 deployments: ethereum [`0xdedd17...3c48ed`](./contracts/ethereum-1/0xdedd17f3f3d6af647b94b77fa0d97983003c48ed/); ethereum `0xe0530d...898a84` | ✅ Audited |
-| HOPE | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8f9bd4...03c61e`](./contracts/ethereum-1/0x8f9bd4f6b88c46657aab889f1150b0521203c61e/); ethereum `0xc353bf...68f98e` | ✅ Audited |
-| HOPE | unknown | ethereum | n/a | [`0xe4a14f...848e84`](./contracts/ethereum-1/0xe4a14f5a293274ee3fae3958895a22e6fc848e84/) | ✅ Audited |
-| HopeSwapBurner | unknown | ethereum | n/a | [`0xd32864...acea42`](./contracts/ethereum-1/0xd32864ff55aa1ceabace9d3e57bb113461acea42/) | ✅ Audited |
-| LT | unknown | ethereum | n/a | 2 deployments: ethereum [`0x9ed143...9a735b`](./contracts/ethereum-1/0x9ed1439d328647bdb148c20316ea024c719a735b/); ethereum `0xd708e5...8ed019` | ✅ Audited |
-| PoolGauge | unknown | ethereum | n/a | [`0x3f954d...7908aa`](./contracts/ethereum-1/0x3f954d5db340578773218388d8327035db7908aa/) | ✅ Audited |
-| StakingHOPE | unknown | ethereum | n/a | [`0xf5c6d9...9fd4d8`](./contracts/ethereum-1/0xf5c6d9fc73991f687f158fe30d4a77691a9fd4d8/) | ✅ Audited |
-| SwapFeeToVault | unknown | ethereum | n/a | [`0xda9c43...f42f23`](./contracts/ethereum-1/0xda9c43a13a82b0d0292cf38e18fa71a0a9f42f23/) | ✅ Audited |
-| UnderlyingBurner | unknown | ethereum | n/a | [`0xd61fd6...cadc97`](./contracts/ethereum-1/0xd61fd63a466dee970eea49ef109283a57acadc97/) | ✅ Audited |
-| UniswapV2Router02 | adapter | ethereum | n/a | [`0x219bd2...5051e9`](./contracts/ethereum-1/0x219bd2d1449f3813c01204ee455d11b41d5051e9/) | ✅ Audited |
-| VotingEscrow | unknown | ethereum | n/a | [`0xe909f3...b67400`](./contracts/ethereum-1/0xe909f37f3003fa37aad83c1baf2a98e5a7b67400/) | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| HOPE | unknown | project_anchor | own_supporting | 1 | ethereum | unit-387318 | `0xc353bf...68f98e` | ✅ Audited |
+| LT | unknown | project_anchor | own_supporting | 1 | ethereum | unit-387319 | `0x9ed143...9a735b` | ✅ Audited |
+| StakingHOPE | unknown | project_anchor | own_supporting | 0 | ethereum | unit-387317 | `0xf5c6d9...9fd4d8` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (27)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| brBTC | unknown | ethereum | n/a | [`0x2ec37d...8f6646`](./contracts/ethereum-1/0x2ec37d45fcae65d9787ecf71dc85a444968f6646/) | ⚠️ Unaudited |
-| brVault | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1419b4...0e3386`](./contracts/ethereum-1/0x1419b48e5c1f5ce413cf02d6dcbe1314170e3386/); ethereum `0xc7d81a...8334c7` | ⚠️ Unaudited |
-| CCIPPeer | unknown | ethereum | n/a | [`0x55a67c...b60edc`](./contracts/ethereum-1/0x55a67cf07b8a9a09fb6d565279287cfe4ab60edc/) | ⚠️ Unaudited |
-| DelayRedeemRouter | unknown | ethereum | n/a | 2 deployments: ethereum [`0x720081...eb859d`](./contracts/ethereum-1/0x720081e3ee2b1542e341afc793de20b08beb859d/); ethereum `0xaa732c...f89246` | ⚠️ Unaudited |
-| directBTC | unknown | ethereum | n/a | 2 deployments: ethereum [`0x11964b...09954b`](./contracts/ethereum-1/0x11964b366f794ae56717e8efa05d31ab2a09954b/); ethereum `0xa70099...c0b090` | ⚠️ Unaudited |
-| DirectBTCMinter | unknown | ethereum | n/a | [`0x91fd8c...d64500`](./contracts/ethereum-1/0x91fd8c7a5fda7d52ab41bbe423eedd3a65d64500/) | ⚠️ Unaudited |
-| DirectStaking | unknown | ethereum | n/a | [`0xe8239b...5c4572`](./contracts/ethereum-1/0xe8239b17034c372cdf8a5f8d3ccb7cf1795c4572/) | ⚠️ Unaudited |
-| HToken | token | ethereum | n/a | 7 deployments: ethereum [`0x1fc2dd...2c9386`](./contracts/ethereum-1/0x1fc2dd0dcb64e0159b0474cfe6e45985522c9386/); ethereum `0x25126f...403907`; ethereum `0x396856...a4323e`; ethereum `0x58792e...f74d90`; ethereum `0x5dd30e...303572`; ethereum `0x6090f3...51b749`; ethereum `0xb3cc0a...334e62` | ⚠️ Unaudited |
-| LightTeamVault | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6a1207...9d82c3`](./contracts/ethereum-1/0x6a120782dc421ef28f148ee1fee8a09bc59d82c3/); ethereum `0xdd42df...e54513` | ⚠️ Unaudited |
-| LightTeamVaultManager | unknown | ethereum | n/a | 2 deployments: ethereum [`0x045087...a20a91`](./contracts/ethereum-1/0x045087cbb64b35a31845b6e720c17f443ea20a91/); ethereum `0xedb47d...b3c0bc` | ⚠️ Unaudited |
-| Payment | unknown | ethereum | n/a | 2 deployments: ethereum [`0x552b0c...42fa05`](./contracts/ethereum-1/0x552b0c6688fcae5cf0164f27fd129b882a42fa05/); ethereum `0x9203ce...718031` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | 2 deployments: ethereum [`0x9f6326...e7f002`](./contracts/ethereum-1/0x9f63269196a8828f05f2e49d1078ea7c44e7f002/); ethereum `0xcc0f98...a3bd39` | ⚠️ Unaudited |
-| Redeem | unknown | ethereum | n/a | 2 deployments: ethereum [`0x981692...1d3b8d`](./contracts/ethereum-1/0x98169228cb99ed26c1043ed8ca53a5cb371d3b8d/); ethereum `0x9ca778...3c5f8c` | ⚠️ Unaudited |
-| Restaking | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1e4d0a...c4e518`](./contracts/ethereum-1/0x1e4d0a963953e7c08fc7602b01e683547fc4e518/); ethereum `0x3f4eac...6e9850` | ⚠️ Unaudited |
-| RewardPool | unknown | ethereum | n/a | [`0xb7019c...732064`](./contracts/ethereum-1/0xb7019c9184580b2e1f66fcdc3eb6c62621732064/) | ⚠️ Unaudited |
-| RockXETH | unknown | ethereum | n/a | 2 deployments: ethereum [`0x3376eb...61514a`](./contracts/ethereum-1/0x3376ebca0a85fc8d791b1001a571c41fdd61514a/); ethereum `0x58cb26...9d187d` | ⚠️ Unaudited |
-| RockXETH | unknown | ethereum | n/a | 2 deployments: ethereum [`0x79f2c3...449597`](./contracts/ethereum-1/0x79f2c32204e997d4d49de3d45a6130d627449597/); ethereum `0xd48d3e...905e11` | ⚠️ Unaudited |
-| RockXETH | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8a9486...98e590`](./contracts/ethereum-1/0x8a94866df557bb7fce88eff9917237286098e590/); ethereum `0xf1376b...df51f4` | ⚠️ Unaudited |
-| RockXRedeem | unknown | ethereum | n/a | 2 deployments: ethereum [`0x3774af...4ba818`](./contracts/ethereum-1/0x3774af7bb6e792963167588ae85b5ab8664ba818/); ethereum `0x5e3787...58d2f9` | ⚠️ Unaudited |
-| RockXRedeem | unknown | ethereum | n/a | 2 deployments: ethereum [`0x89b2c7...740aeb`](./contracts/ethereum-1/0x89b2c722abf9e1c8dd215e4e8352e0f293740aeb/); ethereum `0xdfc7d2...2b511e` | ⚠️ Unaudited |
-| RockXStaking | unknown | ethereum | n/a | 2 deployments: ethereum [`0x02e3e2...af25ea`](./contracts/ethereum-1/0x02e3e2c644601b18ad67a6f09155fe5581af25ea/); ethereum `0x11b380...66be7b` | ⚠️ Unaudited |
-| Staking | unknown | ethereum | n/a | [`0x4befa2...269e9d`](./contracts/ethereum-1/0x4befa2aa9c305238aa3e0b5d17eb20c045269e9d/) | ⚠️ Unaudited |
-| UnderlyingBurnerV2 | unknown | ethereum | n/a | [`0x77b3cf...ee5f29`](./contracts/ethereum-1/0x77b3cfcd79f8030fac267da519a1d8e4f6ee5f29/) | ⚠️ Unaudited |
-| uniBTC | unknown | ethereum | n/a | [`0x004e9c...350568`](./contracts/ethereum-1/0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568/) | ⚠️ Unaudited |
-| uniBTC | unknown | ethereum | n/a | [`0x51a7f8...db6c5e`](./contracts/ethereum-1/0x51a7f889480c57cbeea81614f7d0be2b70db6c5e/) | ⚠️ Unaudited |
-| uniBTCRate | unknown | ethereum | n/a | 2 deployments: ethereum [`0xe54291...abc716`](./contracts/ethereum-1/0xe542919e4b281f10b437f947c8ba224ddfabc716/); ethereum `0xf50dba...bcdae9` | ⚠️ Unaudited |
-| VaultWithoutNative | unknown | ethereum | n/a | [`0x047d41...10d6da`](./contracts/ethereum-1/0x047d41f2544b7f63a8e991af2068a363d210d6da/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -120,24 +121,88 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x0fe418...dc12f8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x69fd3e...21bbdb` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [CertiK-Audit-for-LightDAO-II-v1.pdf](https://github.com/Light-Ecosystem/light-dao/blob/main/audit/CertiK-Audit-for-LightDAO-II-v1.pdf) | CertiK | Audit | 2023-04 | stale | Direct | contract_name | 7 | high |
-| [PeckShield-Audit-Report-HOPE-v1.2.pdf](https://github.com/Light-Ecosystem/light-dao/blob/main/audit/PeckShield-Audit-Report-HOPE-v1.2.pdf) | PeckShield | Audit | 2023-04 | stale | Direct | contract_name | 9 | high |
-| [SlowMist Audit Report - LightDAO Phase1_en-us.pdf](https://github.com/Light-Ecosystem/light-dao/blob/main/audit/SlowMist%20Audit%20Report%20-%20LightDAO%20Phase1_en-us.pdf) | SlowMist | Audit | 2023-02 | stale | Direct | contract_name | 7 | high |
-| [SlowMist Audit Report - LightDAO Phase2_en-us.pdf](https://github.com/Light-Ecosystem/light-dao/blob/main/audit/SlowMist%20Audit%20Report%20-%20LightDAO%20Phase2_en-us.pdf) | SlowMist | Audit | 2023-03 | stale | Direct | contract_name | 7 | high |
-| [- [Audits]()](https://docs.hope.money/appendix/audits.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [CertiK-Audit-for-LightDAO-II-v1.pdf](https://github.com/Light-Ecosystem/light-dao/blob/main/audit/CertiK-Audit-for-LightDAO-II-v1.pdf) | CertiK | Audit | 2023-04 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 16 | high |
+| [PeckShield-Audit-Report-HOPE-v1.2.pdf](https://github.com/Light-Ecosystem/light-dao/blob/main/audit/PeckShield-Audit-Report-HOPE-v1.2.pdf) | PeckShield | Audit | 2023-04 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 7 | high |
+| [SlowMist Audit Report - LightDAO Phase1_en-us.pdf](https://github.com/Light-Ecosystem/light-dao/blob/main/audit/SlowMist%20Audit%20Report%20-%20LightDAO%20Phase1_en-us.pdf) | SlowMist | Audit | 2023-02 | stale | Direct | address | matched | 3 | 2 | 0 | 9 | high |
+| [SlowMist Audit Report - LightDAO Phase2_en-us.pdf](https://github.com/Light-Ecosystem/light-dao/blob/main/audit/SlowMist%20Audit%20Report%20-%20LightDAO%20Phase2_en-us.pdf) | SlowMist | Audit | 2023-03 | stale | Direct | address | no match | 0 | 0 | 0 | 15 | high |
+| [- [Audits]()](https://docs.hope.money/appendix/audits.md) | unknown | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [17436] CertiK-Audit-for-LightDAO-II-v1.pdf — no match: Extracted 16 contract names from the audit scope table and findings. The audit date is explicitly stated as 'Verified on Apr 20th, 2023' and 'Delivered on 04/20/2023'.
+- [17437] PeckShield-Audit-Report-HOPE-v1.2.pdf — no match: Extracted contract names from findings sections where they are explicitly listed as targets. Audit date from cover page and latest audit report date.
+- [17438] SlowMist Audit Report - LightDAO Phase1_en-us.pdf — matched: Contracts extracted from visibility tables and code overview sections. Audit date from audit result table: 2023.02.03 - 2023.02.16, using end date.
+- [17439] SlowMist Audit Report - LightDAO Phase2_en-us.pdf — no match: Extracted 15 contracts from scope sections, code overview, and deployed addresses. Audit date from audit result table: 2023.02.20 - 2023.03.01, using end date.
+- [17440] - [Audits]() — no match: The document is an index page listing audit reports with links, but does not contain the actual audit report content or scope details. No contract names or audit dates are extractable from this page.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| CertiK-Audit-for-LightDAO-II-v1.pdf | UniswapV2Router01 | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | UniswapV2Router02 | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | LightSwapBurner | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | UnderlyingBurner | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | FeeDistributor | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | GombocFeeDistributor | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | UniswapV2Factory | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | UniswapV2Pair | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | BurnerManager | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | SwapFeeToVault | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | ApprovedTokenManager | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | Context | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | Ownable | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | UniswapV2ERC20 | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | UniswapV2Migrator | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK-Audit-for-LightDAO-II-v1.pdf | UniswapV2LiquidityMathLibrary | unmatched — not counted | — | mentioned in finding UVL-01 | no |
+| PeckShield-Audit-Report-HOPE-v1.2.pdf | PoolGauge | unmatched — not counted | — | Mentioned in finding PVE-001 as target contract with _withdraw() function | no |
+| PeckShield-Audit-Report-HOPE-v1.2.pdf | HopeSwapBurner | unmatched — not counted | — | Mentioned in finding PVE-002 as target contract with burn() function | no |
+| PeckShield-Audit-Report-HOPE-v1.2.pdf | UnderlyingBurner | unmatched — not counted | — | Mentioned in finding PVE-002 as target contract with burn() function | no |
+| PeckShield-Audit-Report-HOPE-v1.2.pdf | SwapFeeToVault | unmatched — not counted | — | Mentioned in finding PVE-003 as target contract with burn() and withdrawAdminFee() functions | no |
+| PeckShield-Audit-Report-HOPE-v1.2.pdf | GaugeController | unmatched — not counted | — | Mentioned in finding PVE-004 as example contract with privileged owner functions | no |
+| PeckShield-Audit-Report-HOPE-v1.2.pdf | GaugeFeeDistributor | unmatched — not counted | — | Mentioned in finding PVE-005 as target contract with claimableTokens() and _claim() functions | no |
+| PeckShield-Audit-Report-HOPE-v1.2.pdf | FeeDistributor | unmatched — not counted | — | Mentioned in finding PVE-005 as target contract alongside GaugeFeeDistributor | no |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | AgentManager | unmatched — not counted | — | listed in scope and visibility table | no |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | HOPESalesAgent | unmatched — not counted | — | listed in scope and visibility table | no |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | LT | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x9ed143...9a735b` — deployed 2023-04-18 03:00:35+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | HOPE | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xc353bf...68f98e` — deployed 2023-04-17 18:49:47+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | Minter | unmatched — not counted | — | listed in scope and visibility table | no |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | StakingHOPE | own contract | StakingHOPE (selected) `0xf5c6d9...9fd4d8` — deployed 2023-04-18 03:38:35+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | VotingEscrow | unmatched — not counted | — | listed in scope and visibility table | no |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | PoolGomboc | unmatched — not counted | — | listed in scope and visibility table | no |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | GombocController | unmatched — not counted | — | listed in scope and visibility table | no |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | GombocFactory | unmatched — not counted | — | listed in scope and visibility table | no |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | AbsGomboc | unmatched — not counted | — | listed in scope and visibility table | no |
+| SlowMist Audit Report - LightDAO Phase1_en-us.pdf | AbsExternalLTRewardDistributor | unmatched — not counted | — | listed in scope and visibility table | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | UniswapV2Factory | unmatched — not counted | — | listed in scope and deployed address | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | UniswapV2Pair | unmatched — not counted | — | listed in scope and code location | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | UniswapV2ERC20 | unmatched — not counted | — | listed in scope | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | Ownable | unmatched — not counted | — | listed in scope | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | Context | unmatched — not counted | — | listed in scope | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | ApprovedTokenManager | unmatched — not counted | — | listed in scope and deployed address | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | UniswapV2Migrator | unmatched — not counted | — | listed in scope | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | UniswapV2Router01 | unmatched — not counted | — | listed in scope | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | UniswapV2Router02 | unmatched — not counted | — | listed in scope and deployed address | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | BurnerManager | unmatched — not counted | — | listed in scope and deployed address | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | FeeDistributor | unmatched — not counted | — | listed in scope and deployed address | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | GombocFeeDistributor | unmatched — not counted | — | listed in scope and deployed address | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | LightSwapBurner | unmatched — not counted | — | listed in scope | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | SwapFeeToVault | unmatched — not counted | — | listed in scope and deployed address | no |
+| SlowMist Audit Report - LightDAO Phase2_en-us.pdf | UnderlyingBurner | unmatched — not counted | — | listed in scope and deployed address | no |
 
 ## Coverage Gaps
 
@@ -149,22 +214,27 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 44 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=4
-- Match method counts: extraction_exact=30
+- Address-book scope dispositions: 3 own (2 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 47 unmatched
+- Matched-own operational status: 3 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=4, low=1
+- Match method counts: address=3
 
 Zero-match audit list:
 
+- [17436] CertiK-Audit-for-LightDAO-II-v1.pdf
+- [17437] PeckShield-Audit-Report-HOPE-v1.2.pdf
+- [17439] SlowMist Audit Report - LightDAO Phase2_en-us.pdf
 - [17440] - [Audits]()
 
 Fork inheritance lineage and inherited audits are included when available.

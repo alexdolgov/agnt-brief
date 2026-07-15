@@ -14,5 +14,7 @@ interface IOldERC721 {
 
     function takeOwnership(uint256 _tokenId) external;
 
-    function tokenURI(uint256 _tokenId) external view returns (string memory _uri);
+    function tokenURI(
+        uint256 _tokenId
+    ) external view returns (string memory _uri);
 }

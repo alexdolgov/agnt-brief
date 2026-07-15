@@ -1,7 +1,15 @@
 {
   "component": "BoringVault",
   "main_contract": "BoringVault",
+  "source_entry_count": 13,
   "source_file_count": 13,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BoringVault\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x455d5f11fea33a8fa9d3e285930b478b6bf85265",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "chain-146",
@@ -20,7 +30,9 @@
       "address": "0x4d85ba8c3918359c78ed09581e5bc7578ba932ba",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

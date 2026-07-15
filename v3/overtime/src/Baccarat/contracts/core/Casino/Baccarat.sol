@@ -125,7 +125,6 @@ contract Baccarat is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyGu
         uint8 playerTotal;
         uint8 bankerTotal;
         uint8[6] cards;
-        uint bankerMultiplier;
     }
 
     struct CoreAddresses {
@@ -362,9 +361,6 @@ contract Baccarat is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyGu
         bet.reservedProfit = reservedProfit;
         bet.betType = betType;
         bet.status = BetStatus.PENDING;
-        if (betType == BetType.BANKER) {
-            bet.bankerMultiplier = bankerPayoutMultiplier;
-        }
 
         if (_isFreeBet) isFreeBet[betId] = true;
 
@@ -439,7 +435,7 @@ contract Baccarat is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyGu
     /// @param bet Bet storage reference
     /// @param randomWord VRF random word
     function _resolveBet(uint betId, Bet storage bet, uint256 randomWord) internal {
-        ResolveResult memory r = _resolveGame(bet.amount, bet.betType, bet.bankerMultiplier, randomWord);
+        ResolveResult memory r = _resolveGame(bet.amount, bet.betType, randomWord);
 
         reservedProfitPerCollateral[bet.collateral] -= bet.reservedProfit;
 
@@ -474,12 +470,7 @@ contract Baccarat is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyGu
     /// @param betType Type of baccarat bet
     /// @param randomWord VRF random word
     /// @return r Resolution result containing game outcome, cards and totals
-    function _resolveGame(
-        uint amount,
-        BetType betType,
-        uint bankerMultiplier,
-        uint256 randomWord
-    ) internal pure returns (ResolveResult memory r) {
+    function _resolveGame(uint amount, BetType betType, uint256 randomWord) internal view returns (ResolveResult memory r) {
         // Deal initial four cards
         r.cards[0] = _getCardValue(randomWord, 0);
         r.cards[1] = _getCardValue(randomWord, 1);
@@ -507,7 +498,7 @@ contract Baccarat is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyGu
         }
 
         r.result = _getGameResult(r.playerTotal, r.bankerTotal);
-        (r.payout, r.won, r.isPush) = _getPayout(amount, betType, bankerMultiplier, r.result);
+        (r.payout, r.won, r.isPush) = _getPayout(amount, betType, r.result);
     }
 
     function _setReferrer(address _referrer, address _user) internal {
@@ -737,9 +728,8 @@ contract Baccarat is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyGu
     function _getPayout(
         uint amount,
         BetType betType,
-        uint bankerMultiplier,
         GameResult result
-    ) internal pure returns (uint payout, bool won, bool isPush) {
+    ) internal view returns (uint payout, bool won, bool isPush) {
         if (betType == BetType.PLAYER) {
             if (result == GameResult.PLAYER) return (amount * 2, true, false);
             if (result == GameResult.TIE) return (amount, false, true);
@@ -747,7 +737,7 @@ contract Baccarat is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyGu
         }
 
         if (betType == BetType.BANKER) {
-            if (result == GameResult.BANKER) return ((amount * bankerMultiplier) / ONE, true, false);
+            if (result == GameResult.BANKER) return ((amount * bankerPayoutMultiplier) / ONE, true, false);
             if (result == GameResult.TIE) return (amount, false, true);
             return (0, false, false);
         }

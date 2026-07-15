@@ -1,8 +1,16 @@
 {
   "component": "Claimer",
   "main_contract": "Claimer",
+  "source_entry_count": 45,
   "source_file_count": 45,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Claimer\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,19 @@
       "address": "0x54aa02cbc223fc834949fb1fd8c855e4da126c7d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397867"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x220c9398b0ee07472bf8906e44574cb9fe3b8d90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397880"
     },
     {
       "chain": "gnosis",
@@ -20,7 +40,9 @@
       "address": "0x0cffb70cdd335cc5380cb58166699edaa2b0bbfa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397900"
     },
     {
       "chain": "base",
@@ -28,7 +50,9 @@
       "address": "0xcdce635b774de77cdf791647601dba64a75547ba",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397931"
     },
     {
       "chain": "arbitrum",
@@ -36,7 +60,9 @@
       "address": "0xbea38368f2a657f00f173764f18f00e841317c73",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397950"
     }
   ]
 }

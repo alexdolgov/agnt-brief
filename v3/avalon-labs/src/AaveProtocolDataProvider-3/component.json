@@ -1,8 +1,16 @@
 {
   "component": "AaveProtocolDataProvider-3",
   "main_contract": "AaveProtocolDataProvider",
+  "source_entry_count": 18,
   "source_file_count": 18,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AaveProtocolDataProvider-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x16b9b88b773c1a1aba6d305e0560171405d45121",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1329",
-      "chain_id": 1329,
-      "address": "0x5ecdc2432ed77cd8e2ce6183712c5cc712c40ec0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,42 +1,28 @@
 {
   "component": "BulkSender",
   "main_contract": "BulkSender",
+  "source_entry_count": 6,
   "source_file_count": 6,
-  "deployment_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BulkSender\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x3fd5b4dcda968c8e22898523f5343177f94ccfd1",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x621c335b4bd8f2165e120dc70d3afcafc6628681",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x3fd5b4dcda968c8e22898523f5343177f94ccfd1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-130",
-      "chain_id": 130,
-      "address": "0x1349a9ddee26fe16d0d44e35b3cb9b0ca18213a4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-130",
-      "chain_id": 130,
-      "address": "0x3bc6b601196752497a68b2625db4f2205c3b150b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "polygon",
@@ -44,31 +30,9 @@
       "address": "0x29b0e6d2c2884aea3fb4cb5dd1c7002a8e10c724",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x5b64cecc5cf3e4b1a668abd895d16bddc0c77a17",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x95bda90196c4e737933360f4639c46ace657aab7",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xf187645d1c5ae70c3ddcdee6d746e5a7619a2a65",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",
@@ -76,15 +40,9 @@
       "address": "0x95bda90196c4e737933360f4639c46ace657aab7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x841a2bd2fc97dcb865b4ddb352540148bad2db09",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

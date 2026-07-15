@@ -1,7 +1,15 @@
 {
   "component": "HStrategy",
   "main_contract": "HStrategy",
-  "source_file_count": 101,
+  "source_entry_count": 52,
+  "source_file_count": 52,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HStrategy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -9,12 +17,14 @@
   ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x3ad64e6a4f6ef8c32a5abdeea8b027d6ce197917",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x158b75d163ae46de8c36fb9068df8908417030a8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403477"
     }
   ]
 }

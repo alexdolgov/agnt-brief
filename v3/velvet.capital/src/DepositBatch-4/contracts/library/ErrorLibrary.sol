@@ -73,24 +73,6 @@ library ErrorLibrary {
   error PublicFundToWhitelistedNotAllowed();
   /// @notice Generic call failed error
   error CallFailed();
-  /// @notice Deposit batch call failed error
-  error DepositBatchCallFailed();
-  /// @notice Withdraw batch call failed error
-  error WithdrawBatchCallFailed();
-  /// @notice Vault interaction call failed error
-  error VaultInteractionCallFailed();
-  /// @notice Repay borrow call failed error
-  error RepayBorrowCallFailed();
-  /// @notice Repay vault call failed error
-  error RepayVaultCallFailed();
-  /// @notice Thrown when flash loan operation failed
-  error FlashLoanOperationFailed();
-  /// @notice Swap execution failed error in handler
-  error SwapExecutionFailed();
-  /// @notice Rebalance swap failed error in handler
-  error RebalanceSwapFailed();
-  /// @notice Swap failed error
-  error SwapFailed();
   /// @notice Generic transfer failed error
   error TransferFailed();
   /// @notice Throws when the initToken or updateTokenList function of Portfolio is having more tokens than set by the Registry
@@ -103,8 +85,6 @@ library ErrorLibrary {
   error SequencerIsDown();
   /// @notice Throws when sequencer threshold is not crossed
   error SequencerThresholdNotCrossed();
-  /// @notice Throws when sequencer timestamp is zero
-  error InvalidSequencerTimestamp();
   /// @notice Throws when depositAmount and depositToken length does not match
   error InvalidDepositInputLength();
   /// @notice Mint amount smaller than users indended buy amount
@@ -129,8 +109,6 @@ library ErrorLibrary {
   error BalanceOfHandlerShouldBeZero();
   /// @notice Throws when balance of selltoken in handler after swap is exceeding dust
   error BalanceOfHandlerShouldNotExceedDust();
-  /// @notice Throws when balance of selltoken in vault after swap is exceeding dust
-  error BalanceOfVaultShouldNotExceedDust();
   /// @notice Throws when swap return value in handler is less then min buy amounts
   error ReturnValueLessThenExpected();
   /// @notice Throws when non portfolio token balance in not zero after rebalance
@@ -175,8 +153,6 @@ library ErrorLibrary {
   error ProtocolEmergencyPaused();
   /// @notice Thrown when batchHandler balance diff is zero
   error InvalidBalanceDiff();
-  ///@notice Error thrown when the user tries to withdraw or transfer an amount greater than their balance.
-  error InsufficientBalance();
   // @notice Thrown when an unpause action is attempted too soon after the last unpause.
   error TimeSinceLastUnpauseNotElapsed();
   // @notice Thrown when an invalid cooldown period is set.
@@ -201,46 +177,4 @@ library ErrorLibrary {
   error InvalidTargetAddress();
   // @notice Thrown when the ETH balance sent is zero
   error InvalidBalance();
-  // @notice Thrown when the swap amount is invalid
-  error InvalidSwapAmount();
-  // @notice Thrown when the passed deviation bps is invalid
-  error InvalidDeviationBps();
-  // @notice Thrown when external position management is not whitelisted
-  error ExternalPositionManagementNotWhitelisted();
-  // @notice Thrown when the increase liquidity call fails
-  error IncreaseLiquidityFailed();
-  // @notice Thrown when the decrease liquidity call fails
-  error DecreaseLiquidityFailed();
-  // @notice Thrown when borrow failed
-  error BorrowFailed();
-  // @notice Thrown when invalid flashloan provider factory address is provided
-  error InvalidFactoryAddress();
-  // @notice Thrown when buffer unit is more then max valid collateral buffer unit
-  error InvalidBufferUnit();
-  // @notice Thrown when new buffer unit is more then max accetable buffer unit
-  error InvalidNewBufferUnit();
-  /// @notice Thrown when a swap operation is invalid
-  error InvalidSwap();
-  // @notice Thrown when controller data is not found
-  error ControllerDataNotFound();
-  // @notice Thrown when the input token used for swapping is invalid
-  error InvalidSwapToken();
-  // @notice Thrown when attempting to enable a protocol manager that is already enabled
-  error ProtocolManagerAlreadyEnabled(bytes32);
-  // @notice Thrown when attempting to use a protocol that is not whitelisted for the portfolio
-  error ProtocolNotWhitelisted(bytes32);
-  // @notice Thrown when attempting to use a protocol that is not enabled in protocol config
-  error ProtocolNotEnabled(bytes32);
-  // @notice Thrown when protocol owner sets new borrow token limit more then max limit(20)
-  error ExceedsBorrowLimit();
-  // @notice Thrown when borrow token limit exceeds the max limit set by protocol owner
-  error BorrowTokenLimitExceeded();
-  // @notice Thrown when flash loan functionality is not active for the portfolio
-  error FlashLoanIsInactive();
-  // @notice Thrown when flash laon is not initiater by borrow manager contract
-  error InvalidLoanInitiator();
-  // @notice Thrown when swapHandler is not correct
-  error InvalidSwapHandler();
-  // @notice Thrown when position wrapper is not valid
-  error InvalidPositionWrapper();
 }

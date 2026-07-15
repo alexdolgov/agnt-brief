@@ -1,7 +1,15 @@
 {
   "component": "VaultProxy",
   "main_contract": "VaultProxy",
+  "source_entry_count": 10,
   "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VaultProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -15,7 +23,9 @@
       "address": "0xcd9f5907f92818bc06c9ad70217f089e190d2a32",
       "is_proxy": true,
       "implementation_address": "0x1b5cd91e61505d431d2a61192a1006146bd9bb28",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398516"
     }
   ]
 }

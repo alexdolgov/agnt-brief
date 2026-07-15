@@ -1,12 +1,21 @@
 {
   "component": "BToken",
   "main_contract": "BToken",
+  "source_entry_count": 2,
   "source_file_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BToken\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://www.baseline.markets/assets/2024-10-27_Baseline_BToken.pdf",
-    "https://www.baseline.markets/assets/2025-02-27_Baseline_Fixed_Supply.pdf"
+    "https://www.baseline.markets/assets/2025-02-27_Baseline_Fixed_Supply.pdf",
+    "https://www.baseline.markets/assets/2026-05-27_Baseline_Mercury_AMM_Report.pdf"
   ],
   "addresses": [
     {
@@ -15,7 +24,9 @@
       "address": "0x9fdbde76236998dc2836fe67a9954ede456a1d63",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391962"
     }
   ]
 }

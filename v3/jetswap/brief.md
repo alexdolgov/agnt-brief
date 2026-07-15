@@ -1,81 +1,123 @@
 # Agentic Audit Brief: JetSwap
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 4 across 2 audit(s)
+- Eligible audit results: 2 (2 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: JetSwap (`jetswap`)
+- Website: [https://jetswap.finance/](https://jetswap.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:16.663Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
-- Chains: bsc
-- Contract surface: 22 unique implementations (39 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: bsc, polygon
+- Contract surface: 11 unique implementations (11 raw deployments)
+- Coverage basis: 3/8 confirmed own live verified implementations (37.5%); conservative 37.5% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $309,127.67
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Dexs. Structurally: 54 project-authored contract(s) across 1 chain(s); 22 ERC20 tokens, 1 ERC721 NFT; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for JetSwap. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 4 functional families. Its contracts share 1 common project-authored base contract(s) (contractguard). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 9 contract row(s) across bsc, polygon. Structural roles: 8 core, 1 supporting. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 9
+- Structural roles: core (8), supporting (1)
+- Contract kinds: contract (9)
+- Detected standards: ownable (4), erc20 (3), erc20permit (1)
+- Frameworks: openzeppelin (8)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 9 contracts are derived from known codebases. 9 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- Factory (`0x668ad0...cd4ac7`, chain 137)
+- JetswapFactory (`0x0eb58e...dfcbd5`, chain 56)
+- JetswapRouter (`0xbe65b8...714800`, chain 56)
+- MasterChef (`0x63d6ec...b6f9f5`, chain 56)
+- MasterChef (`0x4e2239...bf1d85`, chain 137)
+- Multicall (`0xf64882...4ee3dd`, chain 137)
+- pWINGS (`0x845e76...09ee25`, chain 137)
+- Router (`0x5c6ec3...3e5923`, chain 137)
+- WingsToken (`0x0487b8...498446`, chain 56)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 263; live-surface contracts included: 39 (33 live, 6 unknown).
-- Excluded by liveness: 224 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 9; live-surface contracts included: 9 (9 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 9/11 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/16 (0.0%)
-- Deployed-live implementations: 16 of 22 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/16
-- Verified + Unaudited implementations: 16
+- Coverage of address-book-owned deployed-live implementations: 3/8 (37.5%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 8 own, 3 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (3 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 9 of 11 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 3/8
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 6
-- Unique implementations: 22
-- Raw deployments: 39
+- Unverified implementations: 0
+- Unique implementations: 11
+- Raw deployments: 11
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 0
+- Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 2 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Latest audit: 2021-04 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 3 | 37.5% | 2021-04 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (3)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| JetswapFactory | unknown | project_anchor | own_supporting | 0 | bsc | unit-387738 | `0x0eb58e...dfcbd5` | ✅ Audited |
+| JetswapRouter | adapter | project_anchor | own_supporting | 0 | bsc | unit-387741 | `0xbe65b8...714800` | ✅ Audited |
+| Multicall | unknown | project_anchor | own_supporting | 0 | polygon | unit-387736 | `0xf64882...4ee3dd` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (16)
+### ⚠️ Verified + Unaudited (6)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| GFORCE | unknown | bsc | n/a | [`0x94babb...1b26ce`](./contracts/bsc-56/0x94babbe728d9411612ee41b20241a6fa251b26ce/) | ⚠️ Unaudited |
-| GFORCEv2 | unknown | bsc | n/a | [`0x5f1363...e64c66`](./contracts/bsc-56/0x5f136383e230f972739fae2e81e7e774afe64c66/) | ⚠️ Unaudited |
-| JetBar | unknown | bsc | n/a | [`0xf64882...4ee3dd`](./contracts/bsc-56/0xf6488205957f0b4497053d6422f49e27944ee3dd/) | ⚠️ Unaudited |
-| JetfuelFortressVault | core_logic | bsc | n/a | [`0x647db6...3e22d2`](./contracts/bsc-56/0x647db6dce3c36ac1a3ba48f0f6b767a6c73e22d2/) | ⚠️ Unaudited |
-| JetfuelVault | core_logic | bsc | n/a | 9 deployments: bsc [`0x184ba4...30b7ba`](./contracts/bsc-56/0x184ba48939c49f54b0aa31f76177eba40130b7ba/); bsc `0x1ae8f4...e722ae`; bsc `0x29c12b...a78433`; bsc `0x414953...6b4f1c`; bsc `0x7c3397...4771f4`; bsc `0xa6d550...4474ff`; bsc `0xc573b7...2169ff`; bsc `0xd13bbd...2fe227`; bsc `0xd1c249...cd3104` | ⚠️ Unaudited |
-| JetfuelVaultDittoBoost | core_logic | bsc | n/a | [`0x3d6d41...73dc20`](./contracts/bsc-56/0x3d6d415be40159f207540f95e398f29a7173dc20/) | ⚠️ Unaudited |
-| JetswapBar | unknown | bsc | n/a | [`0xd07947...d61b47`](./contracts/bsc-56/0xd079475f820bb3a01932083382aed733d3d61b47/) | ⚠️ Unaudited |
-| JetswapRouter | adapter | bsc | n/a | [`0xbe65b8...714800`](./contracts/bsc-56/0xbe65b8f75b9f20f4c522e0067a3887fada714800/) | ⚠️ Unaudited |
-| JetswapVault | core_logic | bsc | n/a | 5 deployments: bsc [`0x465a5e...c826a4`](./contracts/bsc-56/0x465a5e8501bf38898a8aead87f0d864adcc826a4/); bsc `0x755aac...99ae90`; bsc `0xd0b1dc...fa31b5`; bsc `0xed2097...976fb0`; bsc `0xf2f113...17e664` | ⚠️ Unaudited |
-| MasterChef | unknown | bsc | n/a | [`0x63d6ec...b6f9f5`](./contracts/bsc-56/0x63d6ec1cdef04464287e2af710ffef9780b6f9f5/) | ⚠️ Unaudited |
-| SmartChef | unknown | bsc | n/a | 2 deployments: bsc [`0x76fe14...a7d973`](./contracts/bsc-56/0x76fe142b05ff6afbc10b56c7fd8aec3030a7d973/); bsc `0xe7b83b...a54354` | ⚠️ Unaudited |
-| StrategyFortress | core_logic | bsc | n/a | 2 deployments: bsc [`0xdc012e...964e1a`](./contracts/bsc-56/0xdc012ee194179ceb4f5431015148b0da1f964e1a/); bsc `0xe54572...0de789` | ⚠️ Unaudited |
-| StrategyFortressBNB | core_logic | bsc | n/a | [`0x58b8b3...8c506d`](./contracts/bsc-56/0x58b8b3430c70e76a33e91a6c942078b8f88c506d/) | ⚠️ Unaudited |
-| StrategyWingsLP | core_logic | bsc | n/a | 4 deployments: bsc [`0x5d9ebd...707ad8`](./contracts/bsc-56/0x5d9ebde919f6ee1a37263ee9d7bbdc5821707ad8/); bsc `0x70ed48...9d8a30`; bsc `0xa22dbb...f2e0b6`; bsc `0xad74c8...7cbae8` | ⚠️ Unaudited |
-| StrategyWingsSingleVault | core_logic | bsc | n/a | [`0xf150fd...24e06f`](./contracts/bsc-56/0xf150fd19a8f88668099eab23291162124f24e06f/) | ⚠️ Unaudited |
-| WingsToken | token | bsc | n/a | [`0x0487b8...498446`](./contracts/bsc-56/0x0487b824c8261462f88940f97053e65bdb498446/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Factory | unknown | project_anchor | own_supporting | 0 | polygon | unit-387734 | `0x668ad0...cd4ac7` | ⚠️ Unaudited |
+| MasterChef | unknown | project_anchor | own_supporting | 0 | bsc | unit-387739 | `0x63d6ec...b6f9f5` | ⚠️ Unaudited |
+| MasterChef | unknown | project_anchor | own_supporting | 0 | polygon | unit-387732 | `0x4e2239...bf1d85` | ⚠️ Unaudited |
+| pWINGS | unknown | project_anchor | own_supporting | 0 | polygon | unit-387735 | `0x845e76...09ee25` | ⚠️ Unaudited |
+| Router | unknown | project_anchor | own_supporting | 0 | polygon | unit-387733 | `0x5c6ec3...3e5923` | ⚠️ Unaudited |
+| WingsToken | token | external_dependency_or_infra | third_party_dependency (excluded) | 0 | bsc | unit-387737 | `0x0487b8...498446` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,53 +131,72 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x47e2b2...0a6b40` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x6b9040...263aaf` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x733ea2...4ac038` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x813692...2891b8` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x897420...cc4210` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xa1a441...35fd4d` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | bsc | unit-387740 | `0xbb4cdb...bc095c` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-387731 | `0x0d500b...df1270` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [audit-by-etherauthority.pdf](https://jetswap.finance/audit-by-etherauthority.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [audit-by-hash0x.pdf](https://jetswap.finance/audit-by-hash0x.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [audit-by-etherauthority.pdf](https://jetswap.finance/audit-by-etherauthority.pdf) | unknown | Audit | 2021-03 | stale | Direct | contract_name | matched | 1 | 0 | 0 | 4 | high |
+| [audit-by-hash0x.pdf](https://jetswap.finance/audit-by-hash0x.pdf) | unknown | Audit | 2021-04 | stale | Direct | contract_name | matched | 3 | 0 | 0 | 2 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [13302] audit-by-etherauthority.pdf — matched: All five contracts listed in the 'Project files' table are explicitly in scope. The audit date is from the cover page: 'Prepared on :23/03/2021'.
+- [13303] audit-by-hash0x.pdf — matched: Five contracts explicitly listed in scope table on page 4. Audit date from cover page: 21/04/2021.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| audit-by-etherauthority.pdf | MasterChef | ambiguous — not counted | MasterChef (alternative) `0x4e2239...bf1d85` — liveness: live (current_address_book_code)<br>MasterChef (alternative) `0x63d6ec...b6f9f5` — deployed 2021-05-16 19:28:37+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| audit-by-etherauthority.pdf | Multicall | own contract | Multicall (selected) `0xf64882...4ee3dd` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| audit-by-etherauthority.pdf | swapV2Factory | unmatched — not counted | — | listed in project files table | no |
+| audit-by-etherauthority.pdf | swapV2Router02 | unmatched — not counted | — | listed in project files table | no |
+| audit-by-etherauthority.pdf | WingsToken | unmatched — not counted | — | listed in project files table | no |
+| audit-by-hash0x.pdf | MasterChef | ambiguous — not counted | MasterChef (alternative) `0x4e2239...bf1d85` — liveness: live (current_address_book_code)<br>MasterChef (alternative) `0x63d6ec...b6f9f5` — deployed 2021-05-16 19:28:37+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| audit-by-hash0x.pdf | Multicall | own contract | Multicall (selected) `0xf64882...4ee3dd` — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| audit-by-hash0x.pdf | JetswapFactory | own contract | JetswapFactory (selected) `0x0eb58e...dfcbd5` — deployed 2021-05-03 07:48:25+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| audit-by-hash0x.pdf | JetswapRouter | own contract | JetswapRouter (selected) `0xbe65b8...714800` — deployed 2021-05-03 07:58:52+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| audit-by-hash0x.pdf | WingsToken | unmatched — not counted | — | listed in scope table with MD5 hash | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| bsc | `0x63d6ec...b6f9f5` | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 4 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 22 |
+| needs_review | 7 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
-
-Zero-match audit list:
-
-- [13302] audit-by-etherauthority.pdf
-- [13303] audit-by-hash0x.pdf
+- Address-book scope dispositions: 4 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 2 ambiguous, 4 unmatched
+- Matched-own operational status: 4 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=2
+- Match method counts: unique_name=4
 
 Fork inheritance lineage and inherited audits are included when available.

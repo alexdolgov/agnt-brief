@@ -1,44 +1,86 @@
 # Agentic Audit Brief: Wrapped
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Wrapped (`wrapped`)
 - Website: [https://wrapped.com](https://wrapped.com)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:13.085Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
-- Chains: celo
-- Contract surface: 42 unique implementations (42 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: ethereum
+- Contract surface: 2 unique implementations (2 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $18,686,097.44
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+The closed normalized authority records no EVM contract logic or eligible security audit for this project. This is an explicit cohort state, not a skipped export.
+
 ## Project Description
 
-Bridge. Structurally: 2 project-authored contract(s) across 1 chain(s); role-gated via AccessControl; built on openzeppelin.
+No contract logic was present for Wrapped in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 2 contracts are derived from known codebases. 2 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x4a6451...b66e10`, chain 1)
+- UnnamedContract (`0x6e1a19...7494de`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 46; live-surface contracts included: 42 (1 live, 41 unknown).
-- Excluded by liveness: 4 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 2/2 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/1 (0.0%)
-- Deployed-live implementations: 1 of 42 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/1
-- Verified + Unaudited implementations: 1
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 2 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 2 of 2 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 41
-- Unique implementations: 42
-- Raw deployments: 42
+- Unverified implementations: 2
+- Unique implementations: 2
+- Raw deployments: 2
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,11 +99,9 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AutoFarmV2_CrossChain | unknown | celo | n/a | [`0xdd11b6...12303f`](./contracts/celo-42220/0xdd11b66b90402f294a017c4688509c364312303f/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -75,58 +115,25 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (41)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | celo | n/a | `0x089ee9...480e76` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x1009ef...7570d7` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x19795c...a01454` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x1d1779...d49977` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x1f7ceb...e85db3` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x222f69...6aee7a` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x29bc02...c25557` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x2dc13f...e2af08` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x2e29b0...49cc6b` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x2f39b9...a0f927` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x3581ae...62edb4` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x4508ab...85eccb` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x4b6ed3...b2f68f` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x4e176b...40be01` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x5e0b1a...da82b6` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x61989e...a9372a` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x65ac8a...7268f3` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x67030a...1eb409` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x68def7...68e3d5` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x703730...5c58ca` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x71f3ba...12a767` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x75e41f...543f9d` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x7d29b5...558113` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x7e8503...d35b13` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x9c5765...d13eea` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x9f4bef...1687f1` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0x9fbfe1...6e9a8e` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xa07b88...1bdef1` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xa0c634...7fd9e8` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xa5d057...6d3ac6` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xa92c75...04b04d` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xc0db3c...ab4e5f` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xd39e81...8bf8a0` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xd4ca9f...790dfc` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xdef8c1...9bdca8` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xe3fa2f...af879e` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xe8c9dd...8ca48c` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xed2ce4...69a8fd` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xf3a2bf...5439b9` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xf4cf09...62921c` | ❓ Unverified |
-| UnnamedContract | unknown | celo | n/a | `0xfd4371...304c56` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396677 | `0x4a6451...b66e10` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-396678 | `0x6e1a19...7494de` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -141,7 +148,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 42 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
@@ -149,6 +156,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

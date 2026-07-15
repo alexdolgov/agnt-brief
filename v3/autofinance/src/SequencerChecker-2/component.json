@@ -1,18 +1,28 @@
 {
   "component": "SequencerChecker-2",
   "main_contract": "SequencerChecker",
-  "source_file_count": 58,
+  "source_entry_count": 64,
+  "source_file_count": 64,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SequencerChecker-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x564c39c2c5d120724da31d1428773c1aead23535",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x537f6e12fbc2ebf630d6d8db7bbf8612a0d97dcc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391787"
     }
   ]
 }

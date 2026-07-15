@@ -1,10 +1,20 @@
 {
   "component": "JoeStaking",
   "main_contract": "JoeStaking",
+  "source_entry_count": 15,
   "source_file_count": 15,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/JoeStaking\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://paladinsec.co/projects/merchant-moe"
+  ],
   "addresses": [
     {
       "chain": "mantle",
@@ -12,7 +22,9 @@
       "address": "0x7fb0fc8514d817c655276a2895307176f253d303",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396563"
     }
   ]
 }

@@ -10,6 +10,7 @@ import "../interfaces/ILiquidationHandler.sol";
 import "../interfaces/loans/IMultiSourceLoan.sol";
 import "./callbacks/CallbackHandler.sol";
 import "./InputChecker.sol";
+import "./utils/Hash.sol";
 
 /// @title Liquidation Handler
 /// @author Florida St
@@ -17,6 +18,7 @@ import "./InputChecker.sol";
 abstract contract LiquidationHandler is ILiquidationHandler, ReentrancyGuard, CallbackHandler {
     using InputChecker for address;
     using FixedPointMathLib for uint256;
+    using Hash for IMultiSourceLoan.Loan;
 
     uint48 public constant MIN_AUCTION_DURATION = 3 days;
     uint48 public constant MAX_AUCTION_DURATION = 7 days;
@@ -26,7 +28,7 @@ abstract contract LiquidationHandler is ILiquidationHandler, ReentrancyGuard, Ca
     /// @notice Duration of the auction when a loan defaults requires a liquidation.
     uint48 internal _liquidationAuctionDuration = 3 days;
 
-    /// @notice Liquidator used defaulted loans that requires liquidation.
+    /// @notice Liquidator used for new defaulted loans (routes NFT transfers).
     address internal _loanLiquidator;
 
     event MinBidLiquidationUpdated(uint256 newMinBid);
@@ -38,8 +40,6 @@ abstract contract LiquidationHandler is ILiquidationHandler, ReentrancyGuard, Ca
     event LiquidationContractUpdated(address liquidator);
 
     event LiquidationAuctionDurationUpdated(uint256 newDuration);
-
-    error LiquidatorOnlyError(address _liquidator);
 
     error LoanNotDueError(uint256 _expirationTime);
 
@@ -58,14 +58,7 @@ abstract contract LiquidationHandler is ILiquidationHandler, ReentrancyGuard, Ca
         _loanLiquidator = __loanLiquidator;
     }
 
-    modifier onlyLiquidator() {
-        if (msg.sender != address(_loanLiquidator)) {
-            revert LiquidatorOnlyError(address(_loanLiquidator));
-        }
-        _;
-    }
     /// @inheritdoc ILiquidationHandler
-
     function getLiquidator() external view override returns (address) {
         return _loanLiquidator;
     }
@@ -105,24 +98,22 @@ abstract contract LiquidationHandler is ILiquidationHandler, ReentrancyGuard, Ca
             revert LoanNotDueError(expirationTime);
         }
         if (_canClaim) {
-            ERC721(_loan.nftCollateralAddress).transferFrom(
-                address(this), _loan.tranche[0].lender, _loan.nftCollateralTokenId
-            );
+            ERC721(_loan.nftCollateralAddress)
+                .transferFrom(address(this), _loan.tranche[0].lender, _loan.nftCollateralTokenId);
             emit LoanForeclosed(_loanId);
 
             liquidated = true;
         } else {
             address liquidator = _loanLiquidator;
             ERC721(_loan.nftCollateralAddress).transferFrom(address(this), liquidator, _loan.nftCollateralTokenId);
-            liquidation = ILoanLiquidator(liquidator).liquidateLoan(
-                _loanId,
-                _loan.nftCollateralAddress,
-                _loan.nftCollateralTokenId,
-                _loan.principalAddress,
-                _liquidationAuctionDuration,
-                _loan.principalAmount.mulDivDown(MIN_BID_LIQUIDATION, _BPS),
-                msg.sender
-            );
+            liquidation = ILoanLiquidator(liquidator)
+                .liquidateLoan(
+                    _loanId,
+                    _loan,
+                    _liquidationAuctionDuration,
+                    _loan.principalAmount.mulDivDown(MIN_BID_LIQUIDATION, _BPS),
+                    msg.sender
+                );
 
             emit LoanSentToLiquidator(_loanId, liquidator);
         }

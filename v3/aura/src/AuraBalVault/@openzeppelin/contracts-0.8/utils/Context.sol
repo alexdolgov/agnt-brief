@@ -14,10 +14,18 @@ pragma solidity ^0.8.0;
  * This contract is only required for intermediate, library-like contracts.
  */
 abstract contract Context {
+    /**
+     * @notice This function returns the address of the sender of the message.
+     * @dev This function is an internal view function that returns the address of the sender of the message.
+     */
     function _msgSender() internal view virtual returns (address) {
         return msg.sender;
     }
 
+    /**
+     * @notice _msgData() is an internal view function that returns the calldata of the message.
+     * @dev This function is used to access the calldata of the message.
+     */
     function _msgData() internal view virtual returns (bytes calldata) {
         return msg.data;
     }

@@ -1,15 +1,18 @@
 {
   "component": "EnsoHandler",
   "main_contract": "EnsoHandler",
+  "source_entry_count": 8,
   "source_file_count": 8,
-  "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Velvet-Capital/audits/blob/main/Audit_Report_VLVT-V3C_FINAL_20-1.pdf",
-    "https://github.com/Velvet-Capital/audits/blob/main/Audit_Report_VLVT-V3C_FINAL_20.pdf",
-    "https://github.com/Velvet-Capital/audits/blob/main/Smart_Contract_Audit_Velvet_Capital_Corev3_13072024-1.pdf",
-    "https://github.com/Velvet-Capital/audits/blob/main/report.md"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EnsoHandler\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -17,15 +20,9 @@
       "address": "0x18439b037dcae4a1528ccc3871d695e61653e617",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x93601cd28435bcbf1a397b2c015f268df1bc7dbf",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

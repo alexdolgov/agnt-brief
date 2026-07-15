@@ -1,8 +1,16 @@
 {
   "component": "Unic",
   "main_contract": "Unic",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Unic\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/uniclyNFT/Resources/blob/main/Unicly%20Security%20Audit.pdf"
@@ -11,18 +19,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x719c3abf7c2435be34ed479b98db85342d107755",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
       "address": "0x94e0bab2f6ab1f19f4750e42d7349f2740513ad5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400518"
     }
   ]
 }

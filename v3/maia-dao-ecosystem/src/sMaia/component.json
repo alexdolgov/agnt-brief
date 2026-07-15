@@ -1,8 +1,16 @@
 {
   "component": "sMaia",
   "main_contract": "sMaia",
+  "source_entry_count": 4,
   "source_file_count": 4,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/sMaia\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x54ccc76091fe30bcce8b0dae102d264d24e1ea1c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x559119275a8a862edbd2cde21196f4c758d5ab84",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

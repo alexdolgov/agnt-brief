@@ -1,10 +1,21 @@
 {
   "component": "UnstUSDTProxy",
   "main_contract": "UnstUSDTProxy",
-  "source_file_count": 4,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UnstUSDTProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://reports.chainsecurity.com/StUSDT/ChainSecurity_StUSDT_StUSDT_Audit.pdf",
+    "https://stusdt.io/audit-report.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +23,9 @@
       "address": "0x156269966404ca72f6721c3228676c56412c058c",
       "is_proxy": true,
       "implementation_address": "0xa5a49f108ac7ac6bfe57328159288376ea19314b",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404122"
     }
   ]
 }

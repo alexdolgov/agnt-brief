@@ -17,7 +17,7 @@ contract GovernanceToken is
 {
     constructor(
         address initialOwner
-    ) ERC20("Bar", "BAR") Ownable(initialOwner) ERC20Permit("Bar") {}
+    ) ERC20("Mode", "MODE") Ownable(initialOwner) ERC20Permit("Mode") {}
 
     function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);

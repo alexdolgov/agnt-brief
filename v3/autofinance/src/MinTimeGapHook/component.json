@@ -1,8 +1,16 @@
 {
   "component": "MinTimeGapHook",
   "main_contract": "MinTimeGapHook",
+  "source_entry_count": 65,
   "source_file_count": 65,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MinTimeGapHook\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,9 @@
       "address": "0x71689a8e924ba6611fac7bd40c55796e8b1679d9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391747"
     },
     {
       "chain": "arbitrum",
@@ -20,23 +30,9 @@
       "address": "0x09d0d6a48545e959b230600966d93600fab50322",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x5483a297ab5ba84cdda05ccb9bdb027b27a7ece8",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xcb409a14b706fe5326f2fc3c0f437791722dffe0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391761"
     }
   ]
 }

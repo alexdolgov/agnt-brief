@@ -1,1509 +1,1369 @@
-# agnt-brief v3 — recovered briefs + repo-tree contracts
+# agnt-brief v3 — canonical briefs + Foundry contract packages
 
-Each project has `brief.json`/`brief.md`, a `DEPLOYMENTS.md` address map, and `src/<Component>/` —
-one package per unique verified source bundle (named by its main contract), holding the real source tree.
+Every canonical project has `brief.json`/`brief.md`. Projects with verified sources also have a
+`DEPLOYMENTS.md` address map and one standalone Foundry package per unique source bundle under `src/<Component>/`.
+Publication is not gated by audit availability: verified contract packages are published even when a project has no audits.
 
-| Project | Audits | Coverage | Audited/Live | Contracts | Lifecycle |
-|---|---|---|---|---|---|
-| [0x0.ai](0x0.ai/) | 4 | 0% | 0/6 | 6 |  |
-| [1inch](1inch/) | 150 | 34% | 16/47 | 355 | declining |
-| [3f](3f/) | 14 | 16.9% | 30/177 | 177 |  |
-| [3f-mutual](3f-mutual/) | 1 | 0% | 0/9 | 12 | active |
-| [3jane](3jane/) | 4 | 59.1% | 13/22 | 24 | active |
-| [3xcalibur](3xcalibur/) | 1 | 78.6% | 11/14 | 18 | dead |
-| [40-acres](40-acres/) | 4 | 0% | 0/135 | 651 | active |
-| [88mph](88mph/) | 10 | 0% | 0/74 | 75 |  |
-| [9inch](9inch/) | 2 | 0% | 0/18 | 18 |  |
-| [a51-finance](a51-finance/) | 8 | 66.7% | 14/21 | 26 | declining |
-| [aarna-protocol](aarna-protocol/) | 3 | 12.1% | 8/66 | 66 |  |
-| [aave](aave/) | 132 | 60.4% | 32/53 | 54 |  |
-| [aavegotchi](aavegotchi/) | 1 | 0% | 0/16 | 16 |  |
-| [abracadabra](abracadabra/) | 5 | 4.5% | 9/202 | 1087 | dead |
-| [abstract](abstract/) | 3 | 0% | 0/15 | 15 |  |
-| [acala-euphrates](acala-euphrates/) | 3 | 0% | 0/1 | 2 | dead |
-| [accountable](accountable/) | 5 | 0% | 0/18 | 18 |  |
-| [accumulated-finance](accumulated-finance/) | 3 | 4.5% | 1/22 | 43 | unknown |
-| [acet](acet/) | 2 | 37.5% | 3/8 | 8 | unknown |
-| [acre](acre/) | 6 | 0.4% | 1/279 | 292 | unknown |
-| [across](across/) | 11 | 16.2% | 16/99 | 178 | unknown |
-| [acryptos](acryptos/) | 8 | 50% | 8/16 | 579 | declining |
-| [adamant-finance](adamant-finance/) | 1 | 0% | 0/73 | 73 |  |
-| [aegis](aegis/) | 2 | 0% | 0/15 | 17 | active |
-| [aegis-markets](aegis-markets/) | 2 | 0% | 0/14 | 19 | declining |
-| [aequinox](aequinox/) | 0 | 0% | 0/78 | 78 |  |
-| [aera](aera/) | 5 | 2.1% | 3/144 | 225 | active |
-| [aerodrome](aerodrome/) | 11 | 15.2% | 10/66 | 67 |  |
-| [aethir](aethir/) | 1 | 0% | 0/6 | 6 | unknown |
-| [aevo](aevo/) | 17 | 60% | 12/20 | 323 | unknown |
-| [afi-protocol](afi-protocol/) | 4 | 0% | 0/8 | 8 |  |
-| [agave](agave/) | 0 | 0% | 0/1 | 1 |  |
-| [ailayer-farm](ailayer-farm/) | 1 | 0% | 0/1 | 1 | active |
-| [airpuff](airpuff/) | 17 | 5.5% | 10/182 | 183 |  |
-| [aitech](aitech/) | 1 | 0% | 0/3 | 3 | unknown |
-| [akropolis](akropolis/) | 1 | 0% | 0/2 | 6 | unknown |
-| [aladdin-dao](aladdin-dao/) | 20 | 20.3% | 15/74 | 514 | dead |
-| [alchemist](alchemist/) | 2 | 0% | 0/14 | 14 |  |
-| [alchemix](alchemix/) | 6 | 11.4% | 14/123 | 662 | declining |
-| [algoblocks](algoblocks/) | 1 | 16.7% | 1/6 | 19 | unknown |
-| [alien-base](alien-base/) | 0 | 0% | 0/28 | 39 | declining |
-| [alita-finance](alita-finance/) | 1 | 0% | 0/6 | 6 |  |
-| [alium-swap](alium-swap/) | 3 | 50% | 2/4 | 49 | declining |
-| [allbridge](allbridge/) | 11 | 0% | 0/65 | 300 | declining |
-| [allstake](allstake/) | 3 | 0% | 0/2 | 2 |  |
-| [almanak](almanak/) | 0 | 0% | 0/3 | 3 |  |
-| [alongside](alongside/) | 4 | 0% | 0/15 | 15 |  |
-| [alpaca-city](alpaca-city/) | 0 | 0% | 0/13 | 13 |  |
-| [alpaca-finance](alpaca-finance/) | 19 | 83.8% | 67/80 | 109 | declining |
-| [alphadex](alphadex/) | 1 | 0% | 0/7 | 7 |  |
-| [alphagrowth](alphagrowth/) | 16 | 15.4% | 4/26 | 159 | active |
-| [alphaping](alphaping/) | 0 | 0% | 0/5 | 5 | active |
-| [alphax](alphax/) | 1 | 0% | 0/1 | 1 | active |
-| [alphix](alphix/) | 2 | 0% | 0/3 | 3 |  |
-| [alta-finance](alta-finance/) | 0 | 0% | 0/1 | 1 |  |
-| [altitude](altitude/) | 1 | 25% | 1/4 | 26 | unknown |
-| [altitude.fi](altitude.fi/) | 7 | 33.3% | 9/27 | 127 | declining |
-| [alto](alto/) | 9 | 0% | 0/16 | 16 |  |
-| [ambient](ambient/) | 3 | 7.1% | 1/14 | 19 | declining |
-| [ambire-wallet](ambire-wallet/) | 12 | 0% | 0/2 | 10 | unknown |
-| [amped-finance](amped-finance/) | 2 | 11.1% | 3/27 | 45 | declining |
-| [ampleswap](ampleswap/) | 1 | 26.3% | 5/19 | 24 | declining |
-| [amulet](amulet/) | 0 | 0% | 0/4 | 4 |  |
-| [amy-finance](amy-finance/) | 1 | 0% | 0/1 | 1 | dead |
-| [ancient8](ancient8/) | 0 | 0% | 0/12 | 12 |  |
-| [anemoy-capital](anemoy-capital/) | 0 | 0% | 0/1 | 1 |  |
-| [angle](angle/) | 3 | 2.4% | 5/211 | 1620 | dead |
-| [angles](angles/) | 1 | 0% | 0/10 | 25 | declining |
-| [angstrom](angstrom/) | 3 | 7.7% | 1/13 | 13 | declining |
-| [animal-farm](animal-farm/) | 2 | 0% | 0/20 | 151 |  |
-| [ankr](ankr/) | 14 | 0.8% | 1/121 | 202 | active |
-| [antarctic](antarctic/) | 1 | 0% | 0/9 | 13 |  |
-| [ante-finance](ante-finance/) | 4 | 0% | 0/68 | 72 |  |
-| [antfarm-finance](antfarm-finance/) | 2 | 0% | 0/11 | 11 |  |
-| [anthias-labs](anthias-labs/) | 0 | 0% | 0/3 | 3 | unknown |
-| [anvil](anvil/) | 4 | 58.3% | 7/12 | 12 | declining |
-| [anzen-finance](anzen-finance/) | 6 | 17.6% | 6/34 | 45 | unknown |
-| [ao-bridge](ao-bridge/) | 0 | 0% | 0/4 | 4 | declining |
-| [apechain-bridge](apechain-bridge/) | 0 | 0% | 0/16 | 18 | unknown |
-| [aperocket](aperocket/) | 1 | 2.4% | 1/41 | 970 | dead |
-| [apex-protocol](apex-protocol/) | 1 | 21.3% | 10/47 | 580 | active |
-| [api3](api3/) | 6 | 18.2% | 4/22 | 39 | active |
-| [apy-finance](apy-finance/) | 3 | 0% | 0/5 | 5 |  |
-| [aquabank](aquabank/) | 2 | 11.1% | 1/9 | 108 | active |
-| [arbitrove](arbitrove/) | 1 | 0% | 0/2 | 2 |  |
-| [arbitrum-bridge](arbitrum-bridge/) | 32 | 0% | 0/1 | 1 |  |
-| [arbitrum-exchange](arbitrum-exchange/) | 1 | 50% | 3/6 | 136 | dead |
-| [arbitrum-nova-bridge](arbitrum-nova-bridge/) | 32 | 0% | 0/38 | 46 | declining |
-| [arbswap](arbswap/) | 17 | 25% | 5/20 | 20 |  |
-| [arca-labs-arcoin](arca-labs-arcoin/) | 7 | 14.3% | 6/42 | 42 |  |
-| [arcade.xyz](arcade.xyz/) | 10 | 48% | 12/25 | 42 | dead |
-| [arcadia-finance](arcadia-finance/) | 13 | 27.4% | 31/113 | 463 | active |
-| [arch](arch/) | 1 | 14.3% | 1/7 | 259 | declining |
-| [arenaswap](arenaswap/) | 1 | 50% | 1/2 | 7 | declining |
-| [aria-protocol](aria-protocol/) | 1 | 0% | 0/1 | 3 | dead |
-| [armitage-by-wintermute](armitage-by-wintermute/) | 0 | 0% | 0/7 | 7 | unknown |
-| [arpa-staking](arpa-staking/) | 0 | 0% | 0/14 | 14 |  |
-| [arrakis-finance](arrakis-finance/) | 8 | 8.7% | 13/150 | 301 | active |
-| [artemis-finance](artemis-finance/) | 5 | 0% | 0/2 | 20 |  |
-| [aspida](aspida/) | 1 | 66.7% | 2/3 | 3 | dead |
-| [asseto-cash+](asseto-cash+/) | 1 | 0% | 0/14 | 15 | declining |
-| [asymmetry](asymmetry/) | 20 | 43.1% | 44/102 | 700 | declining |
-| [atlantis](atlantis/) | 1 | 33.3% | 3/9 | 17 | dead |
-| [atlantis-loans](atlantis-loans/) | 1 | 31.3% | 5/16 | 242 | dead |
-| [atlas-usv](atlas-usv/) | 0 | 0% | 0/20 | 20 |  |
-| [atlendis](atlendis/) | 2 | 33.3% | 3/9 | 40 | declining |
-| [atoll](atoll/) | 1 | 0% | 0/4 | 4 | dead |
-| [atomic-green](atomic-green/) | 2 | 0% | 0/2 | 2 |  |
-| [augmented-finance](augmented-finance/) | 1 | 0% | 0/1 | 1 | dead |
-| [augur](augur/) | 7 | 8.5% | 4/47 | 102 | active |
-| [augury-finance](augury-finance/) | 0 | 0% | 0/22 | 22 |  |
-| [aura](aura/) | 20 | 29.8% | 37/124 | 403 | dead |
-| [aurigami](aurigami/) | 2 | 0% | 0/1 | 2 | dead |
-| [aurora-plus](aurora-plus/) | 15 | 0% | 0/0 | 4 |  |
-| [autofarm](autofarm/) | 1 | 0% | 0/10 | 518 | dead |
-| [autofinance](autofinance/) | 8 | 0.4% | 1/283 | 423 | transitioning |
-| [autoshark](autoshark/) | 2 | 0% | 0/35 | 35 |  |
-| [avalaunch](avalaunch/) | 13 | 70% | 7/10 | 35 | unknown |
-| [avalon-labs](avalon-labs/) | 19 | 14.7% | 5/34 | 572 | unknown |
-| [avant-protocol](avant-protocol/) | 8 | 44.4% | 8/18 | 18 |  |
-| [avantgarde](avantgarde/) | 13 | 15.4% | 12/78 | 78 |  |
-| [avantis](avantis/) | 5 | 77.8% | 28/36 | 79 | declining |
-| [axedao](axedao/) | 1 | 0% | 0/1 | 2 | dead |
-| [axelar-network](axelar-network/) | 63 | 40% | 6/15 | 15 |  |
-| [aztec-connect](aztec-connect/) | 12 | 50% | 1/2 | 4 | dead |
-| [azuro](azuro/) | 3 | 5.8% | 4/69 | 1554 | active |
-| [b-lucky](b-lucky/) | 1 | 0% | 0/2 | 19 | active |
-| [b.protocol](b.protocol/) | 5 | 20% | 7/35 | 101 | dead |
-| [b2-buzz](b2-buzz/) | 2 | 0% | 0/3 | 3 |  |
-| [babydoge-bridge](babydoge-bridge/) | 2 | 0% | 0/4 | 4 |  |
-| [babydogecoin](babydogecoin/) | 1 | 20% | 2/10 | 21 | declining |
-| [babyswap](babyswap/) | 1 | 2.6% | 1/38 | 86 | dead |
-| [backedfi](backedfi/) | 7 | 0% | 0/2 | 5 | unknown |
-| [badger-dao](badger-dao/) | 8 | 19.2% | 5/26 | 939 | sunsetting |
-| [bakeryswap](bakeryswap/) | 1 | 0% | 0/14 | 60 | declining |
-| [baksdao](baksdao/) | 1 | 100% | 2/2 | 5 | dead |
-| [balancer](balancer/) | 32 | 23.2% | 35/151 | 151 |  |
-| [balmy](balmy/) | 7 | 2.3% | 3/132 | 134 |  |
-| [bancor](bancor/) | 11 | 19.8% | 18/91 | 172 | dead |
-| [bao-finance](bao-finance/) | 1 | 1.4% | 7/488 | 490 |  |
-| [baryon-network](baryon-network/) | 7 | 0% | 0/21 | 21 |  |
-| [base-bridge](base-bridge/) | 20 | 3.6% | 2/56 | 56 |  |
-| [based-ai](based-ai/) | 0 | 0% | 0/3 | 3 |  |
-| [baseline-protocol](baseline-protocol/) | 9 | 28.6% | 2/7 | 121 | declining |
-| [basemax](basemax/) | 1 | 20% | 1/5 | 7 | dead |
-| [baseswap](baseswap/) | 2 | 0% | 0/30 | 31 |  |
-| [basis-cash](basis-cash/) | 0 | 0% | 0/38 | 38 |  |
-| [basisos](basisos/) | 1 | 0% | 0/21 | 201 | declining |
-| [bass-exchange](bass-exchange/) | 1 | 25% | 1/4 | 10 | active |
-| [bastion](bastion/) | 2 | 0% | 0/0 | 1 |  |
-| [beamswap](beamswap/) | 6 | 28.6% | 8/28 | 144 | dead |
-| [beanstalk](beanstalk/) | 9 | 2.9% | 3/104 | 591 | dead |
-| [bearnfi](bearnfi/) | 1 | 0% | 0/90 | 90 |  |
-| [bedrock](bedrock/) | 9 | 41.3% | 31/75 | 88 | active |
-| [beefy](beefy/) | 18 | 0% | 0/4 | 4 |  |
-| [belief-market](belief-market/) | 6 | 100% | 1/1 | 2 | unknown |
-| [bella-protocol](bella-protocol/) | 1 | 0% | 0/6 | 20 | dead |
-| [belt-finance](belt-finance/) | 7 | 39.7% | 27/68 | 1275 | dead |
-| [bend](bend/) | 2 | 18.9% | 10/53 | 97 | active |
-| [benddao](benddao/) | 1 | 0% | 0/3 | 5 | dead |
-| [benqi](benqi/) | 9 | 0% | 0/35 | 39 |  |
-| [bent-finance](bent-finance/) | 0 | 0% | 0/54 | 54 |  |
-| [beraborrow](beraborrow/) | 14 | 42.6% | 43/101 | 101 |  |
-| [beradrome](beradrome/) | 3 | 45.5% | 5/11 | 11 | declining |
-| [berapaw](berapaw/) | 7 | 0% | 0/22 | 22 |  |
-| [beta-finance](beta-finance/) | 4 | 4.7% | 8/170 | 170 |  |
-| [biconomy.com](biconomy.com/) | 11 | 0% | 0/1 | 1 |  |
-| [bifi](bifi/) | 7 | 80% | 28/35 | 224 | active |
-| [bim](bim/) | 22 | 0% | 0/11 | 11 |  |
-| [bima-cdp](bima-cdp/) | 3 | 30% | 6/20 | 28 | active |
-| [binaryx-platform](binaryx-platform/) | 3 | 0% | 0/66 | 157 | active |
-| [bio-protocol](bio-protocol/) | 6 | 10% | 4/40 | 47 | active |
-| [biswap](biswap/) | 1 | 0% | 0/8 | 85 | dead |
-| [bitfi](bitfi/) | 5 | 0% | 0/5 | 5 |  |
-| [bitfinex](bitfinex/) | 0 | 0% | 0/1 | 1 |  |
-| [bitgert](bitgert/) | 0 | 0% | 0/3 | 3 |  |
-| [bitget](bitget/) | 0 | 0% | 0/23 | 23 |  |
-| [bitkan](bitkan/) | 0 | 0% | 0/1 | 1 |  |
-| [bitmart](bitmart/) | 0 | 0% | 0/1 | 1 |  |
-| [bitmex](bitmex/) | 0 | 0% | 0/14 | 14 |  |
-| [bitu-protocol](bitu-protocol/) | 2 | 66.7% | 2/3 | 3 | active |
-| [bitway](bitway/) | 3 | 57.1% | 4/7 | 8 | active |
-| [bitway-earn](bitway-earn/) | 3 | 57.1% | 4/7 | 8 | active |
-| [blackhole](blackhole/) | 3 | 14.3% | 10/70 | 97 | declining |
-| [blackwing](blackwing/) | 4 | 0% | 0/5 | 5 |  |
-| [bladeswap](bladeswap/) | 3 | 4.5% | 2/44 | 44 |  |
-| [blast-l2](blast-l2/) | 11 | 0% | 0/36 | 241 | declining |
-| [blasterswap](blasterswap/) | 1 | 0% | 0/3 | 4 | declining |
-| [blend-money](blend-money/) | 12 | 72.7% | 8/11 | 16 | declining |
-| [block-analitica](block-analitica/) | 6 | 47.4% | 9/19 | 810 | unknown |
-| [blue-protocol](blue-protocol/) | 0 | 0% | 0/1 | 1 |  |
-| [blueberry](blueberry/) | 2 | 0% | 0/6 | 6 |  |
-| [bluefin](bluefin/) | 4 | 0% | 0/2 | 2 |  |
-| [blueshift](blueshift/) | 1 | 0% | 0/6 | 26 | active |
-| [blur](blur/) | 4 | 0% | 0/2 | 22 | active |
-| [bmx](bmx/) | 6 | 0% | 0/58 | 597 | active |
-| [bnpl-pay](bnpl-pay/) | 2 | 100% | 1/1 | 3 | unknown |
-| [bob-bridge](bob-bridge/) | 9 | 2.4% | 1/41 | 43 | declining |
-| [bob-fusion](bob-fusion/) | 27 | 11.4% | 4/35 | 35 |  |
-| [boba-bridge](boba-bridge/) | 7 | 0% | 0/48 | 60 | declining |
-| [boltz](boltz/) | 0 | 0% | 0/3 | 3 |  |
-| [bondappetit](bondappetit/) | 2 | 86.4% | 19/22 | 22 | dead |
-| [bondlink-finance](bondlink-finance/) | 1 | 66.7% | 2/3 | 6 | active |
-| [bonsaidao-ecosystem](bonsaidao-ecosystem/) | 8 | 10.2% | 5/49 | 709 | declining |
-| [bookusd](bookusd/) | 1 | 19% | 4/21 | 142 |  |
-| [boringdao](boringdao/) | 6 | 1.6% | 2/122 | 3833 |  |
-| [boros](boros/) | 5 | 76.2% | 16/21 | 852 |  |
-| [boson-protocol](boson-protocol/) | 1 | 0% | 0/29 | 29 |  |
-| [botto](botto/) | 3 | 0% | 0/4 | 9 |  |
-| [bounce-finance](bounce-finance/) | 1 | 0% | 0/19 | 19 |  |
-| [bouncebit-cedefi-yield](bouncebit-cedefi-yield/) | 4 | 0% | 0/8 | 8 |  |
-| [bouncebit-pre-launch-farm](bouncebit-pre-launch-farm/) | 1 | 0% | 0/2 | 144 |  |
-| [bouncebit-prime](bouncebit-prime/) | 1 | 0% | 0/7 | 16 |  |
-| [bracket-protocol](bracket-protocol/) | 5 | 16.7% | 10/60 | 97 |  |
-| [brahma-vaults-(sunset)](brahma-vaults-(sunset)/) | 14 | 92.9% | 13/14 | 33 |  |
-| [brickken](brickken/) | 2 | 54.5% | 6/11 | 21 |  |
-| [bridge-mutual](bridge-mutual/) | 2 | 22.2% | 2/9 | 36 |  |
-| [bridgers](bridgers/) | 1 | 0% | 0/2 | 17 |  |
-| [bright-union](bright-union/) | 2 | 100% | 3/3 | 3 |  |
-| [brotocol](brotocol/) | 14 | 2.8% | 4/142 | 242 |  |
-| [bscstation](bscstation/) | 2 | 13.3% | 2/15 | 167 |  |
-| [bscswap](bscswap/) | 0 | 0% | 0/8 | 16 |  |
-| [btcd](btcd/) | 3 | 6% | 5/83 | 83 |  |
-| [btcfi](btcfi/) | 4 | 0% | 0/0 | 10 |  |
-| [btcst](btcst/) | 0 | 0% | 0/1 | 1 |  |
-| [buffaloswap](buffaloswap/) | 1 | 0% | 0/1 | 1 |  |
-| [buffer-finance](buffer-finance/) | 1 | 22.2% | 2/9 | 14 |  |
-| [bundie](bundie/) | 1 | 57.1% | 8/14 | 84 |  |
-| [bundles](bundles/) | 0 | 0% | 0/6 | 6 |  |
-| [bunicorn](bunicorn/) | 0 | 0% | 0/40 | 40 |  |
-| [bunni](bunni/) | 7 | 0% | 0/24 | 24 |  |
-| [bunny](bunny/) | 1 | 6.4% | 7/109 | 142 |  |
-| [bunnypark](bunnypark/) | 3 | 33.3% | 1/3 | 97 |  |
-| [burgerswap](burgerswap/) | 2 | 0% | 0/52 | 52 |  |
-| [burve](burve/) | 2 | 0% | 0/1 | 1 |  |
-| [butter-network](butter-network/) | 3 | 0% | 0/7 | 12 |  |
-| [buttonwood](buttonwood/) | 1 | 44.4% | 4/9 | 13 |  |
-| [buzz-farming](buzz-farming/) | 2 | 0% | 0/1 | 1 |  |
-| [cache.gold](cache.gold/) | 2 | 100% | 1/1 | 8 |  |
-| [camelot](camelot/) | 1 | 7.3% | 3/41 | 111 |  |
-| [cana-holdings-california-carbon-credits](cana-holdings-california-carbon-credits/) | 2 | 50% | 1/2 | 2 |  |
-| [canto-lending](canto-lending/) | 4 | 0% | 0/1 | 2 |  |
-| [cap](cap/) | 10 | 5.3% | 7/131 | 131 |  |
-| [cap-finance](cap-finance/) | 0 | 0% | 0/1 | 1 |  |
-| [capital-dao](capital-dao/) | 0 | 0% | 0/6 | 6 |  |
-| [capx-ai](capx-ai/) | 4 | 0% | 0/2 | 2 |  |
-| [carbon-defi](carbon-defi/) | 4 | 54.3% | 19/35 | 206 |  |
-| [carina](carina/) | 3 | 50% | 1/2 | 2 |  |
-| [cate-ventures](cate-ventures/) | 0 | 0% | 0/10 | 10 |  |
-| [cavalre](cavalre/) | 2 | 100% | 1/1 | 19 |  |
-| [cbridge](cbridge/) | 12 | 6.1% | 27/443 | 1017 |  |
-| [cega](cega/) | 4 | 0% | 0/8 | 8 |  |
-| [cells-finance](cells-finance/) | 1 | 100% | 1/1 | 1 |  |
-| [centrifuge](centrifuge/) | 2 | 0% | 0/62 | 71 |  |
-| [cex.io](cex.io/) | 1 | 0% | 0/4 | 4 |  |
-| [chadfinance](chadfinance/) | 1 | 66.7% | 2/3 | 4 |  |
-| [chainflip](chainflip/) | 4 | 27.3% | 3/11 | 13 |  |
-| [chaingpt](chaingpt/) | 2 | 0% | 0/7 | 82 |  |
-| [chainlink](chainlink/) | 12 | 4.2% | 3/72 | 72 |  |
-| [chainport](chainport/) | 4 | 0% | 0/11 | 11 |  |
-| [champion-finance](champion-finance/) | 1 | 28.6% | 2/7 | 22 |  |
-| [charm-finance](charm-finance/) | 6 | 60% | 3/5 | 12 |  |
-| [chateau](chateau/) | 1 | 25% | 1/4 | 31 |  |
-| [chi-protocol](chi-protocol/) | 1 | 5% | 2/40 | 49 |  |
-| [chimpx-ai](chimpx-ai/) | 0 | 0% | 0/5 | 5 |  |
-| [chromatic-protocol](chromatic-protocol/) | 1 | 60% | 6/10 | 13 |  |
-| [cian-protocol](cian-protocol/) | 6 | 29.2% | 33/113 | 117 |  |
-| [circle](circle/) | 0 | 0% | 0/54 | 54 |  |
-| [citadelswap](citadelswap/) | 1 | 0% | 0/3 | 5 |  |
-| [citrea-bridge](citrea-bridge/) | 11 | 0% | 0/1 | 2 |  |
-| [citrea-staking](citrea-staking/) | 10 | 0% | 0/18 | 18 |  |
-| [clearpool](clearpool/) | 7 | 50% | 16/32 | 55 |  |
-| [clever](clever/) | 3 | 8.2% | 4/49 | 50 |  |
-| [clipper](clipper/) | 4 | 0% | 0/35 | 35 |  |
-| [clober](clober/) | 8 | 100% | 9/9 | 13 |  |
-| [clovis](clovis/) | 3 | 0% | 0/5 | 5 |  |
-| [coffer-network](coffer-network/) | 2 | 0% | 0/2 | 2 |  |
-| [coin98](coin98/) | 10 | 0% | 0/21 | 21 |  |
-| [coincollect](coincollect/) | 0 | 0% | 0/2 | 2 |  |
-| [coinsquare](coinsquare/) | 0 | 0% | 0/5 | 5 |  |
-| [coinswap-space](coinswap-space/) | 1 | 0% | 0/11 | 11 |  |
-| [coinw](coinw/) | 0 | 0% | 0/1 | 1 |  |
-| [colony](colony/) | 2 | 10.7% | 3/28 | 28 |  |
-| [component](component/) | 4 | 1.5% | 1/68 | 68 |  |
-| [compound-finance](compound-finance/) | 11 | 13.6% | 105/770 | 777 |  |
-| [concentrator](concentrator/) | 34 | 17.2% | 22/128 | 521 |  |
-| [concrete](concrete/) | 2 | 100% | 2/2 | 3 |  |
-| [conic-finance](conic-finance/) | 3 | 31.3% | 5/16 | 16 |  |
-| [connext](connext/) | 7 | 21.4% | 39/182 | 187 |  |
-| [contango](contango/) | 9 | 57.1% | 24/42 | 42 |  |
-| [convergence](convergence/) | 2 | 0% | 0/2 | 2 |  |
-| [convergence-fi](convergence-fi/) | 5 | 0% | 0/51 | 51 |  |
-| [convex-finance](convex-finance/) | 7 | 7.5% | 8/107 | 133 |  |
-| [cook-finance](cook-finance/) | 14 | 4.4% | 3/68 | 70 |  |
-| [cooler-loans](cooler-loans/) | 27 | 0% | 0/175 | 175 |  |
-| [copump](copump/) | 3 | 100% | 4/4 | 4 |  |
-| [core-bridge](core-bridge/) | 0 | 0% | 0/1 | 3 |  |
-| [core-markets](core-markets/) | 0 | 0% | 0/24 | 24 |  |
-| [corn-kernels](corn-kernels/) | 6 | 3.2% | 7/220 | 229 |  |
-| [cougarswap](cougarswap/) | 1 | 0% | 0/1 | 1 |  |
-| [cove-finance](cove-finance/) | 9 | 0% | 0/42 | 42 |  |
-| [cover-protocol](cover-protocol/) | 8 | 9.9% | 15/152 | 156 |  |
-| [cozy-finance](cozy-finance/) | 5 | 0% | 0/0 | 58 |  |
-| [crabada](crabada/) | 2 | 0% | 0/2 | 59 |  |
-| [cream-finance](cream-finance/) | 2 | 0% | 0/42 | 69 |  |
-| [credbull](credbull/) | 8 | 0% | 0/39 | 41 |  |
-| [credit-coop](credit-coop/) | 3 | 0% | 0/8 | 23 |  |
-| [cronos-zkevm-bridge](cronos-zkevm-bridge/) | 0 | 0% | 0/9 | 9 |  |
-| [cryptex-finance](cryptex-finance/) | 9 | 11.8% | 8/68 | 95 |  |
-| [crystl-finance](crystl-finance/) | 0 | 0% | 0/13 | 13 |  |
-| [csigma-finance](csigma-finance/) | 3 | 10.4% | 5/48 | 60 |  |
-| [cub-finance](cub-finance/) | 1 | 0% | 0/43 | 43 |  |
-| [curve-finance](curve-finance/) | 21 | 8.5% | 20/236 | 241 |  |
-| [cvault-finance](cvault-finance/) | 0 | 0% | 0/37 | 38 |  |
-| [cvi-finance](cvi-finance/) | 4 | 17.4% | 4/23 | 84 |  |
-| [cyber](cyber/) | 16 | 3.2% | 1/31 | 31 |  |
-| [cybro](cybro/) | 25 | 65.2% | 15/23 | 664 |  |
-| [cyclone](cyclone/) | 3 | 0% | 0/25 | 73 |  |
-| [cytonic-airdrop-campaign](cytonic-airdrop-campaign/) | 2 | 0% | 0/20 | 36 |  |
-| [cytoswap](cytoswap/) | 0 | 0% | 0/22 | 22 |  |
-| [d2-finance](d2-finance/) | 2 | 46.7% | 21/45 | 390 |  |
-| [dackieswap](dackieswap/) | 1 | 4.8% | 2/42 | 113 |  |
-| [dango](dango/) | 2 | 0% | 0/3 | 3 |  |
-| [dao-maker](dao-maker/) | 7 | 0% | 0/3 | 17 |  |
-| [datamine-network](datamine-network/) | 0 | 0% | 0/10 | 10 |  |
-| [ddex](ddex/) | 4 | 0% | 0/17 | 17 |  |
-| [debridge](debridge/) | 34 | 18.9% | 23/122 | 239 |  |
-| [decentralized-euro](decentralized-euro/) | 3 | 29.7% | 11/37 | 3505 |  |
-| [deeplock](deeplock/) | 1 | 0% | 0/15 | 42 |  |
-| [defi-franc](defi-franc/) | 3 | 0% | 0/23 | 23 |  |
-| [defi-kingdoms](defi-kingdoms/) | 1 | 0% | 0/0 | 352 |  |
-| [defi-swap](defi-swap/) | 1 | 0% | 0/1 | 1 |  |
-| [defibox](defibox/) | 0 | 0% | 0/6 | 6 |  |
-| [defil](defil/) | 1 | 0% | 0/7 | 23 |  |
-| [definix](definix/) | 6 | 0% | 0/8 | 8 |  |
-| [defiplaza](defiplaza/) | 4 | 66.7% | 2/3 | 18 |  |
-| [defirex](defirex/) | 1 | 0% | 0/7 | 7 |  |
-| [defive](defive/) | 0 | 0% | 0/17 | 17 |  |
-| [defrost](defrost/) | 1 | 11.1% | 1/9 | 40 |  |
-| [degate](degate/) | 1 | 0% | 0/1 | 2 |  |
-| [dehive](dehive/) | 2 | 20% | 1/5 | 127 |  |
-| [delta-financial](delta-financial/) | 1 | 0% | 0/7 | 22 |  |
-| [deltaprime](deltaprime/) | 8 | 0% | 0/104 | 933 |  |
-| [delv](delv/) | 10 | 0% | 0/38 | 38 |  |
-| [demeter](demeter/) | 1 | 0% | 0/11 | 73 |  |
-| [denet-file-token](denet-file-token/) | 1 | 14.3% | 1/7 | 28 |  |
-| [depth](depth/) | 5 | 0% | 0/3 | 5 |  |
-| [deq](deq/) | 1 | 0% | 0/8 | 8 |  |
-| [deri](deri/) | 8 | 23.5% | 4/17 | 1050 |  |
-| [derivadex](derivadex/) | 0 | 0% | 0/1 | 1 |  |
-| [desk](desk/) | 5 | 0% | 0/94 | 94 |  |
-| [desyn-protocol](desyn-protocol/) | 19 | 91.7% | 11/12 | 22 |  |
-| [dev-protocol](dev-protocol/) | 1 | 27.3% | 3/11 | 56 |  |
-| [devve](devve/) | 0 | 0% | 0/3 | 3 |  |
-| [dexalot](dexalot/) | 6 | 84.6% | 11/13 | 13 |  |
-| [dexilla](dexilla/) | 1 | 25% | 1/4 | 6 |  |
-| [dexioprotocol](dexioprotocol/) | 3 | 100% | 1/1 | 2 |  |
-| [dforce](dforce/) | 4 | 75.8% | 25/33 | 846 |  |
-| [dfx-finance](dfx-finance/) | 1 | 14.3% | 2/14 | 46 |  |
-| [dfyn-network](dfyn-network/) | 4 | 0% | 0/22 | 22 |  |
-| [diamondswap](diamondswap/) | 2 | 0% | 0/21 | 21 |  |
-| [dinari](dinari/) | 4 | 7.6% | 5/66 | 94 |  |
-| [dinosaur-eggs](dinosaur-eggs/) | 1 | 0% | 0/21 | 21 |  |
-| [dnax](dnax/) | 0 | 0% | 0/2 | 2 |  |
-| [dodo](dodo/) | 1 | 0% | 0/54 | 1329 |  |
-| [dolomite](dolomite/) | 10 | 14.9% | 15/101 | 245 |  |
-| [doma-dex-v3](doma-dex-v3/) | 0 | 0% | 0/10 | 13 |  |
-| [domination-finance](domination-finance/) | 1 | 13% | 6/46 | 48 |  |
-| [donut](donut/) | 0 | 0% | 0/1 | 1 |  |
-| [dooar](dooar/) | 0 | 0% | 0/2 | 76 |  |
-| [dopple-finance](dopple-finance/) | 0 | 0% | 0/44 | 44 |  |
-| [doppler-finance](doppler-finance/) | 2 | 0% | 0/3 | 3 |  |
-| [dot-dot-finance](dot-dot-finance/) | 1 | 23.5% | 4/17 | 22 |  |
-| [doubler](doubler/) | 1 | 0% | 1/0 | 2 |  |
-| [dpex](dpex/) | 2 | 25% | 2/8 | 37 |  |
-| [drops](drops/) | 1 | 0% | 0/32 | 55 |  |
-| [dsf.finance](dsf.finance/) | 1 | 2.8% | 1/36 | 38 |  |
-| [dsu-money](dsu-money/) | 3 | 0% | 0/97 | 97 |  |
-| [dtrinity](dtrinity/) | 5 | 12.1% | 11/91 | 212 |  |
-| [dungeonswap](dungeonswap/) | 1 | 0% | 0/2 | 3 |  |
-| [dxsale](dxsale/) | 1 | 0% | 0/2 | 349 |  |
-| [dydx](dydx/) | 6 | 0% | 0/19 | 19 |  |
-| [dyorswap](dyorswap/) | 0 | 0% | 0/4 | 91 |  |
-| [dyson-finance](dyson-finance/) | 3 | 75% | 3/4 | 5 |  |
-| [easedefi.org](easedefi.org/) | 1 | 0% | 0/1 | 1 |  |
-| [eclipse-bridge](eclipse-bridge/) | 5 | 0% | 0/1 | 1 |  |
-| [edel](edel/) | 16 | 7.5% | 4/53 | 53 |  |
-| [edgex](edgex/) | 7 | 0% | 0/10 | 10 |  |
-| [eggs-finance](eggs-finance/) | 3 | 0% | 0/4 | 4 |  |
-| [eigencloud](eigencloud/) | 24 | 0% | 0/17 | 17 |  |
-| [ekubo](ekubo/) | 5 | 37.5% | 3/8 | 14 |  |
-| [electra](electra/) | 2 | 0% | 0/2 | 3 |  |
-| [elephant-money](elephant-money/) | 2 | 5.4% | 4/74 | 267 |  |
-| [elfi-protocol](elfi-protocol/) | 1 | 0% | 0/2 | 2475 |  |
-| [elk](elk/) | 1 | 0% | 0/39 | 41 |  |
-| [ellipsis-finance](ellipsis-finance/) | 3 | 26.7% | 4/15 | 20 |  |
-| [elyfi](elyfi/) | 2 | 6.7% | 1/15 | 18 |  |
-| [emiswap](emiswap/) | 1 | 0% | 0/2 | 32 |  |
-| [empmoney](empmoney/) | 1 | 88.9% | 8/9 | 96 |  |
-| [emu](emu/) | 1 | 50% | 1/2 | 2 |  |
-| [enclabs](enclabs/) | 1 | 0% | 0/34 | 34 |  |
-| [enjoyoors](enjoyoors/) | 3 | 66.7% | 2/3 | 3 |  |
-| [enki-protocol](enki-protocol/) | 1 | 0% | 0/2 | 14 |  |
-| [enosys](enosys/) | 3 | 0% | 0/2 | 2 |  |
-| [ensuro](ensuro/) | 5 | 2.9% | 4/136 | 139 |  |
-| [enzyme-finance](enzyme-finance/) | 40 | 0% | 0/34 | 34 |  |
-| [equalizer](equalizer/) | 0 | 0% | 0/51 | 226 |  |
-| [equilibria](equilibria/) | 6 | 32.5% | 67/206 | 234 |  |
-| [equito-finance](equito-finance/) | 3 | 0% | 0/1 | 1 |  |
-| [eth-strategy](eth-strategy/) | 1 | 0% | 0/38 | 46 |  |
-| [ethena](ethena/) | 16 | 28% | 7/25 | 26 |  |
-| [ethereal-season-zero](ethereal-season-zero/) | 4 | 0% | 0/1 | 1 |  |
-| [etherex](etherex/) | 4 | 44% | 22/50 | 69 |  |
-| [etherfuse](etherfuse/) | 4 | 0% | 0/68 | 76 |  |
-| [ethervista](ethervista/) | 0 | 0% | 0/15 | 15 |  |
-| [ethichub](ethichub/) | 2 | 0% | 0/42 | 56 |  |
-| [ethos](ethos/) | 2 | 22.2% | 2/9 | 17 |  |
-| [euclid-finance](euclid-finance/) | 1 | 0% | 0/2 | 2 |  |
-| [euler](euler/) | 81 | 50.5% | 55/109 | 109 |  |
-| [eventum-bridge](eventum-bridge/) | 2 | 2.7% | 1/37 | 58 |  |
-| [everrise](everrise/) | 3 | 0% | 0/69 | 202 |  |
-| [everything](everything/) | 0 | 0% | 0/4 | 8 |  |
-| [evoq-finance](evoq-finance/) | 3 | 0% | 0/16 | 16 |  |
-| [exactly](exactly/) | 33 | 57.9% | 11/19 | 370 |  |
-| [extra-finance](extra-finance/) | 5 | 20% | 2/10 | 261 |  |
-| [ezmanager](ezmanager/) | 2 | 75% | 9/12 | 305 |  |
-| [falcon-finance](falcon-finance/) | 3 | 23.5% | 8/34 | 34 |  |
-| [farm-hero](farm-hero/) | 2 | 0% | 0/3 | 3 |  |
-| [feather](feather/) | 0 | 0% | 0/9 | 10 |  |
-| [felix](felix/) | 4 | 0% | 0/3 | 3 |  |
-| [fiamma](fiamma/) | 3 | 6.7% | 3/45 | 64 |  |
-| [filet-finance](filet-finance/) | 1 | 0% | 0/1 | 1 |  |
-| [filliquid](filliquid/) | 4 | 0% | 0/1 | 1 |  |
-| [finnexus](finnexus/) | 0 | 0% | 0/1 | 1 |  |
-| [fira](fira/) | 5 | 14% | 13/93 | 93 |  |
-| [firebird](firebird/) | 1 | 11.1% | 2/18 | 24 |  |
-| [firebot](firebot/) | 2 | 3.8% | 1/26 | 42 |  |
-| [flap-sh](flap-sh/) | 3 | 0% | 0/47 | 47 |  |
-| [flashstake](flashstake/) | 3 | 25% | 3/12 | 15 |  |
-| [flaunch](flaunch/) | 3 | 0% | 0/55 | 59 |  |
-| [flex](flex/) | 4 | 33.3% | 5/15 | 15 |  |
-| [flexa](flexa/) | 2 | 33.3% | 2/6 | 7 |  |
-| [float](float/) | 1 | 4.8% | 3/63 | 68 |  |
-| [float-protocol](float-protocol/) | 1 | 0% | 0/21 | 21 |  |
-| [flock.io](flock.io/) | 5 | 0% | 0/16 | 17 |  |
-| [flokifi-locker](flokifi-locker/) | 2 | 0% | 0/19 | 19 |  |
-| [florence-finance](florence-finance/) | 2 | 0% | 0/24 | 24 |  |
-| [fluid](fluid/) | 9 | 0% | 0/260 | 261 |  |
-| [flux-finance](flux-finance/) | 1 | 0% | 0/37 | 38 |  |
-| [flying-tulip](flying-tulip/) | 0 | 0% | 0/81 | 84 |  |
-| [folks-finance](folks-finance/) | 21 | 4.5% | 3/67 | 251 |  |
-| [fomo3d](fomo3d/) | 0 | 0% | 0/4 | 17 |  |
-| [fortifi](fortifi/) | 2 | 0% | 0/2 | 67 |  |
-| [fortunafi](fortunafi/) | 7 | 0% | 0/2 | 2 |  |
-| [four.meme](four.meme/) | 1 | 0% | 0/1 | 256 |  |
-| [foxify](foxify/) | 1 | 0% | 0/3 | 5 |  |
-| [fractal-protocol](fractal-protocol/) | 1 | 0% | 0/2 | 33 |  |
-| [frankencoin](frankencoin/) | 11 | 42.1% | 8/19 | 23 |  |
-| [frax-finance](frax-finance/) | 20 | 17.8% | 71/400 | 402 |  |
-| [frax-fpi](frax-fpi/) | 13 | 13% | 14/108 | 108 |  |
-| [free-protocol](free-protocol/) | 0 | 0% | 0/9 | 9 |  |
-| [freebie-life-finance](freebie-life-finance/) | 1 | 0% | 0/2 | 4 |  |
-| [friend3](friend3/) | 4 | 50% | 1/2 | 4 |  |
-| [frigg.eco](frigg.eco/) | 0 | 0% | 0/3 | 3 |  |
-| [fringe-finance](fringe-finance/) | 1 | 0% | 0/1206 | 1938 |  |
-| [fuel-bridge](fuel-bridge/) | 12 | 0% | 0/1 | 1 |  |
-| [fuji-finance](fuji-finance/) | 3 | 50% | 3/6 | 10 |  |
-| [fungify](fungify/) | 9 | 0% | 0/25 | 25 |  |
-| [fusionx-finance](fusionx-finance/) | 8 | 2% | 1/50 | 50 |  |
-| [fx-protocol](fx-protocol/) | 1 | 6.3% | 5/79 | 90 |  |
-| [fxdx](fxdx/) | 1 | 0% | 0/1 | 3 |  |
-| [fyde-protocol](fyde-protocol/) | 2 | 40% | 8/20 | 22 |  |
-| [g8keep](g8keep/) | 0 | 0% | 0/3 | 3 |  |
-| [gaib](gaib/) | 2 | 0% | 0/42 | 42 |  |
-| [gains-network](gains-network/) | 1 | 0% | 0/26 | 2781 |  |
-| [gale](gale/) | 1 | 0% | 0/2 | 131 |  |
-| [gamma](gamma/) | 10 | 34.9% | 30/86 | 1078 |  |
-| [gate](gate/) | 1 | 0% | 0/1 | 1 |  |
-| [gauntlet](gauntlet/) | 18 | 9.3% | 14/151 | 151 |  |
-| [gearbox](gearbox/) | 38 | 68.6% | 35/51 | 1592 |  |
-| [generic.money](generic.money/) | 1 | 46.7% | 7/15 | 15 |  |
-| [genius](genius/) | 1 | 0% | 0/1 | 1 |  |
-| [geode](geode/) | 6 | 0% | 0/11 | 11 |  |
-| [get-protocol](get-protocol/) | 2 | 50% | 1/2 | 4 |  |
-| [geth](geth/) | 0 | 0% | 0/3 | 3 |  |
-| [geyser](geyser/) | 2 | 42.9% | 3/7 | 2660 |  |
-| [gibxswap](gibxswap/) | 1 | 0% | 0/14 | 14 |  |
-| [giveth](giveth/) | 1 | 0% | 0/3 | 3 |  |
-| [giza](giza/) | 5 | 13.8% | 4/29 | 30 |  |
-| [glide-finance](glide-finance/) | 3 | 0% | 0/1 | 1 |  |
-| [glif](glif/) | 5 | 0% | 0/5 | 5 |  |
-| [glitter-finance](glitter-finance/) | 6 | 0% | 0/1 | 3 |  |
-| [glori-finance](glori-finance/) | 1 | 50% | 1/2 | 19 |  |
-| [gmd-protocol](gmd-protocol/) | 2 | 0% | 0/48 | 48 |  |
-| [gmx](gmx/) | 39 | 76.8% | 142/185 | 186 |  |
-| [gnosis-protocol-v1](gnosis-protocol-v1/) | 2 | 9.7% | 3/31 | 62 |  |
-| [goat-protocol](goat-protocol/) | 3 | 17.6% | 3/17 | 18 |  |
-| [gogocoin](gogocoin/) | 1 | 33.3% | 1/3 | 3 |  |
-| [goldfinch](goldfinch/) | 1 | 0% | 0/47 | 47 |  |
-| [goldfinger](goldfinger/) | 9 | 100% | 7/7 | 8 |  |
-| [goldilocks](goldilocks/) | 5 | 0% | 0/9 | 9 |  |
-| [gomble-games](gomble-games/) | 1 | 20% | 2/10 | 25 |  |
-| [gondi](gondi/) | 2 | 18.8% | 3/16 | 31 |  |
-| [gooddollar](gooddollar/) | 8 | 18.8% | 16/85 | 85 |  |
-| [goose](goose/) | 1 | 0% | 0/5 | 12 |  |
-| [goose-finance](goose-finance/) | 1 | 0% | 0/10 | 373 |  |
-| [goplus-security](goplus-security/) | 2 | 0% | 0/12 | 83 |  |
-| [granary-finance](granary-finance/) | 2 | 0% | 0/39 | 39 |  |
-| [grape-finance](grape-finance/) | 1 | 42.9% | 6/14 | 43 |  |
-| [gravis-finance](gravis-finance/) | 1 | 0% | 0/1 | 1 |  |
-| [gravita-protocol](gravita-protocol/) | 2 | 18.2% | 6/33 | 33 |  |
-| [gravity-bridge](gravity-bridge/) | 16 | 0% | 0/54 | 92 |  |
-| [gravity-by-galxe](gravity-by-galxe/) | 9 | 5.9% | 2/34 | 34 |  |
-| [gravity-finance](gravity-finance/) | 2 | 100% | 2/2 | 3 |  |
-| [gridex](gridex/) | 1 | 33.3% | 1/3 | 5 |  |
-| [grizzlyfi](grizzlyfi/) | 0 | 0% | 0/77 | 77 |  |
-| [gro](gro/) | 0 | 0% | 0/18 | 111 |  |
-| [grove-finance](grove-finance/) | 25 | 24.7% | 19/77 | 79 |  |
-| [growihf](growihf/) | 0 | 0% | 0/14 | 15 |  |
-| [grvt](grvt/) | 1 | 0% | 0/15 | 15 |  |
-| [gt3](gt3/) | 0 | 0% | 0/15 | 15 |  |
-| [gudchain](gudchain/) | 1 | 100% | 1/1 | 1 |  |
-| [gullnetwork](gullnetwork/) | 2 | 0% | 0/0 | 8 |  |
-| [gumball-protocol](gumball-protocol/) | 1 | 0% | 0/7 | 7 |  |
-| [guru-network-dao](guru-network-dao/) | 0 | 0% | 0/16 | 46 |  |
-| [gyroscope-protocol](gyroscope-protocol/) | 10 | 34.5% | 41/119 | 195 |  |
-| [hakka-finance](hakka-finance/) | 8 | 46.2% | 6/13 | 23 |  |
-| [hanji-protocol](hanji-protocol/) | 2 | 0% | 0/5 | 455 |  |
-| [harbor](harbor/) | 2 | 0.8% | 1/120 | 153 |  |
-| [harbor-market](harbor-market/) | 0 | 0% | 0/4 | 4 |  |
-| [harmonix-finance](harmonix-finance/) | 4 | 7% | 11/157 | 285 |  |
-| [harvest-finance](harvest-finance/) | 8 | 2.5% | 13/519 | 709 |  |
-| [harvest-flow](harvest-flow/) | 1 | 0% | 0/1 | 1 |  |
-| [hashai](hashai/) | 0 | 0% | 0/1 | 1 |  |
-| [hashdao-finance](hashdao-finance/) | 3 | 42.9% | 3/7 | 40 |  |
-| [hashflow](hashflow/) | 6 | 8% | 26/325 | 329 |  |
-| [hashport](hashport/) | 3 | 75% | 3/4 | 13 |  |
-| [hastra](hastra/) | 1 | 0% | 0/3 | 3 |  |
-| [hats.finance](hats.finance/) | 7 | 54.2% | 13/24 | 25 |  |
-| [hectagon](hectagon/) | 1 | 0% | 0/6 | 6 |  |
-| [hedgey](hedgey/) | 15 | 0% | 0/7 | 8 |  |
-| [hegic](hegic/) | 2 | 33.3% | 6/18 | 1073 |  |
-| [helix](helix/) | 0 | 0% | 0/9 | 9 |  |
-| [helix-finance](helix-finance/) | 1 | 0% | 0/9 | 9 |  |
-| [hemi](hemi/) | 6 | 3% | 1/33 | 43 |  |
-| [hemi-staking](hemi-staking/) | 5 | 1.9% | 1/53 | 124 |  |
-| [hemibtc](hemibtc/) | 5 | 0% | 0/35 | 44 |  |
-| [henjin-dex](henjin-dex/) | 2 | 60% | 3/5 | 9 |  |
-| [hera-finance](hera-finance/) | 3 | 60% | 3/5 | 285 |  |
-| [hercules](hercules/) | 1 | 0% | 5/0 | 22 |  |
-| [heroes-of-mavia](heroes-of-mavia/) | 1 | 0% | 0/13 | 13 |  |
-| [hinkal](hinkal/) | 8 | 0% | 0/1464 | 1470 |  |
-| [hlp0](hlp0/) | 0 | 0% | 0/4 | 4 |  |
-| [hodltree](hodltree/) | 1 | 0% | 0/8 | 8 |  |
-| [holdstation](holdstation/) | 9 | 4.8% | 1/21 | 58 |  |
-| [homora-v2](homora-v2/) | 1 | 0% | 0/1 | 1 |  |
-| [honeyfarm](honeyfarm/) | 2 | 25% | 1/4 | 1130 |  |
-| [honeyswap](honeyswap/) | 1 | 0% | 0/1 | 1 |  |
-| [hop-protocol](hop-protocol/) | 4 | 20% | 9/45 | 783 |  |
-| [hope-money](hope-money/) | 5 | 35.7% | 15/42 | 44 |  |
-| [hopr](hopr/) | 2 | 7.7% | 1/13 | 75 |  |
-| [hord](hord/) | 2 | 0% | 0/10 | 10 |  |
-| [horizondex](horizondex/) | 9 | 24.1% | 7/29 | 65 |  |
-| [hourglass](hourglass/) | 7 | 1.6% | 3/191 | 217 |  |
-| [houses-of-rome](houses-of-rome/) | 13 | 0% | 0/13 | 22 |  |
-| [htx](htx/) | 0 | 0% | 0/5 | 5 |  |
-| [huckleberry](huckleberry/) | 1 | 0% | 0/6 | 26 |  |
-| [hundred-finance](hundred-finance/) | 1 | 0% | 0/1 | 3 |  |
-| [hunny-finance](hunny-finance/) | 1 | 0% | 0/46 | 46 |  |
-| [hurricaneswap](hurricaneswap/) | 1 | 20% | 1/5 | 22 |  |
-| [hybra](hybra/) | 4 | 0% | 0/10 | 76 |  |
-| [hydt-protocol](hydt-protocol/) | 1 | 0% | 0/10 | 10 |  |
-| [hyper-finance](hyper-finance/) | 1 | 0% | 0/4 | 42 |  |
-| [hyperbeat](hyperbeat/) | 14 | 9.7% | 19/195 | 251 |  |
-| [hyperbloom](hyperbloom/) | 1 | 0% | 0/4 | 44 |  |
-| [hyperithm](hyperithm/) | 11 | 18.2% | 41/225 | 225 |  |
-| [hyperjump](hyperjump/) | 3 | 0% | 0/14 | 14 |  |
-| [hyperlane](hyperlane/) | 17 | 0% | 0/60 | 67 |  |
-| [hyperlend](hyperlend/) | 18 | 24.7% | 22/89 | 89 |  |
-| [hyperstable](hyperstable/) | 6 | 0% | 0/33 | 33 |  |
-| [hypersurface](hypersurface/) | 2 | 5.7% | 5/87 | 285 |  |
-| [hyperswap](hyperswap/) | 3 | 0% | 0/9 | 94 |  |
-| [hyperwave](hyperwave/) | 9 | 0% | 0/9 | 13 |  |
-| [hyperyield](hyperyield/) | 8 | 16.7% | 1/6 | 6 |  |
-| [hypha](hypha/) | 3 | 39.4% | 13/33 | 65 |  |
-| [hyphen](hyphen/) | 11 | 70% | 7/10 | 15 |  |
-| [iaero-protocol](iaero-protocol/) | 8 | 6.9% | 2/29 | 35 |  |
-| [ichi](ichi/) | 9 | 12.5% | 5/40 | 891 |  |
-| [ideamarket](ideamarket/) | 2 | 0% | 0/18 | 18 |  |
-| [illuvium](illuvium/) | 1 | 0% | 0/10 | 12 |  |
-| [immutable-zkevm](immutable-zkevm/) | 5 | 0% | 0/2 | 9 |  |
-| [immutablex](immutablex/) | 1 | 0% | 0/1 | 1 |  |
-| [impermax-finance](impermax-finance/) | 9 | 14.3% | 5/35 | 3550 |  |
-| [impossible](impossible/) | 16 | 0% | 0/7 | 9 |  |
-| [inception](inception/) | 11 | 78.9% | 15/19 | 23 |  |
-| [incprinter](incprinter/) | 0 | 0% | 0/6 | 6 |  |
-| [index-coop](index-coop/) | 7 | 35.7% | 20/56 | 180 |  |
-| [infinifi](infinifi/) | 12 | 1.4% | 1/74 | 129 |  |
-| [infinit](infinit/) | 0 | 0% | 0/6 | 6 |  |
-| [infinite-trading-protocol](infinite-trading-protocol/) | 1 | 1.8% | 1/57 | 2202 |  |
-| [infinitypools](infinitypools/) | 2 | 0% | 0/6 | 6 |  |
-| [infrared-finance](infrared-finance/) | 27 | 56.1% | 23/41 | 53 |  |
-| [init-capital](init-capital/) | 7 | 31% | 9/29 | 72 |  |
-| [injective-bridge](injective-bridge/) | 1 | 0% | 0/1 | 7 |  |
-| [ink-bridge](ink-bridge/) | 17 | 41.9% | 13/31 | 35 |  |
-| [insurace](insurace/) | 0 | 0% | 0/23 | 23 |  |
-| [insuredao](insuredao/) | 1 | 0% | 0/32 | 32 |  |
-| [integral](integral/) | 2 | 0% | 0/25 | 25 |  |
-| [intentx](intentx/) | 2 | 0% | 0/79 | 143 |  |
-| [intercroneswap](intercroneswap/) | 0 | 0% | 0/6 | 6 |  |
-| [interest-protocol](interest-protocol/) | 2 | 50% | 1/2 | 8 |  |
-| [international-meme-fund](international-meme-fund/) | 2 | 0% | 0/13 | 13 |  |
-| [intuition](intuition/) | 5 | 33.3% | 3/9 | 10 |  |
-| [inverse-finance](inverse-finance/) | 7 | 11% | 8/73 | 82 |  |
-| [ionic-protocol](ionic-protocol/) | 1 | 33.3% | 1/3 | 76 |  |
-| [iotube](iotube/) | 1 | 0% | 0/13 | 35 |  |
-| [iq](iq/) | 0 | 0% | 0/4 | 22 |  |
-| [iron-finance](iron-finance/) | 0 | 0% | 0/82 | 83 |  |
-| [ithaca-protocol](ithaca-protocol/) | 3 | 77.8% | 7/9 | 15 |  |
-| [itrust-finance](itrust-finance/) | 1 | 4.8% | 1/21 | 341 |  |
-| [ixs](ixs/) | 4 | 0% | 0/9 | 10 |  |
-| [izumi-finance](izumi-finance/) | 0 | 0% | 0/17 | 189 |  |
-| [jarvis-network](jarvis-network/) | 6 | 0% | 0/59 | 60 |  |
-| [javsphere](javsphere/) | 0 | 0% | 0/37 | 38 |  |
-| [jaypeggers](jaypeggers/) | 1 | 0% | 0/8 | 8 |  |
-| [jetfuel-finance](jetfuel-finance/) | 0 | 0% | 0/54 | 54 |  |
-| [jetswap](jetswap/) | 2 | 0% | 0/16 | 22 |  |
-| [jones-dao](jones-dao/) | 5 | 13% | 6/46 | 1007 |  |
-| [jpegd](jpegd/) | 6 | 10.8% | 7/65 | 65 |  |
-| [juice-finance](juice-finance/) | 1 | 0% | 0/29 | 29 |  |
-| [juicebox](juicebox/) | 10 | 14.3% | 7/49 | 50 |  |
-| [julswap](julswap/) | 4 | 0% | 0/8 | 8 |  |
-| [justmoney](justmoney/) | 0 | 0% | 0/1 | 1 |  |
-| [k2](k2/) | 0 | 0% | 0/21 | 32 |  |
-| [k3-capital](k3-capital/) | 6 | 5% | 2/40 | 41 |  |
-| [k9-finance-dao](k9-finance-dao/) | 1 | 0% | 0/8 | 8 |  |
-| [kafe-finance](kafe-finance/) | 1 | 50% | 1/2 | 199 |  |
-| [kaio](kaio/) | 0 | 0% | 0/0 | 30 |  |
-| [kaito](kaito/) | 0 | 0% | 0/3 | 4 |  |
-| [kalax](kalax/) | 1 | 0% | 0/12 | 15 |  |
-| [kalmy-app](kalmy-app/) | 1 | 0% | 0/30 | 186 |  |
-| [kandle-finance](kandle-finance/) | 2 | 100% | 2/2 | 2 |  |
-| [kasu](kasu/) | 2 | 20.8% | 5/24 | 26 |  |
-| [katana-pre-launch](katana-pre-launch/) | 1 | 0% | 0/49 | 529 |  |
-| [kawaiiswap](kawaiiswap/) | 2 | 50% | 1/2 | 5 |  |
-| [keep-network](keep-network/) | 18 | 6.4% | 7/110 | 878 |  |
-| [keep3r-network](keep3r-network/) | 1 | 2% | 1/51 | 1513 |  |
-| [keeta-bridge](keeta-bridge/) | 0 | 0% | 0/4 | 4 |  |
-| [keyring](keyring/) | 16 | 20.5% | 8/39 | 793 |  |
-| [killswitch](killswitch/) | 3 | 0% | 0/12 | 12 |  |
-| [kiloex](kiloex/) | 10 | 27.3% | 6/22 | 773 |  |
-| [kim-exchange](kim-exchange/) | 8 | 0% | 1/0 | 32 |  |
-| [kine-finance](kine-finance/) | 0 | 0% | 0/11 | 13 |  |
-| [kinetiq](kinetiq/) | 12 | 0% | 0/5 | 5 |  |
-| [king-protocol](king-protocol/) | 5 | 57.1% | 4/7 | 21 |  |
-| [kingdefi](kingdefi/) | 2 | 0% | 0/2 | 36 |  |
-| [kinto](kinto/) | 11 | 0% | 0/1 | 1 |  |
-| [kinza-finance](kinza-finance/) | 2 | 7.7% | 1/13 | 115 |  |
-| [klend](klend/) | 1 | 50% | 2/4 | 25 |  |
-| [kleros](kleros/) | 0 | 0% | 0/26 | 304 |  |
-| [knightswap](knightswap/) | 1 | 0% | 0/5 | 11 |  |
-| [knit-finance](knit-finance/) | 1 | 0% | 0/2 | 2 |  |
-| [kodiak](kodiak/) | 7 | 50% | 2/4 | 4 |  |
-| [kogefarm](kogefarm/) | 2 | 25% | 1/4 | 156 |  |
-| [korbit](korbit/) | 0 | 0% | 0/5 | 5 |  |
-| [kpk](kpk/) | 5 | 0% | 0/33 | 33 |  |
-| [kromatika](kromatika/) | 2 | 0% | 0/8 | 3139 |  |
-| [krystal](krystal/) | 7 | 0% | 0/11 | 11 |  |
-| [kucoin](kucoin/) | 0 | 0% | 0/4 | 4 |  |
-| [kuma-protocol](kuma-protocol/) | 3 | 22.2% | 2/9 | 28 |  |
-| [kuru](kuru/) | 5 | 0% | 0/1 | 1 |  |
-| [kyberswap](kyberswap/) | 16 | 10.7% | 13/122 | 3212 |  |
-| [laari-finance](laari-finance/) | 2 | 100% | 1/1 | 1 |  |
-| [lagoon](lagoon/) | 11 | 46.2% | 6/13 | 13 |  |
-| [lair-finance](lair-finance/) | 11 | 0% | 0/27 | 86 |  |
-| [landshare](landshare/) | 0 | 0% | 0/8 | 8 |  |
-| [landx-finance](landx-finance/) | 1 | 22.2% | 2/9 | 9 |  |
-| [latch](latch/) | 2 | 0% | 0/3 | 3 |  |
-| [latteswap](latteswap/) | 2 | 66.7% | 2/3 | 4 |  |
-| [layer2-finance](layer2-finance/) | 1 | 0% | 0/5 | 5 |  |
-| [layerbank](layerbank/) | 4 | 50% | 6/12 | 97 |  |
-| [layerzero](layerzero/) | 94 | 0% | 0/3 | 3 |  |
-| [lazy](lazy/) | 0 | 0% | 0/2 | 2 |  |
-| [ledgity-yield](ledgity-yield/) | 1 | 0% | 0/126 | 167 |  |
-| [leetswap](leetswap/) | 0 | 0% | 0/8 | 10 |  |
-| [legion](legion/) | 5 | 0% | 0/7 | 7 |  |
-| [lendflare](lendflare/) | 1 | 5.3% | 1/19 | 63 |  |
-| [lendle](lendle/) | 10 | 68.2% | 15/22 | 30 |  |
-| [lets-get-hai](lets-get-hai/) | 5 | 66.7% | 16/24 | 25 |  |
-| [levex](levex/) | 0 | 0% | 0/3 | 3 |  |
-| [levinswap](levinswap/) | 0 | 0% | 0/10 | 10 |  |
-| [libero-financial](libero-financial/) | 1 | 100% | 1/1 | 25 |  |
-| [lido](lido/) | 147 | 47.4% | 170/359 | 366 |  |
-| [lido-impact-staking](lido-impact-staking/) | 2 | 0% | 0/1 | 1 |  |
-| [lien](lien/) | 0 | 0% | 0/14 | 14 |  |
-| [lighter](lighter/) | 1 | 0% | 0/9 | 9 |  |
-| [likwid](likwid/) | 2 | 80% | 4/5 | 5 |  |
-| [limitless-exchange](limitless-exchange/) | 23 | 0% | 0/22 | 22 |  |
-| [liondex](liondex/) | 1 | 25% | 1/4 | 36 |  |
-| [liquid-collective](liquid-collective/) | 19 | 0% | 0/21 | 22 |  |
-| [liquid-driver](liquid-driver/) | 2 | 0% | 0/23 | 23 |  |
-| [liquid-finance](liquid-finance/) | 0 | 0% | 0/17 | 17 |  |
-| [liquidloans](liquidloans/) | 4 | 47.6% | 10/21 | 21 |  |
-| [liquis](liquis/) | 3 | 41.7% | 5/12 | 12 |  |
-| [liquity](liquity/) | 6 | 36.4% | 16/44 | 112 |  |
-| [lisk-bridge](lisk-bridge/) | 20 | 2.4% | 2/85 | 94 |  |
-| [lista-dao](lista-dao/) | 81 | 44.1% | 86/195 | 195 |  |
-| [lithos](lithos/) | 1 | 20% | 2/10 | 10 |  |
-| [llama-airforce](llama-airforce/) | 0 | 0% | 0/47 | 99 |  |
-| [llamapay](llamapay/) | 1 | 16.7% | 1/6 | 10 |  |
-| [lockon](lockon/) | 8 | 90% | 9/10 | 17 |  |
-| [locus-finance](locus-finance/) | 1 | 5.4% | 4/74 | 157 |  |
-| [looksrare](looksrare/) | 3 | 16.7% | 4/24 | 24 |  |
-| [looping-collective](looping-collective/) | 13 | 92.6% | 25/27 | 30 |  |
-| [loopring](loopring/) | 1 | 10% | 3/30 | 123 |  |
-| [lorenzo-protocol](lorenzo-protocol/) | 1 | 0% | 0/1 | 1 |  |
-| [luaswap](luaswap/) | 0 | 0% | 0/9 | 9 |  |
-| [lucidly-finance](lucidly-finance/) | 0 | 0% | 0/7 | 10 |  |
-| [luckychip](luckychip/) | 4 | 44.4% | 4/9 | 9 |  |
-| [lumi-finance](lumi-finance/) | 1 | 0% | 0/4 | 4 |  |
-| [lumin-finance](lumin-finance/) | 1 | 0% | 0/1 | 1 |  |
-| [lusd-chickenbonds](lusd-chickenbonds/) | 7 | 60% | 3/5 | 5 |  |
-| [lybra-finance](lybra-finance/) | 1 | 3.1% | 1/32 | 32 |  |
-| [lynex](lynex/) | 3 | 6.4% | 3/47 | 53 |  |
-| [lynx](lynx/) | 11 | 2.2% | 7/317 | 375 |  |
-| [m0](m0/) | 52 | 66.7% | 22/33 | 33 |  |
-| [magpie-ecosystem](magpie-ecosystem/) | 4 | 66.3% | 55/83 | 700 |  |
-| [maha.xyz](maha.xyz/) | 2 | 4.5% | 1/22 | 53 |  |
-| [mahadao](mahadao/) | 0 | 0% | 0/101 | 101 |  |
-| [maia-dao-ecosystem](maia-dao-ecosystem/) | 8 | 37.5% | 6/16 | 269 |  |
-| [mainstreet](mainstreet/) | 1 | 50% | 6/12 | 12 |  |
-| [makina](makina/) | 8 | 86.7% | 39/45 | 46 |  |
-| [manarium](manarium/) | 1 | 100% | 1/1 | 3 |  |
-| [manga-fi](manga-fi/) | 1 | 100% | 1/1 | 1 |  |
-| [mangrove](mangrove/) | 8 | 18.2% | 6/33 | 61 |  |
-| [mansory](mansory/) | 0 | 0% | 0/1 | 1 |  |
-| [manta-atlantic-stake](manta-atlantic-stake/) | 1 | 0% | 0/13 | 112 |  |
-| [manta-cedefi](manta-cedefi/) | 5 | 0% | 0/0 | 17 |  |
-| [manta-pacific](manta-pacific/) | 0 | 0% | 0/18 | 22 |  |
-| [mantisswap](mantisswap/) | 2 | 44.4% | 8/18 | 47 |  |
-| [mantle-bridge](mantle-bridge/) | 9 | 0% | 0/42 | 42 |  |
-| [mantle-restaking](mantle-restaking/) | 13 | 14% | 6/43 | 52 |  |
-| [mantra-dao](mantra-dao/) | 1 | 0% | 0/54 | 3021 |  |
-| [maple-finance](maple-finance/) | 27 | 31.8% | 7/22 | 22 |  |
-| [marginly](marginly/) | 4 | 66.7% | 4/6 | 9 |  |
-| [marlin-protocol](marlin-protocol/) | 0 | 0% | 0/28 | 28 |  |
-| [mars-ecosystem](mars-ecosystem/) | 2 | 0% | 0/14 | 14 |  |
-| [mars-poolin](mars-poolin/) | 0 | 0% | 0/17 | 17 |  |
-| [match-finance](match-finance/) | 1 | 0% | 0/23 | 43 |  |
-| [matrixdock](matrixdock/) | 20 | 16.7% | 4/24 | 24 |  |
-| [maverick-protocol](maverick-protocol/) | 7 | 33.3% | 5/15 | 95 |  |
-| [mayan-finance](mayan-finance/) | 4 | 0% | 0/1 | 1 |  |
-| [mcdex](mcdex/) | 4 | 16.7% | 5/30 | 2048 |  |
-| [mdex](mdex/) | 3 | 80% | 4/5 | 11 |  |
-| [meeds-finance](meeds-finance/) | 0 | 0% | 0/4 | 4 |  |
-| [megaeth-bridge](megaeth-bridge/) | 2 | 0% | 0/29 | 29 |  |
-| [meld-gold](meld-gold/) | 8 | 21.4% | 3/14 | 14 |  |
-| [mellow-protocol](mellow-protocol/) | 21 | 25.1% | 106/422 | 424 |  |
-| [mendi-finance](mendi-finance/) | 6 | 33.3% | 2/6 | 17 |  |
-| [mento](mento/) | 23 | 40.7% | 22/54 | 161 |  |
-| [merchant-moe](merchant-moe/) | 1 | 27.8% | 5/18 | 43 |  |
-| [merit-circle](merit-circle/) | 0 | 0% | 0/33 | 33 |  |
-| [merlins-seal](merlins-seal/) | 6 | 0% | 0/41 | 41 |  |
-| [mesher](mesher/) | 0 | 0% | 0/2 | 2 |  |
-| [meshswap](meshswap/) | 2 | 0% | 0/32 | 32 |  |
-| [meson](meson/) | 4 | 4.2% | 2/48 | 368 |  |
-| [meta-pool](meta-pool/) | 6 | 36.4% | 4/11 | 22 |  |
-| [metacoin-swap](metacoin-swap/) | 1 | 0% | 0/1 | 1 |  |
-| [metalswap](metalswap/) | 16 | 5.9% | 3/51 | 52 |  |
-| [metastrike](metastrike/) | 2 | 0% | 0/18 | 18 |  |
-| [metavault](metavault/) | 1 | 7.7% | 1/13 | 30 |  |
-| [meter-passport](meter-passport/) | 2 | 0% | 0/86 | 86 |  |
-| [meth-protocol](meth-protocol/) | 26 | 0% | 0/1 | 1 |  |
-| [metis-bridge](metis-bridge/) | 4 | 0% | 0/1 | 1 |  |
-| [metronome](metronome/) | 1 | 2.3% | 3/130 | 130 |  |
-| [metropolis-exchange](metropolis-exchange/) | 3 | 0% | 0/34 | 34 |  |
-| [mev-capital](mev-capital/) | 11 | 16.2% | 11/68 | 4995 |  |
-| [mev-protocol](mev-protocol/) | 2 | 0% | 0/3 | 3 |  |
-| [mezo-bridge](mezo-bridge/) | 16 | 28.8% | 36/125 | 153 |  |
-| [mezo-earn](mezo-earn/) | 16 | 66.7% | 36/54 | 82 |  |
-| [milk-finance](milk-finance/) | 0 | 0% | 0/1 | 1 |  |
-| [mimo](mimo/) | 0 | 0% | 0/26 | 26 |  |
-| [mind-network](mind-network/) | 0 | 0% | 0/11 | 11 |  |
-| [minebean](minebean/) | 0 | 0% | 0/6 | 6 |  |
-| [minimax](minimax/) | 1 | 0% | 0/29 | 245 |  |
-| [mint-club](mint-club/) | 8 | 66.7% | 8/12 | 39 |  |
-| [minterest](minterest/) | 0 | 0% | 0/39 | 39 |  |
-| [minto](minto/) | 2 | 33.3% | 1/3 | 4 |  |
-| [minu](minu/) | 1 | 50% | 1/2 | 12 |  |
-| [mitosis](mitosis/) | 3 | 4.2% | 3/71 | 1241 |  |
-| [mm-finance](mm-finance/) | 3 | 7.7% | 1/13 | 170 |  |
-| [mobius-money](mobius-money/) | 0 | 0% | 0/2 | 3 |  |
-| [mobox](mobox/) | 1 | 0% | 0/6 | 312 |  |
-| [mochifi](mochifi/) | 2 | 0% | 0/26 | 26 |  |
-| [mode-bridge](mode-bridge/) | 4 | 21.7% | 5/23 | 128 |  |
-| [mole](mole/) | 1 | 0% | 0/3 | 3 |  |
-| [molecular](molecular/) | 1 | 100% | 1/1 | 26 |  |
-| [molten](molten/) | 2 | 0% | 0/4 | 4 |  |
-| [mon-protocol](mon-protocol/) | 0 | 0% | 0/5 | 5 |  |
-| [monetrix](monetrix/) | 2 | 0% | 0/15 | 15 |  |
-| [moneyfi](moneyfi/) | 4 | 0% | 0/21 | 21 |  |
-| [monolith-market](monolith-market/) | 8 | 0% | 0/4 | 4 |  |
-| [monox](monox/) | 4 | 3.6% | 1/28 | 42 |  |
-| [monroe-protocol](monroe-protocol/) | 1 | 0% | 1/0 | 2 |  |
-| [monstro](monstro/) | 0 | 0% | 0/13 | 13 |  |
-| [moola-market](moola-market/) | 3 | 71.4% | 5/7 | 25 |  |
-| [moonbase-alpha](moonbase-alpha/) | 1 | 0% | 0/1 | 5 |  |
-| [mooniswap](mooniswap/) | 2 | 0% | 0/1 | 1 |  |
-| [moonswap](moonswap/) | 1 | 0% | 0/2 | 2 |  |
-| [moonwell](moonwell/) | 2 | 6% | 8/133 | 148 |  |
-| [moonwell-apollo](moonwell-apollo/) | 2 | 9.3% | 11/118 | 133 |  |
-| [more-markets](more-markets/) | 0 | 0% | 0/21 | 24 |  |
-| [moremarkets.xyz](moremarkets.xyz/) | 3 | 0% | 0/270 | 270 |  |
-| [moremoney](moremoney/) | 1 | 2.4% | 1/41 | 853 |  |
-| [morph-bridge](morph-bridge/) | 1 | 0% | 0/11 | 11 |  |
-| [morpheusai](morpheusai/) | 18 | 82% | 41/50 | 50 |  |
-| [morpho](morpho/) | 30 | 9.9% | 18/181 | 181 |  |
-| [mortgagefi](mortgagefi/) | 3 | 40% | 2/5 | 21 |  |
-| [mountain-protocol](mountain-protocol/) | 2 | 100% | 5/5 | 6 |  |
-| [mr.-lightspeed-creator-coin](mr.-lightspeed-creator-coin/) | 1 | 0% | 0/3 | 4 |  |
-| [mu-digital](mu-digital/) | 2 | 28.6% | 6/21 | 21 |  |
-| [muffin](muffin/) | 4 | 0% | 0/4 | 4 |  |
-| [mugenfinance](mugenfinance/) | 0 | 0% | 0/10 | 13 |  |
-| [multibit-protocol](multibit-protocol/) | 1 | 0% | 0/3 | 3 |  |
-| [multichain](multichain/) | 16 | 71.4% | 5/7 | 7 |  |
-| [multichainz](multichainz/) | 1 | 0% | 0/11 | 12 |  |
-| [multipli.fi](multipli.fi/) | 9 | 0% | 0/24 | 25 |  |
-| [mux-protocol](mux-protocol/) | 4 | 24.3% | 9/37 | 1987 |  |
-| [mvl-staking](mvl-staking/) | 3 | 50% | 1/2 | 45 |  |
-| [mycelium](mycelium/) | 1 | 0% | 0/41 | 41 |  |
-| [myriad-markets](myriad-markets/) | 15 | 7.7% | 3/39 | 39 |  |
-| [mytrade](mytrade/) | 1 | 0% | 0/2 | 3429 |  |
-| [myx-finance](myx-finance/) | 3 | 33.3% | 2/6 | 1041 |  |
-| [nabla-finance](nabla-finance/) | 1 | 0% | 0/27 | 234 |  |
-| [narwhalswap](narwhalswap/) | 1 | 0% | 0/27 | 27 |  |
-| [nasdex](nasdex/) | 0 | 0% | 0/13 | 13 |  |
-| [native](native/) | 9 | 0% | 0/66 | 94 |  |
-| [navigator](navigator/) | 0 | 0% | 0/12 | 12 |  |
-| [near-intents](near-intents/) | 4 | 0% | 0/2 | 2 |  |
-| [neemo-finance](neemo-finance/) | 1 | 0% | 0/2 | 14 |  |
-| [neku](neku/) | 1 | 0% | 0/8 | 128 |  |
-| [neo-tokyo](neo-tokyo/) | 4 | 0% | 0/37 | 85 |  |
-| [neopin](neopin/) | 3 | 0% | 0/0 | 84 |  |
-| [neptune-finance](neptune-finance/) | 3 | 0% | 0/2 | 59 |  |
-| [nerona](nerona/) | 0 | 0% | 0/3 | 3 |  |
-| [nerve](nerve/) | 1 | 0% | 0/21 | 65 |  |
-| [nervebridge](nervebridge/) | 1 | 0% | 0/5 | 5 |  |
-| [nest](nest/) | 10 | 31% | 26/84 | 301 |  |
-| [nest-credit](nest-credit/) | 16 | 80% | 8/10 | 20 |  |
-| [nested](nested/) | 5 | 0% | 0/18 | 18 |  |
-| [netswap](netswap/) | 2 | 0% | 5/0 | 53 |  |
-| [netweave-finance](netweave-finance/) | 1 | 0% | 2/0 | 12 |  |
-| [neuralai](neuralai/) | 1 | 0% | 0/2 | 2 |  |
-| [neutra-finance](neutra-finance/) | 1 | 0% | 0/2 | 25 |  |
-| [neutrino](neutrino/) | 0 | 0% | 0/6 | 6 |  |
-| [neuy](neuy/) | 0 | 0% | 0/5 | 5 |  |
-| [neverland](neverland/) | 14 | 0% | 0/2 | 2 |  |
-| [nexo](nexo/) | 0 | 0% | 0/1 | 1 |  |
-| [nexus-mutual](nexus-mutual/) | 2 | 0% | 0/23 | 23 |  |
-| [nf3-ape](nf3-ape/) | 1 | 50% | 1/2 | 2 |  |
-| [nftfi](nftfi/) | 7 | 18.4% | 7/38 | 40 |  |
-| [nftx](nftx/) | 5 | 31.3% | 36/115 | 227 |  |
-| [nile-exchange](nile-exchange/) | 0 | 0% | 0/1 | 1 |  |
-| [nimbora](nimbora/) | 1 | 0% | 0/4 | 4 |  |
-| [niob-finance](niob-finance/) | 0 | 0% | 0/1 | 1 |  |
-| [noble](noble/) | 3 | 0% | 0/2 | 2 |  |
-| [nodedao](nodedao/) | 7 | 68.8% | 11/16 | 16 |  |
-| [nodeops](nodeops/) | 4 | 12.5% | 1/8 | 9 |  |
-| [nomad](nomad/) | 8 | 3.5% | 3/86 | 86 |  |
-| [nomiswap](nomiswap/) | 1 | 18.2% | 2/11 | 83 |  |
-| [noon](noon/) | 5 | 10% | 2/20 | 30 |  |
-| [notional](notional/) | 7 | 9.2% | 9/98 | 107 |  |
-| [nsure](nsure/) | 2 | 0% | 0/9 | 9 |  |
-| [nucleus](nucleus/) | 11 | 50% | 4/8 | 72 |  |
-| [numisme](numisme/) | 3 | 100% | 1/1 | 1 |  |
-| [nusa](nusa/) | 0 | 0% | 0/22 | 22 |  |
-| [nxd-protocol](nxd-protocol/) | 1 | 0% | 0/1 | 1 |  |
-| [o3-swap](o3-swap/) | 1 | 0% | 0/1 | 4 |  |
-| [obeliskbtc](obeliskbtc/) | 1 | 100% | 1/1 | 1 |  |
-| [obol](obol/) | 11 | 0% | 0/6 | 6 |  |
-| [ocean-point](ocean-point/) | 1 | 0% | 0/11 | 23 |  |
-| [ocp-finance](ocp-finance/) | 1 | 14.3% | 1/7 | 30 |  |
-| [octus-bridge](octus-bridge/) | 1 | 0% | 0/1 | 1 |  |
-| [odos](odos/) | 7 | 50% | 2/4 | 567 |  |
-| [odyssey-finance](odyssey-finance/) | 2 | 34.3% | 24/70 | 76 |  |
-| [okieswap](okieswap/) | 1 | 0% | 0/12 | 12 |  |
-| [okx](okx/) | 11 | 0% | 0/1 | 1 |  |
-| [olive-network](olive-network/) | 1 | 100% | 5/5 | 5 |  |
-| [olympus-dao](olympus-dao/) | 5 | 6% | 24/397 | 397 |  |
-| [omni-liquid-staking](omni-liquid-staking/) | 0 | 0% | 0/5 | 5 |  |
-| [omnibtc](omnibtc/) | 4 | 0% | 0/10 | 50 |  |
-| [ondo-finance](ondo-finance/) | 31 | 58.7% | 64/109 | 109 |  |
-| [oneswap](oneswap/) | 3 | 0% | 0/7 | 7 |  |
-| [oni-exchange](oni-exchange/) | 1 | 33.3% | 1/3 | 4 |  |
-| [onx-finance](onx-finance/) | 4 | 14.1% | 20/142 | 142 |  |
-| [onyx](onyx/) | 1 | 0% | 0/5 | 7 |  |
-| [open-ticketing-ecosystem](open-ticketing-ecosystem/) | 3 | 0% | 0/6 | 3173 |  |
-| [openeden](openeden/) | 9 | 3% | 6/197 | 1263 |  |
-| [openledger](openledger/) | 1 | 0% | 0/2 | 2 |  |
-| [openleverage](openleverage/) | 8 | 64.3% | 9/14 | 50 |  |
-| [openocean](openocean/) | 0 | 0% | 0/31 | 33 |  |
-| [opensea](opensea/) | 1 | 1.4% | 1/72 | 129 |  |
-| [opentrade](opentrade/) | 7 | 10% | 3/30 | 30 |  |
-| [opinion](opinion/) | 5 | 66.7% | 4/6 | 8 |  |
-| [opium](opium/) | 0 | 0% | 0/1 | 1 |  |
-| [optimism-bridge](optimism-bridge/) | 20 | 5% | 3/60 | 60 |  |
-| [opulous](opulous/) | 0 | 0% | 0/11 | 11 |  |
-| [opyn](opyn/) | 4 | 45.5% | 10/22 | 97 |  |
-| [orangex](orangex/) | 0 | 0% | 0/1 | 1 |  |
-| [orbit-bridge](orbit-bridge/) | 1 | 0% | 0/4 | 19 |  |
-| [orbit-protocol](orbit-protocol/) | 0 | 0% | 0/13 | 13 |  |
-| [orbiter-one](orbiter-one/) | 2 | 0% | 0/1 | 3 |  |
-| [orbs](orbs/) | 0 | 0% | 0/9 | 9 |  |
-| [orderly-chain](orderly-chain/) | 18 | 0% | 0/1 | 1 |  |
-| [origami-finance](origami-finance/) | 27 | 65.7% | 46/70 | 70 |  |
-| [ostium](ostium/) | 7 | 75% | 12/16 | 16 |  |
-| [otsea](otsea/) | 3 | 33.3% | 2/6 | 20 |  |
-| [outcome-finance](outcome-finance/) | 0 | 0% | 0/3 | 4 |  |
-| [overnight-finance](overnight-finance/) | 3 | 31% | 9/29 | 5049 |  |
-| [overtime](overtime/) | 11 | 7.2% | 5/69 | 1705 |  |
-| [paal-ai](paal-ai/) | 1 | 0% | 0/3 | 4 |  |
-| [padswap](padswap/) | 1 | 0% | 0/8 | 24 |  |
-| [paladin-finance](paladin-finance/) | 2 | 23.8% | 10/42 | 44 |  |
-| [palmswap](palmswap/) | 1 | 0% | 0/1 | 1 |  |
-| [pancakeswap](pancakeswap/) | 31 | 19% | 20/105 | 105 |  |
-| [pandora](pandora/) | 1 | 21.7% | 5/23 | 28 |  |
-| [pangolin](pangolin/) | 13 | 53.3% | 8/15 | 170 |  |
-| [panther-protocol](panther-protocol/) | 0 | 0% | 0/9 | 9 |  |
-| [pantherswap](pantherswap/) | 1 | 0% | 0/11 | 11 |  |
-| [paragonsdao](paragonsdao/) | 8 | 25% | 1/4 | 4 |  |
-| [parallel-protocol](parallel-protocol/) | 5 | 36% | 9/25 | 32 |  |
-| [paraluni](paraluni/) | 1 | 0% | 0/9 | 9 |  |
-| [parasail](parasail/) | 0 | 0% | 0/1 | 35 |  |
-| [pareto](pareto/) | 20 | 21.6% | 35/162 | 162 |  |
-| [particle](particle/) | 0 | 0% | 0/22 | 22 |  |
-| [paxe-protocol](paxe-protocol/) | 1 | 16.7% | 1/6 | 8 |  |
-| [paxos](paxos/) | 7 | 0% | 0/1 | 1 |  |
-| [peakdefi](peakdefi/) | 0 | 0% | 0/4 | 4 |  |
-| [peapods-finance](peapods-finance/) | 4 | 33.3% | 11/33 | 132 |  |
-| [peer](peer/) | 0 | 0% | 0/29 | 29 |  |
-| [pell-network](pell-network/) | 1 | 0% | 0/7 | 7 |  |
-| [pendle](pendle/) | 24 | 25.6% | 117/457 | 467 |  |
-| [pepeteam](pepeteam/) | 0 | 0% | 0/2 | 2 |  |
-| [pepu-bridge](pepu-bridge/) | 0 | 0% | 0/5 | 5 |  |
-| [percent-finance](percent-finance/) | 0 | 0% | 0/25 | 25 |  |
-| [perennial](perennial/) | 14 | 0% | 0/70 | 70 |  |
-| [perpetual-protocol](perpetual-protocol/) | 0 | 0% | 0/40 | 40 |  |
-| [phantom-sol](phantom-sol/) | 3 | 0% | 0/8 | 8 |  |
-| [pharaoh-exchange](pharaoh-exchange/) | 3 | 11.9% | 7/59 | 87 |  |
-| [phemex](phemex/) | 0 | 0% | 0/2 | 2 |  |
-| [phuture](phuture/) | 6 | 66.7% | 4/6 | 10 |  |
-| [pickle](pickle/) | 4 | 6.9% | 2/29 | 1145 |  |
-| [picnic](picnic/) | 1 | 0% | 0/20 | 20 |  |
-| [picwe](picwe/) | 1 | 0% | 0/5 | 5 |  |
-| [piedao](piedao/) | 0 | 0% | 0/8 | 8 |  |
-| [pika-protocol](pika-protocol/) | 3 | 13.6% | 6/44 | 64 |  |
-| [piku](piku/) | 3 | 7.3% | 4/55 | 57 |  |
-| [pine-protocol](pine-protocol/) | 0 | 0% | 0/4 | 4 |  |
-| [pinksale](pinksale/) | 15 | 0% | 0/60 | 60 |  |
-| [pinkswap](pinkswap/) | 0 | 0% | 0/7 | 7 |  |
-| [planet](planet/) | 1 | 10.4% | 5/48 | 56 |  |
-| [plasma-one](plasma-one/) | 0 | 0% | 0/5 | 7 |  |
-| [plasma-saving-vaults](plasma-saving-vaults/) | 3 | 0% | 0/5 | 6 |  |
-| [pleasing-gold](pleasing-gold/) | 0 | 0% | 0/6 | 11 |  |
-| [plutusdao](plutusdao/) | 2 | 0% | 0/78 | 78 |  |
-| [pnetwork](pnetwork/) | 4 | 0% | 0/1 | 71 |  |
-| [pods-finance](pods-finance/) | 0 | 0% | 0/3 | 3 |  |
-| [polkamarkets](polkamarkets/) | 4 | 0% | 0/10 | 63 |  |
-| [polkastarter](polkastarter/) | 3 | 50% | 1/2 | 3 |  |
-| [polycat-finance](polycat-finance/) | 2 | 0% | 0/7 | 7 |  |
-| [polygon-bridge](polygon-bridge/) | 11 | 0% | 0/65 | 66 |  |
-| [polygon-zkevm-bridge](polygon-zkevm-bridge/) | 6 | 0% | 0/20 | 20 |  |
-| [polygonfarm-finance](polygonfarm-finance/) | 2 | 100% | 1/1 | 1 |  |
-| [polymarket](polymarket/) | 23 | 0% | 0/33 | 33 |  |
-| [polynomial-protocol](polynomial-protocol/) | 17 | 0% | 0/9 | 9 |  |
-| [polywhale-finance](polywhale-finance/) | 2 | 0% | 0/2 | 1123 |  |
-| [pond0x](pond0x/) | 0 | 0% | 0/5 | 10 |  |
-| [poof-cash](poof-cash/) | 0 | 0% | 0/0 | 1 |  |
-| [pool-party](pool-party/) | 0 | 0% | 0/2 | 2 |  |
-| [poolshark](poolshark/) | 1 | 0% | 0/1 | 1 |  |
-| [poolside](poolside/) | 2 | 50% | 1/2 | 2 |  |
-| [pooltogether](pooltogether/) | 4 | 1.1% | 1/88 | 138 |  |
-| [poolz-finance](poolz-finance/) | 0 | 0% | 0/33 | 34 |  |
-| [position-exchange](position-exchange/) | 1 | 0% | 0/52 | 52 |  |
-| [powh3d](powh3d/) | 0 | 0% | 0/1 | 1 |  |
-| [prdt](prdt/) | 1 | 0% | 0/10 | 11 |  |
-| [predict-fun](predict-fun/) | 9 | 41.7% | 10/24 | 39 |  |
-| [predictcoin](predictcoin/) | 1 | 50% | 1/2 | 48 |  |
-| [prime-staking](prime-staking/) | 2 | 0% | 0/1 | 9 |  |
-| [prime-vaults](prime-vaults/) | 2 | 75% | 3/4 | 45 |  |
-| [primefi](primefi/) | 2 | 0% | 0/65 | 125 |  |
-| [printr](printr/) | 3 | 0% | 0/1 | 1 |  |
-| [privacy-cash](privacy-cash/) | 10 | 0% | 0/3 | 8 |  |
-| [privacy-pools](privacy-pools/) | 4 | 60% | 3/5 | 5 |  |
-| [prosper](prosper/) | 0 | 0% | 0/7 | 7 |  |
-| [proxy](proxy/) | 1 | 28.6% | 2/7 | 274 |  |
-| [pstake-finance](pstake-finance/) | 20 | 41.7% | 5/12 | 12 |  |
-| [puff-penthouse](puff-penthouse/) | 0 | 0% | 0/4 | 4 |  |
-| [puffer-finance](puffer-finance/) | 4 | 1.8% | 1/55 | 75 |  |
-| [pulsechain](pulsechain/) | 0 | 0% | 0/2 | 3 |  |
-| [pulsechain-bridge](pulsechain-bridge/) | 0 | 0% | 0/2 | 3 |  |
-| [pumpbase](pumpbase/) | 1 | 100% | 1/1 | 14 |  |
-| [pumpspace](pumpspace/) | 3 | 40% | 2/5 | 731 |  |
-| [punks-terminal](punks-terminal/) | 0 | 0% | 0/6 | 6 |  |
-| [pureswap](pureswap/) | 1 | 0% | 0/6 | 6 |  |
-| [pyth](pyth/) | 25 | 0% | 0/6 | 15 |  |
-| [qao](qao/) | 1 | 100% | 1/1 | 3 |  |
-| [qian](qian/) | 1 | 0% | 0/3 | 101 |  |
-| [qidao](qidao/) | 1 | 0% | 0/74 | 1410 |  |
-| [qubit](qubit/) | 4 | 100% | 19/19 | 64 |  |
-| [quickswap](quickswap/) | 1 | 0% | 0/69 | 84 |  |
-| [quoll](quoll/) | 2 | 8.3% | 5/60 | 1241 |  |
-| [ra-exchange](ra-exchange/) | 0 | 0% | 0/2 | 2 |  |
-| [raac](raac/) | 11 | 0% | 0/19 | 19 |  |
-| [raccoon-finance](raccoon-finance/) | 1 | 100% | 1/1 | 10 |  |
-| [radiant](radiant/) | 10 | 25% | 12/48 | 1714 |  |
-| [radioshack](radioshack/) | 1 | 0% | 0/54 | 55 |  |
-| [raft](raft/) | 1 | 24.1% | 7/29 | 69 |  |
-| [rage-protocol](rage-protocol/) | 1 | 27.3% | 6/22 | 23 |  |
-| [rage-trade-v1](rage-trade-v1/) | 3 | 20% | 2/10 | 13 |  |
-| [railgun](railgun/) | 10 | 56% | 14/25 | 85 |  |
-| [rain](rain/) | 3 | 0% | 0/33 | 33 |  |
-| [rainbow-bridge](rainbow-bridge/) | 16 | 0% | 0/3 | 3 |  |
-| [rank-trading](rank-trading/) | 2 | 33.3% | 2/6 | 12 |  |
-| [rari-capital](rari-capital/) | 1 | 0% | 0/44 | 205 |  |
-| [ratex](ratex/) | 2 | 0% | 0/79 | 154 |  |
-| [re](re/) | 1 | 0% | 0/38 | 41 |  |
-| [re7-labs](re7-labs/) | 11 | 28% | 72/257 | 260 |  |
-| [realt](realt/) | 0 | 0% | 0/3 | 3 |  |
-| [reddex](reddex/) | 3 | 0% | 0/31 | 31 |  |
-| [redstone-oracles](redstone-oracles/) | 8 | 8.9% | 16/179 | 180 |  |
-| [reflexer](reflexer/) | 8 | 77.8% | 7/9 | 51 |  |
-| [reformdao](reformdao/) | 0 | 0% | 0/6 | 6 |  |
-| [renzo](renzo/) | 13 | 35.6% | 31/87 | 88 |  |
-| [reppo](reppo/) | 3 | 0% | 0/1 | 10 |  |
-| [republic-note](republic-note/) | 0 | 0% | 0/5 | 5 |  |
-| [reserve-protocol](reserve-protocol/) | 27 | 58.8% | 50/85 | 610 |  |
-| [reservoir-protocol](reservoir-protocol/) | 7 | 9.6% | 9/94 | 642 |  |
-| [resolv](resolv/) | 1 | 1.8% | 1/55 | 70 |  |
-| [resupply](resupply/) | 8 | 17.5% | 7/40 | 50 |  |
-| [revault](revault/) | 1 | 20% | 2/10 | 1708 |  |
-| [revert](revert/) | 13 | 87.5% | 14/16 | 150 |  |
-| [revest-finance](revest-finance/) | 1 | 0% | 0/40 | 40 |  |
-| [revoluzion](revoluzion/) | 1 | 100% | 1/1 | 1 |  |
-| [reya](reya/) | 6 | 0% | 0/4 | 838 |  |
-| [rezerve](rezerve/) | 3 | 1.4% | 1/74 | 105 |  |
-| [rheo](rheo/) | 16 | 7.2% | 5/69 | 70 |  |
-| [rhino.fi](rhino.fi/) | 9 | 8.3% | 1/12 | 12 |  |
-| [rho](rho/) | 4 | 0% | 0/1 | 166 |  |
-| [ribbon-finance](ribbon-finance/) | 15 | 63.3% | 31/49 | 117 |  |
-| [rigoblock](rigoblock/) | 5 | 2.6% | 2/76 | 77 |  |
-| [ring-protocol](ring-protocol/) | 10 | 30.8% | 16/52 | 144 |  |
-| [ringfi](ringfi/) | 1 | 50% | 1/2 | 2 |  |
-| [rip.xyz](rip.xyz/) | 1 | 20% | 1/5 | 9 |  |
-| [rise-bridge](rise-bridge/) | 0 | 0% | 0/27 | 27 |  |
-| [rivera-money](rivera-money/) | 1 | 100% | 1/1 | 8 |  |
-| [robinhood](robinhood/) | 0 | 0% | 0/3 | 3 |  |
-| [robiniaswap](robiniaswap/) | 1 | 0% | 0/1 | 1 |  |
-| [rocifi](rocifi/) | 3 | 13.3% | 4/30 | 43 |  |
-| [rockawayx](rockawayx/) | 11 | 13.8% | 41/297 | 297 |  |
-| [rocket-pool](rocket-pool/) | 16 | 0% | 0/83 | 83 |  |
-| [rocketswap-base](rocketswap-base/) | 1 | 0% | 0/8 | 8 |  |
-| [rocksolid-network](rocksolid-network/) | 2 | 0% | 0/1 | 1 |  |
-| [roguex](roguex/) | 1 | 50% | 1/2 | 112 |  |
-| [rollie-finance](rollie-finance/) | 1 | 0% | 1/0 | 1 |  |
-| [rollx](rollx/) | 2 | 0% | 0/23 | 23 |  |
-| [ronin-bridge](ronin-bridge/) | 13 | 50% | 4/8 | 31 |  |
-| [rook](rook/) | 7 | 0% | 0/6 | 14 |  |
-| [roseonx](roseonx/) | 1 | 50% | 2/4 | 4 |  |
-| [router-protocol](router-protocol/) | 5 | 0% | 0/12 | 2660 |  |
-| [royco-protocol](royco-protocol/) | 6 | 23.5% | 4/17 | 19 |  |
-| [rsk-bridge](rsk-bridge/) | 2 | 0% | 0/15 | 15 |  |
-| [rubicon](rubicon/) | 4 | 12.5% | 7/56 | 56 |  |
-| [rumpel-labs](rumpel-labs/) | 4 | 0.9% | 1/115 | 134 |  |
-| [rysk-finance](rysk-finance/) | 1 | 0% | 0/38 | 632 |  |
-| [ryze.fi](ryze.fi/) | 1 | 78.6% | 11/14 | 17 |  |
-| [sable-finance](sable-finance/) | 1 | 5.6% | 1/18 | 20 |  |
-| [saddle-finance](saddle-finance/) | 3 | 37.9% | 11/29 | 34 |  |
-| [safe](safe/) | 18 | 90.9% | 10/11 | 12 |  |
-| [saffron-finance](saffron-finance/) | 0 | 0% | 0/19 | 20 |  |
-| [sai](sai/) | 0 | 0% | 0/5 | 5 |  |
-| [sakai-vault](sakai-vault/) | 1 | 0% | 0/8 | 8 |  |
-| [salvor](salvor/) | 3 | 13% | 6/46 | 318 |  |
-| [sandclock](sandclock/) | 0 | 0% | 0/27 | 27 |  |
-| [sanko-bridge](sanko-bridge/) | 0 | 0% | 0/2 | 2 |  |
-| [sashimiswap](sashimiswap/) | 1 | 0% | 0/5 | 14 |  |
-| [satlayer](satlayer/) | 12 | 7.5% | 5/67 | 745 |  |
-| [satori-finance](satori-finance/) | 1 | 0% | 0/102 | 168 |  |
-| [saturn](saturn/) | 4 | 0% | 0/3 | 3 |  |
-| [saucerswap](saucerswap/) | 8 | 0% | 0/1 | 1 |  |
-| [savvy](savvy/) | 1 | 50% | 1/2 | 31 |  |
-| [scientix](scientix/) | 8 | 0% | 0/129 | 129 |  |
-| [scroll-bridge](scroll-bridge/) | 41 | 0% | 0/25 | 27 |  |
-| [sdai](sdai/) | 0 | 0% | 0/30 | 77 |  |
-| [seafi](seafi/) | 2 | 0% | 0/1 | 1 |  |
-| [seamless-protocol](seamless-protocol/) | 5 | 4.8% | 5/104 | 113 |  |
-| [secretswap](secretswap/) | 0 | 0% | 0/4 | 4 |  |
-| [sector-finance](sector-finance/) | 2 | 66.7% | 12/18 | 31 |  |
-| [sectorone](sectorone/) | 3 | 0% | 0/19 | 19 |  |
-| [secured-finance](secured-finance/) | 5 | 56.7% | 17/30 | 117 |  |
-| [securitize](securitize/) | 9 | 14.2% | 16/113 | 114 |  |
-| [seeder-finance](seeder-finance/) | 1 | 0% | 0/25 | 25 |  |
-| [seedify](seedify/) | 1 | 0% | 0/5 | 8 |  |
-| [seer](seer/) | 1 | 0% | 0/26 | 197 |  |
-| [segment-finance](segment-finance/) | 2 | 3.2% | 2/62 | 77 |  |
-| [seneca](seneca/) | 1 | 50% | 1/2 | 5 |  |
-| [sentiment](sentiment/) | 8 | 100% | 15/15 | 258 |  |
-| [sentora](sentora/) | 2 | 0% | 0/3 | 3 |  |
-| [set-protocol](set-protocol/) | 7 | 15% | 6/40 | 248 |  |
-| [set.wtf](set.wtf/) | 0 | 0% | 0/1 | 1 |  |
-| [shadow-exchange](shadow-exchange/) | 4 | 36.4% | 12/33 | 66 |  |
-| [shape-bridge](shape-bridge/) | 2 | 0% | 0/23 | 28 |  |
-| [shapeshift](shapeshift/) | 3 | 14.3% | 2/14 | 2673 |  |
-| [shardingdao](shardingdao/) | 1 | 0% | 0/1 | 1 |  |
-| [sheepdex](sheepdex/) | 2 | 0% | 0/16 | 16 |  |
-| [sheesha-finance](sheesha-finance/) | 0 | 0% | 0/4 | 4 |  |
-| [shell-protocol](shell-protocol/) | 9 | 0% | 0/18 | 18 |  |
-| [sherlock](sherlock/) | 4 | 0% | 0/30 | 30 |  |
-| [sherpa](sherpa/) | 1 | 100% | 1/1 | 1 |  |
-| [shibaswap](shibaswap/) | 1 | 0% | 0/69 | 69 |  |
-| [shield](shield/) | 6 | 50% | 1/2 | 123 |  |
-| [shield-protocol](shield-protocol/) | 1 | 0% | 0/28 | 38 |  |
-| [shift-protocol](shift-protocol/) | 1 | 60% | 3/5 | 5 |  |
-| [shimmerbridge](shimmerbridge/) | 1 | 0% | 0/1 | 1 |  |
-| [shoebill-finance](shoebill-finance/) | 4 | 0% | 7/0 | 65 |  |
-| [shprd](shprd/) | 0 | 0% | 0/3 | 3 |  |
-| [sideshift](sideshift/) | 0 | 0% | 0/2 | 2 |  |
-| [sienna-network](sienna-network/) | 0 | 0% | 0/1 | 1 |  |
-| [sierra-protocol](sierra-protocol/) | 1 | 0% | 0/11 | 107 |  |
-| [sigma-money](sigma-money/) | 10 | 26% | 38/146 | 920 |  |
-| [silo-finance](silo-finance/) | 18 | 33.8% | 23/68 | 1246 |  |
-| [single-finance](single-finance/) | 1 | 0% | 0/10 | 10 |  |
-| [singularity-finance](singularity-finance/) | 2 | 46.7% | 7/15 | 164 |  |
-| [singularitydao](singularitydao/) | 1 | 1.4% | 1/74 | 74 |  |
-| [singularv](singularv/) | 30 | 40.8% | 20/49 | 722 |  |
-| [singularx](singularx/) | 0 | 0% | 0/1 | 1 |  |
-| [sir](sir/) | 1 | 28.6% | 4/14 | 67 |  |
-| [siren](siren/) | 1 | 18.8% | 3/16 | 16 |  |
-| [skale-network-bridge](skale-network-bridge/) | 2 | 13.6% | 11/81 | 222 |  |
-| [skate-amm](skate-amm/) | 3 | 0% | 0/2 | 2 |  |
-| [skate-fi](skate-fi/) | 4 | 60% | 3/5 | 7 |  |
-| [smardex-ecosystem](smardex-ecosystem/) | 6 | 9.5% | 4/42 | 42 |  |
-| [smartcoin](smartcoin/) | 1 | 50% | 1/2 | 5 |  |
-| [smartcredit](smartcredit/) | 1 | 11.1% | 1/9 | 90 |  |
-| [smilee-finance](smilee-finance/) | 3 | 17.9% | 5/28 | 191 |  |
-| [smoothy](smoothy/) | 2 | 0% | 0/6 | 6 |  |
-| [snake-finance](snake-finance/) | 0 | 0% | 0/33 | 33 |  |
-| [snowball](snowball/) | 0 | 0% | 0/359 | 369 |  |
-| [snowbank](snowbank/) | 0 | 0% | 0/6 | 7 |  |
-| [snowbl-capital](snowbl-capital/) | 0 | 0% | 0/3 | 3 |  |
-| [snowflake-exchange](snowflake-exchange/) | 0 | 0% | 0/10 | 10 |  |
-| [snuggle](snuggle/) | 3 | 36.4% | 12/33 | 67 |  |
-| [sofa.org](sofa.org/) | 11 | 29.4% | 15/51 | 65 |  |
-| [solace](solace/) | 1 | 0% | 0/1 | 1 |  |
-| [solana-farm](solana-farm/) | 1 | 0% | 0/1 | 3 |  |
-| [solarbeam](solarbeam/) | 3 | 0% | 0/22 | 22 |  |
-| [solid-yield](solid-yield/) | 0 | 0% | 0/5 | 8 |  |
-| [solidly-labs](solidly-labs/) | 3 | 100% | 2/2 | 2 |  |
-| [solo-top](solo-top/) | 1 | 0% | 0/3 | 3 |  |
-| [solv-protocol](solv-protocol/) | 17 | 28.4% | 27/95 | 96 |  |
-| [sommelier](sommelier/) | 19 | 94.1% | 32/34 | 34 |  |
-| [sonic-gateway](sonic-gateway/) | 2 | 0% | 0/11 | 11 |  |
-| [sonic-market](sonic-market/) | 2 | 28.6% | 2/7 | 36 |  |
-| [sonne-finance](sonne-finance/) | 0 | 0% | 0/30 | 30 |  |
-| [sophon-bridge](sophon-bridge/) | 8 | 0% | 0/11 | 11 |  |
-| [sophon-farm](sophon-farm/) | 9 | 0% | 0/2 | 2 |  |
-| [sorare-bridge](sorare-bridge/) | 0 | 0% | 0/8 | 28 |  |
-| [sorta-finance](sorta-finance/) | 1 | 0% | 0/11 | 11 |  |
-| [sosovalue](sosovalue/) | 3 | 5.3% | 1/19 | 21 |  |
-| [sovryn-bridge](sovryn-bridge/) | 15 | 0% | 0/1 | 43 |  |
-| [spark](spark/) | 59 | 53.1% | 102/192 | 192 |  |
-| [sparklex](sparklex/) | 2 | 29.4% | 5/17 | 17 |  |
-| [spartadex](spartadex/) | 0 | 0% | 0/11 | 11 |  |
-| [spartan](spartan/) | 2 | 66.7% | 2/3 | 13 |  |
-| [spectra](spectra/) | 7 | 12.3% | 9/73 | 960 |  |
-| [sperax](sperax/) | 9 | 22.2% | 4/18 | 118 |  |
-| [sphere](sphere/) | 2 | 10% | 1/10 | 2773 |  |
-| [spiko](spiko/) | 1 | 10.5% | 6/57 | 161 |  |
-| [spinup](spinup/) | 6 | 80% | 4/5 | 5 |  |
-| [spiraldao](spiraldao/) | 3 | 70% | 7/10 | 35 |  |
-| [spiritswap](spiritswap/) | 5 | 0% | 0/7 | 14 |  |
-| [splashing-stake](splashing-stake/) | 1 | 27.3% | 3/11 | 12 |  |
-| [splice-finance](splice-finance/) | 5 | 2% | 1/49 | 52 |  |
-| [spookyswap](spookyswap/) | 1 | 0% | 0/48 | 94 |  |
-| [sport.fun](sport.fun/) | 0 | 0% | 0/24 | 24 |  |
-| [spot-cash](spot-cash/) | 3 | 0% | 0/48 | 48 |  |
-| [spreads-finance](spreads-finance/) | 0 | 0% | 0/10 | 10 |  |
-| [springx](springx/) | 1 | 0% | 0/0 | 7 |  |
-| [sprinter](sprinter/) | 6 | 68.8% | 11/16 | 16 |  |
-| [sqd.ai](sqd.ai/) | 2 | 0% | 0/16 | 19 |  |
-| [squadswap](squadswap/) | 5 | 42.9% | 18/42 | 217 |  |
-| [ssv-network](ssv-network/) | 14 | 0% | 0/21 | 21 |  |
-| [stability](stability/) | 23 | 2.2% | 3/139 | 139 |  |
-| [stable-jack](stable-jack/) | 1 | 9.1% | 3/33 | 254 |  |
-| [stablecoin-for-impact](stablecoin-for-impact/) | 1 | 0% | 0/1 | 2 |  |
-| [stablecomp](stablecomp/) | 2 | 0% | 0/1 | 1 |  |
-| [stablehodl](stablehodl/) | 0 | 0% | 0/2 | 2 |  |
-| [stabull-finance](stabull-finance/) | 1 | 4.9% | 4/81 | 81 |  |
-| [stacks-sbtc](stacks-sbtc/) | 4 | 0% | 0/8 | 8 |  |
-| [stader](stader/) | 3 | 0% | 0/26 | 42 |  |
-| [stafi](stafi/) | 9 | 33.3% | 4/12 | 35 |  |
-| [stake-dao](stake-dao/) | 19 | 4.1% | 56/1369 | 1373 |  |
-| [stake.link](stake.link/) | 20 | 56.9% | 33/58 | 82 |  |
-| [stakehound](stakehound/) | 1 | 90% | 9/10 | 10 |  |
-| [stakehouse](stakehouse/) | 12 | 0% | 0/3 | 3 |  |
-| [stakestone](stakestone/) | 23 | 53.8% | 35/65 | 188 |  |
-| [stakewise](stakewise/) | 14 | 87.8% | 43/49 | 49 |  |
-| [stand-cash](stand-cash/) | 0 | 0% | 0/15 | 15 |  |
-| [standx](standx/) | 6 | 66.7% | 4/6 | 16 |  |
-| [stargate-finance](stargate-finance/) | 17 | 61.8% | 21/34 | 636 |  |
-| [starknet-bridge](starknet-bridge/) | 1 | 0% | 0/1 | 1 |  |
-| [starknet-btc-staking](starknet-btc-staking/) | 2 | 0% | 0/2 | 2 |  |
-| [stcelo](stcelo/) | 3 | 24.7% | 18/73 | 123 |  |
-| [stcyber](stcyber/) | 1 | 3.1% | 1/32 | 40 |  |
-| [steakbank-finance](steakbank-finance/) | 0 | 0% | 0/20 | 21 |  |
-| [stealthpad](stealthpad/) | 1 | 50% | 1/2 | 2 |  |
-| [steer-protocol](steer-protocol/) | 5 | 80.6% | 25/31 | 46 |  |
-| [stella](stella/) | 0 | 0% | 0/5 | 5 |  |
-| [stellaswap](stellaswap/) | 9 | 19.5% | 17/87 | 87 |  |
-| [stout](stout/) | 11 | 0% | 0/20 | 106 |  |
-| [strata](strata/) | 8 | 34.6% | 9/26 | 27 |  |
-| [stratex](stratex/) | 0 | 0% | 0/1 | 1 |  |
-| [stream-finance](stream-finance/) | 1 | 66.7% | 2/3 | 4 |  |
-| [strikex](strikex/) | 1 | 0% | 0/1 | 1 |  |
-| [stroom](stroom/) | 1 | 18.2% | 2/11 | 12 |  |
-| [sturdy](sturdy/) | 7 | 20% | 2/10 | 88 |  |
-| [stusdt](stusdt/) | 4 | 0% | 0/4 | 4 |  |
-| [sudoswap](sudoswap/) | 5 | 30.3% | 20/66 | 66 |  |
-| [suibridge](suibridge/) | 2 | 0% | 0/1 | 1 |  |
-| [summer.fi](summer.fi/) | 6 | 0% | 0/60 | 1341 |  |
-| [sun](sun/) | 3 | 0% | 0/2 | 2 |  |
-| [superearn](superearn/) | 5 | 34.9% | 38/109 | 127 |  |
-| [superfarm](superfarm/) | 0 | 0% | 0/24 | 37 |  |
-| [superfluid](superfluid/) | 8 | 23.3% | 14/60 | 2118 |  |
-| [superform](superform/) | 14 | 47.6% | 50/105 | 148 |  |
-| [supernova](supernova/) | 1 | 25% | 14/56 | 56 |  |
-| [superrare](superrare/) | 0 | 0% | 0/2 | 2 |  |
-| [superreturn](superreturn/) | 5 | 0% | 0/4 | 4 |  |
-| [superstate](superstate/) | 15 | 6.3% | 2/32 | 32 |  |
-| [supswap](supswap/) | 1 | 0% | 1/0 | 287 |  |
-| [surf-liquid](surf-liquid/) | 2 | 0% | 0/6 | 6 |  |
-| [sushi](sushi/) | 1 | 2.6% | 1/39 | 247 |  |
-| [suterusu](suterusu/) | 0 | 0% | 0/1 | 1 |  |
-| [suzaku](suzaku/) | 2 | 8% | 2/25 | 52 |  |
-| [swaap](swaap/) | 7 | 50% | 2/4 | 107 |  |
-| [swamp-finance](swamp-finance/) | 1 | 0% | 0/2 | 6 |  |
-| [swapbased](swapbased/) | 1 | 1% | 1/99 | 99 |  |
-| [swapr](swapr/) | 1 | 0% | 0/10 | 10 |  |
-| [swapx](swapx/) | 4 | 37.8% | 14/37 | 37 |  |
-| [swell](swell/) | 16 | 46.3% | 19/41 | 42 |  |
-| [swellchain-bridge](swellchain-bridge/) | 8 | 8% | 2/25 | 26 |  |
-| [swerve](swerve/) | 1 | 50% | 1/2 | 6 |  |
-| [swissborg](swissborg/) | 1 | 0% | 0/62 | 62 |  |
-| [switcheo-finance](switcheo-finance/) | 3 | 0% | 0/20 | 34 |  |
-| [swych-perpetual](swych-perpetual/) | 3 | 0% | 0/2 | 2 |  |
-| [sx-rollup-bridge](sx-rollup-bridge/) | 0 | 0% | 0/17 | 82 |  |
-| [symbiosis](symbiosis/) | 15 | 33.8% | 23/68 | 177 |  |
-| [symbiotic](symbiotic/) | 24 | 82.6% | 38/46 | 46 |  |
-| [symmio](symmio/) | 2 | 2.5% | 2/81 | 902 |  |
-| [synapse](synapse/) | 5 | 0% | 0/108 | 2390 |  |
-| [syncswap-protocol](syncswap-protocol/) | 9 | 33.3% | 5/15 | 135 |  |
-| [synfutures](synfutures/) | 1 | 0% | 0/2 | 368 |  |
-| [syno-finance](syno-finance/) | 2 | 0% | 0/40 | 40 |  |
-| [synthetix](synthetix/) | 1 | 0% | 0/25 | 60 |  |
-| [synthswap](synthswap/) | 1 | 40% | 4/10 | 15 |  |
-| [syntropia](syntropia/) | 11 | 25% | 1/4 | 5 |  |
-| [t-rize](t-rize/) | 9 | 33.3% | 4/12 | 19 |  |
-| [t2t2](t2t2/) | 1 | 0% | 0/1 | 17 |  |
-| [taiko-bridge](taiko-bridge/) | 8 | 0% | 0/34 | 42 |  |
-| [tangent-finance](tangent-finance/) | 5 | 0% | 0/32 | 32 |  |
-| [tangible](tangible/) | 7 | 11.2% | 30/268 | 4130 |  |
-| [tarot](tarot/) | 1 | 0% | 0/9 | 57 |  |
-| [tau-labs](tau-labs/) | 8 | 8.5% | 11/129 | 129 |  |
-| [tea-rex](tea-rex/) | 1 | 14.3% | 5/35 | 39 |  |
-| [team-finance](team-finance/) | 2 | 15% | 3/20 | 69 |  |
-| [telcoin](telcoin/) | 0 | 0% | 0/18 | 18 |  |
-| [teleswap](teleswap/) | 1 | 21.4% | 3/14 | 38 |  |
-| [templar-dao](templar-dao/) | 1 | 0% | 0/10 | 33 |  |
-| [ten-finance](ten-finance/) | 3 | 23.3% | 7/30 | 30 |  |
-| [tender-finance](tender-finance/) | 1 | 0% | 0/18 | 69 |  |
-| [tenderize](tenderize/) | 7 | 12.5% | 2/16 | 21 |  |
-| [tensorplex](tensorplex/) | 1 | 0% | 0/3 | 3 |  |
-| [termmax](termmax/) | 14 | 11% | 47/428 | 429 |  |
-| [tether-gold](tether-gold/) | 0 | 0% | 0/17 | 17 |  |
-| [tethys-finance](tethys-finance/) | 0 | 0% | 0/0 | 27 |  |
-| [tetu](tetu/) | 5 | 13.2% | 34/257 | 257 |  |
-| [tg-casino](tg-casino/) | 8 | 60% | 3/5 | 5 |  |
-| [the-arena](the-arena/) | 1 | 0% | 0/23 | 116 |  |
-| [the-graph](the-graph/) | 8 | 16.7% | 11/66 | 66 |  |
-| [the-idols](the-idols/) | 2 | 0% | 0/12 | 23 |  |
-| [the-parallel](the-parallel/) | 1 | 33.3% | 1/3 | 46 |  |
-| [the-sandbox](the-sandbox/) | 10 | 45.8% | 11/24 | 24 |  |
-| [thedeep](thedeep/) | 1 | 26.1% | 6/23 | 184 |  |
-| [thena](thena/) | 3 | 2.8% | 3/107 | 128 |  |
-| [theo](theo/) | 6 | 0% | 0/34 | 34 |  |
-| [theoriq](theoriq/) | 15 | 14.3% | 3/21 | 21 |  |
-| [thesauros](thesauros/) | 1 | 0% | 0/10 | 25 |  |
-| [thetanuts-finance](thetanuts-finance/) | 0 | 0% | 0/21 | 21 |  |
-| [thoreum-finance](thoreum-finance/) | 3 | 100% | 1/1 | 1 |  |
-| [thorswap](thorswap/) | 2 | 15% | 3/20 | 48 |  |
-| [threshold-network](threshold-network/) | 16 | 9.5% | 21/222 | 222 |  |
-| [throne](throne/) | 1 | 20% | 1/5 | 14 |  |
-| [thruster](thruster/) | 13 | 0% | 0/11 | 19 |  |
-| [tidaldex](tidaldex/) | 0 | 0% | 0/71 | 71 |  |
-| [timeswap](timeswap/) | 1 | 0% | 0/20 | 20 |  |
-| [titano-swych](titano-swych/) | 1 | 100% | 1/1 | 1 |  |
-| [tizi](tizi/) | 1 | 100% | 1/1 | 1 |  |
-| [tokenfi](tokenfi/) | 1 | 0% | 0/23 | 23 |  |
-| [tokenlon](tokenlon/) | 9 | 41.7% | 5/12 | 12 |  |
-| [tokenpocket](tokenpocket/) | 0 | 0% | 0/10 | 10 |  |
-| [tokenstore](tokenstore/) | 0 | 0% | 0/2 | 44 |  |
-| [tokenworks](tokenworks/) | 16 | 5.4% | 2/37 | 69 |  |
-| [tonpound](tonpound/) | 1 | 85.7% | 6/7 | 9 |  |
-| [topaz](topaz/) | 1 | 4.4% | 2/45 | 95 |  |
-| [tornado-cash](tornado-cash/) | 2 | 0% | 0/22 | 22 |  |
-| [tornado-finance](tornado-finance/) | 0 | 0% | 0/7 | 7 |  |
-| [toucan-protocol](toucan-protocol/) | 0 | 0% | 0/20 | 20 |  |
-| [toupee.tech](toupee.tech/) | 2 | 90% | 9/10 | 14 |  |
-| [tprotocol](tprotocol/) | 11 | 13.9% | 5/36 | 36 |  |
-| [tradoor-ton](tradoor-ton/) | 3 | 0% | 0/3 | 3 |  |
-| [tranchess](tranchess/) | 9 | 16.3% | 13/80 | 108 |  |
-| [treasure](treasure/) | 0 | 0% | 0/108 | 108 |  |
-| [treble](treble/) | 0 | 0% | 0/1 | 1 |  |
-| [treehouse-protocol](treehouse-protocol/) | 20 | 54.8% | 34/62 | 71 |  |
-| [tren-finance](tren-finance/) | 6 | 57.1% | 4/7 | 38 |  |
-| [trevee-earn](trevee-earn/) | 0 | 0% | 0/52 | 55 |  |
-| [trisolaris](trisolaris/) | 0 | 0% | 0/0 | 43 |  |
-| [tristero](tristero/) | 1 | 0% | 0/2 | 2 |  |
-| [truefi](truefi/) | 27 | 94.3% | 50/53 | 63 |  |
-| [trueo](trueo/) | 16 | 6.9% | 2/29 | 30 |  |
-| [trufin-protocol](trufin-protocol/) | 13 | 37.5% | 3/8 | 9 |  |
-| [trust-wallet](trust-wallet/) | 10 | 0% | 0/9 | 11 |  |
-| [trustswap](trustswap/) | 0 | 0% | 0/6 | 6 |  |
-| [tulipa-capital](tulipa-capital/) | 0 | 0% | 0/6 | 6 |  |
-| [turboflow](turboflow/) | 1 | 0% | 0/2 | 2 |  |
-| [turtle-club](turtle-club/) | 8 | 3% | 19/627 | 761 |  |
-| [twindex](twindex/) | 1 | 0% | 0/44 | 44 |  |
-| [twyne](twyne/) | 8 | 19% | 11/58 | 65 |  |
-| [txflow](txflow/) | 0 | 0% | 0/1 | 1 |  |
-| [tydro](tydro/) | 0 | 0% | 0/24 | 24 |  |
-| [tymio](tymio/) | 1 | 100% | 1/1 | 1 |  |
-| [ubeswap](ubeswap/) | 0 | 0% | 0/27 | 27 |  |
-| [ufarm-digital](ufarm-digital/) | 2 | 50% | 1/2 | 74 |  |
-| [ultrayield](ultrayield/) | 11 | 18.5% | 12/65 | 4449 |  |
-| [ultron-staking-hub-nft](ultron-staking-hub-nft/) | 1 | 0% | 0/1 | 145 |  |
-| [umee](umee/) | 0 | 0% | 0/1 | 1 |  |
-| [unchain-x](unchain-x/) | 2 | 8.3% | 1/12 | 36 |  |
-| [unclesam-protocol](unclesam-protocol/) | 1 | 3.4% | 1/29 | 42 |  |
-| [uncx-network](uncx-network/) | 18 | 12.9% | 17/132 | 134 |  |
-| [unichain-bridge](unichain-bridge/) | 20 | 7.5% | 3/40 | 41 |  |
-| [unicly](unicly/) | 1 | 100% | 11/11 | 27 |  |
-| [unifarm](unifarm/) | 0 | 0% | 0/291 | 293 |  |
-| [union-protocol](union-protocol/) | 5 | 0% | 0/38 | 38 |  |
-| [unipower](unipower/) | 0 | 0% | 0/6 | 6 |  |
-| [unirouter](unirouter/) | 1 | 0% | 0/1 | 7 |  |
-| [uniswap](uniswap/) | 20 | 3.9% | 13/331 | 340 |  |
-| [unit](unit/) | 0 | 0% | 0/6 | 6 |  |
-| [unit-protocol](unit-protocol/) | 4 | 3.1% | 12/387 | 392 |  |
-| [unitas](unitas/) | 5 | 50% | 3/6 | 12 |  |
-| [universal-bridge](universal-bridge/) | 1 | 50% | 1/2 | 2 |  |
-| [universe-finance](universe-finance/) | 2 | 0% | 0/1 | 14 |  |
-| [universe-xyz](universe-xyz/) | 3 | 18.2% | 2/11 | 25 |  |
-| [uniwhale](uniwhale/) | 4 | 50% | 23/46 | 60 |  |
-| [unsheth](unsheth/) | 3 | 26.3% | 5/19 | 19 |  |
-| [unslashed](unslashed/) | 1 | 0% | 0/1 | 1 |  |
-| [untangled](untangled/) | 3 | 25% | 1/4 | 15 |  |
-| [upheaval-finance](upheaval-finance/) | 1 | 0% | 0/15 | 15 |  |
-| [uplift-dao](uplift-dao/) | 1 | 100% | 29/29 | 47 |  |
-| [upshift](upshift/) | 0 | 0% | 0/14 | 14 |  |
-| [uranium.io](uranium.io/) | 0 | 0% | 0/1 | 1 |  |
-| [urdex-finance](urdex-finance/) | 1 | 66.7% | 2/3 | 81 |  |
-| [usd-ai](usd-ai/) | 7 | 38.8% | 19/49 | 49 |  |
-| [usdd](usdd/) | 6 | 0% | 0/73 | 73 |  |
-| [usdt0](usdt0/) | 20 | 32.1% | 27/84 | 133 |  |
-| [usual](usual/) | 39 | 72.7% | 8/11 | 11 |  |
-| [usx.capital](usx.capital/) | 1 | 0% | 0/0 | 3 |  |
-| [utopia](utopia/) | 1 | 100% | 2/2 | 12 |  |
-| [uwu-lend](uwu-lend/) | 10 | 8.5% | 9/106 | 212 |  |
-| [valantis](valantis/) | 22 | 34.2% | 13/38 | 38 |  |
-| [valas-finance](valas-finance/) | 1 | 60% | 3/5 | 8 |  |
-| [valorem](valorem/) | 2 | 0% | 0/1 | 1 |  |
-| [value-finance](value-finance/) | 9 | 0% | 0/130 | 130 |  |
-| [vapordex](vapordex/) | 7 | 0% | 0/34 | 34 |  |
-| [varen](varen/) | 0 | 0% | 0/9 | 9 |  |
-| [vaultcraft](vaultcraft/) | 7 | 21.1% | 4/19 | 3312 |  |
-| [vaultedge](vaultedge/) | 2 | 5% | 1/20 | 20 |  |
-| [vaultka](vaultka/) | 4 | 7.1% | 1/14 | 998 |  |
-| [vaulty-finance](vaulty-finance/) | 1 | 0% | 0/1 | 1 |  |
-| [veda](veda/) | 60 | 40.7% | 11/27 | 27 |  |
-| [veil-cash](veil-cash/) | 0 | 0% | 0/70 | 70 |  |
-| [vela-exchange](vela-exchange/) | 2 | 0% | 0/41 | 41 |  |
-| [velo-finance](velo-finance/) | 0 | 0% | 0/10 | 34 |  |
-| [velocore](velocore/) | 4 | 0% | 0/23 | 23 |  |
-| [velodrome](velodrome/) | 8 | 60% | 12/20 | 25 |  |
-| [velora](velora/) | 1 | 4% | 1/25 | 27 |  |
-| [velvet.capital](velvet.capital/) | 14 | 27.8% | 15/54 | 300 |  |
-| [venice](venice/) | 0 | 0% | 0/6 | 6 |  |
-| [veno-finance](veno-finance/) | 3 | 0% | 0/9 | 21 |  |
-| [venombridge](venombridge/) | 1 | 0% | 0/4 | 5 |  |
-| [ventuals](ventuals/) | 2 | 0% | 0/4 | 4 |  |
-| [verse](verse/) | 5 | 100% | 4/4 | 53 |  |
-| [verus-market](verus-market/) | 0 | 0% | 0/0 | 2 |  |
-| [vesper](vesper/) | 30 | 20.2% | 23/114 | 120 |  |
-| [vest-markets](vest-markets/) | 1 | 0% | 0/4 | 5 |  |
-| [vfat.io](vfat.io/) | 10 | 11.4% | 27/236 | 1857 |  |
-| [vii-finance](vii-finance/) | 1 | 100% | 1/1 | 2 |  |
-| [virtuals-protocol](virtuals-protocol/) | 8 | 12.3% | 8/65 | 70 |  |
-| [vmex-finance](vmex-finance/) | 1 | 0% | 0/1 | 3 |  |
-| [vnx](vnx/) | 4 | 0% | 0/16 | 21 |  |
-| [volta-club](volta-club/) | 7 | 1.5% | 1/65 | 733 |  |
-| [voltz](voltz/) | 2 | 100% | 1/1 | 1 |  |
-| [vvs-finance](vvs-finance/) | 0 | 0% | 0/13 | 13 |  |
-| [wagmi](wagmi/) | 12 | 13.3% | 2/15 | 290 |  |
-| [wan-bridge](wan-bridge/) | 3 | 3.9% | 2/51 | 339 |  |
-| [wardenswap](wardenswap/) | 7 | 47.6% | 10/21 | 21 |  |
-| [wasabi](wasabi/) | 8 | 29.6% | 29/98 | 122 |  |
-| [wasabix](wasabix/) | 4 | 14.3% | 15/105 | 105 |  |
-| [waterfall-defi](waterfall-defi/) | 1 | 33.3% | 1/3 | 70 |  |
-| [waterfall-finance](waterfall-finance/) | 2 | 13.3% | 2/15 | 18 |  |
-| [wavesbridge](wavesbridge/) | 0 | 0% | 0/6 | 6 |  |
-| [weex](weex/) | 0 | 0% | 0/1 | 1 |  |
-| [wefi](wefi/) | 3 | 0% | 0/1 | 2 |  |
-| [wepiggy](wepiggy/) | 1 | 0% | 0/1 | 1 |  |
-| [whale-loans](whale-loans/) | 1 | 0% | 0/1 | 2 |  |
-| [whales-market](whales-market/) | 2 | 0% | 0/11 | 12 |  |
-| [whaleswap](whaleswap/) | 1 | 0% | 0/2 | 3 |  |
-| [whiteheart](whiteheart/) | 1 | 16.7% | 1/6 | 42 |  |
-| [whitehole-finance](whitehole-finance/) | 0 | 0% | 0/35 | 35 |  |
-| [wildcat-protocol](wildcat-protocol/) | 4 | 0% | 0/12 | 12 |  |
-| [wing-finance](wing-finance/) | 2 | 0% | 0/10 | 171 |  |
-| [wisdomtree](wisdomtree/) | 0 | 0% | 0/5 | 5 |  |
-| [wise-lending](wise-lending/) | 3 | 44.4% | 4/9 | 19 |  |
-| [wisteria-swap](wisteria-swap/) | 1 | 0% | 0/1 | 1 |  |
-| [witswap](witswap/) | 1 | 100% | 1/1 | 1 |  |
-| [wolf-safe-poor-people](wolf-safe-poor-people/) | 0 | 0% | 0/39 | 39 |  |
-| [wombat-exchange](wombat-exchange/) | 14 | 29.6% | 8/27 | 544 |  |
-| [wombex-finance](wombex-finance/) | 3 | 28% | 23/82 | 82 |  |
-| [woo-x](woo-x/) | 0 | 0% | 0/2 | 7 |  |
-| [woofi](woofi/) | 9 | 29.6% | 8/27 | 3517 |  |
-| [world-chain](world-chain/) | 14 | 2.6% | 1/38 | 38 |  |
-| [wowswap](wowswap/) | 1 | 0% | 0/14 | 683 |  |
-| [wrapped](wrapped/) | 0 | 0% | 0/1 | 42 |  |
-| [x2y2](x2y2/) | 1 | 0% | 0/45 | 45 |  |
-| [xave-finance](xave-finance/) | 11 | 19.7% | 12/61 | 62 |  |
-| [xdai-stake-bridge](xdai-stake-bridge/) | 20 | 0% | 0/3 | 3 |  |
-| [xeleb-protocol](xeleb-protocol/) | 1 | 100% | 1/1 | 1 |  |
-| [xfai](xfai/) | 1 | 0% | 0/15 | 47 |  |
-| [xpanse](xpanse/) | 1 | 46.2% | 6/13 | 38 |  |
-| [xsigma](xsigma/) | 1 | 0% | 0/3 | 3 |  |
-| [xstocks](xstocks/) | 0 | 0% | 0/1 | 1 |  |
-| [xsy](xsy/) | 1 | 3.6% | 1/28 | 41 |  |
-| [xtoken](xtoken/) | 2 | 5.7% | 9/159 | 159 |  |
-| [xwin-finance](xwin-finance/) | 1 | 6.8% | 6/88 | 123 |  |
-| [y2k-finance](y2k-finance/) | 6 | 0% | 0/1 | 2 |  |
-| [yaka-finance](yaka-finance/) | 1 | 16.7% | 1/6 | 22 |  |
-| [yala](yala/) | 1 | 0% | 0/6 | 25 |  |
-| [yam-finance](yam-finance/) | 0 | 0% | 0/27 | 27 |  |
-| [yamato-protocol](yamato-protocol/) | 3 | 36.7% | 11/30 | 47 |  |
-| [yaxis](yaxis/) | 0 | 0% | 0/67 | 67 |  |
-| [ybtc.b](ybtc.b/) | 10 | 0% | 0/1 | 1 |  |
-| [yearn](yearn/) | 89 | 8.6% | 57/660 | 666 |  |
-| [yei-finance](yei-finance/) | 7 | 0% | 0/18 | 27 |  |
-| [yfii](yfii/) | 0 | 0% | 0/17 | 17 |  |
-| [yield-basis](yield-basis/) | 27 | 19% | 29/153 | 153 |  |
-| [yield-protocol](yield-protocol/) | 1 | 9.8% | 5/51 | 123 |  |
-| [yield-yak](yield-yak/) | 3 | 0% | 0/9 | 1264 |  |
-| [yieldfi](yieldfi/) | 7 | 39.6% | 21/53 | 62 |  |
-| [yieldflow](yieldflow/) | 1 | 0% | 0/23 | 23 |  |
-| [yieldnest](yieldnest/) | 13 | 24.4% | 30/123 | 141 |  |
-| [yieldseeker](yieldseeker/) | 1 | 0% | 0/59 | 345 |  |
-| [yldr](yldr/) | 1 | 0% | 0/53 | 53 |  |
-| [yo-protocol](yo-protocol/) | 7 | 23.5% | 8/34 | 98 |  |
-| [yuzu-money](yuzu-money/) | 6 | 81.8% | 9/11 | 11 |  |
-| [zama](zama/) | 3 | 0% | 0/1 | 1 |  |
-| [zebradao](zebradao/) | 0 | 0% | 0/11 | 11 |  |
-| [zeebu](zeebu/) | 3 | 0% | 0/2 | 2 |  |
-| [zenlink](zenlink/) | 1 | 0% | 0/5 | 198 |  |
-| [zero-g-finance](zero-g-finance/) | 1 | 0% | 0/1 | 1 |  |
-| [zerobase-cedefi](zerobase-cedefi/) | 5 | 57.1% | 4/7 | 61 |  |
-| [zerolend](zerolend/) | 9 | 22.7% | 30/132 | 1877 |  |
-| [zeroliquid](zeroliquid/) | 1 | 50% | 1/2 | 2 |  |
-| [zeroswap](zeroswap/) | 1 | 0% | 0/1 | 160 |  |
-| [zharta](zharta/) | 3 | 0% | 2/0 | 114 |  |
-| [zircon-gamma](zircon-gamma/) | 1 | 85.7% | 6/7 | 182 |  |
-| [zircuit](zircuit/) | 10 | 25% | 7/28 | 30 |  |
-| [zircuit-finance](zircuit-finance/) | 13 | 100% | 10/10 | 10 |  |
-| [zircuit-staking](zircuit-staking/) | 11 | 25% | 5/20 | 21 |  |
-| [zivoe](zivoe/) | 7 | 55.6% | 10/18 | 19 |  |
-| [zkbob_](zkbob_/) | 3 | 0% | 0/39 | 39 |  |
-| [zklink-nova](zklink-nova/) | 11 | 19.5% | 8/41 | 713 |  |
-| [zkswap](zkswap/) | 0 | 0% | 0/3 | 3 |  |
-| [zkswap-finance](zkswap-finance/) | 8 | 18.2% | 2/11 | 55 |  |
-| [zksync-era-txbridge](zksync-era-txbridge/) | 0 | 0% | 0/2 | 2 |  |
-| [zoo-finance](zoo-finance/) | 1 | 0% | 0/33 | 68 |  |
-| [zoodao](zoodao/) | 1 | 0% | 0/48 | 50 |  |
-| [zootopia-finance](zootopia-finance/) | 1 | 100% | 1/1 | 10 |  |
-| [zoth](zoth/) | 5 | 28.6% | 4/14 | 19 |  |
-| [zunami-protocol](zunami-protocol/) | 8 | 9.6% | 7/73 | 73 |  |
-| [zyberswap](zyberswap/) | 1 | 37.5% | 3/8 | 39 |  |
-| [zyfai](zyfai/) | 5 | 1% | 1/104 | 123 |  |
+| Project | Audits | Authority state | Verified contracts | Coverage | Foundry packages | Deployments |
+|---|---:|---|---:|---:|---:|---:|
+| [0x0.ai](0x0.ai/) | 4 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [1inch](1inch/) | 145 | published_scope | 1/2 (50.0%) | 100.0% | 1 | 1 |
+| [1sec](1sec/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [3f](3f/) | 4 | published_scope | 4/57 (7.0%) | 75.0% | 3 | 3 |
+| [3f-mutual](3f-mutual/) | 1 | published_scope | 16/36 (44.4%) | 0.0% | 7 | 7 |
+| [3jane](3jane/) | 5 | published_scope | 13/13 (100.0%) | 84.6% | 7 | 11 |
+| [40-acres](40-acres/) | 4 | published_scope | n/a | n/a | 0 | 0 |
+| [88mph](88mph/) | 9 | published_scope | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [8lends](8lends/) | none | blocked_no_audit_authority | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [9inch](9inch/) | 2 | published_scope | 0/8 (0.0%) | n/a | 0 | 0 |
+| [9mm](9mm/) | none | blocked_no_audit_authority | 0/17 (0.0%) | n/a | 0 | 0 |
+| [aarna-protocol](aarna-protocol/) | 3 | published_scope | 5/26 (19.2%) | 40.0% | 3 | 3 |
+| [aave](aave/) | 107 | published_scope | 1/37 (2.7%) | 0.0% | 1 | 1 |
+| [aavegotchi](aavegotchi/) | 1 | published_scope | 2/21 (9.5%) | 0.0% | 2 | 2 |
+| [abracadabra](abracadabra/) | 5 | published_scope | 89/120 (74.2%) | 11.2% | 53 | 93 |
+| [abstract](abstract/) | 3 | published_scope | 11/12 (91.7%) | 0.0% | 6 | 6 |
+| [abstradex](abstradex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [accountable](accountable/) | 5 | published_scope | n/a | n/a | 0 | 0 |
+| [accumulated-finance](accumulated-finance/) | 3 | published_scope | 6/6 (100.0%) | 0.0% | 6 | 7 |
+| [acre](acre/) | 6 | published_scope | 5/9 (55.6%) | 100.0% | 2 | 5 |
+| [across](across/) | 6 | published_scope | 26/37 (70.3%) | 23.1% | 6 | 6 |
+| [acryptos](acryptos/) | 8 | published_scope | 18/97 (18.6%) | 33.3% | 14 | 53 |
+| [adamant-finance](adamant-finance/) | 1 | published_scope | 4/30 (13.3%) | 0.0% | 0 | 0 |
+| [aegis](aegis/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [aegis-markets](aegis-markets/) | 2 | published_scope | 10/10 (100.0%) | 50.0% | 9 | 9 |
+| [aequinox](aequinox/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [aera](aera/) | 5 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [aerodrome](aerodrome/) | none — contracts published | blocked_no_audit_authority | 28/28 (100.0%) | 0.0% | 20 | 20 |
+| [aethir](aethir/) | 1 | published_scope | n/a | n/a | 1 | 1 |
+| [aevo](aevo/) | 17 | published_scope | 9/9 (100.0%) | 22.2% | 4 | 4 |
+| [afi-protocol](afi-protocol/) | 4 | published_scope | 1/3 (33.3%) | 0.0% | 1 | 1 |
+| [afx-bridge](afx-bridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [agentfi](agentfi/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [agni-finance](agni-finance/) | none | blocked_no_audit_authority | 14/16 (87.5%) | 0.0% | 0 | 0 |
+| [airpuff](airpuff/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [aitech](aitech/) | 1 | published_scope | 1/2 (50.0%) | 0.0% | 0 | 0 |
+| [ajna](ajna/) | none | blocked_no_audit_authority | 0/77 (0.0%) | n/a | 0 | 0 |
+| [aktionariat](aktionariat/) | none | blocked_no_audit_authority | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [alchemist](alchemist/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [alchemix](alchemix/) | 12 | published_scope | 12/17 (70.6%) | 8.3% | 3 | 7 |
+| [alcum](alcum/) | none | blocked_no_audit_authority | 16/19 (84.2%) | 0.0% | 0 | 0 |
+| [alien-base](alien-base/) | none — contracts published | blocked_no_audit_authority | 14/16 (87.5%) | 0.0% | 10 | 10 |
+| [alita-finance](alita-finance/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [allbridge](allbridge/) | 23 | published_scope | 1/1 (100.0%) | 0.0% | 1 | 2 |
+| [allstake](allstake/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [almanak](almanak/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [alongside](alongside/) | 4 | published_scope | 2/4 (50.0%) | 100.0% | 2 | 2 |
+| [alpaca-finance](alpaca-finance/) | 19 | published_scope | 25/25 (100.0%) | 48.0% | 8 | 16 |
+| [alphadex](alphadex/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [alphagrowth](alphagrowth/) | none | blocked_no_audit_authority | 4/208 (1.9%) | 0.0% | 0 | 0 |
+| [alphaping](alphaping/) | none — contracts published | blocked_no_audit_authority | 2/2 (100.0%) | 0.0% | 1 | 3 |
+| [alphasec](alphasec/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [alphax](alphax/) | 1 | published_scope | n/a | n/a | 1 | 1 |
+| [alphix](alphix/) | 2 | published_scope | 1/3 (33.3%) | 100.0% | 1 | 1 |
+| [altitude.fi](altitude.fi/) | 7 | published_scope | 10/17 (58.8%) | 10.0% | 3 | 9 |
+| [alto](alto/) | 9 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [ambient](ambient/) | 3 | published_scope | 6/17 (35.3%) | 0.0% | 3 | 3 |
+| [ambire-wallet](ambire-wallet/) | 12 | published_scope | 0/13 (0.0%) | n/a | 0 | 0 |
+| [ample](ample/) | none | blocked_no_audit_authority | 17/17 (100.0%) | 0.0% | 0 | 0 |
+| [amulet](amulet/) | 1 | published_scope | 15/17 (88.2%) | 0.0% | 0 | 0 |
+| [amun](amun/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [ancient8](ancient8/) | none — contracts published | blocked_no_audit_authority | 7/9 (77.8%) | 0.0% | 4 | 6 |
+| [anemoy-capital](anemoy-capital/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [angle](angle/) | 3 | published_scope | 65/66 (98.5%) | 0.0% | 6 | 10 |
+| [angles](angles/) | 1 | published_scope | 3/3 (100.0%) | 33.3% | 1 | 2 |
+| [angstrom](angstrom/) | 3 | published_scope | 5/5 (100.0%) | 20.0% | 4 | 5 |
+| [ankr](ankr/) | 14 | published_scope | n/a | n/a | 0 | 0 |
+| [antarctic](antarctic/) | 1 | published_scope | 3/3 (100.0%) | 33.3% | 3 | 3 |
+| [ante-finance](ante-finance/) | 4 | published_scope | 3/14 (21.4%) | 33.3% | 3 | 3 |
+| [antfarm-finance](antfarm-finance/) | 2 | published_scope | 8/17 (47.1%) | 0.0% | 6 | 6 |
+| [anthias-labs](anthias-labs/) | none — contracts published | blocked_no_audit_authority | n/a | n/a | 3 | 6 |
+| [anvil](anvil/) | 4 | published_scope | 12/13 (92.3%) | 58.3% | 7 | 7 |
+| [anzen-finance](anzen-finance/) | 8 | published_scope | 30/31 (96.8%) | 13.3% | 14 | 22 |
+| [ao-bridge](ao-bridge/) | none — contracts published | blocked_no_audit_authority | 3/4 (75.0%) | 0.0% | 1 | 3 |
+| [apechain-bridge](apechain-bridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [apeswap](apeswap/) | none | blocked_no_audit_authority | 0/8 (0.0%) | n/a | 0 | 0 |
+| [apex-protocol](apex-protocol/) | 1 | published_scope | 10/12 (83.3%) | 0.0% | 0 | 0 |
+| [api3](api3/) | 6 | published_scope | 6/269 (2.2%) | 0.0% | 3 | 3 |
+| [apostro](apostro/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [apy-finance](apy-finance/) | 3 | published_scope | 1/3 (33.3%) | 0.0% | 1 | 1 |
+| [aquabank](aquabank/) | 2 | published_scope | 0/8 (0.0%) | n/a | 0 | 0 |
+| [arbitrove](arbitrove/) | 1 | published_scope | 1/6 (16.7%) | 0.0% | 0 | 0 |
+| [arbitrum-bridge](arbitrum-bridge/) | 32 | published_scope | 0/4 (0.0%) | n/a | 0 | 0 |
+| [arbitrum-nova-bridge](arbitrum-nova-bridge/) | 30 | published_scope | 0/4 (0.0%) | n/a | 0 | 0 |
+| [arbswap](arbswap/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [arca-labs-arcoin](arca-labs-arcoin/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [arcade.xyz](arcade.xyz/) | 10 | published_scope | 20/27 (74.1%) | 35.0% | 9 | 11 |
+| [arcadia-finance](arcadia-finance/) | 13 | published_scope | 134/143 (93.7%) | 9.7% | 104 | 122 |
+| [arch](arch/) | 1 | published_scope | 18/18 (100.0%) | 5.6% | 12 | 19 |
+| [argo-finance](argo-finance/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [arkis](arkis/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [armitage-by-wintermute](armitage-by-wintermute/) | none — contracts published | blocked_no_audit_authority | 2/3 (66.7%) | 0.0% | 1 | 2 |
+| [arrakis-finance](arrakis-finance/) | 8 | published_scope | 31/41 (75.6%) | 0.0% | 22 | 38 |
+| [artemis-finance](artemis-finance/) | 5 | published_scope | 14/27 (51.9%) | 7.1% | 1 | 1 |
+| [asseto-aoabt](asseto-aoabt/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [asseto-cash+](asseto-cash+/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [astherus](astherus/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [astroport](astroport/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [asymmetry](asymmetry/) | 14 | published_scope | 51/197 (25.9%) | 9.8% | 21 | 65 |
+| [atlendis](atlendis/) | 2 | published_scope | 1/7 (14.3%) | 0.0% | 0 | 0 |
+| [augur](augur/) | 7 | published_scope | 23/29 (79.3%) | 39.1% | 15 | 15 |
+| [augury-finance](augury-finance/) | 1 | published_scope | 3/6 (50.0%) | 0.0% | 1 | 1 |
+| [aura](aura/) | 20 | published_scope | 47/106 (44.3%) | 25.5% | 42 | 80 |
+| [aurigami](aurigami/) | 2 | published_scope | 2/25 (8.0%) | 0.0% | 3 | 3 |
+| [aurora-plus](aurora-plus/) | 15 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [autofarm](autofarm/) | 1 | published_scope | 3/7 (42.9%) | 0.0% | 0 | 0 |
+| [autofinance](autofinance/) | 8 | published_scope | 227/274 (82.8%) | 0.9% | 128 | 241 |
+| [autoshark](autoshark/) | 1 | published_scope | 1/5 (20.0%) | 0.0% | 0 | 0 |
+| [avalanche-core-bridge](avalanche-core-bridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [avalaunch](avalaunch/) | 13 | published_scope | n/a | n/a | 11 | 68 |
+| [avalon-labs](avalon-labs/) | 23 | published_scope | n/a | n/a | 15 | 45 |
+| [avant-protocol](avant-protocol/) | 8 | published_scope | 11/84 (13.1%) | 27.3% | 10 | 10 |
+| [avantgarde](avantgarde/) | 3 | published_scope | 6/6 (100.0%) | 66.7% | 2 | 4 |
+| [avantis](avantis/) | 5 | published_scope | 3/3 (100.0%) | 66.7% | 3 | 3 |
+| [axelar-network](axelar-network/) | 63 | published_scope | 2/4 (50.0%) | 100.0% | 2 | 2 |
+| [azuro](azuro/) | 3 | published_scope | 11/97 (11.3%) | 0.0% | 4 | 4 |
+| [b-lucky](b-lucky/) | 1 | published_scope | 1/6 (16.7%) | 0.0% | 1 | 1 |
+| [b.protocol](b.protocol/) | 5 | published_scope | 10/15 (66.7%) | 10.0% | 4 | 6 |
+| [b.protocol-curator](b.protocol-curator/) | none | blocked_no_audit_authority | 0/14 (0.0%) | n/a | 0 | 0 |
+| [b2-buzz](b2-buzz/) | 2 | published_scope | 0/11 (0.0%) | n/a | 0 | 0 |
+| [babydoge-bridge](babydoge-bridge/) | 2 | published_scope | 0/3 (0.0%) | n/a | 0 | 0 |
+| [babydogecoin](babydogecoin/) | 1 | published_scope | 2/3 (66.7%) | 0.0% | 1 | 1 |
+| [babyswap](babyswap/) | 1 | published_scope | 12/12 (100.0%) | 8.3% | 5 | 7 |
+| [backedfi](backedfi/) | 7 | published_scope | n/a | n/a | 5 | 11 |
+| [backpack](backpack/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [badger-dao](badger-dao/) | 8 | published_scope | 0/26 (0.0%) | n/a | 0 | 0 |
+| [bakeryswap](bakeryswap/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [balanceddao](balanceddao/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [balancer](balancer/) | 32 | published_scope | 61/145 (42.1%) | 27.9% | 55 | 55 |
+| [balmy](balmy/) | 7 | published_scope | n/a | n/a | 0 | 0 |
+| [bancor](bancor/) | 11 | published_scope | 18/18 (100.0%) | 88.9% | 12 | 17 |
+| [base-bridge](base-bridge/) | none — contracts published | blocked_no_audit_authority | 31/51 (60.8%) | 0.0% | 9 | 23 |
+| [baseline-protocol](baseline-protocol/) | 10 | published_scope | 3/9 (33.3%) | 33.3% | 1 | 1 |
+| [baseswap](baseswap/) | 2 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [basis-cash](basis-cash/) | none — contracts published | blocked_no_audit_authority | 11/13 (84.6%) | 0.0% | 3 | 3 |
+| [bass-exchange](bass-exchange/) | 1 | published_scope | n/a | n/a | 5 | 7 |
+| [bastion](bastion/) | 2 | published_scope | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [beanstalk](beanstalk/) | 9 | published_scope | 24/54 (44.4%) | 12.5% | 9 | 11 |
+| [bearnfi](bearnfi/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [bedrock](bedrock/) | 9 | published_scope | 33/39 (84.6%) | 6.1% | 15 | 26 |
+| [beefy](beefy/) | 18 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [beethoven-x](beethoven-x/) | none | blocked_no_audit_authority | 19/45 (42.2%) | 0.0% | 0 | 0 |
+| [bella-protocol](bella-protocol/) | 1 | published_scope | 1/6 (16.7%) | 0.0% | 0 | 0 |
+| [belt-finance](belt-finance/) | 7 | published_scope | 15/33 (45.5%) | 6.7% | 5 | 10 |
+| [bend](bend/) | 2 | published_scope | 39/44 (88.6%) | 25.6% | 18 | 27 |
+| [benddao](benddao/) | 1 | published_scope | 0/21 (0.0%) | n/a | 0 | 0 |
+| [benqi](benqi/) | 8 | published_scope | 6/63 (9.5%) | 16.7% | 7 | 7 |
+| [benswap](benswap/) | none | blocked_no_audit_authority | 0/2 (0.0%) | n/a | 0 | 0 |
+| [beraborrow](beraborrow/) | 14 | published_scope | 12/83 (14.5%) | 91.7% | 11 | 11 |
+| [beradrome](beradrome/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [berapaw](berapaw/) | 7 | published_scope | 4/10 (40.0%) | 50.0% | 2 | 2 |
+| [beta-finance](beta-finance/) | 4 | published_scope | 5/23 (21.7%) | 20.0% | 5 | 5 |
+| [bex](bex/) | none | blocked_no_audit_authority | 0/23 (0.0%) | n/a | 0 | 0 |
+| [biconomy.com](biconomy.com/) | 11 | published_scope | n/a | n/a | 0 | 0 |
+| [bifi](bifi/) | 7 | published_scope | n/a | n/a | 22 | 24 |
+| [bifrost-liquid-staking](bifrost-liquid-staking/) | 8 | published_scope | n/a | n/a | 0 | 0 |
+| [bigone](bigone/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [bim](bim/) | 20 | published_scope | 1/9 (11.1%) | 100.0% | 1 | 1 |
+| [bima-cdp](bima-cdp/) | 3 | published_scope | 42/49 (85.7%) | 9.5% | 11 | 21 |
+| [binance-cex](binance-cex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [binance-staked-eth](binance-staked-eth/) | 1 | published_scope | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [binaryx-platform](binaryx-platform/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [bingx](bingx/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [bio-protocol](bio-protocol/) | 6 | published_scope | 4/5 (80.0%) | 0.0% | 3 | 4 |
+| [biswap](biswap/) | 1 | published_scope | 5/5 (100.0%) | 0.0% | 4 | 4 |
+| [bitfi](bitfi/) | 5 | published_scope | 0/9 (0.0%) | n/a | 0 | 0 |
+| [bitfinex](bitfinex/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [bitget](bitget/) | none | blocked_no_audit_authority | 1/2 (50.0%) | 0.0% | 0 | 0 |
+| [bitkan](bitkan/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [bitkub](bitkub/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [bitlayer-ybtc-family](bitlayer-ybtc-family/) | none | blocked_no_audit_authority | 0/9 (0.0%) | n/a | 0 | 0 |
+| [bitlo](bitlo/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [bitmart](bitmart/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [bitmex](bitmex/) | none — contracts published | blocked_no_audit_authority | 2/2 (100.0%) | 0.0% | 1 | 1 |
+| [bitrue](bitrue/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [bitstamp](bitstamp/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [bitu-protocol](bitu-protocol/) | 2 | published_scope | 3/3 (100.0%) | 100.0% | 3 | 3 |
+| [bitunix](bitunix/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [bitvavo](bitvavo/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [bitvenus](bitvenus/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [bitway](bitway/) | 3 | published_scope | 3/3 (100.0%) | 66.7% | 4 | 10 |
+| [bitway-earn](bitway-earn/) | 3 | published_scope | 3/3 (100.0%) | 66.7% | 4 | 10 |
+| [blackhole](blackhole/) | 3 | published_scope | 55/70 (78.6%) | 25.5% | 31 | 37 |
+| [blackwing](blackwing/) | 4 | published_scope | n/a | n/a | 0 | 0 |
+| [bladeswap](bladeswap/) | 1 | published_scope | 9/29 (31.0%) | 0.0% | 5 | 5 |
+| [blast-l2](blast-l2/) | 3 | published_scope | 18/33 (54.5%) | 50.0% | 14 | 20 |
+| [blasterswap](blasterswap/) | 1 | published_scope | 16/16 (100.0%) | 0.0% | 0 | 0 |
+| [blend-money](blend-money/) | 12 | published_scope | 15/15 (100.0%) | 20.0% | 13 | 21 |
+| [block-analitica](block-analitica/) | none — contracts published | blocked_no_audit_authority | n/a | n/a | 13 | 28 |
+| [blofin](blofin/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [blueberry](blueberry/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [bluefin](bluefin/) | 4 | published_scope | n/a | n/a | 0 | 0 |
+| [blueshift](blueshift/) | 1 | published_scope | 1/13 (7.7%) | 0.0% | 1 | 1 |
+| [blur](blur/) | 4 | published_scope | 2/4 (50.0%) | 0.0% | 1 | 1 |
+| [bmx](bmx/) | 2 | published_scope | 72/84 (85.7%) | 8.3% | 18 | 23 |
+| [bob-bridge](bob-bridge/) | 9 | published_scope | 25/30 (83.3%) | 0.0% | 11 | 12 |
+| [bob-fusion](bob-fusion/) | 26 | published_scope | 12/29 (41.4%) | 0.0% | 7 | 7 |
+| [boba-bridge](boba-bridge/) | 7 | published_scope | n/a | n/a | 5 | 6 |
+| [boltz](boltz/) | none | blocked_no_audit_authority | 1/3 (33.3%) | 0.0% | 0 | 0 |
+| [bondlink-finance](bondlink-finance/) | 1 | published_scope | n/a | n/a | 3 | 3 |
+| [bonsaidao-ecosystem](bonsaidao-ecosystem/) | 8 | published_scope | n/a | n/a | 46 | 52 |
+| [boringdao](boringdao/) | 6 | published_scope | n/a | n/a | 0 | 0 |
+| [boros](boros/) | 5 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [boson-protocol](boson-protocol/) | 1 | published_scope | 1/5 (20.0%) | 0.0% | 0 | 0 |
+| [botto](botto/) | 3 | published_scope | 7/7 (100.0%) | 0.0% | 0 | 0 |
+| [bouncebit-cedefi-yield](bouncebit-cedefi-yield/) | 4 | published_scope | n/a | n/a | 0 | 0 |
+| [bouncebit-prime](bouncebit-prime/) | 1 | published_scope | n/a | n/a | 1 | 1 |
+| [bracket-protocol](bracket-protocol/) | 5 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [breadchain](breadchain/) | none | blocked_no_audit_authority | 4/5 (80.0%) | 0.0% | 0 | 0 |
+| [brickken](brickken/) | 2 | published_scope | 1/3 (33.3%) | 0.0% | 0 | 0 |
+| [bridgers](bridgers/) | 1 | published_scope | n/a | n/a | 4 | 6 |
+| [brotocol](brotocol/) | 14 | published_scope | 81/92 (88.0%) | 2.5% | 20 | 40 |
+| [brownfi](brownfi/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [bscswap](bscswap/) | none — contracts published | blocked_no_audit_authority | n/a | n/a | 7 | 10 |
+| [btcd](btcd/) | 3 | published_scope | 3/6 (50.0%) | 66.7% | 3 | 3 |
+| [btcfi](btcfi/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [btcst](btcst/) | none — contracts published | blocked_no_audit_authority | n/a | n/a | 1 | 1 |
+| [bundles](bundles/) | none — contracts published | blocked_no_audit_authority | 4/5 (80.0%) | 0.0% | 2 | 2 |
+| [bunni](bunni/) | 7 | published_scope | 18/70 (25.7%) | 44.4% | 17 | 17 |
+| [bunny](bunny/) | 1 | published_scope | 10/10 (100.0%) | 40.0% | 4 | 4 |
+| [burgerswap](burgerswap/) | 2 | published_scope | 11/11 (100.0%) | 27.3% | 11 | 11 |
+| [butter-network](butter-network/) | 3 | published_scope | 42/58 (72.4%) | 0.0% | 0 | 0 |
+| [buttonwood](buttonwood/) | 1 | published_scope | n/a | n/a | 2 | 4 |
+| [bybit](bybit/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [bydfi](bydfi/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [byte-exchange](byte-exchange/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [cache.gold](cache.gold/) | 2 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [camelot](camelot/) | 1 | published_scope | 19/21 (90.5%) | 21.1% | 17 | 17 |
+| [cana-holdings-california-carbon-credits](cana-holdings-california-carbon-credits/) | 2 | published_scope | 1/21 (4.8%) | 0.0% | 1 | 1 |
+| [canto-lending](canto-lending/) | 4 | published_scope | 0/16 (0.0%) | n/a | 0 | 0 |
+| [cap](cap/) | 10 | published_scope | 8/8 (100.0%) | 25.0% | 3 | 3 |
+| [cap-finance](cap-finance/) | none — contracts published | blocked_no_audit_authority | 1/16 (6.3%) | 0.0% | 1 | 1 |
+| [capybara-exchange](capybara-exchange/) | 1 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [capyfi](capyfi/) | none | blocked_no_audit_authority | 36/36 (100.0%) | 0.0% | 0 | 0 |
+| [carbon-defi](carbon-defi/) | 4 | published_scope | 14/23 (60.9%) | 21.4% | 5 | 6 |
+| [cassa](cassa/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [cat-in-a-box](cat-in-a-box/) | none | blocked_no_audit_authority | 7/7 (100.0%) | 0.0% | 0 | 0 |
+| [cbridge](cbridge/) | 12 | published_scope | 39/77 (50.6%) | 2.6% | 20 | 39 |
+| [cega](cega/) | 4 | published_scope | n/a | n/a | 0 | 0 |
+| [centrifuge](centrifuge/) | 2 | published_scope | 134/230 (58.3%) | 0.0% | 62 | 318 |
+| [cex.io](cex.io/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [cgo-finance](cgo-finance/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [chain-fusion](chain-fusion/) | 1 | published_scope | 10/10 (100.0%) | 0.0% | 0 | 0 |
+| [chainflip](chainflip/) | 4 | published_scope | 11/13 (84.6%) | 9.1% | 9 | 9 |
+| [chaingpt](chaingpt/) | 2 | published_scope | 34/41 (82.9%) | 2.9% | 3 | 3 |
+| [chainlink](chainlink/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [chainport](chainport/) | 4 | published_scope | 0/15 (0.0%) | n/a | 0 | 0 |
+| [charm-finance](charm-finance/) | 6 | published_scope | 2/3 (66.7%) | 50.0% | 2 | 2 |
+| [chateau](chateau/) | 1 | published_scope | 4/6 (66.7%) | 25.0% | 2 | 2 |
+| [chimpx-ai](chimpx-ai/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [cian-protocol](cian-protocol/) | 6 | published_scope | 1/3 (33.3%) | 0.0% | 0 | 0 |
+| [circle](circle/) | 7 | published_scope | 0/21 (0.0%) | n/a | 0 | 0 |
+| [citrea-bridge](citrea-bridge/) | 11 | published_scope | 1/6 (16.7%) | 0.0% | 1 | 1 |
+| [claystack](claystack/) | none | blocked_no_audit_authority | 13/13 (100.0%) | 0.0% | 0 | 0 |
+| [clearpool](clearpool/) | 7 | published_scope | n/a | n/a | 0 | 0 |
+| [clearstar](clearstar/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [clever](clever/) | 3 | published_scope | 2/6 (33.3%) | 0.0% | 0 | 0 |
+| [clipper](clipper/) | 4 | published_scope | 10/16 (62.5%) | 0.0% | 3 | 3 |
+| [clober](clober/) | 8 | published_scope | 7/29 (24.1%) | 28.6% | 4 | 5 |
+| [clovis](clovis/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [cog](cog/) | 2 | published_scope | 3/5 (60.0%) | 0.0% | 0 | 0 |
+| [coin8](coin8/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [coinbase-wrapped-staked-eth](coinbase-wrapped-staked-eth/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [coindcx](coindcx/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [coinex](coinex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [coinsquare](coinsquare/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [coinstore](coinstore/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [coinswap-space](coinswap-space/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [colony](colony/) | 2 | published_scope | 4/5 (80.0%) | 25.0% | 2 | 2 |
+| [component](component/) | none — contracts published | blocked_no_audit_authority | 3/27 (11.1%) | 0.0% | 3 | 3 |
+| [compound-blue](compound-blue/) | none | blocked_no_audit_authority | 14/14 (100.0%) | 0.0% | 0 | 0 |
+| [compound-finance](compound-finance/) | 11 | published_scope | 65/418 (15.6%) | 3.1% | 38 | 41 |
+| [concentrator](concentrator/) | 34 | published_scope | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [concrete](concrete/) | 14 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [conduit-bridge](conduit-bridge/) | none | blocked_no_audit_authority | 3/3 (100.0%) | 0.0% | 0 | 0 |
+| [connext](connext/) | 7 | published_scope | 25/92 (27.2%) | 8.0% | 14 | 14 |
+| [consensus-liquidity-dex](consensus-liquidity-dex/) | none | blocked_no_audit_authority | 0/5 (0.0%) | n/a | 0 | 0 |
+| [contango](contango/) | 9 | published_scope | 9/716 (1.3%) | 66.7% | 20 | 22 |
+| [convergence](convergence/) | 2 | published_scope | 1/3 (33.3%) | 0.0% | 0 | 0 |
+| [convergence-fi](convergence-fi/) | 5 | published_scope | 0/5 (0.0%) | n/a | 0 | 0 |
+| [convex-finance](convex-finance/) | 7 | published_scope | 68/95 (71.6%) | 14.7% | 24 | 24 |
+| [cooler-loans](cooler-loans/) | 9 | published_scope | 75/153 (49.0%) | 16.0% | 69 | 69 |
+| [core-bridge](core-bridge/) | none — contracts published | blocked_no_audit_authority | 4/8 (50.0%) | 0.0% | 2 | 4 |
+| [core-markets](core-markets/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [corn-kernels](corn-kernels/) | 6 | published_scope | 13/17 (76.5%) | 15.4% | 7 | 7 |
+| [counterstake](counterstake/) | 1 | published_scope | 0/8 (0.0%) | n/a | 0 | 0 |
+| [cove-finance](cove-finance/) | 9 | published_scope | 5/35 (14.3%) | 60.0% | 4 | 4 |
+| [cover-protocol](cover-protocol/) | 8 | published_scope | 6/6 (100.0%) | 66.7% | 4 | 4 |
+| [cozy-finance](cozy-finance/) | 5 | published_scope | 0/13 (0.0%) | n/a | 0 | 0 |
+| [cream-finance](cream-finance/) | 3 | published_scope | 44/53 (83.0%) | 0.0% | 14 | 55 |
+| [credbull](credbull/) | 8 | published_scope | 0/3 (0.0%) | n/a | 0 | 0 |
+| [credit-coop](credit-coop/) | none — contracts published | blocked_no_audit_authority | 7/25 (28.0%) | 0.0% | 2 | 6 |
+| [crodex](crodex/) | none | blocked_no_audit_authority | 0/4 (0.0%) | n/a | 0 | 0 |
+| [cronaswap](cronaswap/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [cronos-zkevm-bridge](cronos-zkevm-bridge/) | none | blocked_no_audit_authority | 3/10 (30.0%) | 0.0% | 0 | 0 |
+| [cryptex-finance](cryptex-finance/) | 9 | published_scope | 3/3 (100.0%) | 66.7% | 3 | 3 |
+| [crypto-com](crypto-com/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [crypto.com-liquid-staking](crypto.com-liquid-staking/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [crystl-finance](crystl-finance/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [csigma-finance](csigma-finance/) | 3 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [cub-finance](cub-finance/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [curve-finance](curve-finance/) | 21 | published_scope | 119/990 (12.0%) | 16.0% | 35 | 35 |
+| [cvault-finance](cvault-finance/) | none — contracts published | blocked_no_audit_authority | 10/23 (43.5%) | 0.0% | 2 | 2 |
+| [cvi-finance](cvi-finance/) | 4 | published_scope | 4/4 (100.0%) | 0.0% | 3 | 3 |
+| [cyber](cyber/) | none — contracts published | blocked_no_audit_authority | 22/37 (59.5%) | 0.0% | 10 | 10 |
+| [cyclone](cyclone/) | 5 | published_scope | 20/23 (87.0%) | 20.0% | 10 | 12 |
+| [cypher](cypher/) | none | blocked_no_audit_authority | 23/23 (100.0%) | 0.0% | 0 | 0 |
+| [cytonic-airdrop-campaign](cytonic-airdrop-campaign/) | 2 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [d2-finance](d2-finance/) | 2 | published_scope | 4/14 (28.6%) | 25.0% | 3 | 3 |
+| [dango](dango/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [dao-maker](dao-maker/) | 7 | published_scope | n/a | n/a | 3 | 3 |
+| [ddex](ddex/) | 4 | published_scope | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [de1](de1/) | none | blocked_no_audit_authority | 21/33 (63.6%) | 0.0% | 0 | 0 |
+| [debridge](debridge/) | 34 | published_scope | 95/113 (84.1%) | 6.3% | 15 | 31 |
+| [decentralized-euro](decentralized-euro/) | 3 | published_scope | 28/33 (84.8%) | 35.7% | 15 | 23 |
+| [deeplock](deeplock/) | 1 | published_scope | n/a | n/a | 13 | 19 |
+| [defi-franc](defi-franc/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [defi-kingdoms](defi-kingdoms/) | 1 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [defi-saver](defi-saver/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [defi-swap](defi-swap/) | 1 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [defibox](defibox/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [defiedge](defiedge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [defil](defil/) | 1 | published_scope | n/a | n/a | 9 | 9 |
+| [definix](definix/) | 6 | published_scope | 2/3 (66.7%) | 50.0% | 1 | 1 |
+| [defiplaza](defiplaza/) | 4 | published_scope | 2/2 (100.0%) | 50.0% | 2 | 2 |
+| [defive](defive/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [degen-bridge](degen-bridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [dehive](dehive/) | 2 | published_scope | n/a | n/a | 6 | 6 |
+| [delta-financial](delta-financial/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [deltaprime](deltaprime/) | 8 | published_scope | 36/108 (33.3%) | 47.2% | 35 | 35 |
+| [delv](delv/) | 10 | published_scope | n/a | n/a | 0 | 0 |
+| [demeter](demeter/) | 1 | published_scope | 2/2 (100.0%) | 0.0% | 2 | 2 |
+| [depth](depth/) | 4 | published_scope | 4/4 (100.0%) | 0.0% | 0 | 0 |
+| [deri](deri/) | 8 | published_scope | 2/3 (66.7%) | 0.0% | 1 | 2 |
+| [deribit](deribit/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [derivadex](derivadex/) | none | blocked_no_audit_authority | 0/19 (0.0%) | n/a | 0 | 0 |
+| [desk](desk/) | 5 | published_scope | n/a | n/a | 0 | 0 |
+| [desyn-protocol](desyn-protocol/) | 19 | published_scope | n/a | n/a | 0 | 0 |
+| [dexalot](dexalot/) | 6 | published_scope | n/a | n/a | 0 | 0 |
+| [dexfinance](dexfinance/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [dforce](dforce/) | 5 | published_scope | 0/3 (0.0%) | n/a | 0 | 0 |
+| [dfx-finance](dfx-finance/) | 1 | published_scope | 40/148 (27.0%) | 0.0% | 6 | 8 |
+| [dfyn-network](dfyn-network/) | 4 | published_scope | 2/7 (28.6%) | 0.0% | 1 | 1 |
+| [dhedge](dhedge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [diamondswap](diamondswap/) | 2 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [digift](digift/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [dinosaur-eggs](dinosaur-eggs/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [dnax](dnax/) | none — contracts published | blocked_no_audit_authority | n/a | n/a | 1 | 1 |
+| [dodo](dodo/) | 1 | published_scope | 97/942 (10.3%) | 0.0% | 79 | 95 |
+| [dolomite](dolomite/) | 10 | published_scope | 132/229 (57.6%) | 0.8% | 62 | 102 |
+| [domination-finance](domination-finance/) | 1 | published_scope | 16/16 (100.0%) | 56.3% | 6 | 9 |
+| [dooar](dooar/) | none — contracts published | blocked_no_audit_authority | 2/9 (22.2%) | 0.0% | 2 | 2 |
+| [dopex](dopex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [dopple-finance](dopple-finance/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [doppler-finance](doppler-finance/) | 2 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [doubler](doubler/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [dragon-swap](dragon-swap/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [dragonswap](dragonswap/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [drops](drops/) | 1 | published_scope | 5/5 (100.0%) | 0.0% | 2 | 2 |
+| [dsf.finance](dsf.finance/) | 1 | published_scope | 0/129 (0.0%) | n/a | 0 | 0 |
+| [dsu-money](dsu-money/) | 2 | published_scope | 17/27 (63.0%) | 17.6% | 10 | 10 |
+| [dtrinity](dtrinity/) | 5 | published_scope | 25/40 (62.5%) | 16.0% | 7 | 7 |
+| [dxsale](dxsale/) | 1 | published_scope | n/a | n/a | 2 | 2 |
+| [dydx](dydx/) | none | blocked_no_audit_authority | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [dyorswap](dyorswap/) | none — contracts published | blocked_no_audit_authority | 5/11 (45.5%) | 0.0% | 4 | 4 |
+| [ea-finance](ea-finance/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [easedefi.org](easedefi.org/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [ebisus-bay](ebisus-bay/) | none | blocked_no_audit_authority | 4/12 (33.3%) | 0.0% | 0 | 0 |
+| [eclipse-bridge](eclipse-bridge/) | 5 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [edel](edel/) | none — contracts published | blocked_no_audit_authority | 5/8 (62.5%) | 0.0% | 1 | 1 |
+| [edgex](edgex/) | 7 | published_scope | 3/8 (37.5%) | 33.3% | 1 | 1 |
+| [eigencloud](eigencloud/) | 5 | published_scope | n/a | n/a | 0 | 0 |
+| [eklipse-finance](eklipse-finance/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [ekubo](ekubo/) | 16 | published_scope | 2/2 (100.0%) | 50.0% | 2 | 2 |
+| [elephant-money](elephant-money/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [elfi-protocol](elfi-protocol/) | 1 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [elk](elk/) | 1 | published_scope | 3/22 (13.6%) | 0.0% | 1 | 1 |
+| [ellipsis-finance](ellipsis-finance/) | 3 | published_scope | 5/5 (100.0%) | 40.0% | 5 | 5 |
+| [elyfi](elyfi/) | 2 | published_scope | 0/11 (0.0%) | n/a | 0 | 0 |
+| [elysium-bridge](elysium-bridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [ember-protocol](ember-protocol/) | none | blocked_no_audit_authority | 13/27 (48.1%) | 0.0% | 0 | 0 |
+| [empiredex](empiredex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [empmoney](empmoney/) | 1 | published_scope | 6/18 (33.3%) | 100.0% | 6 | 6 |
+| [enclabs](enclabs/) | 1 | published_scope | 6/47 (12.8%) | 0.0% | 3 | 3 |
+| [enibridge](enibridge/) | none | blocked_no_audit_authority | 0/32 (0.0%) | n/a | 0 | 0 |
+| [enki-protocol](enki-protocol/) | 1 | published_scope | 3/7 (42.9%) | 0.0% | 1 | 1 |
+| [enosys](enosys/) | 3 | published_scope | n/a | n/a | 4 | 4 |
+| [ensuro](ensuro/) | 5 | published_scope | 19/19 (100.0%) | 10.5% | 1 | 2 |
+| [enzyme-finance](enzyme-finance/) | 40 | published_scope | 0/413 (0.0%) | n/a | 2 | 2 |
+| [equalizer](equalizer/) | none — contracts published | blocked_no_audit_authority | 14/90 (15.6%) | 0.0% | 10 | 13 |
+| [equilibria](equilibria/) | 6 | published_scope | 118/130 (90.8%) | 6.8% | 17 | 53 |
+| [eris-protocol](eris-protocol/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [estate-protocol](estate-protocol/) | none | blocked_no_audit_authority | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [eth-strategy](eth-strategy/) | 1 | published_scope | 8/14 (57.1%) | 0.0% | 6 | 6 |
+| [ethena](ethena/) | 18 | published_scope | 7/12 (58.3%) | 57.1% | 6 | 6 |
+| [ether-fi](ether-fi/) | none | blocked_no_audit_authority | 106/109 (97.2%) | 0.0% | 0 | 0 |
+| [ethereal-season-zero](ethereal-season-zero/) | 4 | published_scope | n/a | n/a | 1 | 1 |
+| [etherex](etherex/) | 4 | published_scope | 29/29 (100.0%) | 44.8% | 24 | 25 |
+| [etherflip](etherflip/) | none | blocked_no_audit_authority | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [etherfuse](etherfuse/) | 4 | published_scope | n/a | n/a | 3 | 6 |
+| [ethervista](ethervista/) | none — contracts published | blocked_no_audit_authority | 2/9 (22.2%) | 0.0% | 2 | 2 |
+| [ethichub](ethichub/) | 2 | published_scope | 6/8 (75.0%) | 50.0% | 5 | 5 |
+| [ethos](ethos/) | 4 | published_scope | 18/18 (100.0%) | 55.6% | 4 | 10 |
+| [euclid-finance](euclid-finance/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [euler](euler/) | 81 | published_scope | 2/21 (9.5%) | 100.0% | 3 | 3 |
+| [eva-markets](eva-markets/) | none | blocked_no_audit_authority | 3/3 (100.0%) | 0.0% | 0 | 0 |
+| [eventum-bridge](eventum-bridge/) | 2 | published_scope | 23/47 (48.9%) | 17.4% | 14 | 15 |
+| [everrise](everrise/) | 3 | published_scope | 2/4 (50.0%) | 100.0% | 2 | 2 |
+| [everything](everything/) | none — contracts published | blocked_no_audit_authority | n/a | n/a | 2 | 2 |
+| [exactly](exactly/) | 33 | published_scope | 3/60 (5.0%) | 0.0% | 1 | 3 |
+| [exmo](exmo/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [extended](extended/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [extra-finance](extra-finance/) | 10 | published_scope | 8/8 (100.0%) | 50.0% | 6 | 6 |
+| [ezmanager](ezmanager/) | 2 | published_scope | 47/47 (100.0%) | 8.5% | 13 | 42 |
+| [falcon-finance](falcon-finance/) | 3 | published_scope | 6/6 (100.0%) | 16.7% | 4 | 4 |
+| [fastex](fastex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [feather](feather/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [felix](felix/) | 4 | published_scope | 44/45 (97.8%) | 0.0% | 1 | 1 |
+| [ferro](ferro/) | 4 | published_scope | 0/16 (0.0%) | n/a | 0 | 0 |
+| [filet-finance](filet-finance/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [filliquid](filliquid/) | 4 | published_scope | 1/2 (50.0%) | 0.0% | 1 | 1 |
+| [finnexus](finnexus/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [fira](fira/) | 5 | published_scope | 28/45 (62.2%) | 28.6% | 26 | 26 |
+| [firebot](firebot/) | 2 | published_scope | 7/11 (63.6%) | 14.3% | 5 | 6 |
+| [flap-sh](flap-sh/) | 3 | published_scope | 5/18 (27.8%) | 0.0% | 4 | 4 |
+| [flaunch](flaunch/) | 3 | published_scope | 12/12 (100.0%) | 50.0% | 9 | 11 |
+| [flex](flex/) | 4 | published_scope | 3/5 (60.0%) | 33.3% | 2 | 2 |
+| [flexa](flexa/) | 2 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [flipster](flipster/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [float](float/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [float-protocol](float-protocol/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [flock.io](flock.io/) | 4 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [flokifi-locker](flokifi-locker/) | 2 | published_scope | 0/7 (0.0%) | n/a | 0 | 0 |
+| [fluid](fluid/) | 9 | published_scope | 2/2 (100.0%) | 0.0% | 2 | 2 |
+| [flux-finance](flux-finance/) | 1 | published_scope | 4/10 (40.0%) | 0.0% | 3 | 3 |
+| [fluxion-network](fluxion-network/) | 5 | published_scope | 8/8 (100.0%) | 62.5% | 5 | 5 |
+| [flying-tulip](flying-tulip/) | none — contracts published | blocked_no_audit_authority | 70/138 (50.7%) | 0.0% | 7 | 32 |
+| [folks-finance](folks-finance/) | 21 | published_scope | 61/134 (45.5%) | 1.6% | 16 | 48 |
+| [fomo3d](fomo3d/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [forgeyields](forgeyields/) | 2 | published_scope | 0/42 (0.0%) | n/a | 1 | 1 |
+| [fortifi](fortifi/) | 2 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [fortunafi](fortunafi/) | 7 | published_scope | 16/16 (100.0%) | 0.0% | 0 | 0 |
+| [four.meme](four.meme/) | 1 | published_scope | 2/4 (50.0%) | 0.0% | 1 | 1 |
+| [foxify](foxify/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [frankencoin](frankencoin/) | 11 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [frax-finance](frax-finance/) | 20 | published_scope | 7/99 (7.1%) | 42.9% | 6 | 7 |
+| [frax-fpi](frax-fpi/) | 3 | published_scope | 1/2 (50.0%) | 0.0% | 0 | 0 |
+| [fraxtal](fraxtal/) | none | blocked_no_audit_authority | 19/19 (100.0%) | 0.0% | 0 | 0 |
+| [free-protocol](free-protocol/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [friend-tech](friend-tech/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [frigg.eco](frigg.eco/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [fstswap](fstswap/) | none | blocked_no_audit_authority | 4/4 (100.0%) | 0.0% | 0 | 0 |
+| [fuel-bridge](fuel-bridge/) | 12 | published_scope | 1/11 (9.1%) | 0.0% | 1 | 1 |
+| [fuji-finance](fuji-finance/) | 4 | published_scope | n/a | n/a | 0 | 0 |
+| [fulcrom](fulcrom/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [fungify](fungify/) | 8 | published_scope | 3/30 (10.0%) | 0.0% | 3 | 3 |
+| [fx-protocol](fx-protocol/) | 1 | published_scope | 1/17 (5.9%) | 0.0% | 0 | 0 |
+| [fyde-protocol](fyde-protocol/) | 2 | published_scope | 10/11 (90.9%) | 60.0% | 6 | 6 |
+| [gaib](gaib/) | 2 | published_scope | 1/6 (16.7%) | 0.0% | 0 | 0 |
+| [gains-network](gains-network/) | 1 | published_scope | 18/37 (48.6%) | 0.0% | 13 | 17 |
+| [galaxy-curation](galaxy-curation/) | none | blocked_no_audit_authority | 4/4 (100.0%) | 0.0% | 0 | 0 |
+| [gambit-financial](gambit-financial/) | none | blocked_no_audit_authority | 3/3 (100.0%) | 0.0% | 0 | 0 |
+| [gami-labs](gami-labs/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [gamma](gamma/) | 10 | published_scope | 16/17 (94.1%) | 6.3% | 6 | 16 |
+| [gammaswaplabs](gammaswaplabs/) | none | blocked_no_audit_authority | 37/37 (100.0%) | 0.0% | 0 | 0 |
+| [gate](gate/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [gate-us](gate-us/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [gauntlet](gauntlet/) | 5 | published_scope | 5/39 (12.8%) | 40.0% | 5 | 5 |
+| [gearbox](gearbox/) | 38 | published_scope | n/a | n/a | 0 | 0 |
+| [geist-finance](geist-finance/) | 2 | published_scope | 0/17 (0.0%) | n/a | 0 | 0 |
+| [gemini](gemini/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [gemswap](gemswap/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [generic.money](generic.money/) | 1 | published_scope | 14/14 (100.0%) | 42.9% | 8 | 9 |
+| [geode](geode/) | 6 | published_scope | n/a | n/a | 0 | 0 |
+| [geth](geth/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [gibxswap](gibxswap/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [giveth](giveth/) | 1 | published_scope | 2/31 (6.5%) | 0.0% | 2 | 2 |
+| [glif](glif/) | 5 | published_scope | n/a | n/a | 4 | 5 |
+| [gmd-protocol](gmd-protocol/) | 2 | published_scope | 8/11 (72.7%) | 0.0% | 0 | 0 |
+| [gmx](gmx/) | 39 | published_scope | 10/21 (47.6%) | 100.0% | 10 | 10 |
+| [gnosis-protocol-v1](gnosis-protocol-v1/) | 1 | published_scope | 0/11 (0.0%) | n/a | 0 | 0 |
+| [goldfinch](goldfinch/) | 1 | published_scope | 28/71 (39.4%) | 0.0% | 17 | 25 |
+| [goldfinger](goldfinger/) | 9 | published_scope | 7/7 (100.0%) | 100.0% | 7 | 7 |
+| [goldilocks](goldilocks/) | 5 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [goldsand-by-inshallah](goldsand-by-inshallah/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [goldstation](goldstation/) | 3 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [gondi](gondi/) | 12 | published_scope | 28/30 (93.3%) | 28.6% | 20 | 22 |
+| [goose](goose/) | 1 | published_scope | 0/4 (0.0%) | n/a | 0 | 0 |
+| [goose-finance](goose-finance/) | 1 | published_scope | 3/3 (100.0%) | 0.0% | 3 | 3 |
+| [goplus-security](goplus-security/) | 1 | published_scope | 0/14 (0.0%) | n/a | 0 | 0 |
+| [grafun](grafun/) | none | blocked_no_audit_authority | 0/2 (0.0%) | n/a | 0 | 0 |
+| [granary-finance](granary-finance/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [gravita-protocol](gravita-protocol/) | 2 | published_scope | 9/98 (9.2%) | 0.0% | 4 | 5 |
+| [gravity-bridge](gravity-bridge/) | none — contracts published | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [gravity-by-galxe](gravity-by-galxe/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [gremlix](gremlix/) | none | blocked_no_audit_authority | 5/5 (100.0%) | 0.0% | 0 | 0 |
+| [grizzlyfi](grizzlyfi/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [gro](gro/) | none — contracts published | blocked_no_audit_authority | 27/37 (73.0%) | 0.0% | 9 | 9 |
+| [grove-finance](grove-finance/) | 12 | published_scope | 1/8 (12.5%) | 100.0% | 1 | 1 |
+| [grvt](grvt/) | 1 | published_scope | 3/4 (75.0%) | 33.3% | 1 | 1 |
+| [gt3](gt3/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [gullnetwork](gullnetwork/) | 2 | published_scope | 1/16 (6.3%) | 0.0% | 1 | 1 |
+| [gumball-protocol](gumball-protocol/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [guru-network-dao](guru-network-dao/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [gyroscope-protocol](gyroscope-protocol/) | 10 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [hakka-finance](hakka-finance/) | 8 | published_scope | 32/36 (88.9%) | 25.0% | 18 | 18 |
+| [hakutora](hakutora/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [hanji-protocol](hanji-protocol/) | 2 | published_scope | 3/6 (50.0%) | 0.0% | 2 | 2 |
+| [hard-swap](hard-swap/) | none | blocked_no_audit_authority | 0/4 (0.0%) | n/a | 0 | 0 |
+| [harmonix-finance](harmonix-finance/) | 4 | published_scope | 3/3 (100.0%) | 33.3% | 1 | 3 |
+| [harvest-finance](harvest-finance/) | 8 | published_scope | 6/6 (100.0%) | 16.7% | 6 | 6 |
+| [harvest-flow](harvest-flow/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [hashdao-finance](hashdao-finance/) | 3 | published_scope | n/a | n/a | 7 | 8 |
+| [hashflow](hashflow/) | 1 | published_scope | 0/21 (0.0%) | n/a | 0 | 0 |
+| [hashkey-exchange](hashkey-exchange/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [hashkey-global](hashkey-global/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [hashport](hashport/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [hastra](hastra/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [hats.finance](hats.finance/) | 7 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [hegic](hegic/) | 2 | published_scope | 4/8 (50.0%) | 75.0% | 3 | 3 |
+| [hemi](hemi/) | 6 | published_scope | 11/15 (73.3%) | 0.0% | 10 | 10 |
+| [hera-finance](hera-finance/) | 5 | published_scope | 9/18 (50.0%) | 33.3% | 4 | 5 |
+| [hercules](hercules/) | none — contracts published | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [hibachi-bridge](hibachi-bridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [hibt](hibt/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [hinkal](hinkal/) | 8 | published_scope | 0/37 (0.0%) | n/a | 0 | 0 |
+| [hiyield](hiyield/) | none | blocked_no_audit_authority | 0/3 (0.0%) | n/a | 0 | 0 |
+| [hlp0](hlp0/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [homora-v2](homora-v2/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [honeypop-dex](honeypop-dex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [honeyswap](honeyswap/) | 1 | published_scope | 0/23 (0.0%) | n/a | 0 | 0 |
+| [hop-protocol](hop-protocol/) | 4 | published_scope | n/a | n/a | 0 | 0 |
+| [hope-money](hope-money/) | 5 | published_scope | 3/3 (100.0%) | 100.0% | 2 | 3 |
+| [hopr](hopr/) | 2 | published_scope | 24/26 (92.3%) | 0.0% | 10 | 22 |
+| [hord](hord/) | 3 | published_scope | 0/4 (0.0%) | n/a | 0 | 0 |
+| [hotcoin](hotcoin/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [hourglass](hourglass/) | 7 | published_scope | n/a | n/a | 0 | 0 |
+| [hskhodlium](hskhodlium/) | none | blocked_no_audit_authority | 0/3 (0.0%) | n/a | 0 | 0 |
+| [htx](htx/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [hundred-finance](hundred-finance/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [hydrex](hydrex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [hyperbeat](hyperbeat/) | 14 | published_scope | 22/23 (95.7%) | 31.8% | 9 | 13 |
+| [hyperithm](hyperithm/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [hyperjump](hyperjump/) | 3 | published_scope | 3/5 (60.0%) | 0.0% | 3 | 3 |
+| [hyperlane](hyperlane/) | 17 | published_scope | 1/127 (0.8%) | 0.0% | 1 | 1 |
+| [hyperliquid](hyperliquid/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [hypersurface](hypersurface/) | 2 | published_scope | 6/10 (60.0%) | 16.7% | 2 | 2 |
+| [hyperwave](hyperwave/) | 9 | published_scope | n/a | n/a | 0 | 0 |
+| [hypha](hypha/) | 3 | published_scope | 34/39 (87.2%) | 35.3% | 19 | 19 |
+| [hyphen](hyphen/) | 11 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [iaero-protocol](iaero-protocol/) | 5 | published_scope | 13/14 (92.9%) | 46.2% | 9 | 9 |
+| [ichi](ichi/) | 9 | published_scope | 0/34 (0.0%) | n/a | 0 | 0 |
+| [ideamarket](ideamarket/) | 2 | published_scope | 0/22 (0.0%) | n/a | 0 | 0 |
+| [idex](idex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [illuvium](illuvium/) | 1 | published_scope | 6/8 (75.0%) | 0.0% | 3 | 3 |
+| [immutable-zkevm](immutable-zkevm/) | 5 | published_scope | 0/7 (0.0%) | n/a | 0 | 0 |
+| [immutablex](immutablex/) | 1 | published_scope | 0/3 (0.0%) | n/a | 0 | 0 |
+| [impermax-finance](impermax-finance/) | 9 | published_scope | 15/35 (42.9%) | 0.0% | 13 | 13 |
+| [impossible](impossible/) | 16 | published_scope | 1/11 (9.1%) | 0.0% | 0 | 0 |
+| [inception](inception/) | 11 | published_scope | 16/95 (16.8%) | 12.5% | 6 | 15 |
+| [index-coop](index-coop/) | 7 | published_scope | n/a | n/a | 0 | 0 |
+| [indodax](indodax/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [infinifi](infinifi/) | 12 | published_scope | 27/29 (93.1%) | 0.0% | 5 | 6 |
+| [infinite-trading-protocol](infinite-trading-protocol/) | 1 | published_scope | 1/3 (33.3%) | 0.0% | 0 | 0 |
+| [infinitypools](infinitypools/) | 2 | published_scope | 4/13 (30.8%) | 100.0% | 3 | 4 |
+| [infrared-finance](infrared-finance/) | 27 | published_scope | 12/12 (100.0%) | 91.7% | 5 | 11 |
+| [init-capital](init-capital/) | 7 | published_scope | 20/44 (45.5%) | 0.0% | 0 | 0 |
+| [injective-bridge](injective-bridge/) | 1 | published_scope | 1/2 (50.0%) | 0.0% | 0 | 0 |
+| [ink-bridge](ink-bridge/) | 17 | published_scope | 13/54 (24.1%) | 69.2% | 4 | 10 |
+| [inkyswap](inkyswap/) | none | blocked_no_audit_authority | 0/10 (0.0%) | n/a | 0 | 0 |
+| [insurace](insurace/) | none — contracts published | blocked_no_audit_authority | 54/54 (100.0%) | 0.0% | 2 | 2 |
+| [insuredao](insuredao/) | 1 | published_scope | 1/11 (9.1%) | 100.0% | 1 | 1 |
+| [integral](integral/) | 2 | published_scope | 2/22 (9.1%) | 0.0% | 2 | 2 |
+| [intentx](intentx/) | 2 | published_scope | 2/2 (100.0%) | 0.0% | 1 | 1 |
+| [intercroneswap](intercroneswap/) | none — contracts published | blocked_no_audit_authority | 35/45 (77.8%) | 0.0% | 1 | 1 |
+| [interest-protocol](interest-protocol/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [international-meme-fund](international-meme-fund/) | 1 | published_scope | 14/15 (93.3%) | 28.6% | 6 | 6 |
+| [invariant-group](invariant-group/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [inverse-finance](inverse-finance/) | 7 | published_scope | 43/43 (100.0%) | 16.3% | 21 | 37 |
+| [ionic-protocol](ionic-protocol/) | 1 | published_scope | 4/6 (66.7%) | 0.0% | 0 | 0 |
+| [iotube](iotube/) | 1 | published_scope | 24/26 (92.3%) | 0.0% | 11 | 15 |
+| [ipor](ipor/) | none | blocked_no_audit_authority | 56/56 (100.0%) | 0.0% | 0 | 0 |
+| [iq](iq/) | none | blocked_no_audit_authority | 2/6 (33.3%) | 0.0% | 0 | 0 |
+| [iron-bank](iron-bank/) | 1 | published_scope | 48/48 (100.0%) | 0.0% | 0 | 0 |
+| [iron-finance](iron-finance/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [itrust-finance](itrust-finance/) | 1 | published_scope | 3/3 (100.0%) | 0.0% | 3 | 4 |
+| [ixs](ixs/) | 4 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [izumi-finance](izumi-finance/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [jarvis-network](jarvis-network/) | 6 | published_scope | 2/48 (4.2%) | 50.0% | 2 | 2 |
+| [jaypeggers](jaypeggers/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [jetfuel-finance](jetfuel-finance/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [jetswap](jetswap/) | 2 | published_scope | 8/8 (100.0%) | 37.5% | 4 | 4 |
+| [jigsaw](jigsaw/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [jiko](jiko/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [jones-dao](jones-dao/) | 6 | published_scope | 1/3 (33.3%) | 0.0% | 1 | 1 |
+| [jpegd](jpegd/) | 6 | published_scope | 10/88 (11.4%) | 0.0% | 0 | 0 |
+| [juice-finance](juice-finance/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [juicebox](juicebox/) | 11 | published_scope | 194/194 (100.0%) | 0.5% | 15 | 32 |
+| [julswap](julswap/) | 4 | published_scope | 2/6 (33.3%) | 50.0% | 2 | 2 |
+| [justmoney](justmoney/) | none — contracts published | blocked_no_audit_authority | 3/3 (100.0%) | 0.0% | 1 | 1 |
+| [k2](k2/) | none — contracts published | blocked_no_audit_authority | n/a | n/a | 5 | 5 |
+| [k3-capital](k3-capital/) | 3 | published_scope | 1/52 (1.9%) | 100.0% | 1 | 1 |
+| [kaio](kaio/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [kaito](kaito/) | none — contracts published | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [kalax](kalax/) | 1 | published_scope | 7/9 (77.8%) | 0.0% | 1 | 2 |
+| [kaoyaswap](kaoyaswap/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [kasu](kasu/) | 2 | published_scope | 11/11 (100.0%) | 63.6% | 1 | 7 |
+| [katana-pre-launch](katana-pre-launch/) | 1 | published_scope | 0/7 (0.0%) | n/a | 0 | 0 |
+| [kava-earn](kava-earn/) | 1 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [kava-lend](kava-lend/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [kava-liquid](kava-liquid/) | 1 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [kava-mint](kava-mint/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [kava-swap](kava-swap/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [keep-network](keep-network/) | 18 | published_scope | 25/39 (64.1%) | 16.0% | 15 | 16 |
+| [keep3r-network](keep3r-network/) | 1 | published_scope | 3/5 (60.0%) | 33.3% | 2 | 2 |
+| [keeta-bridge](keeta-bridge/) | none | blocked_no_audit_authority | 1/10 (10.0%) | 0.0% | 0 | 0 |
+| [kelp-dao](kelp-dao/) | none | blocked_no_audit_authority | 31/31 (100.0%) | 0.0% | 0 | 0 |
+| [keom-protocol](keom-protocol/) | 1 | published_scope | 42/48 (87.5%) | 0.0% | 0 | 0 |
+| [keyring](keyring/) | none — contracts published | blocked_no_audit_authority | 1/7 (14.3%) | 0.0% | 1 | 1 |
+| [killswitch](killswitch/) | 3 | published_scope | 0/60 (0.0%) | n/a | 0 | 0 |
+| [kiloex](kiloex/) | 10 | published_scope | n/a | n/a | 0 | 0 |
+| [kine-finance](kine-finance/) | none — contracts published | blocked_no_audit_authority | 48/51 (94.1%) | 0.0% | 9 | 11 |
+| [kinetix](kinetix/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [king-protocol](king-protocol/) | 5 | published_scope | 2/6 (33.3%) | 0.0% | 0 | 0 |
+| [kinto](kinto/) | 11 | published_scope | n/a | n/a | 0 | 0 |
+| [kinza-finance](kinza-finance/) | 2 | published_scope | 2/8 (25.0%) | 0.0% | 1 | 1 |
+| [klaybank](klaybank/) | 3 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [klayportal](klayportal/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [klaystation](klaystation/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [klayswap](klayswap/) | 4 | published_scope | n/a | n/a | 0 | 0 |
+| [kleros](kleros/) | none — contracts published | blocked_no_audit_authority | 36/50 (72.0%) | 0.0% | 12 | 13 |
+| [kleva-protocol](kleva-protocol/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [klex-finance](klex-finance/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [knightswap](knightswap/) | 1 | published_scope | 4/4 (100.0%) | 0.0% | 4 | 4 |
+| [knit-finance](knit-finance/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [kodiak](kodiak/) | 7 | published_scope | 2/25 (8.0%) | 0.0% | 0 | 0 |
+| [kogefarm](kogefarm/) | 2 | published_scope | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [koi-finance](koi-finance/) | none | blocked_no_audit_authority | 1/15 (6.7%) | 0.0% | 0 | 0 |
+| [kokoa-finance](kokoa-finance/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [korbit](korbit/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [kpk](kpk/) | 5 | published_scope | 3/7 (42.9%) | 0.0% | 1 | 1 |
+| [kromatika](kromatika/) | 2 | published_scope | 5/9 (55.6%) | 0.0% | 1 | 1 |
+| [krystal](krystal/) | 6 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [kucoin](kucoin/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [kuma-protocol](kuma-protocol/) | 3 | published_scope | 48/62 (77.4%) | 8.3% | 8 | 11 |
+| [kurrency](kurrency/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [kyberswap](kyberswap/) | 16 | published_scope | 38/140 (27.1%) | 5.3% | 31 | 32 |
+| [lagoon](lagoon/) | 11 | published_scope | 2/14 (14.3%) | 50.0% | 1 | 1 |
+| [lair-finance](lair-finance/) | 11 | published_scope | n/a | n/a | 7 | 25 |
+| [landshare](landshare/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [landx-finance](landx-finance/) | 1 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [latch](latch/) | 2 | published_scope | 3/3 (100.0%) | 0.0% | 1 | 2 |
+| [latoken](latoken/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [layer2-finance](layer2-finance/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [layerbank](layerbank/) | 4 | published_scope | 87/175 (49.7%) | 0.0% | 30 | 61 |
+| [layerzero](layerzero/) | 94 | published_scope | 1/8 (12.5%) | 0.0% | 1 | 1 |
+| [lazy](lazy/) | none — contracts published | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [lbank](lbank/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [ledgity-yield](ledgity-yield/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [leetswap](leetswap/) | none — contracts published | blocked_no_audit_authority | 2/11 (18.2%) | 0.0% | 2 | 2 |
+| [legion](legion/) | 5 | published_scope | 4/8 (50.0%) | 25.0% | 4 | 4 |
+| [lendflare](lendflare/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [lendle](lendle/) | 10 | published_scope | 11/29 (37.9%) | 90.9% | 10 | 10 |
+| [lens-chain](lens-chain/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [lets-get-hai](lets-get-hai/) | 5 | published_scope | 2/2 (100.0%) | 0.0% | 1 | 1 |
+| [level](level/) | none | blocked_no_audit_authority | 26/26 (100.0%) | 0.0% | 0 | 0 |
+| [levex](levex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [levinswap](levinswap/) | none — contracts published | blocked_no_audit_authority | 2/2 (100.0%) | 0.0% | 1 | 1 |
+| [lido](lido/) | 145 | published_scope | 109/311 (35.0%) | 82.6% | 97 | 107 |
+| [lido-impact-staking](lido-impact-staking/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [lien](lien/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [lighter](lighter/) | 1 | published_scope | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [limitless-exchange](limitless-exchange/) | none — contracts published | blocked_no_audit_authority | 9/9 (100.0%) | 0.0% | 9 | 9 |
+| [linea-bridge](linea-bridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [liquid-collective](liquid-collective/) | 19 | published_scope | 4/9 (44.4%) | 50.0% | 1 | 4 |
+| [liquid-driver](liquid-driver/) | 1 | published_scope | 0/3 (0.0%) | n/a | 0 | 0 |
+| [liquis](liquis/) | 3 | published_scope | n/a | n/a | 5 | 5 |
+| [liquity](liquity/) | 6 | published_scope | 65/70 (92.9%) | 7.7% | 23 | 42 |
+| [lisk-bridge](lisk-bridge/) | none — contracts published | blocked_no_audit_authority | 26/27 (96.3%) | 0.0% | 12 | 14 |
+| [lista-dao](lista-dao/) | 81 | published_scope | 1/2 (50.0%) | 100.0% | 1 | 1 |
+| [lithos](lithos/) | 1 | published_scope | 0/16 (0.0%) | n/a | 0 | 0 |
+| [llama-airforce](llama-airforce/) | none — contracts published | blocked_no_audit_authority | 56/56 (100.0%) | 0.0% | 24 | 24 |
+| [llamapay](llamapay/) | 1 | published_scope | 19/40 (47.5%) | 0.0% | 2 | 5 |
+| [lockon](lockon/) | 8 | published_scope | 3/6 (50.0%) | 0.0% | 1 | 3 |
+| [lombard-finance](lombard-finance/) | none | blocked_no_audit_authority | 0/26 (0.0%) | n/a | 0 | 0 |
+| [loopring](loopring/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [lorenzo-protocol](lorenzo-protocol/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [lucidly-finance](lucidly-finance/) | 2 | published_scope | 10/10 (100.0%) | 0.0% | 9 | 9 |
+| [luigiswap](luigiswap/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [lumi-finance](lumi-finance/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [lunarbase](lunarbase/) | none | blocked_no_audit_authority | 1/9 (11.1%) | 0.0% | 0 | 0 |
+| [lusd-chickenbonds](lusd-chickenbonds/) | 7 | published_scope | 5/5 (100.0%) | 60.0% | 3 | 3 |
+| [lybra-finance](lybra-finance/) | 1 | published_scope | 2/2 (100.0%) | 50.0% | 1 | 1 |
+| [lynex](lynex/) | 1 | published_scope | 17/17 (100.0%) | 0.0% | 7 | 7 |
+| [lynx](lynx/) | none — contracts published | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [lyra](lyra/) | none | blocked_no_audit_authority | 44/70 (62.9%) | 0.0% | 0 | 0 |
+| [m0](m0/) | 52 | published_scope | 14/78 (17.9%) | 57.1% | 9 | 9 |
+| [magic-eden](magic-eden/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [magpie-ecosystem](magpie-ecosystem/) | 4 | published_scope | 6/19 (31.6%) | 0.0% | 2 | 5 |
+| [maia-dao-ecosystem](maia-dao-ecosystem/) | 8 | published_scope | n/a | n/a | 91 | 146 |
+| [mainstreet](mainstreet/) | 1 | published_scope | 6/8 (75.0%) | 50.0% | 4 | 6 |
+| [maker](maker/) | none | blocked_no_audit_authority | 6/6 (100.0%) | 0.0% | 0 | 0 |
+| [makina](makina/) | 8 | published_scope | 11/17 (64.7%) | 9.1% | 6 | 30 |
+| [mangrove](mangrove/) | 8 | published_scope | n/a | n/a | 0 | 0 |
+| [mansory](mansory/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [manta-cedefi](manta-cedefi/) | 5 | published_scope | n/a | n/a | 18 | 19 |
+| [manta-pacific](manta-pacific/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [mantisswap](mantisswap/) | 2 | published_scope | 5/11 (45.5%) | 40.0% | 3 | 3 |
+| [mantle-bridge](mantle-bridge/) | 9 | published_scope | 11/19 (57.9%) | 9.1% | 3 | 5 |
+| [mantle-restaking](mantle-restaking/) | 23 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [maple-finance](maple-finance/) | 27 | published_scope | 0/13 (0.0%) | n/a | 0 | 0 |
+| [mars-ecosystem](mars-ecosystem/) | 2 | published_scope | 10/11 (90.9%) | 0.0% | 4 | 4 |
+| [mars-poolin](mars-poolin/) | none — contracts published | blocked_no_audit_authority | 4/7 (57.1%) | 0.0% | 4 | 4 |
+| [matrixdock](matrixdock/) | 9 | published_scope | 3/16 (18.8%) | 0.0% | 1 | 1 |
+| [maverick-protocol](maverick-protocol/) | 7 | published_scope | 21/35 (60.0%) | 0.0% | 7 | 13 |
+| [maya-protocol](maya-protocol/) | 7 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [mayan-finance](mayan-finance/) | 4 | published_scope | 0/26 (0.0%) | n/a | 0 | 0 |
+| [mcdex](mcdex/) | 4 | published_scope | n/a | n/a | 0 | 0 |
+| [mdex](mdex/) | 3 | published_scope | 4/4 (100.0%) | 75.0% | 3 | 3 |
+| [meeds-finance](meeds-finance/) | none — contracts published | blocked_no_audit_authority | 9/13 (69.2%) | 0.0% | 5 | 6 |
+| [megaeth-bridge](megaeth-bridge/) | 2 | published_scope | 17/23 (73.9%) | 0.0% | 4 | 4 |
+| [melegaswap](melegaswap/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [mellow-protocol](mellow-protocol/) | 21 | published_scope | 49/429 (11.4%) | 34.7% | 46 | 48 |
+| [mendi-finance](mendi-finance/) | 6 | published_scope | n/a | n/a | 0 | 0 |
+| [mento](mento/) | 23 | published_scope | 21/77 (27.3%) | 81.0% | 26 | 26 |
+| [merchant-moe](merchant-moe/) | 1 | published_scope | 17/17 (100.0%) | 76.5% | 16 | 16 |
+| [merlins-seal](merlins-seal/) | 6 | published_scope | 0/8 (0.0%) | n/a | 0 | 0 |
+| [merlinswap](merlinswap/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [mesher](mesher/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [meshswap](meshswap/) | 2 | published_scope | 8/12 (66.7%) | 37.5% | 7 | 7 |
+| [meson](meson/) | 4 | published_scope | 0/32 (0.0%) | n/a | 0 | 0 |
+| [messina.one](messina.one/) | none | blocked_no_audit_authority | 0/9 (0.0%) | n/a | 0 | 0 |
+| [meta-pool](meta-pool/) | 6 | published_scope | 7/16 (43.8%) | 42.9% | 1 | 3 |
+| [metacoin-swap](metacoin-swap/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [meter-passport](meter-passport/) | 2 | published_scope | 2/2 (100.0%) | 0.0% | 2 | 2 |
+| [meth-protocol](meth-protocol/) | 24 | published_scope | n/a | n/a | 0 | 0 |
+| [metis-bridge](metis-bridge/) | 2 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [metric](metric/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [metronome](metronome/) | 1 | published_scope | 7/78 (9.0%) | 0.0% | 3 | 3 |
+| [metropolis-exchange](metropolis-exchange/) | 1 | published_scope | 5/8 (62.5%) | 0.0% | 5 | 5 |
+| [mev-capital](mev-capital/) | none — contracts published | blocked_no_audit_authority | 10/12 (83.3%) | 0.0% | 6 | 15 |
+| [mexc](mexc/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [mezo-bridge](mezo-bridge/) | 9 | published_scope | 11/48 (22.9%) | 0.0% | 3 | 6 |
+| [midas-capital](midas-capital/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [midas-rwa](midas-rwa/) | none | blocked_no_audit_authority | 132/187 (70.6%) | 0.0% | 0 | 0 |
+| [mint-club](mint-club/) | 8 | published_scope | n/a | n/a | 27 | 74 |
+| [minto](minto/) | 2 | published_scope | 2/4 (50.0%) | 50.0% | 1 | 1 |
+| [mitosis](mitosis/) | 3 | published_scope | 39/56 (69.6%) | 0.0% | 23 | 25 |
+| [mm-finance](mm-finance/) | 3 | published_scope | 11/12 (91.7%) | 0.0% | 4 | 10 |
+| [mobius-money](mobius-money/) | none | blocked_no_audit_authority | 0/2 (0.0%) | n/a | 0 | 0 |
+| [mobox](mobox/) | 1 | published_scope | 4/5 (80.0%) | 0.0% | 1 | 1 |
+| [mochifi](mochifi/) | 2 | published_scope | 4/12 (33.3%) | 0.0% | 3 | 3 |
+| [mode-bridge](mode-bridge/) | 3 | published_scope | 39/41 (95.1%) | 2.6% | 10 | 15 |
+| [moneyfi](moneyfi/) | 4 | published_scope | n/a | n/a | 0 | 0 |
+| [monolith-market](monolith-market/) | 7 | published_scope | 2/3 (66.7%) | 50.0% | 3 | 3 |
+| [monstro](monstro/) | none — contracts published | blocked_no_audit_authority | 3/4 (75.0%) | 0.0% | 3 | 3 |
+| [moola-market](moola-market/) | 3 | published_scope | 15/20 (75.0%) | 40.0% | 7 | 7 |
+| [moonchain](moonchain/) | none | blocked_no_audit_authority | 18/27 (66.7%) | 0.0% | 0 | 0 |
+| [mooniswap](mooniswap/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [moonlander](moonlander/) | 5 | published_scope | n/a | n/a | 0 | 0 |
+| [moonswap](moonswap/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [moonwell](moonwell/) | 2 | published_scope | 65/94 (69.1%) | 4.6% | 26 | 39 |
+| [moonwell-apollo](moonwell-apollo/) | 2 | published_scope | 60/94 (63.8%) | 3.3% | 23 | 36 |
+| [more-markets](more-markets/) | none — contracts published | blocked_no_audit_authority | 22/22 (100.0%) | 0.0% | 20 | 22 |
+| [moremarkets.xyz](moremarkets.xyz/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [morph-bridge](morph-bridge/) | none | blocked_no_audit_authority | 5/13 (38.5%) | 0.0% | 0 | 0 |
+| [morpheusai](morpheusai/) | 18 | published_scope | 2/3 (66.7%) | 50.0% | 2 | 2 |
+| [morpho](morpho/) | 30 | published_scope | 30/236 (12.7%) | 53.3% | 30 | 30 |
+| [mortgagefi](mortgagefi/) | 3 | published_scope | 2/3 (66.7%) | 0.0% | 1 | 1 |
+| [mountain-protocol](mountain-protocol/) | 2 | published_scope | 5/16 (31.3%) | 0.0% | 1 | 5 |
+| [mufex](mufex/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [muffin](muffin/) | 4 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [multibit-protocol](multibit-protocol/) | 1 | published_scope | 2/16 (12.5%) | 100.0% | 2 | 2 |
+| [multichain](multichain/) | 16 | published_scope | 0/5 (0.0%) | n/a | 0 | 0 |
+| [multipli.fi](multipli.fi/) | 9 | published_scope | 18/18 (100.0%) | 0.0% | 16 | 17 |
+| [muscadine](muscadine/) | none | blocked_no_audit_authority | 4/4 (100.0%) | 0.0% | 0 | 0 |
+| [mux-protocol](mux-protocol/) | 4 | published_scope | 6/209 (2.9%) | 33.3% | 2 | 2 |
+| [mvl-staking](mvl-staking/) | 3 | published_scope | 2/18 (11.1%) | 50.0% | 2 | 2 |
+| [mycelium](mycelium/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [myriad-markets](myriad-markets/) | 5 | published_scope | 5/7 (71.4%) | 20.0% | 4 | 4 |
+| [myx-finance](myx-finance/) | 3 | published_scope | 0/14 (0.0%) | n/a | 0 | 0 |
+| [nado](nado/) | none | blocked_no_audit_authority | 0/9 (0.0%) | n/a | 0 | 0 |
+| [narwhalswap](narwhalswap/) | none — contracts published | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [native](native/) | 9 | published_scope | n/a | n/a | 0 | 0 |
+| [navigator](navigator/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [nbx](nbx/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [near-intents](near-intents/) | 3 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [neemo-finance](neemo-finance/) | 1 | published_scope | 1/6 (16.7%) | 0.0% | 0 | 0 |
+| [neku](neku/) | 1 | published_scope | 34/34 (100.0%) | 0.0% | 5 | 33 |
+| [neo-tokyo](neo-tokyo/) | 4 | published_scope | 2/2 (100.0%) | 50.0% | 1 | 1 |
+| [neopin](neopin/) | 3 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [nerona](nerona/) | none | blocked_no_audit_authority | 0/43 (0.0%) | n/a | 0 | 0 |
+| [nerve](nerve/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [nervebridge](nervebridge/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [nest-credit](nest-credit/) | 16 | published_scope | 8/29 (27.6%) | 25.0% | 5 | 8 |
+| [nested](nested/) | 5 | published_scope | 5/5 (100.0%) | 80.0% | 5 | 5 |
+| [netswap](netswap/) | 2 | published_scope | 22/24 (91.7%) | 22.7% | 13 | 15 |
+| [neuralai](neuralai/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [nexo](nexo/) | none — contracts published | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [nexus-mutual](nexus-mutual/) | 2 | published_scope | 13/27 (48.1%) | 0.0% | 6 | 12 |
+| [nftx](nftx/) | 5 | published_scope | 64/68 (94.1%) | 17.2% | 18 | 25 |
+| [nile-exchange](nile-exchange/) | none — contracts published | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [nodedao](nodedao/) | 7 | published_scope | 2/11 (18.2%) | 0.0% | 1 | 1 |
+| [nomad](nomad/) | none — contracts published | blocked_no_audit_authority | 7/37 (18.9%) | 0.0% | 4 | 5 |
+| [nomiswap](nomiswap/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [nonkyc](nonkyc/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [noon](noon/) | 7 | published_scope | 15/22 (68.2%) | 33.3% | 8 | 9 |
+| [notional](notional/) | 7 | published_scope | 7/39 (17.9%) | 0.0% | 2 | 38 |
+| [nsure](nsure/) | 2 | published_scope | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [nucleus](nucleus/) | 13 | published_scope | 11/12 (91.7%) | 9.1% | 8 | 11 |
+| [oath-foundation](oath-foundation/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [obol](obol/) | 10 | published_scope | 0/4 (0.0%) | n/a | 0 | 0 |
+| [obsidian](obsidian/) | none | blocked_no_audit_authority | 0/4 (0.0%) | n/a | 0 | 0 |
+| [ocean-point](ocean-point/) | 1 | published_scope | 6/6 (100.0%) | 0.0% | 1 | 1 |
+| [octus-bridge](octus-bridge/) | 1 | published_scope | 0/35 (0.0%) | n/a | 0 | 0 |
+| [odyssey-finance](odyssey-finance/) | 2 | published_scope | 91/118 (77.1%) | 5.5% | 46 | 72 |
+| [okcoin](okcoin/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [okx](okx/) | 8 | published_scope | 0/52 (0.0%) | n/a | 0 | 0 |
+| [omni-liquid-staking](omni-liquid-staking/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [omnibtc](omnibtc/) | 3 | published_scope | 0/30 (0.0%) | n/a | 0 | 0 |
+| [omniyield](omniyield/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [ondo-finance](ondo-finance/) | 31 | published_scope | 15/29 (51.7%) | 40.0% | 10 | 14 |
+| [oneswap](oneswap/) | 3 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [onx-finance](onx-finance/) | 4 | published_scope | 5/12 (41.7%) | 40.0% | 2 | 3 |
+| [onyx](onyx/) | 1 | published_scope | 5/5 (100.0%) | 0.0% | 2 | 2 |
+| [oolongswap](oolongswap/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [open-ticketing-ecosystem](open-ticketing-ecosystem/) | none — contracts published | blocked_no_audit_authority | 3/12 (25.0%) | 0.0% | 2 | 2 |
+| [openeden](openeden/) | 9 | published_scope | 9/18 (50.0%) | 33.3% | 5 | 8 |
+| [opentrade](opentrade/) | 6 | published_scope | 2/9 (22.2%) | 50.0% | 1 | 1 |
+| [opinion](opinion/) | 5 | published_scope | 3/4 (75.0%) | 66.7% | 2 | 2 |
+| [opium](opium/) | 6 | published_scope | 0/3 (0.0%) | n/a | 0 | 0 |
+| [optimism-bridge](optimism-bridge/) | 34 | published_scope | 0/5 (0.0%) | n/a | 0 | 0 |
+| [opyn](opyn/) | 4 | published_scope | 9/57 (15.8%) | 22.2% | 3 | 3 |
+| [orai-quant-terminal](orai-quant-terminal/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [orangex](orangex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [orbit-bridge](orbit-bridge/) | 1 | published_scope | 5/11 (45.5%) | 0.0% | 1 | 1 |
+| [orbit-protocol](orbit-protocol/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [orbiter-one](orbiter-one/) | 2 | published_scope | 14/15 (93.3%) | 7.1% | 1 | 1 |
+| [orderly-chain](orderly-chain/) | 18 | published_scope | 0/9 (0.0%) | n/a | 0 | 0 |
+| [orderly-network](orderly-network/) | none | blocked_no_audit_authority | 0/22 (0.0%) | n/a | 0 | 0 |
+| [origami-finance](origami-finance/) | 27 | published_scope | 18/110 (16.4%) | 61.1% | 17 | 17 |
+| [origin-defi](origin-defi/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [orion-protocol](orion-protocol/) | none | blocked_no_audit_authority | 4/4 (100.0%) | 0.0% | 0 | 0 |
+| [osl](osl/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [osl-hk](osl-hk/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [ostium](ostium/) | 7 | published_scope | 14/14 (100.0%) | 100.0% | 5 | 14 |
+| [otsea](otsea/) | 3 | published_scope | 3/4 (75.0%) | 33.3% | 2 | 3 |
+| [ourbit](ourbit/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [outcome-finance](outcome-finance/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [overnight-finance](overnight-finance/) | 2 | published_scope | 10/21 (47.6%) | 0.0% | 2 | 3 |
+| [overtime](overtime/) | 11 | published_scope | n/a | n/a | 138 | 335 |
+| [p2pb2b](p2pb2b/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [paal-ai](paal-ai/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [pac-finance](pac-finance/) | none | blocked_no_audit_authority | 38/87 (43.7%) | 0.0% | 0 | 0 |
+| [padswap](padswap/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [paimon](paimon/) | 1 | published_scope | 6/6 (100.0%) | 16.7% | 1 | 1 |
+| [pala](pala/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [pancakeswap](pancakeswap/) | 31 | published_scope | n/a | n/a | 0 | 0 |
+| [pangolin](pangolin/) | 13 | published_scope | 16/58 (27.6%) | 62.5% | 12 | 12 |
+| [panoptic](panoptic/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [pantherswap](pantherswap/) | 1 | published_scope | 1/9 (11.1%) | 0.0% | 0 | 0 |
+| [paradex](paradex/) | none | blocked_no_audit_authority | 4/4 (100.0%) | 0.0% | 0 | 0 |
+| [paragonsdao](paragonsdao/) | 8 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [parallel-protocol](parallel-protocol/) | 5 | published_scope | 108/132 (81.8%) | 0.0% | 34 | 63 |
+| [paraluni](paraluni/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [parasail](parasail/) | 5 | published_scope | 3/4 (75.0%) | 0.0% | 1 | 1 |
+| [pareto](pareto/) | 20 | published_scope | 4/32 (12.5%) | 0.0% | 0 | 0 |
+| [paxos](paxos/) | 7 | published_scope | 0/8 (0.0%) | n/a | 0 | 0 |
+| [pay-protocol](pay-protocol/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [peakdefi](peakdefi/) | none | blocked_no_audit_authority | 0/8 (0.0%) | n/a | 0 | 0 |
+| [peapods-finance](peapods-finance/) | 4 | published_scope | 8/13 (61.5%) | 12.5% | 7 | 8 |
+| [pearlfi](pearlfi/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [peer](peer/) | none — contracts published | blocked_no_audit_authority | 11/12 (91.7%) | 0.0% | 11 | 11 |
+| [pell-network](pell-network/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [pendle](pendle/) | 24 | published_scope | 7/11 (63.6%) | 28.6% | 5 | 5 |
+| [pepeteam](pepeteam/) | none — contracts published | blocked_no_audit_authority | 45/45 (100.0%) | 0.0% | 2 | 2 |
+| [pepu-bridge](pepu-bridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [perpetual-protocol](perpetual-protocol/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [pharaoh-exchange](pharaoh-exchange/) | 3 | published_scope | 32/32 (100.0%) | 12.5% | 24 | 24 |
+| [phemex](phemex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [photonswap-finance](photonswap-finance/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [pickle](pickle/) | 4 | published_scope | n/a | n/a | 0 | 0 |
+| [picnic](picnic/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [picwe](picwe/) | 1 | published_scope | 1/8 (12.5%) | 0.0% | 1 | 1 |
+| [piedao](piedao/) | none | blocked_no_audit_authority | 0/5 (0.0%) | n/a | 0 | 0 |
+| [pika-protocol](pika-protocol/) | 3 | published_scope | 7/7 (100.0%) | 28.6% | 7 | 7 |
+| [piku](piku/) | 3 | published_scope | 8/8 (100.0%) | 12.5% | 8 | 8 |
+| [piku-finance](piku-finance/) | none | blocked_no_audit_authority | 0/6 (0.0%) | n/a | 0 | 0 |
+| [pinksale](pinksale/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [pinkswap](pinkswap/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [pionex](pionex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [planet](planet/) | 1 | published_scope | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [plasma-one](plasma-one/) | none | blocked_no_audit_authority | 0/12 (0.0%) | n/a | 0 | 0 |
+| [plasma-saving-vaults](plasma-saving-vaults/) | 1 | published_scope | 0/12 (0.0%) | n/a | 0 | 0 |
+| [plutusdao](plutusdao/) | 2 | published_scope | 17/66 (25.8%) | 11.8% | 7 | 7 |
+| [pnetwork](pnetwork/) | 1 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [pods-finance](pods-finance/) | none | blocked_no_audit_authority | 0/17 (0.0%) | n/a | 0 | 0 |
+| [polkastarter](polkastarter/) | 3 | published_scope | 2/3 (66.7%) | 50.0% | 2 | 2 |
+| [poloniex](poloniex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [poly-network](poly-network/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [polycat-finance](polycat-finance/) | 2 | published_scope | 8/8 (100.0%) | 25.0% | 3 | 3 |
+| [polygon-bridge](polygon-bridge/) | 6 | published_scope | 20/40 (50.0%) | 20.0% | 18 | 18 |
+| [polygon-zkevm-bridge](polygon-zkevm-bridge/) | 6 | published_scope | n/a | n/a | 0 | 0 |
+| [polymarket](polymarket/) | 23 | published_scope | 19/29 (65.5%) | 94.7% | 19 | 19 |
+| [polynomial-protocol](polynomial-protocol/) | 18 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [polywhale-finance](polywhale-finance/) | 1 | published_scope | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [pond0x](pond0x/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [poof-cash](poof-cash/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [pooltogether](pooltogether/) | 16 | published_scope | 88/96 (91.7%) | 1.1% | 41 | 77 |
+| [portal](portal/) | none | blocked_no_audit_authority | 93/128 (72.7%) | 0.0% | 0 | 0 |
+| [powh3d](powh3d/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [prdt](prdt/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [predict-fun](predict-fun/) | 9 | published_scope | 29/29 (100.0%) | 17.2% | 21 | 29 |
+| [premia](premia/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [prime-protocol](prime-protocol/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [primefi](primefi/) | 2 | published_scope | 14/24 (58.3%) | 0.0% | 0 | 0 |
+| [printr](printr/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [prisma](prisma/) | none | blocked_no_audit_authority | 6/6 (100.0%) | 0.0% | 0 | 0 |
+| [privacy-cash](privacy-cash/) | 10 | published_scope | 4/8 (50.0%) | 0.0% | 0 | 0 |
+| [privacy-pools](privacy-pools/) | 4 | published_scope | n/a | n/a | 0 | 0 |
+| [probable](probable/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [probit-global](probit-global/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [proxy](proxy/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [pstake-finance](pstake-finance/) | 20 | published_scope | 4/5 (80.0%) | 25.0% | 3 | 3 |
+| [puffer-finance](puffer-finance/) | 4 | published_scope | 15/19 (78.9%) | 13.3% | 1 | 2 |
+| [pulsechain](pulsechain/) | none — contracts published | blocked_no_audit_authority | n/a | n/a | 3 | 3 |
+| [pulsechain-bridge](pulsechain-bridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [pumpbtc](pumpbtc/) | none | blocked_no_audit_authority | 0/3 (0.0%) | n/a | 0 | 0 |
+| [pumpspace](pumpspace/) | 3 | published_scope | 0/8 (0.0%) | n/a | 0 | 0 |
+| [punks-terminal](punks-terminal/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [pureswap](pureswap/) | 1 | published_scope | 3/18 (16.7%) | 0.0% | 3 | 3 |
+| [qidao](qidao/) | 1 | published_scope | 127/191 (66.5%) | 0.0% | 57 | 99 |
+| [quickswap](quickswap/) | none — contracts published | blocked_no_audit_authority | 1/3 (33.3%) | 0.0% | 1 | 1 |
+| [ra-exchange](ra-exchange/) | none | blocked_no_audit_authority | 2/30 (6.7%) | 0.0% | 0 | 0 |
+| [raac](raac/) | 11 | published_scope | 12/19 (63.2%) | 83.3% | 10 | 10 |
+| [radiant](radiant/) | 7 | published_scope | 5/14 (35.7%) | 20.0% | 5 | 5 |
+| [radioshack](radioshack/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [rage-protocol](rage-protocol/) | 1 | published_scope | 3/3 (100.0%) | 100.0% | 3 | 3 |
+| [railgun](railgun/) | 10 | published_scope | 3/3 (100.0%) | 33.3% | 2 | 3 |
+| [rain](rain/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [rainbow-bridge](rainbow-bridge/) | 11 | published_scope | 0/5 (0.0%) | n/a | 0 | 0 |
+| [ramses-exchange-hl](ramses-exchange-hl/) | none | blocked_no_audit_authority | 22/23 (95.7%) | 0.0% | 0 | 0 |
+| [rank-trading](rank-trading/) | 2 | published_scope | 12/12 (100.0%) | 16.7% | 4 | 10 |
+| [rari-capital](rari-capital/) | 1 | published_scope | 21/23 (91.3%) | 0.0% | 4 | 6 |
+| [rari-chain](rari-chain/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [ratex](ratex/) | 2 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [re](re/) | 1 | published_scope | 7/7 (100.0%) | 0.0% | 1 | 1 |
+| [re7-labs](re7-labs/) | none — contracts published | blocked_no_audit_authority | n/a | n/a | 13 | 50 |
+| [reactorfusion](reactorfusion/) | none | blocked_no_audit_authority | 0/15 (0.0%) | n/a | 0 | 0 |
+| [realt](realt/) | none | blocked_no_audit_authority | 1/10 (10.0%) | 0.0% | 0 | 0 |
+| [realtyx](realtyx/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [redacted](redacted/) | none | blocked_no_audit_authority | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [reflexer](reflexer/) | 8 | published_scope | 1/6 (16.7%) | 100.0% | 1 | 1 |
+| [renegade](renegade/) | none | blocked_no_audit_authority | 2/6 (33.3%) | 0.0% | 0 | 0 |
+| [renzo](renzo/) | 13 | published_scope | 8/33 (24.2%) | 50.0% | 3 | 5 |
+| [reppo](reppo/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [republic-note](republic-note/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [reserve-protocol](reserve-protocol/) | 27 | published_scope | 19/27 (70.4%) | 21.1% | 13 | 19 |
+| [reservoir-protocol](reservoir-protocol/) | 7 | published_scope | 10/11 (90.9%) | 20.0% | 10 | 10 |
+| [reservoir-tools](reservoir-tools/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [resolv](resolv/) | 1 | published_scope | 19/22 (86.4%) | 10.5% | 4 | 5 |
+| [resupply](resupply/) | 8 | published_scope | n/a | n/a | 36 | 52 |
+| [revault](revault/) | 1 | published_scope | 3/15 (20.0%) | 66.7% | 3 | 3 |
+| [revert](revert/) | 12 | published_scope | 48/62 (77.4%) | 8.3% | 20 | 45 |
+| [reya](reya/) | 6 | published_scope | n/a | n/a | 16 | 36 |
+| [rezerve](rezerve/) | 1 | published_scope | 27/35 (77.1%) | 3.7% | 12 | 12 |
+| [rhino.fi](rhino.fi/) | 9 | published_scope | 1/18 (5.6%) | 0.0% | 0 | 0 |
+| [rho](rho/) | 4 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [ribbon-finance](ribbon-finance/) | 15 | published_scope | 32/40 (80.0%) | 9.4% | 5 | 6 |
+| [ring-protocol](ring-protocol/) | 9 | published_scope | n/a | n/a | 0 | 0 |
+| [river-inc](river-inc/) | none | blocked_no_audit_authority | 90/244 (36.9%) | 0.0% | 0 | 0 |
+| [robinhood](robinhood/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [rockawayx](rockawayx/) | none | blocked_no_audit_authority | 0/6 (0.0%) | n/a | 0 | 0 |
+| [rocket](rocket/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [rocket-pool](rocket-pool/) | 16 | published_scope | 75/75 (100.0%) | 96.0% | 73 | 73 |
+| [rocketswap-base](rocketswap-base/) | 1 | published_scope | 6/6 (100.0%) | 50.0% | 3 | 3 |
+| [rocksolid-network](rocksolid-network/) | 2 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [rollx](rollx/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [ronin-bridge](ronin-bridge/) | 5 | published_scope | n/a | n/a | 0 | 0 |
+| [rook](rook/) | 7 | published_scope | n/a | n/a | 0 | 0 |
+| [rose](rose/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [rosen-bridge](rosen-bridge/) | none | blocked_no_audit_authority | 6/105 (5.7%) | 0.0% | 0 | 0 |
+| [royco-protocol](royco-protocol/) | 6 | published_scope | 5/5 (100.0%) | 60.0% | 3 | 3 |
+| [rsk-bridge](rsk-bridge/) | 2 | published_scope | 1/6 (16.7%) | 0.0% | 1 | 1 |
+| [rubic](rubic/) | 1 | published_scope | 5/5 (100.0%) | 0.0% | 0 | 0 |
+| [rubicon](rubicon/) | 4 | published_scope | 6/29 (20.7%) | 0.0% | 4 | 4 |
+| [rumpel-labs](rumpel-labs/) | 4 | published_scope | n/a | n/a | 48 | 107 |
+| [rysk-finance](rysk-finance/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [ryze-protocol](ryze-protocol/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [sable-finance](sable-finance/) | 1 | published_scope | 25/27 (92.6%) | 44.0% | 13 | 13 |
+| [sablier-finance](sablier-finance/) | none | blocked_no_audit_authority | 0/207 (0.0%) | n/a | 0 | 0 |
+| [saddle-finance](saddle-finance/) | 3 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [safe](safe/) | 18 | published_scope | 11/62 (17.7%) | 72.7% | 11 | 11 |
+| [salvor](salvor/) | 3 | published_scope | 2/21 (9.5%) | 100.0% | 2 | 2 |
+| [sanko-bridge](sanko-bridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [sashimiswap](sashimiswap/) | 1 | published_scope | 20/20 (100.0%) | 0.0% | 2 | 4 |
+| [satlayer](satlayer/) | 12 | published_scope | 35/52 (67.3%) | 8.6% | 18 | 34 |
+| [satori-finance](satori-finance/) | 1 | published_scope | n/a | n/a | 5 | 6 |
+| [saturn](saturn/) | 4 | published_scope | 2/10 (20.0%) | 50.0% | 1 | 1 |
+| [savvy](savvy/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [scientix](scientix/) | none — contracts published | blocked_no_audit_authority | 8/14 (57.1%) | 0.0% | 4 | 5 |
+| [scream](scream/) | 1 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [scroll-bridge](scroll-bridge/) | 41 | published_scope | 9/36 (25.0%) | 88.9% | 1 | 8 |
+| [scrub-money](scrub-money/) | 1 | published_scope | 0/8 (0.0%) | n/a | 0 | 0 |
+| [sdai](sdai/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [seafi](seafi/) | 2 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [seamless-protocol](seamless-protocol/) | 5 | published_scope | 45/56 (80.4%) | 11.1% | 12 | 22 |
+| [sectorone](sectorone/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [secured-finance](secured-finance/) | 5 | published_scope | 6/9 (66.7%) | 66.7% | 4 | 6 |
+| [securitize](securitize/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [seer](seer/) | 1 | published_scope | 16/33 (48.5%) | 0.0% | 7 | 8 |
+| [segment-finance](segment-finance/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [sentiment](sentiment/) | 8 | published_scope | n/a | n/a | 0 | 0 |
+| [sentora](sentora/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [set-protocol](set-protocol/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [set.wtf](set.wtf/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [shadow-exchange](shadow-exchange/) | 4 | published_scope | 30/32 (93.8%) | 30.0% | 16 | 17 |
+| [shape-bridge](shape-bridge/) | 2 | published_scope | 19/25 (76.0%) | 0.0% | 4 | 4 |
+| [shapeshift](shapeshift/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [shardingdao](shardingdao/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [sharkswap-dex](sharkswap-dex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [sheepdex](sheepdex/) | 2 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [shell-protocol](shell-protocol/) | 9 | published_scope | 5/17 (29.4%) | 40.0% | 4 | 4 |
+| [sherlock](sherlock/) | 4 | published_scope | 5/5 (100.0%) | 60.0% | 5 | 5 |
+| [sherpa](sherpa/) | 1 | published_scope | 1/6 (16.7%) | 100.0% | 1 | 1 |
+| [shibaswap](shibaswap/) | 1 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [shift-protocol](shift-protocol/) | 1 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [shimmerbridge](shimmerbridge/) | 1 | published_scope | 0/20 (0.0%) | n/a | 0 | 0 |
+| [shoebill-finance](shoebill-finance/) | 4 | published_scope | 9/12 (75.0%) | 11.1% | 2 | 2 |
+| [shprd](shprd/) | none | blocked_no_audit_authority | 1/12 (8.3%) | 0.0% | 0 | 0 |
+| [sideshift](sideshift/) | none — contracts published | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [sierra-protocol](sierra-protocol/) | 1 | published_scope | 1/2 (50.0%) | 0.0% | 1 | 1 |
+| [sigma-money](sigma-money/) | 10 | published_scope | n/a | n/a | 0 | 0 |
+| [silo-finance](silo-finance/) | 18 | published_scope | 3/12 (25.0%) | 33.3% | 3 | 3 |
+| [silostake](silostake/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [single-finance](single-finance/) | 1 | published_scope | 0/3 (0.0%) | n/a | 0 | 0 |
+| [singularity-finance](singularity-finance/) | 2 | published_scope | n/a | n/a | 10 | 15 |
+| [singularitydao](singularitydao/) | 1 | published_scope | 8/8 (100.0%) | 0.0% | 3 | 3 |
+| [singularv](singularv/) | 27 | published_scope | n/a | n/a | 0 | 0 |
+| [singularx](singularx/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [siren](siren/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [skale-network-bridge](skale-network-bridge/) | 2 | published_scope | 0/4 (0.0%) | n/a | 0 | 0 |
+| [skate-amm](skate-amm/) | 3 | published_scope | 1/76 (1.3%) | 0.0% | 0 | 0 |
+| [skate-fi](skate-fi/) | 4 | published_scope | 0/64 (0.0%) | n/a | 0 | 0 |
+| [smardex-ecosystem](smardex-ecosystem/) | 5 | published_scope | 9/9 (100.0%) | 66.7% | 7 | 7 |
+| [smartcredit](smartcredit/) | 1 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [smilee-finance](smilee-finance/) | 3 | published_scope | 23/27 (85.2%) | 21.7% | 14 | 23 |
+| [smoothy](smoothy/) | 2 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [snowball](snowball/) | none — contracts published | blocked_no_audit_authority | 17/36 (47.2%) | 0.0% | 13 | 13 |
+| [snowbank](snowbank/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [snowbl-capital](snowbl-capital/) | none | blocked_no_audit_authority | 1/3 (33.3%) | 0.0% | 0 | 0 |
+| [snowflake-exchange](snowflake-exchange/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [snuggle](snuggle/) | 3 | published_scope | 14/16 (87.5%) | 100.0% | 15 | 15 |
+| [sofa.org](sofa.org/) | 11 | published_scope | 39/41 (95.1%) | 5.1% | 7 | 16 |
+| [solarbeam](solarbeam/) | 3 | published_scope | 5/8 (62.5%) | 0.0% | 3 | 3 |
+| [solid-yield](solid-yield/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [solidly-labs](solidly-labs/) | 3 | published_scope | 21/26 (80.8%) | 4.8% | 1 | 1 |
+| [solo-top](solo-top/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [solv-protocol](solv-protocol/) | 17 | published_scope | 2/34 (5.9%) | 50.0% | 2 | 2 |
+| [sommelier](sommelier/) | 19 | published_scope | n/a | n/a | 0 | 0 |
+| [soneium-bridge](soneium-bridge/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [sonic-gateway](sonic-gateway/) | 2 | published_scope | 3/4 (75.0%) | 0.0% | 1 | 1 |
+| [soon](soon/) | none | blocked_no_audit_authority | 0/93 (0.0%) | n/a | 0 | 0 |
+| [sophon-bridge](sophon-bridge/) | 8 | published_scope | n/a | n/a | 3 | 4 |
+| [sophon-farm](sophon-farm/) | 9 | published_scope | 0/6 (0.0%) | n/a | 0 | 0 |
+| [sorare-bridge](sorare-bridge/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [sosovalue](sosovalue/) | 3 | published_scope | 7/7 (100.0%) | 100.0% | 4 | 7 |
+| [sovryn-bridge](sovryn-bridge/) | 15 | published_scope | 11/20 (55.0%) | 0.0% | 0 | 0 |
+| [spacefi](spacefi/) | 5 | published_scope | 0/23 (0.0%) | n/a | 0 | 0 |
+| [spark](spark/) | 59 | published_scope | 0/4 (0.0%) | n/a | 0 | 0 |
+| [spartadex](spartadex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [spectra](spectra/) | 7 | published_scope | 7/73 (9.6%) | 14.3% | 2 | 2 |
+| [sperax](sperax/) | 9 | published_scope | 9/24 (37.5%) | 33.3% | 16 | 16 |
+| [sphere](sphere/) | 2 | published_scope | 1/9 (11.1%) | 0.0% | 0 | 0 |
+| [spiko](spiko/) | 1 | published_scope | 28/40 (70.0%) | 0.0% | 3 | 37 |
+| [spiraldao](spiraldao/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [spiritswap](spiritswap/) | 5 | published_scope | 9/10 (90.0%) | 0.0% | 5 | 5 |
+| [splashing-stake](splashing-stake/) | 2 | published_scope | n/a | n/a | 2 | 5 |
+| [splice-finance](splice-finance/) | none — contracts published | blocked_no_audit_authority | 2/2 (100.0%) | 0.0% | 2 | 2 |
+| [spookyswap](spookyswap/) | 1 | published_scope | 10/17 (58.8%) | 0.0% | 6 | 7 |
+| [spool-protocol](spool-protocol/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [sport.fun](sport.fun/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [spot-cash](spot-cash/) | 3 | published_scope | 1/6 (16.7%) | 100.0% | 1 | 1 |
+| [sprinter](sprinter/) | 6 | published_scope | 3/4 (75.0%) | 100.0% | 3 | 3 |
+| [sqd.ai](sqd.ai/) | 2 | published_scope | 16/16 (100.0%) | 68.8% | 13 | 13 |
+| [squadswap](squadswap/) | 5 | published_scope | 41/99 (41.4%) | 4.9% | 12 | 12 |
+| [ssv-network](ssv-network/) | 14 | published_scope | 4/10 (40.0%) | 25.0% | 2 | 2 |
+| [stability](stability/) | 2 | published_scope | 2/9 (22.2%) | 0.0% | 1 | 1 |
+| [stable-jack](stable-jack/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [stablehodl](stablehodl/) | none | blocked_no_audit_authority | 1/3 (33.3%) | 0.0% | 0 | 0 |
+| [stader](stader/) | 3 | published_scope | 19/23 (82.6%) | 0.0% | 2 | 4 |
+| [stafi](stafi/) | 9 | published_scope | n/a | n/a | 0 | 0 |
+| [stake-dao](stake-dao/) | 19 | published_scope | 2/4 (50.0%) | 50.0% | 2 | 2 |
+| [stake.link](stake.link/) | 20 | published_scope | 32/35 (91.4%) | 53.1% | 16 | 30 |
+| [stakehouse](stakehouse/) | 12 | published_scope | 0/20 (0.0%) | n/a | 0 | 0 |
+| [stakestone](stakestone/) | 23 | published_scope | 13/16 (81.3%) | 30.8% | 12 | 13 |
+| [stakewise](stakewise/) | 14 | published_scope | n/a | n/a | 0 | 0 |
+| [stakingverse](stakingverse/) | 18 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [standx](standx/) | 6 | published_scope | 5/6 (83.3%) | 40.0% | 2 | 3 |
+| [stargate-finance](stargate-finance/) | 17 | published_scope | 169/451 (37.5%) | 0.0% | 18 | 91 |
+| [starknet-bridge](starknet-bridge/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [stcelo](stcelo/) | 3 | published_scope | 4/4 (100.0%) | 75.0% | 3 | 3 |
+| [steakbank-finance](steakbank-finance/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [steakhouse-financial](steakhouse-financial/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [steer-protocol](steer-protocol/) | 5 | published_scope | n/a | n/a | 7 | 13 |
+| [stella](stella/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [stellaswap](stellaswap/) | 9 | published_scope | 16/24 (66.7%) | 25.0% | 12 | 12 |
+| [steroids](steroids/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [stobox](stobox/) | none | blocked_no_audit_authority | 4/4 (100.0%) | 0.0% | 0 | 0 |
+| [stout](stout/) | none — contracts published | blocked_no_audit_authority | 29/29 (100.0%) | 0.0% | 2 | 2 |
+| [strata](strata/) | 7 | published_scope | 82/83 (98.8%) | 12.2% | 13 | 22 |
+| [stratex](stratex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [streamflow](streamflow/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [stride](stride/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [strike-finance-perpetuals](strike-finance-perpetuals/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [sturdy](sturdy/) | 7 | published_scope | 38/57 (66.7%) | 0.0% | 3 | 10 |
+| [stusdt](stusdt/) | 4 | published_scope | 4/5 (80.0%) | 100.0% | 4 | 4 |
+| [subseaprotocol](subseaprotocol/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [sudoswap](sudoswap/) | 5 | published_scope | 8/15 (53.3%) | 100.0% | 8 | 8 |
+| [suibridge](suibridge/) | 2 | published_scope | 1/2 (50.0%) | 100.0% | 1 | 1 |
+| [sumer.money](sumer.money/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [summer.fi](summer.fi/) | 6 | published_scope | 47/49 (95.9%) | 0.0% | 8 | 27 |
+| [sun](sun/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [superearn](superearn/) | 5 | published_scope | 32/51 (62.7%) | 31.3% | 9 | 28 |
+| [superfarm](superfarm/) | none — contracts published | blocked_no_audit_authority | 3/7 (42.9%) | 0.0% | 1 | 1 |
+| [superfluid](superfluid/) | 8 | published_scope | 2/2 (100.0%) | 0.0% | 2 | 2 |
+| [superform](superform/) | 14 | published_scope | 9/9 (100.0%) | 77.8% | 7 | 7 |
+| [superlend-xyz](superlend-xyz/) | none | blocked_no_audit_authority | 0/37 (0.0%) | n/a | 0 | 0 |
+| [supernova](supernova/) | 1 | published_scope | 44/44 (100.0%) | 47.7% | 31 | 38 |
+| [superreturn](superreturn/) | 4 | published_scope | 3/3 (100.0%) | 33.3% | 2 | 2 |
+| [superstate](superstate/) | 11 | published_scope | 4/7 (57.1%) | 75.0% | 3 | 4 |
+| [surf-liquid](surf-liquid/) | 2 | published_scope | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [sushi](sushi/) | 1 | published_scope | 1/30 (3.3%) | 100.0% | 1 | 1 |
+| [suzaku](suzaku/) | 2 | published_scope | 24/27 (88.9%) | 4.2% | 15 | 22 |
+| [swaap](swaap/) | 7 | published_scope | 16/23 (69.6%) | 0.0% | 6 | 15 |
+| [swamp-finance](swamp-finance/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [swapr](swapr/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [swapscanner](swapscanner/) | 1 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [swapx](swapx/) | 3 | published_scope | 0/35 (0.0%) | n/a | 0 | 0 |
+| [swell](swell/) | 16 | published_scope | 28/29 (96.6%) | 46.4% | 18 | 23 |
+| [swellchain-bridge](swellchain-bridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [swerve](swerve/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [swissborg](swissborg/) | 1 | published_scope | 6/8 (75.0%) | 33.3% | 4 | 5 |
+| [switcheo-finance](switcheo-finance/) | 3 | published_scope | n/a | n/a | 21 | 21 |
+| [swych-perpetual](swych-perpetual/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [sx-rollup-bridge](sx-rollup-bridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [sygnum-fiusd-liquidity-fund](sygnum-fiusd-liquidity-fund/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [symbiosis](symbiosis/) | 15 | published_scope | 18/18 (100.0%) | 38.9% | 12 | 15 |
+| [symbiotic](symbiotic/) | 24 | published_scope | 2/10 (20.0%) | 100.0% | 2 | 2 |
+| [symmio](symmio/) | 5 | published_scope | 5/15 (33.3%) | 0.0% | 5 | 5 |
+| [synapse](synapse/) | 5 | published_scope | 70/119 (58.8%) | 0.0% | 24 | 64 |
+| [syncswap-protocol](syncswap-protocol/) | 9 | published_scope | n/a | n/a | 0 | 0 |
+| [synfutures](synfutures/) | 1 | published_scope | 2/44 (4.5%) | 0.0% | 0 | 0 |
+| [syno-finance](syno-finance/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [synthetix](synthetix/) | 1 | published_scope | 15/90 (16.7%) | 0.0% | 6 | 9 |
+| [syntropia](syntropia/) | none — contracts published | blocked_no_audit_authority | n/a | n/a | 1 | 3 |
+| [t-rize](t-rize/) | 1 | published_scope | 3/3 (100.0%) | 0.0% | 1 | 1 |
+| [taiko-bridge](taiko-bridge/) | 8 | published_scope | 7/8 (87.5%) | 85.7% | 2 | 7 |
+| [takara-lend](takara-lend/) | none | blocked_no_audit_authority | 13/13 (100.0%) | 0.0% | 0 | 0 |
+| [tangent-finance](tangent-finance/) | 5 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [tangible](tangible/) | 7 | published_scope | n/a | n/a | 0 | 0 |
+| [tanx.fi](tanx.fi/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [tarot](tarot/) | 1 | published_scope | 27/27 (100.0%) | 0.0% | 3 | 3 |
+| [tau-labs](tau-labs/) | none — contracts published | blocked_no_audit_authority | 4/4 (100.0%) | 0.0% | 1 | 1 |
+| [teahouse-finance](teahouse-finance/) | none | blocked_no_audit_authority | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [team-finance](team-finance/) | 2 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [tectonic](tectonic/) | 6 | published_scope | n/a | n/a | 0 | 0 |
+| [teleswap](teleswap/) | 1 | published_scope | 0/6 (0.0%) | n/a | 0 | 0 |
+| [teller](teller/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [telos-consilium](telos-consilium/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [templar-dao](templar-dao/) | 1 | published_scope | 42/44 (95.5%) | 0.0% | 5 | 5 |
+| [templar-protocol](templar-protocol/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [ten-finance](ten-finance/) | 3 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [tender-finance](tender-finance/) | 1 | published_scope | 13/17 (76.5%) | 0.0% | 1 | 1 |
+| [tenderize](tenderize/) | 8 | published_scope | 0/7 (0.0%) | n/a | 0 | 0 |
+| [termfinance](termfinance/) | none | blocked_no_audit_authority | 58/62 (93.5%) | 0.0% | 0 | 0 |
+| [terminal-finance-pre-deposits](terminal-finance-pre-deposits/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [termmax](termmax/) | 14 | published_scope | n/a | n/a | 0 | 0 |
+| [tether-gold](tether-gold/) | none | blocked_no_audit_authority | 12/14 (85.7%) | 0.0% | 0 | 0 |
+| [tethys-finance](tethys-finance/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [tetu](tetu/) | 5 | published_scope | 5/8 (62.5%) | 20.0% | 5 | 5 |
+| [tg-casino](tg-casino/) | 8 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [the-arena](the-arena/) | none — contracts published | blocked_no_audit_authority | 2/2 (100.0%) | 0.0% | 2 | 2 |
+| [the-idols](the-idols/) | 2 | published_scope | 5/5 (100.0%) | 60.0% | 3 | 3 |
+| [thedeep](thedeep/) | 1 | published_scope | 16/25 (64.0%) | 6.3% | 3 | 4 |
+| [thena](thena/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [theo](theo/) | 6 | published_scope | 18/18 (100.0%) | 11.1% | 6 | 6 |
+| [theoriq](theoriq/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [thorchain-dex](thorchain-dex/) | none | blocked_no_audit_authority | 10/10 (100.0%) | 0.0% | 0 | 0 |
+| [thorswap](thorswap/) | 2 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [threshold-network](threshold-network/) | 16 | published_scope | 19/33 (57.6%) | 10.5% | 6 | 6 |
+| [thruster](thruster/) | 13 | published_scope | 14/15 (93.3%) | 21.4% | 8 | 8 |
+| [timeswap](timeswap/) | 1 | published_scope | 225/314 (71.7%) | 0.0% | 1 | 1 |
+| [titano-swych](titano-swych/) | 1 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [tizi](tizi/) | 1 | published_scope | n/a | n/a | 1 | 1 |
+| [token-tool](token-tool/) | none | blocked_no_audit_authority | 0/2 (0.0%) | n/a | 0 | 0 |
+| [tokenlon](tokenlon/) | 9 | published_scope | n/a | n/a | 0 | 0 |
+| [tokenpocket](tokenpocket/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [tokenstore](tokenstore/) | none — contracts published | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [tokenworks](tokenworks/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [tomo](tomo/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [toobit](toobit/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [topaz](topaz/) | 1 | published_scope | 27/27 (100.0%) | 7.4% | 20 | 20 |
+| [tori-finance](tori-finance/) | none | blocked_no_audit_authority | 6/6 (100.0%) | 0.0% | 0 | 0 |
+| [tornado-cash](tornado-cash/) | 2 | published_scope | 43/44 (97.7%) | 0.0% | 6 | 6 |
+| [tothemoon](tothemoon/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [toucan-protocol](toucan-protocol/) | 1 | published_scope | 5/15 (33.3%) | 0.0% | 1 | 1 |
+| [toupee.tech](toupee.tech/) | 2 | published_scope | 21/25 (84.0%) | 33.3% | 12 | 13 |
+| [trader-joe](trader-joe/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [tranchess](tranchess/) | 9 | published_scope | 60/92 (65.2%) | 8.3% | 20 | 32 |
+| [travessia-credit](travessia-credit/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [treble](treble/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [treehouse-protocol](treehouse-protocol/) | 20 | published_scope | 14/20 (70.0%) | 35.7% | 8 | 9 |
+| [trevee-earn](trevee-earn/) | none — contracts published | blocked_no_audit_authority | 40/66 (60.6%) | 0.0% | 15 | 38 |
+| [trisolaris](trisolaris/) | none | blocked_no_audit_authority | 4/67 (6.0%) | 0.0% | 0 | 0 |
+| [tropykus-finance](tropykus-finance/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [truefi](truefi/) | 27 | published_scope | n/a | n/a | 3 | 3 |
+| [trueo](trueo/) | none — contracts published | blocked_no_audit_authority | 6/6 (100.0%) | 0.0% | 3 | 3 |
+| [trufin-protocol](trufin-protocol/) | 13 | published_scope | 2/3 (66.7%) | 100.0% | 2 | 2 |
+| [trust-wallet](trust-wallet/) | 10 | published_scope | 0/9 (0.0%) | n/a | 0 | 0 |
+| [tulipa-capital](tulipa-capital/) | none — contracts published | blocked_no_audit_authority | n/a | n/a | 6 | 9 |
+| [turbo-loop](turbo-loop/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [turboflow](turboflow/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [turtle-club](turtle-club/) | 1 | published_scope | 11/11 (100.0%) | 0.0% | 7 | 10 |
+| [twindex](twindex/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [twyne](twyne/) | 15 | published_scope | 3/4 (75.0%) | 66.7% | 1 | 2 |
+| [txflow](txflow/) | none | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [tydro](tydro/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [tymio](tymio/) | 1 | published_scope | 2/2 (100.0%) | 50.0% | 2 | 2 |
+| [ubeswap](ubeswap/) | none — contracts published | blocked_no_audit_authority | 18/20 (90.0%) | 0.0% | 15 | 15 |
+| [ufarm-digital](ufarm-digital/) | 2 | published_scope | 2/42 (4.8%) | 0.0% | 0 | 0 |
+| [ultrayield](ultrayield/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [umee](umee/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [unchain-x](unchain-x/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [uncx-network](uncx-network/) | 18 | published_scope | 2/24 (8.3%) | 50.0% | 1 | 1 |
+| [unichain-bridge](unichain-bridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [unicly](unicly/) | 1 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [unifarm](unifarm/) | none | blocked_no_audit_authority | 3/3 (100.0%) | 0.0% | 0 | 0 |
+| [union-protocol](union-protocol/) | 6 | published_scope | 3/10 (30.0%) | 66.7% | 2 | 3 |
+| [unipower](unipower/) | none — contracts published | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [uniswap](uniswap/) | 20 | published_scope | 33/260 (12.7%) | 0.0% | 27 | 28 |
+| [unit](unit/) | none | blocked_no_audit_authority | 5/6 (83.3%) | 0.0% | 0 | 0 |
+| [unit-protocol](unit-protocol/) | 4 | published_scope | 7/62 (11.3%) | 14.3% | 7 | 7 |
+| [unitas](unitas/) | 5 | published_scope | 2/2 (100.0%) | 100.0% | 2 | 2 |
+| [universal-bridge](universal-bridge/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 1 | 14 |
+| [universal-page](universal-page/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [universe-xyz](universe-xyz/) | 3 | published_scope | 15/16 (93.8%) | 33.3% | 6 | 6 |
+| [unsheth](unsheth/) | 3 | published_scope | 6/6 (100.0%) | 50.0% | 3 | 3 |
+| [unslashed](unslashed/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [untangled](untangled/) | 3 | published_scope | 7/7 (100.0%) | 0.0% | 2 | 3 |
+| [upshift](upshift/) | 4 | published_scope | 37/37 (100.0%) | 0.0% | 2 | 2 |
+| [usd-ai](usd-ai/) | 7 | published_scope | 11/33 (33.3%) | 90.9% | 9 | 11 |
+| [usdd](usdd/) | 6 | published_scope | 21/39 (53.8%) | 42.9% | 21 | 21 |
+| [usdt0](usdt0/) | 20 | published_scope | 48/53 (90.6%) | 12.5% | 15 | 40 |
+| [usual](usual/) | 35 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [usx.capital](usx.capital/) | 2 | published_scope | 6/7 (85.7%) | 0.0% | 1 | 1 |
+| [uwu-lend](uwu-lend/) | 1 | published_scope | 86/86 (100.0%) | 14.0% | 37 | 81 |
+| [valr](valr/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [value-finance](value-finance/) | 9 | published_scope | n/a | n/a | 0 | 0 |
+| [vapordex](vapordex/) | 4 | published_scope | 10/11 (90.9%) | 20.0% | 9 | 9 |
+| [varlamore-capital](varlamore-capital/) | none | blocked_no_audit_authority | 9/9 (100.0%) | 0.0% | 0 | 0 |
+| [vault-bridge](vault-bridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [vaultcraft](vaultcraft/) | 7 | published_scope | 12/20 (60.0%) | 8.3% | 9 | 9 |
+| [vaultedge](vaultedge/) | none | blocked_no_audit_authority | 39/41 (95.1%) | 0.0% | 0 | 0 |
+| [veda](veda/) | 60 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [vela-exchange](vela-exchange/) | 2 | published_scope | 11/40 (27.5%) | 18.2% | 8 | 8 |
+| [velo-finance](velo-finance/) | none — contracts published | blocked_no_audit_authority | 1/1 (100.0%) | 0.0% | 1 | 1 |
+| [velocore](velocore/) | 4 | published_scope | n/a | n/a | 0 | 0 |
+| [velodrome](velodrome/) | 8 | published_scope | 81/195 (41.5%) | 7.4% | 6 | 6 |
+| [velora](velora/) | 1 | published_scope | 9/41 (22.0%) | 0.0% | 5 | 9 |
+| [velvet.capital](velvet.capital/) | 14 | published_scope | n/a | n/a | 15 | 18 |
+| [veno-finance](veno-finance/) | 3 | published_scope | 0/20 (0.0%) | n/a | 0 | 0 |
+| [venombridge](venombridge/) | 1 | published_scope | n/a | n/a | 1 | 2 |
+| [venus-finance](venus-finance/) | none | blocked_no_audit_authority | 258/269 (95.9%) | 0.0% | 0 | 0 |
+| [verified-network](verified-network/) | none | blocked_no_audit_authority | 0/26 (0.0%) | n/a | 0 | 0 |
+| [verse](verse/) | 5 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [vesper](vesper/) | 30 | published_scope | 14/64 (21.9%) | 42.9% | 9 | 16 |
+| [vest-markets](vest-markets/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [vfat.io](vfat.io/) | 10 | published_scope | 1/1 (100.0%) | 100.0% | 1 | 1 |
+| [virtuals-protocol](virtuals-protocol/) | 5 | published_scope | 1/3 (33.3%) | 0.0% | 1 | 1 |
+| [vnx](vnx/) | 4 | published_scope | 3/4 (75.0%) | 0.0% | 1 | 1 |
+| [volmex](volmex/) | none | blocked_no_audit_authority | 7/7 (100.0%) | 0.0% | 0 | 0 |
+| [volt-finance](volt-finance/) | none | blocked_no_audit_authority | 16/17 (94.1%) | 0.0% | 0 | 0 |
+| [volta-club](volta-club/) | none — contracts published | blocked_no_audit_authority | 4/6 (66.7%) | 0.0% | 4 | 4 |
+| [voltz](voltz/) | 2 | published_scope | n/a | n/a | 0 | 0 |
+| [vvs-finance](vvs-finance/) | 5 | published_scope | 3/25 (12.0%) | 0.0% | 3 | 3 |
+| [w-dex](w-dex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [wagmi](wagmi/) | 12 | published_scope | 6/8 (75.0%) | 0.0% | 4 | 5 |
+| [wan-bridge](wan-bridge/) | 3 | published_scope | 12/21 (57.1%) | 0.0% | 7 | 7 |
+| [wardenswap](wardenswap/) | 7 | published_scope | 7/16 (43.8%) | 57.1% | 6 | 6 |
+| [wasabi](wasabi/) | 8 | published_scope | 8/8 (100.0%) | 37.5% | 2 | 4 |
+| [wasabix](wasabix/) | 4 | published_scope | 2/2 (100.0%) | 50.0% | 1 | 1 |
+| [wavesbridge](wavesbridge/) | none — contracts published | blocked_no_audit_authority | 3/4 (75.0%) | 0.0% | 3 | 3 |
+| [weex](weex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [wefi](wefi/) | 3 | published_scope | 0/1 (0.0%) | n/a | 0 | 0 |
+| [wepiggy](wepiggy/) | 1 | published_scope | 1/121 (0.8%) | 0.0% | 0 | 0 |
+| [whales-market](whales-market/) | 2 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [white-whale](white-whale/) | 2 | published_scope | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [wildcat-protocol](wildcat-protocol/) | 3 | published_scope | 7/19 (36.8%) | 42.9% | 7 | 7 |
+| [wing-finance](wing-finance/) | 6 | published_scope | 0/4 (0.0%) | n/a | 0 | 0 |
+| [wisdomtree](wisdomtree/) | 3 | published_scope | n/a | n/a | 0 | 0 |
+| [wombat-exchange](wombat-exchange/) | 11 | published_scope | 116/321 (36.1%) | 2.6% | 31 | 106 |
+| [wombex-finance](wombex-finance/) | 3 | published_scope | 13/13 (100.0%) | 38.5% | 10 | 10 |
+| [woo-x](woo-x/) | none — contracts published | blocked_no_audit_authority | n/a | n/a | 2 | 2 |
+| [woofi](woofi/) | 20 | published_scope | 289/331 (87.3%) | 2.8% | 27 | 55 |
+| [world-chain](world-chain/) | 2 | published_scope | 16/19 (84.2%) | 0.0% | 6 | 11 |
+| [wrap-protocol](wrap-protocol/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [wrapped](wrapped/) | none | blocked_no_audit_authority | 0/2 (0.0%) | n/a | 0 | 0 |
+| [wrapped-bnb](wrapped-bnb/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [xave-finance](xave-finance/) | 11 | published_scope | 10/22 (45.5%) | 0.0% | 0 | 0 |
+| [xdai-stake-bridge](xdai-stake-bridge/) | 18 | published_scope | 0/11 (0.0%) | n/a | 2 | 2 |
+| [xfai](xfai/) | 1 | published_scope | n/a | n/a | 2 | 3 |
+| [xpanse](xpanse/) | 1 | published_scope | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [xsigma](xsigma/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [xstocks](xstocks/) | none | blocked_no_audit_authority | 1/1964 (0.1%) | 0.0% | 0 | 0 |
+| [xsy](xsy/) | 1 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [xtoken](xtoken/) | 2 | published_scope | 0/13 (0.0%) | n/a | 0 | 0 |
+| [xwin-finance](xwin-finance/) | 1 | published_scope | 4/4 (100.0%) | 25.0% | 2 | 4 |
+| [yala](yala/) | 1 | published_scope | 2/2 (100.0%) | 0.0% | 2 | 2 |
+| [yam-finance](yam-finance/) | none — contracts published | blocked_no_audit_authority | 6/6 (100.0%) | 0.0% | 5 | 5 |
+| [yamato-protocol](yamato-protocol/) | 3 | published_scope | 4/4 (100.0%) | 75.0% | 3 | 3 |
+| [yaxis](yaxis/) | none — contracts published | blocked_no_audit_authority | 6/14 (42.9%) | 0.0% | 5 | 5 |
+| [yay!](yay!/) | none | blocked_no_audit_authority | 2/2 (100.0%) | 0.0% | 0 | 0 |
+| [yearn](yearn/) | 89 | published_scope | 97/245 (39.6%) | 9.3% | 68 | 68 |
+| [yei-finance](yei-finance/) | 7 | published_scope | n/a | n/a | 8 | 10 |
+| [yfii](yfii/) | 4 | published_scope | 1/5 (20.0%) | 100.0% | 1 | 1 |
+| [yield-basis](yield-basis/) | 11 | published_scope | 12/45 (26.7%) | 33.3% | 7 | 7 |
+| [yield-protocol](yield-protocol/) | 1 | published_scope | n/a | n/a | 0 | 0 |
+| [yield-yak](yield-yak/) | 3 | published_scope | 2/3 (66.7%) | 0.0% | 2 | 2 |
+| [yieldfi](yieldfi/) | 10 | published_scope | 12/12 (100.0%) | 75.0% | 1 | 12 |
+| [yieldflow](yieldflow/) | 1 | published_scope | 2/40 (5.0%) | 0.0% | 1 | 1 |
+| [yieldnest](yieldnest/) | 14 | published_scope | 11/16 (68.8%) | 54.5% | 4 | 11 |
+| [yieldseeker](yieldseeker/) | 1 | published_scope | 14/14 (100.0%) | 57.1% | 12 | 12 |
+| [yo-protocol](yo-protocol/) | 18 | published_scope | 15/27 (55.6%) | 20.0% | 15 | 19 |
+| [youswap](youswap/) | none | blocked_no_audit_authority | 13/13 (100.0%) | 0.0% | 0 | 0 |
+| [yuzu-money](yuzu-money/) | 6 | published_scope | 3/16 (18.8%) | 100.0% | 1 | 3 |
+| [zama](zama/) | 3 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [zebradao](zebradao/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [zeebu](zeebu/) | 3 | published_scope | 0/3 (0.0%) | n/a | 0 | 0 |
+| [zenlink](zenlink/) | 1 | published_scope | 20/24 (83.3%) | 0.0% | 10 | 12 |
+| [zero-network](zero-network/) | none | blocked_no_audit_authority | 4/4 (100.0%) | 0.0% | 0 | 0 |
+| [zerobase-cedefi](zerobase-cedefi/) | 5 | published_scope | 1/1 (100.0%) | 0.0% | 0 | 0 |
+| [zerolend](zerolend/) | 9 | published_scope | 0/2 (0.0%) | n/a | 0 | 0 |
+| [zethr](zethr/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [zircuit](zircuit/) | 10 | published_scope | 14/14 (100.0%) | 21.4% | 9 | 10 |
+| [zircuit-finance](zircuit-finance/) | 13 | published_scope | 0/16 (0.0%) | n/a | 0 | 0 |
+| [zircuit-staking](zircuit-staking/) | 11 | published_scope | 14/14 (100.0%) | 21.4% | 9 | 10 |
+| [zivoe](zivoe/) | 5 | published_scope | 26/29 (89.7%) | 73.1% | 23 | 26 |
+| [zkbob_](zkbob_/) | 4 | published_scope | 12/18 (66.7%) | 16.7% | 5 | 9 |
+| [zklink-nova](zklink-nova/) | 15 | published_scope | 13/53 (24.5%) | 23.1% | 9 | 9 |
+| [zkswap](zkswap/) | none | blocked_no_audit_authority | 0/22 (0.0%) | n/a | 0 | 0 |
+| [zkswap-finance](zkswap-finance/) | 22 | published_scope | 17/72 (23.6%) | 58.8% | 17 | 17 |
+| [zksync-era-txbridge](zksync-era-txbridge/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [zoo-finance](zoo-finance/) | 1 | published_scope | 13/13 (100.0%) | 0.0% | 4 | 5 |
+| [zoomex](zoomex/) | none | blocked_no_audit_authority | n/a | n/a | 0 | 0 |
+| [zora](zora/) | none | blocked_no_audit_authority | 0/1 (0.0%) | n/a | 0 | 0 |
+| [zoth](zoth/) | 5 | published_scope | 8/25 (32.0%) | 12.5% | 1 | 1 |
+| [zunami-protocol](zunami-protocol/) | 7 | published_scope | 23/68 (33.8%) | 13.0% | 18 | 18 |
+| [zyfai](zyfai/) | 5 | published_scope | n/a | n/a | 0 | 0 |
 
-_Projects: 1500_
+_Projects: 1359 · Audit-bearing: 928 · Contract-bearing/no-audit: 82 · Brief-only: 349_

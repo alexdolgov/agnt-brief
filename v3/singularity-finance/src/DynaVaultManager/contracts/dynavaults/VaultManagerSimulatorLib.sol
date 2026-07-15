@@ -57,7 +57,7 @@ library VaultManagerSimulatorLib {
 		uint256 _lastLockedProfitRatio = snapshot.lastLockedProfitRatio;
 		uint256 _timePassed = snapshot.timestamp - _lastLockedProfitDegradation;
 		uint256 _lockedProfitRatioDegradation = _timePassed * (snapshot.lockedProfitDegradationRate + snapshot.extraLockedProfitDegradationRate);
-		uint256 _lockedProfitRatioDelta = FixedPointMathLib.fullMulDiv(_lastLockedProfitRatio, _lockedProfitRatioDegradation, DEGRADATION_COEFFICIENT);
+		uint256 _lockedProfitRatioDelta = FixedPointMathLib.fullMulDivUp(_lastLockedProfitRatio, _lockedProfitRatioDegradation, DEGRADATION_COEFFICIENT);
 		calculatedLockedProfitRatio = _lastLockedProfitRatio > _lockedProfitRatioDelta ? _lastLockedProfitRatio - _lockedProfitRatioDelta : 0;
 	}
 
@@ -69,7 +69,7 @@ library VaultManagerSimulatorLib {
 	function _simulatedLockedProfit(IVaultSimulatorAPI.VaultSnapshot memory snapshot) private pure returns (uint256 lockedProfit) {
 		uint256 totalAssets = snapshot.totalAssets;
 		uint256 currentLockedProfitRatio = _simulatedCalculateCurrentLockedProfitRatio(snapshot);
-		lockedProfit = (currentLockedProfitRatio > 0) ? FixedPointMathLib.fullMulDivUp(currentLockedProfitRatio, totalAssets, DEGRADATION_COEFFICIENT) : 0;
+		lockedProfit = (currentLockedProfitRatio > 0) ? FixedPointMathLib.fullMulDiv(currentLockedProfitRatio, totalAssets, DEGRADATION_COEFFICIENT) : 0;
 	}
 
 	/**
@@ -79,8 +79,10 @@ library VaultManagerSimulatorLib {
 	 */
 	function simulatedFreeFunds(IVaultSimulatorAPI.VaultSnapshot memory snapshot) public pure returns (uint256 freeFunds) {
 		uint256 totalAssets = snapshot.totalAssets;
-		uint256 lockedProfit = _simulatedLockedProfit(snapshot);
-		freeFunds = totalAssets - lockedProfit;
+		uint256 currentLockedProfitRatio = _simulatedCalculateCurrentLockedProfitRatio(snapshot);
+		freeFunds = (currentLockedProfitRatio > 0)
+			? FixedPointMathLib.fullMulDiv(DEGRADATION_COEFFICIENT - currentLockedProfitRatio, totalAssets, DEGRADATION_COEFFICIENT)
+			: totalAssets;
 	}
 
 	/**
@@ -94,50 +96,68 @@ library VaultManagerSimulatorLib {
 	}
 
 	/**
-	 * @notice should update locked profit in depositToken decimals
-	 * @notice passes gain and totalFees in profitToken decimals
-	 * @param profitToken address of token with profit
-	 * @param deltaTotalAssets updates total assets in fee shares calculation
-	 * @param totalFees amount of fees to mint shares for
-	 * @param useDelta indicates if we need to compensate for a delta in total assets
-	 * @param snapshot The vault snapshot used in the simulation
-	 * @return snapshot with updated values
+	 * @notice Should calculate the fresh profit and fees in depositTokens
+	 * @notice Passes gain and totalFees in profitToken decimals
+	 * @param profitToken The address of the token with profit
+	 * @param deltaTotalAssets Updates total assets in fee shares calculation
 	 */
-	function _simulatedUpdateLockedProfitRatio(
+	function _simulatedCalculateProfitAndFeesInDepositToken(
 		address profitToken,
 		uint256 deltaTotalAssets,
-		uint256 totalFees,
-		bool useDelta,
-		IVaultSimulatorAPI.VaultSnapshot memory snapshot
-	) private view returns (IVaultSimulatorAPI.VaultSnapshot memory) {
+		uint256 totalFees
+	) private view returns (uint256 deltaProfitInDepositToken, uint256 deltaFeesInDepositToken) {
 		address _depositToken = VaultTokensLib.token();
-		uint256 _totalAssets = snapshot.totalAssets;
-		uint256 _currentLockedProfitRatio = _simulatedCalculateCurrentLockedProfitRatio(snapshot);
 		// convert gain and totalFees in deposit tokens for locked profit calculation
 		uint256 _profitTokenUnit = 10 ** IERC20Metadata(profitToken).decimals();
 		uint256 _profitTokenUnitInDeposit = (profitToken != _depositToken)
 			? IDynaVaultAPI(VaultGovernanceLib.vault()).tokenValueInQuoteAsset(profitToken, _profitTokenUnit, _depositToken)
 			: _profitTokenUnit;
-		uint256 _deltaInDepositToken = FixedPointMathLib.fullMulDiv(deltaTotalAssets, _profitTokenUnitInDeposit, _profitTokenUnit);
-		if (useDelta) _totalAssets += _deltaInDepositToken;
-		uint256 _deltaRatio = _totalAssets != 0 ? FixedPointMathLib.fullMulDiv(_deltaInDepositToken, DEGRADATION_COEFFICIENT, _totalAssets) : 0;
-		uint256 _totalFeesInDepositToken = FixedPointMathLib.fullMulDiv(totalFees, _profitTokenUnitInDeposit, _profitTokenUnit);
-		uint256 _totalFeesRatio = _totalAssets != 0 ? FixedPointMathLib.fullMulDiv(_totalFeesInDepositToken, DEGRADATION_COEFFICIENT, _totalAssets) : 0;
+		deltaProfitInDepositToken = FixedPointMathLib.fullMulDiv(deltaTotalAssets, _profitTokenUnitInDeposit, _profitTokenUnit);
+		deltaFeesInDepositToken = FixedPointMathLib.fullMulDiv(totalFees, _profitTokenUnitInDeposit, _profitTokenUnit);
+	}
+
+	/**
+	 * @notice Should update locked profit ratio based on delta profit and fees in deposit tokens
+	 * @notice Passes delta profit and delta fees in depositToken decimals
+	 */
+	function _simulatedUpdateLockedProfitRatio(
+		uint256 deltaProfitInDepositToken,
+		uint256 deltaFeesInDepositToken,
+		IVaultSimulatorAPI.VaultSnapshot memory snapshot
+	) private view returns (IVaultSimulatorAPI.VaultSnapshot memory) {
+		uint256 currentLockedProfitRatio = _simulatedCalculateCurrentLockedProfitRatio(snapshot);
+
+		// compensate deltaProfit for current locked profit ratio
+		uint256 _unlockedDeltaProfitInDepositToken = FixedPointMathLib.fullMulDiv(
+			deltaProfitInDepositToken,
+			DEGRADATION_COEFFICIENT - currentLockedProfitRatio,
+			DEGRADATION_COEFFICIENT
+		);
+		uint256 _totalAssets = snapshot.totalAssets;
+		uint256 _deltaProfitRatio = _totalAssets != 0
+			? FixedPointMathLib.fullMulDivUp(_unlockedDeltaProfitInDepositToken, DEGRADATION_COEFFICIENT, _totalAssets)
+			: 0;
+		uint256 _deltaFeesRatio = _totalAssets != 0 ? FixedPointMathLib.fullMulDiv(deltaFeesInDepositToken, DEGRADATION_COEFFICIENT, _totalAssets) : 0;
+		uint256 _newLockedProfitRatio = (currentLockedProfitRatio + _deltaProfitRatio > _deltaFeesRatio)
+			? currentLockedProfitRatio + _deltaProfitRatio - _deltaFeesRatio
+			: 0;
+
+		// calculate the new locked profit ratio based on the total delta ratio from reporting one or more reserves
 		uint256 _remainingLockedProfitPeriod;
-		if (_currentLockedProfitRatio != 0) {
+		if (currentLockedProfitRatio != 0) {
 			uint256 _expectedLockedProfitPeriod = DEGRADATION_COEFFICIENT / (snapshot.lockedProfitDegradationRate + snapshot.extraLockedProfitDegradationRate);
-			uint256 _timePassed = (snapshot.timestamp > snapshot.lastLockedProfitDegradation) ? snapshot.timestamp - snapshot.lastLockedProfitDegradation : 0;
+			uint256 _timePassed = (block.timestamp > snapshot.lastLockedProfitDegradation) ? block.timestamp - snapshot.lastLockedProfitDegradation : 0;
 			_remainingLockedProfitPeriod = (_expectedLockedProfitPeriod > _timePassed) ? _expectedLockedProfitPeriod - _timePassed : 0;
 		}
-		uint256 _newLockedProfitRatio = (_currentLockedProfitRatio + _deltaRatio > _totalFeesRatio)
-			? _currentLockedProfitRatio + _deltaRatio - _totalFeesRatio
-			: 0;
 		uint256 _newRemainingLockedProfitPeriod = DEGRADATION_COEFFICIENT / snapshot.lockedProfitDegradationRate;
-		snapshot.extraLockedProfitDegradationRate = FixedPointMathLib.fullMulDiv(
+		uint256 _newExtraLockedProfitDegradationRate = FixedPointMathLib.fullMulDiv(
 			snapshot.lockedProfitDegradationRate,
 			_remainingLockedProfitPeriod,
 			_newRemainingLockedProfitPeriod
 		);
+
+		// update state
+		snapshot.extraLockedProfitDegradationRate = _newExtraLockedProfitDegradationRate;
 		snapshot.lastLockedProfitRatio = _newLockedProfitRatio;
 		snapshot.lastLockedProfitDegradation = snapshot.timestamp;
 		return snapshot;
@@ -240,7 +260,7 @@ library VaultManagerSimulatorLib {
 
 	function simulateTotalAssetsForToken(address token, IVaultSimulatorAPI.VaultSnapshot memory snapshot) external view returns (uint256) {
 		uint256 tokenIndex = VaultTokensLib.tokenIndex(token);
-		(, snapshot) = _simulatedReportReserveAndCalculateFeesToMint(tokenIndex, snapshot);
+		(, , , snapshot) = _simulatedReportReserveAndCalculateFeesToMintAndDeltaProfit(tokenIndex, snapshot);
 		// TODO: add _simulateHarvestStrategy which uses simulateReport(Strategy)
 		return snapshot.tokens[tokenIndex].tokenIdle + snapshot.tokens[tokenIndex].tokenDebt;
 	}
@@ -250,10 +270,19 @@ library VaultManagerSimulatorLib {
 	 * @param tokenIndex index of token to report
 	 * @param snapshot The vault snapshot used in the simulation
 	 */
-	function _simulatedReportReserveAndCalculateFeesToMint(
+	function _simulatedReportReserveAndCalculateFeesToMintAndDeltaProfit(
 		uint256 tokenIndex,
 		IVaultSimulatorAPI.VaultSnapshot memory snapshot
-	) private view returns (IVaultSimulatorAPI.ReserveFees memory reserveFees, IVaultSimulatorAPI.VaultSnapshot memory) {
+	)
+		private
+		view
+		returns (
+			IVaultSimulatorAPI.ReserveFees memory reserveFees,
+			uint256 reserveDeltaProfitInDepositToken,
+			uint256 reserveFeesInDepositToken,
+			IVaultSimulatorAPI.VaultSnapshot memory
+		)
+	{
 		// 1. calc profit/loss
 		uint256 reserveValue;
 		uint256 reserveProfitInReferenceAsset;
@@ -263,14 +292,12 @@ library VaultManagerSimulatorLib {
 		VaultFeesLib.FeesStorage memory fees = VaultFeesLib.getFees();
 		IVaultSimulatorAPI.VaultTokenSnapshot memory stats = snapshot.tokens[tokenIndex];
 		uint256 elapsed = snapshot.timestamp - stats.lastReport;
-		uint256 managementFeePct = fees.managementFee;
-		uint256 performanceFeePct = fees.performanceFee;
 		(uint256 managementFeeInReferenceAsset, uint256 totalFeesInReferenceAsset) = _simulatedCalculateReserveFees(
 			snapshot.tokens[tokenIndex].tokenAddress,
 			stats.tokenIdle,
 			reserveProfitInReferenceAsset,
-			managementFeePct,
-			performanceFeePct,
+			fees.managementFee,
+			fees.performanceFee,
 			elapsed
 		);
 		reserveFees.managementFee = managementFeeInReferenceAsset;
@@ -280,12 +307,15 @@ library VaultManagerSimulatorLib {
 		if (totalFeesInReferenceAsset != 0) _snapshot.totalFees += totalFeesInReferenceAsset;
 		// 3. update locked profit in deposit token denomination, but we pass profit and fees in reference asset token units
 		address referenceAsset = VaultTokensLib.referenceAsset();
-		_snapshot = _simulatedUpdateLockedProfitRatio(referenceAsset, reserveProfitInReferenceAsset, totalFeesInReferenceAsset, false, _snapshot);
-		_snapshot.lockedProfit = _simulatedLockedProfit(_snapshot);
+		(reserveDeltaProfitInDepositToken, reserveFeesInDepositToken) = _simulatedCalculateProfitAndFeesInDepositToken(
+			referenceAsset,
+			reserveProfitInReferenceAsset,
+			totalFeesInReferenceAsset
+		);
 		// 4. record report timestamp
 		_snapshot.tokens[_tokenIndex] = _updateLastReport(stats, reserveValue, _snapshot.timestamp);
 		_snapshot.totalProfit += reserveProfitInReferenceAsset;
-		return (reserveFees, _snapshot);
+		return (reserveFees, reserveDeltaProfitInDepositToken, reserveFeesInDepositToken, _snapshot);
 	}
 
 	/** @dev Updates the last report timestamp and potentially updates the watermark for a given token
@@ -315,13 +345,24 @@ library VaultManagerSimulatorLib {
 	function simulatedReportAllReserves(
 		IVaultSimulatorAPI.VaultSnapshot memory snapshot
 	) public view returns (IVaultSimulatorAPI.ReserveFees memory totalReserveFees, IVaultSimulatorAPI.VaultSnapshot memory) {
+		uint256 totalDeltaProfitInDepositToken;
+		uint256 totalFeesInDepositToken;
+		uint256 reserveDeltaProfitInDepositToken;
+		uint256 reserveFeesInDepositToken;
 		uint256 nrOfTokens = snapshot.tokens.length;
 		for (uint256 i = 0; i < nrOfTokens; ++i) {
 			IVaultSimulatorAPI.ReserveFees memory reserveFees;
-			(reserveFees, snapshot) = _simulatedReportReserveAndCalculateFeesToMint(i, snapshot);
+			(reserveFees, reserveDeltaProfitInDepositToken, reserveFeesInDepositToken, snapshot) = _simulatedReportReserveAndCalculateFeesToMintAndDeltaProfit(
+				i,
+				snapshot
+			);
+			totalDeltaProfitInDepositToken += reserveDeltaProfitInDepositToken;
+			totalFeesInDepositToken += reserveFeesInDepositToken;
 			totalReserveFees.managementFee += reserveFees.managementFee;
 			totalReserveFees.totalFees += reserveFees.totalFees;
 		}
+		snapshot = _simulatedUpdateLockedProfitRatio(totalDeltaProfitInDepositToken, totalFeesInDepositToken, snapshot);
+		snapshot.lockedProfit = _simulatedLockedProfit(snapshot);
 		if (totalReserveFees.totalFees != 0) snapshot = _simulatedIssueReserveTokenFees(snapshot, totalReserveFees);
 		return (totalReserveFees, snapshot);
 	}
@@ -494,7 +535,8 @@ library VaultManagerSimulatorLib {
 		strategyFees.vaultManagementFee = vaultManagementFee;
 		strategyFees.vaultPerformanceFee = vaultPerformanceFee;
 		strategyFees.totalFees = totalFees;
-		snapshot = _simulatedUpdateLockedProfitRatio(want, gain, totalFees, true, snapshot);
+		// TODO: refactor to use new pattern
+		//snapshot = _simulatedUpdateLockedProfitRatio(want, gain, totalFees);
 		return (strategyFees, snapshot);
 	}
 

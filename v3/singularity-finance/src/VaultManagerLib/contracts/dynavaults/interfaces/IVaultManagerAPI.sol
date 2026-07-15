@@ -63,7 +63,7 @@ interface IVaultManagerAPI {
 	function getFees() external view returns (Fees memory);
 
 	function totalTokenAssets() external view returns (uint256 total);
-	
+
 	function totalAssets() external view returns (uint256 total);
 
 	function minDepositLimit() external view returns (uint256);
@@ -213,5 +213,4 @@ interface IVaultManagerAPI {
 	function simulatedFreeFunds(IVaultSimulatorAPI.VaultSnapshot memory snapshot) external view returns (uint256);
 
 	function takeStrategiesSnapshot(address tokenAddress) external view returns (IVaultSimulatorAPI.VaultStrategySnapshot[] memory snapshots);
-	
 }

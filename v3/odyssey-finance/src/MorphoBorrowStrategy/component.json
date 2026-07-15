@@ -1,7 +1,15 @@
 {
   "component": "MorphoBorrowStrategy",
   "main_contract": "MorphoBorrowStrategy",
+  "source_entry_count": 27,
   "source_file_count": 27,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MorphoBorrowStrategy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x87acd9823c1269ec5a2233fc941b22d747366910",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397478"
     },
     {
       "chain": "base",
@@ -20,7 +30,9 @@
       "address": "0x87acd9823c1269ec5a2233fc941b22d747366910",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397506"
     }
   ]
 }

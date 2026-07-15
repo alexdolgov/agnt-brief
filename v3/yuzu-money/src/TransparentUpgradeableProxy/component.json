@@ -1,49 +1,52 @@
 {
   "component": "TransparentUpgradeableProxy",
   "main_contract": "TransparentUpgradeableProxy",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
-    "https://dedaub.com/audits/yuzu-money/yuzuusd-october-6-2025",
     "https://dedaub.com/audits/yuzu-money/yuzuusd-psm-february-09-2026",
     "https://github.com/pashov/audits/blob/5911d22f3575a90650b2a6c22758a8f1712b8880/team/pdf/YuzuUSD-security-review_2026-01-14.pdf",
-    "https://github.com/pashov/audits/blob/master/team/md/YuzuUSD-security-review_2025-08-28.md",
-    "https://github.com/pashov/audits/blob/master/team/md/YuzuUSD-security-review_2026-01-14.md",
-    "https://github.com/pashov/audits/blob/master/team/pdf/YuzuUSD-security-review_2025-08-28.pdf"
+    "https://github.com/pashov/audits/blob/master/team/md/YuzuUSD-security-review_2026-01-14.md"
   ],
   "addresses": [
     {
       "chain": "chain-9745",
       "chain_id": 9745,
-      "address": "0x3fdd8e2d2e9170a00f5406089720dae39cd9e589",
+      "address": "0x6695c0f8706c5ace3bdf8995073179cca47926dc",
       "is_proxy": true,
-      "implementation_address": "0xb14e7d488371d22d39aff1b0c0f07ed2b532160f",
-      "liveness": "live"
+      "implementation_address": "0x32d7d5bf842d6ae28c9dd4fac4c6662cf9bf5cfe",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401409"
     },
     {
       "chain": "chain-9745",
       "chain_id": 9745,
-      "address": "0x8e6026ac788415d03f38a46008a2a75d7c9cc340",
+      "address": "0xc8a8df9b210243c55d31c73090f06787ad0a1bf6",
       "is_proxy": true,
-      "implementation_address": "0x90b1bc26e1ac873fc5043a9f658443daab674d85",
-      "liveness": "live"
+      "implementation_address": "0xa3982582016375a0b25cb7d572379d3d49e5e9c8",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401411"
     },
     {
       "chain": "chain-9745",
       "chain_id": 9745,
-      "address": "0x90b1bc26e1ac873fc5043a9f658443daab674d85",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-9745",
-      "chain_id": 9745,
-      "address": "0xb14e7d488371d22d39aff1b0c0f07ed2b532160f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "address": "0xebfc8c2fe73c431ef2a371aea9132110aab50dca",
+      "is_proxy": true,
+      "implementation_address": "0x326839f792ba2ccf98a3ac28bb7de551539309bc",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401412"
     }
   ]
 }

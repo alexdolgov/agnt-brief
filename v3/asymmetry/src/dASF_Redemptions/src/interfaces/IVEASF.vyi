@@ -1,6 +1,0 @@
-# @version 0.4.1
-
-
-@external
-def lock(account: address, amount: uint256, weeks: uint256) -> bool:
-    ...

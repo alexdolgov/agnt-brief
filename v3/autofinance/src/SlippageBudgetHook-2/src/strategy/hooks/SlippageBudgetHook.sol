@@ -45,44 +45,44 @@ contract SlippageBudgetHook is BaseStrategyHook {
 
     /// @dev We use uint64 to save 3 storage reads
     struct PoolBudgetConfig {
-        /// @param budgetBps Budget in basis points (1% = 100)
-        uint64 budgetBps;
+        /// @param budgetWad Budget in WAD precision (1e18 = 100%)
+        uint64 budgetWad;
         /// @param periodInSeconds Budget period duration
         uint64 periodInSeconds;
         /// @param periodStart Start timestamp of current period
         uint64 periodStart;
-        /// @param usedBudgetBps Used budget in current period
-        uint64 usedBudgetBps;
+        /// @param usedBudgetWad Used budget in current period
+        uint64 usedBudgetWad;
     }
 
     struct RegistrationData {
-        uint256 budgetBps;
+        uint256 budgetWad;
         uint256 periodInSeconds;
     }
 
     error BudgetPeriodTooShort(uint256 period);
-    error BudgetExceeded(uint256 slippageBps, uint256 budgetBps, uint256 usedBudgetBps);
+    error BudgetExceeded(uint256 slippageWad, uint256 budgetWad, uint256 usedBudgetWad);
     error BudgetTooHigh(uint256 budget);
 
-    event BudgetConfigured(address indexed pool, uint256 budgetBps, uint256 periodInSeconds);
+    event BudgetConfigured(address indexed pool, uint256 budgetWad, uint256 periodInSeconds);
     event BudgetPeriodReset(address indexed pool, uint256 timestamp);
     event SlippageConsumed(
         address indexed pool,
         uint256 valueOut,
         uint256 valueIn,
         uint256 aum,
-        uint256 slippageBps,
+        uint256 slippageWad,
         uint256 remainingBudget
     );
 
     /// @notice Minimum allowed period duration in seconds (1 day)
     uint256 private constant MIN_PERIOD = 1 days;
 
-    /// @notice Maximum allowed budget in basis points (10%)
-    uint256 private constant MAX_BUDGET_BPS = 1000;
+    /// @notice Maximum allowed budget in WAD precision (10%)
+    uint256 private constant MAX_BUDGET_WAD = 1e17; // 10% in WAD precision
 
-    /// @notice Basis points denominator (100% = 10_000)
-    uint256 private constant BPS_DENOMINATOR = 10_000;
+    /// @notice WAD precision denominator (100% = 1e18)
+    uint256 private constant WAD = 1e18;
 
     /// @notice Mapping of pool address to its budget configuration
     mapping(address => PoolBudgetConfig) private _poolBudgetConfig;
@@ -102,20 +102,20 @@ contract SlippageBudgetHook is BaseStrategyHook {
 
     /// @notice Configure budget settings for specific pools
     /// @param pools Target pools to configure
-    /// @param budgetsBps Budget in basis points per pool (1% = 100)
+    /// @param budgetsWad Budget in WAD precision per pool (1e16 = 1%)
     /// @param periodsInSeconds Period duration in seconds per pool
     function configurePools(
         address[] calldata pools,
-        uint256[] calldata budgetsBps,
+        uint256[] calldata budgetsWad,
         uint256[] calldata periodsInSeconds
     ) external hasRole(Roles.STRATEGY_HOOK_CONFIGURATION) {
         uint256 length = pools.length;
-        if (length != budgetsBps.length || length != periodsInSeconds.length) {
-            revert Errors.InvalidParam("pools+budgetsBps+periodsInSeconds");
+        if (length != budgetsWad.length || length != periodsInSeconds.length) {
+            revert Errors.InvalidParam("pools+budgetsWad+periodsInSeconds");
         }
 
         for (uint256 i = 0; i < length; ++i) {
-            _configurePool(pools[i], budgetsBps[i], periodsInSeconds[i]);
+            _configurePool(pools[i], budgetsWad[i], periodsInSeconds[i]);
         }
     }
 
@@ -146,12 +146,12 @@ contract SlippageBudgetHook is BaseStrategyHook {
                 config.periodStart
                     + ((block.timestamp - config.periodStart) / config.periodInSeconds) * config.periodInSeconds
             );
-            config.usedBudgetBps = 0;
+            config.usedBudgetWad = 0;
 
             emit BudgetPeriodReset(msg.sender, block.timestamp);
         }
 
-        // Calculate slippage in basis points
+        // Calculate slippage in WAD precision
         (uint256 valueOut,) = _getBaseValue(params.destinationOut, params.tokenOut, params.amountOut);
         (uint256 valueIn,) = _getBaseValue(params.destinationIn, params.tokenIn, params.amountIn);
         uint256 aum = IAutopool(msg.sender).totalAssets(IAutopool.TotalAssetPurpose.Withdraw);
@@ -159,22 +159,22 @@ contract SlippageBudgetHook is BaseStrategyHook {
         // If slippage is negative, don't count it against the budget
         uint256 slippage = valueOut.subSaturate(valueIn);
 
-        // SlippageBps = (valueOut - valueIn) * 10000 / totalAssets
-        uint256 slippageBps = (slippage * BPS_DENOMINATOR) / aum;
+        // SlippageWad = (valueOut - valueIn) * 1e18 / totalAssets
+        uint256 slippageWad = (slippage * WAD) / aum;
 
         // Check if we have enough budget
-        uint256 newUsedBudget = config.usedBudgetBps + slippageBps;
-        if (newUsedBudget > config.budgetBps) {
-            revert BudgetExceeded(slippageBps, config.budgetBps, config.usedBudgetBps);
+        uint256 newUsedBudget = config.usedBudgetWad + slippageWad;
+        if (newUsedBudget > config.budgetWad) {
+            revert BudgetExceeded(slippageWad, config.budgetWad, config.usedBudgetWad);
         }
 
         // Update used budget in memory
-        config.usedBudgetBps = uint64(newUsedBudget);
+        config.usedBudgetWad = uint64(newUsedBudget);
 
         // Single storage write for the entire struct
         _poolBudgetConfig[msg.sender] = config;
 
-        emit SlippageConsumed(msg.sender, valueOut, valueIn, aum, slippageBps, config.budgetBps - newUsedBudget);
+        emit SlippageConsumed(msg.sender, valueOut, valueIn, aum, slippageWad, config.budgetWad - newUsedBudget);
     }
     // slither-disable-end timestamp,reentrancy-events,reentrancy-no-eth
 
@@ -183,7 +183,7 @@ contract SlippageBudgetHook is BaseStrategyHook {
         bytes memory data
     ) internal override {
         RegistrationData memory registrationData = abi.decode(data, (RegistrationData));
-        _configurePool(msg.sender, registrationData.budgetBps, registrationData.periodInSeconds);
+        _configurePool(msg.sender, registrationData.budgetWad, registrationData.periodInSeconds);
     }
 
     /// @inheritdoc BaseStrategyHook
@@ -195,21 +195,21 @@ contract SlippageBudgetHook is BaseStrategyHook {
     }
 
     /// @dev Configure budget settings for a specific pool
-    function _configurePool(address pool, uint256 budgetBps, uint256 periodInSeconds) internal {
+    function _configurePool(address pool, uint256 budgetWad, uint256 periodInSeconds) internal {
         Errors.verifyNotZero(pool, "pool");
-        Errors.verifyNotZero(budgetBps, "budgetBps");
+        Errors.verifyNotZero(budgetWad, "budgetWad");
 
-        if (budgetBps > MAX_BUDGET_BPS) revert BudgetTooHigh(budgetBps);
+        if (budgetWad > MAX_BUDGET_WAD) revert BudgetTooHigh(budgetWad);
         if (periodInSeconds < MIN_PERIOD) revert BudgetPeriodTooShort(periodInSeconds);
 
         _poolBudgetConfig[pool] = PoolBudgetConfig({
-            budgetBps: uint64(budgetBps),
+            budgetWad: uint64(budgetWad),
             periodInSeconds: uint64(periodInSeconds),
             periodStart: uint64(block.timestamp),
-            usedBudgetBps: 0
+            usedBudgetWad: 0
         });
 
-        emit BudgetConfigured(pool, budgetBps, periodInSeconds);
+        emit BudgetConfigured(pool, budgetWad, periodInSeconds);
     }
 
     /// @dev Get the value of a token amount in base asset terms

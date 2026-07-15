@@ -1,18 +1,28 @@
 {
   "component": "ClusterToken",
   "main_contract": "ClusterToken",
-  "source_file_count": 1,
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ClusterToken\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x0da509a51de6a05c917891ba3a8536a9d469ab20",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0a684421ef48b431803bfd75f38675eab1e38ed5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

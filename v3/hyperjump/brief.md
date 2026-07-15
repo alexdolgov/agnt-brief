@@ -1,48 +1,90 @@
 # Agentic Audit Brief: HyperJump
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 3 (0 matched; 3 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: HyperJump (`hyperjump`)
+- Website: [https://hyperjump.fi/](https://hyperjump.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:58.803Z
-- Pipeline run: v2-2026-07-03-89943a
-- Chains: bsc
-- Contract surface: 14 unique implementations (14 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: bsc, fantom
+- Contract surface: 16 unique implementations (16 raw deployments)
+- Coverage basis: 0/3 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $185,953.12
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Dexs. Structurally: 14 project-authored contract(s) across 1 chain(s); 5 ERC20 tokens; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for HyperJump. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Contracts are linked by 5 cross-contract reference(s). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 3 contract row(s) across bsc, fantom. Structural roles: 3 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 3
+- Structural roles: core (3)
+- Contract kinds: contract (3)
+- Detected standards: ownable (3), erc20 (2), pausable (1)
+- Frameworks: openzeppelin (3)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 5 contracts are derived from known codebases. 5 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0xfd5b49...1a200d`, chain 56)
+- UnnamedContract (`0x7afca6...cca411`, chain 250)
+- HyperAlloy (`0x5ef599...6065bd`, chain 56)
+- HyperBurn (`0x03d6bd...ecd54d`, chain 56)
+- HyperCity (`0x4f1818...1c6250`, chain 56)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 14; live-surface contracts included: 14 (14 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 5/10 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/14 (0.0%)
-- Deployed-live implementations: 14 of 14 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/14
-- Verified + Unaudited implementations: 14
+- Coverage of address-book-owned deployed-live implementations: 0/3 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 5 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 11 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 5 of 16 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/3
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 14
-- Raw deployments: 14
+- Unverified implementations: 2
+- Unique implementations: 16
+- Raw deployments: 16
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 3 unknown
+- Latest audit: 2021-05 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 1 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
@@ -58,22 +100,22 @@ The protocol comprises 2 functional families. Contracts are linked by 5 cross-co
 
 ### ⚠️ Verified + Unaudited (14)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BeefyVaultV4 | unknown | bsc | n/a | [`0x02931d...23d913`](./contracts/bsc-56/0x02931dca7f6360fbfafde00be784b8c80123d913/) | ⚠️ Unaudited |
-| BurnMachineV2 | unknown | bsc | n/a | [`0xef6a9d...4af52b`](./contracts/bsc-56/0xef6a9d388071cfa59534c625e03df002f64af52b/) | ⚠️ Unaudited |
-| HyperAlloy | unknown | bsc | n/a | [`0x5ef599...6065bd`](./contracts/bsc-56/0x5ef5994fa33ff4eb6c82d51ee1dc145c546065bd/) | ⚠️ Unaudited |
-| HyperBurn | unknown | bsc | n/a | [`0x03d6bd...ecd54d`](./contracts/bsc-56/0x03d6bd3d48f956d783456695698c407a46ecd54d/) | ⚠️ Unaudited |
-| HyperCity | unknown | bsc | n/a | [`0x4f1818...1c6250`](./contracts/bsc-56/0x4f1818ff649498a2441ae1ad29ccf55a8e1c6250/) | ⚠️ Unaudited |
-| HyperMechs | unknown | bsc | n/a | [`0x3ae713...b84954`](./contracts/bsc-56/0x3ae713c662b8852d686e718e0762631a4cb84954/) | ⚠️ Unaudited |
-| HyperPool | unknown | bsc | n/a | [`0x1b04a6...e82f4b`](./contracts/bsc-56/0x1b04a6cdd6422f44eeea2dbe9bf1127a1ae82f4b/) | ⚠️ Unaudited |
-| HyperPoolV2 | unknown | bsc | n/a | [`0x027587...625a85`](./contracts/bsc-56/0x027587c42d8c43b5e8e622aa9981a409ef625a85/) | ⚠️ Unaudited |
-| HyperWarp | unknown | bsc | n/a | [`0x624e7c...8ae756`](./contracts/bsc-56/0x624e7c88b6884bffbab31623f4d1f8bc8b8ae756/) | ⚠️ Unaudited |
-| LPFeeVault | unknown | bsc | n/a | [`0x0fa942...59fa8d`](./contracts/bsc-56/0x0fa9420a4bfc08dbb6bdd1728b1555a96c59fa8d/) | ⚠️ Unaudited |
-| StarVaultLPF | unknown | bsc | n/a | [`0x64776d...e01447`](./contracts/bsc-56/0x64776d5bdbd391716a01c9fff35fc18fbce01447/) | ⚠️ Unaudited |
-| StrategyHyperLP | unknown | bsc | n/a | [`0x02db4d...d65cf8`](./contracts/bsc-56/0x02db4d714641f46dd70bec80e4e4c33f8fd65cf8/) | ⚠️ Unaudited |
-| StrategyHyperLPV2 | unknown | bsc | n/a | [`0x78609e...0454ab`](./contracts/bsc-56/0x78609e486ec17441e250d949df395a37e00454ab/) | ⚠️ Unaudited |
-| Timelock | unknown | bsc | n/a | [`0x89861b...d00265`](./contracts/bsc-56/0x89861bf28cedabba52ea4b06869186294cd00265/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BeefyVaultV4 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x02931d...23d913` | ⚠️ Unaudited |
+| BurnMachineV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xef6a9d...4af52b` | ⚠️ Unaudited |
+| HyperAlloy | unknown | project_anchor | own_supporting | 0 | bsc | unit-242267 | `0x5ef599...6065bd` | ⚠️ Unaudited |
+| HyperBurn | unknown | project_anchor | own_supporting | 0 | bsc | unit-242262 | `0x03d6bd...ecd54d` | ⚠️ Unaudited |
+| HyperCity | unknown | project_anchor | own_supporting | 0 | bsc | unit-242266 | `0x4f1818...1c6250` | ⚠️ Unaudited |
+| HyperMechs | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x3ae713...b84954` | ⚠️ Unaudited |
+| HyperPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x1b04a6...e82f4b` | ⚠️ Unaudited |
+| HyperPoolV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x027587...625a85` | ⚠️ Unaudited |
+| HyperWarp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x624e7c...8ae756` | ⚠️ Unaudited |
+| LPFeeVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x0fa942...59fa8d` | ⚠️ Unaudited |
+| StarVaultLPF | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x64776d...e01447` | ⚠️ Unaudited |
+| StrategyHyperLP | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x02db4d...d65cf8` | ⚠️ Unaudited |
+| StrategyHyperLPV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x78609e...0454ab` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x89861b...d00265` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,34 +129,55 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-242270 | `0xfd5b49...1a200d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-242261 | `0x7afca6...cca411` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Certik HyperJump Audit: <>](https://skynet.certik.com/projects/hyperjump) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Diving in to the Certik Audit of HyperJump](https://hyperjumpfi.medium.com/diving-in-to-the-certik-audit-of-hyperjump-b7ae6bb5d5bb) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [- [Audit]()](https://hyperjump.gitbook.io/hyperguides/security/audit.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Certik HyperJump Audit: <>](https://skynet.certik.com/projects/hyperjump) | CertiK | Audit | 2021-05 | stale | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [Diving in to the Certik Audit of HyperJump](https://hyperjumpfi.medium.com/diving-in-to-the-certik-audit-of-hyperjump-b7ae6bb5d5bb) | CertiK | Audit | 2021-05 | stale | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [- [Audit]()](https://hyperjump.gitbook.io/hyperguides/security/audit.md) | unknown | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [20519] Certik HyperJump Audit: <> — no match: The document is a CertiK Skynet project insight page, not a formal audit report. It mentions an audit delivered on 5/26/2021 but does not list specific contracts in scope. No contract names are identifiable.
+- [20520] Diving in to the Certik Audit of HyperJump — no match: The document is a blog post summarizing a Certik audit, but it does not list specific contract names, file paths, or a scope section. Only finding codes (e.g., HBH-07, HCH-11) are mentioned, which are not contract names.
+- [20521] - [Audit]() — no match: The provided text is a general description of auditing and a reference to a Certik audit, but does not contain the actual audit report with a scope section or contract names.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| bsc | `0x5ef599...6065bd` | HyperAlloy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x03d6bd...ecd54d` | HyperBurn | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x4f1818...1c6250` | HyperCity | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 14 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 14 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
@@ -122,7 +185,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: low=3
 - Match method counts: n/a
 
 Zero-match audit list:

@@ -1,26 +1,28 @@
 {
   "component": "AutopoolETH-4",
   "main_contract": "AutopoolETH",
-  "source_file_count": 64,
-  "deployment_count": 2,
+  "source_entry_count": 70,
+  "source_file_count": 70,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AutopoolETH-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x2ab4a3a8224726cbaa91d6b04d212979f06efdf9",
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xc9db15bf0361a5ae0aca0e3bc8d0ec7fab195e7b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xaadf01dd90ae0a6bb9eb908294658037096e0404",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391897"
     }
   ]
 }

@@ -1,8 +1,16 @@
 {
   "component": "AuraCalculator",
   "main_contract": "AuraCalculator",
+  "source_entry_count": 66,
   "source_file_count": 66,
-  "deployment_count": 13,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AuraCalculator\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 12,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,9 @@
       "address": "0x041679acb4088288178589c059543b56ce74ea07",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391541"
     },
     {
       "chain": "ethereum",
@@ -20,7 +30,9 @@
       "address": "0x0f5d9c23d365c114d3febae6cb2edbb06b65acad",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391544"
     },
     {
       "chain": "ethereum",
@@ -28,7 +40,9 @@
       "address": "0x4e4eb584ccea7ece23da46245daf07457bc48348",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391578"
     },
     {
       "chain": "ethereum",
@@ -36,15 +50,9 @@
       "address": "0x4ead64090fe1d07b8a2306b2e4897386d5eb43ea",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x594baa7ad9230084261e40adfce95f2ed612898a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391580"
     },
     {
       "chain": "ethereum",
@@ -52,7 +60,9 @@
       "address": "0x5968662ccfb6792bb4a0e4f45cf303b85fb2cc43",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391585"
     },
     {
       "chain": "ethereum",
@@ -60,7 +70,9 @@
       "address": "0x5ac9dc1cef6cbd9d5b8a604e2d3b7d93f59d7f40",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391587"
     },
     {
       "chain": "ethereum",
@@ -68,7 +80,9 @@
       "address": "0x662e3fcfd4348ef74ff88c88a6e9f4e4119b018b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391596"
     },
     {
       "chain": "ethereum",
@@ -76,7 +90,9 @@
       "address": "0xa4349b50d2e64b24b4c35b2c24ad06177508f3a0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391624"
     },
     {
       "chain": "ethereum",
@@ -84,7 +100,9 @@
       "address": "0xacdc4a1cd67e7e9fe85f00ec29d5f07b1305829d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391633"
     },
     {
       "chain": "ethereum",
@@ -92,7 +110,9 @@
       "address": "0xb57e41106fc06a5c0b6accc8cf8f72dd25fb6621",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391641"
     },
     {
       "chain": "ethereum",
@@ -100,7 +120,9 @@
       "address": "0xd09bde15c0bdd222edcd79912c0636e451e59c71",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391647"
     },
     {
       "chain": "ethereum",
@@ -108,7 +130,9 @@
       "address": "0xddfd0a9a979182fa45e0024fdb101dd8079d84b2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391653"
     }
   ]
 }

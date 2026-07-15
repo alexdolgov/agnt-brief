@@ -1,26 +1,28 @@
 {
   "component": "LayerZeroTeller-2",
   "main_contract": "LayerZeroTeller",
-  "source_file_count": 38,
-  "deployment_count": 2,
+  "source_entry_count": 5,
+  "source_file_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LayerZeroTeller-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-146",
-      "chain_id": 146,
+      "chain": "ethereum",
+      "chain_id": 1,
       "address": "0x31a5a9f60dc3d62fa5168352caf0ee05aa18f5b8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x358cfacf00d0b4634849821bb3d1965b472c776a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400325"
     }
   ]
 }

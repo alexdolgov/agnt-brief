@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { IERC3156FlashBorrower } from "openzeppelin-contracts/interfaces/IERC3156FlashBorrower.sol";
 
@@ -8,15 +8,15 @@ interface IStrategy {
     /* ******************************** */
     /*      Events                      */
     /* ******************************** */
-    event DestinationVaultAdded(address destination);
-    event DestinationVaultRemoved(address destination);
-    event WithdrawalQueueSet(address[] destinations);
-    event AddedToRemovalQueue(address destination);
-    event RemovedFromRemovalQueue(address destination);
+    // event DestinationVaultAdded(address destination);
+    // event DestinationVaultRemoved(address destination);
+    // event WithdrawalQueueSet(address[] destinations);
+    // event AddedToRemovalQueue(address destination);
+    // event RemovedFromRemovalQueue(address destination);
 
-    error InvalidDestinationVault();
+    // error InvalidDestinationVault();
 
-    error RebalanceFailed(string message);
+    // error RebalanceFailed(string message);
 
     /// @notice gets the list of supported destination vaults for the Autopool/Strategy
     /// @return _destinations List of supported destination vaults
@@ -41,12 +41,20 @@ interface IStrategy {
     /// @param tokenOut The address of the underlyer token that will be received by the swapper
     /// @param amountOut The amount of the tokenOut that will be received by the swapper
     struct RebalanceParams {
+        // TODO - Below will be removed
         address destinationIn;
         address tokenIn;
         uint256 amountIn;
         address destinationOut;
         address tokenOut;
         uint256 amountOut;
+        // TODO - New fields
+        address[] destinationsIn;
+        address[] tokensIn;
+        uint256[] amountsIn;
+        address[] destinationsOut;
+        address[] tokensOut;
+        uint256[] amountsOut;
     }
 
     /// @param destination The address / lp token of the destination vault

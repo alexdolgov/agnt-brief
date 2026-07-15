@@ -1,77 +1,94 @@
 # Agentic Audit Brief: HashDAO Finance
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 3 (0 matched; 3 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: HashDAO Finance (`hashdao-finance`)
 - Website: [https://www.hashdao.finance](https://www.hashdao.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:58.307Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
-- Chains: arbitrum, optimism
-- Contract surface: 40 unique implementations (44 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: n/a
+- Contract surface: 0 unique implementations (0 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $1,236,912.77
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Derivatives. Structurally: 23 project-authored contract(s) across 2 chain(s); 4 ERC20 tokens, 1 Chainlink feed; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for HashDAO Finance in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Its contracts share 8 common project-authored base contract(s) (erc20permit, eip712, ownableupgradeable). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 124; live-surface contracts included: 44 (10 live, 34 unknown).
-- Excluded by liveness: 80 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 3/7 (42.9%)
-- Deployed-live implementations: 7 of 40 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 3/7
-- Verified + Unaudited implementations: 4
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 33
-- Unique implementations: 40
-- Raw deployments: 44
+- Unverified implementations: 0
+- Unique implementations: 0
+- Raw deployments: 0
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 3
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-04 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 2 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| unknown | Tier 2 | 3 | 42.9% | 2023-04 |
-| SolidProof | Tier 2 | 1 | 14.3% | n/a |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (3)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AdminUpgradeabilityProxy | proxy | optimism | n/a | 2 deployments: optimism [`0x5556af...771bce`](./contracts/optimism-10/0x5556af10c1966ebf0b131295a2af13deec771bce/); optimism `0x584a4f...07fca8` | ✅ Audited |
-| AdminUpgradeabilityProxy | proxy | arbitrum | n/a | 2 deployments: arbitrum [`0x019622...e3a61f`](./contracts/arbitrum-42161/0x019622fb05dd0c80751798949e795ff5d5e3a61f/); arbitrum `0xcd7a1b...32dbc4` | ✅ Audited |
-| Token | token | arbitrum | n/a | [`0x2e8025...61b93f`](./contracts/arbitrum-42161/0x2e80259c9071b6176205ff5f5eb6f7ec8361b93f/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| GnosisSafeL2 | governance | arbitrum | n/a | [`0xaa1919...e4ff03`](./contracts/arbitrum-42161/0xaa1919fd3b6f6e11e2c7f22147c48af2b0e4ff03/) | ⚠️ Unaudited |
-| LPToken | token | arbitrum | n/a | 2 deployments: arbitrum [`0x7d5332...cf021f`](./contracts/arbitrum-42161/0x7d5332df67aec9cb1df73ba8115e6a9211cf021f/); arbitrum `0x947af1...e551cd` | ⚠️ Unaudited |
-| ProxyAdmin | governance | optimism | n/a | [`0xa01729...750f11`](./contracts/optimism-10/0xa0172947b886eedc8d8b2177d6213083fd750f11/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | arbitrum | n/a | [`0x8dc6ef...190703`](./contracts/arbitrum-42161/0x8dc6efd57a13b7ba3ff7824c9708db24d3190703/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,53 +102,38 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (33)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Proxy (impl: 0x989cc0e3726feae27bbea934bb040214ea953476) | unknown | arbitrum | n/a | 2 deployments: arbitrum `0x597f5a...a818f2`; arbitrum `0x989cc0...953476` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x2b9c8b...becd19` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x2c7505...7701c4` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x303cc9...8cf6d6` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x375729...d33700` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x52d510...5048e1` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x60d755...ed3cbe` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x722b76...0984e1` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x92aee2...e6a39d` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x95e924...aec878` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x963a0a...1be81f` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0x98293e...bd4972` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xa18be6...51561b` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xcd00be...3a9b2e` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xd6c52a...c2345b` | ❓ Unverified |
-| UnnamedContract | unknown | optimism | n/a | `0xdf40b7...c2a2b2` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x0f48ac...d28ee5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x172ef9...2a3002` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x278fe1...d1f398` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x286fa4...fd8b87` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x349c06...76c6dc` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x5556af...771bce` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x5905e0...141c76` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x7c8210...b64f84` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x8f5be3...1b0330` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x97d4b0...273d95` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xa0a60e...070e18` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xb37c07...7e1a3a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xb6a06d...bd917f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xe80cdc...f1ed51` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xec161c...beacc6` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xfdacc1...54e7a0` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xff0ebb...3a0fe8` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [HashDAO.pdf](https://github.com/TechRate/Smart-Contract-Audits/blob/main/April_2023/HashDAO.pdf) | unknown | Audit | 2023-04 | stale | Direct | contract_name | 2 | n/a |
-| [app.solidproof.io/projects/hashdao](https://app.solidproof.io/projects/hashdao) | unknown | Audit | n/a | unknown | Direct | contract_name | 1 | n/a |
-| [app.solidproof.io/projects/hashdao](https://app.solidproof.io/projects/hashdao?audit=dc54b5c8-2954-4939-a653-7272083fe7b3) | SolidProof | Audit | n/a | unknown | Direct | contract_name | 1 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [HashDAO.pdf](https://github.com/TechRate/Smart-Contract-Audits/blob/main/April_2023/HashDAO.pdf) | unknown | Audit | 2023-04 | stale | Direct | n/a | no match | 0 | 0 | 0 | 2 | n/a |
+| [app.solidproof.io/projects/hashdao](https://app.solidproof.io/projects/hashdao) | unknown | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 1 | n/a |
+| [app.solidproof.io/projects/hashdao](https://app.solidproof.io/projects/hashdao?audit=dc54b5c8-2954-4939-a653-7272083fe7b3) | SolidProof | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 1 | n/a |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [3000] HashDAO.pdf — no match: No reason recorded
+- [3001] app.solidproof.io/projects/hashdao — no match: No reason recorded
+- [3002] app.solidproof.io/projects/hashdao — no match: No reason recorded
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| HashDAO.pdf | AdminUpgradeabilityProxy | unmatched — not counted | — | — | no |
+| HashDAO.pdf | UpgradeabilityProxy | unmatched — not counted | — | — | no |
+| app.solidproof.io/projects/hashdao | Token | unmatched — not counted | — | — | no |
+| app.solidproof.io/projects/hashdao | Token | unmatched — not counted | — | — | no |
 
 ## Coverage Gaps
 
@@ -146,15 +148,23 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 40 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 4 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
-- Match method counts: contract_name=4
+- Match method counts: n/a
+
+Zero-match audit list:
+
+- [3000] HashDAO.pdf
+- [3001] app.solidproof.io/projects/hashdao
+- [3002] app.solidproof.io/projects/hashdao
 
 Fork inheritance lineage and inherited audits are included when available.

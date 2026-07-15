@@ -1,10 +1,21 @@
 {
   "component": "WithdrawalHandler",
   "main_contract": "WithdrawalHandler",
+  "source_entry_count": 15,
   "source_file_count": 15,
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WithdrawalHandler\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://596450103-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FvawK0RJiR8PpG791Q3EH%2Fuploads%2FWHNbilBdH3xBgXJiipOs%2Fhalborn_audit.pdf",
+    "https://drive.google.com/file/d/1vWysiNkjxRrhP9xJ4HywuDXsDWNj7X7r/view?usp=drive_link"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,15 +23,9 @@
       "address": "0x0dabc0d9b270c9b0c4c77aaceaa712b56d0f9178",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x6b872fafee64dd53f2b38dbbd05a4fb323f15f12",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397341"
     }
   ]
 }

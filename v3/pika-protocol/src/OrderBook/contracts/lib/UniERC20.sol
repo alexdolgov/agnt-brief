@@ -3,7 +3,6 @@
 // Originally: https://github.com/CryptoManiacsZone/mooniswap/blob/master/contracts/libraries/UniERC20.sol
 
 pragma solidity ^0.8.0;
-import "hardhat/console.sol";
 
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -43,7 +42,6 @@ library UniERC20 {
     function uniTransferFromSenderToThis(IERC20 token, uint256 amount) internal {
         if (amount > 0) {
             if (isETH(token)) {
-                console.log(msg.value, amount);
                 require(msg.value >= amount, "UniERC20: not enough value");
                 if (msg.value > amount) {
                     // Return remainder if exist

@@ -8,7 +8,6 @@ import { Address } from "openzeppelin-contracts/utils/Address.sol";
 import { ISignatureTransfer } from "src/interfaces/external/uniswap/permit2/ISignatureTransfer.sol";
 import { IAutopool, IAutopilotRouter } from "src/interfaces/vault/IAutopilotRouter.sol";
 import { IAccToke } from "src/interfaces/staking/IAccToke.sol";
-import { IAccTokeV1 } from "src/interfaces/staking/IAccTokeV1.sol";
 import { IRewards } from "src/interfaces/rewarders/IRewards.sol";
 import { SwapParams, IAsyncSwapper } from "src/interfaces/liquidation/IAsyncSwapper.sol";
 import { ISwapRouterV2 } from "src/interfaces/swapper/ISwapRouterV2.sol";
@@ -21,17 +20,15 @@ import { ContractTypes } from "src/libs/ContractTypes.sol";
 contract AutopilotRouter is IAutopilotRouter, AutopilotRouterBase, ReentrancyGuard {
     using Address for address;
 
-    IAccTokeV1 public immutable accTokeV1;
     ISignatureTransfer public immutable permit2;
 
     error InvalidSpender(address spender);
 
     constructor(
-        address _accTokeV1,
+        address,
         ISystemRegistry _systemRegistry,
         ISignatureTransfer _permit2
     ) AutopilotRouterBase(_systemRegistry) {
-        accTokeV1 = IAccTokeV1(_accTokeV1);
         permit2 = _permit2;
     }
 
@@ -225,7 +222,7 @@ contract AutopilotRouter is IAutopilotRouter, AutopilotRouterBase, ReentrancyGua
 
     /// @inheritdoc IAutopilotRouter
     function lockTokeFor(uint256 amount, uint256 duration) public payable override {
-        accTokeV1.lockTokeFor(amount, duration, msg.sender);
+        revert("NotSupported");
     }
 
     function permitAndTransferToRouter(

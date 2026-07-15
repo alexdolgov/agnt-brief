@@ -12,6 +12,12 @@ interface IAlgebraV2Adapter {
     /// @dev Event emitted when the quoter is set
     event QuoterSet(address quoter);
 
+    /// @dev Event emitted when an invalid quoter gas limit is set
+    error InvalidGasLimit();
+
+    /// @dev Event emitted when the quoter gas limit is updated
+    event QuoterGasLimitSet(uint256 newGasLimit);
+
     /// @dev Parameters struct for a quote
     struct QParams {
         address tokenIn;

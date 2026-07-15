@@ -1,0 +1,19 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "lithos",
+  "missing": [
+    {
+      "chain_id": 9745,
+      "chain": "chain-9745",
+      "address": "0x2eff716caa7f9eb441861340998b0952af056686",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 9745,
+      "chain": "chain-9745",
+      "address": "0x3b867f78d3ecfcad997b18220444adafbc8372a8",
+      "canonical_source_address": null
+    }
+  ]
+}

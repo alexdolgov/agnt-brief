@@ -1,10 +1,20 @@
 {
   "component": "DepositSwapArbitrum",
   "main_contract": "DepositSwapArbitrum",
+  "source_entry_count": 21,
   "source_file_count": 21,
-  "deployment_count": 3,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DepositSwapArbitrum\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/AstraSec-AuditReport-DeltaPrime-Final.pdf"
+  ],
   "addresses": [
     {
       "chain": "arbitrum",
@@ -12,23 +22,9 @@
       "address": "0x0b420f7002375543d04471bf84ead6fb0f0bccea",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x1b314c3f99c8fe73c9322f5666aff7b8738af907",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xaa3a31fd272db802621ee2ca691bbd8d01dd49e2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393534"
     }
   ]
 }

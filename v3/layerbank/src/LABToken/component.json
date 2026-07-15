@@ -1,26 +1,28 @@
 {
   "component": "LABToken",
   "main_contract": "LABToken",
-  "source_file_count": 6,
-  "deployment_count": 2,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LABToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x91fe82ed27c9e63442af515edd9b359dd824975b",
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x20a512dbdc0d006f46e6ca11329034eb3d18c997",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xf88f8602507e1ae1ca9c2b2c50d0fcf32df2f039",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395942"
     }
   ]
 }

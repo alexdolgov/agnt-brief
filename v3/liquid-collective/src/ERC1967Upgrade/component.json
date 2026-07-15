@@ -1,10 +1,24 @@
 {
   "component": "ERC1967Upgrade",
   "main_contract": "ERC1967Upgrade",
+  "source_entry_count": 9,
   "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Upgrade\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 4,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/Alluvial_Liquid_Collective_Smart_Contract_Security_Audit_Report_Halborn_Final_Update_v2.pdf",
+    "https://github.com/liquid-collective/security/blob/main/audits/202207_Halborn.md",
+    "https://github.com/liquid-collective/security/blob/main/audits/202209_Spearbit.md",
+    "https://github.com/liquid-collective/security/blob/main/audits/202402_Certora.md",
+    "https://github.com/spearbit/portfolio/blob/master/pdfs/LiquidCollective2-Spearbit-Security-Review.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +26,9 @@
       "address": "0x080b3a41390b357ad7e8097644d1dedf57ad3375",
       "is_proxy": true,
       "implementation_address": "0x4fb46d0b7668fc5ee27a37979579a3c254c70f54",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403352"
     },
     {
       "chain": "ethereum",
@@ -20,7 +36,9 @@
       "address": "0x0afd81862eea47322cf85db39d3d07e8a3c25154",
       "is_proxy": true,
       "implementation_address": "0xcfb80b9cee524550e3806d9dcd6eba5297e12ff7",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403353"
     },
     {
       "chain": "ethereum",
@@ -28,7 +46,9 @@
       "address": "0x1235f1b60df026b2620e48e735c422425e06b725",
       "is_proxy": true,
       "implementation_address": "0x4cf3341e1be254c5229e8bcd05b8233a2b60940a",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403354"
     },
     {
       "chain": "ethereum",
@@ -36,7 +56,9 @@
       "address": "0x32aac358b627b9feaa971cc33304027a41e49a81",
       "is_proxy": true,
       "implementation_address": "0xa6276596259dc7ad5764b11a20f677ae79adfddc",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403355"
     }
   ]
 }

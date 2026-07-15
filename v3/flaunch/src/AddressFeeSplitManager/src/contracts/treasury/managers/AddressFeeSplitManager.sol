@@ -58,8 +58,9 @@ contract AddressFeeSplitManager is FeeSplitManager {
      * Sets up the contract with the initial required contract addresses.
      *
      * @param _treasuryManagerFactory The {TreasuryManagerFactory} that will launch this implementation
+     * @param _feeEscrowRegistry The {FeeEscrowRegistry} that will be used to withdraw fees
      */
-    constructor (address _treasuryManagerFactory) FeeSplitManager(_treasuryManagerFactory) {
+    constructor (address _treasuryManagerFactory, address _feeEscrowRegistry) FeeSplitManager(_treasuryManagerFactory, _feeEscrowRegistry) {
         // ..
     }
 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-// Last deployed from commit: 6094467959b5f026a0b2395f84a97536afb77aab;
+// Last deployed from commit: b75e073cf23a3eb181f55a89a800ef040b7ba456;
 pragma solidity 0.8.17;
 
 import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
@@ -13,6 +13,7 @@ import "./interfaces/IRatesCalculator.sol";
 import "./interfaces/IBorrowersRegistry.sol";
 import "./interfaces/IPoolRewarder.sol";
 import "./VestingDistributor.sol";
+
 
 /**
  * @title Pool
@@ -43,32 +44,43 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
 
     uint8 internal _decimals;
 
-    function initialize(
-        IRatesCalculator ratesCalculator_,
-        IBorrowersRegistry borrowersRegistry_,
-        IIndex depositIndex_,
-        IIndex borrowIndex_,
-        address payable tokenAddress_,
-        IPoolRewarder poolRewarder_,
-        uint256 totalSupplyCap_
-    ) public initializer {
-        require(
-            AddressUpgradeable.isContract(address(ratesCalculator_)) &&
-                AddressUpgradeable.isContract(address(borrowersRegistry_)) &&
-                AddressUpgradeable.isContract(address(depositIndex_)) &&
-                AddressUpgradeable.isContract(address(borrowIndex_)) &&
-                (AddressUpgradeable.isContract(address(poolRewarder_)) ||
-                    address(poolRewarder_) == address(0)),
-            "Wrong init arguments"
-        );
+    modifier onlyWhitelistedAccounts {
+        if(
+            msg.sender == 0x0E5Bad4108a6A5a8b06820f98026a7f3A77466b2 ||
+            msg.sender == 0x2fFA7E9624B923fA811d9B9995Aa34b715Db1945 ||
+            msg.sender == 0x0d7137feA34BC97819f05544Ec7DE5c98617989C ||
+            msg.sender == 0xC6ba6BB819f1Be84EFeB2E3f2697AD9818151e5D ||
+            msg.sender == 0x14f69F9C351b798dF31fC53E33c09dD29bFAb547 ||
+            msg.sender == 0x5C23Bd1BD272D22766eB3708B8f874CB93B75248 ||
+            msg.sender == 0x000000F406CA147030BE7069149e4a7423E3A264 ||
+            msg.sender == 0x5D80a1c0a5084163F1D2620c1B1F43209cd4dB12 ||
+            msg.sender == 0x6C21A841d6f029243AF87EF01f6772F05832144b
+
+        ){
+            _;
+        } else {
+            revert("Not whitelisted");
+        }
+    }
+
+
+    function initialize(IRatesCalculator ratesCalculator_, IBorrowersRegistry borrowersRegistry_, IIndex depositIndex_, IIndex borrowIndex_, address payable tokenAddress_, IPoolRewarder poolRewarder_, uint256 _totalSupplyCap) public initializer {
+        require(AddressUpgradeable.isContract(address(ratesCalculator_))
+            && AddressUpgradeable.isContract(address(borrowersRegistry_))
+            && AddressUpgradeable.isContract(address(depositIndex_))
+            && AddressUpgradeable.isContract(address(borrowIndex_))
+            && (AddressUpgradeable.isContract(address(poolRewarder_)) || address(poolRewarder_) == address(0)), "Wrong init arguments");
+
         borrowersRegistry = borrowersRegistry_;
         ratesCalculator = ratesCalculator_;
         depositIndex = depositIndex_;
         borrowIndex = borrowIndex_;
         poolRewarder = poolRewarder_;
         tokenAddress = tokenAddress_;
-        totalSupplyCap = totalSupplyCap_;
+        totalSupplyCap = _totalSupplyCap;
+
         _decimals = IERC20Metadata(tokenAddress_).decimals();
+
         __Ownable_init();
         __ReentrancyGuard_init();
         _updateRates();
@@ -80,7 +92,7 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
      * Sets new totalSupplyCap limiting how much in total can be deposited to the Pool.
      * Only the owner of the Contract can execute this function.
      * @dev _newTotalSupplyCap new deposit cap
-     **/
+    **/
     function setTotalSupplyCap(uint256 _newTotalSupplyCap) external onlyOwner {
         totalSupplyCap = _newTotalSupplyCap;
     }
@@ -90,12 +102,9 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
      * The IPoolRewarder that distributes additional token rewards to people having a stake in this pool proportionally to their stake and time of participance.
      * Only the owner of the Contract can execute this function.
      * @dev _poolRewarder the address of PoolRewarder
-     **/
+    **/
     function setPoolRewarder(IPoolRewarder _poolRewarder) external onlyOwner {
-        if (
-            !AddressUpgradeable.isContract(address(_poolRewarder)) &&
-            address(_poolRewarder) != address(0)
-        ) revert NotAContract(address(_poolRewarder));
+        if(!AddressUpgradeable.isContract(address(_poolRewarder)) && address(_poolRewarder) != address(0)) revert NotAContract(address(poolRewarder));
         poolRewarder = _poolRewarder;
 
         emit PoolRewarderChanged(address(_poolRewarder), block.timestamp);
@@ -107,14 +116,9 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
      * Only the owner of the Contract can execute this function.
      * @dev ratesCalculator the address of rates calculator
      **/
-    function setRatesCalculator(
-        IRatesCalculator ratesCalculator_
-    ) external onlyOwner {
+    function setRatesCalculator(IRatesCalculator ratesCalculator_) external onlyOwner {
         // setting address(0) ratesCalculator_ freezes the pool
-        if (
-            !AddressUpgradeable.isContract(address(ratesCalculator_)) &&
-            address(ratesCalculator_) != address(0)
-        ) revert NotAContract(address(ratesCalculator_));
+        if(!AddressUpgradeable.isContract(address(ratesCalculator_)) && address(ratesCalculator_) != address(0)) revert NotAContract(address(ratesCalculator_));
         ratesCalculator = ratesCalculator_;
         if (address(ratesCalculator_) != address(0)) {
             _updateRates();
@@ -129,45 +133,37 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
      * Only the owner of the Contract can execute this function.
      * @dev borrowersRegistry the address of borrowers registry
      **/
-    function setBorrowersRegistry(
-        IBorrowersRegistry borrowersRegistry_
-    ) external onlyOwner {
-        if (!AddressUpgradeable.isContract(address(borrowersRegistry_)))
-            revert NotAContract(address(borrowersRegistry_));
+    function setBorrowersRegistry(IBorrowersRegistry borrowersRegistry_) external onlyOwner {
+        if(!AddressUpgradeable.isContract(address(borrowersRegistry_))) revert NotAContract(address(borrowersRegistry_));
 
         borrowersRegistry = borrowersRegistry_;
         emit BorrowersRegistryChanged(address(borrowersRegistry_), block.timestamp);
     }
 
     /**
-     * Sets the new Vesting Distributor.
+     * Sets the new Pool Rewarder.
+     * The IPoolRewarder that distributes additional token rewards to people having a stake in this pool proportionally to their stake and time of participance.
      * Only the owner of the Contract can execute this function.
-     * @dev _distributor the address of vestingDistributor
-     **/
+     * @dev _poolRewarder the address of PoolRewarder
+    **/
     function setVestingDistributor(address _distributor) external onlyOwner {
-        if (
-            !AddressUpgradeable.isContract(_distributor) && _distributor != address(0)
-        ) revert NotAContract(_distributor);
+        if(!AddressUpgradeable.isContract(_distributor) && _distributor != address(0)) revert NotAContract(_distributor);
         vestingDistributor = VestingDistributor(_distributor);
 
         emit VestingDistributorChanged(_distributor, block.timestamp);
     }
 
     /* ========== MUTATIVE FUNCTIONS ========== */
-    function transfer(
-        address recipient,
-        uint256 amount
-    ) external override nonReentrant returns (bool) {
-        if (recipient == address(0)) revert TransferToZeroAddress();
+    function transfer(address recipient, uint256 amount) external override returns (bool) {
+        if(recipient == address(0)) revert TransferToZeroAddress();
 
-        if (recipient == address(this)) revert TransferToPoolAddress();
+        if(recipient == address(this)) revert TransferToPoolAddress();
 
         address account = msg.sender;
         _accumulateDepositInterest(account);
 
         (uint256 lockedAmount, uint256 transferrableAmount) = _getAmounts(account);
-        if (amount > transferrableAmount)
-            revert TransferAmountExceedsBalance(amount, transferrableAmount);
+        if(amount > transferrableAmount) revert TransferAmountExceedsBalance(amount, transferrableAmount);
 
         _updateWithdrawn(account, amount, lockedAmount);
 
@@ -180,9 +176,9 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         _deposited[recipient] += amount;
 
         // Handle rewards
-        if (address(poolRewarder) != address(0) && amount != 0) {
+        if(address(poolRewarder) != address(0) && amount != 0){
             uint256 unstaked = poolRewarder.withdrawFor(amount, account);
-            if (unstaked > 0) {
+            if(unstaked > 0) {
                 poolRewarder.stakeFor(unstaked, recipient);
             }
         }
@@ -192,18 +188,12 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         return true;
     }
 
-    function allowance(
-        address owner,
-        address spender
-    ) external view override returns (uint256) {
+    function allowance(address owner, address spender) external view override returns (uint256) {
         return _allowed[owner][spender];
     }
 
-    function increaseAllowance(
-        address spender,
-        uint256 addedValue
-    ) external returns (bool) {
-        if (spender == address(0)) revert SpenderZeroAddress();
+    function increaseAllowance(address spender, uint256 addedValue) external returns (bool) {
+        if(spender == address(0)) revert SpenderZeroAddress();
         uint256 newAllowance = _allowed[msg.sender][spender] + addedValue;
         _allowed[msg.sender][spender] = newAllowance;
 
@@ -211,14 +201,10 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         return true;
     }
 
-    function decreaseAllowance(
-        address spender,
-        uint256 subtractedValue
-    ) external returns (bool) {
-        if (spender == address(0)) revert SpenderZeroAddress();
+    function decreaseAllowance(address spender, uint256 subtractedValue) external returns (bool) {
+        if(spender == address(0)) revert SpenderZeroAddress();
         uint256 currentAllowance = _allowed[msg.sender][spender];
-        if (currentAllowance < subtractedValue)
-            revert InsufficientAllowance(subtractedValue, currentAllowance);
+        if(currentAllowance < subtractedValue) revert InsufficientAllowance(subtractedValue, currentAllowance);
 
         uint256 newAllowance = currentAllowance - subtractedValue;
         _allowed[msg.sender][spender] = newAllowance;
@@ -227,11 +213,8 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         return true;
     }
 
-    function approve(
-        address spender,
-        uint256 amount
-    ) external override returns (bool) {
-        if (spender == address(0)) revert SpenderZeroAddress();
+    function approve(address spender, uint256 amount) external override returns (bool) {
+        if(spender == address(0)) revert SpenderZeroAddress();
         _allowed[msg.sender][spender] = amount;
 
         emit Approval(msg.sender, spender, amount);
@@ -239,23 +222,17 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         return true;
     }
 
-    function transferFrom(
-        address sender,
-        address recipient,
-        uint256 amount
-    ) external override nonReentrant returns (bool) {
-        if (_allowed[sender][msg.sender] < amount)
-            revert InsufficientAllowance(amount, _allowed[sender][msg.sender]);
+    function transferFrom(address sender, address recipient, uint256 amount) external override returns (bool) {
+        if(_allowed[sender][msg.sender] < amount) revert InsufficientAllowance(amount, _allowed[sender][msg.sender]);
 
-        if (recipient == address(0)) revert TransferToZeroAddress();
+        if(recipient == address(0)) revert TransferToZeroAddress();
 
-        if (recipient == address(this)) revert TransferToPoolAddress();
+        if(recipient == address(this)) revert TransferToPoolAddress();
 
         _accumulateDepositInterest(sender);
 
         (uint256 lockedAmount, uint256 transferrableAmount) = _getAmounts(sender);
-        if (amount > transferrableAmount)
-            revert TransferAmountExceedsBalance(amount, transferrableAmount);
+        if(amount > transferrableAmount) revert TransferAmountExceedsBalance(amount, transferrableAmount);
 
         _updateWithdrawn(sender, amount, lockedAmount);
 
@@ -266,9 +243,9 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         _deposited[recipient] += amount;
 
         // Handle rewards
-        if (address(poolRewarder) != address(0) && amount != 0) {
+        if(address(poolRewarder) != address(0) && amount != 0){
             uint256 unstaked = poolRewarder.withdrawFor(amount, sender);
-            if (unstaked > 0) {
+            if(unstaked > 0) {
                 poolRewarder.stakeFor(unstaked, recipient);
             }
         }
@@ -278,11 +255,12 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         return true;
     }
 
+
     /**
      * Deposits the amount
      * It updates user deposited balance, total deposited and rates
      **/
-    function deposit(uint256 _amount) public virtual {
+    function deposit(uint256 _amount) public virtual onlyWhitelistedAccounts{
         depositOnBehalf(_amount, msg.sender);
     }
 
@@ -290,11 +268,8 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
      * Deposits the amount on behalf of `_of` user.
      * It updates `_of` user deposited balance, total deposited and rates
      **/
-    function depositOnBehalf(
-        uint256 _amount,
-        address _of
-    ) public virtual nonReentrant {
-        if (_amount == 0) revert ZeroDepositAmount();
+    function depositOnBehalf(uint256 _amount, address _of) public virtual nonReentrant onlyWhitelistedAccounts {
+        if(_amount == 0) revert ZeroDepositAmount();
         require(_of != address(0), "Address zero");
         require(_of != address(this), "Cannot deposit on behalf of pool");
 
@@ -302,9 +277,8 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
 
         _accumulateDepositInterest(_of);
 
-        if (totalSupplyCap != 0) {
-            if (_deposited[address(this)] + _amount > totalSupplyCap)
-                revert TotalSupplyCapBreached();
+        if(totalSupplyCap != 0){
+            if(_deposited[address(this)] + _amount > totalSupplyCap) revert TotalSupplyCapBreached();
         }
 
         _transferToPool(msg.sender, _amount);
@@ -332,14 +306,12 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
      * Withdraws selected amount from the user deposits
      * @dev _amount the amount to be withdrawn
      **/
-    function withdraw(uint256 _amount) external nonReentrant {
+    function withdraw(uint256 _amount) external nonReentrant onlyWhitelistedAccounts {
+        if(_amount > IERC20(tokenAddress).balanceOf(address(this))) revert InsufficientPoolFunds();
+
         _accumulateDepositInterest(msg.sender);
-        _amount = Math.min(_amount, _deposited[msg.sender]);
 
-        if (_amount > IERC20(tokenAddress).balanceOf(address(this)))
-            revert InsufficientPoolFunds();
-
-        if (_amount > _deposited[address(this)]) revert BurnAmountExceedsBalance();
+        if(_amount > _deposited[address(this)]) revert BurnAmountExceedsBalance();
         // verified in "require" above
         unchecked {
             _deposited[address(this)] -= _amount;
@@ -364,8 +336,7 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
      * @dev It is only meant to be used by a SmartLoanDiamondProxy
      **/
     function borrow(uint256 _amount) public virtual canBorrow nonReentrant {
-        if (_amount > IERC20(tokenAddress).balanceOf(address(this)))
-            revert InsufficientPoolFunds();
+        if (_amount > IERC20(tokenAddress).balanceOf(address(this))) revert InsufficientPoolFunds();
 
         _accumulateBorrowingInterest(msg.sender);
 
@@ -387,7 +358,7 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
     function repay(uint256 amount) external nonReentrant {
         _accumulateBorrowingInterest(msg.sender);
 
-        if (amount > borrowed[msg.sender]) revert RepayingMoreThanWasBorrowed();
+        if(amount > borrowed[msg.sender]) revert RepayingMoreThanWasBorrowed();
         _transferToPool(msg.sender, amount);
 
         borrowed[msg.sender] -= amount;
@@ -410,15 +381,15 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         return borrowIndex.getIndexedValue(borrowed[_user], _user);
     }
 
-    function name() public pure virtual returns (string memory _name) {
+    function name() public virtual pure returns(string memory _name){
         _name = "";
     }
 
-    function symbol() public pure virtual returns (string memory _symbol) {
+    function symbol() public virtual pure returns(string memory _symbol){
         _symbol = "";
     }
 
-    function decimals() public view virtual returns (uint8) {
+    function decimals() public virtual view returns(uint8){
         return _decimals;
     }
 
@@ -429,6 +400,7 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
     function totalBorrowed() public view returns (uint256) {
         return getBorrowed(address(this));
     }
+
 
     // Calls the IPoolRewarder.getRewardsFor() that sends pending rewards to msg.sender
     function getRewards() external {
@@ -441,13 +413,8 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
     }
 
     // Returns max. acceptable pool utilisation after borrow action
-    function getMaxPoolUtilisationForBorrowing()
-        public
-        view
-        virtual
-        returns (uint256)
-    {
-        return 0.925e18;
+    function getMaxPoolUtilisationForBorrowing() virtual public view returns (uint256) {
+        return 0.9e18;
     }
 
     /**
@@ -470,8 +437,7 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
      * Returns the current interest rate for borrowings
      **/
     function getBorrowingRate() public view returns (uint256) {
-        return
-            ratesCalculator.calculateBorrowingRate(totalBorrowed(), totalSupply());
+        return ratesCalculator.calculateBorrowingRate(totalBorrowed(), totalSupply());
     }
 
     /**
@@ -490,15 +456,12 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
     /**
      * Recovers the surplus funds resultant from difference between deposit and borrowing rates
      **/
-    function recoverSurplus(
-        uint256 amount,
-        address account
-    ) public onlyOwner nonReentrant {
+    function recoverSurplus(uint256 amount, address account) public onlyOwner nonReentrant {
         uint256 balance = IERC20(tokenAddress).balanceOf(address(this));
         uint256 surplus = balance + totalBorrowed() - totalSupply();
 
-        if (amount > balance) revert InsufficientPoolFunds();
-        if (surplus < amount) revert InsufficientSurplus();
+        if(amount > balance) revert InsufficientPoolFunds();
+        if(surplus < amount) revert InsufficientSurplus();
 
         _transferFromPool(account, amount);
     }
@@ -506,7 +469,7 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
     /* ========== INTERNAL FUNCTIONS ========== */
 
     function _mint(address to, uint256 amount) internal {
-        if (to == address(0)) revert MintToAddressZero();
+        if(to == address(0)) revert MintToAddressZero();
 
         _deposited[to] += amount;
 
@@ -514,10 +477,9 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
     }
 
     function _burn(address account, uint256 amount) internal {
-        if (amount > _deposited[account]) revert BurnAmountExceedsBalance();
+        if(amount > _deposited[account]) revert BurnAmountExceedsBalance();
         (uint256 lockedAmount, uint256 transferrableAmount) = _getAmounts(account);
-        if (amount > transferrableAmount)
-            revert BurnAmountExceedsAvailableForUser();
+        if(amount > transferrableAmount) revert BurnAmountExceedsAvailableForUser();
 
         _updateWithdrawn(account, amount, lockedAmount);
 
@@ -529,32 +491,18 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         emit Transfer(account, address(0), amount);
     }
 
-    function _getAmounts(
-        address account
-    ) internal view returns (uint256 lockedAmount, uint256 transferrableAmount) {
+    function _getAmounts(address account) internal view returns (uint256 lockedAmount, uint256 transferrableAmount) {
         if (address(vestingDistributor) != address(0)) {
             lockedAmount = vestingDistributor.locked(account);
-            if (lockedAmount > 0) {
-                transferrableAmount =
-                    _deposited[account] -
-                    (lockedAmount - vestingDistributor.availableToWithdraw(account));
-            } else {
-                transferrableAmount = _deposited[account];
-            }
+            transferrableAmount = _deposited[account] - (lockedAmount - vestingDistributor.availableToWithdraw(account));
         } else {
             transferrableAmount = _deposited[account];
         }
     }
 
-    function _updateWithdrawn(
-        address account,
-        uint256 amount,
-        uint256 lockedAmount
-    ) internal {
+    function _updateWithdrawn(address account, uint256 amount, uint256 lockedAmount) internal {
         uint256 availableUnvested = _deposited[account] - lockedAmount;
-        if (
-            amount > availableUnvested && address(vestingDistributor) != address(0)
-        ) {
+        if (amount > availableUnvested && address(vestingDistributor) != address(0)) {
             vestingDistributor.updateWithdrawn(account, amount - availableUnvested);
         }
     }
@@ -562,13 +510,9 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
     function _updateRates() internal {
         uint256 _totalBorrowed = totalBorrowed();
         uint256 _totalSupply = totalSupply();
-        if (address(ratesCalculator) == address(0)) revert PoolFrozen();
-        depositIndex.setRate(
-            ratesCalculator.calculateDepositRate(_totalBorrowed, _totalSupply)
-        );
-        borrowIndex.setRate(
-            ratesCalculator.calculateBorrowingRate(_totalBorrowed, _totalSupply)
-        );
+        if(address(ratesCalculator) == address(0)) revert PoolFrozen();
+        depositIndex.setRate(ratesCalculator.calculateDepositRate(_totalBorrowed, _totalSupply));
+        borrowIndex.setRate(ratesCalculator.calculateBorrowingRate(_totalBorrowed, _totalSupply));
     }
 
     function _accumulateDepositInterest(address user) internal {
@@ -598,16 +542,11 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
     /* ========== MODIFIERS ========== */
 
     modifier canBorrow() {
-        if (address(borrowersRegistry) == address(0))
-            revert BorrowersRegistryNotConfigured();
-        if (!borrowersRegistry.canBorrow(msg.sender))
-            revert NotAuthorizedToBorrow();
-        if (totalSupply() == 0) revert InsufficientPoolFunds();
+        if(address(borrowersRegistry) == address(0)) revert BorrowersRegistryNotConfigured();
+        if(!borrowersRegistry.canBorrow(msg.sender)) revert NotAuthorizedToBorrow();
+        if(totalSupply() == 0) revert InsufficientPoolFunds();
         _;
-        if (
-            (totalBorrowed() * 1e18) / totalSupply() >
-            getMaxPoolUtilisationForBorrowing()
-        ) revert MaxPoolUtilisationBreached();
+        if((totalBorrowed() * 1e18) / totalSupply() > getMaxPoolUtilisationForBorrowing()) revert MaxPoolUtilisationBreached();
     }
 
     /* ========== EVENTS ========== */
@@ -627,12 +566,7 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
      * @param value the amount deposited
      * @param timestamp of the deposit
      **/
-    event DepositOnBehalfOf(
-        address indexed user,
-        address indexed _of,
-        uint256 value,
-        uint256 timestamp
-    );
+    event DepositOnBehalfOf(address indexed user, address indexed _of, uint256 value, uint256 timestamp);
 
     /**
      * @dev emitted after the user withdraws funds
@@ -664,42 +598,35 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
      * @param value the amount that interest is calculated from
      * @param timestamp of the interest accumulation
      **/
-    event InterestCollected(
-        address indexed user,
-        uint256 value,
-        uint256 timestamp
-    );
+    event InterestCollected(address indexed user, uint256 value, uint256 timestamp);
 
     /**
-     * @dev emitted after changing borrowers registry
-     * @param registry an address of the newly set borrowers registry
-     * @param timestamp of the borrowers registry change
-     **/
+    * @dev emitted after changing borrowers registry
+    * @param registry an address of the newly set borrowers registry
+    * @param timestamp of the borrowers registry change
+    **/
     event BorrowersRegistryChanged(address indexed registry, uint256 timestamp);
 
     /**
-     * @dev emitted after changing rates calculator
-     * @param calculator an address of the newly set rates calculator
-     * @param timestamp of the borrowers registry change
-     **/
+    * @dev emitted after changing rates calculator
+    * @param calculator an address of the newly set rates calculator
+    * @param timestamp of the borrowers registry change
+    **/
     event RatesCalculatorChanged(address indexed calculator, uint256 timestamp);
 
     /**
-     * @dev emitted after changing pool rewarder
-     * @param poolRewarder an address of the newly set pool rewarder
-     * @param timestamp of the pool rewarder change
-     **/
+    * @dev emitted after changing pool rewarder
+    * @param poolRewarder an address of the newly set pool rewarder
+    * @param timestamp of the pool rewarder change
+    **/
     event PoolRewarderChanged(address indexed poolRewarder, uint256 timestamp);
 
     /**
-     * @dev emitted after changing vesting distributor
-     * @param distributor an address of the newly set distributor
-     * @param timestamp of the distributor change
-     **/
-    event VestingDistributorChanged(
-        address indexed distributor,
-        uint256 timestamp
-    );
+    * @dev emitted after changing vesting distributor
+    * @param distributor an address of the newly set distributor
+    * @param timestamp of the distributor change
+    **/
+    event VestingDistributorChanged(address indexed distributor, uint256 timestamp);
 
     /* ========== ERRORS ========== */
 
@@ -722,26 +649,26 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
     // @param target target address that must be a contract
     error NotAContract(address target);
 
-    // ERC20: Spender cannot be a zero address
+    //  ERC20: Spender cannot be a zero address
     error SpenderZeroAddress();
 
-    // ERC20: cannot transfer to the zero address
+    //  ERC20: cannot transfer to the zero address
     error TransferToZeroAddress();
 
-    // ERC20: cannot transfer to the pool address
+    //  ERC20: cannot transfer to the pool address
     error TransferToPoolAddress();
 
-    // ERC20: transfer amount (`amount`) exceeds balance (`balance`)
+    //  ERC20: transfer amount (`amount`) exceeds balance (`balance`)
     /// @param amount transfer amount
     /// @param balance available balance
     error TransferAmountExceedsBalance(uint256 amount, uint256 balance);
 
-    // ERC20: requested transfer amount (`requested`) exceeds current allowance (`allowance`)
+    //  ERC20: requested transfer amount (`requested`) exceeds current allowance (`allowance`)
     /// @param requested requested transfer amount
     /// @param allowance current allowance
     error InsufficientAllowance(uint256 requested, uint256 allowance);
 
-    // This deposit operation would result in a breach of the totalSupplyCap
+    //  This deposit operation would result in a breach of the totalSupplyCap
     error TotalSupplyCapBreached();
 
     // The deposit amount must be > 0

@@ -1,40 +1,69 @@
 # Agentic Audit Brief: Paraluni
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 2 (0 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Paraluni (`paraluni`)
 - Website: [https://paraluni.org](https://paraluni.org)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:42.107Z
-- Pipeline run: v2-2026-07-02-1ba3fd
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: bsc
 - Contract surface: 9 unique implementations (9 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $340,439.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Dexs. Structurally: 9 project-authored contract(s) across 1 chain(s); 1 ERC20 token; built on openzeppelin.
+No contract logic was present for Paraluni in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Its contracts share 2 common project-authored base contract(s) (paraproxyadminstorage, proxy). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 9; live-surface contracts included: 9 (9 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/9 (0.0%)
-- Deployed-live implementations: 9 of 9 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/9
-- Verified + Unaudited implementations: 9
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 9 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 9
@@ -59,17 +88,17 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 ### ⚠️ Verified + Unaudited (9)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AirDrop | unknown | bsc | n/a | [`0xf50adb...c1ba60`](./contracts/bsc-56/0xf50adb06c8a479cbad42ed115dbc06976ac1ba60/) | ⚠️ Unaudited |
-| FeeDistributor | unknown | bsc | n/a | [`0x49a6fd...ba3075`](./contracts/bsc-56/0x49a6fd247022e073acd740225304270274ba3075/) | ⚠️ Unaudited |
-| MultiSigWallet | unknown | bsc | n/a | [`0x55dd24...161743`](./contracts/bsc-56/0x55dd249e2cf23adc885e19248d711ccba4161743/) | ⚠️ Unaudited |
-| ParaProxy | unknown | bsc | n/a | [`0x633fa7...32b4b4`](./contracts/bsc-56/0x633fa755a83b015cccdc451f82c57ea0bd32b4b4/) | ⚠️ Unaudited |
-| ParaRouter | unknown | bsc | n/a | [`0x48bb5f...389797`](./contracts/bsc-56/0x48bb5f07e78f32ac7039366533d620c72c389797/) | ⚠️ Unaudited |
-| ParaRouterPeriphery | unknown | bsc | n/a | [`0x7958b0...db886b`](./contracts/bsc-56/0x7958b0ee6a42b6ad8be40b3db6aa4dc72edb886b/) | ⚠️ Unaudited |
-| ParaToken | unknown | bsc | n/a | [`0x43feac...b91726`](./contracts/bsc-56/0x43feaca246392c23ee5a0db618fcd81a74b91726/) | ⚠️ Unaudited |
-| proxyTo | unknown | bsc | n/a | [`0xe1d3b7...2bcaed`](./contracts/bsc-56/0xe1d3b7ecf15bb20bc2a40e7a402f67eb9f2bcaed/) | ⚠️ Unaudited |
-| Timelock | unknown | bsc | n/a | [`0xc19eca...98969f`](./contracts/bsc-56/0xc19ecae6348b07014fdba912fa53f23f4798969f/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AirDrop | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159369 | `0xf50adb...c1ba60` | ⚠️ Unaudited |
+| FeeDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-159371 | `0x49a6fd...ba3075` | ⚠️ Unaudited |
+| MultiSigWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159365 | `0x55dd24...161743` | ⚠️ Unaudited |
+| ParaProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-159370 | `0x633fa7...32b4b4` | ⚠️ Unaudited |
+| ParaRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159364 | `0x48bb5f...389797` | ⚠️ Unaudited |
+| ParaRouterPeriphery | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159366 | `0x7958b0...db886b` | ⚠️ Unaudited |
+| ParaToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159363 | `0x43feac...b91726` | ⚠️ Unaudited |
+| proxyTo | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159368 | `0xe1d3b7...2bcaed` | ⚠️ Unaudited |
+| Timelock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-159367 | `0xc19eca...98969f` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,9 +120,27 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [PeckShield-Audit-Report-Paraluni-v1.0.pdf (also discovered via alternate URL)](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Paraluni-v1.0.pdf) | PeckShield | Audit | 2022-04 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [PeckShield-Audit-Report-Paraluni-v1.0.pdf (also discovered via alternate URL)](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Paraluni-v1.0.pdf) | PeckShield | Audit | 2022-04 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [21434] PeckShield-Audit-Report-Paraluni-v1.0.pdf — no match: Contracts extracted from findings targets and mentions; no explicit scope table found.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| PeckShield-Audit-Report-Paraluni-v1.0.pdf | MasterChef | unmatched — not counted | — | Target in findings PVE-001, PVE-003, PVE-005, PVE-006, PVE-009, PVE-010 | no |
+| PeckShield-Audit-Report-Paraluni-v1.0.pdf | ParaTokenNew | unmatched — not counted | — | Target in finding PVE-002 | no |
+| PeckShield-Audit-Report-Paraluni-v1.0.pdf | ParaRouter | unmatched — not counted | — | Target in findings PVE-004, PVE-008 | no |
+| PeckShield-Audit-Report-Paraluni-v1.0.pdf | ParaSupply | unmatched — not counted | — | Target in finding PVE-011 | no |
+| PeckShield-Audit-Report-Paraluni-v1.0.pdf | MasterChefPeriphery | unmatched — not counted | — | Mentioned in finding PVE-005 and PVE-006 as sharing issues | no |
 
 ## Coverage Gaps
 
@@ -105,10 +152,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 9 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 9 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -116,7 +163,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 5 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1
 - Match method counts: n/a
 
 Zero-match audit list:

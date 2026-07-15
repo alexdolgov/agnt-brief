@@ -1,0 +1,38 @@
+{
+  "component": "WrappedWbtc",
+  "main_contract": "WrappedWbtc",
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WrappedWbtc\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe065bc161b90c9c4bba2de7f1e194b70a3267c47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391398"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf53bb90bd20c2a3eb3eb01e8233130a69db58324",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391404"
+    }
+  ]
+}

@@ -1,12 +1,4 @@
 /**
- *Submitted for verification at BscScan.com on 2021-08-20
-*/
-
-/**
- *Submitted for verification at Etherscan.io on 2020-07-03
-*/
-
-/**
  *Submitted for verification at Etherscan.io on 2018-02-05
 */
 

@@ -1,18 +1,31 @@
 {
   "component": "WildcatArchController",
   "main_contract": "WildcatArchController",
-  "source_file_count": 50,
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WildcatArchController\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2024-08-wildcat",
+    "https://github.com/code-423n4/2024-08-wildcat/blob/main/4naly3er-report.md"
+  ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x3556d0497180afb37e6eaebd5d17309159586862",
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xdb2e0de97d6d96aa56754635704a4273e0f348ae",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404953"
     }
   ]
 }

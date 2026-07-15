@@ -1,26 +1,38 @@
 {
   "component": "SwapFlashLoan-4",
   "main_contract": "SwapFlashLoan",
+  "source_entry_count": 26,
   "source_file_count": 26,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SwapFlashLoan-4\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xe27bff97ce92c3e1ff7aa9f86781fdd6d48f5ee9",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9dd329f5411466d9e0c488ff72519ca9fef0cb40",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400132"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xf44938b0125a6662f9536281ad2cd6c499f22004",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa067668661c84476afcdc6fa5d758c4c01c34352",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400133"
     }
   ]
 }

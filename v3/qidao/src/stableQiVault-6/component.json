@@ -1,42 +1,38 @@
 {
   "component": "stableQiVault-6",
   "main_contract": "stableQiVault",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/stableQiVault-6\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x3bcbac61456c9c9582132d1493a00e318ea9c122",
+      "address": "0x169d47043cc0c94c39fa327941c56cb0344dc508",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398158"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x593bf423e16df99b71879699013dfa936f4b3eee",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb5b31e6a13ae856bc30b3c76b16edad9f432b54f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xd371281896f2f5f7a2c65f49d23a2b6ecfd594f3",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xe47ca047cb7e6a9ade9405ca68077d63424f34ec",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398189"
     }
   ]
 }

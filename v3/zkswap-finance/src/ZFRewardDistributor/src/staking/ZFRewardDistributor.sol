@@ -6,6 +6,7 @@ pragma solidity 0.8.23;
 
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {SafeERC20}  from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+
 // This contract is responsible for distributing rewards to stakers in the ZF protocol.
 contract ZFRewardDistributor {
     using SafeERC20 for IERC20;
@@ -19,12 +20,6 @@ contract ZFRewardDistributor {
     event OwnerTransferred(address indexed previousOwner, address indexed newOwner);
     event SetDistributor(address indexed previousDistributor, address indexed newDistributor);
 
-    modifier onlyStakingPoolOrOwner() {
-        require(msg.sender == owner || msg.sender == stakingPoolAddress, 
-        "Only the staking pool or owner can call this function");
-        _;
-    }
-
     // Constructor to set the owner of the contract
     constructor(
         address _rewardTokenAddress,
@@ -34,12 +29,11 @@ contract ZFRewardDistributor {
         stakingPoolAddress = _stakingPoolAddress;
         owner = msg.sender;
 
-        // _giveAllowance();
     }
     
     // Function to distribute rewards to a staker
-    function distributeRewards(uint256 amount) external onlyStakingPoolOrOwner {
-        
+    function distributeRewards(uint256 amount) external {
+        require(msg.sender == stakingPoolAddress, "Only the staking pool can distribute rewards");
         uint256 balance = IERC20(rewardTokenAddress).balanceOf(address(this));
         require(balance >= amount, "Insufficient reward token balance");
 
@@ -83,6 +77,11 @@ contract ZFRewardDistributor {
         if (stakingPoolAddress != address(0)) {
             IERC20(rewardTokenAddress).approve(stakingPoolAddress, 0);
         }
+    }
+
+    function recoverUnusedTokens(address tokenAddress, uint256 amount) external {
+        require(msg.sender == owner, "recoverUnusedTokens:Only the owner can recover unused tokens");
+        IERC20(tokenAddress).safeTransfer(owner, amount);
     }
 
 }

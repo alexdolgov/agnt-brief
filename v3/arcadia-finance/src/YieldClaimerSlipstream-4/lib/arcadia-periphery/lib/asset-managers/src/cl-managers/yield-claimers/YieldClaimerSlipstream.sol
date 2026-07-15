@@ -2,7 +2,7 @@
  * Created by Pragma Labs
  * SPDX-License-Identifier: BUSL-1.1
  */
-pragma solidity ^0.8.30;
+pragma solidity ^0.8.34;
 
 import { AbstractBase } from "../base/AbstractBase.sol";
 import { PositionState } from "../state/PositionState.sol";
@@ -14,6 +14,13 @@ import { YieldClaimer } from "./YieldClaimer.sol";
  * @author Pragma Labs
  */
 contract YieldClaimerSlipstream is YieldClaimer, Slipstream {
+    /* //////////////////////////////////////////////////////////////
+                                CONSTANTS
+    ////////////////////////////////////////////////////////////// */
+
+    // The version of the Asset Manager.
+    string public constant VERSION = "2.1.0";
+
     /* //////////////////////////////////////////////////////////////
                             CONSTRUCTOR
     ////////////////////////////////////////////////////////////// */

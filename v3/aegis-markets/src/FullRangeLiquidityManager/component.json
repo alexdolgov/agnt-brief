@@ -1,26 +1,28 @@
 {
   "component": "FullRangeLiquidityManager",
   "main_contract": "FullRangeLiquidityManager",
-  "source_file_count": 93,
-  "deployment_count": 2,
+  "source_entry_count": 96,
+  "source_file_count": 96,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FullRangeLiquidityManager\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-130",
       "chain_id": 130,
-      "address": "0x6da0c0a6153f3c161d7fb260b5f040d5530fe365",
+      "address": "0xa7b3e2306a0b46dbde3b533c4e2c3be6a24352a3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-130",
-      "chain_id": 130,
-      "address": "0xa7ce35e886e58926ad0c149f4cc558e27d458a2c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390502"
     }
   ]
 }

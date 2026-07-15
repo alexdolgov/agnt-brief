@@ -4,7 +4,7 @@ pragma solidity ^0.8.24;
 
 import { Roles } from "src/libs/Roles.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
-import { SystemSecurity, AutopilotErrors, ISystemSecurity } from "src/security/SystemSecurity.sol";
+import { SystemSecurity, Errors, ISystemSecurity } from "src/security/SystemSecurity.sol";
 import { ISequencerChecker } from "src/interfaces/security/ISequencerChecker.sol";
 import { ISystemRegistryL2 } from "src/interfaces/ISystemRegistryL2.sol";
 
@@ -32,7 +32,7 @@ contract SystemSecurityL2 is ISystemSecurity, SystemSecurity {
 
         // Check sequencer controlled system pause, ensure that we are not overriding the sequencer return
         ISequencerChecker checker = ISystemRegistryL2(address(systemRegistry)).sequencerChecker();
-        AutopilotErrors.verifyNotZero(address(checker), "checker");
+        Errors.verifyNotZero(address(checker), "checker");
         bool sequencerStatus = checker.checkSequencerUptimeFeed();
 
         // Sequencer down, override false

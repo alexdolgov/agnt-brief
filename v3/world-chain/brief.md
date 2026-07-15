@@ -1,118 +1,160 @@
 # Agentic Audit Brief: World Chain
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 2 (0 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: World Chain (`world-chain`)
 - Website: [https://world.org/](https://world.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:13.055Z
-- Pipeline run: v2-2026-07-02-1ba3fd
-- Chains: ethereum
-- Contract surface: 38 unique implementations (38 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: ethereum, sepolia
+- Contract surface: 113 unique implementations (114 raw deployments)
+- Coverage basis: 0/16 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $381,453,262.14
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Canonical Bridge. Structurally: 36 project-authored contract(s) across 1 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for World Chain. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 20 common project-authored base contract(s) (ownable2step, etherpaymentfallback, singleton). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 17 contract row(s) across ethereum, sepolia. Structural roles: 15 core, 1 infra, 1 supporting. 11 row(s) use upgradeable patterns.
 
-## Fork Lineage
+## Logic Topography
 
-This project reuses audited code from **Mode Bridge** (`mode-bridge`) in the DeputyGuardianModule, PermissionedDisputeGameV2 subsystem.
-12 audits inherited from `mode-bridge`, scoped to that subsystem.
+- Exact-run contract rows: 17
+- Structural roles: core (15), infra (1), supporting (1)
+- Contract kinds: contract (17)
+- Detected standards: erc1967proxy (9), ownable (1)
+- Frameworks: openzeppelin (13), openzeppelin-upgradeable (10), solmate (10), solady (1)
+- Upgradeable-pattern rows: 11
 
-Total inherited audits: 12. Inherited coverage reflects forked/shared code audited by the origin project — it is not a direct audit of this project.
+## Fork Analysis
+
+0 of 20 contracts are derived from known codebases. 20 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x6ab077...a6300a`, chain 1)
+- UnnamedContract (`0x9c065e...1be277`, chain 1)
+- UnnamedContract (`0xd4d7a5...327099`, chain 1)
+- UnnamedContract (`0xd9db27...709552`, chain 1)
+- DisputeGameFactory (`0x069c4c...2ec5ea`, chain 1)
+- GnosisSafe (`0xa4fb12...dbbf1d`, chain 1)
+- GnosisSafeProxyFactory (`0xa6b71e...896ab2`, chain 1)
+- L1CrossDomainMessenger (`0xf931a8...7e710a`, chain 1)
+- L1ERC721Bridge (`0x1df436...90a8e9`, chain 1)
+- L1OpUSDCBridgeAdapter (`0x153a69...84b2db`, chain 1)
+- L1StandardBridge (`0x470458...001113`, chain 1)
+- L2OutputOracle (`0x19a6d1...343c5d`, chain 1)
+- MIPS (`0x16e83c...344ce4`, chain 1)
+- OptimismMintableERC20Factory (`0x82cb52...90dd0e`, chain 1)
+- OptimismPortal2 (`0xd5ec14...beea6c`, chain 1)
+- PermissionedDisputeGame (`0x48cf98...97b03e`, chain 1)
+- ProtocolVersions (`0x8eef04...f70973`, chain 1)
+- Proxy (`0x95703e...f04a4c`, chain 1)
+- Proxy (`0xf9adf7...bd061f`, chain 1)
+- ProxyAdmin (`0xd7405b...2f872d`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 38; live-surface contracts included: 38 (38 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 17; live-surface contracts included: 17 (16 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 19/44 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 1/38 (2.6%)
-- Deployed-live implementations: 38 of 38 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 1/38
-- Verified + Unaudited implementations: 37
+- Coverage of address-book-owned deployed-live implementations: 0/16 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 19 own, 15 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 79 discovered implementations excluded (5 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 15
+- Deployed-live implementations: 19 of 113 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/16
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 38
-- Raw deployments: 38
-- Audits discovered: 14 (2 direct, 12 inherited from forked code)
-- Scoreable audits (matched contracts): 12
+- Unverified implementations: 3
+- Unique implementations: 113
+- Raw deployments: 114
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025-10 (fresh)
-- Audit staleness (calendar age): 4 fresh, 2 aging, 4 stale, 4 unknown
-- Coverage code basis (deployed vs audited code): 1 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Latest audit: 2023-07 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| Halborn | Tier 2 | 1 | 2.6% | 2025-01 |
-| LLM | Tier 2 | 1 | 2.6% | 2025-08 |
-| Solo Review | Tier 2 | 1 | 2.6% | 2024-05 |
-| SSC | Tier 2 | 1 | 2.6% | 2025-01 |
-| unknown | Tier 2 | 1 | 2.6% | 2025-10 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| DeputyGuardianModule | unknown | ethereum | n/a | [`0x5dc91d...e4d2a8`](./contracts/ethereum-1/0x5dc91d01290af474ce21de14c17335a6dee4d2a8/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (37)
+### ⚠️ Verified + Unaudited (38)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AddressManager | unknown | ethereum | n/a | [`0x589109...9146a8`](./contracts/ethereum-1/0x5891090d5085679714cb0e62f74950a3c19146a8/) | ⚠️ Unaudited |
-| AnchorStateRegistry | unknown | ethereum | n/a | [`0x1325c4...73c0cb`](./contracts/ethereum-1/0x1325c4966d17038c5592fb38416aee85ee73c0cb/) | ⚠️ Unaudited |
-| DelayedWETH | unknown | ethereum | n/a | [`0x8ec111...98449a`](./contracts/ethereum-1/0x8ec1111f67dad6b6a93b3f42dfbc92d81c98449a/) | ⚠️ Unaudited |
-| DisputeGameFactory | unknown | ethereum | n/a | [`0x069c4c...2ec5ea`](./contracts/ethereum-1/0x069c4c579671f8c120b1327a73217d01ea2ec5ea/) | ⚠️ Unaudited |
-| EntryPoint | unknown | ethereum | n/a | [`0x000000...7da032`](./contracts/ethereum-1/0x0000000071727de22e5e9d8baf0edac6f37da032/) | ⚠️ Unaudited |
-| GnosisSafe | unknown | ethereum | n/a | [`0xa4fb12...dbbf1d`](./contracts/ethereum-1/0xa4fb12d15eb85dc9284a7df0adbc8b696edbbf1d/) | ⚠️ Unaudited |
-| GnosisSafeProxyFactory | unknown | ethereum | n/a | [`0xa6b71e...896ab2`](./contracts/ethereum-1/0xa6b71e26c5e0845f74c812102ca7114b6a896ab2/) | ⚠️ Unaudited |
-| L1CrossDomainMessenger | unknown | ethereum | n/a | [`0xf931a8...7e710a`](./contracts/ethereum-1/0xf931a81d18b1766d15695ffc7c1920a62b7e710a/) | ⚠️ Unaudited |
-| L1ERC721Bridge | unknown | ethereum | n/a | [`0x1df436...90a8e9`](./contracts/ethereum-1/0x1df436afdb2fbb40f1fe8bed4fc89a0d0990a8e9/) | ⚠️ Unaudited |
-| L1OpUSDCBridgeAdapter | unknown | ethereum | n/a | [`0x153a69...84b2db`](./contracts/ethereum-1/0x153a69e4bb6fedbbaaf463cb982416316c84b2db/) | ⚠️ Unaudited |
-| L1StandardBridge | unknown | ethereum | n/a | [`0x470458...001113`](./contracts/ethereum-1/0x470458c91978d2d929704489ad730dc3e3001113/) | ⚠️ Unaudited |
-| L2OutputOracle | unknown | ethereum | n/a | [`0x19a6d1...343c5d`](./contracts/ethereum-1/0x19a6d1e9034596196295cf148509796978343c5d/) | ⚠️ Unaudited |
-| LivenessGuard | unknown | ethereum | n/a | [`0x244243...d14a25`](./contracts/ethereum-1/0x24424336f04440b1c28685a38303ac33c9d14a25/) | ⚠️ Unaudited |
-| LivenessModule | unknown | ethereum | n/a | [`0x045409...c8a748`](./contracts/ethereum-1/0x0454092516c9a4d636d3cafa1e82161376c8a748/) | ⚠️ Unaudited |
-| MIPS | unknown | ethereum | n/a | [`0x16e83c...344ce4`](./contracts/ethereum-1/0x16e83ce5ce29bf90ad9da06d2fe6a15d5f344ce4/) | ⚠️ Unaudited |
-| OpStateBridge | unknown | ethereum | n/a | [`0x093972...ad3abb`](./contracts/ethereum-1/0x0939726264f2667429ef68e2b3734ecfbbad3abb/) | ⚠️ Unaudited |
-| OptimismMintableERC20Factory | unknown | ethereum | n/a | [`0x82cb52...90dd0e`](./contracts/ethereum-1/0x82cb528466cf22412d89bdbe9bcf04856790dd0e/) | ⚠️ Unaudited |
-| OptimismPortal2 | unknown | ethereum | n/a | [`0xd5ec14...beea6c`](./contracts/ethereum-1/0xd5ec14a83b7d95be1e2ac12523e2dee12cbeea6c/) | ⚠️ Unaudited |
-| Pairing | unknown | ethereum | n/a | [`0x57f928...01f611`](./contracts/ethereum-1/0x57f928158c3ee7cdad1e4d8642503c4d0201f611/) | ⚠️ Unaudited |
-| PermissionedDisputeGame | unknown | ethereum | n/a | [`0x48cf98...97b03e`](./contracts/ethereum-1/0x48cf980849a7eea03180f7dea4e21c112097b03e/) | ⚠️ Unaudited |
-| PolygonStateBridge | unknown | ethereum | n/a | [`0x76db75...bb766f`](./contracts/ethereum-1/0x76db75dc752305e2debd44c479680352f3bb766f/) | ⚠️ Unaudited |
-| PreimageOracle | unknown | ethereum | n/a | [`0x922401...858854`](./contracts/ethereum-1/0x92240135b46fc1142da181f550ae8f595b858854/) | ⚠️ Unaudited |
-| ProtocolVersions | unknown | ethereum | n/a | [`0x8eef04...f70973`](./contracts/ethereum-1/0x8eef04eef96fef1050702453f75f0fc4f8f70973/) | ⚠️ Unaudited |
-| Proxy | unknown | ethereum | n/a | [`0x95703e...f04a4c`](./contracts/ethereum-1/0x95703e0982140d16f8eba6d158fccede42f04a4c/) | ⚠️ Unaudited |
-| Proxy | unknown | ethereum | n/a | [`0xf9adf7...bd061f`](./contracts/ethereum-1/0xf9adf7c9502c5c60352c20a4d22683422dbd061f/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0xd7405b...2f872d`](./contracts/ethereum-1/0xd7405be7f3e63b094af6c7c23d5ee33fd82f872d/) | ⚠️ Unaudited |
-| Safe4337Module | unknown | ethereum | n/a | [`0x75cf11...d5c226`](./contracts/ethereum-1/0x75cf11467937ce3f2f357ce24ffc3dbf8fd5c226/) | ⚠️ Unaudited |
-| SafeL2 | unknown | ethereum | n/a | [`0x29fcb4...00c762`](./contracts/ethereum-1/0x29fcb43b46531bca003ddc8fcb67ffe91900c762/) | ⚠️ Unaudited |
-| SafeProxyFactory | unknown | ethereum | n/a | [`0x4e1dcf...20ec67`](./contracts/ethereum-1/0x4e1dcf7ad4e460cfd30791ccc4f9c8a4f820ec67/) | ⚠️ Unaudited |
-| SemaphoreVerifier | unknown | ethereum | n/a | [`0x443ad7...28abee`](./contracts/ethereum-1/0x443ad7acf39baa104b2e70fa5cf6fe32cc28abee/) | ⚠️ Unaudited |
-| StateBridge | unknown | ethereum | n/a | [`0x86d26e...70511a`](./contracts/ethereum-1/0x86d26ed31556ea7694bd0cc4e674d7526f70511a/) | ⚠️ Unaudited |
-| SystemConfig | unknown | ethereum | n/a | [`0x33a032...e5a314`](./contracts/ethereum-1/0x33a032ec93ec0c492ec4bf0b30d5f51986e5a314/) | ⚠️ Unaudited |
-| Verifier | unknown | ethereum | n/a | [`0x03ad26...db6c4d`](./contracts/ethereum-1/0x03ad26786469c1f12595b0309d151fe928db6c4d/) | ⚠️ Unaudited |
-| VerifierLookupTable | unknown | ethereum | n/a | [`0x0af990...102fa1`](./contracts/ethereum-1/0x0af990389fc2007cfb31855d6f7dfc383f102fa1/) | ⚠️ Unaudited |
-| WorldIDIdentityManagerImplV1 | unknown | ethereum | n/a | [`0x2ad412...6132f8`](./contracts/ethereum-1/0x2ad412a1df96434eed0779d2db4a8694a06132f8/) | ⚠️ Unaudited |
-| WorldIDIdentityManagerImplV2 | unknown | ethereum | n/a | [`0x521e8f...fdf8bd`](./contracts/ethereum-1/0x521e8fb3a32ea44237dc8b1e506dd78accfdf8bd/) | ⚠️ Unaudited |
-| WorldIDRouterImplV1 | unknown | ethereum | n/a | [`0x163b09...732432`](./contracts/ethereum-1/0x163b09b4fe21177c455d850bd815b6d583732432/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AddressManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x589109...9146a8` | ⚠️ Unaudited |
+| AnchorStateRegistry | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x1325c4...73c0cb` | ⚠️ Unaudited |
+| DelayedWETH | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x8ec111...98449a` | ⚠️ Unaudited |
+| DeputyGuardianModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5dc91d...e4d2a8` | ⚠️ Unaudited |
+| DisputeGameFactory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262160 | `0x069c4c...2ec5ea` | ⚠️ Unaudited |
+| EntryPoint | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x000000...7da032` | ⚠️ Unaudited |
+| GnosisSafe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262162 | 2 deployments: ethereum `0xa4fb12...dbbf1d`; ethereum `0xd9db27...709552` | ⚠️ Unaudited |
+| GnosisSafeProxyFactory | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262131 | `0xa6b71e...896ab2` | ⚠️ Unaudited |
+| L1CrossDomainMessenger | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262161 | `0xf931a8...7e710a` | ⚠️ Unaudited |
+| L1ERC721Bridge | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262156 | `0x1df436...90a8e9` | ⚠️ Unaudited |
+| L1OpUSDCBridgeAdapter | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262154 | `0x153a69...84b2db` | ⚠️ Unaudited |
+| L1StandardBridge | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262153 | `0x470458...001113` | ⚠️ Unaudited |
+| L2OutputOracle | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262155 | `0x19a6d1...343c5d` | ⚠️ Unaudited |
+| LivenessGuard | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x244243...d14a25` | ⚠️ Unaudited |
+| LivenessModule | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x045409...c8a748` | ⚠️ Unaudited |
+| MIPS | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262122 | `0x16e83c...344ce4` | ⚠️ Unaudited |
+| OpStateBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x093972...ad3abb` | ⚠️ Unaudited |
+| OptimismMintableERC20Factory | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262157 | `0x82cb52...90dd0e` | ⚠️ Unaudited |
+| OptimismPortal2 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262159 | `0xd5ec14...beea6c` | ⚠️ Unaudited |
+| Pairing | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x57f928...01f611` | ⚠️ Unaudited |
+| PermissionedDisputeGame | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262125 | `0x48cf98...97b03e` | ⚠️ Unaudited |
+| PolygonStateBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x76db75...bb766f` | ⚠️ Unaudited |
+| PreimageOracle | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | ethereum | unit-262129 | `0x922401...858854` | ⚠️ Unaudited |
+| ProtocolVersions | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262158 | `0x8eef04...f70973` | ⚠️ Unaudited |
+| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262163 | `0x95703e...f04a4c` | ⚠️ Unaudited |
+| Proxy | unknown | project_anchor | own_supporting | 1 | ethereum | unit-262152 | `0xf9adf7...bd061f` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262134 | `0xd7405b...2f872d` | ⚠️ Unaudited |
+| Safe4337Module | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x75cf11...d5c226` | ⚠️ Unaudited |
+| SafeL2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x29fcb4...00c762` | ⚠️ Unaudited |
+| SafeProxyFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4e1dcf...20ec67` | ⚠️ Unaudited |
+| SemaphoreVerifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x443ad7...28abee` | ⚠️ Unaudited |
+| StateBridge | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x86d26e...70511a` | ⚠️ Unaudited |
+| SystemConfig | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x33a032...e5a314` | ⚠️ Unaudited |
+| Verifier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x03ad26...db6c4d` | ⚠️ Unaudited |
+| VerifierLookupTable | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0af990...102fa1` | ⚠️ Unaudited |
+| WorldIDIdentityManagerImplV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2ad412...6132f8` | ⚠️ Unaudited |
+| WorldIDIdentityManagerImplV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x521e8f...fdf8bd` | ⚠️ Unaudited |
+| WorldIDRouterImplV1 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x163b09...732432` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -126,45 +168,167 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (75)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x03c705...70cfa3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x053956...ad4295` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x091ad9...f36cf6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0a22c0...92dab9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0f3ff4...66b96d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x10158d...ff244c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1333d5...b0dd07` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x14a028...b66ce0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x17b354...39a278` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2c1ca1...4eb162` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2cfc85...863003` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x358050...c5b493` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x38c68a...438192` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3a00fe...42e710` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000006` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000007` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...00000f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000010` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000011` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000012` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000014` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000015` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000016` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000017` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000018` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000019` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...00001a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000020` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000021` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000042` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4f4b8a...311663` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x57b930...e0330d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262128 | `0x6ab077...a6300a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x70410a...437feb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7768c8...5659a9` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x78ce36...53524b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x79a024...cd24d1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7a5028...5ea25a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7dd5b6...03c6f9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x859dbe...55be5d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x866087...d4b322` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8b52da...296c29` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x8bb294...a97fa0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x8d9800...ad09b7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x945185...407837` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262130 | `0x9c065e...1be277` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9cc547...a12787` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9ebddc...ec9de3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa9bcf5...e437b7` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xae3f20...6374c5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc2d270...e36e18` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xc8886f...48300e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-262133 | `0xd4d7a5...327099` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd7df54...b3f8de` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0xdd9167...e1ae6c` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0xe1d72a...8d64a6` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe61df0...570623` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xe6fcb4...093fec` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xec12a9...c27b5e` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0xf43016...862be8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf4305d...c86e9d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262137 | `0x01dbc9...0cba29` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262139 | `0x1333d5...b0dd07` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262140 | `0x2d272e...58cd57` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262141 | `0x358050...c5b493` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262142 | `0x4f4b8a...311663` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262143 | `0x552334...4a80ac` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262144 | `0x69470d...cfce01` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262145 | `0x7768c8...5659a9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262146 | `0x8ec111...98449a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262147 | `0x922401...858854` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262148 | `0x945185...407837` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262149 | `0xc8886f...48300e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262150 | `0xd7df54...b3f8de` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | sepolia | unit-262151 | `0xff6eba...7dd1a4` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [VE Governance plugin - Audit 4 _ SSC.pdf](https://github.com/aragon/ve-governance/blob/develop/audits/VE%20Governance%20plugin%20-%20Audit%204%20_%20SSC.pdf) | SSC | Audit | 2025-01 | aging | Inherited from Mode Bridge — forked code, scoped to DeputyGuardianModule, PermissionedDisputeGameV2 | inherited | 1 | n/a |
-| [halborn-3.pdf](https://github.com/aragon/ve-governance/blob/develop/audits/halborn-3.pdf) | Halborn | Audit | 2025-01 | aging | Inherited from Mode Bridge — forked code, scoped to DeputyGuardianModule, PermissionedDisputeGameV2 | inherited | 1 | n/a |
-| [report-mode-lock-solo-review.pdf](https://github.com/mode-network/public-audits/blob/main/reports/report-mode-lock-solo-review.pdf) | Solo Review | Audit | 2024-05 | stale | Inherited from Mode Bridge — forked code, scoped to DeputyGuardianModule, PermissionedDisputeGameV2 | inherited | 1 | n/a |
-| [report-mode-governancetoken-solo-review.pdf](https://github.com/mode-network/public-audits/blob/main/reports/report-mode-governancetoken-solo-review.pdf) | Solo Review | Audit | 2024-04 | stale | Inherited from Mode Bridge — forked code, scoped to DeputyGuardianModule, PermissionedDisputeGameV2 | inherited | 1 | n/a |
-| [VE Governance Updates _ SSC.pdf](https://github.com/aragon/ve-governance/blob/develop/audits/VE%20Governance%20Updates%20_%20SSC.pdf) | SSC | Audit | 2024-01 | stale | Inherited from Mode Bridge — forked code, scoped to DeputyGuardianModule, PermissionedDisputeGameV2 | inherited | 1 | n/a |
-| [audit_halborn.pdf](https://github.com/aragon/ve-governance/blob/develop/audits/audit_halborn.pdf) | Halborn | Audit | 2024-01 | stale | Inherited from Mode Bridge — forked code, scoped to DeputyGuardianModule, PermissionedDisputeGameV2 | inherited | 1 | n/a |
-| [AUDIT_2.md](https://github.com/aragon/ve-governance/blob/develop/audits/AUDIT_2.md) | unknown | Audit | n/a | unknown | Inherited from Mode Bridge — forked code, scoped to DeputyGuardianModule, PermissionedDisputeGameV2 | inherited | 1 | n/a |
-| [AUDIT_3.md](https://github.com/aragon/ve-governance/blob/develop/audits/AUDIT_3.md) | unknown | Audit | n/a | unknown | Inherited from Mode Bridge — forked code, scoped to DeputyGuardianModule, PermissionedDisputeGameV2 | inherited | 1 | n/a |
-| [NM0122-FINAL_WORLDCOIN.pdf](https://github.com/NethermindEth/PublicAuditReports/blob/main/NM0122-FINAL_WORLDCOIN.pdf) | Nethermind | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [leastauthority.com/blog/the-audit-of-worldcoin-protocol-cryptography](https://leastauthority.com/blog/the-audit-of-worldcoin-protocol-cryptography) | Least Authority | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [AUDIT_REPORT_4.md](https://github.com/aragon/ve-governance/blob/develop/audits/AUDIT_REPORT_4.md) | unknown | Audit | 2025-10 | fresh | Inherited from Mode Bridge — forked code, scoped to DeputyGuardianModule, PermissionedDisputeGameV2 | inherited | 1 | n/a |
-| [Clock_v1_2_0_audit_report.md](https://github.com/aragon/ve-governance/blob/develop/audits/llm/Clock_v1_2_0_audit_report.md) | LLM | Audit | 2025-08 | fresh | Inherited from Mode Bridge — forked code, scoped to DeputyGuardianModule, PermissionedDisputeGameV2 | inherited | 1 | n/a |
-| [DynamicExitQueue_audit.md](https://github.com/aragon/ve-governance/blob/develop/audits/llm/DynamicExitQueue_audit.md) | LLM | Audit | 2025-08 | fresh | Inherited from Mode Bridge — forked code, scoped to DeputyGuardianModule, PermissionedDisputeGameV2 | inherited | 1 | n/a |
-| [Lock_v1_2_0_audit.md](https://github.com/aragon/ve-governance/blob/develop/audits/llm/Lock_v1_2_0_audit.md) | LLM | Audit | 2025-08 | fresh | Inherited from Mode Bridge — forked code, scoped to DeputyGuardianModule, PermissionedDisputeGameV2 | inherited | 1 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [NM0122-FINAL_WORLDCOIN.pdf](https://github.com/NethermindEth/PublicAuditReports/blob/main/NM0122-FINAL_WORLDCOIN.pdf) | Nethermind | Audit | 2023-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 31 | high |
+| [leastauthority.com/blog/the-audit-of-worldcoin-protocol-cryptography](https://leastauthority.com/blog/the-audit-of-worldcoin-protocol-cryptography) | Least Authority | Audit | 2023-07 | stale | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [21203] NM0122-FINAL_WORLDCOIN.pdf — no match: Extracted all contracts from the audited files tables in Section 2. The audit date is from the cover page: 'Jul 23, 2023'.
+- [21204] leastauthority.com/blog/the-audit-of-worldcoin-protocol-cryptography — no match: The report is about cryptographic implementation, not smart contracts. No contract names found.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| NM0122-FINAL_WORLDCOIN.pdf | WorldIDIdentityManager | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | WorldIDRouter | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | WorldIDRouterImplV1 | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | WorldIDIdentityManagerImplV1 | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | WorldIDProxy | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | WorldIDImpl | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | CheckInitialized | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | UnimplementedTreeVerifier | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | SemaphoreTreeDepthValidator | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | VerifierLookupTable | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | IWorldID | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | IBridge | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | IWorldIDGroups | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | ITreeVerifier | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | StateBridge | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | OpWorldID | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | PolygonWorldID | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | WorldIDBridge | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | ICrossDomainOwnable3 | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | IWorldIDIdentityManager | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | ISendBridge | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | IOpWorldID | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | WorldIDAirdrop | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | WorldIDMultiAirdrop | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | WLD | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | HourlyGrant | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | WeeklyGrant | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | IGrant | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | MonthlyGrant | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | RecurringGrantDrop | unmatched — not counted | — | listed in audited files table | no |
+| NM0122-FINAL_WORLDCOIN.pdf | VestingWallet | unmatched — not counted | — | listed in audited files table | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x069c4c...2ec5ea` | DisputeGameFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa6b71e...896ab2` | GnosisSafeProxyFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xf931a8...7e710a` | L1CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x1df436...90a8e9` | L1ERC721Bridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x153a69...84b2db` | L1OpUSDCBridgeAdapter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x470458...001113` | L1StandardBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x19a6d1...343c5d` | L2OutputOracle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x16e83c...344ce4` | MIPS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x82cb52...90dd0e` | OptimismMintableERC20Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd5ec14...beea6c` | OptimismPortal2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x48cf98...97b03e` | PermissionedDisputeGame | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x8eef04...f70973` | ProtocolVersions | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 32 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 38 |
+| standard_library | 6 |
+| needs_review | 75 |
 
 ## Scope Matching Notes
 
@@ -172,8 +336,10 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: inherited_name_remap=12
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 31 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1, low=1
+- Match method counts: n/a
 
 Zero-match audit list:
 

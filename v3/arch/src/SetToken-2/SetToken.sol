@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at Etherscan.io on 2021-07-13
-*/
-
 // Sources flattened with hardhat v2.2.1 https://hardhat.org
 
 // File @openzeppelin/contracts/utils/Address.sol@v3.3.0

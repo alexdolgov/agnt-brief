@@ -1,76 +1,125 @@
 # Agentic Audit Brief: edgeX
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 1 across 1 audit(s)
+- Eligible audit results: 7 (1 matched; 6 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: edgeX (`edgex`)
-- Website: [https://pro.edgex.exchange/referral/196451583](https://pro.edgex.exchange/referral/196451583)
+- Website: [https://edgex.exchange/](https://edgex.exchange/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:44.639Z
-- Pipeline run: v2-2026-07-03-89943a
-- Chains: arbitrum, ethereum
-- Contract surface: 10 unique implementations (10 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: arbitrum, base, bsc, edge, ethereum, optimism, polygon
+- Contract surface: 49 unique implementations (50 raw deployments)
+- Coverage basis: 1/3 confirmed own live verified implementations (33.3%); conservative 33.3% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $94,542,388.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Bridge. Structurally: 8 project-authored contract(s) across 2 chain(s); 1 ERC20 token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for edgeX. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 1 common project-authored base contract(s) (proxy). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 4 contract row(s) across arbitrum, base, bsc, edge, ethereum, optimism, polygon. Structural roles: 2 core, 2 unclassified. 1 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 4
+- Structural roles: core (2), unclassified (2)
+- Contract kinds: contract (3), abstract (1)
+- Detected standards: accesscontrol (1), erc165 (1), erc1967proxy (1), erc20 (1), erc20permit (1)
+- Frameworks: openzeppelin (1), openzeppelin-upgradeable (1)
+- Upgradeable-pattern rows: 1
+
+## Fork Analysis
+
+0 of 8 contracts are derived from known codebases. 8 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- CCTP Vault Relayer (`0x449ab3...d1ed0a`, chain 3343)
+- EDGE token proxy (`0xb0076d...f2a241`, chain 1)
+- Edge Vault (`0x4b1e12...923717`, chain 3343)
+- EdgeToken (`0x9406dd...ab3161`, chain 1)
+- edgeX Spot Claim Contract (`0x7f861a...463cb2`, chain 1)
+- Perpetual Vault (`0x48fc02...a557b5`, chain 3343)
+- Spot Vault (`0x87e11a...d78e53`, chain 3343)
+- V2 Perpetual contract (`0xeeb3fb...68fac8`, chain 3343)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 10; live-surface contracts included: 10 (10 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 4; live-surface contracts included: 4 (3 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 8/42 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/10 (0.0%)
-- Deployed-live implementations: 10 of 10 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/10
-- Verified + Unaudited implementations: 10
+- Coverage of address-book-owned deployed-live implementations: 1/3 (33.3%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 8 own, 33 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 8 discovered implementations excluded (18 third-party/infra; 4 standard proxy/library)
+- Proxy deployments represented within implementation groups: 5
+- Deployed-live implementations: 8 of 49 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 1/3
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 10
-- Raw deployments: 10
+- Unverified implementations: 5
+- Unique implementations: 49
+- Raw deployments: 50
 - Audits discovered: 7 (7 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 0
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025 (aging)
-- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 6 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
-- Tier 1 coverage: No Tier 1 coverage
+- Latest audit: 2026-04 (fresh)
+- Audit staleness (calendar age): 5 fresh, 2 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
+- Tier 1 coverage: 33.3% (SlowMist)
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| SlowMist | Tier 1 | 1 | 33.3% | 2026-03 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (1)
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| EdgeToken | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384231 | `0x9406dd...ab3161` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (10)
+### ⚠️ Verified + Unaudited (11)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| EdgeToken | unknown | ethereum | n/a | [`0x9406dd...ab3161`](./contracts/ethereum-1/0x9406dd76452c172b3cc77092b42398e87dab3161/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | ethereum | n/a | [`0xce3066...23d551`](./contracts/ethereum-1/0xce306644d20ab523636f2121952fc6222623d551/) | ⚠️ Unaudited |
-| FinalizableCommittee | unknown | ethereum | n/a | [`0x23bf3d...3c946e`](./contracts/ethereum-1/0x23bf3dcc14680162b7f5355aabb56d31823c946e/) | ⚠️ Unaudited |
-| FinalizableGpsFactAdapter | unknown | ethereum | n/a | [`0x4abbc1...5e8562`](./contracts/ethereum-1/0x4abbc1826389ac0feaa49e70c30a041b665e8562/) | ⚠️ Unaudited |
-| InitializableImmutableAdminUpgradeabilityProxy | unknown | ethereum | n/a | [`0x238789...d4086a`](./contracts/ethereum-1/0x23878914efe38d27c4d67ab83ed1b93a74d4086a/) | ⚠️ Unaudited |
-| MultiSigPoolV5WithPermit | unknown | ethereum | n/a | [`0x166b53...ae0eb6`](./contracts/ethereum-1/0x166b5369f043474412408c8aba0d084e9cae0eb6/) | ⚠️ Unaudited |
-| SpotVault | unknown | ethereum | n/a | [`0x238e0e...841487`](./contracts/ethereum-1/0x238e0edeb0e217fecd9e1ca98efa1219fc841487/) | ⚠️ Unaudited |
-| StarkPerpetual | unknown | ethereum | n/a | [`0xfaae29...7d83dd`](./contracts/ethereum-1/0xfaae2946e846133af314d1df13684c89fa7d83dd/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x107695...e211bb`](./contracts/arbitrum-42161/0x107695630130919cb040b095b9b20511d6e211bb/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | arbitrum | n/a | [`0x6f4836...c198d0`](./contracts/arbitrum-42161/0x6f4836afd5e21edcee9b838c5a4125829ec198d0/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| EDGE token proxy | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384234 | `0xb0076d...f2a241` | ⚠️ Unaudited |
+| edgeX Spot Claim Contract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-384229 | `0x7f861a...463cb2` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0xce3066...23d551` | ⚠️ Unaudited |
+| FinalizableCommittee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x23bf3d...3c946e` | ⚠️ Unaudited |
+| FinalizableGpsFactAdapter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4abbc1...5e8562` | ⚠️ Unaudited |
+| InitializableImmutableAdminUpgradeabilityProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | ethereum | n/a | `0x238789...d4086a` | ⚠️ Unaudited |
+| MultiSigPoolV5WithPermit | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x166b53...ae0eb6` | ⚠️ Unaudited |
+| SpotVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x238e0e...841487` | ⚠️ Unaudited |
+| StarkPerpetual | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-384265 | 2 deployments: ethereum `0x8c43c9...abd35d`; ethereum `0xfaae29...7d83dd` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0x107695...e211bb` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | arbitrum | n/a | `0x6f4836...c198d0` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,23 +133,191 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (37)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| CCTP Vault Relayer | unknown | project_anchor | own_supporting | 0 | edge | unit-384247 | `0x449ab3...d1ed0a` | ❓ Unverified |
+| Edge Vault | unknown | project_anchor | own_supporting | 0 | edge | unit-384249 | `0x4b1e12...923717` | ❓ Unverified |
+| Perpetual Vault | unknown | project_anchor | own_supporting | 0 | edge | unit-384248 | `0x48fc02...a557b5` | ❓ Unverified |
+| Spot Vault | unknown | project_anchor | own_supporting | 0 | edge | unit-384252 | `0x87e11a...d78e53` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384224 | `0x12f237...5dffad` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384225 | `0x221e7f...f10048` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-384226 | `0x28b5a0...68cf5d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384227 | `0x5cbe2d...29cc3c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384228 | `0x6973b6...8a0698` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-384230 | `0x81d40f...464b64` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-384232 | `0xa0b869...06eb48` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384233 | `0xa13cc6...ec89a9` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384235 | `0xb3118e...9d16e0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384236 | `0xb40022...d39d9f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384237 | `0xbe9a12...70d27a` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384238 | `0xc0a1a1...432cc5` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-384239 | `0xf0da8b...a09d1d` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-384240 | `0x0b2c63...97ff85` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-384241 | `0x28b5a0...68cf5d` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | optimism | unit-384242 | `0x81d40f...464b64` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | bsc | unit-384261 | `0x3eedb0...92116d` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-384243 | `0x28b5a0...68cf5d` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-384244 | `0x3c499c...5c3359` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | polygon | unit-384245 | `0x81d40f...464b64` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | polygon | unit-384246 | `0xad8255...8b77b8` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | edge | unit-384250 | `0x5b6138...9198ee` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | edge | unit-384253 | `0x98706a...e2ca5c` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | edge | unit-384254 | `0x98d291...6ad74c` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-384262 | `0x28b5a0...68cf5d` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-384263 | `0x81d40f...464b64` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | base | unit-384264 | `0x833589...a02913` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-384256 | `0x28b5a0...68cf5d` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-384257 | `0x81144d...ed0cb2` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-384258 | `0x81d40f...464b64` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | arbitrum | unit-384259 | `0xaf88d0...8e5831` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | arbitrum | unit-384260 | `0xceeed8...332e41` | ❓ Unverified |
+| V2 Perpetual contract | unknown | project_anchor | own_supporting | 0 | edge | unit-384255 | `0xeeb3fb...68fac8` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [report-binenet-vault-cctp-integration.pdf](https://github.com/edgex-Tech/audit-reports/blob/main/report-binenet-vault-cctp-integration.pdf) | Binenet | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [report-halborn-edgex-v2.pdf](https://github.com/edgex-Tech/audit-reports/blob/main/report-halborn-edgex-v2.pdf) | Halborn | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [report-rigsec-edgex-v1.pdf](https://github.com/edgex-Tech/audit-reports/blob/main/report-rigsec-edgex-v1.pdf) | RigSec | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [report-slowmist-edgedistributor.pdf](https://github.com/edgex-Tech/audit-reports/blob/main/report-slowmist-edgedistributor.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [report-slowmist-edgetoken.pdf](https://github.com/edgex-Tech/audit-reports/blob/main/report-slowmist-edgetoken.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [report-slowmist-edgex-v1.pdf](https://github.com/edgex-Tech/audit-reports/blob/main/report-slowmist-edgex-v1.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [report-spearbit-edgex-v2.pdf](https://github.com/edgex-Tech/audit-reports/blob/main/report-spearbit-edgex-v2.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [report-binenet-vault-cctp-integration.pdf](https://github.com/edgex-Tech/audit-reports/blob/main/report-binenet-vault-cctp-integration.pdf) | Binenet | Audit | 2026-04 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 9 | high |
+| [report-halborn-edgex-v2.pdf](https://github.com/edgex-Tech/audit-reports/blob/main/report-halborn-edgex-v2.pdf) | Halborn | Audit | 2025-12 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 45 | high |
+| [report-rigsec-edgex-v1.pdf](https://github.com/edgex-Tech/audit-reports/blob/main/report-rigsec-edgex-v1.pdf) | RigSec | Audit | 2024-09 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 1 | medium |
+| [report-slowmist-edgedistributor.pdf](https://github.com/edgex-Tech/audit-reports/blob/main/report-slowmist-edgedistributor.pdf) | SlowMist | Audit | 2026-03 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+| [report-slowmist-edgetoken.pdf](https://github.com/edgex-Tech/audit-reports/blob/main/report-slowmist-edgetoken.pdf) | SlowMist | Audit | 2026-03 | fresh | Direct | contract_name | matched | 1 | 0 | 0 | 0 | high |
+| [report-slowmist-edgex-v1.pdf](https://github.com/edgex-Tech/audit-reports/blob/main/report-slowmist-edgex-v1.pdf) | SlowMist | Audit | 2025-06 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 7 | high |
+| [report-spearbit-edgex-v2.pdf](https://github.com/edgex-Tech/audit-reports/blob/main/report-spearbit-edgex-v2.pdf) | Spearbit | Audit | 2026-03 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 47 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [19725] report-binenet-vault-cctp-integration.pdf — no match: Extracted 9 contract names from the scope table in Section 2.2. Audit date from Section 2.3: Mar 14, 2026 — Mar 20, 2026, using end date.
+- [19726] report-halborn-edgex-v2.pdf — no match: All contracts listed in the Scope section of the report were extracted. The audit date is the end date of the engagement: December 25, 2025.
+- [19727] report-rigsec-edgex-v1.pdf — no match: Scope section lists only addresses, not contract names. The only contract name explicitly mentioned in the report is MultiSigPoolV5WithPermit.
+- [19728] report-slowmist-edgedistributor.pdf — no match: Only one contract, EdgeDistributor, is in scope. The audit date is explicitly given as 2026.03.30 in the executive summary and audit result table.
+- [19729] report-slowmist-edgetoken.pdf — matched: Only one contract (EdgeToken) is audited. The report mentions proxy and implementation addresses but those are deployment instances, not separate contracts in scope.
+- [19730] report-slowmist-edgex-v1.pdf — no match: Extracted contract names from visibility description and findings. Audit date from audit result section: 2025.06.16 - 2025.06.18, using end date.
+- [19731] report-spearbit-edgex-v2.pdf — no match: All contracts listed in the scope section (Section 2.1) were extracted. The audit date is from the cover page: March 9, 2026.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| report-binenet-vault-cctp-integration.pdf | EdgexVault | unmatched — not counted | — | listed in scope table (Section 2.2) | no |
+| report-binenet-vault-cctp-integration.pdf | EdgexVaultStorage | unmatched — not counted | — | listed in scope table (Section 2.2) | no |
+| report-binenet-vault-cctp-integration.pdf | FrontContract | unmatched — not counted | — | listed in scope table (Section 2.2) | no |
+| report-binenet-vault-cctp-integration.pdf | CCTPVaultRelayer | unmatched — not counted | — | listed in scope table (Section 2.2) | no |
+| report-binenet-vault-cctp-integration.pdf | BurnMessageV2 | unmatched — not counted | — | listed in scope table (Section 2.2) | no |
+| report-binenet-vault-cctp-integration.pdf | MessageV2 | unmatched — not counted | — | listed in scope table (Section 2.2) | no |
+| report-binenet-vault-cctp-integration.pdf | BurnMessage | unmatched — not counted | — | listed in scope table (Section 2.2) | no |
+| report-binenet-vault-cctp-integration.pdf | SpotVault | unmatched — not counted | — | listed in scope table (Section 2.2) | no |
+| report-binenet-vault-cctp-integration.pdf | IVaultRelayer | unmatched — not counted | — | listed in scope table (Section 2.2) | no |
+| report-halborn-edgex-v2.pdf | AccountManager | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | IAccountManager | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | RegisterAccount | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | GeneralConfig | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | Create2Factory | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | ILoadingZone | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | LoadingZone | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | Funding | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | FundingLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | IFunding | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | IOracle | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | Oracle | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | IOrderManager | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | ITwapOrder | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | LimitOrder | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | LimitOrderLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | OrderManager | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | TwapOrder | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | TwapOrderManager | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | IPositionManager | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | PositionAssetLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | PositionManager | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | ISignerManager | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | SignerManager | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | SignerPermissions | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | DeleverageTransLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | DepositTransLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | FundingTickTransLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | IsolatedMarginTransLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | LiquidateTransLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | OraclePriceTickTransLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | PermissionsTransLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | RegisterAccountTransLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | SetMarginPreferenceTransLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | TradeTransLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | TransferTransLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | TwapTransLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | WithdrawalTransLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | EIP712Lib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | EIP712VerificationLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | SignaturesLib | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | Uint64Set | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | Constants | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | MultiTransactionProcessor | unmatched — not counted | — | listed in scope | no |
+| report-halborn-edgex-v2.pdf | TransactionProcessor | unmatched — not counted | — | listed in scope | no |
+| report-rigsec-edgex-v1.pdf | MultiSigPoolV5WithPermit | unmatched — not counted | — | mentioned in findings as the contract containing the functions deposit, depositWithPermit, withdrawETH, withdrawErc20, withdrawERC20Mpc, factTransferErc20 | no |
+| report-slowmist-edgedistributor.pdf | EdgeDistributor | unmatched — not counted | — | listed in scope and code overview | no |
+| report-slowmist-edgetoken.pdf | EdgeToken | own contract | EdgeToken (selected) `0x9406dd...ab3161` — deployed 2026-02-19 08:30:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| report-slowmist-edgex-v1.pdf | MultiSigPoolV5WithPermit | unmatched — not counted | — | listed in scope and findings | no |
+| report-slowmist-edgex-v1.pdf | StarkPerpetual | unmatched — not counted | — | mentioned in project overview and visibility description | no |
+| report-slowmist-edgex-v1.pdf | Proxy | unmatched — not counted | — | listed in visibility description and finding N5 | no |
+| report-slowmist-edgex-v1.pdf | MainDispatcher | unmatched — not counted | — | listed in visibility description | no |
+| report-slowmist-edgex-v1.pdf | MainDispatcherBase | unmatched — not counted | — | listed in visibility description | no |
+| report-slowmist-edgex-v1.pdf | BlockDirectCall | unmatched — not counted | — | listed in visibility description | no |
+| report-slowmist-edgex-v1.pdf | Governance | unmatched — not counted | — | listed in visibility description | no |
+| report-spearbit-edgex-v2.pdf | Constants | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | MultiTransactionProcessor | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | TransactionProcessor | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | AccountManager | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | IAccountManager | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | RegisterAccount | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | GeneralConfig | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | Create2Factory | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | IEdgexVault | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | ILoadingZone | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | LoadingZone | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | Funding | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | FundingLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | IFunding | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | IOracle | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | Oracle | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | IOrderManager | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | ITwapOrder | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | LimitOrder | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | LimitOrderLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | OrderManager | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | TwapOrder | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | TwapOrderManager | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | IPositionManager | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | PositionAssetLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | PositionManager | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | ISignerManager | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | SignerManager | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | SignerPermissions | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | DeleverageTransLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | DelistSettleTransLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | DepositTransLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | FundingTickTransLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | IsolatedMarginTransLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | LiquidateTransLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | OraclePriceTickTransLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | PermissionsTransLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | RegisterAccountTransLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | SetMarginPreferenceTransLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | TradeTransLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | TransferTransLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | TwapTransLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | WithdrawalTransLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | EIP712Lib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | EIP712VerificationLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | SignaturesLib | unmatched — not counted | — | listed in scope | no |
+| report-spearbit-edgex-v2.pdf | Uint64Set | unmatched — not counted | — | listed in scope | no |
 
 ## Coverage Gaps
 
@@ -112,19 +329,21 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 5 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 10 |
+| standard_library | 4 |
+| needs_review | 40 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 7
+- Audits with zero matched contracts: 6
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Address-book scope dispositions: 1 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 110 unmatched
+- Matched-own operational status: 1 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=6, medium=1
+- Match method counts: unique_name=1
 
 Zero-match audit list:
 
@@ -132,7 +351,6 @@ Zero-match audit list:
 - [19726] report-halborn-edgex-v2.pdf
 - [19727] report-rigsec-edgex-v1.pdf
 - [19728] report-slowmist-edgedistributor.pdf
-- [19729] report-slowmist-edgetoken.pdf
 - [19730] report-slowmist-edgex-v1.pdf
 - [19731] report-spearbit-edgex-v2.pdf
 

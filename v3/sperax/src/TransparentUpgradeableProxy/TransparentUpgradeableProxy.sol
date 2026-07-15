@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity >=0.6.0 <0.8.0;
+pragma solidity 0.8.7;
 
-import "./UpgradeableProxy.sol";
+import "./ERC1967Proxy.sol";
 
 /**
  * @dev This contract implements a proxy that is upgradeable by an admin.
@@ -25,33 +25,28 @@ import "./UpgradeableProxy.sol";
  * Our recommendation is for the dedicated account to be an instance of the {ProxyAdmin} contract. If set up this way,
  * you should think of the `ProxyAdmin` instance as the real administrative interface of your proxy.
  */
-contract TransparentUpgradeableProxy is UpgradeableProxy {
+contract TransparentUpgradeableProxy is ERC1967Proxy {
     /**
      * @dev Initializes an upgradeable proxy managed by `_admin`, backed by the implementation at `_logic`, and
      * optionally initialized with `_data` as explained in {UpgradeableProxy-constructor}.
      */
-    constructor(address _logic, address admin_, bytes memory _data) public payable UpgradeableProxy(_logic, _data) {
-        assert(_ADMIN_SLOT == bytes32(uint256(keccak256("eip1967.proxy.admin")) - 1));
-        _setAdmin(admin_);
+    constructor(
+        address _logic,
+        address _admin,
+        bytes memory _data
+    ) public payable ERC1967Proxy(_logic, _data) {
+        assert(
+            _ADMIN_SLOT ==
+                bytes32(uint256(keccak256("eip1967.proxy.admin")) - 1)
+        );
+        _changeAdmin(_admin);
     }
-
-    /**
-     * @dev Emitted when the admin account has changed.
-     */
-    event AdminChanged(address previousAdmin, address newAdmin);
-
-    /**
-     * @dev Storage slot with the admin of the contract.
-     * This is the keccak-256 hash of "eip1967.proxy.admin" subtracted by 1, and is
-     * validated in the constructor.
-     */
-    bytes32 private constant _ADMIN_SLOT = 0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103;
 
     /**
      * @dev Modifier used internally that will delegate the call to the implementation unless the sender is the admin.
      */
     modifier ifAdmin() {
-        if (msg.sender == _admin()) {
+        if (msg.sender == _getAdmin()) {
             _;
         } else {
             _fallback();
@@ -67,8 +62,8 @@ contract TransparentUpgradeableProxy is UpgradeableProxy {
      * https://eth.wiki/json-rpc/API#eth_getstorageat[`eth_getStorageAt`] RPC call.
      * `0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103`
      */
-    function admin() external ifAdmin returns (address admin_) {
-        admin_ = _admin();
+    function admin() external ifAdmin returns (address _admin) {
+        _admin = _getAdmin();
     }
 
     /**
@@ -80,8 +75,12 @@ contract TransparentUpgradeableProxy is UpgradeableProxy {
      * https://eth.wiki/json-rpc/API#eth_getstorageat[`eth_getStorageAt`] RPC call.
      * `0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc`
      */
-    function implementation() external ifAdmin returns (address implementation_) {
-        implementation_ = _implementation();
+    function implementation()
+        external
+        ifAdmin
+        returns (address implementation_)
+    {
+        implementation_ = _getImplementation();
     }
 
     /**
@@ -92,9 +91,8 @@ contract TransparentUpgradeableProxy is UpgradeableProxy {
      * NOTE: Only the admin can call this function. See {ProxyAdmin-changeProxyAdmin}.
      */
     function changeAdmin(address newAdmin) external virtual ifAdmin {
-        require(newAdmin != address(0), "TransparentUpgradeableProxy: new admin is the zero address");
-        emit AdminChanged(_admin(), newAdmin);
-        _setAdmin(newAdmin);
+        emit AdminChanged(_getAdmin(), newAdmin);
+        _changeAdmin(newAdmin);
     }
 
     /**
@@ -113,39 +111,23 @@ contract TransparentUpgradeableProxy is UpgradeableProxy {
      *
      * NOTE: Only the admin can call this function. See {ProxyAdmin-upgradeAndCall}.
      */
-    function upgradeToAndCall(address newImplementation, bytes calldata data) external payable virtual ifAdmin {
-        _upgradeTo(newImplementation);
-        Address.functionDelegateCall(newImplementation, data);
-    }
-
-    /**
-     * @dev Returns the current admin.
-     */
-    function _admin() internal view virtual returns (address adm) {
-        bytes32 slot = _ADMIN_SLOT;
-        // solhint-disable-next-line no-inline-assembly
-        assembly {
-            adm := sload(slot)
-        }
-    }
-
-    /**
-     * @dev Stores a new address in the EIP1967 admin slot.
-     */
-    function _setAdmin(address newAdmin) private {
-        bytes32 slot = _ADMIN_SLOT;
-
-        // solhint-disable-next-line no-inline-assembly
-        assembly {
-            sstore(slot, newAdmin)
-        }
+    function upgradeToAndCall(address newImplementation, bytes calldata data)
+        external
+        payable
+        virtual
+        ifAdmin
+    {
+        _upgradeToAndCall(newImplementation, data, false);
     }
 
     /**
      * @dev Makes sure the admin cannot access the fallback function. See {Proxy-_beforeFallback}.
      */
     function _beforeFallback() internal virtual override {
-        require(msg.sender != _admin(), "TransparentUpgradeableProxy: admin cannot fallback to proxy target");
+        require(
+            msg.sender != _getAdmin(),
+            "TransparentUpgradeableProxy: admin cannot fallback to proxy target"
+        );
         super._beforeFallback();
     }
 }

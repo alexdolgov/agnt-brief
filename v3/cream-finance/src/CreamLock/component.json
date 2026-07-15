@@ -1,34 +1,28 @@
 {
   "component": "CreamLock",
   "main_contract": "CreamLock",
-  "source_file_count": 4,
-  "deployment_count": 4,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CreamLock\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x780f75ad0b02afeb6039672e6a6cede7447a8b45",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xbdc3372161dfd0361161e06083ee5d52a9ce7595",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
       "address": "0xd5586c1804d2e1795f3fbbafb1fbb9099ee20a6c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393219"
     },
     {
       "chain": "ethereum",
@@ -36,7 +30,9 @@
       "address": "0xe618c25f580684770f2578faca31fb7acb2f5945",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393225"
     }
   ]
 }

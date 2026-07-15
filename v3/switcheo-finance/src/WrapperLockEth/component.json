@@ -1,26 +1,28 @@
 {
   "component": "WrapperLockEth",
   "main_contract": "WrapperLockEth",
+  "source_entry_count": 4,
   "source_file_count": 4,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WrapperLockEth\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x42b9aa7a244b38ef56dff4d2df7e7a7013a59cbf",
+      "address": "0xaa7427d8f17d87a28f5e1ba3adbb270badbe1011",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x768c42ff6f5805bd2631ac7cc9eabe3af17b4b41",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

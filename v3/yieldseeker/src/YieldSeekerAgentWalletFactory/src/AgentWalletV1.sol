@@ -1,7 +1,21 @@
 // SPDX-License-Identifier: MIT
+//
+//   /$$     /$$ /$$           /$$       /$$  /$$$$$$                      /$$
+//  |  $$   /$$/|__/          | $$      | $$ /$$__  $$                    | $$
+//   \  $$ /$$/  /$$  /$$$$$$ | $$  /$$$$$$$| $$  \__/  /$$$$$$   /$$$$$$ | $$   /$$  /$$$$$$   /$$$$$$
+//    \  $$$$/  | $$ /$$__  $$| $$ /$$__  $$|  $$$$$$  /$$__  $$ /$$__  $$| $$  /$$/ /$$__  $$ /$$__  $$
+//     \  $$/   | $$| $$$$$$$$| $$| $$  | $$ \____  $$| $$$$$$$$| $$$$$$$$| $$$$$$/ | $$$$$$$$| $$  \__/
+//      | $$    | $$| $$_____/| $$| $$  | $$ /$$  \ $$| $$_____/| $$_____/| $$_  $$ | $$_____/| $$
+//      | $$    | $$|  $$$$$$$| $$|  $$$$$$$|  $$$$$$/|  $$$$$$$|  $$$$$$$| $$ \  $$|  $$$$$$$| $$
+//      |__/    |__/ \_______/|__/ \_______/ \______/  \_______/ \_______/|__/  \__/ \_______/|__/
+//
+//  Grow your wealth on auto-pilot with DeFi agents
+//  https://yieldseeker.xyz
+//
+//  For technical queries or guidance contact @krishan711
+//
 pragma solidity 0.8.28;
 
-import {YieldSeekerErrors} from "./Errors.sol";
 import {YieldSeekerFeeTracker as FeeTracker} from "./FeeTracker.sol";
 import {IAgentWallet} from "./IAgentWallet.sol";
 import {IAgentWalletFactory} from "./IAgentWalletFactory.sol";
@@ -9,6 +23,9 @@ import {AWKAgentWalletV1} from "./agentwalletkit/AWKAgentWalletV1.sol";
 import {AWKErrors} from "./agentwalletkit/AWKErrors.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+
+error InvalidAsset();
+error InvalidFeeTracker();
 
 /**
  * @title YieldSeekerStorageV1
@@ -87,8 +104,8 @@ contract YieldSeekerAgentWalletV1 is AWKAgentWalletV1, IAgentWallet {
         YieldSeekerStorageV1.Layout storage ys = YieldSeekerStorageV1.layout();
 
         FeeTracker newTracker = IAgentWalletFactory(address(FACTORY)).feeTracker();
-        if (address(newTracker) == address(0)) revert YieldSeekerErrors.InvalidFeeTracker();
-        if (address(newTracker).code.length == 0) revert YieldSeekerErrors.InvalidFeeTracker();
+        if (address(newTracker) == address(0)) revert InvalidFeeTracker();
+        if (address(newTracker).code.length == 0) revert InvalidFeeTracker();
         ys.feeTracker = newTracker;
 
         emit SyncedFromFactory(address(adapterRegistry()), address(newTracker));
@@ -117,33 +134,14 @@ contract YieldSeekerAgentWalletV1 is AWKAgentWalletV1, IAgentWallet {
     // ============ YieldSeeker Withdrawal Functions (Fee-Aware) ============
 
     /**
-     * @notice User withdraws base asset from agent wallet
-     * @param recipient Address to send the base asset to
-     * @param amount Amount to withdraw
+     * @notice Calculate withdrawable balance (total balance minus fees owed)
+     * @param asset Address of the asset to check (must be base asset)
      */
-    function withdrawBaseAssetToUser(address recipient, uint256 amount) external onlyOwner {
-        if (recipient == address(0)) revert AWKErrors.ZeroAddress();
-        IERC20 asset = baseAsset();
-        uint256 balance = asset.balanceOf(address(this));
+    function _getWithdrawableBalance(address asset) internal view returns (uint256) {
+        if (asset != address(baseAsset())) revert InvalidAsset();
+        uint256 balance = baseAsset().balanceOf(address(this));
         uint256 feesOwed = feeTracker().getFeesOwed(address(this));
-        uint256 withdrawable = balance > feesOwed ? balance - feesOwed : 0;
-        if (withdrawable < amount) revert AWKErrors.InsufficientBalance();
-        asset.safeTransfer(recipient, amount);
-        emit WithdrewTokenToUser(owner(), recipient, address(asset), amount);
-    }
-
-    /**
-     * @notice User withdraws all base asset from agent wallet
-     * @param recipient Address to send the base asset to
-     */
-    function withdrawAllBaseAssetToUser(address recipient) external onlyOwner {
-        if (recipient == address(0)) revert AWKErrors.ZeroAddress();
-        IERC20 asset = baseAsset();
-        uint256 balance = asset.balanceOf(address(this));
-        uint256 feesOwed = feeTracker().getFeesOwed(address(this));
-        uint256 withdrawable = balance > feesOwed ? balance - feesOwed : 0;
-        asset.safeTransfer(recipient, withdrawable);
-        emit WithdrewTokenToUser(owner(), recipient, address(asset), withdrawable);
+        return balance > feesOwed ? balance - feesOwed : 0;
     }
 
     /**
@@ -155,18 +153,9 @@ contract YieldSeekerAgentWalletV1 is AWKAgentWalletV1, IAgentWallet {
      *      Non-base assets (vault shares, reward tokens) must be handled through adapters.
      */
     function withdrawAssetToUser(address recipient, address asset, uint256 amount) external override onlyOwner {
-        if (recipient == address(0)) revert AWKErrors.ZeroAddress();
-        if (asset == address(0)) revert AWKErrors.ZeroAddress();
-        if (asset != address(baseAsset())) revert YieldSeekerErrors.InvalidAsset();
-
-        IERC20 token = IERC20(asset);
-        uint256 balance = token.balanceOf(address(this));
-        uint256 feesOwed = feeTracker().getFeesOwed(address(this));
-        uint256 withdrawable = balance > feesOwed ? balance - feesOwed : 0;
+        uint256 withdrawable = _getWithdrawableBalance(asset);
         if (withdrawable < amount) revert AWKErrors.InsufficientBalance();
-
-        token.safeTransfer(recipient, amount);
-        emit WithdrewTokenToUser(owner(), recipient, asset, amount);
+        _withdrawAsset(recipient, asset, amount);
     }
 
     /**
@@ -177,16 +166,7 @@ contract YieldSeekerAgentWalletV1 is AWKAgentWalletV1, IAgentWallet {
      *      Non-base assets (vault shares, reward tokens) must be handled through adapters.
      */
     function withdrawAllAssetToUser(address recipient, address asset) external override onlyOwner {
-        if (recipient == address(0)) revert AWKErrors.ZeroAddress();
-        if (asset == address(0)) revert AWKErrors.ZeroAddress();
-        if (asset != address(baseAsset())) revert YieldSeekerErrors.InvalidAsset();
-
-        IERC20 token = IERC20(asset);
-        uint256 balance = token.balanceOf(address(this));
-        uint256 feesOwed = feeTracker().getFeesOwed(address(this));
-        uint256 amount = balance > feesOwed ? balance - feesOwed : 0;
-
-        token.safeTransfer(recipient, amount);
-        emit WithdrewTokenToUser(owner(), recipient, asset, amount);
+        uint256 withdrawable = _getWithdrawableBalance(asset);
+        _withdrawAsset(recipient, asset, withdrawable);
     }
 }

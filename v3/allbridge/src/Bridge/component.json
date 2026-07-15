@@ -1,226 +1,38 @@
 {
   "component": "Bridge",
   "main_contract": "Bridge",
-  "source_file_count": 28,
-  "deployment_count": 27,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Bridge\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x609c690e8f7d68a59885c9132e812eebdaaf0c9e",
+      "address": "0xd5d6b2f2d7a7506c49bb0cb6fb39a67f065d6fc4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x7dbf07ad92ed4e26d5511b4f285508ebf174135d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x3b96f88b2b9eb87964b852874d41b633e0f1f68f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x4ad835ffa57e5e1e82514b2ba01d21fc15199d9a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x97e5bf5068ea6a9604ee25851e6c9780ff50d5ab",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xb24a05d54fcacfe1fc00c59209470d4cafb0deea",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390781"
     },
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x3c37bdd7acae01a8b14e0ad8be52e7ea5066c27f",
+      "address": "0xd5d6b2f2d7a7506c49bb0cb6fb39a67f065d6fc4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x3c4fa639c8d7e65c603145adad8bd12f2358312f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x8033d5b454ee4758e4bd1d37a49009c1a81d8b10",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xf833afa46fcd100e62365a0fdb0734b7c4537811",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x3e03835dbf5cbd4cfa28f1b8587b80810838451c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x801217549ab4b0860bb506b1cbff90f42819a116",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0xca0dc31bda6b7588590a742b2ae6a4f67b43c71f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x7b2f61d7d5a775af43294bc48f82c861e57c6841",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x7b806aebcf82cecfb43e0e3df749c5232942f6d6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x9bc674e2ce891f34dd8a7531ff291e9579558271",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xda6bb1ec3baba68b26bea0508d6f81c9ec5e96d5",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x47235cb71107cc66b12af6f8b8a9260ea38472c7",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x690e66fc0f8be8964d40e55ede6aebdfcb8a21df",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x9ce3447b58d58e8602b7306316a5ff011b92d189",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xd5826d4d30c112b2ba0178a03be0cdd3f6bc4f9d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-42220",
-      "chain_id": 42220,
-      "address": "0x80858f5f8efd2ab6485aba1a0b9557ed46c6ba0e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-42220",
-      "chain_id": 42220,
-      "address": "0xfb2c7c10e731ebe96dabdf4a96d656bfe8e2b5af",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x2d2f460d7a1e7a4fcc4ddab599451480728b5784",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x9068e1c28941d0a680197cc03be8afe27ccaeea9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xe827352a0552ffc835c181ab5bf1d7794038ec9f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xfd6e9dce8f98b1093049430de242ffaa7336446f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390783"
     }
   ]
 }

@@ -22,7 +22,7 @@ contract AutopoolMainRewarder is MainRewarder {
         ISystemRegistry _systemRegistry,
         address _rewardToken,
         uint256 _newRewardRatio,
-        uint256 _durationInBlock,
+        uint256 _duration,
         bool _allowExtraReward,
         address _stakingToken
     )
@@ -30,7 +30,7 @@ contract AutopoolMainRewarder is MainRewarder {
             _systemRegistry,
             _rewardToken,
             _newRewardRatio,
-            _durationInBlock,
+            _duration,
             Roles.AUTO_POOL_REWARD_MANAGER,
             _allowExtraReward
         )

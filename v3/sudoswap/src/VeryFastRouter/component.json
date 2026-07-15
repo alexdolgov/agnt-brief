@@ -1,0 +1,31 @@
+{
+  "component": "VeryFastRouter",
+  "main_contract": "VeryFastRouter",
+  "source_entry_count": 25,
+  "source_file_count": 25,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VeryFastRouter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/sudoswap/v2-audits/blob/main/cyfrin.pdf",
+    "https://github.com/sudoswap/v2-audits/blob/main/spearbit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x090c236b62317db226e6ae6cd4c0fd25b7028b65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404127"
+    }
+  ]
+}

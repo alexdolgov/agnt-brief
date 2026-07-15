@@ -1,42 +1,28 @@
 {
   "component": "SalesFactory",
   "main_contract": "SalesFactory",
-  "source_file_count": 4,
-  "deployment_count": 4,
+  "source_entry_count": 5,
+  "source_file_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SalesFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x29f351cdd647195553263924cc3abb017cb7fc7b",
+      "address": "0x2d37e5d424cd24d374253e58e54ba8ee395b0e2f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x4c858df3bebba1cdb73f49b002f095bb15df4542",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x9eb3fef2963b359562694c391a6daf18322fb2c6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xd124d278ad66e383dc789d593fc719f7d416d172",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,7 +1,15 @@
 {
   "component": "FixedPriceLBPoolFactory",
   "main_contract": "FixedPriceLBPoolFactory",
+  "source_entry_count": 80,
   "source_file_count": 80,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FixedPriceLBPoolFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0xeb1aa94421aecfb1dc17ddb1068e4609c4be8758",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402454"
     }
   ]
 }

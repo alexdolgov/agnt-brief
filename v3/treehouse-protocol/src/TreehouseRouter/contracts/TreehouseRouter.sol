@@ -162,7 +162,7 @@ contract TreehouseRouter is ITreehouseRouter, Ownable2Step, ReentrancyGuard, Pau
   }
 
   function _ethToWsteth(uint amount) private returns (uint) {
-    return _stethToWsteth(IstETH(stETH).submit{ value: amount }(address(0)));
+    return _stethToWsteth(IstETH(stETH).getPooledEthByShares((IstETH(stETH).submit{ value: amount }(address(0)))));
   }
 
   function _stethToWsteth(uint stethAmount) private returns (uint) {

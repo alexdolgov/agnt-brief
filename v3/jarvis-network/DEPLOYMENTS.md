@@ -1,66 +1,8 @@
 # jarvis-network — deployments
 
-60 verified deployment(s) across 48 component(s).
+2 verified deployment(s) across 2 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| arbitrum | `0x185bb0b7744a14cd336827fb94392f151e99400c` | SynthereumTrustedForwarder | impl | live | no |
-| arbitrum | `0x689359561355ef829bb6d30a9c5b0e98c544cb11` | CreditLineController | impl | live | no |
-| arbitrum | `0x8730671642c5f0a75779b3aa7bb459f5ccfe3424` | CreditLine-3 | impl | live | no |
-| avalanche | `0x02c72fc6c231ee0f0e313c966e2da5cb7a52b503` | SynthereumFinder | impl | live | no |
-| avalanche | `0x1418830ad554becaf76a4058eec6bee9ac002e19` | SynthereumManager | impl | live | no |
-| avalanche | `0x348e4b25077c5133450edad060ea4d8db667913d` | SynthereumCollateralWhitelist | impl | live | no |
-| bsc | `0x02c72fc6c231ee0f0e313c966e2da5cb7a52b503` | SynthereumRegistry | impl | live | no |
-| bsc | `0x0374a0dc2f47ea75c900a63a244c3e6555b7e830` | SynthereumFactoryVersioning | impl | live | no |
-| bsc | `0x03bc653285f8527e1c877b18df285e66898864b3` | SynthereumLiquidityPool | impl | live | no |
-| bsc | `0x05bd55c34f9a95bddc6d9def1654616d74f10eef` | AerariumSanctius | impl | live | no |
-| bsc | `0x0818b48d171f90f8d97c6f6ebf18bc2de6f224fe` | SynthereumCCIPBridge | impl | live | no |
-| bsc | `0x0b247cf7d9a170acc7dd5b762c07cfc02cae4501` | SynthereumLiquidityPool-2 | impl | live | no |
-| bsc | `0x1c4d8221c3696c0a333d3394d46a4efb9090faa0` | SynthereumPublicVaultRegistry | impl | live | no |
-| bsc | `0x2d0e006bb94409a4edfc3348a6703801e770bdb1` | MintableBurnableSyntheticToken | impl | live | no |
-| bsc | `0x2ee8db7f1f64dd590a35ac3c64b3c18ac11b0a8d` | MoneyMarketManager | impl | live | no |
-| bsc | `0x6e768988ab07d736858a50c79cecc8060b035fe5` | ExponentialNoError | impl | live | no |
-| bsc | `0x850f4440ed50af8a46281f448d7a5a4e7eb0c7b9` | SynthereumStakingLPVault | impl | live | no |
-| bsc | `0x906b6f2dee9f9decdf80020732dbf98f59f70f5b` | SynthereumStakingLPVault | impl | live | no |
-| bsc | `0xda03443cab512e55d672d725b7fa98275009ddcc` | FixedRateSwap | impl | live | no |
-| bsc | `0xdc9374e34f10f33637718b63ea2bb618e8b30df1` | BaseERC4626 | impl | live | no |
-| bsc | `0xe5ed747e19edb8eaece8c0b8a2e4264569ac8054` | SynthereumStakingLPVault | impl | live | no |
-| gnosis | `0x02c72fc6c231ee0f0e313c966e2da5cb7a52b503` | SynthereumDeployer | impl | unknown | no |
-| gnosis | `0x03bc653285f8527e1c877b18df285e66898864b3` | SynthereumLiquidityPool-3 | impl | live | no |
-| optimism | `0x0120358932e0ce5a7e3a3519d339289966e71805` | SynthereumMultiLpLiquidityPool | impl | live | no |
-| optimism | `0x0224dca32967ebbffdeefab74526554280dab50a` | SynthereumMultiLpLiquidityPool | impl | live | no |
-| optimism | `0x17b600b70b20b0a4bb2870bdfd8bf6d485219969` | SynthereumPriceFeed | impl | live | no |
-| optimism | `0x1f19e20542ef48010f99d030daf63c8216f82326` | SynthereumVault | impl | live | no |
-| optimism | `0x26541b2d4065fe21c9694a36e83e421e200dca4e` | SynthereumStakingLPVault-2 | impl | live | no |
-| optimism | `0x2884c238e0a97fdc7aceff81c9b34d679ff6a2e8` | SynthereumVault | impl | live | no |
-| optimism | `0x2d0e006bb94409a4edfc3348a6703801e770bdb1` | SynthereumMultiLpLiquidityPool-2 | impl | live | no |
-| optimism | `0x313f266bcbd6465c10fc1f61acddbbdd60cc729b` | SynthereumMultiLpLiquidityPool | impl | live | no |
-| optimism | `0x40fed316f640fe2a1527d87718ea44aff1138706` | CreditLine | impl | live | no |
-| optimism | `0x689359561355ef829bb6d30a9c5b0e98c544cb11` | JarvisToWrapperConverter | impl | live | no |
-| optimism | `0x8689d5a117b199633a1ba5af4eb11ed0f5b4ff34` | JarvisToWrapperConverter | impl | live | no |
-| optimism | `0x89b3a08d6f73bb44b1ff182bd7bf0590dbfdb21a` | SynthereumLiquidityPoolLib | impl | live | no |
-| optimism | `0xaf9132b3afa36b36f6ddfff63fd40b9df43c0928` | SynthereumMultiLpLiquidityPool-3 | impl | live | no |
-| optimism | `0xd0d80f4b1cada983496e032063390beeaf783cc9` | SynthereumStakingLPVault-3 | impl | live | no |
-| polygon | `0x00fae04063ea815bf371fb95af98c38bfa306356` | FixedRateCurrency | impl | live | no |
-| polygon | `0x03bc653285f8527e1c877b18df285e66898864b3` | PerpetualPositionManagerPoolParty | impl | live | no |
-| polygon | `0x04d6206ccd424f2e82901ee1cd3982b0b9c409e9` | LendingManager | impl | live | no |
-| polygon | `0x0b620ef38ae7d32fc62c283b10c33973ef06b348` | OnChainLiquidityRouterV2 | impl | live | no |
-| polygon | `0x0e19a471cb537f88f9e4973c22b8b4dfda72ce9e` | ERC20Capped | impl | live | no |
-| polygon | `0x0ff93e7ce954a7ac2adbbe8f635513cbdb497405` | ElysianFields | impl | live | no |
-| polygon | `0x1190064b16fce6e992420d1fda6416d41a41b8be` | JarvisBrrrrr | impl | live | no |
-| polygon | `0x1418830ad554becaf76a4058eec6bee9ac002e19` | MintableBurnableSyntheticToken-2 | impl | live | no |
-| polygon | `0x1e522a57d089ebf7115a20d6f04dada8f8efcc26` | SynthereumRegistry-2 | impl | live | no |
-| polygon | `0x1ea5022a81bd0df1bb85085083cddd1e6a4cf61c` | SynthereumRegistry-3 | impl | live | no |
-| polygon | `0x2aa25770e92de3d61544e1c5245e8c968ddc34c5` | SynthereumDerivativeFactory | impl | live | no |
-| polygon | `0x34f7fd5cd0ddd4b27073475cd494dc74a9a4c8ab` | PerpetualPositionManagerPoolParty | impl | live | no |
-| polygon | `0x49a87a3f93e883a221f6375335efc41db631c3dc` | LendingManager | impl | live | no |
-| polygon | `0x586cce2d7ce78e9c9fd5c062ec6ee59880eac78f` | SynthereumPoolOnChainPriceFeed | impl | live | no |
-| polygon | `0x58a98967edfb2a350c4669a4df0f6bb4ce179a47` | CreditLine-2 | impl | live | no |
-| polygon | `0x6fb2415463e949af08ce50f83e94b7e008babf07` | ERC20Capped-2 | impl | live | no |
-| polygon | `0x81f1e35b3e05e9e8bb3eeb31d44d0ae399651e52` | LendingManager | impl | live | no |
-| polygon | `0x930a54d8af945f6d1bed5aaf63b63fab50a8197f` | SynthereumPoolOnChainPriceFeed | impl | live | no |
-| polygon | `0xa513a13db767d4609ece1c705dbeefb0f5822224` | PerpetualPositionManagerPoolParty | impl | live | no |
-| polygon | `0xb711f3a71c00d92ef862a4af2f584635dfe318b8` | AtomicSwap | impl | live | no |
-| polygon | `0xb7f8ae15ccb963a3a8cbc53b448d114f422d25e9` | Test | impl | live | no |
-| polygon | `0xd0b5376b91e06fb1296f803ae8879b49740ce89f` | PerpetualPositionManagerPoolParty | impl | live | no |
-| polygon | `0xf6b498b4b93340bf912dbc7620f5a92fdea05e4b` | Disputer | impl | live | no |
+| bsc | `0x906b6f2dee9f9decdf80020732dbf98f59f70f5b` | StakedJarvis | impl | live | no |
+| polygon | `0x04d6206ccd424f2e82901ee1cd3982b0b9c409e9` | LendingStorageManager | impl | live | yes |

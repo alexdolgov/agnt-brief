@@ -1,34 +1,38 @@
 {
   "component": "Tranche",
   "main_contract": "Tranche",
-  "source_file_count": 14,
-  "deployment_count": 3,
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Tranche\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
+      "chain": "optimism",
+      "chain_id": 10,
       "address": "0x393893caeb06b5c16728bb1e354b6c36942b1382",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391171"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x9c63a4c499b323a25d389da759c2ac1e385eec92",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
+      "chain": "optimism",
+      "chain_id": 10,
       "address": "0xefe32813dba3a783059d50e5358b9e3661218dad",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391203"
     }
   ]
 }

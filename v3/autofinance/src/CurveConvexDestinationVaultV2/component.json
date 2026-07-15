@@ -1,8 +1,16 @@
 {
   "component": "CurveConvexDestinationVaultV2",
   "main_contract": "CurveConvexDestinationVaultV2",
+  "source_entry_count": 85,
   "source_file_count": 85,
-  "deployment_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CurveConvexDestinationVaultV2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x0091fec1b75013d1b83f4bb82f0bec4e256758cb",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x10b45936a0af0a2cee162af415f10195a7967b2d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391538"
     },
     {
       "chain": "ethereum",
@@ -28,7 +30,9 @@
       "address": "0x23032a1ef0c082e619e3e64725e9d3b39c4e9d8c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391553"
     },
     {
       "chain": "ethereum",
@@ -36,15 +40,9 @@
       "address": "0x2fa4c8a4acda7746778dbd2f3b2fc5ca41d9b171",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x73047a73d0be0768c1132769aa6d2efd1cbf5ec6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391561"
     },
     {
       "chain": "ethereum",
@@ -52,7 +50,9 @@
       "address": "0x737f2e3a0958ef0fa77aec405db60f13cb7f004b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391603"
     },
     {
       "chain": "ethereum",
@@ -60,7 +60,9 @@
       "address": "0x88d0e045d91847a81e60f65073e4bc4fdef90ab0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391614"
     },
     {
       "chain": "ethereum",
@@ -68,15 +70,9 @@
       "address": "0x9828b1a3742457d70ce428ddd3aa51f84ffb37f2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xa7d64212b2aeeb7a969be36677ada2025ffe3b29",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391620"
     },
     {
       "chain": "ethereum",
@@ -84,7 +80,9 @@
       "address": "0xafd498862d5d0b816d7ce150959ba18f5c706a90",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391639"
     },
     {
       "chain": "ethereum",
@@ -92,7 +90,9 @@
       "address": "0xf4ceddf4e2aec1aa6b4ef2c64739ecac5c948fa2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391662"
     }
   ]
 }

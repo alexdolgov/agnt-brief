@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0
-pragma solidity ^0.8.15;
+pragma solidity 0.8.28;
 
 import "./IAppTreasury.sol";
 
@@ -17,6 +17,11 @@ interface IAppAuthority {
     /// @param newOperationsTreasury The address of the new operations treasury
     /// @param oldOperationsTreasury The address of the old operations treasury
     event OperationsTreasuryUpdated(address indexed newOperationsTreasury, address indexed oldOperationsTreasury);
+
+    /// @notice Emitted when the bridge address is updated
+    /// @param newBridge The address of the new bridge
+    /// @param oldBridge The address of the old bridge
+    event BridgeUpdated(address indexed newBridge, address indexed oldBridge);
 
     /// @notice Adds a new governor to the system
     /// @param _newGovernor The address of the new governor to add
@@ -78,6 +83,10 @@ interface IAppAuthority {
     /// @param _newTreasury The address of the new treasury
     function setTreasury(address _newTreasury) external;
 
+    /// @notice Sets the bridge address
+    /// @param _newBridge The address of the new bridge
+    function setBridge(address _newBridge) external;
+
     /// @notice Removes an existing reserve depositor from the system
     /// @param _oldReserveDepositor The address of the reserve depositor to remove
     function removeReserveDepositor(address _oldReserveDepositor) external;
@@ -130,6 +139,14 @@ interface IAppAuthority {
     /// @return IAppTreasury The treasury contract instance
     function treasury() external view returns (IAppTreasury);
 
+    /// @notice Returns the bridge address
+    /// @return address The address of the bridge
+    function bridge() external view returns (address);
+
+    /// @notice Returns if the contract is under emergency pause
+    /// @return bool True if the contract is under emergency pause, false otherwise
+    function underEmergencyPause() external view returns (bool);
+
     /// @notice Returns an array of all candidates for a given role
     /// @param role The role to get candidates for (e.g., GOVERNOR_ROLE, GUARDIAN_ROLE, etc.)
     /// @return candidates Array of addresses that are candidates for the given role
@@ -162,4 +179,10 @@ interface IAppAuthority {
     /// @notice Returns an array of all bond manager candidates
     /// @return candidates Array of addresses that are bond manager candidates
     function getAllBondManagerCandidates() external view returns (address[] memory candidates);
+
+    /// @notice Pauses the contract
+    function emergencyPause() external;
+
+    /// @notice Unpauses the contract
+    function emergencyUnpause() external;
 }

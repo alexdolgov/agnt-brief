@@ -1,10 +1,21 @@
 {
   "component": "WildcatSanctionsSentinel",
   "main_contract": "WildcatSanctionsSentinel",
+  "source_entry_count": 9,
   "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WildcatSanctionsSentinel\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2024-08-wildcat",
+    "https://github.com/code-423n4/2024-08-wildcat/blob/main/4naly3er-report.md"
+  ],
   "addresses": [
     {
       "chain": "chain-9745",
@@ -12,7 +23,9 @@
       "address": "0x37064895ba2c1e269eaf7ff32564818d08903f5b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404950"
     }
   ]
 }

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
-import { Errors } from "src/utils/Errors.sol";
+import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
 import { SystemComponent } from "src/SystemComponent.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
 import { ISequencerChecker } from "src/interfaces/security/ISequencerChecker.sol";
@@ -20,8 +20,8 @@ contract SequencerChecker is ISequencerChecker, SystemComponent {
         IAggregatorV3Interface _sequencerUptimeFeed,
         uint256 _gracePeriod
     ) SystemComponent(_systemRegistry) {
-        Errors.verifyNotZero(address(_sequencerUptimeFeed), "_sequencerUptimeFeed");
-        Errors.verifyNotZero(_gracePeriod, "_gracePeriod");
+        AutopilotErrors.verifyNotZero(address(_sequencerUptimeFeed), "_sequencerUptimeFeed");
+        AutopilotErrors.verifyNotZero(_gracePeriod, "_gracePeriod");
 
         sequencerUptimeFeed = _sequencerUptimeFeed;
         gracePeriod = _gracePeriod;
@@ -33,7 +33,7 @@ contract SequencerChecker is ISequencerChecker, SystemComponent {
         (uint80 roundId, int256 answer, uint256 startedAt,,) = sequencerUptimeFeed.latestRoundData();
 
         if (answer > 1 || roundId == 0 || startedAt == 0) {
-            revert Errors.InvalidDataReturned();
+            revert AutopilotErrors.InvalidDataReturned();
         }
 
         // Check answer. If sequencer is up make sure for appropriate amount of time

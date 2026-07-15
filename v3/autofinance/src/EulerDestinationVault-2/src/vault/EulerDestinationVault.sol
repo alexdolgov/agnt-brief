@@ -13,6 +13,7 @@ import { DestinationVault, IDestinationVault } from "src/vault/DestinationVault.
 import { Roles } from "src/libs/Roles.sol";
 import { Errors } from "src/utils/Errors.sol";
 import { EulerRewardLib } from "src/destinations/adapters/rewards/EulerRewardLib.sol";
+import { IDistributor } from "src/interfaces/external/merkl/IDistributor.sol";
 
 /// @title EulerDestinationVault
 /// @dev This contract integrates with Euler protocol and handles rewards via EulerRewardLib
@@ -65,6 +66,12 @@ contract EulerDestinationVault is ERC4626DestinationVault {
     /// @notice Address of the rEuler token for unwrapping
     address public rEulToken;
 
+    /// @notice True if claiming permanent rewards on next cycle or euler merkl/stream
+    bool public claimPerm;
+
+    /// @dev Reward tokens that never get cleared, we try every time
+    EnumerableSet.AddressSet internal _permRewardTokens;
+
     struct InitEulerParams {
         /// @notice Address of the rEuler token
         address rEulToken;
@@ -108,6 +115,32 @@ contract EulerDestinationVault is ERC4626DestinationVault {
         }
     }
 
+    /// @notice Add/remove a token that is permanently claimable
+    /// @dev Does not emit state change events.
+    /// @dev If a tracked token is later added its on us to remove it from here.
+    function togglePermReward(
+        address token
+    ) external {
+        _ensureCallerIsManager();
+        if (isTrackedToken(token)) {
+            revert Errors.InvalidToken(token);
+        }
+        Errors.verifyNotZero(token, "token");
+        if (!_permRewardTokens.add(token)) {
+            // slither-disable-next-line unused-return
+            _permRewardTokens.remove(token);
+        }
+    }
+
+    /// @notice Allow a trusted operator to claim on behalf of this account
+    /// @dev Does not emit state change events
+    /// @param distributor Token distributor we'll call the fn on
+    /// @param trustedOperator Account allowed to claim on behalf of the Destination
+    function toggleMerklOperator(address distributor, address trustedOperator) external {
+        _ensureCallerIsManager();
+        IDistributor(distributor).toggleOperator(address(this), trustedOperator);
+    }
+
     /// @inheritdoc IDestinationVault
     function exchangeName() external pure override returns (string memory) {
         return "euler";
@@ -142,7 +175,8 @@ contract EulerDestinationVault is ERC4626DestinationVault {
     /// @param tokens The addresses of the reward tokens to register
     function registerRewardTokens(
         address[] memory tokens
-    ) external hasRole(Roles.EULER_REWARD_MANAGER) {
+    ) external {
+        _ensureCallerIsManager();
         EulerRewardLib.registerRewardTokens(_underlying, tokens, address(this));
     }
 
@@ -150,7 +184,8 @@ contract EulerDestinationVault is ERC4626DestinationVault {
     /// @param tokens The addresses of the reward tokens to remove
     function removeRewardTokens(
         address[] memory tokens
-    ) external hasRole(Roles.EULER_REWARD_MANAGER) {
+    ) external {
+        _ensureCallerIsManager();
         EulerRewardLib.removeRewardTokens(tokens);
     }
 
@@ -159,7 +194,8 @@ contract EulerDestinationVault is ERC4626DestinationVault {
     /// @param distributors The addresses of the Merkle distributors to add
     function addMerkleDistributors(
         address[] calldata distributors
-    ) external hasRole(Roles.EULER_REWARD_MANAGER) {
+    ) external {
+        _ensureCallerIsManager();
         EulerRewardLib.addMerkleDistributors(distributors);
     }
 
@@ -168,7 +204,8 @@ contract EulerDestinationVault is ERC4626DestinationVault {
     /// @param distributors The addresses of the Merkle distributors to remove
     function removeMerkleDistributors(
         address[] calldata distributors
-    ) external hasRole(Roles.EULER_REWARD_MANAGER) {
+    ) external {
+        _ensureCallerIsManager();
         EulerRewardLib.removeMerkleDistributors(distributors);
     }
 
@@ -218,9 +255,49 @@ contract EulerDestinationVault is ERC4626DestinationVault {
         EulerRewardLib.claimMerkleRewards(distributor, tokens, amounts, proofs);
     }
 
+    /// @notice Returns reward tokens that are attempted claim each time
+    function getPermRewardTokens() external view returns (address[] memory) {
+        return _permRewardTokens.values();
+    }
+
     /// @inheritdoc DestinationVault
-    function _collectRewards() internal override returns (uint256[] memory, address[] memory) {
-        // slither-disable-next-line unused-return
-        return EulerRewardLib.collectRewards(_underlying, rEulToken);
+    /// @dev Permanent rewards are just tokens we always try to claim because we get them from Merkl
+    /// @dev We toggle between claiming permanent rewards and euler-merkl/stream rewards.
+    /// @dev In the event we try to claim permanent rewards and we don't sent send anything, try euler-merkl/stream
+    function _collectRewards() internal override returns (uint256[] memory amounts, address[] memory tokens) {
+        bool cp = claimPerm;
+        bool permSent = false;
+        if (cp) {
+            (amounts, tokens, permSent) = _claimPermRewards();
+        }
+
+        if (!cp || !permSent) {
+            // slither-disable-next-line unused-return
+            (amounts, tokens) = EulerRewardLib.collectRewards(_underlying, rEulToken);
+        }
+
+        claimPerm = !cp;
+    }
+
+    function _claimPermRewards() private returns (uint256[] memory amounts, address[] memory tokens, bool sent) {
+        tokens = _permRewardTokens.values();
+        uint256 numTokens = tokens.length;
+
+        amounts = new uint256[](numTokens);
+
+        for (uint256 i = 0; i < numTokens; ++i) {
+            address token = tokens[i];
+            uint256 amount = IERC20Metadata(token).balanceOf(address(this));
+            amounts[i] = amount;
+            if (amount > 0) {
+                IERC20Metadata(token).safeTransfer(msg.sender, amount);
+                sent = true;
+            }
+        }
+    }
+
+    /// @dev Revert if caller isn't EULER_REWARD_MANAGER
+    function _ensureCallerIsManager() private view {
+        if (!accessController.hasRole(Roles.EULER_REWARD_MANAGER, msg.sender)) revert Errors.AccessDenied();
     }
 }

@@ -1,10 +1,27 @@
 {
   "component": "RocketStorage",
   "main_contract": "RocketStorage",
+  "source_entry_count": 3,
   "source_file_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RocketStorage\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://diligence.security/audits/2021/04/rocketpool",
+    "https://github.com/trailofbits/publications/blob/master/reviews/RocketPool.pdf",
+    "https://rocketpool.net/files/audits/cantina-audit-saturn-1.pdf",
+    "https://rocketpool.net/files/audits/consensys-audit-atlas.pdf",
+    "https://rocketpool.net/files/audits/consensys-audit-redstone.pdf",
+    "https://rocketpool.net/files/audits/sigma-prime-audit-houston.pdf",
+    "https://rocketpool.net/files/audits/sigma-prime-audit.pdf",
+    "https://rocketpool.net/files/sigma-prime-audit.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +29,9 @@
       "address": "0x1d8f8f00cfa6758d7be78336684788fb0ee0fa46",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403940"
     }
   ]
 }

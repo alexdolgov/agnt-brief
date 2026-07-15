@@ -1,7 +1,15 @@
 {
   "component": "RswethLRTCalculator",
   "main_contract": "RswethLRTCalculator",
-  "source_file_count": 68,
+  "source_entry_count": 64,
+  "source_file_count": 64,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RswethLRTCalculator\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xe861c6eb5376ada41bcc238080439724fe15b90f",
+      "address": "0xeedb3dd86f690a8c76006d606db7951322b6741a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391660"
     }
   ]
 }

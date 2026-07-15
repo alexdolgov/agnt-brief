@@ -1,7 +1,26 @@
 {
   "component": "DecubateVestingV2",
   "main_contract": "DecubateVestingV2",
+  "source_entry_count": 7,
   "source_file_count": 7,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/DecubateVestingv2.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-c7d2819a6a4b-DecubateVestingv2.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libraries/DateTime.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-873ce1583dfa-DateTime.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DecubateVestingV2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +31,9 @@
       "address": "0x3a53269cae3281155e51d06ffe14fde8dc3662f7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392683"
     }
   ]
 }

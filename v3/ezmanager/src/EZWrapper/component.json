@@ -1,12 +1,18 @@
 {
   "component": "EZWrapper",
   "main_contract": "EZWrapper",
+  "source_entry_count": 14,
   "source_file_count": 14,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EZWrapper\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 5,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/EZManagerCL/EZManagerContracts/blob/master/audits/Valves_v1_5.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -14,7 +20,9 @@
       "address": "0x2e631aa51584822370a81e8614999aa483db574f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394484"
     },
     {
       "chain": "bsc",
@@ -22,7 +30,9 @@
       "address": "0xfdbeb935e2097d9fdff27a73f89b1890e681d48d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394499"
     },
     {
       "chain": "chain-999",
@@ -30,7 +40,9 @@
       "address": "0x5afebf92e99ccb0b13215bebe85dabc63f8ec338",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394503"
     },
     {
       "chain": "base",
@@ -38,7 +50,9 @@
       "address": "0x180670ccb476624566e78618d467ef57ebbf1921",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394510"
     },
     {
       "chain": "arbitrum",
@@ -46,7 +60,9 @@
       "address": "0x91d0acacb9979e2332d05d370ff94e676516c449",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394522"
     }
   ]
 }

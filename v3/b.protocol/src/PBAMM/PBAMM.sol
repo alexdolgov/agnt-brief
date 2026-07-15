@@ -1,9 +1,24 @@
+/*
+B.PROTOCOL TERMS OF USE
+=======================
+
+THE TERMS OF USE CONTAINED HEREIN (THESE “TERMS”) GOVERN YOUR USE OF B.PROTOCOL, WHICH IS A DECENTRALIZED PROTOCOL ON THE ETHEREUM BLOCKCHAIN (the “PROTOCOL”) THAT enables a backstop liquidity mechanism FOR DECENTRALIZED LENDING PLATFORMS (“DLPs”).  
+PLEASE READ THESE TERMS CAREFULLY AT https://github.com/backstop-protocol/Terms-and-Conditions, INCLUDING ALL DISCLAIMERS AND RISK FACTORS, BEFORE USING THE PROTOCOL. BY USING THE PROTOCOL, YOU ARE IRREVOCABLY CONSENTING TO BE BOUND BY THESE TERMS. 
+IF YOU DO NOT AGREE TO ALL OF THESE TERMS, DO NOT USE THE PROTOCOL. YOUR RIGHT TO USE THE PROTOCOL IS SUBJECT AND DEPENDENT BY YOUR AGREEMENT TO ALL TERMS AND CONDITIONS SET FORTH HEREIN, WHICH AGREEMENT SHALL BE EVIDENCED BY YOUR USE OF THE PROTOCOL.
+Minors Prohibited: The Protocol is not directed to individuals under the age of eighteen (18) or the age of majority in your jurisdiction if the age of majority is greater. If you are under the age of eighteen or the age of majority (if greater), you are not authorized to access or use the Protocol. By using the Protocol, you represent and warrant that you are above such age.
+
+License; No Warranties; Limitation of Liability;
+(a) The software underlying the Protocol is licensed for use in accordance with the 3-clause BSD License, which can be accessed here: https://opensource.org/licenses/BSD-3-Clause.
+(b) THE PROTOCOL IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS", “WITH ALL FAULTS” and “AS AVAILABLE” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+(c) IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+*/
+
 // Sources flattened with hardhat v2.1.1 https://hardhat.org
 
 // File contracts/Interfaces/IBorrowerOperations.sol
 
 
-// SPDX-License-Identifier: MIT
+
 pragma solidity 0.6.11;
 
 // Common interface for the Trove Manager.
@@ -3205,6 +3220,16 @@ contract Ownable {
         return msg.sender == _owner;
     }
 
+    function transferOwnership(address newOwner) public virtual onlyOwner {
+        require(newOwner != address(0), "Ownable: new owner is the zero address");
+        _setOwner(newOwner);
+    }
+
+    function _setOwner(address newOwner) private {
+        address oldOwner = _owner;
+        _owner = newOwner;
+        emit OwnershipTransferred(oldOwner, newOwner);
+    }
     /**
      * @dev Leaves the contract without owner. It will not be possible to call
      * `onlyOwner` functions anymore.
@@ -4247,7 +4272,6 @@ contract StabilityPool is LiquityBase, Ownable, CheckContract, IStabilityPool {
 
 // File contracts/B.Protocol/crop.sol
 
-
 // Copyright (C) 2021 Dai Foundation
 //
 // This program is free software: you can redistribute it and/or modify
@@ -4504,7 +4528,7 @@ contract PriceFormula {
             uint d = (A.mul(2).sub(1).mul(sum));
             sum = n / d.add(dP.mul(3));
 
-            if(sum <= prevSum.add(1) && prevSum.add(1) <= sum) break;
+            if(sum <= prevSum.add(1) && prevSum <= sum.add(1)) break;
         }
 
         return sum;
@@ -4525,7 +4549,7 @@ contract PriceFormula {
             uint d = y.mul(2).add(b).sub(sum); 
             y = n / d;
 
-            if(y <= yPrev.add(1) && yPrev.add(1) <= y) break;
+            if(y <= yPrev.add(1) && yPrev <= y.add(1)) break;
         }
 
         return yBalance.sub(y).sub(1);
@@ -4690,8 +4714,12 @@ contract BAMM is CropJoinAdapter, PriceFormula, Ownable {
 
         uint totalValue = lusdValue.add(ethValue.mul(price) / PRECISION);
 
+        // this is in theory not reachable. if it is, better halt deposits
+        // the condition is equivalent to: (totalValue = 0) ==> (total = 0)
+        require(totalValue > 0 || total == 0, "deposit: system is rekt");
+
         uint newShare = PRECISION;
-        if(totalValue > 0) newShare = total.mul(lusdAmount) / totalValue;
+        if(total > 0) newShare = total.mul(lusdAmount) / totalValue;
 
         // deposit
         require(LUSD.transferFrom(msg.sender, address(this), lusdAmount), "deposit: transferFrom failed");
@@ -4758,8 +4786,11 @@ contract BAMM is CropJoinAdapter, PriceFormula, Ownable {
     }
 
     // get ETH in return to LUSD
-    function swap(uint lusdAmount, address payable dest) public payable returns(uint) {
+    function swap(uint lusdAmount, uint minEthReturn, address payable dest) public returns(uint) {
         (uint ethAmount, uint feeAmount) = getSwapEthAmount(lusdAmount);
+
+        require(ethAmount >= minEthReturn, "swap: low return");
+
         LUSD.transferFrom(msg.sender, address(this), lusdAmount);
         SP.provideToSP(lusdAmount, frontEndTag);
 
@@ -4781,7 +4812,7 @@ contract BAMM is CropJoinAdapter, PriceFormula, Ownable {
         uint256 /* conversionRate */,
         bool /* validate */
     ) external payable returns (bool) {
-        return swap(srcAmount, destAddress) > 0;
+        return swap(srcAmount, 0, destAddress) > 0;
     }
 
     function getConversionRate(

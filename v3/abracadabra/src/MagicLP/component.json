@@ -1,34 +1,28 @@
 {
   "component": "MagicLP",
   "main_contract": "MagicLP",
-  "source_file_count": 20,
-  "deployment_count": 3,
+  "source_entry_count": 16,
+  "source_file_count": 16,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MagicLP\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x2958db359d22411cdf9825f8b27f17350a6fc6bb",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6c843d25a2b0ee3e8844492e891dc7257645023a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x522cbaabb594d538f0813927b18b99f2638f1fad",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x61ff8adceb5a5f70e485e5e66266f009c653253a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390566"
     }
   ]
 }

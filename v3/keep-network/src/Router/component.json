@@ -1,34 +1,28 @@
 {
   "component": "Router",
   "main_contract": "Router",
-  "source_file_count": 36,
-  "deployment_count": 3,
+  "source_entry_count": 30,
+  "source_file_count": 30,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Router\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x7fb5895cbcb3264dc7984e8f61037f5d37fde90b",
+      "address": "0x80226fc0ee2b096224eeac085bb9a8cba1146f7d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x8c6d31fc27770ebcc5593c9d10adb9211181ed46",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xe561d5e02207fb5eb32cca20a699e0d8919a1476",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395766"
     }
   ]
 }

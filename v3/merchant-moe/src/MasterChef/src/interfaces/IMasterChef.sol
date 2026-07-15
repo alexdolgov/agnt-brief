@@ -16,7 +16,6 @@ interface IMasterChef {
     error MasterChef__ZeroAddress();
     error MasterChef__NotMasterchefRewarder();
     error MasterChef__CannotRenounceOwnership();
-    error MasterChef__MintFailed();
 
     struct Farm {
         Amounts.Parameter amounts;
@@ -34,6 +33,10 @@ interface IMasterChef {
     event ExtraRewarderSet(uint256 indexed pid, IMasterChefRewarder extraRewarder);
 
     event TreasurySet(address indexed treasury);
+
+    event FutureFundingSet(address indexed futureFunding);
+
+    event TeamSet(address indexed team);
 
     function add(IERC20 token, IMasterChefRewarder extraRewarder) external;
 
@@ -68,11 +71,17 @@ interface IMasterChef {
 
     function getTreasury() external view returns (address);
 
+    function getFutureFunding() external view returns (address);
+
+    function getTeam() external view returns (address);
+
     function getTreasuryShare() external view returns (uint256);
 
-    function getRewarderFactory() external view returns (IRewarderFactory);
+    function getFutureFundingShare() external view returns (uint256);
 
-    function getLBHooksManager() external view returns (address);
+    function getTeamShare() external view returns (uint256);
+
+    function getRewarderFactory() external view returns (IRewarderFactory);
 
     function getVeMoe() external view returns (IVeMoe);
 
@@ -81,6 +90,10 @@ interface IMasterChef {
     function setMoePerSecond(uint96 moePerSecond) external;
 
     function setTreasury(address treasury) external;
+
+    function setFutureFunding(address futureFunding) external;
+
+    function setTeam(address team) external;
 
     function updateAll(uint256[] calldata pids) external;
 

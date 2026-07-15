@@ -1,0 +1,13 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "azuro",
+  "missing": [
+    {
+      "chain_id": 100,
+      "chain": "gnosis",
+      "address": "0x319c3936043611c6a47f997f14b9c91a455ea8f4",
+      "canonical_source_address": null
+    }
+  ]
+}

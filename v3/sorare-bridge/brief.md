@@ -1,44 +1,86 @@
 # Agentic Audit Brief: Sorare Bridge
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Sorare Bridge (`sorare-bridge`)
 - Website: [https://sorare.com/](https://sorare.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:55.805Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 28 unique implementations (34 raw deployments)
+- Contract surface: 1 unique implementations (1 raw deployments)
+- Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $2,840,787.95
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Canonical Bridge. Structurally: 42 project-authored contract(s) across 1 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Sorare Bridge. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 4 functional families. Its contracts share 65 common project-authored base contract(s) (merkleverifier, imerkleverifier, factregistry). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 1 contract row(s) across ethereum. Structural roles: 1 core. 1 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 1
+- Structural roles: core (1)
+- Contract kinds: contract (1)
+- Detected standards: erc1967proxy (1)
+- Frameworks: none
+- Upgradeable-pattern rows: 1
+
+## Fork Analysis
+
+0 of 1 contracts are derived from known codebases. 1 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- Proxy (`0xf5c9f9...995826`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 207; live-surface contracts included: 34 (14 live, 20 unknown).
-- Excluded by liveness: 173 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 1/1 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/8 (0.0%)
-- Deployed-live implementations: 8 of 28 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/8
-- Verified + Unaudited implementations: 8
+- Coverage of address-book-owned deployed-live implementations: 0/1 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/1
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 20
-- Unique implementations: 28
-- Raw deployments: 34
+- Unverified implementations: 0
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,18 +99,11 @@ The protocol comprises 4 functional families. Its contracts share 65 common proj
 
 - None
 
-### ⚠️ Verified + Unaudited (8)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| CallProxy | unknown | ethereum | n/a | [`0x473124...5bdb60`](./contracts/ethereum-1/0x47312450b3ac8b5b8e247a6bb6d523e7605bdb60/) | ⚠️ Unaudited |
-| Committee | unknown | ethereum | n/a | 6 deployments: ethereum [`0x16ba0f...0aa295`](./contracts/ethereum-1/0x16ba0f221664a5189cf2c1a7af0d3abfc70aa295/); ethereum `0x1e6014...6169cb`; ethereum `0x879cd5...bbbe32`; ethereum `0x894729...7a32c0`; ethereum `0x8a8e80...2e2bb1`; ethereum `0x90ceb3...ee9542` | ⚠️ Unaudited |
-| FinalizableCommittee | unknown | ethereum | n/a | [`0x4f8b2d...bc4446`](./contracts/ethereum-1/0x4f8b2dd49d958b6ac3e5f4705bf1a9ada5bc4446/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | [`0xcc9289...f9fd2b`](./contracts/ethereum-1/0xcc928977e4a75d25099e7da7b6fd79dac2f9fd2b/) | ⚠️ Unaudited |
-| StarkExchangeMigrationV2 | operational_periphery | ethereum | n/a | [`0x5fdcca...8e27e9`](./contracts/ethereum-1/0x5fdcca53617f4d2b9134b29090c87d01058e27e9/) | ⚠️ Unaudited |
-| StarknetERC20Bridge | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0xbb3400...747605`](./contracts/ethereum-1/0xbb3400f107804dfb482565ff1ec8d8ae66747605/); ethereum `0xf6080d...f92816` | ⚠️ Unaudited |
-| StarknetEthBridge | operational_periphery | ethereum | n/a | [`0xae0ee0...48d419`](./contracts/ethereum-1/0xae0ee0a63a2ce6baeeffe56e7714fb4efe48d419/) | ⚠️ Unaudited |
-| StarknetTokenBridge | operational_periphery | ethereum | n/a | [`0x283751...d9b5b4`](./contracts/ethereum-1/0x283751a21eafbfcd52297820d27c1f1963d9b5b4/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| StarkExchange | unknown | project_anchor | own_supporting | 1 | ethereum | unit-392763 | `0xf5c9f9...995826` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,52 +117,39 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (20)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x020517...1f43bb` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x0b72b9...b7d322` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x0f400c...190c45` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2823d6...544b01` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2ae851...cfc859` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x45697c...e6784f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x514393...de1e7b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x579b2d...55a589` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x59aafd...1646a8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5eab21...df77be` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x64e48e...0db43a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x655584...639d93` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8f6e52...bfd614` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xaec1fb...52e096` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xbe0dff...39bf10` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd387d1...030c8f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xd75f0b...825fb9` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe75534...f3f9a6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf5af62...6dd2bc` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xfc126e...f6f5a6` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0xf5c9f9...995826` | StarkExchange | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 28 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -135,6 +157,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

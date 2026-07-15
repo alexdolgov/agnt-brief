@@ -1,0 +1,139 @@
+{
+  "artifact_version": "normalized_brief_export_input_receipt@v1",
+  "generated_at": "2026-07-15T18:00:00.000Z",
+  "canonical_network_policy": "offline_cache_only",
+  "authority": {
+    "production_database": "audit_coverage_db_v2",
+    "source_database": "scratch_scope_inventory_match_full_20260714",
+    "activation_id": "scope-prod-20260715-v1",
+    "match_stage_run_id": "normalized-scope-cd7f7fe7cc0412523c9b5672/scope_matching/4",
+    "review_batch_id": "normalized-scope-review-5a88b837407c7e181e922ff95e1688a6",
+    "topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+    "liveness_stage_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+    "fork_detection_run_id": "fork-structural-canonical-production-20260712",
+    "deployer_decision_run_id": "deployer-candidate-production-20260712",
+    "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
+    "match_closure_sha256": "8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6",
+    "review_closure_sha256": "ba1f6f291d2f91f0993306e7ee30a8c54c9b49bfb0a4757f9de2abd218c8fd1d",
+    "topography_closure_sha256": "a8c3fc7d9dc82143989157bb6855fbb7c23dddc63b6ddb6cd2d84d8d4aa4eca2",
+    "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd"
+  },
+  "database_identities": {
+    "production": {
+      "database_name": "audit_coverage_db_v2",
+      "server_address": "127.0.0.1/32",
+      "server_port": 5432,
+      "current_user": "alexdolgov",
+      "server_version_num": "140020",
+      "system_identifier": "7595613023809156333"
+    },
+    "source": {
+      "database_name": "scratch_scope_inventory_match_full_20260714",
+      "server_address": "127.0.0.1/32",
+      "server_port": 5432,
+      "current_user": "alexdolgov",
+      "server_version_num": "140020",
+      "system_identifier": "7595613023809156333"
+    }
+  },
+  "counts": {
+    "projects": 1359,
+    "published_scope_projects": 928,
+    "blocked_no_audit_authority_projects": 431,
+    "eligible_audit_results": 6467,
+    "matched_audit_results": 1447,
+    "no_match_audit_results": 5020,
+    "selected_contract_rows": 4350,
+    "inventory_outcomes": 266821,
+    "eligible_liveness_results": 31162,
+    "logic_topography_rows": 15386
+  },
+  "set_hashes": {
+    "project_set_sha256": "62f2bd678175619a5a430f62b50bedd967a8897e3c0312c234f191ae28391d4d",
+    "project_state_set_sha256": "1cf11cf555e1b92443043e1e74e1f891fcd393958866fd8b873acc4e6d0a998e",
+    "selected_contract_set_sha256": "498bae900b719896c0a363832bd1b2cfe49d14e481bf10c4949523afc86a377c",
+    "eligible_audit_identity_set_sha256": "34225297304fc294d3806edd4198a2e14e11875210e28c766cff39a2063ff41d",
+    "normalized_audit_result_identity_set_sha256": "34225297304fc294d3806edd4198a2e14e11875210e28c766cff39a2063ff41d",
+    "logic_topography_content_set_sha256": "da6d1c2854e00d554ee061eabd7fdad372a369683f230701312bc209798aa462"
+  },
+  "source_receipts": [
+    {
+      "kind": "production_activation",
+      "path": "/Users/alexdolgov/Meat-audit/meta-audit/exports/receipted_production_scope_activation_20260715_v1_receipt.json",
+      "bytes": 11381,
+      "file_sha256": "77d4319a8c466ddb46fec8ed49a154720ea0bf0c0f8b0ab3f3e58c26282058fd",
+      "content_receipt_sha256": "daacfe5fdfe44910ed693f840a292968d135e0ef67122e0b6a2a836cdd2334b8"
+    },
+    {
+      "kind": "match_finalization",
+      "path": "/Users/alexdolgov/Meat-audit/meta-audit/exports/normalized_scope_match_finalization_20260715_v4_receipt.json",
+      "bytes": 3449982,
+      "file_sha256": "ac7133bc2233e9ffbd3b36e31a0140773fb0b678c80d4a79a226bdc11bc6573e",
+      "content_receipt_sha256": "4e9418853db573f6a35dbde46796a4fffd87ed774d4cfd89caedb4af7b6af1c0"
+    },
+    {
+      "kind": "scope_review",
+      "path": "/Users/alexdolgov/Meat-audit/meta-audit/exports/normalized_scope_review_with_exclusion_20260715_v1_receipt.json",
+      "bytes": 3450842,
+      "file_sha256": "22217a9193e1829ca95abfd87185ae1b3707091101e327ec2296e736d1d153c9",
+      "content_receipt_sha256": "79cd0af0e286fe7fbc729df85f1e3ee7ef06708df920c0b30bf20630a6e045fd"
+    },
+    {
+      "kind": "logic_topography",
+      "path": "/Users/alexdolgov/Meat-audit/meta-audit/exports/logic_topography_normalized_candidate_20260715_v1_receipt.json",
+      "bytes": 3872,
+      "file_sha256": "f2d72010e362097d2e2cae0bb7c7413e93613a7e9126ee8f152a229fbc746208",
+      "content_receipt_sha256": "b8855b3867932d751aad17296211c8e4a496315814c95030030aa75ecce46948"
+    },
+    {
+      "kind": "operational_liveness",
+      "path": "/Users/alexdolgov/Meat-audit/meta-audit/exports/operational_liveness_topology_full_20260715_v2_receipt.json",
+      "bytes": 2942,
+      "file_sha256": "e107247f78bae279d311dc3172ed5fb0d179cefd8ba5e2311cb893bdee5da153",
+      "content_receipt_sha256": null
+    }
+  ],
+  "consumer_sources": [
+    {
+      "path": "/Users/alexdolgov/Meat-audit/meta-audit/src/scripts/v2/lib/normalized_brief_export_authority.ts",
+      "bytes": 42164,
+      "sha256": "ca5028c6cb14a348d7cbfbc7ceb8d48ea4dc872f16ac4d4c278c9aafa1cfbcbe"
+    },
+    {
+      "path": "/Users/alexdolgov/Meat-audit/meta-audit/src/scripts/v2/lib/canonical_topography_runset.ts",
+      "bytes": 5896,
+      "sha256": "ab3835b70046cc10c8a968b4bef783c2cf9fd44c9fc01869ffead260a583aa9e"
+    },
+    {
+      "path": "/Users/alexdolgov/Meat-audit/meta-audit/src/scripts/v2/stages/run_brief_generation.ts",
+      "bytes": 230966,
+      "sha256": "204f3d0129da1015e2aaedff92c0b9f159d41c6dee82626e160548b03a35247b"
+    },
+    {
+      "path": "/Users/alexdolgov/Meat-audit/meta-audit/src/scripts/v2/stages/run_source_extraction.ts",
+      "bytes": 112910,
+      "sha256": "86c531ff5af99807148dc8c59d0f8cb9d60c958efa5bde943f12e03ccd412294"
+    },
+    {
+      "path": "/Users/alexdolgov/Meat-audit/meta-audit/src/scripts/v2/tools/export_repo_tree.ts",
+      "bytes": 31509,
+      "sha256": "1773aa6ef9f2a35eabab9848c235c77adae182306f3a5cd04bd216658d3f6749"
+    }
+  ],
+  "consumer_source_set_sha256": "0d90e22fb745f660d9b15bf1304a4eb90a782b4b94bc28d9665ce90a9a53e8a9",
+  "authority_inputs": [
+    "scope_inventory_current_production_activation_v1",
+    "scope_inventory_current_production_project_states_v1",
+    "scope_inventory_current_production_selected_contracts_v1",
+    "normalized_scope_audit_results",
+    "normalized_scope_inventory_outcomes",
+    "contract_operational_liveness",
+    "contract_logic_topography"
+  ],
+  "rejected_authority_inputs": [
+    "project_audit_scope",
+    "project_audit_scope_analysis",
+    "historical_stage16_trace_mtime"
+  ],
+  "receipt_sha256": "7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213"
+}

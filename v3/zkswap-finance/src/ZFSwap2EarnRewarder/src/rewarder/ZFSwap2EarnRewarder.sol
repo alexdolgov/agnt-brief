@@ -8,7 +8,6 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-
 contract ZFSwap2EarnRewarder is Ownable, ReentrancyGuard {
     using SafeERC20 for IERC20;
 
@@ -20,7 +19,7 @@ contract ZFSwap2EarnRewarder is Ownable, ReentrancyGuard {
     bool public isClaimEnabled;
 
     event Claimed(uint256 indexed cycleId, address indexed account, uint256 amount);
-    event AddCycle(uint256 cycleId);
+    event AddCycle(uint256 cycleId, bytes32 merkleRoot);
     event EditCycle(uint256 cycleId, bytes32 merkleRoot);
     event Recovered(address indexed token, uint256 amount);
 
@@ -37,11 +36,11 @@ contract ZFSwap2EarnRewarder is Ownable, ReentrancyGuard {
     /// @notice Add a new reward cycle
     /// @param merkleRoot The Merkle root for the new cycle
     function addCycle(bytes32 merkleRoot) external onlyOwner {
-        uint256 _currentCycle = currentCycle;
-        merkleRoots[currentCycle] = merkleRoot;
-        currentCycle = _currentCycle + 1;
+        uint256 _newCycle = currentCycle + 1;
+        merkleRoots[_newCycle] = merkleRoot;
+        currentCycle = _newCycle;
         isClaimEnabled = true;
-        emit AddCycle(currentCycle);
+        emit AddCycle(_newCycle, merkleRoot);
     }
 
     /// @notice End the current reward cycle

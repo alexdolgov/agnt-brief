@@ -1,34 +1,28 @@
 {
   "component": "Leverager",
   "main_contract": "Leverager",
-  "source_file_count": 12,
-  "deployment_count": 3,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Leverager\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x06502df8986d53bb44444ba065e42f53f475d7eb",
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x4054f478ec834fbdb2b192f144d4615d31bda9a6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0xc98b936d7540ba67c2260916ae91b3eeb9eefff3",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0xe10157b95f7c905ae00f3257851f9d8e56c8200a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395945"
     }
   ]
 }

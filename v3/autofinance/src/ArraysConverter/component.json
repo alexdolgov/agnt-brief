@@ -1,42 +1,28 @@
 {
   "component": "ArraysConverter",
   "main_contract": "ArraysConverter",
+  "source_entry_count": 2,
   "source_file_count": 2,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ArraysConverter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0xb93c1927c12499106c4b14e86924a41a75dae2f2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-9745",
-      "chain_id": 9745,
-      "address": "0x09708019cf2527ad3263885ff712fc79cec5d0c2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0xb6ab7ae9eb120a8c3d2b7649082e55907ae5940f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x34142120f9726502891cbcdee7604644115480a8",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391827"
     }
   ]
 }

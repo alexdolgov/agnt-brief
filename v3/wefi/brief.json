@@ -1,22 +1,57 @@
 {
-  "schema_version": "2.0",
+  "schema_version": "3.0",
   "project_key": "wefi",
-  "generated_at": "2026-07-03T21:07:11.984Z",
-  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-4c3e",
+  "generated_at": "2026-07-15T18:00:00.000Z",
+  "authority": {
+    "activation_id": "scope-prod-20260715-v1",
+    "production_closure_sha256": "38a124a34bf27378c85726318ca5f9408641faecd45c04ee5b82ad07a65cbc83",
+    "match_closure_sha256": "8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6",
+    "review_closure_sha256": "ba1f6f291d2f91f0993306e7ee30a8c54c9b49bfb0a4757f9de2abd218c8fd1d",
+    "topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+    "topography_closure_sha256": "a8c3fc7d9dc82143989157bb6855fbb7c23dddc63b6ddb6cd2d84d8d4aa4eca2",
+    "liveness_stage_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+    "liveness_closure_sha256": "e1855078572b4a5868cbe2ff93c7ad47c89e29b1b8209e48161f110e31790ddd",
+    "fork_detection_run_id": "fork-structural-canonical-production-20260712",
+    "deployer_decision_run_id": "deployer-candidate-production-20260712",
+    "export_input_receipt_sha256": "7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213",
+    "canonical_network_policy": "offline_cache_only"
+  },
+  "production_state": {
+    "state_kind": "published_scope",
+    "cohort_ordinal": 682,
+    "raw_selected_contract_rows": 0,
+    "selected_audits": 0,
+    "eligible_audit_results": 3,
+    "matched_audit_results": 0,
+    "no_match_audit_results": 3
+  },
+  "missing_evidence": {
+    "audit_dates": [
+      14125
+    ]
+  },
+  "pipeline_run_id": "brief-generation-scope-prod-20260715-v1",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "address_book_own_implementations": 1,
+    "address_book_context_implementations": 0,
+    "address_book_unclassified_implementations": 0,
+    "non_address_book_implementations": 0,
+    "third_party_or_infra_implementations": 0,
+    "standard_proxy_or_library_implementations": 0,
+    "address_book_proxy_deployments": 0,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
-    "coverage_pct": 0,
+    "coverage_pct": null,
     "total_audits": 3,
     "direct_audits": 3,
     "inherited_audits": 0,
@@ -41,8 +76,28 @@
       "unknown": 1
     },
     "live_implementations": 1,
-    "live_verified_implementations": 1,
+    "live_verified_implementations": 0,
     "live_audited_implementations": 0,
+    "coverage_basis": "address_book_owned_live_verified_implementations",
+    "live_verified_own_confirmed": 0,
+    "live_audited_own_confirmed": 0,
+    "live_verified_needs_review": 0,
+    "live_verified_excluded_standard": 0,
+    "live_verified_excluded_third_party": 0,
+    "live_verified_excluded_inventory_pollution": 0,
+    "coverage_confidence": "low",
+    "coverage_assessment_status": "not_assessable",
+    "coverage_assessment_note": "No confirmed own live-verified denominator is available.",
+    "liveness_assessment_status": "complete",
+    "liveness_eligible_contracts": 1,
+    "liveness_assessed_contracts": 1,
+    "liveness_unresolved_contracts": 0,
+    "liveness_run_ids": [
+      "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1"
+    ],
+    "scope_analysis_pending_audits": 0,
+    "coverage_pct_conservative": null,
+    "live_verified_third_party_excluded": 0,
     "deploy_coverage_basis_breakdown": {
       "code_matched": 0,
       "diverged": 0,
@@ -50,23 +105,32 @@
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": 1,
-    "total_contracts_indexed": 3,
-    "live_contracts": 1,
-    "inactive_contracts": 1,
+    "project_purpose": "No contract logic was present for wefi in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.",
+    "relationship_narrative": "The activated project remains an explicit cohort member with an empty normalized logic-topography closure.",
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 1,
-    "deployment_units": 0,
-    "live_deployment_units": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 1,
+    "live_deployment_units": 1,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
+  "logic_topography": {
+    "run_id": "logic-topography-normalized-candidate-20260715-v1",
+    "content_rows": 0,
+    "structural_roles": {},
+    "contract_kinds": {},
+    "standards": {},
+    "frameworks": {},
+    "upgradeable_contracts": 0
+  },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -74,18 +138,33 @@
     "entries": [],
     "inherited_audit_count": 0
   },
+  "fork_analysis": {
+    "summary": {
+      "total_contracts": 1,
+      "forked": 0,
+      "original": 1
+    },
+    "forked_contracts": [],
+    "original_contracts": [
+      {
+        "contract_address": "0xc7f2720aafc991abbad66651e28a40711262478b",
+        "chain_id": 137,
+        "etherscan_name": null
+      }
+    ]
+  },
   "contracts": [
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x03ad1bcc7499d49b66c33c9bd5ac9050d2f6ce50",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
+      "address": "0xc7f2720aafc991abbad66651e28a40711262478b",
+      "deployment_unit": "unit-396611",
+      "deployment_unit_proxy_count": 0,
       "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": null,
+      "product_line": "General Questions:",
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -94,13 +173,17 @@
         {
           "chain_id": 137,
           "chain_name": "polygon",
-          "address": "0x03ad1bcc7499d49b66c33c9bd5ac9050d2f6ce50",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
+          "address": "0xc7f2720aafc991abbad66651e28a40711262478b",
+          "deployment_unit": "unit-396611",
+          "deployment_unit_proxy_count": 0,
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": false,
+          "operational_liveness": "live",
+          "operational_liveness_evidence_kind": "current_address_book_code",
+          "operational_liveness_run_id": "operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1",
+          "operational_liveness_observed_at": "2026-07-15 06:56:49.713+00"
         }
       ],
       "audits_covering": [],
@@ -109,46 +192,17 @@
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
       "contamination_flag": null,
-      "is_live": false,
-      "effective_deploy_date": "2023-08-22 13:41:08+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0xffa188493c15dfaf2c206c97d8633377847b6a52",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "WeFi",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "WeFi",
-      "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xffa188493c15dfaf2c206c97d8633377847b6a52",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null,
       "is_live": true,
-      "effective_deploy_date": "2023-05-08 19:09:10+03",
+      "is_own_surface": true,
+      "address_book_membership": "typed_address_book",
+      "address_book_inventory_class": "project_anchor",
+      "address_book_coverage_eligible": true,
+      "proxy_deployments": 0,
+      "coverage_surface_kind": "own_supporting",
+      "surface_confidence": null,
+      "surface_exclusion_reason": null,
+      "surface_evidence": null,
+      "effective_deploy_date": null,
       "deploy_coverage_basis": null
     }
   ],
@@ -169,13 +223,80 @@
       "inheritance_mode": null,
       "inheritance_scope": [],
       "scope_match": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CErc20",
+        "CToken",
+        "Comptroller"
+      ],
       "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
+      "scope_note": "Audit report for Paxo Protocol. Scope includes CErc20, Comptroller, and CToken contracts. Audit date is February 16, 2023.",
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Audit report for Paxo Protocol. Scope includes CErc20, Comptroller, and CToken contracts. Audit date is February 16, 2023.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 3,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 3,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "CErc20",
+          "normalized_name": "cerc20",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Target in finding PVE-001, PVE-004, and mentioned in code snippets",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "Comptroller",
+          "normalized_name": "comptroller",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Target in finding PVE-002, PVE-004, and mentioned in code snippets",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        },
+        {
+          "extracted_name": "CToken",
+          "normalized_name": "ctoken",
+          "file_path": null,
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "Target in finding PVE-003, and mentioned in code snippets",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 14124,
@@ -193,13 +314,50 @@
       "inheritance_mode": null,
       "inheritance_scope": [],
       "scope_match": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "PToken"
+      ],
       "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
+      "scope_note": "Only one contract name (PToken) extracted from findings; no explicit scope section listing contracts.",
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "Only one contract name (PToken) extracted from findings; no explicit scope section listing contracts.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 1,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 1,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": [
+        {
+          "extracted_name": "PToken",
+          "normalized_name": "ptoken",
+          "file_path": "PToken.sol",
+          "reported_address": null,
+          "reported_chain_id": null,
+          "evidence": "mentioned in findings as PToken.sol",
+          "disposition": "unmatched",
+          "match_basis": "none",
+          "abstention_reason": null,
+          "temporal_resolution": null,
+          "candidate_count": 0,
+          "candidates": []
+        }
+      ]
     },
     {
       "audit_id": 14125,
@@ -220,10 +378,30 @@
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
+      "scope_note": "The provided text is a title fragment and does not contain any contract names, scope section, or audit date.",
+      "extraction_confidence": "low",
+      "scope_section_found": false,
+      "repo_reference_count": 0,
+      "scope_analysis_status": "available",
+      "scope_result_status": "no_match",
+      "scope_result_reason": "The provided text is a title fragment and does not contain any contract names, scope section, or audit date.",
+      "scope_result_review": null,
+      "scope_analysis_summary": {
+        "extracted_references": 0,
+        "matched_own": 0,
+        "matched_own_proxies": 0,
+        "matched_own_live": 0,
+        "matched_own_inactive": 0,
+        "matched_own_uninitialized": 0,
+        "matched_own_liveness_unknown": 0,
+        "matched_third_party_or_infra": 0,
+        "matched_excluded_inventory": 0,
+        "matched_unclassified_address_book": 0,
+        "ambiguous": 0,
+        "unmatched": 0,
+        "accepted_scope_rows": 0
+      },
+      "scope_analysis": []
     }
   ],
   "auditor_coverage": [],
@@ -232,11 +410,14 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 2
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "extraction_confidence_counts": {
+      "high": 1,
+      "low": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -253,7 +434,46 @@
         "report_name": "docs.google.com/document/d/1uNrOZqCMzTxA_BM6PxMxugvjDgTOFCFL966bim28zS0/edit"
       }
     ],
-    "inherited_remapped_matches": []
+    "audit_scope_outcomes": [
+      {
+        "audit_id": 14123,
+        "report_name": "PeckShield-Audit-Report-Paxo-v1.0.pdf",
+        "status": "no_match",
+        "reason": "Audit report for Paxo Protocol. Scope includes CErc20, Comptroller, and CToken contracts. Audit date is February 16, 2023.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 14124,
+        "report_name": "Paxo Smart Contract Audit Report - QuillAudits.pdf",
+        "status": "no_match",
+        "reason": "Only one contract name (PToken) extracted from findings; no explicit scope section listing contracts.",
+        "operator_review": null
+      },
+      {
+        "audit_id": 14125,
+        "report_name": "docs.google.com/document/d/1uNrOZqCMzTxA_BM6PxMxugvjDgTOFCFL966bim28zS0/edit",
+        "status": "no_match",
+        "reason": "The provided text is a title fragment and does not contain any contract names, scope section, or audit date.",
+        "operator_review": null
+      }
+    ],
+    "inherited_remapped_matches": [],
+    "analysis_disposition_counts": {
+      "extracted_references": 4,
+      "matched_own": 0,
+      "matched_own_proxies": 0,
+      "matched_own_live": 0,
+      "matched_own_inactive": 0,
+      "matched_own_uninitialized": 0,
+      "matched_own_liveness_unknown": 0,
+      "matched_third_party_or_infra": 0,
+      "matched_excluded_inventory": 0,
+      "matched_unclassified_address_book": 0,
+      "ambiguous": 0,
+      "unmatched": 4,
+      "accepted_scope_rows": 0
+    }
   },
-  "active_bug_bounty": null
+  "active_bug_bounty": null,
+  "out_of_scope": null
 }

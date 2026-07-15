@@ -12,15 +12,17 @@
 
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
-pragma solidity ^0.8.27;
 
-import {IERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+pragma solidity ^0.8.13;
 
-import {ABDKMath64x64} from "./lib/ABDKMath64x64.sol";
-import {Assimilators} from "./Assimilators.sol";
-import {CurveMath} from "./CurveMath.sol";
-import {Storage} from "./Storage.sol";
+import "../lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol";
+import "../lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol";
+
+import "./lib/ABDKMath64x64.sol";
+
+import "./Storage.sol";
+
+import "./CurveMath.sol";
 
 library Orchestrator {
     using SafeERC20 for IERC20;
@@ -34,7 +36,10 @@ library Orchestrator {
     event AssetIncluded(address indexed numeraire, address indexed reserve, uint256 weight);
 
     event AssimilatorIncluded(
-        address indexed derivative, address indexed numeraire, address indexed reserve, address assimilator
+        address indexed derivative,
+        address indexed numeraire,
+        address indexed reserve,
+        address assimilator
     );
 
     function setParams(
@@ -81,10 +86,10 @@ library Orchestrator {
         address _quoteCurrency,
         address _quoteAssim
     ) external {
-        require(_baseCurrency != address(0), "Curve/numeraire-cannot-be-zero-address");
-        require(_baseAssim != address(0), "Curve/numeraire-assimilator-cannot-be-zero-address");
-        require(_quoteCurrency != address(0), "Curve/reserve-cannot-be-zero-address");
-        require(_quoteAssim != address(0), "Curve/reserve-assimilator-cannot-be-zero-address");
+        require(_baseCurrency != address(0), "Curve/numeraire-cannot-be-zeroth-address");
+        require(_baseAssim != address(0), "Curve/numeraire-assimilator-cannot-be-zeroth-address");
+        require(_quoteCurrency != address(0), "Curve/reserve-cannot-be-zeroth-address");
+        require(_quoteAssim != address(0), "Curve/reserve-assimilator-cannot-be-zeroth-address");
 
         Storage.Assimilator storage _baseAssimilator = curve.assimilators[_baseCurrency];
         _baseAssimilator.addr = _baseAssim;
@@ -94,6 +99,7 @@ library Orchestrator {
 
         curve.assets[0] = _baseAssimilator;
         curve.assets[1] = _quoteAssimilator;
+
     }
 
     function getFee(Storage.Curve storage curve) private view returns (int128 fee_) {
@@ -131,9 +137,7 @@ library Orchestrator {
             derivatives.push(_assets[ix]);
 
             reserves.push(_assets[2 + ix]);
-            if (_assets[ix] != _assets[2 + ix]) {
-                derivatives.push(_assets[2 + ix]);
-            }
+            if (_assets[ix] != _assets[2 + ix]) derivatives.push(_assets[2 + ix]);
 
             includeAsset(
                 curve,
@@ -156,19 +160,17 @@ library Orchestrator {
         address _reserveApproveTo,
         uint256 _weight
     ) private {
-        require(_numeraire != address(0), "Curve/numeraire-cannot-be-zero-address");
+        require(_numeraire != address(0), "Curve/numeraire-cannot-be-zeroth-address");
 
-        require(_numeraireAssim != address(0), "Curve/numeraire-assimilator-cannot-be-zero-address");
+        require(_numeraireAssim != address(0), "Curve/numeraire-assimilator-cannot-be-zeroth-address");
 
-        require(_reserve != address(0), "Curve/reserve-cannot-be-zero-address");
+        require(_reserve != address(0), "Curve/reserve-cannot-be-zeroth-address");
 
-        require(_reserveAssim != address(0), "Curve/reserve-assimilator-cannot-be-zero-address");
+        require(_reserveAssim != address(0), "Curve/reserve-assimilator-cannot-be-zeroth-address");
 
         require(_weight < 1e18, "Curve/weight-must-be-less-than-one");
 
-        if (_numeraire != _reserve) {
-            IERC20(_numeraire).safeApprove(_reserveApproveTo, type(uint256).max);
-        }
+        if (_numeraire != _reserve) IERC20(_numeraire).safeApprove(_reserveApproveTo, type(uint).max);
 
         Storage.Assimilator storage _numeraireAssimilator = curve.assimilators[_numeraire];
 
@@ -200,7 +202,13 @@ library Orchestrator {
     function viewCurve(Storage.Curve storage curve)
         external
         view
-        returns (uint256 alpha_, uint256 beta_, uint256 delta_, uint256 epsilon_, uint256 lambda_)
+        returns (
+            uint256 alpha_,
+            uint256 beta_,
+            uint256 delta_,
+            uint256 epsilon_,
+            uint256 lambda_
+        )
     {
         alpha_ = curve.alpha.mulu(1e18);
 

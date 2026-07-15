@@ -14,6 +14,8 @@ import { ProcessRebalanceParams } from "src/vault/libs/AutopoolState.sol";
 
 /// @title Verifies LST Price Gap within tolerance
 contract LstPriceHook is BaseStrategyHook {
+    uint256 public constant HUNDRED_PERCENT = 10_000;
+
     /// =====================================================
     /// Public Vars
     /// =====================================================
@@ -105,7 +107,7 @@ contract LstPriceHook is BaseStrategyHook {
                 if ((priceSafe == 0) || (priceSpot == 0)) {
                     revert PriceLowerThanTolerance();
                 } else if (priceSafe > priceSpot) {
-                    if (((priceSafe * 1.0e18 / priceSpot - 1.0e18) * 10_000) / 1.0e18 > tolerance) {
+                    if (((priceSafe * 1.0e18 / priceSpot - 1.0e18) * HUNDRED_PERCENT) / 1.0e18 > tolerance) {
                         revert PriceLowerThanTolerance();
                     }
                 }
@@ -127,7 +129,7 @@ contract LstPriceHook is BaseStrategyHook {
             if ((priceSafe == 0) || (priceSpot == 0)) {
                 revert PriceHigherThanTolerance();
             } else if (priceSpot > priceSafe) {
-                if (((priceSpot * 1.0e18 / priceSafe - 1.0e18) * 10_000) / 1.0e18 > tolerance) {
+                if (((priceSpot * 1.0e18 / priceSafe - 1.0e18) * HUNDRED_PERCENT) / 1.0e18 > tolerance) {
                     revert PriceHigherThanTolerance();
                 }
             }
@@ -155,8 +157,7 @@ contract LstPriceHook is BaseStrategyHook {
     function _onUnregistered(
         bytes memory
     ) internal override {
-        autopoolTolerance[msg.sender] = 0;
-
+        delete autopoolTolerance[msg.sender];
         emit AutopoolToleranceConfigured(msg.sender, 0);
     }
 
@@ -177,7 +178,9 @@ contract LstPriceHook is BaseStrategyHook {
 
     /// @dev Validate, set configuration, and emit events for an Autopool
     function _configureAutopool(address autopool, uint256 tolerance) private {
-        Errors.verifyNotZero(tolerance, "tolerance");
+        if (tolerance == 0 || tolerance > HUNDRED_PERCENT) {
+            revert Errors.InvalidParam("tolerance");
+        }
         autopoolTolerance[autopool] = tolerance;
         emit AutopoolToleranceConfigured(autopool, tolerance);
     }

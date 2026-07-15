@@ -1,34 +1,28 @@
 {
   "component": "WrappedTokenGatewayV3",
   "main_contract": "WrappedTokenGatewayV3",
-  "source_file_count": 20,
-  "deployment_count": 3,
+  "source_entry_count": 18,
+  "source_file_count": 18,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WrappedTokenGatewayV3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-1329",
       "chain_id": 1329,
-      "address": "0x44a8aa4c2f712dd8c701b411adbe0419ce93bf3c",
+      "address": "0xbc096b6a7d5404de916b3333ad223a1b32eec8aa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-1329",
-      "chain_id": 1329,
-      "address": "0x5d20a2d97b3202c1b6ccd21e26a42c8d6f3cdd75",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-1329",
-      "chain_id": 1329,
-      "address": "0xd2a000458fd01352c91be33c79ae7d12d62c069f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

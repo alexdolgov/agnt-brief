@@ -35,6 +35,7 @@ interface ITradeMarketplace {
     error InvalidTaker();
     error LowNonceError(address user, uint256 nonce, uint256 currentMinNonce);
     error InvalidSignature();
+    error InvalidCurrencyError();
 
     function executeOrder(Order memory order) external;
     function cancelOrder(uint256 nonce) external;

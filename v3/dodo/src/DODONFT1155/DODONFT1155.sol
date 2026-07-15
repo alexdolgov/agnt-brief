@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at BscScan.com on 2021-07-12
-*/
-
 // File: contracts/intf/IERC165.sol
 
 // This is a file copied from https://github.com/OpenZeppelin/openzeppelin-contracts/blob/solc-0.6/contracts/introspection/IERC165.sol

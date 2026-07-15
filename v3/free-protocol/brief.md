@@ -1,39 +1,68 @@
 # Agentic Audit Brief: Free Protocol
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Free Protocol (`free-protocol`)
+- Website: [https://free.tech/](https://free.tech/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:52.917Z
-- Pipeline run: v2-2026-07-02-1ba3fd
-- Chains: bsc, ethereum, manta
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: bsc, ethereum, manta-pacific
 - Contract surface: 9 unique implementations (9 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $247,756,160.85
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+The closed normalized authority records no EVM contract logic or eligible security audit for this project. This is an explicit cohort state, not a skipped export.
+
 ## Project Description
 
-Bridge. Structurally: 8 project-authored contract(s) across 3 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.
+No contract logic was present for Free Protocol in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 1 common project-authored base contract(s) (mesonconfig). Dominant framework: openzeppelin-upgradeable.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 9; live-surface contracts included: 9 (9 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/9 (0.0%)
-- Deployed-live implementations: 9 of 9 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/9
-- Verified + Unaudited implementations: 9
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 9 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 6
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 9
@@ -58,17 +87,17 @@ The protocol comprises 3 functional families. Its contracts share 1 common proje
 
 ### ⚠️ Verified + Unaudited (9)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AtomicLockContract | unknown | ethereum | n/a | [`0x036505...5f6241`](./contracts/ethereum-1/0x03650533d2a35847c007f25bc630f468905f6241/) | ⚠️ Unaudited |
-| AtomicMintContract | unknown | bsc | n/a | [`0x09d334...bd0533`](./contracts/bsc-56/0x09d334c6197f52308efc53e3d6726151c6bd0533/) | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | manta | n/a | [`0x19727d...741caf`](./contracts/manta-169/0x19727db22cba70b1fee40337aba69d83c6741caf/) | ⚠️ Unaudited |
-| ForwardTokenToFormContract | unknown | ethereum | n/a | [`0xdc86b8...d023c1`](./contracts/ethereum-1/0xdc86b8fc14afa87cc137a1cb07f0890a46d023c1/) | ⚠️ Unaudited |
-| GnosisSafe | unknown | ethereum | n/a | [`0xeea3a0...13c42c`](./contracts/ethereum-1/0xeea3a032f381ab1e415e82fe08ebeb20f513c42c/) | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | bsc | n/a | [`0x0a8002...e7f455`](./contracts/bsc-56/0x0a80028d73faaee6e57484e3335befda0de7f455/) | ⚠️ Unaudited |
-| ProxyToMeson | unknown | ethereum | n/a | [`0x25ab3e...6948d3`](./contracts/ethereum-1/0x25ab3efd52e6470681ce037cd546dc60726948d3/) | ⚠️ Unaudited |
-| SolvBTCV3 | unknown | bsc | n/a | [`0x4aae82...8cbcf7`](./contracts/bsc-56/0x4aae823a6a0b376de6a78e74ecc5b079d38cbcf7/) | ⚠️ Unaudited |
-| UpgradableMeson | unknown | bsc | n/a | [`0x1522de...3f5aec`](./contracts/bsc-56/0x1522de0005fddfafbfe1843b40bc2be58b3f5aec/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AtomicLockContract | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-141084 | `0x036505...5f6241` | ⚠️ Unaudited |
+| AtomicMintContract | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-141087 | `0x09d334...bd0533` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | manta-pacific | unit-141081 | `0x19727d...741caf` | ⚠️ Unaudited |
+| ForwardTokenToFormContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-141080 | `0xdc86b8...d023c1` | ⚠️ Unaudited |
+| GnosisSafe | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-141085 | `0xeea3a0...13c42c` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-141086 | `0x0a8002...e7f455` | ⚠️ Unaudited |
+| ProxyToMeson | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | unit-141083 | `0x25ab3e...6948d3` | ⚠️ Unaudited |
+| SolvBTCV3 | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | bsc | unit-141088 | `0x4aae82...8cbcf7` | ⚠️ Unaudited |
+| UpgradableMeson | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | unit-141082 | `0x1522de...3f5aec` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,8 +119,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -103,10 +138,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 6 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 9 |
+| standard_library | 3 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -114,6 +149,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

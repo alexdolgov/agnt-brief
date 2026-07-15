@@ -34,7 +34,7 @@ contract Quoter is IQuoter, IUniswapV3SwapCallback, PeripheryImmutableState {
     function uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes memory path) external view override {
         /// @dev swaps entirely within 0-liquidity regions are not supported
         require(amount0Delta > 0 || amount1Delta > 0); 
-        (address tokenIn, address tokenOut, int24 tickSpacing) = path.decodeFirstPool();
+        (address tokenIn, int24 tickSpacing, address tokenOut) = path.decodeFirstPool();
         CallbackValidation.verifyCallback(deployer, tokenIn, tokenOut, tickSpacing);
 
         (bool isExactInput, uint256 amountToPay, uint256 amountReceived) = amount0Delta > 0
@@ -100,7 +100,8 @@ contract Quoter is IQuoter, IUniswapV3SwapCallback, PeripheryImmutableState {
         while (true) {
             bool hasMultiplePools = path.hasMultiplePools();
 
-            (address tokenIn, address tokenOut, int24 tickSpacing) = path.decodeFirstPool();
+            (address tokenIn, int24 tickSpacing, address tokenOut) = path
+                .decodeFirstPool();
 
             /// @dev the outputs of prior swaps become the inputs to subsequent ones
             amountIn = quoteExactInputSingle(tokenIn, tokenOut, tickSpacing, amountIn, 0);
@@ -149,7 +150,7 @@ contract Quoter is IQuoter, IUniswapV3SwapCallback, PeripheryImmutableState {
         while (true) {
             bool hasMultiplePools = path.hasMultiplePools();
 
-            (address tokenOut, address tokenIn, int24 tickSpacing) = path.decodeFirstPool();
+            (address tokenOut, int24 tickSpacing, address tokenIn) = path.decodeFirstPool();
 
             /// @dev the inputs of prior swaps become the outputs of subsequent ones
             amountOut = quoteExactOutputSingle(tokenIn, tokenOut, tickSpacing, amountOut, 0);

@@ -34,7 +34,7 @@ library DolomiteMarginMath {
 
     // ============ Constants ============
 
-    bytes32 private constant FILE = "Math";
+    bytes32 constant FILE = "Math";
 
     // ============ Library Functions ============
 
@@ -113,18 +113,18 @@ library DolomiteMarginMath {
         return result;
     }
 
-    function to112(
+    function to96(
         uint256 number
     )
         internal
         pure
-        returns (uint112)
+        returns (uint96)
     {
-        uint112 result = uint112(number);
+        uint96 result = uint96(number);
         Require.that(
             result == number,
             FILE,
-            "Unsafe cast to uint112",
+            "Unsafe cast to uint96",
             number
         );
         return result;

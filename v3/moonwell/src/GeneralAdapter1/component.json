@@ -1,7 +1,15 @@
 {
   "component": "GeneralAdapter1",
   "main_contract": "GeneralAdapter1",
+  "source_entry_count": 66,
   "source_file_count": 66,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GeneralAdapter1\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0xb98c948cfa24072e58935bc004a8a7b376ae746a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397037"
     }
   ]
 }

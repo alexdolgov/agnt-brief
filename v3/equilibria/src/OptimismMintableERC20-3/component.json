@@ -1,7 +1,15 @@
 {
   "component": "OptimismMintableERC20-3",
   "main_contract": "OptimismMintableERC20",
-  "source_file_count": 12,
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OptimismMintableERC20-3\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0xa99f6e6785da0f5d6fb42495fe424bce029eeb3e",
+      "address": "0xc6e669606b28f4e8ba3ec3fef20d8f651bf239f0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394316"
     }
   ]
 }

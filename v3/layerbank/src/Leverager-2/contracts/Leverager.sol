@@ -11,6 +11,7 @@ import "./interfaces/ILeverager.sol";
 import "./interfaces/IBEP20.sol";
 import "./interfaces/ILToken.sol";
 import "./interfaces/ICore.sol";
+import "./interfaces/IRegister.sol";
 
 import "./library/SafeToken.sol";
 import "./library/Constant.sol";
@@ -32,7 +33,10 @@ contract Leverager is ILeverager, Ownable, ReentrancyGuard, Pausable {
 
     /* ========== INITIALIZER ========== */
 
-    constructor() public {}
+    constructor() public {
+        IRegister sfsContract = IRegister(0x8680CEaBcb9b56913c519c069Add6Bc3494B7020);
+        sfsContract.register(msg.sender);
+    }
 
     modifier onlyListedMarket(address lToken) {
         Constant.MarketInfo memory marketInfo = core.marketInfoOf(lToken);
@@ -40,7 +44,10 @@ contract Leverager is ILeverager, Ownable, ReentrancyGuard, Pausable {
         _;
     }
 
-    function initialize(ICore _core, address _lETH) external onlyOwner {
+    function initialize(
+        ICore _core,
+        address _lETH
+    ) external onlyOwner {
         require(initialized == false, "already initialized");
         require(address(_core) != address(0), "Not a valid address");
         require(_lETH != address(0), "Not a valid address");
@@ -53,12 +60,12 @@ contract Leverager is ILeverager, Ownable, ReentrancyGuard, Pausable {
 
     /**
      * @dev Loop the deposit and borrow of an asset
-     * @param lToken for loop
-     * @param amount for the initial deposit
-     * @param borrowRatio Ratio of tokens to borrow
-     * @param loopCount Repeat count for loop
-     * @param isBorrow true when the loop without deposit tokens
-     **/
+	 * @param lToken for loop
+	 * @param amount for the initial deposit
+	 * @param borrowRatio Ratio of tokens to borrow
+	 * @param loopCount Repeat count for loop
+	 * @param isBorrow true when the loop without deposit tokens
+	 **/
     function loop(
         address lToken,
         uint256 amount,

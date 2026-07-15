@@ -1,7 +1,15 @@
 {
   "component": "CTFExchange",
   "main_contract": "CTFExchange",
+  "source_entry_count": 49,
   "source_file_count": 49,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CTFExchange\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x6beb5a40c032afc305961162d8204cda16decfa5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397834"
     },
     {
       "chain": "bsc",
@@ -20,7 +30,9 @@
       "address": "0x8bc070bedab741406f4b1eb65a72bee27894b689",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397838"
     }
   ]
 }

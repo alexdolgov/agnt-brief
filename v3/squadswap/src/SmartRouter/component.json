@@ -1,44 +1,28 @@
 {
   "component": "SmartRouter",
   "main_contract": "SmartRouter",
-  "source_file_count": 70,
-  "deployment_count": 4,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/cyberscope-io/audits/blob/main/squadswap/v1/audit.pdf"
-  ],
+  "source_entry_count": 71,
+  "source_file_count": 71,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SmartRouter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "blast",
-      "chain_id": 81457,
-      "address": "0x152176a1e3c112d96aa305fa1f5ac6997b2c53dd",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfb96f59a63c60dfc8e13547b3e9e366a3c0b8b5b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "blast",
-      "chain_id": 81457,
-      "address": "0x5fbd88f04963c25e51ccae20951f815577a234c9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "blast",
-      "chain_id": 81457,
-      "address": "0x95e8014d86af94e6abea38822082da728b9fe902",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "blast",
-      "chain_id": 81457,
-      "address": "0xdeb0bf2d02f9fe9f20f3dd62b73bddbd4c2870c0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399395"
     }
   ]
 }

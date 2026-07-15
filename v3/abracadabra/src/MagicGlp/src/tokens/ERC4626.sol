@@ -13,13 +13,11 @@ contract ERC4626 is IERC4626, ERC20WithSupply {
     using BoringERC20 for ERC20;
     using FixedPointMathLib for uint256;
 
-    error ErrZeroAssets();
     error ErrZeroShares();
 
     string public name;
     string public symbol;
     ERC20 public _asset;
-    uint256 internal _totalAssets;
 
     function asset() external view returns (IERC20) {
         return _asset;
@@ -36,32 +34,20 @@ contract ERC4626 is IERC4626, ERC20WithSupply {
         }
 
         // Need to transfer before minting or ERC777s could reenter.
-        _asset.safeTransferFrom(msg.sender, address(this), assets);
-
-        unchecked {
-            _totalAssets += assets;
-        }
+        _asset.transferFrom(msg.sender, address(this), assets);
 
         _mint(receiver, shares);
         emit Deposit(msg.sender, receiver, assets, shares);
-
-        _afterDeposit(assets, shares);
     }
 
     function mint(uint256 shares, address receiver) public virtual returns (uint256 assets) {
         assets = previewMint(shares); // No need to check for rounding error, previewMint rounds up.
 
         // Need to transfer before minting or ERC777s could reenter.
-        _asset.safeTransferFrom(msg.sender, address(this), assets);
-
-        unchecked {
-            _totalAssets += assets;
-        }
+        _asset.transferFrom(msg.sender, address(this), assets);
 
         _mint(receiver, shares);
         emit Deposit(msg.sender, receiver, assets, shares);
-
-        _afterDeposit(assets, shares);
     }
 
     function withdraw(
@@ -79,14 +65,9 @@ contract ERC4626 is IERC4626, ERC20WithSupply {
             }
         }
 
-        _beforeWithdraw(assets, shares);
         _burn(owner, shares);
         emit Withdraw(msg.sender, receiver, owner, assets, shares);
-        _asset.safeTransfer(receiver, assets);
-
-        unchecked {
-            _totalAssets -= assets;
-        }
+        _asset.transfer(receiver, assets);
     }
 
     function redeem(
@@ -103,21 +84,16 @@ contract ERC4626 is IERC4626, ERC20WithSupply {
 
         // Check for rounding error since we round down in previewRedeem.
         if ((assets = previewRedeem(shares)) == 0) {
-            revert ErrZeroAssets();
+            revert ErrZeroShares();
         }
 
-        _beforeWithdraw(assets, shares);
         _burn(owner, shares);
         emit Withdraw(msg.sender, receiver, owner, assets, shares);
-        _asset.safeTransfer(receiver, assets);
-
-        unchecked {
-            _totalAssets -= assets;
-        }
+        _asset.transfer(receiver, assets);
     }
 
-    function totalAssets() public view virtual returns (uint256) {
-        return _totalAssets;
+    function totalAssets() public view returns (uint256) {
+        return _asset.balanceOf(address(this));
     }
 
     function convertToShares(uint256 assets) public view virtual returns (uint256) {
@@ -163,8 +139,4 @@ contract ERC4626 is IERC4626, ERC20WithSupply {
     function maxRedeem(address owner) public view virtual returns (uint256) {
         return balanceOf[owner];
     }
-
-    function _beforeWithdraw(uint256 assets, uint256 shares) internal virtual {}
-
-    function _afterDeposit(uint256 assets, uint256 shares) internal virtual {}
 }

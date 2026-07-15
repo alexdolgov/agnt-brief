@@ -3,7 +3,5 @@
 pragma solidity 0.8.17;
 
 interface IDestinationVaultExtension {
-    function execute(
-        bytes calldata data
-    ) external;
+    function execute(bytes calldata data) external;
 }

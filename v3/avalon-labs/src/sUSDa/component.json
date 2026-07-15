@@ -1,18 +1,48 @@
 {
   "component": "sUSDa",
   "main_contract": "sUSDa",
-  "source_file_count": 46,
-  "deployment_count": 1,
+  "source_entry_count": 43,
+  "source_file_count": 43,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/sUSDa\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x2840f9d9f96321435ab0f977e7fdbf32ea8b304f",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2b66aade1e9c062ff411bd47c44e0ad696d43bd9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x73a325103935b0b5e7aa3aca6dba74ad22f82b03",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x5a61b1d8272b250729ea3f5ed3ef843f4d66bc6e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

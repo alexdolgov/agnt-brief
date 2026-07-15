@@ -1,44 +1,86 @@
 # Agentic Audit Brief: Velo Finance
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Velo Finance (`velo-finance`)
 - Website: [https://velofinance.io](https://velofinance.io)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:10.256Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: bsc
-- Contract surface: 34 unique implementations (39 raw deployments)
+- Contract surface: 1 unique implementations (1 raw deployments)
+- Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,406,611.82
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Dexs. Structurally: 9 project-authored contract(s) across 1 chain(s); 4 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Velo Finance. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
+The pinned logic-topography run contains 1 contract row(s) across bsc. Structural roles: 1 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 1
+- Structural roles: core (1)
+- Contract kinds: contract (1)
+- Detected standards: erc20 (1)
+- Frameworks: openzeppelin (1)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 1 contracts are derived from known codebases. 1 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- Token (`0xf486ad...f6fd46`, chain 56)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 42; live-surface contracts included: 39 (15 live, 24 unknown).
-- Excluded by liveness: 3 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 1/1 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/10 (0.0%)
-- Deployed-live implementations: 10 of 34 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/10
-- Verified + Unaudited implementations: 10
+- Coverage of address-book-owned deployed-live implementations: 0/1 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/1
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 24
-- Unique implementations: 34
-- Raw deployments: 39
+- Unverified implementations: 0
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,20 +99,11 @@ The protocol comprises 5 functional families. Contracts operate as largely indep
 
 - None
 
-### ⚠️ Verified + Unaudited (10)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| DMMPool | core_logic | bsc | n/a | [`0x8d5b39...35ceea`](./contracts/bsc-56/0x8d5b39b8ebac7f3404af73688f352b05c835ceea/) | ⚠️ Unaudited |
-| DMMRouter02DelegateCall | adapter | bsc | n/a | [`0x345617...22fb69`](./contracts/bsc-56/0x345617dd29a12e836aebc936ca0ca59ccd22fb69/) | ⚠️ Unaudited |
-| EarnOtherFixedAPRLockReward | unknown | bsc | n/a | 4 deployments: bsc [`0x2703e5...45caf9`](./contracts/bsc-56/0x2703e5d3709782e85957e40a9c834afd4d45caf9/); bsc `0x419175...8bebe8`; bsc `0x7dd617...3796b7`; bsc `0xba5640...788a3c` | ⚠️ Unaudited |
-| EVRY | unknown | bsc | n/a | [`0xc2d4a3...aeabb6`](./contracts/bsc-56/0xc2d4a3709e076a7a3487816362994a78ddaeabb6/) | ⚠️ Unaudited |
-| EvryPair | unknown | bsc | n/a | 2 deployments: bsc [`0x526357...40b802`](./contracts/bsc-56/0x526357ef8304ce6cd46689aa0f9abf642a40b802/); bsc `0xfcd4bb...4226b8` | ⚠️ Unaudited |
-| EvryRouter | adapter | bsc | n/a | [`0x296b7c...665c46`](./contracts/bsc-56/0x296b7c203e2c7306b132f2d5ad66106bb7665c46/) | ⚠️ Unaudited |
-| Farms | unknown | bsc | n/a | [`0x334721...8a9252`](./contracts/bsc-56/0x33472144eaa7540e7bada5a1ab7da372e48a9252/) | ⚠️ Unaudited |
-| Farms | unknown | bsc | n/a | [`0xdd3e2d...a61945`](./contracts/bsc-56/0xdd3e2da1d017a564b8225bc8e92f2970cfa61945/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | bsc | n/a | [`0x6c2242...3bf912`](./contracts/bsc-56/0x6c22422f4044dfba79f4ea6bbb9c09162c3bf912/) | ⚠️ Unaudited |
-| Token | token | bsc | n/a | 2 deployments: bsc [`0x3c8ec1...b4a35f`](./contracts/bsc-56/0x3c8ec1728c080f76dc83baa5d51a0cc367b4a35f/); bsc `0xf486ad...f6fd46` | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Token | token | project_anchor | own_supporting | 0 | bsc | unit-395632 | `0xf486ad...f6fd46` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,56 +117,39 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (24)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x00144d...686da4` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x119e72...99341d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x36a613...a42506` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x405fb1...b43f7b` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x4d7c5e...4465e2` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x5f0625...4ab66e` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x6080b4...26706e` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x61d705...9ac025` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x6f001a...b20218` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x853fbd...a6fad5` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x883be8...778cfa` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x953f99...8fb949` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xa82ee9...0fa81d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xb28b07...565add` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xb2de66...5e121c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xc3f903...99be6f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xc5e5ac...101176` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xc9cfba...54b83a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xcd9357...a94fa5` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd67f77...9573aa` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xdba5e5...29483e` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xddace5...a908d1` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xde79be...d542c7` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xf39541...bd7b23` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| bsc | `0xf486ad...f6fd46` | Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 34 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -141,6 +157,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

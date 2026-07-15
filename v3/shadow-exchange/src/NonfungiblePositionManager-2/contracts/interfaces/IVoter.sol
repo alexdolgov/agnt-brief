@@ -7,13 +7,15 @@ interface IVoter {
 
     error GAUGE_INACTIVE(address gauge);
 
-    error ALREADY_WHITELISTED(address token);
+    error ALREADY_WHITELISTED();
 
     error NOT_AUTHORIZED(address caller);
 
     error NOT_WHITELISTED();
 
     error NOT_POOL();
+
+    error FORBIDDEN();
 
     error NOT_INIT();
 
@@ -25,9 +27,13 @@ interface IVoter {
 
     error ZERO_VOTE(address pool);
 
-    error RATIO_TOO_HIGH(uint256 _xRatio);
+    error RATIO_TOO_HIGH();
+
+    error NOT_GT_ZERO();
 
     error VOTE_UNSUCCESSFUL();
+
+    error UNAUTHORIZED();
 
     event GaugeCreated(
         address indexed gauge,
@@ -84,6 +90,12 @@ interface IVoter {
         address indexed forbidder,
         address indexed token,
         bool status
+    );
+
+    event CustomGaugeCreated(
+        address indexed gauge,
+        address creator,
+        address indexed token
     );
 
     event MainTickSpacingChanged(
@@ -211,6 +223,13 @@ interface IVoter {
         address tokenB,
         int24 tickSpacing
     ) external;
+
+    /// @notice create a legacy-type gauge for an arbitrary token
+    /// @param _depositToken 'token' to be used
+    /// @return _arbitraryGauge the address of the new custom gauge
+    function createArbitraryGauge(
+        address _depositToken
+    ) external returns (address _arbitraryGauge);
 
     /// @notice returns if the address is a fee distributor
     /// @param _feeDistributor address of the feeDist
@@ -393,6 +412,12 @@ interface IVoter {
 
     /// @notice sets the xShadowRatio default
     function setGlobalRatio(uint256 _xRatio) external;
+
+    /// @notice returns the array of all custom/arbitrary pools
+    function getAllCustomPools()
+        external
+        view
+        returns (address[] memory _customPools);
 
     /// @notice whether the token is whitelisted in governance
     function isWhitelisted(address _token) external view returns (bool _tf);

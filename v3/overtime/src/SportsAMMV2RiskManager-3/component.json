@@ -1,26 +1,48 @@
 {
   "component": "SportsAMMV2RiskManager-3",
   "main_contract": "SportsAMMV2RiskManager",
+  "source_entry_count": 14,
   "source_file_count": 14,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SportsAMMV2RiskManager-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x21180972e14597516350a428e5fab7d920f5200f",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2980af3d701e6eafa3c3165c8566edb0bafb06d8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x53799996288cb1474998adcb574ec00eb2535e3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x2e0881fca7590a77f297a935084e093cc99bf3ab",
+      "address": "0x58f359f14e645cb50ba69686920b89fab1bba017",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

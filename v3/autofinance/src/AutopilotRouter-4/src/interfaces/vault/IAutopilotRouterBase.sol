@@ -126,6 +126,18 @@ interface IAutopilotRouterBase {
     /// @param recipient Address to claim rewards for.
     function claimAutopoolRewards(IAutopool vault, IMainRewarder rewarder, address recipient) external payable;
 
+    /// @notice Claims rewards on user stake of vault token.
+    /// @param vault IAutopool instance of vault token to claim rewards for.
+    /// @param rewarder Rewarder to claim rewards from.
+    /// @param recipient Address to claim rewards for.
+    /// @param claimExtras Whether to claim for all the rewarders or just the root
+    function claimAutopoolRewards(
+        IAutopool vault,
+        IMainRewarder rewarder,
+        address recipient,
+        bool claimExtras
+    ) external payable;
+
     /// @notice Checks if timestamp is expired. Purpose is to check the execution deadline with the multicall.
     /// @param timestamp Timestamp to check.
     /// @dev throws TimestampTooOld. Payable to allow for multicall.

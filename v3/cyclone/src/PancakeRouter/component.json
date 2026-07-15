@@ -1,34 +1,28 @@
 {
   "component": "PancakeRouter",
   "main_contract": "PancakeRouter",
-  "source_file_count": 5,
-  "deployment_count": 3,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PancakeRouter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x02ee06c137a106255299589b3184f5ba438b689f",
+      "address": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x1f5ecb6efb4e1fd82ae6ff6f200e262329ff1996",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x2ad2c5314028897aecfcf37fd923c079beeb2c56",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393333"
     }
   ]
 }

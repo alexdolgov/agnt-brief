@@ -1,42 +1,28 @@
 {
   "component": "Booster",
   "main_contract": "Booster",
-  "source_file_count": 1,
-  "deployment_count": 4,
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Booster\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x1389388d01708118b497f59521f6943be2541bb7",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaffe966b27ba3e4ebb8a0ec124c7b7019cc762f8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x42e8786506d369ca54c474b64029558f991c795b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xf403c135812408bfbe8713b5a23a04b3d48aae31",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393102"
     }
   ]
 }

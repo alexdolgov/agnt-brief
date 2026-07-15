@@ -80,6 +80,9 @@ interface IXPhar is IERC20 {
      *
      */
 
+    /// @dev allows the operator to redeem collected xPHAR
+    function operatorRedeem(uint256 _amount) external;
+
     /// @dev allows rescue of any non-stake token
     function rescueTrappedTokens(address[] calldata _tokens, uint256[] calldata _amounts) external;
 

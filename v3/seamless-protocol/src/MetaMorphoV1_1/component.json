@@ -1,8 +1,16 @@
 {
   "component": "MetaMorphoV1_1",
   "main_contract": "MetaMorphoV1_1",
-  "source_file_count": 65,
-  "deployment_count": 2,
+  "source_entry_count": 61,
+  "source_file_count": 61,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MetaMorphoV1_1\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,9 @@
       "address": "0x27d8c7273fd3fcc6956a0b370ce5fd4a7fc65c18",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398737"
     },
     {
       "chain": "base",
@@ -20,7 +30,19 @@
       "address": "0x5a47c803488fe2bb0a0eaaf346b420e4df22f3c7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398744"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x616a4e1db48e22028f6bbf20444cd3b8e3273738",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398747"
     }
   ]
 }

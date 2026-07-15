@@ -22,7 +22,6 @@ contract graceQiVault is graceVault, Ownable, IERC721Receiver {
         string memory baseURI
     ) graceVault(ethPriceSourceAddress, minimumCollateralPercentage, name, symbol, _mai, _collateral, baseURI) {
         createVault();
-        manageFrontEnd(0, 0, true);
         setGracePeriod(24 hours);
     }
 
@@ -112,12 +111,6 @@ contract graceQiVault is graceVault, Ownable, IERC721Receiver {
         emit UpdatedAdmin(adm);
     }
 
-    function manageFrontEnd(uint256 _promoter, uint256 cashback, bool isAdd) public {
-        require(isAdd ? msg.sender == owner() : msg.sender == ownerOf(_promoter), "Unauthorized");
-        require(_exists(_promoter), "Vault does not exist");
-        promoter[_promoter] = isAdd ? (cashback > 0 && cashback <= TEN_THOUSAND ? cashback : TEN_THOUSAND) : 0;
-    }
-
     function setGracePeriod(uint256 _gracePeriod) public onlyAdmin {
         gracePeriod = _gracePeriod;
     }
@@ -195,5 +188,98 @@ contract graceQiVault is graceVault, Ownable, IERC721Receiver {
      */
     function setVotingContract(address _voting) external onlyOwner {
         voting = _voting;
+    }
+
+    /**
+     * @notice Sets the external claim logic contract address
+     * @param _claimLogic The address of the claim logic contract
+     * @dev Only callable by the contract owner
+     */
+    function setClaimLogic(address _claimLogic) external onlyOwner {
+        require(_claimLogic != address(0), "Invalid claim logic address");
+        claimLogic = _claimLogic;
+    }
+
+    // CLAIMING REWARDS/FEES ADD-ON(s)
+    // The way they work is anyone can call but only the "owner" can recieve. 
+    // We, in theory, could do the same "approval" process, so that anyone with approval for the erc721 could interact on behalf of the user (like aerodrome)
+
+    /**
+     * @notice Claims bribes for a given vault by delegating to external claim logic contract.
+     * @param _bribes The addresses of the bribe contracts to claim from.
+     * @param _tokens The token addresses for each bribe contract to claim.
+     * @param vaultId The ID of the vault for which to claim bribes.
+     * @return The amounts of each token claimed.
+     */
+    function claimVaultBribes(address[] calldata _bribes, address[][] calldata _tokens, uint256 vaultId)
+        external
+        vaultExists(vaultId)
+        returns (uint256[] memory)
+    {
+        require(claimLogic != address(0), "Claim logic not set");
+        
+        uint256 tokenId = vaultCollateral[vaultId];
+        address vaultOwner = ownerOf(vaultId);
+        
+        // Prepare the delegatecall
+        bytes memory data = abi.encodeWithSignature(
+            "claimVaultBribes(address[],address[][],uint256,uint256,address,address)",
+            _bribes,
+            _tokens,
+            vaultId,
+            tokenId,
+            vaultOwner,
+            address(voter)
+        );
+        
+        // Execute delegatecall
+        (bool success, bytes memory result) = claimLogic.delegatecall(data);
+        require(success, "Claim bribes delegatecall failed");
+        
+        // Decode and return the result
+        return abi.decode(result, (uint256[]));
+    }
+
+    /**
+     * @notice Claims fees for a given vault by delegating to external claim logic contract.
+     * @param _fees The addresses of the fee contracts to claim from.
+     * @param _tokens The token addresses for each fee contract to claim.
+     * @param vaultId The ID of the vault for which to claim fees.
+     * @return The amounts of each token claimed.
+     */
+    function claimVaultFees(address[] calldata _fees, address[][] calldata _tokens, uint256 vaultId)
+        external
+        vaultExists(vaultId)
+        returns (uint256[] memory)
+    {
+        require(claimLogic != address(0), "Claim logic not set");
+        
+        uint256 tokenId = vaultCollateral[vaultId];
+        address vaultOwner = ownerOf(vaultId);
+        
+        // Prepare the delegatecall
+        bytes memory data = abi.encodeWithSignature(
+            "claimVaultFees(address[],address[][],uint256,uint256,address,address)",
+            _fees,
+            _tokens,
+            vaultId,
+            tokenId,
+            vaultOwner,
+            address(voter)
+        );
+        
+        // Execute delegatecall
+        (bool success, bytes memory result) = claimLogic.delegatecall(data);
+        require(success, "Claim fees delegatecall failed");
+        
+        // Decode and return the result
+        return abi.decode(result, (uint256[]));
+    }
+
+    function rescueTokens(address token) external onlyOwner {
+        require(token != address(mai), "Cannot rescue MAI");
+        uint256 balance = IERC20(token).balanceOf(address(this));
+        require(balance > 0, "No tokens to rescue");
+        IERC20(token).transfer(owner(), balance);
     }
 }

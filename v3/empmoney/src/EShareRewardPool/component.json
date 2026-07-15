@@ -1,42 +1,30 @@
 {
   "component": "EShareRewardPool",
   "main_contract": "EShareRewardPool",
-  "source_file_count": 4,
-  "deployment_count": 4,
-  "audited": false,
-  "audits_covering": [],
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EShareRewardPool\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/0xGuard-com/audit-reports/blob/master/emp-money/EMP-Money_final-audit-report.pdf"
+  ],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x16390346cacefe2498cde08a9b94baef25a0b58d",
+      "address": "0x97a68a7949ee30849d273b0c4450314ae26235b1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x21d10e797841993d59965401d30afb75593988b8",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x5c3d056cb82a223f8baab83209b79645c9a4c27d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x69e08146b31f540d437c33171cce83e6f55591fe",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393848"
     }
   ]
 }

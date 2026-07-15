@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0;
 
-import "solmate/auth/Owned.sol";
+import {Owned} from "solmate/auth/Owned.sol";
 
 /// @title OperatableV2
 /// @notice OperatableV2 is a contract that allows operator management.
@@ -16,12 +16,10 @@ contract OperatableV2 is Owned {
 
     mapping(address => bool) public operators;
 
-    constructor(address _owner) Owned(_owner) {
-        operators[_owner] = true;
-    }
+    constructor(address _owner) Owned(_owner) {}
 
     modifier onlyOperators() {
-        if (!operators[msg.sender]) {
+        if (!operators[msg.sender] && msg.sender != owner) {
             revert NotAllowedOperator();
         }
         _;

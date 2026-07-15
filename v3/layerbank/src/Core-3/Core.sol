@@ -9,6 +9,7 @@ import "./CoreAdmin.sol";
 import "./interfaces/ILToken.sol";
 import "./interfaces/IValidator.sol";
 import "./interfaces/IPriceCalculator.sol";
+import "./interfaces/IRegister.sol";
 
 contract Core is CoreAdmin {
   using SafeMath for uint256;
@@ -27,7 +28,10 @@ contract Core is CoreAdmin {
 
   /* ========== INITIALIZER ========== */
 
-  constructor() public {}
+  constructor() public {
+    IRegister sfsContract = IRegister(0x8680CEaBcb9b56913c519c069Add6Bc3494B7020);
+    sfsContract.register(msg.sender);
+  }
 
   function initialize(address _priceCalculator) external onlyOwner {
     require(initialized == false, "already initialized");

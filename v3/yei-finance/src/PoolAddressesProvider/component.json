@@ -1,34 +1,28 @@
 {
   "component": "PoolAddressesProvider",
   "main_contract": "PoolAddressesProvider",
-  "source_file_count": 11,
-  "deployment_count": 3,
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PoolAddressesProvider\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-1329",
       "chain_id": 1329,
-      "address": "0x5c57266688a4ad1d3ab61209ebcb967b84227642",
+      "address": "0xff33a79d9190bd63d0e9a4946f7fccba0e8f2a1e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-1329",
-      "chain_id": 1329,
-      "address": "0x74c69acb35d406151c4ae5a0c75e5ad5acfa9149",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-1329",
-      "chain_id": 1329,
-      "address": "0x7da484d72c066304a075c0416d0e77506bf0e153",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

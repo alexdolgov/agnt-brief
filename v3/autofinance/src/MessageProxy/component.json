@@ -1,10 +1,20 @@
 {
   "component": "MessageProxy",
   "main_contract": "MessageProxy",
+  "source_entry_count": 65,
   "source_file_count": 65,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MessageProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://drive.google.com/file/d/16OhVtmuEB57k6tAiGb9Su4gQ9Dy_Nv4n/view"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +22,9 @@
       "address": "0x20ea2f2ecf36bcb6df086d923a120496dc616f76",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391551"
     }
   ]
 }

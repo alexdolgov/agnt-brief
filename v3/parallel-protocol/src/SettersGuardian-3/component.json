@@ -1,18 +1,28 @@
 {
   "component": "SettersGuardian-3",
   "main_contract": "SettersGuardian",
+  "source_entry_count": 32,
   "source_file_count": 32,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SettersGuardian-3\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xe5c82b4f09fd4d079757e156db44afd2c8032cc8",
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xbbc90e685c4a66ebbdc71a3a1437d3111e43fe84",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397672"
     }
   ]
 }

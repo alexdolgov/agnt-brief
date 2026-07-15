@@ -1,202 +1,297 @@
 # Agentic Audit Brief: Moonwell
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 3 across 1 audit(s)
+- Eligible audit results: 2 (1 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Moonwell (`moonwell`)
 - Website: [https://moonwell.fi](https://moonwell.fi)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:31.689Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base, ethereum, moonbeam, moonriver, optimism
-- Contract surface: 148 unique implementations (340 raw deployments)
+- Contract surface: 138 unique implementations (164 raw deployments)
+- Coverage basis: 3/65 confirmed own live verified implementations (4.6%); conservative 4.6% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $132,910,394.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Lending. Structurally: 115 project-authored contract(s) across 5 chain(s); 2 ERC4626 vaults, 27 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Moonwell. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 9 functional families. Its contracts share 48 common project-authored base contract(s) (proxy, erc1967upgrade, xerc20). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 121 contract row(s) across base, ethereum, moonbeam, moonriver, optimism. Structural roles: 68 unclassified, 30 supporting, 23 core. 13 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 121
+- Structural roles: unclassified (68), supporting (30), core (23)
+- Contract kinds: contract (119), abstract (2)
+- Detected standards: erc20 (15), ownable (10), erc1967proxy (8), erc20permit (5), erc4626 (5), multicall (5), ownable2step (5), pausable (3)
+- Frameworks: openzeppelin (34), openzeppelin-upgradeable (12), solmate (3), chainlink (1), permit2 (1)
+- Upgradeable-pattern rows: 13
+
+## Fork Analysis
+
+2 of 94 contracts are derived from known codebases. 92 contracts have no detected origin.
+
+### Forked Contracts
+
+**GeneralAdapter1** (`0xb98c94...ae746a`, chain 8453)
+Origin: singularv (`0x4a6c31...be0ae0`)
+Containment: 80.8% - 21 functions inherited
+Centroid audit status: pending_validation
+
+Additions (unaudited): none
+
+Removals (removed from original):
+- morphoWrapperDepositFor(address,uint256)
+- morphoWrapperWithdrawTo(address,uint256)
+- stakeEth(uint256,uint256,address,address)
+- unwrapStEth(uint256,address)
+- wrapStEth(uint256,address)
+
+**MoonwellGovernorArtemis** (`0xfc4dfb...57666d`, chain 1284)
+Origin: moonwell (`0x2be2e2...6e7370`)
+Containment: 90.5% - 19 functions inherited
+Centroid audit status: pending_validation
+
+Additions (unaudited):
+- setQuorumVotes(uint256)
+
+Removals (removed from original):
+- getQuorum()
+- setQuorumCaps(uint256,uint256)
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x181ba7...58668e`, chain 10)
+- UnnamedContract (`0x2f1490...746dcf`, chain 10)
+- UnnamedContract (`0x79481c...f141f0`, chain 10)
+- UnnamedContract (`0x866b83...2003fc`, chain 10)
+- UnnamedContract (`0x90aa62...9451f8`, chain 10)
+- UnnamedContract (`0xb80514...c3cfb3`, chain 10)
+- UnnamedContract (`0xd6c668...c2cbfe`, chain 10)
+- UnnamedContract (`0x1c5564...cf484c`, chain 1284)
+- UnnamedContract (`0x22b1a4...4abe32`, chain 1284)
+- UnnamedContract (`0x540244...9cdd17`, chain 1284)
+- UnnamedContract (`0x744b17...1d615b`, chain 1284)
+- UnnamedContract (`0x7793e0...167ba4`, chain 1284)
+- UnnamedContract (`0x8568a6...3cfab1`, chain 1284)
+- UnnamedContract (`0x8e00d5...86a180`, chain 1284)
+- UnnamedContract (`0xaaa20c...74a9ce`, chain 1284)
+- UnnamedContract (`0xb6c94b...f9aeac`, chain 1284)
+- UnnamedContract (`0xb8a798...2d40e5`, chain 1284)
+- UnnamedContract (`0xd22da9...8211c3`, chain 1284)
+- UnnamedContract (`0xe76c8b...c73994`, chain 1284)
+- UnnamedContract (`0x3bf937...09a5e5`, chain 8453)
+- UnnamedContract (`0x628ff6...09d457`, chain 8453)
+- UnnamedContract (`0x703843...065cc8`, chain 8453)
+- UnnamedContract (`0x73b06d...462417`, chain 8453)
+- UnnamedContract (`0xb682c8...a501a2`, chain 8453)
+- UnnamedContract (`0xc72fcc...72b42b`, chain 8453)
+- UnnamedContract (`0xe9005b...0ad9d2`, chain 8453)
+- UnnamedContract (`0xec942b...a6a9d0`, chain 8453)
+- UnnamedContract (`0xedc817...176c22`, chain 8453)
+- UnnamedContract (`0xfbb21d...3ef26c`, chain 8453)
+- BridgeToken (`0xff8ade...03493d`, chain 8453)
+- Bundler3 (`0xfbcd3c...507c05`, chain 10)
+- Bundler3 (`0x6bfd81...3920c4`, chain 8453)
+- ChainlinkOracle (`0x599a01...94b654`, chain 1)
+- ChainlinkOracle (`0xed301c...b665f9`, chain 1284)
+- EcosystemReserveController (`0xca889f...c511b9`, chain 1284)
+- Factory4626 (`0xe770bd...4c938a`, chain 8453)
+- Maximillion (`0xe5ef93...a380c3`, chain 1284)
+- MErc20Delegator (`0x636080...aaee9f`, chain 1)
+- MErc20Delegator (`0xb85ca1...9590c4`, chain 1)
+- MErc20Delegator (`0xe65579...63e62e`, chain 1)
+- MErc20Delegator (`0xeddc25...467011`, chain 1)
+- MErc20Delegator (`0x3fe782...ead6b2`, chain 10)
+- MErc20Delegator (`0x4c2e35...53d321`, chain 10)
+- MErc20Delegator (`0x6e6ca5...f06fdb`, chain 10)
+- MErc20Delegator (`0x8e0861...155525`, chain 10)
+- MErc20Delegator (`0x95c84f...d78ba1`, chain 10)
+- MErc20Delegator (`0x9fc345...f01847`, chain 10)
+- MErc20Delegator (`0xa3a538...38bf84`, chain 10)
+- MErc20Delegator (`0xb4104c...d59a33`, chain 10)
+- MErc20Delegator (`0xbb3b1a...b83f9d`, chain 10)
+- MErc20Delegator (`0xed37cd...8f8b33`, chain 10)
+- MErc20Delegator (`0x42a96c...88f289`, chain 1284)
+- MErc20Delegator (`0x10ff57...c5d2ee`, chain 8453)
+- MErc20Delegator (`0x2f90bb...66da32`, chain 8453)
+- MErc20Delegator (`0x627fe3...14304b`, chain 8453)
+- MErc20Delegator (`0x630820...904f3e`, chain 8453)
+- MErc20Delegator (`0x73902f...369ba6`, chain 8453)
+- MErc20Delegator (`0x9a858e...84a218`, chain 8453)
+- MErc20Delegator (`0xb4fb8f...07e86d`, chain 8453)
+- MErc20Delegator (`0xb6419c...25a357`, chain 8453)
+- MErc20Delegator (`0xb80514...c3cfb3`, chain 8453)
+- MErc20Delegator (`0xcb1dac...d45f44`, chain 8453)
+- MErc20Delegator (`0xd64bcb...7a9682`, chain 8453)
+- MErc20Delegator (`0xdc7810...f71ed1`, chain 8453)
+- MErc20Delegator (`0xde8df9...fffc64`, chain 8453)
+- MErc20Delegator (`0xf877ac...ad5976`, chain 8453)
+- MErc20Delegator (`0xfc41b4...72f4b5`, chain 8453)
+- MetaMorpho (`0x543257...f5a796`, chain 8453)
+- MetaMorpho (`0xa0e430...3d0ff1`, chain 8453)
+- MetaMorpho (`0xc1256a...00a2ca`, chain 8453)
+- MetaMorpho (`0xf24608...01a026`, chain 8453)
+- MetaMorphoV1_1 (`0x3520e1...29642d`, chain 10)
+- Mfam (`0xbb8d88...1a58f1`, chain 1285)
+- MGlimmer (`0x091608...4c7955`, chain 1284)
+- Morpho (`0xbbbbbb...eeffcb`, chain 8453)
+- SafeProxy (`0x5b7100...ea4026`, chain 1)
+- TemporalGovernor (`0x17c9ba...7aff3d`, chain 10)
+- TemporalGovernor (`0x908df7...ea4689`, chain 1284)
+- TemporalGovernor (`0x8b6218...df7d51`, chain 8453)
+- Timelock (`0x3a9249...2ec19b`, chain 1284)
+- TransparentUpgradeableProxy (`0x734abb...a6dbb7`, chain 1)
+- TransparentUpgradeableProxy (`0x8769b7...d75838`, chain 1)
+- TransparentUpgradeableProxy (`0x3c9684...037738`, chain 10)
+- TransparentUpgradeableProxy (`0x734abb...a6dbb7`, chain 10)
+- TransparentUpgradeableProxy (`0x734abb...a6dbb7`, chain 8453)
+- TransparentUpgradeableProxy (`0xe0278b...03e949`, chain 8453)
+- Well (`0x511ab5...2411e3`, chain 1284)
+- WETHRouter (`0xa218a4...93ca22`, chain 1)
+- WETHRouter (`0xc4ab8c...0e11dc`, chain 10)
+- WETHRouter (`0x70778c...75d0c9`, chain 8453)
+- WethUnwrapper (`0x1382cf...9e4caf`, chain 8453)
+- xWELLRouter (`0xb84543...666df4`, chain 1284)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 449; live-surface contracts included: 320 (301 live, 19 unknown).
-- Excluded by liveness: 129 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 121; live-surface contracts included: 121 (86 live, 35 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 94/105 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 8/133 (6.0%)
-- Deployed-live implementations: 133 of 148 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 8/133
-- Verified + Unaudited implementations: 125
+- Coverage of address-book-owned deployed-live implementations: 3/65 (4.6%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 94 own, 11 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 33 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 59
+- Deployed-live implementations: 94 of 138 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 3/65
+- Verified + Unaudited implementations: 62
 - Verified by bytecode match: 0
-- Unverified implementations: 15
-- Unique implementations: 148
-- Raw deployments: 340
+- Unverified implementations: 29
+- Unique implementations: 138
+- Raw deployments: 164
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 2
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-02 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 8 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Halborn | Tier 2 | 8 | 6.0% | 2022-02 |
+| Halborn | Tier 2 | 3 | 4.6% | 2022-02 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (8)
+### ✅ Verified + Audited (3)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| ChainlinkOracle | operational_periphery | moonbeam | n/a | 6 deployments: ethereum `0x599a01...94b654`; moonbeam [`0x2f5d37...85bc38`](./contracts/moonbeam-1284/0x2f5d370cdee0d42127a4f6ae04efd11fd085bc38/); moonbeam `0x61aa89...612561`; moonbeam `0xdeef6c...ecb9cd`; moonbeam `0xed301c...b665f9`; moonriver `0x892be7...3baf60` | ✅ Audited |
-| Comptroller | unknown | moonbeam | n/a | 5 deployments: moonbeam [`0x028b17...927b1d`](./contracts/moonbeam-1284/0x028b17855d3d8a1a73bf889ac0e48ebe44927b1d/); moonbeam `0x08cdbe...7b43cd`; moonbeam `0x29c66a...c70ab6`; moonbeam `0xa962f2...2aef16`; moonbeam `0xd4d8de...61f96c` | ✅ Audited |
-| EcosystemReserve | unknown | moonriver | n/a | 2 deployments: moonriver [`0xc0ad7d...cf4a2e`](./contracts/moonriver-1285/0xc0ad7d4d8d9d97c5857ed5e599ec81fecccf4a2e/); moonriver `0xcac071...a09fc5` | ✅ Audited |
-| MErc20Delegator | token | moonbeam | n/a | 22 deployments: ethereum `0x636080...aaee9f`; ethereum `0xb85ca1...9590c4`; ethereum `0xe65579...63e62e`; ethereum `0xeddc25...467011`; optimism `0xed37cd...8f8b33`; moonbeam [`0x04e632...160bd7`](./contracts/moonbeam-1284/0x04e6322d196e0e4ccbb2610dd8b8f2871e160bd7/); moonbeam `0x1c478c...eb3eb2`; moonbeam `0x21d851...735eaf`; moonbeam `0x2be2e2...6e7370`; moonbeam `0x314d8b...bbb5de`; moonbeam `0x3fe782...ead6b2`; moonbeam `0x64a815...ff199e`; moonbeam `0x69ff8b...e0668e`; moonbeam `0x7a1bf5...9b1d1b`; moonbeam `0x8618f8...2f9f36`; moonbeam `0x9f3d5a...7bb49b`; moonbeam `0x9f785f...a67ede`; moonbeam `0xa27aba...121b2d`; moonbeam `0xcc56c3...32964f`; moonbeam `0xfbb7fe...a1fb38`; moonriver `0x159814...832840`; base `0xd64bcb...7a9682` | ✅ Audited |
-| MGlimmer | unknown | moonbeam | n/a | 5 deployments: moonbeam [`0x091608...4c7955`](./contracts/moonbeam-1284/0x091608f4e4a15335145be0a279483c0f8e4c7955/); moonbeam `0x23d718...5145f2`; moonbeam `0x7b2fab...0c744e`; moonbeam `0xa3a538...38bf84`; moonriver `0x6a1a77...1cd07f` | ✅ Audited |
-| Timelock | governance | moonriver | n/a | 5 deployments: moonbeam `0x3a9249...2ec19b`; moonriver [`0x04e632...160bd7`](./contracts/moonriver-1285/0x04e6322d196e0e4ccbb2610dd8b8f2871e160bd7/); moonriver `0x66fb79...23227b`; moonriver `0xa4230d...483019`; moonriver `0xf27d72...785c67` | ✅ Audited |
-| Unitroller | unknown | moonbeam | n/a | 5 deployments: moonbeam [`0x32b198...f40392`](./contracts/moonbeam-1284/0x32b1985b6e50359f2470d244f8fc4c0d2cf40392/); moonbeam `0x70f607...baf1e3`; moonbeam `0xa81f7a...af3e12`; moonbeam `0xa9ce0a...b09dcc`; moonbeam `0xb8790a...4f1acb` | ✅ Audited |
-| Well | unknown | moonbeam | n/a | [`0x511ab5...2411e3`](./contracts/moonbeam-1284/0x511ab53f793683763e5a8829738301368a2411e3/) | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| MGlimmer | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389269 | `0x091608...4c7955` | ✅ Audited |
+| Timelock | governance | project_anchor | own_supporting | 0 | moonbeam | unit-389272 | `0x3a9249...2ec19b` | ✅ Audited |
+| Well | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389273 | `0x511ab5...2411e3` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (125)
+### ⚠️ Verified + Unaudited (73)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Bundler3 | unknown | base | n/a | 2 deployments: optimism `0xfbcd3c...507c05`; base [`0x6bfd81...3920c4`](./contracts/base-8453/0x6bfd8137e702540e7a42b74178a4a49ba43920c4/) | ⚠️ Unaudited |
-| ChainlinkBoundedCompositeOracle | unknown | base | n/a | [`0x31d099...59dade`](./contracts/base-8453/0x31d099c106cd73e731972fdf1390cab77f59dade/) | ⚠️ Unaudited |
-| ChainlinkOEVMorphoWrapper | unknown | base | n/a | 3 deployments: base [`0x593355...2fd66c`](./contracts/base-8453/0x593355faef3075af1b20ca22fedabf6f3d2fd66c/); base `0xaeee63...61f5f5`; base `0xf4dcca...3dadb9` | ⚠️ Unaudited |
-| ChainlinkOracleProxy | operational_periphery | base | n/a | [`0x696daf...19e14d`](./contracts/base-8453/0x696daf18ba0cf503fac9ef137ed3ef5aa719e14d/) | ⚠️ Unaudited |
-| ChainlinkOracleProxy | operational_periphery | base | n/a | [`0x98b14f...8017de`](./contracts/base-8453/0x98b14fc2cc69186d8cffa342087d9e84228017de/) | ⚠️ Unaudited |
-| ChainlinkOracleProxy | operational_periphery | base | n/a | [`0xe69de7...978e7b`](./contracts/base-8453/0xe69de7abfcf2a252874d66bc7aef6490b1978e7b/) | ⚠️ Unaudited |
-| Comptroller | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6698e6...08f58b`](./contracts/ethereum-1/0x6698e617ff739ebd03ba11bb69fd2579ef08f58b/); ethereum `0xdec80b...5b21be` | ⚠️ Unaudited |
-| Comptroller | unknown | optimism | n/a | 2 deployments: optimism [`0x8dfbb2...a30ce2`](./contracts/optimism-10/0x8dfbb21dbd61af533092d54b293660cf77a30ce2/); optimism `0xca889f...c511b9` | ⚠️ Unaudited |
-| Comptroller | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x8032fc...c39997`](./contracts/moonbeam-1284/0x8032fc5efee8c053e2ca9871d8a5ce224bc39997/); moonbeam `0x8e00d5...86a180` | ⚠️ Unaudited |
-| Comptroller | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0xb75e71...839e8f`](./contracts/moonbeam-1284/0xb75e71d5a3de5b157abaab8b8ea97daf7f839e8f/); moonbeam `0xbb3b1a...b83f9d` | ⚠️ Unaudited |
-| Comptroller | unknown | moonriver | n/a | 2 deployments: moonriver [`0x0b7a0e...a4905e`](./contracts/moonriver-1285/0x0b7a0eaa884849c6af7a129e899536dddca4905e/); moonriver `0x8529ea...2ff098` | ⚠️ Unaudited |
-| Comptroller | unknown | base | n/a | 2 deployments: base [`0x73d8a3...75d8fe`](./contracts/base-8453/0x73d8a3bf62aaca6690791e57ebaee4e1d875d8fe/); base `0xfbb21d...3ef26c` | ⚠️ Unaudited |
-| ComptrollerRewardViewer | periphery | moonbeam | n/a | [`0xf2a970...1b1620`](./contracts/moonbeam-1284/0xf2a9706b18534cc777a4c31d84a3c346fb1b1620/) | ⚠️ Unaudited |
-| Core | unknown | base | n/a | [`0x7fbfcb...570b0e`](./contracts/base-8453/0x7fbfcb63eab03e04c5455c770a0502ef73570b0e/) | ⚠️ Unaudited |
-| CypherAutoLoad | unknown | base | n/a | [`0x9e3ca3...112ac6`](./contracts/base-8453/0x9e3ca32b18316f022fdfae503eda7e788e112ac6/) | ⚠️ Unaudited |
-| EcosystemReserve | unknown | ethereum | n/a | 2 deployments: ethereum [`0x437113...0d04d5`](./contracts/ethereum-1/0x437113e54e5e6dfbe9741d699b312eea110d04d5/); ethereum `0xabd650...00c47c` | ⚠️ Unaudited |
-| EcosystemReserve | unknown | optimism | n/a | 2 deployments: optimism [`0x0cada1...ba2a10`](./contracts/optimism-10/0x0cada1745973f63ab2aad29f67d1f1183bba2a10/); optimism `0x966450...78ef4b` | ⚠️ Unaudited |
-| EcosystemReserve | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x7793e0...167ba4`](./contracts/moonbeam-1284/0x7793e08eb4525309c46c9ba394ce33361a167ba4/); moonbeam `0x8dfbb2...a30ce2` | ⚠️ Unaudited |
-| EcosystemReserve | unknown | base | n/a | 2 deployments: base [`0x3343b3...372af1`](./contracts/base-8453/0x3343b3efebb99b543da30d272d6363d672372af1/); base `0x65a633...ab95b8` | ⚠️ Unaudited |
-| EcosystemReserve | unknown | base | n/a | 2 deployments: base [`0x7e1d5f...c3cf4c`](./contracts/base-8453/0x7e1d5f2fe42858708c7d007cc589b995f1c3cf4c/); base `0xa4908a...417307` | ⚠️ Unaudited |
-| EcosystemReserve | unknown | base | n/a | 2 deployments: base [`0xbad37d...472e6c`](./contracts/base-8453/0xbad37dcaf815a96670416be2bfaf9a9474472e6c/); base `0xf65194...4e55e0` | ⚠️ Unaudited |
-| EcosystemReserveController | governance | moonriver | n/a | 5 deployments: ethereum `0x98e708...d0157f`; moonbeam `0xca889f...c511b9`; moonriver [`0x300fc6...fc9ad9`](./contracts/moonriver-1285/0x300fc6cb2f5bd222521710855cfb747487fc9ad9/); moonriver `0xd94f82...f21044`; moonriver `0xee793a...ee435c` | ⚠️ Unaudited |
-| EcosystemReserveMoonriver | unknown | moonriver | n/a | 2 deployments: moonbeam `0xf88f94...4be756`; moonriver [`0x7793e0...167ba4`](./contracts/moonriver-1285/0x7793e08eb4525309c46c9ba394ce33361a167ba4/) | ⚠️ Unaudited |
-| EcosystemReserveMoonriver | unknown | moonriver | n/a | [`0xba1758...88908b`](./contracts/moonriver-1285/0xba17581bb6d89954b42fb84294e476e97588908b/) | ⚠️ Unaudited |
-| ERC4626EthRouter | unknown | base | n/a | [`0xc095cb...758d71`](./contracts/base-8453/0xc095cb1a6b41a5cd7daaf993a904afdd74758d71/) | ⚠️ Unaudited |
-| ERC4626RateLimitedAllowance | operational_periphery | base | n/a | [`0xf08cef...312072`](./contracts/base-8453/0xf08cef2ee2e5be584a581209637b02637f312072/) | ⚠️ Unaudited |
-| Factory4626 | registry | base | n/a | [`0xe770bd...4c938a`](./contracts/base-8453/0xe770bd40b6976efbbb095174395dd2cb794c938a/) | ⚠️ Unaudited |
-| Factory4626Eth | unknown | base | n/a | [`0x6250e2...ec811e`](./contracts/base-8453/0x6250e204ba6f722c7d498f659f8d3c5550ec811e/) | ⚠️ Unaudited |
-| FeeSplitter | operational_periphery | base | n/a | [`0x1a8ae4...4c3cdb`](./contracts/base-8453/0x1a8ae46098ff418e2054243491544ed8564c3cdb/) | ⚠️ Unaudited |
-| GeneralAdapter1 | adapter | base | n/a | [`0xb98c94...ae746a`](./contracts/base-8453/0xb98c948cfa24072e58935bc004a8a7b376ae746a/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | moonriver | n/a | [`0x5ded9d...0bb8db`](./contracts/moonriver-1285/0x5ded9d1025a158554ab19540ae83182d890bb8db/) | ⚠️ Unaudited |
-| JumpRateModel | operational_periphery | moonbeam | n/a | 11 deployments: ethereum `0x6e13ed...76b2ed`; ethereum `0x9a714b...a39c58`; ethereum `0xb9ca0d...c1b945`; ethereum `0xe86b7b...dfc366`; moonbeam [`0x0b5f12...c6acf5`](./contracts/moonbeam-1284/0x0b5f126fa3116dbb769f6b8404d1a78c54c6acf5/); moonbeam `0x1ce7e4...e73755`; moonbeam `0x4c2e35...53d321`; moonbeam `0xdada7d...ae76d6`; moonriver `0xc862a3...6601bf`; base `0x6d8cb0...474c0c`; base `0xcf1a33...dc87a1` | ⚠️ Unaudited |
-| Math | unknown | moonbeam | n/a | 7 deployments: moonbeam [`0x405e3c...41bb3a`](./contracts/moonbeam-1284/0x405e3c3b71789af23e3ebac44f0a2af01941bb3a/); moonbeam `0x7befee...996e1a`; moonbeam `0x8abfd2...adc05e`; base [`0x405e3c...41bb3a`](./contracts/base-8453/0x405e3c3b71789af23e3ebac44f0a2af01941bb3a/); base `0x6a85d8...8acdbc`; base `0x7befee...996e1a`; base `0x8abfd2...adc05e` | ⚠️ Unaudited |
-| Maximillion | unknown | moonriver | n/a | 5 deployments: moonbeam `0x35f59b...e86869`; moonbeam `0x9fc345...f01847`; moonbeam `0xe5ef93...a380c3`; moonbeam `0xf5e4b6...21f12a`; moonriver [`0x1650c0...a80ccc`](./contracts/moonriver-1285/0x1650c0ad9483158f9e240fd58d0e173807a80ccc/) | ⚠️ Unaudited |
-| MErc20Delegate | unknown | base | n/a | 8 deployments: ethereum `0xe1eeaf...ce7d8a`; optimism `0xa9ce0a...b09dcc`; moonbeam `0x73bbca...bb8e21`; moonbeam `0x841cd5...879aae`; moonbeam `0x948ccf...9f8ad9`; moonbeam `0xd82bf3...68aed4`; moonriver `0x45d17f...6cf75d`; base [`0x1fadff...da45b7`](./contracts/base-8453/0x1fadff493529c3fcc7ee04f1f15d19816dda45b7/) | ⚠️ Unaudited |
-| MErc20DelegateFixer | unknown | moonbeam | n/a | [`0x47dffe...347914`](./contracts/moonbeam-1284/0x47dffebef33719315bd5a91db6bfb81691347914/) | ⚠️ Unaudited |
-| MErc20DelegateMadFixer | unknown | moonbeam | n/a | [`0xf19b9e...98b4fc`](./contracts/moonbeam-1284/0xf19b9e20c24c8304b89373dec84b7c017e98b4fc/) | ⚠️ Unaudited |
-| MetaMorpho | unknown | base | n/a | 4 deployments: base [`0x543257...f5a796`](./contracts/base-8453/0x543257ef2161176d7c8cd90ba65c2d4caef5a796/); base `0xa0e430...3d0ff1`; base `0xc1256a...00a2ca`; base `0xf24608...01a026` | ⚠️ Unaudited |
-| MetaMorphoV1_1 | unknown | optimism | n/a | [`0x3520e1...29642d`](./contracts/optimism-10/0x3520e1a10038131a3c00bf2158835a75e929642d/) | ⚠️ Unaudited |
-| Mfam | adapter | moonriver | n/a | [`0xbb8d88...1a58f1`](./contracts/moonriver-1285/0xbb8d88bcd9749636bc4d2be22aac4bb3b01a58f1/) | ⚠️ Unaudited |
-| MoonwellGovernorApollo | governance | moonriver | n/a | [`0x2be2e2...6e7370`](./contracts/moonriver-1285/0x2be2e230e89c59c8e20e633c524ad2de246e7370/) | ⚠️ Unaudited |
-| MoonwellGovernorArtemis | governance | moonbeam | n/a | [`0xfc4dfb...57666d`](./contracts/moonbeam-1284/0xfc4dfb17101a12c5cec5eedd8e92b5b16557666d/) | ⚠️ Unaudited |
-| MoonwellStakingViews | unknown | ethereum | n/a | 2 deployments: ethereum [`0xcb4413...0a0e15`](./contracts/ethereum-1/0xcb44138f3e2e25b72338372488d2a74a580a0e15/); ethereum `0xf5f2ae...ce5401` | ⚠️ Unaudited |
-| MoonwellViewsV1 | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x041b40...8d70c6`](./contracts/moonbeam-1284/0x041b40b14692725ed152135c1f3ec50e018d70c6/); moonbeam `0x0b3cbb...f416e8` | ⚠️ Unaudited |
-| MoonwellViewsV1 | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x0ecf9d...59b21b`](./contracts/moonbeam-1284/0x0ecf9d86e52e77b91c5476a59174ca453159b21b/); moonbeam `0xabfcb6...8dd170` | ⚠️ Unaudited |
-| MoonwellViewsV1 | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0xd02775...0e8e00`](./contracts/moonbeam-1284/0xd027757360228f12456d3a2422689b72060e8e00/); moonbeam `0xeb9c8f...dfb20c` | ⚠️ Unaudited |
-| MoonwellViewsV1 | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0xf0a4a9...668d1a`](./contracts/moonbeam-1284/0xf0a4a985254f5d419e70e52f634b75d36e668d1a/); moonbeam `0xf5f2ae...ce5401` | ⚠️ Unaudited |
-| MoonwellViewsV1 | unknown | moonriver | n/a | 2 deployments: moonriver [`0x2a55ba...5a280f`](./contracts/moonriver-1285/0x2a55ba986a8c6ee17979f6233985414a865a280f/); moonriver `0xb4104c...d59a33` | ⚠️ Unaudited |
-| MoonwellViewsV1Moonbeam | adapter | moonbeam | n/a | [`0x54ff1a...43310f`](./contracts/moonbeam-1284/0x54ff1a86ab91a8f85e89c65bef92f02e5343310f/) | ⚠️ Unaudited |
-| MoonwellViewsV1Moonbeam | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0xdec80b...5b21be`](./contracts/moonbeam-1284/0xdec80bb934397575594e91970b37baf65f5b21be/); moonbeam `0xe76c8b...c73994` | ⚠️ Unaudited |
-| MoonwellViewsV2 | unknown | base | n/a | 2 deployments: base [`0x29ea8b...ae5b71`](./contracts/base-8453/0x29ea8b56341ee95c819f4438bc048c6239ae5b71/); base `0x683477...79d459` | ⚠️ Unaudited |
-| MoonwellViewsV2 | unknown | base | n/a | 2 deployments: base [`0x511ab5...2411e3`](./contracts/base-8453/0x511ab53f793683763e5a8829738301368a2411e3/); base `0xac7b31...aa2e91` | ⚠️ Unaudited |
-| MoonwellViewsV3 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x2d85b9...f7786e`](./contracts/ethereum-1/0x2d85b9c48a8c582f0aa244e134e9c6f30cf7786e/); ethereum `0xde5187...1c9ad7` | ⚠️ Unaudited |
-| Morpho | unknown | base | n/a | [`0xbbbbbb...eeffcb`](./contracts/base-8453/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb/) | ⚠️ Unaudited |
-| MorphoVaultV2Views | core_logic | base | n/a | [`0x8d1899...99cce0`](./contracts/base-8453/0x8d189997ccd6ab6909ef89836e5bcef94599cce0/) | ⚠️ Unaudited |
-| MorphoViewsV2 | unknown | base | n/a | [`0x7fc0db...d1ed31`](./contracts/base-8453/0x7fc0dbc713649b96e984b2a5935016d3a5d1ed31/) | ⚠️ Unaudited |
-| MultichainGovernor | governance | moonbeam | n/a | 3 deployments: moonbeam [`0x0ea816...4209ab`](./contracts/moonbeam-1284/0x0ea81678e4deb33aad9e214df76be3158b4209ab/); moonbeam `0x65299e...a707ab`; moonbeam `0xc9ac40...236b5d` | ⚠️ Unaudited |
-| MultichainGovernor | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x8769b7...d75838`](./contracts/moonbeam-1284/0x8769b70ac7c93af0e75de0d69877709b66d75838/); moonbeam `0x9a8464...0f1af4` | ⚠️ Unaudited |
-| MultichainGovernorV2 | governance | ethereum | n/a | [`0x8769b7...d75838`](./contracts/ethereum-1/0x8769b70ac7c93af0e75de0d69877709b66d75838/) | ⚠️ Unaudited |
-| MultichainVoteCollectionMoonbeam | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0xb8a798...2d40e5`](./contracts/moonbeam-1284/0xb8a798a50a7274a13449b7f2dd6df22faf2d40e5/); moonbeam `0xcb4413...0a0e15` | ⚠️ Unaudited |
-| MultichainVoteCollectionV2 | unknown | optimism | n/a | [`0x3c9684...037738`](./contracts/optimism-10/0x3c968481be3ba1a99fed5f73db2ff51151037738/) | ⚠️ Unaudited |
-| MultichainVoteCollectionV2 | unknown | base | n/a | [`0xe0278b...03e949`](./contracts/base-8453/0xe0278b32c627ff6ffbbe7de6a18ade145603e949/) | ⚠️ Unaudited |
-| MultiRewardDistributor | unknown | ethereum | n/a | 2 deployments: ethereum [`0x54ff1a...43310f`](./contracts/ethereum-1/0x54ff1a86ab91a8f85e89c65bef92f02e5343310f/); ethereum `0x60142b...71851c` | ⚠️ Unaudited |
-| MultiRewardDistributor | unknown | optimism | n/a | 2 deployments: optimism [`0xf9524b...7574aa`](./contracts/optimism-10/0xf9524bfa18c19c3e605fbfe8dfd05c6e967574aa/); optimism `0xff0731...cde121` | ⚠️ Unaudited |
-| MultiRewardDistributor | unknown | base | n/a | 2 deployments: base [`0xdc649f...cfef0f`](./contracts/base-8453/0xdc649f4fa047a3c98e8705e85b8b1bafcbcfef0f/); base `0xe9005b...0ad9d2` | ⚠️ Unaudited |
-| MultiRewards | unknown | optimism | n/a | [`0x2eed2b...223d2b`](./contracts/optimism-10/0x2eed2b7d44e2cf64a41b6b3f78be2fdc56223d2b/) | ⚠️ Unaudited |
-| MWethDelegate | unknown | base | n/a | 3 deployments: ethereum `0x9b1eea...1021fe`; optimism `0x66fb79...23227b`; base [`0x599d4a...d7c41a`](./contracts/base-8453/0x599d4a1538d686814ee11b331eacbba166d7c41a/) | ⚠️ Unaudited |
-| MWethOwnerWrapper | unknown | base | n/a | 2 deployments: base [`0x179672...57c08e`](./contracts/base-8453/0x1796720c9441f8f18a3aa570ab7c10597a57c08e/); base `0x82e5e0...8f6250` | ⚠️ Unaudited |
-| OEVProtocolFeeRedeemer | unknown | ethereum | n/a | [`0xb41ab9...1007f5`](./contracts/ethereum-1/0xb41ab921702e70f31df6309b77d213d96c1007f5/) | ⚠️ Unaudited |
-| ProposalView | unknown | moonbeam | n/a | [`0xded4de...2d5c30`](./contracts/moonbeam-1284/0xded4ded0badacf87714c90405f8983efdf2d5c30/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | moonbeam | n/a | 22 deployments: ethereum `0xb8a798...2d40e5`; ethereum `0xd5294c...991a7c`; ethereum `0xf6e7c2...9aca7f`; optimism `0x8568a6...3cfab1`; moonbeam [`0x0c2b0f...b57b33`](./contracts/moonbeam-1284/0x0c2b0f1fcbcf3a27f19cd4afe564fe63f3b57b33/); moonbeam `0x2700d9...ea9ff6`; moonbeam `0x5b50c3...ac0955`; moonbeam `0x8649a5...d1a4a8`; moonbeam `0xa017a0...a497dd`; moonbeam `0xab9aad...386d4e`; moonbeam `0xb0ee65...1d9f5b`; moonriver `0x6658ed...2821a0`; moonriver `0x6e6ca5...f06fdb`; moonriver `0xce7602...a9ceb5`; base `0x243cd4...93247a`; base `0x3fca08...074dec`; base `0x7465c2...1d1486`; base `0x8d7d22...69770f`; base `0x9837b1...9e0bc3`; base `0xc7867f...8adb2c`; base `0xf4cf0f...90099f`; base `0xff0731...cde121` | ⚠️ Unaudited |
-| RateLimitCommonLibrary | unknown | base | n/a | [`0xbec9ea...627057`](./contracts/base-8453/0xbec9ead15808c273d6ff4ba13e66de110a627057/) | ⚠️ Unaudited |
-| RateLimitMidpointCommonLibrary | unknown | moonbeam | n/a | 6 deployments: moonbeam [`0x56ed99...103c4d`](./contracts/moonbeam-1284/0x56ed993b9883e39741c524a6eabe5f4625103c4d/); moonbeam `0xbae1c9...113e22`; moonbeam `0xc6cda5...8822da`; base [`0x56ed99...103c4d`](./contracts/base-8453/0x56ed993b9883e39741c524a6eabe5f4625103c4d/); base `0xbae1c9...113e22`; base `0xc6cda5...8822da` | ⚠️ Unaudited |
-| Safe | unknown | ethereum | n/a | [`0x5b7100...ea4026`](./contracts/ethereum-1/0x5b710010586c1b728b047c3e42473c700eea4026/) | ⚠️ Unaudited |
-| StakedMfam | adapter | moonriver | n/a | 2 deployments: moonriver [`0x740d4c...da8bde`](./contracts/moonriver-1285/0x740d4c227129e55aa00169433024b77339da8bde/); moonriver `0xb0ee65...1d9f5b` | ⚠️ Unaudited |
-| StakedMfam | adapter | moonriver | n/a | [`0xcd76e6...9fda3a`](./contracts/moonriver-1285/0xcd76e63f3abfa864c53b4b98f57c1aa6539fda3a/) | ⚠️ Unaudited |
-| StakedWell | unknown | ethereum | n/a | 2 deployments: ethereum [`0x701551...b0f5af`](./contracts/ethereum-1/0x701551a3cd30a29ccc012e8f160fb2cac9b0f5af/); ethereum `0xb3a9e0...dd4357` | ⚠️ Unaudited |
-| StakedWell | unknown | ethereum | n/a | 2 deployments: ethereum [`0xeb56c5...66012a`](./contracts/ethereum-1/0xeb56c57cec4d56072942caf90a8f694ed766012a/); ethereum `0xf03499...1dae7e` | ⚠️ Unaudited |
-| StakedWell | unknown | optimism | n/a | 2 deployments: optimism [`0x78feb7...266568`](./contracts/optimism-10/0x78feb72aea00b912ac45438e0764a02213266568/); optimism `0xfb26a4...7438c5` | ⚠️ Unaudited |
-| StakedWell | token | moonbeam | n/a | 3 deployments: moonbeam [`0x3a21d8...ff106a`](./contracts/moonbeam-1284/0x3a21d8b01c5fa6c61d88677fbb38fe05f0ff106a/); moonbeam `0xbec923...56f72e`; moonbeam `0xd7689c...c29d77` | ⚠️ Unaudited |
-| StakedWell | unknown | base | n/a | 2 deployments: base [`0xe2747a...454b29`](./contracts/base-8453/0xe2747a3f7dd8585eb04c7632a9561d9616454b29/); base `0xe66e3a...94dc17` | ⚠️ Unaudited |
-| StakedWellMoonbeam | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x8568a6...3cfab1`](./contracts/moonbeam-1284/0x8568a675384d761f36ec269d695d6ce4423cfab1/); moonbeam `0xbac3dd...771501` | ⚠️ Unaudited |
-| STIXToken | unknown | base | n/a | [`0xfd1013...5d0d5e`](./contracts/base-8453/0xfd1013c72cbb0ffb920d347c5836bf88965d0d5e/) | ⚠️ Unaudited |
-| TemporalGovernor | governance | moonbeam | n/a | 3 deployments: moonbeam [`0x1e336f...7fb563`](./contracts/moonbeam-1284/0x1e336faa789426ee30dccf975f582ac8bd7fb563/); moonbeam `0x908df7...ea4689`; base `0x8b6218...df7d51` | ⚠️ Unaudited |
-| TokenImplementation | token | base | n/a | [`0xff8ade...03493d`](./contracts/base-8453/0xff8adec2221f9f4d8dfbafa6b9a297d17603493d/) | ⚠️ Unaudited |
-| TokenSaleDistributor | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x1480e8...369001`](./contracts/moonbeam-1284/0x1480e89fced221af1ced2c3d57ae622fe1369001/); moonbeam `0x7156b9...e2169d` | ⚠️ Unaudited |
-| TokenSaleDistributor | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x77e437...b65563`](./contracts/moonbeam-1284/0x77e43754112add0a2c5840d25a5663b047b65563/); moonbeam `0x933fcd...98b60e` | ⚠️ Unaudited |
-| TokenSaleDistributor | unknown | moonriver | n/a | 2 deployments: moonriver [`0x17c9ba...7aff3d`](./contracts/moonriver-1285/0x17c9ba3fda7ec71ccfd75f978ef31e21927aff3d/); moonriver `0xac7b31...aa2e91` | ⚠️ Unaudited |
-| TokenSaleDistributor | unknown | moonriver | n/a | 2 deployments: moonriver [`0x293635...62b9cf`](./contracts/moonriver-1285/0x2936354078e2c4bbb68f29b912a56dc45962b9cf/); moonriver `0x8568a6...3cfab1` | ⚠️ Unaudited |
-| TokenSaleDistributor | operational_periphery | moonriver | n/a | 3 deployments: moonbeam `0xc7a3ba...605977`; moonbeam `0xefeade...3a7247`; moonriver [`0xbec923...56f72e`](./contracts/moonriver-1285/0xbec923f9038f245f90f0bc8ad57ac80ec556f72e/) | ⚠️ Unaudited |
-| TokenSaleDistributorProxy | operational_periphery | moonriver | n/a | 3 deployments: moonbeam `0x472292...db627c`; moonbeam `0xe7e1ff...60af58`; moonriver [`0x29ea8b...ae5b71`](./contracts/moonriver-1285/0x29ea8b56341ee95c819f4438bc048c6239ae5b71/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x40626e...e847c6`](./contracts/moonbeam-1284/0x40626e2bacf0092da1d673554ce58efbb8e847c6/); moonbeam `0x734d44...daa159` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x77dae4...e8e71d`](./contracts/moonbeam-1284/0x77dae4ef9fedc494aeecf85b2165340cc7e8e71d/); moonbeam `0xa6eb41...2f0112` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0xab9d65...e03dfd`](./contracts/moonbeam-1284/0xab9d654a7ba685381fd244ad8383d8d8aae03dfd/); moonbeam `0xae2f92...7b647b` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0xd74b3f...fa853d`](./contracts/moonbeam-1284/0xd74b3f02f24159830d23b184b57b7ad65dfa853d/); moonbeam `0xe32403...fad3a9` | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | moonriver | n/a | [`0x50837b...cead56`](./contracts/moonriver-1285/0x50837bff055a2bf724ec9f74612657a436cead56/) | ⚠️ Unaudited |
-| VotingPowerAggregator | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1e336f...7fb563`](./contracts/ethereum-1/0x1e336faa789426ee30dccf975f582ac8bd7fb563/); ethereum `0x908df7...ea4689` | ⚠️ Unaudited |
-| VotingPowerAggregator | unknown | optimism | n/a | 2 deployments: optimism [`0xbac3dd...771501`](./contracts/optimism-10/0xbac3dd6d0333ea14f957b7b0796bcd59e8771501/); optimism `0xf2af8f...75c2a1` | ⚠️ Unaudited |
-| VotingPowerAggregator | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x02bce0...055c22`](./contracts/moonbeam-1284/0x02bce061c68976e2a63ebde959cf9f9044055c22/); moonbeam `0x4da587...8ca986` | ⚠️ Unaudited |
-| VotingPowerAggregator | unknown | base | n/a | 2 deployments: base [`0x701551...b0f5af`](./contracts/base-8453/0x701551a3cd30a29ccc012e8f160fb2cac9b0f5af/); base `0xb3a9e0...dd4357` | ⚠️ Unaudited |
-| WETH9 | token | base | n/a | [`0x420000...000006`](./contracts/base-8453/0x4200000000000000000000000000000000000006/) | ⚠️ Unaudited |
-| WETHRouter | adapter | base | n/a | 4 deployments: ethereum `0xa218a4...93ca22`; optimism `0xc4ab8c...0e11dc`; base [`0x31ccfb...2124c4`](./contracts/base-8453/0x31ccfb038771d9bf486ef7c7f3a9f91be72124c4/); base `0x70778c...75d0c9` | ⚠️ Unaudited |
-| WethUnwrapper | token | base | n/a | 6 deployments: ethereum `0x4605da...1da2f6`; optimism `0xa962f2...2aef16`; base [`0x1382cf...9e4caf`](./contracts/base-8453/0x1382cff3cee10d283dcca55a30496187759e4caf/); base `0x7414df...e381b7`; base `0x876fa6...99d6ca`; base `0xcd57f6...0441ac` | ⚠️ Unaudited |
-| WormholeBridgeAdapter | operational_periphery | ethereum | n/a | [`0x734abb...a6dbb7`](./contracts/ethereum-1/0x734abbce07679c9a6b4fe3bc16325e028fa6dbb7/) | ⚠️ Unaudited |
-| WormholeBridgeAdapter | operational_periphery | optimism | n/a | [`0x734abb...a6dbb7`](./contracts/optimism-10/0x734abbce07679c9a6b4fe3bc16325e028fa6dbb7/) | ⚠️ Unaudited |
-| WormholeBridgeAdapter | operational_periphery | moonbeam | n/a | 2 deployments: moonbeam [`0x48e70f...8c6412`](./contracts/moonbeam-1284/0x48e70f68712bd275982e8351dfe1993a828c6412/); moonbeam `0xef68c8...20ce6b` | ⚠️ Unaudited |
-| WormholeBridgeAdapter | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x8318f3...b37e84`](./contracts/moonbeam-1284/0x8318f3c525fdac18993b9fe5dd823c4743b37e84/); moonbeam `0xe5f562...98de2c` | ⚠️ Unaudited |
-| WormholeBridgeAdapter | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0xa8458d...bcc2b6`](./contracts/moonbeam-1284/0xa8458d9a119c74195c51650adf0d22853dbcc2b6/); moonbeam `0xf9ebc3...670872` | ⚠️ Unaudited |
-| WormholeBridgeAdapter | operational_periphery | base | n/a | [`0x734abb...a6dbb7`](./contracts/base-8453/0x734abbce07679c9a6b4fe3bc16325e028fa6dbb7/) | ⚠️ Unaudited |
-| WormholeBridgeAdapter | unknown | base | n/a | [`0x8318f3...b37e84`](./contracts/base-8453/0x8318f3c525fdac18993b9fe5dd823c4743b37e84/) | ⚠️ Unaudited |
-| WormholeBridgeAdapter | unknown | base | n/a | [`0xf9ebc3...670872`](./contracts/base-8453/0xf9ebc3b140d802240ae2ebf1a3d388e5cd670872/) | ⚠️ Unaudited |
-| WormholeUnwrapperAdapter | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x11dba1...77ebcf`](./contracts/moonbeam-1284/0x11dba16fb4cc80d80f371825137a6d3e2f77ebcf/); moonbeam `0x734abb...a6dbb7` | ⚠️ Unaudited |
-| WormholeUnwrapperAdapter | adapter | moonbeam | n/a | [`0x24af32...299c58`](./contracts/moonbeam-1284/0x24af32b0c4c94f0d406fbc3c8815666356299c58/) | ⚠️ Unaudited |
-| XERC20Lockbox | token | moonbeam | n/a | 3 deployments: moonbeam [`0x0d4503...51b460`](./contracts/moonbeam-1284/0x0d45033775b290d69462944289b7a402a651b460/); moonbeam `0xd12a18...5128da`; moonbeam `0xd95c2d...fce7df` | ⚠️ Unaudited |
-| xWELL | unknown | ethereum | n/a | 3 deployments: ethereum [`0x3b1bdd...700a7f`](./contracts/ethereum-1/0x3b1bddc0998058dd266e2a0ac855d0d750700a7f/); moonbeam [`0x3b1bdd...700a7f`](./contracts/moonbeam-1284/0x3b1bddc0998058dd266e2a0ac855d0d750700a7f/); base [`0x3b1bdd...700a7f`](./contracts/base-8453/0x3b1bddc0998058dd266e2a0ac855d0d750700a7f/) | ⚠️ Unaudited |
-| xWELL | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa88594...2296ae`](./contracts/ethereum-1/0xa88594d404727625a9437c3f886c7643872296ae/); ethereum `0xb84543...666df4` | ⚠️ Unaudited |
-| xWELL | unknown | optimism | n/a | 2 deployments: optimism [`0x3b1bdd...700a7f`](./contracts/optimism-10/0x3b1bddc0998058dd266e2a0ac855d0d750700a7f/); optimism `0xa88594...2296ae` | ⚠️ Unaudited |
-| xWELL | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x2585d8...9a14e3`](./contracts/moonbeam-1284/0x2585d82da7a7f8a85b10e6964814a74d999a14e3/); moonbeam `0x87e097...e5dd69` | ⚠️ Unaudited |
-| xWELL | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x3c9684...037738`](./contracts/moonbeam-1284/0x3c968481be3ba1a99fed5f73db2ff51151037738/); moonbeam `0xa88594...2296ae` | ⚠️ Unaudited |
-| xWELL | unknown | moonbeam | n/a | 2 deployments: moonbeam [`0x54720d...8e5873`](./contracts/moonbeam-1284/0x54720dbdb9bc6bcce6796b3c57d4527e848e5873/); moonbeam `0xe5fa98...08d0c8` | ⚠️ Unaudited |
-| xWELL | unknown | base | n/a | 2 deployments: base [`0x2585d8...9a14e3`](./contracts/base-8453/0x2585d82da7a7f8a85b10e6964814a74d999a14e3/); base `0x87e097...e5dd69` | ⚠️ Unaudited |
-| xWELL | unknown | base | n/a | 2 deployments: base [`0x54720d...8e5873`](./contracts/base-8453/0x54720dbdb9bc6bcce6796b3c57d4527e848e5873/); base `0xe5fa98...08d0c8` | ⚠️ Unaudited |
-| xWELL | unknown | base | n/a | 2 deployments: base [`0xa88594...2296ae`](./contracts/base-8453/0xa88594d404727625a9437c3f886c7643872296ae/); base `0xbe08a9...9e124a` | ⚠️ Unaudited |
-| xWELLBridgeFeePayer | operational_periphery | ethereum | n/a | [`0x342ef3...a39827`](./contracts/ethereum-1/0x342ef39c57d193258358f0095f55637c5ea39827/) | ⚠️ Unaudited |
-| xWELLRouter | adapter | moonbeam | n/a | 4 deployments: moonbeam [`0x0c87f9...ac33fa`](./contracts/moonbeam-1284/0x0c87f9f6c052060b28dea1e4acfd24a407ac33fa/); moonbeam `0x78c504...2db169`; moonbeam `0xb84543...666df4`; moonbeam `0xfb26a4...7438c5` | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Bundler3 | unknown | project_anchor | own_supporting | 0 | optimism | unit-389268 | `0xfbcd3c...507c05` | ⚠️ Unaudited |
+| Bundler3 | unknown | project_anchor | own_supporting | 0 | base | unit-389302 | `0x6bfd81...3920c4` | ⚠️ Unaudited |
+| ChainlinkOracle | operational_periphery | project_anchor | own_supporting | 0 | ethereum | unit-389250 | `0x599a01...94b654` | ⚠️ Unaudited |
+| ChainlinkOracle | operational_periphery | project_anchor | own_supporting | 0 | moonbeam | unit-389288 | `0xed301c...b665f9` | ⚠️ Unaudited |
+| ChainlinkOracle | operational_periphery | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | unit-389294 | `0x892be7...3baf60` | ⚠️ Unaudited |
+| Comptroller | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389324 | `0xdec80b...5b21be` | ⚠️ Unaudited |
+| Comptroller | unknown | project_anchor | own_supporting | 1 | optimism | unit-389335 | `0xca889f...c511b9` | ⚠️ Unaudited |
+| Comptroller | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 1 | moonriver | unit-389345 | `0x0b7a0e...a4905e` | ⚠️ Unaudited |
+| EcosystemReserve | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389322 | `0xabd650...00c47c` | ⚠️ Unaudited |
+| EcosystemReserve | unknown | project_anchor | own_supporting | 1 | optimism | unit-389330 | `0x966450...78ef4b` | ⚠️ Unaudited |
+| EcosystemReserve | unknown | project_anchor | own_supporting | 1 | base | unit-389350 | `0x65a633...ab95b8` | ⚠️ Unaudited |
+| EcosystemReserveController | governance | project_anchor | own_supporting | 0 | moonbeam | unit-389284 | `0xca889f...c511b9` | ⚠️ Unaudited |
+| EcosystemReserveController | governance | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | unit-389296 | `0xd94f82...f21044` | ⚠️ Unaudited |
+| EcosystemReserveMoonriver | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 1 | moonriver | unit-389342 | `0xba1758...88908b` | ⚠️ Unaudited |
+| ERC4626EthRouter | unknown | project_anchor | own_supporting | 0 | base | unit-389311 | `0xc095cb...758d71` | ⚠️ Unaudited |
+| Factory4626 | registry | project_anchor | own_supporting | 0 | base | unit-389315 | `0xe770bd...4c938a` | ⚠️ Unaudited |
+| Factory4626Eth | unknown | project_anchor | own_supporting | 0 | base | unit-389300 | `0x6250e2...ec811e` | ⚠️ Unaudited |
+| GeneralAdapter1 | adapter | project_anchor | own_supporting | 0 | base | unit-389309 | `0xb98c94...ae746a` | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 1 | moonriver | unit-389343 | `0x5ded9d...0bb8db` | ⚠️ Unaudited |
+| Maximillion | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389286 | `0xe5ef93...a380c3` | ⚠️ Unaudited |
+| Maximillion | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | unit-389291 | `0x1650c0...a80ccc` | ⚠️ Unaudited |
+| MErc20Delegate | unknown | project_anchor | own_supporting | 8 | optimism | unit-389336 (8 proxies) | 9 deployments: optimism `0x3fe782...ead6b2`; optimism `0x4c2e35...53d321`; optimism `0x6e6ca5...f06fdb`; optimism `0x8e0861...155525`; optimism `0x95c84f...d78ba1`; optimism `0x9fc345...f01847`; optimism `0xa3a538...38bf84`; optimism `0xa9ce0a...b09dcc`; optimism `0xbb3b1a...b83f9d` | ⚠️ Unaudited |
+| MErc20Delegate | unknown | project_anchor | own_supporting | 1 | moonbeam | unit-389340 | `0x42a96c...88f289` | ⚠️ Unaudited |
+| MErc20Delegate | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 6 | moonriver | unit-389344 (6 proxies) | 6 deployments: moonriver `0x36918b...ffbf21`; moonriver `0x6503d9...2e77ae`; moonriver `0x6e7453...614d90`; moonriver `0x93ef8b...ba0e9d`; moonriver `0xa0d116...688e0f`; moonriver `0xd0670a...78bfa8` | ⚠️ Unaudited |
+| MErc20Delegate | unknown | project_anchor | own_supporting | 14 | base | unit-389347 (14 proxies) | 14 deployments: base `0x10ff57...c5d2ee`; base `0x2f90bb...66da32`; base `0x627fe3...14304b`; base `0x630820...904f3e`; base `0x73902f...369ba6`; base `0x9a858e...84a218`; base `0xb4fb8f...07e86d`; base `0xb6419c...25a357`; base `0xb80514...c3cfb3`; base `0xcb1dac...d45f44`; base `0xdc7810...f71ed1`; base `0xde8df9...fffc64`; base `0xf877ac...ad5976`; base `0xfc41b4...72f4b5` | ⚠️ Unaudited |
+| MErc20Delegator | token | project_anchor | own_supporting | 0 | ethereum | unit-389251 | `0x636080...aaee9f` | ⚠️ Unaudited |
+| MErc20Delegator | token | project_anchor | own_supporting | 0 | ethereum | unit-389253 | `0xb85ca1...9590c4` | ⚠️ Unaudited |
+| MErc20Delegator | token | project_anchor | own_supporting | 0 | ethereum | unit-389254 | `0xe65579...63e62e` | ⚠️ Unaudited |
+| MErc20Delegator | token | project_anchor | own_supporting | 0 | ethereum | unit-389255 | `0xeddc25...467011` | ⚠️ Unaudited |
+| MErc20Delegator | token | project_anchor | own_supporting | 0 | optimism | unit-389267 | `0xed37cd...8f8b33` | ⚠️ Unaudited |
+| MErc20Delegator | token | project_anchor | own_supporting | 0 | base | unit-389314 | `0xd64bcb...7a9682` | ⚠️ Unaudited |
+| MetaMorpho | unknown | project_anchor | own_supporting | 0 | base | unit-389299 | `0x543257...f5a796` | ⚠️ Unaudited |
+| MetaMorpho | unknown | project_anchor | own_supporting | 0 | base | unit-389307 | `0xa0e430...3d0ff1` | ⚠️ Unaudited |
+| MetaMorpho | unknown | project_anchor | own_supporting | 0 | base | unit-389312 | `0xc1256a...00a2ca` | ⚠️ Unaudited |
+| MetaMorpho | unknown | project_anchor | own_supporting | 0 | base | unit-389319 | `0xf24608...01a026` | ⚠️ Unaudited |
+| MetaMorphoV1_1 | unknown | project_anchor | own_supporting | 0 | optimism | unit-389259 | `0x3520e1...29642d` | ⚠️ Unaudited |
+| Mfam | adapter | project_anchor | own_supporting | 0 | moonriver | unit-389295 | `0xbb8d88...1a58f1` | ⚠️ Unaudited |
+| MGlimmer | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | unit-389293 | `0x6a1a77...1cd07f` | ⚠️ Unaudited |
+| MoonwellGovernorApollo | governance | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | unit-389292 | `0x2be2e2...6e7370` | ⚠️ Unaudited |
+| MoonwellGovernorArtemis | governance | project_anchor | own_supporting | 0 | moonbeam | unit-389289 | `0xfc4dfb...57666d` | ⚠️ Unaudited |
+| MoonwellViewsV1 | unknown | project_anchor | own_supporting | 1 | moonriver | unit-389341 | `0xb4104c...d59a33` | ⚠️ Unaudited |
+| MoonwellViewsV2 | unknown | project_anchor | own_supporting | 1 | base | unit-389349 | `0x683477...79d459` | ⚠️ Unaudited |
+| MoonwellViewsV3 | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389329 | `0x2d85b9...f7786e` | ⚠️ Unaudited |
+| Morpho | unknown | project_anchor | own_supporting | 0 | base | unit-389310 | `0xbbbbbb...eeffcb` | ⚠️ Unaudited |
+| MultichainGovernor | unknown | project_anchor | own_supporting | 1 | moonbeam | unit-389339 | `0x9a8464...0f1af4` | ⚠️ Unaudited |
+| MultichainGovernorV2 | governance | project_anchor | own_supporting | 1 | ethereum | unit-389326 | `0x8769b7...d75838` | ⚠️ Unaudited |
+| MultichainVoteCollectionV2 | unknown | project_anchor | own_supporting | 1 | optimism | unit-389334 | `0x3c9684...037738` | ⚠️ Unaudited |
+| MultichainVoteCollectionV2 | unknown | project_anchor | own_supporting | 1 | base | unit-389352 | `0xe0278b...03e949` | ⚠️ Unaudited |
+| MultiRewardDistributor | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389323 | `0x60142b...71851c` | ⚠️ Unaudited |
+| MultiRewardDistributor | unknown | project_anchor | own_supporting | 1 | optimism | unit-389338 | `0xf9524b...7574aa` | ⚠️ Unaudited |
+| MWethDelegate | unknown | project_anchor | own_supporting | 1 | optimism | unit-389332 | `0xb4104c...d59a33` | ⚠️ Unaudited |
+| Safe | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389321 | `0x5b7100...ea4026` | ⚠️ Unaudited |
+| StakedMfam | adapter | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 1 | moonriver | unit-389346 | `0xcd76e6...9fda3a` | ⚠️ Unaudited |
+| StakedWell | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389325 | `0xb3a9e0...dd4357` | ⚠️ Unaudited |
+| StakedWell | unknown | project_anchor | own_supporting | 1 | optimism | unit-389333 | `0xfb26a4...7438c5` | ⚠️ Unaudited |
+| StakedWell | unknown | project_anchor | own_supporting | 1 | base | unit-389354 | `0xe66e3a...94dc17` | ⚠️ Unaudited |
+| TemporalGovernor | unknown | project_anchor | own_supporting | 0 | optimism | unit-389256 | `0x17c9ba...7aff3d` | ⚠️ Unaudited |
+| TemporalGovernor | governance | project_anchor | own_supporting | 0 | moonbeam | unit-389279 | `0x908df7...ea4689` | ⚠️ Unaudited |
+| TemporalGovernor | governance | project_anchor | own_supporting | 0 | base | unit-389306 | `0x8b6218...df7d51` | ⚠️ Unaudited |
+| Timelock | governance | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | moonriver | unit-389290 | `0x04e632...160bd7` | ⚠️ Unaudited |
+| TokenImplementation | token | project_anchor | own_supporting | 1 | base | unit-389351 | `0xff8ade...03493d` | ⚠️ Unaudited |
+| WETHRouter | adapter | project_anchor | own_supporting | 0 | ethereum | unit-389252 | `0xa218a4...93ca22` | ⚠️ Unaudited |
+| WETHRouter | adapter | project_anchor | own_supporting | 0 | optimism | unit-389265 | `0xc4ab8c...0e11dc` | ⚠️ Unaudited |
+| WETHRouter | adapter | project_anchor | own_supporting | 0 | base | unit-389304 | `0x70778c...75d0c9` | ⚠️ Unaudited |
+| WethUnwrapper | unknown | project_anchor | own_supporting | 0 | optimism | unit-389263 | `0xa962f2...2aef16` | ⚠️ Unaudited |
+| WethUnwrapper | token | project_anchor | own_supporting | 0 | base | unit-389297 | `0x1382cf...9e4caf` | ⚠️ Unaudited |
+| WormholeBridgeAdapter | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-389327 | `0x734abb...a6dbb7` | ⚠️ Unaudited |
+| WormholeBridgeAdapter | operational_periphery | project_anchor | own_supporting | 1 | optimism | unit-389337 | `0x734abb...a6dbb7` | ⚠️ Unaudited |
+| WormholeBridgeAdapter | operational_periphery | project_anchor | own_supporting | 1 | base | unit-389348 | `0x734abb...a6dbb7` | ⚠️ Unaudited |
+| xWELL | unknown | project_anchor | own_supporting | 1 | ethereum | unit-389328 | `0xa88594...2296ae` | ⚠️ Unaudited |
+| xWELL | unknown | project_anchor | own_supporting | 1 | optimism | unit-389331 | `0xa88594...2296ae` | ⚠️ Unaudited |
+| xWELL | unknown | project_anchor | own_supporting | 1 | base | unit-389353 | `0xa88594...2296ae` | ⚠️ Unaudited |
+| xWELLRouter | adapter | project_anchor | own_supporting | 0 | moonbeam | unit-389282 | `0xb84543...666df4` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -210,57 +305,191 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (15)
+### ❓ Unverified (62)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | optimism | n/a | `0x701551...b0f5af` | ❓ Unverified |
-| UnnamedContract | unknown | moonbeam | n/a | `0x826d8e...590c29` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x2f5d37...85bc38` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x504bd1...f3fdc1` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x511ab5...2411e3` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0x9837b1...9e0bc3` | ❓ Unverified |
-| UnnamedContract | unknown | moonriver | n/a | `0xdada7d...ae76d6` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x03ca79...982aa1` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x11d223...44c197` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x134263...c4622b` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x3c9684...037738` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x576276...5cfc4d` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x78c29a...02f706` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x92cf58...416dfb` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xc104a4...2c5896` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-389257 | `0x181ba7...58668e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-389258 | `0x2f1490...746dcf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-389260 | `0x79481c...f141f0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-389261 | `0x866b83...2003fc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-389262 | `0x90aa62...9451f8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-389264 | `0xb80514...c3cfb3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-389266 | `0xd6c668...c2cbfe` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389270 | `0x1c5564...cf484c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389271 | `0x22b1a4...4abe32` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389274 | `0x540244...9cdd17` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389275 | `0x744b17...1d615b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389276 | `0x7793e0...167ba4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389277 | `0x8568a6...3cfab1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389278 | `0x8e00d5...86a180` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389280 | `0xaaa20c...74a9ce` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389281 | `0xb6c94b...f9aeac` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389283 | `0xb8a798...2d40e5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389285 | `0xd22da9...8211c3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | moonbeam | unit-389287 | `0xe76c8b...c73994` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x17c9ba...7aff3d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x181ba7...58668e` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x2f1490...746dcf` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3520e1...29642d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x36918b...ffbf21` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389298 | `0x3bf937...09a5e5` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x3fe782...ead6b2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x4c2e35...53d321` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x60142b...71851c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389301 | `0x628ff6...09d457` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6503d9...2e77ae` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6e6ca5...f06fdb` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x6e7453...614d90` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389303 | `0x703843...065cc8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389305 | `0x73b06d...462417` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x79481c...f141f0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x8e0861...155525` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x90aa62...9451f8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x93ef8b...ba0e9d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x95c84f...d78ba1` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x966450...78ef4b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0x9fc345...f01847` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa0d116...688e0f` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa3a538...38bf84` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa962f2...2aef16` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xa9ce0a...b09dcc` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xb4104c...d59a33` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389308 | `0xb682c8...a501a2` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xbb3b1a...b83f9d` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xc4ab8c...0e11dc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389313 | `0xc72fcc...72b42b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xca889f...c511b9` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xcd76e6...9fda3a` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd0670a...78bfa8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xd6c668...c2cbfe` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389316 | `0xe9005b...0ad9d2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389317 | `0xec942b...a6a9d0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xed37cd...8f8b33` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389318 | `0xedc817...176c22` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xf9524b...7574aa` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfb26a4...7438c5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-389320 | `0xfbb21d...3ef26c` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | base | n/a | `0xfbcd3c...507c05` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf](https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-02 | stale | Direct | contract_name | 7 | n/a |
-| [Moonwell_Finance_Safety_Module_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf](https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/Moonwell_Finance_Safety_Module_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2021-02 | stale | Direct | contract_name | 1 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf](https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-02 | stale | Direct | contract_name | matched | 3 | 0 | 0 | 11 | high |
+| [Moonwell_Finance_Safety_Module_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf](https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/Moonwell_Finance_Safety_Module_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2021-02 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [13530] Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf — matched: Scope section lists repository and commit ID; contracts identified from file paths in findings and code locations.
+- [13531] Moonwell_Finance_Safety_Module_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf — no match: Scope section lists 'Moonwell Finance Safety Module Contracts' with repository and commit ID, but no specific contract names. Contract names extracted from code locations in findings.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | ChainlinkOracle | ambiguous — not counted | ChainlinkOracle (alternative) `0x599a01...94b654` — deployed 2026-05-27 21:33:11+03 — liveness: live (current_address_book_code)<br>ChainlinkOracle (alternative) `0xed301c...b665f9` — deployed 2022-06-21 23:54:18+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | Comptroller | ambiguous — not counted | Unitroller (proxy) (alternative) `0xca889f...c511b9` — deployed 2024-07-11 04:29:23+03 — liveness: live (code_present_context)<br>Unitroller (proxy) (alternative) `0xdec80b...5b21be` — deployed 2026-05-27 21:23:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | DAIInterestRateModel | unmatched — not counted | — | mentioned in findings | no |
+| Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | DAIInterestRateModelV3 | unmatched — not counted | — | mentioned in findings | no |
+| Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | GovernorAlpha | unmatched — not counted | — | listed in scope and findings | no |
+| Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | MErc20 | unmatched — not counted | — | listed in scope and findings | no |
+| Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | MErc20Delegator | ambiguous — not counted | MErc20Delegator (proxy) (alternative) `0x3fe782...ead6b2` — deployed 2024-07-11 04:32:29+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0xb80514...c3cfb3` — deployed 2024-08-06 22:57:31+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0xa3a538...38bf84` — deployed 2024-07-11 04:32:01+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (alternative) `0xed37cd...8f8b33` — deployed 2025-05-07 18:56:17+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0x95c84f...d78ba1` — deployed 2024-07-11 04:34:25+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (alternative) `0x636080...aaee9f` — deployed 2026-05-27 21:32:23+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0x630820...904f3e` — deployed 2025-04-01 15:18:57+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0x627fe3...14304b` — deployed 2023-11-07 08:31:23+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0x73902f...369ba6` — deployed 2024-04-29 22:45:59+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0xcb1dac...d45f44` — deployed 2023-11-14 06:07:13+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0xb4fb8f...07e86d` — deployed 2025-06-13 17:01:13+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0x9a858e...84a218` — deployed 2025-01-23 19:49:45+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0xbb3b1a...b83f9d` — deployed 2024-07-11 04:33:55+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0xb6419c...25a357` — deployed 2025-01-23 19:36:29+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0x2f90bb...66da32` — deployed 2025-10-10 21:10:21+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0xb4104c...d59a33` — deployed 2024-07-11 04:33:27+03 — liveness: live (code_present_context)<br>MErc20Delegator (proxy) (alternative) `0x42a96c...88f289` — deployed 2023-02-09 00:45:42+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0x8e0861...155525` — deployed 2024-07-11 04:31:33+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0x9fc345...f01847` — deployed 2024-07-11 04:35:51+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0xf877ac...ad5976` — deployed 2024-09-05 23:26:15+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (alternative) `0xeddc25...467011` — deployed 2026-05-27 21:30:59+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0xdc7810...f71ed1` — deployed 2025-01-08 20:29:13+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0xde8df9...fffc64` — deployed 2025-01-29 21:52:49+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (alternative) `0xb85ca1...9590c4` — deployed 2026-05-27 21:28:23+03 — liveness: live (code_present_context)<br>MErc20Delegator (alternative) `0xe65579...63e62e` — deployed 2026-05-27 21:29:35+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0x10ff57...c5d2ee` — deployed 2025-01-24 02:47:59+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (alternative) `0xd64bcb...7a9682` — deployed 2026-03-19 01:15:01+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0x4c2e35...53d321` — deployed 2024-07-11 04:34:53+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0x6e6ca5...f06fdb` — deployed 2024-07-11 04:32:59+03 — liveness: live (current_address_book_code)<br>MErc20Delegator (proxy) (alternative) `0xfc41b4...72f4b5` — deployed 2024-10-12 01:25:27+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | MErc20Immutable | unmatched — not counted | — | listed in scope and findings | no |
+| Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | MGlimmer | own contract | MGlimmer (selected) `0x091608...4c7955` — deployed 2022-06-21 23:49:18+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | MToken | unmatched — not counted | — | listed in scope and findings | no |
+| Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | Reservoir | unmatched — not counted | — | listed in scope and findings | no |
+| Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | Timelock | own contract | Timelock (selected) `0x3a9249...2ec19b` — deployed 2022-08-15 22:12:00+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | Unitroller | ambiguous — not counted | Unitroller (proxy) (alternative) `0xca889f...c511b9` — deployed 2024-07-11 04:29:23+03 — liveness: live (code_present_context)<br>Unitroller (proxy) (alternative) `0xdec80b...5b21be` — deployed 2026-05-27 21:23:11+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | Well | own contract | Well (selected) `0x511ab5...2411e3` — deployed 2022-05-12 00:11:30+03 — liveness: live (code_present_context) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Moonwell_Finance_Safety_Module_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | StakedToken | unmatched — not counted | — | Code Location in findings | no |
+| Moonwell_Finance_Safety_Module_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | EcosystemReserve | ambiguous — not counted | TransparentUpgradeableProxy (proxy) (alternative) `0x966450...78ef4b` — deployed 2024-07-12 05:02:53+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0x65a633...ab95b8` — deployed 2024-03-23 06:32:25+03 — liveness: live (current_address_book_code)<br>TransparentUpgradeableProxy (proxy) (alternative) `0xabd650...00c47c` — deployed 2026-01-28 20:05:23+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| Moonwell_Finance_Safety_Module_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf | DistributionManager | unmatched — not counted | — | Code Location in findings | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| optimism | `0xfbcd3c...507c05` | Bundler3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x6bfd81...3920c4` | Bundler3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xdec80b...5b21be` | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xca889f...c511b9` | Comptroller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xabd650...00c47c` | EcosystemReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x966450...78ef4b` | EcosystemReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x65a633...ab95b8` | EcosystemReserve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonbeam | `0xca889f...c511b9` | EcosystemReserveController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xc095cb...758d71` | ERC4626EthRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xe770bd...4c938a` | Factory4626 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x6250e2...ec811e` | Factory4626Eth | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xb98c94...ae746a` | GeneralAdapter1 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonbeam | `0xe5ef93...a380c3` | Maximillion | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x3fe782...ead6b2` | MErc20Delegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonbeam | `0x42a96c...88f289` | MErc20Delegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x10ff57...c5d2ee` | MErc20Delegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x636080...aaee9f` | MErc20Delegator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb85ca1...9590c4` | MErc20Delegator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xe65579...63e62e` | MErc20Delegator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xeddc25...467011` | MErc20Delegator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xed37cd...8f8b33` | MErc20Delegator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xd64bcb...7a9682` | MErc20Delegator | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | `0xbb8d88...1a58f1` | Mfam | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonbeam | `0xfc4dfb...57666d` | MoonwellGovernorArtemis | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonriver | `0xb4104c...d59a33` | MoonwellViewsV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x683477...79d459` | MoonwellViewsV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2d85b9...f7786e` | MoonwellViewsV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x60142b...71851c` | MultiRewardDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xf9524b...7574aa` | MultiRewardDistributor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xb4104c...d59a33` | MWethDelegate | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xb3a9e0...dd4357` | StakedWell | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xfb26a4...7438c5` | StakedWell | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xe66e3a...94dc17` | StakedWell | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x17c9ba...7aff3d` | TemporalGovernor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonbeam | `0x908df7...ea4689` | TemporalGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x8b6218...df7d51` | TemporalGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xff8ade...03493d` | TokenImplementation | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa218a4...93ca22` | WETHRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xc4ab8c...0e11dc` | WETHRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x70778c...75d0c9` | WETHRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xa962f2...2aef16` | WethUnwrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x1382cf...9e4caf` | WethUnwrapper | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x734abb...a6dbb7` | WormholeBridgeAdapter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x734abb...a6dbb7` | WormholeBridgeAdapter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x734abb...a6dbb7` | WormholeBridgeAdapter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa88594...2296ae` | xWELL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0xa88594...2296ae` | xWELL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xa88594...2296ae` | xWELL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| moonbeam | `0xb84543...666df4` | xWELLRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 0 |
-| standard_library | 0 |
-| needs_review | 148 |
+| native | 61 |
+| upstream | 13 |
+| standard_library | 2 |
+| needs_review | 62 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: contract_name=8
+- Address-book scope dispositions: 3 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 5 ambiguous, 9 unmatched
+- Matched-own operational status: 3 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=2
+- Match method counts: unique_name=3
+
+Zero-match audit list:
+
+- [13531] Moonwell_Finance_Safety_Module_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

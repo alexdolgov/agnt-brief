@@ -1,53 +1,30 @@
 {
   "component": "CauldronV4",
   "main_contract": "CauldronV4",
-  "source_file_count": 10,
-  "deployment_count": 10,
+  "source_entry_count": 14,
+  "source_file_count": 14,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CauldronV4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
-    "https://github.com/Abracadabra-money/abracadabra-money-contracts/blob/main/audits/MagicGlpReview.md",
-    "https://github.com/GuardianAudits/Audits/blob/main/AbracadabraMoney/11-14-2023_Abracadabra_GMXV2.pdf"
+    "https://github.com/Abracadabra-money/abracadabra-money-contracts/blob/main/audits/MagicGlpReview.md"
   ],
   "addresses": [
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x00380cb5858664078f2289180cc32f74440ac923",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x207763511da879a900973a5e092382117c3c1588",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x38e7d1e4e2de5b06b6fc9a91c2c37828854a41bb",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x43243f7bddcb850acb687c42bbf5066c224054a5",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x692887e8877c6dd31593cda44c382db5b289b684",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390565"
     },
     {
       "chain": "ethereum",
@@ -55,7 +32,9 @@
       "address": "0x7259e152103756e1616a77ae982353c3751a6a90",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390570"
     },
     {
       "chain": "ethereum",
@@ -63,31 +42,19 @@
       "address": "0x7d8df3e4d06b0e19960c19ee673c0823beb90815",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390573"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xa841011a3414d034e1275a9928c5c1eddc4c3b9d",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x726413d7402ff180609d0ebc79506df8633701b1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xc4113ae18e0d3213c6a06947a2ffc70ad3517c77",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xe8ed7455fa1b2a3d8959cd2d59c7f136a45bf341",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390636"
     }
   ]
 }

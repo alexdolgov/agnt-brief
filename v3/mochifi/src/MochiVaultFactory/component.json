@@ -1,8 +1,16 @@
 {
   "component": "MochiVaultFactory",
   "main_contract": "MochiVaultFactory",
+  "source_entry_count": 39,
   "source_file_count": 39,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MochiVaultFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,15 +20,9 @@
       "address": "0x96076026ae262f1d6a9b88be49bba0e8a80367ef",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x9cc1f0b9c4ce1b72a2581fd4ea3b71a9a2a656f0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403511"
     }
   ]
 }

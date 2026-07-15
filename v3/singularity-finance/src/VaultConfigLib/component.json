@@ -1,12 +1,18 @@
 {
   "component": "VaultConfigLib",
   "main_contract": "VaultConfigLib",
+  "source_entry_count": 12,
   "source_file_count": 12,
-  "deployment_count": 6,
-  "audited": true,
-  "audits_covering": [
-    "https://paladinsec.co/projects/singularitydao"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VaultConfigLib\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
@@ -14,47 +20,9 @@
       "address": "0x3ce426bb2fcb9e1300bbe03e2d34d7b3b7347db5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x44cd559979cfb1bff88c782fde15c3ad22c6ed6b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x587a91b2712870009a102b87e4bf86f5ccd52cbb",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x7b7ee31dfb5f5e88bb8428ddb0687e0e28baedd2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xb198eede7371e60bcd7b90e9058f8255b20bdd0c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xbe93d93402efdb54613026fe31e6a297851fddfe",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,9 +1,0 @@
-// SPDX-License-Identifier: MIT
-pragma solidity 0.8.17;
-
-/**
- * @custom:version 6.3
- */
-interface IOwnable {
-    function owner() external view returns (address);
-}

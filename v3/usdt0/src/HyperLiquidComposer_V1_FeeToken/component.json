@@ -1,42 +1,28 @@
 {
   "component": "HyperLiquidComposer_V1_FeeToken",
   "main_contract": "HyperLiquidComposer_V1_FeeToken",
+  "source_entry_count": 31,
   "source_file_count": 31,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HyperLiquidComposer_V1_FeeToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-999",
       "chain_id": 999,
-      "address": "0x7a32202edec16a34e9996f2064acc39a90eb05a0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-999",
-      "chain_id": 999,
       "address": "0x80123ab57c9bc0c452d6c18f92a653a4ee2e7585",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-999",
-      "chain_id": 999,
-      "address": "0xa1819918ba910d05c4332be09b43f1bc894a62eb",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-999",
-      "chain_id": 999,
-      "address": "0xb120daaf44b9270375ac2a96cc6fca9603a8123a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400586"
     }
   ]
 }

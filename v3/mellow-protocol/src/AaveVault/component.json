@@ -1,7 +1,15 @@
 {
   "component": "AaveVault",
   "main_contract": "AaveVault",
+  "source_entry_count": 35,
   "source_file_count": 35,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AaveVault\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -15,7 +23,9 @@
       "address": "0x3af5e4e2e9fae6d994aeeb98fa795dcfc88d23ae",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403479"
     }
   ]
 }

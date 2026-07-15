@@ -17,30 +17,17 @@ abstract contract OnlyOwnerOrInsolvent is SolvencyMethods {
      * @dev Enforces ownership only if there is no liquidation ongoing
      */
     modifier onlyOwnerOrInsolvent() {
-        bool isWhitelistedLiquidator = SmartLoanLiquidationFacet(DeploymentConstants.getDiamondAddress()).isLiquidatorWhitelisted(msg.sender);
-
-        if (isWhitelistedLiquidator) {
-            require(!_isSolvent(), "Account is solvent");
-        } else{
+        bool wasSolvent = _isSolvent();
+        if (wasSolvent) {
             DiamondStorageLib.enforceIsContractOwner();
+        } else {
+            require(SmartLoanLiquidationFacet(DeploymentConstants.getDiamondAddress()).isLiquidatorWhitelisted(msg.sender), "Only whitelisted accounts can perform this action");
         }
 
         _;
 
-        if (!isWhitelistedLiquidator) {
+        if (wasSolvent) {
             require(_isSolvent(), "Must stay solvent");
         }
-    }
-
-    modifier onlyOwnerNoStaySolventOrInsolventPayable() {
-        bool isWhitelistedLiquidator = SmartLoanLiquidationFacet(DeploymentConstants.getDiamondAddress()).isLiquidatorWhitelisted(msg.sender);
-
-        if (isWhitelistedLiquidator) {
-            require(!_isSolventPayable(), "Account is solvent");
-        } else{
-            DiamondStorageLib.enforceIsContractOwner();
-        }
-
-        _;
     }
 }

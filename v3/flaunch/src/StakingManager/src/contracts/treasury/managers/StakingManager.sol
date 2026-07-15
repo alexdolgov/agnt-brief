@@ -95,8 +95,9 @@ contract StakingManager is FeeSplitManager {
      * Sets up the contract with the initial required contract addresses.
      *
      * @param _treasuryManagerFactory The {TreasuryManagerFactory} that will launch this implementation
+     * @param _feeEscrowRegistry The {FeeEscrowRegistry} that will be used to withdraw fees
      */
-    constructor (address _treasuryManagerFactory) FeeSplitManager(_treasuryManagerFactory) {
+    constructor (address _treasuryManagerFactory, address _feeEscrowRegistry) FeeSplitManager(_treasuryManagerFactory, _feeEscrowRegistry) {
         // ..
     }
 
@@ -224,7 +225,7 @@ contract StakingManager is FeeSplitManager {
 
         // If the user has an existing position, calculate the ETH owed till now
         if (position.amount != 0) {
-            position.ethOwed = _getTotalEthOwed(position);
+            position.ethOwed = _stakeRewardsBalance(msg.sender);
         }
 
         // Set rest of the position data
@@ -342,8 +343,12 @@ contract StakingManager is FeeSplitManager {
         uint timelockedUntil_,
         uint pendingETHRewards_
     ) {
+        // Get the user's position
         Position memory position = userPositions[_user];
-        return (position.amount, position.timelockedUntil, _getTotalEthOwed(position));
+        (uint stakeBalance,,) = _balances(_user);
+
+        // Return the user's position data
+        return (position.amount, position.timelockedUntil, stakeBalance);
     }
 
     /**
@@ -355,47 +360,8 @@ contract StakingManager is FeeSplitManager {
      * @return balance_ The amount of ETH available to claim by the `_recipient`
      */
     function balances(address _recipient) public view override returns (uint balance_) {
-        // We don't use `_balances()` internally as it relies on `globalEthRewardsPerTokenX128`,
-        // which is not updated until `_withdrawFees()` is called.
-
-        // Capture our availableFees that are waiting to be claimed from the {FeeEscrow}. This also
-        // accounts for any ETH fees that were sent directly and are attributed to the manager.
-        uint availableFees = managerFees() - _lastWithdrawBalance;
-
-        // Get the existing eth owed to the caller
-        Position memory position = userPositions[_recipient];
-        uint stakeBalance = position.ethOwed;
-
-        // Only calculate the `latestGlobalEthRewardsPerTokenX128` if totalDeposited != 0
-        if (totalDeposited != 0) {
-            // Get the total ETH owed to the user from their staked position, calculating the
-            // latest `globalEthRewardsPerTokenX128` based on the available fees balance. The
-            // `availableFees` already reduces the fees allocated to creators and the owner.
-            uint latestGlobalEthRewardsPerTokenX128 = globalEthRewardsPerTokenX128 + FullMath.mulDiv(
-                availableFees,
-                FixedPoint128.Q128,
-                totalDeposited
-            );
-
-            // Calculate the stake balance based on the latest `globalEthRewardsPerTokenX128`
-            stakeBalance += FullMath.mulDiv(
-                latestGlobalEthRewardsPerTokenX128 - position.ethRewardsPerTokenSnapshotX128,
-                position.amount,
-                FixedPoint128.Q128
-            );
-        }
-
-        // We then need to check if the `_recipient` is the creator of any tokens, and if they
-        // are then we need to find out the available amounts to claim.
-        uint creatorBalance = pendingCreatorFees(_recipient);
-
-        // We then need to check if the `_recipient` is the owner of the manager, and if they
-        // are then we need to find out the available amounts to claim.
-        uint ownerBalance;
-        if (_recipient == managerOwner) {
-            ownerBalance = claimableOwnerFees();
-        }
-
+        // Get the total ETH owed to the user from their staked position
+        (uint stakeBalance, uint creatorBalance, uint ownerBalance) = _balances(_recipient);
         balance_ = stakeBalance + creatorBalance + ownerBalance;
     }
 
@@ -411,7 +377,7 @@ contract StakingManager is FeeSplitManager {
      */
     function _balances(address _recipient) internal view returns (uint stakeBalance_, uint creatorBalance_, uint ownerBalance_) {
         // Get the total ETH owed to the user from their staked position
-        stakeBalance_ = _getTotalEthOwed(userPositions[_recipient]);
+        stakeBalance_ = _stakeRewardsBalance(_recipient);
 
         // We then need to check if the `_recipient` is the creator of any tokens, and if they
         // are then we need to find out the available amounts to claim.
@@ -432,10 +398,11 @@ contract StakingManager is FeeSplitManager {
     function _withdrawFees() internal {
         // Withdraw the fees for the manager. The amounts are captured inside of `creatorFees` and
         // `splitFees` from the {FeeSplitManager} contract.
-        treasuryManagerFactory.feeEscrow().withdrawFees(address(this), true);
+        _withdrawAllFees(address(this), true);
 
         // Check if we have fees available, calculated in our `receive` function
-        uint availableFees = managerFees() - _lastWithdrawBalance;
+        uint _managerFees = managerFees();
+        uint availableFees = _managerFees - _lastWithdrawBalance;
 
         // Early return if there are no fees to distribute
         if (availableFees == 0) {
@@ -443,7 +410,7 @@ contract StakingManager is FeeSplitManager {
         }
 
         // Update the last claimed amount
-        _lastWithdrawBalance = availableFees;
+        _lastWithdrawBalance = _managerFees;
 
         // If there were no staked ERC20 token deposits, all fees go to the creator(s) so we don't
         // need to update our `globalEthRewardsPerTokenX128` value.
@@ -456,18 +423,33 @@ contract StakingManager is FeeSplitManager {
     }
 
     /**
-     * Calculates the total ETH owed to a user, based on their position and the global ETH rewards per token snapshot.
+     * Calculates the stake rewards available for a user, based on their position and the global ETH rewards per
+     * token snapshot.
      * 
-     * @param _position The user's position in the staking manager
+     * @param _recipient The address of the user to calculate the stake rewards for
      *
-     * @return The total ETH owed to the user
+     * @return The total stake rewards available to the user
      */
-    function _getTotalEthOwed(Position memory _position) internal view returns (uint) {
+    function _stakeRewardsBalance(address _recipient) internal view returns (uint) {
+        // Get the user's position
+        Position memory position = userPositions[_recipient];
+
+        // Calculate the latest global ETH rewards per token snapshot
+        uint latestGlobalEthRewardsPerTokenX128 = globalEthRewardsPerTokenX128;
+        if (totalDeposited != 0) {
+            latestGlobalEthRewardsPerTokenX128 += FullMath.mulDiv(
+                managerFees() - _lastWithdrawBalance,
+                FixedPoint128.Q128,
+                totalDeposited
+            );
+        }
+
+        // Calculate the stake rewards available to the user based on pending rewards and their current ETH owed
         return FullMath.mulDiv(
-            globalEthRewardsPerTokenX128 - _position.ethRewardsPerTokenSnapshotX128,
-            _position.amount,
+            latestGlobalEthRewardsPerTokenX128 - position.ethRewardsPerTokenSnapshotX128,
+            position.amount,
             FixedPoint128.Q128
-        ) + _position.ethOwed;
+        ) + position.ethOwed;
     }
 
     /**

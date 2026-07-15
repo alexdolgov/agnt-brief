@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
-import {IERC20} from "./interfaces/IERC20.sol";
-import {Domain} from "./Domain.sol";
+import "./interfaces/IERC20.sol";
+import "./Domain.sol";
 
 // solhint-disable no-inline-assembly
 // solhint-disable not-rely-on-time

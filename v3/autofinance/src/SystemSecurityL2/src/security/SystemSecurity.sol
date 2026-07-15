@@ -3,7 +3,7 @@
 pragma solidity ^0.8.24;
 
 import { Roles } from "src/libs/Roles.sol";
-import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
+import { Errors } from "src/utils/Errors.sol";
 import { SystemComponent } from "src/SystemComponent.sol";
 import { SecurityBase } from "src/security/SecurityBase.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
@@ -31,14 +31,14 @@ abstract contract SystemSecurity is SystemComponent, SecurityBase, ISystemSecuri
 
     modifier onlyAutopool() {
         if (!systemRegistry.autoPoolRegistry().isVault(msg.sender)) {
-            revert AutopilotErrors.AccessDenied();
+            revert Errors.AccessDenied();
         }
         _;
     }
 
     modifier onlyAutopoolRouter() {
         if ((address(systemRegistry.autoPoolRouter()) != msg.sender)) {
-            revert AutopilotErrors.AccessDenied();
+            revert Errors.AccessDenied();
         }
         _;
     }
@@ -54,7 +54,7 @@ abstract contract SystemSecurity is SystemComponent, SecurityBase, ISystemSecuri
         if (TransientStorage.dataExists(_ALLOWED_AUTOPOOL)) {
             address autopool = abi.decode(TransientStorage.getBytes(_ALLOWED_AUTOPOOL), (address));
             if (autopool != msg.sender) {
-                revert AutopilotErrors.AccessDenied();
+                revert Errors.AccessDenied();
             }
         }
         return _navOpsInProgress;
@@ -99,7 +99,7 @@ abstract contract SystemSecurity is SystemComponent, SecurityBase, ISystemSecuri
         address autopool
     ) external onlyAutopoolRouter {
         if (TransientStorage.dataExists(_ALLOWED_AUTOPOOL)) {
-            revert AutopilotErrors.AccessDenied();
+            revert Errors.AccessDenied();
         }
 
         TransientStorage.setBytes(abi.encode(autopool), _ALLOWED_AUTOPOOL);

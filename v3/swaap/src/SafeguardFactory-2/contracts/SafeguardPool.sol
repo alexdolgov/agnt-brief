@@ -80,14 +80,15 @@ contract SafeguardPool is ISafeguardPool, SignatureSafeguard, BasePool, IMinimal
 
     // Pool parameters constants
     uint256 private constant _MIN_SWAP_AMOUNT_PERCENTAGE = 10e16; // 10% min swap amount
-    uint256 private constant _MAX_PERFORMANCE_DEVIATION = 90e16; // 10% max tolerance
-    uint256 private constant _MAX_TARGET_DEVIATION = 0; // 100% max tolerance
+    uint256 private constant _MAX_PERFORMANCE_DEVIATION = 95e16; // 5% max tolerance
+    uint256 private constant _MAX_TARGET_DEVIATION = 80e16; // 20% max tolerance
     uint256 private constant _MAX_PRICE_DEVIATION = 97e16; // 3% max tolerance
     uint256 private constant _MIN_PERFORMANCE_UPDATE_INTERVAL = 0.5 days;
     uint256 private constant _MAX_PERFORMANCE_UPDATE_INTERVAL = 1.5 days;
     uint256 private constant _MAX_ORACLE_TIMEOUT = 1.5 days;
 
-    uint256 private constant _MAX_YEARLY_FEES = 20e16; // corresponds to 20% of yearly fees
+    // NB Max yearly fee should fit in a 32 bits slot
+    uint256 private constant _MAX_YEARLY_FEES = 5e16; // corresponds to 5% fees
 
     IERC20 internal immutable _token0;
     IERC20 internal immutable _token1;
@@ -120,10 +121,9 @@ contract SafeguardPool is ISafeguardPool, SignatureSafeguard, BasePool, IMinimal
 
     // Management fees related variables
     uint32 private _previousClaimTime;
-
-    // yearly rate for management fees
-    uint56 private _yearlyRate;
-
+    // NB For a max yearly fee of 10% it is safe to use 32 bits for the yearlyRate.
+    // For higher fees more bits should be allocated.
+    uint32 private _yearlyRate;
     // yearly management fees
     uint64 private _yearlyFees;
 
@@ -787,11 +787,11 @@ contract SafeguardPool is ISafeguardPool, SignatureSafeguard, BasePool, IMinimal
 
         uint256 rOpt = SafeguardMath.calcExitSwapROpt(excessTokenBalance, excessTokenAmountOut, swapAmountOut);
                 
-        uint256 bptAmountIn = totalSupply().mulUp(rOpt);
+        uint256 bptAmountOut = totalSupply().mulUp(rOpt);
         
-        _srequire(bptAmountIn <= maxBptAmountIn, SwaapV2Errors.EXCEEDED_BURNED_PT);
+        _srequire(bptAmountOut <= maxBptAmountIn, SwaapV2Errors.EXCEEDED_BURNED_PT);
         
-        return (bptAmountIn, exitAmounts);
+        return (bptAmountOut, exitAmounts);
 
     }
 
@@ -1375,7 +1375,7 @@ contract SafeguardPool is ISafeguardPool, SignatureSafeguard, BasePool, IMinimal
     function _setYearlyRate(uint256 yearlyFees) private {
         _srequire(yearlyFees <= _MAX_YEARLY_FEES, SwaapV2Errors.FEES_TOO_HIGH);
         _yearlyFees = uint64(yearlyFees);
-        _yearlyRate = uint56(SafeguardMath.calcYearlyRate(yearlyFees));
+        _yearlyRate = uint32(SafeguardMath.calcYearlyRate(yearlyFees));
         emit ManagementFeesUpdated(yearlyFees);
     }
 

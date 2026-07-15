@@ -1,10 +1,22 @@
 {
   "component": "Ocean",
   "main_contract": "Ocean",
+  "source_entry_count": 23,
   "source_file_count": 23,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Ocean\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2023-11-shellprotocol",
+    "https://gist.github.com/code423n4/640b27a9b9c209b575ed78aa106bd584",
+    "https://github.com/trailofbits/publications/blob/master/reviews/ShellProtocolv2.pdf"
+  ],
   "addresses": [
     {
       "chain": "arbitrum",
@@ -12,7 +24,9 @@
       "address": "0x96b4f4e401ccd70ec850c1cf8b405ad58fd5fb7a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404044"
     }
   ]
 }

@@ -1,14 +1,18 @@
 {
   "component": "TroveManager",
   "main_contract": "TroveManager",
+  "source_entry_count": 36,
   "source_file_count": 36,
-  "deployment_count": 7,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Bima-Labs/bima-core-audits/blob/main/aduits/2024-09-27-cyfrin-bima-v2.0.pdf",
-    "https://github.com/Bima-Labs/bima-core-audits/blob/main/aduits/20241023-Bima-Final-Audit-Report.pdf",
-    "https://github.com/Bima-Labs/bima-core-audits/blob/main/aduits/cantina_competition_bima_december2024.pdf"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TroveManager\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -16,15 +20,9 @@
       "address": "0x5066dc39248e6696c0f2606a744a4482a3d36b97",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x8ed4f24f71ffbfba5109be1ed13c83b7cc657938",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392089"
     },
     {
       "chain": "ethereum",
@@ -32,15 +30,9 @@
       "address": "0xa20c3dc27c8c1a1adc92e3b443607914ed800ff2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x8ed4f24f71ffbfba5109be1ed13c83b7cc657938",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392102"
     },
     {
       "chain": "bsc",
@@ -48,15 +40,9 @@
       "address": "0xa20c3dc27c8c1a1adc92e3b443607914ed800ff2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x8ed4f24f71ffbfba5109be1ed13c83b7cc657938",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392117"
     },
     {
       "chain": "chain-146",
@@ -64,7 +50,9 @@
       "address": "0xa20c3dc27c8c1a1adc92e3b443607914ed800ff2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392120"
     }
   ]
 }

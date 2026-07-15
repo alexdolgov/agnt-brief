@@ -20,6 +20,7 @@ interface IP33 is IERC20  {
     event NewOperator(address _oldOperator, address _newOperator);
     event Compounded(uint256 oldRatio, uint256 newRatio, uint256 amount);
     event SwappedBribe(address indexed operator, address indexed tokenIn, uint256 amountIn, uint256 amountOut);
+    event Rebased(uint256 oldRatio, uint256 newRatio, uint256 amount);
     /// @notice Event emitted when an aggregator's whitelist status changes
     event AggregatorWhitelistUpdated(address aggregator, bool status);
 
@@ -37,7 +38,7 @@ interface IP33 is IERC20  {
     /// @notice swap function using aggregators to process rewards into RAM
     function swapIncentiveViaAggregator(AggregatorParams calldata _params) external;
 
-    /// @notice compounds any existing PHAR within the contract
+    /// @notice compounds any existing RAM within the contract
     function compound() external;
 
     /// @notice direct claim
@@ -84,4 +85,5 @@ interface IP33 is IERC20  {
     /// @notice the xPHAR token
     function xPhar() external view returns (IXPhar);
 
+  
 }

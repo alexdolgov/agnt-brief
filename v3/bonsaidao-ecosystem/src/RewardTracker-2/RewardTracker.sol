@@ -595,8 +595,8 @@ interface IRewardDistributor {
 pragma solidity 0.6.12;
 
 interface IRewardTracker {
-    function depositBalances(address _account, address _depositToken) external returns (uint256);
-    function stakedAmounts(address _account) external returns (uint256);
+    function depositBalances(address _account, address _depositToken) external view returns (uint256);
+    function stakedAmounts(address _account) external view returns (uint256);
     function updateRewards() external;
     function stake(address _depositToken, uint256 _amount) external;
     function stakeForAccount(address _fundingAccount, address _account, address _depositToken, uint256 _amount) external;
@@ -661,6 +661,7 @@ contract RewardTracker is IERC20, ReentrancyGuard, IRewardTracker, Governable {
     address public distributor;
     mapping (address => bool) public isDepositToken;
     mapping (address => mapping (address => uint256)) public override depositBalances;
+    mapping (address => uint256) public totalDepositSupply;
 
     uint256 public override totalSupply;
     mapping (address => uint256) public balances;
@@ -722,7 +723,6 @@ contract RewardTracker is IERC20, ReentrancyGuard, IRewardTracker, Governable {
 
     // to help users who accidentally send their tokens to this contract
     function withdrawToken(address _token, address _account, uint256 _amount) external onlyGov {
-        require(!isDepositToken[_token], "RewardTracker: _token cannot be a depositToken");
         IERC20(_token).safeTransfer(_account, _amount);
     }
 
@@ -877,6 +877,7 @@ contract RewardTracker is IERC20, ReentrancyGuard, IRewardTracker, Governable {
 
         stakedAmounts[_account] = stakedAmounts[_account].add(_amount);
         depositBalances[_account][_depositToken] = depositBalances[_account][_depositToken].add(_amount);
+        totalDepositSupply[_depositToken] = totalDepositSupply[_depositToken].add(_amount);
 
         _mint(_account, _amount);
     }
@@ -895,6 +896,7 @@ contract RewardTracker is IERC20, ReentrancyGuard, IRewardTracker, Governable {
         uint256 depositBalance = depositBalances[_account][_depositToken];
         require(depositBalance >= _amount, "RewardTracker: _amount exceeds depositBalance");
         depositBalances[_account][_depositToken] = depositBalance.sub(_amount);
+        totalDepositSupply[_depositToken] = totalDepositSupply[_depositToken].sub(_amount);
 
         _burn(_account, _amount);
         IERC20(_depositToken).safeTransfer(_receiver, _amount);

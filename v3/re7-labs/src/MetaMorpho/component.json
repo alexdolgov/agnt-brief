@@ -1,7 +1,15 @@
 {
   "component": "MetaMorpho",
   "main_contract": "MetaMorpho",
+  "source_entry_count": 41,
   "source_file_count": 41,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MetaMorpho\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x78fc2c2ed1a4cdb5402365934ae5648adad094d0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",
@@ -20,7 +30,9 @@
       "address": "0x95eef579155cd2c5510f312c8fa39208c3be01a8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",
@@ -28,7 +40,9 @@
       "address": "0xa02f5e93f783baf150aa1f8b341ae90fe0a772f7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",
@@ -36,7 +50,9 @@
       "address": "0xe0c98605f279e4d7946d25b75869c69802823763",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",
@@ -44,7 +60,9 @@
       "address": "0x12afdefb2237a5963e7bab3e2d46ad0eee70406e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",
@@ -52,7 +70,9 @@
       "address": "0x6e37c95b43566e538d8c278eb69b00fc717a001b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",
@@ -60,7 +80,9 @@
       "address": "0xa2cac0023a4797b4729db94783405189a4203afc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

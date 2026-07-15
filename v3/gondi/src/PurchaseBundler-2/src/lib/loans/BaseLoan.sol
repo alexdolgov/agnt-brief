@@ -34,7 +34,7 @@ abstract contract BaseLoan is ERC721TokenReceiver, IBaseLoan, LiquidationHandler
     /// @notice Precision used for calculating interests.
     uint256 internal constant _PRECISION = 10000;
 
-    bytes public constant VERSION = "3.1";
+    bytes public constant VERSION = '3.1';
 
     /// @notice Minimum improvement (in BPS) required for a strict improvement.
     uint256 internal _minImprovementApr = 1000;
@@ -50,6 +50,8 @@ abstract contract BaseLoan is ERC721TokenReceiver, IBaseLoan, LiquidationHandler
 
     /// @notice Used for validate off chain maker offers / canceling one
     mapping(address user => mapping(uint256 offerId => bool notActive)) public isOfferCancelled;
+    /// @notice Used for validating off chain maker offers / canceling all
+    mapping(address user => uint256 minOfferId) public minOfferId;
 
     /// @notice Used in a similar way as `isOfferCancelled` to handle renegotiations.
     mapping(address user => mapping(uint256 renegotiationIf => bool notActive)) public isRenegotiationOfferCancelled;
@@ -64,6 +66,8 @@ abstract contract BaseLoan is ERC721TokenReceiver, IBaseLoan, LiquidationHandler
 
     event OfferCancelled(address lender, uint256 offerId);
 
+    event AllOffersCancelled(address lender, uint256 minOfferId);
+
     event RenegotiationOfferCancelled(address lender, uint256 renegotiationId);
 
     event MinAprImprovementUpdated(uint256 _minimum);
@@ -71,6 +75,10 @@ abstract contract BaseLoan is ERC721TokenReceiver, IBaseLoan, LiquidationHandler
     error CancelledOrExecutedOfferError(address _lender, uint256 _offerId);
 
     error ExpiredOfferError(uint256 _expirationTime);
+
+    error LowOfferIdError(address _lender, uint256 _newMinOfferId, uint256 _minOfferId);
+
+    error LowRenegotiationOfferIdError(address _lender, uint256 _newMinRenegotiationOfferId, uint256 _minOfferId);
 
     error ZeroInterestError();
 
@@ -146,6 +154,18 @@ abstract contract BaseLoan is ERC721TokenReceiver, IBaseLoan, LiquidationHandler
         isOfferCancelled[user][_offerId] = true;
 
         emit OfferCancelled(user, _offerId);
+    }
+
+    /// @inheritdoc IBaseLoan
+    function cancelAllOffers(uint256 _minOfferId) external virtual {
+        address user = msg.sender;
+        uint256 currentMinOfferId = minOfferId[user];
+        if (currentMinOfferId >= _minOfferId) {
+            revert LowOfferIdError(user, _minOfferId, currentMinOfferId);
+        }
+        minOfferId[user] = _minOfferId;
+
+        emit AllOffersCancelled(user, _minOfferId);
     }
 
     /// @inheritdoc IBaseLoan

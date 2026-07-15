@@ -1,44 +1,93 @@
 # Agentic Audit Brief: Basis Cash
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Basis Cash (`basis-cash`)
 - Website: [https://basis.cash/](https://basis.cash/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:33.363Z
-- Pipeline run: v2-2026-07-02-1ba3fd
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 38 unique implementations (38 raw deployments)
+- Contract surface: 41 unique implementations (41 raw deployments)
+- Coverage basis: 0/11 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $245,599.89
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Algo-Stables. Structurally: 37 project-authored contract(s) across 1 chain(s); 8 ERC20 tokens; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Basis Cash. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Its contracts share 8 common project-authored base contract(s) (operator, contractguard, epoch). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 11 contract row(s) across ethereum. Structural roles: 11 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 11
+- Structural roles: core (11)
+- Contract kinds: contract (11)
+- Detected standards: ownable (10), erc20 (3)
+- Frameworks: openzeppelin (11)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 13 contracts are derived from known codebases. 13 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x88da51...4ee747`, chain 1)
+- UnnamedContract (`0xffd035...5d6118`, chain 1)
+- BACDAIPool (`0xebd126...02bde8`, chain 1)
+- BACSUSDPool (`0xdc42a2...93305c`, chain 1)
+- BACUSDCPool (`0x518821...429fd4`, chain 1)
+- BACUSDTPool (`0x2833bd...877e44`, chain 1)
+- BACyCRVPool (`0xc462d8...14c3bf`, chain 1)
+- Bond (`0xc36824...f5abc5`, chain 1)
+- Cash (`0x3449fc...03a69a`, chain 1)
+- DAIBACLPTokenSharePool (`0x067d4d...f9db0f`, chain 1)
+- DAIBASLPTokenSharePool (`0x9569d4...fb0d0a`, chain 1)
+- Share (`0xa7ed29...b63696`, chain 1)
+- Timelock (`0xd98bc1...5d0e6a`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 38; live-surface contracts included: 38 (38 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 11; live-surface contracts included: 11 (11 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 13/14 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/38 (0.0%)
-- Deployed-live implementations: 38 of 38 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/38
-- Verified + Unaudited implementations: 38
+- Coverage of address-book-owned deployed-live implementations: 0/11 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 13 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 27 discovered implementations excluded (1 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 13 of 41 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/11
+- Verified + Unaudited implementations: 11
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 38
-- Raw deployments: 38
+- Unverified implementations: 2
+- Unique implementations: 41
+- Raw deployments: 41
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -59,46 +108,46 @@ The protocol comprises 2 functional families. Its contracts share 8 common proje
 
 ### ⚠️ Verified + Unaudited (38)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BACDAIPool | unknown | ethereum | n/a | [`0xebd126...02bde8`](./contracts/ethereum-1/0xebd12620e29dc6c452db7b96e1f190f3ee02bde8/) | ⚠️ Unaudited |
-| BACPool | unknown | ethereum | n/a | [`0x7e7ae8...d6ed8c`](./contracts/ethereum-1/0x7e7ae8923876955d6dcb7285c04065a1b9d6ed8c/) | ⚠️ Unaudited |
-| BACSUSDPool | unknown | ethereum | n/a | [`0xdc42a2...93305c`](./contracts/ethereum-1/0xdc42a21e38c3b8028b01a6b00d8dbc648f93305c/) | ⚠️ Unaudited |
-| BACUSDCPool | unknown | ethereum | n/a | [`0x518821...429fd4`](./contracts/ethereum-1/0x51882184b7f9beed6db9c617846140da1d429fd4/) | ⚠️ Unaudited |
-| BACUSDTPool | unknown | ethereum | n/a | [`0x2833bd...877e44`](./contracts/ethereum-1/0x2833bdc5b31269d356bdf92d0fd8f3674e877e44/) | ⚠️ Unaudited |
-| BACyCRVPool | unknown | ethereum | n/a | [`0xc462d8...14c3bf`](./contracts/ethereum-1/0xc462d8ee54953e7d7bf276612b75387ea114c3bf/) | ⚠️ Unaudited |
-| BASPool | unknown | ethereum | n/a | [`0x5859ad...8120c0`](./contracts/ethereum-1/0x5859adb05988946b9d08dce2e12ae29af58120c0/) | ⚠️ Unaudited |
-| BIP11 | unknown | ethereum | n/a | [`0xa6f889...c115a2`](./contracts/ethereum-1/0xa6f889c3cedbdf6cb524813da0ee0ffaddc115a2/) | ⚠️ Unaudited |
-| Boardroom | unknown | ethereum | n/a | [`0x27c20f...96fd4f`](./contracts/ethereum-1/0x27c20f0b0ad78805084eeb8407291326e996fd4f/) | ⚠️ Unaudited |
-| BoardroomV2 | unknown | ethereum | n/a | [`0xecf0dd...33e42a`](./contracts/ethereum-1/0xecf0dde35f6d895c065e7526348af1e79433e42a/) | ⚠️ Unaudited |
-| Bond | unknown | ethereum | n/a | [`0xc36824...f5abc5`](./contracts/ethereum-1/0xc36824905dff2eaaee7ecc09fcc63abc0af5abc5/) | ⚠️ Unaudited |
-| Bondroom | unknown | ethereum | n/a | [`0xd9a904...efe109`](./contracts/ethereum-1/0xd9a904a1320b5f0a1f742a9e431ded2a55efe109/) | ⚠️ Unaudited |
-| Cash | unknown | ethereum | n/a | [`0x3449fc...03a69a`](./contracts/ethereum-1/0x3449fc1cd036255ba1eb19d65ff4ba2b8903a69a/) | ⚠️ Unaudited |
-| ControlledAsset | unknown | ethereum | n/a | [`0x4c48fd...47d30c`](./contracts/ethereum-1/0x4c48fd8ed6f6a50bf03dbdefe7d74983f447d30c/) | ⚠️ Unaudited |
-| DAIBACLPTokenSharePool | unknown | ethereum | n/a | [`0x067d4d...f9db0f`](./contracts/ethereum-1/0x067d4d3ce63450e74f880f86b5b52ea3edf9db0f/) | ⚠️ Unaudited |
-| DAIBASLPTokenSharePool | unknown | ethereum | n/a | [`0x9569d4...fb0d0a`](./contracts/ethereum-1/0x9569d4cd7ac5b010da5697e952efb1ec0efb0d0a/) | ⚠️ Unaudited |
-| Distribution | unknown | ethereum | n/a | [`0x818f83...402f2e`](./contracts/ethereum-1/0x818f83333244ba4bb72dab0b60b1901158402f2e/) | ⚠️ Unaudited |
-| Feeder | unknown | ethereum | n/a | [`0x065894...8eb1b0`](./contracts/ethereum-1/0x06589479a31f826410bbd6d43410e7ff2d8eb1b0/) | ⚠️ Unaudited |
-| InitialCashDistributor | unknown | ethereum | n/a | [`0x666c2a...54c0cd`](./contracts/ethereum-1/0x666c2a4625ef5f8cf66a24fbff9f22437754c0cd/) | ⚠️ Unaudited |
-| InitialShareDistributor | unknown | ethereum | n/a | [`0x3c5323...e2f4bb`](./contracts/ethereum-1/0x3c53230875877321023f757c33d2faf71de2f4bb/) | ⚠️ Unaudited |
-| LinearThreshold | unknown | ethereum | n/a | [`0xcdbae6...120b11`](./contracts/ethereum-1/0xcdbae6de88c7525369d6826ae1cdcab415120b11/) | ⚠️ Unaudited |
-| MerkleDistributor | unknown | ethereum | n/a | [`0x1b6043...ade677`](./contracts/ethereum-1/0x1b604349100a318e369b59a6d6c1b65a31ade677/) | ⚠️ Unaudited |
-| Oracle | unknown | ethereum | n/a | [`0x1b3868...8ff7ed`](./contracts/ethereum-1/0x1b3868247dfbc155fa59b30ec03e63b10a8ff7ed/) | ⚠️ Unaudited |
-| PickleProxy | unknown | ethereum | n/a | [`0x0cf4ac...912828`](./contracts/ethereum-1/0x0cf4acf926a4d973e4a1775e4a82839988912828/) | ⚠️ Unaudited |
-| PoolMigrator | unknown | ethereum | n/a | [`0x66d7fa...30b7bb`](./contracts/ethereum-1/0x66d7fa132b5550205d4d6a6645b66283e330b7bb/) | ⚠️ Unaudited |
-| PoolProxy | unknown | ethereum | n/a | [`0x1fe765...b432c5`](./contracts/ethereum-1/0x1fe7656fa41eea50b0ee8591fd6b405c94b432c5/) | ⚠️ Unaudited |
-| PoolStore | unknown | ethereum | n/a | [`0x01592e...a00ae6`](./contracts/ethereum-1/0x01592e349258233a6f13685228060511eca00ae6/) | ⚠️ Unaudited |
-| PoolWrapper | unknown | ethereum | n/a | [`0x2e3d21...41510c`](./contracts/ethereum-1/0x2e3d21e2730b4e5d5ee7214d4723ea96d041510c/) | ⚠️ Unaudited |
-| Share | unknown | ethereum | n/a | [`0xa7ed29...b63696`](./contracts/ethereum-1/0xa7ed29b253d8b4e3109ce07c80fc570f81b63696/) | ⚠️ Unaudited |
-| ShareV2 | unknown | ethereum | n/a | [`0x106538...875287`](./contracts/ethereum-1/0x106538cc16f938776c7c180186975bca23875287/) | ⚠️ Unaudited |
-| SigmoidThreshold | unknown | ethereum | n/a | [`0xa72872...07f7f3`](./contracts/ethereum-1/0xa728721394084ea78f10cebb192323f50407f7f3/) | ⚠️ Unaudited |
-| SimpleERCFund | unknown | ethereum | n/a | [`0x7b075b...98fe22`](./contracts/ethereum-1/0x7b075b3aa2f1143775101986b52e32da9d98fe22/) | ⚠️ Unaudited |
-| Timelock | unknown | ethereum | n/a | [`0xd98bc1...5d0e6a`](./contracts/ethereum-1/0xd98bc19ffc98e9009146524c8bd835f1bc5d0e6a/) | ⚠️ Unaudited |
-| TokenStore | unknown | ethereum | n/a | [`0x0440ae...25c87c`](./contracts/ethereum-1/0x0440ae12f329dbd7306b6d9edbb0e667c225c87c/) | ⚠️ Unaudited |
-| Treasury | unknown | ethereum | n/a | [`0x02957a...c877f5`](./contracts/ethereum-1/0x02957ae53173f58dc9989c4a09853f9528c877f5/) | ⚠️ Unaudited |
-| VoteProxy | unknown | ethereum | n/a | [`0x6bddf1...eb729b`](./contracts/ethereum-1/0x6bddf10f9956dcda89998c2e673f74a09deb729b/) | ⚠️ Unaudited |
-| Vyper_contract | unknown | ethereum | n/a | [`0x06364f...d6c763`](./contracts/ethereum-1/0x06364f10b501e868329afbc005b3492902d6c763/) | ⚠️ Unaudited |
-| WeightFeeder | unknown | ethereum | n/a | [`0x5800fc...816546`](./contracts/ethereum-1/0x5800fc35f004c1218b18a22940ee7e8be4816546/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BACDAIPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380301 | `0xebd126...02bde8` | ⚠️ Unaudited |
+| BACPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7e7ae8...d6ed8c` | ⚠️ Unaudited |
+| BACSUSDPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380300 | `0xdc42a2...93305c` | ⚠️ Unaudited |
+| BACUSDCPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380292 | `0x518821...429fd4` | ⚠️ Unaudited |
+| BACUSDTPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380290 | `0x2833bd...877e44` | ⚠️ Unaudited |
+| BACyCRVPool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380298 | `0xc462d8...14c3bf` | ⚠️ Unaudited |
+| BASPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5859ad...8120c0` | ⚠️ Unaudited |
+| BIP11 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa6f889...c115a2` | ⚠️ Unaudited |
+| Boardroom | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x27c20f...96fd4f` | ⚠️ Unaudited |
+| BoardroomV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xecf0dd...33e42a` | ⚠️ Unaudited |
+| Bond | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380297 | `0xc36824...f5abc5` | ⚠️ Unaudited |
+| Bondroom | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xd9a904...efe109` | ⚠️ Unaudited |
+| Cash | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380291 | `0x3449fc...03a69a` | ⚠️ Unaudited |
+| ControlledAsset | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4c48fd...47d30c` | ⚠️ Unaudited |
+| DAIBACLPTokenSharePool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380289 | `0x067d4d...f9db0f` | ⚠️ Unaudited |
+| DAIBASLPTokenSharePool | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380295 | `0x9569d4...fb0d0a` | ⚠️ Unaudited |
+| Distribution | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x818f83...402f2e` | ⚠️ Unaudited |
+| Feeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x065894...8eb1b0` | ⚠️ Unaudited |
+| InitialCashDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x666c2a...54c0cd` | ⚠️ Unaudited |
+| InitialShareDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x3c5323...e2f4bb` | ⚠️ Unaudited |
+| LinearThreshold | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xcdbae6...120b11` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b6043...ade677` | ⚠️ Unaudited |
+| Oracle | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b3868...8ff7ed` | ⚠️ Unaudited |
+| PickleProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0cf4ac...912828` | ⚠️ Unaudited |
+| PoolMigrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x66d7fa...30b7bb` | ⚠️ Unaudited |
+| PoolProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1fe765...b432c5` | ⚠️ Unaudited |
+| PoolStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x01592e...a00ae6` | ⚠️ Unaudited |
+| PoolWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2e3d21...41510c` | ⚠️ Unaudited |
+| Share | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380296 | `0xa7ed29...b63696` | ⚠️ Unaudited |
+| ShareV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x106538...875287` | ⚠️ Unaudited |
+| SigmoidThreshold | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa72872...07f7f3` | ⚠️ Unaudited |
+| SimpleERCFund | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7b075b...98fe22` | ⚠️ Unaudited |
+| Timelock | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380299 | `0xd98bc1...5d0e6a` | ⚠️ Unaudited |
+| TokenStore | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x0440ae...25c87c` | ⚠️ Unaudited |
+| Treasury | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x02957a...c877f5` | ⚠️ Unaudited |
+| VoteProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x6bddf1...eb729b` | ⚠️ Unaudited |
+| Vyper_contract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x06364f...d6c763` | ⚠️ Unaudited |
+| WeightFeeder | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x5800fc...816546` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -112,31 +161,53 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-380293 | `0x751d0e...bf75ca` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380294 | `0x88da51...4ee747` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-380302 | `0xffd035...5d6118` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0xebd126...02bde8` | BACDAIPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xdc42a2...93305c` | BACSUSDPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x518821...429fd4` | BACUSDCPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x2833bd...877e44` | BACUSDTPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc462d8...14c3bf` | BACyCRVPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc36824...f5abc5` | Bond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x3449fc...03a69a` | Cash | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x067d4d...f9db0f` | DAIBACLPTokenSharePool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x9569d4...fb0d0a` | DAIBASLPTokenSharePool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xa7ed29...b63696` | Share | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xd98bc1...5d0e6a` | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 38 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 38 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 
@@ -144,6 +215,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

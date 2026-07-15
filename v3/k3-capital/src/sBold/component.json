@@ -1,10 +1,21 @@
 {
   "component": "sBold",
   "main_contract": "sBold",
+  "source_entry_count": 37,
   "source_file_count": 37,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/sBold\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://dedaub.com/audits/k3-capital/sbold-may-19-2025",
+    "https://www.chainsecurity.com/security-audit/k3-sbold"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +23,9 @@
       "address": "0x50bd66d59911f5e086ec87ae43c811e0d059dd11",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403291"
     }
   ]
 }

@@ -1,7 +1,15 @@
 {
   "component": "RewardPoolDepositWrapper",
   "main_contract": "RewardPoolDepositWrapper",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RewardPoolDepositWrapper\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x51b6e0ac6d6435650748513c71db453f96749fe1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391462"
     },
     {
       "chain": "polygon",
@@ -20,7 +30,9 @@
       "address": "0xce66e8300dc1d1f5b0e46e9145fdf680a7e41146",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391500"
     },
     {
       "chain": "base",
@@ -28,7 +40,9 @@
       "address": "0xa9952c914d86f896c53bf17125c4104cc058008e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391517"
     },
     {
       "chain": "arbitrum",
@@ -36,7 +50,9 @@
       "address": "0x6b02fefd2f2e06f51e17b7d5b8b20d75fd6916be",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391529"
     }
   ]
 }

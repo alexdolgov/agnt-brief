@@ -1,12 +1,20 @@
 {
   "component": "MultiSourceLoan",
   "main_contract": "MultiSourceLoan",
+  "source_entry_count": 33,
   "source_file_count": 33,
-  "deployment_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MultiSourceLoan\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
-    "https://2893171050-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FW2WSJrV6PSLWo4p8vIGq%2Fuploads%2FaRsUvzn1bAxcW38gJGOA%2FGondi%20-%20Zenith%20Audit%20Report%20(5).pdf",
-    "https://raw.githubusercontent.com/zenith-security/reports/985c60dd51497dfd8540cdc16bf243265ba154b5/reports/Gondi%20-%20Zenith%20Audit%20Report.pdf"
+    "https://drive.google.com/file/d/1-l-c2peae3hUnOeuZ62js-xgiXKbtvod/view?usp=sharing",
+    "https://drive.google.com/file/d/1JQ2HZzfR-y2mDfy29idBmAPUDCYH6nh9/view?usp=sharing"
   ],
   "addresses": [
     {
@@ -15,39 +23,9 @@
       "address": "0x478f6f994c6fb3cf3e444a489b3ad9edb8ccae16",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x52cdce4ebd1c6045765e4399ed2e4fffb9bf7e54",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xdff8873f99aa15036b60ff9d0a08bd0f55859634",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xf41b389e0c1950dc0b16c9498eae77131cc08a56",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xf65b99ce6dc5f6c556172bcc0ff27d3665a7d9a8",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394752"
     }
   ]
 }

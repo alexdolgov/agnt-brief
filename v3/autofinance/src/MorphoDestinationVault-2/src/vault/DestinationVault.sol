@@ -11,26 +11,18 @@ import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
 import { ISwapRouter } from "src/interfaces/swapper/ISwapRouter.sol";
 import { IMainRewarder } from "src/interfaces/rewarders/IMainRewarder.sol";
 import { IDestinationVault } from "src/interfaces/vault/IDestinationVault.sol";
-import { IDestinationVaultExtension } from "src/interfaces/vault/IDestinationVaultExtension.sol";
 import { SafeERC20 } from "openzeppelin-contracts/token/ERC20/utils/SafeERC20.sol";
 import { Initializable } from "openzeppelin-contracts/proxy/utils/Initializable.sol";
 import { EnumerableSet } from "openzeppelin-contracts/utils/structs/EnumerableSet.sol";
 import { IERC20Metadata as IERC20 } from "openzeppelin-contracts/token/ERC20/extensions/IERC20Metadata.sol";
 import { IDexLSTStats } from "src/interfaces/stats/IDexLSTStats.sol";
 import { SystemComponent } from "src/SystemComponent.sol";
-import { IERC1271 } from "openzeppelin-contracts/interfaces/IERC1271.sol";
 import { Address } from "openzeppelin-contracts/utils/Address.sol";
 import { ContractTypes } from "src/libs/ContractTypes.sol";
 import { IRootPriceOracle } from "src/interfaces/oracles/IRootPriceOracle.sol";
+import { DestinationVaultExtension } from "src/vault/libs/DestinationVaultExtension.sol";
 
-abstract contract DestinationVault is
-    SecurityBase,
-    SystemComponent,
-    ERC20,
-    Initializable,
-    IDestinationVault,
-    IERC1271
-{
+abstract contract DestinationVault is SecurityBase, SystemComponent, ERC20, Initializable, IDestinationVault {
     using SafeERC20 for IERC20;
     using EnumerableSet for EnumerableSet.AddressSet;
     using Address for address;
@@ -183,6 +175,11 @@ abstract contract DestinationVault is
     }
 
     /// @inheritdoc IDestinationVault
+    function excessUnderlyingBalance() public view virtual override returns (uint256) {
+        return externalQueriedBalance() + internalQueriedBalance() - balanceOfUnderlyingDebt();
+    }
+
+    /// @inheritdoc IDestinationVault
     function internalDebtBalance() public view virtual override returns (uint256);
 
     /// @inheritdoc IDestinationVault
@@ -241,6 +238,16 @@ abstract contract DestinationVault is
         _shutdownStatus = reason;
 
         emit Shutdown(reason);
+    }
+
+    /// @inheritdoc IDestinationVault
+    function setTrackedToken(address token, bool tracked) external hasRole(Roles.DESTINATION_VAULT_MANAGER) {
+        if (tracked) {
+            _addTrackedToken(token);
+        } else {
+            //slither-disable-next-line unused-return
+            _trackedTokens.remove(token);
+        }
     }
 
     /// @inheritdoc IDestinationVault
@@ -547,22 +554,6 @@ abstract contract DestinationVault is
     ) internal virtual;
 
     /// @inheritdoc IDestinationVault
-    function setMessage(bytes32 hash, bool flag) external hasRole(Roles.AUTO_POOL_DESTINATION_UPDATER) {
-        signedMessages[hash] = flag;
-
-        emit UpdateSignedMessage(hash, flag);
-    }
-
-    /// @inheritdoc IERC1271
-    function isValidSignature(bytes32 hash, bytes memory) external view override returns (bytes4 magicValue) {
-        if (signedMessages[hash]) {
-            magicValue = IERC1271.isValidSignature.selector;
-        } else {
-            magicValue = 0xFFFFFFFF;
-        }
-    }
-
-    /// @inheritdoc IDestinationVault
     function setExtension(
         address extension_
     ) external hasRole(Roles.DESTINATION_VAULT_MANAGER) {
@@ -577,48 +568,7 @@ abstract contract DestinationVault is
     function executeExtension(
         bytes calldata data
     ) external hasRole(Roles.DESTINATION_VAULT_MANAGER) {
-        Errors.verifyNotZero(extension, "extension");
-
-        // slither-disable-next-line timestamp
-        if (block.timestamp < extensionSetTime + 7 days) {
-            revert ExtensionNotActive();
-        }
-
-        uint256 trackedTokensLength = _trackedTokens.length();
-
-        // Save the balances
-        uint256[] memory trackedTokensBalances = new uint256[](trackedTokensLength);
-        uint256 externalDebtBalance_ = externalDebtBalance();
-        uint256 internalDebtBalance_ = internalDebtBalance();
-        // slither-disable-next-line similar-names
-        uint256 externalQueriedBalance_ = externalQueriedBalance();
-        uint256 internalQueriedBalance_ = internalQueriedBalance();
-
-        for (uint256 i = 0; i < trackedTokensLength; ++i) {
-            trackedTokensBalances[i] = IERC20(_trackedTokens.at(i)).balanceOf(address(this));
-        }
-
-        // This could still set an approval that allows a later transfer out
-        // but that is acceptable for our use case
-        // slither-disable-next-line unused-return
-        extension.functionDelegateCall(abi.encodeCall(IDestinationVaultExtension.execute, (data)));
-
-        // Verify that no tokens were pulled
-        for (uint256 i = 0; i < trackedTokensLength; ++i) {
-            IERC20 token = IERC20(_trackedTokens.at(i));
-            if (trackedTokensBalances[i] != token.balanceOf(address(this))) {
-                revert ExtensionAmountMismatch();
-            }
-        }
-
-        // Verify that DestinationVault balances have not changed
-        if (
-            externalDebtBalance_ != externalDebtBalance() || internalDebtBalance_ != internalDebtBalance()
-                || externalQueriedBalance_ != externalQueriedBalance()
-                || internalQueriedBalance_ != internalQueriedBalance()
-        ) {
-            revert ExtensionAmountMismatch();
-        }
+        DestinationVaultExtension.executeExtension(extension, extensionSetTime, _trackedTokens, data);
     }
 
     /// @notice Sets the max recoup credit given during the withdraw of an undervalued destination

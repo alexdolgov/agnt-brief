@@ -1,50 +1,28 @@
 {
   "component": "StargatePool-2",
   "main_contract": "StargatePool",
-  "source_file_count": 45,
-  "deployment_count": 5,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StargatePool-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x268ca24daeff1fac2ed883c598200ccbb79e931d",
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x36ed193dc7160d3858ec250e69d12b03ca087d08",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xcdafb1b2db43f366e48e6f614b8dccbfeefeecd3",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0xe9aba835f813ca05e50a6c0ce65d0d74390f7de7",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0x4c1d3fc3fc3c177c3b633427c2f769276c547463",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0xf7628d84a2bbd9bb9c8e686ac95bb5d55169f3f1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399592"
     }
   ]
 }

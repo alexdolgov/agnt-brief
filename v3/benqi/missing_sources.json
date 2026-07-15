@@ -1,0 +1,13 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "benqi",
+  "missing": [
+    {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0x784da19e61cf348a8c54547531795ecfee2affd1",
+      "canonical_source_address": null
+    }
+  ]
+}

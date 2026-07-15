@@ -1,10 +1,20 @@
 {
   "component": "ProxyAdmin",
   "main_contract": "ProxyAdmin",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ProxyAdmin\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/protocol/PeckShield-Audit-Report-Alpaca-v1.0.pdf"
+  ],
   "addresses": [
     {
       "chain": "bsc",
@@ -12,15 +22,9 @@
       "address": "0x5379f32c8d5f663eacb61eef63f722950294f452",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xfca12e322dbfbbdff5747e26cfabf480aaedef72",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390826"
     }
   ]
 }

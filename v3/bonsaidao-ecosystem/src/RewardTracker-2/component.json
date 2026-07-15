@@ -1,7 +1,15 @@
 {
   "component": "RewardTracker-2",
   "main_contract": "RewardTracker",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RewardTracker-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x0a22fec325b89ac294fceafefd7fbc9115be964b",
+      "address": "0x1addd80e6039594ee970e5872d247bf0414c8903",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

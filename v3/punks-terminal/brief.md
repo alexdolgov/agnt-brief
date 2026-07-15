@@ -1,44 +1,86 @@
 # Agentic Audit Brief: Punks Terminal
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Punks Terminal (`punks-terminal`)
 - Website: [https://punks.lightyear.build/stash](https://punks.lightyear.build/stash)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:43.697Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-0679
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 6 unique implementations (13 raw deployments)
+- Contract surface: 1 unique implementations (1 raw deployments)
+- Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,331,494.45
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-NFT Marketplace. Structurally: 10 project-authored contract(s) across 1 chain(s); 4 ERC721 NFTs; built on solady.
+This brief describes the observed EVM deployment and audit surface for Punks Terminal. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 4 functional families. Contracts are linked by 8 cross-contract reference(s). Dominant framework: solady.
+The pinned logic-topography run contains 1 contract row(s) across ethereum. Structural roles: 1 supporting. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 1
+- Structural roles: supporting (1)
+- Contract kinds: contract (1)
+- Detected standards: ownable (1)
+- Frameworks: solady (1)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 1 contracts are derived from known codebases. 1 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- StashFactory (`0x000000...866750`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 15; live-surface contracts included: 13 (13 live, 0 unknown).
-- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 1/1 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/6 (0.0%)
-- Deployed-live implementations: 6 of 6 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/6
-- Verified + Unaudited implementations: 6
+- Coverage of address-book-owned deployed-live implementations: 0/1 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 1 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/1
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 6
-- Raw deployments: 13
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,16 +99,11 @@ The protocol comprises 4 functional families. Contracts are linked by 8 cross-co
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| CryptoPunks721 | unknown | ethereum | n/a | [`0x000000...5c5c2f`](./contracts/ethereum-1/0x000000000000003607fce1ac9e043a86675c5c2f/) | ⚠️ Unaudited |
-| CryptoPunksMarket | unknown | ethereum | n/a | [`0xb47e3c...193bbb`](./contracts/ethereum-1/0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb/) | ⚠️ Unaudited |
-| PunkTransferHelper | periphery | ethereum | n/a | [`0x000000...312272`](./contracts/ethereum-1/0x000000000000748d91de137891483c6f2f312272/) | ⚠️ Unaudited |
-| Stash | unknown | ethereum | n/a | 8 deployments: ethereum [`0x000000...968eec`](./contracts/ethereum-1/0x00000000000060d035a8002956b5fb02e3968eec/); ethereum `0x32b262...f90d7e`; ethereum `0x436f07...b8f6fc`; ethereum `0xa3c22e...3a6f23`; ethereum `0xccb008...d1e925`; ethereum `0xe4f741...6460ce`; ethereum `0xf30c1e...73090f`; ethereum `0xf78baa...b8c860` | ⚠️ Unaudited |
-| StashFactory | registry | ethereum | n/a | [`0x000000...866750`](./contracts/ethereum-1/0x000000000000a6fa31f5fc51c1640aac76866750/) | ⚠️ Unaudited |
-| WrappedPunk | unknown | ethereum | n/a | [`0xb7f7f6...c313f6`](./contracts/ethereum-1/0xb7f7f6c52f2e2fdb1963eab30438024864c313f6/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| StashFactory | registry | project_anchor | own_supporting | 0 | ethereum | unit-391213 | `0x000000...866750` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,23 +125,31 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | `0x000000...866750` | StashFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 6 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -112,6 +157,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

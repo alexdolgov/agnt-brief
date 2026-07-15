@@ -1,82 +1,113 @@
 # Agentic Audit Brief: Kinza Finance
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 2 (0 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Kinza Finance (`kinza-finance`)
 - Website: [https://app.kinza.finance](https://app.kinza.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:19.970Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
-- Chains: bsc, ethereum, mantle, opbnb
-- Contract surface: 115 unique implementations (126 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: bsc, mantle
+- Contract surface: 12 unique implementations (12 raw deployments)
+- Coverage basis: 0/2 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $6,547,336.82
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Lending. Structurally: 51 project-authored contract(s) across 3 chain(s); 10 ERC20 tokens, 12 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Kinza Finance. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Its contracts share 12 common project-authored base contract(s) (proxy, erc1967upgrade, erc165). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 3 contract row(s) across bsc, mantle. Structural roles: 2 supporting, 1 unclassified. 1 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 3
+- Structural roles: supporting (2), unclassified (1)
+- Contract kinds: contract (3)
+- Detected standards: none
+- Frameworks: openzeppelin (1), openzeppelin-upgradeable (1)
+- Upgradeable-pattern rows: 1
+
+## Fork Analysis
+
+0 of 8 contracts are derived from known codebases. 8 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x0d4af5...8381b8`, chain 5000)
+- UnnamedContract (`0x18cc2c...95ec38`, chain 5000)
+- UnnamedContract (`0x22e585...9589c9`, chain 5000)
+- UnnamedContract (`0x28a3f4...3f873c`, chain 5000)
+- UnnamedContract (`0x5757b1...78ed51`, chain 5000)
+- UnnamedContract (`0xd62434...7a9438`, chain 5000)
+- GnosisSafeProxy (`0xb00083...12ee28`, chain 5000)
+- UUPSProxy (`0x9356f6...b48383`, chain 56)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 238; live-surface contracts included: 126 (24 live, 102 unknown).
-- Excluded by liveness: 112 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 3; live-surface contracts included: 3 (2 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 8/12 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 1/13 (7.7%)
-- Deployed-live implementations: 13 of 115 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 1/13
-- Verified + Unaudited implementations: 12
+- Coverage of address-book-owned deployed-live implementations: 0/2 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 8 own, 4 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Deployed-live implementations: 8 of 12 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/2
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 102
-- Unique implementations: 115
-- Raw deployments: 126
+- Unverified implementations: 6
+- Unique implementations: 12
+- Raw deployments: 12
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 1
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-08 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 1 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| Omniscia | Tier 2 | 1 | 7.7% | 2023-08 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| ProtectedNativeTokenGateway | unknown | bsc | n/a | [`0x88e6ee...239337`](./contracts/bsc-56/0x88e6ee8bae18ebbc9a49f9627a0ea4ff94239337/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (12)
+### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AaveOracle | operational_periphery | ethereum | n/a | [`0x39abed...754a39`](./contracts/ethereum-1/0x39abeda13579fbb4effb31b5f38bdc91ae754a39/) | ⚠️ Unaudited |
-| ACLManager | governance | ethereum | n/a | [`0x9074fc...095fdb`](./contracts/ethereum-1/0x9074fca9c7a77c7078b5bbfec33f74191d095fdb/) | ⚠️ Unaudited |
-| AToken | token | bsc | n/a | 3 deployments: bsc [`0x26c8c9...9f4a04`](./contracts/bsc-56/0x26c8c9d74eae6182316b30de9ac60e2adc9f4a04/); bsc `0xe48967...796f5c`; bsc `0xf5e0ad...2dba0c` | ⚠️ Unaudited |
-| ConfiguratorLogic | unknown | bsc | n/a | 2 deployments: ethereum `0xd74d44...74bc8d`; bsc [`0x306ca8...889871`](./contracts/bsc-56/0x306ca8e36c1dcc1e160f94d1eb5fd97cea889871/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | 2 deployments: ethereum [`0x8c99b0...5baa58`](./contracts/ethereum-1/0x8c99b0141849d8097309c8ea78f86b7bb65baa58/); ethereum `0xa3ec77...edfd16` | ⚠️ Unaudited |
-| GnosisSafeProxy | governance | mantle | n/a | 3 deployments: opbnb `0x550330...9b1ed3`; mantle [`0x3cc8dc...561d68`](./contracts/mantle-5000/0x3cc8dc73aee77f787f3322e3ce61e14e58561d68/); mantle `0xb00083...12ee28` | ⚠️ Unaudited |
-| kBTC | unknown | bsc | n/a | [`0x9356f6...b48383`](./contracts/bsc-56/0x9356f6d95b8e109f4b7ce3e49d672967d3b48383/) | ⚠️ Unaudited |
-| Pool | core_logic | bsc | n/a | [`0xcb0620...963c8c`](./contracts/bsc-56/0xcb0620b181140e57d1c0d8b724cde623ca963c8c/) | ⚠️ Unaudited |
-| PoolAddressesProvider | unknown | ethereum | n/a | 2 deployments: ethereum [`0x021889...6bd953`](./contracts/ethereum-1/0x0218890dd636c3a1cf0f98557ee2d3612c6bd953/); bsc `0xca20a5...1fd7ce` | ⚠️ Unaudited |
-| PoolConfigurator | unknown | bsc | n/a | 2 deployments: ethereum `0x824a5b...1eabbd`; bsc [`0x25b36e...e902bb`](./contracts/bsc-56/0x25b36ed1e5b5b2b2978d473ed42928d3b6e902bb/) | ⚠️ Unaudited |
-| ReservesSetupHelper | unknown | bsc | n/a | 3 deployments: bsc [`0x1f0d4b...450794`](./contracts/bsc-56/0x1f0d4b5e45e9d471aa67e3a1eb0a786e82450794/); bsc `0x2a8108...3b22b8`; bsc `0xd9c5bd...788f57` | ⚠️ Unaudited |
-| WrappedTokenGatewayV3 | token | ethereum | n/a | 2 deployments: ethereum [`0xa4cd4b...781087`](./contracts/ethereum-1/0xa4cd4b5004ab42758bcb8893a10c5b3532781087/); bsc `0xcc650b...526739` | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| GnosisSafeProxy | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | mantle | unit-244220 | `0x3cc8dc...561d68` | ⚠️ Unaudited |
+| GnosisSafeProxy | governance | project_anchor | own_supporting | 0 | mantle | unit-244223 | `0xb00083...12ee28` | ⚠️ Unaudited |
+| kBTC | unknown | project_anchor | own_supporting | 1 | bsc | unit-244226 | `0x9356f6...b48383` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,148 +121,90 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (102)
+### ❓ Unverified (9)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0xd27b00...3f83f1` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x209f07...d4d475` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x433958...a26027` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x439e13...adfcad` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe26b3e...9cbb9c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xf01f32...6b98cf` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x004a9e...d9cba6` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x077893...8abc6f` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x0c2d7e...4fe543` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x0df5a3...d95eb5` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x1c40ce...806836` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x1e1a67...29dffe` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x1f84bf...f0db11` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x209f07...d4d475` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x260a7f...eb0068` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x2a8108...3b22b8` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x306ca8...889871` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x30777a...3d616f` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x342019...9a00f1` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x35d8d7...f97c8a` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x36be6c...15b9dc` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x37d7eb...269189` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x3f8860...cab067` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x3fb65b...031710` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x41822c...92a85e` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x4bacc3...71c9d5` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x52cf67...7bc7ee` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x54c33c...6d8e67` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x54c547...10df4c` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x565ef2...c1a7bf` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x5ceb0e...546673` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x6e5b5c...f59046` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x722f6e...59e1b5` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x75257e...f04bbc` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x763b2a...2fc1c2` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x7954f3...24327f` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x7ad8c5...1006b3` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x88e984...5fe4de` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x8a8451...8a1278` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x8c9c95...779013` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x947ad3...1f3669` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x993e9a...949fa4` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0x9c580c...781585` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xa6265a...b006fb` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xab98ae...6f18c6` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xb62afd...fa8345` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xbb5f2d...23eb5e` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xbc4318...357a2f` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xc086e1...90241a` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xc62cd1...ad0aa1` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xc7da75...a67e8a` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xc8cb15...cb28d9` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xca0eda...1dd0e0` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xca20a5...1fd7ce` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xcf46f7...ba9533` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xd67ff7...eff410` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xd9c5bd...788f57` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xdc68ac...065d8b` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xde451b...b69802` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xe8fcad...5ceb4d` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xec9582...9b9851` | ❓ Unverified |
-| UnnamedContract | unknown | opbnb | n/a | `0xef31e7...24905d` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x002618...2315b2` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x0536e7...0051ea` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x0d4af5...8381b8` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x18cc2c...95ec38` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x1c3a49...6b001a` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x26b164...7e87dc` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x28a3f4...3f873c` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x2f31ac...c2e608` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x34edc3...972891` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x3ab164...6596dc` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x51ff36...373d64` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x532ece...757d72` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x58067d...bc6d90` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x69424f...f1ced7` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x6cf78e...9d5fc0` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x6f230e...2bf7e8` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x70fce7...82e5ce` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x7287d9...617f7f` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x758fb1...f61f13` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x7ba63a...aef8c5` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x7d3458...f3bf9b` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x9be413...612eb0` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x9cd978...b01f71` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xa4f75b...33bd4b` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xad4881...20abc2` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xbb0a49...c40153` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xbdf463...0f4b09` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xbf2602...7e51b6` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xc16ba9...0e6962` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xd5e6a1...c0b303` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xd62434...7a9438` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xd7933c...920d7a` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xe03379...fd9bdb` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xe2fee9...0583c0` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xe5ca43...283ffc` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xe5f546...661095` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xebf687...e05606` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xec63c5...5e2c18` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xf29d81...7a11ae` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0xf4f615...e7df96` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-244215 | `0x0d4af5...8381b8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-244216 | `0x18cc2c...95ec38` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-244217 | `0x22e585...9589c9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-244218 | `0x28a3f4...3f873c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | mantle | unit-244219 | `0x34edc3...972891` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | mantle | unit-244221 | `0x51ff36...373d64` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-244222 | `0x5757b1...78ed51` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | mantle | unit-244224 | `0xbf2602...7e51b6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-244225 | `0xd62434...7a9438` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [omniscia.io/reports/kinza-finance-wrapper-contracts-64d2056905462d0014ff3513](https://omniscia.io/reports/kinza-finance-wrapper-contracts-64d2056905462d0014ff3513) | Omniscia | Audit | 2023-08 | stale | Direct | contract_name | 1 | high |
-| [Salus-Kinza-1.0.pdf](https://github.com/Kinza-Finance/KZA-1.0/blob/main/audits/Salus-Kinza-1.0.pdf) | unknown | Audit | 2023-06 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [omniscia.io/reports/kinza-finance-wrapper-contracts-64d2056905462d0014ff3513](https://omniscia.io/reports/kinza-finance-wrapper-contracts-64d2056905462d0014ff3513) | Omniscia | Audit | 2023-08 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+| [Salus-Kinza-1.0.pdf](https://github.com/Kinza-Finance/KZA-1.0/blob/main/audits/Salus-Kinza-1.0.pdf) | unknown | Audit | 2023-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 13 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [2142] omniscia.io/reports/kinza-finance-wrapper-contracts-64d2056905462d0014ff3513 — no match: Three contracts explicitly listed in scope table.
+- [10238] Salus-Kinza-1.0.pdf — no match: All contracts listed in Appendix 1 - Files in Scope. Audit date from 'Date June 9 2023' in Project Dashboard.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| omniscia.io/reports/kinza-finance-wrapper-contracts-64d2056905462d0014ff3513 | ProtectedERC20 | unmatched — not counted | — | listed in scope | no |
+| omniscia.io/reports/kinza-finance-wrapper-contracts-64d2056905462d0014ff3513 | ProtectedERC20Gateway | unmatched — not counted | — | listed in scope | no |
+| omniscia.io/reports/kinza-finance-wrapper-contracts-64d2056905462d0014ff3513 | ProtectedNativeTokenGateway | unmatched — not counted | — | listed in scope | no |
+| Salus-Kinza-1.0.pdf | RewardsVault | unmatched — not counted | — | listed in Appendix 1 | no |
+| Salus-Kinza-1.0.pdf | ReserveFeeDistributor | unmatched — not counted | — | listed in Appendix 1 | no |
+| Salus-Kinza-1.0.pdf | LockTransferStrategy | unmatched — not counted | — | listed in Appendix 1 | no |
+| Salus-Kinza-1.0.pdf | TransferStrategyBase | unmatched — not counted | — | listed in Appendix 1 | no |
+| Salus-Kinza-1.0.pdf | VoteLogic | unmatched — not counted | — | listed in Appendix 1 | no |
+| Salus-Kinza-1.0.pdf | KZADistributor | unmatched — not counted | — | listed in Appendix 1 | no |
+| Salus-Kinza-1.0.pdf | VestingEscrow | unmatched — not counted | — | listed in Appendix 1 | no |
+| Salus-Kinza-1.0.pdf | Voter | unmatched — not counted | — | listed in Appendix 1 | no |
+| Salus-Kinza-1.0.pdf | BribeAssetRegistry | unmatched — not counted | — | listed in Appendix 1 | no |
+| Salus-Kinza-1.0.pdf | Minter | unmatched — not counted | — | listed in Appendix 1 | no |
+| Salus-Kinza-1.0.pdf | KZA | unmatched — not counted | — | listed in Appendix 1 | no |
+| Salus-Kinza-1.0.pdf | XKZA | unmatched — not counted | — | listed in Appendix 1 | no |
+| Salus-Kinza-1.0.pdf | AggregateBribe | unmatched — not counted | — | listed in Appendix 1 | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| bsc | `0x9356f6...b48383` | kBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 115 |
+| standard_library | 2 |
+| needs_review | 9 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=1
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 16 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=2
+- Match method counts: n/a
 
 Zero-match audit list:
 
+- [2142] omniscia.io/reports/kinza-finance-wrapper-contracts-64d2056905462d0014ff3513
 - [10238] Salus-Kinza-1.0.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -96,9 +96,11 @@ abstract contract DestinationVault is
     /// @inheritdoc IDestinationVault
     uint256 public recoupMaxCredit;
 
-    constructor(
-        ISystemRegistry sysRegistry
-    ) SystemComponent(sysRegistry) SecurityBase(address(sysRegistry.accessController())) ERC20("", "") {
+    constructor(ISystemRegistry sysRegistry)
+        SystemComponent(sysRegistry)
+        SecurityBase(address(sysRegistry.accessController()))
+        ERC20("", "")
+    {
         _disableInitializers();
     }
 
@@ -206,9 +208,7 @@ abstract contract DestinationVault is
     }
 
     /// @inheritdoc IDestinationVault
-    function debtValue(
-        uint256 shares
-    ) external virtual returns (uint256 value) {
+    function debtValue(uint256 shares) external virtual returns (uint256 value) {
         value = _debtValue(shares);
     }
 
@@ -229,9 +229,7 @@ abstract contract DestinationVault is
     function _collectRewards() internal virtual returns (uint256[] memory amounts, address[] memory tokens);
 
     /// @inheritdoc IDestinationVault
-    function shutdown(
-        VaultShutdownStatus reason
-    ) external hasRole(Roles.DESTINATION_VAULT_MANAGER) {
+    function shutdown(VaultShutdownStatus reason) external hasRole(Roles.DESTINATION_VAULT_MANAGER) {
         if (reason == VaultShutdownStatus.Active) {
             revert InvalidShutdownStatus(reason);
         }
@@ -263,16 +261,12 @@ abstract contract DestinationVault is
     /// @notice Checks if given token is tracked by Vault
     /// @param token Address to verify
     /// @return bool True if token is within Vault's tracked assets
-    function isTrackedToken(
-        address token
-    ) public view virtual returns (bool) {
+    function isTrackedToken(address token) public view virtual returns (bool) {
         return _trackedTokens.contains(token);
     }
 
     /// @inheritdoc IDestinationVault
-    function depositUnderlying(
-        uint256 amount
-    ) external onlyAutopool notShutdown returns (uint256 shares) {
+    function depositUnderlying(uint256 amount) external onlyAutopool notShutdown returns (uint256 shares) {
         Errors.verifyNotZero(amount, "amount");
 
         emit UnderlyingDeposited(amount, msg.sender);
@@ -304,16 +298,12 @@ abstract contract DestinationVault is
 
     /// @notice Ensure that we have the specified balance of the underlyer in the vault itself
     /// @param amount amount of token
-    function _ensureLocalUnderlyingBalance(
-        uint256 amount
-    ) internal virtual;
+    function _ensureLocalUnderlyingBalance(uint256 amount) internal virtual;
 
     /// @notice Callback during a deposit after the sender has been minted shares (if applicable)
     /// @dev Should be used for staking tokens into protocols, etc
     /// @param amount underlying tokens received
-    function _onDeposit(
-        uint256 amount
-    ) internal virtual;
+    function _onDeposit(uint256 amount) internal virtual;
 
     /// @inheritdoc IDestinationVault
     function withdrawBaseAsset(
@@ -328,9 +318,10 @@ abstract contract DestinationVault is
     /// @param underlyerAmount amount of underlyer to burn
     /// @return tokens the tokens to swap for base asset
     /// @return amounts the amounts we have to swap
-    function _burnUnderlyer(
-        uint256 underlyerAmount
-    ) internal virtual returns (address[] memory tokens, uint256[] memory amounts);
+    function _burnUnderlyer(uint256 underlyerAmount)
+        internal
+        virtual
+        returns (address[] memory tokens, uint256[] memory amounts);
 
     /// @inheritdoc IDestinationVault
     function recover(
@@ -378,9 +369,7 @@ abstract contract DestinationVault is
     }
 
     /// @inheritdoc IDestinationVault
-    function recoverUnderlying(
-        address destination
-    ) external override hasRole(Roles.TOKEN_RECOVERY_MANAGER) {
+    function recoverUnderlying(address destination) external override hasRole(Roles.TOKEN_RECOVERY_MANAGER) {
         Errors.verifyNotZero(destination, "destination");
 
         uint256 externalAmount = externalQueriedBalance() - externalDebtBalance();
@@ -396,16 +385,12 @@ abstract contract DestinationVault is
         }
     }
 
-    function _addTrackedToken(
-        address token
-    ) internal {
+    function _addTrackedToken(address token) internal {
         //slither-disable-next-line unused-return
         _trackedTokens.add(token);
     }
 
-    function _debtValue(
-        uint256 shares
-    ) private returns (uint256 value) {
+    function _debtValue(uint256 shares) private returns (uint256 value) {
         //slither-disable-next-line unused-return
         (uint256 spotPriceInQuote, uint256 safePriceInQuote, bool isSpotSafe) =
             systemRegistry.rootPriceOracle().getRangePricesLP(address(_underlying), getPool(), _baseAsset);
@@ -506,9 +491,10 @@ abstract contract DestinationVault is
     }
 
     /// @inheritdoc IDestinationVault
-    function setIncentiveCalculator(
-        address incentiveCalculator_
-    ) external hasRole(Roles.AUTO_POOL_DESTINATION_UPDATER) {
+    function setIncentiveCalculator(address incentiveCalculator_)
+        external
+        hasRole(Roles.AUTO_POOL_DESTINATION_UPDATER)
+    {
         if (!_shutdown) revert VaultNotShutdown();
         _validateCalculator(incentiveCalculator_);
 
@@ -531,9 +517,7 @@ abstract contract DestinationVault is
     function getPool() public view virtual returns (address poolAddress);
 
     /// @notice Validates incentive calculator for the destination vault
-    function _validateCalculator(
-        address calculator
-    ) internal virtual;
+    function _validateCalculator(address calculator) internal virtual;
 
     /// @inheritdoc IDestinationVault
     function setMessage(bytes32 hash, bool flag) external hasRole(Roles.AUTO_POOL_DESTINATION_UPDATER) {
@@ -552,9 +536,7 @@ abstract contract DestinationVault is
     }
 
     /// @inheritdoc IDestinationVault
-    function setExtension(
-        address extension_
-    ) external hasRole(Roles.DESTINATION_VAULT_MANAGER) {
+    function setExtension(address extension_) external hasRole(Roles.DESTINATION_VAULT_MANAGER) {
         // slither-disable-next-line missing-zero-check
         extension = extension_;
         extensionSetTime = block.timestamp;
@@ -563,9 +545,7 @@ abstract contract DestinationVault is
     }
 
     /// @inheritdoc IDestinationVault
-    function executeExtension(
-        bytes calldata data
-    ) external hasRole(Roles.DESTINATION_VAULT_MANAGER) {
+    function executeExtension(bytes calldata data) external hasRole(Roles.DESTINATION_VAULT_MANAGER) {
         Errors.verifyNotZero(extension, "extension");
 
         // slither-disable-next-line timestamp
@@ -612,17 +592,13 @@ abstract contract DestinationVault is
 
     /// @notice Sets the max recoup credit given during the withdraw of an undervalued destination
     /// @param newCredit New max recoup credit in bps
-    function setRecoupMaxCredit(
-        uint256 newCredit
-    ) external hasRole(Roles.DESTINATION_VAULT_MANAGER) {
+    function setRecoupMaxCredit(uint256 newCredit) external hasRole(Roles.DESTINATION_VAULT_MANAGER) {
         _setRecoupMaxCredit(newCredit);
     }
 
     /// @notice Sets the max recoup credit given during the withdraw of an undervalued destination
     /// @param newCredit New max recoup credit in bps
-    function _setRecoupMaxCredit(
-        uint256 newCredit
-    ) private {
+    function _setRecoupMaxCredit(uint256 newCredit) private {
         if (newCredit > 10_000) {
             revert Errors.InvalidParam("newCredit");
         }

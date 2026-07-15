@@ -1,34 +1,28 @@
 {
   "component": "DynamicFeeManager",
   "main_contract": "DynamicFeeManager",
+  "source_entry_count": 33,
   "source_file_count": 33,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DynamicFeeManager\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-130",
       "chain_id": 130,
-      "address": "0x16b40ca9b9366aba4cfdb3d6827491b66994d958",
+      "address": "0xd7deabab9ecd3bcb3b89ab0ce2c84c8565bb8d98",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-130",
-      "chain_id": 130,
-      "address": "0x4a6770f83059d0ee4ea1bdaaf0d3849deaa9429c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-130",
-      "chain_id": 130,
-      "address": "0xe6768629156d4b713e266b87502fbeccc218a028",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390506"
     }
   ]
 }

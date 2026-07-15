@@ -1,68 +1,44 @@
 {
   "component": "AdminUpgradeabilityProxy",
   "main_contract": "AdminUpgradeabilityProxy",
-  "source_file_count": 4,
-  "deployment_count": 7,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/TechRate/Smart-Contract-Audits/blob/main/April_2023/HashDAO.pdf"
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [
+    {
+      "original_path": "/Users/build/.repo/evm-contract-jerry.git/hash/contracts/proxy/AdminUpgradeabilityProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-a667b1df3de0-AdminUpgradeabilityProxy.sol",
+      "reason": "unsafe_path"
+    }
   ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AdminUpgradeabilityProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x019622fb05dd0c80751798949e795ff5d5e3a61f",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x5556af10c1966ebf0b131295a2af13deec771bce",
       "is_proxy": true,
-      "implementation_address": "0x8c265891c4d9c0d63432a0a14af41fb20de7b845",
-      "liveness": "live"
+      "implementation_address": "0xa4f3a08c8d98364685f911714abaef1de1b86ff7",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x90d11b8de2b30a84cb7e6cf6188581ec08b1bf82",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x584a4fc89f8bba3e836ad14a205fb022de07fca8",
       "is_proxy": true,
-      "implementation_address": "0x278fe1be6202fa12a4c18062a69bcfb42ad1f398",
-      "liveness": "inactive"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x92aee27dcc5373423d13028b1b2bf4ef61e6a39d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x958882fda110febd41536e45034bebff2a815006",
-      "is_proxy": true,
-      "implementation_address": "0x0f48ac8272edd41e5f21a85ffea0285ff0d28ee5",
-      "liveness": "inactive"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x99fe96b9eea24b4e71ac1a56f2c1886bbca22540",
-      "is_proxy": true,
-      "implementation_address": "0x129a949185836e1a52be715abb5aca54cb7dcd2c",
-      "liveness": "inactive"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xb557c071bae7dc3aa2366cd0fc0477b45eb696f1",
-      "is_proxy": true,
-      "implementation_address": "0x5905e0eca5f93d8359621feb7c2932d384141c76",
-      "liveness": "inactive"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xcd7a1b22d239a4395dd8ab8f5dbcdcee2132dbc4",
-      "is_proxy": true,
-      "implementation_address": "0x8c265891c4d9c0d63432a0a14af41fb20de7b845",
-      "liveness": "live"
+      "implementation_address": "0xa4f3a08c8d98364685f911714abaef1de1b86ff7",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

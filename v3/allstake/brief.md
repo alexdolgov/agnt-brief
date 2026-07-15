@@ -1,41 +1,69 @@
 # Agentic Audit Brief: Allstake
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 3 (0 matched; 3 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Allstake (`allstake`)
 - Website: [https://allstake.org/](https://allstake.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:26.608Z
-- Pipeline run: v2-2026-07-03-89943a
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $758,942.72
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+No contract logic was present for Allstake in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
+
+### Architecture
+
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/2 (0.0%)
-- Deployed-live implementations: 2 of 2 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/2
-- Verified + Unaudited implementations: 2
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 2 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 2
@@ -60,10 +88,10 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 ### ⚠️ Verified + Unaudited (2)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| StrategyManager | unknown | ethereum | n/a | [`0x1ebcd3...77e533`](./contracts/ethereum-1/0x1ebcd3c5ad19e0183078c50da280cb4baf77e533/) | ⚠️ Unaudited |
-| UiDataProvider | unknown | ethereum | n/a | [`0xb72f5f...76fb51`](./contracts/ethereum-1/0xb72f5fd9d1402e5e086ac3ee9c96391ee076fb51/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| StrategyManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-121382 | `0x1ebcd3...77e533` | ⚠️ Unaudited |
+| UiDataProvider | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-121383 | `0xb72f5f...76fb51` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,11 +113,32 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [BlockSec Audit: NEAR Contract, July 2024](https://github.com/allstake/audits/blob/main/Allstake%20-%20NEAR%20-%20BlockSec%20-%20Jul%202024.pdf) | BlockSec | Audit | 2024-07 | stale | Direct | n/a | 0 | n/a |
-| [BlockSec Audit: Solana Program, July 2024](https://github.com/allstake/audits/blob/main/Allstake%20-%20Solana%20-%20BlockSec%20-%20Jul%202024.pdf) | BlockSec | Audit | 2024-07 | stale | Direct | n/a | 0 | n/a |
-| [BlockSec Audit: Solidity Client Contracts, July 2024](https://github.com/allstake/audits/blob/main/Allstake%20-%20Solidity%20-%20BlockSec%20-%20Jul%202024.pdf) | BlockSec | Audit | 2024-07 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [BlockSec Audit: NEAR Contract, July 2024](https://github.com/allstake/audits/blob/main/Allstake%20-%20NEAR%20-%20BlockSec%20-%20Jul%202024.pdf) | BlockSec | Audit | 2024-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+| [BlockSec Audit: Solana Program, July 2024](https://github.com/allstake/audits/blob/main/Allstake%20-%20Solana%20-%20BlockSec%20-%20Jul%202024.pdf) | BlockSec | Audit | 2024-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+| [BlockSec Audit: Solidity Client Contracts, July 2024](https://github.com/allstake/audits/blob/main/Allstake%20-%20Solidity%20-%20BlockSec%20-%20Jul%202024.pdf) | BlockSec | Audit | 2024-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [19406] BlockSec Audit: NEAR Contract, July 2024 — no match: The audit report explicitly states the target is 'AllstakeNearContract' (a single contract). No individual contract files are listed; the scope is the entire repository. The date is from the cover page.
+- [19407] BlockSec Audit: Solana Program, July 2024 — no match: The audit focuses on the Allstake Solana Program, specifically the programs/strategy-manager. The contracts identified are StrategyManager, Strategy, and UserDeposit. The audit date is July 5, 2024.
+- [19408] BlockSec Audit: Solidity Client Contracts, July 2024 — no match: Scope explicitly lists Strategy.sol and StrategyManager.sol. VersionedInitializable is a utility contract not in scope.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| BlockSec Audit: NEAR Contract, July 2024 | AllstakeNearContract | unmatched — not counted | — | Section 1.1: 'The target of this audit is the code repository of AllstakeNearContract of Allstake.' | no |
+| BlockSec Audit: Solana Program, July 2024 | StrategyManager | unmatched — not counted | — | mentioned as the focus of the audit in Section 1.1 | no |
+| BlockSec Audit: Solana Program, July 2024 | Strategy | unmatched — not counted | — | mentioned in CreateStrategy struct and other instructions | no |
+| BlockSec Audit: Solana Program, July 2024 | UserDeposit | unmatched — not counted | — | mentioned in Deposit struct and other instructions | no |
+| BlockSec Audit: Solidity Client Contracts, July 2024 | Strategy | unmatched — not counted | — | listed in scope | no |
+| BlockSec Audit: Solidity Client Contracts, July 2024 | StrategyManager | unmatched — not counted | — | listed in scope | no |
 
 ## Coverage Gaps
 
@@ -101,10 +150,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -112,7 +161,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 6 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=3
 - Match method counts: n/a
 
 Zero-match audit list:

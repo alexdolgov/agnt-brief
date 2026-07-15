@@ -393,7 +393,7 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
             return 0;
         }
 
-        requestId = _requestRandomWords(7);
+        requestId = _requestRandomWords(10);
         _registerVrf(handId, hand, requestId, VrfAction.STAND, HandStatus.AWAITING_STAND);
         emit StandRequested(handId, requestId, msg.sender);
     }
@@ -444,12 +444,12 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
             } else {
                 ss.amount2 = activeAmount * 2;
                 ss.isDoubled2 = true;
-                requestId = _requestRandomWords(7); // card + dealer
+                requestId = _requestRandomWords(11); // card + dealer
             }
         } else {
             hand.amount = activeAmount * 2;
             hand.isDoubledDown = true;
-            requestId = _requestRandomWords(7);
+            requestId = _requestRandomWords(11);
         }
 
         _registerVrf(handId, hand, requestId, VrfAction.DOUBLE_DOWN, HandStatus.AWAITING_DOUBLE);
@@ -497,8 +497,8 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
         isSplit[handId] = true;
 
         // 2 words for normal split (one second card per hand).
-        // 9 words for ace split: 2 player cards + 1 dealer hidden + 6 dealer draws (auto-resolve).
-        uint32 numWords = aceSplit ? 9 : 2;
+        // 12 words for ace split: 2 player cards + 1 dealer hidden + 9 dealer draws (auto-resolve).
+        uint32 numWords = aceSplit ? 12 : 2;
         requestId = _requestRandomWords(numWords);
 
         _registerVrf(handId, hand, requestId, VrfAction.SPLIT, HandStatus.AWAITING_SPLIT);
@@ -634,18 +634,16 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
 
                 if (playerValue >= BLACKJACK_TARGET) {
                     // Hand 2 done (bust or 21). If BOTH hands busted → resolve (no dealer needed).
-                    // Otherwise dealer plays.
+                    // Otherwise remain in PLAYER_TURN: the frontend auto-submits stand(), which
+                    // triggers the dealer VRF request. We can't request VRF from inside a VRF
+                    // callback — Chainlink's coordinator blocks it with its reentrancyLock
                     (uint8 hand1Value, ) = _handValue(hand.playerCards, hand.playerCardCount);
                     if (hand1Value > BLACKJACK_TARGET && playerValue > BLACKJACK_TARGET) {
                         _resolveSplit(handId, hand);
-                    } else {
-                        uint newRequestId = _requestRandomWords(7);
-                        _registerVrf(handId, hand, newRequestId, VrfAction.STAND, HandStatus.AWAITING_STAND);
-                        emit StandRequested(handId, newRequestId, hand.user);
+                        return;
                     }
-                } else {
-                    hand.status = HandStatus.PLAYER_TURN;
                 }
+                hand.status = HandStatus.PLAYER_TURN;
             }
         } else {
             hand.playerCards[hand.playerCardCount] = newCard;
@@ -655,12 +653,8 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
 
             if (playerValue > BLACKJACK_TARGET) {
                 _resolveHand(handId, hand, HandResult.PLAYER_BUST);
-            } else if (playerValue == BLACKJACK_TARGET) {
-                // Auto-stand at 21 — trigger dealer VRF in the same callback
-                uint newRequestId = _requestRandomWords(7);
-                _registerVrf(handId, hand, newRequestId, VrfAction.STAND, HandStatus.AWAITING_STAND);
-                emit StandRequested(handId, newRequestId, hand.user);
             } else {
+                // At 21, frontend auto-submits stand() — can't nest a VRF request from here
                 hand.status = HandStatus.PLAYER_TURN;
             }
         }
@@ -723,9 +717,10 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
             }
         }
 
-        // Dealer plays using randomWords[1..6]
-        uint256[] memory dealerWords = new uint256[](6);
-        for (uint i; i < 6; ++i) {
+        // Dealer plays using randomWords[1..]. Production requests 11 words (1 player card + 10 dealer).
+        uint256 dealerLen = randomWords.length - 1;
+        uint256[] memory dealerWords = new uint256[](dealerLen);
+        for (uint i; i < dealerLen; ++i) {
             dealerWords[i] = randomWords[i + 1];
         }
         _dealerPlayAndResolveFromMemory(handId, hand, dealerWords);
@@ -748,9 +743,11 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
         ++ss.player2CardCount;
 
         if (ss.isAceSplit) {
-            // One-card rule: both hands are final. Play dealer using words 2..8 (7 words).
-            uint256[] memory dealerWords = new uint256[](7);
-            for (uint i; i < 7; ++i) {
+            // One-card rule: both hands are final. Play dealer using words 2.. Production requests 12 words
+            // (2 player second cards + 10 dealer: 1 hidden + up to 9 draws).
+            uint256 dealerLen = randomWords.length - 2;
+            uint256[] memory dealerWords = new uint256[](dealerLen);
+            for (uint i; i < dealerLen; ++i) {
                 dealerWords[i] = randomWords[i + 2];
             }
             _dealerPlayAndResolveFromMemory(handId, hand, dealerWords);
@@ -868,7 +865,7 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
             }
         }
 
-        if (payout == 0) {
+        if (payout == 0 && !isFreeBet[handId]) {
             _payReferrer(hand.user, hand.collateral, hand.amount);
         }
 
@@ -1232,9 +1229,18 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
         }
     }
 
-    modifier onlyRiskManager() { _requireRole(ISportsAMMV2Manager.Role.RISK_MANAGING); _; }
-    modifier onlyResolver()    { _requireRole(ISportsAMMV2Manager.Role.MARKET_RESOLVING); _; }
-    modifier onlyPauser()      { _requireRole(ISportsAMMV2Manager.Role.TICKET_PAUSER); _; }
+    modifier onlyRiskManager() {
+        _requireRole(ISportsAMMV2Manager.Role.RISK_MANAGING);
+        _;
+    }
+    modifier onlyResolver() {
+        _requireRole(ISportsAMMV2Manager.Role.MARKET_RESOLVING);
+        _;
+    }
+    modifier onlyPauser() {
+        _requireRole(ISportsAMMV2Manager.Role.TICKET_PAUSER);
+        _;
+    }
 
     /* ========== EVENTS ========== */
 
@@ -1250,7 +1256,13 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
 
     event DoubleDownRequested(uint indexed handId, uint indexed requestId, address indexed user, uint additionalAmount);
 
-    event HandSplit(uint indexed handId, uint indexed requestId, address indexed user, uint additionalAmount, bool isAceSplit);
+    event HandSplit(
+        uint indexed handId,
+        uint indexed requestId,
+        address indexed user,
+        uint additionalAmount,
+        bool isAceSplit
+    );
 
     event HandResolved(uint indexed handId, uint indexed requestId, address indexed user, HandResult result, uint payout);
 
@@ -1263,7 +1275,13 @@ contract Blackjack is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyG
     );
 
     event RiskParamsChanged(uint maxProfitUsd, uint cancelTimeout);
-    event AddressesChanged(address manager, address priceFeed, address vrfCoordinator, address freeBetsHolder, address referrals);
+    event AddressesChanged(
+        address manager,
+        address priceFeed,
+        address vrfCoordinator,
+        address freeBetsHolder,
+        address referrals
+    );
     event CollateralConfigChanged(address collateral, bytes32 currencyKey, bool supported);
     event ReferrerPaid(address indexed referrer, address indexed user, uint amount, uint betAmount, address collateral);
     event WithdrawnCollateral(address indexed collateral, address indexed recipient, uint amount);

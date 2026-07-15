@@ -1,32 +1,38 @@
 {
   "component": "USDa",
   "main_contract": "USDa",
+  "source_entry_count": 43,
   "source_file_count": 43,
-  "deployment_count": 4,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/avalonfinancexyz/USDa-audit-blocksec/blob/main/blocksec_avalon_v1.0-signed.pdf",
-    "https://github.com/avalonfinancexyz/USDa-audit-blocksec/blob/main/blocksec_avalon_v1.1-signed.pdf",
-    "https://github.com/avalonfinancexyz/USDa-audit-blocksec/blob/main/blocksec_avalon_v1.3-signed.pdf",
-    "https://github.com/avalonfinancexyz/USDa-audit-salus/blob/main/Avalon-Finance_USDA_audit_report_2024-10-18.pdf",
-    "https://github.com/avalonfinancexyz/USDa-audit-slowmist/blob/main/Avalon%20Finance%20-%20SlowMist%20Audit%20Report.pdf"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/USDa\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0b4d6da52df60d44ce7140f1044f2ad5fabd6316",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x9356086146be5158e98ad827e21b5cf944699894",
+      "address": "0x8a4ba6c340894b7b1de0f6a03f25aa6afb7f0224",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0x075df695b8e7f4361fa7f8c1426c63f11b06e326",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "mantle",
@@ -34,15 +40,9 @@
       "address": "0x2bdc204b6d192921605c66b7260cfef7be34eb2e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0x5a4435deaaad91a3d649456f324bc5a9d8b89d44",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

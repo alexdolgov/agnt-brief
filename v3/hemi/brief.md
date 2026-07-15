@@ -1,102 +1,134 @@
 # Agentic Audit Brief: Hemi
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 6 (0 matched; 6 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Hemi (`hemi`)
 - Website: [https://hemi.xyz/](https://hemi.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:58.398Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
-- Chains: bsc, ethereum, optimism
-- Contract surface: 43 unique implementations (89 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: ethereum, optimism
+- Contract surface: 46 unique implementations (46 raw deployments)
+- Coverage basis: 0/11 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $519,962.55
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Canonical Bridge. Structurally: 34 project-authored contract(s) across 3 chain(s); 4 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Hemi. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 7 functional families. Contracts are linked by 3 cross-contract reference(s). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 17 contract row(s) across ethereum, optimism. Structural roles: 9 supporting, 8 core. 13 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 17
+- Structural roles: supporting (9), core (8)
+- Contract kinds: contract (17)
+- Detected standards: erc1967proxy (12), erc20 (1), erc20permit (1), ownable (1)
+- Frameworks: openzeppelin (5), openzeppelin-upgradeable (3), solmate (3)
+- Upgradeable-pattern rows: 13
+
+## Fork Analysis
+
+0 of 15 contracts are derived from known codebases. 15 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x420000...000014`, chain 10)
+- UnnamedContract (`0x420000...000017`, chain 10)
+- UnnamedContract (`0x420000...000019`, chain 10)
+- UnnamedContract (`0x420000...00001a`, chain 10)
+- GovernanceToken (`0x420000...000042`, chain 10)
+- Proxy (`0x420000...000007`, chain 10)
+- Proxy (`0x420000...00000f`, chain 10)
+- Proxy (`0x420000...000010`, chain 10)
+- Proxy (`0x420000...000011`, chain 10)
+- Proxy (`0x420000...000012`, chain 10)
+- Proxy (`0x420000...000015`, chain 10)
+- Proxy (`0x420000...000016`, chain 10)
+- Proxy (`0x420000...000018`, chain 10)
+- Proxy (`0x420000...000020`, chain 10)
+- Proxy (`0x420000...000021`, chain 10)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 91; live-surface contracts included: 89 (79 live, 10 unknown).
-- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 17; live-surface contracts included: 17 (11 live, 6 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 15/46 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 1/33 (3.0%)
-- Deployed-live implementations: 33 of 43 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 1/33
-- Verified + Unaudited implementations: 32
+- Coverage of address-book-owned deployed-live implementations: 0/11 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 15 own, 20 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 11 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 13
+- Deployed-live implementations: 15 of 46 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/11
+- Verified + Unaudited implementations: 11
 - Verified by bytecode match: 0
-- Unverified implementations: 10
-- Unique implementations: 43
-- Raw deployments: 89
+- Unverified implementations: 4
+- Unique implementations: 46
+- Raw deployments: 46
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 2
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-10 (fresh)
 - Audit staleness (calendar age): 3 fresh, 2 aging, 0 stale, 1 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 3.0% | 2025-10 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Hemi | unknown | ethereum | n/a | [`0xeb964a...4f484d`](./contracts/ethereum-1/0xeb964a1a6fab73b8c72a0d15c7337fa4804f484d/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (32)
+### ⚠️ Verified + Unaudited (17)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AddressManager | unknown | ethereum | n/a | [`0xa5f377...9f5e43`](./contracts/ethereum-1/0xa5f37791378c55941a52b4dcb70be4d8d09f5e43/) | ⚠️ Unaudited |
-| AnchorStateRegistry | unknown | ethereum | n/a | [`0xf44007...f54677`](./contracts/ethereum-1/0xf44007eaf2fafdd8ba8d3551f23cd2b879f54677/) | ⚠️ Unaudited |
-| BinanceHemiOFT | unknown | bsc | n/a | 4 deployments: bsc [`0x5ffd0e...5afc5b`](./contracts/bsc-56/0x5ffd0eadc186af9512542d0d5e5eafc65d5afc5b/); bsc `0xb8dbff...a2c3c3`; bsc `0xd275f9...42506e`; bsc `0xfc5538...e91575` | ⚠️ Unaudited |
-| DelayedWETH | unknown | ethereum | n/a | [`0xc56273...a575a3`](./contracts/ethereum-1/0xc5627348dbc9179cfb5a24c8199635770ea575a3/) | ⚠️ Unaudited |
-| EAS | unknown | optimism | n/a | [`0x420000...000021`](./contracts/optimism-10/0x4200000000000000000000000000000000000021/) | ⚠️ Unaudited |
-| GasPriceOracle | operational_periphery | optimism | n/a | [`0x420000...00000f`](./contracts/optimism-10/0x420000000000000000000000000000000000000f/) | ⚠️ Unaudited |
-| GnosisSafeProxyFactory | registry | ethereum | n/a | 2 deployments: ethereum [`0xa6b71e...896ab2`](./contracts/ethereum-1/0xa6b71e26c5e0845f74c812102ca7114b6a896ab2/); optimism [`0xa6b71e...896ab2`](./contracts/optimism-10/0xa6b71e26c5e0845f74c812102ca7114b6a896ab2/) | ⚠️ Unaudited |
-| GovernanceToken | token | optimism | n/a | [`0x420000...000042`](./contracts/optimism-10/0x4200000000000000000000000000000000000042/) | ⚠️ Unaudited |
-| HemiLock | unknown | bsc | n/a | 4 deployments: bsc [`0x0795a3...ff1026`](./contracts/bsc-56/0x0795a3c4898d823946f953bd1234c0e7b7ff1026/); bsc `0x7070fa...fb89f9`; bsc `0x86bb2b...94046b`; bsc `0xfbe1ba...6eae8b` | ⚠️ Unaudited |
-| L1Block | unknown | optimism | n/a | [`0x420000...000015`](./contracts/optimism-10/0x4200000000000000000000000000000000000015/) | ⚠️ Unaudited |
-| L1CrossDomainMessenger | unknown | ethereum | n/a | [`0xf005df...6fb050`](./contracts/ethereum-1/0xf005dfb08377fad44588af68d0884d272a6fb050/) | ⚠️ Unaudited |
-| L1ERC721Bridge | unknown | ethereum | n/a | [`0xa44633...6bede0`](./contracts/ethereum-1/0xa446331bd28cbe0186a983a27c528f566b6bede0/) | ⚠️ Unaudited |
-| L1StandardBridge | bridge_template | ethereum | n/a | [`0x5eaa10...9f191e`](./contracts/ethereum-1/0x5eaa10f99e7e6d177ef9f74e519e319aa49f191e/) | ⚠️ Unaudited |
-| L2CrossDomainMessenger | unknown | optimism | n/a | [`0x420000...000007`](./contracts/optimism-10/0x4200000000000000000000000000000000000007/) | ⚠️ Unaudited |
-| L2OutputOracle | operational_periphery | ethereum | n/a | [`0x6daf3a...9c0d51`](./contracts/ethereum-1/0x6daf3a3497d8abdfe12915add9829f83a79c0d51/) | ⚠️ Unaudited |
-| L2StandardBridge | operational_periphery | optimism | n/a | [`0x420000...000010`](./contracts/optimism-10/0x4200000000000000000000000000000000000010/) | ⚠️ Unaudited |
-| L2ToL1MessagePasser | unknown | optimism | n/a | [`0x420000...000016`](./contracts/optimism-10/0x4200000000000000000000000000000000000016/) | ⚠️ Unaudited |
-| MIPS | unknown | ethereum | n/a | [`0x42ff66...ba9c2a`](./contracts/ethereum-1/0x42ff661af011939f699d67bd021d237ebcba9c2a/) | ⚠️ Unaudited |
-| MockDstOFT | unknown | bsc | n/a | 35 deployments: bsc [`0x04db2d...cec72c`](./contracts/bsc-56/0x04db2da16318e616d28f0da7aa59eeb12acec72c/); bsc `0x14c9bc...298fba`; bsc `0x182c58...8463a1`; bsc `0x25c304...77d608`; bsc `0x2dd586...1142a8`; bsc `0x3a82a4...9cd2f4`; bsc `0x3ea24e...fbbcad`; bsc `0x466140...53a8f3`; bsc `0x4f2acd...1bd83e`; bsc `0x4ff907...c0f538`; bsc `0x51bc60...865761`; bsc `0x656f1f...c9e4d0`; bsc `0x6e3ac5...245365`; bsc `0x760c66...4ba3b7`; bsc `0x790e5f...e36acb`; bsc `0x8e4f0e...6110bf`; bsc `0x8f1561...9c0bb3`; bsc `0x951f5d...7d2c1d`; bsc `0x9bfc21...722406`; bsc `0xa3ceec...ac4da2`; bsc `0xb908ca...0c476e`; bsc `0xbd5caa...128a66`; bsc `0xbf504a...fb3735`; bsc `0xbf7d0f...35b2e2`; bsc `0xc340d0...090657`; bsc `0xc9ffa2...a03b46`; bsc `0xd86a00...df086b`; bsc `0xdb2d0b...2c3766`; bsc `0xdbd9cf...3bd39a`; bsc `0xe002c5...9e0ed9`; bsc `0xe2a466...ba8cc8`; bsc `0xe2adb4...77f938`; bsc `0xf22873...9b7e0f`; bsc `0xf3b36c...5893e0`; bsc `0xffd74e...2dfd09` | ⚠️ Unaudited |
-| OFT | unknown | bsc | n/a | 6 deployments: bsc [`0x10061d...7b180c`](./contracts/bsc-56/0x10061d0593441ff74536158592e1be3f4c7b180c/); bsc `0x37d8c0...74d931`; bsc `0x64b5bb...609373`; bsc `0x707c24...412075`; bsc `0xa30e1a...076f30`; bsc `0xc141b6...a96515` | ⚠️ Unaudited |
-| OptimismMintableERC20Factory | unknown | ethereum | n/a | [`0x0262fe...09342c`](./contracts/ethereum-1/0x0262fedc4a98f94ddb90cef0e058644d8409342c/) | ⚠️ Unaudited |
-| OptimismMintableERC20Factory | registry | optimism | n/a | [`0x420000...000012`](./contracts/optimism-10/0x4200000000000000000000000000000000000012/) | ⚠️ Unaudited |
-| OptimismPortal | unknown | ethereum | n/a | [`0x39a000...3a4d7e`](./contracts/ethereum-1/0x39a0005415256b9863afe2d55edcf75ecc3a4d7e/) | ⚠️ Unaudited |
-| PreimageOracle | operational_periphery | ethereum | n/a | [`0x613f36...24ed20`](./contracts/ethereum-1/0x613f36be58ba712b37474f4b82484d680d24ed20/) | ⚠️ Unaudited |
-| ProtocolVersions | unknown | ethereum | n/a | [`0x13cb1b...f3ce48`](./contracts/ethereum-1/0x13cb1b6e69ec8ff6a5c8823d1e8dc78cccf3ce48/) | ⚠️ Unaudited |
-| Proxy | unknown | ethereum | n/a | [`0x5442d0...2562c3`](./contracts/ethereum-1/0x5442d0ddb33b396879d2d016a9ad09ad122562c3/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0xbe81a9...fefb30`](./contracts/ethereum-1/0xbe81a9d662422f667f634f3fc301e2e360fefb30/) | ⚠️ Unaudited |
-| ProxyAdmin | governance | optimism | n/a | [`0x420000...000018`](./contracts/optimism-10/0x4200000000000000000000000000000000000018/) | ⚠️ Unaudited |
-| SchemaRegistry | registry | optimism | n/a | [`0x420000...000020`](./contracts/optimism-10/0x4200000000000000000000000000000000000020/) | ⚠️ Unaudited |
-| SequencerFeeVault | core_logic | optimism | n/a | [`0x420000...000011`](./contracts/optimism-10/0x4200000000000000000000000000000000000011/) | ⚠️ Unaudited |
-| SuperchainConfig | unknown | ethereum | n/a | [`0x15144f...8d2ab8`](./contracts/ethereum-1/0x15144fb8621cb3c4ed3db223c173ffb58c8d2ab8/) | ⚠️ Unaudited |
-| SystemConfig | unknown | ethereum | n/a | [`0x5ae686...5303c3`](./contracts/ethereum-1/0x5ae68684d9179a8053883f1df599ea7fb35303c3/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| EAS | unknown | project_anchor | own_supporting | 1 | optimism | unit-241871 | `0x420000...000021` | ⚠️ Unaudited |
+| GasPriceOracle | operational_periphery | project_anchor | own_supporting | 1 | optimism | unit-241864 | `0x420000...00000f` | ⚠️ Unaudited |
+| GnosisSafeProxyFactory | registry | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241842 | `0xa6b71e...896ab2` | ⚠️ Unaudited |
+| GovernanceToken | token | project_anchor | own_supporting | 0 | optimism | unit-241858 | `0x420000...000042` | ⚠️ Unaudited |
+| L1Block | unknown | project_anchor | own_supporting | 1 | optimism | unit-241865 | `0x420000...000015` | ⚠️ Unaudited |
+| L1StandardBridge | bridge_template | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241861 | `0x5eaa10...9f191e` | ⚠️ Unaudited |
+| L2CrossDomainMessenger | unknown | project_anchor | own_supporting | 1 | optimism | unit-241862 | `0x420000...000007` | ⚠️ Unaudited |
+| L2OutputOracle | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241859 | `0x6daf3a...9c0d51` | ⚠️ Unaudited |
+| L2StandardBridge | operational_periphery | project_anchor | own_supporting | 1 | optimism | unit-241868 | `0x420000...000010` | ⚠️ Unaudited |
+| L2ToL1MessagePasser | unknown | project_anchor | own_supporting | 1 | optimism | unit-241863 | `0x420000...000016` | ⚠️ Unaudited |
+| MIPS | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241832 | `0x42ff66...ba9c2a` | ⚠️ Unaudited |
+| OptimismMintableERC20Factory | registry | project_anchor | own_supporting | 1 | optimism | unit-241869 | `0x420000...000012` | ⚠️ Unaudited |
+| OptimismPortal | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-241860 | `0x39a000...3a4d7e` | ⚠️ Unaudited |
+| PreimageOracle | operational_periphery | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241836 | `0x613f36...24ed20` | ⚠️ Unaudited |
+| ProxyAdmin | governance | project_anchor | own_supporting | 1 | optimism | unit-241867 | `0x420000...000018` | ⚠️ Unaudited |
+| SchemaRegistry | registry | project_anchor | own_supporting | 1 | optimism | unit-241866 | `0x420000...000020` | ⚠️ Unaudited |
+| SequencerFeeVault | core_logic | project_anchor | own_supporting | 1 | optimism | unit-241870 | `0x420000...000011` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -110,62 +142,138 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (10)
+### ❓ Unverified (29)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x04dcfe...ebb634` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x580e54...5ed9f4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7403b8...4443bc` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9865bb...493754` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x0c3497...cb67d6` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x5687ba...d1ee0b` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x963b5b...bd0a34` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd74432...4d5b30` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe38d19...b3ca10` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe55744...ef005a` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241826 | `0x0262fe...09342c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241828 | `0x04dcfe...ebb634` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241829 | `0x13cb1b...f3ce48` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241830 | `0x15144f...8d2ab8` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000006` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000007` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000010` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000011` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000012` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000014` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000015` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000016` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x420000...000017` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241834 | `0x5442d0...2562c3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241835 | `0x5ae686...5303c3` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x7007dd...0b8f12` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241837 | `0x8434dc...25ea69` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241839 | `0xa44633...6bede0` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241841 | `0xa5f377...9f5e43` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241846 | `0xbe81a9...fefb30` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241848 | `0xc56273...a575a3` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241850 | `0xd9db27...709552` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xec9fa5...b7f215` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241851 | `0xf005df...6fb050` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-241852 | `0xf44007...f54677` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241854 | `0x420000...000014` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241855 | `0x420000...000017` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241856 | `0x420000...000019` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-241857 | `0x420000...00001a` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Audit_Report_HEMI-PRO_FINAL_22.pdf](https://github.com/hemilabs/audit-reports/blob/master/Bitcoin_Tunnel/Audit_Report_HEMI-PRO_FINAL_22.pdf) | HEMI-PRO | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
-| [Quantstamp - BTC Tunnel - FinalReport (1).pdf](https://github.com/hemilabs/audit-reports/blob/master/Bitcoin_Tunnel/Quantstamp%20-%20BTC%20Tunnel%20-%20FinalReport%20(1).pdf) | Quantstamp | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
-| [Audit_Report_HEMI-TOK_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/Audit_Report_HEMI-TOK_FINAL_21.pdf) | unknown | Audit | 2025-10 | fresh | Direct | contract_name | 1 | n/a |
-| [HemiToken - Final Report.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/HemiToken%20-%20Final%20Report.pdf) | unknown | Audit | 2025-04 | aging | Direct | contract_name | 1 | n/a |
-| [Audit_Report_HEMI-VOT_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/veHEMI/Audit_Report_HEMI-VOT_FINAL_21.pdf) | unknown | Audit | 2025-10 | fresh | Direct | n/a | 0 | n/a |
-| [audit-reports (GitHub directory)](https://github.com/hemilabs/audit-reports) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Audit_Report_HEMI-PRO_FINAL_22.pdf](https://github.com/hemilabs/audit-reports/blob/master/Bitcoin_Tunnel/Audit_Report_HEMI-PRO_FINAL_22.pdf) | HEMI-PRO | Audit | 2025-10 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 7 | high |
+| [Quantstamp - BTC Tunnel - FinalReport (1).pdf](https://github.com/hemilabs/audit-reports/blob/master/Bitcoin_Tunnel/Quantstamp%20-%20BTC%20Tunnel%20-%20FinalReport%20(1).pdf) | Quantstamp | Audit | 2025-01 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 13 | high |
+| [Audit_Report_HEMI-TOK_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/Audit_Report_HEMI-TOK_FINAL_21.pdf) | unknown | Audit | 2025-10 | fresh | Direct | n/a | no match | 0 | 0 | 0 | 1 | n/a |
+| [HemiToken - Final Report.pdf](https://github.com/hemilabs/audit-reports/blob/master/Hemi_Token/HemiToken%20-%20Final%20Report.pdf) | unknown | Audit | 2025-04 | aging | Direct | n/a | no match | 0 | 0 | 0 | 1 | n/a |
+| [Audit_Report_HEMI-VOT_FINAL_21.pdf](https://github.com/hemilabs/audit-reports/blob/master/veHEMI/Audit_Report_HEMI-VOT_FINAL_21.pdf) | unknown | Audit | 2025-10 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [audit-reports (GitHub directory)](https://github.com/hemilabs/audit-reports) | unknown | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [3137] Audit_Report_HEMI-PRO_FINAL_22.pdf — no match: Extracted contracts from scope section and findings. Audit date from document control: v2.2 published Oct 9, 2025.
+- [3138] Quantstamp - BTC Tunnel - FinalReport (1).pdf — no match: Scope section explicitly lists all files under 'Files Included'. Audit date from changelog: '2025-01-21 - Final report'.
+- [3139] Audit_Report_HEMI-TOK_FINAL_21.pdf — no match: No reason recorded
+- [3140] HemiToken - Final Report.pdf — no match: No reason recorded
+- [3141] Audit_Report_HEMI-VOT_FINAL_21.pdf — no match: Scope section lists repository hemilabs/veHEMI with commit hash; contracts VeHemi and VeHemiVoteDelegation are explicitly mentioned in System Overview and findings.
+- [14613] audit-reports (GitHub directory) — no match: The provided text is a GitHub repository README page listing audit report folders (Bitcoin_Tunnel, Hemi_Token, veHEMI) but does not contain the actual audit report content with contract names or scope details.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Audit_Report_HEMI-PRO_FINAL_22.pdf | SimpleBitcoinVault | unmatched — not counted | — | listed in scope and findings | no |
+| Audit_Report_HEMI-PRO_FINAL_22.pdf | SimpleBitcoinVaultFactory | unmatched — not counted | — | mentioned in finding RES-HEMI-PRO03 | no |
+| Audit_Report_HEMI-PRO_FINAL_22.pdf | SimpleBitcoinVaultUTXOLogicHelper | unmatched — not counted | — | mentioned in finding RES-HEMI-PRO04 | no |
+| Audit_Report_HEMI-PRO_FINAL_22.pdf | BTCToken | unmatched — not counted | — | mentioned in finding RES-HEMI-PRO05 | no |
+| Audit_Report_HEMI-PRO_FINAL_22.pdf | GlobalConfig | unmatched — not counted | — | mentioned in findings RES-HEMI-PRO06 and RES-HEMI-PRO07 | no |
+| Audit_Report_HEMI-PRO_FINAL_22.pdf | BitcoinTunnelManager | unmatched — not counted | — | mentioned in finding RES-HEMI-PRO08 | no |
+| Audit_Report_HEMI-PRO_FINAL_22.pdf | IVaultFactory | unmatched — not counted | — | mentioned in finding RES-HEMI-PRO03 | no |
+| Quantstamp - BTC Tunnel - FinalReport (1).pdf | AddressWhitelist | unmatched — not counted | — | listed in scope | no |
+| Quantstamp - BTC Tunnel - FinalReport (1).pdf | GlobalConfig | unmatched — not counted | — | listed in scope | no |
+| Quantstamp - BTC Tunnel - FinalReport (1).pdf | SimpleBitcoinVault | unmatched — not counted | — | listed in scope | no |
+| Quantstamp - BTC Tunnel - FinalReport (1).pdf | SimpleBitcoinVaultFactory | unmatched — not counted | — | listed in scope | no |
+| Quantstamp - BTC Tunnel - FinalReport (1).pdf | SimpleBitcoinVaultFactoryHelper | unmatched — not counted | — | listed in scope | no |
+| Quantstamp - BTC Tunnel - FinalReport (1).pdf | SimpleBitcoinVaultState | unmatched — not counted | — | listed in scope | no |
+| Quantstamp - BTC Tunnel - FinalReport (1).pdf | SimpleBitcoinVaultStateFactory | unmatched — not counted | — | listed in scope | no |
+| Quantstamp - BTC Tunnel - FinalReport (1).pdf | SimpleBitcoinVaultStructs | unmatched — not counted | — | listed in scope | no |
+| Quantstamp - BTC Tunnel - FinalReport (1).pdf | SimpleBitcoinVaultUTXOLogicHelper | unmatched — not counted | — | listed in scope | no |
+| Quantstamp - BTC Tunnel - FinalReport (1).pdf | SimpleGlobalVaultConfig | unmatched — not counted | — | listed in scope | no |
+| Quantstamp - BTC Tunnel - FinalReport (1).pdf | CommonStructs | unmatched — not counted | — | listed in scope | no |
+| Quantstamp - BTC Tunnel - FinalReport (1).pdf | BitcoinTunnelManager | unmatched — not counted | — | listed in scope | no |
+| Quantstamp - BTC Tunnel - FinalReport (1).pdf | BTCToken | unmatched — not counted | — | listed in scope | no |
+| Audit_Report_HEMI-TOK_FINAL_21.pdf | Hemi | unmatched — not counted | — | — | no |
+| HemiToken - Final Report.pdf | Hemi | unmatched — not counted | — | — | no |
+| Audit_Report_HEMI-VOT_FINAL_21.pdf | VeHemi | unmatched — not counted | — | System Overview mentions VeHemi.sol contract; findings reference src/VeHemi.sol | no |
+| Audit_Report_HEMI-VOT_FINAL_21.pdf | VeHemiVoteDelegation | unmatched — not counted | — | System Overview mentions VeHemiVoteDelegation contract; findings reference src/VeHemiVoteDelegation.sol | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| optimism | `0x420000...000021` | EAS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x420000...00000f` | GasPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x420000...000042` | GovernanceToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x420000...000015` | L1Block | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x420000...000007` | L2CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x420000...000010` | L2StandardBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x420000...000016` | L2ToL1MessagePasser | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x420000...000012` | OptimismMintableERC20Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x420000...000020` | SchemaRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | `0x420000...000011` | SequencerFeeVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 16 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 43 |
+| standard_library | 1 |
+| needs_review | 29 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 6
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: contract_name=2
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 24 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=3, low=1
+- Match method counts: n/a
 
 Zero-match audit list:
 
 - [3137] Audit_Report_HEMI-PRO_FINAL_22.pdf
 - [3138] Quantstamp - BTC Tunnel - FinalReport (1).pdf
+- [3139] Audit_Report_HEMI-TOK_FINAL_21.pdf
+- [3140] HemiToken - Final Report.pdf
 - [3141] Audit_Report_HEMI-VOT_FINAL_21.pdf
 - [14613] audit-reports (GitHub directory)
 

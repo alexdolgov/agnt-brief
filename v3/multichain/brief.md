@@ -1,77 +1,106 @@
 # Agentic Audit Brief: Multichain
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 16 (0 matched; 16 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Multichain (`multichain`)
 - Website: [https://multichain.org/](https://multichain.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:31.908Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
-- Chains: ethereum
-- Contract surface: 7 unique implementations (8 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: avalanche, ethereum
+- Contract surface: 5 unique implementations (5 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $36,348,243.04
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Bridge. Structurally: 10 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 1 ERC721 NFT; built on openzeppelin.
+No contract logic was present for Multichain in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 5 contracts are derived from known codebases. 5 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x0a992d...738f81`, chain 1)
+- UnnamedContract (`0x8efd01...604374`, chain 1)
+- UnnamedContract (`0xbd3fa8...af3155`, chain 1)
+- UnnamedContract (`0x6b2553...de6982`, chain 43114)
+- UnnamedContract (`0x818635...c29880`, chain 43114)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 10; live-surface contracts included: 8 (8 live, 0 unknown).
-- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 5/11 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 5/7 (71.4%)
-- Deployed-live implementations: 7 of 7 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 5/7
-- Verified + Unaudited implementations: 2
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 5 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 5 of 5 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 7
-- Raw deployments: 8
+- Unverified implementations: 5
+- Unique implementations: 5
+- Raw deployments: 5
 - Audits discovered: 16 (16 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 3
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-03 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 16 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 5 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| PeckShield | Tier 2 | 5 | 71.4% | 2022-03 |
-| Dedaub | Tier 2 | 2 | 28.6% | 2022-03 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (5)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AnyswapV5ERC20 | token | ethereum | n/a | [`0x9fb9a3...8764e3`](./contracts/ethereum-1/0x9fb9a33956351cf4fa040f65a13b835a3c8764e3/) | ✅ Audited |
-| AnyswapV6ERC20 | token | ethereum | n/a | [`0x0615db...6748b1`](./contracts/ethereum-1/0x0615dbba33fe61a31c7ed131bda6655ed76748b1/) | ✅ Audited |
-| AnyswapV6Router | adapter | ethereum | n/a | [`0xba8da9...910705`](./contracts/ethereum-1/0xba8da9dcf11b50b03fd5284f164ef5cdef910705/) | ✅ Audited |
-| MultichainToken | token | ethereum | n/a | [`0x65ef70...492df4`](./contracts/ethereum-1/0x65ef703f5594d2573eb71aaf55bc0cb548492df4/) | ✅ Audited |
-| MultiDao | unknown | ethereum | n/a | [`0x172280...90d558`](./contracts/ethereum-1/0x1722800c0f1bfdf916ef948ef7790a861e90d558/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AnyCallProxy | unknown | ethereum | n/a | [`0x37414a...490a89`](./contracts/ethereum-1/0x37414a8662bc1d25be3ee51fb27c2686e2490a89/) | ⚠️ Unaudited |
-| AnyswapV4Router | adapter | ethereum | n/a | 2 deployments: ethereum [`0x6b7a87...e71522`](./contracts/ethereum-1/0x6b7a87899490ece95443e979ca9485cbe7e71522/); ethereum `0x765277...b39c61` | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,32 +114,136 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (5)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389575 | `0x0a992d...738f81` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389577 | `0x8efd01...604374` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-389579 | `0xbd3fa8...af3155` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-389582 | `0x6b2553...de6982` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-389583 | `0x818635...c29880` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [blocksec_audit_multichain_routerv7_v1.0-signed.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/BlockSec/blocksec_audit_multichain_routerv7_v1.0-signed.pdf) | BlockSec | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
-| [blocksec_audit_multichain_v1.0-signed.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/BlockSec/blocksec_audit_multichain_v1.0-signed.pdf) | BlockSec | Audit | 2022-04 | stale | Direct | n/a | 0 | n/a |
-| [CertiK_Public_Audit_Report_Multichain_Aptos_Router.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/CertiK/CertiK_Public_Audit_Report_Multichain_Aptos_Router.pdf) | CertiK | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
-| [CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/CertiK/CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf) | CertiK | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
-| [Coinspect - Security Assessment - Multichain Stellar - V230330.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/Coinspect/Coinspect%20-%20Security%20Assessment%20-%20Multichain%20Stellar%20-%20V230330.pdf) | Coinspect | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
-| [Multichain Contract V6 Audit Report by Dedaub.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/DEDAUB/Multichain%20Contract%20V6%20Audit%20Report%20by%20Dedaub.pdf) | Dedaub | Audit | 2022-03 | stale | Direct | contract_name | 2 | n/a |
-| [PeckShield-Audit-Report-MultiChainV6-v1.0.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/PeckShield/PeckShield-Audit-Report-MultiChainV6-v1.0.pdf) | PeckShield | Audit | 2022-03 | stale | Direct | contract_name | 4 | n/a |
-| [AnySwap CrossChain-Bridge Security Audit Report.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/SlowMist/AnySwap%20CrossChain-Bridge%20Security%20Audit%20Report.pdf) | yAudit | Audit | 2020-08 | stale | Direct | n/a | 0 | n/a |
-| [AnySwap 跨链桥白盒安全审计报告.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/SlowMist/AnySwap%20%E8%B7%A8%E9%93%BE%E6%A1%A5%E7%99%BD%E7%9B%92%E5%AE%89%E5%85%A8%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A.pdf) | SlowMist | Audit | 2020-08 | stale | Direct | n/a | 0 | n/a |
-| [Anyswap Smart Contract Security Audit.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/SlowMist/Anyswap%20Smart%20Contract%20Security%20Audit.pdf) | yAudit | Audit | 2020-07 | stale | Direct | n/a | 0 | n/a |
-| [SlowMist Audit Report - AnySwap AnyCall App.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/SlowMist/SlowMist%20Audit%20Report%20-%20AnySwap%20AnyCall%20App.pdf) | SlowMist | Audit | 2022-09 | stale | Direct | n/a | 0 | n/a |
-| [智能合约审计报告DApp - Anyswap.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/SlowMist/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8ADApp%20-%20Anyswap.pdf) | SlowMist | Audit | 2020-07 | stale | Direct | n/a | 0 | n/a |
-| [AnySwap Threshold-DSA Final Report Edited.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/TrailOfBits/AnySwap%20Threshold-DSA%20Final%20Report%20Edited.pdf) | Trail of Bits | Audit | 2022-02 | stale | Direct | n/a | 0 | n/a |
-| [Anyswap-CrossChain-Bridge-TrailofBits-Audit-Final Report.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/TrailOfBits/Anyswap-CrossChain-Bridge-TrailofBits-Audit-Final%20Report.pdf) | Trail of Bits | Audit | 2021-07 | stale | Direct | n/a | 0 | n/a |
-| [Verichains_Public_Audit_Report_Multichain_Solana_Router_v1_1.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/Verichain/Verichains_Public_Audit_Report_Multichain_Solana_Router_v1_1.pdf) | Verichains | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
-| [PeckShield-Audit-Report-Travala-AnyswapV5ERC20-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Travala-AnyswapV5ERC20-v1.0.pdf) | PeckShield | Audit | 2021-08 | stale | Direct | contract_name | 1 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [blocksec_audit_multichain_routerv7_v1.0-signed.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/BlockSec/blocksec_audit_multichain_routerv7_v1.0-signed.pdf) | BlockSec | Audit | 2022-08 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+| [blocksec_audit_multichain_v1.0-signed.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/BlockSec/blocksec_audit_multichain_v1.0-signed.pdf) | BlockSec | Audit | 2022-04 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [CertiK_Public_Audit_Report_Multichain_Aptos_Router.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/CertiK/CertiK_Public_Audit_Report_Multichain_Aptos_Router.pdf) | CertiK | Audit | 2022-11 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+| [CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/CertiK/CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf) | CertiK | Audit | 2022-11 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 19 | high |
+| [Coinspect - Security Assessment - Multichain Stellar - V230330.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/Coinspect/Coinspect%20-%20Security%20Assessment%20-%20Multichain%20Stellar%20-%20V230330.pdf) | Coinspect | Audit | 2023-03 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 14 | high |
+| [Multichain Contract V6 Audit Report by Dedaub.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/DEDAUB/Multichain%20Contract%20V6%20Audit%20Report%20by%20Dedaub.pdf) | Dedaub | Audit | 2022-03 | stale | Direct | n/a | no match | 0 | 0 | 0 | 3 | n/a |
+| [PeckShield-Audit-Report-MultiChainV6-v1.0.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/PeckShield/PeckShield-Audit-Report-MultiChainV6-v1.0.pdf) | PeckShield | Audit | 2022-03 | stale | Direct | n/a | no match | 0 | 0 | 0 | 6 | n/a |
+| [AnySwap CrossChain-Bridge Security Audit Report.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/SlowMist/AnySwap%20CrossChain-Bridge%20Security%20Audit%20Report.pdf) | yAudit | Audit | 2020-08 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | medium |
+| [AnySwap 跨链桥白盒安全审计报告.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/SlowMist/AnySwap%20%E8%B7%A8%E9%93%BE%E6%A1%A5%E7%99%BD%E7%9B%92%E5%AE%89%E5%85%A8%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8A.pdf) | SlowMist | Audit | 2020-08 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | medium |
+| [Anyswap Smart Contract Security Audit.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/SlowMist/Anyswap%20Smart%20Contract%20Security%20Audit.pdf) | yAudit | Audit | 2020-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [SlowMist Audit Report - AnySwap AnyCall App.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/SlowMist/SlowMist%20Audit%20Report%20-%20AnySwap%20AnyCall%20App.pdf) | SlowMist | Audit | 2022-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [智能合约审计报告DApp - Anyswap.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/SlowMist/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E5%AE%A1%E8%AE%A1%E6%8A%A5%E5%91%8ADApp%20-%20Anyswap.pdf) | SlowMist | Audit | 2020-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [AnySwap Threshold-DSA Final Report Edited.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/TrailOfBits/AnySwap%20Threshold-DSA%20Final%20Report%20Edited.pdf) | Trail of Bits | Audit | 2022-02 | stale | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [Anyswap-CrossChain-Bridge-TrailofBits-Audit-Final Report.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/TrailOfBits/Anyswap-CrossChain-Bridge-TrailofBits-Audit-Final%20Report.pdf) | Trail of Bits | Audit | 2021-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+| [Verichains_Public_Audit_Report_Multichain_Solana_Router_v1_1.pdf](https://github.com/anyswap/Anyswap-Audit/blob/master/Verichain/Verichains_Public_Audit_Report_Multichain_Solana_Router_v1_1.pdf) | Verichains | Audit | 2022-10 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+| [PeckShield-Audit-Report-Travala-AnyswapV5ERC20-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Travala-AnyswapV5ERC20-v1.0.pdf) | PeckShield | Audit | 2021-08 | stale | Direct | n/a | no match | 0 | 0 | 0 | 1 | n/a |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [4569] blocksec_audit_multichain_routerv7_v1.0-signed.pdf — no match: Scope explicitly limited to contracts/access and contracts/router folders. MultichainV7Router is the main contract; SushiSwapProxy and CurveAaveProxy are mentioned in findings as part of the audited codebase.
+- [4570] blocksec_audit_multichain_v1.0-signed.pdf — no match: The report explicitly lists 'Multichain veMULTI Contracts' as target, with two main contracts: ve (VotingEscrow) and VEReward. The date is from the cover page.
+- [4571] CertiK_Public_Audit_Report_Multichain_Aptos_Router.pdf — no match: Three files audited: USDC.move, Pool.move, Router.move. Audit date from cover page.
+- [4572] CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf — no match: Extracted 19 file names from the audit scope table. The audit date is explicitly stated as 'Nov 30th, 2022' in the header and summary.
+- [4573] Coinspect - Security Assessment - Multichain Stellar - V230330.pdf — no match: Scope section lists 14 source files in tokens/stellar directory with sha256 hashes. Audit date is March 2023, interpreted as end of month.
+- [4574] Multichain Contract V6 Audit Report by Dedaub.pdf — no match: No reason recorded
+- [4575] PeckShield-Audit-Report-MultiChainV6-v1.0.pdf — no match: No reason recorded
+- [4576] AnySwap CrossChain-Bridge Security Audit Report.pdf — no match: The audit report is for the AnySwap CrossChain-Bridge project, which is a Go-based cross-chain bridge. The scope includes the entire codebase except the dcrm module. No specific smart contract names are listed; the project is referred to as 'CrossChain-Bridge'.
+- [4577] AnySwap 跨链桥白盒安全审计报告.pdf — no match: The audit report is for the AnySwap CrossChain-Bridge project, which is a Go-based cross-chain bridge. The scope explicitly excludes the dcrm module. No specific smart contract names are listed; the entire codebase is the target. The audit date is the start date mentioned in the report.
+- [4578] Anyswap Smart Contract Security Audit.pdf — no match: Audit report for Anyswap project. Scope includes four contracts: AnyswapToken.sol, Distribute.sol, uniswap_factory.vy, uniswap_exchange.vy. Audit date is July 20, 2020.
+- [4579] SlowMist Audit Report - AnySwap AnyCall App.pdf — no match: Contracts listed in audit scope and vulnerability sections. Audit date from audit result table: 2022.09.16 - 2022.09.19, using end date.
+- [4580] 智能合约审计报告DApp - Anyswap.pdf — no match: Audit report for Anyswap system. Scope includes AnyswapToken, Distribute, uniswap_factory, and uniswap_exchange contracts. Audit date found on cover page and in summary.
+- [4581] AnySwap Threshold-DSA Final Report Edited.pdf — no match: The report is for a Go-based threshold signature scheme, not smart contracts. No Solidity contracts or blockchain-specific contracts are mentioned. The audit date is from the cover page: February 22, 2022.
+- [4582] Anyswap-CrossChain-Bridge-TrailofBits-Audit-Final Report.pdf — no match: The report covers CrossChain-Bridge (primary), CrossChain-Router (best-effort), and Anyswap MPC Node (initially in scope but excluded; findings still documented).
+- [4583] Verichains_Public_Audit_Report_Multichain_Solana_Router_v1_1.pdf — no match: Only one file (router/src/lib.rs) is explicitly listed in scope. No individual contract names are extracted from the file path; the file itself is the scope item.
+- [15194] PeckShield-Audit-Report-Travala-AnyswapV5ERC20-v1.0.pdf — no match: No reason recorded
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| blocksec_audit_multichain_routerv7_v1.0-signed.pdf | MultichainV7Router | unmatched — not counted | — | mentioned in scope as part of contracts/router folder | no |
+| blocksec_audit_multichain_routerv7_v1.0-signed.pdf | SushiSwapProxy | unmatched — not counted | — | mentioned in findings as a contract with retrySwapinAndExec function | no |
+| blocksec_audit_multichain_routerv7_v1.0-signed.pdf | CurveAaveProxy | unmatched — not counted | — | mentioned in findings as a contract with retrySwapinAndExec function | no |
+| blocksec_audit_multichain_v1.0-signed.pdf | ve | unmatched — not counted | — | Listed in scope as target contract | no |
+| blocksec_audit_multichain_v1.0-signed.pdf | VEReward | unmatched — not counted | — | Listed in scope as target contract | no |
+| CertiK_Public_Audit_Report_Multichain_Aptos_Router.pdf | USDC | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Aptos_Router.pdf | Pool | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Aptos_Router.pdf | Router | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | address.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | bridge.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | cardanoCmd.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | verifytx.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | init.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | buildtx.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | sendtx.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | aggregate.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | instance.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | key.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | register.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | rpcClient.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | signtx.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | type.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | utils.go | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | getStubChainID | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | queryUtxos | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | scan | unmatched — not counted | — | listed in audit scope table | no |
+| CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf | sendTransaction | unmatched — not counted | — | listed in audit scope table | no |
+| Coinspect - Security Assessment - Multichain Stellar - V230330.pdf | bridge.go | unmatched — not counted | — | listed in scope with sha256 hash | no |
+| Coinspect - Security Assessment - Multichain Stellar - V230330.pdf | buildtx.go | unmatched — not counted | — | listed in scope with sha256 hash | no |
+| Coinspect - Security Assessment - Multichain Stellar - V230330.pdf | register.go | unmatched — not counted | — | listed in scope with sha256 hash | no |
+| Coinspect - Security Assessment - Multichain Stellar - V230330.pdf | sendtx.go | unmatched — not counted | — | listed in scope with sha256 hash | no |
+| Coinspect - Security Assessment - Multichain Stellar - V230330.pdf | signtx.go | unmatched — not counted | — | listed in scope with sha256 hash | no |
+| Coinspect - Security Assessment - Multichain Stellar - V230330.pdf | verifytx.go | unmatched — not counted | — | listed in scope with sha256 hash | no |
+| Coinspect - Security Assessment - Multichain Stellar - V230330.pdf | address.go | unmatched — not counted | — | listed in scope with sha256 hash | no |
+| Coinspect - Security Assessment - Multichain Stellar - V230330.pdf | init.go | unmatched — not counted | — | listed in scope with sha256 hash | no |
+| Coinspect - Security Assessment - Multichain Stellar - V230330.pdf | main.go (sendPaymentTx) | unmatched — not counted | — | listed in scope with sha256 hash | no |
+| Coinspect - Security Assessment - Multichain Stellar - V230330.pdf | main.go (publicKeyToAddress) | unmatched — not counted | — | listed in scope with sha256 hash | no |
+| Coinspect - Security Assessment - Multichain Stellar - V230330.pdf | main.go (addressToPublickey) | unmatched — not counted | — | listed in scope with sha256 hash | no |
+| Coinspect - Security Assessment - Multichain Stellar - V230330.pdf | main.go (sendTrustLineTx) | unmatched — not counted | — | listed in scope with sha256 hash | no |
+| Coinspect - Security Assessment - Multichain Stellar - V230330.pdf | main.go (buildSwapMemo) | unmatched — not counted | — | listed in scope with sha256 hash | no |
+| Coinspect - Security Assessment - Multichain Stellar - V230330.pdf | main.go (getStubChainID) | unmatched — not counted | — | listed in scope with sha256 hash | no |
+| Multichain Contract V6 Audit Report by Dedaub.pdf | AnyswapV4CallProxy | unmatched — not counted | — | — | no |
+| Multichain Contract V6 Audit Report by Dedaub.pdf | AnyswapV6ERC20 | unmatched — not counted | — | — | no |
+| Multichain Contract V6 Audit Report by Dedaub.pdf | AnyswapV6Router | unmatched — not counted | — | — | no |
+| PeckShield-Audit-Report-MultiChainV6-v1.0.pdf | AnyswapV4CallProxy | unmatched — not counted | — | — | no |
+| PeckShield-Audit-Report-MultiChainV6-v1.0.pdf | AnyswapV6ERC20 | unmatched — not counted | — | — | no |
+| PeckShield-Audit-Report-MultiChainV6-v1.0.pdf | AnyswapV6Router | unmatched — not counted | — | — | no |
+| PeckShield-Audit-Report-MultiChainV6-v1.0.pdf | MultiDAO | unmatched — not counted | — | — | no |
+| PeckShield-Audit-Report-MultiChainV6-v1.0.pdf | MultichainToken | unmatched — not counted | — | — | no |
+| PeckShield-Audit-Report-MultiChainV6-v1.0.pdf | SwapTokens | unmatched — not counted | — | — | no |
+| AnySwap CrossChain-Bridge Security Audit Report.pdf | CrossChain-Bridge | unmatched — not counted | — | Audit version code repository | no |
+| AnySwap 跨链桥白盒安全审计报告.pdf | CrossChain-Bridge | unmatched — not counted | — | listed in scope as the audited project | no |
+| Anyswap Smart Contract Security Audit.pdf | AnyswapToken | unmatched — not counted | — | listed in project structure and code overview | no |
+| Anyswap Smart Contract Security Audit.pdf | Distribute | unmatched — not counted | — | listed in project structure and code overview | no |
+| Anyswap Smart Contract Security Audit.pdf | uniswap_factory | unmatched — not counted | — | listed in project structure and code overview | no |
+| Anyswap Smart Contract Security Audit.pdf | uniswap_exchange | unmatched — not counted | — | listed in project structure and code overview | no |
+| SlowMist Audit Report - AnySwap AnyCall App.pdf | ERC721Gateway_LILO | unmatched — not counted | — | listed in scope and vulnerability section | no |
+| SlowMist Audit Report - AnySwap AnyCall App.pdf | ERC721Gateway_MintBurn | unmatched — not counted | — | listed in scope and vulnerability section | no |
+| SlowMist Audit Report - AnySwap AnyCall App.pdf | ERC721Gateway | unmatched — not counted | — | listed in scope and vulnerability section | no |
+| SlowMist Audit Report - AnySwap AnyCall App.pdf | AnyCallApp | unmatched — not counted | — | listed in scope and vulnerability section | no |
+| SlowMist Audit Report - AnySwap AnyCall App.pdf | Administrable | unmatched — not counted | — | listed in scope and vulnerability section | no |
+| 智能合约审计报告DApp - Anyswap.pdf | AnyswapToken | unmatched — not counted | — | listed in scope section 3.1 and project structure | no |
+| 智能合约审计报告DApp - Anyswap.pdf | Distribute | unmatched — not counted | — | listed in scope section 3.1 and project structure | no |
+| 智能合约审计报告DApp - Anyswap.pdf | uniswap_factory | unmatched — not counted | — | listed in scope section 3.1 and project structure | no |
+| 智能合约审计报告DApp - Anyswap.pdf | uniswap_exchange | unmatched — not counted | — | listed in scope section 3.1 and project structure | no |
+| Anyswap-CrossChain-Bridge-TrailofBits-Audit-Final Report.pdf | CrossChain-Bridge | unmatched — not counted | — | listed in scope as primary target | no |
+| Anyswap-CrossChain-Bridge-TrailofBits-Audit-Final Report.pdf | CrossChain-Router | unmatched — not counted | — | listed in scope as best-effort review | no |
+| Anyswap-CrossChain-Bridge-TrailofBits-Audit-Final Report.pdf | Anyswap MPC Node | unmatched — not counted | — | initially considered in scope but later excluded; findings documented | no |
+| Verichains_Public_Audit_Report_Multichain_Solana_Router_v1_1.pdf | router/src/lib.rs | unmatched — not counted | — | listed in scope table with SHA256 hash | no |
+| PeckShield-Audit-Report-Travala-AnyswapV5ERC20-v1.0.pdf | AnyswapV5ERC20 | unmatched — not counted | — | — | no |
 
 ## Coverage Gaps
 
@@ -125,16 +258,18 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 7 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 13
+- Audits with zero matched contracts: 16
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: contract_name=7
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 70 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=10, low=1, medium=2
+- Match method counts: n/a
 
 Zero-match audit list:
 
@@ -143,6 +278,8 @@ Zero-match audit list:
 - [4571] CertiK_Public_Audit_Report_Multichain_Aptos_Router.pdf
 - [4572] CertiK_Public_Audit_Report_Multichain_Cardano_Router.pdf
 - [4573] Coinspect - Security Assessment - Multichain Stellar - V230330.pdf
+- [4574] Multichain Contract V6 Audit Report by Dedaub.pdf
+- [4575] PeckShield-Audit-Report-MultiChainV6-v1.0.pdf
 - [4576] AnySwap CrossChain-Bridge Security Audit Report.pdf
 - [4577] AnySwap 跨链桥白盒安全审计报告.pdf
 - [4578] Anyswap Smart Contract Security Audit.pdf
@@ -151,5 +288,6 @@ Zero-match audit list:
 - [4581] AnySwap Threshold-DSA Final Report Edited.pdf
 - [4582] Anyswap-CrossChain-Bridge-TrailofBits-Audit-Final Report.pdf
 - [4583] Verichains_Public_Audit_Report_Multichain_Solana_Router_v1_1.pdf
+- [15194] PeckShield-Audit-Report-Travala-AnyswapV5ERC20-v1.0.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

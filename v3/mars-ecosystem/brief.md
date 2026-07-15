@@ -1,50 +1,97 @@
 # Agentic Audit Brief: Mars Ecosystem
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 2 (0 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Mars Ecosystem (`mars-ecosystem`)
 - Website: [https://marsecosystem.com/home](https://marsecosystem.com/home)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:22.055Z
-- Pipeline run: v2-2026-07-02-1ba3fd
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: bsc
-- Contract surface: 14 unique implementations (14 raw deployments)
+- Contract surface: 15 unique implementations (16 raw deployments)
+- Coverage basis: 0/10 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $233,545.47
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-CDP. Structurally: 14 project-authored contract(s) across 1 chain(s); 6 ERC20 tokens; role-gated via AccessControl; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Mars Ecosystem. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Its contracts share 2 common project-authored base contract(s) (coreref, daotoken). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 11 contract row(s) across bsc. Structural roles: 9 core, 1 supporting, 1 unclassified. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 11
+- Structural roles: core (9), supporting (1), unclassified (1)
+- Contract kinds: contract (10), abstract (1)
+- Detected standards: pausable (6), erc20 (4), accesscontrol (1)
+- Frameworks: openzeppelin (10)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 11 contracts are derived from known codebases. 11 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0xde03ed...89ba6b`, chain 56)
+- AirDrop (`0x01d152...790a25`, chain 56)
+- Core (`0x00789c...fca2a7`, chain 56)
+- IMO (`0x243ddd...9aba75`, chain 56)
+- LiquidityMiningMasterBNB (`0x48c425...7cabe3`, chain 56)
+- MarsStake (`0x3b550b...36583b`, chain 56)
+- MarsSwapFactory (`0x6f1248...81f3be`, chain 56)
+- MarsSwapRouter (`0xb68825...66e72d`, chain 56)
+- Timelock (`0xc35a8b...ea6cbc`, chain 56)
+- VestingMaster (`0x381fac...39c3db`, chain 56)
+- XMSToken (`0x7859b0...81b576`, chain 56)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 14; live-surface contracts included: 14 (14 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 11; live-surface contracts included: 11 (10 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 11/11 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/14 (0.0%)
-- Deployed-live implementations: 14 of 14 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/14
-- Verified + Unaudited implementations: 14
+- Coverage of address-book-owned deployed-live implementations: 0/10 (0.0%)
+- Coverage assessment: partial (medium confidence) — Coverage is calculated only over confirmed own address-book implementations; review inventory is reported separately and included in the conservative percentage where live and verified.
+- Address-book implementation classification: 11 own, 0 exact-address-book context/dependencies excluded, 1 exact-address-book entries needing review
+- Outside the address book: 3 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 11 of 15 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/10
+- Verified + Unaudited implementations: 10
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 14
-- Raw deployments: 14
+- Unverified implementations: 1
+- Unique implementations: 15
+- Raw deployments: 16
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/marsecosystem/information))
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2021-08 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
@@ -60,22 +107,22 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 ### ⚠️ Verified + Unaudited (14)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AirDrop | unknown | bsc | n/a | [`0x01d152...790a25`](./contracts/bsc-56/0x01d152ff991e76b6cb310387c07cafdfda790a25/) | ⚠️ Unaudited |
-| Core | unknown | bsc | n/a | [`0x00789c...fca2a7`](./contracts/bsc-56/0x00789cfb69499c65ac9a3a68fb4917c9b4fca2a7/) | ⚠️ Unaudited |
-| IMO | unknown | bsc | n/a | [`0x243ddd...9aba75`](./contracts/bsc-56/0x243ddd2e42ceb93349e726e2367edec6339aba75/) | ⚠️ Unaudited |
-| LiquidityMiningMaster | unknown | bsc | n/a | [`0x18878c...7c80ed`](./contracts/bsc-56/0x18878ca9b1cd1862c2cc357a6cf7a0ec857c80ed/) | ⚠️ Unaudited |
-| LiquidityMiningMasterBNB | unknown | bsc | n/a | [`0x48c425...7cabe3`](./contracts/bsc-56/0x48c42579d98aa768cde893f8214371ed607cabe3/) | ⚠️ Unaudited |
-| MarsFarmV2 | unknown | bsc | n/a | [`0x376289...e310e9`](./contracts/bsc-56/0x3762899a888944c1dde493041a339df2f9e310e9/) | ⚠️ Unaudited |
-| MarsStake | unknown | bsc | n/a | [`0x3b550b...36583b`](./contracts/bsc-56/0x3b550bbfac32ec434f858a8135fa17c40636583b/) | ⚠️ Unaudited |
-| MarsStratX2_PCS | unknown | bsc | n/a | [`0x4c7f4d...c5238f`](./contracts/bsc-56/0x4c7f4daca14c4bb0e6b616cc6faa8354ccc5238f/) | ⚠️ Unaudited |
-| MarsSwapFactory | unknown | bsc | n/a | [`0x6f1248...81f3be`](./contracts/bsc-56/0x6f12482d9869303b998c54d91bcd8bccba81f3be/) | ⚠️ Unaudited |
-| MarsSwapRouter | unknown | bsc | n/a | [`0xb68825...66e72d`](./contracts/bsc-56/0xb68825c810e67d4e444ad5b9deb55ba56a66e72d/) | ⚠️ Unaudited |
-| Timelock | unknown | bsc | n/a | [`0xc35a8b...ea6cbc`](./contracts/bsc-56/0xc35a8bdbb93abfab362af6dc3383cd2c6aea6cbc/) | ⚠️ Unaudited |
-| USDMToken | unknown | bsc | n/a | [`0xbb0fa2...fbbe85`](./contracts/bsc-56/0xbb0fa2fbe9b37444f5d1dbd22e0e5bdd2afbbe85/) | ⚠️ Unaudited |
-| VestingMaster | unknown | bsc | n/a | [`0x381fac...39c3db`](./contracts/bsc-56/0x381facb9282770a5e3ac6c8637096b442039c3db/) | ⚠️ Unaudited |
-| XMSToken | unknown | bsc | n/a | [`0x7859b0...81b576`](./contracts/bsc-56/0x7859b01bbf675d67da8cd128a50d155cd881b576/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AirDrop | unknown | project_anchor | own_supporting | 0 | bsc | unit-246057 | `0x01d152...790a25` | ⚠️ Unaudited |
+| Core | unknown | project_anchor | own_supporting | 0 | bsc | unit-246056 | `0x00789c...fca2a7` | ⚠️ Unaudited |
+| IMO | unknown | project_anchor | own_supporting | 0 | bsc | unit-246058 | `0x243ddd...9aba75` | ⚠️ Unaudited |
+| LiquidityMiningMaster | unknown | unclassified_address_book | needs_review (excluded) | 0 | bsc | n/a | 2 deployments: bsc `0x18878c...7c80ed`; bsc `0xc7b828...adde4a` | ⚠️ Unaudited |
+| LiquidityMiningMasterBNB | unknown | project_anchor | own_supporting | 0 | bsc | unit-246061 | `0x48c425...7cabe3` | ⚠️ Unaudited |
+| MarsFarmV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x376289...e310e9` | ⚠️ Unaudited |
+| MarsStake | unknown | project_anchor | own_supporting | 0 | bsc | unit-246060 | `0x3b550b...36583b` | ⚠️ Unaudited |
+| MarsStratX2_PCS | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0x4c7f4d...c5238f` | ⚠️ Unaudited |
+| MarsSwapFactory | unknown | project_anchor | own_supporting | 0 | bsc | unit-246062 | `0x6f1248...81f3be` | ⚠️ Unaudited |
+| MarsSwapRouter | unknown | project_anchor | own_supporting | 0 | bsc | unit-246064 | `0xb68825...66e72d` | ⚠️ Unaudited |
+| Timelock | unknown | project_anchor | own_supporting | 0 | bsc | unit-246065 | `0xc35a8b...ea6cbc` | ⚠️ Unaudited |
+| USDMToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | bsc | n/a | `0xbb0fa2...fbbe85` | ⚠️ Unaudited |
+| VestingMaster | unknown | project_anchor | own_supporting | 0 | bsc | unit-246059 | `0x381fac...39c3db` | ⚠️ Unaudited |
+| XMSToken | unknown | project_anchor | own_supporting | 0 | bsc | unit-246063 | `0x7859b0...81b576` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,33 +136,61 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-246066 | `0xde03ed...89ba6b` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [skynet.certik.com/projects/marsecosystem](https://skynet.certik.com/projects/marsecosystem) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [immunefi.com/bug-bounty/marsecosystem/information](https://immunefi.com/bug-bounty/marsecosystem/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [skynet.certik.com/projects/marsecosystem](https://skynet.certik.com/projects/marsecosystem) | CertiK | Audit | 2021-08 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | medium |
+| [immunefi.com/bug-bounty/marsecosystem/information](https://immunefi.com/bug-bounty/marsecosystem/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a | n/a | n/a | n/a | n/a |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [20817] skynet.certik.com/projects/marsecosystem — no match: Only one contract name explicitly mentioned in audited files; other files listed by SHA256 hash only.
+- [20818] immunefi.com/bug-bounty/marsecosystem/information — no match: The document is a bug bounty program page, not an audit report. No contracts in scope are listed; only the program overview and reward structure are provided.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| skynet.certik.com/projects/marsecosystem | MarsSwapPairCombOracle | unmatched — not counted | — | Listed in audited files section | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| bsc | `0x01d152...790a25` | AirDrop | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x00789c...fca2a7` | Core | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x243ddd...9aba75` | IMO | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x48c425...7cabe3` | LiquidityMiningMasterBNB | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x3b550b...36583b` | MarsStake | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x6f1248...81f3be` | MarsSwapFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xb68825...66e72d` | MarsSwapRouter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0xc35a8b...ea6cbc` | Timelock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x381fac...39c3db` | VestingMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | `0x7859b0...81b576` | XMSToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 14 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 14 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -123,7 +198,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 1 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: low=1, medium=1
 - Match method counts: n/a
 
 Zero-match audit list:

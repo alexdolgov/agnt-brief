@@ -177,4 +177,6 @@ library ErrorLibrary {
   error InvalidTargetAddress();
   // @notice Thrown when the ETH balance sent is zero
   error InvalidBalance();
+
+  error BalanceOfVaultShouldNotExceedDust();
 }

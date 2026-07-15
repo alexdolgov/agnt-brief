@@ -1,0 +1,44 @@
+{
+  "component": "WithdrawalVault",
+  "main_contract": "WithdrawalVault",
+  "source_entry_count": 24,
+  "source_file_count": 24,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WithdrawalVault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/gmx-io/gmx-synthetics/blob/main/audits/certora/2023-11-13_GMX_Report_by_Certora.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/main/audits/guardian/2023-03-15_GMX_Synthetics.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/main/audits/guardian/2023-05-15_GMX_Synthetics.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/main/audits/guardian/2023-06-02_GMX_Synthetics.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/main/audits/guardian/2023-07-11_GMX_Synthetics.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/main/audits/guardian/2023-07-28_GMX_Synthetics.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/main/audits/guardian/2026-06-16_GMX_V2_Review_Report.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/main/audits/sherlock/Sherlock_GMX_Update_Audit_Report.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/updates/audits/certora/2023-11-13_GMX_Report_by_Certora.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/updates/audits/guardian/2023-03-15_GMX_Synthetics.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/updates/audits/guardian/2023-05-15_GMX_Synthetics.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/updates/audits/guardian/2023-06-02_GMX_Synthetics.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/updates/audits/guardian/2023-07-11_GMX_Synthetics.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/updates/audits/guardian/2023-07-28_GMX_Synthetics.pdf",
+    "https://github.com/gmx-io/gmx-synthetics/blob/updates/audits/sherlock/Sherlock_GMX_Update_Audit_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0628d46b5d145f183adb6ef1f2c97ed1c4701c55",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403081"
+    }
+  ]
+}

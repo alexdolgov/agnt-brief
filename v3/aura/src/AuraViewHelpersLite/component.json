@@ -1,50 +1,28 @@
 {
   "component": "AuraViewHelpersLite",
   "main_contract": "AuraViewHelpersLite",
-  "source_file_count": 1,
-  "deployment_count": 5,
+  "source_entry_count": 14,
+  "source_file_count": 14,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AuraViewHelpersLite\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xbddac3069f4e26f4e4f445926c8eeb9dcb68c26b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x8f67bb1f24eba8d123ae7f18c13b925ba7f13552",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x9e4cbe2eaff2fa727bc805e6cbbf2ff01ddb812b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0xce66e8300dc1d1f5b0e46e9145fdf680a7e41146",
+      "address": "0xbd2e14d04777e551a8fe3822cac0df51984b029e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xb4e5fd87f3092f271f51ca416f311513d958cb4e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391518"
     }
   ]
 }

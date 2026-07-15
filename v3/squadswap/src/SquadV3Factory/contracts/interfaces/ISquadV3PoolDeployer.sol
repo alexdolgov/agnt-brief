@@ -31,8 +31,4 @@ interface ISquadV3PoolDeployer {
         uint24 fee,
         int24 tickSpacing
     ) external returns (address pool);
-
-    /// @notice Claim the accumulated BLAST gas for the factory 
-    function claimGas(address _recipient) external returns (uint256 amount);
-
 }

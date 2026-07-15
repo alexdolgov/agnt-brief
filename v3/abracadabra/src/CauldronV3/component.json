@@ -1,50 +1,48 @@
 {
   "component": "CauldronV3",
   "main_contract": "CauldronV3",
-  "source_file_count": 16,
-  "deployment_count": 5,
+  "source_entry_count": 102,
+  "source_file_count": 102,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CauldronV3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x233332a01ebf20f770883ebff68374b015accb9c",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7ce7d9ed62b9a6c5ace1c6ec9aeb115fa3064757",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390572"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x177a24b427876f61983cce0dd37608611e7de3f7",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc6b2b3fe7c3d7a6f823d9106e22e66660709001e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390585"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x7350078b9b732ca201706ee372789ebb11b1bc25",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd31e19a0574dbf09310c3b06f3416661b4dc7324",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xa32d03497ff5c32bcfeebe6a677dbe4a496fd918",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xf24f4cf3e272ef412d0d4764909141b39cc878cf",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390587"
     }
   ]
 }

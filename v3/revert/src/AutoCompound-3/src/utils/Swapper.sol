@@ -21,8 +21,6 @@ abstract contract Swapper is IUniswapV3SwapCallback, Constants {
     IWETH9 public immutable weth;
 
     address public immutable factory;
-    
-    address private immutable deployer;
 
     /// @notice Uniswap v3 position manager
     INonfungiblePositionManager public immutable nonfungiblePositionManager;
@@ -43,7 +41,6 @@ abstract contract Swapper is IUniswapV3SwapCallback, Constants {
     ) {
         weth = IWETH9(_nonfungiblePositionManager.WETH9());
         factory = _nonfungiblePositionManager.factory();
-        deployer = _nonfungiblePositionManager.deployer();
         nonfungiblePositionManager = _nonfungiblePositionManager;
         zeroxRouter = _zeroxRouter;
         universalRouter = _universalRouter;
@@ -168,6 +165,6 @@ abstract contract Swapper is IUniswapV3SwapCallback, Constants {
 
     // get pool for token
     function _getPool(address tokenA, address tokenB, uint24 fee) internal view returns (IUniswapV3Pool) {
-        return IUniswapV3Pool(PoolAddress.computeAddress(address(deployer), PoolAddress.getPoolKey(tokenA, tokenB, fee)));
+        return IUniswapV3Pool(PoolAddress.computeAddress(address(factory), PoolAddress.getPoolKey(tokenA, tokenB, fee)));
     }
 }

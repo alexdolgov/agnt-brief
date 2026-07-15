@@ -1,26 +1,28 @@
 {
   "component": "Quoter",
   "main_contract": "Quoter",
+  "source_entry_count": 19,
   "source_file_count": 19,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Quoter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0x3cd3d9da786257c7ec74f80e1661fe40583b0f87",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
       "address": "0xe1181313a39d850d3a20f11ff1a6a94a29a09404",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399230"
     }
   ]
 }

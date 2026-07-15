@@ -1,50 +1,31 @@
 {
   "component": "ClGaugeFactory",
   "main_contract": "ClGaugeFactory",
+  "source_entry_count": 54,
   "source_file_count": 54,
-  "deployment_count": 5,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ClGaugeFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://cantina.xyz/portfolio/48fc9b98-ded3-43fa-80a2-5aedb3a5a51e",
+    "https://code4rena.com/reports/2024-10-ramses-exchange"
+  ],
   "addresses": [
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0x38bff9205ec1ded237c81110d4d73e814b243470",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x9b7e6279d221515b51e769280ef1ebb4e62bea1c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x9caf8e8b8a8208d43579de755f394a88be5686e0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0xee31682bac383e7463822eb9f15fedfc47160116",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0xf914cc768040b4268a779c3084a3e9cda6e8a1a8",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "address": "0x452f378db86f6ef98731cdeb8344d8c171b6968c",
+      "is_proxy": true,
+      "implementation_address": "0x2d37a47f5c2818404cbb4b639e35e730071edaed",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398902"
     }
   ]
 }

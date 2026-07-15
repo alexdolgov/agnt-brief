@@ -1,26 +1,28 @@
 {
   "component": "CHNGovernance",
   "main_contract": "CHNGovernance",
-  "source_file_count": 5,
-  "deployment_count": 2,
+  "source_entry_count": 2,
+  "source_file_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CHNGovernance\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x019f9485bc668e890cf3350406186d6d7b8bd2c8",
+      "address": "0xdec2f31c3984f3440540dc78ef21b1369d4ef767",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xa92c5d33356a26e8e200afb89f86e8356b6095f9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397528"
     }
   ]
 }

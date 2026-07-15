@@ -1,26 +1,28 @@
 {
   "component": "WhitelistedCauldronV3",
   "main_contract": "WhitelistedCauldronV3",
+  "source_entry_count": 17,
   "source_file_count": 17,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WhitelistedCauldronV3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x3e3728ffdc79961a03613a8b011bb39001773c1d",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x53375add9d2dfe19398ed65baaeffe622760a9a6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xe8681a8c8d8e24b65526c2f94fd5ef9d3ec18726",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390562"
     }
   ]
 }

@@ -2,28 +2,23 @@
 pragma solidity ^0.8.0;
 
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import {IERC20Extended} from "./IERC20Extended.sol";
 import {IVoter} from "./IVoter.sol";
 import {Pausable} from "@openzeppelin/contracts/utils/Pausable.sol";
 
 interface IXPhar is IERC20 {
     event InstantExit(address indexed user, uint256);
-
-    event NewSlashingPenalty(uint256 penalty);
-
+    event XRamRedeemed(address indexed user, uint256);
     event Converted(address indexed user, uint256);
 
     event Exemption(address indexed candidate, bool status, bool success);
-
-    event XRamRedeemed(address indexed user, uint256);
 
     event NewOperator(address indexed o, address indexed n);
 
     event Rebase(address indexed caller, uint256 amount);
 
-    event NewRebaseThreshold(uint256 threshold);
-
     /// @notice address of the phar token
-    function PHAR() external view returns (IERC20);
+    function PHAR() external view returns (IERC20Extended);
 
     /// @notice address of the voter
     function VOTER() external view returns (IVoter);
@@ -49,11 +44,8 @@ interface IXPhar is IERC20 {
     /// @notice the last period rebases were distributed
     function lastDistributedPeriod() external view returns (uint256);
 
-    /// @notice amount of pvp rebase penalties accumulated pending to be distributed
-    function pendingRebase() external view returns (uint256);
-
-    /// @notice dust threshold before a rebase can happen
-    function rebaseThreshold() external view returns (uint256);
+    /// @notice amount of burns in total
+    function totalBurned() external view returns (uint256);
 
     /// @notice pauses the contract
     function pause() external;
@@ -88,9 +80,6 @@ interface IXPhar is IERC20 {
      *
      */
 
-    /// @dev allows the operator to redeem collected xPHAR
-    function operatorRedeem(uint256 _amount) external;
-
     /// @dev allows rescue of any non-stake token
     function rescueTrappedTokens(address[] calldata _tokens, uint256[] calldata _amounts) external;
 
@@ -101,9 +90,6 @@ interface IXPhar is IERC20 {
     function setExemption(address[] calldata _exemptee, bool[] calldata _exempt) external;
 
     function setExemptionTo(address[] calldata _exemptee, bool[] calldata _exempt) external;
-
-    /// @notice set dust threshold before a rebase can happen
-    function setRebaseThreshold(uint256 _newThreshold) external;
 
     /**
      *

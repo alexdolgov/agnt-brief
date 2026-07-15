@@ -1,8 +1,16 @@
 {
   "component": "Timelock",
   "main_contract": "Timelock",
+  "source_entry_count": 27,
   "source_file_count": 27,
-  "deployment_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Timelock\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,9 @@
       "address": "0x3d18480cc32b6ab3b833dcabd80e76cfd41c48a9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395343"
     },
     {
       "chain": "ethereum",
@@ -20,39 +30,9 @@
       "address": "0x4b174afbed7b98ba01f50e36109eee5e6d327c32",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-9745",
-      "chain_id": 9745,
-      "address": "0x0c206b695d65aef7381a03352acf9fe2f48927a3",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-9745",
-      "chain_id": 9745,
-      "address": "0x3d18480cc32b6ab3b833dcabd80e76cfd41c48a9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-9745",
-      "chain_id": 9745,
-      "address": "0xd105b91517905c34c38af9d6e0db4b77e9e71ae1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-9745",
-      "chain_id": 9745,
-      "address": "0xd54c8fff9c362d952d982f2bf006aac211108b3b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395364"
     }
   ]
 }

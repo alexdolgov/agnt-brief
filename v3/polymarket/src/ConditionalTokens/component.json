@@ -1,10 +1,20 @@
 {
   "component": "ConditionalTokens",
   "main_contract": "ConditionalTokens",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ConditionalTokens\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Polymarket/contract-security/blob/main/audit-reports/cs_conditional_tokens.pdf"
+  ],
   "addresses": [
     {
       "chain": "polygon",
@@ -12,7 +22,9 @@
       "address": "0x4d97dcd97ec945f40cf65f87097ace5ea0476045",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403745"
     }
   ]
 }

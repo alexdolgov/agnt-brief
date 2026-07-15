@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at snowtrace.io on 2021-12-21
+*/
+
 // File: contracts/SmartRoute/intf/IDODOV2Proxy01.sol
 
 /*
@@ -8,6 +12,7 @@
 */
 
 pragma solidity 0.6.9;
+pragma experimental ABIEncoderV2;
 
 
 interface IDODOV2Proxy01 {
@@ -70,27 +75,27 @@ interface IDODOV2Proxy01 {
             uint256 quoteAdjustedInAmount
         );
 
-    function createDODOPrivatePool(
-        address baseToken,
-        address quoteToken,
-        uint256 baseInAmount,
-        uint256 quoteInAmount,
-        uint256 lpFeeRate,
-        uint256 i,
-        uint256 k,
-        bool isOpenTwap,
-        uint256 deadLine
-    ) external payable returns (address newPrivatePool);
+    // function createDODOPrivatePool(
+    //     address baseToken,
+    //     address quoteToken,
+    //     uint256 baseInAmount,
+    //     uint256 quoteInAmount,
+    //     uint256 lpFeeRate,
+    //     uint256 i,
+    //     uint256 k,
+    //     bool isOpenTwap,
+    //     uint256 deadLine
+    // ) external payable returns (address newPrivatePool);
 
-    function resetDODOPrivatePool(
-        address dppAddress,
-        uint256[] memory paramList,  //0 - newLpFeeRate, 1 - newI, 2 - newK
-        uint256[] memory amountList, //0 - baseInAmount, 1 - quoteInAmount, 2 - baseOutAmount, 3 - quoteOutAmount
-        uint8 flag, // 0 - ERC20, 1 - baseInETH, 2 - quoteInETH, 3 - baseOutETH, 4 - quoteOutETH
-        uint256 minBaseReserve,
-        uint256 minQuoteReserve,
-        uint256 deadLine
-    ) external payable;
+    // function resetDODOPrivatePool(
+    //     address dppAddress,
+    //     uint256[] memory paramList,  //0 - newLpFeeRate, 1 - newI, 2 - newK
+    //     uint256[] memory amountList, //0 - baseInAmount, 1 - quoteInAmount, 2 - baseOutAmount, 3 - quoteOutAmount
+    //     uint8 flag, // 0 - ERC20, 1 - baseInETH, 2 - quoteInETH, 3 - baseOutETH, 4 - quoteOutETH
+    //     uint256 minBaseReserve,
+    //     uint256 minQuoteReserve,
+    //     uint256 deadLine
+    // ) external payable;
 
 
     function bid(
@@ -133,19 +138,18 @@ interface IDODOV2Proxy01 {
         uint256 deadLine
     ) external payable returns (uint256 returnAmount);
 
-    function mixSwap(
-        address fromToken,
-        address toToken,
-        uint256 fromTokenAmount,
-        uint256 minReturnAmount,
-        address[] memory mixAdapters,
-        address[] memory mixPairs,
-        address[] memory assetTo,
-        uint256 directions,
-        bool isIncentive,
-        uint256 deadLine
-    ) external payable returns (uint256 returnAmount);
-
+    // function mixSwap(
+    //     address fromToken,
+    //     address toToken,
+    //     uint256 fromTokenAmount,
+    //     uint256 minReturnAmount,
+    //     address[] memory mixAdapters,
+    //     address[] memory mixPairs,
+    //     address[] memory assetTo,
+    //     uint256 directions,
+    //     bool isIncentive,
+    //     uint256 deadLine
+    // ) external payable returns (uint256 returnAmount);
 }
 
 // File: contracts/SmartRoute/intf/IDODOV2.sol
@@ -241,6 +245,7 @@ interface IDODOV2 {
 }
 
 // File: contracts/SmartRoute/intf/IDODOV1.sol
+
 
 interface IDODOV1 {
     function init(
@@ -460,7 +465,6 @@ contract DODOApproveProxy is InitializableOwnable {
 // File: contracts/lib/SafeMath.sol
 
 
-
 /**
  * @title SafeMath
  * @author DODO Breeder
@@ -517,6 +521,7 @@ library SafeMath {
 
 // File: contracts/lib/DecimalMath.sol
 
+
 /**
  * @title DecimalMath
  * @author DODO Breeder
@@ -551,6 +556,21 @@ library DecimalMath {
 
     function reciprocalCeil(uint256 target) internal pure returns (uint256) {
         return uint256(10**36).divCeil(target);
+    }
+
+    function powFloor(uint256 target, uint256 e) internal pure returns (uint256) {
+        if (e == 0) {
+            return 10 ** 18;
+        } else if (e == 1) {
+            return target;
+        } else {
+            uint p = powFloor(target, e.div(2));
+            p = p.mul(p) / (10**18);
+            if (e % 2 == 1) {
+                p = p.mul(target) / (10**18);
+            }
+            return p;
+        }
     }
 }
 
@@ -772,6 +792,7 @@ contract DODOSellHelper {
 
 // File: contracts/intf/IERC20.sol
 
+
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
  */
@@ -843,7 +864,6 @@ interface IERC20 {
 }
 
 // File: contracts/intf/IWETH.sol
-
 
 
 interface IWETH {
@@ -972,6 +992,7 @@ library SafeERC20 {
 // File: contracts/SmartRoute/lib/UniversalERC20.sol
 
 
+
 library UniversalERC20 {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
@@ -1025,7 +1046,6 @@ library UniversalERC20 {
 
 // File: contracts/lib/ReentrancyGuard.sol
 
-
 /**
  * @title ReentrancyGuard
  * @author DODO Breeder
@@ -1060,13 +1080,6 @@ interface IDODOAdapter {
 
 
 
-
-
-
-
-
-
-
 /**
  * @title DODOV2Proxy02
  * @author DODO Breeder
@@ -1084,7 +1097,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
     address public immutable _DODO_APPROVE_PROXY_;
     address public immutable _DODO_SELL_HELPER_;
     address public immutable _DVM_FACTORY_;
-    address public immutable _DPP_FACTORY_;
     mapping (address => bool) public isWhiteListed;
 
     // ============ Events ============
@@ -1110,13 +1122,11 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
 
     constructor(
         address dvmFactory,
-        address dppFactory,
         address payable weth,
         address dodoApproveProxy,
         address dodoSellHelper
     ) public {
         _DVM_FACTORY_ = dvmFactory;
-        _DPP_FACTORY_ = dppFactory;
         _WETH_ = weth;
         _DODO_APPROVE_PROXY_ = dodoApproveProxy;
         _DODO_SELL_HELPER_ = dodoSellHelper;
@@ -1250,93 +1260,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
                 baseAdjustedInAmount = DecimalMath.mulFloor(baseReserve, quoteIncreaseRatio);
             }
         }
-    }
-
-    // ============ DPP Functions (create & reset) ============
-
-    function createDODOPrivatePool(
-        address baseToken,
-        address quoteToken,
-        uint256 baseInAmount,
-        uint256 quoteInAmount,
-        uint256 lpFeeRate,
-        uint256 i,
-        uint256 k,
-        bool isOpenTwap,
-        uint256 deadLine
-    )
-        external
-        override
-        payable
-        preventReentrant
-        judgeExpired(deadLine)
-        returns (address newPrivatePool)
-    {
-        newPrivatePool = IDODOV2(_DPP_FACTORY_).createDODOPrivatePool();
-
-        address _baseToken = baseToken;
-        address _quoteToken = quoteToken;
-        _deposit(msg.sender, newPrivatePool, _baseToken, baseInAmount, _baseToken == _ETH_ADDRESS_);
-        _deposit(
-            msg.sender,
-            newPrivatePool,
-            _quoteToken,
-            quoteInAmount,
-            _quoteToken == _ETH_ADDRESS_
-        );
-
-        if (_baseToken == _ETH_ADDRESS_) _baseToken = _WETH_;
-        if (_quoteToken == _ETH_ADDRESS_) _quoteToken = _WETH_;
-
-        IDODOV2(_DPP_FACTORY_).initDODOPrivatePool(
-            newPrivatePool,
-            msg.sender,
-            _baseToken,
-            _quoteToken,
-            lpFeeRate,
-            k,
-            i,
-            isOpenTwap
-        );
-    }
-
-    function resetDODOPrivatePool(
-        address dppAddress,
-        uint256[] memory paramList,  //0 - newLpFeeRate, 1 - newI, 2 - newK
-        uint256[] memory amountList, //0 - baseInAmount, 1 - quoteInAmount, 2 - baseOutAmount, 3- quoteOutAmount
-        uint8 flag, // 0 - ERC20, 1 - baseInETH, 2 - quoteInETH, 3 - baseOutETH, 4 - quoteOutETH
-        uint256 minBaseReserve,
-        uint256 minQuoteReserve,
-        uint256 deadLine
-    ) external override payable preventReentrant judgeExpired(deadLine) {
-        _deposit(
-            msg.sender,
-            dppAddress,
-            IDODOV2(dppAddress)._BASE_TOKEN_(),
-            amountList[0],
-            flag == 1
-        );
-        _deposit(
-            msg.sender,
-            dppAddress,
-            IDODOV2(dppAddress)._QUOTE_TOKEN_(),
-            amountList[1],
-            flag == 2
-        );
-
-        require(IDODOV2(IDODOV2(dppAddress)._OWNER_()).reset(
-            msg.sender,
-            paramList[0],
-            paramList[1],
-            paramList[2],
-            amountList[2],
-            amountList[3],
-            minBaseReserve,
-            minQuoteReserve
-        ), "Reset Failed");
-
-        _withdraw(msg.sender, IDODOV2(dppAddress)._BASE_TOKEN_(), amountList[2], flag == 3);
-        _withdraw(msg.sender, IDODOV2(dppAddress)._QUOTE_TOKEN_(), amountList[3], flag == 4);
     }
 
     // ============ Swap ============
@@ -1600,60 +1523,6 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
         emit OrderHistory(_fromToken, _toToken, msg.sender, fromTokenAmount, returnAmount);
     }
 
-
-    function mixSwap(
-        address fromToken,
-        address toToken,
-        uint256 fromTokenAmount,
-        uint256 minReturnAmount,
-        address[] memory mixAdapters,
-        address[] memory mixPairs,
-        address[] memory assetTo,
-        uint256 directions,
-        bool,
-        uint256 deadLine
-    ) external override payable judgeExpired(deadLine) returns (uint256 returnAmount) {
-        require(mixPairs.length > 0, "DODOV2Proxy02: PAIRS_EMPTY");
-        require(mixPairs.length == mixAdapters.length, "DODOV2Proxy02: PAIR_ADAPTER_NOT_MATCH");
-        require(mixPairs.length == assetTo.length - 1, "DODOV2Proxy02: PAIR_ASSETTO_NOT_MATCH");
-        require(minReturnAmount > 0, "DODOV2Proxy02: RETURN_AMOUNT_ZERO");
-
-        address _fromToken = fromToken;
-        address _toToken = toToken;
-        uint256 _fromTokenAmount = fromTokenAmount;
-        
-        uint256 toTokenOriginBalance = IERC20(_toToken).universalBalanceOf(msg.sender);
-        
-        _deposit(msg.sender, assetTo[0], _fromToken, _fromTokenAmount, _fromToken == _ETH_ADDRESS_);
-
-        for (uint256 i = 0; i < mixPairs.length; i++) {
-            if (directions & 1 == 0) {
-                IDODOAdapter(mixAdapters[i]).sellBase(assetTo[i + 1],mixPairs[i], "");
-            } else {
-                IDODOAdapter(mixAdapters[i]).sellQuote(assetTo[i + 1],mixPairs[i], "");
-            }
-            directions = directions >> 1;
-        }
-
-        if(_toToken == _ETH_ADDRESS_) {
-            returnAmount = IWETH(_WETH_).balanceOf(address(this));
-            IWETH(_WETH_).withdraw(returnAmount);
-            msg.sender.transfer(returnAmount);
-        }else {
-            returnAmount = IERC20(_toToken).tokenBalanceOf(msg.sender).sub(toTokenOriginBalance);
-        }
-
-        require(returnAmount >= minReturnAmount, "DODOV2Proxy02: Return amount is not enough");
-
-        emit OrderHistory(
-            _fromToken,
-            _toToken,
-            msg.sender,
-            _fromTokenAmount,
-            returnAmount
-        );
-    }
-
     //============ CrowdPooling Functions (bid) ============
     function bid(
         address cpAddress,
@@ -1704,6 +1573,7 @@ contract DODOV2Proxy02 is IDODOV2Proxy01, ReentrancyGuard, InitializableOwnable 
     ) internal {
         if (isETH) {
             if (amount > 0) {
+                require(msg.value == amount, "ETH_VALUE_WRONG");
                 IWETH(_WETH_).deposit{value: amount}();
                 if (to != address(this)) SafeERC20.safeTransfer(IERC20(_WETH_), to, amount);
             }

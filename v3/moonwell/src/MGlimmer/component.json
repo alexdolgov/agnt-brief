@@ -1,8 +1,16 @@
 {
   "component": "MGlimmer",
   "main_contract": "MGlimmer",
-  "source_file_count": 14,
-  "deployment_count": 4,
+  "source_entry_count": 11,
+  "source_file_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MGlimmer\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/Moonwell_Finance_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf"
@@ -14,31 +22,9 @@
       "address": "0x091608f4e4a15335145be0a279483c0f8e4c7955",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0x23d71838f6d40a7c35c6a7b8eb2972b7785145f2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0x7b2fabffa53f59203ae5db1dd8e0e9a4d50c744e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1284",
-      "chain_id": 1284,
-      "address": "0xa3a53899ee8f9f6e963437c5b3f805fec538bf84",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396965"
     }
   ]
 }

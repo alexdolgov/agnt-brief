@@ -35,7 +35,7 @@ library Cache {
 
     // ============ Constants ============
 
-    bytes32 private constant FILE = "Cache";
+    bytes32 internal constant FILE = "Cache";
 
     // ============ Structs ============
 
@@ -51,7 +51,6 @@ library Cache {
 
     struct MarketCache {
         MarketInfo[] markets;
-        uint256 counter; // used for iterating through the bitmaps and incrementing
         uint256[] marketBitmaps;
         uint256 marketsLength;
     }
@@ -70,7 +69,6 @@ library Cache {
     {
         return MarketCache({
             markets: new MarketInfo[](0),
-            counter: 0,
             marketBitmaps: Bits.createBitmaps(numMarkets),
             marketsLength: 0
         });
@@ -108,7 +106,7 @@ library Cache {
         returns (MarketInfo memory)
     {
         Require.that(
-            cache.markets.length != 0,
+            cache.markets.length > 0,
             FILE,
             "not initialized"
         );
@@ -169,7 +167,7 @@ library Cache {
         // If length equals 0 OR length equals 1 but the item wasn't found, revert
         assert(!(len == 0 || (len == 1 && data[beginInclusive].marketId != marketId)));
 
-        uint mid = beginInclusive + (len >> 1);
+        uint mid = beginInclusive + len / 2;
         uint midMarketId = data[mid].marketId;
         if (marketId < midMarketId) {
             return _getInternal(

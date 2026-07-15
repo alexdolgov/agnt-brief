@@ -11,10 +11,6 @@ import "../SpeedMarkets/SpeedMarketsAMM.sol";
 import "./ISpeedMarketsAMMUtils.sol";
 
 interface ISpeedMarketsAMM {
-    enum OracleSource {
-        Pyth,
-        Chainlink
-    }
     struct Params {
         bool supportedAsset;
         uint safeBoxImpact;
@@ -22,8 +18,6 @@ interface ISpeedMarketsAMM {
     }
 
     function sUSD() external view returns (IERC20Upgradeable);
-
-    function addressManager() external view returns (address);
 
     function createNewMarket(SpeedMarketsAMM.CreateMarketParams calldata _params) external returns (address marketAddress);
 
@@ -38,8 +32,6 @@ interface ISpeedMarketsAMM {
     function supportedAsset(bytes32 _asset) external view returns (bool);
 
     function assetToPythId(bytes32 _asset) external view returns (bytes32);
-
-    function assetToChainlinkId(bytes32 _asset) external view returns (bytes32);
 
     function minBuyinAmount() external view returns (uint);
 

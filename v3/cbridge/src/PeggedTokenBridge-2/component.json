@@ -1,21 +1,48 @@
 {
   "component": "PeggedTokenBridge-2",
   "main_contract": "PeggedTokenBridge",
-  "source_file_count": 16,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/PeckShield_pegged.pdf",
-    "https://github.com/celer-network/sgn-v2-contracts/blob/main/audit/SlowMist_pegged.pdf"
-  ],
+  "source_entry_count": 12,
+  "source_file_count": 12,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PeggedTokenBridge-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x88dcdc47d2f83a99cf0000fdf667a468bb958a78",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x61f85ff2a2f4289be4bb9b72fc7010b3142b5f41",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392693"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xd4c058380d268d85bc7c758072f561e8f2db5975",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392704"
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x3bbadff9aeee4a74d3cf6da05c30868c9ff85bb8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392709"
     }
   ]
 }

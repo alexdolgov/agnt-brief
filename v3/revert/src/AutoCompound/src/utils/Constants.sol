@@ -28,7 +28,6 @@ abstract contract Constants {
     error PriceDifferenceExceeded();
     error SequencerDown();
     error SequencerGracePeriodNotOver();
-    error SequencerUptimeFeedInvalid();
 
     error CollateralFail();
     error MinLoanSize();
@@ -63,13 +62,4 @@ abstract contract Constants {
     error NotEnoughReward();
     error SameRange();
     error NotSupportedFeeTier();
-
-    // Aerodrome-specific errors
-    error InvalidTickSpacing();
-    error GaugeNotSet();
-    error AlreadyStaked();
-    error NotStaked();
-    error RewardClaimFailed();
-    error GaugeManagerNotSet();
-    error NotDepositor();
 }

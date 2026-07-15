@@ -1,130 +1,31 @@
 {
   "component": "TransparentUpgradeableProxy",
   "main_contract": "TransparentUpgradeableProxy",
-  "source_file_count": 4,
-  "deployment_count": 15,
-  "audited": false,
-  "audits_covering": [],
+  "source_entry_count": 71,
+  "source_file_count": 71,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://3680626664-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FfUJhj5pOCZ1OqOS2mFCs%2Fuploads%2FaHdorsVLkkSsvnJ1557L%2FSalvor_SC%20Audit%20Report_15022023__.pdf",
+    "https://3739368890-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FfUJhj5pOCZ1OqOS2mFCs%2Fuploads%2FaHdorsVLkkSsvnJ1557L%2FSalvor_SC%20Audit%20Report_15022023__.pdf"
+  ],
   "addresses": [
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x0eb749a42ca15d6ee8ad30e789586c09c2c52388",
+      "address": "0x72b73fa1569df9ff1ae9b29cd5b164af6c02ebaa",
       "is_proxy": true,
-      "implementation_address": "0xe6224b21361e6f5ab503a930e6573caae5ff9f08",
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x17ce2a490cb260b48891ade019a86f4b4a5520d4",
-      "is_proxy": true,
-      "implementation_address": "0xad36f6b111bec7f9cbb18688c48fd9bb7a49a86b",
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x22bafb9c882a8ba7ee5559186540bcd8dba1d073",
-      "is_proxy": true,
-      "implementation_address": "0x0146b8f75b9f03e0c08627e9ce2d3d07f59937af",
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x23904c60c3fe69d70b7dcc629454281c93f8d044",
-      "is_proxy": true,
-      "implementation_address": "0x1467826e9dadb57db1fb9f1ffeadf01debe1310d",
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x5377caf64cf02c1320c66030fbe3773431377dac",
-      "is_proxy": true,
-      "implementation_address": "0xe6befa51550148d720cea18b3962f355c733bc55",
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x62b38293896e040e36fe5345f9d30dbfd75c04b9",
-      "is_proxy": true,
-      "implementation_address": "0xda88d0fe9edfd38ceffb203c749afc7d4ffb1d61",
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x7ccda6e26dced1ba275c67cd20235790ed615a8d",
-      "is_proxy": true,
-      "implementation_address": "0x60d0a833ceeee90b12cffc8ccb235baae4858096",
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x91c5f275afb2ae344687dfcde5354477326a5f3f",
-      "is_proxy": true,
-      "implementation_address": "0xe9b65e789e2e81eeb0c7226e741608cc2734d9a9",
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xac59c21adfddb1e56a959dd60a08c07aaed2f3ba",
-      "is_proxy": true,
-      "implementation_address": "0xae7bd6628163897c8d2b6c7e55b236a060d1bc93",
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xb244b1507d7cfb8de6883fd985ee5e205d3c6c54",
-      "is_proxy": true,
-      "implementation_address": "0xc2de170463bb17b67f75b83d3f1f789a42de054b",
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xb79a1ff59b58c7be91ac122c2b1a7ac704a75c67",
-      "is_proxy": true,
-      "implementation_address": "0xfa5951dff3c7e22ec9350c05c203771f24b9ab76",
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xba239e83c77b2a77b3f5af15fe9d291b2c48885d",
-      "is_proxy": true,
-      "implementation_address": "0xc2de170463bb17b67f75b83d3f1f789a42de054b",
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xc54c0c19d762cb4962290bcb1c47d98a464bfad9",
-      "is_proxy": true,
-      "implementation_address": "0xfa5951dff3c7e22ec9350c05c203771f24b9ab76",
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xd071aa359ed1b7776a12c8329f2c337abed157d7",
-      "is_proxy": true,
-      "implementation_address": "0x708e887ab6475466379f6d7b89937add1d858b6e",
-      "liveness": "live"
-    },
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xe8f9e15b1ff957b18b047c2b4d42f1d8285140b7",
-      "is_proxy": true,
-      "implementation_address": "0x36e0e8d6246e34812f5f56cafe7fc10054e0f6be",
-      "liveness": "live"
+      "implementation_address": "0x9f56ae2211d3f0d987edda24f37880d424679c3c",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398643"
     }
   ]
 }

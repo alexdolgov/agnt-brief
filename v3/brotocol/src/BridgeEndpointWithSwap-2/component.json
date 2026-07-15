@@ -1,50 +1,28 @@
 {
   "component": "BridgeEndpointWithSwap-2",
   "main_contract": "BridgeEndpointWithSwap",
+  "source_entry_count": 46,
   "source_file_count": 46,
-  "deployment_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BridgeEndpointWithSwap-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xb1c34a9f630edb880f289683cfac2f923b31c94d",
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x0f38ed043a1a2ec79b15d7f4fb8d25036680ce03",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x4a1a7048f54d4913156ca79c329a8ecd2b6a5f7f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x5298718429046b1d38106864bbfdc9326c840092",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x82d25bd400631de5daf832c1e9cca547ec4b2aab",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x18c05ec3799eb15fe49a141ce844e55514438fa7",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392576"
     }
   ]
 }

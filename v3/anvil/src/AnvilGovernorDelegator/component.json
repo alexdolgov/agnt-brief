@@ -1,11 +1,19 @@
 {
   "component": "AnvilGovernorDelegator",
   "main_contract": "AnvilGovernorDelegator",
+  "source_entry_count": 7,
   "source_file_count": 7,
-  "deployment_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AnvilGovernorDelegator\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
-    "https://www.openzeppelin.com/news/anvil-protocol-diff-audit"
+    "https://www.openzeppelin.com/news/anvil-protocol-audit"
   ],
   "addresses": [
     {
@@ -14,79 +22,9 @@
       "address": "0x00e83d0698faf01bd080a4dd2927e6ab7c4874c9",
       "is_proxy": true,
       "implementation_address": "0x123641b8a2063217a96ef88bf608931a43b49f49",
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x081fe8bf28e07232d25b58811c4cad2ebdaed8d9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x09c7ec11c51e61997274c5c445c9f4ccf6bc200f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x123641b8a2063217a96ef88bf608931a43b49f49",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x33148ea4cc49fc351a2a9fa729f75134cd2a3ba1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x65eed5a31d70d5eb0398dbe8e805ffeb6199f602",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xa57365263ff137c9e93818c0f04425b66ff2b5e4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xbb1470b2a2dcce0cb91ac91d9d0a3ceec9187aa0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xfd883f549ee20eb69067102fd93a0687744c5b8f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xfe1118ce38818ea3c167929eacb6310cdc42a361",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390941"
     }
   ]
 }

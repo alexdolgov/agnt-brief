@@ -1,140 +1,336 @@
 # Agentic Audit Brief: alphagrowth
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: alphagrowth (`alphagrowth`)
 - Website: [https://app.euler.finance/governor/alphagrowth?network=unichain](https://app.euler.finance/governor/alphagrowth?network=unichain)
 - Lifecycle: active (Tier 0, 25.2% below peak)
-- Generated: 2026-07-04T11:05:39.369Z
-- Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
-- Chains: base, ethereum, linea, unichain
-- Contract surface: 111 unique implementations (318 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: arbitrum, base, ethereum, linea, unichain
+- Contract surface: 208 unique implementations (230 raw deployments)
+- Coverage basis: 0/4 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $7,315,785.21
-- On-chain TVL (included contracts): $5,936,051.72
-- TVL by chain: Unichain $2,988,703.54 | Base $1,740,580.58 | Ethereum $1,095,577.81 | Linea $111,189.80
+- On-chain TVL (included contracts): $4,958,000.98
+- TVL by chain: Unichain $2,988,703.54 | Base $1,740,580.58 | Ethereum $117,527.06 | Linea $111,189.80
 
 ## Project Description
 
-Risk Curators. Structurally: 175 project-authored contract(s) across 4 chain(s); 6 ERC4626 vaults, 10 ERC20 tokens, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for alphagrowth. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 8 functional families. Its contracts share 63 common project-authored base contract(s) (feemodule, shared, evcutil). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 27 contract row(s) across arbitrum, base, ethereum, linea, unichain. Structural roles: 17 core, 10 unclassified. 16 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 27
+- Structural roles: core (17), unclassified (10)
+- Contract kinds: contract (27)
+- Detected standards: erc1967proxy (16)
+- Frameworks: openzeppelin-upgradeable (16), permit2 (1)
+- Upgradeable-pattern rows: 16
+
+## Fork Analysis
+
+0 of 230 contracts are derived from known codebases. 230 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x0120c2...f1b460`, chain 1)
+- UnnamedContract (`0x056f3a...87718e`, chain 1)
+- UnnamedContract (`0x09136d...a80ed3`, chain 1)
+- UnnamedContract (`0x0c01f0...7d9534`, chain 1)
+- UnnamedContract (`0x0dbadd...fd05f9`, chain 1)
+- UnnamedContract (`0x0f93f3...075b32`, chain 1)
+- UnnamedContract (`0x117576...bfa866`, chain 1)
+- UnnamedContract (`0x122e9e...fbbaaf`, chain 1)
+- UnnamedContract (`0x155d4a...f0dd8a`, chain 1)
+- UnnamedContract (`0x1987c2...ce126a`, chain 1)
+- UnnamedContract (`0x1e0b68...00a06d`, chain 1)
+- UnnamedContract (`0x1f4618...7c516f`, chain 1)
+- UnnamedContract (`0x25c538...e841b2`, chain 1)
+- UnnamedContract (`0x27052e...a6c03c`, chain 1)
+- UnnamedContract (`0x28c6f8...f38cea`, chain 1)
+- UnnamedContract (`0x2daca7...bc4cf6`, chain 1)
+- UnnamedContract (`0x2df975...70922e`, chain 1)
+- UnnamedContract (`0x313603...162162`, chain 1)
+- UnnamedContract (`0x3152ec...4536e0`, chain 1)
+- UnnamedContract (`0x315f93...a8a38c`, chain 1)
+- UnnamedContract (`0x328646...786c01`, chain 1)
+- UnnamedContract (`0x3bfa66...daf4e5`, chain 1)
+- UnnamedContract (`0x3f7cca...9e79ad`, chain 1)
+- UnnamedContract (`0x417224...32d277`, chain 1)
+- UnnamedContract (`0x481d49...0d3fa7`, chain 1)
+- UnnamedContract (`0x561ff9...b8b0df`, chain 1)
+- UnnamedContract (`0x586719...1193e8`, chain 1)
+- UnnamedContract (`0x5a0064...500994`, chain 1)
+- UnnamedContract (`0x5a9612...3caae8`, chain 1)
+- UnnamedContract (`0x6173b0...64cfa2`, chain 1)
+- UnnamedContract (`0x61aac4...2b5028`, chain 1)
+- UnnamedContract (`0x631d8e...634de8`, chain 1)
+- UnnamedContract (`0x67e4e4...11d96f`, chain 1)
+- UnnamedContract (`0x6fc6be...a4d7ce`, chain 1)
+- UnnamedContract (`0x74034e...81c959`, chain 1)
+- UnnamedContract (`0x75e695...481c09`, chain 1)
+- UnnamedContract (`0x77710e...ed5f84`, chain 1)
+- UnnamedContract (`0x797dd8...7d48a9`, chain 1)
+- UnnamedContract (`0x7c280d...34c5a8`, chain 1)
+- UnnamedContract (`0x819662...4c5638`, chain 1)
+- UnnamedContract (`0x81f8ac...e8a582`, chain 1)
+- UnnamedContract (`0x82c710...7f86fa`, chain 1)
+- UnnamedContract (`0x889b0a...c2b35f`, chain 1)
+- UnnamedContract (`0x8dde38...44dc4c`, chain 1)
+- UnnamedContract (`0x9167ff...e6de06`, chain 1)
+- UnnamedContract (`0x940fca...2179e8`, chain 1)
+- UnnamedContract (`0x94edbb...c97888`, chain 1)
+- UnnamedContract (`0x982814...6a93b4`, chain 1)
+- UnnamedContract (`0x998d76...c88ba4`, chain 1)
+- UnnamedContract (`0xa10bdc...fff702`, chain 1)
+- UnnamedContract (`0xa28c23...f1fe2b`, chain 1)
+- UnnamedContract (`0xa586cb...bc6185`, chain 1)
+- UnnamedContract (`0xa8cc68...0fdd10`, chain 1)
+- UnnamedContract (`0xa992d3...f737af`, chain 1)
+- UnnamedContract (`0xab2545...d36b1b`, chain 1)
+- UnnamedContract (`0xabbe76...495325`, chain 1)
+- UnnamedContract (`0xac73ef...b70eda`, chain 1)
+- UnnamedContract (`0xae4d56...e095c8`, chain 1)
+- UnnamedContract (`0xb4f776...535750`, chain 1)
+- UnnamedContract (`0xb57320...cce6f7`, chain 1)
+- UnnamedContract (`0xb5fa20...dafa71`, chain 1)
+- UnnamedContract (`0xb77e25...a907aa`, chain 1)
+- UnnamedContract (`0xbc4b4a...4628f1`, chain 1)
+- UnnamedContract (`0xbd9a87...36e0cb`, chain 1)
+- UnnamedContract (`0xbef0c8...3f7abe`, chain 1)
+- UnnamedContract (`0xc40a68...607d01`, chain 1)
+- UnnamedContract (`0xc41252...e1b0c5`, chain 1)
+- UnnamedContract (`0xc51e90...ee5238`, chain 1)
+- UnnamedContract (`0xcad0be...2765b7`, chain 1)
+- UnnamedContract (`0xce45ef...7873de`, chain 1)
+- UnnamedContract (`0xcf47fb...a8d47d`, chain 1)
+- UnnamedContract (`0xd1552d...a5c273`, chain 1)
+- UnnamedContract (`0xd53f83...540724`, chain 1)
+- UnnamedContract (`0xd5f9af...c8de64`, chain 1)
+- UnnamedContract (`0xd6506d...6cfe5f`, chain 1)
+- UnnamedContract (`0xd8b27c...4984c2`, chain 1)
+- UnnamedContract (`0xdc1aef...287e49`, chain 1)
+- UnnamedContract (`0xdc685c...452ac8`, chain 1)
+- UnnamedContract (`0xe0a80d...c42bce`, chain 1)
+- UnnamedContract (`0xe1ce9a...458a10`, chain 1)
+- UnnamedContract (`0xe3b66c...126760`, chain 1)
+- UnnamedContract (`0xe3eb09...12a9e7`, chain 1)
+- UnnamedContract (`0xe47bab...7d820e`, chain 1)
+- UnnamedContract (`0xe668c3...337786`, chain 1)
+- UnnamedContract (`0xe846ca...a82eaf`, chain 1)
+- UnnamedContract (`0xea0c04...6fbc90`, chain 1)
+- UnnamedContract (`0xea79e4...9e4fe1`, chain 1)
+- UnnamedContract (`0xed667e...6447d7`, chain 1)
+- UnnamedContract (`0xee8693...8aba3f`, chain 1)
+- UnnamedContract (`0xf26c68...f0b732`, chain 1)
+- UnnamedContract (`0xf2ec2d...bd1ce4`, chain 1)
+- UnnamedContract (`0xf4bc42...cd06ca`, chain 1)
+- UnnamedContract (`0xf69ff7...99716c`, chain 1)
+- UnnamedContract (`0xf9a23b...88aa19`, chain 1)
+- UnnamedContract (`0xfc323c...b708dd`, chain 1)
+- UnnamedContract (`0xfc6f3a...c4a359`, chain 1)
+- UnnamedContract (`0x218c9e...3ec6e5`, chain 130)
+- UnnamedContract (`0x25e2ef...dade49`, chain 130)
+- UnnamedContract (`0x5adade...437e2a`, chain 130)
+- UnnamedContract (`0x6bc1f9...419436`, chain 130)
+- UnnamedContract (`0xcf28a1...da076d`, chain 130)
+- UnnamedContract (`0xe6806b...48d8e8`, chain 130)
+- UnnamedContract (`0x07954b...c50524`, chain 8453)
+- UnnamedContract (`0x0a6af3...0ca0cb`, chain 8453)
+- UnnamedContract (`0x13632e...ab98a4`, chain 8453)
+- UnnamedContract (`0x16b443...eacbfd`, chain 8453)
+- UnnamedContract (`0x1e2f1e...b3847f`, chain 8453)
+- UnnamedContract (`0x1fd3a2...15b885`, chain 8453)
+- UnnamedContract (`0x24d633...a33933`, chain 8453)
+- UnnamedContract (`0x29dbce...7d7a5c`, chain 8453)
+- UnnamedContract (`0x34abb4...64101a`, chain 8453)
+- UnnamedContract (`0x38df63...29afff`, chain 8453)
+- UnnamedContract (`0x3f131a...cd26af`, chain 8453)
+- UnnamedContract (`0x401e8e...86c124`, chain 8453)
+- UnnamedContract (`0x4c1aed...90f61e`, chain 8453)
+- UnnamedContract (`0x596dbb...2c7f93`, chain 8453)
+- UnnamedContract (`0x5ce15f...ecd9ba`, chain 8453)
+- UnnamedContract (`0x60c61a...720d0f`, chain 8453)
+- UnnamedContract (`0x611745...b898d1`, chain 8453)
+- UnnamedContract (`0x614bd5...cd5d17`, chain 8453)
+- UnnamedContract (`0x6ae4ec...e77ef1`, chain 8453)
+- UnnamedContract (`0x6d6021...e53113`, chain 8453)
+- UnnamedContract (`0x774c08...5df10a`, chain 8453)
+- UnnamedContract (`0x779225...74e2c6`, chain 8453)
+- UnnamedContract (`0x78d6a3...4f9b3a`, chain 8453)
+- UnnamedContract (`0x7c1487...bf8f53`, chain 8453)
+- UnnamedContract (`0x81744b...342108`, chain 8453)
+- UnnamedContract (`0x82d499...6439b2`, chain 8453)
+- UnnamedContract (`0x85114a...749616`, chain 8453)
+- UnnamedContract (`0x91a9ed...0b3f05`, chain 8453)
+- UnnamedContract (`0x9f8765...4526d0`, chain 8453)
+- UnnamedContract (`0xa67a95...256121`, chain 8453)
+- UnnamedContract (`0xa6ad67...5fcf86`, chain 8453)
+- UnnamedContract (`0xb45e4f...aa8b4a`, chain 8453)
+- UnnamedContract (`0xbc4639...602ea2`, chain 8453)
+- UnnamedContract (`0xc063c3...a650fb`, chain 8453)
+- UnnamedContract (`0xc64fd6...6ae32e`, chain 8453)
+- UnnamedContract (`0xcf8f0e...1743a6`, chain 8453)
+- UnnamedContract (`0xd7c286...edb190`, chain 8453)
+- UnnamedContract (`0xdbdc9c...6b3330`, chain 8453)
+- UnnamedContract (`0xdc4efb...24af8d`, chain 8453)
+- UnnamedContract (`0xeaa709...de5983`, chain 8453)
+- UnnamedContract (`0xedcc19...f2f91f`, chain 8453)
+- UnnamedContract (`0xeef576...8f6743`, chain 8453)
+- UnnamedContract (`0xf3bb6b...37caea`, chain 8453)
+- UnnamedContract (`0xf44801...989289`, chain 8453)
+- UnnamedContract (`0x05d28a...6160b3`, chain 42161)
+- UnnamedContract (`0x06b763...6e6a7f`, chain 42161)
+- UnnamedContract (`0x0a1ecc...69b899`, chain 42161)
+- UnnamedContract (`0x124bec...eedb57`, chain 42161)
+- UnnamedContract (`0x22038f...901c3f`, chain 42161)
+- UnnamedContract (`0x27b3b7...0f4d3c`, chain 42161)
+- UnnamedContract (`0x37512f...38cd51`, chain 42161)
+- UnnamedContract (`0x44c10d...c0c1cc`, chain 42161)
+- UnnamedContract (`0x46e57d...be3812`, chain 42161)
+- UnnamedContract (`0x482c3e...685e98`, chain 42161)
+- UnnamedContract (`0x4ad21e...5e02ee`, chain 42161)
+- UnnamedContract (`0x4d375e...b4917e`, chain 42161)
+- UnnamedContract (`0x4dd134...f83c93`, chain 42161)
+- UnnamedContract (`0x5059ff...a01ad7`, chain 42161)
+- UnnamedContract (`0x5f7f81...365408`, chain 42161)
+- UnnamedContract (`0x683b77...80dbe7`, chain 42161)
+- UnnamedContract (`0x6afb8d...aa673b`, chain 42161)
+- UnnamedContract (`0x6d47cb...074859`, chain 42161)
+- UnnamedContract (`0x78e3e0...f7edff`, chain 42161)
+- UnnamedContract (`0x79e1f4...384e6b`, chain 42161)
+- UnnamedContract (`0x7d9790...61b785`, chain 42161)
+- UnnamedContract (`0x878e12...5204ad`, chain 42161)
+- UnnamedContract (`0x889e1c...68896c`, chain 42161)
+- UnnamedContract (`0x8ca487...1e4c46`, chain 42161)
+- UnnamedContract (`0xa8616e...5f1a58`, chain 42161)
+- UnnamedContract (`0xaabb9c...e1fdd8`, chain 42161)
+- UnnamedContract (`0xcc6700...b815c6`, chain 42161)
+- UnnamedContract (`0xdbd974...894ee2`, chain 42161)
+- UnnamedContract (`0xe81157...09086d`, chain 42161)
+- UnnamedContract (`0xee074c...2d492c`, chain 42161)
+- UnnamedContract (`0xf2cf48...df81ca`, chain 42161)
+- UnnamedContract (`0xfe3320...926ddf`, chain 42161)
+- UnnamedContract (`0x085f80...65e852`, chain 59144)
+- UnnamedContract (`0x140bd9...99faf5`, chain 59144)
+- UnnamedContract (`0x14efcc...0beada`, chain 59144)
+- UnnamedContract (`0x179dfd...f1afb8`, chain 59144)
+- UnnamedContract (`0x1da14e...457d7d`, chain 59144)
+- UnnamedContract (`0x3cc796...68a839`, chain 59144)
+- UnnamedContract (`0x42267d...cedde0`, chain 59144)
+- UnnamedContract (`0x4789d8...0604f1`, chain 59144)
+- UnnamedContract (`0x5464cc...9de2d3`, chain 59144)
+- UnnamedContract (`0x5df408...7b8abf`, chain 59144)
+- UnnamedContract (`0x64623f...7d23d0`, chain 59144)
+- UnnamedContract (`0x873fea...a93e56`, chain 59144)
+- UnnamedContract (`0x8bf8ed...5356f1`, chain 59144)
+- UnnamedContract (`0x90f0b8...8c918d`, chain 59144)
+- UnnamedContract (`0x92ba0d...8d9de0`, chain 59144)
+- UnnamedContract (`0x9947f3...47a2a9`, chain 59144)
+- UnnamedContract (`0x9ac2f0...2abb1f`, chain 59144)
+- UnnamedContract (`0xa7ada0...35647d`, chain 59144)
+- UnnamedContract (`0xae8da9...e9efff`, chain 59144)
+- UnnamedContract (`0xb11fd9...2a3cab`, chain 59144)
+- UnnamedContract (`0xb135dc...22efee`, chain 59144)
+- UnnamedContract (`0xb770dc...e5aa49`, chain 59144)
+- UnnamedContract (`0xcbef9b...7a578c`, chain 59144)
+- UnnamedContract (`0xe27c25...469e1f`, chain 59144)
+- UnnamedContract (`0xf3c659...f8588a`, chain 59144)
+- UnnamedContract (`0xfb6448...496e6f`, chain 59144)
+- BeaconProxy (`0x2f849b...ec8a6b`, chain 1)
+- BeaconProxy (`0x3573a8...dd81c6`, chain 1)
+- BeaconProxy (`0x412d0e...640229`, chain 1)
+- BeaconProxy (`0x1f3134...0e1ffc`, chain 130)
+- BeaconProxy (`0x54ff50...02d06a`, chain 130)
+- BeaconProxy (`0x5d2511...796485`, chain 130)
+- BeaconProxy (`0x6eae95...a682ba`, chain 130)
+- BeaconProxy (`0x7650d7...24086f`, chain 130)
+- BeaconProxy (`0xd49181...64ead3`, chain 130)
+- BeaconProxy (`0xe36da4...729f86`, chain 130)
+- BeaconProxy (`0x085178...9a7ee7`, chain 8453)
+- BeaconProxy (`0x0a1a3b...80ee16`, chain 8453)
+- BeaconProxy (`0x358f25...b9ea49`, chain 8453)
+- BeaconProxy (`0x3f0d3f...638a7a`, chain 8453)
+- BeaconProxy (`0x5fe2de...74ac25`, chain 8453)
+- BeaconProxy (`0x7b181d...572609`, chain 8453)
+- BeaconProxy (`0x859160...a4b410`, chain 8453)
+- BeaconProxy (`0x882018...5d7f8b`, chain 8453)
+- BeaconProxy (`0x990d61...df7cf2`, chain 8453)
+- BeaconProxy (`0xd4a805...130d14`, chain 8453)
+- BeaconProxy (`0xe72ea9...aec7e4`, chain 8453)
+- BeaconProxy (`0xfab9af...05ccd3`, chain 8453)
+- BeaconProxy (`0x359e36...21aa18`, chain 59144)
+- BeaconProxy (`0x8955d7...b217b4`, chain 59144)
+- BeaconProxy (`0xa8a02e...854968`, chain 59144)
+- BeaconProxy (`0xf4712f...327086`, chain 59144)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 744; live-surface contracts included: 318 (273 live, 45 unknown).
-- Excluded by liveness: 426 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 27; live-surface contracts included: 27 (26 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 208/208 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 4/67 (6.0%)
-- Deployed-live implementations: 67 of 111 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 4/67
-- Verified + Unaudited implementations: 63
+- Coverage of address-book-owned deployed-live implementations: 0/4 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 208 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 26
+- Deployed-live implementations: 208 of 208 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/4
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
-- Unverified implementations: 44
-- Unique implementations: 111
-- Raw deployments: 318
-- Audits discovered: 16 (16 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 7
-- ASD (verified + unaudited TVL): $5,936,051.72
-- Latest audit: 2025-11 (fresh)
-- Audit staleness (calendar age): 3 fresh, 13 aging, 0 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 4 match-unverified
-- Tier 1 coverage: 4.5% (ChainSecurity, Cyfrin, Spearbit)
+- Unverified implementations: 204
+- Unique implementations: 208
+- Raw deployments: 230
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 0
+- ASD (verified + unaudited TVL): $4,958,000.98
+- Latest audit: n/a (unknown)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| Spearbit | Tier 1 | 3 | 4.5% | 2025-09 |
-| Cyfrin | Tier 1 | 2 | 3.0% | 2025-05 |
-| ChainSecurity | Tier 1 | 1 | 1.5% | 2025-03 |
-| Pashov Audit Group | Tier 2 | 1 | 1.5% | 2025-11 |
-| yAudit | Tier 2 | 1 | 1.5% | 2025-11 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (4)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| ERC4626EVCCollateralSecuritizeFactory | registry | ethereum | n/a | [`0x5f51d9...f76cbb`](./contracts/ethereum-1/0x5f51d980f15fe6075ae30394dc35de57a4f76cbb/) | ✅ Audited |
-| EulerSwapFactory | unknown | ethereum | n/a | 4 deployments: ethereum [`0x806af3...4b1211`](./contracts/ethereum-1/0x806af31a325be46812fc8e8391333c4fa74b1211/); ethereum `0xb013be...2cf228`; ethereum `0xd05213...04df5f`; ethereum `0xfb9fe6...10cad4` | ✅ Audited |
-| EulerSwapPeriphery | adapter | ethereum | n/a | 2 deployments: ethereum [`0x208ff5...d16b06`](./contracts/ethereum-1/0x208ff5eb543814789321daa1b5eb551881d16b06/); ethereum `0xd3a349...fd513e` | ✅ Audited |
-| EulerSwapRegistry | registry | ethereum | n/a | [`0x5fccb8...32814a`](./contracts/ethereum-1/0x5fccb84363f020c0cade052c9c654aabf932814a/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (63)
+### ⚠️ Verified + Unaudited (4)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| EVault | core_logic | unichain | n/a | 7 deployments: unichain [`0x1f3134...0e1ffc`](./contracts/unichain-130/0x1f3134c3f3f8add904b9635acbefc0ea0d0e1ffc/); unichain `0x54ff50...02d06a`; unichain `0x5d2511...796485`; unichain `0x6eae95...a682ba`; unichain `0x7650d7...24086f`; unichain `0xd49181...64ead3`; unichain `0xe36da4...729f86` | ⚠️ Unaudited |
-| EVault | core_logic | base | n/a | 12 deployments: base [`0x085178...9a7ee7`](./contracts/base-8453/0x085178078796da17b191f9081b5e2fccc79a7ee7/); base `0x0a1a3b...80ee16`; base `0x358f25...b9ea49`; base `0x3f0d3f...638a7a`; base `0x5fe2de...74ac25`; base `0x7b181d...572609`; base `0x859160...a4b410`; base `0x882018...5d7f8b`; base `0x990d61...df7cf2`; base `0xd4a805...130d14`; base `0xe72ea9...aec7e4`; base `0xfab9af...05ccd3` | ⚠️ Unaudited |
-| EVault | core_logic | ethereum | n/a | 17 deployments: ethereum [`0x29a56a...45cc8e`](./contracts/ethereum-1/0x29a56a1b8214d9cf7c5561811750d5cbdb45cc8e/); ethereum `0x2a3564...8246ad`; ethereum `0x2f849b...ec8a6b`; ethereum `0x2ff5f1...19443b`; ethereum `0x3573a8...dd81c6`; ethereum `0x35d4f8...8e88e3`; ethereum `0x412d0e...640229`; ethereum `0x49d9fd...614eb8`; ethereum `0x69a2fa...217705`; ethereum `0x6fe7fa...da0fbc`; ethereum `0x97c726...7ecc21`; ethereum `0xa7a064...ef7ec3`; ethereum `0xbd858d...0246cd`; ethereum `0xbfdc48...7198e9`; ethereum `0xc11d6b...1b0aef`; ethereum `0xf75d18...90b262`; ethereum `0xfbcc21...59512d` | ⚠️ Unaudited |
-| EVault | core_logic | linea | n/a | 4 deployments: linea [`0x359e36...21aa18`](./contracts/linea-59144/0x359e363c11fc619be76eec8baaa01e61d521aa18/); linea `0x8955d7...b217b4`; linea `0xa8a02e...854968`; linea `0xf4712f...327086` | ⚠️ Unaudited |
-| AccountLens | periphery | ethereum | n/a | [`0xa60c42...e34bc7`](./contracts/ethereum-1/0xa60c4257c809353039a71527dfe701b577e34bc7/) | ⚠️ Unaudited |
-| BalanceForwarder | unknown | ethereum | n/a | [`0xa252af...84fee5`](./contracts/ethereum-1/0xa252af9208e53c0ac6a79a5d0933a8d1f184fee5/) | ⚠️ Unaudited |
-| BeaconProxy | registry | ethereum | n/a | 2 deployments: ethereum [`0x55f9ba...21a3d3`](./contracts/ethereum-1/0x55f9bace2c864ac0d3392ea9fa654b605f21a3d3/); ethereum `0xb7522c...821795` | ⚠️ Unaudited |
-| Borrowing | unknown | ethereum | n/a | [`0x639156...605acf`](./contracts/ethereum-1/0x639156f8feb0cd88205e4861a0224ec169605acf/) | ⚠️ Unaudited |
-| CapRiskSteward | unknown | ethereum | n/a | 2 deployments: ethereum [`0x465528...4f8b8c`](./contracts/ethereum-1/0x465528b234fec209db52c9901dd959742a4f8b8c/); ethereum `0xfe56ca...e89b95` | ⚠️ Unaudited |
-| CapRiskStewardFactory | unknown | ethereum | n/a | 3 deployments: ethereum [`0x93c233...6f3208`](./contracts/ethereum-1/0x93c233008971e878d60a7737657869ab746f3208/); ethereum `0xa446a5...3a448b`; ethereum `0xff00fa...cffb84` | ⚠️ Unaudited |
-| ChronicleOracle | operational_periphery | ethereum | n/a | [`0x28e36e...583b85`](./contracts/ethereum-1/0x28e36ea7481934a651da81483358c67a51583b85/) | ⚠️ Unaudited |
-| CrossAdapter | adapter | ethereum | n/a | 27 deployments: ethereum [`0x130eab...0ffaed`](./contracts/ethereum-1/0x130eabada6f4c663095c8e9e276ab5da670ffaed/); ethereum `0x15226e...aac6bb`; ethereum `0x336d82...fba6e8`; ethereum `0x3fc222...1b4f12`; ethereum `0x4a35fe...b205af`; ethereum `0x55757d...58dcc1`; ethereum `0x562929...ec1832`; ethereum `0x566c24...eef5dd`; ethereum `0x5ae8c1...78c275`; ethereum `0x5b12ce...f6b066`; ethereum `0x5bc6c0...3a554c`; ethereum `0x62b1de...b25f61`; ethereum `0x6a569e...a84dc7`; ethereum `0x8424db...77ed0c`; ethereum `0xa52631...7b6cff`; ethereum `0xa625cb...62c564`; ethereum `0xadccfc...09c988`; ethereum `0xb0baa4...3254f0`; ethereum `0xca5b70...56b85f`; ethereum `0xcf8f3a...972785`; ethereum `0xd201e8...e98f36`; ethereum `0xd6b5eb...1179c5`; ethereum `0xd7440b...40cd22`; ethereum `0xd7ad78...f21895`; ethereum `0xf61517...5e6683`; ethereum `0xf9de42...156ce6`; ethereum `0xffe3b0...fab24e` | ⚠️ Unaudited |
-| DToken | unknown | ethereum | n/a | 6 deployments: ethereum [`0x03601e...6975d7`](./contracts/ethereum-1/0x03601edc8af4b0439d63eb3a45ed11b01c6975d7/); ethereum `0x169fcd...99be8c`; ethereum `0x29dadd...bbff79`; ethereum `0x6e0f1a...153b2c`; ethereum `0xc293f2...64a4c6`; ethereum `0xe374b7...2924e5` | ⚠️ Unaudited |
-| EdgeFactory | unknown | ethereum | n/a | 2 deployments: ethereum [`0x66f616...09927a`](./contracts/ethereum-1/0x66f616de88eeca5e1e3b0b6e9914a60a5c09927a/); ethereum `0xa969b8...1659bd` | ⚠️ Unaudited |
-| EdgeFactoryPerspective | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8c7543...d4d788`](./contracts/ethereum-1/0x8c7543f83d3d295f68447792581f73d7d5d4d788/); ethereum `0xf9ffeb...a66309` | ⚠️ Unaudited |
-| EscrowedCollateralPerspective | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x4e58bb...7fadde`](./contracts/ethereum-1/0x4e58bbea423c4b9a2fc7b8e58f5499f9927fadde/); ethereum `0xc68cb3...cd5828` | ⚠️ Unaudited |
-| EscrowPerspective | unknown | ethereum | n/a | 2 deployments: ethereum [`0x91f046...ead0c5`](./contracts/ethereum-1/0x91f046e629226b2c78b84fa1537603961aead0c5/); ethereum `0xf0e1db...74dded` | ⚠️ Unaudited |
-| EthereumVaultConnector | core_logic | ethereum | n/a | [`0x0c9a3d...9ee383`](./contracts/ethereum-1/0x0c9a3dd6b8f28529d72d7f9ce918d493519ee383/) | ⚠️ Unaudited |
-| EToken | unknown | ethereum | n/a | 7 deployments: ethereum [`0x090c75...0d56cf`](./contracts/ethereum-1/0x090c752b7b26d3cc382bf532ec9c4403c80d56cf/); ethereum `0x1245f0...eafbdb`; ethereum `0x196fdd...d33cb8`; ethereum `0x75e82d...ddc1e0`; ethereum `0xbb0d4b...1f4c0a`; ethereum `0xee385a...33abab`; ethereum `0xf376cf...42bcfc` | ⚠️ Unaudited |
-| EulerBasePerspective | unknown | ethereum | n/a | [`0x4df63d...318c39`](./contracts/ethereum-1/0x4df63d20cb2a5faa5b9cb978089bdfccfd318c39/) | ⚠️ Unaudited |
-| EulerEarn | unknown | ethereum | n/a | 2 deployments: ethereum [`0x253453...a4daab`](./contracts/ethereum-1/0x253453bc43f0b961528c9cbc18a3ae3de0a4daab/); ethereum `0xba4214...043da9` | ⚠️ Unaudited |
-| EulerEarnFactory | unknown | ethereum | n/a | 3 deployments: ethereum [`0x59709b...308af4`](./contracts/ethereum-1/0x59709b029b140c853fe28d277f83c3a65e308af4/); ethereum `0x9a20d3...1e3427`; ethereum `0xa36d0b...07ff2d` | ⚠️ Unaudited |
-| EulerEarnFactoryPerspective | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa45895...a1667e`](./contracts/ethereum-1/0xa45895144f2b6e7e6d2fcaffe6ea19e86aa1667e/); ethereum `0xc09be1...098b52` | ⚠️ Unaudited |
-| EulerEarnVault | unknown | ethereum | n/a | 3 deployments: ethereum [`0x02122a...2dbd05`](./contracts/ethereum-1/0x02122afd2687ddb1dd3b9f2f2d7cc6fd422dbd05/); ethereum `0x264bad...44e27c`; ethereum `0xfd78c8...56cded` | ⚠️ Unaudited |
-| EulerEarnVaultLens | unknown | ethereum | n/a | 9 deployments: ethereum [`0x07d6b3...635091`](./contracts/ethereum-1/0x07d6b3981cbc1dc34102735b987b175116635091/); ethereum `0x189841...a2458e`; ethereum `0x20954c...5013d9`; ethereum `0xa09144...41a8be`; ethereum `0xadd180...502fdd`; ethereum `0xafad3c...f6285f`; ethereum `0xcfe86b...fa4f9a`; ethereum `0xf8be6d...6a05ef`; ethereum `0xf99770...64084a` | ⚠️ Unaudited |
-| EulerFactoryPerspective | unknown | ethereum | n/a | 2 deployments: ethereum [`0x866708...d4a74f`](./contracts/ethereum-1/0x8667082f128fa13139b859c1b40b4c8014d4a74f/); ethereum `0xe6beaa...e17f54` | ⚠️ Unaudited |
-| EulerGeneralView | unknown | ethereum | n/a | [`0xacc25c...e68e42`](./contracts/ethereum-1/0xacc25c4d40651676feed43a3467f3169e3e68e42/) | ⚠️ Unaudited |
-| EulerSimpleLens | unknown | ethereum | n/a | [`0xc2d41d...20b38e`](./contracts/ethereum-1/0xc2d41d42939109cdcfa26c6965269d9c0220b38e/) | ⚠️ Unaudited |
-| EulerSwap | unknown | ethereum | n/a | 4 deployments: ethereum [`0x05d6c4...ea92ee`](./contracts/ethereum-1/0x05d6c4d46a794468f282469c0e9346f121ea92ee/); ethereum `0x8b0e04...74dc97`; ethereum `0xc35a0f...d6b117`; ethereum `0xf5d355...ce33d1` | ⚠️ Unaudited |
-| EulerSwapManagement | unknown | ethereum | n/a | [`0xa6c1dd...5ef86a`](./contracts/ethereum-1/0xa6c1ddc10fb13fdd998a4940a883aa952f5ef86a/) | ⚠️ Unaudited |
-| EulerSwapProtocolFeeConfig | governance | ethereum | n/a | [`0x5171ae...f53b63`](./contracts/ethereum-1/0x5171aed04fa9551db484f07c853f252bc6f53b63/) | ⚠️ Unaudited |
-| EulerUngovernedPerspective | unknown | ethereum | n/a | 10 deployments: ethereum [`0x000d8a...b05875`](./contracts/ethereum-1/0x000d8aa9e414b9e7e7591a456ca910fb3bb05875/); ethereum `0x2206c3...f0710b`; ethereum `0x534556...cd60bd`; ethereum `0x600bbe...21b507`; ethereum `0x60fcc0...7955ee`; ethereum `0x6a123b...3d6215`; ethereum `0x7160cb...307bc6`; ethereum `0x7695a3...17351c`; ethereum `0xb50a07...5e7fbf`; ethereum `0xd9dec3...f52646` | ⚠️ Unaudited |
-| EVKFactoryPerspective | unknown | ethereum | n/a | [`0xb30f23...82e182`](./contracts/ethereum-1/0xb30f23bc5f93f097b3a699f71b0b1718fc82e182/) | ⚠️ Unaudited |
-| Exec | unknown | ethereum | n/a | 3 deployments: ethereum [`0x0bf049...3bb44d`](./contracts/ethereum-1/0x0bf04952a5b3ef6bad343c2218f584a7413bb44d/); ethereum `0x14cbac...8436d2`; ethereum `0x155020...cac8c1` | ⚠️ Unaudited |
-| FactoryGovernor | registry | ethereum | n/a | 2 deployments: ethereum [`0x2f1325...dc1f3d`](./contracts/ethereum-1/0x2f13256e04022d6356d8ce8c53c7364e13dc1f3d/); ethereum `0x799e9b...42a224` | ⚠️ Unaudited |
-| Fee | unknown | ethereum | n/a | 2 deployments: ethereum [`0x0009a4...46a0c9`](./contracts/ethereum-1/0x0009a4657c52ea648490aa06138b88ce0f46a0c9/); ethereum `0x42aeb7...ffbe13` | ⚠️ Unaudited |
-| FixedRateOracle | operational_periphery | ethereum | n/a | 6 deployments: ethereum [`0x4cfa6e...c3b7c1`](./contracts/ethereum-1/0x4cfa6e2783c02ce427d720e22e574c8c89c3b7c1/); ethereum `0x86cb59...be3f56`; ethereum `0x95df7a...9b8439`; ethereum `0xb5004f...31ffb4`; ethereum `0xbd3365...2121dc`; ethereum `0xf58f4d...bdd9f0` | ⚠️ Unaudited |
-| FlashLoan | unknown | ethereum | n/a | [`0x07df2a...8259b3`](./contracts/ethereum-1/0x07df2ad9878f8797b4055230bbae5c808b8259b3/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | [`0xcad001...fb1dce`](./contracts/ethereum-1/0xcad001c30e96765ac90307669d578219d4fb1dce/) | ⚠️ Unaudited |
-| GovernableWhitelistPerspective | unknown | ethereum | n/a | 2 deployments: ethereum [`0x232f49...eb9399`](./contracts/ethereum-1/0x232f49b73b3e1c65bccb1ff4874cadcd16eb9399/); ethereum `0x3f323e...77f418` | ⚠️ Unaudited |
-| Governance | unknown | ethereum | n/a | 3 deployments: ethereum [`0x04cb46...5adfde`](./contracts/ethereum-1/0x04cb462a121e1799722fe84c60e790b64d5adfde/); ethereum `0x554ee3...812f73`; ethereum `0xe83b69...91a1cf` | ⚠️ Unaudited |
-| Governance | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8ff1c8...29dd7d`](./contracts/ethereum-1/0x8ff1c814719096b61abf00bb46ead0c9a529dd7d/); ethereum `0xa61f50...5f0b67` | ⚠️ Unaudited |
-| GovernedPerspective | unknown | ethereum | n/a | 4 deployments: ethereum [`0x492e9f...c74d44`](./contracts/ethereum-1/0x492e9fe1289d43f8bb6275237bf16c9248c74d44/); ethereum `0x747a72...05165e`; ethereum `0xc01218...6e6eb2`; ethereum `0xd39452...29ce96` | ⚠️ Unaudited |
-| GovernorAccessControlEmergency | unknown | ethereum | n/a | 2 deployments: ethereum [`0x088756...a63153`](./contracts/ethereum-1/0x088756eb730a08cbeb98dfe67ca74697a8a63153/); ethereum `0x354008...e30a1b` | ⚠️ Unaudited |
-| GovernorAccessControlEmergencyFactory | unknown | ethereum | n/a | [`0x025c88...120faf`](./contracts/ethereum-1/0x025c8831c6e45420df8e71f7b6b99f733d120faf/) | ⚠️ Unaudited |
-| Hooks | unknown | ethereum | n/a | 2 deployments: ethereum [`0x32737a...978ba3`](./contracts/ethereum-1/0x32737a15c40d7d42e6c9013138d3b2a775978ba3/); ethereum `0xd62665...571d82` | ⚠️ Unaudited |
-| HookTarget | unknown | ethereum | n/a | [`0x6f5dad...1cad6a`](./contracts/ethereum-1/0x6f5dad1fce5944c241dfb586293d81fc791cad6a/) | ⚠️ Unaudited |
-| HookTargetAccessControlKeyring | unknown | ethereum | n/a | [`0x6a7ced...a83d0a`](./contracts/ethereum-1/0x6a7ced396c7317f9465640a583b7f2564ca83d0a/) | ⚠️ Unaudited |
-| Initialize | unknown | ethereum | n/a | [`0x7dd834...e84f3c`](./contracts/ethereum-1/0x7dd834c7844710435bd471b7499b16421ee84f3c/) | ⚠️ Unaudited |
-| IRMLens | periphery | ethereum | n/a | 8 deployments: ethereum [`0x061b6b...0f807a`](./contracts/ethereum-1/0x061b6b0ba1b552006556c278fc8798d1e20f807a/); ethereum `0x0a6bf6...8e7743`; ethereum `0x35b2fa...bfeac2`; ethereum `0x57b1bb...6c52c1`; ethereum `0x5c5302...7e460b`; ethereum `0x97fcaa...c3f4c8`; ethereum `0xbbc1ca...2109cf`; ethereum `0xc6e506...843626` | ⚠️ Unaudited |
-| Liquidation | unknown | ethereum | n/a | 4 deployments: ethereum [`0x16fa62...2ad23c`](./contracts/ethereum-1/0x16fa62d8c322a6156fb5ef267342a3c7952ad23c/); ethereum `0x9ea85b...9f156c`; ethereum `0xaed37a...19493e`; ethereum `0xd737ee...45ed98` | ⚠️ Unaudited |
-| Markets | unknown | ethereum | n/a | 3 deployments: ethereum [`0x12401f...b41477`](./contracts/ethereum-1/0x12401f97e2264adbf8ff98da72e3465d97b41477/); ethereum `0x1e21ca...7f7fce`; ethereum `0xe5d0a7...ba2cd1` | ⚠️ Unaudited |
-| OracleLens | unknown | ethereum | n/a | 14 deployments: ethereum [`0x02bd64...ec2d83`](./contracts/ethereum-1/0x02bd64ce7fbdbe7eb84d1f9b08e0cc2a7fec2d83/); ethereum `0x0c4773...f3f183`; ethereum `0x0f8560...47bd4f`; ethereum `0x1c4224...fe518e`; ethereum `0x26b1e2...26a867`; ethereum `0x30e6df...f7b48a`; ethereum `0x400043...f9dbc4`; ethereum `0x500e76...923d38`; ethereum `0x53dcfc...b1858a`; ethereum `0x76e96f...59a766`; ethereum `0x787449...a9045d`; ethereum `0x79211f...08fab6`; ethereum `0xc2ca69...7c5703`; ethereum `0xddd1ea...eb0334` | ⚠️ Unaudited |
-| Rewards | unknown | ethereum | n/a | 2 deployments: ethereum [`0x0ee5c5...e2fcec`](./contracts/ethereum-1/0x0ee5c537e91bb988fe615d0da78582ed21e2fcec/); ethereum `0xfde7a2...cb265b` | ⚠️ Unaudited |
-| RiskManager | unknown | ethereum | n/a | 6 deployments: ethereum [`0x00d54f...0ca69d`](./contracts/ethereum-1/0x00d54f129293b1580c779c8f04b2d8ce370ca69d/); ethereum `0x3297c8...8931a6`; ethereum `0x402c85...2ca376`; ethereum `0x98d7a0...b92ce6`; ethereum `0xad8a5c...2dd652`; ethereum `0xb4d68b...afe2ad` | ⚠️ Unaudited |
-| SnapshotRegistry | unknown | ethereum | n/a | 10 deployments: ethereum [`0x0a6467...bf459c`](./contracts/ethereum-1/0x0a64670763777e59898ae28d6acb7f2062bf459c/); ethereum `0x40fc79...71445f`; ethereum `0x46157b...e61433`; ethereum `0x4a337c...a325dc`; ethereum `0x4e72f8...cfac97`; ethereum `0x546b74...47987c`; ethereum `0x7fa4d5...4521df`; ethereum `0xa084a7...7c5fe6`; ethereum `0xb3b30f...c219ac`; ethereum `0xb8b734...39c94a` | ⚠️ Unaudited |
-| Strategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x4fe5a6...6e6be8`](./contracts/ethereum-1/0x4fe5a6ee0be736cf7ec34c95a55b9d006e6e6be8/); ethereum `0xbd29b6...4e2fa3` | ⚠️ Unaudited |
-| TimelockController | governance | ethereum | n/a | 2 deployments: ethereum [`0x1b8c36...f74f5a`](./contracts/ethereum-1/0x1b8c367ae56656b1d0901b2add1ad3226ff74f5a/); ethereum `0xfb034c...07a968` | ⚠️ Unaudited |
-| Token | unknown | ethereum | n/a | [`0x8a58ae...94973c`](./contracts/ethereum-1/0x8a58aecbe677682d0f037c67f37f5a7a2e94973c/) | ⚠️ Unaudited |
-| UtilsLens | unknown | ethereum | n/a | 14 deployments: ethereum [`0x009bd9...16a0d8`](./contracts/ethereum-1/0x009bd94ad5fa60e676bfd3a45b5305463216a0d8/); ethereum `0x1ad6ed...6ee539`; ethereum `0x1b6e0b...af2d95`; ethereum `0x39cea1...3fe2f4`; ethereum `0x3ebfd2...27fb36`; ethereum `0x6104c0...dec34a`; ethereum `0x7b89cc...e6e0fc`; ethereum `0xb8cac3...5afcc1`; ethereum `0xbef9b6...fcc071`; ethereum `0xc56752...24a753`; ethereum `0xcf1801...488727`; ethereum `0xdf7ec7...e1938d`; ethereum `0xef3f5d...bbd3d1`; ethereum `0xf364ce...6118ea` | ⚠️ Unaudited |
-| Vault | unknown | ethereum | n/a | [`0xb4ad4d...7f0188`](./contracts/ethereum-1/0xb4ad4d9c02c01b01cf586c16f01c58c73c7f0188/) | ⚠️ Unaudited |
-| VaultLens | unknown | ethereum | n/a | 21 deployments: ethereum [`0x079fa5...c0e45e`](./contracts/ethereum-1/0x079fa5cde9c9647d26e79f3520fbdf9dbcc0e45e/); ethereum `0x0dd643...734fd8`; ethereum `0x352e64...3f2c3b`; ethereum `0x57904b...035c90`; ethereum `0x66529d...d98498`; ethereum `0x6f544e...77ae55`; ethereum `0x72bbdb...f51f15`; ethereum `0x7427e9...0f3177`; ethereum `0x75aaf5...90a29a`; ethereum `0x83801c...fc5b60`; ethereum `0x8489e3...c77f71`; ethereum `0x91f5a0...6209e8`; ethereum `0xa18d79...ea66ab`; ethereum `0xa8695d...da8914`; ethereum `0xb65c7a...bc59eb`; ethereum `0xc3c456...657403`; ethereum `0xcd28b1...1174a2`; ethereum `0xdb259a...7fc3e2`; ethereum `0xe240c5...55b539`; ethereum `0xe4044d...9ed29e`; ethereum `0xf7c8d2...a10ac6` | ⚠️ Unaudited |
-| WithdrawalQueue | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8542f0...6e3177`](./contracts/ethereum-1/0x8542f0461e89bfa3324b0911c63f57b9de6e3177/); ethereum `0xff7a0b...f6be57` | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| EVault | core_logic | project_anchor | own_supporting | 7 | unichain | unit-226552 (7 proxies) | 7 deployments: unichain `0x1f3134...0e1ffc`; unichain `0x54ff50...02d06a`; unichain `0x5d2511...796485`; unichain `0x6eae95...a682ba`; unichain `0x7650d7...24086f`; unichain `0xd49181...64ead3`; unichain `0xe36da4...729f86` | ⚠️ Unaudited |
+| EVault | core_logic | project_anchor | own_supporting | 12 | base | unit-226554 (12 proxies) | 12 deployments: base `0x085178...9a7ee7`; base `0x0a1a3b...80ee16`; base `0x358f25...b9ea49`; base `0x3f0d3f...638a7a`; base `0x5fe2de...74ac25`; base `0x7b181d...572609`; base `0x859160...a4b410`; base `0x882018...5d7f8b`; base `0x990d61...df7cf2`; base `0xd4a805...130d14`; base `0xe72ea9...aec7e4`; base `0xfab9af...05ccd3` | ⚠️ Unaudited |
+| EVault | core_logic | project_anchor | own_supporting | 3 | ethereum | unit-226550 (3 proxies) | 3 deployments: ethereum `0x2f849b...ec8a6b`; ethereum `0x3573a8...dd81c6`; ethereum `0x412d0e...640229` | ⚠️ Unaudited |
+| EVault | core_logic | project_anchor | own_supporting | 4 | linea | unit-226553 (4 proxies) | 4 deployments: linea `0x359e36...21aa18`; linea `0x8955d7...b217b4`; linea `0xa8a02e...854968`; linea `0xf4712f...327086` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -148,120 +344,252 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (44)
+### ❓ Unverified (204)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x00cecc...179b8c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | 2 deployments: ethereum `0x021f26...f6557d`; ethereum `0x7995dd...c9e866` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x04d321...525332` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x0fac4d...75c084` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x101f9a...dca1ab` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x193022...183162` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1e3249...d18e66` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x23731d...45d7c2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x24d633...a33933` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x281545...0932da` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2d2f24...3de6f8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3d7d70...69f980` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x3de571...2f2c2d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x479c8f...34792c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x6487c4...eb5063` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x74a221...24180f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7594ae...6943a6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7d092b...0bcca8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x85d88c...107504` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x95058f...d5d6a4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x950c6b...361b39` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9ad2df...584f11` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x9d2b30...720ea4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa2c12a...8a690e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa86cb9...e00265` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb4876b...1441fe` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xbf0459...4fb66c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xca7a82...e900be` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xcd04c0...20aeb4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe7c7b2...97db7d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xeb3332...c9c9a1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf2581c...fdd241` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0x36639e...2d120a` | ❓ Unverified |
-| UnnamedContract | unknown | unichain | n/a | `0x8d9ff3...d352b9` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x2a3564...8246ad` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x441029...d6823a` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x49d9fd...614eb8` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x5304eb...ea0448` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x69a2fa...217705` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x97c726...7ecc21` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xb7522c...821795` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xbd858d...0246cd` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xc11d6b...1b0aef` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xf75d18...90b262` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226329 | `0x0120c2...f1b460` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226330 | `0x056f3a...87718e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226331 | `0x09136d...a80ed3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226332 | `0x0c01f0...7d9534` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226333 | `0x0dbadd...fd05f9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226334 | `0x0f93f3...075b32` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226335 | `0x117576...bfa866` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226336 | `0x122e9e...fbbaaf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226337 | `0x155d4a...f0dd8a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226338 | `0x1987c2...ce126a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226339 | `0x1e0b68...00a06d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226340 | `0x1f4618...7c516f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226341 | `0x25c538...e841b2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226342 | `0x27052e...a6c03c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226343 | `0x28c6f8...f38cea` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226344 | `0x2daca7...bc4cf6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226345 | `0x2df975...70922e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226346 | `0x313603...162162` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226347 | `0x3152ec...4536e0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226348 | `0x315f93...a8a38c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226349 | `0x328646...786c01` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226350 | `0x3bfa66...daf4e5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226351 | `0x3f7cca...9e79ad` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226352 | `0x417224...32d277` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226353 | `0x481d49...0d3fa7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226354 | `0x561ff9...b8b0df` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226355 | `0x586719...1193e8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226356 | `0x5a0064...500994` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226357 | `0x5a9612...3caae8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226358 | `0x6173b0...64cfa2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226359 | `0x61aac4...2b5028` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226360 | `0x631d8e...634de8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226361 | `0x67e4e4...11d96f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226362 | `0x6fc6be...a4d7ce` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226363 | `0x74034e...81c959` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226364 | `0x75e695...481c09` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226365 | `0x77710e...ed5f84` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226366 | `0x797dd8...7d48a9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226367 | `0x7c280d...34c5a8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226368 | `0x819662...4c5638` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226369 | `0x81f8ac...e8a582` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226370 | `0x82c710...7f86fa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226371 | `0x889b0a...c2b35f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226372 | `0x8dde38...44dc4c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226373 | `0x9167ff...e6de06` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226374 | `0x940fca...2179e8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226375 | `0x94edbb...c97888` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226376 | `0x982814...6a93b4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226377 | `0x998d76...c88ba4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226378 | `0xa10bdc...fff702` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226379 | `0xa28c23...f1fe2b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226380 | `0xa586cb...bc6185` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226381 | `0xa8cc68...0fdd10` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226382 | `0xa992d3...f737af` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226383 | `0xab2545...d36b1b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226384 | `0xabbe76...495325` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226385 | `0xac73ef...b70eda` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226386 | `0xae4d56...e095c8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226387 | `0xb4f776...535750` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226388 | `0xb57320...cce6f7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226389 | `0xb5fa20...dafa71` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226390 | `0xb77e25...a907aa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226391 | `0xbc4b4a...4628f1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226392 | `0xbd9a87...36e0cb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226393 | `0xbef0c8...3f7abe` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226394 | `0xc40a68...607d01` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226395 | `0xc41252...e1b0c5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226396 | `0xc51e90...ee5238` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226397 | `0xcad0be...2765b7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226398 | `0xce45ef...7873de` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226399 | `0xcf47fb...a8d47d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226400 | `0xd1552d...a5c273` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226401 | `0xd53f83...540724` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226402 | `0xd5f9af...c8de64` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226403 | `0xd6506d...6cfe5f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226404 | `0xd8b27c...4984c2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226405 | `0xdc1aef...287e49` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226406 | `0xdc685c...452ac8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226407 | `0xe0a80d...c42bce` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226408 | `0xe1ce9a...458a10` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226409 | `0xe3b66c...126760` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226410 | `0xe3eb09...12a9e7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226411 | `0xe47bab...7d820e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226412 | `0xe668c3...337786` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226413 | `0xe846ca...a82eaf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226414 | `0xea0c04...6fbc90` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226415 | `0xea79e4...9e4fe1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226416 | `0xed667e...6447d7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226417 | `0xee8693...8aba3f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226418 | `0xf26c68...f0b732` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226419 | `0xf2ec2d...bd1ce4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226420 | `0xf4bc42...cd06ca` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226421 | `0xf69ff7...99716c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226422 | `0xf9a23b...88aa19` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226423 | `0xfc323c...b708dd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-226424 | `0xfc6f3a...c4a359` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | unichain | unit-226425 | `0x218c9e...3ec6e5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | unichain | unit-226426 | `0x25e2ef...dade49` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | unichain | unit-226427 | `0x5adade...437e2a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | unichain | unit-226428 | `0x6bc1f9...419436` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | unichain | unit-226429 | `0xcf28a1...da076d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | unichain | unit-226430 | `0xe6806b...48d8e8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226506 | `0x07954b...c50524` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226507 | `0x0a6af3...0ca0cb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226508 | `0x13632e...ab98a4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226509 | `0x16b443...eacbfd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226510 | `0x1e2f1e...b3847f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226511 | `0x1fd3a2...15b885` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226512 | `0x24d633...a33933` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226513 | `0x29dbce...7d7a5c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226514 | `0x34abb4...64101a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226515 | `0x38df63...29afff` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226516 | `0x3f131a...cd26af` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226517 | `0x401e8e...86c124` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226518 | `0x4c1aed...90f61e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226519 | `0x596dbb...2c7f93` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226520 | `0x5ce15f...ecd9ba` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226521 | `0x60c61a...720d0f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226522 | `0x611745...b898d1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226523 | `0x614bd5...cd5d17` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226524 | `0x6ae4ec...e77ef1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226525 | `0x6d6021...e53113` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226526 | `0x774c08...5df10a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226527 | `0x779225...74e2c6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226528 | `0x78d6a3...4f9b3a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226529 | `0x7c1487...bf8f53` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226530 | `0x81744b...342108` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226531 | `0x82d499...6439b2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226532 | `0x85114a...749616` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226533 | `0x91a9ed...0b3f05` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226534 | `0x9f8765...4526d0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226535 | `0xa67a95...256121` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226536 | `0xa6ad67...5fcf86` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226537 | `0xb45e4f...aa8b4a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226538 | `0xbc4639...602ea2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226539 | `0xc063c3...a650fb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226540 | `0xc64fd6...6ae32e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226541 | `0xcf8f0e...1743a6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226542 | `0xd7c286...edb190` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226543 | `0xdbdc9c...6b3330` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226544 | `0xdc4efb...24af8d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226545 | `0xeaa709...de5983` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226546 | `0xedcc19...f2f91f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226547 | `0xeef576...8f6743` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226548 | `0xf3bb6b...37caea` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-226549 | `0xf44801...989289` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226431 | `0x05d28a...6160b3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226432 | `0x06b763...6e6a7f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226433 | `0x0a1ecc...69b899` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226434 | `0x124bec...eedb57` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226435 | `0x22038f...901c3f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226436 | `0x27b3b7...0f4d3c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226437 | `0x37512f...38cd51` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226438 | `0x44c10d...c0c1cc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226439 | `0x46e57d...be3812` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226440 | `0x482c3e...685e98` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226441 | `0x4ad21e...5e02ee` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226442 | `0x4d375e...b4917e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226443 | `0x4dd134...f83c93` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226444 | `0x5059ff...a01ad7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226445 | `0x5f7f81...365408` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226446 | `0x683b77...80dbe7` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226447 | `0x6afb8d...aa673b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226448 | `0x6d47cb...074859` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226449 | `0x78e3e0...f7edff` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226450 | `0x79e1f4...384e6b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226451 | `0x7d9790...61b785` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226452 | `0x878e12...5204ad` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226453 | `0x889e1c...68896c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226454 | `0x8ca487...1e4c46` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226455 | `0xa8616e...5f1a58` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226456 | `0xaabb9c...e1fdd8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226457 | `0xcc6700...b815c6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226458 | `0xdbd974...894ee2` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226460 | `0xe81157...09086d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226462 | `0xee074c...2d492c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226464 | `0xf2cf48...df81ca` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-226466 | `0xfe3320...926ddf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226468 | `0x085f80...65e852` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226470 | `0x140bd9...99faf5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226472 | `0x14efcc...0beada` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226474 | `0x179dfd...f1afb8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226476 | `0x1da14e...457d7d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226478 | `0x3cc796...68a839` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226480 | `0x42267d...cedde0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226482 | `0x4789d8...0604f1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226484 | `0x5464cc...9de2d3` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226485 | `0x5df408...7b8abf` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226487 | `0x64623f...7d23d0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226489 | `0x873fea...a93e56` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226491 | `0x8bf8ed...5356f1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226492 | `0x90f0b8...8c918d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226494 | `0x92ba0d...8d9de0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226495 | `0x9947f3...47a2a9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226496 | `0x9ac2f0...2abb1f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226497 | `0xa7ada0...35647d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226498 | `0xae8da9...e9efff` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226499 | `0xb11fd9...2a3cab` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226500 | `0xb135dc...22efee` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226501 | `0xb770dc...e5aa49` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226502 | `0xcbef9b...7a578c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226503 | `0xe27c25...469e1f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226504 | `0xf3c659...f8588a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | linea | unit-226505 | `0xfb6448...496e6f` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Pashov_Audit_Group_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Pashov%5FAudit%5FGroup%5Freport.pdf) | Pashov Audit Group | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
-| [Certora_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora%5FEulerEarn%5Freport.pdf) | Pashov Audit Group | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
-| [Sigma_Prime_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma%5FPrime%5FEulerEarn%5Freport.pdf) | Sigma Prime | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
-| [Certora_EulerEarn_report.pdf](https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Certora_EulerEarn_report.pdf) | Spearbit | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
-| [Sigma_Prime_EulerEarn_report.pdf](https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Sigma_Prime_EulerEarn_report.pdf) | Spearbit | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
-| [omniscia.io/reports/euler-finance-earn-yield-aggregator-66faae519dcc3c0018b9097e](https://omniscia.io/reports/euler-finance-earn-yield-aggregator-66faae519dcc3c0018b9097e) | Enigma Ventures | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
-| [Certora_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora_EulerEarn_report.pdf) | Certora | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
-| [Sigma_Prime_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma_Prime_EulerEarn_report.pdf) | Sigma Prime | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
-| [2025-05-26-cyfrin-eulerswap-v2.0.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/2025-05-26-cyfrin-eulerswap-v2.0.pdf) | Cyfrin | Audit | 2025-05 | aging | Direct | contract_name | 2 | n/a |
-| [report-cantinacode-uniswap-euler-0422.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-uniswap-euler-0422.pdf) | Spearbit | Audit | 2025-05 | aging | Direct | contract_name | 2 | n/a |
-| [ChainSecurity_EulerSwap_audit.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/ChainSecurity%5FEulerSwap%5Faudit.pdf) | ChainSecurity | Audit | 2025-03 | aging | Direct | contract_name | 1 | n/a |
-| [report-euler-swap-050325.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-euler-swap-050325.pdf) | Spearbit | Audit | 2025-03 | aging | Direct | contract_name | 2 | n/a |
-| [eulerswap-audit-report.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/eulerswap-audit-report.pdf) | Spearbit | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
-| [report-cantinacode-euler-0901.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-euler-0901.pdf) | Spearbit | Audit | 2025-09 | fresh | Direct | contract_name | 1 | n/a |
-| [yAudit ERC4626 and Vault Securitize.pdf](https://github.com/euler-xyz/evk-periphery/blob/master/audits/yAudit%20ERC4626%20and%20Vault%20Securitize.pdf) | yAudit | Audit | 2025-11 | fresh | Direct | contract_name | 1 | n/a |
-| [Pashov Group ERC4626 and Vault Securitize.pdf](https://github.com/euler-xyz/evk-periphery/blob/master/audits/Pashov%20Group%20ERC4626%20and%20Vault%20Securitize.pdf) | Pashov Audit Group | Audit | 2025-11 | fresh | Direct | contract_name | 1 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x29a56a...45cc8e`](./contracts/ethereum-1/0x29a56a1b8214d9cf7c5561811750d5cbdb45cc8e/) | EVault | core_logic | $1,095,577.81 | Verified native implementation with $1,095,577.81 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa60c42...e34bc7`](./contracts/ethereum-1/0xa60c4257c809353039a71527dfe701b577e34bc7/) | AccountLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x130eab...0ffaed`](./contracts/ethereum-1/0x130eabada6f4c663095c8e9e276ab5da670ffaed/) | CrossAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x4e58bb...7fadde`](./contracts/ethereum-1/0x4e58bbea423c4b9a2fc7b8e58f5499f9927fadde/) | EscrowedCollateralPerspective | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2f1325...dc1f3d`](./contracts/ethereum-1/0x2f13256e04022d6356d8ce8c53c7364e13dc1f3d/) | FactoryGovernor | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8ff1c8...29dd7d`](./contracts/ethereum-1/0x8ff1c814719096b61abf00bb46ead0c9a529dd7d/) | Governance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x061b6b...0f807a`](./contracts/ethereum-1/0x061b6b0ba1b552006556c278fc8798d1e20f807a/) | IRMLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 9 |
-| upstream | 5 |
-| standard_library | 6 |
-| needs_review | 91 |
+| native | 0 |
+| upstream | 0 |
+| standard_library | 4 |
+| needs_review | 204 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 9
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
-- Match method counts: contract_name=10
-
-Zero-match audit list:
-
-- [11522] Pashov_Audit_Group_report.pdf
-- [11523] Certora_EulerEarn_report.pdf
-- [11524] Sigma_Prime_EulerEarn_report.pdf
-- [11525] Certora_EulerEarn_report.pdf
-- [11526] Sigma_Prime_EulerEarn_report.pdf
-- [11528] omniscia.io/reports/euler-finance-earn-yield-aggregator-66faae519dcc3c0018b9097e
-- [11529] Certora_EulerEarn_report.pdf
-- [11531] Sigma_Prime_EulerEarn_report.pdf
-- [11536] eulerswap-audit-report.pdf
+- Match method counts: n/a
 
 Fork inheritance lineage and inherited audits are included when available.

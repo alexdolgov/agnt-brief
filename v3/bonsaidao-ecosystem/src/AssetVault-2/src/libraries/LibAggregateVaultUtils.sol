@@ -1,161 +1,157 @@
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.17;
 
 import { ERC20 } from "solmate/tokens/ERC20.sol";
-import { GMX_FEE_STAKED_GLP, TOKEN_USDC, TOKEN_WETH, TOKEN_WBTC, TOKEN_LINK, TOKEN_UNI } from "../constants.sol";
-import { Solarray } from "./Solarray.sol";
-import { AggregateVaultStorage } from "../storage/AggregateVaultStorage.sol";
-import { INettedPositionTracker } from "../interfaces/INettedPositionTracker.sol";
-import { GlpHandler } from "../handlers/GlpHandler.sol";
+import { AggregateVaultStorage, LibAggregateVaultStorage } from "../storage/AggregateVaultStorage.sol";
+import { NettedPositionTracker } from "./NettedPositionTracker.sol";
+import { IGMIWithERC20 as GMI } from "../interfaces/IGMI.sol";
+import { OracleWrapper } from "../peripheral/OracleWrapper.sol";
+import { DEPLOYMENT_MULTISIG } from "../constants.sol";
+import { Pricing } from "./Pricing.sol";
+import { SafeCast } from "./SafeCast.sol";
+import { PriceCast } from "./PriceCast.sol";
+import { IFeeEscrow } from "../interfaces/IFeeEscrow.sol";
+import { FeeReserve } from "../peripheral/FeeReserve.sol";
 
-ERC20 constant fsGLP = ERC20(GMX_FEE_STAKED_GLP);
+using SafeCast for uint256;
+using SafeCast for int256;
+using PriceCast for uint256;
 
+/// @title LibAggregateVaultUtils
+/// @author Umami Devs
+/// @notice A logic library that contains functionality for the AggregateVault
 library LibAggregateVaultUtils {
     /**
-     * @notice Converts the GLP amount owned by each vault to an array of dollar values.
-     * @param _glpPrice The current price of GLP.
-     * @return glpAsDollars An array containing the GLP amount owned by each vault as dollar values.
-     */
-    function glpToDollarArray(AggregateVaultStorage.AVStorage storage _avStorage, uint256 _glpPrice)
-        internal
-        view
-        returns (uint256[5] memory glpAsDollars)
-    {
-        for (uint256 i = 0; i < 5; i++) {
-            glpAsDollars[i] = (_glpPrice * getVaultGlpAttributeBalance(_avStorage, i)) / 1e18;
-        }
-    }
-
-    /**
-     * @notice Retrieves the GLP balance attributed to a vault.
-     * @param _vaultIdx The index of the vault.
-     * @return _balance The GLP balance attributed to the vault.
-     */
-    function getVaultGlpAttributeBalance(AggregateVaultStorage.AVStorage storage _avStorage, uint256 _vaultIdx)
-        internal
-        view
-        returns (uint256 _balance)
-    {
-        uint256 totalGlpBalance = fsGLP.balanceOf(address(this));
-        uint256 proportion = getVaultGlpAttributeProportion(_avStorage, _vaultIdx);
-        return (totalGlpBalance * proportion) / 1e18;
-    }
-
-    /**
-     * @notice Calculates the proportion of GLP attributed to a vault. 100% = 1e18, 10% = 0.1e18.
-     * @param _vaultIdx The index of the vault.
-     * @return _proportion The proportion of GLP attributed to the vault.
-     */
-    function getVaultGlpAttributeProportion(AggregateVaultStorage.AVStorage storage _avStorage, uint256 _vaultIdx)
-        internal
-        view
-        returns (uint256 _proportion)
-    {
-        uint256[5] memory _vaultGlpAttribution = _avStorage.vaultGlpAttribution;
-        uint256 totalGlpAttribution = Solarray.arraySum(_vaultGlpAttribution);
-        if (totalGlpAttribution == 0) return 0;
-        return (_vaultGlpAttribution[_vaultIdx] * 1e18) / totalGlpAttribution;
-    }
-
-    /**
-     * @notice Gets the GLP for all vaults with no Profit and Loss (PNL) adjustments
-     * @return _vaultsGlpNoPnl An array containing the GLP with no PNL for each vault
-     */
-    function getVaultsGlpNoPnl(AggregateVaultStorage.AVStorage storage _avStorage)
-        internal
-        view
-        returns (uint256[5] memory _vaultsGlpNoPnl)
-    {
-        for (uint256 i = 0; i < 5; i++) {
-            _vaultsGlpNoPnl[i] = getVaultGlp(_avStorage, i, 0);
-        }
-    }
-
-    /**
-     * @notice Gets the current Global Liquidity Position (GLP) for all vaults
-     * @return _vaultsGlp An array containing the GLP for each vault
-     */
-    function getVaultsGlp(AggregateVaultStorage.AVStorage storage _avStorage)
-        internal
-        view
-        returns (uint256[5] memory _vaultsGlp)
-    {
-        uint256 currentEpoch = _avStorage.vaultState.epoch;
-        for (uint256 i = 0; i < 5; i++) {
-            _vaultsGlp[i] = getVaultGlp(_avStorage, i, currentEpoch);
-        }
-    }
-
-    /**
-     * @notice Calculates the GLP amount owned by a vault at a given epoch.
+     * @notice Calculates the GMI amount owned by a vault at a given epoch.
      * @param _vaultIdx The index of the vault.
      * @param _currentEpoch The epoch number.
-     * @return _glpAmount The amount of GLP owned by the vault.
+     * @return _gmiAmount The amount of GMI owned by the vault.
      */
-    function getVaultGlp(AggregateVaultStorage.AVStorage storage _avStorage, uint256 _vaultIdx, uint256 _currentEpoch)
+    function getVaultGmi(uint256 _vaultIdx, uint256 _currentEpoch, bool useLlo)
         internal
         view
-        returns (uint256 _glpAmount)
+        returns (uint256 _gmiAmount)
     {
-        uint256 totalGlpBalance = fsGLP.balanceOf(address(this));
-        uint256 ownedGlp = (totalGlpBalance * getVaultGlpAttributeProportion(_avStorage, _vaultIdx)) / 1e18;
+        AggregateVaultStorage.AVStorage storage stg = _getStorage();
+        int256[2] memory currentAssetPrices = getVaultTokenPrices(useLlo);
+        uint256 indexPrice = useLlo
+            ? Pricing.getIndexPps(stg.oracleWrapper, GMI(stg.gmi))
+            : Pricing.getIndexPpsChainlink(stg.oracleWrapper, GMI(stg.gmi));
+        return getVaultGmiWithPrices(_vaultIdx, _currentEpoch, indexPrice, currentAssetPrices);
+    }
 
-        _glpAmount = ownedGlp;
-        if (_currentEpoch > 0) {
-            (,, int256[5] memory glpPnl,) = _avStorage.nettedPositionTracker.settleNettingPositionPnl(
-                _avStorage.nettedPositions,
-                getCurrentPrices(_avStorage),
-                getEpochNettedPrice(_avStorage, _currentEpoch),
-                getVaultsGlpNoPnl(_avStorage),
-                (_getGlpPrice(_avStorage) * 1e18) / 1e30,
-                _avStorage.zeroSumPnlThreshold
+    /**
+     * @notice Calculates the GMI amount owned by a vault at a given epoch using the currentAssetPrices
+     * and indexPrice of the GMI index. This is used when passing an offchain price to calculate the current
+     * value.
+     * @param _vaultIdx The index of the vault.
+     * @param _currentEpoch The epoch number.
+     * @param indexPrice The price of one share of the GMI index.
+     * @param currentAssetPrices The current prices of [SHORT_TOKEN, LONG_TOKEN] both in 18 decimal format.
+     * @return _gmiAmount The amount of GMI owned by the vault.
+     */
+    function getVaultGmiWithPrices(
+        uint256 _vaultIdx,
+        uint256 _currentEpoch,
+        uint256 indexPrice,
+        int256[2] memory currentAssetPrices
+    ) internal view returns (uint256 _gmiAmount) {
+        AggregateVaultStorage.AVStorage storage stg = _getStorage();
+        uint256[2] memory vaultsGmi = [vaultGmiBalanceToken(0), vaultGmiBalanceToken(1)];
+        if (_currentEpoch == 0) {
+            return vaultsGmi[_vaultIdx];
+        } else {
+            (,, int256[2] memory gmiPnl,) = NettedPositionTracker.settleNettingPositionPnl(
+                stg.nettedPositions,
+                currentAssetPrices,
+                stg.lastNettedPrices[_currentEpoch],
+                vaultsGmi,
+                indexPrice,
+                stg.zeroSumPnlThreshold
             );
-            int256 glpDelta = glpPnl[_vaultIdx];
-            if (glpPnl[_vaultIdx] < 0 && ownedGlp < uint256(-glpDelta)) {
-                _glpAmount = 0;
+            int256 gmiDelta = gmiPnl[_vaultIdx];
+            if (gmiPnl[_vaultIdx] < 0 && vaultsGmi[_vaultIdx] < (-gmiDelta).toUint256()) {
+                return 0;
             } else {
-                _glpAmount = uint256(int256(ownedGlp) + glpDelta);
+                return uint256(vaultsGmi[_vaultIdx].toInt256() + gmiDelta);
             }
         }
     }
 
-    /**
-     * @notice Returns the current prices from GMX.
-     * @return _prices An INettedPositionTracker.NettedPrices struct containing the current asset prices
-     */
-    function getCurrentPrices(AggregateVaultStorage.AVStorage storage _avStorage)
-        internal
-        view
-        returns (INettedPositionTracker.NettedPrices memory _prices)
-    {
-        GlpHandler glpHandler = _avStorage.glpHandler;
-        _prices = INettedPositionTracker.NettedPrices({
-            stable: glpHandler.getTokenPrice(TOKEN_USDC, 18),
-            eth: glpHandler.getTokenPrice(TOKEN_WETH, 18),
-            btc: glpHandler.getTokenPrice(TOKEN_WBTC, 18),
-            link: glpHandler.getTokenPrice(TOKEN_LINK, 18),
-            uni: glpHandler.getTokenPrice(TOKEN_UNI, 18)
-        });
+    function pullFeeAmountsFromEscrow(uint256[2] memory _feeAmounts) external {
+        AggregateVaultStorage.AVStorage storage stg = _getStorage();
+        AggregateVaultStorage.VaultState storage vaultState = stg.vaultState;
+        FeeReserve feeReserve = FeeReserve(vaultState.depositFeeEscrow);
+        // withdrawFeeEscrow is same address post FeeReserve refactor
+        feeReserve.pullAsset(_shortToken(), _feeAmounts[0], false);
+        feeReserve.pullAsset(_longToken(), _feeAmounts[1], false);
     }
 
     /**
-     * @dev Retrieves the netted prices for a given epoch from storage.
-     * @param _epoch The epoch number to get the netted prices for.
-     * @return _nettedPrices The netted prices for the given epoch.
+     * @notice Calculates the proportion of GMI attributed to a vault. 100% = 1e18, 10% = 0.1e18.
+     * @param _idx The index of the vault.
+     * @return _proportion The proportion of GMI attributed to the vault.
      */
-    function getEpochNettedPrice(AggregateVaultStorage.AVStorage storage _avStorage, uint256 _epoch)
-        internal
-        view
-        returns (INettedPositionTracker.NettedPrices storage _nettedPrices)
-    {
-        _nettedPrices = _avStorage.lastNettedPrices[_epoch];
+    function getVaultGmiProportion(uint256 _idx) internal view returns (uint256 _proportion) {
+        uint256[2] memory gmiAttribution = _getStorage().vaultGmiAttribution;
+        uint256 totalAttribution = gmiAttribution[0] + gmiAttribution[1];
+        if (totalAttribution == 0) return 0;
+        uint256 vaultAttribution = gmiAttribution[_idx];
+        return vaultAttribution * 1e18 / totalAttribution;
     }
 
     /**
-     * @notice Retrieves the current price of GLP.
-     * @return _price The current price of GLP.
+     * @notice Calculates the value of GMI held by a vault in the vault native token
+     * @param _idx The index of the vault.
+     * @return - The value of gmi held by the vault.
      */
-    function _getGlpPrice(AggregateVaultStorage.AVStorage storage _avStorage) internal view returns (uint256 _price) {
-        _price = _avStorage.glpHandler.getGlpPrice();
+    function vaultGmiBalanceToken(uint256 _idx) internal view returns (uint256) {
+        uint256 gmiBalance = GMI(_getStorage().gmi).balanceOf(address(this));
+        return gmiBalance * getVaultGmiProportion(_idx) / 1e18;
+    }
+
+    /**
+     * @notice Gets the vault token prices, either on-chain or using the low latency oracle price in storage
+     * @param useLlo should use the LLO
+     * @return tokenPrices prices of the vault tokens
+     */
+    function getVaultTokenPrices(bool useLlo) internal view returns (int256[2] memory tokenPrices) {
+        address oracle = _getStorage().oracleWrapper;
+        uint256 shortTokenPrice = OracleWrapper(payable(oracle)).getChainlinkPrice(_shortToken());
+        uint256 longTokenPrice = useLlo
+            ? OracleWrapper(payable(oracle)).getLloPriceWithinL1Blocks(_longToken())
+            : OracleWrapper(payable(oracle)).getChainlinkPrice(_longToken());
+        uint256 shortTokenDecimals = _shortTokenDecimals();
+        uint256 longTokenDecimals = _longTokenDecimals();
+        return [
+            shortTokenPrice.toInternalPrice(shortTokenDecimals).toInt256(),
+            longTokenPrice.toInternalPrice(longTokenDecimals).toInt256()
+        ];
+    }
+
+    /// @dev the total GMI held by vaults may not be equal to the total supply of GMI
+    function getVaultsGmi(uint256 epoch, bool useLlo) internal view returns (uint256[2] memory) {
+        return [getVaultGmi(0, epoch, useLlo), getVaultGmi(1, epoch, useLlo)];
+    }
+
+    /// @dev get the storage struct
+    function _getStorage() internal pure returns (AggregateVaultStorage.AVStorage storage stg) {
+        stg = LibAggregateVaultStorage.getStorage();
+    }
+
+    function _longToken() internal view returns (address) {
+        return _getStorage().vaults[1].token;
+    }
+
+    function _shortToken() internal view returns (address) {
+        return _getStorage().vaults[0].token;
+    }
+
+    function _longTokenDecimals() internal view returns (uint256) {
+        return _getStorage().vaults[1].decimals;
+    }
+
+    function _shortTokenDecimals() internal view returns (uint256) {
+        return _getStorage().vaults[0].decimals;
     }
 }

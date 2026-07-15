@@ -1,26 +1,28 @@
 {
   "component": "SystemSecurityL1",
   "main_contract": "SystemSecurityL1",
-  "source_file_count": 63,
-  "deployment_count": 2,
+  "source_entry_count": 66,
+  "source_file_count": 66,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SystemSecurityL1\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x027a3359b803885261b140415873845f72238833",
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xf8cda9d896e06db0a682838ca8ac5fff1e699834",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xe57a2ec5ef4cc7f6576bb1ed5ec3759878f39b20",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391756"
     }
   ]
 }

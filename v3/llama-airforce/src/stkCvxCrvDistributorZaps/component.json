@@ -1,50 +1,28 @@
 {
   "component": "stkCvxCrvDistributorZaps",
   "main_contract": "stkCvxCrvDistributorZaps",
-  "source_file_count": 12,
-  "deployment_count": 5,
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/stkCvxCrvDistributorZaps\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x1b8b4946a3d1953b145897f4bdd4583b7f8dff7b",
+      "address": "0x68b56567af308fe8d94876ab0fe88541ed025e1c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x2604ab21546775e8d9b6e230a3c85a37ff05a2ed",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x2a24bb027d7fe2a62e39871187d644daf03406f2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x2f66e12d94bdac080604768383e65a234dcf775c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xd2b650143eb80c779b427e2d12b87bbf53216c19",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396118"
     }
   ]
 }

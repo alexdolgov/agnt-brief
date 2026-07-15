@@ -21,6 +21,7 @@ interface IStrategyStorage {
   event StrategyPaused(uint _strategyId);
   event StrategyUnpaused(uint _strategyId);
   event StrategyCreated(uint _index, address[] _allowedAssets, bytes4[] _allowedActions);
+  event StrategyExecutorUpdated(address _newExecutor, address _oldExecutor);
 
   function getStrategyInfo(
     uint _strategyId
@@ -43,6 +44,8 @@ interface IStrategyStorage {
   function isActionWhitelisted(address _strategy, bytes4 _actionId) external view returns (bool _isActionWhitelisted);
 
   function getStrategyAddress(uint _strategyId) external view returns (address _strategyAddress);
+
+  function strategyExecutor() external view returns (address);
 }
 
 /**
@@ -54,6 +57,7 @@ contract StrategyStorage is IStrategyStorage, Ownable2Step {
 
   mapping(address strategy => StrategyParameters) private parameters;
   EnumerableSet.AddressSet private strategies;
+  address public strategyExecutor;
 
   constructor(address _creator) Ownable(_creator) {}
 
@@ -72,20 +76,15 @@ contract StrategyStorage is IStrategyStorage, Ownable2Step {
     if (strategies.add(_strategy) == false) revert AlreadyExist();
     _strategyIndex = strategies.length() - 1;
 
-    for (uint i; i < _allowedActions.length; ) {
-      parameters[_strategy].whitelistedActions.add(_allowedActions[i]);
-
-      unchecked {
-        ++i;
-      }
+    bool success;
+    for (uint i; i < _allowedActions.length; ++i) {
+      success = parameters[_strategy].whitelistedActions.add(_allowedActions[i]);
+      if (!success) revert AlreadyExist();
     }
 
-    for (uint i; i < _allowedAssets.length; ) {
-      parameters[_strategy].whitelistedAssets.add(_allowedAssets[i]);
-
-      unchecked {
-        ++i;
-      }
+    for (uint i; i < _allowedAssets.length; ++i) {
+      success = parameters[_strategy].whitelistedAssets.add(_allowedAssets[i]);
+      if (!success) revert AlreadyExist();
     }
 
     parameters[_strategy].isActive = true;
@@ -99,15 +98,11 @@ contract StrategyStorage is IStrategyStorage, Ownable2Step {
    * @param _whitelistedActions whitelisted action array
    */
   function whitelistActions(uint _strategyId, bytes4[] calldata _whitelistedActions) external onlyOwner {
-    for (uint i; i < _whitelistedActions.length; ) {
+    for (uint i; i < _whitelistedActions.length; ++i) {
       if (parameters[_safeGetStrategyAddress(_strategyId)].whitelistedActions.add(_whitelistedActions[i]) == false)
         revert AlreadyExist();
 
       emit ActionWhitelisted(_whitelistedActions[i]);
-
-      unchecked {
-        ++i;
-      }
     }
   }
 
@@ -117,15 +112,11 @@ contract StrategyStorage is IStrategyStorage, Ownable2Step {
    * @param _unwhitelistedActions un-whitelisted action array
    */
   function unwhitelistActions(uint _strategyId, bytes4[] calldata _unwhitelistedActions) external onlyOwner {
-    for (uint i; i < _unwhitelistedActions.length; ) {
+    for (uint i; i < _unwhitelistedActions.length; ++i) {
       if (parameters[_safeGetStrategyAddress(_strategyId)].whitelistedActions.remove(_unwhitelistedActions[i]) == false)
         revert DoesNotExist();
 
       emit ActionUnwhitelisted(_unwhitelistedActions[i]);
-
-      unchecked {
-        ++i;
-      }
     }
   }
 
@@ -135,15 +126,11 @@ contract StrategyStorage is IStrategyStorage, Ownable2Step {
    * @param _whitelistedAssets whitelisted asset array
    */
   function whitelistAssets(uint _strategyId, address[] calldata _whitelistedAssets) external onlyOwner {
-    for (uint i; i < _whitelistedAssets.length; ) {
+    for (uint i; i < _whitelistedAssets.length; ++i) {
       if (parameters[_safeGetStrategyAddress(_strategyId)].whitelistedAssets.add(_whitelistedAssets[i]) == false)
         revert AlreadyExist();
 
       emit AssetWhitelisted(_whitelistedAssets[i]);
-
-      unchecked {
-        ++i;
-      }
     }
   }
 
@@ -153,15 +140,11 @@ contract StrategyStorage is IStrategyStorage, Ownable2Step {
    * @param _unwhitelistedAssets un-whitelisted action array
    */
   function unwhitelistAssets(uint _strategyId, address[] calldata _unwhitelistedAssets) external onlyOwner {
-    for (uint i; i < _unwhitelistedAssets.length; ) {
+    for (uint i; i < _unwhitelistedAssets.length; ++i) {
       if (parameters[_safeGetStrategyAddress(_strategyId)].whitelistedAssets.remove(_unwhitelistedAssets[i]) == false)
         revert DoesNotExist();
 
       emit AssetUnwhitelisted(_unwhitelistedAssets[i]);
-
-      unchecked {
-        ++i;
-      }
     }
   }
 
@@ -257,5 +240,14 @@ contract StrategyStorage is IStrategyStorage, Ownable2Step {
   function _safeGetStrategyAddress(uint _strategyId) internal view returns (address _address) {
     if (_strategyId >= strategies.length()) revert DoesNotExist();
     _address = strategies.at(_strategyId);
+  }
+
+  /**
+   * @notice set new strategy executor
+   * @param _newExecutor set new executor
+   */
+  function setStrategyExecutor(address _newExecutor) external onlyOwner {
+    emit StrategyExecutorUpdated(_newExecutor, strategyExecutor);
+    strategyExecutor = _newExecutor;
   }
 }

@@ -1302,8 +1302,8 @@ contract FirePool is ERC20 {
         amountOutFBX = reserveFBX() * amountInFPT / totalSupply();
         uint256 balanceFBX = FBX.balanceOf(address(this));
         if (balanceFBX < amountOutFBX) {
-            FIREFBX.withdraw(1e18 * (amountOutFBX - balanceFBX) / FIREFBX.withdrawalRate());
-            if (FBX.balanceOf(address(this)) < amountOutFBX) {
+            balanceFBX += FIREFBX.withdraw(1e18 * (amountOutFBX - balanceFBX) / FIREFBX.withdrawalRate());
+            if (balanceFBX < amountOutFBX) {
                 amountOutFBX = balanceFBX;
             }
         }
@@ -1361,4 +1361,4 @@ contract FirePool is ERC20 {
     }
 }
 
-// FirePool v1.7
+// FirePool v1.8

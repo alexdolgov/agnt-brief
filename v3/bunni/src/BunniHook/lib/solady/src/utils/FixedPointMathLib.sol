@@ -653,11 +653,35 @@ library FixedPointMathLib {
         }
     }
 
-    /// @dev Returns `max(0, x - y)`.
+    /// @dev Returns `max(0, x - y)`. Alias for `saturatingSub`.
     function zeroFloorSub(uint256 x, uint256 y) internal pure returns (uint256 z) {
         /// @solidity memory-safe-assembly
         assembly {
             z := mul(gt(x, y), sub(x, y))
+        }
+    }
+
+    /// @dev Returns `max(0, x - y)`.
+    function saturatingSub(uint256 x, uint256 y) internal pure returns (uint256 z) {
+        /// @solidity memory-safe-assembly
+        assembly {
+            z := mul(gt(x, y), sub(x, y))
+        }
+    }
+
+    /// @dev Returns `min(2 ** 256 - 1, x + y)`.
+    function saturatingAdd(uint256 x, uint256 y) internal pure returns (uint256 z) {
+        /// @solidity memory-safe-assembly
+        assembly {
+            z := or(sub(0, lt(add(x, y), x)), add(x, y))
+        }
+    }
+
+    /// @dev Returns `min(2 ** 256 - 1, x * y)`.
+    function saturatingMul(uint256 x, uint256 y) internal pure returns (uint256 z) {
+        /// @solidity memory-safe-assembly
+        assembly {
+            z := or(sub(or(iszero(x), eq(div(mul(x, y), x), y)), 1), mul(x, y))
         }
     }
 
@@ -682,6 +706,30 @@ library FixedPointMathLib {
         /// @solidity memory-safe-assembly
         assembly {
             z := xor(x, mul(xor(x, y), iszero(condition)))
+        }
+    }
+
+    /// @dev Returns `x != 0 ? x : y`, without branching.
+    function coalesce(uint256 x, uint256 y) internal pure returns (uint256 z) {
+        /// @solidity memory-safe-assembly
+        assembly {
+            z := or(x, mul(y, iszero(x)))
+        }
+    }
+
+    /// @dev Returns `x != bytes32(0) ? x : y`, without branching.
+    function coalesce(bytes32 x, bytes32 y) internal pure returns (bytes32 z) {
+        /// @solidity memory-safe-assembly
+        assembly {
+            z := or(x, mul(y, iszero(x)))
+        }
+    }
+
+    /// @dev Returns `x != address(0) ? x : y`, without branching.
+    function coalesce(address x, address y) internal pure returns (address z) {
+        /// @solidity memory-safe-assembly
+        assembly {
+            z := or(x, mul(y, iszero(shl(96, x))))
         }
     }
 
@@ -779,7 +827,7 @@ library FixedPointMathLib {
 
     /// @dev Returns the cube root of `x`, rounded down.
     /// Credit to bout3fiddy and pcaversaccio under AGPLv3 license:
-    /// https://github.com/pcaversaccio/snekmate/blob/main/src/utils/Math.vy
+    /// https://github.com/pcaversaccio/snekmate/blob/main/src/snekmate/utils/math.vy
     /// Formally verified by xuwinnie:
     /// https://github.com/vectorized/solady/blob/main/audits/xuwinnie-solady-cbrt-proof.pdf
     function cbrt(uint256 x) internal pure returns (uint256 z) {

@@ -1,94 +1,127 @@
 # Agentic Audit Brief: Kasu
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 7 across 1 audit(s)
+- Eligible audit results: 2 (1 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Kasu (`kasu`)
 - Website: [https://kasu.finance/](https://kasu.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:19.211Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: base
-- Contract surface: 26 unique implementations (42 raw deployments)
+- Contract surface: 11 unique implementations (11 raw deployments)
+- Coverage basis: 7/11 confirmed own live verified implementations (63.6%); conservative 63.6% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $10,864,465.28
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-RWA Lending. Structurally: 17 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 3 ERC20 tokens, 1 ERC721 NFT, 1 ERC1155 multi-token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Kasu. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 4 functional families. Its contracts share 4 common project-authored base contract(s) (kasuaccesscontrollable, assetfunctionsbase, lendingpoolhelpers). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 17 contract row(s) across base. Structural roles: 15 core, 2 supporting. 16 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 17
+- Structural roles: core (15), supporting (2)
+- Contract kinds: contract (17)
+- Detected standards: ownable (11), pausable (11), erc1155 (1), erc165 (1), erc20 (1), erc20permit (1)
+- Frameworks: openzeppelin (16), openzeppelin-upgradeable (16)
+- Upgradeable-pattern rows: 16
+
+## Fork Analysis
+
+0 of 11 contracts are derived from known codebases. 11 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- TransparentUpgradeableProxy (`0x193bb0...c41f69`, chain 8453)
+- TransparentUpgradeableProxy (`0x221a54...4e5c1b`, chain 8453)
+- TransparentUpgradeableProxy (`0x2cf12a...f57de2`, chain 8453)
+- TransparentUpgradeableProxy (`0x5d9b87...ceadba`, chain 8453)
+- TransparentUpgradeableProxy (`0x5dc8d3...3c93f3`, chain 8453)
+- TransparentUpgradeableProxy (`0x662379...9f3c9f`, chain 8453)
+- TransparentUpgradeableProxy (`0x807a7e...cbf8bb`, chain 8453)
+- TransparentUpgradeableProxy (`0xb145c0...553ce1`, chain 8453)
+- TransparentUpgradeableProxy (`0xb4784f...19d635`, chain 8453)
+- TransparentUpgradeableProxy (`0xe1be32...2096b5`, chain 8453)
+- TransparentUpgradeableProxy (`0xeede30...e20b40`, chain 8453)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 51; live-surface contracts included: 37 (35 live, 2 unknown).
-- Excluded by liveness: 14 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 17; live-surface contracts included: 17 (11 live, 6 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 11/11 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 5/24 (20.8%)
-- Deployed-live implementations: 24 of 26 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 5/24
-- Verified + Unaudited implementations: 19
+- Coverage of address-book-owned deployed-live implementations: 7/11 (63.6%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 11 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 11
+- Deployed-live implementations: 11 of 11 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 7/11
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 26
-- Raw deployments: 42
+- Unverified implementations: 0
+- Unique implementations: 11
+- Raw deployments: 11
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 2
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-10 (aging)
 - Audit staleness (calendar age): 0 fresh, 1 aging, 1 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 1 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 4 match-unverified
-- Tier 1 coverage: 16.7% (ChainSecurity)
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 7 match-unverified
+- Tier 1 coverage: 63.6% (ChainSecurity)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| ChainSecurity | Tier 1 | 4 | 16.7% | 2024-10 |
-| 0xCommit | Tier 2 | 1 | 4.2% | 2024-06 |
+| ChainSecurity | Tier 1 | 7 | 63.6% | 2024-10 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (5)
+### ✅ Verified + Audited (7)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| FeeManager | governance | base | n/a | [`0xef956c...39b6b9`](./contracts/base-8453/0xef956c2193e032609da84bec5e5251b28939b6b9/) | ✅ Audited |
-| LendingPoolTranche | core_logic | base | n/a | 2 deployments: base [`0x94a699...00f3f9`](./contracts/base-8453/0x94a699a93519bef708b5be69914436363100f3f9/); base `0xa2e999...4fb1d0` | ✅ Audited |
-| PendingPool | core_logic | base | n/a | 2 deployments: base [`0x080238...e05e1d`](./contracts/base-8453/0x08023888ffb36f007679d1ec64a4f22f54e05e1d/); base `0x6ecd74...c8e2e0` | ✅ Audited |
-| Swapper | unknown | base | n/a | [`0xe593ed...baa6d2`](./contracts/base-8453/0xe593edf0579cfa8b622c327c05a0070c71baa6d2/) | ✅ Audited |
-| UserManager | governance | base | n/a | [`0x5dc8d3...3c93f3`](./contracts/base-8453/0x5dc8d315a80fd99abef0f327b9a52a3fbc3c93f3/) | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| ClearingCoordinator | unknown | project_anchor | own_supporting | 1 | base | unit-266851 | `0x2cf12a...f57de2` | ✅ Audited |
+| KasuAllowList | unknown | project_anchor | own_supporting | 1 | base | unit-266856 | `0x807a7e...cbf8bb` | ✅ Audited |
+| KSULocking | unknown | project_anchor | own_supporting | 1 | base | unit-266860 | `0xb145c0...553ce1` | ✅ Audited |
+| LendingPoolManager | unknown | project_anchor | own_supporting | 1 | base | unit-266854 | `0xe1be32...2096b5` | ✅ Audited |
+| SystemVariables | unknown | project_anchor | own_supporting | 1 | base | unit-266855 | `0x193bb0...c41f69` | ✅ Audited |
+| UserLoyaltyRewards | unknown | project_anchor | own_supporting | 1 | base | unit-266858 | `0xb4784f...19d635` | ✅ Audited |
+| UserManager | governance | project_anchor | own_supporting | 1 | base | unit-266852 | `0x5dc8d3...3c93f3` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (19)
+### ⚠️ Verified + Unaudited (4)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AcceptedRequestsCalculation | unknown | base | n/a | 2 deployments: base [`0x0133c2...b3307a`](./contracts/base-8453/0x0133c2ec8a72dec51a9373e4003a2ccf09b3307a/); base `0x1e69dd...58bd0e` | ⚠️ Unaudited |
-| ClearingCoordinator | unknown | base | n/a | 2 deployments: base [`0x2889ea...175ed1`](./contracts/base-8453/0x2889eafa5732abd724cda4ebc1b9659f90175ed1/); base `0x2cf12a...f57de2` | ⚠️ Unaudited |
-| FixedTermDeposit | unknown | base | n/a | [`0x757ab3...ae5ed3`](./contracts/base-8453/0x757ab3139e09beb9ccdf59762ad00825efae5ed3/) | ⚠️ Unaudited |
-| KasuAllowList | unknown | base | n/a | [`0x807a7e...cbf8bb`](./contracts/base-8453/0x807a7e119ebf0282420b5ca0e0056c0525cbf8bb/) | ⚠️ Unaudited |
-| KasuController | unknown | base | n/a | 2 deployments: base [`0xb0d7eb...5d2868`](./contracts/base-8453/0xb0d7eb2d5036fb85a231d0e243a5b723ba5d2868/); base `0xe768e5...60b052` | ⚠️ Unaudited |
-| KasuPoolExternalTVL | unknown | base | n/a | 2 deployments: base [`0x662379...9f3c9f`](./contracts/base-8453/0x662379febb3e4f91400b5f7d4f7f7ce4699f3c9f/); base `0xe477a8...2cb191` | ⚠️ Unaudited |
-| KSU | unknown | base | n/a | 2 deployments: base [`0x5d9b87...ceadba`](./contracts/base-8453/0x5d9b878744dbe721a3f33a60a6b102e289ceadba/); base `0x792383...acf693` | ⚠️ Unaudited |
-| KSULockBonus | unknown | base | n/a | [`0xeede30...e20b40`](./contracts/base-8453/0xeede30acf16caff49c1a48f75185c67be2e20b40/) | ⚠️ Unaudited |
-| KSULocking | unknown | base | n/a | [`0xb145c0...553ce1`](./contracts/base-8453/0xb145c061684c701c2c018a3f322aa14f5a553ce1/) | ⚠️ Unaudited |
-| LendingPool | unknown | base | n/a | 2 deployments: base [`0x2af3eb...d7ab31`](./contracts/base-8453/0x2af3eb5945a524e1c23dc2fb2b3b37a5cad7ab31/); base `0x9b9ec3...efa621` | ⚠️ Unaudited |
-| LendingPool | unknown | base | n/a | 2 deployments: base [`0x8855ec...926e8f`](./contracts/base-8453/0x8855ec34d148fddcd3d536a2eb9c04943e926e8f/); base `0xcdc9b9...a1de99` | ⚠️ Unaudited |
-| LendingPoolFactory | unknown | base | n/a | [`0x263b5d...ab05a8`](./contracts/base-8453/0x263b5d074584118ff2b65b0125ac8a4529ab05a8/) | ⚠️ Unaudited |
-| LendingPoolFactory | unknown | base | n/a | 2 deployments: base [`0x617b6e...03f9f3`](./contracts/base-8453/0x617b6e6a4f444bbc5dee08193e9597e20603f9f3/); base `0xd8c77e...905190` | ⚠️ Unaudited |
-| LendingPoolManager | unknown | base | n/a | [`0xe1be32...2096b5`](./contracts/base-8453/0xe1be322323a412579b4a09fb08ff4bfca12096b5/) | ⚠️ Unaudited |
-| LendingPoolTranche | unknown | base | n/a | 4 deployments: base [`0x31b186...bac13f`](./contracts/base-8453/0x31b186049085e7bf5b68c27657bd73b5a5bac13f/); base `0x8f2b35...467f12`; base `0xec9980...d9c899`; base `0xef5d12...3033be` | ⚠️ Unaudited |
-| ManualKsuPrice | unknown | base | n/a | 2 deployments: base [`0x221a54...4e5c1b`](./contracts/base-8453/0x221a54cbbd5f490bd8e77cf36acba4b1304e5c1b/); base `0xb82992...ca4dc6` | ⚠️ Unaudited |
-| PendingPool | unknown | base | n/a | 3 deployments: base [`0x0c5554...c7f4cc`](./contracts/base-8453/0x0c5554058118dba2da4a3ca2a448c5a61bc7f4cc/); base `0x3cf856...c7dbf4`; base `0xc17f46...03e3a9` | ⚠️ Unaudited |
-| SystemVariables | unknown | base | n/a | [`0x193bb0...c41f69`](./contracts/base-8453/0x193bb02a24f5562b58feb86550e6f09bb6c41f69/) | ⚠️ Unaudited |
-| UserLoyaltyRewards | unknown | base | n/a | [`0xb4784f...19d635`](./contracts/base-8453/0xb4784f69bb1f1076f50907cb0a815908a719d635/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| KasuPoolExternalTVL | unknown | project_anchor | own_supporting | 1 | base | unit-266861 | `0x662379...9f3c9f` | ⚠️ Unaudited |
+| KSU | unknown | project_anchor | own_supporting | 1 | base | unit-266857 | `0x5d9b87...ceadba` | ⚠️ Unaudited |
+| KSULockBonus | unknown | project_anchor | own_supporting | 1 | base | unit-266853 | `0xeede30...e20b40` | ⚠️ Unaudited |
+| ManualKsuPrice | unknown | project_anchor | own_supporting | 1 | base | unit-266859 | `0x221a54...4e5c1b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -102,44 +135,96 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | base | n/a | `0x59c8ea...d0eedc` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xafb296...3a7765` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Kasu_0xCommit.pdf](https://github.com/Kasu-Finance/security/blob/main/audits/Kasu_0xCommit.pdf) | 0xCommit | Audit | 2024-06 | stale | Direct | contract_name | 1 | high |
-| [Kasu_ChainSecurity.pdf](https://github.com/Kasu-Finance/security/blob/main/audits/Kasu_ChainSecurity.pdf) | ChainSecurity | Audit | 2024-10 | aging | Direct | contract_name | 4 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Kasu_0xCommit.pdf](https://github.com/Kasu-Finance/security/blob/main/audits/Kasu_0xCommit.pdf) | 0xCommit | Audit | 2024-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [Kasu_ChainSecurity.pdf](https://github.com/Kasu-Finance/security/blob/main/audits/Kasu_ChainSecurity.pdf) | ChainSecurity | Audit | 2024-10 | aging | Direct | contract_name | matched | 7 | 7 | 0 | 21 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [12482] Kasu_0xCommit.pdf — no match: Extracted contract names from findings and code snippets. Audit date from cover page.
+- [12483] Kasu_ChainSecurity.pdf — matched: Extracted contract names from scope descriptions, system overview, and findings sections. The audit date is from the cover page.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Kasu_0xCommit.pdf | Swapper | unmatched — not counted | — | mentioned in findings as 'Swapper Contracts' and 'swapper.sol' | no |
+| Kasu_0xCommit.pdf | DepositAndSwap | unmatched — not counted | — | mentioned in finding 2 as 'DepositandSwap.sol' and 'DepositSwap.sol' | no |
+| Kasu_ChainSecurity.pdf | LendingPoolTranche | unmatched — not counted | — | mentioned as affected contract in version 4 and version 6 scope descriptions | no |
+| Kasu_ChainSecurity.pdf | UserManager | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x5dc8d3...3c93f3` — deployed 2024-06-07 15:04:47+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Kasu_ChainSecurity.pdf | KSULocking | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb145c0...553ce1` — deployed 2024-06-07 15:03:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Kasu_ChainSecurity.pdf | FixedTermDeposit | unmatched — not counted | — | mentioned as main new contract in version 6 scope | no |
+| Kasu_ChainSecurity.pdf | LendingPool | unmatched — not counted | — | mentioned as affected contract in version 6 scope | no |
+| Kasu_ChainSecurity.pdf | LendingPoolManager | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xe1be32...2096b5` — deployed 2024-06-07 15:05:11+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Kasu_ChainSecurity.pdf | PendingPool | unmatched — not counted | — | mentioned as affected contract in version 6 scope | no |
+| Kasu_ChainSecurity.pdf | ClearingCoordinator | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x2cf12a...f57de2` — deployed 2024-06-07 15:05:51+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Kasu_ChainSecurity.pdf | LendingPoolTrancheLoss | unmatched — not counted | — | mentioned in finding CS-KASU-Core-016 | no |
+| Kasu_ChainSecurity.pdf | FeeManager | unmatched — not counted | — | mentioned in finding CS-KASU-Core-011 | no |
+| Kasu_ChainSecurity.pdf | KasuController | unmatched — not counted | — | mentioned in finding CS-KASU-Core-009 | no |
+| Kasu_ChainSecurity.pdf | KasuAllowList | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x807a7e...cbf8bb` — deployed 2024-06-07 15:05:39+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Kasu_ChainSecurity.pdf | SystemVariables | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0x193bb0...c41f69` — deployed 2024-06-07 15:04:17+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Kasu_ChainSecurity.pdf | UserLoyaltyRewards | own proxy deployment | TransparentUpgradeableProxy (proxy) (selected) `0xb4784f...19d635` — deployed 2024-06-07 15:04:29+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
+| Kasu_ChainSecurity.pdf | Swapper | unmatched — not counted | — | mentioned in finding CS-KASU-Core-013 | no |
+| Kasu_ChainSecurity.pdf | SwapDepositBag | unmatched — not counted | — | mentioned in finding CS-KASU-Core-012 | no |
+| Kasu_ChainSecurity.pdf | KasuAccessControllable | unmatched — not counted | — | mentioned in finding CS-KASU-Core-008 | no |
+| Kasu_ChainSecurity.pdf | IPendingPool | unmatched — not counted | — | mentioned in finding CS-KASU-Core-008 | no |
+| Kasu_ChainSecurity.pdf | IAcceptedRequestsExecution | unmatched — not counted | — | mentioned in finding CS-KASU-Core-008 | no |
+| Kasu_ChainSecurity.pdf | AcceptedRequestsExecution | unmatched — not counted | — | mentioned in finding CS-KASU-Core-008 | no |
+| Kasu_ChainSecurity.pdf | IClearingCoordinator | unmatched — not counted | — | mentioned in finding CS-KASU-Core-008 | no |
+| Kasu_ChainSecurity.pdf | IPendingRequestsPriorityCalculation | unmatched — not counted | — | mentioned in finding CS-KASU-Core-008 | no |
+| Kasu_ChainSecurity.pdf | PendingRequestsPriorityCalculation | unmatched — not counted | — | mentioned in finding CS-KASU-Core-008 | no |
+| Kasu_ChainSecurity.pdf | LendingPoolFactory | unmatched — not counted | — | mentioned in finding CS-KASU-Core-008 | no |
+| Kasu_ChainSecurity.pdf | CommonErrors | unmatched — not counted | — | mentioned in finding CS-KASU-Core-008 | no |
+| Kasu_ChainSecurity.pdf | ILendingPoolTranche | unmatched — not counted | — | mentioned in finding CS-KASU-Core-008 | no |
+| Kasu_ChainSecurity.pdf | ILendingPoolManager | unmatched — not counted | — | mentioned in finding CS-KASU-Core-008 | no |
+| Kasu_ChainSecurity.pdf | ILendingPoolErrors | unmatched — not counted | — | mentioned in finding CS-KASU-Core-008 | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| base | `0x662379...9f3c9f` | KasuPoolExternalTVL | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x5d9b87...ceadba` | KSU | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xeede30...e20b40` | KSULockBonus | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x221a54...4e5c1b` | ManualKsuPrice | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 11 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 26 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: contract_name=4, extraction_exact=1
+- Address-book scope dispositions: 7 own (7 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 23 unmatched
+- Matched-own operational status: 7 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=2
+- Match method counts: unique_name=7
+
+Zero-match audit list:
+
+- [12482] Kasu_0xCommit.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

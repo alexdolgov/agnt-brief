@@ -1,12 +1,18 @@
 {
   "component": "LimitOrderLens",
   "main_contract": "LimitOrderLens",
+  "source_entry_count": 47,
   "source_file_count": 47,
-  "deployment_count": 8,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/GammaStrategies/gamma-univ4-limit-order-hook/blob/main/audits/report-competition-gamma.pdf"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LimitOrderLens\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
@@ -14,7 +20,9 @@
       "address": "0x86c495640d58475f7cab41acfca1cb89e30dac37",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394691"
     },
     {
       "chain": "chain-130",
@@ -22,7 +30,9 @@
       "address": "0x979012887c43ea4acc752dcc86ad3cac89d019eb",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394695"
     },
     {
       "chain": "polygon",
@@ -30,7 +40,9 @@
       "address": "0xc8da5863fd94644b181e6a4da313ef30675f6959",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394698"
     },
     {
       "chain": "base",
@@ -38,31 +50,9 @@
       "address": "0x1e18a5f2f3814b72423dcbcf323be5e195a7689d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x2dc3fcc16490c000a639f05d8cb6c50015e4d15a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x91291677724f58da3b35f2ed952580aef580f5ba",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xb9b7e1ad0d1abba7cf0bf23d0ee1f8a7513e473e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394699"
     },
     {
       "chain": "arbitrum",
@@ -70,7 +60,9 @@
       "address": "0xaea3a204e36c418029b5db58372f2113081044d4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394703"
     }
   ]
 }

@@ -1,8 +1,16 @@
 {
   "component": "ConditionalTokens",
   "main_contract": "ConditionalTokens",
+  "source_entry_count": 12,
   "source_file_count": 12,
-  "deployment_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ConditionalTokens\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://static.opinion.trade/opinion-v1-scalebit.pdf"
@@ -11,18 +19,12 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x51d1a62d41e93b983ef29aec04f30ded66c6eb54",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
       "address": "0xad1a38cec043e70e83a3ec30443db285ed10d774",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397523"
     }
   ]
 }

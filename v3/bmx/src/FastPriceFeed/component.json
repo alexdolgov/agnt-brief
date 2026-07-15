@@ -1,18 +1,28 @@
 {
   "component": "FastPriceFeed",
   "main_contract": "FastPriceFeed",
-  "source_file_count": 4,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FastPriceFeed\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x1e4eed8fd57dfbaae060f894582ec0183c5d6e38",
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x3d220d2747fc2b25f771b859dbc38a6963c2b0e4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392414"
     }
   ]
 }

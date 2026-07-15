@@ -1,12 +1,18 @@
 {
   "component": "SyntheticSharesOracle",
   "main_contract": "SyntheticSharesOracle",
+  "source_entry_count": 11,
   "source_file_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SyntheticSharesOracle\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://docs-v2-git-prod-ondo-docs.vercel.app/pdf/GM-SyntheticShares-Cantina-11-18-2025.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -14,7 +20,9 @@
       "address": "0x9bc39db6fbb44b91a48b8d5a6c208b82b1741be6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401992"
     }
   ]
 }

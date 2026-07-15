@@ -1,83 +1,107 @@
 # Agentic Audit Brief: TeleSwap
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: TeleSwap (`teleswap`)
 - Website: [https://teleswap.xyz](https://teleswap.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:59.674Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-43c7
-- Chains: bsc, polygon
-- Contract surface: 38 unique implementations (39 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: arbitrum, base, ethereum, optimism, polygon, unichain
+- Contract surface: 6 unique implementations (6 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $242,282.64
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Bridge. Structurally: 26 project-authored contract(s) across 2 chain(s); 3 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for TeleSwap in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 6 contracts are derived from known codebases. 6 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x93ad6c...217d3b`, chain 1)
+- UnnamedContract (`0xec4a7d...5e9d52`, chain 10)
+- UnnamedContract (`0x45e4d5...279a96`, chain 130)
+- UnnamedContract (`0x93ad6c...217d3b`, chain 137)
+- UnnamedContract (`0xec4a7d...5e9d52`, chain 8453)
+- UnnamedContract (`0xec4a7d...5e9d52`, chain 42161)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 94; live-surface contracts included: 39 (15 live, 24 unknown).
-- Excluded by liveness: 55 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 6/6 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 3/14 (21.4%)
-- Deployed-live implementations: 14 of 38 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 3/14
-- Verified + Unaudited implementations: 11
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 6 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 6 of 6 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 24
-- Unique implementations: 38
-- Raw deployments: 39
+- Unverified implementations: 6
+- Unique implementations: 6
+- Raw deployments: 6
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 1
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-02 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| Quantstamp | Tier 2 | 3 | 21.4% | 2023-02 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (3)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BitcoinRelay | unknown | polygon | n/a | [`0x7deb66...132ea3`](./contracts/polygon-137/0x7deb66341b1d499d7e699589d0cf665de4132ea3/) | ✅ Audited |
-| PriceOracle | operational_periphery | bsc | n/a | 2 deployments: bsc [`0x7aabb0...3b1d63`](./contracts/bsc-56/0x7aabb0779782247384a1c91844211516e93b1d63/); polygon `0x96b76a...b0165e` | ✅ Audited |
-| TeleBTC | unknown | polygon | n/a | [`0x515d72...2febde`](./contracts/polygon-137/0x515d720b9d219f1931205d5b8d842be1fe2febde/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (11)
+### ⚠️ Verified + Unaudited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Brc20RouterLogic | adapter | bsc | n/a | [`0xab82c4...0084c7`](./contracts/bsc-56/0xab82c4ae964bfbf257297ac55bb9fae0ad0084c7/) | ⚠️ Unaudited |
-| BurnRouterLogic | adapter | bsc | n/a | [`0x2787d4...9a3c15`](./contracts/bsc-56/0x2787d48e0b74125597dd479978a5de09bb9a3c15/) | ⚠️ Unaudited |
-| BurnRouterLogic | adapter | polygon | n/a | [`0x000987...86c75f`](./contracts/polygon-137/0x0009876c47f6b2f0bcb41eb9729736757486c75f/) | ⚠️ Unaudited |
-| CcExchangeRouterLogic | adapter | bsc | n/a | [`0xca5416...cd4f0d`](./contracts/bsc-56/0xca5416364720c7324a547d39b1db496a2dcd4f0d/) | ⚠️ Unaudited |
-| CcExchangeRouterLogic | adapter | polygon | n/a | [`0xd1e9ff...a095a3`](./contracts/polygon-137/0xd1e9ff33ec28f9dd8d99e685a2b0f29dcaa095a3/) | ⚠️ Unaudited |
-| CcTransferRouterLogic | adapter | bsc | n/a | [`0xa38ad0...bec5ff`](./contracts/bsc-56/0xa38ad0d52b89c20c2229e916358d2ceb45bec5ff/) | ⚠️ Unaudited |
-| CcTransferRouterLogic | adapter | polygon | n/a | [`0x04367d...823707`](./contracts/polygon-137/0x04367d74332137908bef9acc0ab00a299a823707/) | ⚠️ Unaudited |
-| LockersManagerLogic | governance | bsc | n/a | [`0x84f74e...3987a5`](./contracts/bsc-56/0x84f74e97ebab432cee185d601290ce0a483987a5/) | ⚠️ Unaudited |
-| LockersManagerLogic | governance | polygon | n/a | [`0xf5d6d3...046166`](./contracts/polygon-137/0xf5d6d369a7f4147f720aeadd4c4f903ae8046166/) | ⚠️ Unaudited |
-| TeleOrdinalLogic | unknown | polygon | n/a | [`0x1edcaf...92b54f`](./contracts/polygon-137/0x1edcaf92eadc6cc0eb17a8160382ab78c192b54f/) | ⚠️ Unaudited |
-| YieldFarmingLogic | unknown | bsc | n/a | [`0x1d5062...d00e66`](./contracts/bsc-56/0x1d506292b0f1aac7d74624c00238f835b3d00e66/) | ⚠️ Unaudited |
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -91,42 +115,57 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (24)
+### ❓ Unverified (6)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x10d3cd...f278d0` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x23d7c6...ba3c8d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x50de2a...774297` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xf53987...1e4ee5` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x076484...dc17d1` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x0ba43d...40dca5` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x167d89...c60a0d` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x1b9408...0736e0` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x29aeab...bf0065` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x511691...f95ecb` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x7fbf53...ac80e5` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x82cdf1...aeffbd` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x88f1bc...f32850` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa03b76...e2bf46` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa59beb...93282c` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa62ae6...d3327b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa6a8d7...c028d8` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa9e317...b0b213` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xad5570...d801f9` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xc1465e...594f80` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xc4720d...adb2f0` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xc82cdc...d1e1a9` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xe2dc1a...ca93c6` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xf802e0...6f8a2b` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-258272 | `0x93ad6c...217d3b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-258274 | `0xec4a7d...5e9d52` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | unichain | unit-258276 | `0x45e4d5...279a96` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-258278 | `0x93ad6c...217d3b` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | base | unit-258282 | `0xec4a7d...5e9d52` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-258280 | `0xec4a7d...5e9d52` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Quantstamp-Bitcoin-EVM.pdf](https://github.com/TeleportDAO/audits/blob/main/reports/Quantstamp-Bitcoin-EVM.pdf) | Quantstamp | Audit | 2023-02 | stale | Direct | contract_name | 3 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Quantstamp-Bitcoin-EVM.pdf](https://github.com/TeleportDAO/audits/blob/main/reports/Quantstamp-Bitcoin-EVM.pdf) | Quantstamp | Audit | 2023-02 | stale | Direct | n/a | no match | 0 | 0 | 0 | 20 | n/a |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [14003] Quantstamp-Bitcoin-EVM.pdf — no match: No reason recorded
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Quantstamp-Bitcoin-EVM.pdf | BitcoinHelper | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | BitcoinRelay | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | CCBurnRouter | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | CCExchangeRouter | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | CCTransferRouter | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | CollateralPool | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | CollateralPoolFactory | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | Context | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | ERC20 | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | InstantPool | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | InstantRouter | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | LockersLib | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | LockersLogic | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | PriceOracle | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | PriceProxy | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | SafeMath | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | TeleBTC | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | TypedMemView | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | UniswapV2Connector | unmatched — not counted | — | — | no |
+| Quantstamp-Bitcoin-EVM.pdf | WETH | unmatched — not counted | — | — | no |
 
 ## Coverage Gaps
 
@@ -141,15 +180,21 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 38 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 20 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
-- Match method counts: contract_name=3
+- Match method counts: n/a
+
+Zero-match audit list:
+
+- [14003] Quantstamp-Bitcoin-EVM.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

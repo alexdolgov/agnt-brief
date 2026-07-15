@@ -1,18 +1,30 @@
 {
   "component": "AdminUpgradeabilityProxy",
   "main_contract": "AdminUpgradeabilityProxy",
-  "source_file_count": 5,
+  "source_entry_count": 68,
+  "source_file_count": 68,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AdminUpgradeabilityProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://blog.openzeppelin.com/across-v3-incremental-audit?hs_preview=lerUtAnm-157915368784"
+  ],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x7e63a5f1a8f0b4d0934b2f2327daed3f6bb2ee75",
       "is_proxy": true,
-      "implementation_address": "0x2ce6311ddae708829bc0784c967b7d77d19fd779",
-      "liveness": "live"
+      "implementation_address": "0x9187be534efeb258933ef7eff4b67fe80209afcd",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390545"
     }
   ]
 }

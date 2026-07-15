@@ -1,0 +1,38 @@
+{
+  "component": "BaseProxy",
+  "main_contract": "BaseProxy",
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BaseProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf6f0a051e4de63d9118a6bc948463a9d08e40a5c",
+      "is_proxy": true,
+      "implementation_address": "0x8832f0381707bb29756edecf42580800207f2a9e",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390967"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf6f0a051e4de63d9118a6bc948463a9d08e40a5c",
+      "is_proxy": true,
+      "implementation_address": "0x8832f0381707bb29756edecf42580800207f2a9e",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390983"
+    }
+  ]
+}

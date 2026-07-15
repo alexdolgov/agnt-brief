@@ -1,4 +1,10 @@
 // SPDX-License-Identifier: agpl-3.0
+/**
+ * @title Version Changelog
+ * Version 0xe
+ * Added event emits for pm toggling 
+ * @author RoeLabs
+ **/
 pragma solidity 0.6.12;
 pragma experimental ABIEncoderV2;
 
@@ -49,7 +55,10 @@ contract LendingPool is VersionedInitializable, ILendingPool, LendingPoolStorage
   using PercentageMath for uint256;
   using SafeERC20 for IERC20;
 
-  uint256 public constant LENDINGPOOL_REVISION = 0x2;
+  uint256 public constant LENDINGPOOL_REVISION = 0xe;
+
+  // RoeLabs: Added address map for Position Manager
+  mapping(address => bool) public pm;
 
   modifier whenNotPaused() {
     _whenNotPaused();
@@ -86,7 +95,7 @@ contract LendingPool is VersionedInitializable, ILendingPool, LendingPoolStorage
   function initialize(ILendingPoolAddressesProvider provider) public initializer {
     _addressesProvider = provider;
     _maxStableRateBorrowSizePercent = 2500;
-    _flashLoanPremiumTotal = 9;
+    _flashLoanPremiumTotal = 0;
     _maxNumberOfReserves = 128;
   }
 
@@ -120,7 +129,7 @@ contract LendingPool is VersionedInitializable, ILendingPool, LendingPoolStorage
 
     bool isFirstDeposit = IAToken(aToken).mint(onBehalfOf, amount, reserve.liquidityIndex);
 
-    if (isFirstDeposit) {
+    if ((isFirstDeposit) && (!pm[onBehalfOf])) {
       _usersConfig[onBehalfOf].setUsingAsCollateral(reserve.id, true);
       emit ReserveUsedAsCollateralEnabled(asset, onBehalfOf);
     }
@@ -182,6 +191,8 @@ contract LendingPool is VersionedInitializable, ILendingPool, LendingPoolStorage
 
     return amountToWithdraw;
   }
+
+  
 
   /**
    * @dev Allows users to borrow a specific `amount` of the reserve underlying asset, provided that the borrower
@@ -409,6 +420,76 @@ contract LendingPool is VersionedInitializable, ILendingPool, LendingPoolStorage
     } else {
       emit ReserveUsedAsCollateralDisabled(asset, msg.sender);
     }
+  }
+
+
+  // RoeLabs: New function, from rev 0x4
+  /**
+   * @dev Function to provide compatibility with rev 0x4
+   * Function to assign a contract address as a Roe Market Position Manager
+   * @param _pm The address of the Position Manager
+  **/
+  function PMAssign(
+    address _pm
+  ) external {
+    PMSet(_pm, true);
+  }
+
+
+  // RoeLabs: New event, from rev 0xe
+  event PMState(address _pm, bool _set);
+
+
+  // RoeLabs: New function, from rev 0x5
+  /**
+   * @dev Function to assign/de-assign a contract address as a Roe Market Position Manager
+   * Position Manager has the ability to unilaterally take any users' aToken without approval
+   * @param _pm The address of the Position Manager
+   * @param _state Enable or disable a PM
+   **/
+  function PMSet(
+    address _pm,
+    bool _state
+  ) public {
+    require(_addressesProvider.getPoolAdmin() == msg.sender, Errors.CALLER_NOT_POOL_ADMIN);
+    require(Address.isContract(_pm), Errors.LP_NOT_CONTRACT);
+    pm[_pm] = _state;
+    emit PMState(_pm, _state);
+  }
+
+
+  // RoeLabs: New function, from rev 0x4. 
+  // RoeLabs: Additional transfer restrictions from rev 0x5
+  // RoeLabs: Only check health data if not called by user: rev 0xb
+  /**
+   * @dev Function to transfer an aToken to an approved Position Manager contract
+   * Position Manager needs to have proper checks to ensure that this is only called to do a soft liquidation
+   * This function can only be called if:
+   *  1) User has debt and debt is near liquidation (e.g. user health is <= 1.02)
+   *  2) User has no debt, but tx.origin is user
+   * A soft liquidation is a non-adversarial, in-built system to reset a user near liquidation back to LTV
+   * @param aAsset The address of the underlying aAsset to be transferred
+   * @param user The address of the user supplying the aAsset
+   * @param amount Amount of aToken to transfer from the user to the PM
+   **/
+  function PMTransfer(
+    address aAsset,
+    address user,
+    uint256 amount
+  ) external whenNotPaused {
+    require(pm[msg.sender], "Not PM");
+    if (tx.origin != user) {
+      (,,,, uint256 healthFactor) = GenericLogic.calculateUserAccountData(
+        user,
+        _reserves,
+        _usersConfig[user],
+        _reservesList,
+        _reservesCount,
+        _addressesProvider.getPriceOracle()
+        );
+      require(healthFactor > 1.02e18, "Not initiated by user");
+    }
+    IAToken(aAsset).transferOnLiquidation(user, msg.sender, amount);
   }
 
   /**

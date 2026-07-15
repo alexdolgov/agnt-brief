@@ -1,26 +1,28 @@
 {
   "component": "stableQiVault-14",
   "main_contract": "stableQiVault",
-  "source_file_count": 24,
-  "deployment_count": 2,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/stableQiVault-14\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x806c0287f0e7124567c35d9a2a20b79c94179313",
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x19cb63ccbfac2f28b1fd79923f6adfc096e6ebb4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xecb58d7fe61765c6a4ca577c6b3013f543eb2fea",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398205"
     }
   ]
 }

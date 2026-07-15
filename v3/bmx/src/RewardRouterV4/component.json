@@ -1,18 +1,28 @@
 {
   "component": "RewardRouterV4",
   "main_contract": "RewardRouterV4",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RewardRouterV4\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x6456039168d3fe3bc5fcd9e46f3b716c1abd4ff4",
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x73bf80506f891030570fdc4d53a71f44a442353c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392425"
     }
   ]
 }

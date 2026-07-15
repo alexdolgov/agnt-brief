@@ -1,58 +1,28 @@
 {
   "component": "VaultManagerSimulatorLib",
   "main_contract": "VaultManagerSimulatorLib",
+  "source_entry_count": 20,
   "source_file_count": 20,
-  "deployment_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VaultManagerSimulatorLib\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x180fe2e50cd056e4c7aaa3c5954f2bdc6e8eb72a",
+      "address": "0x620978615e37f2c494cb9fcc2f9981029533fb39",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x2989d5b5cd2a1d0735661067f9f9471f57851981",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x79db859d7fe2b6ae89f19b031b3506a480cf0b70",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x86a2642ea34f83a15b43eadaa28115b0b84f708f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xcccc9e2e0afdaacf791a41c46ad7cb54d01fe8e5",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xd5c3a44b44fa7e1a6f8990dccf3f819a38d04601",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,15 +1,12 @@
-/**
- *Submitted for verification at snowtrace.io on 2021-12-03
-*/
+// File: contracts/interfaces/marketManagerInterface.sol
 
-// File: contracts/interfaces/IMarketManager.sol
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's market manager interface
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-interface IMarketManager  {
+interface marketManagerInterface  {
 	function setBreakerTable(address _target, bool _status) external returns (bool);
 
 	function getCircuitBreaker() external view returns (bool);
@@ -17,7 +14,7 @@ interface IMarketManager  {
 
 	function getTokenHandlerInfo(uint256 handlerID) external view returns (bool, address, string memory);
 
-	function handlerRegister(uint256 handlerID, address tokenHandlerAddr, uint256 flashFeeRate) external returns (bool);
+	function handlerRegister(uint256 handlerID, address tokenHandlerAddr) external returns (bool);
 
 	function applyInterestHandlers(address payable userAddr, uint256 callerID, bool allFlag) external returns (uint256, uint256, uint256, uint256, uint256, uint256);
 
@@ -57,31 +54,31 @@ interface IMarketManager  {
 
 	function rewardUpdateOfInAction(address payable userAddr, uint256 callerID) external returns (bool);
 	function ownerRewardTransfer(uint256 _amount) external returns (bool);
- 	function getFeeTotal(uint256 handlerID) external returns (uint256);
-  function getFeeFromArguments(uint256 handlerID, uint256 amount, uint256 bifiAmount) external returns (uint256);
 }
 
-// File: contracts/interfaces/IInterestModel.sol
+// File: contracts/interfaces/interestModelInterface.sol
+
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's interest model interface
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-interface IInterestModel {
+interface interestModelInterface {
 	function getInterestAmount(address handlerDataStorageAddr, address payable userAddr, bool isView) external view returns (bool, uint256, uint256, bool, uint256, uint256);
 	function viewInterestAmount(address handlerDataStorageAddr, address payable userAddr) external view returns (bool, uint256, uint256, bool, uint256, uint256);
 	function getSIRandBIR(uint256 depositTotalAmount, uint256 borrowTotalAmount) external view returns (uint256, uint256);
 }
 
-// File: contracts/interfaces/IMarketHandlerDataStorage.sol
+// File: contracts/interfaces/marketHandlerDataStorageInterface.sol
+
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's market handler data storage interface
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-interface IMarketHandlerDataStorage  {
+interface marketHandlerDataStorageInterface  {
 	function setCircuitBreaker(bool _emergency) external returns (bool);
 
 	function setNewCustomer(address payable userAddr) external returns (bool);
@@ -157,7 +154,6 @@ interface IMarketHandlerDataStorage  {
 	function getInterestModelAddr() external view returns (address);
 	function setInterestModelAddr(address interestModelAddr) external returns (bool);
 
-
 	function getMinimumInterestRate() external view returns (uint256);
 	function setMinimumInterestRate(uint256 _minimumInterestRate) external returns (bool);
 
@@ -179,14 +175,15 @@ interface IMarketHandlerDataStorage  {
 	function setLiquidityLimit(uint256 liquidityLimit) external returns (bool);
 }
 
-// File: contracts/interfaces/IMarketSIHandlerDataStorage.sol
+// File: contracts/interfaces/marketSIHandlerDataStorageInterface.sol
+
 pragma solidity 0.6.12;
 
 /**
  * @title BiFi's market si handler data storage interface
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-interface IMarketSIHandlerDataStorage  {
+interface marketSIHandlerDataStorageInterface  {
 	function setCircuitBreaker(bool _emergency) external returns (bool);
 
 	function updateRewardPerBlockStorage(uint256 _rewardPerBlock) external returns (bool);
@@ -204,6 +201,7 @@ interface IMarketSIHandlerDataStorage  {
 }
 
 // File: contracts/Errors.sol
+
 pragma solidity 0.6.12;
 
 contract Modifier {
@@ -259,7 +257,8 @@ contract ManagerDataStorageErrors is ManagerModifier {
     string internal constant NULL_ADDRESS = "err addr null";
 }
 
-// File: contracts/ReqCoinProxy.sol
+// File: contracts/reqCoinProxy.sol
+
 pragma solidity 0.6.12;
 
 /**
@@ -267,7 +266,7 @@ pragma solidity 0.6.12;
  * @notice access logic contracts via delegate calls.
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-contract ReqCoinProxy is RequestProxyErrors {
+contract coinProxy is RequestProxyErrors {
 	/* handler storage */
 	address payable owner;
 
@@ -277,13 +276,13 @@ contract ReqCoinProxy is RequestProxyErrors {
 
 	uint256 constant unifiedPoint = 10 ** 18;
 
-	IMarketManager marketManager;
+	marketManagerInterface marketManager;
 
-	IInterestModel interestModelInstance;
+	interestModelInterface interestModelInstance;
 
-	IMarketHandlerDataStorage handlerDataStorage;
+	marketHandlerDataStorageInterface handlerDataStorage;
 
-	IMarketSIHandlerDataStorage SIHandlerDataStorage;
+	marketSIHandlerDataStorageInterface SIHandlerDataStorage;
 
 	/* proxy storage */
 	address public handler;
@@ -342,10 +341,10 @@ contract ReqCoinProxy is RequestProxyErrors {
 		handlerID = _handlerID;
 		handler = handlerAddr;
 		SI = siHandlerAddr;
-		marketManager = IMarketManager(marketManagerAddr);
-		interestModelInstance = IInterestModel(interestModelAddr);
-		handlerDataStorage = IMarketHandlerDataStorage(marketDataStorageAddr);
-		SIHandlerDataStorage = IMarketSIHandlerDataStorage(SIHandlerDataStorageAddr);
+		marketManager = marketManagerInterface(marketManagerAddr);
+		interestModelInstance = interestModelInterface(interestModelAddr);
+		handlerDataStorage = marketHandlerDataStorageInterface(marketDataStorageAddr);
+		SIHandlerDataStorage = marketSIHandlerDataStorageInterface(SIHandlerDataStorageAddr);
 	}
 
 	/**
@@ -548,8 +547,8 @@ contract ReqCoinProxy is RequestProxyErrors {
 	}
 }
 
-// File: contracts/interfaces/IERC20.sol
-// from: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol
+// File: contracts/interfaces/tokenInterface.sol
+
 pragma solidity 0.6.12;
 interface IERC20 {
     function totalSupply() external view returns (uint256);
@@ -563,24 +562,16 @@ interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-// File: contracts/ReqTokenProxy.sol
-
-
+// File: contracts/reqTokenProxy.sol
 
 pragma solidity 0.6.12;
-
-
-
-
-
-
 
 /**
  * @title Bifi user request proxy (ERC-20 token)
  * @notice access logic contracts via delegate calls.
  * @author BiFi(seinmyung25, Miller-kk, tlatkdgus1, dongchangYoo)
  */
-contract ReqTokenProxy is RequestProxyErrors {
+contract tokenProxy is RequestProxyErrors {
 	address payable owner;
 
 	uint256 handlerID;
@@ -593,13 +584,13 @@ contract ReqTokenProxy is RequestProxyErrors {
 
 	uint256 underlyingTokenDecimal;
 
-	IMarketManager marketManager;
+	marketManagerInterface marketManager;
 
-	IInterestModel interestModelInstance;
+	interestModelInterface interestModelInstance;
 
-	IMarketHandlerDataStorage handlerDataStorage;
+	marketHandlerDataStorageInterface handlerDataStorage;
 
-	IMarketSIHandlerDataStorage SIHandlerDataStorage;
+	marketSIHandlerDataStorageInterface SIHandlerDataStorage;
 
 	IERC20 erc20Instance;
 
@@ -660,13 +651,13 @@ contract ReqTokenProxy is RequestProxyErrors {
 	{
 		handlerID = _handlerID;
 		handler = handlerAddr;
-		marketManager = IMarketManager(marketManagerAddr);
-		interestModelInstance = IInterestModel(interestModelAddr);
-		handlerDataStorage = IMarketHandlerDataStorage(marketDataStorageAddr);
+		marketManager = marketManagerInterface(marketManagerAddr);
+		interestModelInstance = interestModelInterface(interestModelAddr);
+		handlerDataStorage = marketHandlerDataStorageInterface(marketDataStorageAddr);
 		erc20Instance = IERC20(erc20Addr);
 		tokenName = _tokenName;
 		SI = siHandlerAddr;
-		SIHandlerDataStorage = IMarketSIHandlerDataStorage(SIHandlerDataStorageAddr);
+		SIHandlerDataStorage = marketSIHandlerDataStorageInterface(SIHandlerDataStorageAddr);
 	}
 
 	/**
@@ -862,10 +853,10 @@ contract ReqTokenProxy is RequestProxyErrors {
 }
 
 // File: contracts/truffleKit/marketHandlerSide/marketHandlerProxys.sol
-// SPDX-License-Identifier: BSD-3-Clause
+
 pragma solidity 0.6.12;
 
-contract EtherHandlerProxy is ReqTokenProxy {
+contract EtherHandlerProxy is tokenProxy {
     constructor()
-    ReqTokenProxy() public {}
+    tokenProxy() public {}
 }

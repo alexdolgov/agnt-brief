@@ -1,82 +1,28 @@
 {
   "component": "LiquidStrategy",
   "main_contract": "LiquidStrategy",
+  "source_entry_count": 22,
   "source_file_count": 22,
-  "deployment_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LiquidStrategy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x07aaed2072e19519cbb03c3b1879ea882e5827dc",
+      "address": "0x57184d7ec2d4cf5dbb77cde2d39e127391627e56",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x402c6b172b0a30cedbbc2bcdad025470853489e5",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x43e7f959570d0914fea8eabe0fcd3f9446e13a50",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x454747265794f2da61c65bc33ed209a2b2753f1e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x49577d3e5ed6990d96320af6bc8b6b7e1948b175",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x7707f5a188895c1d245768744ca81a1e0c0fe982",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x9ee0f8685e5cfc9dd0f35a1f404982e5880a292f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xa0e8abf1dba504d4f974d64c0a009abc0d51585a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xbeb0abbd47db53a2ceb0bd8eea70260723cc1263",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393122"
     },
     {
       "chain": "base",
@@ -84,15 +30,9 @@
       "address": "0xe2c11985daf500cd4a3571c49cea0f6e041ce960",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xf9adb7758cd9260c17c2d5228ed9be1ffcc8f9cb",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393123"
     }
   ]
 }

@@ -184,7 +184,10 @@ contract BunnyPool is IStrategy, RewardsDistributionRecipient, ReentrancyGuard, 
     }
 
     function withdrawAll() override external {
-        withdraw(_balances[msg.sender]);
+        uint _withdraw = withdrawableBalanceOf(msg.sender);
+        if (_withdraw > 0) {
+            withdraw(_withdraw);
+        }
         getReward();
     }
 

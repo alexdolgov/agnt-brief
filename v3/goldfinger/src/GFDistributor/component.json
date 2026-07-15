@@ -1,8 +1,16 @@
 {
   "component": "GFDistributor",
   "main_contract": "GFDistributor",
-  "source_file_count": 15,
-  "deployment_count": 4,
+  "source_entry_count": 11,
+  "source_file_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GFDistributor\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://app.solidproof.io/projects/goldfinger",
@@ -17,31 +25,9 @@
       "address": "0x92558bda86a95cdbff7bdebfe5c2ba7723154079",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xcee77c30cce9bbcd35c0e2b05a414d4941d8572b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xeae164782f775a30451080a21a968a8b2618e32c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xf9e11ea441bc7eccf57f0ac3193d6b1799efaa62",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394736"
     }
   ]
 }

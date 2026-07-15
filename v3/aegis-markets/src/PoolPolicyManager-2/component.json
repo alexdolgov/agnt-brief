@@ -1,7 +1,15 @@
 {
   "component": "PoolPolicyManager-2",
   "main_contract": "PoolPolicyManager",
-  "source_file_count": 16,
+  "source_entry_count": 17,
+  "source_file_count": 17,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PoolPolicyManager-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "chain-130",
       "chain_id": 130,
-      "address": "0xa16eb8f1e03696ca0b4acb0085918e2ed77d3006",
+      "address": "0xe072d3c7567d4b326ddde0f77062e6758aec0ee7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390507"
     }
   ]
 }

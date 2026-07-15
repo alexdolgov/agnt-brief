@@ -1,82 +1,96 @@
 # Agentic Audit Brief: DeSyn Protocol
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 19 (0 matched; 19 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: DeSyn Protocol (`desyn-protocol`)
 - Website: [https://www.desyn.io/#/](https://www.desyn.io/#/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:42.818Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-ae05
-- Chains: ethereum, mode
-- Contract surface: 22 unique implementations (26 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: ethereum
+- Contract surface: 1 unique implementations (1 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $1,300,477.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Basis Trading. Structurally: 9 project-authored contract(s) across 2 chain(s); built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for DeSyn Protocol. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 2 common project-authored base contract(s) (ownable, logs). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 1 contract row(s) across ethereum. Structural roles: 1 supporting. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 1
+- Structural roles: supporting (1)
+- Contract kinds: contract (1)
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 26; live-surface contracts included: 26 (16 live, 10 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 1; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 11/12 (91.7%)
-- Deployed-live implementations: 12 of 22 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 11/12
-- Verified + Unaudited implementations: 1
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 10
-- Unique implementations: 22
-- Raw deployments: 26
+- Unverified implementations: 0
+- Unique implementations: 1
+- Raw deployments: 1
 - Audits discovered: 19 (19 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 15
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-01 (fresh)
 - Audit staleness (calendar age): 1 fresh, 2 aging, 16 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 11 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
-- Tier 1 coverage: 91.7% (SlowMist)
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| SlowMist | Tier 1 | 11 | 91.7% | 2026-01 |
-| CertiK | Tier 2 | 10 | 83.3% | 2023-10 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (11)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Actions | unknown | mode | n/a | [`0x576c9a...182d1e`](./contracts/mode-34443/0x576c9a3dad2175964ad72fd6c097566e38182d1e/) | ✅ Audited |
-| DesynChainlinkOracle | unknown | mode | n/a | [`0x2d25bd...59841e`](./contracts/mode-34443/0x2d25bd8027586fc2503eb22d928107c94d59841e/) | ✅ Audited |
-| DesynSafeMath | unknown | mode | n/a | [`0xf9fe74...7c84d8`](./contracts/mode-34443/0xf9fe7428b5ea2ce69d4627ff5fdea782067c84d8/) | ✅ Audited |
-| Factory | unknown | mode | n/a | [`0x09dfee...b0d17b`](./contracts/mode-34443/0x09dfee598d5217da799bead56206bec0fdb0d17b/) | ✅ Audited |
-| LiquidityPool | core_logic | mode | n/a | 5 deployments: mode [`0x02a9ad...db78c0`](./contracts/mode-34443/0x02a9ad4d451407faa6039f07ef596203c0db78c0/); mode `0x26f9fa...cd9805`; mode `0x34075f...879eef`; mode `0x87374d...ed3d0a`; mode `0xbfb3a6...e34c96` | ✅ Audited |
-| Oracle | unknown | mode | n/a | [`0x867a8c...250647`](./contracts/mode-34443/0x867a8c12301217a588fafd7bbc1267d0e0250647/) | ✅ Audited |
-| RebalanceAdapter | unknown | mode | n/a | [`0xe7dfa1...535952`](./contracts/mode-34443/0xe7dfa1607f286e37f86915b791282ccdd2535952/) | ✅ Audited |
-| RightsManager | unknown | mode | n/a | [`0xc07b41...21be15`](./contracts/mode-34443/0xc07b41f521ab9510a54212c315240e448621be15/) | ✅ Audited |
-| SmartPoolManager | unknown | mode | n/a | [`0xcaf8af...3626e6`](./contracts/mode-34443/0xcaf8af5217e16551acc00fff671c6caeff3626e6/) | ✅ Audited |
-| UserVault | unknown | mode | n/a | [`0x833e81...f18387`](./contracts/mode-34443/0x833e81b279959f216331589dd9cec4388cf18387/) | ✅ Audited |
-| Vault | unknown | mode | n/a | [`0xe3b43d...e06794`](./contracts/mode-34443/0xe3b43dc43f2ab7102006e46074151c427de06794/) | ✅ Audited |
+- None
 
 ### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| GnosisSafe | governance | ethereum | n/a | [`0xf87709...20e174`](./contracts/ethereum-1/0xf8770931fc94d05ab4982d06bd6572bdf520e174/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| GnosisSafe | governance | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-235252 | `0xf87709...20e174` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,46 +104,221 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (10)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | mode | n/a | `0x0c4d31...240a9a` | ❓ Unverified |
-| UnnamedContract | unknown | mode | n/a | `0x203cbb...dc7faa` | ❓ Unverified |
-| UnnamedContract | unknown | mode | n/a | `0x5d2b9c...242ce3` | ❓ Unverified |
-| UnnamedContract | unknown | mode | n/a | `0x5e69d8...7b44bb` | ❓ Unverified |
-| UnnamedContract | unknown | mode | n/a | `0x66a50e...d2dc5c` | ❓ Unverified |
-| UnnamedContract | unknown | mode | n/a | `0x6cb698...518079` | ❓ Unverified |
-| UnnamedContract | unknown | mode | n/a | `0xb7669c...1ef23a` | ❓ Unverified |
-| UnnamedContract | unknown | mode | n/a | `0xc017af...8f5943` | ❓ Unverified |
-| UnnamedContract | unknown | mode | n/a | `0xd4d402...f7889a` | ❓ Unverified |
-| UnnamedContract | unknown | mode | n/a | `0xda8c0b...b3e95d` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [202301-Certik Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FXuYcetKVmU4mdQCxsVNw%2F202301-Certik%20Audit%20Report.pdf) | CertiK | Audit | 2023-01 | stale | Direct | contract_name | 14 | high |
-| [202301-SlowMist Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FOuH46mM16u9vWTy1M5oE%2F202301-SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2022-11 | stale | Direct | contract_name | 12 | high |
-| [202305-Certik Audit Report-3x ETH staking.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2Fd3LYyoZWcxB4AYNF9VBZ%2F202305-Certik%20Audit%20Report-3x%20ETH%20staking.pdf) | CertiK | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
-| [202305-SlowMist Audit Report-3x ETH staking.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FwrLbJYPsxxLRxADLjcZd%2F202305-SlowMist%20Audit%20Report-3x%20ETH%20staking.pdf) | SlowMist | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
-| [202309-Certik Audit Report - dSTBT.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FtCuMt7qEam1L2BWI4qt8%2F202309-Certik%20Audit%20Report%20-%20dSTBT.pdf) | CertiK | Audit | 2023-09 | stale | Direct | contract_name | 1 | high |
-| [202309-SlowMist Audit Report - dSTBT.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FFCbWC2dX93XtuD4Tlalk%2F202309-SlowMist%20Audit%20Report%20-%20dSTBT.pdf) | SlowMist | Audit | 2023-08 | stale | Direct | contract_name | 1 | high |
-| [202310-Certik Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FVPpTwsDAA0DUYUQSZs8L%2F202310-Certik%20Audit%20Report.pdf) | CertiK | Audit | 2023-10 | stale | Direct | contract_name | 7 | high |
-| [202310-SlowMist Audit Report - DeSyn Phase5.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FN2BfLpF5KvRYLgGVAjPt%2F202310-SlowMist%20Audit%20Report%20-%20DeSyn%20Phase5.pdf) | SlowMist | Audit | 2023-09 | stale | Direct | contract_name | 7 | high |
-| [202406-SlowMist Audit Report - DeSyn ETH Flashloan Leverage Staking.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2Ff81479RzxyKcEW3teujy%2F202406-SlowMist%20Audit%20Report%20-%20DeSyn%20ETH%20Flashloan%20Leverage%20Staking.pdf) | SlowMist | Audit | 2023-11 | stale | Direct | n/a | 0 | n/a |
-| [202406-SlowMist Audit Report - DeSyn Phase5.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2F62XRir9wqJp5PO8hzoHq%2F202406-SlowMist%20Audit%20Report%20-%20DeSyn%20Phase5.pdf) | SlowMist | Audit | 2023-09 | stale | Direct | contract_name | 7 | high |
-| [202407-SlowMist Audit Report - Desyn Phase3.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FB81XUYLuwfS1hdIJvqaK%2F202407-SlowMist%20Audit%20Report%20-%20Desyn%20Phase3.pdf) | SlowMist | Audit | 2023-03 | stale | Direct | contract_name | 13 | high |
-| [202407-SlowMist Audit Report - DeSyn Phase5.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2Fu3h3u0XRHwzTHahQ5sCw%2F202407-SlowMist%20Audit%20Report%20-%20DeSyn%20Phase5.pdf) | SlowMist | Audit | 2023-09 | stale | Direct | contract_name | 7 | high |
-| [For New Chain Deployment - SlowMist Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2F37cc92G4A8DJmEBz2QSX%2FFor%20New%20Chain%20Deployment%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2023-09 | stale | Direct | contract_name | 7 | high |
-| [For Scroll Chain - SlowMist Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FefRuA6mrMhG4ZxbjCKZa%2FFor%20Scroll%20Chain%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2024-07 | stale | Direct | contract_name | 13 | high |
-| [rebalanceAdapter related - SlowMist Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FmcOSJVHKpqV0h3P5gQ40%2FrebalanceAdapter%20related%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2023-03 | stale | Direct | contract_name | 12 | high |
-| [DeSyn Key Modules Audit - SlowMist Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FMQXMs98uSDr4IJNagCNF%2FDeSyn%20Key%20Modules%20Audit%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2024-12 | aging | Direct | contract_name | 7 | high |
-| [DeSyn New Chains Updates- SlowMist Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FcunUjPsGoe0bT1mtoJ5d%2FDeSyn%20New%20Chains%20Updates-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2023-09 | stale | Direct | contract_name | 7 | high |
-| [New Chain Updates-BNB Chain - SlowMist Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2Fym42fdR3QXJ7umFVXv9N%2FNew%20Chain%20Updates-BNB%20Chain%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
-| [New Chian Updates-Abstract Chain Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FwRn3JvidCdW7xeJ6ftgW%2FNew%20Chian%20Updates-Abstract%20Chain%20Audit%20Report.pdf) | SlowMist | Audit | 2026-01 | fresh | Direct | contract_name | 6 | high |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [202301-Certik Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FXuYcetKVmU4mdQCxsVNw%2F202301-Certik%20Audit%20Report.pdf) | CertiK | Audit | 2023-01 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 38 | high |
+| [202301-SlowMist Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FOuH46mM16u9vWTy1M5oE%2F202301-SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2022-11 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 25 | high |
+| [202305-Certik Audit Report-3x ETH staking.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2Fd3LYyoZWcxB4AYNF9VBZ%2F202305-Certik%20Audit%20Report-3x%20ETH%20staking.pdf) | CertiK | Audit | 2023-05 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [202305-SlowMist Audit Report-3x ETH staking.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FwrLbJYPsxxLRxADLjcZd%2F202305-SlowMist%20Audit%20Report-3x%20ETH%20staking.pdf) | SlowMist | Audit | 2023-05 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [202309-Certik Audit Report - dSTBT.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FtCuMt7qEam1L2BWI4qt8%2F202309-Certik%20Audit%20Report%20-%20dSTBT.pdf) | CertiK | Audit | 2023-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+| [202309-SlowMist Audit Report - dSTBT.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FFCbWC2dX93XtuD4Tlalk%2F202309-SlowMist%20Audit%20Report%20-%20dSTBT.pdf) | SlowMist | Audit | 2023-08 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+| [202310-Certik Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FVPpTwsDAA0DUYUQSZs8L%2F202310-Certik%20Audit%20Report.pdf) | CertiK | Audit | 2023-10 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 6 | high |
+| [202310-SlowMist Audit Report - DeSyn Phase5.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FN2BfLpF5KvRYLgGVAjPt%2F202310-SlowMist%20Audit%20Report%20-%20DeSyn%20Phase5.pdf) | SlowMist | Audit | 2023-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [202406-SlowMist Audit Report - DeSyn ETH Flashloan Leverage Staking.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2Ff81479RzxyKcEW3teujy%2F202406-SlowMist%20Audit%20Report%20-%20DeSyn%20ETH%20Flashloan%20Leverage%20Staking.pdf) | SlowMist | Audit | 2023-11 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+| [202406-SlowMist Audit Report - DeSyn Phase5.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2F62XRir9wqJp5PO8hzoHq%2F202406-SlowMist%20Audit%20Report%20-%20DeSyn%20Phase5.pdf) | SlowMist | Audit | 2023-09 | stale | Direct | address | no match | 0 | 0 | 0 | 5 | high |
+| [202407-SlowMist Audit Report - Desyn Phase3.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FB81XUYLuwfS1hdIJvqaK%2F202407-SlowMist%20Audit%20Report%20-%20Desyn%20Phase3.pdf) | SlowMist | Audit | 2023-03 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 10 | high |
+| [202407-SlowMist Audit Report - DeSyn Phase5.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2Fu3h3u0XRHwzTHahQ5sCw%2F202407-SlowMist%20Audit%20Report%20-%20DeSyn%20Phase5.pdf) | SlowMist | Audit | 2023-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [For New Chain Deployment - SlowMist Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2F37cc92G4A8DJmEBz2QSX%2FFor%20New%20Chain%20Deployment%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2023-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 12 | high |
+| [For Scroll Chain - SlowMist Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FefRuA6mrMhG4ZxbjCKZa%2FFor%20Scroll%20Chain%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2024-07 | stale | Direct | address | no match | 0 | 0 | 0 | 11 | high |
+| [rebalanceAdapter related - SlowMist Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FmcOSJVHKpqV0h3P5gQ40%2FrebalanceAdapter%20related%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2023-03 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 10 | high |
+| [DeSyn Key Modules Audit - SlowMist Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FMQXMs98uSDr4IJNagCNF%2FDeSyn%20Key%20Modules%20Audit%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2024-12 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [DeSyn New Chains Updates- SlowMist Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FcunUjPsGoe0bT1mtoJ5d%2FDeSyn%20New%20Chains%20Updates-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2023-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [New Chain Updates-BNB Chain - SlowMist Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2Fym42fdR3QXJ7umFVXv9N%2FNew%20Chain%20Updates-BNB%20Chain%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2025-04 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 3 | high |
+| [New Chian Updates-Abstract Chain Audit Report.pdf](https://245932585-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZfmVzvFfhPc46NKqgV40%2Fuploads%2FwRn3JvidCdW7xeJ6ftgW%2FNew%20Chian%20Updates-Abstract%20Chain%20Audit%20Report.pdf) | SlowMist | Audit | 2026-01 | fresh | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [17168] 202301-Certik Audit Report.pdf — no match: Extracted 38 contracts from the audit scope table and report findings. Audit date found on cover page: 'CertiK Verified on Jan 18th, 2023'.
+- [17169] 202301-SlowMist Audit Report.pdf — no match: All contracts listed in the 'Contracts Description' section and visibility tables are considered in scope. The audit date is the end date of the audit period (2022.11.10 - 2022.11.25).
+- [17170] 202305-Certik Audit Report-3x ETH staking.pdf — no match: Two contracts in scope: AaveCall.sol and LeverageStake.sol, as per the Audit Scope table. Audit date is May 22nd, 2023.
+- [17171] 202305-SlowMist Audit Report-3x ETH staking.pdf — no match: Two contracts in scope: AaveCall and LeverageStake. Audit date from audit result table: 2023.05.09 - 2023.05.11, using end date.
+- [17172] 202309-Certik Audit Report - dSTBT.pdf — no match: Three contracts in scope: Actions.sol, DTBT.sol, TBillSimple.sol. Audit date from cover page.
+- [17173] 202309-SlowMist Audit Report - dSTBT.pdf — no match: Audit scope includes contracts/bill/*.sol (DTBT, TBillSimple) and contracts/deploy/Actions.sol. Audit date range 2023.07.31 - 2023.08.02, end date used.
+- [17174] 202310-Certik Audit Report.pdf — no match: Extracted 6 contracts from the audit scope table and review notes. Audit date is explicitly stated as 'Assessed on Oct 24th, 2023'.
+- [17175] 202310-SlowMist Audit Report - DeSyn Phase5.pdf — no match: Contracts extracted from Code Overview and Vulnerability Summary sections. Audit date from Audit Result table: 2023.09.26 - 2023.09.27, using end date.
+- [17176] 202406-SlowMist Audit Report - DeSyn ETH Flashloan Leverage Staking.pdf — no match: Only LeverageStake contract is explicitly in scope; rebalanceAdapter mentioned but not audited.
+- [17177] 202406-SlowMist Audit Report - DeSyn Phase5.pdf — no match: Extracted contracts from code overview and contract address table. Audit date from executive summary and audit result table.
+- [17178] 202407-SlowMist Audit Report - Desyn Phase3.pdf — no match: Contracts extracted from project overview and code overview sections. Audit date from audit result table.
+- [17179] 202407-SlowMist Audit Report - DeSyn Phase5.pdf — no match: Extracted 5 contracts from the audit report's Code Overview and Vulnerability Summary sections. The audit date is the end date of the audit period (2023.09.26 - 2023.09.27).
+- [17180] For New Chain Deployment - SlowMist Audit Report.pdf — no match: Extracted contract names from code overview and contract address tables. Audit date from executive summary and audit result section.
+- [17181] For Scroll Chain - SlowMist Audit Report.pdf — no match: Extracted contract names from scope table and visibility description. Audit date from executive summary.
+- [17182] rebalanceAdapter related - SlowMist Audit Report.pdf — no match: Contracts extracted from the audit report's 'Contracts Description' section and vulnerability descriptions. The audit date is the end date of the audit period (2023.03.16 - 2023.03.22).
+- [17183] DeSyn Key Modules Audit - SlowMist Audit Report.pdf — no match: Scope explicitly listed in 'Audit Scope' section with file paths. Audit date from 'Audit Result' table: 2024.12.16 - 2024.12.20, using end date.
+- [17184] DeSyn New Chains Updates- SlowMist Audit Report.pdf — no match: Extracted 5 core contracts from the audit report's code overview and vulnerability sections. The report also lists many deployed contract addresses per chain, but those are instances of the same contracts. The audit date is the end date of the audit period (2023.09.26 - 2023.09.27).
+- [17185] New Chain Updates-BNB Chain - SlowMist Audit Report.pdf — no match: Scope includes MoveFunds, Airdrop, and ConfigurableRightsPool. Audit date range 2025.04.28-2025.04.29, end date used.
+- [17186] New Chian Updates-Abstract Chain Audit Report.pdf — no match: Audit scope explicitly lists ./contracts/base/Create2Helper.sol, ./contracts/deploy/CRPFactory.sol, ./contracts/deploy/Factory.sol. ConfigurableRightsPool and LiquidityPool are imported in Create2Helper and discussed in findings, thus in scope.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| 202301-Certik Audit Report.pdf | ConfigurableRightsPool | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | LiquidityPool | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | LpToken | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | Multicall | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | WhiteToken | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | Actions | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | CRPFactory | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | DesynChainlinkOracle | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | Factory | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | Oracle | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | UserVault | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | Vault | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | SafeApprove | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | DesynOwnable | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | Math | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | DSProxyContract | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | RightsManager | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | SmartPoolManager | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | Color | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | Const | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | Num | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | PCToken | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | WETH | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | sorMultiCall | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | AggregatorV2V3Interface | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | IBFactory | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | IConfigurableRightsPool | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | IERC20 | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | ILeverageStake | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | IUniswapOracle | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | IUniswapV2Router02 | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | IWETH | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | Address | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | DesynConstants | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | DesynSafeMath | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | SafeERC20 | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | SafeMath | unmatched — not counted | — | listed in scope table | no |
+| 202301-Certik Audit Report.pdf | DesynReentrancyGuard | unmatched — not counted | — | listed in scope table | no |
+| 202301-SlowMist Audit Report.pdf | ConfigurableRightsPool | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | ExchangeProxy | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | LiquidityPool | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | LpTokenBase | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | LpToken | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | Math | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | Multicall | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | Num | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | PCToken | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | sorMultiCall | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | WhiteToken | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | SmartPoolManager | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | DesynOwnable | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | DesynReentrancyGuard | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | Actions | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | CRPFactory | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | DesynChainlinkOracle | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | DSProxy | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | DSProxyFactory | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | DSProxyCache | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | ProxyRegistry | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | Factory | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | UserVault | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | Oracle | unmatched — not counted | — | listed in scope | no |
+| 202301-SlowMist Audit Report.pdf | Vault | unmatched — not counted | — | listed in scope | no |
+| 202305-Certik Audit Report-3x ETH staking.pdf | AaveCall | unmatched — not counted | — | listed in Audit Scope table | no |
+| 202305-Certik Audit Report-3x ETH staking.pdf | LeverageStake | unmatched — not counted | — | listed in Audit Scope table | no |
+| 202305-SlowMist Audit Report-3x ETH staking.pdf | AaveCall | unmatched — not counted | — | listed in scope section 4.2 | no |
+| 202305-SlowMist Audit Report-3x ETH staking.pdf | LeverageStake | unmatched — not counted | — | listed in scope section 4.2 | no |
+| 202309-Certik Audit Report - dSTBT.pdf | Actions | unmatched — not counted | — | listed in Audit Scope table | no |
+| 202309-Certik Audit Report - dSTBT.pdf | DTBT | unmatched — not counted | — | listed in Audit Scope table | no |
+| 202309-Certik Audit Report - dSTBT.pdf | TBillSimple | unmatched — not counted | — | listed in Audit Scope table | no |
+| 202309-SlowMist Audit Report - dSTBT.pdf | DTBT | unmatched — not counted | — | Listed in scope as contracts/bill/*.sol and mentioned in findings. | no |
+| 202309-SlowMist Audit Report - dSTBT.pdf | TBillSimple | unmatched — not counted | — | Listed in scope as contracts/bill/*.sol and mentioned in findings. | no |
+| 202309-SlowMist Audit Report - dSTBT.pdf | Actions | unmatched — not counted | — | Explicitly listed in scope: desyn-contracts-fork/contracts/deploy/Actions.sol | no |
+| 202310-Certik Audit Report.pdf | ConfigurableRightsPool | unmatched — not counted | — | listed in scope table and findings | no |
+| 202310-Certik Audit Report.pdf | Actions | unmatched — not counted | — | listed in scope table and findings | no |
+| 202310-Certik Audit Report.pdf | TBillSimple | unmatched — not counted | — | listed in scope table and findings | no |
+| 202310-Certik Audit Report.pdf | SmartPoolManager | unmatched — not counted | — | listed in scope table and findings | no |
+| 202310-Certik Audit Report.pdf | LiquidityPool | unmatched — not counted | — | listed in scope table and findings | no |
+| 202310-Certik Audit Report.pdf | CRPFactory | unmatched — not counted | — | listed in scope table and findings | no |
+| 202310-SlowMist Audit Report - DeSyn Phase5.pdf | Actions | unmatched — not counted | — | listed in scope and findings | no |
+| 202310-SlowMist Audit Report - DeSyn Phase5.pdf | CRPFactory | unmatched — not counted | — | listed in scope and findings | no |
+| 202310-SlowMist Audit Report - DeSyn Phase5.pdf | ConfigurableRightsPool | unmatched — not counted | — | listed in scope and findings | no |
+| 202310-SlowMist Audit Report - DeSyn Phase5.pdf | LiquidityPool | unmatched — not counted | — | listed in scope and findings | no |
+| 202310-SlowMist Audit Report - DeSyn Phase5.pdf | SmartPoolManager | unmatched — not counted | — | listed in scope and findings | no |
+| 202406-SlowMist Audit Report - DeSyn ETH Flashloan Leverage Staking.pdf | LeverageStake | unmatched — not counted | — | listed in scope and findings | no |
+| 202406-SlowMist Audit Report - DeSyn Phase5.pdf | Actions | unmatched — not counted | — | listed in scope and code overview | no |
+| 202406-SlowMist Audit Report - DeSyn Phase5.pdf | CRPFactory | unmatched — not counted | — | listed in scope and code overview | no |
+| 202406-SlowMist Audit Report - DeSyn Phase5.pdf | ConfigurableRightsPool | unmatched — not counted | — | listed in code overview | no |
+| 202406-SlowMist Audit Report - DeSyn Phase5.pdf | LiquidityPool | unmatched — not counted | — | listed in code overview | no |
+| 202406-SlowMist Audit Report - DeSyn Phase5.pdf | SmartPoolManager | unmatched — not counted | — | listed in scope and code overview | no |
+| 202407-SlowMist Audit Report - Desyn Phase3.pdf | ConfigurableRightsPool | unmatched — not counted | — | listed in scope and described in contracts description | no |
+| 202407-SlowMist Audit Report - Desyn Phase3.pdf | LiquidityPool | unmatched — not counted | — | listed in scope and described in contracts description | no |
+| 202407-SlowMist Audit Report - Desyn Phase3.pdf | DesynChainlinkOracle | unmatched — not counted | — | listed in scope and described in contracts description | no |
+| 202407-SlowMist Audit Report - Desyn Phase3.pdf | Oracle | unmatched — not counted | — | listed in scope and described in contracts description | no |
+| 202407-SlowMist Audit Report - Desyn Phase3.pdf | UserVault | unmatched — not counted | — | listed in scope and described in contracts description | no |
+| 202407-SlowMist Audit Report - Desyn Phase3.pdf | Vault | unmatched — not counted | — | listed in scope and described in contracts description | no |
+| 202407-SlowMist Audit Report - Desyn Phase3.pdf | SmartPoolManager | unmatched — not counted | — | listed in scope and described in contracts description | no |
+| 202407-SlowMist Audit Report - Desyn Phase3.pdf | Invoke | unmatched — not counted | — | listed in scope and described in contracts description | no |
+| 202407-SlowMist Audit Report - Desyn Phase3.pdf | RebalanceAdapter | unmatched — not counted | — | listed in scope and described in contracts description | no |
+| 202407-SlowMist Audit Report - Desyn Phase3.pdf | Factory | unmatched — not counted | — | mentioned in project overview and findings | no |
+| 202407-SlowMist Audit Report - DeSyn Phase5.pdf | Actions | unmatched — not counted | — | listed in scope and code overview | no |
+| 202407-SlowMist Audit Report - DeSyn Phase5.pdf | CRPFactory | unmatched — not counted | — | listed in scope and code overview | no |
+| 202407-SlowMist Audit Report - DeSyn Phase5.pdf | ConfigurableRightsPool | unmatched — not counted | — | listed in scope and code overview | no |
+| 202407-SlowMist Audit Report - DeSyn Phase5.pdf | LiquidityPool | unmatched — not counted | — | listed in scope and code overview | no |
+| 202407-SlowMist Audit Report - DeSyn Phase5.pdf | SmartPoolManager | unmatched — not counted | — | listed in scope and code overview | no |
+| For New Chain Deployment - SlowMist Audit Report.pdf | Actions | unmatched — not counted | — | listed in scope and code overview | no |
+| For New Chain Deployment - SlowMist Audit Report.pdf | CRPFactory | unmatched — not counted | — | listed in scope and code overview | no |
+| For New Chain Deployment - SlowMist Audit Report.pdf | ConfigurableRightsPool | unmatched — not counted | — | listed in scope and code overview | no |
+| For New Chain Deployment - SlowMist Audit Report.pdf | LiquidityPool | unmatched — not counted | — | listed in scope and code overview | no |
+| For New Chain Deployment - SlowMist Audit Report.pdf | SmartPoolManager | unmatched — not counted | — | listed in contract address table | no |
+| For New Chain Deployment - SlowMist Audit Report.pdf | Vault | unmatched — not counted | — | listed in contract address table | no |
+| For New Chain Deployment - SlowMist Audit Report.pdf | UserVault | unmatched — not counted | — | listed in contract address table | no |
+| For New Chain Deployment - SlowMist Audit Report.pdf | Oracle | unmatched — not counted | — | listed in contract address table | no |
+| For New Chain Deployment - SlowMist Audit Report.pdf | DesynChainlinkOracle | unmatched — not counted | — | listed in contract address table | no |
+| For New Chain Deployment - SlowMist Audit Report.pdf | Factory | unmatched — not counted | — | listed in contract address table | no |
+| For New Chain Deployment - SlowMist Audit Report.pdf | DesynSafeMath | unmatched — not counted | — | listed in contract address table | no |
+| For New Chain Deployment - SlowMist Audit Report.pdf | RightsManager | unmatched — not counted | — | listed in contract address table | no |
+| For Scroll Chain - SlowMist Audit Report.pdf | CRPFactory | unmatched — not counted | — | listed in scope table and code location | no |
+| For Scroll Chain - SlowMist Audit Report.pdf | Factory | unmatched — not counted | — | listed in scope table and code location | no |
+| For Scroll Chain - SlowMist Audit Report.pdf | ConfigurableRightsPool | unmatched — not counted | — | listed in visibility description | no |
+| For Scroll Chain - SlowMist Audit Report.pdf | LiquidityPool | unmatched — not counted | — | listed in visibility description | no |
+| For Scroll Chain - SlowMist Audit Report.pdf | Vault | unmatched — not counted | — | listed in scope table | no |
+| For Scroll Chain - SlowMist Audit Report.pdf | UserVault | unmatched — not counted | — | listed in scope table | no |
+| For Scroll Chain - SlowMist Audit Report.pdf | Oracle | unmatched — not counted | — | listed in scope table | no |
+| For Scroll Chain - SlowMist Audit Report.pdf | DesynChainlinkOracle | unmatched — not counted | — | listed in scope table | no |
+| For Scroll Chain - SlowMist Audit Report.pdf | DesynSafeMath | unmatched — not counted | — | listed in scope table | no |
+| For Scroll Chain - SlowMist Audit Report.pdf | RightsManager | unmatched — not counted | — | listed in scope table | no |
+| For Scroll Chain - SlowMist Audit Report.pdf | SmartPoolManager | unmatched — not counted | — | listed in scope table | no |
+| rebalanceAdapter related - SlowMist Audit Report.pdf | ConfigurableRightsPool | unmatched — not counted | — | listed in scope and vulnerability descriptions | no |
+| rebalanceAdapter related - SlowMist Audit Report.pdf | LiquidityPool | unmatched — not counted | — | listed in scope and vulnerability descriptions | no |
+| rebalanceAdapter related - SlowMist Audit Report.pdf | DesynChainlinkOracle | unmatched — not counted | — | listed in scope and vulnerability descriptions | no |
+| rebalanceAdapter related - SlowMist Audit Report.pdf | Oracle | unmatched — not counted | — | listed in scope and vulnerability descriptions | no |
+| rebalanceAdapter related - SlowMist Audit Report.pdf | UserVault | unmatched — not counted | — | listed in scope and vulnerability descriptions | no |
+| rebalanceAdapter related - SlowMist Audit Report.pdf | Vault | unmatched — not counted | — | listed in scope and vulnerability descriptions | no |
+| rebalanceAdapter related - SlowMist Audit Report.pdf | SmartPoolManager | unmatched — not counted | — | listed in scope and vulnerability descriptions | no |
+| rebalanceAdapter related - SlowMist Audit Report.pdf | Invoke | unmatched — not counted | — | listed in scope and vulnerability descriptions | no |
+| rebalanceAdapter related - SlowMist Audit Report.pdf | RebalanceAdapter | unmatched — not counted | — | listed in scope and vulnerability descriptions | no |
+| rebalanceAdapter related - SlowMist Audit Report.pdf | Factory | unmatched — not counted | — | mentioned in vulnerability N19 | no |
+| DeSyn Key Modules Audit - SlowMist Audit Report.pdf | ConfigurableRightsPool | unmatched — not counted | — | listed in scope | no |
+| DeSyn Key Modules Audit - SlowMist Audit Report.pdf | LiquidityPool | unmatched — not counted | — | listed in scope | no |
+| DeSyn Key Modules Audit - SlowMist Audit Report.pdf | Actions | unmatched — not counted | — | listed in scope | no |
+| DeSyn Key Modules Audit - SlowMist Audit Report.pdf | SmartPoolManager | unmatched — not counted | — | listed in scope | no |
+| DeSyn New Chains Updates- SlowMist Audit Report.pdf | Actions | unmatched — not counted | — | listed in scope and code overview | no |
+| DeSyn New Chains Updates- SlowMist Audit Report.pdf | CRPFactory | unmatched — not counted | — | listed in scope and code overview | no |
+| DeSyn New Chains Updates- SlowMist Audit Report.pdf | ConfigurableRightsPool | unmatched — not counted | — | listed in scope and code overview | no |
+| DeSyn New Chains Updates- SlowMist Audit Report.pdf | LiquidityPool | unmatched — not counted | — | listed in scope and code overview | no |
+| DeSyn New Chains Updates- SlowMist Audit Report.pdf | SmartPoolManager | unmatched — not counted | — | listed in scope and code overview | no |
+| New Chain Updates-BNB Chain - SlowMist Audit Report.pdf | MoveFunds | unmatched — not counted | — | listed in scope with commit hash | no |
+| New Chain Updates-BNB Chain - SlowMist Audit Report.pdf | Airdrop | unmatched — not counted | — | listed in scope with commit hash | no |
+| New Chain Updates-BNB Chain - SlowMist Audit Report.pdf | ConfigurableRightsPool | unmatched — not counted | — | mentioned in vulnerability findings and visibility table | no |
+| New Chian Updates-Abstract Chain Audit Report.pdf | Create2Helper | unmatched — not counted | — | listed in audit scope | no |
+| New Chian Updates-Abstract Chain Audit Report.pdf | CRPFactory | unmatched — not counted | — | listed in audit scope | no |
+| New Chian Updates-Abstract Chain Audit Report.pdf | Factory | unmatched — not counted | — | listed in audit scope | no |
+| New Chian Updates-Abstract Chain Audit Report.pdf | ConfigurableRightsPool | unmatched — not counted | — | referenced in Create2Helper and vulnerability discussion | no |
+| New Chian Updates-Abstract Chain Audit Report.pdf | LiquidityPool | unmatched — not counted | — | referenced in Create2Helper and vulnerability discussion | no |
 
 ## Coverage Gaps
 
@@ -143,23 +332,40 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 22 |
+| standard_library | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 4
+- Audits with zero matched contracts: 19
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=15
-- Match method counts: extraction_exact=121
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 155 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=19
+- Match method counts: n/a
 
 Zero-match audit list:
 
+- [17168] 202301-Certik Audit Report.pdf
+- [17169] 202301-SlowMist Audit Report.pdf
 - [17170] 202305-Certik Audit Report-3x ETH staking.pdf
 - [17171] 202305-SlowMist Audit Report-3x ETH staking.pdf
+- [17172] 202309-Certik Audit Report - dSTBT.pdf
+- [17173] 202309-SlowMist Audit Report - dSTBT.pdf
+- [17174] 202310-Certik Audit Report.pdf
+- [17175] 202310-SlowMist Audit Report - DeSyn Phase5.pdf
 - [17176] 202406-SlowMist Audit Report - DeSyn ETH Flashloan Leverage Staking.pdf
+- [17177] 202406-SlowMist Audit Report - DeSyn Phase5.pdf
+- [17178] 202407-SlowMist Audit Report - Desyn Phase3.pdf
+- [17179] 202407-SlowMist Audit Report - DeSyn Phase5.pdf
+- [17180] For New Chain Deployment - SlowMist Audit Report.pdf
+- [17181] For Scroll Chain - SlowMist Audit Report.pdf
+- [17182] rebalanceAdapter related - SlowMist Audit Report.pdf
+- [17183] DeSyn Key Modules Audit - SlowMist Audit Report.pdf
+- [17184] DeSyn New Chains Updates- SlowMist Audit Report.pdf
 - [17185] New Chain Updates-BNB Chain - SlowMist Audit Report.pdf
+- [17186] New Chian Updates-Abstract Chain Audit Report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

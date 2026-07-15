@@ -1,44 +1,87 @@
 # Agentic Audit Brief: Beefy
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 18 (0 matched; 18 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Beefy (`beefy`)
 - Website: [https://beefy.com](https://beefy.com)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:33.473Z
-- Pipeline run: v2-2026-07-03-89943a
-- Chains: arbitrum, ethereum
-- Contract surface: 4 unique implementations (4 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: arbitrum, ethereum, fantom, gnosis
+- Contract surface: 7 unique implementations (7 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $107,664,768.66
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Yield Aggregator. Structurally: 4 project-authored contract(s) across 2 chain(s); 2 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.
+This brief describes the observed EVM deployment and audit surface for Beefy. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin-upgradeable.
+The pinned logic-topography run contains 1 contract row(s) across arbitrum, ethereum, fantom, gnosis, scroll. Structural roles: 1 supporting. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 1
+- Structural roles: supporting (1)
+- Contract kinds: contract (1)
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 2 contracts are derived from known codebases. 2 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x44e314...ff940a`, chain 250)
+- UnnamedContract (`0xfae44b...fabdc6`, chain 250)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 4; live-surface contracts included: 4 (4 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 1; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 2/6 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/4 (0.0%)
-- Deployed-live implementations: 4 of 4 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/4
-- Verified + Unaudited implementations: 4
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 2 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 3 discovered implementations excluded (2 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Deployed-live implementations: 2 of 7 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 4
-- Raw deployments: 4
+- Unverified implementations: 2
+- Unique implementations: 7
+- Raw deployments: 7
 - Audits discovered: 18 (18 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/beefyfinance/information))
@@ -60,12 +103,12 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 ### ⚠️ Verified + Unaudited (4)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BeefyVaultV7 | unknown | arbitrum | n/a | [`0x0c0846...edb409`](./contracts/arbitrum-42161/0x0c0846c5d8194bc327669763ac6af9b788edb409/) | ⚠️ Unaudited |
-| BIFI | unknown | ethereum | n/a | [`0xb1f1ee...73b1f1`](./contracts/ethereum-1/0xb1f1ee126e9c96231cc3d3fad7c08b4cf873b1f1/) | ⚠️ Unaudited |
-| CLR | unknown | ethereum | n/a | [`0x11ae2b...37fe6c`](./contracts/ethereum-1/0x11ae2b89175792f57d320a020eaea879e837fe6c/) | ⚠️ Unaudited |
-| DelegateRegistry | unknown | ethereum | n/a | [`0x469788...015446`](./contracts/ethereum-1/0x469788fe6e9e9681c6ebf3bf78e7fd26fc015446/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BeefyVaultV7 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | arbitrum | n/a | `0x0c0846...edb409` | ⚠️ Unaudited |
+| BIFI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb1f1ee...73b1f1` | ⚠️ Unaudited |
+| CLR | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0x11ae2b...37fe6c` | ⚠️ Unaudited |
+| DelegateRegistry | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-229101 | `0x469788...015446` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -79,34 +122,113 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | gnosis | unit-229103 | `0x469788...015446` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-229104 | `0x44e314...ff940a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-229105 | `0xfae44b...fabdc6` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [2020-12-10-Beefy-DefiYield-Vault-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2020-12-10-Beefy-DefiYield-Vault-Audit.pdf) | DefiYield | Audit | 2020-12 | stale | Direct | n/a | 0 | n/a |
-| [2021-03-05-Beefy-CertiK-Final-For-Beefy-Contracts.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2021-03-05-Beefy-CertiK-Final-For-Beefy-Contracts.pdf) | CertiK | Audit | 2021-03 | stale | Direct | n/a | 0 | n/a |
-| [2021-05-11-Beefy-CertiK-Preeliminary-Comments.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2021-05-11-Beefy-CertiK-Preeliminary-Comments.pdf) | CertiK | Audit | 2021-05 | stale | Direct | n/a | 0 | n/a |
-| [2021-06-24-Beefy-Smart-Contract.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2021-06-24-Beefy-Smart-Contract.pdf) | Unknown | Audit | 2021-06 | stale | Direct | n/a | 0 | n/a |
-| [2023-08-03-Beefy-Zellic-4626-Wrapper-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2023-08-03-Beefy-Zellic-4626-Wrapper-Audit.pdf) | Zellic | Audit | 2023-08 | stale | Direct | n/a | 0 | n/a |
-| [2023-08-30-Beefy-Zellic-BIFI-Token-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2023-08-30-Beefy-Zellic-BIFI-Token-Audit.pdf) | Zellic | Audit | 2023-08 | stale | Direct | n/a | 0 | n/a |
-| [2023-12-15-Beefy-OZ-Zap-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2023-12-15-Beefy-OZ-Zap-Audit.pdf) | OpenZeppelin | Audit | 2023-12 | stale | Direct | n/a | 0 | n/a |
-| [2024-02-28-Beefy-Zellic-CLM-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2024-02-28-Beefy-Zellic-CLM-Audit.pdf) | Zellic | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
-| [2024-04-06-Beefy-Cyfrin-CLM-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2024-04-06-Beefy-Cyfrin-CLM-Audit.pdf) | Cyfrin | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
-| [2024-06-30-Beefy-Certora-CLM-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2024-06-30-Beefy-Certora-CLM-Audit.pdf) | Certora | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
-| [2024-07-02-Beefy-Sherlock-CLM-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2024-07-02-Beefy-Sherlock-CLM-Audit.pdf) | Sherlock | Contest | 2024-07 | stale | Direct | n/a | 0 | n/a |
-| [2025-04-05-Beefy-Electisec-beS-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2025-04-05-Beefy-Electisec-beS-Audit.pdf) | Electisec | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
-| [Audits & Bounty](https://docs.beefy.finance/safety/bug-bounty-program.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [here](https://jumpshare.com/share/OoX8oJSWRgxyIhoET3cP) | unknown | Audit | 2026 | fresh | Direct | n/a | 0 | n/a |
-| [Audit](https://github.com/beefyfinance/beefy-audits) | unknown | Audit | 2026 | fresh | Direct | n/a | 0 | n/a |
-| [here](https://jumpshare.com/share/gKbJPgEJxFOVPsZSv47z) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [Active Bug Bounty Program](https://immunefi.com/bug-bounty/beefyfinance/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
-| [Beefy hosted a [CLM contest]() with Sherlock in May 2024, receiving 134 submissions but finding only 1 medium-severity bug.](https://audits.sherlock.xyz/contests/303) | Sherlock | Contest | 2024-05 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [2020-12-10-Beefy-DefiYield-Vault-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2020-12-10-Beefy-DefiYield-Vault-Audit.pdf) | DefiYield | Audit | 2020-12 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 3 | medium |
+| [2021-03-05-Beefy-CertiK-Final-For-Beefy-Contracts.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2021-03-05-Beefy-CertiK-Final-For-Beefy-Contracts.pdf) | CertiK | Audit | 2021-03 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [2021-05-11-Beefy-CertiK-Preeliminary-Comments.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2021-05-11-Beefy-CertiK-Preeliminary-Comments.pdf) | CertiK | Audit | 2021-05 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [2021-06-24-Beefy-Smart-Contract.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2021-06-24-Beefy-Smart-Contract.pdf) | Unknown | Audit | 2021-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [2023-08-03-Beefy-Zellic-4626-Wrapper-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2023-08-03-Beefy-Zellic-4626-Wrapper-Audit.pdf) | Zellic | Audit | 2023-08 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+| [2023-08-30-Beefy-Zellic-BIFI-Token-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2023-08-30-Beefy-Zellic-BIFI-Token-Audit.pdf) | Zellic | Audit | 2023-08 | stale | Direct | address | no match | 0 | 0 | 0 | 1 | high |
+| [2023-12-15-Beefy-OZ-Zap-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2023-12-15-Beefy-OZ-Zap-Audit.pdf) | OpenZeppelin | Audit | 2023-12 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 6 | high |
+| [2024-02-28-Beefy-Zellic-CLM-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2024-02-28-Beefy-Zellic-CLM-Audit.pdf) | Zellic | Audit | 2024-02 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [2024-04-06-Beefy-Cyfrin-CLM-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2024-04-06-Beefy-Cyfrin-CLM-Audit.pdf) | Cyfrin | Audit | 2024-04 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 5 | high |
+| [2024-06-30-Beefy-Certora-CLM-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2024-06-30-Beefy-Certora-CLM-Audit.pdf) | Certora | Audit | 2024-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 4 | high |
+| [2024-07-02-Beefy-Sherlock-CLM-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2024-07-02-Beefy-Sherlock-CLM-Audit.pdf) | Sherlock | Contest | 2024-07 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+| [2025-04-05-Beefy-Electisec-beS-Audit.pdf](https://github.com/beefyfinance/beefy-audits/blob/master/2025-04-05-Beefy-Electisec-beS-Audit.pdf) | Electisec | Audit | 2025-04 | aging | Direct | contract_name | no match | 0 | 0 | 0 | 7 | high |
+| [Audits & Bounty](https://docs.beefy.finance/safety/bug-bounty-program.md) | unknown | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [here](https://jumpshare.com/share/OoX8oJSWRgxyIhoET3cP) | unknown | Audit | 2026 | fresh | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [Audit](https://github.com/beefyfinance/beefy-audits) | unknown | Audit | 2026 | fresh | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [here](https://jumpshare.com/share/gKbJPgEJxFOVPsZSv47z) | unknown | Audit | 2025 | aging | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [Active Bug Bounty Program](https://immunefi.com/bug-bounty/beefyfinance/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a | n/a | n/a | n/a | n/a |
+| [Beefy hosted a [CLM contest]() with Sherlock in May 2024, receiving 134 submissions but finding only 1 medium-severity bug.](https://audits.sherlock.xyz/contests/303) | Sherlock | Contest | 2024-05 | stale | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [19520] 2020-12-10-Beefy-DefiYield-Vault-Audit.pdf — no match: Report is unstructured; contract names extracted from mentions in text. Date found in header.
+- [19521] 2021-03-05-Beefy-CertiK-Final-For-Beefy-Contracts.pdf — no match: Scope table lists 4 contracts: StrategyCake.sol, StrategySyrup.sol, YieldBalancer.sol, BeefyVaultV4.sol. External addresses listed are explicitly out of scope. Audit date is Mar 5th, 2021.
+- [19522] 2021-05-11-Beefy-CertiK-Preeliminary-Comments.pdf — no match: Audit scope table lists four contracts with file paths and SHA256 checksums. Audit date is May 11th, 2021 from delivery date.
+- [19523] 2021-06-24-Beefy-Smart-Contract.pdf — no match: Audit scope table lists four contracts with file paths and SHA256 checksums. Audit delivery date is Jun 24, 2021.
+- [19524] 2023-08-03-Beefy-Zellic-4626-Wrapper-Audit.pdf — no match: Scope section clearly lists BeefyWrapper and BeefyWrapperFactory as the programs in scope. Audit date is August 3, 2023 from cover page.
+- [19525] 2023-08-30-Beefy-Zellic-BIFI-Token-Audit.pdf — no match: Only one contract (BIFI) is in scope; the report is a review of a single ERC20 token contract.
+- [19526] 2023-12-15-Beefy-OZ-Zap-Audit.pdf — no match: All contracts listed in the Scope section of the audit report.
+- [19527] 2024-02-28-Beefy-Zellic-CLM-Audit.pdf — no match: Scope section lists four contracts: BeefyVaultConcLiqFactory, BeefyVaultConcLiq, StrategyFactory, StrategyPassiveManagerUniswap. Audit date is February 28, 2024 from cover page.
+- [19528] 2024-04-06-Beefy-Cyfrin-CLM-Audit.pdf — no match: Scope section explicitly lists 5 contracts. Audit date from cover page: 'April 6, 2024'.
+- [19529] 2024-06-30-Beefy-Certora-CLM-Audit.pdf — no match: Scope section explicitly lists four contracts. Audit date inferred from 'June/24' in header.
+- [19530] 2024-07-02-Beefy-Sherlock-CLM-Audit.pdf — no match: Only one contract explicitly named in scope: StrategyPassiveManagerVelodrome. The report mentions a repository and branch but no other contract files.
+- [19531] 2025-04-05-Beefy-Electisec-beS-Audit.pdf — no match: Scope section lists 7 contracts: BeefySonic.sol, BeefySonicStorageUtils.sol, and 5 interfaces. Audit date is March 26, 2025 (end of review period).
+- [19532] Audits & Bounty — no match: The document is a general safety page describing audits and bug bounty program, but does not list specific contracts in scope for any particular audit. No contract names or audit dates are provided.
+- [19533] here — no match: The document is a quarterly report for Beefy, not an audit report. No contracts or audit date found.
+- [19534] Audit — no match: The provided text is a GitHub repository listing of audit PDF filenames, not the actual audit report content. No contract names or scope details are extractable.
+- [19535] here — no match: The provided text is not an audit report; it appears to be a Jumpshare interface for a file named 'Beefy 2025 Annual Report.pdf' with no extractable contract information.
+- [19536] Active Bug Bounty Program — no match: The document is a bug bounty program page, not an audit report. No specific contracts are listed in scope; only general descriptions of the protocol are provided.
+- [19537] Beefy hosted a [CLM contest]() with Sherlock in May 2024, receiving 134 submissions but finding only 1 medium-severity bug. — no match: The provided text is a header snippet from a contest page, not a full audit report. No contract names, scope section, or audit date are identifiable.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| 2020-12-10-Beefy-DefiYield-Vault-Audit.pdf | BIFI | unmatched — not counted | — | mentioned as token smart contract | no |
+| 2020-12-10-Beefy-DefiYield-Vault-Audit.pdf | RewardPool | unmatched — not counted | — | mentioned as BIFI RewardPool contracts | no |
+| 2020-12-10-Beefy-DefiYield-Vault-Audit.pdf | TokenTimelock | unmatched — not counted | — | mentioned as TokenTimelock contracts | no |
+| 2021-03-05-Beefy-CertiK-Final-For-Beefy-Contracts.pdf | StrategyCake | unmatched — not counted | — | listed in scope table with SHA-256 checksum | no |
+| 2021-03-05-Beefy-CertiK-Final-For-Beefy-Contracts.pdf | StrategySyrup | unmatched — not counted | — | listed in scope table with SHA-256 checksum | no |
+| 2021-03-05-Beefy-CertiK-Final-For-Beefy-Contracts.pdf | YieldBalancer | unmatched — not counted | — | listed in scope table with SHA-256 checksum | no |
+| 2021-03-05-Beefy-CertiK-Final-For-Beefy-Contracts.pdf | BeefyVaultV4 | unmatched — not counted | — | listed in scope table with SHA-256 checksum | no |
+| 2021-05-11-Beefy-CertiK-Preeliminary-Comments.pdf | StrategyAutoCake | unmatched — not counted | — | listed in Audit Scope table with SHA256 checksum | no |
+| 2021-05-11-Beefy-CertiK-Preeliminary-Comments.pdf | StrategyAutoVenus | unmatched — not counted | — | listed in Audit Scope table with SHA256 checksum | no |
+| 2021-05-11-Beefy-CertiK-Preeliminary-Comments.pdf | BeefyBurningVault | unmatched — not counted | — | listed in Audit Scope table with SHA256 checksum | no |
+| 2021-05-11-Beefy-CertiK-Preeliminary-Comments.pdf | BeefyVaultV3 | unmatched — not counted | — | listed in Audit Scope table with SHA256 checksum | no |
+| 2021-06-24-Beefy-Smart-Contract.pdf | StrategyAutoCake | unmatched — not counted | — | listed in Audit Scope table with SHA256 checksum | no |
+| 2021-06-24-Beefy-Smart-Contract.pdf | StrategyAutoVenus | unmatched — not counted | — | listed in Audit Scope table with SHA256 checksum | no |
+| 2021-06-24-Beefy-Smart-Contract.pdf | BeefyBurningVault | unmatched — not counted | — | listed in Audit Scope table with SHA256 checksum | no |
+| 2021-06-24-Beefy-Smart-Contract.pdf | BeefyVaultV3 | unmatched — not counted | — | listed in Audit Scope table with SHA256 checksum | no |
+| 2023-08-03-Beefy-Zellic-4626-Wrapper-Audit.pdf | BeefyWrapper | unmatched — not counted | — | Listed in scope table as 'BeefyWrapper' and referenced throughout report. | no |
+| 2023-08-03-Beefy-Zellic-4626-Wrapper-Audit.pdf | BeefyWrapperFactory | unmatched — not counted | — | Listed in scope table as 'BeefyWrapperFactory' and threat model section. | no |
+| 2023-08-30-Beefy-Zellic-BIFI-Token-Audit.pdf | BIFI | unmatched — not counted | — | Scope section lists Beefy Token Repository with address; contract overview mentions BIFI.sol | no |
+| 2023-12-15-Beefy-OZ-Zap-Audit.pdf | IBeefyTokenManager | unmatched — not counted | — | listed in scope | no |
+| 2023-12-15-Beefy-OZ-Zap-Audit.pdf | IBeefyZapRouter | unmatched — not counted | — | listed in scope | no |
+| 2023-12-15-Beefy-OZ-Zap-Audit.pdf | IPermit2 | unmatched — not counted | — | listed in scope | no |
+| 2023-12-15-Beefy-OZ-Zap-Audit.pdf | BeefyTokenManager | unmatched — not counted | — | listed in scope | no |
+| 2023-12-15-Beefy-OZ-Zap-Audit.pdf | BeefyZapRouter | unmatched — not counted | — | listed in scope | no |
+| 2023-12-15-Beefy-OZ-Zap-Audit.pdf | ZapErrors | unmatched — not counted | — | listed in scope | no |
+| 2024-02-28-Beefy-Zellic-CLM-Audit.pdf | BeefyVaultConcLiqFactory | unmatched — not counted | — | listed in scope section | no |
+| 2024-02-28-Beefy-Zellic-CLM-Audit.pdf | BeefyVaultConcLiq | unmatched — not counted | — | listed in scope section | no |
+| 2024-02-28-Beefy-Zellic-CLM-Audit.pdf | StrategyFactory | unmatched — not counted | — | listed in scope section | no |
+| 2024-02-28-Beefy-Zellic-CLM-Audit.pdf | StrategyPassiveManagerUniswap | unmatched — not counted | — | listed in scope section | no |
+| 2024-04-06-Beefy-Cyfrin-CLM-Audit.pdf | StratFeeManagerInitializable | unmatched — not counted | — | listed in scope | no |
+| 2024-04-06-Beefy-Cyfrin-CLM-Audit.pdf | StrategyProtocol | unmatched — not counted | — | listed in scope | no |
+| 2024-04-06-Beefy-Cyfrin-CLM-Audit.pdf | StrategyPassiveManagerUniswap | unmatched — not counted | — | listed in scope | no |
+| 2024-04-06-Beefy-Cyfrin-CLM-Audit.pdf | BeefyVaultConcLiq | unmatched — not counted | — | listed in scope | no |
+| 2024-04-06-Beefy-Cyfrin-CLM-Audit.pdf | BeefyVaultConcLiqFactory | unmatched — not counted | — | listed in scope | no |
+| 2024-06-30-Beefy-Certora-CLM-Audit.pdf | BeefyVaultConcLiq | unmatched — not counted | — | listed in scope section | no |
+| 2024-06-30-Beefy-Certora-CLM-Audit.pdf | BeefyVaultConcLiqFactory | unmatched — not counted | — | listed in scope section | no |
+| 2024-06-30-Beefy-Certora-CLM-Audit.pdf | StrategyPassiveManagerUniswap | unmatched — not counted | — | listed in scope section | no |
+| 2024-06-30-Beefy-Certora-CLM-Audit.pdf | StrategyFactory | unmatched — not counted | — | listed in scope section | no |
+| 2024-07-02-Beefy-Sherlock-CLM-Audit.pdf | StrategyPassiveManagerVelodrome | unmatched — not counted | — | listed in scope and findings | no |
+| 2025-04-05-Beefy-Electisec-beS-Audit.pdf | BeefySonic | unmatched — not counted | — | listed in scope | no |
+| 2025-04-05-Beefy-Electisec-beS-Audit.pdf | BeefySonicStorageUtils | unmatched — not counted | — | listed in scope | no |
+| 2025-04-05-Beefy-Electisec-beS-Audit.pdf | IBeefySonic | unmatched — not counted | — | listed in scope | no |
+| 2025-04-05-Beefy-Electisec-beS-Audit.pdf | IConstantsManager | unmatched — not counted | — | listed in scope | no |
+| 2025-04-05-Beefy-Electisec-beS-Audit.pdf | IFeeConfig | unmatched — not counted | — | listed in scope | no |
+| 2025-04-05-Beefy-Electisec-beS-Audit.pdf | ISFC | unmatched — not counted | — | listed in scope | no |
+| 2025-04-05-Beefy-Electisec-beS-Audit.pdf | IWrappedNative | unmatched — not counted | — | listed in scope | no |
 
 ## Coverage Gaps
 
@@ -118,10 +240,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 4 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 4 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 
@@ -129,7 +251,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 17
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 45 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=11, low=6, medium=1
 - Match method counts: n/a
 
 Zero-match audit list:

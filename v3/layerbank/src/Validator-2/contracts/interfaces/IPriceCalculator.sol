@@ -2,6 +2,12 @@
 pragma solidity ^0.6.12;
 
 interface IPriceCalculator {
+    event KeeperUpdated(address indexed keeper);
+    
+    event TokenFeedUpdated(address indexed token, address indexed feed);
+
+    event PricesUpdated(address[] indexed assets, uint256[] prices, uint256 timestamp);
+
     struct ReferenceData {
         uint256 lastData;
         uint256 lastUpdated;

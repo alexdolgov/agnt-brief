@@ -1,44 +1,91 @@
 # Agentic Audit Brief: FireBot
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 1 across 1 audit(s)
+- Eligible audit results: 2 (1 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: FireBot (`firebot`)
 - Website: [https://firebot.gg](https://firebot.gg)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:51.668Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
-- Chains: polygon
-- Contract surface: 42 unique implementations (82 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: ethereum, polygon
+- Contract surface: 11 unique implementations (11 raw deployments)
+- Coverage basis: 1/7 confirmed own live verified implementations (14.3%); conservative 14.3% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $2,357,511.64
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Yield. Structurally: 68 project-authored contract(s) across 1 chain(s); 27 ERC20 tokens, 1 ERC721 NFT, 3 ERC1155 multi-tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for FireBot. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Its contracts share 8 common project-authored base contract(s) (erc20burnable, erc20permit, eip712). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 7 contract row(s) across ethereum, polygon. Structural roles: 6 core, 1 unclassified. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 7
+- Structural roles: core (6), unclassified (1)
+- Contract kinds: contract (7)
+- Detected standards: erc20 (6), erc20permit (3), ownable (1)
+- Frameworks: openzeppelin (6)
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 11 contracts are derived from known codebases. 11 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0xf9680d...205945`, chain 1)
+- UnnamedContract (`0x10f964...da5e6a`, chain 137)
+- UnnamedContract (`0xab5946...862de0`, chain 137)
+- UnnamedContract (`0xc907e1...d57f6f`, chain 137)
+- FirePool (`0xe20e04...670234`, chain 137)
+- FireVaultEP (`0xa2b205...8e5cc3`, chain 137)
+- FireVaultFBXV2 (`0x960d43...14dfbe`, chain 137)
+- FUSDv2 (`0x3c56f0...563a99`, chain 137)
+- Pyromancy (`0xea459c...bf370a`, chain 137)
+- UniswapV2Pair (`0x1000bb...1eb8f9`, chain 137)
+- UniswapV2Pair (`0xe7b7cf...5a5bed`, chain 137)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 192; live-surface contracts included: 82 (66 live, 16 unknown).
-- Excluded by liveness: 110 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 7; live-surface contracts included: 7 (7 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 11/11 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 1/26 (3.8%)
-- Deployed-live implementations: 26 of 42 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 1/26
-- Verified + Unaudited implementations: 25
+- Coverage of address-book-owned deployed-live implementations: 1/7 (14.3%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 11 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 11 of 11 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 1/7
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
-- Unverified implementations: 16
-- Unique implementations: 42
-- Raw deployments: 82
+- Unverified implementations: 4
+- Unique implementations: 11
+- Raw deployments: 11
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -51,45 +98,26 @@ The protocol comprises 5 functional families. Its contracts share 8 common proje
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| RedTiger | Tier 2 | 1 | 3.8% | 2023-10 |
+| RedTiger | Tier 2 | 1 | 14.3% | 2023-10 |
 
 ## Contract Surface
 
 ### ✅ Verified + Audited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| ElementalParticles | unknown | polygon | n/a | [`0x60ed6a...751af2`](./contracts/polygon-137/0x60ed6acef3a96f8cdaf0c0d207bbafa66e751af2/) | ✅ Audited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| FireVaultEP | core_logic | project_anchor | own_supporting | 0 | polygon | unit-239909 | `0xa2b205...8e5cc3` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (25)
+### ⚠️ Verified + Unaudited (6)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AlgebraPool | core_logic | polygon | n/a | [`0x17b509...a8e821`](./contracts/polygon-137/0x17b509b2b65b0d07b9e46bfc2ffe6c9c09a8e821/) | ⚠️ Unaudited |
-| CometWithExtendedAssetList | unknown | polygon | n/a | [`0xaeb318...409a07`](./contracts/polygon-137/0xaeb318360f27748acb200ce616e389a6c9409a07/) | ⚠️ Unaudited |
-| Farm | unknown | polygon | n/a | 2 deployments: polygon [`0x92a918...6c62c9`](./contracts/polygon-137/0x92a9180af33531a5d78d81d90afc0523dc6c62c9/); polygon `0xf65c47...f57ab8` | ⚠️ Unaudited |
-| FBX_WETH_LP_Farm | token | polygon | n/a | [`0x4c1bfe...e8d6ee`](./contracts/polygon-137/0x4c1bfefc1ea12b698540c8f7cf233fe499e8d6ee/) | ⚠️ Unaudited |
-| firebot_market | unknown | polygon | n/a | 3 deployments: polygon [`0x02e219...31dd86`](./contracts/polygon-137/0x02e219d7b59c43cb012bb87dcab86172ff31dd86/); polygon `0x242fa7...af9538`; polygon `0xd709e1...d2d0bd` | ⚠️ Unaudited |
-| FireBotGovernor | governance | polygon | n/a | [`0x1c10db...9ae457`](./contracts/polygon-137/0x1c10db92c0a6e2bf089f08a60fa98158359ae457/) | ⚠️ Unaudited |
-| firebotMarket | unknown | polygon | n/a | 2 deployments: polygon [`0xc99567...c1d334`](./contracts/polygon-137/0xc99567b0b5649120fe882554cacfcaa68bc1d334/); polygon `0xf312bf...7eb39c` | ⚠️ Unaudited |
-| FireBotToken | token | polygon | n/a | [`0xd12544...6f8218`](./contracts/polygon-137/0xd125443f38a69d776177c2b9c041f462936f8218/) | ⚠️ Unaudited |
-| FirePool | core_logic | polygon | n/a | [`0xe20e04...670234`](./contracts/polygon-137/0xe20e046b230a5530438d32abfbcc3e61d7670234/) | ⚠️ Unaudited |
-| FireVaultEP | core_logic | polygon | n/a | [`0xa2b205...8e5cc3`](./contracts/polygon-137/0xa2b205f8c0f0e30b3f73b7716a718c53cb8e5cc3/) | ⚠️ Unaudited |
-| FireVaultFBX | core_logic | polygon | n/a | 3 deployments: polygon [`0xa461b5...cf132b`](./contracts/polygon-137/0xa461b57d4794447bb53ad584844c4a19c6cf132b/); polygon `0xd3368e...a78e75`; polygon `0xe344db...127b9a` | ⚠️ Unaudited |
-| FireVaultFBXV2 | core_logic | polygon | n/a | 18 deployments: polygon [`0x09083f...91c049`](./contracts/polygon-137/0x09083fa4a172e52df84808edc31fa167e591c049/); polygon `0x098534...a6d4df`; polygon `0x0f3226...8b22d9`; polygon `0x2b5f17...1ded23`; polygon `0x30f096...0bd486`; polygon `0x364663...abbf56`; polygon `0x4758d9...e16044`; polygon `0x651042...cd9047`; polygon `0x65b8e5...7f936d`; polygon `0x77ff4f...583348`; polygon `0x869f1e...8e241b`; polygon `0x960d43...14dfbe`; polygon `0x9bf581...9c14c7`; polygon `0xa163f1...8f5cfe`; polygon `0xd0e489...e7c271`; polygon `0xda6167...7046d1`; polygon `0xe44f4e...05f5f8`; polygon `0xf584be...4ef875` | ⚠️ Unaudited |
-| FireVaultFBXV3 | core_logic | polygon | n/a | [`0x4d979f...022594`](./contracts/polygon-137/0x4d979fed1defc256c02a97687840c0afb7022594/) | ⚠️ Unaudited |
-| FireVaultFBXV4 | core_logic | polygon | n/a | [`0x7ccfb7...067577`](./contracts/polygon-137/0x7ccfb7d2598421ea897ba94f5d3fd598f4067577/) | ⚠️ Unaudited |
-| FUSDv2 | unknown | polygon | n/a | [`0x3c56f0...563a99`](./contracts/polygon-137/0x3c56f017d9ce85350df8f4b495033aaa15563a99/) | ⚠️ Unaudited |
-| item_selector | unknown | polygon | n/a | [`0xad79b4...76dcf0`](./contracts/polygon-137/0xad79b4a1905de5e505a7c8b34a20d7456676dcf0/) | ⚠️ Unaudited |
-| item_vault_swap | core_logic | polygon | n/a | [`0xc82669...cf4910`](./contracts/polygon-137/0xc82669f560e1d1099636ada24479bb0f2bcf4910/) | ⚠️ Unaudited |
-| LPFarm | unknown | polygon | n/a | [`0x257793...4c6626`](./contracts/polygon-137/0x257793cb6a8111d36d62f50dcd27926f404c6626/) | ⚠️ Unaudited |
-| Migrations | operational_periphery | polygon | n/a | [`0x6dcfd6...25a5fc`](./contracts/polygon-137/0x6dcfd69c12e866dfbb857646b77f842c7b25a5fc/) | ⚠️ Unaudited |
-| Oracle | unknown | polygon | n/a | [`0x126739...008592`](./contracts/polygon-137/0x1267398f95a7ded2c5eaabd5508c047aff008592/) | ⚠️ Unaudited |
-| RefToken | token | polygon | n/a | 13 deployments: polygon [`0x055fa3...ff8bb5`](./contracts/polygon-137/0x055fa35955bd0d895d719d8f2a164685fbff8bb5/); polygon `0x0d0c7e...343e94`; polygon `0x13d9bb...292e4d`; polygon `0x1aca6c...790a4e`; polygon `0x1c6bcf...7baab5`; polygon `0x587290...b06798`; polygon `0x5f403d...402beb`; polygon `0x6c1338...49e57f`; polygon `0x7a0412...0e9b08`; polygon `0x7fc0fd...d6cfdc`; polygon `0x995491...316855`; polygon `0xc5d5a5...48fca0`; polygon `0xc7f694...cfbd7d` | ⚠️ Unaudited |
-| Test | unknown | polygon | n/a | [`0xefb4ff...994740`](./contracts/polygon-137/0xefb4ff51dd2643f2d700a5561bf36959f4994740/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | polygon | n/a | 4 deployments: polygon [`0x1000bb...1eb8f9`](./contracts/polygon-137/0x1000bb854fbc6d98dc9d859d6cb47e22a31eb8f9/); polygon `0x41d9de...95e397`; polygon `0xcffbfa...fe8a77`; polygon `0xe7b7cf...5a5bed` | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | polygon | n/a | 3 deployments: polygon [`0x6c14fa...2d56df`](./contracts/polygon-137/0x6c14fa1b23a245efb97cbad357ca3948052d56df/); polygon `0x9da4de...1f2f1c`; polygon `0xa6b96e...3a29bb` | ⚠️ Unaudited |
-| WorldCupPool | core_logic | polygon | n/a | [`0xf378f8...76082e`](./contracts/polygon-137/0xf378f8e9603c2ec54b21f0a876ef847df976082e/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| FirePool | core_logic | project_anchor | own_supporting | 0 | polygon | unit-239912 | `0xe20e04...670234` | ⚠️ Unaudited |
+| FireVaultFBXV2 | core_logic | project_anchor | own_supporting | 0 | polygon | unit-239908 | `0x960d43...14dfbe` | ⚠️ Unaudited |
+| FUSDv2 | unknown | project_anchor | own_supporting | 0 | polygon | unit-239907 | `0x3c56f0...563a99` | ⚠️ Unaudited |
+| Pyromancy | unknown | project_anchor | own_supporting | 0 | polygon | unit-239914 | `0xea459c...bf370a` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | project_anchor | own_supporting | 0 | polygon | unit-239905 | `0x1000bb...1eb8f9` | ⚠️ Unaudited |
+| UniswapV2Pair | unknown | project_anchor | own_supporting | 0 | polygon | unit-239913 | `0xe7b7cf...5a5bed` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -103,50 +131,59 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (16)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | polygon | n/a | `0x036724...bb6e35` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x19457d...61f5c6` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x3d7168...25402d` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x3f700a...c5ec01` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x615213...5add21` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x6be50a...ec0007` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x6d11d1...ebdfb1` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x74911f...5fd403` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x74b03f...cfea94` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x922dcf...ed62f6` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x96f579...0bb17e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x9c3b60...9aaded` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xb2d656...439b08` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xbaec62...5c8410` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xc42f65...620f80` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xcf9a2d...c193d2` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-239904 | `0xf9680d...205945` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-239906 | `0x10f964...da5e6a` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-239910 | `0xab5946...862de0` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-239911 | `0xc907e1...d57f6f` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [RedTiger_FireBot_2023.pdf](https://firebot.gg/audits/RedTiger_FireBot_2023.pdf) | RedTiger | Audit | 2023-07 | stale | Direct | contract_name | 1 | n/a |
-| [RedTiger_Sweeep_2023.pdf](https://firebot.gg/audits/RedTiger_Sweeep_2023.pdf) | RedTiger | Audit | 2023-10 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [RedTiger_FireBot_2023.pdf](https://firebot.gg/audits/RedTiger_FireBot_2023.pdf) | RedTiger | Audit | 2023-07 | stale | Direct | n/a | matched | 1 | 0 | 0 | 1 | n/a |
+| [RedTiger_Sweeep_2023.pdf](https://firebot.gg/audits/RedTiger_Sweeep_2023.pdf) | RedTiger | Audit | 2023-10 | stale | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [2865] RedTiger_FireBot_2023.pdf — matched: No reason recorded
+- [2866] RedTiger_Sweeep_2023.pdf — no match: The provided text is a marketing/landing page for FireBot, not an audit report. No audit scope, contracts, or date are present.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| RedTiger_FireBot_2023.pdf | ElementalParticles | unmatched — not counted | — | — | no |
+| RedTiger_FireBot_2023.pdf | FireVaultEP | own contract | FireVaultEP (selected) `0xa2b205...8e5cc3` — deployed 2023-07-07 23:57:57+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | yes |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| polygon | `0xe20e04...670234` | FirePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x960d43...14dfbe` | FireVaultFBXV2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x3c56f0...563a99` | FUSDv2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0xea459c...bf370a` | Pyromancy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 0 |
+| native | 5 |
+| upstream | 2 |
 | standard_library | 0 |
-| needs_review | 42 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 
@@ -154,8 +191,10 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: contract_name=1
+- Address-book scope dispositions: 1 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 1 unmatched
+- Matched-own operational status: 1 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: low=1
+- Match method counts: unique_name=1
 
 Zero-match audit list:
 

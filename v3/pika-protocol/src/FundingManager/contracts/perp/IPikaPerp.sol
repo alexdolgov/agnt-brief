@@ -18,21 +18,24 @@ interface IPikaPerp {
         uint256 productId,
         uint256 margin,
         bool isLong,
-        uint256 leverage
+        uint256 leverage,
+        uint256 oraclePrice
     ) external payable;
     function closePositionWithId(
         uint256 positionId,
-        uint256 margin
+        uint256 margin,
+        uint256 oraclePrice
     ) external;
     function closePosition(
         address user,
         uint256 productId,
         uint256 margin,
-        bool isLong
+        bool isLong,
+        uint256 oraclePrice
     ) external;
     function liquidatePositions(uint256[] calldata positionIds) external;
     function getProduct(uint256 productId) external view returns (
-        address,uint256,uint256,bool,uint256,uint256,uint256,uint256,uint256);
+        address,uint256,uint256,bool,uint256,uint256,uint256,uint256);
     function getPosition(
         address account,
         uint256 productId,

@@ -7,7 +7,7 @@ import "./loans/IMultiSourceLoan.sol";
 /// @author Florida St
 /// @notice Liquidation Handler
 interface ILiquidationHandler {
-    /// @return Liquidator contract address
+    /// @return Liquidator contract address.
     function getLiquidator() external returns (address);
 
     /// @notice Updates the liquidation contract.

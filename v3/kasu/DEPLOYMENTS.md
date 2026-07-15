@@ -1,62 +1,13 @@
 # kasu — deployments
 
-56 verified deployment(s) across 17 component(s).
+7 verified deployment(s) across 1 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| base | `0x0133c2ec8a72dec51a9373e4003a2ccf09b3307a` | TransparentUpgradeableProxy-2 | proxy | live | no |
-| base | `0x08023888ffb36f007679d1ec64a4f22f54e05e1d` | Proxy | proxy | live | yes |
-| base | `0x0b98f531754c55c2c2a084e0ec1647ccee397931` | KSULocking | impl | inactive | no |
-| base | `0x0c5554058118dba2da4a3ca2a448c5a61bc7f4cc` | PendingPool | impl | live | no |
-| base | `0x1617b79c57e00c862941eb578fd134c4d1c0f833` | FixedTermDeposit | impl | inactive | no |
-| base | `0x193bb02a24f5562b58feb86550e6f09bb6c41f69` | TransparentUpgradeableProxy | proxy | live | yes |
-| base | `0x1ca11edb8d8a57b239925c46be878dc2c9261cf3` | Swapper | impl | inactive | yes |
-| base | `0x1e69dd53b1224ea012086dda11f9b4a23b58bd0e` | TransparentUpgradeableProxy-2 | impl | live | no |
-| base | `0x221a54cbbd5f490bd8e77cf36acba4b1304e5c1b` | TransparentUpgradeableProxy | proxy | live | yes |
-| base | `0x263b5d074584118ff2b65b0125ac8a4529ab05a8` | LendingPoolFactory | impl | live | no |
-| base | `0x273597f8cc3a0d87f9e57af1144ca02ca20b556c` | ClearingCoordinator | impl | inactive | no |
-| base | `0x2889eafa5732abd724cda4ebc1b9659f90175ed1` | ClearingCoordinator | impl | inactive | no |
-| base | `0x2af3eb5945a524e1c23dc2fb2b3b37a5cad7ab31` | LendingPool | impl | live | no |
-| base | `0x2cce4a6d835c60ae98aa2914f0153c354d48e955` | LendingPoolManager | impl | inactive | no |
-| base | `0x2cf12a6d91fa4beb5a4c17589a03e78f88f57de2` | ClearingCoordinator | proxy | live | no |
-| base | `0x31b186049085e7bf5b68c27657bd73b5a5bac13f` | LendingPoolTranche | impl | live | no |
-| base | `0x39a4e4df478a792afaa9ff56ca7cd5327a89e41a` | KSULockBonus | impl | inactive | no |
-| base | `0x3cf8562b0a1ff6d6749071e478177ec2ddc7dbf4` | Proxy | impl | live | yes |
-| base | `0x5d9b878744dbe721a3f33a60a6b102e289ceadba` | TransparentUpgradeableProxy | proxy | live | yes |
-| base | `0x5dc8d315a80fd99abef0f327b9a52a3fbc3c93f3` | TransparentUpgradeableProxy | proxy | live | yes |
-| base | `0x601eab262ba2ced5be905ad200d451de0ac3d1ef` | KSULocking | impl | inactive | no |
-| base | `0x617b6e6a4f444bbc5dee08193e9597e20603f9f3` | LendingPoolFactory | impl | live | no |
-| base | `0x662379febb3e4f91400b5f7d4f7f7ce4699f3c9f` | TransparentUpgradeableProxy-3 | proxy | live | no |
-| base | `0x6ecd74982433ea8f00fbd879485641c507c8e2e0` | Proxy | proxy | live | yes |
-| base | `0x6fd19b47c857640428ba011ff1dc454c5ec479bd` | KasuAllowList | impl | inactive | no |
-| base | `0x757ab3139e09beb9ccdf59762ad00825efae5ed3` | FixedTermDeposit | proxy | live | no |
-| base | `0x7923837dc93d897e12696e0f4fd50b51fbacf693` | TransparentUpgradeableProxy | impl | inactive | yes |
-| base | `0x807a7e119ebf0282420b5ca0e0056c0525cbf8bb` | KasuAllowList | proxy | live | no |
-| base | `0x8855ec34d148fddcd3d536a2eb9c04943e926e8f` | LendingPool | proxy | live | no |
-| base | `0x8d38a2b611e5ac72af1a38a67629322b191737b7` | ClearingCoordinator | impl | inactive | no |
-| base | `0x8f2b35004fd5fe1b1d649bf52df8fd6ee4467f12` | LendingPoolTranche | impl | live | no |
-| base | `0x94a699a93519bef708b5be69914436363100f3f9` | Proxy | proxy | live | yes |
-| base | `0x9b9ec355b7f11a996b8d483d8608a82785efa621` | LendingPool | impl | live | no |
-| base | `0xa2e9992b73be340ec7134e751a4e5358374fb1d0` | LendingPoolTranche | proxy | live | no |
-| base | `0xaa81b50dfba54ae5b5a52c6738249148bc7a5436` | TransparentUpgradeableProxy | impl | inactive | yes |
-| base | `0xb0d7eb2d5036fb85a231d0e243a5b723ba5d2868` | TransparentUpgradeableProxy | proxy | live | yes |
-| base | `0xb145c061684c701c2c018a3f322aa14f5a553ce1` | KSULocking | proxy | live | no |
-| base | `0xb4784f69bb1f1076f50907cb0a815908a719d635` | TransparentUpgradeableProxy | proxy | live | yes |
-| base | `0xb82992c13adee67f43758bce6ff16e32c0ca4dc6` | TransparentUpgradeableProxy | impl | inactive | yes |
-| base | `0xc17f46d36de495a866d11e1fc284fa013903e3a9` | Proxy | impl | live | yes |
-| base | `0xc94216acef9c3b602f653135434031a87267ebff` | LendingPoolManager | impl | inactive | no |
-| base | `0xcdb16b0d525ed64ba5f063e3367b934fd648fed0` | TransparentUpgradeableProxy | impl | inactive | yes |
-| base | `0xcdc9b9b475095cb0dcd9e11c5d1c9463c5a1de99` | LendingPool | impl | live | no |
-| base | `0xd2812f27ee3d898daef64772e113a13a0f80c229` | LendingPoolManager | impl | inactive | no |
-| base | `0xd8c77e8882f9bada35804625e8264e51cb905190` | LendingPoolFactory | proxy | live | no |
-| base | `0xe1be322323a412579b4a09fb08ff4bfca12096b5` | LendingPoolManager | proxy | live | no |
-| base | `0xe2accc83a41f8d5f4baf57be42e9856091227016` | FeeManager | impl | inactive | no |
-| base | `0xe477a800c428c7ace5ba2b4cef0be55bca2cb191` | TransparentUpgradeableProxy-3 | impl | inactive | no |
-| base | `0xe593edf0579cfa8b622c327c05a0070c71baa6d2` | Swapper | proxy | live | yes |
-| base | `0xe768e5d17f338df23983876afdcd42ae7d60b052` | TransparentUpgradeableProxy | impl | inactive | yes |
-| base | `0xe91994c546ce95dc4e08b3f9fa44a00271a3cd4a` | TransparentUpgradeableProxy | impl | inactive | yes |
-| base | `0xec998071e553742596d9971190f13c3dafd9c899` | LendingPoolTranche | impl | live | no |
-| base | `0xeede30acf16caff49c1a48f75185c67be2e20b40` | KSULockBonus | proxy | live | no |
-| base | `0xef5d123d26280fc96099abf9c86d7b7e5a3033be` | LendingPoolTranche | impl | live | no |
-| base | `0xef956c2193e032609da84bec5e5251b28939b6b9` | BurnRegistryV1 | proxy | live | yes |
-| base | `0xf0e92ad317a315adb21923aefce66aaf55364be9` | TransparentUpgradeableProxy | impl | inactive | yes |
+| base | `0x193bb02a24f5562b58feb86550e6f09bb6c41f69` | BurnRegistryV1 | proxy | live | yes |
+| base | `0x2cf12a6d91fa4beb5a4c17589a03e78f88f57de2` | BurnRegistryV1 | proxy | live | yes |
+| base | `0x5dc8d315a80fd99abef0f327b9a52a3fbc3c93f3` | BurnRegistryV1 | proxy | live | yes |
+| base | `0x807a7e119ebf0282420b5ca0e0056c0525cbf8bb` | BurnRegistryV1 | proxy | live | yes |
+| base | `0xb145c061684c701c2c018a3f322aa14f5a553ce1` | BurnRegistryV1 | proxy | live | yes |
+| base | `0xb4784f69bb1f1076f50907cb0a815908a719d635` | BurnRegistryV1 | proxy | live | yes |
+| base | `0xe1be322323a412579b4a09fb08ff4bfca12096b5` | BurnRegistryV1 | proxy | live | yes |

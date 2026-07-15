@@ -1,58 +1,28 @@
 {
   "component": "Proxy-2",
   "main_contract": "Proxy",
+  "source_entry_count": 15,
   "source_file_count": 15,
-  "deployment_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Proxy-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x0479e6757eb4743843b309dddf78e6ba242f38be",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x7df140dd919e29cb1c8d6186f2bba6e407c7106f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x83fc9db9ce83325f77f1aefeba1a3412d0d26fdb",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x86a6f51ca732828ea6df0b377f417ba5f68490b1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x899de169fda163f57b12852a0144bb886578d7b6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xa4d9ef479884d875a5b95b541f024f4e837f6fcd",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "address": "0x113cb99283af242da0a0c54347667edf531aa7d6",
+      "is_proxy": true,
+      "implementation_address": "0xe8912070277dd5d9473904b7f4e6c71290f2ae90",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396141"
     }
   ]
 }

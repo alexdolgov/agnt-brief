@@ -1,127 +1,191 @@
 # Agentic Audit Brief: Spiko
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Spiko (`spiko`)
 - Website: [https://www.spiko.io/](https://www.spiko.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:56.451Z
-- Pipeline run: v2-pipeline-2026-06-30-2b719a-c3c3
-- Chains: arbitrum, base, ethereum, polygon
-- Contract surface: 161 unique implementations (279 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: arbitrum, base, ethereum, etherlink, polygon
+- Contract surface: 40 unique implementations (61 raw deployments)
+- Coverage basis: 0/28 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $1,099,799,782.47
 - On-chain TVL (included contracts): $360,997,687.28
 - TVL by chain: Polygon $166,349,603.73 | Ethereum $127,059,453.64 | Base $39,518,421.14 | Arbitrum $28,070,208.77
 
 ## Project Description
 
-RWA. Structurally: 8 project-authored contract(s) across 4 chain(s); role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Spiko. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 6 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
+The pinned logic-topography run contains 70 contract row(s) across arbitrum, base, ethereum, etherlink, polygon. Structural roles: 32 unclassified, 29 core, 6 supporting, 3 infra. 38 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 70
+- Structural roles: unclassified (32), core (29), supporting (6), infra (3)
+- Contract kinds: contract (64), abstract (6)
+- Detected standards: erc1967proxy (37), multicall (1)
+- Frameworks: openzeppelin (38), openzeppelin-upgradeable (12), chainlink (1)
+- Upgradeable-pattern rows: 38
+
+## Fork Analysis
+
+0 of 61 contracts are derived from known codebases. 61 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x344278...608472`, chain 42793)
+- UnnamedContract (`0x35dfec...a0c121`, chain 42793)
+- UnnamedContract (`0x369036...05b8dc`, chain 42793)
+- UnnamedContract (`0x3868d4...2e11cc`, chain 42793)
+- UnnamedContract (`0x4f33ac...4c8d59`, chain 42793)
+- UnnamedContract (`0x5677a4...def446`, chain 42793)
+- UnnamedContract (`0x970e2a...edfe3d`, chain 42793)
+- UnnamedContract (`0xa0769f...17fc80`, chain 42793)
+- UnnamedContract (`0xda5599...6ebfe8`, chain 42793)
+- UnnamedContract (`0xe48802...60e750`, chain 42793)
+- UnnamedContract (`0xef53e7...709301`, chain 42793)
+- UnnamedContract (`0xfe20eb...52262d`, chain 42793)
+- ERC1967Proxy (`0x0990b1...ddc8b0`, chain 1)
+- ERC1967Proxy (`0x18b5c1...4313fb`, chain 1)
+- ERC1967Proxy (`0x344278...608472`, chain 1)
+- ERC1967Proxy (`0x3868d4...2e11cc`, chain 1)
+- ERC1967Proxy (`0x4f33ac...4c8d59`, chain 1)
+- ERC1967Proxy (`0x5ed5a7...331366`, chain 1)
+- ERC1967Proxy (`0xa0769f...17fc80`, chain 1)
+- ERC1967Proxy (`0xc27398...fb6cc0`, chain 1)
+- ERC1967Proxy (`0xcbade7...036992`, chain 1)
+- ERC1967Proxy (`0xda5599...6ebfe8`, chain 1)
+- ERC1967Proxy (`0xe48802...60e750`, chain 1)
+- ERC1967Proxy (`0xf695df...17734e`, chain 1)
+- ERC1967Proxy (`0x272ea7...58c8a2`, chain 137)
+- ERC1967Proxy (`0x344278...608472`, chain 137)
+- ERC1967Proxy (`0x4fe515...4fe774`, chain 137)
+- ERC1967Proxy (`0x6f64f4...0b3dc5`, chain 137)
+- ERC1967Proxy (`0x903d59...d19474`, chain 137)
+- ERC1967Proxy (`0x970e2a...edfe3d`, chain 137)
+- ERC1967Proxy (`0x99f70a...a5c6da`, chain 137)
+- ERC1967Proxy (`0x9de2b2...18f089`, chain 137)
+- ERC1967Proxy (`0xa0769f...17fc80`, chain 137)
+- ERC1967Proxy (`0xaead1f...9084c2`, chain 137)
+- ERC1967Proxy (`0xda5599...6ebfe8`, chain 137)
+- ERC1967Proxy (`0xe48802...60e750`, chain 137)
+- ERC1967Proxy (`0x0bb754...65c059`, chain 8453)
+- ERC1967Proxy (`0x2f6c0e...fe0ec3`, chain 8453)
+- ERC1967Proxy (`0x344278...608472`, chain 8453)
+- ERC1967Proxy (`0x4f33ac...4c8d59`, chain 8453)
+- ERC1967Proxy (`0xa0769f...17fc80`, chain 8453)
+- ERC1967Proxy (`0xa8de1f...079068`, chain 8453)
+- ERC1967Proxy (`0xaead1f...9084c2`, chain 8453)
+- ERC1967Proxy (`0xd87984...56ca47`, chain 8453)
+- ERC1967Proxy (`0xd9aa23...87f36b`, chain 8453)
+- ERC1967Proxy (`0xda5599...6ebfe8`, chain 8453)
+- ERC1967Proxy (`0xe48802...60e750`, chain 8453)
+- ERC1967Proxy (`0xf695df...17734e`, chain 8453)
+- ERC1967Proxy (`0x021289...8303f5`, chain 42161)
+- ERC1967Proxy (`0x0c7093...66479c`, chain 42161)
+- ERC1967Proxy (`0x0e389c...c03265`, chain 42161)
+- ERC1967Proxy (`0x141263...1d7b76`, chain 42161)
+- ERC1967Proxy (`0x15ea0e...b95f74`, chain 42161)
+- ERC1967Proxy (`0x4640a8...b23f39`, chain 42161)
+- ERC1967Proxy (`0x903d59...d19474`, chain 42161)
+- ERC1967Proxy (`0x97e796...53ac6e`, chain 42161)
+- ERC1967Proxy (`0x99f70a...a5c6da`, chain 42161)
+- ERC1967Proxy (`0xa925c2...2d829a`, chain 42161)
+- ERC1967Proxy (`0xbe0233...342635`, chain 42161)
+- ERC1967Proxy (`0xcbeb19...216ce7`, chain 42161)
+- MultiATM (`0xbd6ad9...55f605`, chain 1)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 285; live-surface contracts included: 273 (151 live, 122 unknown).
-- Excluded by liveness: 12 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 70; live-surface contracts included: 70 (49 live, 21 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 49/49 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 6/57 (10.5%)
-- Deployed-live implementations: 57 of 161 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 6/58
-- Verified + Unaudited implementations: 52
+- Coverage of address-book-owned deployed-live implementations: 0/28 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 40 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 37
+- Deployed-live implementations: 40 of 40 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/28
+- Verified + Unaudited implementations: 28
 - Verified by bytecode match: 0
-- Unverified implementations: 103
-- Unique implementations: 161
-- Raw deployments: 279
+- Unverified implementations: 12
+- Unique implementations: 40
+- Raw deployments: 61
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): $276,628,306.28
+- Scoreable audits (matched contracts): 0
+- ASD (verified + unaudited TVL): $360,997,687.28
 - Latest audit: 2023-10 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 6 match-unverified
-- Tier 1 coverage: 10.5% (Trail of Bits)
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| Trail of Bits | Tier 1 | 6 | 10.3% | 2023-10 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (6)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Token | token | polygon | n/a | [`0x272ea7...58c8a2`](./contracts/polygon-137/0x272ea767712cc4839f4a27ee35eb73116158c8a2/) | ✅ Audited |
-| Token | token | polygon | n/a | [`0x6f64f4...0b3dc5`](./contracts/polygon-137/0x6f64f47f95cf656f21b40e14798f6b49f80b3dc5/) | ✅ Audited |
-| Token | token | polygon | n/a | [`0x4fe515...4fe774`](./contracts/polygon-137/0x4fe515c67eeeadb3282780325f09bb7c244fe774/) | ✅ Audited |
-| Oracle | operational_periphery | arbitrum | n/a | 2 deployments: arbitrum [`0x29503f...588a4e`](./contracts/arbitrum-42161/0x29503f31b73f0734455942eb888e13aca1588a4e/); arbitrum `0x4c3ba0...30bc87` | ✅ Audited |
-| Token | token | ethereum | n/a | [`0xa2850a...355893`](./contracts/ethereum-1/0xa2850a72abe63d0c7258910564ed56fcfd355893/) | ✅ Audited |
-| Token | token | polygon | n/a | [`0x9de2b2...18f089`](./contracts/polygon-137/0x9de2b2dcdcf43540e47143f28484b6d15118f089/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (52)
+### ⚠️ Verified + Unaudited (28)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Token | token | polygon | n/a | 8 deployments: polygon [`0x15ea0e...b95f74`](./contracts/polygon-137/0x15ea0ec460a0e6847ec0aa8d50a84b3a51b95f74/); polygon `0x75cb1b...77b05e`; polygon `0x7a16df...bb93db`; polygon `0x903d59...d19474`; polygon `0x970e2a...edfe3d`; polygon `0x99f70a...a5c6da`; polygon `0xa0769f...17fc80`; polygon `0xe48802...60e750` | ⚠️ Unaudited |
-| Token | token | ethereum | n/a | 8 deployments: ethereum [`0x0183ac...7df7e0`](./contracts/ethereum-1/0x0183ace58bc8b8f1f84cc8b9ed1210e1c87df7e0/); ethereum `0x15ea0e...b95f74`; ethereum `0x3868d4...2e11cc`; ethereum `0x4f33ac...4c8d59`; ethereum `0x8513fc...112731`; ethereum `0xa0769f...17fc80`; ethereum `0xe48802...60e750`; ethereum `0xf695df...17734e` | ⚠️ Unaudited |
-| Token | token | ethereum | n/a | 2 deployments: ethereum [`0xbf5fb9...4351be`](./contracts/ethereum-1/0xbf5fb9284c9cf2798d5f18a9702af620cd4351be/); ethereum `0xcbade7...036992` | ⚠️ Unaudited |
-| Token | token | arbitrum | n/a | 2 deployments: arbitrum [`0x021289...8303f5`](./contracts/arbitrum-42161/0x021289588cd81dc1ac87ea91e91607eef68303f5/); arbitrum `0xa0769f...17fc80` | ⚠️ Unaudited |
-| Token | token | base | n/a | 8 deployments: base [`0x0e389c...c03265`](./contracts/base-8453/0x0e389c83bc1d16d86412476f6103027555c03265/); base `0x15ea0e...b95f74`; base `0x4f33ac...4c8d59`; base `0xa0769f...17fc80`; base `0xa260d7...3be764`; base `0xa8de1f...079068`; base `0xe48802...60e750`; base `0xf695df...17734e` | ⚠️ Unaudited |
-| Token | token | base | n/a | 2 deployments: base [`0xc32eca...8b5dda`](./contracts/base-8453/0xc32eca88b487365f9a6dff8346f7ef48048b5dda/); base `0xd87984...56ca47` | ⚠️ Unaudited |
-| Token | token | ethereum | n/a | 2 deployments: ethereum [`0x0990b1...ddc8b0`](./contracts/ethereum-1/0x0990b149e915cb08e2143a5c6f669c907eddc8b0/); ethereum `0x13ae01...5aee71` | ⚠️ Unaudited |
-| Token | token | base | n/a | 2 deployments: base [`0x0bb754...65c059`](./contracts/base-8453/0x0bb754d8940e283d9ff6855ab5dafbc14165c059/); base `0xd4324f...cefeb4` | ⚠️ Unaudited |
-| Token | token | base | n/a | 2 deployments: base [`0x1e5932...d70708`](./contracts/base-8453/0x1e593293a0fd8b26104a6ce6a783a59cf6d70708/); base `0x2f6c0e...fe0ec3` | ⚠️ Unaudited |
-| Token | token | ethereum | n/a | 2 deployments: ethereum [`0x60fcb8...18bff1`](./contracts/ethereum-1/0x60fcb8511db2a7b823cd0f3c6b08da456e18bff1/); ethereum `0xc27398...fb6cc0` | ⚠️ Unaudited |
-| ATM | unknown | ethereum | n/a | [`0x75cb1b...77b05e`](./contracts/ethereum-1/0x75cb1bd539ee2cb22031603a7b437f1f7077b05e/) | ⚠️ Unaudited |
-| ATM3 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8226e9...bfd828`](./contracts/ethereum-1/0x8226e968efd24d9baf156eca15179d1cc1bfd828/); ethereum `0xf10890...bb2a93` | ⚠️ Unaudited |
-| BurnWithFromMintTokenPool | core_logic | base | n/a | 5 deployments: base [`0x02e871...03b88c`](./contracts/base-8453/0x02e87189512d1bdc3ca7795cab68a8311703b88c/); base `0x369036...05b8dc`; base `0x80e873...f2111b`; base `0xa1fdd4...c9424e`; base `0xa42baa...288767` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x192c8f...26861d`](./contracts/ethereum-1/0x192c8fdb3ab14d6a769f9bfd91e8823c6a26861d/); ethereum `0x7d6896...6ad192` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x480725...25403e`](./contracts/ethereum-1/0x480725c7e83ce6a0e0930bcc996977578925403e/); ethereum `0xafe719...41b2bb` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x78cc48...1d5e4a`](./contracts/ethereum-1/0x78cc4829c6c0238e5816c49519a7fd5f181d5e4a/); ethereum `0xb3b026...c1c4f5` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | ethereum | n/a | 2 deployments: ethereum [`0x98b2c8...3fbfb2`](./contracts/ethereum-1/0x98b2c8c398350d9abadb772e4c3b2aadac3fbfb2/); ethereum `0xb20464...19cda3` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | ethereum | n/a | 2 deployments: ethereum [`0xa6e60f...81ffac`](./contracts/ethereum-1/0xa6e60f540e76c6dd492be26829d0b8f0a981ffac/); ethereum `0xe2757d...751b82` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | polygon | n/a | 2 deployments: polygon [`0x033619...b90fc8`](./contracts/polygon-137/0x0336198d3c1ff92d6571f52765c8cac301b90fc8/); polygon `0x2a6d91...eefce4` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | polygon | n/a | 2 deployments: polygon [`0x05d142...5ae7ac`](./contracts/polygon-137/0x05d142fc45a0a5c0e5ec84923d3bb2b7b15ae7ac/); polygon `0x17e2b2...7c447c` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | polygon | n/a | 2 deployments: polygon [`0x4640a8...b23f39`](./contracts/polygon-137/0x4640a8bf08d5917dcaef42edb14d3e06e1b23f39/); polygon `0xa390a9...a6ddcd` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | polygon | n/a | 2 deployments: polygon [`0x4c3ba0...30bc87`](./contracts/polygon-137/0x4c3ba0eae5ab65c9510769a2877cf4d93330bc87/); polygon `0x8226e9...bfd828` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | polygon | n/a | 2 deployments: polygon [`0x86a3c5...53b9cb`](./contracts/polygon-137/0x86a3c5e18cf42a59d137f8b37105354e7f53b9cb/); polygon `0xaa6b63...5dc82d` | ⚠️ Unaudited |
-| ERC1967Proxy | unknown | polygon | n/a | 2 deployments: polygon [`0x930f7f...9eaf55`](./contracts/polygon-137/0x930f7f3a9a235d27ae082add5b7d4635e59eaf55/); polygon `0xb114e0...0c393b` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | base | n/a | 2 deployments: base [`0x588252...10ed5e`](./contracts/base-8453/0x5882526ca6980491a7ebd878d822ffab5510ed5e/); base `0xd9a531...c86ff4` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | base | n/a | 2 deployments: base [`0x86a3c5...53b9cb`](./contracts/base-8453/0x86a3c5e18cf42a59d137f8b37105354e7f53b9cb/); base `0xaa6b63...5dc82d` | ⚠️ Unaudited |
-| ERC1967Proxy | proxy | arbitrum | n/a | 22 deployments: arbitrum [`0x0c7093...66479c`](./contracts/arbitrum-42161/0x0c709396739b9cfb72bcea6ac691ce0ddf66479c/); arbitrum `0x0e389c...c03265`; arbitrum `0x141263...1d7b76`; arbitrum `0x15ea0e...b95f74`; arbitrum `0x3868d4...2e11cc`; arbitrum `0x4640a8...b23f39`; arbitrum `0x4f33ac...4c8d59`; arbitrum `0x78f59a...501579`; arbitrum `0x7a16df...bb93db`; arbitrum `0x8226e9...bfd828`; arbitrum `0x8d18e2...66993e`; arbitrum `0x903d59...d19474`; arbitrum `0x970e2a...edfe3d`; arbitrum `0x97e796...53ac6e`; arbitrum `0x99f70a...a5c6da`; arbitrum `0xa260d7...3be764`; arbitrum `0xa8de1f...079068`; arbitrum `0xa925c2...2d829a`; arbitrum `0xb114e0...0c393b`; arbitrum `0xbe0233...342635`; arbitrum `0xcbeb19...216ce7`; arbitrum `0xe48802...60e750` | ⚠️ Unaudited |
-| ERC2771Forwarder | unknown | ethereum | n/a | 3 deployments: ethereum [`0x42db5a...d923c3`](./contracts/ethereum-1/0x42db5a5af4d82e8ed42405dfa37278c360d923c3/); polygon [`0x42db5a...d923c3`](./contracts/polygon-137/0x42db5a5af4d82e8ed42405dfa37278c360d923c3/); base [`0x42db5a...d923c3`](./contracts/base-8453/0x42db5a5af4d82e8ed42405dfa37278c360d923c3/) | ⚠️ Unaudited |
-| Minter | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x5ed5a7...331366`](./contracts/ethereum-1/0x5ed5a75eeed1934ea060186e35187eaa73331366/); ethereum `0xd4f4fb...0fe043` | ⚠️ Unaudited |
-| Minter | operational_periphery | polygon | n/a | 2 deployments: polygon [`0x465bc3...55f37a`](./contracts/polygon-137/0x465bc3e57a76905699df6772ee2571058a55f37a/); polygon `0xaead1f...9084c2` | ⚠️ Unaudited |
-| Minter | operational_periphery | base | n/a | 2 deployments: base [`0x465bc3...55f37a`](./contracts/base-8453/0x465bc3e57a76905699df6772ee2571058a55f37a/); base `0xaead1f...9084c2` | ⚠️ Unaudited |
-| Minter | operational_periphery | arbitrum | n/a | [`0xaead1f...9084c2`](./contracts/arbitrum-42161/0xaead1f7c9b189816cb845363d142cfcf339084c2/) | ⚠️ Unaudited |
-| MultiATM | unknown | ethereum | n/a | [`0xbd6ad9...55f605`](./contracts/ethereum-1/0xbd6ad96f51e8d732811587468d0e2f9efa55f605/) | ⚠️ Unaudited |
-| MultiATMLinearInterpolated | unknown | ethereum | n/a | [`0xa40d89...2a1efa`](./contracts/ethereum-1/0xa40d89856520c246b503b814a06ebbfb3f2a1efa/) | ⚠️ Unaudited |
-| Oracle | operational_periphery | ethereum | n/a | 8 deployments: ethereum [`0x021289...8303f5`](./contracts/ethereum-1/0x021289588cd81dc1ac87ea91e91607eef68303f5/); ethereum `0x0e389c...c03265`; ethereum `0x29503f...588a4e`; ethereum `0x77926a...f43218`; ethereum `0x903d59...d19474`; ethereum `0x99f70a...a5c6da`; ethereum `0xa8de1f...079068`; ethereum `0xcbeb19...216ce7` | ⚠️ Unaudited |
-| Oracle | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x08698f...8d66de`](./contracts/ethereum-1/0x08698f783e394432f974840502b7b51ce78d66de/); ethereum `0x7a35c0...094291` | ⚠️ Unaudited |
-| Oracle | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x3eedd9...2263e6`](./contracts/ethereum-1/0x3eedd93f46caba8ae44a6f0c706bc8d4012263e6/); ethereum `0xbb53aa...8740d3` | ⚠️ Unaudited |
-| Oracle | operational_periphery | polygon | n/a | 8 deployments: polygon [`0x0183ac...7df7e0`](./contracts/polygon-137/0x0183ace58bc8b8f1f84cc8b9ed1210e1c87df7e0/); polygon `0x021289...8303f5`; polygon `0x29503f...588a4e`; polygon `0x3868d4...2e11cc`; polygon `0x4f33ac...4c8d59`; polygon `0xcbeb19...216ce7`; polygon `0xf10890...bb2a93`; polygon `0xf695df...17734e` | ⚠️ Unaudited |
-| Oracle | operational_periphery | base | n/a | 8 deployments: base [`0x021289...8303f5`](./contracts/base-8453/0x021289588cd81dc1ac87ea91e91607eef68303f5/); base `0x27bb2b...32f492`; base `0x29503f...588a4e`; base `0x7a16df...bb93db`; base `0x903d59...d19474`; base `0x970e2a...edfe3d`; base `0x99f70a...a5c6da`; base `0xcbeb19...216ce7` | ⚠️ Unaudited |
-| PermissionManager | governance | ethereum | n/a | 2 deployments: ethereum [`0x344278...608472`](./contracts/ethereum-1/0x344278aff344d6fb960705dc18a4912221608472/); ethereum `0xd3f5f1...5b658e` | ⚠️ Unaudited |
-| PermissionManager | governance | polygon | n/a | 2 deployments: polygon [`0x344278...608472`](./contracts/polygon-137/0x344278aff344d6fb960705dc18a4912221608472/); polygon `0xd3f5f1...5b658e` | ⚠️ Unaudited |
-| PermissionManager | governance | base | n/a | 2 deployments: base [`0x344278...608472`](./contracts/base-8453/0x344278aff344d6fb960705dc18a4912221608472/); base `0xd3f5f1...5b658e` | ⚠️ Unaudited |
-| Redemption | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa925c2...2d829a`](./contracts/ethereum-1/0xa925c217e4c1c82ee721ebd496d3863d5c2d829a/); ethereum `0xda5599...6ebfe8` | ⚠️ Unaudited |
-| Redemption | unknown | polygon | n/a | 2 deployments: polygon [`0xa925c2...2d829a`](./contracts/polygon-137/0xa925c217e4c1c82ee721ebd496d3863d5c2d829a/); polygon `0xda5599...6ebfe8` | ⚠️ Unaudited |
-| Redemption | unknown | base | n/a | 2 deployments: base [`0xa925c2...2d829a`](./contracts/base-8453/0xa925c217e4c1c82ee721ebd496d3863d5c2d829a/); base `0xda5599...6ebfe8` | ⚠️ Unaudited |
-| Redemption | unknown | arbitrum | n/a | [`0xda5599...6ebfe8`](./contracts/arbitrum-42161/0xda5599f04e9b437c8394b0c2bc68b502a66ebfe8/) | ⚠️ Unaudited |
-| SpikoDefensiveSenderReceiver | unknown | base | n/a | 2 deployments: base [`0x3d01f2...115f4d`](./contracts/base-8453/0x3d01f224e9cac1bfc2563a8da4162d044e115f4d/); base `0x8d18e2...66993e` | ⚠️ Unaudited |
-| SpikoDefensiveSenderReceiver | unknown | base | n/a | 2 deployments: base [`0x64a3b7...aae947`](./contracts/base-8453/0x64a3b7922a7f005d7c97547f4d8b40275daae947/); base `0x91e2ed...31e5a6` | ⚠️ Unaudited |
-| SpikoDefensiveSenderReceiver | unknown | base | n/a | 2 deployments: base [`0x77926a...f43218`](./contracts/base-8453/0x77926af72cadbc6d6a308c6a6b6aaa5fbdf43218/); base `0x8513fc...112731` | ⚠️ Unaudited |
-| SpikoDefensiveSenderReceiver | unknown | arbitrum | n/a | 12 deployments: base `0x1b952b...689b1e`; base `0x4640a8...b23f39`; base `0x4c3ba0...30bc87`; base `0x8226e9...bfd828`; base `0xa390a9...a6ddcd`; base `0xe7bbab...d11d2a`; base `0xf10890...bb2a93`; arbitrum [`0x17e2b2...7c447c`](./contracts/arbitrum-42161/0x17e2b2eed8e07328302a7b4135ed1b2dc57c447c/); arbitrum `0x1b952b...689b1e`; arbitrum `0x77926a...f43218`; arbitrum `0x8513fc...112731`; arbitrum `0xa390a9...a6ddcd` | ⚠️ Unaudited |
-| Token | token | ethereum | n/a | 2 deployments: ethereum [`0x18b5c1...4313fb`](./contracts/ethereum-1/0x18b5c15e5196a38a162b1787875295b76e4313fb/); ethereum `0x869dbf...d3e4e1` | ⚠️ Unaudited |
-| Token | token | base | n/a | 2 deployments: base [`0xd9aa23...87f36b`](./contracts/base-8453/0xd9aa2300e126869182dfb6ecf54984e4c687f36b/); base `0xdcf337...687ea2` | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Token | token | project_anchor | own_supporting | 5 | polygon | unit-393060 (5 proxies) | 5 deployments: polygon `0x903d59...d19474`; polygon `0x970e2a...edfe3d`; polygon `0x99f70a...a5c6da`; polygon `0xa0769f...17fc80`; polygon `0xe48802...60e750` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 5 | ethereum | unit-393053 (5 proxies) | 5 deployments: ethereum `0x3868d4...2e11cc`; ethereum `0x4f33ac...4c8d59`; ethereum `0xa0769f...17fc80`; ethereum `0xe48802...60e750`; ethereum `0xf695df...17734e` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 1 | polygon | unit-393064 | `0x272ea7...58c8a2` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 1 | ethereum | unit-393057 | `0xcbade7...036992` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 1 | arbitrum | unit-393075 | `0x021289...8303f5` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 5 | base | unit-393077 (5 proxies) | 5 deployments: base `0x4f33ac...4c8d59`; base `0xa0769f...17fc80`; base `0xa8de1f...079068`; base `0xe48802...60e750`; base `0xf695df...17734e` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 1 | base | unit-393087 | `0xd87984...56ca47` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 1 | polygon | unit-393071 | `0x6f64f4...0b3dc5` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 1 | ethereum | unit-393052 | `0x0990b1...ddc8b0` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 1 | polygon | unit-393062 | `0x4fe515...4fe774` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 1 | base | unit-393091 | `0x0bb754...65c059` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 1 | base | unit-393080 | `0x2f6c0e...fe0ec3` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 1 | ethereum | unit-393054 | `0xc27398...fb6cc0` | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | project_anchor | own_supporting | 0 | arbitrum | unit-393029 | 4 deployments: arbitrum `0x0c7093...66479c`; arbitrum `0x141263...1d7b76`; arbitrum `0x97e796...53ac6e`; arbitrum `0xbe0233...342635` | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | project_anchor | own_supporting | 0 | arbitrum | unit-393030 | 7 deployments: arbitrum `0x0e389c...c03265`; arbitrum `0x15ea0e...b95f74`; arbitrum `0x4640a8...b23f39`; arbitrum `0x903d59...d19474`; arbitrum `0x99f70a...a5c6da`; arbitrum `0xa925c2...2d829a`; arbitrum `0xcbeb19...216ce7` | ⚠️ Unaudited |
+| Minter | operational_periphery | project_anchor | own_supporting | 1 | ethereum | unit-393059 | `0x5ed5a7...331366` | ⚠️ Unaudited |
+| Minter | operational_periphery | project_anchor | own_supporting | 1 | polygon | unit-393066 | `0xaead1f...9084c2` | ⚠️ Unaudited |
+| Minter | operational_periphery | project_anchor | own_supporting | 1 | base | unit-393082 | `0xaead1f...9084c2` | ⚠️ Unaudited |
+| MultiATM | unknown | project_anchor | own_supporting | 0 | ethereum | unit-393028 | `0xbd6ad9...55f605` | ⚠️ Unaudited |
+| PermissionManager | governance | project_anchor | own_supporting | 1 | ethereum | unit-393058 | `0x344278...608472` | ⚠️ Unaudited |
+| PermissionManager | governance | project_anchor | own_supporting | 1 | polygon | unit-393073 | `0x344278...608472` | ⚠️ Unaudited |
+| PermissionManager | governance | project_anchor | own_supporting | 1 | base | unit-393089 | `0x344278...608472` | ⚠️ Unaudited |
+| Redemption | unknown | project_anchor | own_supporting | 1 | ethereum | unit-393056 | `0xda5599...6ebfe8` | ⚠️ Unaudited |
+| Redemption | unknown | project_anchor | own_supporting | 1 | polygon | unit-393068 | `0xda5599...6ebfe8` | ⚠️ Unaudited |
+| Redemption | unknown | project_anchor | own_supporting | 1 | base | unit-393084 | `0xda5599...6ebfe8` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 1 | ethereum | unit-393055 | `0x18b5c1...4313fb` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 1 | polygon | unit-393061 | `0x9de2b2...18f089` | ⚠️ Unaudited |
+| Token | token | project_anchor | own_supporting | 1 | base | unit-393093 | `0xd9aa23...87f36b` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -135,144 +199,107 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (103)
+### ❓ Unverified (12)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x02e871...03b88c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x033619...b90fc8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x05d142...5ae7ac` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x17e2b2...7c447c` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1b952b...689b1e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2a6d91...eefce4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x369036...05b8dc` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4640a8...b23f39` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x465bc3...55f37a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x4fbfc2...84323e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x57fa61...d7783d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x64e31c...eb5fda` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7430d9...00bbb7` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x77d058...3d8b59` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x77d31b...69bc30` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x78f59a...501579` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x7ba5d8...b91423` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x80e873...f2111b` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x8d18e2...66993e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x930f7f...9eaf55` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x99f14c...f34496` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa1fdd4...c9424e` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa390a9...a6ddcd` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa42baa...288767` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xa9c741...49a38a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xaead1f...9084c2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb114e0...0c393b` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x1b952b...689b1e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x21907b...fcb9c3` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x2fa1a7...4ab1b1` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x32416c...daf21a` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x369036...05b8dc` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x3d01f2...115f4d` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x57fa61...d7783d` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x64a3b7...aae947` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x7430d9...00bbb7` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x77926a...f43218` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x78cc48...1d5e4a` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x78f59a...501579` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x7ba5d8...b91423` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x7fcd00...133347` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x8513fc...112731` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x8d18e2...66993e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x91e2ed...31e5a6` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0x9949ec...801341` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa1fdd4...c9424e` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xa42baa...288767` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xb3b026...c1c4f5` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xbb20d3...ecfa4c` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xc9d26a...a924fb` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xe7bbab...d11d2a` | ❓ Unverified |
-| UnnamedContract | unknown | polygon | n/a | `0xf9fd77...b27579` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x1cd239...9a3896` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x21907b...fcb9c3` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x2fa1a7...4ab1b1` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x480725...25403e` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x4ff96d...b5583c` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x5ca17d...c5fab2` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x64e31c...eb5fda` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x7f9f63...c46263` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x7fcd00...133347` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x930f7f...9eaf55` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x98568f...75e7dc` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x9949ec...801341` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0x9d104a...5ee23e` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xa2d05e...f5de0d` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xa71e40...1076ed` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xafe719...41b2bb` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xb3b026...c1c4f5` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xbb20d3...ecfa4c` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xc44f58...6eec27` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xd88110...d8e8b9` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xdb7004...7ab428` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xeb2e0f...816361` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xf9fd77...b27579` | ❓ Unverified |
-| UnnamedContract | unknown | base | n/a | `0xffb84f...04ee79` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x033619...b90fc8` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x21907b...fcb9c3` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x2f284a...d187ed` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x2fa1a7...4ab1b1` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x308f38...4e2370` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x32416c...daf21a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x3d01f2...115f4d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x57fa61...d7783d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x64a3b7...aae947` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x7430d9...00bbb7` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x78cc48...1d5e4a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x7ba5d8...b91423` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x7fcd00...133347` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x86a3c5...53b9cb` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x8e8937...bb6c2f` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x91e2ed...31e5a6` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x930f7f...9eaf55` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0x9949ec...801341` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xaa6b63...5dc82d` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xb3b026...c1c4f5` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xbb20d3...ecfa4c` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xc44f58...6eec27` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xc9d26a...a924fb` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xd3f5f1...5b658e` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xdb7004...7ab428` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xe7bbab...d11d2a` | ❓ Unverified |
-| UnnamedContract | unknown | arbitrum | n/a | `0xf9fd77...b27579` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393040 | `0x344278...608472` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393041 | `0x35dfec...a0c121` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393042 | `0x369036...05b8dc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393043 | `0x3868d4...2e11cc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393044 | `0x4f33ac...4c8d59` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393045 | `0x5677a4...def446` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393046 | `0x970e2a...edfe3d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393047 | `0xa0769f...17fc80` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393048 | `0xda5599...6ebfe8` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393049 | `0xe48802...60e750` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393050 | `0xef53e7...709301` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | etherlink | unit-393051 | `0xfe20eb...52262d` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [2023-10-spiko-securityreview.pdf](https://github.com/trailofbits/publications/blob/master/reviews/2023-10-spiko-securityreview.pdf) | Trail of Bits | Audit | 2023-10 | stale | Direct | contract_name | 6 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [2023-10-spiko-securityreview.pdf](https://github.com/trailofbits/publications/blob/master/reviews/2023-10-spiko-securityreview.pdf) | Trail of Bits | Audit | 2023-10 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 8 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [13880] 2023-10-spiko-securityreview.pdf — no match: Contracts explicitly listed in scope: PermissionManager, PermissionManaged, Token, Redemption, Oracle, ERC20Mock, ERC1363ReceiverMock, Masks. Audit date from cover page: November 23, 2023.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| 2023-10-spiko-securityreview.pdf | PermissionManager | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0x344278...608472` — deployed 2025-02-12 19:38:33+03 — liveness: live (proxy_unit_reachable)<br>ERC1967Proxy (proxy) (alternative) `0x344278...608472` — deployed 2024-04-19 18:04:35+03 — liveness: live (proxy_unit_reachable)<br>ERC1967Proxy (proxy) (alternative) `0x344278...608472` — deployed 2024-04-19 16:36:58+03 — liveness: live (proxy_unit_reachable) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 2023-10-spiko-securityreview.pdf | PermissionManaged | unmatched — not counted | — | listed in scope | no |
+| 2023-10-spiko-securityreview.pdf | Token | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0xa8de1f...079068` — deployed 2025-07-16 13:24:25+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xe48802...60e750` — deployed 2025-02-12 19:40:35+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xd87984...56ca47` — deployed 2026-02-26 14:12:45+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x99f70a...a5c6da` — deployed 2025-07-16 13:19:16+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x970e2a...edfe3d` — deployed 2025-07-16 13:18:40+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x18b5c1...4313fb` — deployed 2026-02-26 14:59:35+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xf695df...17734e` — deployed 2025-07-16 13:33:35+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xe48802...60e750` — deployed 2024-04-19 16:38:14+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xf695df...17734e` — deployed 2025-07-16 13:24:41+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xa0769f...17fc80` — deployed 2025-02-12 19:39:39+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4f33ac...4c8d59` — deployed 2025-07-16 13:24:53+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xa0769f...17fc80` — deployed 2024-04-19 16:37:42+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xcbade7...036992` — deployed 2026-02-26 12:22:47+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xd9aa23...87f36b` — deployed 2026-02-26 14:27:17+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4fe515...4fe774` — deployed 2026-02-26 15:16:56+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x4f33ac...4c8d59` — deployed 2025-07-16 13:40:59+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xe48802...60e750` — deployed 2024-04-19 18:06:11+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x2f6c0e...fe0ec3` — deployed 2026-02-26 14:22:23+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x9de2b2...18f089` — deployed 2026-02-26 15:20:24+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x021289...8303f5` — deployed 2024-10-25 13:13:03+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x903d59...d19474` — deployed 2025-07-16 13:18:58+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x0990b1...ddc8b0` — deployed 2026-02-26 14:30:23+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x272ea7...58c8a2` — deployed 2026-02-26 15:11:36+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x0bb754...65c059` — deployed 2026-02-26 12:22:45+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xa0769f...17fc80` — deployed 2024-04-19 18:05:23+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x3868d4...2e11cc` — deployed 2025-07-16 13:41:35+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xc27398...fb6cc0` — deployed 2026-02-26 14:52:47+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0x6f64f4...0b3dc5` — deployed 2026-02-26 12:22:44+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 2023-10-spiko-securityreview.pdf | Redemption | ambiguous — not counted | ERC1967Proxy (proxy) (alternative) `0xda5599...6ebfe8` — deployed 2024-04-19 16:37:20+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xda5599...6ebfe8` — deployed 2024-04-19 18:04:59+03 — liveness: live (current_address_book_code)<br>ERC1967Proxy (proxy) (alternative) `0xda5599...6ebfe8` — deployed 2025-02-12 19:38:53+03 — liveness: live (current_address_book_code) | normalized_full_corpus:project_anchor:matcher_anchor | no |
+| 2023-10-spiko-securityreview.pdf | Oracle | unmatched — not counted | — | listed in scope | no |
+| 2023-10-spiko-securityreview.pdf | ERC20Mock | unmatched — not counted | — | listed in scope | no |
+| 2023-10-spiko-securityreview.pdf | ERC1363ReceiverMock | unmatched — not counted | — | listed in scope | no |
+| 2023-10-spiko-securityreview.pdf | Masks | unmatched — not counted | — | listed in scope | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| polygon | `0x903d59...d19474` | Token | token | $81,980,222.73 | Verified native implementation with $81,980,222.73 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x3868d4...2e11cc` | Token | token | $78,500,493.58 | Verified native implementation with $78,500,493.58 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x272ea7...58c8a2` | Token | token | $70,039,983.74 | Verified native implementation with $70,039,983.74 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xcbade7...036992` | Token | token | $46,021,782.06 | Verified native implementation with $46,021,782.06 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | `0x021289...8303f5` | Token | token | $28,070,208.77 | Verified native implementation with $28,070,208.77 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x4f33ac...4c8d59` | Token | token | $23,748,398.07 | Verified native implementation with $23,748,398.07 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xd87984...56ca47` | Token | token | $14,653,324.46 | Verified native implementation with $14,653,324.46 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x6f64f4...0b3dc5` | Token | token | $13,239,005.63 | Verified native implementation with $13,239,005.63 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x0990b1...ddc8b0` | Token | token | $2,535,987.12 | Verified native implementation with $2,535,987.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x4fe515...4fe774` | Token | token | $1,090,391.63 | Verified native implementation with $1,090,391.63 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x0bb754...65c059` | Token | token | $1,000,062.97 | Verified native implementation with $1,000,062.97 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x2f6c0e...fe0ec3` | Token | token | $116,635.64 | Verified native implementation with $116,635.64 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xc27398...fb6cc0` | Token | token | $1,190.88 | Verified native implementation with $1,190.88 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x5ed5a7...331366` | Minter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0xaead1f...9084c2` | Minter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xaead1f...9084c2` | Minter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xbd6ad9...55f605` | MultiATM | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x344278...608472` | PermissionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x344278...608472` | PermissionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0x344278...608472` | PermissionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0xda5599...6ebfe8` | Redemption | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0xda5599...6ebfe8` | Redemption | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xda5599...6ebfe8` | Redemption | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | `0x18b5c1...4313fb` | Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | `0x9de2b2...18f089` | Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | `0xd9aa23...87f36b` | Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 26 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 161 |
+| standard_library | 2 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: contract_name=6
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 3 ambiguous, 5 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1
+- Match method counts: n/a
+
+Zero-match audit list:
+
+- [13880] 2023-10-spiko-securityreview.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

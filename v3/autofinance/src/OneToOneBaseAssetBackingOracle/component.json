@@ -1,34 +1,28 @@
 {
   "component": "OneToOneBaseAssetBackingOracle",
   "main_contract": "OneToOneBaseAssetBackingOracle",
+  "source_entry_count": 5,
   "source_file_count": 5,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OneToOneBaseAssetBackingOracle\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x44670e424c88a1a887e413c49b4a82755e7f6c2d",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4e8ce63cce31f667d03955dd98133d504d8e9b32",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x57ade982cad81a5bf39e6c3b8b01717ecfff038e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xe4baacee5fc0623c6ec8ce54fe792f4bab4d7704",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391785"
     }
   ]
 }

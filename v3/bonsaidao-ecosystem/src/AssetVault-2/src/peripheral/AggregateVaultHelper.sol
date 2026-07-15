@@ -1,457 +1,449 @@
-// SPDX-License-Identifier: GPL-3.0
 pragma solidity 0.8.17;
 
 import { AggregateVaultStorage } from "../storage/AggregateVaultStorage.sol";
-import {
-    UMAMI_TOTAL_VAULTS,
-    GMX_FEE_STAKED_GLP,
-    GMX_GLP_REWARD_ROUTER,
-    GMX_GLP_MANAGER,
-    TOKEN_USDC,
-    TOKEN_WETH,
-    TOKEN_WBTC,
-    TOKEN_LINK,
-    TOKEN_UNI,
-    UNISWAP_SWAP_ROUTER
-} from "../constants.sol";
-import { ERC20 } from "solmate/tokens/ERC20.sol";
-import { Solarray } from "../libraries/Solarray.sol";
-import { AssetVault } from "../vaults/AssetVault.sol";
-import { IPositionManager } from "../interfaces/IPositionManager.sol";
-import { GlpHandler } from "../handlers/GlpHandler.sol";
-import { BaseHandler } from "../handlers/BaseHandler.sol";
-import { INettedPositionTracker } from "../interfaces/INettedPositionTracker.sol";
-import { VaultMath } from "../libraries/VaultMath.sol";
-import { IRewardRouterV2 } from "../interfaces/IRewardRouterV2.sol";
-import { Multicall } from "../libraries/Multicall.sol";
-import { SafeTransferLib } from "solmate/utils/SafeTransferLib.sol";
-import { Solarray } from "../libraries/Solarray.sol";
-import { PositionManagerRouter } from "../handlers/hedgeManagers/PositionManagerRouter.sol";
-import { FeeEscrow } from "./FeeEscrow.sol";
-import { LibRebalance } from "../libraries/LibRebalance.sol";
+import { BaseHandler } from "../BaseHandler.sol";
+import { IGMIWithERC20 as GMI } from "../interfaces/IGMI.sol";
+import { IFeeEscrow } from "../interfaces/IFeeEscrow.sol";
+import { Pricing } from "../libraries/Pricing.sol";
 import { LibAggregateVaultUtils } from "../libraries/LibAggregateVaultUtils.sol";
+import { YEAR } from "../constants.sol";
+import { ERC20 } from "solmate/tokens/ERC20.sol";
+import { OracleWrapper } from "../peripheral/OracleWrapper.sol";
+import { IPositionManager } from "../interfaces/IPositionManager.sol";
+import { IVaultFees } from "../interfaces/IVaultFees.sol";
+import { PriceCast } from "../libraries/PriceCast.sol";
+import { SafeCast } from "../libraries/SafeCast.sol";
+import { NettedPositionTracker } from "../libraries/NettedPositionTracker.sol";
+import { Delegatecall } from "../libraries/Delegatecall.sol";
+import { Solarray } from "../libraries/Solarray.sol";
+import { GmxStorage } from "../libraries/GmxStorage.sol";
+import { SafeTransferLib } from "solmate/utils/SafeTransferLib.sol";
+import { ISwapManager } from "../interfaces/ISwapManager.sol";
+import { LibCycle } from "../libraries/LibCycle.sol";
+import { GlobalACL, Auth } from "../Auth.sol";
+import { FeeReserve } from "./FeeReserve.sol";
+import { Vester } from "./Vester.sol";
 
-ERC20 constant fsGLP = ERC20(GMX_FEE_STAKED_GLP);
-uint256 constant BIPS = 10_000;
+using SafeCast for uint256;
+using SafeCast for int256;
+using PriceCast for uint256;
+using Delegatecall for address;
+using Solarray for uint256[2];
+using SafeTransferLib for ERC20;
 
 /// @title AggregateVaultViews
-/// @author Umami DAO
+/// @author Umami Devs
 /// @notice A contract providing view functions for AggregateVaultStorage data.
 contract AggregateVaultViews is AggregateVaultStorage {
-    error RebalanceGlpAccountingError();
-
     /// @notice Returns the array of AssetVaultEntry structs.
-    function getAssetVaultEntries() public view returns (AssetVaultEntry[5] memory _assetVaultEntry) {
-        _assetVaultEntry = _getStorage().assetVaults;
+    function getAssetVaultEntries() public view returns (AssetVaultStorage[2] memory _assetVaultEntry) {
+        _assetVaultEntry = _getStorage().vaults;
     }
 
     /// @notice Returns the index of a token in the asset vault array.
     /// @param _token The address of the token.
     function tokenToAssetVaultIndex(address _token) public view returns (uint256 _idx) {
-        _idx = _getStorage().tokenToAssetVaultIndex[_token];
+        _idx = _getTokenToAssetVaultIndex()[_token];
     }
 
     /// @notice Returns the index of a vault in the asset vault array.
     /// @param _vault The address of the vault.
     function vaultToAssetVaultIndex(address _vault) public view returns (uint256 _idx) {
-        _idx = _getStorage().vaultToAssetVaultIndex[_vault];
+        _idx = _getVaultToAssetVaultIndex()[_vault];
     }
 
     /// @notice Returns the current vault state.
     function getVaultState() public view returns (VaultState memory _vaultState) {
-        _vaultState = _getStorage().vaultState;
+        _vaultState = _getVaultState();
     }
 
     /// @notice Returns the current rebalance state.
     function getRebalanceState() public view returns (RebalanceState memory _rebalanceState) {
-        _rebalanceState = _getStorage().rebalanceState;
+        _rebalanceState = _getRebalanceState();
     }
 
-    /// @notice Returns the current GLP attribution for each asset vault.
-    function getVaultGlpAttribution() public view returns (uint256[5] memory _glpAttribution) {
-        _glpAttribution = _getStorage().vaultGlpAttribution;
+    /// @notice Returns the current GMI attribution for each asset vault.
+    function getVaultGmiAttribution() public view returns (uint256[2] memory _gmiAttribution) {
+        _gmiAttribution = _getStorage().vaultGmiAttribution;
     }
 
     /// @notice Returns the last netted price for a given epoch.
     /// @param _epoch The epoch for which to retrieve the netted price.
-    function getLastNettedPrice(uint256 _epoch)
-        public
-        view
-        returns (INettedPositionTracker.NettedPrices memory _nettedPrices)
-    {
-        _nettedPrices = _getStorage().lastNettedPrices[_epoch];
+    function getLastNettedPrice(uint256 _epoch) public view returns (int256[2] memory _nettedPrices) {
+        _nettedPrices = _getNettedPrices(_epoch);
     }
 
     /// @notice Returns the array of position managers.
     function getPositionManagers() public view returns (IPositionManager[] memory _positionManagers) {
-        _positionManagers = _getStorage().positionManagers;
-    }
-
-    /// @notice Returns the array of active aggregate positions.
-    function getActiveAggregatePositions() public view returns (int256[4] memory _activeAggregatePositions) {
-        _activeAggregatePositions = _getStorage().activeAggregatePositions;
+        _positionManagers = _getPositionManagers();
     }
 
     /// @notice Returns the array of netted positions.
-    function getNettedPositions() public view returns (int256[5][5] memory _nettedPositions) {
+    function getNettedPositions() public view returns (int256[2][2] memory _nettedPositions) {
         _nettedPositions = _getStorage().nettedPositions;
     }
 
     /// @notice Returns the array of active external positions.
-    function getActiveExternalPositions() public view returns (int256[5][5] memory _activeExternalPositions) {
-        _activeExternalPositions = _getStorage().activeExternalPositions;
-    }
-
-    /// @notice Returns the last GLP composition.
-    function getLastGlpComposition() public view returns (uint256[5] memory _glpComposition) {
-        _glpComposition = _getStorage().lastGlpComposition;
+    function getActiveExternalPosition() public view returns (int256 _activeExternalPosition) {
+        _activeExternalPosition = _getStorage().externalPosition;
     }
 }
 
 /// @title AggregateVaultHelper
-/// @author Umami DAO
-/// @notice Helper contract containting the vault operations and logic.
-contract AggregateVaultHelper is AggregateVaultViews, BaseHandler, Multicall {
-    using SafeTransferLib for ERC20;
-
-    // EVENTS
-    // ------------------------------------------------------------------------------------------
-
-    event SettleNettedPositionPnl(
-        uint256[5] previousGlpAmount,
-        uint256[5] settledGlpAmount,
-        int256[5] glpPnl,
-        int256[5] dollarPnl,
-        int256[5] percentPriceChange
-    );
-    event UpdateNettingCheckpointPrice(
-        INettedPositionTracker.NettedPrices oldPrices, INettedPositionTracker.NettedPrices newPrices
-    );
-    event CompoundDistributeYield(uint256[5] glpYieldPerVault);
-    event RebalanceGlpPosition(
-        uint256[5] vaultGlpAttributionBefore,
-        uint256[5] vaultGlpAttributionAfter,
-        uint256[5] targetGlpAllocation,
-        int256[5] totalVaultGlpDelta,
-        int256[5] feeAmounts
-    );
-    event GlpRewardClaimed(uint256 _amount);
-    event Cycle(uint256 timestamp, uint256 round);
-
-    // GETTERS
-    // ------------------------------------------------------------------------------------------
+/// @author Umami Devs
+/// @notice A contract that constains extended logic of the AggregateVault. Common storage layout is used with delegate calls.
+contract AggregateVaultHelper is AggregateVaultStorage, AggregateVaultViews, BaseHandler, GlobalACL {
+    constructor(Auth _auth) GlobalACL(_auth) { }
 
     /**
      * @notice Gets the current asset vault price per share (PPS)
-     * @param _assetVault The address of the asset vault
-     * @return _pps The price per share of the asset vault
+     * @param _vault The address of the asset vault
+     * @param isDeposit if the pricing is for a deposit or withdrawal
+     * @param useLlo should use the LLO price
+     * @return - The price per share of the asset vault
      */
-    function getVaultPPS(address _assetVault) public onlyDelegateCall returns (uint256 _pps) {
+    function getVaultPPS(address _vault, bool isDeposit, bool useLlo) external onlyDelegateCall returns (uint256) {
         VaultState memory vaultState = _getVaultState();
-        if (vaultState.rebalanceOpen) {
-            mapping(address => uint256) storage vaultToAssetVaultIndex = _getVaultToAssetVaultIndex();
-            return vaultState.rebalancePPS[vaultToAssetVaultIndex[_assetVault]];
-        }
+        uint256 index = vaultToAssetVaultIndex(_vault);
+        if (vaultState.rebalanceOpen) return vaultState.rebalancePPS[index];
 
-        uint256 idx = _getVaultToAssetVaultIndex()[_assetVault];
-        AssetVaultEntry storage assetVault = _getAssetVaultEntry(idx);
-        (uint256 tvl,,,) = _getAssetVaultTvl(assetVault);
-        uint256 oneShare = 10 ** ERC20(assetVault.vault).decimals();
+        AssetVaultStorage storage vault = _getStorage().vaults[index];
+        uint256 vaultSupply = ERC20(vault.vault).totalSupply();
+        uint256 decimals = _vaultDecimals(index);
+        uint256 oneToken = 10 ** decimals;
 
-        uint256 totalSupply = ERC20(assetVault.vault).totalSupply();
-        if (totalSupply == 0) return oneShare;
-        _pps = (tvl * oneShare) / totalSupply;
+        if (vaultSupply == 0) return oneToken;
+
+        uint256 nativeTokenBalance = ERC20(vault.token).balanceOf(address(this));
+        uint256 gmiUsd = useLlo ? _vaultGmiBalanceUsd(index) : _vaultGmiBalanceUsdChainlink(index); // 18 decimal
+
+        uint256 vaultTokenPrice = useLlo ? _vaultTokenPrice(index) : _vaultTokenPriceChainlink(index);
+        uint256 gmiToVaultToken = gmiUsd * 1e12 / vaultTokenPrice;
+
+        uint256 positionMargin =
+            _getAssetVaultHedgesInNativeToken(index, vaultTokenPrice.toInternalPrice(decimals), decimals);
+
+        uint256 totalBalance = nativeTokenBalance + gmiToVaultToken + positionMargin;
+        totalBalance -= _getPendingFees(vault, _getVaultState().lastRebalanceTime, totalBalance, vaultSupply);
+        return isDeposit
+            ? (totalBalance * oneToken + vaultSupply - 1) / vaultSupply
+            : totalBalance * oneToken / vaultSupply;
     }
 
-    /**
-     * @notice Gets the current Global Liquidity Position (GLP) for all vaults
-     * @return _vaultsGlp An array containing the GLP for each vault
-     */
-    function getVaultsGlp() public view returns (uint256[5] memory _vaultsGlp) {
-        _vaultsGlp = LibAggregateVaultUtils.getVaultsGlp(_getStorage());
-    }
-
-    /**
-     * @notice Gets the GLP for all vaults with no Profit and Loss (PNL) adjustments
-     * @return _vaultsGlpNoPnl An array containing the GLP with no PNL for each vault
-     */
-    function getVaultsGlpNoPnl() public view returns (uint256[5] memory _vaultsGlpNoPnl) {
-        _vaultsGlpNoPnl = LibAggregateVaultUtils.getVaultsGlpNoPnl(_getStorage());
-    }
     /**
      * @notice Gets the current asset vault Total Value Locked (TVL)
-     * @param _assetVault The address of the asset vault
-     * @return _tvl The total value locked in the asset vault
+     * @dev TVL of the vaults may not equal PPS * totalSupply due to precision loss
+     * @param _vault The address of the asset vault
+     * @param useLlo should use the LLO price
+     * @return vaultTvl The total value locked in the asset vault
      */
+    function getVaultTVL(address _vault, bool useLlo) external onlyDelegateCall returns (uint256 vaultTvl) {
+        uint256 index = vaultToAssetVaultIndex(_vault);
+        uint256 decimals = _vaultDecimals(index);
 
-    function getVaultTVL(address _assetVault) public onlyDelegateCall returns (uint256 _tvl) {
-        uint256 idx = _getVaultToAssetVaultIndex()[_assetVault];
-        AssetVaultEntry storage assetVault = _getAssetVaultEntry(idx);
-        (_tvl,,,) = _getAssetVaultTvl(assetVault);
-    }
-
-    /**
-     * @notice Gets the breakdown of the asset vault TVL
-     * @param _assetVault The address of the asset vault
-     * @return _total The total TVL in the asset vault
-     * @return _buffer The buffer portion of the TVL
-     * @return _glp The GLP portion of the TVL
-     * @return _hedges The hedge portion of the TVL
-     */
-    function getVaultTVLBreakdown(address _assetVault)
-        public
-        onlyDelegateCall
-        returns (uint256 _total, uint256 _buffer, uint256 _glp, uint256 _hedges)
-    {
-        (_total, _buffer, _glp, _hedges) =
-            _getAssetVaultTvl(_getAssetVaultEntry(_getVaultToAssetVaultIndex()[_assetVault]));
-    }
-
-    // CONFIG
-    // ------------------------------------------------------------------------------------------
-
-    /**
-     * @notice Sets the timelock yield boost for the specified vault
-     * @param newTimelockYieldBoost The address of the new timelock yield boost
-     * @param vaultIdx The index of the vault in the asset vaults array
-     */
-    function setTimelockYieldBoost(address newTimelockYieldBoost, uint256 vaultIdx) public onlyDelegateCall {
-        AssetVaultEntry[5] storage assetVaults = _getAssetVaultEntries();
-        assetVaults[vaultIdx].timelockYieldBoost = newTimelockYieldBoost;
-    }
-
-    /**
-     * @notice Sets the netted positions
-     * @param _nettedPositions A 2D array of the new netted positions
-     */
-    function setNettedPositions(int256[5][5] memory _nettedPositions) public onlyDelegateCall {
-        _setNettedPositions(_nettedPositions);
-    }
-
-    /**
-     * @notice Sets the keeper share config
-     * @param _newKeeper The new keeper address
-     * @param _newBps The new keeper share
-     */
-    function setKeeperShareConfig(address _newKeeper, uint256 _newBps) public onlyDelegateCall {
-        require(_newKeeper != address(0), "Invalid keeper address");
-        require(_newBps <= 5000, "More than max allowed");
-        _getStorage().keeper = _newKeeper;
-        _getStorage().keeperShareBps = _newBps;
-    }
-
-    /**
-     * @notice Set the swap tolerance
-     * @param _newSwapTolerance The new swap tolerance
-     */
-    function setSwapTolerance(uint256 _newSwapTolerance) public onlyDelegateCall {
-        require(_newSwapTolerance <= 10_000, "Invalid BPS");
-        _getStorage().swapToleranceBps = _newSwapTolerance;
-    }
-
-    /**
-     * @notice Settles internal Profit and Loss (PNL)
-     * @param assetPrices An array of the asset prices
-     * @param glpPrice The Global Liquidity Position (GLP) price
-     */
-    function settleInternalPnl(uint256[5] memory assetPrices, uint256 glpPrice) external onlyDelegateCall {
-        _settleInternalPnl(assetPrices, glpPrice);
-    }
-
-    /**
-     * @notice Sets the Global Liquidity Position (GLP) attribution for each vault
-     * @param _newVals An array of the new GLP attributions
-     */
-    function setVaultGlpAttribution(uint256[5] memory _newVals) public onlyDelegateCall {
-        uint256[5] storage _vaultGlpAttribution = _getVaultGlpAttribution();
-        for (uint256 i = 0; i < _vaultGlpAttribution.length; ++i) {
-            _vaultGlpAttribution[i] = _newVals[i];
+        if (_getStorage().vaultState.rebalanceOpen) {
+            uint256 totalSupply = ERC20(_vault).totalSupply();
+            return _getStorage().vaultState.rebalancePPS[index] * totalSupply / 10 ** decimals;
         }
+
+        AssetVaultStorage storage vault = _getStorage().vaults[index];
+        uint256 gmiUsd = useLlo ? _vaultGmiBalanceUsd(index) : _vaultGmiBalanceUsdChainlink(index); // 18 decimals
+
+        uint256 vaultTokenPrice = useLlo ? _vaultTokenPrice(index) : _vaultTokenPriceChainlink(index);
+
+        uint256 positionMargin =
+            _getAssetVaultHedgesInNativeToken(index, vaultTokenPrice.toInternalPrice(decimals), decimals);
+
+        uint256 gmiToVaultToken = gmiUsd * 1e12 / vaultTokenPrice;
+        uint256 nativeTokenBalance = ERC20(vault.token).balanceOf(address(this));
+        vaultTvl = nativeTokenBalance + gmiToVaultToken + positionMargin;
+        vaultTvl -=
+            _getPendingFees(vault, _getVaultState().lastRebalanceTime, vaultTvl, ERC20(vault.vault).totalSupply());
     }
 
     /**
-     * @notice Sets the netting price tolerance
-     * @param _tolerance The new netting price tolerance
+     * @notice Gets the current asset vault price per share (PPS). This function can be used to
+     * get the PPS according to an off chain price set.
+     * @param _vault The address of the asset vault
+     * @param isDeposit if the pricing is for a deposit or withdrawal
+     * @param prices The prices of the markets in GMI. This array is ordered in the same sequence
+     * as the GMI index assets. To get the ordering of prices call GMI.indexAssets()
+     * @param max Should the max or min price be used.
+     * @return - The price per share of the asset vault
      */
-    function setNettingPriceTolerance(uint256 _tolerance) external onlyDelegateCall {
-        require(_tolerance <= BIPS, "AggregateVaultHelper: tolerance too high");
-        _getStorage().nettingPriceTolerance = _tolerance;
-    }
-
-    /**
-     * @notice Sets the netting price tolerance
-     * @param _tolerance The new netting price tolerance
-     */
-    function setGlpRebalanceTolerance(uint256 _tolerance) external onlyDelegateCall {
-        require(_tolerance <= BIPS, "AggregateVaultHelper: tolerance too high");
-        _getStorage().glpRebalanceTolerance = _tolerance;
-    }
-
-    /**
-     * @notice Sets the rebalance state
-     * @param _rebalanceState A RebalanceState struct containing the new state
-     */
-    function setRebalanceState(RebalanceState memory _rebalanceState) external onlyDelegateCall {
-        RebalanceState storage rebalanceState = _getRebalanceState();
-        rebalanceState.glpAllocation = _rebalanceState.glpAllocation;
-        rebalanceState.glpComposition = _rebalanceState.glpComposition;
-        rebalanceState.aggregatePositions = _rebalanceState.aggregatePositions;
-        rebalanceState.epoch = _rebalanceState.epoch;
-
-        for (uint256 i = 0; i < UMAMI_TOTAL_VAULTS; ++i) {
-            for (uint256 j = 0; j < UMAMI_TOTAL_VAULTS; ++j) {
-                rebalanceState.externalPositions[i][j] = _rebalanceState.externalPositions[i][j];
-                rebalanceState.adjustedExternalPositions[i][j] = _rebalanceState.adjustedExternalPositions[i][j];
-            }
-        }
-    }
-
-    function setGlpMintBurnSlippageTolerance(uint256 _newTolerance) external onlyDelegateCall {
-        _getStorage().glpMintBurnSlippageTolerance = _newTolerance;
-    }
-
-    /**
-     * @notice Updates the netting checkpoint price for the specified epoch
-     * @param assetPrices A NettedPrices struct containing the new asset prices
-     * @param epochId The ID of the epoch
-     */
-    function updateNettingCheckpointPrice(INettedPositionTracker.NettedPrices memory assetPrices, uint256 epochId)
+    function getVaultPPSWithPrices(address _vault, bool isDeposit, GmxStorage.MarketPrices[] memory prices, bool max)
         external
         onlyDelegateCall
+        returns (uint256)
     {
-        _updateNettingCheckpointPrice(assetPrices, epochId);
+        uint256 index = vaultToAssetVaultIndex(_vault);
+        AssetVaultStorage storage vault = _getStorage().vaults[index];
+        uint256 vaultSupply = ERC20(vault.vault).totalSupply();
+        if (vaultSupply == 0) {
+            uint256 decimals = _vaultDecimals(index);
+            uint256 oneToken = 10 ** decimals;
+            return oneToken;
+        }
+        uint256 gmiUsd;
+        uint256 vaultTokenPrice;
+        uint256 decimals;
+        {
+            uint256 longTokenPrice = max ? prices[0].longTokenPrice.max : prices[0].longTokenPrice.min;
+            uint256 shortTokenPrice = max ? prices[0].shortTokenPrice.max : prices[0].shortTokenPrice.min;
+            uint256 gmiPPS = GMI(_getStorage().gmi).pps(prices);
+            uint256 longTokenDecimals = _vaultDecimals(1);
+            uint256 shortTokenDecimals = _vaultDecimals(0);
+            uint256 gmiBalance = LibAggregateVaultUtils.getVaultGmiWithPrices(
+                index,
+                _getVaultState().epoch,
+                gmiPPS,
+                Solarray.int256s(
+                    shortTokenPrice.toInternalPrice(shortTokenDecimals).toInt256(),
+                    longTokenPrice.toInternalPrice(longTokenDecimals).toInt256()
+                )
+            );
+            gmiUsd = gmiPPS * gmiBalance / 1e18;
+            vaultTokenPrice = index == 0 ? shortTokenPrice : longTokenPrice;
+            decimals = index == 0 ? shortTokenDecimals : longTokenDecimals;
+        }
+        uint256 gmiToVaultToken = gmiUsd * 1e12 / vaultTokenPrice;
+        uint256 oneToken = 10 ** decimals;
+        uint256 positionMargin =
+            _getAssetVaultHedgesInNativeToken(index, vaultTokenPrice.toInternalPrice(decimals), decimals);
+        uint256 totalBalance = ERC20(vault.token).balanceOf(address(this)) + gmiToVaultToken + positionMargin;
+        totalBalance -= _getPendingFees(vault, _getVaultState().lastRebalanceTime, totalBalance, vaultSupply);
+        return isDeposit
+            ? (totalBalance * oneToken + vaultSupply - 1) / vaultSupply
+            : totalBalance * oneToken / vaultSupply;
     }
 
     /**
-     * @notice Removes the position manager at the specified index
-     * @param _addr The address of the position manager to remove
-     * @param idx The index of the position manager in the position managers array
+     * @notice Gets the current asset vault Total Value Locked (TVL). This function can be used to
+     * get the TVL according to an off chain price set.
+     * @dev TVL of the vaults may not equal PPS * totalSupply due to precision loss.
+     * @param _vault The address of the asset vault
+     * @param prices The prices of the markets in GMI. This array is ordered in the same sequence
+     * as the GMI index assets. To get the ordering of prices call GMI.indexAssets()
+     * @param max Should the max or min price be used.
+     * @return tvlWithPrices The total value locked in the asset vault
      */
-    function removePositionManagerAt(address _addr, uint256 idx) external onlyDelegateCall {
-        IPositionManager[] storage positionManagers = _getPositionManagers();
-        require(positionManagers[idx] == IPositionManager(_addr), "invalid idx");
-        positionManagers[idx] = positionManagers[positionManagers.length - 1];
-        positionManagers.pop();
+    function getVaultTVLWithPrices(address _vault, GmxStorage.MarketPrices[] memory prices, bool max)
+        external
+        onlyDelegateCall
+        returns (uint256)
+    {
+        uint256 index = vaultToAssetVaultIndex(_vault);
+        uint256 longTokenDecimals = _vaultDecimals(1);
+        uint256 shortTokenDecimals = _vaultDecimals(0);
+        uint256 decimals = index == 0 ? shortTokenDecimals : longTokenDecimals;
+        AssetVaultStorage storage vault = _getStorage().vaults[index];
+        uint256 longTokenPrice = max ? prices[0].longTokenPrice.max : prices[0].longTokenPrice.min;
+        uint256 shortTokenPrice = max ? prices[0].shortTokenPrice.max : prices[0].shortTokenPrice.min;
+        uint256 gmiPPS = GMI(_getStorage().gmi).pps(prices);
+        uint256 gmiBalance = LibAggregateVaultUtils.getVaultGmiWithPrices(
+            index,
+            _getVaultState().epoch,
+            gmiPPS,
+            Solarray.int256s(
+                shortTokenPrice.toInternalPrice(shortTokenDecimals).toInt256(),
+                longTokenPrice.toInternalPrice(longTokenDecimals).toInt256()
+            )
+        );
+        uint256 gmiUsd = gmiPPS * gmiBalance / 1e18;
+        uint256 vaultTokenPrice = index == 0 ? shortTokenPrice : longTokenPrice;
+        uint256 positionMargin =
+            _getAssetVaultHedgesInNativeToken(index, vaultTokenPrice.toInternalPrice(decimals), decimals);
+
+        uint256 gmiToVaultToken = gmiUsd * 1e12 / vaultTokenPrice;
+        uint256 nativeTokenBalance = ERC20(vault.token).balanceOf(address(this));
+        uint256 tvlWithPrices = nativeTokenBalance + gmiToVaultToken + positionMargin;
+        tvlWithPrices -=
+            _getPendingFees(vault, _getVaultState().lastRebalanceTime, tvlWithPrices, ERC20(vault.vault).totalSupply());
+        return tvlWithPrices;
     }
 
     /**
-     * @notice Updates the current epoch
-     * @param _epoch The new epoch value
+     * @notice Gets the current GMI for all vaults
+     * @return gmiAmounts An array containing the GMI for each vault
      */
-    function updateEpoch(uint256 _epoch) public onlyDelegateCall {
-        _getStorage().vaultState.epoch = _epoch;
+    function getVaultGmi(uint256 currentEpoch, bool useLlo) public view returns (uint256[2] memory gmiAmounts) {
+        return _getVaultsGmi(currentEpoch, useLlo);
     }
 
-    // REBALANCE
+    /**
+     * @notice Gets the current GMI in $ with 1e18 decimals for all vaults
+     * @return - An array containing the GMI dollars for each vault
+     */
+    function getVaultsGmiValue(uint256 currentEpoch, bool useLlo)
+        external
+        view
+        onlyDelegateCall
+        returns (uint256[2] memory)
+    {
+        return _getVaultsGmiInUsd(currentEpoch, useLlo);
+    }
+
+    /**
+     * @notice Gets the current GMI in $ with 1e18 decimals for all vaults using an off chain price
+     * @param prices The prices of the markets in GMI. This array is ordered in the same sequence
+     * as the GMI index assets. To get the ordering of prices call GMI.indexAssets()
+     * @param max Should the max or min price be used.
+     * @return gmiUsdAmounts An array containing the GMI dollars for each vault
+     */
+    function getVaultsGmiValueWithPrices(GmxStorage.MarketPrices[] memory prices, bool max)
+        external
+        view
+        onlyDelegateCall
+        returns (uint256[2] memory gmiUsdAmounts)
+    {
+        uint256 currentEpoch = _getVaultState().epoch;
+        uint256 longTokenDecimals = _vaultDecimals(1);
+        uint256 shortTokenDecimals = _vaultDecimals(0);
+        uint256 longTokenPrice = max ? prices[0].longTokenPrice.max : prices[0].longTokenPrice.min;
+        uint256 shortTokenPrice = max ? prices[0].shortTokenPrice.max : prices[0].shortTokenPrice.min;
+        uint256 gmiPPS = GMI(_getStorage().gmi).pps(prices);
+        gmiUsdAmounts = [
+            LibAggregateVaultUtils.getVaultGmiWithPrices(
+                0,
+                currentEpoch,
+                gmiPPS,
+                Solarray.int256s(
+                    shortTokenPrice.toInternalPrice(shortTokenDecimals).toInt256(),
+                    longTokenPrice.toInternalPrice(longTokenDecimals).toInt256()
+                )
+            ),
+            LibAggregateVaultUtils.getVaultGmiWithPrices(
+                1,
+                currentEpoch,
+                gmiPPS,
+                Solarray.int256s(
+                    shortTokenPrice.toInternalPrice(shortTokenDecimals).toInt256(),
+                    longTokenPrice.toInternalPrice(longTokenDecimals).toInt256()
+                )
+            )
+        ];
+        gmiUsdAmounts[0] = gmiUsdAmounts[0] * gmiPPS / 1e18;
+        gmiUsdAmounts[1] = gmiUsdAmounts[1] * gmiPPS / 1e18;
+    }
+
+    // CYCLE
     // ------------------------------------------------------------------------------------------
 
     /**
-     * @notice Cycles the vaults with the given asset prices and GLP price, this settles internal position pnl,
-     * and rebalances GLP held by each vault to the target amounts set in `openRebalancePeriod(...)`
-     * @param assetPrices An array containing the asset prices
-     * @param glpPrice The GLP price
+     * @notice Cycles the vaults, this settles internal position pnl,
+     * and rebalances GMI held by each vault to the target amounts set in `openRebalancePeriod(...)`
+     * @param shouldRebalanceGmi Whether the GMI amounts should be rebalanced this cycle. Flag set in keeper
      */
-    function cycle(uint256[5] memory assetPrices, uint256 glpPrice) external onlyDelegateCall {
-        _cycle(assetPrices, glpPrice);
-        VaultState storage vaultState = _getVaultState();
-        emit Cycle(block.timestamp, vaultState.epoch);
+    function cycle(bool shouldRebalanceGmi)
+        external
+        onlyDelegateCall
+        returns (LibCycle.GMIMintRequest[2] memory, LibCycle.GMIBurnRequest[2] memory)
+    {
+        AVStorage storage stg = _getStorage();
+        require(stg.vaultState.rebalanceOpen, "!rebalanceOpen");
+        stg.isAboveWatermark[0] = stg.vaultState.rebalancePPS[0] > stg.vaults[0].feeWatermarkPPS ? true : false;
+        stg.isAboveWatermark[1] = stg.vaultState.rebalancePPS[1] > stg.vaults[1].feeWatermarkPPS ? true : false;
+        return LibCycle.cycle(shouldRebalanceGmi);
     }
 
     /**
-     * @notice Handle the GLP rewards according to the strategy. Claim esGMX + multiplier points and stake.
-     * @param compound Indicates whether to compound the rewards or distribute them to the buffer
+     * @notice Fulfills the requests made in `cycle(...)`. This is called after the GMX keeper has executed requests
      */
-    function handleGlpRewards(bool compound) public onlyDelegateCall {
-        uint256 priorBalance = ERC20(TOKEN_WETH).balanceOf(address(this));
-        _getFeeClaimRewardRouter().handleRewards(true, true, true, true, true, true, false);
-        uint256 rewardAmount = ERC20(TOKEN_WETH).balanceOf(address(this)) - priorBalance;
-        emit GlpRewardClaimed(rewardAmount);
-
-        if (compound) {
-            _compoundDistributeYield(rewardAmount);
-        } else {
-            _bufferDistributeYield(rewardAmount);
-        }
+    function fulfilRequests() external onlyDelegateCall {
+        require(getVaultState().rebalanceOpen, "!rebalanceOpen");
+        LibCycle.fulfilRequests();
     }
 
-    /**
-     * @notice Rebalances the GLP with the given next allocation and GLP price
-     * @param _nextGlpAllocation An array containing the next GLP allocation
-     * @param _glpPrice The GLP price
-     */
-    function rebalanceGlpPosition(uint256[5] memory _nextGlpAllocation, uint256 _glpPrice) external onlyDelegateCall {
-        LibRebalance.rebalanceGlpPosition(_getStorage(), _nextGlpAllocation, _glpPrice);
+    /// @notice for setting the Gmi Attribution via config to recover
+    function setVaultGmiAttribution(uint256[2] memory _gmiAttribution) external onlyDelegateCall onlyConfigurator {
+        _getStorage().vaultGmiAttribution = _gmiAttribution;
+    }
+
+    /// @notice for setting the last netted prices via config to recover
+    function setLastNettedPrices(uint256 epoch, int256[2] memory _nettedPrices)
+        external
+        onlyDelegateCall
+        onlyConfigurator
+    {
+        _getStorage().lastNettedPrices[epoch] = _nettedPrices;
+    }
+
+    /// @notice for setting the epoch via config to recover
+    function setEpoch(uint256 epoch) external onlyDelegateCall onlyConfigurator {
+        _getStorage().vaultState.epoch = epoch;
+    }
+
+    /// @notice to clear stale requests
+    function clearMintBurnRequests(uint256 start, uint256 end) external onlyDelegateCall onlyConfigurator {
+        // for (uint256 i = start; i <= end; i++) {
+        //     LibCycle.clearMintBurnRequestForEpoch(i);
+        // }
+    }
+
+    /// @notice set slippage tolerance for swaps
+    function setSwapSlippageTolerance(uint256 _slippage) external onlyDelegateCall onlyConfigurator {
+        _getStorage().swapSlippage = _slippage;
+    }
+
+    function pullKeeperFees() external onlyDelegateCall {
+        FeeReserve(getVaultState().depositFeeEscrow).pullKeeperFees();
     }
 
     // INTERNAL GETTERS
     // ------------------------------------------------------------------------------------------
 
     /**
-     * @notice Get the AssetVaultEntry at the given index.
-     * @param _idx The index of the AssetVaultEntry.
-     * @return _assetVault The AssetVaultEntry at the given index.
+     * @notice Get the total pending rebalance fees for the vault
+     * @param vault the underlying vault token address.
+     * @param lastRebalanceTime time the vaults last rebalanced.
+     * @param currentBalance current balance of the vault.
+     * @param vaultSupply total supply of the vault token.
+     * @return totalVaultFee the total pending vault fees.
      */
-    function _getAssetVaultEntry(uint256 _idx) internal view returns (AssetVaultEntry storage _assetVault) {
-        _assetVault = _getAssetVaultEntries()[_idx];
-    }
-
-    /**
-     * @notice Get the index of an AssetVaultEntry from a vault address.
-     * @param _vault The vault address to find the index for.
-     * @return _idx The index of the AssetVaultEntry with the given vault address.
-     */
-    function _getAssetVaultIdxFromVault(address _vault) internal view returns (uint256 _idx) {
-        AssetVaultEntry[5] storage assetVaults = _getAssetVaultEntries();
-
-        for (uint256 i = 0; i < UMAMI_TOTAL_VAULTS; ++i) {
-            if (assetVaults[i].vault == _vault) {
-                return i;
-            }
-        }
-        revert("AggregateVault: unknown asset vault");
+    function _getPendingFees(
+        AssetVaultStorage memory vault,
+        uint256 lastRebalanceTime,
+        uint256 currentBalance,
+        uint256 vaultSupply
+    ) internal returns (uint256 totalVaultFee) {
+        VaultFees memory vaultFees = _getVaultFees();
+        uint256 percentYear = lastRebalanceTime == 0 ? 0 : 1e18 * (block.timestamp - lastRebalanceTime) / YEAR;
+        (bytes memory ret) = _getStorage().feeHelper.delegateCall(
+            abi.encodeCall(
+                IVaultFees._getVaultRebalanceFees,
+                (
+                    currentBalance,
+                    _getStorage().isAboveWatermark[vault.token == _getShortToken() ? 0 : 1],
+                    _getPerformanceFee(vault.token, vaultFees.performanceFee) * percentYear / 1e18,
+                    vaultFees.managementFee * percentYear / 1e18
+                )
+            )
+        );
+        (,, totalVaultFee) = abi.decode(ret, (uint256, uint256, uint256));
     }
 
     /**
      * @notice Get the total value locked (TVL) for a specific AssetVaultEntry.
      * @param _assetVault The AssetVaultEntry to get the TVL for.
+     * @param _useLlo Should use chainlink llo.
      * @return _totalTvl The total TVL for the AssetVaultEntry.
      * @return _bufferTvl The TVL held in the buffer for the AssetVaultEntry.
-     * @return _glpTvl The TVL held in the glp for the AssetVaultEntry.
+     * @return _gmiTvl The TVL held in the glp for the AssetVaultEntry.
      * @return _hedgesTvl The TVL held in hedges for the AssetVaultEntry.
      */
-    function _getAssetVaultTvl(AssetVaultEntry storage _assetVault)
+    function _getAssetVaultTvl(AssetVaultStorage storage _assetVault, bool _useLlo)
         internal
-        returns (uint256 _totalTvl, uint256 _bufferTvl, uint256 _glpTvl, uint256 _hedgesTvl)
+        returns (uint256 _totalTvl, uint256 _bufferTvl, uint256 _gmiTvl, uint256 _hedgesTvl)
     {
-        uint256 assetVaultIdx = _getAssetVaultIdxFromVault(_assetVault.vault);
-
+        uint256 index = vaultToAssetVaultIndex(_assetVault.vault);
         _bufferTvl = ERC20(_assetVault.token).balanceOf(address(this));
-        _glpTvl = _assetVaultGlpToken(assetVaultIdx);
-        _hedgesTvl = _getAssetVaultHedgesInNativeToken(assetVaultIdx);
-        _totalTvl = _bufferTvl + _glpTvl + _hedgesTvl;
-    }
+        uint256 vaultTokenPrice = _useLlo ? _vaultTokenPrice(index) : _vaultTokenPriceChainlink(index);
+        uint256 decimals = _vaultDecimals(index);
+        _gmiTvl = _useLlo ? _vaultGmiBalanceUsd(index) : _vaultGmiBalanceUsdChainlink(index); // 18 decimals
+        _gmiTvl = _gmiTvl * 1e12 / vaultTokenPrice;
 
-    /**
-     * @notice Get the hedges value in USD for a specific vault index.
-     * @param _vaultIdx The index of the vault to get the hedges value for.
-     * @return _hedgesUsd The hedges value in USD for the specified vault index.
-     */
-    function _getAssetVaultHedgesInUsd(uint256 _vaultIdx) internal returns (uint256 _hedgesUsd) {
-        AssetVaultEntry[5] storage assetVaults = _getAssetVaultEntries();
-        VaultState storage vaultState = _getVaultState();
-
-        for (uint256 i = 1; i < UMAMI_TOTAL_VAULTS; ++i) {
-            address token = assetVaults[i].token;
-            uint256 totalNotional = _getTotalNotionalInExternalPositions(i);
-            uint256 notional = vaultState.externalPositions[_vaultIdx][i] > 0
-                ? uint256(vaultState.externalPositions[_vaultIdx][i])
-                : uint256(-vaultState.externalPositions[_vaultIdx][i]);
-            (uint256 totalMargin,) = _getTotalMargin(token);
-
-            if (totalNotional > 0) {
-                _hedgesUsd += (totalMargin * notional) / totalNotional;
-            }
-        }
+        _hedgesTvl = _getAssetVaultHedgesInNativeToken(index, vaultTokenPrice.toInternalPrice(decimals), decimals);
+        _totalTvl = _bufferTvl + _gmiTvl + _hedgesTvl;
     }
 
     /**
@@ -459,48 +451,43 @@ contract AggregateVaultHelper is AggregateVaultViews, BaseHandler, Multicall {
      * @param _vaultIdx The index of the vault to get the hedges value for.
      * @return _hedgesToken The hedges value in native token for the specified vault index.
      */
-    function _getAssetVaultHedgesInNativeToken(uint256 _vaultIdx) internal returns (uint256 _hedgesToken) {
-        uint256 hedgesUsd = _getAssetVaultHedgesInUsd(_vaultIdx);
-        GlpHandler glpHandler = _getGlpHandler();
-        AssetVaultEntry storage assetVault = _getAssetVaultEntries()[_vaultIdx];
-
-        _hedgesToken = glpHandler.getUsdToToken(hedgesUsd, 30, assetVault.token);
+    function _getAssetVaultHedgesInNativeToken(uint256 _vaultIdx, uint256 tokenPrice, uint256 tokenDecimals)
+        internal
+        returns (uint256 _hedgesToken)
+    {
+        uint256 hedgesUsd = _getAssetVaultHedgeInUsd(_vaultIdx);
+        _hedgesToken = (hedgesUsd * (10 ** tokenDecimals)) / tokenPrice;
     }
 
     /**
-     * @notice Get the total notional value in external positions for a specific index.
-     * @param _idx The index to get the total notional value for.
-     * @return _totalNotional The total notional value in external positions for the specified index.
+     * @notice Get the hedges value in USD for a specific vault index.
+     * @param _vaultIdx The index of the vault to get the hedges value for.
+     * @return _hedgesUsd The hedges value in USD for the specified vault index.
      */
-    function _getTotalNotionalInExternalPositions(uint256 _idx) internal view returns (uint256 _totalNotional) {
-        VaultState storage vaultState = _getVaultState();
+    function _getAssetVaultHedgeInUsd(uint256 _vaultIdx) internal returns (uint256 _hedgesUsd) {
+        AVStorage storage stg = _getStorage();
+        uint256 positionMargin;
 
-        for (uint256 i = 0; i < UMAMI_TOTAL_VAULTS; ++i) {
-            int256 externalPosition = vaultState.externalPositions[i][_idx];
-            uint256 absoluteExternalPosition =
-                externalPosition > 0 ? uint256(externalPosition) : uint256(-externalPosition);
-            _totalNotional += absoluteExternalPosition;
+        address longToken = _getLongToken();
+
+        /// @dev here we assume all margin belongs to one vault
+        if (stg.externalPosition > 0 && _vaultIdx == 0) {
+            (positionMargin,) = _getTotalMargin(longToken);
+            return positionMargin * 1e18 / 1e30;
+        } else if (stg.externalPosition < 0 && _vaultIdx == 1) {
+            (positionMargin,) = _getTotalMargin(longToken);
+            return positionMargin * 1e18 / 1e30;
+        } else {
+            return 0;
         }
     }
 
     /**
-     * @notice Get the hedge attribution for all AssetVaults.
-     * @return hedgeAttribution A two-dimensional array containing the hedge attribution for each AssetVault.
+     * @notice Get the total margin value for a specific token.
+     * @param _token The address of the token to get the total margin value for.
+     * @return _totalMargin The total margin value for the specified token.
      */
-    function _getAllAssetVaultsHedgeAtribution() external returns (uint256[4][5] memory hedgeAttribution) {
-        AssetVaultEntry[5] storage assetVaults = _getAssetVaultEntries();
-        for (uint256 i = 0; i < assetVaults.length; ++i) {
-            hedgeAttribution[i] = _getAssetVaultHedgeAttribution(assetVaults[i].vault);
-        }
-        return hedgeAttribution;
-    }
-
-    /**
-     * @notice Get the total notional value for a specific token.
-     * @param _token The address of the token to get the total notional value for.
-     * @return _totalNotional The total notional value for the specified token.
-     */
-    function _getTotalNotional(address _token) public returns (uint256 _totalNotional, bool _isLong) {
+    function _getTotalMargin(address _token) internal returns (uint256 _totalMargin, bool _isLong) {
         IPositionManager[] storage positionManagers = _getPositionManagers();
         uint256 length = positionManagers.length;
 
@@ -508,9 +495,36 @@ contract AggregateVaultHelper is AggregateVaultViews, BaseHandler, Multicall {
         _isLong = false;
 
         for (uint256 i = 0; i < length; ++i) {
-            bytes memory ret = _delegatecall(
-                address(positionManagers[i]), abi.encodeWithSignature("positionNotional(address)", _token)
-            );
+            bytes memory ret =
+                address(positionManagers[i]).delegateCall(abi.encodeWithSignature("positionMargin(address)", _token));
+            (uint256 margin, bool isLong_) = abi.decode(ret, (uint256, bool));
+            if (margin > 0) {
+                if (unset) {
+                    _isLong = isLong_;
+                    unset = false;
+                } else {
+                    require(_isLong == isLong_, "AggregateVaultHelper: mixed long/short");
+                }
+            }
+            _totalMargin += margin;
+        }
+    }
+
+    /**
+     * @notice Get the total notional value for a specific token.
+     * @param _token The address of the token to get the total notional value for.
+     * @return _totalNotional The total notional value for the specified token.
+     */
+    function getTotalNotional(address _token) public returns (uint256 _totalNotional, bool _isLong) {
+        IPositionManager[] storage positionManagers = _getPositionManagers();
+        uint256 length = positionManagers.length;
+
+        bool unset = true;
+        _isLong = false;
+
+        for (uint256 i = 0; i < length; ++i) {
+            bytes memory ret =
+                address(positionManagers[i]).delegateCall(abi.encodeWithSignature("positionNotional(address)", _token));
             (uint256 notional, bool isLong_) = abi.decode(ret, (uint256, bool));
             if (notional > 0) {
                 if (unset) {
@@ -525,304 +539,85 @@ contract AggregateVaultHelper is AggregateVaultViews, BaseHandler, Multicall {
         }
     }
 
-    /**
-     * @notice Get the total margin value for a specific token.
-     * @param _token The address of the token to get the total margin value for.
-     * @return _totalMargin The total margin value for the specified token.
-     */
-    function _getTotalMargin(address _token) public returns (uint256 _totalMargin, bool _isLong) {
-        IPositionManager[] storage positionManagers = _getPositionManagers();
-        uint256 length = positionManagers.length;
-
-        bool unset = true;
-        _isLong = false;
-
-        for (uint256 i = 0; i < length; ++i) {
-            bytes memory ret =
-                _delegatecall(address(positionManagers[i]), abi.encodeWithSignature("positionMargin(address)", _token));
-            (uint256 margin, bool isLong_) = abi.decode(ret, (uint256, bool));
-            if (margin > 0) {
-                if (unset) {
-                    _isLong = isLong_;
-                    unset = false;
-                } else {
-                    require(_isLong == isLong_, "AggregateVaultHelper: mixed long/short");
-                }
-            }
-            _totalMargin += margin;
-        }
+    /// @dev calls the library logic to get the gmi in dollars held by vaults, uses the LLO
+    function _vaultGmiBalanceUsd(uint256 _idx) internal view returns (uint256) {
+        uint256 pps = Pricing.getIndexPps(_getStorage().oracleWrapper, GMI(_getStorage().gmi));
+        uint256 gmiBalance = LibAggregateVaultUtils.getVaultGmi(_idx, _getVaultState().epoch, true);
+        return pps * gmiBalance / 1e18;
     }
-    /**
-     * @notice Returns the current prices from GMX.
-     * @return _prices An INettedPositionTracker.NettedPrices struct containing the current asset prices
-     */
 
-    function _getCurrentPrices() public view returns (INettedPositionTracker.NettedPrices memory _prices) {
-        _prices = LibAggregateVaultUtils.getCurrentPrices(_getStorage());
+    /// @dev calls the library logic to get the gmi in dollars held by vaults, uses the onchain prices
+    function _vaultGmiBalanceUsdChainlink(uint256 _idx) internal view returns (uint256) {
+        uint256 pps = Pricing.getIndexPpsChainlink(_getStorage().oracleWrapper, GMI(_getStorage().gmi));
+        uint256 gmiBalance = LibAggregateVaultUtils.getVaultGmi(_idx, _getVaultState().epoch, false);
+        return pps * gmiBalance / 1e18;
     }
 
     /**
-     * @notice Calculates the hedge attribution for a given vault
-     * @param _vault Address of the vault to calculate the hedge attribution for
-     * @return _vaultMarginAttribution Array of hedge attributions for the given vault
+     * @notice Calculates the GMI amount owned by a vault in USD at a given epoch.
+     * @param currentEpoch The epoch number.
+     * @param useLlo Should use chainlink llo.
+     * @return gmiUsdAmounts The amount of GMI in usd owned by the vault.
      */
-    function _getAssetVaultHedgeAttribution(address _vault)
+    function _getVaultsGmiInUsd(uint256 currentEpoch, bool useLlo)
         internal
-        returns (uint256[4] memory _vaultMarginAttribution)
+        view
+        returns (uint256[2] memory gmiUsdAmounts)
     {
-        uint256 assetVaultIdx = _getAssetVaultIdxFromVault(_vault);
-        AssetVaultEntry[5] storage assetVaults = _getAssetVaultEntries();
-        VaultState storage vaultState = _getVaultState();
-        for (uint256 i = 1; i < UMAMI_TOTAL_VAULTS; ++i) {
-            address token = assetVaults[i].token;
-            uint256 totalNotional = _getTotalNotionalInExternalPositions(i);
-            uint256 notional = vaultState.externalPositions[assetVaultIdx][i] > 0
-                ? uint256(vaultState.externalPositions[assetVaultIdx][i])
-                : uint256(-vaultState.externalPositions[assetVaultIdx][i]);
-            (uint256 actualNotional,) = _getTotalNotional(token);
-
-            if (totalNotional > 0) {
-                _vaultMarginAttribution[i - 1] = (actualNotional * notional) / totalNotional;
-            }
-        }
-        return _vaultMarginAttribution;
-    }
-
-    // INTERNAL REBALACE LOGIC
-    // ------------------------------------------------------------------------------------------
-
-    /**
-     * @notice Updates the netting checkpoint price for a given epoch
-     * @param assetPrices The asset prices to update the checkpoint with
-     * @param epochId The ID of the epoch to update the checkpoint for
-     */
-    function _updateNettingCheckpointPrice(INettedPositionTracker.NettedPrices memory assetPrices, uint256 epochId)
-        internal
-    {
-        // uninitialized case
-        INettedPositionTracker.NettedPrices storage nettedPrice = _getEpochNettedPrice(epochId);
-        require(nettedPrice.stable == 0, "AggregateVault: lastNettedPrices already inited for given epoch");
-        _checkNettingCheckpointPrice(assetPrices);
-        mapping(uint256 => INettedPositionTracker.NettedPrices) storage lastNettedPrices = _getLastNettedPrices();
-        lastNettedPrices[epochId] = assetPrices;
-        emit UpdateNettingCheckpointPrice(lastNettedPrices[epochId - 1], assetPrices);
+        gmiUsdAmounts = [
+            LibAggregateVaultUtils.getVaultGmi(0, currentEpoch, useLlo),
+            LibAggregateVaultUtils.getVaultGmi(1, currentEpoch, useLlo)
+        ];
+        uint256 pps = useLlo
+            ? Pricing.getIndexPps(_getStorage().oracleWrapper, GMI(_getStorage().gmi))
+            : Pricing.getIndexPpsChainlink(_getStorage().oracleWrapper, GMI(_getStorage().gmi));
+        gmiUsdAmounts[0] = gmiUsdAmounts[0] * pps / 1e18;
+        gmiUsdAmounts[1] = gmiUsdAmounts[1] * pps / 1e18;
     }
 
     /**
-     * @notice Cycles through the rebalancing process with the given asset prices and GLP price.
-     * @dev netting checkpoint price is set to 0 after settling internal pnl.
-     * @param assetPrices An array of the current asset prices
-     * @param glpPrice The current GLP price
+     * @notice Calculates the GMI amount owned by a vault at a given epoch.
+     * @param currentEpoch The epoch number.
+     * @param useLlo Should use chainlink llo.
+     * @return gmiAmounts The amount of GLP owned by the vault.
      */
-    function _cycle(uint256[5] memory assetPrices, uint256 glpPrice) internal {
-        // settle internal netted pnl only after first round
-        VaultState storage vaultState = _getVaultState();
-        if (vaultState.epoch > 0) {
-            _settleInternalPnl(assetPrices, glpPrice);
-        }
-        // update next netting prices
-        _updateNettingCheckpointPrice(
-            INettedPositionTracker.NettedPrices({
-                stable: assetPrices[0],
-                eth: assetPrices[1],
-                btc: assetPrices[2],
-                link: assetPrices[3],
-                uni: assetPrices[4]
-            }),
-            vaultState.epoch + 1
-        );
-
-        // note internal pnl is reset to zero at this point
-        RebalanceState storage rebalanceState = _getRebalanceState();
-        // rebalance glp
-        LibRebalance.rebalanceGlpPosition(_getStorage(), rebalanceState.glpAllocation, glpPrice);
+    function _getVaultsGmi(uint256 currentEpoch, bool useLlo) internal view returns (uint256[2] memory gmiAmounts) {
+        return LibAggregateVaultUtils.getVaultsGmi(currentEpoch, useLlo);
     }
 
-    /**
-     * @notice Settles the internal PnL for the given asset prices and GLP price
-     * @param assetPrices An array of the current asset prices
-     * @param glpPrice The current GLP price
-     */
-    function _settleInternalPnl(uint256[5] memory assetPrices, uint256 glpPrice) internal {
-        uint256[5] memory settledVaultGlpAmount;
-        int256[5] memory nettedPnl;
-        int256[5] memory glpPnl;
-        int256[5] memory percentPriceChange;
+    /// @notice gets the vault token price from the vault index
+    function _vaultTokenPrice(uint256 _idx) internal view returns (uint256) {
+        address token = _getStorage().vaults[_idx].token;
+        address oracle = _getStorage().oracleWrapper;
 
-        INettedPositionTracker.NettedPrices memory nettedPrices = INettedPositionTracker.NettedPrices({
-            stable: assetPrices[0],
-            eth: assetPrices[1],
-            btc: assetPrices[2],
-            link: assetPrices[3],
-            uni: assetPrices[4]
-        });
-
-        VaultState storage vaultState = _getVaultState();
-        // get the previous allocated glp amount
-        uint256[5] memory vaultGlpAmount = LibAggregateVaultUtils.getVaultsGlpNoPnl(_getStorage());
-        (settledVaultGlpAmount, nettedPnl, glpPnl, percentPriceChange) = _getNettedPositionTracker()
-            .settleNettingPositionPnl(
-            _getNettedPositions(),
-            nettedPrices,
-            _getEpochNettedPrice(vaultState.epoch),
-            vaultGlpAmount,
-            glpPrice,
-            _getZeroSumPnlThreshold()
-        );
-        // note set the updated proportions?
-        setVaultGlpAttribution(settledVaultGlpAmount);
-        emit SettleNettedPositionPnl(vaultGlpAmount, settledVaultGlpAmount, glpPnl, nettedPnl, percentPriceChange);
+        return OracleWrapper(payable(oracle)).getLloPriceWithinL1Blocks(token);
     }
 
-    // INTERNAL GLP POSITION MANAGMENT
-    // ------------------------------------------------------------------------------------------
+    /// @notice gets the vault token price from the vault index, using the onchain price
+    function _vaultTokenPriceChainlink(uint256 _idx) internal view returns (uint256) {
+        address token = _getStorage().vaults[_idx].token;
+        address oracle = _getStorage().oracleWrapper;
+        return OracleWrapper(payable(oracle)).getChainlinkPrice(token);
+    }
 
-    /**
-     * @notice Swaps eth yield into the buffer for each vault.
-     */
-    function _bufferDistributeYield(uint256 _rewardAmount) internal {
-        require(_rewardAmount > 0, "AggregateVault: _rewardAmount 0");
-        AssetVaultEntry[5] storage assetVaults = _getAssetVaultEntries();
-        uint256 swapInput;
-        GlpHandler handler = _getGlpHandler();
-        for (uint256 i = 0; i < assetVaults.length; i++) {
-            if (assetVaults[i].token != TOKEN_WETH) {
-                swapInput = _rewardAmount * _getVaultGlpAttributeProportion(i) / 1e18;
-                PositionManagerRouter(payable(address(this))).executeSwap(
-                    _getUniV3SwapManager(),
-                    TOKEN_WETH,
-                    assetVaults[i].token,
-                    swapInput,
-                    handler.tokenToToken(TOKEN_WETH, assetVaults[i].token, swapInput),
-                    bytes("") // UniV3SwapManager not required
-                );
-            }
+    /// @notice gets the vault token decimals
+    function _vaultDecimals(uint256 _idx) internal view returns (uint256) {
+        return _getStorage().vaults[_idx].decimals;
+    }
+
+    function _getPerformanceFee(address asset, uint256 compactFee) internal view returns (uint128) {
+        if (asset == _getLongToken()) {
+            return uint128(compactFee & ((1 << 128) - 1));
+        } else if (asset == _getShortToken()) {
+            return uint128(compactFee >> 128);
+        } else {
+            revert("Invalid fee asset");
         }
     }
 
-    /**
-     * @notice Compounds yield into GLP and distributes it to vaults based on TVL using pro-rata method.
-     */
-    function _compoundDistributeYield(uint256 _rewardAmount) internal {
-        if (_rewardAmount > 0) {
-            ERC20(TOKEN_WETH).safeApprove(GMX_GLP_MANAGER, _rewardAmount);
-            uint256 amountWithSlippage =
-                VaultMath.getSlippageAdjustedAmount(_rewardAmount, _getStorage().glpMintBurnSlippageTolerance);
-            uint256 glpMinted =
-                IRewardRouterV2(GMX_GLP_REWARD_ROUTER).mintAndStakeGlp(TOKEN_WETH, _rewardAmount, amountWithSlippage, 0);
-            AssetVaultEntry[5] storage assetVaults = _getAssetVaultEntries();
-            uint256[5] storage _vaultGlpAttribution = _getVaultGlpAttribution();
-
-            uint256[5] memory increments;
-            for (uint256 i = 0; i < assetVaults.length; i++) {
-                increments[i] = (glpMinted * _getVaultGlpAttributeProportion(i)) / 1e18;
-            }
-
-            for (uint256 i = 0; i < assetVaults.length; i++) {
-                _vaultGlpAttribution[i] += increments[i];
-            }
-            emit CompoundDistributeYield(increments);
-        }
-    }
-
-    // INTERNAL GLP LOGIC
-    // ------------------------------------------------------------------------------------------
-
-    /**
-     * @notice Calculates the GLP token amount owned by a vault.
-     * @param _vaultIdx The index of the vault.
-     * @return _glpToken The amount of GLP token owned by the vault.
-     */
-    function _assetVaultGlpToken(uint256 _vaultIdx) internal view returns (uint256 _glpToken) {
-        uint256 currentEpoch = _getVaultState().epoch;
-        uint256 vaultGlp = LibAggregateVaultUtils.getVaultGlp(_getStorage(), _vaultIdx, currentEpoch);
-        AssetVaultEntry storage assetVault = _getAssetVaultEntries()[_vaultIdx];
-        GlpHandler glpHandler = _getGlpHandler();
-        _glpToken = glpHandler.previewGlpMintBurn(assetVault.token, vaultGlp);
-    }
-
-    /**
-     * @notice Calculates the proportion of GLP attributed to a vault. 100% = 1e18, 10% = 0.1e18.
-     * @param _vaultIdx The index of the vault.
-     * @return _proportion The proportion of GLP attributed to the vault.
-     */
-    function _getVaultGlpAttributeProportion(uint256 _vaultIdx) internal view returns (uint256 _proportion) {
-        uint256[5] memory _vaultGlpAttribution = _getVaultGlpAttribution();
-        uint256 totalGlpAttribution = Solarray.arraySum(_vaultGlpAttribution);
-        if (totalGlpAttribution == 0) return 0;
-        return (_vaultGlpAttribution[_vaultIdx] * 1e18) / totalGlpAttribution;
-    }
-
-    // UTILS
-    // ------------------------------------------------------------------------------------------
-
-    /**
-     * @notice Resets the checkpoint prices for the given number of epochs.
-     * @param _noOfEpochs The number of epochs to reset checkpoint prices for.
-     */
-    function resetCheckpointPrices(uint256 _noOfEpochs) public onlyDelegateCall {
-        INettedPositionTracker.NettedPrices memory assetPrices =
-            INettedPositionTracker.NettedPrices({ stable: 0, eth: 0, btc: 0, link: 0, uni: 0 });
-        mapping(uint256 => INettedPositionTracker.NettedPrices) storage lastNettedPrices = _getLastNettedPrices();
-        for (uint256 i = 0; i < _noOfEpochs; ++i) {
-            lastNettedPrices[i] = assetPrices;
-        }
-    }
-
-    /**
-     * @notice Checks if the netting checkpoint prices are within the tolerance of the current prices.
-     * @dev check netting prices from keeper are ~= current prices.
-     * @param _assetPrices The netting checkpoint asset prices.
-     */
-    function _checkNettingCheckpointPrice(INettedPositionTracker.NettedPrices memory _assetPrices) internal view {
-        INettedPositionTracker.NettedPrices memory currentPrices =
-            LibAggregateVaultUtils.getCurrentPrices(_getStorage());
-        uint256 tolerance = _getNettingPriceTolerance();
-        _assertWithinTolerance(_assetPrices.stable, currentPrices.stable, tolerance);
-        _assertWithinTolerance(_assetPrices.eth, currentPrices.eth, tolerance);
-        _assertWithinTolerance(_assetPrices.btc, currentPrices.btc, tolerance);
-        _assertWithinTolerance(_assetPrices.link, currentPrices.link, tolerance);
-        _assertWithinTolerance(_assetPrices.uni, currentPrices.uni, tolerance);
-    }
-
-    /**
-     * @notice Asserts that the actual value is within the tolerance range of the target value.
-     * @param _actual The actual value.
-     * @param _target The target value.
-     * @param _toleranceBps The tolerance in basis points (1 basis point = 0.01%).
-     */
-    function _assertWithinTolerance(uint256 _actual, uint256 _target, uint256 _toleranceBps) internal pure {
-        require(_toleranceBps <= BIPS, "tolerance must be <= 100%");
-        uint256 lower = (_target * (BIPS - _toleranceBps)) / BIPS;
-        uint256 higher = (_target * (BIPS + _toleranceBps)) / BIPS;
-        require(_actual >= lower && _actual <= higher, "not within tolerance");
-    }
-
-    /**
-     * @notice Executes a delegate call to the specified target with the given data.
-     * @param _target The target address to delegate call.
-     * @param _data The data to be sent as part of the delegate call.
-     * @return ret The returned data from the delegate call.
-     */
-    function _delegatecall(address _target, bytes memory _data) internal returns (bytes memory ret) {
-        bool success;
-        (success, ret) = _target.delegatecall(_data);
-        if (!success) {
-            /// @solidity memory-safe-assembly
-            assembly {
-                let length := mload(ret)
-                let start := add(ret, 0x20)
-                revert(start, length)
-            }
-        }
-        return ret;
-    }
-
-    /**
-     * @notice Returns an empty array of bytes4 signatures.
-     * @return _ret An empty array of bytes4 signatures.
-     */
-    function callbackSigs() external pure returns (bytes4[] memory _ret) {
-        _ret = new bytes4[](0);
+    /// @dev for callbacks
+    function callbackSigs() external pure returns (bytes4[] memory) {
+        bytes4[] memory sigs = new bytes4[](0);
+        return sigs;
     }
 }

@@ -1,7 +1,15 @@
 {
   "component": "Position",
   "main_contract": "Position",
+  "source_entry_count": 16,
   "source_file_count": 16,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Position\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x4a3e49f77a2a5b60682a2d6b8899c7c5211eb646",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396460"
     },
     {
       "chain": "bsc",
@@ -20,7 +30,9 @@
       "address": "0x23aeaf001e5df9d7410ee6c6916f502b7ac8e9d0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396465"
     }
   ]
 }

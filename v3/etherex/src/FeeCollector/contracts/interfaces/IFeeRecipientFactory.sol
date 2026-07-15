@@ -36,4 +36,8 @@ interface IFeeRecipientFactory {
     /// @notice set the treasury address
     /// @param _treasury the address of the treasury
     function setTreasury(address _treasury) external;
+
+    /// @notice set the voter address
+    /// @param _voter the address of the voter
+    function setVoter(address _voter) external;
 }

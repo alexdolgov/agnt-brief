@@ -58,6 +58,4 @@ interface ISportsAMMV2Manager {
     function isSystemTicket(address _ticket) external view returns (bool);
 
     function isSGPTicket(address _ticket) external view returns (bool);
-
-    function isTicketPotentiallyCashoutable(address ticket) external view returns (bool);
 }

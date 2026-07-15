@@ -1,61 +1,6 @@
 # fuji-finance — deployments
 
-55 verified deployment(s) across 25 component(s).
+0 verified deployment(s) across 0 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| ethereum | `0x01267e6b6ec2196c6e21a64a7f3e3211f10cccae` | Flasher | impl | live | no |
-| ethereum | `0x03bd587fe413d59a20f32fc75f31bde1dd1cd6c9` | FujiMapping | impl | inactive | no |
-| ethereum | `0x0ecbcf7a4bae2d2931962dd749a974d3ef76899b` | ProviderFuse3 | impl | inactive | no |
-| ethereum | `0x10bd459b45fe083cb0bbe673066467bf7a760c43` | ProviderAave | impl | inactive | no |
-| ethereum | `0x15d2f1f6e1bc3abfa284698b3337cbf98c9cb64e` | Flasher | impl | live | no |
-| ethereum | `0x17525afdb24d24abff18108e7319b93012f3ad24` | FujiMapping | impl | inactive | no |
-| ethereum | `0x17934d0a9b1007501403cd9ec70f21898655ccba` | ProviderFuse18 | impl | inactive | no |
-| ethereum | `0x1cf24e4ec41da581bee223e1affebb62a5a95484` | VaultETHDAI | impl | live | yes |
-| ethereum | `0x1e06fc0f61c3aaacabb6f016281e569399ba8fe5` | ChainlinkComputedFeed | impl | inactive | no |
-| ethereum | `0x1eede44b91750933c96d2125b6757c4f89e63e20` | FujiAdmin | impl | inactive | no |
-| ethereum | `0x2430ab56fb46bcac05e39aa947d26e8eef4a881a` | AddrMapper | impl | live | yes |
-| ethereum | `0x3067fed80acc37e3f018b9c37181aadc0af9cfb1` | Flasher | impl | live | no |
-| ethereum | `0x30c591b64c39ad8e9f5139521cedb077d27a724a` | Controller | impl | live | no |
-| ethereum | `0x376c0aa9150095cb36adcd472be390d31c6bef8f` | TransparentUpgradeableProxy-2 | proxy | inactive | no |
-| ethereum | `0x3f366802f4e7576fc5daa82890cc6e04c85f3736` | Controller | impl | live | no |
-| ethereum | `0x4186e7fd0a76bdf82cc28a5251cea2bf87bc4172` | MerkleDistributor | impl | inactive | no |
-| ethereum | `0x4c71bdcc2a9069fac036b842de0cf6550757326e` | ProviderFuse6 | impl | inactive | no |
-| ethereum | `0x4cb46032e2790d8ca10be6d0001e8c6362a76ada` | FujiAdmin | impl | inactive | no |
-| ethereum | `0x4f86e118c594c5daf24f1725922bae249ddd79e4` | TransparentUpgradeableProxy | proxy | inactive | no |
-| ethereum | `0x51407a073fb7c703185f47c3fbb1b915678221b8` | MerkleDistributor | impl | inactive | no |
-| ethereum | `0x528f3c5dfac849f51492f4b8b23ed4b20f458f3c` | TransparentUpgradeableProxy-2 | impl | inactive | no |
-| ethereum | `0x529ee84bfe4f37132f5f9599d4cc4ff16ee6d0d2` | MockAddrMapper | impl | inactive | no |
-| ethereum | `0x53032dc4dd5c85efee772b1fe38de05ed27d9cd2` | Fliquidator | impl | live | no |
-| ethereum | `0x53c641d390c6a7b0cb8a3b202e8db12d72bebb60` | ChainlinkComputedFeed | impl | inactive | no |
-| ethereum | `0x54f72175c40c3f4857b18fe539a85ddb92f6d985` | Flasher | impl | live | no |
-| ethereum | `0x5bcadd3d7e4e0cd44b9e34fd865c286a7ed75526` | TransparentUpgradeableProxy | impl | inactive | no |
-| ethereum | `0x63e978f8c647baa71184b9eccb39e0509c09d681` | ProviderCompound | impl | inactive | no |
-| ethereum | `0x68c3dfecc475e51c8c3e67d676cb41d81b84ed83` | Flasher | impl | live | no |
-| ethereum | `0x6e16394cbf840fc599fa3d9e5d1e90949c32a4f5` | ProviderCompound | proxy | inactive | no |
-| ethereum | `0x73af71612aab4d18d55344dba95ea8d6dee78b80` | TransparentUpgradeableProxy | proxy | inactive | no |
-| ethereum | `0x7b28716a339e33b9d42f927196016458aca55947` | Flasher | impl | live | no |
-| ethereum | `0x7d84e2f09a26efbf669616d907321004c4bb4dad` | FujiAdmin | proxy | inactive | no |
-| ethereum | `0x845f591778d05112d4d9709366d4d26f3cae62f5` | Flasher | impl | live | no |
-| ethereum | `0x8601ff6abfa65e1970f95701522bbf5249a4d0a2` | ChainlinkComputedFeedLido | impl | inactive | no |
-| ethereum | `0x8779c084adff0effc54dbd701c21848a1d21bcd7` | VaultETHDAI | impl | inactive | yes |
-| ethereum | `0x8a44888292c570f6ae414ca9ca2d878f5eced83b` | AlphaWhitelist | impl | inactive | no |
-| ethereum | `0x8a9680a599a11fa9cbeb824351417764f2cb80b2` | FujiAdmin | impl | inactive | no |
-| ethereum | `0x8ae7bf329ff6bc5acc187b7b9d6919c95537cd4a` | ProxyAdmin | impl | inactive | no |
-| ethereum | `0xa2d62f8b02225fbfa1cf8bf206c8106bdf4c692b` | VaultETHDAI | proxy | inactive | yes |
-| ethereum | `0xadf849079d415157cbbdb21bb7542b47077734a8` | Claimable | impl | live | yes |
-| ethereum | `0xb24f1011d255a83093776ba8a8c4cd1d4ec3dab7` | Controller | impl | live | no |
-| ethereum | `0xbd59574e9203f5e532a2894a56c31286416c0ac9` | ProviderDYDX | impl | inactive | no |
-| ethereum | `0xbfc244134788584d3272f3994cd779635c4282ba` | ProviderFuse8 | impl | inactive | no |
-| ethereum | `0xc528a2e10cc82b973723a0621fc924d572d24d69` | ProxyAdmin | impl | inactive | no |
-| ethereum | `0xc68e5868a3b74f575956bd1668b77b3f1b2cdc6a` | ProviderIronBank | impl | inactive | no |
-| ethereum | `0xca26d96b45111a130af78d69e1db283975547d67` | ProviderCompound | proxy | inactive | no |
-| ethereum | `0xd0dc4cc10fcf3fee2bf5310c0e4e097b60f097d3` | ProviderCompound | proxy | inactive | no |
-| ethereum | `0xd13e1da292432d06f65479f62d1ef4280125010a` | Flasher | impl | live | no |
-| ethereum | `0xd43e4be9125de772237f0bc9701e5ca3afae6268` | Fliquidator | impl | live | no |
-| ethereum | `0xdc6d91bab56ccc708b4b217148016bc7ca568468` | ProviderCompound | impl | inactive | no |
-| ethereum | `0xe3a2df184c021b8cbdfe2e89f7d3f495473b2be0` | Fliquidator | impl | live | no |
-| ethereum | `0xf3caa27dd9926b391f50849bdfdb8a06fb489b67` | TransparentUpgradeableProxy | proxy | inactive | no |
-| ethereum | `0xf45f46c2c0521c8921447132edcbadb628d3b9d3` | Flasher | impl | live | no |
-| ethereum | `0xf7358a994c7cc37af2116b03ec7b1af190e2cf7c` | ProviderAave | impl | inactive | no |
-| ethereum | `0xfee7a10f9eb16cb1b13d6aa0aab042ddf3c36ad8` | ProviderFuse7 | impl | inactive | no |

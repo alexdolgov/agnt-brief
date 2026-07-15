@@ -1,6 +1,10 @@
+/**
+ *Submitted for verification at polygonscan.com on 2022-03-05
+*/
+
 // Sources flattened with hardhat v2.8.4 https://hardhat.org
 
-// File @openzeppelin/contracts/GSN/Context.sol@v2.5.1
+// File @openzeppelin/contracts/GSN/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -31,7 +35,7 @@ contract Context {
 }
 
 
-// File @openzeppelin/contracts/ownership/Ownable.sol@v2.5.1
+// File @openzeppelin/contracts/ownership/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -111,7 +115,7 @@ contract Ownable is Context {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/IERC20.sol@v2.5.1
+// File @openzeppelin/contracts/token/ERC20/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -191,7 +195,7 @@ interface IERC20 {
 }
 
 
-// File @openzeppelin/contracts/math/SafeMath.sol@v2.5.1
+// File @openzeppelin/contracts/math/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -351,7 +355,7 @@ library SafeMath {
 }
 
 
-// File @openzeppelin/contracts/utils/Address.sol@v2.5.1
+// File @openzeppelin/contracts/utils/[email protected]
 
 pragma solidity ^0.5.5;
 
@@ -425,7 +429,7 @@ library Address {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/SafeERC20.sol@v2.5.1
+// File @openzeppelin/contracts/token/ERC20/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -502,7 +506,7 @@ library SafeERC20 {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/ERC20.sol@v2.5.1
+// File @openzeppelin/contracts/token/ERC20/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -734,7 +738,7 @@ contract ERC20 is Context, IERC20 {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/ERC20Detailed.sol@v2.5.1
+// File @openzeppelin/contracts/token/ERC20/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -790,7 +794,7 @@ contract ERC20Detailed is IERC20 {
 }
 
 
-// File @openzeppelin/contracts/utils/ReentrancyGuard.sol@v2.5.1
+// File @openzeppelin/contracts/utils/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -858,7 +862,7 @@ interface IPriceSource {
 }
 
 
-// File @openzeppelin/contracts/introspection/IERC165.sol@v2.5.1
+// File @openzeppelin/contracts/introspection/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -884,7 +888,7 @@ interface IERC165 {
 }
 
 
-// File @openzeppelin/contracts/token/ERC721/IERC721.sol@v2.5.1
+// File @openzeppelin/contracts/token/ERC721/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -939,7 +943,7 @@ contract IERC721 is IERC165 {
 }
 
 
-// File @openzeppelin/contracts/token/ERC721/IERC721Receiver.sol@v2.5.1
+// File @openzeppelin/contracts/token/ERC721/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -968,7 +972,7 @@ contract IERC721Receiver {
 }
 
 
-// File @openzeppelin/contracts/drafts/Counters.sol@v2.5.1
+// File @openzeppelin/contracts/drafts/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -1008,7 +1012,7 @@ library Counters {
 }
 
 
-// File @openzeppelin/contracts/introspection/ERC165.sol@v2.5.1
+// File @openzeppelin/contracts/introspection/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -1062,7 +1066,7 @@ contract ERC165 is IERC165 {
 }
 
 
-// File @openzeppelin/contracts/token/ERC721/ERC721.sol@v2.5.1
+// File @openzeppelin/contracts/token/ERC721/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -1430,7 +1434,7 @@ contract ERC721 is Context, ERC165, IERC721 {
 }
 
 
-// File @openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol@v2.5.1
+// File @openzeppelin/contracts/token/ERC721/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -1446,7 +1450,7 @@ contract IERC721Enumerable is IERC721 {
 }
 
 
-// File @openzeppelin/contracts/token/ERC721/ERC721Enumerable.sol@v2.5.1
+// File @openzeppelin/contracts/token/ERC721/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -1648,7 +1652,7 @@ contract ERC721Enumerable is Context, ERC165, ERC721, IERC721Enumerable {
 }
 
 
-// File @openzeppelin/contracts/token/ERC721/IERC721Metadata.sol@v2.5.1
+// File @openzeppelin/contracts/token/ERC721/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -1663,7 +1667,7 @@ contract IERC721Metadata is IERC721 {
 }
 
 
-// File @openzeppelin/contracts/token/ERC721/ERC721Metadata.sol@v2.5.1
+// File @openzeppelin/contracts/token/ERC721/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -1794,7 +1798,7 @@ contract ERC721Metadata is Context, ERC165, ERC721, IERC721Metadata {
 }
 
 
-// File @openzeppelin/contracts/token/ERC721/ERC721Full.sol@v2.5.1
+// File @openzeppelin/contracts/token/ERC721/[email protected]
 
 pragma solidity ^0.5.0;
 
@@ -1839,7 +1843,7 @@ contract VaultNFTv4 is ERC721Full {
 }
 
 
-// File hardhat/console.sol@v2.8.4
+// File hardhat/[email protected]
 
 // SPDX-License-Identifier: MIT
 pragma solidity >= 0.4.22 <0.9.0;
@@ -3444,7 +3448,7 @@ contract crosschainStablecoinSlim is ReentrancyGuard, VaultNFTv4 {
     ) public VaultNFTv4(name, symbol, baseURI) {
         assert(ethPriceSourceAddress != address(0));
         assert(minimumCollateralPercentage != 0);
-        //  | decimals start here
+
         closingFee = 50; // 0.5%
 
         ethPriceSource = IPriceSource(ethPriceSourceAddress);
@@ -3466,6 +3470,13 @@ contract crosschainStablecoinSlim is ReentrancyGuard, VaultNFTv4 {
         require(ownerOf(vaultID) == msg.sender, "Vault is not owned by you");
         _;
     }
+
+    modifier vaultExists(uint256 vaultID) {
+        require(_exists(vaultID), "Vault does not exist");
+        _;
+    }
+
+
 
     function getDebtCeiling() public view returns (uint256) {
         return mai.balanceOf(address(this));
@@ -3499,7 +3510,7 @@ contract crosschainStablecoinSlim is ReentrancyGuard, VaultNFTv4 {
         uint256 collateralValue = _collateral.mul(getEthPriceSource()).mul(
             10**(uint256(mai.decimals()).sub(uint256(collateral.decimals())))
         );
-
+        
         assert(collateralValue >= _collateral);
 
         uint256 debtValue = _debt.mul(getTokenPriceSource());
@@ -3507,14 +3518,14 @@ contract crosschainStablecoinSlim is ReentrancyGuard, VaultNFTv4 {
         assert(debtValue >= _debt);
 
         uint256 collateralValueTimes100 = collateralValue.mul(100);
-
+        
         assert(collateralValueTimes100 > collateralValue);
 
         return (collateralValueTimes100, debtValue);
     }
 
     function isValidCollateral(uint256 collateral, uint256 debt)
-        private
+        public
         view
         returns (bool)
     {
@@ -3561,7 +3572,7 @@ contract crosschainStablecoinSlim is ReentrancyGuard, VaultNFTv4 {
         emit DestroyVault(vaultID);
     }
 
-    function depositCollateral(uint256 vaultID, uint256 amount) external {
+    function depositCollateral(uint256 vaultID, uint256 amount) external vaultExists(vaultID) {
         collateral.safeTransferFrom(msg.sender, address(this), amount);
 
         uint256 newCollateral = vaultCollateral[vaultID].add(amount);
@@ -3617,6 +3628,11 @@ contract crosschainStablecoinSlim is ReentrancyGuard, VaultNFTv4 {
             "Borrow would put vault below minimum collateral percentage"
         );
 
+        require(
+            (vaultDebt[vaultID]).add(amount) >= minDebt, 
+            "Vault debt can't be under minDebt"
+        );
+
         vaultDebt[vaultID] = newDebt;
 
         // mai
@@ -3625,13 +3641,14 @@ contract crosschainStablecoinSlim is ReentrancyGuard, VaultNFTv4 {
         emit BorrowToken(vaultID, amount);
     }
 
-    function payBackToken(uint256 vaultID, uint256 amount) external {
+    function payBackToken(uint256 vaultID, uint256 amount) external vaultExists(vaultID) {
         require(mai.balanceOf(msg.sender) >= amount, "Token balance too low");
 
         require(
             vaultDebt[vaultID] >= amount,
             "Vault debt less than amount to pay back"
         );
+
         require(
             (vaultDebt[vaultID]).sub(amount) >= minDebt
                    ||
@@ -3652,6 +3669,7 @@ contract crosschainStablecoinSlim is ReentrancyGuard, VaultNFTv4 {
 
         totalBorrowed = totalBorrowed.sub(amount);
         emit PayBackToken(vaultID, amount, _closingFee);
+
     }
 
     function getPaid() public nonReentrant {
@@ -3725,9 +3743,9 @@ contract crosschainStablecoinSlim is ReentrancyGuard, VaultNFTv4 {
     function checkCollateralPercentage(uint256 vaultID)
         public
         view
+        vaultExists(vaultID)
         returns (uint256)
     {
-        require(_exists(vaultID), "Vault does not exist");
 
         if (vaultCollateral[vaultID] == 0 || vaultDebt[vaultID] == 0) {
             return 0;
@@ -3743,8 +3761,7 @@ contract crosschainStablecoinSlim is ReentrancyGuard, VaultNFTv4 {
         return collateralValueTimes100.div(debtValue);
     }
 
-    function checkLiquidation(uint256 vaultID) public view returns (bool) {
-        require(_exists(vaultID), "Vault does not exist");
+    function checkLiquidation(uint256 vaultID) public view vaultExists(vaultID) returns (bool) {
 
         if (vaultCollateral[vaultID] == 0 || vaultDebt[vaultID] == 0) {
             return false;
@@ -3767,8 +3784,7 @@ contract crosschainStablecoinSlim is ReentrancyGuard, VaultNFTv4 {
         }
     }
 
-    function liquidateVault(uint256 vaultID) external {
-        require(_exists(vaultID), "Vault does not exist");
+    function liquidateVault(uint256 vaultID) external  vaultExists(vaultID) {
         require(
             stabilityPool == address(0) || msg.sender == stabilityPool,
             "liquidation is disabled for public"
@@ -3814,21 +3830,14 @@ contract crosschainStablecoinSlim is ReentrancyGuard, VaultNFTv4 {
             halfDebt.mul(closingFee).mul(getTokenPriceSource())
         ).div(getEthPriceSource().mul(10000));
 
-        if(halfDebt==debtValue) {
-            vaultCollateral[vaultID] = 0;
-            vaultCollateral[treasury] = vaultCollateral[treasury].add(_closingFee);
-            // let liquidator take the collateral
-            maticDebt[msg.sender] = maticDebt[msg.sender].add(maticExtract);
-        } else{
-            vaultCollateral[vaultID] = vaultCollateral[vaultID].sub(_closingFee);
-            vaultCollateral[treasury] = vaultCollateral[treasury].add(_closingFee);
+        vaultCollateral[vaultID] = vaultCollateral[vaultID].sub(_closingFee);
+        vaultCollateral[treasury] = vaultCollateral[treasury].add(_closingFee);
 
-            // deduct the amount from the vault's collateral
-            vaultCollateral[vaultID] = vaultCollateral[vaultID].sub(maticExtract);
+        // deduct the amount from the vault's collateral
+        vaultCollateral[vaultID] = vaultCollateral[vaultID].sub(maticExtract);
 
-            // let liquidator take the collateral
-            maticDebt[msg.sender] = maticDebt[msg.sender].add(maticExtract);
-        }
+        // let liquidator take the collateral
+        maticDebt[msg.sender] = maticDebt[msg.sender].add(maticExtract);
 
         emit LiquidateVault(
             vaultID,

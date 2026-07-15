@@ -1,71 +1,106 @@
 # Agentic Audit Brief: Swerve
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Swerve (`swerve`)
+- Website: [https://swerve.fi/](https://swerve.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-04T11:05:46.649Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
-- Contract surface: 6 unique implementations (9 raw deployments)
+- Contract surface: 14 unique implementations (14 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $305,074.76
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Dexs. Structurally: 4 project-authored contract(s) across 1 chain(s); built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Swerve. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
+The pinned logic-topography run contains 11 contract row(s) across ethereum. Structural roles: 5 supporting, 4 unclassified, 2 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 11
+- Structural roles: supporting (5), unclassified (4), core (2)
+- Contract kinds: unclassified (7), contract (4)
+- Detected standards: none
+- Frameworks: openzeppelin (1)
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 16; live-surface contracts included: 9 (5 live, 4 unknown).
-- Excluded by liveness: 7 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 11; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 1/2 (50.0%)
-- Deployed-live implementations: 2 of 6 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 1/3
-- Verified + Unaudited implementations: 2
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 14 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (8 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 3
-- Unique implementations: 6
-- Raw deployments: 9
+- Unverified implementations: 0
+- Unique implementations: 14
+- Raw deployments: 14
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 1
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2020-09 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
-- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 33.3% | 2020-09 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Vyper_contract | unknown | ethereum | n/a | [`0x329239...f9f88d`](./contracts/ethereum-1/0x329239599afb305da0a2ec69c58f8a6697f9f88d/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (11)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Vyper_contract | unknown | ethereum | n/a | 4 deployments: ethereum [`0x2c988c...f67974`](./contracts/ethereum-1/0x2c988c3974ad7e604e276ae0294a7228def67974/); ethereum `0x77c6e4...83a059`; ethereum `0xb4d0c9...6b4bfa`; ethereum `0xb8baa0...cbd433` | ⚠️ Unaudited |
-| YPoolDelegator | unknown | ethereum | n/a | [`0xe9f8ca...a602b1`](./contracts/ethereum-1/0xe9f8ca518756911ba8ca01bcb571e12ce8a602b1/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| APYOracle | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-257696 | `0xaa8d5f...7d6de2` | ⚠️ Unaudited |
+| Timelock | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257699 | `0xb902a1...22bbdf` | ⚠️ Unaudited |
+| Vyper_contract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257692 | `0x0c4d90...4ae32c` | ⚠️ Unaudited |
+| Vyper_contract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257693 | `0x2638d2...11a95e` | ⚠️ Unaudited |
+| Vyper_contract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257694 | `0x2c988c...f67974` | ⚠️ Unaudited |
+| Vyper_contract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | ethereum | unit-257701 | `0x329239...f9f88d` | ⚠️ Unaudited |
+| Vyper_contract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-257695 | `0x77c6e4...83a059` | ⚠️ Unaudited |
+| Vyper_contract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-257702 | `0xa746c6...085431` | ⚠️ Unaudited |
+| Vyper_contract | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | ethereum | unit-257697 | `0xb4d0c9...6b4bfa` | ⚠️ Unaudited |
+| Vyper_contract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-257698 | `0xb8baa0...cbd433` | ⚠️ Unaudited |
+| Vyper_contract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-257700 | `0xe5e7dd...bd7f02` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -83,17 +118,40 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x7e12d7...5f49b4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xba08a5...fb9979` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc1aaeb...6af74e` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0x6b1754...271d0f` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0xa0b869...06eb48` | ❓ Unverified |
+| UnnamedContract | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | n/a | `0xdac17f...831ec7` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Swerve Finance Audit - by Cryptic Labs v3.pdf](https://github.com/crypticlabs/swerve-audit-report/blob/master/Swerve%20Finance%20Audit%20-%20by%20Cryptic%20Labs%20v3.pdf) | unknown | Audit | 2020-09 | stale | Direct | contract_name | 1 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Swerve Finance Audit - by Cryptic Labs v3.pdf](https://github.com/crypticlabs/swerve-audit-report/blob/master/Swerve%20Finance%20Audit%20-%20by%20Cryptic%20Labs%20v3.pdf) | unknown | Audit | 2020-09 | stale | Direct | n/a | no match | 0 | 0 | 0 | 10 | n/a |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [13958] Swerve Finance Audit - by Cryptic Labs v3.pdf — no match: No reason recorded
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| Swerve Finance Audit - by Cryptic Labs v3.pdf | APYoracle | unmatched — not counted | — | — | no |
+| Swerve Finance Audit - by Cryptic Labs v3.pdf | ERC20CRV | unmatched — not counted | — | — | no |
+| Swerve Finance Audit - by Cryptic Labs v3.pdf | ERC20LP | unmatched — not counted | — | — | no |
+| Swerve Finance Audit - by Cryptic Labs v3.pdf | GaugeController | unmatched — not counted | — | — | no |
+| Swerve Finance Audit - by Cryptic Labs v3.pdf | LiquidityGauge | unmatched — not counted | — | — | no |
+| Swerve Finance Audit - by Cryptic Labs v3.pdf | Minter | unmatched — not counted | — | — | no |
+| Swerve Finance Audit - by Cryptic Labs v3.pdf | PoolProxy | unmatched — not counted | — | — | no |
+| Swerve Finance Audit - by Cryptic Labs v3.pdf | VotingEscrow | unmatched — not counted | — | — | no |
+| Swerve Finance Audit - by Cryptic Labs v3.pdf | YPoolDelegator | unmatched — not counted | — | — | no |
+| Swerve Finance Audit - by Cryptic Labs v3.pdf | ZapDelegator | unmatched — not counted | — | — | no |
 
 ## Coverage Gaps
 
@@ -105,18 +163,24 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 11 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 6 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 10 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
-- Match method counts: contract_name=1
+- Match method counts: n/a
+
+Zero-match audit list:
+
+- [13958] Swerve Finance Audit - by Cryptic Labs v3.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

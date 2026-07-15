@@ -12,16 +12,11 @@ import {IInterchainSecurityModule} from "../../interfaces/IInterchainSecurityMod
 import {Message} from "../../libs/Message.sol";
 import {TypeCasts} from "../../libs/TypeCasts.sol";
 import {EnumerableMapExtended} from "../../libs/EnumerableMapExtended.sol";
-import {PackageVersioned} from "../../PackageVersioned.sol";
 
 /**
  * @title DomainRoutingIsm
  */
-contract DomainRoutingIsm is
-    AbstractRoutingIsm,
-    OwnableUpgradeable,
-    PackageVersioned
-{
+contract DomainRoutingIsm is AbstractRoutingIsm, OwnableUpgradeable {
     using EnumerableMapExtended for EnumerableMapExtended.UintToBytes32Map;
     using Message for bytes;
     using TypeCasts for bytes32;
@@ -90,10 +85,8 @@ contract DomainRoutingIsm is
         uint32 origin
     ) public view virtual returns (IInterchainSecurityModule) {
         (bool contained, bytes32 _module) = _modules.tryGet(origin);
-        if (contained) {
-            return IInterchainSecurityModule(_module.bytes32ToAddress());
-        }
-        revert(_originNotFoundError(origin));
+        require(contained, _originNotFoundError(origin));
+        return IInterchainSecurityModule(_module.bytes32ToAddress());
     }
 
     // ============ Public Functions ============

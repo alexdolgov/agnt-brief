@@ -22,7 +22,7 @@ import { Errors } from "src/utils/Errors.sol";
  * It implements common functionalities for reward distribution, including calculating rewards per token,
  * tracking user rewards, and handling stake-related operations.
  * Inherited by rewarder contracts, such as MainRewarder and ExtraRewarder.
- * The contract is inspired by the Convex contract but uses block-based duration instead of timestamp-based duration.
+ * The contract is inspired by the Convex contract.
  */
 abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
     using SafeERC20 for IERC20;
@@ -30,8 +30,11 @@ abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
     /// @notice The minimum duration for recovering tokens (1 year).
     uint256 public constant MINIMUM_RECOVER_DURATION = 31_536_000;
 
-    /// @notice The duration of the reward period in blocks.
-    uint256 public immutable durationInBlock;
+    /// @notice The version of the rewarder contract to identify the functionality.
+    uint256 public constant CONTRACT_VERSION = 1;
+
+    /// @notice The duration of the reward period in seconds.
+    uint256 public immutable duration;
 
     ///  @notice It is used to determine if the new rewards should be distributed immediately or queued for later. If
     /// the ratio of current rewards to the sum of new and queued rewards is less than newRewardRatio, the new rewards
@@ -44,14 +47,14 @@ abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
     /// @notice The address of the token to be distributed as rewards.
     address public immutable rewardToken;
 
-    /// @notice The block number when the current reward period ends.
-    uint256 public periodInBlockFinish;
+    /// @notice The timestamp when the current reward period ends.
+    uint256 public periodFinish;
 
-    /// @notice The rate of reward distribution per block.
+    /// @notice The rate of reward distribution per second.
     uint256 public rewardRate;
 
-    /// @notice The block number when rewards were last updated.
-    uint256 public lastUpdateBlock;
+    /// @notice The timestamp when rewards were last updated.
+    uint256 public lastUpdateTime;
 
     /// @notice The amount of rewards distributed per staked token stored.
     uint256 public rewardPerTokenStored;
@@ -84,18 +87,18 @@ abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
      * @param _systemRegistry Address of the system registry.
      * @param _rewardToken Address of the reward token.
      * @param _newRewardRatio The new reward rate.
-     * @param _durationInBlock The duration of the reward period in blocks.
+     * @param _duration The duration of the reward period in seconds.
      * @param _rewardRole Role that controls role based functions in Rewarder.
      */
     constructor(
         ISystemRegistry _systemRegistry,
         address _rewardToken,
         uint256 _newRewardRatio,
-        uint256 _durationInBlock,
+        uint256 _duration,
         bytes32 _rewardRole
     ) SecurityBase(address(_systemRegistry.accessController())) {
         Errors.verifyNotZero(_rewardToken, "_rewardToken");
-        Errors.verifyNotZero(_durationInBlock, "_durationInBlock");
+        Errors.verifyNotZero(_duration, "_duration");
         Errors.verifyNotZero(_newRewardRatio, "_newRewardRatio");
         Errors.verifyNotZero(_rewardRole, "_rewardRole");
 
@@ -105,7 +108,7 @@ abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
         }
         rewardToken = _rewardToken;
         newRewardRatio = _newRewardRatio;
-        durationInBlock = _durationInBlock;
+        duration = _duration;
         rewardRole = _rewardRole;
     }
 
@@ -126,8 +129,8 @@ abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
     ) internal {
         uint256 earnedRewards = 0;
         rewardPerTokenStored = rewardPerToken();
-        lastUpdateBlock = lastBlockRewardApplicable();
-
+        lastUpdateTime = lastTimeRewardApplicable();
+        //slither-disable-next-line timestamp
         if (rewardPerTokenStored > 0) {
             if (account != address(0)) {
                 earnedRewards = earned(account);
@@ -136,12 +139,13 @@ abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
             }
         }
 
-        emit UserRewardUpdated(account, earnedRewards, rewardPerTokenStored, lastUpdateBlock);
+        emit UserRewardUpdated(account, earnedRewards, rewardPerTokenStored, lastUpdateTime);
     }
 
     /// @inheritdoc IBaseRewarder
-    function lastBlockRewardApplicable() public view returns (uint256) {
-        return block.number < periodInBlockFinish ? block.number : periodInBlockFinish;
+    function lastTimeRewardApplicable() public view returns (uint256) {
+        //slither-disable-next-line timestamp
+        return block.timestamp < periodFinish ? block.timestamp : periodFinish;
     }
 
     /// @inheritdoc IBaseRewarder
@@ -151,7 +155,7 @@ abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
             return rewardPerTokenStored;
         }
 
-        return rewardPerTokenStored + ((lastBlockRewardApplicable() - lastUpdateBlock) * rewardRate * 1e18 / total);
+        return rewardPerTokenStored + ((lastTimeRewardApplicable() - lastUpdateTime) * rewardRate * 1e18 / total);
     }
 
     /**
@@ -161,7 +165,7 @@ abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
      * the total supply of the staked tokens, the rewards per token and the last reward rate
      * the user has been paid at. The reward rate is determined by the `rewardPerToken`
      * function and is a measure of the amount of rewards distributed per staked token
-     * per block.
+     * per second.
      *
      * The amount of earned rewards is calculated as follows:
      * - First, it calculates the difference between the current reward per token and
@@ -193,13 +197,13 @@ abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
         uint256 startingNewRewards = newRewards;
 
         newRewards += startingQueuedRewards;
-
-        if (block.number >= periodInBlockFinish) {
+        //slither-disable-start timestamp
+        if (block.timestamp >= periodFinish) {
             notifyRewardAmount(newRewards);
             queuedRewards = 0;
         } else {
-            uint256 elapsedBlock = block.number - (periodInBlockFinish - durationInBlock);
-            uint256 currentAtNow = rewardRate * elapsedBlock;
+            uint256 elapsedTime = block.timestamp - (periodFinish - duration);
+            uint256 currentAtNow = rewardRate * elapsedTime;
             uint256 queuedRatio = currentAtNow * 1000 / newRewards;
 
             if (queuedRatio < newRewardRatio) {
@@ -209,6 +213,7 @@ abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
                 queuedRewards = newRewards;
             }
         }
+        //slither-disable-end timestamp
 
         emit QueuedRewardsUpdated(startingQueuedRewards, startingNewRewards, queuedRewards);
 
@@ -219,27 +224,28 @@ abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
     /**
      * @notice Notifies the contract about the amount of reward tokens to be distributed.
      * @param reward The amount of reward tokens to be distributed.
-     * @dev The function updates the rewardRate, lastUpdateBlock, periodInBlockFinish, and historicalRewards.
-     *      It calculates the remaining reward based on the current block number and adjusts the reward rate
+     * @dev The function updates the rewardRate, lastUpdateTime, periodFinish, and historicalRewards.
+     *      It calculates the remaining reward based on the current timestamp and adjusts the reward rate
      *      accordingly.
      *
-     *      If the current block number is within the reward period, the remaining reward is added to the reward queue
+     *      If the current timestamp is within the reward period, the remaining reward is added to the reward queue
      *      and will be distributed gradually over the remaining duration.
-     *      If the current block number exceeds the reward period, the remaining reward is distributed immediately.
+     *      If the current timestamp exceeds the reward period, the remaining reward is distributed immediately.
      */
     function notifyRewardAmount(
         uint256 reward
     ) internal {
+        //slither-disable-start timestamp
         historicalRewards += reward;
 
         // Correctly calculate leftover reward when totalSupply() is 0.
         if (totalSupply() == 0) {
-            if (lastUpdateBlock < periodInBlockFinish) {
+            if (lastUpdateTime < periodFinish) {
                 // slither-disable-next-line divide-before-multiply
-                reward += (periodInBlockFinish - lastUpdateBlock) * rewardRate;
+                reward += (periodFinish - lastUpdateTime) * rewardRate;
             }
-        } else if (block.number < periodInBlockFinish) {
-            uint256 remaining = periodInBlockFinish - block.number;
+        } else if (block.timestamp < periodFinish) {
+            uint256 remaining = periodFinish - block.timestamp;
 
             // slither-disable-next-line divide-before-multiply
             uint256 leftover = remaining * rewardRate;
@@ -249,15 +255,16 @@ abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
         _updateReward(address(0));
 
         // slither-disable-next-line divide-before-multiply
-        rewardRate = reward / durationInBlock;
-        // If `reward` < `durationInBlock`, it will result in a `rewardRate` of 0, which we want to prevent.
+        rewardRate = reward / duration;
+        // If `reward` < `duration`, it will result in a `rewardRate` of 0, which we want to prevent.
         if (rewardRate <= 0) revert Errors.ZeroAmount();
 
         currentRewards = reward;
-        lastUpdateBlock = block.number;
-        periodInBlockFinish = block.number + durationInBlock;
+        lastUpdateTime = block.timestamp;
+        periodFinish = block.timestamp + duration;
 
-        emit RewardAdded(reward, rewardRate, lastUpdateBlock, periodInBlockFinish, historicalRewards);
+        emit RewardAdded(reward, rewardRate, lastUpdateTime, periodFinish, historicalRewards);
+        //slither-disable-end timestamp
     }
 
     /**
@@ -326,7 +333,7 @@ abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
         uint256 reward = earned(account);
         (IAccToke accToke, address tokeAddress) = (systemRegistry.accToke(), address(systemRegistry.toke()));
 
-        // slither-disable-next-line incorrect-equality
+        // slither-disable-next-line incorrect-equality,timestamp
         if (reward == 0) return;
 
         // if NOT toke, or staking is turned off (by duration = 0), just send reward back
@@ -388,7 +395,8 @@ abstract contract AbstractRewarder is IBaseRewarder, SecurityBase {
         if (recipient == address(this)) revert Errors.InvalidAddress(recipient);
 
         if (!canTokenBeRecovered(token)) revert Errors.AssetNotAllowed(token);
-        if (block.number < lastUpdateBlock + MINIMUM_RECOVER_DURATION && token == rewardToken) {
+        //slither-disable-next-line timestamp
+        if (block.timestamp < lastUpdateTime + MINIMUM_RECOVER_DURATION && token == rewardToken) {
             revert RecoverDurationPending();
         }
 

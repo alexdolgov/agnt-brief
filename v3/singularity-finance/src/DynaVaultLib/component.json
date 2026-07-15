@@ -1,12 +1,18 @@
 {
   "component": "DynaVaultLib",
   "main_contract": "DynaVaultLib",
+  "source_entry_count": 20,
   "source_file_count": 20,
-  "deployment_count": 8,
-  "audited": true,
-  "audits_covering": [
-    "https://paladinsec.co/projects/singularitydao"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DynaVaultLib\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
@@ -14,63 +20,9 @@
       "address": "0x3b94afa809b113ef118c6d4ffc009fdf1a51ee08",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x4c3df500989df0f6670b99018811b94d591cc5a0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x6c331b1f8028a2b9cee2fc83169acc26e6a2e7c5",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x8c38cc2e23cac44640d260cf45b864e8da1d8a22",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xaee26e4806acebf827a6bfc85a855d3dc6b74adc",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xbde3a6a26eb44701d3874d67ea9530bc6c084399",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xbec6da78d6102b7a1542887357099f8214366014",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xfece3c717046e101997ca0351bb1698203888597",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,44 +1,84 @@
 # Agentic Audit Brief: Sonic Gateway
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 2 (0 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Sonic Gateway (`sonic-gateway`)
 - Website: [https://gateway.soniclabs.com/ethereum/sonic/s](https://gateway.soniclabs.com/ethereum/sonic/s)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:55.769Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-1cbb
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: sonic
-- Contract surface: 11 unique implementations (32 raw deployments)
+- Contract surface: 4 unique implementations (4 raw deployments)
+- Coverage basis: 0/3 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $35,594,379.80
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Canonical Bridge. Structurally: 11 project-authored contract(s) across 1 chain(s); role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Sonic Gateway. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Contracts are linked by 2 cross-contract reference(s). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 3 contract row(s) across sonic. Structural roles: 3 supporting. 2 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 3
+- Structural roles: supporting (3)
+- Contract kinds: contract (3)
+- Detected standards: erc1967proxy (2)
+- Frameworks: openzeppelin (2)
+- Upgradeable-pattern rows: 2
+
+## Fork Analysis
+
+0 of 4 contracts are derived from known codebases. 4 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0xff4cd8...c180f6`, chain 146)
+- ERC1967Proxy (`0x1d3c99...176bb7`, chain 146)
+- ERC1967Proxy (`0x9ef762...c895b3`, chain 146)
+- MessageBus (`0xb5b371...925308`, chain 146)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 53; live-surface contracts included: 23 (23 live, 0 unknown).
-- Excluded by liveness: 30 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 4/4 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/11 (0.0%)
-- Deployed-live implementations: 11 of 11 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/11
-- Verified + Unaudited implementations: 11
+- Coverage of address-book-owned deployed-live implementations: 0/3 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 4 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
+- Deployed-live implementations: 4 of 4 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/3
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 11
-- Raw deployments: 32
+- Unverified implementations: 1
+- Unique implementations: 4
+- Raw deployments: 4
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -57,21 +97,13 @@ The protocol comprises 5 functional families. Contracts are linked by 2 cross-co
 
 - None
 
-### ⚠️ Verified + Unaudited (11)
+### ⚠️ Verified + Unaudited (3)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Bridge | unknown | sonic | n/a | 2 deployments: sonic [`0x0c3443...b4322d`](./contracts/sonic-146/0x0c34438efe0e13ad2a64e9ced14bf6bb58b4322d/); sonic `0x9ef762...c895b3` | ⚠️ Unaudited |
-| Liquidator | unknown | sonic | n/a | 2 deployments: sonic [`0x332a62...f9a926`](./contracts/sonic-146/0x332a6211b594fefed5a5d779e51dacd145f9a926/); sonic `0xd8c562...558402` | ⚠️ Unaudited |
-| MessageBus | operational_periphery | sonic | n/a | [`0xb5b371...925308`](./contracts/sonic-146/0xb5b371b75f9850ddd6ccb6c436db54972a925308/) | ⚠️ Unaudited |
-| MintedERC20 | unknown | sonic | n/a | 14 deployments: sonic [`0x0fdbce...4be3fd`](./contracts/sonic-146/0x0fdbce271bea0d9819034cd09021e0bbe94be3fd/); sonic `0x2fb960...e2eea1`; sonic `0x48540d...6fc335`; sonic `0x53f753...81e698`; sonic `0x616478...8f6194`; sonic `0x6c7d5e...f354f9`; sonic `0x7cb451...e8edb3`; sonic `0x7fff4c...ccd270`; sonic `0x8f1cbc...c6544c`; sonic `0x9cacb5...7e8c6b`; sonic `0xb026e4...8269fd`; sonic `0xb5f0ed...186fac`; sonic `0xc6915d...38030c`; sonic `0xf1ef7d...71a74b` | ⚠️ Unaudited |
-| MintedERC20 | unknown | sonic | n/a | 2 deployments: sonic [`0x50c42d...f2634b`](./contracts/sonic-146/0x50c42deacd8fc9773493ed674b675be577f2634b/); sonic `0x9605cc...abf386` | ⚠️ Unaudited |
-| NativeTokenAdapter | unknown | sonic | n/a | 2 deployments: sonic [`0x4c5683...ad6c6c`](./contracts/sonic-146/0x4c5683a9ede3c8b4fb5ad2e980bbf88652ad6c6c/); sonic `0x6d9d62...e91a1e` | ⚠️ Unaudited |
-| ProxyAdmin | unknown | sonic | n/a | [`0x90409d...874be3`](./contracts/sonic-146/0x90409d5b57e77ca394167b781cfc79a2a0874be3/) | ⚠️ Unaudited |
-| TetherTokenAdapter | unknown | sonic | n/a | 2 deployments: sonic [`0x188042...53d4e4`](./contracts/sonic-146/0x1880425307124ce875aac3e9eb47b5a87453d4e4/); sonic `0x667e06...aa304a` | ⚠️ Unaudited |
-| TetherTokenV2 | unknown | sonic | n/a | 2 deployments: sonic [`0x604782...a5eaf9`](./contracts/sonic-146/0x6047828dc181963ba44974801ff68e538da5eaf9/); sonic `0xc80268...252fad` | ⚠️ Unaudited |
-| TokenPairs | unknown | sonic | n/a | 2 deployments: sonic [`0x134e4c...00ba94`](./contracts/sonic-146/0x134e4c207ad5a13549de1ebf8d43c1f49b00ba94/); sonic `0xabf0c9...5ebf25` | ⚠️ Unaudited |
-| UpdateManager | governance | sonic | n/a | 2 deployments: sonic [`0x1d3c99...176bb7`](./contracts/sonic-146/0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7/); sonic `0x7160ec...e4ee53` | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Bridge | operational_periphery | project_anchor | own_supporting | 1 | sonic | unit-255286 | `0x9ef762...c895b3` | ⚠️ Unaudited |
+| MessageBus | operational_periphery | project_anchor | own_supporting | 0 | sonic | unit-255284 | `0xb5b371...925308` | ⚠️ Unaudited |
+| UpdateManager | governance | project_anchor | own_supporting | 1 | sonic | unit-255287 | `0x1d3c99...176bb7` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,33 +117,71 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | sonic | unit-255285 | `0xff4cd8...c180f6` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [fantom-audit-first.pdf](https://github.com/Fantom-foundation/tokensale/blob/master/audits/fantom-audit-first.pdf) | unknown | Audit | 2018-06 | stale | Direct | n/a | 0 | n/a |
-| [fantom-audit-second.pdf](https://github.com/Fantom-foundation/tokensale/blob/master/audits/fantom-audit-second.pdf) | unknown | Audit | 2018-06 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [fantom-audit-first.pdf](https://github.com/Fantom-foundation/tokensale/blob/master/audits/fantom-audit-first.pdf) | unknown | Audit | 2018-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 9 | high |
+| [fantom-audit-second.pdf](https://github.com/Fantom-foundation/tokensale/blob/master/audits/fantom-audit-second.pdf) | unknown | Audit | 2018-06 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 9 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [11677] fantom-audit-first.pdf — no match: All contracts are in FantomToken.sol, listed explicitly in the Audit Summary section.
+- [11678] fantom-audit-second.pdf — no match: All contracts are in FantomToken.sol; date is June 2018 (month only, last day used).
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| fantom-audit-first.pdf | SafeMath | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-first.pdf | Utils | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-first.pdf | Owned | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-first.pdf | Wallet | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-first.pdf | ERC20Interface | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-first.pdf | ERC20Token | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-first.pdf | LockSlots | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-first.pdf | FantomIcoDates | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-first.pdf | FantomToken | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-second.pdf | SafeMath | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-second.pdf | Utils | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-second.pdf | Owned | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-second.pdf | Wallet | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-second.pdf | ERC20Interface | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-second.pdf | ERC20Token | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-second.pdf | LockSlots | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-second.pdf | FantomIcoDates | unmatched — not counted | — | listed in scope | no |
+| fantom-audit-second.pdf | FantomToken | unmatched — not counted | — | listed in scope | no |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| sonic | `0x9ef762...c895b3` | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0xb5b371...925308` | MessageBus | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | `0x1d3c99...176bb7` | UpdateManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 11 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -119,7 +189,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 18 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=2
 - Match method counts: n/a
 
 Zero-match audit list:

@@ -46,6 +46,13 @@ interface IDynaVaultAPI is IERC5143 {
 		uint256 givenTotalAssets
 	) external view returns (uint256 feeShares);
 
+	function calcSharesForFeeAmountUsingGivenTotalSupplyAndFreeFunds(
+		uint256 feeAmount,
+		address feeToken,
+		uint256 givenTotalSupply,
+		uint256 givenFreeFunds
+	) external view returns (uint256 feeShares);
+
 	function tokenValueInQuoteAsset(address _base, uint256 _amount, address _quote) external view returns (uint256 value);
 
 	function withdrawTokenDebtFromStrategies(address tokenAddress, uint256 valueToWithdraw) external returns (uint256 totalLoss, uint256 totalWithdrawn);

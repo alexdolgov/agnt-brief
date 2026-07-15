@@ -1,10 +1,20 @@
 {
   "component": "SpokeErc20Token-2",
   "main_contract": "SpokeErc20Token",
+  "source_entry_count": 25,
   "source_file_count": 25,
-  "deployment_count": 4,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SpokeErc20Token-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/immunefi-team/Bounty_Boosts/blob/main/Mitigation%20Audit%20%7C%20Folks%20Finance/Mitigation%20Audit%20_%20Folks%20Finance%2034929%20-%20%5BSmart%20Contract%20-%20Critical%5D%20Accounting%20Discrepancy%20in%20Fee%20Retention%20Leads%20to%20Protocol%20Insolvency%20and%20Fund%20Freezing.md"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +22,9 @@
       "address": "0xb39c03297e87032ff69f4d42a6698e4c4a934449",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394602"
     },
     {
       "chain": "bsc",
@@ -20,7 +32,9 @@
       "address": "0x12db9758c4d9902334c523b94e436258eb54156f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394613"
     },
     {
       "chain": "bsc",
@@ -28,15 +42,9 @@
       "address": "0x4db12f554623e4b0b3f5bacf1c8490d4493380a5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x1b2a8d56967d00700dd5c94e27b1a116a1def8df",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394614"
     }
   ]
 }

@@ -37,15 +37,15 @@ library Path {
     /// @notice Decodes the first pool in path
     /// @param path The bytes encoded swap path
     /// @return tokenA The first token of the given pool
-    /// @return tokenB The second token of the given pool
     /// @return tickSpacing The tickSpacing of the pool
+    /// @return tokenB The second token of the given pool
     function decodeFirstPool(bytes memory path)
         internal
         pure
         returns (
             address tokenA,
-            address tokenB,
-            int24 tickSpacing
+            int24 tickSpacing,
+            address tokenB
         )
     {
         tokenA = path.toAddress(0);

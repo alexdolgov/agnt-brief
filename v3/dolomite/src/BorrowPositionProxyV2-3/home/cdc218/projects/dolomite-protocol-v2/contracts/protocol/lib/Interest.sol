@@ -38,7 +38,7 @@ library Interest {
 
     // ============ Constants ============
 
-    bytes32 private constant FILE = "Interest";
+    bytes32 constant FILE = "Interest";
     uint64 constant BASE = 10**18;
 
     // ============ Structs ============
@@ -48,8 +48,8 @@ library Interest {
     }
 
     struct Index {
-        uint112 borrow;
-        uint112 supply;
+        uint96 borrow;
+        uint96 supply;
         uint32 lastUpdate;
     }
 
@@ -103,8 +103,8 @@ library Interest {
         assert(supplyInterest <= borrowInterest);
 
         return Index({
-            borrow: DolomiteMarginMath.getPartial(index.borrow, borrowInterest, BASE).add(index.borrow).to112(),
-            supply: DolomiteMarginMath.getPartial(index.supply, supplyInterest, BASE).add(index.supply).to112(),
+            borrow: DolomiteMarginMath.getPartial(index.borrow, borrowInterest, BASE).add(index.borrow).to96(),
+            supply: DolomiteMarginMath.getPartial(index.supply, supplyInterest, BASE).add(index.supply).to96(),
             lastUpdate: currentTime
         });
     }

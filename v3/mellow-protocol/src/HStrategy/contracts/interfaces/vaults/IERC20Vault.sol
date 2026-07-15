@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.9;
 
+import "../external/aave/ILendingPool.sol";
 import "./IIntegrationVault.sol";
 
 interface IERC20Vault is IIntegrationVault {

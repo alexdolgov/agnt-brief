@@ -31,7 +31,7 @@ struct ClaimItem {
 
 interface IVault {
     event Stake(address indexed _user, address indexed _token, uint256 indexed _amount);
-    event RequestClaim(address _user, address indexed _token, uint256 indexed _amount, uint256 indexed _id);
+    event RequestClaim(address _user, address indexed _token, uint256 indexed _amount, uint256 _principalAmount, uint256 _rewardAmount, uint256 indexed _id);
     event ClaimAssets(address indexed _user, address indexed _token, uint256 indexed _amount, uint256 _id);
     event UpdateRewardRate(address _token, uint256 _oldRewardRate, uint256 _newRewardRate);
     event UpdateCustodian(address _oldCustodian, address _newCustodian);
@@ -41,14 +41,16 @@ interface IVault {
     event EmergencyWithdrawal(address indexed _token, address indexed _receiver);
     event UpdateWaitingTime(uint256 _oldWaitingTime, uint256 _newWaitingTIme);
     event LPTokenCreated(address indexed _token);
-    event FlashWithdraw(address indexed _user, address indexed _token, uint256 indexed _amount, uint _fee);
+    event FlashWithdraw(address indexed _user, address indexed _token, uint256 indexed _amount, uint256 _principalAmount, uint256 _rewardAmount, uint _fee);
     event UpdatePenaltyRate(uint indexed oldRate, uint indexed newRate);
     event CancelClaim(address indexed user, address indexed _token, uint256 indexed _amount, uint256 _id);
 
     function stake(address _token, uint256 _stakedAmount) external;
     function requestClaim(address _token, uint256 _amount) external returns(uint256);
+    function cancelClaim(uint _queueId, address _token) external;
     function claim(uint256 _queueID, address token) external;
     function flashWithdrawWithPenalty(address _token, uint256 _amount) external;
+
     function transferToCustodian(address _token, uint256 _amount) external;
     function emergencyWithdraw(address _token, address _receiver) external;
 

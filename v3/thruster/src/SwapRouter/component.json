@@ -1,7 +1,15 @@
 {
   "component": "SwapRouter",
   "main_contract": "SwapRouter",
+  "source_entry_count": 38,
   "source_file_count": 38,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SwapRouter\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x337827814155ecbf24d20231fca4444f530c0555",
       "is_proxy": true,
       "implementation_address": "0x337827814155ecbf24d20231fca4444f530c0555",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400262"
     }
   ]
 }

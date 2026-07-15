@@ -8,13 +8,8 @@ import "@pythnetwork/pyth-sdk-solidity/PythStructs.sol";
 
 import "../SpeedMarkets/SpeedMarket.sol";
 import "../SpeedMarkets/SpeedMarketsAMM.sol";
-import "./ISpeedMarketsAMMUtils.sol";
 
 interface ISpeedMarketsAMM {
-    enum OracleSource {
-        Pyth,
-        Chainlink
-    }
     struct Params {
         bool supportedAsset;
         uint safeBoxImpact;
@@ -23,23 +18,11 @@ interface ISpeedMarketsAMM {
 
     function sUSD() external view returns (IERC20Upgradeable);
 
-    function addressManager() external view returns (address);
-
-    function createNewMarket(SpeedMarketsAMM.CreateMarketParams calldata _params) external returns (address marketAddress);
-
-    function resolveMarketWithPrice(address _market, int64 _finalPrice) external;
-
-    function canResolveMarket(address market) external view returns (bool);
-
-    function multicollateralEnabled() external view returns (bool);
-
-    function offrampHelper(address user, uint amount) external;
+    function createNewMarket(SpeedMarketsAMM.CreateMarketParams calldata _params) external;
 
     function supportedAsset(bytes32 _asset) external view returns (bool);
 
     function assetToPythId(bytes32 _asset) external view returns (bytes32);
-
-    function assetToChainlinkId(bytes32 _asset) external view returns (bytes32);
 
     function minBuyinAmount() external view returns (uint);
 
@@ -80,10 +63,4 @@ interface ISpeedMarketsAMM {
     function getLengths(address _user) external view returns (uint[5] memory);
 
     function getParams(bytes32 _asset) external view returns (Params memory);
-
-    function supportedNativeCollateral(address _collateral) external view returns (bool);
-
-    function bonusPerCollateral(address _collateral) external view returns (uint);
-
-    function speedMarketsAMMUtils() external view returns (ISpeedMarketsAMMUtils);
 }

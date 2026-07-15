@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { ReentrancyGuard } from "openzeppelin-contracts/security/ReentrancyGuard.sol";
 import { EnumerableSet } from "openzeppelin-contracts/utils/structs/EnumerableSet.sol";
@@ -41,10 +41,10 @@ abstract contract MainRewarder is AbstractRewarder, IMainRewarder, ReentrancyGua
         ISystemRegistry _systemRegistry,
         address _rewardToken,
         uint256 _newRewardRatio,
-        uint256 _duration,
+        uint256 _durationInBlock,
         bytes32 _rewardRole,
         bool _allowExtraRewards
-    ) AbstractRewarder(_systemRegistry, _rewardToken, _newRewardRatio, _duration, _rewardRole) {
+    ) AbstractRewarder(_systemRegistry, _rewardToken, _newRewardRatio, _durationInBlock, _rewardRole) {
         // slither-disable-next-line missing-zero-check
         allowExtraRewards = _allowExtraRewards;
     }

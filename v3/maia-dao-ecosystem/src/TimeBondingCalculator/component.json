@@ -1,26 +1,28 @@
 {
   "component": "TimeBondingCalculator",
   "main_contract": "TimeBondingCalculator",
-  "source_file_count": 5,
-  "deployment_count": 3,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TimeBondingCalculator\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-1088",
       "chain_id": 1088,
-      "address": "0xd23d70eec1f7ba5c4842a9c124bdb6189e46a0be",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
       "address": "0xf1c8d77d345f4e4cb8457434e4fd3a677e505031",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "chain-1088",
@@ -28,7 +30,9 @@
       "address": "0xfcc66d3ad5b9fe0cb785b7d51dd08425397c0fa1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

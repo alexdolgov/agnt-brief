@@ -1,10 +1,21 @@
 {
   "component": "MinterProxy",
   "main_contract": "MinterProxy",
-  "source_file_count": 4,
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MinterProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://reports.chainsecurity.com/StUSDT/ChainSecurity_StUSDT_StUSDT_Audit.pdf",
+    "https://stusdt.io/audit-report.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +23,9 @@
       "address": "0xe22d16a16d8a5a92241cf696c35c08eaa873728c",
       "is_proxy": true,
       "implementation_address": "0x81183533ecac857d07e13f67d51e698bc3865840",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404125"
     }
   ]
 }

@@ -1,18 +1,28 @@
 {
   "component": "Getters-2",
   "main_contract": "Getters",
+  "source_entry_count": 27,
   "source_file_count": 27,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Getters-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-999",
-      "chain_id": 999,
-      "address": "0x120805265fa944834dc6e930de2995768806a9d2",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbe65f0f410a72bec163dc65d46c83699e957d588",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397655"
     }
   ]
 }

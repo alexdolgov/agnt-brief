@@ -1,18 +1,33 @@
 {
   "component": "BunniHook",
   "main_contract": "BunniHook",
-  "source_file_count": 81,
+  "source_entry_count": 84,
+  "source_file_count": 84,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BunniHook\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2025-06-10-cyfrin-bunni-v2.1.pdf",
+    "https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2025-07-19-cyfrin-bunni-fee-override-hooklet-v2.0.pdf",
+    "https://github.com/pashov/audits/blob/master/team/pdf/Bunni-security-review-August.pdf",
+    "https://github.com/trailofbits/publications/blob/master/reviews/2025-01-bacon-labs-bunniv2-securityreview.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x00000000217dd3feb84e447fa4abe3a97db7a767",
+      "address": "0x000052423c1db6b7ff8641b85a7eefc7b2791888",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402553"
     }
   ]
 }

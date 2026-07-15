@@ -1,12 +1,18 @@
 {
   "component": "PricingAdapter",
   "main_contract": "PricingAdapter",
+  "source_entry_count": 14,
   "source_file_count": 14,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PricingAdapter\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/seamless-protocol/leverage-tokens/blob/main/audits/Cantina%20-%201%20Oct%202025.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -14,7 +20,9 @@
       "address": "0x44ccebea0dac17105e91a59e182f65f8d176c88f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398713"
     },
     {
       "chain": "base",
@@ -22,7 +30,9 @@
       "address": "0xce05fbed9260810bdded179adfdaf737be7ded71",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398764"
     }
   ]
 }

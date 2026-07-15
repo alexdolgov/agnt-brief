@@ -1,148 +1,28 @@
 {
   "component": "RateModelSlope",
   "main_contract": "RateModelSlope",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 17,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-LayerBank-v1.0.pdf"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RateModelSlope\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0x01be49c7734673bd407fc54735c2ac02504c27c1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
     {
       "chain": "chain-169",
       "chain_id": 169,
       "address": "0x27f85bd47740139a56e34124b33481ea6e1e660d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0x7e76a2112706814477a3f7638a0fcedde85733a6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0x7ebf48f06fed5fa165748c7f30337a5d0d65fb14",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0x8d965181bdfd026cf5a09889898d70c4afae4684",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0x91ad6fb355252f731ecbeb30aeff6464cbbe0c07",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0xbea4070909dc939282ecc953d99840e390d891d1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0xd30726b29fae71d28c15f5632ec9ab2c2716a2f6",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0xe8c8cfc7750abaf26e5889c5e3f56d1e5f96902a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0xf7e5d5afae27305b371c4d183f887b77f0848acc",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0xf9a2e1cfa9760a1edc405047df638da71815ef95",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0x0442bea39e4307c0523027319e06e2145b7ff62a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0x072cd619678efe125099d7d167f6ce6cf3c3bc62",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0x16cd8dace8569c7bd4e903c864444367b9f7b1af",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0x2a0c7d8e23d7be9cc8e7c0b2895299f11690e295",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0x7187b3e844589c3c6bd41b56867e269ffbe1dc71",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0x83df63c060c248541e93488e94ac55b11efa7ff4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395943"
     }
   ]
 }

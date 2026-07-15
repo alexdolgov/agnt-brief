@@ -1,18 +1,28 @@
 {
   "component": "KEther-2",
   "main_contract": "KEther",
+  "source_entry_count": 9,
   "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/KEther-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xa58e822de1517aae7114714fb354ee853cd35780",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5fbe4eb536dadbcee54d5b55ed6559e29c60b055",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395720"
     }
   ]
 }

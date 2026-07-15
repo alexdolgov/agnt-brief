@@ -1,8 +1,16 @@
 {
   "component": "GmxGlpWrapper",
   "main_contract": "GmxGlpWrapper",
-  "source_file_count": 9,
-  "deployment_count": 3,
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GmxGlpWrapper\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,23 +20,9 @@
       "address": "0x3477df28ce70cecf61fffa7a95be4bec3b3c7e75",
       "is_proxy": true,
       "implementation_address": "0x8d99a15a2be434431cf16d98e23f7fafe0d0da30",
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x8d99a15a2be434431cf16d98e23f7fafe0d0da30",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xf4b36812d1645dca9d562846e3abf416d590349e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390629"
     }
   ]
 }

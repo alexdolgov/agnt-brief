@@ -1,66 +1,38 @@
 {
   "component": "MultisigWallet-2",
   "main_contract": "MultisigWallet",
-  "source_file_count": 1,
-  "deployment_count": 7,
+  "source_entry_count": 13,
+  "source_file_count": 13,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MultisigWallet-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0x4869f4ec844cd3383f8261affcf29b23182f480c",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf162b6467eaf066a513a4b9235009d60c1facf44",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392544"
     },
     {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0x658064f0d8650f3b95c0a723e7f600042032960e",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf162b6467eaf066a513a4b9235009d60c1facf44",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0x65dfacfd08afdd1cc02caf3de411661603394090",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0x916e5dfdf66fdd9df738c63159d5f01268ed21cb",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0x9883fac487d917e47ed11ae3f2c31507ae1ca925",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0xa6420eba9b8c514a5793429ba2873274a63531bb",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0xd491f20b3d443dbaa61536662af22421b97bcac9",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392568"
     }
   ]
 }

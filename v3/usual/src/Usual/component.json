@@ -1,11 +1,20 @@
 {
   "component": "Usual",
   "main_contract": "Usual",
-  "source_file_count": 33,
+  "source_entry_count": 31,
+  "source_file_count": 31,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Usual\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
-    "https://1503334455-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FpUhQzPJGdJzuLTQ5sCym%2Fuploads%2FuIIECu9Z1z2RSIcirRxf%2FSherlock%20-%20Usual%20Labs%20Public%20Audit%20Contest.pdf"
+    "https://1503334455-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FpUhQzPJGdJzuLTQ5sCym%2Fuploads%2FuIIECu9Z1z2RSIcirRxf%2FSherlock%20-%20Usual%20Labs%20Public%20Audit%20Contest.pdf",
+    "https://paladinsec.co/projects/usual"
   ],
   "addresses": [
     {
@@ -14,7 +23,9 @@
       "address": "0x2b65f9d2e4b84a2df6ff0525741b75d1276a9c2f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404576"
     }
   ]
 }

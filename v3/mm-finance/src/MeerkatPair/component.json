@@ -1,7 +1,15 @@
 {
   "component": "MeerkatPair",
   "main_contract": "MeerkatPair",
+  "source_entry_count": 10,
   "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MeerkatPair\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x1aec8ff1c39c34338327a32bbb35011432614172",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396782"
     },
     {
       "chain": "polygon",
@@ -20,7 +30,9 @@
       "address": "0x384c1b95027b73a98fe31ea5b4b7b031b9ddd724",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396784"
     },
     {
       "chain": "polygon",
@@ -28,7 +40,9 @@
       "address": "0x8ab47799cb0d49aeb9e3a47c369813a3a3236790",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396787"
     },
     {
       "chain": "polygon",
@@ -36,7 +50,9 @@
       "address": "0x8c26252b14f9b071585b81b240c4ae2176e8cd3c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396788"
     },
     {
       "chain": "polygon",
@@ -44,7 +60,9 @@
       "address": "0xa789324e64268c5385ea7678435fa83532705b0f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396791"
     },
     {
       "chain": "polygon",
@@ -52,7 +70,9 @@
       "address": "0xb965c131f1c48d89b1760860b782d2acdf87273b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396792"
     },
     {
       "chain": "polygon",
@@ -60,7 +80,9 @@
       "address": "0xd15eb8710e28c23993968e671807d572189cc86e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396793"
     }
   ]
 }

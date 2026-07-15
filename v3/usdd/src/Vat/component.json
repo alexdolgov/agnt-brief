@@ -1,58 +1,30 @@
 {
   "component": "Vat",
   "main_contract": "Vat",
-  "source_file_count": 20,
-  "deployment_count": 6,
-  "audited": false,
-  "audits_covering": [],
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Vat\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://114421464-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FARwMu8GsAubRHTakjdxU%2Fuploads%2Fgit-blob-5944c53b08b503266c499836474c7b475dc02093%2FChainSecurity_Decentralized_USD_USDD_V2_audit.pdf"
+  ],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x2c3d7e13e05521a6b0d613cd9d3da22b38b9e140",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xff77f6209239deb2c076179499f2346b0032097f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x2c9d4a688789e64a4889a4bef143481999429467",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x5e32e1c0cea2af712255bafc14a539fa69cf1d22",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x7e8dc4aa04b77fd294f0eb3bef5a6b424733ceab",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x98e35ba98db37a3353165203a23859ed83de7201",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xa328c1a1bd701c70cd1336bca932dda7eb312e13",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402106"
     }
   ]
 }

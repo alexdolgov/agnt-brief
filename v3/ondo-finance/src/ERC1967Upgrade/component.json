@@ -1,12 +1,20 @@
 {
   "component": "ERC1967Upgrade",
   "main_contract": "ERC1967Upgrade",
+  "source_entry_count": 9,
   "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Upgrade\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 5,
   "audited": true,
   "audits_covering": [
-    "https://code4rena.com/reports/2023-09-ondo",
-    "https://docs-v2-git-prod-ondo-docs.vercel.app/pdf/Ondo-Zokyo-Audit-August-2023.pdf"
+    "https://code4rena.com/reports/2023-01-ondo",
+    "https://code4rena.com/reports/2023-09-ondo"
   ],
   "addresses": [
     {
@@ -15,7 +23,9 @@
       "address": "0x1b19c19393e2d034d8ff31ff34c81252fcbbee92",
       "is_proxy": true,
       "implementation_address": "0x1ceb44b6e515abf009e0ccb6ddafd723886cf3ff",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401984"
     },
     {
       "chain": "ethereum",
@@ -23,7 +33,9 @@
       "address": "0xaf37c1167910ebc994e266949387d2c7c326b879",
       "is_proxy": true,
       "implementation_address": "0x58910371d0b52dcf9d2e0a1af4e0078c58436908",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402005"
     },
     {
       "chain": "ethereum",
@@ -31,7 +43,9 @@
       "address": "0xe86845788d6e3e5c2393ade1a051ae617d974c09",
       "is_proxy": true,
       "implementation_address": "0x4c6f89df68e11c735cbea75f7deec3d3a0f270cf",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402011"
     },
     {
       "chain": "bsc",
@@ -39,7 +53,9 @@
       "address": "0x1f8955e640cbd9abc3c3bb408c9e2e1f5f20dfe6",
       "is_proxy": true,
       "implementation_address": "0x7655539c985743c3d29aff4c8ae2730f9360f7a6",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402013"
     },
     {
       "chain": "arbitrum",
@@ -47,7 +63,9 @@
       "address": "0x35e050d3c0ec2d29d269a8ecea763a183bdf9a9d",
       "is_proxy": true,
       "implementation_address": "0x5692349f8e7081e2ad0ba629e01761b43187304c",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402019"
     }
   ]
 }

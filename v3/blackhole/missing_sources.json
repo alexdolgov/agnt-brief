@@ -1,0 +1,13 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "blackhole",
+  "missing": [
+    {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0x42a53f5460f126cccaf57d1b79155c65d229f82b",
+      "canonical_source_address": null
+    }
+  ]
+}

@@ -1,40 +1,69 @@
 # Agentic Audit Brief: HTX
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: HTX (`htx`)
 - Website: [https://www.htx.com/](https://www.htx.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:58.694Z
-- Pipeline run: v2-2026-07-02-1ba3fd
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: avalanche, ethereum, polygon
 - Contract surface: 5 unique implementations (5 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $3,833,142,179.02
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-CEX. Structurally: 5 project-authored contract(s) across 3 chain(s); built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for HTX. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Its contracts share 2 common project-authored base contract(s) (bridgeadmin, container). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 1 contract row(s) across avalanche, ethereum, polygon. Structural roles: 1 core. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 1
+- Structural roles: core (1)
+- Contract kinds: contract (1)
+- Detected standards: pausable (1)
+- Frameworks: openzeppelin (1)
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 1; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/5 (0.0%)
-- Deployed-live implementations: 5 of 5 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/5
-- Verified + Unaudited implementations: 5
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 1 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 4 discovered implementations excluded (1 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 5
@@ -59,13 +88,13 @@ The protocol comprises 2 functional families. Its contracts share 2 common proje
 
 ### ⚠️ Verified + Unaudited (5)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Bridge | unknown | ethereum | n/a | [`0xa92902...1e490c`](./contracts/ethereum-1/0xa929022c9107643515f5c777ce9a910f0d1e490c/) | ⚠️ Unaudited |
-| BridgeLogic | unknown | ethereum | n/a | [`0x9a91ab...f129b8`](./contracts/ethereum-1/0x9a91ab68ebffd2e527d8144f54e9fe8250f129b8/) | ⚠️ Unaudited |
-| BridgeStorage | unknown | ethereum | n/a | [`0x47343b...d0ae2f`](./contracts/ethereum-1/0x47343b0046908c1607cbb4cef5764296fcd0ae2f/) | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | polygon | n/a | [`0x2177c7...688726`](./contracts/polygon-137/0x2177c77a1f3c4900de7668662706633db4688726/) | ⚠️ Unaudited |
-| GnosisSafeProxy | unknown | avalanche | n/a | [`0x8b6a35...4a44d5`](./contracts/avalanche-43114/0x8b6a3587676719a4fecbb24b503a3634c44a44d5/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Bridge | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-242084 | `0xa92902...1e490c` | ⚠️ Unaudited |
+| BridgeLogic | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x9a91ab...f129b8` | ⚠️ Unaudited |
+| BridgeStorage | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x47343b...d0ae2f` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | non_address_book | standard_proxy_or_library (excluded) | 1 | polygon | n/a | `0x2177c7...688726` | ⚠️ Unaudited |
+| GnosisSafeProxy | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | avalanche | n/a | `0x8b6a35...4a44d5` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,8 +116,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -100,10 +135,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 3 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 5 |
+| standard_library | 2 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -111,6 +146,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

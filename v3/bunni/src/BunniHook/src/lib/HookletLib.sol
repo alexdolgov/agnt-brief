@@ -19,7 +19,8 @@ library HookletLib {
     using HookletLib for IHooklet;
     using FixedPointMathLib for *;
 
-    uint160 internal constant ALL_FLAGS_MASK = 0xFFF;
+    uint160 internal constant ALL_FLAGS_MASK = 0x1FFF;
+    uint160 internal constant AFTER_REBALANCE_FLAG = 1 << 12;
     uint160 internal constant BEFORE_TRANSFER_FLAG = 1 << 11;
     uint160 internal constant AFTER_TRANSFER_FLAG = 1 << 10;
     uint160 internal constant BEFORE_INITIALIZE_FLAG = 1 << 9;
@@ -384,6 +385,31 @@ library HookletLib {
             );
         } else {
             success = true;
+        }
+    }
+
+    /// @dev Calls IHooklet.afterRebalance() after a rebalance order.
+    /// @param self The hooklet to call
+    /// @param sender The address that initiated the rebalance order execution. The FloodPlain contract in this case.
+    /// @param key The Bunni pool's key
+    /// @param orderOutputIsCurrency0 True if the currency0 is the output token of the Flood order (thus the Bunni pool received currency0), false otherwise.
+    /// @param orderInputAmount The amount of the input token of the Flood order
+    /// @param orderOutputAmount The amount of the output token of the Flood order
+    function hookletAfterRebalance(
+        IHooklet self,
+        address sender,
+        PoolKey calldata key,
+        bool orderOutputIsCurrency0,
+        uint256 orderInputAmount,
+        uint256 orderOutputAmount
+    ) internal noSelfCall(self, sender) {
+        if (self.hasPermission(AFTER_REBALANCE_FLAG)) {
+            self.callHooklet(
+                IHooklet.afterRebalance.selector,
+                abi.encodeCall(
+                    IHooklet.afterRebalance, (key, orderOutputIsCurrency0, orderInputAmount, orderOutputAmount)
+                )
+            );
         }
     }
 

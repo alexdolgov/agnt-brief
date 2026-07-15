@@ -1,10 +1,20 @@
 {
   "component": "RewardTreasury",
   "main_contract": "RewardTreasury",
-  "source_file_count": 14,
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RewardTreasury\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.chainsecurity.com/reports/Subsquid/ChainSecurity_Subsquid_Subsquid_Audit.pdf"
+  ],
   "addresses": [
     {
       "chain": "arbitrum",
@@ -12,15 +22,9 @@
       "address": "0x237abf43bc51fd5c50d0d598a1a4c26e56a8a2a0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xce1f5ae81fa43b572995eaa064115fca1c9af27c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399336"
     }
   ]
 }

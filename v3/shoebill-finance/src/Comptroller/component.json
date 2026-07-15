@@ -1,36 +1,30 @@
 {
   "component": "Comptroller",
   "main_contract": "Comptroller",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Comptroller\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://github.com/ShoebillFinance/audit-report/blob/main/Certik-Shoebill-final-20231121T015445Z.pdf"
   ],
   "addresses": [
     {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0x81a679080b3a03c93e802af7594c1eec8f197761",
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x9f53cd350c3ac49ce6ce673abff647e5fe79a3cc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0xc27f8366948014a5b8186341b50a6660a5e0ac63",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0xd13be8b716b18265e294831fcb1330d170840bb3",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398934"
     }
   ]
 }

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { MainRewarder, ISystemRegistry, Errors } from "src/rewarders/MainRewarder.sol";
 import { Roles } from "src/libs/Roles.sol";
@@ -19,11 +19,17 @@ contract DestinationVaultMainRewarder is MainRewarder {
         address _stakeTracker,
         address _rewardToken,
         uint256 _newRewardRatio,
-        uint256 _duration,
+        uint256 _durationInBlock,
         bool _allowExtraReward
     )
-        // solhint-disable-next-line max-line-length
-        MainRewarder(_systemRegistry, _rewardToken, _newRewardRatio, _duration, Roles.DV_REWARD_MANAGER, _allowExtraReward)
+        MainRewarder(
+            _systemRegistry,
+            _rewardToken,
+            _newRewardRatio,
+            _durationInBlock,
+            Roles.DV_REWARD_MANAGER,
+            _allowExtraReward
+        )
     {
         Errors.verifyNotZero(_stakeTracker, "_stakeTracker");
         stakeTracker = _stakeTracker;
@@ -73,9 +79,7 @@ contract DestinationVaultMainRewarder is MainRewarder {
         _getReward(account, recipient, claimExtras);
     }
 
-    function canTokenBeRecovered(
-        address
-    ) public pure override returns (bool) {
+    function canTokenBeRecovered(address) public pure override returns (bool) {
         return true;
     }
 }

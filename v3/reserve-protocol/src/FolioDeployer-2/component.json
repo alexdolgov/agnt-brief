@@ -1,14 +1,18 @@
 {
   "component": "FolioDeployer-2",
   "main_contract": "FolioDeployer",
+  "source_entry_count": 83,
   "source_file_count": 83,
-  "deployment_count": 4,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/pashov/reserve-security-review_2025-06-02.pdf",
-    "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trail-of-bits/2025-04-reserve-folio-solidity-2.0.0.pdf",
-    "https://github.com/reserve-protocol/reserve-index-dtf/blob/main/audits/trust-security/v1-audit-dec-2024.pdf"
-  ],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FolioDeployer-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -16,31 +20,19 @@
       "address": "0xbe3b47587ceeff7d48008a0114f51cd571bec63a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398331"
     },
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x100e0efdd7a4f67825e1be5f0493f8d2aeac00bb",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa203aa351723cf943f91684e9f5efca7175ae7ea",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x5bed18aca50e6057e6658fe8498004092eedcdcf",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x72f87239981159ed23673012ee3806ca6114ab2a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398344"
     }
   ]
 }

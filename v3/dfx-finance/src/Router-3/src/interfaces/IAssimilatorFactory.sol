@@ -15,15 +15,13 @@
 
 pragma solidity ^0.8.13;
 
-import "../assimilators/AssimilatorV2.sol";
+import "../assimilators/AssimilatorV3.sol";
 import "../interfaces/IOracle.sol";
 
 interface IAssimilatorFactory {
-    function getAssimilator(address _token) external view returns (AssimilatorV2);
+    function getAssimilator(address _token, address _quote) external view returns (AssimilatorV3);
 
-    function newAssimilator(
-        IOracle _oracle,
-        address _token,
-        uint256 _tokenDecimals
-    ) external returns (AssimilatorV2);
+    function newAssimilator(address _quote, IOracle _oracle, address _token, uint256 _tokenDecimals)
+        external
+        returns (AssimilatorV3);
 }

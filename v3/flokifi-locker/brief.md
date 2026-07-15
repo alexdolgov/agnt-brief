@@ -1,49 +1,92 @@
 # Agentic Audit Brief: FlokiFi Locker
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 2 (0 matched; 2 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: FlokiFi Locker (`flokifi-locker`)
 - Website: [https://flokifi.com](https://flokifi.com)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:52.309Z
-- Pipeline run: v2-2026-07-03-89943a
-- Chains: ethereum
-- Contract surface: 19 unique implementations (19 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: arbitrum, avalanche, bsc, ethereum, fantom, optimism, polygon
+- Contract surface: 26 unique implementations (26 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $8,886,132.16
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Token Locker. Structurally: 19 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 3 ERC721 NFTs; role-gated via AccessControl; built on openzeppelin.
+No contract logic was present for FlokiFi Locker in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 1 common project-authored base contract(s) (exchangepoolprocessor). Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 7 contracts are derived from known codebases. 7 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0xf5d492...670a86`, chain 1)
+- UnnamedContract (`0xfbec99...159c76`, chain 10)
+- UnnamedContract (`0xe33ee2...26b4d4`, chain 56)
+- UnnamedContract (`0x764150...72062d`, chain 137)
+- UnnamedContract (`0x6817b1...ec3df1`, chain 250)
+- UnnamedContract (`0xc9ddec...d636ef`, chain 42161)
+- UnnamedContract (`0x9cdac5...8da644`, chain 43114)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 19; live-surface contracts included: 19 (19 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 7/7 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/19 (0.0%)
-- Deployed-live implementations: 19 of 19 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/19
-- Verified + Unaudited implementations: 19
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 7 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 19 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 7 of 26 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 19
-- Raw deployments: 19
+- Unverified implementations: 7
+- Unique implementations: 26
+- Raw deployments: 26
 - Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 2 unknown
+- Latest audit: 2023-11 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 1 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
@@ -59,27 +102,27 @@ The protocol comprises 3 functional families. Its contracts share 1 common proje
 
 ### ⚠️ Verified + Unaudited (19)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| ConstantMultiplier | unknown | ethereum | n/a | [`0xb254cc...b90721`](./contracts/ethereum-1/0xb254cc6c1d178c2de8182cede6113a986bb90721/) | ⚠️ Unaudited |
-| DynamicTaxHandler | unknown | ethereum | n/a | [`0x834f96...62b67b`](./contracts/ethereum-1/0x834f96fd4fe9147a2a647d957fbbe67fec62b67b/) | ⚠️ Unaudited |
-| ExponentialTaxHandler | unknown | ethereum | n/a | [`0xa4ffcc...d87dbe`](./contracts/ethereum-1/0xa4ffccd34a129a2554db737b518b269b81d87dbe/) | ⚠️ Unaudited |
-| FLOKI | unknown | ethereum | n/a | [`0x43f11c...cd066d`](./contracts/ethereum-1/0x43f11c02439e2736800433b4594994bd43cd066d/) | ⚠️ Unaudited |
-| FlokiInuNFTReward | unknown | ethereum | n/a | [`0x064f95...cd6307`](./contracts/ethereum-1/0x064f9547a78bd5ba35a7aeb2221de69b86cd6307/) | ⚠️ Unaudited |
-| FlokiInuNFTRewardPickUp | unknown | ethereum | n/a | [`0x1b231f...e5db16`](./contracts/ethereum-1/0x1b231f8e6f16ea0b5ca0d2f39eb595bec3e5db16/) | ⚠️ Unaudited |
-| FlokiInuNFTRubyRewardPickUp | unknown | ethereum | n/a | [`0x1b8234...2dc741`](./contracts/ethereum-1/0x1b823442253556b4cb8d2586d8dc0fc01c2dc741/) | ⚠️ Unaudited |
-| FlokiRewardToken | unknown | ethereum | n/a | [`0xf7756d...fc099c`](./contracts/ethereum-1/0xf7756db83625e78d693ca90749e2d0869dfc099c/) | ⚠️ Unaudited |
-| FlokiStakingPool | unknown | ethereum | n/a | [`0xb8d247...f4ee43`](./contracts/ethereum-1/0xb8d2471e35ee033db509e0456c8efc4135f4ee43/) | ⚠️ Unaudited |
-| Flokitar | unknown | ethereum | n/a | [`0x23051f...8c83b9`](./contracts/ethereum-1/0x23051fe0eb93fabe7b314fd56a95f395058c83b9/) | ⚠️ Unaudited |
-| GemstoneNFT | unknown | ethereum | n/a | [`0x039894...55ec00`](./contracts/ethereum-1/0x0398947346144d39e1983c3d9a63248a2655ec00/) | ⚠️ Unaudited |
-| PenaltyFee | unknown | ethereum | n/a | [`0x476129...21e30d`](./contracts/ethereum-1/0x4761295cb20bbf40952b3239bdc4fcd14021e30d/) | ⚠️ Unaudited |
-| SpecialTaxHandler | unknown | ethereum | n/a | [`0x4b4cf7...81baf0`](./contracts/ethereum-1/0x4b4cf7c7e189da2eddcfbf4430ca5ca9ce81baf0/) | ⚠️ Unaudited |
-| StaticTaxHandler | unknown | ethereum | n/a | [`0x12e39c...2df74c`](./contracts/ethereum-1/0x12e39cd22501eec967663b9b58946d02da2df74c/) | ⚠️ Unaudited |
-| StaticTaxHandlerWithMaximum | unknown | ethereum | n/a | [`0x162e54...033bf7`](./contracts/ethereum-1/0x162e54eb85dd85c3f1d27918d3fa950af1033bf7/) | ⚠️ Unaudited |
-| T1 | unknown | ethereum | n/a | [`0x4507ce...e2b528`](./contracts/ethereum-1/0x4507cef57c46789ef8d1a19ea45f4216bae2b528/) | ⚠️ Unaudited |
-| TreasuryHandlerAlpha | unknown | ethereum | n/a | [`0x35e6e4...024c24`](./contracts/ethereum-1/0x35e6e44f97e3a112dbabf9eb47d6f84224024c24/) | ⚠️ Unaudited |
-| ZeroTaxHandler | unknown | ethereum | n/a | [`0x4491c4...19bd56`](./contracts/ethereum-1/0x4491c4c1d1bf636057eab66cd986da08f619bd56/) | ⚠️ Unaudited |
-| ZeroTreasuryHandler | unknown | ethereum | n/a | [`0x2bd06f...28b0e2`](./contracts/ethereum-1/0x2bd06f15bcb6ff028befc4a4dd21ed0f1028b0e2/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| ConstantMultiplier | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb254cc...b90721` | ⚠️ Unaudited |
+| DynamicTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x834f96...62b67b` | ⚠️ Unaudited |
+| ExponentialTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xa4ffcc...d87dbe` | ⚠️ Unaudited |
+| FLOKI | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x43f11c...cd066d` | ⚠️ Unaudited |
+| FlokiInuNFTReward | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x064f95...cd6307` | ⚠️ Unaudited |
+| FlokiInuNFTRewardPickUp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b231f...e5db16` | ⚠️ Unaudited |
+| FlokiInuNFTRubyRewardPickUp | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x1b8234...2dc741` | ⚠️ Unaudited |
+| FlokiRewardToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xf7756d...fc099c` | ⚠️ Unaudited |
+| FlokiStakingPool | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xb8d247...f4ee43` | ⚠️ Unaudited |
+| Flokitar | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x23051f...8c83b9` | ⚠️ Unaudited |
+| GemstoneNFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x039894...55ec00` | ⚠️ Unaudited |
+| PenaltyFee | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x476129...21e30d` | ⚠️ Unaudited |
+| SpecialTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4b4cf7...81baf0` | ⚠️ Unaudited |
+| StaticTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x12e39c...2df74c` | ⚠️ Unaudited |
+| StaticTaxHandlerWithMaximum | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x162e54...033bf7` | ⚠️ Unaudited |
+| T1 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4507ce...e2b528` | ⚠️ Unaudited |
+| TreasuryHandlerAlpha | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x35e6e4...024c24` | ⚠️ Unaudited |
+| ZeroTaxHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4491c4...19bd56` | ⚠️ Unaudited |
+| ZeroTreasuryHandler | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x2bd06f...28b0e2` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,18 +136,41 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (7)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-240028 | `0xf5d492...670a86` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | optimism | unit-240029 | `0xfbec99...159c76` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-240034 | `0xe33ee2...26b4d4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | polygon | unit-240030 | `0x764150...72062d` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | fantom | unit-240031 | `0x6817b1...ec3df1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | arbitrum | unit-240032 | `0xc9ddec...d636ef` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | avalanche | unit-240033 | `0x9cdac5...8da644` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://skynet.certik.com/projects/flokifi) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Is FlokiFi Locker Secure and Audited?](https://flokifi.gitbook.io/flokifi-documentation/about-flokifi/is-flokifi-locker-secure-and-audited.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [DL audit link](https://skynet.certik.com/projects/flokifi) | CertiK | Audit | 2023-11 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | medium |
+| [Is FlokiFi Locker Secure and Audited?](https://flokifi.gitbook.io/flokifi-documentation/about-flokifi/is-flokifi-locker-secure-and-audited.md) | unknown | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [20302] DL audit link — no match: Only one contract explicitly named in scope: FlokiRewardToken.sol. Other files (IMultiplier.sol, IPenaltyFee.sol) are listed as audited files but not explicitly stated as in scope; they may be interfaces. The audit date is inferred from 'Last Audit was delivered on 11/6/2023' and 'Revised on 11/6/2023'.
+- [20303] Is FlokiFi Locker Secure and Audited? — no match: The provided text is a documentation page stating that FlokiFi Locker has been audited by Certik, but it does not list any specific contracts, files, or modules in scope. No contract names or audit date are extractable.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| DL audit link | FlokiRewardToken | unmatched — not counted | — | Listed as 'Assessed Contract' in the audit report. | no |
 
 ## Coverage Gaps
 
@@ -116,10 +182,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 19 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 19 |
+| needs_review | 7 |
 
 ## Scope Matching Notes
 
@@ -127,7 +193,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 1 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: low=1, medium=1
 - Match method counts: n/a
 
 Zero-match audit list:

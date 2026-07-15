@@ -9,7 +9,6 @@
 
 pragma solidity 0.6.9;
 
-
 interface IDODOApprove {
     function claimTokens(address token,address who,address dest,uint256 amount) external;
     function getDODOProxy() external view returns (address);
@@ -225,6 +224,7 @@ interface IERC20 {
 // File: contracts/intf/IWETH.sol
 
 
+
 interface IWETH {
     function totalSupply() external view returns (uint256);
 
@@ -248,7 +248,6 @@ interface IWETH {
 }
 
 // File: contracts/lib/SafeMath.sol
-
 
 
 /**
@@ -306,7 +305,6 @@ library SafeMath {
 }
 
 // File: contracts/lib/SafeERC20.sol
-
 
 
 /**
@@ -386,7 +384,6 @@ library SafeERC20 {
 }
 
 // File: contracts/lib/DecimalMath.sol
-
 
 
 /**
@@ -509,6 +506,7 @@ contract CloneFactory is ICloneFactory {
 
 // File: contracts/Factory/DSPFactory.sol
 
+
 interface IDSPFactory {
     function createDODOStablePool(
         address baseToken,
@@ -530,8 +528,8 @@ contract DSPFactory is InitializableOwnable {
     // ============ Templates ============
 
     address public immutable _CLONE_FACTORY_;
-    address public immutable _DEFAULT_MAINTAINER_;
     address public immutable _DEFAULT_MT_FEE_RATE_MODEL_;
+    address public _DEFAULT_MAINTAINER_;
     address public _DSP_TEMPLATE_;
 
     // ============ Registry ============
@@ -591,6 +589,10 @@ contract DSPFactory is InitializableOwnable {
 
     function updateDSPTemplate(address _newDSPTemplate) external onlyOwner {
         _DSP_TEMPLATE_ = _newDSPTemplate;
+    }
+
+    function updateDefaultMaintainer(address _newMaintainer) external onlyOwner {
+        _DEFAULT_MAINTAINER_ = _newMaintainer;
     }
 
     function addPoolByAdmin(
@@ -655,6 +657,8 @@ contract DSPFactory is InitializableOwnable {
 }
 
 // File: contracts/SmartRoute/proxies/DODODspProxy.sol
+
+
 
 
 /**

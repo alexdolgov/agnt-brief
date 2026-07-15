@@ -1,13 +1,18 @@
 {
   "component": "CollSurplusPool",
   "main_contract": "CollSurplusPool",
+  "source_entry_count": 42,
   "source_file_count": 42,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CollSurplusPool\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 3,
-  "audited": true,
-  "audits_covering": [
-    "https://www.coinspect.com/doc/Liquity%20%2D%20Smart%20Contract%20Audit%202021%2Epdf",
-    "https://www.coinspect.com/doc/Liquity%20%2D%20Smart%20Contract%20Audit%202021.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -15,7 +20,9 @@
       "address": "0x36e6cbdf68f64cf00fc3a6c634a25be32dd0a235",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396034"
     },
     {
       "chain": "ethereum",
@@ -23,7 +30,9 @@
       "address": "0xba4a2bd8b76df84cac98eba3f4b967d8423192bf",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396067"
     },
     {
       "chain": "ethereum",
@@ -31,7 +40,9 @@
       "address": "0xedbe2509e502c0320d2e7f8b6746a49b4b50e2bf",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396081"
     }
   ]
 }

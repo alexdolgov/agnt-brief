@@ -1,0 +1,19 @@
+{
+  "schema_version": "repo_tree_missing_sources@v1",
+  "network_policy": "offline_cache_only",
+  "project_key": "pangolin",
+  "missing": [
+    {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0x1128f23d0bc0a8396e9fbc3c0c68f5ea228b8256",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0xf40937279f38d0c1f97afa5919f1cb3cb7f06a7f",
+      "canonical_source_address": null
+    }
+  ]
+}

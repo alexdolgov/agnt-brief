@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { IAccessControlEnumerable } from "openzeppelin-contracts/access/IAccessControlEnumerable.sol";
 
@@ -18,5 +18,7 @@ interface IAccessController is IAccessControlEnumerable {
      * @notice Verify if an account is an owner. Reverts if not
      * @param account The account to verify
      */
-    function verifyOwner(address account) external view;
+    function verifyOwner(
+        address account
+    ) external view;
 }

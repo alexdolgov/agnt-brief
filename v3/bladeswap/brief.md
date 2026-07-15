@@ -1,121 +1,175 @@
 # Agentic Audit Brief: BladeSwap
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: BladeSwap (`bladeswap`)
 - Website: [https://bladeswap.xyz](https://bladeswap.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:25:20.348Z
-- Pipeline run: v2-2026-07-03-89943a
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: blast
-- Contract surface: 44 unique implementations (44 raw deployments)
+- Contract surface: 71 unique implementations (71 raw deployments)
+- Coverage basis: 0/9 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $197,728.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Dexs. Structurally: 44 project-authored contract(s) across 1 chain(s); 6 ERC20 tokens, 1 ERC721 NFT, 1 ERC1155 multi-token; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for BladeSwap. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Its contracts share 16 common project-authored base contract(s) (blastgovernorsetup, erc165, timestamp). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 9 contract row(s) across blast. Structural roles: 5 core, 4 supporting. 1 row(s) use upgradeable patterns.
 
-## Fork Lineage
+## Logic Topography
 
-This project reuses audited code from **Henjin DEX** (`henjin-dex`) in the AlgebraPoolDeployer, BasePluginV1Factory subsystem.
-2 audits inherited from `henjin-dex`, scoped to that subsystem.
+- Exact-run contract rows: 9
+- Structural roles: core (5), supporting (4)
+- Contract kinds: contract (9)
+- Detected standards: accesscontrol (3), erc165 (3), erc20 (1), multicall (1)
+- Frameworks: openzeppelin (7), prb-math (2), foundry (1), openzeppelin-upgradeable (1)
+- Upgradeable-pattern rows: 1
 
-Total inherited audits: 2. Inherited coverage reflects forked/shared code audited by the origin project — it is not a direct audit of this project.
+## Fork Analysis
+
+0 of 29 contracts are derived from known codebases. 29 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x4e9f4e...b61a4e`, chain 81457)
+- UnnamedContract (`0x52de29...b18856`, chain 81457)
+- UnnamedContract (`0x59dcec...1d54cd`, chain 81457)
+- UnnamedContract (`0x7553b3...bdfdd6`, chain 81457)
+- UnnamedContract (`0x75cb3e...cd68bd`, chain 81457)
+- UnnamedContract (`0x7adce9...abb219`, chain 81457)
+- UnnamedContract (`0x86ba05...38fd22`, chain 81457)
+- UnnamedContract (`0x918d73...471ab1`, chain 81457)
+- UnnamedContract (`0x969195...9ba348`, chain 81457)
+- UnnamedContract (`0x9b6d09...4d93c5`, chain 81457)
+- UnnamedContract (`0xa0cfb4...24a40e`, chain 81457)
+- UnnamedContract (`0xa41dd8...cab565`, chain 81457)
+- UnnamedContract (`0xa87dbf...38cca5`, chain 81457)
+- UnnamedContract (`0xcadaf1...2a2215`, chain 81457)
+- UnnamedContract (`0xd1fedd...ea82f4`, chain 81457)
+- UnnamedContract (`0xdadb18...9740fa`, chain 81457)
+- UnnamedContract (`0xe1d6a7...749d66`, chain 81457)
+- UnnamedContract (`0xf8f2ab...b95d85`, chain 81457)
+- UnnamedContract (`0xfa108c...adfc83`, chain 81457)
+- UnnamedContract (`0xffeecb...7cb593`, chain 81457)
+- AlgebraVaultFactoryStub (`0x013802...ceb8fd`, chain 81457)
+- Box (`0x194fa3...b3e943`, chain 81457)
+- FarmingCenter (`0x8d2eb2...9bc168`, chain 81457)
+- Lens (`0xce54ab...5e376f`, chain 81457)
+- SimpleAuthorizer (`0x06b143...c9d9cb`, chain 81457)
+- StableSwapPoolFactory (`0x5f0af3...3a77f2`, chain 81457)
+- SwapFacet (`0x10f6b1...95382c`, chain 81457)
+- TimelockController (`0x58534a...7f8396`, chain 81457)
+- XYKPool (`0xf4c920...0f6ec3`, chain 81457)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 44; live-surface contracts included: 44 (44 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 9; live-surface contracts included: 9 (9 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 29/32 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 2/44 (4.5%)
-- Deployed-live implementations: 44 of 44 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 2/44
-- Verified + Unaudited implementations: 42
+- Coverage of address-book-owned deployed-live implementations: 0/9 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 29 own, 2 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 40 discovered implementations excluded (0 third-party/infra; 1 standard proxy/library)
+- Proxy deployments represented within implementation groups: 2
+- Deployed-live implementations: 29 of 71 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/9
+- Verified + Unaudited implementations: 9
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 44
-- Raw deployments: 44
-- Audits discovered: 3 (1 direct, 2 inherited from forked code)
-- Scoreable audits (matched contracts): 2
+- Unverified implementations: 20
+- Unique implementations: 71
+- Raw deployments: 71
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 3 unknown
-- Coverage code basis (deployed vs audited code): 1 code-matched, 1 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| BailSec | Tier 2 | 2 | 4.5% | n/a |
-| unknown | Tier 2 | 2 | 4.5% | n/a |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (2)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AlgebraPoolDeployer | unknown | blast | n/a | [`0x3120cb...827835`](./contracts/blast-81457/0x3120cb20646017e8cad24d3d0302ea2083827835/) | ✅ Audited |
-| BasePluginV1Factory | unknown | blast | n/a | [`0x073cce...81f6c3`](./contracts/blast-81457/0x073cce6afb187323eb704af107a9a728cc81f6c3/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (42)
+### ⚠️ Verified + Unaudited (44)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| AdminFacet | unknown | blast | n/a | [`0x8be972...1ed3c1`](./contracts/blast-81457/0x8be972bbaaf57f43bff5901a788df38b401ed3c1/) | ⚠️ Unaudited |
-| AlgebraBladeIncentiveMaker | unknown | blast | n/a | [`0x12aaba...6e0fb1`](./contracts/blast-81457/0x12aaba5a8ec297ade0e3d2c97ccc22a4156e0fb1/) | ⚠️ Unaudited |
-| AlgebraCommunityVault | unknown | blast | n/a | [`0x089124...89fe71`](./contracts/blast-81457/0x089124f146509359af0eb52f6cc7f06a2389fe71/) | ⚠️ Unaudited |
-| AlgebraConverter | unknown | blast | n/a | [`0x6b75bb...9bf022`](./contracts/blast-81457/0x6b75bb64a41b38d57c39381d0c285daaa89bf022/) | ⚠️ Unaudited |
-| AlgebraEternalFarming | unknown | blast | n/a | [`0x23d3a3...af47f3`](./contracts/blast-81457/0x23d3a34c1723a83ece3db05405be0a9f78af47f3/) | ⚠️ Unaudited |
-| AlgebraFactory | unknown | blast | n/a | [`0x1757f1...d97a1e`](./contracts/blast-81457/0x1757f1c224fc4cd99a5cb9d5db8f77122ad97a1e/) | ⚠️ Unaudited |
-| AlgebraInterfaceMulticall | unknown | blast | n/a | [`0x1ab39a...739b4e`](./contracts/blast-81457/0x1ab39a79652929831e5333dc0edacb422d739b4e/) | ⚠️ Unaudited |
-| AlgebraVaultFactoryStub | unknown | blast | n/a | [`0x013802...ceb8fd`](./contracts/blast-81457/0x013802305a25a286f2dc95950b6254f4c3ceb8fd/) | ⚠️ Unaudited |
-| Blade | unknown | blast | n/a | [`0x3a4394...322cbf`](./contracts/blast-81457/0x3a439433dcb1cd6869dc23d3bedceff797322cbf/) | ⚠️ Unaudited |
-| Box | unknown | blast | n/a | [`0x194fa3...b3e943`](./contracts/blast-81457/0x194fa3066d3a44c5b74394298a317839c7b3e943/) | ⚠️ Unaudited |
-| Cherry | unknown | blast | n/a | [`0x758106...05c333`](./contracts/blast-81457/0x75810655c507214da899b5ed46ef337b1505c333/) | ⚠️ Unaudited |
-| Claim | unknown | blast | n/a | [`0x7fef67...1c083b`](./contracts/blast-81457/0x7fef67b108fc05e83a9bb8eb9f665791bf1c083b/) | ⚠️ Unaudited |
-| FarmingCenter | unknown | blast | n/a | [`0x8d2eb2...9bc168`](./contracts/blast-81457/0x8d2eb277a50c5aeef2c04ef4819055639f9bc168/) | ⚠️ Unaudited |
-| InspectorFacet | unknown | blast | n/a | [`0x8e02ad...2e4b5a`](./contracts/blast-81457/0x8e02ada26ecf813202735d0883977c098d2e4b5a/) | ⚠️ Unaudited |
-| Lens | unknown | blast | n/a | [`0xce54ab...5e376f`](./contracts/blast-81457/0xce54ab6c79c259bbdb8f4babea97f05f225e376f/) | ⚠️ Unaudited |
-| LinearBribeFactory | unknown | blast | n/a | [`0x5045c4...6946d9`](./contracts/blast-81457/0x5045c448a06498c29694b7348ec5a5010b6946d9/) | ⚠️ Unaudited |
-| MarketMakerFactory | unknown | blast | n/a | [`0x0a3c4c...b971da`](./contracts/blast-81457/0x0a3c4c899df38da088c93aea52cd8ce207b971da/) | ⚠️ Unaudited |
-| NFT | unknown | blast | n/a | [`0x757105...8dbf08`](./contracts/blast-81457/0x7571058f0423d9bd24b798ecd4135c47f78dbf08/) | ⚠️ Unaudited |
-| NFTHolderFacet | unknown | blast | n/a | [`0x2641a0...97377c`](./contracts/blast-81457/0x2641a05b44d5530fa44b1737415818174097377c/) | ⚠️ Unaudited |
-| NonfungiblePositionManager | unknown | blast | n/a | [`0x4e3219...a0094d`](./contracts/blast-81457/0x4e3219980d3a4ed73c286cd6d828c6e54fa0094d/) | ⚠️ Unaudited |
-| OverflowICO | unknown | blast | n/a | [`0x1bc5f0...2b4222`](./contracts/blast-81457/0x1bc5f075837e27fd1c02ed3742842dda5a2b4222/) | ⚠️ Unaudited |
-| PlainOverflowICO | unknown | blast | n/a | [`0x06ef68...e9a41f`](./contracts/blast-81457/0x06ef68722da95ff858d1fbe6ac99be3e00e9a41f/) | ⚠️ Unaudited |
-| Quoter | unknown | blast | n/a | [`0x96d1e7...2a6522`](./contracts/blast-81457/0x96d1e789cb0992d15335a99af7e3531c6d2a6522/) | ⚠️ Unaudited |
-| QuoterV2 | unknown | blast | n/a | [`0x4b1632...34ed00`](./contracts/blast-81457/0x4b1632b19a9d41cada6b78bced3205838534ed00/) | ⚠️ Unaudited |
-| SalaryPayment | unknown | blast | n/a | [`0x6c48d1...6df14b`](./contracts/blast-81457/0x6c48d1d3ced5cd8d37e6626bb1cef02c696df14b/) | ⚠️ Unaudited |
-| SimpleAuthorizer | unknown | blast | n/a | [`0x06b143...c9d9cb`](./contracts/blast-81457/0x06b1431b2cfc81fd1e428d6a4916fec395c9d9cb/) | ⚠️ Unaudited |
-| StableSwapPoolFactory | unknown | blast | n/a | [`0x5f0af3...3a77f2`](./contracts/blast-81457/0x5f0af33207aa4f62d678cdead8d2dd4e8e3a77f2/) | ⚠️ Unaudited |
-| SwapAuxillaryFacet | unknown | blast | n/a | [`0x94052f...298620`](./contracts/blast-81457/0x94052fd2e9d6073eec85e9bede37cc71fc298620/) | ⚠️ Unaudited |
-| SwapFacet | unknown | blast | n/a | [`0x10f6b1...95382c`](./contracts/blast-81457/0x10f6b147d51f7578f760065df7f174c3bc95382c/) | ⚠️ Unaudited |
-| SwapHelperFacet | unknown | blast | n/a | [`0x1e4f59...1727dd`](./contracts/blast-81457/0x1e4f59a9bafd7c96dfce8c73a6a900b61d1727dd/) | ⚠️ Unaudited |
-| SwapHelperFacet2 | unknown | blast | n/a | [`0x0f8020...05cb7b`](./contracts/blast-81457/0x0f8020ff5c2290b57db481f0c7db561c3e05cb7b/) | ⚠️ Unaudited |
-| SwapRouter | unknown | blast | n/a | [`0x422f44...7db286`](./contracts/blast-81457/0x422f442e02df680336563f26a04e3754247db286/) | ⚠️ Unaudited |
-| TickLens | unknown | blast | n/a | [`0x17fbdc...d2f3f0`](./contracts/blast-81457/0x17fbdc4b95cb227e9700623f5cc381b0a9d2f3f0/) | ⚠️ Unaudited |
-| TimelockController | unknown | blast | n/a | [`0x58534a...7f8396`](./contracts/blast-81457/0x58534a65e415a2601092a769bb3ece09b17f8396/) | ⚠️ Unaudited |
-| TokenFactory | unknown | blast | n/a | [`0x3ab5ba...b04997`](./contracts/blast-81457/0x3ab5ba717cb20def2ed08bc03c8a3aa716b04997/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | blast | n/a | [`0x3cc69c...5a64d7`](./contracts/blast-81457/0x3cc69ccda8f0be8a6a52840862a17fb2615a64d7/) | ⚠️ Unaudited |
-| VeBlade | unknown | blast | n/a | [`0x1f12e6...cfe07c`](./contracts/blast-81457/0x1f12e68869ff3432aac30217f0a129a240cfe07c/) | ⚠️ Unaudited |
-| VelocoreLens | unknown | blast | n/a | [`0x11879d...8a2ec7`](./contracts/blast-81457/0x11879da73f1edbe0f93d9cbaf1811c01d78a2ec7/) | ⚠️ Unaudited |
-| Voter | unknown | blast | n/a | [`0x57bda1...4d54f9`](./contracts/blast-81457/0x57bda1e8d77e681a2be548c4ed5134283d4d54f9/) | ⚠️ Unaudited |
-| WETHConverter | unknown | blast | n/a | [`0x5cf055...06d2ff`](./contracts/blast-81457/0x5cf0552a0177ff00cb1e72b2390b2fd49606d2ff/) | ⚠️ Unaudited |
-| XYKPool | unknown | blast | n/a | [`0xf4c920...0f6ec3`](./contracts/blast-81457/0xf4c92048f10b261e89f70c6dc4e4e9bbac0f6ec3/) | ⚠️ Unaudited |
-| XYKPoolFactory | unknown | blast | n/a | [`0x40f1da...fac083`](./contracts/blast-81457/0x40f1dabface8ff25b3fe96e18ab426076dfac083/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| AdminFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x8be972...1ed3c1` | ⚠️ Unaudited |
+| AlgebraBladeIncentiveMaker | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x12aaba...6e0fb1` | ⚠️ Unaudited |
+| AlgebraCommunityVault | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x089124...89fe71` | ⚠️ Unaudited |
+| AlgebraConverter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x6b75bb...9bf022` | ⚠️ Unaudited |
+| AlgebraEternalFarming | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x23d3a3...af47f3` | ⚠️ Unaudited |
+| AlgebraFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x1757f1...d97a1e` | ⚠️ Unaudited |
+| AlgebraInterfaceMulticall | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x1ab39a...739b4e` | ⚠️ Unaudited |
+| AlgebraPoolDeployer | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x3120cb...827835` | ⚠️ Unaudited |
+| AlgebraVaultFactoryStub | unknown | project_anchor | own_supporting | 0 | blast | unit-380641 | `0x013802...ceb8fd` | ⚠️ Unaudited |
+| BasePluginV1Factory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x073cce...81f6c3` | ⚠️ Unaudited |
+| Blade | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x3a4394...322cbf` | ⚠️ Unaudited |
+| Box | unknown | project_anchor | own_supporting | 0 | blast | unit-380643 | `0x194fa3...b3e943` | ⚠️ Unaudited |
+| Cherry | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x758106...05c333` | ⚠️ Unaudited |
+| Claim | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x7fef67...1c083b` | ⚠️ Unaudited |
+| FarmingCenter | unknown | project_anchor | own_supporting | 0 | blast | unit-380656 | `0x8d2eb2...9bc168` | ⚠️ Unaudited |
+| InspectorFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x8e02ad...2e4b5a` | ⚠️ Unaudited |
+| Lens | unknown | project_anchor | own_supporting | 0 | blast | unit-380664 | `0xce54ab...5e376f` | ⚠️ Unaudited |
+| LinearBribeFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x5045c4...6946d9` | ⚠️ Unaudited |
+| MarketMakerFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x0a3c4c...b971da` | ⚠️ Unaudited |
+| NFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x757105...8dbf08` | ⚠️ Unaudited |
+| NFTHolderFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x2641a0...97377c` | ⚠️ Unaudited |
+| NonfungiblePositionManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x4e3219...a0094d` | ⚠️ Unaudited |
+| OverflowICO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x1bc5f0...2b4222` | ⚠️ Unaudited |
+| PlainOverflowICO | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x06ef68...e9a41f` | ⚠️ Unaudited |
+| Quoter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x96d1e7...2a6522` | ⚠️ Unaudited |
+| QuoterV2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x4b1632...34ed00` | ⚠️ Unaudited |
+| SalaryPayment | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x6c48d1...6df14b` | ⚠️ Unaudited |
+| SimpleAuthorizer | unknown | project_anchor | own_supporting | 0 | blast | unit-380642 | `0x06b143...c9d9cb` | ⚠️ Unaudited |
+| StableSwapPoolFactory | unknown | project_anchor | own_supporting | 0 | blast | unit-380650 | `0x5f0af3...3a77f2` | ⚠️ Unaudited |
+| SwapAuxillaryFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x94052f...298620` | ⚠️ Unaudited |
+| SwapFacet | unknown | project_anchor | own_supporting | 1 | blast | unit-380672 | `0x10f6b1...95382c` | ⚠️ Unaudited |
+| SwapHelperFacet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x1e4f59...1727dd` | ⚠️ Unaudited |
+| SwapHelperFacet2 | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x0f8020...05cb7b` | ⚠️ Unaudited |
+| SwapRouter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x422f44...7db286` | ⚠️ Unaudited |
+| TickLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x17fbdc...d2f3f0` | ⚠️ Unaudited |
+| TimelockController | unknown | project_anchor | own_supporting | 0 | blast | unit-380648 | `0x58534a...7f8396` | ⚠️ Unaudited |
+| TokenFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x3ab5ba...b04997` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | standard_proxy_or_library (excluded) | 1 | blast | n/a | `0x3cc69c...5a64d7` | ⚠️ Unaudited |
+| VeBlade | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x1f12e6...cfe07c` | ⚠️ Unaudited |
+| VelocoreLens | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x11879d...8a2ec7` | ⚠️ Unaudited |
+| Voter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x57bda1...4d54f9` | ⚠️ Unaudited |
+| WETHConverter | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x5cf055...06d2ff` | ⚠️ Unaudited |
+| XYKPool | unknown | project_anchor | own_supporting | 0 | blast | unit-380668 | `0xf4c920...0f6ec3` | ⚠️ Unaudited |
+| XYKPoolFactory | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x40f1da...fac083` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -129,34 +183,81 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (27)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x119ade...9f21d0` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x2f793c...ba4875` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | blast | unit-380644 | `0x40c9b5...a4b673` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380646 | `0x4e9f4e...b61a4e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380647 | `0x52de29...b18856` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380649 | `0x59dcec...1d54cd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | deprecated_or_legacy_inventory (excluded) | 0 | blast | unit-380651 | `0x718867...e06235` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380652 | `0x7553b3...bdfdd6` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380653 | `0x75cb3e...cd68bd` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380654 | `0x7adce9...abb219` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x7d9880...5f191b` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x825d2d...f4d557` | ❓ Unverified |
+| UnnamedContract | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | blast | n/a | `0x82eb3c...3e5deb` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380655 | `0x86ba05...38fd22` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380657 | `0x918d73...471ab1` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380658 | `0x969195...9ba348` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380659 | `0x9b6d09...4d93c5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380660 | `0xa0cfb4...24a40e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380661 | `0xa41dd8...cab565` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380662 | `0xa87dbf...38cca5` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380663 | `0xcadaf1...2a2215` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380665 | `0xd1fedd...ea82f4` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380666 | `0xdadb18...9740fa` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380667 | `0xe1d6a7...749d66` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380669 | `0xf8f2ab...b95d85` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380670 | `0xfa108c...adfc83` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | blast | unit-380671 | `0xffeecb...7cb593` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Bailsec - Algebra Integral - Update Audit (differential) Final Report Github (+Resolution).pdf](https://github.com/bailsec/BailSec/blob/main/Bailsec%20-%20Algebra%20Integral%20-%20Update%20Audit%20(differential)%20Final%20Report%20Github%20(%2BResolution).pdf) | unknown | Audit | n/a | unknown | Inherited from Henjin DEX — forked code, scoped to AlgebraPoolDeployer, BasePluginV1Factory | inherited | 2 | n/a |
-| [Bailsec - Algebra Core Update Audit (differential) - Final Report.pdf](https://github.com/bailsec/BailSec/blob/main/Bailsec%20-%20Algebra%20Core%20Update%20Audit%20(differential)%20-%20Final%20Report.pdf) | BailSec | Audit | n/a | unknown | Inherited from Henjin DEX — forked code, scoped to AlgebraPoolDeployer, BasePluginV1Factory | inherited | 2 | n/a |
-| [- [Audits]()](https://bladeswap.gitbook.io/bladeswap/resources/audits.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [- [Audits]()](https://bladeswap.gitbook.io/bladeswap/resources/audits.md) | unknown | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [19575] - [Audits]() — no match: The document is a summary page listing multiple audits (Zokyo, Scalebit, Hacken) with dates and links, but does not contain the actual audit reports or scope sections listing specific contracts. No contract names are identifiable.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| blast | `0x013802...ceb8fd` | AlgebraVaultFactoryStub | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x194fa3...b3e943` | Box | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x8d2eb2...9bc168` | FarmingCenter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0xce54ab...5e376f` | Lens | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x06b143...c9d9cb` | SimpleAuthorizer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x5f0af3...3a77f2` | StableSwapPoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0x10f6b1...95382c` | SwapFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| blast | `0xf4c920...0f6ec3` | XYKPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 42 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 44 |
+| standard_library | 2 |
+| needs_review | 27 |
 
 ## Scope Matching Notes
 
@@ -164,8 +265,10 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: inherited_name_remap=4
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: low=1
+- Match method counts: n/a
 
 Zero-match audit list:
 

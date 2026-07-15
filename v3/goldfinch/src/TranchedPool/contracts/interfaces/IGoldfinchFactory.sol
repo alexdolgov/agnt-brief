@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.12;
+pragma solidity >=0.6.12;
 pragma experimental ABIEncoderV2;
 
 interface IGoldfinchFactory {
@@ -15,7 +15,8 @@ interface IGoldfinchFactory {
     uint256 _interestApr,
     uint256 _paymentPeriodInDays,
     uint256 _termInDays,
-    uint256 _lateFeeApr
+    uint256 _lateFeeApr,
+    uint256[] calldata _allowedUIDTypes
   ) external returns (address);
 
   function createMigratedPool(
@@ -25,8 +26,7 @@ interface IGoldfinchFactory {
     uint256 _interestApr,
     uint256 _paymentPeriodInDays,
     uint256 _termInDays,
-    uint256 _lateFeeApr
+    uint256 _lateFeeApr,
+    uint256[] calldata _allowedUIDTypes
   ) external returns (address);
-
-  function updateGoldfinchConfig() external;
 }

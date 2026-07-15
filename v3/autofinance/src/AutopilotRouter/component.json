@@ -1,34 +1,28 @@
 {
   "component": "AutopilotRouter",
   "main_contract": "AutopilotRouter",
-  "source_file_count": 77,
-  "deployment_count": 3,
+  "source_entry_count": 73,
+  "source_file_count": 73,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AutopilotRouter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x27a9c16ef2dc44a7bf6df4d115fe4c27d87621ad",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x39ff6d21204b919441d17bef61d19181870835a2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x6431863c858214f22b282c446f61502968036487",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xf86761ff28d78c5c911cc65b4511bc1f4570b140",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391569"
     }
   ]
 }

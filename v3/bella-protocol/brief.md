@@ -1,53 +1,95 @@
 # Agentic Audit Brief: Bella Protocol
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 1 (0 matched; 1 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ⚠️ Lifecycle status: DEAD - TVL dropped 11.3% over 90 days
 
 ## Project Overview
 
 - Project: Bella Protocol (`bella-protocol`)
+- Website: [https://www.bella.fi/en-US](https://www.bella.fi/en-US)
 - Lifecycle: dead (Tier 0, 99.8% below peak)
-- Generated: 2026-07-03T21:05:33.482Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-1cbb
-- Chains: ethereum, manta, mantle, zksync-era
-- Contract surface: 20 unique implementations (41 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: manta-pacific, mantle, zksync-era
+- Contract surface: 6 unique implementations (6 raw deployments)
+- Coverage basis: 0/1 confirmed own live verified implementations (0.0%); conservative 0.0% with 0 needs-review implementation(s)
 - DeFi Llama TVL: $153,481.87
-- On-chain TVL (included contracts): $272,623.47
-- TVL by chain: Ethereum $272,623.47
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Yield. Structurally: 16 project-authored contract(s) across 2 chain(s); 3 ERC20 tokens; built on openzeppelin.
+This brief describes the observed EVM deployment and audit surface for Bella Protocol. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 6 functional families. Its contracts share 2 common project-authored base contract(s) (crvlocker, optimismmintableerc20). Dominant framework: openzeppelin.
+The pinned logic-topography run contains 1 contract row(s) across manta-pacific, mantle, zksync-era. Structural roles: 1 unclassified. No upgradeable pattern was identified in these rows.
+
+## Logic Topography
+
+- Exact-run contract rows: 1
+- Structural roles: unclassified (1)
+- Contract kinds: contract (1)
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 5 contracts are derived from known codebases. 5 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x2c9bfc...2d7c0f`, chain 169)
+- UnnamedContract (`0x9fb6ca...d2803c`, chain 324)
+- UnnamedContract (`0xb83cfb...ae92d9`, chain 324)
+- UnnamedContract (`0x339010...f63798`, chain 5000)
+- UnnamedContract (`0xbf2b95...23980c`, chain 5000)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 48; live-surface contracts included: 41 (11 live, 30 unknown).
-- Excluded by liveness: 7 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 6/8 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/6 (0.0%)
-- Deployed-live implementations: 6 of 20 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/8
-- Verified + Unaudited implementations: 8
+- Coverage of address-book-owned deployed-live implementations: 0/1 (0.0%)
+- Coverage assessment: assessed (high confidence) — Coverage is calculated over confirmed own address-book implementations with no unresolved address-book inventory in the live verified denominator.
+- Address-book implementation classification: 6 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 0
+- Deployed-live implementations: 6 of 6 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/1
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 12
-- Unique implementations: 20
-- Raw deployments: 41
+- Unverified implementations: 5
+- Unique implementations: 6
+- Raw deployments: 6
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $272,623.47
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2020-09 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $272,623.47 represents exposure in a protocol with dead activity.
+- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -59,18 +101,11 @@ The protocol comprises 6 functional families. Its contracts share 2 common proje
 
 - None
 
-### ⚠️ Verified + Unaudited (8)
+### ⚠️ Verified + Unaudited (1)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| bVault | core_logic | ethereum | n/a | 6 deployments: ethereum [`0x2c2327...568ea6`](./contracts/ethereum-1/0x2c23276107b45e64c8c59482f4a24f4f2e568ea6/); ethereum `0x378388...a35153`; ethereum `0x3fb6b0...15a2cc`; ethereum `0x750d30...7996d0`; ethereum `0x801690...85dc0e`; ethereum `0x8d9a39...ec6108` | ⚠️ Unaudited |
-| StrategyArpa | core_logic | ethereum | n/a | [`0xa3063c...63095e`](./contracts/ethereum-1/0xa3063cf3a934068cbe8f55212577a1ffbe63095e/) | ⚠️ Unaudited |
-| Bella | unknown | ethereum | n/a | [`0xa91ac6...a07e14`](./contracts/ethereum-1/0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14/) | ⚠️ Unaudited |
-| MantaMintableERC20 | unknown | manta | n/a | 17 deployments: manta [`0x01d275...dbc02a`](./contracts/manta-169/0x01d27580c464d5b3b26f78bee12e684901dbc02a/); manta `0x078f71...90604b`; manta `0x091745...627442`; manta `0x0f52a5...3ccbb4`; manta `0x207d76...8a2181`; manta `0x4220e9...e8c8ff`; manta `0x6025f8...06cfb0`; manta `0x8d7090...ab566a`; manta `0x90e957...eb6917`; manta `0x916476...295f9a`; manta `0x975896...85eadd`; manta `0xab8653...fa5605`; manta `0xb01e11...7c5aa9`; manta `0xb385e5...88e1ce`; manta `0xbab1c5...59d154`; manta `0xd21237...0bc46d`; manta `0xe22e3d...7f0020` | ⚠️ Unaudited |
-| MantaMintableERC20WithBridgeFlag | operational_periphery | manta | n/a | [`0xbdad40...61fb07`](./contracts/manta-169/0xbdad407f77f44f7da6684b416b1951eca461fb07/) | ⚠️ Unaudited |
-| TokenPool | core_logic | ethereum | n/a | [`0xc93528...793d84`](./contracts/ethereum-1/0xc935285b0d88069305431dace0c3c01d7e793d84/) | ⚠️ Unaudited |
-| UniswapV2Pair | unknown | ethereum | n/a | [`0x9f624b...980808`](./contracts/ethereum-1/0x9f624b25991b99d7b14d6740a9d581dd77980808/) | ⚠️ Unaudited |
-| WhiteList | unknown | ethereum | n/a | [`0x19f35c...8e493e`](./contracts/ethereum-1/0x19f35ce3c3875c120ab602386c8d6a59e88e493e/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| MantaMintableERC20 | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-229303 | `0xb385e5...88e1ce` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -84,30 +119,38 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (12)
+### ❓ Unverified (5)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | manta | n/a | `0x2c9bfc...2d7c0f` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0x6731a6...dfde2a` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0x994be2...96f5a7` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0x9e98de...91ca35` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0xa91ac6...a07e14` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0xbe138a...966cc3` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0xbf2b95...23980c` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0xc865dd...8c1df9` | ❓ Unverified |
-| UnnamedContract | unknown | manta | n/a | `0xf0d110...edf61a` | ❓ Unverified |
-| UnnamedContract | unknown | zksync-era | n/a | `0xa91ac6...a07e14` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x3bd7a1...b74d94` | ❓ Unverified |
-| UnnamedContract | unknown | mantle | n/a | `0x9fb6ca...d2803c` | ❓ Unverified |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | manta-pacific | unit-229302 | `0x2c9bfc...2d7c0f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-229305 | `0x9fb6ca...d2803c` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | zksync-era | unit-229306 | `0xb83cfb...ae92d9` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-229308 | `0x339010...f63798` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | mantle | unit-229309 | `0xbf2b95...23980c` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [bella_audit_report_2020_48_en_1_0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/bella_audit_report_2020_48_en_1_0.pdf) | PeckShield | Audit | 2020-09 | stale | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [bella_audit_report_2020_48_en_1_0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/bella_audit_report_2020_48_en_1_0.pdf) | PeckShield | Audit | 2020-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 2 | high |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [12756] bella_audit_report_2020_48_en_1_0.pdf — no match: The report clearly states the target is YCurveStaking.sol and also references Ownable.sol in findings.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| bella_audit_report_2020_48_en_1_0.pdf | YCurveStaking | unmatched — not counted | — | Listed in scope table and throughout report as target contract. | no |
+| bella_audit_report_2020_48_en_1_0.pdf | Ownable | unmatched — not counted | — | Mentioned in finding PVE-003 as target file. | no |
 
 ## Coverage Gaps
 
@@ -115,21 +158,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x2c2327...568ea6`](./contracts/ethereum-1/0x2c23276107b45e64c8c59482f4a24f4f2e568ea6/) | bVault | core_logic | $269,135.76 | Verified native implementation with $269,135.76 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa3063c...63095e`](./contracts/ethereum-1/0xa3063cf3a934068cbe8f55212577a1ffbe63095e/) | StrategyArpa | core_logic | $3,487.71 | Verified native implementation with $3,487.71 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa91ac6...a07e14`](./contracts/ethereum-1/0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14/) | Bella | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| manta | [`0xbdad40...61fb07`](./contracts/manta-169/0xbdad407f77f44f7da6684b416b1951eca461fb07/) | MantaMintableERC20WithBridgeFlag | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc93528...793d84`](./contracts/ethereum-1/0xc935285b0d88069305431dace0c3c01d7e793d84/) | TokenPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x19f35c...8e493e`](./contracts/ethereum-1/0x19f35ce3c3875c120ab602386c8d6a59e88e493e/) | WhiteList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta-pacific | `0xb385e5...88e1ce` | MantaMintableERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 11 |
-| upstream | 1 |
+| native | 2 |
+| upstream | 0 |
 | standard_library | 0 |
-| needs_review | 8 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 
@@ -137,7 +175,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 2 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1
 - Match method counts: n/a
 
 Zero-match audit list:

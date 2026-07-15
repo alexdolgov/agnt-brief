@@ -1,26 +1,39 @@
 {
   "component": "GooseDollarBond",
   "main_contract": "GooseDollarBond",
-  "source_file_count": 9,
-  "deployment_count": 2,
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [
+    {
+      "original_path": "/D/Projects/GooseFinance/goose-contracts-vaults/contracts/interfaces/IMintable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-76a86f0735dd-IMintable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/D/Projects/GooseFinance/goose-contracts-vaults/contracts/tokens/GooseDollarBond.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-e875547b4994-GooseDollarBond.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GooseDollarBond\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x03d40b813294a586df570a5f4aa03010098fefc1",
+      "address": "0x831b85b2c6e55344d6b17c9d67ea83771b0a9c8e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xf75f0253fe8bdaaf7685d0ce07820ca50b231f74",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394774"
     }
   ]
 }

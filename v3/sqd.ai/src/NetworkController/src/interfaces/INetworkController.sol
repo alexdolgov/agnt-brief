@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: GPL-3.0-only
 pragma solidity 0.8.20;
 
 interface INetworkController {
@@ -12,15 +12,9 @@ interface INetworkController {
   event AllowedVestedTargetUpdated(address target, bool isAllowed);
   event TargetCapacityUpdated(uint256 target);
   event RewardCoefficientUpdated(uint256 coefficient);
-  event LockPeriodUpdated(uint256 lockPeriod);
 
-  /// @notice Deprecated
   /// @dev Amount of blocks in one epoch
-  /// @notice It's now lock period for workers for compatibility reason
   function epochLength() external view returns (uint128);
-
-  /// @dev Amount of blocks in one epoch
-  function workerEpochLength() external view returns (uint128);
 
   /// @dev Amount of tokens required to register a worker
   function bondAmount() external view returns (uint256);

@@ -1,43 +1,85 @@
 # Agentic Audit Brief: PieDAO
 
+## Export Authority
+
+- Production state: **blocked no audit authority**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 0 (0 matched; 0 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: PieDAO (`piedao`)
+- Website: [https://www.piedao.org/](https://www.piedao.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:42.339Z
-- Pipeline run: v2-2026-07-02-1ba3fd
-- Chains: ethereum
-- Contract surface: 8 unique implementations (8 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: bsc, ethereum
+- Contract surface: 13 unique implementations (13 raw deployments)
+- Coverage basis: not assessable — No confirmed own live-verified denominator is available.
 - DeFi Llama TVL: $586,125.22
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Indexes. Structurally: 8 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for PieDAO in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol forms a single structural family (Core Logic) of 8 contract(s).
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
+
+## Fork Analysis
+
+0 of 5 contracts are derived from known codebases. 5 contracts have no detected origin.
+
+### Forked Contracts
+
+- None
+
+### Original Contracts (no fork detected - full audit scope)
+
+- UnnamedContract (`0x220f25...992b97`, chain 1)
+- UnnamedContract (`0x831433...43762f`, chain 1)
+- UnnamedContract (`0xb3c2b0...d837bc`, chain 1)
+- UnnamedContract (`0xb9a4bc...8ff88e`, chain 1)
+- UnnamedContract (`0xd7db1a...d09757`, chain 56)
 
 ## Contract Surface Quality
 
-- Indexed contracts: 8; live-surface contracts included: 8 (8 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 uninitialized.
+- Deployment units: 5/5 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/8 (0.0%)
-- Deployed-live implementations: 8 of 8 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/8
-- Verified + Unaudited implementations: 8
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No confirmed own live-verified denominator is available.
+- Address-book implementation classification: 5 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 8 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Deployed-live implementations: 5 of 13 unique (rest dead/inactive/uninitialized)
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 8
-- Raw deployments: 8
+- Unverified implementations: 5
+- Unique implementations: 13
+- Raw deployments: 13
 - Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -58,16 +100,16 @@ The protocol forms a single structural family (Core Logic) of 8 contract(s).
 
 ### ⚠️ Verified + Unaudited (8)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BasketMigrator | unknown | ethereum | n/a | [`0x42bb98...fad146`](./contracts/ethereum-1/0x42bb983670349c0a95e271121f2c236036fad146/) | ⚠️ Unaudited |
-| ERC20NonTransferableRewardsOwned | unknown | ethereum | n/a | [`0x4fb1af...28a321`](./contracts/ethereum-1/0x4fb1afbb9de791e59222c385d87653e67728a321/) | ⚠️ Unaudited |
-| LendingManager | unknown | ethereum | n/a | [`0x52fbda...f54a66`](./contracts/ethereum-1/0x52fbda94cff098c1c89725cedb40e65276f54a66/) | ⚠️ Unaudited |
-| MerkleDistributor | unknown | ethereum | n/a | [`0xbab795...afa456`](./contracts/ethereum-1/0xbab795479bff02c6ef52a10a54a95a42a1afa456/) | ⚠️ Unaudited |
-| MiniMeToken | unknown | ethereum | n/a | [`0xad32a8...737b2d`](./contracts/ethereum-1/0xad32a8e6220741182940c5abf610bde99e737b2d/) | ⚠️ Unaudited |
-| RewardEscrow | unknown | ethereum | n/a | [`0xfcf1ab...c11a9f`](./contracts/ethereum-1/0xfcf1abc45a264d1172af928ff04d3413bbc11a9f/) | ⚠️ Unaudited |
-| SharesTimeLock | unknown | ethereum | n/a | [`0x046b9c...928f01`](./contracts/ethereum-1/0x046b9c3a8a02a802fba7e61054b79e28e0928f01/) | ⚠️ Unaudited |
-| wLSPair | unknown | ethereum | n/a | [`0x037efb...eb4128`](./contracts/ethereum-1/0x037efbc87ba34816ebe3326cf189910f82eb4128/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BasketMigrator | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x42bb98...fad146` | ⚠️ Unaudited |
+| ERC20NonTransferableRewardsOwned | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x4fb1af...28a321` | ⚠️ Unaudited |
+| LendingManager | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x52fbda...f54a66` | ⚠️ Unaudited |
+| MerkleDistributor | unknown | non_address_book | non_address_book_inventory (excluded) | 1 | ethereum | n/a | `0xbab795...afa456` | ⚠️ Unaudited |
+| MiniMeToken | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xad32a8...737b2d` | ⚠️ Unaudited |
+| RewardEscrow | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0xfcf1ab...c11a9f` | ⚠️ Unaudited |
+| SharesTimeLock | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x046b9c...928f01` | ⚠️ Unaudited |
+| wLSPair | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | n/a | `0x037efb...eb4128` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,16 +123,28 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (5)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251248 | `0x220f25...992b97` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251249 | `0x831433...43762f` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251250 | `0xb3c2b0...d837bc` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | ethereum | unit-251251 | `0xb9a4bc...8ff88e` | ❓ Unverified |
+| UnnamedContract | unknown | project_anchor | own_supporting | 0 | bsc | unit-251252 | `0xd7db1a...d09757` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+- No persisted address-book scope analysis is available.
 
 ## Coverage Gaps
 
@@ -102,10 +156,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 8 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 8 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 
@@ -113,6 +167,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 0 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 

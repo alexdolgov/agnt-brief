@@ -1,7 +1,15 @@
 {
   "component": "BunniZapIn",
   "main_contract": "BunniZapIn",
+  "source_entry_count": 24,
   "source_file_count": 24,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BunniZapIn\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0x0000000000dfe4c0014a4fb7fc63bb174b8adb93",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402539"
     }
   ]
 }

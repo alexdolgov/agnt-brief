@@ -1,8 +1,16 @@
 {
   "component": "UniswapV3Adapter",
   "main_contract": "UniswapV3Adapter",
+  "source_entry_count": 25,
   "source_file_count": 25,
-  "deployment_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UniswapV3Adapter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": true,
   "audits_covering": [
     "https://www.snuggle.fi/security"
@@ -11,34 +19,12 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0xca4cf963c71234a4f7d44a750b4d3847b4debabd",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
       "address": "0xf757c96463cb5588dc7d8eba464c947b08f33010",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x76bdb43d2ec3b190087076649224f47a58c44ef2",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xa6e46583b91757f50317f84349610737d9be082c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399060"
     }
   ]
 }

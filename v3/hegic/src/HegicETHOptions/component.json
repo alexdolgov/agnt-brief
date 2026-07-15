@@ -1,7 +1,15 @@
 {
   "component": "HegicETHOptions",
   "main_contract": "HegicETHOptions",
+  "source_entry_count": 1,
   "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HegicETHOptions\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -11,10 +19,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x878f15ffc8b894a1ba7647c7176e4c01f74e140b",
+      "address": "0xefc0eeadc1132a12c9487d800112693bf49ecfa2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394993"
     }
   ]
 }

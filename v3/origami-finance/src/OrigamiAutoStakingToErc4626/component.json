@@ -1,7 +1,15 @@
 {
   "component": "OrigamiAutoStakingToErc4626",
   "main_contract": "OrigamiAutoStakingToErc4626",
+  "source_entry_count": 19,
   "source_file_count": 19,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OrigamiAutoStakingToErc4626\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -14,7 +22,9 @@
       "address": "0x1a0730d90a253ded0177e5a1dbcfd169c5e3f67f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403624"
     }
   ]
 }

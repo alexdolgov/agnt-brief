@@ -11,8 +11,8 @@ import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
  */
 contract VestingDistributor {
 
-    Pool immutable pool;
-    IERC20Metadata immutable poolToken;
+    Pool pool;
+    IERC20Metadata poolToken;
     address keeper;
     address pendingKeeper;
 
@@ -76,10 +76,9 @@ contract VestingDistributor {
         participants.push(msg.sender);
         locked[msg.sender] = amount;
         unvestingTime[msg.sender] = time;
-        uint256 _multiplier = getMultiplier(time);
-        multiplier[msg.sender] = _multiplier;
+        multiplier[msg.sender] = getMultiplier(time);
 
-        totalLockedMultiplied += amount * _multiplier / 1e18;
+        totalLockedMultiplied += amount * multiplier[msg.sender] / 1e18;
     }
 
     /**
@@ -180,7 +179,7 @@ contract VestingDistributor {
 
     function updateWithdrawn(address account, uint256 amount) public onlyPool {
         withdrawn[account] += amount;
-        if (withdrawn[account] > availableToWithdraw(account)) {
+        if (withdrawn[account] > locked[account]) {
             revert WithdrawMoreThanLocked();
         }
         totalLockedMultiplied -= amount * multiplier[account] / 1e18;
@@ -218,7 +217,7 @@ contract VestingDistributor {
         if (time >= 2 * ONE_DAY) return 1.32e18; // min. 2 days
         if (time >= 1 * ONE_DAY) return 1.2e18; // min. 1 day
 
-        return 1e18;
+        return 1;
     }
 
 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.6.12;
+pragma solidity =0.8.14;
 
 /*
 
@@ -35,23 +35,17 @@ pragma solidity 0.6.12;
 * SOFTWARE.
 */
 
-import '@openzeppelin/contracts/access/Ownable.sol';
-import '@openzeppelin/contracts/math/SafeMath.sol';
-import '@openzeppelin/contracts/token/ERC20/IERC20.sol';
-import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
-import '@openzeppelin/contracts/token/ERC20/SafeERC20.sol';
-import '@openzeppelin/contracts/utils/EnumerableSet.sol';
-import '@openzeppelin/contracts/utils/Pausable.sol';
-import '@openzeppelin/contracts/utils/ReentrancyGuard.sol';
-import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
+import "../interfaces/IWETH.sol";
+import "../interfaces/IWooAccessManager.sol";
 
-import '../interfaces/IWETH.sol';
-import '../interfaces/IWooAccessManager.sol';
+import "../libraries/TransferHelper.sol";
+
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+import {ReentrancyGuard} from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import {IERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import {EnumerableSet} from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
 
 contract WooWithdrawManager is Ownable, ReentrancyGuard {
-    using SafeMath for uint256;
-    using SafeERC20 for IERC20;
-
     // addedAmount: added withdrawal amount for this user
     // totalAmount: total withdrawal amount for this user
     event WithdrawAdded(address indexed user, uint256 addedAmount, uint256 totalAmount);
@@ -67,7 +61,7 @@ contract WooWithdrawManager is Ownable, ReentrancyGuard {
 
     address constant ETH_PLACEHOLDER_ADDR = 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE;
 
-    constructor() public {}
+    constructor() {}
 
     function init(
         address _weth,
@@ -84,13 +78,13 @@ contract WooWithdrawManager is Ownable, ReentrancyGuard {
     modifier onlyAdmin() {
         require(
             owner() == msg.sender || IWooAccessManager(accessManager).isVaultAdmin(msg.sender),
-            'WooWithdrawManager: !owner'
+            "WooWithdrawManager: !owner"
         );
         _;
     }
 
     modifier onlySuperChargerVault() {
-        require(superChargerVault == msg.sender, 'WooWithdrawManager: !superChargerVault');
+        require(superChargerVault == msg.sender, "WooWithdrawManager: !superChargerVault");
         _;
     }
 
@@ -100,7 +94,7 @@ contract WooWithdrawManager is Ownable, ReentrancyGuard {
 
     function addWithdrawAmount(address user, uint256 amount) external onlySuperChargerVault {
         TransferHelper.safeTransferFrom(want, msg.sender, address(this), amount);
-        withdrawAmount[user] = withdrawAmount[user].add(amount);
+        withdrawAmount[user] = withdrawAmount[user] + amount;
         emit WithdrawAdded(user, amount, withdrawAmount[user]);
     }
 

@@ -1,7 +1,15 @@
 {
   "component": "Quoter-2",
   "main_contract": "Quoter",
-  "source_file_count": 22,
+  "source_entry_count": 19,
+  "source_file_count": 19,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Quoter-2\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +17,12 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x0fc73040b26e9bc8514fa028d998e73a254fa76e",
+      "address": "0xfe24b2cdff01b644995bc248ba8497467d688f7b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392634"
     }
   ]
 }

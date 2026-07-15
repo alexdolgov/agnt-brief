@@ -1,26 +1,30 @@
 {
   "component": "Timelock",
   "main_contract": "Timelock",
+  "source_entry_count": 1,
   "source_file_count": 1,
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Timelock\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/pangolindex/exchange-contracts/blob/main/audits/Pangolin_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf"
+  ],
   "addresses": [
-    {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x81a63b858a60c9305672480ceb17ee764e25dc4a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
     {
       "chain": "avalanche",
       "chain_id": 43114,
       "address": "0xeb5c91be6dbfd30cf616127c2ea823c64e4b1ff8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,34 +1,28 @@
 {
   "component": "ChainlinkStatsUpkeepV4",
   "main_contract": "ChainlinkStatsUpkeepV4",
-  "source_file_count": 60,
-  "deployment_count": 3,
+  "source_entry_count": 61,
+  "source_file_count": 61,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ChainlinkStatsUpkeepV4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x1a63df7f0addd9cfaf36f4a1b535d4a4afecdf4f",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x30f285c7cb4304e82302ce06f24e285bd527c637",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x691350d1ffcdece03ce0b889fd0dd4cb68679262",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x7d658243ad3bc64bd768d52ecf8ae6405cb8c497",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391678"
     }
   ]
 }

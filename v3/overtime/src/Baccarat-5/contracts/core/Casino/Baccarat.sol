@@ -452,7 +452,7 @@ contract Baccarat is Initializable, ProxyOwned, ProxyPausable, ProxyReentrancyGu
             }
         }
 
-        if (!r.won && !r.isPush && !isFreeBet[betId]) {
+        if (!r.won && !r.isPush) {
             _payReferrer(bet.user, bet.collateral, bet.amount);
         }
 

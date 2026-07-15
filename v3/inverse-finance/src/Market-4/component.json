@@ -1,21 +1,38 @@
 {
   "component": "Market-4",
   "main_contract": "Market",
-  "source_file_count": 2,
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://code4rena.com/reports/2022-10-inverse",
-    "https://www.inverse.finance/audits/firm-nomoi.pdf"
-  ],
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Market-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x0c0bb843fabda441edefb93331cfff8ec92bd168",
+      "address": "0xb516247596ca36bf32876199fbdcad6b3322330b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395445"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdc2265cbd15bed67b5f2c0b82e23fce4a07ddf6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395449"
     }
   ]
 }

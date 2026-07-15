@@ -1,18 +1,28 @@
 {
   "component": "WrappedSDToken",
   "main_contract": "WrappedSDToken",
-  "source_file_count": 5,
-  "deployment_count": 3,
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WrappedSDToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x1a72be10f6e6cf0ca100a407352e50d0ed653dec",
+      "address": "0x2091d83592d79b4de5fd2ce3d98679c32a9555e6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399419"
     },
     {
       "chain": "ethereum",
@@ -20,15 +30,9 @@
       "address": "0x43ff5ffab0973815ef8672f71c49ee5e53f30a48",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x911d86c72155c33993d594b0ec7e6206b4c803da",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399425"
     }
   ]
 }

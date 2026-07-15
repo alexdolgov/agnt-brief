@@ -1,34 +1,28 @@
 {
   "component": "AccountFacet-2",
   "main_contract": "AccountFacet",
-  "source_file_count": 27,
-  "deployment_count": 3,
+  "source_entry_count": 42,
+  "source_file_count": 42,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AccountFacet-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x1a4fc51fc65a1d3992f93489b641adc01419e05f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x58066fa06ed8ab1cef2b8a4c14ad18a5018eac2a",
+      "address": "0xe53f3760e516086e8f7d447305eaccca18cb63cc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x356ecc2f034ebd5def88d0e2f371222e0dda19a1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400034"
     }
   ]
 }

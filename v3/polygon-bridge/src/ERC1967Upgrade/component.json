@@ -1,10 +1,20 @@
 {
   "component": "ERC1967Upgrade",
   "main_contract": "ERC1967Upgrade",
+  "source_entry_count": 9,
   "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Upgrade\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/0xPolygon/pol-token/blob/main/audit/ChainSecurity_Polygon_Polygon_Token_(POL)_audit.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -12,7 +22,9 @@
       "address": "0x29e7df7b6a1b2b07b731457f499e1696c60e2c4e",
       "is_proxy": true,
       "implementation_address": "0xb037347ef306db3b41ab0b250f891887039d9231",
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402065"
     }
   ]
 }

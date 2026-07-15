@@ -1,18 +1,28 @@
 {
   "component": "WithdrawManager-3",
   "main_contract": "WithdrawManager",
+  "source_entry_count": 21,
   "source_file_count": 21,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WithdrawManager-3\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x2fb0f105aac7730cb3a21eec880d0261e43b2638",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x99e9c4d3171afaa3075d0d1ae2bb42b5e53aedab",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

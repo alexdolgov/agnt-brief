@@ -1,13 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
+import "src/interfaces/IERC20.sol";
 
 // Caution. We assume all failed transfers cause reverts and ignore the returned bool.
-interface IERC20 {
-    function transfer(address,uint) external returns (bool);
-    function transferFrom(address,address,uint) external returns (bool);
-    function balanceOf(address) external view returns (uint);
-}
-
 interface IOracle {
     function getPrice(address,uint) external returns (uint);
     function viewPrice(address,uint) external view returns (uint);
@@ -183,7 +178,7 @@ contract Market {
     @param _replenishmentIncentiveBps The new replenishment incentive set in basis points. 1 = 0.01%
     */
     function setReplenismentIncentiveBps(uint _replenishmentIncentiveBps) public onlyGov {
-        require(_replenishmentIncentiveBps > 0 && _replenishmentIncentiveBps < 10000, "Invalid replenishment incentive");
+        require(_replenishmentIncentiveBps < 10000, "Invalid replenishment incentive");
         replenishmentIncentiveBps = _replenishmentIncentiveBps;
     }
 
@@ -205,7 +200,7 @@ contract Market {
     @param _liquidationFeeBps The new liquidation fee set in basis points. 1 = 0.01%
     */
     function setLiquidationFeeBps(uint _liquidationFeeBps) public onlyGov liquidationParamChecker {
-        require(_liquidationFeeBps > 0 && _liquidationFeeBps + liquidationIncentiveBps < 10000, "Invalid liquidation fee");
+        require(_liquidationFeeBps + liquidationIncentiveBps < 10000, "Invalid liquidation fee");
         liquidationFeeBps = _liquidationFeeBps;
     }
 

@@ -1,11 +1,20 @@
 {
   "component": "EulerReverseLookup",
   "main_contract": "EulerReverseLookup",
+  "source_entry_count": 17,
   "source_file_count": 17,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EulerReverseLookup\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
-    "https://github.com/contango-xyz/core-v2/blob/main/audit/Offbeat%20Security%20-%20Euler%20Money%20Market%20Review%20-%20Sep%202024.pdf"
+    "https://github.com/contango-xyz/core-v2/blob/main/audit/Offbeat%20Security%20-%20Euler%20Money%20Market%20Review%20-%20Sep%202024.pdf",
+    "https://github.com/contango-xyz/core-v2/blob/main/networks.json"
   ],
   "addresses": [
     {
@@ -14,7 +23,9 @@
       "address": "0xd0d9e5ca8793cae9fac72f34caaf7f99e4f0fc68",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402772"
     }
   ]
 }

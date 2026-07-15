@@ -14,13 +14,13 @@ contract VoteModule is IVoteModule, ReentrancyGuard, Initializable {
     /// @inheritdoc IVoteModule
     address public accessHub;
     /// @inheritdoc IVoteModule
-    address public  xShadow;
+    address public xShadow;
     /// @inheritdoc IVoteModule
-    address public  voter;
+    address public voter;
     /// @notice xShadow token
-    IXShadow public  stakingToken;
+    IXShadow public stakingToken;
     /// @notice underlying Shadow token
-    IERC20 public  underlying;
+    IERC20 public underlying;
 
     /// @notice rebases are released over 30 minutes
     uint256 public duration = 30 minutes;
@@ -29,7 +29,7 @@ contract VoteModule is IVoteModule, ReentrancyGuard, Initializable {
     uint256 public cooldown = 12 hours;
 
     /// @notice decimal precision of 1e18
-    uint256 public constant PRECISION = 10 ** 27;
+    uint256 public constant PRECISION = 10 ** 18;
 
     /// @inheritdoc IVoteModule
     uint256 public totalSupply;
@@ -41,8 +41,6 @@ contract VoteModule is IVoteModule, ReentrancyGuard, Initializable {
     uint256 public periodFinish;
     /// @inheritdoc IVoteModule
     uint256 public rewardRate;
-    /// @inheritdoc IVoteModule
-    uint256 public dust;
     /// @inheritdoc IVoteModule
     uint256 public unlockTime;
 
@@ -60,19 +58,21 @@ contract VoteModule is IVoteModule, ReentrancyGuard, Initializable {
     /// @inheritdoc IVoteModule
     mapping(address user => bool exempt) public cooldownExempt;
 
-
-     modifier onlyAccessHub() {
-            /// @dev ensure it is the accessHub
-            require(msg.sender == accessHub, NOT_ACCESSHUB());
-            _;
-        }
+    modifier onlyAccessHub() {
+        /// @dev ensure it is the accessHub
+        require(msg.sender == accessHub, NOT_ACCESSHUB());
+        _;
+    }
 
     constructor() {
         voter = msg.sender;
     }
 
-
-    function initialize(address _xShadow, address _voter, address _accessHub) external initializer {
+    function initialize(
+        address _xShadow,
+        address _voter,
+        address _accessHub
+    ) external initializer {
         // @dev making sure who deployed calls initialize
         require(voter == msg.sender, UNAUTHORIZED());
         require(_accessHub != address(0), INVALID_ADDRESS());
@@ -173,13 +173,10 @@ contract VoteModule is IVoteModule, ReentrancyGuard, Initializable {
         require(msg.sender == xShadow, NOT_XSHADOW());
         /// @dev take the SHADOW from the contract to the voteModule
         underlying.transferFrom(xShadow, address(this), amount);
-        /// @dev add existing dust
-        amount += dust;
+
         if (block.timestamp >= periodFinish) {
             /// @dev the new reward rate being the amount divided by the duration
             rewardRate = amount / duration;
-            /// @dev account dust
-            dust = amount - (rewardRate * duration);
         } else {
             /// @dev remaining seconds until the period finishes
             uint256 remaining = periodFinish - block.timestamp;
@@ -187,8 +184,6 @@ contract VoteModule is IVoteModule, ReentrancyGuard, Initializable {
             uint256 _left = remaining * rewardRate;
             /// @dev update the rewardRate to the notified amount plus what is left, divided by the duration
             rewardRate = (amount + _left) / duration;
-            /// @dev account for dust
-            dust = (amount + _left) - (rewardRate * duration);
         }
 
         /// @dev update timestamp for the rebase
@@ -279,7 +274,6 @@ contract VoteModule is IVoteModule, ReentrancyGuard, Initializable {
     }
     /// @inheritdoc IVoteModule
     function earned(address account) public view returns (uint256 _reward) {
-      
         _reward =
             (/// @dev the vote balance of the account
             (balanceOf[account] *

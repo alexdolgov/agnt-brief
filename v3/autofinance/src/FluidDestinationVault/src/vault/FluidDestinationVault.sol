@@ -13,6 +13,8 @@ import { RewardAdapter } from "src/destinations/adapters/rewards/RewardAdapter.s
 import { IFluidMerkleDistributor } from "src/interfaces/external/fluid/IFluidMerkleDistributor.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
 import { Roles } from "src/libs/Roles.sol";
+import { EnumerableSet } from "openzeppelin-contracts/utils/structs/EnumerableSet.sol";
+import { IDistributor } from "src/interfaces/external/merkl/IDistributor.sol";
 
 /**
  * @title Destination Vault to proxy a Fluid 4626 Lending Vault
@@ -32,6 +34,7 @@ import { Roles } from "src/libs/Roles.sol";
  */
 contract FluidDestinationVault is ERC4626DestinationVault {
     using SafeERC20 for IERC20Metadata;
+    using EnumerableSet for EnumerableSet.AddressSet;
 
     event RewardTokenAdded(address indexed token);
     event RewardTokensCleared();
@@ -52,6 +55,9 @@ contract FluidDestinationVault is ERC4626DestinationVault {
     /// @dev Can be managed via `addMerkleDistributor()` and `removeMerkleDistributor()`
     mapping(address => bool) public merkleDistributorsWhitelist;
 
+    /// @dev Reward tokens that never get cleared, we try every time
+    EnumerableSet.AddressSet internal _permRewardTokens;
+
     constructor(
         ISystemRegistry sysRegistry
     ) ERC4626DestinationVault(sysRegistry) { }
@@ -65,7 +71,8 @@ contract FluidDestinationVault is ERC4626DestinationVault {
     /// @param distributors The addresses of the Merkle distributors to add
     function addMerkleDistributors(
         address[] calldata distributors
-    ) external hasRole(Roles.FLUID_DESTINATION_VAULT_MANAGER) {
+    ) external {
+        _ensureCallerIsManager();
         uint256 length = distributors.length;
         for (uint256 i = 0; i < length; ++i) {
             Errors.verifyNotZero(distributors[i], "distributors");
@@ -79,13 +86,40 @@ contract FluidDestinationVault is ERC4626DestinationVault {
     /// @param distributors The addresses of the Merkle distributors to remove
     function removeMerkleDistributors(
         address[] calldata distributors
-    ) external hasRole(Roles.FLUID_DESTINATION_VAULT_MANAGER) {
+    ) external {
+        _ensureCallerIsManager();
         uint256 length = distributors.length;
         for (uint256 i = 0; i < length; ++i) {
             Errors.verifyNotZero(distributors[i], "distributors");
             merkleDistributorsWhitelist[distributors[i]] = false;
         }
         emit MerkleDistributorsRemoved(distributors);
+    }
+
+    /// @notice Add/remove a token that is permanently claimable
+    /// @dev Does not emit state change events.
+    /// @dev If a tracked token is later added its on us to remove it from here.
+    function togglePermReward(
+        address token
+    ) external {
+        _ensureCallerIsManager();
+        if (isTrackedToken(token)) {
+            revert Errors.InvalidToken(token);
+        }
+        Errors.verifyNotZero(token, "token");
+        if (!_permRewardTokens.add(token)) {
+            // slither-disable-next-line unused-return
+            _permRewardTokens.remove(token);
+        }
+    }
+
+    /// @notice Allow a trusted operator to claim on behalf of this account
+    /// @dev Does not emit state change events
+    /// @param distributor Token distributor we'll call the fn on
+    /// @param trustedOperator Account allowed to claim on behalf of the Destination
+    function toggleMerklOperator(address distributor, address trustedOperator) external {
+        _ensureCallerIsManager();
+        IDistributor(distributor).toggleOperator(address(this), trustedOperator);
     }
 
     /// @notice Claim TOKEN from the Fluid Merkle Distributor
@@ -130,6 +164,11 @@ contract FluidDestinationVault is ERC4626DestinationVault {
         }
     }
 
+    /// @notice Returns reward tokens that are attempted claim each time
+    function getPermRewardTokens() external view returns (address[] memory) {
+        return _permRewardTokens.values();
+    }
+
     /// @inheritdoc IDestinationVault
     function exchangeName() external pure override returns (string memory) {
         return "fluid";
@@ -147,26 +186,41 @@ contract FluidDestinationVault is ERC4626DestinationVault {
 
     /// @inheritdoc DestinationVault
     function _collectRewards() internal virtual override returns (uint256[] memory amounts, address[] memory tokens) {
-        // Copy the reward tokens in memory
-        tokens = _rewardTokensClaimed;
+        address[] memory merklClaimed = _rewardTokensClaimed;
+        address[] memory permClaimed = _permRewardTokens.values();
+
         // Clear the reward tokens array in storage
         delete _rewardTokensClaimed;
         emit RewardTokensCleared();
 
-        uint256 numTokens = tokens.length;
-        amounts = new uint256[](numTokens);
+        uint256 merklNum = merklClaimed.length;
+        uint256 permNum = permClaimed.length;
 
+        amounts = new uint256[](merklNum + permNum);
+        tokens = new address[](merklNum + permNum);
+
+        _collectTokenArray(0, merklNum, merklClaimed, amounts, tokens);
+        _collectTokenArray(merklNum, permNum, permClaimed, amounts, tokens);
+
+        RewardAdapter.emitRewardsClaimed(tokens, amounts);
+    }
+
+    function _collectTokenArray(
+        uint256 startWriteIx,
+        uint256 numTokens,
+        address[] memory claimTokens,
+        uint256[] memory retAmounts,
+        address[] memory retTokens
+    ) private {
         for (uint256 i = 0; i < numTokens; ++i) {
-            address token = tokens[i];
+            address token = claimTokens[i];
             uint256 amount = IERC20Metadata(token).balanceOf(address(this));
-
-            amounts[i] = amount;
+            retTokens[i + startWriteIx] = token;
+            retAmounts[i + startWriteIx] = amount;
             if (amount > 0) {
                 IERC20Metadata(token).safeTransfer(msg.sender, amount);
             }
         }
-
-        RewardAdapter.emitRewardsClaimed(tokens, amounts);
     }
 
     /// @notice Adds a reward token to the list if it's not a tracked token and not already present
@@ -190,5 +244,9 @@ contract FluidDestinationVault is ERC4626DestinationVault {
         // Token not found, add it
         _rewardTokensClaimed.push(rewardToken);
         emit RewardTokenAdded(rewardToken);
+    }
+
+    function _ensureCallerIsManager() private view {
+        if (!accessController.hasRole(Roles.FLUID_DESTINATION_VAULT_MANAGER, msg.sender)) revert Errors.AccessDenied();
     }
 }

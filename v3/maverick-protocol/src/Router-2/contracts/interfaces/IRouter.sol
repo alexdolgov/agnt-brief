@@ -1,21 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-
 import "@maverick/contracts/contracts/interfaces/IFactory.sol";
 import "@maverick/contracts/contracts/interfaces/IPool.sol";
 import "@maverick/contracts/contracts/interfaces/IPosition.sol";
 import "@maverick/contracts/contracts/interfaces/ISwapCallback.sol";
 import "./external/IWETH9.sol";
 import "./ISlimRouter.sol";
-
 interface IRouter is ISlimRouter {
     /// @return Returns the address of the factory
     function factory() external view returns (IFactory);
-
     /// @return Returns the address of the Position NFT
     function position() external view returns (IPosition);
-
     struct ExactInputParams {
         bytes path;
         address recipient;
@@ -23,16 +19,12 @@ interface IRouter is ISlimRouter {
         uint256 amountIn;
         uint256 amountOutMinimum;
     }
-
     /// @notice Swaps `amountIn` of one token for as much as possible of
     //another along the specified path
     /// @param params The parameters necessary for the multi-hop swap, encoded
     //as `ExactInputParams` in calldata
     /// @return amountOut The amount of the received token
-    function exactInput(
-        ExactInputParams calldata params
-    ) external payable returns (uint256 amountOut);
-
+    function exactInput(ExactInputParams calldata params) external payable returns (uint256 amountOut);
     struct ExactOutputParams {
         bytes path;
         address recipient;
@@ -40,16 +32,12 @@ interface IRouter is ISlimRouter {
         uint256 amountOut;
         uint256 amountInMaximum;
     }
-
     /// @notice Swaps as little as possible of one token for `amountOut` of
     //another along the specified path (reversed)
     /// @param params The parameters necessary for the multi-hop swap, encoded
     //as `ExactOutputParams` in calldata
     /// @return amountIn The amount of the input token
-    function exactOutput(
-        ExactOutputParams calldata params
-    ) external payable returns (uint256 amountIn);
-
+    function exactOutput(ExactOutputParams calldata params) external payable returns (uint256 amountIn);
     struct PoolParams {
         uint256 fee;
         uint256 tickSpacing;
@@ -58,7 +46,6 @@ interface IRouter is ISlimRouter {
         IERC20 tokenA;
         IERC20 tokenB;
     }
-
     /// @notice create a pool and add liquidity to it
     /// @param poolParams paramters of a pool
     /// @param tokenId nft id of token that will hold lp balance, use 0 to mint a new token
@@ -73,16 +60,7 @@ interface IRouter is ISlimRouter {
         uint256 minTokenAAmount,
         uint256 minTokenBAmount,
         uint256 deadline
-    )
-        external
-        payable
-        returns (
-            uint256 receivingTokenId,
-            uint256 tokenAAmount,
-            uint256 tokenBAmount,
-            IPool.BinDelta[] memory binDeltas
-        );
-
+    ) external payable returns (uint256 receivingTokenId, uint256 tokenAAmount, uint256 tokenBAmount, IPool.BinDelta[] memory binDeltas);
     /// @notice add liquidity to a pool
     /// @param pool pool to add liquidity to
     /// @param tokenId nft id of token that will hold lp balance, use 0 to mint a new token
@@ -97,16 +75,7 @@ interface IRouter is ISlimRouter {
         uint256 minTokenAAmount,
         uint256 minTokenBAmount,
         uint256 deadline
-    )
-        external
-        payable
-        returns (
-            uint256 receivingTokenId,
-            uint256 tokenAAmount,
-            uint256 tokenBAmount,
-            IPool.BinDelta[] memory binDeltas
-        );
-
+    ) external payable returns (uint256 receivingTokenId, uint256 tokenAAmount, uint256 tokenBAmount, IPool.BinDelta[] memory binDeltas);
     /// @notice add liquidity to a pool with active tick limits
     /// @param pool pool to add liquidity to
     /// @param tokenId nft id of token that will hold lp balance, use 0 to mint a new token
@@ -125,28 +94,13 @@ interface IRouter is ISlimRouter {
         int32 minActiveTick,
         int32 maxActiveTick,
         uint256 deadline
-    )
-        external
-        payable
-        returns (
-            uint256 receivingTokenId,
-            uint256 tokenAAmount,
-            uint256 tokenBAmount,
-            IPool.BinDelta[] memory binDeltas
-        );
-
+    ) external payable returns (uint256 receivingTokenId, uint256 tokenAAmount, uint256 tokenBAmount, IPool.BinDelta[] memory binDeltas);
     /// @notice moves the head of input merged bins to the active bin
     /// @param pool to remove from
     /// @param binIds array of bin Ids to migrate
     /// @param maxRecursion maximum recursion depth before returning; 0=no max
     /// @param deadline epoch timestamp in seconds
-    function migrateBinsUpStack(
-        IPool pool,
-        uint128[] calldata binIds,
-        uint32 maxRecursion,
-        uint256 deadline
-    ) external;
-
+    function migrateBinsUpStack(IPool pool, uint128[] calldata binIds, uint32 maxRecursion, uint256 deadline) external;
     /// @notice remove liquidity from pool and receive WETH if one of the tokens is WETH
     /// @dev router must be approved for the withdrawing tokenId: Position.approve(router, tokenId)
     /// @param pool pool to remove from
@@ -164,7 +118,5 @@ interface IRouter is ISlimRouter {
         uint256 minTokenAAmount,
         uint256 minTokenBAmount,
         uint256 deadline
-    )
-        external
-        returns (uint256 tokenAAmount, uint256 tokenBAmount, IPool.BinDelta[] memory binDeltas);
+    ) external returns (uint256 tokenAAmount, uint256 tokenBAmount, IPool.BinDelta[] memory binDeltas);
 }

@@ -14,7 +14,7 @@ pragma solidity >=0.8.0;
 @@@@@@@@@       @@@@@@@@*/
 
 interface IPostDispatchHook {
-    enum HookTypes {
+    enum Types {
         UNUSED,
         ROUTING,
         AGGREGATION,
@@ -24,13 +24,8 @@ interface IPostDispatchHook {
         ID_AUTH_ISM,
         PAUSABLE,
         PROTOCOL_FEE,
-        DEPRECATED,
-        RATE_LIMITED,
-        ARB_L2_TO_L1,
-        OP_L2_TO_L1,
-        MAILBOX_DEFAULT_HOOK,
-        AMOUNT_ROUTING,
-        CCTP
+        LAYER_ZERO_V1,
+        Rate_Limited_Hook
     }
 
     /**

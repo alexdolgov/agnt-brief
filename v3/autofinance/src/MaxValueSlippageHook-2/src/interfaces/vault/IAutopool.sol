@@ -8,6 +8,7 @@ import { Math } from "openzeppelin-contracts/utils/math/Math.sol";
 import { IAutopoolStrategy } from "src/interfaces/strategy/IAutopoolStrategy.sol";
 import { IMainRewarder } from "src/interfaces/rewarders/IMainRewarder.sol";
 import { IERC20Permit } from "openzeppelin-contracts/token/ERC20/extensions/draft-IERC20Permit.sol";
+import { IStrategy } from "src/interfaces/strategy/IStrategy.sol";
 
 interface IAutopool is IERC4626, IERC20Permit {
     enum VaultShutdownStatus {
@@ -72,6 +73,9 @@ interface IAutopool is IERC4626, IERC20Permit {
     /* ******************************** */
     /*      Events                      */
     /* ******************************** */
+
+    event RebalanceStarted(address receiver, IStrategy.RebalanceParams rebalanceParams);
+    event RebalanceCompleted(AutopoolDebt.AssetChanges updatedAssets);
 
     // Autopool4626
 
@@ -315,4 +319,13 @@ interface IAutopool is IERC4626, IERC20Permit {
     function isPastRewarder(
         address _pastRewarder
     ) external view returns (bool);
+
+    /// @notice Redeem exact shares proportionally from all destination vaults including idle
+    /// @param shares The number of shares to redeem
+    /// @param receiver The address to receive the assets
+    /// @param owner The address of the owner of the shares to be redeemed
+    /// @return assets The number of assets received
+    /// @dev This function is used to redeem shares proportionally from all destination vaults including idle
+    /// Any sort of recoup or credit is taken into account when redeeming
+    // function redeemProrata(uint256 shares, address receiver, address owner) external returns (uint256 assets);
 }

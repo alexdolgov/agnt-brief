@@ -1,8 +1,16 @@
 {
   "component": "LendingVault",
   "main_contract": "LendingVault",
+  "source_entry_count": 49,
   "source_file_count": 49,
-  "deployment_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LendingVault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +20,9 @@
       "address": "0x6c99a74a62aaf2e6aa3ff08ce7661d5c86e01dbc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393117"
     },
     {
       "chain": "ethereum",
@@ -20,15 +30,29 @@
       "address": "0x6dacaf632017e2dfc929484606b0feb93088b623",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393118"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xb8c65ceb54b64950e0d3e80cd5dadcd7ebbeef6d",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0cf11ac4ea33b6d7274cd7d6e7cea9f3f65fcf9d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393120"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x214699b0ad2e26ffef0247fd0c244bb7fedc85ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393121"
     }
   ]
 }

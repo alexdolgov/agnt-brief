@@ -1,11 +1,16 @@
-// SPDX-License-Identifier: MIT OR Apache-2.0
-pragma solidity >=0.8.0;
+// SPDX-License-Identifier: Apache-2.0
+pragma solidity ^0.8.13;
 
 // ============ Internal Imports ============
-import {TypeCasts} from "../libs/TypeCasts.sol";
 import {Router} from "../client/Router.sol";
 import {CallLib} from "./libs/Call.sol";
 import {InterchainQueryMessage} from "./libs/InterchainQueryMessage.sol";
+import {TypeCasts} from "../libs/TypeCasts.sol";
+
+// ============ External Imports ============
+import {Create2} from "@openzeppelin/contracts/utils/Create2.sol";
+import {Address} from "@openzeppelin/contracts/utils/Address.sol";
+import {Initializable} from "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
 /**
  * @title Interchain Query Router that performs remote view calls on other chains and returns the result.
@@ -69,12 +74,11 @@ contract InterchainQueryRouter is Router {
         address _to,
         bytes memory _data,
         bytes memory _callback
-    ) public payable returns (bytes32 messageId) {
+    ) public returns (bytes32 messageId) {
         emit QueryDispatched(_destination, msg.sender);
 
-        messageId = _Router_dispatch(
+        messageId = _dispatch(
             _destination,
-            msg.value,
             InterchainQueryMessage.encode(
                 msg.sender.addressToBytes32(),
                 _to,
@@ -94,11 +98,10 @@ contract InterchainQueryRouter is Router {
     function query(
         uint32 _destination,
         CallLib.StaticCallWithCallback[] calldata calls
-    ) public payable returns (bytes32 messageId) {
+    ) public returns (bytes32 messageId) {
         emit QueryDispatched(_destination, msg.sender);
-        messageId = _Router_dispatch(
+        messageId = _dispatch(
             _destination,
-            msg.value,
             InterchainQueryMessage.encode(msg.sender.addressToBytes32(), calls)
         );
     }
@@ -123,9 +126,8 @@ contract InterchainQueryRouter is Router {
                 callsWithCallback
             );
             emit QueryExecuted(_origin, sender);
-            _Router_dispatch(
+            _dispatch(
                 _origin,
-                msg.value,
                 InterchainQueryMessage.encode(sender, callbacks)
             );
         } else if (messageType == InterchainQueryMessage.MessageType.RESPONSE) {

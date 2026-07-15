@@ -8,7 +8,6 @@ import '@openzeppelin/contracts/utils/structs/EnumerableSet.sol';
 import './libs/Rescuable.sol';
 import { ITAsset } from './TAsset.sol';
 import { IStrategyStorage } from './strategy/StrategyStorage.sol';
-import { IWETH9 } from './interfaces/IWETH9.sol';
 import { IRateProviderRegistry } from './rate-providers/RateProviderRegistry.sol';
 
 interface IVault {

@@ -1,40 +1,69 @@
 # Agentic Audit Brief: BounceBit CeDeFi Yield
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 4 (0 matched; 4 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: BounceBit CeDeFi Yield (`bouncebit-cedefi-yield`)
 - Website: [https://portal.bouncebit.io/](https://portal.bouncebit.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:36.941Z
-- Pipeline run: v2-2026-07-03-89943a
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
 - Chains: ethereum
 - Contract surface: 8 unique implementations (8 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $284,855,549.69
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Basis Trading. Structurally: 8 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+No contract logic was present for BounceBit CeDeFi Yield in the closed normalized topography run; this brief does not infer a protocol purpose from missing code.
 
 ### Architecture
 
-The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
+The activated project remains an explicit cohort member with an empty normalized logic-topography closure.
+
+## Logic Topography
+
+- Exact-run contract rows: 0
+- Structural roles: none
+- Contract kinds: none
+- Detected standards: none
+- Frameworks: none
+- Upgradeable-pattern rows: 0
 
 ## Contract Surface Quality
 
-- Indexed contracts: 8; live-surface contracts included: 8 (8 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 0; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/8 (0.0%)
-- Deployed-live implementations: 8 of 8 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/8
-- Verified + Unaudited implementations: 8
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 0 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 8 discovered implementations excluded (2 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 1
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 8
@@ -43,7 +72,7 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-02 (stale)
-- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 3 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 2 unknown
 - Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
@@ -59,16 +88,16 @@ The protocol comprises 2 functional families. Contracts operate as largely indep
 
 ### ⚠️ Verified + Unaudited (8)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| BBOFT | unknown | ethereum | n/a | [`0xd459ec...1073a3`](./contracts/ethereum-1/0xd459eceddafcc1d876a3be7290a2e16e801073a3/) | ⚠️ Unaudited |
-| BBTC | unknown | ethereum | n/a | [`0x8b8d92...9d6863`](./contracts/ethereum-1/0x8b8d92bb45ec8225558096f99d6d75c2b49d6863/) | ⚠️ Unaudited |
-| BBUSD | unknown | ethereum | n/a | [`0xbc8570...da6eb1`](./contracts/ethereum-1/0xbc8570ae1dae11d8b439fa1845753bef2eda6eb1/) | ⚠️ Unaudited |
-| CefiTokenWrapper | unknown | ethereum | n/a | [`0x403f10...757475`](./contracts/ethereum-1/0x403f10c86b4d6f33b0d5163073784f6d9e757475/) | ⚠️ Unaudited |
-| CefiTrove | unknown | ethereum | n/a | [`0x69b706...e40116`](./contracts/ethereum-1/0x69b706f1c78a42404f9f2a2d982fe33fc4e40116/) | ⚠️ Unaudited |
-| ProxyAdmin | unknown | ethereum | n/a | [`0x13b037...4707b2`](./contracts/ethereum-1/0x13b037ab4b9056132cff7bd080b00bcae54707b2/) | ⚠️ Unaudited |
-| TokenVestingWallet | unknown | ethereum | n/a | [`0x4756c4...cb580e`](./contracts/ethereum-1/0x4756c41be6212a8ebf1ee0fa951f47bd91cb580e/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x035d73...316467`](./contracts/ethereum-1/0x035d73d9a563334bf35e08bfb49ea39ed4316467/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| BBOFT | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127661 | `0xd459ec...1073a3` | ⚠️ Unaudited |
+| BBTC | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127659 | `0x8b8d92...9d6863` | ⚠️ Unaudited |
+| BBUSD | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127660 | `0xbc8570...da6eb1` | ⚠️ Unaudited |
+| CefiTokenWrapper | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127656 | `0x403f10...757475` | ⚠️ Unaudited |
+| CefiTrove | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127658 | `0x69b706...e40116` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 0 | ethereum | unit-127655 | `0x13b037...4707b2` | ⚠️ Unaudited |
+| TokenVestingWallet | unknown | non_address_book | non_address_book_inventory (excluded) | 0 | ethereum | unit-127657 | `0x4756c4...cb580e` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | external_dependency_or_infra | third_party_dependency (excluded) | 1 | ethereum | unit-127662 | `0x035d73...316467` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,12 +119,29 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [Smart Contract Audit Report](https://docs.bouncebit.io/assets/smart-contract-audit-report.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [First BounceBit TVL Audit Report](https://docs.bouncebit.io/assets/first-bouncebit-tvl-audit-report.md) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [BounceBit-Vault_audit_report_2024-02-09.pdf](https://1316604192-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaNWumH92fd1205exOOBs%2Fuploads%2FKFpCcHfuzqSvO1yGpUJL%2FBounceBit-Vault_audit_report_2024-02-09.pdf) | unknown | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
-| [BounceBit BTC TVL Report 20240207.pdf](https://1316604192-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaNWumH92fd1205exOOBs%2Fuploads%2F0oZ4vafYh0ye8HRPsgVU%2FBounceBit%20BTC%20TVL%20Report%2020240207.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [Smart Contract Audit Report](https://docs.bouncebit.io/assets/smart-contract-audit-report.md) | unknown | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [First BounceBit TVL Audit Report](https://docs.bouncebit.io/assets/first-bouncebit-tvl-audit-report.md) | unknown | Audit | 2024-02 | stale | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+| [BounceBit-Vault_audit_report_2024-02-09.pdf](https://1316604192-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaNWumH92fd1205exOOBs%2Fuploads%2FKFpCcHfuzqSvO1yGpUJL%2FBounceBit-Vault_audit_report_2024-02-09.pdf) | unknown | Audit | 2024-02 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 1 | high |
+| [BounceBit BTC TVL Report 20240207.pdf](https://1316604192-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaNWumH92fd1205exOOBs%2Fuploads%2F0oZ4vafYh0ye8HRPsgVU%2FBounceBit%20BTC%20TVL%20Report%2020240207.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [19615] Smart Contract Audit Report — no match: The provided text is a markdown page with a file reference but no actual audit report content. No contract names or audit date could be extracted.
+- [19616] First BounceBit TVL Audit Report — no match: The report text does not list any specific smart contracts, source files, or modules in scope. It only mentions a CeFi+DeFi infrastructure and a TVL audit, but no contract names are identifiable.
+- [19617] BounceBit-Vault_audit_report_2024-02-09.pdf — no match: Only one contract in scope: BounceBitVault. Addresses provided for BSC and Ethereum.
+- [19618] BounceBit BTC TVL Report 20240207.pdf — no match: The provided text is an account statement for Bouncebit Ltd., not a smart contract audit report. No contracts, source files, or audit scope were found.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| BounceBit-Vault_audit_report_2024-02-09.pdf | BounceBitVault | unmatched — not counted | — | listed in scope and findings target | no |
 
 ## Coverage Gaps
 
@@ -107,10 +153,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 6 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 8 |
+| standard_library | 2 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -118,7 +164,9 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 1 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=1, low=3
 - Match method counts: n/a
 
 Zero-match audit list:

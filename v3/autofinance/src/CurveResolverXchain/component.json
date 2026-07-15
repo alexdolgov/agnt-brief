@@ -1,7 +1,15 @@
 {
   "component": "CurveResolverXchain",
   "main_contract": "CurveResolverXchain",
+  "source_entry_count": 6,
   "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CurveResolverXchain\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
@@ -12,7 +20,9 @@
       "address": "0xe0ebd6bdeee70af91d14e49d869e3746cb05a5f8",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391852"
     },
     {
       "chain": "linea",
@@ -20,7 +30,9 @@
       "address": "0xbb1dfbbf3cfa0ae92119db2d35a53b59fa852e5e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391891"
     }
   ]
 }

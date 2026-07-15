@@ -1,82 +1,104 @@
 # Agentic Audit Brief: Dexalot
 
+## Export Authority
+
+- Production state: **published scope**
+- Raw selected rows: 0 across 0 audit(s)
+- Eligible audit results: 6 (0 matched; 6 no match)
+- Activation: `scope-prod-20260715-v1`
+- Match closure: `8e14ccbd1277ca469b97d9c62a441d5a9e6fdf26981a05698375b7e2b1bffaa6`
+- Logic topography: `logic-topography-normalized-candidate-20260715-v1`
+- Liveness: `operational-liveness-topology-full-reviewed-20260715-v2/operational_liveness/1`
+- Export-input receipt: `7fbef0dcf68cde7195f117d9b41f1e6d89891da495a42b57ae29b5e338972213`
+
 ## Project Overview
 
 - Project: Dexalot (`dexalot`)
 - Website: [https://app.dexalot.com/](https://app.dexalot.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:42.838Z
-- Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
-- Chains: avalanche, bsc
-- Contract surface: 13 unique implementations (17 raw deployments)
+- Generated: 2026-07-15T18:00:00.000Z
+- Pipeline run: brief-generation-scope-prod-20260715-v1
+- Chains: avalanche, avalanche-fuji
+- Contract surface: 18 unique implementations (18 raw deployments)
+- Coverage basis: not assessable — No eligible owned address-book contracts are available for an operational-liveness denominator.
 - DeFi Llama TVL: $8,063,794.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Dexs. Structurally: 10 project-authored contract(s) across 2 chain(s); 1 ERC20 token; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.
+This brief describes the observed EVM deployment and audit surface for Dexalot. It intentionally limits the description to receipted repository and on-chain evidence instead of inferring a business model.
 
 ### Architecture
 
-The protocol comprises 4 functional families. Its contracts share 2 common project-authored base contract(s) (proxy, erc1967upgrade). Dominant framework: openzeppelin-upgradeable.
+The pinned logic-topography run contains 9 contract row(s) across avalanche, avalanche-fuji. Structural roles: 6 unclassified, 2 supporting, 1 core. 3 row(s) use upgradeable patterns.
+
+## Logic Topography
+
+- Exact-run contract rows: 9
+- Structural roles: unclassified (6), supporting (2), core (1)
+- Contract kinds: contract (8), abstract (1)
+- Detected standards: erc1967proxy (2), ownable (1)
+- Frameworks: openzeppelin (3), openzeppelin-upgradeable (3)
+- Upgradeable-pattern rows: 3
 
 ## Contract Surface Quality
 
-- Indexed contracts: 20; live-surface contracts included: 17 (17 live, 0 unknown).
-- Excluded by liveness: 3 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/0 live.
+- Operational liveness prerequisite: not_applicable; 0/0 eligible owned address-book contracts resolved from completed operational-liveness snapshots.
+- Indexed contracts: 9; live/inactive and live-deployment-unit totals are withheld until liveness completes.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 11/13 (84.6%)
-- Deployed-live implementations: 13 of 13 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 11/13
-- Verified + Unaudited implementations: 2
+- Coverage of address-book-owned deployed-live implementations: not assessable
+- Coverage assessment: not_assessable (low confidence) — No eligible owned address-book contracts are available for an operational-liveness denominator.
+- Address-book implementation classification: 0 own, 18 exact-address-book context/dependencies excluded, 0 exact-address-book entries needing review
+- Outside the address book: 0 discovered implementations excluded (0 third-party/infra; 0 standard proxy/library)
+- Proxy deployments represented within implementation groups: 4
+- Operational liveness: not_applicable; 0/0 eligible owned address-book contracts resolved. Deployed-live counts are withheld from coverage.
+- All verified address-book-owned implementations audited (incl. non-live): 0/0
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 13
-- Raw deployments: 17
+- Unique implementations: 18
+- Raw deployments: 18
 - Audits discovered: 6 (6 direct, 0 inherited from forked code)
-- Scoreable audits (matched contracts): 5
+- Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-02 (stale)
 - Audit staleness (calendar age): 0 fresh, 0 aging, 5 stale, 1 unknown
-- Coverage code basis (deployed vs audited code): 10 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
-|---|---|---:|---:|---|
-| unknown | Tier 2 | 11 | 84.6% | 2022-02 |
+- None
 
 ## Contract Surface
 
-### ✅ Verified + Audited (11)
+### ✅ Verified + Audited (0)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| DexalotToken | token | avalanche | n/a | [`0x093783...47bc69`](./contracts/avalanche-43114/0x093783055f9047c2bff99c4e414501f8a147bc69/) | ✅ Audited |
-| Exchange | unknown | avalanche | n/a | 2 deployments: avalanche [`0x16863a...4c67e5`](./contracts/avalanche-43114/0x16863a1052362012352f07ff3cd23088414c67e5/); avalanche `0x4dc10a...81a09a` | ✅ Audited |
-| Exchange | unknown | avalanche | n/a | [`0x807687...3d5885`](./contracts/avalanche-43114/0x80768783d18ad5c9de46d2cde398fb0c193d5885/) | ✅ Audited |
-| OrderBooks | unknown | avalanche | n/a | [`0x3ece76...99669a`](./contracts/avalanche-43114/0x3ece76f7add934fb8a35c9c371c4d545e299669a/) | ✅ Audited |
-| OrderBooks | unknown | avalanche | n/a | [`0x9cf797...a9170e`](./contracts/avalanche-43114/0x9cf797df135aa671e97d1b713cdaeea9fca9170e/) | ✅ Audited |
-| OrderBooks | unknown | avalanche | n/a | 2 deployments: avalanche [`0xcb1556...2c9d19`](./contracts/avalanche-43114/0xcb1556a61d047523bce9da9f79939faed62c9d19/); avalanche `0xd95bcc...50584e` | ✅ Audited |
-| Portfolio | unknown | avalanche | n/a | 2 deployments: avalanche [`0x176e82...cb4ef2`](./contracts/avalanche-43114/0x176e82bf0d30ec55ae3ef98e4be3922931cb4ef2/); avalanche `0x43de3a...9cab1a` | ✅ Audited |
-| Portfolio | unknown | avalanche | n/a | [`0x6f8205...6b5c6e`](./contracts/avalanche-43114/0x6f8205cf222dd4c6615991c7f604f366526b5c6e/) | ✅ Audited |
-| Portfolio | unknown | avalanche | n/a | [`0xac0f30...0de0d4`](./contracts/avalanche-43114/0xac0f301b3f7e1d48553535089bb2c201760de0d4/) | ✅ Audited |
-| TradePairs | unknown | avalanche | n/a | 2 deployments: avalanche [`0x16d8a7...097bdd`](./contracts/avalanche-43114/0x16d8a7e5300acaba43418a6e2c68e159c9097bdd/); avalanche `0x2c0e18...09df10` | ✅ Audited |
-| TradePairs | unknown | avalanche | n/a | [`0x625b7d...987ba1`](./contracts/avalanche-43114/0x625b7d76f69095907fc3b467c0c3be07d1987ba1/) | ✅ Audited |
+- None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (9)
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| MainnetRFQ | unknown | bsc | n/a | [`0x2a371c...ceb2dd`](./contracts/bsc-56/0x2a371cd8e9ee8cfc3efbd7ef13ab40779eceb2dd/) | ⚠️ Unaudited |
-| TransparentUpgradeableProxy | proxy | avalanche | n/a | [`0x12e2b3...694323`](./contracts/avalanche-43114/0x12e2b3236d338651f7ee2222e9756b4222694323/) | ⚠️ Unaudited |
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| Exchange | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235254 | `0x807687...3d5885` | ⚠️ Unaudited |
+| OrderBooks | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235259 | `0x3ece76...99669a` | ⚠️ Unaudited |
+| OrderBooks | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235255 | `0x9cf797...a9170e` | ⚠️ Unaudited |
+| Portfolio | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235258 | `0x6f8205...6b5c6e` | ⚠️ Unaudited |
+| Portfolio | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235257 | `0xac0f30...0de0d4` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235256 | `0x9faa0a...ae16f2` | ⚠️ Unaudited |
+| TradePairs | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 0 | avalanche | unit-235253 | `0x625b7d...987ba1` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | proxy | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235261 | `0x12e2b3...694323` | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | retained_scope_excluded_inventory | address_book_excluded_inventory (excluded) | 1 | avalanche | unit-235260 | `0x1d34b4...971e20` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,22 +112,113 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (9)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Address-Book Class | Surface | Proxy Deployments | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---:|---|---|---|---|
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x4f605a...32a5fd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x5a8d53...18737f` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x780380...a44f7c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x7bc52a...a110f8` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x857f87...3a9ccd` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x96571c...e9d88e` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0x983325...b3b0a7` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xb94ca1...a2010c` | ❓ Unverified |
+| UnnamedContract | unknown | retained_scope_excluded_inventory | historical_or_testnet_inventory (excluded) | 0 | avalanche-fuji | n/a | `0xf66173...397f67` | ❓ Unverified |
 
 ## Audit Inventory
 
-| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
-|---|---|---|---|---|---|---|---|---|
-| [[Dexalot_03092021]SCAudit_Report.pdf](https://github.com/Dexalot/contracts/blob/main/audits/%5BDexalot_03092021%5DSCAudit_Report.pdf) | unknown | Audit | 2021-09 | stale | Direct | contract_name | 14 | high |
-| [[Dexalot_15092021]SCAudit_Report_2.pdf](https://github.com/Dexalot/contracts/blob/main/audits/%5BDexalot_15092021%5DSCAudit_Report_2.pdf) | unknown | Audit | 2021-09 | stale | Direct | contract_name | 14 | high |
-| [[Dexalot_15112021]SCAudit_Report_3.pdf](https://github.com/Dexalot/contracts/blob/main/audits/%5BDexalot_15112021%5DSCAudit_Report_3.pdf) | unknown | Audit | 2021-11 | stale | Direct | contract_name | 14 | high |
-| [[Dexalot_18022022]SCAudit_Report_4.pdf](https://github.com/Dexalot/contracts/blob/main/audits/%5BDexalot_18022022%5DSCAudit_Report_4.pdf) | unknown | Audit | 2022-02 | stale | Direct | contract_name | 1 | n/a |
-| [[Dexalot_23022022]SCAudit_Report_5.pdf](https://github.com/Dexalot/contracts/blob/main/audits/%5BDexalot_23022022%5DSCAudit_Report_5.pdf) | unknown | Audit | 2022-02 | stale | Direct | contract_name | 1 | n/a |
-| [hacken.io/audits/dexalot](https://hacken.io/audits/dexalot) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Scope Result | Own Matches | Proxy Refs | Excluded/Context | Unresolved | Extraction Confidence |
+|---|---|---|---|---|---|---|---|---:|---:|---:|---:|---|
+| [[Dexalot_03092021]SCAudit_Report.pdf](https://github.com/Dexalot/contracts/blob/main/audits/%5BDexalot_03092021%5DSCAudit_Report.pdf) | unknown | Audit | 2021-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 12 | high |
+| [[Dexalot_15092021]SCAudit_Report_2.pdf](https://github.com/Dexalot/contracts/blob/main/audits/%5BDexalot_15092021%5DSCAudit_Report_2.pdf) | unknown | Audit | 2021-09 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 12 | high |
+| [[Dexalot_15112021]SCAudit_Report_3.pdf](https://github.com/Dexalot/contracts/blob/main/audits/%5BDexalot_15112021%5DSCAudit_Report_3.pdf) | unknown | Audit | 2021-11 | stale | Direct | contract_name | no match | 0 | 0 | 0 | 11 | high |
+| [[Dexalot_18022022]SCAudit_Report_4.pdf](https://github.com/Dexalot/contracts/blob/main/audits/%5BDexalot_18022022%5DSCAudit_Report_4.pdf) | unknown | Audit | 2022-02 | stale | Direct | n/a | no match | 0 | 0 | 0 | 14 | n/a |
+| [[Dexalot_23022022]SCAudit_Report_5.pdf](https://github.com/Dexalot/contracts/blob/main/audits/%5BDexalot_23022022%5DSCAudit_Report_5.pdf) | unknown | Audit | 2022-02 | stale | Direct | n/a | no match | 0 | 0 | 0 | 14 | n/a |
+| [hacken.io/audits/dexalot](https://hacken.io/audits/dexalot) | Hacken | Audit | n/a | unknown | Direct | n/a | no match | 0 | 0 | 0 | 0 | low |
+
+### Scope Outcome Records
+
+These are completed scope-analysis outcomes, not missing matcher runs. Explicit-zero results retain their unresolved/context references below.
+
+- [7311] [Dexalot_03092021]SCAudit_Report.pdf — no match: All contracts listed in the Scope section of the report.
+- [7312] [Dexalot_15092021]SCAudit_Report_2.pdf — no match: Scope section lists all contracts with file paths. Audit date is September 15, 2021 from the cover page.
+- [7313] [Dexalot_15112021]SCAudit_Report_3.pdf — no match: Contracts explicitly listed in scope section of the audit report.
+- [7314] [Dexalot_18022022]SCAudit_Report_4.pdf — no match: No reason recorded
+- [7315] [Dexalot_23022022]SCAudit_Report_5.pdf — no match: No reason recorded
+- [12285] hacken.io/audits/dexalot — no match: The provided text is a marketing/overview page for Dexalot audits, listing multiple past audits but not providing detailed scope for any single audit. No specific contract names, file paths, or scope sections are identifiable.
+
+### Extracted Scope Disposition
+
+Only unambiguous, explicitly eligible project-anchor matches count as coverage. All other address-book references remain visible below.
+
+| Audit | Extracted Reference | Disposition | Candidate(s) | Reason | Counted |
+|---|---|---|---|---|---|
+| [Dexalot_03092021]SCAudit_Report.pdf | Exchange | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_03092021]SCAudit_Report.pdf | Fee | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_03092021]SCAudit_Report.pdf | OrderBooks | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_03092021]SCAudit_Report.pdf | Portfolio | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_03092021]SCAudit_Report.pdf | TradePairs | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_03092021]SCAudit_Report.pdf | IPortfolio | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_03092021]SCAudit_Report.pdf | ITradePairs | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_03092021]SCAudit_Report.pdf | Bytes32Library | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_03092021]SCAudit_Report.pdf | Bytes32LinkedListLibrary | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_03092021]SCAudit_Report.pdf | MockToken | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_03092021]SCAudit_Report.pdf | RBTLibrary | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_03092021]SCAudit_Report.pdf | StringLibrary | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15092021]SCAudit_Report_2.pdf | IPortfolio | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15092021]SCAudit_Report_2.pdf | ITradePairs | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15092021]SCAudit_Report_2.pdf | Bytes32Library | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15092021]SCAudit_Report_2.pdf | Bytes32LinkedListLibrary | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15092021]SCAudit_Report_2.pdf | MockToken | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15092021]SCAudit_Report_2.pdf | RBTLibrary | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15092021]SCAudit_Report_2.pdf | StringLibrary | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15092021]SCAudit_Report_2.pdf | Exchange | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15092021]SCAudit_Report_2.pdf | Fee | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15092021]SCAudit_Report_2.pdf | OrderBooks | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15092021]SCAudit_Report_2.pdf | Portfolio | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15092021]SCAudit_Report_2.pdf | TradePairs | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15112021]SCAudit_Report_3.pdf | IPortfolio | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15112021]SCAudit_Report_3.pdf | ITradePairs | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15112021]SCAudit_Report_3.pdf | Bytes32Library | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15112021]SCAudit_Report_3.pdf | Bytes32LinkedListLibrary | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15112021]SCAudit_Report_3.pdf | RBTLibrary | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15112021]SCAudit_Report_3.pdf | StringLibrary | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15112021]SCAudit_Report_3.pdf | MockToken | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15112021]SCAudit_Report_3.pdf | Exchange | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15112021]SCAudit_Report_3.pdf | OrderBooks | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15112021]SCAudit_Report_3.pdf | Portfolio | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_15112021]SCAudit_Report_3.pdf | TradePairs | unmatched — not counted | — | listed in scope | no |
+| [Dexalot_18022022]SCAudit_Report_4.pdf | Airdrop | unmatched — not counted | — | — | no |
+| [Dexalot_18022022]SCAudit_Report_4.pdf | Bytes32Library | unmatched — not counted | — | — | no |
+| [Dexalot_18022022]SCAudit_Report_4.pdf | Bytes32LinkedListLibrary | unmatched — not counted | — | — | no |
+| [Dexalot_18022022]SCAudit_Report_4.pdf | DexalotToken | unmatched — not counted | — | — | no |
+| [Dexalot_18022022]SCAudit_Report_4.pdf | Exchange | unmatched — not counted | — | — | no |
+| [Dexalot_18022022]SCAudit_Report_4.pdf | IPortfolio | unmatched — not counted | — | — | no |
+| [Dexalot_18022022]SCAudit_Report_4.pdf | ITradePairs | unmatched — not counted | — | — | no |
+| [Dexalot_18022022]SCAudit_Report_4.pdf | MockToken | unmatched — not counted | — | — | no |
+| [Dexalot_18022022]SCAudit_Report_4.pdf | OrderBooks | unmatched — not counted | — | — | no |
+| [Dexalot_18022022]SCAudit_Report_4.pdf | Portfolio | unmatched — not counted | — | — | no |
+| [Dexalot_18022022]SCAudit_Report_4.pdf | RBTLibrary | unmatched — not counted | — | — | no |
+| [Dexalot_18022022]SCAudit_Report_4.pdf | StringLibrary | unmatched — not counted | — | — | no |
+| [Dexalot_18022022]SCAudit_Report_4.pdf | TokenVesting | unmatched — not counted | — | — | no |
+| [Dexalot_18022022]SCAudit_Report_4.pdf | TradePairs | unmatched — not counted | — | — | no |
+| [Dexalot_23022022]SCAudit_Report_5.pdf | Airdrop | unmatched — not counted | — | — | no |
+| [Dexalot_23022022]SCAudit_Report_5.pdf | Bytes32Library | unmatched — not counted | — | — | no |
+| [Dexalot_23022022]SCAudit_Report_5.pdf | Bytes32LinkedListLibrary | unmatched — not counted | — | — | no |
+| [Dexalot_23022022]SCAudit_Report_5.pdf | DexalotToken | unmatched — not counted | — | — | no |
+| [Dexalot_23022022]SCAudit_Report_5.pdf | Exchange | unmatched — not counted | — | — | no |
+| [Dexalot_23022022]SCAudit_Report_5.pdf | IPortfolio | unmatched — not counted | — | — | no |
+| [Dexalot_23022022]SCAudit_Report_5.pdf | ITradePairs | unmatched — not counted | — | — | no |
+| [Dexalot_23022022]SCAudit_Report_5.pdf | MockToken | unmatched — not counted | — | — | no |
+| [Dexalot_23022022]SCAudit_Report_5.pdf | OrderBooks | unmatched — not counted | — | — | no |
+| [Dexalot_23022022]SCAudit_Report_5.pdf | Portfolio | unmatched — not counted | — | — | no |
+| [Dexalot_23022022]SCAudit_Report_5.pdf | RBTLibrary | unmatched — not counted | — | — | no |
+| [Dexalot_23022022]SCAudit_Report_5.pdf | StringLibrary | unmatched — not counted | — | — | no |
+| [Dexalot_23022022]SCAudit_Report_5.pdf | TokenVesting | unmatched — not counted | — | — | no |
+| [Dexalot_23022022]SCAudit_Report_5.pdf | TradePairs | unmatched — not counted | — | — | no |
 
 ## Coverage Gaps
 
@@ -117,22 +230,29 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 6 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 13 |
+| standard_library | 3 |
+| needs_review | 9 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 6
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=3
-- Match method counts: contract_name=2, extraction_exact=42
+- Address-book scope dispositions: 0 own (0 proxy reference(s)), 0 third-party/infra, 0 historical/testnet/deprecated, 0 unclassified context, 0 ambiguous, 63 unmatched
+- Matched-own operational status: 0 live, 0 inactive, 0 uninitialized, 0 unknown/not assessed
+- Extraction confidence breakdown: high=3, low=1
+- Match method counts: n/a
 
 Zero-match audit list:
 
+- [7311] [Dexalot_03092021]SCAudit_Report.pdf
+- [7312] [Dexalot_15092021]SCAudit_Report_2.pdf
+- [7313] [Dexalot_15112021]SCAudit_Report_3.pdf
+- [7314] [Dexalot_18022022]SCAudit_Report_4.pdf
+- [7315] [Dexalot_23022022]SCAudit_Report_5.pdf
 - [12285] hacken.io/audits/dexalot
 
 Fork inheritance lineage and inherited audits are included when available.

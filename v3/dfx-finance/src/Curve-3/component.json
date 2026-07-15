@@ -1,36 +1,28 @@
 {
   "component": "Curve-3",
   "main_contract": "Curve",
-  "source_file_count": 30,
-  "deployment_count": 3,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/dfx-finance/protocol/blob/main/audits/2021-05-03-Trail_of_Bits.pdf"
-  ],
+  "source_entry_count": 29,
+  "source_file_count": 29,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Curve-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x3fb5e30d3ce5f3f194c90a2689b1fd20c82f1637",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5a0b0b891aeec2afbefd094938b40eab5ae2db61",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x86fffd464875581a0f4b7b2ea1187c74c6fb9fba",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xc015f66ad7780df4d73f99c5cee415eb6b26acb0",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393565"
     }
   ]
 }

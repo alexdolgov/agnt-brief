@@ -1,7 +1,15 @@
 {
   "component": "AlterTiersInOperatorGrid",
   "main_contract": "AlterTiersInOperatorGrid",
+  "source_entry_count": 6,
   "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AlterTiersInOperatorGrid\"",
+    "compiler_selection": "source_pragmas"
+  },
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -15,7 +23,9 @@
       "address": "0x37d9b09eda477a84e3913fcb4d032efb0bf9b62e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401921"
     }
   ]
 }

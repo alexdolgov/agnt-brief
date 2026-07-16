@@ -1,0 +1,575 @@
+// SPDX-License-Identifier: BUSL-1.1
+// Last deployed from commit: db7e19f4bd6e3175fce7eba0afdea22cfd43a8cf;
+pragma solidity 0.8.17;
+
+import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
+import "@openzeppelin/contracts/utils/math/Math.sol";
+
+import "../../ReentrancyGuardKeccak.sol";
+import {DiamondStorageLib} from "../../lib/DiamondStorageLib.sol";
+import "../../interfaces/arbitrum/IPendleRouter.sol";
+import "../../interfaces/arbitrum/IPendleOracle.sol";
+import "../../interfaces/arbitrum/IPendleDepositHelper.sol";
+import "../../interfaces/arbitrum/IMasterPenpie.sol";
+import "../../OnlyOwnerOrInsolvent.sol";
+//This path is updated during deployment
+import "../../lib/arbitrum/DeploymentConstants.sol";
+
+contract PenpieFacet is ReentrancyGuardKeccak, OnlyOwnerOrInsolvent {
+    using TransferHelper for address;
+
+    // CONSTANTS
+
+    address private constant PENDLE_ROUTER =
+        0x888888888889758F76e7103c6CbF23ABbF58F946;
+    address public constant DEPOSIT_HELPER =
+        0xc06a5d3014b9124Bf215287980305Af2f793eB30;
+    address public constant PENDLE_STAKING =
+        0x6DB96BBEB081d2a85E0954C252f2c1dC108b3f81;
+    address public constant MASTER_PENPIE =
+        0x0776C06907CE6Ff3d9Dbf84bA9B3422d7225942D;
+    address public constant PENDLE_ORACLE =
+        0x1Fd95db7B7C0067De8D45C0cb35D59796adfD187;
+    address public constant PNP = 0x2Ac2B254Bc18cD4999f64773a966E4f4869c34Ee;
+    address public constant PENDLE = 0x0c880f6761F1af8d9Aa9C466984b80DAb9a8c9e8;
+    address public constant SILO = 0x0341C0C0ec423328621788d4854119B97f44E391;
+
+    address public constant PENDLE_EZ_ETH_MARKET =
+        0x5E03C94Fc5Fb2E21882000A96Df0b63d2c4312e2;
+    address public constant PENDLE_WST_ETH_MARKET =
+        0xFd8AeE8FCC10aac1897F8D5271d112810C79e022;
+    address public constant PENDLE_E_ETH_MARKET =
+        0x952083cde7aaa11AB8449057F7de23A970AA8472;
+    address public constant PENDLE_RS_ETH_MARKET =
+        0x6Ae79089b2CF4be441480801bb741A531d94312b;
+    address public constant PENDLE_WST_ETH_SILO_MARKET =
+        0xACcd9A7cb5518326BeD715f90bD32CDf2fEc2D14;
+
+    // ERRORS
+    error InvalidMarket(address market);
+
+    modifier whitelistedOnly() {
+        require(
+            msg.sender == 0x0E5Bad4108a6A5a8b06820f98026a7f3A77466b2 ||
+                msg.sender == 0xC29ee4509F01e3534307645Fc62F30Da3Ec65751 ||
+                msg.sender == 0x7E2C435B8319213555598274FAc603c4020B94CB ||
+                msg.sender == 0x413324ff183be1b94D09f6E1c1339E1abC09537A ||
+                msg.sender == 0xC6ba6BB819f1Be84EFeB2E3f2697AD9818151e5D ||
+                msg.sender == 0xec5A44cEe773D04D0EFF4092B86838d5Cd77eC4E ||
+                msg.sender == 0x9348F6b5324d14A54e6741f1787FcC59cB61A9Ea,
+            "!whitelisted"
+        );
+        _;
+    }
+
+    // PUBLIC FUNCTIONS
+
+    /**
+     * @dev This function uses the redstone-evm-connector
+     **/
+    function depositToPendleAndStakeInPenpie(
+        address market,
+        uint256 amount,
+        uint256 minLpOut,
+        IPendleRouter.ApproxParams memory guessPtReceivedFromSy,
+        IPendleRouter.TokenInput memory input,
+        IPendleRouter.LimitOrderData memory limit
+    ) public onlyOwner nonReentrant remainsSolvent {
+        address lpToken = _getPendleLpToken(market);
+        ITokenManager tokenManager = DeploymentConstants.getTokenManager();
+        bytes32 asset = _getUnderlyingAssetForMarket(market);
+        IERC20 token = IERC20(tokenManager.getAssetAddress(asset, false));
+
+        amount = Math.min(token.balanceOf(address(this)), amount);
+        require(amount > 0, "Cannot stake 0 tokens");
+
+        address(token).safeApprove(PENDLE_ROUTER, 0);
+        address(token).safeApprove(PENDLE_ROUTER, amount);
+
+        (uint256 netLpOut, , ) = IPendleRouter(PENDLE_ROUTER)
+            .addLiquiditySingleToken(
+                address(this),
+                market,
+                minLpOut,
+                guessPtReceivedFromSy,
+                input,
+                limit
+            );
+        require(netLpOut >= minLpOut, "Too little received");
+
+        market.safeApprove(PENDLE_STAKING, 0);
+        market.safeApprove(PENDLE_STAKING, netLpOut);
+
+        IPendleDepositHelper(DEPOSIT_HELPER).depositMarket(market, netLpOut);
+
+        IStakingPositions.StakedPosition memory position = IStakingPositions
+            .StakedPosition({
+                asset: address(token),
+                symbol: asset,
+                identifier: _getMarketIdentifier(market),
+                balanceSelector: _getBalanceSelectorForMarket(market),
+                unstakeSelector: bytes4(0)
+            });
+        DiamondStorageLib.addStakedPosition(position);
+        _decreaseExposure(tokenManager, address(token), amount);
+
+        emit Staked(msg.sender, asset, lpToken, amount, netLpOut, block.timestamp);
+    }
+
+    /**
+     * @dev This function uses the redstone-evm-connector
+     **/
+    function unstakeFromPenpieAndWithdrawFromPendle(
+        address market,
+        uint256 amount,
+        uint256 minOut,
+        IPendleRouter.TokenOutput memory output,
+        IPendleRouter.LimitOrderData memory limit
+    ) public onlyOwnerOrInsolvent nonReentrant returns (uint256) {
+        bytes32 asset = _getUnderlyingAssetForMarket(market);
+        address lpToken = _getPendleLpToken(market);
+        uint256 netTokenOut;
+
+        {
+            amount = Math.min(IERC20(lpToken).balanceOf(address(this)), amount);
+            require(amount > 0, "Cannot unstake 0 tokens");
+
+            {
+                address owner = DiamondStorageLib.contractOwner();
+                IPendleDepositHelper(DEPOSIT_HELPER).withdrawMarketWithClaim(
+                    market,
+                    amount,
+                    true
+                );
+
+                uint256 pnpBalance = IERC20(PNP).balanceOf(address(this));
+                uint256 pendleBalance = IERC20(PENDLE).balanceOf(address(this));
+                uint256 siloBalance = IERC20(SILO).balanceOf(address(this));
+
+                if (pnpBalance > 0) {
+                    PNP.safeTransfer(owner, pnpBalance);
+                }
+                if (pendleBalance > 0) {
+                    PENDLE.safeTransfer(owner, pendleBalance);
+                }
+                if (siloBalance > 0) {
+                    SILO.safeTransfer(owner, siloBalance);
+                }
+            }
+
+            market.safeApprove(PENDLE_ROUTER, 0);
+            market.safeApprove(PENDLE_ROUTER, amount);
+
+            (netTokenOut, , ) = IPendleRouter(PENDLE_ROUTER)
+                .removeLiquiditySingleToken(
+                    address(this),
+                    market,
+                    amount,
+                    output,
+                    limit
+                );
+            require(netTokenOut >= minOut, "Too little received");
+
+            ITokenManager tokenManager = DeploymentConstants.getTokenManager();
+            address token = tokenManager.getAssetAddress(asset, false);
+
+            _increaseExposure(tokenManager, token, netTokenOut);
+            if (IERC20(lpToken).balanceOf(address(this)) == 0) {
+                DiamondStorageLib.removeStakedPosition(_getMarketIdentifier(market));
+            }
+        }
+
+        emit Unstaked(
+            msg.sender,
+            asset,
+            lpToken,
+            netTokenOut,
+            amount,
+            block.timestamp
+        );
+
+        return netTokenOut;
+    }
+
+    /**
+     * @dev This function uses the redstone-evm-connector
+     **/
+    function depositPendleLPAndStakeInPenpie(
+        address market,
+        uint256 amount
+    ) public onlyOwner nonReentrant remainsSolvent {
+        address lpToken = _getPendleLpToken(market);
+
+        market.safeTransferFrom(msg.sender, address(this), amount);
+
+        market.safeApprove(PENDLE_STAKING, 0);
+        market.safeApprove(PENDLE_STAKING, amount);
+
+        IPendleDepositHelper(DEPOSIT_HELPER).depositMarket(market, amount);
+
+        ITokenManager tokenManager = DeploymentConstants.getTokenManager();
+        bytes32 asset = _getUnderlyingAssetForMarket(market);
+        IERC20 token = IERC20(tokenManager.getAssetAddress(asset, false));
+
+        IStakingPositions.StakedPosition memory position = IStakingPositions
+            .StakedPosition({
+                asset: address(token),
+                symbol: asset,
+                identifier: _getMarketIdentifier(market),
+                balanceSelector: _getBalanceSelectorForMarket(market),
+                unstakeSelector: bytes4(0)
+            });
+        DiamondStorageLib.addStakedPosition(position);
+
+        emit PendleLpStaked(msg.sender, lpToken, amount, block.timestamp);
+    }
+
+    /**
+     * @dev This function uses the redstone-evm-connector
+     **/
+    function unstakeFromPenpieAndWithdrawPendleLP(
+        address market,
+        uint256 amount
+    )
+        public
+        onlyOwner
+        canRepayDebtFully
+        nonReentrant
+        remainsSolvent
+        returns (uint256)
+    {
+        address lpToken = _getPendleLpToken(market);
+
+        amount = Math.min(IERC20(lpToken).balanceOf(address(this)), amount);
+        require(amount > 0, "Cannot unstake 0 tokens");
+
+        uint256 beforePendleBalance = IERC20(PENDLE).balanceOf(address(this));
+
+        IPendleDepositHelper(DEPOSIT_HELPER).withdrawMarketWithClaim(
+            market,
+            amount,
+            true
+        );
+
+        uint256 pendleClaimed = IERC20(PENDLE).balanceOf(address(this)) -
+            beforePendleBalance;
+        if (pendleClaimed > 0) {
+            PENDLE.safeTransfer(msg.sender, pendleClaimed);
+        }
+
+        market.safeTransfer(msg.sender, amount);
+
+        uint256 pnpReceived = IERC20(PNP).balanceOf(address(this));
+        if (pnpReceived > 0) {
+            PNP.safeTransfer(msg.sender, pnpReceived);
+        }
+
+        if (IERC20(lpToken).balanceOf(address(this)) == 0) {
+            DiamondStorageLib.removeStakedPosition(_getMarketIdentifier(market));
+        }
+
+        emit PendleLpUnstaked(msg.sender, lpToken, amount, block.timestamp);
+
+        return amount;
+    }
+
+    function depositToPendleAndStakeInPenpieWhitelisted(
+        address market,
+        uint256 amount,
+        uint256 minLpOut,
+        IPendleRouter.ApproxParams memory guessPtReceivedFromSy,
+        IPendleRouter.TokenInput memory input,
+        IPendleRouter.LimitOrderData memory limit
+    ) external whitelistedOnly {
+        depositToPendleAndStakeInPenpie(
+            market,
+            amount,
+            minLpOut,
+            guessPtReceivedFromSy,
+            input,
+            limit
+        );
+    }
+
+    function unstakeFromPenpieAndWithdrawFromPendleWhitelisted(
+        address market,
+        uint256 amount,
+        uint256 minOut,
+        IPendleRouter.TokenOutput memory output,
+        IPendleRouter.LimitOrderData memory limit
+    ) external whitelistedOnly returns (uint256) {
+        return
+            unstakeFromPenpieAndWithdrawFromPendle(
+                market,
+                amount,
+                minOut,
+                output,
+                limit
+            );
+    }
+
+    function depositPendleLPAndStakeInPenpieWhitelisted(
+        address market,
+        uint256 amount
+    ) external whitelistedOnly {
+        depositPendleLPAndStakeInPenpie(market, amount);
+    }
+
+    function unstakeFromPenpieAndWithdrawPendleLPWhitelisted(
+        address market,
+        uint256 amount
+    ) external whitelistedOnly returns (uint256) {
+        return unstakeFromPenpieAndWithdrawPendleLP(market, amount);
+    }
+
+    function underlyingBalanceForEzEthMarket() external view returns (uint256) {
+        return _getUnderlyingBalanceForMarket(PENDLE_EZ_ETH_MARKET, false);
+    }
+
+    function underlyingBalanceForWstEthMarket() external view returns (uint256) {
+        return _getUnderlyingBalanceForMarket(PENDLE_WST_ETH_MARKET, false);
+    }
+
+    function underlyingBalanceForEEthMarket() external view returns (uint256) {
+        return _getUnderlyingBalanceForMarket(PENDLE_E_ETH_MARKET, false);
+    }
+
+    function underlyingBalanceForRsEthMarket() external view returns (uint256) {
+        return _getUnderlyingBalanceForMarket(PENDLE_RS_ETH_MARKET, false);
+    }
+
+    function underlyingBalanceForWstEthSiloMarket()
+        external
+        view
+        returns (uint256)
+    {
+        return _getUnderlyingBalanceForMarket(PENDLE_WST_ETH_SILO_MARKET, true);
+    }
+
+    function pendingRewards(
+        address market
+    ) public view returns (uint256, address[] memory, uint256[] memory) {
+        (
+            uint256 pendingPenpie,
+            address[] memory bonusTokenAddresses,
+            ,
+            uint256[] memory pendingBonusRewards
+        ) = IMasterPenpie(MASTER_PENPIE).allPendingTokens(market, address(this));
+        return (pendingPenpie, bonusTokenAddresses, pendingBonusRewards);
+    }
+
+    function claimRewards(address market) external onlyOwner {
+        (
+            uint256 pendingPenpie,
+            address[] memory bonusTokenAddresses,
+            uint256[] memory pendingBonusRewards
+        ) = pendingRewards(market);
+        address[] memory stakingTokens = new address[](1);
+        stakingTokens[0] = market;
+        IMasterPenpie(MASTER_PENPIE).multiclaim(stakingTokens);
+
+        if (pendingPenpie > 0) {
+            PNP.safeTransfer(msg.sender, pendingPenpie);
+        }
+        uint256 length = pendingBonusRewards.length;
+        for (uint256 i; i != length; ++i) {
+            if (pendingBonusRewards[i] > 0) {
+                bonusTokenAddresses[i].safeTransfer(msg.sender, pendingBonusRewards[i]);
+            }
+        }
+    }
+
+    // INTERNAL FUNCTIONS
+    function _getPendleLpToken(address market) internal pure returns (address) {
+        // ezETH
+        if (market == PENDLE_EZ_ETH_MARKET) {
+            return 0xecCDC2C2191d5148905229c5226375124934b63b;
+        }
+        // wstETH
+        if (market == PENDLE_WST_ETH_MARKET) {
+            return 0xdb0e1D1872202A81Eb0cb655137f4a937873E02f;
+        }
+        // eETH
+        if (market == PENDLE_E_ETH_MARKET) {
+            return 0x264f4138161aaE16b76dEc7D4eEb756f25Fa67Cd;
+        }
+        // rsETH
+        if (market == PENDLE_RS_ETH_MARKET) {
+            return 0xe3B327c43b5002eb7280Eef52823698b6cDA06cF;
+        }
+        // wstETHSilo
+        if (market == PENDLE_WST_ETH_SILO_MARKET) {
+            return 0xCcCC7c80c9Be9fDf22e322A5fdbfD2ef6ac5D574;
+        }
+
+        revert InvalidMarket(market);
+    }
+
+    function _getMarketIdentifier(
+        address market
+    ) internal pure returns (bytes32) {
+        // ezETH
+        if (market == PENDLE_EZ_ETH_MARKET) {
+            return "PENDLE_EZ_ETH";
+        }
+        // wstETH
+        if (market == PENDLE_WST_ETH_MARKET) {
+            return "PENDLE_WST_ETH";
+        }
+        // eETH
+        if (market == PENDLE_E_ETH_MARKET) {
+            return "PENDLE_E_ETH";
+        }
+        // rsETH
+        if (market == PENDLE_RS_ETH_MARKET) {
+            return "PENDLE_RS_ETH";
+        }
+        // wstETHSilo
+        if (market == PENDLE_WST_ETH_SILO_MARKET) {
+            return "PENDLE_WST_ETH_SILO";
+        }
+
+        revert InvalidMarket(market);
+    }
+
+    function _getUnderlyingAssetForMarket(
+        address market
+    ) internal pure returns (bytes32) {
+        // ezETH
+        if (market == PENDLE_EZ_ETH_MARKET) {
+            return "ezETH";
+        }
+        // wstETH
+        if (market == PENDLE_WST_ETH_MARKET) {
+            return "wstETH";
+        }
+        // eETH
+        if (market == PENDLE_E_ETH_MARKET) {
+            return "weETH";
+        }
+        // rsETH
+        if (market == PENDLE_RS_ETH_MARKET) {
+            return "rsETH";
+        }
+        // wstETHSilo
+        if (market == PENDLE_WST_ETH_SILO_MARKET) {
+            return "ETH";
+        }
+
+        revert InvalidMarket(market);
+    }
+
+    function _getBalanceSelectorForMarket(
+        address market
+    ) internal pure returns (bytes4) {
+        // ezETH
+        if (market == PENDLE_EZ_ETH_MARKET) {
+            return this.underlyingBalanceForEzEthMarket.selector;
+        }
+        // wstETH
+        if (market == PENDLE_WST_ETH_MARKET) {
+            return this.underlyingBalanceForWstEthMarket.selector;
+        }
+        // eETH
+        if (market == PENDLE_E_ETH_MARKET) {
+            return this.underlyingBalanceForEEthMarket.selector;
+        }
+        // rsETH
+        if (market == PENDLE_RS_ETH_MARKET) {
+            return this.underlyingBalanceForRsEthMarket.selector;
+        }
+        // wstETHSilo
+        if (market == PENDLE_WST_ETH_SILO_MARKET) {
+            return this.underlyingBalanceForWstEthSiloMarket.selector;
+        }
+
+        revert InvalidMarket(market);
+    }
+
+    function _getUnderlyingBalanceForMarket(
+        address market,
+        bool isSilo
+    ) internal view returns (uint256) {
+        address lpToken = _getPendleLpToken(market);
+        uint256 balance = IERC20(lpToken).balanceOf(address(this));
+        IPendleOracle oracle = IPendleOracle(PENDLE_ORACLE);
+        uint256 rate = isSilo
+            ? oracle.getLpToAssetRate(market, 900)
+            : oracle.getLpToSyRate(market, 900);
+
+        return (balance * rate) / 1e18;
+    }
+
+    // MODIFIERS
+
+    modifier onlyOwner() {
+        DiamondStorageLib.enforceIsContractOwner();
+        _;
+    }
+
+    // EVENTS
+
+    /**
+     * @dev emitted when user stakes an asset
+     * @param user the address executing staking
+     * @param asset the asset that was staked
+     * @param vault address of receipt token
+     * @param depositTokenAmount how much of deposit token was staked
+     * @param receiptTokenAmount how much of receipt token was received
+     * @param timestamp of staking
+     **/
+    event Staked(
+        address indexed user,
+        bytes32 indexed asset,
+        address indexed vault,
+        uint256 depositTokenAmount,
+        uint256 receiptTokenAmount,
+        uint256 timestamp
+    );
+
+    /**
+     * @dev emitted when user unstakes an asset
+     * @param user the address executing unstaking
+     * @param asset the asset that was unstaked
+     * @param vault address of receipt token
+     * @param depositTokenAmount how much deposit token was received
+     * @param receiptTokenAmount how much receipt token was unstaked
+     * @param timestamp of unstaking
+     **/
+    event Unstaked(
+        address indexed user,
+        bytes32 indexed asset,
+        address indexed vault,
+        uint256 depositTokenAmount,
+        uint256 receiptTokenAmount,
+        uint256 timestamp
+    );
+
+    /**
+     * @dev emitted when user stakes an asset
+     * @param user the address executing staking
+     * @param vault address of receipt token
+     * @param amount how much of deposit token was staked
+     * @param timestamp of staking
+     **/
+    event PendleLpStaked(
+        address indexed user,
+        address indexed vault,
+        uint256 amount,
+        uint256 timestamp
+    );
+
+    /**
+     * @dev emitted when user unstakes an asset
+     * @param user the address executing unstaking
+     * @param vault address of receipt token
+     * @param amount how much deposit token was received
+     * @param timestamp of unstaking
+     **/
+    event PendleLpUnstaked(
+        address indexed user,
+        address indexed vault,
+        uint256 amount,
+        uint256 timestamp
+    );
+}

@@ -77,9 +77,9 @@ abstract contract ReferralManager is SignerManager, IReferralManager {
     /// @inheritdoc IReferralManager
     function setReferrerConfig(AuthorizationSignature calldata auth) external {
         // Auto-register if not already registered
-        if (!registeredReferrers[auth.referrer]) {
-            registeredReferrers[auth.referrer] = true;
-            emit ReferrerRegistered(auth.referrer);
+        if (!registeredReferrers[msg.sender]) {
+            registeredReferrers[msg.sender] = true;
+            emit ReferrerRegistered(msg.sender);
         }
 
         _setReferrerConfig(auth, true);
@@ -89,8 +89,8 @@ abstract contract ReferralManager is SignerManager, IReferralManager {
     /// @param auth Authorization signature
     /// @param skipRegistrationCheck Whether to skip registration requirement check
     function _setReferrerConfig(AuthorizationSignature calldata auth, bool skipRegistrationCheck) internal {
-        // Verify referrer is registered (unless skipping check)
-        if (!skipRegistrationCheck && !registeredReferrers[auth.referrer]) {
+        // Verify caller is registered referrer (unless skipping check)
+        if (!skipRegistrationCheck && !registeredReferrers[msg.sender]) {
             revert ReferrerNotRegistered();
         }
 
@@ -131,7 +131,7 @@ abstract contract ReferralManager is SignerManager, IReferralManager {
         usedSignatures[signatureHash] = true;
 
         // Set referrer configuration
-        referrerConfigs[auth.referrer] = ReferrerConfig({
+        referrerConfigs[msg.sender] = ReferrerConfig({
             isActive: true,
             discountRate: auth.discountRate,
             rebateRate: auth.rebateRate,
@@ -139,14 +139,14 @@ abstract contract ReferralManager is SignerManager, IReferralManager {
             rebateValidityDuration: auth.rebateValidityDuration,
             expiresAt: auth.expiresAt,
             monthlyRebateLimit: auth.monthlyRebateLimit,
-            totalVolume: referrerConfigs[auth.referrer].totalVolume, // Preserve existing volume
-            totalReferrals: referrerConfigs[auth.referrer].totalReferrals, // Preserve existing referrals
-            currentMonthUsdRebates: referrerConfigs[auth.referrer].currentMonthUsdRebates, // Preserve existing monthly rebates
-            currentMonthStart: referrerConfigs[auth.referrer].currentMonthStart // Preserve existing month start
+            totalVolume: referrerConfigs[msg.sender].totalVolume, // Preserve existing volume
+            totalReferrals: referrerConfigs[msg.sender].totalReferrals, // Preserve existing referrals
+            currentMonthUsdRebates: referrerConfigs[msg.sender].currentMonthUsdRebates, // Preserve existing monthly rebates
+            currentMonthStart: referrerConfigs[msg.sender].currentMonthStart // Preserve existing month start
         });
 
         emit ReferrerConfigSet(
-            auth.referrer,
+            msg.sender,
             auth.discountRate,
             auth.rebateRate,
             auth.discountValidityDuration,
@@ -325,7 +325,7 @@ abstract contract ReferralManager is SignerManager, IReferralManager {
         address trader,
         uint256 feeAmount,
         address collateralToken
-    ) external onlyOperator returns (uint256 traderDiscount, uint256 referrerRebate) {
+    ) external returns (uint256 traderDiscount, uint256 referrerRebate) {
         (traderDiscount, referrerRebate) = _processTradeReferralWithCollateral(trader, feeAmount, collateralToken);
 
         return (traderDiscount, referrerRebate);

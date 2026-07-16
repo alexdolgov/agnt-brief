@@ -1,0 +1,49 @@
+{
+  "component": "HoprTicketPriceOracle-3",
+  "main_contract": "HoprTicketPriceOracle",
+  "source_entry_count": 3,
+  "source_file_count": 3,
+  "source_path_remaps": [
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.9.2/contracts/access/Ownable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-52ebcdbf0df0-Ownable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.9.2/contracts/utils/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-aa5e08a5f560-Context.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HoprTicketPriceOracle-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xca9559e2fba20bcdf455879b17158a28f26f6b39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xf69a919baf23e16a83fcebb56f6b50602a91fd6e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

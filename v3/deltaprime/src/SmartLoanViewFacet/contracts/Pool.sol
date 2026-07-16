@@ -1,14 +1,18 @@
 // SPDX-License-Identifier: BUSL-1.1
-// Last deployed from commit: b75e073cf23a3eb181f55a89a800ef040b7ba456;
+// Last deployed from commit: 84497b01716b53fb360c04d763183339d5599174;
 pragma solidity 0.8.17;
 
 import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
+import "./abstract/PendingOwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol";
+import "@openzeppelin/contracts/utils/math/Math.sol";
 import "@uniswap/lib/contracts/libraries/TransferHelper.sol";
+import "@redstone-finance/evm-connector/contracts/core/ProxyConnector.sol";
 import "@openzeppelin/contracts/utils/math/Math.sol";
 import "./interfaces/IIndex.sol";
+import "./interfaces/ITokenManager.sol";
+import "./interfaces/IVPrimeController.sol";
 import "./interfaces/IRatesCalculator.sol";
 import "./interfaces/IBorrowersRegistry.sol";
 import "./interfaces/IPoolRewarder.sol";
@@ -21,8 +25,9 @@ import "./VestingDistributor.sol";
  * Depositors are rewarded with the interest rates collected from borrowers.
  * The interest rates calculation is delegated to an external calculator contract.
  */
-contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
+contract Pool is PendingOwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20, ProxyConnector {
     using TransferHelper for address payable;
+    using Math for uint256;
 
     uint256 public totalSupplyCap;
 
@@ -40,36 +45,145 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
 
     address payable public tokenAddress;
 
-    VestingDistributor public vestingDistributor;
+    VestingDistributor public vestingDistributor; // Needs to stay here in order to preserve the storage layout
 
     uint8 internal _decimals;
 
-    modifier onlyWhitelistedAccounts {
-        if(
-            msg.sender == 0x0E5Bad4108a6A5a8b06820f98026a7f3A77466b2 ||
-            msg.sender == 0x2fFA7E9624B923fA811d9B9995Aa34b715Db1945 ||
-            msg.sender == 0x0d7137feA34BC97819f05544Ec7DE5c98617989C ||
-            msg.sender == 0xC6ba6BB819f1Be84EFeB2E3f2697AD9818151e5D ||
-            msg.sender == 0x14f69F9C351b798dF31fC53E33c09dD29bFAb547 ||
-            msg.sender == 0x5C23Bd1BD272D22766eB3708B8f874CB93B75248 ||
-            msg.sender == 0x000000F406CA147030BE7069149e4a7423E3A264 ||
-            msg.sender == 0x5D80a1c0a5084163F1D2620c1B1F43209cd4dB12 ||
-            msg.sender == 0x6C21A841d6f029243AF87EF01f6772F05832144b
+    struct LockDetails {
+        uint256 lockTime;
+        uint256 amount;
+        uint256 unlockTime;
+    }
+    mapping(address => LockDetails[]) public locks;
+    uint256 public constant MAX_LOCK_TIME = 3 * 365 days;
 
-        ){
-            _;
-        } else {
-            revert("Not whitelisted");
+    ITokenManager public tokenManager;
+
+    struct WithdrawalIntent {
+        uint256 amount;
+        uint256 actionableAt;
+        uint256 expiresAt;
+    }
+
+    struct IntentInfo {
+        uint256 amount;           // Amount requested for withdrawal
+        uint256 actionableAt;     // Timestamp when withdrawal becomes possible
+        uint256 expiresAt;        // Timestamp when intent expires
+        bool isPending;           // True if waiting period not completed
+        bool isActionable;        // True if can be withdrawn now
+        bool isExpired;          // True if expired
+    }
+
+    mapping(address => WithdrawalIntent[]) public withdrawalIntents;
+
+
+    /* ========== METHODS ========== */
+
+    function getLockedBalance(address account) public view returns (uint256) {
+        uint256 lockedBalance = 0;
+        for (uint i = 0; i < locks[account].length; i++) {
+            if (locks[account][i].unlockTime > block.timestamp) {
+                lockedBalance += locks[account][i].amount;
+            }
         }
+        return lockedBalance;
+    }
+
+    function getNotLockedBalance(address account, uint256 excludedIntentAmount) public view returns (uint256 notLockedBalance) {
+        uint256 lockedBalance = getLockedBalance(account);
+        uint256 totalIntentAmount = getTotalIntentAmount(account);
+
+        // Subtract the excluded intent amount
+        totalIntentAmount = totalIntentAmount > excludedIntentAmount ? totalIntentAmount - excludedIntentAmount : 0;
+
+        uint256 balance = balanceOf(account);
+        uint256 unavailableBalance = lockedBalance + totalIntentAmount;
+
+        if (balance < unavailableBalance) {
+            notLockedBalance = 0;
+        } else {
+            notLockedBalance = balance - unavailableBalance;
+        }
+    }
+
+
+    function lockDeposit(uint256 amount, uint256 lockTime) public {
+        require(getNotLockedBalance(msg.sender, 0) >= amount, "Insufficient balance to lock");
+        require(lockTime <= MAX_LOCK_TIME, "Cannot lock for more than 3 years");
+        locks[msg.sender].push(LockDetails(lockTime, amount, block.timestamp + lockTime));
+
+        emit DepositLocked(msg.sender, amount, lockTime, block.timestamp + lockTime);
+
+        notifyVPrimeController(msg.sender);
+    }
+
+
+    /**
+     * @notice Removes expired locks for the caller
+     * @dev This function should be called periodically to prevent array growth
+     * @return count Number of locks removed
+    */
+    function cleanExpiredLocks() public returns (uint256 count) {
+        LockDetails[] storage userLocks = locks[msg.sender];
+        uint256 j = 0;
+
+        // Move active locks to the beginning of the array
+        for (uint256 i = 0; i < userLocks.length; i++) {
+            if (userLocks[i].unlockTime > block.timestamp) {
+                if (i != j) {
+                    userLocks[j] = userLocks[i];
+                }
+                j++;
+            } else {
+                count++;
+            }
+        }
+
+        // Remove expired locks from the end of the array
+        uint256 removalsRequired = userLocks.length - j;
+        for (uint256 i = 0; i < removalsRequired; i++) {
+            userLocks.pop();
+        }
+
+        emit ExpiredLocksRemoved(msg.sender, count);
+    }
+
+
+    /**
+     * @notice Calculates and returns the fully vested locked balance for a given account.
+     * @dev The fully vested locked balance is used in the governance mechanism of the system, specifically for the allocation of vPrime tokens.
+     * The method calculates the fully vested locked balance by iterating over all the locks of the account and summing up the amounts of those locks that are still active (i.e., their `unlockTime` is greater than the current block timestamp). However, the amount of each lock is scaled by the ratio of its `lockTime` to the `MAX_LOCK_TIME` (3 years). This means that the longer the lock time, the larger the contribution of the lock to the fully vested locked balance.
+     * The fully vested locked balance is used to calculate the maximum vPrime allocation for a user. Users accrue vPrime over a period of 3 years, from 0 to the maximum vPrime based on their 10-1 pairs of pool-deposit and sPrime. Locking pool deposits and sPrime immediately vests the vPrime.
+     * @param account The address of the account for which to calculate the fully vested locked balance.
+     * @return fullyVestedBalance The fully vested locked balance of the provided account.
+     */
+    function getFullyVestedLockedBalance(address account) public view returns (uint256 fullyVestedBalance) {
+        fullyVestedBalance = 0;
+        for (uint i = 0; i < locks[account].length; i++) {
+            if (locks[account][i].unlockTime > block.timestamp) { // Lock is still active
+                fullyVestedBalance += locks[account][i].amount * locks[account][i].lockTime / MAX_LOCK_TIME;
+            }
+        }
+    }
+
+    function setTokenManager(ITokenManager _tokenManager) public onlyOwner {
+        tokenManager = _tokenManager;
+    }
+
+    function getVPrimeControllerAddress() public view returns (address) {
+        if(address(tokenManager) != address(0)) {
+            return tokenManager.getVPrimeControllerAddress();
+        }
+        return address(0);
     }
 
 
     function initialize(IRatesCalculator ratesCalculator_, IBorrowersRegistry borrowersRegistry_, IIndex depositIndex_, IIndex borrowIndex_, address payable tokenAddress_, IPoolRewarder poolRewarder_, uint256 _totalSupplyCap) public initializer {
         require(AddressUpgradeable.isContract(address(ratesCalculator_))
-            && AddressUpgradeable.isContract(address(borrowersRegistry_))
-            && AddressUpgradeable.isContract(address(depositIndex_))
-            && AddressUpgradeable.isContract(address(borrowIndex_))
-            && (AddressUpgradeable.isContract(address(poolRewarder_)) || address(poolRewarder_) == address(0)), "Wrong init arguments");
+        && AddressUpgradeable.isContract(address(borrowersRegistry_))
+        && AddressUpgradeable.isContract(address(depositIndex_))
+        && AddressUpgradeable.isContract(address(borrowIndex_))
+        && (AddressUpgradeable.isContract(address(poolRewarder_)) || address(poolRewarder_) == address(0)), "Wrong init arguments");
 
         borrowersRegistry = borrowersRegistry_;
         ratesCalculator = ratesCalculator_;
@@ -140,32 +254,65 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         emit BorrowersRegistryChanged(address(borrowersRegistry_), block.timestamp);
     }
 
-    /**
-     * Sets the new Pool Rewarder.
-     * The IPoolRewarder that distributes additional token rewards to people having a stake in this pool proportionally to their stake and time of participance.
-     * Only the owner of the Contract can execute this function.
-     * @dev _poolRewarder the address of PoolRewarder
-    **/
-    function setVestingDistributor(address _distributor) external onlyOwner {
-        if(!AddressUpgradeable.isContract(_distributor) && _distributor != address(0)) revert NotAContract(_distributor);
-        vestingDistributor = VestingDistributor(_distributor);
-
-        emit VestingDistributorChanged(_distributor, block.timestamp);
-    }
 
     /* ========== MUTATIVE FUNCTIONS ========== */
-    function transfer(address recipient, uint256 amount) external override returns (bool) {
-        if(recipient == address(0)) revert TransferToZeroAddress();
 
+    function createWithdrawalIntent(uint256 amount) external nonReentrant {
+        require(amount > 0, "Amount must be greater than zero");
+
+        // Remove expired intents first
+        _removeExpiredIntents(msg.sender);
+
+        uint256 availableBalance = getNotLockedBalance(msg.sender, 0);
+        if(amount > availableBalance){
+            revert InsufficientAvailableBalance(amount, availableBalance);
+        }
+
+        uint256 actionableAt = block.timestamp + 24 hours;
+        uint256 expiresAt = actionableAt + 24 hours;
+
+        WithdrawalIntent memory newIntent = WithdrawalIntent({
+            amount: amount,
+            actionableAt: actionableAt,
+            expiresAt: expiresAt
+        });
+
+        withdrawalIntents[msg.sender].push(newIntent);
+
+        emit WithdrawalIntentCreated(msg.sender, amount, actionableAt, expiresAt);
+    }
+
+
+    function cancelWithdrawalIntent(uint256 intentIndex) external nonReentrant {
+        WithdrawalIntent[] storage intents = withdrawalIntents[msg.sender];
+
+        require(intentIndex < intents.length, "Invalid intent index");
+
+        WithdrawalIntent memory intent = intents[intentIndex];
+
+        // Remove the intent
+        uint256 lastIndex = intents.length - 1;
+        if (intentIndex != lastIndex) {
+            intents[intentIndex] = intents[lastIndex];
+        }
+        intents.pop();
+
+        emit WithdrawalIntentCancelled(msg.sender, intent.amount, block.timestamp);
+    }
+
+    function clearExpiredIntents() external {
+        _removeExpiredIntents(msg.sender);
+    }
+
+    function transfer(address recipient, uint256 amount) external override nonReentrant returns (bool) {
+        if(recipient == address(0)) revert TransferToZeroAddress();
         if(recipient == address(this)) revert TransferToPoolAddress();
+        if(!isWithdrawalAmountAvailable(msg.sender, amount, 0)){
+            revert InsufficientAvailableBalance(amount, getNotLockedBalance(msg.sender, 0));
+        }
 
         address account = msg.sender;
         _accumulateDepositInterest(account);
-
-        (uint256 lockedAmount, uint256 transferrableAmount) = _getAmounts(account);
-        if(amount > transferrableAmount) revert TransferAmountExceedsBalance(amount, transferrableAmount);
-
-        _updateWithdrawn(account, amount, lockedAmount);
 
         // (this is verified in "require" above)
         unchecked {
@@ -184,6 +331,8 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         }
 
         emit Transfer(account, recipient, amount);
+
+        notifyVPrimeController(msg.sender);
 
         return true;
     }
@@ -222,19 +371,17 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         return true;
     }
 
-    function transferFrom(address sender, address recipient, uint256 amount) external override returns (bool) {
+    function transferFrom(address sender, address recipient, uint256 amount) external override nonReentrant returns (bool) {
         if(_allowed[sender][msg.sender] < amount) revert InsufficientAllowance(amount, _allowed[sender][msg.sender]);
 
         if(recipient == address(0)) revert TransferToZeroAddress();
-
         if(recipient == address(this)) revert TransferToPoolAddress();
 
+        if(!isWithdrawalAmountAvailable(sender, amount, 0)){
+            revert InsufficientAvailableBalance(amount, getNotLockedBalance(sender, 0));
+        }
+
         _accumulateDepositInterest(sender);
-
-        (uint256 lockedAmount, uint256 transferrableAmount) = _getAmounts(sender);
-        if(amount > transferrableAmount) revert TransferAmountExceedsBalance(amount, transferrableAmount);
-
-        _updateWithdrawn(sender, amount, lockedAmount);
 
         _deposited[sender] -= amount;
         _allowed[sender][msg.sender] -= amount;
@@ -252,6 +399,8 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
 
         emit Transfer(sender, recipient, amount);
 
+        notifyVPrimeController(sender);
+
         return true;
     }
 
@@ -260,7 +409,7 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
      * Deposits the amount
      * It updates user deposited balance, total deposited and rates
      **/
-    function deposit(uint256 _amount) public virtual onlyWhitelistedAccounts{
+    function deposit(uint256 _amount) public virtual {
         depositOnBehalf(_amount, msg.sender);
     }
 
@@ -268,7 +417,7 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
      * Deposits the amount on behalf of `_of` user.
      * It updates `_of` user deposited balance, total deposited and rates
      **/
-    function depositOnBehalf(uint256 _amount, address _of) public virtual nonReentrant onlyWhitelistedAccounts {
+    function depositOnBehalf(uint256 _amount, address _of) public virtual nonReentrant {
         if(_amount == 0) revert ZeroDepositAmount();
         require(_of != address(0), "Address zero");
         require(_of != address(this), "Cannot deposit on behalf of pool");
@@ -302,14 +451,71 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         tokenAddress.safeTransfer(to, amount);
     }
 
+    function isWithdrawalAmountAvailable(address account, uint256 amount, uint256 excludedIntentAmount) public view returns (bool) {
+        uint256 availableBalance = getNotLockedBalance(account, excludedIntentAmount);
+        return amount <= availableBalance;
+    }
+
     /**
-     * Withdraws selected amount from the user deposits
+     * @dev Validates withdrawal intents and checks if requested amount is within acceptable range
+     * @param intents The array of withdrawal intents for the user
+     * @param intentIndices Array of intent indices to validate
+     * @param requestedAmount The total amount requested for withdrawal
+     * @return finalAmount The actual amount to be withdrawn (may be less than requested if balance insufficient)
+    */
+    function validateWithdrawalIntents(
+        WithdrawalIntent[] storage intents,
+        uint256[] calldata intentIndices,
+        uint256 requestedAmount
+    ) internal view returns (uint256 finalAmount) {
+        require(intentIndices.length > 0, "Must provide at least one intent");
+
+        // Check indices are monotonically increasing
+        for(uint256 i = 1; i < intentIndices.length; i++) {
+            require(
+                intentIndices[i] > intentIndices[i-1],
+                "Intent indices must be strictly increasing"
+            );
+        }
+
+        // Validate each intent and sum up total intended amount
+        uint256 totalIntentAmount = 0;
+        for(uint256 i = 0; i < intentIndices.length; i++) {
+            uint256 index = intentIndices[i];
+            require(index < intents.length, "Invalid intent index");
+
+            WithdrawalIntent storage intent = intents[index];
+            require(block.timestamp >= intent.actionableAt, "Withdrawal intent not matured");
+            require(block.timestamp <= intent.expiresAt, "Withdrawal intent expired");
+
+            totalIntentAmount += intent.amount;
+        }
+
+        // Allow up to 1% more than total intent amount
+        uint256 maxAllowedAmount = totalIntentAmount + (totalIntentAmount / 100);
+        require(
+            requestedAmount <= maxAllowedAmount,
+            "Requested amount exceeds intent amount by more than 1%"
+        );
+
+        // Return the minimum of requested amount and actual balance
+        return Math.min(requestedAmount, getNotLockedBalance(msg.sender, totalIntentAmount));
+    }
+
+    /**
+     * Withdraws without withdrawal queue, to be used by DEPOSIT_SWAP contract only
      * @dev _amount the amount to be withdrawn
      **/
-    function withdraw(uint256 _amount) external nonReentrant onlyWhitelistedAccounts {
-        if(_amount > IERC20(tokenAddress).balanceOf(address(this))) revert InsufficientPoolFunds();
+    function withdrawInstant(uint256 _amount) external nonReentrant {
+        address DEPOSIT_SWAP_CONTRACT = address(0); // for audit demonstration purposes only, TODO: replace with actual address before deployment
+        require(msg.sender == DEPOSIT_SWAP_CONTRACT);
 
         _accumulateDepositInterest(msg.sender);
+        _amount = Math.min(_amount, _deposited[msg.sender]);
+
+        require(isWithdrawalAmountAvailable(msg.sender, _amount, 0), "Balance is locked");
+
+        if(_amount > IERC20(tokenAddress).balanceOf(address(this))) revert InsufficientPoolFunds();
 
         if(_amount > _deposited[address(this)]) revert BurnAmountExceedsBalance();
         // verified in "require" above
@@ -320,6 +526,8 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
 
         _updateRates();
 
+        notifyVPrimeController(msg.sender);
+
         _transferFromPool(msg.sender, _amount);
 
         if (address(poolRewarder) != address(0)) {
@@ -327,6 +535,50 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         }
 
         emit Withdrawal(msg.sender, _amount, block.timestamp);
+    }
+
+    /**
+    * Withdraws selected amount using multiple intents
+    * @param _amount the total amount to be withdrawn
+    * @param intentIndices array of intent indices to be used for withdrawal
+    **/
+    function withdraw(uint256 _amount, uint256[] calldata intentIndices) external nonReentrant {
+        WithdrawalIntent[] storage intents = withdrawalIntents[msg.sender];
+
+        // Validate intents and get final withdrawal amount
+        uint256 finalAmount = validateWithdrawalIntents(intents, intentIndices, _amount);
+
+        require(isWithdrawalAmountAvailable(msg.sender, finalAmount, finalAmount), "Balance is locked");
+
+        // Remove intents from highest to lowest index to maintain array integrity
+        for(uint256 i = intentIndices.length; i > 0; i--) {
+            uint256 indexToRemove = intentIndices[i - 1];
+            uint256 lastIndex = intents.length - 1;
+            if (indexToRemove != lastIndex) {
+                intents[indexToRemove] = intents[lastIndex];
+            }
+            intents.pop();
+        }
+
+        _accumulateDepositInterest(msg.sender);
+
+        if(finalAmount > IERC20(tokenAddress).balanceOf(address(this))) revert InsufficientPoolFunds();
+        if(finalAmount > _deposited[address(this)]) revert BurnAmountExceedsBalance();
+
+        _deposited[address(this)] -= finalAmount;
+        _burn(msg.sender, finalAmount);
+
+        _updateRates();
+
+        notifyVPrimeController(msg.sender);
+
+        if (address(poolRewarder) != address(0)) {
+            poolRewarder.withdrawFor(finalAmount, msg.sender);
+        }
+
+        _transferFromPool(msg.sender, finalAmount);
+
+        emit Withdrawal(msg.sender, finalAmount, block.timestamp);
     }
 
     /**
@@ -369,7 +621,79 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         emit Repayment(msg.sender, amount, block.timestamp);
     }
 
-    /* =========
+    function notifyVPrimeController(address account) internal {
+        address vPrimeControllerAddress = getVPrimeControllerAddress();
+        if(vPrimeControllerAddress != address(0)){
+            if(containsOracleCalldata()) {
+                proxyCalldata(
+                    vPrimeControllerAddress,
+                    abi.encodeWithSignature
+                    ("updateVPrimeSnapshot(address)", account),
+                    false
+                );
+            } else {
+                IVPrimeController(vPrimeControllerAddress).flagUserForParameterUpdate(account);
+            }
+        }
+    }
+
+    function _removeExpiredIntents(address user) internal {
+        WithdrawalIntent[] storage intents = withdrawalIntents[user];
+        uint256 i = 0;
+        while (i < intents.length) {
+            if (block.timestamp > intents[i].expiresAt) {
+                // Remove expired intent
+                uint256 lastIndex = intents.length - 1;
+                if (i != lastIndex) {
+                    intents[i] = intents[lastIndex];
+                }
+                intents.pop();
+                // Do not increment i as the new element at index i needs to be checked
+            } else {
+                i++;
+            }
+        }
+    }
+
+    /* ========= VIEW METHODS ========= */
+
+    /**
+      * @dev Returns array of all intents with their current status for a given user
+      * @param user Address of the user to check intents for
+      * @return Array of IntentInfo structs containing all intent details and status
+     **/
+    function getUserIntents(address user) external view returns (IntentInfo[] memory) {
+        WithdrawalIntent[] storage intents = withdrawalIntents[user];
+        IntentInfo[] memory intentInfos = new IntentInfo[](intents.length);
+
+        for (uint256 i = 0; i < intents.length; i++) {
+            WithdrawalIntent storage intent = intents[i];
+
+            intentInfos[i] = IntentInfo({
+                amount: intent.amount,
+                actionableAt: intent.actionableAt,
+                expiresAt: intent.expiresAt,
+                isPending: block.timestamp < intent.actionableAt,
+                isActionable: block.timestamp >= intent.actionableAt && block.timestamp <= intent.expiresAt,
+                isExpired: block.timestamp > intent.expiresAt
+            });
+        }
+
+        return intentInfos;
+    }
+
+    /**
+      * Returns the total amount of the withdrawal intents for the given user
+      * @dev user the address of the queried user
+    **/
+    function getTotalIntentAmount(address user) public view returns (uint256 totalIntentAmount) {
+        WithdrawalIntent[] storage intents = withdrawalIntents[user];
+        for (uint256 i = 0; i < intents.length; i++) {
+            if (block.timestamp <= intents[i].expiresAt) {
+                totalIntentAmount += intents[i].amount;
+            }
+        }
+    }
 
 
     /**
@@ -414,7 +738,7 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
 
     // Returns max. acceptable pool utilisation after borrow action
     function getMaxPoolUtilisationForBorrowing() virtual public view returns (uint256) {
-        return 0.9e18;
+        return 0.925e18;
     }
 
     /**
@@ -450,7 +774,20 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
             getBorrowingRate(),
             totalBorrowed(),
             getMaxPoolUtilisationForBorrowing()
-        ];
+            ];
+    }
+
+    function containsOracleCalldata() public view returns (bool) {
+        // Checking if the calldata ends with the RedStone marker
+        bool hasValidRedstoneMarker;
+        assembly {
+            let calldataLast32Bytes := calldataload(sub(calldatasize(), STANDARD_SLOT_BS))
+            hasValidRedstoneMarker := eq(
+                REDSTONE_MARKER_MASK,
+                and(calldataLast32Bytes, REDSTONE_MARKER_MASK)
+            )
+        }
+        return hasValidRedstoneMarker;
     }
 
     /**
@@ -478,10 +815,6 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
 
     function _burn(address account, uint256 amount) internal {
         if(amount > _deposited[account]) revert BurnAmountExceedsBalance();
-        (uint256 lockedAmount, uint256 transferrableAmount) = _getAmounts(account);
-        if(amount > transferrableAmount) revert BurnAmountExceedsAvailableForUser();
-
-        _updateWithdrawn(account, amount, lockedAmount);
 
         // verified in "require" above
         unchecked {
@@ -491,21 +824,6 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
         emit Transfer(account, address(0), amount);
     }
 
-    function _getAmounts(address account) internal view returns (uint256 lockedAmount, uint256 transferrableAmount) {
-        if (address(vestingDistributor) != address(0)) {
-            lockedAmount = vestingDistributor.locked(account);
-            transferrableAmount = _deposited[account] - (lockedAmount - vestingDistributor.availableToWithdraw(account));
-        } else {
-            transferrableAmount = _deposited[account];
-        }
-    }
-
-    function _updateWithdrawn(address account, uint256 amount, uint256 lockedAmount) internal {
-        uint256 availableUnvested = _deposited[account] - lockedAmount;
-        if (amount > availableUnvested && address(vestingDistributor) != address(0)) {
-            vestingDistributor.updateWithdrawn(account, amount - availableUnvested);
-        }
-    }
 
     function _updateRates() internal {
         uint256 _totalBorrowed = totalBorrowed();
@@ -550,6 +868,24 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
     }
 
     /* ========== EVENTS ========== */
+
+
+    /**
+        * @dev emitted after the user creates withdrawal intent
+        * @param user the address that creates the withdrawal intent
+        * @param amount the amount of the withdrawal intent
+        * @param actionableAt the time when the withdrawal intent can be executed
+        * @param expiresAt the time when the withdrawal intent expires
+    **/
+    event WithdrawalIntentCreated(address indexed user, uint256 amount, uint256 actionableAt, uint256 expiresAt);
+
+    /**
+        * @dev emitted after the user cancels withdrawal intent
+        * @param user the address that cancels the withdrawal intent
+        * @param amount the amount of the withdrawal intent
+        * @param timestamp of the cancellation
+    **/
+    event WithdrawalIntentCancelled(address indexed user, uint256 amount, uint256 timestamp);
 
     /**
      * @dev emitted after the user deposits funds
@@ -621,12 +957,23 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
     **/
     event PoolRewarderChanged(address indexed poolRewarder, uint256 timestamp);
 
+
     /**
-    * @dev emitted after changing vesting distributor
-    * @param distributor an address of the newly set distributor
-    * @param timestamp of the distributor change
-    **/
-    event VestingDistributorChanged(address indexed distributor, uint256 timestamp);
+     * @dev emitted after the user locks deposit
+     * @param user the address that locks the deposit
+     * @param amount the amount locked
+     * @param lockTime the time for which the deposit is locked
+     * @param unlockTime the time when the deposit will be unlocked
+     **/
+    event DepositLocked(address indexed user, uint256 amount, uint256 lockTime, uint256 unlockTime);
+
+
+    /**
+     * @dev Emitted when expired locks are removed from an account
+     * @param user The address whose locks were cleaned
+     * @param count The number of expired locks removed
+    */
+    event ExpiredLocksRemoved(address indexed user, uint256 count);
 
     /* ========== ERRORS ========== */
 
@@ -688,4 +1035,7 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
 
     // getMaxPoolUtilisationForBorrowing was breached
     error MaxPoolUtilisationBreached();
+
+    // Insufficient available balance
+    error InsufficientAvailableBalance(uint256 amount, uint256 availableBalance);
 }

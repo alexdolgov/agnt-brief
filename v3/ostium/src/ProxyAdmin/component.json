@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/ProxyAdmin\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 10,
+  "deployment_count": 11,
   "audited": true,
   "audits_covering": [
     "https://1263702948-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCEDPLHGTrrpP1i2dbe3d%2Fuploads%2F1NAt99nKJ1HesxyWjElF%2FZellic%20Nov%2025.pdf",
@@ -101,6 +101,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "397583"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb71ec9ebd8145dacacf6724363143cb5667a3d36",
+      "is_proxy": true,
+      "implementation_address": "0xc7e40c730bd81227e5d6b2708c6a9b311023c61f",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",

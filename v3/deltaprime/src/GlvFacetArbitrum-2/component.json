@@ -1,0 +1,28 @@
+{
+  "component": "GlvFacetArbitrum-2",
+  "main_contract": "GlvFacetArbitrum",
+  "source_entry_count": 83,
+  "source_file_count": 83,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GlvFacetArbitrum-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x11847ee581f524c29a54541a9d91587b941d22f3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/TokensFactory\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://github.com/OmegaAudits/audits/blob/main/202501-Altitude-parallel-farming.pdf",
@@ -27,6 +27,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "390836"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf10b3792009bee22e8c762ea2a79cb97bed0bcb0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

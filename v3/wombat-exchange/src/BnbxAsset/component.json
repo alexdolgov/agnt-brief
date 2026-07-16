@@ -1,8 +1,8 @@
 {
   "component": "BnbxAsset",
   "main_contract": "BnbxAsset",
-  "source_entry_count": 19,
-  "source_file_count": 19,
+  "source_entry_count": 23,
+  "source_file_count": 23,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x16b37225889a038fad42efded462821224a509a7",
+      "address": "0x10f7c62f47f19e3ce08fef38f74e3c0bb31fc24f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "400959"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

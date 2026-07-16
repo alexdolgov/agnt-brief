@@ -1,0 +1,38 @@
+{
+  "component": "PartyBPositionActionsFacet",
+  "main_contract": "PartyBPositionActionsFacet",
+  "source_entry_count": 28,
+  "source_file_count": 28,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PartyBPositionActionsFacet\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0131fdf62e1de497b536876d5fb5298d91b6cc28",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa176170fcd4dd18fd0a4d82992faa2482a8a01f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

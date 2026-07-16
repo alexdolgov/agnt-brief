@@ -1,8 +1,8 @@
 {
   "component": "SmartLoanLiquidationFacet",
   "main_contract": "SmartLoanLiquidationFacet",
-  "source_entry_count": 75,
-  "source_file_count": 75,
+  "source_entry_count": 78,
+  "source_file_count": 78,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -11,22 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/AstraSec-AuditReport-DeltaPrime-Final.pdf",
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/Smart_Contract_Audit_DeltaPrime_Protocol_04112022.pdf",
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/blocksec_deltaprime_v1.0-signed.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x686e838a3733a2400e94dc41338e55dec52893a0",
+      "address": "0x10cc67f62d7869ee3d48da50e0945e48ad68a859",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393617"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

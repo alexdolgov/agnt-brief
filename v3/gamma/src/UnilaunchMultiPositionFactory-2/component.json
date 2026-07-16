@@ -1,0 +1,38 @@
+{
+  "component": "UnilaunchMultiPositionFactory-2",
+  "main_contract": "UnilaunchMultiPositionFactory",
+  "source_entry_count": 79,
+  "source_file_count": 79,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UnilaunchMultiPositionFactory-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x317a4376658de808e6455f4aac74650a33c51db2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xdb7b4fb60ea23b3fd57d1b4c6132a1f99dfc6f01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

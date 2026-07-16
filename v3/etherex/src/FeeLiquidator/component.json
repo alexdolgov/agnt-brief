@@ -1,0 +1,28 @@
+{
+  "component": "FeeLiquidator",
+  "main_contract": "FeeLiquidator",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FeeLiquidator\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x3add8307bcc1b6c757cf1d7664b2f37c9bba039b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

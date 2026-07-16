@@ -1,23 +1,30 @@
 # bend — deployments
 
-27 verified deployment(s) across 18 component(s).
+34 verified deployment(s) across 24 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | chain-80094 | `0x118d2ceee9785eaf70c15cd74cd84c9f8c3eec9a` | ERC1967Proxy | proxy | live | yes |
 | chain-80094 | `0x141de07e5d4c4759ec9301da106115d4841f66cd` | BongBearsONFT | impl | live | no |
+| chain-80094 | `0x1635f0e1b3e8a6713d03ae155ba79458ba3240c7` | ProtocolFeesWithdrawer | impl | live | no |
 | chain-80094 | `0x1984baf659607cc5f206c55bb3b00eb3e180190b` | ERC1967Proxy | proxy | live | yes |
 | chain-80094 | `0x24147243f9c08d835c218cda1e135f8dfd0517d0` | Morpho | impl | live | no |
+| chain-80094 | `0x4151083172b2cefb83a33fd7fc9f6cbabb3fd08d` | BatchRelayerQueryLibrary | impl | live | no |
 | chain-80094 | `0x4242424242424242424242424242424242424242` | BeaconDeposit | impl | live | yes |
+| chain-80094 | `0x4be03f781c497a489e3cb0287833452ca9b9e80b` | Vault | impl | live | no |
+| chain-80094 | `0x55dcce8165c88aad4403a15a9ce3a8e244657dd2` | PoolCreationHelper | impl | live | no |
 | chain-80094 | `0x656b95e550c07a9ffe548bd4085c72418ceb1dba` | BGT | impl | live | yes |
 | chain-80094 | `0x72d876d9cdf4001b836f8e47254d0551eda2eebb` | BitBearsONFT | impl | live | no |
 | chain-80094 | `0x7711b2eb2451259dbf211e30157ceb7cfeb79a19` | BandBearsONFT | impl | live | no |
 | chain-80094 | `0x80108ee81a92091db6b8b2326b1875ce9388f461` | ERC1967Proxy-3 | proxy | live | no |
 | chain-80094 | `0x813dcdba9197947792985c866ce98d6739ca821a` | ERC1967Proxy | proxy | live | yes |
+| chain-80094 | `0x9211aa9206dc57c3decee55539f6ca7b6845339d` | InfraredVault | impl | live | no |
 | chain-80094 | `0x94ad6ac84f6c6fba8b8ccbd71d9f4f101def52a8` | ERC1967Proxy | proxy | live | yes |
 | chain-80094 | `0xa0cf472e6132f6b822a944f6f31aa7b261c7c375` | BondBearsONFT | impl | live | no |
 | chain-80094 | `0xad17932a5b1aaeea73d277a6ae670623f176e0d0` | ERC1967Proxy-2 | proxy | live | no |
+| chain-80094 | `0xaf2fdc54f7bc9d6e8c2d2760e908f4e1beb04d9e` | MorphoChainlinkOracleV2Factory | impl | unknown | no |
 | chain-80094 | `0xb79b43dba821cb67751276ce050ff4111445fb99` | ERC1967Proxy-2 | proxy | live | no |
+| chain-80094 | `0xb8cf46cf1b1476e707619913a70b2085d26f1707` | Vault | impl | live | no |
 | chain-80094 | `0xc41bbd6695ab6bdc6d04701b15f4ce5eba2e2500` | ERC1967Proxy | proxy | live | yes |
 | chain-80094 | `0xd2f19a79b026fb636a7c300bf5947df113940761` | ERC1967Proxy | proxy | live | yes |
 | chain-80094 | `0xddeaf391c4be2d01ca52abb8c159a06820ef078c` | BabyBearsONFT | impl | live | no |

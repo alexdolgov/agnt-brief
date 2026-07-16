@@ -1,0 +1,28 @@
+{
+  "component": "MaturityPrimaryMarket-3",
+  "main_contract": "MaturityPrimaryMarket",
+  "source_entry_count": 21,
+  "source_file_count": 21,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MaturityPrimaryMarket-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x07a2d8c053015b57c2dfc2b7450d521de1bf5559",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

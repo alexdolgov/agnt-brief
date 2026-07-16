@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/Folio-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xd58b270159bd0d51cef1cb2a950c7f71804d45e7",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb6b35b2c7032e00baa2535ba480d461321b7e0a6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398338"
+      "logic_topography_row_id": "398330"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6368e66a38bab5a03c4f1be64b9d890305959a10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398341"
     }
   ]
 }

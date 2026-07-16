@@ -1,10 +1,65 @@
 # avantgarde — deployments
 
-4 verified deployment(s) across 2 component(s).
+59 verified deployment(s) across 57 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | base | `0xe34d43ca9152d198b60654868c8cd197196a492f` | VaultV2-2 | impl | live | yes |
+| ethereum | `0x00260db07a22a6a5182213d8de1aba0705a6cd78` | AccessControlledOffchainAggregator | impl | live | no |
+| ethereum | `0x0076af860630ea0337d4c932b986d68f32a41254` | SwapperMakerPSM | impl | live | no |
+| ethereum | `0x00a773bd2ce922f866bb43ab876009fb959d7c29` | EACAggregatorProxy | impl | live | no |
+| ethereum | `0x00c7a37b03690fb9f41b5c5af8131735c7275446` | AccessControlledAggregator | impl | live | no |
+| ethereum | `0x010b33ce6fe3c65e8c873d91be0bcb3de36c0a67` | AggregatorFacade | impl | live | no |
+| ethereum | `0x03b5259bd204bfd4a616e5b79b0b786d90c6c38f` | ParaswapAdapter | impl | live | no |
+| ethereum | `0x0b8b84d5f89378eb7f902031b6006dd6c0eeae4d` | Aggregator | impl | live | no |
+| ethereum | `0x0f2ceadda587491dd513a82cd0fecb896e2880f4` | DualBot | impl | live | no |
+| ethereum | `0x0f6b59f54087ace95cb1fdcb3d2af1aca7c87df4` | ReservoirLooper | impl | live | no |
 | ethereum | `0x132fe294ea9b6fad8ca00554d211d5f2b905c1ad` | VaultV2 | impl | live | yes |
+| ethereum | `0x16f38d2e764e7bebf625a8e995b34968226d2f9c` | AaveV3OptimizerMigrationBundler | impl | live | no |
+| ethereum | `0x1897a8997241c1cd4bd0698647e4eb7213535c24` | MetaMorphoV1_1Factory | impl | unknown | no |
+| ethereum | `0x213f30e50892dc90d8893618c656316b769ffb23` | Firefighter | impl | live | no |
+| ethereum | `0x21aef9afc97301c9db61e45179dff1115ca16e60` | Vester | impl | live | no |
+| ethereum | `0x26bf52a84360ad3d01d7cdc28fc2ddc04d8c8647` | CompoundV2MigrationBundler | impl | live | no |
+| ethereum | `0x2cc8d502a65824b4cf9a58db03490ba024bdb806` | AaveV3MigrationAdapter | impl | live | no |
+| ethereum | `0x32bb1c0d48d8b1b3363e86eeb9a0300bad61ccc1` | MorphoMarketV1AdapterV2Factory | impl | unknown | no |
+| ethereum | `0x330eefa8a787552dc5cad3c3ca644844b1e61ddb` | UniversalRewardsDistributor | impl | live | no |
+| ethereum | `0x363fffe9e293df351fec24bde69954c472c52321` | DelayedERC4626Oracle | impl | live | no |
+| ethereum | `0x3696c5eae4a7ffd04ea163564571e9cd8ed9364e` | RegistryList | impl | live | no |
+| ethereum | `0x3858266579f2913cbba5eaa6381cddfc684728ce` | UsycLiquidator | impl | live | no |
+| ethereum | `0x3a0e2e9fb9c95fbc843daf166276c90b6c479558` | CompoundV3MigrationBundler | impl | live | no |
+| ethereum | `0x3a7bb36ee3f3ee32a60e9f2b33c1e5f2e83ad766` | MorphoChainlinkOracleV2Factory | impl | unknown | no |
+| ethereum | `0x3df41890b6f4b723d9bb85f81d42990e0fca05c4` | PublicAllocator | impl | live | no |
+| ethereum | `0x3e33c1e80cf8fd074da6eb408f2059c2a9900c03` | UsycBot | impl | live | no |
+| ethereum | `0x40288815c399709dfc0875a384b637ffe387961b` | AaveV2MigrationAdapter | impl | live | no |
+| ethereum | `0x4095f064b8d3c3548a3bebfd0bbfd04750e30077` | EthereumBundlerV2 | proxy | live | no |
+| ethereum | `0x44d049eed4ad33807859c45bbd3a8eb47917a9f4` | MetaOracleDeviationTimelockFactory | impl | live | no |
+| ethereum | `0x4592e45e0c5dbee94a135720ccff2e4353dac6de` | PositionsManager | impl | live | no |
+| ethereum | `0x47fb2585d2c56fe188d0e6ec628a38b74fceeedf` | FeedRegistry | impl | live | no |
+| ethereum | `0x4a6c312ec70e8747a587ee860a0353cd42be0ae0` | EthereumGeneralAdapter1 | impl | live | no |
+| ethereum | `0x4f75953c2661d3a0138fcd80551ea10b80dd08c7` | KeeperRegistry | impl | live | no |
+| ethereum | `0x50d3d6fd7518682155e3c1b65fdd50e1b35649d9` | MorphoOFTAdapter | impl | live | no |
+| ethereum | `0x6566194141eefa99af43bb5aa71460ca2dc90245` | Bundler3 | impl | live | no |
+| ethereum | `0x6d32736220291d20e927b891aba976c6fc89891f` | ERC4626Feed | impl | live | no |
+| ethereum | `0x72d2277c7242a4464d9b277cf682e350205e6938` | Executor | impl | live | no |
+| ethereum | `0x870ac11d48b15db9a138cf899d20f13f79ba00bc` | AdaptiveCurveIrm | impl | live | no |
 | ethereum | `0x8e56cb6bc1a8961ed9062b99045d3299b27cdb4d` | VaultV2 | impl | live | yes |
+| ethereum | `0x8fa4443df3989ed5c51a4e6f436f1f51129dc868` | SwapperWsteth | impl | live | no |
+| ethereum | `0x905b7dabcd3ce6b792d874e303d336424cdb1421` | WstEthStEthExchangeRateChainlinkAdapter | impl | live | no |
+| ethereum | `0x95e85fef34b79f0030f41fb619733bf7e024bd87` | MorphoChainlinkOracleV2 | impl | unknown | no |
+| ethereum | `0x98ccb155e86bb478d514a827d16f58c6912f9bdc` | AaveV3MigrationBundler | proxy | live | no |
+| ethereum | `0x9994e35db50125e0df82e4c2dde62496ce330999` | MorphoToken | impl | unknown | no |
+| ethereum | `0x9b89c07f480df1945279031b5fc6ff241b8f1101` | CompoundV2MigrationAdapter | impl | live | no |
+| ethereum | `0x9baa51245cdd28d8d74afe8b3959b616e9ee7c8d` | UrdFactory | impl | live | no |
+| ethereum | `0x9d03bb2092270648d7480049d0e58d2fcf0e5123` | Wrapper | impl | live | no |
+| ethereum | `0x9e2ea2d5785598a163d569d795f286f5c55ad972` | AaveV3OptimizerMigrationAdapter | impl | live | no |
+| ethereum | `0xa1d94f746defa1928926b84fb2596c06926c0405` | VaultV2Factory | impl | live | no |
+| ethereum | `0xa7995f71aa11525db02fc2473c37dee5dbf55107` | EthereumBundler | impl | live | no |
+| ethereum | `0xa9c3d3a366466fa809d1ae982fb2c46e5fc41101` | MetaMorphoFactory | impl | unknown | no |
+| ethereum | `0xb3dcc75db379925edfd3007511a8ce0cb4aa8e76` | AaveV2MigrationBundler | impl | live | no |
+| ethereum | `0xc3866d726c204c0836e0677a31973c649888973d` | DummyFeed | impl | live | no |
+| ethereum | `0xd1b8e2dee25c2b89dcd2f98448a7ce87d6f63394` | MorphoVaultV1AdapterFactory | impl | unknown | no |
+| ethereum | `0xdba5bde29ea030bfa6a608592dfca1d02cb26773` | CompoundV3MigrationAdapter | impl | live | no |
 | ethereum | `0xebbae8cfabb0092d5b32f00ebee0c8139d24ddcd` | VaultV2 | impl | live | yes |
+| ethereum | `0xf14dc5bdfa8050a3ebf330092f71c54d3febd16b` | WstethBot | impl | live | no |
+| ethereum | `0xf83d17dfe160597b19e4fdd8ea61a23e9a87f962` | ERC20WrapperAdapter | impl | live | no |
+| ethereum | `0xf99e3796f94000462f736925cf32162fea82c168` | BulkerGateway | impl | live | no |

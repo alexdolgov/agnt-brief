@@ -1,0 +1,28 @@
+{
+  "component": "OnlyDeliveryGearingToken",
+  "main_contract": "OnlyDeliveryGearingToken",
+  "source_entry_count": 46,
+  "source_file_count": 46,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OnlyDeliveryGearingToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb0b11e344f302dd6d9f0573de24c34fbbadf404d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

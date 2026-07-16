@@ -1,0 +1,48 @@
+{
+  "component": "BalancerStablePoolSwapper",
+  "main_contract": "BalancerStablePoolSwapper",
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BalancerStablePoolSwapper\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa4320b575e86cfa06379b8ed8c76d9149a30f948",
+      "is_proxy": true,
+      "implementation_address": "0xbb0b5d4aeaefc0ed86d92a9aceb2781146dc6917",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0089539becb82ab51bc5c76f93aa61281540ff33",
+      "is_proxy": true,
+      "implementation_address": "0x17ded9f13c7aa0f798d4d13d6183091e4cbcd476",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0bcbe4653e96ae39bde24312882faa0eddf03256",
+      "is_proxy": true,
+      "implementation_address": "0xb30fc088bfc0979e42b6ae1e290bd3a3ca793c07",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

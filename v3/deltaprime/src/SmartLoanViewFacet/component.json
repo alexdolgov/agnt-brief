@@ -1,8 +1,8 @@
 {
   "component": "SmartLoanViewFacet",
   "main_contract": "SmartLoanViewFacet",
-  "source_entry_count": 74,
-  "source_file_count": 74,
+  "source_entry_count": 63,
+  "source_file_count": 63,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -11,20 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/Smart_Contract_Audit_DeltaPrime_Protocol_04112022.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xd9eb3d537517040b339e6bea8dfa8ede7f364512",
+      "address": "0x049393d11cf754ad6778748972ad9098becc94fc",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393627"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

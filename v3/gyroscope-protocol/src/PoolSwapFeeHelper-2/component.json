@@ -1,0 +1,28 @@
+{
+  "component": "PoolSwapFeeHelper-2",
+  "main_contract": "PoolSwapFeeHelper",
+  "source_entry_count": 43,
+  "source_file_count": 43,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PoolSwapFeeHelper-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x355bd33f0033066bb3de396a6d069be57353ad95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "component": "GmxAfterTxValidatorLib-7",
+  "main_contract": "GmxAfterTxValidatorLib",
+  "source_entry_count": 59,
+  "source_file_count": 59,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GmxAfterTxValidatorLib-7\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x66edb9db44f31bbc83cc0543cf3e81f6b773cd8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

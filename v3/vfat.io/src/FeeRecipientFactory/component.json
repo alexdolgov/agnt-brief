@@ -1,0 +1,78 @@
+{
+  "component": "FeeRecipientFactory",
+  "main_contract": "FeeRecipientFactory",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FeeRecipientFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x49607c8e263fe8ae43481ba27a35276ac9cc860d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x5712bd693ac758158146aa151f31bd74cfbf37c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x5f86d184e3fd73c758432495c1b10759384a241b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x75729aae1a529b41eb9530f09659a03e6e11e17d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xde8db146f41259bb9ea2443b014b8b871d3ca699",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xe4467670c32d6416c29cad1e07b921765b4e4d8f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

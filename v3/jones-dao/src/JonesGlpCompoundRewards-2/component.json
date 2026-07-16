@@ -1,0 +1,28 @@
+{
+  "component": "JonesGlpCompoundRewards-2",
+  "main_contract": "JonesGlpCompoundRewards",
+  "source_entry_count": 51,
+  "source_file_count": 51,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/JonesGlpCompoundRewards-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe66998533a1992ece9ea99cdf47686f4fc8458e0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

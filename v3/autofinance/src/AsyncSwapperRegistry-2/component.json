@@ -1,8 +1,8 @@
 {
   "component": "AsyncSwapperRegistry-2",
   "main_contract": "AsyncSwapperRegistry",
-  "source_entry_count": 64,
-  "source_file_count": 64,
+  "source_entry_count": 58,
+  "source_file_count": 58,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xb45bd07b916cc3544ab9cd54f812ed8d88bfabba",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x73526d80ac5db9ccd2aa46436744c542ef9c0b75",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391826"
+      "logic_topography_row_id": "391602"
     }
   ]
 }

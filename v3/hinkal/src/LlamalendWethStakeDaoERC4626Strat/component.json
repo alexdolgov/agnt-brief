@@ -1,0 +1,28 @@
+{
+  "component": "LlamalendWethStakeDaoERC4626Strat",
+  "main_contract": "LlamalendWethStakeDaoERC4626Strat",
+  "source_entry_count": 24,
+  "source_file_count": 24,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LlamalendWethStakeDaoERC4626Strat\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5de1bdedcdef3a5d6a833b6385ef7bd24e6998f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

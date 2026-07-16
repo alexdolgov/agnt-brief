@@ -1,8 +1,8 @@
 {
   "component": "Claimer-2",
   "main_contract": "Claimer",
-  "source_entry_count": 1,
-  "source_file_count": 1,
+  "source_entry_count": 45,
+  "source_file_count": 45,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/Claimer-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "scroll",
-      "chain_id": 534352,
-      "address": "0xb04d5c80a3f6da11532d3a67184bb7be11f00285",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5ffeee76d1e2d2d1d18ba0bc77d8d047b85e1e87",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live",
+      "liveness": "unknown",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "397961"
+      "logic_topography_row_id": "397919"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1e68e5e92d22aefdc791a61c874c06831023e571",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397938"
     }
   ]
 }

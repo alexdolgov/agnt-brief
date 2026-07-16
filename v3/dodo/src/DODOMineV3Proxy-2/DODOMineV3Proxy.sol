@@ -61,6 +61,7 @@ contract InitializableOwnable {
 
 // File: contracts/intf/IDODOApprove.sol
 
+
 interface IDODOApprove {
     function claimTokens(address token,address who,address dest,uint256 amount) external;
     function getDODOProxy() external view returns (address);
@@ -149,6 +150,7 @@ contract DODOApproveProxy is InitializableOwnable {
 }
 
 // File: contracts/lib/Ownable.sol
+
 
 /**
  * @title Ownable
@@ -404,6 +406,7 @@ library SafeERC20 {
 // File: contracts/DODOToken/DODOMineV3/RewardVault.sol
 
 
+
 interface IRewardVault {
     function reward(address to, uint256 amount) external;
     function withdrawLeftOver(address to, uint256 amount) external; 
@@ -550,6 +553,7 @@ contract DODOMineV3Registry is InitializableOwnable, IDODOMineV3Registry {
 
 // File: contracts/lib/CloneFactory.sol
 
+
 interface ICloneFactory {
     function clone(address prototype) external returns (address proxy);
 }
@@ -575,6 +579,9 @@ contract CloneFactory is ICloneFactory {
 }
 
 // File: contracts/SmartRoute/proxies/DODOMineV3Proxy.sol
+
+
+
 
 interface IMineV3 {
     function init(address owner, address token) external;
@@ -610,7 +617,7 @@ contract DODOMineV3Proxy is InitializableOwnable {
     // ============ Events ============
     event DepositRewardToVault(address mine, address rewardToken, uint256 amount);
     event DepositRewardToMine(address mine, address rewardToken, uint256 amount);
-    event CreateMineV3(address account, address mineV3);
+    event CreateMineV3(address account, address mineV3, uint256 platform);
     event ChangeMineV3Template(address mineV3);
 
     constructor(
@@ -630,6 +637,7 @@ contract DODOMineV3Proxy is InitializableOwnable {
     function createDODOMineV3(
         address stakeToken,
         bool isLpToken,
+        uint256 platform,
         address[] memory rewardTokens,
         uint256[] memory rewardPerBlock,
         uint256[] memory startBlock,
@@ -659,7 +667,7 @@ contract DODOMineV3Proxy is InitializableOwnable {
 
         IDODOMineV3Registry(_DODO_MINEV3_REGISTRY_).addMineV3(newMineV3, isLpToken, stakeToken);
 
-        emit CreateMineV3(msg.sender, newMineV3);
+        emit CreateMineV3(msg.sender, newMineV3, platform);
     }
 
     function depositRewardToVault(
@@ -690,5 +698,9 @@ contract DODOMineV3Proxy is InitializableOwnable {
     function updateMineV3Template(address _newMineV3Template) external onlyOwner {
         _MINEV3_TEMPLATE_ = _newMineV3Template;
         emit ChangeMineV3Template(_newMineV3Template);
+    }
+
+    function version() virtual external pure returns (string memory) {
+        return "MineV3Proxy 0.0.1";
     }
 }

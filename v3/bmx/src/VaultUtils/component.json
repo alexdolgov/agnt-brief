@@ -10,21 +10,29 @@
     "build_command": "forge build --root \"src/VaultUtils\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/useboardwalk/morphex-contracts/blob/main/audits/Cantina_Audit_Jul_2025.pdf"
-  ],
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x5174c02f20fe8b2da3e3a64fa7df5596cef9bad2",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcca8e0f7283e1859fc954f4852e1ca3e6d63d405",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "392374"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfb7f4c18e4df5658a3e06ca2d7b65404a49699c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

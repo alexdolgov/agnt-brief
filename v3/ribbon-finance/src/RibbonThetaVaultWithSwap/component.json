@@ -1,0 +1,38 @@
+{
+  "component": "RibbonThetaVaultWithSwap",
+  "main_contract": "RibbonThetaVaultWithSwap",
+  "source_entry_count": 30,
+  "source_file_count": 30,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RibbonThetaVaultWithSwap\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2530298e2f5c026e794f8b39bda39f50c70bc6b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcd87867e13b10a4a320b48f8e317534e3f5450fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

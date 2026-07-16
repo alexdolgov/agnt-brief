@@ -1,9 +1,11 @@
 # thruster — deployments
 
-8 verified deployment(s) across 8 component(s).
+11 verified deployment(s) across 11 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| blast | `0x0561fc4e3c728afc9a0407fa109a2bd2981056ab` | BatchDistributor | impl | live | no |
+| blast | `0x12c69bfa3fb3cba75a1defa6e976b87e233fc7df` | ThrusterPair | impl | unknown | no |
 | blast | `0x337827814155ecbf24d20231fca4444f530c0555` | SwapRouter | proxy | live | no |
 | blast | `0x37836821a2c03c171fb1a595767f4a16e2b93fc4` | ThrusterFactory | impl | live | no |
 | blast | `0x434575eaea081b735c985fa9bf63cd7b87e227f9` | NonfungiblePositionManager | proxy | live | yes |
@@ -12,6 +14,7 @@
 | blast | `0x98994a9a7a2570367554589189dc9772241650f6` | ThrusterRouter-2 | impl | live | no |
 | blast | `0xa08ae3d3f4da51c22d3c041e468bdf4c61405aab` | ThrusterPoolDeployer | impl | live | yes |
 | blast | `0xb4a7d971d0adea1c73198c97d7ab3f9ce4aafa13` | ThrusterFactory-2 | impl | live | no |
+| blast | `0xd2f1a205959605550471762e7dea1a034edbf477` | ThrusterPair-2 | impl | unknown | no |
 
 ## Source unavailable (1)
 Verified on-chain but no source in the verification cache (skipped from the tree):

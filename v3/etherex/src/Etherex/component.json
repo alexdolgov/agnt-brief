@@ -10,12 +10,22 @@
     "build_command": "forge build --root \"src/Etherex\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://cantina.xyz/portfolio/48fc9b98-ded3-43fa-80a2-5aedb3a5a51e"
   ],
   "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xbe8b8dcbc1e5cda63c667e76d539dbf5d369f11d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "linea",
       "chain_id": 59144,
@@ -25,6 +35,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "394173"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xf0c89c8104707d2698288da2724b05881e0bd9eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

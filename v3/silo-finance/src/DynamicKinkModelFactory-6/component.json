@@ -1,0 +1,28 @@
+{
+  "component": "DynamicKinkModelFactory-6",
+  "main_contract": "DynamicKinkModelFactory",
+  "source_entry_count": 40,
+  "source_file_count": 40,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DynamicKinkModelFactory-6\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d51f30e5c8ec1c6efeb5d1877f7302a09a03ed1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

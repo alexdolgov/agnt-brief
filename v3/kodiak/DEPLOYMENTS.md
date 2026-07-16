@@ -1,9 +1,11 @@
 # kodiak — deployments
 
-0 verified deployment(s) across 0 component(s).
+2 verified deployment(s) across 2 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| chain-80094 | `0x040ea7d4b559357425407fdfc3c774c5dfc04677` | XKodiakToken | impl | unknown | no |
+| chain-80094 | `0xc0d1ac00a30fa4e30e44afc7313d6312c87e21df` | KodiakToken | impl | unknown | no |
 
 ## Source unavailable (16)
 Verified on-chain but no source in the verification cache (skipped from the tree):

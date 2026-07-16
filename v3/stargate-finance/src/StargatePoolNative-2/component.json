@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/StargatePoolNative-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x9895d81bb462a195b4922ed7de0e3acd007c32cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "scroll",
       "chain_id": 534352,

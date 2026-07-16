@@ -1,0 +1,74 @@
+{
+  "component": "TokenBridgeCctp",
+  "main_contract": "TokenBridgeCctp",
+  "source_entry_count": 11,
+  "source_file_count": 11,
+  "source_path_remaps": [
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/interfaces/IERC1967.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-dce83d5a8c4b-IERC1967.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/interfaces/draft-IERC1822.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-9977a95b297b-draft-IERC1822.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-d1d9db313aad-ERC1967Proxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-a7a50af61d69-ERC1967Upgrade.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/proxy/Proxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-aa24da0c0f19-Proxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/proxy/beacon/IBeacon.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-4a7adbfee650-IBeacon.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-6336aa4821ec-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/utils/StorageSlot.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-85e223c00f24-StorageSlot.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-c6350f9408c7-TransparentUpgradeableProxy.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TokenBridgeCctp\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x004879ead3c39fab28d396319932acd657c7f867",
+      "is_proxy": true,
+      "implementation_address": "0x5138f4cf8053cecb782a5dd279ce8ad2318506d4",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "component": "StrategyTetuSwap",
+  "main_contract": "StrategyTetuSwap",
+  "source_entry_count": 20,
+  "source_file_count": 20,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StrategyTetuSwap\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x01309787bc147a2ad56ac2f49d8497e40d263ca6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

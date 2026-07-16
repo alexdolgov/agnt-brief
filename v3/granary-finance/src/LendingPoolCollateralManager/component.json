@@ -1,0 +1,28 @@
+{
+  "component": "LendingPoolCollateralManager",
+  "main_contract": "LendingPoolCollateralManager",
+  "source_entry_count": 30,
+  "source_file_count": 30,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LendingPoolCollateralManager\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc2cda52c7dc64d4ff01b58b0981e1fcdd94b16c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

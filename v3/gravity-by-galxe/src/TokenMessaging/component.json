@@ -1,0 +1,28 @@
+{
+  "component": "TokenMessaging",
+  "main_contract": "TokenMessaging",
+  "source_entry_count": 43,
+  "source_file_count": 43,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TokenMessaging\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4aff12ce71afd06e7b20f50f2eaa365b8b4f779c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

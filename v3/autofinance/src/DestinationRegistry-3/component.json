@@ -1,8 +1,8 @@
 {
   "component": "DestinationRegistry-3",
   "main_contract": "DestinationRegistry",
-  "source_entry_count": 64,
-  "source_file_count": 64,
+  "source_entry_count": 58,
+  "source_file_count": 58,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x95b5f1abce00b345990d1ec0152b416cd143c58e",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa1afc8aaf80df8ceb179e99bb1a8fb4d26095ba1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391803"
+      "logic_topography_row_id": "391701"
     }
   ]
 }

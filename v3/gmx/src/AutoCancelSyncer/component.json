@@ -1,0 +1,28 @@
+{
+  "component": "AutoCancelSyncer",
+  "main_contract": "AutoCancelSyncer",
+  "source_entry_count": 27,
+  "source_file_count": 27,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AutoCancelSyncer\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x294a967d1750ba6b4e8a765b363bcf693d0c5b63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

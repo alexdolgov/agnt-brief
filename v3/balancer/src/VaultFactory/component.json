@@ -1,0 +1,28 @@
+{
+  "component": "VaultFactory",
+  "main_contract": "VaultFactory",
+  "source_entry_count": 74,
+  "source_file_count": 74,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VaultFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9805dcfd25e6de36bad8fe9d3fe2c9b44b764102",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

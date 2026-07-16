@@ -1,0 +1,48 @@
+{
+  "component": "StrategyAura",
+  "main_contract": "StrategyAura",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StrategyAura\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1c8f4e0b739090de64d0c33c89950cec791ac7af",
+      "is_proxy": true,
+      "implementation_address": "0x422fd4563b565971e9a7e0e69aa2edc83462c535",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x018986b86bd574889e22aab9c00bfd237958fe4a",
+      "is_proxy": true,
+      "implementation_address": "0x60c628f0b682cf6625db2dc938f4b54f6aba6cb5",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8ffba974efa7c262c97b9521449fd2b3c69be4e6",
+      "is_proxy": true,
+      "implementation_address": "0x602c20b5f255dde1ccbbb4a8b043ca75dca387dd",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

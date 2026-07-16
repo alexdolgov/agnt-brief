@@ -1,0 +1,68 @@
+{
+  "component": "VolatilityDynamicFeeLimitOrderHookRegistry",
+  "main_contract": "VolatilityDynamicFeeLimitOrderHookRegistry",
+  "source_entry_count": 42,
+  "source_file_count": 42,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VolatilityDynamicFeeLimitOrderHookRegistry\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x0b8e46cd2fcd6d6b2eb57128fc0f540fd24ecc01",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x3812ef4c949b8e3f6649cd31245783287f832948",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x8544b31ad6c94e65fc90aecb6711e33906d16dfa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x914ab79fbde7c73d3cead19dd5f4076e99f9d99e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xaf392ede1eabe378699c02f16405f770db4e1524",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

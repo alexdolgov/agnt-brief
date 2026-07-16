@@ -1,0 +1,28 @@
+{
+  "component": "ValidationLogic",
+  "main_contract": "ValidationLogic",
+  "source_entry_count": 28,
+  "source_file_count": 28,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ValidationLogic\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x3a0a3639ed67a038a5f5071b6351f7e2b850c7dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

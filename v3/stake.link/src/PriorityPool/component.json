@@ -1,0 +1,38 @@
+{
+  "component": "PriorityPool",
+  "main_contract": "PriorityPool",
+  "source_entry_count": 24,
+  "source_file_count": 24,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PriorityPool\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x090abe0e6bd58b8cd09b622ff1bde2b48b4cee55",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399414"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6fb9cc7d10a5286a864e760c2756e7f6d44d4d26",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399430"
+    }
+  ]
+}

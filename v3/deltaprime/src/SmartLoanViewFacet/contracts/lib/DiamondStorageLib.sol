@@ -6,6 +6,7 @@ pragma solidity 0.8.17;
 * EIP-2535 Diamonds: https://eips.ethereum.org/EIPS/eip-2535
 /******************************************************************************/
 import {IDiamondCut} from "../interfaces/IDiamondCut.sol";
+import {LeverageTierLib} from "../lib/LeverageTierLib.sol";
 import "../lib/Bytes32EnumerableMap.sol";
 import "../interfaces/IStakingPositions.sol";
 import "../interfaces/facets/avalanche/ITraderJoeV2Facet.sol";
@@ -23,10 +24,19 @@ library DiamondStorageLib {
     bytes32 constant OWNED_TRADERJOE_V2_BINS_POSITION = keccak256("diamond.standard.traderjoe_v2_bins_1685370112");
     //TODO: maybe we should keep here a tuple[tokenId, factory] to account for multiple Uniswap V3 deployments
     bytes32 constant OWNED_UNISWAP_V3_TOKEN_IDS_POSITION = keccak256("diamond.standard.uniswap_v3_token_ids_1685370112");
+    bytes32 constant WITHDRAWAL_INTENTS_POSITION = keccak256("diamond.standard.withdrawal.intents");
+    bytes32 constant PRIME_LEVERAGE_STORAGE_POSITION = keccak256("diamond.standard.prime.leverage.storage");
 
     struct FacetAddressAndPosition {
         address facetAddress;
         uint96 functionSelectorPosition; // position in facetFunctionSelectors.functionSelectors array
+    }
+
+    struct PrimeLeverageStorage {
+        LeverageTierLib.LeverageTier leverageTier;
+        mapping(address => uint256) tokenToStakedAmount; // Staked amount of any token, only PRIME for now.
+        uint256 recordedPrimeDebt;
+        uint256 lastPrimeDebtUpdate;
     }
 
     struct FacetFunctionSelectors {
@@ -70,6 +80,26 @@ library DiamondStorageLib {
         EnumerableMap.Bytes32ToAddressMap ownedAssets;
         // Staked positions of the contract
         IStakingPositions.StakedPosition[] currentStakedPositions;
+
+        // Timestamp since which the account is frozen
+        // 0 means an account that is not frozen. Any other value means that the account is frozen
+        uint256 frozenSince;
+
+        // Timestamp of the last ownership transfer
+        uint256 lastOwnershipTransferTimestamp;
+    }
+
+    struct WithdrawalIntent {
+        uint256 amount;
+        uint256 actionableAt;
+        uint256 expiresAt;
+    }
+
+    struct WithdrawalIntentsStorage {
+        // token address => WithdrawalIntent[]
+        mapping(address => WithdrawalIntent[]) intents;
+        // used to be token address => total pending amount but is no longer used. Left here to preserve the storage slot order.
+        mapping(address => uint256) _doNOTUse;
     }
 
     struct TraderJoeV2Storage {
@@ -91,6 +121,13 @@ library DiamondStorageLib {
         uint256 _status;
     }
 
+    function withdrawalIntentsStorage() internal pure returns (WithdrawalIntentsStorage storage wis) {
+        bytes32 position = WITHDRAWAL_INTENTS_POSITION;
+        assembly {
+            wis.slot := position
+        }
+    }
+
     function reentrancyGuardStorage() internal pure returns (ReentrancyGuardStorage storage rgs) {
         bytes32 position = REENTRANCY_GUARD_STORAGE_POSITION;
         assembly {
@@ -110,6 +147,58 @@ library DiamondStorageLib {
         assembly {
             uv3s.slot := position
         }
+    }
+
+
+    // 10x leverage functions 
+    function primeLeverageStorage() internal pure returns (PrimeLeverageStorage storage pls) {
+        bytes32 position = PRIME_LEVERAGE_STORAGE_POSITION;
+        assembly {
+            pls.slot := position
+        }
+    }
+
+    
+
+    function setPrimeLeverageTier(LeverageTierLib.LeverageTier _tier) internal {
+        primeLeverageStorage().leverageTier = _tier;
+    }
+
+    function getPrimeLeverageTier() internal view returns (LeverageTierLib.LeverageTier) {
+        return primeLeverageStorage().leverageTier;
+    }
+
+    function getPrimeDebt() internal view returns (uint256) {
+        return primeLeverageStorage().recordedPrimeDebt;
+    }
+
+    function setPrimeDebt(uint256 _debt) internal {
+        primeLeverageStorage().recordedPrimeDebt = _debt;
+    }
+
+    function getLastPrimeDebtUpdate() internal view returns (uint256) {
+        return primeLeverageStorage().lastPrimeDebtUpdate;
+    }
+
+    function setLastPrimeDebtUpdate(uint256 _timestamp) internal {
+        primeLeverageStorage().lastPrimeDebtUpdate = _timestamp;
+    }
+
+
+    function addStakedTokenAmount(address _token, uint256 _amount) internal {
+        primeLeverageStorage().tokenToStakedAmount[_token] += _amount;
+    }
+
+    function removeStakedTokenAmount(address _token, uint256 _amount) internal {
+        uint256 stakedAmount = primeLeverageStorage().tokenToStakedAmount[_token];
+        require(_amount > 0, "Amount must be greater than zero");
+        require(stakedAmount >= _amount, "Insufficient staked amount");
+        primeLeverageStorage().tokenToStakedAmount[_token] -= _amount;
+    }
+
+
+    function getStakedTokenAmount(address _token) internal view returns (uint256) {
+        return primeLeverageStorage().tokenToStakedAmount[_token];
     }
 
 
@@ -138,11 +227,39 @@ library DiamondStorageLib {
 
     event PauseAdminOwnershipTransferred(address indexed previousPauseAdmin, address indexed newPauseAdmin);
 
+    event AccountFrozen(address indexed freezeToken, uint256 timestamp);
+
+    event AccountUnfrozen(address indexed keeper, uint256 timestamp);
+
     function setContractOwner(address _newOwner) internal {
         SmartLoanStorage storage sls = smartLoanStorage();
         address previousOwner = sls.contractOwner;
         sls.contractOwner = _newOwner;
+        if(!sls._initialized){
+            sls.lastOwnershipTransferTimestamp = block.timestamp - 24 hours; // Dont block withdrawals upon account creation
+        } else {
+            sls.lastOwnershipTransferTimestamp = block.timestamp;
+        }
         emit OwnershipTransferred(previousOwner, _newOwner);
+    }
+
+    function freezeAccount(address freezeToken) internal {
+        SmartLoanStorage storage sls = smartLoanStorage();
+        require(sls.frozenSince == 0, "Account is already frozen");
+        sls.frozenSince = block.timestamp;
+        emit AccountFrozen(freezeToken, block.timestamp);
+    }
+
+    function isAccountFrozen() internal view returns (bool){
+        SmartLoanStorage storage sls = smartLoanStorage();
+        return sls.frozenSince != 0;
+    }
+
+    function unfreezeAccount(address keeperAddress) internal {
+        SmartLoanStorage storage sls = smartLoanStorage();
+        require(sls.frozenSince != 0, "Account is not frozen");
+        sls.frozenSince = 0;
+        emit AccountUnfrozen(keeperAddress, block.timestamp);
     }
 
     function getTjV2OwnedBins() internal returns(ITraderJoeV2Facet.TraderJoeV2Bin[] storage bins){
@@ -150,9 +267,12 @@ library DiamondStorageLib {
         bins = tjv2s.ownedTjV2Bins;
     }
 
-    function getTjV2OwnedBinsView() internal view returns(ITraderJoeV2Facet.TraderJoeV2Bin[] storage bins){
+    function getTjV2OwnedBinsView() internal view returns(ITraderJoeV2Facet.TraderJoeV2Bin[] memory bins){
         TraderJoeV2Storage storage tjv2s = traderJoeV2Storage();
-        bins = tjv2s.ownedTjV2Bins;
+        bins = new ITraderJoeV2Facet.TraderJoeV2Bin[](tjv2s.ownedTjV2Bins.length);
+        for (uint256 i = 0; i < bins.length; i++) {
+            bins[i] = tjv2s.ownedTjV2Bins[i];
+        }
     }
 
     function getUV3OwnedTokenIds() internal returns(uint256[] storage tokenIds){
@@ -160,9 +280,12 @@ library DiamondStorageLib {
         tokenIds = uv3s.ownedUniswapV3TokenIds;
     }
 
-    function getUV3OwnedTokenIdsView() internal view returns(uint256[] storage tokenIds){
+    function getUV3OwnedTokenIdsView() internal view returns(uint256[] memory tokenIds){
         UniswapV3Storage storage uv3s = uniswapV3Storage();
-        tokenIds = uv3s.ownedUniswapV3TokenIds;
+        tokenIds = new uint256[](uv3s.ownedUniswapV3TokenIds.length);
+        for (uint256 i = 0; i < tokenIds.length; i++) {
+            tokenIds[i] = uv3s.ownedUniswapV3TokenIds[i];
+        }
     }
 
     function setContractPauseAdmin(address _newPauseAdmin) internal {
@@ -240,6 +363,7 @@ library DiamondStorageLib {
         require(_address != address(0), "Invalid AddressZero");
         SmartLoanStorage storage sls = smartLoanStorage();
         EnumerableMap.set(sls.ownedAssets, _symbol, _address);
+        emit OwnedAssetAdded(_symbol, block.timestamp);
     }
 
     function hasAsset(bytes32 _symbol) internal view returns (bool){
@@ -250,6 +374,8 @@ library DiamondStorageLib {
     function removeOwnedAsset(bytes32 _symbol) internal {
         SmartLoanStorage storage sls = smartLoanStorage();
         EnumerableMap.remove(sls.ownedAssets, _symbol);
+
+        emit OwnedAssetRemoved(_symbol, block.timestamp);
     }
 
     function enforceIsContractOwner() internal view {
@@ -405,4 +531,8 @@ library DiamondStorageLib {
         }
         require(contractSize > 0, _errorMessage);
     }
+
+    event OwnedAssetAdded(bytes32 indexed asset, uint256 timestamp);
+
+    event OwnedAssetRemoved(bytes32 indexed asset, uint256 timestamp);
 }

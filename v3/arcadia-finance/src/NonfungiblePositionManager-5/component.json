@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xa990c6a764b73bf43cee5bb40339c3322fb9d55f",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x416b433906b1b72fa758e166e239c43d68dc6f29",
       "is_proxy": true,
-      "implementation_address": "0xa990c6a764b73bf43cee5bb40339c3322fb9d55f",
+      "implementation_address": "0x416b433906b1b72fa758e166e239c43d68dc6f29",
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391274"
+      "logic_topography_row_id": "391174"
     }
   ]
 }

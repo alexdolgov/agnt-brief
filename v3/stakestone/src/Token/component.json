@@ -1,8 +1,8 @@
 {
   "component": "Token",
   "main_contract": "Token",
-  "source_entry_count": 12,
-  "source_file_count": 12,
+  "source_entry_count": 10,
+  "source_file_count": 10,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,19 +10,61 @@
     "build_command": "forge build --root \"src/Token\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 5,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/smart-contract/Stone%20Bera%20Vault%20-%20SlowMist%20Audit%20Report.pdf"
+  ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0de028af168524f3557615d2f0ef9943e6731ee4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x8b4e28607bdcacbf937f81f29e3dafe7bc1d7c0b",
+      "address": "0xdaf1695c41327b61b9b9965ac6a5843a3198cf07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x93f4d0ab6a8b4271f4a28db399b5e30612d21116",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xd0ebd9f75fbd0bc8852b6fa454cec6e52ac07e10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xec901da9c68e90798bbbb74c11406a32a70652c3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399486"
+      "logic_topography_row_id": "399493"
     }
   ]
 }

@@ -6,7 +6,6 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "../interfaces/ISigsVerifier.sol";
-import "../interfaces/IWETH.sol";
 import "../libraries/PbPegged.sol";
 import "../safeguard/Pauser.sol";
 import "../safeguard/VolumeControl.sol";
@@ -25,8 +24,6 @@ contract OriginalTokenVault is ReentrancyGuard, Pauser, VolumeControl, DelayedTr
 
     mapping(address => uint256) public minDeposit;
     mapping(address => uint256) public maxDeposit;
-
-    address public nativeWrap;
 
     event Deposited(
         bytes32 depositId,
@@ -67,31 +64,6 @@ contract OriginalTokenVault is ReentrancyGuard, Pauser, VolumeControl, DelayedTr
         address _mintAccount,
         uint64 _nonce
     ) external nonReentrant whenNotPaused {
-        bytes32 depId = _deposit(_token, _amount, _mintChainId, _mintAccount, _nonce);
-        IERC20(_token).safeTransferFrom(msg.sender, address(this), _amount);
-        emit Deposited(depId, msg.sender, _token, _amount, _mintChainId, _mintAccount);
-    }
-
-    function depositNative(
-        uint256 _amount,
-        uint64 _mintChainId,
-        address _mintAccount,
-        uint64 _nonce
-    ) external payable nonReentrant whenNotPaused {
-        require(msg.value == _amount, "Amount mismatch");
-        require(nativeWrap != address(0), "Native wrap not set");
-        bytes32 depId = _deposit(nativeWrap, _amount, _mintChainId, _mintAccount, _nonce);
-        IWETH(nativeWrap).deposit{value: _amount}();
-        emit Deposited(depId, msg.sender, nativeWrap, _amount, _mintChainId, _mintAccount);
-    }
-
-    function _deposit(
-        address _token,
-        uint256 _amount,
-        uint64 _mintChainId,
-        address _mintAccount,
-        uint64 _nonce
-    ) private returns (bytes32) {
         require(_amount > minDeposit[_token], "amount too small");
         require(maxDeposit[_token] == 0 || _amount <= maxDeposit[_token], "amount too large");
         bytes32 depId = keccak256(
@@ -100,7 +72,8 @@ contract OriginalTokenVault is ReentrancyGuard, Pauser, VolumeControl, DelayedTr
         );
         require(records[depId] == false, "record exists");
         records[depId] = true;
-        return depId;
+        IERC20(_token).safeTransferFrom(msg.sender, address(this), _amount);
+        emit Deposited(depId, msg.sender, _token, _amount, _mintChainId, _mintAccount);
     }
 
     /**
@@ -133,7 +106,7 @@ contract OriginalTokenVault is ReentrancyGuard, Pauser, VolumeControl, DelayedTr
         if (delayThreshold > 0 && request.amount > delayThreshold) {
             _addDelayedTransfer(wdId, request.receiver, request.token, request.amount);
         } else {
-            _sendToken(request.receiver, request.token, request.amount);
+            IERC20(request.token).safeTransfer(request.receiver, request.amount);
         }
         emit Withdrawn(
             wdId,
@@ -148,7 +121,7 @@ contract OriginalTokenVault is ReentrancyGuard, Pauser, VolumeControl, DelayedTr
 
     function executeDelayedTransfer(bytes32 id) external whenNotPaused {
         delayedTransfer memory transfer = _executeDelayedTransfer(id);
-        _sendToken(transfer.receiver, transfer.token, transfer.amount);
+        IERC20(transfer.token).safeTransfer(transfer.receiver, transfer.amount);
     }
 
     function setMinDeposit(address[] calldata _tokens, uint256[] calldata _amounts) external onlyGovernor {
@@ -166,25 +139,4 @@ contract OriginalTokenVault is ReentrancyGuard, Pauser, VolumeControl, DelayedTr
             emit MaxDepositUpdated(_tokens[i], _amounts[i]);
         }
     }
-
-    function setWrap(address _weth) external onlyOwner {
-        nativeWrap = _weth;
-    }
-
-    function _sendToken(
-        address _receiver,
-        address _token,
-        uint256 _amount
-    ) private {
-        if (_token == nativeWrap) {
-            // withdraw then transfer native to receiver
-            IWETH(nativeWrap).withdraw(_amount);
-            (bool sent, ) = _receiver.call{value: _amount, gas: 50000}("");
-            require(sent, "failed to send native token");
-        } else {
-            IERC20(_token).safeTransfer(_receiver, _amount);
-        }
-    }
-
-    receive() external payable {}
 }

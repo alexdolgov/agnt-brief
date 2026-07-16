@@ -63,6 +63,8 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
     /// @notice Min lock period for a tranche
     uint256 private _minLockPeriod;
 
+    error InvalidParametersError();
+    error MismatchError();
     error InvalidCollateralError();
     error InvalidCollateralIdError();
     error InvalidMethodError();
@@ -75,7 +77,6 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
     error NFTNotReturnedError();
     error TrancheCannotBeRefinancedError(uint256 minTimestamp);
     error LoanLockedError();
-    error InvalidLockPeriodError();
 
     /// @param loanLiquidator Address of the liquidator contract.
     /// @param protocolFee Protocol fee charged on gains.
@@ -105,15 +106,12 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
             collectionManager,
             protocolFee,
             loanLiquidator,
-            msg.sender,
+            tx.origin,
             minWaitTime
         )
     {
         loanLiquidator.checkNotZero();
 
-        if (minLockPeriod > _PRECISION) {
-            revert InvalidLockPeriodError();
-        }
         _minLockPeriod = minLockPeriod;
         getMaxTranches = maxTranches;
         getDelegateRegistry = delegateRegistry;
@@ -225,13 +223,9 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
             _renegotiationOffer.aprBps
         );
         _loan.tranche = newTranche;
+        _loan.startTime = block.timestamp;
+        _loan.duration = _renegotiationOffer.duration;
         _loan.principalAmount = _renegotiationOffer.principalAmount;
-        if (lenderInitiated) {
-            _loan.duration = _renegotiationOffer.duration + block.timestamp - _loan.startTime;
-        } else {
-            _loan.startTime = block.timestamp;
-            _loan.duration = _renegotiationOffer.duration;
-        }
 
         _loans[newLoanId] = _loan.hash();
         delete _loans[_renegotiationOffer.loanId];
@@ -272,7 +266,7 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
         uint256 minImprovementApr = _minImprovementApr;
         /// @dev We iterate over all tranches to execute repayments.
         uint256 totalTranchesRenegotiated = _renegotiationOffer.trancheIndex.length;
-        for (uint256 i; i < totalTranchesRenegotiated; ++i) {
+        for (uint256 i; i < totalTranchesRenegotiated;) {
             uint256 index = _renegotiationOffer.trancheIndex[i];
             if (index >= _loan.tranche.length) {
                 revert InvalidRenegotiationOfferError();
@@ -299,9 +293,10 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
             tranche.accruedInterest = accruedInterest;
             tranche.startTime = block.timestamp;
             tranche.aprBps = _renegotiationOffer.aprBps;
+            unchecked {
+                ++i;
+            }
         }
-
-        _validateMinTrancheRepayment(_loan.tranche, _loan.startTime + _loan.duration);
 
         if (_renegotiationOffer.principalAmount != totalRefinanced) {
             revert InvalidRenegotiationOfferError();
@@ -460,19 +455,35 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
 
     /// @inheritdoc IMultiSourceLoan
     function liquidateLoan(uint256 _loanId, Loan calldata _loan) external override nonReentrant returns (bytes memory) {
-        _checkLoanHash(_loanId, _loan);
-        (bool foreclosed, bytes memory liquidation) = _liquidateLoan(
+        if (_loan.hash() != _loans[_loanId]) {
+            revert InvalidLoanError(_loanId);
+        }
+        (bool liquidated, bytes memory liquidation) = _liquidateLoan(
             _loanId, _loan, _loan.tranche.length == 1 && !getLoanManagerRegistry.isLoanManager(_loan.tranche[0].lender)
         );
-        /// @dev Reclaim space.
-        delete _loans[_loanId];
-        emit LoanLiquidated(_loanId, foreclosed);
+        if (liquidated) {
+            delete _loans[_loanId];
+        }
         return liquidation;
     }
 
     /// @inheritdoc IMultiSourceLoan
+    function loanLiquidated(uint256 _loanId, Loan calldata _loan) external override onlyLiquidator {
+        if (_loan.hash() != _loans[_loanId]) {
+            revert InvalidLoanError(_loanId);
+        }
+
+        emit LoanLiquidated(_loanId);
+
+        /// @dev Reclaim space.
+        delete _loans[_loanId];
+    }
+
+    /// @inheritdoc IMultiSourceLoan
     function delegate(uint256 _loanId, Loan calldata loan, address _delegate, bytes32 _rights, bool _value) external {
-        _checkLoanHash(_loanId, loan);
+        if (loan.hash() != _loans[_loanId]) {
+            revert InvalidLoanError(_loanId);
+        }
         if (msg.sender != loan.borrower) {
             revert InvalidCallerError();
         }
@@ -500,9 +511,6 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
 
     /// @inheritdoc IMultiSourceLoan
     function setMinLockPeriod(uint256 __minLockPeriod) external onlyOwner {
-        if (__minLockPeriod > _PRECISION) {
-            revert InvalidLockPeriodError();
-        }
         _minLockPeriod = __minLockPeriod;
 
         emit MinLockPeriodUpdated(__minLockPeriod);
@@ -518,7 +526,9 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
         external
         nonReentrant
     {
-        _checkLoanHash(_loanId, _loan);
+        if (_loan.hash() != _loans[_loanId]) {
+            revert InvalidLoanError(_loanId);
+        }
         if (msg.sender != _loan.borrower) {
             revert InvalidCallerError();
         }
@@ -626,7 +636,17 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
             accruedInterest += _tranche.accruedInterest;
         }
 
-        _notifyLoanManager(_tranche, _protocolFeeFraction);
+        if (getLoanManagerRegistry.isLoanManager(_tranche.lender)) {
+            ILoanManager(_tranche.lender)
+                .loanRepayment(
+                    _tranche.loanId,
+                    _tranche.principalAmount,
+                    _tranche.aprBps,
+                    _tranche.accruedInterest,
+                    _protocolFeeFraction,
+                    _tranche.startTime
+                );
+        }
 
         uint256 oldLenderDebt;
         unchecked {
@@ -654,29 +674,11 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
     /// @param _loanId The loan ID.
     /// @param _loan The loan to be checked.
     function _baseLoanChecks(uint256 _loanId, Loan memory _loan) private view {
-        _checkLoanHash(_loanId, _loan);
-        if (_loan.startTime + _loan.duration <= block.timestamp) {
-            revert LoanExpiredError();
-        }
-    }
-
-    function _checkLoanHash(uint256 _loanId, Loan memory _loan) private view {
         if (_loan.hash() != _loans[_loanId]) {
             revert InvalidLoanError(_loanId);
         }
-    }
-
-    function _notifyLoanManager(Tranche memory _tranche, uint256 _protocolFeeFraction) private {
-        if (getLoanManagerRegistry.isLoanManager(_tranche.lender)) {
-            ILoanManager(_tranche.lender)
-                .loanRepayment(
-                    _tranche.loanId,
-                    _tranche.principalAmount,
-                    _tranche.aprBps,
-                    _tranche.accruedInterest,
-                    _protocolFeeFraction,
-                    _tranche.startTime
-                );
+        if (_loan.startTime + _loan.duration <= block.timestamp) {
+            revert LoanExpiredError();
         }
     }
 
@@ -740,12 +742,10 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
         return _trancheStartTime + delta.mulDivUp(_minLockPeriod, _PRECISION);
     }
 
-    /// @dev Loans are locked from lender-initiated refis near the end.
-    ///      Only borrower-initiated actions update startTime, so duration is measured
-    ///      from the last borrower action to loan end. Lender-initiated refis cannot
-    ///      shrink the lock window.
+    /// @dev Loans are locked from lender initiated refis in the end.
     function _isLoanLocked(uint256 _loanStartTime, uint256 _loanDuration) private view returns (bool) {
         unchecked {
+            /// @dev doesn't overflow because _minLockPeriod should be < 1
             return block.timestamp > _loanStartTime + _loanDuration - _loanDuration.mulDivUp(_minLockPeriod, _PRECISION);
         }
     }
@@ -902,27 +902,9 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
         }
     }
 
-    /// @dev Check new tranches are at least this big (including interest).
-    function _getMinTrancheRepayment(uint256 _totalRepayment) private view returns (uint256) {
-        return _totalRepayment / (_MAX_RATIO_TRANCHE_MIN_PRINCIPAL * getMaxTranches);
-    }
-
-    /// @dev Validates that every tranche's projected repayment meets the minimum ratio.
-    function _validateMinTrancheRepayment(Tranche[] memory _tranches, uint256 _loanEndTime) private view {
-        uint256 totalRepayment;
-        uint256 minTrancheRepayment = type(uint256).max;
-        for (uint256 i; i < _tranches.length; ++i) {
-            Tranche memory t = _tranches[i];
-            uint256 trancheRepayment = t.principalAmount + t.accruedInterest
-                + t.principalAmount.getInterest(t.aprBps, _loanEndTime - t.startTime);
-            if (trancheRepayment < minTrancheRepayment) {
-                minTrancheRepayment = trancheRepayment;
-            }
-            totalRepayment += trancheRepayment;
-        }
-        if (minTrancheRepayment < _getMinTrancheRepayment(totalRepayment)) {
-            revert InvalidTrancheError();
-        }
+    /// @dev Check new trnches are at least this big.
+    function _getMinTranchePrincipal(uint256 _loanPrincipal) private view returns (uint256) {
+        return _loanPrincipal / (_MAX_RATIO_TRANCHE_MIN_PRINCIPAL * getMaxTranches);
     }
 
     function _hasCallback(bytes calldata _callbackData) private pure returns (bool) {
@@ -936,7 +918,7 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
 
         ERC20 asset = ERC20(loan.principalAddress);
         uint256 totalTranches = loan.tranche.length;
-        for (uint256 i; i < totalTranches; ++i) {
+        for (uint256 i; i < totalTranches;) {
             Tranche memory tranche = loan.tranche[i];
             uint256 newInterest =
                 tranche.principalAmount.getInterest(tranche.aprBps, block.timestamp - tranche.startTime);
@@ -952,7 +934,20 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
             unchecked {
                 totalRepayment += repayment;
             }
-            _notifyLoanManager(tranche, loan.protocolFee);
+            if (getLoanManagerRegistry.isLoanManager(tranche.lender)) {
+                ILoanManager(tranche.lender)
+                    .loanRepayment(
+                        tranche.loanId,
+                        tranche.principalAmount,
+                        tranche.aprBps,
+                        tranche.accruedInterest,
+                        loan.protocolFee,
+                        tranche.startTime
+                    );
+            }
+            unchecked {
+                ++i;
+            }
         }
 
         if (withProtocolFee) {
@@ -991,9 +986,9 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
         LoanOffer calldata offer;
         uint256 totalFee;
         uint256 totalAmountWithMaxInterest;
-        uint256 minRepayment = type(uint256).max;
+        uint256 minAmount = type(uint256).max;
         uint256 totalOffers = _offerExecution.length;
-        for (uint256 i = 0; i < totalOffers; ++i) {
+        for (uint256 i = 0; i < totalOffers;) {
             OfferExecution calldata thisOfferExecution = _offerExecution[i];
             offer = thisOfferExecution.offer;
             _validateOfferExecution(
@@ -1007,9 +1002,8 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
                 totalAmount
             );
             uint256 amount = thisOfferExecution.amount;
-            uint256 repayment = amount + amount.getInterest(offer.aprBps, _duration);
-            if (repayment < minRepayment) {
-                minRepayment = repayment;
+            if (amount < minAmount) {
+                minAmount = amount;
             }
             address lender = offer.lender;
             _checkOffer(offer, _principalAddress, totalAmountWithMaxInterest);
@@ -1017,7 +1011,7 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
             tranche[i] = Tranche(loanId, totalAmount, amount, lender, 0, block.timestamp, offer.aprBps);
             unchecked {
                 totalAmount += amount;
-                totalAmountWithMaxInterest += repayment;
+                totalAmountWithMaxInterest += amount + amount.getInterest(offer.aprBps, _duration);
             }
 
             uint256 fee;
@@ -1039,8 +1033,11 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
             }
 
             offerIds[i] = offer.offerId;
+            unchecked {
+                ++i;
+            }
         }
-        if (minRepayment < _getMinTrancheRepayment(totalAmountWithMaxInterest)) {
+        if (minAmount < _getMinTranchePrincipal(totalAmount)) {
             revert InvalidTrancheError();
         }
         Loan memory loan = Loan(
@@ -1063,12 +1060,21 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
         IMultiSourceLoan.Loan memory _loan,
         IMultiSourceLoan.RenegotiationOffer calldata _renegotiationOffer
     ) private view returns (IMultiSourceLoan.Loan memory) {
-        IMultiSourceLoan.Tranche[] memory tranches = new IMultiSourceLoan.Tranche[](_loan.tranche.length + 1);
-
-        for (uint256 i = 0; i < _loan.tranche.length; ++i) {
-            tranches[i] = _loan.tranche[i];
+        if (_renegotiationOffer.principalAmount < _getMinTranchePrincipal(_loan.principalAmount)) {
+            revert InvalidTrancheError();
         }
-        tranches[_loan.tranche.length] = IMultiSourceLoan.Tranche(
+        uint256 newTrancheIndex = _loan.tranche.length;
+        IMultiSourceLoan.Tranche[] memory tranches = new IMultiSourceLoan.Tranche[](newTrancheIndex + 1);
+
+        /// @dev Copy old tranches
+        for (uint256 i = 0; i < newTrancheIndex;) {
+            tranches[i] = _loan.tranche[i];
+            unchecked {
+                ++i;
+            }
+        }
+
+        tranches[newTrancheIndex] = IMultiSourceLoan.Tranche(
             _newLoanId,
             _loan.principalAmount,
             _renegotiationOffer.principalAmount,
@@ -1077,11 +1083,10 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
             block.timestamp,
             _renegotiationOffer.aprBps
         );
-
-        _validateMinTrancheRepayment(tranches, _loan.startTime + _loan.duration);
-
         _loan.tranche = tranches;
-        _loan.principalAmount += _renegotiationOffer.principalAmount;
+        unchecked {
+            _loan.principalAmount += _renegotiationOffer.principalAmount;
+        }
         return _loan;
     }
 
@@ -1118,15 +1123,10 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
         /// interestDelta = (_loanAprBps * _loanPrincipalAmount - _offerAprBps * _offerPrincipalAmount)
         /// We already checked that all tranches are strictly better.
         /// We check that the duration is not decreased or the offer charges a fee.
-        /// The offer principal cannot be lower than the loan principal: there's no path to refund
-        /// the borrower the difference, so the lender would otherwise be able to shrink the loan.
-        uint256 loanInterest = _loanAprBps * _loanPrincipalAmount;
-        uint256 offerInterest = _offerAprBps * _offerPrincipalAmount;
         if (
-            (_offerPrincipalAmount < _loanPrincipalAmount)
-                || ((_offerPrincipalAmount != _loanPrincipalAmount)
-                    && (offerInterest > loanInterest
-                        || (loanInterest - offerInterest).mulDivDown(_PRECISION, loanInterest) < minImprovementApr))
+            ((_offerPrincipalAmount - _loanPrincipalAmount != 0)
+                    && ((_loanAprBps * _loanPrincipalAmount - _offerAprBps * _offerPrincipalAmount)
+                            .mulDivDown(_PRECISION, _loanAprBps * _loanPrincipalAmount) < minImprovementApr))
                 || (_offerFee != 0) || (_offerEndTime < _loanEndTime)
         ) {
             revert NotStrictlyImprovedError();

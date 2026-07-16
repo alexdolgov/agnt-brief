@@ -1,0 +1,48 @@
+{
+  "component": "DotDotVault",
+  "main_contract": "DotDotVault",
+  "source_entry_count": 52,
+  "source_file_count": 52,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DotDotVault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x850f4440ed50af8a46281f448d7a5a4e7eb0c7b9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x906b6f2dee9f9decdf80020732dbf98f59f70f5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403263"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe5ed747e19edb8eaece8c0b8a2e4264569ac8054",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

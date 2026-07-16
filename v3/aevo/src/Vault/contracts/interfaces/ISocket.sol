@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-only
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.13;
 
 /**
@@ -117,7 +117,7 @@ interface ISocket {
         uint256 minMsgGasLimit_,
         bytes32 executionParams_,
         bytes32 transmissionParams_,
-        bytes calldata payload_
+        bytes memory payload_
     ) external payable returns (bytes32 msgId);
 
     /**
@@ -165,6 +165,8 @@ interface ISocket {
      * @return chainSlug current chain slug
      */
     function chainSlug() external view returns (uint32 chainSlug);
+
+    function globalMessageCount() external view returns (uint64);
 
     /**
      * @notice returns the config for given `plugAddress_` and `siblingChainSlug_`

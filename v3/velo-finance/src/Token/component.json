@@ -3,7 +3,18 @@
   "main_contract": "Token",
   "source_entry_count": 9,
   "source_file_count": 9,
-  "source_path_remaps": [],
+  "source_path_remaps": [
+    {
+      "original_path": "/Users/huanglu/workspace/EVRYNET/vva-protocol/contracts/modules/core/Token.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-b0db5b0cc81f-Token.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/huanglu/workspace/EVRYNET/vva-protocol/contracts/modules/interfaces/ICollateralAsset.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-bc3eb213c53d-ICollateralAsset.sol",
+      "reason": "unsafe_path"
+    }
+  ],
   "foundry": {
     "root": ".",
     "config": "foundry.toml",
@@ -17,12 +28,12 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0xf486ad071f3bee968384d2e39e2d8af0fcf6fd46",
+      "address": "0x3c8ec1728c080f76dc83baa5d51a0cc367b4a35f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "400636"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

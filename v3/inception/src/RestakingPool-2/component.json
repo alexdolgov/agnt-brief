@@ -1,0 +1,28 @@
+{
+  "component": "RestakingPool-2",
+  "main_contract": "RestakingPool",
+  "source_entry_count": 47,
+  "source_file_count": 47,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RestakingPool-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x80c1ef2e1bc5c2adfe1d245e1c1c4969156bd0fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

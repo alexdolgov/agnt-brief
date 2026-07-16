@@ -1,0 +1,28 @@
+{
+  "component": "NativeFixedPriceLiquidityPoolFactory",
+  "main_contract": "NativeFixedPriceLiquidityPoolFactory",
+  "source_entry_count": 65,
+  "source_file_count": 65,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/NativeFixedPriceLiquidityPoolFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1936b310d4ac6d0fcc46a1ff15df0c6f2819c656",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

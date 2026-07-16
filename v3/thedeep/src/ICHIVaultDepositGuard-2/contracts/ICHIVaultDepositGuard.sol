@@ -151,13 +151,11 @@ contract ICHIVaultDepositGuard is IICHIVaultDepositGuard, ReentrancyGuard {
             (amount0, amount1) = ichiVault.withdraw(shares, address(this));
             if (token0 == WRAPPED_NATIVE) {
                 IWRAPPED_NATIVE(WRAPPED_NATIVE).withdraw(amount0);
-                (bool ok, ) = to.call{value: amount0}("");
-                require(ok, "ETH transfer failed");
+                payable(to).transfer(amount0);
                 IERC20(token1).safeTransfer(to, amount1);
             } else {
                 IWRAPPED_NATIVE(WRAPPED_NATIVE).withdraw(amount1);
-                (bool ok, ) = to.call{value: amount1}("");
-                require(ok, "ETH transfer failed");
+                payable(to).transfer(amount1);
                 IERC20(token0).safeTransfer(to, amount0);
             }
         } else {

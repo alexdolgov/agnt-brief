@@ -1,9 +1,25 @@
 {
   "component": "GTokenLockedDepositNft",
   "main_contract": "GTokenLockedDepositNft",
-  "source_entry_count": 21,
-  "source_file_count": 21,
-  "source_path_remaps": [],
+  "source_entry_count": 19,
+  "source_file_count": 19,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/v6.3/GTokenLockedDepositNft.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-a35f833a13d6-GTokenLockedDepositNft.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IGTokenLockedDepositNftDesign.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-56296083b9ed-IGTokenLockedDepositNftDesign.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IGToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-81efdc3257ff-IGToken.sol",
+      "reason": "unsafe_path"
+    }
+  ],
   "foundry": {
     "root": ".",
     "config": "foundry.toml",
@@ -15,14 +31,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x7d0131aceefd2acc919d7b2ac32e8e6c81a05ceb",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xdd42aa3920c1d5b5fd95055d852135416369bcc1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "394724"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

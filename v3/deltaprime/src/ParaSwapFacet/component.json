@@ -1,8 +1,8 @@
 {
   "component": "ParaSwapFacet",
   "main_contract": "ParaSwapFacet",
-  "source_entry_count": 75,
-  "source_file_count": 75,
+  "source_entry_count": 86,
+  "source_file_count": 86,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -11,21 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/AstraSec-AuditReport-DeltaPrime-Final.pdf",
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/blocksec_deltaprime_v1.0-signed.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x3b963b73561adec65b51e730a8bcb153bc066ac3",
+      "address": "0x0aa196a803a1866ec51522ef0e762bf0aa5986c6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393593"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

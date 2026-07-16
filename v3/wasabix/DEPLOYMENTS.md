@@ -1,7 +1,64 @@
 # wasabix — deployments
 
-1 verified deployment(s) across 1 component(s).
+58 verified deployment(s) across 58 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| bsc | `0x0e38843b6526a4f5e2ea95096a252c15cbea10ef` | StakingPools | impl | live | no |
+| bsc | `0x162bda4208e3ee27885fba4c7a3e33303e3cf2b5` | MultiSigWalletWithTimeLock | impl | live | no |
+| bsc | `0x1a676d8ea2e685f46a575a413f8e90ca49614d0a` | YumBunnyBUSDVault | impl | live | no |
+| bsc | `0x1b6ed71fff348d4ece9953955670e37f3809d373` | AlpacaVaultAdapterWithIndirection | impl | live | no |
+| bsc | `0x3d244d67d680cadcccf34f8f996cea777b6d9ffe` | BunnyVaultAdapter | impl | live | no |
+| bsc | `0x4a8086416c824b03d682d6ba117f2ec759c4a085` | StakingPoolsV2 | impl | live | no |
+| bsc | `0x4af56f065fab006721ab686086be206eba9d1abc` | PancakePair | impl | live | no |
+| bsc | `0x5cda2a223458316cfe2f829bde7e5581c9d1e4cd` | AlpacaBNBVaultAdapterWithIndirection | impl | live | no |
+| bsc | `0x80c6901659b70a79bc55b821e7df81840385abbe` | AlpacaBNBVaultAdapter | impl | live | no |
+| bsc | `0x84e6fd3595010aa6ee461ea2bffa03776780f412` | YumAlpacaBUSDVault | impl | live | no |
+| bsc | `0x99b399b4c79b8c51c4bc8c0df4f49a77cfdec340` | MigratableBUSDTransmuterV2 | impl | live | no |
+| bsc | `0xa33b1b67288e47303ec3612662d00ab489d161dc` | AlpacaVaultAdapter | impl | live | no |
+| bsc | `0xb4f52916414119e4212369569d9089f90070b6dc` | YumAlpacaBNBVault | impl | live | no |
+| bsc | `0xf1d5a685a5e6bec8471d6d9ad2d20ac48ecb2109` | MigratableBNBTransmuterV2 | impl | live | no |
+| ethereum | `0x0b276d9b1cbdf7bc9556635059c6ce672e6f4052` | VesperWETHVaultAdapter | impl | live | no |
+| ethereum | `0x219de705e6c22d6fbc27446161efcc7d5d055ecb` | Transmuter | impl | live | no |
+| ethereum | `0x26a70759222b1842a7c72215f64c7fde8db24856` | YumVesperVaultD8 | impl | live | no |
+| ethereum | `0x2de9441c3e22725474146450fc3467a2c778040f` | YumPickleVault | impl | live | no |
+| ethereum | `0x55c75414f525ef9ccbb8105ce083edbda0075fb5` | YumLUSDVault | impl | live | no |
+| ethereum | `0x5712c641ca4c0ef4bcf70a7aa53aeb680abf5844` | IdleVaultAdapter | impl | live | no |
+| ethereum | `0x596f8e49ace6fc8e09b561972360dc216f1c2a1f` | Vault | impl | live | no |
+| ethereum | `0x599355f4f47b212591514624abecc135fa0c1b16` | VesperLinkVaultAdapter | impl | live | no |
+| ethereum | `0x5cefb9f7c53a1b0c78e239b2445ddd2d362b7076` | Alchemist | impl | live | no |
+| ethereum | `0x60b4b6e42b5f3cab771313d2169a00fb5378fb15` | MigratableLinkTransmuterV2 | impl | live | no |
+| ethereum | `0x68e91df501ab66a0796d0fd164b907acf5f89ad0` | TransmuterD8 | impl | live | no |
+| ethereum | `0x71b426f51f1ba003836abfb457eb2f90643c504e` | LiquityStakingPoolAdapterV2 | impl | live | no |
+| ethereum | `0x767bdd47880b0533b29abb1e3f9f3e30ce009147` | LiquityStakingPoolAdapterV3 | impl | live | no |
+| ethereum | `0x7ee64f74792c307446cd92d23e551efae3172a28` | MigratableWethTransmuter | impl | live | no |
+| ethereum | `0x834893645f06f7ce32729ea27bb7233157ac1f47` | LiquityStakingPoolAdapterV5 | impl | live | no |
+| ethereum | `0x894ccdbed28e294482fecf10eac5962148bf4e15` | YumIdleVault | impl | live | no |
 | ethereum | `0x896e145568624a498c5a909187363ae947631503` | WasabiToken | impl | live | yes |
+| ethereum | `0x8f9ef75cd6e610dd8acf8611c344573032fb9c3d` | UniswapV2Pair | impl | unknown | no |
+| ethereum | `0x99b399b4c79b8c51c4bc8c0df4f49a77cfdec340` | MigratableTransmuter | impl | live | no |
+| ethereum | `0xaf1ea5b45498f6c1b457b0e40cfe423e74713b05` | VesperVaultAdapter | impl | live | no |
+| ethereum | `0xb208dec45edbd1179d9e275c5d459e6282d606ea` | MigratableTransmuterV2 | impl | live | no |
+| ethereum | `0xb642eb5faf7e731ff62823515b3ff82b45d385bc` | YumEthVesperVault | impl | live | no |
+| ethereum | `0xba823ebd48df9d303a0821f79ea196840a263988` | VesperLinkVaultAdapterWithIndirection | impl | live | no |
+| ethereum | `0xbe8043ad7b54045619022a4f7c3a596023425540` | MigratableTransmuterV3 | impl | live | no |
+| ethereum | `0xc2db4c131adaf01c15a1db654c040c8578929d55` | WaToken | impl | live | no |
+| ethereum | `0xc4f2030ded976f45fbb23b702ba725d6f88ef142` | YumLinkVesperVault | impl | live | no |
+| ethereum | `0xc95269c12eeaa8061c03cd2340897d97de885c30` | LiquityStakingPoolAdapter | impl | live | no |
+| ethereum | `0xd542b6741b96e703b7e32cca22a94d69ae50cb7a` | PickleVaultAdapter | impl | live | no |
+| ethereum | `0xf56053612090896cfa14b89f32a259faef49fe5a` | LiquityStakingPoolAdapterV4 | impl | live | no |
+| ethereum | `0xfd8e70e83e399307db3978d3f34b060a06792c36` | WaBtcToken | impl | live | no |
+| polygon | `0x06709db1690efbb32ef3fe6addf1fe787e9c8159` | MerkleDistributor | impl | live | no |
+| polygon | `0x0eda8090e9a86668484915e5e1856e83480fa010` | StakingPoolsV4 | impl | live | no |
+| polygon | `0x219de705e6c22d6fbc27446161efcc7d5d055ecb` | RewardVesting | impl | live | no |
+| polygon | `0x2370b0b9c1b8283d2e9cf4719901ccb21e44a6dc` | PolyquityStabilityPoolAdapterWithIndirection | impl | live | no |
+| polygon | `0x256f29e1e4fe5fb60d5d01e030d8a74def2329e9` | LockerDistribution | impl | live | no |
+| polygon | `0x2ff71c31483fb7033c06b6dafe0442f2a5cb5f1a` | YumMUSDVault | impl | live | no |
+| polygon | `0x35d9da43a62b509a38c0aa406042baebe8d5d9b1` | AirdropDistribution | impl | live | no |
+| polygon | `0x4a8086416c824b03d682d6ba117f2ec759c4a085` | YumPUSDVault | impl | live | no |
+| polygon | `0x59f4090fcf57c355015bcf7805e4e2d6a1958a63` | CompetitionDistribution | impl | live | no |
+| polygon | `0x74ea4ce9688622132bc4966544e91ba990f5472a` | MUSDVaultAdapterWithIndirection | impl | live | no |
+| polygon | `0x859d44789d9b3ba4d8085117ea72f7de197af4a4` | PolyquityStabilityPoolAdapter | impl | live | no |
+| polygon | `0xb938d8cbf7fc6455d1f2ebede5ff9a8e887493b2` | MigratableMUSDTransmuterV2 | impl | live | no |
+| polygon | `0xbbb26ccd60d1444280875c2f9f22bd8c910ec2eb` | MigratablePUSDTransmuterV2 | impl | live | no |
+| polygon | `0xc3be5522cfeb6ef612301c3fa2ce84058c74dd2b` | MUSDVaultAdapter | impl | live | no |

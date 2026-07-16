@@ -1,10 +1,11 @@
 # abstract — deployments
 
-6 verified deployment(s) across 6 component(s).
+7 verified deployment(s) across 7 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | ethereum | `0x2edc71e9991a962c7fe172212d1aa9e50480fbb9` | DiamondProxy | impl | live | no |
+| ethereum | `0x32400084c286cf3e17e7b677ea9583e60a000324` | MailboxFacet | proxy | unknown | no |
 | ethereum | `0x4d376798ba8f69ced59642c3ae8687c7457e855d` | DefaultUpgrade | impl | live | no |
 | ethereum | `0x5d8ba173dc6c3c90c8f7c04c9288bef5fdbad06e` | ValidatorTimelock | impl | live | no |
 | ethereum | `0x70f3fbf8a427155185ec90bed8a3434203de9604` | Verifier | impl | live | no |

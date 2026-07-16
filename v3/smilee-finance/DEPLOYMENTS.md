@@ -1,24 +1,66 @@
 # smilee-finance — deployments
 
-23 verified deployment(s) across 14 component(s).
+65 verified deployment(s) across 31 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x01a0ce0c6351a9b39b2c3c43d5175a11336eefd8` | WadTime-2 | impl | live | no |
+| arbitrum | `0x07c9707cb86b236cc8cce3f6de41d80baac7467c` | FinanceIGPayoff | impl | live | no |
+| arbitrum | `0x082e02d16bcd9fc73be6a862070a56c7016ac6bf` | TokensPair | impl | live | no |
 | arbitrum | `0x110a3b051397956d69733b6fe947648bb9062cf1` | AddressProvider | impl | live | no |
+| arbitrum | `0x121e694d4f4fafee48a2a6ab69a96daa04ec70f6` | MarketOracle | impl | live | no |
+| arbitrum | `0x123dbfc7865350149ff827084b7a95e3fd5a4e09` | AmountsMath | impl | live | no |
 | arbitrum | `0x130648a3fea885c4c734f3a48455a058ad7cd0d5` | MarketOracle | impl | live | no |
 | arbitrum | `0x1e0aa028fcbe1fcd5b6b8394e5eacfaa6fc5c016` | IG | impl | live | no |
+| arbitrum | `0x1e5132a2636deb590521ad0efbd8ff8ffc7517e5` | Finance | impl | live | no |
 | arbitrum | `0x1ee870cbb5e4a6a722c415ce99fb97a1599f003f` | IG | impl | live | no |
+| arbitrum | `0x2f8b57d0d542945986250e51b9fb0059f095ae80` | TimeLock | impl | live | no |
+| arbitrum | `0x45c0c776242c2ea752a4b152902f203af40d7924` | Vault-3 | impl | live | no |
 | arbitrum | `0x49a07a6ba53f600106055764cb35f30a6c34056a` | PositionManager | impl | live | no |
+| arbitrum | `0x4c04182da5dfc05c662598f72ccfd3e7ba757f97` | FinanceIGPayoff | impl | live | no |
+| arbitrum | `0x4e512144292aab5e3f05b2b7415b6a08ba00c933` | IG-2 | impl | live | no |
+| arbitrum | `0x4e5af7dd19c13b08afa3046f2a7d77a5af80546e` | AddressProvider | impl | live | no |
 | arbitrum | `0x521e16ec236a148d6055b0ed02ff5b25717b7153` | IG | impl | live | no |
+| arbitrum | `0x544f53b35a591df217e63725edb7bd597db3fbf8` | VaultProxy | impl | live | no |
 | arbitrum | `0x550f20aa8cfae02c5535ce9bd5b1fce4b13361b8` | IG | impl | live | no |
+| arbitrum | `0x55c950c3ab445dedbbedf3da0ca3445b460f201f` | Vault-2 | impl | live | no |
+| arbitrum | `0x5938431e5d5a4def3590206dbeafa164dc62629b` | VaultLib-2 | impl | live | no |
 | arbitrum | `0x60b48242e139b2932f7ccf47be10ce9b09cfe0bc` | ChainlinkPriceOracle | impl | live | no |
 | arbitrum | `0x6b028ce42c823b01a2c9bcbeeeaddac61f0da4f0` | Vault | impl | live | no |
+| arbitrum | `0x6b8b6d84101cc4a09aa3452772b62408cc8ce95a` | FinanceIGPayoff | impl | live | no |
+| arbitrum | `0x6ee8ae7f352dc9e6aa12149d1366a46c05f25724` | VaultLib | impl | live | no |
+| arbitrum | `0x70def9290c7cbcb3c52469113e037764550548ae` | IG-2 | impl | live | no |
 | arbitrum | `0x732c5e9d282e0547b8dc8912f92f9c653540fddf` | VaultProxy | impl | live | no |
+| arbitrum | `0x7b2eafa0b6c74c56cef409e3f488f7ad19c53be7` | FinanceIGPayoff | impl | live | no |
+| arbitrum | `0x7f2c0f9d927bcd9a2e1cdf22ff11bef07964b0e9` | Vault-2 | impl | live | no |
+| arbitrum | `0x838370197b47f77d197bd3d6ef05254e0305fee6` | PositionManager-2 | impl | live | no |
 | arbitrum | `0x8682ead63e4934fbd35162df3fe4dae9b826732e` | Registry | impl | live | no |
+| arbitrum | `0x91869f15667a8f78d7e89323fbc9a29803417b70` | AmountsMath | impl | live | no |
+| arbitrum | `0x9650a8c245ef068c39865bf1f129e8e8cae86f77` | IG-2 | impl | live | no |
 | arbitrum | `0x991069c8469643cbc1765a1527d570173ab09de5` | SwapAdapterRouter | impl | live | no |
+| arbitrum | `0x9f57d3d3eb873c368ac1258c8d98a60008b95310` | WadTime | impl | live | no |
+| arbitrum | `0xa231a8f2abb2c7d369d1898d1946a2c959242b4f` | AmountsMath | impl | live | no |
+| arbitrum | `0xa2ca8bcb7f75082aa20f57ca09b4cfee1deac009` | SwapAdapterRouter | impl | live | no |
+| arbitrum | `0xa452e8cd1a0028516fa75ddf0521b51f746a02bf` | Position | impl | live | no |
+| arbitrum | `0xaa1ebdab85e9660951cfdc0e7f824e81f161b536` | AmountsMath | impl | live | no |
+| arbitrum | `0xabb4e01a80645840c4fe207a63d25d44bbfa10cb` | PositionManager | impl | live | no |
+| arbitrum | `0xb13170e36007a09d6962e23cbef5c50b775b9738` | FinanceIGVega | impl | live | no |
+| arbitrum | `0xb68271257e7c5b61199a162acccfa7c03570d284` | FinanceIGPayoff | impl | live | no |
+| arbitrum | `0xb7c6072c3a94771cfbf845e6fd5ea70bdee26739` | VaultLib | impl | live | no |
+| arbitrum | `0xbd80e2b3cc71300985506181c366a2295c251182` | Vault | impl | live | no |
 | arbitrum | `0xc1894fa9a94f454f9689be3f2b5e63b3fde569f4` | Vault | impl | live | no |
+| arbitrum | `0xc5cd7159a28675225ae0d63d958826ea52fc4fac` | IG | impl | live | no |
+| arbitrum | `0xc9293cc81013ff1e05e93531f7563788b3fed768` | IG-2 | impl | live | no |
+| arbitrum | `0xc948d7456d3ceda873367ef4fa4a21654131221b` | Vault-2 | impl | live | no |
 | arbitrum | `0xcbe9db6b83d22e9ad109df7384caa19e902a8a14` | Vault | impl | live | no |
 | arbitrum | `0xd3468b7957c5a2fc28b2da2eb17f24dbd9f68831` | Vault | impl | live | no |
+| arbitrum | `0xd92d3c1f100b164da45f94139995defa7a40ffea` | TokensPair | impl | live | no |
+| arbitrum | `0xe1b1a246a6363b88654351554ce4d82c5135979c` | AmountHelper | impl | live | no |
+| arbitrum | `0xed09dbe7b436e1202d7447ecaa92747c558cdf5d` | WadTime | impl | live | no |
+| arbitrum | `0xf0162a5ca89c0ed46236a89eb6de79de05af20ca` | AmountsMath | impl | live | no |
+| arbitrum | `0xf141e7bced2e300bf301eab47d5da537ecbff4a3` | EpochFrequency | impl | live | no |
+| arbitrum | `0xfb84f19b651d9de56336ce3c326941353211a5ad` | TokensPair | impl | live | no |
+| arbitrum | `0xfbf7125aa62d7d82b8d5bb0678a95be136554792` | EpochFrequency | impl | live | no |
 | arbitrum | `0xff7699c47326516759be8902e87d09bcf4700d75` | FeeManager | impl | live | no |
 | chain-80094 | `0x333bd3beb65f965eea04999ba3c0349a596e9ffe` | NodeWithdrawalVault | impl | live | yes |
 | chain-80094 | `0x3b3dd22625128ff1548110f9b7bc702f540668e2` | ERC1967Proxy | proxy | live | yes |

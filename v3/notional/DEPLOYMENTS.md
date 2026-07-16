@@ -1,6 +1,6 @@
 # notional — deployments
 
-38 verified deployment(s) across 2 component(s).
+59 verified deployment(s) across 18 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -10,15 +10,18 @@
 | arbitrum | `0x0ace2dc3995acd739ae5e0599e71a5524b93b886` | nBeaconProxy | proxy | live | no |
 | arbitrum | `0x0f13fb925edc3e1fe947209010d9c0e072986adc` | nBeaconProxy | proxy | live | no |
 | arbitrum | `0x18b0fc5a233acf1586da7c199ca9e3f486305a29` | nBeaconProxy | proxy | live | no |
+| arbitrum | `0x1b3534ca262343e57e837a351100a6db9e0292d7` | FinalRouterV3_Arbitrum | impl | live | no |
 | arbitrum | `0x1fd865a55eaf5333e6374fb3ad66d22e9885d3aa` | nBeaconProxy | proxy | live | no |
 | arbitrum | `0x2c42940a06a3f78b3cb7fc62b5fc7de404c9216f` | nBeaconProxy | proxy | live | no |
 | arbitrum | `0x2ddb08f2757909537bdf2d2eb2bd4f7a64e8e5dd` | nBeaconProxy | proxy | live | no |
 | arbitrum | `0x3482db39b1ffdfa3ca99f0f829aab0855088e707` | nBeaconProxy | proxy | live | no |
+| arbitrum | `0x366d5b255d97c5fee2283561bd89fce5566b178f` | RebalanceHelper | impl | live | no |
 | arbitrum | `0x4068a40e229c9e8df8deaf716266ef008d673efe` | nBeaconProxy | proxy | live | no |
 | arbitrum | `0x41be0117864dc317d1cc8100b01c8ac90da3ba90` | nBeaconProxy | proxy | live | no |
 | arbitrum | `0x452f5c6238c05e980a235f63dbc11bfbe004cc56` | nBeaconProxy | proxy | live | no |
 | arbitrum | `0x4ee6573a7bf74f6dfed54bc9a9de15a81b92e081` | nBeaconProxy | proxy | live | no |
 | arbitrum | `0x52602a1075645845a303f86b2bd0b7e7227f99d6` | nBeaconProxy | proxy | live | no |
+| arbitrum | `0x634a5270cfde2a3d763772c7fc2517c4660d2cf7` | FinalRouterV3_Mainnet | impl | live | no |
 | arbitrum | `0x63ffcfb69edf8c9cb19a36401cf88c8939c40650` | nBeaconProxy | proxy | live | no |
 | arbitrum | `0x65ea9aff1b12fc8dac52a9e07ce2928741159a6c` | nBeaconProxy | proxy | live | no |
 | arbitrum | `0x692749e5bd565c37f5f562f71b335eefe046eaa0` | nBeaconProxy | proxy | live | no |
@@ -41,4 +44,22 @@
 | arbitrum | `0xc9c5e5f79738ddd3924c6f02356291eace665ea3` | nBeaconProxy | proxy | live | no |
 | arbitrum | `0xd63ace62b925361fc588734022718e919a8081ac` | nBeaconProxy | proxy | live | no |
 | arbitrum | `0xef3f53046c9b00702f25186d7342d73c789f547a` | nBeaconProxy | proxy | live | no |
+| arbitrum | `0xf3f7dd5de37a7b41e92776e6577454612ec0dee7` | FinalRouterV3_Arbitrum-2 | impl | live | no |
 | arbitrum | `0xfbd9e818ac30311896f7d7e5bc18f613ba644b56` | nBeaconProxy | proxy | live | no |
+| ethereum | `0x04b5179ea1ce7b3bf69e05bb7082f11af9fad718` | StakingStrategy | impl | live | no |
+| ethereum | `0x078dc7e61b410e461328aba0022197ea6a969d08` | PauseAdmin | impl | live | no |
+| ethereum | `0x0e61e810f0918081cbfd2ac8c97e5866daf3f622` | TimelockUpgradeableProxy-2 | proxy | live | no |
+| ethereum | `0x0fa90c028179cf116561f322edf01994fc9d84de` | StakingStrategy-3 | impl | live | no |
+| ethereum | `0x15ce5192b844a7a45e13864ac9969dc4f95b90fe` | FinalRouterV3_Mainnet-2 | impl | live | no |
+| ethereum | `0x25ee011b6af5537ecd520f40ca759899a064cfcf` | LeveragedNTokenAdapter | impl | live | no |
+| ethereum | `0x2716561755154eef59bc48eb13712510b27f167f` | TimelockUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0x46a2373fb541a5049dc31fc740e8b4036a5a2d74` | AddressRegistry | impl | live | no |
+| ethereum | `0x5fdc7e6695ec594a721f207574ffd75145c41810` | StakingStrategy-2 | impl | live | no |
+| ethereum | `0x6a273b8e100bde88a34e3eb7283597d160a6f7bc` | AddressRegistry-2 | impl | live | no |
+| ethereum | `0x71ba37c7c0eab9f86de6d8745771c66fd3962f20` | TimelockUpgradeableProxy | proxy | live | no |
+| ethereum | `0x8c7c9a45916550c6fe04cdaa139672a1b5803c9f` | TimelockUpgradeableProxy | proxy | live | no |
+| ethereum | `0x9a0c630c310030c4602d1a76583a3b16972ecaa0` | TimelockUpgradeableProxy | proxy | live | no |
+| ethereum | `0xaa7c543bae1de85c36841d55f3d6eae7856efca0` | StakingStrategy-2 | impl | live | no |
+| ethereum | `0xc02b6dfe6bb8a791c4a36655890ce393d1dfd31f` | StakingStrategy | impl | live | no |
+| ethereum | `0xee8086b240e38dfca32c466dda709ee1020fba0d` | PauseAdmin-2 | impl | live | no |
+| ethereum | `0xfe294434753a44f1a9e7ad13cfea6606fcf6ea8e` | FinalRouterV3_Mainnet | impl | live | no |

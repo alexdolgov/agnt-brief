@@ -1,0 +1,42 @@
+{
+  "component": "RocketMegapoolFactory",
+  "main_contract": "RocketMegapoolFactory",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RocketMegapoolFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://rocketpool.net/files/audits/bailsec-audit-saturn-1.pdf",
+    "https://rocketpool.net/files/audits/cantina-audit-saturn-1.pdf",
+    "https://rocketpool.net/files/audits/sigma-prime-audit-saturn-1.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6c8ab3fc244497a932faf9b3d9b39f00e5f77a06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd5bffeaa9f373b9c367132772faa0b88e3f0e38b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403998"
+    }
+  ]
+}

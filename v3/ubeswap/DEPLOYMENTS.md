@@ -1,17 +1,22 @@
 # ubeswap — deployments
 
-15 verified deployment(s) across 15 component(s).
+20 verified deployment(s) across 20 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| chain-42220 | `0x1d8c564cce485c2f053ef32652e4dba00d4265c4` | TickLens | impl | unknown | no |
 | chain-42220 | `0x388d611a57ac15dcc1b937f287e5e908ba5ff5c9` | VotableStakingRewards | impl | live | no |
 | chain-42220 | `0x3924c6b0003135683b59bab63c2b4a5631a6ae73` | UbeEcosystemVesting | impl | live | no |
 | chain-42220 | `0x3c255ded9b25f0bfb4ef1d14234bd2514d7a7a0d` | UniversalRouter | impl | live | no |
 | chain-42220 | `0x4d446f092461a0bfdebc72abc831541ca949d63f` | UniswapInterfaceMulticall | impl | live | no |
+| chain-42220 | `0x534408e91d755a0d898e1c508e987e8d0615b52c` | StakingRewards | impl | unknown | no |
+| chain-42220 | `0x5c76245413c6c4cbe7a3fae395a8f7af06fdcd65` | NonfungiblePositionManager | impl | unknown | no |
+| chain-42220 | `0x5cde4d414f27e331b6738f783bc84c5507d8ee7a` | SwapRouter02 | impl | unknown | no |
 | chain-42220 | `0x62d5b84be28a183abb507e125b384122d2c25fae` | UniswapV2Factory | impl | live | no |
 | chain-42220 | `0x67fea58d5a5a4162ced847e13c2c81c73bf8aec4` | UniswapV3Factory | impl | live | no |
 | chain-42220 | `0x71e26d0e519d14591b9de9a0fe9513a398101490` | UbeToken | impl | live | no |
 | chain-42220 | `0x74d4983a29044b68aadd2bdb86bc82cf8c6c8b5c` | UbeTeamVesting | impl | live | no |
+| chain-42220 | `0x799a23da264a157db6f9c02be62f82ce8d602a45` | StakingRewardsCapped | impl | unknown | no |
 | chain-42220 | `0x936f5b0164b08bf0e123cdf356118343342fdaf6` | Timelock | impl | live | no |
 | chain-42220 | `0xa8864a18fab1ed233ce1921f329a6a92dbcca56f` | QuoterV2 | impl | live | no |
 | chain-42220 | `0xae4634be8c69ff602e6dd9a1e3c5cecca3502968` | UbeMiningReserveVesting | impl | live | no |

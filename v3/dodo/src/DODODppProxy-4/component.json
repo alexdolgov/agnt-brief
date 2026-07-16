@@ -1,8 +1,8 @@
 {
   "component": "DODODppProxy-4",
   "main_contract": "DODODppProxy",
-  "source_entry_count": 1,
-  "source_file_count": 1,
+  "source_entry_count": 5,
+  "source_file_count": 5,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-169",
-      "chain_id": 169,
-      "address": "0xcda4a6cc5997002b87f28d46852f9f0aa0f3c897",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x624fc8368fe11be00d8b2f3fe0b9d0053bec21b9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393976"
+      "logic_topography_row_id": "393935"
     }
   ]
 }

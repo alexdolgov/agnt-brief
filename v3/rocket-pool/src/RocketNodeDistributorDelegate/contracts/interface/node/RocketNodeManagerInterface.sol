@@ -1,34 +1,33 @@
 /**
-   *       .
-   *      / \
-   *     |.'.|
-   *     |'.'|
-   *   ,'|   |'.
-   *  |,-'-|-'-.|
-   *   __|_| |         _        _      _____           _
-   *  | ___ \|        | |      | |    | ___ \         | |
-   *  | |_/ /|__   ___| | _____| |_   | |_/ /__   ___ | |
-   *  |    // _ \ / __| |/ / _ \ __|  |  __/ _ \ / _ \| |
-   *  | |\ \ (_) | (__|   <  __/ |_   | | | (_) | (_) | |
-   *  \_| \_\___/ \___|_|\_\___|\__|  \_|  \___/ \___/|_|
-   * +---------------------------------------------------+
-   * |    DECENTRALISED STAKING PROTOCOL FOR ETHEREUM    |
-   * +---------------------------------------------------+
-   *
-   *  Rocket Pool is a first-of-its-kind Ethereum staking pool protocol, designed to
-   *  be community-owned, decentralised, permissionless, & trustless.
-   *
-   *  For more information about Rocket Pool, visit https://rocketpool.net
-   *
-   *  Authored by the Rocket Pool Core Team
-   *  Contributors: https://github.com/rocket-pool/rocketpool/graphs/contributors
-   *  A special thanks to the Rocket Pool community for all their contributions.
-   *
-   */
+  *       .
+  *      / \
+  *     |.'.|
+  *     |'.'|
+  *   ,'|   |`.
+  *  |,-'-|-'-.|
+  *   __|_| |         _        _      _____           _
+  *  | ___ \|        | |      | |    | ___ \         | |
+  *  | |_/ /|__   ___| | _____| |_   | |_/ /__   ___ | |
+  *  |    // _ \ / __| |/ / _ \ __|  |  __/ _ \ / _ \| |
+  *  | |\ \ (_) | (__|   <  __/ |_   | | | (_) | (_) | |
+  *  \_| \_\___/ \___|_|\_\___|\__|  \_|  \___/ \___/|_|
+  * +---------------------------------------------------+
+  * |  DECENTRALISED STAKING PROTOCOL FOR ETHEREUM 2.0  |
+  * +---------------------------------------------------+
+  *
+  *  Rocket Pool is a first-of-its-kind ETH2 Proof of Stake protocol, designed to be community owned,
+  *  decentralised, trustless and compatible with staking in Ethereum 2.0.
+  *
+  *  For more information about Rocket Pool, visit https://rocketpool.net
+  *
+  *  Authors: David Rugendyke, Jake Pospischil, Kane Wallmann, Darren Langley, Joe Clapis, Nick Doherty
+  *
+  */
 
-// SPDX-License-Identifier: GPL-3.0-only
 pragma solidity >0.5.0 <0.9.0;
 pragma abicoder v2;
+
+// SPDX-License-Identifier: GPL-3.0-only
 
 import "../../types/NodeDetails.sol";
 
@@ -46,12 +45,6 @@ interface RocketNodeManagerInterface {
     function getNodeExists(address _nodeAddress) external view returns (bool);
     function getNodeWithdrawalAddress(address _nodeAddress) external view returns (address);
     function getNodePendingWithdrawalAddress(address _nodeAddress) external view returns (address);
-    function getNodeRPLWithdrawalAddress(address _nodeAddress) external view returns (address);
-    function getNodeRPLWithdrawalAddressIsSet(address _nodeAddress) external view returns (bool);
-    function unsetRPLWithdrawalAddress(address _nodeAddress) external;
-    function setRPLWithdrawalAddress(address _nodeAddress, address _newRPLWithdrawalAddress, bool _confirm) external;
-    function confirmRPLWithdrawalAddress(address _nodeAddress) external;
-    function getNodePendingRPLWithdrawalAddress(address _nodeAddress) external view returns (address);
     function getNodeTimezoneLocation(address _nodeAddress) external view returns (string memory);
     function registerNode(string calldata _timezoneLocation) external;
     function getNodeRegistrationTime(address _nodeAddress) external view returns (uint256);
@@ -65,15 +58,6 @@ interface RocketNodeManagerInterface {
     function getSmoothingPoolRegistrationState(address _nodeAddress) external returns (bool);
     function getSmoothingPoolRegistrationChanged(address _nodeAddress) external returns (uint256);
     function getSmoothingPoolRegisteredNodeCount(uint256 _offset, uint256 _limit) external view returns (uint256);
+    function getNodeDetails(address _nodeAddress) external view returns (NodeDetails memory);
     function getNodeAddresses(uint256 _offset, uint256 _limit) external view returns (address[] memory);
-    function deployMegapool() external returns (address);
-    function getExpressTicketCount(address _nodeAddress) external view returns (uint256);
-    function useExpressTicket(address _nodeAddress) external;
-    function provisionExpressTickets(address _nodeAddress) external;
-    function getExpressTicketsProvisioned(address _nodeAddress) external view returns (bool);
-    function refundExpressTicket(address _nodeAddress) external;
-    function getMegapoolAddress(address _nodeAddress) external view returns (address);
-    function getUnclaimedRewards(address _nodeAddress) external view returns (uint256);
-    function addUnclaimedRewards(address _nodeAddress) external payable;
-    function claimUnclaimedRewards(address _nodeAddress) external;
 }

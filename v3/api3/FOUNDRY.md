@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/Api3Pool"
+forge build --root "src/VaultV2"
 ```
 
 ## Build every component

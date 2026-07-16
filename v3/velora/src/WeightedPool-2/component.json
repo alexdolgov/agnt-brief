@@ -1,0 +1,28 @@
+{
+  "component": "WeightedPool-2",
+  "main_contract": "WeightedPool",
+  "source_entry_count": 59,
+  "source_file_count": 59,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WeightedPool-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x11f0b5cca01b0f0a9fe6265ad6e8ee3419c68440",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

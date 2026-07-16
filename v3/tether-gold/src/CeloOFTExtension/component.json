@@ -1,0 +1,28 @@
+{
+  "component": "CeloOFTExtension",
+  "main_contract": "CeloOFTExtension",
+  "source_entry_count": 24,
+  "source_file_count": 24,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CeloOFTExtension\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x207059273474e6226a2e68085439015ad5fd7e4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

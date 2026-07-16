@@ -21,7 +21,7 @@
     "build_command": "forge build --root \"src/HoprTicketPriceOracle\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -34,6 +34,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "394971"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x344f8dd6dbcd5bc0b396ddd47f20fdc9a89c3c90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "gnosis",
@@ -54,6 +64,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "394988"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xfa251d4c367683d6181531afd5964e660acf43a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

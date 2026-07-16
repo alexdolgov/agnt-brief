@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/BurnMintERC20\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0f6c1f639c76b8461476da030e654f25ddfb6e84",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "polygon",
       "chain_id": 137,
@@ -23,6 +33,36 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "399458"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x282d9953b1c1e8d010de44bb98ed1ba9d8a52c54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x593722ed549a7fc69e60ce75b39924e38caba494",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xba754d80d0b417f62aeda94a82b6b72e4fd8f553",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

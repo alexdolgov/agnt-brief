@@ -39,16 +39,19 @@ interface IFolio {
 
     event RebalanceControlSet(RebalanceControl newControl);
     event RebalanceStarted(
-        uint256 nonce,
+        uint256 indexed nonce,
         PriceControl priceControl,
-        address[] tokens,
-        WeightRange[] weights,
-        PriceRange[] prices,
+        TokenRebalanceParams[] tokens,
         RebalanceLimits limits,
+        uint256 startedAt,
         uint256 restrictedUntil,
-        uint256 availableUntil
+        uint256 availableUntil,
+        bool bidsEnabled
     );
     event RebalanceEnded(uint256 nonce);
+    event BidsEnabledSet(bool bidsEnabled);
+    event NameSet(string newName);
+
     // === Errors ===
 
     error Folio__FolioDeprecated();
@@ -91,6 +94,9 @@ interface IFolio {
     error Folio__InvalidTTL();
     error Folio__NotRebalancing();
     error Folio__MixedAtomicSwaps();
+    error Folio__PermissionlessBidsDisabled();
+    error Folio__EmptyRebalance();
+    error Folo__NotInRebalance();
 
     // === Structures ===
 
@@ -125,6 +131,7 @@ interface IFolio {
     struct FolioFlags {
         bool trustedFillerEnabled;
         RebalanceControl rebalanceControl;
+        bool bidsEnabled;
     }
 
     struct FeeRecipient {
@@ -159,11 +166,12 @@ interface IFolio {
         uint256 high; // D27{UoA/tok} (0, 1e45]
     }
 
-    /// Rebalance details for a token
+    /// Rebalance details for a token (storage)
     struct RebalanceDetails {
         bool inRebalance;
         WeightRange weights; // D27{tok/BU} [0, 1e54]
         PriceRange initialPrices; // D27{UoA/tok} (0, 1e45]
+        uint256 maxAuctionSize; // {tok}
     }
 
     /// Singleton rebalance state
@@ -175,9 +183,10 @@ interface IFolio {
         uint256 restrictedUntil; // {s} timestamp rebalancing becomes unrestricted, exclusive
         uint256 availableUntil; // {s} timestamp rebalancing ends overall, exclusive
         PriceControl priceControl; // AUCTION_LAUNCHER control over auction pricing
+        bool bidsEnabled; // If true, permissionless bids are enabled
     }
 
-    /// 1 running auction at a time; N per rebalance overall
+    /// 1 running auction at a time; N per rebalance overall (storage)
     /// Auction states:
     ///   - UNINITIALIZED: startTime == 0 && endTime == 0
     ///   - PENDING: block.timestamp < startTime
@@ -188,11 +197,21 @@ interface IFolio {
         mapping(address token => PriceRange) prices; // D27{UoA/tok} (0, 1e45]
         uint256 startTime; // {s} inclusive
         uint256 endTime; // {s} inclusive
+        mapping(address token => uint256) traded; // {tok}
     }
 
     /// Used to mark old storage slots now deprecated
     struct DeprecatedStruct {
         bytes32 EMPTY;
+    }
+
+    /// Token rebalance parameters (memory/calldata)
+    struct TokenRebalanceParams {
+        address token;
+        WeightRange weight; // D27{tok/BU} [0, 1e54]
+        PriceRange price; // D27{UoA/tok} (0, 1e45]
+        uint256 maxAuctionSize; // {tok}
+        bool inRebalance;
     }
 
     function distributeFees() external;

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/BeaconProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
     "https://github.com/lidofinance/audits/blob/main/L2/Linea-2023-12-OpenZeppelin-Bridge-Audit-Report.pdf",
@@ -26,6 +26,36 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "401889"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x971f46a2852d11d59dbf0909e837cfd06f357deb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x05f5198b1d4a37e07ac510fc7a207e1499e8aef7",
+      "is_proxy": true,
+      "implementation_address": "0xda8aefcf0f9b0b81915a2c124f913e58212d49df",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x0ece76334fb560f2b1a49a60e38cf726b02203f0",
+      "is_proxy": true,
+      "implementation_address": "0xc0583e2f5930ede5fab9d57bac4169878730b010",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

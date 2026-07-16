@@ -1,0 +1,28 @@
+{
+  "component": "SwapOrderExecutor",
+  "main_contract": "SwapOrderExecutor",
+  "source_entry_count": 67,
+  "source_file_count": 67,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SwapOrderExecutor\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x455d555350d5cccd1e3eb3d563b411ef24697050",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

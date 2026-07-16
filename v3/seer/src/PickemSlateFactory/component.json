@@ -1,0 +1,38 @@
+{
+  "component": "PickemSlateFactory",
+  "main_contract": "PickemSlateFactory",
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PickemSlateFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x2a9fa7bad74e85d91c8f9fc1258f065e285b0cad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xfe5754856adcee110c189d5c20adb26481aac3c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

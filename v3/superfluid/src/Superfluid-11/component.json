@@ -1,0 +1,114 @@
+{
+  "component": "Superfluid-11",
+  "main_contract": "Superfluid",
+  "source_entry_count": 25,
+  "source_file_count": 25,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/superfluid/Superfluid.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-789dcd244c5c-Superfluid.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/ux/BaseRelayRecipient.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-543a1061c119-BaseRelayRecipient.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-8034c0e96d87-UUPSUtils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-640ccd934059-UUPSProxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSProxiable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-7c9471dcac3d-UUPSProxiable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libs/CallUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-45b7fb17af80-CallUtils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/ux/IRelayRecipient.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-d91b70487267-IRelayRecipient.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/tokens/TokenInfo.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-765f5a605699-TokenInfo.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/tokens/ERC20WithTokenInfo.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-c3ceb6c3eee6-ERC20WithTokenInfo.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluidToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-e2c42409718e-ISuperfluidToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluidGovernance.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-85bcfe379386-ISuperfluidGovernance.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluid.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-f2fc7943b3da-ISuperfluid.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperTokenFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-f6a3cebbbbcc-ISuperTokenFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-eb77a17ec964-ISuperToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperApp.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-7eef870b060a-ISuperApp.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperAgreement.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-d8e962c27d43-ISuperAgreement.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/Definitions.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-5593d8e120d4-Definitions.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Superfluid-11\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe72830e7ebbff8ce0866059de83cacd4263acd08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

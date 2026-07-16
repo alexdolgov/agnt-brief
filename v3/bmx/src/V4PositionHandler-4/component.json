@@ -1,0 +1,28 @@
+{
+  "component": "V4PositionHandler-4",
+  "main_contract": "V4PositionHandler",
+  "source_entry_count": 33,
+  "source_file_count": 33,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/V4PositionHandler-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4b1c67367c21d59be00b461f7cdcc7ddecb0c5cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

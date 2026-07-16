@@ -1,0 +1,124 @@
+{
+  "component": "Bounty",
+  "main_contract": "Bounty",
+  "source_entry_count": 30,
+  "source_file_count": 30,
+  "source_path_remaps": [
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/Bounty.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-290002329d1f-Bounty.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/BountyV2.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-f86f2676d45e-BountyV2.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/ConstantsHolder.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-435d18569406-ConstantsHolder.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/ContractManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-a16d417077e4-ContractManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/Nodes.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-9315af6211da-Nodes.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/Permissions.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-1d8231ccc50d-Permissions.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/delegation/DelegationController.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-ed6764611f53-DelegationController.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/delegation/DelegationPeriodManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-4000775c9fe8-DelegationPeriodManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/delegation/PartialDifferences.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-2d38f4f0a2b8-PartialDifferences.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/delegation/Punisher.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-ea6b22b37114-Punisher.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/delegation/TimeHelpers.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-17a0bcaad995-TimeHelpers.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/delegation/TokenLaunchLocker.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-41998eb8a721-TokenLaunchLocker.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/delegation/TokenState.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-3c67f1373b30-TokenState.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/delegation/ValidatorService.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-8231f77f3ac0-ValidatorService.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/interfaces/delegation/ILocker.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-b4de6fc24842-ILocker.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/thirdparty/BokkyPooBahsDateTimeLibrary.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-b7f33c025147-BokkyPooBahsDateTimeLibrary.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/utils/FractionUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-0fadcb756d3d-FractionUtils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/utils/MathUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-049effa1d996-MathUtils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/vadim/code/skale-manager/contracts/utils/StringUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-d3642a779fbe-StringUtils.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Bounty\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa3d36d0c24e90b4ba27eef74e19742ed4b5c7f11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

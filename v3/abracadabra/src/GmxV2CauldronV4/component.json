@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/GmxV2CauldronV4\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 5,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -37,6 +37,16 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
+      "address": "0x625fe79547828b1b54467e5ed822a9a8a074bd61",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0x66805f6e719d7e67d46e8b2501c1237980996c6a",
       "is_proxy": false,
       "implementation_address": null,
@@ -53,6 +63,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "390638"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9ff8b4c842e4a95dab5089781427c836dae94831",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",

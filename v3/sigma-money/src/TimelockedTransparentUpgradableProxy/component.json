@@ -1,0 +1,28 @@
+{
+  "component": "TimelockedTransparentUpgradableProxy",
+  "main_contract": "TimelockedTransparentUpgradableProxy",
+  "source_entry_count": 115,
+  "source_file_count": 115,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TimelockedTransparentUpgradableProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa82fad385ea96a61dcf810ca4a64e4c93ddcad79",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,32 +1,69 @@
 # fira — deployments
 
-26 verified deployment(s) across 26 component(s).
+63 verified deployment(s) across 62 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| ethereum | `0x00260db07a22a6a5182213d8de1aba0705a6cd78` | AccessControlledOffchainAggregator | impl | unknown | no |
+| ethereum | `0x00a773bd2ce922f866bb43ab876009fb959d7c29` | EACAggregatorProxy | impl | unknown | no |
+| ethereum | `0x010b33ce6fe3c65e8c873d91be0bcb3de36c0a67` | AggregatorFacade | impl | unknown | no |
+| ethereum | `0x0202b5063b40bab1f0548b83bdb6bfbefb11d62f` | Usd0PP | impl | unknown | no |
 | ethereum | `0x0386685ea7d37c61ddb8f2e2e8c45f6a81d4a3c8` | ActionStorageV4 | impl | live | no |
+| ethereum | `0x0594cb5ca47efe1ff25c7b8b43e221683b4db34c` | RegistryContract | proxy | unknown | no |
+| ethereum | `0x0882477e7895bdc5cea7cb1552ed914ab157fe56` | FiatTokenV1 | impl | unknown | no |
+| ethereum | `0x0b8b84d5f89378eb7f902031b6006dd6c0eeae4d` | Aggregator | impl | unknown | no |
+| ethereum | `0x0bc5719b062ce998804741fb93cf74ac00c5101b` | PermissionedSisuVaultFactory | impl | unknown | no |
+| ethereum | `0x0d374775e962c3608b8f0a4b8b10567df739bb56` | RegistryContract | proxy | unknown | no |
+| ethereum | `0x0d62b4cc02b4b51ed19ddf41d7a7979cf394c99f` | LinearVestV0 | impl | unknown | no |
+| ethereum | `0x0e9ca42bc60be25f9a67f52173067cc0bb405bb5` | LockReleaseTokenPool | impl | unknown | no |
 | ethereum | `0x17ea07eb87bf7b091070999a0d313556d4ac580b` | CouponToken | impl | live | yes |
+| ethereum | `0x23f20b7ea6194b639f75f2295a8a98ccdf6be18b` | SwapperEngine | impl | unknown | no |
+| ethereum | `0x26227b1f96c773c0ed4c6ea99fc8b0d69efd8d0b` | DaoCollateral | impl | unknown | no |
+| ethereum | `0x2792dad98fd6ba3743ca3484dbc2ce436faa9440` | YieldModule | impl | unknown | no |
 | ethereum | `0x280ddd897f39c33fef1cbf863b386cb9a8e53a0e` | FiraLendingMarket | impl | live | no |
 | ethereum | `0x286bbc5519cd421011e7e1c092e1d6a72edb4d30` | ActionAddRemoveLiqV3 | impl | live | no |
+| ethereum | `0x2c271ddf484ac0386d216eb7eb9ff02d4dc0f6aa` | AddressList | impl | unknown | no |
 | ethereum | `0x2dead5b19935d7299d7077c52f2e2860370278a5` | ActionCallbackV3 | impl | live | no |
+| ethereum | `0x2ed527087b740530562754efcd608290eccdbe2e` | ChainlinkOracleV2 | impl | unknown | no |
+| ethereum | `0x334b18e5e81657efa2057f80e19b8e81f0e5783c` | TokenMapping | impl | unknown | no |
 | ethereum | `0x33fd40ed7744c961b61a086a87f83787bd9606ee` | BondToken | impl | live | no |
+| ethereum | `0x3d7346578be9b82e0227d027bd86f6de59ba3c91` | AaveToChainlinkAdapter | impl | unknown | no |
 | ethereum | `0x3de0ff76e8b528c092d47b9dac775931cef80f49` | PendlePrincipalToken | impl | live | no |
 | ethereum | `0x400922e37d608620672dc1f1b7a25ecbaabb57f8` | FiraMarket | impl | live | no |
+| ethereum | `0x43ffb63f98ba9b687092f53235490650b30c2f01` | Usd0 | impl | unknown | no |
 | ethereum | `0x4474886d003abcb53c307324894c074ce5176f75` | ActionSimple | impl | live | no |
 | ethereum | `0x48f7e36eb6b826b2df4b2e630b62cd25e89e40e2` | ChainlinkOracle | impl | unknown | no |
+| ethereum | `0x4dfcef82eaee9ea817beb1279336f7d0ebf2b685` | MorphoChainlinkOracleV2 | impl | unknown | no |
+| ethereum | `0x4f75953c2661d3a0138fcd80551ea10b80dd08c7` | KeeperRegistry | impl | unknown | no |
 | ethereum | `0x50791a5ca041b9d6dd03e64e3fa0e34a376759ac` | SisuVault | impl | live | yes |
+| ethereum | `0x566c11b5c2201b69c9269fe924e4395873674335` | MasterMinter | impl | unknown | no |
 | ethereum | `0x5ccdbef28bc15d306ddb949f6b43bb0e3002cea6` | FiraSolvencyOracle | impl | live | no |
+| ethereum | `0x60f85e06665cecc7782279eee5fc58b3a33910da` | SisuVaultPriceFeed | impl | unknown | no |
 | ethereum | `0x62f5366c9e21a95326c461a098a408e034e017b3` | USDCFW | impl | live | yes |
+| ethereum | `0x6315aa908c50376d1028412c028aa0629f0355a6` | FiatTokenUtil | impl | unknown | no |
 | ethereum | `0x66f5853cf6c36b97e754f074397d00b78253ef03` | ActionBorrow | impl | live | yes |
 | ethereum | `0x73c288826347af3718e6f09c2a24aafda77684cd` | AdaptiveCurveIrm | impl | live | yes |
 | ethereum | `0x7783ff7be856c7a82bc5497fb3cc8f7e8802d8dc` | ChainlinkOracleV2Factory | impl | live | yes |
 | ethereum | `0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0` | WstETH | impl | live | no |
+| ethereum | `0x809c212b710f5b8e3f9898213f0d845e2bc46ec2` | USLMigrator | impl | unknown | no |
+| ethereum | `0x8cbde23b1416cac07a52591bba744c744d77a91a` | FiatToken | impl | unknown | no |
+| ethereum | `0x95cf8c1cb7d256082eccf71371e50a5dbccc5220` | ClassicalOracle | impl | unknown | no |
 | ethereum | `0x967234d7a4416380107da653e5d3afc9c7bf8874` | ActionMiscV3 | impl | live | no |
+| ethereum | `0x9d594d1fba500113ede103c071dcf68535da69b4` | Patch0000 | impl | unknown | no |
 | ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | FiatTokenProxy | proxy | live | no |
+| ethereum | `0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf` | FiatTokenV2_1 | impl | unknown | no |
+| ethereum | `0xa428723ee8ffd87088c36121d72100b43f11fb6a` | USLLendingMarket | impl | unknown | no |
 | ethereum | `0xab2383692ed8e0836e25b71988c925dfd94ed2fe` | ActionSwapBTV3 | impl | live | no |
 | ethereum | `0xad332515d9c82438bba0e9faa9486b52a33a7ac8` | RehypothecationModule | impl | live | no |
+| ethereum | `0xb7277a6e95992041568d9391d09d0122023778a2` | FiatTokenV2 | impl | unknown | no |
 | ethereum | `0xbf1efc2199ae9ee1b6f5060a45d4440157e49744` | FiraMarketFactory | impl | live | no |
 | ethereum | `0xc8db629192a96d6840e88a8451f17655880a2e4d` | LendingMarket | impl | live | yes |
 | ethereum | `0xcdb83abb9121c04589567a4106c3cfaf65db68be` | YieldContractFactory | impl | live | no |
 | ethereum | `0xdb7a722ae7baf83d3d8b9e812952916326d6656b` | ActionSwapCTV3 | impl | live | no |
+| ethereum | `0xdfcf197b0b65066183b04b88d50acdc0c4b01385` | FixedRateIrm | impl | unknown | no |
 | ethereum | `0xe77e0f97a864558e5513209323e4169fceac6981` | SisuVaultFactory | impl | live | yes |
+| ethereum | `0xea268c588072e2639448e3a9433ab92e871335e2` | MetaOracleDeviationTimelock | impl | unknown | no |
+| ethereum | `0xefdb275fc9c7946f36e632bef61379c5f5ab4c86` | PendleChainlinkOracle | impl | unknown | no |
+| ethereum | `0xfdf9f131604aaf4832efd6485a321d9165ff5182` | StaleOracleFeed | impl | unknown | no |
+| ethereum | `0xfe7c47895edb12a990b311df33b90cfea1d44c24` | PermissionedSisuVault | impl | unknown | no |
+| ethereum | `0xfeaaec9124fb007d7c44ed704a08d24b264de921` | BCLpOracle | impl | live | no |

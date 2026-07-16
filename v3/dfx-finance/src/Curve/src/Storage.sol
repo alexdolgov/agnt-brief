@@ -12,11 +12,9 @@
 
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
+pragma solidity ^0.8.27;
 
-pragma solidity ^0.8.13;
-
-import "./interfaces/IOracle.sol";
-import "./Assimilators.sol";
+import {IOracle} from "./interfaces/IOracle.sol";
 
 contract Storage {
     struct Curve {
@@ -62,5 +60,5 @@ contract Storage {
     // Curve operational state
     bool public frozen = false;
     bool public emergency = false;
-    bool internal notEntered = true;
+    bool public notEntered = true;
 }

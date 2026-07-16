@@ -1,22 +1,14 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity 0.8.17;
 
-import {ERC20} from "@rari-capital/solmate/src/tokens/ERC20.sol";
-import {SafeTransferLib} from "@rari-capital/solmate/src/utils/SafeTransferLib.sol";
-
 import {Base} from "./Base.sol";
-import {Storage} from "./Storage.sol";
 import {TokenGGP} from "./tokens/TokenGGP.sol";
-import {Vault} from "./Vault.sol";
+import {Storage} from "./Storage.sol";
 
 /// @title Settings for the Protocol
 contract ProtocolDAO is Base {
-	using SafeTransferLib for ERC20;
-	using SafeTransferLib for address;
-
 	error ContractAlreadyRegistered();
 	error ExistingContractNotRegistered();
-	error InvalidAmount();
 	error InvalidContract();
 	error ValueNotWithinRange();
 
@@ -224,32 +216,6 @@ contract ProtocolDAO is Base {
 		return getUint(keccak256("ProtocolDAO.MinCollateralizationRatio"));
 	}
 
-	/// @notice The ability of an enabled multisig to withdraw excess AVAX from ggAVAX to delegate and earn yield for the protocol
-	/// @return true if enabled
-	function getWithdrawForDelegationEnabled() public view returns (bool) {
-		return getBool(keccak256("ProtocolDAO.WithdrawForDelegationEnabled"));
-	}
-
-	/// @notice The ability of an enabled multisig to withdraw excess AVAX from ggAVAX to delegate and earn yield for the protocol
-	function setWithdrawForDelegationEnabled(bool b) public onlyGuardian {
-		return setBool(keccak256("ProtocolDAO.WithdrawForDelegationEnabled"), b);
-	}
-
-	/// @notice The fee percentage for the protocol
-	/// @param feeBips The fee percentage for the protocol
-	function setFeeBips(uint256 feeBips) public onlyGuardian {
-		if (feeBips > 10000) {
-			revert ValueNotWithinRange();
-		}
-		setUint(keccak256("ProtocolDAO.FeeBips"), feeBips);
-	}
-
-	/// @notice The fee percentage for the protocol
-	/// @return uint256 The fee percentage for the protocol
-	function getFeeBips() public view returns (uint256) {
-		return getUint(keccak256("ProtocolDAO.FeeBips"));
-	}
-
 	//*** Contract Registration ***
 
 	/// @notice Upgrade a contract by registering a new address and name, and un-registering the existing address
@@ -300,52 +266,5 @@ contract ProtocolDAO is Base {
 		deleteAddress(keccak256(abi.encodePacked("contract.address", name)));
 		deleteString(keccak256(abi.encodePacked("contract.name", addr)));
 		deleteBool(keccak256(abi.encodePacked("contract.exists", addr)));
-	}
-
-	/// @notice Sets a contract as an approved partner
-	/// @param roleName name of the role the address is receiving
-	/// @param addr the address the specified role is being set for
-	/// @param isEnabled if the addr is enabled or not for the roleName
-	function setRole(string memory roleName, address addr, bool isEnabled) public onlyGuardian {
-		setBool(keccak256(abi.encodePacked("Role", roleName, addr)), isEnabled);
-	}
-
-	/// @notice Verifies if an address has a role
-	/// @param roleName The name of the role to check against the address
-	/// @param addr the address to be checked for the specified role
-	/// @return boolean determining if the address has the specified role
-	function hasRole(string memory roleName, address addr) public view returns (bool) {
-		return getBool(keccak256(abi.encodePacked("Role", roleName, addr)));
-	}
-
-	//*** Rescue Funds Accidentally sent to the ProtocolDAO ***/
-
-	/// @notice Transfer AVAX from the protocol to a specified address
-	/// @param to The address to transfer AVAX to
-	/// @param amount The amount of AVAX to transfer
-	function transferAVAX(address to, uint256 amount) public onlyGuardian {
-		address(to).safeTransferETH(amount);
-	}
-
-	/// @notice Transfer ERC20 tokens from the protocol to a specified address
-	/// @param token The token address to transfer
-	/// @param to The address to transfer tokens to
-	/// @param amount The amount of tokens to transfer
-	function transferToken(address token, address to, uint256 amount) public onlyGuardian {
-		ERC20(token).safeTransfer(to, amount);
-	}
-
-	/// @notice Spends any GGP tokens accidentally sent to the ProtocolDAO
-	/// @param recipientAddress The C-chain address the tokens should be sent to
-	/// @param amount Number of GGP tokens to spend
-	function transferGGPFromVault(address recipientAddress, uint256 amount) external onlyGuardian {
-		Vault vault = Vault(getContractAddress("Vault"));
-		TokenGGP ggpToken = TokenGGP(getContractAddress("TokenGGP"));
-
-		if (amount == 0 || amount > vault.balanceOfToken("ProtocolDAO", ggpToken)) {
-			revert InvalidAmount();
-		}
-
-		vault.withdrawToken(recipientAddress, ggpToken, amount);
 	}
 }

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/LstPriceHook\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -27,12 +27,32 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
+      "address": "0x329e4cf6d328da5bcf46339900126c147ddd525c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0x67ae7b7d81de471802fbacdc83a4a6f16fcafbc0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "391796"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd57e25e04f89e8a7ad4f020213e14ffb48aad943",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "component": "MultiPositionFactory-21",
+  "main_contract": "MultiPositionFactory",
+  "source_entry_count": 71,
+  "source_file_count": 71,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MultiPositionFactory-21\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x8438fddde79085e5bb05d3c8cfe2e8231b9c7873",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

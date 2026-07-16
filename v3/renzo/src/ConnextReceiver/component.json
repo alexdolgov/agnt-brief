@@ -1,0 +1,28 @@
+{
+  "component": "ConnextReceiver",
+  "main_contract": "ConnextReceiver",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ConnextReceiver\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x3ea4d0467c976e9877adb96869fdeb0551fd0930",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "component": "StakingRewardsFactory",
+  "main_contract": "StakingRewardsFactory",
+  "source_entry_count": 15,
+  "source_file_count": 15,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/StakingRewardsFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-c49901b4b34a-StakingRewardsFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libraries/NativeMetaTransaction/NativeMetaTransaction.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-478ecc5aebc8-NativeMetaTransaction.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libraries/NativeMetaTransaction/Initializable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-1b80adccd468-Initializable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libraries/NativeMetaTransaction/EIP712Base.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-8a4627a63513-EIP712Base.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IStakingRewards.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-8f39e1198c4c-IStakingRewards.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/StakingRewards.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-a2e8bf4ee02a-StakingRewards.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/RewardsDistributionRecipient.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-bf20b4f60516-RewardsDistributionRecipient.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StakingRewardsFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x038be886326340844c4e9d0098af006876eae967",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

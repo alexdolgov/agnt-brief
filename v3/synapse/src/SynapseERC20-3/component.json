@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/SynapseERC20-3\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 5,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -45,6 +45,16 @@
       "logic_topography_row_id": "400128"
     },
     {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x809dc529f07651bd43a172e8db6f4a7a0d771036",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
       "chain": "avalanche",
       "chain_id": 43114,
       "address": "0x1f1e7c893855525b303f99bdf5c3c05be09ca251",
@@ -53,6 +63,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "400135"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x321e7092a180bb43555132ec53aaa65a5bf84251",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "avalanche",

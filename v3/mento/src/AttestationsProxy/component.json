@@ -1,0 +1,149 @@
+{
+  "component": "AttestationsProxy",
+  "main_contract": "AttestationsProxy",
+  "source_entry_count": 3,
+  "source_file_count": 3,
+  "source_path_remaps": [
+    {
+      "original_path": "/home/muhammed/projects/celo-monorepo-master/packages/protocol/contracts/common/Proxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-f7fb3349e800-Proxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/muhammed/projects/celo-monorepo-master/packages/protocol/contracts/identity/proxies/AttestationsProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-e8309e6cea8d-AttestationsProxy.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AttestationsProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 12,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x30b3c1265262d7bda066357a4678cb2d660595ac",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x3a493665dc7a609d94b87adf0af51bf8d2edb3f4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x65e25c46cb80ae5f8118d6bcfa3b69d969799411",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x68da817fda9f7538eb75792536b5c5c7b5504785",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xb53ce2e9c5222049a4b374bb404b0d5f92d8d96a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xc834e7c2252bb1b9df90a7f161bc0877dc359afd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xcc651797284339852a38f66c31fafa8ffe9e8fbe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xdadd05185e053f7ccd308852237b1aa57a6f9303",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xdd944d35b87dfdfb8aa249a434ecc2c01d99f451",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xeaaf5597cd2a86d9933d38bc1482244078bc9149",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xf114c70fda914a96e06afdac06fe19fef8f5406a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xff2ba5b9d1a97e872a451e43a0e28a2a2bc9fd2d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

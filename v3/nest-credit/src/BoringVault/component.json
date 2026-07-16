@@ -10,29 +10,79 @@
     "build_command": "forge build --root \"src/BoringVault\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x11113ff3a60c2450f4b22515cb760417259ee94b",
+      "address": "0x119dd7daff816f29d7ee47596ae5e4bdc4299165",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "397223"
+      "logic_topography_row_id": "397224"
     },
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x593ccca4c4bf58b7526a4c164ceef4003c6388db",
+      "address": "0x1639dcec3ece7f610f96a8935db6bcffbca2fbfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29bf22381a5811dec89dc7b46a5ce57ad02c0240",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "397226"
+      "logic_topography_row_id": "397225"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x119dd7daff816f29d7ee47596ae5e4bdc4299165",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1639dcec3ece7f610f96a8935db6bcffbca2fbfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x119dd7daff816f29d7ee47596ae5e4bdc4299165",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x1639dcec3ece7f610f96a8935db6bcffbca2fbfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Asset\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 25,
+  "deployment_count": 27,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -97,12 +97,32 @@
     {
       "chain": "bsc",
       "chain_id": 56,
+      "address": "0xa393d61fe1532257b69b753af7d1efb0e22f1a6e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400997"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
       "address": "0xa45c0abeef67c363364e0e73832df9986aba3800",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "400998"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcec37c0803f00d4a622f9e2b1f682d627b62279b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",

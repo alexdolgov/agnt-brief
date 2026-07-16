@@ -1,0 +1,28 @@
+{
+  "component": "APWineAirdrop",
+  "main_contract": "APWineAirdrop",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/APWineAirdrop\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6d496477692320d67b8f211ede5097f3c89abf63",
+      "is_proxy": true,
+      "implementation_address": "0x8940fd30496bd58de8f574919f3a0382c378d842",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

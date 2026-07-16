@@ -67,6 +67,7 @@ library Roles {
     bytes32 public constant ORACLE_MANAGER = keccak256("ORACLE_MANAGER_ROLE");
     bytes32 public constant CUSTOM_ORACLE_EXECUTOR = keccak256("CUSTOM_ORACLE_EXECUTOR");
     bytes32 public constant MAVERICK_FEE_ORACLE_EXECUTOR = keccak256("MAVERICK_FEE_ORACLE_MANAGER");
+    bytes32 public constant PENDLE_ORACLE_REGISTRATION_MANAGER = keccak256("PENDLE_ORACLE_REGISTRATION_MANAGER");
 
     // AccToke Roles
     bytes32 public constant ACC_TOKE_MANAGER = keccak256("ACC_TOKE_MANAGER");

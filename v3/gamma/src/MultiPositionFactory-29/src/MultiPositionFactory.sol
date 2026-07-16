@@ -1,0 +1,232 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.26;
+
+import { IMultiPositionFactory } from "./interfaces/IMultiPositionFactory.sol";
+import { MultiPositionDeployer } from "./MultiPositionDeployer.sol";
+import { IPoolManager } from "v4-core/interfaces/IPoolManager.sol";
+import { PoolKey } from "v4-core/types/PoolKey.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
+
+contract MultiPositionFactory is IMultiPositionFactory, Ownable {
+    // Role constants
+    bytes32 public constant override CLAIM_MANAGER = keccak256("CLAIM_MANAGER");
+
+    // Role storage
+    mapping(bytes32 => mapping(address => bool)) private _roles;
+
+    // Deployed managers tracking
+    mapping(address => ManagerInfo) public managers;
+    // Track managers by owner
+    mapping(address => address[]) public managersByOwner;
+    // Track all managers for pagination
+    address[] private allManagers;
+
+    // Protocol fee recipient
+    address public feeRecipient;
+
+    // Protocol fee (denominator for fee calculation, e.g., 10 = 10%)
+    uint16 public protocolFee = 10;
+
+    // Pool manager for all deployments
+    IPoolManager public immutable poolManager;
+
+    // Deployer contract for MultiPositionManager
+    MultiPositionDeployer public immutable deployer;
+    
+    // Custom errors
+    error UnauthorizedAccess();
+    error ManagerAlreadyExists();
+    error InvalidAddress();
+    error InitializationFailed();
+    error InvalidFee();
+    
+    constructor(
+        address _owner,
+        IPoolManager _poolManager
+    ) Ownable(_owner) {
+        if (_owner == address(0)) revert InvalidAddress();
+        if (address(_poolManager) == address(0)) revert InvalidAddress();
+        feeRecipient = _owner; // Initialize fee recipient to owner
+        poolManager = _poolManager;
+        deployer = new MultiPositionDeployer();
+    }
+
+    /**
+     * @notice Checks if an account has a specific role or is the owner
+     * @param role The role to check
+     * @param account The account to check
+     * @return True if the account has the role or is the owner
+     */
+    function hasRoleOrOwner(bytes32 role, address account) external view override returns (bool) {
+        return account == owner() || _roles[role][account];
+    }
+    
+    /**
+     * @notice Checks if an account has a specific role
+     * @param role The role to check
+     * @param account The account to check
+     * @return True if the account has the role
+     */
+    function hasRole(bytes32 role, address account) external view override returns (bool) {
+        return _roles[role][account];
+    }
+    
+    /**
+     * @notice Grants a role to an account
+     * @param role The role to grant
+     * @param account The account to grant the role to
+     */
+    function grantRole(bytes32 role, address account) external override onlyOwner {
+        if (account == address(0)) revert InvalidAddress();
+        if (!_roles[role][account]) {
+            _roles[role][account] = true;
+            emit RoleGranted(role, account, msg.sender);
+        }
+    }
+    
+    /**
+     * @notice Revokes a role from an account
+     * @param role The role to revoke
+     * @param account The account to revoke the role from
+     */
+    function revokeRole(bytes32 role, address account) external override onlyOwner {
+        if (_roles[role][account]) {
+            _roles[role][account] = false;
+            emit RoleRevoked(role, account, msg.sender);
+        }
+    }
+    
+    /**
+     * @notice Deploys a new MultiPositionManager
+     * @param poolKey The pool key for the Uniswap V4 pool
+     * @param managerOwner The owner of the new MultiPositionManager
+     * @param name The name for the LP token
+     * @param symbol The symbol for the LP token
+     * @return The address of the deployed MultiPositionManager
+     */
+    function deployMultiPositionManager(
+        PoolKey memory poolKey,
+        address managerOwner,
+        string memory name,
+        string memory symbol
+    ) external returns (address) {
+        if (managerOwner == address(0)) revert InvalidAddress();
+
+        // Generate deterministic salt for CREATE2
+        bytes32 salt = keccak256(abi.encode(poolKey, managerOwner));
+
+        // Deploy using deployer contract
+        address managerAddress = deployer.deploy(
+            poolManager,
+            poolKey,
+            managerOwner,
+            address(this), // factory address
+            name,
+            symbol,
+            protocolFee,
+            salt
+        );
+
+        // Store manager info in mapping
+        managers[managerAddress] = ManagerInfo({
+            managerAddress: managerAddress,
+            managerOwner: managerOwner,
+            poolKey: poolKey
+        });
+
+        // Track manager by owner
+        managersByOwner[managerOwner].push(managerAddress);
+
+        // Track in global list
+        allManagers.push(managerAddress);
+        
+        emit MultiPositionManagerDeployed(
+            managerAddress,
+            managerOwner,
+            poolKey
+        );
+        
+        return managerAddress;
+    }
+    /**
+     * @notice Gets all managers owned by a specific address
+     * @param managerOwner The owner address to query
+     * @return Array of ManagerInfo for all managers owned by the address
+     */
+    function getManagersByOwner(address managerOwner) external view returns (ManagerInfo[] memory) {
+        address[] memory ownerManagers = managersByOwner[managerOwner];
+        ManagerInfo[] memory result = new ManagerInfo[](ownerManagers.length);
+
+        for (uint256 i = 0; i < ownerManagers.length; i++) {
+            address managerAddress = ownerManagers[i];
+            result[i] = managers[managerAddress];
+            result[i].managerAddress = managerAddress;
+        }
+
+        return result;
+    }
+
+    /**
+     * @notice Get all deployed managers with pagination
+     * @param offset Starting index in the global manager list
+     * @param limit Maximum number of managers to return (0 for all remaining)
+     * @return managersInfo Array of ManagerInfo structs
+     * @return totalCount Total number of deployed managers
+     */
+    function getAllManagersPaginated(
+        uint256 offset,
+        uint256 limit
+    ) external view returns (
+        ManagerInfo[] memory managersInfo,
+        uint256 totalCount
+    ) {
+        totalCount = allManagers.length;
+
+        if (limit == 0) {
+            limit = totalCount;  // 0 means return all managers
+        }
+
+        if (offset >= totalCount) {
+            return (new ManagerInfo[](0), totalCount);
+        }
+
+        uint256 count = (offset + limit > totalCount) ?
+            (totalCount - offset) : limit;
+
+        managersInfo = new ManagerInfo[](count);
+
+        for (uint256 i = 0; i < count; i++) {
+            address managerAddress = allManagers[offset + i];
+            managersInfo[i] = managers[managerAddress];
+            managersInfo[i].managerAddress = managerAddress;
+        }
+
+        return (managersInfo, totalCount);
+    }
+
+    /**
+     * @notice Get the total number of deployed managers
+     * @return The total count of deployed managers
+     */
+    function getTotalManagersCount() external view returns (uint256) {
+        return allManagers.length;
+    }
+
+    /**
+     * @notice Sets the protocol fee recipient
+     * @param _feeRecipient The new fee recipient address
+     */
+    function setFeeRecipient(address _feeRecipient) external onlyOwner {
+        if (_feeRecipient == address(0)) revert InvalidAddress();
+        feeRecipient = _feeRecipient;
+    }
+
+    /**
+     * @notice Sets the protocol fee for all new deployments
+     * @param _fee The new protocol fee denominator (e.g., 10 = 10%)
+     */
+    function setProtocolFee(uint16 _fee) external onlyOwner {
+        if (_fee == 0) revert InvalidFee();
+        protocolFee = _fee;
+    }
+}

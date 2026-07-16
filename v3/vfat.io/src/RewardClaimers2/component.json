@@ -1,0 +1,64 @@
+{
+  "component": "RewardClaimers2",
+  "main_contract": "RewardClaimers2",
+  "source_entry_count": 51,
+  "source_file_count": 51,
+  "source_path_remaps": [
+    {
+      "original_path": "contracts/CL/gauge/interfaces/IGaugeV3.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-4f66a9cdcf76-IGaugeV3.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/CL/periphery/interfaces/INonfungiblePositionManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-87e3d7cbd614-INonfungiblePositionManager.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/CL/periphery/interfaces/IPoolInitializer.sol",
+      "exported_path": "__audit_export_path_conflicts__/0033-8a11b75eb629-IPoolInitializer.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/CL/periphery/interfaces/IPeripheryPayments.sol",
+      "exported_path": "__audit_export_path_conflicts__/0034-c36ddc812997-IPeripheryPayments.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/CL/periphery/interfaces/IPeripheryImmutableState.sol",
+      "exported_path": "__audit_export_path_conflicts__/0035-c07881af7772-IPeripheryImmutableState.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/CL/periphery/libraries/PoolAddress.sol",
+      "exported_path": "__audit_export_path_conflicts__/0036-5e40fd9766de-PoolAddress.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "contracts/CL/periphery/interfaces/IPeripheryErrors.sol",
+      "exported_path": "__audit_export_path_conflicts__/0037-ff1530ace47b-IPeripheryErrors.sol",
+      "reason": "case_or_duplicate_collision"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RewardClaimers2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x54e6eccd783ff3cfe10eb157e7b3ffc6d8c84b98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

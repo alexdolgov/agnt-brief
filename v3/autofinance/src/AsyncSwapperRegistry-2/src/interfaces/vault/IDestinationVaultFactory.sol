@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { ISystemComponent } from "src/interfaces/ISystemComponent.sol";
 
@@ -28,13 +28,9 @@ interface IDestinationVaultFactory is ISystemComponent {
 
     /// @notice Sets the default reward ratio
     /// @param rewardRatio new default reward ratio
-    function setDefaultRewardRatio(
-        uint256 rewardRatio
-    ) external;
+    function setDefaultRewardRatio(uint256 rewardRatio) external;
 
     /// @notice Sets the default reward block duration
     /// @param blockDuration new default reward block duration
-    function setDefaultRewardBlockDuration(
-        uint256 blockDuration
-    ) external;
+    function setDefaultRewardBlockDuration(uint256 blockDuration) external;
 }

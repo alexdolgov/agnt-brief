@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.4;
+
+interface ICondition {
+    enum ConditionState {
+        CREATED,
+        RESOLVED,
+        CANCELED,
+        PAUSED
+    }
+
+    struct Condition {
+        uint256 gameId;
+        uint128[2] funds;
+        uint128[2] virtualFunds;
+        uint128 reinforcement;
+        uint128 profit;
+        uint64[2] outcomes;
+        uint64 outcomeWin;
+        uint64 margin;
+        uint64 endsAt;
+        ConditionState state;
+        uint48 leaf;
+    }
+}

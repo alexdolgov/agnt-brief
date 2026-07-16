@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/RusdOft\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x09d4214c03d01f49544c0448dbe3a27f768f2b34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "chain-999",
       "chain_id": 999,
@@ -23,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "398365"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x09d4214c03d01f49544c0448dbe3a27f768f2b34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

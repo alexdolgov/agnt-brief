@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x66b9eba2cef184dfaf3b9e11b104be0a1c6e258c",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfea07884d8918e99a8678dbe25ada77d852c618b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391876"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

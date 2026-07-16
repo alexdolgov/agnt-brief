@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/GenericUnit\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://docs.generic.money/audits/2026-01-19-report-cantinacode-generic-money.pdf"
@@ -25,6 +25,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "394669"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xee77df35586d3b61f53d424ca201cd4b8d3d69d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

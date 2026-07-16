@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/PurchaseBundler-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://drive.google.com/file/d/140tc97VA_-YdPmJ1aH606fzVtOIMy7a_/view?usp=sharing"
@@ -25,6 +25,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "394750"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x53ceda4c47585df08201955820e23bb261489140",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,9 +1,63 @@
 # aarna-protocol — deployments
 
-3 verified deployment(s) across 3 component(s).
+57 verified deployment(s) across 57 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x14d2c9dd16304e8a95fc8395a37f17b6c15239c6` | Comet | impl | unknown | no |
+| arbitrum | `0x1b2e88cc7365d90e7e81392432482925bd8437e9` | CometExt | impl | unknown | no |
+| arbitrum | `0x32221633bf43e85ecf330fb6342b7098d4d1b4fc` | DataConsumerWithSequencerCheck | impl | unknown | no |
+| arbitrum | `0x3fb4d38ea7ec20d91917c09591490eeda38cf88a` | Timelock | impl | unknown | no |
+| arbitrum | `0x42480c37b249e33aabaf4c22b20235656bd38068` | ArbitrumBridgeReceiver | impl | unknown | no |
+| arbitrum | `0x625e7708f30ca75bfd92586e17077590c60eb4cd` | ATokenInstance | proxy | unknown | no |
+| arbitrum | `0xb21b06d71c75973babde35b49ffdac3f82ad3775` | ConfiguratorProxy-2 | impl | unknown | no |
+| arbitrum | `0xbde8f31d2ddda895264e27dd990fab3dc87b372d` | BaseBulker | impl | unknown | no |
+| base | `0x043e92d4672836d9fb481864325b7a7555662a4d` | AtvPassiveRebalanceStrategies | impl | unknown | no |
+| base | `0x04dd4466f633c5440bd1a2b1106963c442ba27c6` | AtvWrappedBoosterTL | impl | unknown | no |
 | base | `0x053136b9a3826e72e6b8b692fd607ea8cd72bad4` | AtvFactory | impl | live | no |
 | base | `0x057a2a173468630c9f150996256821c131dc9efc` | AtvAdapter | impl | live | yes |
+| base | `0x07ef18636a0e23b43f68264660940740e6d11d39` | AtvStorage | impl | unknown | no |
+| base | `0x0b6291d7df80ef789772aaff633c807538e784d2` | AtvLeverageBundler | impl | unknown | no |
+| base | `0x0faac27e4a9c1bbd02bb959330551f2d4484a70e` | AtvOracle | impl | unknown | no |
+| base | `0x1ed5f11f8627fb369c2ddfc3722cb55de3e4efdf` | StakingManager | impl | unknown | no |
 | base | `0x3c29eff521e6f8f8488eb9dfe7c81386d83db9d8` | AtvMorphoBlueIntegration | impl | live | yes |
+| base | `0xebe8b1f4701267bab8993fb5f804f842fb7af297` | Address | impl | unknown | no |
+| chain-146 | `0x0faac27e4a9c1bbd02bb959330551f2d4484a70e` | TimeDelayModule | impl | unknown | no |
+| chain-146 | `0x3e4029472c4618c777b80715f7975c6c85d6ecf8` | AtvDexAdapter | impl | unknown | no |
+| chain-146 | `0x3f5ea53d1160177445b1898afbb16da111182418` | PendleMarketV3 | impl | unknown | no |
+| ethereum | `0x0020e7ebf874cd2b2e0378eba007cbc715f373b6` | AFiManager | impl | unknown | no |
+| ethereum | `0x005aed2732db6230914ca49fb935d7f9f690a2b8` | AFiOracleV2_1 | impl | unknown | no |
+| ethereum | `0x0b895a9b6b5d0aa48292695c5d244ec5f14e4d02` | AFiBase | impl | unknown | no |
+| ethereum | `0x11747c3284b5f8088e815e5cf2e5c3062da55d5b` | AFiOracle | impl | unknown | no |
+| ethereum | `0x11dd82ceadf6874bd8f2916c26a65f13c806112d` | AFiPassiveRebalanceStrategiesV2_1 | impl | unknown | no |
+| ethereum | `0x1504e94b4c2c8a6e8c7c84aa9323f3fea37bc9ac` | AFiBoosterTL | impl | unknown | no |
+| ethereum | `0x158079ee67fce2f58472a96584a73c7ab9ac95c1` | CErc20 | impl | unknown | no |
+| ethereum | `0x1653c07fa6ce103b43925dddb5e31ca568e53ba1` | PriceOracleProxy | impl | unknown | no |
+| ethereum | `0x178053c06006e67e09879c09ff012ff9d263df29` | Comptroller | impl | unknown | no |
+| ethereum | `0x18b5b6696e6569f437f48b111734d72b225d14a7` | NCStandardInterestRateModel | impl | unknown | no |
+| ethereum | `0x1a7a692c923c1ec403eff0b17fc950ec59fa184c` | AFiTimeLock | impl | unknown | no |
+| ethereum | `0x1b0e765f6224c21223aea2af16c1c46e38885a40` | CometRewards | impl | unknown | no |
+| ethereum | `0x1b14fe61a5c215138855246bd011a0d80d2b4617` | AFiASRT | impl | unknown | no |
+| ethereum | `0x1c1853bc7c6bff0d276da53972c0b1a066db1ae7` | CometFactory | impl | unknown | no |
+| ethereum | `0x1ec63b5883c3481134fd50d5daebc83ecd2e8779` | CometProxyAdmin | impl | unknown | no |
+| ethereum | `0x1ef6900f89476b20b0645ae4f510164c37722a91` | AtvASRT | impl | unknown | no |
+| ethereum | `0x226b02e6ca55bb634cbb1412a644f4d97036bc49` | AFiPassiveRebalanceStrategies | impl | unknown | no |
+| ethereum | `0x23a982b74a3236a5f2297856d4391b2edbbb5549` | ScalingPriceFeed | impl | unknown | no |
+| ethereum | `0x24ba60e3c99c0bacb4e237e862542e65491eb741` | AFiStorage | impl | unknown | no |
+| ethereum | `0x283775555757e74077d101a7cc76b6e86dd9ae88` | AtvBoosterTL | impl | unknown | no |
+| ethereum | `0x316f9708bb98af7da9c68c1c3b5e79039cd336e3` | ConfiguratorProxy | proxy | unknown | no |
+| ethereum | `0x3a66dd5d1be2179fda40631708f334fc04a7593c` | AFiFactory | impl | unknown | no |
+| ethereum | `0x401cf9c74f83f53f0a8a804b49d3aeeee289b8bc` | WrappedBoosterTL | impl | unknown | no |
+| ethereum | `0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5` | CEther | impl | unknown | no |
+| ethereum | `0x5562024784cc914069d67d89a28e3201bf7b57e7` | JumpRateModel | impl | unknown | no |
+| ethereum | `0x5d3a536e4d6dbd6114cc1ead35777bab948e3643` | CErc20Delegator | proxy | unknown | no |
+| ethereum | `0x645e758796408efdd65bbbd877e8ebceeb231f4c` | NCStableCoinInterestRateModel | impl | unknown | no |
+| ethereum | `0x74a81f84268744a40febc48f8b812a1f188d80c3` | Bulker | impl | unknown | no |
+| ethereum | `0x7f91aaca4b90643374dc5050585d00f2806d7465` | AFiStorageV2_1 | impl | unknown | no |
+| ethereum | `0x8b21a81c58c20ebc0757c71870c61485ea16d1a6` | AFiManagerV2_1 | impl | unknown | no |
+| ethereum | `0x8c159cfd11677a4f2fe4fd0278dd37a95b986069` | WhitePaperInterestRateModel | impl | unknown | no |
+| ethereum | `0xa394a082273998bdaeea3f1ee6435008d6f6d3a7` | SYAtvAdapter | impl | unknown | no |
+| ethereum | `0xa397a8c2086c554b531c02e29f3291c9704b00c7` | MainnetBulker | impl | unknown | no |
+| ethereum | `0xb61c66a4d83da8e04f40ca844c0c4b508ca81fa3` | Liquidator | impl | unknown | no |
+| ethereum | `0xd72ac1bce9177cfe7aeb5d0516a38c88a64ce0ab` | ConstantPriceFeed | impl | unknown | no |
+| ethereum | `0xf859a1ad94bcf445a406b892ef0d3082f4174088` | Maximillion | impl | unknown | no |

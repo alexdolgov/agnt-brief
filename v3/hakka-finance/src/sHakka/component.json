@@ -1,8 +1,8 @@
 {
   "component": "sHakka",
   "main_contract": "sHakka",
-  "source_entry_count": 1,
-  "source_file_count": 1,
+  "source_entry_count": 3,
+  "source_file_count": 3,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xd9958826bce875a75cc1789d5929459e6ff15040",
+      "address": "0xb925863a15ebdeae1a638bf2b6fd00d4db897a62",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "394888"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

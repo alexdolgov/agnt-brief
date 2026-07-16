@@ -1,8 +1,8 @@
 {
   "component": "HealthMeterFacetProd",
   "main_contract": "HealthMeterFacetProd",
-  "source_entry_count": 47,
-  "source_file_count": 47,
+  "source_entry_count": 58,
+  "source_file_count": 58,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -11,21 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/PeckShield-Audit-Report-DeltaPrime-v2.1.pdf",
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/blocksec_deltaprime_v1.0-signed.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x16238eae4155fe1eca0614cfc23f218771aac8f9",
+      "address": "0x0f386e8c205c75fe00a144be0be576490b0ad704",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393538"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

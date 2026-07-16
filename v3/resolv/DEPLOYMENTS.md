@@ -1,11 +1,56 @@
 # resolv — deployments
 
-5 verified deployment(s) across 4 component(s).
+50 verified deployment(s) across 32 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| chain-9745 | `0x5943026e21e3936538620ba27e01525bba311255` | Timelock | impl | live | no |
+| ethereum | `0x000bcfdc448754b25f8e8afd5fc1fcc259d7e1bc` | AccessControlledOffchainAggregator-2 | impl | live | no |
+| ethereum | `0x02238bb0085395ae52cd4755456891fc2fd5934d` | Chronicle_STETH_BTC_1 | impl | live | no |
+| ethereum | `0x04580be599d6ec1ff77125b724014e1e959bf0d3` | AccessControlledOffchainAggregator | impl | live | no |
+| ethereum | `0x057f30e63a69175c69a4af5656b8c9ee647de3d0` | Chronicle_STONE_ETH_1 | impl | live | no |
+| ethereum | `0x064358f9b6428c51f80511d73afeb3a9e5cf0213` | ConfigRegistry_VAO_1 | impl | live | no |
+| ethereum | `0x0b4cb11fac24707f3f0f89e441a4cdf6ef01d215` | Chronicle_WSRUSD_USD_1 | impl | live | no |
 | ethereum | `0x10f4d4ead6bcd4de7849898403d88528e3dfc872` | ExternalRequestsManager | impl | live | no |
 | ethereum | `0x1202f5c7b4b9e47a1a484e8b270be34dbbc75055` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x1ea387a7228b97796256cc6b109b361635195c5f` | Chronicle_Tester | impl | unknown | no |
+| ethereum | `0x212e81359f24fb871638c366f6df1c42fa789037` | StakedTokenDistributor-2 | impl | live | no |
+| ethereum | `0x277f78f39b9dc73df3723bacd40f8658f8a1a633` | Chronicle_SRUSD_USD_1 | impl | live | no |
+| ethereum | `0x2cafee661745319738f3e7b9a9340d7fe8a06549` | ChronicleGovernance_Accessor_TOSRegistry_1 | impl | live | no |
+| ethereum | `0x3131e6a68bfb42976ef574af042f67d322098747` | Chronicle_CBBTC_USDC_1 | impl | live | no |
+| ethereum | `0x36c9b5e8f039381d1da79b94a206af8bc076c043` | ExternalRequestsCoordinator | impl | live | no |
+| ethereum | `0x371a53bb4203ad5d7e60e220bac1876ff3ddda5b` | Kisser_1 | impl | live | no |
+| ethereum | `0x496470f4835186bf118545bd76889f123d608e84` | Chronicle_SUSDS_USD_1 | impl | live | no |
+| ethereum | `0x50cf7ff706aa1eae8e4dad135d6ab1d9aacec4f0` | AccessControlledOffchainAggregator | impl | live | no |
+| ethereum | `0x51864c574fe9d69eaba03b2cc3fa4d501978e74a` | AccessControlledOffchainAggregator | impl | live | no |
+| ethereum | `0x53c5b703465234f97c5a7b17b602c6224a08031e` | StakedTokenDistributor-3 | impl | live | no |
+| ethereum | `0x552116e747a5b386b2e7eed4371002359cf2a574` | Chronicle_SPK_USD_1 | impl | live | no |
+| ethereum | `0x6a4a218d3cf2ecda6de219efd03eb6091b17432f` | AccessControlledOffchainAggregator | impl | live | no |
+| ethereum | `0x6ac1f64931e0fd9582a095090fab2e838904dbaf` | StakedTokenDistributor | impl | live | no |
 | ethereum | `0x6c8984bc7dbbedaf4f6b2fd766f16ebb7d10aab4` | BurnRegistryV1 | proxy | live | yes |
+| ethereum | `0x6f96e328a106f2575c84a0a3bebfd8ff77780b0c` | AccessControlledOffchainAggregator | impl | live | no |
+| ethereum | `0x74661a9ea74fd04975c6ebc6b155abf8f885636c` | Chronicle_USDS_USD_1 | impl | live | no |
+| ethereum | `0x78281937b869baadeddda3d62fc4b6fc0a196b61` | AccessControlledOCR2Aggregator | impl | live | no |
+| ethereum | `0x80c1b1ee029f05889e3a693fd8c5f76f9b9fe194` | AccessControlledOCR2Aggregator | impl | live | no |
+| ethereum | `0x84b883f8833e7eefd17b6a5e4e885b22f4acfed6` | TreasuryIntermediateEscrow | impl | live | no |
+| ethereum | `0x897cfe55bceb601d5bcbdd34dbdcaee033d5dabf` | AccessControlledOffchainAggregator | impl | live | no |
+| ethereum | `0x8deccbee3ae42901080632ef7e837aca555dc511` | AccessControlledOffchainAggregator | impl | live | no |
+| ethereum | `0x909b2fb63536e22499ec81ef7ca1c66dbc62bfcc` | AccessControlledOffchainAggregator | impl | live | no |
+| ethereum | `0x91eda28735ce089a8b5133476263c3fb8303c8ca` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| ethereum | `0x9f805fc8679e5f81a0683c3203ad48417efdad12` | RewardDistributor | impl | live | no |
 | ethereum | `0xa27a69ae180e202fde5d38189a3f24fe24e55861` | TheCounter | impl | live | no |
+| ethereum | `0xab63ad97b09241412f52fa6bb68f6f9876587620` | AccessControlledOffchainAggregator | impl | live | no |
+| ethereum | `0xbac23ec6ccab8631f500ecb6c01ea0ee0b72ac69` | StakedTokenDistributor | impl | live | no |
+| ethereum | `0xbb2213e9a4515174d433cd75cc2695043c85e32c` | StakedTokenDistributor | impl | live | no |
+| ethereum | `0xbf1762fdbb06e8ee715ae59495b2bf14fb1649df` | ResolvStakingV2 | impl | live | no |
+| ethereum | `0xc707b7fd0dbd04f3fc92fd850435f5206551b6e7` | AccessControlledOffchainAggregator | impl | live | no |
 | ethereum | `0xc7ab90c2ea9271efb31f5fa2843eeb4b331eafa0` | TheCounter | impl | live | no |
+| ethereum | `0xce9d50db432e0702bcad5a4a9122f1f8a77ad8f9` | StakedTokenDistributor | impl | live | no |
+| ethereum | `0xd02d70dd1e495f1d9245d97bfd93259fe8c81ff4` | Chronicle_USR_USD_1 | impl | live | no |
+| ethereum | `0xdd34acfafec81eec1477a1889d3c23e887f38a67` | AccessControlledOffchainAggregator | impl | live | no |
+| ethereum | `0xeb656424e16a8092592a74e6cd93cfd212204495` | Chronicle_EBTCbadger_ETH_1 | impl | live | no |
+| ethereum | `0xeef36320ee5d9f258e22ffc93df8619ec04acdd3` | ResolvStakingV2-2 | impl | live | no |
+| ethereum | `0xf35a655213a9eb84dc88f07c642f20aff198f829` | AccessControlledOffchainAggregator | impl | live | no |
+| ethereum | `0xf47af3904dab5bb2ec2980a6100ec58a2f82ba80` | ExternalRequestsCoordinator-2 | impl | live | no |
+| ethereum | `0xfac0a7282a36327f88bd0a64ff57d64012750bc3` | AccessControlledOffchainAggregator | impl | live | no |
+| ethereum | `0xfc7d46929bc3dc2ca9533a6fc5e9896d401604a4` | StakedTokenDistributor | impl | live | no |

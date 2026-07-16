@@ -1,6 +1,6 @@
 // Sources flattened with hardhat v2.12.2 https://hardhat.org
 
-// File @openzeppelin/contracts/security/ReentrancyGuard.sol@v4.8.2
+// File @openzeppelin/contracts/security/ReentrancyGuard.sol@v4.8.0
 
 // OpenZeppelin Contracts (last updated v4.8.0) (security/ReentrancyGuard.sol)
 
@@ -72,7 +72,7 @@ abstract contract ReentrancyGuard {
 }
 
 
-// File @openzeppelin/contracts/utils/Context.sol@v4.8.2
+// File @openzeppelin/contracts/utils/Context.sol@v4.8.0
 
 // OpenZeppelin Contracts v4.4.1 (utils/Context.sol)
 
@@ -99,7 +99,7 @@ abstract contract Context {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/IERC20.sol@v4.8.2
+// File @openzeppelin/contracts/token/ERC20/IERC20.sol@v4.8.0
 
 // OpenZeppelin Contracts (last updated v4.6.0) (token/ERC20/IERC20.sol)
 
@@ -184,7 +184,7 @@ interface IERC20 {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol@v4.8.2
+// File @openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol@v4.8.0
 
 // OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/IERC20Metadata.sol)
 
@@ -213,7 +213,7 @@ interface IERC20Metadata is IERC20 {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/ERC20.sol@v4.8.2
+// File @openzeppelin/contracts/token/ERC20/ERC20.sol@v4.8.0
 
 // OpenZeppelin Contracts (last updated v4.8.0) (token/ERC20/ERC20.sol)
 
@@ -603,7 +603,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 }
 
 
-// File @openzeppelin/contracts/utils/Address.sol@v4.8.2
+// File @openzeppelin/contracts/utils/Address.sol@v4.8.0
 
 // OpenZeppelin Contracts (last updated v4.8.0) (utils/Address.sol)
 
@@ -850,7 +850,7 @@ library Address {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/extensions/draft-IERC20Permit.sol@v4.8.2
+// File @openzeppelin/contracts/token/ERC20/extensions/draft-IERC20Permit.sol@v4.8.0
 
 // OpenZeppelin Contracts v4.4.1 (token/ERC20/extensions/draft-IERC20Permit.sol)
 
@@ -913,7 +913,7 @@ interface IERC20Permit {
 }
 
 
-// File @openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol@v4.8.2
+// File @openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol@v4.8.0
 
 // OpenZeppelin Contracts (last updated v4.8.0) (token/ERC20/utils/SafeERC20.sol)
 
@@ -1038,292 +1038,120 @@ pragma solidity 0.8.11;
 
 
 interface ISteakingContract {
-    function balanceOf(address account) external view returns (uint256);
     function earned(address account) external view returns (uint256);
-    function stake(uint256 amount) external;
+    function notifyAlreadySent() external;
+    function rewards(address) external view returns (uint256);
+    function duration() external view returns (uint256);
+    function totalSupply() external view returns (uint256);
     function withdraw(uint256 amount) external;
+    function setNotifier(address _notifier, bool _enable) external;
     function getReward() external;
+    function manager() external view returns (address);
+    function treasury() external view returns (address);
+    function balanceOf(address account) external view returns (uint256);
+    function openPreStake() external;
+    function stake(uint256 amount) external;
     function exit() external;
+    function rewardBalance() external view returns (uint256);
+    function isPreStake() external view returns (bool);
+    function setRewardDuration(uint256 _duration) external;
+    function lastUpdateTime() external view returns (uint256);
+    function treasuryFee() external view returns (uint256);
+    function stakedToken() external view returns (address);
+    function rewardPerToken() external view returns (uint256);
+    function inCaseTokensGetStuck(address _token) external;
+    function rewardPerTokenStored() external view returns (uint256);
 }
 
 contract PerformanceTokenStaker is ERC20, ReentrancyGuard {
     using SafeERC20 for ERC20;
 
+
     /// @dev Constants used across the contract.
-    uint256 constant MAX_INT = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff;
     uint256 constant TEN_THOUSAND = 10000;
     uint256 constant MAX_FEE = 10000;
     uint256 constant ONE_YEAR = 31556952;
+    uint256 constant MAX_INT = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff;
 
-    // Token-related variables
     address public token;
-    string internal _name;
-    string internal _symbol;
-
-    // Management-related
     address public owner;
-
-    // Chef-related variables
-    address public operator;
     address public masterchef;
     address public queuedChef;
-
-    // Time-related variables
+    
     uint256 public minQueue; // 12 hours
     uint256 public queueTime;
 
-    // Fee-related variables
+    string internal _name;
+    string internal _symbol;
+
     uint256 internal perfFee; // basis points
     uint256 internal lastInterest;
+
     uint256 internal perfEarned;
 
-    // Packing boolean variables
-    bool public validContract;
-    bool public validQueueContract;
-
-    // Events
-    event FeeWithdrawn(address indexed owner, uint256 amount);
-    event TokenTransferred(address indexed to, address indexed token, uint256 amount);
     event FeeAccrued(uint256 feeAccrued, uint256 perfEarned);
-    event NameChanged(string indexed name, address indexed changer);
-    event SymbolChanged(string indexed symbol, address indexed changer);
-    event OwnershipTransferred(address indexed newOwner, address indexed previousOwner);
-    event UpdatePerformanceFee(uint256 indexed newFee, address indexed updater);
-    event NewMasterChef(address indexed masterchef);
-    event UpdatedOperator(address indexed _operator);
 
     constructor(address _token, string memory name_, string memory symbol_, address _owner, address _masterchef) ERC20(name_, symbol_) {
         token = _token;
         owner=_owner;
-        operator=_owner;
         _name=name_;
         _symbol=symbol_;
         perfFee=0;
         minQueue=0;
         masterchef=_masterchef;
-        validContract = isContract(_masterchef);
-        ERC20(token).approve(_masterchef, MAX_INT);
+        ERC20(token).approve(masterchef, MAX_INT);
     }
 
-    /**
-     * @dev Sets the name of the token.
-     * @param name_ The new name of the token.
-     * Requirements:
-     * - Only the contract owner can call this function.
-     */
-    function setName(string memory name_) public onlyOwner() {
-        _name=name_;
-        emit NameChanged(_name, msg.sender);
+    function setName(string memory name) public onlyOwner() {
+        _name=name;
     }
 
-    /**
-     * @dev Sets the symbol of the token.
-     * @param symbol_ The new symbol of the token.
-     * Requirements:
-     * - Only the contract owner can call this function.
-     */
-    function setSymbol(string memory symbol_) public onlyOwner() {
-        _symbol=symbol_;
-        emit SymbolChanged(_name, msg.sender);
+    function setSymbol(string memory symbol) public onlyOwner() {
+        _symbol=symbol;
     }
 
-    /**
-     * @dev Returns the name of the token.
-     */
     function name() public view override returns (string memory) {
         return _name;
     }
 
-    /**
-     * @dev Returns the symbol of the token.
-     */
     function symbol() public view override returns (string memory) {
         return _symbol;
     }
 
-    function updateOperator(address _operator) public onlyOwner {
-        operator = _operator;
-        emit UpdatedOperator(_operator);
-    }
-
-    /**
-     * @dev Transfers the ownership of the contract to a new address.
-     * @param _owner The new address that will become the owner of the contract.
-     * Requirements:
-     * - Only the contract owner can call this function.
-     */
     function transferOwnership(address _owner) public onlyOwner() {
         owner = _owner;
-        emit OwnershipTransferred(_owner, msg.sender);
     }
 
-    /**
-     * @dev Updates the performance fee of the contract.
-     * @param _perfFee The new performance fee to be set.
-     * Requirements:
-     * - Only the contract owner can call this function.
-     * - The performance fee must be below the maximum fee allowed.
-     */
     function updatePerformanceFee(uint256 _perfFee) public onlyOwner() {
         require(_perfFee<=MAX_FEE, "updatePerformanceFee: must be below max fee");
         perfFee=_perfFee;
-        emit UpdatePerformanceFee(_perfFee, msg.sender);
     }
 
-    /**
-     * @dev Returns true if the address is a contract, false otherwise.
-     * @param _addr The address to check.
-     * @return A boolean value indicating whether the address is a contract or not.
-     */
-    function isContract(address _addr) internal view returns (bool) {
-        uint256 size;
-        assembly { size := extcodesize(_addr) }
-        return size > 0;
-    }
-
-    /**
-     * @dev 
-     * Requirements:
-     * - Only the contract owner can call this function.
-     * - The current block timestamp must be greater than or equal to the sum of the queue time and the minimum queue time.
-     * - If there is a queued MasterChef contract, stake tokens in the new contract and unstake all tokens from the current contract.
-     * - Update the current MasterChef contract to the queued contract.
-     */
-    function executeMasterChef() public onlyOperators {        
-        if(validContract){
-            ExitChef();
-            DisapproveChef();
-        }
-
-        UpgradeChef();
-
-        if(validContract){
-            ApproveChef();
-            DepositChef();
-        }
-    }
-
-    /**
-     * @dev Function to get the reward for staking in the MasterChef contract.
-     * Calls the `getReward()` function of the `ISteakingContract` interface.
-     */
-    function getReward() public onlyOperators {
-        ISteakingContract currentChef = ISteakingContract(masterchef);
-        currentChef.getReward();
-    }
-
-    /**
-     * @dev Processes the upgrade from queued chef to masterchef
-     * Requirements:
-     * - Only the contract owner can call this function.
-     */
-    function UpgradeChef() public onlyOperators {
-        require(block.timestamp>=(queueTime+minQueue), "UpgradeChef: must wait queue time.");
-        require(queueTime!=0, "UpgradeChef: must have a queued chef.");
-        
-        masterchef = queuedChef;
-
-        delete queuedChef;
-        delete validQueueContract;
-        delete queueTime;
-        validContract = isContract(masterchef);
-
-        emit NewMasterChef(masterchef);
-    }
-
-    /**
-     * @dev Approves the MasterChef contract to spend an unlimited amount of tokens from this contract.
-     * Requirements:
-     * - Only the contract owner can call this function.
-     * - The MasterChef contract address must be set.
-     */
-    function ApproveChef() public onlyOperators onlyValid {
-        ERC20(token).approve(masterchef, MAX_INT);
-    }
-
-    /**
-     * @dev Approves the MasterChef contract to spend an unlimited amount of tokens from this contract.
-     * Requirements:
-     * - Only the contract owner can call this function.
-     * - The MasterChef contract address must be set.
-     */
-    function DisapproveChef() public onlyOperators onlyValid {
-        ERC20(token).approve(masterchef, 0);
-    }
-
-    /**
-     * @dev Deposits all the tokens held in this contract into the current MasterChef contract.
-     * Requirements:
-     * - Only the contract owner can call this function.
-     * - The current MasterChef contract address must be set.
-     * - This contract must have a positive balance of tokens to stake.
-     */
-    function DepositChef() public onlyOperators onlyValid {
-        ISteakingContract currentChef = ISteakingContract(masterchef);
-        uint256 currentBalance = ERC20(token).balanceOf(address(this));
-        currentChef.stake(currentBalance);
-    }
-    
-    /**
-     * @dev Exits the current MasterChef contract and withdraws all staked tokens.
-     * Requirements:
-     * - Only the contract owner can call this function.
-     * - The current MasterChef contract address must be set.
-     */
-    function ExitChef() public onlyOperators onlyValid {
+    function executeMasterChef() public onlyOwner {
+        require(block.timestamp>=(queueTime+minQueue) || queuedChef==address(0), "must wait queue time.");
         ISteakingContract currentChef = ISteakingContract(masterchef);
         currentChef.exit(); // gets everything out.
+        ERC20(token).approve(masterchef, 0);
+
+        if(queuedChef!=address(0)){
+            ISteakingContract newChef = ISteakingContract(queuedChef);
+            uint256 currentBalance = ERC20(token).balanceOf(address(this));
+            ERC20(token).approve(queuedChef, MAX_INT);
+            newChef.stake(currentBalance);
+            masterchef=queuedChef;
+        }
     }
 
-    /**
-     * @dev Queues a new MasterChef contract address for future activation.
-     * @param _newChef The address of the new MasterChef contract to queue.
-     * Requirements:
-     * - Only the contract owner can call this function.
-     * - `_newChef` must be a valid contract address.
-     * Effects:
-     * - Sets the `_newChef` address as the queued MasterChef contract.
-     * - Records the current block timestamp as the queue time.
-     */
-    function queueNewChef(address _newChef) public onlyOperators {
-        validQueueContract = isContract(queuedChef);
+    function queueNewChef(address _newChef) public onlyOwner {
         queuedChef = _newChef;
         queueTime = block.timestamp;
     }
 
-    /**
-     * @dev Modifier that allows only the contract owner to call a function.
-     */
     modifier onlyOwner() {
         require(msg.sender==owner, "onlyOwner: not owned.");
         _;
     }
 
-    /**
-     * @dev Modifier that allows only the contract owner or the operator to call a function.
-     */
-    modifier onlyOperators() {
-        require(msg.sender==owner || msg.sender==operator, "onlyOperators: not operator.");
-        _;
-    }
-    /**
-     * @dev Modifier that allows execution only if there's a contract involved.
-     */
-    modifier onlyValid() {
-        require(validContract, "onlyValid: not valid contract address.");
-        _;
-    }
-
-    /**
-     * @dev Calculates and accrues the performance fee based on the elapsed time since the last calculation.
-     * Effects:
-     * - Calculates the performance fee based on the total supply of tokens and the time elapsed since the last calculation.
-     * - Mints and distributes the performance fee to the contract owner.
-     * - Updates the `perfEarned` variable to track the total performance fee earned by the contract.
-     * - Emits a `FeeAccrued` event with information about the fee accrued and the total performance fee earned.
-     * Notes:
-     * - This function should be called periodically to ensure that performance fees are accurately calculated and distributed.
-     */
     function accruePerformanceFee() public {
         if (lastInterest != 0 && perfFee > 0) {
             uint256 currentTime = block.timestamp;
@@ -1337,106 +1165,85 @@ contract PerformanceTokenStaker is ERC20, ReentrancyGuard {
         lastInterest = block.timestamp;
     }
 
-     /**
-     * @dev Returns the total balance of tokens held by the contract.
-     * @return The sum of tokens held by the contract, including any tokens staked in the current MasterChef contract (if set).
-     * Notes:
-     * - This function does not include any tokens that may be held in other contracts or accounts.
-     * - To accurately calculate the contract's net asset value (NAV), other factors such as liabilities and fees must be taken into account.
-     */
     function totalBalance() public view returns (uint256) {
-        if(validContract){
+        if(masterchef!=address(0)){
             return (ERC20(token).balanceOf(address(this)) + ISteakingContract(masterchef).balanceOf(address(this)));
         }else{
             return ERC20(token).balanceOf(address(this));
         }
     }
 
-    /**
-     * @dev This function is used to enter the performance token.
-     * @param _amount The amount of tokens to stake
-     */
+    // Enter the bar. Pay some tokens. Earn some shares.
+    // Locks Token and mints xToken
     function enter(uint256 _amount) public nonReentrant {
         accruePerformanceFee();
 
-        uint256 totalBalanceVar = totalBalance();
+        uint256 totalBalance = totalBalance();
 
         uint256 totalShares = totalSupply();
 
-        if (totalShares == 0 || totalBalanceVar == 0) {
+        if (totalShares == 0 || totalBalance == 0) {
             _mint(msg.sender, _amount);
         } 
         else {
-            uint256 what = ( _amount * totalShares ) / (totalBalanceVar);
+            uint256 what = ( _amount * totalShares ) / (totalBalance);
             _mint(msg.sender, what);
         }
 
         ERC20(token).transferFrom(msg.sender, address(this), _amount);
 
-        if(validContract){
+        if(masterchef!=address(0)){
             ISteakingContract(masterchef).stake(_amount);
         }
     }
 
-    /**
-     * @dev Calculates the amount of underlying token for a given number of shares.
-     * @param _share The number of shares to calculate the underlying token amount for.
-     * @return The amount of underlying token for the given number of shares.
-     */
+    function interactWithChef(string memory func, bytes memory data) public onlyOwner {
+        (bool success, bytes memory data) = masterchef.delegatecall(
+            abi.encodeWithSignature(func, data)
+        );
+    }
+
+    function interactWithChef(string memory func) public onlyOwner {
+        (bool success, bytes memory data) = masterchef.delegatecall(
+            abi.encodeWithSignature(func)
+        );
+    }
+
     function calculateUnderlying(uint256 _share) public view returns(uint256) {
         uint256 totalShares = totalSupply();
         uint256 what = ( _share * (totalBalance())) / (totalShares);
         return what;
     }
 
-    /**
-     * @dev Redeems a specified number of shares for the underlying token and transfers them to the caller.
-     * @param _share The number of shares to redeem.
-     */
     function leave(uint256 _share) public nonReentrant {
         require(msg.sender != owner, "msg.sender == owner"); //Owner should use withdrawFee instead
         accruePerformanceFee();
         uint256 what = calculateUnderlying(_share);
         _burn(msg.sender, _share);
 
-        if(validContract){
+        if(masterchef!=address(0)){
             ISteakingContract(masterchef).withdraw(what);
         }
         ERC20(token).transfer(msg.sender, what);
     }
 
-    /**
-     * @dev Withdraws the performance fee from the contract and transfers it to the owner.
-     */
     function withdrawFee() public onlyOwner() {
         uint256 ownerHeld = balanceOf(owner);
         uint256 what = calculateUnderlying(ownerHeld);
         _burn(msg.sender, ownerHeld);
 
-        if(validContract){
+        if(masterchef!=address(0)){
             ISteakingContract(masterchef).withdraw(what);
         }
         ERC20(token).transfer(msg.sender, what);
         perfEarned=0;
-        emit FeeWithdrawn(msg.sender, what);
     }
 
-    /**
-     * @dev Transfers an ERC20 token from the contract to a specified address. Only the owner can call this function.
-     * @param to The address to which the token will be transferred.
-     * @param token_ The address of the ERC20 token being transferred.
-     * @param amountToken The amount of tokens to be transferred.
-     */
     function transferToken(address to, address token_, uint256 amountToken) external onlyOwner() {
         require(token_!=token, "transferToken: cannot transfer principal token.");
         ERC20(token_).transfer(to, amountToken);
-        emit TokenTransferred(to, token_, amountToken);
     }
 
-    /**
-     * @dev Returns the current performance fee percentage.
-     * @return perfFee The current performance fee percentage.
-     */
     function getPerformanceFee() public view returns(uint256) {
         return perfFee;
     }

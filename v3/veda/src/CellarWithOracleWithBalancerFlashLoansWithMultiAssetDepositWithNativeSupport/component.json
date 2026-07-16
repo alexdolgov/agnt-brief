@@ -1,0 +1,28 @@
+{
+  "component": "CellarWithOracleWithBalancerFlashLoansWithMultiAssetDepositWithNativeSupport",
+  "main_contract": "CellarWithOracleWithBalancerFlashLoansWithMultiAssetDepositWithNativeSupport",
+  "source_entry_count": 49,
+  "source_file_count": 49,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CellarWithOracleWithBalancerFlashLoansWithMultiAssetDepositWithNativeSupport\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xea1a6307d9b18f8d1cbf1c3dd6aad8416c06a221",
+      "is_proxy": true,
+      "implementation_address": "0x37bf4f94d045e5fcda3ed4a223f7ecdedbf73303",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

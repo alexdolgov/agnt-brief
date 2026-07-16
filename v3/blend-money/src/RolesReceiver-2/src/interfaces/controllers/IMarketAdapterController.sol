@@ -22,7 +22,7 @@ interface IMarketAdapterController {
         IERC20 loanToken,
         IERC20 collateralToken,
         address recipient,
-        bytes calldata strategyData,
+        bytes memory strategyData,
         bytes calldata extraData
     ) external;
 
@@ -39,7 +39,7 @@ interface IMarketAdapterController {
         IERC20 loanToken,
         IERC20 collateralToken,
         address recipient,
-        bytes calldata strategyData,
+        bytes memory strategyData,
         bytes calldata extraData
     ) external;
 }

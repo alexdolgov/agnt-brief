@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/MarginPool\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x04fe57fc72f75bfdca4a3f910256797e97fb126d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "base",
       "chain_id": 8453,

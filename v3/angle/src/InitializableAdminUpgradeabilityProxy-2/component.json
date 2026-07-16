@@ -1,0 +1,28 @@
+{
+  "component": "InitializableAdminUpgradeabilityProxy-2",
+  "main_contract": "InitializableAdminUpgradeabilityProxy",
+  "source_entry_count": 21,
+  "source_file_count": 21,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/InitializableAdminUpgradeabilityProxy-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
+      "is_proxy": true,
+      "implementation_address": "0x5d4aa78b08bc7c530e21bf7447988b1be7991322",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

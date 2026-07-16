@@ -1,0 +1,28 @@
+{
+  "component": "OrigamiEtherFiEthToEthOracle",
+  "main_contract": "OrigamiEtherFiEthToEthOracle",
+  "source_entry_count": 14,
+  "source_file_count": 14,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OrigamiEtherFiEthToEthOracle\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe0db69920e90ca56e29f71b7f566655de923c32b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403616"
+    }
+  ]
+}

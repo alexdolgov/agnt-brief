@@ -1,0 +1,38 @@
+{
+  "component": "TokenSeller",
+  "main_contract": "TokenSeller",
+  "source_entry_count": 5,
+  "source_file_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TokenSeller\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa41160ec4d1e4664b293fce243b1e90ee2b63924",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd16cc5d44f5335f9820ff6bba35523aedf0a54f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

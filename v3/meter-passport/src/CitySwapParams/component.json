@@ -1,0 +1,49 @@
+{
+  "component": "CitySwapParams",
+  "main_contract": "CitySwapParams",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/nft_swap/swap_params/CitySwapParams.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-0aff0db5119f-CitySwapParams.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/openzeppelin/contracts/access/Ownable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-83cc0f59e7c1-Ownable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/openzeppelin/contracts/GSN/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-7da4a18ee8f6-Context.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/nft_swap/SwapSigner.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-744b2b72f4f0-SwapSigner.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CitySwapParams\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0xb4d9d2ace6ecbc3264ef5fa8329ebfb467e53ea0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

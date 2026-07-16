@@ -35,11 +35,5 @@ library Math {
     function sub(uint x, uint y) internal pure returns (uint z) {
         require((z = x - y) <= x, 'Math: Sub-underflow');
     }
-    function abs(int256 n) internal pure returns (uint256) {
-        unchecked {
-            // must be unchecked in order to support `n = type(int256).min`
-            return uint256(n >= 0 ? n : -n);
-        }
-    }
 }
 

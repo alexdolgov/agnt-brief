@@ -1,0 +1,58 @@
+{
+  "component": "MerkleDistributorV1",
+  "main_contract": "MerkleDistributorV1",
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MerkleDistributorV1\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x01d3348601968ab85b4bb028979006eac235a588",
+      "is_proxy": true,
+      "implementation_address": "0xfe1d5439625a9524a80f66670733129e80e0c112",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5aa653a076c1dbb47cec8c1b4d152444cad91941",
+      "is_proxy": true,
+      "implementation_address": "0xbe607a58206180fef691bf1b5ae9670174284388",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x639192d54431f8c816368d3fb4107bc168d0e871",
+      "is_proxy": true,
+      "implementation_address": "0x8d0051943d4c72af12d638c6b7253c71929a910a",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x65f7ba4ec257af7c55fd5854e5f6356bbd0fb8ec",
+      "is_proxy": true,
+      "implementation_address": "0x31d76f5db8f40d28886bf00f3be5f157472bf77a",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

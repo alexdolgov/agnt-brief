@@ -1,0 +1,28 @@
+{
+  "component": "PancakeSwapMerklPulseStrategyV2",
+  "main_contract": "PancakeSwapMerklPulseStrategyV2",
+  "source_entry_count": 55,
+  "source_file_count": 55,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PancakeSwapMerklPulseStrategyV2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x215795f035096320ad1b5e85c80365138bffe2d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

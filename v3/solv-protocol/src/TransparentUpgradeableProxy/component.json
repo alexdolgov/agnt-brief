@@ -10,12 +10,32 @@
     "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://github.com/solv-finance/Audit/blob/main/Openzeppelin/Solv%20Mainnet%20Minter%20Audit-Openzeppelin.pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb8c587fd9529ebf50265023ec88cf70aa2b00878",
+      "is_proxy": true,
+      "implementation_address": "0xec508dcdb84d924cccff04591bcc91b665e1bb83",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x069c3bdf1b0083bb78652b6e1e1a68c481ae2ff5",
+      "is_proxy": true,
+      "implementation_address": "0xe13051e0554428f64c3eb596e7ac9b641bc6e3cb",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "bsc",
       "chain_id": 56,

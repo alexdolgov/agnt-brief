@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 contract MultisigWallet is AccessControlEnumerable, ReentrancyGuard {
   bytes32 public constant APPROVED_ROLE = keccak256("APPROVED_ROLE");
   bytes32 public constant SIGNER_ROLE = keccak256("SIGNER_ROLE");
-  
+
   // Maximum number of signers to prevent potential issues with confirmation counting
   uint8 public constant MAX_SIGNERS = 50;
 
@@ -111,12 +111,15 @@ contract MultisigWallet is AccessControlEnumerable, ReentrancyGuard {
   ) public override(AccessControl, IAccessControl) onlySelf {
     _require(target != address(0), Errors.ZERO_ADDRESS);
     _require(target != address(this), Errors.INVALID_TARGET); // Prevent self-granting
-    
+
     if (role == SIGNER_ROLE) {
       _require(!hasRole(SIGNER_ROLE, target), Errors.NOT_AUTHORIZED);
-      _require(getRoleMemberCount(SIGNER_ROLE) < MAX_SIGNERS, Errors.INVALID_NUM_CONFIRMATIONS);
+      _require(
+        getRoleMemberCount(SIGNER_ROLE) < MAX_SIGNERS,
+        Errors.INVALID_NUM_CONFIRMATIONS
+      );
     }
-    
+
     _grantRole(role, target);
   }
 
@@ -126,7 +129,7 @@ contract MultisigWallet is AccessControlEnumerable, ReentrancyGuard {
   ) public override(AccessControl, IAccessControl) onlySelf {
     _require(target != address(0), Errors.ZERO_ADDRESS);
     _require(target != address(this), Errors.INVALID_TARGET); // Prevent self-revoking
-    
+
     if (role == SIGNER_ROLE) {
       _require(
         getRoleMemberCount(SIGNER_ROLE) > numConfirmationsRequired,
@@ -134,7 +137,7 @@ contract MultisigWallet is AccessControlEnumerable, ReentrancyGuard {
       );
       _require(hasRole(SIGNER_ROLE, target), Errors.NOT_AUTHORIZED); // Ensure target has the role
     }
-    
+
     _revokeRole(role, target);
   }
 

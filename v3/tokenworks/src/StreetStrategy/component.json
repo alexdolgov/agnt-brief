@@ -1,0 +1,28 @@
+{
+  "component": "StreetStrategy",
+  "main_contract": "StreetStrategy",
+  "source_entry_count": 38,
+  "source_file_count": 38,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StreetStrategy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xae0afddc6559a8d612b0cbd6776039e4bcd49f41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

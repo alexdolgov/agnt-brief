@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/BurnMintTokenPool\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -33,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "400504"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xe9a64f2908e4605814e0c52faa46854556d612b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

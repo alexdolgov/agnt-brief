@@ -10,29 +10,23 @@ import { IMessagingChannel } from "@layerzerolabs/lz-evm-protocol-v2/contracts/i
 import { OApp, Origin } from "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/OApp.sol";
 import { OAppOptionsType3 } from "@layerzerolabs/lz-evm-oapp-v2/contracts/oapp/libs/OAppOptionsType3.sol";
 
-import { OFTComposeMsgCodec } from "@layerzerolabs/lz-evm-oapp-v2/contracts/oft/libs/OFTComposeMsgCodec.sol";
-import { OFTMsgCodec } from "@layerzerolabs/lz-evm-oapp-v2/contracts/oft/libs/OFTMsgCodec.sol";
 import { OFTLimit, OFTReceipt, OFTFeeDetail } from "@layerzerolabs/lz-evm-oapp-v2/contracts/oft/interfaces/IOFT.sol";
 
 import { IUsdtOFT, IOFT, SendParam, MessagingReceipt, MessagingFee } from "./IUsdtOFT.sol";
 
 contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
     using SafeERC20 for IERC20;
-    using OFTMsgCodec for bytes;
 
     // MsgTypes
     uint16 public constant WITHDRAW_REMOTE = 1;
     uint16 public constant SEND_OFT = 2;
     uint16 public constant SEND_CREDITS = 3;
-    uint16 public constant SEND_OFT_AND_CALL = 4;
 
     // Endpoint IDs
-    /// @dev This order (alphabetical ascending) should be maintained throughout the contract
     uint32 public immutable ARBITRUM_EID; // 30110
     uint32 public immutable CELO_EID; // 30125
     uint32 public immutable ETH_EID; // 30101
-    uint32 public immutable SOLANA_EID; // 30168
-    uint32 public immutable TON_EID; // 30343
+    uint32 public immutable TON_EID; // 30152
     uint32 public immutable TRON_EID; // 30420
     uint32 public immutable LOCAL_EID;
 
@@ -44,18 +38,16 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
     // Management addresses
     address public lpAdmin;
     address public planner;
-    address public burnAndNilifyAdmin;
 
     // Fees
     uint256 public feeBalance = 0;
     uint16 public feeBps = 0;
-    uint16 public constant BPS_DENOMINATOR = 10_000;
+    uint16 public constant BPS_DENOMINATOR = 10000;
 
     constructor(
         uint32 _arbitrumEid,
         uint32 _celoEid,
         uint32 _ethEid,
-        uint32 _solanaEid,
         uint32 _tonEid,
         uint32 _tronEid,
         address _token,
@@ -66,13 +58,11 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
         ARBITRUM_EID = _arbitrumEid;
         CELO_EID = _celoEid;
         ETH_EID = _ethEid;
-        SOLANA_EID = _solanaEid;
         TON_EID = _tonEid;
         TRON_EID = _tronEid;
         LOCAL_EID = IMessagingChannel(_lzEndpoint).eid();
 
         // @dev Only allow the contract to be deployed with the correct endpoint IDs
-        /// @dev we can't deploy an evm contract to solana or ton so they aren't in this list
         if (LOCAL_EID != ARBITRUM_EID && LOCAL_EID != CELO_EID && LOCAL_EID != ETH_EID && LOCAL_EID != TRON_EID) {
             revert InvalidEid();
         }
@@ -84,9 +74,6 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
         // @dev Defaults to the lpAdmin AND planner being the delegate
         lpAdmin = _delegate;
         planner = _delegate;
-
-        // @dev Set the burnAndNilifyAdmin to the delegate
-        burnAndNilifyAdmin = _delegate;
     }
 
     modifier onlyLpAdminOrOwner() {
@@ -96,11 +83,6 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
 
     modifier onlyPlanner() {
         if (msg.sender != planner) revert OnlyPlanner();
-        _;
-    }
-
-    modifier onlyBurnAndNilifyAdmin() {
-        if (msg.sender != burnAndNilifyAdmin) revert OnlyBurnAndNilifyAdmin();
         _;
     }
 
@@ -145,7 +127,7 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
         emit FeeBpsSet(_feeBps);
     }
 
-    function withdrawFees(address _to, uint256 _amount) external onlyLpAdminOrOwner {
+    function withdrawFees(address _to, uint256 _amount) external onlyOwner {
         if (_amount > feeBalance) revert InsufficientFeeBalance();
         feeBalance -= _amount;
 
@@ -157,31 +139,6 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
         }
 
         emit FeesWithdrawn(_to, _amount);
-    }
-
-    /// ========================== BURN AND NILIFY FUNCTIONS =====================================
-
-    function setBurnAndNilifyAdmin(address _burnAndNilifyAdmin) external onlyOwner {
-        burnAndNilifyAdmin = _burnAndNilifyAdmin;
-        emit BurnAndNilifyAdminSet(_burnAndNilifyAdmin);
-    }
-
-    function nilify(
-        uint32 _srcEid,
-        bytes32 _sender,
-        uint64 _nonce,
-        bytes32 _payloadHash
-    ) external onlyBurnAndNilifyAdmin {
-        IMessagingChannel(address(endpoint)).nilify(address(this), _srcEid, _sender, _nonce, _payloadHash);
-    }
-
-    function burn(
-        uint32 _srcEid,
-        bytes32 _sender,
-        uint64 _nonce,
-        bytes32 _payloadHash
-    ) external onlyBurnAndNilifyAdmin {
-        IMessagingChannel(address(endpoint)).burn(address(this), _srcEid, _sender, _nonce, _payloadHash);
     }
 
     /// ========================== INTERNAL HELPER FUNCTIONS =====================================
@@ -209,25 +166,16 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
         SendParam calldata _sendParam,
         uint256 _amount
     ) internal view returns (bytes memory message, bytes memory options) {
-        bool hasCompose;
-        (message, hasCompose) = OFTMsgCodec.encode(
-            _sendParam.to,
-            uint64(_amount), /// @dev Can safely cast as uint64, Unless over 18 trillion usdt is minted
-            _sendParam.composeMsg
-        );
-
-        if (hasCompose) {
-            /// @dev this OFT does NOT support composing to TON
-            if (_sendParam.dstEid == TON_EID) revert TONComposeNotSupported();
-            /// @dev Update the msgType to reflect the compose msg
-            _msgType = SEND_OFT_AND_CALL;
-        }
-
-        /// @dev Can't move 0 tokens
+        // @dev Can't move 0 tokens
         if (_amount == 0) revert InvalidAmount();
 
-        /// @dev Add the msgType as the first 2 bytes of the message
-        message = abi.encodePacked(_msgType, message);
+        // @dev this OFT does NOT support composing
+        if (_sendParam.composeMsg.length > 0) revert ComposeNotSupported();
+
+        // @dev Can safely cast this as uint64,
+        // because this is strictly used for USDT implementation where 6 decimals is used.
+        // Unless over 18 trillion usdt is minted, this wont be a problem.
+        message = abi.encodePacked(_msgType, _sendParam.to, uint64(_amount));
         options = combineOptions(_sendParam.dstEid, _msgType, _sendParam.extraOptions);
     }
 
@@ -283,10 +231,10 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
             _sendParam.minAmountLD
         );
 
-        // @dev This is simply a send msg call, WITHOUT the debit logic being applied
-        msgReceipt = _lzSend(_sendParam.dstEid, message, options, _fee, _refundAddress);
+        emit RemoteWithdrawn(_sendParam.dstEid, _sendParam.minAmountLD);
 
-        emit RemoteWithdrawn(msgReceipt.guid, _sendParam.dstEid, _sendParam.minAmountLD);
+        // @dev This is simply a send msg call, WITHOUT the debit logic being applied
+        return _lzSend(_sendParam.dstEid, message, options, _fee, _refundAddress);
     }
 
     /// ========================== CREDIT FUNCTIONS =====================================
@@ -295,7 +243,6 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
         uint64 _creditsArbitrum,
         uint64 _creditsCelo,
         uint64 _creditsEth,
-        uint64 _creditsSolana,
         uint64 _creditsTon,
         uint64 _creditsTron,
         bytes calldata _extraOptions,
@@ -305,7 +252,6 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
         _assertCredits(ARBITRUM_EID, _creditsArbitrum);
         _assertCredits(CELO_EID, _creditsCelo);
         _assertCredits(ETH_EID, _creditsEth);
-        _assertCredits(SOLANA_EID, _creditsSolana);
         _assertCredits(TON_EID, _creditsTon);
         _assertCredits(TRON_EID, _creditsTron);
 
@@ -314,7 +260,6 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
             _creditsArbitrum,
             _creditsCelo,
             _creditsEth,
-            _creditsSolana,
             _creditsTon,
             _creditsTron
         );
@@ -329,7 +274,6 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
         uint64 _creditsArbitrum,
         uint64 _creditsCelo,
         uint64 _creditsEth,
-        uint64 _creditsSolana,
         uint64 _creditsTon,
         uint64 _creditsTron,
         bytes calldata _extraOptions,
@@ -339,7 +283,6 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
         _decreaseCredits(ARBITRUM_EID, _creditsArbitrum);
         _decreaseCredits(CELO_EID, _creditsCelo);
         _decreaseCredits(ETH_EID, _creditsEth);
-        _decreaseCredits(SOLANA_EID, _creditsSolana);
         _decreaseCredits(TON_EID, _creditsTon);
         _decreaseCredits(TRON_EID, _creditsTron);
 
@@ -348,21 +291,12 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
             _creditsArbitrum,
             _creditsCelo,
             _creditsEth,
-            _creditsSolana,
             _creditsTon,
             _creditsTron
         );
         bytes memory options = combineOptions(_dstEid, SEND_CREDITS, _extraOptions);
 
-        emit CreditsSent(
-            _dstEid,
-            _creditsArbitrum,
-            _creditsCelo,
-            _creditsEth,
-            _creditsSolana,
-            _creditsTon,
-            _creditsTron
-        );
+        emit CreditsSent(_dstEid, _creditsArbitrum, _creditsCelo, _creditsEth, _creditsTon, _creditsTron);
 
         return _lzSend(_dstEid, message, options, _fee, msg.sender);
     }
@@ -373,14 +307,12 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
         uint64 _creditsArbitrum = uint64(bytes8(_message[2:10]));
         uint64 _creditsCelo = uint64(bytes8(_message[10:18]));
         uint64 _creditsEth = uint64(bytes8(_message[18:26]));
-        uint64 _creditsSolana = uint64(bytes8(_message[26:34]));
-        uint64 _creditsTon = uint64(bytes8(_message[34:42]));
-        uint64 _creditsTron = uint64(bytes8(_message[42:50]));
+        uint64 _creditsTon = uint64(bytes8(_message[26:34]));
+        uint64 _creditsTron = uint64(bytes8(_message[34:42]));
 
         _increaseCredits(ARBITRUM_EID, _creditsArbitrum);
         _increaseCredits(CELO_EID, _creditsCelo);
         _increaseCredits(ETH_EID, _creditsEth);
-        _increaseCredits(SOLANA_EID, _creditsSolana);
         _increaseCredits(TON_EID, _creditsTon);
         _increaseCredits(TRON_EID, _creditsTron);
     }
@@ -409,8 +341,7 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
         returns (OFTLimit memory oftLimit, OFTFeeDetail[] memory oftFeeDetails, OFTReceipt memory oftReceipt)
     {
         uint256 minAmount = 0;
-        uint256 maxAmount = credits[_sendParam.dstEid];
-
+        uint256 maxAmount = type(uint64).max;
         oftLimit = OFTLimit(minAmount, maxAmount);
 
         // @dev Unused in this implementation
@@ -507,27 +438,6 @@ contract UsdtOFT is IUsdtOFT, OApp, OAppOptionsType3 {
         } else if (msgType == WITHDRAW_REMOTE) {
             (address to, uint256 amountReceived) = _receiveOFT(_message);
             emit RemoteWithdrawReceived(_guid, _origin.srcEid, to, amountReceived);
-        } else if (msgType == SEND_OFT_AND_CALL) {
-            (address to, uint256 amountReceived) = _receiveOFT(_message);
-            emit OFTReceived(_guid, _origin.srcEid, to, amountReceived);
-
-            // @dev Remove the msgType from the msg
-            bytes calldata messageWithoutMsgType = bytes(_message[2:]);
-
-            // @dev Proprietary composeMsg format for the OFT.
-            bytes memory composeMsg = OFTComposeMsgCodec.encode(
-                _origin.nonce,
-                _origin.srcEid,
-                amountReceived,
-                messageWithoutMsgType.composeMsg()
-            );
-
-            // @dev Stores the lzCompose payload that will be executed in a separate tx.
-            // Standardizes functionality for executing arbitrary contract invocation on some non-evm chains.
-            // @dev The off-chain executor will listen and process the msg based on the src-chain-callers compose options passed.
-            // @dev The index is used when a OApp needs to compose multiple msgs on lzReceive.
-            // For default OFT implementation there is only 1 compose msg per lzReceive, thus its always 0.
-            endpoint.sendCompose(to, _guid, 0 /* the index of the composed message*/, composeMsg);
         } else {
             revert InvalidMsgType(msgType);
         }

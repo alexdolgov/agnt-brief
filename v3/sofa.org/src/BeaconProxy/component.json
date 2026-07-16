@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/BeaconProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 10,
+  "deployment_count": 21,
   "audited": true,
   "audits_covering": [
     "https://github.com/zenith-security/reports/blob/main/reports/Audit%20Report%20-%20Sofa%20Automator%28Oct%202024%29.pdf",
@@ -99,6 +99,66 @@
       "logic_topography_row_id": "399162"
     },
     {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x842e97baa96cfe1534f1a50da112c7800134656a",
+      "is_proxy": true,
+      "implementation_address": "0x57b96d4af698605563a4653d882635da59bf11af",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x89c82d1b7616b0a465311ff077db6bc21d43ea22",
+      "is_proxy": true,
+      "implementation_address": "0x57b96d4af698605563a4653d882635da59bf11af",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x46706780749bc41e7ab99d13bc1b2a74df40a7da",
+      "is_proxy": true,
+      "implementation_address": "0xec722a53efee08ebff8d2c61622991a33705fa79",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x4fd90c6b2a81d65a10e366dc5051d4d1a2a1c021",
+      "is_proxy": true,
+      "implementation_address": "0xec722a53efee08ebff8d2c61622991a33705fa79",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x842e97baa96cfe1534f1a50da112c7800134656a",
+      "is_proxy": true,
+      "implementation_address": "0x4fd90c6b2a81d65a10e366dc5051d4d1a2a1c021",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x00aeca021d0f06c7dee54d58ee6af47b5645ab19",
+      "is_proxy": true,
+      "implementation_address": "0x4f1b513f846821559d59e8324eaef201cb5b0479",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
       "chain": "arbitrum",
       "chain_id": 42161,
       "address": "0x4c241483b4a85e44c59bcecfe17a4e7d0a073cdb",
@@ -107,6 +167,56 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "399179"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6e72c8726c71a4cbc6e31ff7d47b399fa983c7b8",
+      "is_proxy": true,
+      "implementation_address": "0x4f1b513f846821559d59e8324eaef201cb5b0479",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7ecd1b5255543f4c2d7d8e475afcd01699dbe2b0",
+      "is_proxy": true,
+      "implementation_address": "0x4140ab4afc36b93270a9659bd8387660cc6509b5",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8e882a56604f2b5735ea979bd6fa06c064d2f3f9",
+      "is_proxy": true,
+      "implementation_address": "0x0243cb49228c95dcb6cb13770417ab9528c51583",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa76ee91c6e51d248782d7c81826df91522a6ef96",
+      "is_proxy": true,
+      "implementation_address": "0x0243cb49228c95dcb6cb13770417ab9528c51583",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xbefb3aad1dfb1660444f0d76a91261ef755b2b86",
+      "is_proxy": true,
+      "implementation_address": "0x3fe4fd33935bf189e39abb8b58fcdfd80daeede3",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",

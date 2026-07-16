@@ -1,0 +1,28 @@
+{
+  "component": "L1ChugSplashProxy",
+  "main_contract": "L1ChugSplashProxy",
+  "source_entry_count": 23,
+  "source_file_count": 23,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/L1ChugSplashProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x81014f44b0a345033bb2b3b21c7a1a308b35feea",
+      "is_proxy": true,
+      "implementation_address": "0x61525eaacddb97d9184afc205827e6a4fd0bf62a",
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400511"
+    }
+  ]
+}

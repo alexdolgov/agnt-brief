@@ -1,0 +1,28 @@
+{
+  "component": "HeraAggregator",
+  "main_contract": "HeraAggregator",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HeraAggregator\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xce3759244610fc69f95db143338c9ed0dc356fd0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

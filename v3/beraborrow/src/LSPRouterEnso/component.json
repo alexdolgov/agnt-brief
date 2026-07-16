@@ -1,0 +1,28 @@
+{
+  "component": "LSPRouterEnso",
+  "main_contract": "LSPRouterEnso",
+  "source_entry_count": 37,
+  "source_file_count": 37,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LSPRouterEnso\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x7c4465a43c358dc60f9d9739f9a322a48bd0430c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

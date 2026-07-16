@@ -1,8 +1,68 @@
 # meter-passport — deployments
 
-2 verified deployment(s) across 2 component(s).
+62 verified deployment(s) across 62 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| bsc | `0x0c0144d04594ab99f4c02691b6684e3d871b589e` | BatchTxExecutor | impl | live | no |
+| bsc | `0x0c318c047e8038e9a5e7ac613e73c39220b0311c` | ChainBridgeXCAmpleGateway | impl | live | no |
+| bsc | `0x82b6ed562f202e76a5bdbb209e077f4a96bd5605` | LpMining | impl | live | no |
+| bsc | `0xa304d289f6d0a30aeb33e9243f47efa3a9ad437d` | NftFactory | impl | live | no |
+| bsc | `0xcdc5deefa9f540bac261829b6c64163e2cff92ca` | bsc_bridge | impl | live | no |
+| chain-1284 | `0x2e8fc3d4399c9c775746469412b344716471e940` | BridgeUpgradeable | impl | live | no |
+| chain-1284 | `0x4edf8e0778967012d46968ceadb75436d0426f88` | Bepro | impl | live | no |
+| chain-1284 | `0x65bf1e4a5af9939549afc7c8e9d2438f5ed1d27e` | SetText | impl | live | no |
+| chain-1284 | `0x70755c95cad4d6917c51e49d4fbc932efd60803f` | setNumberContract | impl | live | no |
+| chain-1284 | `0x8b4eba83ff7b2985924d05b9d0a064b9c6e3ff8f` | NftSwap | impl | live | no |
+| chain-1284 | `0xb4d9d2ace6ecbc3264ef5fa8329ebfb467e53ea0` | CitySwapParams | impl | live | no |
+| chain-1284 | `0xbfb0b85fdbf132bb23db11f9c9aa72a153edcc69` | SwapSigner | impl | live | no |
+| chain-1285 | `0x090916ac145b613c1481aab198168c3a37bc5213` | ERC20MinterBurnerPauser | impl | live | no |
+| ethereum | `0x003ea7f54b6dcf6cee86986edc18143a35f15505` | MiniMeTokenFactory | impl | live | no |
+| ethereum | `0x0142ed98ecc63daec2a6cb90b73d6d405d6d9b83` | TokenGeyser | impl | live | no |
+| ethereum | `0x027dbca046ca156de9622cd1e2d907d375e53aa7` | UFragments | impl | live | no |
+| ethereum | `0x0882477e7895bdc5cea7cb1552ed914ab157fe56` | FiatTokenV1 | impl | live | no |
+| ethereum | `0x0def8d8adde14c9ef7c2a986df3ea4bd65826767` | CLIQ | impl | live | no |
+| ethereum | `0x0e98db51010dd1ade14dd3fb164e218805fdba1b` | TetherToken | impl | live | no |
+| ethereum | `0x126b53a1b0f6d036f4ef93a4e5af984bb4b95861` | DistibutionContract4 | impl | live | no |
+| ethereum | `0x14e73381e5e29b00f91a1a6709d6f4509158f477` | UFragmentsPolicy | impl | live | no |
+| ethereum | `0x2260fac5e5542a773aa44fbcfedf7c193bc2c599` | WBTC | impl | live | no |
+| ethereum | `0x24232ccaf8bb87908c419ad7ddcca8cc9e74746d` | Orchestrator | impl | live | no |
+| ethereum | `0x27b4fdaed477f018fd2e2024c7dc5291f0b83543` | AMPLMaticTransferGateway | impl | live | no |
+| ethereum | `0x287666565af226634a4d425943b84c88152c97bb` | ImplementationDirectory | impl | live | no |
+| ethereum | `0x2992a06af9b5e156cd6574049d37ad8da52b9e28` | RightsManager | impl | live | no |
 | ethereum | `0x29e9fdf5933824ad21bc6dbb8bf156efa3735e32` | MeterGovProxy | proxy | live | no |
+| ethereum | `0x30b7026e9e5b35c844f6b115ab4558c3f7e7e3b1` | GenericHandler | impl | live | no |
+| ethereum | `0x36aaf46cab4b6e5390fb44311b5664a71a398400` | BatchTxCaller | impl | live | no |
+| ethereum | `0x3de3826f4d28cf8bbc854c34a16753e9150422a8` | ERC20HandlerUpgradeable | impl | live | no |
+| ethereum | `0x3e8640574aa764763291ed733672d3a105107ac5` | Members | impl | live | no |
+| ethereum | `0x454de9c544fcae74eb09c57a042349d3ead07e29` | ChainBridgeBatchRebaseReport | impl | live | no |
+| ethereum | `0x49f2beff98ce62999792ec98d0ee4ad790e7786f` | AmplElasticCRP | impl | live | no |
+| ethereum | `0x4ab5ff14f658f1aa122f56ca86cf5f5682dcd9ba` | App | impl | live | no |
+| ethereum | `0x531a9f9f384be2a3acd9581d574bd47e65ac8273` | DistibutionContract2 | impl | live | no |
+| ethereum | `0x566c11b5c2201b69c9269fe924e4395873674335` | MasterMinter | impl | live | no |
+| ethereum | `0x6315aa908c50376d1028412c028aa0629f0355a6` | FiatTokenUtil | impl | live | no |
+| ethereum | `0x6625aa109bc11d18aa6f219d453e9dba728a7681` | AMPLMaticRebaseGateway | impl | live | no |
+| ethereum | `0x6b175474e89094c44da98b954eedeac495271d0f` | Dai | impl | live | no |
+| ethereum | `0x722bcc1c85037c7c233eff80f3c057b980cf972e` | Package | impl | live | no |
+| ethereum | `0x763e3ee4ee9cac68200e0d358ab10f5136206008` | DistibutionContract1 | impl | live | no |
+| ethereum | `0x8cbde23b1416cac07a52591bba744c744d77a91a` | FiatToken | impl | live | no |
+| ethereum | `0x8d5a41e85f4ce2433beef476305d307b9205d98d` | NectarController | impl | live | no |
+| ethereum | `0x991f0e5c5775ca9dd02e30e67f545c36cff3690e` | WrapperLockEth | impl | live | no |
+| ethereum | `0x99c9775e076fdf99388c029550155032ba2d8914` | MedianOracle | impl | live | no |
+| ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | FiatTokenProxy | proxy | live | no |
+| ethereum | `0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf` | FiatTokenV2_1 | impl | live | no |
+| ethereum | `0xa6972fd8b71e7af7173e18a3ed986114bb721805` | DistibutionContract5 | impl | live | no |
+| ethereum | `0xa854ecc4d8bf77cad542a04087fc6e0082d43b86` | SmartPoolManager | impl | live | no |
+| ethereum | `0xabe580e7ee158da464b51ee1a83ac0289622e6be` | MainToken | impl | live | no |
+| ethereum | `0xafea4511e634928f3a70b18ae565cd07736b7a04` | DistibutionContract3 | impl | live | no |
+| ethereum | `0xb7277a6e95992041568d9391d09d0122023778a2` | FiatTokenV2 | impl | live | no |
 | ethereum | `0xbd2949f67dcdc549c6ebe98696449fa79d988a9f` | AdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0xca06411bd7a7296d7dbdd0050dfc846e95febeb7` | Controller | impl | live | no |
+| ethereum | `0xcc80c051057b774cd75067dc48f8987c4eb97a5e` | NEC | impl | live | no |
+| ethereum | `0xccf4a9fdee040782a6a37a65c986c23d964aad9d` | ERC20Handler | impl | live | no |
+| ethereum | `0xcf3c8be2e2c42331da80ef210e9b1b307c03d36a` | BetProtocolToken | impl | live | no |
+| ethereum | `0xd478161c952357f05f0292b56012cd8457f1cfbf` | PolkamarketsToken | impl | live | no |
+| ethereum | `0xe39953deac442fd5a2ccd1ca3a1f5b4b90be229a` | AmplElasticCRPWrapper | impl | live | no |
+| ethereum | `0xe5a5f138005e19a3e6d0fe68b039397eeef2322b` | Factory | impl | live | no |
+| ethereum | `0xf497b83cfbd31e7ba1ab646f3b50ae0af52d03a1` | ForthClaim | impl | live | no |
+| polygon | `0x0b9709fe3aa76068f07d054fd4417445d5c7da9a` | TransparentUpgradeableProxy | proxy | unknown | no |

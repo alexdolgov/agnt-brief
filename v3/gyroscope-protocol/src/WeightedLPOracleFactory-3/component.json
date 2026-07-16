@@ -1,0 +1,28 @@
+{
+  "component": "WeightedLPOracleFactory-3",
+  "main_contract": "WeightedLPOracleFactory",
+  "source_entry_count": 61,
+  "source_file_count": 61,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WeightedLPOracleFactory-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xeb2bb012869255f8c622563dc4c3afa8619fe804",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

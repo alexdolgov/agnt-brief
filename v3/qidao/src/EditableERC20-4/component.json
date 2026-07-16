@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/EditableERC20-4\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xdfa46478f9e5ea86d57387849598dbfb2e964b02",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3f56e0c36d275367b8c502090edf38289b3dea0d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398209"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xddc3d26baa9d2d979f5e2e42515478bf18f354d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

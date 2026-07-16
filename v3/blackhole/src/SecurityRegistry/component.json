@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/SecurityRegistry\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x275e246c0f2a76a5ba4b3e13198ef92381d82cb5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "avalanche",
       "chain_id": 43114,

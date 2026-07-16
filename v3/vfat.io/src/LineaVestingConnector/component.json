@@ -1,0 +1,28 @@
+{
+  "component": "LineaVestingConnector",
+  "main_contract": "LineaVestingConnector",
+  "source_entry_count": 36,
+  "source_file_count": 36,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LineaVestingConnector\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xb7c1be5b2caabaf4f638d6c9d10d662f27d9ab95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

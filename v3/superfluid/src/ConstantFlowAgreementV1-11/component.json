@@ -1,0 +1,114 @@
+{
+  "component": "ConstantFlowAgreementV1-11",
+  "main_contract": "ConstantFlowAgreementV1",
+  "source_entry_count": 22,
+  "source_file_count": 22,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/agreements/ConstantFlowAgreementV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-069256ece62a-ConstantFlowAgreementV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-d7e590b36c47-UUPSUtils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSProxiable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-71ed72040605-UUPSProxiable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libs/Int96SafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-025a56e3db99-Int96SafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/tokens/TokenInfo.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-ca5e2b754708-TokenInfo.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/tokens/ERC20WithTokenInfo.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-01d2d1e0f0c0-ERC20WithTokenInfo.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluidToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-cf6d701ffbff-ISuperfluidToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluidGovernance.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-06d6c1047cdd-ISuperfluidGovernance.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluid.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-7563048ad23e-ISuperfluid.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperTokenFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-36ea094aed64-ISuperTokenFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-34547210e66b-ISuperToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperApp.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-fb8d34f36ef2-ISuperApp.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperAgreement.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-4c353ebd138d-ISuperAgreement.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/Definitions.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-d3958566a41f-Definitions.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/IConstantFlowAgreementV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-ab0d3d56d6a2-IConstantFlowAgreementV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/agreements/AgreementLibrary.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-819b4d32bf39-AgreementLibrary.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/agreements/AgreementBase.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-f637f2577d5e-AgreementBase.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ConstantFlowAgreementV1-11\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf3668829f6af94c88e2afdfab4ef953dad62a629",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

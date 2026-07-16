@@ -1,0 +1,28 @@
+{
+  "component": "PermittableToken",
+  "main_contract": "PermittableToken",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PermittableToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xe2e73a1c69ecf83f464efce6a5be353a37ca09b2",
+      "is_proxy": true,
+      "implementation_address": "0xf8d1677c8a0c961938bf2f9adc3f3cfda759a9d9",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

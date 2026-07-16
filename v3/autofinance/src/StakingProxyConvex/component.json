@@ -1,0 +1,74 @@
+{
+  "component": "StakingProxyConvex",
+  "main_contract": "StakingProxyConvex",
+  "source_entry_count": 13,
+  "source_file_count": 13,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/StakingProxyConvex.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-b4da1abef390-StakingProxyConvex.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IRewards.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-6c4483e1125e-IRewards.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IProxyVault.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-596186b98c98-IProxyVault.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IFraxFarmERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-ea7150e6e21b-IFraxFarmERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IFraxFarmBase.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-61d281d05581-IFraxFarmBase.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IFeeRegistry.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-fe61b9ca912e-IFeeRegistry.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/ICurveConvex.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-1ad89bd3f845-ICurveConvex.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IConvexWrapper.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-8ef7edfd2a3d-IConvexWrapper.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/StakingProxyBase.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-e691d7033248-StakingProxyBase.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StakingProxyConvex\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5d9ef8f1cfa952a4a383e10a447dd23c5ea20eb8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

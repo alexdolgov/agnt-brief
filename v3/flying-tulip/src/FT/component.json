@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/FT\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 5,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -33,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "394575"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x26382a5331ddb46e7c0c101fb53480eb64a94ad9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "chain-146",

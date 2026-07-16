@@ -1,0 +1,28 @@
+{
+  "component": "OssifiableProxy-3",
+  "main_contract": "OssifiableProxy",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OssifiableProxy-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfddf38947afb03c621c71b06c9c70bce73f12999",
+      "is_proxy": true,
+      "implementation_address": "0x226f9265cbc37231882b7409658c18bb7738173a",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

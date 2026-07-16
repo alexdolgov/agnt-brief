@@ -1,0 +1,28 @@
+{
+  "component": "InverseHelper-8",
+  "main_contract": "InverseHelper",
+  "source_entry_count": 5,
+  "source_file_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/InverseHelper-8\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x80bb0d7d785b522ba63f251fcc68ad6451d12c46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

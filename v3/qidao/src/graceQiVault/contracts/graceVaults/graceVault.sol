@@ -129,6 +129,7 @@ contract graceVault is ReentrancyGuard, VaultNFTv5 {
     }
 
     modifier frontExists(uint256 vaultID) {
+        require(_exists(vaultID), "front end vault does not exist");
         _;
     }
 
@@ -141,7 +142,13 @@ contract graceVault is ReentrancyGuard, VaultNFTv5 {
      */
     function checkWatching(uint256 vaultId) public {
         bool isLiquidatable = checkLiquidation(vaultId);
-        liqWatch[vaultId] = isLiquidatable ? block.timestamp + gracePeriod : 0;
+        if (isLiquidatable) {
+            if (liqWatch[vaultId] == 0) {
+                liqWatch[vaultId] = block.timestamp + gracePeriod;
+            }
+        } else {
+            liqWatch[vaultId] = 0;
+        }
     }
 
     function liquidationWatch(uint256 vaultId) public view returns (uint256) {
@@ -315,12 +322,18 @@ contract graceVault is ReentrancyGuard, VaultNFTv5 {
         onlyVaultOwner(vaultID)
         nonReentrant
     {
-        require((vaultDebt(vaultID) == 0) && (vaultCollateral[vaultID] == 0), "Vault has outstanding debt and collateral");
+        require(vaultDebt(vaultID) == 0, "Vault has outstanding debt");
+        uint256 collateralId = vaultCollateral[vaultID];
+
+        if (collateralId != 0) {
+            // withdraw leftover collateral
+            collateral.safeTransferFrom(address(this), ownerOf(vaultID), collateralId);
+        }
 
         _burn(vaultID);
 
         delete vaultCollateral[vaultID];
-        delete collateralToVaultId[vaultCollateral[vaultID]];
+        delete collateralToVaultId[collateralId];
         
         delete accumulatedVaultDebt[vaultID];
         delete lastInterest[vaultID];
@@ -580,31 +593,6 @@ contract graceVault is ReentrancyGuard, VaultNFTv5 {
         require(!isLiquidatable, "Vault is liquidatable after lock time extension");
 
     }
-
-    // claiming rebases doesn't need extra functions so we're good there. users can just claim on behalf of someone else.
-    // Voting needs to be done here
-
-    /*
-        Set your LPs and 100.0 (so 1000) -based voting fractions
-    
-        So we can split the votes by 50 points? that's the lowest needed
-
-{
-    "to": "0x16613524e02ad97edfef371bc883f2f5d6c480a5",
-    "func": "vote",
-    "params": [
-        32158,
-        [
-            "0x06709C364dd4E2f5b0c10b1eBf80B2Ce483dbdC5",
-            "0x2a1463CeBE85315224c536AfD389b381B43F3206"
-        ],
-        [
-            25000000000000000000,
-            75000000000000000000
-        ]
-    ]
-}
-    */
 
     struct VotingParams {
         address[] lpTokens;

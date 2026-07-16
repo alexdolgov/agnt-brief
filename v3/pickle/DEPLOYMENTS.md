@@ -1,6 +1,61 @@
 # pickle — deployments
 
-0 verified deployment(s) across 0 component(s).
+55 verified deployment(s) across 43 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x7ecc7163469f37b777d7b8f45a667314030ace24` | MiniChefV2-4 | impl | live | no |
+| arbitrum | `0x94feade0d3d832e4a05d459ebea9350c6cdd3bca` | PickleJar-10 | impl | live | no |
+| arbitrum | `0x973b669ef8c1459f7cb685bf7d7bcd4150977504` | PickleJar-11 | impl | live | no |
+| chain-1088 | `0x22ce2f89d2efd9d4efba4e0e51d73720fa81a150` | MiniChefV2-3 | impl | unknown | no |
+| chain-1088 | `0xadd50d6396b53876ac58752e153e3431c1e9ba93` | PickleJar-9 | impl | unknown | no |
+| chain-1088 | `0xd556018e7b37e66f618a65737144a2ae2b98127f` | ControllerV4 | impl | unknown | no |
+| ethereum | `0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e` | YFI | impl | live | no |
+| ethereum | `0x11980d4bb4465cb4fc77a57b98a16787b3d834e7` | StableYieldCredit | impl | live | no |
+| ethereum | `0x16de59092dae5ccf4a1e6439d611fd0653f0bd01` | yDAI | impl | live | no |
+| ethereum | `0x181aea6936b407514ebfc0754a37704eb8d98f91` | yInsure | impl | live | no |
+| ethereum | `0x1bb74b5ddc1f4fc91d6f9e7906cf68bc93538e33` | PickleJar-2 | impl | live | no |
+| ethereum | `0x2385d31f1eb3736be0c3629e6f03c4b3cd997ffd` | PickleJar-3 | impl | live | no |
+| ethereum | `0x2994529c0652d127b7842094103715ec5299bbed` | yVault | impl | live | no |
+| ethereum | `0x2e35392f4c36eba7ecafe4de34199b2373af22ec` | PickleJar-2 | impl | live | no |
+| ethereum | `0x2e57627acf6c1812f99e274d0ac61b786c19e74f` | GaugeProxy | impl | live | no |
+| ethereum | `0x2ead6dd0706c2d95c63ca26b39222a54f058d285` | xVault | impl | unknown | no |
+| ethereum | `0x2f08119c6f07c006695e079aafc638b8789faf18` | yVault-2 | impl | live | no |
+| ethereum | `0x37d19d1c4e1fa9dc47bd1ea12f742a0887eda74a` | yVault-4 | impl | live | no |
+| ethereum | `0x3a41ab1e362169974132dea424fb8079fd0e94d8` | PickleJar | impl | live | no |
+| ethereum | `0x45f7fa97bd0e0c212a844baea35876c7560f465b` | GaugeProxy | impl | live | no |
+| ethereum | `0x46206e9bdaf534d057be5ecf231dad2a1479258b` | PickleJar | impl | live | no |
+| ethereum | `0x4731cd18ffff2c2a43f72eae1b598dc3c0c16912` | GaugeProxy | impl | live | no |
+| ethereum | `0x55282da27a3a02ffe599f6d11314d239dac89135` | PickleJar-4 | impl | live | no |
+| ethereum | `0x597ad1e0c13bfe8025993d9e79c69e1c0233522e` | yVault-3 | impl | live | no |
+| ethereum | `0x5ade7ae8660293f2ebfcefaba91d141d72d221e8` | EminenceCurrency-2 | impl | live | no |
+| ethereum | `0x5dbcf33d8c2e976c6b560249878e6f1491bca25c` | yVault-3 | impl | live | no |
+| ethereum | `0x629c759d1e83efbf63d84eb3868b564d9521c129` | yVault-5 | impl | live | no |
+| ethereum | `0x65b2532474f717d5a8ba38078b78106d56118bbb` | PickleJar-5 | impl | live | no |
+| ethereum | `0x67c472fdd2851666abe99b1ec0f091ce3e06c365` | xVault-2 | impl | unknown | no |
+| ethereum | `0x68d14d66b2b0d6e157c06dc8fefa3d8ba0e66a89` | PickleJar-6 | impl | live | no |
+| ethereum | `0x77c8a58d940a322aea02dbc8ee4a30350d4239ad` | PickleJar-7 | impl | live | no |
+| ethereum | `0x7ff566e1d69deff32a7b244ae7276b9f90e9d0f6` | yVault | impl | live | no |
+| ethereum | `0x83f798e925bcd4017eb265844fddabb448f1707d` | yUSDT | impl | live | no |
+| ethereum | `0x948a9bb69d1d1202c160d26804aefff0634a492e` | StableYieldCredit-2 | impl | live | no |
+| ethereum | `0xa1787206d5b1be0f432c4c4f96dc4d1257a1dd14` | yUSDT-2 | impl | live | no |
+| ethereum | `0xacd43e627e64355f1861cec6d3a6688b31a6f952` | yVault-2 | impl | live | no |
+| ethereum | `0xba2e7fed597fd0e3e70f5130bcdbbfe06bb94fe1` | yVault | impl | live | no |
+| ethereum | `0xbd17b1ce622d73bd438b9e658aca5996dc394b0d` | MasterChef | impl | unknown | no |
+| ethereum | `0xc2cb1040220768554cf699b0d863a3cd4324ce32` | yDAI-2 | impl | live | no |
+| ethereum | `0xd77c2ab1cd0faa4b79e16a0e7472cb222a9ee175` | EminenceCurrency | impl | live | no |
+| ethereum | `0xd9194d9ffc638b4b406d899fe6fff211e9ab029d` | EminenceCurrency-3 | impl | live | no |
+| ethereum | `0xdc98556ce24f007a5ef6dc1ce96322d65832a819` | UniswapV2Pair | impl | live | no |
+| ethereum | `0xe0839f9b9688a77924208ad509e29952dc660261` | StableYieldCredit-3 | impl | live | no |
+| ethereum | `0xe1237aa7f535b0cc33fd973d66cbf830354d16c7` | yVault-6 | impl | live | no |
+| ethereum | `0xe4ffd682380c571a6a07dd8f20b402412e02830e` | EminenceCurrency | impl | live | no |
+| ethereum | `0xe6354ed5bc4b393a5aad09f21c46e101e692d447` | yUSDT-3 | impl | live | no |
+| ethereum | `0xed35197cadf01fcbfe6cfc11081f299cffb095bf` | EminenceCurrency | impl | live | no |
+| ethereum | `0xef0881ec094552b2e128cf945ef17a6752b4ec5d` | MasterChefV2 | impl | live | no |
+| ethereum | `0xf5bd1a4894a6ac1d786c7820bc1f36b1535147f6` | GaugeProxy | impl | live | no |
+| ethereum | `0xf79ae82dccb71ca3042485c85588a3e0c395d55b` | PickleJar | impl | live | no |
+| ethereum | `0xfaa267c3bb25a82cfdb604136a29895d30fd3fd8` | Gauge | impl | live | no |
+| optimism | `0x849c283375a156a6632e8ee928308fcb61306b7b` | MiniChefV2 | impl | live | no |
+| optimism | `0xc335740c951f45200b38c5ca84f0a9663b51aec6` | PickleJarUniV3Optimism | impl | live | no |
+| polygon | `0x20b2a3fc7b13ca0ccf7af81a68a14cb3116e8749` | MiniChefV2-2 | impl | live | no |
+| polygon | `0x261b5619d85b710f1c2570b65ee945975e2cc221` | PickleJar-8 | impl | live | no |

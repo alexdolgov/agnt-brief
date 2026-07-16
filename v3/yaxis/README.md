@@ -9,6 +9,6 @@ This directory pairs the receipt-bound audit brief with a readable, deduplicated
 - [Explicit missing-source queue](./missing_sources.json)
 - [`src/`](./src/) contains one standalone Foundry root per unique verified source bundle.
 
-Exported source components: 5
-Exported deployments: 5
+Exported source components: 29
+Exported deployments: 29
 Deployments without a cached source bundle: 0

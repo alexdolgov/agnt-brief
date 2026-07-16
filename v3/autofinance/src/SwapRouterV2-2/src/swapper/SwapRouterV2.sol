@@ -8,7 +8,7 @@ import { ISwapRouterV2 } from "src/interfaces/swapper/ISwapRouterV2.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
 import { SwapRouter } from "src/swapper/SwapRouter.sol";
 import { TransientStorage } from "src/libs/TransientStorage.sol";
-import { Errors } from "src/utils/Errors.sol";
+import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
 
 contract SwapRouterV2 is ISwapRouterV2, SwapRouter {
     using SafeERC20 for IERC20;
@@ -39,7 +39,7 @@ contract SwapRouterV2 is ISwapRouterV2, SwapRouter {
         uint256 index = _getCurrentSwapIndex();
         _setCurrentSwapIndex(index + 1);
 
-        if (index >= _getNumSwapRoutes()) revert Errors.InvalidParams();
+        if (index >= _getNumSwapRoutes()) revert AutopilotErrors.InvalidParams();
 
         ISwapRouterV2.UserSwapData memory route = _getTransientRoutes(index);
         if (route.target == address(0)) {
@@ -58,7 +58,7 @@ contract SwapRouterV2 is ISwapRouterV2, SwapRouter {
         ISwapRouterV2.UserSwapData memory transientRoute
     ) internal returns (uint256) {
         if (transientRoute.fromToken != assetToken || transientRoute.toToken != quoteToken) {
-            revert Errors.InvalidConfiguration();
+            revert AutopilotErrors.InvalidConfiguration();
         }
 
         uint256 balanceDiff = IERC20(quoteToken).balanceOf(address(this));
@@ -71,7 +71,7 @@ contract SwapRouterV2 is ISwapRouterV2, SwapRouter {
         if (!success) revert SwapFailed();
 
         balanceDiff = IERC20(quoteToken).balanceOf(address(this)) - balanceDiff;
-        if (balanceDiff < minBuyAmount) revert Errors.SlippageExceeded(minBuyAmount, balanceDiff);
+        if (balanceDiff < minBuyAmount) revert AutopilotErrors.SlippageExceeded(minBuyAmount, balanceDiff);
 
         IERC20(quoteToken).safeTransfer(msg.sender, balanceDiff);
         emit SwapForQuoteSuccessful(assetToken, sellAmount, quoteToken, minBuyAmount, balanceDiff);
@@ -79,16 +79,16 @@ contract SwapRouterV2 is ISwapRouterV2, SwapRouter {
     }
 
     function _validateSwapParams(address assetToken, uint256 sellAmount, address quoteToken) internal pure {
-        if (sellAmount == 0) revert Errors.ZeroAmount();
-        if (assetToken == quoteToken) revert Errors.InvalidParams();
-        Errors.verifyNotZero(assetToken, "assetToken");
-        Errors.verifyNotZero(quoteToken, "quoteToken");
+        if (sellAmount == 0) revert AutopilotErrors.ZeroAmount();
+        if (assetToken == quoteToken) revert AutopilotErrors.InvalidParams();
+        AutopilotErrors.verifyNotZero(assetToken, "assetToken");
+        AutopilotErrors.verifyNotZero(quoteToken, "quoteToken");
     }
 
     function initTransientSwap(
         ISwapRouterV2.UserSwapData[] memory customRoutes
     ) public onlyAutoPilotRouter {
-        if (_transientRoutesAvailable()) revert Errors.AccessDenied();
+        if (_transientRoutesAvailable()) revert AutopilotErrors.AccessDenied();
         TransientStorage.setBytes(abi.encode(0), _CURRENT_SWAP_INDEX);
 
         uint256 numRoutes = customRoutes.length;
@@ -148,7 +148,7 @@ contract SwapRouterV2 is ISwapRouterV2, SwapRouter {
     }
 
     modifier onlyAutoPilotRouter() {
-        if (msg.sender != address(systemRegistry.autoPoolRouter())) revert Errors.AccessDenied();
+        if (msg.sender != address(systemRegistry.autoPoolRouter())) revert AutopilotErrors.AccessDenied();
         _;
     }
 }

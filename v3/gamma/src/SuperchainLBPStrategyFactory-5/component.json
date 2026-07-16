@@ -1,0 +1,38 @@
+{
+  "component": "SuperchainLBPStrategyFactory-5",
+  "main_contract": "SuperchainLBPStrategyFactory",
+  "source_entry_count": 160,
+  "source_file_count": 160,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SuperchainLBPStrategyFactory-5\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x6e096e2794f0d5e5be7f120612c2b8fba83df360",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x73a5deca4bcd9d6fca3873a9472acf70c4c2f850",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-// Last deployed from commit: ed3c84e46734ba7ddf3828db52bfb5271fccc16c;
+// Last deployed from commit: ;
 pragma solidity 0.8.17;
 
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
@@ -625,7 +625,7 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
      * Returns the current value of Prime Account in USD including all tokens as well as staking and LP positions
      * Uses provided AssetPrice struct arrays instead of extracting the pricing data from the calldata again.
     **/
-    function getTotalValueWithPrices(AssetPrice[] memory ownedAssetsPrices, AssetPrice[] memory stakedPositionsPrices) public view virtual returns (uint256) {
+    function getTotalValueWithPrices(AssetPrice[] memory ownedAssetsPrices, AssetPrice[] memory assetsPrices, AssetPrice[] memory stakedPositionsPrices) public view virtual returns (uint256) {
         return getTotalAssetsValueWithPrices(ownedAssetsPrices) + getStakedValueWithPrices(stakedPositionsPrices) + getTotalTraderJoeV2WithPrices() + getTotalUniswapV3WithPrices();
     }
 
@@ -641,11 +641,11 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
     function getHealthRatio() public view virtual returns (uint256) {
         CachedPrices memory cachedPrices = getAllPricesForLiquidation(new bytes32[](0));
         uint256 debt = getDebtWithPrices(cachedPrices.debtAssetsPrices);
+        uint256 thresholdWeightedValue = getThresholdWeightedValueWithPrices(cachedPrices.ownedAssetsPrices, cachedPrices.stakedPositionsPrices);
 
         if (debt == 0) {
             return type(uint256).max;
         } else {
-            uint256 thresholdWeightedValue = getThresholdWeightedValueWithPrices(cachedPrices.ownedAssetsPrices, cachedPrices.stakedPositionsPrices);
             return thresholdWeightedValue * 1e18 / debt;
         }
     }
@@ -657,11 +657,11 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
      **/
     function getHealthRatioWithPrices(CachedPrices memory cachedPrices) public view virtual returns (uint256) {
         uint256 debt = getDebtWithPrices(cachedPrices.debtAssetsPrices);
+        uint256 thresholdWeightedValue = getThresholdWeightedValueWithPrices(cachedPrices.ownedAssetsPrices, cachedPrices.stakedPositionsPrices);
 
         if (debt == 0) {
             return type(uint256).max;
         } else {
-            uint256 thresholdWeightedValue = getThresholdWeightedValueWithPrices(cachedPrices.ownedAssetsPrices, cachedPrices.stakedPositionsPrices);
             return thresholdWeightedValue * 1e18 / debt;
         }
     }

@@ -1,6 +1,76 @@
 # apex-protocol — deployments
 
-0 verified deployment(s) across 0 component(s).
+70 verified deployment(s) across 63 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x52a8845df664d76c69d2eea607cd793565af42b8` | AmmFactory | impl | live | no |
+| base | `0x72343e8e448fa539a1f118f870a1de1132f2fcad` | UpgradeGatekeeper | impl | live | no |
+| ethereum | `0x015381651f240ed6c44122dcba6cf807c9442cd6` | CpuFrilessVerifier | impl | live | no |
+| ethereum | `0x0cd0cdf0132c566db61b691bceeba2c4d8ca5cdc` | CpuFrilessVerifier-2 | impl | live | no |
+| ethereum | `0x13e120f6c8e747983f7aaf0f7731796bfcb0d934` | GpsStatementVerifier-2 | impl | live | no |
+| ethereum | `0x192292817680196a0215a50b07d1c5e7ab8a8636` | CairoBootloaderProgram | impl | live | no |
+| ethereum | `0x1bde14b50e7daed71ee14f7e8defaa3d8a7d4420` | CpuConstraintPoly | impl | live | no |
+| ethereum | `0x21578b24f86adf6f59c406f641f693745c31ea8f` | PoseidonPoseidonFullRoundKey0Column | impl | live | no |
+| ethereum | `0x23cab3cf1aa7b929df5e9f3712aca3a6fb9494e4` | Committee | impl | live | no |
+| ethereum | `0x24105e6697add9b4b1bde04079a91bdfcca24a47` | CairoBootloaderProgram-2 | impl | live | no |
+| ethereum | `0x2867a4509b0969531641a42a3d4a9b0a07109b6b` | CpuFrilessVerifier-3 | impl | live | no |
+| ethereum | `0x2c9726b081305f314a74d570f0fed8dd9fab01a1` | CpuConstraintPoly-2 | impl | live | no |
+| ethereum | `0x30efaaa99f8efe310d9fdc83072e2a04c093d400` | FriStatementContract | impl | live | no |
+| ethereum | `0x30f3ab988cb00fe3fb5ab891f50c13684770419b` | CpuFrilessVerifier-4 | impl | live | no |
+| ethereum | `0x32a91ff604ab2adcd832e91d68b2f3f25358fdad` | MerkleStatementContract | impl | live | no |
+| ethereum | `0x35e9f63efc97e008f3f9097ea3293b540483e7cb` | CpuOods | impl | live | no |
+| ethereum | `0x3641bf5a9a07ef705e8358d39dd8555919c16b10` | ProxyV5 | impl | live | no |
+| ethereum | `0x3cde3ee221ad64d096c92e0f750feb8a750519a8` | ProxyV5 | impl | live | no |
+| ethereum | `0x3e727f44fd2c92bd960aab86daacd1a831b16eba` | CpuConstraintPoly-3 | impl | live | no |
+| ethereum | `0x4576ba889ddcb27738c4d3b8df2ff2616650ba0b` | PoseidonPoseidonFullRoundKey2Column | impl | live | no |
+| ethereum | `0x4e0e46fc2b9a9809dce23ce2d9a1d6eede7de611` | FinalizableCommittee | impl | live | no |
+| ethereum | `0x4e59a6944ec90917a71d226227b458bfa7a9f86f` | BananaClaimable | impl | live | no |
+| ethereum | `0x52a8845df664d76c69d2eea607cd793565af42b8` | ApeXToken | impl | unknown | no |
+| ethereum | `0x5318edcfecaf84eb5a3a4d364c2dcff06083953e` | PoseidonPoseidonPartialRoundKey0Column | impl | live | no |
+| ethereum | `0x5c1ce45534a9c5f7f3e6683cd79a8ad57ee3a9fe` | GpsStatementVerifier | impl | live | no |
+| ethereum | `0x613d088f2e5a2ed91635016483dafa3cd47a8964` | BatchWithdraw | impl | live | no |
+| ethereum | `0x69833933e59269ab062eafde074c059ce5dc7755` | PoseidonPoseidonFullRoundKey2Column-2 | impl | live | no |
+| ethereum | `0x6a67796ee97700b5b5f5afbcffdcbc5f80803f11` | CpuFrilessVerifier-5 | impl | live | no |
+| ethereum | `0x70a36886adf5c3b8b5f370c3f037e9116159a356` | StarknetTokenBridge | impl | live | no |
+| ethereum | `0x71574057d12541ccda98643ac56441838353a26d` | CpuFrilessVerifier-6 | impl | live | no |
+| ethereum | `0x75c881c77a36c8233d3c8c77447958f3e2493f7d` | ProxyV5 | impl | live | no |
+| ethereum | `0x7ca0201319f98b5494d90d0f8da9427c64af135e` | CpuOods-2 | impl | live | no |
+| ethereum | `0x7da1225c752ab37e610a242d9d8a0548262e3ff7` | GpsStatementVerifier | impl | live | no |
+| ethereum | `0x8f3af16cf4eb89f256cdebeadd46e1b982dc4775` | CpuOods-3 | impl | live | no |
+| ethereum | `0x93fa1d7c310692eaf390f951828f8791bc19cb36` | BananaV2 | impl | live | no |
+| ethereum | `0x95ff25a59dc9c5a41cf0709dc916041e5dc7fd95` | StarknetEthBridge | impl | live | no |
+| ethereum | `0x99480b7c32c4f8965ff1929a368dd586c6dc3595` | CpuOods-4 | impl | live | no |
+| ethereum | `0x9a62fa46d88697bbbefaf5f9ef1234e6502d31a9` | CpuConstraintPoly-4 | impl | live | no |
+| ethereum | `0x9ddb8a6e3b23b33ce685e6d9f89f0ca25510ae6f` | CpuConstraintPoly-5 | impl | live | no |
+| ethereum | `0xa3da166aef05dba08d67ea5b442dd9574274b9ce` | EcdsaPointsXColumn | impl | live | no |
+| ethereum | `0xa40115c39dc257e5aae39e2f311af6a0247bb766` | CpuOods-5 | impl | live | no |
+| ethereum | `0xa4d0bb20c708262155378c9d14a5a6a863e15dd4` | CpuOods-6 | impl | live | no |
+| ethereum | `0xa55c0f91945958c40f7fa41eb650340245f4b6c2` | PedersenHashPointsYColumn | impl | live | no |
+| ethereum | `0xa67821bc089b4374e8d62475526e7e84f09da086` | AllVerifiers | impl | live | no |
+| ethereum | `0xaadfdb9cac145c65f2284fbe24600d07fb37f7bd` | PerpetualEscapeVerifier | impl | live | no |
+| ethereum | `0xae325ce505aa13edc30d48187b05c24a3bac2707` | CpuOods-7 | impl | live | no |
+| ethereum | `0xaf7d1a0c128d392d99c8bd4e6b880ff95e8b907b` | ApeXPool3 | impl | live | no |
+| ethereum | `0xb45b87ba49c64f79df0ef81043a57999af5ea7a0` | PoseidonPoseidonPartialRoundKey0Column-2 | impl | live | no |
+| ethereum | `0xb97394b55b4807a835619edbcc6af6b1d3c71e98` | TokensAndRamping | impl | live | no |
+| ethereum | `0xbe0f8f150fd10798524b4de80ed75751658caef3` | CpuFrilessVerifier-7 | impl | live | no |
+| ethereum | `0xc1cd710bb0d8a07a46cc884a552091d1ed433ccc` | PoseidonPoseidonPartialRoundKey1Column | impl | live | no |
+| ethereum | `0xc716c4e3f68ad6785524f65df129fc090339dbd8` | CpuConstraintPoly-6 | impl | live | no |
+| ethereum | `0xcaea5002758d5b977680fe65164b7fe6a062c771` | EcdsaPointsYColumn | impl | live | no |
+| ethereum | `0xd67c6798df68b98f1ef10beef0f35de788014faa` | CpuOods-8 | impl | live | no |
+| ethereum | `0xd8e47340bdc4fb06d37056b1725c653836cc81e5` | CpuConstraintPoly-7 | impl | live | no |
+| ethereum | `0xdc596b881bd9e33d3a56ae86031417645d1d9e70` | PedersenHashPointsXColumn | impl | live | no |
+| ethereum | `0xde763265ab02450fbe3f52bea3f0f314fc8aa170` | GpsStatementVerifier | impl | live | no |
+| ethereum | `0xdf0b63653e86995556079cbc09594bcd88d1d917` | CairoBootloaderProgram-3 | impl | live | no |
+| ethereum | `0xdf10757de64811df030cf88bb700b8cc63bab090` | PoseidonPoseidonFullRoundKey0Column-2 | impl | live | no |
+| ethereum | `0xe0d1fab527a85d955d4c05323250367e61ba3f18` | StarknetTokenBridge | impl | live | no |
+| ethereum | `0xe4937ac1da4211c6e48cf41a7b298b74eda9b103` | CpuConstraintPoly-8 | impl | live | no |
+| ethereum | `0xe58327a05f21ab12ab33a4408003a87e571f810d` | PoseidonPoseidonFullRoundKey1Column | impl | live | no |
+| ethereum | `0xe583bcde0160b637330b27a3ea1f3c02ba2ec460` | MemoryPageFactRegistry | impl | live | no |
+| ethereum | `0xe5ac9312f30623eb20d435533a4205790af68fd0` | PoseidonPoseidonFullRoundKey1Column-2 | impl | live | no |
+| ethereum | `0xe67515a751291445b85b2f176c1ecdf08e86b406` | GpsStatementVerifier | impl | live | no |
+| ethereum | `0xecc282dc2571e43696d3259490fafa3b98790e20` | PoseidonPoseidonPartialRoundKey1Column-2 | impl | live | no |
+| ethereum | `0xfe5e5b24ffe981c9faa0d4f36ce346c3b22b0066` | GpsStatementVerifier-3 | impl | live | no |
+| ethereum | `0xffc7974cd74b95f631f454cd787aac28f0476b44` | CpuFrilessVerifier-8 | impl | live | no |
+| mantle | `0x51fcaaf4d6288f21cedda92f22a3c0251e8f1870` | EsAPEX2 | impl | live | no |
+| mantle | `0x661ea23a54dcb7dcbb533be0f50dc6ea2ecfedbb` | ApeXPool3 | impl | live | no |

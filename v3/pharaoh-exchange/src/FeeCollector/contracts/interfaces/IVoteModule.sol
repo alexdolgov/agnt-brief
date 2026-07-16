@@ -11,7 +11,11 @@ interface IVoteModule {
 
     event NotifyReward(address indexed from, uint256 amount);
 
+    event ClaimRewards(address indexed from, uint256 amount);
+
     event ExemptedFromCooldown(address indexed candidate, bool status);
+
+    event NewDuration(uint256 oldDuration, uint256 newDuration);
 
     event NewCooldown(uint256 oldCooldown, uint256 newCooldown);
 
@@ -30,13 +34,37 @@ interface IVoteModule {
 
     function accessHub() external view returns (address);
 
+    /// @notice reward supply for a period
+    function rewardSupply(uint256 period) external view returns (uint256);
+
+    /// @notice user claimed reward amount for a period
+    /// @dev same mapping order as FeeDistributor so the name is a bit odd
+    function userClaimed(uint256 period, address owner) external view returns (uint256);
+
+    /// @notice last claimed period for a user
+    function userLastClaimPeriod(address owner) external view returns (uint256);
 
     /// @notice returns the current period
     function getPeriod() external view returns (uint256);
 
+    /// @notice returns the amount of unclaimed rebase earned by the user
+    function earned(address account) external view returns (uint256 _reward);
+
+    /// @notice returns the amount of unclaimed rebase earned by the user for a period
+    function periodEarned(uint256 period, address user) external view returns (uint256 amount);
 
     /// @notice the time which users can deposit and withdraw
     function unlockTime() external view returns (uint256 _timestamp);
+
+    /// @notice claims pending rebase rewards
+    function getReward() external;
+
+    /// @notice claims pending rebase rewards for a period
+    function getPeriodReward(uint256 period) external;
+
+    /// @notice allows users to set their own last claimed period in case they haven't claimed in a while
+    /// @param period the new period to start loops from
+    function setUserLastClaimPeriod(uint256 period) external;
 
     /// @notice deposits all xPHAR in the caller's wallet
     function depositAll() external;
@@ -65,8 +93,8 @@ interface IVoteModule {
     function notifyRewardAmount(uint256 amount) external;
 
     /// @notice the address of the xPHAR token (staking/voting token)
-    /// @return _xPhar the address
-    function xPhar() external view returns (address _xPhar);    
+    /// @return _xRex the address
+    function xRex() external view returns (address _xRex);
 
     /// @notice address of the voter contract
     /// @return _voter the voter contract address

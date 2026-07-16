@@ -1,28 +1,63 @@
 # strata — deployments
 
-22 verified deployment(s) across 13 component(s).
+57 verified deployment(s) across 44 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | ethereum | `0x00a96056c30a22b684ff7a09f4a0afeae426dde2` | sUSDeCooldownRequestImpl | impl | live | yes |
+| ethereum | `0x02d622c6f8b1814fdcaebed36457f8da90ab5b62` | CDOLens | impl | live | no |
 | ethereum | `0x0404ea6f1c89a5032ea2baddfbac20ce11cdf1ce` | TransparentUpgradeableProxy-2 | proxy | live | yes |
 | ethereum | `0x040ef225f885fc1e0d3bd09f3acc02f707f8c74a` | AccessControlManager | impl | live | no |
 | ethereum | `0x06e84a0fe0c4bc5c4ee3edb580b32eb4b88203e4` | AccessControlManager | impl | live | no |
+| ethereum | `0x0da391431cc9760005c113c1a2dcb9d67878f213` | sUSDeStrategy | impl | live | no |
+| ethereum | `0x0eccfa55f1739cdcb112ada272c910ba50c1b756` | StrataCDO | impl | live | no |
+| ethereum | `0x0f751ea4af9390c8eb530ee3ce2275a85167a20e` | Accounting | impl | live | no |
 | ethereum | `0x12db794342437aaa93970c106f2b5d5dfe2f9eab` | sNUSDAprPairProvider | impl | live | no |
+| ethereum | `0x16f62bc6072a710202e7631be9b6a378de16fff0` | CDOLens-2 | impl | live | no |
 | ethereum | `0x1c137776e04803f807616c382abba12d9bf0af73` | AaveAprPairProvider | impl | live | no |
+| ethereum | `0x1d19e18ecac4ef332a0d5d6aa3a0f0f772605f60` | AccessControlManager | impl | live | no |
+| ethereum | `0x30faefa3c8022963df7538abeb8af8de1187f02a` | StrataCDO-2 | impl | live | no |
+| ethereum | `0x36f5930e314b2f611a786476d939f47b318c1939` | SaturnStrategy | impl | live | no |
 | ethereum | `0x4bcc15f6c0c63e511a1b55a7625f311a93854be8` | SaturnAprPairProvider | impl | live | no |
+| ethereum | `0x4e409d5f9867352555e99a50cee2c4a73364e5b6` | Accounting-2 | impl | live | no |
+| ethereum | `0x4e9f8d06aaed67ac4aaa52d9175c842e0f8e8da2` | Accounting-3 | impl | live | no |
 | ethereum | `0x4f2682b78f37910704fb1aff29358a1da07e022d` | StrataMasterChef | impl | live | yes |
+| ethereum | `0x4f514f4e92189941e0d358f5afe0483a6dfd5b17` | sUSDeStrategy-2 | impl | live | no |
+| ethereum | `0x5c818c5894d7fb825c90e472b320c03572ab687d` | ERC20Cooldown | impl | live | no |
 | ethereum | `0x5efe7c9da88568709e98b237d4d946afbda2aa52` | Genesis | proxy | live | yes |
 | ethereum | `0x60dae21944e6c1f4a185d33a217b05bfd647eb79` | Genesis | proxy | live | yes |
+| ethereum | `0x60f130c9d1533505c3931183693d3d91060b4f1f` | TrancheDepositor | impl | live | no |
+| ethereum | `0x64c62859ce56fb9cc74c253ef59f7bfc67d9630e` | Tranche | impl | live | no |
 | ethereum | `0x6ce1aa78a196af86b752b92a2daee047ab601c36` | AccessControlManager | impl | live | no |
 | ethereum | `0x735eddf50ca2371aa48466469c742e684c610f74` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x7940b983ccdd5818cf55129b84df5231751a4a7b` | TermmaxIntegration | impl | live | no |
 | ethereum | `0x7b6c960cf185fb27ecb91c174fae065978bedd10` | Genesis | proxy | live | yes |
 | ethereum | `0x8b7258e8cc89894b56f757bc886b430d0c018bf0` | ConstantOracleAprPairProvider | impl | live | no |
+| ethereum | `0x8b75970a492bfd326ef7425671117e7ec14d78fc` | PendleIntegration | impl | live | no |
 | ethereum | `0x908b3921aae4fc17191d382bb61020f2ee6c0e20` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x90f806df8a024c1474425f8c4fca4f3301dcbcdb` | Tranche-2 | impl | live | no |
+| ethereum | `0x9686e327a6f50aca2a1bea4219e04dc4449dc286` | SaturnStrategy-2 | impl | unknown | no |
 | ethereum | `0x991e78df32a08b5327f73a58f08aff0c1bb929aa` | AaveOracleAprPairProvider | impl | live | no |
+| ethereum | `0xa621c54ff2a24c9b084dcc2fb7399a55bdb80277` | sUSDeAprPairProvider | impl | live | no |
+| ethereum | `0xa7c547ba0dfd91a6b1e8ab6aa5d444f9ec2da3a4` | CDOLens-3 | impl | live | no |
+| ethereum | `0xaff405c3f1917a42326f28c90d0d5603c96d596b` | sUSDeAprPairProvider | impl | live | no |
 | ethereum | `0xb2a3cf69c97afd4de7882e5fee120e4efc77b706` | StrataMasterChef-2 | impl | live | no |
+| ethereum | `0xb8f2dac561b2a5ea2e075c8eb5fcac669c3a3abf` | TrancheDepositor-2 | impl | live | no |
+| ethereum | `0xbebbeb5ec0fa689def85423d6c161b30bf3d6303` | sNUSDSwapAdapter | impl | live | no |
+| ethereum | `0xc4eaa82924883a58e39b4dfd6e60e81ee45d419c` | UnstakeCooldown | impl | live | no |
+| ethereum | `0xc634e92d2d2231ffc3de0615654f6ba7b6d3be7e` | Accounting-4 | impl | live | no |
+| ethereum | `0xc89951cc4c03927ff11a0e47806e2ac3aa7734f3` | Accounting-5 | impl | live | no |
+| ethereum | `0xc9d29a300db9896c7c253cc729e012fbc7b06611` | CDOLens-4 | impl | live | no |
+| ethereum | `0xcbb5484684ef693bc984e56d9d6330099d16c5e0` | sUSDeStrategy-3 | impl | live | no |
 | ethereum | `0xd5d18db904fe7df2207c3f9491c5441143e44014` | AccessControlManager | impl | live | no |
 | ethereum | `0xd61990c228fa5d4223231bf90896899daad399b8` | AccessControlManager | impl | live | no |
 | ethereum | `0xd6dad17d025cddded27305aebab8b277996a6faf` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0xd7bac4d57a2cae923b3dc7dd21398ed707b9eadc` | ConstantOracleAprPairProvider-2 | impl | live | no |
 | ethereum | `0xdbf4fb6c310c1c85d0b41b5dbca06096f2e7099f` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0xdc3190a059a1dcf4c17ec1cb9cc8c4eacd0bc297` | Tranche-2 | impl | live | no |
+| ethereum | `0xe375c1d79165ec365d0bc0d0c5105a8a17f85cee` | TrancheDepositor-3 | impl | live | no |
+| ethereum | `0xe93b75b5f3da8c4f48dcd3cf84cd7fb001e938f8` | ERC20Cooldown-2 | impl | live | no |
+| ethereum | `0xf158a4f4a01ac21ddd2b09abd2232649526ef6a2` | AprPairFeed | impl | live | no |
+| ethereum | `0xf251290866cfca9ad4d0cbbde3742a0d12876682` | EulerIntegration | impl | live | no |
+| ethereum | `0xff8d8a1a38ee927777eb78702005a70c4533ac7a` | UnstakeCooldown-2 | impl | live | no |
+| ethereum | `0xffe76a74f53b700dcd06feaa863b75003d50f2be` | Tranche | impl | live | no |

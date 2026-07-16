@@ -1,0 +1,42 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+
+import { BridgeAdapterBase } from "./BridgeAdapterBase.sol";
+import { BridgeSwapReceiver } from "contracts/bridges/BridgeSwapReceiver.sol";
+import { MultiSwapRouter } from "contracts/MultiSwapRouter.sol";
+import {
+    IAcrossMessageHandler
+} from "contracts/bridges/interfaces/IAcrossMessageHandler.sol";
+
+contract AcrossSwapAdapter is BridgeAdapterBase, IAcrossMessageHandler {
+    BridgeSwapReceiver public immutable receiver;
+
+    constructor(
+        address receiver_,
+        address admin_,
+        address guardian_
+    ) BridgeAdapterBase(admin_, guardian_) {
+        receiver = BridgeSwapReceiver(payable(receiver_));
+    }
+
+    function handleV3AcrossMessage(
+        address tokenSent,
+        uint256 amount,
+        address, // relayer
+        bytes memory message
+    ) external override {
+        _onlyWhitelistedEndpoint();
+        (
+            address recipient,
+            MultiSwapRouter.SwapStep[] memory swapSteps,
+            uint256 minAmountOut
+        ) = abi.decode(
+            message, (address, MultiSwapRouter.SwapStep[], uint256)
+        );
+        uint256 forwarded =
+            _forwardAvailable(tokenSent, address(receiver), amount);
+        receiver.executeSwap(
+            tokenSent, forwarded, recipient, swapSteps, minAmountOut
+        );
+    }
+}

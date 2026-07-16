@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/TokenMessaging\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 8,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -83,6 +83,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "399648"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3fc69cc4a842838bcdc9499178740226062b14e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "linea",

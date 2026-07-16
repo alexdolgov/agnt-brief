@@ -1,0 +1,38 @@
+{
+  "component": "CommonProxy",
+  "main_contract": "CommonProxy",
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CommonProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf5db314d1bb8e6166a2b54b057dca934ac3b5d43",
+      "is_proxy": true,
+      "implementation_address": "0x149180976acce60ced0a9c339853c9d1d4160765",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x76c51350705756030c70ccb82ef23345c2a4610e",
+      "is_proxy": true,
+      "implementation_address": "0x149180976acce60ced0a9c339853c9d1d4160765",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

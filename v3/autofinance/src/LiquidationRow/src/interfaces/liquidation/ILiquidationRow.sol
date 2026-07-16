@@ -9,7 +9,7 @@ interface ILiquidationRow {
     event SwapperAdded(address indexed swapper);
     event SwapperRemoved(address indexed swapper);
     event FeeReceiverSet(address indexed feeReceiver, uint256 feeBps);
-    event BalanceUpdated(address indexed token, address indexed vault, uint256 actualBalance, uint256 expectedBalance);
+    event BalanceUpdated(address indexed token, address indexed vault, uint256 balance);
     event VaultLiquidated(address indexed vault, address indexed fromToken, address indexed toToken, uint256 amount);
     event GasUsedForVault(address indexed vault, uint256 gasAmount, bytes32 action);
     event FeesTransferred(address indexed receiver, uint256 amountReceived, uint256 fees);

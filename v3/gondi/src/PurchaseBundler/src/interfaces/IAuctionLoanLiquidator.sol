@@ -20,9 +20,6 @@ interface IAuctionLoanLiquidator {
     /// @param startTime The auction start time.
     /// @param originator The address that triggered the liquidation.
     /// @param lastBidTime The last bid time.
-    /// @param loanHash Hash of the Loan struct at liquidation start; used to validate
-    ///                 the caller-supplied `_loan` in settlement flows.
-    /// @param buyoutWindow Snapshotted buyout window duration at auction creation time.
     struct Auction {
         address loanAddress;
         uint256 loanId;
@@ -35,8 +32,6 @@ interface IAuctionLoanLiquidator {
         uint96 startTime;
         address originator;
         uint96 lastBidTime;
-        bytes32 loanHash;
-        uint96 buyoutWindow;
     }
 
     /// @notice Add a loan contract to the list of accepted contracts.
@@ -65,9 +60,8 @@ interface IAuctionLoanLiquidator {
     function getTriggerFee() external view returns (uint256);
 
     /// @notice When a bid is placed, the contract takes possesion of the bid, and
-    ///         if there was a previous bid, it attempts to return that capital to the
-    ///         original bidder immediately. If the transfer fails (e.g. token blacklist),
-    ///         the refund is stored and the outbid bidder must claim it via claimRefund.
+    ///         if there was a previous bid, it returns that capital to the original
+    ///         bidder.
     /// @param _contract The nft contract address.
     /// @param _tokenId The nft id.
     /// @param _auction The auction struct.
@@ -88,34 +82,4 @@ interface IAuctionLoanLiquidator {
     /// @param _tokenId The nft id.
     /// @return auctionHash The auction hash.
     function getAuctionHash(address _contract, uint256 _tokenId) external view returns (bytes32);
-
-    /// @notice Claims the pending bid refund for the caller.
-    ///         Uses pull-over-push to avoid DoS when a token blacklists a previous bidder.
-    /// @param _token The token address to claim.
-    function claimRefund(address _token) external;
-
-    /// @notice Returns the pending refund amount for a given bidder and token.
-    /// @param _bidder The bidder address.
-    /// @param _token The token address.
-    /// @return The pending refund amount.
-    function getPendingRefunds(address _bidder, address _token) external view returns (uint256);
-
-    /// @notice Set the minimum bid cap for a given currency.
-    ///         When an auction is created the effective minBid is
-    ///         min(currencyMinBid, loanDerivedMinBid) so this acts as
-    ///         an upper-bound on reserve preventing principal-inflation attacks.
-    /// @param _currency The currency address.
-    /// @param _minBid The minimum bid cap for the currency.
-    function setMinBidForCurrency(address _currency, uint256 _minBid) external;
-
-    /// @notice Get the minimum bid cap for a given currency.
-    /// @param _currency The currency address.
-    /// @return minBid The minimum bid cap for the currency.
-    function getMinBidForCurrency(address _currency) external view returns (uint256);
-
-    /// @notice Called by the owner to cancel an expired auction that received no bids.
-    ///         Rescues the locked NFT (sent to owner) and clears the auction entry.
-    /// @param _auction The auction struct.
-    /// @param _loan The loan struct.
-    function cancelAuction(Auction calldata _auction, IMultiSourceLoan.Loan calldata _loan) external;
 }

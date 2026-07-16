@@ -1,0 +1,124 @@
+{
+  "component": "CFAv1Forwarder-4",
+  "main_contract": "CFAv1Forwarder",
+  "source_entry_count": 24,
+  "source_file_count": 24,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/utils/CFAv1Forwarder.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-0df8d9ba5b7e-CFAv1Forwarder.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/utils/ForwarderBase.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-b98525c4e7f7-ForwarderBase.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libs/CallUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-0db48a244d95-CallUtils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/tokens/TokenInfo.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-6165762e2764-TokenInfo.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/tokens/ERC20WithTokenInfo.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-fa2987f8eb75-ERC20WithTokenInfo.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluidToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-6d8762ba12e6-ISuperfluidToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluidGovernance.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-c9a58e8c3a8a-ISuperfluidGovernance.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluid.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-742149d83478-ISuperfluid.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperTokenFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-8a90812104dd-ISuperTokenFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-b5c14fabb109-ISuperToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperApp.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-fd5f2ef7845d-ISuperApp.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperAgreement.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-a60aaec72b9c-ISuperAgreement.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/IPoolMemberNFT.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-1e43e5488978-IPoolMemberNFT.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/IPoolAdminNFT.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-359316185194-IPoolAdminNFT.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/IFlowNFTBase.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-88d6f7c7460d-IFlowNFTBase.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/IConstantOutflowNFT.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-3856503929d3-IConstantOutflowNFT.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/IConstantInflowNFT.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-3bbfe49073bc-IConstantInflowNFT.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/Definitions.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-ba6e58b1d4cf-Definitions.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/IConstantFlowAgreementV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-09e85a5290e3-IConstantFlowAgreementV1.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CFAv1Forwarder-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcfa132e353cb4e398080b9700609bb008eceb125",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

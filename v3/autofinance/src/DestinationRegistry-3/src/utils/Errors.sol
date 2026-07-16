@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { Address } from "openzeppelin-contracts/utils/Address.sol";
 import { ISystemComponent } from "src/interfaces/ISystemComponent.sol";
@@ -21,7 +21,6 @@ library Errors {
     error InvalidAddress(address addr);
     error InvalidParam(string paramName);
     error InvalidParams();
-    error Exception(string desc);
     error UnsafePrice(address token, uint256 spotPrice, uint256 safePrice);
     error AlreadySet(string param);
     error AlreadyRegistered(address param);

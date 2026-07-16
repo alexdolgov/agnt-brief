@@ -3,6 +3,7 @@
 
 pragma solidity 0.8.25;
 
+import {Time} from "@openzeppelin/contracts/utils/types/Time.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {EnumerableMap} from "@openzeppelin/contracts/utils/structs/EnumerableMap.sol";
 import {AccessControl} from "@openzeppelin/contracts/access/AccessControl.sol";
@@ -47,9 +48,6 @@ contract MiddlewareVaultManager is IMiddlewareVaultManager, Ownable, AccessContr
         }
         if (middlewareAddress == address(0)) {
             revert MiddlewareVaultManager__ZeroAddress("middlewareAddress");
-        }
-        if (vaultRemovalEpochDelay_ == 0) {
-            revert MiddlewareVaultManager__InvalidVaultRemovalDelay();
         }
         VAULT_REGISTRY = vaultRegistry;
         middleware = AvalancheL1Middleware(payable(middlewareAddress));
@@ -138,8 +136,9 @@ contract MiddlewareVaultManager is IMiddlewareVaultManager, Ownable, AccessContr
             revert MiddlewareVaultManager__VaultNotDisabled();
         }
 
-        uint48 disabledEpoch = middleware.getEpochAtTs(disabledTime);
-        uint48 currentEpoch = middleware.getCurrentEpoch();
+        uint48 epochDuration = middleware.EPOCH_DURATION();
+        uint48 disabledEpoch = disabledTime / epochDuration;
+        uint48 currentEpoch = uint48(Time.timestamp() / epochDuration);
         if (currentEpoch < disabledEpoch + VAULT_REMOVAL_EPOCH_DELAY) {
             revert MiddlewareVaultManager__VaultGracePeriodNotPassed();
         }

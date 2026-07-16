@@ -1,0 +1,48 @@
+{
+  "component": "BishopStableSwapV2-2",
+  "main_contract": "BishopStableSwapV2",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BishopStableSwapV2-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x3d9f20e4f1f5ac1d5f24e271ce6364b2eed71ca6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400435"
+    },
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xd151ce31322aea25e4779678df0a3f376f9ffc6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400444"
+    },
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xec8bfa1d15842d6b670d11777a08c39b09a5ff00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400445"
+    }
+  ]
+}

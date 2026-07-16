@@ -1,8 +1,8 @@
 {
   "component": "AdminUpgradeabilityProxy",
   "main_contract": "AdminUpgradeabilityProxy",
-  "source_entry_count": 15,
-  "source_file_count": 15,
+  "source_entry_count": 4,
+  "source_file_count": 4,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -11,20 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://gitlab.com/EthicHub/minimice/-/blob/main/audits/EthicHub%20-%20Smart%20Contract%20Audit%20Report%20Final.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-42220",
-      "chain_id": 42220,
-      "address": "0x0f497a790429685a3cfd43b841865ee185378ff0",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfd09911130e6930bf87f2b0554c44f400bd80d3e",
       "is_proxy": true,
-      "implementation_address": "0xd27e312f4852b00dac9fe5dc582c0221849b7620",
-      "liveness": "live",
+      "implementation_address": "0x37679620e989fd42a87d3780bff6047335b0a2c1",
+      "liveness": "unknown",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "394391"
+      "logic_topography_row_id": "394388"
     }
   ]
 }

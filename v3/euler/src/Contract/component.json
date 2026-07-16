@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Contract\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://github.com/euler-xyz/evk-periphery/blob/master/audits/MixBytes%20CapRiskSteward.pdf"
@@ -20,6 +20,16 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xfe56caa36da676364e1a0a97e4f7c07651e89b95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x288943b893bfc700a3fc18da65dc11871d97fba6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

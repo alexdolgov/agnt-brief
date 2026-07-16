@@ -1,0 +1,104 @@
+{
+  "component": "NftSwap",
+  "main_contract": "NftSwap",
+  "source_entry_count": 15,
+  "source_file_count": 15,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/nft_swap/NftSwap.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-51db5a4d259e-NftSwap.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/openzeppelin/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-806c6b70261e-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-f9452aa74e72-IERC721Receiver.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-341f4e9b94d0-IERC721.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-5740428ffaf8-SafeERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-b3d33cfe7be9-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/openzeppelin/contracts/security/ReentrancyGuard.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-3171938c8970-ReentrancyGuard.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/openzeppelin/contracts/math/SafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-2e2bc7041c49-SafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/openzeppelin/contracts/introspection/IERC165.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-084587544b20-IERC165.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/openzeppelin/contracts/access/Ownable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-83cc0f59e7c1-Ownable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/openzeppelin/contracts/GSN/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-7da4a18ee8f6-Context.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/nft_swap/SwapSigner.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-744b2b72f4f0-SwapSigner.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/nft_swap/NftParamsInterface.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-5485577b7c2a-NftParamsInterface.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/nft_swap/Crowns.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-512a5dc8565b-Crowns.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/crowns/erc-20/contracts/CrownsToken/CrownsToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-3fa6a8d342ce-CrownsToken.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/NftSwap\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x8b4eba83ff7b2985924d05b9d0a064b9c6e3ff8f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

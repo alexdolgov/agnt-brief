@@ -80,8 +80,6 @@ contract VotingManagerOptimised is Ownable, ReentrancyGuard, Pausable {
     event PoolAdded(address indexed pool, address gauge);
     event PoolRemoved(address indexed pool);
 
-    event VaultSet(address indexed oldVault, address indexed newVault);
-
     event KeeperSet(address indexed who, bool status);
 
     event OracleConfigured(address indexed token, address indexed feed, uint48 maxStaleSec, bool enabled);
@@ -113,7 +111,7 @@ contract VotingManagerOptimised is Ownable, ReentrancyGuard, Pausable {
     event BribesPruned(address indexed pool, uint256 indexed epochId, uint256 removed, uint256 remaining);
 
     /* ----------------------------- Immutables ------------------------------- */
-    address public vault;
+    address public immutable vault;
     address public immutable voter;
     address public immutable treasury;
 
@@ -190,6 +188,7 @@ contract VotingManagerOptimised is Ownable, ReentrancyGuard, Pausable {
         voter = _voter;
         treasury = _treasury;
 
+        // allow ETH as bribe token (requires ETH/USD oracle to be set)
         allowedBribeTokens[address(0)] = true;
     }
 
@@ -859,13 +858,6 @@ contract VotingManagerOptimised is Ownable, ReentrancyGuard, Pausable {
     function setKeeper(address who, bool status) external onlyOwner {
         keepers[who] = status;
         emit KeeperSet(who, status);
-    }
-
-    function setVault(address newVault) external onlyOwner {
-        require(newVault != address(0), "zero");
-        address old = vault;
-        vault = newVault;
-        emit VaultSet(old, newVault);
     }
 
     function setParams(

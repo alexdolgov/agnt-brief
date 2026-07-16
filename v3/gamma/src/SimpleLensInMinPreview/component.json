@@ -1,0 +1,28 @@
+{
+  "component": "SimpleLensInMinPreview",
+  "main_contract": "SimpleLensInMinPreview",
+  "source_entry_count": 87,
+  "source_file_count": 87,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SimpleLensInMinPreview\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x05d647f51a933186d4945f2de1cad196537e30a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

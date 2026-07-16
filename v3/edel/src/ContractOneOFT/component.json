@@ -1,0 +1,28 @@
+{
+  "component": "ContractOneOFT",
+  "main_contract": "ContractOneOFT",
+  "source_entry_count": 40,
+  "source_file_count": 40,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ContractOneOFT\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x88c4c42ed68584ff02f5a00d5d3d985108a3961c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

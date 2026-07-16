@@ -1,0 +1,94 @@
+{
+  "component": "Network",
+  "main_contract": "Network",
+  "source_entry_count": 14,
+  "source_file_count": 14,
+  "source_path_remaps": [
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/governance/TimelockControllerUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-ba422bce8fe7-TimelockControllerUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-054bbd45a5d7-AccessControlUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-eef6d62e0404-IERC721ReceiverUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155ReceiverUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-0c19a72aba39-IERC1155ReceiverUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-3b0c8c6b876b-Initializable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/access/IAccessControlUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-18ae4c5f27f0-IAccessControlUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-e270656fefe5-ContextUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-25fb5ab60068-StringsUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-0e2cc24c5cdf-ERC165Upgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-749a3941ceec-IERC165Upgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-4f903944d1f2-AddressUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/math/MathUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-1e2c66d58666-MathUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/math/SignedMathUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-579e7999318c-SignedMathUpgradeable.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Network\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3d92e7d3a9aca6dc2e72399d88d4e131be5cd4de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

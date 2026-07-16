@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/OwnedUpgradeabilityProxy-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x055cc48f7968fd8640ef140610dd4038e1b03926",
+      "is_proxy": true,
+      "implementation_address": "0xcafea01c7ca7c05c056a030e5af7ae28a588d2b1",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "ethereum",
       "chain_id": 1,

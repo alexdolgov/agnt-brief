@@ -1,0 +1,28 @@
+{
+  "component": "WeightedPoolFactory-5",
+  "main_contract": "WeightedPoolFactory",
+  "source_entry_count": 54,
+  "source_file_count": 54,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WeightedPoolFactory-5\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd961e30156c2e0d0d925a0de45f931cb7815e970",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

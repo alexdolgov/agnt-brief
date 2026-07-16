@@ -1,0 +1,48 @@
+{
+  "component": "MangroveOrder",
+  "main_contract": "MangroveOrder",
+  "source_entry_count": 35,
+  "source_file_count": 35,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MangroveOrder\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x5ba0761ff644560529b0f54362c8f6024175928b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396419"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa3c363ca0ea3603faee9facffd65e777122adf36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396439"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x50793d97a0c905ea51c1c93f37fc73abe6d2ffcc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396444"
+    }
+  ]
+}

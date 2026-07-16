@@ -4,17 +4,50 @@ pragma solidity 0.8.17;
 
 import "@redstone-finance/evm-connector/contracts/core/ProxyConnector.sol";
 import "../facets/SolvencyFacetProd.sol";
-import "../facets/AssetsExposureController.sol";
+import "../interfaces/facets/IWithdrawalIntentFacet.sol";
 import "../DiamondHelper.sol";
 
 // TODO Rename to contract instead of lib
 contract SolvencyMethods is DiamondHelper, ProxyConnector {
+    // This function executes WithdrawalIntentFacet.getAvailableBalance()
+    function _getAvailableBalance(bytes32 _asset) internal virtual returns (uint256) {
+        return abi.decode(
+            proxyDelegateCalldata(
+                DiamondHelper._getFacetAddress(IWithdrawalIntentFacet.getAvailableBalance.selector),
+                abi.encodeWithSelector(IWithdrawalIntentFacet.getAvailableBalance.selector, _asset)
+            ),
+            (uint256)
+        );
+    }
+
+    // This function executes WithdrawalIntentFacet.getAvailableBalancePayable()
+    function _getAvailableBalancePayable(bytes32 _asset) internal virtual returns (uint256) {
+        return abi.decode(
+            proxyDelegateCalldata(
+                DiamondHelper._getFacetAddress(IWithdrawalIntentFacet.getAvailableBalancePayable.selector),
+                abi.encodeWithSelector(IWithdrawalIntentFacet.getAvailableBalancePayable.selector, _asset)
+            ),
+            (uint256)
+        );
+    }
+
     // This function executes SolvencyFacetProd.getDebt()
     function _getDebt() internal virtual returns (uint256 debt) {
         debt = abi.decode(
             proxyDelegateCalldata(
                 DiamondHelper._getFacetAddress(SolvencyFacetProd.getDebt.selector),
                 abi.encodeWithSelector(SolvencyFacetProd.getDebt.selector)
+            ),
+            (uint256)
+        );
+    }
+
+    // This function executes SolvencyFacetProd.getDebtPayable()
+    function _getDebtPayable() internal virtual returns (uint256 debt) {
+        debt = abi.decode(
+            proxyDelegateCalldata(
+                DiamondHelper._getFacetAddress(SolvencyFacetProd.getDebtPayable.selector),
+                abi.encodeWithSelector(SolvencyFacetProd.getDebtPayable.selector)
             ),
             (uint256)
         );
@@ -53,6 +86,17 @@ contract SolvencyMethods is DiamondHelper, ProxyConnector {
         );
     }
 
+    // This function executes SolvencyFacetProd.isSolventPayable()
+    function _isSolventPayable() internal virtual returns (bool solvent){
+        solvent = abi.decode(
+            proxyDelegateCalldata(
+                DiamondHelper._getFacetAddress(SolvencyFacetProd.isSolventPayable.selector),
+                abi.encodeWithSelector(SolvencyFacetProd.isSolventPayable.selector)
+            ),
+            (bool)
+        );
+    }
+
     // This function executes SolvencyFacetProd.canRepayDebtFully()
     function _canRepayDebtFully() internal virtual returns (bool solvent){
         solvent = abi.decode(
@@ -86,6 +130,28 @@ contract SolvencyMethods is DiamondHelper, ProxyConnector {
         );
     }
 
+    // This function executes SolvencyFacetProd.getThresholdWeightedValuePayable()
+    function _getThresholdWeightedValuePayable() public virtual returns (uint256 twv) {
+        twv = abi.decode(
+            proxyDelegateCalldata(
+                DiamondHelper._getFacetAddress(SolvencyFacetProd.getThresholdWeightedValuePayable.selector),
+                abi.encodeWithSelector(SolvencyFacetProd.getThresholdWeightedValuePayable.selector)
+            ),
+            (uint256)
+        );
+    }
+
+    // This function executes SolvencyFacetProd.getThresholdWeightedValuePayable()
+    function _getThresholdWeightedValue() public virtual returns (uint256 twv) {
+        twv = abi.decode(
+            proxyDelegateCalldata(
+                DiamondHelper._getFacetAddress(SolvencyFacetProd.getThresholdWeightedValue.selector),
+                abi.encodeWithSelector(SolvencyFacetProd.getThresholdWeightedValue.selector)
+            ),
+            (uint256)
+        );
+    }
+
     // This function executes SolvencyFacetProd.getHealthRatioWithPrices()
     function _getHealthRatioWithPrices(SolvencyFacetProd.CachedPrices memory cachedPrices) public virtual returns (uint256 health) {
         health = abi.decode(
@@ -109,9 +175,9 @@ contract SolvencyMethods is DiamondHelper, ProxyConnector {
     }
 
     // This function executes SolvencyFacetProd.getPrices()
-    function getPrices(bytes32[] memory symbols) public virtual returns (uint256[] memory prices) {
+    function getPrices(bytes32[] memory symbols) internal view virtual returns (uint256[] memory prices) {
         prices = abi.decode(
-            proxyDelegateCalldata(
+            proxyCalldataView(
                 DiamondHelper._getFacetAddress(SolvencyFacetProd.getPrices.selector),
                 abi.encodeWithSelector(SolvencyFacetProd.getPrices.selector, symbols)
             ),
@@ -174,10 +240,10 @@ contract SolvencyMethods is DiamondHelper, ProxyConnector {
         );
     }
 
-    // This function executes SolvencyFacetProd.getPrices()
-    function getPrice(bytes32 symbol) public virtual returns (uint256 price) {
+    // This function executes SolvencyFacetProd.getPrice()
+    function getPrice(bytes32 symbol) public view virtual returns (uint256 price) {
         price = abi.decode(
-            proxyDelegateCalldata(
+            proxyCalldataView(
                 DiamondHelper._getFacetAddress(SolvencyFacetProd.getPrice.selector),
                 abi.encodeWithSelector(SolvencyFacetProd.getPrice.selector, symbol)
             ),
@@ -185,21 +251,6 @@ contract SolvencyMethods is DiamondHelper, ProxyConnector {
         );
     }
 
-    // This function executes AssetsExposureController.decreaseAssetsExposure()
-    function _resetPrimeAccountAssetsExposure() public {
-        proxyDelegateCalldata(
-            DiamondHelper._getFacetAddress(AssetsExposureController.resetPrimeAccountAssetsExposure.selector),
-            abi.encodeWithSelector(AssetsExposureController.resetPrimeAccountAssetsExposure.selector)
-        );
-    }
-
-    // This function executes AssetsExposureController.increaseAssetsExposure()
-    function _setPrimeAccountAssetsExposure() public {
-        proxyDelegateCalldata(
-            DiamondHelper._getFacetAddress(AssetsExposureController.setPrimeAccountAssetsExposure.selector),
-            abi.encodeWithSelector(AssetsExposureController.setPrimeAccountAssetsExposure.selector)
-        );
-    }
 
     /**
      * Returns IERC20Metadata instance of a token
@@ -209,11 +260,18 @@ contract SolvencyMethods is DiamondHelper, ProxyConnector {
         return IERC20Metadata(DeploymentConstants.getTokenManager().getAssetAddress(_asset, allowInactive));
     }
 
-    modifier recalculateAssetsExposure() {
-        _resetPrimeAccountAssetsExposure();
-        _;
-        _setPrimeAccountAssetsExposure();
+    function _syncExposure(ITokenManager tokenManager, address _token) internal virtual {
+        // Tell TokenManager to update the exposure based on current on-chain balance.
+        tokenManager.updateUserExposure(address(this), _token);
+
+        // Optionally update local bookkeeping – e.g. add or remove the asset
+        if (IERC20Metadata(_token).balanceOf(address(this)) > 0) {
+            DiamondStorageLib.addOwnedAsset(tokenManager.tokenAddressToSymbol(_token), _token);
+        } else {
+            DiamondStorageLib.removeOwnedAsset(tokenManager.tokenAddressToSymbol(_token));
+        }
     }
+
 
     /**
     * Checks whether account is solvent (health higher than 1)
@@ -231,8 +289,16 @@ contract SolvencyMethods is DiamondHelper, ProxyConnector {
     }
 
     modifier noBorrowInTheSameBlock() {
-        DiamondStorageLib.DiamondStorage storage ds = DiamondStorageLib.diamondStorage();
-        require(ds._lastBorrowTimestamp != block.timestamp, "Borrowing must happen in a standalone transaction");
+        {
+            DiamondStorageLib.DiamondStorage storage ds = DiamondStorageLib.diamondStorage();
+            require(ds._lastBorrowTimestamp != block.timestamp, "Borrowing must happen in a standalone transaction");
+        }
+        _;
+    }
+
+    modifier noOwnershipTransferInLast24hrs() {
+        DiamondStorageLib.SmartLoanStorage storage sls = DiamondStorageLib.smartLoanStorage();
+        require(block.timestamp - sls.lastOwnershipTransferTimestamp > 1 days, "Ownership was transferred in the last 24 hours");
         _;
     }
 }

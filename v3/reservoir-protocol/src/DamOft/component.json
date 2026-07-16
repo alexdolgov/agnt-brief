@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/DamOft\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://drive.google.com/file/d/1JaIcwJRn169PGhnF_0nRd6E6bYvxmlNv/view?usp=drive_link",
@@ -26,6 +26,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "398364"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xc6eab56426ae6e0dfe72ec1ce2aaf73dae0e4ff4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "component": "SoDiamond",
+  "main_contract": "SoDiamond",
+  "source_entry_count": 3,
+  "source_file_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SoDiamond\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2967e7bb9daa5711ac332caf874bd47ef99b3820",
+      "is_proxy": true,
+      "implementation_address": "0xd8dec96b9e22a99f68d48cfb20cd6868a3dcc56b",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

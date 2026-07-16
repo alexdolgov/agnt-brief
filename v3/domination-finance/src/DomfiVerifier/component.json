@@ -10,12 +10,42 @@
     "build_command": "forge build --root \"src/DomfiVerifier\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
     "https://docs.domination.finance/assets/DomFi-security-review_2025-12-07.pdf"
   ],
   "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0c6a461aadbf4fc4e245fb1ea05eacd4c7722d0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x350bf8ac9990f2f5dfda719ff94da4dc241da27e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x49d57753b420c60b037543caddf1a7748ec1d1df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "base",
       "chain_id": 8453,

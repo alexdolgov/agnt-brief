@@ -1,0 +1,124 @@
+{
+  "component": "SuperTokenFactory-9",
+  "main_contract": "SuperTokenFactory",
+  "source_entry_count": 31,
+  "source_file_count": 31,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/superfluid/SuperTokenFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-568477de3c98-SuperTokenFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-926949fdebe5-UUPSUtils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-bc7d6667471e-UUPSProxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSProxiable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-e4b90b2e9bc6-UUPSProxiable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/tokens/FullUpgradableSuperTokenProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-9235e4eadd42-FullUpgradableSuperTokenProxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/superfluid/SuperfluidToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-f2ee45dbcbec-SuperfluidToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/superfluid/SuperToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-1a4cfda3972c-SuperToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libs/FixedSizeData.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-c522cacce708-FixedSizeData.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libs/ERC777Helper.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-820f128af295-ERC777Helper.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/tokens/TokenInfo.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-ca5e2b754708-TokenInfo.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/tokens/ERC20WithTokenInfo.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-01d2d1e0f0c0-ERC20WithTokenInfo.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluidToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-cf6d701ffbff-ISuperfluidToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluidGovernance.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-06d6c1047cdd-ISuperfluidGovernance.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluid.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-594374b1fc05-ISuperfluid.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperTokenFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-36ea094aed64-ISuperTokenFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-34547210e66b-ISuperToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperApp.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-fb8d34f36ef2-ISuperApp.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperAgreement.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-4c353ebd138d-ISuperAgreement.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/Definitions.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-b1dcca3375ba-Definitions.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SuperTokenFactory-9\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf2c284f4cddfe3edd0c526dc1dbca018c1da31ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

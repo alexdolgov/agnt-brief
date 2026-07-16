@@ -1,0 +1,28 @@
+{
+  "component": "CpuFrilessVerifier-3",
+  "main_contract": "CpuFrilessVerifier",
+  "source_entry_count": 33,
+  "source_file_count": 33,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CpuFrilessVerifier-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2867a4509b0969531641a42a3d4a9b0a07109b6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

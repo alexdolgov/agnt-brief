@@ -1,8 +1,8 @@
 {
   "component": "AuctionWithBuyoutLoanLiquidator-2",
   "main_contract": "AuctionWithBuyoutLoanLiquidator",
-  "source_entry_count": 25,
-  "source_file_count": 25,
+  "source_entry_count": 24,
+  "source_file_count": 24,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-999",
-      "chain_id": 999,
-      "address": "0xb166ec953fef89c6ee2e39e60fbd49b19cf4c6ad",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb3d88d4a1dcd26bd3adfca69194db7810c90ada2",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "394771"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

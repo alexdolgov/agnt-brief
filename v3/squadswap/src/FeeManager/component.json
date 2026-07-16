@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/FeeManager\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "399389"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc639f1a10c10df80500713dd8b7e2ef85f8d90e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

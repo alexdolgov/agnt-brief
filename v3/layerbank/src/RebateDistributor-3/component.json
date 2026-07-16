@@ -1,8 +1,8 @@
 {
   "component": "RebateDistributor-3",
   "main_contract": "RebateDistributor",
-  "source_entry_count": 1,
-  "source_file_count": 1,
+  "source_entry_count": 65,
+  "source_file_count": 65,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "linea",
       "chain_id": 59144,
-      "address": "0xea01659b66a682d41f4718bb62134ea8109fbfc6",
+      "address": "0x87bec95c9a414f9a83599138ba9e754d15f855bf",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "396001"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

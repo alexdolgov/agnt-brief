@@ -1,0 +1,28 @@
+{
+  "component": "ThickALMGaugeEquivalentFarmland-3",
+  "main_contract": "ThickALMGaugeEquivalentFarmland",
+  "source_entry_count": 3,
+  "source_file_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ThickALMGaugeEquivalentFarmland-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x02c88d4067988a0981ffd0bd0c34a6a2ed3ad6df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

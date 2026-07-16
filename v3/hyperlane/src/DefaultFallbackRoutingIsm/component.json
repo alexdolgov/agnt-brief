@@ -1,0 +1,79 @@
+{
+  "component": "DefaultFallbackRoutingIsm",
+  "main_contract": "DefaultFallbackRoutingIsm",
+  "source_entry_count": 22,
+  "source_file_count": 22,
+  "source_path_remaps": [
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-6336aa4821ec-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-67358fbca2f5-OwnableUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/utils/Strings.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-a9de94350f76-Strings.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/utils/structs/EnumerableMap.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-ec456f9b852b-EnumerableMap.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-a21a4f3fc847-EnumerableSet.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-e270656fefe5-ContextUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-3b0c8c6b876b-Initializable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/utils/math/Math.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-d6da9a7c860e-Math.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0020-3b801a01b361-SignedMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0022-4f903944d1f2-AddressUpgradeable.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DefaultFallbackRoutingIsm\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x00cff6a1e5450746158b8349bb99fa4803cbb476",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

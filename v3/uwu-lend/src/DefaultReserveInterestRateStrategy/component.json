@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/DefaultReserveInterestRateStrategy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 14,
+  "deployment_count": 15,
   "audited": true,
   "audits_covering": [
     "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-UWU-v1.0.pdf"
@@ -75,6 +75,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "400649"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1c0e90b5d9b0b1497979fdde0f08249bde2c69ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",

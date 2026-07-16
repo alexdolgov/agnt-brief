@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/LendingVault\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 4,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -33,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "393118"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb8c65ceb54b64950e0d3e80cd5dadcd7ebbeef6d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",

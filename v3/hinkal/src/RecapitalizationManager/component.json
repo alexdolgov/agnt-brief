@@ -1,0 +1,28 @@
+{
+  "component": "RecapitalizationManager",
+  "main_contract": "RecapitalizationManager",
+  "source_entry_count": 31,
+  "source_file_count": 31,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RecapitalizationManager\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd5d1acc9c7ebaf8bbf85c45aee2b8b3f3b1bd062",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

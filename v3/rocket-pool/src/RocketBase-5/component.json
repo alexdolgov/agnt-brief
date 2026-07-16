@@ -1,8 +1,8 @@
 {
   "component": "RocketBase-5",
   "main_contract": "RocketBase",
-  "source_entry_count": 18,
-  "source_file_count": 18,
+  "source_entry_count": 8,
+  "source_file_count": 8,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -13,20 +13,25 @@
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
+    "https://diligence.security/audits/2021/04/rocketpool",
     "https://diligence.security/audits/2023/12/rocket-pool-houston",
+    "https://rocketpool.net/files/audits/bailsec-audit-saturn-1.pdf",
     "https://rocketpool.net/files/audits/cantina-audit-saturn-1.pdf",
-    "https://rocketpool.net/files/audits/chainsafe-audit-houston.pdf"
+    "https://rocketpool.net/files/audits/consensys-audit-atlas.pdf",
+    "https://rocketpool.net/files/audits/sigma-prime-audit-houston.pdf",
+    "https://rocketpool.net/files/audits/sigma-prime-audit.pdf",
+    "https://rocketpool.net/files/sigma-prime-audit.pdf"
   ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x994a9c49230fec0c127b8f42d6c5288f02610aed",
+      "address": "0xaef94c3650aa13d7a2456477fc374a16b94b9152",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "403968"
+      "logic_topography_row_id": "403979"
     }
   ]
 }

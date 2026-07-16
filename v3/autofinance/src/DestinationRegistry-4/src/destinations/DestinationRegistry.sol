@@ -3,7 +3,7 @@
 
 pragma solidity ^0.8.24;
 
-import { Errors } from "src/utils/Errors.sol";
+import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
 import { SystemComponent } from "src/SystemComponent.sol";
 import { SecurityBase } from "src/security/SecurityBase.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
@@ -24,20 +24,20 @@ contract DestinationRegistry is SystemComponent, SecurityBase, IDestinationRegis
         bytes32[] calldata destinationTypes,
         address[] calldata targets
     ) public override hasRole(Roles.DESTINATION_VAULT_REGISTRY_MANAGER) {
-        Errors.verifyArrayLengths(destinationTypes.length, targets.length, "types+targets");
+        AutopilotErrors.verifyArrayLengths(destinationTypes.length, targets.length, "types+targets");
         for (uint256 i = 0; i < destinationTypes.length; ++i) {
             bytes32 destination = destinationTypes[i];
             if (!isWhitelistedDestination(destination)) {
                 revert NotAllowedDestination();
             }
             address target = targets[i];
-            Errors.verifyNotZero(target, "target");
+            AutopilotErrors.verifyNotZero(target, "target");
 
             if (address(destinations[destination]) != address(0)) {
                 revert DestinationAlreadySet();
             }
 
-            Errors.verifySystemsMatch(address(this), target);
+            AutopilotErrors.verifySystemsMatch(address(this), target);
 
             destinations[destination] = IDestinationAdapter(target);
         }
@@ -49,16 +49,16 @@ contract DestinationRegistry is SystemComponent, SecurityBase, IDestinationRegis
         bytes32[] calldata destinationTypes,
         address[] calldata targets
     ) public override hasRole(Roles.DESTINATION_VAULT_REGISTRY_MANAGER) {
-        Errors.verifyArrayLengths(destinationTypes.length, targets.length, "types+targets");
+        AutopilotErrors.verifyArrayLengths(destinationTypes.length, targets.length, "types+targets");
         for (uint256 i = 0; i < destinationTypes.length; ++i) {
             address target = targets[i];
-            Errors.verifyNotZero(target, "target");
+            AutopilotErrors.verifyNotZero(target, "target");
 
-            Errors.verifySystemsMatch(address(this), target);
+            AutopilotErrors.verifySystemsMatch(address(this), target);
 
             bytes32 destination = destinationTypes[i];
             IDestinationAdapter existingDestination = destinations[destination];
-            Errors.verifyNotZero(address(existingDestination), "existingDestination");
+            AutopilotErrors.verifyNotZero(address(existingDestination), "existingDestination");
 
             if (address(existingDestination) == target) {
                 revert DestinationAlreadySet();
@@ -74,7 +74,7 @@ contract DestinationRegistry is SystemComponent, SecurityBase, IDestinationRegis
     ) public override hasRole(Roles.DESTINATION_VAULT_REGISTRY_MANAGER) {
         for (uint256 i = 0; i < destinationTypes.length; ++i) {
             bytes32 destination = destinationTypes[i];
-            Errors.verifyNotZero(address(destinations[destination]), "destAddress");
+            AutopilotErrors.verifyNotZero(address(destinations[destination]), "destAddress");
             //slither-disable-next-line costly-loop
             delete destinations[destination];
         }
@@ -86,7 +86,7 @@ contract DestinationRegistry is SystemComponent, SecurityBase, IDestinationRegis
         bytes32 destinationType
     ) public view override returns (IDestinationAdapter target) {
         target = destinations[destinationType];
-        Errors.verifyNotZero(address(target), "target");
+        AutopilotErrors.verifyNotZero(address(target), "target");
     }
 
     /// @inheritdoc IDestinationRegistry
@@ -109,7 +109,7 @@ contract DestinationRegistry is SystemComponent, SecurityBase, IDestinationRegis
         for (uint256 i = 0; i < destinationTypes.length; ++i) {
             bytes32 destination = destinationTypes[i];
             if (!allowedTypes[destination]) {
-                revert Errors.ItemNotFound();
+                revert AutopilotErrors.ItemNotFound();
             }
             if (address(destinations[destination]) != address(0)) {
                 // cannot remove from whitelist already registered type – must unregister first

@@ -1,0 +1,28 @@
+{
+  "component": "BeefyFinanceArbitrumFacet-3",
+  "main_contract": "BeefyFinanceArbitrumFacet",
+  "source_entry_count": 78,
+  "source_file_count": 78,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BeefyFinanceArbitrumFacet-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb7918417add60e9f2a48d00cf4cab6de90ee2ba1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

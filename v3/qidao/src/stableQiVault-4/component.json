@@ -10,39 +10,59 @@
     "build_command": "forge build --root \"src/stableQiVault-4\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x3bcbac61456c9c9582132d1493a00e318ea9c122",
+      "address": "0x636e7372e359421623318ac0dbc60496972656b4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398166"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xd371281896f2f5f7a2c65f49d23a2b6ecfd594f3",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7f0e5732e418276d4d09dc6dca9d5f09c6bbf723",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398238"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xe47ca047cb7e6a9ade9405ca68077d63424f34ec",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9a05b116b56304f5f4b3f1d5da4641bffffae6ab",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398240"
+      "logic_topography_row_id": "398183"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb1f28350539b06d5a35d016908eef0424bd13c4b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398187"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb89d22f8e32e56335c3716ba6b2d9614917bad95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

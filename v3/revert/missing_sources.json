@@ -2,5 +2,12 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "revert",
-  "missing": []
+  "missing": [
+    {
+      "chain_id": 56,
+      "chain": "bsc",
+      "address": "0xf6d2daf6fd57b1498d60dfe2237c9b7f5735a376",
+      "canonical_source_address": "0x3eb0fffa1470cdd3725b9eb29aded2736144b078"
+    }
+  ]
 }

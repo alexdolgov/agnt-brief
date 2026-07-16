@@ -1,0 +1,28 @@
+{
+  "component": "BIFKN314FeeHookLegacyFix",
+  "main_contract": "BIFKN314FeeHookLegacyFix",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BIFKN314FeeHookLegacyFix\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x3aa19b923e93850b093d5c48c4971de0042bc262",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "component": "NFTStrategyFactory-5",
+  "main_contract": "NFTStrategyFactory",
+  "source_entry_count": 45,
+  "source_file_count": 45,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/NFTStrategyFactory-5\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa1a196b5be89be04a2c1dc71643689ce013c22e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

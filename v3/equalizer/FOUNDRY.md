@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/NonfungiblePositionManager"
+forge build --root "src/ThickALMGaugeEquivalentFarmland"
 ```
 
 ## Build every component

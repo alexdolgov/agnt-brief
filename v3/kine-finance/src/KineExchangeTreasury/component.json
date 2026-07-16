@@ -1,0 +1,64 @@
+{
+  "component": "KineExchangeTreasury",
+  "main_contract": "KineExchangeTreasury",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [
+    {
+      "original_path": "/Users/daixu/KINE/Codes/kine-protocol/contracts/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-c06c0d67b7ad-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/daixu/KINE/Codes/kine-protocol/contracts/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-74001b71f8e8-Context.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/daixu/KINE/Codes/kine-protocol/contracts/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-615825c2dc30-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/daixu/KINE/Codes/kine-protocol/contracts/KineExchangeTreasury.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-48ad86e9e6b2-KineExchangeTreasury.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/daixu/KINE/Codes/kine-protocol/contracts/KineSafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-a22a191d0c9e-KineSafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/daixu/KINE/Codes/kine-protocol/contracts/Ownable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-85ae6d3ae951-Ownable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/daixu/KINE/Codes/kine-protocol/contracts/SafeERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-9374be4212aa-SafeERC20.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/KineExchangeTreasury\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1568a7f0bdf67d37dc963c345dbc4a598859eba3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

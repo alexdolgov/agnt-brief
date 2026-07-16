@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0xe2996f6bc88ba0f2ad3a6e2a71ac55884ec9f74e",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xac9bf8eba6bd31f8e8c76f8e8b2aad0bd93f98dc",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398784"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

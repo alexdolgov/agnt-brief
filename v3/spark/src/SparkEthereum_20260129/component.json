@@ -1,0 +1,28 @@
+{
+  "component": "SparkEthereum_20260129",
+  "main_contract": "SparkEthereum_20260129",
+  "source_entry_count": 126,
+  "source_file_count": 126,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SparkEthereum_20260129\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa091bed493c27efaa4d6e06e32684eca0325adca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

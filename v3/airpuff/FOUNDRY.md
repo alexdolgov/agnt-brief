@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/<component>"
+forge build --root "src/AirPuff1XZircuitweETHM220824"
 ```
 
 ## Build every component

@@ -1,8 +1,8 @@
 {
   "component": "LiquidityPoolAave",
   "main_contract": "LiquidityPoolAave",
-  "source_entry_count": 39,
-  "source_file_count": 39,
+  "source_entry_count": 40,
+  "source_file_count": 40,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,21 +10,39 @@
     "build_command": "forge build --root \"src/LiquidityPoolAave\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf"
-  ],
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x7c255279c098fdf6c3116d2becd9978002c09f4b",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2022a5600f854cc3218e636239f4dfce9e5357b5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399330"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2022a5600f854cc3218e636239f4dfce9e5357b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2022a5600f854cc3218e636239f4dfce9e5357b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

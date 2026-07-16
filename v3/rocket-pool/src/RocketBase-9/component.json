@@ -14,7 +14,6 @@
   "audited": true,
   "audits_covering": [
     "https://diligence.security/audits/2023/12/rocket-pool-houston",
-    "https://rocketpool.net/files/audits/bailsec-audit-saturn-1.pdf",
     "https://rocketpool.net/files/audits/cantina-audit-saturn-1.pdf",
     "https://rocketpool.net/files/audits/chainsafe-audit-houston.pdf",
     "https://rocketpool.net/files/audits/sigma-prime-audit-houston.pdf"
@@ -23,12 +22,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xc9d771aaf504f33bb3c8a7e67ea9f1881f837cff",
+      "address": "0xe37f2d9dfb7397caf671df5190a5dfb601028f17",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "403987"
+      "logic_topography_row_id": "404003"
     }
   ]
 }

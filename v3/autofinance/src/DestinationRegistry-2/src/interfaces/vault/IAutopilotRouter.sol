@@ -140,38 +140,4 @@ interface IAutopilotRouter is IAutopilotRouterBase {
         address swapper,
         SwapParams memory swapParams
     ) external payable returns (uint256 amountReceived);
-
-    /**
-     * @notice stake Acc token balance
-     * @param duration The duration of the stake
-     * @param accToke contract address of the AccToke
-     * @param to The destination of ownership shares.
-     */
-    function stakeAccBalance(address accToke, uint256 duration, address to) external payable;
-
-    /**
-     * @notice stake Acc token for specified amount
-     * @param amount Amount of TOKE to stake
-     * @param accToke contract address of the AccToke
-     * @param duration The duration of the stake
-     * @param to The destination of ownership shares.
-     */
-    function stakeAcc(address accToke, uint256 amount, uint256 duration, address to) external payable;
-
-    /**
-     * @notice unstake Acc token balance
-     * @param accToke contract address of the AccToke
-     * @param lockupIds The lockup ids to unstake
-     * @param to The destination of staked TOKE.
-     */
-    function unstakeAcc(address accToke, uint256[] memory lockupIds, address to) external payable;
-
-    /**
-     * @notice Collect staking rewards
-     * @dev rewards can only be sent to user or router
-     * @param accToke contract address of the AccToke
-     * @param recipient The recipient of the rewards
-     * @return amountReceived Swap output amount
-     */
-    function collectAccTokeRewards(address accToke, address recipient) external payable returns (uint256);
 }

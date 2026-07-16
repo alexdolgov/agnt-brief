@@ -1,8 +1,8 @@
-// This contract is part of Zellic’s smart contract dataset, which is a collection of publicly available contract code gathered as of March 2023.
+// File: contracts/intf/IDODOApprove.sol
 
 /*
 
-    Copyright 2020 DODO ZOO.
+    Copyright 2021 DODO ZOO.
     SPDX-License-Identifier: Apache-2.0
 
 */
@@ -13,6 +13,8 @@ interface IDODOApprove {
     function claimTokens(address token,address who,address dest,uint256 amount) external;
     function getDODOProxy() external view returns (address);
 }
+
+// File: contracts/lib/InitializableOwnable.sol
 
 
 /**
@@ -64,7 +66,7 @@ contract InitializableOwnable {
     }
 }
 
-
+// File: contracts/SmartRoute/DODOApproveProxy.sol
 
 
 interface IDODOApproveProxy {
@@ -146,6 +148,7 @@ contract DODOApproveProxy is InitializableOwnable {
     }
 }
 
+// File: contracts/SmartRoute/intf/IDODOV2.sol
 
 
 interface IDODOV2 {
@@ -230,13 +233,13 @@ interface IDODOV2 {
         address[] memory tokens,
         uint256[] memory timeLine,
         uint256[] memory valueList,
-        bool[] memory switches,
-        int globalQuota
+        bool[] memory switches
     ) external;
 
     function bid(address to) external;
 }
 
+// File: contracts/intf/IERC20.sol
 
 
 /**
@@ -309,6 +312,7 @@ interface IERC20 {
     ) external returns (bool);
 }
 
+// File: contracts/lib/SafeMath.sol
 
 
 
@@ -366,7 +370,7 @@ library SafeMath {
     }
 }
 
-
+// File: contracts/lib/SafeERC20.sol
 
 
 /**
@@ -445,6 +449,8 @@ library SafeERC20 {
     }
 }
 
+// File: contracts/intf/IWETH.sol
+
 
 
 interface IWETH {
@@ -469,6 +475,7 @@ interface IWETH {
     function withdraw(uint256 wad) external;
 }
 
+// File: contracts/lib/ReentrancyGuard.sol
 
 
 /**
@@ -490,10 +497,7 @@ contract ReentrancyGuard {
     }
 }
 
-
-
-
-
+// File: contracts/SmartRoute/proxies/DODOCpProxy.sol
 
 
 
@@ -544,8 +548,7 @@ contract DODOCpProxy is ReentrancyGuard {
         uint256[] memory timeLine,
         uint256[] memory valueList,
         bool[] memory switches,
-        uint256 deadLine,
-        int globalQuota
+        uint256 deadLine
     ) external payable preventReentrant judgeExpired(deadLine) returns (address payable newCrowdPooling) {
         address _baseToken = baseToken;
         address _quoteToken = quoteToken == _ETH_ADDRESS_ ? _WETH_ : quoteToken;
@@ -573,8 +576,7 @@ contract DODOCpProxy is ReentrancyGuard {
             tokens,
             timeLine,
             valueList,
-            switches,
-            globalQuota
+            switches
         );
     }
 

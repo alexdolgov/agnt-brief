@@ -1,0 +1,54 @@
+{
+  "component": "MasterChef",
+  "main_contract": "MasterChef",
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [
+    {
+      "original_path": "/D/Projects/goldengoose/contracts/EggToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-0bce391c2f0e-EggToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/D/Projects/goldengoose/contracts/MasterChef.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-3e0b9bb33e29-MasterChef.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/D/Projects/goldengoose/contracts/libs/BEP20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-e898456e5a45-BEP20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/D/Projects/goldengoose/contracts/libs/IBEP20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-86477de96c7f-IBEP20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/D/Projects/goldengoose/contracts/libs/SafeBEP20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-6be45221d169-SafeBEP20.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MasterChef\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe70e9185f5ea7ba3c5d63705784d8563017f2e57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

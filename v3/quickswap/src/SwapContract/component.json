@@ -1,0 +1,124 @@
+{
+  "component": "SwapContract",
+  "main_contract": "SwapContract",
+  "source_entry_count": 19,
+  "source_file_count": 19,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/SwapContract.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-a54ee4a541dc-SwapContract.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/node_modules/@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-467f410a39a1-IUniswapV2Router02.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/node_modules/@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-89c108f2bc77-IUniswapV2Router01.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-cb479ae28e67-IERC165.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-0cd413c8f40d-ERC165.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/node_modules/@openzeppelin/contracts/utils/Strings.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-395e14b0c3a3-Strings.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/node_modules/@openzeppelin/contracts/utils/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-ad8b16f99426-Context.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/node_modules/@openzeppelin/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-1d0697ee9d97-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-0c3e8e25e2d6-SafeERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-d7c40b04e6e0-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-ca5a0405a016-Pausable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/node_modules/@openzeppelin/contracts/access/IAccessControl.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-63ae9596afd4-IAccessControl.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/node_modules/@openzeppelin/contracts/access/AccessControl.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-595fdff91ebb-AccessControl.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libraries/FullMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-e16e8a002630-FullMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libraries/ECDSAOffsetRecovery.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-9a876fc9b672-ECDSAOffsetRecovery.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/ISwapContract.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-d5f17242e9e0-ISwapContract.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/base/SwapContractV2.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-7bbc2e844069-SwapContractV2.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/base/SwapBase.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-66d652592ed6-SwapBase.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/base/Storage.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-90d1399ab6ab-Storage.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SwapContract\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3d92144100f58160bdfffc296389ee32b6525915",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

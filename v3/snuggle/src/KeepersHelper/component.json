@@ -10,21 +10,39 @@
     "build_command": "forge build --root \"src/KeepersHelper\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://www.snuggle.fi/security"
-  ],
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x60431b5b580516817f095534d6d1e3552f563345",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0e7edc3856349ed0126f863cc39fc9bc008f9869",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399054"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x40822950decff42a590e577fcb0b39b3fdea716f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc962c991dc53fd185673546d7467377f708ad7d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

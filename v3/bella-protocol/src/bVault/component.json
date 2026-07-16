@@ -1,0 +1,99 @@
+{
+  "component": "bVault",
+  "main_contract": "bVault",
+  "source_entry_count": 13,
+  "source_file_count": 13,
+  "source_path_remaps": [
+    {
+      "original_path": "/home/ubuntu/flex-saving/node_modules/@openzeppelin/contracts/GSN/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-98a3f377bcd3-Context.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ubuntu/flex-saving/node_modules/@openzeppelin/contracts/math/SafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-73329f5cc709-SafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ubuntu/flex-saving/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-995529ff80fa-ERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ubuntu/flex-saving/node_modules/@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-1ecba2e760e7-ERC20Detailed.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ubuntu/flex-saving/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-649b8cd9bc41-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ubuntu/flex-saving/node_modules/@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-2b73f50d2bc7-SafeERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ubuntu/flex-saving/node_modules/@openzeppelin/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-c67fcf73e9b5-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/ubuntu/flex-saving/node_modules/@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-a6893e31f6fb-ReentrancyGuard.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/bVault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3fb6b07d77dace1ba6b5f6ab1d8668643d15a2cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x750d30a8259e63ed72a075f5b6630f08ce7996d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8016907d54ed8bcf5da100c4d0eb434c0185dc0e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8d9a39706d3b66446a298f1ae735730257ec6108",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

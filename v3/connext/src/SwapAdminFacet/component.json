@@ -1,0 +1,28 @@
+{
+  "component": "SwapAdminFacet",
+  "main_contract": "SwapAdminFacet",
+  "source_entry_count": 31,
+  "source_file_count": 31,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SwapAdminFacet\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x0645265e254caeb175d75890259db3696e7a81ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

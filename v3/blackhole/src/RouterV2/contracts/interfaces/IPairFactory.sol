@@ -10,5 +10,4 @@ interface IPairFactory {
     function createPair(address tokenA, address tokenB, bool stable) external returns (address pair);
     function isGenesis(address pair) external view returns (bool);
     function getFee(address _pairAddress, bool _stable) external view returns(uint256);
-    function pairGenerator() external view returns (address);
 }

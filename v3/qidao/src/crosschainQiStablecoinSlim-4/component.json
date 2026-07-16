@@ -1,8 +1,8 @@
 {
   "component": "crosschainQiStablecoinSlim-4",
   "main_contract": "crosschainQiStablecoinSlim",
-  "source_entry_count": 4,
-  "source_file_count": 4,
+  "source_entry_count": 1,
+  "source_file_count": 1,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x014a177e9642d1b4e970418f894985dc1b85657f",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x062016cd29fabb26c52bab646878987fc9b0bc55",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398149"
+      "logic_topography_row_id": "398142"
     }
   ]
 }

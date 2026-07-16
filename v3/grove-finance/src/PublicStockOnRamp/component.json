@@ -1,0 +1,28 @@
+{
+  "component": "PublicStockOnRamp",
+  "main_contract": "PublicStockOnRamp",
+  "source_entry_count": 48,
+  "source_file_count": 48,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PublicStockOnRamp\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0d0051527b57ec296dcb6f28ff8e7c0820373c0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

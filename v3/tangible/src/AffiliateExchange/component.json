@@ -1,0 +1,28 @@
+{
+  "component": "AffiliateExchange",
+  "main_contract": "AffiliateExchange",
+  "source_entry_count": 35,
+  "source_file_count": 35,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AffiliateExchange\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xad437bb2e6ce7b25be9cd9a396cdf2cfe0551f24",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

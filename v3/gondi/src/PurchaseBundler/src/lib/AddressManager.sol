@@ -30,7 +30,7 @@ contract AddressManager is Owned, ReentrancyGuard {
 
     uint16 private _lastAdded;
 
-    constructor(address[] memory _original) Owned(msg.sender) {
+    constructor(address[] memory _original) Owned(tx.origin) {
         uint256 total = _original.length;
         for (uint256 i; i < total;) {
             _add(_original[i]);

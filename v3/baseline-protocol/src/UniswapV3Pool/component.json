@@ -1,0 +1,28 @@
+{
+  "component": "UniswapV3Pool",
+  "main_contract": "UniswapV3Pool",
+  "source_entry_count": 31,
+  "source_file_count": 31,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UniswapV3Pool\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdfcfdf5dd0569d591e0bce28b5da3b13de09e3cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391964"
+    }
+  ]
+}

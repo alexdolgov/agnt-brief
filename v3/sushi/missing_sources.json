@@ -2,5 +2,12 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "sushi",
-  "missing": []
+  "missing": [
+    {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0xf70c086618dcf2b1a461311275e00d6b722ef914",
+      "canonical_source_address": "0x0be808376ecb75a5cf9bb6d237d16cd37893d904"
+    }
+  ]
 }

@@ -19,18 +19,4 @@ interface IRamsesV3PositionManager is INonfungiblePositionManager {
     /// @param tokenId The ID of the token to claim rewards from
     /// @param tokens an array of reward tokens to claim
     function getReward(uint256 tokenId, address[] calldata tokens) external payable;
-    
-    /// @notice Claims gauge rewards for a specific period
-    /// @dev Allows users to claim rewards for specific periods when they have accumulated many unclaimed periods
-    /// @dev Made payable to support multicall operations with ETH
-    /// @param period The specific period to claim rewards for (must be <= current period)
-    /// @param tokenId The ID of the token to claim rewards from  
-    /// @param tokens Array of reward tokens to claim
-    /// @param receiver The address to send the rewards to
-    function getPeriodReward(
-        uint256 period,
-        uint256 tokenId,
-        address[] calldata tokens,
-        address receiver
-    ) external payable;
 }

@@ -1,6 +1,6 @@
 # kuma-protocol — deployments
 
-11 verified deployment(s) across 8 component(s).
+13 verified deployment(s) across 10 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -15,3 +15,5 @@
 | linea | `0x3d0a18c6bddd2e03ddd0ea26ed2bb9c6f83a3a9a` | KUMABondToken-2 | impl | live | no |
 | linea | `0xb9cee0c302ef2844ef78f41800ce73c13b6a52ae` | KUMAAccessController-2 | impl | live | no |
 | polygon | `0x76d8b79fb9afd4da89913458c90b6c09676628e2` | RateProvider | impl | live | no |
+| polygon | `0x8054d4d130c3a84852f379424bcac75673a7486b` | PaUSD | impl | live | no |
+| polygon | `0x83d8ca70144d55f74ad3c5eb3336b4163bca1227` | FeeDistributor | impl | live | no |

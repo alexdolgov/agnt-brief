@@ -1,0 +1,28 @@
+{
+  "component": "LiquidityManager-11",
+  "main_contract": "LiquidityManager",
+  "source_entry_count": 47,
+  "source_file_count": 47,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LiquidityManager-11\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc288bb3ab9ec304b9d9531642000716d12efbcce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

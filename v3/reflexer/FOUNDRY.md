@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/DSDelegateToken"
+forge build --root "src/CollateralJoin1"
 ```
 
 ## Build every component

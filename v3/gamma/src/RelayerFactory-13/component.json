@@ -1,0 +1,28 @@
+{
+  "component": "RelayerFactory-13",
+  "main_contract": "RelayerFactory",
+  "source_entry_count": 64,
+  "source_file_count": 64,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RelayerFactory-13\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xa82eb77d78d417da291f5e31cff7664f6cf9a387",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

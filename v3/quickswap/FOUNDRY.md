@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/UniswapV2Router01"
+forge build --root "src/AlmPluginImplementation"
 ```
 
 ## Build every component

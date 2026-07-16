@@ -5,7 +5,7 @@ pragma solidity ^0.8.24;
 import { IERC20, SafeERC20 } from "openzeppelin-contracts/token/ERC20/utils/SafeERC20.sol";
 import { ReentrancyGuard } from "openzeppelin-contracts/security/ReentrancyGuard.sol";
 
-import { Errors } from "src/utils/Errors.sol";
+import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
 import { ISyncSwapper } from "src/interfaces/swapper/ISyncSwapper.sol";
 import { ISwapRouter } from "src/interfaces/swapper/ISwapRouter.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
@@ -25,7 +25,7 @@ contract SwapRouter is SystemComponent, ISwapRouter, SecurityBase, ReentrancyGua
         address vaultAddress
     ) {
         IDestinationVaultRegistry destinationVaultRegistry = systemRegistry.destinationVaultRegistry();
-        if (!destinationVaultRegistry.isRegistered(vaultAddress)) revert Errors.AccessDenied();
+        if (!destinationVaultRegistry.isRegistered(vaultAddress)) revert AutopilotErrors.AccessDenied();
         _;
     }
 
@@ -38,10 +38,10 @@ contract SwapRouter is SystemComponent, ISwapRouter, SecurityBase, ReentrancyGua
         address assetToken,
         SwapData[] calldata _swapRoute
     ) external hasRole(Roles.SWAP_ROUTER_MANAGER) {
-        Errors.verifyNotZero(assetToken, "assetToken");
+        AutopilotErrors.verifyNotZero(assetToken, "assetToken");
 
         uint256 length = _swapRoute.length;
-        if (length == 0) revert Errors.InvalidParams();
+        if (length == 0) revert AutopilotErrors.InvalidParams();
 
         address quoteToken = _swapRoute[length - 1].token;
         delete swapRoutes[assetToken][quoteToken];
@@ -51,11 +51,11 @@ contract SwapRouter is SystemComponent, ISwapRouter, SecurityBase, ReentrancyGua
         for (uint256 hop = 0; hop < length; ++hop) {
             SwapData memory route = _swapRoute[hop];
 
-            Errors.verifyNotZero(route.token, "swap token");
-            Errors.verifyNotZero(route.pool, "swap pool");
-            Errors.verifyNotZero(address(route.swapper), "swap swapper");
+            AutopilotErrors.verifyNotZero(route.token, "swap token");
+            AutopilotErrors.verifyNotZero(route.pool, "swap pool");
+            AutopilotErrors.verifyNotZero(address(route.swapper), "swap swapper");
 
-            if (address(route.swapper.router()) != address(this)) revert Errors.InvalidParams();
+            if (address(route.swapper.router()) != address(this)) revert AutopilotErrors.InvalidParams();
 
             route.swapper.validate(fromToken, route);
 
@@ -86,10 +86,10 @@ contract SwapRouter is SystemComponent, ISwapRouter, SecurityBase, ReentrancyGua
         address quoteToken,
         uint256 minBuyAmount
     ) internal returns (uint256) {
-        if (sellAmount == 0) revert Errors.ZeroAmount();
-        if (assetToken == quoteToken) revert Errors.InvalidParams();
-        Errors.verifyNotZero(assetToken, "assetToken");
-        Errors.verifyNotZero(quoteToken, "quoteToken");
+        if (sellAmount == 0) revert AutopilotErrors.ZeroAmount();
+        if (assetToken == quoteToken) revert AutopilotErrors.InvalidParams();
+        AutopilotErrors.verifyNotZero(assetToken, "assetToken");
+        AutopilotErrors.verifyNotZero(quoteToken, "quoteToken");
 
         SwapData[] memory routes = swapRoutes[assetToken][quoteToken];
         uint256 length = routes.length;

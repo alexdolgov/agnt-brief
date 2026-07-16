@@ -1,0 +1,28 @@
+{
+  "component": "L2WstETHToken",
+  "main_contract": "L2WstETHToken",
+  "source_entry_count": 23,
+  "source_file_count": 23,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/L2WstETHToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x38224d52ecc979aedfeb31b1eea0cfcebd55247e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402028"
+    }
+  ]
+}

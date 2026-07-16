@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x47a65e74dd6b6b5e3243dbb01eded9d55ba234ad",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8f3fb1f9148dc473453163bf31de1d830eb5c590",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393945"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

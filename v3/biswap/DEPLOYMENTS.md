@@ -1,10 +1,65 @@
 # biswap — deployments
 
-4 verified deployment(s) across 4 component(s).
+59 verified deployment(s) across 9 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| bsc | `0x00a142210f6b3bb3f78751dcd7b589e9e7b39346` | SmartChef-3 | impl | live | no |
+| bsc | `0x00d2d8352fb688d8d60ae128cb171ef2ecfff1d4` | SmartChef | impl | live | no |
+| bsc | `0x015c8be8d944b0190a8c7280ca874169713a44c1` | SmartChef | impl | live | no |
+| bsc | `0x0189521e47093a317568055452ff66ebd3b731a9` | SmartChef | impl | live | no |
+| bsc | `0x0999758d218987296c798326a0378995340c1e1b` | SmartChef-2 | impl | live | no |
+| bsc | `0x0c1e98645a1ee7f7a72e7491d77ae39676e457c9` | SmartChef | impl | live | no |
 | bsc | `0x0eb6949e725a295ecb3beacfc3766610bc970bef` | SmartRouter | impl | live | no |
+| bsc | `0x109eaa8b5ea469fb5ace0647a93695d8dcd5e836` | SmartChef-2 | impl | live | no |
+| bsc | `0x12e5b44374d4cc032800f87af9c3671ba2d93c3f` | SmartChef | impl | live | no |
+| bsc | `0x13e9031133e901d5214fb4d593df8ecc034c8237` | SmartChef-2 | impl | live | no |
+| bsc | `0x1c3c5c8f97cad892a71ad090b5f8a161e4661492` | SmartChef | impl | live | no |
+| bsc | `0x1f337dea1679730906f46a06fd6034054bd32970` | SmartChef | impl | live | no |
+| bsc | `0x2792ccd3f02a22beba49f28f3ab0b52df18bd280` | SmartChef | impl | live | no |
+| bsc | `0x2968daed4da7f9fa3edb63bf64b1c924aead6a46` | SmartChef | impl | live | no |
+| bsc | `0x36fc9ceadab79156e39f164cc7f7fe987128860f` | SmartChef | impl | live | no |
+| bsc | `0x3a6d8ca21d1cf76f653a67577fa0d27453350dd8` | BiswapRouter02 | impl | live | no |
+| bsc | `0x50945a039421ebb59ed119b0d25ffd007f0358ac` | SmartChef-2 | impl | live | no |
+| bsc | `0x53c60a2a4154065111119ebc78265dcac7bd9891` | SmartChef | impl | live | no |
+| bsc | `0x62cfcc37ec021bd245e8307e839d62b30d258373` | SmartChef | impl | live | no |
+| bsc | `0x66ac2add22e63fa351344430b942b9368dd955ae` | SmartChef | impl | live | no |
+| bsc | `0x69c4c9cf979431da6c4b4a2f3874e6378dfc8157` | SmartChef | impl | live | no |
+| bsc | `0x7468aff7cff81ec2391b73e91cfda3a68833bebd` | SmartChef-2 | impl | live | no |
+| bsc | `0x7517c3d01e931062b7cb2155ccc75e5b29358dc6` | SmartChef | impl | live | no |
+| bsc | `0x7951bc4f2bee7a642a8b3cf7d34c398e8e6fafc0` | SmartChef | impl | live | no |
+| bsc | `0x81af4b68bca0b5a631e60aa69f678a0e0ebc5d61` | SmartChef | impl | live | no |
+| bsc | `0x85028191179610cf7fcb780d0431921409de5bbb` | SmartChef | impl | live | no |
+| bsc | `0x858e3312ed3a876947ea49d572a7c42de08af7ee` | BiswapFactory | impl | live | no |
+| bsc | `0x8b10e6959f2915f532fe142b9c53b167eec42ff4` | SmartChef | impl | live | no |
+| bsc | `0x8d87f0282218f9e6fcdb5567c506f97d44105e71` | SmartChef | impl | live | no |
+| bsc | `0x8ddfcdca3019518feb2a06d42748869b2c916f2d` | SmartChef | impl | live | no |
 | bsc | `0x965f527d9159dce6288a2219db51fc6eef120dd1` | BSWToken | impl | live | no |
+| bsc | `0x973304a8e7b13dc9a26769e85d7cc945f4fda649` | SmartChef | impl | live | no |
+| bsc | `0x994f7b32eea35ade9b8bfd3cef19e9b6efe0cb24` | SmartChef | impl | live | no |
+| bsc | `0x9b0111326b87d4ff67542c5a5fd719e506892c03` | SmartChef | impl | live | no |
+| bsc | `0x9b9f3f1112e74765518ce93b1489c70f6db52bff` | SmartChef | impl | live | no |
+| bsc | `0xa394dd5adc4aaf41aa1f9cff28158a6af2823459` | SmartChef | impl | live | no |
+| bsc | `0xaa2b37d023ffa244022a9aa60eeb351cc79fd4e5` | SmartChef | impl | live | no |
+| bsc | `0xab4592fc5a7f4f0f1829338a2dc85b4ad28a4784` | SmartChef | impl | live | no |
+| bsc | `0xacb2f1d90bd3d182bdc9b9fce799efbe18e496f2` | SmartChef-2 | impl | live | no |
+| bsc | `0xb12c5543a277bd3c6190753474db4e04412f57b6` | SmartChef-2 | impl | live | no |
+| bsc | `0xc506769a21ecccd719c89fc44e31b1ecdc81e920` | SmartChef | impl | live | no |
+| bsc | `0xc7ba45cb131c93816fa03e4c03da22b22f2ac468` | SmartChef | impl | live | no |
+| bsc | `0xcc1b012ad72736653e1e5043d902a4081f3f6a73` | SmartChef | impl | live | no |
+| bsc | `0xd4855892a3188da76da0066b9e4918939511e67a` | SmartChef | impl | live | no |
+| bsc | `0xd59227c5fb89e812c42a5ed12c71de83dc5f3161` | SmartChef | impl | live | no |
 | bsc | `0xdbc1a13490deef9c3c12b44fe77b503c1b061739` | MasterChef | impl | live | no |
+| bsc | `0xe018d66f21c6f2ac93b652428df9d1755401831d` | SmartChef | impl | live | no |
+| bsc | `0xe056fb8ce6a3437530b1aff799185a009b25990b` | SmartChef | impl | live | no |
+| bsc | `0xe42d17b1a734e04d2e0cb33234ab074e21c175a7` | SmartChef | impl | live | no |
+| bsc | `0xe6c58b1626c2960d334c7996c999450d6dcb9cc5` | SmartChef | impl | live | no |
+| bsc | `0xe737edf3de0ace760d5497610ef2f317a43673a8` | SmartChef | impl | live | no |
+| bsc | `0xeb81346e00aba3d5b90ad42c1f02bd3c200540b7` | SmartChef-2 | impl | live | no |
+| bsc | `0xeeee294dcad6fe1f213988b82f45718d95d8e193` | SmartChef | impl | live | no |
+| bsc | `0xf31f62a6afb0546771a821e0f98fd187ee7f7d4c` | SmartChef | impl | live | no |
+| bsc | `0xf4540b8dd7b957ca9b1acdbf75ec6b6f17950f0d` | SmartChef | impl | live | no |
+| bsc | `0xf54c23398fdbd72ab1d1708099d5faad84cd9ff1` | SmartChef-2 | impl | live | no |
+| bsc | `0xf62e2321b04248a381bbac9ed2ac788775d1c899` | SmartChef | impl | live | no |
+| bsc | `0xfd6820eca12a8dd9e92b1bbb7dfc9f4afa367275` | SmartChef-2 | impl | live | no |
 | ethereum | `0x66e09ec17629574a0cc8abc480b0c2572fcd6985` | InterchainToken | impl | live | no |

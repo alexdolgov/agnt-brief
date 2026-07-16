@@ -1,0 +1,38 @@
+{
+  "component": "EthPeggedOracle-2",
+  "main_contract": "EthPeggedOracle",
+  "source_entry_count": 63,
+  "source_file_count": 63,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EthPeggedOracle-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xac2087a70d132e07e7cec947c166a3733d754a5e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xa6e5ace475b117c66ffe5a0baf5e09867dacf562",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391888"
+    }
+  ]
+}

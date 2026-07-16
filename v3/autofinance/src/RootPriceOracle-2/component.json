@@ -1,8 +1,8 @@
 {
   "component": "RootPriceOracle-2",
   "main_contract": "RootPriceOracle",
-  "source_entry_count": 66,
-  "source_file_count": 66,
+  "source_entry_count": 60,
+  "source_file_count": 60,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xe84cea5553cc9d65166a7850dab2e7712072d97f",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x61f8be7fd721e80c0249829eae6f0daf21bc2cac",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live",
+      "liveness": "unknown",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391856"
+      "logic_topography_row_id": "391591"
     }
   ]
 }

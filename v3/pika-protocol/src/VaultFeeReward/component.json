@@ -1,8 +1,8 @@
 {
   "component": "VaultFeeReward",
   "main_contract": "VaultFeeReward",
-  "source_entry_count": 9,
-  "source_file_count": 9,
+  "source_entry_count": 12,
+  "source_file_count": 12,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x0e431ea7e58e15a18f3334e3a6d195917fe1011a",
+      "address": "0x060c4cb78f1a4508ad84cf2a65c6df9afe3253fe",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "397803"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

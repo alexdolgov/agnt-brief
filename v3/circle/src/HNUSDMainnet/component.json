@@ -1,0 +1,28 @@
+{
+  "component": "HNUSDMainnet",
+  "main_contract": "HNUSDMainnet",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HNUSDMainnet\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc7175273dddd9fd0b5846a86229aec9ed4c7d20d",
+      "is_proxy": true,
+      "implementation_address": "0xfb72418333871a8f44196c1bccc86f3b7fd27a8b",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -8,6 +8,12 @@
       "chain": "gnosis",
       "address": "0x319c3936043611c6a47f997f14b9c91a455ea8f4",
       "canonical_source_address": null
+    },
+    {
+      "chain_id": 137,
+      "chain": "polygon",
+      "address": "0xa49b0c641f4d45827d5ead0a4fa7e26ae533b627",
+      "canonical_source_address": "0x5dc8cd04f0c3529a113c693efc08b95c2d9a6045"
     }
   ]
 }

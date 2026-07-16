@@ -1,11 +1,70 @@
 # renzo — deployments
 
-5 verified deployment(s) across 3 component(s).
+64 verified deployment(s) across 54 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x1120ea466b51e86be7cacc0ed5b0d7021eb17fb4` | HyperlaneSender | impl | unknown | no |
+| arbitrum | `0x2efa125b4fcd5b082a4233ba55b53feb2fb4ff33` | PaymentSplitter | proxy | unknown | no |
+| arbitrum | `0x3bedea15ab20d75aa858d42771f3ec09638b2cd2` | RenzoOracleL2 | impl | unknown | no |
+| arbitrum | `0x41255f463796e0852982783666751694bb50ae44` | EthArbValueTransfer | impl | unknown | no |
+| base | `0x02926b7b56dc41c1aa676a41eb4affc85b505b6a` | SentryDelegation | impl | unknown | no |
+| base | `0x03d8c4787dcbaeaff7f1d22fb881f45c3a2ebc73` | KeeperRegistry | impl | unknown | no |
+| base | `0x041e34f9b697c36e2ec56b8d8b4ada1769260343` | PaymentSplitter | proxy | unknown | no |
+| base | `0x052ac4e2116a83257890b4df600d95494aee3207` | WethDecoderAndSanitizer | impl | unknown | no |
+| base | `0x060ab33ea78c527bbaea7f633fb5ebf22ed7d2d0` | AerodromeRouterDecoderAndSanitizer | impl | unknown | no |
+| base | `0x062e9f976539f3b0378788f4c0c1846753de6d33` | ERC20DecoderAndSanitizer | impl | unknown | no |
+| base | `0x0683c3cc018fb76874fdcc8620d15c4e467e34ca` | STETHShim | impl | unknown | no |
+| base | `0x10586b9b7ff0f842913a57539f8167ce143c3011` | LEZyVaultFactory | impl | unknown | no |
+| base | `0x227d2155fc4f893e095e8de24118baca0fd6b3e4` | CowSwapPresignDecoderAndSanitizer | impl | unknown | no |
+| base | `0x28d37d1a4c0020ce253b7256bb5359d1d0d85d9f` | TokenWhitelistRegistry | impl | unknown | no |
+| base | `0x4807e102fe87d8d8d16691d38e41e3aec5cded62` | EthOPValueTransfer | impl | unknown | no |
+| base | `0x507c8376d78dcd4d7e4d5641f7a5373e939c4481` | MegapotDecoderAndSanitizer | impl | unknown | no |
 | blast | `0x2416092f143378750bb29b79ed961ab195cceea5` | ERC1967Proxy | proxy | live | yes |
 | blast | `0xe65843850106421eab49dd43d19fa2d75fc19a75` | Dapp | impl | live | no |
+| bsc | `0x0c1b9b3da7345f6fd5c9d8ecf7464b45e4a80f1d` | xRenzoDeposit | impl | unknown | no |
+| bsc | `0x3bedea15ab20d75aa858d42771f3ec09638b2cd2` | HyperlaneReceiver | impl | unknown | no |
+| bsc | `0x3e0053d211b501732e999d6399b7e79610f7550b` | TimelockController | impl | unknown | no |
+| ethereum | `0x00aa8017206206dd43a2dd3679e890f9b50496ac` | LEZyVault | impl | unknown | no |
+| ethereum | `0x02ac87c747f5b74d3d290adcf83bb2b694e2ba0b` | WithdrawQueue | impl | unknown | no |
+| ethereum | `0x02e976adf6d27ec622b00a0125e3c52e32b0727f` | EzRVaultsFactory | impl | unknown | no |
+| ethereum | `0x04fc0eec2f93b94781e89fcab192613c48957d73` | EzRVault | impl | unknown | no |
+| ethereum | `0x0683c3cc018fb76874fdcc8620d15c4e467e34ca` | OperatorDelegator | impl | unknown | no |
+| ethereum | `0x09af9b2261463c38115acd6d345da345851700fb` | UniV4UniversalRouterStrategy | impl | unknown | no |
+| ethereum | `0x0c431c66f4de941d089625e5b423d00707977060` | PauserRegistry | impl | unknown | no |
+| ethereum | `0x0d02267b9529ba1ee284e73e107feaf91e23dd89` | EulerSwapEzEthDelegateStrategy | impl | unknown | no |
+| ethereum | `0x10586b9b7ff0f842913a57539f8167ce143c3011` | PaymentSplitter | proxy | unknown | no |
+| ethereum | `0x174a0ed7c1989fa693b2cf93c5162e07d9478efe` | PaymentSplitter | proxy | unknown | no |
+| ethereum | `0x179f0063d87bb7ca4f75ca693566018ca9eb55ba` | EmptyContract | proxy | unknown | no |
+| ethereum | `0x18ac4d26acd4c5c4fe98c9098d2e5e1e501a042a` | RestakeManager | impl | unknown | no |
+| ethereum | `0x19cbe4d482831a087a8eef108a33422445108607` | RenzoOracle | impl | unknown | no |
+| ethereum | `0x1bee69b7dfffa4e2d53c2a2df135c388ad25dcd2` | EmptyContract | proxy | unknown | no |
+| ethereum | `0x1e756b7bcca7b26fb9d85344b3525f5559bbacb0` | EzEthToken | impl | unknown | no |
+| ethereum | `0x21e4bd82f889cb1b9353ce12f4896b8dcb7495fb` | PaymentSplitter | proxy | unknown | no |
 | ethereum | `0x2416092f143378750bb29b79ed961ab195cceea5` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0x24aa958c90b7973dc16c63c9992f69e1767377ae` | DepositQueue | impl | unknown | no |
+| ethereum | `0x24c28e5ea9960dff3c00c02790d1aec21b5d65af` | ERC20PaymentReceiverEzRVault | impl | unknown | no |
+| ethereum | `0x34a8bcbbbb6265435fb5a44e71d67c899ccc67f6` | xRenzoBridge | impl | unknown | no |
+| ethereum | `0x35b5ebe66dd7ef372f5c36b25a297863e1b0bd9e` | ezETHValueStrategy | impl | unknown | no |
+| ethereum | `0x39053d51b77dc0d36036fc1fcc8cb819df8ef37a` | EmptyContract | proxy | unknown | no |
+| ethereum | `0x39e2a9eb9d8d9cc30fe096b5a642d7597be1a521` | FlashAuctionBuyer | impl | unknown | no |
 | ethereum | `0x3b50805453023a91a8bf641e279401a0b23fa6f9` | Renzo | impl | live | yes |
+| ethereum | `0x44bcb0e01cd0c5060d4bb1a07b42580ef983e2af` | DelayedWithdrawalRouter | impl | unknown | no |
+| ethereum | `0x45fed80345757ce3b530effa4b8022df3419cccd` | EthDepositor | impl | unknown | no |
+| ethereum | `0x4709ab91123f7dbb4b6c4a02c94e855678404fc7` | CachedRateProvider | impl | unknown | no |
+| ethereum | `0x4f1cf88b1f9edb4cbd8eaf0364970cf8aab03f56` | OperatorDelegatorLib | impl | unknown | no |
+| ethereum | `0x5d25eef8cfedaa47d31fe2346726de1c21e342fb` | StrategyManager | impl | unknown | no |
+| ethereum | `0x7625716271e5dd3896cf5336a1ea62fae9a24718` | EzAdminL1 | impl | unknown | no |
+| ethereum | `0x7c4564bd54da474314f715b19d7d8c7671760395` | UsccDepositStrategy | impl | unknown | no |
+| ethereum | `0x86e532b66872dc801d737276fc1d2ff425deb9cf` | XERC20Factory | impl | unknown | no |
+| ethereum | `0x8bddb5e42b419d949bcaba2a1538c9c37867f4f8` | NonUnderlyingTokenTransferStrategy | impl | unknown | no |
+| ethereum | `0x91e677b07f7af907ec9a428aafa9fc14a0d3a338` | EmptyContract | proxy | unknown | no |
+| ethereum | `0xa6db1a8c5a981d1536266d2a393c5f8ddb210eaf` | Timelock | impl | unknown | no |
+| ethereum | `0xbca64801a6639ebda2c28cc0bdddf804424957db` | MerklClaimerStrategy | impl | unknown | no |
+| ethereum | `0xbe97c9410ac4cf12966c31e70d748b5c889b5fe6` | EulerEzEthLoopStrategy | impl | unknown | no |
 | ethereum | `0xc8140da31e6bca19b287cc35531c2212763c2059` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0xd92145c07f8ed1d392c1b88017934e301cc1c3cd` | EmptyContract | proxy | unknown | no |
+| ethereum | `0xebb77a6a553646f81eaf57429c8fc004f9bbd86a` | ezETHConversionStrategy | impl | unknown | no |
+| linea | `0x174a0ed7c1989fa693b2cf93c5162e07d9478efe` | EthLineaValueTransfer | impl | unknown | no |
+| mode | `0x1120ea466b51e86be7cacc0ed5b0d7021eb17fb4` | EzAdminL2 | impl | unknown | no |
+| mode | `0x3ea4d0467c976e9877adb96869fdeb0551fd0930` | ConnextReceiver | impl | unknown | no |

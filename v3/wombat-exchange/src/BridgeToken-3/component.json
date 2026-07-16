@@ -1,9 +1,15 @@
 {
   "component": "BridgeToken-3",
   "main_contract": "BridgeToken",
-  "source_entry_count": 3,
-  "source_file_count": 3,
-  "source_path_remaps": [],
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/bridge/token/Token.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-cc764260555f-Token.sol",
+      "reason": "unsafe_path"
+    }
+  ],
   "foundry": {
     "root": ".",
     "config": "foundry.toml",
@@ -15,14 +21,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xa15e4544d141aa98c4581a1ea10eb9048c3b3382",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd9541b08b375d58ae104ec247d7443d2d7235d64",
       "is_proxy": true,
-      "implementation_address": "0x0e082f06ff657d94310cb8ce8b0d9a04541d8052",
+      "implementation_address": "0x5537857664b0f9efe38c9f320f75fef23234d904",
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401057"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

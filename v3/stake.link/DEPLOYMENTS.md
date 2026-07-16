@@ -1,6 +1,6 @@
 # stake.link — deployments
 
-30 verified deployment(s) across 16 component(s).
+79 verified deployment(s) across 34 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,29 +8,78 @@
 | arbitrum | `0xdfea35757264f5b6c0ff21104151d9f991d0eec0` | BurnMintERC677 | impl | live | no |
 | base | `0xe5b64a705db9d2395c471af1608972ccbace26e6` | FactoryBurnMintERC20-2 | impl | live | no |
 | base | `0xf2f7901b7bba5799493b617b06ead1862f771297` | FactoryBurnMintERC20-3 | impl | live | no |
+| ethereum | `0x02a0f6242c43a3cb59e58d5fa7acd9e79bba3aba` | SDLVesting | impl | live | no |
+| ethereum | `0x03c1c19adb2009895422ead742a5e96a08b1ff94` | SDLVesting | impl | live | no |
+| ethereum | `0x08c1d70ff981fe2ff78194c973191bbc8226a8b9` | SDLVesting | impl | live | no |
+| ethereum | `0x08e11a9a74e7acc51ace382b6d02abe8b7cf7786` | LINKMigrator | impl | live | no |
+| ethereum | `0x090abe0e6bd58b8cd09b622ff1bde2b48b4cee55` | PriorityPool | impl | live | no |
 | ethereum | `0x0b2ef910ad0b34bf575eb09d37fd7da6c148ca4d` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x1711e93eec78ba83d38c26f0ff284eb478bdbec4` | RebaseController-2 | impl | live | yes |
 | ethereum | `0x2091d83592d79b4de5fd2ce3d98679c32a9555e6` | WrappedSDToken | impl | live | no |
+| ethereum | `0x20c0d719c2ef30ff5ac6e822261ee655f037d461` | LockReleaseTokenPool | impl | live | no |
+| ethereum | `0x28d3148b74ecbd1bc410ec3d40ffd86cbff31b05` | LockReleaseTokenPool | impl | live | no |
+| ethereum | `0x2fe5a394f24b3dec644f982a9bb0bafe57308597` | StakingPool | impl | live | no |
+| ethereum | `0x378971b51c126834309cd95bea55f19adb5f59df` | SDLVesting | impl | live | no |
 | ethereum | `0x43ff5ffab0973815ef8672f71c49ee5e53f30a48` | WrappedSDToken | impl | live | no |
 | ethereum | `0x4852e48215a4785ee99b640caced5378cc39d2a4` | AdminUpgradeabilityProxy | proxy | live | yes |
 | ethereum | `0x4a18aea755bd2ec7c0b7dd6f065bbb3725490342` | RewardsPoolWSD | impl | live | no |
+| ethereum | `0x4a36c0c18174a2962d649e2c077fc53bcec5f68e` | LockReleaseTokenPool | impl | live | no |
+| ethereum | `0x4ccb44bf85ade035c5b57e38edd385788c119c86` | SDLVesting | impl | live | no |
+| ethereum | `0x506c02763131f044b1c08ab9d4dd5dc5505ee9c7` | SDLVesting | impl | live | no |
 | ethereum | `0x5273a75694311a6c4f2acf5c5b8566d965cb6e50` | BeaconProxy | proxy | live | yes |
+| ethereum | `0x553636e52059b0339592f545d25a4c0a86e3a1bc` | LockReleaseTokenPool | impl | live | no |
 | ethereum | `0x5537f6762c181125de36b3a6884e9726e35ddb90` | RebaseController | impl | live | yes |
+| ethereum | `0x5e1bfbb052c3f7bfe0e7386f435343982b1f78c8` | LSTRewardsSplitterController | impl | live | no |
+| ethereum | `0x5eb140f59e59dad692e13b8480c2f91758c341e5` | SDLVesting | impl | live | no |
+| ethereum | `0x6185a7f5344ff0c320e25ca1ed6526c4692fcb3d` | SDLVesting | impl | live | no |
+| ethereum | `0x6f6fb6fbec4fb65a6535357d9d7e8f4f62319ac0` | MerkleDistributor | impl | live | no |
+| ethereum | `0x6fb9cc7d10a5286a864e760c2756e7f6d44d4d26` | PriorityPool | impl | unknown | no |
 | ethereum | `0x70f7daba7f2d0866088ecb1e3b29401a97f65951` | ERC1967Proxy-2 | proxy | live | yes |
+| ethereum | `0x7287d90ed89d586d0d4b09f683c7f06a3e9a0997` | Vesting | impl | live | no |
+| ethereum | `0x73c433e006467f46e9f9fb18bc5f5a48e172e154` | LSTRewardsSplitterController-2 | impl | live | no |
 | ethereum | `0x77f555a6b9ec1fbff5f545128046338a566b5a56` | RewardsPoolWSD | impl | live | no |
 | ethereum | `0x7d145ad7860d0a9c7bb824d5b2f85f575d0300aa` | BeaconProxy | proxy | live | yes |
+| ethereum | `0x7f89e4a071136f8e3ec12d8f87793dc84038c054` | PriorityPool-2 | impl | live | no |
+| ethereum | `0x855039b459cea56707a61e641110097623de1bc3` | PriorityPool-3 | impl | live | no |
 | ethereum | `0x8753c00d1a94d04a01b931830011d882a3f8cc72` | RewardsPoolWSD-2 | impl | live | no |
+| ethereum | `0x88d89a8b037e9df1a750415826c16e9841be9f9a` | StakingPool-2 | impl | live | no |
+| ethereum | `0x8aaf17a93eece176de3e1beec7c775c9d4c9f7d5` | SDLVesting | impl | live | no |
+| ethereum | `0x8b5194fe64a2ee36f34089566b23df357f61024f` | SDLVesting | impl | live | no |
+| ethereum | `0x8b5256ae4a572b6cedbee9f93b60d2171abecfe3` | SDLVesting | impl | live | no |
+| ethereum | `0x8d0422d9859b2cb98761428b4518059e1cb3e8d9` | Vesting | impl | live | no |
+| ethereum | `0x8dbc8027ebee31bab05ade462b43a579575aefad` | Vesting | impl | live | no |
+| ethereum | `0x8e0cd48bc25945114a173749c05ce9c7e7aaa40e` | PriorityPool-4 | impl | live | no |
 | ethereum | `0x911d86c72155c33993d594b0ec7e6206b4c803da` | WrappedSDToken-2 | impl | live | yes |
+| ethereum | `0x9a9e3e2b9c3a4a232c752875220be43f06f3d314` | StakingPool-3 | impl | live | no |
 | ethereum | `0xa60b5146e44ff755e32bd51532842ceb41d0c248` | BeaconProxy | proxy | live | yes |
 | ethereum | `0xa95c5ebb86e0de73b4fb8c47a45b792cfea28c23` | StakingAllowance | impl | live | yes |
 | ethereum | `0xac12290b097f6893322f5430627e472131fbc1b5` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0xb03697a0c4c86aef1a2f73d157dce101bfcfd1d4` | SDLVesting | impl | live | no |
+| ethereum | `0xb57b3d144aa18fe822ef3e4db26c74c34d864b02` | SDLVesting | impl | live | no |
 | ethereum | `0xb8b295df2cd735b15be5eb419517aa626fc43cd5` | AdminUpgradeabilityProxy | proxy | live | yes |
+| ethereum | `0xcc8f8f89ef7ba61e6a649b48221b0cf2544171cb` | Vesting | impl | live | no |
 | ethereum | `0xcfa197495cf8e82d7b5df858f55b73208b8b9d67` | BeaconProxy | proxy | live | yes |
 | ethereum | `0xd2e7381d8d3fcc97c1b4d88761bdbc8dd26a0200` | BeaconProxy | proxy | live | yes |
+| ethereum | `0xd6dbdda416c10ae2b7acbe2d141c0e52b1802c59` | RewardsPoolWSD | impl | live | no |
+| ethereum | `0xd9d1b5132ef63fc0e9056d063880e7b943ea2c6b` | Vesting | impl | live | no |
 | ethereum | `0xda669f2ea3a54150242965238392d351235b1c1f` | RebaseController | impl | live | yes |
+| ethereum | `0xda77b1a19850606d1f4faa0e200e035faa85fb15` | LINKMigrator-2 | impl | live | no |
 | ethereum | `0xdc26867b7d0f599bd2def704468a8cf073375fd3` | BeaconProxy | proxy | live | yes |
 | ethereum | `0xddc796a66e8b83d0bccd97df33a6ccfba8fd60ea` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0xe05edf1d3e73ddb87ebaa1fa9363efddbb0252a6` | SDLVesting | impl | live | no |
+| ethereum | `0xe22ee628e3aa38133bdd01159057767e1a93081a` | SDLVesting | impl | live | no |
+| ethereum | `0xe6476fff204e5932fce1b8fcdeab1049f97e51e0` | SDLVesting | impl | live | no |
+| ethereum | `0xe69d92f6910b45da1d6ddfb380efaa6af56e33f9` | EspressoRewardsConsumer | impl | live | no |
+| ethereum | `0xecd7921ecdea1f27994cff2e8a67b069f0c63111` | StakingPool-4 | impl | live | no |
 | ethereum | `0xf0fb3aa0f6a4b84494b78f81103a789e81540344` | BeaconProxy | proxy | live | yes |
+| ethereum | `0xf12cea09f4f29ba51906f0b95ef09627d714ea43` | SDLVesting | impl | live | no |
 | ethereum | `0xf36bdbc45219f9fbac0741a92a546f95c97104bd` | BeaconProxy | proxy | live | yes |
+| ethereum | `0xf509c90fbb166edbc06bcd3caa75f926842e3032` | SDLVesting | impl | live | no |
+| ethereum | `0xf7a8138302138b8eff5ffe6a228265ac449dc8f2` | SDLVesting | impl | live | no |
+| polygon | `0x0f6c1f639c76b8461476da030e654f25ddfb6e84` | BurnMintERC20 | impl | live | no |
 | polygon | `0x1d0347c535c88cf6bb72df75aed34363edb4b2ae` | BurnMintERC20 | impl | live | no |
+| polygon | `0x282d9953b1c1e8d010de44bb98ed1ba9d8a52c54` | BurnMintERC20 | impl | live | no |
+| polygon | `0x48c5ca5de19a51083554cf58c6d9710c3d4b4122` | LockReleaseTokenPool-2 | impl | live | no |
+| polygon | `0x593722ed549a7fc69e60ce75b39924e38caba494` | BurnMintERC20 | impl | live | no |
+| polygon | `0xba754d80d0b417f62aeda94a82b6b72e4fd8f553` | BurnMintERC20 | impl | live | no |
 | polygon | `0xc271a17db5ce6f53745a3f466077ec816bc20a9c` | FactoryBurnMintERC20 | impl | live | no |

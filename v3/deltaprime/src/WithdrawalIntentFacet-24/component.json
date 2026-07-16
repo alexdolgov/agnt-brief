@@ -1,0 +1,28 @@
+{
+  "component": "WithdrawalIntentFacet-24",
+  "main_contract": "WithdrawalIntentFacet",
+  "source_entry_count": 64,
+  "source_file_count": 64,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WithdrawalIntentFacet-24\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa6a8660032a1a6592626141a307bf263f5fe1a22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

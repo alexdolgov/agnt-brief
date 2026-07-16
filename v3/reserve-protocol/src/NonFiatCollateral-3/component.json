@@ -1,0 +1,28 @@
+{
+  "component": "NonFiatCollateral-3",
+  "main_contract": "NonFiatCollateral",
+  "source_entry_count": 53,
+  "source_file_count": 53,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/NonFiatCollateral-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcc07ef5fdafa6298b276f14a6f4198317d0d20c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/CollateralRegistry\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://dedaub.com/audits/liquity/liquity-v2-aug-28-2024"
@@ -25,6 +25,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "391360"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcff0dcab01563e5324ef9d0adb0677d9c167d791",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391395"
     }
   ]
 }

@@ -1,0 +1,174 @@
+{
+  "component": "VotingMiner",
+  "main_contract": "VotingMiner",
+  "source_entry_count": 31,
+  "source_file_count": 31,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/liquidityMining/VotingMiner.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-997564d689ee-VotingMiner.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/v1/interfaces/IVaultsCoreV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-79d1c99ce748-IVaultsCoreV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/v1/interfaces/ILiquidationManagerV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-20ba6a8bafc7-ILiquidationManagerV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/v1/interfaces/IConfigProviderV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-1a87f9df35c1-IConfigProviderV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/v1/interfaces/IAddressProviderV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-745a0f75f3bd-IAddressProviderV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/liquidityMining/interfaces/IVotingMiner.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-0b238bccd2c1-IVotingMiner.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/liquidityMining/interfaces/ISupplyMiner.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-fc36620d6454-ISupplyMiner.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/liquidityMining/interfaces/IMIMO.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-917399c88c8d-IMIMO.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/liquidityMining/interfaces/IGenericMiner.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-fbb1a796382f-IGenericMiner.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/liquidityMining/interfaces/IDebtNotifier.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-e2cdb3797582-IDebtNotifier.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/liquidityMining/GenericMiner.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-81f5d587ca74-GenericMiner.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libraries/WadRayMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-2c636a49fab8-WadRayMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IWETH.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-24e8e50e3be4-IWETH.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IVaultsDataProvider.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-1a84e4de0aae-IVaultsDataProvider.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IVaultsCoreState.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-16254fb284a7-IVaultsCoreState.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IVaultsCore.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-dd5104c76135-IVaultsCore.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/ISTABLEX.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-81839119746f-ISTABLEX.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IRatesManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-649a45c8544c-IRatesManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IPriceFeed.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-4f98f0515515-IPriceFeed.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/ILiquidationManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0020-555b6daf2258-ILiquidationManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IFeeDistributor.sol",
+      "exported_path": "__audit_export_path_conflicts__/0021-d2b268bc3a15-IFeeDistributor.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IConfigProvider.sol",
+      "exported_path": "__audit_export_path_conflicts__/0022-3611839a5435-IConfigProvider.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IAddressProvider.sol",
+      "exported_path": "__audit_export_path_conflicts__/0023-2cb09d7c550c-IAddressProvider.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IAccessController.sol",
+      "exported_path": "__audit_export_path_conflicts__/0024-554caca252e6-IAccessController.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/governance/interfaces/IVotingEscrow.sol",
+      "exported_path": "__audit_export_path_conflicts__/0025-9709bcb40c68-IVotingEscrow.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/governance/interfaces/ITimelock.sol",
+      "exported_path": "__audit_export_path_conflicts__/0026-5743f1a29390-ITimelock.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/governance/interfaces/IGovernorAlpha.sol",
+      "exported_path": "__audit_export_path_conflicts__/0027-1f2294deddb5-IGovernorAlpha.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/governance/interfaces/IGovernanceAddressProvider.sol",
+      "exported_path": "__audit_export_path_conflicts__/0028-6237a6786431-IGovernanceAddressProvider.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/chainlink/AggregatorV3Interface.sol",
+      "exported_path": "__audit_export_path_conflicts__/0029-55c12a725045-AggregatorV3Interface.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VotingMiner\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x79e902ce449772decaf339aacc133a40cce7c6be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

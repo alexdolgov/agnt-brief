@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: AGPL-3.0
+// SPDX-License-Identifier: AGPL-3.0-or-later
 pragma solidity 0.8.28;
 
 import "../interfaces/IAppAuthority.sol";
@@ -38,12 +38,12 @@ contract AppAuthority is IAppAuthority, AccessControlEnumerable, Pausable {
     }
 
     modifier onlyGovernor() {
-        require(hasRole(GOVERNOR_ROLE, msg.sender), "Only governor");
+        _onlyGovernor();
         _;
     }
 
     modifier onlyGovernorOrGuardian() {
-        require(hasRole(GOVERNOR_ROLE, msg.sender) || hasRole(GUARDIAN_ROLE, msg.sender), "Only governor or guardian");
+        _onlyGovernorOrGuardian();
         _;
     }
 
@@ -237,5 +237,13 @@ contract AppAuthority is IAppAuthority, AccessControlEnumerable, Pausable {
     /// @inheritdoc IAppAuthority
     function getAllBondManagerCandidates() external view returns (address[] memory candidates) {
         return getAllCandidates(BOND_MANAGER_ROLE);
+    }
+
+    function _onlyGovernorOrGuardian() internal view {
+        require(hasRole(GOVERNOR_ROLE, msg.sender) || hasRole(GUARDIAN_ROLE, msg.sender), "Only governor or guardian");
+    }
+
+    function _onlyGovernor() internal view {
+        require(hasRole(GOVERNOR_ROLE, msg.sender), "Only governor");
     }
 }

@@ -1,0 +1,129 @@
+{
+  "component": "Entrypoint",
+  "main_contract": "Entrypoint",
+  "source_entry_count": 27,
+  "source_file_count": 27,
+  "source_path_remaps": [
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-09f50b29d76f-AccessControlUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-91b53e732298-Initializable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-22eb064a8aac-UUPSUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-7ccb001b6ce6-ContextUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-321b7106afcc-ReentrancyGuardUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-1e0b64f7d480-ERC165Upgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/access/IAccessControl.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-eca41a4f9ccd-IAccessControl.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/interfaces/IERC1363.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-ae7b6fc08805-IERC1363.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/interfaces/IERC165.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-943753cdce98-IERC165.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/interfaces/IERC1967.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-7198f4e53e09-IERC1967.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/interfaces/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-8d1ed526ac98-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/interfaces/draft-IERC1822.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-a6ace6b8e8be-draft-IERC1822.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/proxy/ERC1967/ERC1967Utils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-ddb9ce8e73cf-ERC1967Utils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/proxy/beacon/IBeacon.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-44510ec78eb7-IBeacon.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-6c28f9342636-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-3f78984e7fee-SafeERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-302fdb203500-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/utils/Errors.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-9a0cd54d2a0b-Errors.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/utils/StorageSlot.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-33b75102bd3c-StorageSlot.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "exported_path": "__audit_export_path_conflicts__/0020-5a2a456a5fc0-IERC165.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Entrypoint\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdd8aa0560a08e39c0b3a84bba356bc025afbd4c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397859"
+    }
+  ]
+}

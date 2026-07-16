@@ -1,10 +1,11 @@
 # chateau — deployments
 
-2 verified deployment(s) across 2 component(s).
+3 verified deployment(s) across 3 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | chain-9745 | `0x22222215d4edc5510d23d0886133e7ece7f5fdc1` | chUSD-2 | impl | live | yes |
+| chain-9745 | `0x6f475642a6e85809b1c36fa62763669b1b48dd5b` | EndpointV2 | impl | live | no |
 | chain-999 | `0x2222227d90046f1483b3fb37990dea31fcabea02` | chUSD | impl | live | no |
 
 ## Source unavailable (1)

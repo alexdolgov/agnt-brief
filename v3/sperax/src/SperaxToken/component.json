@@ -17,12 +17,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xb4a3b0faf0ab53df58001804dda5bfc6a3d59008",
+      "address": "0x9631483f28b7f5cbf7d435ab249be8f709215bc3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399207"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

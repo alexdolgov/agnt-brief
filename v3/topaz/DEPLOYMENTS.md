@@ -1,26 +1,63 @@
 # topaz — deployments
 
-20 verified deployment(s) across 20 component(s).
+57 verified deployment(s) across 50 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| bsc | `0x08b7e6043b92c1613b900862e3d15ac4d598dec3` | NFTSVG | impl | live | no |
+| bsc | `0x0dc0d5acf4256f5f5118e2a82c6d06868f2ab0dc` | NonfungibleTokenPositionDescriptor-2 | impl | live | no |
+| bsc | `0x16f9d057c0f6c0ce9c4367e34c89248e27f53b37` | ConnectorZapSlipstream | impl | live | no |
 | bsc | `0x18e68051d1b1fb44cb539ca4436f112d28577af7` | CLPool | impl | live | no |
+| bsc | `0x1e54928661d4c919742e38ec4766c47ee1daeee0` | ConnectorMulticall | impl | live | no |
 | bsc | `0x1e98c8226e7d452e1888e3d3d2f929346321c6c3` | Router | impl | live | no |
+| bsc | `0x1ee6021067b1763a98c8130689323279e160990a` | PerlinNoise | impl | live | no |
+| bsc | `0x1f0d7e561c04b9925a7bf35d4575759be19e46c1` | TopazAccount-2 | impl | live | no |
+| bsc | `0x21c9257dfcdf04154d34df5a2204b9402ef31d9a` | NFTSVG-2 | impl | live | no |
+| bsc | `0x239bd25e86e4a3b931b1c6cf7849c27ca9f0498a` | NonfungibleTokenPositionDescriptor-3 | impl | live | no |
+| bsc | `0x2427c741f45e7e232e06fd2b60279a771d634fb0` | NFTSVG-3 | impl | live | no |
+| bsc | `0x2764db7bca0ccf98a1611f36879ebffd06ffc02b` | PositionBurnHelper | impl | live | no |
+| bsc | `0x28a42e419e2a2e36c200e63e71a9492f0068b43a` | ConnectorCl | impl | live | no |
+| bsc | `0x2a1bf8dc45399c761bbd0a862f75cf725518974b` | BonusLock | impl | live | no |
 | bsc | `0x2f80f810a114223ac69e34e84e735cad515dad67` | Voter | impl | live | no |
+| bsc | `0x340c424ed1b8277d8e606490966a0fa04dd06c0e` | ConnectorRegistry | impl | live | no |
 | bsc | `0x3bad7f96cd1b51ce86e12c42541ac7d559a78582` | CustomUnstakedFeeModule | impl | live | no |
+| bsc | `0x441b05ba4f466a572949032c6284be7dba65a545` | BonusLock-2 | impl | live | no |
+| bsc | `0x47baf65e578e6a706c1bf31862c2ba59dc91cc18` | NonfungibleTokenPositionDescriptor-4 | impl | live | no |
 | bsc | `0x47c3570b90e7234fe695ad5f1be69e21fe1a9ee2` | MixedRouteQuoterV1 | impl | live | no |
+| bsc | `0x4b15103239fdd18ad0fe449897ee5c2b9b28fde2` | NFTSVG-4 | impl | live | no |
+| bsc | `0x4b906700fe65338d548c67e300b1a608d62e242e` | ConnectorSwap | impl | live | no |
 | bsc | `0x4c303f7af7b8b05226440e4e12ff9a82f513716c` | VotingRewardsFactory | impl | live | no |
+| bsc | `0x50f9756f631266686b9a7ebdf55998db3da5ca0a` | NFTDescriptor | impl | live | no |
+| bsc | `0x5a4cbfc331744b05dd814d2b9c9a56e5a4e9b812` | TopazAccountFactory | impl | live | no |
 | bsc | `0x606794d37991a426a189fd9fa8664d339a77f8ae` | Minter | impl | live | yes |
 | bsc | `0x656cf5d2f1a70177e011e2c27deafbee4c7b0541` | DynamicSwapFeeModule | impl | live | yes |
+| bsc | `0x6b7e08c574839ba26a7ef04cb89eae51d3f45351` | TopazAccountFactory-2 | impl | live | no |
+| bsc | `0x72d5c6ba3cc1660892fe897f1737282860b958a2` | TopazAccount | impl | live | no |
 | bsc | `0x73dc984d9490286e735548f61dfccec67af82ed9` | CLFactory | impl | live | no |
 | bsc | `0x7ccb89bb9bdef68688f39a2c22d249fd1d9759f1` | QuoterV2 | impl | live | no |
+| bsc | `0x81acc35240d19948a56b8b68bcc8706f90babab5` | NonfungibleTokenPositionDescriptor | impl | live | no |
 | bsc | `0x85e15e7ad4f20d5ca3a1104b1c2cce72f5f683db` | RewardsDistributor | impl | live | no |
+| bsc | `0x8cabfd11dd628a12ce8dfdc7dfd3e77badda849a` | Trig | impl | live | no |
+| bsc | `0x8ea90c6711bca4203c689bf0dd6f08e43377e3c5` | PositionBurnHelper-2 | impl | live | no |
 | bsc | `0x9612305fe63dfb84da8f6d6261169f6b85026601` | VeArtProxy | impl | live | no |
+| bsc | `0x9a39f9bbffcaeb29882fcdc68d6efa2d381f813a` | ConnectorMulticall | impl | live | no |
 | bsc | `0x9b63ca87919617d042a89663492db3c8686e0cae` | SwapRouter | impl | live | no |
+| bsc | `0x9e9b9257e4df263a8aee9ed1ea5cc1b5930564d1` | ConnectorRegistry | impl | live | no |
 | bsc | `0xa0462a52af4f8cbf7766efbba75355b30b6bcce2` | CustomSwapFeeModule | impl | live | no |
+| bsc | `0xa1941194be7c2607ffbc27de23b1aca357c45e3d` | TopazSlipstreamStateMulticall | impl | live | no |
+| bsc | `0xb1fbf57406ef303d29ee47b053ba71c21ef56c45` | BonusLock-3 | impl | live | no |
+| bsc | `0xba4c4f5ca809c21286ff1a872b3c0cfb57afe904` | NonfungibleTokenPositionDescriptor-5 | impl | live | no |
 | bsc | `0xc2f777a2e9f54f195212a5a2d394399252958b97` | CLGauge | impl | live | no |
+| bsc | `0xcc33acdb256242c542ce83af1cefaa4895b56ec4` | ConnectorMulticall | impl | live | no |
+| bsc | `0xd3dd0f34afe65ab3f64ccfd13e76d5a8dc8f787a` | NonfungibleTokenPositionDescriptor | impl | live | no |
+| bsc | `0xda1d895cd26ca4018c55f5bfd886de759717e5d1` | TopazAccountFactory | impl | live | no |
+| bsc | `0xde9a5d34a9fe0177544e8a70c691c3f1f9c9c63a` | NFTDescriptor-2 | impl | live | no |
+| bsc | `0xe31a13db4bac989d3b015d9f12f8e191cc977898` | TopazAccount | impl | live | no |
 | bsc | `0xe4b23f13b24232c1e68ad0575191216152aa9480` | ManagedRewardsFactory | impl | live | no |
 | bsc | `0xe951ac65efe86682311ab0d8995e7a58750c5eb3` | VotingEscrow | impl | live | no |
+| bsc | `0xea8abb5bc208950cf33633cd81d36654a0ab355c` | ConnectorToken | impl | live | no |
 | bsc | `0xed2ed418f104e18b1d11ea5c26236a1caa675839` | CLGaugeFactory | impl | live | no |
 | bsc | `0xf8c30c3c362941c23025f2ea30b066a73c982f63` | NonfungiblePositionManager | impl | live | no |
 | bsc | `0xfc080d1ecd7c332022cebf942aeb62d5e1d4cb08` | GaugeFactory | impl | live | no |
+| bsc | `0xfc4fab97adcd535741a4504ffff7b3160782746d` | ConnectorMulticall | impl | live | no |
+| bsc | `0xffc140b19b1e14b94da2086641d1a602e04f9e74` | ConnectorV2 | impl | live | no |

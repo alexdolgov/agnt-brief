@@ -48,6 +48,7 @@ contract OrderBook is Governable, ReentrancyGuard {
     mapping (address => mapping(uint256 => CloseOrder)) public closeOrders;
     mapping (address => uint256) public closeOrdersIndex;
     mapping (address => bool) public isKeeper;
+    mapping (address => bool) public managers;
     mapping (address => mapping (address => bool)) public approvedManagers;
 
     address public immutable pikaPerp;
@@ -58,7 +59,6 @@ contract OrderBook is Governable, ReentrancyGuard {
     address public feeCalculator;
     address public referralStorage;
     uint256 public minExecutionFee;
-    uint256 public minTimeExecuteDelay;
     uint256 public minTimeCancelDelay;
     uint256 public feeBase;
     bool public allowPublicKeeper = false;
@@ -214,11 +214,6 @@ contract OrderBook is Governable, ReentrancyGuard {
         emit UpdateMinExecutionFee(_minExecutionFee);
     }
 
-    function setMinTimeExecuteDelay(uint256 _minTimeExecuteDelay) external onlyAdmin {
-        minTimeExecuteDelay = _minTimeExecuteDelay;
-        emit UpdateMinTimeExecuteDelay(_minTimeExecuteDelay);
-    }
-
     function setMinTimeCancelDelay(uint256 _minTimeCancelDelay) external onlyAdmin {
         minTimeCancelDelay = _minTimeCancelDelay;
         emit UpdateMinTimeCancelDelay(_minTimeCancelDelay);
@@ -228,6 +223,11 @@ contract OrderBook is Governable, ReentrancyGuard {
         require(_feeBase >= 10000, "too small");
         feeBase = _feeBase;
         emit UpdateFeeBase(_feeBase);
+    }
+
+    function setManager(address _manager, bool _isActive) external onlyAdmin {
+        managers[_manager] = _isActive;
+        emit SetManager(_manager, _isActive);
     }
 
     function setAccountManager(address _manager, bool _isActive) external {
@@ -317,7 +317,7 @@ contract OrderBook is Governable, ReentrancyGuard {
         uint256 _triggerPrice,
         uint256 _productId
     ) public view returns (uint256, bool) {
-        (address productToken,,,,,,,) = IPikaPerp(pikaPerp).getProduct(_productId);
+        (address productToken,,,,,,,,) = IPikaPerp(pikaPerp).getProduct(_productId);
         uint256 currentPrice = _isLong ? IOracle(oracle).getPrice(productToken, true) : IOracle(oracle).getPrice(productToken, false);
         bool isPriceValid = _triggerAboveThreshold ? currentPrice >= _triggerPrice : currentPrice <= _triggerPrice;
         require(isPriceValid, "OrderBook: invalid price for execution");
@@ -504,27 +504,18 @@ contract OrderBook is Governable, ReentrancyGuard {
         );
     }
 
-    function executeOpenOrderWithPrices(
-        bytes[] calldata _priceUpdateData,
-        address _address,
-        uint256 _orderIndex,
-        address payable _feeReceiver
-    ) external payable {
-        IOracle(oracle).setPrices{value: msg.value}(msg.sender, _priceUpdateData);
-        executeOpenOrder(_address, _orderIndex, _feeReceiver);
-    }
-
     function executeOpenOrder(address _address, uint256 _orderIndex, address payable _feeReceiver) public nonReentrant {
         OpenOrder memory order = openOrders[_address][_orderIndex];
         require(order.account != address(0), "OrderBook: non-existent order");
-        require((msg.sender == address(this) || isKeeper[msg.sender] || allowPublicKeeper) && order.orderTimestamp + minTimeExecuteDelay < block.timestamp,
-            "OrderBook: min time execute delay not yet passed");
+        require(msg.sender == address(this), "OrderBook: not calling from this contract");
         (uint256 currentPrice, ) = validatePositionOrderPrice(
             order.isLong,
             order.triggerAboveThreshold,
             order.triggerPrice,
             order.productId
         );
+
+        delete openOrders[_address][_orderIndex];
 
         if (IERC20(collateralToken).isETH()) {
             IPikaPerp(pikaPerp).openPosition{value: (order.margin + order.tradeFee) * tokenBase / BASE }(_address, order.productId, order.margin, order.isLong, order.leverage, currentPrice);
@@ -533,7 +524,6 @@ contract OrderBook is Governable, ReentrancyGuard {
             IERC20(collateralToken).safeApprove(pikaPerp, (order.margin + order.tradeFee) * tokenBase / BASE);
             IPikaPerp(pikaPerp).openPosition(_address, order.productId, order.margin, order.isLong, order.leverage, currentPrice);
         }
-        delete openOrders[_address][_orderIndex];
 
         // pay executor
         _feeReceiver.sendValue(order.executionFee * 1e18 / BASE);
@@ -617,21 +607,10 @@ contract OrderBook is Governable, ReentrancyGuard {
         );
     }
 
-    function executeCloseOrderWithPrices(
-        bytes[] calldata _priceUpdateData,
-        address _address,
-        uint256 _orderIndex,
-        address payable _feeReceiver
-    ) external payable {
-        IOracle(oracle).setPrices{value: msg.value}(msg.sender, _priceUpdateData);
-        executeCloseOrder(_address, _orderIndex, _feeReceiver);
-    }
-
     function executeCloseOrder(address _address, uint256 _orderIndex, address payable _feeReceiver) public nonReentrant {
         CloseOrder memory order = closeOrders[_address][_orderIndex];
         require(order.account != address(0), "OrderBook: non-existent order");
-        require((msg.sender == address(this) || isKeeper[msg.sender] || allowPublicKeeper) && order.orderTimestamp + minTimeExecuteDelay < block.timestamp,
-            "OrderBook: min time execute delay not yet passed");
+        require(msg.sender == address(this), "OrderBook: not calling from this contract");
         (,uint256 leverage,,,,,,,) = IPikaPerp(pikaPerp).getPosition(_address, order.productId, order.isLong);
         (uint256 currentPrice, ) = validatePositionOrderPrice(
             !order.isLong,
@@ -640,8 +619,8 @@ contract OrderBook is Governable, ReentrancyGuard {
             order.productId
         );
 
-        IPikaPerp(pikaPerp).closePosition(_address, order.productId, order.size * BASE / leverage , order.isLong, currentPrice);
         delete closeOrders[_address][_orderIndex];
+        IPikaPerp(pikaPerp).closePosition(_address, order.productId, order.size * BASE / leverage , order.isLong, currentPrice);
 
         // pay executor
         _feeReceiver.sendValue(order.executionFee * 1e18 / BASE);
@@ -719,12 +698,12 @@ contract OrderBook is Governable, ReentrancyGuard {
     }
 
     function _getTradeFeeRate(uint256 _productId, address _account) private returns(uint256) {
-        (address productToken,,uint256 fee,,,,,) = IPikaPerp(pikaPerp).getProduct(_productId);
+        (address productToken,,uint256 fee,,,,,,) = IPikaPerp(pikaPerp).getProduct(_productId);
         return IFeeCalculator(feeCalculator).getFeeRate(productToken, fee, _account, msg.sender);
     }
 
     function _validateManager(address _account) private view returns(bool) {
-        return approvedManagers[_account][msg.sender];
+        return managers[msg.sender] && approvedManagers[_account][msg.sender];
     }
 
     function _validatePosition(address _account, uint256 _productId, bool _isLong) private view returns(bool) {

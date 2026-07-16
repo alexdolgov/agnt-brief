@@ -1,18 +1,60 @@
 # yieldfi — deployments
 
-12 verified deployment(s) across 1 component(s).
+54 verified deployment(s) across 9 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| ethereum | `0x08fb9833a5a84d5bcecdf5a4a635d33260c5f05c` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0x13a9f3f09588c4e5c6cddb1164398630bf929ff0` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0x3edae9c342ba1c0ece710db1f0c7bccec24ee668` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0x5c46ed83fc4446282a75d30375d993357aba3878` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0x67dba3444a99b9788e78932015312b2550241df5` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0x803438689b101aede853c9604d32aa80f0b3fce1` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0x95178e55fe7edd0792b9819b7654c9ee076832fa` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0x9a766451b18df401e39109f8a9f06355be0f7505` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0xbbb6edf1811fda36f591c617b51d2d43e4963aa6` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0xc9ec62d1e2ada282c3544178664d98cf62849961` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0xdd5eff0756db08bad0ff16b66f88f506e7318894` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0xf6cdcf759e39c29eb843cbfd549a7d9b82abdba4` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0x03acc35286baae6d73d99a9f14ef13752208c8dc` | TransparentUpgradeableProxy | proxy | unknown | no |
+| arbitrum | `0x1f52edf2815bfa625890b61d6bf43ddc24671fe8` | TransparentUpgradeableProxy | proxy | live | no |
+| arbitrum | `0x4772d2e014f9fc3a820c444e3313968e9a5c8121` | TransparentUpgradeableProxy | proxy | live | no |
+| arbitrum | `0x8a264a32d73d12e597e9532f1d16bac12948f066` | BridgeCCIP | impl | live | no |
+| arbitrum | `0x8c93a6752bfe29fda26eba8df4390c642e6a7f90` | TransparentUpgradeableProxy | proxy | live | no |
+| arbitrum | `0xf4f447e6afa04c9d11ef0e2fc0d7f19c24ee55de` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| avalanche | `0x4772d2e014f9fc3a820c444e3313968e9a5c8121` | TransparentUpgradeableProxy-3 | proxy | unknown | no |
+| avalanche | `0xf4f447e6afa04c9d11ef0e2fc0d7f19c24ee55de` | TransparentUpgradeableProxy-3 | proxy | unknown | no |
+| avalanche | `0xf6aebdeb2add0ab53a0090dc8714719604a9f9df` | BridgeCCIP-2 | impl | live | no |
+| base | `0x03acc35286baae6d73d99a9f14ef13752208c8dc` | TransparentUpgradeableProxy | proxy | unknown | no |
+| base | `0x1f52edf2815bfa625890b61d6bf43ddc24671fe8` | TransparentUpgradeableProxy-5 | proxy | unknown | no |
+| base | `0x4772d2e014f9fc3a820c444e3313968e9a5c8121` | TransparentUpgradeableProxy | proxy | unknown | no |
+| base | `0x8c93a6752bfe29fda26eba8df4390c642e6a7f90` | TransparentUpgradeableProxy-6 | proxy | unknown | no |
+| base | `0xb3138a82c715cab9ea8247631b653f6e48385c30` | BridgeCCIP | impl | live | no |
+| base | `0xf4f447e6afa04c9d11ef0e2fc0d7f19c24ee55de` | TransparentUpgradeableProxy-3 | proxy | unknown | no |
+| bsc | `0x03acc35286baae6d73d99a9f14ef13752208c8dc` | TransparentUpgradeableProxy | proxy | unknown | no |
+| bsc | `0x08fb9833a5a84d5bcecdf5a4a635d33260c5f05c` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| bsc | `0x383d63d824eb3758a721fda66932f160c56924ce` | BridgeCCIP-2 | impl | live | no |
+| bsc | `0x4772d2e014f9fc3a820c444e3313968e9a5c8121` | TransparentUpgradeableProxy | proxy | unknown | no |
+| bsc | `0x9a766451b18df401e39109f8a9f06355be0f7505` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| bsc | `0xdd5eff0756db08bad0ff16b66f88f506e7318894` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| bsc | `0xf4f447e6afa04c9d11ef0e2fc0d7f19c24ee55de` | TransparentUpgradeableProxy-3 | proxy | unknown | no |
+| chain-146 | `0x03acc35286baae6d73d99a9f14ef13752208c8dc` | TransparentUpgradeableProxy | proxy | unknown | no |
+| chain-146 | `0x321520f89076836a0e306e4a41bccd1bfd2189d9` | BridgeCCIP | impl | live | no |
+| chain-146 | `0x4772d2e014f9fc3a820c444e3313968e9a5c8121` | TransparentUpgradeableProxy | proxy | unknown | no |
+| ethereum | `0x03acc35286baae6d73d99a9f14ef13752208c8dc` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x06c2c73f30135c831d010ec7b82d0f32321c4f27` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0x08fb9833a5a84d5bcecdf5a4a635d33260c5f05c` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0x13a9f3f09588c4e5c6cddb1164398630bf929ff0` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0x19ebd191f7a24ece672ba13a302212b5ef7f35cb` | TransparentUpgradeableProxy-4 | proxy | live | no |
+| ethereum | `0x1ce7d9942ff78c328a4181b9f3826fee6d845a97` | BurnRegistryV1 | proxy | live | no |
+| ethereum | `0x1e2a5622178f93efd4349e2eb3dbdf2761749e1b` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x2e3c5e514eef46727de1fe44618027a9b70d92fc` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0x3073112c2c4800b89764973d5790ccc7fba5c9f9` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x386e0983d0e05f5239fd029793ef3ba37b468e9c` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0x3edae9c342ba1c0ece710db1f0c7bccec24ee668` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0x5c46ed83fc4446282a75d30375d993357aba3878` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0x659b5bc7f2f888db3d5901b78cdb34df270e2231` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x67dba3444a99b9788e78932015312b2550241df5` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0x6be164af10879a86e4643089638b6864ef12b1ee` | BridgeCCIP | impl | live | no |
+| ethereum | `0x803438689b101aede853c9604d32aa80f0b3fce1` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0x8464f6ecae1ea58ec816c13f964030eab8ec123a` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x95178e55fe7edd0792b9819b7654c9ee076832fa` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0x9a766451b18df401e39109f8a9f06355be0f7505` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0xa01200b2e74de6489cf56864e3d76bbc06fc6c43` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0xbbb6edf1811fda36f591c617b51d2d43e4963aa6` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0xc9ec62d1e2ada282c3544178664d98cf62849961` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0xd04ae722b3fe56812e13bb212a79cea7c1b08ff0` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0xdd5eff0756db08bad0ff16b66f88f506e7318894` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0xf6cdcf759e39c29eb843cbfd549a7d9b82abdba4` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| optimism | `0x03acc35286baae6d73d99a9f14ef13752208c8dc` | TransparentUpgradeableProxy | proxy | unknown | no |
+| optimism | `0x4772d2e014f9fc3a820c444e3313968e9a5c8121` | TransparentUpgradeableProxy | proxy | unknown | no |
+| optimism | `0xa358f0e78dd6cafa810b6f08e248ba1bf1770604` | BridgeCCIP | impl | live | no |
+| optimism | `0xf4f447e6afa04c9d11ef0e2fc0d7f19c24ee55de` | TransparentUpgradeableProxy-3 | proxy | unknown | no |

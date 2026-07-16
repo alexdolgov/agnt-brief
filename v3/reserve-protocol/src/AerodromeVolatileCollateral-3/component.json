@@ -1,0 +1,38 @@
+{
+  "component": "AerodromeVolatileCollateral-3",
+  "main_contract": "AerodromeVolatileCollateral",
+  "source_entry_count": 55,
+  "source_file_count": 55,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AerodromeVolatileCollateral-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc98eafc9f249d90e3e35e729e3679dd75a899c10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcfa67f42a0fde4f0fb612ea5e66170b0465b84c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

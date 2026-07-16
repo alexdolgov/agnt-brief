@@ -10,21 +10,29 @@
     "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/SimplyStaking/security-audit-reports/blob/main/Hypersurface/hypersurface-audit-v1.0.pdf"
-  ],
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x68893915f202e5da2ef01493463c50b2f68df56d",
+      "address": "0x1a110bba13a1f16cca4b79758bd39290f29de82d",
       "is_proxy": true,
-      "implementation_address": "0xbac1bce3f9e1e2d689071cb86290169d9607fac7",
+      "implementation_address": "0xf994f3990e1e6bbc7a44fbf42d334fbe0ffd7f0a",
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395142"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x44914408af82bc9983bbb330e3578e1105e11d4e",
+      "is_proxy": true,
+      "implementation_address": "0x821c380cce2eeeb07778757a52c1219fae5761a9",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -10,21 +10,59 @@
     "build_command": "forge build --root \"src/AppProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/rezervemoney/code/blob/main/audits/2025-06-21-halborn.pdf"
-  ],
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0xe22e10f8246df1f0845ee3e9f2f0318bd60efc85",
-      "is_proxy": true,
-      "implementation_address": "0xc913dcf0504eb10f5d5316c09c316c32ffbc49ed",
+      "address": "0x2d707598b1541a6096adaedefdefdd5f33f1194e",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398453"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x37dcfa2f774d9037839deaca5a8f0a22e69e4c13",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x56ee21c18759c9280891556028a2d116cbbc779a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x5ec084ca20bb4370a5940855387bb165265426c4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xf9fadee36b85ae08b7c639d4fb7b0d0ad6c0ae3e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

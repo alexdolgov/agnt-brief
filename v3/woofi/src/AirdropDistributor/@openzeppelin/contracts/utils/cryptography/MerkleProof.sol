@@ -211,7 +211,9 @@ library MerkleProof {
             return proof[0];
         }
     }
-
+    // uint256 = unsigned int
+    // 0 - (2 ** 256 - 1)
+    // 0x256*0
     function _hashPair(bytes32 a, bytes32 b) private pure returns (bytes32) {
         return a < b ? _efficientHash(a, b) : _efficientHash(b, a);
     }

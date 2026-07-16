@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.27;
 
-import "./interfaces/ICurveFactory.sol";
-import "./interfaces/IOracle.sol";
+import {ICurveFactory} from "./interfaces/ICurveFactory.sol";
 
 struct OriginSwapData {
     address _origin;
@@ -30,36 +29,30 @@ struct SwapInfo {
     ICurveFactory curveFactory;
 }
 
-struct CurveInfo {
-    string _name;
-    string _symbol;
-    address _baseCurrency;
-    address _quoteCurrency;
-    uint256 _baseWeight;
-    uint256 _quoteWeight;
-    IOracle _baseOracle;
-    IOracle _quoteOracle;
-    uint256 _alpha;
-    uint256 _beta;
-    uint256 _feeAtHalt;
-    uint256 _epsilon;
-    uint256 _lambda;
-}
-
 struct DepositData {
     uint256 deposits;
     uint256 minQuote;
     uint256 minBase;
+    uint256 quoteAmt;
     uint256 maxQuote;
     uint256 maxBase;
+    uint256 baseAmt;
+    address token0;
+    uint256 token0Bal;
+    uint256 token1Bal;
 }
 
 struct IntakeNumLpRatioInfo {
     uint256 baseWeight;
     uint256 minBase;
     uint256 maxBase;
+    uint256 baseAmt;
     uint256 quoteWeight;
     uint256 minQuote;
     uint256 maxQuote;
+    uint256 quoteAmt;
     int128 amount;
+    address token0;
+    uint256 token0Bal;
+    uint256 token1Bal;
 }

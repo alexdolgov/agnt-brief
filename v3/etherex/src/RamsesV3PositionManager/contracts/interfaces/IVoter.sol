@@ -27,7 +27,7 @@ interface IVoter {
 
     event Whitelisted(address indexed whitelister, address indexed token);
 
-    event WhitelistRevoked(address indexed forbidder, address indexed token);
+    event WhitelistRevoked(address indexed forbidder, address indexed token, bool status);
 
     event Poke(address indexed user);
 
@@ -396,12 +396,12 @@ interface IVoter {
     /// @notice returns if the anti-sybil is enabled
     function isAntiSybilEnabled() external view returns (bool);
     
-    /// @notice returns all authorized claimers for CL gauges
-    function getAllAuthorizedClaimers() external view returns (address[] memory);
+    /// @notice returns all authorized NFP managers for CL gauges
+    function getAllNfpManagers() external view returns (address[] memory);
     
-    /// @notice Add a new authorized claimer to the whitelist
-    function addAuthorizedClaimer(address _claimer) external;
+    /// @notice Add a new NFP manager to the whitelist
+    function addNfpManager(address _nfpManager) external;
     
-    /// @notice Remove an authorized claimer from the whitelist
-    function removeAuthorizedClaimer(address _claimer) external;
+    /// @notice Remove an NFP manager from the whitelist
+    function removeNfpManager(address _nfpManager) external;
 }

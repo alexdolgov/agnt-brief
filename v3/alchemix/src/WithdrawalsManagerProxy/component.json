@@ -1,0 +1,28 @@
+{
+  "component": "WithdrawalsManagerProxy",
+  "main_contract": "WithdrawalsManagerProxy",
+  "source_entry_count": 3,
+  "source_file_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WithdrawalsManagerProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f",
+      "is_proxy": true,
+      "implementation_address": "0x7d2baa6094e1c4b60da4cbaf4a77c3f4694fd53d",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -25,7 +25,7 @@ library Interest {
         for (uint256 i = 0; i < _loan.tranche.length;) {
             IMultiSourceLoan.Tranche memory tranche = _loan.tranche[i];
             owed += tranche.principalAmount + tranche.accruedInterest
-                + _getInterest(tranche.principalAmount, tranche.aprBps, _timestamp - tranche.startTime);
+            + _getInterest(tranche.principalAmount, tranche.aprBps, _timestamp - tranche.startTime);
             unchecked {
                 ++i;
             }

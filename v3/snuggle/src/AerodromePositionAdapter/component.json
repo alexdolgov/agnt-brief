@@ -10,12 +10,22 @@
     "build_command": "forge build --root \"src/AerodromePositionAdapter\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://www.snuggle.fi/security"
   ],
   "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0aedeed5ad8d45d3d928fb872161efaa559794d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "base",
       "chain_id": 8453,

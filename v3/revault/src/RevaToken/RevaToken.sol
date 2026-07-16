@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at BscScan.com on 2021-10-10
+*/
+
 // File: contracts/library/BEP20.sol
 
 // File: @pancakeswap/pancake-swap-lib/contracts/GSN/Context.sol
@@ -859,7 +863,7 @@ pragma solidity ^0.6.12;
 
 
 // RevaToken with Governance.
-contract RevaToken is BEP20('Reva Token', 'REVA') {
+contract RevaToken is BEP20('Reva Test', 'REVATEST') {
 
     uint public constant FEE_PRECISION = 1000000;
     uint public constant MAX_FEE = 10000;

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/BeaconProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 12,
+  "deployment_count": 15,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -47,12 +47,32 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
+      "address": "0x49fba73738461835fefb19351b161bde4bcd6b5a",
+      "is_proxy": true,
+      "implementation_address": "0xcec00d97aa65b12d3389518f3ad4bdf25336b25b",
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396376"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
       "address": "0x75dbee73b92bcde1d6ace60bf29293b1587828e5",
       "is_proxy": true,
       "implementation_address": "0xd53dc14e0f268494c7540153126d78e4f54cc01c",
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "396380"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8b04bf6a374c40887f03b1928871c96f006bb2fc",
+      "is_proxy": true,
+      "implementation_address": "0xcec00d97aa65b12d3389518f3ad4bdf25336b25b",
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396382"
     },
     {
       "chain": "ethereum",
@@ -133,6 +153,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "396396"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xffcbc7a7eef2796c277095c66067ac749f4ca078",
+      "is_proxy": true,
+      "implementation_address": "0xcec00d97aa65b12d3389518f3ad4bdf25336b25b",
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396399"
     }
   ]
 }

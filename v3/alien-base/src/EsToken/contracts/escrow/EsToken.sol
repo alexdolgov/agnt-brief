@@ -287,8 +287,8 @@ contract EsToken is Ownable, ReentrancyGuard, ERC20, IEsToken {
       redeemDividendsAdjustment = 0;
     } else {
       //tests an allocation to ensure the target contract responds to specification
-      dividendsAddress.allocate(address(this), 0, new bytes(0));
-      dividendsAddress.deallocate(address(this), 0, new bytes(0));
+      dividendsAddress_.allocate(address(this), 0, new bytes(0));
+      dividendsAddress_.deallocate(address(this), 0, new bytes(0));
     }
 
     emit UpdateDividendsAddress(address(dividendsAddress), address(dividendsAddress_));

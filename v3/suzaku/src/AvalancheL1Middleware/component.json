@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/AvalancheL1Middleware\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x9411307279456450abf9b5181aa7a02271f0dc34",
+      "address": "0x3fc5101a5d022e1af9d71cc47417d66c1b56f00b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399883"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x881f38357a3169314725fcbe54af284a79cbb037",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,6 +1,6 @@
 # trevee-earn — deployments
 
-38 verified deployment(s) across 15 component(s).
+60 verified deployment(s) across 27 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -10,17 +10,24 @@
 | chain-146 | `0x358cfacf00d0b4634849821bb3d1965b472c776a` | LayerZeroTeller | impl | live | no |
 | chain-146 | `0x3754480db8b3e607fbe125697eb496a44a1be720` | BoringOnChainQueue | impl | live | no |
 | chain-146 | `0x3bce5cb273f0f148010bbea2470e7b5df84c7812` | BoringVault | impl | live | no |
+| chain-146 | `0x3ec3849c33291a9ef4c5db86de593eb4a37fde45` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | chain-146 | `0x43739b96b19ae7c2e0d80be7832325846f55fa05` | Voter | impl | live | no |
+| chain-146 | `0x43edd7f3831b08fe70b7555ddd373c8bf65a9050` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | chain-146 | `0x455d5f11fea33a8fa9d3e285930b478b6bf85265` | BoringVault | impl | live | no |
 | chain-146 | `0x49acebf8f0f79e1ecb0fd47d684dadec81cc6562` | TellerWithMultiAssetSupport | impl | live | no |
 | chain-146 | `0x4d85ba8c3918359c78ed09581e5bc7578ba932ba` | BoringVault | impl | live | no |
 | chain-146 | `0x5448a65ddb14e6f273cd0ed6598805105a39d8cc` | BoringOnChainQueue | impl | live | no |
 | chain-146 | `0x555f4df2180df6257860f23b29d653c1aafb7957` | BoringOnChainQueue | impl | live | no |
+| chain-146 | `0x578ee1ca3a8e1b54554da1bf7c583506c4cd11c6` | InitializableImmutableAdminUpgradeabilityProxy-2 | proxy | live | no |
+| chain-146 | `0x5bff88ca1442c2496f7e475e9e7786383bc070c0` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | chain-146 | `0x5e39021ae7d3f6267dc7995bb5dd15669060dae0` | TellerWithMultiAssetSupport | impl | live | no |
+| chain-146 | `0x64445f0aecc51e94ad52d8ac56b7190e764e561a` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | chain-146 | `0x65b6afb8c1521b48488df04224dc019ea390e133` | BoringOnChainQueue | impl | live | no |
 | chain-146 | `0x6df97ed8b28d9528cd34335c0a151f10e48b6ef3` | BoringOnChainQueue | impl | live | no |
 | chain-146 | `0x7585d9c32db1528ceae4770fd1d01b888f5afa9e` | VotingEscrow-3 | impl | live | no |
+| chain-146 | `0x80eede496655fb9047dd39d9f418d5483ed600df` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | chain-146 | `0x825254012306bb410b550631895fe58ddce1f4a9` | TellerWithMultiAssetSupport | impl | live | no |
+| chain-146 | `0x90581eca9469d8d7f5d3b60f4715027adfcf7927` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | chain-146 | `0x9fb76f7ce5fceaa2c42887ff441d46095e494206` | Wrapper | impl | live | no |
 | chain-146 | `0xb84194e28f624bbba3c9181f3a1120ee76469337` | Voter | impl | live | no |
 | chain-146 | `0xbb30e76d9bb2cc9631f7fc5eb8e87b5aff32bfbd` | BoringVault | impl | live | no |
@@ -28,17 +35,32 @@
 | chain-146 | `0xd0851030c94433c261b405fecbf1dec5e15948d0` | BoringVault | impl | live | no |
 | chain-146 | `0xd3dce716f3ef535c5ff8d041c1a41c3bd89b97ae` | BoringVault | impl | live | no |
 | chain-146 | `0xdb58c4db1a0f45dda3d2f8e44c3300bb6510c866` | Wrapper | impl | live | no |
+| chain-146 | `0xe18ab82c81e7eecff32b8a82b1b7d2d23f1ece96` | InitializableImmutableAdminUpgradeabilityProxy-2 | proxy | live | no |
 | chain-146 | `0xe8a41c62bb4d5863c6eadc96792cfe90a1f37c47` | Wrapper | impl | live | no |
+| chain-9745 | `0x1dd4b13fcae900c60a350589be8052959d2ed27b` | fToken-2 | impl | live | no |
 | chain-9745 | `0x24e49d2ad8f0bcd0cf7f2a5ab560ca4319f6bd75` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-9745 | `0x2b3f3514867cbccfadc80121297bb8088c683432` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-9745 | `0x2b690cab819a815732544aeb422474efdc1b0615` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-9745 | `0x4718e64c12cae76552696934f0b346cfc1e9a7d3` | TransparentUpgradeableProxy | proxy | live | no |
+| chain-9745 | `0x4ef9ff56162bd3cb5073fb20dbd355c59084093f` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-9745 | `0x69ecab6aa7bdfddd99def0891c0317076430ae50` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-9745 | `0xaa24baba4da60b2aeaf80b1db07b0a4a7fd84455` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-9745 | `0xfe5ae64f5ba6a45b9267a5ba274620539fa59566` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0x2371e134e3455e0593363cbf89d3b6cf53740618` | MetaMorpho | impl | live | no |
+| ethereum | `0x23878914efe38d27c4d67ab83ed1b93a74d4086a` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0x31a5a9f60dc3d62fa5168352caf0ee05aa18f5b8` | LayerZeroTeller-2 | impl | live | no |
+| ethereum | `0x32a6268f9ba3642dda7892add74f1d34469a4259` | InitializableImmutableAdminUpgradeabilityProxy-3 | proxy | live | no |
 | ethereum | `0x358cfacf00d0b4634849821bb3d1965b472c776a` | LayerZeroTeller-3 | impl | live | no |
 | ethereum | `0x3754480db8b3e607fbe125697eb496a44a1be720` | BoringOnChainQueue-2 | impl | live | no |
 | ethereum | `0x3bce5cb273f0f148010bbea2470e7b5df84c7812` | BoringVault-2 | impl | live | no |
+| ethereum | `0x4d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0x555f4df2180df6257860f23b29d653c1aafb7957` | BoringOnChainQueue | impl | live | no |
-| ethereum | `0xd3dce716f3ef535c5ff8d041c1a41c3bd89b97ae` | BoringVault-3 | impl | live | no |
+| ethereum | `0x5c20b550819128074fd538edf79791733ccedd18` | fToken | impl | live | no |
+| ethereum | `0x6a29a46e21c730dca1d8b23d637c101cec605c5b` | fToken | impl | live | no |
+| ethereum | `0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c` | InitializableImmutableAdminUpgradeabilityProxy-4 | proxy | live | no |
+| ethereum | `0x9fb7b4477576fe5b32be4c1843afb1e55f251b33` | fToken | impl | live | no |
+| ethereum | `0xbb30e76d9bb2cc9631f7fc5eb8e87b5aff32bfbd` | BoringVault-3 | impl | live | no |
+| ethereum | `0xbeef01735c132ada46aa9aa4c54623caa92a64cb` | MetaMorpho-2 | impl | live | no |
+| ethereum | `0xd3dce716f3ef535c5ff8d041c1a41c3bd89b97ae` | BoringVault-4 | impl | live | no |
+| ethereum | `0xd63070114470f685b75b74d60eec7c1113d33a3d` | MetaMorpho-3 | impl | live | no |

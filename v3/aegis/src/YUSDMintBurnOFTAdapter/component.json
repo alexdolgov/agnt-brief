@@ -1,0 +1,38 @@
+{
+  "component": "YUSDMintBurnOFTAdapter",
+  "main_contract": "YUSDMintBurnOFTAdapter",
+  "source_entry_count": 37,
+  "source_file_count": 37,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/YUSDMintBurnOFTAdapter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaf12b0ae5a72d7b8a8ec675f3e76e2db56143565",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390517"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x539e46827c37a3ef11c7ce521cc56b4d59e602e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390526"
+    }
+  ]
+}

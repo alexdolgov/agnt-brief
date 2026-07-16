@@ -1,0 +1,28 @@
+{
+  "component": "CTFExecutionEngine-3",
+  "main_contract": "CTFExecutionEngine",
+  "source_entry_count": 48,
+  "source_file_count": 48,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CTFExecutionEngine-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5f45344126d6488025b0b84a3a8189f2487a7246",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "component": "DODODppProxy-3",
   "main_contract": "DODODppProxy",
-  "source_entry_count": 5,
-  "source_file_count": 5,
+  "source_entry_count": 1,
+  "source_file_count": 1,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x624fc8368fe11be00d8b2f3fe0b9d0053bec21b9",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x51a70a33655fe1c5fae3286890dce3be332e85dd",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393935"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

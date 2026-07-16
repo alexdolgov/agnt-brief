@@ -1,0 +1,28 @@
+{
+  "component": "SparkOptimism_20251127",
+  "main_contract": "SparkOptimism_20251127",
+  "source_entry_count": 66,
+  "source_file_count": 66,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SparkOptimism_20251127\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2f66666fb60c038f10948e9645ca969bb397e2d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

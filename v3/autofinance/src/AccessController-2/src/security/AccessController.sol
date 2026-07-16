@@ -3,7 +3,7 @@
 pragma solidity ^0.8.24;
 
 import { Roles } from "src/libs/Roles.sol";
-import { Errors } from "src/utils/Errors.sol";
+import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
 import { IAccessController } from "src/interfaces/security/IAccessController.sol";
 import { AccessControlEnumerable } from "openzeppelin-contracts/access/AccessControlEnumerable.sol";
@@ -16,7 +16,7 @@ contract AccessController is SystemComponent, AccessControlEnumerable, IAccessCo
     constructor(
         address _systemRegistry
     ) SystemComponent(ISystemRegistry(_systemRegistry)) {
-        Errors.verifyNotZero(_systemRegistry, "systemRegistry");
+        AutopilotErrors.verifyNotZero(_systemRegistry, "systemRegistry");
 
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _setupRole(Roles.REBALANCER, msg.sender);

@@ -1,0 +1,30 @@
+{
+  "component": "PancakeSwapRewardAdapter-2",
+  "main_contract": "PancakeSwapRewardAdapter",
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PancakeSwapRewardAdapter-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://www.snuggle.fi/security"
+  ],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x63de143eae0f6dfddb3f91110e0db8375918b1cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399056"
+    }
+  ]
+}

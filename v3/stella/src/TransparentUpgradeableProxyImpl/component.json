@@ -1,0 +1,38 @@
+{
+  "component": "TransparentUpgradeableProxyImpl",
+  "main_contract": "TransparentUpgradeableProxyImpl",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxyImpl\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x032ba65c71c82d2e6dcf91cad148adc64a5f02a7",
+      "is_proxy": true,
+      "implementation_address": "0x067a3b0c5968e10b2871d6add4fc17fefe257789",
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404105"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x04c3098931bda90cc307ea37b421953b3384ee6a",
+      "is_proxy": true,
+      "implementation_address": "0xa1af884b54e72951443407afe0ff8dcfc4d97546",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

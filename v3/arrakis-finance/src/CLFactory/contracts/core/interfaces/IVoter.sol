@@ -8,13 +8,27 @@ import {IFactoryRegistry} from "contracts/core/interfaces/IFactoryRegistry.sol";
 interface IVoter {
     function ve() external view returns (IVotingEscrow);
 
+    function minter() external view returns (address);
+
+    function governor() external view returns (address);
+
     function vote(uint256 _tokenId, address[] calldata _poolVote, uint256[] calldata _weights) external;
 
     function gauges(address _pool) external view returns (address);
 
+    function pools(uint256 _index) external view returns (address);
+
+    function length() external view returns (uint256);
+
+    function poolForGauge(address _gauge) external view returns (address);
+
     function gaugeToFees(address _gauge) external view returns (address);
 
     function gaugeToBribes(address _gauge) external view returns (address);
+
+    function weights(address _pool) external view returns (uint256);
+
+    function isGauge(address _gauge) external view returns (bool);
 
     function createGauge(address _poolFactory, address _pool) external returns (address);
 
@@ -31,6 +45,8 @@ interface IVoter {
     function killGauge(address _gauge) external;
 
     function emergencyCouncil() external view returns (address);
+
+    function totalWeight() external view returns (uint256);
 
     /// @notice Claim emissions from gauges.
     /// @param _gauges Array of gauges to collect emissions from.

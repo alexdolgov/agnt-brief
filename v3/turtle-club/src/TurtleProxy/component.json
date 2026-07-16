@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/TurtleProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -43,6 +43,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "400503"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x9b496afe0684424bb3cd039ee1d23194a46091b4",
+      "is_proxy": true,
+      "implementation_address": "0x4559605e3003fda8c059e14af4f16ba9a004335a",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

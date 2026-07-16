@@ -1,12 +1,60 @@
 # eth-strategy — deployments
 
-6 verified deployment(s) across 6 component(s).
+54 verified deployment(s) across 33 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| ethereum | `0x020e04848110663dfc190072f692946c3367424c` | ArrakisV2Helper | impl | live | no |
+| ethereum | `0x0cb029f9cf1d452db02a4a403f6ff660a0c18b1b` | ESPNRedemptionFacilitator | impl | live | no |
+| ethereum | `0x133f33873905d15419859b5a7cafa3757841f01c` | MultiDistro | impl | live | no |
 | ethereum | `0x14cf922aa1512adfc34409b63e18d391e4a86a2f` | StratToken | impl | live | no |
+| ethereum | `0x1d080c689b930f9dea69cb3b4bc6b8c213dfc2ad` | SuperToken | impl | live | no |
+| ethereum | `0x22be0dbe1fe7536613f0ad717d7b8e3faeaa43fd` | SuperToken | impl | live | no |
+| ethereum | `0x26cf1dc84694e04277f2fe4c13e43597c6010c2a` | Vault-2 | impl | live | no |
+| ethereum | `0x2f017ee436429711698a5f6761fe935f4866ed2f` | GUniFactory | impl | live | no |
+| ethereum | `0x316fe16067fa092c3b22c0b8e40ce3ff1da731c6` | PresaleTokenRenderer | impl | live | no |
+| ethereum | `0x32390ad170c9604fa97a894c353a4511c0d4b4c2` | SuperToken | impl | live | no |
+| ethereum | `0x35d4d9bc79b0a543934b1769304b90d752691cad` | Vault-3 | impl | live | no |
+| ethereum | `0x38c36e87e5b2ad095a9fe5f51a7ad14e2941afeb` | ClaimStratStream | impl | live | no |
+| ethereum | `0x4421461239ae746127c13a19177656124433dc60` | SuperToken | impl | live | no |
+| ethereum | `0x4bb4c3cdc7562f08e9910a0c7d8bb7e108861eb4` | Vault | impl | live | no |
+| ethereum | `0x4dfa9966457ee49dca3407f8dd484b739c048670` | Controller | impl | live | no |
+| ethereum | `0x5df764d0914c12595a983c4371ddb05502012eab` | RedeemPresaylor | impl | live | no |
+| ethereum | `0x5ed056b2aa13e19c5ccd4624f3e93c1b621fad5a` | SuperToken | impl | live | no |
+| ethereum | `0x613e87be1cd75debc5e6e56a2af2fed84162c142` | SuperToken | impl | live | no |
+| ethereum | `0x63aceb46b6bf8877b8983710fdf9a7b1a5a56bf4` | StratPresale | impl | live | no |
+| ethereum | `0x666651c520bf4721f2f5b0460ed8b8d60bbdde8b` | Underlying | impl | live | no |
 | ethereum | `0x67e26e7ef3344b9e8970f6413dc678b138c30317` | UniswapV3Pool | impl | live | no |
-| ethereum | `0x9371352ccef6f5b36efdfe90942ffe622ab77f1d` | Vault | impl | live | no |
+| ethereum | `0x771200261c99ff4e0a072b0484b76c56c826229d` | pnETH | impl | live | no |
+| ethereum | `0x7e1d17b580dd4f89037db331430eaee8b8e50c91` | SuperToken | impl | live | no |
+| ethereum | `0x8180eccc825b692ef65ff099a0a387743788bf78` | Vault | impl | live | no |
+| ethereum | `0x82d4a4f701a5781ae6236ffa25545329a6161b76` | ConnectorPlug | impl | live | no |
+| ethereum | `0x8e52df0ce721e01df82b2c938ef85a6ed7cbf77f` | MultiDistro-2 | impl | live | no |
+| ethereum | `0x8ea1eb0d10e3a4fbe7785dc269dc05d995576299` | ESPNRedemptionFacilitator-2 | impl | live | no |
+| ethereum | `0x9371352ccef6f5b36efdfe90942ffe622ab77f1d` | Vault-4 | impl | live | no |
+| ethereum | `0x954be1803546150bfd887c9ff70fd221f2f505d3` | SuperToken | impl | live | no |
+| ethereum | `0x96e47fc9c701e8eef22fa53e62dc3ebbdccaea73` | Vault | impl | live | no |
+| ethereum | `0x988dddb1c7578afae302143b1c5fda12fd486904` | SuperToken | impl | live | no |
 | ethereum | `0xb250c9e0f7be4cff13f94374c993ac445a1385fe` | EthStrategyPerpetualNote | impl | live | no |
+| ethereum | `0xb96d4d74dcb2f7899c74878d0727ffab009accc4` | EthStrategyConvertibleNote | impl | live | no |
+| ethereum | `0xc52ef06b0b44da0df03ad57197b78d784d12d8a6` | SuperToken | impl | live | no |
+| ethereum | `0xca8940d121a55e9bca2baa508a151f610b06371a` | RedeemPresaylor-2 | impl | live | no |
+| ethereum | `0xcae44c93f7b3b519fc28f9d4f7ae22de770a907b` | Vault | impl | live | no |
+| ethereum | `0xcb39cd7831f091beca153c08453066d7913b598b` | SuperToken | impl | unknown | no |
 | ethereum | `0xcd65f0b6e31e44225330db8622a9e5307ddc6c1c` | StakedEthStrategyPerpetualNoteLP | impl | live | no |
+| ethereum | `0xd4598307b5507a2b04d0502fcc9b68bbca9275f3` | CdtToken | impl | live | no |
+| ethereum | `0xd6664390e0485cd609d4d04b430e84e945a51994` | StakedStrat | impl | live | no |
+| ethereum | `0xd7d75fb3e4df1c148241dc38d9e842100a8837a3` | Vault-2 | impl | unknown | no |
+| ethereum | `0xd840e7ca51c2106c1169a4e28cd6b4a048a15960` | ArrakisV2Resolver | impl | live | no |
+| ethereum | `0xdb39c6502e6daac4d9efe6383029bda464ea043c` | Vault-4 | impl | live | no |
+| ethereum | `0xdf9acfd417584b25cde387972d28dbb7f33c1a72` | SuperToken | impl | live | no |
+| ethereum | `0xdfc777078b55211dbf1d3f5776f1fe21aef3f4bf` | LyraTSAShareHandlerDepositHook | impl | live | no |
+| ethereum | `0xdfd366d941a51e1f53fbddb19fb4ee3af17ff991` | SuperToken | impl | live | no |
+| ethereum | `0xdffb0453ce8bb0c6059a66171515960483ebaa4c` | GUniPool | impl | live | no |
 | ethereum | `0xe1e9093365545e11cb02c36b2688e17b4dc447fc` | StratOption | impl | live | no |
+| ethereum | `0xe3e96892d30e0ee1a8131baf87c891201f7137bf` | Vault-3 | impl | live | no |
+| ethereum | `0xe7cd9370cde6c9b5eabce8f86d01822d3de205a0` | Vault | impl | live | no |
+| ethereum | `0xe9a12fb15cc00b59867e4e2f0acbdcebfd32b3d7` | Vault | impl | live | no |
+| ethereum | `0xf90b959ae8dfba2dd793ad05176209835658362b` | SuperToken-2 | impl | live | no |
+| ethereum | `0xfcb49f4d618571e4f537deeb4e72bd81a9457db9` | SuperToken | impl | live | no |
+| ethereum | `0xfef430377e7ed9bf5e4cadc41c709bf4bb6235fe` | Vault-5 | impl | live | no |

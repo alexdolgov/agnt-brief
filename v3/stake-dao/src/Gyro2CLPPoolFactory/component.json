@@ -1,0 +1,28 @@
+{
+  "component": "Gyro2CLPPoolFactory",
+  "main_contract": "Gyro2CLPPoolFactory",
+  "source_entry_count": 51,
+  "source_file_count": 51,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Gyro2CLPPoolFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x043a2dad730d585c44fb79d2614f295d2d625412",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

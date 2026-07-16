@@ -1,0 +1,118 @@
+// SPDX-License-Identifier: AGPL-3.0
+pragma solidity ^0.8.23;
+
+import {IBaseHealthCheck} from "@periphery/Bases/HealthCheck/IBaseHealthCheck.sol";
+import {IMorphoOracle} from "./IMorphoOracle.sol";
+
+interface IPawnBroker is IBaseHealthCheck {
+    /// @notice Returns the borrower address for this pawn broker.
+    function BORROWER() external view returns (address);
+
+    /// @notice Returns the collateral token address for this pawn broker.
+    function COLLATERAL_ASSET() external view returns (address);
+
+    /// @notice Returns the oracle used to value collateral.
+    function ORACLE() external view returns (IMorphoOracle);
+
+    /// @notice Returns the configured LLTV scaled by `1e18`.
+    function LLTV() external view returns (uint256);
+
+    /// @notice Returns the annualized rate in basis points.
+    function rate() external view returns (uint256);
+
+    /// @notice Returns the next rate and activation timestamp scheduled to become active.
+    function pendingRateUpdate() external view returns (uint256 value, uint256 effectiveTime);
+
+    /// @notice Returns the active liquidation bonus in basis points.
+    function liquidationBonusBps() external view returns (uint256);
+
+    /// @notice Returns the next liquidation bonus and activation timestamp scheduled to become active.
+    function pendingLiquidationBonusUpdate() external view returns (uint256 value, uint256 effectiveTime);
+
+    /// @notice Returns whether borrower, liquidation, and tokenized-strategy activity is paused.
+    function paused() external view returns (bool);
+
+    /// @notice Returns the debt-call deadline window in seconds.
+    function CALL_DURATION() external view returns (uint256);
+
+    /// @notice Sets whether an address may deposit into the strategy.
+    function setAllowed(address _owner, bool _isAllowed) external;
+
+    /// @notice Sets whether an address may liquidate unhealthy or overdue debt.
+    function setLiquidator(address _liquidator, bool _isAllowed) external;
+
+    /// @notice Pauses borrower, liquidation, and tokenized-strategy activity.
+    function pause() external;
+
+    /// @notice Unpauses borrower, liquidation, and tokenized-strategy activity.
+    function unpause() external;
+
+    /// @notice Schedules a new annualized rate in basis points.
+    function setRate(uint256 _newRateBps) external;
+
+    /// @notice Applies the pending rate once its delay has elapsed.
+    function applyPendingRate() external;
+
+    /// @notice Schedules a new liquidation bonus in basis points.
+    function setLiquidationBonus(uint256 _newBonusBps) external;
+
+    /// @notice Applies the pending liquidation bonus once its delay has elapsed.
+    function applyPendingLiquidationBonus() external;
+
+    /// @notice Returns whether an address may liquidate unhealthy or overdue debt.
+    function liquidators(address _liquidator) external view returns (bool);
+
+    /// @notice Posts additional collateral for the borrower position.
+    function postCollateral(uint256 _amount) external;
+
+    /// @notice Borrows strategy assets against posted collateral.
+    function borrow(uint256 _amount, address _receiver) external;
+
+    /// @notice Repays outstanding debt.
+    function repay(uint256 _amount) external returns (uint256 actualRepaid);
+
+    /// @notice Withdraws posted collateral when the remaining position stays solvent.
+    function withdrawCollateral(uint256 _amount, address _receiver) external;
+
+    /// @notice Calls debt and starts the repayment deadline window.
+    function callDebt(uint256 _amount) external;
+
+    /// @notice Cancels called debt and restores the cancelled amount to the borrowable debt ceiling.
+    function cancelCalledDebt(uint256 _amount) external;
+
+    /// @notice Repays debt and seizes collateral from a liquidatable position.
+    function liquidate(uint256 _repayAmount, address _receiver, bytes calldata _data)
+        external
+        returns (uint256 actualRepaid, uint256 collateralSeized);
+
+    /// @notice Returns current debt including accrued but unapplied interest.
+    function totalDebt() external view returns (uint256);
+
+    /// @notice Returns the amount of collateral currently posted.
+    function totalCollateral() external view returns (uint256);
+
+    /// @notice Returns the current global debt ceiling enforced on new borrowing.
+    function maxDebt() external view returns (uint256);
+
+    /// @notice Returns the remaining debt reduction required by an active debt call.
+    function calledDebt() external view returns (uint256);
+
+    /// @notice Returns the called debt already repaid and still sitting idle in the strategy.
+    function repaidCalledDebt() external view returns (uint256);
+
+    /// @notice Returns the active call deadline, or zero when no call is active.
+    function callDeadline() external view returns (uint256);
+
+    /// @notice Returns whether the current position is within the configured LLTV.
+    function isSolvent() external view returns (bool);
+
+    /// @notice Returns whether the current position is solvent and not overdue.
+    function isHealthy() external view returns (bool);
+
+    /// @notice Returns the current loan-to-value ratio scaled by `1e18`.
+    function currentLtv() external view returns (uint256);
+
+    function lastAccrualTime() external view returns (uint256);
+
+    function rescue(address _token) external;
+}

@@ -1,9 +1,10 @@
 # spiritswap — deployments
 
-5 verified deployment(s) across 5 component(s).
+6 verified deployment(s) across 5 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| chain-146 | `0x2e6b9c8d4a0972f87f21437a3ac7e4a1810f5438` | SwapRouter | impl | live | no |
 | chain-146 | `0x4882198dd2064d1e35b24735e6b9e5e3b45acd6b` | SwapRouter | impl | live | no |
 | chain-146 | `0x5084e9fdf9264489a14e77c011073d757e572bb4` | NonfungiblePositionManager | impl | live | no |
 | chain-146 | `0x5be5f71bc89a2e5fdbbb2d9aeff1f4a38d5870f7` | AlgebraCommunityVault | impl | live | no |

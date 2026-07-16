@@ -1,6 +1,75 @@
 # segment-finance — deployments
 
-0 verified deployment(s) across 0 component(s).
+69 verified deployment(s) across 38 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| bsc | `0x05357a9bda81ca7184e7ac15e5f885b67e4d94bd` | SEFVestingProxy | impl | live | no |
+| bsc | `0x07b4fbc9b123ac8eed171372969dd55410946d75` | SeBep20Delegator | impl | live | no |
+| bsc | `0x12cd46b96fe0d86e396248a623b81fd84dd0f61d` | SeToken | proxy | unknown | no |
+| bsc | `0x1fa4a73a3f0133f0025378af00236f3abdee5d63` | BEP20UpgradeableProxy-2 | proxy | live | no |
+| bsc | `0x24a8117bf6f4a5be6759918f7c111f279a999ef3` | SeBep20Delegator-2 | proxy | live | no |
+| bsc | `0x250632378e573c6be1ac2f97fcdf00515d0aa91b` | BEP20UpgradeableProxy-3 | proxy | live | no |
+| bsc | `0x2d7e06cfc08348f4114dad2d1665474a55ab446d` | SEFStore | impl | live | no |
+| bsc | `0x3821175e59cd0acda6c5fd3ebb618b204e5d7eed` | SeToken | proxy | unknown | no |
+| bsc | `0x3d6545b08693dae087e957cb1180ee38b9e3c25e` | BEP20UpgradeableProxy | proxy | live | no |
+| bsc | `0x44b1e0f4533fd155b9859a9db292c90e5b300119` | SeToken | proxy | unknown | no |
+| bsc | `0x48758b4aee6f6752830fa86dedc7ce919ea97155` | OwnedDistributor | impl | unknown | no |
+| bsc | `0x57e09c96daee58b77dc771b017de015c38060173` | SeToken-2 | proxy | unknown | no |
+| bsc | `0x5d731723cb5f7055c80c28e77062a80fb24e4ef5` | S1 | impl | live | no |
+| bsc | `0x5d7c4fa3ff3c3b020095c96b37797bca292c9b86` | Proxy | proxy | live | no |
+| bsc | `0x5de40c1152c990492eaeaeecc4ecaab788bbc4fd` | SEF | impl | unknown | no |
+| bsc | `0x5fcea94b96858048433359bb5278a402363328c3` | SeBNB | impl | unknown | no |
+| bsc | `0x69c577f76bdebcaaaae12bcc0c25b692ba33af77` | ComptrollerLens | impl | live | no |
+| bsc | `0x6a4e7e205801f8999a2a5f39f9ad83f616d35ecd` | JumpRateModelV2 | impl | live | no |
+| bsc | `0x759dd15bb7d910269a3b2b5d4bbc6953c91c4cbe` | PoolLens | impl | unknown | no |
+| bsc | `0x763217cfefac3b26191b1dcae1926f65157b9a05` | Proxy | proxy | unknown | no |
+| bsc | `0x7950865a9140cb519342433146ed5b40c6f210f7` | BEP20UpgradeableProxy | proxy | live | no |
+| bsc | `0x7d6549aa8bfd0d3068a2690010fec0fa6edebbc1` | HypFiatToken | impl | live | no |
+| bsc | `0x81c2be2b48cdc0f57fd3e11357c29cf3f35b5b14` | Proxy | proxy | live | no |
+| bsc | `0x8404f19cb0490b424f9848ae568a28cfd5af6090` | SEFVaultDistributorBacker | impl | live | no |
+| bsc | `0x855826b8492b137b84b3a4a445ef573a7c2c4ac6` | SEFVesting | impl | live | no |
+| bsc | `0x8969b89d5f38359fbe95bbe392f5ad82dd93e226` | SeToken | proxy | unknown | no |
+| bsc | `0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d` | BEP20UpgradeableProxy | proxy | unknown | no |
+| bsc | `0x8c248e305c2ca62f942f3f2f2c4acab46f295f75` | JumpRateModelV2 | impl | live | no |
+| bsc | `0x947950bcc74888a40ffa2593c5798f11fc9124c4` | BEP20UpgradeableProxy | proxy | live | no |
+| bsc | `0x9a2f5556e9a637e8fbce886d8e3cf8b316a1d8a2` | BEP20UpgradeableProxy | proxy | live | no |
+| bsc | `0x9c1f9b823b5aa5352831f050178fdd9b3503677f` | SeBep20Delegate | impl | unknown | no |
+| bsc | `0xa2b726b1145a4773f68593cf171187d8ebe4d495` | BEP20UpgradeableProxy | proxy | live | no |
+| bsc | `0xa609d4f86ba67904d8da16f485e920037b431c1b` | SEFVaultDistributorBacker-2 | impl | live | no |
+| bsc | `0xac4abaa93740d6b6d7e91aeb92c53da76b337aef` | JumpRateModelV2 | impl | live | no |
+| bsc | `0xadbfba66c5634825a720c2f23be36ae42367c0bf` | SetterFacet | impl | live | no |
+| bsc | `0xb40d2ba22217c24cee52e28755bb4a2275a8e1e1` | SequenceUtils | impl | live | no |
+| bsc | `0xb5983ac361c827add2aeeff800034174f9f54cf4` | Proxy | proxy | unknown | no |
+| bsc | `0xb7f8cd00c5a06c0537e2abff0b58033d02e5e094` | BEP20UpgradeableProxy | proxy | live | no |
+| bsc | `0xba86bce76e4b940371b3093118d0074278e578eb` | ResilientOracle | impl | unknown | no |
+| bsc | `0xbf7c81fff98bbe61b40ed186e4afd6ddd01337fe` | BEP20UpgradeableProxy | proxy | live | no |
+| bsc | `0xc6bcbe182b0f85dbff6b49dc81cecee02a16fe57` | SEFVaultProxy | proxy | unknown | no |
+| bsc | `0xc83b96ecc30c6449f2627c44367d95a1a18ac564` | VesterSale | impl | live | no |
+| bsc | `0xd1449974b4302107977b77b382865053de53e5a0` | Proxy | proxy | live | no |
+| bsc | `0xd475c9c934dcd6d5f1cac530585aa5ba14185b92` | BEP20UpgradeableProxy | proxy | live | no |
+| bsc | `0xd5f76751784e8e96966cbf8cff026a1b7caf0626` | OwnedDistributor | impl | unknown | no |
+| bsc | `0xdd3c817354e3855ef2b52d15ad2244793c50385a` | BEP20UpgradeableProxy | proxy | live | no |
+| bsc | `0xdeb81884f0405aaa777744a57e8f1097e0c92fa5` | Diamond | impl | unknown | no |
+| bsc | `0xe020895566e2cdf0d3ad67bc9770d8af43619e50` | SEFVaultDistributorBacker-3 | impl | live | no |
+| bsc | `0xe500c58b4e7667532ca39b3b770dd02fd4e9b47e` | JumpRateModelV2 | impl | live | no |
+| bsc | `0xec430a0c8d2c11f0df864a9d7879b9a8ad0ca8dc` | JumpRateModelV2 | impl | live | no |
+| bsc | `0xeddaa1c5d0aaeb05f3e2415026af5df2b03d2000` | SEFVaultDistributor | impl | live | no |
+| bsc | `0xeebe1abc85014b114d691ec1f0d72c38001b3d3d` | MarketFacet | impl | live | no |
+| bsc | `0xf0a54a488e0324e7d9d595cb648b1576b6ee3862` | TransparentUpgradeableProxy | proxy | unknown | no |
+| bsc | `0xf1c743cc02eb58bdba48cea7137570f18b05fc12` | LiquidityGenerator | impl | unknown | no |
+| bsc | `0xf58defeb311f10343b1af216b2f35a0a365d59d2` | SEFVault | impl | live | no |
+| bsc | `0xf88af457ffa385ee115d794558dd0530fbf3b590` | V1PriceOracle | impl | live | no |
+| bsc | `0xf8adf750633b8f95aa00bdbe2ed2924b6c386004` | SeBep20Delegator | impl | live | no |
+| bsc | `0xfb6115445bff7b52feb98650c87f44907e58f802` | BEP20UpgradeableProxy | proxy | live | no |
+| chain-204 | `0x2e81af8bdb43eaacf96d79145b36abc2407cc80a` | AccessControlManager | impl | live | no |
+| chain-204 | `0x2f67784d367bab5fd7b8dc607504e0c8de0ad696` | STreasury | impl | unknown | no |
+| chain-204 | `0x50c5725949a6f0c72e6c4a641f24049a917db0cb` | OptimismMintableERC20 | impl | live | no |
+| chain-204 | `0x567558167f102bb45c0437f1fd5a527c5c534c3c` | SeToken | impl | unknown | no |
+| chain-204 | `0x7c6b91d9be155a6db01f749217d76ff02a7227f2` | OptimismMintableERC20 | impl | unknown | no |
+| chain-204 | `0x7e844423510a5081de839e600f7960c7ce84eb82` | SeBNB | impl | live | no |
+| chain-204 | `0x81b98b2896f1f262714f12be36264aa8e02a08d2` | SeToken | impl | unknown | no |
+| chain-204 | `0x9e5aac1ba1a2e6aed6b32689dfcf62a509ca96f3` | OptimismMintableERC20 | impl | unknown | no |
+| chain-204 | `0xaacf634dd705d37e94c38ea68384e669d2b4d491` | Proxy | proxy | unknown | no |
+| chain-204 | `0xe7798f023fc62146e8aa1b36da45fb70855a77ea` | OptimismMintableERC20 | impl | unknown | no |
+| chain-204 | `0xfe62ba7400d902a9773da9f7469da457cf54a565` | SeToken | proxy | live | no |

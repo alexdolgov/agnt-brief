@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { IDestinationAdapter } from "src/interfaces/destinations/IDestinationAdapter.sol";
 
@@ -36,40 +36,30 @@ interface IDestinationRegistry {
      * @notice Removes an addresses of the given pre-registered destination types
      * @param destinationTypes Ones from the destination types whitelist
      */
-    function unregister(
-        bytes32[] calldata destinationTypes
-    ) external;
+    function unregister(bytes32[] calldata destinationTypes) external;
 
     /**
      * @notice Gives an address of the given destination type
      * @dev Should revert on missing destination
      * @param destination One from the destination type whitelist
      */
-    function getAdapter(
-        bytes32 destination
-    ) external returns (IDestinationAdapter);
+    function getAdapter(bytes32 destination) external returns (IDestinationAdapter);
 
     /**
      * @notice Adds given destination types to the whitelist
      * @param destinationTypes Types to whitelist
      */
-    function addToWhitelist(
-        bytes32[] calldata destinationTypes
-    ) external;
+    function addToWhitelist(bytes32[] calldata destinationTypes) external;
 
     /**
      * @notice Removes given pre-whitelisted destination types
      * @param destinationTypes Ones from the destination type whitelist
      */
-    function removeFromWhitelist(
-        bytes32[] calldata destinationTypes
-    ) external;
+    function removeFromWhitelist(bytes32[] calldata destinationTypes) external;
 
     /**
      * @notice Checks if the given destination type is whitelisted
      * @param destinationType Type to verify
      */
-    function isWhitelistedDestination(
-        bytes32 destinationType
-    ) external view returns (bool);
+    function isWhitelistedDestination(bytes32 destinationType) external view returns (bool);
 }

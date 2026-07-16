@@ -1,8 +1,10 @@
-// Sources flattened with hardhat v2.12.0 https://hardhat.org
+// Sources flattened with hardhat v2.17.3 https://hardhat.org
+
+// SPDX-License-Identifier: MIT
 
 // File contracts/core/interfaces/IVaultUtils.sol
 
-// SPDX-License-Identifier: MIT
+
 
 pragma solidity 0.6.12;
 
@@ -454,7 +456,7 @@ contract VaultUtils is IVaultUtils, Governable {
     }
 
     function validateDecreasePosition(address /* _account */, address /* _collateralToken */, address /* _indexToken */ , uint256 /* _collateralDelta */, uint256 /* _sizeDelta */, bool /* _isLong */, address /* _receiver */) external override view {
-        // no additional validations
+        require(vault.isLeverageEnabled(), "Leverage not enabled");
     }
 
     function getPosition(address _account, address _collateralToken, address _indexToken, bool _isLong) internal view returns (Position memory) {

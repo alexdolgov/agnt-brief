@@ -1,0 +1,44 @@
+{
+  "component": "StaticProtocolFee",
+  "main_contract": "StaticProtocolFee",
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-6336aa4821ec-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/access/Ownable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-e6fe8adf622a-Ownable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/utils/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-e7a2c84b53f8-Context.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StaticProtocolFee\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8b05bf30f6247a90006c5837ea63c7905d79e6d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

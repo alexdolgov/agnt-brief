@@ -1,8 +1,8 @@
 {
   "component": "DStakeCollateralVault",
   "main_contract": "DStakeCollateralVault",
-  "source_entry_count": 14,
-  "source_file_count": 14,
+  "source_entry_count": 22,
+  "source_file_count": 22,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,21 +10,39 @@
     "build_command": "forge build --root \"src/DStakeCollateralVault\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/hats-finance/dTRINITY-0xee5c6f15e8d0b55a5eff84bb66beeee0e6140ffe/blob/report-update-20250822T111243728Z/report.md"
-  ],
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-252",
-      "chain_id": 252,
-      "address": "0x5432ed4a370718d6904485e2fc114762c68cc7be",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x709c233a9e82e9fa9990d8163da47b1cce9be595",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393833"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x925a5ce02b8ffabb49179a4ad49b7893bc8eead9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xd4258dd87ed5eb103aa9760a963c2dd7f61b4d8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

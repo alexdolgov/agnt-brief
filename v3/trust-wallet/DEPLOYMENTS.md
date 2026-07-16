@@ -1,9 +1,15 @@
 # trust-wallet — deployments
 
-0 verified deployment(s) across 0 component(s).
+6 verified deployment(s) across 4 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| bsc | `0x0e7dd56f7d2cadc066b992cec58253190f002c25` | TokenLocker | impl | live | no |
+| bsc | `0x1276d63baef24d316383be594b8f978a507932db` | PointToken | impl | live | no |
+| bsc | `0x3bffd2ee930c506e91453b74e7c0214da60146b9` | TokenLocker | impl | live | no |
+| bsc | `0x4195faaba1cbad584fe2fec711d788cdb9a6a9a7` | Distributor | impl | live | no |
+| bsc | `0x46a9e9434dac9baa1f95a5129f04aef6c8c57829` | DistributionCreator | impl | live | no |
+| bsc | `0x5029f49585d57ed770d2194841b5a0be06bfc2ed` | TokenLocker | impl | live | no |
 
 ## Source unavailable (8)
 Verified on-chain but no source in the verification cache (skipped from the tree):

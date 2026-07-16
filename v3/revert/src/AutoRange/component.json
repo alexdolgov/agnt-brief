@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/AutoRange\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 6,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -43,6 +43,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "398459"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf82a64e421601bb16fdc33f6b99b877bd746b826",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "polygon",

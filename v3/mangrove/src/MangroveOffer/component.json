@@ -1,0 +1,28 @@
+{
+  "component": "MangroveOffer",
+  "main_contract": "MangroveOffer",
+  "source_entry_count": 46,
+  "source_file_count": 46,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MangroveOffer\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x4476bdf5d97b2ba9604b3cf2104c0860823d7c60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396416"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "component": "ZeroOFT",
+  "main_contract": "ZeroOFT",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ZeroOFT\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x39655dd658a1bb9cd090c793f83d2e355d97d94e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x64d904e62e76a00ab21dd75a15ab68d9a2222797",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: BUSL-1.1
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.19;
 
 import {IModuleRegistry} from "../interfaces/IModuleRegistry.sol";
@@ -27,7 +27,7 @@ abstract contract ModuleRegistry is
 
     IArrakisMetaVaultFactory public factory;
     /// @dev should be a timelock contract.
-    address public immutable admin;
+    address public admin;
 
     // #endregion public properties.
 

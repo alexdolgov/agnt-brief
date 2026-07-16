@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/RamsesV3Factory\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 7,
   "audited": true,
   "audits_covering": [
     "https://cantina.xyz/portfolio/48fc9b98-ded3-43fa-80a2-5aedb3a5a51e",
@@ -21,12 +21,72 @@
     {
       "chain": "chain-146",
       "chain_id": 146,
+      "address": "0x209345d63c4629b46816d85c9e53f076036c7f75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x8368218a93872e90f89abb0bb3c625652990aa5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x9d2dfb536dd93b168b8b9bff3590bd16e78aeae5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xb2453885176bf8895c5f2b084138256aa3886e87",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
       "address": "0xcd2d0637c94fe77c2896bbcbb174ceffb08de6d7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "398920"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xed147bc254e9f0887365c1c6b7830bbedebb9bef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xed55fa4772cbb9f45ea8118a39cf640df2fdb2dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

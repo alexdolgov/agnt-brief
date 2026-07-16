@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/CarbonVortex\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,56 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "392641"
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x4bbd9fae81734cd2c73428307c74079f4e1b08a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392643"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb53f078315790b62974cdd12fe6f80e946642a36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x4fe1b742e484181255385a026653f8bc1115b4c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x6cd7f631f8c017bb4427d3257593e29ed9bc2fdc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392666"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x30dd96d6b693f78730c7c48b6849d9c44caf39f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392670"
     }
   ]
 }

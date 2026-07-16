@@ -37,11 +37,8 @@ contract erc20Stablecoin is ReentrancyGuard, VaultNFTv3 {
 
     IERC20 public mai;
 
-    uint256 public collateralDecimals;
-
     event CreateVault(uint256 vaultID, address creator);
     event DestroyVault(uint256 vaultID);
-    event TransferVault(uint256 vaultID, address from, address to);
     event DepositCollateral(uint256 vaultID, uint256 amount);
     event WithdrawCollateral(uint256 vaultID, uint256 amount);
     event BorrowToken(uint256 vaultID, uint256 amount);
@@ -76,7 +73,6 @@ contract erc20Stablecoin is ReentrancyGuard, VaultNFTv3 {
 
         collateral = IERC20(_collateral);
         mai = IERC20(_mai);
-        collateralDecimals = 8;
     }
 
     modifier onlyVaultOwner(uint256 vaultID) {
@@ -249,7 +245,7 @@ contract erc20Stablecoin is ReentrancyGuard, VaultNFTv3 {
         
         uint256 collateralPercentage = collateralValueTimes100.div(debtValue);
 
-        debtValue = debtValue.div(10 ** collateralDecimals);
+        debtValue = debtValue.div(100000000);
 
         uint256 halfDebt = debtValue.div(debtRatio); //debtRatio (2)
 
@@ -311,7 +307,7 @@ contract erc20Stablecoin is ReentrancyGuard, VaultNFTv3 {
 
         require(collateralPercentage < _minimumCollateralPercentage, "Vault is not below minimum collateral percentage");
 
-        debtValue = debtValue.div(10 ** collateralDecimals);
+        debtValue = debtValue.div(100000000);
 
         uint256 halfDebt = debtValue.div(debtRatio); //debtRatio (2)
 

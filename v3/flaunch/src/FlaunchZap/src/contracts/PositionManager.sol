@@ -252,8 +252,14 @@ contract PositionManager is BaseHook, FeeDistributor, InternalSwapPool, StoreKey
             creatorFee[poolId] = _params.creatorFeeAllocation;
         }
 
-        // Initialize all fee calculators attached to the pool, along with any custom parameters
-        _initializeFeeCalculators(poolId, _params.feeCalculatorParams);
+        {
+            // Check if we have a fair launch calculator assigned. If we do, then we want to register
+            // any custom parameters that have been passed.
+            IFeeCalculator fairLaunchCalculator = getFeeCalculator(true);
+            if (address(fairLaunchCalculator) != address(0)) {
+                fairLaunchCalculator.setFlaunchParams(poolId, _params.feeCalculatorParams);
+            }
+        }
 
         // Initialize our memecoin with the sqrtPriceX96
         int24 initialTick = poolManager.initialize(
@@ -281,7 +287,7 @@ contract PositionManager is BaseHook, FeeDistributor, InternalSwapPool, StoreKey
 
         if (_params.premineAmount != 0) {
             int premineAmount = _params.premineAmount.toInt256();
-            assembly { tstore(poolId, premineAmount) }
+            assembly { tstore(IS_PREMINE, premineAmount) }
         }
 
         /**
@@ -419,8 +425,9 @@ contract PositionManager is BaseHook, FeeDistributor, InternalSwapPool, StoreKey
          */
 
         {
-            // If set, get the timestamp that the pool is scheduled to flaunch
             PoolId poolId = _key.toId();
+
+            // If set, get the timestamp that the pool is scheduled to flaunch
             uint _flaunchesAt = flaunchesAt[poolId];
             if (_flaunchesAt != 0) {
                 // If we have a schedule set for the token, then we need to make an additional
@@ -428,7 +435,7 @@ contract PositionManager is BaseHook, FeeDistributor, InternalSwapPool, StoreKey
                 // ensures that we are in the same block and that the amount specified is the same.
                 // We cannot check that the caller is the same as the `_sender` is obfuscated to
                 // be the swap contract.
-                int premineAmount = _tload(PoolId.unwrap(poolId));
+                int premineAmount = _tload(IS_PREMINE);
                 if (premineAmount != 0 && _params.amountSpecified == premineAmount) {
                     emit PoolPremine(poolId, premineAmount);
                 } else {
@@ -446,6 +453,7 @@ contract PositionManager is BaseHook, FeeDistributor, InternalSwapPool, StoreKey
         // Check if our fair launch period hasn't ended and already been processed
         FairLaunch.FairLaunchInfo memory fairLaunchInfo = fairLaunch.fairLaunchInfo(_key.toId());
         if (!fairLaunchInfo.closed) {
+            PoolId poolId = _key.toId();
             bool nativeIsZero = nativeToken == Currency.unwrap(_key.currency0);
 
             /**
@@ -453,8 +461,7 @@ contract PositionManager is BaseHook, FeeDistributor, InternalSwapPool, StoreKey
              * need to close the position.
              */
 
-            PoolId poolId = _key.toId();
-            if (_tload(PoolId.unwrap(poolId)) == 0 && !fairLaunch.inFairLaunchWindow(poolId)) {
+            if (_tload(IS_PREMINE) == 0 && !fairLaunch.inFairLaunchWindow(poolId)) {
                 uint unsoldSupply = fairLaunchInfo.supply;
                 
                 // closes the fair launch position, putting remaining memecoin supply into the liquidity pool
@@ -530,18 +537,6 @@ contract PositionManager is BaseHook, FeeDistributor, InternalSwapPool, StoreKey
                         _nativeIsZero: nativeIsZero
                     });
                 }
-            }
-        }
-
-        /**
-         * [PREMINE] Delete our transient storage data to prevent premines ever being triggered
-         * over multiple swaps.
-         */
-
-        {
-            PoolId poolId = _key.toId();
-            assembly {
-                tstore(poolId, 0)
             }
         }
 

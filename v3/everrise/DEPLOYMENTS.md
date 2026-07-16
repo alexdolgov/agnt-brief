@@ -1,8 +1,71 @@
 # everrise — deployments
 
-2 verified deployment(s) across 2 component(s).
+65 verified deployment(s) across 32 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| avalanche | `0x02d632ba7f2a046817af67ef7b279080d3cab641` | TokenVesting-2 | impl | live | no |
+| avalanche | `0x089ec7a075afe4af4e49ff11a21a0c3b61c22dcc` | TokenVesting | impl | live | no |
+| avalanche | `0x10f67276b71842a0c757d4432124096b32cb5029` | TokenVesting-2 | impl | live | no |
+| avalanche | `0x188bed1968b795d5c9022f6a0bb5931ac4c18f00` | MasterChefJoeV3 | impl | live | no |
+| avalanche | `0x23eb4187580524d25ff93a3571b1969b8018f628` | TokenVesting | impl | live | no |
+| avalanche | `0x29472d511808ce925f501d25f9ee9effd2328db2` | JCollateralCapErc20Delegator-2 | proxy | live | no |
+| avalanche | `0x2aa5eeb740a9f873f07798e6a61ffc12ac75d2da` | TokenVesting | impl | live | no |
+| avalanche | `0x3dca53bd528f5cb71ad837d6760074733ca60a63` | TokenVesting-2 | impl | live | no |
+| avalanche | `0x3e92639d1231befffd38d887199f87b813ff864d` | TokenVesting | impl | live | no |
+| avalanche | `0x3fe38b7b610c0acd10296fef69d9b18eb7a9eb1f` | JCollateralCapErc20Delegator | proxy | live | no |
+| avalanche | `0x585e7bc75089ed111b656faa7aeb1104f5b96c15` | JCollateralCapErc20Delegator | proxy | live | no |
+| avalanche | `0x5da155d0e75aa0e2b4c9cfc662275b95915405ca` | TokenVesting-2 | impl | live | no |
+| avalanche | `0x60ae616a2155ee3d9a68541ba4544862310933d4` | JoeRouter02 | impl | live | no |
+| avalanche | `0x66b1452bb1b5e05ce08725d392a1c9a5e5f3142d` | TokenVesting | impl | live | no |
+| avalanche | `0x670968ed86ae309f552acc60cb6716b9f8198eec` | TokenVesting-2 | impl | live | no |
+| avalanche | `0x70f7d4bc2725288a72ed3ca85a167c70bb5ac7da` | TokenVesting-2 | impl | live | no |
+| avalanche | `0x73cd077010c53bbc140b70b8ddb9c832db6e9ca0` | TokenVesting | impl | live | no |
+| avalanche | `0x7e4d8a05e10f6cb3d19822ac7742ec034a31c1d4` | TokenVesting | impl | live | no |
+| avalanche | `0x81a00330a5d7a1d4e73570a3959a7e2ad998237e` | TokenVesting | impl | live | no |
+| avalanche | `0x82fe038ea4b50f9c957da326c412ebd73462077c` | JoeHatToken | impl | live | no |
+| avalanche | `0x8b650e26404ac6837539ca96812f0123601e4448` | JCollateralCapErc20Delegator | proxy | live | no |
+| avalanche | `0x929f5cab61dfec79a5431a7734a68d714c4633fa` | JCollateralCapErc20Delegator | proxy | live | no |
+| avalanche | `0x952d827765b0b65465e3ab280b0d42819656d57e` | TokenVesting | impl | live | no |
+| avalanche | `0x9711563c33968d063fe0a41f809c4834fa997c50` | TokenVesting | impl | live | no |
+| avalanche | `0x9ad6c38be94206ca50bb0d90783181662f0cfa10` | JoeFactory | impl | live | no |
+| avalanche | `0x9b711b3a4ea4390c77c9438852086b3d5af3bc5c` | TokenVesting | impl | live | no |
+| avalanche | `0x9eb54aed8426cbcbb2d65ea74c94aadadf793200` | TokenVesting | impl | live | no |
+| avalanche | `0x9fcb6badfd73112c08e1cd607bbc09246263fa1c` | TokenVesting | impl | live | no |
+| avalanche | `0xb2d98a914c471ef2736e6875503f84bcae191cf1` | TokenVesting | impl | live | no |
+| avalanche | `0xbfdbe35168953c9d29bdf9a0043f902f233c76e0` | JCollateralCapErc20Delegator | proxy | live | no |
+| avalanche | `0xc146783a59807154f92084f9243eb139d58da696` | JCollateralCapErc20Delegator | proxy | live | no |
+| avalanche | `0xc17c30e98541188614df99239cabd40280810ca3` | EverRiseAvax | impl | live | no |
+| avalanche | `0xc22f01ddc8010ee05574028528614634684ec29e` | JWrappedNativeDelegator | proxy | live | no |
+| avalanche | `0xc6001b0e628c967af6638f7538791ab3c4669249` | TokenVesting | impl | live | no |
+| avalanche | `0xc698d4fa211bdba3e48fe880efe371372774673c` | TokenVesting | impl | live | no |
+| avalanche | `0xc988c170d0e38197dc634a45bf00169c7aa7ca19` | JCollateralCapErc20Delegator | proxy | live | no |
+| avalanche | `0xce095a9657a02025081e0607c8d8b081c76a75ea` | JCollateralCapErc20Delegator | proxy | live | no |
+| avalanche | `0xd603663bf9f8e3709445492112a9271248fa5360` | TokenVesting | impl | live | no |
+| avalanche | `0xdba7b24257fc6e397cb7368b4bc922e944072f1b` | veRise | impl | live | no |
+| avalanche | `0xdc13687554205e5b89ac783db14bb5bba4a1edac` | Unitroller | proxy | live | no |
+| avalanche | `0xe5cddafd0f7af3deaf4bd213bbaee7a5927ab7e7` | Maximillion | impl | live | no |
+| avalanche | `0xed6aaf91a2b084bd594dbd1245be3691f9f637ac` | JCollateralCapErc20Delegator | proxy | live | no |
+| avalanche | `0xfa4ceb42b72f0c5e9cdedf68c006bdee5d0a1846` | TokenVesting | impl | live | no |
+| avalanche | `0xfb058632c903ef564ba9be42da94e818691a3fe9` | TokenVesting | impl | live | no |
+| bsc | `0x025c9f1146d4d94f8f369b9d98104300a3c8ca23` | MTGY-2 | impl | live | no |
+| bsc | `0x612e353a8595f0481e6ddf507935e897c38ddc93` | Spooky | impl | live | no |
+| bsc | `0x7818bd4b7bae6a4be0a2ebb04d166a7f69eed948` | Spooky-2 | impl | live | no |
+| bsc | `0x89dd305ffbd8e684c77758288c48cdf4f4abe0f4` | EverOwn-2 | impl | live | no |
+| bsc | `0xb72962568345253f71a18318d67e13a282b187e6` | EFT | impl | live | no |
+| bsc | `0xc08e10b7eb0736368a0b92ee7a140ec8c63a2dd1` | MUSO | impl | live | no |
+| bsc | `0xc17c30e98541188614df99239cabd40280810ca3` | EverRise-2 | impl | live | no |
+| bsc | `0xca143ce32fe78f1f7019d7d551a6402fc5350c73` | PancakeFactory | impl | live | no |
+| bsc | `0xdba7b24257fc6e397cb7368b4bc922e944072f1b` | veRise | impl | live | no |
+| bsc | `0xed74bc5dc139356e08de28143996f5ef6e4334a4` | SpookyShiba | impl | live | no |
+| ethereum | `0x025c9f1146d4d94f8f369b9d98104300a3c8ca23` | MTGY | impl | live | no |
+| ethereum | `0x0ae8b74cd2d566853715800c9927f879d6b76a37` | Momento | impl | live | no |
 | ethereum | `0x23cd2e6b283754fd2340a75732f9ddbb5d11807e` | nftEverRise | impl | live | yes |
+| ethereum | `0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f` | UniswapV2Factory | impl | live | no |
+| ethereum | `0x78ab99dae7302ea91e36962f4b23418a89d3a69d` | EverOwn | impl | live | no |
 | ethereum | `0xc17c30e98541188614df99239cabd40280810ca3` | EverRise | proxy | live | yes |
+| polygon | `0x0000000000000000000000000000000000001010` | MRC20 | impl | live | no |
+| polygon | `0x5757371414417b8c6caad45baef941abc7d3ab32` | UniswapV2Factory-2 | impl | live | no |
+| polygon | `0x7dd45e9be23219fd8ccfc584b652775aba62fdef` | EverOwn-3 | impl | live | no |
+| polygon | `0xc17c30e98541188614df99239cabd40280810ca3` | EverRise | impl | live | yes |
+| polygon | `0xf3c62dbbfec92a2e73d676d62ebec06a6bc224e2` | UniswapV2Pair | impl | live | no |

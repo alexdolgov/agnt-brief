@@ -1,0 +1,159 @@
+{
+  "component": "ConfigProvider",
+  "main_contract": "ConfigProvider",
+  "source_entry_count": 28,
+  "source_file_count": 28,
+  "source_path_remaps": [
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/chainlink/AggregatorV3Interface.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-d900fa55e312-AggregatorV3Interface.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/core/ConfigProvider.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-911091c54ae8-ConfigProvider.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/governance/interfaces/IGovernanceAddressProvider.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-52c35cff9fad-IGovernanceAddressProvider.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/governance/interfaces/IGovernorAlpha.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-6f023edb55dc-IGovernorAlpha.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/governance/interfaces/ITimelock.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-efa90ae1035c-ITimelock.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/governance/interfaces/IVotingEscrow.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-0e2a96b4b4da-IVotingEscrow.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/interfaces/IAccessController.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-3fc77847c3e5-IAccessController.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/interfaces/IAddressProvider.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-023aa7d7707f-IAddressProvider.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/interfaces/IConfigProvider.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-a5705c418aea-IConfigProvider.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/interfaces/IFeeDistributor.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-5c26e84a35ca-IFeeDistributor.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/interfaces/ILiquidationManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-8784b33f11ae-ILiquidationManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/interfaces/IPriceFeed.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-ca24307807ad-IPriceFeed.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/interfaces/IRatesManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-cf79aca2cff9-IRatesManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/interfaces/ISTABLEX.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-b106b5bbf9fb-ISTABLEX.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/interfaces/IVaultsCore.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-cb0985631f7b-IVaultsCore.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/interfaces/IVaultsCoreState.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-8b7cf78eb74b-IVaultsCoreState.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/interfaces/IVaultsDataProvider.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-5f2fa4b8d76a-IVaultsDataProvider.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/interfaces/IWETH.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-7bcaa2e51642-IWETH.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/libraries/WadRayMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-a9830dc50b70-WadRayMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/liquidityMining/interfaces/IDebtNotifier.sol",
+      "exported_path": "__audit_export_path_conflicts__/0020-ddd8eda806b1-IDebtNotifier.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/liquidityMining/interfaces/IMIMO.sol",
+      "exported_path": "__audit_export_path_conflicts__/0021-55f51ef58617-IMIMO.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/liquidityMining/interfaces/ISupplyMiner.sol",
+      "exported_path": "__audit_export_path_conflicts__/0022-62f97cadc3f2-ISupplyMiner.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/v1/interfaces/IAddressProviderV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0023-95fd01e22906-IAddressProviderV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/v1/interfaces/IConfigProviderV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0024-1b754bd11646-IConfigProviderV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/v1/interfaces/ILiquidationManagerV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0025-50845550162d-ILiquidationManagerV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/martijn/code/tenx/titan/contracts/v1/interfaces/IVaultsCoreV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0026-d822dfffe8d1-IVaultsCoreV1.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ConfigProvider\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6e271923a0afe69408d2f0425d16dbdacea7538a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/LiquidationExecutor\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x2ddb79fdeb9f4708604acecec28e4adc247980be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,

@@ -1,0 +1,28 @@
+{
+  "component": "SolverRootOracle",
+  "main_contract": "SolverRootOracle",
+  "source_entry_count": 67,
+  "source_file_count": 67,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SolverRootOracle\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x03fad8445b30bf639c5f54e9502e43ba5f4d6cad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

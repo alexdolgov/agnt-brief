@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/TreasuryDistributor\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4306e56213e985276b99fd5f5c5ae097fa5b1bdc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "base",
       "chain_id": 8453,

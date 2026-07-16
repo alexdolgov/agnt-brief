@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 7,
+  "deployment_count": 8,
   "audited": true,
   "audits_covering": [
     "https://github.com/inkonchain/optimism/blob/develop/docs/security-reviews/2022_05-OpNode-TrailOfBits.pdf",
@@ -72,6 +72,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "395361"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x95703e0982140d16f8eba6d158fccede42f04a4c",
+      "is_proxy": true,
+      "implementation_address": "0xb08cc720f511062537ca78bdb0ae691f04f5a957",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",

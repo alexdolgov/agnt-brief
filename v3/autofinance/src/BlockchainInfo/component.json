@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/BlockchainInfo\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x88ccc293b3708b781a3fc843b2133b037a48d171",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
@@ -23,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "391800"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x2189751274d792b6693e70468fb43ec4af7a76f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

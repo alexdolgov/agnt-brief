@@ -1,20 +1,62 @@
 # snuggle — deployments
 
-15 verified deployment(s) across 15 component(s).
+57 verified deployment(s) across 34 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x020ed29a0b1ced89c4309b32709a2a97699948bd` | StakingManager | impl | live | yes |
+| arbitrum | `0x0e7edc3856349ed0126f863cc39fc9bc008f9869` | KeepersHelper | impl | live | no |
+| arbitrum | `0x0ef66de171293285a8f8ffd0d0d564ca093da5b6` | ViewHelper | impl | live | yes |
+| arbitrum | `0x0fc73040b26e9bc8514fa028d998e73a254fa76e` | Quoter | impl | live | no |
+| arbitrum | `0x1195c074f898b7644ba732407619c9804dfe6dce` | SnuggleVaultAdminSatellite | impl | live | yes |
+| arbitrum | `0x1638b6a0477bf09163531279dc535d6c40894f9d` | SnuggleVaultUpgradeable-2 | impl | live | no |
+| arbitrum | `0x19ec46eb3cbcec146de2d9b4336187e4f147f217` | CamelotPositionAdapter | impl | live | no |
+| arbitrum | `0x1b81d678ffb9c0263b24a97847620c99d213eb14` | SwapRouter | impl | live | no |
+| arbitrum | `0x1f721e2e82f6676fce4ea07a5958cf098d339e18` | SwapRouter-2 | proxy | live | no |
+| arbitrum | `0x40822950decff42a590e577fcb0b39b3fdea716f` | KeepersHelper | impl | live | no |
+| arbitrum | `0x45405901ab9cba6b4a4e60e0c191819bbcd7d3f4` | SnuggleVaultAdminSatellite | impl | live | yes |
+| arbitrum | `0x4a14af0a8884d339e0a67f39a66bc0983ba19df9` | ViewHelper | impl | live | yes |
+| arbitrum | `0x4cd1a0b610117a688998325e3779e858ff62a065` | PancakeSwapRewardAdapter | impl | live | no |
+| arbitrum | `0x5723513d62efdac6466ec2517c95175c609cd430` | SnuggleVaultUpgradeable | impl | live | no |
+| arbitrum | `0x59c2a172e52a61c4f1bb6dbdcab41b76d9349461` | FeeTransferHelper | impl | live | yes |
+| arbitrum | `0x6915b555dd117a901b400ccd3fb4aefa1101cd00` | ReferralTracker | impl | live | no |
+| arbitrum | `0x6af9c538137c73d6a078788c59232424788d19a8` | PancakeSwapRewardAdapter | impl | live | no |
+| arbitrum | `0x71b55e366a0f43260b1138a32c312ba7bb7f30f7` | KeepersHelper-3 | impl | live | no |
+| arbitrum | `0x76bdb43d2ec3b190087076649224f47a58c44ef2` | UniswapV3Adapter | impl | live | yes |
+| arbitrum | `0x78bb36003d01ac8449b88150608d9f8dffbd4589` | PancakeSwapPositionAdapter | impl | live | no |
+| arbitrum | `0x8b3a7989ae94dcf06abe07f5b4b95c63b603ef9f` | SnuggleHedgeHelper | impl | live | no |
+| arbitrum | `0x8bca45df8659debdffb4baca911a5b9c84e037df` | ProxyAdmin | impl | live | no |
+| arbitrum | `0x8c7d966b6bee480bf96b41870ccb89559ac176f6` | TreasurySplitter | impl | live | no |
+| arbitrum | `0x999a74ddfde1575c4db454a0300d5f0351a891de` | ProxyAdmin | impl | live | no |
+| arbitrum | `0xa555826c9a26e13238f657db06e0a02431839ef5` | SwapRouter-3 | impl | live | no |
+| arbitrum | `0xa6e46583b91757f50317f84349610737d9be082c` | UniswapV3Adapter | impl | live | yes |
+| arbitrum | `0xa86b814c7e6e4cf7ad56720170ada05f0aa85c68` | SnuggleVaultUpgradeable | impl | live | no |
+| arbitrum | `0xafe51c05e2a4c64217709efd3ee34dcd2f84c92a` | TreasurySplitter | impl | live | no |
+| arbitrum | `0xb048bbc1ee6b733fffcfb9e9cef7375518e25997` | QuoterV2 | impl | live | no |
+| arbitrum | `0xb1364a423e9b011fd102ffc5011abc158dfeada7` | SnuggleHedgeHelper | impl | live | no |
+| arbitrum | `0xb52cca444e459ae8b2d0a6e29df01204e9e4705e` | ReferralTracker | impl | live | no |
+| arbitrum | `0xb668e7701bc5580368cce375da83a09e1f69f7c9` | PancakeSwapRewardAdapter | impl | live | no |
+| arbitrum | `0xbfbf7def7547f81a7d79d3e87fb825ee379a8956` | CamelotPositionAdapter-2 | impl | live | no |
+| arbitrum | `0xbfd8cf8094feee44c314b3d5ec49ccdfd80cabae` | FeeTransferHelper | impl | live | yes |
+| arbitrum | `0xc962c991dc53fd185673546d7467377f708ad7d6` | KeepersHelper | impl | live | no |
+| arbitrum | `0xd977c05d002aca0de98cd6bee25753cae1e2b40d` | StakingManager-2 | impl | live | no |
+| arbitrum | `0xe7b13bb95d5fc2ae028187d50e4f083573e299f1` | SliverConfig | impl | live | no |
+| arbitrum | `0xf20bc2825e015be66d26b27ee82988fd4f2b84d9` | PancakeSwapPositionAdapter | impl | live | no |
 | base | `0x02415b4e29e00cf76b27ab0403e1e1382d0224c0` | Contract | impl | live | yes |
-| base | `0x0c0ba0b81a4ac60321c2414bdcef24c5851b39e5` | PancakeSwapPositionAdapter | impl | live | yes |
-| base | `0x2536a771111861bc0be61bd986f0c2dc0f68d9ee` | ReferralTracker | impl | live | yes |
-| base | `0x269dc2f974abed1c7a55a447758fcaef2dcca86f` | ProxyAdmin | impl | live | yes |
+| base | `0x0aedeed5ad8d45d3d928fb872161efaa559794d1` | AerodromePositionAdapter | impl | live | yes |
+| base | `0x0c0ba0b81a4ac60321c2414bdcef24c5851b39e5` | PancakeSwapPositionAdapter-2 | impl | live | yes |
+| base | `0x2536a771111861bc0be61bd986f0c2dc0f68d9ee` | ReferralTracker-2 | impl | live | yes |
+| base | `0x269dc2f974abed1c7a55a447758fcaef2dcca86f` | ProxyAdmin-2 | impl | live | yes |
+| base | `0x286490622bcc7261c0ce794b7166dc67d3ce18bd` | ViewHelper | impl | live | yes |
 | base | `0x298028007e2aeb04d787c8a8bfa03144cc976a1c` | ViewHelper | impl | live | yes |
 | base | `0x3f928dc834029e90b149269e1244bb85cca270c1` | StakingManager | impl | live | yes |
 | base | `0x5a332caa3212a1785f64f6bdcb34c727efe4d271` | SnuggleVaultAdminSatellite | impl | live | yes |
-| base | `0x60431b5b580516817f095534d6d1e3552f563345` | KeepersHelper | impl | live | yes |
+| base | `0x60431b5b580516817f095534d6d1e3552f563345` | KeepersHelper-2 | impl | live | yes |
 | base | `0x613ba880f7695ecba0a3dcad76f99781be28b1f3` | FeeTransferHelper | impl | live | yes |
-| base | `0x63de143eae0f6dfddb3f91110e0db8375918b1cf` | PancakeSwapRewardAdapter | impl | live | yes |
-| base | `0x93d0d1216a613ad8745f9320bcb25dc04ea9ec12` | TreasurySplitter | impl | live | yes |
+| base | `0x63de143eae0f6dfddb3f91110e0db8375918b1cf` | PancakeSwapRewardAdapter-2 | impl | live | yes |
+| base | `0x93d0d1216a613ad8745f9320bcb25dc04ea9ec12` | TreasurySplitter-2 | impl | live | yes |
+| base | `0xad35ec92507566fc19581ab43a8ec9c6edbf0a71` | PancakeSwapPositionAdapter | impl | live | no |
+| base | `0xca4cf963c71234a4f7d44a750b4d3847b4debabd` | UniswapV3Adapter | impl | live | yes |
 | base | `0xcb16cb2cd32768c65418b22385888bd2c8d77306` | AerodromeRewardAdapter | impl | live | yes |
 | base | `0xe3efa7825b7ace81fa2621d892d95e0048f79589` | AerodromePositionAdapter | impl | live | yes |
 | base | `0xf757c96463cb5588dc7d8eba464c947b08f33010` | UniswapV3Adapter | impl | live | yes |

@@ -122,7 +122,7 @@ contract Minter is IMinter {
     }
 
     /// @inheritdoc IMinter
-    function initEpoch0() external {
+    function startEmissions() external {
         /// @dev ensure only the operator can start the emissions
         require(msg.sender == operator, Errors.NOT_AUTHORIZED(msg.sender));
         /// @dev ensure epoch 0 has not started yet

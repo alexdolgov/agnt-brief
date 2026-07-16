@@ -42,7 +42,7 @@ contract erc20QiStablecoin is erc20Stablecoin, Ownable {
     }
 
     function changeEthPriceSource(address ethPriceSourceAddress) external onlyOwner() {
-        ethPriceSource = PriceSource(ethPriceSourceAddress);
+        ethPriceSource = shareOracle(ethPriceSourceAddress);
     }
 
     function setTokenPeg(uint256 _tokenPeg) external onlyOwner() {

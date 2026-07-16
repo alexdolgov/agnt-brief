@@ -11,12 +11,19 @@ pragma solidity >=0.8.24 <0.9.0;
  * 3. Risk-adjusted metrics
  */
 interface ISupplyHangingCalculator {
-    /*//////////////////////////////////////////////////////////////
-                        SAFETY PARAMETERS
-    //////////////////////////////////////////////////////////////*/
+    /**
+     * @notice Sets the safety margin for supply calculations
+     * @param newSafetyMargin New safety margin percentage
+     * @dev Used for:
+     * · Risk adjustment
+     * · Supply buffer
+     * · Risk-adjusted metrics
+     */
+    function setSafetyMargin(uint256 newSafetyMargin) external;
+
     /**
      * @notice Retrieves current safety margin for supply calculations
-     * @return uint256 Safety margin percentage scaled by 1e18
+     * @return uint256 Safety margin percentage
      * @dev Used for:
      * · Risk adjustment
      * · Supply buffer
@@ -24,9 +31,6 @@ interface ISupplyHangingCalculator {
      */
     function safetyMargin() external view returns (uint256);
 
-    /*//////////////////////////////////////////////////////////////
-                    SUPPLY HANGING CALCULATIONS
-    //////////////////////////////////////////////////////////////*/
     /**
      * @notice Calculates current supply hanging with safety margins
      * @return uint256 Risk-adjusted supply hanging in base units

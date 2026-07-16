@@ -1,0 +1,28 @@
+{
+  "component": "Bn128SchnorrVerifier",
+  "main_contract": "Bn128SchnorrVerifier",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Bn128SchnorrVerifier\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x8d42d317b2bd6b60183461ed41bd00f17c3f3fe8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
-pragma solidity 0.8.17;
+pragma solidity 0.8.9;
 
+import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
-import "./Ownable.sol";
 
 abstract contract Pauser is Ownable, Pausable {
     mapping(address => bool) public pausers;

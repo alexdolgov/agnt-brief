@@ -1,8 +1,8 @@
 {
   "component": "RouterV2",
   "main_contract": "RouterV2",
-  "source_entry_count": 33,
-  "source_file_count": 33,
+  "source_entry_count": 19,
+  "source_file_count": 19,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -11,22 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://security-audit-links.s3.us-east-1.amazonaws.com/Addendum+to+Code4rena+Audit+Report.pdf",
-    "https://security-audit-links.s3.us-east-1.amazonaws.com/Code4rena+Audit-Blackhole-report.pdf",
-    "https://security-audit-links.s3.us-east-1.amazonaws.com/PeckShield-Audit-Report-Blackhole-AlgebraPools-v1.0.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x9eed160d7d8253dec1a2a512e504de5e7ff3c111",
+      "address": "0x04e1dee021cd12bba022a72806441b43d8212fec",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "392261"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "component": "AcrossSwapAdapter-5",
+  "main_contract": "AcrossSwapAdapter",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AcrossSwapAdapter-5\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x9b381108ef12a138a5b7cf231fbbef4f20e72306",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

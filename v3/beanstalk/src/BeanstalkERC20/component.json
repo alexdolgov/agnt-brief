@@ -1,8 +1,8 @@
 {
   "component": "BeanstalkERC20",
   "main_contract": "BeanstalkERC20",
-  "source_entry_count": 23,
-  "source_file_count": 23,
+  "source_entry_count": 14,
+  "source_file_count": 14,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,24 +15,24 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x1bea059c3ea15f6c10be1c53d70c75fd1266d788",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1bea3ccd22f4ebd3d37d731ba31eeca95713716d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live",
+      "liveness": "unknown",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "392014"
+      "logic_topography_row_id": "391999"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xbea0005b8599265d41256905a9b3073d397812e4",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbea0000029ad1c77d3d5d23ba2d8893db9d1efab",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live",
+      "liveness": "unknown",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "392024"
+      "logic_topography_row_id": "392006"
     }
   ]
 }

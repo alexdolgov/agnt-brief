@@ -15,24 +15,24 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x78de1e0b76523ac6e190f89ffc46571346940204",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd57bde0a8bb77a2f65769316f6343e0a13a8d7d4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395394"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x990b503f8c7353f1cab6f9d5bbf8f0be2718d731",
+      "address": "0x6bba6bab7faa5aa720f84468cba6086e0821e049",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395402"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

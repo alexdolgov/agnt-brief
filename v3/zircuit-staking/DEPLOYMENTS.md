@@ -1,6 +1,6 @@
 # zircuit-staking — deployments
 
-10 verified deployment(s) across 9 component(s).
+12 verified deployment(s) across 11 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -13,4 +13,6 @@
 | ethereum | `0x6c89104690452ad7e209f0ab72287c2561d5cf0e` | Proxy | proxy | live | no |
 | ethereum | `0x7d43eb137185aea81a020563099e940bb380f35e` | Proxy | proxy | live | no |
 | ethereum | `0x92ef6af472b39f1b363da45e35530c24619245a4` | Proxy-5 | proxy | live | yes |
+| ethereum | `0xa1290d69c65a6fe4df752f95823fae25cb99e5a7` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6` | ZtakingPool | impl | live | no |
 | ethereum | `0xf35a4088ea0231c44b9db52d25c0e9e2fee31f67` | SP1VerifierGateway | impl | live | no |

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Spoke\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 6,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -73,6 +73,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "393034"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xec3582fcdc34078a4b7a8c75a5a3ae46f48525ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "component": "SmartLoanViewFacet-14",
+  "main_contract": "SmartLoanViewFacet",
+  "source_entry_count": 76,
+  "source_file_count": 76,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SmartLoanViewFacet-14\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcc7c4c913d8e06d5425dc1360a93e54c84d40829",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

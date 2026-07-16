@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/LPToken\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 6,
+  "deployment_count": 11,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "392161"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x66f2c4963202188fcead910f1cbe55d1dec5370e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "bsc",
@@ -57,6 +67,16 @@
     {
       "chain": "bsc",
       "chain_id": 56,
+      "address": "0x8a928c16cf14d851bbd0d9df5a3ec278d1713386",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
       "address": "0xaa3d2534b4b87a2859e28c223f18265244ffffb7",
       "is_proxy": false,
       "implementation_address": null,
@@ -67,12 +87,42 @@
     {
       "chain": "bsc",
       "chain_id": 56,
+      "address": "0xb5c3617d4f077851cc6c7fae558d32e9782307f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
       "address": "0xccafb706225331aedfec75b5347d462b98ed2fd2",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "392173"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd8a24644dddc470fc48088e4ac96e846af08d813",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xeebfe7ba7906b9fbf4eee56a0ac2560cb568229b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

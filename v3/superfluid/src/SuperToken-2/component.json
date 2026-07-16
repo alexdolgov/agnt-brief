@@ -1,0 +1,219 @@
+{
+  "component": "SuperToken-2",
+  "main_contract": "SuperToken",
+  "source_entry_count": 40,
+  "source_file_count": 40,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/superfluid/SuperToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-a7f83ae7a908-SuperToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-6201fbd4ab5a-UUPSUtils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSProxiable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-24e4106197ef-UUPSProxiable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/Initializable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-b8a26ae19863-Initializable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/superfluid/SuperfluidToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-38c752c19b16-SuperfluidToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libs/FixedSizeData.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-86e983869ba0-FixedSizeData.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libs/ERC777Helper.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-5f25efeaa40f-ERC777Helper.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/tokens/ISETH.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-2f73e8f674b1-ISETH.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluidToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-e97d53cc0413-ISuperfluidToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluidGovernance.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-b197d1683ca0-ISuperfluidGovernance.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluid.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-6e773536e972-ISuperfluid.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperTokenFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-c730eb1efed4-ISuperTokenFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-e3210490aa82-ISuperToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperApp.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-cc5ac65f65f4-ISuperApp.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperAgreement.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-79e467b28a54-ISuperAgreement.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/Definitions.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-241a9b054cac-Definitions.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/gdav1/ISuperfluidPool.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-c12f1677bb20-ISuperfluidPool.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/gdav1/IPoolNFTBase.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-399f5fa449f0-IPoolNFTBase.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/gdav1/IPoolAdminNFT.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-31260362447c-IPoolAdminNFT.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/gdav1/IGeneralDistributionAgreementV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0020-6617f84d5bf8-IGeneralDistributionAgreementV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/IInstantDistributionAgreementV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0021-35cc5694ad10-IInstantDistributionAgreementV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/IConstantFlowAgreementV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0022-fb34ba39a7d4-IConstantFlowAgreementV1.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SuperToken-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 9,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x96b82b65acf7072efeb00502f45757f254c2a0d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd4f3d519b2c928e0f7182569f3e0988ee25b1549",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0742de30799351f892dc7fae8d76a265d6e772ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7daa2aca70626425213129c2b60439a5b1b1436a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x90ce40198f1ff9a274cb7d1021e8e23e13e64d08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xaaeb86810bde1087737ca5dfcbd78fb1fb05c9fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x295cef78e76564b124b948a05dbd6522c3ec76b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x87be92bab4f3dbe27a9f69aa786fe450d5027c5b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x165152bbcdb9c2f4c94b0bc2c61a62273a2e623e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

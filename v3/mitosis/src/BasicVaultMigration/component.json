@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/BasicVaultMigration\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x843fa321fdf9fafd134fed5fb1d35e17290cfc10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "scroll",
       "chain_id": 534352,

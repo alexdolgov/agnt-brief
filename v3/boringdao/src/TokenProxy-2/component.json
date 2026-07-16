@@ -1,0 +1,28 @@
+{
+  "component": "TokenProxy-2",
+  "main_contract": "TokenProxy",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TokenProxy-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xddafbb505ad214d7b80b1f830fccc89b60fb7a83",
+      "is_proxy": true,
+      "implementation_address": "0xf8d1677c8a0c961938bf2f9adc3f3cfda759a9d9",
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392473"
+    }
+  ]
+}

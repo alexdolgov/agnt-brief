@@ -1,0 +1,269 @@
+{
+  "component": "Superfluid-3",
+  "main_contract": "Superfluid",
+  "source_entry_count": 65,
+  "source_file_count": 65,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/superfluid/Superfluid.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-cdd1a001815b-Superfluid.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/utils/SimpleForwarder.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-f88b39410697-SimpleForwarder.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/utils/SimpleACL.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-7288794fcb45-SimpleACL.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/utils/ERC2771Forwarder.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-5027535e5bc6-ERC2771Forwarder.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-6201fbd4ab5a-UUPSUtils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-7bfb34a8a0b2-UUPSProxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSProxiable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-9c10448bf552-UUPSProxiable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/SuperfluidUpgradeableBeacon.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-0d6a7a959c97-SuperfluidUpgradeableBeacon.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/BeaconProxiable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-d34822d9b5ad-BeaconProxiable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libs/SolvencyHelperLibrary.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-3612d8e9726a-SolvencyHelperLibrary.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libs/SlotsBitmapLibrary.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-c473dbe5a44f-SlotsBitmapLibrary.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libs/CallbackUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-ce0cf8ce348e-CallbackUtils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libs/CallUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-bf7d0ca26479-CallUtils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/libs/BaseRelayRecipient.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-d54ce82013c0-BaseRelayRecipient.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/utils/IRelayRecipient.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-8d3bd1f9cf5e-IRelayRecipient.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/tokens/ISETH.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-2f73e8f674b1-ISETH.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluidToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-e97d53cc0413-ISuperfluidToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluidGovernance.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-b197d1683ca0-ISuperfluidGovernance.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluid.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-f5a07c63b9ad-ISuperfluid.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperTokenFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0020-bad78286b38f-ISuperTokenFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0021-492659eec109-ISuperToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperApp.sol",
+      "exported_path": "__audit_export_path_conflicts__/0022-cc5ac65f65f4-ISuperApp.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperAgreement.sol",
+      "exported_path": "__audit_export_path_conflicts__/0023-79e467b28a54-ISuperAgreement.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/Definitions.sol",
+      "exported_path": "__audit_export_path_conflicts__/0024-241a9b054cac-Definitions.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/gdav1/ISuperfluidPool.sol",
+      "exported_path": "__audit_export_path_conflicts__/0025-428e48ff0b10-ISuperfluidPool.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/gdav1/IPoolNFTBase.sol",
+      "exported_path": "__audit_export_path_conflicts__/0026-854509516808-IPoolNFTBase.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/gdav1/IPoolMemberNFT.sol",
+      "exported_path": "__audit_export_path_conflicts__/0027-e0b224388d51-IPoolMemberNFT.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/gdav1/IPoolAdminNFT.sol",
+      "exported_path": "__audit_export_path_conflicts__/0028-31260362447c-IPoolAdminNFT.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/gdav1/IGeneralDistributionAgreementV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0029-ee0772e5938a-IGeneralDistributionAgreementV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/IInstantDistributionAgreementV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0030-35cc5694ad10-IInstantDistributionAgreementV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/IConstantFlowAgreementV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0031-fb34ba39a7d4-IConstantFlowAgreementV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/agreements/gdav1/SuperfluidPoolDeployerLibrary.sol",
+      "exported_path": "__audit_export_path_conflicts__/0032-7465bcf67a27-SuperfluidPoolDeployerLibrary.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/agreements/gdav1/SuperfluidPool.sol",
+      "exported_path": "__audit_export_path_conflicts__/0033-e90c39e68184-SuperfluidPool.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/agreements/gdav1/GeneralDistributionAgreementV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0034-ca195961f994-GeneralDistributionAgreementV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/agreements/AgreementLibrary.sol",
+      "exported_path": "__audit_export_path_conflicts__/0035-e7613bdf44e3-AgreementLibrary.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/agreements/AgreementBase.sol",
+      "exported_path": "__audit_export_path_conflicts__/0036-a7994eeeea8f-AgreementBase.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Superfluid-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 7,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf2b4e81ba39f5215db2e05b2f66f482bb8e87fd2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x886d2cae1bf0d6d090be04e06fba35edbb6e5e02",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3c1bcb2648c4b4c18c44f0cc7088d09b94cbab2e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaaeb86810bde1087737ca5dfcbd78fb1fb05c9fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc5dc33d5098106f3ad31da107a090faba90cf1d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x39dc667dc95f5d89d6f0f6875e94b631c6760580",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x97620d4d7950223963f00db25f12b4ac1d4eed99",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

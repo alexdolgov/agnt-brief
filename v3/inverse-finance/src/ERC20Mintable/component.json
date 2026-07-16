@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/ERC20Mintable\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 4,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x912fa810fc246bc60689a7b537d7344ee0366f69",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "optimism",
       "chain_id": 10,
@@ -33,6 +43,26 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "395458"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xede7aae6c97a757b23fceb4f78349f296ae8dcdb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x788c3efc8182393915e216174a03cd81395f8c7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",

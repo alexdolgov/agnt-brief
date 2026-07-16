@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/AutopoolETH-4\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x60a9b4905110430c8defa0d05384ccaf8e9ec01c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "linea",
       "chain_id": 59144,

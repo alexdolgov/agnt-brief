@@ -1,8 +1,8 @@
 {
   "component": "MaturityPrimaryMarket",
   "main_contract": "MaturityPrimaryMarket",
-  "source_entry_count": 1,
-  "source_file_count": 1,
+  "source_entry_count": 17,
+  "source_file_count": 17,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,39 +10,149 @@
     "build_command": "forge build --root \"src/MaturityPrimaryMarket\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 14,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "scroll",
-      "chain_id": 534352,
-      "address": "0x088e2f0fcb2acaa5ad990311839b1d37ee41679d",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x188fe201b4335cfc1cc4f08b0c7a53488159f274",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "400429"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
-      "chain": "scroll",
-      "chain_id": 534352,
-      "address": "0x21366de9707a1044e351280f085821c734791cee",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x27b5dc8d68499a3878805daa4dcbff154cdd7fc4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "400432"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
-      "chain": "scroll",
-      "chain_id": 534352,
-      "address": "0x47b3913e6ac7dcb9752769465f875596c6f194d4",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2c5752df78d53955fbd4c585a66eb12dcc78033a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "400436"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4346d53e77fbca11c37e25a51189e0344c8b93f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x64e30fade0ebf18ab8a5123117729d1e374d8a45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x756889b49e77e56606a715e4b20d9ec438b8602a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7a7bbe67a88f1bc13cad01d9b1e2eca4af47459d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9af013fabfd2f4b8e3cd4cf6d13dfa502604198b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9fb23b8a8eb33546346e09a9b780d8f54922ead0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb26009f75e3f79122d69ecd4688f0e0b90a0eb2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc667109e0c857dd7badf3db28a57410ee18e29eb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xc94231f2f60656d1ccd1129d67076157a4842166",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf2b1eb5486c2abccb0ea5b434338fe66b6a111c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfaf33641c879bf7b5ad9387c0cf5b2084e0eeac9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

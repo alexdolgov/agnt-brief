@@ -1,8 +1,8 @@
 {
   "component": "Market-7",
   "main_contract": "Market",
-  "source_entry_count": 1,
-  "source_file_count": 1,
+  "source_entry_count": 2,
+  "source_file_count": 2,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x3474ad0e3a9775c9f68b415a7a9880b0cab9397a",
+      "address": "0x0c0bb843fabda441edefb93331cfff8ec92bd168",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395429"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

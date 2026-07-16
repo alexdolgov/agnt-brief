@@ -1,0 +1,28 @@
+{
+  "component": "TransparentUpgradeableProxy-8",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxy-8\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x98083e22d12497c1516d3c49e7cc6cd2cd9dcba4",
+      "is_proxy": true,
+      "implementation_address": "0x57ad5dc050a2e6d0eb327eced398947ee57bb861",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

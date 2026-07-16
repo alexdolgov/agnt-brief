@@ -10,12 +10,22 @@
     "build_command": "forge build --root \"src/AerodromeAdapter\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://github.com/cyberscope-io/audits/blob/main/ezmanager/audit.pdf"
   ],
   "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x66a4acd86986afce3c0119383d2869ca5cfc0999",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "base",
       "chain_id": 8453,

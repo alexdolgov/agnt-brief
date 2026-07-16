@@ -1,0 +1,38 @@
+{
+  "component": "UUPSProxy",
+  "main_contract": "UUPSProxy",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UUPSProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x2196e106af476f57618373ec028924767c758464",
+      "is_proxy": true,
+      "implementation_address": "0x4ff1bd0dec8773afa0fccef087080f3cec39badc",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x8315f1eb449dd4b779495c3a0b05e5d194446c6e",
+      "is_proxy": true,
+      "implementation_address": "0x820d685ed07eb8651c56d9da69641626c8cdad83",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "component": "AssetsOperationsArbitrumFacet",
   "main_contract": "AssetsOperationsArbitrumFacet",
-  "source_entry_count": 76,
-  "source_file_count": 76,
+  "source_entry_count": 99,
+  "source_file_count": 99,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/AssetsOperationsArbitrumFacet\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xfeff079984f30474cffe73e650e79074c239d1eb",
+      "address": "0x9826fa1b0c2776f9621492524e99dade5e0c5f6c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393631"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa1ec5eca637129e5807540ecd1f7eff82653b79f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

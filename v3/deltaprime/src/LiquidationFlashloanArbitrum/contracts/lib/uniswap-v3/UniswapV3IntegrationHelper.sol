@@ -20,11 +20,16 @@ library UniswapV3IntegrationHelper {
     }
 
     //source: https://ethereum.stackexchange.com/questions/98685/computing-the-uniswap-v3-pair-price-from-q64-96-number
-    function sqrtPriceX96ToSqrtUint(uint160 sqrtPriceX96, uint8 decimalsToken0)
+    function sqrtPriceX96ToUint(uint160 sqrtPriceX96, uint8 decimalsToken0)
     internal
-    pure
+    view  //TODO: pure
     returns (uint256)
     {
+        {
+            uint256 numerator1 = uint256(sqrtPriceX96) * uint256(sqrtPriceX96);
+            uint256 numerator2 = 10**decimalsToken0;
+        }
+
         uint256 numerator1 = uint256(sqrtPriceX96);
         uint256 numerator2 = 10**decimalsToken0;
         return FullMath.mulDiv(numerator1, numerator2, 2 ** 96);

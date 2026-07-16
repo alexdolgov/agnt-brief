@@ -1,9 +1,74 @@
 # ante-finance — deployments
 
-3 verified deployment(s) across 3 component(s).
+68 verified deployment(s) across 67 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x05f8dde029d2c7d2f05d622449507718df07de03` | AntePool | impl | unknown | no |
+| arbitrum | `0x3e98673652f7bba325016517c54e41afcc786d1d` | AnteLlamaPayTest | impl | unknown | no |
+| arbitrum | `0x3ef9f8b4edc0f6fc90dccabd677db2f582a5cb49` | AnteBalanceHolderPercentageThresholdAbracadabraArbitrumTest | impl | unknown | no |
+| arbitrum | `0x40107f542c6d7d9d9c9f7c46fb8874ef59fd3c65` | AnteArbitrumUSDCPegTest | impl | unknown | no |
+| arbitrum | `0x6fae0767026573e3a5f0f72fb386e7ecabab60c1` | AnteStableTokenDaiPegArbitrumTest | impl | unknown | no |
+| arbitrum | `0xa7c69437000fd0fe13929a71d5404c3bb9cd2858` | AnteStableTokenTetherPegArbitrumTest | impl | unknown | no |
+| arbitrum | `0xe18edf05c1443eae617c704b7e9926c412926a36` | AnteBalanceHolderPercentageThresholdAcrossArbitrumTest | impl | unknown | no |
+| arbitrum | `0xf7e7976c00600bd77da78bfa3bf2912df05ce53d` | AnteStableTokenUsdcPegArbitrumTest | impl | unknown | no |
 | avalanche | `0x18ab6357f673696375018f006b86fe44f195de1f` | AntePoolFactory | impl | live | yes |
+| bsc | `0x40107f542c6d7d9d9c9f7c46fb8874ef59fd3c65` | AnteBscUSDCPegTest | impl | unknown | no |
+| chain-1313161554 | `0x2cd59ea668afda4e712369042150f2fa00238ac1` | Tri | impl | unknown | no |
+| chain-1313161554 | `0x39ddcccb5ce7cd8fcd0d3bbd6e9f7999d8f4bb1d` | Vester | impl | unknown | no |
+| chain-1313161554 | `0xe53d6548c327e3ccde5b3cacaa6fcd13301930f5` | MasterChef | impl | unknown | no |
+| ethereum | `0x001072a7d13ead3bb4b87abe76f577a09fd68604` | AnteOpynPlungeTest | impl | unknown | no |
+| ethereum | `0x020b60849a4d135619857b7b115c0bf7d04dbe41` | AnteBusdPegTest | impl | unknown | no |
+| ethereum | `0x0261169b6d3051b96fc2dead86462010581edbd1` | AnteNexusMutualCapitalPoolTVLPlungeTest | impl | unknown | no |
+| ethereum | `0x059585df0cef2c3cf165687dc942338d0f255d8f` | AnteSUSDPegTest | impl | unknown | no |
+| ethereum | `0x07a0bccfb0b26487667c36db69bec7be4468d41a` | AnteDaiPegTest | impl | unknown | no |
+| ethereum | `0x1556321c81277be74d08a6c258eaac4d5a8e0879` | AntePool | proxy | unknown | no |
 | ethereum | `0x1a53b3500216d547186c833c35f39a82053b7223` | AnteAaveTvlPlungeTest | impl | live | no |
+| ethereum | `0x1cd9276f727f631eccea749371a7df27b8a3d55f` | AnteGnosisTVLPlungeTest | impl | unknown | no |
+| ethereum | `0x1d43cc063de7022eaaaf18e06a3bce33231d4403` | AnteYFITVLPlungeTest | impl | unknown | no |
+| ethereum | `0x20d3daf3339a5fd68bce7714582b0601202f1145` | AnteLlamaLendOraclePriceV06Test | impl | unknown | no |
+| ethereum | `0x242ccb1529d22c2af7d550e6e5913990f34d2e77` | AnteOHMv2BackingTest | impl | unknown | no |
+| ethereum | `0x2ae392dc9af24ca5fd8e5d5912190f0fc4ad9d99` | AnteProofOfTransaction | impl | unknown | no |
+| ethereum | `0x2c7f254f149ac99130bb480fb050df12308948f5` | AnteRibbonBalanceTest | impl | unknown | no |
+| ethereum | `0x2dd10c4038a6f5637aed5e66f54f5e4cb606e976` | AnteWETH9Test | impl | unknown | no |
+| ethereum | `0x3de65b8d9bdaae2f5432d2de79073d260cdab4c2` | AnteWBTCSupplyTest | impl | unknown | no |
+| ethereum | `0x3e98673652f7bba325016517c54e41afcc786d1d` | AnteDeFiGirlDAODumpTest | impl | unknown | no |
+| ethereum | `0x4115cfaf3c0fd46b0c77bdc22b86aa4f5a334b93` | AnteRibbonMultisigRBNTest | impl | unknown | no |
+| ethereum | `0x47da001de61783e656d4c1be30576615c8e55744` | Ante_alUSDSupplyTest | impl | unknown | no |
+| ethereum | `0x4c008a686899f9a745c394a8c42d4a4cb89f23a5` | AnteETH2DepositTest | impl | unknown | no |
 | ethereum | `0x4f2be0244146b4408154504a481c799ba1a9a355` | AnteDaiCompoundcDaiAbove100MTest | impl | live | no |
+| ethereum | `0x65f21e0ea34146d7370d43dedaedaef7a8046d47` | AnteShiboshiNFTBalanceTest | impl | unknown | no |
+| ethereum | `0x66dedffd7150da64fd0e2962069234213ebf4514` | AnteRibbonV2UpdatableThetaVaultPlungeTest | impl | unknown | no |
+| ethereum | `0x765ff0a3a2ed2fef3ebb7e1e9f597355deb30fd3` | AnteOwlsOwnerBalanceTest | impl | unknown | no |
+| ethereum | `0x7ddf84f21b8130b276516ae673320f9adbd8a15d` | AnteEthPoSMergeBefore2022Dec01Test | impl | unknown | no |
+| ethereum | `0x82793d0af8cb6a12b2fdacfe02b718460467f0c3` | AnteRibbonV2ThetaVaultPlungeTest | impl | unknown | no |
+| ethereum | `0x86ece700aa436f438e546b5b7aa1838cf037b895` | AnteAVLDropTest | impl | unknown | no |
+| ethereum | `0x8ac2b3d79caf9185a187a9baa3bcaf1d618136b8` | AnteEthDevRugTest | impl | unknown | no |
+| ethereum | `0x8fa1cdb771da17813a8b122f9a99700918414dcb` | AnteUSDTSupplyTest | impl | unknown | no |
+| ethereum | `0x9841a0b0bfbaa17c714959cdf9e91b0a7bfa974b` | AnteNFTBalanceTestFactory | impl | unknown | no |
+| ethereum | `0x98cefea055b30f0149c6f77a12f4ea42dd76d8eb` | AntePoolTest | impl | unknown | no |
+| ethereum | `0x9b6363e5cc4878981f66cc3e0470cd4b91576842` | AnteAmbientTVLDropTest | impl | unknown | no |
+| ethereum | `0x9f1d86ca850567b80530da9a97d3cef4b69e089d` | AnteTUSDPegTest | impl | unknown | no |
+| ethereum | `0xa0f1eb38d955e2ede6b2a71c568d9d2965d103dd` | AnteLiquitySupplyTest | impl | unknown | no |
+| ethereum | `0xad2ffd42c8658d54ea497d06439d03193d6a6733` | AnteRaiRedemptionTest | impl | unknown | no |
+| ethereum | `0xb1da073893a3faeeb0ff603686a1a6c59d5f2a38` | AnteUSDThreePoolValueTest | impl | unknown | no |
+| ethereum | `0xb4fd0ce108e196d0c9844c48174d4c32cd42f7bc` | AnteAllbridgePlungeTest | impl | unknown | no |
+| ethereum | `0xb7e565a9d96e4dc067f955beddebabc5f7a4cf84` | AnteUSDTPegTest | impl | unknown | no |
+| ethereum | `0xc3dcef82a8c38c20da9feb8bb1d03e9c9d842da3` | AnteAnoncatOverpopulationTest | impl | unknown | no |
+| ethereum | `0xc97834aa6f51795b19daf67d60dcb823714cba08` | AnteAcrossOptimisticBridgeTest | impl | unknown | no |
+| ethereum | `0xd8625bf44b4bc8cfa5f7800e00f211eb76fcca05` | AnteNarutoDumpTest | impl | unknown | no |
+| ethereum | `0xde0b295669a9fd93d5f28d9ec85e40f4cb697bae` | Wallet | impl | unknown | no |
+| ethereum | `0xe2bb407c33f5d5ff8de1f4b025fa73b343023087` | AnteComptrollerIssuanceTest | impl | unknown | no |
+| ethereum | `0xe7f9be71168f4a02e3471d01d0bbf12e2c0cec31` | AnteLlamaPayV06Test | impl | unknown | no |
+| ethereum | `0xe8baa48589abb99592a166ad87bbea15a4327930` | AnteUSDTBalanceTest | impl | unknown | no |
+| ethereum | `0xe8d2c49d7a0957b77ad50126a438ef2a1d907b55` | AnteUSDCSupplyTest | impl | unknown | no |
+| ethereum | `0xf2da896d5eb3643802fabb42e0cd9beabe22e219` | AnteLlamaLendOraclePriceTest | impl | unknown | no |
+| ethereum | `0xf7e7976c00600bd77da78bfa3bf2912df05ce53d` | AnteOptimismBridgeAssetBalanceTest | impl | unknown | no |
+| ethereum | `0xfd083a2fa317fe57df2b8f325d3d4b5a6366cee3` | AnteTokenBalanceTestFactory | impl | unknown | no |
+| ethereum | `0xfe2af3ab07a08a9db276a2fee9e7d8b5d3794d51` | AnteMetaStreetVaultSolvencyTest | impl | unknown | no |
+| ethereum | `0xfe7a43e49ff92bc4d36daf276427b5c2a35b6e19` | AnteFeiPegTest | impl | unknown | no |
+| optimism | `0x1cd9276f727f631eccea749371a7df27b8a3d55f` | AnteBalanceHolderPercentageThresholdTest | impl | unknown | no |
+| optimism | `0x294268b71b70d9a9291594c058896f6a9f118b4a` | AnteVeloTokenBalanceAbove50KTest | impl | unknown | no |
+| optimism | `0x3ef9f8b4edc0f6fc90dccabd677db2f582a5cb49` | AnteStableTokenUsdcOptimismPegTest | impl | unknown | no |
+| optimism | `0x529dbf60ddc8b256c2bf25190de1e06d688f13eb` | AnteTotalSupplyPlungeTest | impl | unknown | no |
+| polygon | `0x40107f542c6d7d9d9c9f7c46fb8874ef59fd3c65` | AntePolygonUSDCPegTest | impl | unknown | no |

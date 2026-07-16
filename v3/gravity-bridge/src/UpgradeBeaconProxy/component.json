@@ -1,0 +1,28 @@
+{
+  "component": "UpgradeBeaconProxy",
+  "main_contract": "UpgradeBeaconProxy",
+  "source_entry_count": 2,
+  "source_file_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UpgradeBeaconProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x93581991f68dbae1ea105233b67f7fa0d6bdee7b",
+      "is_proxy": true,
+      "implementation_address": "0x4ad6444b55729f657a71a82a5448f85ac8aa47ba",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

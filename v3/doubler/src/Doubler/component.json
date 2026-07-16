@@ -1,0 +1,38 @@
+{
+  "component": "Doubler",
+  "main_contract": "Doubler",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Doubler\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x498f4711a706f9ad33b5d68eaa20e56a87d5d926",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393641"
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xc8480647eeb358df638ca882362ce528cc666087",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393642"
+    }
+  ]
+}

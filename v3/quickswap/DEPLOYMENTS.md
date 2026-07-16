@@ -1,7 +1,62 @@
 # quickswap — deployments
 
-1 verified deployment(s) across 1 component(s).
+56 verified deployment(s) across 54 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| base | `0x095eb76d5934958b21eec5142025beb6a7763c16` | NonfungibleTokenPositionDescriptor | impl | live | no |
+| base | `0x0987a3dc376a33ed720e15d2ec62ea6179d51141` | AlgebraEternalFarming | impl | live | no |
+| base | `0x0ca6d588d9e3a14f62ef88afcd6b3d0ad13af1f0` | AlgebraCommunityVault | impl | live | no |
+| base | `0x23e0583a3a000d567bb3848115065c1890d87fb5` | QuoterV2 | impl | live | no |
+| base | `0x4a012af2b05616fb390ed32452641c3f04633bb5` | UniswapV2Router02 | impl | unknown | no |
+| base | `0xb9ce7698ce3dcf21cc88bf7dcc1fe20c85e4226e` | AlgebraCustomPoolEntryPoint | impl | live | no |
+| base | `0xd3712643ec7138dd09ae6322e7626ad99542cc04` | BasePluginV1Factory | impl | live | no |
+| base | `0xe6c9bb24ddb4ae5c6632dbe0de14e3e474c6cb04` | SwapRouter | impl | live | no |
+| chain-169 | `0x08bc8ef0b71238055f9ee6bbc90869d8d0dbdcca` | ReferralReader | impl | live | no |
+| chain-169 | `0x11e3657fcde2053db4ec0e6327c3908aaf449c7b` | FundingTracker | impl | live | no |
+| chain-169 | `0x1fd671dac06df1431e79d772037e93bdb2dfeb48` | UniswapInterfaceMulticall | impl | unknown | no |
+| chain-169 | `0x1fe9fba5955af58c18057213f0151bbe893ab2c8` | TradingValidator | impl | live | no |
+| chain-169 | `0x2264d1c908c4347f75f8eb438a4f94f4caecf634` | OrderBook | impl | live | no |
+| chain-169 | `0x3005827fb92a0cb7d0f65738d6d645d98a4ad96b` | Quoter | impl | live | no |
+| chain-169 | `0x443cf165b72e4b4331c0101a10553269972ed4b8` | Store | impl | live | no |
+| chain-169 | `0x5b1f500134bdd7f4359f5b2adc65f839737290f4` | Executor | impl | live | no |
+| chain-169 | `0x73903fec691a80ec47bc830bf3f0bad127a06e30` | BatchSender | impl | live | no |
+| chain-169 | `0x7e01238227213c513010f5fabd0634febee93ee5` | ReferralStorage | impl | live | no |
+| chain-169 | `0x87bcd3914ed3dcd5886ba1c0f0da25150b56fe54` | Timelock | impl | live | no |
+| chain-169 | `0x91b6650048c26a0f439e9da93a7adb7f77833bf1` | Api3 | impl | live | no |
+| chain-169 | `0xc5616f35fd19935b8a6e6792519c2146afcef38e` | PositionManager | impl | live | no |
+| chain-169 | `0xc8e48fd037d1c4232f294b635e74d33a0573265a` | AddressStorage | impl | live | no |
+| ethereum | `0x068083069ed92da4c5291dba52d8912abfcc5523` | DSToken | impl | unknown | no |
+| ethereum | `0x6b175474e89094c44da98b954eedeac495271d0f` | Dai | impl | live | no |
+| ethereum | `0xa478c2975ab1ea89e8196811f51a7b7ade33eb11` | UniswapV2Pair | impl | unknown | no |
 | ethereum | `0xf164fc0ec4e93095b804a4795bbe1e041497b92a` | UniswapV2Router01 | impl | live | no |
+| polygon | `0x02a2d80ce5c021a40aec9062a6273bbc33537e1c` | StakingRewardsFactory | impl | live | no |
+| polygon | `0x070df4368366ae26a8c35666408fad686038a6c3` | RubicRouterV2 | impl | live | no |
+| polygon | `0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270` | WMATIC | impl | live | no |
+| polygon | `0x0eaa5949f70c2d4ce043343acdfe82a532fb686d` | SecurityPluginImplementation | impl | live | no |
+| polygon | `0x1158d107a74f482d053859adcc421101938d68a3` | SecurityRegistry | impl | live | no |
+| polygon | `0x14cf271aaf0aa70f1b1ba59be568a97e16c81430` | AlgebraUpgradeablePluginFactory | impl | live | no |
+| polygon | `0x157b9913e00204f8c980bb00aa62e22b0dab1a63` | V3Migrator | proxy | live | no |
+| polygon | `0x19883c02e237666672a7558d1eb88a7b586a7776` | DynamicFeePluginImplementation | impl | live | no |
+| polygon | `0x205c648b40cdcf13ff177d122db9fe848a07a23e` | AlgebraVault | impl | live | no |
+| polygon | `0x28adcf283d392e3902f49a7e9a78e40d64348290` | TickLens | impl | live | no |
+| polygon | `0x2d98e2fa9da15aa6dc9581ab097ced7af697cb92` | AlgebraPoolDeployer | impl | live | no |
+| polygon | `0x32cff674763b06b983c0d55ef2e41b84d16855bb` | AlgebraTokenStaking | impl | live | no |
+| polygon | `0x3420865a31c84c468a88bcaef6cec69e2885e7ba` | cBridgeProxy | impl | live | no |
+| polygon | `0x35622b9802b71f341762cf6f46a7e301931fc7c5` | AlgebraVaultFactoryStub | impl | live | no |
+| polygon | `0x388c639aebb5aa3ff93ea133a38ea6930bf2c3ac` | ManagerContract | impl | live | no |
+| polygon | `0x38e8d77f4b651fb989c8b5ad274346dd5b5239ea` | QuickConverter | impl | live | no |
+| polygon | `0x3d92144100f58160bdfffc296389ee32b6525915` | SwapContract | impl | live | no |
+| polygon | `0x42375083fe3a4f77ce95af733c266d6bd5bd122a` | AlgebraInterfaceMulticall | impl | live | no |
+| polygon | `0x51fec1fca690fb72ec59ca0e3fd9521c64cac47e` | SwapContractV3 | impl | live | no |
+| polygon | `0x5316d1fb8543dfe6b292cb82be1aec5573baeea6` | MainContract | impl | live | no |
+| polygon | `0x5757371414417b8c6caad45baef941abc7d3ab32` | UniswapV2Factory | impl | unknown | no |
+| polygon | `0x7219c5d9928db34973b5397d0b6ef00622dd3e8f` | NonfungiblePositionManager | impl | live | no |
+| polygon | `0x73a3e7115200b208ac0db09ba6269273eb54ef2c` | AlgebraUpgradeablePlugin | impl | live | no |
+| polygon | `0x831753dd7087cac61ab5644b308642cc1c33dc13` | Quick | impl | live | no |
+| polygon | `0x8893eca40bed729b50094f7d9b76e8edcb6d108d` | AlmPluginImplementation | impl | live | no |
+| polygon | `0x8fe5f1ed2392f9c34232614dc874b6caf0676887` | SwapMain | impl | live | no |
+| polygon | `0x9923f42a02a82da63ee0dbbc5f8e311e3dd8a1f8` | AlgebraLimitFarming | impl | live | no |
+| polygon | `0xaa6c08ac63ec1e4151e283a1734a4b3a6618264e` | VolatilityOraclePluginImplementation | impl | live | no |
+| polygon | `0xcaa39d446f7ff2f271ac9878ca35586b6aa16bd9` | AlmPluginImplementation | impl | live | no |
+| polygon | `0xe3c4a811622209fb286388233c4c8a29b4178341` | AlmPluginImplementation | impl | live | no |

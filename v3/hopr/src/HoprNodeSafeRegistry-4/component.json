@@ -1,0 +1,39 @@
+{
+  "component": "HoprNodeSafeRegistry-4",
+  "main_contract": "HoprNodeSafeRegistry",
+  "source_entry_count": 3,
+  "source_file_count": 3,
+  "source_path_remaps": [
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-20ffa507c031-ECDSA.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/solady-v0.1.24/src/utils/EfficientHashLib.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-716e8633f90e-EfficientHashLib.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HoprNodeSafeRegistry-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xafa257f2799835d2e29e7ec7ee448530f9d8cb20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

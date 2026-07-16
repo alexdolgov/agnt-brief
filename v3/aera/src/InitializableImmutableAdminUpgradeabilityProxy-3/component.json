@@ -1,0 +1,28 @@
+{
+  "component": "InitializableImmutableAdminUpgradeabilityProxy-3",
+  "main_contract": "InitializableImmutableAdminUpgradeabilityProxy",
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/InitializableImmutableAdminUpgradeabilityProxy-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa238dd80c259a72e81d7e4664a9801593f98d1c5",
+      "is_proxy": true,
+      "implementation_address": "0xa4abc5fcba6d0d7e3d144d6dbf6cb6128599dfdb",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

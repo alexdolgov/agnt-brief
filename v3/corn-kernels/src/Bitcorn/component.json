@@ -1,0 +1,61 @@
+{
+  "component": "Bitcorn",
+  "main_contract": "Bitcorn",
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Bitcorn\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/usecorn/audits/blob/main/bitcorn/Zenith-Bitcorn-OFT-Swap-Facility.pdf",
+    "https://github.com/usecorn/audits/blob/main/bitcorn/cantina-bitcorn-oft-1.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0253642ead35b0ff26ba96992a3079c1ca51c1bd",
+      "is_proxy": true,
+      "implementation_address": "0x49490e22966cb4de5aa70ac9f5f8f055e3f08a92",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29a4e79dc35f94ed6aa91c0e0d96c0c7472ef7ff",
+      "is_proxy": true,
+      "implementation_address": "0xcd53fdd5c95d5f1b150a23904d5025127746e8fc",
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402704"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x386e7a3a0c0919c9d53c3b04ff67e73ff9e45fb6",
+      "is_proxy": true,
+      "implementation_address": "0xd67c6b5f5a75807478efa05472c8dfd3f64d0bc7",
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402707"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8bc93498b861fd98277c3b51d240e7e56e48f23c",
+      "is_proxy": true,
+      "implementation_address": "0xb1ffce57cac2fd215276037ace92ee1fd1f6a4a7",
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402726"
+    }
+  ]
+}

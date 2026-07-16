@@ -1,0 +1,38 @@
+{
+  "component": "UpgradeSpell_4_0_0",
+  "main_contract": "UpgradeSpell_4_0_0",
+  "source_entry_count": 81,
+  "source_file_count": 81,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UpgradeSpell_4_0_0\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7498c6ab0669a09de7b9185ba72a98fa3ca39cc9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4720dbcaeef5834aef590781f93d70fd1e3acadb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

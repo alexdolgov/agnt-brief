@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/stableQiVault\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 10,
+  "deployment_count": 14,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -87,6 +87,16 @@
     {
       "chain": "polygon",
       "chain_id": 137,
+      "address": "0x1272b49c515c605c8658ca9638b820085e1c05a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
       "address": "0x7d75f83f0abe2ece0b9daf41cceddf38cb66146b",
       "is_proxy": false,
       "implementation_address": null,
@@ -97,12 +107,42 @@
     {
       "chain": "polygon",
       "chain_id": 137,
+      "address": "0x993021e4fad179268e0e94f1668c45f8222aebdc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
       "address": "0xa3b0a659f2147d77a443f70d96b3cc95e7a26390",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "398184"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa914f68b81449eec0013d055ab961a3c1652bb27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xce0f1a5f4f2bc526a1495716184d719ba93d8eba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "chain-1088",

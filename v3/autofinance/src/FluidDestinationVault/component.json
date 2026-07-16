@@ -10,10 +10,40 @@
     "build_command": "forge build --root \"src/FluidDestinationVault\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 4,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x5b2cd1b8fd200bd80a6facf9b3f60102caffd68c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x5dd8e6c497d350ae7a32d6e2dfc07f42b27f905b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xf07c1db1d9c0a191cc91115bbb47566e1549a1d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,

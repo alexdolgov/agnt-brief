@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/NativeUnwrapper\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://github.com/mux-world/mux-protocol/blob/main/audit/Certik-Audit-20220601.pdf"
@@ -25,6 +25,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "397178"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x60a8f199938c9ae5673c6967f5b4190d8654bcb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

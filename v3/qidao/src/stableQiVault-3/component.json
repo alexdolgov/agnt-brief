@@ -10,39 +10,79 @@
     "build_command": "forge build --root \"src/stableQiVault-3\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x4ce4c542d96ce1872fea4fa3fbb2e7ae31862bad",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x20658fdabd4c79f1b3666e5bccaef78b5059b109",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398129"
+      "logic_topography_row_id": "398216"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x5773e8953cf60f495eb3c2db45dd753b5c4b7473",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x491e3a7cda79af2bba5de48c58445644821d14de",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398131"
+      "logic_topography_row_id": "398217"
     },
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xca3eb45fb186ed4e75b9b22a514ff1d4abadd123",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x654a31ba7d714cfcab19b17d0066171c1a292349",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398137"
+      "logic_topography_row_id": "398218"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7333fd58d8d73a8e5fc1a16c8037ada4f580fa2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398220"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8d6cebd76f18e1558d4db88138e2defb3909fad6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398224"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x7f9dd991e8fd0cbb52cb8eb35dd35c474a9a7a70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398249"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x8ab01c5ee3422099156ab151eecb83c095626599",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398250"
     }
   ]
 }

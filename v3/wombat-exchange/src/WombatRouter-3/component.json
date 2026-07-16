@@ -1,8 +1,8 @@
 {
   "component": "WombatRouter-3",
   "main_contract": "WombatRouter",
-  "source_entry_count": 9,
-  "source_file_count": 9,
+  "source_entry_count": 12,
+  "source_file_count": 12,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -11,18 +11,20 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-WombatV2-v1.0.pdf"
+  ],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xc4b2f992496376c6127e73f1211450322e580668",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x19609b03c976cca288fbdae5c21d4290e9a4add7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401046"
+      "logic_topography_row_id": "400962"
     }
   ]
 }

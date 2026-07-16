@@ -1,0 +1,28 @@
+{
+  "component": "Safe4337Module",
+  "main_contract": "Safe4337Module",
+  "source_entry_count": 77,
+  "source_file_count": 77,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Safe4337Module\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x75cf11467937ce3f2f357ce24ffc3dbf8fd5c226",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "component": "SparkArbitrumOne_20250417",
+  "main_contract": "SparkArbitrumOne_20250417",
+  "source_entry_count": 44,
+  "source_file_count": 44,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SparkArbitrumOne_20250417\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xab465726a358c004c22bb8136d43716e1936afa6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

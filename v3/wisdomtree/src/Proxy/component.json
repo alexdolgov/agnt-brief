@@ -1,0 +1,38 @@
+{
+  "component": "Proxy",
+  "main_contract": "Proxy",
+  "source_entry_count": 3,
+  "source_file_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Proxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x285d3256f0bbe7b69b511f75ce7a88f03d360a06",
+      "is_proxy": true,
+      "implementation_address": "0x404a814c5544ae631fb0e77fbb27f5550ee54600",
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404956"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2a33ae49f96b8982023f8381b57c1f2658f616bc",
+      "is_proxy": true,
+      "implementation_address": "0x507d898226e6a3e5eb8dbecae0b9e8fd51337656",
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404957"
+    }
+  ]
+}

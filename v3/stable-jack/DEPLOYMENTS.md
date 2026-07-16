@@ -1,6 +1,63 @@
 # stable-jack — deployments
 
-0 verified deployment(s) across 0 component(s).
+57 verified deployment(s) across 31 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| avalanche | `0x06d47f3fb376649c3a9dafe069b3d6e35572219e` | StakedAvUSDV2 | impl | live | no |
+| avalanche | `0xdf788ad40181894da035b827cdf55c523bf52f67` | BoringVault | impl | live | no |
+| chain-146 | `0x05d61aca7111e177ca0a03e7145f342494bfee01` | DistributionSwapper-3 | impl | live | no |
+| chain-146 | `0x0966cae7338518961c2d35493d3eb481a75bb86b` | VotingEscrow | impl | live | no |
+| chain-146 | `0x0ab6d071af5b692c88baddd1f6e4f3ad5c1de1d3` | RewardsDistributor | impl | live | no |
+| chain-146 | `0x10c490921916e6d2d38535e63080d54e7e30a829` | Router | impl | live | no |
+| chain-146 | `0x14cedd0b2ed13a4a094791b1f525693ff5227230` | DistributionSwapper-6 | impl | live | no |
+| chain-146 | `0x1bc06ea7f677bcf507f2f2afb8d0aace1fd86e52` | DistributionSwapper-4 | impl | live | no |
+| chain-146 | `0x1ec2b9a77a7226acd457954820197f89b3e3a578` | VotingEscrow-2 | impl | live | no |
+| chain-146 | `0x244c88a7f5e11b092acd29f0033972d05e05a831` | AirdropDistributor | impl | live | no |
+| chain-146 | `0x266c10c92d2ad634bf90d2029488de333d6e80b6` | RewardsDistributor | impl | live | no |
+| chain-146 | `0x29dafa6123ecc659a2d42ca1245f85cc13c8057f` | RewardsDistributor | impl | live | no |
+| chain-146 | `0x324a043306f374edcc26c95fe8a934c40a64527c` | DistributionSwapper | impl | live | no |
+| chain-146 | `0x3692b155520d54a5a0a0fe77aa6e5982de28d3a6` | DistributionSwapper-2 | impl | live | no |
+| chain-146 | `0x3a15cc7a83f19112de572666560cdb54bc4b53eb` | DistributionSwapper-4 | impl | live | no |
+| chain-146 | `0x485eabed09819428e7ac87139102cd9d83a784bd` | RewardsDistributor | impl | live | no |
+| chain-146 | `0x4cba4a275bd4d9f53b94b6073542eb1c09c338fd` | DistributionSwapper | impl | live | no |
+| chain-146 | `0x4ce11a58d9eeadbb0a73abd3fd3c6e9245e7fb29` | DistributionSwapper-3 | impl | live | no |
+| chain-146 | `0x4d622335c6bba5721090a81b8518c863fc8dc9e0` | Router-2 | impl | live | no |
+| chain-146 | `0x58d02d3449f018c8a007e8a55df94008e2df52b2` | DistributionSwapper-7 | impl | live | no |
+| chain-146 | `0x5db8d98ed02a3b8c2781ab0b80f00cd2b75d261a` | AirdropReclaimer | impl | live | no |
+| chain-146 | `0x61b9bff50f18a827d5d7d1d1d73c8aa4b354dd5b` | DistributionSwapper | impl | live | no |
+| chain-146 | `0x633ff249cc99d1db57cc566268e453ab157b3b83` | DistributionSwapper | impl | live | no |
+| chain-146 | `0x66df6a4b9a31d1a1d5b57e79cfde40dac327d7ed` | RewardsDistributor | impl | live | no |
+| chain-146 | `0x7545ddceef18c435887f9da46e230e27728fb931` | RewardsDistributor | impl | live | no |
+| chain-146 | `0x7b949a68c57d47ec878bbc2a30c9ef54b41c33b5` | RewardsDistributor | impl | live | no |
+| chain-146 | `0x8329d28efc863a952fc5c639917948fd6e8f85e9` | RewardsDistributor | impl | live | no |
+| chain-146 | `0x840081c97256d553a8f234d469d797b9535a3b49` | PoolBoosterFactorySwapxDouble | impl | live | no |
+| chain-146 | `0x87c165985f852647a044dc5935bbcf1328cfde21` | RewardsDistributor | impl | live | no |
+| chain-146 | `0x9981a5fb7253d5ade220e1a44b8f6a0dce8333f5` | RewardsDistributor | impl | live | no |
+| chain-146 | `0x9987a6be057d06c1f2b58506118280ce6b6638af` | RewardsDistributor | impl | live | no |
+| chain-146 | `0x9a7d086bec5ad471e4af4409939c023a2419cf7b` | DistributionSwapper-5 | impl | live | no |
+| chain-146 | `0x9d549c39e5e1a0e7ef41d4b7d74c49f976102e36` | JackTokenBridged | impl | live | no |
+| chain-146 | `0x9fb76f7ce5fceaa2c42887ff441d46095e494206` | Wrapper | impl | live | no |
+| chain-146 | `0xa1046681a0d71cfe97e05a0fb1540294963b11d7` | RewardsDistributor | impl | live | no |
+| chain-146 | `0xa3c0eca00d2b76b4d1f170b0ab3fdea16c180186` | OSonicVaultProxy | proxy | live | no |
+| chain-146 | `0xa55d937e750b03d25214d7c8046c6eb292891248` | DistributionSwapper-5 | impl | live | no |
+| chain-146 | `0xa9d889d86fc36db9a44855984e12cba1edb67eb3` | DistributionSwapper-2 | impl | live | no |
+| chain-146 | `0xadeeb03a2eb221dedb42a868adbca5cc1a9f3ec0` | RewardsDistributor | impl | live | no |
+| chain-146 | `0xb1e25689d55734fd3fffc939c4c3eb52dff8a794` | OSonicVaultProxy | proxy | live | no |
+| chain-146 | `0xb27f555175e67783ba16f11de3168f87693e3c8f` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| chain-146 | `0xb8c5b4c988205e1c9e1b0a8185627517646b8b5d` | DistributionSwapper-2 | impl | live | no |
+| chain-146 | `0xc49182b3f3ad6a2e1bfdf4b6342d17c93f9c124c` | AirdropDistributor-2 | impl | live | no |
+| chain-146 | `0xd66afaa7fe071162d055b3cc703cc1eaed836cf3` | OSonicVaultCore | impl | live | no |
+| chain-146 | `0xdb58c4db1a0f45dda3d2f8e44c3300bb6510c866` | Wrapper | impl | live | no |
+| chain-146 | `0xe25a2b256ffb3ad73678d5e80de8d2f6022fab21` | OSonicZapper | impl | live | no |
+| chain-146 | `0xe8a41c62bb4d5863c6eadc96792cfe90a1f37c47` | Wrapper | impl | live | no |
+| chain-146 | `0xed801d01d12e572809bd4b328ae6ba9a038678c5` | DistributionSwapper | impl | live | no |
+| chain-146 | `0xee1e11a8c9d6f69e40401050d4ba96ec5b145177` | RewardsDistributor | impl | live | no |
+| chain-146 | `0xfc7d3ea7078279ef668f1eba658036f72de4094a` | RewardsDistributor | impl | live | no |
+| ethereum | `0x0084c2e1b1823564e597ff4848a88d61ac63d703` | PlatformFeeSpliter | impl | live | no |
+| ethereum | `0x32366846354db5c08e92b4ab0d2a510b2a2380c8` | PlatformFeeSpliter-2 | impl | live | no |
+| ethereum | `0x3415fcd2885c486e2d848403d51077f7176473c7` | RebalancePool | impl | live | no |
+| ethereum | `0xa677d95b91530d56791fba72c01a862f1b01a49e` | TransparentUpgradeableProxy | proxy | unknown | no |
+| ethereum | `0xce5a14c662f00c614aa467b82c654548540f2fca` | RebalancePoolSplitter | impl | unknown | no |
+| ethereum | `0xd2791781c367b2f512396105c8ab26479876e973` | PlatformFeeDistributor | impl | live | no |
+| ethereum | `0xd6efa5b63531e9ae61e225b02cbacd59092a35be` | PlatformFeeDistributor-2 | impl | unknown | no |

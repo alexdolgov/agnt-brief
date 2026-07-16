@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2024 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { IERC20 } from "openzeppelin-contracts/token/ERC20/IERC20.sol";
 
@@ -21,7 +21,7 @@ interface IRewards {
 
     /// @notice Get the underlying token rewards are paid in
     /// @return Token address
-    function vaultToken() external view returns (IERC20);
+    function rewardToken() external view returns (IERC20);
 
     /// @notice Get the current payload signer;
     /// @return Signer address

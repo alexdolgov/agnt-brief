@@ -1,30 +1,28 @@
 /**
-   *       .
-   *      / \
-   *     |.'.|
-   *     |'.'|
-   *   ,'|   |'.
-   *  |,-'-|-'-.|
-   *   __|_| |         _        _      _____           _
-   *  | ___ \|        | |      | |    | ___ \         | |
-   *  | |_/ /|__   ___| | _____| |_   | |_/ /__   ___ | |
-   *  |    // _ \ / __| |/ / _ \ __|  |  __/ _ \ / _ \| |
-   *  | |\ \ (_) | (__|   <  __/ |_   | | | (_) | (_) | |
-   *  \_| \_\___/ \___|_|\_\___|\__|  \_|  \___/ \___/|_|
-   * +---------------------------------------------------+
-   * |    DECENTRALISED STAKING PROTOCOL FOR ETHEREUM    |
-   * +---------------------------------------------------+
-   *
-   *  Rocket Pool is a first-of-its-kind Ethereum staking pool protocol, designed to
-   *  be community-owned, decentralised, permissionless, & trustless.
-   *
-   *  For more information about Rocket Pool, visit https://rocketpool.net
-   *
-   *  Authored by the Rocket Pool Core Team
-   *  Contributors: https://github.com/rocket-pool/rocketpool/graphs/contributors
-   *  A special thanks to the Rocket Pool community for all their contributions.
-   *
-   */
+  *       .
+  *      / \
+  *     |.'.|
+  *     |'.'|
+  *   ,'|   |`.
+  *  |,-'-|-'-.|
+  *   __|_| |         _        _      _____           _
+  *  | ___ \|        | |      | |    | ___ \         | |
+  *  | |_/ /|__   ___| | _____| |_   | |_/ /__   ___ | |
+  *  |    // _ \ / __| |/ / _ \ __|  |  __/ _ \ / _ \| |
+  *  | |\ \ (_) | (__|   <  __/ |_   | | | (_) | (_) | |
+  *  \_| \_\___/ \___|_|\_\___|\__|  \_|  \___/ \___/|_|
+  * +---------------------------------------------------+
+  * |  DECENTRALISED STAKING PROTOCOL FOR ETHEREUM 2.0  |
+  * +---------------------------------------------------+
+  *
+  *  Rocket Pool is a first-of-its-kind ETH2 Proof of Stake protocol, designed to be community owned,
+  *  decentralised, trustless and compatible with staking in Ethereum 2.0.
+  *
+  *  For more information about Rocket Pool, visit https://rocketpool.net
+  *
+  *  Authors: David Rugendyke, Jake Pospischil, Kane Wallmann, Darren Langley, Joe Clapis, Nick Doherty
+  *
+  */
 
 pragma solidity >0.5.0 <0.9.0;
 pragma abicoder v2;
@@ -66,7 +64,6 @@ interface RocketMinipoolManagerInterface {
     function destroyMinipool() external;
     function incrementNodeStakingMinipoolCount(address _nodeAddress) external;
     function decrementNodeStakingMinipoolCount(address _nodeAddress) external;
-    function tryDistribute(address _nodeAddress) external;
     function incrementNodeFinalisedMinipoolCount(address _nodeAddress) external;
     function setMinipoolPubkey(bytes calldata _pubkey) external;
     function getMinipoolDepositType(address _minipoolAddress) external view returns (MinipoolDeposit);

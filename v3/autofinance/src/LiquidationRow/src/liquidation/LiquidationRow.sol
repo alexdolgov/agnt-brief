@@ -432,19 +432,17 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
      * @notice Update the balance of a specific token and vault
      * @param tokenAddress The address of the token
      * @param vaultAddress The address of the vault
-     * @param expectedBalance The amount of the token to be updated
+     * @param balance The amount of the token to be updated
      */
-    function _increaseBalance(address tokenAddress, address vaultAddress, uint256 expectedBalance) internal {
-        Errors.verifyNotZero(expectedBalance, "expectedBalance");
+    function _increaseBalance(address tokenAddress, address vaultAddress, uint256 balance) internal {
+        Errors.verifyNotZero(balance, "balance");
 
-        uint256 balanceOfToken = IERC20(tokenAddress).balanceOf(address(this));
         uint256 currentBalance = balances[tokenAddress][vaultAddress];
         uint256 totalBalance = totalTokenBalances[tokenAddress];
-        uint256 balance = balanceOfToken - totalBalance;
         uint256 newTotalBalance = totalBalance + balance;
 
         // ensure that this contract has enough balance to cover the new total balance
-
+        uint256 balanceOfToken = IERC20(tokenAddress).balanceOf(address(this));
         if (newTotalBalance > balanceOfToken) {
             /**
              * @dev This should never happen, but just in case. The error is raised if the updated total balance of a
@@ -459,7 +457,6 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
         if (currentBalance == 0) {
             if (!tokenVaults[tokenAddress].add(vaultAddress)) revert Errors.ItemExists();
 
-            // slither-disable-next-line incorrect-equality
             if (totalBalance == 0) {
                 if (!rewardTokens.add(tokenAddress)) revert Errors.ItemExists();
             }
@@ -470,7 +467,7 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
         // Update the balance for the vault and token
         balances[tokenAddress][vaultAddress] = currentBalance + balance;
 
-        emit BalanceUpdated(tokenAddress, vaultAddress, currentBalance + balance, expectedBalance);
+        emit BalanceUpdated(tokenAddress, vaultAddress, currentBalance + balance);
     }
 
     function _setPriceMarginBps(

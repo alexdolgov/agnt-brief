@@ -4,7 +4,6 @@ pragma solidity >=0.6.11;
 // ============ Internal Imports ============
 import {IMessageRecipient} from "../interfaces/IMessageRecipient.sol";
 import {IPostDispatchHook} from "../interfaces/hooks/IPostDispatchHook.sol";
-import {IInterchainSecurityModule} from "../interfaces/IInterchainSecurityModule.sol";
 import {MailboxClient} from "./MailboxClient.sol";
 import {EnumerableMapExtended} from "../libs/EnumerableMapExtended.sol";
 
@@ -16,6 +15,7 @@ abstract contract Router is MailboxClient, IMessageRecipient {
     using Strings for uint32;
 
     // ============ Mutable Storage ============
+    /// @dev Mapping of domain => router. For a given domain we have one router we send/receive messages from.
     EnumerableMapExtended.UintToBytes32Map internal _routers;
 
     uint256[48] private __GAP; // gap for upgrade safety
@@ -93,6 +93,7 @@ abstract contract Router is MailboxClient, IMessageRecipient {
      * @param _sender The sender address
      * @param _message The message
      */
+    // solhint-disable-next-line hyperlane/no-virtual-override
     function handle(
         uint32 _origin,
         bytes32 _sender,
@@ -145,7 +146,7 @@ abstract contract Router is MailboxClient, IMessageRecipient {
     }
 
     /**
-     * @notice Assert that the given domain has a Application Router registered and return its address
+     * @notice Assert that the given domain has an Application Router registered and return its address
      * @param _domain The domain of the chain for which to get the Application Router
      * @return _router The address of the remote Application Router on _domain
      */
@@ -153,8 +154,10 @@ abstract contract Router is MailboxClient, IMessageRecipient {
         uint32 _domain
     ) internal view returns (bytes32) {
         (bool contained, bytes32 _router) = _routers.tryGet(_domain);
-        require(contained, _domainNotFoundError(_domain));
-        return _router;
+        if (contained) {
+            return _router;
+        }
+        revert(_domainNotFoundError(_domain));
     }
 
     function _domainNotFoundError(
@@ -167,28 +170,66 @@ abstract contract Router is MailboxClient, IMessageRecipient {
             );
     }
 
-    function _dispatch(
-        uint32 _destinationDomain,
-        bytes memory _messageBody
-    ) internal virtual returns (bytes32) {
-        return _dispatch(_destinationDomain, msg.value, _messageBody);
-    }
-
-    function _dispatch(
+    function _Router_dispatch(
         uint32 _destinationDomain,
         uint256 _value,
         bytes memory _messageBody
-    ) internal virtual returns (bytes32) {
-        bytes32 _router = _mustHaveRemoteRouter(_destinationDomain);
+    ) internal returns (bytes32) {
         return
-            super._dispatch(_destinationDomain, _router, _value, _messageBody);
+            _Router_dispatch(
+                _destinationDomain,
+                _value,
+                _messageBody,
+                "",
+                address(hook)
+            );
     }
 
-    function _quoteDispatch(
+    function _Router_dispatch(
+        uint32 _destinationDomain,
+        uint256 _value,
+        bytes memory _messageBody,
+        bytes memory _hookMetadata,
+        address _hook
+    ) internal returns (bytes32) {
+        bytes32 _router = _mustHaveRemoteRouter(_destinationDomain);
+        return
+            mailbox.dispatch{value: _value}(
+                _destinationDomain,
+                _router,
+                _messageBody,
+                _hookMetadata,
+                IPostDispatchHook(_hook)
+            );
+    }
+
+    function _Router_quoteDispatch(
         uint32 _destinationDomain,
         bytes memory _messageBody
-    ) internal view virtual returns (uint256) {
+    ) internal view returns (uint256) {
+        return
+            _Router_quoteDispatch(
+                _destinationDomain,
+                _messageBody,
+                "",
+                address(hook)
+            );
+    }
+
+    function _Router_quoteDispatch(
+        uint32 _destinationDomain,
+        bytes memory _messageBody,
+        bytes memory _hookMetadata,
+        address _hook
+    ) internal view returns (uint256) {
         bytes32 _router = _mustHaveRemoteRouter(_destinationDomain);
-        return super._quoteDispatch(_destinationDomain, _router, _messageBody);
+        return
+            mailbox.quoteDispatch(
+                _destinationDomain,
+                _router,
+                _messageBody,
+                _hookMetadata,
+                IPostDispatchHook(_hook)
+            );
     }
 }

@@ -1,0 +1,58 @@
+{
+  "component": "EIP173Proxy",
+  "main_contract": "EIP173Proxy",
+  "source_entry_count": 2,
+  "source_file_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EIP173Proxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x83c1aef2d4ce3b7c09930ad1cdda626839f93608",
+      "is_proxy": true,
+      "implementation_address": "0x86d62a8ad19998e315e6242b63eb73f391d4674b",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5aabe80f1d80842408da860384a05a85e9a64e98",
+      "is_proxy": true,
+      "implementation_address": "0x16bb396868cc76d179533a18ed6b11a1ec8bd49a",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb76359a71843bcef4cc749f0f0cf1a2672f604ba",
+      "is_proxy": true,
+      "implementation_address": "0x16bb396868cc76d179533a18ed6b11a1ec8bd49a",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe54e04fe47713fa99d9912ab08c7e72435a5d270",
+      "is_proxy": true,
+      "implementation_address": "0x16bb396868cc76d179533a18ed6b11a1ec8bd49a",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

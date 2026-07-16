@@ -1,7 +1,61 @@
 # chainlink — deployments
 
-1 verified deployment(s) across 1 component(s).
+55 verified deployment(s) across 55 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0xf97f4df75117a78c1a5a0dbb814af92458539fb4` | StandardArbERC20 | proxy | unknown | no |
+| avalanche | `0x19860ccb0a68fd4213ab9d8266f7bbf05a8dde98` | BridgeToken | impl | unknown | no |
+| base | `0x26e0e12b1682884a557e67743c6a575fd00bf332` | Flags | impl | unknown | no |
+| base | `0x38660c8cc222c0192b635c2ac09687b4f25cce5f` | ARM | impl | unknown | no |
+| bsc | `0x002b164b1dcf4e92f352dc625a01be0e890edeea` | CommitStore | impl | unknown | no |
+| bsc | `0x004405d927cad243358a270c2dd3d51c8303a390` | EVM2EVMOnRamp | impl | unknown | no |
+| bsc | `0x006fc7533e472ee3ac7277bd600e086a0a8bbca7` | EVM2EVMOffRamp | impl | unknown | no |
+| bsc | `0x00ce37b1c949bf938de4281d8c4261ee421e4ce7` | BurnMintTokenPool | impl | unknown | no |
+| chain-1284 | `0x012414a392f9fa442a3109f1320c439c45518ac3` | LinkToken | impl | unknown | no |
+| chain-1284 | `0x0147f2ad7f1e2bc51f998cc128a8355d5ae8c32d` | EACAggregatorProxy | impl | unknown | no |
+| chain-1284 | `0x0f4930c3c04c8cb57874907f38be77a6d526f134` | SimpleWriteAccessController | impl | unknown | no |
+| chain-130 | `0x02a4d69cffec00fbf7f3b60c93e3529dfc58894d` | OffRamp | impl | unknown | no |
+| chain-130 | `0x1912c3cfafe8a76a32a92861d815ac2837f237ca` | RMNRemote | impl | unknown | no |
+| chain-146 | `0x006bc1f599a10b73c88cc3cd19a92829c4ac1e83` | FeeQuoter | impl | unknown | no |
+| chain-146 | `0x14a7e6a1b2564b10dbdcc9084c4fbc3e72b694a5` | ARMProxy | impl | unknown | no |
+| chain-146 | `0x1bb0f55b00c2607d2561e6042faea4690d7266b1` | CallProxy | impl | unknown | no |
+| chain-80094 | `0x022d74c2d24e7625368720dcba5674bd8a951892` | LockReleaseTokenPool | impl | unknown | no |
+| chain-80094 | `0x03df929510a52c97bb1b3e5f33ea5d9735a50280` | BurnFromMintTokenPool | impl | unknown | no |
+| chain-80094 | `0x3d276e2c2debc581f194591750a4d04aa15d3c01` | TokenPoolFactory | impl | unknown | no |
+| chain-9745 | `0x010771998a1f4736bd844939d0bf01ac5ca0f8fa` | RegistryModuleOwnerCustom | impl | unknown | no |
+| chain-9745 | `0x18bb4ad0f8cc5241334a85fb5d0d48c6a05de84f` | CommitteeVerifier | impl | unknown | no |
+| chain-9745 | `0xb9af873c7089cf3a0b6d67538065dd94b5e3208f` | BurnMintERC20Transparent | impl | unknown | no |
+| chain-999 | `0xb4182810ee17d6726439a4eb108abe29bdf8e5e2` | Storage | impl | unknown | no |
+| ethereum | `0x000bcfdc448754b25f8e8afd5fc1fcc259d7e1bc` | AccessControlledOffchainAggregator | impl | unknown | no |
+| ethereum | `0x0086e1e119ecc95be344c3efca7b39f15a01b423` | AccessControlledAggregator | impl | unknown | no |
+| ethereum | `0x00f0efb3d9dbe7fe91fee44ae09dae5dfa65c382` | AccessControlledOCR2Aggregator | impl | unknown | no |
+| ethereum | `0x020082a7a9c2510e1921116001152dee4da81985` | PriceRegistry | impl | unknown | no |
+| ethereum | `0x0238247e71ad0ab272203af13baea72e99ee7c3c` | ValidatorProxy | impl | unknown | no |
+| ethereum | `0x02aae1a04f9828517b3007f83f6181900cad910c` | VRFV2PlusWrapper | impl | unknown | no |
+| ethereum | `0x03b1b16e7c016f881783674aa6b24fc21d70d29f` | FunctionsClientUpgradeHelper | impl | unknown | no |
+| ethereum | `0x046728da7cb8272284238bd3e47909823d63a58d` | UniswapAnchoredView | impl | unknown | no |
+| ethereum | `0x04b2218a03f4b034a2e83e9e8d1e7ea0da8748ba` | ConfirmedTransactionModule | impl | unknown | no |
+| ethereum | `0x0d736853812a12f085de867adf4ea4aba9521fc0` | LockReleaseTokenPoolAndProxy | impl | unknown | no |
+| ethereum | `0x1a2a2dc0aab0defc092ed8636330eaebd975e7ec` | RewardManager | impl | unknown | no |
+| ethereum | `0x1affdb984bbd8c3382f1ddc8bd605383830160f3` | ChannelConfigStore | impl | unknown | no |
+| ethereum | `0x3503b2a4692f62dd2c5d4c0a6546fb50ba579acf` | FunctionsCoordinator | impl | unknown | no |
 | ethereum | `0x3e64cd889482443324f91bfa9c84fe72a511f48a` | OperatorFactory | impl | live | no |
+| ethereum | `0x476eefef46e0d65e1e371fe093696259b1240b93` | BurnWithFromMintTokenPoolAndProxy | impl | unknown | no |
+| ethereum | `0x4822d77a2d328115c4edebe1c82f313b28f8c315` | HeartbeatRequester | impl | unknown | no |
+| ethereum | `0x48a42f6aed34fd936355b5358fee4de847dcf649` | FeeManager | impl | unknown | no |
+| ethereum | `0x6d05b6b04a4f456e0ea6a0379b6173eae52e71b1` | Configurator | impl | unknown | no |
+| ethereum | `0x70e7d9a2fe6225d926b7c0bb728529eb64a02ab9` | SimpleReadAccessController | impl | unknown | no |
+| ethereum | `0x9fbe92624b48ba00545c2573801c8e38e8285830` | DOODLEF | proxy | unknown | no |
+| ethereum | `0xa618f119504455762c9bbbce4ac9ee7fde457d05` | Verifier | impl | unknown | no |
+| ethereum | `0xaae5ec245bb779883786b44ab3aaad5313ff6582` | VerifierProxy | impl | unknown | no |
+| gnosis | `0xe2e73a1c69ecf83f464efce6a5be353a37ca09b2` | PermittableToken | proxy | unknown | no |
+| optimism | `0x00c8af57a18eb97df446fa12e051c63274025010` | BurnWithFromMintTokenPool | impl | unknown | no |
+| optimism | `0x04336603557feb138b36075156e92f9e551dfc5d` | USDCTokenPool | impl | unknown | no |
+| optimism | `0x0e6137e72cc322b0f3b7ed172f7bd7b5ac798d05` | Router | impl | unknown | no |
+| optimism | `0x1c51b6d5bfcfb7ee82c80949dfd146db157a7e49` | RMN | impl | unknown | no |
+| optimism | `0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6` | LinkTokenOptimism | impl | unknown | no |
+| polygon | `0x00f027ea6d0fb03256a15e9182b2b9227a4931d8` | TokenAdminRegistry | impl | unknown | no |
+| polygon | `0x04505e4182a2ab7989b03eb2321e3141c1c79187` | BurnMintTokenPoolAndProxy | impl | unknown | no |
+| polygon | `0x3d2341adb2d31f1c5530cdc622016af293177ae0` | VRFCoordinator | impl | unknown | no |
+| polygon | `0x683be5e11c1cdce9e63522f45223f47250d71778` | BlockhashStore | impl | unknown | no |

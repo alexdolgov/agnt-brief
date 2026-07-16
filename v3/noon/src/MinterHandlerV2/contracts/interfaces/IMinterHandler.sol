@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.28;
+pragma solidity 0.8.20;
 
 interface IMinterHandler {
     struct Order {
@@ -29,9 +29,6 @@ interface IMinterHandler {
     error StalePrice(uint256 updatedAt, uint256 currentTime);
     error InvalidPrice(int256 price);
     error DirectMintLimitExceeded(uint256 limit, uint256 requested);
-    error SUSNVaultNotSet();
-    error CannotSetZero();
-    error RebaseLimitExceeded(uint256 limit, uint256 requested);
 
     event CustodialWalletSet(address indexed custodialWallet);
     event MintLimitPerBlockUpdated(uint256 indexed mintLimitPerBlock);
@@ -47,9 +44,8 @@ interface IMinterHandler {
     event PriceThresholdUpdated(uint256 newThresholdBps);
     event DirectMintLimitUpdated(uint256 newLimit);
     event OracleStalenessThresholdUpdated(uint256 newThreshold);
-    event SUSNVaultSet(address indexed sUSNVault);
-    event MintAndRebase(uint256 amount);
-    event RebaseLimitUpdated(uint256 newLimit);
+    
+
 
     function mint(Order calldata order, bytes calldata signature) external;
     function hashOrder(Order calldata order) external view returns (bytes32);

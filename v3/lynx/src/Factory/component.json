@@ -1,0 +1,79 @@
+{
+  "component": "Factory",
+  "main_contract": "Factory",
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/dex/Factory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-699e7dc50cf0-Factory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/dex/libraries/UQ112x112.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-e4aeab06561c-UQ112x112.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/dex/libraries/SafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-fda678f6b504-SafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/dex/libraries/Math.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-8371003646a8-Math.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/dex/interfaces/IPair.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-1a2df2daf707-IPair.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/dex/interfaces/IFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-e1f90122e882-IFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/dex/interfaces/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-58e842067c51-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/dex/interfaces/ICallee.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-c4401e17b18c-ICallee.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/dex/PairERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-db2c2e5c3690-PairERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/dex/Pair.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-6d56cf9a814e-Pair.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Factory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1570300e9cfec66c9fb0c8bc14366c86eb170ad0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -2,5 +2,42 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "superfluid",
-  "missing": []
+  "missing": [
+    {
+      "chain_id": 137,
+      "chain": "polygon",
+      "address": "0xa1f477445e3c9e2eb5f40284bf99ffc665d32263",
+      "canonical_source_address": "0x07efa4e436ee9c3a6ff1f0a3a7b4135aabb2fecb"
+    },
+    {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0x8ce0ec4951249d3323e0dd4653b30d16c53568bd",
+      "canonical_source_address": "0x1d25c063ed90a365fdfbf98bb91510198a90d2e6"
+    },
+    {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0x9a19773ebe33c5917012c2bb982bc683d91ec600",
+      "canonical_source_address": "0x0d35fc1c2031b63ee9f068a417e61c9626c6277f"
+    },
+    {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0xb688e4da3100bcec4b5b3140c8fb482ad15d2013",
+      "canonical_source_address": "0x036ea0dca13615c2a8b48b7a3407cc255d50ff74"
+    },
+    {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0xc8f6f1720e6266445b3b53b9b9870b25ade5154e",
+      "canonical_source_address": "0x039bcab91fb8d55ac34e48bfa1176e5a46496919"
+    },
+    {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0xd59ba9a84fa02e3687bb0694e459b3c1d76586f9",
+      "canonical_source_address": "0xacedc4c2ac1965f2ec3473f4486a59fb286bffe0"
+    }
+  ]
 }

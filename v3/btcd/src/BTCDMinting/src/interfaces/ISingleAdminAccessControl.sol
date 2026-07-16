@@ -1,0 +1,11 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.20;
+
+interface ISingleAdminAccessControl {
+    error InvalidAdminChange();
+    error NotPendingAdmin();
+    error RoleConflict();
+
+    event AdminTransferred(address indexed oldAdmin, address indexed newAdmin);
+    event AdminTransferRequested(address indexed oldAdmin, address indexed newAdmin);
+}

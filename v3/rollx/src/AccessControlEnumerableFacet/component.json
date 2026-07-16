@@ -1,0 +1,28 @@
+{
+  "component": "AccessControlEnumerableFacet",
+  "main_contract": "AccessControlEnumerableFacet",
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AccessControlEnumerableFacet\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x03bc054493a9042eebc037e05f3ce2baf53a967d",
+      "is_proxy": true,
+      "implementation_address": "0x063410367c18a007750cfd2e5aa2204a95190203",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

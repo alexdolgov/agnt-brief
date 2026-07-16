@@ -1,8 +1,8 @@
 {
   "component": "AuraBalVault",
   "main_contract": "AuraBalVault",
-  "source_entry_count": 18,
-  "source_file_count": 18,
+  "source_entry_count": 14,
+  "source_file_count": 14,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x4ea9317d90b61fc28c418c247ad0ca8939bbb0e9",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfaa2ed111b4f580fcb85c48e6dc6782dc5fcd7a6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391491"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

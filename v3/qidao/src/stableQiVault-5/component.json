@@ -10,29 +10,49 @@
     "build_command": "forge build --root \"src/stableQiVault-5\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x11826d20b6a16a22450978642404da95b4640123",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4ce4c542d96ce1872fea4fa3fbb2e7ae31862bad",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398156"
+      "logic_topography_row_id": "398129"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xaa19d0e397c964a35e6e80262c692dbfc9c23451",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5773e8953cf60f495eb3c2db45dd753b5c4b7473",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398186"
+      "logic_topography_row_id": "398131"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x954ac12c339c60eafbb32213b15af3f7c7a0dec2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xca3eb45fb186ed4e75b9b22a514ff1d4abadd123",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398137"
     }
   ]
 }

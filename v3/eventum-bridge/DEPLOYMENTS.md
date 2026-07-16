@@ -1,6 +1,6 @@
 # eventum-bridge — deployments
 
-15 verified deployment(s) across 14 component(s).
+19 verified deployment(s) across 17 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -10,12 +10,16 @@
 | arbitrum | `0x2e8d8b56821ebb0abd4bb9dcd4703a2df54ca8fe` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | arbitrum | `0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f` | BeaconProxyFactory | proxy | live | no |
 | arbitrum | `0x4721aee3296f6f34a621d7645ee2fa2ae0b251a9` | BridgeMiddlewareV2 | impl | live | no |
+| arbitrum | `0x5fbf447c301e3029b3c3f2a7743a80ae56521b82` | BridgeMiddlewareV2 | impl | live | no |
 | arbitrum | `0x77075c627e51145d54e4edd54afa169da7ff8a17` | BurnRegistryV1 | proxy | live | yes |
 | arbitrum | `0x82af49447d8a07e3bd95bd0d56f35241523fbab1` | ProxyAdmin | proxy | live | no |
 | arbitrum | `0x99be07778acd2e8118486eeb6281366eaf52977a` | MinimalProxyFactory-2 | impl | live | no |
+| arbitrum | `0xa526c07f616cfbf20c8a7d35ac2376b9480c9684` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | arbitrum | `0xaf88d065e77c8cc2239327c5edb3a432268e5831` | FiatTokenProxy | proxy | live | no |
 | arbitrum | `0xc7c1943bccbc81b8de5b7f407c00b7805ea3ea0c` | Storage | impl | live | no |
-| arbitrum | `0xc7defc896e1dd9d98aea402d928c78c0fd1dc36c` | TransparentUpgradeableProxy-3 | proxy | live | yes |
+| arbitrum | `0xc7defc896e1dd9d98aea402d928c78c0fd1dc36c` | TransparentUpgradeableProxy-4 | proxy | live | yes |
 | arbitrum | `0xd226bd8d36725f4ce12961370211dfeeef1abbbc` | RollupProxy | proxy | live | no |
 | arbitrum | `0xeb71a9c02c1f68a9d7004e74e17c7d62c3291bf8` | GovernorMultisig | impl | live | yes |
-| arbitrum | `0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9` | TransparentUpgradeableProxy-4 | proxy | live | no |
+| arbitrum | `0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9` | TransparentUpgradeableProxy-5 | proxy | live | no |
+| arbitrum | `0xfdaf745d7b7ada22028b225d33438419ae2826b8` | BridgeMiddlewareV2-2 | impl | live | no |
+| ethereum | `0x7ad6d5c9435aa7781a817913b3afec2645ef78be` | PythAggregatorV3 | impl | live | no |

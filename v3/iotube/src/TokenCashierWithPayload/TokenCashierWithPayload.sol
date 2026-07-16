@@ -1,9 +1,9 @@
 // File: @openzeppelin/contracts/utils/Context.sol
 
 
-// OpenZeppelin Contracts (last updated v4.9.4) (utils/Context.sol)
+// OpenZeppelin Contracts (last updated v5.0.1) (utils/Context.sol)
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.20;
 
 /**
  * @dev Provides information about the current execution context, including the
@@ -32,9 +32,9 @@ abstract contract Context {
 // File: @openzeppelin/contracts/access/Ownable.sol
 
 
-// OpenZeppelin Contracts (last updated v4.9.0) (access/Ownable.sol)
+// OpenZeppelin Contracts (last updated v5.0.0) (access/Ownable.sol)
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.20;
 
 
 /**
@@ -42,8 +42,8 @@ pragma solidity ^0.8.0;
  * there is an account (an owner) that can be granted exclusive access to
  * specific functions.
  *
- * By default, the owner account will be the one that deploys the contract. This
- * can later be changed with {transferOwnership}.
+ * The initial owner is set to the address provided by the deployer. This can
+ * later be changed with {transferOwnership}.
  *
  * This module is used through inheritance. It will make available the modifier
  * `onlyOwner`, which can be applied to your functions to restrict their use to
@@ -52,13 +52,26 @@ pragma solidity ^0.8.0;
 abstract contract Ownable is Context {
     address private _owner;
 
+    /**
+     * @dev The caller account is not authorized to perform an operation.
+     */
+    error OwnableUnauthorizedAccount(address account);
+
+    /**
+     * @dev The owner is not a valid owner account. (eg. `address(0)`)
+     */
+    error OwnableInvalidOwner(address owner);
+
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
 
     /**
-     * @dev Initializes the contract setting the deployer as the initial owner.
+     * @dev Initializes the contract setting the address provided by the deployer as the initial owner.
      */
-    constructor() {
-        _transferOwnership(_msgSender());
+    constructor(address initialOwner) {
+        if (initialOwner == address(0)) {
+            revert OwnableInvalidOwner(address(0));
+        }
+        _transferOwnership(initialOwner);
     }
 
     /**
@@ -80,7 +93,9 @@ abstract contract Ownable is Context {
      * @dev Throws if the sender is not the owner.
      */
     function _checkOwner() internal view virtual {
-        require(owner() == _msgSender(), "Ownable: caller is not the owner");
+        if (owner() != _msgSender()) {
+            revert OwnableUnauthorizedAccount(_msgSender());
+        }
     }
 
     /**
@@ -99,7 +114,9 @@ abstract contract Ownable is Context {
      * Can only be called by the current owner.
      */
     function transferOwnership(address newOwner) public virtual onlyOwner {
-        require(newOwner != address(0), "Ownable: new owner is the zero address");
+        if (newOwner == address(0)) {
+            revert OwnableInvalidOwner(address(0));
+        }
         _transferOwnership(newOwner);
     }
 
@@ -114,7 +131,7 @@ abstract contract Ownable is Context {
     }
 }
 
-// File: contracts/iotube/TokenCashierWithPayload.sol
+// File: iotube/TokenCashierWithPayload.sol
 
 
 pragma solidity >= 0.8.0;
@@ -146,7 +163,7 @@ contract TokenCashierWithPayload is Ownable {
     uint256 public depositFee;
     IWrappedCoin public wrappedCoin;
 
-    constructor(IWrappedCoin _wrappedCoin) Ownable() {
+    constructor(IWrappedCoin _wrappedCoin) Ownable(msg.sender) {
         wrappedCoin = _wrappedCoin;
     }
 
@@ -189,10 +206,6 @@ contract TokenCashierWithPayload is Ownable {
         return address(0);
     }
 
-    function depositTo(address _token, address _to, uint256 _amount) public payable {
-        depositTo(_token, _to, _amount, "");
-    }
-
     function depositTo(address _token, address _to, uint256 _amount, bytes memory _payload) public whenNotPaused payable {
         require(_to != address(0), "invalid destination");
         bool isCoin = false;
@@ -220,10 +233,6 @@ contract TokenCashierWithPayload is Ownable {
         }
         counts[_token] += 1;
         emit Receipt(_token, counts[_token], msg.sender, _to, _amount, fee, _payload);
-    }
-
-    function deposit(address _token, uint256 _amount) public payable {
-        depositTo(_token, msg.sender, _amount);
     }
 
     function deposit(address _token, uint256 _amount, bytes memory _payload) public payable {

@@ -1,0 +1,28 @@
+{
+  "component": "FiatTokenProxy",
+  "main_contract": "FiatTokenProxy",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FiatTokenProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+      "is_proxy": true,
+      "implementation_address": "0x30dfe0469803bce76f8f62ac24b18d33d3d6ffe6",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

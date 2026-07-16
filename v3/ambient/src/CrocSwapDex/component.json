@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "blast",
-      "chain_id": 81457,
-      "address": "0xaaaaaaaaffe404ee9433eef0094b6382d81fb958",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaaaaaaaaa24eeeb8d57d431224f73832bc34f688",
       "is_proxy": true,
-      "implementation_address": "0x79cf6e6af136b04c145f330509ad547b0d7ef6e9",
-      "liveness": "live",
+      "implementation_address": "0xd268767be4597151ce2bb4a70a9e368ff26cb195",
+      "liveness": "unknown",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "390886"
+      "logic_topography_row_id": "390881"
     }
   ]
 }

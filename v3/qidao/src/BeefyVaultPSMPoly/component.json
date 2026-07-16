@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/BeefyVaultPSMPoly\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6d01fbf0f5d085209aeefab3ab8e31298183453a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "polygon",
       "chain_id": 137,

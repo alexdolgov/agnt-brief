@@ -11,20 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://paladinsec.co/projects/revault-network"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x4fdd92bd67acf0676bfc45ab7168b3996f7b4a3b",
+      "address": "0x3cf362d6373aea38172fc3cff6c04655bdff089d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398493"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

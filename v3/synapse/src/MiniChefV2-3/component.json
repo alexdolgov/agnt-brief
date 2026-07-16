@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/MiniChefV2-3\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xe8c610fcb63a4974f02da52f0b4523937012aaa0",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xffc2d603fde1f99ad94026c00b6204bb9b8c36e9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "400097"
+      "logic_topography_row_id": "400123"
+    },
+    {
+      "chain": "blast",
+      "chain_id": 81457,
+      "address": "0x3100dc8464a8523306c3c5034de24a8927d6e590",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400142"
     }
   ]
 }

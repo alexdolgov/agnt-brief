@@ -1,15 +1,17 @@
 # parallel-protocol — deployments
 
-63 verified deployment(s) across 34 component(s).
+92 verified deployment(s) across 51 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ParallelAccessManager | impl | live | no |
 | arbitrum | `0x4dde0e308cfb60515218c6ad2df1134fc48531fc` | BridgeableTokenP | impl | live | no |
+| arbitrum | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | PeripheralPRL | impl | live | no |
 | avalanche | `0x0d45b129dc868963025db79a9074ea9c9e32cae4` | GenericHarvester-3 | impl | live | no |
 | avalanche | `0x23d491aa7c0972087f8a607f6f4c7106a02ba95d` | DiamondLoupe-3 | impl | live | no |
 | avalanche | `0x36da06796fd9d22bcd6287b66a87ffdadb12636c` | RewardHandler-3 | impl | live | no |
 | avalanche | `0x41d58951cbd12d4ef49b0437897677bbf5547c80` | DiamondProxy | impl | live | no |
+| avalanche | `0x506ba37aa8e265be445913b9c4080852277f3c5a` | DiamondInitializer-3 | impl | live | no |
 | avalanche | `0x57265a3d7db8f4a4a155eadf6c7326926cac1490` | Swapper | impl | live | no |
 | avalanche | `0x5beada21a6b9cb229117b3ea2c0d1594785013a2` | SettersGovernor-3 | impl | live | no |
 | avalanche | `0x657acb8a3bf9383e561565d422ea9b9a90ce0052` | DiamondCut-3 | impl | live | no |
@@ -18,32 +20,40 @@
 | avalanche | `0xbbc90e685c4a66ebbdc71a3a1437d3111e43fe84` | SettersGuardian-3 | impl | live | no |
 | avalanche | `0xf6cc47e981ed5902be382dbe7b54e3696de22dbb` | Getters-3 | impl | live | no |
 | avalanche | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | impl | live | no |
+| base | `0x01fa35fde0e813e2d6687660a74a313d8d922e48` | sPRL1-2 | impl | live | no |
 | base | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ParallelAccessManager | impl | live | no |
 | base | `0x15452454a9735d68df430879b2941316a09295b1` | DiamondCut-2 | impl | live | no |
 | base | `0x24cef236056834f38e9247a1fff6681dd313d3aa` | DiamondLoupe-2 | impl | live | no |
 | base | `0x2b6c7c275404e93a14a05b549af292231d6e4dec` | RewardHandler-2 | impl | live | no |
+| base | `0x3997f0dbd1e2cfc4eccf60c31366930dcf2298d7` | DiamondInitializer-2 | impl | live | no |
 | base | `0x4dde0e308cfb60515218c6ad2df1134fc48531fc` | BridgeableTokenP | impl | live | no |
 | base | `0x90e4ae8ba8c6fd51fced0f9331668b05c7a4ee43` | SettersGovernor-2 | impl | live | no |
 | base | `0xbe65f0f410a72bec163dc65d46c83699e957d588` | Getters-2 | impl | live | no |
 | base | `0xca43ecfcdfba1fed003649e946ae6091646b410a` | GenericHarvester | impl | live | no |
 | base | `0xe5c82b4f09fd4d079757e156db44afd2c8032cc8` | SettersGuardian-2 | impl | live | no |
 | base | `0xe9fe4720fa99f9b28584da44abb8cf91f15990e8` | Redeemer-2 | impl | live | no |
+| base | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | PeripheralPRL | impl | live | no |
 | bsc | `0x7b54f3d993d3bca077946034ea710f9c07420c72` | BridgeableTokenP | impl | live | no |
 | bsc | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | impl | live | no |
 | chain-130 | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | BridgeableTokenP | impl | live | no |
 | chain-130 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | impl | live | no |
 | chain-1329 | `0x7b54f3d993d3bca077946034ea710f9c07420c72` | BridgeableTokenP | impl | live | no |
+| chain-1329 | `0xd8cc2a51556da84b5db309e86f30ff98b5309862` | VaultsV2Feed | impl | live | no |
+| chain-1329 | `0xeb197439d1425f3129f01f7763ec511df2489095` | VaultsV2Feed-2 | impl | live | no |
 | chain-1329 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | impl | live | no |
 | chain-146 | `0x120805265fa944834dc6e930de2995768806a9d2` | GenericHarvester | impl | live | no |
 | chain-146 | `0x2b6c7c275404e93a14a05b549af292231d6e4dec` | DiamondLoupe | impl | live | no |
+| chain-146 | `0x7df74bbb6f82ec1bcb1562a30ef5bf5c326e2811` | sPRL1 | impl | live | no |
 | chain-146 | `0x8efb3ded78fbaef2a4efe01e01bbd911e4094b78` | ParallelAccessManager | impl | live | no |
 | chain-146 | `0x90e4ae8ba8c6fd51fced0f9331668b05c7a4ee43` | Getters | impl | live | no |
+| chain-146 | `0xbe65f0f410a72bec163dc65d46c83699e957d588` | DiamondInitializer | impl | live | no |
 | chain-146 | `0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed` | SettersGovernor | impl | live | no |
 | chain-146 | `0xca43ecfcdfba1fed003649e946ae6091646b410a` | SettersGuardian | impl | live | no |
 | chain-146 | `0xda818995ddeee3ac36bf492133e1feae1fa377e6` | BridgeableTokenP | impl | live | no |
 | chain-146 | `0xe5c82b4f09fd4d079757e156db44afd2c8032cc8` | Redeemer | impl | live | no |
 | chain-146 | `0xe9fe4720fa99f9b28584da44abb8cf91f15990e8` | DiamondCut | impl | live | no |
 | chain-146 | `0xfb2d070270e9ffc2db107d0162b47c2ed291e3f7` | RewardHandler | impl | live | no |
+| chain-146 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | PeripheralPRL | impl | live | no |
 | chain-252 | `0x9e79ec4bc3574f2865636aecff44b60a723a9ee7` | BridgeableTokenP-2 | impl | live | no |
 | chain-252 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager-2 | impl | live | no |
 | chain-80094 | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | BridgeableTokenP | impl | live | no |
@@ -54,16 +64,35 @@
 | chain-999 | `0x57770c1721eb35509f38210a935c8b1911db7e0e` | GenericHarvester-2 | impl | live | no |
 | chain-999 | `0xc3bef21ea7deb5c34cf33e918c8e28972c8048ed` | BridgeableTokenP | impl | live | no |
 | chain-999 | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | impl | live | no |
+| ethereum | `0x173ae6283a717b6cdd5491eac5f82c082a8c674b` | VaultsCore | impl | live | no |
 | ethereum | `0x36da06796fd9d22bcd6287b66a87ffdadb12636c` | GenericHarvester | impl | live | no |
+| ethereum | `0x74e3f9d724da6d7e4db8ecab4f18e6ba44f60e30` | BridgeableToken | impl | live | no |
 | ethereum | `0x78bb4882b77d74ad9b04ab71fe8e61f72595823c` | BridgeableTokenP | impl | live | no |
 | ethereum | `0x94ea8800444017695345156319e96bdb1e355f7a` | ParallelAccessManager | impl | live | no |
+| ethereum | `0x963d9858651fa21e903e83c5d985fc74f6745249` | VaultsCoreState | impl | live | no |
+| ethereum | `0xd4dee6e089969600d3359cdbcd34e3111bc838eb` | BridgeableToken | impl | live | no |
+| ethereum | `0xdb75531e12ca4bb6cd5cfe77f10522b08806386f` | VaultsCoreState-2 | impl | live | no |
+| ethereum | `0xe26348d30694aa7e879b9335252362df3df93204` | VaultsCore-2 | impl | live | no |
+| ethereum | `0xe8a2d848fe656e34a6caa35f375b42979e322135` | sPRL2 | impl | live | no |
+| ethereum | `0xead729472f82e5ec2ff4e691d67633077c1b5901` | sPRL1 | impl | live | no |
 | gnosis | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | BridgeableTokenP | impl | live | no |
 | gnosis | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager | impl | live | no |
 | linea | `0x9e79ec4bc3574f2865636aecff44b60a723a9ee7` | BridgeableTokenP-2 | impl | live | no |
 | linea | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager-2 | impl | live | no |
 | optimism | `0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46` | ParallelAccessManager-3 | impl | live | no |
 | optimism | `0x76a9a0062ec6712b99b4f63bd2b4270185759dd5` | BridgeableTokenP | impl | live | no |
+| optimism | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | PeripheralPRL | impl | live | no |
+| polygon | `0x02c69c480ab4a35f2c7117e2c17c904cd76f25d8` | VaultsCoreState | impl | live | no |
+| polygon | `0x0a9202c6417a7b6b166e7f7fe2719b09261b400f` | VaultsCore | impl | live | no |
+| polygon | `0x7790dd69aa10ed3f1271e41cd7222d2a7d2d5948` | PeripheralPRL | impl | live | no |
+| polygon | `0x7b54f3d993d3bca077946034ea710f9c07420c72` | RewardMerkleDistributor | impl | live | no |
 | polygon | `0x7df74bbb6f82ec1bcb1562a30ef5bf5c326e2811` | ParallelAccessManager-4 | impl | live | no |
+| polygon | `0x90337e484b1cb02132fc150d3afa262147348545` | MainFeeDistributor | impl | live | no |
 | polygon | `0x9afdb5a5ec2bbdddaa4573baa25caa4e4e4a2ca9` | BridgeableTokenP | impl | live | no |
+| polygon | `0x9c68850e18eacd4ea7ca2998b6bbed9cf55316cb` | PeripheralMigrationContract | impl | live | no |
+| polygon | `0xcababc1feb7c5298f69b635099d75975ad5e6e5f` | VaultsCore-2 | impl | live | no |
+| polygon | `0xdb7be3a50bdf5641757ebea38e8014e1f0aa9475` | sPRL1 | impl | live | no |
+| polygon | `0xe462df8d4aa7db3aecfe810ec8d1fa4f716bc9a8` | BridgeableToken | impl | live | no |
+| polygon | `0xfad382ee9b8229fb9b05df9f9391bac5dd81f346` | VaultsCoreState-2 | impl | live | no |
 | scroll | `0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec` | BridgeableTokenP-3 | impl | live | no |
 | scroll | `0xfd28f108e95f4d41daae9dbfff707d677985998e` | ParallelAccessManager-5 | impl | live | no |

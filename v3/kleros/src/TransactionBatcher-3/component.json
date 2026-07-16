@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xbc5ef8d9ad307154447ae148c088f083d2dea4ef",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xa73a872efd768bb23efb24ceeb9e330bcca259d6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395842"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,4 +1,5 @@
-// The contract is based on the Shell Protocol source code: https://github.com/cowri/shell-solidity-v1
+// The Component Protocol is fork of the Shell Protocol
+// Original source code link: https://github.com/cowri/shell-solidity-v1
 
 pragma solidity >0.4.13 >=0.4.23 >=0.5.0 <0.6.0 >=0.5.7 <0.6.0;
 
@@ -1792,7 +1793,7 @@ library Swaps {
 
         settleProtocolShare(component, _t.addr, _amt);
 
-        _amt = _amt.us_mul(ONE - component.epsilon);
+        _amt = component.epsilon.us_mul(component.sigma);
 
         tAmt_ = Assimilators.outputNumeraire(_t.addr, _recipient, _amt);
 
@@ -2075,12 +2076,7 @@ library Swaps {
   ) internal {
 
     int128 _prtclShr = _amt.us_mul(component.epsilon.us_mul(component.sigma));
-
-    if (_prtclShr.abs() > 0) {
-
-      Assimilators.outputNumeraire(_assim, component.protocol, _prtclShr);
-
-    }
+    Assimilators.outputNumeraire(_assim, component.protocol, _prtclShr);
 
   }
 
@@ -2528,8 +2524,6 @@ library Orchestrator {
         require(0 <= _lambda && _lambda <= 1e18, "Component/parameter-invalid-lambda");
 
         require(0 <= _sigma && _sigma <= .5e18, "Component/parameter-invalid-sigma");
-
-        require(_protocol != address(0), "Component/parameter-invalid-protocol");
 
         int128 _omega = getFee(component);
 
@@ -3266,7 +3260,7 @@ contract Component is ComponentStorage {
     }
 
     /// @notice view the component token balance of a given account
-    /// @param _account the account to view the balance of
+    /// @param _account the account to view the balance of  
     /// @return balance_ the component token ballance of the given account
     function balanceOf (
         address _account
@@ -3287,7 +3281,7 @@ contract Component is ComponentStorage {
     }
 
     /// @notice views the total allowance one address has to spend from another address
-    /// @param _owner the address of the owner
+    /// @param _owner the address of the owner 
     /// @param _spender the address of the spender
     /// @return allowance_ the amount the owner has allotted the spender
     function allowance (
@@ -3312,7 +3306,7 @@ contract Component is ComponentStorage {
         return ViewLiquidity.viewLiquidity(component);
 
     }
-
+    
     /// @notice view the assimilator address for a derivative
     /// @return assimilator_ the assimilator address
     function assimilator (

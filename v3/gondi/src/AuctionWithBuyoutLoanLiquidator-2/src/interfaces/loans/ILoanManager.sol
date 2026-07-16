@@ -11,48 +11,57 @@ interface ILoanManager {
     }
 
     /// @notice Validate an offer. Can only be called by an accepted caller.
-    /// @param tokenId The token id.
-    /// @param offer The offer to validate.
-    /// @param protocolFee The protocol fee.
-    function validateOffer(uint256 tokenId, bytes calldata offer, uint256 protocolFee) external;
+    /// @param _tokenId The token id.
+    /// @param _offer The offer to validate.
+    /// @param _protocolFee The protocol fee.
+    function validateOffer(uint256 _tokenId, bytes calldata _offer, uint256 _protocolFee) external;
+
+    /// @notice Update the offer handler.
+    /// @param _offerHandler The new offer handler.
+    function updateOfferHandler(address _offerHandler) external;
+
+    /// @notice Get the offer handler setter.
+    /// @dev Had to take this out from the contract because of size issues.
+    /// @return The offer handler setter.
+    function getParameterSetter() external view returns (address);
 
     /// @notice Add allowed callers.
-    /// @param caller The callers to add.
-    function addCaller(ProposedCaller calldata caller) external;
+    /// @param _callers The callers to add.
+    function addCallers(ProposedCaller[] calldata _callers) external;
 
     /// @notice Called on loan repayment.
-    /// @param loanId The loan id.
-    /// @param principalAmount The principal amount.
-    /// @param apr The APR.
-    /// @param accruedInterest The accrued interest.
-    /// @param protocolFee The protocol fee.
-    /// @param startTime The start time.
+    /// @param _loanId The loan id.
+    /// @param _principalAmount The principal amount.
+    /// @param _apr The APR.
+    /// @param _accruedInterest The accrued interest.
+    /// @param _protocolFee The protocol fee.
+    /// @param _startTime The start time.
     function loanRepayment(
-        uint256 loanId,
-        uint256 principalAmount,
-        uint256 apr,
-        uint256 accruedInterest,
-        uint256 protocolFee,
-        uint256 startTime
+        uint256 _loanId,
+        uint256 _principalAmount,
+        uint256 _apr,
+        uint256 _accruedInterest,
+        uint256 _protocolFee,
+        uint256 _startTime
     ) external;
 
     /// @notice Called on loan liquidation.
-    /// @param loanAddress The address of the loan contract since this might be called by a liquidator.
-    /// @param loanId The loan id.
-    /// @param principalAmount The principal amount.
-    /// @param apr The APR.
-    /// @param accruedInterest The accrued interest.
-    /// @param protocolFee The protocol fee.
-    /// @param received The received amount (from liquidation proceeds)
-    /// @param startTime The start time.
+    /// @param _loanAddress The address of the loan contract since this might be called by a liquidator.
+    /// @param _loanId The loan id.
+    /// @param _principalAmount The principal amount.
+    /// @param _apr The APR.
+    /// @param _accruedInterest The accrued interest.
+    /// @param _protocolFee The protocol fee.
+    /// @param _received The received amount (from liquidation proceeds)
+    /// @param _startTime The start time.
     function loanLiquidation(
-        address loanAddress,
-        uint256 loanId,
-        uint256 principalAmount,
-        uint256 apr,
-        uint256 accruedInterest,
-        uint256 protocolFee,
-        uint256 received,
-        uint256 startTime
+        address _loanAddress,
+        uint256 _loanId,
+        uint256 _principalAmount,
+        uint256 _apr,
+        uint256 _accruedInterest,
+        uint256 _protocolFee,
+        uint256 _received,
+        uint256 _startTime
     ) external;
 }

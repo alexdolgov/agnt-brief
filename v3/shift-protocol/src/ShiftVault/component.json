@@ -10,21 +10,49 @@
     "build_command": "forge build --root \"src/ShiftVault\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/SHIFT-NebulaLabs/shift-contracts/blob/main/audits/shift-sbsecurity-audit-2025.pdf"
-  ],
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0xaf69bf9ea9e0166498c0502af5b5945980ed1e0e",
+      "address": "0x89d63c8331d0fb75b94e27fc981598093c8a36b0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398928"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6d7c897cd8b402690c07e7263c9f59b3777ae3c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7174f0bd02664bebdb6aa79a99faf949570a10bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x956bdd9c18b786b082fd50c52722d254f0cb6964",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

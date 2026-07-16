@@ -1,0 +1,27 @@
+// SPDX-License-Identifier: UNLICENSED
+// Copyright (c) 2023 Tokemak Foundation. All rights reserved.
+
+pragma solidity ^0.8.24;
+
+import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
+import { IPriceOracle } from "src/interfaces/oracles/IPriceOracle.sol";
+import { SystemComponent } from "src/SystemComponent.sol";
+
+/// @title Price oracle for tokens we want to configure as 0
+contract ZeroOracle is SystemComponent, IPriceOracle {
+    constructor(
+        ISystemRegistry _systemRegistry
+    ) SystemComponent(_systemRegistry) { }
+
+    /// @inheritdoc IPriceOracle
+    function getDescription() external pure override returns (string memory) {
+        return "zero";
+    }
+
+    /// @inheritdoc IPriceOracle
+    function getPriceInEth(
+        address
+    ) external pure returns (uint256) {
+        return 0;
+    }
+}

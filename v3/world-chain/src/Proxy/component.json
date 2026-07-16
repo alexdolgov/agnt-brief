@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 6,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "404970"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1325c4966d17038c5592fb38416aee85ee73c0cb",
+      "is_proxy": true,
+      "implementation_address": "0xf2085a1a2de38e90acc4d2984c3adb68292d0364",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",
@@ -53,6 +63,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "404980"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8ec1111f67dad6b6a93b3f42dfbc92d81c98449a",
+      "is_proxy": true,
+      "implementation_address": "0x71e966ae981d1ce531a7b6d23dc0f27b38409087",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",

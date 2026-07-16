@@ -1,0 +1,38 @@
+{
+  "component": "ReserveOptimisticGovernorDeployer-3",
+  "main_contract": "ReserveOptimisticGovernorDeployer",
+  "source_entry_count": 70,
+  "source_file_count": 70,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ReserveOptimisticGovernorDeployer-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1262f9dd085fe3360acf2dc364669207d958cc7b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6de4c064362fd3971333b240c550ed8f5d5c31ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

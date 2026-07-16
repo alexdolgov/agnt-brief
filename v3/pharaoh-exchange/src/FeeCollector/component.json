@@ -11,20 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://code4rena.com/reports/2024-10-ramses-exchange"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x1e1e2a861205767d69a51edf03cf5e3a278437bc",
+      "address": "0x088e2efad10f3262e745c6c01f661112f353bb64",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "397756"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

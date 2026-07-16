@@ -1,0 +1,28 @@
+{
+  "component": "GroveEthereum_20251030",
+  "main_contract": "GroveEthereum_20251030",
+  "source_entry_count": 50,
+  "source_file_count": 50,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GroveEthereum_20251030\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8b4a92f8375ef89165aef4639e640e077d7c656b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

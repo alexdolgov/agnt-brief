@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 5,
+  "deployment_count": 6,
   "audited": true,
   "audits_covering": [
     "https://2576447856-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fwkm0XGONc7sDuNeJww6d%2Fuploads%2FpMWbqSIwZoqGaLDR4b4f%2F20251121_Paladin_YoProtocol_Final_Report.pdf",
@@ -18,6 +18,16 @@
     "https://github.com/yoprotocol/core/blob/main/audits/20251121_Paladin_YoProtocol_Final_Report.pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x50c749ae210d3977adc824ae11f3c7fd10c871e9",
+      "is_proxy": true,
+      "implementation_address": "0xf59c19eb032ff3301b6695b58303470a79098771",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "ethereum",
       "chain_id": 1,

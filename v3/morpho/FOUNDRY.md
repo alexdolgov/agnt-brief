@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/AaveV2MigrationAdapter"
+forge build --root "src/DiamondCutFacet"
 ```
 
 ## Build every component

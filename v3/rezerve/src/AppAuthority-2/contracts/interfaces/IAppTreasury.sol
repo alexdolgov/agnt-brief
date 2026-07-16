@@ -3,6 +3,7 @@ pragma solidity 0.8.28;
 
 import "./IAppOracle.sol";
 import "./IApp.sol";
+import "./IRateProvider.sol";
 
 interface IAppTreasury {
     /**
@@ -31,6 +32,14 @@ interface IAppTreasury {
         external
         view
         returns (uint256 rzrValue_, uint256 usdValue_);
+
+    /**
+     * @notice Returns the value of a token in RZR, 18 decimals
+     * @param _token The address of the token
+     * @return rzrValue_ The value of the token in RZR
+     * @return usdValue_ The value of the token in USD
+     */
+    function tokenValueE18(address _token) external view returns (uint256 rzrValue_, uint256 usdValue_);
 
     /**
      * @notice allow approved address to manage the reserves of the treasury
@@ -125,6 +134,51 @@ interface IAppTreasury {
      */
     function enabledTokensLength() external view returns (uint256 length_);
 
+    /**
+     * @notice Registers a rate provider for an asset
+     * @param _asset The asset to register the rate provider for
+     * @param _rateProvider The rate provider to register
+     */
+    function registerRateProvider(address _asset, address _rateProvider) external;
+
+    /**
+     * @notice Sets the revenue destination
+     * @param _revenueDestination The revenue destination
+     */
+    function setRevenueDestination(address _revenueDestination) external;
+
+    /**
+     * @notice Collects the revenue for an asset
+     * @param _asset The asset to collect the revenue for
+     */
+    function collectRevenue(address _asset) external;
+
+    /**
+     * @notice Collects the revenue for multiple assets
+     * @param _assets The assets to collect the revenue for
+     */
+    function collectRevenueMultiple(address[] calldata _assets) external;
+
+    /**
+     * @notice Gets the revenue destination
+     * @return revenueDestination_ The revenue destination
+     */
+    function revenueDestination() external view returns (address revenueDestination_);
+
+    /**
+     * @notice Gets the rate provider for an asset
+     * @param _asset The asset to get the rate provider for
+     * @return rateProvider_ The rate provider
+     */
+    function rateProviders(address _asset) external view returns (address rateProvider_);
+
+    /**
+     * @notice Gets the rate snapshot for an asset
+     * @param _asset The asset to get the rate snapshot for
+     * @return rateSnapshot_ The rate snapshot
+     */
+    function rateSnapshots(address _asset) external view returns (uint256 rateSnapshot_);
+
     /* ========== EVENTS ========== */
 
     event Deposit(address indexed token, uint256 amount, uint256 usdValue, uint256 rzrValue);
@@ -134,4 +188,9 @@ interface IAppTreasury {
     event Minted(address indexed caller, address indexed recipient, uint256 amount);
     event TokenEnabled(address addr, bool result);
     event ReserveFeeSet(uint256 newFee, uint256 oldFee);
+    event RateProviderRegistered(address indexed asset, address indexed rateProvider, uint256 indexed rateSnapshot);
+    event RevenueDestinationSet(address indexed revenueDestination);
+    event RevenueCollected(
+        address indexed asset, uint256 revenue, uint256 revenueToProtocol, uint256 revenueToTreasury
+    );
 }

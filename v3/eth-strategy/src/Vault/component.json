@@ -1,8 +1,8 @@
 {
   "component": "Vault",
   "main_contract": "Vault",
-  "source_entry_count": 27,
-  "source_file_count": 27,
+  "source_entry_count": 44,
+  "source_file_count": 44,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,19 +10,69 @@
     "build_command": "forge build --root \"src/Vault\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x9371352ccef6f5b36efdfe90942ffe622ab77f1d",
+      "address": "0x4bb4c3cdc7562f08e9910a0c7d8bb7e108861eb4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "394011"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8180eccc825b692ef65ff099a0a387743788bf78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x96e47fc9c701e8eef22fa53e62dc3ebbdccaea73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcae44c93f7b3b519fc28f9d4f7ae22de770a907b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe7cd9370cde6c9b5eabce8f86d01822d3de205a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe9a12fb15cc00b59867e4e2f0acbdcebfd32b3d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

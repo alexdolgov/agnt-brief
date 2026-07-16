@@ -1,0 +1,47 @@
+{
+  "component": "RocketDAOProtocolProposals",
+  "main_contract": "RocketDAOProtocolProposals",
+  "source_entry_count": 17,
+  "source_file_count": 17,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RocketDAOProtocolProposals\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://diligence.security/audits/2021/04/rocketpool",
+    "https://diligence.security/audits/2023/12/rocket-pool-houston",
+    "https://rocketpool.net/files/audits/bailsec-audit-saturn-1.pdf",
+    "https://rocketpool.net/files/audits/cantina-audit-saturn-1.pdf",
+    "https://rocketpool.net/files/audits/chainsafe-audit-houston.pdf",
+    "https://rocketpool.net/files/audits/consensys-audit-atlas.pdf",
+    "https://rocketpool.net/files/audits/sigma-prime-audit.pdf",
+    "https://rocketpool.net/files/sigma-prime-audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2dbd041360c86b35a9ea05d3ec3fcceadb915c16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcf7f6e23cd8189b7f56b14f66e11241c8ac0f03b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403993"
+    }
+  ]
+}

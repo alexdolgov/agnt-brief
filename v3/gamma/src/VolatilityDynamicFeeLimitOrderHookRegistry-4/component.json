@@ -1,0 +1,28 @@
+{
+  "component": "VolatilityDynamicFeeLimitOrderHookRegistry-4",
+  "main_contract": "VolatilityDynamicFeeLimitOrderHookRegistry",
+  "source_entry_count": 42,
+  "source_file_count": 42,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VolatilityDynamicFeeLimitOrderHookRegistry-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x1fd1be7495fe49eb404a3b6457331fac3811df2c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

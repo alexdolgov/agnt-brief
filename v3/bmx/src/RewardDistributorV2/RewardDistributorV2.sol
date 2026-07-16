@@ -1,10 +1,8 @@
-// Sources flattened with hardhat v2.17.3 https://hardhat.org
-
-// SPDX-License-Identifier: MIT
+// Sources flattened with hardhat v2.12.0 https://hardhat.org
 
 // File contracts/libraries/math/SafeMath.sol
 
-// Original license: SPDX_License_Identifier: MIT
+// SPDX-License-Identifier: MIT
 
 pragma solidity 0.6.12;
 
@@ -165,9 +163,33 @@ library SafeMath {
 }
 
 
+// File contracts/access/Governable.sol
+
+
+
+pragma solidity 0.6.12;
+
+contract Governable {
+    address public gov;
+
+    constructor() public {
+        gov = msg.sender;
+    }
+
+    modifier onlyGov() {
+        require(msg.sender == gov, "Governable: forbidden");
+        _;
+    }
+
+    function setGov(address _gov) external onlyGov {
+        gov = _gov;
+    }
+}
+
+
 // File contracts/libraries/token/IERC20.sol
 
-// Original license: SPDX_License_Identifier: MIT
+
 
 pragma solidity 0.6.12;
 
@@ -248,7 +270,7 @@ interface IERC20 {
 
 // File contracts/libraries/utils/Address.sol
 
-// Original license: SPDX_License_Identifier: MIT
+
 
 pragma solidity ^0.6.2;
 
@@ -441,12 +463,9 @@ library Address {
 
 // File contracts/libraries/token/SafeERC20.sol
 
-// Original license: SPDX_License_Identifier: MIT
+
 
 pragma solidity 0.6.12;
-
-
-
 /**
  * @title SafeERC20
  * @dev Wrappers around ERC20 operations that throw on failure (when the token
@@ -516,33 +535,9 @@ library SafeERC20 {
 }
 
 
-// File contracts/access/Governable.sol
-
-// Original license: SPDX_License_Identifier: MIT
-
-pragma solidity 0.6.12;
-
-contract Governable {
-    address public gov;
-
-    constructor() public {
-        gov = msg.sender;
-    }
-
-    modifier onlyGov() {
-        require(msg.sender == gov, "Governable: forbidden");
-        _;
-    }
-
-    function setGov(address _gov) external onlyGov {
-        gov = _gov;
-    }
-}
-
-
 // File contracts/libraries/utils/ReentrancyGuard.sol
 
-// Original license: SPDX_License_Identifier: MIT
+
 
 pragma solidity 0.6.12;
 
@@ -606,23 +601,9 @@ contract ReentrancyGuard {
 }
 
 
-// File contracts/staking/interfaces/IRewardDistributor.sol
-
-// Original license: SPDX_License_Identifier: MIT
-
-pragma solidity 0.6.12;
-
-interface IRewardDistributor {
-    function rewardToken() external view returns (address);
-    function tokensPerInterval() external view returns (uint256);
-    function pendingRewards() external view returns (uint256);
-    function distribute() external returns (uint256);
-}
-
-
 // File contracts/staking/interfaces/IRewardTracker.sol
 
-// Original license: SPDX_License_Identifier: MIT
+
 
 pragma solidity 0.6.12;
 
@@ -643,9 +624,23 @@ interface IRewardTracker {
 }
 
 
+// File contracts/staking/interfaces/IRewardDistributor.sol
+
+
+
+pragma solidity 0.6.12;
+
+interface IRewardDistributor {
+    function rewardToken() external view returns (address);
+    function tokensPerInterval() external view returns (uint256);
+    function pendingRewards() external view returns (uint256);
+    function distribute() external returns (uint256);
+}
+
+
 // File contracts/staking/RewardDistributorV2.sol
 
-// Original license: SPDX_License_Identifier: MIT
+
 
 pragma solidity 0.6.12;
 

@@ -1,0 +1,28 @@
+{
+  "component": "ReClammPoolFactory",
+  "main_contract": "ReClammPoolFactory",
+  "source_entry_count": 63,
+  "source_file_count": 63,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ReClammPoolFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0c8f71d19f87c0bd1b9bad2484ecc3388d5dbb98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

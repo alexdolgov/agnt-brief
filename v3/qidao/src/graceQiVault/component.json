@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/graceQiVault\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0xab9c4ca8c30c0a703aa7f134b74005a5277ec7f1",
+      "address": "0xb2b7302872cd2dd1d5fb36245c0e6584862178df",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398228"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xba2871bc86775d54ebe258af08e55d8794e896ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

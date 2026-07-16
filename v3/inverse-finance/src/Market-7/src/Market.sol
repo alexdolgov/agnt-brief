@@ -1,13 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
+import "src/interfaces/IERC20.sol";
 
 // Caution. We assume all failed transfers cause reverts and ignore the returned bool.
-interface IERC20 {
-    function transfer(address,uint) external returns (bool);
-    function transferFrom(address,address,uint) external returns (bool);
-    function balanceOf(address) external view returns (uint);
-}
-
 interface IOracle {
     function getPrice(address,uint) external returns (uint);
     function viewPrice(address,uint) external view returns (uint);
@@ -488,6 +483,15 @@ contract Market {
     }
 
     /**
+    @notice Function for withdrawing maximum allowed to msg.sender.
+    @dev Useful for use with escrows that continously compound tokens, so there won't be dust amounts left
+    @dev Dangerous to use when the user has any amount of debt!
+    */
+    function withdrawMax() public {
+        withdrawInternal(msg.sender, msg.sender, getWithdrawalLimitInternal(msg.sender));
+    }
+
+    /**
     @notice Function for using a signed message to withdraw on behalf of an address owning an escrow with collateral.
     @dev Signed messaged can be invalidated by incrementing the nonce. Will always withdraw to the msg.sender.
     @param from The address of the user owning the escrow being withdrawn from
@@ -525,6 +529,47 @@ contract Market {
             );
             require(recoveredAddress != address(0) && recoveredAddress == from, "INVALID_SIGNER");
             withdrawInternal(from, msg.sender, amount);
+        }
+    }
+
+    /**
+    @notice Function for using a signed message to withdraw on behalf of an address owning an escrow with collateral.
+    @dev Signed messaged can be invalidated by incrementing the nonce. Will always withdraw to the msg.sender.
+    @dev Useful for use with escrows that continously compound tokens, so there won't be dust amounts left
+    @dev Dangerous to use when the user has any amount of debt!
+    @param from The address of the user owning the escrow being withdrawn from
+    @param deadline Timestamp after which the signed message will be invalid
+    @param v The v param of the ECDSA signature
+    @param r The r param of the ECDSA signature
+    @param s The s param of the ECDSA signature
+    */
+    function withdrawMaxOnBehalf(address from, uint deadline, uint8 v, bytes32 r, bytes32 s) public {
+        require(deadline >= block.timestamp, "DEADLINE_EXPIRED");
+        unchecked {
+            address recoveredAddress = ecrecover(
+                keccak256(
+                    abi.encodePacked(
+                        "\x19\x01",
+                        DOMAIN_SEPARATOR(),
+                        keccak256(
+                            abi.encode(
+                                keccak256(
+                                    "WithdrawMaxOnBehalf(address caller,address from,uint256 nonce,uint256 deadline)"
+                                ),
+                                msg.sender,
+                                from,
+                                nonces[from]++,
+                                deadline
+                            )
+                        )
+                    )
+                ),
+                v,
+                r,
+                s
+            );
+            require(recoveredAddress != address(0) && recoveredAddress == from, "INVALID_SIGNER");
+            withdrawInternal(from, msg.sender, getWithdrawalLimitInternal(from));
         }
     }
 
@@ -616,7 +661,9 @@ contract Market {
         debts[user] -= repaidDebt;
         totalDebt -= repaidDebt;
         dbr.onRepay(user, repaidDebt);
-        borrowController.onRepay(repaidDebt);
+        if(address(borrowController) != address(0)){
+            borrowController.onRepay(repaidDebt);
+        }
         dola.transferFrom(msg.sender, address(this), repaidDebt);
         IEscrow escrow = predictEscrow(user);
         escrow.pay(msg.sender, liquidatorReward);

@@ -1,0 +1,28 @@
+{
+  "component": "ExchangeProxy",
+  "main_contract": "ExchangeProxy",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ExchangeProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x67316300f17f063085ca8bca4bd3f7a5a3c66275",
+      "is_proxy": true,
+      "implementation_address": "0x9a470d789bcd392ae4c8f22db8425b5ef139906c",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

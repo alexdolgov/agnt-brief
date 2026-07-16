@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-// Last deployed from commit: 4f2c172091bce3fa281c2815ee20fbd1fa42b766;
+// Last deployed from commit: ;
 pragma solidity 0.8.17;
 
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
@@ -36,13 +36,6 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
         AssetPrice[] debtAssetsPrices;
         AssetPrice[] stakedPositionsPrices;
         AssetPrice[] assetsToRepayPrices;
-    }
-
-    struct PriceInfo {
-        address tokenX;
-        address tokenY;
-        uint256 priceX;
-        uint256 priceY;
     }
 
     /**
@@ -217,16 +210,16 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
         AssetPrice[] memory assetsToRepayPrices = new AssetPrice[](assetsToRepay.length);
         for(uint i=0; i<assetsToRepay.length; i++){
             assetsToRepayPrices[i] = AssetPrice({
-                asset: allAssetsSymbols[i+offset],
-                price: allAssetsPrices[i+offset]
+            asset: allAssetsSymbols[i+offset],
+            price: allAssetsPrices[i+offset]
             });
         }
 
         result = CachedPrices({
-            ownedAssetsPrices: ownedAssetsPrices,
-            debtAssetsPrices: debtAssetsPrices,
-            stakedPositionsPrices: stakedPositionsPrices,
-            assetsToRepayPrices: assetsToRepayPrices
+        ownedAssetsPrices: ownedAssetsPrices,
+        debtAssetsPrices: debtAssetsPrices,
+        stakedPositionsPrices: stakedPositionsPrices,
+        assetsToRepayPrices: assetsToRepayPrices
         });
     }
 
@@ -467,7 +460,7 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
 
         ITraderJoeV2Facet.TraderJoeV2Bin[] memory ownedTraderJoeV2Bins = DiamondStorageLib.getTjV2OwnedBinsView();
 
-        PriceInfo memory priceInfo;
+        uint256[] memory prices = new uint256[](2);
 
         if (ownedTraderJoeV2Bins.length > 0) {
             for (uint256 i; i < ownedTraderJoeV2Bins.length; i++) {
@@ -477,19 +470,12 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
                 uint256 liquidity;
 
                 {
-                    address tokenXAddress = address(binInfo.pair.getTokenX());
-                    address tokenYAddress = address(binInfo.pair.getTokenY());
+                    bytes32[] memory symbols = new bytes32[](2);
 
-                    if (priceInfo.tokenX != tokenXAddress || priceInfo.tokenY != tokenYAddress) {
-                        bytes32[] memory symbols = new bytes32[](2);
+                    symbols[0] = DeploymentConstants.getTokenManager().tokenAddressToSymbol(address(binInfo.pair.getTokenX()));
+                    symbols[1] = DeploymentConstants.getTokenManager().tokenAddressToSymbol(address(binInfo.pair.getTokenY()));
 
-
-                        symbols[0] = DeploymentConstants.getTokenManager().tokenAddressToSymbol(tokenXAddress);
-                        symbols[1] = DeploymentConstants.getTokenManager().tokenAddressToSymbol(tokenYAddress);
-
-                        uint256[] memory prices = getOracleNumericValuesFromTxMsg(symbols);
-                        priceInfo = PriceInfo(tokenXAddress, tokenYAddress, prices[0], prices[1]);
-                    }
+                    prices = getOracleNumericValuesFromTxMsg(symbols);
                 }
 
                 {
@@ -497,7 +483,9 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
 
                     price = PriceHelper.convert128x128PriceToDecimal(binInfo.pair.getPriceFromId(binInfo.id)); // how is it denominated (what precision)?
 
-                    liquidity = price * binReserveX / 10 ** 18 + binReserveY;
+                    liquidity = price * binReserveX
+                        / 10 ** IERC20Metadata(address(binInfo.pair.getTokenX())).decimals()
+                        + binReserveY;
                 }
 
 
@@ -507,20 +495,16 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
 
                     total = total +
                     Math.min(
-                        price > 10**24 ?
-                            debtCoverageX * liquidity / (price / 10 ** 18) / 10 ** IERC20Metadata(address(binInfo.pair.getTokenX())).decimals() * priceInfo.priceX / 10 ** 8
-                            :
-                            debtCoverageX * liquidity / price * 10**18 / 10 ** IERC20Metadata(address(binInfo.pair.getTokenX())).decimals() * priceInfo.priceX / 10 ** 8,
-                        debtCoverageY * liquidity / 10**(IERC20Metadata(address(binInfo.pair.getTokenY())).decimals()) * priceInfo.priceY / 10 ** 8
+                        debtCoverageX * liquidity * prices[0] / (price * 10 ** 8),
+                        debtCoverageY * liquidity / 10 ** IERC20Metadata(address(binInfo.pair.getTokenY())).decimals() * prices[1] / 10 ** 8
                     )
-                    .mulDivRoundDown(binInfo.pair.balanceOf(address(this), binInfo.id), 1e18)
-                    .mulDivRoundDown(1e18, binInfo.pair.totalSupply(binInfo.id));
+                    * binInfo.pair.balanceOf(address(this), binInfo.id) / binInfo.pair.totalSupply(binInfo.id);
                 }
             }
 
             return total;
         } else {
-            return 0;
+        return 0;
         }
     }
 
@@ -541,11 +525,11 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
 
             for (uint256 i; i < ownedUniswapV3TokenIds.length; i++) {
 
-                IUniswapV3Facet.UniswapV3Position memory position = getUniswapV3Position(INonfungiblePositionManager(0x655C406EBFa14EE2006250925e54ec43AD184f8B), ownedUniswapV3TokenIds[i]);
+            IUniswapV3Facet.UniswapV3Position memory position = getUniswapV3Position(INonfungiblePositionManager(0x655C406EBFa14EE2006250925e54ec43AD184f8B), ownedUniswapV3TokenIds[0]);
 
-                uint256[] memory prices = new uint256[](2);
+            uint256[] memory prices = new uint256[](2);
 
-                {
+            {
                     bytes32[] memory symbols = new bytes32[](2);
 
                     symbols[0] = DeploymentConstants.getTokenManager().tokenAddressToSymbol(position.token0);
@@ -554,6 +538,7 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
                     prices = getOracleNumericValuesFromTxMsg(symbols);
                 }
 
+                //TODO: check if this approach is not too harsh for Market Maker (Prime Account)
                 {
                     uint256 debtCoverage0 = weighted ? DeploymentConstants.getTokenManager().debtCoverage(position.token0) : 1e18;
                     uint256 debtCoverage1 = weighted ? DeploymentConstants.getTokenManager().debtCoverage(position.token1) : 1e18;
@@ -561,24 +546,21 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
                     uint160 sqrtPriceX96_a = TickMath.getSqrtRatioAtTick(position.tickLower);
                     uint160 sqrtPriceX96_b = TickMath.getSqrtRatioAtTick(position.tickUpper);
 
-                    uint256 sqrtPrice_a = UniswapV3IntegrationHelper.sqrtPriceX96ToSqrtUint(sqrtPriceX96_a, IERC20Metadata(position.token0).decimals());
-                    uint256 sqrtPrice_b = UniswapV3IntegrationHelper.sqrtPriceX96ToSqrtUint(sqrtPriceX96_b, IERC20Metadata(position.token0).decimals());
+                    uint256 sqrtPrice_a = UniswapV3IntegrationHelper.sqrtPriceX96ToUint(sqrtPriceX96_a, IERC20Metadata(position.token0).decimals());
+                    uint256 sqrtPrice_b = UniswapV3IntegrationHelper.sqrtPriceX96ToUint(sqrtPriceX96_b, IERC20Metadata(position.token0).decimals());
 
-                    uint256 sqrtMarketPrice = UniswapV3IntegrationHelper.sqrt(prices[0] * 1e18 / prices[1] * 10 ** IERC20Metadata(position.token1).decimals());
+                    total = total +
 
-                    uint256 positionWorth;
+                    //TODO: there is an assumption here that the position value is the lowest at edges (x = 0 or y = 0). Need to confirm that!
 
-                    if (sqrtMarketPrice < sqrtPrice_a) {
-                        positionWorth = debtCoverage0 * position.liquidity / 1e18 * (1e36 / sqrtPrice_a - 1e36 / sqrtPrice_b) / 10 ** IERC20Metadata(position.token0).decimals() * prices[0] / 10 ** 8;
-                    } else if (sqrtMarketPrice < sqrtPrice_b) {
-                        positionWorth =
-                        position.liquidity * (debtCoverage0 * (sqrtPrice_b - sqrtMarketPrice) * 10 ** IERC20Metadata(position.token0).decimals() / (sqrtMarketPrice * sqrtPrice_b) * prices[0] / 10 ** 8
-                            + debtCoverage1 * (sqrtMarketPrice - sqrtPrice_a) / 10 ** IERC20Metadata(position.token1).decimals() * prices[1] / 10 ** 8) / 10**18;
-                    } else {
-                        positionWorth = debtCoverage1 * position.liquidity / 1e18 * (sqrtPrice_b - sqrtPrice_a) / 10 ** IERC20Metadata(position.token1).decimals() * prices[1] / 10 ** 8;
-                    }
+                    //TODO: tickerUpper = p_b, tickerLower = p_a, first check if that's correct, secondly check what's the denomination and accuracy of these numbers
+                    //TODO: check for possible under/overflowsL557
 
-                    total = total + positionWorth;
+
+                    Math.min(
+                        debtCoverage0 * position.liquidity / 1e18 * (1e36 / sqrtPrice_a - 1e36 / sqrtPrice_b) / 10 ** IERC20Metadata(position.token0).decimals() * prices[0] / 10 ** 8,
+                        debtCoverage1 * position.liquidity / 1e18 * (sqrtPrice_b - sqrtPrice_a) / 10 ** IERC20Metadata(position.token1).decimals() * prices[1] / 10 ** 8
+                    );
                 }
             }
 
@@ -642,7 +624,7 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
      * Returns the current value of Prime Account in USD including all tokens as well as staking and LP positions
      * Uses provided AssetPrice struct arrays instead of extracting the pricing data from the calldata again.
     **/
-    function getTotalValueWithPrices(AssetPrice[] memory ownedAssetsPrices, AssetPrice[] memory stakedPositionsPrices) public view virtual returns (uint256) {
+    function getTotalValueWithPrices(AssetPrice[] memory ownedAssetsPrices, AssetPrice[] memory assetsPrices, AssetPrice[] memory stakedPositionsPrices) public view virtual returns (uint256) {
         return getTotalAssetsValueWithPrices(ownedAssetsPrices) + getStakedValueWithPrices(stakedPositionsPrices) + getTotalTraderJoeV2WithPrices() + getTotalUniswapV3WithPrices();
     }
 
@@ -658,11 +640,11 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
     function getHealthRatio() public view virtual returns (uint256) {
         CachedPrices memory cachedPrices = getAllPricesForLiquidation(new bytes32[](0));
         uint256 debt = getDebtWithPrices(cachedPrices.debtAssetsPrices);
+        uint256 thresholdWeightedValue = getThresholdWeightedValueWithPrices(cachedPrices.ownedAssetsPrices, cachedPrices.stakedPositionsPrices);
 
         if (debt == 0) {
             return type(uint256).max;
         } else {
-            uint256 thresholdWeightedValue = getThresholdWeightedValueWithPrices(cachedPrices.ownedAssetsPrices, cachedPrices.stakedPositionsPrices);
             return thresholdWeightedValue * 1e18 / debt;
         }
     }
@@ -674,11 +656,11 @@ contract SolvencyFacetProdAvalanche is AvalancheDataServiceConsumerBase, Diamond
      **/
     function getHealthRatioWithPrices(CachedPrices memory cachedPrices) public view virtual returns (uint256) {
         uint256 debt = getDebtWithPrices(cachedPrices.debtAssetsPrices);
+        uint256 thresholdWeightedValue = getThresholdWeightedValueWithPrices(cachedPrices.ownedAssetsPrices, cachedPrices.stakedPositionsPrices);
 
         if (debt == 0) {
             return type(uint256).max;
         } else {
-            uint256 thresholdWeightedValue = getThresholdWeightedValueWithPrices(cachedPrices.ownedAssetsPrices, cachedPrices.stakedPositionsPrices);
             return thresholdWeightedValue * 1e18 / debt;
         }
     }

@@ -1,0 +1,28 @@
+{
+  "component": "MultiStablesVault",
+  "main_contract": "MultiStablesVault",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MultiStablesVault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x55bf8304c78ba6fe47fd251f37d7beb485f86d26",
+      "is_proxy": true,
+      "implementation_address": "0xddd7df28b1fb668b77860b473af819b03db61101",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

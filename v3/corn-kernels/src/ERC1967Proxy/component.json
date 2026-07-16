@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/ERC1967Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://github.com/usecorn/audits/blob/main/bitcorn/cantina-bitcorn-oft-3.pdf"
@@ -25,6 +25,16 @@
       "liveness": "unknown",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "402710"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x554335b8c994e47e6dbfdc08fa8aca0510e66ba1",
+      "is_proxy": true,
+      "implementation_address": "0x49539d769ee308fbf8a143b7c621e25e3bfaeaf3",
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402715"
     }
   ]
 }

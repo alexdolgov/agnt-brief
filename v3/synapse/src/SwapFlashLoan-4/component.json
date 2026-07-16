@@ -15,24 +15,24 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x9dd329f5411466d9e0c488ff72519ca9fef0cb40",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe27bff97ce92c3e1ff7aa9f86781fdd6d48f5ee9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "400132"
+      "logic_topography_row_id": "400096"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xa067668661c84476afcdc6fa5d758c4c01c34352",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf44938b0125a6662f9536281ad2cd6c499f22004",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "400133"
+      "logic_topography_row_id": "400098"
     }
   ]
 }

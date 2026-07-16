@@ -870,8 +870,8 @@ contract RewardRouterV4 is ReentrancyGuard, Governable {
     }
 
     /**
-     * @notice To help users who accidentally send their tokens to this contract.
-     * @dev Allows governance to withdraw tokens sent to this contract.
+     * @notice Allows governance to withdraw tokens sent to this contract.
+     * Example: To help users who accidentally send their tokens to this contract
      * @param _token The address of the token to withdraw.
      * @param _account The address to send the token to.
      * @param _amount The amount of tokens to withdraw.

@@ -1,7 +1,72 @@
 # hyperlane — deployments
 
-1 verified deployment(s) across 1 component(s).
+66 verified deployment(s) across 65 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| linea | `0x02d16bc51af6bfd153d67ca61754cf912e82c4d9` | TransparentUpgradeableProxy | proxy | live | no |
+| arbitrum | `0x00acc2c04ef207a90425b0602234a760f25da583` | DomainRoutingHook | impl | unknown | no |
+| arbitrum | `0x02d16bc51af6bfd153d67ca61754cf912e82c4d9` | UpgradeBeaconProxy-2 | proxy | unknown | no |
+| arbitrum | `0x03b2607ef8fd4ebc989115a0230fe7c7ea03c5af` | StorageGasOracle | impl | unknown | no |
+| arbitrum | `0x0761b0827849abbf7b0cc09ce14e1c93d87f5004` | Outbox | proxy | unknown | no |
+| arbitrum | `0x32b92bd3e5045b67fdd8dbb7a58d25980836d04c` | MultisigIsm | impl | unknown | no |
+| avalanche | `0x00e4017ec6177184f10f1727f6f5dee47c6c11ea` | PausableIsm | impl | unknown | no |
+| avalanche | `0x070d4f61b05ed9e20c9194f29df073f2110705fc` | StaticAggregationIsmFactory | impl | unknown | no |
+| avalanche | `0x0bff79f395a73817df1d3c80d78bb3c57fbbc2ed` | CircleBridgeAdapter | impl | unknown | no |
+| base | `0x0071740bf129b05c4684abfbbed248d80971cce2` | TestRecipient | impl | unknown | no |
+| base | `0x01348f639d6e418a5a9673c08c0ddf6eccb80f37` | InterchainAccountRouter | proxy | unknown | no |
+| base | `0x01bfbc80b32469c36db4c7fc564e75475dfc278c` | TokenBridgeCctpV2 | impl | unknown | no |
+| base | `0x01e92de2e9c1fee3377eed4fac05ddacb4f6c0fd` | FallbackDomainRoutingHook | impl | unknown | no |
+| base | `0x02e058b48d6883a23a3f21f3d3e7fcb345c51260` | EverclearEthBridge | impl | unknown | no |
+| base | `0x04c0ad606e14eaa099bb75fa1aad5f96afce1eeb` | MerkleDistributorWithDeadline | impl | unknown | no |
+| base | `0x05318b5dba51490abe60bb6c29a8169a1a2546da` | PausableHook | impl | unknown | no |
+| base | `0x0cde890ec71d8c37485c91c3bf0cea647e26253b` | TrustedRelayerIsm | impl | unknown | no |
+| base | `0x0e389a95ba8717a2dd38b85c4c29753d98b46659` | CCIPIsm | impl | unknown | no |
+| base | `0x17736d5b4f57ecb6c6dba278873179961240f78d` | StaticMessageIdWeightedMultisigIsmFactory | impl | unknown | no |
+| base | `0x339b234fdba8c5c77c43aa01a6ad38071b7984f1` | HyperlaneTribunal | impl | unknown | no |
+| bsc | `0x0007b3c5765c2e8a115e07607ab9fa2852ab0627` | ProxyAdmin | impl | unknown | no |
+| bsc | `0x02d16bc51af6bfd153d67ca61754cf912e82c4d9` | UpgradeBeaconController | impl | unknown | no |
+| bsc | `0x04b833d386e56ca0b899c1948e091bf0aff1a1dc` | HypERC4626 | impl | unknown | no |
+| bsc | `0x0d63128d887159d63de29497dfa45afc7c699ae4` | UpgradeBeacon | impl | unknown | no |
+| chain-1088 | `0x062200d92df6bb7ba89ce4d6800110450f94784e` | ValidatorAnnounce | impl | unknown | no |
+| chain-1329 | `0x018ee58c3668e5971e0f6e0ec7f693a3d1b39beb` | TransparentUpgradeableProxy | proxy | unknown | no |
+| chain-169 | `0x0761b0827849abbf7b0cc09ce14e1c93d87f5004` | StaticAggregationHookFactory | impl | unknown | no |
+| chain-169 | `0x0a5d831c09204888b8791bf4e9c49445ad54f2c5` | StaticMerkleRootWeightedMultisigIsmFactory | impl | unknown | no |
+| chain-169 | `0x0d63128d887159d63de29497dfa45afc7c699ae4` | DistributionPoolProxy | impl | unknown | no |
+| chain-252 | `0x005c5b1fe75c66363d1d12cd283d80f60d31a5bc` | HypXERC20 | impl | unknown | no |
+| chain-42220 | `0x00acc2c04ef207a90425b0602234a760f25da583` | CCIPHook | impl | unknown | no |
+| chain-42220 | `0x10ed03431193b04b3fa7c3e1f47bf853466aa053` | HypXERC20Lockbox | impl | unknown | no |
+| chain-42220 | `0x1ab68dc4f7b6cfcd00218d4b761b7f3b5a724555` | OutboxValidatorManager | impl | unknown | no |
+| chain-42220 | `0x426d6a6e1b55c0b6a83abd8ca5bee29357132b7d` | HypERC721URIStorage | impl | unknown | no |
+| ethereum | `0x00cff6a1e5450746158b8349bb99fa4803cbb476` | DefaultFallbackRoutingIsm | impl | unknown | no |
+| ethereum | `0x088470910056221862d18ff2e65ffaec96ec6da4` | HyperlaneArbiter | impl | unknown | no |
+| ethereum | `0x0a4e396843d7c0f05dd370603bd0a7c0269386bf` | MerkleDistributor | impl | unknown | no |
+| ethereum | `0x113d00bab9efe06d61803837f07881a10a9fb189` | StaticMessageIdMultisigIsmFactory | impl | unknown | no |
+| ethereum | `0x271f31773706f06328aa75fa721acd811ded3858` | XERC20Lockbox | impl | unknown | no |
+| ethereum | `0x272cf0bb70d3b4f79414e0823b426d2eafd48910` | ECDSAStakeRegistry | proxy | unknown | no |
+| ethereum | `0x296af86bff91b23cf980f6a443bc15a3a5d30682` | HyperlaneServiceManager | impl | unknown | no |
+| ethereum | `0x36d2246e2299b3c50bb1fd9ba996e0c4135bd0c1` | HypMinter | impl | unknown | no |
+| ethereum | `0x3d92e7d3a9aca6dc2e72399d88d4e131be5cd4de` | Network | impl | unknown | no |
+| ethereum | `0x4ff0fca64a89b5d8a26b6da6011fe5a8b9ba4f62` | HypERC721URICollateral | impl | unknown | no |
+| ethereum | `0x75fe1c9cf9cd1f49bd655f4a173fe5ca7c22d8e1` | LiquidityLayerRouter | proxy | unknown | no |
+| ethereum | `0x7ea7ae459a2d07711716080a1e42b8069f9d48fe` | HyperToken | impl | unknown | no |
+| ethereum | `0x8b05bf30f6247a90006c5837ea63c7905d79e6d8` | StaticProtocolFee | impl | unknown | no |
+| gnosis | `0x00ecd1e858c9809df78f0843697265d93d927eaf` | HelloWorld | impl | unknown | no |
+| linea | `0x02d16bc51af6bfd153d67ca61754cf912e82c4d9` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| mode | `0x003fdf558a2166508911ba11f74d0c55c5c1147e` | HypERC20 | impl | unknown | no |
+| mode | `0x004640d86f894df0147c21f107318138bb214bd3` | DefaultHook | impl | unknown | no |
+| mode | `0x005c5b1fe75c66363d1d12cd283d80f60d31a5bc` | MerkleTreeHook | impl | unknown | no |
+| mode | `0x08b446e5915519eda9aa0a19e4480b75de9f5dee` | AmountRoutingHook | impl | unknown | no |
+| optimism | `0x004879ead3c39fab28d396319932acd657c7f867` | TokenBridgeCctp | proxy | unknown | no |
+| optimism | `0x016529e4b4fbc33a742834bbb478e897afa3c4a9` | AmountRoutingIsm | impl | unknown | no |
+| optimism | `0x01d89d803396e5085497bf337c15f8c89801471a` | LinearFee | impl | unknown | no |
+| optimism | `0x02d16bc51af6bfd153d67ca61754cf912e82c4d9` | UpgradeBeaconProxy | impl | unknown | no |
+| optimism | `0x0389facac114023c123e22f3e54394944cabcb48` | InterchainAccountIsm | impl | unknown | no |
+| optimism | `0x03d6cc17d45e9ea27ed757a8214d1f07f7d901ad` | InterchainAccountRouter | proxy | unknown | no |
+| optimism | `0x05a6740f4adbf55adb307868941e7a93700ddba0` | HypNative | impl | unknown | no |
+| optimism | `0x07e437d73e9e43ceece6ea14085b26159e3f7f31` | ManagedXERC20Lockbox | impl | unknown | no |
+| optimism | `0x17736d5b4f57ecb6c6dba278873179961240f78d` | StagingToken | impl | unknown | no |
+| optimism | `0x21581de0cb0ce91e87b9d5124543c75fa01ed9cc` | StaticMultisigIsmFactory | impl | unknown | no |
+| optimism | `0xa24205d80a273927a1a3e1c12aa5de9f91239a01` | RoutingFee | impl | unknown | no |
+| polygon | `0x02d16bc51af6bfd153d67ca61754cf912e82c4d9` | AbacusConnectionManager | impl | unknown | no |
+| polygon | `0x086ef95a2f74582ee30e7d698518a872fb18301f` | InboxValidatorManager | impl | unknown | no |
+| polygon | `0x0b48a744698ba8dfa514742dfeb6728f52fd66f7` | DomainRoutingIsmFactory | impl | unknown | no |

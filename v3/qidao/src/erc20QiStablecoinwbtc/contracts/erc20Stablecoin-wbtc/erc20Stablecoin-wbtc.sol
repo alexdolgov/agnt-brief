@@ -281,8 +281,6 @@ contract erc20Stablecoinwbtc is ReentrancyGuard, VaultNFTv3 {
         }
         (uint256 collateralValueTimes100, uint256 debtValue) = calculateCollateralProperties(vaultCollateral[vaultID], vaultDebt[vaultID]);
 
-        collateralValueTimes100 = collateralValueTimes100.mul(10 ** 10);
-
         return collateralValueTimes100.div(debtValue);
     }
 
@@ -294,8 +292,6 @@ contract erc20Stablecoinwbtc is ReentrancyGuard, VaultNFTv3 {
         }
 
         (uint256 collateralValueTimes100, uint256 debtValue) = calculateCollateralProperties(vaultCollateral[vaultID], vaultDebt[vaultID]);
-
-        collateralValueTimes100 = collateralValueTimes100.mul(10 ** 10);
 
         uint256 collateralPercentage = collateralValueTimes100.div(debtValue);
 
@@ -311,8 +307,6 @@ contract erc20Stablecoinwbtc is ReentrancyGuard, VaultNFTv3 {
         require(stabilityPool==address(0) || msg.sender ==  stabilityPool, "liquidation is disabled for public");
 
         (uint256 collateralValueTimes100, uint256 debtValue) = calculateCollateralProperties(vaultCollateral[vaultID], vaultDebt[vaultID]);
-        
-        collateralValueTimes100 = collateralValueTimes100.mul(10 ** 10);
 
         uint256 collateralPercentage = collateralValueTimes100.div(debtValue);
 

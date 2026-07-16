@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity =0.8.14;
+pragma solidity 0.6.12;
 
 interface IVaultV2 {
     function want() external view returns (address);

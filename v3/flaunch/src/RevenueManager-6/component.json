@@ -1,0 +1,28 @@
+{
+  "component": "RevenueManager-6",
+  "main_contract": "RevenueManager",
+  "source_entry_count": 102,
+  "source_file_count": 102,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RevenueManager-6\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc8d4b2ca8ed6868ee768beab1f932d7eeccc1b50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

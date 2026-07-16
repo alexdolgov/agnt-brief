@@ -1,0 +1,28 @@
+{
+  "component": "House",
+  "main_contract": "House",
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/House\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x37cee1dbaa55aa056ba20b54df3fa3957cc09e6c",
+      "is_proxy": true,
+      "implementation_address": "0xc899d5aa4d3d7f4a6b57cef21d7a571f57b82af6",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

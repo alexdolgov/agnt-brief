@@ -1,0 +1,28 @@
+{
+  "component": "EpochRewardsProxy",
+  "main_contract": "EpochRewardsProxy",
+  "source_entry_count": 5,
+  "source_file_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EpochRewardsProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x07f007d389883622ef8d4d347b3f78007f28d8b7",
+      "is_proxy": true,
+      "implementation_address": "0x33285cab4df24f37899dc14f324530661c63464b",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

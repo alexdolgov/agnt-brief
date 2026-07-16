@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity =0.8.14;
+pragma solidity 0.6.12;
 
 /*
 
@@ -35,18 +35,23 @@ pragma solidity =0.8.14;
 * SOFTWARE.
 */
 
-import "./WooSuperChargerVault.sol";
-import "../interfaces/IWETH.sol";
-import "../interfaces/IWooAccessManager.sol";
-import "../interfaces/IWooPPV2.sol";
+import '@openzeppelin/contracts/access/Ownable.sol';
+import '@openzeppelin/contracts/math/SafeMath.sol';
+import '@openzeppelin/contracts/token/ERC20/IERC20.sol';
+import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
+import '@openzeppelin/contracts/token/ERC20/SafeERC20.sol';
+import '@openzeppelin/contracts/utils/Pausable.sol';
+import '@openzeppelin/contracts/utils/ReentrancyGuard.sol';
+import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
 
-import "../libraries/TransferHelper.sol";
-
-import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
-import {ReentrancyGuard} from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
-import {IERC20, SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import './WooSuperChargerVault.sol';
+import '../interfaces/IWETH.sol';
+import '../interfaces/IWooAccessManager.sol';
 
 contract WooLendingManager is Ownable, ReentrancyGuard {
+    using SafeMath for uint256;
+    using SafeERC20 for IERC20;
+
     event Borrow(address indexed user, uint256 assets);
     event Repay(address indexed user, uint256 assets, uint256 perfFee);
     event InterestRateUpdated(address indexed user, uint256 oldInterest, uint256 newInterest);
@@ -70,7 +75,7 @@ contract WooLendingManager is Ownable, ReentrancyGuard {
 
     address constant ETH_PLACEHOLDER_ADDR = 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE;
 
-    constructor() {}
+    constructor() public {}
 
     function init(
         address _weth,
@@ -91,18 +96,18 @@ contract WooLendingManager is Ownable, ReentrancyGuard {
     modifier onlyAdmin() {
         require(
             owner() == msg.sender || IWooAccessManager(accessManager).isVaultAdmin(msg.sender),
-            "WooLendingManager: !ADMIN"
+            'WooLendingManager: !ADMIN'
         );
         _;
     }
 
     modifier onlyBorrower() {
-        require(isBorrower[msg.sender], "WooLendingManager: !borrower");
+        require(isBorrower[msg.sender], 'WooLendingManager: !borrower');
         _;
     }
 
     modifier onlySuperChargerVault() {
-        require(msg.sender == address(superChargerVault), "WooLendingManager: !superChargerVault");
+        require(msg.sender == address(superChargerVault), 'WooLendingManager: !superChargerVault');
         _;
     }
 
@@ -124,12 +129,12 @@ contract WooLendingManager is Ownable, ReentrancyGuard {
     }
 
     function debt() public view returns (uint256 assets) {
-        return borrowedPrincipal + borrowedInterest;
+        return borrowedPrincipal.add(borrowedInterest);
     }
 
     function debtAfterPerfFee() public view returns (uint256 assets) {
-        uint256 perfFee = (borrowedInterest * perfRate) / 10000;
-        return borrowedPrincipal + borrowedInterest - perfFee;
+        uint256 perfFee = borrowedInterest.mul(perfRate).div(10000);
+        return borrowedPrincipal.add(borrowedInterest).sub(perfFee);
     }
 
     function borrowState()
@@ -156,18 +161,18 @@ contract WooLendingManager is Ownable, ReentrancyGuard {
             return;
         }
 
-        uint256 duration = currentTs - lastAccuredTs;
+        uint256 duration = currentTs.sub(lastAccuredTs);
 
         // interestRate is in 10000th.
         // 31536000 = 365 * 24 * 3600 (1 year of seconds)
-        uint256 interest = (borrowedPrincipal * interestRate * duration) / 31536000 / 10000;
+        uint256 interest = borrowedPrincipal.mul(interestRate).mul(duration).div(31536000).div(10000);
 
-        borrowedInterest = borrowedInterest + interest;
+        borrowedInterest = borrowedInterest.add(interest);
         lastAccuredTs = currentTs;
     }
 
     function setInterestRate(uint256 _rate) external onlyAdmin {
-        require(_rate <= 50000, "RATE_INVALID"); // NOTE: rate < 500%
+        require(_rate <= 50000, 'RATE_INVALID'); // NOTE: rate < 500%
         accureInterest();
         uint256 oldInterest = interestRate;
         interestRate = _rate;
@@ -175,7 +180,7 @@ contract WooLendingManager is Ownable, ReentrancyGuard {
     }
 
     function setTreasury(address _treasury) external onlyAdmin {
-        require(_treasury != address(0), "WooLendingManager: !_treasury");
+        require(_treasury != address(0), 'WooLendingManager: !_treasury');
         treasury = _treasury;
     }
 
@@ -183,21 +188,19 @@ contract WooLendingManager is Ownable, ReentrancyGuard {
         return superChargerVault.maxBorrowableAmount();
     }
 
-    /// @dev Borrow the fund from super charger and then deposit directly into WooPP.
-    /// @param amount the borrowing amount
     function borrow(uint256 amount) external onlyBorrower {
-        require(amount > 0, "!AMOUNT");
+        require(amount > 0, '!AMOUNT');
 
         accureInterest();
-        borrowedPrincipal = borrowedPrincipal + amount;
+        borrowedPrincipal = borrowedPrincipal.add(amount);
 
-        uint256 preBalance = IERC20(want).balanceOf(address(this));
-        superChargerVault.borrowFromLendingManager(amount, address(this));
-        uint256 afterBalance = IERC20(want).balanceOf(address(this));
-        require(afterBalance - preBalance == amount, "WooLendingManager: BORROW_AMOUNT_ERROR");
+        uint256 preBalance = IERC20(want).balanceOf(wooPP);
 
-        TransferHelper.safeApprove(want, wooPP, amount);
-        IWooPPV2(wooPP).deposit(want, amount);
+        // NOTE: this method settles the fund and sends it to the wooPP address.
+        superChargerVault.borrowFromLendingManager(amount, wooPP);
+
+        uint256 afterBalance = IERC20(want).balanceOf(wooPP);
+        require(afterBalance.sub(preBalance) == amount, 'WooLendingManager: BORROW_AMOUNT_ERROR');
 
         emit Borrow(msg.sender, amount);
     }
@@ -210,11 +213,13 @@ contract WooLendingManager is Ownable, ReentrancyGuard {
             return 0;
         }
         if (neededAmount <= borrowedInterest) {
-            repayAmount = (neededAmount * 10000) / (uint256(10000) - perfRate);
+            repayAmount = neededAmount.mul(10000).div(uint256(10000).sub(perfRate));
         } else {
-            repayAmount = neededAmount - borrowedInterest + ((borrowedInterest * 10000) / (uint256(10000) - perfRate));
+            repayAmount = neededAmount.sub(borrowedInterest).add(
+                borrowedInterest.mul(10000).div(uint256(10000).sub(perfRate))
+            );
         }
-        repayAmount = repayAmount + 1;
+        repayAmount = repayAmount.add(1);
     }
 
     function weeklyRepaymentBreakdown()
@@ -232,16 +237,18 @@ contract WooLendingManager is Ownable, ReentrancyGuard {
             return (0, 0, 0, 0);
         }
         if (neededAmount <= borrowedInterest) {
-            repayAmount = (neededAmount * 10000) / (uint256(10000) - perfRate);
+            repayAmount = neededAmount.mul(10000).div(uint256(10000).sub(perfRate));
             principal = 0;
             interest = neededAmount;
         } else {
-            repayAmount = neededAmount - borrowedInterest + ((borrowedInterest * 10000) / (uint256(10000) - perfRate));
-            principal = neededAmount - borrowedInterest;
+            repayAmount = neededAmount.sub(borrowedInterest).add(
+                borrowedInterest.mul(10000).div(uint256(10000).sub(perfRate))
+            );
+            principal = neededAmount.sub(borrowedInterest);
             interest = borrowedInterest;
         }
-        repayAmount = repayAmount + 1;
-        perfFee = repayAmount - neededAmount;
+        repayAmount = repayAmount.add(1);
+        perfFee = repayAmount.sub(neededAmount);
     }
 
     function repayWeekly() external onlyBorrower returns (uint256 repaidAmount) {
@@ -275,21 +282,21 @@ contract WooLendingManager is Ownable, ReentrancyGuard {
 
         uint256 perfFee;
         if (borrowedInterest >= amount) {
-            borrowedInterest = borrowedInterest - amount;
-            perfFee = (amount * perfRate) / 10000;
+            borrowedInterest = borrowedInterest.sub(amount);
+            perfFee = amount.mul(perfRate).div(10000);
         } else {
-            perfFee = (borrowedInterest * perfRate) / 10000;
-            borrowedPrincipal = borrowedPrincipal - (amount - borrowedInterest);
+            perfFee = borrowedInterest.mul(perfRate).div(10000);
+            borrowedPrincipal = borrowedPrincipal.sub(amount.sub(borrowedInterest));
             borrowedInterest = 0;
         }
         TransferHelper.safeTransfer(want, treasury, perfFee);
-        uint256 amountRepaid = amount - perfFee;
+        uint256 amountRepaid = amount.sub(perfFee);
 
         TransferHelper.safeApprove(want, address(superChargerVault), amountRepaid);
         uint256 beforeBalance = IERC20(want).balanceOf(address(this));
         superChargerVault.repayFromLendingManager(amountRepaid);
         uint256 afterBalance = IERC20(want).balanceOf(address(this));
-        require(beforeBalance - afterBalance == amountRepaid, "WooLendingManager: REPAY_AMOUNT_ERROR");
+        require(beforeBalance.sub(afterBalance) == amountRepaid, 'WooLendingManager: REPAY_AMOUNT_ERROR');
 
         emit Repay(msg.sender, amount, perfFee);
     }

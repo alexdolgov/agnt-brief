@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: BUSL-1.1
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.28;
 
 import {PERCENTAGE_100, PERCENTAGE_FACTOR, Percentage, toPercentage} from "./Percentage.sol";

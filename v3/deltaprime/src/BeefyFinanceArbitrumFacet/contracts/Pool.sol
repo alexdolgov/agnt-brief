@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-// Last deployed from commit: d7393e77677f3d42a46dce346d75a831a380100e;
+// Last deployed from commit: 6094467959b5f026a0b2395f84a97536afb77aab;
 pragma solidity 0.8.17;
 
 import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
@@ -288,9 +288,10 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
      * @dev _amount the amount to be withdrawn
      **/
     function withdraw(uint256 _amount) external nonReentrant {
-        if(_amount > IERC20(tokenAddress).balanceOf(address(this))) revert InsufficientPoolFunds();
-
         _accumulateDepositInterest(msg.sender);
+        _amount = Math.min(_amount, _deposited[msg.sender]);
+
+        if(_amount > IERC20(tokenAddress).balanceOf(address(this))) revert InsufficientPoolFunds();
 
         if(_amount > _deposited[address(this)]) revert BurnAmountExceedsBalance();
         // verified in "require" above
@@ -395,7 +396,7 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
 
     // Returns max. acceptable pool utilisation after borrow action
     function getMaxPoolUtilisationForBorrowing() virtual public view returns (uint256) {
-        return 0.9e18;
+        return 0.925e18;
     }
 
     /**
@@ -475,7 +476,11 @@ contract Pool is OwnableUpgradeable, ReentrancyGuardUpgradeable, IERC20 {
     function _getAmounts(address account) internal view returns (uint256 lockedAmount, uint256 transferrableAmount) {
         if (address(vestingDistributor) != address(0)) {
             lockedAmount = vestingDistributor.locked(account);
-            transferrableAmount = _deposited[account] - (lockedAmount - vestingDistributor.availableToWithdraw(account));
+            if (lockedAmount > 0) {
+                transferrableAmount = _deposited[account] - (lockedAmount - vestingDistributor.availableToWithdraw(account));
+            } else {
+                transferrableAmount = _deposited[account];
+            }
         } else {
             transferrableAmount = _deposited[account];
         }

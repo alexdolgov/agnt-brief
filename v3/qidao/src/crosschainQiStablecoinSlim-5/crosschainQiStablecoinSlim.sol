@@ -1,4 +1,8 @@
-// Sources flattened with hardhat v2.9.7 https://hardhat.org
+/**
+ *Submitted for verification at Arbiscan on 2022-02-25
+*/
+
+// Sources flattened with hardhat v2.8.4 https://hardhat.org
 
 // File @openzeppelin/contracts/GSN/Context.sol@v2.5.1
 
@@ -1817,6 +1821,7 @@ contract ERC721Full is ERC721, ERC721Enumerable, ERC721Metadata {
 // File contracts/MyVaultV4.sol
 
 // contracts/MyVaultNFT.sol
+// SPDX-License-Identifier: MIT
 pragma solidity 0.5.17;
 
 contract VaultNFTv4 is ERC721Full {
@@ -1838,8 +1843,9 @@ contract VaultNFTv4 is ERC721Full {
 }
 
 
-// File hardhat/console.sol@v2.9.7
+// File hardhat/console.sol@v2.8.4
 
+// SPDX-License-Identifier: MIT
 pragma solidity >= 0.4.22 <0.9.0;
 
 library console {

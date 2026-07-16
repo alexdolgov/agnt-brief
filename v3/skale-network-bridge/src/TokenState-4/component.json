@@ -1,0 +1,119 @@
+{
+  "component": "TokenState-4",
+  "main_contract": "TokenState",
+  "source_entry_count": 28,
+  "source_file_count": 28,
+  "source_path_remaps": [
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/BountyV2.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-d2ed404248a5-BountyV2.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/ConstantsHolder.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-61ec12a5f9a8-ConstantsHolder.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/ContractManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-0022c62d2c3f-ContractManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/Nodes.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-7d67f2f3215b-Nodes.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/Permissions.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-8fb1df87debe-Permissions.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/delegation/DelegationController.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-52c3b1790d89-DelegationController.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/delegation/DelegationPeriodManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-2ea42cf058fc-DelegationPeriodManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/delegation/PartialDifferences.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-778c75af0191-PartialDifferences.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/delegation/Punisher.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-2e8496251653-Punisher.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/delegation/TimeHelpers.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-c12567c8bbfb-TimeHelpers.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/delegation/TokenLaunchLocker.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-14fc75e5fd95-TokenLaunchLocker.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/delegation/TokenState.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-cd379da57a81-TokenState.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/delegation/ValidatorService.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-a8f14261f7b2-ValidatorService.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/interfaces/delegation/ILocker.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-d960b2bd58ec-ILocker.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/thirdparty/BokkyPooBahsDateTimeLibrary.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-60d4b22bd920-BokkyPooBahsDateTimeLibrary.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/utils/FractionUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-783bcf735f6e-FractionUtils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/utils/MathUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-a750fa03edc4-MathUtils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/payvint/Documents/Blockchain/skale-manager/contracts/utils/StringUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-47e3bfe55c93-StringUtils.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TokenState-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x83df7f07565d131b0794a4957aa1dd04a4f5d976",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

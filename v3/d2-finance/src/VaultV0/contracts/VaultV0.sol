@@ -1,8 +1,10 @@
-// SPDX-License-Identifier: AGPL
-pragma solidity ^0.8.13;
+// SPDX-License-Identifier: AGPL-3.0-only
+pragma solidity 0.8.28;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
+import "@layerzerolabs/oft-evm/contracts/OFTCore.sol";
 
 import "solmate/src/tokens/ERC20.sol";
 import "solmate/src/mixins/ERC4626.sol";
@@ -10,10 +12,15 @@ import "solmate/src/utils/SafeTransferLib.sol";
 
 /**
  * @title   DSquared Investment Vault V0
+ * @notice  Deposit an ERC-20 to earn yield via managed trading
+ * @dev     Whitelisted vault variant
+ * @dev     ERC-4626 compliant
  * @dev     Does not support rebasing or transfer fee tokens.
- * @author  @BowTiedPickle
+ * @author  HessianX
+ * @custom:developer    BowTiedPickle
+ * @custom:developer    BowTiedOriole
  */
-contract VaultV0 is ERC4626, Ownable {
+contract VaultV0 is ERC4626, Ownable, OFTCore {
     using Counters for Counters.Counter;
     using SafeTransferLib for ERC20;
 
@@ -27,13 +34,26 @@ contract VaultV0 is ERC4626, Ownable {
 
     // ----- State Variables -----
 
-    uint256 public constant MAX_EPOCH_DURATION = 30 days;
+    uint256 public constant MAX_EPOCH_DURATION = 365 days;
     uint256 public constant MIN_FUNDING_DURATION = 1 days;
 
     struct Epoch {
         uint256 fundingStart;
         uint256 epochStart;
         uint256 epochEnd;
+    }
+    struct ConstructorArgs {
+        address _asset;
+        string _name;
+        string _symbol;
+        address _owner;
+        address _trader;
+        address _depositor;
+        uint256 _maxDeposits;
+        address _lzEndpoint;
+        uint80 dateDeposits;
+        uint80 dateTrading;
+        uint80 dateEnd;
     }
 
     mapping(uint256 => Epoch) public epochs;
@@ -96,24 +116,15 @@ contract VaultV0 is ERC4626, Ownable {
     }
 
     // ----- Construction -----
-
-    /**
-     * @param   _asset          Underlying asset of the vault
-     * @param   _name           Vault name
-     * @param   _symbol         Vault symbol
-     * @param   _trader         Trader address
-     * @param   _maxDeposits    Initial maximum deposits allowed
-     */
     constructor(
-        ERC20 _asset,
-        string memory _name,
-        string memory _symbol,
-        address _trader,
-        uint256 _maxDeposits
-    ) ERC4626(_asset, _name, _symbol) {
-        require(_trader != address(0), "!zeroAddr");
-        trader = _trader;
-        maxDeposits = _maxDeposits;
+      ConstructorArgs memory args
+    ) ERC4626(ERC20(args._asset), args._name, args._symbol) OFTCore(IERC20Metadata(args._asset).decimals(), args._lzEndpoint, args._owner) {
+        require(args._trader != address(0), "!zeroAddr");
+        trader = args._trader;
+        maxDeposits = args._maxDeposits;
+        setWhitelistStatus(args._depositor, true);
+        startEpoch(args.dateDeposits, args.dateTrading, args.dateEnd);
+        transferOwnership(args._owner);
     }
 
     // ----- Admin Functions -----
@@ -124,16 +135,9 @@ contract VaultV0 is ERC4626, Ownable {
      * @param   _epochStart   Start timestamp of the epoch in unix epoch seconds
      * @param   _epochEnd     End timestamp of the epoch in unix epoch seconds
      */
-    function startEpoch(
-        uint256 _fundingStart,
-        uint256 _epochStart,
-        uint256 _epochEnd
-    ) external onlyOwner notDuringEpoch {
+    function startEpoch(uint256 _fundingStart, uint256 _epochStart, uint256 _epochEnd) public onlyOwner notDuringEpoch {
         require(!started || !custodied, "!allowed");
-        require(
-            _epochEnd > _epochStart && _epochStart >= _fundingStart + MIN_FUNDING_DURATION && _fundingStart >= block.timestamp,
-            "!timing"
-        );
+        require(_epochEnd > _epochStart && _epochStart >= _fundingStart + MIN_FUNDING_DURATION, "!timing");
         require(_epochEnd <= _epochStart + MAX_EPOCH_DURATION, "!epochLen");
 
         epochId.increment();
@@ -163,7 +167,7 @@ contract VaultV0 is ERC4626, Ownable {
      * @param   _user       User address
      * @param   _status     True for whitelisted, false for blacklisted
      */
-    function setWhitelistStatus(address _user, bool _status) external onlyOwner {
+    function setWhitelistStatus(address _user, bool _status) public onlyOwner {
         _modifyWhitelist(_user, _status);
     }
 
@@ -191,7 +195,7 @@ contract VaultV0 is ERC4626, Ownable {
     /**
      * @notice  Take custody of the vault's funds for the purpose of executing trading strategies
      */
-    function custodyFunds() external onlyTrader notCustodied duringEpoch {
+    function custodyFunds() external onlyTrader notCustodied duringEpoch returns (uint256) {
         uint256 amount = totalAssets();
         require(amount > 0, "!amount");
 
@@ -200,6 +204,7 @@ contract VaultV0 is ERC4626, Ownable {
         asset.safeTransfer(trader, amount);
 
         emit FundsCustodied(epochId.current(), amount);
+        return amount;
     }
 
     /**
@@ -266,7 +271,7 @@ contract VaultV0 is ERC4626, Ownable {
      * @notice  Returns true if notCustodied and duringFunding modifiers would pass
      * @dev     Only to be used with previewDeposit and previewMint
      */
-    function notCustodiedAndDuringFunding() internal view returns (bool) {
+    function notCustodiedAndDuringFunding() public view returns (bool) {
         Epoch storage epoch = epochs[epochId.current()];
         return (!custodied && (block.timestamp >= epoch.fundingStart && block.timestamp < epoch.epochStart));
     }
@@ -275,7 +280,7 @@ contract VaultV0 is ERC4626, Ownable {
      * @notice  Returns true if notCustodied and notDuringEpoch modifiers would pass
      * @dev     Only to be used with previewRedeem and previewWithdraw
      */
-    function notCustodiedAndNotDuringEpoch() internal view returns (bool) {
+    function notCustodiedAndNotDuringEpoch() public view returns (bool) {
         Epoch storage epoch = epochs[epochId.current()];
         return (!custodied && (block.timestamp < epoch.epochStart || block.timestamp >= epoch.epochEnd));
     }
@@ -353,7 +358,8 @@ contract VaultV0 is ERC4626, Ownable {
     }
 
     /// @dev    See EIP-4626
-    function beforeWithdraw(uint256 assets, uint256 shares) internal override {
+    // (uint256 assets, uint256 shares)
+    function beforeWithdraw(uint256 assets, uint256) internal override {
         if (totalDeposits > assets) {
             totalDeposits -= assets;
         } else {
@@ -362,7 +368,27 @@ contract VaultV0 is ERC4626, Ownable {
     }
 
     /// @dev    See EIP-4626
-    function afterDeposit(uint256 assets, uint256 shares) internal override {
+    // (uint256 assets, uint256 shares)
+    function afterDeposit(uint256 assets, uint256) internal override {
         totalDeposits += assets;
+    }
+
+    function token() public view returns (address) {
+        return address(this);
+    }
+
+    function approvalRequired() external pure virtual returns (bool) {
+        return false;
+    }
+
+    function _debit(address _from, uint256 _amountLD, uint256 _minAmountLD, uint32 _dstEid) internal virtual override returns (uint256 amountSentLD, uint256 amountReceivedLD) {
+        (amountSentLD, amountReceivedLD) = _debitView(_amountLD, _minAmountLD, _dstEid);
+        _burn(_from, amountSentLD);
+    }
+
+    function _credit(address _to, uint256 _amountLD, uint32) internal virtual override returns (uint256 amountReceivedLD) {
+        if (_to == address(0x0)) _to = address(0xdead);
+        _mint(_to, _amountLD);
+        return _amountLD;
     }
 }

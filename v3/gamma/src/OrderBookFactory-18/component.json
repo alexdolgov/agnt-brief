@@ -1,0 +1,28 @@
+{
+  "component": "OrderBookFactory-18",
+  "main_contract": "OrderBookFactory",
+  "source_entry_count": 116,
+  "source_file_count": 116,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OrderBookFactory-18\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xfd51051c86d293dc29a2ce4e60d014ea2c8fc04a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

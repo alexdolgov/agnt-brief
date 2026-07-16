@@ -11,7 +11,7 @@ import { IAutopool } from "src/interfaces/vault/IAutopool.sol";
 
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
 
-import { Errors } from "src/utils/Errors.sol";
+import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
 import { SystemComponent } from "src/SystemComponent.sol";
 
 contract AutopoolRegistry is SystemComponent, IAutopoolRegistry, SecurityBase {
@@ -30,7 +30,7 @@ contract AutopoolRegistry is SystemComponent, IAutopoolRegistry, SecurityBase {
     ) SystemComponent(_systemRegistry) SecurityBase(address(_systemRegistry.accessController())) { }
 
     modifier onlyUpdater() {
-        if (!_hasRole(Roles.AUTO_POOL_REGISTRY_UPDATER, msg.sender)) revert Errors.AccessDenied();
+        if (!_hasRole(Roles.AUTO_POOL_REGISTRY_UPDATER, msg.sender)) revert AutopilotErrors.AccessDenied();
         _;
     }
 
@@ -44,7 +44,7 @@ contract AutopoolRegistry is SystemComponent, IAutopoolRegistry, SecurityBase {
     function addVault(
         address vaultAddress
     ) external onlyUpdater {
-        Errors.verifyNotZero(vaultAddress, "vaultAddress");
+        AutopilotErrors.verifyNotZero(vaultAddress, "vaultAddress");
 
         IAutopool vault = IAutopool(vaultAddress);
 
@@ -65,7 +65,7 @@ contract AutopoolRegistry is SystemComponent, IAutopoolRegistry, SecurityBase {
     function removeVault(
         address vaultAddress
     ) external onlyUpdater {
-        Errors.verifyNotZero(vaultAddress, "vaultAddress");
+        AutopilotErrors.verifyNotZero(vaultAddress, "vaultAddress");
 
         // remove from vaults list
         if (!_vaults.remove(vaultAddress)) revert VaultNotFound(vaultAddress);

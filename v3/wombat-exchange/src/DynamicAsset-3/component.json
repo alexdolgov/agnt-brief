@@ -1,8 +1,8 @@
 {
   "component": "DynamicAsset-3",
   "main_contract": "DynamicAsset",
-  "source_entry_count": 25,
-  "source_file_count": 25,
+  "source_entry_count": 18,
+  "source_file_count": 18,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,22 +17,22 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0xe0e76388c852208fa3ef2ba6cd1b44b2eaba83ec",
+      "address": "0x6c7b407411b3db90dfa25da4aa66605438d378ce",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401014"
+      "logic_topography_row_id": "400985"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x29eeb257a2a6ecde2984acedf80a1b687f18ec91",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x74f019a5c4ed2c2950ce16fad7af838549092c5b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401055"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

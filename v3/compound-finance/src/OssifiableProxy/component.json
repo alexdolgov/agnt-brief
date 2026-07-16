@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/OssifiableProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "401686"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x1a513e9b6434a12c7bb5b9af3b21963308dee372",
+      "is_proxy": true,
+      "implementation_address": "0x332ca368dd09ad309c51dc6350730e0bca85cffe",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

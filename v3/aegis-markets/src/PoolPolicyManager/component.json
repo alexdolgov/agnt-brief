@@ -11,20 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://drive.google.com/file/d/1vUWENoQsiQxDuex0WU6mZtwJVmE50Ddc/view?usp=sharing"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-130",
       "chain_id": 130,
-      "address": "0xaaf29f2c9516062dc43c4465ef6d43ce8397cdda",
+      "address": "0xa16eb8f1e03696ca0b4acb0085918e2ed77d3006",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "390504"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

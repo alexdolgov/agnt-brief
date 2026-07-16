@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/Valuation\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x52ee652a0970da0c56d404fec5c82f95f9329c3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "bsc",
       "chain_id": 56,
@@ -25,6 +35,16 @@
       "logic_topography_row_id": "394497"
     },
     {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe4ad95d009dbe901776105ae765b8a1fd9ecbc51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
       "chain": "chain-999",
       "chain_id": 999,
       "address": "0x5a049dbfed26b5f06c8c657450d5aa5b8aa04cc7",
@@ -33,6 +53,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "394502"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x54a02f01986dc700211c5182848fff751e45de89",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",

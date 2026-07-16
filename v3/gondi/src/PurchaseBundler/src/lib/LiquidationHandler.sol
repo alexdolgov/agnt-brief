@@ -10,7 +10,6 @@ import "../interfaces/ILiquidationHandler.sol";
 import "../interfaces/loans/IMultiSourceLoan.sol";
 import "./callbacks/CallbackHandler.sol";
 import "./InputChecker.sol";
-import "./utils/Hash.sol";
 
 /// @title Liquidation Handler
 /// @author Florida St
@@ -18,7 +17,6 @@ import "./utils/Hash.sol";
 abstract contract LiquidationHandler is ILiquidationHandler, ReentrancyGuard, CallbackHandler {
     using InputChecker for address;
     using FixedPointMathLib for uint256;
-    using Hash for IMultiSourceLoan.Loan;
 
     uint48 public constant MIN_AUCTION_DURATION = 3 days;
     uint48 public constant MAX_AUCTION_DURATION = 7 days;
@@ -28,7 +26,7 @@ abstract contract LiquidationHandler is ILiquidationHandler, ReentrancyGuard, Ca
     /// @notice Duration of the auction when a loan defaults requires a liquidation.
     uint48 internal _liquidationAuctionDuration = 3 days;
 
-    /// @notice Liquidator used for new defaulted loans (routes NFT transfers).
+    /// @notice Liquidator used defaulted loans that requires liquidation.
     address internal _loanLiquidator;
 
     event MinBidLiquidationUpdated(uint256 newMinBid);
@@ -40,6 +38,8 @@ abstract contract LiquidationHandler is ILiquidationHandler, ReentrancyGuard, Ca
     event LiquidationContractUpdated(address liquidator);
 
     event LiquidationAuctionDurationUpdated(uint256 newDuration);
+
+    error LiquidatorOnlyError(address _liquidator);
 
     error LoanNotDueError(uint256 _expirationTime);
 
@@ -58,7 +58,14 @@ abstract contract LiquidationHandler is ILiquidationHandler, ReentrancyGuard, Ca
         _loanLiquidator = __loanLiquidator;
     }
 
+    modifier onlyLiquidator() {
+        if (msg.sender != address(_loanLiquidator)) {
+            revert LiquidatorOnlyError(address(_loanLiquidator));
+        }
+        _;
+    }
     /// @inheritdoc ILiquidationHandler
+
     function getLiquidator() external view override returns (address) {
         return _loanLiquidator;
     }
@@ -109,7 +116,9 @@ abstract contract LiquidationHandler is ILiquidationHandler, ReentrancyGuard, Ca
             liquidation = ILoanLiquidator(liquidator)
                 .liquidateLoan(
                     _loanId,
-                    _loan,
+                    _loan.nftCollateralAddress,
+                    _loan.nftCollateralTokenId,
+                    _loan.principalAddress,
                     _liquidationAuctionDuration,
                     _loan.principalAmount.mulDivDown(MIN_BID_LIQUIDATION, _BPS),
                     msg.sender

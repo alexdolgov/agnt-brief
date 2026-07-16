@@ -10,19 +10,39 @@
     "build_command": "forge build --root \"src/CLFactory\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a",
+      "address": "0x342576bb62afe26c547bfcbd9e94e76d1538a617",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc6403d7e22ab48bdd43d2473aac9574e881cd165",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf8f2eb4940cfe7d13603dddd87f123820fc061ef",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391328"
+      "logic_topography_row_id": "391337"
     }
   ]
 }

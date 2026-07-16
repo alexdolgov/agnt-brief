@@ -1,0 +1,28 @@
+{
+  "component": "GLPFacetArbi-2",
+  "main_contract": "GLPFacetArbi",
+  "source_entry_count": 88,
+  "source_file_count": 88,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GLPFacetArbi-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1b8c6ece5588d21369935a91d3f2459f66f0cbd0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

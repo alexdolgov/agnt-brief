@@ -46,7 +46,6 @@ contract FeeCollector is IFeeCollector {
 
         treasuryFees = _treasuryFees;
     }
-    
 
     /// @inheritdoc IFeeCollector
     function collectProtocolFees(address pool) external override {

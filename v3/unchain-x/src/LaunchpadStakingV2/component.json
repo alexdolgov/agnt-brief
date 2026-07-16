@@ -1,0 +1,58 @@
+{
+  "component": "LaunchpadStakingV2",
+  "main_contract": "LaunchpadStakingV2",
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LaunchpadStakingV2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x057d5bf977ce40a7c1c63b1b58609120350fa015",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400482"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0ea8f9b3eff635c7e5791bff899055e4f3ce0550",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400483"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd7d98c9cf0a3b0b09e5b2848b9250101f21a1240",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400486"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf28961b972163fad8f220a9df86014e74df911e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400488"
+    }
+  ]
+}

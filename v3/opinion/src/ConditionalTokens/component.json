@@ -10,12 +10,22 @@
     "build_command": "forge build --root \"src/ConditionalTokens\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://static.opinion.trade/opinion-v1-scalebit.pdf"
   ],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x51d1a62d41e93b983ef29aec04f30ded66c6eb54",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "bsc",
       "chain_id": 56,

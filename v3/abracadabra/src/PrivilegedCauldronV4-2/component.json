@@ -1,0 +1,38 @@
+{
+  "component": "PrivilegedCauldronV4-2",
+  "main_contract": "PrivilegedCauldronV4",
+  "source_entry_count": 15,
+  "source_file_count": 15,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PrivilegedCauldronV4-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x406b89138782851d3a8c04c743b010ceb0374352",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390559"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x85f60d3ea4e86af43c9d4e9cc9095281fc25c405",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390575"
+    }
+  ]
+}

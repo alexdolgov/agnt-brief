@@ -1,6 +1,6 @@
 # llama-airforce — deployments
 
-24 verified deployment(s) across 24 component(s).
+28 verified deployment(s) across 28 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,12 +12,16 @@
 | ethereum | `0x55b2b51f661e269aed638a5ddbf2fc930125690a` | sReUsdDistributor | impl | live | no |
 | ethereum | `0x5682a28919389b528ae74dd627e0d632ca7e398c` | stkCvxFxsMerkleDistributor | impl | live | no |
 | ethereum | `0x63f0797015489d407fc2ac7e3891467e1ed0166c` | CvxFxsZaps | impl | live | no |
+| ethereum | `0x6508ef65b0bd57eabd0f1d52685a70433b2d290b` | Treasury | impl | live | no |
+| ethereum | `0x6788234f40931ca615b0d221c1afbf0ec07afcc5` | CVXMerkleDistributor | impl | live | no |
 | ethereum | `0x68b56567af308fe8d94876ab0fe88541ed025e1c` | stkCvxCrvDistributorZaps | impl | live | no |
 | ethereum | `0x783c13b94123ccdcc5d597deb93a69983e1d4a51` | PirexDistributorZaps | impl | live | no |
 | ethereum | `0x8659fc767cad6005de79af65dafe4249c57927af` | UnionPirexVault | impl | live | no |
 | ethereum | `0x8c4eb0fc6805ee7337ac126f89a807271a88dd67` | AuraBalVault | impl | live | no |
 | ethereum | `0x92e6e43f99809df84ed2d533e1fd8017eb966ee2` | AddressRegistry | impl | live | no |
-| ethereum | `0x9da701a9b76e0dd136d3508cb60a4c436dda25e4` | CVXMerkleDistributor | impl | live | no |
+| ethereum | `0x966a2f2dc3aff00965c6eccf6290d0d402fd4567` | MultiMerkleStash | impl | live | no |
+| ethereum | `0x9da701a9b76e0dd136d3508cb60a4c436dda25e4` | CVXMerkleDistributor-2 | impl | live | no |
+| ethereum | `0xa1fdfcab1c53e6f80439462f7f394c1f2ba65981` | PirexDistributorZaps-2 | impl | live | no |
 | ethereum | `0xae12bf0ad604ddb1c5f048e14b48d719fbdc7d7c` | stkCvxFxsDistributorZaps | impl | live | no |
 | ethereum | `0xb192908e533fc64109a20ee7d056175a24f17a55` | PCvxZaps | impl | live | no |
 | ethereum | `0xbce0cf87f513102f22232436cca2ca49e815c3ac` | PxCvx | impl | live | no |

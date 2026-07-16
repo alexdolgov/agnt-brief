@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Valuation-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
     "https://github.com/cyberscope-io/audits/blob/main/ezmanager/audit.pdf"
@@ -27,6 +27,16 @@
       "logic_topography_row_id": "394485"
     },
     {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x738db78bf64dcf2d9b6d9d9a5708083d946727e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
       "chain": "base",
       "chain_id": 8453,
       "address": "0xae79b33073b8ee252de6b13a6dff63ed3871a548",
@@ -35,6 +45,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "394519"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb80b506a310ddba3196ad73073a7fff04376035e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

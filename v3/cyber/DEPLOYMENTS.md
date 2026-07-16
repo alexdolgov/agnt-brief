@@ -1,6 +1,6 @@
 # cyber — deployments
 
-10 verified deployment(s) across 10 component(s).
+12 verified deployment(s) across 12 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,5 +12,7 @@
 | ethereum | `0x19b5804b88f10262a55ac731f28a3bbc4209853a` | AddressManager | impl | live | no |
 | ethereum | `0x3c01ebf22e9c111528c1e027d68944edab08dfc9` | ResolvedDelegateProxy | proxy | live | no |
 | ethereum | `0x93e1c0d8ef27930130fb809ce18ca681a8c32f85` | L2OutputOracle | impl | live | no |
+| ethereum | `0x96769a472f1d8e3d2719cc09cf4b4667e8d3bbcc` | FaultDisputeGame | impl | unknown | no |
 | ethereum | `0xacfd93b4887cef4f05cf3440d150d2ce97339142` | OptimismPortal | impl | live | no |
 | ethereum | `0xb79cf113e524043b3ef9bf7861a05900bb3649a3` | DisputeGameFactory | impl | live | no |
+| ethereum | `0xfe42cc6ac1f47d1b343a631a31b6d242dbf36b0c` | PermissionedDisputeGame | impl | unknown | no |

@@ -255,13 +255,15 @@ contract PancakeSwapRewardAdapter is IRewardAdapter, ReentrancyGuard {
             // Harvest failed - continue with emergency withdrawal
         }
 
-        // Set flags before external call
+        // Set withdrawing flag for read-only reentrancy protection
         _withdrawing[tokenId] = true;
-        delete stakedIn[tokenId];
 
         // M-01 fix: Wrap withdraw in try-catch so broken MasterChef doesn't permanently lock positions
         try masterChef.withdraw(tokenId, address(this)) {
-            // Withdrawal succeeded - try to transfer NFT to vault
+            // Withdrawal succeeded — clear staked state so position is no longer tracked
+            delete stakedIn[tokenId];
+
+            // Try to transfer NFT to vault
             address currentOwner = positionManager.ownerOf(tokenId);
             if (currentOwner == address(this)) {
                 // V16-L-01 fix: Route auto-claimed CAKE to vault for performance fee processing
@@ -278,7 +280,9 @@ contract PancakeSwapRewardAdapter is IRewardAdapter, ReentrancyGuard {
                 emit EmergencyUnstakeIncomplete(tokenId);
             }
         } catch {
-            // MasterChef withdraw failed - position stuck
+            // L-06 fix: Keep stakedIn[tokenId] = true so emergencyUnstake can be retried.
+            // Previously deleted before the try, which left the position unrecoverable
+            // if MasterChef.withdraw() failed (can't retry because !stakedIn check).
             emit EmergencyUnstakeIncomplete(tokenId);
         }
 

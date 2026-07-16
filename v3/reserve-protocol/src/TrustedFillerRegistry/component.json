@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/TrustedFillerRegistry\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -33,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "398332"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x279ccf56441fc74f1aac39e7fac165dec5a88b3a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",

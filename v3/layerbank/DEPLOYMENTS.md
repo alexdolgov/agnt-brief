@@ -1,39 +1,60 @@
 # layerbank — deployments
 
-61 verified deployment(s) across 30 component(s).
+84 verified deployment(s) across 38 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | bsc | `0x8efdd7396b83cd53ae7555224a30c41b1a100ffa` | Core-2 | impl | live | no |
+| chain-169 | `0x01be49c7734673bd407fc54735c2ac02504c27c1` | RateModelSlope | impl | live | no |
 | chain-169 | `0x20a512dbdc0d006f46e6ca11329034eb3d18c997` | LABToken | impl | live | no |
 | chain-169 | `0x27f85bd47740139a56e34124b33481ea6e1e660d` | RateModelSlope | impl | live | no |
 | chain-169 | `0x3447275b4252b7929483528cf966eb466e71277e` | Validator | impl | live | no |
+| chain-169 | `0x38f4384b457f81a4895c93a7503c255efd0746d2` | PriceCalculator-2 | impl | unknown | no |
 | chain-169 | `0x4054f478ec834fbdb2b192f144d4615d31bda9a6` | Leverager | impl | live | no |
 | chain-169 | `0x472d43a8f00a41c3431e549367d2de2e07c5e388` | LToken-2 | impl | live | no |
 | chain-169 | `0x604ddc9c59572d197b983f0578e58e61026765ed` | LToken-2 | impl | live | no |
 | chain-169 | `0x67c10b7b8eefe92eb4dfdeeedd94263632e483b0` | LABDistributor | impl | live | no |
+| chain-169 | `0x683049b66b55a202bfc9a60e954ff9b41ba7b39a` | Vesting | impl | unknown | no |
 | chain-169 | `0x68b30d4c712bb9b629eb79595a6c804e5968eb40` | RewardController | impl | live | no |
 | chain-169 | `0x69e38d781183a52de5e7506cd57bc6c55bb74467` | xLAB | impl | live | no |
+| chain-169 | `0x6d28332dda6b38408fec31f775d5b2e6d6c7781e` | Vesting | impl | unknown | no |
 | chain-169 | `0x71384b2c17433ba1d8f6fe895e9b2e7953dced68` | LToken-2 | impl | live | no |
 | chain-169 | `0x7479c717f2b72116d15b4eaf8d540c497e07e0b6` | LToken-2 | impl | live | no |
 | chain-169 | `0x7def25c6c2b4bc9e9fb5122d22650f8ecdfeff45` | LToken-2 | impl | live | no |
-| chain-169 | `0x90286f894020950981c9e3196bacb03a223e4cfd` | PriceCalculator-2 | impl | live | no |
+| chain-169 | `0x7e76a2112706814477a3f7638a0fcedde85733a6` | RateModelSlope | impl | unknown | no |
+| chain-169 | `0x7ebf48f06fed5fa165748c7f30337a5d0d65fb14` | RateModelSlope | impl | unknown | no |
+| chain-169 | `0x8d965181bdfd026cf5a09889898d70c4afae4684` | RateModelSlope | impl | unknown | no |
+| chain-169 | `0x90286f894020950981c9e3196bacb03a223e4cfd` | PriceCalculator-3 | impl | live | no |
+| chain-169 | `0x9125548148fb44af1e772a6c1f3727a65d043599` | Vesting | impl | unknown | no |
+| chain-169 | `0x91ad6fb355252f731ecbeb30aeff6464cbbe0c07` | RateModelSlope | impl | unknown | no |
 | chain-169 | `0x9d8ecb502d2ac290644d70a096165188d47e21a4` | LToken-2 | impl | live | no |
+| chain-169 | `0x9fea1782b5deff62e32576cd29993824ecd2c9d3` | Vesting | impl | unknown | no |
 | chain-169 | `0xb7a23fc0b066051de58b922dc1a08f33df748bbf` | Core | impl | live | no |
+| chain-169 | `0xbea4070909dc939282ecc953d99840e390d891d1` | RateModelSlope | impl | unknown | no |
+| chain-169 | `0xc44a204705e0919266aee243df915ec3ae16d9a4` | Vesting | impl | unknown | no |
 | chain-169 | `0xc85836a3878e4dbbec91ac0701d4f6db08ce616d` | RebateDistributor | impl | live | no |
+| chain-169 | `0xca892a10908a38044e933836c21f28ac34ff157f` | Validator-3 | impl | unknown | no |
+| chain-169 | `0xd30726b29fae71d28c15f5632ec9ab2c2716a2f6` | RateModelSlope | impl | unknown | no |
 | chain-169 | `0xdf4b60ce539648ab05541827a3bf0a079a5fc1c2` | LToken-2 | impl | live | no |
+| chain-169 | `0xe8c8cfc7750abaf26e5889c5e3f56d1e5f96902a` | RateModelSlope | impl | unknown | no |
+| chain-169 | `0xf2c1e27a4bf0d81bb4a6e6e3e5dcd1dc6ed3a7fa` | Validator-4 | impl | unknown | no |
+| chain-169 | `0xf7e5d5afae27305b371c4d183f887b77f0848acc` | RateModelSlope | impl | unknown | no |
+| chain-169 | `0xf9a2e1cfa9760a1edc405047df638da71815ef95` | RateModelSlope | impl | unknown | no |
 | linea | `0x009a0b7c38b542208936f1179151cd08e2943833` | Core-4 | impl | live | no |
 | linea | `0x14abc603b6471aae51f92e6f7cc5be7cc6eefd14` | LToken | impl | live | no |
 | linea | `0x14c5a2b562754ed412708a103fb9cb65b1b16494` | Locker | impl | live | no |
 | linea | `0x2ad69a0cf272b9941c7ddcada7b0273e9046c4b0` | LToken-4 | impl | live | no |
 | linea | `0x2c88a441418e06b9f3e565c2f866fcb03c9409e2` | LToken | impl | live | no |
+| linea | `0x35a8c6050591c2f65b3e926b4b2ef825e3766bd6` | PriceCalculator-5 | impl | live | no |
+| linea | `0x3df121931dc2e72dc4746da933126f6d50595605` | LABDistributor-3 | impl | live | no |
 | linea | `0x42e62fec1036f874a7579806530d628a59b6d7fb` | PriceCalculator | impl | live | no |
 | linea | `0x43eac5bfea14531b8de0b334e123ea98325de866` | Core-5 | impl | live | no |
 | linea | `0x5924117c4a5e000312684a5e76e90cc93addde6b` | LToken | impl | live | no |
-| linea | `0x5d06067f86946620c326713b846ddc8b97470957` | LABDistributor-3 | impl | live | no |
+| linea | `0x5d06067f86946620c326713b846ddc8b97470957` | LABDistributor-4 | impl | live | no |
 | linea | `0x67492784ec588681e55b2bfc0118d882a8f23e48` | LToken | impl | live | no |
 | linea | `0x6fe39525298118a6b58646b83f6b23e48208a855` | LToken | impl | live | no |
 | linea | `0x720a99762bb3d2b98c8ddd64e13b0851355ca0e7` | Validator-2 | impl | live | no |
+| linea | `0x87bec95c9a414f9a83599138ba9e754d15f855bf` | RebateDistributor-3 | impl | live | no |
 | linea | `0x8fefabe1b9a530d9d0f0ef25e84a9d8b56ab2053` | LToken | impl | live | no |
 | linea | `0x9e9aec6a296f94c8530e2dd01ff3e9c61555d39a` | LToken | impl | live | no |
 | linea | `0x9f8b5de4191db60e7b1d2ed448084657c0b46c19` | LToken | impl | live | no |
@@ -46,10 +67,11 @@
 | linea | `0xccba9ac94531e15aa55d9065e398812f06b84f14` | LToken | impl | live | no |
 | linea | `0xcdfcfdb11b75c53e43e4f1f19ecfc16b321d15f8` | LToken | impl | live | no |
 | linea | `0xe33520c74bac3c537bfeee0f65e80471f3d564b9` | LToken-4 | impl | live | no |
-| linea | `0xea01659b66a682d41f4718bb62134ea8109fbfc6` | RebateDistributor-3 | impl | live | no |
+| linea | `0xea01659b66a682d41f4718bb62134ea8109fbfc6` | RebateDistributor-4 | impl | live | no |
 | linea | `0xea0f73296a6147fb56bae29306aae0ffaff9de5f` | LToken-4 | impl | live | no |
 | linea | `0xf46680e9987f334041656abeb83b87c2494dc751` | LToken | impl | live | no |
 | mode | `0x0ccd703acfe6ce83377243c2dbf9d55a09e12769` | Validator | impl | live | no |
+| mode | `0x310e183416d7f266c150e7244733d1dcb1470172` | PriceCalculator-4 | impl | unknown | no |
 | mode | `0x59dd441184024a77fd17e68f07e242622806c256` | LToken-3 | impl | live | no |
 | mode | `0x66a5e18e36bfea86074a047954fec7c94ced366e` | LToken-3 | impl | live | no |
 | mode | `0x67d21527b227ec286409c6dd28d4704424ce006f` | RebateDistributor-2 | impl | live | no |
@@ -61,6 +83,7 @@
 | mode | `0xd97905cc56030a6e9b618d6e26cc9ee2eaa15948` | LToken-3 | impl | live | no |
 | mode | `0xe855b8018c22a05f84724e93693caf166912add5` | LToken-5 | impl | live | no |
 | mode | `0xe8c3ba0c2ac39f9d97bcebf913e480b55d4c1aec` | LABDistributor-2 | impl | live | no |
+| mode | `0xec47eb47ff67ec527e72e82d220eb057d69be055` | Validator-2 | impl | unknown | no |
 | mode | `0xf0dcba2dd51311b5ad5770573edb8d39d39029e5` | Leverager-2 | impl | live | no |
 | mode | `0xfd160b6818254af48171a7731eba26dee6f16902` | LToken-5 | impl | live | no |
 | mode | `0xfe67e16313f4b38743a153f74d5762f7c83e59ae` | LABToken-2 | impl | live | no |

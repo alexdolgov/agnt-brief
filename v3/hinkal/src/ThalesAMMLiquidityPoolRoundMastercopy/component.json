@@ -1,0 +1,28 @@
+{
+  "component": "ThalesAMMLiquidityPoolRoundMastercopy",
+  "main_contract": "ThalesAMMLiquidityPoolRoundMastercopy",
+  "source_entry_count": 21,
+  "source_file_count": 21,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ThalesAMMLiquidityPoolRoundMastercopy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8f8cc357aaa401cb6f7e01d56c59aa8cb2132018",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

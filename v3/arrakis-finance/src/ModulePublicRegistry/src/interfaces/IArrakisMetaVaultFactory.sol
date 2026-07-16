@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.19;
 
 interface IArrakisMetaVaultFactory {
@@ -159,7 +159,7 @@ interface IArrakisMetaVaultFactory {
         external;
 
     /// @notice function used to grant the role to deploy to a list of addresses.
-    /// @param deployers_ list of addresses that owner want to revoke permission to deploy.
+    /// @param deployers_ list of addresses that owner want to grant permission to deploy.
     function blacklistDeployer(address[] calldata deployers_)
         external;
 
@@ -172,6 +172,15 @@ interface IArrakisMetaVaultFactory {
     /// @param token1_ address of the second token.
     /// @return name name of the arrakis modular token vault.
     function getTokenName(
+        address token0_,
+        address token1_
+    ) external view returns (string memory);
+
+    /// @notice get Arrakis Modular standard token symbol for two corresponding tokens.
+    /// @param token0_ address of the first token.
+    /// @param token1_ address of the second token.
+    /// @return symbol symbol of the arrakis modular token vault.
+    function getTokenSymbol(
         address token0_,
         address token1_
     ) external view returns (string memory);

@@ -1,6 +1,71 @@
 # ledgity-yield — deployments
 
-0 verified deployment(s) across 0 component(s).
+65 verified deployment(s) across 44 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x06f54b7f27eec56616b951598baa3b84d7660ab4` | LDYStaking-4 | impl | live | no |
+| arbitrum | `0x0a1ba9ff031dce2f0c228b572154fb367e0df98a` | LedgityYieldVault | impl | live | no |
+| arbitrum | `0x0dff3884ec69cd0b19b8b2bddedfbe73801ead61` | LDYStaking | impl | live | no |
+| arbitrum | `0x0e77850ac71e72f9c995a2f15b7cf1b528b7e9aa` | LToken-5 | impl | live | no |
+| arbitrum | `0x2ed9031c6aaac0c42972e133776d133fcc40fd7e` | StakingRewardsDistributor | impl | live | no |
+| arbitrum | `0x346245ed74cd6319f169228b980d91f17d98cd99` | LToken-6 | impl | unknown | no |
+| arbitrum | `0x3f0ff9947550d7cf26549136552c785446ad4ac5` | APRHistory-2 | impl | live | no |
+| arbitrum | `0x41b0eef9787bb07306967c012298c70811cc70f0` | LToken-7 | impl | live | no |
+| arbitrum | `0x4e80bedbd58b084a8946b7ba6814c28906be2d02` | LDYStaking-5 | impl | live | no |
+| arbitrum | `0x67efae630f0f7fae539b0f1eb1fc1c4cc4dc3e47` | LDYStaking | impl | live | no |
+| arbitrum | `0x6cdb485bedd95c5460eef6dfe1886d7a7bc3b2ca` | LedgityDataProvider | impl | live | no |
+| arbitrum | `0x8584bcd220a048104e654f842c56e33d37d6aee3` | LToken-8 | impl | live | no |
+| arbitrum | `0x8aed5d3c5844d26671ae63be08ad2a6903bd293e` | BatchTokenSender | impl | live | no |
+| arbitrum | `0x999faf0af2ff109938eefe6a7bf91ca56f0d07e1` | LDY | impl | unknown | no |
+| arbitrum | `0x9d7aedefe90b880c5a9bed4fcbd3fad0ea5aa06c` | PreMining | impl | live | no |
+| arbitrum | `0xa3b0dba08b0e83aa6dbcf2fb11eafb209c84a21f` | LToken | impl | live | no |
+| arbitrum | `0xb5c69197e5d6a52c776384479b529d2d76f9e2de` | LToken-9 | impl | live | no |
+| arbitrum | `0xc1f003474705e229ed8ad5c9aee017bbda853009` | TSTTOKEN | impl | live | no |
+| arbitrum | `0xd42b1065ac03f3965b11ef19ee98b0165a2c4e53` | LDYStaking | impl | live | no |
+| arbitrum | `0xea7c3f040f1e663541be4dd9db713ce09773982d` | StakingPositions | impl | live | no |
+| arbitrum | `0xeee2ca6f97ac13d2d0df1a2d45fc9ec30939c331` | LToken | impl | live | no |
+| base | `0x055d20a70efd45ab839ae1a39603d0cfdbdd8a13` | LDY-2 | impl | unknown | no |
+| base | `0x10ce08736900e6e3a46dcd9f4ddb2b44b82be5d4` | LToken-2 | impl | live | no |
+| base | `0x114b64a8bf7bf0ab2a8a64a3e348307bd568726e` | MasterMinter | impl | live | no |
+| base | `0x54b36dc68c3edb568ee471148463da7b84ef79ea` | StakingPositions | impl | live | no |
+| base | `0x60a3e35cc302bfa44cb288bc5a4f316fdb1adb42` | FiatTokenProxy | proxy | live | no |
+| base | `0x6ebbff8451724995458a95ba41f4debbc1fd37c2` | StakingRewardsDistributor | impl | live | no |
+| base | `0x8db8426e990a96d34f8002a7ed91eba65abd3165` | LDYStaking-3 | impl | live | no |
+| base | `0x94ed3cf3aff9439f91fcea79d0a3473159b03ed1` | LToken-4 | impl | unknown | no |
+| base | `0x9bb3be95ff31cfc1cf5860dd0e1d208fb3c74361` | LedgityYieldVault-2 | impl | live | no |
+| base | `0x9cfbf905a444b5c871f0b447e137e8ce7eed0bce` | LToken-2 | impl | unknown | no |
+| base | `0xab46555149f92822aa9821eacd36bef41daac126` | LedgityDataProvider-2 | impl | live | no |
+| base | `0xda106c9c52579fef0001158e2206e60cce818a39` | LedgityDataProvider | impl | live | no |
+| base | `0xe34603a1e6a07435ed39ca36d37e80727f737cbf` | APRHistory | impl | live | no |
+| base | `0xf9eece93f43abd5a2287df083c8c510da7a9b56f` | LedgityYieldVault-3 | impl | live | no |
+| chain-146 | `0x071c9d3ee88c1d22f931e87bc70da086de4caf29` | GlobalAccessList | impl | live | no |
+| chain-146 | `0x12f407bfdbbe56ab19ecd389992f0f408810305a` | LongTailIRM | impl | live | no |
+| chain-146 | `0x18fad5b72113497e1c92570b6f517328d05505fa` | LongTailIRM | impl | live | no |
+| chain-146 | `0x20116919299625b1b3e474d5a594a5b4ed13e95b` | RfqEngine | impl | live | no |
+| chain-146 | `0x3bcb3c2992a1a4c2c97010c6d6789f6abcb40e4c` | StakingRewardsDistributorSonic | impl | live | no |
+| chain-146 | `0x4bd77b487e2a8884b4e5528ff32b3917f7edefd5` | LongTailIRM | impl | live | no |
+| chain-146 | `0x4fec0c1c745c2d8ebb4fffa0d4e8d1395a135d73` | Storage | impl | live | no |
+| chain-146 | `0x655c94df33d39a126f9260f4b795b51336767cc8` | StakingPositionsSonic | impl | live | no |
+| chain-146 | `0x77ce973744745310359b0d1a3415a34ff983708f` | LDYStaking-2 | impl | live | no |
+| chain-146 | `0x891611398b53bbaaa3db04c158218c319c87d554` | LDYStaking-2 | impl | live | no |
+| chain-146 | `0xac5da840e826498fbed926cd4db697201f72ea0d` | LedgityDataProvider | impl | live | no |
+| chain-146 | `0xb05c6239212f125677a7f78b4a3ea39535e18da2` | LToken-3 | impl | live | no |
+| chain-146 | `0xb91985d71da9d3dae5d47503ebb7d133cf68640e` | StakingRewardsDistributorSonic-2 | impl | live | no |
+| chain-146 | `0xd1ec7222fa703e4942b6032073ce48394ac5c306` | StakingPositionsSonic-2 | impl | live | no |
+| chain-146 | `0xfb04979bda6546f114afcff2a78d35446d5a32e8` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x12d5c708ae229cae0f6c712cb8feb1c914205c00` | GlobalAccessList | impl | live | no |
+| ethereum | `0x37eef1059c974b1142a706a4090dbebd0ba6c2bd` | StakingRewardsDistributor | impl | live | no |
+| ethereum | `0x482df7483a52496f4c65ab499966dfcdf4ddfdbc` | LDY | impl | unknown | no |
+| ethereum | `0x4eec09db589c882fba7c5d03065dfd20912fe877` | StakingPositions | impl | live | no |
+| ethereum | `0x8db8426e990a96d34f8002a7ed91eba65abd3165` | LedgityYieldVault | impl | live | no |
+| ethereum | `0x94ed3cf3aff9439f91fcea79d0a3473159b03ed1` | LedgityYieldVault | impl | live | no |
+| ethereum | `0xe34603a1e6a07435ed39ca36d37e80727f737cbf` | LedgityDataProvider | impl | live | no |
+| ethereum | `0xeb163bff473abc556d8af259e8bf856fdbc6d108` | StakingPositions-2 | impl | live | no |
+| ethereum | `0xf6cfb035edae09ed885de86250d43ca02200d077` | GlobalAccessList | impl | live | no |
+| linea | `0x12d5c708ae229cae0f6c712cb8feb1c914205c00` | LedgityDataProvider-3 | impl | live | no |
+| linea | `0x4af215dbe27fc030f37f73109b85f421fab45b7a` | ERC1967Proxy | proxy | unknown | no |
+| linea | `0x57791de9e18693834b37323d3c90190a8ab3b925` | LedgityYieldVault | impl | live | no |
+| linea | `0x768fa735a0d894784fe38f52124b246dd6347d19` | LToken-10 | impl | live | no |
+| linea | `0xb644f32ec6cb162e766289a7b915b02d4611f667` | LToken | impl | live | no |
+| linea | `0xd54d564606611a3502fe8909bbd3075dbeb77813` | PreMining-2 | impl | live | no |

@@ -1,13 +1,59 @@
 # wan-bridge — deployments
 
-7 verified deployment(s) across 7 component(s).
+53 verified deployment(s) across 36 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| arbitrum | `0xf7ba155556e2cd4dfe3fe26e506a14d2f4b97613` | CrossProxy-5 | proxy | live | no |
-| avalanche | `0x74e121a34a66d54c33f3291f2cdf26b1cd037c3a` | CrossProxy-7 | proxy | live | no |
+| arbitrum | `0x32e5594f14de658b0d577d6560fa0d9c6f1aa724` | NyanRewards | impl | live | no |
+| arbitrum | `0x62ff5be795262999fc1ebac29277575031d2da2c` | NyanRewards | impl | live | no |
+| arbitrum | `0xf7ba155556e2cd4dfe3fe26e506a14d2f4b97613` | CrossProxy-6 | proxy | live | no |
+| avalanche | `0x74e121a34a66d54c33f3291f2cdf26b1cd037c3a` | CrossProxy-8 | proxy | live | no |
+| avalanche | `0xea6887e4a9cda1b77e70129e5fba830cdb5cddef` | MappingTokenV2-4 | impl | unknown | no |
+| base | `0x0e57db96f34aaa743a3f77e8fc0b17641ca9f1df` | SimpleMultiSender-2 | impl | live | no |
+| base | `0x1e7e46945e50bbe7df7014c086b642e6b7b4a625` | WrappedToken | impl | live | no |
+| base | `0x2ab37662ac4dc8aada595256cd57221c0c38c838` | WanCctpV2-2 | impl | live | no |
+| base | `0x72ccf64ee5e2c7629ee4eee3e6ad6990289178ae` | WrappedToken | impl | live | no |
+| base | `0x76c51350705756030c70ccb82ef23345c2a4610e` | CommonProxy | proxy | live | no |
+| base | `0x7e5fe1e587a5c38b4a4a9ba38a35096f8ea35aac` | WrappedToken | impl | live | no |
+| base | `0xc5cd7e7ecc39eceaeeee089f98c3d351d93810c2` | WrappedToken | impl | live | no |
+| base | `0xd97de67b982d79ed9f7eb2b1a13abc704b2ca082` | GroupApprove | impl | live | no |
+| blast | `0x131dfc3ca32d3a959012606855320cbe8e655132` | GroupApprove | impl | live | no |
 | bsc | `0xc3711bdbe7e3063bf6c22e7fed42f782ac82baee` | CrossProxy | proxy | live | no |
-| chain-1284 | `0x6372aec6263aa93eacedc994d38aa9117b6b95b5` | CrossProxy-3 | proxy | live | no |
-| chain-1285 | `0xde1ae3c465354f01189150f3836c7c15a1d6671d` | CrossProxy-4 | proxy | live | no |
-| chain-42220 | `0x14ca89ac9cd73b01bf71a3af3f8cf8fd224d6a1d` | CrossProxy-6 | proxy | live | no |
+| chain-1088 | `0x09cdfc56439643d151585b77899d0dc0f982bcd2` | SignatureVerifier | impl | unknown | no |
+| chain-1088 | `0x0d10a02696cb9cfdc4de45bd5580eda85f22353b` | MulticallV2 | impl | unknown | no |
+| chain-1088 | `0x1289f70b8a16797cccbfcca8a845f36324ac9f8b` | RapidityLibV4 | impl | live | no |
+| chain-1088 | `0x16b389364a18cb066257fec7ad841106303b4c6b` | GroupApprove-3 | impl | unknown | no |
+| chain-1088 | `0x1ed3538383bbfdb80343b18f85d6c5a5fb232fb6` | TokenManagerProxy | impl | unknown | no |
+| chain-1088 | `0x50133f6836cb91237e17177e2985cbdad51f0cf2` | NFTLibV1 | impl | live | no |
+| chain-1088 | `0x8d42d317b2bd6b60183461ed41bd00f17c3f3fe8` | Bn128SchnorrVerifier | impl | live | no |
+| chain-1088 | `0xbe5187c2a7eb776c1caeed2c37e7599fb05000d3` | OracleProxy | impl | live | no |
+| chain-1088 | `0xc0264277fcca5fcfabd41a8bc01c1fcaf8383e41` | CrossDelegateV4 | impl | live | no |
+| chain-1088 | `0xc21e5553c8dddf2e4a93e5bedbae436d4291f603` | OracleDelegate | impl | unknown | no |
+| chain-1088 | `0xc6ae1db6c66d909f7bfeeeb24f9adb8620bf9dbf` | CrossProxy-3 | impl | unknown | no |
+| chain-1088 | `0xc95a4bc5c14cc6a23af46ba50d3785d5fd55446d` | CrossDelegateV4-2 | impl | live | no |
+| chain-1088 | `0xd4b5f10d61916bd6e0860144a91ac658de8a1437` | TokenManagerDelegateV2 | impl | unknown | no |
+| chain-1284 | `0x455febd10a12772c8358f53ff3dee86472878d90` | MappingTokenV2-2 | impl | live | no |
+| chain-1284 | `0x5f0061d84ee2f507c29aa87471e58f9d75d52776` | MappingTokenV2-2 | impl | live | no |
+| chain-1284 | `0x6372aec6263aa93eacedc994d38aa9117b6b95b5` | CrossProxy-4 | proxy | live | no |
+| chain-1285 | `0x15b9ca9659f5dff2b7d35a98dd0790a3cbb3d445` | MappingTokenV2 | impl | live | no |
+| chain-1285 | `0x41562ae242d194247389152acaa7a9397136b09f` | MappingTokenV2 | impl | live | no |
+| chain-1285 | `0x576fde3f61b7c97e381c94e7a03dbc2e08af1111` | MappingTokenV2 | impl | live | no |
+| chain-1285 | `0x748134b5f553f2bcbd78c6826de99a70274bdeb3` | MappingTokenV2 | impl | live | no |
+| chain-1285 | `0x78f811a431d248c1edcf6d95ec8551879b2897c3` | MappingTokenV2 | impl | live | no |
+| chain-1285 | `0x9d5bc9b873aed984e2b6a64d4792249d68bba2fe` | MappingTokenV2 | impl | live | no |
+| chain-1285 | `0xc005a7a1502c9de16ccdaba7cda0cee4ac304993` | MappingTokenV2 | impl | live | no |
+| chain-1285 | `0xd924f195c6012c301f42290cf0fde385a66039de` | MappingTokenV2 | impl | live | no |
+| chain-1285 | `0xde1ae3c465354f01189150f3836c7c15a1d6671d` | CrossProxy-5 | proxy | live | no |
+| chain-1285 | `0xe936caa7f6d9f5c9e907111fcaf7c351c184cda7` | MappingTokenV2 | impl | live | no |
+| chain-1285 | `0xfada8cc923514f1d7b0586ad554b4a0cead4680e` | AutoFarmV2_CrossChain | impl | live | no |
+| chain-1285 | `0xffef2639b2ee39f9c284d0107e567dd2f7b20613` | MappingTokenV2-3 | impl | live | no |
+| chain-42220 | `0x14ca89ac9cd73b01bf71a3af3f8cf8fd224d6a1d` | CrossProxy-7 | proxy | live | no |
+| chain-42220 | `0x48dbcccf3166f6e65280b654a6becb1287204d38` | GroupApprove | impl | live | no |
+| chain-42220 | `0xdd11b66b90402f294a017c4688509c364312303f` | AutoFarmV2_CrossChain-2 | impl | live | no |
+| linea | `0x3cc97934f6770b649ef27682c6b9369b073c1058` | GroupApprove | impl | live | no |
+| optimism | `0x1e7e46945e50bbe7df7014c086b642e6b7b4a625` | SimpleMultiSender | impl | live | no |
+| optimism | `0x2f676cb3e9178eb4913ab4d42506d1fde82296fb` | WanCctpV2 | impl | live | no |
+| optimism | `0x329f162550e3d5d9898a0aae05e21bfcd5f1cf83` | GroupApprove-2 | impl | live | no |
+| optimism | `0xf5db314d1bb8e6166a2b54b057dca934ac3b5d43` | CommonProxy | proxy | live | no |
 | polygon | `0x2216072a246a84f7b9ce0f1415dd239c9bf201ab` | CrossProxy-2 | proxy | live | no |
+| polygon | `0xcfad8a6ed9b7075c5a3b42557cf2b343b266c472` | WrappedERC721T1 | impl | live | no |

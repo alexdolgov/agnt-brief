@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/BoringVault-3\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xa5f78b2a0ab85429d2dfbf8b60abc70f4cec066c",
+      "address": "0x9fbc367b9bb966a2a537989817a088afcaffdc4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe72fe64840f4ef80e3ec73a1c749491b5c938cb9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "397228"
+      "logic_topography_row_id": "397230"
     }
   ]
 }

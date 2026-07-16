@@ -10,12 +10,32 @@
     "build_command": "forge build --root \"src/Comptroller\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://github.com/ShoebillFinance/audit-report/blob/main/Certik-Shoebill-final-20231121T015445Z.pdf"
   ],
   "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xc27f8366948014a5b8186341b50a6660a5e0ac63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xb7ed6c062caaacb1a13f317e0a751289280fc306",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "mode",
       "chain_id": 34443,

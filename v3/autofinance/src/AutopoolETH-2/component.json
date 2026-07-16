@@ -10,29 +10,39 @@
     "build_command": "forge build --root \"src/AutopoolETH-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x2ab4a3a8224726cbaa91d6b04d212979f06efdf9",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0a2b94f6871c1d7a32fe58e1ab5e6dea2f114e56",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391676"
+      "logic_topography_row_id": "391542"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xaadf01dd90ae0a6bb9eb908294658037096e0404",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35911af1b570e26f668905595ded133d01cd3e5a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391705"
+      "logic_topography_row_id": "391565"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf90bb2baa90b457a35c37c5a96de2720ce367281",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391665"
     }
   ]
 }

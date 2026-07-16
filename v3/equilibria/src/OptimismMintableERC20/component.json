@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/OptimismMintableERC20\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -33,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "394214"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbc7b1ff1c6989f006a1185318ed4e7b5796e66e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

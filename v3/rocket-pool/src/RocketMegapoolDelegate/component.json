@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/RocketMegapoolDelegate\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://rocketpool.net/files/audits/bailsec-audit-saturn-1.pdf",
@@ -18,6 +18,16 @@
     "https://rocketpool.net/files/audits/sigma-prime-audit-saturn-1.pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0f160f97b274c6152a3d5fa729a4547816a8aaa4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "ethereum",
       "chain_id": 1,

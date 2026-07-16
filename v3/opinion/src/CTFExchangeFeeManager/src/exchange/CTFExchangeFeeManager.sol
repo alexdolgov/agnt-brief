@@ -8,7 +8,7 @@ import { DecimalConversionLib } from "./libraries/DecimalConversionLib.sol";
 import { UserTierManager } from "./mixins/UserTierManager.sol";
 import { ReferralManager } from "./mixins/ReferralManager.sol";
 import { Fees } from "./mixins/Fees.sol";
-import { TraderReferralInfo, ReferrerConfig, CollateralPriceConfig } from "./libraries/ReferralStructs.sol";
+import { TraderReferralInfo, ReferrerConfig } from "./libraries/ReferralStructs.sol";
 import { IERC20Metadata } from "openzeppelin-contracts/token/ERC20/extensions/IERC20Metadata.sol";
 
 /// @title CTF Exchange Fee Manager
@@ -102,8 +102,10 @@ contract CTFExchangeFeeManager is IFeeEstimation, UserTierManager, ReferralManag
     function setDefaultCollateralToken(address newDefaultCollateral) external onlyOperator {
         if (newDefaultCollateral == address(0)) revert InvalidCollateralToken();
 
+        // Ensure collateral token is properly configured before switching
         CollateralConfig memory config = collateralConfigs[newDefaultCollateral];
         if (config.decimals == 0) revert CollateralNotConfigured();
+        // Note: globalDefaultMinFee can be 0, so we only check decimals
 
         defaultCollateralToken = newDefaultCollateral;
     }
@@ -113,8 +115,9 @@ contract CTFExchangeFeeManager is IFeeEstimation, UserTierManager, ReferralManag
     function updateGlobalDefaultMinFee(uint256 newGlobalDefaultMinFee) external onlyOperator {
         if (defaultCollateralToken == address(0)) revert NoDefaultCollateralSet();
 
+        // Apply hard cap protection: prevent setting minimum fees that are too high
         CollateralConfig memory config = collateralConfigs[defaultCollateralToken];
-        uint256 maxAllowedMinFee = 10 * (10 ** config.decimals);
+        uint256 maxAllowedMinFee = 10 * (10 ** config.decimals); // 10 tokens (e.g., 10 USDC)
         if (newGlobalDefaultMinFee > maxAllowedMinFee) revert GlobalMinFeeExceedsMaximum();
 
         collateralConfigs[defaultCollateralToken].globalDefaultMinFee = newGlobalDefaultMinFee;
@@ -136,6 +139,7 @@ contract CTFExchangeFeeManager is IFeeEstimation, UserTierManager, ReferralManag
         bool enabled,
         uint256 minFeeAmount
     ) external onlyOperator {
+        // Validate fee rates don't exceed maximum
         uint256 maxFeeRate = getMaxFeeRate();
         if (makerFeeRateBps > maxFeeRate || takerFeeRateBps > maxFeeRate) revert FeeRateExceedsMaximum();
 
@@ -180,8 +184,18 @@ contract CTFExchangeFeeManager is IFeeEstimation, UserTierManager, ReferralManag
         uint256 feeRateBps = order.feeRateBps;
 
         // Calculate base fee
+        // Special handling for market orders (takerAmount == 0)
         if (order.takerAmount == 0) {
-            // Market order: use worst-case price (0.5) for conservative estimate
+            // Market order: we don't know the actual price until execution
+            // For conservative estimate, assume price = 0.5 (the worst case for curved fee)
+            // At price = 0.5, curved fee reaches maximum: fee = feeRate * 0.5 * 0.5 * amount = 0.25 * feeRate * amount
+            // This ensures user won't pay more than estimated
+
+            // The curved fee formula is: fee = feeRate * price * (1-price) * outcomeTokens
+            // Maximum occurs at price = 0.5: fee_max = feeRate * 0.25 * outcomeTokens
+            // We can calculate this directly without hardcoding price value:
+            // fee_max = (feeRate * fillAmount * 25) / (100 * 10000)
+            //         = (feeRate * fillAmount) / (4 * 10000)
             estimate.baseFee = (fillAmount * feeRateBps) / (4 * 10000);
         } else {
             // Limit order: use curved fee formula
@@ -618,13 +632,20 @@ contract CTFExchangeFeeManager is IFeeEstimation, UserTierManager, ReferralManag
 
             return this.estimateFeeWithAmount(takerUser, modifiedOrder, fillAmount, collateralToken);
         } else {
-            // Taker receives conditional tokens and maker has non-zero fee - no base fee
-            // However, minFee still applies (matches Trading.sol behavior)
-            // Use same pattern as above: call estimateFeeWithAmount with feeRateBps = 0
-            Order memory modifiedOrder = takerOrder;
-            modifiedOrder.feeRateBps = 0;  // No base fee, but minFee will still be applied
-
-            return this.estimateFeeWithAmount(takerUser, modifiedOrder, fillAmount, collateralToken);
+            // Taker receives conditional tokens and maker has non-zero fee - no taker fee
+            estimate.baseFee = 0;
+            estimate.totalFee = 0;
+            estimate.platformRevenue = 0;
+            estimate.userDiscountBps = 0;
+            estimate.userDiscountAmount = 0;
+            estimate.referralDiscountBps = 0;
+            estimate.referralDiscountAmount = 0;
+            estimate.referrerRebateAmount = 0;
+            estimate.minFeeAmount = 0;
+            estimate.minFeeApplied = false;
+            estimate.feeRateBps = 0;
+            uint256 takingAmount = CalculatorHelper.calculateTakingAmount(fillAmount, takerOrder.makerAmount, takerOrder.takerAmount);
+            estimate.price = CalculatorHelper._calculatePrice(fillAmount, takingAmount, takerOrder.side);
         }
     }
 
@@ -675,5 +696,4 @@ contract CTFExchangeFeeManager is IFeeEstimation, UserTierManager, ReferralManag
         CollateralConfig memory config = collateralConfigs[collateralToken];
         return DecimalConversionLib.convertFromUsd(collateralToken, usdValue, config.decimals);
     }
-
 }

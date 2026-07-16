@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/SafeguardFactory\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 5,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "399944"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcc74bd5d8d2d333d14475e022325555eba3369b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "polygon",

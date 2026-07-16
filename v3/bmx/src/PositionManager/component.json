@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/PositionManager\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://github.com/useboardwalk/morphex-contracts/blob/main/audits/Sherlock_Audit_Jul_2025.pdf"
@@ -35,6 +35,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "392391"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfcc1f41210d9e8119f3db7dbb077695fc6791125",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

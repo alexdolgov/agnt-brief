@@ -1,0 +1,28 @@
+{
+  "component": "DefaultReserveInterestRateStrategy",
+  "main_contract": "DefaultReserveInterestRateStrategy",
+  "source_entry_count": 113,
+  "source_file_count": 113,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DefaultReserveInterestRateStrategy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x03199d8d9aeba9844a4c12d9d4a6fad6c2b3675e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

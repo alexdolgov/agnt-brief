@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/VoteModule\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://cantina.xyz/portfolio/48fc9b98-ded3-43fa-80a2-5aedb3a5a51e"
@@ -25,6 +25,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "394172"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xf70dc8cf16ee9a68249f35c36cd1c1ba9c631ee4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

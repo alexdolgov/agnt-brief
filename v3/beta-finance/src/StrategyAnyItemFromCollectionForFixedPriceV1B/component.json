@@ -1,0 +1,28 @@
+{
+  "component": "StrategyAnyItemFromCollectionForFixedPriceV1B",
+  "main_contract": "StrategyAnyItemFromCollectionForFixedPriceV1B",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StrategyAnyItemFromCollectionForFixedPriceV1B\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x09f93623019049c76209c26517acc2af9d49c69b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

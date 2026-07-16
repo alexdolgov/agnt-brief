@@ -1,8 +1,8 @@
 {
   "component": "SystemRegistryL2-2",
   "main_contract": "SystemRegistryL2",
-  "source_entry_count": 66,
-  "source_file_count": 66,
+  "source_entry_count": 68,
+  "source_file_count": 68,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x18dc926095a7a007c01ef836683fdef4c4371b4e",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1a912eb51d3cf8364ebaee5a982ca37f25ad8848",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391671"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

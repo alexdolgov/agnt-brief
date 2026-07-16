@@ -1,0 +1,28 @@
+{
+  "component": "DstOFTHandler-5",
+  "main_contract": "DstOFTHandler",
+  "source_entry_count": 49,
+  "source_file_count": 49,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DstOFTHandler-5\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x1fe11b217cd3e268d45e402ff7a74d789d6038e5",
+      "is_proxy": true,
+      "implementation_address": "0x86ab2a4a392ad61f2458daeea1801788d519e386",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

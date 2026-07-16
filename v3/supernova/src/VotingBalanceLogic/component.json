@@ -1,8 +1,8 @@
 {
   "component": "VotingBalanceLogic",
   "main_contract": "VotingBalanceLogic",
-  "source_entry_count": 3,
-  "source_file_count": 3,
+  "source_entry_count": 5,
+  "source_file_count": 5,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -11,20 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://resources.supernova.xyz/Paladin_Supernova_Final_Report.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xed686a5b0bf0df5c97f8eabd1b776ae399319847",
+      "address": "0x1de64cd9de11525f9bc1494d1f7d39d83da20e28",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399857"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

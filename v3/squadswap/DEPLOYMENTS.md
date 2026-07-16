@@ -1,20 +1,80 @@
 # squadswap — deployments
 
-12 verified deployment(s) across 12 component(s).
+72 verified deployment(s) across 47 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| base | `0xf48d22968e87c52743f9052d8e608ecd41facacc` | SmartRouter-2 | impl | live | no |
-| blast | `0x03439c1f8161c37e37202ab7fa9f390e01c8f7bb` | NonfungiblePositionManager-2 | impl | live | no |
-| blast | `0x152176a1e3c112d96aa305fa1f5ac6997b2c53dd` | SmartRouter-3 | impl | live | no |
-| blast | `0xa3f309e9691d44aca3344a0f08c6bf30ee4e395c` | SquadswapRouter02-2 | impl | live | no |
+| base | `0x08ccb86a31270fd97d927a4e17934c6262a68b7e` | SquadOFT | impl | live | no |
+| base | `0x110909bc7d16465d1d0fa76c3fcd498830bc1abf` | SquadV3PoolDeployer | impl | live | no |
+| base | `0x11b7018204cb458741b56725422bc64cf7be7d99` | SquadswapFactory | impl | live | yes |
+| base | `0x13efb07140ce67f45256f8ceb230563fc041560b` | UnsupportedProtocol | impl | live | no |
+| base | `0x143bc7691c777f608fb0d91d777dd4d6f57d94d9` | IFODeployerV10-2 | impl | live | no |
+| base | `0x1444037d01234cb4d0c36dadb0cd0534b7cf27fc` | QuoterV2 | impl | live | no |
+| base | `0x1bc323a5a87e6c7f463b805112db39507fbb70e7` | SquadswapFactory | impl | live | yes |
+| base | `0x369967bd0bd3b7550b16d251d42def66fc78d279` | SmartRouterHelper | impl | live | no |
+| base | `0x3767e2bc3e9c5ceb8be25513ae2e6937df66aa9f` | SquadswapRouter02 | impl | live | no |
+| base | `0x633faf3dac3677b51ea7a53a81b79aee944714dc` | TickLens | impl | live | no |
+| base | `0x6d3a3ac01e7adad98480b5d4951a83b141c8fd75` | V3Migrator | impl | live | no |
+| base | `0x6daafc12f65801afb2f0b0212a8229f224acf576` | SwapRouter | impl | live | no |
+| base | `0x7171ea998e068ab490c7c4f3afb86a146dfea1a7` | SmartChefFactory-2 | impl | live | no |
+| base | `0x7f5f5a9542a61fd6948f08966b89396fbf6fd4cf` | FarmBooster-2 | impl | live | no |
+| base | `0x829ce74128ea95c72aa379168df529feaa464aee` | SquadV3Factory | impl | live | no |
+| base | `0x84863ed76def209dceca9f8ba703366c550a2598` | CLFeeManagerHook | impl | live | no |
+| base | `0x87b10463f06767611e26ff33b7b82434a0749d09` | MasterChefV3 | impl | live | no |
+| base | `0x89c0619e7a798309193438b3cff11f1f31266711` | MasterChefV3-2 | impl | live | no |
+| base | `0x933f979e46552e776772d0cfd5794de833a409b9` | NonfungiblePositionManager | impl | live | no |
+| base | `0x95e8014d86af94e6abea38822082da728b9fe902` | SquadswapRouter02 | impl | live | no |
+| base | `0x9cbb069efbd193e239b66540cf43d5b022a41691` | SquadV3PoolManager-2 | impl | live | no |
+| base | `0xb00152041c98a5547252f411ebc8b39637288fa2` | QuoterV2-2 | impl | live | no |
+| base | `0xb3a2090ac9202da7948634f6e603ada179dd529e` | MasterChefV2 | impl | live | no |
+| base | `0xb6171582c75421a740dcc15e4d873a34cb2ebb48` | MasterChefV2-3 | impl | live | no |
+| base | `0xc49f63335c1e648ea2a4a75e8067241ff271d25c` | MasterChefV2 | impl | live | no |
+| base | `0xc589b6e676a7e716da944b73bf4ae4e75bc6061e` | FarmBooster | impl | live | no |
+| base | `0xc639f1a10c10df80500713dd8b7e2ef85f8d90e2` | FeeManager | impl | live | no |
+| base | `0xd4db07c5998d26cb5e653781f232fbe9dfc6abdd` | BinFeeManagerHook | impl | live | no |
+| base | `0xd605072c79c4e7d85174600f59c335420cb713aa` | SquadswapRouter02 | impl | live | no |
+| base | `0xd6bd395fca868071edc79fe6242176a48ca83e64` | SquadswapFactory | impl | live | yes |
+| base | `0xda3eb4017f761f9d57c749f8c4ec18364a019426` | BinFeeManagerHook | impl | live | no |
+| base | `0xdee10310e729c36a560c72c0e8e3be0e46673063` | SquadInterfaceMulticall | impl | live | no |
+| base | `0xe55d12a1326eaa5d54e6fca257a0c0fcdf524377` | SmartRouter | impl | live | no |
+| base | `0xf397f14acf5a0e2810c382d15d633c0308e86c97` | CLFeeManagerHook | impl | live | no |
+| base | `0xf48d22968e87c52743f9052d8e608ecd41facacc` | SmartRouter-3 | impl | live | no |
+| blast | `0x03439c1f8161c37e37202ab7fa9f390e01c8f7bb` | NonfungiblePositionManager-3 | impl | live | no |
+| blast | `0x08ccb86a31270fd97d927a4e17934c6262a68b7e` | SquadOFT-2 | impl | live | no |
+| blast | `0x152176a1e3c112d96aa305fa1f5ac6997b2c53dd` | SmartRouter-4 | impl | live | no |
+| blast | `0xa3f309e9691d44aca3344a0f08c6bf30ee4e395c` | SquadswapRouter02-4 | impl | live | no |
+| bsc | `0x05fff74251a29dac98e10a4314ecf05031c5fb39` | IFODeployerV10 | impl | live | no |
+| bsc | `0x0ec6a90be27728272796d456656e05989860ab86` | BinFeeManagerHook | impl | live | no |
 | bsc | `0x10d8612d9d8269e322ab551c18a307cb4d6bc07b` | SquadV3Factory | impl | live | no |
+| bsc | `0x27f233059ee83406a67730fb7ca31af27ad8cfaa` | UnsupportedProtocol | impl | live | no |
+| bsc | `0x2ca14af00e6847c0600067f94a8b7cbfaff96868` | MasterChefV3 | impl | live | no |
+| bsc | `0x2d2567dec25c9795117228adc7fd58116d2e310c` | SquadToken | impl | live | no |
+| bsc | `0x2e881a10f682a3b2cbaaf8fc5a9a94e98d4879b4` | MasterChefV2-2 | impl | live | no |
+| bsc | `0x391eaa90f931c6330132efe6c73ebdf77d782ef5` | SquadV3PoolManager | impl | live | no |
+| bsc | `0x4f0ece46362310ae93aee49c3713e77455eda1b8` | NonfungiblePositionManager-2 | impl | live | no |
 | bsc | `0x501535ef0b92ee1df5c12f47720f1e479b1db7b4` | NonfungiblePositionManager | proxy | live | no |
+| bsc | `0x52e2f8f52e27918aeb3995b5e49da38ce9cda89e` | FarmBooster | impl | live | no |
 | bsc | `0x56956af389c6bc07f4c57837b49dd03b4238ef70` | SwapRouter | impl | live | no |
 | bsc | `0x5af85b993645af4e530f93721653fb9b6a424b00` | FeeManager | impl | live | no |
+| bsc | `0x606d6f19081fe3db277c3400cdbfed2ea0534955` | SquadV3Pool | impl | live | no |
 | bsc | `0x6427824d446e5be25326ab1b88c8102f0d52ec16` | SmartChefFactory | impl | live | no |
+| bsc | `0x672d6081d56be6874577a8c521c47394e508c9ca` | FarmBooster-2 | impl | live | no |
+| bsc | `0x73c5c84703540ed1f1f279614853a302cc255c0a` | CLFeeManagerHook-2 | impl | live | no |
+| bsc | `0x73e5fd3b64c59f1e1a1cab159656444f16a58113` | BinFeeManagerHook | impl | live | no |
+| bsc | `0x79a4be88afed3fc8cf331905cd6dd404ab4b0b18` | CLFeeManagerHook | impl | live | no |
+| bsc | `0x8507743c30ae007ab2ad8523b52f6a1d5155611c` | SquadswapRouter02-2 | impl | live | no |
+| bsc | `0x8b0c61843dc450637e88e524666f5fe18ccc727b` | SmartRouter-2 | impl | live | no |
 | bsc | `0x918adf1f2c03b244823cd712e010b6e3cd653dba` | SquadswapFactory | impl | live | yes |
-| bsc | `0xcf870c78b7985a5b67a6f3f547678387015ee48d` | SquadswapRouter02 | impl | live | yes |
+| bsc | `0x9d8b42760655a0ccd51f3153ee5f6b828ecafb3c` | FeeManager-2 | impl | live | no |
+| bsc | `0x9fb9815ca1417b06466aaa86521a28ba83d0bd33` | SquadV3Pool | impl | live | no |
+| bsc | `0xa4843b1247460dd9a66a70386cb9a5934f67592d` | SquadswapInterfaceMulticallV2 | impl | live | no |
+| bsc | `0xa773b9f08643816524fd614db7f8a74f674440d1` | SquadswapPair | impl | live | no |
+| bsc | `0xa95d87b443e1929465931611b7951b92c1746dae` | SquadV3Pool | impl | live | no |
+| bsc | `0xaf4b332ddba499b6116235a095cee2f2030bcbc0` | SwapRouter-2 | impl | live | no |
+| bsc | `0xb6bb744fb59fa399d09f67ae3634942f533b577f` | SquadV3Pool | impl | live | no |
+| bsc | `0xcf870c78b7985a5b67a6f3f547678387015ee48d` | SquadswapRouter02-3 | impl | live | yes |
+| bsc | `0xec6743618f18ba97b1973c476feab0da387a76ca` | MasterChefV2 | impl | live | no |
+| bsc | `0xefcb55270c5fe85fc8eb6a311dc5aa9479839f0d` | SquadV3Pool | impl | live | no |
 | bsc | `0xfb96f59a63c60dfc8e13547b3e9e366a3c0b8b5b` | SmartRouter | impl | live | no |
 
 ## Source unavailable (7)

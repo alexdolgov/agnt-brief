@@ -1,0 +1,38 @@
+{
+  "component": "GmxV2IsolationModeVaultFactory-3",
+  "main_contract": "GmxV2IsolationModeVaultFactory",
+  "source_entry_count": 114,
+  "source_file_count": 114,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GmxV2IsolationModeVaultFactory-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2d165a76dd3e552df3860789331ab73c5a3d7f92",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb15bbbfcff6c411410c66642306d1ffa7ecec4d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

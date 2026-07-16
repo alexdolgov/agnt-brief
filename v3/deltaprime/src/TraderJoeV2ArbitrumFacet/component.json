@@ -1,8 +1,8 @@
 {
   "component": "TraderJoeV2ArbitrumFacet",
   "main_contract": "TraderJoeV2ArbitrumFacet",
-  "source_entry_count": 77,
-  "source_file_count": 77,
+  "source_entry_count": 82,
+  "source_file_count": 82,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xb4554d255682c78043e5e41cb7d0cc070065751c",
+      "address": "0x099702595b16f34f6c7192150fcbfcab882397a2",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393625"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

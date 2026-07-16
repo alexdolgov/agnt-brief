@@ -1,12 +1,27 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.6.11;
 
+/*@@@@@@@       @@@@@@@@@
+ @@@@@@@@@       @@@@@@@@@
+  @@@@@@@@@       @@@@@@@@@
+   @@@@@@@@@       @@@@@@@@@
+    @@@@@@@@@@@@@@@@@@@@@@@@@
+     @@@@@  HYPERLANE  @@@@@@@
+    @@@@@@@@@@@@@@@@@@@@@@@@@
+   @@@@@@@@@       @@@@@@@@@
+  @@@@@@@@@       @@@@@@@@@
+ @@@@@@@@@       @@@@@@@@@
+@@@@@@@@@       @@@@@@@@*/
+
+// ============ Internal Imports ============
 import {Router} from "./Router.sol";
 import {StandardHookMetadata} from "../hooks/libs/StandardHookMetadata.sol";
 
 abstract contract GasRouter is Router {
+    event GasSet(uint32 domain, uint256 gas);
+
     // ============ Mutable Storage ============
-    mapping(uint32 => uint256) public destinationGas;
+    mapping(uint32 destinationDomain => uint256 gasLimit) public destinationGas;
 
     struct GasRouterConfig {
         uint32 domain;
@@ -43,18 +58,25 @@ abstract contract GasRouter is Router {
      */
     function quoteGasPayment(
         uint32 _destinationDomain
-    ) external view returns (uint256 _gasPayment) {
-        return _quoteDispatch(_destinationDomain, "");
+    ) public view virtual returns (uint256) {
+        return
+            _Router_quoteDispatch(
+                _destinationDomain,
+                "",
+                _GasRouter_hookMetadata(_destinationDomain),
+                address(hook)
+            );
     }
 
-    function _metadata(
+    function _GasRouter_hookMetadata(
         uint32 _destination
-    ) internal view virtual override returns (bytes memory) {
+    ) internal view returns (bytes memory) {
         return
             StandardHookMetadata.overrideGasLimit(destinationGas[_destination]);
     }
 
     function _setDestinationGas(uint32 domain, uint256 gas) internal {
         destinationGas[domain] = gas;
+        emit GasSet(domain, gas);
     }
 }

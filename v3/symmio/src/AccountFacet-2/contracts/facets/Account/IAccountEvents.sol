@@ -2,52 +2,28 @@
 // This contract is licensed under the SYMM Core Business Source License 1.1
 // Copyright (c) 2023 Symmetry Labs AG
 // For more information, see https://docs.symm.io/legal-disclaimer/license
-pragma solidity >=0.8.19;
+pragma solidity >=0.8.18;
 
 interface IAccountEvents {
-	event Deposit(address indexed sender, address indexed user, address indexed collateral, uint256 amount, uint256 newBalance);
-	event VirtualDeposit(address indexed sender, address indexed user, address indexed collateral, uint256 amount, uint256 newBalance);
-	event InternalTransfer(
-		address indexed sender,
-		address indexed receiver,
-		address indexed collateral,
+	event Deposit(address sender, address user, uint256 amount);
+	event Withdraw(address sender, address user, uint256 amount);
+	event AllocatePartyA(address user, uint256 amount, uint256 newAllocatedBalance);
+	event AllocatePartyA(address user, uint256 amount); // For backward compatibility, will be removed in future
+	event DeallocatePartyA(address user, uint256 amount, uint256 newAllocatedBalance);
+	event DeallocatePartyA(address user, uint256 amount); // For backward compatibility, will be removed in future
+	event InternalTransfer(address sender, address user, uint256 userNewAllocatedBalance, uint256 amount);
+	event AllocateForPartyB(address partyB, address partyA, uint256 amount, uint256 newAllocatedBalance);
+	event AllocateForPartyB(address partyB, address partyA, uint256 amount); // For backward compatibility, will be removed in future
+	event DeallocateForPartyB(address partyB, address partyA, uint256 amount, uint256 newAllocatedBalance);
+	event DeallocateForPartyB(address partyB, address partyA, uint256 amount); // For backward compatibility, will be removed in future
+	event TransferAllocation(
 		uint256 amount,
-		uint256 newBalanceOfSender,
-		uint256 newBalanceOfReceiver
+		address origin,
+		uint256 originNewAllocatedBalance,
+		address recipient,
+		uint256 recipientNewAllocatedBalance
 	);
-	event ExternalTransfer(address indexed sender, address indexed user, address indexed collateral, uint256 amount, address target);
-	event InitiateWithdraw(uint256 id, address indexed user, address indexed to, address indexed collateral, uint256 amount, uint256 newBalance);
-	event InitiateExpressWithdraw(
-		uint256 id,
-		address indexed user,
-		address indexed to,
-		address indexed collateral,
-		address provider,
-		bytes userData,
-		uint256 amount,
-		uint256 newBalance
-	);
-	event CompleteWithdraw(uint256 id);
-	event CancelWithdraw(uint256 id, address indexed user, address indexed collateral, uint256 amount, uint256 newBalance);
-	event SuspendWithdraw(uint256 id, address suspender);
-	event RestoreWithdraw(uint256 id, uint256 validAmount);
-	event Allocate(
-		address indexed user,
-		address indexed collateral,
-		address indexed counterParty,
-		uint256 amount,
-		uint256 newBalance,
-		int256 newAllocatedBalance
-	);
-	event Deallocate(
-		address indexed user,
-		address indexed collateral,
-		address indexed counterParty,
-		uint256 amount,
-		uint256 newBalance,
-		int256 newAllocatedBalance
-	);
-
-	event AllocateToReserveBalance(address indexed user, address indexed collateral, uint256 amount, uint256 newBalance);
-	event DeallocateFromReserveBalance(address indexed user, address indexed collateral, uint256 amount, uint256 newBalance);
+	event TransferAllocation(uint256 amount, address origin, address recipient); // For backward compatibility, will be removed in future
+	event DepositToReserveVault(address sender, address partyB, uint256 amount);
+	event WithdrawFromReserveVault(address partyB, uint256 amount);
 }

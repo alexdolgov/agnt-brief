@@ -1,8 +1,8 @@
 {
   "component": "RewardDistributorV2",
   "main_contract": "RewardDistributorV2",
-  "source_entry_count": 1,
-  "source_file_count": 1,
+  "source_entry_count": 4,
+  "source_file_count": 4,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "mode",
-      "chain_id": 34443,
-      "address": "0x366152fc0fc4680e0a05ce9739a4210228c72ba3",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0259083181ae54730f4fbb1c174a53e21bce5266",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "392411"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

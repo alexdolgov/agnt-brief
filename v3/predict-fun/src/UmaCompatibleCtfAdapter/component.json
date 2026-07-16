@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/UmaCompatibleCtfAdapter\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -27,12 +27,52 @@
     {
       "chain": "bsc",
       "chain_id": 56,
+      "address": "0x2c8635a581d216896305abc60b7de902506a0388",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7c7818b14628842708a9ddb99a21d13c5354df64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
       "address": "0x947cc06d38d3cb0a2bb5adfb668b99b4ff53d7b4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "397840"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb51797462b6aed2104b9d6c89aab925ca14641cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe338e653c42c5ce60ece7210cb32a2b2b0e3eb27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "bsc",

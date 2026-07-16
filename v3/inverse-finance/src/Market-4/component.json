@@ -11,28 +11,30 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2022-10-inverse"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xb516247596ca36bf32876199fbdcad6b3322330b",
+      "address": "0x63df5e23db45a2066508318f172ba45b9cd37035",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395445"
+      "logic_topography_row_id": "395436"
     },
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xdc2265cbd15bed67b5f2c0b82e23fce4a07ddf6b",
+      "address": "0x7cd3ab8354289bef52c84c2bf0a54e3608e66b37",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395449"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

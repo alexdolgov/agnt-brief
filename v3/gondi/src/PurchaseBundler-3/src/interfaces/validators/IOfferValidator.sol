@@ -15,7 +15,10 @@ interface IOfferValidator {
     /// @param _nftCollateralAddress The NFT collateral address to validate.
     /// @param _tokenId The token ID to validate.
     /// @param _validatorData The validator data to validate.
-    function validateOffer(IMultiSourceLoan.LoanOffer calldata _offer, address _nftCollateralAddress, uint256 _tokenId, bytes calldata _validatorData)
-        external
-        view;
+    function validateOffer(
+        IMultiSourceLoan.LoanOffer calldata _offer,
+        address _nftCollateralAddress,
+        uint256 _tokenId,
+        bytes calldata _validatorData
+    ) external view;
 }

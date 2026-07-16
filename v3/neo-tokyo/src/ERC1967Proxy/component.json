@@ -1,0 +1,68 @@
+{
+  "component": "ERC1967Proxy",
+  "main_contract": "ERC1967Proxy",
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Proxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e9f3c6883993a7a69c37213f2eb9a17450ad6d3",
+      "is_proxy": true,
+      "implementation_address": "0x91173591a5327def2f79982602da5a73df7a372d",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb58ae9e93b8bee7d890ad87a2a70c135a3bf4b4e",
+      "is_proxy": true,
+      "implementation_address": "0x8c629e85ed423beda3ad61fe99c480fa6ab23165",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcfc6a15b2952b6014a993a0c16c9d580d862e21a",
+      "is_proxy": true,
+      "implementation_address": "0x8e4cb89a9e281924e36f82a697722f117ac94550",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe7489ea1847395d7eead33e9c85fe327d513d249",
+      "is_proxy": true,
+      "implementation_address": "0xa686d108e03354bd0ff9bcecfa3c7f2587113b9e",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf5205c058adf284ba75420428b09c846c78428f5",
+      "is_proxy": true,
+      "implementation_address": "0xf90840586da938676376b8bee077dfba1307e396",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

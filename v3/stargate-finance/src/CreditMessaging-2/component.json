@@ -1,0 +1,58 @@
+{
+  "component": "CreditMessaging-2",
+  "main_contract": "CreditMessaging",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CreditMessaging-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x102d758f688a4c1c5a80b116bd945d4455460282",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x0535d19ca4ef74119c31e1347d5f85232955cd31",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xa45b5130f36cdca45667738e2a258ab09f4a5f7f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xd47b03ee6d86cf251ee7860fb2acf9f91b9fd4d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

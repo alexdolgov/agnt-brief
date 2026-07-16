@@ -1,0 +1,401 @@
+//SPDX-License-Identifier: CC-BY-NC-ND-4.0
+pragma solidity ^0.8.22;
+
+import {ITermController} from "./interfaces/ITermController.sol";
+import {ITermEventEmitter} from "./interfaces/ITermEventEmitter.sol";
+import {TermAuctionGroup} from "./lib/TermAuctionGroup.sol";
+import {TermContractGroup} from "./lib/TermContractGroup.sol";
+import {TermAuction} from "./TermAuction.sol";
+import {TermAuctionBidLocker} from "./TermAuctionBidLocker.sol";
+import {TermAuctionOfferLocker} from "./TermAuctionOfferLocker.sol";
+import {TermPriceConsumerV3} from "./TermPriceConsumerV3.sol";
+import {TermRepoCollateralManager} from "./TermRepoCollateralManager.sol";
+import {TermRepoLocker} from "./TermRepoLocker.sol";
+import {TermRepoRolloverManager} from "./TermRepoRolloverManager.sol";
+import {TermRepoServicer} from "./TermRepoServicer.sol";
+import {TermRepoToken} from "./TermRepoToken.sol";
+import {AccessControlUpgradeable} from "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
+import {Initializable} from "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+import {Versionable} from "./lib/Versionable.sol";
+
+/// @author TermLabs
+/// @title Term Initializer
+/// @notice This contract provides utility methods for initializing/pairing a set of term/auction contracts
+/// @dev This contract operates at the protocol level and provides utility functions for deploying terms/auctions
+contract TermInitializer is AccessControlUpgradeable, Versionable {
+    // ========================================================================
+    // = Errors ===============================================================
+    // ========================================================================
+
+    error DeployingPaused();
+
+    // ========================================================================
+    // = Access Roles =========================================================
+    // ========================================================================
+
+    bytes32 public constant DEPLOYER_ROLE = keccak256("DEPLOYER_ROLE");
+    bytes32 public constant INITIALIZER_APPROVAL_ROLE =
+        keccak256("INITIALIZER_APPROVAL_ROLE");
+    bytes32 public constant DEVOPS_ROLE = keccak256("DEVOPS_ROLE");
+
+    // ========================================================================
+    // = State Variables ======================================================
+    // ========================================================================
+
+    ITermController internal controller;
+    ITermEventEmitter internal emitter;
+    TermPriceConsumerV3 internal priceOracle;
+    address internal termDiamond;
+    bool internal deployingPaused;
+
+    // ========================================================================
+    // = Modifiers  ===========================================================
+    // ========================================================================
+
+    modifier whileDeployingNotPaused() {
+        if (deployingPaused) {
+            revert DeployingPaused();
+        }
+        _;
+    }
+
+    // ========================================================================
+    // = Initialize (https://docs.openzeppelin.com/contracts/4.x/upgradeable) =
+    // ========================================================================
+
+    /// @custom:oz-upgrades-unsafe-allow constructor
+    constructor(address initializerApprovalRole_, address devopsWallet_) {
+        _grantRole(DEVOPS_ROLE, devopsWallet_);
+        _grantRole(INITIALIZER_APPROVAL_ROLE, initializerApprovalRole_);
+        _grantRole(DEPLOYER_ROLE, msg.sender);
+        deployingPaused = false;
+    }
+
+    function pairTermContracts(
+        ITermController controller_,
+        ITermEventEmitter emitter_,
+        TermPriceConsumerV3 priceOracle_,
+        address termDiamond_
+    ) external onlyRole(DEPLOYER_ROLE) {
+        controller = controller_;
+        emitter = emitter_;
+        priceOracle = priceOracle_;
+        termDiamond = termDiamond_;
+    }
+
+    // ========================================================================
+    // = Interface/API ========================================================
+    // ========================================================================
+
+    /// @notice Sets up a set of deployed term contracts
+    function setupTerm(
+        TermContractGroup calldata termContractGroup,
+        address devOpsMultiSig,
+        address adminWallet,
+        address deployerWallet,
+        string memory termVersion,
+        string memory auctionVersion
+    ) external onlyRole(INITIALIZER_APPROVAL_ROLE) whileDeployingNotPaused {
+        require(deployerWallet != address(0), "Zero address deployer wallet");
+        require(
+            controller.isTermDeployed(
+                address(termContractGroup.termRepoServicer)
+            ),
+            "Non-Term TRS"
+        );
+        require(
+            controller.isTermDeployed(
+                address(termContractGroup.termRepoCollateralManager)
+            ),
+            "Non-Term TRCM"
+        );
+        require(
+            controller.isTermDeployed(
+                address(termContractGroup.termRepoLocker)
+            ),
+            "Non-Term TRL"
+        );
+        require(
+            controller.isTermDeployed(address(termContractGroup.termRepoToken)),
+            "Non-Term TRT"
+        );
+        require(
+            controller.isTermDeployed(
+                address(termContractGroup.rolloverManager)
+            ),
+            "Non-Term TRM"
+        );
+
+        require(
+            controller.isTermDeployed(
+                address(termContractGroup.termAuctionBidLocker)
+            ),
+            "Non-Term TABL"
+        );
+        require(
+            controller.isTermDeployed(
+                address(termContractGroup.termAuctionOfferLocker)
+            ),
+            "Non-Term TAOL"
+        );
+        require(
+            controller.isTermDeployed(address(termContractGroup.auction)),
+            "Non-Term TA"
+        );
+
+        require(
+            address(termContractGroup.termRepoServicer) != address(0),
+            "Zero Address Servicer"
+        );
+        require(
+            address(termContractGroup.termRepoCollateralManager) != address(0),
+            "Zero Address Collateral Manager"
+        );
+        require(
+            address(termContractGroup.termRepoLocker) != address(0),
+            "Zero Address Locker"
+        );
+        require(
+            address(termContractGroup.termRepoToken) != address(0),
+            "Zero Address RepoToken"
+        );
+        require(
+            address(termContractGroup.rolloverManager) != address(0),
+            "Zero Address RolloverManager"
+        );
+        require(
+            address(termContractGroup.termAuctionBidLocker) != address(0),
+            "Zero Address termAuctionBidLocker"
+        );
+        require(
+            address(termContractGroup.termAuctionOfferLocker) != address(0),
+            "Zero Address termAuctionOfferLocker"
+        );
+        require(
+            address(termContractGroup.auction) != address(0),
+            "Zero Address auction"
+        );
+        require(
+            !controller.registeredRepoIds(termContractGroup.termRepoServicer.termRepoId()),
+            "Duplicate Repo ID"
+        );
+        require(
+            !controller.registeredAuctionIds((termContractGroup.termAuctionBidLocker).termAuctionId()),
+            "Duplicate Auction ID"
+        );
+
+        emitter.pairTermContract(address(termContractGroup.termRepoLocker));
+
+        controller.pairAuction(address(termContractGroup.auction));
+        controller.registerRepoId(termContractGroup.termRepoServicer.termRepoId());
+        controller.registerAuctionId(termContractGroup.termAuctionBidLocker.termAuctionId());
+
+        termContractGroup.termRepoLocker.pairTermContracts(
+            address(termContractGroup.termRepoCollateralManager),
+            address(termContractGroup.termRepoServicer),
+            emitter,
+            devOpsMultiSig,
+            adminWallet
+        );
+
+        emitter.pairTermContract(address(termContractGroup.termRepoToken));
+        termContractGroup.termRepoToken.pairTermContracts(
+            address(termContractGroup.termRepoServicer),
+            emitter,
+            devOpsMultiSig,
+            adminWallet
+        );
+
+        emitter.pairTermContract(
+            address(termContractGroup.termAuctionBidLocker)
+        );
+        termContractGroup.termAuctionBidLocker.pairTermContracts(
+            address(termContractGroup.auction),
+            termContractGroup.termRepoServicer,
+            emitter,
+            termContractGroup.termRepoCollateralManager,
+            priceOracle,
+            devOpsMultiSig,
+            adminWallet,
+            termDiamond
+        );
+
+        emitter.pairTermContract(
+            address(termContractGroup.termAuctionOfferLocker)
+        );
+        termContractGroup.termAuctionOfferLocker.pairTermContracts(
+            address(termContractGroup.auction),
+            emitter,
+            termContractGroup.termRepoServicer,
+            devOpsMultiSig,
+            adminWallet,
+            termDiamond
+        );
+
+        emitter.pairTermContract(address(termContractGroup.auction));
+        termContractGroup.auction.pairTermContracts(
+            emitter,
+            controller,
+            termContractGroup.termRepoServicer,
+            termContractGroup.termAuctionBidLocker,
+            termContractGroup.termAuctionOfferLocker,
+            devOpsMultiSig,
+            adminWallet,
+            deployerWallet,
+            auctionVersion
+        );
+
+        emitter.pairTermContract(address(termContractGroup.termRepoServicer));
+        termContractGroup.termRepoServicer.pairTermContracts(
+            address(termContractGroup.termRepoLocker),
+            address(termContractGroup.termRepoCollateralManager),
+            address(termContractGroup.termRepoToken),
+            termDiamond,
+            address(termContractGroup.termAuctionOfferLocker),
+            address(termContractGroup.auction),
+            address(termContractGroup.rolloverManager),
+            devOpsMultiSig,
+            deployerWallet,
+            termVersion
+        );
+
+        emitter.pairTermContract(
+            address(termContractGroup.termRepoCollateralManager)
+        );
+        termContractGroup.termRepoCollateralManager.pairTermContracts(
+            address(termContractGroup.termRepoLocker),
+            address(termContractGroup.termRepoServicer),
+            address(termContractGroup.termAuctionBidLocker),
+            address(termContractGroup.auction),
+            address(controller),
+            address(priceOracle),
+            address(termContractGroup.rolloverManager),
+            termDiamond,
+            devOpsMultiSig,
+            adminWallet
+        );
+
+        emitter.pairTermContract(address(termContractGroup.rolloverManager));
+        termContractGroup.rolloverManager.pairTermContracts(
+            address(termContractGroup.termRepoServicer),
+            termDiamond,
+            emitter,
+            devOpsMultiSig,
+            adminWallet
+        );
+    }
+
+    /// @notice Sets up a set of deployed term contracts
+    function setupAuction(
+        TermRepoServicer termRepoServicer,
+        TermRepoCollateralManager termRepoCollateralManager,
+        TermAuctionOfferLocker termAuctionOfferLocker,
+        TermAuctionBidLocker termAuctionBidLocker,
+        TermAuction auction,
+        address devOpsMultiSig,
+        address adminWallet,
+        address deployerWallet,
+        string calldata auctionVersion
+    ) external onlyRole(INITIALIZER_APPROVAL_ROLE) whileDeployingNotPaused {
+        require(deployerWallet != address(0), "Zero address deployer wallet");
+        require(
+            controller.isTermDeployed(address(termRepoServicer)),
+            "Non-Term TRS"
+        );
+        require(
+            controller.isTermDeployed(address(termRepoCollateralManager)),
+            "Non-Term TRCM"
+        );
+
+        require(
+            controller.isTermDeployed(address(termAuctionBidLocker)),
+            "Non-Term TABL"
+        );
+        require(
+            controller.isTermDeployed(address(termAuctionOfferLocker)),
+            "Non-Term TAOL"
+        );
+        require(controller.isTermDeployed(address(auction)), "Non-Term TA");
+
+        require(
+            address(termAuctionBidLocker) != address(0),
+            "Zero Address termAuctionBidLocker"
+        );
+        require(
+            address(termAuctionOfferLocker) != address(0),
+            "Zero Address termAuctionOfferLocker"
+        );
+        require(address(auction) != address(0), "Zero Address auction");
+
+        require(
+            !controller.registeredAuctionIds((termAuctionBidLocker).termAuctionId()),
+            "Duplicate Auction ID"
+        );
+
+        controller.pairAuction(address(auction));
+        controller.registerAuctionId(termAuctionBidLocker.termAuctionId());
+
+        emitter.pairTermContract(address(termAuctionBidLocker));
+        termAuctionBidLocker.pairTermContracts(
+            address(auction),
+            termRepoServicer,
+            emitter,
+            termRepoCollateralManager,
+            priceOracle,
+            devOpsMultiSig,
+            adminWallet,
+            termDiamond
+        );
+
+        emitter.pairTermContract(address(termAuctionOfferLocker));
+        termAuctionOfferLocker.pairTermContracts(
+            address(auction),
+            emitter,
+            termRepoServicer,
+            devOpsMultiSig,
+            adminWallet,
+            termDiamond
+        );
+
+        emitter.pairTermContract(address(auction));
+        auction.pairTermContracts(
+            emitter,
+            controller,
+            termRepoServicer,
+            termAuctionBidLocker,
+            termAuctionOfferLocker,
+            devOpsMultiSig,
+            adminWallet,
+            deployerWallet,
+            auctionVersion
+        );
+
+        termRepoCollateralManager.reopenToNewAuction(
+            TermAuctionGroup({
+                auction: auction,
+                termAuctionBidLocker: termAuctionBidLocker,
+                termAuctionOfferLocker: termAuctionOfferLocker
+            })
+        );
+
+        termRepoServicer.reopenToNewAuction(
+            TermAuctionGroup({
+                auction: auction,
+                termAuctionBidLocker: termAuctionBidLocker,
+                termAuctionOfferLocker: termAuctionOfferLocker
+            })
+        );
+    }
+
+    // ========================================================================
+    // = Pause Functions ======================================================
+    // ========================================================================
+
+    function pauseDeploying() external onlyRole(DEVOPS_ROLE) {
+        deployingPaused = true;
+    }
+
+    function unpauseDeploying() external onlyRole(DEVOPS_ROLE) {
+        deployingPaused = false;
+    }
+}

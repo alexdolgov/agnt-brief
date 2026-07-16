@@ -1,8 +1,8 @@
 {
   "component": "SmartLoanWrappedNativeTokenFacet",
   "main_contract": "SmartLoanWrappedNativeTokenFacet",
-  "source_entry_count": 74,
-  "source_file_count": 74,
+  "source_entry_count": 86,
+  "source_file_count": 86,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -11,22 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/PeckShield-Audit-Report-DeltaPrime-v1.0.pdf",
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/Smart_Contract_Audit_DeltaPrime_Protocol_04112022.pdf",
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/blocksec_deltaprime_v1.0-signed.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x388f7ca764a8ef001f3ae4d2d9e0acf57a492d54",
+      "address": "0x05ced72e1d0eb003ded18e8f3ab32133f9046a62",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393564"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

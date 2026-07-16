@@ -17,12 +17,12 @@
     {
       "chain": "linea",
       "chain_id": 59144,
-      "address": "0xbc7695fd00e3b32d08124b7a4287493aee99f9ee",
+      "address": "0x6ed7b91c8133e85921f8028b51a8248488b3336c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "396333"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

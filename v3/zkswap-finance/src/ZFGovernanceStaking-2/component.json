@@ -1,0 +1,33 @@
+{
+  "component": "ZFGovernanceStaking-2",
+  "main_contract": "ZFGovernanceStaking",
+  "source_entry_count": 11,
+  "source_file_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ZFGovernanceStaking-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/ZkSwapFinance/Audit-Reports/blob/main/8_MythX_ZFGovernanceStaking_Full_Report.pdf",
+    "https://github.com/ZkSwapFinance/Audit-Reports/blob/main/Original_MythX_ZFGovernanceStaking.pdf",
+    "https://github.com/bailsec/BailSec/blob/main/Bailsec%20-%20zkSwap%20Final%20Report%20Github%20(%2BResolution).pdf",
+    "https://github.com/cyberscope-io/audits/blob/main/zkswap-finance/GovernanceStaking.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xcb3d626005e3e209fe7fbf661a9cbe4874c35087",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401598"
+    }
+  ]
+}

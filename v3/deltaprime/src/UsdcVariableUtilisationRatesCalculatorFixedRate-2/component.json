@@ -1,0 +1,28 @@
+{
+  "component": "UsdcVariableUtilisationRatesCalculatorFixedRate-2",
+  "main_contract": "UsdcVariableUtilisationRatesCalculatorFixedRate",
+  "source_entry_count": 5,
+  "source_file_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UsdcVariableUtilisationRatesCalculatorFixedRate-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4c52cf7d7a46793e8a59ae3031e86197745a03b2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "component": "SQD",
   "main_contract": "SQD",
-  "source_entry_count": 6,
-  "source_file_count": 6,
+  "source_entry_count": 10,
+  "source_file_count": 10,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
+      "chain": "ethereum",
+      "chain_id": 1,
       "address": "0x1337420ded5adb9980cfc35f8f2b054ea86f8ab1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399333"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

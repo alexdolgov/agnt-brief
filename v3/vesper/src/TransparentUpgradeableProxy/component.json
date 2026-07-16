@@ -10,21 +10,49 @@
     "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/vesperfi/doc/blob/main/audit/v3%2B/PRE-Bloq_%20Vesper%20Pools%20V3-2021-06-26-certik.pdf"
-  ],
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x0538c8bac84e95a9df8ac10aad17dbe81b9e36ee",
+      "address": "0x13c88a2da8e83ba6933fd3aa51e008986b91b1fd",
       "is_proxy": true,
-      "implementation_address": "0x3ceddef5cbe54674fcbe1b4368a68b8d6a20fc46",
+      "implementation_address": "0x955613704cf4f99e270e7a470c020f7af1379b95",
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "400855"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7c6226a0a3d6e87bb79a301c74004bd0240e639e",
+      "is_proxy": true,
+      "implementation_address": "0x955613704cf4f99e270e7a470c020f7af1379b95",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa17f64b7d3222d538ce0bf137199aed373a6088c",
+      "is_proxy": true,
+      "implementation_address": "0x955613704cf4f99e270e7a470c020f7af1379b95",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfb7fa759fb93e56e1dcd2f0cd7098369c624eb44",
+      "is_proxy": true,
+      "implementation_address": "0x955613704cf4f99e270e7a470c020f7af1379b95",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "component": "LevelFinanceFacet",
   "main_contract": "LevelFinanceFacet",
-  "source_entry_count": 80,
-  "source_file_count": 80,
+  "source_entry_count": 81,
+  "source_file_count": 81,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x17fa27fd76c0c5d97d18b3e78885e0b32c92f66c",
+      "address": "0x0e2cfe411e1f3e3aeedb06af3e5e42fd976eea1d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393549"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

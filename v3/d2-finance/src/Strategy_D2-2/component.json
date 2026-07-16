@@ -1,0 +1,28 @@
+{
+  "component": "Strategy_D2-2",
+  "main_contract": "Strategy_D2",
+  "source_entry_count": 72,
+  "source_file_count": 72,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Strategy_D2-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x31e2bb25c7cf1260c50a6c53d08541c2ed33adfb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

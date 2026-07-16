@@ -1,0 +1,28 @@
+{
+  "component": "NftFarmStrategy-26",
+  "main_contract": "NftFarmStrategy",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/NftFarmStrategy-26\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x296b3fcdba0d0deb5ad5e0a1bfaa63f17ae2d03c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

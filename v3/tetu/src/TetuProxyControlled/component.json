@@ -1,0 +1,68 @@
+{
+  "component": "TetuProxyControlled",
+  "main_contract": "TetuProxyControlled",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TetuProxyControlled\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0fa7c71a07af3784b0784d058ad104a1471afa36",
+      "is_proxy": true,
+      "implementation_address": "0x5f5e497bda08bd1734879f01af2b0785df4b37ab",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1ca723b9dc7cba8fbd15b92cf93c61a297db6cd9",
+      "is_proxy": true,
+      "implementation_address": "0xa78c97c3c4a3aa40a4353869e25193af34584cb3",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x237114ef61b27fdf57132e6c8c4244eeea8323d3",
+      "is_proxy": true,
+      "implementation_address": "0x4d58c8aeb34054afd962550da4797e7dcf7cb650",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc443f1e51f4596b81b4ec4223206f47292608a10",
+      "is_proxy": true,
+      "implementation_address": "0x087deaf057dfce1999321b70907a12268628c4fd",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf4e5dafa487ba89153b9d3d0bcd49d6c77db388d",
+      "is_proxy": true,
+      "implementation_address": "0x5bfdd1041e904b82fca06cc9b0f2c295d22798b8",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

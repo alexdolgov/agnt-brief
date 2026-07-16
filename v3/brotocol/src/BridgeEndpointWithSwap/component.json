@@ -10,49 +10,89 @@
     "build_command": "forge build --root \"src/BridgeEndpointWithSwap\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 4,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xb1c34a9f630edb880f289683cfac2f923b31c94d",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "392516"
-    },
-    {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x5298718429046b1d38106864bbfdc9326c840092",
+      "address": "0x46b20f3106b8bffb9bf63633a854a7a96dfc6379",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "392523"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x18c05ec3799eb15fe49a141ce844e55514438fa7",
+      "address": "0xd15b997505739c02564de7f0e010b42b2f81520d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "392533"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd8994073ba5f6615ab3ea9e8ae1948047bbef1ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x7a5912c6a188d7217db285c890be61d8503a5baf",
+      "address": "0x0d3c781313b1d4abbb45459621f0168826a6cf07",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4306374f07382b36aae832a50831c8c5b26cd41e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa18d9690d03dfbb18ea85588ec5fd2a914b2aac9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xce83dd21264323c1d7d246f347db84a8180970cb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x0f38ed043a1a2ec79b15d7f4fb8d25036680ce03",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "392560"
+      "logic_topography_row_id": "392576"
     }
   ]
 }

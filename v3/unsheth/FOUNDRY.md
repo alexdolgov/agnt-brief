@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/LSDVault"
+forge build --root "src/CommunalFarm"
 ```
 
 ## Build every component

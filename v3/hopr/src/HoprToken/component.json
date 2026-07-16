@@ -1,0 +1,109 @@
+{
+  "component": "HoprToken",
+  "main_contract": "HoprToken",
+  "source_entry_count": 17,
+  "source_file_count": 17,
+  "source_path_remaps": [
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/access/AccessControlEnumerable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-69b7afc3ac70-AccessControlEnumerable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/access/IAccessControlEnumerable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-7d5ba5748dfb-IAccessControlEnumerable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/access/AccessControl.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-15b65da9ecea-AccessControl.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/utils/structs/EnumerableSet.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-883d7f6f854c-EnumerableSet.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/access/IAccessControl.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-6472170edf03-IAccessControl.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/utils/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-515345c29d18-Context.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/utils/Strings.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-4ae4ccb7f186-Strings.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/utils/introspection/ERC165.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-75930337da34-ERC165.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-742bdd8e88bb-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/utils/introspection/IERC1820Registry.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-6b407ededbf3-IERC1820Registry.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/token/ERC777/IERC777Recipient.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-477e46307ecf-IERC777Recipient.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/token/ERC20/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-b051e6ea7179-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/utils/math/SafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-2a4d8ab74a5d-SafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/utils/introspection/IERC165.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-66dd66a3a1ec-IERC165.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HoprToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x428246bd8632f727fec70662b10dc37b519624df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x9c312f8997f215ada9802da9fb281206350ead2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

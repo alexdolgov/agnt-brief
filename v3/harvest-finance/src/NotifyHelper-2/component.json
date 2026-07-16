@@ -1,0 +1,35 @@
+{
+  "component": "NotifyHelper-2",
+  "main_contract": "NotifyHelper",
+  "source_entry_count": 15,
+  "source_file_count": 15,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/NotifyHelper-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/harvest-finance/harvest/blob/master/audits/CertiK-Harvest.pdf",
+    "https://github.com/harvest-finance/harvest/blob/master/audits/Haechi-Harvest.pdf",
+    "https://github.com/harvest-finance/harvest/blob/master/audits/PeckShield-Harvest.pdf",
+    "https://github.com/harvestfi/audits/blob/main/CertiK-Harvest.pdf",
+    "https://github.com/harvestfi/audits/blob/main/Haechi-Harvest.pdf",
+    "https://github.com/harvestfi/audits/blob/main/PeckShield-Harvest.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf71042c88458ff1702c3870f62f4c764712cc9f0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395246"
+    }
+  ]
+}

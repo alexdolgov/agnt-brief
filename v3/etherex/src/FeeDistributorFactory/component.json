@@ -10,12 +10,22 @@
     "build_command": "forge build --root \"src/FeeDistributorFactory\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://cantina.xyz/portfolio/48fc9b98-ded3-43fa-80a2-5aedb3a5a51e"
   ],
   "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x61c56ad143e364dacbb60fc901f7993e9e6f3f6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "linea",
       "chain_id": 59144,

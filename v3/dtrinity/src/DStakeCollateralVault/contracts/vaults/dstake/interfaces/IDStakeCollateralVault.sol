@@ -48,7 +48,11 @@ interface IDStakeCollateralVault {
      * @param amount The amount to send.
      * @param recipient The address to receive the asset.
      */
-    function sendAsset(address vaultAsset, uint256 amount, address recipient) external;
+    function sendAsset(
+        address vaultAsset,
+        uint256 amount,
+        address recipient
+    ) external;
 
     /**
      * @notice Sets the address of the DStakeRouter contract.

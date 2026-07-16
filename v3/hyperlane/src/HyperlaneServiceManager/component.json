@@ -1,0 +1,104 @@
+{
+  "component": "HyperlaneServiceManager",
+  "main_contract": "HyperlaneServiceManager",
+  "source_entry_count": 31,
+  "source_file_count": 31,
+  "source_path_remaps": [
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-6822a2612a3c-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/utils/structs/EnumerableMap.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-ec456f9b852b-EnumerableMap.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-a21a4f3fc847-EnumerableSet.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0020-4f903944d1f2-AddressUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0021-e270656fefe5-ContextUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0022-25fb5ab60068-StringsUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0023-67358fbca2f5-OwnableUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0024-3b0c8c6b876b-Initializable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/math/MathUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0025-1e2c66d58666-MathUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/CheckpointsUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0026-ea934b7588f2-CheckpointsUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/interfaces/IERC1271Upgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0027-362cea2c7c28-IERC1271Upgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/math/SafeCastUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0028-39580e338991-SafeCastUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/math/SignedMathUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0029-579e7999318c-SignedMathUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/cryptography/ECDSAUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0030-43e2e3bd692a-ECDSAUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/cryptography/SignatureCheckerUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0031-fbc13b6ca5e5-SignatureCheckerUpgradeable.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HyperlaneServiceManager\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x296af86bff91b23cf980f6a443bc15a3a5d30682",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

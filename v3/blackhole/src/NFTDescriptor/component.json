@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/NFTDescriptor\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "392232"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf91d96f66e0fc9ee9f0182803b9c546b82ec3485",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

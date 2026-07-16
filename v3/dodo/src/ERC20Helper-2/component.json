@@ -1,0 +1,28 @@
+{
+  "component": "ERC20Helper-2",
+  "main_contract": "ERC20Helper",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC20Helper-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xb5c7ba1eade74800cd6cf5f56b1c4562de373780",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393972"
+    }
+  ]
+}

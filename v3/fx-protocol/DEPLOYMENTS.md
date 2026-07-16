@@ -1,6 +1,71 @@
 # fx-protocol — deployments
 
-0 verified deployment(s) across 0 component(s).
+65 verified deployment(s) across 40 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| ethereum | `0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x0055e248ee7feab91969b77ab32f184b72be82fa` | ShortPool | impl | live | no |
+| ethereum | `0x05c630e9fc8a064f0e8e6fbb9e2b5d2215da5653` | RebalancePoolGaugeClaimer-2 | impl | live | no |
+| ethereum | `0x0b9e51d9a436b6b78b5e2666f15b2d0666a7a851` | FxUSDPriceOracle | impl | live | no |
+| ethereum | `0x0d73d31e1e0d4cc266f0805c94f8e2b9b37d4c3a` | PoolManager | impl | live | no |
+| ethereum | `0x0e67460226a71df07115c1f169418dd159e5521b` | RevenuePool | impl | live | no |
+| ethereum | `0x0fdb73ae370a0b3f349dc046cfeb54c0fa870799` | PositionAirdrop | impl | live | no |
+| ethereum | `0x1359fce197cf743016cd1a620939a1a80df259a5` | PositionAirdrop | impl | live | no |
+| ethereum | `0x155c0c3cde438a3d10bd38f3257cd8d17b8b3cff` | PositionOperateFacet | impl | live | no |
+| ethereum | `0x1f844447ecf5b1523bfbadad3d9dea975982ea93` | PositionOperateFlashLoanFacetV2-2 | impl | live | no |
+| ethereum | `0x21275a57cf7592a1bb41e75497c070efc8b66b52` | PositionOperateFlashLoanFacetV2 | impl | live | no |
+| ethereum | `0x218b689a4f4afba497123b4831f58d6379d99801` | ShortPoolManager | impl | live | no |
+| ethereum | `0x222786833b5fd5ee21532d8b576391babefdaad1` | InverseWstETHPriceOracle | impl | live | no |
+| ethereum | `0x22ba83dd069ffe4c8731b1fdac34287231b0f3ff` | ShortPoolManager-2 | impl | live | no |
+| ethereum | `0x2319289e56830b50a282c25af4f0045c724b3f79` | PositionOperateFlashLoanFacetV2 | impl | live | no |
+| ethereum | `0x2ac0a3b5cb25d6071f05e9729922261bdf8e7cb4` | DebtReducer | impl | live | no |
+| ethereum | `0x2be95a7c0ad24e2d2876793172d046db05d26f7f` | PoolConfiguration | impl | live | no |
+| ethereum | `0x3374b9466d571edd695cf5e198f7c89b33c0ce01` | FxUSDBasePool | impl | live | no |
+| ethereum | `0x361f88157073b8522def857761484ca7b1d5c8be` | RevenuePool | impl | live | no |
+| ethereum | `0x36ecdec1b5e301321166cefd5856a44bfa13a1ae` | MultiMerkleStash | impl | live | no |
+| ethereum | `0x376909c828fa57d271e6b208036d24943503fbad` | PoolManager-2 | impl | live | no |
+| ethereum | `0x3cfe091c9028154cc5cb721258e9360803b130f5` | SavingFxUSDFacet | impl | live | no |
+| ethereum | `0x3d35dc5948c948f131ddd9e3a341b99e45174a74` | ShortPositionOperateFlashLoanFacet | impl | live | no |
+| ethereum | `0x4ae3be52c411cc08434d28645fd391497c69c815` | RebalancePoolGaugeClaimer | impl | live | no |
+| ethereum | `0x4fb9445019ba1e3a39bd1dfbe9cc7815e0a3c285` | RevenuePool | impl | live | no |
+| ethereum | `0x5ac1a882e6cedc58511b7e42b02bab42e2c02956` | RevenuePool | impl | live | no |
+| ethereum | `0x5d2c6215555b36889ef235c6d5ccde22e9964e6a` | InversePriceOracle | impl | live | no |
+| ethereum | `0x6844aaab4131041b563e6217eb0ba218123f5e45` | PositionOperateFlashLoanFacetV2 | impl | live | no |
+| ethereum | `0x69c40892c814fbb6fcdcbeb034e3dc854f3d7e10` | PoolConfiguration-2 | impl | live | no |
+| ethereum | `0x6ecfa38fee8a5277b91efda204c235814f0122e8` | RevenuePool | proxy | live | no |
+| ethereum | `0x7aed2bb6facaf6f843a7b758053573a4ea9e1f70` | PoolConfiguration | impl | live | no |
+| ethereum | `0x7bbfe4090675689bf78cdb6a1eb4705418bb1462` | PoolManager-3 | impl | live | no |
+| ethereum | `0x7e6a12dce12bc1c57bdf5829f7b40b113acde303` | ShortPositionOperateFlashLoanFacet | impl | live | no |
+| ethereum | `0x81243a88dd9fb963c643bd3f2194c2ca9ccfc428` | RebalancePoolGaugeClaimer-3 | impl | live | no |
+| ethereum | `0x835191186745e63f9e325e741b273ff925174d7e` | RebalancePoolGaugeClaimer | impl | live | no |
+| ethereum | `0x88f9e901487b635d1403eaabcb97fc1935fc62ac` | PoolManager-4 | impl | live | no |
+| ethereum | `0x94172e0b1714792c54f0b077b64e37c8050e89d6` | RevenuePool | impl | live | no |
+| ethereum | `0x958df8f124509d45a1c39bc4aedbe486ff2ffb3b` | ShortPoolManager-3 | impl | live | no |
+| ethereum | `0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0x9963e06c9d3fe874b944c5bf63729bd4ae6f07b2` | PositionOperateFlashLoanFacetV2-2 | impl | live | no |
+| ethereum | `0x9af12dabd518a6da606caac455b2d0efb3ef97f9` | PoolManager-5 | impl | live | no |
+| ethereum | `0xa5145ff1e321b717d5f137961fe2dc8ec5af31e1` | PositionOperateFlashLoanFacetV2-2 | impl | live | no |
+| ethereum | `0xa95ce9eefd6965296722890bb5fb977363fc2066` | MultiMerkleStash | impl | live | no |
+| ethereum | `0xab709e26fa6b0a30c119d8c55b887ded24952473` | RevenuePool | proxy | live | no |
+| ethereum | `0xabc6a4e345801cb5f57629e79cd5eb2e9e514e98` | MultiMerkleStash-2 | impl | live | no |
+| ethereum | `0xac94b8ea0e3a080f0fa6ae89cc873d956f72aa3e` | PositionOperateFlashLoanFacetV2 | impl | live | no |
+| ethereum | `0xb0c25521fb7dc1eead2f99132c852ac9c715e8d6` | PositionOperateFlashLoanFacetV2-2 | impl | live | no |
+| ethereum | `0xb259515748c75a7216a4849e67ceb166b0daa98b` | RebalancePoolGaugeClaimer | impl | live | no |
+| ethereum | `0xc035a7cf15375ce2706766804551791ad035e0c2` | InitializableImmutableAdminUpgradeabilityProxy-2 | proxy | live | no |
+| ethereum | `0xca0563ab14a87ee64d6b097b0dfc46e9b56820ad` | RebalancePoolGaugeClaimer | impl | live | no |
+| ethereum | `0xca1d3f8f770fd50b8cf76551ec54012c26036c2a` | MultiPathConverter | impl | live | no |
+| ethereum | `0xce744c8b9069776f3367e5ad3585c9e5a7bdd448` | PositionOperateFlashLoanFacetV2 | impl | live | no |
+| ethereum | `0xd36845bd3ce4ea0d60aefa6a902ebfd23cf44df7` | RevenuePool | impl | live | no |
+| ethereum | `0xd71b8b76015f296e53d41e8288a8a13eaffff2ea` | SmartWalletWhitelist | impl | live | no |
+| ethereum | `0xd766f2b87de4b08c2239580366e49710180aba02` | VotingEscrowHelper | impl | live | no |
+| ethereum | `0xda1d80bad62586a7c319fd2a41d98a930705fc9a` | PoolManager-6 | impl | live | no |
+| ethereum | `0xe1b11bb0b6d1b321eeb7e0298a3f9eb92171693b` | FxEETHOracleV2 | impl | live | no |
+| ethereum | `0xe6b953bb4c4b8eed78b40b81e457ee4bda461d55` | FxInitialFund | impl | live | no |
+| ethereum | `0xe93f5dd55ec9bdabbba5ea88e4b4f3c253ee45ed` | FxUSDPriceOracle | impl | live | no |
+| ethereum | `0xeecd843ed9f3d07757565e5cb91111718270a44f` | MultiMerkleStash-2 | impl | live | no |
+| ethereum | `0xf32ffd90133c7ec15e1519b9f7de8143310961ac` | DebtReducer | impl | live | no |
+| ethereum | `0xf3d24bb506038f6639b34b5175e0fcf2d610a098` | ShortPool-2 | impl | live | no |
+| ethereum | `0xfc3862c33b54e0bba61d966ff51973c20be4fc62` | FxInitialFund | impl | live | no |
+| ethereum | `0xfd3a6540e21d0e285f88fbfd904883b23e08f5c8` | AaveV3Strategy | impl | live | no |
+| ethereum | `0xffe563c168c01e05da4f3d81938af158466ad793` | FxFrxETHOracleV2 | impl | live | no |

@@ -10,23 +10,29 @@
     "build_command": "forge build --root \"src/InfraredVault\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/infrared-dao/contracts/blob/master/audits/Infrared%20-%20Zellic%20Audit%20Report.pdf",
-    "https://github.com/infrared-dao/contracts/blob/master/audits/report-cantinacode-infrared.pdf",
-    "https://github.com/infrared-dao/contracts/blob/master/audits/report-competition-infrared-contracts.pdf"
-  ],
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-80094",
       "chain_id": 80094,
-      "address": "0x75f3be06b02e235f6d0e7ef2d462b29739168301",
+      "address": "0x12e9b82f3280cc32e81b865f85734d52c538314c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395293"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xf4c0ed37fdd387013812bbfc6a0698a73ec5fe47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

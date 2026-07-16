@@ -1,0 +1,28 @@
+{
+  "component": "LiquidationFlashloanArbitrum-8",
+  "main_contract": "LiquidationFlashloanArbitrum",
+  "source_entry_count": 91,
+  "source_file_count": 91,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LiquidationFlashloanArbitrum-8\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x97a9a21d1055b2782fb5c68654cfe9e6ca15c755",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

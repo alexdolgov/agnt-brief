@@ -1,0 +1,284 @@
+{
+  "component": "HoprNodeSafeMigration-3",
+  "main_contract": "HoprNodeSafeMigration",
+  "source_entry_count": 56,
+  "source_file_count": 56,
+  "source_path_remaps": [
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/base/Executor.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-72d03c3720da-Executor.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.5.0/contracts/libraries/SafeMigration.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-0956a76c2b7b-SafeMigration.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/common/Enum.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-50f2fcd5c9cd-Enum.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.5.0/contracts/interfaces/ISafe.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-067e25e6d7fb-ISafe.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.5.0/contracts/libraries/SafeStorage.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-4bf8de0a9388-SafeStorage.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/proxies/SafeProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-47282e94d622-SafeProxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/proxies/SafeProxyFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-57296977b674-SafeProxyFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/Safe.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-4650f010a1df-Safe.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/access/Ownable2Step.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-6efd1ba262c8-Ownable2Step.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/Create2.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-5e106ad7dd94-Create2.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-ea6e9bc56c7f-ERC1967Proxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/interfaces/IERC777Recipient.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-8ff11cbaeb21-IERC777Recipient.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/interfaces/IERC1820Registry.sol",
+      "exported_path": "__audit_export_path_conflicts__/0020-993bab05bcfd-IERC1820Registry.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0021-d97263bb5435-SafeERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.5.0/contracts/libraries/Enum.sol",
+      "exported_path": "__audit_export_path_conflicts__/0022-cf710ac0dc92-Enum.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.5.0/contracts/interfaces/IFallbackManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0023-7f6009be9825-IFallbackManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.5.0/contracts/interfaces/IGuardManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0024-1ae7ce6b9e9a-IGuardManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.5.0/contracts/interfaces/IModuleManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0025-43925413feb8-IModuleManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.5.0/contracts/interfaces/INativeCurrencyPaymentFallback.sol",
+      "exported_path": "__audit_export_path_conflicts__/0026-60f848f5c8a4-INativeCurrencyPaymentFallback.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.5.0/contracts/interfaces/IOwnerManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0027-ddb67617a971-IOwnerManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.5.0/contracts/interfaces/IStorageAccessible.sol",
+      "exported_path": "__audit_export_path_conflicts__/0028-e5674f1d0e84-IStorageAccessible.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/proxies/IProxyCreationCallback.sol",
+      "exported_path": "__audit_export_path_conflicts__/0029-027c3dde4309-IProxyCreationCallback.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/base/ModuleManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0030-72a7a785d51e-ModuleManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/base/OwnerManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0031-2012168dc11e-OwnerManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/base/FallbackManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0032-4335716d58cc-FallbackManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/base/GuardManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0033-f1fe50dece88-GuardManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/common/NativeCurrencyPaymentFallback.sol",
+      "exported_path": "__audit_export_path_conflicts__/0034-2d62c7d9f30c-NativeCurrencyPaymentFallback.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/common/Singleton.sol",
+      "exported_path": "__audit_export_path_conflicts__/0035-f1e4e0413f40-Singleton.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/common/SignatureDecoder.sol",
+      "exported_path": "__audit_export_path_conflicts__/0036-7768026b4cfe-SignatureDecoder.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/common/SecuredTokenTransfer.sol",
+      "exported_path": "__audit_export_path_conflicts__/0037-62d46f1f680d-SecuredTokenTransfer.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/common/StorageAccessible.sol",
+      "exported_path": "__audit_export_path_conflicts__/0038-ad635b6bafd4-StorageAccessible.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/interfaces/ISignatureValidator.sol",
+      "exported_path": "__audit_export_path_conflicts__/0039-bf5c6a3c6f9b-ISignatureValidator.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/external/SafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0040-a3b1feb46f57-SafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0041-e985b3373675-Ownable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/Errors.sol",
+      "exported_path": "__audit_export_path_conflicts__/0042-ad46e4f45055-Errors.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/proxy/Proxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0043-5ce945c2b325-Proxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Utils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0044-d43a887ab5e5-ERC1967Utils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0045-ebc8aa2cef26-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/interfaces/IERC1363.sol",
+      "exported_path": "__audit_export_path_conflicts__/0046-dbe7901e0a46-IERC1363.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/common/SelfAuthorized.sol",
+      "exported_path": "__audit_export_path_conflicts__/0047-529c613833a4-SelfAuthorized.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/interfaces/IERC165.sol",
+      "exported_path": "__audit_export_path_conflicts__/0048-63d758e76a49-IERC165.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0049-7fa79d8b45c2-Context.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+      "exported_path": "__audit_export_path_conflicts__/0050-fbc9318f85f7-IBeacon.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/interfaces/IERC1967.sol",
+      "exported_path": "__audit_export_path_conflicts__/0051-8b4725fe2cc2-IERC1967.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0052-889ea6d50b24-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+      "exported_path": "__audit_export_path_conflicts__/0053-cd4d06606737-StorageSlot.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0054-432f6129b1ec-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol",
+      "exported_path": "__audit_export_path_conflicts__/0055-432ee933fe9d-IERC165.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+      "exported_path": "__audit_export_path_conflicts__/0056-869659c5470e-IERC165.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HoprNodeSafeMigration-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x6e3ef29b17fb33c1db372b06b19ce937894b317a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xe9670b5d87c87111c9050d915971b73b9f5021a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "component": "WETHRouter-2",
   "main_contract": "WETHRouter",
-  "source_entry_count": 17,
-  "source_file_count": 17,
+  "source_entry_count": 21,
+  "source_file_count": 21,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x70778cfcfc475c7ea0f24cc625baf6eae475d0c9",
+      "address": "0x31ccfb038771d9bf486ef7c7f3a9f91be72124c4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "397012"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

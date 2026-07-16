@@ -10,29 +10,49 @@
     "build_command": "forge build --root \"src/EditableERC20\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1285",
-      "chain_id": 1285,
-      "address": "0xfb2019dfd635a03cfff624d210aee6af2b00fc2c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398212"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
+      "chain": "gnosis",
+      "chain_id": 100,
       "address": "0x3f56e0c36d275367b8c502090edf38289b3dea0d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xdfa46478f9e5ea86d57387849598dbfb2e964b02",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x3f56e0c36d275367b8c502090edf38289b3dea0d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xdfa46478f9e5ea86d57387849598dbfb2e964b02",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398231"
+      "logic_topography_row_id": "398209"
     }
   ]
 }

@@ -56,7 +56,7 @@
     "build_command": "forge build --root \"src/HoprCrypto\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -73,12 +73,32 @@
     {
       "chain": "gnosis",
       "chain_id": 100,
+      "address": "0x5bd809bdbaa8d3d5f37743ae86bfef766dee56b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
       "address": "0x69e63a01a2209f733c83eca619ddda2bea4d5cdf",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "394979"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x7a33eb3900db3e02a4c149e49dbc1f0359921b16",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "gnosis",

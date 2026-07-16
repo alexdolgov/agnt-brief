@@ -62,7 +62,6 @@ library AccountStorage {
 		mapping(address => uint256) partyAReimbursement;
 		// partyA => partyB => SettlementState
 		mapping(address => mapping(address => SettlementState)) settlementStates;
-		mapping(address => uint256) reserveVault;
 	}
 
 	function layout() internal pure returns (Layout storage l) {

@@ -122,7 +122,7 @@ abstract contract TokenMonad {
                 vars.newAdjustmentFlowRate = FlowRate.wrap(0);
             } else {
                 // previous adjustment flow still needed
-                vars.newAdjustmentFlowRate = -newActualFlowRate;
+                vars.newAdjustmentFlowRate = newActualFlowRate.inv();
                 newActualFlowRate = FlowRate.wrap(0);
             }
 

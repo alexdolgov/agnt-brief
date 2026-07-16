@@ -11,6 +11,8 @@ import { FolioGovernor } from "@gov/FolioGovernor.sol";
 import { StakingVault } from "@staking/StakingVault.sol";
 import { Versioned } from "@utils/Versioned.sol";
 
+import { StakingVaultDeployLib } from "./StakingVaultDeployLib.sol";
+
 /**
  * @title Governance Deployer
  * @author akshatmittal, julianmrodri, pmckelvy1, tbrent
@@ -51,15 +53,18 @@ contract GovernanceDeployer is IGovernanceDeployer, Versioned {
         IGovernanceDeployer.GovParams calldata govParams,
         bytes32 deploymentNonce
     ) external returns (StakingVault stToken, address governor, address timelock) {
-        bytes32 deploymentSalt = keccak256(abi.encode(name, symbol, underlying, govParams, deploymentNonce));
+        bytes32 deploymentSalt = keccak256(
+            abi.encode(msg.sender, name, symbol, underlying, govParams, deploymentNonce)
+        );
 
-        stToken = new StakingVault{ salt: deploymentSalt }(
+        stToken = StakingVaultDeployLib.deployStakingVault(
             name,
             symbol,
             underlying,
             address(this), // temporary admin
             DEFAULT_REWARD_PERIOD,
-            DEFAULT_UNSTAKING_DELAY
+            DEFAULT_UNSTAKING_DELAY,
+            deploymentSalt
         );
 
         (governor, timelock) = deployGovernanceWithTimelock(govParams, IVotes(stToken), deploymentSalt);
@@ -74,7 +79,7 @@ contract GovernanceDeployer is IGovernanceDeployer, Versioned {
         IVotes stToken,
         bytes32 deploymentNonce
     ) public returns (address governor, address timelock) {
-        bytes32 deploymentSalt = keccak256(abi.encode(govParams, stToken, deploymentNonce));
+        bytes32 deploymentSalt = keccak256(abi.encode(msg.sender, govParams, stToken, deploymentNonce));
 
         governor = Clones.cloneDeterministic(governorImplementation, deploymentSalt);
         timelock = Clones.cloneDeterministic(timelockImplementation, deploymentSalt);
@@ -87,7 +92,7 @@ contract GovernanceDeployer is IGovernanceDeployer, Versioned {
             govParams.votingDelay,
             govParams.votingPeriod,
             govParams.proposalThreshold,
-            govParams.quorumPercent
+            govParams.quorumThreshold
         );
 
         address[] memory proposersAndExecutors = new address[](1);

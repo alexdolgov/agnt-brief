@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/LendingStorageManager\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://gitlab.com/jarvis-network/apps/exchange/mono-repo/-/blob/dev/docs/security-audits/zellic/%5BZellic%5DSynthereum%20Smart%20Contract%20Security%20Assessment.pdf"
@@ -25,6 +25,26 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "403264"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x49a87a3f93e883a221f6375335efc41db631c3dc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x81f1e35b3e05e9e8bb3eeb31d44d0ae399651e52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

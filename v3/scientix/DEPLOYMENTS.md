@@ -1,11 +1,60 @@
 # scientix — deployments
 
-5 verified deployment(s) across 4 component(s).
+54 verified deployment(s) across 53 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| bsc | `0x025ba0e82d45e29e831c53637bea2ce9d88199c2` | CakeMaxiWorker | impl | unknown | no |
+| bsc | `0x02728b3d91823c86e4009d2441d46e7397f7bdd0` | PancakeswapV2StrategyAddTwoSidesOptimalMigrate | impl | unknown | no |
+| bsc | `0x064bb6eea2339cad2bdaf895c3d3728e2c6bdac1` | CollateralPoolConfig | impl | unknown | no |
+| bsc | `0x0a3617197113ed2a9bbcadfb3c4f417734b1f8aa` | SingleAssetWorkerConfig | impl | unknown | no |
+| bsc | `0x0a7233ade189237e4ecc86ff201d3bac2c96fbd6` | FlashMintModule | impl | unknown | no |
+| bsc | `0x0e98f04411d43c800608ca5019c216c212aae694` | Vault | impl | unknown | no |
+| bsc | `0x1391fb5efc2394f33930a0cffb9d407abdbf1481` | AlpacaStablecoinProxyActions | impl | unknown | no |
+| bsc | `0x13c052c34beaed5f7c4856faa4da0544b9df99a7` | StrategyAddBaseTokenOnly | impl | unknown | no |
+| bsc | `0x161b33850ff58463c0503365d52428b76a482d97` | TransmuterB | impl | unknown | no |
+| bsc | `0x16716ee0a61eb9a34b42327bf442f873f15981d7` | GrassHouse | impl | unknown | no |
+| bsc | `0x1afadbe730d44b95aeec909846d4bfdd8d3831af` | PriceOracle | impl | unknown | no |
+| bsc | `0x1c25da226ab9f03d30243465dd83f18bc22e2b0e` | Scientist | impl | unknown | no |
+| bsc | `0x25be5dae973894acfa810e9f4db7e3d73a3f6fad` | AlpacaFeeder | impl | unknown | no |
+| bsc | `0x2d5408f2287bf9f9b05404794459a846651d0a59` | Timelock | impl | unknown | no |
+| bsc | `0x30275f8980ade89febfd93023a4af67da0fe700f` | DeltaNeutralVaultConfig | impl | unknown | no |
+| bsc | `0x3175ec52c36fff63dce00e8a50e6066d38884a11` | WorkerConfig | impl | unknown | no |
+| bsc | `0x32b02e91dd0d7496ff34ebd9deb12973ee86e946` | PancakeswapV2RestrictedStrategyWithdrawMinimizeTrading | impl | unknown | no |
+| bsc | `0x333db3ede42a351fbcce6ef38ec35a74a9a1c52b` | AlpacaOraclePriceFeed | impl | unknown | no |
+| bsc | `0x375d32fada30d7e6fea242fca221a22cc6d52b30` | TripleSlopeModel | impl | unknown | no |
+| bsc | `0x3af78aeb766059e2db89654ed438a8d976cd2dc5` | StrategyLiquidate | impl | unknown | no |
+| bsc | `0x45ce9276e6b62ebb91a6a866e49ceacec5455451` | StrategyOracleMinimize | impl | unknown | no |
+| bsc | `0x4acb447a4fc0fa7d95cfd8fef1131526cb7f303f` | AusdPriceFeedKeepers | impl | unknown | no |
+| bsc | `0x4c98c712da02d48fa3aa53dc3fe3e6754ddf1cb8` | SystemDebtEngine | impl | unknown | no |
+| bsc | `0x4f34511e604a1795e854aef9d872cb9c9836f1df` | PancakeswapV2StrategyLiquidate | impl | unknown | no |
+| bsc | `0x50309398e3abcbd3357b0dd54a624c1251026ee5` | GrassHouseGateway | impl | unknown | no |
+| bsc | `0x52d62bd452b6b8d7d92ef4fe6e474fb55650dbc1` | FixedSpreadLiquidationStrategy | impl | unknown | no |
 | bsc | `0x53085b02955cfd2f884c58d19b8a35ef5095e8ae` | PancakePair | impl | live | no |
+| bsc | `0x561b8c4f2ac28801baf6a4461b63c954eea1a0b4` | AlpacaStablecoin | impl | unknown | no |
+| bsc | `0x56f2d6fe1acb1549a665ff3a6e7dc46753f4a116` | ProxyWalletFactory | impl | unknown | no |
+| bsc | `0x5aa539cbe3d5bbeb89f633946e64e3c3419a7026` | LiquidationEngine | impl | unknown | no |
+| bsc | `0x64fe10f7afbc6ffbd8f849b7a36a3295c45284ae` | EmissionBridgeKeepers | impl | unknown | no |
+| bsc | `0x6510b1825df7b0c665d92ab694dfbc0ed48d760a` | xALPACA | impl | unknown | no |
 | bsc | `0x68145f3319f819b8e01dfa3c094fa8205e9efb9a` | UpgradeableOwnableProxy | proxy | live | no |
+| bsc | `0x713130e882b1dcb9ea7d960119f7b62429cacce3` | StablecoinAdapter | impl | unknown | no |
+| bsc | `0x71c035529bc37d44be67296b2d2f7e8974816e1f` | UpgradeableOwnableProxy-2 | proxy | unknown | no |
+| bsc | `0x744bb95c6f31a0b6f7e7b53c46342b42aafc21d3` | WaultSwapRestrictedStrategyAddBaseTokenOnly | impl | unknown | no |
+| bsc | `0x77d23aff927f3d46e51d449372c957b3cbbfb40e` | PancakeswapV2StrategyAddBaseTokenOnly | impl | unknown | no |
 | bsc | `0x7da4b286b24b85ba971f5f5f4375f71e15b55e15` | YearnVaultAdapter | impl | live | no |
+| bsc | `0x808386dece805422b6924d57adc1279cd0726ade` | UpgradeableOwnableProxy-3 | impl | unknown | no |
+| bsc | `0x811938726bc82da82fc4ac5de28851f27cc1dcb3` | PancakeswapV2StrategyWithdrawMinimizeTrading | impl | unknown | no |
+| bsc | `0x89110091631f49fdcb7141f791640096b98763cd` | RevenueTreasury | impl | unknown | no |
+| bsc | `0x8ef228fe83393411c434306bf7ce56532a0c50dc` | StaticPriceFeed | impl | unknown | no |
+| bsc | `0x9d97bad1fd253ba3ac46a8281ae6571ad6d307de` | WaultSwapWorker | impl | unknown | no |
 | bsc | `0xa96b313cb2e81505b306250946e3be86b26706b1` | YearnVaultAdapterWithIndirection | impl | live | no |
+| bsc | `0xabe59308ac72f04b1a2d04175d5247ba981075a6` | StrategyAddTwoSidesOptimal | impl | unknown | no |
+| bsc | `0xb63acd06c7d6ece492dfba61c606855e49fb93f3` | PancakeswapWorker | impl | unknown | no |
+| bsc | `0xb689c00e7d3897aaa505abace6a1b590b5a951d5` | AuthTokenAdapter | impl | unknown | no |
+| bsc | `0xb7f7118b1a50a088fe50b335f743ccfbc2765013` | StrategyWithdrawMinimizeTrading | impl | unknown | no |
+| bsc | `0xbc13df0cae75114a44c3d7acd6adfaa229444d06` | PancakeswapV2Worker02Migrate | impl | unknown | no |
+| bsc | `0xc19c71a2fc7d67fb10ffe4e13dab3acfef798558` | ShowStopper | impl | unknown | no |
+| bsc | `0xc7d037e67b09cb59c94e0fef231124fd01fb0e49` | BookKeeper | impl | unknown | no |
+| bsc | `0xd22d9012b1c06ae593d8f33b706becea58ecbf99` | DeltaNeutralVault | impl | unknown | no |
+| bsc | `0xee6d18afaae3cbe2fce9b34edf0fdcf615553d7e` | RevenueTreasuryKeepers | impl | unknown | no |
 | bsc | `0xf92aba2a79dc133278de2cddb38db775a4b5b024` | UpgradeableOwnableProxy | proxy | live | no |

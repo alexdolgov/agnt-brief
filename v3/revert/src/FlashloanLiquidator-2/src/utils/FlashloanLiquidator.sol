@@ -21,8 +21,12 @@ contract FlashloanLiquidator is Swapper, IUniswapV3FlashCallback {
         uint256 deadline;
     }
 
-    constructor(INonfungiblePositionManager _nonfungiblePositionManager, address _zeroxRouter, address _universalRouter)
-        Swapper(_nonfungiblePositionManager, _zeroxRouter, _universalRouter)
+    constructor(
+        INonfungiblePositionManager _nonfungiblePositionManager,
+        address _universalRouter,
+        address _zeroxAllowanceHolder
+    )
+        Swapper(_nonfungiblePositionManager, _universalRouter, _zeroxAllowanceHolder)
     {}
 
     struct LiquidateParams {
@@ -39,8 +43,8 @@ contract FlashloanLiquidator is Swapper, IUniswapV3FlashCallback {
 
     /// @notice Liquidates a loan, using a Uniswap Flashloan
     function liquidate(LiquidateParams calldata params) external {
-        (,,, uint256 liquidationCost,) = params.vault.loanInfo(params.tokenId);
-        if (liquidationCost == 0) {
+        (,,, uint256 liquidationCost, uint256 liquidationValue) = params.vault.loanInfo(params.tokenId);
+        if (liquidationValue == 0) {
             revert NotLiquidatable();
         }
 

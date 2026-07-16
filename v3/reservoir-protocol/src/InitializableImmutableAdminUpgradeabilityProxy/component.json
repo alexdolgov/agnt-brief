@@ -1,0 +1,78 @@
+{
+  "component": "InitializableImmutableAdminUpgradeabilityProxy",
+  "main_contract": "InitializableImmutableAdminUpgradeabilityProxy",
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/InitializableImmutableAdminUpgradeabilityProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7c0477d085ecb607cf8429f3ec91ae5e1e460f4f",
+      "is_proxy": true,
+      "implementation_address": "0xadc45df3cf1584624c97338bef33363bf5b97ada",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe3190143eb552456f88464662f0c0c4ac67a77eb",
+      "is_proxy": true,
+      "implementation_address": "0x9eb507147b99d3cde32a53bd5cd12bdeeac26e5c",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x7053bad224f0c021839f6ac645bdae5f8b585b69",
+      "is_proxy": true,
+      "implementation_address": "0xd7ab0676222c0235e09a06640c422bf97ccc2bc5",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x8917d4ee4609f991b559daf8d0ad1b892c13b127",
+      "is_proxy": true,
+      "implementation_address": "0xd7ab0676222c0235e09a06640c422bf97ccc2bc5",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x5d72a9d9a9510cd8cbdba12ac62593a58930a948",
+      "is_proxy": true,
+      "implementation_address": "0x2ffb265d591809fb1c4baba84996507e3c168406",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x7519403e12111ff6b710877fcd821d0c12caf43a",
+      "is_proxy": true,
+      "implementation_address": "0x2ffb265d591809fb1c4baba84996507e3c168406",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

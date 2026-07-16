@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/RewardsPoolWSD\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -33,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "399432"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd6dbdda416c10ae2b7acbe2d141c0e52b1802c59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

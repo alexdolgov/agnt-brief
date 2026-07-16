@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/UpgradeBeaconProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -33,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "403590"
+    },
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x030932a76f53dbf30fcfd51a8b3eed6833383e61",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

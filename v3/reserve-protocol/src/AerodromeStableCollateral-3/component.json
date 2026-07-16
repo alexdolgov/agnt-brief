@@ -1,0 +1,28 @@
+{
+  "component": "AerodromeStableCollateral-3",
+  "main_contract": "AerodromeStableCollateral",
+  "source_entry_count": 56,
+  "source_file_count": 56,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AerodromeStableCollateral-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x97f9d5ed17a0c99b279887cad5254d15fb1b619b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

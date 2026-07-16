@@ -36,4 +36,43 @@ interface IXERC20 is IERC20 {
     ) external;
 
     function owner() external returns (address);
+
+    /**
+     * @notice Returns the current limit of a bridge
+     * @param _bridge the bridge we are viewing the limits of
+     * @return _limit The limit the bridge has
+     */
+    function burningCurrentLimitOf(
+        address _bridge
+    ) external view returns (uint256 _limit);
+
+    /**
+     * @notice Returns the current limit of a bridge
+     * @param _bridge the bridge we are viewing the limits of
+     * @return _limit The limit the bridge has
+     */
+    function mintingCurrentLimitOf(
+        address _bridge
+    ) external view returns (uint256 _limit);
+
+    /**
+     * @notice Returns the max limit of a minter
+     *
+     * @param _minter The minter we are viewing the limits of
+     *  @return _limit The limit the minter has
+     */
+    function mintingMaxLimitOf(
+        address _minter
+    ) external view returns (uint256 _limit);
+
+    /**
+     * @notice Returns the max limit of a bridge
+     *
+     * @param _bridge the bridge we are viewing the limits of
+     * @return _limit The limit the bridge has
+     */
+
+    function burningMaxLimitOf(
+        address _bridge
+    ) external view returns (uint256 _limit);
 }

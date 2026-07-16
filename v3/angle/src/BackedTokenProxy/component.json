@@ -1,0 +1,38 @@
+{
+  "component": "BackedTokenProxy",
+  "main_contract": "BackedTokenProxy",
+  "source_entry_count": 24,
+  "source_file_count": 24,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BackedTokenProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3f95aa88ddbb7d9d484aa3d482bf0a80009c52c9",
+      "is_proxy": true,
+      "implementation_address": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xca30c93b02514f86d5c86a6e375e3a330b435fb5",
+      "is_proxy": true,
+      "implementation_address": "0x28a0b491650fe761c8a66528422bc7ca24ecaeda",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

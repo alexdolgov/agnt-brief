@@ -1,0 +1,28 @@
+{
+  "component": "xKNC",
+  "main_contract": "xKNC",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/xKNC\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x06890d4c65a4cb75be73d7ccb4a8ee7962819e81",
+      "is_proxy": true,
+      "implementation_address": "0xbcd99e7b636388317b52c47e1e0397369566e595",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

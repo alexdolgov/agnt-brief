@@ -1,0 +1,28 @@
+{
+  "component": "CrossChainBridgeBacker_MNBM_Nomad",
+  "main_contract": "CrossChainBridgeBacker_MNBM_Nomad",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CrossChainBridgeBacker_MNBM_Nomad\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x58fb43988ce99da388b1183a36264ea1161e45dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

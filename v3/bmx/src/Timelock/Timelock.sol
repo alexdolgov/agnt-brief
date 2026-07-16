@@ -1,20 +1,10 @@
-// Sources flattened with hardhat v2.12.0 https://hardhat.org
-
-// File contracts/peripherals/interfaces/IHandlerTarget.sol
+// Sources flattened with hardhat v2.17.3 https://hardhat.org
 
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.6.12;
-
-interface IHandlerTarget {
-    function isHandler(address _account) external returns (bool);
-    function setHandler(address _handler, bool _isActive) external;
-}
-
-
 // File contracts/core/interfaces/IVaultUtils.sol
 
-
+// Original license: SPDX_License_Identifier: MIT
 
 pragma solidity 0.6.12;
 
@@ -35,7 +25,7 @@ interface IVaultUtils {
 
 // File contracts/core/interfaces/IVault.sol
 
-
+// Original license: SPDX_License_Identifier: MIT
 
 pragma solidity 0.6.12;
 interface IVault {
@@ -164,7 +154,7 @@ interface IVault {
 
 // File contracts/core/interfaces/IGlpManager.sol
 
-
+// Original license: SPDX_License_Identifier: MIT
 
 pragma solidity 0.6.12;
 interface IGlpManager {
@@ -183,48 +173,9 @@ interface IGlpManager {
 }
 
 
-// File contracts/peripherals/interfaces/ITimelockTarget.sol
-
-
-
-pragma solidity 0.6.12;
-
-interface ITimelockTarget {
-    function setGov(address _gov) external;
-    function withdrawToken(address _token, address _account, uint256 _amount) external;
-}
-
-
-// File contracts/peripherals/interfaces/ITimelock.sol
-
-
-
-pragma solidity 0.6.12;
-
-interface ITimelock {
-    function setAdmin(address _admin) external;
-    function enableLeverage(address _vault) external;
-    function disableLeverage(address _vault) external;
-    function setIsLeverageEnabled(address _vault, bool _isLeverageEnabled) external;
-    function signalSetGov(address _target, address _gov) external;
-}
-
-
-// File contracts/tokens/interfaces/IUSDG.sol
-
-
-
-pragma solidity 0.6.12;
-
-interface IUSDG {
-    function addVault(address _vault) external;
-    function removeVault(address _vault) external;
-    function mint(address _account, uint256 _amount) external;
-    function burn(address _account, uint256 _amount) external;
-}
-
-
 // File contracts/access/interfaces/IAdmin.sol
+
+// Original license: SPDX_License_Identifier: MIT
 
 pragma solidity 0.6.12;
 
@@ -233,183 +184,9 @@ interface IAdmin {
 }
 
 
-// File contracts/tokens/interfaces/IBaseToken.sol
-
-
-
-pragma solidity 0.6.12;
-
-interface IBaseToken {
-    function totalStaked() external view returns (uint256);
-    function stakedBalance(address _account) external view returns (uint256);
-    function removeAdmin(address _account) external;
-    function setInPrivateTransferMode(bool _inPrivateTransferMode) external;
-    function withdrawToken(address _token, address _account, uint256 _amount) external;
-}
-
-
-// File contracts/tokens/interfaces/IMintable.sol
-
-
-
-pragma solidity 0.6.12;
-
-interface IMintable {
-    function isMinter(address _account) external returns (bool);
-    function setMinter(address _minter, bool _isActive) external;
-    function mint(address _account, uint256 _amount) external;
-    function burn(address _account, uint256 _amount) external;
-}
-
-
-// File contracts/referrals/interfaces/IReferralStorage.sol
-
-
-
-pragma solidity 0.6.12;
-
-interface IReferralStorage {
-    function codeOwners(bytes32 _code) external view returns (address);
-    function traderReferralCodes(address _account) external view returns (bytes32);
-    function referrerDiscountShares(address _account) external view returns (uint256);
-    function referrerTiers(address _account) external view returns (uint256);
-    function getTraderReferralInfo(address _account) external view returns (bytes32, address);
-    function setTraderReferralCode(address _account, bytes32 _code) external;
-    function setTier(uint256 _tierId, uint256 _totalRebate, uint256 _discountShare) external;
-    function setReferrerTier(address _referrer, uint256 _tierId) external;
-    function govSetCodeOwner(bytes32 _code, address _newAccount) external;
-}
-
-
-// File contracts/staking/interfaces/IVester.sol
-
-
-
-pragma solidity 0.6.12;
-
-interface IVester {
-    function rewardTracker() external view returns (address);
-
-    function claimForAccount(address _account, address _receiver) external returns (uint256);
-
-    function claimable(address _account) external view returns (uint256);
-    function cumulativeClaimAmounts(address _account) external view returns (uint256);
-    function claimedAmounts(address _account) external view returns (uint256);
-    function pairAmounts(address _account) external view returns (uint256);
-    function getVestedAmount(address _account) external view returns (uint256);
-    function transferredAverageStakedAmounts(address _account) external view returns (uint256);
-    function transferredCumulativeRewards(address _account) external view returns (uint256);
-    function cumulativeRewardDeductions(address _account) external view returns (uint256);
-    function bonusRewards(address _account) external view returns (uint256);
-
-    function transferStakeValues(address _sender, address _receiver) external;
-    function setTransferredAverageStakedAmounts(address _account, uint256 _amount) external;
-    function setTransferredCumulativeRewards(address _account, uint256 _amount) external;
-    function setCumulativeRewardDeductions(address _account, uint256 _amount) external;
-    function setBonusRewards(address _account, uint256 _amount) external;
-
-    function getMaxVestableAmount(address _account) external view returns (uint256);
-    function getCombinedAverageStakedAmount(address _account) external view returns (uint256);
-}
-
-
-// File contracts/libraries/token/IERC20.sol
-
-
-
-pragma solidity 0.6.12;
-
-/**
- * @dev Interface of the ERC20 standard as defined in the EIP.
- */
-interface IERC20 {
-    /**
-     * @dev Returns the amount of tokens in existence.
-     */
-    function totalSupply() external view returns (uint256);
-
-    /**
-     * @dev Returns the amount of tokens owned by `account`.
-     */
-    function balanceOf(address account) external view returns (uint256);
-
-    /**
-     * @dev Moves `amount` tokens from the caller's account to `recipient`.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transfer(address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Returns the remaining number of tokens that `spender` will be
-     * allowed to spend on behalf of `owner` through {transferFrom}. This is
-     * zero by default.
-     *
-     * This value changes when {approve} or {transferFrom} are called.
-     */
-    function allowance(address owner, address spender) external view returns (uint256);
-
-    /**
-     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * IMPORTANT: Beware that changing an allowance with this method brings the risk
-     * that someone may use both the old and the new allowance by unfortunate
-     * transaction ordering. One possible solution to mitigate this race
-     * condition is to first reduce the spender's allowance to 0 and set the
-     * desired value afterwards:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
-     * Emits an {Approval} event.
-     */
-    function approve(address spender, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Moves `amount` tokens from `sender` to `recipient` using the
-     * allowance mechanism. `amount` is then deducted from the caller's
-     * allowance.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Emitted when `value` tokens are moved from one account (`from`) to
-     * another (`to`).
-     *
-     * Note that `value` may be zero.
-     */
-    event Transfer(address indexed from, address indexed to, uint256 value);
-
-    /**
-     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
-     * a call to {approve}. `value` is the new allowance.
-     */
-    event Approval(address indexed owner, address indexed spender, uint256 value);
-}
-
-
-// File contracts/tokens/interfaces/IYieldToken.sol
-
-
-
-pragma solidity 0.6.12;
-
-interface IYieldToken {
-    function totalStaked() external view returns (uint256);
-    function stakedBalance(address _account) external view returns (uint256);
-    function removeAdmin(address _account) external;
-}
-
-
 // File contracts/libraries/math/SafeMath.sol
 
-
+// Original license: SPDX_License_Identifier: MIT
 
 pragma solidity 0.6.12;
 
@@ -570,9 +347,149 @@ library SafeMath {
 }
 
 
+// File contracts/libraries/token/IERC20.sol
+
+// Original license: SPDX_License_Identifier: MIT
+
+pragma solidity 0.6.12;
+
+/**
+ * @dev Interface of the ERC20 standard as defined in the EIP.
+ */
+interface IERC20 {
+    /**
+     * @dev Returns the amount of tokens in existence.
+     */
+    function totalSupply() external view returns (uint256);
+
+    /**
+     * @dev Returns the amount of tokens owned by `account`.
+     */
+    function balanceOf(address account) external view returns (uint256);
+
+    /**
+     * @dev Moves `amount` tokens from the caller's account to `recipient`.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transfer(address recipient, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Returns the remaining number of tokens that `spender` will be
+     * allowed to spend on behalf of `owner` through {transferFrom}. This is
+     * zero by default.
+     *
+     * This value changes when {approve} or {transferFrom} are called.
+     */
+    function allowance(address owner, address spender) external view returns (uint256);
+
+    /**
+     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * IMPORTANT: Beware that changing an allowance with this method brings the risk
+     * that someone may use both the old and the new allowance by unfortunate
+     * transaction ordering. One possible solution to mitigate this race
+     * condition is to first reduce the spender's allowance to 0 and set the
+     * desired value afterwards:
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     *
+     * Emits an {Approval} event.
+     */
+    function approve(address spender, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Moves `amount` tokens from `sender` to `recipient` using the
+     * allowance mechanism. `amount` is then deducted from the caller's
+     * allowance.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Emitted when `value` tokens are moved from one account (`from`) to
+     * another (`to`).
+     *
+     * Note that `value` may be zero.
+     */
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    /**
+     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
+     * a call to {approve}. `value` is the new allowance.
+     */
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+}
+
+
+// File contracts/peripherals/interfaces/IHandlerTarget.sol
+
+// Original license: SPDX_License_Identifier: MIT
+
+pragma solidity 0.6.12;
+
+interface IHandlerTarget {
+    function isHandler(address _account) external returns (bool);
+    function setHandler(address _handler, bool _isActive) external;
+}
+
+
+// File contracts/peripherals/interfaces/ITimelock.sol
+
+// Original license: SPDX_License_Identifier: MIT
+
+pragma solidity 0.6.12;
+
+interface ITimelock {
+    function setAdmin(address _admin) external;
+    function enableLeverage(address _vault) external;
+    function disableLeverage(address _vault) external;
+    function setIsLeverageEnabled(address _vault, bool _isLeverageEnabled) external;
+    function signalSetGov(address _target, address _gov) external;
+}
+
+
+// File contracts/peripherals/interfaces/ITimelockTarget.sol
+
+// Original license: SPDX_License_Identifier: MIT
+
+pragma solidity 0.6.12;
+
+interface ITimelockTarget {
+    function setGov(address _gov) external;
+    function withdrawToken(address _token, address _account, uint256 _amount) external;
+}
+
+
+// File contracts/referrals/interfaces/IReferralStorage.sol
+
+// Original license: SPDX_License_Identifier: MIT
+
+pragma solidity 0.6.12;
+
+interface IReferralStorage {
+    function codeOwners(bytes32 _code) external view returns (address);
+    function traderReferralCodes(address _account) external view returns (bytes32);
+    function referrerDiscountShares(address _account) external view returns (uint256);
+    function referrerTiers(address _account) external view returns (uint256);
+    function getTraderReferralInfo(address _account) external view returns (bytes32, address);
+    function setTraderReferralCode(address _account, bytes32 _code) external;
+    function setTier(uint256 _tierId, uint256 _totalRebate, uint256 _discountShare) external;
+    function setReferrerTier(address _referrer, uint256 _tierId) external;
+    function govSetCodeOwner(bytes32 _code, address _newAccount) external;
+    function setTraderReferralCodeByLocker(address _account, bytes32 _code) external;
+}
+
+
 // File contracts/staking/interfaces/IRewardRouterV2.sol
 
-
+// Original license: SPDX_License_Identifier: MIT
 
 pragma solidity 0.6.12;
 
@@ -582,11 +499,103 @@ interface IRewardRouterV2 {
 }
 
 
-// File contracts/peripherals/Timelock.sol
+// File contracts/staking/interfaces/IVester.sol
 
-
+// Original license: SPDX_License_Identifier: MIT
 
 pragma solidity 0.6.12;
+
+interface IVester {
+    function rewardTracker() external view returns (address);
+
+    function claimForAccount(address _account, address _receiver) external returns (uint256);
+
+    function claimable(address _account) external view returns (uint256);
+    function cumulativeClaimAmounts(address _account) external view returns (uint256);
+    function claimedAmounts(address _account) external view returns (uint256);
+    function pairAmounts(address _account) external view returns (uint256);
+    function getVestedAmount(address _account) external view returns (uint256);
+    function transferredAverageStakedAmounts(address _account) external view returns (uint256);
+    function transferredCumulativeRewards(address _account) external view returns (uint256);
+    function cumulativeRewardDeductions(address _account) external view returns (uint256);
+    function bonusRewards(address _account) external view returns (uint256);
+
+    function transferStakeValues(address _sender, address _receiver) external;
+    function setTransferredAverageStakedAmounts(address _account, uint256 _amount) external;
+    function setTransferredCumulativeRewards(address _account, uint256 _amount) external;
+    function setCumulativeRewardDeductions(address _account, uint256 _amount) external;
+    function setBonusRewards(address _account, uint256 _amount) external;
+
+    function getMaxVestableAmount(address _account) external view returns (uint256);
+    function getCombinedAverageStakedAmount(address _account) external view returns (uint256);
+}
+
+
+// File contracts/tokens/interfaces/IBaseToken.sol
+
+// Original license: SPDX_License_Identifier: MIT
+
+pragma solidity 0.6.12;
+
+interface IBaseToken {
+    function totalStaked() external view returns (uint256);
+    function stakedBalance(address _account) external view returns (uint256);
+    function removeAdmin(address _account) external;
+    function setInPrivateTransferMode(bool _inPrivateTransferMode) external;
+    function withdrawToken(address _token, address _account, uint256 _amount) external;
+}
+
+
+// File contracts/tokens/interfaces/IMintable.sol
+
+// Original license: SPDX_License_Identifier: MIT
+
+pragma solidity 0.6.12;
+
+interface IMintable {
+    function isMinter(address _account) external returns (bool);
+    function setMinter(address _minter, bool _isActive) external;
+    function mint(address _account, uint256 _amount) external;
+    function burn(address _account, uint256 _amount) external;
+}
+
+
+// File contracts/tokens/interfaces/IUSDG.sol
+
+// Original license: SPDX_License_Identifier: MIT
+
+pragma solidity 0.6.12;
+
+interface IUSDG {
+    function addVault(address _vault) external;
+    function removeVault(address _vault) external;
+    function mint(address _account, uint256 _amount) external;
+    function burn(address _account, uint256 _amount) external;
+}
+
+
+// File contracts/tokens/interfaces/IYieldToken.sol
+
+// Original license: SPDX_License_Identifier: MIT
+
+pragma solidity 0.6.12;
+
+interface IYieldToken {
+    function totalStaked() external view returns (uint256);
+    function stakedBalance(address _account) external view returns (uint256);
+    function removeAdmin(address _account) external;
+}
+
+
+// File contracts/peripherals/Timelock.sol
+
+// Original license: SPDX_License_Identifier: MIT
+
+pragma solidity 0.6.12;
+interface IVaultClearTokenConfig {
+    function clearTokenConfig(address _token) external;
+}
+
 contract Timelock is ITimelock {
     using SafeMath for uint256;
 
@@ -631,6 +640,7 @@ contract Timelock is ITimelock {
         bool isStable,
         bool isShortable
     );
+    event SignalClearVaultTokenConfig(address vault, address token, bytes32 action);
     event ClearAction(bytes32 action);
 
     modifier onlyAdmin() {
@@ -1149,6 +1159,19 @@ contract Timelock is ITimelock {
             _isStable,
             _isShortable
         );
+    }
+
+    function signalClearVaultTokenConfig(address _vault, address _token) external onlyAdmin {
+        bytes32 action = keccak256(abi.encodePacked("clearVaultTokenConfig", _vault, _token));
+        _setPendingAction(action);
+        emit SignalClearVaultTokenConfig(_vault, _token, action);
+    }
+
+    function clearVaultTokenConfig(address _vault, address _token) external onlyAdmin {
+        bytes32 action = keccak256(abi.encodePacked("clearVaultTokenConfig", _vault, _token));
+        _validateAction(action);
+        _clearAction(action);
+        IVaultClearTokenConfig(_vault).clearTokenConfig(_token);
     }
 
     function cancelAction(bytes32 _action) external onlyAdmin {

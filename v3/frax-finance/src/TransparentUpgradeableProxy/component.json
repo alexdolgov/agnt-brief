@@ -1,8 +1,8 @@
 {
   "component": "TransparentUpgradeableProxy",
   "main_contract": "TransparentUpgradeableProxy",
-  "source_entry_count": 16,
-  "source_file_count": 16,
+  "source_entry_count": 9,
+  "source_file_count": 9,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,21 +10,29 @@
     "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/FraxFinance/frax-solidity/blob/master/src/audits/Frax%20-%20Zellic%20Audit%20Report.pdf"
-  ],
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xcacd6fd266af91b8aed52accc382b4e165586e29",
+      "address": "0x14d60e7fdc0d71d8611742720e4c50e7a974020c",
       "is_proxy": true,
-      "implementation_address": "0x0000000048d2c8baf31742f6765383278bada4d5",
-      "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "403063"
+      "implementation_address": "0x9b7282cb80baa4b1f8f6436f8d531b436bae2a70",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x42d75c8fdbbf046df0fe1ff388da16ff99de8149",
+      "is_proxy": true,
+      "implementation_address": "0x783c279157d22cc5116800666ba477d466983fc0",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

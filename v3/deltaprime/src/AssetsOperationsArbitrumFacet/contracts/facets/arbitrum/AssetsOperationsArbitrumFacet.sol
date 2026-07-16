@@ -1,11 +1,30 @@
 // SPDX-License-Identifier: BUSL-1.1
-// Last deployed from commit: 5ec1894d31c2b378fec21fa1613df34e7438169c;
+// Last deployed from commit: dd73f48dc14d0a1b169b93c8246555983af4746d;
 pragma solidity 0.8.17;
 
 import "../AssetsOperationsFacet.sol";
 
 contract AssetsOperationsArbitrumFacet is AssetsOperationsFacet {
-    function YY_ROUTER() internal override pure returns (address) {
-        return 0xb32C79a25291265eF240Eb32E9faBbc6DcEE3cE3;
+    using TransferHelper for address payable;
+    using TransferHelper for address;
+    
+    /**
+    * Funds the loan with a specified amount of a GLP
+    * @dev Requires approval for stakedGLP token on frontend side
+    * @param _amount to be funded
+    **/
+    function fundGLP(uint256 _amount) public override noBorrowInTheSameBlock nonReentrant{
+        IERC20Metadata stakedGlpToken = IERC20Metadata(0x5402B5F40310bDED796c7D0F3FF6683f5C0cFfdf);
+        _amount = Math.min(_amount, stakedGlpToken.balanceOf(msg.sender));
+        address(stakedGlpToken).safeTransferFrom(msg.sender, address(this), _amount);
+        if (stakedGlpToken.balanceOf(address(this)) > 0) {
+            DiamondStorageLib.addOwnedAsset("GLP", address(stakedGlpToken));
+        }
+
+        ITokenManager tokenManager = DeploymentConstants.getTokenManager();
+
+        _syncExposure(tokenManager, address(stakedGlpToken));
+
+        emit Funded(msg.sender, "GLP", _amount, block.timestamp);
     }
 }

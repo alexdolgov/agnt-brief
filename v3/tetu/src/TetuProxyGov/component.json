@@ -1,0 +1,48 @@
+{
+  "component": "TetuProxyGov",
+  "main_contract": "TetuProxyGov",
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TetuProxyGov\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x2793fa8d570b99eb9ba7f5d3e2480f6ab06cbe9c",
+      "is_proxy": true,
+      "implementation_address": "0x79080dc9fa56aae21e9504507224d8272004d6d8",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x3dad9fc2235cf00a3d9e142122a26c839a7adc6e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x48ad115540a0f9e128ee62df5ce519451ba5f6e0",
+      "is_proxy": true,
+      "implementation_address": "0xfed4631ca56047a74ade6d140cc6d420d14373a1",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

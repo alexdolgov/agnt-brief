@@ -1,0 +1,28 @@
+{
+  "component": "ExecuteWithdrawalUtils",
+  "main_contract": "ExecuteWithdrawalUtils",
+  "source_entry_count": 84,
+  "source_file_count": 84,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ExecuteWithdrawalUtils\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1364dec7e321059a1bd803e2b634b7a8efd5ae75",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

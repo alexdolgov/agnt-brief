@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/Bridge-3\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xdd90e5e87a2081dcf0391920868ebc2ffb81a1af",
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x841ce48f9446c8e281d3f1444cb859b4a6d0738c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "392703"
+      "logic_topography_row_id": "392714"
+    },
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xbb7684cc5408f4dd0921e5c2cadd547b8f1ad573",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

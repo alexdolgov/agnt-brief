@@ -1,0 +1,38 @@
+{
+  "component": "TransparentUpgradeableProxy2Step",
+  "main_contract": "TransparentUpgradeableProxy2Step",
+  "source_entry_count": 14,
+  "source_file_count": 14,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxy2Step\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x55160b0f39848a7b844f3a562210489df301dee7",
+      "is_proxy": true,
+      "implementation_address": "0xc9d7035a91f95638dd070e2e73f80cc5170502ba",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xa756f7d419e1a5cbd656a438443011a7de1955b5",
+      "is_proxy": true,
+      "implementation_address": "0xdc8913760ae5941dee4d1c257305c5f01f68ce5e",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

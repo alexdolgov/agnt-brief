@@ -1,8 +1,8 @@
 {
   "component": "StargatePool",
   "main_contract": "StargatePool",
-  "source_entry_count": 45,
-  "source_file_count": 45,
+  "source_entry_count": 1,
+  "source_file_count": 1,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,49 +10,69 @@
     "build_command": "forge build --root \"src/StargatePool\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 4,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x268ca24daeff1fac2ed883c598200ccbb79e931d",
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x22bdf9633f3e679785638db690b85dc0dc8b35b8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399508"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0xe9aba835f813ca05e50a6c0ce65d0d74390f7de7",
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x36ed193dc7160d3858ec250e69d12b03ca087d08",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399568"
+      "logic_topography_row_id": "399592"
     },
     {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0x4c1d3fc3fc3c177c3b633427c2f769276c547463",
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x8899da8a3621708709feb9ee3991299769e96e25",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399625"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0xf7628d84a2bbd9bb9c8e686ac95bb5d55169f3f1",
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xd9050e7043102a0391f81462a3916326f86331f0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399630"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xdfc47dcef7e8f9ab19a1b8af3eecf000c7ea0b80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xf713529665cb904b48b8716cf305c41b1f61bc57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "component": "GaugeController",
+  "main_contract": "GaugeController",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GaugeController\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x14593cb3ffe270a72862eb08ceb57bc3d4ddc16c",
+      "is_proxy": true,
+      "implementation_address": "0x03cea009861d05ef4b181f5df46b435e2235ecf0",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

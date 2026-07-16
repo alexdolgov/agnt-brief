@@ -1,0 +1,48 @@
+{
+  "component": "UUPSProxy",
+  "main_contract": "UUPSProxy",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UUPSProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x0db3c59c187ecfa36a9c9f6cfa3664d06c2b5556",
+      "is_proxy": true,
+      "implementation_address": "0xb955851ef0d5397eb16b0f17c88da92c40d3067e",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x4e813624e1e0906e23fa22e2d120b4c4e2f89e4e",
+      "is_proxy": true,
+      "implementation_address": "0xd31460889fb321bc28739cb66ef681e021b1496a",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd2eeaaff35281757f87e4d535763c3d4c35b62c1",
+      "is_proxy": true,
+      "implementation_address": "0xe14f1ab4a4df22f377a17ccebbc7c6c8518c0b6c",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

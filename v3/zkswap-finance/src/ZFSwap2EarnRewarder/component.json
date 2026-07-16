@@ -10,21 +10,29 @@
     "build_command": "forge build --root \"src/ZFSwap2EarnRewarder\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/ZkSwapFinance/Audit-Reports/blob/main/9_MythX_ZFSwap2EarnRewarder_Full_Report.pdf"
-  ],
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0xf5df07accb7f319016e81d10a0acf3882af47113",
+      "address": "0x43589b9ff1a9a93e5d571409b77e46c549b15843",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401601"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x750591d7919fcb0fdee30f139799a63f8693155b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

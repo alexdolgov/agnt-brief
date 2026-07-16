@@ -10,12 +10,32 @@
     "build_command": "forge build --root \"src/REX33\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://cantina.xyz/portfolio/48fc9b98-ded3-43fa-80a2-5aedb3a5a51e"
   ],
   "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xbf42f61a1f176c43cb6fca7ea5afb55d59639dff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xccfc11f393a3c7f79ad09c5be2f408215ef15749",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "linea",
       "chain_id": 59144,

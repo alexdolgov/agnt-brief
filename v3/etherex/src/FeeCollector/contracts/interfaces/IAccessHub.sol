@@ -4,12 +4,6 @@ pragma solidity ^0.8.26;
 import {IVoteModule} from "contracts/interfaces/IVoteModule.sol";
 import {IVoter} from "contracts/interfaces/IVoter.sol";
 import {IFeeRecipientFactory} from "contracts/interfaces/IFeeRecipientFactory.sol";
-import {IMinter} from "contracts/interfaces/IMinter.sol";
-import {IXRex} from "contracts/interfaces/IXRex.sol";
-import {IREX33} from "contracts/interfaces/IREX33.sol";
-import {IRamsesV3Factory} from "contracts/CL/core/interfaces/IRamsesV3Factory.sol";
-import {IPairFactory} from "contracts/interfaces/IPairFactory.sol";
-import {IFeeCollector} from "contracts/CL/gauge/interfaces/IFeeCollector.sol";
 
 interface IAccessHub {
     error SAME_ADDRESS();
@@ -47,24 +41,6 @@ interface IAccessHub {
     /// @notice voter
     function voter() external view returns (IVoter voter);
 
-    /// @notice weekly emissions minter
-    function minter() external view returns (IMinter minter);
-
-    /// @notice xRam contract  
-    function xRam() external view returns (IXRex xRam);
-
-    /// @notice R33 contract
-    function r33() external view returns (IREX33 r33);
-
-    /// @notice CL V3 factory
-    function ramsesV3PoolFactory() external view returns (IRamsesV3Factory ramsesV3PoolFactory);
-
-    /// @notice legacy pair factory
-    function poolFactory() external view returns (IPairFactory poolFactory);
-
-    /// @notice fee collector contract
-    function feeCollector() external view returns (IFeeCollector feeCollector);
-
     /// @notice concentrated (v3) gauge factory
     function clGaugeFactory() external view returns (address _clGaugeFactory);
 
@@ -80,15 +56,12 @@ interface IAccessHub {
     /// @notice initializing function for setting values in the AccessHub
     function initialize(InitParams calldata params) external;
 
-    /// @notice re-initializing function for updating values in the AccessHub
-    function reinit(InitParams calldata params) external;
-
     /// @notice sets the swap fees for multiple pairs
     function setSwapFees(address[] calldata _pools, uint24[] calldata _swapFees)
         external;
 
     /// @notice sets the split of fees between LPs and voters
-    function setFeeSplitCL(address[] calldata _pools, uint24[] calldata _feeProtocol) external;
+    function setFeeSplitCL(address[] calldata _pools, uint8[] calldata _feeProtocol) external;
 
     /// @notice sets the split of fees between LPs and voters for legacy pools
     function setFeeSplitLegacy(address[] calldata _pools, uint256[] calldata _feeSplits) external;
@@ -115,15 +88,6 @@ interface IAccessHub {
     /// @notice allows governance to retrieve emissions in the voter contract that will not be distributed due to the gauge being inactive
     /// @dev allows per-period retrieval for granularity
     function retrieveStuckEmissionsToGovernance(address _gauge, uint256 _period) external;
-
-    /// @notice sets the minimum time threshold for rewarder (in seconds)
-    function setTimeThresholdForRewarder(uint256 _timeThreshold) external;
-
-    /// @notice creates a new gauge for a legacy pool
-    function createLegacyGauge(address _pool) external returns (address);
-
-    /// @notice creates a new concentrated liquidity gauge for a CL pool
-    function createCLGauge(address tokenA, address tokenB, int24 tickSpacing) external returns (address);
 
     /**
      * xRam Functions
@@ -247,9 +211,6 @@ interface IAccessHub {
 
     /// @notice function to change the cooldown in the voteModule
     function setNewVoteModuleCooldown(uint256 _newCooldown) external;
-
-    /// @notice sets the address of the voter in the fee recipient factory for fee recipient creation
-    function setVoterInFeeRecipientFactory(address _voter) external;
 
 
     /**

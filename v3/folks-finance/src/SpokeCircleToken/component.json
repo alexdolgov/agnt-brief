@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/SpokeCircleToken\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 9,
+  "deployment_count": 11,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -83,6 +83,26 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "394625"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x3ef10e94b4309415ebd8c1680ca3a5ee5df9acd7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbf142db792f60a64c4cfa6becd88a038b33c62df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "arbitrum",

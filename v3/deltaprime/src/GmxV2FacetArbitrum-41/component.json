@@ -1,0 +1,28 @@
+{
+  "component": "GmxV2FacetArbitrum-41",
+  "main_contract": "GmxV2FacetArbitrum",
+  "source_entry_count": 84,
+  "source_file_count": 84,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GmxV2FacetArbitrum-41\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdb5380eb3801f9d202cc88dfdee3d1a9dbf1e4a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

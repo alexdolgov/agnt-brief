@@ -37,7 +37,7 @@ library Hash {
     );
 
     bytes32 private constant _AUCTION_HASH = keccak256(
-        "Auction(address loanAddress,uint256 loanId,uint256 highestBid,uint256 triggerFee,uint256 minBid,address highestBidder,uint96 duration,address asset,uint96 startTime,address originator,uint96 lastBidTime,bytes32 loanHash,uint96 buyoutWindow)"
+        "Auction(address loanAddress,uint256 loanId,uint256 highestBid,uint256 triggerFee,uint256 minBid,address highestBidder,uint96 duration,address asset,uint96 startTime,address originator,uint96 lastBidTime)"
     );
 
     bytes32 private constant _TRADE_ORDER_HASH = keccak256(
@@ -175,9 +175,7 @@ library Hash {
                 _auction.asset,
                 _auction.startTime,
                 _auction.originator,
-                _auction.lastBidTime,
-                _auction.loanHash,
-                _auction.buyoutWindow
+                _auction.lastBidTime
             )
         );
     }

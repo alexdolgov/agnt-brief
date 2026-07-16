@@ -1,11 +1,12 @@
 # meeds-finance — deployments
 
-6 verified deployment(s) across 5 component(s).
+7 verified deployment(s) across 6 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0xc76979618841ab656bb834b4fe812319677225a1` | UniswapV3Pool-5 | impl | live | no |
 | base | `0xada40f483dd44e9e6e126a2db59379d45551dd55` | UniswapV3Pool-4 | impl | live | no |
+| ethereum | `0x44d6d6ab50401dd846336e9c706a492f06e1bcd4` | XMeedsNFTRewarding | impl | live | no |
 | ethereum | `0xc82b1c50609217075d28aa22f11a80450212b3d1` | UniswapV3Pool | impl | live | no |
 | ethereum | `0xfa127d9a1154610eedbab7323b64363089f9989e` | UniswapV3Pool | impl | live | no |
 | optimism | `0xe133306fc90133e33a8c322e8c81f06ec2369b17` | UniswapV3Pool-2 | impl | live | no |

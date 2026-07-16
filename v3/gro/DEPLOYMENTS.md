@@ -1,9 +1,11 @@
 # gro — deployments
 
-9 verified deployment(s) across 9 component(s).
+11 verified deployment(s) across 11 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| avalanche | `0x6063597b9356b246e706fd6a48c780f897e3ef55` | VaultAdaptorMK2 | impl | live | no |
+| ethereum | `0x204d9de758217a39149767731a87bcc32427b6ef` | RedemptionPool | impl | live | no |
 | ethereum | `0x21c5918ccb42d20a2368bdca8feda0399ebfd2f6` | UniswapV2Pair | impl | live | no |
 | ethereum | `0x2ac5bc9dda37601edb1a5e29699deb0a5b67e9bb` | UniswapV2Pair-2 | impl | live | no |
 | ethereum | `0x2e32bad45a1c29c1ea27cf4dd588df9e68ed376c` | LPTokenStaker | impl | live | no |

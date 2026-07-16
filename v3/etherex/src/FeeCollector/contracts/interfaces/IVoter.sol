@@ -56,9 +56,6 @@ interface IVoter {
     /// @notice ratio of xRam emissions globally
     function xRatio() external view returns (uint256);
 
-    /// @notice minimum time threshold for rewarder (in seconds)
-    function timeThresholdForRewarder() external view returns (uint256);
-
     /// @notice xRam contract address
     function xRam() external view returns (address);
 
@@ -352,9 +349,6 @@ interface IVoter {
 
     /// @notice sets a new NFP manager
     function setNfpManager(address _nfpManager) external;
-
-    /// @notice sets the minimum time threshold for rewarder (in seconds)
-    function setTimeThresholdForRewarder(uint256 _timeThreshold) external;
 
     /// @notice returns all voters for a period
     function getAllVotersPerPeriod(uint256 period) external view returns (address[] memory);

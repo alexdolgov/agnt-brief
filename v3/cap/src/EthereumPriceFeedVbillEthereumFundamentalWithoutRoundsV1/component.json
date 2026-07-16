@@ -1,0 +1,28 @@
+{
+  "component": "EthereumPriceFeedVbillEthereumFundamentalWithoutRoundsV1",
+  "main_contract": "EthereumPriceFeedVbillEthereumFundamentalWithoutRoundsV1",
+  "source_entry_count": 23,
+  "source_file_count": 23,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EthereumPriceFeedVbillEthereumFundamentalWithoutRoundsV1\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4e202a7e713d00804f9ce397260362bf5e0eaaa8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

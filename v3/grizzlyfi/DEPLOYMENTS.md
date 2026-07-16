@@ -1,6 +1,59 @@
 # grizzlyfi — deployments
 
-0 verified deployment(s) across 0 component(s).
+53 verified deployment(s) across 52 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| bsc | `0x0103ebdf61401402d5089474d68614a2f8b22fa4` | FundingTracker | impl | unknown | no |
+| bsc | `0x04a08ea880bb7f2e3a5a31d8c9f2ab031d2d2659` | Executor | impl | unknown | no |
+| bsc | `0x04a0b3075cd312116f429dc545ca1c5e1eeca3d6` | PositionManager | impl | unknown | no |
+| bsc | `0x075e794f631ee81df1aadb510ac6ec8803b0fa35` | Pair | impl | unknown | no |
+| bsc | `0x09649abba72e2019be1b18d2a68d520eec7471c3` | Strategy | impl | unknown | no |
+| bsc | `0x0ee2fd7e72cc3f5d2bd328e1f21f48f6a54a76a3` | StableGrizzly | impl | unknown | no |
+| bsc | `0x1b7299f39556cc370ad72dea5512c009fc06735c` | FreezerV2 | impl | unknown | no |
+| bsc | `0x1eee69681acfa5e2d4fcd117f14c83c0cb4e3912` | Timelock | impl | unknown | no |
+| bsc | `0x1f5247c524c2c438d743c1c2f254b1bf62e0b5ce` | ZapThena | impl | unknown | no |
+| bsc | `0x20489499412c9713d12e784fb6f724ae21385fab` | Grizzly | impl | unknown | no |
+| bsc | `0x218703d0515f24ca3fa0751266051db1ecd58f27` | GLL | impl | unknown | no |
+| bsc | `0x22eefe462c33af1ab1a52864c9a66d9a70755497` | PancakeV3Helper | impl | unknown | no |
+| bsc | `0x2354ef4df11afacb85a5c7f98b624072eccddbb1` | PancakePair | impl | unknown | no |
+| bsc | `0x26828340c699f56b365ee3875c70a02cb9eef522` | ShareDistribution | impl | unknown | no |
+| bsc | `0x2a3d06a340b2b2888891acb1f169e7c0e321ffaf` | FastPriceFeed | impl | unknown | no |
+| bsc | `0x2cf7138b058187d78f09b2a7ed2cc48cc1ee62ea` | VaultReader | impl | unknown | no |
+| bsc | `0x3368e4fa6ec76db5ccd8d1782e6575f6eeb4074e` | AveragePriceOracle | impl | unknown | no |
+| bsc | `0x337ddc9f37ae486ed9cb0d84c2c432901b773882` | BatchSender | impl | unknown | no |
+| bsc | `0x350593457926b11bc9923f16fa06c1b7d10f4b56` | Store | impl | unknown | no |
+| bsc | `0x35651e34d660e452be34fdb96850c5dc44e145e1` | HoneyBNBFarm | impl | unknown | no |
+| bsc | `0x35add9c481a5a37664d62196bdeaa327bfd98aa1` | HoneyToken | impl | unknown | no |
+| bsc | `0x45102dcb97a0fefdfcecda393203094bcf5f2e1d` | ZapThenaV3 | impl | unknown | no |
+| bsc | `0x469c23ecc4c07f0fb3c99fbf90c6d3ce114841c5` | ShortsTrackerTimelock | impl | unknown | no |
+| bsc | `0x4998ed31ceaf28b947f6f77e0d1b98a43cf8f1f3` | Freezer | impl | unknown | no |
+| bsc | `0x5494a109e377905db06ad7cfc1d30a146b862029` | AddressStorage | impl | unknown | no |
+| bsc | `0x59dadea5b28ff4320dfa621820465d9b3d44b6f0` | ReferralStorage | impl | unknown | no |
+| bsc | `0x5f7881f6f06ef513243c3e2a062968255e465653` | RewardReader | impl | unknown | no |
+| bsc | `0x606e4922b259fe28c10e6731e8317705aa1e253b` | Vault | impl | unknown | no |
+| bsc | `0x646aaff875bd16d2c3777f3f6e1599eebf1e2137` | OrderBook | impl | unknown | no |
+| bsc | `0x686a9130a6a7864dfaa9c7efdcee0bbab77c5b7d` | ShortsTracker | impl | unknown | no |
+| bsc | `0x7578cc483c4a7b0765e1ab72933877c80f7a1649` | CommonHealthCheck | impl | unknown | no |
+| bsc | `0x815f0682884f77d574fa13c007470b7fe2f1796d` | ReferralRegistry | impl | unknown | no |
+| bsc | `0x855f9462b3120f1607c60fa22e5595a36ad360b4` | PositionRouter | impl | unknown | no |
+| bsc | `0x8bbef097dbfdb5cc448e59921fcc0b655a724acb` | ReferralReader | impl | unknown | no |
+| bsc | `0x92b75922d82762feebb8f8e4a483811dee2c332f` | StableDEX | impl | unknown | no |
+| bsc | `0x977410290f1f091948456ed0fc34fae483176396` | Reader | impl | unknown | no |
+| bsc | `0x9a28a65b3a3a06e3da0fb285cba50f10c08c8bf6` | VaultPriceFeed | impl | unknown | no |
+| bsc | `0x9a555c5804a309e516e38d7142a51b7e11914c9e` | VaultErrorController | impl | unknown | no |
+| bsc | `0xb0b2be0d169181a936e08dad57b9b5e362385941` | PositionManager | impl | unknown | no |
+| bsc | `0xb2dbc323a658ddc9c8672d3174d6721665b50b01` | Router | impl | unknown | no |
+| bsc | `0xb4a922970b942263793ee5d85477b72ef29f22fe` | FastPriceEvents | impl | unknown | no |
+| bsc | `0xba397cc36b14b1c86313b9d96211847682efa15a` | PriceFeedTimelock | impl | unknown | no |
+| bsc | `0xc6433c65ed684e987287d4de87869a0a7cc4c2eb` | TokenManager | impl | unknown | no |
+| bsc | `0xcc570ec20ecb62cd9589fa33724514bdbc98dc7e` | GllManager | impl | unknown | no |
+| bsc | `0xd41881eafbd4bd2d7bc5b4540966f807e53f9b5a` | FeeGllTracker | impl | unknown | no |
+| bsc | `0xd7e8901a49576b974ee65a474fc459f5a96dce72` | RewardRouter | impl | unknown | no |
+| bsc | `0xdb6db98a73cc64d5f71b92befd57c66e22d6724b` | OrderBookReader | impl | unknown | no |
+| bsc | `0xe0d608e7b9025c1dbf8db76d9075a1a48291ff6f` | PancakeStableSwapLiquidityImplementation | impl | unknown | no |
+| bsc | `0xef6ec78f572abea6ae20e80676f563b27b1e84f6` | ThenaLiquidityImplementation | impl | unknown | no |
+| bsc | `0xefc5d356d5bf86126ad23234b56950decff9b4eb` | UniV3Helper | impl | unknown | no |
+| bsc | `0xf3ef1c95aecf5b5025815014890dc14488599883` | FeeGllDistributor | impl | unknown | no |
+| bsc | `0xf72c3386f420d754fb6e8bf70ac8aa1205f0a5eb` | VaultUtils | impl | unknown | no |
+| bsc | `0xfc0943ab33ee7a7fcf3fa649d9643f8413d381f8` | FastPriceFeedReader | impl | unknown | no |

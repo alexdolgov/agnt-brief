@@ -70,7 +70,7 @@ library SmartRouterHelper {
     // bytes32 internal constant V2_INIT_CODE_HASH = 0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5; // BSC
     // bytes32 internal constant V2_INIT_CODE_HASH = 0x57224589c67f3f30a6b0d7a1b54cf3153ab84563bc609ef41dfb34f8b2974d2d; // ETH, GOERLI
     // bytes32 internal constant V2_INIT_CODE_HASH = 0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66;
-    bytes32 internal constant V2_INIT_CODE_HASH = 0x98859e91a2d7077a5647fc52bfa56461f1be3991cfafdee3a968bf5d9a947f22;
+    bytes32 internal constant V2_INIT_CODE_HASH = 0xd424455c1204e4f46a4a380651928652376a351698d3d97e2da05d3041c15fbe;
 
     // returns sorted token addresses, used to handle return values from pairs sorted in this order
     function sortTokens(address tokenA, address tokenB) public pure returns (address token0, address token1) {

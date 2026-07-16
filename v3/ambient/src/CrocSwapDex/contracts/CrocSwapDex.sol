@@ -19,7 +19,6 @@ import './callpaths/LongPath.sol';
 import './callpaths/KnockoutPath.sol';
 import './callpaths/MicroPaths.sol';
 import './callpaths/SafeModePath.sol';
-import './CrocEvents.sol';
 
 /* @title CrocSwap exchange contract
  * @notice Top-level CrocSwap contract. Contains all public facing methods and state
@@ -82,11 +81,13 @@ contract CrocSwapDex is HotPath, ICrocMinion {
                    uint256 poolIdx, bool isBuy, bool inBaseQty, uint128 qty, uint16 tip,
                    uint128 limitPrice, uint128 minOut,
                    uint8 reserveFlags) reEntrantLock public payable
-        returns (int128 baseFlow, int128 quoteFlow) {
-        bytes memory cmd = abi.encode(base, quote, poolIdx, isBuy, inBaseQty, qty, tip,
-                                      limitPrice, minOut, reserveFlags);
-        bytes memory result = callUserCmdMem(CrocSlots.SWAP_PROXY_IDX, cmd);
-        return abi.decode(result, (int128, int128));
+        returns (int128 baseQuote, int128 quoteFlow) {
+        // By default the embedded hot-path is enabled, but protocol governance can
+        // disable by toggling the force proxy flag. If so, users should point to
+        // swapProxy.
+        require(hotPathOpen_);
+        return swapExecute(base, quote, poolIdx, isBuy, inBaseQty, qty, tip,
+                           limitPrice, minOut, reserveFlags);
     }
 
     /* @notice Consolidated method for protocol control related commands.

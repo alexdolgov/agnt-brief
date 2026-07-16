@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/AmoManagerV2"
+forge build --root "src/DefaultReserveInterestRateStrategy"
 ```
 
 ## Build every component

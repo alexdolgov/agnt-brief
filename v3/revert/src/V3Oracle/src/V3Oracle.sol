@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "v3-core/interfaces/IUniswapV3Factory.sol";
-import "v3-core/interfaces/IUniswapV3Pool.sol";
+import "./interfaces/aerodrome/IAerodromeSlipstreamPool.sol";
 
 import "v3-core/libraries/FullMath.sol";
 import "v3-core/libraries/TickMath.sol";
@@ -11,6 +11,12 @@ import "v3-periphery/libraries/PoolAddress.sol";
 import "v3-periphery/libraries/LiquidityAmounts.sol";
 
 import "v3-periphery/interfaces/INonfungiblePositionManager.sol";
+
+import "./interfaces/aerodrome/IAerodromeSlipstreamFactory.sol";
+import "./interfaces/aerodrome/IAerodromeSlipstreamPool.sol";
+import "./interfaces/aerodrome/IAerodromeNonfungiblePositionManager.sol";
+import "./utils/AerodromePoolAddress.sol";
+import "./utils/AerodromeHelper.sol";
 
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 import "@openzeppelin/contracts/access/Ownable2Step.sol";
@@ -23,7 +29,7 @@ import "./interfaces/IV3Oracle.sol";
 import "./utils/Constants.sol";
 
 /// @title V3Oracle to be used in V3Vault to calculate position values
-/// @notice It uses both chainlink and uniswap v3 TWAP and provides emergency fallback mode
+/// @notice It uses both chainlink and Aerodrome Slipstream TWAP and provides emergency fallback mode
 contract V3Oracle is IV3Oracle, Ownable2Step, Constants {
     uint256 private constant SEQUENCER_GRACE_PERIOD_TIME = 600; // 10mins
 
@@ -43,7 +49,7 @@ contract V3Oracle is IV3Oracle, Ownable2Step, Constants {
     }
 
     address public immutable factory;
-    INonfungiblePositionManager public immutable nonfungiblePositionManager;
+    IAerodromeNonfungiblePositionManager public immutable nonfungiblePositionManager;
 
     // common token which is used in TWAP pools
     address public immutable referenceToken;
@@ -58,7 +64,7 @@ contract V3Oracle is IV3Oracle, Ownable2Step, Constants {
         uint8 feedDecimals;
         uint8 tokenDecimals;
         uint32 twapSeconds;
-        IUniswapV3Pool pool; // reference pool
+        IAerodromeSlipstreamPool pool; // reference pool
         bool isToken0;
         Mode mode;
         uint16 maxDifference; // max price difference x10000
@@ -77,7 +83,7 @@ contract V3Oracle is IV3Oracle, Ownable2Step, Constants {
 
     // constructor: sets owner of contract
     constructor(
-        INonfungiblePositionManager _nonfungiblePositionManager,
+        IAerodromeNonfungiblePositionManager _nonfungiblePositionManager,
         address _referenceToken,
         address _chainlinkReferenceToken
     ) {
@@ -209,7 +215,7 @@ contract V3Oracle is IV3Oracle, Ownable2Step, Constants {
         address token,
         AggregatorV3Interface feed,
         uint32 maxFeedAge,
-        IUniswapV3Pool pool,
+        IAerodromeSlipstreamPool pool,
         uint32 twapSeconds,
         Mode mode,
         uint16 maxDifference
@@ -236,7 +242,7 @@ contract V3Oracle is IV3Oracle, Ownable2Step, Constants {
             );
         } else {
             config = TokenConfig(
-                feed, maxFeedAge, feedDecimals, tokenDecimals, 0, IUniswapV3Pool(address(0)), false, Mode.CHAINLINK, 0
+                feed, maxFeedAge, feedDecimals, tokenDecimals, 0, IAerodromeSlipstreamPool(address(0)), false, Mode.CHAINLINK, 0
             );
         }
 
@@ -398,11 +404,11 @@ contract V3Oracle is IV3Oracle, Ownable2Step, Constants {
 
     // Calculates the reference pool price with scaling factor of 2^96
     // It uses either the latest slot price or TWAP based on twapSeconds
-    function _getReferencePoolPriceX96(IUniswapV3Pool pool, uint32 twapSeconds) internal view returns (uint256) {
+    function _getReferencePoolPriceX96(IAerodromeSlipstreamPool pool, uint32 twapSeconds) internal view returns (uint256) {
         uint160 sqrtPriceX96;
         // if twap seconds set to 0 just use pool price
         if (twapSeconds == 0) {
-            (sqrtPriceX96,,,,,,) = pool.slot0();
+            (sqrtPriceX96,,,,,) = pool.slot0();
         } else {
             uint32[] memory secondsAgos = new uint32[](2);
             secondsAgos[0] = 0; // from (before)
@@ -423,7 +429,7 @@ contract V3Oracle is IV3Oracle, Ownable2Step, Constants {
         uint256 tokenId;
         address token0;
         address token1;
-        uint24 fee;
+        uint24 fee; // For Aerodrome: this is actually tickSpacing (immutable pool parameter)
         int24 tickLower;
         int24 tickUpper;
         uint128 liquidity;
@@ -431,7 +437,7 @@ contract V3Oracle is IV3Oracle, Ownable2Step, Constants {
         uint256 feeGrowthInside1LastX128;
         uint128 tokensOwed0;
         uint128 tokensOwed1;
-        IUniswapV3Pool pool;
+        IAerodromeSlipstreamPool pool;
         uint160 sqrtPriceX96;
         int24 tick;
         uint160 sqrtPriceX96Lower;
@@ -448,7 +454,7 @@ contract V3Oracle is IV3Oracle, Ownable2Step, Constants {
             ,
             address token0,
             address token1,
-            uint24 fee,
+            uint24 feeOrTickSpacing, // Aerodrome: tickSpacing (immutable), Uniswap: fee tier
             int24 tickLower,
             int24 tickUpper,
             uint128 liquidity,
@@ -460,7 +466,7 @@ contract V3Oracle is IV3Oracle, Ownable2Step, Constants {
         state.tokenId = tokenId;
         state.token0 = token0;
         state.token1 = token1;
-        state.fee = fee;
+        state.fee = feeOrTickSpacing; // Stores tickSpacing for Aerodrome pools
         state.tickLower = tickLower;
         state.tickUpper = tickUpper;
         state.liquidity = liquidity;
@@ -468,8 +474,8 @@ contract V3Oracle is IV3Oracle, Ownable2Step, Constants {
         state.feeGrowthInside1LastX128 = feeGrowthInside1LastX128;
         state.tokensOwed0 = tokensOwed0;
         state.tokensOwed1 = tokensOwed1;
-        state.pool = _getPool(token0, token1, fee);
-        (state.sqrtPriceX96, state.tick,,,,,) = state.pool.slot0();
+        state.pool = _getPool(state.token0, state.token1, state.fee);
+        (state.sqrtPriceX96, state.tick,,,,) = state.pool.slot0();
     }
 
     // gets prices according to oracle configuration (this reverts if any price is configured wrongly)
@@ -540,15 +546,16 @@ contract V3Oracle is IV3Oracle, Ownable2Step, Constants {
 
     // calculate fee growth for uncollected fees calculation
     function _getFeeGrowthInside(
-        IUniswapV3Pool pool,
+        IAerodromeSlipstreamPool pool,
         int24 tickLower,
         int24 tickUpper,
         int24 tickCurrent,
         uint256 feeGrowthGlobal0X128,
         uint256 feeGrowthGlobal1X128
     ) internal view returns (uint256 feeGrowthInside0X128, uint256 feeGrowthInside1X128) {
-        (,, uint256 lowerFeeGrowthOutside0X128, uint256 lowerFeeGrowthOutside1X128,,,,) = pool.ticks(tickLower);
-        (,, uint256 upperFeeGrowthOutside0X128, uint256 upperFeeGrowthOutside1X128,,,,) = pool.ticks(tickUpper);
+        // Aerodrome ticks() returns 10 values (includes stakedLiquidityNet at index 2 and rewardGrowthOutsideX128 at index 5)
+        (,,, uint256 lowerFeeGrowthOutside0X128, uint256 lowerFeeGrowthOutside1X128,,,,,) = pool.ticks(tickLower);
+        (,,, uint256 upperFeeGrowthOutside0X128, uint256 upperFeeGrowthOutside1X128,,,,,) = pool.ticks(tickUpper);
 
         // allow overflow - this is as designed by uniswap - see PositionValue library (for solidity < 0.8)
         unchecked {
@@ -566,7 +573,14 @@ contract V3Oracle is IV3Oracle, Ownable2Step, Constants {
     }
 
     // helper method to get pool for token
-    function _getPool(address tokenA, address tokenB, uint24 fee) internal view returns (IUniswapV3Pool) {
-        return IUniswapV3Pool(PoolAddress.computeAddress(factory, PoolAddress.getPoolKey(tokenA, tokenB, fee)));
+    function _getPool(address tokenA, address tokenB, uint24 fee) internal view returns (IAerodromeSlipstreamPool) {
+        // For Aerodrome: 'fee' parameter contains the immutable tickSpacing value
+        int24 tickSpacing = int24(uint24(fee));
+        
+        // Get pool from factory (Aerodrome uses getPool instead of computing address)
+        address poolAddress = IAerodromeSlipstreamFactory(factory).getPool(tokenA, tokenB, tickSpacing);
+        require(poolAddress != address(0), "Pool does not exist");
+        
+        return IAerodromeSlipstreamPool(poolAddress);
     }
 }

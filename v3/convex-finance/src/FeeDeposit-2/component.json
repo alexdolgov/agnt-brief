@@ -1,9 +1,20 @@
 {
   "component": "FeeDeposit-2",
   "main_contract": "FeeDeposit",
-  "source_entry_count": 1,
-  "source_file_count": 1,
-  "source_path_remaps": [],
+  "source_entry_count": 5,
+  "source_file_count": 5,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/FeeDeposit.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-6c43028eee25-FeeDeposit.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IFeeDistro.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-5073c2cb4a60-IFeeDistro.sol",
+      "reason": "unsafe_path"
+    }
+  ],
   "foundry": {
     "root": ".",
     "config": "foundry.toml",
@@ -15,14 +26,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xe7cdd5ed586a095e395f2007449721ea2a5b878a",
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0xf5dccd4cc45e1c3397a80babaa1071f556539776",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393115"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

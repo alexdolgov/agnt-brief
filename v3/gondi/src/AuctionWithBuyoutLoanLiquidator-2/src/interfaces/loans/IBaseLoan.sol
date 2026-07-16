@@ -32,6 +32,10 @@ interface IBaseLoan {
     /// @param _offerId Offer ID.
     function cancelOffer(uint256 _offerId) external;
 
+    /// @notice Cancell all offers with offerId < _minOfferId
+    /// @param _minOfferId Minimum offer ID.
+    function cancelAllOffers(uint256 _minOfferId) external;
+
     /// @notice Cancel renegotiation offer. Similar to offers.
     /// @param _renegotiationId Renegotiation offer ID.
     function cancelRenegotiationOffer(uint256 _renegotiationId) external;

@@ -1,0 +1,28 @@
+{
+  "component": "ERC20MinterBurnerPauser",
+  "main_contract": "ERC20MinterBurnerPauser",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC20MinterBurnerPauser\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0x090916ac145b613c1481aab198168c3a37bc5213",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

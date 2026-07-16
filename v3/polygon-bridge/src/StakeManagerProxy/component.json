@@ -1,0 +1,28 @@
+{
+  "component": "StakeManagerProxy",
+  "main_contract": "StakeManagerProxy",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StakeManagerProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x88f65097ba6e10f25e93bf41987f9416bbb303eb",
+      "is_proxy": true,
+      "implementation_address": "0x3025349b8bbbd3324afe90c89157dbc567a7e5ff",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

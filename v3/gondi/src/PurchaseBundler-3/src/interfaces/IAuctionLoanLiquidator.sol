@@ -82,4 +82,17 @@ interface IAuctionLoanLiquidator {
     /// @param _tokenId The nft id.
     /// @return auctionHash The auction hash.
     function getAuctionHash(address _contract, uint256 _tokenId) external view returns (bytes32);
+
+    /// @notice Set the minimum bid cap for a given currency.
+    ///         When an auction is created the effective minBid is
+    ///         min(currencyMinBid, loanDerivedMinBid) so this acts as
+    ///         an upper-bound on reserve preventing principal-inflation attacks.
+    /// @param _currency The currency address.
+    /// @param _minBid The minimum bid cap for the currency.
+    function setMinBidForCurrency(address _currency, uint256 _minBid) external;
+
+    /// @notice Get the minimum bid cap for a given currency.
+    /// @param _currency The currency address.
+    /// @return minBid The minimum bid cap for the currency.
+    function getMinBidForCurrency(address _currency) external view returns (uint256);
 }

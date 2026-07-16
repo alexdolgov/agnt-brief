@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/SynapseERC20\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 5,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -37,6 +37,16 @@
     {
       "chain": "bsc",
       "chain_id": 56,
+      "address": "0x5f300aec9573bec1ed161e07bb6564e03154e68a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
       "address": "0xa4080f1778e69467e905b8d6f72f6e441f9e9484",
       "is_proxy": false,
       "implementation_address": null,
@@ -53,6 +63,26 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "400109"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xca3281e99e2b7a2a889158944c409bf41f3c140d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd8ca34fd379d9ca3c6ee3b3905678320f5b45195",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "polygon",

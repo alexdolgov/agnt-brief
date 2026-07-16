@@ -41,6 +41,12 @@ contract TreasurySplitter is Ownable2Step, ReentrancyGuard {
     error InvalidSplitBps();
     error NothingToDistribute();
     error DuplicateTreasury();
+    error InvalidParameter();
+
+    /// @dev Disable renounceOwnership to prevent accidental loss of owner-only functions
+    function renounceOwnership() public pure override {
+        revert InvalidParameter();
+    }
 
     /// @param _treasury1 First treasury address (always required)
     /// @param _treasury2 Second treasury address (can be address(0) for single-treasury mode)

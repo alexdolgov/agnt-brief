@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/NonfungiblePositionManager\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x3fed017ec0f5517cdf2e8a9a4156c64d74252146",
+      "address": "0xbf5b19925b9bc2d3966b4193544a8644ff9b9d70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfd1c727d8a2259493c66899f478ebfea41329545",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "392230"
+      "logic_topography_row_id": "392289"
     }
   ]
 }

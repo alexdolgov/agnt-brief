@@ -79,6 +79,9 @@ interface IREX33 is IERC20  {
     /// @notice returns the ratio of xRam per X33 token
     function ratio() external view returns (uint256 _ratio);
 
+    /// @notice the most recent active period the contract has interacted in
+    function activePeriod() external view returns (uint256);
+
     /// @notice whether the periods are unlocked
     function periodUnlockStatus(uint256 _period) external view returns (bool unlocked);
 

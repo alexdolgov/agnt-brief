@@ -1,0 +1,72 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity 0.6.12;
+pragma experimental ABIEncoderV2;
+
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "openzeppelin-contracts-3.4/proxy/Clones.sol";
+import "../interfaces/ISwap.sol";
+import "../interfaces/IMetaSwap.sol";
+import "../interfaces/IMetaSwapDeposit.sol";
+
+contract MetaSwapDeployer is Ownable {
+    event NewMetaSwapPool(
+        address indexed deployer,
+        address metaSwapAddress,
+        address metaSwapDepositAddress
+    );
+
+    constructor() public Ownable() {}
+
+    function deploy(
+        address swapAddress,
+        address swapDepositAddress,
+        IERC20[] memory _pooledTokens,
+        uint8[] memory decimals,
+        string memory lpTokenName,
+        string memory lpTokenSymbol,
+        uint256 _a,
+        uint256 _fee,
+        uint256 _adminFee,
+        uint256 _depositFee,
+        uint256 _withdrawFee,
+        ISwap baseSwap
+    ) external returns (address) {
+        address metaSwapClone = Clones.clone(swapAddress);
+        address metaSwapDepositClone = Clones.clone(swapDepositAddress);
+        IMetaSwap(metaSwapClone).metaInitialize(
+            _pooledTokens,
+            decimals,
+            lpTokenName,
+            lpTokenSymbol,
+            _a,
+            _fee,
+            _adminFee,
+            _depositFee,
+            _withdrawFee,
+            owner(),
+            baseSwap
+        );
+        (
+            uint256 initialA,
+            uint256 futureA,
+            uint256 initialATime,
+            uint256 futureATime,
+            uint256 swapFee,
+            uint256 adminFee,
+            uint256 defaultDepositFee,
+            uint256 defaultWithdrawFee,
+            address lpToken,
+            address devaddr
+        ) = IMetaSwap(metaSwapClone).swapStorage();
+
+        IMetaSwapDeposit(metaSwapDepositClone).initialize(
+            baseSwap,
+            IMetaSwap(metaSwapClone),
+            IERC20(lpToken)
+        );
+        Ownable(metaSwapClone).transferOwnership(owner());
+        emit NewMetaSwapPool(msg.sender, metaSwapClone, metaSwapDepositClone);
+        return metaSwapClone;
+    }
+}

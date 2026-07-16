@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Router\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "396463"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc3b7af1d8c3ca78f375eb125f0211164b9071cc0",
+      "is_proxy": true,
+      "implementation_address": "0xc3b7af1d8c3ca78f375eb125f0211164b9071cc0",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

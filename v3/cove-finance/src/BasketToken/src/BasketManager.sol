@@ -13,6 +13,7 @@ import { BasketToken } from "src/BasketToken.sol";
 import { FeeCollector } from "src/FeeCollector.sol";
 import { Rescuable } from "src/Rescuable.sol";
 import { BasketManagerUtils } from "src/libraries/BasketManagerUtils.sol";
+import { Errors } from "src/libraries/Errors.sol";
 import { StrategyRegistry } from "src/strategies/StrategyRegistry.sol";
 import { WeightStrategy } from "src/strategies/WeightStrategy.sol";
 import { TokenSwapAdapter } from "src/swap_adapters/TokenSwapAdapter.sol";
@@ -60,6 +61,8 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
     /// STATE VARIABLES ///
     /// @notice Struct containing the BasketManagerUtils contract and other necessary data.
     BasketManagerStorage private _bmStorage;
+    /// @notice Mapping of order hashes to their validity status.
+    mapping(bytes32 => bool) public isOrderValid;
 
     /// EVENTS ///
     /// @notice Emitted when the swap fee is set.
@@ -79,7 +82,7 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
     /// @notice Emitted when a token swap is proposed during a rebalance.
     event TokenSwapProposed(uint40 indexed epoch, InternalTrade[] internalTrades, ExternalTrade[] externalTrades);
     /// @notice Emitted when a token swap is executed during a rebalance.
-    event TokenSwapExecuted(uint40 indexed epoch, ExternalTrade[] externalTrades);
+    event TokenSwapExecuted(uint40 indexed epoch);
     /// @notice Emitted when the step delay is set.
     event StepDelaySet(uint40 oldDelay, uint40 newDelay);
     /// @notice Emitted when the retry limit is set.
@@ -90,8 +93,6 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
     event WeightDeviationLimitSet(uint256 oldDeviation, uint256 newDeviation);
 
     /// ERRORS ///
-    /// @notice Thrown when the address is zero.
-    error ZeroAddress();
     /// @notice Thrown when attempting to execute a token swap without first proposing it.
     error TokenSwapNotProposed();
     /// @notice Thrown when the call to `TokenSwapAdapter.executeTokenSwap` fails.
@@ -160,12 +161,12 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
         payable
     {
         // Checks
-        if (basketTokenImplementation == address(0)) revert ZeroAddress();
-        if (eulerRouter_ == address(0)) revert ZeroAddress();
-        if (strategyRegistry_ == address(0)) revert ZeroAddress();
-        if (admin == address(0)) revert ZeroAddress();
-        if (feeCollector_ == address(0)) revert ZeroAddress();
-        if (assetRegistry_ == address(0)) revert ZeroAddress();
+        if (basketTokenImplementation == address(0)) revert Errors.ZeroAddress();
+        if (eulerRouter_ == address(0)) revert Errors.ZeroAddress();
+        if (strategyRegistry_ == address(0)) revert Errors.ZeroAddress();
+        if (admin == address(0)) revert Errors.ZeroAddress();
+        if (feeCollector_ == address(0)) revert Errors.ZeroAddress();
+        if (assetRegistry_ == address(0)) revert Errors.ZeroAddress();
 
         // Effects
         _grantRole(DEFAULT_ADMIN_ROLE, admin);
@@ -241,12 +242,9 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
 
     /// @notice Returns the current rebalance status.
     /// @return Rebalance status struct with the following fields:
-    ///   - basketHash: Hash of the baskets and target weights proposed for rebalance
-    ///   - basketMask: Bitmask representing baskets currently being rebalanced
-    ///   - epoch: Epoch of the rebalance
-    ///   - timestamp: Timestamp of the last action
-    ///   - retryCount: Number of retries for the current rebalance epoch
-    ///   - status: Status enum of the rebalance
+    ///   - basketHash: Hash of the baskets proposed for rebalance.
+    ///   - timestamp: Timestamp of the last action.
+    ///   - status: Status enum of the rebalance.
     function rebalanceStatus() external view returns (RebalanceStatus memory) {
         return _bmStorage.rebalanceStatus;
     }
@@ -294,12 +292,6 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
         return _bmStorage.weightDeviationLimit;
     }
 
-    /// @notice Returns the address of the asset registry.
-    /// @return Address of the asset registry.
-    function assetRegistry() external view returns (address) {
-        return _bmStorage.assetRegistry;
-    }
-
     /// @notice Returns the address of the strategy registry.
     /// @return Address of the strategy registry.
     function strategyRegistry() external view returns (address) {
@@ -337,13 +329,6 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
     /// @return Array of asset addresses.
     function basketAssets(address basket) external view returns (address[] memory) {
         return _bmStorage.basketAssets[basket];
-    }
-
-    /// @notice Returns the collected swap fees for the given asset.
-    /// @param asset Address of the asset.
-    /// @return Collected swap fees.
-    function collectedSwapFees(address asset) external view returns (uint256) {
-        return _bmStorage.collectedSwapFees[asset];
     }
 
     /// @notice Creates a new basket token with the given parameters.
@@ -423,7 +408,7 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
         }
         address swapAdapter = _bmStorage.tokenSwapAdapter;
         if (swapAdapter == address(0)) {
-            revert ZeroAddress();
+            revert Errors.ZeroAddress();
         }
         if (externalTrades.length == 0) {
             revert EmptyExternalTrades();
@@ -444,7 +429,7 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
             revert ExecuteTokenSwapFailed();
         }
 
-        emit TokenSwapExecuted(_bmStorage.rebalanceStatus.epoch, externalTrades);
+        emit TokenSwapExecuted(_bmStorage.rebalanceStatus.epoch);
     }
 
     /// @notice Sets the address of the TokenSwapAdapter contract used to execute token swaps.
@@ -452,12 +437,11 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
     /// @dev Only callable by the timelock.
     function setTokenSwapAdapter(address tokenSwapAdapter_) external onlyRole(_TIMELOCK_ROLE) {
         if (tokenSwapAdapter_ == address(0)) {
-            revert ZeroAddress();
+            revert Errors.ZeroAddress();
         }
         _revertIfCurrentlyRebalancing();
-        address oldTokenSwapAdapter = _bmStorage.tokenSwapAdapter;
+        emit TokenSwapAdapterSet(_bmStorage.tokenSwapAdapter, tokenSwapAdapter_);
         _bmStorage.tokenSwapAdapter = tokenSwapAdapter_;
-        emit TokenSwapAdapterSet(oldTokenSwapAdapter, tokenSwapAdapter_);
     }
 
     /// @notice Completes the rebalance for the given baskets. The rebalance can be completed if it has been more than
@@ -481,7 +465,6 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
 
     /// @notice Fallback redeem function to redeem shares when the rebalance is not in progress. Redeems the shares for
     /// each underlying asset in the basket pro-rata to the amount of shares redeemed.
-    /// @dev This function can only be called by basket tokens.
     /// @param totalSupplyBefore Total supply of the basket token before the shares were burned.
     /// @param burnedShares Amount of shares burned.
     /// @param to Address to send the redeemed assets to.
@@ -519,13 +502,9 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
             if ((_bmStorage.rebalanceStatus.basketMask & (1 << indexPlusOne - 1)) != 0) {
                 revert MustWaitForRebalanceToComplete();
             }
-            // slither-disable-next-line reentrancy-no-eth
-            BasketToken(basket).harvestManagementFee();
         }
-        uint16 oldManagementFee = _bmStorage.managementFees[basket];
+        emit ManagementFeeSet(basket, _bmStorage.managementFees[basket], managementFee_);
         _bmStorage.managementFees[basket] = managementFee_;
-        // slither-disable-next-line reentrancy-events
-        emit ManagementFeeSet(basket, oldManagementFee, managementFee_);
     }
 
     /// @notice Set the swap fee to be given to the treasury on rebalance.
@@ -536,9 +515,8 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
             revert InvalidSwapFee();
         }
         _revertIfCurrentlyRebalancing();
-        uint16 oldSwapFee = _bmStorage.swapFee;
+        emit SwapFeeSet(_bmStorage.swapFee, swapFee_);
         _bmStorage.swapFee = swapFee_;
-        emit SwapFeeSet(oldSwapFee, swapFee_);
     }
 
     /// @notice Updates the step delay for the rebalance process.
@@ -550,9 +528,8 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
             revert InvalidStepDelay();
         }
         _revertIfCurrentlyRebalancing();
-        uint40 oldStepDelay = _bmStorage.stepDelay;
+        emit StepDelaySet(_bmStorage.stepDelay, stepDelay_);
         _bmStorage.stepDelay = stepDelay_;
-        emit StepDelaySet(oldStepDelay, stepDelay_);
     }
 
     /// @notice Sets the retry limit for future rebalances.
@@ -562,9 +539,8 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
             revert InvalidRetryCount();
         }
         _revertIfCurrentlyRebalancing();
-        uint8 oldRetryLimit = _bmStorage.retryLimit;
+        emit RetryLimitSet(_bmStorage.retryLimit, retryLimit_);
         _bmStorage.retryLimit = retryLimit_;
-        emit RetryLimitSet(oldRetryLimit, retryLimit_);
     }
 
     /// @notice Sets the slippage multiplier for token swaps.
@@ -574,9 +550,8 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
             revert InvalidSlippageLimit();
         }
         _revertIfCurrentlyRebalancing();
-        uint256 oldSlippageLimit = _bmStorage.slippageLimit;
+        emit SlippageLimitSet(_bmStorage.slippageLimit, slippageLimit_);
         _bmStorage.slippageLimit = slippageLimit_;
-        emit SlippageLimitSet(oldSlippageLimit, slippageLimit_);
     }
 
     /// @notice Sets the deviation multiplier to determine if a set of balances has reached the desired target.
@@ -586,9 +561,8 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
             revert InvalidWeightDeviationLimit();
         }
         _revertIfCurrentlyRebalancing();
-        uint256 oldWeightDeviationLimit = _bmStorage.weightDeviationLimit;
+        emit WeightDeviationLimitSet(_bmStorage.weightDeviationLimit, weightDeviationLimit_);
         _bmStorage.weightDeviationLimit = weightDeviationLimit_;
-        emit WeightDeviationLimitSet(oldWeightDeviationLimit, weightDeviationLimit_);
     }
 
     /// @notice Claims the swap fee for the given asset and sends it to protocol treasury defined in the FeeCollector.
@@ -604,7 +578,6 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
     /// @notice Updates the bitFlag for the given basket.
     /// @param basket Address of the basket.
     /// @param bitFlag New bitFlag. It must be inclusive of the current bitFlag.
-    // solhint-disable-next-line code-complexity
     function updateBitFlag(address basket, uint256 bitFlag) external onlyRole(_TIMELOCK_ROLE) {
         // Checks
         // Check if basket exists
@@ -699,7 +672,7 @@ contract BasketManager is ReentrancyGuardTransient, AccessControlEnumerable, Pau
         returns (bytes memory)
     {
         // Checks
-        if (target == address(0)) revert ZeroAddress();
+        if (target == address(0)) revert Errors.ZeroAddress();
         AssetRegistry.AssetStatus status = AssetRegistry(_bmStorage.assetRegistry).getAssetStatus(address(target));
         if (status != AssetRegistry.AssetStatus.DISABLED) {
             revert AssetExistsInUniverse();

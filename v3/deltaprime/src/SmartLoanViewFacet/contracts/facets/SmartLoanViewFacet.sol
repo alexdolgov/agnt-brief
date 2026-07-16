@@ -1,24 +1,30 @@
 // SPDX-License-Identifier: BUSL-1.1
-// Last deployed from commit: ;
+// Last deployed from commit: 2da98516b7fae15fcc4fcb8ee761d42c0994f86b;
 pragma solidity 0.8.17;
 
-import "../ReentrancyGuardKeccak.sol";
 import "@uniswap/lib/contracts/libraries/TransferHelper.sol";
 import "../lib/SolvencyMethods.sol";
 import "../Pool.sol";
 import {DiamondStorageLib} from "../lib/DiamondStorageLib.sol";
+import {LeverageTierLib} from "../lib/LeverageTierLib.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 //This path is updated during deployment
 import "../lib/arbitrum/DeploymentConstants.sol";
 
-contract SmartLoanViewFacet is ReentrancyGuardKeccak, SolvencyMethods {
+contract SmartLoanViewFacet is SolvencyMethods {
     using TransferHelper for address payable;
     using TransferHelper for address;
 
     struct AssetNameBalance {
         bytes32 name;
         uint256 balance;
+    }
+
+    struct AssetNameBalanceDebtCoverage {
+        bytes32 name;
+        uint256 balance;
+        uint256 debtCoverage;
     }
 
     struct AssetNameDebt {
@@ -35,10 +41,12 @@ contract SmartLoanViewFacet is ReentrancyGuardKeccak, SolvencyMethods {
 
     function initialize(address owner) external {
         require(owner != address(0), "Initialize: Cannot set the owner to a zero address");
+        require(address(this) != DeploymentConstants.getDiamondAddress(), "DiamondInit: Cannot initialize DiamondBeacon");
 
         DiamondStorageLib.SmartLoanStorage storage sls = DiamondStorageLib.smartLoanStorage();
         require(!sls._initialized, "DiamondInit: contract is already initialized");
         DiamondStorageLib.setContractOwner(owner);
+        DiamondStorageLib.setPrimeLeverageTier(LeverageTierLib.LeverageTier.BASIC);
         sls._initialized = true;
     }
 
@@ -46,6 +54,11 @@ contract SmartLoanViewFacet is ReentrancyGuardKeccak, SolvencyMethods {
 
     function getPercentagePrecision() public view virtual returns (uint256) {
         return DeploymentConstants.getPercentagePrecision();
+    }
+
+    function getAccountFrozenSince() public view returns (uint256){
+        DiamondStorageLib.SmartLoanStorage storage sls = DiamondStorageLib.smartLoanStorage();
+        return sls.frozenSince;
     }
 
 
@@ -65,6 +78,23 @@ contract SmartLoanViewFacet is ReentrancyGuardKeccak, SolvencyMethods {
     function getSupportedTokensAddresses() external view returns (address[] memory) {
         ITokenManager tokenManager = DeploymentConstants.getTokenManager();
         return tokenManager.getSupportedTokensAddresses();
+    }
+
+    function getAllAssetsBalancesDebtCoverages() public view returns (AssetNameBalanceDebtCoverage[] memory) {
+        ITokenManager tokenManager = DeploymentConstants.getTokenManager();
+        bytes32[] memory assets = tokenManager.getAllTokenAssets();
+        AssetNameBalanceDebtCoverage[] memory result = new AssetNameBalanceDebtCoverage[](assets.length);
+
+        for (uint256 i = 0; i < assets.length; i++) {
+            address assetAddress = tokenManager.getAssetAddress(assets[i], true);
+            result[i] = AssetNameBalanceDebtCoverage({
+                name : assets[i],
+                balance : IERC20(assetAddress).balanceOf(address(this)),
+                debtCoverage : tokenManager.tieredDebtCoverage(DiamondStorageLib.getPrimeLeverageTier(), assetAddress)
+            });
+        }
+
+        return result;
     }
 
     function getAllAssetsBalances() public view returns (AssetNameBalance[] memory) {

@@ -1,0 +1,128 @@
+{
+  "component": "AdminUpgradeabilityProxy",
+  "main_contract": "AdminUpgradeabilityProxy",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AdminUpgradeabilityProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 11,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x836df73065cb143bddf3106e46783d43c12c6012",
+      "is_proxy": true,
+      "implementation_address": "0x0cf9bdb006bc3911d91b4df86fb069f3fd7d8599",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x840c8122433a5aa7ad60c1bcdc36ab9dccf761a5",
+      "is_proxy": true,
+      "implementation_address": "0x7eaf3c936c0109364e63a325652eb3568fa6c29d",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x86f37bb8245b71b959da5bde3fec57cb2a09545d",
+      "is_proxy": true,
+      "implementation_address": "0xd132ee322849ba8e27c123b7ed728efabcfde377",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8b32f750966273cb6d804c02360f3e2743e2b511",
+      "is_proxy": true,
+      "implementation_address": "0x9acafc254167b236036e7dcfac547fcaf681fada",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x921a97c815e4e7508d1ad639b56a21e942a3a152",
+      "is_proxy": true,
+      "implementation_address": "0x601444211de1d1387e98b8afe219291586e85801",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9257b149889a76c7a86bffa5820f06fabca3a9a1",
+      "is_proxy": true,
+      "implementation_address": "0x45cc87f74c1937886d7b6b71ece594d4252b4f93",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x96aa945360b76e18ea5a1cff3ebd9b5b8ffa518e",
+      "is_proxy": true,
+      "implementation_address": "0xaffef88e27e62e3b76f36fb5673c911426dc930c",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9e50e47cc08535ee61ae47acfea20abb1925bd4c",
+      "is_proxy": true,
+      "implementation_address": "0xa3d36d0c24e90b4ba27eef74e19742ed4b5c7f11",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa801f37136a1588075069d9988d4dc2d5167f7b7",
+      "is_proxy": true,
+      "implementation_address": "0xc775866274c9d5777f136eea6c20fe1c7e115d4b",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xec4ea4802cb323645b87441aeb5622c800d72ccd",
+      "is_proxy": true,
+      "implementation_address": "0x348b7fe356abed0b85fdb38d460245557ac6d8e0",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfcc84f7b6d88d671c6a1841549c0b2e70110884f",
+      "is_proxy": true,
+      "implementation_address": "0xb8e03e029e1e283fe4c2b20df7026743a5f33c65",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

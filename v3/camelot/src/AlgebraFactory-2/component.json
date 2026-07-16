@@ -17,12 +17,12 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xbefc4b405041c5833f53412ff997ed2f697a2f37",
+      "address": "0x6b692b588def775a92a6d0f3b6cccc8a4a4e5bb8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "392631"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

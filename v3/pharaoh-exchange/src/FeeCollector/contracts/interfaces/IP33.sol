@@ -38,6 +38,9 @@ interface IP33 is IERC20  {
     /// @notice swap function using aggregators to process rewards into RAM
     function swapIncentiveViaAggregator(AggregatorParams calldata _params) external;
 
+    /// @notice claims the rebase accrued to x33
+    function claimRebase() external;
+
     /// @notice compounds any existing RAM within the contract
     function compound() external;
 

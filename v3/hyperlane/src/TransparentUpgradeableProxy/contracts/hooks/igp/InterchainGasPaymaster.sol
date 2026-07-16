@@ -55,7 +55,8 @@ contract InterchainGasPaymaster is
     // ============ Public Storage ============
 
     /// @notice Destination domain => gas oracle and overhead gas amount.
-    mapping(uint32 => DomainGasConfig) public destinationGasConfigs;
+    mapping(uint32 destinationDomain => DomainGasConfig config)
+        public destinationGasConfigs;
 
     /// @notice The benficiary that can receive native tokens paid into this contract.
     address public beneficiary;
@@ -94,7 +95,7 @@ contract InterchainGasPaymaster is
 
     /// @inheritdoc IPostDispatchHook
     function hookType() external pure override returns (uint8) {
-        return uint8(IPostDispatchHook.Types.INTERCHAIN_GAS_PAYMASTER);
+        return uint8(IPostDispatchHook.HookTypes.INTERCHAIN_GAS_PAYMASTER);
     }
 
     /**
@@ -191,6 +192,7 @@ contract InterchainGasPaymaster is
      * @param _gasLimit The amount of destination gas to pay for.
      * @return The amount of native tokens required to pay for interchain gas.
      */
+    // solhint-disable-next-line hyperlane/no-virtual-override
     function quoteGasPayment(
         uint32 _destinationDomain,
         uint256 _gasLimit
@@ -228,14 +230,14 @@ contract InterchainGasPaymaster is
         IGasOracle _gasOracle = destinationGasConfigs[_destinationDomain]
             .gasOracle;
 
-        require(
-            address(_gasOracle) != address(0),
-            string.concat(
-                "Configured IGP doesn't support domain ",
-                Strings.toString(_destinationDomain)
-            )
-        );
-
+        if (address(_gasOracle) == address(0)) {
+            revert(
+                string.concat(
+                    "Configured IGP doesn't support domain ",
+                    Strings.toString(_destinationDomain)
+                )
+            );
+        }
         return _gasOracle.getExchangeRateAndGasPrice(_destinationDomain);
     }
 

@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
-pragma solidity =0.8.14;
+pragma solidity =0.6.12;
+pragma experimental ABIEncoderV2;
 
 /*
 
@@ -62,12 +63,24 @@ interface IWooAccessManager {
     /// @notice Sets feeAdmin
     function setFeeAdmin(address feeAdmin, bool flag) external;
 
+    /// @notice Batch sets feeAdmin
+    function batchSetFeeAdmin(address[] calldata feeAdmins, bool[] calldata flags) external;
+
     /// @notice Sets vaultAdmin
     function setVaultAdmin(address vaultAdmin, bool flag) external;
+
+    /// @notice Batch sets vaultAdmin
+    function batchSetVaultAdmin(address[] calldata vaultAdmins, bool[] calldata flags) external;
 
     /// @notice Sets rebateAdmin
     function setRebateAdmin(address rebateAdmin, bool flag) external;
 
+    /// @notice Batch sets rebateAdmin
+    function batchSetRebateAdmin(address[] calldata rebateAdmins, bool[] calldata flags) external;
+
     /// @notice Sets zeroFeeVault
     function setZeroFeeVault(address vault, bool flag) external;
+
+    /// @notice Batch sets zeroFeeVault
+    function batchSetZeroFeeVault(address[] calldata vaults, bool[] calldata flags) external;
 }

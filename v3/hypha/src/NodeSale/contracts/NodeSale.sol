@@ -10,9 +10,8 @@ contract NodeSale is Ownable, ReentrancyGuard {
     using SafeERC20 for IERC20;
     
     address constant TREASURY = 0x1E3D04c315eDBb584A9fB85F5Aa30d6385a6859C;
-    uint256 public price = 4000 * 10**18;
+    uint256 public price = 1 * 10**16;
     uint256 public maxNodes = 50;
-    uint256 public maxSupply = 249;
     uint256 public supply;
     bool public salesActive = false;
     bool public isWhitelistEnabled = false;
@@ -34,7 +33,6 @@ contract NodeSale is Ownable, ReentrancyGuard {
     event SalesStatusChanged(bool isActive);
     event WhitelistStatusChanged(bool isEnabled);
     event MaxNodesUpdated(uint256 newMaxNodes);
-    event MaxSupplyUpdated(uint256 newMaxSupply);
 
     constructor() Ownable(msg.sender) {}
 
@@ -81,7 +79,6 @@ contract NodeSale is Ownable, ReentrancyGuard {
         nodesPurchased[msg.sender] += nodeAmount;
         supply += nodeAmount;
         require(nodesPurchased[msg.sender] <= maxNodes, "You can't buy more nodes");
-        require(supply <= maxSupply, "Max number of nodes reached");
         emit NodePurchased(msg.sender, selectedToken, nodeAmount);
     }
     
@@ -142,11 +139,6 @@ contract NodeSale is Ownable, ReentrancyGuard {
         emit MaxNodesUpdated(newMaxNodes);
     }
 
-    function setMaxSupply(uint256 newMaxSupply) external onlyOwner {
-        maxSupply = newMaxSupply;
-        emit MaxSupplyUpdated(newMaxSupply);
-    }
-    
     function withdraw() external onlyOwner {
         for (uint i; i < supportedTokenList.length; i++) {
             address token = supportedTokenList[i];

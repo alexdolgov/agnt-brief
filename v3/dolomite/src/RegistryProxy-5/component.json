@@ -1,0 +1,28 @@
+{
+  "component": "RegistryProxy-5",
+  "main_contract": "RegistryProxy",
+  "source_entry_count": 13,
+  "source_file_count": 13,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RegistryProxy-5\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x79e6e932bf6686a4d357d7821e6e08835ba8a026",
+      "is_proxy": true,
+      "implementation_address": "0xcc036d7f1b6ec8fe86240f4c036dc3fd46b94bc2",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393782"
+    }
+  ]
+}

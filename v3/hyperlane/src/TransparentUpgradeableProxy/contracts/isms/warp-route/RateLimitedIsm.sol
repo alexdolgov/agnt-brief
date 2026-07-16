@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pragma solidity >=0.8.0;
 
-import {IMailbox} from "contracts/interfaces/IMailbox.sol";
-import {MailboxClient} from "contracts/client/MailboxClient.sol";
-import {RateLimited} from "contracts/libs/RateLimited.sol";
-import {IInterchainSecurityModule} from "contracts/interfaces/IInterchainSecurityModule.sol";
-import {Message} from "contracts/libs/Message.sol";
-import {TokenMessage} from "contracts/token/libs/TokenMessage.sol";
+// ============ Internal Imports ============
+import {IInterchainSecurityModule} from "../../interfaces/IInterchainSecurityModule.sol";
+import {MailboxClient} from "../../client/MailboxClient.sol";
+import {RateLimited} from "../../libs/RateLimited.sol";
+import {Message} from "../../libs/Message.sol";
+import {TokenMessage} from "../../token/libs/TokenMessage.sol";
 
 contract RateLimitedIsm is
     MailboxClient,
@@ -15,6 +15,8 @@ contract RateLimitedIsm is
 {
     using Message for bytes;
     using TokenMessage for bytes;
+
+    address public immutable recipient;
 
     mapping(bytes32 messageId => bool validated) public messageValidated;
 
@@ -25,14 +27,22 @@ contract RateLimitedIsm is
         _;
     }
 
+    modifier onlyRecipient(bytes calldata _message) {
+        require(_message.recipientAddress() == recipient, "InvalidRecipient");
+        _;
+    }
+
     constructor(
         address _mailbox,
-        uint256 _maxCapacity
-    ) MailboxClient(_mailbox) RateLimited(_maxCapacity) {}
+        uint256 _maxCapacity,
+        address _recipient
+    ) MailboxClient(_mailbox) RateLimited(_maxCapacity) {
+        recipient = _recipient;
+    }
 
     /// @inheritdoc IInterchainSecurityModule
     function moduleType() external pure returns (uint8) {
-        return uint8(IInterchainSecurityModule.Types.UNUSED);
+        return uint8(IInterchainSecurityModule.Types.NULL);
     }
 
     /**
@@ -42,11 +52,16 @@ contract RateLimitedIsm is
     function verify(
         bytes calldata,
         bytes calldata _message
-    ) external validateMessageOnce(_message) returns (bool) {
+    )
+        external
+        onlyRecipient(_message)
+        validateMessageOnce(_message)
+        returns (bool)
+    {
         require(_isDelivered(_message.id()), "InvalidDeliveredMessage");
 
         uint256 newAmount = _message.body().amount();
-        validateAndConsumeFilledLevel(newAmount);
+        _validateAndConsumeFilledLevel(newAmount);
 
         return true;
     }

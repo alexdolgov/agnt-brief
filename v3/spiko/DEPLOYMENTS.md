@@ -1,29 +1,46 @@
 # spiko — deployments
 
-37 verified deployment(s) across 3 component(s).
+55 verified deployment(s) across 9 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x021289588cd81dc1ac87ea91e91607eef68303f5` | ERC1967Proxy | proxy | live | no |
+| arbitrum | `0x17e2b2eed8e07328302a7b4135ed1b2dc57c447c` | SpikoDefensiveSenderReceiver-2 | impl | live | no |
+| arbitrum | `0x1b952b0db5c39ef801fedd1cbbef47d404689b1e` | ERC1967Proxy-2 | impl | live | no |
+| arbitrum | `0x4c3ba0eae5ab65c9510769a2877cf4d93330bc87` | ERC1967Proxy | impl | live | no |
+| arbitrum | `0x77926af72cadbc6d6a308c6a6b6aaa5fbdf43218` | ERC1967Proxy-2 | impl | live | no |
+| arbitrum | `0x8513fcdd66e148e4b5e4940be21f50c20d112731` | SpikoDefensiveSenderReceiver | impl | live | no |
+| arbitrum | `0xa390a927d0ea7438cf8f3409791b540d56a6ddcd` | SpikoDefensiveSenderReceiver | impl | live | no |
+| arbitrum | `0xaead1f7c9b189816cb845363d142cfcf339084c2` | Minter | impl | live | no |
 | base | `0x0bb754d8940e283d9ff6855ab5dafbc14165c059` | ERC1967Proxy-2 | proxy | live | no |
+| base | `0x1b952b0db5c39ef801fedd1cbbef47d404689b1e` | SpikoDefensiveSenderReceiver | impl | live | no |
 | base | `0x2f6c0e5e06b43512706a9cdf66cd21f723fe0ec3` | Proxy | proxy | live | no |
 | base | `0x344278aff344d6fb960705dc18a4912221608472` | ERC1967Proxy | proxy | live | no |
+| base | `0x42db5a5af4d82e8ed42405dfa37278c360d923c3` | ERC2771Forwarder | impl | unknown | no |
+| base | `0x4640a8bf08d5917dcaef42edb14d3e06e1b23f39` | SpikoDefensiveSenderReceiver | impl | live | no |
+| base | `0x4c3ba0eae5ab65c9510769a2877cf4d93330bc87` | SpikoDefensiveSenderReceiver | impl | live | no |
 | base | `0x4f33acf823e6eeb697180d553ce0c710124c8d59` | ERC1967Proxy | proxy | live | no |
+| base | `0x8226e968efd24d9baf156eca15179d1cc1bfd828` | SpikoDefensiveSenderReceiver | impl | live | no |
 | base | `0xa0769f7a8fc65e47de93797b4e21c073c117fc80` | ERC1967Proxy | proxy | live | no |
+| base | `0xa390a927d0ea7438cf8f3409791b540d56a6ddcd` | SpikoDefensiveSenderReceiver | impl | live | no |
 | base | `0xa8de1f55aa0e381cb456e1dcc9ff781ea0079068` | ERC1967Proxy | proxy | live | no |
 | base | `0xaead1f7c9b189816cb845363d142cfcf339084c2` | ERC1967Proxy | proxy | live | no |
 | base | `0xd879846cbe20751bde8a9342a3cca00a3e56ca47` | Proxy | proxy | live | no |
 | base | `0xd9aa2300e126869182dfb6ecf54984e4c687f36b` | Proxy | proxy | live | no |
 | base | `0xda5599f04e9b437c8394b0c2bc68b502a66ebfe8` | ERC1967Proxy | proxy | live | no |
 | base | `0xe4880249745eac5f1ed9d8f7df844792d560e750` | ERC1967Proxy | proxy | live | no |
+| base | `0xe7bbab0637a6ce538e621114c4c7b3d116d11d2a` | SpikoDefensiveSenderReceiver | impl | live | no |
+| base | `0xf10890d77840d9186ac0aa438eab9a078cbb2a93` | SpikoDefensiveSenderReceiver | impl | live | no |
 | base | `0xf695df6c0f3bb45918a7a82e83348fc59517734e` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0x0990b149e915cb08e2143a5c6f669c907eddc8b0` | Proxy | proxy | live | no |
 | ethereum | `0x18b5c15e5196a38a162b1787875295b76e4313fb` | Proxy | proxy | live | no |
 | ethereum | `0x344278aff344d6fb960705dc18a4912221608472` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0x3868d4e336d14d38031cf680329d31e4712e11cc` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0x42db5a5af4d82e8ed42405dfa37278c360d923c3` | ERC2771Forwarder-2 | impl | live | no |
 | ethereum | `0x4f33acf823e6eeb697180d553ce0c710124c8d59` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0x5ed5a75eeed1934ea060186e35187eaa73331366` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0xa0769f7a8fc65e47de93797b4e21c073c117fc80` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0xa2850a72abe63d0c7258910564ed56fcfd355893` | Token | impl | live | no |
 | ethereum | `0xc273986a91e4bfc543610a5cb5860b7cfefb6cc0` | Proxy | proxy | live | no |
 | ethereum | `0xcbade7d9bdee88411cb6cbcbb29952b742036992` | ERC1967Proxy-2 | proxy | live | no |
 | ethereum | `0xda5599f04e9b437c8394b0c2bc68b502a66ebfe8` | ERC1967Proxy | proxy | live | no |
@@ -31,6 +48,7 @@
 | ethereum | `0xf695df6c0f3bb45918a7a82e83348fc59517734e` | ERC1967Proxy | proxy | live | no |
 | polygon | `0x272ea767712cc4839f4a27ee35eb73116158c8a2` | Proxy | proxy | live | no |
 | polygon | `0x344278aff344d6fb960705dc18a4912221608472` | ERC1967Proxy | proxy | live | no |
+| polygon | `0x42db5a5af4d82e8ed42405dfa37278c360d923c3` | ERC2771Forwarder | impl | live | no |
 | polygon | `0x4fe515c67eeeadb3282780325f09bb7c244fe774` | Proxy | proxy | live | no |
 | polygon | `0x6f64f47f95cf656f21b40e14798f6b49f80b3dc5` | ERC1967Proxy-2 | proxy | live | no |
 | polygon | `0x903d5990119bc799423e9c25c56518ba7dd19474` | ERC1967Proxy | proxy | live | no |

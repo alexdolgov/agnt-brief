@@ -1,0 +1,28 @@
+{
+  "component": "LoanTokenLogicStandard",
+  "main_contract": "LoanTokenLogicStandard",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LoanTokenLogicStandard\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x066888951a12e0b7fbc20ecf273075c3b7ee3db2",
+      "is_proxy": true,
+      "implementation_address": "0x6e0c17f56d0d97f83d400a66c508307bce6f8e38",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

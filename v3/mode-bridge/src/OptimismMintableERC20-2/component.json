@@ -17,32 +17,32 @@
     {
       "chain": "mode",
       "chain_id": 34443,
-      "address": "0xcdd475325d6f564d27247d1dddbb0dac6fa0a5cf",
+      "address": "0x00ea4344e90c741560f08667961a8de39ff506d7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "396870"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "mode",
       "chain_id": 34443,
-      "address": "0xd988097fb8612cc24eec14542bc03424c656005f",
+      "address": "0x028227c4dd1e5419d11bb6fa6e661920c519d4f5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "396872"
+      "logic_topography_row_id": "396858"
     },
     {
       "chain": "mode",
       "chain_id": 34443,
-      "address": "0xf0f161fda2712db8b566946122a5af183995e2ed",
+      "address": "0xf419234b27d0efb71d93d522804df370a4107be1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "396875"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
-pragma solidity =0.8.14;
+pragma solidity =0.6.12;
+pragma experimental ABIEncoderV2;
 
 /*
 
@@ -34,26 +35,27 @@ pragma solidity =0.8.14;
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-import "../interfaces/IStrategy.sol";
-import "../interfaces/IWETH.sol";
-import "../interfaces/IWooAccessManager.sol";
-import "../interfaces/IVaultV2.sol";
-import "../interfaces/IMasterChefWoo.sol";
+import '@openzeppelin/contracts/token/ERC20/IERC20.sol';
+import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
+import '@openzeppelin/contracts/token/ERC20/SafeERC20.sol';
+import '@openzeppelin/contracts/math/SafeMath.sol';
+import '@openzeppelin/contracts/access/Ownable.sol';
+import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
+import '@openzeppelin/contracts/utils/ReentrancyGuard.sol';
+import '@openzeppelin/contracts/utils/EnumerableSet.sol';
+import '@openzeppelin/contracts/utils/Pausable.sol';
 
-import "./WooWithdrawManager.sol";
-import "./WooLendingManager.sol";
+import '../interfaces/IStrategy.sol';
+import '../interfaces/IWETH.sol';
+import '../interfaces/IWooAccessManager.sol';
+import '../interfaces/IVaultV2.sol';
 
-import "../libraries/TransferHelper.sol";
-
-import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
-import {ReentrancyGuard} from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
-import {IERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import {Pausable} from "@openzeppelin/contracts/security/Pausable.sol";
-import {IERC20Metadata} from "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
-import {EnumerableSet} from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import './WooWithdrawManager.sol';
+import './WooLendingManager.sol';
 
 contract WooSuperChargerVault is ERC20, Ownable, Pausable, ReentrancyGuard {
+    using SafeERC20 for IERC20;
+    using SafeMath for uint256;
     using EnumerableSet for EnumerableSet.AddressSet;
 
     event Deposit(address indexed user, uint256 assets, uint256 shares);
@@ -97,22 +99,20 @@ contract WooSuperChargerVault is ERC20, Ownable, Pausable, ReentrancyGuard {
     address public treasury = 0x815D4517427Fc940A90A5653cdCEA1544c6283c9;
     uint256 public instantWithdrawFeeRate = 30; // 1 in 10000th. default: 30 -> 0.3%
 
-    address public masterChef;
-    uint256 public pid;
-
     constructor(
         address _weth,
         address _want,
         address _accessManager
     )
+        public
         ERC20(
-            string(abi.encodePacked("WOOFi Super Charger ", ERC20(_want).name())),
-            string(abi.encodePacked("we", ERC20(_want).symbol()))
+            string(abi.encodePacked('WOOFi Super Charger ', ERC20(_want).name())),
+            string(abi.encodePacked('we', ERC20(_want).symbol()))
         )
     {
-        require(_weth != address(0), "WooSuperChargerVault: !weth");
-        require(_want != address(0), "WooSuperChargerVault: !want");
-        require(_accessManager != address(0), "WooSuperChargerVault: !accessManager");
+        require(_weth != address(0), 'WooSuperChargerVault: !weth');
+        require(_want != address(0), 'WooSuperChargerVault: !want');
+        require(_accessManager != address(0), 'WooSuperChargerVault: !accessManager');
 
         weth = _weth;
         want = _want;
@@ -124,9 +124,9 @@ contract WooSuperChargerVault is ERC20, Ownable, Pausable, ReentrancyGuard {
         address _lendingManager,
         address payable _withdrawManager
     ) external onlyOwner {
-        require(_reserveVault != address(0), "WooSuperChargerVault: !_reserveVault");
-        require(_lendingManager != address(0), "WooSuperChargerVault: !_lendingManager");
-        require(_withdrawManager != address(0), "WooSuperChargerVault: !_withdrawManager");
+        require(_reserveVault != address(0), 'WooSuperChargerVault: !_reserveVault');
+        require(_lendingManager != address(0), 'WooSuperChargerVault: !_lendingManager');
+        require(_withdrawManager != address(0), 'WooSuperChargerVault: !_withdrawManager');
 
         reserveVault = IVaultV2(_reserveVault);
         require(reserveVault.want() == want);
@@ -135,32 +135,16 @@ contract WooSuperChargerVault is ERC20, Ownable, Pausable, ReentrancyGuard {
     }
 
     modifier onlyAdmin() {
-        require(owner() == msg.sender || accessManager.isVaultAdmin(msg.sender), "WooSuperChargerVault: !ADMIN");
+        require(owner() == msg.sender || accessManager.isVaultAdmin(msg.sender), 'WooSuperChargerVault: !ADMIN');
         _;
     }
 
     modifier onlyLendingManager() {
-        require(msg.sender == address(lendingManager), "WooSuperChargerVault: !lendingManager");
+        require(msg.sender == address(lendingManager), 'WooSuperChargerVault: !lendingManager');
         _;
     }
 
     /* ----- External Functions ----- */
-
-    function setMasterChef(address _masterChef, uint256 _pid) external onlyOwner {
-        require(_masterChef != address(0), "!_masterChef");
-        masterChef = _masterChef;
-        pid = _pid;
-        (IERC20 weToken, , , , ) = IMasterChefWoo(masterChef).poolInfo(pid);
-        require(address(weToken) == address(this), "!pid");
-    }
-
-    function stakedShares(address _user) public view returns (uint256 shares) {
-        if (masterChef == address(0)) {
-            shares = 0;
-        } else {
-            (shares, ) = IMasterChefWoo(masterChef).userInfo(pid, _user);
-        }
-    }
 
     function deposit(uint256 amount) external payable whenNotPaused nonReentrant {
         // require(amount > 0, 'WooSuperChargerVault: !amount');
@@ -170,16 +154,15 @@ contract WooSuperChargerVault is ERC20, Ownable, Pausable, ReentrancyGuard {
 
         lendingManager.accureInterest();
         uint256 shares = _shares(amount, getPricePerFullShare());
-        require(shares > 0, "!shares");
+        require(shares > 0, '!shares');
 
-        uint256 sharesBefore = balanceOf(msg.sender) + stakedShares(msg.sender);
+        uint256 sharesBefore = balanceOf(msg.sender);
         uint256 costBefore = costSharePrice[msg.sender];
-        uint256 costAfter = (sharesBefore * costBefore + amount * 1e18) / (sharesBefore + shares);
-
+        uint256 costAfter = (sharesBefore.mul(costBefore).add(amount.mul(1e18))).div(sharesBefore.add(shares));
         costSharePrice[msg.sender] = costAfter;
 
         if (want == weth) {
-            require(msg.value == amount, "WooSuperChargerVault: msg.value_INSUFFICIENT");
+            require(msg.value == amount, 'WooSuperChargerVault: msg.value_INSUFFICIENT');
             reserveVault.deposit{value: msg.value}(amount);
         } else {
             TransferHelper.safeTransferFrom(want, msg.sender, address(this), amount);
@@ -188,21 +171,21 @@ contract WooSuperChargerVault is ERC20, Ownable, Pausable, ReentrancyGuard {
         }
         _mint(msg.sender, shares);
 
-        instantWithdrawCap = instantWithdrawCap + amount / 10;
+        instantWithdrawCap = instantWithdrawCap.add(amount.div(10));
 
         emit Deposit(msg.sender, amount, shares);
     }
 
     function instantWithdraw(uint256 amount) external whenNotPaused nonReentrant {
-        require(amount > 0, "WooSuperChargerVault: !amount");
-        require(!isSettling, "WooSuperChargerVault: NOT_ALLOWED_IN_SETTLING");
+        require(amount > 0, 'WooSuperChargerVault: !amount');
+        require(!isSettling, 'WooSuperChargerVault: NOT_ALLOWED_IN_SETTLING');
 
         if (instantWithdrawnAmount >= instantWithdrawCap) {
             // NOTE: no more instant withdraw quota.
             return;
         }
 
-        require(amount <= instantWithdrawCap - instantWithdrawnAmount, "WooSuperChargerVault: OUT_OF_CAP");
+        require(amount <= instantWithdrawCap.sub(instantWithdrawnAmount), 'WooSuperChargerVault: OUT_OF_CAP');
         lendingManager.accureInterest();
         uint256 shares = _sharesUp(amount, getPricePerFullShare());
         _burn(msg.sender, shares);
@@ -210,79 +193,33 @@ contract WooSuperChargerVault is ERC20, Ownable, Pausable, ReentrancyGuard {
         uint256 reserveShares = _sharesUp(amount, reserveVault.getPricePerFullShare());
         reserveVault.withdraw(reserveShares);
 
-        uint256 fee = accessManager.isZeroFeeVault(msg.sender) ? 0 : (amount * instantWithdrawFeeRate) / 10000;
+        uint256 fee = accessManager.isZeroFeeVault(msg.sender) ? 0 : amount.mul(instantWithdrawFeeRate).div(10000);
         if (want == weth) {
             TransferHelper.safeTransferETH(treasury, fee);
-            TransferHelper.safeTransferETH(msg.sender, amount - fee);
+            TransferHelper.safeTransferETH(msg.sender, amount.sub(fee));
         } else {
             TransferHelper.safeTransfer(want, treasury, fee);
-            TransferHelper.safeTransfer(want, msg.sender, amount - fee);
+            TransferHelper.safeTransfer(want, msg.sender, amount.sub(fee));
         }
 
-        instantWithdrawnAmount = instantWithdrawnAmount + amount;
-
-        emit InstantWithdraw(msg.sender, amount, reserveShares, fee);
-    }
-
-    function instantWithdrawAll() external whenNotPaused nonReentrant {
-        require(!isSettling, "WooSuperChargerVault: NOT_ALLOWED_IN_SETTLING");
-
-        if (instantWithdrawnAmount >= instantWithdrawCap) {
-            // NOTE: no more instant withdraw quota.
-            return;
-        }
-
-        lendingManager.accureInterest();
-        uint256 shares = balanceOf(msg.sender);
-        uint256 amount = _assets(shares);
-        require(amount <= instantWithdrawCap - instantWithdrawnAmount, "WooSuperChargerVault: OUT_OF_CAP");
-
-        _burn(msg.sender, shares);
-
-        uint256 reserveShares = _sharesUp(amount, reserveVault.getPricePerFullShare());
-        reserveVault.withdraw(reserveShares);
-
-        uint256 fee = accessManager.isZeroFeeVault(msg.sender) ? 0 : (amount * instantWithdrawFeeRate) / 10000;
-        if (want == weth) {
-            TransferHelper.safeTransferETH(treasury, fee);
-            TransferHelper.safeTransferETH(msg.sender, amount - fee);
-        } else {
-            TransferHelper.safeTransfer(want, treasury, fee);
-            TransferHelper.safeTransfer(want, msg.sender, amount - fee);
-        }
-
-        instantWithdrawnAmount = instantWithdrawnAmount + amount;
+        instantWithdrawnAmount = instantWithdrawnAmount.add(amount);
 
         emit InstantWithdraw(msg.sender, amount, reserveShares, fee);
     }
 
     function requestWithdraw(uint256 amount) external whenNotPaused nonReentrant {
-        require(amount > 0, "WooSuperChargerVault: !amount");
-        require(!isSettling, "WooSuperChargerVault: CANNOT_WITHDRAW_IN_SETTLING");
+        require(amount > 0, 'WooSuperChargerVault: !amount');
+        require(!isSettling, 'WooSuperChargerVault: CANNOT_WITHDRAW_IN_SETTLING');
 
         lendingManager.accureInterest();
         uint256 shares = _sharesUp(amount, getPricePerFullShare());
         TransferHelper.safeTransferFrom(address(this), msg.sender, address(this), shares);
 
-        requestedWithdrawShares[msg.sender] = requestedWithdrawShares[msg.sender] + shares;
-        requestedTotalShares = requestedTotalShares + shares;
+        requestedWithdrawShares[msg.sender] = requestedWithdrawShares[msg.sender].add(shares);
+        requestedTotalShares = requestedTotalShares.add(shares);
         requestUsers.add(msg.sender);
 
         emit RequestWithdraw(msg.sender, amount, shares);
-    }
-
-    function requestWithdrawAll() external whenNotPaused nonReentrant {
-        require(!isSettling, "WooSuperChargerVault: CANNOT_WITHDRAW_IN_SETTLING");
-
-        lendingManager.accureInterest();
-        uint256 shares = balanceOf(msg.sender);
-        TransferHelper.safeTransferFrom(address(this), msg.sender, address(this), shares);
-
-        requestedWithdrawShares[msg.sender] = requestedWithdrawShares[msg.sender] + shares;
-        requestedTotalShares = requestedTotalShares + shares;
-        requestUsers.add(msg.sender);
-
-        emit RequestWithdraw(msg.sender, _assets(shares), shares);
     }
 
     function requestedTotalAmount() public view returns (uint256) {
@@ -307,24 +244,24 @@ contract WooSuperChargerVault is ERC20, Ownable, Pausable, ReentrancyGuard {
 
     // Returns the total balance (assets), which is avaiable + reserve + lending.
     function balance() public view returns (uint256) {
-        return available() + reserveBalance() + lendingBalance();
+        return available().add(reserveBalance()).add(lendingBalance());
     }
 
     function getPricePerFullShare() public view returns (uint256) {
-        return totalSupply() == 0 ? 1e18 : (balance() * 1e18) / totalSupply();
+        return totalSupply() == 0 ? 1e18 : balance().mul(1e18).div(totalSupply());
     }
 
     // --- For WooLendingManager --- //
 
     function maxBorrowableAmount() public view returns (uint256) {
         uint256 resBal = reserveBalance();
-        uint256 instWithdrawBal = instantWithdrawCap - instantWithdrawnAmount;
-        return resBal > instWithdrawBal ? resBal - instWithdrawBal : 0;
+        uint256 instWithdrawBal = instantWithdrawCap.sub(instantWithdrawnAmount);
+        return resBal > instWithdrawBal ? resBal.sub(instWithdrawBal) : 0;
     }
 
     function borrowFromLendingManager(uint256 amount, address fundAddr) external onlyLendingManager {
-        require(!isSettling, "IN SETTLING");
-        require(amount <= maxBorrowableAmount(), "INSUFF_AMOUNT_FOR_BORROW");
+        require(!isSettling, 'IN SETTLING');
+        require(amount <= maxBorrowableAmount(), 'INSUFF_AMOUNT_FOR_BORROW');
         uint256 sharesToWithdraw = _sharesUp(amount, reserveVault.getPricePerFullShare());
         reserveVault.withdraw(sharesToWithdraw);
         if (want == weth) {
@@ -349,21 +286,24 @@ contract WooSuperChargerVault is ERC20, Ownable, Pausable, ReentrancyGuard {
     function weeklyNeededAmountForWithdraw() public view returns (uint256) {
         uint256 reserveBal = reserveBalance();
         uint256 requestedAmount = requestedTotalAmount();
-        uint256 afterBal = balance() - requestedAmount;
+        uint256 afterBal = balance().sub(requestedAmount);
 
-        return reserveBal >= requestedAmount + afterBal / 10 ? 0 : requestedAmount + afterBal / 10 - reserveBal;
+        return
+            reserveBal >= requestedAmount.add(afterBal.div(10))
+                ? 0
+                : requestedAmount.add(afterBal.div(10)).sub(reserveBal);
     }
 
     function startWeeklySettle() external onlyAdmin {
-        require(!isSettling, "IN_SETTLING");
+        require(!isSettling, 'IN_SETTLING');
         isSettling = true;
         lendingManager.accureInterest();
         emit WeeklySettleStarted(msg.sender, requestedTotalShares, weeklyNeededAmountForWithdraw());
     }
 
     function endWeeklySettle() public onlyAdmin {
-        require(isSettling, "!SETTLING");
-        require(weeklyNeededAmountForWithdraw() == 0, "WEEKLY_REPAY_NOT_CLEARED");
+        require(isSettling, '!SETTLING');
+        require(weeklyNeededAmountForWithdraw() == 0, 'WEEKLY_REPAY_NOT_CLEARED');
 
         uint256 sharePrice = getPricePerFullShare();
 
@@ -384,7 +324,7 @@ contract WooSuperChargerVault is ERC20, Ownable, Pausable, ReentrancyGuard {
             for (uint256 i = 0; i < length; i++) {
                 address user = requestUsers.at(0);
 
-                withdrawManager.addWithdrawAmount(user, (requestedWithdrawShares[user] * sharePrice) / 1e18);
+                withdrawManager.addWithdrawAmount(user, requestedWithdrawShares[user].mul(sharePrice).div(1e18));
 
                 requestedWithdrawShares[user] = 0;
                 requestUsers.remove(user);
@@ -398,22 +338,22 @@ contract WooSuperChargerVault is ERC20, Ownable, Pausable, ReentrancyGuard {
 
         lendingManager.accureInterest();
         uint256 totalBalance = balance();
-        instantWithdrawCap = totalBalance / 10;
+        instantWithdrawCap = totalBalance.div(10);
 
         emit WeeklySettleEnded(msg.sender, totalBalance, lendingBalance(), reserveBalance());
     }
 
     function migrateReserveVault(address _vault) external onlyOwner {
-        require(_vault != address(0), "!_vault");
+        require(_vault != address(0), '!_vault');
 
         uint256 preBal = (want == weth) ? address(this).balance : available();
         reserveVault.withdraw(IERC20(address(reserveVault)).balanceOf(address(this)));
         uint256 afterBal = (want == weth) ? address(this).balance : available();
-        uint256 reserveAmount = afterBal - preBal;
+        uint256 reserveAmount = afterBal.sub(preBal);
 
         address oldVault = address(reserveVault);
         reserveVault = IVaultV2(_vault);
-        require(reserveVault.want() == want, "INVALID_WANT");
+        require(reserveVault.want() == want, 'INVALID_WANT');
         if (want == weth) {
             reserveVault.deposit{value: reserveAmount}(reserveAmount);
         } else {
@@ -470,15 +410,15 @@ contract WooSuperChargerVault is ERC20, Ownable, Pausable, ReentrancyGuard {
     }
 
     function _assets(uint256 shares, uint256 sharePrice) private pure returns (uint256) {
-        return (shares * sharePrice) / 1e18;
+        return shares.mul(sharePrice).div(1e18);
     }
 
     function _shares(uint256 assets, uint256 sharePrice) private pure returns (uint256) {
-        return (assets * 1e18) / sharePrice;
+        return assets.mul(1e18).div(sharePrice);
     }
 
     function _sharesUp(uint256 assets, uint256 sharePrice) private pure returns (uint256) {
-        uint256 shares = (assets * 1e18) / sharePrice;
-        return _assets(shares, sharePrice) == assets ? shares : shares + 1;
+        uint256 shares = assets.mul(1e18).div(sharePrice);
+        return _assets(shares, sharePrice) == assets ? shares : shares.add(1);
     }
 }

@@ -1,8 +1,8 @@
 {
   "component": "Market-8",
   "main_contract": "Market",
-  "source_entry_count": 1,
-  "source_file_count": 1,
+  "source_entry_count": 6,
+  "source_file_count": 6,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -11,20 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://code4rena.com/reports/2022-10-inverse"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x63df5e23db45a2066508318f172ba45b9cd37035",
+      "address": "0x27b6c301fd441f3345d61b7a4245e1f823c3f9c4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395436"
+      "logic_topography_row_id": "395425"
     }
   ]
 }

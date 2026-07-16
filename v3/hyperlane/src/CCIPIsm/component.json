@@ -1,0 +1,79 @@
+{
+  "component": "CCIPIsm",
+  "main_contract": "CCIPIsm",
+  "source_entry_count": 17,
+  "source_file_count": 17,
+  "source_path_remaps": [
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-6336aa4821ec-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@chainlink/contracts-ccip/src/v0.8/ccip/interfaces/IRouterClient.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-e14c49101823-IRouterClient.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@chainlink/contracts-ccip/src/v0.8/ccip/libraries/Client.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-c4f70c72c491-Client.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@chainlink/contracts-ccip/src/v0.8/ccip/applications/CCIPReceiver.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-7f39da8ceaca-CCIPReceiver.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/access/Ownable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-e6fe8adf622a-Ownable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-3b0c8c6b876b-Initializable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@chainlink/contracts-ccip/src/v0.8/ccip/interfaces/IAny2EVMMessageReceiver.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-151c7d630d08-IAny2EVMMessageReceiver.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@chainlink/contracts-ccip/src/v0.8/vendor/openzeppelin-solidity/v5.0.2/contracts/utils/introspection/IERC165.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-1872b6d41931-IERC165.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts/utils/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-e7a2c84b53f8-Context.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-4f903944d1f2-AddressUpgradeable.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CCIPIsm\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x0e389a95ba8717a2dd38b85c4c29753d98b46659",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

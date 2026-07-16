@@ -1,0 +1,28 @@
+{
+  "component": "InfiniFiMintOVaultComposer-2",
+  "main_contract": "InfiniFiMintOVaultComposer",
+  "source_entry_count": 89,
+  "source_file_count": 89,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/InfiniFiMintOVaultComposer-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x728fabc3072f18e82e2ab4dbe43b982e49714fad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

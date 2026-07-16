@@ -1,0 +1,68 @@
+{
+  "component": "TransparentUpgradeableProxy",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_entry_count": 12,
+  "source_file_count": 12,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3080808080ee6a795c1a6ff388195aa5f11ecee0",
+      "is_proxy": true,
+      "implementation_address": "0x6bfc1a9c63e1b90071a9f54e3c7babe6faf788b0",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x3205e972714b52512c837ae6f5fcfdeb07f0f23c",
+      "is_proxy": true,
+      "implementation_address": "0xc3cb4ae3e7e4dc570d1dc187721546212f399439",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x353c6ba99500f9f5a7937af7bf26c8e40817518b",
+      "is_proxy": true,
+      "implementation_address": "0x42950719322274543b00b576c82bd6894c81735a",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd180808080402fe41711db560b8db5c41e21df71",
+      "is_proxy": true,
+      "implementation_address": "0xf4dbf57f61a578178210306a59bacc40dcfbd116",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd2808080809a71248620a7ddc25b721d3dbe1058",
+      "is_proxy": true,
+      "implementation_address": "0xf4dbf57f61a578178210306a59bacc40dcfbd116",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

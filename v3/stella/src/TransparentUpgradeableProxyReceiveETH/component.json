@@ -1,0 +1,28 @@
+{
+  "component": "TransparentUpgradeableProxyReceiveETH",
+  "main_contract": "TransparentUpgradeableProxyReceiveETH",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxyReceiveETH\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x092d4bee60b9f8904918ba7b0341c0b45f16fb55",
+      "is_proxy": true,
+      "implementation_address": "0x48b5602c6a716c57db1f85957956fb249b59577c",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

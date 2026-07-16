@@ -569,18 +569,18 @@ contract StakingRewards is ReentrancyGuard, Pausable {
         emit Withdrawn(msg.sender, amount);
     }
 
-    function getReward() public nonReentrant updateReward(msg.sender) {
-        uint256 reward = rewards[msg.sender];
+    function getReward(address account) public nonReentrant updateReward(account) {
+        uint256 reward = rewards[account];
         if (reward > 0) {
-            rewards[msg.sender] = 0;
-            rewardsToken.safeTransfer(msg.sender, reward);
-            emit RewardPaid(msg.sender, reward);
+            rewards[account] = 0;
+            rewardsToken.safeTransfer(account, reward);
+            emit RewardPaid(account, reward);
         }
     }
 
     function exit() external {
         withdraw(_balances[msg.sender]);
-        getReward();
+        getReward(msg.sender);
     }
 
     /* ========== RESTRICTED FUNCTIONS ========== */

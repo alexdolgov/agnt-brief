@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/SwapRouter\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x2e6b9c8d4a0972f87f21437a3ac7e4a1810f5438",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "chain-146",
       "chain_id": 146,

@@ -1,0 +1,28 @@
+{
+  "component": "SymmioSymbolManager-6",
+  "main_contract": "SymmioSymbolManager",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SymmioSymbolManager-6\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0xfd9b6b38046e63ebb3a66de99e197ab366a027f3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "component": "PoseidonPoseidonPartialRoundKey1Column",
+  "main_contract": "PoseidonPoseidonPartialRoundKey1Column",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PoseidonPoseidonPartialRoundKey1Column\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc1cd710bb0d8a07a46cc884a552091d1ed433ccc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

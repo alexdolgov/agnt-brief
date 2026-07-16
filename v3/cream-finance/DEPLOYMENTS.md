@@ -1,12 +1,12 @@
 # cream-finance — deployments
 
-55 verified deployment(s) across 14 component(s).
+86 verified deployment(s) across 22 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x20ca53e2395fa571798623f1cfbd11fe2c114c24` | PriceOracleV1 | impl | live | no |
 | arbitrum | `0xf4d48ce3ee1ac3651998971541badbb9a14d7234` | ClonableBeaconProxy | proxy | live | no |
-| bsc | `0x04c61ef58a6f1d6c572045a39a5434ab9dee69fb` | CErc20Delegator-2 | proxy | live | no |
+| bsc | `0x04c61ef58a6f1d6c572045a39a5434ab9dee69fb` | CErc20Delegator-5 | proxy | live | no |
 | bsc | `0x0e9d900c884964dc4b26db96ba113825b1a09baa` | CErc20Delegator | proxy | live | no |
 | bsc | `0x11883cdea6bab720092791cc89affa54428ce069` | CErc20Delegator | proxy | live | no |
 | bsc | `0x19b08ff7d90d63ad109c6fabb8e0fcc866477a41` | CErc20Delegator | proxy | live | no |
@@ -27,8 +27,11 @@
 | bsc | `0x5ea2dd1de21ed3b5316cef89985edc66cf9b2a0e` | CErc20Delegator | proxy | live | no |
 | bsc | `0x5fa61a5a65920f90af970b13b7f28daeef0440b7` | CErc20Delegator | proxy | live | no |
 | bsc | `0x738f3810b3da0f3e6dc8c689d0d72f3b4992c43b` | CErc20Delegator | proxy | live | no |
+| bsc | `0x7e545caa813b102d2c6bfb7d6b07a0ea699ccac2` | CErc20Delegator-3 | proxy | live | no |
 | bsc | `0x7f746a80506a4cafa39938f7c08ad59cfa6de418` | CErc20Delegator | proxy | live | no |
 | bsc | `0x7fd568d6a1a11b19427c8ccb90f7bb80e4ab1c5f` | CErc20Delegator | proxy | live | no |
+| bsc | `0x803bb411e0c0200349e30314d60c30a7509b6245` | Maximillion | impl | live | no |
+| bsc | `0x8166974222577f9ef674c1633f0742256f5a06cf` | CErc20Delegator-3 | proxy | live | no |
 | bsc | `0x81c15d3e956e55e77e1f3f257f0a65bd2725fc55` | CErc20Delegator | proxy | live | no |
 | bsc | `0x84902bd5ccef97648bf69c5096729a9367043beb` | CErc20Delegator | proxy | live | no |
 | bsc | `0x8cc7e2a6de999758499658bb702143fd025e09b2` | CErc20Delegator | proxy | live | no |
@@ -51,11 +54,39 @@
 | bsc | `0xea466cd2583a0290b9e7b987a769a7eb468fb0a5` | CErc20Delegator | proxy | live | no |
 | bsc | `0xef6d459fe81c3ed53d292c936b2df5a8084975de` | CErc20Delegator | proxy | live | no |
 | bsc | `0xf77df34f4bf632fb5ca928592a73a29a42bcf0b1` | CErc20Delegator | proxy | live | no |
+| ethereum | `0x00e5c0774a5f065c285068170b20393925c84bf3` | CErc20Delegator-4 | proxy | live | no |
+| ethereum | `0x0b471a71c3f6d4aadc7eb20aab7d730ae385e150` | StakingRewardsLock | impl | unknown | no |
+| ethereum | `0x12a9cc33a980daa74e00cc2d1a0e74c57a93d12c` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x1b3e95e8ecf7a7cab6c4de1b344f94865abd12d5` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x1d09144f3479bb805cb7c92346987420bcbdc10c` | CreamY | impl | live | no |
+| ethereum | `0x215f34af6557a6598dbda9aa11cc556f5ae264b1` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x226f3738238932ba0db2319a8117d9555446102f` | CErc20Delegator-2 | proxy | live | no |
 | ethereum | `0x2ba592f78db6436527729929aaf6c908497cb200` | Comp | impl | live | no |
+| ethereum | `0x30190a3b52b5ab1daf70d46d72536f5171f22340` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x3c9f5385c288ce438ed55620938a4b967c080101` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x41c84c0e2ee0b740cf0d31f63f3b6f627dc6b393` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x48759f220ed983db51fa7a8c0d2aab8f3ce4166a` | CErc20Delegator-2 | proxy | live | no |
 | ethereum | `0x49d72e3973900a195a155a46441f0c08179fdb64` | CreamEth2 | impl | live | no |
+| ethereum | `0x672473908587b10e65dab177dbaeadcbb30bf40b` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x76eb2fe28b36b3ee97f3adae0c69606eedb2a37c` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x7736ffb07104c0c400bb0cc9a7c228452a732992` | CErc20Delegator-2 | proxy | live | no |
 | ethereum | `0x780f75ad0b02afeb6039672e6a6cede7447a8b45` | CreamLock-2 | impl | live | no |
+| ethereum | `0x86bbd9ac8b9b44c95ffc6baae58e25033b7548aa` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x8e595470ed749b85c6f7669de83eae304c2ec68f` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x8fc8bfd80d6a9f17fb98a373023d72531792b431` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x9e8e207083ffd5bdc3d99a1f32d1e6250869c1a9` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0xa7c4054afd3dbbbf5bfe80f41862b89ea05c9806` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0xa8caea564811af0e92b1e044f3edd18fa9a73e4f` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0xab1c342c7bf5ec5f02adea1c2270670bca144cbb` | Unitroller | proxy | live | no |
+| ethereum | `0xb8c5af54bbdcc61453144cf472a9276ae36109f9` | CErc20Delegator-2 | proxy | live | no |
 | ethereum | `0xc581b735a1688071a1746c968e0798d642ede491` | AdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0xca55f9c4e77f7b8524178583b0f7c798de17fd54` | CErc20Delegator-2 | proxy | live | no |
 | ethereum | `0xcbc1065255cbc3ab41a6868c22d1f1c573ab89fd` | CreamETH2-2 | impl | live | no |
 | ethereum | `0xd06527d5e56a3495252a528c4987003b712860ee` | CEther | impl | live | no |
 | ethereum | `0xd5586c1804d2e1795f3fbbafb1fbb9099ee20a6c` | CreamLock | impl | live | no |
 | ethereum | `0xe618c25f580684770f2578faca31fb7acb2f5945` | CreamLock | impl | live | no |
+| ethereum | `0xe7bff2da8a2f619c2586fb83938fa56ce803aa16` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0xecab2c76f1a8359a06fab5fa0ceea51280a97ecf` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0xfa3472f7319477c9bfecdd66e4b948569e7621b9` | CErc20Delegator-2 | proxy | live | no |
+| ethereum | `0xfeeb92386a055e2ef7c2b598c872a4047a7db59f` | CErc20Delegator-2 | proxy | live | no |
+| polygon | `0x0a4accd9d150ad4ddc7ea2e6151243ce668bf2f5` | PriceOracle | impl | live | no |

@@ -1,0 +1,28 @@
+{
+  "component": "PoolDiamond",
+  "main_contract": "PoolDiamond",
+  "source_entry_count": 25,
+  "source_file_count": 25,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PoolDiamond\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x18a15bf2aa1e514dc660cc4b08d05f9f6f0fdc4e",
+      "is_proxy": true,
+      "implementation_address": "0xf63f5d32592024a62f74a50ccc5903b57fbc9835",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

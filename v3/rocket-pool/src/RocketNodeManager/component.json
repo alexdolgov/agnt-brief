@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/RocketNodeManager\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://diligence.security/audits/2021/04/rocketpool",
@@ -24,6 +24,16 @@
     "https://rocketpool.net/files/sigma-prime-audit.pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x22bbddbe0a1e790741cd385c67ff9aa5fbcbb958",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "ethereum",
       "chain_id": 1,

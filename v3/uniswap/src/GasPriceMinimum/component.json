@@ -1,0 +1,28 @@
+{
+  "component": "GasPriceMinimum",
+  "main_contract": "GasPriceMinimum",
+  "source_entry_count": 3,
+  "source_file_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GasPriceMinimum\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0xdfca3a8d7699d8bafe656823ad60c17cb8270ecc",
+      "is_proxy": true,
+      "implementation_address": "0x8c3d2a4fe21c21d52ff42a415b34bc0000e3ba90",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

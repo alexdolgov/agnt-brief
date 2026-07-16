@@ -14,6 +14,12 @@ interface IVotingEscrow {
     function safeTransferFrom(address _from, address _to, uint256 _tokenId) external;
     function locked(uint256 _tokenId) external view returns (IVotingEscrow.LockedBalance memory);
     function increaseUnlockTime(uint256 _tokenId, uint256 _lockDuration) external;
+    function createLock(uint256 _value, uint256 _lockDuration) external returns (uint256);
+    function token() external view returns (address);
+    function ownerOf(uint256 _tokenId) external view returns (address);
+    function ownerToNFTokenIdList(address _owner, uint256 _index) external view returns (uint256);
+    function approve(address _approved, uint256 _tokenId) external;
+    function setApprovalForAll(address _operator, bool _approved) external;
 
     // MOOSE
     // remove unused functions

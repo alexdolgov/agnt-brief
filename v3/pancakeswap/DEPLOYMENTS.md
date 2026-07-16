@@ -1,6 +1,74 @@
 # pancakeswap — deployments
 
-0 verified deployment(s) across 0 component(s).
+68 verified deployment(s) across 68 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x09b7801527b4ff9a2ea6fa0e2f141f0960550534` | PancakeStableSwapLPFactory | impl | live | no |
+| arbitrum | `0x0fc0744eace0aea3c3cf91fdf5b4a5428533aa3a` | BoundedTTLHook_1Week | impl | live | no |
+| arbitrum | `0x0fd9874a8902772c3573c11e8162f78cc96940b5` | OptionPricingLinearV2 | impl | live | no |
+| arbitrum | `0x1179adfa22dd0e5050c1c00c9f8543a77f75a2c0` | BalanceCheck | impl | live | no |
+| arbitrum | `0x1c1081e2bb3c2f3805bc89e1951c15be551d7ecd` | PancakeV3LmPoolDeployer | impl | live | no |
+| arbitrum | `0x1cdc19b13729f16c5284a0ace825f83fc9d799f4` | PancakeAIPrediction | impl | live | no |
+| arbitrum | `0x26065f86487ef8a5f5e7c24dfc9df4c25e31e276` | TestEIP1153 | impl | live | no |
+| arbitrum | `0x2ab1e83920f884a96f231a72bccdebb7bfc38921` | UnsupportedProtocol | impl | live | no |
+| arbitrum | `0x5e09acf80c0296740ec5d6f643005a4ef8daa694` | MasterChefV3 | proxy | live | no |
+| arbitrum | `0x6db0a1cbe2ea1dac0e9d4c61d7de52bef295ccde` | OptionPricingLinear | impl | live | no |
+| arbitrum | `0xa653423d0d2062d81219b8b9fff897f425986275` | UniversalRouter | impl | live | no |
+| arbitrum | `0xbffe39cdd04f0183e0493c1deb6e275c5cf84adf` | PancakeInterfaceMulticallV2 | impl | live | no |
+| arbitrum | `0xfb1e19430784338f341a6d9b2b8965c13ec0f298` | GasDrainingContract | impl | live | no |
+| base | `0xa0ffb9c1ce1fe56963b0321b32e7a0302114058b` | CLPoolManager | impl | live | no |
+| bsc | `0x009cf7bc57584b7998236eff51b98a168dcea9b0` | SyrupBar | impl | live | no |
+| bsc | `0x011f2a82846a4e9c62c2fc4fd6fdbad19147d94a` | RevenueSharingPoolGateway | impl | live | no |
+| bsc | `0x0124ed38db9c3a04a4a217172288454cd1d6dd16` | SmartChef | impl | live | no |
+| bsc | `0x01871991587d5671f3a2d4e2bcdc22f4e026396e` | PancakeSwapPotteryDraw | impl | live | no |
+| bsc | `0x02ee06c137a106255299589b3184f5ba438b689f` | PancakeRouter | impl | live | no |
+| bsc | `0x0366f1a242c37ca73c73834b7fcd4a66af1d5700` | IFOByProxy | impl | live | no |
+| bsc | `0x03b4e4822c0331fa6b36e96e4cb773c10946bd26` | CrossFarmingToken | impl | live | no |
+| bsc | `0x03e80d537dca71e826eac6fe74fbb0db607a2727` | ProxyForCakePoolFactory | impl | live | no |
+| bsc | `0x05d27b7aef7fc313f6e139e8785beb0a7550717f` | BunnySpecialPrediction | impl | live | no |
+| bsc | `0x0726a8c8206b9ec0afb788df5adb36a8aedb13c2` | CrossFarmingReceiver | impl | live | no |
+| bsc | `0x086bef28ebfb560e787989d025c83bd1e288807b` | CakeToken | impl | live | no |
+| bsc | `0x09b7801527b4ff9a2ea6fa0e2f141f0960550534` | PancakeStableSwapFactory | impl | live | no |
+| bsc | `0x0bfbcf9fa4f9c56b0f40a671ad40e0805a091865` | PancakeV3Factory | impl | live | no |
+| bsc | `0x0d396b1e47143221b7d9fbac73ccb647ac7bed3a` | PancakeStableSwapTwoPoolInfo | impl | live | no |
+| bsc | `0x0fdd82987b724ec32c6f1add369ec8dfe3c77e0a` | IFOV2 | impl | live | no |
+| bsc | `0x1787053dfe47e24f397d61ff6a83fa10109a3124` | IFODeployerV10 | impl | live | no |
+| bsc | `0x187463a09569020659f4128c14fb13bce23b4208` | BnbStaking | impl | live | no |
+| bsc | `0x18b2a687610328590bc8f2e5fedde3b582a49cda` | PancakePredictionV2 | impl | live | no |
+| bsc | `0x1c30b250aff2407cfacdd4f28a674824df46aea6` | PotteryVaultFactory | impl | live | no |
+| bsc | `0x1c5161cdb145de35a8961f82b065fd1f75c3badf` | TradingCompV3 | impl | live | no |
+| bsc | `0x1c99222f857c1d72234703ec5b9ed88089bd7091` | BunnyFactoryV2 | impl | live | no |
+| bsc | `0x1e41e9885fe139cfaea3d174677e0a0c8c350830` | GaguesOwner | impl | live | no |
+| bsc | `0x1fcffe104a74bc286ac0f7451e5b3a159f423c12` | PotteryKeeper | impl | live | no |
+| bsc | `0x238a358808379702088667322f80ac48bad5e6c4` | Vault | impl | live | no |
+| bsc | `0x23c41d28a239ddcaabd1bb1def8d057189510066` | BunnySpecialV2 | impl | live | no |
+| bsc | `0x24ed31d31c5868e5a96aa77fdcb890f3511fa0b2` | BunnySpecialLottery | impl | live | no |
+| bsc | `0x2782030faaec9f6dac96cda9c1df3125a015078d` | MasterChef | impl | live | no |
+| bsc | `0x2867529e2f7560891ba639d369132a218ba31f9c` | TradingCompV4RewardDistribution | impl | live | no |
+| bsc | `0x2c36221bf724c60e9fee3dd44e2da8017a8ef3ba` | FarmBoosterProxyFactory | impl | live | no |
+| bsc | `0x2e6d57ee6c3e9dbf32066681463566570eb18b39` | MixedQuoter | impl | live | no |
+| bsc | `0x3202b26f60ab51731f7e9a88262e12cfe6ec8607` | FactoryViewer | impl | live | no |
+| bsc | `0x327e6e33e4b31ccbd6edb31c788aba3b6fdb5f1f` | MasterChefV2 | impl | live | no |
+| bsc | `0x4086d46a650517fa756f620507db704d3900da07` | PancakeVoterProxy | impl | live | no |
+| bsc | `0x4b1b0c225944808b9017f16e9b10305faa934cef` | OracleProxy | proxy | live | no |
+| bsc | `0x4b57a6122651ed5dc0297a42c5a0b4400b20b410` | Timelock | impl | live | no |
+| bsc | `0x4eff3a0a82f624b617aab7af92777deec521d820` | IFO | impl | live | no |
+| bsc | `0x6b4dc78b8303d65476e2fcdde5be262e8abfc3ba` | LotteryRewardProxy | impl | live | no |
+| bsc | `0x7c8b60d2b859a38c8b9b5b6cb4565485cb637c7a` | BunnyMintingFarm | impl | live | no |
+| bsc | `0x8d8f5a44d92d3cff40806548d204ffe90e58faa6` | UpgradeProxy | impl | live | no |
+| bsc | `0x91688f449478a47256990e4c609e000b5810b20a` | BalanceChecker | impl | live | no |
+| bsc | `0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c` | WBNB | impl | live | no |
+| bsc | `0xf0ae9b39ef4a2680d67c9fb252816725f22624b0` | IFOUpgradeProxy | impl | live | no |
+| bsc | `0xfaa221f0a3c36a17dacbecc1f19df4094871b4d3` | SousChef | impl | live | no |
+| ethereum | `0x00507f433022b27f3e337af46affa9888246a39e` | PancakeInfoReceiver | impl | live | no |
+| ethereum | `0x016efe583e7c218f333668626d88e5bfb60ec4f7` | PancakeRouterSpec | impl | live | no |
+| ethereum | `0x0ac4ed1d63c51f2b35c555ee09b425f08e6ea556` | VECakeProxy | impl | live | no |
+| ethereum | `0x1097053fd2ea711dad45caccc45eff7548fcb362` | PancakeFactory | impl | live | no |
+| ethereum | `0x11b63467cf299d634d7c1a07221d78c5f08095d7` | IFODeployerV8 | impl | live | no |
+| ethereum | `0x175f312f01de10ab4041b8a6d57bb837f60b52ad` | PriceLens0 | impl | live | no |
+| ethereum | `0x1a4dc7470d907fb0105a4ea1e9bbd8f9b2bff0c5` | PancakeVeReceiverV2 | impl | live | no |
+| ethereum | `0x42b7e3961f855631e2e6897db6b686f246ff3d72` | PancakeVeReceiver | impl | live | no |
+| ethereum | `0x5d5fbb19572c4a89846198c3dbedb2b6ef58a77a` | FarmBooster | impl | live | no |
+| ethereum | `0x80898f80cfa3fa3abf410d90e69adc432ae5d4c2` | PancakeV3StateMulticall | impl | live | no |
+| ethereum | `0xb4357054c3da8d46ed642383f03139ac7f090343` | CATERC20 | impl | live | no |

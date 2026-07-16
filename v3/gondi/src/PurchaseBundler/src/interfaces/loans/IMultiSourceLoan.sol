@@ -160,7 +160,7 @@ interface IMultiSourceLoan {
         uint256 duration;
     }
 
-    event LoanLiquidated(uint256 loanId, bool foreclosed);
+    event LoanLiquidated(uint256 loanId);
     event LoanEmitted(uint256 loanId, uint256[] offerId, Loan loan, uint256 fee);
     event LoanRefinanced(uint256 renegotiationId, uint256 oldLoanId, uint256 newLoanId, Loan loan, uint256 fee);
     event LoanRepaid(uint256 loanId, uint256 totalRepayment, uint256 fee);
@@ -287,4 +287,9 @@ interface IMultiSourceLoan {
     /// @param _target Target address for the flash action contract to interact with.
     /// @param _data Data to be passed to be passed to the ultimate contract.
     function executeFlashAction(uint256 _loanId, Loan calldata _loan, address _target, bytes calldata _data) external;
+
+    /// @notice Called by the liquidator for accounting purposes.
+    /// @param _loanId The id of the loan.
+    /// @param _loan The loan object.
+    function loanLiquidated(uint256 _loanId, Loan calldata _loan) external;
 }

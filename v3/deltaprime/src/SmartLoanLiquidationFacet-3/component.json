@@ -1,0 +1,28 @@
+{
+  "component": "SmartLoanLiquidationFacet-3",
+  "main_contract": "SmartLoanLiquidationFacet",
+  "source_entry_count": 81,
+  "source_file_count": 81,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SmartLoanLiquidationFacet-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2ac333a7e7992fc312b505daf34853fffc5e8d2a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

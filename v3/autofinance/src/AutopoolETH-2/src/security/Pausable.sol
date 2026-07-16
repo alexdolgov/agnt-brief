@@ -46,9 +46,7 @@ abstract contract Pausable {
         _;
     }
 
-    constructor(
-        ISystemRegistry systemRegistry
-    ) {
+    constructor(ISystemRegistry systemRegistry) {
         Errors.verifyNotZero(address(systemRegistry), "systemRegistry");
 
         // Validate the registry is in a state we can use it

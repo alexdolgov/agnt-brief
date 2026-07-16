@@ -1,6 +1,71 @@
 # primefi — deployments
 
-0 verified deployment(s) across 0 component(s).
+65 verified deployment(s) across 38 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| base | `0x04edbf3904789d80b0c991e0b66577f2208a2be6` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| base | `0x163a1e3cd4726f3c92eb005a942308029c27f64b` | DataStreamConsumer | impl | live | no |
+| base | `0x33cd734739c6ded500fd080d476d93135cb813ef` | WalletBalanceProvider-2 | impl | live | no |
+| base | `0x515fbd7124a782818ba6719e48e94c489ba769f4` | TransparentUpgradeableProxy | proxy | live | no |
+| base | `0x5b6d95545750f1bb1812f5c564d9a401d3debd80` | TransparentUpgradeableProxy | proxy | live | no |
+| base | `0x76c6452e7c4711ee986b4911243ea20d8b28f506` | TransparentUpgradeableProxy | proxy | live | no |
+| base | `0x7b7cd09465ff2cab67360d5cd24a3cc3ad0c856a` | AaveProtocolDataProvider-2 | impl | live | no |
+| base | `0x7bbcf1b600565ae023a1806ef637af4739de3255` | PRFI | impl | live | no |
+| base | `0x7d08e488fa39e7f29701c90eb49cc766857895a8` | LockerList | impl | live | no |
+| base | `0x7f2ebfb68be75e56bb6c14c504bb0a0c0b6eb8df` | TransparentUpgradeableProxy | proxy | live | no |
+| base | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | FiatTokenProxy | proxy | live | no |
+| base | `0x87b417af600312df37f551a05ae14bcc3d55bc36` | UniswapV2Pair | impl | live | no |
+| base | `0x8a619d8e3bfab54f7c30ef39ce16c53429c739c3` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | no |
+| base | `0x944963ff76c7618edbf926469a3f77a78d461d65` | TransparentUpgradeableProxy-4 | proxy | live | no |
+| base | `0x95d7a59c230d184f16b497c3c1bb834ca397c241` | TransparentUpgradeableProxy | proxy | live | no |
+| base | `0xb16aecafa1310a1c51f66ebdf6fb753bfa76450e` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| base | `0xbc2adf6bee6e8468f9e60dfc017d4e2ce682be0c` | LendingPoolAddressesProvider-2 | impl | live | no |
+| base | `0xbfee735e3868f8990787cceaa4b920c9ed162b07` | LendingPoolAddressesProviderRegistry-2 | impl | live | no |
+| base | `0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf` | FiatTokenProxy-2 | proxy | live | no |
+| base | `0xd719084151f1f47b7dcb937bb33845656580b79d` | LendingRateOracle-2 | impl | live | no |
+| base | `0xe8df0d0cba73403ca89e07e6deca9252e1af4084` | TransparentUpgradeableProxy | proxy | live | no |
+| chain-999 | `0x04edbf3904789d80b0c991e0b66577f2208a2be6` | DataStreamConsumer | impl | live | no |
+| chain-999 | `0x0590aab2b147adb08da1dcdc555fb0bb509213a9` | DefaultReserveInterestRateStrategy | impl | live | no |
+| chain-999 | `0x065fd3ba477c85503bfac48be7d1a2fcada02847` | VariableDebtToken | impl | live | no |
+| chain-999 | `0x07093ca1e6c8c03ff77dea07532f738d88de1d75` | LendingPoolAddressesProvider | impl | live | no |
+| chain-999 | `0x163a1e3cd4726f3c92eb005a942308029c27f64b` | LendingPoolConfigurator | impl | live | no |
+| chain-999 | `0x1688266ce67dc0894dfb71be2ef319feb03b1b6b` | LendingPoolCollateralManager | impl | live | no |
+| chain-999 | `0x1de97549d6ce6ab9e44a2f5468ae003a00826a82` | AToken | impl | live | no |
+| chain-999 | `0x2ce24d319d7f5598f1c900025cdc939670fefb41` | DefaultReserveInterestRateStrategy | impl | live | no |
+| chain-999 | `0x2e6ba568aaebadb4db3e018313ee34bad0328988` | VariableDebtToken | impl | live | no |
+| chain-999 | `0x3a0a3639ed67a038a5f5071b6351f7e2b850c7dd` | ValidationLogic | impl | live | no |
+| chain-999 | `0x3ad9435fe5dc18d295a2816aaea590b710b0462f` | GenericLogic | impl | live | no |
+| chain-999 | `0x3bc108ca0202739fc65bf453a255e5c49ba6544a` | AaveProtocolDataProvider | impl | live | no |
+| chain-999 | `0x3bc295c25416721849dc69de40cfa531c8bc5fa5` | DefaultReserveInterestRateStrategy | impl | live | no |
+| chain-999 | `0x53ced6bedea3e1f0f729629ac59c698d4a7fe409` | UiPoolDataProvider | impl | live | no |
+| chain-999 | `0x58933fab624ed4e6b7eb9e64cb470bb61be4de6d` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| chain-999 | `0x5dff4ba7a9858a03e7958aba906fdf8d702013cd` | StableDebtToken | impl | live | no |
+| chain-999 | `0x6584bfe4d784bb8f1fd81d569a2202ce6f2f42ad` | LockerList | impl | live | no |
+| chain-999 | `0x6681155c2edc50f79535d8e4861c3fdb1d4da856` | StableDebtToken | impl | live | no |
+| chain-999 | `0x66e36833c6dc29befe29a633e4af0cb4dd69a8e3` | LendingPoolAddressesProvider | impl | live | no |
+| chain-999 | `0x68a17ddf7ab288c2d59be84dda6706a8fe7a4878` | SidechainIncentivesController | impl | live | no |
+| chain-999 | `0x69a3c30a85aa1e22791466a08819c1080f0aab7f` | LendingPoolAddressesProviderRegistry | impl | live | no |
+| chain-999 | `0x6e2c18389f6eea695c9d7d1396efe4dddbc7bfd0` | AToken | impl | live | no |
+| chain-999 | `0x70a74f992a2806e2921c4e9205e4e6237ab361f9` | ReserveLogic | impl | live | no |
+| chain-999 | `0x7169bf0ccfb949d2fa78a8bdaee0410fbd617632` | LendingRateOracle | impl | live | no |
+| chain-999 | `0x7b4ce028a8b58d3fde250cd0e125b7e33b6a8d98` | StableAndVariableTokensHelper | impl | live | no |
+| chain-999 | `0x7bbcf1b600565ae023a1806ef637af4739de3255` | PRFI | impl | live | no |
+| chain-999 | `0x7d08e488fa39e7f29701c90eb49cc766857895a8` | UiPoolDataProviderV2V3 | impl | live | no |
+| chain-999 | `0x88ae2596dac8e7e9e235b465ee8215cc3192fcae` | WETHGateway | impl | live | no |
+| chain-999 | `0x8c6357575bbe7157612ba763dd5cbdbdfabf83e8` | ATokensAndRatesHelper | impl | live | no |
+| chain-999 | `0x924045931252a4a5fa7dcbc32bd963939837b0d6` | VariableDebtToken | impl | live | no |
+| chain-999 | `0x95d7a59c230d184f16b497c3c1bb834ca397c241` | IncentivesControllerDiamond | impl | live | no |
+| chain-999 | `0x97d76a00eae8c8a8edc31a746f647dff12849011` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| chain-999 | `0xa2f901f3e5f910d91cb76686a7fe8319bbcdef0c` | DefaultReserveInterestRateStrategy | impl | live | no |
+| chain-999 | `0xa334794d82fb7d6f292f77eb78ad5370d306cc1d` | AToken | impl | live | no |
+| chain-999 | `0xa911afd7db4226cee8073cda2da668b4cb918af9` | WalletBalanceProvider | impl | live | no |
+| chain-999 | `0xab008abd38ac3fb371d8c442d48e10225cd46db6` | StableAndVariableTokensHelper | impl | live | no |
+| chain-999 | `0xac57f0d2f8ef17b8d26189ba0db353361374b2ca` | WETHGateway | impl | live | no |
+| chain-999 | `0xb0241128b4e66ea783f12dcb2b73ff19d8789e0e` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| chain-999 | `0xb380637652cafbb37e08ecafc015ffcb800618d0` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| chain-999 | `0xbc2adf6bee6e8468f9e60dfc017d4e2ce682be0c` | LendingPoolAddressesProviderRegistry | impl | live | no |
+| chain-999 | `0xc3062b884ab44aad5823730a52a394c132527d57` | DefaultReserveInterestRateStrategy | impl | live | no |
+| chain-999 | `0xc69ba5c734e68aca6c034c2e5a4170e5966151be` | IncentivesControllerGetter | impl | live | no |
+| chain-999 | `0xf532fdfdf2787c5af15c2b09e8ec6a31247f6b30` | GenericLogic | impl | live | no |
+| chain-999 | `0xfebc15460a5af7bd5c0f2d6746aab00c9531747d` | LendingPoolConfigurator | impl | live | no |

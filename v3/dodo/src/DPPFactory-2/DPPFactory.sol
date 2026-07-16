@@ -1,3 +1,5 @@
+// File: contracts/lib/InitializableOwnable.sol
+
 /*
 
     Copyright 2020 DODO ZOO.
@@ -8,11 +10,160 @@
 pragma solidity 0.6.9;
 pragma experimental ABIEncoderV2;
 
-import {InitializableOwnable} from "../lib/InitializableOwnable.sol";
-import {ICloneFactory} from "../lib/CloneFactory.sol";
-import {IFeeRateModel} from "../lib/FeeRateModel.sol";
-import {IDPP} from "../DODOPrivatePool/intf/IDPP.sol";
-import {IDPPAdmin} from "../DODOPrivatePool/intf/IDPPAdmin.sol";
+/**
+ * @title Ownable
+ * @author DODO Breeder
+ *
+ * @notice Ownership related functions
+ */
+contract InitializableOwnable {
+    address public _OWNER_;
+    address public _NEW_OWNER_;
+    bool internal _INITIALIZED_;
+
+    // ============ Events ============
+
+    event OwnershipTransferPrepared(address indexed previousOwner, address indexed newOwner);
+
+    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+
+    // ============ Modifiers ============
+
+    modifier notInitialized() {
+        require(!_INITIALIZED_, "DODO_INITIALIZED");
+        _;
+    }
+
+    modifier onlyOwner() {
+        require(msg.sender == _OWNER_, "NOT_OWNER");
+        _;
+    }
+
+    // ============ Functions ============
+
+    function initOwner(address newOwner) public notInitialized {
+        _INITIALIZED_ = true;
+        _OWNER_ = newOwner;
+    }
+
+    function transferOwnership(address newOwner) public onlyOwner {
+        emit OwnershipTransferPrepared(_OWNER_, newOwner);
+        _NEW_OWNER_ = newOwner;
+    }
+
+    function claimOwnership() public {
+        require(msg.sender == _NEW_OWNER_, "INVALID_CLAIM");
+        emit OwnershipTransferred(_OWNER_, _NEW_OWNER_);
+        _OWNER_ = _NEW_OWNER_;
+        _NEW_OWNER_ = address(0);
+    }
+}
+
+// File: contracts/lib/CloneFactory.sol
+
+
+interface ICloneFactory {
+    function clone(address prototype) external returns (address proxy);
+}
+
+// introduction of proxy mode design: https://docs.openzeppelin.com/upgrades/2.8/
+// minimum implementation of transparent proxy: https://eips.ethereum.org/EIPS/eip-1167
+
+contract CloneFactory is ICloneFactory {
+    function clone(address prototype) external override returns (address proxy) {
+        bytes20 targetBytes = bytes20(prototype);
+        assembly {
+            let clone := mload(0x40)
+            mstore(clone, 0x3d602d80600a3d3981f3363d3d373d3d3d363d73000000000000000000000000)
+            mstore(add(clone, 0x14), targetBytes)
+            mstore(
+                add(clone, 0x28),
+                0x5af43d82803e903d91602b57fd5bf30000000000000000000000000000000000
+            )
+            proxy := create(0, clone, 0x37)
+        }
+        return proxy;
+    }
+}
+
+// File: contracts/lib/FeeRateModel.sol
+
+
+
+interface IFeeRateImpl {
+    function getFeeRate(address pool, address trader) external view returns (uint256);
+}
+
+interface IFeeRateModel {
+    function getFeeRate(address trader) external view returns (uint256);
+}
+
+contract FeeRateModel is InitializableOwnable {
+    address public feeRateImpl;
+
+    function setFeeProxy(address _feeRateImpl) public onlyOwner {
+        feeRateImpl = _feeRateImpl;
+    }
+    
+    function getFeeRate(address trader) external view returns (uint256) {
+        if(feeRateImpl == address(0))
+            return 0;
+        return IFeeRateImpl(feeRateImpl).getFeeRate(msg.sender,trader);
+    }
+}
+
+// File: contracts/DODOPrivatePool/intf/IDPP.sol
+
+interface IDPP {
+    function init(
+        address owner,
+        address maintainer,
+        address baseTokenAddress,
+        address quoteTokenAddress,
+        uint256 lpFeeRate,
+        address mtFeeRateModel,
+        uint256 k,
+        uint256 i,
+        bool isOpenTWAP
+    ) external;
+
+    function _MT_FEE_RATE_MODEL_() external returns (address);
+
+    //=========== admin ==========
+    function ratioSync() external;
+
+    function retrieve(
+        address payable to,
+        address token,
+        uint256 amount
+    ) external;
+
+    function reset(
+        address assetTo,
+        uint256 newLpFeeRate,
+        uint256 newI,
+        uint256 newK,
+        uint256 baseOutAmount,
+        uint256 quoteOutAmount,
+        uint256 minBaseReserve,
+        uint256 minQuoteReserve
+    ) external returns (bool);
+}
+
+// File: contracts/DODOPrivatePool/intf/IDPPAdmin.sol
+
+
+interface IDPPAdmin {
+    function init(address owner, address dpp,address operator, address dodoSmartApprove) external;
+}
+
+// File: contracts/Factory/DPPFactory.sol
+
+
+
+
+
+
 
 /**
  * @title DODO PrivatePool Factory
@@ -24,13 +175,11 @@ contract DPPFactory is InitializableOwnable {
     // ============ Templates ============
 
     address public immutable _CLONE_FACTORY_;
+    address public immutable _DEFAULT_MAINTAINER_;
     address public immutable _DEFAULT_MT_FEE_RATE_MODEL_;
     address public immutable _DODO_APPROVE_PROXY_;
-    address public _DEFAULT_MAINTAINER_;
     address public _DPP_TEMPLATE_;
     address public _DPP_ADMIN_TEMPLATE_;
-
-    mapping (address => bool) public isAdminListed;
 
     // ============ Registry ============
 
@@ -48,10 +197,8 @@ contract DPPFactory is InitializableOwnable {
         address dpp
     );
 
-    event RemoveDPP(address dpp);
 
-    event addAdmin(address admin);
-    event removeAdmin(address admin);
+    event RemoveDPP(address dpp);
 
     constructor(
         address cloneFactory,
@@ -85,7 +232,6 @@ contract DPPFactory is InitializableOwnable {
         uint256 i,
         bool isOpenTwap
     ) external {
-        require(isAdminListed[msg.sender], "ACCESS_DENIED");
         {
             address _dppAddress = dppAddress;
             address adminModel = _createDPPAdminModel(
@@ -128,22 +274,8 @@ contract DPPFactory is InitializableOwnable {
         _DPP_ADMIN_TEMPLATE_ = _newDPPAdminTemplate;
     }
 
-    function updateDefaultMaintainer(address _newMaintainer) external onlyOwner {
-        _DEFAULT_MAINTAINER_ = _newMaintainer;
-    }
-
     function updateDppTemplate(address _newDPPTemplate) external onlyOwner {
         _DPP_TEMPLATE_ = _newDPPTemplate;
-    }
-
-    function addAdminList (address contractAddr) external onlyOwner {
-        isAdminListed[contractAddr] = true;
-        emit addAdmin(contractAddr);
-    }
-
-    function removeAdminList (address contractAddr) external onlyOwner {
-        isAdminListed[contractAddr] = false;
-        emit removeAdmin(contractAddr);
     }
 
     function addPoolByAdmin(
@@ -155,27 +287,6 @@ contract DPPFactory is InitializableOwnable {
         _REGISTRY_[baseToken][quoteToken].push(pool);
         _USER_REGISTRY_[creator].push(pool);
         emit NewDPP(baseToken, quoteToken, creator, pool);
-    }
-
-    function batchAddPoolByAdmin(
-        address[] memory creators,
-        address[] memory baseTokens, 
-        address[] memory quoteTokens,
-        address[] memory pools
-    ) external onlyOwner {
-        require(creators.length == baseTokens.length,"PARAMS_INVALID");
-        require(creators.length == quoteTokens.length,"PARAMS_INVALID");
-        require(creators.length == pools.length,"PARAMS_INVALID");
-        for(uint256 i = 0; i < creators.length; i++) {
-            address creator = creators[i];
-            address baseToken = baseTokens[i];
-            address quoteToken = quoteTokens[i];
-            address pool = pools[i];
-            
-            _REGISTRY_[baseToken][quoteToken].push(pool);
-            _USER_REGISTRY_[creator].push(pool);
-            emit NewDPP(baseToken, quoteToken, creator, pool);
-        }
     }
 
     function removePoolByAdmin(

@@ -1,17 +1,41 @@
 # contango — deployments
 
-22 verified deployment(s) across 20 component(s).
+52 verified deployment(s) across 50 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x18004bb3321bec99e32e3fdcaa3699930a9d43f1` | ContangoYieldQuoter | impl | live | no |
+| arbitrum | `0x44386ddb4c44e7cb8981f97af89e928ddd4258dd` | Cauldron | impl | live | no |
 | arbitrum | `0x6bd780e7fdf01d77e4d475c821f1e7ae05409072` | Contract-11 | impl | live | yes |
+| arbitrum | `0x750b3a18115fe090bc621f9e4b90bd442bcd02f2` | CompositeMultiOracle | impl | live | no |
+| arbitrum | `0x79857da1d4b976f40787daa6177e24256bc53b75` | ContangoWitch | impl | live | no |
 | arbitrum | `0x912ce59144191c1204e64559fe8253a0e49e6548` | Contract-12 | impl | live | yes |
+| arbitrum | `0xc760f9782f8cea5b06d862574464729537159966` | ContangoToken | impl | live | no |
+| arbitrum | `0xce3d36e19de6a7b66e851c5b7e468e35dc83d29d` | IdentityOracle | impl | live | no |
 | base | `0xff8adec2221f9f4d8dfbafa6b9a297d17603493d` | Contract-10 | impl | live | yes |
+| ethereum | `0x00b98a7fa3eaf0e35b9fd353fe58306b61d2bdd4` | Yield | impl | live | no |
+| ethereum | `0x01fe7dde6688c92ddacab33bb2df7c20cf8c1702` | Maestro | impl | live | no |
+| ethereum | `0x02ef55ad73ce24fa3d0b33dabcd4f27e0604e63b` | FixedFeeModel | impl | live | no |
 | ethereum | `0x034f657f778b8441c3a89c9914dff67147bd8c3c` | ImmutableBeaconProxy | impl | live | yes |
+| ethereum | `0x07563293dbb881eef5f993f46da98e4116afde89` | Contango | impl | live | no |
+| ethereum | `0x0aeff85b59fb641c2f60cdd396294446cb93e27f` | CometMoneyMarketView | impl | live | no |
+| ethereum | `0x0c7d644fe0b0a63aa6fcfc7baad575853d4a7704` | EulerMoneyMarketView | impl | live | no |
 | ethereum | `0x0c9a3dd6b8f28529d72d7f9ce918d493519ee383` | Contract-2 | impl | live | yes |
 | ethereum | `0x0d52d06ceb8dcdeeb40cfd9f17489b350dd7f8a3` | Contract-3 | impl | live | yes |
+| ethereum | `0x12158f171c77f6341443b0700e2d094cdeabaa9d` | SimpleSpotExecutor | impl | live | no |
+| ethereum | `0x121b7580fbb1972774f74f5c1d0afb6a2783e0c0` | ContangoLens | impl | live | no |
 | ethereum | `0x17878afdd5772f4ec93c265ac7ad8e2b29abb857` | Contract-4 | impl | live | yes |
+| ethereum | `0x205e4b6ff70beda203de802e53170486bbde3422` | SiloMoneyMarketView | impl | live | no |
+| ethereum | `0x210f4e1942beec4038743a8f885b870e0c27b414` | YieldSpaceMultiOracle | impl | live | no |
 | ethereum | `0x2206c3341582daaf007ba4569321c8dd39f0710b` | Contract | impl | live | yes |
+| ethereum | `0x2226af65e4c9bb0550685b340529cc0e51de7a05` | OrderManager | impl | live | no |
+| ethereum | `0x2475b89a193c2c4eced142134a8612d9a28890a7` | FluidMoneyMarket | impl | live | no |
+| ethereum | `0x29000dc631b75261f11e883cdbdf65b7570ba829` | CometMoneyMarket | impl | live | no |
+| ethereum | `0x2f201b7b1176ecaba3d9e6c3e720b1f6a923229e` | Join | impl | live | no |
+| ethereum | `0x2f57aad5dcd2d650f92c058a79758c8b1217d341` | SiloMoneyMarket | impl | live | no |
+| ethereum | `0x2fe262f35c11e14597f6b4769f2ae589d9a08ab0` | ContangoYield | impl | live | no |
+| ethereum | `0x30e7348163016b3b6e1621a3cb40e8cf33ce97db` | ContangoLadle | impl | live | no |
+| ethereum | `0x39662fff061088ca50a79a5acc3b569bb73c0271` | StrategyBuilder | impl | live | no |
 | ethereum | `0x3aaa75b701dac0592ed26a28555832a629f781e5` | CometReverseLookup | impl | live | no |
 | ethereum | `0x3cab97f99147012b0b1352e5e1278c933776861a` | Vault | impl | live | no |
 | ethereum | `0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b` | Contract-5 | impl | live | yes |
@@ -19,6 +43,10 @@
 | ethereum | `0x41aa57aa613429dae7dfd1941ddd3e5317038a10` | UpgradeableBeaconWithOwner | impl | live | yes |
 | ethereum | `0x486b9185bcbfa780fcfd9a043ba140b3fa48e03e` | EulerMoneyMarket | impl | live | yes |
 | ethereum | `0x5345562ed3ce537582a1a568d3b06c8382cd60bd` | Contract | impl | live | yes |
+| ethereum | `0x767fa190331ef7619dc0a51eb82f962ef26c88df` | FluidMoneyMarketView | impl | live | no |
+| ethereum | `0x90896236b00a88959e427e5d47b73fd51bd82f1b` | SpotExecutor | impl | live | no |
+| ethereum | `0x95bb968af09ac6975adae3c96d3721a47e17d6c8` | FeeManager | impl | live | no |
+| ethereum | `0x96bf9ab0e421a3da31d4506c967a825312455767` | PoolOracle | impl | live | no |
 | ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | Contract-6 | impl | live | yes |
 | ethereum | `0xb3863d03938ead437e3f136778531dcb89f29ead` | EulerRewardsOperator | impl | live | yes |
 | ethereum | `0xc0121817ff224a018840e4d15a864747d36e6eb2` | Contract-7 | impl | live | yes |
@@ -26,6 +54,8 @@
 | ethereum | `0xd0d9e5ca8793cae9fac72f34caaf7f99e4f0fc68` | EulerReverseLookup | impl | live | yes |
 | ethereum | `0xdaf4da41aacc0439b412a138fe8274e06341024e` | Router | impl | live | no |
 | ethereum | `0xe4044d26c879f58acc97f27db04c1686fa9ed29e` | Contract-9 | impl | live | yes |
+| ethereum | `0xfe189d42177df1f5834c154b981e70c93f9eeba0` | DineroSwap | impl | live | no |
+| ethereum | `0xff7b4d89617d8ac9698632b14127aac55895d21e` | ReferralManager | impl | live | no |
 
 ## Source unavailable (84)
 Verified on-chain but no source in the verification cache (skipped from the tree):

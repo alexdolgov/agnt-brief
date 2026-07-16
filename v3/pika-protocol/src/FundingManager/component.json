@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/FundingManager\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6e0dcadf4e4585dabc59ab1d5857badcdc0e76e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "optimism",
       "chain_id": 10,
@@ -23,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "397805"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf33291d69063a4fc306257f08fa758a885c4f883",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

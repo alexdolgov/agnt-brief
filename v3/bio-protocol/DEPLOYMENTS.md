@@ -1,10 +1,68 @@
 # bio-protocol — deployments
 
-4 verified deployment(s) across 3 component(s).
+62 verified deployment(s) across 28 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| base | `0x03699469849a6cf876a65b4fd01fbd663c401127` | AgentToken | impl | live | no |
 | base | `0x226a2fa2556c48245e57cd1cba4c6c9e67077dd2` | Token | impl | live | no |
-| base | `0xe1b48c0279cd95d984f1290293116c45d049a3bd` | ERC1967Proxy | proxy | live | no |
+| base | `0x492ae2107f952b02f2554ce153841933c09d6d43` | AgentToken-2 | impl | live | no |
+| base | `0x54f16bd3996169914c84dbb2a16635100cf48a0a` | AgentToken | impl | live | no |
+| base | `0x5d4d258144bc954aefc00ee6cbda0433b1b2dcd3` | AgentToken-3 | impl | live | no |
+| base | `0x7db6dfe35158bab10039648ce0e0e119d0ec21ec` | AgentToken-2 | impl | live | no |
+| base | `0x896a0b1f23479e4438ad086c0bda159361294250` | AgentToken | impl | live | no |
+| base | `0x9d56c29e820dd13b0580b185d0e0dc301d27581d` | AgentToken-2 | impl | live | no |
+| base | `0xcb75cc365abd9713b9a9b9613d90e9c359dd483f` | ERC1967Proxy | proxy | live | no |
+| base | `0xd9bf9127e37d33514aa485ff7d3b26f1f5298411` | AgentToken | impl | live | no |
+| base | `0xe183b1a4dd59ca732211678eca1836ee35bce582` | AgentToken-3 | impl | live | no |
+| base | `0xe1b48c0279cd95d984f1290293116c45d049a3bd` | ERC1967Proxy-3 | proxy | live | no |
+| base | `0xe8f802b0cb13adf1a4333b541d4d3f703b8a69fa` | AgentToken | impl | live | no |
+| ethereum | `0x0ca5f50a8a59a59ef8c8d610f5ebf99e41f1352f` | WrappedIPToken | impl | live | no |
+| ethereum | `0x107abd279d67c1dbb196a5c1a4d74abcba191b5e` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0x122a151d6cf3213d2d00920887cac1986c13d722` | FairAuctionVesting-2 | impl | live | no |
+| ethereum | `0x164359844eb77995ecd74c70c4e023b7abdd6867` | ERC1967Proxy-2 | proxy | live | no |
+| ethereum | `0x2141b47a1c7de6df073d23ff94f04d9fd2aaa9b3` | TokenVestingMerklePurchasable | impl | live | no |
+| ethereum | `0x2196b84eace74867b73fb003aff93c11fce1d47a` | OtoCoToken | impl | live | no |
+| ethereum | `0x2dc49ed248c43bb56411f886ebc13928f1c522ef` | FairAuctionVesting | impl | live | no |
+| ethereum | `0x3068a5995a4f3408a2e11036c42f551221de9824` | FairAuctionVesting | impl | live | no |
+| ethereum | `0x35bce29f52f51f547998717cd598068afa2b29b7` | StakedLockingCrowdSale | impl | live | no |
+| ethereum | `0x3c426812f39337679265ea407f744cdac672d9d3` | IPToken | impl | live | no |
+| ethereum | `0x3e6a1b21bd267677fa49be6425aebe2fc0f89bde` | QBioToken | impl | live | no |
+| ethereum | `0x40e1532ad3eeb7994a63c3b7d166af99af6165c7` | FairAuctionVesting | impl | live | no |
+| ethereum | `0x4821550561553770b671f17873656b249662bbb3` | FairAuctionVesting | impl | live | no |
+| ethereum | `0x4f55edffd4e9325577d4c8dde6f15782cefd6517` | TokenVesting | impl | live | no |
+| ethereum | `0x50926e24bd470876b5507c73e76a53bd39bf905b` | FairAuctionVesting | impl | live | no |
+| ethereum | `0x50fb8ec3a293dd208a2a347da995dc8f3d062540` | FairAuctionVesting | impl | live | no |
+| ethereum | `0x51363917ff8ab51c869fe75ab30f7b883eedfd1f` | FairAuctionVesting | impl | live | no |
+| ethereum | `0x548f8474ffdab0203eae82131b680a99c4a88e31` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0x5d4f4b3db74b08f87fdfb58180e95164a14231bc` | FairAuctionVesting | impl | live | no |
+| ethereum | `0x676cd89c6b6f02d6975547fd7da1d5a8dbc8a3e1` | ERC1967Proxy-2 | proxy | live | no |
+| ethereum | `0x6f4744df2e5a188b552cd0dbe77331b8a9d0c36d` | FairAuctionVesting | impl | live | no |
+| ethereum | `0x761a3557184cbc07b7493da0661c41177b2f97fa` | GrowToken | impl | live | no |
+| ethereum | `0x7b66e84be78772a3afaf5ba8c1993a1b5d05f9c2` | IPToken-2 | impl | live | no |
+| ethereum | `0x7bbb1ba644633de2f24d2ce2e5d962990dd2cdd2` | FairAuctionVesting | impl | live | no |
+| ethereum | `0x7c36c64da1c3a2065074caa9c48e7648fb733aab` | TokenVesting-2 | impl | live | no |
+| ethereum | `0x86206f8813a1a4201420d67b75c27cca0ff2a836` | FairAuctionVesting | impl | live | no |
+| ethereum | `0x87621fccfb79a9121445e0e1c47aa877a56df2e6` | FairAuctionVesting | impl | live | no |
+| ethereum | `0x88d6ddd0f48297d8dda4a97b81c646d5a7cd586b` | FairAuctionVesting | impl | live | no |
+| ethereum | `0xa1ed7ae99abeab2883a4a9486dbbb1c020a60691` | AccessResolver | impl | live | no |
+| ethereum | `0xa4c91a5a8a01d4b54f49d276051533781817b18a` | FairAuctionVesting | impl | live | no |
+| ethereum | `0xab814ce69e15f6b9660a3b184c0b0c97b9394a6b` | CerebrumDAOToken | impl | live | no |
+| ethereum | `0xad032c243c88d41973ba75e0c2b6585273cb42c1` | FairAuctionVesting | impl | live | no |
+| ethereum | `0xb1729b20dad1fa670f96e4cf4bffe21ac6a8f3b8` | LockedToken | impl | live | no |
+| ethereum | `0xb35d73f8a8c8fa5926ea77d3866c314c96cb400f` | FairAuctionVesting | impl | live | no |
+| ethereum | `0xc85f5dd5880d5162faf5fdb24d40845b7c8f976f` | DAOToken | impl | live | no |
+| ethereum | `0xc8cd729902e344bedf8585fe1af0545c44582b5b` | LockedToken-2 | impl | live | no |
 | ethereum | `0xcb1592591996765ec0efc1f92599a19767ee5ffa` | BioToken | impl | live | no |
-| ethereum | `0xf91a12742aa609d41513a137d3c36b749f56f40c` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0xd07ea8776e52c1b67dca6ffbc3f659fc9fbe4113` | IPToken | impl | live | no |
+| ethereum | `0xd20e71bf1243d782aaac542bc4adceaddfe84507` | FairAuctionVesting | impl | live | no |
+| ethereum | `0xd79fe2c4879b3a3d732df11294329a60cff3a0a9` | IPToken-3 | impl | live | no |
+| ethereum | `0xe1a1598f3f5a8b1143fd93c20c33856dcbdd265b` | FairAuctionVesting | impl | live | no |
+| ethereum | `0xe5e2ecdf265a32584ce16a56f80292973b838b24` | FairAuctionVesting | impl | live | no |
+| ethereum | `0xeb46ed79243e866078132e59a946652cddee64b3` | FairAuctionVesting | impl | live | no |
+| ethereum | `0xf0a8d23f38e9cbbe01c4ed37f23bd519b65bc6c2` | CrowdSale | impl | live | no |
+| ethereum | `0xf6380a738840f81b9913672e64bcbb485a3788da` | FairAuctionVesting | impl | live | no |
+| ethereum | `0xf6d0f52a1b42aae6dda00ff3adedc1b71645d83e` | FairAuctionVesting | impl | live | no |
+| ethereum | `0xf91a12742aa609d41513a137d3c36b749f56f40c` | ERC1967Proxy-3 | proxy | live | no |
+| ethereum | `0xfbda21d8ef309795bd01a2fcd23748be98c899a6` | FairAuctionVesting | impl | live | no |
+| ethereum | `0xfbfd266bf3b49db8746155aa318d4533cc66db26` | LockingCrowdSale | impl | live | no |

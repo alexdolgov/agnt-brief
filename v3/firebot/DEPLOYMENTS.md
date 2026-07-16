@@ -1,12 +1,65 @@
 # firebot — deployments
 
-6 verified deployment(s) across 5 component(s).
+59 verified deployment(s) across 56 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| polygon | `0x02e219d7b59c43cb012bb87dcab86172ff31dd86` | firebot_market | impl | live | no |
+| polygon | `0x055fa35955bd0d895d719d8f2a164685fbff8bb5` | RefToken-6 | impl | live | no |
+| polygon | `0x09083fa4a172e52df84808edc31fa167e591c049` | FireVaultFBXV2 | impl | live | no |
+| polygon | `0x0985342ed8cf870b970526f7b8ccf40b68a6d4df` | FireVaultFBXV2-2 | impl | live | no |
+| polygon | `0x0d0c7e1ec40bc585d5c4e42dbab92be50c343e94` | RefToken-7 | impl | live | no |
+| polygon | `0x0f322612bd773346246786fab0014fcaa68b22d9` | FireVaultFBXV2-3 | impl | live | no |
 | polygon | `0x1000bb854fbc6d98dc9d859d6cb47e22a31eb8f9` | UniswapV2Pair | impl | live | no |
+| polygon | `0x13d9bb61fcc4d51b80fec1575de1d30500292e4d` | RefToken-8 | impl | live | no |
+| polygon | `0x17b509b2b65b0d07b9e46bfc2ffe6c9c09a8e821` | AlgebraPool | impl | live | no |
+| polygon | `0x1aca6cde3cd48bb81715228c56a78cf23d790a4e` | RefToken-9 | impl | live | no |
+| polygon | `0x1c6bcf00a3dafef41f4e69a36ba4de1a7f7baab5` | refToken | impl | live | no |
+| polygon | `0x242fa75d00d8904ae01abb3625c22a8138af9538` | firebot_market-2 | impl | live | no |
+| polygon | `0x2b5f1730efcd888591e4916606e0247b3d1ded23` | FireVaultFBXV2-4 | impl | live | no |
+| polygon | `0x30f096f04e8be3b6d6b0e59256249b6f680bd486` | FireVaultFBXV2-5 | impl | live | no |
+| polygon | `0x36466360e3d1f245e53fbe95cb1238284eabbf56` | FireVaultFBXV2-6 | impl | live | no |
 | polygon | `0x3c56f017d9ce85350df8f4b495033aaa15563a99` | FUSDv2 | impl | live | no |
-| polygon | `0x960d43be128585ca45365cd74a7773b9d814dfbe` | FireVaultFBXV2 | impl | live | no |
+| polygon | `0x41d9de53ebf26f766229e42aa02904eb2495e397` | UniswapV2Pair-2 | impl | live | no |
+| polygon | `0x4758d97b44c9ae11d5e45b956c5e050711e16044` | FireVaultFBXV2-7 | impl | live | no |
+| polygon | `0x587290e8de1485c56a33368639bd45c68bb06798` | refToken-2 | impl | live | no |
+| polygon | `0x5f403d3517612fb4c93bd99d78505099cb402beb` | RefToken-10 | impl | live | no |
+| polygon | `0x60ed6acef3a96f8cdaf0c0d207bbafa66e751af2` | ElementalParticles | impl | live | no |
+| polygon | `0x65104285ebd1d500293a20dda5a40c5ce6cd9047` | FireVaultFBXV2-8 | impl | live | no |
+| polygon | `0x65b8e5d50885c2a2896ac65ca5772e71377f936d` | FireVaultFBXV2-9 | impl | live | no |
+| polygon | `0x6c133826102c1da5dfcc023980a23e2f9649e57f` | refToken-3 | impl | live | no |
+| polygon | `0x6c14fa1b23a245efb97cbad357ca3948052d56df` | UniswapV3Pool-2 | impl | live | no |
+| polygon | `0x6dcfd69c12e866dfbb857646b77f842c7b25a5fc` | Migrations | impl | live | no |
+| polygon | `0x77ff4fbc590e54f32b5b64a1f2287525c3583348` | FireVaultFBXV2-10 | impl | live | no |
+| polygon | `0x7a0412239534361eafb2bd455b8d2c23350e9b08` | RefToken-11 | impl | live | no |
+| polygon | `0x7fc0fd0d563c0487342ae937d6c0d98565d6cfdc` | refToken-4 | impl | live | no |
+| polygon | `0x869f1ed23ca99f00efd38baf891cc36a918e241b` | FireVaultFBXV2-11 | impl | live | no |
+| polygon | `0x92a9180af33531a5d78d81d90afc0523dc6c62c9` | Farm | impl | live | no |
+| polygon | `0x960d43be128585ca45365cd74a7773b9d814dfbe` | FireVaultFBXV2-12 | impl | live | no |
+| polygon | `0x995491caf3b001f7b0a5d945c32242208a316855` | RefToken-12 | impl | live | no |
+| polygon | `0x9bf581e148f187f5df8cea884daa6192589c14c7` | FireVaultFBXV2-13 | impl | live | no |
+| polygon | `0x9da4dee26ab002521f0cb7ac73dcb91c6e1f2f1c` | UniswapV3Pool | impl | live | no |
+| polygon | `0xa163f1a2ebcca2eb07fac7388be491d9768f5cfe` | FireVaultFBXV2-14 | impl | live | no |
 | polygon | `0xa2b205f8c0f0e30b3f73b7716a718c53cb8e5cc3` | FireVaultEP | impl | live | yes |
+| polygon | `0xa461b57d4794447bb53ad584844c4a19c6cf132b` | FireVaultFBX | impl | live | no |
+| polygon | `0xa6b96e60648e11055e82f1b7b226a2aa453a29bb` | UniswapV3Pool | impl | live | no |
+| polygon | `0xad79b4a1905de5e505a7c8b34a20d7456676dcf0` | item_selector | impl | live | no |
+| polygon | `0xaeb318360f27748acb200ce616e389a6c9409a07` | TransparentUpgradeableProxy | proxy | live | no |
+| polygon | `0xc5d5a56fd7f2d7fd27bd670e17f8dbb7af48fca0` | RefToken-13 | impl | live | no |
+| polygon | `0xc7f6940a28414ed619d4f08fd4fa07b972cfbd7d` | refToken-5 | impl | live | no |
+| polygon | `0xc82669f560e1d1099636ada24479bb0f2bcf4910` | item_vault_swap | impl | live | no |
+| polygon | `0xc99567b0b5649120fe882554cacfcaa68bc1d334` | firebotMarket | impl | live | no |
+| polygon | `0xcffbfa978ac3fb10e829ca6b763c307daafe8a77` | UniswapV2Pair-2 | impl | live | no |
+| polygon | `0xd0e48967af74240d1c9526dcac63a9a782e7c271` | FireVaultFBXV2-15 | impl | live | no |
+| polygon | `0xd3368e1fe701e9b3a7be7de1560cf08375a78e75` | FireVaultFBX-2 | impl | live | no |
+| polygon | `0xd709e16081b3ac929833a1cbd389555142d2d0bd` | firebot_market-3 | impl | live | no |
+| polygon | `0xda6167d718b7439b8eca16e011d2d85c2c7046d1` | FireVaultFBXV2-16 | impl | live | no |
 | polygon | `0xe20e046b230a5530438d32abfbcc3e61d7670234` | FirePool | impl | live | no |
+| polygon | `0xe344dbaa709c52982ecd3bbdd9b690631d127b9a` | FireVaultFBX-3 | impl | live | no |
+| polygon | `0xe44f4eb297ab29e163968a72df27a2442c05f5f8` | FireVaultFBXV2-17 | impl | live | no |
 | polygon | `0xe7b7cf919e2798defc1f08133312cd151e5a5bed` | UniswapV2Pair | impl | live | no |
+| polygon | `0xefb4ff51dd2643f2d700a5561bf36959f4994740` | Test | impl | live | no |
+| polygon | `0xf312bf23569151becd5ba27745e4e05e9d7eb39c` | firebotMarket-2 | impl | live | no |
+| polygon | `0xf378f8e9603c2ec54b21f0a876ef847df976082e` | WorldCupPool | impl | live | no |
+| polygon | `0xf584be26441bf224a91d4f6bb0320b7c9f4ef875` | FireVaultFBXV2-18 | impl | live | no |
+| polygon | `0xf65c47befed8eb5d388bce2c0e88254360f57ab8` | Farm-2 | impl | live | no |

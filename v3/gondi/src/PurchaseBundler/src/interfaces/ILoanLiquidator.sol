@@ -10,17 +10,18 @@ import "../interfaces/loans/IMultiSourceLoan.sol";
 interface ILoanLiquidator {
     /// @notice Given a loan, it takes posession of the NFT and liquidates it.
     /// @param _loanId The loan id.
-    /// @param _loan The loan being liquidated. The liquidator hashes it and
-    ///              persists the hash so settlement flows can validate the
-    ///              caller-supplied loan against on-chain state. Also used to
-    ///              inspect tranche lenders at auction creation.
+    /// @param _contract The loan contract address.
+    /// @param _tokenId The NFT id.
+    /// @param _asset The asset address.
     /// @param _duration The liquidation duration.
     /// @param _minBid The minimum bid.
     /// @param _originator The address that trigger the liquidation.
     /// @return encodedAuction Encoded struct.
     function liquidateLoan(
         uint256 _loanId,
-        IMultiSourceLoan.Loan calldata _loan,
+        address _contract,
+        uint256 _tokenId,
+        address _asset,
         uint96 _duration,
         uint256 _minBid,
         address _originator

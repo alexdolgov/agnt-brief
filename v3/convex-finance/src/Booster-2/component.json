@@ -10,21 +10,31 @@
     "build_command": "forge build --root \"src/Booster-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
-    "https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf"
+    "https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf"
   ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0xf403c135812408bfbe8713b5a23a04b3d48aae31",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393109"
+      "logic_topography_row_id": "393116"
     }
   ]
 }

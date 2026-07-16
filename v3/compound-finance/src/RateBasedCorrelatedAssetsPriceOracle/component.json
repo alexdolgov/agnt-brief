@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/RateBasedCorrelatedAssetsPriceOracle\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 4,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -43,6 +43,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "401664"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0202aecab5f0c6c147bb4630a5678da7094d6155",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "chain-130",

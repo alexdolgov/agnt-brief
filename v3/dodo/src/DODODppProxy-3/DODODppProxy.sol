@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at BscScan.com on 2021-10-11
-*/
-
 // File: contracts/intf/IDODOApprove.sol
 
 /*
@@ -13,12 +9,15 @@
 
 pragma solidity 0.6.9;
 
+
+
 interface IDODOApprove {
     function claimTokens(address token,address who,address dest,uint256 amount) external;
     function getDODOProxy() external view returns (address);
 }
 
 // File: contracts/lib/InitializableOwnable.sol
+
 
 /**
  * @title Ownable
@@ -70,6 +69,7 @@ contract InitializableOwnable {
 }
 
 // File: contracts/SmartRoute/DODOApproveProxy.sol
+
 
 
 interface IDODOApproveProxy {
@@ -154,6 +154,7 @@ contract DODOApproveProxy is InitializableOwnable {
 // File: contracts/SmartRoute/intf/IDODOV2.sol
 
 
+
 interface IDODOV2 {
 
     //========== Common ==================
@@ -233,17 +234,15 @@ interface IDODOV2 {
     function initCrowdPooling(
         address cpAddress,
         address creator,
-        address baseToken,
-        address quoteToken,
+        address[] memory tokens,
         uint256[] memory timeLine,
         uint256[] memory valueList,
-        bool isOpenTWAP
+        bool[] memory switches
     ) external;
 
     function bid(address to) external;
 }
 
-// File: contracts/intf/IERC20.sol
 
 
 /**
@@ -319,6 +318,8 @@ interface IERC20 {
 // File: contracts/lib/SafeMath.sol
 
 
+
+
 /**
  * @title SafeMath
  * @author DODO Breeder
@@ -374,6 +375,8 @@ library SafeMath {
 }
 
 // File: contracts/lib/SafeERC20.sol
+
+
 
 
 /**
@@ -480,7 +483,6 @@ interface IWETH {
 
 // File: contracts/lib/ReentrancyGuard.sol
 
-
 /**
  * @title ReentrancyGuard
  * @author DODO Breeder
@@ -503,6 +505,27 @@ contract ReentrancyGuard {
 // File: contracts/SmartRoute/proxies/DODODppProxy.sol
 
 
+
+
+
+
+
+
+
+
+// interface IDPPOracle {
+//     function reset(
+//         address assetTo,
+//         uint256 newLpFeeRate,
+//         uint256 newK,
+//         uint256 baseOutAmount,
+//         uint256 quoteOutAmount,
+//         uint256 minBaseReserve,
+//         uint256 minQuoteReserve
+//     ) external returns (bool);
+// }
+
+
 /**
  * @title DODODppProxy
  * @author DODO Breeder
@@ -523,7 +546,7 @@ contract DODODppProxy is ReentrancyGuard {
     // ============ Modifiers ============
 
     modifier judgeExpired(uint256 deadLine) {
-        require(deadLine >= block.timestamp, "DODOCpProxy: EXPIRED");
+        require(deadLine >= block.timestamp, "DPPProxy: EXPIRED");
         _;
     }
 
@@ -625,6 +648,47 @@ contract DODODppProxy is ReentrancyGuard {
         _withdraw(msg.sender, IDODOV2(dppAddress)._BASE_TOKEN_(), amountList[2], flag == 3);
         _withdraw(msg.sender, IDODOV2(dppAddress)._QUOTE_TOKEN_(), amountList[3], flag == 4);
     }
+
+    
+    
+    // DPPOracle
+    // function resetDODOPrivatePool(
+    //     address dppAddress,
+    //     uint256[] memory paramList,  //0 - newLpFeeRate, 1 - newK
+    //     uint256[] memory amountList, //0 - baseInAmount, 1 - quoteInAmount, 2 - baseOutAmount, 3- quoteOutAmount
+    //     uint8 flag, //0 - ERC20, 1 - baseInETH, 2 - quoteInETH, 3 - baseOutETH, 4 - quoteOutETH
+    //     uint256 minBaseReserve,
+    //     uint256 minQuoteReserve,
+    //     uint256 deadLine
+    // ) external payable preventReentrant judgeExpired(deadLine) {
+    //     _deposit(
+    //         msg.sender,
+    //         dppAddress,
+    //         IDODOV2(dppAddress)._BASE_TOKEN_(),
+    //         amountList[0],
+    //         flag == 1
+    //     );
+    //     _deposit(
+    //         msg.sender,
+    //         dppAddress,
+    //         IDODOV2(dppAddress)._QUOTE_TOKEN_(),
+    //         amountList[1],
+    //         flag == 2
+    //     );
+
+    //     require(IDPPOracle(IDODOV2(dppAddress)._OWNER_()).reset(
+    //         msg.sender,
+    //         paramList[0],
+    //         paramList[1],
+    //         amountList[2],
+    //         amountList[3],
+    //         minBaseReserve,
+    //         minQuoteReserve
+    //     ), "Reset Failed");
+
+    //     _withdraw(msg.sender, IDODOV2(dppAddress)._BASE_TOKEN_(), amountList[2], flag == 3);
+    //     _withdraw(msg.sender, IDODOV2(dppAddress)._QUOTE_TOKEN_(), amountList[3], flag == 4);
+    // }
 
     //====================== internal =======================
 

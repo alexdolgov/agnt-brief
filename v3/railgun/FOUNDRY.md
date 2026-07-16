@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/RailTokenFixedSupply"
+forge build --root "src/Voting"
 ```
 
 ## Build every component

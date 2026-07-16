@@ -1,0 +1,28 @@
+{
+  "component": "RswEXIT",
+  "main_contract": "RswEXIT",
+  "source_entry_count": 76,
+  "source_file_count": 76,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RswEXIT\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbd6a5ec8a78b57871ae17d22cd686a72ebe06479",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

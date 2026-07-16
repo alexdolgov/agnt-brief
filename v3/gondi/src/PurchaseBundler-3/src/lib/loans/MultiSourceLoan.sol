@@ -135,8 +135,7 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
         _validateExecutionData(_loanExecutionData, borrower);
         _checkWhitelists(principalAddress, nftCollateralAddress);
 
-        (uint256 loanId, uint256[] memory offerIds, Loan memory loan, uint256 totalFee) =
-        _processOffersFromExecutionData(
+        (uint256 loanId, uint256[] memory offerIds, Loan memory loan, uint256 totalFee) = _processOffersFromExecutionData(
             borrower,
             executionData.principalReceiver,
             principalAddress,
@@ -193,11 +192,12 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
                 _renegotiationOffer.fee
             );
             if (_renegotiationOffer.principalAmount > _loan.principalAmount) {
-                ERC20(_loan.principalAddress).safeTransferFrom(
-                    _renegotiationOffer.lender,
-                    _loan.borrower,
-                    _renegotiationOffer.principalAmount - _loan.principalAmount
-                );
+                ERC20(_loan.principalAddress)
+                    .safeTransferFrom(
+                        _renegotiationOffer.lender,
+                        _loan.borrower,
+                        _renegotiationOffer.principalAmount - _loan.principalAmount
+                    );
             }
         } else if (msg.sender != _loan.borrower) {
             revert InvalidCallerError();
@@ -346,8 +346,7 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
 
         /// @dev We first process the incoming offers so borrower gets the capital. After that, we process repayments.
         ///      NFT doesn't need to be transfered (it was already in escrow)
-        (uint256 newLoanId, uint256[] memory offerIds, Loan memory loan, uint256 totalFee) =
-        _processOffersFromExecutionData(
+        (uint256 newLoanId, uint256[] memory offerIds, Loan memory loan, uint256 totalFee) = _processOffersFromExecutionData(
             borrower,
             executionData.principalReceiver,
             principalAddress,
@@ -400,16 +399,20 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
         _loans[newLoanId] = loanWithTranche.hash();
         delete _loans[loanId];
 
-        ERC20(_loan.principalAddress).safeTransferFrom(
-            _renegotiationOffer.lender, _loan.borrower, _renegotiationOffer.principalAmount - _renegotiationOffer.fee
-        );
+        ERC20(_loan.principalAddress)
+            .safeTransferFrom(
+                _renegotiationOffer.lender,
+                _loan.borrower,
+                _renegotiationOffer.principalAmount - _renegotiationOffer.fee
+            );
         if (_renegotiationOffer.fee != 0) {
             /// @dev Cached
-            ERC20(_loan.principalAddress).safeTransferFrom(
-                _renegotiationOffer.lender,
-                _protocolFee.recipient,
-                _renegotiationOffer.fee.mulDivUp(_loan.protocolFee, _PRECISION)
-            );
+            ERC20(_loan.principalAddress)
+                .safeTransferFrom(
+                    _renegotiationOffer.lender,
+                    _protocolFee.recipient,
+                    _renegotiationOffer.fee.mulDivUp(_loan.protocolFee, _PRECISION)
+                );
         }
 
         emit LoanRefinanced(
@@ -432,9 +435,8 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
 
         /// @dev Unlikely this is used outside of the callback with a seaport sell, but leaving here in case that's not correct.
         if (_repaymentData.data.shouldDelegate) {
-            IDelegateRegistry(getDelegateRegistry).delegateERC721(
-                loan.borrower, loan.nftCollateralAddress, loan.nftCollateralTokenId, bytes32(""), true
-            );
+            IDelegateRegistry(getDelegateRegistry)
+                .delegateERC721(loan.borrower, loan.nftCollateralAddress, loan.nftCollateralTokenId, bytes32(""), true);
         }
 
         ERC721(loan.nftCollateralAddress).transferFrom(address(this), loan.borrower, loan.nftCollateralTokenId);
@@ -452,12 +454,7 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
     }
 
     /// @inheritdoc IMultiSourceLoan
-    function liquidateLoan(uint256 _loanId, Loan calldata _loan)
-        external
-        override
-        nonReentrant
-        returns (bytes memory)
-    {
+    function liquidateLoan(uint256 _loanId, Loan calldata _loan) external override nonReentrant returns (bytes memory) {
         if (_loan.hash() != _loans[_loanId]) {
             revert InvalidLoanError(_loanId);
         }
@@ -490,9 +487,8 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
         if (msg.sender != loan.borrower) {
             revert InvalidCallerError();
         }
-        IDelegateRegistry(getDelegateRegistry).delegateERC721(
-            _delegate, loan.nftCollateralAddress, loan.nftCollateralTokenId, _rights, _value
-        );
+        IDelegateRegistry(getDelegateRegistry)
+            .delegateERC721(_delegate, loan.nftCollateralAddress, loan.nftCollateralTokenId, _rights, _value);
 
         emit Delegated(_loanId, _delegate, _rights, _value);
     }
@@ -538,9 +534,8 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
         }
         address flashActionContract = getFlashActionContract;
         ERC721(_loan.nftCollateralAddress).transferFrom(address(this), flashActionContract, _loan.nftCollateralTokenId);
-        INFTFlashAction(flashActionContract).execute(
-            _loan.nftCollateralAddress, _loan.nftCollateralTokenId, _target, _data
-        );
+        INFTFlashAction(flashActionContract)
+            .execute(_loan.nftCollateralAddress, _loan.nftCollateralTokenId, _target, _data);
 
         if (ERC721(_loan.nftCollateralAddress).ownerOf(_loan.nftCollateralTokenId) != address(this)) {
             revert NFTNotReturnedError();
@@ -642,14 +637,15 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
         }
 
         if (getLoanManagerRegistry.isLoanManager(_tranche.lender)) {
-            ILoanManager(_tranche.lender).loanRepayment(
-                _tranche.loanId,
-                _tranche.principalAmount,
-                _tranche.aprBps,
-                _tranche.accruedInterest,
-                _protocolFeeFraction,
-                _tranche.startTime
-            );
+            ILoanManager(_tranche.lender)
+                .loanRepayment(
+                    _tranche.loanId,
+                    _tranche.principalAmount,
+                    _tranche.aprBps,
+                    _tranche.accruedInterest,
+                    _protocolFeeFraction,
+                    _tranche.startTime
+                );
         }
 
         uint256 oldLenderDebt;
@@ -687,10 +683,7 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
     }
 
     /// @notice Basic renegotiation checks. Check basic parameters + expiration + whether the offer is active.
-    function _baseRenegotiationChecks(RenegotiationOffer calldata _renegotiationOffer, Loan memory _loan)
-        private
-        view
-    {
+    function _baseRenegotiationChecks(RenegotiationOffer calldata _renegotiationOffer, Loan memory _loan) private view {
         if (
             (_renegotiationOffer.principalAmount == 0)
                 || (_loan.tranche.length < _renegotiationOffer.trancheIndex.length)
@@ -814,7 +807,11 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
     }
 
     /// @notice Basic checks (expiration / signature if diff than borrower) for execution data.
-    function _validateExecutionData(LoanExecutionData calldata _executionData, address _borrower) private view returns (bool){
+    function _validateExecutionData(LoanExecutionData calldata _executionData, address _borrower)
+        private
+        view
+        returns (bool)
+    {
         bool shouldCheckLoanId;
         if (msg.sender != _borrower) {
             shouldCheckLoanId = true;
@@ -856,11 +853,10 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
     /// @param _offer The offer to check.
     /// @param _principalAddress Address of the principal token.
     /// @param _amountWithInterestAhead Amount of more senior principal + max accrued interest ahead.
-    function _checkOffer(
-        LoanOffer calldata _offer,
-        address _principalAddress,
-        uint256 _amountWithInterestAhead
-    ) private pure {
+    function _checkOffer(LoanOffer calldata _offer, address _principalAddress, uint256 _amountWithInterestAhead)
+        private
+        pure
+    {
         if (_offer.principalAddress != _principalAddress) {
             revert InvalidAddressesError();
         }
@@ -870,12 +866,15 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
     }
 
     /// @notice Check generic offer validators for a given offer or
-    ///         an exact match if no validators are given. 
+    ///         an exact match if no validators are given.
     ///         Having one empty validator is used for collection offers (all IDs match).
     /// @param _loanOffer The loan offer to check.
     /// @param _nftCollateralAddress The NFT collateral address to check.
     /// @param _tokenId The token ID to check.
-    function _checkValidators(LoanOffer calldata _loanOffer, address _nftCollateralAddress, uint256 _tokenId) private view {
+    function _checkValidators(LoanOffer calldata _loanOffer, address _nftCollateralAddress, uint256 _tokenId)
+        private
+        view
+    {
         uint256 totalValidators = _loanOffer.validators.length;
         address offerCollateralAddress = _loanOffer.nftCollateralAddress;
         uint256 offerCollateralTokenId = _loanOffer.nftCollateralTokenId;
@@ -883,7 +882,7 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
         bool matchAddress = _loanOffer.nftCollateralAddress == _nftCollateralAddress;
         bool matchTokenId = _loanOffer.nftCollateralTokenId == _tokenId;
         bool isFullContractOffer = totalValidators == 1 && _loanOffer.validators[0].validator == address(0);
-        
+
         /// @dev backward comp
         if (_loanOffer.nftCollateralTokenId != 0) {
             if (offerCollateralTokenId != _tokenId) {
@@ -897,10 +896,9 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
 
         for (uint256 i = 0; i < totalValidators; ++i) {
             IBaseLoan.OfferValidator memory validator = _loanOffer.validators[i];
-            if(validator.validator == address(0)) continue;
-            IOfferValidator(validator.validator).validateOffer(
-                _loanOffer, _nftCollateralAddress, _tokenId, validator.arguments
-            );
+            if (validator.validator == address(0)) continue;
+            IOfferValidator(validator.validator)
+                .validateOffer(_loanOffer, _nftCollateralAddress, _tokenId, validator.arguments);
         }
     }
 
@@ -937,14 +935,15 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
                 totalRepayment += repayment;
             }
             if (getLoanManagerRegistry.isLoanManager(tranche.lender)) {
-                ILoanManager(tranche.lender).loanRepayment(
-                    tranche.loanId,
-                    tranche.principalAmount,
-                    tranche.aprBps,
-                    tranche.accruedInterest,
-                    loan.protocolFee,
-                    tranche.startTime
-                );
+                ILoanManager(tranche.lender)
+                    .loanRepayment(
+                        tranche.loanId,
+                        tranche.principalAmount,
+                        tranche.aprBps,
+                        tranche.accruedInterest,
+                        loan.protocolFee,
+                        tranche.startTime
+                    );
             }
             unchecked {
                 ++i;
@@ -1125,14 +1124,10 @@ contract MultiSourceLoan is IMultiSourceLoan, Multicall, ReentrancyGuard, BaseLo
         /// We already checked that all tranches are strictly better.
         /// We check that the duration is not decreased or the offer charges a fee.
         if (
-            (
-                (_offerPrincipalAmount - _loanPrincipalAmount != 0)
-                    && (
-                        (_loanAprBps * _loanPrincipalAmount - _offerAprBps * _offerPrincipalAmount).mulDivDown(
-                            _PRECISION, _loanAprBps * _loanPrincipalAmount
-                        ) < minImprovementApr
-                    )
-            ) || (_offerFee != 0) || (_offerEndTime < _loanEndTime)
+            ((_offerPrincipalAmount - _loanPrincipalAmount != 0)
+                    && ((_loanAprBps * _loanPrincipalAmount - _offerAprBps * _offerPrincipalAmount)
+                            .mulDivDown(_PRECISION, _loanAprBps * _loanPrincipalAmount) < minImprovementApr))
+                || (_offerFee != 0) || (_offerEndTime < _loanEndTime)
         ) {
             revert NotStrictlyImprovedError();
         }

@@ -1,4 +1,4 @@
-// File: contracts/intf/IDODOApprove.sol
+// File: contracts-v2/contracts-v2/intf/IDODOApprove.sol
 
 /*
 
@@ -9,13 +9,15 @@
 
 pragma solidity 0.6.9;
 
-
 interface IDODOApprove {
     function claimTokens(address token,address who,address dest,uint256 amount) external;
     function getDODOProxy() external view returns (address);
 }
 
-// File: contracts/lib/InitializableOwnable.sol
+// File: contracts-v2/contracts-v2/lib/InitializableOwnable.sol
+
+
+
 
 /**
  * @title Ownable
@@ -66,7 +68,10 @@ contract InitializableOwnable {
     }
 }
 
-// File: contracts/SmartRoute/DODOApproveProxy.sol
+// File: contracts-v2/contracts-v2/SmartRoute/DODOApproveProxy.sol
+
+
+
 
 
 
@@ -149,7 +154,11 @@ contract DODOApproveProxy is InitializableOwnable {
     }
 }
 
-// File: contracts/intf/IERC20.sol
+// File: contracts-v2/contracts-v2/intf/IERC20.sol
+
+// This is a file copied from https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/IERC20.sol
+
+
 
 
 /**
@@ -221,8 +230,10 @@ interface IERC20 {
         uint256 amount
     ) external returns (bool);
 }
+// File: contracts-v2/contracts-v2/intf/IWETH.sol
 
-// File: contracts/intf/IWETH.sol
+
+
 
 
 interface IWETH {
@@ -247,7 +258,9 @@ interface IWETH {
     function withdraw(uint256 wad) external;
 }
 
-// File: contracts/lib/SafeMath.sol
+// File: contracts-v2/contracts-v2/lib/SafeMath.sol
+
+
 
 
 
@@ -305,7 +318,11 @@ library SafeMath {
     }
 }
 
-// File: contracts/lib/SafeERC20.sol
+// File: contracts-v2/contracts-v2/lib/SafeERC20.sol
+
+
+
+
 
 
 
@@ -385,7 +402,9 @@ library SafeERC20 {
     }
 }
 
-// File: contracts/lib/DecimalMath.sol
+// File: contracts-v2/contracts-v2/lib/DecimalMath.sol
+
+
 
 
 
@@ -424,9 +443,26 @@ library DecimalMath {
     function reciprocalCeil(uint256 target) internal pure returns (uint256) {
         return uint256(10**36).divCeil(target);
     }
+
+    function powFloor(uint256 target, uint256 e) internal pure returns (uint256) {
+        if (e == 0) {
+            return 10 ** 18;
+        } else if (e == 1) {
+            return target;
+        } else {
+            uint p = powFloor(target, e.div(2));
+            p = p.mul(p) / (10**18);
+            if (e % 2 == 1) {
+                p = p.mul(target) / (10**18);
+            }
+            return p;
+        }
+    }
 }
 
-// File: contracts/lib/ReentrancyGuard.sol
+// File: contracts-v2/contracts-v2/lib/ReentrancyGuard.sol
+
+
 
 
 /**
@@ -448,7 +484,9 @@ contract ReentrancyGuard {
     }
 }
 
-// File: contracts/DODOStablePool/intf/IDSP.sol
+// File: contracts-v2/contracts-v2/DODOStablePool/intf/IDSP.sol
+
+
 
 
 interface IDSP {
@@ -480,7 +518,8 @@ interface IDSP {
     function buyShares(address to) external returns (uint256,uint256,uint256);
 }
 
-// File: contracts/lib/CloneFactory.sol
+// File: contracts-v2/contracts-v2/lib/CloneFactory.sol
+
 
 
 interface ICloneFactory {
@@ -507,7 +546,12 @@ contract CloneFactory is ICloneFactory {
     }
 }
 
-// File: contracts/Factory/DSPFactory.sol
+// File: contracts-v2/contracts-v2/Factory/DSPFactory.sol
+
+
+
+
+
 
 interface IDSPFactory {
     function createDODOStablePool(
@@ -530,8 +574,8 @@ contract DSPFactory is InitializableOwnable {
     // ============ Templates ============
 
     address public immutable _CLONE_FACTORY_;
-    address public immutable _DEFAULT_MAINTAINER_;
     address public immutable _DEFAULT_MT_FEE_RATE_MODEL_;
+    address public _DEFAULT_MAINTAINER_;
     address public _DSP_TEMPLATE_;
 
     // ============ Registry ============
@@ -591,6 +635,10 @@ contract DSPFactory is InitializableOwnable {
 
     function updateDSPTemplate(address _newDSPTemplate) external onlyOwner {
         _DSP_TEMPLATE_ = _newDSPTemplate;
+    }
+
+    function updateDefaultMaintainer(address _newMaintainer) external onlyOwner {
+        _DEFAULT_MAINTAINER_ = _newMaintainer;
     }
 
     function addPoolByAdmin(
@@ -654,7 +702,213 @@ contract DSPFactory is InitializableOwnable {
     }
 }
 
-// File: contracts/SmartRoute/proxies/DODODspProxy.sol
+// File: contracts-v2/contracts-v2/Factory/GSPFactory.sol
+
+
+
+
+interface IGSP {
+    function init(
+        address maintainer,
+        address admin,
+        address baseTokenAddress,
+        address quoteTokenAddress,
+        uint256 lpFeeRate,
+        uint256 mtFeeRate,
+        uint256 i,
+        uint256 k,
+        uint256 priceLimit,
+        bool isOpenTWAP
+    ) external;
+
+    function _BASE_TOKEN_() external view returns (address);
+
+    function _QUOTE_TOKEN_() external view returns (address);
+
+    function _I_() external view returns (uint256);
+
+    function _MT_FEE_RATE_MODEL_() external view returns (address); // Useless, just for compatibility
+
+    function getVaultReserve() external view returns (uint256 baseReserve, uint256 quoteReserve);
+
+    function getUserFeeRate(address user) external view returns (uint256 lpFeeRate, uint256 mtFeeRate);
+
+    function getMtFeeTotal() external view returns (uint256 mtFeeBase, uint256 mtFeeQuote);
+
+    function sellBase(address to) external returns (uint256);
+
+    function sellQuote(address to) external returns (uint256);
+
+    function buyShares(address to) external returns (uint256 shares, uint256 baseInput, uint256 quoteInput);
+
+    function sellShares(uint256 shareAmount, address to, uint256 baseMinAmount, uint256 quoteMinAmount, bytes calldata data, uint256 deadline) external returns (uint256 baseAmount, uint256 quoteAmount);
+}
+
+interface IGSPFactory {
+    function createDODOGasSavingPool(
+        address admin,
+        address baseToken,
+        address quoteToken,
+        uint256 lpFeeRate,
+        uint256 mtFeeRate,
+        uint256 i,
+        uint256 k,
+        uint256 priceLimit,
+        bool isOpenTWAP
+    ) external returns (address newGasSavingPool);
+}
+
+/**
+ * @title DODO GasSavingPool Factory
+ * @author DODO Breeder
+ *
+ * @notice Create And Register GSP Pools
+ */
+contract GSPFactory is InitializableOwnable {
+    // ============ Templates ============
+
+    address public immutable _CLONE_FACTORY_;
+    address public _DEFAULT_MAINTAINER_;
+    address public _GSP_TEMPLATE_;
+
+    // ============ Registry ============
+
+    // base -> quote -> GSP address list
+    mapping(address => mapping(address => address[])) public _REGISTRY_;
+    // creator -> GSP address list
+    mapping(address => address[]) public _USER_REGISTRY_;
+
+    // ============ Events ============
+
+    event NewGSP(address baseToken, address quoteToken, address creator, address GSP);
+
+    event RemoveGSP(address GSP);
+
+    // ============ Functions ============
+
+    constructor(
+        address cloneFactory,
+        address GSPTemplate,
+        address defaultMaintainer
+    ) public {
+        _CLONE_FACTORY_ = cloneFactory;
+        _GSP_TEMPLATE_ = GSPTemplate;
+        _DEFAULT_MAINTAINER_ = defaultMaintainer;
+    }
+
+    function createDODOGasSavingPool(
+        address admin,
+        address baseToken,
+        address quoteToken,
+        uint256 lpFeeRate,
+        uint256 mtFeeRate,
+        uint256 i,
+        uint256 k,
+        uint256 priceLimit,
+        bool isOpenTWAP
+    ) external returns (address newGasSavingPool) {
+        newGasSavingPool = ICloneFactory(_CLONE_FACTORY_).clone(_GSP_TEMPLATE_);
+        {
+            IGSP(newGasSavingPool).init(
+                _DEFAULT_MAINTAINER_,
+                admin,
+                baseToken,
+                quoteToken,
+                lpFeeRate,
+                mtFeeRate,
+                i,
+                k,
+                priceLimit,
+                isOpenTWAP
+            );
+        }
+        _REGISTRY_[baseToken][quoteToken].push(newGasSavingPool);
+        _USER_REGISTRY_[tx.origin].push(newGasSavingPool);
+        emit NewGSP(baseToken, quoteToken, tx.origin, newGasSavingPool);
+    }
+
+    // ============ Admin Operation Functions ============
+
+    function updateGSPTemplate(address _newGSPTemplate) external onlyOwner {
+        _GSP_TEMPLATE_ = _newGSPTemplate;
+    }
+
+    function updateDefaultMaintainer(address _newMaintainer) external onlyOwner {
+        _DEFAULT_MAINTAINER_ = _newMaintainer;
+    }
+
+    function addPoolByAdmin(
+        address creator,
+        address baseToken,
+        address quoteToken,
+        address pool
+    ) external onlyOwner {
+        _REGISTRY_[baseToken][quoteToken].push(pool);
+        _USER_REGISTRY_[creator].push(pool);
+        emit NewGSP(baseToken, quoteToken, creator, pool);
+    }
+
+    function removePoolByAdmin(
+        address creator,
+        address baseToken,
+        address quoteToken,
+        address pool
+    ) external onlyOwner {
+        address[] memory registryList = _REGISTRY_[baseToken][quoteToken];
+        for (uint256 i = 0; i < registryList.length; i++) {
+            if (registryList[i] == pool) {
+                registryList[i] = registryList[registryList.length - 1];
+                break;
+            }
+        }
+        _REGISTRY_[baseToken][quoteToken] = registryList;
+        _REGISTRY_[baseToken][quoteToken].pop();
+        address[] memory userRegistryList = _USER_REGISTRY_[creator];
+        for (uint256 i = 0; i < userRegistryList.length; i++) {
+            if (userRegistryList[i] == pool) {
+                userRegistryList[i] = userRegistryList[userRegistryList.length - 1];
+                break;
+            }
+        }
+        _USER_REGISTRY_[creator] = userRegistryList;
+        _USER_REGISTRY_[creator].pop();
+        emit RemoveGSP(pool);
+    }
+
+    // ============ View Functions ============
+
+    function getDODOPool(address baseToken, address quoteToken)
+        external
+        view
+        returns (address[] memory machines)
+    {
+        return _REGISTRY_[baseToken][quoteToken];
+    }
+
+    function getDODOPoolBidirection(address token0, address token1)
+        external
+        view
+        returns (address[] memory baseToken0Machines, address[] memory baseToken1Machines)
+    {
+        return (_REGISTRY_[token0][token1], _REGISTRY_[token1][token0]);
+    }
+
+    function getDODOPoolByUser(address user) external view returns (address[] memory machines) {
+        return _USER_REGISTRY_[user];
+    }
+}
+// File: contracts-v2/contracts-v2/SmartRoute/proxies/DODODspProxy.sol
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**
@@ -672,6 +926,7 @@ contract DODODspProxy is ReentrancyGuard {
     address public immutable _WETH_;
     address public immutable _DODO_APPROVE_PROXY_;
     address public immutable _DSP_FACTORY_;
+    address public immutable _GSP_FACTORY_;
 
     // ============ Modifiers ============
 
@@ -686,12 +941,84 @@ contract DODODspProxy is ReentrancyGuard {
 
     constructor(
         address dspFactory,
+        address gspFactory,
         address payable weth,
         address dodoApproveProxy
     ) public {
         _DSP_FACTORY_ = dspFactory;
+        _GSP_FACTORY_ = gspFactory;
         _WETH_ = weth;
         _DODO_APPROVE_PROXY_ = dodoApproveProxy;
+    }
+
+    // ============ GSP Functions (create & add liquidity) ============
+
+    function createDODOGasSavingPair(
+        address admin,
+        address baseToken,
+        address quoteToken,
+        uint256 baseInAmount,
+        uint256 quoteInAmount,
+        uint256 lpFeeRate,
+        uint256 mtFeeRate,
+        uint256 i,
+        uint256 k,
+        uint256 priceLimit,
+        uint256 deadLine
+    )
+        external
+        payable
+        preventReentrant
+        judgeExpired(deadLine)
+        returns (address newGasSavingPair, uint256 shares)
+    {               
+            
+        {
+            address _admin = admin;
+            address _baseToken = baseToken == _ETH_ADDRESS_ ? _WETH_ : baseToken;
+            address _quoteToken = quoteToken == _ETH_ADDRESS_ ? _WETH_ : quoteToken;
+            uint256 _lpFeeRate = lpFeeRate;
+            uint256 _mtFeeRate = mtFeeRate;
+            uint256 _i = i;
+            uint256 _k = k;
+            uint256 _priceLimit = priceLimit;
+            
+            newGasSavingPair = IGSPFactory(_GSP_FACTORY_).createDODOGasSavingPool(
+                _admin,
+                _baseToken,
+                _quoteToken,
+                _lpFeeRate,
+                _mtFeeRate,
+                _i,
+                _k,
+                _priceLimit,
+                false
+            );
+        }
+
+        {
+            address _baseToken = baseToken;
+            address _quoteToken = quoteToken;
+            uint256 _baseInAmount = baseInAmount;
+            uint256 _quoteInAmount = quoteInAmount;
+            
+            _deposit(
+                msg.sender,
+                newGasSavingPair,
+                _baseToken,
+                _baseInAmount,
+                _baseToken == _ETH_ADDRESS_
+            );
+            _deposit(
+                msg.sender,
+                newGasSavingPair,
+                _quoteToken,
+                _quoteInAmount,
+                _quoteToken == _ETH_ADDRESS_
+            );
+        }
+
+        (shares, , ) = IGSP(newGasSavingPair).buyShares(msg.sender);
     }
 
     // ============ DSP Functions (create & add liquidity) ============

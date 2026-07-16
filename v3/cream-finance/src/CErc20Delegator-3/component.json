@@ -1,0 +1,38 @@
+{
+  "component": "CErc20Delegator-3",
+  "main_contract": "CErc20Delegator",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CErc20Delegator-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7e545caa813b102d2c6bfb7d6b07a0ea699ccac2",
+      "is_proxy": true,
+      "implementation_address": "0xee0c0a840cbfc2145580c517b10afabd0b788328",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x8166974222577f9ef674c1633f0742256f5a06cf",
+      "is_proxy": true,
+      "implementation_address": "0xee0c0a840cbfc2145580c517b10afabd0b788328",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

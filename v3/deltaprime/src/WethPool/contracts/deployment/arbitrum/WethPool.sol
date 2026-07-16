@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-// Last deployed from commit: 5ec1894d31c2b378fec21fa1613df34e7438169c;
+// Last deployed from commit: 3711b8ab78a04d27fa4cdc43b2c308eb5e51c6c6;
 pragma solidity 0.8.17;
 
 import "../../WrappedNativeTokenPool.sol";
@@ -12,7 +12,7 @@ import "../../WrappedNativeTokenPool.sol";
 contract WethPool is WrappedNativeTokenPool {
     // Returns max. acceptable pool utilisation after borrow action
     function getMaxPoolUtilisationForBorrowing() override public view returns (uint256) {
-        return 0.9e18;
+        return 0.925e18;
     }
 
     function name() public virtual override pure returns(string memory _name){

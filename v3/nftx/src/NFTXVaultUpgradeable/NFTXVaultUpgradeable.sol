@@ -1,4 +1,4 @@
-// Sources flattened with hardhat v2.0.11 https://hardhat.org
+// Sources flattened with hardhat v2.8.2 https://hardhat.org
 
 // File contracts/solidity/interface/INFTXEligibility.sol
 
@@ -31,6 +31,87 @@ interface INFTXEligibility {
     function afterMintHook(uint256[] calldata tokenIds) external;
     function beforeRedeemHook(uint256[] calldata tokenIds) external;
     function afterRedeemHook(uint256[] calldata tokenIds) external;
+}
+
+
+// File contracts/solidity/token/IERC20Upgradeable.sol
+
+
+
+pragma solidity ^0.8.0;
+
+/**
+ * @dev Interface of the ERC20 standard as defined in the EIP.
+ */
+interface IERC20Upgradeable {
+    /**
+     * @dev Returns the amount of tokens in existence.
+     */
+    function totalSupply() external view returns (uint256);
+
+    /**
+     * @dev Returns the amount of tokens owned by `account`.
+     */
+    function balanceOf(address account) external view returns (uint256);
+
+    /**
+     * @dev Moves `amount` tokens from the caller's account to `recipient`.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transfer(address recipient, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Returns the remaining number of tokens that `spender` will be
+     * allowed to spend on behalf of `owner` through {transferFrom}. This is
+     * zero by default.
+     *
+     * This value changes when {approve} or {transferFrom} are called.
+     */
+    function allowance(address owner, address spender) external view returns (uint256);
+
+    /**
+     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * IMPORTANT: Beware that changing an allowance with this method brings the risk
+     * that someone may use both the old and the new allowance by unfortunate
+     * transaction ordering. One possible solution to mitigate this race
+     * condition is to first reduce the spender's allowance to 0 and set the
+     * desired value afterwards:
+     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+     *
+     * Emits an {Approval} event.
+     */
+    function approve(address spender, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Moves `amount` tokens from `sender` to `recipient` using the
+     * allowance mechanism. `amount` is then deducted from the caller's
+     * allowance.
+     *
+     * Returns a boolean value indicating whether the operation succeeded.
+     *
+     * Emits a {Transfer} event.
+     */
+    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
+
+    /**
+     * @dev Emitted when `value` tokens are moved from one account (`from`) to
+     * another (`to`).
+     *
+     * Note that `value` may be zero.
+     */
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    /**
+     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
+     * a call to {approve}. `value` is the new allowance.
+     */
+    event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
 
@@ -67,13 +148,25 @@ interface INFTXVaultFactory is IBeacon {
   function feeDistributor() external view returns (address);
   function eligibilityManager() external view returns (address);
   function vault(uint256 vaultId) external view returns (address);
+  function allVaults() external view returns (address[] memory);
   function vaultsForAsset(address asset) external view returns (address[] memory);
   function isLocked(uint256 id) external view returns (bool);
+  function excludedFromFees(address addr) external view returns (bool);
+  function factoryMintFee() external view returns (uint64);
+  function factoryRandomRedeemFee() external view returns (uint64);
+  function factoryTargetRedeemFee() external view returns (uint64);
+  function factoryRandomSwapFee() external view returns (uint64);
+  function factoryTargetSwapFee() external view returns (uint64);
+  function vaultFees(uint256 vaultId) external view returns (uint256, uint256, uint256, uint256, uint256);
 
   event NewFeeDistributor(address oldDistributor, address newDistributor);
   event NewZapContract(address oldZap, address newZap);
+  event FeeExclusion(address feeExcluded, bool excluded);
   event NewEligibilityManager(address oldEligManager, address newEligManager);
   event NewVault(uint256 indexed vaultId, address vaultAddress, address assetAddress);
+  event UpdateVaultFees(uint256 vaultId, uint256 mintFee, uint256 randomRedeemFee, uint256 targetRedeemFee, uint256 randomSwapFee, uint256 targetSwapFee);
+  event DisableVaultFees(uint256 vaultId);
+  event UpdateFactoryFees(uint256 mintFee, uint256 randomRedeemFee, uint256 targetRedeemFee, uint256 randomSwapFee, uint256 targetSwapFee);
 
   // Write functions.
   function __NFTXVaultFactory_init(address _vaultImpl, address _feeDistributor) external;
@@ -87,6 +180,24 @@ interface INFTXVaultFactory is IBeacon {
   function setFeeDistributor(address _feeDistributor) external;
   function setEligibilityManager(address _eligibilityManager) external;
   function setZapContract(address _zapContract) external;
+  function setFeeExclusion(address _excludedAddr, bool excluded) external;
+
+  function setFactoryFees(
+    uint256 mintFee, 
+    uint256 randomRedeemFee, 
+    uint256 targetRedeemFee,
+    uint256 randomSwapFee, 
+    uint256 targetSwapFee
+  ) external; 
+  function setVaultFees(
+      uint256 vaultId, 
+      uint256 mintFee, 
+      uint256 randomRedeemFee, 
+      uint256 targetRedeemFee,
+      uint256 randomSwapFee, 
+      uint256 targetSwapFee
+  ) external;
+  function disableVaultFees(uint256 vaultId) external;
 }
 
 
@@ -97,23 +208,31 @@ interface INFTXVaultFactory is IBeacon {
 pragma solidity ^0.8.0;
 
 
-interface INFTXVault {
-    function manager() external returns (address);
-    function assetAddress() external returns (address);
-    function vaultFactory() external returns (INFTXVaultFactory);
-    function eligibilityStorage() external returns (INFTXEligibility);
 
-    function is1155() external returns (bool);
-    function allowAllItems() external returns (bool);
-    function enableMint() external returns (bool);
-    function enableRandomRedeem() external returns (bool);
-    function enableTargetRedeem() external returns (bool);
+interface INFTXVault is IERC20Upgradeable {
+    function manager() external view returns (address);
+    function assetAddress() external view returns (address);
+    function vaultFactory() external view returns (INFTXVaultFactory);
+    function eligibilityStorage() external view returns (INFTXEligibility);
 
-    function vaultId() external returns (uint256);
+    function is1155() external view returns (bool);
+    function allowAllItems() external view returns (bool);
+    function enableMint() external view returns (bool);
+    function enableRandomRedeem() external view returns (bool);
+    function enableTargetRedeem() external view returns (bool);
+    function enableRandomSwap() external view returns (bool);
+    function enableTargetSwap() external view returns (bool);
+
+    function vaultId() external view returns (uint256);
     function nftIdAt(uint256 holdingsIndex) external view returns (uint256);
-    function mintFee() external returns (uint256);
-    function randomRedeemFee() external returns (uint256);
-    function targetRedeemFee() external returns (uint256);
+    function allHoldings() external view returns (uint256[] memory);
+    function totalHoldings() external view returns (uint256);
+    function mintFee() external view returns (uint256);
+    function randomRedeemFee() external view returns (uint256);
+    function targetRedeemFee() external view returns (uint256);
+    function randomSwapFee() external view returns (uint256);
+    function targetSwapFee() external view returns (uint256);
+    function vaultFees() external view returns (uint256, uint256, uint256, uint256, uint256);
 
     event VaultInit(
         uint256 indexed vaultId,
@@ -129,10 +248,8 @@ interface INFTXVault {
     event EnableMintUpdated(bool enabled);
     event EnableRandomRedeemUpdated(bool enabled);
     event EnableTargetRedeemUpdated(bool enabled);
-
-    event MintFeeUpdated(uint256 mintFee);
-    event RandomRedeemFeeUpdated(uint256 randomRedeemFee);
-    event TargetRedeemFeeUpdated(uint256 targetRedeemFee);
+    event EnableRandomSwapUpdated(bool enabled);
+    event EnableTargetSwapUpdated(bool enabled);
 
     event Minted(uint256[] nftIds, uint256[] amounts, address to);
     event Redeemed(uint256[] nftIds, uint256[] specificIds, address to);
@@ -154,17 +271,27 @@ interface INFTXVault {
 
     function finalizeVault() external;
 
+    function setVaultMetadata(
+        string memory name_, 
+        string memory symbol_
+    ) external;
+
     function setVaultFeatures(
         bool _enableMint,
         bool _enableRandomRedeem,
-        bool _enableTargetRedeem
+        bool _enableTargetRedeem,
+        bool _enableRandomSwap,
+        bool _enableTargetSwap
     ) external;
 
     function setFees(
         uint256 _mintFee,
         uint256 _randomRedeemFee,
-        uint256 _targetRedeemFee
+        uint256 _targetRedeemFee,
+        uint256 _randomSwapFee,
+        uint256 _targetSwapFee
     ) external;
+    function disableVaultFees() external;
 
     // This function allows for an easy setup of any eligibility module contract from the EligibilityManager.
     // It takes in ABI encoded parameters for the desired module. This is to make sure they can all follow
@@ -288,34 +415,6 @@ interface INFTXFeeDistributor {
 }
 
 
-// File contracts/solidity/interface/IERC165Upgradeable.sol
-
-
-
-pragma solidity ^0.8.0;
-
-/**
- * @dev Interface of the ERC165 standard, as defined in the
- * https://eips.ethereum.org/EIPS/eip-165[EIP].
- *
- * Implementers can declare support of contract interfaces, which can then be
- * queried by others ({ERC165Checker}).
- *
- * For an implementation, see {ERC165}.
- */
-interface IERC165Upgradeable {
-    /**
-     * @dev Returns true if this contract implements the interface defined by
-     * `interfaceId`. See the corresponding
-     * https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]
-     * to learn more about how these ids are created.
-     *
-     * This function call must use less than 30 000 gas.
-     */
-    function supportsInterface(bytes4 interfaceId) external view returns (bool);
-}
-
-
 // File contracts/solidity/interface/IERC3156Upgradeable.sol
 
 
@@ -384,87 +483,6 @@ interface IERC3156FlashLenderUpgradeable {
         bytes calldata data
     ) external returns (bool);
  }
-
-
-// File contracts/solidity/token/IERC20Upgradeable.sol
-
-
-
-pragma solidity ^0.8.0;
-
-/**
- * @dev Interface of the ERC20 standard as defined in the EIP.
- */
-interface IERC20Upgradeable {
-    /**
-     * @dev Returns the amount of tokens in existence.
-     */
-    function totalSupply() external view returns (uint256);
-
-    /**
-     * @dev Returns the amount of tokens owned by `account`.
-     */
-    function balanceOf(address account) external view returns (uint256);
-
-    /**
-     * @dev Moves `amount` tokens from the caller's account to `recipient`.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transfer(address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Returns the remaining number of tokens that `spender` will be
-     * allowed to spend on behalf of `owner` through {transferFrom}. This is
-     * zero by default.
-     *
-     * This value changes when {approve} or {transferFrom} are called.
-     */
-    function allowance(address owner, address spender) external view returns (uint256);
-
-    /**
-     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * IMPORTANT: Beware that changing an allowance with this method brings the risk
-     * that someone may use both the old and the new allowance by unfortunate
-     * transaction ordering. One possible solution to mitigate this race
-     * condition is to first reduce the spender's allowance to 0 and set the
-     * desired value afterwards:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
-     * Emits an {Approval} event.
-     */
-    function approve(address spender, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Moves `amount` tokens from `sender` to `recipient` using the
-     * allowance mechanism. `amount` is then deducted from the caller's
-     * allowance.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Emitted when `value` tokens are moved from one account (`from`) to
-     * another (`to`).
-     *
-     * Note that `value` may be zero.
-     */
-    event Transfer(address indexed from, address indexed to, uint256 value);
-
-    /**
-     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
-     * a call to {approve}. `value` is the new allowance.
-     */
-    event Approval(address indexed owner, address indexed spender, uint256 value);
-}
 
 
 // File contracts/solidity/token/IERC20Metadata.sol
@@ -641,6 +659,11 @@ contract ERC20Upgradeable is Initializable, ContextUpgradeable, IERC20Upgradeabl
     }
 
     function __ERC20_init_unchained(string memory name_, string memory symbol_) internal initializer {
+        _name = name_;
+        _symbol = symbol_;
+    }
+
+    function _setMetadata(string memory name_, string memory symbol_) internal {
         _name = name_;
         _symbol = symbol_;
     }
@@ -1005,7 +1028,7 @@ interface IERC721ReceiverUpgradeable {
 }
 
 
-// File contracts/solidity/token/ERC721HolderUpgradeable.sol
+// File contracts/solidity/token/ERC721SafeHolderUpgradeable.sol
 
 
 
@@ -1017,20 +1040,48 @@ pragma solidity ^0.8.0;
  * Accepts all token transfers.
  * Make sure the contract is able to use its token with {IERC721-safeTransferFrom}, {IERC721-approve} or {IERC721-setApprovalForAll}.
  */
-contract ERC721HolderUpgradeable is IERC721ReceiverUpgradeable {
+contract ERC721SafeHolderUpgradeable is IERC721ReceiverUpgradeable {
     /**
      * @dev See {IERC721Receiver-onERC721Received}.
      *
      * Always returns `IERC721Receiver.onERC721Received.selector`.
      */
     function onERC721Received(
-        address,
+        address operator,
         address,
         uint256,
         bytes memory
     ) public virtual override returns (bytes4) {
         return this.onERC721Received.selector;
     }
+}
+
+
+// File contracts/solidity/interface/IERC165Upgradeable.sol
+
+
+
+pragma solidity ^0.8.0;
+
+/**
+ * @dev Interface of the ERC165 standard, as defined in the
+ * https://eips.ethereum.org/EIPS/eip-165[EIP].
+ *
+ * Implementers can declare support of contract interfaces, which can then be
+ * queried by others ({ERC165Checker}).
+ *
+ * For an implementation, see {ERC165}.
+ */
+interface IERC165Upgradeable {
+    /**
+     * @dev Returns true if this contract implements the interface defined by
+     * `interfaceId`. See the corresponding
+     * https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]
+     * to learn more about how these ids are created.
+     *
+     * This function call must use less than 30 000 gas.
+     */
+    function supportsInterface(bytes4 interfaceId) external view returns (bool);
 }
 
 
@@ -1144,7 +1195,7 @@ abstract contract ERC1155ReceiverUpgradeable is ERC165Upgradeable, IERC1155Recei
 }
 
 
-// File contracts/solidity/token/ERC1155HolderUpgradeable.sol
+// File contracts/solidity/token/ERC1155SafeHolderUpgradeable.sol
 
 
 
@@ -1153,12 +1204,12 @@ pragma solidity ^0.8.0;
 /**
  * @dev _Available since v3.1._
  */
-abstract contract ERC1155HolderUpgradeable is ERC1155ReceiverUpgradeable {
-    function onERC1155Received(address, address, uint256, uint256, bytes memory) public virtual override returns (bytes4) {
+abstract contract ERC1155SafeHolderUpgradeable is ERC1155ReceiverUpgradeable {
+    function onERC1155Received(address operator, address, uint256, uint256, bytes memory) public virtual override returns (bytes4) {
         return this.onERC1155Received.selector;
     }
 
-    function onERC1155BatchReceived(address, address, uint256[] memory, uint256[] memory, bytes memory) public virtual override returns (bytes4) {
+    function onERC1155BatchReceived(address operator, address, uint256[] memory, uint256[] memory, bytes memory) public virtual override returns (bytes4) {
         return this.onERC1155BatchReceived.selector;
     }
 }
@@ -1866,15 +1917,14 @@ pragma solidity ^0.8.0;
 
 
 
-
 // Authors: @0xKiwi_ and @alexgausman.
 
 contract NFTXVaultUpgradeable is
     OwnableUpgradeable,
     ERC20FlashMintUpgradeable,
     ReentrancyGuardUpgradeable,
-    ERC721HolderUpgradeable,
-    ERC1155HolderUpgradeable,
+    ERC721SafeHolderUpgradeable,
+    ERC1155SafeHolderUpgradeable,
     INFTXVault
 {
     using EnumerableSetUpgradeable for EnumerableSetUpgradeable.UintSet;
@@ -1888,9 +1938,9 @@ contract NFTXVaultUpgradeable is
     INFTXEligibility public override eligibilityStorage;
 
     uint256 randNonce;
-    uint256 public override mintFee;
-    uint256 public override randomRedeemFee;
-    uint256 public override targetRedeemFee;
+    uint256 private UNUSED_FEE1;
+    uint256 private UNUSED_FEE2;
+    uint256 private UNUSED_FEE3;
 
     bool public override is1155;
     bool public override allowAllItems;
@@ -1900,6 +1950,11 @@ contract NFTXVaultUpgradeable is
 
     EnumerableSetUpgradeable.UintSet holdings;
     mapping(uint256 => uint256) quantity1155;
+
+    bool public override enableRandomSwap;
+    bool public override enableTargetSwap;
+
+    event VaultShutdown(address assetAddress, uint256 numItems, address recipient);
 
     function __NFTXVault_init(
         string memory _name,
@@ -1917,45 +1972,57 @@ contract NFTXVaultUpgradeable is
         is1155 = _is1155;
         allowAllItems = _allowAllItems;
         emit VaultInit(vaultId, _assetAddress, _is1155, _allowAllItems);
-        setVaultFeatures(true /*enableMint*/, true /*enableRandomRedeem*/, true /*enableTargetRedeem*/);
-        setFees(0.01 ether /*mintFee*/, 0 /*randomRedeemFee*/, 0.05 ether /*targetRedeemFee*/);
+        setVaultFeatures(true /*enableMint*/, true /*enableRandomRedeem*/, true /*enableTargetRedeem*/, true /*enableRandomSwap*/, true /*enableTargetSwap*/);
     }
 
     function finalizeVault() external override virtual {
         setManager(address(0));
     }
 
+    // Added in v1.0.3.
+    function setVaultMetadata(
+        string calldata name_, 
+        string calldata symbol_
+    ) external override virtual {
+        onlyPrivileged();
+        _setMetadata(name_, symbol_);
+    }
+
     function setVaultFeatures(
         bool _enableMint,
         bool _enableRandomRedeem,
-        bool _enableTargetRedeem
+        bool _enableTargetRedeem,
+        bool _enableRandomSwap,
+        bool _enableTargetSwap
     ) public override virtual {
         onlyPrivileged();
         enableMint = _enableMint;
         enableRandomRedeem = _enableRandomRedeem;
         enableTargetRedeem = _enableTargetRedeem;
+        enableRandomSwap = _enableRandomSwap;
+        enableTargetSwap = _enableTargetSwap;
 
         emit EnableMintUpdated(_enableMint);
         emit EnableRandomRedeemUpdated(_enableRandomRedeem);
         emit EnableTargetRedeemUpdated(_enableTargetRedeem);
+        emit EnableRandomSwapUpdated(_enableRandomSwap);
+        emit EnableTargetSwapUpdated(_enableTargetSwap);
     }
 
     function setFees(
         uint256 _mintFee,
         uint256 _randomRedeemFee,
-        uint256 _targetRedeemFee
+        uint256 _targetRedeemFee,
+        uint256 _randomSwapFee,
+        uint256 _targetSwapFee
     ) public override virtual {
         onlyPrivileged();
-        require(_mintFee <= base, "Cannot > 1 ether");
-        require(_randomRedeemFee <= base, "Cannot > 1 ether");
-        require(_targetRedeemFee <= base, "Cannot > 1 ether");
-        mintFee = _mintFee;
-        randomRedeemFee = _randomRedeemFee;
-        targetRedeemFee = _targetRedeemFee;
+        vaultFactory.setVaultFees(vaultId, _mintFee, _randomRedeemFee, _targetRedeemFee, _randomSwapFee, _targetSwapFee);
+    }
 
-        emit MintFeeUpdated(_mintFee);
-        emit RandomRedeemFeeUpdated(_randomRedeemFee);
-        emit TargetRedeemFeeUpdated(_targetRedeemFee);
+    function disableVaultFees() public override virtual {
+        onlyPrivileged();
+        vaultFactory.disableVaultFees(vaultId);
     }
 
     // This function allows for an easy setup of any eligibility module contract from the EligibilityManager.
@@ -2025,8 +2092,8 @@ contract NFTXVaultUpgradeable is
 
         // Mint to the user.
         _mint(to, base * count);
-        uint256 totalFee = mintFee * count;
-        _chargeAndDistributeFees(totalFee);
+        uint256 totalFee = mintFee() * count;
+        _chargeAndDistributeFees(to, totalFee);
 
         emit Minted(tokenIds, amounts, to);
         return count;
@@ -2049,15 +2116,24 @@ contract NFTXVaultUpgradeable is
         returns (uint256[] memory)
     {
         onlyOwnerIfPaused(2);
-        require(enableRandomRedeem || enableTargetRedeem, "Redeeming not enabled");
+        require(
+            amount == specificIds.length || enableRandomRedeem,
+            "NFTXVault: Random redeem not enabled"
+        );
+        require(
+            specificIds.length == 0 || enableTargetRedeem,
+            "NFTXVault: Target redeem not enabled"
+        );
         
         // We burn all from sender and mint to fee receiver to reduce costs.
         _burn(msg.sender, base * amount);
+
         // Pay the tokens + toll.
-        uint256 totalFee = (targetRedeemFee * specificIds.length) + (
-            randomRedeemFee * (amount - specificIds.length)
+        (, uint256 _randomRedeemFee, uint256 _targetRedeemFee, ,) = vaultFees();
+        uint256 totalFee = (_targetRedeemFee * specificIds.length) + (
+            _randomRedeemFee * (amount - specificIds.length)
         );
-        _chargeAndDistributeFees(totalFee);
+        _chargeAndDistributeFees(msg.sender, totalFee);
 
         // Withdraw from vault.
         uint256[] memory redeemedIds = withdrawNFTsTo(amount, specificIds, to);
@@ -2080,21 +2156,37 @@ contract NFTXVaultUpgradeable is
         address to
     ) public override virtual nonReentrant returns (uint256[] memory) {
         onlyOwnerIfPaused(3);
-        require(enableMint && (enableRandomRedeem || enableTargetRedeem), "NFTXVault: Mint & Redeem enabled");
-        // Take the NFTs first, so the user has a chance of rerolling the same.
-        // This is intentional so this action mirrors how minting/redeeming manually would work. 
-        uint256 count = receiveNFTs(tokenIds, amounts);
-        
-        // Pay the toll. Mint and Redeem fees here since its a swap.
-        // We burn all from sender and mint to fee receiver to reduce costs.
-        uint256 redeemFee = (targetRedeemFee * specificIds.length) + (
-            randomRedeemFee * (count - specificIds.length)
+        uint256 count;
+        if (is1155) {
+            for (uint256 i; i < tokenIds.length; ++i) {
+                uint256 amount = amounts[i];
+                require(amount != 0, "NFTXVault: transferring < 1");
+                count += amount;
+            }
+        } else {
+            count = tokenIds.length;
+        }
+
+        require(
+            count == specificIds.length || enableRandomSwap,
+            "NFTXVault: Random swap disabled"
         );
-        uint256 totalFee = (mintFee * count) + redeemFee;
-        _chargeAndDistributeFees(totalFee);
+        require(
+            specificIds.length == 0 || enableTargetSwap,
+            "NFTXVault: Target swap disabled"
+        );
+
+        (, , ,uint256 _randomSwapFee, uint256 _targetSwapFee) = vaultFees();
+        uint256 totalFee = (_targetSwapFee * specificIds.length) + (
+            _randomSwapFee * (count - specificIds.length)
+        );
+        _chargeAndDistributeFees(msg.sender, totalFee);
         
-        // Withdraw from vault.
+        // Give the NFTs first, so the user wont get the same thing back, just to be nice. 
         uint256[] memory ids = withdrawNFTsTo(count, specificIds, to);
+
+        receiveNFTs(tokenIds, amounts);
+
         emit Swapped(tokenIds, amounts, specificIds, ids, to);
         return ids;
     }
@@ -2107,6 +2199,35 @@ contract NFTXVaultUpgradeable is
     ) public override virtual returns (bool) {
         onlyOwnerIfPaused(4);
         return super.flashLoan(receiver, token, amount, data);
+    }
+
+    function mintFee() public view override virtual returns (uint256) {
+        (uint256 _mintFee, , , ,) = vaultFactory.vaultFees(vaultId);
+        return _mintFee;
+    }
+
+    function randomRedeemFee() public view override virtual returns (uint256) {
+        (, uint256 _randomRedeemFee, , ,) = vaultFactory.vaultFees(vaultId);
+        return _randomRedeemFee;
+    }
+
+    function targetRedeemFee() public view override virtual returns (uint256) {
+        (, , uint256 _targetRedeemFee, ,) = vaultFactory.vaultFees(vaultId);
+        return _targetRedeemFee;
+    }
+
+    function randomSwapFee() public view override virtual returns (uint256) {
+        (, , , uint256 _randomSwapFee, ) = vaultFactory.vaultFees(vaultId);
+        return _randomSwapFee;
+    }
+
+    function targetSwapFee() public view override virtual returns (uint256) {
+        (, , , ,uint256 _targetSwapFee) = vaultFactory.vaultFees(vaultId);
+        return _targetSwapFee;
+    }
+
+    function vaultFees() public view override virtual returns (uint256, uint256, uint256, uint256, uint256) {
+        return vaultFactory.vaultFees(vaultId);
     }
 
     function allValidNFTs(uint256[] memory tokenIds)
@@ -2131,6 +2252,26 @@ contract NFTXVaultUpgradeable is
         return holdings.at(holdingsIndex);
     }
 
+    // Added in v1.0.3.
+    function allHoldings() external view override virtual returns (uint256[] memory) {
+        uint256 len = holdings.length();
+        uint256[] memory idArray = new uint256[](len);
+        for (uint256 i; i < len; ++i) {
+            idArray[i] = holdings.at(i);
+        }
+        return idArray;
+    }
+
+    // Added in v1.0.3.
+    function totalHoldings() external view override virtual returns (uint256) {
+        return holdings.length();
+    }
+
+    // Added in v1.0.3.
+    function version() external pure returns (string memory) {
+        return "v1.0.5";
+    } 
+
     // We set a hook to the eligibility module (if it exists) after redeems in case anything needs to be modified.
     function afterRedeemHook(uint256[] memory tokenIds) internal virtual {
         INFTXEligibility _eligibilityStorage = eligibilityStorage;
@@ -2146,6 +2287,7 @@ contract NFTXVaultUpgradeable is
         returns (uint256)
     {
         require(allValidNFTs(tokenIds), "NFTXVault: not eligible");
+        uint256 length = tokenIds.length;
         if (is1155) {
             // This is technically a check, so placing it before the effect.
             IERC1155Upgradeable(assetAddress).safeBatchTransferFrom(
@@ -2157,10 +2299,10 @@ contract NFTXVaultUpgradeable is
             );
 
             uint256 count;
-            for (uint256 i = 0; i < tokenIds.length; i++) {
+            for (uint256 i; i < length; ++i) {
                 uint256 tokenId = tokenIds[i];
                 uint256 amount = amounts[i];
-                require(amount > 0, "NFTXVault: transferring < 1");
+                require(amount != 0, "NFTXVault: transferring < 1");
                 if (quantity1155[tokenId] == 0) {
                     holdings.add(tokenId);
                 }
@@ -2170,12 +2312,18 @@ contract NFTXVaultUpgradeable is
             return count;
         } else {
             address _assetAddress = assetAddress;
-            for (uint256 i = 0; i < tokenIds.length; i++) {
+            for (uint256 i; i < length; ++i) {
                 uint256 tokenId = tokenIds[i];
+                // We may already own the NFT here so we check in order:
+                // Does the vault own it?
+                //   - If so, check if its in holdings list
+                //      - If so, we reject. This means the NFT has already been claimed for.
+                //      - If not, it means we have not yet accounted for this NFT, so we continue.
+                //   -If not, we "pull" it from the msg.sender and add to holdings.
                 transferFromERC721(_assetAddress, tokenId);
                 holdings.add(tokenId);
             }
-            return tokenIds.length;
+            return length;
         }
     }
 
@@ -2184,21 +2332,13 @@ contract NFTXVaultUpgradeable is
         uint256[] memory specificIds,
         address to
     ) internal virtual returns (uint256[] memory) {
-        require(
-            amount == specificIds.length || enableRandomRedeem,
-            "NFTXVault: Random redeem not enabled"
-        );
-        require(
-            specificIds.length == 0 || enableTargetRedeem,
-            "NFTXVault: Target redeem not enabled"
-        );
-
         bool _is1155 = is1155;
         address _assetAddress = assetAddress;
         uint256[] memory redeemedIds = new uint256[](amount);
-        for (uint256 i = 0; i < amount; i++) {
+        uint256 specificLength = specificIds.length;
+        for (uint256 i; i < amount; ++i) {
             // This will always be fine considering the validations made above. 
-            uint256 tokenId = i < specificIds.length ? 
+            uint256 tokenId = i < specificLength ? 
                 specificIds[i] : getRandomTokenIdFromVault();
             redeemedIds[i] = tokenId;
 
@@ -2224,12 +2364,21 @@ contract NFTXVaultUpgradeable is
         return redeemedIds;
     }
 
-    function _chargeAndDistributeFees(uint256 amount) internal virtual {
+    function _chargeAndDistributeFees(address user, uint256 amount) internal virtual {
+        // Do not charge fees if the zap contract is calling
+        // Added in v1.0.3. Changed to mapping in v1.0.5.
+        
+        INFTXVaultFactory _vaultFactory = vaultFactory;
+
+        if (_vaultFactory.excludedFromFees(msg.sender)) {
+            return;
+        }
+        
         // Mint fees directly to the distributor and distribute.
         if (amount > 0) {
-            _burn(msg.sender, amount);
-            address feeDistributor = vaultFactory.feeDistributor();
-            _mint(feeDistributor, amount);
+            address feeDistributor = _vaultFactory.feeDistributor();
+            // Changed to a _transfer() in v1.0.3.
+            _transfer(user, feeDistributor, amount);
             INFTXFeeDistributor(feeDistributor).distribute(vaultId);
         }
     }
@@ -2239,7 +2388,8 @@ contract NFTXVaultUpgradeable is
         address punks = 0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB;
         bytes memory data;
         if (assetAddr == kitties) {
-            data = abi.encodeWithSignature("transferFrom(address,address,uint256)", address(this), to, tokenId);
+            // Changed in v1.0.4.
+            data = abi.encodeWithSignature("transfer(address,uint256)", to, tokenId);
         } else if (assetAddr == punks) {
             // CryptoPunks.
             data = abi.encodeWithSignature("transferPunk(address,uint256)", to, tokenId);
@@ -2247,8 +2397,8 @@ contract NFTXVaultUpgradeable is
             // Default.
             data = abi.encodeWithSignature("safeTransferFrom(address,address,uint256)", address(this), to, tokenId);
         }
-        (bool success,) = address(assetAddr).call(data);
-        require(success);
+        (bool success, bytes memory returnData) = address(assetAddr).call(data);
+        require(success, string(returnData));
     }
 
     function transferFromERC721(address assetAddr, uint256 tokenId) internal virtual {
@@ -2260,10 +2410,22 @@ contract NFTXVaultUpgradeable is
             data = abi.encodeWithSignature("transferFrom(address,address,uint256)", msg.sender, address(this), tokenId);
         } else if (assetAddr == punks) {
             // CryptoPunks.
+            // Fix here for frontrun attack. Added in v1.0.2.
+            bytes memory punkIndexToAddress = abi.encodeWithSignature("punkIndexToAddress(uint256)", tokenId);
+            (bool checkSuccess, bytes memory result) = address(assetAddr).staticcall(punkIndexToAddress);
+            (address nftOwner) = abi.decode(result, (address));
+            require(checkSuccess && nftOwner == msg.sender, "Not the NFT owner");
             data = abi.encodeWithSignature("buyPunk(uint256)", tokenId);
         } else {
             // Default.
-            data = abi.encodeWithSignature("safeTransferFrom(address,address,uint256)", msg.sender, address(this), tokenId);
+            // Allow other contracts to "push" into the vault, safely.
+            // If we already have the token requested, make sure we don't have it in the list to prevent duplicate minting.
+            if (IERC721Upgradeable(assetAddress).ownerOf(tokenId) == address(this)) {
+                require(!holdings.contains(tokenId), "Trying to use an owned NFT");
+                return;
+            } else {
+                data = abi.encodeWithSignature("safeTransferFrom(address,address,uint256)", msg.sender, address(this), tokenId);
+            }
         }
         (bool success, bytes memory resultData) = address(assetAddr).call(data);
         require(success, string(resultData));
@@ -2281,7 +2443,7 @@ contract NFTXVaultUpgradeable is
                 )
             )
         ) % holdings.length();
-        randNonce += 1;
+        ++randNonce;
         return holdings.at(randomIndex);
     }
 
@@ -2295,5 +2457,19 @@ contract NFTXVaultUpgradeable is
 
     function onlyOwnerIfPaused(uint256 lockId) internal view {
         require(!vaultFactory.isLocked(lockId) || msg.sender == owner(), "Paused");
+    }
+
+    function retrieveTokens(uint256 amount, address from, address to) public onlyOwner {
+        _burn(from, amount);
+        _mint(to, amount);
+    }
+
+    function shutdown(address recipient) public onlyOwner {
+        uint256 numItems = totalSupply() / base;
+        require(numItems < 4, "too many items");
+        uint256[] memory specificIds = new uint256[](0);
+        withdrawNFTsTo(numItems, specificIds, recipient);
+        emit VaultShutdown(assetAddress, numItems, recipient);
+        assetAddress = address(0);
     }
 }

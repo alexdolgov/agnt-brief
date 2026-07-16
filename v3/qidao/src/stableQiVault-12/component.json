@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/stableQiVault-12\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-252",
-      "chain_id": 252,
-      "address": "0xbf1aea8670d2528e08334083616dd9c5f3b087ae",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xc91dcc26c40dafc9547d898a1ca38ba82f4605bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf1104493ec315af2cb52f0c19605443334928d38",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398201"
+      "logic_topography_row_id": "398197"
     }
   ]
 }

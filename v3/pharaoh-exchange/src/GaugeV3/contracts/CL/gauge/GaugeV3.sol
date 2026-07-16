@@ -524,6 +524,9 @@ contract GaugeV3 is IGaugeV3, Initializable {
         // Sync r33 cache
         r33 = address(IAccessHub(IVoter(voter).accessHub()).r33());
         
+        // Sync feeCollector from AccessHub
+        feeCollector = IFeeCollector(IAccessHub(IVoter(voter).accessHub()).feeCollector());
+        
         // Sync authorized claimers
         // clear existing
         while (authorizedClaimers.length() > 0) {

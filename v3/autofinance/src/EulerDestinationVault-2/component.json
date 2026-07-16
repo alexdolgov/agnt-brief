@@ -15,34 +15,34 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x9d2868bafeaa293daa7b5d1e6d1dd6b1a2239e3a",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc82aec28cbc4a4a73fe81cb0b2d7d0bddf28537f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391884"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0xbe22c1f54cd2b1bd59bb20c7c2a97e688b3ae95f",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdc7b9681782e92c3aadc9332b754b8f8c4ec7101",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391894"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0xd2f243a4e0311950c11122851179edb04c5d4471",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfda745fe8b8bfcbb5c4f014ff09647f348010bd5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391899"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

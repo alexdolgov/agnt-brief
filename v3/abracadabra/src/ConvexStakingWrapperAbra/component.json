@@ -1,0 +1,99 @@
+{
+  "component": "ConvexStakingWrapperAbra",
+  "main_contract": "ConvexStakingWrapperAbra",
+  "source_entry_count": 19,
+  "source_file_count": 19,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/wrappers/ConvexStakingWrapperAbra.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-df14bb57ec85-ConvexStakingWrapperAbra.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/wrappers/ConvexStakingWrapper.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-e06a2da2e4f3-ConvexStakingWrapper.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/ITokenWrapper.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-73e74222138a-ITokenWrapper.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IRewardStaking.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-fc7f740b037e-IRewardStaking.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IRewardHook.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-b00a024e4871-IRewardHook.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IOwner.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-931e9c10dd59-IOwner.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/ICvx.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-07c6fad8d021-ICvx.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IConvexDeposits.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-573ca472d1b2-IConvexDeposits.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/ICauldron.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-14a648cacc6c-ICauldron.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IBooster.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-e9101550363b-IBooster.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IBentoBox.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-455fd356d7d5-IBentoBox.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/CvxMining.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-fdeb887503d3-CvxMining.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ConvexStakingWrapperAbra\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4985cc58c9004772c225aec9c36cc9a56ecc8c20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9447c1413da928af354a114954bfc9e6114c5646",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

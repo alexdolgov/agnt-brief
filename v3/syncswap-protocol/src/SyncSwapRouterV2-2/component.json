@@ -1,0 +1,28 @@
+{
+  "component": "SyncSwapRouterV2-2",
+  "main_contract": "SyncSwapRouterV2",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SyncSwapRouterV2-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0xfd541d0e2773a189450a70f06bc7edd3c1dc9115",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400047"
+    }
+  ]
+}

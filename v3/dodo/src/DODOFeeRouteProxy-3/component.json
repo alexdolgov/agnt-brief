@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/DODOFeeRouteProxy-3\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0x70b9c57e1ff24761c1c3ced57ddae9a3f3570698",
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x200d866edf41070de251ef92715a6ea825a5eb80",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393980"
+      "logic_topography_row_id": "393954"
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x2933c0374089d7d98ba0c71c5e02e1a0e09debee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393955"
     }
   ]
 }

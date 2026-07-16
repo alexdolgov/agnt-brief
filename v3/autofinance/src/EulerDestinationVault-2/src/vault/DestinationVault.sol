@@ -122,8 +122,8 @@ abstract contract DestinationVault is SecurityBase, SystemComponent, ERC20, Init
         Errors.verifyNotZero(address(rewarder_), "rewarder_");
         Errors.verifyNotZero(address(incentiveCalculator_), "incentiveCalculator_");
 
-        _name = string.concat("AUTOfinance-", baseAsset_.name(), "-", underlyer_.name());
-        _symbol = string.concat("auto-", baseAsset_.symbol(), "-", underlyer_.symbol());
+        _name = string.concat("Tokemak-", baseAsset_.name(), "-", underlyer_.name());
+        _symbol = string.concat("toke-", baseAsset_.symbol(), "-", underlyer_.symbol());
         _underlyingDecimals = underlyer_.decimals();
 
         ONE = 10 ** _underlyingDecimals;
@@ -139,6 +139,7 @@ abstract contract DestinationVault is SecurityBase, SystemComponent, ERC20, Init
         _incentiveCalculator = incentiveCalculator_;
 
         // Setup the tracked tokens
+        _addTrackedToken(address(baseAsset_));
         _addTrackedToken(address(underlyer_));
         uint256 attLen = additionalTrackedTokens_.length;
         for (uint256 i = 0; i < attLen; ++i) {

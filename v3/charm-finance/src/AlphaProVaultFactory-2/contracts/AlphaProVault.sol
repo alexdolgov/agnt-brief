@@ -126,7 +126,7 @@ contract AlphaProVault is
     event UpdateTwapDuration(uint32 twapDuration);
     event UpdateMaxTotalSupply(uint256 maxTotalSupply);
 
-    IKodiakPool public override pool;
+    IUniswapV3Pool public override pool;
     IERC20 public token0;
     IERC20 public token1;
     AlphaProVaultFactory public factory;
@@ -171,7 +171,7 @@ contract AlphaProVault is
         __ERC20_init(_params.name, _params.symbol);
         __ReentrancyGuard_init();
 
-        pool = IKodiakPool(_params.pool);
+        pool = IUniswapV3Pool(_params.pool);
         token0 = IERC20(pool.token0());
         token1 = IERC20(pool.token1());
 

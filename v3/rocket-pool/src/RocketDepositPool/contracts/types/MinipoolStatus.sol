@@ -1,32 +1,30 @@
 /**
-   *       .
-   *      / \
-   *     |.'.|
-   *     |'.'|
-   *   ,'|   |'.
-   *  |,-'-|-'-.|
-   *   __|_| |         _        _      _____           _
-   *  | ___ \|        | |      | |    | ___ \         | |
-   *  | |_/ /|__   ___| | _____| |_   | |_/ /__   ___ | |
-   *  |    // _ \ / __| |/ / _ \ __|  |  __/ _ \ / _ \| |
-   *  | |\ \ (_) | (__|   <  __/ |_   | | | (_) | (_) | |
-   *  \_| \_\___/ \___|_|\_\___|\__|  \_|  \___/ \___/|_|
-   * +---------------------------------------------------+
-   * |    DECENTRALISED STAKING PROTOCOL FOR ETHEREUM    |
-   * +---------------------------------------------------+
-   *
-   *  Rocket Pool is a first-of-its-kind Ethereum staking pool protocol, designed to
-   *  be community-owned, decentralised, permissionless, & trustless.
-   *
-   *  For more information about Rocket Pool, visit https://rocketpool.net
-   *
-   *  Authored by the Rocket Pool Core Team
-   *  Contributors: https://github.com/rocket-pool/rocketpool/graphs/contributors
-   *  A special thanks to the Rocket Pool community for all their contributions.
-   *
-   */
+  *       .
+  *      / \
+  *     |.'.|
+  *     |'.'|
+  *   ,'|   |`.
+  *  |,-'-|-'-.|
+  *   __|_| |         _        _      _____           _
+  *  | ___ \|        | |      | |    | ___ \         | |
+  *  | |_/ /|__   ___| | _____| |_   | |_/ /__   ___ | |
+  *  |    // _ \ / __| |/ / _ \ __|  |  __/ _ \ / _ \| |
+  *  | |\ \ (_) | (__|   <  __/ |_   | | | (_) | (_) | |
+  *  \_| \_\___/ \___|_|\_\___|\__|  \_|  \___/ \___/|_|
+  * +---------------------------------------------------+
+  * |  DECENTRALISED STAKING PROTOCOL FOR ETHEREUM 2.0  |
+  * +---------------------------------------------------+
+  *
+  *  Rocket Pool is a first-of-its-kind ETH2 Proof of Stake protocol, designed to be community owned,
+  *  decentralised, trustless and compatible with staking in Ethereum 2.0.
+  *
+  *  For more information about Rocket Pool, visit https://rocketpool.net
+  *
+  *  Authors: David Rugendyke, Jake Pospischil, Kane Wallmann, Darren Langley, Joe Clapis, Nick Doherty
+  *
+  */
 
-pragma solidity >0.5.0 <0.9.0;
+pragma solidity 0.7.6;
 
 // SPDX-License-Identifier: GPL-3.0-only
 
@@ -36,6 +34,6 @@ enum MinipoolStatus {
     Initialised,    // The minipool has been initialised and is awaiting a deposit of user ETH
     Prelaunch,      // The minipool has enough ETH to begin staking and is awaiting launch by the node operator
     Staking,        // The minipool is currently staking
-    Withdrawable,   // NO LONGER USED
+    Withdrawable,   // The minipool has become withdrawable on the beacon chain and can be withdrawn from by the node operator
     Dissolved       // The minipool has been dissolved and its user deposited ETH has been returned to the deposit pool
 }

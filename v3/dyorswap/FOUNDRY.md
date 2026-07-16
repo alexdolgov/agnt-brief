@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/DYORRouter"
+forge build --root "src/DyorPumpToken"
 ```
 
 ## Build every component

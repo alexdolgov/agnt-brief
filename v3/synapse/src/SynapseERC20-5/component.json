@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/SynapseERC20-5\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -43,6 +43,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "400114"
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0xe3c82a836ec85311a433fbd9486efaf4b1afbf48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

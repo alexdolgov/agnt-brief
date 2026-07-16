@@ -1,0 +1,28 @@
+{
+  "component": "ExchangerWithVirtualSynth-2",
+  "main_contract": "ExchangerWithVirtualSynth",
+  "source_entry_count": 5,
+  "source_file_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ExchangerWithVirtualSynth-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x585fd19eba8f1a81f37c5eb322fd4b8d911367e8",
+      "is_proxy": true,
+      "implementation_address": "0x84d626b2bb4d0f064067e4bf80fce7055d8f3e7b",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

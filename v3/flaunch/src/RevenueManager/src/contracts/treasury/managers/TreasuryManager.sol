@@ -8,8 +8,6 @@ import {PoolId} from '@uniswap/v4-core/src/types/PoolId.sol';
 import {ProtocolRoles} from '@flaunch/libraries/ProtocolRoles.sol';
 import {TreasuryManagerFactory} from '@flaunch/treasury/managers/TreasuryManagerFactory.sol';
 
-import {IFeeEscrow} from '@flaunch-interfaces/IFeeEscrow.sol';
-import {IFeeEscrowRegistry} from '@flaunch-interfaces/IFeeEscrowRegistry.sol';
 import {ITreasuryManager} from '@flaunch-interfaces/ITreasuryManager.sol';
 import {IManagerPermissions} from '@flaunch-interfaces/IManagerPermissions.sol';
 
@@ -45,9 +43,6 @@ abstract contract TreasuryManager is ITreasuryManager {
     /// The {TreasuryManagerFactory} that will launch this implementation
     TreasuryManagerFactory public immutable treasuryManagerFactory;
 
-    /// The {FeeEscrowRegistry} that will be used to withdraw fees
-    IFeeEscrowRegistry public immutable feeEscrowRegistry;
-
     /// The owner of the tokens that are depositted
     address public managerOwner;
 
@@ -62,8 +57,7 @@ abstract contract TreasuryManager is ITreasuryManager {
      *
      * @param _treasuryManagerFactory The {TreasuryManagerFactory} that will launch this implementation
      */
-    constructor (address _treasuryManagerFactory, address _feeEscrowRegistry) {
-        feeEscrowRegistry = IFeeEscrowRegistry(_feeEscrowRegistry);
+    constructor (address _treasuryManagerFactory) {
         treasuryManagerFactory = TreasuryManagerFactory(_treasuryManagerFactory);
     }
 
@@ -243,19 +237,6 @@ abstract contract TreasuryManager is ITreasuryManager {
      */
     function _getFlaunchTokenPoolId(FlaunchToken calldata _flaunchToken) internal view returns (PoolId) {
         return _flaunchToken.flaunch.positionManager().poolKey(_flaunchToken.flaunch.memecoin(_flaunchToken.tokenId)).toId();
-    }
-
-    /**
-     * Withdraws fees from all known sources.
-     *
-     * @param _recipient The recipient of the fees
-     * @param _unwrap If we want to unwrap the balance from flETH into ETH
-     */
-    function _withdrawAllFees(address _recipient, bool _unwrap) internal {
-        address[] memory feeEscrows = feeEscrowRegistry.feeEscrows();
-        for (uint i; i < feeEscrows.length; ++i) {
-            IFeeEscrow(feeEscrows[i]).withdrawFees(_recipient, _unwrap);
-        }
     }
 
     /**

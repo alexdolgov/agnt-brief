@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/camToken\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 4,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x156f6fad99f06088261a2497111887c21a1cb640",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "polygon",
       "chain_id": 137,
@@ -23,6 +33,26 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "398161"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x50279ab978f67e854f1d90850497a9cca9e80d4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6956212fe219abf8afefe7fc0d6f22d2c3c271ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "polygon",
@@ -47,12 +77,32 @@
     {
       "chain": "polygon",
       "chain_id": 137,
+      "address": "0xbe54ad35cda00f88f745593c92440698b68f83a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
       "address": "0xe6c23289ba5a9f0ef31b8eb36241d5c800889b7b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "398194"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xf10a76884b098bc06454a0389d1df5d769db30fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

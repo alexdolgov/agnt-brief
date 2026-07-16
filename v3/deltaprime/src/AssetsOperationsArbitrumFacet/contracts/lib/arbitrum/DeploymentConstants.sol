@@ -28,6 +28,16 @@ library DeploymentConstants {
 
     address private constant _ADDRESS_PROVIDER = 0x6Aa0Fe94731aDD419897f5783712eBc13E8F3982;
 
+    address private constant _FEES_TREASURY_ADDREESS = 0x764a9756994f4E6cd9358a6FcD924d566fC2e666;
+
+    address private constant _STABILITY_POOL_ADDREESS = 0x6B9836D18978a2e865A935F12F4f958317DA4619;
+
+    address private constant _GMX_DATA_STORE_ADDRESS = 0xFD70de6b91282D8017aA4E741e9Ae325CAb992d8;
+    
+    address private constant _GMX_READER_ADDRESS = 0x470fbC46bcC0f16532691Df360A07d8Bf5ee0789;
+
+    address private constant _GLV_READER_ADDRESS = 0x2C670A23f1E798184647288072e84054938B5497;
+
     //implementation-specific
 
     function getPercentagePrecision() internal pure returns (uint256) {
@@ -42,6 +52,18 @@ library DeploymentConstants {
 
     function getNativeToken() internal pure returns (address payable) {
         return payable(_NATIVE_ADDRESS);
+    }
+
+    function getGmxDataStoreAddress() internal pure returns (address) {
+        return _GMX_DATA_STORE_ADDRESS;
+    }
+    
+    function getGmxReaderAddress() internal pure returns (address) {
+        return _GMX_READER_ADDRESS;
+    }
+
+    function getGlvReaderAddress() internal pure returns (address) {
+        return _GLV_READER_ADDRESS;
     }
 
     //deployment-specific
@@ -60,6 +82,14 @@ library DeploymentConstants {
 
     function getAddressProvider() internal pure returns (address) {
         return _ADDRESS_PROVIDER;
+    }
+
+    function getTreasuryAddress() internal pure returns (address) {
+        return _FEES_TREASURY_ADDREESS;
+    }
+
+    function getStabilityPoolAddress() internal pure returns (address) {
+        return _STABILITY_POOL_ADDREESS;
     }
 
     /**

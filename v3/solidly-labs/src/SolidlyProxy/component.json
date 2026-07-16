@@ -11,20 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/SolidlyLabs/Solidly-Audits/blob/main/Solidly%20V2/audit_solidly.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x77730ed992d286c53f3a0838232c3957daeaaf73",
+      "address": "0x777172d858dc1599914a1c4c6c9fc48c99a60990",
       "is_proxy": true,
-      "implementation_address": "0x306dd1d3d2637c13cc59686889c0b9550c13c8bb",
-      "liveness": "live",
+      "implementation_address": "0x04ec553dc65312c85cd914927b5f45112f8fe37c",
+      "liveness": "unknown",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399069"
+      "logic_topography_row_id": "399068"
     }
   ]
 }

@@ -17,22 +17,22 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x63fad99705a255fe2d500e498dbb3a9ae5aa1ee8",
+      "address": "0x3fd3dabb9f9480621c8a111603d3ba70f17550bc",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395437"
+      "logic_topography_row_id": "395430"
     },
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x79ef6d28c41e47a588e2f2ffb4140eb6d952aec4",
+      "address": "0x48ba574edf0bc4e2e40b529863aaa6a67c264e7c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395438"
+      "logic_topography_row_id": "395432"
     }
   ]
 }

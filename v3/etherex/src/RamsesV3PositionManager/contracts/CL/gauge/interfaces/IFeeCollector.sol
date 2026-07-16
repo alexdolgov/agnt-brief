@@ -34,10 +34,6 @@ interface IFeeCollector {
     /// @param newTreasury The new address to set as the treasury.
     function setTreasury(address newTreasury) external;
 
-    /// @notice Sets the voter contract address to a new value.
-    /// @param _newVoter The new voter contract address.
-    function setVoter(address _newVoter) external;
-
     /// @notice Sets the value of treasury fees to a new amount.
     /// @param _treasuryFees The new amount of treasury fees to be set.
     function setTreasuryFees(uint256 _treasuryFees) external;

@@ -6,8 +6,6 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 interface IICHIVault is IERC20 {
     function ichiVaultFactory() external view returns (address);
 
-    function owner() external view returns (address);
-
     function pool() external view returns (address);
 
     function token0() external view returns (address);
@@ -40,8 +38,6 @@ interface IICHIVault is IERC20 {
 
     function hysteresis() external view returns (uint256);
 
-    function currentTick() external view returns (int24);
-    
     function getTotalAmounts() external view returns (uint256, uint256);
 
     function deposit(uint256, uint256, address) external returns (uint256);

@@ -1,18 +1,50 @@
 # dolomite — deployments
 
-102 verified deployment(s) across 62 component(s).
+137 verified deployment(s) across 83 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x0572e554784ea93312d18408aef2223431bed4ec` | IsolationModeTraderProxy | proxy | live | no |
+| arbitrum | `0x0a52bcb532f59f6a37a9d3b5bc9ffd47e461d995` | RegistryProxy-3 | proxy | live | no |
+| arbitrum | `0x106fda10c64ffced99737b942ff7fc08a5ed0200` | IsolationModeTraderProxy | proxy | live | no |
+| arbitrum | `0x14c60cb8301e879dfb9eecbebc013353b7e33012` | JonesUSDCV2IsolationModeVaultFactory | impl | live | no |
+| arbitrum | `0x18cb14564fbb015bd3439220d177799355abc0e0` | GmxV2IsolationModeVaultFactory-4 | impl | live | no |
+| arbitrum | `0x1beed3b7d1237b7773b5c4c249933e3ca5e027c1` | GmxV2IsolationModeVaultFactory | impl | live | no |
+| arbitrum | `0x1d9e10b161ae54feabe1e3f71f658cac3468e3c3` | ARBIsolationModeVaultFactory | impl | live | no |
+| arbitrum | `0x1e8e8b7a2f827b3bc12b00ee402145061b7050ef` | GmxV2IsolationModeVaultFactory-2 | impl | live | no |
+| arbitrum | `0x1ebb1c7023addbb2b6e30e6f4c8d4a4440bfd412` | GmxV2IsolationModeVaultFactory | impl | live | no |
+| arbitrum | `0x20d51cb520c4622dcc3d7e35003dbab07d547e7e` | GmxV2IsolationModeVaultFactory-5 | impl | live | no |
+| arbitrum | `0x24c9121c75c099b38d40020872b8a0d2c27c614d` | GmxV2IsolationModeVaultFactory | impl | live | no |
+| arbitrum | `0x2b9d148fabcaa522015492d205cad9f2b4852758` | IsolationModeTraderProxy | proxy | live | no |
+| arbitrum | `0x2c799166c9f0dbf9efc5004cbce4c5a37fa39329` | GmxV2IsolationModeVaultFactory-2 | impl | live | no |
+| arbitrum | `0x2d165a76dd3e552df3860789331ab73c5a3d7f92` | GmxV2IsolationModeVaultFactory-3 | impl | live | no |
+| arbitrum | `0x3338384dca79f2cc3d33611b257f904af3a5cfbe` | IsolationModeTraderProxy | proxy | live | no |
+| arbitrum | `0x34df4e8062a8c8ae97e3382b452bd7bf60542698` | GLPWrappedTokenUserVaultFactory | impl | live | no |
 | arbitrum | `0x38e49a617305101216ec6306e3a18065d14bf3a7` | BorrowPositionProxyV2-3 | impl | live | no |
+| arbitrum | `0x505582242757f16d72f8c4462a616e388ca1b074` | GmxV2IsolationModeVaultFactory-2 | impl | live | no |
+| arbitrum | `0x5c99f6cf6069698d234d50bf69ebd2f53e45ed1c` | GmxV2IsolationModeVaultFactory | impl | live | no |
 | arbitrum | `0x66cd7d0cc677f42f6662622c60a5e60ef573db67` | RewardsDistributor | impl | live | no |
 | arbitrum | `0x6727fe07ff5dce46f34d20fb1f9d62edda73cfdc` | IERC20Detailed | impl | live | yes |
 | arbitrum | `0x6bd780e7fdf01d77e4d475c821f1e7ae05409072` | DolomiteMargin-3 | impl | live | no |
+| arbitrum | `0x6dbd962b4f62d18f756b5de57425574c4b8228d6` | RegistryProxy-4 | proxy | live | no |
+| arbitrum | `0x71fcbbd889594639ea29a859b84265e41d1157c4` | IsolationModeTraderProxy | proxy | live | no |
 | arbitrum | `0x76ac5542ee033a15f78d1f8b4ad48af618a33e44` | IsolationModeFreezableLiquidatorProxy-3 | impl | live | no |
+| arbitrum | `0x77a7dc42e1591575166d2a0b98e25dac7b311317` | IsolationModeTraderProxy-3 | proxy | live | no |
+| arbitrum | `0x9fa142853af93d0cc3af986c27688d54ce61ca8f` | DepositWithdrawalProxy-2 | impl | live | no |
+| arbitrum | `0xa1b50f27456fc53b187dc1dcedd636e976af63e5` | IsolationModeTraderProxy | proxy | live | no |
 | arbitrum | `0xa8f7e7a361de6a2172fcb2acce68bd21597599f7` | CREATE3Factory | impl | live | no |
-| arbitrum | `0xadb9d68c613df4aa363b42161e1282117c7b9594` | DepositWithdrawalProxy-2 | impl | live | no |
+| arbitrum | `0xa9b377b97395c4031750ce8e9397c00c577f6c6d` | USDMRouter | impl | live | no |
+| arbitrum | `0xadb9d68c613df4aa363b42161e1282117c7b9594` | DepositWithdrawalProxy-3 | impl | live | no |
 | arbitrum | `0xb02808f5db0e6926e00af4971abdf1da6c7db34e` | ChaosLabsPriceOracleV3 | impl | live | no |
+| arbitrum | `0xb15bbbfcff6c411410c66642306d1ffa7ecec4d8` | GmxV2IsolationModeVaultFactory-3 | impl | live | no |
+| arbitrum | `0xc587646f67b38739006ed0200e2e0a26fdb01c9b` | GmxV2IsolationModeVaultFactory | impl | live | no |
+| arbitrum | `0xcbed801b4162bf2a19b06968663438b5165a6a93` | OARB | impl | live | no |
+| arbitrum | `0xd73cfb3f18dd39566374828c549cd67ad9953e66` | IsolationModeTraderProxy-2 | impl | live | no |
+| arbitrum | `0xd8f9c59176ae25414fc4180f6433fc45b0cbb632` | DolomiteAmmRouterProxy | impl | live | no |
+| arbitrum | `0xdfdbbd3b6d3c93e539e57f095ab68bf359f0d83c` | IsolationModeTraderProxy-2 | proxy | live | no |
 | arbitrum | `0xe43638797513ef7a6d326a95e8647d86d2f5a099` | BorrowPositionProxy | impl | live | no |
+| arbitrum | `0xec0f08bc015a0d0fba1df0b8b11d4779f5a04326` | UpgradeableProxy-4 | proxy | live | no |
+| arbitrum | `0xecd64fb5e83b40ab72fee9c1d0c3d1463ff86034` | IsolationModeTraderProxy-2 | proxy | live | no |
 | arbitrum | `0xf579b345cda0860668b857de10abd62442133d0f` | RouterProxy | proxy | live | no |
 | arbitrum | `0xf8b2c637a68cf6a17b1df9f8992eebeff63d2dff` | RouterProxy | proxy | live | no |
 | base | `0x07c28e60b28c98e09f5b69c9c473fe19062624f8` | TransferProxy | impl | live | no |
@@ -50,7 +82,7 @@
 | chain-80094 | `0x54267e603646648e623a7a3c21dbbd4cd968a6f0` | VeArt | impl | live | no |
 | chain-80094 | `0x67567fce98a44745820069c37c395426f1c30ba6` | BorrowPositionProxyV1 | impl | live | no |
 | chain-80094 | `0x6d40138c99f6d9116f738f44a0e6751a42232486` | RegistryProxy | proxy | live | no |
-| chain-80094 | `0x79e6e932bf6686a4d357d7821e6e08835ba8a026` | RegistryProxy-3 | proxy | live | no |
+| chain-80094 | `0x79e6e932bf6686a4d357d7821e6e08835ba8a026` | RegistryProxy-5 | proxy | live | no |
 | chain-80094 | `0x7b61cba306cfdb02493b94757143132b1b72bc6b` | RouterProxy-2 | proxy | live | no |
 | chain-80094 | `0x7efd088ae500598a19a242d6d48b9f7e0d061176` | UpgradeableProxy | proxy | live | no |
 | chain-80094 | `0x8d178ff41f94ae761325451529750166d35c8870` | IsolationModeFreezableLiquidatorProxy | impl | live | no |
@@ -65,7 +97,7 @@
 | chain-80094 | `0xbd225c09e4b032e41d5e8aea5f81efff45f20f7b` | UpgradeableProxy | proxy | live | no |
 | chain-80094 | `0xc06271eb97d960f4034ddf953e16271ccb2b10bd` | BorrowPositionProxyV2 | impl | live | no |
 | chain-80094 | `0xcb86b75ee6133d179a12d550b09fb3cdb1e141d4` | UpgradeableProxy-2 | proxy | live | no |
-| chain-80094 | `0xd6a31b6aea4d26a19bf479b5032d9ddc481187e6` | DepositWithdrawalProxy-3 | impl | live | no |
+| chain-80094 | `0xd6a31b6aea4d26a19bf479b5032d9ddc481187e6` | DepositWithdrawalProxy-4 | impl | live | no |
 | chain-80094 | `0xd82100524392c7dbdd7502f136a226c8a4c56cfa` | LiquidatorAssetRegistry | impl | live | no |
 | chain-80094 | `0xd88f473832b0403c7736ef237af5aff8759b99ef` | UpgradeableProxy | proxy | live | no |
 | chain-80094 | `0xdb168cd1bcb63304991fc6e2013d0d87ddbf99d3` | LiquidatorProxyV1 | impl | live | no |
@@ -94,6 +126,7 @@
 | ethereum | `0xc06271eb97d960f4034ddf953e16271ccb2b10bd` | BorrowPositionProxyV2-2 | impl | live | no |
 | ethereum | `0xd6a31b6aea4d26a19bf479b5032d9ddc481187e6` | DepositWithdrawalProxy | impl | live | no |
 | ethereum | `0xd82100524392c7dbdd7502f136a226c8a4c56cfa` | LiquidatorAssetRegistry-2 | impl | live | no |
+| ethereum | `0xda5e1988097297dcdc1f90d4dfe7909e847cbef6` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xdb168cd1bcb63304991fc6e2013d0d87ddbf99d3` | LiquidatorProxyV1-2 | impl | live | no |
 | ethereum | `0xe09f85b284c177c8325c5ccaeae30a14494cdd45` | RedstonePriceOracleV3-2 | impl | live | no |
 | ethereum | `0xf579b345cda0860668b857de10abd62442133d0f` | RouterProxy-3 | proxy | live | no |
@@ -101,6 +134,8 @@
 | ethereum | `0xfee366ceca2472b99d0a501b6b3d01351c24daae` | RegistryProxy-2 | impl | live | no |
 | mantle | `0x1506f80d2fd5fbef2424573ec86e5481c972b99a` | LiquidatorProxyV5 | impl | live | no |
 | mantle | `0x7b61cba306cfdb02493b94757143132b1b72bc6b` | RouterProxy-2 | impl | live | no |
+| mantle | `0x828f34333c4c5456db9506af2d3c677359542811` | AsyncIsolationModeWrapperTraderImpl | impl | live | no |
+| mantle | `0x836b557cf9ef29fcf49c776841191782df34e4e5` | UpgradeableProxy-3 | impl | live | no |
 | mantle | `0x97a08604a56f16947a4a956efec2ef223364b733` | BorrowPositionProxyV1-3 | impl | live | no |
 | mantle | `0xa8f7e7a361de6a2172fcb2acce68bd21597599f7` | CREATE3Factory | impl | live | no |
 | mantle | `0xe6ef4f0b2455bab92ce7cc78e35324ab58917de8` | DolomiteMargin-2 | impl | live | no |

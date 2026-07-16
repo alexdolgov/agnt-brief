@@ -1,9 +1,65 @@
 # cap — deployments
 
-3 verified deployment(s) across 3 component(s).
+59 verified deployment(s) across 59 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| ethereum | `0x019697e7832dba533c320c0e2a36faa2da958de9` | EthereumPriceFeedWbtcbtcWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x031b51bed47543aa87d2f74ab3b1fcd606c99b24` | CapToken | impl | unknown | no |
+| ethereum | `0x041a85430c75cb8cfc9cbaa59166ff9e575f33d7` | EthereumPriceFeedStrcWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x068083069ed92da4c5291dba52d8912abfcc5523` | DSToken | impl | unknown | no |
+| ethereum | `0x0882477e7895bdc5cea7cb1552ed914ab157fe56` | FiatTokenV1 | impl | unknown | no |
+| ethereum | `0x09639692ce6ff12a06ca3ae9a24b3aae4cd80dc8` | EthereumPriceFeedUsdxWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x09ba943f3b38e0f28e8909a00f3b58135dcd5b06` | EthereumPriceFeedNgiplusFundamentalWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x09f9a127fba172c41d8c29e49b3c1326d2eb577e` | EthereumPriceFeedEthfiWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x0ad237e4441ca07691c2deec716061881eed8eed` | VaultComposerSync | impl | unknown | no |
 | ethereum | `0x0b92300c8494833e504ad7d36a301ea80dbbae2e` | CapSymbioticVaultFactory | impl | live | no |
+| ethereum | `0x105eac28b82b872a8b10218bd237a4c097022021` | EthereumPriceFeedAvltFundamentalusdWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x14449cc3185dec0421c3cb37074215f1aacb97f9` | EthereumMergedAdapterWithRoundsSpkccNavV1 | impl | unknown | no |
+| ethereum | `0x14ffc56495372e698b9642d638a7702e0f04031a` | FixedPriceOracle | impl | unknown | no |
+| ethereum | `0x1e44d0c6792a7eccfaf1a759202ff80f7d3dfbef` | LimitModule | impl | unknown | no |
+| ethereum | `0x243507c8c114618d7c8ad94b51118db7b4e32ece` | EthereumPriceFeedUsdtbFundamentalWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x24edd61cda334bff871a80deb135073a7d7a9187` | EthereumPriceFeedBtcWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x2619976127c90de2eea94b368ac5156ef16b7f3f` | EthereumPriceFeedUsstFundamentalWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x29d295409d5a20b2c851df18054d32a442791346` | EthereumPriceFeedEgethFundamentalWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x2d7a6851cc237bc2c7a5a87f78b7ffdb5db92bcb` | EthereumPriceFeedCusdFundamentalWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x32c08836d2873d1ffc958e3c57f3e08852b42a3d` | StakedCap | impl | unknown | no |
+| ethereum | `0x3401daf2b1f150ef0c709cc0283b5f2e55c3df29` | EthereumPriceFeedSusdxEthFundamentalWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x386c93f9f0a8a681c5a3e826063106a2474958ab` | Delegation | impl | unknown | no |
+| ethereum | `0x3d01242aadc0425209544520093e74fd151daeb9` | EthereumPriceFeedXrpWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x3f145fd2cc3ed0806cae3eba73472e5991f5a721` | EthereumPriceFeedSpkWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x3f2c697fcce450a65092eb50ad6f24bd478818de` | EthereumPriceFeedAzndFundamentalWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x40ea33ea76fbe35e9fb422edd175b8c8d84a63cc` | EthereumPriceFeedVbillEthereumDailyAccrualWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x4464a0ae10bd08ab8b758d7ccad124cc21bc6c64` | ValidationHook | impl | unknown | no |
+| ethereum | `0x46a2b84901410a81c6421104a12d6555ca286021` | EthereumMultiFeedAdapterWithoutRoundsV2 | impl | unknown | no |
+| ethereum | `0x4cec96a68cb9a979621b104f3c94884be1a66da0` | EthereumPriceFeedTacusdFundamentalWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x4e202a7e713d00804f9ce397260362bf5e0eaaa8` | EthereumPriceFeedVbillEthereumFundamentalWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x51a855867ae59d6292d5675b654c776147039ba5` | EthereumPriceFeedDlfPublicationTsWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x566c11b5c2201b69c9269fe924e4395873674335` | MasterMinter | impl | unknown | no |
+| ethereum | `0x56b13aa2f3b9fd2a136ab46fc570e3c549191d71` | EthereumPriceFeedXvsWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x573bb572049ff50156e94823bb99920d406e96f8` | EthereumPriceFeedMsusdFundamentalWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x6315aa908c50376d1028412c028aa0629f0355a6` | FiatTokenUtil | impl | unknown | no |
+| ethereum | `0x65ed6a4ac085620ee943c0b15525c4428d23e4db` | EthereumPriceFeedEthWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x6a1c87d11dde3d1d52c24f8ec59b91019f14170d` | EthereumPriceFeedBeraethFundamentalWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x84ad474c33c9ccefb1a2d8b77bdd88bdc592f96b` | EthereumPriceFeedSwellethWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x84c698e69d420aea702e10acc01850ef57978f64` | EthereumPriceFeedWstethWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x87729bc3824f4d4b36abfc034680e77d8c51ba89` | TerminatedContract | impl | unknown | no |
+| ethereum | `0x8868614d7e945ef0b30988b11b63103976edfd6d` | DebtToken | impl | unknown | no |
+| ethereum | `0x89621c11aad52c1535e36eb9dbf43e638e9a3e9a` | EthereumPriceFeedMsyFundamentalusdWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x8cbde23b1416cac07a52591bba744c744d77a91a` | FiatToken | impl | unknown | no |
+| ethereum | `0x8e3386b2f6084eb1b0988070c3d826995bd175c0` | MorphoChainlinkOracleV2 | impl | unknown | no |
+| ethereum | `0x97e3c432d1c7b765d3daeecf45f7b85dc8c0147a` | EthereumPriceFeedStacFundamentalWithoutRoundsV1 | impl | unknown | no |
 | ethereum | `0x99991c6aabba5a096f24f250b73580f5179b9999` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | FiatTokenProxy | proxy | unknown | no |
+| ethereum | `0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf` | FiatTokenV2_1 | impl | unknown | no |
+| ethereum | `0xa99c0ae66dd5131ae155f25f42aceb1d1a00ff6f` | Oracle | impl | unknown | no |
 | ethereum | `0xacc9ce4c15a0f6a2bec49c3f81261d60553d2faf` | CapTokenAdapter | impl | live | yes |
+| ethereum | `0xae02d5be17a23c8fdd0676c6a5f9143d91237979` | EthereumPriceFeedPumpbtcbtcWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0xb0d399e8a11e1c6df00e1fb5698936b5614e9259` | TokenizedStrategy | proxy | unknown | no |
+| ethereum | `0xb60224122830fd6cf5119f548477a190310d2c94` | EthereumPriceFeedRswethFundamentalWithoutRoundsV2 | impl | unknown | no |
+| ethereum | `0xb7277a6e95992041568d9391d09d0122023778a2` | FiatTokenV2 | impl | unknown | no |
+| ethereum | `0xb76bc8fa25af11eb693d21dfd92a7d7f70261611` | CapNotify | impl | unknown | no |
+| ethereum | `0xb90de8357ee4f5c145c159f8e3822ba9b17be4f1` | Harvester | impl | unknown | no |
+| ethereum | `0xc1942a91d84b670d21d424f30fa583f45448e621` | CoverageLens | impl | unknown | no |
+| ethereum | `0xc9e11c60e24bef478cc999fa9fa2d89cc098a86e` | EthereumPriceFeedBfbtcFundamentalWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0xe7f71d6a24ebc391f5ee57b867ed429eb7bd74f4` | EthereumPriceFeedEthxWithoutRoundsV1 | impl | unknown | no |

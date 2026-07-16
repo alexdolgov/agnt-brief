@@ -1,8 +1,8 @@
 {
   "component": "Asset-8",
   "main_contract": "Asset",
-  "source_entry_count": 1,
-  "source_file_count": 1,
+  "source_entry_count": 27,
+  "source_file_count": 27,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "scroll",
-      "chain_id": 534352,
-      "address": "0xe43c1695df76cca4d6079061924d7150fd553c21",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0321d1d769cc1e81ba21a157992b635363740f86",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401060"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

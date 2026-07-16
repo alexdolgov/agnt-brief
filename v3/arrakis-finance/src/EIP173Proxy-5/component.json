@@ -1,0 +1,28 @@
+{
+  "component": "EIP173Proxy-5",
+  "main_contract": "EIP173Proxy",
+  "source_entry_count": 2,
+  "source_file_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EIP173Proxy-5\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x56c5b00bdeb3cb8adf745650599f9adef3c40275",
+      "is_proxy": true,
+      "implementation_address": "0x16bb396868cc76d179533a18ed6b11a1ec8bd49a",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

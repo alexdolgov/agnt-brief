@@ -1,6 +1,7 @@
 # poof-cash — deployments
 
-0 verified deployment(s) across 0 component(s).
+1 verified deployment(s) across 1 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| chain-42220 | `0x00400fcbf0816bebb94654259de7273f4a05c762` | POOF | impl | unknown | no |

@@ -161,7 +161,6 @@ library Errors {
   uint256 internal constant FEE_PCT_GREATER_THAN_ONE = 217;
   uint256 internal constant MIN_AMT_GREATER_THAN_MAX = 218;
   uint256 internal constant MIN_FEE_GREATER_THAN_MIN_AMT = 219;
-  uint256 internal constant SWAP_EXPIRED = 220;
 
   // Token
   uint256 internal constant TRANSFER_NOT_ALLOWED = 300;

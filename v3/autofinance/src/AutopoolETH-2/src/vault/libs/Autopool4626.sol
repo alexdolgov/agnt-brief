@@ -43,9 +43,7 @@ library Autopool4626 {
 
     /// @notice Returns the total amount of the underlying asset that is “managed” by Vault.
     /// @dev Utilizes the "Global" purpose internally
-    function totalAssets(
-        IAutopool.AssetBreakdown storage assetBreakdown
-    ) public view returns (uint256) {
+    function totalAssets(IAutopool.AssetBreakdown storage assetBreakdown) public view returns (uint256) {
         return totalAssets(assetBreakdown, IAutopool.TotalAssetPurpose.Global);
     }
 

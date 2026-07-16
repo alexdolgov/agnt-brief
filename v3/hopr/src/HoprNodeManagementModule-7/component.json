@@ -1,0 +1,154 @@
+{
+  "component": "HoprNodeManagementModule-7",
+  "main_contract": "HoprNodeManagementModule",
+  "source_entry_count": 38,
+  "source_file_count": 38,
+  "source_path_remaps": [
+    {
+      "original_path": "../../vendor/solidity/safe-contracts-1.4.1/contracts/common/Enum.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-50f2fcd5c9cd-Enum.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/contracts/proxy/utils/UUPSUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-f73c48f83330-UUPSUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/contracts/access/OwnableUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-a3c13c7fd7c5-OwnableUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/Multicall.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-b30639202490-Multicall.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/interfaces/IERC1820Registry.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-993bab05bcfd-IERC1820Registry.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-ebc8aa2cef26-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-20ffa507c031-ECDSA.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/solady-v0.1.24/src/utils/EfficientHashLib.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-716e8633f90e-EfficientHashLib.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/interfaces/IERC777Recipient.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-8ff11cbaeb21-IERC777Recipient.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC1822.sol",
+      "exported_path": "__audit_export_path_conflicts__/0023-95e105f6e2a3-draft-IERC1822.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Utils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0024-d43a887ab5e5-ERC1967Utils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/contracts/proxy/utils/Initializable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0025-dab19a737ddc-Initializable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/contracts/utils/ContextUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0026-1d2c49a001e7-ContextUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/utils/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0027-515345c29d18-Context.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0028-742bdd8e88bb-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/utils/introspection/IERC1820Registry.sol",
+      "exported_path": "__audit_export_path_conflicts__/0029-6b407ededbf3-IERC1820Registry.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/token/ERC777/IERC777Recipient.sol",
+      "exported_path": "__audit_export_path_conflicts__/0030-477e46307ecf-IERC777Recipient.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/token/ERC20/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0031-b051e6ea7179-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-4.4.2/contracts/utils/math/SafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0032-2a4d8ab74a5d-SafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0033-889ea6d50b24-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0034-7fa79d8b45c2-Context.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+      "exported_path": "__audit_export_path_conflicts__/0035-fbc9318f85f7-IBeacon.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/interfaces/IERC1967.sol",
+      "exported_path": "__audit_export_path_conflicts__/0036-8b4725fe2cc2-IERC1967.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+      "exported_path": "__audit_export_path_conflicts__/0037-cd4d06606737-StorageSlot.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/Errors.sol",
+      "exported_path": "__audit_export_path_conflicts__/0038-ad46e4f45055-Errors.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HoprNodeManagementModule-7\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x79c3bf06e96a9373765284afb0a35e9529e2b3f2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

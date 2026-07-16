@@ -1,0 +1,799 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.4;
+
+import "./CoreBase.sol";
+import "./interface/ILiveCore.sol";
+import "./libraries/FixedMath.sol";
+import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
+
+/// @title  Azuro internal core managing live conditions and processing bets on them
+contract LiveCore is ILiveCore, CoreBase {
+    uint256 public constant BET_ID_MASK = 1 << 255;
+
+    uint64 public constant ONE = 1e12;
+    uint64 public constant TENTHS1 = 1e11;
+    uint64 public constant TENTHS2 = TENTHS1 * 2;
+    uint64 public constant TENTHS5 = TENTHS1 * 5;
+
+    using FixedMath for *;
+    using SafeCast for uint256;
+
+    uint256 public lastBetId;
+    uint256 public lastBatchId;
+    uint64 public batchMinBlocks;
+    uint64 public batchMaxBlocks;
+
+    //  conditionId -> batchId list
+    mapping(uint256 => uint256[]) public batchIds;
+
+    // conditionId -> resolved batches
+    mapping(uint256 => uint256) public resolvedBatches;
+
+    // batchId => Batch
+    mapping(uint256 => Batch) public batches;
+
+    mapping(uint256 => Bet) public bets;
+    mapping(uint256 => BetGroup) public betGroups;
+
+    AffRewards[] public affRewards;
+
+    modifier onlyAffMaster() {
+        _checkOnlyAffMaster();
+        _;
+    }
+
+    function initialize(address azuroBet_, address lp_)
+        external
+        override(CoreBase, ICoreBase)
+        initializer
+    {
+        __Ownable_init();
+        azuroBet = IAzuroBet(azuroBet_);
+        lp = ILP(lp_);
+        lastBetId = BET_ID_MASK; // set most bit up
+    }
+
+    /**
+     * @notice Oracle: Set `newBatchMinBlocks` and `newBatchMaxBlocks` as thresholds for the number of blocks
+     *         for batch execution.
+     * @param  newBatchMinBlocks the number of blocks that must pass before a batch can be executed manually
+     * @param  newBatchMaxBlocks the number of blocks that must pass before force batch execution
+     */
+    function changeBatchLimits(
+        uint64 newBatchMinBlocks,
+        uint64 newBatchMaxBlocks
+    ) external onlyOracle {
+        if (newBatchMaxBlocks <= newBatchMinBlocks)
+            revert IncorrectBatchLimits();
+        batchMaxBlocks = newBatchMaxBlocks;
+        batchMinBlocks = newBatchMinBlocks;
+        emit BatchLimitsChanged(newBatchMinBlocks, newBatchMaxBlocks);
+    }
+
+    /**
+     * @notice Oracle: See {ICoreBase-createCondition}.
+     */
+    function createCondition(
+        uint256 gameId,
+        uint256 oracleConditionId,
+        uint64[2] calldata odds,
+        uint64[2] calldata outcomes,
+        uint128 reinforcement,
+        uint64 margin
+    ) external override {
+        _startNewBatch(
+            _createCondition(
+                gameId,
+                oracleConditionId,
+                odds,
+                outcomes,
+                reinforcement,
+                margin
+            )
+        );
+    }
+
+    /**
+     * @notice Oracle: Indicate outcome `outcomeWin` as happened in oracle's condition `oracleConditionId`.
+     * @param  oracleConditionId the match or condition ID according to oracle's internal numbering
+     * @param  outcomeWin ID of happened condition's outcome
+     * @param  endsAt the timestamp after which all bets must be rejected
+     */
+    function resolveCondition(
+        uint256 oracleConditionId,
+        uint64 outcomeWin,
+        uint64 endsAt
+    ) external override {
+        _confirmConditionBatches(
+            oracleConditionIds[msg.sender][oracleConditionId],
+            endsAt
+        );
+        _resolveCondition(oracleConditionId, outcomeWin);
+    }
+
+    /**
+     * @notice Liquidity Pool: See {ICoreBase-putBet}.
+     */
+    function putBet(
+        address bettor,
+        uint128 amount,
+        BetData calldata data
+    ) external override onlyLp returns (uint256 betId) {
+        Condition storage condition = _getCondition(data.conditionId);
+        uint256 batchId = _getLastBatchId(data.conditionId);
+        Batch storage batch = _getBatch(batchId);
+
+        _conditionIsRunning(condition);
+
+        uint256 outcomeIndex = _getOutcomeIndex(condition, data.outcomeId);
+
+        // if last batch exec time exceeded -> execute batch and start new
+        if ((block.number - batch.startBlock) > batchMaxBlocks) {
+            executeBatch(data.conditionId);
+            batchId = _getLastBatchId(data.conditionId);
+            batch = _getBatch(batchId);
+        }
+
+        uint64 minOddsRounded = _getMinOddsRounded(data.minOdds);
+
+        if (
+            _calcOdds(condition, condition.virtualFunds, amount, outcomeIndex) <
+            minOddsRounded
+        ) revert SmallOdds();
+        if (amount <= FixedMath.ONE) revert SmallBet();
+
+        betId = ++lastBetId;
+        Bet storage _bet = bets[betId];
+        _bet.bettor = bettor;
+        _bet.amount = amount;
+
+        if (minOddsRounded > batch.oddsRounded[outcomeIndex])
+            batch.oddsRounded[outcomeIndex] = minOddsRounded;
+        batch.outcomeOddsBets[outcomeIndex][minOddsRounded].amount += amount;
+        betGroups[betId] = BetGroup(
+            data.conditionId,
+            batchId,
+            minOddsRounded,
+            uint8(outcomeIndex)
+        );
+
+        emit NewLiveBet(
+            bettor,
+            data.affiliate,
+            data.conditionId,
+            batchId,
+            betId,
+            data.outcomeId,
+            amount,
+            minOddsRounded
+        );
+    }
+
+    /**
+     * @notice Liquidity Pool: Resolve affiliate's contribution to total revenue that is not rewarded yet.
+     * @param  affiliate address indicated as an affiliate when placing bets
+     * @param data livecore affiliate params
+     * @return contribution amount
+     */
+    function resolveAffiliateReward(address affiliate, bytes calldata data)
+        external
+        override(CoreBase, ICoreBase)
+        onlyLp
+        returns (uint256)
+    {
+        LiveAffiliateParams memory decoded = abi.decode(
+            data,
+            (LiveAffiliateParams)
+        );
+
+        if (decoded.rewardId >= affRewards.length) revert IncorrectRewardId();
+        AffRewards storage _affReward = affRewards[decoded.rewardId];
+        if (_affReward.isClaimed[affiliate]) revert AlreadyClaimed();
+
+        bytes32 node = keccak256(abi.encodePacked(affiliate, decoded.share));
+        bool isValidProof = MerkleProof.verify(
+            decoded.merkleProof,
+            _affReward.merkleRoot,
+            node
+        );
+        if (!isValidProof) revert InvalidProof();
+        _affReward.isClaimed[affiliate] = true;
+
+        uint128 prevRewards;
+
+        // if exists previous reward period
+        if (decoded.rewardId > 0)
+            prevRewards = _getAffReward(decoded.rewardId - 1);
+
+        uint128 currentRewards = _affReward.rewards - prevRewards;
+        uint128 claimedAmount = decoded.share.mul(currentRewards).toUint128();
+
+        _affReward.claimed += claimedAmount;
+        if (_affReward.claimed > currentRewards) revert RewardsExceeded();
+
+        return claimedAmount;
+    }
+
+    /**
+     * @notice Liquidity Pool: Resolve bet ID or AzuroBet token type `tokenId` payout for `account`.
+     * @param  account bet (AzuroBet tokens) owner
+     * @param  tokenId bet (AzuroBet token type) ID
+     * @return amount of winnings of the account
+     */
+    function resolvePayout(address account, uint256 tokenId)
+        external
+        override
+        onlyLp
+        returns (uint128)
+    {
+        // passed tokenId
+        if (!_isBetId(tokenId)) return super._resolvePayout(account, tokenId);
+
+        // passed live betId
+        (bool accepted, uint128 payout) = _viewBetPayout(account, tokenId);
+        uint128 amount = bets[tokenId].amount;
+        delete bets[tokenId];
+
+        if (accepted) {
+            BetGroup storage bg = betGroups[tokenId];
+            azuroBet.mint(
+                account,
+                getTokenId(bg.conditionId, bg.outcomeIndex),
+                amount,
+                0
+            );
+        }
+        return payout;
+    }
+
+    /**
+     * @notice Make new coreRewards record and set affiliate merkle root distribution hash
+     * @param merkleRoot - distribution merkle root hash
+     */
+    function setAffRewards(bytes32 merkleRoot) external onlyAffMaster {
+        uint128 prevRewards;
+        uint256 length = affRewards.length;
+
+        if (length > 0) prevRewards = _getAffReward(length - 1);
+
+        uint128 currRewards = lp.coreAffRewards(address(this));
+        uint128 rewards = currRewards - prevRewards;
+        if (rewards == 0) revert NoRewards();
+
+        // set current aff rewards
+        affRewards.push();
+        AffRewards storage currAffRewards = affRewards[length];
+        currAffRewards.merkleRoot = merkleRoot;
+        currAffRewards.rewards = currRewards; // save current aff rewards
+
+        emit AffRewardsSet(length, merkleRoot, rewards);
+    }
+
+    /**
+     * @notice Claim AzuroBet tokens for processed bet `betId`.
+     * @notice The condition the bet was placed for must be already resolved.
+     * @param  betId the bet Id
+     */
+    function claimBetToken(uint256 betId) external {
+        Bet storage bet = bets[betId];
+        if (bet.bettor != msg.sender) revert OnlyBetOwner();
+        if (bet.isClaimed) revert AlreadyClaimed();
+
+        BetGroup storage bg = betGroups[betId];
+        if (_isBetGroupRejected(bg)) revert BetRejected();
+
+        uint256 conditionId = bg.conditionId;
+
+        // must be not in progress
+        ConditionState state = _getCondition(conditionId).state;
+        if (
+            state != ConditionState.CANCELED && state != ConditionState.RESOLVED
+        ) revert ConditionNotFinished();
+
+        uint128 amount = bet.amount;
+        uint8 outcomeIndex = bg.outcomeIndex;
+
+        bet.isClaimed = true;
+        azuroBet.mint(
+            msg.sender,
+            getTokenId(conditionId, outcomeIndex),
+            amount,
+            _getBatch(bg.batchId).batchOdds[outcomeIndex].mul(amount).toUint128()
+        );
+    }
+
+    /**
+     * @notice Get the details of the bet `betId`.
+     * @param  betId live bet Id
+     */
+    function getBetInfo(uint256 betId)
+        external
+        view
+        returns (
+            bool rejected,
+            address bettor,
+            uint128 betAmount,
+            uint64 odds
+        )
+    {
+        BetGroup storage bg = betGroups[betId];
+        Bet storage bet = bets[betId];
+        rejected = _isBetGroupRejected(bg);
+        bettor = bet.bettor;
+        betAmount = bet.amount;
+        odds = _getBatch(bg.batchId).batchOdds[bg.outcomeIndex];
+    }
+
+    /**
+     * @notice Get the current count of batches included to the condition `conditionId`.
+     * @param  conditionId live condition id
+     */
+    function conditionBatchCount(uint256 conditionId)
+        external
+        view
+        returns (uint256)
+    {
+        return batchIds[conditionId].length;
+    }
+
+    /**
+     * @notice Get batch data
+     * @param  batchId live condition batch id
+     */
+    function getBatch(uint256 batchId)
+        external
+        view
+        returns (
+            uint128[2] memory funds,
+            uint128 startBlock,
+            uint64[2] memory batchOdds,
+            uint64 startTime
+        )
+    {
+        Batch storage batch = _getBatch(batchId);
+        return (
+            batch.snapshotFunds,
+            batch.startBlock,
+            batch.batchOdds,
+            batch.startTime
+        );
+    }
+
+    /**
+     * @notice Apply condition's `conditionId` pending bets if the minimal blocks threshold is already passed.
+     */
+    function executeBatch(uint256 conditionId) public {
+        Condition storage condition = _getCondition(conditionId);
+        Batch storage batch = _getBatchByIndex(
+            conditionId,
+            batchIds[conditionId].length - 1
+        );
+
+        if ((block.number - batch.startBlock) < batchMinBlocks)
+            revert MinBlocksNotPassed();
+
+        _conditionIsRunning(condition);
+        _executeBatch(condition, conditionId);
+    }
+
+    /**
+     * @notice Get bet ID or AzuroBet token type `tokenId` payout for `account`.
+     * @param  account bet (AzuroBet tokens) owner
+     * @param  tokenId bet (AzuroBet token type) ID
+     * @return is bet accepted
+     * @return winnings of the account
+     */
+    function viewPayout(address account, uint256 tokenId)
+        public
+        view
+        override(CoreBase, ICoreBase)
+        returns (bool, uint128)
+    {
+        if (!_isBetId(tokenId)) return super.viewPayout(account, tokenId);
+        return _viewBetPayout(account, tokenId);
+    }
+
+    /**
+     * @notice Get rounded `minOdds` value according to rounding stages:
+     * 1-3 by 0.1 , 3-5 by 0.2 , 5-10 by 0.5 , from 10 by 1.0
+     */
+    function _getMinOddsRounded(uint64 minOdds) internal pure returns (uint64) {
+        return
+            minOdds < ONE
+                ? ONE
+                : (
+                    minOdds <= ONE * 3
+                        ? minOdds - (minOdds % TENTHS1)
+                        : (
+                            minOdds <= ONE * 5
+                                ? minOdds - (minOdds % TENTHS2)
+                                : (
+                                    minOdds <= ONE * 10
+                                        ? minOdds - (minOdds % TENTHS5)
+                                        : minOdds - (minOdds % ONE)
+                                )
+                        )
+                );
+    }
+
+    /**
+     * @notice Get next rounded `minOdds` value according to rounding stages:
+     * 1-3 by 0.1 , 3-5 by 0.2 , 5-10 by 0.5 , from 10 by 1.0
+     * used for loop by rounded `minOdds` values
+     */
+    function _getNextMinOdds(uint64 minOdds) internal pure returns (uint64) {
+        return
+            minOdds < ONE
+                ? ONE
+                : (
+                    minOdds <= ONE * 3 - TENTHS1
+                        ? minOdds + TENTHS1
+                        : (
+                            minOdds <= ONE * 5 - TENTHS2
+                                ? minOdds + TENTHS2
+                                : (
+                                    minOdds <= ONE * 10 - TENTHS5
+                                        ? minOdds + TENTHS5
+                                        : minOdds + ONE
+                                )
+                        )
+                );
+    }
+
+    /**
+     * @notice get rewards for some reward period (rewardId)
+     */
+    function _getAffReward(uint256 rewardId) internal view returns (uint128) {
+        return affRewards[rewardId].rewards;
+    }
+
+    /**
+     * @notice Finalize condition's `conditionId` bets that was made before `endsAt`.
+     * @param  conditionId the match or condition ID
+     * @param  endsAt the timestamp after which all bet must be rejected
+     */
+    function _confirmConditionBatches(uint256 conditionId, uint64 endsAt)
+        internal
+    {
+        Condition storage condition = _getCondition(conditionId);
+        uint256[] storage batchIds_ = batchIds[conditionId];
+        // executed batches
+        uint256 executed = batchIds_.length - 1;
+        // get last batch (not executed)
+        Batch storage lastBatch = _getBatchByIndex(conditionId, executed);
+        uint64 startTime = lastBatch.startTime;
+
+        // at current not executed batch, drop not executed batch resolve condition
+        if (endsAt >= startTime) {
+            // correct endsAt to last batch starttime (not executed)
+            condition.endsAt = startTime;
+        } else {
+            // find batch index (by endsAt) in accepted indexes (0 ... executed-1), starting from the index to remove from condition
+            executed = _binarySearch(batchIds_, 0, executed - 1, endsAt);
+
+            // get executed batch
+            lastBatch = _getBatchByIndex(conditionId, executed);
+
+            condition.endsAt = lastBatch.startTime;
+
+            // restore condition funds state from snapShot, if needed
+            _changeFunds(condition, condition.funds, lastBatch.snapshotFunds);
+        }
+        // save resolved (all executed) batches count
+        if (executed > 0) resolvedBatches[conditionId] = executed;
+    }
+
+    /**
+     * @notice calculate odds for both outcomes and returned rejected sign for not passed `minOdds` condition,
+     * used for the batch execution
+     */
+    function _calcBatchOdds(
+        uint64[2] memory initOdds,
+        Condition storage condition,
+        uint128[2] memory initVirtualFunds,
+        uint64 minOdds,
+        uint128[2] memory amounts
+    )
+        internal
+        view
+        returns (uint64[2] memory oddsPair, bool[2] memory rejected)
+    {
+        (oddsPair, rejected) = _calcOddsRejects(
+            condition,
+            initVirtualFunds,
+            minOdds,
+            [false, false], // try as not rejected
+            amounts
+        );
+        // all accepted
+        if (!rejected[0] && !rejected[1]) return (oddsPair, rejected);
+        // all rejected
+        if (rejected[0] && rejected[1]) return (initOdds, rejected);
+        // if combinations of rejects - get odds for only accepted
+        return
+            _calcOddsRejects(
+                condition,
+                initVirtualFunds,
+                minOdds,
+                rejected,
+                amounts
+            );
+    }
+
+    /**
+     * @notice calculate outcome odds for inputed virtual funds, used in _calcOddsRejects()
+     */
+    function _calcOddsPair(
+        Condition storage condition,
+        uint128[2] memory virtualFunds
+    ) internal view returns (uint64[2] memory) {
+        uint256 funds = uint256(virtualFunds[0] + virtualFunds[1]);
+        uint64 margin = condition.margin;
+        return [
+            uint64(
+                CoreTools.marginAdjustedOdds(funds.div(virtualFunds[0]), margin)
+            ),
+            uint64(
+                CoreTools.marginAdjustedOdds(funds.div(virtualFunds[1]), margin)
+            )
+        ];
+    }
+
+    /**
+     * @notice calculate odds for not rejected (inputed) outcomes and returned rejected sign for not passed `minOdds` condition,
+     * used in _calcBatchOdds()
+     */
+    function _calcOddsRejects(
+        Condition storage condition,
+        uint128[2] memory initVirtualFunds,
+        uint64 minOdds,
+        bool[2] memory rejectsInput,
+        uint128[2] memory amounts
+    )
+        internal
+        view
+        returns (uint64[2] memory oddsPair, bool[2] memory rejected)
+    {
+        uint128[2] memory virtualFunds;
+        for (uint8 outcomeIndex = 0; outcomeIndex < 2; outcomeIndex++) {
+            virtualFunds[outcomeIndex] = initVirtualFunds[outcomeIndex];
+            if (!rejectsInput[outcomeIndex])
+                virtualFunds[outcomeIndex] += amounts[outcomeIndex];
+        }
+        oddsPair = _calcOddsPair(condition, virtualFunds);
+        rejected = [(oddsPair[0] < minOdds), (oddsPair[1] < minOdds)];
+    }
+
+    /**
+     * @notice Apply current batch pending bets, according bet's minodds criteria
+     */
+    function _executeBatch(Condition storage condition, uint256 conditionId)
+        internal
+    {
+        uint256 batchId = _getLastBatchId(conditionId);
+        Batch storage batch = _getBatch(batchId);
+        uint128[2] memory newVirtualFunds = condition.virtualFunds;
+        uint64[2] memory batchOdds_;
+        uint256 maxOdds = Math.max(batch.oddsRounded[0], batch.oddsRounded[1]);
+        uint64 minOdds;
+        uint64[2] memory odds;
+        uint128[2] memory amounts;
+        bool[2] memory rejects;
+
+        uint128[2] memory batchAmounts; // bets by outcome
+        uint128[2] memory batchPayouts; // payouts by outcome
+
+        for (
+            minOdds = ONE;
+            minOdds <= maxOdds;
+            minOdds = _getNextMinOdds(minOdds)
+        ) {
+            for (uint8 outcomeIndex = 0; outcomeIndex < 2; outcomeIndex++) {
+                amounts[outcomeIndex] = batch
+                .outcomeOddsBets[outcomeIndex][minOdds].amount;
+            }
+            (odds, rejects) = _calcBatchOdds(
+                batchOdds_,
+                condition,
+                newVirtualFunds,
+                minOdds,
+                amounts
+            );
+
+            if (!rejects[0]) newVirtualFunds[0] += amounts[0];
+            if (!rejects[1]) newVirtualFunds[1] += amounts[1];
+
+            for (uint8 outcomeIndex = 0; outcomeIndex < 2; outcomeIndex++) {
+                uint128 _amount = amounts[outcomeIndex];
+                if (_amount == 0) continue;
+
+                if (!rejects[outcomeIndex]) {
+                    // save accepted bets amounts
+                    uint128 deltaPayout = uint128(
+                        odds[outcomeIndex].mul(_amount)
+                    ) - _amount;
+                    newVirtualFunds[1 - outcomeIndex] -= deltaPayout;
+                    batchAmounts[outcomeIndex] += _amount;
+                    batchPayouts[outcomeIndex] += deltaPayout;
+                } else {
+                    batch
+                    .outcomeOddsBets[outcomeIndex][minOdds].rejected = true;
+                }
+            }
+            batchOdds_ = odds;
+        }
+
+        // save batch odds
+        batch.batchOdds = batchOdds_;
+        condition.virtualFunds = newVirtualFunds;
+
+        // changing funds due accepted bets
+        uint128[2] memory funds = condition.funds;
+
+        // funds snapshot
+        batch.snapshotFunds = funds;
+
+        _changeFunds(
+            condition,
+            funds,
+            [
+                funds[0] + batchAmounts[0] - batchPayouts[1],
+                funds[1] + batchAmounts[1] - batchPayouts[0]
+            ]
+        );
+        _startNewBatch(conditionId);
+    }
+
+    /**
+     * @notice Start new batch for condition `conditionId`.
+     */
+    function _startNewBatch(uint256 conditionId) internal {
+        uint256 _lastBatchId = ++lastBatchId;
+        Batch storage batch = batches[_lastBatchId];
+        batchIds[conditionId].push(_lastBatchId);
+        batch.startBlock = uint128(block.number);
+        batch.startTime = uint64(block.timestamp);
+    }
+
+    /**
+     * @notice Find the last batch ended before `endsAt`.
+     * @param  batchIds_ batches ids
+     * @param  start left bound of the search
+     * @param  stop right bound of the search
+     * @param  endsAt target timestamp
+     */
+    function _binarySearch(
+        uint256[] storage batchIds_,
+        uint256 start,
+        uint256 stop,
+        uint64 endsAt
+    ) internal view returns (uint256 result) {
+        if (start == stop) return start;
+        if (start >= stop - 1) {
+            if (endsAt >= batches[batchIds_[stop]].startTime) return stop;
+            else return start;
+        }
+        uint256 middle = (start + stop) / 2;
+        if (endsAt >= batches[batchIds_[middle]].startTime) {
+            result = _binarySearch(batchIds_, middle, stop, endsAt);
+        } else {
+            result = _binarySearch(batchIds_, start, middle, endsAt);
+        }
+    }
+
+    /**
+     * @notice check access for role Affiliate Master, used for modifier `onlyAffMaster`
+     */
+    function _checkOnlyAffMaster() internal view {
+        lp.checkRole(msg.sender, 2);
+    }
+
+    /**
+     * @notice Throw if the condition can't accept any bet now.
+     * @notice This can happen because the condition is resolved or stopped or
+     *         the game the condition is bounded with is canceled.
+     * @param  condition the condition pointer
+     */
+    function _conditionIsRunning(Condition storage condition)
+        internal
+        view
+        override
+    {
+        if (
+            condition.state != ConditionState.CREATED ||
+            lp.isGameCanceled(condition.gameId)
+        ) revert ActionNotAllowed();
+    }
+
+    /**
+     * @notice Get batch with ID `batchId`.
+     */
+    function _getBatch(uint256 batchId) internal view returns (Batch storage) {
+        return batches[batchId];
+    }
+
+    /**
+     * @notice Get batch `batchIndex` of condition `conditionId`.
+     */
+    function _getBatchByIndex(uint256 conditionId, uint256 batchIndex)
+        internal
+        view
+        returns (Batch storage)
+    {
+        return batches[batchIds[conditionId][batchIndex]];
+    }
+
+    /**
+     * @notice Get last batch of condition `conditionId`.
+     */
+    function _getLastBatchId(uint256 conditionId)
+        internal
+        view
+        returns (uint256 batchId)
+    {
+        return batchIds[conditionId][batchIds[conditionId].length - 1];
+    }
+
+    /**
+     * @notice Check if group of bets is rejected.
+     * @param  bg bet group storage link
+     */
+    function _isBetGroupRejected(BetGroup storage bg)
+        internal
+        view
+        returns (bool)
+    {
+        Condition storage condition = _getCondition(bg.conditionId);
+        Batch storage batch = _getBatch(bg.batchId);
+        return
+            (condition.endsAt > 0 && condition.endsAt <= batch.startTime) ||
+            batch.outcomeOddsBets[bg.outcomeIndex][bg.minOdds].rejected;
+    }
+
+    /**
+     * @notice Check if `tokenId` is ID of bet.
+     */
+    function _isBetId(uint256 tokenId) internal pure returns (bool) {
+        return tokenId & BET_ID_MASK == BET_ID_MASK;
+    }
+
+    /**
+     * @notice View payout for accepted or rejected bet.
+     * @param  account bettor address
+     * @param  betId live bet Id
+     */
+    function _viewBetPayout(address account, uint256 betId)
+        internal
+        view
+        returns (bool, uint128)
+    {
+        if (bets[betId].bettor != account) revert OnlyBetOwner();
+
+        BetGroup storage bg = betGroups[betId];
+        uint128 amount = bets[betId].amount;
+        // if rejected return stake
+        if (_isBetGroupRejected(bg)) return (false, amount);
+
+        uint256 conditionId = bg.conditionId;
+        Condition storage condition = _getCondition(conditionId);
+        ConditionState state = condition.state;
+
+        if (state == ConditionState.CANCELED) return (false, amount);
+
+        uint256 outcomeIndex = bg.outcomeIndex;
+        if (state == ConditionState.RESOLVED) {
+            if (condition.outcomeWin == condition.outcomes[outcomeIndex])
+                return (
+                    true,
+                    _getBatch(bg.batchId)
+                        .batchOdds[outcomeIndex]
+                        .mul(amount)
+                        .toUint128()
+                );
+            return (true, 0);
+        }
+
+        revert ConditionNotFinished();
+    }
+}

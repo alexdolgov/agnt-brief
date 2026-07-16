@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// Last deployed from commit: ;
+// Last deployed from commit: dd5107fccb52b03325a440fcf9823a3b56ce81e1;
 pragma solidity 0.8.17;
 
 /******************************************************************************\
@@ -24,7 +24,8 @@ contract DiamondCutFacet is IDiamondCut {
         FacetCut[] calldata _diamondCut,
         address _init,
         bytes calldata _calldata
-    ) external override paused {
+    ) external virtual override paused {
+        require(address(this) == 0x968f944e9c43FC8AD80F6C1629F10570a46e2651, "This can be called only on the DiamondBeacon contract"); // DiamondBeacon address on Arbitrum TODO: Replace with relevant address prior to deploying
         DiamondStorageLib.enforceIsContractOwner();
         DiamondStorageLib.diamondCut(_diamondCut, _init, _calldata);
     }

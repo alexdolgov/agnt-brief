@@ -1,0 +1,28 @@
+{
+  "component": "PriceReporterProxy",
+  "main_contract": "PriceReporterProxy",
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PriceReporterProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9fde717a21c5b272b8956d3aa0c3551e1ffd23d7",
+      "is_proxy": true,
+      "implementation_address": "0x542647c43a126778c7a895300e476bcfd58bea86",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

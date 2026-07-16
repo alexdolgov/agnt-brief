@@ -52,16 +52,12 @@ interface IMultiSourceLoan {
     /// @dev It's advised that borrowers only set an expirationTime close to the actual time they will execute the loan
     ///      to avoid replays.
     /// @param offerExecution List of offers to be filled and amount for each.
-    /// @param loanId Loan ID. Optionally used in refinances from borrower for an existing loan.
-    /// @param nftCollateralAddress Address of the NFT collateral.
     /// @param tokenId NFT collateral token ID.
     /// @param amount The amount the borrower is willing to take (must be <= _loanOffer principalAmount)
     /// @param expirationTime Expiration time of the signed offer by the borrower.
     /// @param callbackData Data to pass to the callback.
     struct ExecutionData {
         OfferExecution[] offerExecution;
-        uint256 loanId;
-        address nftCollateralAddress;
         uint256 tokenId;
         uint256 duration;
         uint256 expirationTime;

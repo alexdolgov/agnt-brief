@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/FinixToken"
+forge build --root "src/Apollo"
 ```
 
 ## Build every component

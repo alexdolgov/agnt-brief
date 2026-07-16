@@ -1,0 +1,58 @@
+{
+  "component": "StakingRewards",
+  "main_contract": "StakingRewards",
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StakingRewards\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5939783dbf3e9f453a69bc9ddc1e492efac1fbcb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398853"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x721720784b76265aa3e34c1c7ba02a6027bcd3e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398854"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc14eaa8284feff79edc118e06cadbf3813a7e555",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398855"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xebb1761ad43034fd7faa64d84e5bbd8cb5c40b68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398862"
+    }
+  ]
+}

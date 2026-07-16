@@ -1,10 +1,19 @@
 # shell-protocol — deployments
 
-4 verified deployment(s) across 4 component(s).
+13 verified deployment(s) across 13 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x02b4ab3b517371d0bd71d325dbe7dfc0320742e4` | Curve2PoolAdapter | impl | unknown | no |
 | arbitrum | `0x0699645f2fd448398272ae07f82eee8d0388de1c` | LiquidityPoolProxy | impl | live | yes |
 | arbitrum | `0x4093ee6cc764e11ce95451f47ddee9d6cc89eed4` | FractionalizerFactory | impl | live | no |
+| arbitrum | `0x53b86e1c9cbfdc8f784082c1b4a5cf845d62f887` | ShellVesting | impl | live | no |
+| arbitrum | `0x5b5cfe992adac0c9d48e05854b2d91c73a003858` | Multicall2Arbitrum | impl | live | no |
+| arbitrum | `0x8d073a51a9b074940622e42c5f3c4d08c2c6ce77` | Quoter | impl | live | no |
 | arbitrum | `0x96b4f4e401ccd70ec850c1cf8b405ad58fd5fb7a` | Ocean | impl | live | yes |
+| arbitrum | `0x9791d590788598535278552eecd4b211bfc790cb` | ComposableStablePool | impl | unknown | no |
+| arbitrum | `0xa8cb454449143912159e066760c1cf3b92415b4a` | BalancerAdapter | impl | unknown | no |
+| arbitrum | `0xaff1f19340eb5456a55c76938f74bb1d23f11817` | VestingFractionalizer | impl | live | no |
+| arbitrum | `0xcf17664006851a27d5bd93d497f30853ac558792` | CrabDistributor | impl | live | no |
 | arbitrum | `0xe47ba52f326806559c1dec7ddd997f6957d0317d` | BeaconProxyFactory | proxy | live | no |
+| ethereum | `0x0a440f7b5414dfa7f5ea94a01a21b8fc36f23276` | SeedPoem | impl | live | no |

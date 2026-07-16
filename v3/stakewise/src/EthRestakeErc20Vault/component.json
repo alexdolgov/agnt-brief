@@ -1,0 +1,28 @@
+{
+  "component": "EthRestakeErc20Vault",
+  "main_contract": "EthRestakeErc20Vault",
+  "source_entry_count": 69,
+  "source_file_count": 69,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EthRestakeErc20Vault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x215f4c69c3d1461c7aa38c9c73c27e10cfb0eee4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

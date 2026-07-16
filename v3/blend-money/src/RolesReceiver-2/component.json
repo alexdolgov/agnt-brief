@@ -10,29 +10,49 @@
     "build_command": "forge build --root \"src/RolesReceiver-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7d55a2bd88ed4e886ba8a95871df823db70acddf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xfe07c58d18e04f46ed32ed0e5c295fbba3b45304",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0xe4e0f5eb706084f4d598049ddd0abfd2f8431360",
+      "address": "0x9944555a71d6e188a4c2615545e443e7097c5d6e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "392207"
+      "logic_topography_row_id": "392205"
     },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x107b9863c91383cb4b4683a1e8d4304216a98fed",
+      "address": "0xa03f41ede4d9a50f87e34fce042034eae74a82e8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "392208"
+      "logic_topography_row_id": "392211"
     }
   ]
 }

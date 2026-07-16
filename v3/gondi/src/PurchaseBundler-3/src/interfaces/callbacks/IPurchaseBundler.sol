@@ -10,9 +10,25 @@ import "@solmate/tokens/ERC721.sol";
 import {IPool} from "@aave/interfaces/IPool.sol";
 
 interface IPurchaseBundler {
+    /* @dev
+        * reservoirExecutionInfo: info to execute the reservoir order
+        * contractMustBeOwner: whether the contract must be the owner of the NFT to proceed with the execution
+        * purchaseCurrency: currency used to buy/sell the NFT
+        * amount: borrowed amount to swap or get from swap.
+        *           - In bnpl, is how much we take from buyer as initial payment.
+        *           - In s&r, is how much amount is set as input for the quoter.
+        * swapData: abi.encode(address quoter, bytes quoterArgs) - quoter must be whitelisted
+        * swapValue: value to send along with the swap call
+        * maxSlippage: maximum slippage allowed for the swap
+        */
     struct ExecutionInfo {
         IReservoir.ExecutionInfo reservoirExecutionInfo;
         bool contractMustBeOwner;
+        address purchaseCurrency;
+        uint256 amount;
+        bytes swapData;
+        uint256 swapValue;
+        uint256 maxSlippage;
     }
 
     struct Taxes {
@@ -27,18 +43,42 @@ interface IPurchaseBundler {
     }
 
     struct ExecuteSellArgs {
-        ERC20[] currencies;
+        address[] currencies;
         uint256[] currencyAmounts;
         ERC721[] collections;
         uint256[] tokenIds;
         address marketPlace;
         bytes[] executionData;
+        bytes[] swapData;
     }
 
+    /* @dev
+        * borrowArgs: Aave flash loan parameters (pool, assets, amounts)
+        * executeSellArgs: Arguments for executing the NFT sale
+        * loanExecutionData: Encoded repayLoan(IMultiSourceLoan.LoanRepaymentData)[] data
+        * swapCurrencies: ERC20 tokens to swap to repay the Aave loan
+        * swapAmounts: Amounts of each currency to swap
+        * swapData: Encoded swap data for each currency swap
+        * unwrap: Whether to unwrap aave borrowed WETH (aave doesn't lend ETH directly)
+        */
     struct ExecuteSellWithLoanArgs {
         AaveBorrowArgs borrowArgs;
         ExecuteSellArgs executeSellArgs;
         bytes[] loanExecutionData;
+        ERC20[] swapCurrencies;
+        uint160[] swapAmounts;
+        bytes[] swapData;
+        bool unwrap;
+    }
+
+    struct SwapAndExecuteParams {
+        address[] inputCurrencies;
+        address[] outputCurrencies;
+        uint256[] amountsToSwap;
+        bytes swapData;
+        address target;
+        bytes executionCalldata;
+        uint256 executionValue;
     }
 
     /// @notice Buy a number of NFTs using loans to cover part of the price (i.e. BNPL).
@@ -50,7 +90,8 @@ interface IPurchaseBundler {
     /// @notice Sell the collateral behind a number of loans (potentially 1) and use proceeds to pay back the loans.
     /// @dev Encoded: repayLoan(IMultiSourceLoan.LoanRepaymentData)[]
     /// @param executionData The data needed to execute the loan repayment + sell the NFT.
-    function sell(bytes[] calldata executionData) external;
+    /// @param swapData The data needed to execute the swap.
+    function sell(bytes[] calldata executionData, bytes[] calldata swapData) external;
 
     /// @notice Execute a sell signed by the borrower.
     /// @dev Encoded: repayLoan(IMultiSourceLoan.LoanRepaymentData)[]
@@ -59,53 +100,48 @@ interface IPurchaseBundler {
     /// @param collections The collections of the NFTs to receive.
     /// @param tokenIds The token IDs of the NFTs to receive.
     /// @param executionData The data needed to execute the loan repayment + sell the NFT.
+    /// @param swapData The data needed to execute the swap.
     function executeSell(
-        ERC20[] calldata currencies,
+        address[] calldata currencies,
         uint256[] calldata currencyAmounts,
         ERC721[] calldata collections,
         uint256[] calldata tokenIds,
         address marketPlace,
-        bytes[] calldata executionData
-    ) external;
-
-    /// @notice Execute a sell signed by the borrower using ETH.
-    /// @dev Encoded: repayLoan(IMultiSourceLoan.LoanRepaymentData)[]
-    /// @param wethPrincipalSwapData The data needed to swap the WETH for the loan principal.
-    /// @param executionData The data needed to execute the loan repayment + sell the NFT.
-    function executeSellWithETH(
-        bytes calldata wethPrincipalSwapData,
-        ERC20 principal,
-        ERC721 collection,
-        uint256 tokenId,
-        bytes calldata executionData
+        bytes[] calldata executionData,
+        bytes[] calldata swapData
     ) external payable;
 
-    function executeSellWithLoan(ExecuteSellWithLoanArgs calldata args) external;
-
-    /// @notice First step to update the MultiSourceLoan address.
-    /// @param newAddress The new address of the MultiSourceLoan.
-    function updateMultiSourceLoanAddressFirst(address newAddress) external;
-
-    /// @notice Second step to update the MultiSourceLoan address.
-    /// @param newAddress The new address of the MultiSourceLoan. Must match address from first update.
-    function finalUpdateMultiSourceLoanAddress(address newAddress) external;
+    function executeSellWithLoan(ExecuteSellWithLoanArgs calldata args) external payable;
 
     /// @notice Returns the address of the MultiSourceLoan.
     function getMultiSourceLoanAddress() external view returns (address);
 
-    /// @return _taxes The current taxes.
-    function getTaxes() external returns (Taxes memory);
+    /// @notice Returns the taxes for a specific module.
+    /// @param module The module address to query.
+    /// @return The taxes for the module.
+    function getTaxes(address module) external view returns (Taxes memory);
 
-    /// @return _pendingTaxes The pending taxes.
-    function getPendingTaxes() external returns (Taxes memory);
+    /// @notice Returns the pending taxes for a specific module.
+    /// @param module The module address to query.
+    /// @return pendingTax The pending tax values.
+    function getPendingTaxes(address module) external view returns (Taxes memory);
 
-    /// @return _pendingTaxesSetTime The time when the pending taxes were set.
-    function getPendingTaxesSetTime() external returns (uint256);
+    /// @notice Returns the pending taxes for a specific module.
+    /// @param module The module address to query.
+    /// @return setTime The time when the pending taxes were set.
+    function getPendingTaxesSetTime(address module) external view returns (uint256);
 
-    /// @notice Kicks off the process to update the taxes.
+    /// @notice Kicks off the process to update the taxes for a specific module.
+    /// @param module The module address to set the tax for.
     /// @param newTaxes New taxes.
-    function updateTaxes(Taxes calldata newTaxes) external;
+    function updateTaxes(address module, Taxes calldata newTaxes) external;
 
-    /// @notice Set the taxes if enough notice has been given.
-    function setTaxes() external;
+    /// @notice Set the taxes for a module if enough notice has been given.
+    /// @param module The module address to finalize the tax for.
+    function setTaxes(address module) external;
+
+    /// @notice Collect multiple currencies, perform swaps, and execute calldata on a whitelisted target
+    /// @dev The target contract must be this contract (PurchaseBundler) or a whitelisted marketplace
+    /// @param args SwapAndExecuteParams struct containing all swap and execution parameters
+    function swapAndExecute(SwapAndExecuteParams calldata args) external payable;
 }

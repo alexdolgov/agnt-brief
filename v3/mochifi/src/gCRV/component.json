@@ -1,0 +1,28 @@
+{
+  "component": "gCRV",
+  "main_contract": "gCRV",
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/gCRV\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x06f05a658b88d6d324d84a5da13d549ea06c9ad6",
+      "is_proxy": true,
+      "implementation_address": "0x3274c28e83a063be70521933263e747e60bd2803",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

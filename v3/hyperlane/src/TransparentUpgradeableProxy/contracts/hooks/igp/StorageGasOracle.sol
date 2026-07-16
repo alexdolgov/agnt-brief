@@ -3,6 +3,7 @@ pragma solidity >=0.8.0;
 
 // ============ Internal Imports ============
 import {IGasOracle} from "../../interfaces/IGasOracle.sol";
+import {PackageVersioned} from "../../PackageVersioned.sol";
 
 // ============ External Imports ============
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
@@ -12,11 +13,12 @@ import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
  * @dev This contract is intended to be owned by an address that will
  * update the stored remote gas data.
  */
-contract StorageGasOracle is IGasOracle, Ownable {
+contract StorageGasOracle is IGasOracle, Ownable, PackageVersioned {
     // ============ Public Storage ============
 
     /// @notice Keyed by remote domain, gas data on that remote domain.
-    mapping(uint32 => IGasOracle.RemoteGasData) public remoteGasData;
+    mapping(uint32 remoteDomain => IGasOracle.RemoteGasData gasData)
+        public remoteGasData;
 
     // ============ Events ============
 

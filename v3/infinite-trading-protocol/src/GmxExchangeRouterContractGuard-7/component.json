@@ -1,0 +1,28 @@
+{
+  "component": "GmxExchangeRouterContractGuard-7",
+  "main_contract": "GmxExchangeRouterContractGuard",
+  "source_entry_count": 66,
+  "source_file_count": 66,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GmxExchangeRouterContractGuard-7\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa8970ca2c55b4988532c4b18164a87c9dda80853",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

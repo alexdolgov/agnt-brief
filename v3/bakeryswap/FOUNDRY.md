@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/BakeryToken"
+forge build --root "src/BakerySwapPair"
 ```
 
 ## Build every component

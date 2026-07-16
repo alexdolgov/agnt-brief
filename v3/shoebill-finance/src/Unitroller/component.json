@@ -10,10 +10,40 @@
     "build_command": "forge build --root \"src/Unitroller\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x3413dc597ae3be40c6f10fc3d706b884eacf470a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x4e4b415f5aa78a44ce1fc259d2cec47bf50a9216",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398931"
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x9f53cd350c3ac49ce6ce673abff647e5fe79a3cc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398932"
+    },
     {
       "chain": "chain-1088",
       "chain_id": 1088,

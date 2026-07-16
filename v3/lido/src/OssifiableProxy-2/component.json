@@ -10,43 +10,59 @@
     "build_command": "forge build --root \"src/OssifiableProxy-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
-    "https://github.com/lidofinance/audits/blob/main/MixBytes%20Lido%20CSM%20Security%20Audit%20Report%2007-2025.pdf",
-    "https://github.com/lidofinance/audits/blob/main/MixBytes%20Lido%20CSM%20Security%20Audit%20Report%2010-24.pdf",
-    "https://github.com/lidofinance/audits/blob/main/Statemind%20Triggerable%20Withdrawals%20and%20CSM%20v2%20Audit%20Report%2009-2025.pdf"
+    "https://github.com/lidofinance/audits/blob/main/Certora%20Lido%20V3%20Audit%20Report%20-%2012-2025.pdf",
+    "https://github.com/lidofinance/audits/blob/main/Certora%20Lido%20V3%20Formal%20Verification%20Report%20-%2012-2025.pdf",
+    "https://github.com/lidofinance/audits/blob/main/Certora%20Lido%20V3%20Oracle%20V7%20Audit%20Report%20-%2012-2025.pdf",
+    "https://github.com/lidofinance/audits/blob/main/Certora%20Lido%20V3%20Smart%20Contracts%20Security%20Assessment%20Report%20fix%20review%2003-26.pdf",
+    "https://github.com/lidofinance/audits/blob/main/Consensys%20Diligence%20Lido%20V3%20Security%20Audit%20-%2011-2025.pdf",
+    "https://github.com/lidofinance/audits/blob/main/MixBytes%20Lido%20Oracle%20v5%2004-25.pdf",
+    "https://github.com/lidofinance/audits/blob/main/MixBytes%20Lido%20V3%20Security%20Audit%20Report%20-%2012-2025.pdf",
+    "https://github.com/lidofinance/audits/blob/main/MixBytes%20Lido%20v3%20Security%20Audit%20Report%2003-26.pdf",
+    "https://github.com/lidofinance/audits/blob/main/Oxorio%20Lido%20V2%20Off-chain%20Audit%20Report%2006-23.pdf"
   ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x06cd61045f958a209a0f8d746e103ecc625f4193",
+      "address": "0x010ecb2af743c700bdfaf5ddfd55ba3c07dcf9df",
       "is_proxy": true,
-      "implementation_address": "0xda22fa1cea40d05fe4cd536967afdd839586d546",
-      "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401892"
+      "implementation_address": "0xe1987a83c5427182bc70ffdc02dbf51eb21b1115",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x4d4074628678bd302921c20573eea1ed38ddf7fb",
+      "address": "0x0f096e343563b11e35104924111726c596d9f3b9",
       "is_proxy": true,
-      "implementation_address": "0xe0b234f99e413e27d9bc31abba9a49a3e570da97",
-      "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401930"
+      "implementation_address": "0xe5418393b2d9d36e94b7a8906fb2e4e9dce9ded3",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x4d72bff1beac69925f8bd12526a39baab069e5da",
+      "address": "0x1d201be093d847f6446530efb0e8fb426d176709",
       "is_proxy": true,
-      "implementation_address": "0x6f09d2426c7405c5546413e6059f884d2d03f449",
+      "implementation_address": "0x6330fe7756fbe8649adfb9a541d61c5edb8b4d70",
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401931"
+      "logic_topography_row_id": "401904"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x23ed611be0e1a820978875c0122f92260804cddf",
+      "is_proxy": true,
+      "implementation_address": "0xd43a3e984071f40d5d840f60708af0e9526785df",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401911"
     }
   ]
 }

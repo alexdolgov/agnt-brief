@@ -1,0 +1,28 @@
+{
+  "component": "FraxUnifiedFarm_ERC20_Vesper_Orbit_FRAX",
+  "main_contract": "FraxUnifiedFarm_ERC20_Vesper_Orbit_FRAX",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FraxUnifiedFarm_ERC20_Vesper_Orbit_FRAX\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x698137c473bc1f0ea9b85ade45caf64ef2df48d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

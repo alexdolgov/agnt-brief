@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/YieldLogic\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "398407"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xc47d5010064987d17f825557bf85b4eac3da2b4b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

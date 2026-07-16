@@ -1,0 +1,129 @@
+{
+  "component": "MooniswapFactory-2",
+  "main_contract": "MooniswapFactory",
+  "source_entry_count": 30,
+  "source_file_count": 30,
+  "source_path_remaps": [
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/Mooniswap.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-0beb7d3cc0c3-Mooniswap.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/MooniswapFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-750d5a7c2af3-MooniswapFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/governance/BaseGovernanceModule.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-bb4fc73cb47a-BaseGovernanceModule.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/governance/MooniswapFactoryGovernance.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-0e6f1ea92f83-MooniswapFactoryGovernance.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/governance/MooniswapGovernance.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-ad651a090394-MooniswapGovernance.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/interfaces/IFeeCollector.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-13a6fbf8a516-IFeeCollector.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/interfaces/IGovernanceModule.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-07174463b998-IGovernanceModule.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/interfaces/IMooniswapDeployer.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-841eb0a99bef-IMooniswapDeployer.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/interfaces/IMooniswapFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-d4dd9f2491b8-IMooniswapFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/interfaces/IMooniswapFactoryGovernance.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-834497ee1c1d-IMooniswapFactoryGovernance.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/libraries/ExplicitLiquidVoting.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-3685d5f809ac-ExplicitLiquidVoting.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/libraries/LiquidVoting.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-98a8444d27dc-LiquidVoting.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/libraries/MooniswapConstants.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-836229a47dd4-MooniswapConstants.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/libraries/SafeCast.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-b65cb76f312c-SafeCast.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/libraries/Sqrt.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-15ad266781ea-Sqrt.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/libraries/UniERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-cafd417dba8b-UniERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/libraries/VirtualBalance.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-56e5e227562e-VirtualBalance.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/libraries/VirtualVote.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-3d29c78f6bc0-VirtualVote.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/libraries/Vote.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-f82bb810d14f-Vote.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/zumzoom/Projects/1inch/mooniswap-v2/contracts/utils/BalanceAccounting.sol",
+      "exported_path": "__audit_export_path_conflicts__/0020-db41bb21e8ea-BalanceAccounting.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MooniswapFactory-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd41b24bba51fac0e4827b6f94c0d6ddeb183cd64",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # sperax — deployments
 
-16 verified deployment(s) across 16 component(s).
+17 verified deployment(s) across 17 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -19,7 +19,8 @@
 | arbitrum | `0xda423bfa1e196598190deefbafc28adb36faedf0` | Contract-8 | impl | live | yes |
 | arbitrum | `0xfd14c8ef0993fd9409f7820ba8ba80370529d861` | YieldReserve | impl | live | yes |
 | ethereum | `0x2a95fe4c7e64e09856989f9ea0b57b9ab5f770cb` | SperaxTokenL1 | impl | live | no |
-| ethereum | `0xb4a3b0faf0ab53df58001804dda5bfc6a3d59008` | SperaxToken | impl | live | no |
+| ethereum | `0x9631483f28b7f5cbf7d435ab249be8f709215bc3` | SperaxToken | impl | live | no |
+| ethereum | `0xb4a3b0faf0ab53df58001804dda5bfc6a3d59008` | SperaxToken-2 | impl | live | no |
 
 ## Source unavailable (2)
 Verified on-chain but no source in the verification cache (skipped from the tree):

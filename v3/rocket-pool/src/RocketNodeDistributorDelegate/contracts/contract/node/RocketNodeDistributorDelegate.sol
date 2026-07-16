@@ -1,55 +1,59 @@
 /**
-   *       .
-   *      / \
-   *     |.'.|
-   *     |'.'|
-   *   ,'|   |'.
-   *  |,-'-|-'-.|
-   *   __|_| |         _        _      _____           _
-   *  | ___ \|        | |      | |    | ___ \         | |
-   *  | |_/ /|__   ___| | _____| |_   | |_/ /__   ___ | |
-   *  |    // _ \ / __| |/ / _ \ __|  |  __/ _ \ / _ \| |
-   *  | |\ \ (_) | (__|   <  __/ |_   | | | (_) | (_) | |
-   *  \_| \_\___/ \___|_|\_\___|\__|  \_|  \___/ \___/|_|
-   * +---------------------------------------------------+
-   * |    DECENTRALISED STAKING PROTOCOL FOR ETHEREUM    |
-   * +---------------------------------------------------+
-   *
-   *  Rocket Pool is a first-of-its-kind Ethereum staking pool protocol, designed to
-   *  be community-owned, decentralised, permissionless, & trustless.
-   *
-   *  For more information about Rocket Pool, visit https://rocketpool.net
-   *
-   *  Authored by the Rocket Pool Core Team
-   *  Contributors: https://github.com/rocket-pool/rocketpool/graphs/contributors
-   *  A special thanks to the Rocket Pool community for all their contributions.
-   *
-   */
+  *       .
+  *      / \
+  *     |.'.|
+  *     |'.'|
+  *   ,'|   |`.
+  *  |,-'-|-'-.|
+  *   __|_| |         _        _      _____           _
+  *  | ___ \|        | |      | |    | ___ \         | |
+  *  | |_/ /|__   ___| | _____| |_   | |_/ /__   ___ | |
+  *  |    // _ \ / __| |/ / _ \ __|  |  __/ _ \ / _ \| |
+  *  | |\ \ (_) | (__|   <  __/ |_   | | | (_) | (_) | |
+  *  \_| \_\___/ \___|_|\_\___|\__|  \_|  \___/ \___/|_|
+  * +---------------------------------------------------+
+  * |  DECENTRALISED STAKING PROTOCOL FOR ETHEREUM 2.0  |
+  * +---------------------------------------------------+
+  *
+  *  Rocket Pool is a first-of-its-kind ETH2 Proof of Stake protocol, designed to be community owned,
+  *  decentralised, trustless and compatible with staking in Ethereum 2.0.
+  *
+  *  For more information about Rocket Pool, visit https://rocketpool.net
+  *
+  *  Authors: David Rugendyke, Jake Pospischil, Kane Wallmann, Darren Langley, Joe Clapis, Nick Doherty
+  *
+  */
 
 // SPDX-License-Identifier: GPL-3.0-only
-pragma solidity 0.8.30;
+pragma solidity 0.7.6;
 
-import {RocketStorageInterface} from "../../interface/RocketStorageInterface.sol";
-import {RocketNodeDistributorInterface} from "../../interface/node/RocketNodeDistributorInterface.sol";
-import {RocketNodeManagerInterface} from "../../interface/node/RocketNodeManagerInterface.sol";
-import {RocketNodeStakingInterface} from "../../interface/node/RocketNodeStakingInterface.sol";
-import {RocketNodeDistributorStorageLayout} from "./RocketNodeDistributorStorageLayout.sol";
+import "@openzeppelin/contracts/math/SafeMath.sol";
+
+import "./RocketNodeDistributorStorageLayout.sol";
+import "../../interface/RocketStorageInterface.sol";
+import "../../interface/node/RocketNodeManagerInterface.sol";
+import "../../interface/node/RocketNodeDistributorInterface.sol";
+import "../../interface/node/RocketNodeStakingInterface.sol";
 
 /// @dev Contains the logic for RocketNodeDistributors
 contract RocketNodeDistributorDelegate is RocketNodeDistributorStorageLayout, RocketNodeDistributorInterface {
+    // Import libraries
+    using SafeMath for uint256;
+
     // Events
     event FeesDistributed(address _nodeAddress, uint256 _userAmount, uint256 _nodeAmount, uint256 _time);
 
     // Constants
-    uint8 public constant version = 3;
-    uint256 internal constant calcBase = 1 ether;
-    uint256 internal constant NOT_ENTERED = 1;
-    uint256 internal constant ENTERED = 2;
+    uint8 public constant version = 2;
+    uint256 constant calcBase = 1 ether;
+
+    uint256 private constant NOT_ENTERED = 1;
+    uint256 private constant ENTERED = 2;
 
     // Precomputed constants
-    bytes32 internal constant rocketNodeManagerKey = keccak256(abi.encodePacked("contract.address", "rocketNodeManager"));
-    bytes32 internal constant rocketNodeStakingKey = keccak256(abi.encodePacked("contract.address", "rocketNodeStaking"));
-    bytes32 internal constant rocketTokenRETHKey = keccak256(abi.encodePacked("contract.address", "rocketTokenRETH"));
+    bytes32 immutable rocketNodeManagerKey;
+    bytes32 immutable rocketNodeStakingKey;
+    bytes32 immutable rocketTokenRETHKey;
 
     modifier nonReentrant() {
         require(lock != ENTERED, "Reentrant call");
@@ -59,6 +63,10 @@ contract RocketNodeDistributorDelegate is RocketNodeDistributorStorageLayout, Ro
     }
 
     constructor() {
+        // Precompute storage keys
+        rocketNodeManagerKey = keccak256(abi.encodePacked("contract.address", "rocketNodeManager"));
+        rocketNodeStakingKey = keccak256(abi.encodePacked("contract.address", "rocketNodeStaking"));
+        rocketTokenRETHKey = keccak256(abi.encodePacked("contract.address", "rocketTokenRETH"));
         // These values must be set by proxy contract as this contract should only be delegatecalled
         rocketStorage = RocketStorageInterface(address(0));
         nodeAddress = address(0);
@@ -75,14 +83,14 @@ contract RocketNodeDistributorDelegate is RocketNodeDistributorStorageLayout, Ro
         // Get node ETH collateral ratio
         uint256 collateralRatio = rocketNodeStaking.getNodeETHCollateralisationRatio(nodeAddress);
         // Calculate reward split
-        uint256 nodeBalance = address(this).balance * calcBase / collateralRatio;
-        uint256 userBalance = address(this).balance - nodeBalance;
-        return nodeBalance + (userBalance * averageNodeFee / calcBase);
+        uint256 nodeBalance = address(this).balance.mul(calcBase).div(collateralRatio);
+        uint256 userBalance = address(this).balance.sub(nodeBalance);
+        return nodeBalance.add(userBalance.mul(averageNodeFee).div(calcBase));
     }
 
     /// @notice Returns the portion of the contract's balance that belongs to the users
     function getUserShare() override external view returns (uint256) {
-        return address(this).balance - getNodeShare();
+        return address(this).balance.sub(getNodeShare());
     }
 
     /// @notice Distributes the balance of this contract to its owners
@@ -91,15 +99,8 @@ contract RocketNodeDistributorDelegate is RocketNodeDistributorStorageLayout, Ro
         uint256 nodeShare = getNodeShare();
         // Transfer node share
         address withdrawalAddress = rocketStorage.getNodeWithdrawalAddress(nodeAddress);
-        if (msg.sender == nodeAddress || msg.sender == withdrawalAddress) {
-            // If called by node operator, transfer directly
-            (bool success,) = withdrawalAddress.call{value: nodeShare}("");
-            require(success, "Failed to send funds to withdrawal address");
-        } else {
-            // If not called by node operator, add to unclaimed balance for later claiming
-            RocketNodeManagerInterface rocketNodeManager = RocketNodeManagerInterface(rocketStorage.getAddress(rocketNodeManagerKey));
-            rocketNodeManager.addUnclaimedRewards{value: nodeShare}(nodeAddress);
-        }
+        (bool success,) = withdrawalAddress.call{value : nodeShare}("");
+        require(success);
         // Transfer user share
         uint256 userShare = address(this).balance;
         address rocketTokenRETH = rocketStorage.getAddress(rocketTokenRETHKey);
@@ -107,4 +108,5 @@ contract RocketNodeDistributorDelegate is RocketNodeDistributorStorageLayout, Ro
         // Emit event
         emit FeesDistributed(nodeAddress, userShare, nodeShare, block.timestamp);
     }
+
 }

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Blacksmith\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://github.com/CoverProtocol/cover-security/blob/master/audits/Arcadia-Cover-Blacksmith-Audit.pdf",
@@ -27,6 +27,26 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "402779"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe98567885df519dfeb12c0e268dd5d9b798bd531",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfcf3295b3b357e3e0d37ac5ee14823e06ffdfbc6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

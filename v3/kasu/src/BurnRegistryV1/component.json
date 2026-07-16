@@ -41,7 +41,7 @@
     "build_command": "forge build --root \"src/BurnRegistryV1\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 7,
+  "deployment_count": 8,
   "audited": true,
   "audits_covering": [
     "https://github.com/Kasu-Finance/security/blob/main/audits/Kasu_ChainSecurity.pdf"
@@ -116,6 +116,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "395576"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xef956c2193e032609da84bec5e5251b28939b6b9",
+      "is_proxy": true,
+      "implementation_address": "0xb95834c5610a178be9065dd1ef78258d29879cdb",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

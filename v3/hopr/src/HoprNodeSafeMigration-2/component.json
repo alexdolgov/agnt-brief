@@ -256,19 +256,29 @@
     "build_command": "forge build --root \"src/HoprNodeSafeMigration-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "gnosis",
       "chain_id": 100,
-      "address": "0xb9a6f18b40f632869defa4bbb2212c63767eb159",
+      "address": "0x593ea8942e8b1d36f7714a15d43b5914def7b449",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "394987"
+      "logic_topography_row_id": "394976"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x74dfcdf50340b772696caef3f3bc4cd776d37e8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394981"
     }
   ]
 }

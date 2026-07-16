@@ -4,32 +4,6 @@ pragma solidity ^0.8.0;
 
 import "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol";
 
-interface IKodiakPool is IUniswapV3PoolImmutables, IUniswapV3PoolActions, IUniswapV3PoolDerivedState {
-    function positions(bytes32 key)
-        external
-        view
-        returns (
-            uint128 liquidity,
-            uint256 feeGrowthInside0LastX128,
-            uint256 feeGrowthInside1LastX128,
-            uint128 tokensOwed0,
-            uint128 tokensOwed1
-        );
-
-    function slot0()
-        external
-        view
-        returns (
-            uint160 sqrtPriceX96,
-            int24 tick,
-            uint16 observationIndex,
-            uint16 observationCardinality,
-            uint16 observationCardinalityNext,
-            uint32 feeProtocol,
-            bool unlocked
-        );
-}
-
 interface IVault {
     function deposit(uint256, uint256, uint256, uint256, address) external returns (uint256, uint256, uint256);
 
@@ -60,7 +34,7 @@ interface IVault {
 
     function limitUpper() external view returns (int24);
 
-    function pool() external view returns (IKodiakPool);
+    function pool() external view returns (IUniswapV3Pool);
 
     function protocolFee() external view returns (uint24);
 

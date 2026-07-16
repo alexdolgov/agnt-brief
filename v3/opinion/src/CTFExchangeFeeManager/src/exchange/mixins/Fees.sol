@@ -5,7 +5,7 @@ import { IFees } from "../interfaces/IFees.sol";
 
 abstract contract Fees is IFees {
     /// @notice Maximum fee rate that can be signed into an Order
-    uint256 internal constant MAX_FEE_RATE_BIPS = 4000; // 4000 bips or 40%
+    uint256 internal constant MAX_FEE_RATE_BIPS = 1000; // 1000 bips or 10%
 
     address public override treasury;
 

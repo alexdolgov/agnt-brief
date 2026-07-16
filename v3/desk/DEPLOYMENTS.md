@@ -1,6 +1,76 @@
 # desk — deployments
 
-0 verified deployment(s) across 0 component(s).
+70 verified deployment(s) across 62 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x004d72a192db408b9a7c647c6a3c888dfebc6a9b` | SwitchCollateralRouter | impl | unknown | no |
+| arbitrum | `0x008771d9c0f0bdb65dfb9f9f81733b57c3e73b46` | HLPStaking | impl | unknown | no |
+| arbitrum | `0x017a185c14254626a240d94f703b7e01c59b2e7c` | UniV3LMUpkeepKeeper | impl | unknown | no |
+| arbitrum | `0x020594b2257baf2e8c2cd17a89de475e67d1091e` | FeedableRewarder | proxy | unknown | no |
+| arbitrum | `0x0266868d1c144a7534513f38b816c1aade4030a2` | HlpPriceAdapter | impl | unknown | no |
+| arbitrum | `0x02c7ac8c43cda40526f7182a4fb2b11774ec8f29` | DistributeSTIPARBStrategy | impl | unknown | no |
+| arbitrum | `0x032a49e27c44f357e335723b2c5575fbc8632284` | UniV3LiquidityMining | impl | unknown | no |
+| arbitrum | `0x03bac369e37a78420ddc284ff6e7e94d15571bba` | FeedableRewarder | proxy | unknown | no |
+| arbitrum | `0x04bef154a57b8e884d53f2b8f141b34825b448da` | Ext01Handler | proxy | unknown | no |
+| arbitrum | `0x0519f810783a85343eb6c92aa24de5bbe668a4e6` | LiquidityHandler | impl | unknown | no |
+| arbitrum | `0x0650b4b0bc6c032b69bd5c0b15496f6555c0ec98` | StakedGlpOracleAdapter | impl | unknown | no |
+| arbitrum | `0x06d35ecf6a2799f99482c6f15f146326dd0ff1c6` | Ext01Handler | proxy | unknown | no |
+| arbitrum | `0x0a8d9c0a4a039dde3cb825ff4c2f063f8b54313a` | Ext01Handler | proxy | unknown | no |
+| arbitrum | `0x0b282b1f4164f7aa130d452e964bd14e47a09047` | StakingMigrator | impl | unknown | no |
+| arbitrum | `0x0e4db5a37903a9109d70c5e734443773f82537aa` | TradingStaking | impl | unknown | no |
+| arbitrum | `0x0e7c0d58f2e4a6b28597d51a34c4b7acda1ee719` | LimitTradeHelper | impl | unknown | no |
+| arbitrum | `0x0f1e64330618ea1befe139b7f26a1e04629a8556` | OrderbookOracle | impl | unknown | no |
+| arbitrum | `0x0fde910552977041dc8c7ef652b5a07b40b9e006` | Ext01Handler | proxy | unknown | no |
+| arbitrum | `0x1172d67bcc3b7a08a5b57649c01a6fd0056454c8` | EpochFeedableRewarder | impl | unknown | no |
+| arbitrum | `0x127baf4e9d0f0c560dd7aadfc8fff5958a72b0bb` | TradeHelper | impl | unknown | no |
+| arbitrum | `0x144fb991dc200fda881915ea3839f91b23332362` | VaultStorage | impl | unknown | no |
+| arbitrum | `0x146d674ca06f3d92b876b32b49c068a05f9a3bf0` | RebalanceHLPHandler | impl | unknown | no |
+| arbitrum | `0x157539f72a361efbe9f8102f342f9e10f3c073ac` | ERC20ApproveStrategy | impl | unknown | no |
+| arbitrum | `0x194028eaf9a13919d99a87165ad925d85d977f3b` | SurgeFeedableRewarder | impl | unknown | no |
+| arbitrum | `0x1fdcb022daeca9326a37a318f143a0fed61abba6` | FeedableRewarder | proxy | unknown | no |
+| arbitrum | `0x222918d230c5a29f334ffb3020ad57b8cebd1b82` | CIXPriceAdapter | impl | unknown | no |
+| arbitrum | `0x24867dffc3add1e8bb442b9d6e04bb95bd46c09b` | EsHMXAirdrop | impl | unknown | no |
+| arbitrum | `0x28fc5aa56ede3fb0c8df15d8118da8fa54adbaf2` | Vester | impl | unknown | no |
+| arbitrum | `0x2bb8ece609a55893ee1591ae0099de9ccb3926d9` | LiquidityService | impl | unknown | no |
+| arbitrum | `0x2c18464a21fbad7be825ce12049581645d6d94c7` | DeskExchanger | impl | unknown | no |
+| arbitrum | `0x2f3ecc06ac080d15246afc60bed1e70ef4384ca8` | GasService | impl | unknown | no |
+| arbitrum | `0x34338314236df25220b55f90f7e8fc30b620d242` | Ext01Handler | proxy | unknown | no |
+| arbitrum | `0x34e89ded96340a177856fd822366afc584438750` | Ext01Handler | proxy | unknown | no |
+| arbitrum | `0x3d5e3f37ff6dd95abeebfef04124b90f143a36fd` | HLP | impl | unknown | no |
+| arbitrum | `0x42b701290fc04e8fa69431ce377b95beabc335c8` | BotHandler | impl | unknown | no |
+| arbitrum | `0x4381e041f39f96b71b0699ea7a1057cf1344c48a` | HMXStaking | impl | unknown | no |
+| arbitrum | `0x43cbd00a81aea737536a9c9779edf0617d01f075` | ConfigStorage | impl | unknown | no |
+| arbitrum | `0x444ad70fd382e4ee8ba269f84bd4aefb813ebc10` | DESK | impl | unknown | no |
+| arbitrum | `0x44e31321e748ddc768a019aee4c62c14e53424f1` | EcoPythCalldataBuilder | impl | unknown | no |
+| arbitrum | `0x47c031236e19d024b42f8ae6780e44a573170703` | MarketToken | impl | unknown | no |
+| arbitrum | `0x492911d7b0165cc03cd3dd30e325b14e9dcc1a00` | PerpStorage | impl | unknown | no |
+| arbitrum | `0x4dd2b483b947a4fa711689a2baf9b42d170b485f` | bDESK | impl | unknown | no |
+| arbitrum | `0x506850645c1d25eafe1cbcb6e564f3ae030891e1` | LimitTradeHandler | impl | unknown | no |
+| arbitrum | `0x5667d4e5e634d288fcf1e3330be91e403a7245b0` | IntentHandler | impl | unknown | no |
+| arbitrum | `0x5bf7315a6e50079327de2c31270e094b2a57413a` | TradeService | impl | unknown | no |
+| arbitrum | `0x5dfed4e9315adc768380827e899822453f70068e` | PaymentKeeper | impl | unknown | no |
+| arbitrum | `0x642dccee2c90986a7472510a6a4e1f4126a76432` | ConvertedGlpStrategy | impl | unknown | no |
+| arbitrum | `0x68f99f972a63d51c29b08511c59b658a8c92265d` | TradingStakingHook | impl | unknown | no |
+| arbitrum | `0x6a5091402d704d760a8e6198796fee6416d5a577` | GmPriceAdapter | impl | unknown | no |
+| arbitrum | `0x7748671b218974a4a3a6b023bea7fe3659cd85c9` | SGE | impl | unknown | no |
+| arbitrum | `0x77e41b34b1a58463f554d6d013967d553d11162a` | OrderReader | impl | unknown | no |
+| arbitrum | `0x7a0a7e50abf998173f1aa3bf8dc8a6c5d0e1e942` | TradeOrderHelper | impl | unknown | no |
+| arbitrum | `0x7aa07319774074d93ba7d265ecd864c49357582e` | TLCHook | impl | unknown | no |
+| arbitrum | `0x7bf98f7ea78b228a0b40057c15f8137c66951dcd` | StakingLocker | impl | unknown | no |
+| arbitrum | `0x7d8eaa8df02526c711f4ff1f97f6c5324212dbba` | OnChainPriceLens | impl | unknown | no |
+| arbitrum | `0x80825a51afa8bfafe6b0640f605c169c5f58d670` | BulkSendErc20 | impl | unknown | no |
+| arbitrum | `0x83d6c8c06ac276465e4c92e7ac8c23740f435140` | RemoteHMX | impl | unknown | no |
+| arbitrum | `0x83e05128480e24409e4eec643dc0db921ba3ba03` | Ext01Handler | proxy | unknown | no |
+| arbitrum | `0x8b406047a942db7f2c15839b11e3adc7b62a67e0` | PositionReader | impl | unknown | no |
+| arbitrum | `0x8dc6a40465128b20dc712c6b765a5171ef30bb7b` | EcoPyth2 | impl | unknown | no |
+| arbitrum | `0x939a2e2331ef6d2e605b7f23b5e431b0d6cb4415` | AdaptiveFeeCalculator | impl | unknown | no |
+| arbitrum | `0x96dd1f2c6da5f693001e71a8323a6a8a0fea20d6` | DLP | impl | unknown | no |
+| arbitrum | `0x9934d2cc22e9905b511e13e35148b9ef9ada6cd0` | GlpPriceAdapter | impl | unknown | no |
+| arbitrum | `0x9ed51928ec61c4e5dc0d48b38c828f89687467e6` | WstEthUsdPriceAdapter | impl | unknown | no |
+| arbitrum | `0xa3dc2f156a6fc94bfe7fd9fea2fa6c6cb8db6c3f` | UniV3LiquidityFreezer | impl | unknown | no |
+| arbitrum | `0xa4afc4b2ee640bb6d6b87a0ac7348ba6aea57cf5` | CrossMarginHandler | impl | unknown | no |
+| arbitrum | `0xa6f6fbd3ff92fcb2f7e3a419bb9861c96e679f28` | Staking | impl | unknown | no |
+| arbitrum | `0xac60da1cd4d69e0a515d08df06644fb424380b13` | HLPRebaser | impl | unknown | no |
+| arbitrum | `0xc1353b3bff066c441f631daec245b1f5c08a7f07` | EcoPythCalldataBuilder3 | impl | unknown | no |
+| arbitrum | `0xcf1053dec1a7eff5710b9420179d089f8461da75` | ChronicleOraclePriceAdapter | impl | unknown | no |

@@ -105,24 +105,24 @@ abstract contract LiquidationHandler is ILiquidationHandler, ReentrancyGuard, Ca
             revert LoanNotDueError(expirationTime);
         }
         if (_canClaim) {
-            ERC721(_loan.nftCollateralAddress).transferFrom(
-                address(this), _loan.tranche[0].lender, _loan.nftCollateralTokenId
-            );
+            ERC721(_loan.nftCollateralAddress)
+                .transferFrom(address(this), _loan.tranche[0].lender, _loan.nftCollateralTokenId);
             emit LoanForeclosed(_loanId);
 
             liquidated = true;
         } else {
             address liquidator = _loanLiquidator;
             ERC721(_loan.nftCollateralAddress).transferFrom(address(this), liquidator, _loan.nftCollateralTokenId);
-            liquidation = ILoanLiquidator(liquidator).liquidateLoan(
-                _loanId,
-                _loan.nftCollateralAddress,
-                _loan.nftCollateralTokenId,
-                _loan.principalAddress,
-                _liquidationAuctionDuration,
-                _loan.principalAmount.mulDivDown(MIN_BID_LIQUIDATION, _BPS),
-                msg.sender
-            );
+            liquidation = ILoanLiquidator(liquidator)
+                .liquidateLoan(
+                    _loanId,
+                    _loan.nftCollateralAddress,
+                    _loan.nftCollateralTokenId,
+                    _loan.principalAddress,
+                    _liquidationAuctionDuration,
+                    _loan.principalAmount.mulDivDown(MIN_BID_LIQUIDATION, _BPS),
+                    msg.sender
+                );
 
             emit LoanSentToLiquidator(_loanId, liquidator);
         }

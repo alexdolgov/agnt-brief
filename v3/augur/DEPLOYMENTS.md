@@ -1,13 +1,16 @@
 # augur — deployments
 
-15 verified deployment(s) across 15 component(s).
+18 verified deployment(s) across 18 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | ethereum | `0x0cd32f92e3ea33d81d8cf60e20dddfdef4915667` | Trade | impl | live | yes |
 | ethereum | `0x221657776846890989a759ba2973e427dff5c9bb` | ReputationToken | impl | live | yes |
 | ethereum | `0x23916a8f5c3846e3100e5f587ff14f3098722f5d` | Augur | impl | live | yes |
-| ethereum | `0x465bf82912497a424a4669e92319d9355dcfb0d0` | CancelOrder | impl | live | yes |
+| ethereum | `0x3448209268e97652bb67ea12777d4dfba81e3aaf` | CancelOrder | impl | live | no |
+| ethereum | `0x380070670fb427ae8070631eef6f2d0824d8ce01` | Market | impl | live | no |
+| ethereum | `0x4334477348222a986fc88a05410aa6b07507872a` | ClaimTradingProceeds | impl | live | no |
+| ethereum | `0x465bf82912497a424a4669e92319d9355dcfb0d0` | CancelOrder-2 | impl | live | yes |
 | ethereum | `0x483156fe50f752c63aa671a806db10d5cabd7a8f` | Orders | impl | live | yes |
 | ethereum | `0x49244bd018ca9fd1f06ecc07b9e9de773246e5aa` | Universe | impl | live | yes |
 | ethereum | `0x5648b6306380689af8d2de7bdd23d916b9ee0db5` | RelayHub | impl | live | no |

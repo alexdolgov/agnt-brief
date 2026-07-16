@@ -1,0 +1,28 @@
+{
+  "component": "TokenLaunchFactory-4",
+  "main_contract": "TokenLaunchFactory",
+  "source_entry_count": 196,
+  "source_file_count": 196,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TokenLaunchFactory-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x3ef8cff0d32ac7b7fe9255c146ac3c789fb0207a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -22,7 +22,6 @@ interface IMiddlewareVaultManager {
     error MiddlewareVaultManager__VaultNotDisabled();
     error MiddlewareVaultManager__ZeroAddress(string name);
     error MiddlewareVaultManager__SlasherNotImplemented();
-    error MiddlewareVaultManager__InvalidVaultRemovalDelay();
 
     // -----------------------------------------------------------------------
     // Public state variable getters

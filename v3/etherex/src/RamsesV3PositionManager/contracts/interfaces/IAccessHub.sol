@@ -33,6 +33,7 @@ interface IAccessHub {
         address feeDistributorFactory;
         address feeCollector;
         address voteModule;
+        address nfpManager;
     }
 
     /// @notice protocol timelock address
@@ -109,9 +110,6 @@ interface IAccessHub {
     /// @notice revives inactive/killed gauges
     function reviveGauge(address[] calldata _pairs) external;
 
-    /// @param _gauge the gauge address to update
-    function updateLastDistroOnGauge(address _gauge) external;
-
     /// @notice sets the ratio of xRam/Ramses awarded globally to LPs
     function setEmissionsRatioInVoter(uint256 _pct) external;
 
@@ -165,8 +163,15 @@ interface IAccessHub {
     /**
      * Reward List Functions
      */
+
+    /// @notice function for adding or removing rewards for pools
+    function augmentGaugeRewardsForPair(
+        address[] calldata _pools,
+        address[] calldata _rewards,
+        bool[] calldata _addReward
+    ) external;
     /// @notice function for removing rewards for feeDistributors
-        function removeFeeDistributorRewards(address[] calldata _pools, address[] calldata _rewards) external;
+    function removeFeeDistributorRewards(address[] calldata _pools, address[] calldata _rewards) external;
 
     /**
      * FeeCollector functions
@@ -287,33 +292,10 @@ interface IAccessHub {
     /// @param _clGaugeFactory The address of the ClGaugeFactory contract
     function setClGaugeFactoryImpl(address _clGaugeFactory) external;
 
-    /// @notice add an authorized claimer to the voter
-    /// @param _claimer The address of the authorized claimer
-    function addAuthorizedClaimerVoter(address _claimer) external;
+    /// @notice add an nfp manager to the voter
+    /// @param _nfpManager The address of the NfpManager contract
+    function addNfpManagersVoter(address _nfpManager) external;
     
-    /// @notice remove an authorized claimer from the voter
-    /// @param _claimer The address of the authorized claimer to remove
-    function removeAuthorizedClaimerVoter(address _claimer) external;
-
     function syncClGaugesBatch(uint256 startIndex, uint256 endIndex) external;
-
-    /// @notice Add a reward token to a specific CL gauge
-    /// @param _gauge The gauge address to add the reward to
-    /// @param _reward The reward token address to add
-    function addRewardsToGauge(address _gauge, address _reward) external;
-
-    /// @notice Remove a reward token from a specific CL gauge
-    /// @param _gauge The gauge address to remove the reward from
-    /// @param _reward The reward token address to remove
-    function removeRewardsFromGauge(address _gauge, address _reward) external;
-
-    /// @notice Add reward tokens to multiple CL gauges
-    /// @param _gauges Array of gauge addresses to add rewards to
-    /// @param _rewards Array of reward token addresses to add
-    function batchAddRewardsToGauges(address[] calldata _gauges, address[] calldata _rewards) external;
-
-    /// @notice Remove reward tokens from multiple CL gauges
-    /// @param _gauges Array of gauge addresses to remove rewards from
-    /// @param _rewards Array of reward token addresses to remove
-    function batchRemoveRewardsFromGauges(address[] calldata _gauges, address[] calldata _rewards) external;
+    function syncAllClGauges() external;
 }

@@ -11,7 +11,6 @@ import '../mixins/SettleLayer.sol';
 import '../mixins/PoolRegistry.sol';
 import '../mixins/MarketSequencer.sol';
 import '../mixins/ProtocolAccount.sol';
-import '../CrocEvents.sol';
 
 /* @title Hot path mixin.
  * @notice Provides the top-level function for the most common operation: simple one-hop
@@ -108,22 +107,8 @@ contract HotPath is MarketSequencer, SettleLayer, ProtocolAccount {
             abi.decode(input, (address, address, uint256, bool, bool,
                                uint128, uint16, uint128, uint128, uint8));
         
-        return swapExecuteLogged(base, quote, poolIdx, isBuy, inBaseQty, qty, poolTip,
-            limitPrice, minOutput, reserveFlags);
-    }
-
-    /* @notice Wraps a swap call with a log event. */
-    function swapExecuteLogged (address base, address quote,
-                          uint256 poolIdx, bool isBuy, bool inBaseQty, uint128 qty,
-                          uint16 poolTip, uint128 limitPrice, uint128 minOutput,
-                          uint8 reserveFlags) internal
-        returns (int128 baseFlow, int128 quoteFlow) {
-
-        (baseFlow, quoteFlow) = swapExecute(base, quote, poolIdx, isBuy, inBaseQty, qty, poolTip, 
-            limitPrice, minOutput, reserveFlags);
-
-        emit CrocEvents.CrocSwap(base, quote, poolIdx, isBuy, inBaseQty, qty, poolTip, limitPrice, 
-            minOutput, reserveFlags, baseFlow, quoteFlow);
+        return swapExecute(base, quote, poolIdx, isBuy, inBaseQty, qty, poolTip,
+                           limitPrice, minOutput, reserveFlags);
     }
 }
 
@@ -133,7 +118,8 @@ contract HotPath is MarketSequencer, SettleLayer, ProtocolAccount {
 contract HotProxy is HotPath {
 
     function userCmd (bytes calldata input) public payable
-        returns (int128 baseFlow, int128 quoteFlow) {
+        returns (int128, int128) {
+        require(!hotPathOpen_, "Hot path enabled");
         return swapEncoded(input);
     }
 

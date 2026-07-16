@@ -1,0 +1,28 @@
+{
+  "component": "SmartLoanWrappedNativeTokenFacet-6",
+  "main_contract": "SmartLoanWrappedNativeTokenFacet",
+  "source_entry_count": 86,
+  "source_file_count": 86,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SmartLoanWrappedNativeTokenFacet-6\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8a3cda818eb9bfcbb2f4d0f0f3e651dc37cb5fa6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

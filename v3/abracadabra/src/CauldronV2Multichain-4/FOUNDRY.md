@@ -1,4 +1,4 @@
-# CauldronV2Multichain-4 — Foundry package
+# CauldronV2MultiChain-4 — Foundry package
 
 This directory is an isolated verified source bundle and a standalone Foundry root.
 Isolation preserves the verifier's source paths and prevents compiler or filename collisions with other components.
@@ -12,7 +12,7 @@ forge build
 From the project directory:
 
 ```sh
-forge build --root "src/CauldronV2Multichain-4"
+forge build --root "src/CauldronV2MultiChain-4"
 ```
 
 Foundry selects Solidity versions from the source pragmas. Build output and cache files stay under `.foundry/`.

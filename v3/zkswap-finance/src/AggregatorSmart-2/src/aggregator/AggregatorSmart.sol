@@ -1,6 +1,4 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-// website: https://www.zkswap.finance
-
 pragma solidity 0.8.27;
 
 import '@openzeppelin-v5/contracts/token/ERC20/IERC20.sol';

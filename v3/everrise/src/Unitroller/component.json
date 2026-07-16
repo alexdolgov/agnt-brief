@@ -1,0 +1,28 @@
+{
+  "component": "Unitroller",
+  "main_contract": "Unitroller",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Unitroller\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xdc13687554205e5b89ac783db14bb5bba4a1edac",
+      "is_proxy": true,
+      "implementation_address": "0xf3321aacd18fb8b78d94d3155ebd8b2b5f587456",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -69,4 +69,40 @@ library TransientStorage {
             return(0x0, 32)
         }
     }
+
+    /// @notice Stores a uint256 value in transient storage
+    /// @dev Uses assembly to efficiently store a uint256 value in transient storage
+    /// @param key The storage slot to store the value at
+    /// @param value The uint256 value to store
+    function setUint256(bytes32 key, uint256 value) public {
+        //solhint-disable-next-line no-inline-assembly
+        assembly {
+            tstore(key, value)
+        }
+    }
+
+    /// @notice Retrieves a uint256 value from transient storage
+    /// @dev Uses assembly to efficiently read a uint256 value from transient storage
+    /// @param key The storage slot to read the value from
+    /// @return value The uint256 value stored at the given key
+    function getUint256(
+        bytes32 key
+    ) public view returns (uint256 value) {
+        //solhint-disable-next-line no-inline-assembly
+        assembly {
+            value := tload(key)
+        }
+    }
+
+    /// @notice Clears a single value from transient storage
+    /// @dev Uses assembly to efficiently clear a single value from transient storage
+    /// @param key The storage slot to clear
+    function clearSingle(
+        bytes32 key
+    ) public {
+        //solhint-disable-next-line no-inline-assembly
+        assembly {
+            tstore(key, 0)
+        }
+    }
 }

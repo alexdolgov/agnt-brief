@@ -1,0 +1,84 @@
+{
+  "component": "HoprAnnouncements",
+  "main_contract": "HoprAnnouncements",
+  "source_entry_count": 16,
+  "source_file_count": 16,
+  "source_path_remaps": [
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/Multicall.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-b30639202490-Multicall.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-889ea6d50b24-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-7fa79d8b45c2-Context.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/solady-v0.1.24/src/utils/EfficientHashLib.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-716e8633f90e-EfficientHashLib.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-20ffa507c031-ECDSA.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/interfaces/IERC1820Registry.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-993bab05bcfd-IERC1820Registry.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-ebc8aa2cef26-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/interfaces/IERC777Recipient.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-8ff11cbaeb21-IERC777Recipient.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../vendor/solidity/openzeppelin-contracts-upgradeable-5.4.0/lib/openzeppelin-contracts/contracts/utils/Errors.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-ad46e4f45055-Errors.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/HoprAnnouncements\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x0347a131861881604ea841b678210ba60b8e6d82",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x2ecec248ec225834e272a03e10016f890994f29a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

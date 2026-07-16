@@ -1,0 +1,28 @@
+{
+  "component": "Comptroller",
+  "main_contract": "Comptroller",
+  "source_entry_count": 13,
+  "source_file_count": 13,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Comptroller\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbea1d596ae022fae90d84ffaf0907e38a25ed6e7",
+      "is_proxy": true,
+      "implementation_address": "0xf82f6878f12fd10ee08a8fa9ff286de3b83a71ff",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

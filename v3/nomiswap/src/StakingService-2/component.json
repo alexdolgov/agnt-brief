@@ -1,0 +1,64 @@
+{
+  "component": "StakingService-2",
+  "main_contract": "StakingService",
+  "source_entry_count": 15,
+  "source_file_count": 15,
+  "source_path_remaps": [
+    {
+      "original_path": "/home/eraserpl/NetBeansProjects/eth-smart-contracts/contracts/Lib.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-87891b1442e3-Lib.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/eraserpl/NetBeansProjects/eth-smart-contracts/contracts/MintSchedule.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-57c6a5a722de-MintSchedule.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/eraserpl/NetBeansProjects/eth-smart-contracts/contracts/Nmx.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-f92c0173ec3f-Nmx.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/eraserpl/NetBeansProjects/eth-smart-contracts/contracts/NmxSupplier.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-87e9dacc237a-NmxSupplier.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/eraserpl/NetBeansProjects/eth-smart-contracts/contracts/PausableByOwner.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-4c3669f2579f-PausableByOwner.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/eraserpl/NetBeansProjects/eth-smart-contracts/contracts/RecoverableByOwner.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-0a81746fad9f-RecoverableByOwner.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/eraserpl/NetBeansProjects/eth-smart-contracts/contracts/StakingService.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-c3cdf0769d82-StakingService.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StakingService-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x03868d2e45a9b579cc68b7addd65cf78ddb62a68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

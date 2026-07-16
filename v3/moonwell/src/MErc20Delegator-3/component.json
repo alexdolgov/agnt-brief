@@ -1,0 +1,38 @@
+{
+  "component": "MErc20Delegator-3",
+  "main_contract": "MErc20Delegator",
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MErc20Delegator-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xed37cd7872c6fe4020982d35104be7919b8f8b33",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396960"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd64bcb70c613a6d1f4d7d57ba64bb4a0767a9682",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397052"
+    }
+  ]
+}

@@ -10,12 +10,22 @@
     "build_command": "forge build --root \"src/DomfiRegistry\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
     "https://docs.domination.finance/assets/DomFi-security-review_2025-12-07.pdf"
   ],
   "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x6641bb66e9e3d158d12b18f7a684b37232efd3d1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "base",
       "chain_id": 8453,
@@ -25,6 +35,26 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "393591"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf44ebe57f753a77eafd60abb7316296d61d4c483",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfa4209bc47ea7ed80f9971ca680f1e5c35f59d45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,0 +1,99 @@
+{
+  "component": "VeSnow",
+  "main_contract": "VeSnow",
+  "source_entry_count": 24,
+  "source_file_count": 24,
+  "source_path_remaps": [
+    {
+      "original_path": "/Users/yang/projects/blockchain/ethcontracts/evm-repo.git/snow/contracts/VeSnow.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-767280e277c8-VeSnow.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/yang/projects/blockchain/ethcontracts/evm-repo.git/snow/contracts/libraries/Math.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-7aae19c2034a-Math.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/yang/projects/blockchain/ethcontracts/evm-repo.git/snow/contracts/interfaces/IVeSnow.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-94629cfce346-IVeSnow.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/yang/projects/blockchain/ethcontracts/evm-repo.git/snow/contracts/interfaces/IVeERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-765d2668e922-IVeERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/yang/projects/blockchain/ethcontracts/evm-repo.git/snow/contracts/interfaces/ISnowflakeNFT.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-b4f148334f09-ISnowflakeNFT.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/yang/projects/blockchain/ethcontracts/evm-repo.git/snow/contracts/interfaces/IMasterSnowflake.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-48e6ef3c3a5e-IMasterSnowflake.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/yang/projects/blockchain/ethcontracts/evm-repo.git/snow/contracts/interfaces/IERC2981Royalties.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-2b393fd2bb37-IERC2981Royalties.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/yang/projects/blockchain/ethcontracts/evm-repo.git/snow/contracts/Whitelist.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-458dc210e6e8-Whitelist.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/yang/projects/blockchain/ethcontracts/evm-repo.git/snow/contracts/VeERC20Upgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-a67f47f9688c-VeERC20Upgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/yang/projects/blockchain/ethcontracts/evm-repo.git/snow/contracts-upgradeable/utils/ContextUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0020-b773a58d8b07-ContextUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/yang/projects/blockchain/ethcontracts/evm-repo.git/snow/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0021-f5a87dff1d96-ReentrancyGuardUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/yang/projects/blockchain/ethcontracts/evm-repo.git/snow/contracts-upgradeable/security/PausableUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0022-139b4b5a9c00-PausableUpgradeable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/yang/projects/blockchain/ethcontracts/evm-repo.git/snow/contracts-upgradeable/proxy/utils/Initializable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0023-2cb2185562fc-Initializable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/yang/projects/blockchain/ethcontracts/evm-repo.git/snow/contracts-upgradeable/access/OwnableUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0024-741a9a151a1f-OwnableUpgradeable.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VeSnow\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x44f7e9d762754e0c757b37bfb68440c0bf7ced9d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

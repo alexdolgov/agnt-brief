@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.19;
 
 import {IERC20Metadata} from
@@ -88,15 +88,9 @@ interface IArrakisLPModule {
     /// @dev only callable by guardian
     function unpause() external;
 
-    /// @notice function used to initialize the module
-    /// when a module switch happen
-    /// @param data_ bytes that contain information to initialize
-    /// the position.
-    function initializePosition(bytes calldata data_) external;
-
     /// @notice function used by metaVault to withdraw tokens from the strategy.
     /// @param receiver_ address that will receive tokens.
-    /// @param proportion_ the proportion of the total position that need to be withdrawn.
+    /// @param proportion_ number of share needed to be withdrawn.
     /// @return amount0 amount of token0 withdrawn.
     /// @return amount1 amount of token1 withdrawn.
     function withdraw(

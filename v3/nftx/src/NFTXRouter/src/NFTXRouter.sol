@@ -315,9 +315,8 @@ contract NFTXRouter is INFTXRouter, Pausable, ERC721Holder, ERC1155Holder {
                 0;
 
             // burn vTokens to provided tokenIds array. Forcing to deduct vault fees
-            if (chargeFees) {
-                TransferLib.unSafeMaxApprove(WETH, address(vToken), wethAmt);
-            }
+            // approving in all cases as the NFTs might have premium fees in WETH
+            TransferLib.unSafeMaxApprove(WETH, address(vToken), wethAmt);
 
             uint256 vTokenBurned = params.nftIds.length * 1 ether;
             if (vTokenAmt < vTokenBurned) revert InsufficientVTokens();

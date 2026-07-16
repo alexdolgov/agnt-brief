@@ -1,8 +1,8 @@
 {
   "component": "LiquidationFlashloanArbitrum",
   "main_contract": "LiquidationFlashloanArbitrum",
-  "source_entry_count": 88,
-  "source_file_count": 88,
+  "source_entry_count": 92,
+  "source_file_count": 92,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x5a8053f32c0cc29e6c6703e1c80b85750f52a788",
+      "address": "0x0d45a30f878895af7510f7a23e82eca253f6e375",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393607"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

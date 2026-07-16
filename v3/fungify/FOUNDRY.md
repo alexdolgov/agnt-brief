@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/CErc20Delegator"
+forge build --root "src/FungifyNFT"
 ```
 
 ## Build every component

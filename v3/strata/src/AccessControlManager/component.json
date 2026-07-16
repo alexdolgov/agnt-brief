@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/AccessControlManager\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 5,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -33,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "399564"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d19e18ecac4ef332a0d5d6aa3a0f0f772605f60",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",

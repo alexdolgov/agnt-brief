@@ -1,0 +1,64 @@
+{
+  "component": "KineExchangeTreasury-2",
+  "main_contract": "KineExchangeTreasury",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-d45044dd4176-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-f8a722feadf1-Context.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-4de85607805d-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/KineExchangeTreasury.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-55923f0c2df3-KineExchangeTreasury.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/KineSafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-fef21564b23d-KineSafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/Ownable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-64702c23edec-Ownable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/SafeERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-3318f13ced4a-SafeERC20.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/KineExchangeTreasury-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1d903b731b0173654afe612d12b4489c7b32a19f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

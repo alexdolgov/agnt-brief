@@ -1,0 +1,28 @@
+{
+  "component": "UiPoolDataProviderV2V3",
+  "main_contract": "UiPoolDataProviderV2V3",
+  "source_entry_count": 109,
+  "source_file_count": 109,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UiPoolDataProviderV2V3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa7da242e099136a71ff975b8d78b79aa543c9182",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # ostium — deployments
 
-14 verified deployment(s) across 5 component(s).
+16 verified deployment(s) across 6 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -15,6 +15,8 @@
 | arbitrum | `0x799a139ae56e11f0476ace2f6118cfcaed9608d2` | OstiumRegistry | impl | live | yes |
 | arbitrum | `0x959da1452238f71f17f7da5dba2e9c04fef57324` | ProxyAdmin | proxy | live | yes |
 | arbitrum | `0xb4f1123be58f5d69e1cf565ed8756c7fcf31c8d3` | OstiumLockedDepositNft | impl | live | yes |
+| arbitrum | `0xb71ec9ebd8145dacacf6724363143cb5667a3d36` | ProxyAdmin | proxy | live | yes |
 | arbitrum | `0xccd5891083a8acd2074690f65d3024e7d13d66e7` | ProxyAdmin | proxy | live | yes |
 | arbitrum | `0xccf233920e8cc9415ecf503b992881d69b6c47ad` | OstiumVerifier | impl | live | yes |
 | arbitrum | `0xe607ac9ff58697c5978afa1fc1c5c437a6d1858c` | ProxyAdmin | proxy | live | yes |
+| arbitrum | `0xeb85dc6095c74d36500c9cdcacc15ecdc223bbf7` | OstiumTimelockOwner | impl | live | no |

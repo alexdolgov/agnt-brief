@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0
 pragma solidity 0.8.21;
 
+
 // OpenZeppelin Contracts (last updated v4.9.0) (token/ERC20/IERC20.sol)
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
@@ -2082,6 +2083,8 @@ interface ISturdyPair {
 
     function timelockAddress() external view returns (address);
 
+    function pendingTimelockAddress() external view returns (address);
+
     function addCollateral(uint256 _collateralAmount, address _borrower) external;
     
     function addInterest(
@@ -2240,6 +2243,8 @@ interface ISturdyPair {
     function oracleNormalization() external view returns (uint256);
 
     function owner() external view returns (address);
+
+    function pendingOwner() external view returns (address);
 
     function pause() external;
 

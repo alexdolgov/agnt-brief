@@ -1,8 +1,8 @@
 {
   "component": "TokenManager",
   "main_contract": "TokenManager",
-  "source_entry_count": 9,
-  "source_file_count": 9,
+  "source_entry_count": 33,
+  "source_file_count": 33,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -11,24 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/AstraSec-AuditReport-DeltaPrime-Final.pdf",
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/PeckShield-Audit-Report-DeltaPrime-v2.0.pdf",
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/PeckShield-Audit-Report-DeltaPrime-v2.1.pdf",
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/Smart_Contract_Audit_DeltaPrime_Protocol_04112022.pdf",
-    "https://github.com/DeltaPrimeLabs/deltaprime-contracts-v2/blob/main/audits/blocksec_deltaprime_v1.0-signed.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x8463b7d47cf404c59a7318719fd8625433a823de",
+      "address": "0x0056137622530596aa9d880edb744fc9169c7ff9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393619"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "component": "EulerV2BatchFuse",
+  "main_contract": "EulerV2BatchFuse",
+  "source_entry_count": 82,
+  "source_file_count": 82,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EulerV2BatchFuse\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x45f3bf4f5318d9683357fa8f9f4442263f7dda6f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

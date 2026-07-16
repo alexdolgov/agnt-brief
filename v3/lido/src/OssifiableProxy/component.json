@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/OssifiableProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 4,
+  "deployment_count": 5,
   "audited": true,
   "audits_covering": [
     "https://github.com/lidofinance/audits/blob/main/L2/Lido-L2-2022-07-Oxorio-Smart-Contracts-Security-Audit-Report.pdf",
@@ -27,6 +27,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "401897"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x0fc3de4b1bbcb315880d328e3f9c81d742d73d01",
+      "is_proxy": true,
+      "implementation_address": "0x69d02fedae5e289f467280bc25316d2e835c5864",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "optimism",

@@ -8,6 +8,7 @@ import { FixedPointMathLib } from "@solady/utils/FixedPointMathLib.sol";
 import { BasketManager } from "src/BasketManager.sol";
 import { BasketToken } from "src/BasketToken.sol";
 import { Rescuable } from "src/Rescuable.sol";
+import { Errors } from "src/libraries/Errors.sol";
 
 /// @title FeeCollector
 /// @notice Contract to collect fees from the BasketManager and distribute them to sponsors and the protocol treasury
@@ -46,8 +47,6 @@ contract FeeCollector is AccessControlEnumerable, Rescuable {
     event TreasurySet(address indexed treasury);
 
     /// ERRORS ///
-    /// @notice Thrown when the address is zero.
-    error ZeroAddress();
     /// @notice Thrown when attempting to set a sponsor fee split higher than _MAX_FEE.
     error SponsorSplitTooHigh();
     /// @notice Thrown when attempting to set a sponsor fee split for a basket token with no sponsor.
@@ -67,13 +66,13 @@ contract FeeCollector is AccessControlEnumerable, Rescuable {
     /// @param treasury The address of the protocol treasury
     constructor(address admin, address basketManager, address treasury) payable {
         if (admin == address(0)) {
-            revert ZeroAddress();
+            revert Errors.ZeroAddress();
         }
         if (basketManager == address(0)) {
-            revert ZeroAddress();
+            revert Errors.ZeroAddress();
         }
         if (treasury == address(0)) {
-            revert ZeroAddress();
+            revert Errors.ZeroAddress();
         }
         _grantRole(DEFAULT_ADMIN_ROLE, admin);
         _basketManager = BasketManager(basketManager);
@@ -84,7 +83,7 @@ contract FeeCollector is AccessControlEnumerable, Rescuable {
     /// @param treasury The address of the new protocol treasury
     function setProtocolTreasury(address treasury) external onlyRole(DEFAULT_ADMIN_ROLE) {
         if (treasury == address(0)) {
-            revert ZeroAddress();
+            revert Errors.ZeroAddress();
         }
         protocolTreasury = treasury;
         emit TreasurySet(treasury);
@@ -97,9 +96,9 @@ contract FeeCollector is AccessControlEnumerable, Rescuable {
         _checkIfBasketToken(basketToken);
         // claim any outstanding fees for previous sponsor
         address currentSponsor = basketTokenSponsors[basketToken];
+        _claimSponsorFee(basketToken, currentSponsor);
         basketTokenSponsors[basketToken] = sponsor;
         emit SponsorSet(basketToken, sponsor);
-        _claimSponsorFee(basketToken, currentSponsor);
     }
 
     /// @notice Set the split of management fees given to the sponsor for a given basket token
@@ -159,7 +158,6 @@ contract FeeCollector is AccessControlEnumerable, Rescuable {
             }
         }
         // Call harvestManagementFee to ensure that the fee is up to date
-        // slither-disable-next-line reentrancy-no-eth,reentrancy-benign
         BasketToken(basketToken).harvestManagementFee();
         uint256 fee = claimableTreasuryFees[basketToken];
         if (fee > 0) {

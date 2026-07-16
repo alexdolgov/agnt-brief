@@ -1,8 +1,8 @@
 {
   "component": "SidechainClaimZap-3",
   "main_contract": "SidechainClaimZap",
-  "source_entry_count": 8,
-  "source_file_count": 8,
+  "source_entry_count": 10,
+  "source_file_count": 10,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
+      "chain": "gnosis",
+      "chain_id": 100,
       "address": "0x4ea38a5739d467f7f84c06155ee2ad745e5328e8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391510"
+      "logic_topography_row_id": "391475"
     }
   ]
 }

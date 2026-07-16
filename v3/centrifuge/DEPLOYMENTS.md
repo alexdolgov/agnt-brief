@@ -1,6 +1,6 @@
 # centrifuge — deployments
 
-318 verified deployment(s) across 62 component(s).
+337 verified deployment(s) across 69 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -29,6 +29,7 @@
 | arbitrum | `0x8c213ee79581ff4984583c6a801e5263418c4b86` | Tranche | impl | live | no |
 | arbitrum | `0x8ca5372a5613a6df75fd5fbc43216e68c1be6d38` | VaultDecoder | impl | live | no |
 | arbitrum | `0x8e680873b4c77e6088b4ba0abd59d100c3d224a4` | FullRestrictions | impl | live | no |
+| arbitrum | `0x91808b5e2f6d7483d41a681034d7c9dbb64b9e29` | PoolManager | impl | live | no |
 | arbitrum | `0x971aca9b4ab4895f400ba042fd10a31c7918d220` | QueueManager | impl | live | no |
 | arbitrum | `0x97cc7e9dafdd725cc23b25eebc93c4384b4fe30a` | MessageProcessor | impl | live | no |
 | arbitrum | `0xa4a7bb3831958463b3fe3e27a6a160f764341953` | Hub | impl | live | no |
@@ -41,8 +42,10 @@
 | arbitrum | `0xc5243bdea2d86ea7541ac69084df3eddc137a18b` | MerkleProofManagerFactory | impl | live | no |
 | arbitrum | `0xc52bd1bdfa0135147d3f01a0b6d6cd0a831dfe77` | BatchRequestManager | impl | live | no |
 | arbitrum | `0xcbdb6effc9b954d05df89c747ecaa8a143c26e6d` | OracleValuation | impl | live | no |
+| arbitrum | `0xcccccccccc33d538dbc2ee4feab0a7a1ff4e8a94` | CFG | impl | live | no |
 | arbitrum | `0xce1616505f93215751fbb41efac618b631997c38` | TokenFactory | impl | live | no |
 | arbitrum | `0xceb7ed5d5b3bad3088f6a1697738b60d829635c6` | ProtocolGuardian | impl | live | no |
+| arbitrum | `0xd30da1d7f964e5f6c2d9fe2aaa97517f6b23fa2b` | Spoke-2 | impl | live | no |
 | arbitrum | `0xd40871a6336fd19a25a7bd96c0c0dd66ed60931d` | CircleDecoder | impl | live | no |
 | arbitrum | `0xd517bc7ba17271a8d87be7355b2523bf5c750295` | LayerZeroAdapter | impl | live | no |
 | arbitrum | `0xd5b243f05b2906f1f6c80c6096945faada0731c1` | FreezeOnly | impl | live | no |
@@ -51,6 +54,7 @@
 | arbitrum | `0xe5423ed8602fa0f263e17b6212d88efe42317f06` | RedemptionRestrictions | impl | live | no |
 | arbitrum | `0xe897e7f16e8f4ed568a62955b17744bcb3207d6e` | AsyncVault-2 | impl | live | no |
 | arbitrum | `0xec3582fcdc34078a4b7a8c75a5a3ae46f48525ab` | Spoke | impl | live | no |
+| arbitrum | `0xf35501e7fc4a076e744dbafa883ced74ccf5009d` | CentrifugeRouter | impl | live | no |
 | arbitrum | `0xf48256abddf96ecddc4b3dbd23e8c1921f9761ae` | AsyncRequestManager | impl | live | no |
 | arbitrum | `0xf684014771c01e50b8b526968b3a1e33acda63f6` | VaultRouter | impl | live | no |
 | arbitrum | `0xf837a22883e004f705e0d7e1dee08e295df30b27` | MessageDispatcher | impl | live | no |
@@ -61,6 +65,9 @@
 | avalanche | `0xa5d465251fbcc907f5dd6bb2145488dfc6a2627b` | ShareToken-2 | impl | live | no |
 | avalanche | `0xa6233014b9b7aaa74f38fa1977ffc7a89642dc72` | ShareToken-2 | impl | live | no |
 | avalanche | `0xaaa0008c8cf3a7dca931adaf04336a5d808c82cc` | ShareToken-2 | impl | live | no |
+| avalanche | `0xcccccccccc33d538dbc2ee4feab0a7a1ff4e8a94` | CFG | impl | live | no |
+| avalanche | `0xd30da1d7f964e5f6c2d9fe2aaa97517f6b23fa2b` | Spoke-2 | impl | live | no |
+| avalanche | `0xec3582fcdc34078a4b7a8c75a5a3ae46f48525ab` | Spoke | impl | live | no |
 | base | `0x050206c38f06e4710c4a37d39f75ddc5c16a7396` | Accounting | impl | live | no |
 | base | `0x055589229506ee89645ef08ebe9b9a863486d0de` | OpsGuardian | impl | live | no |
 | base | `0x05e22c20b21c1314a0c93d34855358b9b96133cf` | IdentityValuation | impl | live | no |
@@ -75,6 +82,7 @@
 | base | `0x280c94eb440a8a75c2f8f6ca8c6faff907000823` | SimplePriceManager | impl | live | no |
 | base | `0x2a9b9c14851baf7ad19f26607c9171ca1e7a1a61` | FreelyTransferable | impl | live | no |
 | base | `0x2aef271f00a9d1b0da8065d396f4e601dbd0ef0b` | AsyncVault | impl | live | no |
+| base | `0x2b51e2ec9551f9b87b321f63b805871f1c81ba97` | ERC20 | impl | live | no |
 | base | `0x2da40f061536c2f3a8f95f23a5f4c133d07d393a` | AsyncVault-3 | impl | live | no |
 | base | `0x34e904237341c3de02d4447c3ff0ca8880ca6484` | AxelarAdapter | impl | live | no |
 | base | `0x35c837f0a54b715a23d193e1476bfc9bc30073be` | MultiAdapter | impl | live | no |
@@ -86,7 +94,9 @@
 | base | `0x5187a505c485e22f0b8a5fbdf69ef1c29c478ce3` | PoolEscrowFactory | impl | live | no |
 | base | `0x55cde53b7dbc24336e34ffe233af8df10f72f0be` | AsyncVaultFactory | impl | live | no |
 | base | `0x5a0f93d040de44e78f251b03c43be9cf317dcf64` | Tranche | impl | live | no |
+| base | `0x5b82ffdac6d77fbd21a4eeb9b8c540f77eed1231` | CentrifugeRouter | impl | live | no |
 | base | `0x7ed48c31f2fdc40d37407cbabf0870b2b688368f` | Root | impl | live | no |
+| base | `0x7f192f34499ddb2be06c4754cff2a21c4b056994` | PoolManager | impl | live | no |
 | base | `0x8c213ee79581ff4984583c6a801e5263418c4b86` | Tranche | impl | live | no |
 | base | `0x8ca5372a5613a6df75fd5fbc43216e68c1be6d38` | VaultDecoder | impl | live | no |
 | base | `0x8e680873b4c77e6088b4ba0abd59d100c3d224a4` | FullRestrictions | impl | live | no |
@@ -106,8 +116,10 @@
 | base | `0xc5243bdea2d86ea7541ac69084df3eddc137a18b` | MerkleProofManagerFactory | impl | live | no |
 | base | `0xc52bd1bdfa0135147d3f01a0b6d6cd0a831dfe77` | BatchRequestManager | impl | live | no |
 | base | `0xcbdb6effc9b954d05df89c747ecaa8a143c26e6d` | OracleValuation | impl | live | no |
+| base | `0xcccccccccc33d538dbc2ee4feab0a7a1ff4e8a94` | CFG | impl | live | no |
 | base | `0xce1616505f93215751fbb41efac618b631997c38` | TokenFactory | impl | live | no |
 | base | `0xceb7ed5d5b3bad3088f6a1697738b60d829635c6` | ProtocolGuardian | impl | live | no |
+| base | `0xd30da1d7f964e5f6c2d9fe2aaa97517f6b23fa2b` | Spoke-2 | impl | live | no |
 | base | `0xd40871a6336fd19a25a7bd96c0c0dd66ed60931d` | CircleDecoder | impl | live | no |
 | base | `0xd517bc7ba17271a8d87be7355b2523bf5c750295` | LayerZeroAdapter | impl | live | no |
 | base | `0xd5b243f05b2906f1f6c80c6096945faada0731c1` | FreezeOnly | impl | live | no |
@@ -158,8 +170,10 @@
 | bsc | `0xc52bd1bdfa0135147d3f01a0b6d6cd0a831dfe77` | BatchRequestManager | impl | live | no |
 | bsc | `0xcbafe61d84c6fb88252a6adf1c9cb0b9d029cb99` | AsyncVault-2 | impl | live | no |
 | bsc | `0xcbdb6effc9b954d05df89c747ecaa8a143c26e6d` | OracleValuation | impl | live | no |
+| bsc | `0xcccccccccc33d538dbc2ee4feab0a7a1ff4e8a94` | CFG | impl | live | no |
 | bsc | `0xce1616505f93215751fbb41efac618b631997c38` | TokenFactory | impl | live | no |
 | bsc | `0xceb7ed5d5b3bad3088f6a1697738b60d829635c6` | ProtocolGuardian | impl | live | no |
+| bsc | `0xd30da1d7f964e5f6c2d9fe2aaa97517f6b23fa2b` | Spoke-2 | impl | live | no |
 | bsc | `0xd40871a6336fd19a25a7bd96c0c0dd66ed60931d` | CircleDecoder | impl | live | no |
 | bsc | `0xd517bc7ba17271a8d87be7355b2523bf5c750295` | LayerZeroAdapter | impl | live | no |
 | bsc | `0xd5b243f05b2906f1f6c80c6096945faada0731c1` | FreezeOnly | impl | live | no |
@@ -248,21 +262,26 @@
 | ethereum | `0x8c213ee79581ff4984583c6a801e5263418c4b86` | Tranche | impl | live | no |
 | ethereum | `0x8ca5372a5613a6df75fd5fbc43216e68c1be6d38` | VaultDecoder | impl | live | no |
 | ethereum | `0x8e680873b4c77e6088b4ba0abd59d100c3d224a4` | FullRestrictions | impl | live | no |
+| ethereum | `0x91808b5e2f6d7483d41a681034d7c9dbb64b9e29` | PoolManager | impl | live | no |
 | ethereum | `0x9477724bb54ad5417de8baff29e59df3fb4da74f` | ShareToken-3 | impl | live | no |
 | ethereum | `0x971aca9b4ab4895f400ba042fd10a31c7918d220` | QueueManager | impl | live | no |
 | ethereum | `0x97cc7e9dafdd725cc23b25eebc93c4384b4fe30a` | MessageProcessor | impl | live | no |
 | ethereum | `0xa4a7bb3831958463b3fe3e27a6a160f764341953` | Hub | impl | live | no |
 | ethereum | `0xa6233014b9b7aaa74f38fa1977ffc7a89642dc72` | ShareToken-3 | impl | live | no |
 | ethereum | `0xaaa0008c8cf3a7dca931adaf04336a5d808c82cc` | ShareToken-3 | impl | live | no |
+| ethereum | `0xacf3c07bebd65d5f7d86bc0bc716026a0c523069` | IouCfg | impl | live | no |
 | ethereum | `0xaffc269c8fe18ee9c7ddb22301ac2c2507d69bef` | ShareClassManager | impl | live | no |
+| ethereum | `0xb1a07d21fc8ed1ef2208395bb3b262c66d3d3281` | CentrifugeRouter | impl | live | no |
 | ethereum | `0xbebef21d686a957dececce6a58455fa0f16754be` | GasService | impl | live | no |
 | ethereum | `0xbfc7b60684880457030c08acee2e675cbcb9d646` | SubsidyManager | impl | live | no |
 | ethereum | `0xc4f9a1dcf2e05eb55abb30baa7070838d3fd3d5b` | RefundEscrowFactory | impl | live | no |
 | ethereum | `0xc5243bdea2d86ea7541ac69084df3eddc137a18b` | MerkleProofManagerFactory | impl | live | no |
 | ethereum | `0xc52bd1bdfa0135147d3f01a0b6d6cd0a831dfe77` | BatchRequestManager | impl | live | no |
 | ethereum | `0xcbdb6effc9b954d05df89c747ecaa8a143c26e6d` | OracleValuation | impl | live | no |
+| ethereum | `0xcccccccccc33d538dbc2ee4feab0a7a1ff4e8a94` | CFG | impl | live | no |
 | ethereum | `0xce1616505f93215751fbb41efac618b631997c38` | TokenFactory | impl | live | no |
 | ethereum | `0xceb7ed5d5b3bad3088f6a1697738b60d829635c6` | ProtocolGuardian | impl | live | no |
+| ethereum | `0xd30da1d7f964e5f6c2d9fe2aaa97517f6b23fa2b` | Spoke-3 | impl | live | no |
 | ethereum | `0xd40871a6336fd19a25a7bd96c0c0dd66ed60931d` | CircleDecoder | impl | live | no |
 | ethereum | `0xd517bc7ba17271a8d87be7355b2523bf5c750295` | LayerZeroAdapter | impl | live | no |
 | ethereum | `0xd5b243f05b2906f1f6c80c6096945faada0731c1` | FreezeOnly | impl | live | no |

@@ -1,0 +1,28 @@
+{
+  "component": "SynthereumIdentifierWhitelist",
+  "main_contract": "SynthereumIdentifierWhitelist",
+  "source_entry_count": 99,
+  "source_file_count": 99,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SynthereumIdentifierWhitelist\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x03bc653285f8527e1c877b18df285e66898864b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

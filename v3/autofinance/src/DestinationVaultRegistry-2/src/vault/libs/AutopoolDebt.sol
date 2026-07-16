@@ -3,7 +3,7 @@
 
 pragma solidity ^0.8.24;
 
-import { Errors } from "src/utils/Errors.sol";
+import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
 import { LibAdapter } from "src/libs/LibAdapter.sol";
 import { IDestinationVault } from "src/interfaces/vault/IDestinationVault.sol";
 import { Math } from "openzeppelin-contracts/utils/math/Math.sol";
@@ -220,7 +220,7 @@ library AutopoolDebt {
                 || flashResultInfo.tokenInBalanceAfter
                     < flashResultInfo.tokenInBalanceBefore + args.rebalanceParams.amountIn
         ) {
-            revert Errors.FlashLoanFailed(args.rebalanceParams.tokenIn, args.rebalanceParams.amountIn);
+            revert AutopilotErrors.FlashLoanFailed(args.rebalanceParams.tokenIn, args.rebalanceParams.amountIn);
         }
 
         AutopoolStrategyHooks.executeHooks(
@@ -259,12 +259,12 @@ library AutopoolDebt {
     function validateRebalanceParams(AutopoolState storage $, ProcessRebalanceParams memory args) private view {
         address autopool = address(this);
 
-        Errors.verifyNotZero(args.rebalanceParams.destinationIn, "destinationIn");
-        Errors.verifyNotZero(args.rebalanceParams.destinationOut, "destinationOut");
-        Errors.verifyNotZero(args.rebalanceParams.tokenIn, "tokenIn");
-        Errors.verifyNotZero(args.rebalanceParams.tokenOut, "tokenOut");
-        Errors.verifyNotZero(args.rebalanceParams.amountIn, "amountIn");
-        Errors.verifyNotZero(args.rebalanceParams.amountOut, "amountOut");
+        AutopilotErrors.verifyNotZero(args.rebalanceParams.destinationIn, "destinationIn");
+        AutopilotErrors.verifyNotZero(args.rebalanceParams.destinationOut, "destinationOut");
+        AutopilotErrors.verifyNotZero(args.rebalanceParams.tokenIn, "tokenIn");
+        AutopilotErrors.verifyNotZero(args.rebalanceParams.tokenOut, "tokenOut");
+        AutopilotErrors.verifyNotZero(args.rebalanceParams.amountIn, "amountIn");
+        AutopilotErrors.verifyNotZero(args.rebalanceParams.amountOut, "amountOut");
 
         ensureDestinationRegistered(autopool, args.rebalanceParams.destinationIn);
         ensureDestinationRegistered(autopool, args.rebalanceParams.destinationOut);
@@ -1167,7 +1167,7 @@ library AutopoolDebt {
 
             // If the recursive call is successful, it means an unintended code path was taken.
             if (success) {
-                revert Errors.UnreachableError();
+                revert AutopilotErrors.UnreachableError();
             }
 
             bytes4 sharesAmountSig = bytes4(keccak256("SharesAndAssetsReceived(uint256,uint256)"));

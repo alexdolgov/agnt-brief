@@ -1,0 +1,28 @@
+{
+  "component": "ActivePool",
+  "main_contract": "ActivePool",
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ActivePool\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8ceaba86d4ae89f582a52e020ecf7f1f2f3e2a78",
+      "is_proxy": true,
+      "implementation_address": "0xf4aa27c4aa640e7ed7c845e96668e0aeabced932",
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

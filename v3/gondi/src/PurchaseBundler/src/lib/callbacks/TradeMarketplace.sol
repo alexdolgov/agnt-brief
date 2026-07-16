@@ -33,13 +33,12 @@ contract TradeMarketplace is ITradeMarketplace {
         INITIAL_DOMAIN_SEPARATOR = _computeDomainSeparator();
     }
 
-    function executeOrder(Order memory order) public virtual override {
+    function executeOrder(Order memory order) public override {
         _executeOrder(order, msg.sender);
     }
 
     function _executeOrder(Order memory order, address taker) internal {
         _isValidOrder(order);
-        cancelled[order.maker][order.nonce] = true;
 
         if (order.isAsk) {
             _transferCurrency(order.currency, taker, order.maker, order.price);
@@ -108,6 +107,7 @@ contract TradeMarketplace is ITradeMarketplace {
     function _transferCurrency(address token, address from, address to, uint256 amount) private {
         if (from == address(this)) {
             if (token == ETH) {
+                uint256 balance = address(this).balance;
                 to.safeTransferETH(amount);
             } else {
                 ERC20(token).safeTransfer(to, amount);

@@ -1,0 +1,385 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.26;
+
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
+
+interface IMonstroNFT {
+    function mint(address to, uint256 typeId, uint256 quantity) external;
+    function totalSupply() external view returns (uint256);
+    function totalSupplyByType(uint256 typeId) external view returns (uint256);
+    function ownerOf(uint256 tokenId) external view returns (address);
+}
+
+interface IMonstroNFTProps {
+    function getProperties(
+        uint256 tokenId
+    ) external view returns (string[] memory);
+    function getSingleProperty(
+        uint256 tokenId,
+        string memory propertyName
+    ) external view returns (string memory);
+    function setSingleProperty(
+        uint256 tokenId,
+        string memory propertyName,
+        string memory value
+    ) external;
+    function setMultipleProperties(
+        uint256 tokenId,
+        string[25] memory propertyNames,
+        string[25] memory values
+    ) external;
+}
+
+/**
+ * @title MonstroNFTSale
+ * @dev A flexible sale contract allowing multiple sale types with adjustable parameters and payout wallets.
+ */
+contract MonstroNFTSale is Ownable {
+    IMonstroNFT private nftContract;
+    IMonstroNFTProps private nftProps;
+    IERC20 private usdcToken;
+
+    struct SaleType {
+        uint256 typeId; // Unique NFT type ID for this sale type
+        string name; // Name of the sale type
+        uint256 minInvestment; // Minimum investment amount in USDC
+        uint256 maxMintCount; // Maximum number of NFTs to be minted for this type
+        uint256 minAddOn; // Minimum add-on amount in USDC
+        uint256 maxAddOn; // Maximum add-on amount in USDC
+        address payoutWallet; // Address to receive funds from sales
+        bool isActive; // Status of the sale type (active/inactive)
+    }
+
+    mapping(uint256 => SaleType) private saleTypes; // Mapping to manage sale types by type ID
+    uint256[] private saleTypeIds; // Array to track added sale types
+    mapping(uint256 => uint256) private nftSaleType; // Map NFT token IDs to their sale type
+
+    uint256 public totalMinted;
+
+    event SaleTypeAdded(
+        uint256 indexed typeId,
+        string name,
+        uint256 minInvestment,
+        uint256 maxMintCount,
+        uint256 minAddOn,
+        uint256 maxAddOn,
+        address payoutWallet
+    );
+    event SaleTypeUpdated(
+        uint256 indexed typeId,
+        string name,
+        uint256 minInvestment,
+        uint256 maxMintCount,
+        uint256 minAddOn,
+        uint256 maxAddOn,
+        address payoutWallet,
+        bool isActive
+    );
+    event Minted(
+        address indexed to,
+        uint256 typeId,
+        uint256 amount,
+        address payoutWallet
+    );
+    event AddOn(address indexed holder, uint256 tokenId, uint256 addOnAmount);
+    event SaleTypeAssigned(uint256 indexed tokenId, uint256 typeId);
+
+    constructor(
+        address _nftContractAddress,
+        address _usdcTokenAddress,
+        address _nftPropsAddress
+    ) Ownable(msg.sender) {
+        nftContract = IMonstroNFT(_nftContractAddress);
+        nftProps = IMonstroNFTProps(_nftPropsAddress);
+        usdcToken = IERC20(_usdcTokenAddress);
+    }
+
+    /**
+     * @dev Modifier to ensure the sale type is active.
+     */
+    modifier onlyActiveSaleType(uint256 typeId) {
+        require(saleTypes[typeId].isActive, "Sale type is inactive");
+        _;
+    }
+
+    /**
+     * @dev Adds a new sale type with specific parameters.
+     * @param typeId Unique NFT type ID for this sale type.
+     * @param name Name of the sale type.
+     * @param minInvestment Minimum USDC investment for this sale type.
+     * @param maxMintCount Maximum number of NFTs to be minted.
+     * @param minAddOn Minimum USDC add-on allowed.
+     * @param maxAddOn Maximum USDC add-on allowed.
+     * @param payoutWallet Address to receive funds from each sale.
+     */
+    function addSaleType(
+        uint256 typeId,
+        string memory name,
+        uint256 minInvestment,
+        uint256 maxMintCount,
+        uint256 minAddOn,
+        uint256 maxAddOn,
+        address payoutWallet
+    ) external onlyOwner {
+        require(saleTypes[typeId].typeId == 0, "Sale type already exists");
+
+        saleTypes[typeId] = SaleType(
+            typeId,
+            name,
+            minInvestment,
+            maxMintCount,
+            minAddOn,
+            maxAddOn,
+            payoutWallet,
+            true
+        );
+        saleTypeIds.push(typeId);
+
+        emit SaleTypeAdded(
+            typeId,
+            name,
+            minInvestment,
+            maxMintCount,
+            minAddOn,
+            maxAddOn,
+            payoutWallet
+        );
+    }
+
+    /**
+     * @dev Assigns a sale type to multiple NFT token IDs, for cases where the NFTs were created outside of mintAndInvest.
+     * @param tokenIds The array of NFT token IDs to assign a sale type.
+     * @param typeId The sale type ID to assign to each token.
+     */
+    function assignSaleTypeToTokens(
+        uint256[] calldata tokenIds,
+        uint256 typeId
+    ) external onlyOwner onlyActiveSaleType(typeId) {
+        require(saleTypes[typeId].typeId != 0, "Invalid sale type");
+
+        for (uint256 i = 0; i < tokenIds.length; i++) {
+            require(
+                nftContract.ownerOf(tokenIds[i]) != address(0),
+                "NFT does not exist"
+            );
+
+            nftSaleType[tokenIds[i]] = typeId;
+
+            emit SaleTypeAssigned(tokenIds[i], typeId);
+        }
+    }
+
+    /**
+     * @dev Mints NFTs based on the specified sale type, with USDC payment.
+     * @param typeId ID of the sale type to participate in.
+     * @param baseAmount USDC investment amount (in smallest units, 1e6 = 1 USDC).
+     */
+    function mintAndInvest(
+        uint256 typeId,
+        uint256 baseAmount
+    ) external onlyActiveSaleType(typeId) {
+        SaleType memory sale = saleTypes[typeId];
+
+        uint256 currentSupply = nftContract.totalSupplyByType(sale.typeId);
+        require(currentSupply < sale.maxMintCount, "Sale type sold out");
+
+        require(baseAmount >= sale.minInvestment, "Investment below minimum");
+
+        uint256 totalAmount = (baseAmount / 1e6) * 1e6;
+
+        // Transfer funds to the payout wallet immediately upon sale
+        usdcToken.transferFrom(msg.sender, sale.payoutWallet, totalAmount);
+
+        uint256 tokenId = totalMinted;
+        nftContract.mint(msg.sender, sale.typeId, 1);
+        nftSaleType[tokenId] = typeId; // Map the tokenId to its sale type
+
+        // Initialize the "investment" property with the base amount as a string and "mintDate" with current timestamp
+        string[25] memory propertyNames;
+        propertyNames[0] = "investment";
+        propertyNames[1] = "mintDate";
+        string[25] memory propertyValues;
+        propertyValues[0] = uintToStr(baseAmount);
+        propertyValues[1] = uintToStr(block.timestamp);
+        nftProps.setMultipleProperties(tokenId, propertyNames, propertyValues);
+
+        //Increment internal tokenId counter
+        totalMinted += 1;
+
+        emit Minted(msg.sender, sale.typeId, totalAmount, sale.payoutWallet);
+    }
+
+    /**
+     * @dev Allows anyone to add funds to an existing NFT even if they do not own it.
+     * @param tokenId The NFT token ID to add funds to.
+     * @param addOnAmount The amount of USDC to add (in smallest units, 1e6 = 1 USDC).
+     */
+    function addOnFunds(uint256 tokenId, uint256 addOnAmount) external {
+        uint256 typeId = nftSaleType[tokenId];
+        SaleType memory sale = saleTypes[typeId];
+
+        require(sale.isActive, "Sale type is inactive");
+        require(
+            nftContract.ownerOf(tokenId) != address(0),
+            "NFT does not exist"
+        );
+        require(
+            addOnAmount >= sale.minAddOn && addOnAmount <= sale.maxAddOn,
+            "Add-on amount out of range"
+        );
+
+        // Transfer add-on amount to the payout wallet
+        usdcToken.transferFrom(msg.sender, sale.payoutWallet, addOnAmount);
+
+        // Update the "investment" property
+        string memory currentInvestment = nftProps.getSingleProperty(
+            tokenId,
+            "investment"
+        );
+        uint256 updatedInvestment = addOnAmount + strToUint(currentInvestment);
+        nftProps.setSingleProperty(
+            tokenId,
+            "investment",
+            uintToStr(updatedInvestment)
+        );
+
+        emit AddOn(msg.sender, tokenId, addOnAmount);
+    }
+
+    /**
+     * @dev Updates an existing sale type.
+     * @param typeId Unique ID for the sale type.
+     * @param name Updated name of the sale type.
+     * @param minInvestment Updated minimum USDC investment.
+     * @param maxMintCount Updated maximum number of NFTs to be minted.
+     * @param minAddOn Updated minimum USDC add-on allowed.
+     * @param maxAddOn Updated maximum USDC add-on allowed.
+     * @param payoutWallet Updated address to receive funds from sales.
+     * @param isActive Set to false to deactivate the sale type.
+     */
+    function updateSaleType(
+        uint256 typeId,
+        string memory name,
+        uint256 minInvestment,
+        uint256 maxMintCount,
+        uint256 minAddOn,
+        uint256 maxAddOn,
+        address payoutWallet,
+        bool isActive
+    ) external onlyOwner {
+        require(saleTypes[typeId].typeId != 0, "Sale type does not exist");
+
+        saleTypes[typeId] = SaleType(
+            typeId,
+            name,
+            minInvestment,
+            maxMintCount,
+            minAddOn,
+            maxAddOn,
+            payoutWallet,
+            isActive
+        );
+
+        emit SaleTypeUpdated(
+            typeId,
+            name,
+            minInvestment,
+            maxMintCount,
+            minAddOn,
+            maxAddOn,
+            payoutWallet,
+            isActive
+        );
+    }
+
+    /**
+     * @dev Returns all sale types that have been added to the contract, in the format [[typeId, name], ...].
+     * @return Array of arrays, each containing [typeId, name] for each sale type.
+     */
+    function getAllSaleTypes() external view returns (SaleType[] memory) {
+        SaleType[] memory allSaleTypes = new SaleType[](saleTypeIds.length);
+
+        uint256 j = 0;
+        for (uint256 i = 0; i < saleTypeIds.length; i++) {
+            uint256 typeId = saleTypeIds[i];
+            if (saleTypes[typeId].isActive) {
+                allSaleTypes[j] = saleTypes[typeId];
+                j++;
+            }
+        }
+
+        return allSaleTypes;
+    }
+
+    /**
+     * @dev Retrieves the sale type ID assigned to a specific NFT token ID.
+     * @param tokenId The NFT token ID.
+     * @return uint256 The sale type ID assigned to the token.
+     */
+    function getSaleTypeForToken(
+        uint256 tokenId
+    ) external view returns (uint256) {
+        require(nftSaleType[tokenId] != 0, "No sale type assigned to token");
+        return nftSaleType[tokenId];
+    }
+
+    /**
+     * @dev Returns the total minted NFTs for a specific sale type.
+     * @param typeId The sale type ID to check.
+     * @return uint256 Total number of NFTs minted for the sale type.
+     */
+    function getTotalMintedBySaleType(
+        uint256 typeId
+    ) external view returns (uint256) {
+        SaleType memory sale = saleTypes[typeId];
+        return nftContract.totalSupplyByType(sale.typeId);
+    }
+
+    /**
+     * @dev Converts a `uint256` to its ASCII `string` decimal representation.
+     */
+    function uintToStr(uint256 _i) internal pure returns (string memory) {
+        if (_i == 0) {
+            return "0";
+        }
+        uint256 temp = _i;
+        uint256 digits;
+        while (temp != 0) {
+            digits++;
+            temp /= 10;
+        }
+        bytes memory buffer = new bytes(digits);
+        while (_i != 0) {
+            digits -= 1;
+            buffer[digits] = bytes1(uint8(48 + uint256(_i % 10)));
+            _i /= 10;
+        }
+        return string(buffer);
+    }
+
+    /**
+     * @dev Converts a `string` to its `uint256` representation.
+     */
+    function strToUint(string memory s) internal pure returns (uint256) {
+        bytes memory b = bytes(s);
+        uint256 result = 0;
+        for (uint256 i = 0; i < b.length; i++) {
+            require(
+                b[i] >= 0x30 && b[i] <= 0x39,
+                "Invalid character in string"
+            ); // Ensure it's a digit
+            result = result * 10 + (uint256(uint8(b[i])) - 48);
+        }
+        return result;
+    }
+
+    /**
+     * @dev Updates the total number of minted NFTs.
+     * @param _count The new value for the totalMinted variable.
+     */
+    function updateTotalMinted(uint256 _count) external onlyOwner {
+        totalMinted = _count;
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "component": "FraxFarm_UniV3_veFXS_FRAX_DAI",
+  "main_contract": "FraxFarm_UniV3_veFXS_FRAX_DAI",
+  "source_entry_count": 28,
+  "source_file_count": 28,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FraxFarm_UniV3_veFXS_FRAX_DAI\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x80fac16d5b7e7973048951678dd78d16cbfc8dfd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

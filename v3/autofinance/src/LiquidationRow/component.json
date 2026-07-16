@@ -1,8 +1,8 @@
 {
   "component": "LiquidationRow",
   "main_contract": "LiquidationRow",
-  "source_entry_count": 70,
-  "source_file_count": 70,
+  "source_entry_count": 66,
+  "source_file_count": 66,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x610ffeb00b8312b0540ded300c683227cb3e3ab5",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf570ea70106b8e109222297f9a90da477658d481",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391792"
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

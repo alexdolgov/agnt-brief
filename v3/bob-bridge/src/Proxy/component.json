@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x097f99768a0a4a0a81babbcb1ea18193ba9d53cc",
+      "is_proxy": true,
+      "implementation_address": "0xb08cc720f511062537ca78bdb0ae691f04f5a957",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "ethereum",
       "chain_id": 1,

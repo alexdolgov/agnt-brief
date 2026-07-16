@@ -11,20 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/hakkafinance/audit-reports/blob/main/PeckShield-Audit-Report-Urban-Giggle-v1.0.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x79eb6f02e9ac26a6fbc4e73dee0b8991d0c55f4a",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf4d1f9674c8e9f29a69dc2e6f841292e675b7977",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "394896"
+      "logic_topography_row_id": "394890"
     }
   ]
 }

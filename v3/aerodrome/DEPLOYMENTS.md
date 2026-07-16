@@ -1,26 +1,66 @@
 # aerodrome — deployments
 
-20 verified deployment(s) across 20 component(s).
+60 verified deployment(s) across 60 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| base | `0x0030c7dc6cb7f449e9566f273342c3370ee6b16a` | OETHDripper | impl | unknown | no |
 | base | `0x01b0cacb9a8004e08d075c919b5df3b59fd53c55` | NonfungibleTokenPositionDescriptor | impl | live | no |
+| base | `0x02f2c609950e90934ce99e58b4d7326ad0d7f8d6` | OETHBaseDripperProxy | proxy | unknown | no |
+| base | `0x0681d141da398e567a677f0eaf13c8815c4ec818` | NFTDescriptor | impl | unknown | no |
 | base | `0x0a5aa5d3a4d28014f967bf0f29eaa3ff9807d5c6` | MixedRouteQuoterV1 | impl | live | no |
 | base | `0x0ad08370c76ff426f534bb2affd9b5555338ee68` | CustomUnstakedFeeModule | impl | live | no |
 | base | `0x0ad09a66af0154a84e86f761313d02d0abb6edd5` | SugarHelper | impl | live | no |
+| base | `0x0b3a7479694d678fb34ef737811cb31b9dd9990e` | PerlinNoise | impl | unknown | no |
+| base | `0x0c314190b0b78513fd908c3bfe3c83ef5f5bbde3` | NonfungiblePositionManager | impl | unknown | no |
+| base | `0x0cbeacf86232fc04050cd679d860516f7254c22e` | OETHBaseHarvesterProxy | proxy | unknown | no |
+| base | `0x10b342e0205fc20a0934d1a0f25e270520439989` | OETH | impl | unknown | no |
+| base | `0x1296a1b532e33f01091cf728706a94268c6025b5` | CLGauge | impl | unknown | no |
 | base | `0x15e62707fca7352fbe35f51a8d6b0f8066a05dcc` | Forwarder | impl | live | no |
 | base | `0x16613524e02ad97edfef371bc883f2f5d6c480a5` | Voter | impl | live | no |
+| base | `0x1c62a3c2620f2fb7ba5d50c9da2dec214cb82be9` | OETHBase | impl | unknown | no |
+| base | `0x1d75c4dda3d28b4f2ab634c439e495cf211a216f` | Trig | impl | unknown | no |
+| base | `0x212665aaea8da0a3b71a47a53b3100ef4cf4dc52` | NFTSVG | impl | unknown | no |
 | base | `0x227f65131a261548b057215bb1d5ab2997964c7d` | RewardsDistributor | impl | live | no |
 | base | `0x254cf9e1e6e233aa1ac962cb9b05b2cfeaae15b0` | QuoterV2 | impl | live | no |
+| base | `0x2dd4162d4685657c06cd8f027cca3208311ca9d1` | CustomSwapFeeModule | impl | unknown | no |
+| base | `0x2e1826c5a9d7fa49b1b6f54f9b6e47281a583408` | WOETHBase | impl | unknown | no |
 | base | `0x35f35ca5b132cadf2916bab57639128eac5bbcb5` | GaugeFactory | impl | live | no |
+| base | `0x362dbd4ff662b2e2b05b9cedc91da2dd2c655b26` | BaseBridgeHelperModule | impl | unknown | no |
+| base | `0x3ab1a16622bc5bdd1619d427fb1a6f73c71be23d` | PatchedManagedRewardsFactory | impl | unknown | no |
+| base | `0x3b56c09543d3068f8488ed34e6f383c3854d2bc1` | OETHBaseZapper | impl | unknown | no |
+| base | `0x3e703fd2b6506e2abcce2c8b5633872a7d9b6fbc` | CLGaugeFactory | impl | unknown | no |
 | base | `0x420dd381b31aef6683db6b902084cb0ffece40da` | PoolFactory | proxy | live | no |
+| base | `0x430d459700add442a501f4b3c70de7f9c3d75fb8` | Counter | impl | unknown | no |
 | base | `0x45ca74858c579e717ee29a86042e0d53b252b504` | VotingRewardsFactory | impl | live | no |
+| base | `0x49540630a4d2ce67d54450d007d634f4c45b4f4f` | MixedRouteQuoterV2 | impl | unknown | no |
+| base | `0x4a759f78b1a1995b57c9d3b40eb1cdc2b66caaab` | OETHBaseVaultCore | impl | unknown | no |
 | base | `0x5e7bb104d84c7cb9b682aac2f3d509f5f406809a` | CLFactory | impl | live | no |
+| base | `0x5f81a5a22375ebcc2075b162d23a5b16a1e7a92d` | CrossChainRemoteStrategy | impl | unknown | no |
 | base | `0x6cb442acf35158d5eda88fe602221b67b400be3e` | UniversalRouter | impl | live | no |
+| base | `0x6d04c71d805c158a3e786b3feed3a6b490f79670` | CCTPHookWrapper | impl | unknown | no |
+| base | `0x80c864704dd06c3693ed5179190786ee38acf835` | BridgedWOETHStrategyProxy | proxy | unknown | no |
+| base | `0x851de5ea424557b52d1d6debe5bda12a7d37904b` | DirectStakingHandlerL2 | impl | unknown | no |
+| base | `0x88e336956de7b74627fdfd548656b55501a0471f` | CLPool | impl | unknown | no |
+| base | `0x940181a94a35a4569e4529a3cdfb74e38fd98631` | Aero | impl | unknown | no |
+| base | `0x94c012a23a8a65a6f40608da30534a46a433f410` | ProtocolGovernor | impl | unknown | no |
+| base | `0x9745a051bd218d78eb6b5d0f53c685f6b052d478` | WOETH | impl | unknown | no |
+| base | `0x98a0cbef61bd2d21435f433be4cd42b56b38cc93` | OETHBaseVaultProxy | proxy | unknown | no |
+| base | `0x9d98cf85b65fa1acef5e9aaa2300753adf7bcf6a` | OETHVaultValueChecker | impl | unknown | no |
+| base | `0xa50fd560af7433d00d231b397512f5df375ffad8` | OETHBaseHarvester | impl | unknown | no |
+| base | `0xa96fd141e92de60394103c7f9e045662913820f9` | OUSDVault | impl | unknown | no |
+| base | `0xbc80da22601eae8720ed8ab117eb88c92b97c75b` | OETHBaseOracleRouter | impl | unknown | no |
 | base | `0xbe6d8f0d05cc4be24d5167a3ef062215be6d18a5` | SwapRouter | proxy | live | no |
+| base | `0xc5d36960ffe43687ab1cb4f905b97f0a064f38e0` | OETHbHydrexAMOStrategy | impl | unknown | no |
 | base | `0xcf77a3ba9a5ca399b7c97c74d54e5b1beb874e43` | Router | impl | live | no |
+| base | `0xd50f7d13632ccadcf24fb74676981099fe70d1a7` | OETHBaseVaultAdmin | impl | unknown | no |
+| base | `0xd8724322f44e5c58d7a815f542036fb17dbbf839` | BridgedBaseWOETHProxy | proxy | unknown | no |
+| base | `0xdb282a4935fdab14a1b5ff14a4de75e100b4c1e3` | DirectStakingBaseHandlerProxy | impl | unknown | no |
+| base | `0xe6bebe3072ff42a7c2a4a5a9864b30bc5608d9c3` | OETHbHydrexAMOProxy | impl | unknown | no |
 | base | `0xe9992487b2ee03b7a91241695a58e0ef3654643e` | VeArtProxy | impl | live | no |
+| base | `0xe9f783e7d9fceb90988fdf89bbb2bc3e7092fd66` | OETHVault | impl | unknown | no |
 | base | `0xeb018363f0a9af8f91f06fee6613a751b2a33fe5` | Minter | impl | live | no |
 | base | `0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4` | VotingEscrow | impl | live | no |
 | base | `0xee717411f6e44f9fee011835c8e6faac5deff166` | BasePrices | impl | live | no |
+| base | `0xf817cb3092179083c48c014688d98b72fb61464f` | Timelock | impl | unknown | no |
 | base | `0xfda1fb5a2a5b23638c7017950506a36dcfd2bdc3` | ManagedRewardsFactory | impl | live | no |

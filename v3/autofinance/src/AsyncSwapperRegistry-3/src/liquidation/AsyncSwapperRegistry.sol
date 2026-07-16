@@ -8,7 +8,7 @@ import { IAsyncSwapperRegistry } from "src/interfaces/liquidation/IAsyncSwapperR
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
 import { SecurityBase } from "src/security/SecurityBase.sol";
 import { Roles } from "src/libs/Roles.sol";
-import { Errors } from "src/utils/Errors.sol";
+import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
 import { SystemComponent } from "src/SystemComponent.sol";
 
 contract AsyncSwapperRegistry is SystemComponent, IAsyncSwapperRegistry, SecurityBase {
@@ -24,9 +24,9 @@ contract AsyncSwapperRegistry is SystemComponent, IAsyncSwapperRegistry, Securit
     function register(
         address swapperAddress
     ) external override hasRole(Roles.AUTO_POOL_REGISTRY_UPDATER) {
-        Errors.verifyNotZero(swapperAddress, "swapperAddress");
+        AutopilotErrors.verifyNotZero(swapperAddress, "swapperAddress");
 
-        if (!_swappers.add(swapperAddress)) revert Errors.ItemExists();
+        if (!_swappers.add(swapperAddress)) revert AutopilotErrors.ItemExists();
 
         emit SwapperAdded(swapperAddress);
     }
@@ -35,9 +35,9 @@ contract AsyncSwapperRegistry is SystemComponent, IAsyncSwapperRegistry, Securit
     function unregister(
         address swapperAddress
     ) external override hasRole(Roles.AUTO_POOL_REGISTRY_UPDATER) {
-        Errors.verifyNotZero(swapperAddress, "swapperAddress");
+        AutopilotErrors.verifyNotZero(swapperAddress, "swapperAddress");
 
-        if (!_swappers.remove(swapperAddress)) revert Errors.ItemNotFound();
+        if (!_swappers.remove(swapperAddress)) revert AutopilotErrors.ItemNotFound();
 
         emit SwapperRemoved(swapperAddress);
     }
@@ -53,7 +53,7 @@ contract AsyncSwapperRegistry is SystemComponent, IAsyncSwapperRegistry, Securit
     function verifyIsRegistered(
         address swapperAddress
     ) external view override {
-        if (!_swappers.contains(swapperAddress)) revert Errors.NotRegistered();
+        if (!_swappers.contains(swapperAddress)) revert AutopilotErrors.NotRegistered();
     }
 
     /// @inheritdoc IAsyncSwapperRegistry

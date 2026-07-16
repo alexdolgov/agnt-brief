@@ -34,7 +34,7 @@ abstract contract BaseLoan is ERC721TokenReceiver, IBaseLoan, LiquidationHandler
     /// @notice Precision used for calculating interests.
     uint256 internal constant _PRECISION = 10000;
 
-    bytes public constant VERSION = '3.1';
+    bytes public constant VERSION = "3.1";
 
     /// @notice Minimum improvement (in BPS) required for a strict improvement.
     uint256 internal _minImprovementApr = 1000;

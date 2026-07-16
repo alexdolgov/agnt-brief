@@ -13,6 +13,9 @@ contract TradeMarketplace is ITradeMarketplace {
     using Hash for ITradeMarketplace.Order;
     using MessageHashUtils for bytes32;
     using SafeTransferLib for ERC20;
+    using SafeTransferLib for address;
+
+    address public constant ETH = 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE;
 
     mapping(address => uint256) public minNonce;
     mapping(address => mapping(uint256 => bool)) public cancelled;
@@ -37,13 +40,11 @@ contract TradeMarketplace is ITradeMarketplace {
     function _executeOrder(Order memory order, address taker) internal {
         _isValidOrder(order);
 
-        ERC20 currency = ERC20(order.currency);
-
         if (order.isAsk) {
-            _transferERC20(currency, taker, order.maker, order.price);
+            _transferCurrency(order.currency, taker, order.maker, order.price);
             ERC721(order.collection).safeTransferFrom(order.maker, taker, order.tokenId);
         } else {
-            _transferERC20(currency, order.maker, taker, order.price);
+            _transferCurrency(order.currency, order.maker, taker, order.price);
             ERC721(order.collection).safeTransferFrom(taker, order.maker, order.tokenId);
         }
 
@@ -103,11 +104,19 @@ contract TradeMarketplace is ITradeMarketplace {
         }
     }
 
-    function _transferERC20(ERC20 token, address from, address to, uint256 amount) private {
+    function _transferCurrency(address token, address from, address to, uint256 amount) private {
         if (from == address(this)) {
-            token.safeTransfer(to, amount);
+            if (token == ETH) {
+                uint256 balance = address(this).balance;
+                to.safeTransferETH(amount);
+            } else {
+                ERC20(token).safeTransfer(to, amount);
+            }
         } else {
-            token.safeTransferFrom(from, to, amount);
+            if (token == ETH) {
+                revert InvalidCurrencyError();
+            }
+            ERC20(token).safeTransferFrom(from, to, amount);
         }
     }
 

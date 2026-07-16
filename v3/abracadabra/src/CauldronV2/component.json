@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/CauldronV2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 4,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -27,12 +27,32 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
+      "address": "0x59e9082e068ddb27fc5ef1690f9a9f22b32e573f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
       "address": "0x5ec47ee69bede0b6c2a2fc0d9d094df16c192498",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "390563"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbc36fde44a7fd8f545d459452ef9539d7a14dd63",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "ethereum",

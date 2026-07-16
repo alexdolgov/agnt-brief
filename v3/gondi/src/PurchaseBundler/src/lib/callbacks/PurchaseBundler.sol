@@ -22,14 +22,12 @@ import "../utils/WithProtocolFee.sol";
 import "../loans/MultiSourceLoan.sol";
 import "../utils/BytesLib.sol";
 import "../AddressManager.sol";
-import "../AddressMethodManager.sol";
 import "../InputChecker.sol";
 import "./TradeMarketplace.sol";
 import {IAaveFlashLoanReceiver} from "../../interfaces/external/IAaveFlashLoanReceiver.sol";
 import {IPoolAddressesProvider} from "@aave/interfaces/IPoolAddressesProvider.sol";
 import {IPermit2} from "@permit2/interfaces/IPermit2.sol";
 import {PURCHASE_BUNDLER_TAX_UPDATE_NOTICE} from "@const/const.sol";
-import {Pausable} from "@openzeppelin/utils/Pausable.sol";
 
 contract PurchaseBundler is
     IPurchaseBundler,
@@ -38,8 +36,7 @@ contract PurchaseBundler is
     WithProtocolFee,
     TradeMarketplace,
     IAaveFlashLoanReceiver,
-    Multicall,
-    Pausable
+    Multicall
 {
     using FixedPointMathLib for uint256;
     using BytesLib for bytes;
@@ -72,8 +69,7 @@ contract PurchaseBundler is
     uint256 private constant _SWAPDATA_EXECUTION_COUNTER_TOFFSET = 0x20;
     uint256 private constant _SWAPDATA_MAXBYTES = 0x2000;
 
-    AddressMethodManager private immutable _marketplaceContractsAddressManager;
-    AddressManager private immutable _priceQuoterAddressManager;
+    AddressManager private immutable _marketplaceContractsAddressManager;
     AddressManager private immutable _currencyManager;
     WETH private immutable _weth;
 
@@ -109,12 +105,12 @@ contract PurchaseBundler is
     error InvalidTaxesError(Taxes newTaxes);
     error InvalidCollateralError();
     error InvalidExecutionData();
+    error InvalidTargetContractError();
 
     constructor(
         string memory name,
         address multiSourceLoanAddress,
         address marketplaceContracts,
-        address priceQuoterContracts,
         address payable wethAddress,
         address payable punkMarketAddress,
         address payable wrappedPunkAddress,
@@ -126,14 +122,12 @@ contract PurchaseBundler is
         Taxes memory punkTaxes,
         uint256 minWaitTime,
         ProtocolFee memory protocolFee
-    ) WithProtocolFee(msg.sender, minWaitTime, protocolFee) TradeMarketplace(name) {
+    ) WithProtocolFee(tx.origin, minWaitTime, protocolFee) TradeMarketplace(name) {
         multiSourceLoanAddress.checkNotZero();
         marketplaceContracts.checkNotZero();
-        priceQuoterContracts.checkNotZero();
 
         _multiSourceLoan = MultiSourceLoan(multiSourceLoanAddress);
-        _marketplaceContractsAddressManager = AddressMethodManager(marketplaceContracts);
-        _priceQuoterAddressManager = AddressManager(priceQuoterContracts);
+        _marketplaceContractsAddressManager = AddressManager(marketplaceContracts);
         _weth = WETH(wethAddress);
         _punkMarket = ICryptoPunksMarket(punkMarketAddress);
         _wrappedPunk = IWrappedPunk(wrappedPunkAddress);
@@ -182,7 +176,10 @@ contract PurchaseBundler is
 
     function _saveOneSwapData(bytes memory data, uint256 index) private {
         uint256 length = data.length;
-        if (length == 0 || length > _SWAPDATA_MAXBYTES) {
+        if (length == 0) {
+            revert InvalidSwapDataLengthError();
+        }
+        if (length > _SWAPDATA_MAXBYTES) {
             revert InvalidSwapDataLengthError();
         }
         assembly {
@@ -250,31 +247,23 @@ contract PurchaseBundler is
     }
 
     function approveForSwap(address currency) external {
-        _requireCurrencyWhitelisted(currency);
+        if (!_currencyManager.isWhitelisted(currency)) {
+            revert CurrencyNotWhitelisted();
+        }
         ERC20(currency).safeApprove(address(_permit2), type(uint256).max);
     }
 
     /// @inheritdoc IPurchaseBundler
     /// @dev Buy calls emit loan -> Before trying to transfer the NFT but after transfering the principal
     /// emitLoan will call the afterPrincipalTransfer Hook, which will execute the purchase.
-    function buy(bytes[] calldata executionData)
-        external
-        payable
-        nonReentrant
-        whenNotPaused
-        returns (uint256[] memory loanIds)
-    {
+    function buy(bytes[] calldata executionData) external payable nonReentrant returns (uint256[] memory loanIds) {
         loanIds = _buy(executionData);
     }
 
     /// @dev Similar to buy. Hook is called after the NFT transfer but before transfering WETH for repayment.
     /// @inheritdoc IPurchaseBundler
-    function sell(bytes[] calldata executionData, bytes[] calldata swapData) external nonReentrant whenNotPaused {
-        (ERC721[] memory collections, uint256[] memory tokenIds) = _decodeCollateral(executionData);
+    function sell(bytes[] calldata executionData, bytes[] calldata swapData) external nonReentrant {
         _sell(executionData, swapData);
-        for (uint256 i = 0; i < collections.length; ++i) {
-            _givebackNFTOrPunk(collections[i], tokenIds[i]);
-        }
     }
 
     function executeSell(
@@ -285,21 +274,27 @@ contract PurchaseBundler is
         address marketPlace,
         bytes[] calldata executionData,
         bytes[] calldata swapData
-    ) external payable nonReentrant whenNotPaused _storeMsgSender {
+    ) external payable nonReentrant _storeMsgSender {
         if (executionData.length != collections.length || collections.length != tokenIds.length) {
             revert InvalidExecutionData();
         }
 
         // Validate that collections/tokenIds match the loan collateral
-        _validateCollateral(executionData, collections, tokenIds);
+        for (uint256 i = 0; i < executionData.length; ++i) {
+            if (executionData[i].length <= 4) {
+                revert InvalidExecutionData();
+            }
+            IMultiSourceLoan.LoanRepaymentData memory repaymentData =
+                abi.decode(executionData[i][4:], (IMultiSourceLoan.LoanRepaymentData));
+            if (
+                address(collections[i]) != repaymentData.loan.nftCollateralAddress
+                    || tokenIds[i] != repaymentData.loan.nftCollateralTokenId
+            ) {
+                revert InvalidCollateralError();
+            }
+        }
 
-        // Address-only check (no selector check, unlike `swapAndExecute` / the callbacks).
-        // `marketPlace` is used here purely as an approval target — `safeApprove` and
-        // `setApprovalForAll` below — never as a direct `.call` target. The actual marketplace
-        // invocation happens later in the `_afterNFTTransfer` callback, which enforces the
-        // method-level whitelist on the inner `executionInfo.module`/`executionInfo.data`. If
-        // that callback reverts, the whole transaction (including the approvals) rolls back.
-        if (!_marketplaceContractsAddressManager.isAddressWhitelisted(marketPlace)) {
+        if (!_marketplaceContractsAddressManager.isWhitelisted(marketPlace)) {
             revert MarketplaceAddressNotWhitelisted();
         }
 
@@ -307,7 +302,9 @@ contract PurchaseBundler is
         for (uint256 i = 0; i < currencies.length; ++i) {
             address currency = currencies[i];
             bool isERC20 = currency != ETH;
-            _requireCurrencyWhitelisted(currency);
+            if (!_currencyManager.isWhitelisted(address(currency)) && isERC20) {
+                revert CurrencyNotWhitelisted();
+            }
             uint256 balance = _getBalance(currency);
             bool notEnoughBalance = currencyAmounts[i] > balance;
             if (isERC20) {
@@ -336,6 +333,8 @@ contract PurchaseBundler is
         }
         for (uint256 i = 0; i < collections.length; ++i) {
             collections[i].setApprovalForAll(marketPlace, false);
+        }
+        for (uint256 i = 0; i < collections.length; ++i) {
             _givebackNFTOrPunk(collections[i], tokenIds[i]);
         }
     }
@@ -343,13 +342,16 @@ contract PurchaseBundler is
     /// @dev This function is called by the buyer to execute a loaned sell with a buy.
     /// the borrower must make a listing in loan.principal
     /// the buyer must send eth value and it will receive the NFT without any wrapper.
-    function executeSellWithLoan(ExecuteSellWithLoanArgs calldata args) external payable whenNotPaused _storeMsgSender {
+    function executeSellWithLoan(ExecuteSellWithLoanArgs calldata args) external payable _storeMsgSender {
         address aaveV3Pool = _aaveAddressProvider.getPool();
         if (address(args.borrowArgs.pool) != aaveV3Pool) {
             revert InvalidCallbackError();
         }
         bytes memory params = abi.encode(args);
         uint256[] memory interestRateModes = new uint256[](args.borrowArgs.assets.length);
+        for (uint256 i = 0; i < interestRateModes.length; i++) {
+            interestRateModes[i] = 0;
+        }
         args.borrowArgs.pool
             .flashLoan(
                 address(this),
@@ -389,15 +391,14 @@ contract PurchaseBundler is
             args.executeSellArgs.executionData,
             args.executeSellArgs.swapData
         );
-        for (uint256 i; i < args.loanExecutionData.length; ++i) {
-            _checkMultiSourceLoanSelector(args.loanExecutionData[i], false);
-        }
         _multiSourceLoan.multicall(args.loanExecutionData);
         address _buyer = _msgSender();
         for (uint256 i = 0; i < args.swapCurrencies.length; i++) {
             bytes memory swapData = args.swapData[i];
             address currency = address(args.swapCurrencies[i]);
-            _requireCurrencyWhitelisted(currency);
+            if (!_currencyManager.isWhitelisted(currency)) {
+                revert CurrencyNotWhitelisted();
+            }
             uint160 amount = args.swapAmounts[i];
 
             uint256 ethValue;
@@ -434,13 +435,14 @@ contract PurchaseBundler is
         external
         payable
         nonReentrant
-        whenNotPaused
         _storeMsgSender
     {
-        // Validate target is this contract, a whitelisted marketplace method, or MultiSourceLoan.
-        // For external marketplaces, both the address and the call's selector must be whitelisted.
-        if (args.target != address(this) && args.target != address(_multiSourceLoan)) {
-            _requireMarketplaceMethodWhitelisted(args.target, args.executionCalldata);
+        // Validate target is this contract, a whitelisted marketplace or MultiSourceLoan
+        if (
+            args.target != address(this) && !_marketplaceContractsAddressManager.isWhitelisted(args.target)
+                && args.target != address(_multiSourceLoan)
+        ) {
+            revert InvalidTargetContractError();
         }
 
         address caller = _msgSender();
@@ -456,7 +458,9 @@ contract PurchaseBundler is
                     revert InvalidStateError();
                 }
             } else {
-                _requireCurrencyWhitelisted(currency);
+                if (!_currencyManager.isWhitelisted(currency)) {
+                    revert CurrencyNotWhitelisted();
+                }
                 // Pull needed ERC20 from caller
                 uint256 balance = ERC20(currency).balanceOf(address(this));
                 if (amount > balance) {
@@ -473,7 +477,7 @@ contract PurchaseBundler is
             // Approve all collected ERC20 inputCurrencies for the router via permit2
             for (uint256 i = 0; i < args.inputCurrencies.length; ++i) {
                 if (args.inputCurrencies[i] != ETH) {
-                    _approveToRouter(args.inputCurrencies[i]);
+                    _permit2.approve(args.inputCurrencies[i], address(_uniswapRouter), type(uint160).max, 0);
                 }
             }
 
@@ -483,13 +487,19 @@ contract PurchaseBundler is
             }
         }
 
+        // Approve outputCurrencies for marketplace target (result of swap)
+        if (args.target != address(this)) {
+            for (uint256 i = 0; i < args.outputCurrencies.length; ++i) {
+                if (args.outputCurrencies[i] != ETH) {
+                    ERC20(args.outputCurrencies[i]).safeApprove(args.target, type(uint256).max);
+                }
+            }
+        }
+
         // Execute the target call
         if (args.target == address(this)) {
             bytes4 sel = bytes4(args.executionCalldata[:4]);
-            if (
-                args.executionCalldata.length <= 4 || sel != this.buy.selector && sel != this.sell.selector
-                    && sel != this.executeSell.selector
-            ) {
+            if (sel != this.buy.selector && sel != this.sell.selector && sel != this.executeSell.selector) {
                 revert InvalidExecutionData();
             }
             assembly {
@@ -500,15 +510,19 @@ contract PurchaseBundler is
                 revert InvalidCallbackError();
             }
         } else {
-            if (args.target == address(_multiSourceLoan)) {
-                _checkMultiSourceLoanSelector(args.executionCalldata, true);
-            }
-            _setOutputApprovals(args.outputCurrencies, args.target, type(uint256).max);
             (bool success,) = args.target.call{value: args.executionValue}(args.executionCalldata);
             if (!success) {
                 revert InvalidCallbackError();
             }
-            _setOutputApprovals(args.outputCurrencies, args.target, 0);
+        }
+
+        // Reset approvals for outputCurrencies
+        if (args.target != address(this)) {
+            for (uint256 i = 0; i < args.outputCurrencies.length; ++i) {
+                if (args.outputCurrencies[i] != ETH) {
+                    ERC20(args.outputCurrencies[i]).safeApprove(args.target, 0);
+                }
+            }
         }
 
         // Payback remaining for both input and output currencies
@@ -548,11 +562,13 @@ contract PurchaseBundler is
     {
         ExecutionInfo memory purchaseBundlerExecutionInfo = abi.decode(_executionData, (ExecutionInfo));
         IReservoir.ExecutionInfo memory executionInfo = purchaseBundlerExecutionInfo.reservoirExecutionInfo;
-        _requireMarketplaceMethodWhitelisted(executionInfo.module, executionInfo.data);
+        if (!_marketplaceContractsAddressManager.isWhitelisted(executionInfo.module)) {
+            revert MarketplaceAddressNotWhitelisted();
+        }
         ERC20 purchaseCurrency = ERC20(purchaseBundlerExecutionInfo.purchaseCurrency);
         bool purchaseCurrencyIsERC20 = purchaseBundlerExecutionInfo.purchaseCurrency != ETH;
-        _requireCurrencyWhitelisted(purchaseBundlerExecutionInfo.purchaseCurrency);
 
+        uint256 borrowed = _loan.principalAmount - _fee;
         /// @dev If the currency is ETH. we unwrap WETH to ETH. We assume the delta between purchase and borrowed was sent as value.
         /// @dev _loan.borrower is the one executing the loan, in BNPL is the buyer.
         if (purchaseCurrencyIsERC20) {
@@ -561,7 +577,7 @@ contract PurchaseBundler is
         }
         bool success;
         if (purchaseBundlerExecutionInfo.swapData.length > 0) {
-            _approveToRouter(_loan.principalAddress);
+            _permit2.approve(_loan.principalAddress, address(_uniswapRouter), type(uint160).max, 0);
             (success,) = address(_uniswapRouter).call{value: purchaseBundlerExecutionInfo.swapValue}(
                 purchaseBundlerExecutionInfo.swapData
             );
@@ -615,10 +631,11 @@ contract PurchaseBundler is
         ExecutionInfo memory purchaseBundlerExecutionInfo = abi.decode(_executionData, (ExecutionInfo));
         IReservoir.ExecutionInfo memory executionInfo = purchaseBundlerExecutionInfo.reservoirExecutionInfo;
         bool contractMustBeOwner = purchaseBundlerExecutionInfo.contractMustBeOwner;
-        _requireMarketplaceMethodWhitelisted(executionInfo.module, executionInfo.data);
+        if (!_marketplaceContractsAddressManager.isWhitelisted(executionInfo.module)) {
+            revert MarketplaceAddressNotWhitelisted();
+        }
         address loanCurrency = loan.principalAddress;
         address purchaseCurrency = purchaseBundlerExecutionInfo.purchaseCurrency;
-        _requireCurrencyWhitelisted(purchaseCurrency);
 
         // Snapshot balance before marketplace execution to calculate actual sale proceeds
         uint256 balanceBeforeSale = _getBalance(purchaseCurrency);
@@ -720,29 +737,6 @@ contract PurchaseBundler is
         emit TaxesUpdated(module, newTax);
     }
 
-    function executeOrder(Order memory order) public override whenNotPaused {
-        _executeOrder(order, msg.sender);
-    }
-
-    function pause() external onlyOwner {
-        _pause();
-    }
-
-    function unpause() external onlyOwner {
-        _unpause();
-    }
-
-    function _checkMultiSourceLoanSelector(bytes memory data, bool allowRenegotiation) private pure {
-        bytes4 sel;
-        assembly {
-            sel := mload(add(data, 32))
-        }
-        if (
-            data.length <= 4 || sel != IMultiSourceLoan.emitLoan.selector && sel != IMultiSourceLoan.repayLoan.selector
-                && (!allowRenegotiation || sel != IMultiSourceLoan.refinanceFromLoanExecutionData.selector)
-        ) revert InvalidExecutionData();
-    }
-
     function _buy(bytes[] calldata executionData) private returns (uint256[] memory) {
         if (executionData.length == 0) {
             revert InvalidExecutionData();
@@ -751,7 +745,10 @@ contract PurchaseBundler is
         uint256[] memory loanIds = new uint256[](encodedOutput.length);
         uint256 total = encodedOutput.length;
         for (uint256 i; i < total;) {
-            _checkMultiSourceLoanSelector(executionData[i], false);
+            if (executionData[i].length <= 4) {
+                // it should include the selector and parameters
+                revert InvalidExecutionData();
+            }
             loanIds[i] = abi.decode(encodedOutput[i], (uint256));
             unchecked {
                 ++i;
@@ -772,24 +769,6 @@ contract PurchaseBundler is
 
         emit BNPLLoansStarted(loanIds);
         return loanIds;
-    }
-
-    function _requireCurrencyWhitelisted(address currency) private view {
-        if (currency != ETH && !_currencyManager.isWhitelisted(currency)) {
-            revert CurrencyNotWhitelisted();
-        }
-    }
-
-    function _requireMarketplaceMethodWhitelisted(address module, bytes memory data) private view {
-        if (data.length < 4) revert MarketplaceAddressNotWhitelisted();
-        bytes4 sel;
-        assembly {
-            sel := mload(add(data, 32))
-        }
-        if (sel == bytes4(0)) revert MarketplaceAddressNotWhitelisted();
-        if (!_marketplaceContractsAddressManager.isWhitelisted(module, sel)) {
-            revert MarketplaceAddressNotWhitelisted();
-        }
     }
 
     /*
@@ -815,16 +794,13 @@ contract PurchaseBundler is
         }
     }
 
-    function _setOutputApprovals(address[] calldata currencies, address target, uint256 amount) private {
-        for (uint256 i = 0; i < currencies.length; ++i) {
-            if (currencies[i] != ETH) {
-                ERC20(currencies[i]).safeApprove(target, amount);
-            }
+    function _paybackRemainingWeth() private {
+        uint256 remaining = _weth.balanceOf(address(this));
+        _weth.withdraw(remaining);
+        (bool success,) = payable(msg.sender).call{value: remaining}("");
+        if (!success) {
+            revert CouldNotReturnEthError();
         }
-    }
-
-    function _approveToRouter(address currency) private {
-        _permit2.approve(currency, address(_uniswapRouter), type(uint160).max, 0);
     }
 
     function _givebackNFTOrPunk(ERC721 collection, uint256 tokenId) private {
@@ -844,43 +820,8 @@ contract PurchaseBundler is
     }
 
     function _givebackNFT(ERC721 collection, uint256 tokenId) private {
-        if (collection.ownerOf(tokenId) == address(this)) {
-            collection.safeTransferFrom(address(this), _msgSender(), tokenId);
-        }
-    }
-
-    function _decodeRepaymentItem(bytes calldata data) private pure returns (address nftAddress, uint256 tokenId) {
-        if (data.length <= 4) revert InvalidExecutionData();
-        IMultiSourceLoan.LoanRepaymentData memory repaymentData =
-            abi.decode(data[4:], (IMultiSourceLoan.LoanRepaymentData));
-        nftAddress = repaymentData.loan.nftCollateralAddress;
-        tokenId = repaymentData.loan.nftCollateralTokenId;
-    }
-
-    function _decodeCollateral(bytes[] calldata executionData)
-        private
-        pure
-        returns (ERC721[] memory collections, uint256[] memory tokenIds)
-    {
-        collections = new ERC721[](executionData.length);
-        tokenIds = new uint256[](executionData.length);
-        for (uint256 i = 0; i < executionData.length; ++i) {
-            (address nftAddress, uint256 tokenId) = _decodeRepaymentItem(executionData[i]);
-            collections[i] = ERC721(nftAddress);
-            tokenIds[i] = tokenId;
-        }
-    }
-
-    function _validateCollateral(
-        bytes[] calldata executionData,
-        ERC721[] calldata collections,
-        uint256[] calldata tokenIds
-    ) private pure {
-        for (uint256 i = 0; i < executionData.length; ++i) {
-            (address nftAddress, uint256 tokenId) = _decodeRepaymentItem(executionData[i]);
-            if (address(collections[i]) != nftAddress || tokenIds[i] != tokenId) {
-                revert InvalidCollateralError();
-            }
+        if (collection.ownerOf(tokenId) != _msgSender()) {
+            collection.safeTransferFrom(collection.ownerOf(tokenId), _msgSender(), tokenId);
         }
     }
 
@@ -888,13 +829,19 @@ contract PurchaseBundler is
         if (executionData.length == 0) {
             revert InvalidExecutionData();
         }
-        uint256[] memory loanIds = new uint256[](executionData.length);
-        for (uint256 i = 0; i < executionData.length; ++i) {
-            _checkMultiSourceLoanSelector(executionData[i], false);
-            loanIds[i] = abi.decode(executionData[i][4:], (IMultiSourceLoan.LoanRepaymentData)).data.loanId;
-        }
         _saveSwapData(swapData);
         _multiSourceLoan.multicall(executionData);
+        uint256[] memory loanIds = new uint256[](executionData.length);
+        uint256 total = executionData.length;
+        for (uint256 i = 0; i < total; ++i) {
+            if (executionData[i].length <= 4) {
+                // it should include the selector and parameters
+                revert InvalidExecutionData();
+            }
+            IMultiSourceLoan.LoanRepaymentData memory repaymentData =
+                abi.decode(executionData[i][4:], (IMultiSourceLoan.LoanRepaymentData));
+            loanIds[i] = repaymentData.data.loanId;
+        }
         emit SellAndRepayExecuted(loanIds);
     }
 
@@ -955,12 +902,12 @@ contract PurchaseBundler is
         uint256 originalInBalance = _getBalance(currencyIn);
         uint256 originalOutBalance = currencyOut.balanceOf(address(this));
         (address quoter, bytes memory quoterArgs) = abi.decode(quoterData, (address, bytes));
-        if (!_priceQuoterAddressManager.isWhitelisted(quoter)) revert InvalidCallbackError();
+        if (!_marketplaceContractsAddressManager.isWhitelisted(quoter)) revert InvalidCallbackError();
         uint256 price = IPriceQuoter(quoter).getPrice(currencyIn, address(currencyOut), quoterArgs);
         uint256 executionCounter = _loadAndIncrementExecutionCounter();
         bytes memory swapData = _loadSwapData(executionCounter);
         if (swapData.length == 0) revert InvalidCallbackError();
-        _approveToRouter(currencyIn);
+        _permit2.approve(currencyIn, address(_uniswapRouter), type(uint160).max, 0);
         (bool success,) = address(_uniswapRouter).call{value: swapValue}(swapData);
         if (!success) {
             revert InvalidCallbackError();
@@ -1018,7 +965,7 @@ contract PurchaseBundler is
         }
     }
 
-    function _msgSender() internal view override returns (address msgSender) {
+    function _msgSender() private view returns (address msgSender) {
         msgSender = _tloadMsgSender();
         if (msgSender == address(0)) {
             msgSender = msg.sender;

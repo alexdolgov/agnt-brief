@@ -20,8 +20,8 @@ interface IMinter {
     /// @return period the new period
     function updatePeriod() external returns (uint256 period);
 
-    /// @notice intialize epoch0 + emissions (immediately active for this week)
-    function initEpoch0() external;
+    /// @notice start emissions for epoch 0
+    function startEmissions() external;
 
     /// @notice updates the decay or inflation scaled to 10_000 = 100%
     /// @param _emissionsMultiplier multiplier for emissions each week

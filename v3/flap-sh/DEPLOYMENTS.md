@@ -1,6 +1,6 @@
 # flap-sh — deployments
 
-41 verified deployment(s) across 40 component(s).
+42 verified deployment(s) across 41 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -16,6 +16,7 @@
 | bsc | `0x0ba6c4e3061f373f5c80185a49347c7febf8c057` | FlapAIProvider | impl | unknown | no |
 | bsc | `0x0bfa35e8e5a467c002fd5f0f692b362f4fdfb56a` | Dividend | impl | unknown | no |
 | bsc | `0x0c0eb21368e516a42bfeeeeebb0fe0689a7cb2d3` | SnowBallAdapter | impl | unknown | no |
+| bsc | `0x12dc83157bf1cfcb8db5952b3ba5bb56cc38f8c9` | ERC1967Upgrade | impl | live | no |
 | bsc | `0x143741e50c729fe8953e7b7b85a97ae05abeb806` | TaxProcessorUniV4 | impl | unknown | no |
 | bsc | `0x16ce34152563fc4d19ebf5d150ef57785213d145` | TaxProcessor | impl | unknown | no |
 | bsc | `0x1f0825b4990125b267a16a8e98b27e70aeb78f12` | FlapShuttle | impl | unknown | no |

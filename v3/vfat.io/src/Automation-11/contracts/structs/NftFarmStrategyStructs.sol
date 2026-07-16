@@ -6,7 +6,7 @@ import { IUniswapV3Pool } from
 import { INonfungiblePositionManager } from
     "contracts/interfaces/external/uniswap/INonfungiblePositionManager.sol";
 import { NftZapIn, NftZapOut } from "contracts/structs/NftZapStructs.sol";
-import { SwapParams } from "contracts/structs/SwapStructs.sol";
+import { SwapParams } from "contracts/structs/LiquidityStructs.sol";
 import { Farm } from "contracts/structs/FarmStrategyStructs.sol";
 
 struct NftPosition {

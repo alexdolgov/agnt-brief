@@ -1,6 +1,6 @@
 # equalizer — deployments
 
-145 verified deployment(s) across 111 component(s).
+146 verified deployment(s) across 111 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -127,6 +127,7 @@
 | chain-146 | `0xafe7acc555cb8d5bd2a8d665fb53fbf741103ad8` | NFP_Staker-4 | impl | live | no |
 | chain-146 | `0xb6dfc39b3270f059f32eb9d680d994cdecfad93f` | SuperVoter | impl | live | no |
 | chain-146 | `0xba65aa3954878a9b225b10355e1e24cc4dd10692` | elTokenZap-2 | impl | live | no |
+| chain-146 | `0xc701e92db1ef14ab64f66f18536b1e07678db678` | QuoterV2 | impl | live | no |
 | chain-146 | `0xc7d31877e3b1d55ff48a6e3dcfa846fa3e00d083` | impermaxBorrowableERC4626Wrapper | impl | live | no |
 | chain-146 | `0xcc6169aa1e879d3a4227536671f85afdb2d23fad` | Router03 | impl | live | no |
 | chain-146 | `0xcc835d13543cec819ac0226dd9ff35b6312b8fca` | ElitenessERC20-2 | impl | live | no |

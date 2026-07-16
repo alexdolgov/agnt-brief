@@ -1,6 +1,6 @@
 # jetswap — deployments
 
-32 verified deployment(s) across 20 component(s).
+36 verified deployment(s) across 24 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -35,4 +35,8 @@
 | bsc | `0xed2097330741ac6aa574c0eda26a7ad41c976fb0` | JetswapVault | impl | live | no |
 | bsc | `0xf2f11389ce9cf23c37b03131df914772ba17e664` | JetswapVault | impl | live | no |
 | bsc | `0xf6488205957f0b4497053d6422f49e27944ee3dd` | JetBar | impl | live | no |
+| polygon | `0x4e22399070ad5ad7f7beb7d3a7b543e8ecbf1d85` | MasterChef-2 | impl | live | no |
+| polygon | `0x5c6ec38fb0e2609672bdf628b1fd605a523e5923` | JetswapRouter-2 | impl | live | no |
+| polygon | `0x668ad0ed2622c62e24f0d5ab6b6ac1b9d2cd4ac7` | JetswapPair | impl | live | no |
+| polygon | `0x845e76a8691423fbc4ecb8dd77556cb61c09ee25` | BEP20 | impl | live | no |
 | polygon | `0xf6488205957f0b4497053d6422f49e27944ee3dd` | Multicall | impl | live | yes |

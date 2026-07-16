@@ -1,6 +1,6 @@
 # beraborrow — deployments
 
-92 verified deployment(s) across 85 component(s).
+99 verified deployment(s) across 89 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -33,6 +33,7 @@
 | chain-80094 | `0x149f8c724b5acf46afb9d30ec266b45b6d34d85d` | Router | impl | unknown | no |
 | chain-80094 | `0x15fd574fa0410e9d5ffc961e23030b6ca5ff7cbf` | ChronicleWrapper | impl | unknown | no |
 | chain-80094 | `0x160407ee86904e0a83d916e586b8a2fe7c213e6e` | KodiakIslandFeed | impl | unknown | no |
+| chain-80094 | `0x17ecd2889427b90121fc1f3815179d133c2735ff` | InfraredWrapper | impl | live | no |
 | chain-80094 | `0x17f57ac0f44e30ecb29400b6ad23b89027f44248` | SolvBTC_BNB_Feed | impl | unknown | no |
 | chain-80094 | `0x1a29c90fa2f2f8d8744b4a8c2856035c37b772cc` | IBGTVault | impl | live | yes |
 | chain-80094 | `0x1c1dbcde0a4f9c556f81ca5a9b108cf4f52568a1` | ALMPeriphery | impl | unknown | no |
@@ -44,7 +45,7 @@
 | chain-80094 | `0x27474198c951790b92d02f3aad511ad87bad75c8` | MultiCollateralHintHelpers | impl | unknown | no |
 | chain-80094 | `0x27cc7c97485d79ff75d3e77c4ce7c169d1a758e8` | BeraborrowManagedLeveragedVaultGetters | impl | unknown | no |
 | chain-80094 | `0x28ebfea8a4ab8149608cc7fb5ca5892fee9869a7` | AlphaProVaultFeed | impl | unknown | no |
-| chain-80094 | `0x29589a06e7fb66204637f9f1b5f32046341ef5e9` | BorrowerOperations | impl | unknown | no |
+| chain-80094 | `0x29589a06e7fb66204637f9f1b5f32046341ef5e9` | BorrowerOperations | impl | unknown | yes |
 | chain-80094 | `0x29b4b632e1ae60ecf21bccd67b675fce3b210321` | EverlongDeleverageRouter | impl | unknown | no |
 | chain-80094 | `0x2a63e2b30e5169486c1c1b4356e1ec87be1628bd` | LiquidStabilityPool | impl | unknown | no |
 | chain-80094 | `0x2bb1fb640c59917d73be47512afa3dde5fedb1d1` | CollRedeemer | impl | unknown | no |
@@ -55,13 +56,15 @@
 | chain-80094 | `0x3a7ed65b35fdfaacc9f0e881846a9f4e57181446` | LSPRouter | impl | live | yes |
 | chain-80094 | `0x3a930e253fb0164e4b72c7ce374f2c631a5562fa` | UpgradeableProxy-2 | proxy | unknown | no |
 | chain-80094 | `0x3cf60e61251ce82a883a48bf55aa837d6a7dd848` | EmptySwapper | impl | unknown | no |
-| chain-80094 | `0x3ef448417c5174ca917dc284ffd39b1e30b10b79` | LiquidationManager | impl | unknown | no |
+| chain-80094 | `0x3ef448417c5174ca917dc284ffd39b1e30b10b79` | LiquidationManager | impl | unknown | yes |
 | chain-80094 | `0x43808f9cca7a5a26d101cf36fd9b5acec316fc72` | DenManager | impl | unknown | no |
 | chain-80094 | `0x4583f6954cb76103ae522f9243c7d876c9037230` | DolomiteERC4626Feed | impl | unknown | no |
 | chain-80094 | `0x4724654e1b6e663a7bb07cb6edfd5ffc339a35e1` | DLVRegistry | impl | unknown | no |
 | chain-80094 | `0x47877226fd0b1a84649b39db7f1c865dce05c96c` | PermissionlessPSM | impl | unknown | no |
+| chain-80094 | `0x4a91b96a615d133e4196655bc1735430ec97a391` | Contract | impl | live | yes |
 | chain-80094 | `0x559d1347242f350bdc44f99c729984bfb188092f` | Infrared | impl | unknown | no |
 | chain-80094 | `0x5623554ece4e1fd78e8a4ce13d588a8e0053825d` | UpgradeableProxy-3 | proxy | unknown | no |
+| chain-80094 | `0x5f1619ffaefde17f7e54f850fe90ad5ee44dbf47` | Contract-2 | impl | live | yes |
 | chain-80094 | `0x61bd35fbec49b144a1953f48f84ef8d2b321da40` | BribeCollector | impl | unknown | no |
 | chain-80094 | `0x6251c29f381d8e1881a8a223e5dc819d16bfd245` | LeverageHelper | impl | unknown | no |
 | chain-80094 | `0x672bf09ef2cef1a72fdde5dcfc76675e669d4b4c` | UpgradeableProxy | proxy | unknown | no |
@@ -78,10 +81,11 @@
 | chain-80094 | `0x8eb569b75aa34a75e495a4a2783824b025eea0af` | UpgradeableProxy | proxy | unknown | no |
 | chain-80094 | `0x8faf95fecd6e106808636c767e5c6f8b92dd1363` | BrimeDen | impl | live | yes |
 | chain-80094 | `0x94b5d53483117fe3832c8e08d2a71ab8ab546d81` | InfraredBERA | impl | unknown | no |
+| chain-80094 | `0x965da3f96dcbfccf3c1d0603e76356775b5afd2e` | LiquidationManager | impl | live | yes |
 | chain-80094 | `0x97b0cf88e94ba81f42bb3c8934dd78b487d19b28` | ALMGetters | impl | unknown | no |
 | chain-80094 | `0x9a96efae49d672f63599f99f9ec7fb4388587a60` | SPollen | impl | unknown | no |
 | chain-80094 | `0xa0b5d546c0a63631b7c5b532ed4a77838de7e624` | RewardsFeed | impl | unknown | no |
-| chain-80094 | `0xa2ecbe7a6bbfb0f14abbcfe3c19fe54dc7878588` | DenManagerGetters | impl | unknown | no |
+| chain-80094 | `0xa2ecbe7a6bbfb0f14abbcfe3c19fe54dc7878588` | DenManagerGetters | impl | unknown | yes |
 | chain-80094 | `0xa686dc84330b1b3787816de2daca485d305c8589` | PriceFeed | impl | live | yes |
 | chain-80094 | `0xab2dadd15af962b036d361849c024a3f70b18254` | InfraredBERAFeeReceivor | impl | unknown | no |
 | chain-80094 | `0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b` | InfraredBGT | impl | unknown | no |
@@ -89,20 +93,13 @@
 | chain-80094 | `0xba665e5aecd91acf0b03924cb6c825a26341a59a` | EverlongCore | impl | unknown | no |
 | chain-80094 | `0xce997ac8fd015a2b3c3950cb33e9e6bb962e35e1` | CollateralVaultRegistry | impl | unknown | no |
 | chain-80094 | `0xd1e6070af5d434129fc284894f7cd32a132ec34d` | MLVRegistry | impl | unknown | no |
+| chain-80094 | `0xdb32ca8f3bb099a76d4ec713a2c2aacb3d8e84b9` | BorrowerOperations | impl | live | yes |
 | chain-80094 | `0xddf59f0d4158b63cc656d7f0700ebed86e6dfba9` | BerachainDexAggregator | impl | unknown | no |
 | chain-80094 | `0xe121e0e04bf79fdbf6c38fc996d17302b4af4257` | TriBPTStableOracle | impl | unknown | no |
 | chain-80094 | `0xedd33a66f15d66722dde90fc0691ceb7c31f0d14` | OriBGTFeed | impl | unknown | no |
 | chain-80094 | `0xef26bcfb9ce4e807465a46087e9dd73b652fef87` | InfraredBERADepositor | impl | unknown | no |
 | chain-80094 | `0xef8ef3d6cacee43d0e72306049a31ffa7f2faf24` | EverlongLeverageRouter | impl | unknown | no |
 | chain-80094 | `0xf37cc04925d20a0a350b3ff77ef35781ea0869e2` | UpgradeableProxy-4 | proxy | unknown | no |
+| chain-80094 | `0xf8519658cff16fa095a8bceb3dcc576d94399e32` | Contract-3 | impl | live | yes |
 | chain-80094 | `0xf92d1c97e73e1f087cc8ee9e0e13a207bf219cc6` | EverlongALMFeed | impl | unknown | no |
-
-## Source unavailable (6)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-80094 `0x4a91b96a615d133e4196655bc1735430ec97a391`
-- chain-80094 `0x5f1619ffaefde17f7e54f850fe90ad5ee44dbf47`
-- chain-80094 `0x965da3f96dcbfccf3c1d0603e76356775b5afd2e`
-- chain-80094 `0xdb32ca8f3bb099a76d4ec713a2c2aacb3d8e84b9`
-- chain-80094 `0xf8519658cff16fa095a8bceb3dcc576d94399e32`
-- chain-80094 `0xfa7908287c1f1b256831c812c7194cb95bb440e6`
+| chain-80094 | `0xfa7908287c1f1b256831c812c7194cb95bb440e6` | DenManagerGetters | impl | live | yes |

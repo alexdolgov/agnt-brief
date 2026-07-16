@@ -1,36 +1,57 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import { ZapInData, ZapOutData } from "contracts/libraries/ZapLib.sol";
-import { SwapData } from "contracts/interfaces/ILiquidityConnector.sol";
+import { ZapIn, ZapOut } from "contracts/libraries/ZapLib.sol";
+import { SwapParams } from "contracts/structs/LiquidityStructs.sol";
+
+struct Farm {
+    address stakingContract;
+    uint256 poolIndex;
+}
 
 struct DepositParams {
-    address stakingContractAddress;
+    Farm farm;
     address[] tokensIn;
     uint256[] amountsIn;
-    ZapInData zapData;
+    ZapIn zap;
     bytes extraData;
 }
 
 struct WithdrawParams {
-    address stakingContractAddress;
     bytes extraData;
-    ZapOutData zapData;
+    ZapOut zap;
     address[] tokensOut;
 }
 
 struct HarvestParams {
-    address stakingContractAddress;
-    SwapData[] swaps;
+    SwapParams[] swaps;
     bytes extraData;
     address[] tokensOut;
 }
 
 struct CompoundParams {
-    address claimContractAddress;
+    Farm claimFarm;
     bytes claimExtraData;
     address[] rewardTokens;
-    ZapInData zapData;
-    address depositContractAddress;
+    ZapIn zap;
+    Farm depositFarm;
     bytes depositExtraData;
+}
+
+struct SimpleDepositParams {
+    Farm farm;
+    address lpToken;
+    uint256 amountIn;
+    bytes extraData;
+}
+
+struct SimpleHarvestParams {
+    address[] rewardTokens;
+    bytes extraData;
+}
+
+struct SimpleWithdrawParams {
+    address lpToken;
+    uint256 amountOut;
+    bytes extraData;
 }

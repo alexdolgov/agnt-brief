@@ -1,0 +1,38 @@
+{
+  "component": "TwoStepConfigManager",
+  "main_contract": "TwoStepConfigManager",
+  "source_entry_count": 22,
+  "source_file_count": 22,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TwoStepConfigManager\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x084fe180ceed7b33c6235752505a081b1a9fa11c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405709"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd85d0f4fd18ca9ae5e8b0eba0e65519fbbfd3341",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405753"
+    }
+  ]
+}

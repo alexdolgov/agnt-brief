@@ -1,6 +1,6 @@
 # open-ticketing-ecosystem — deployments
 
-8 verified deployment(s) across 7 component(s).
+9 verified deployment(s) across 8 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,3 +12,4 @@
 | polygon | `0x2055244a719229d669488e389388f2d653a452f4` | AdminUpgradeabilityProxy | proxy | live | no |
 | polygon | `0x3e49e9c890cd5b015a18ed76e7a4093f569f1a04` | GovernanceLockedRevenueDistributionToken | impl | live | no |
 | polygon | `0x686e8500b6be8812eb198aabbbfa14c95c03fc88` | GovernanceLockedRevenueDistributionToken-3 | impl | live | no |
+| polygon | `0x7844f79fc841e4f92d974c417031c76f8578c2d5` | UpgradableProxy | proxy | live | no |

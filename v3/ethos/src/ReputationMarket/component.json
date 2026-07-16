@@ -1,0 +1,28 @@
+{
+  "component": "ReputationMarket",
+  "main_contract": "ReputationMarket",
+  "source_entry_count": 64,
+  "source_file_count": 64,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ReputationMarket\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe0da0eda50376e111e1640db43b0c6a486bc7505",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405386"
+    }
+  ]
+}

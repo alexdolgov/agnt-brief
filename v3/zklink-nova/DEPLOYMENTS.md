@@ -1,6 +1,6 @@
 # zklink-nova — deployments
 
-49 verified deployment(s) across 40 component(s).
+54 verified deployment(s) across 42 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,6 +8,7 @@
 | chain-169 | `0x0d53ce63f3a72879d543ed6272a081308a731470` | L1ERC20Bridge | impl | live | no |
 | chain-169 | `0x34c7ad65e4163306f8745996688b476914201ce0` | MantaMintableERC20WithBridgeFlag | impl | unknown | no |
 | chain-169 | `0x437a10fc9b6255281eb6c25a8224bd13f42bbcac` | EmptyVerifier | impl | live | no |
+| chain-169 | `0x44a65dc12865a1e5249b45b4868f32b0e37168ff` | TransparentUpgradeableProxy | impl | live | no |
 | chain-169 | `0x50efc7f1290479cb879473512d89fdc80b726211` | OptimismL2Gateway-2 | impl | live | no |
 | chain-169 | `0x55fa5276c44c1b465196898b144524c9c852235e` | OptimismL2Gateway | impl | unknown | no |
 | chain-169 | `0x5715dec4cd747675e47b969d3a15aab909b8ce05` | ZkLink | impl | live | no |
@@ -21,8 +22,10 @@
 | chain-169 | `0xbdad407f77f44f7da6684b416b1951eca461fb07` | MantaMintableERC20WithBridgeFlag | impl | unknown | no |
 | chain-169 | `0xbfa352a683d82a04233cc45ac1308621ba63283f` | OptimismL2Gateway | impl | unknown | no |
 | chain-169 | `0xc8d4bcb4845f4583fd70a3ed22ed6623ef45b986` | MantaMintableERC20WithBridgeFlag | impl | unknown | no |
+| chain-169 | `0xd784d7128b46b60ca7d8bdc17dcec94917455657` | ERC1967Proxy | impl | live | no |
 | chain-169 | `0xdd5097fc3f68958649ce70f42b7c1cf0067a3545` | ZkLinkPeriphery | impl | live | no |
 | chain-169 | `0xe89635a7339bf46198f76b17bcfdad977699cc13` | ZkLink-3 | impl | unknown | no |
+| chain-169 | `0xe946abb40928326ce5bff303e7b8f0f253ea39d0` | ERC1967Proxy | impl | live | no |
 | chain-169 | `0xfb0ad0b3c2605a7ca33d6badd0c685e11b8f5585` | ZkLink-4 | impl | unknown | no |
 | ethereum | `0x1ee09a2caa0813a5183f90f5a6d0e4871f4c6002` | Contract | impl | live | yes |
 | ethereum | `0x3343f9de5612b6f8a433abc3eaae245cfa3283ce` | NethOFTAdapter | impl | live | no |
@@ -31,14 +34,14 @@
 | ethereum | `0xcea3681131dd151ee72a5c8dbba555cb8b8ded56` | RNethOFTAdapter | impl | live | no |
 | linea | `0x11bf5bc6327f7becb0ae753932a181c8fb5780ba` | MailboxFacet | impl | live | no |
 | linea | `0x1b19287ce898217d937571eaba97ec50f27d1206` | ExecutorFacet | impl | live | no |
-| linea | `0x3aab2285ddcddad8edf438c1bab47e1a9d05a9b4` | TransparentUpgradeableProxy | proxy | live | no |
+| linea | `0x3aab2285ddcddad8edf438c1bab47e1a9d05a9b4` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | linea | `0x509ff56c152315edee91a2e0f059195519507e01` | ValidatorTimelock | impl | live | yes |
 | linea | `0x5cb18b6e4e6f3b46ce646b0f4704d53724c5df05` | DiamondProxy | proxy | live | yes |
-| linea | `0x62ce247f34dc316f93d3830e4bf10959fce630f8` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| linea | `0x62ce247f34dc316f93d3830e4bf10959fce630f8` | TransparentUpgradeableProxy-3 | proxy | live | yes |
 | linea | `0x6fe38b4a1b540f86072dd36b7df60bc1b4f414a2` | WithdrawalFinalizer | impl | live | no |
 | linea | `0x902c3806a84f4e855a8746e92d7f1c9a51400458` | Verifier | impl | live | no |
 | linea | `0xb1d0354063527e4426c4becbdb75fe0fb112e3cb` | GettersFacet | impl | live | no |
-| linea | `0xb5bedd42000b71fdde22d3ee8a79bd49a568fc8f` | TransparentUpgradeableProxy | proxy | live | no |
+| linea | `0xb5bedd42000b71fdde22d3ee8a79bd49a568fc8f` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | linea | `0xce8e69a2685c80eb6bd825d0552f44bb34f35503` | AdminFacet | impl | live | no |
 | mantle | `0x02170fea1fd31a26aaf6dd06adf01b36db2e0a5f` | RewardDistributor | impl | live | no |
 | mantle | `0x207d39314707001ae36f12335dd8b1f65cd688ca` | RewardRouter | impl | live | no |
@@ -53,3 +56,5 @@
 | mantle | `0xb6f417db08eb20834b53146190921c78356d227c` | Vester | impl | live | no |
 | mantle | `0xcabae6f6ea1ecab08ad02fe02ce9a44f09aebfa2` | WBTC | impl | live | no |
 | mantle | `0xea02deeb067acec119095845d780665883dc4583` | Router | impl | live | no |
+| scroll | `0x119b9459d9119d07c23ad06778aeabec804fd1a2` | ERC1967Proxy | impl | live | no |
+| scroll | `0x3c7c0ebfcd5786ef48df5ed127cddeb806db976c` | TransparentUpgradeableProxy | impl | live | no |

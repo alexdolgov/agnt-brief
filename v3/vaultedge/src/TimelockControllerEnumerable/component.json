@@ -1,0 +1,38 @@
+{
+  "component": "TimelockControllerEnumerable",
+  "main_contract": "TimelockControllerEnumerable",
+  "source_entry_count": 15,
+  "source_file_count": 15,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TimelockControllerEnumerable\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x64eb35eff983181a323441e4e0dd29ebd54d3e67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404610"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xffef0f452fe6a6fdd5a8b65a7d000b9d309e7109",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404622"
+    }
+  ]
+}

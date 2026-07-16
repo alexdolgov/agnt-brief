@@ -2,18 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "tenderize",
-  "missing": [
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0xb98c7e67f63d198bd96574073ad5b3427a835796",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0xf09b219d86ff3b533fc72148a21a948ac48216ca",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

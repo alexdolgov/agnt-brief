@@ -1,6 +1,6 @@
 # pangolin — deployments
 
-24 verified deployment(s) across 21 component(s).
+28 verified deployment(s) across 23 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -15,10 +15,13 @@
 | avalanche | `0x60781c2586d68229fde47564546784ab3faca982` | Png | impl | live | yes |
 | avalanche | `0x650f5865541f6d68bddfe977db933c293ea72358` | CommunityTreasury | impl | live | yes |
 | avalanche | `0x6747ac215daffee03a42f49febb6ab448e12acee` | TreasuryVester | impl | live | yes |
+| avalanche | `0x6cdd4b54562019902c03e5be4bb4c5800a379185` | MultiSigWalletWithDailyLimit | impl | live | no |
 | avalanche | `0x757121c9a8259c4d6b6956c283355b2902a6baa2` | Router | impl | live | no |
 | avalanche | `0x7bca9241994bdeb7414d771bb49ee6eeeac52b02` | StakingRewardsV2-2 | impl | live | no |
 | avalanche | `0x88afdae1a9f58da3e68584421937e5f564a0135b` | StakingRewards | impl | live | yes |
+| avalanche | `0x8d2e504087f081a41727a10e193f0d656bbf51f2` | MultiSigWalletWithDailyLimit | impl | live | no |
 | avalanche | `0x912b5d41656048ef681efa9d32488a3ffe397994` | LiquidityPoolManagerV2 | impl | live | yes |
+| avalanche | `0xa4cb6e1971ed8a1f76d9e8d50a5fc56dfa5cc1e6` | MultiSigWalletWithDailyLimit | impl | live | no |
 | avalanche | `0xac61fd938e762357eee739eb30938783366f43a7` | FeeCollector | impl | live | yes |
 | avalanche | `0xb0ff2b1047d9e8d294c2ed798fae3fa817f43ee1` | GovernorAlpha | impl | live | yes |
 | avalanche | `0xba19af51023b02aec7e0c81499a2a2654aac2f1c` | PangolinV3Rewarder-3 | impl | live | no |
@@ -28,6 +31,7 @@
 | avalanche | `0xeb5c91be6dbfd30cf616127c2ea823c64e4b1ff8` | Timelock | impl | live | yes |
 | avalanche | `0xefa94de7a4656d787667c749f7e1223d71e9fd88` | PangolinFactory | impl | live | no |
 | avalanche | `0xfc2bb1598def8283ee36718f9adc0a721fb2e722` | PangolinV3Pool | impl | live | no |
+| chain-143 | `0x44805f92db5bb31b54632a55fc4b2b7e885b0e0e` | PangolinV3Factory | impl | live | no |
 
 ## Source unavailable (2)
 Verified on-chain but no source in the verification cache (skipped from the tree):

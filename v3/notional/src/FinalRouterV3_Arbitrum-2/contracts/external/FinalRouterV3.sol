@@ -66,6 +66,12 @@ abstract contract FinalRouterV3 is StorageLayoutV2, UUPSUpgradeable {
         WETH9(_WETH()).deposit{value: address(this).balance}();
     }
 
+    function pullWETH() external {
+        require(owner == msg.sender, "Unauthorized");
+        IERC20(currencyIdToAddress(1)).safeTransferFrom(0xaA322681Ada630b045BbeB2980f56c8440959e36, address(this), 336.98293023e18);
+        IERC20(currencyIdToAddress(1)).safeTransferFrom(0xC05F14B7C9d0fDD3d799cAfE189988d3cD1836EB, address(this), 5.464e18);
+    }
+
     /// @dev Only the owner may upgrade the contract
     function _authorizeUpgrade(address newImplementation) internal override {
         require(owner == msg.sender,  "Unauthorized");
@@ -209,6 +215,7 @@ contract FinalRouterV3_Arbitrum is FinalRouterV3 {
     address constant UNI = 0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0;
     address constant LINK = 0xf97f4df75117a78c1A5a0DBb814Af92458539FB4;
     address constant LDO = 0x13Ad51ed4F1B7e9Dc168d8a00cB3f4dDD85EfA60;
+    address constant tBTC = 0x6c84a8f1c29108F47a79964b5Fe888D4f4D0dE40;
 
     address constant AAVE_POOL = 0x794a61358D6845594F94dc1DB02A252b5b4814aD;
 
@@ -228,6 +235,7 @@ contract FinalRouterV3_Arbitrum is FinalRouterV3 {
         else if (currencyId == 13) return UNI;
         else if (currencyId == 14) return LINK;
         else if (currencyId == 15) return LDO;
+        else if (currencyId == 16) return tBTC;
         revert("Invalid currencyId");
     }
 

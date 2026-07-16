@@ -1,0 +1,48 @@
+{
+  "component": "TripleSlopeRateModel-2",
+  "main_contract": "TripleSlopeRateModel",
+  "source_entry_count": 3,
+  "source_file_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TripleSlopeRateModel-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x20d5d319c2964ecb52e1b006a4c059b7f6d6ad0a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395494"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x5dc3a30d8c5937f1529c3c93507c16d86a17072a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395499"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x7ef18d0a9c3fb1a716ff6c3ed0edf52a2427f716",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395500"
+    }
+  ]
+}

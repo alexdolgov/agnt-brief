@@ -312,12 +312,4 @@ interface IAccessHub {
     /// @param _gauges Array of gauge addresses to remove rewards from
     /// @param _rewards Array of reward token addresses to remove
     function batchRemoveRewardsFromGauges(address[] calldata _gauges, address[] calldata _rewards) external;
-
-    /// @notice Add a reward token to all CL gauges in the system
-    /// @param _reward The reward token address to add
-    function addRewardToAllGauges(address _reward) external;
-
-    /// @notice Remove a reward token from all CL gauges in the system
-    /// @param _reward The reward token address to remove
-    function removeRewardFromAllGauges(address _reward) external;
 }

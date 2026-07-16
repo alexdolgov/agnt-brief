@@ -1,8 +1,8 @@
 {
   "component": "Contract",
   "main_contract": "Contract",
-  "source_entry_count": 26,
-  "source_file_count": 26,
+  "source_entry_count": 7,
+  "source_file_count": 7,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Contract\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 8,
   "audited": true,
   "audits_covering": [
     "https://github.com/contango-xyz/core-v2/blob/main/networks.json"
@@ -19,7 +19,7 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x2206c3341582daaf007ba4569321c8dd39f0710b",
+      "address": "0x0f88160f5b7072f7cacbf74de0d9032c23d0a4db",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
@@ -29,7 +29,67 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x5345562ed3ce537582a1a568d3b06c8382cd60bd",
+      "address": "0x2fbf39f76fa79d0fabfd6896376a929da2e37412",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa91d16e02a6016446e371fb70e616567eb6f7bdf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb7d0ab4a48b30b0fd84184a34d8a914a55a5d0b5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x9ccb6b97ca50473f6d8142f949db33ed6f13d5cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd52c40931ec0a50ab4bb60723f8b596b72a0a768",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x6174e498a13fe848510fb739b76653b6b4cdcd3e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe9cca6ba59b02069f433d6de4e671a42b4ecd3cc",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

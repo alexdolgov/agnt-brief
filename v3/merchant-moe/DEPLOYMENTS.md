@@ -1,6 +1,6 @@
 # merchant-moe — deployments
 
-31 verified deployment(s) across 20 component(s).
+34 verified deployment(s) across 21 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -29,9 +29,12 @@
 | mantle | `0x9b86c2338ede1722a0dd4941561cd8e19080300f` | VestingContract | impl | live | no |
 | mantle | `0xa6630671775c4ea2743840f9a5016dcf2a104054` | LBFactory | impl | live | no |
 | mantle | `0xa756f7d419e1a5cbd656a438443011a7de1955b5` | TransparentUpgradeableProxy2Step | proxy | live | no |
+| mantle | `0xb3938e6ee233e7847a5f17bb843e9bd0aa07e116` | TransparentUpgradeableProxy2Step | proxy | live | no |
+| mantle | `0xb5bd280567c5a62df1a5570c88e63a5670cba22d` | TransparentUpgradeableProxy2Step | proxy | live | no |
 | mantle | `0xb9e9dc0f31f6756558686a8f6948bdbd1798f4c4` | VestingContract | impl | live | no |
 | mantle | `0xcc076c7c657dcafc738991297903610896d2e938` | MasterChefRewarder | impl | live | yes |
 | mantle | `0xd4bd5e47548d8a6ba2a0bf4ce073cbf8fa523dcc` | MasterChef | impl | live | yes |
+| mantle | `0xd9f4e85489adcd0baf0cd63b4231c6af58c26745` | OdosRouterV2 | impl | live | no |
 | mantle | `0xe92249760e1443fbbea45b03f607ba84471fa793` | MoeStaking | impl | live | yes |
 | mantle | `0xeaee7ee68874218c3558b40063c42b82d3e7232a` | MoeRouter | impl | live | yes |
 | mantle | `0xffdeab5342e5370773a88b4fe0a6016c0f741602` | VestingContract | impl | live | no |

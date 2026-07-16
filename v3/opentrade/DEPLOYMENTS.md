@@ -1,9 +1,10 @@
 # opentrade — deployments
 
-24 verified deployment(s) across 24 component(s).
+25 verified deployment(s) across 25 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| avalanche | `0x061329361e0f163125225bf71a1e5af954b46869` | BeaconProxy-2 | proxy | live | no |
 | avalanche | `0x4d3b32bb456a6e387682f6cd37facefe9a219d0c` | PoolFactoryDynamic | impl | unknown | no |
 | ethereum | `0x007b58a41566aa4075fd078d4147a1eaff75923c` | Pool | impl | unknown | no |
 | ethereum | `0x0264f33c7716d93053a28efec730bb5e7412c547` | PoolControllerFlex | impl | unknown | no |

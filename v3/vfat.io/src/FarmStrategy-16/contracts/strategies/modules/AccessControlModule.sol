@@ -92,4 +92,12 @@ contract AccessControlModule {
 
         _;
     }
+
+    function getSickle(address owner) internal view returns (Sickle) {
+        Sickle sickle = Sickle(payable(factory.sickles(owner)));
+        if (address(sickle) == address(0)) {
+            revert SickleNotDeployed();
+        }
+        return sickle;
+    }
 }

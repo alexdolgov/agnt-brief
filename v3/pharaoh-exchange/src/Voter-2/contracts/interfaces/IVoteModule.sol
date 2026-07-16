@@ -38,16 +38,16 @@ interface IVoteModule {
     /// @notice the time which users can deposit and withdraw
     function unlockTime() external view returns (uint256 _timestamp);
 
-    /// @notice deposits all xPHAR in the caller's wallet
+    /// @notice deposits all xRAM in the caller's wallet
     function depositAll() external;
 
     /// @notice deposit a specified amount of xRam
     function deposit(uint256 amount) external;
 
-    /// @notice withdraw all xPHAR
+    /// @notice withdraw all xRAM
     function withdrawAll() external;
 
-    /// @notice withdraw a specified amount of xPHAR
+    /// @notice withdraw a specified amount of xRAM
     function withdraw(uint256 amount) external;
 
     /// @notice check for admin perms
@@ -60,13 +60,13 @@ interface IVoteModule {
     /// @param owner the owner to check against for permissions
     function isDelegateFor(address delegate, address owner) external view returns (bool approved);
 
-    /// @notice used by the xPHAR contract to notify pending rebases
-    /// @param amount the amount of PHAR to be notified from exit penalties
+    /// @notice used by the xRAM contract to notify pending rebases
+    /// @param amount the amount of RAM to be notified from exit penalties
     function notifyRewardAmount(uint256 amount) external;
 
-    /// @notice the address of the xPHAR token (staking/voting token)
-    /// @return _xPhar the address
-    function xPhar() external view returns (address _xPhar);    
+    /// @notice the address of the xRAM token (staking/voting token)
+    /// @return _xRam the address
+    function xRam() external view returns (address _xRam);    
 
     /// @notice address of the voter contract
     /// @return _voter the voter contract address

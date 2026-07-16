@@ -1,0 +1,30 @@
+{
+  "component": "Contract",
+  "main_contract": "Contract",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.curve.finance/pdf/audits/Curve%20Stablecoin%20(crvUSD)%20Security%20Audit%20Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe5afcf332a5457e8fafcd668bce3df953762dfe7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "component": "ProxyAdmin-2",
+  "main_contract": "ProxyAdmin",
+  "source_entry_count": 113,
+  "source_file_count": 113,
+  "source_path_remaps": [
+    {
+      "original_path": "@openzeppelin/contracts/proxy/utils/Initializable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0070-02f47a0da366-Initializable.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "@openzeppelin/contracts/utils/ContextUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0080-a0021b1f5f5b-ContextUpgradeable.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "@openzeppelin/contracts/utils/introspection/ERC165Upgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0081-cd3ba57ba7ad-ERC165Upgradeable.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "@openzeppelin/proxy/utils/Initializable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0082-400f8927a104-Initializable.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "@openzeppelin/utils/ContextUpgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0083-57763995b0b6-ContextUpgradeable.sol",
+      "reason": "case_or_duplicate_collision"
+    },
+    {
+      "original_path": "@openzeppelin/utils/introspection/ERC165Upgradeable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0084-974d4273ac41-ERC165Upgradeable.sol",
+      "reason": "case_or_duplicate_collision"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ProxyAdmin-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x260ca2abef5d38181e2562f00fa92ad1dc681734",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396762"
+    }
+  ]
+}

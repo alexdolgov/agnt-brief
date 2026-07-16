@@ -1,0 +1,38 @@
+{
+  "component": "ERC1967Upgrade-3",
+  "main_contract": "ERC1967Upgrade",
+  "source_entry_count": 11,
+  "source_file_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Upgrade-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xeaf9490cbea6ff9ba1d23671c39a799ced0dced2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404686"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7b06ef6b68648c61afe0f715740fe3950b90746b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404921"
+    }
+  ]
+}

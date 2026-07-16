@@ -1,6 +1,6 @@
 # beta-finance — deployments
 
-127 verified deployment(s) across 126 component(s).
+129 verified deployment(s) across 128 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -26,6 +26,7 @@
 | ethereum | `0x01ae37a333d842428c668d6cc7130e552acab2b1` | PriceFeed | impl | unknown | no |
 | ethereum | `0x06091717521c2002f2859c75f53987eaf1e5aa2f` | Maximillion | impl | unknown | no |
 | ethereum | `0x068af1ec336344cd122b9811ef90d2384519005f` | BetaRunnerLending | impl | live | no |
+| ethereum | `0x06f12b17d97ef27152b68cba208e3415ea65369b` | Contract | impl | live | yes |
 | ethereum | `0x0954906da0bf32d5479e25f46056d22f08464cab` | IndexToken | impl | unknown | no |
 | ethereum | `0x09f93623019049c76209c26517acc2af9d49c69b` | StrategyAnyItemFromCollectionForFixedPriceV1B | impl | unknown | no |
 | ethereum | `0x0a8079ce1fd9b1ae682d9f1b709609a05bf9b236` | BancorConverterFactory | impl | unknown | no |
@@ -94,6 +95,7 @@
 | ethereum | `0x8584b7ac8b1e4255c18784928fbf1c6fca40ca64` | CreamLiquidate | impl | unknown | no |
 | ethereum | `0x86f909f70813cdb1bc733f4d97dc6b03b8e7e8f3` | StrategyAnyItemFromCollectionForFixedPrice | impl | unknown | no |
 | ethereum | `0x8b0c11e0df925387de1ce92504fe0e4af23af6f2` | BancorFormulaProxy | impl | unknown | no |
+| ethereum | `0x9136dfac5435cd0bc627b9400415a19690134a63` | Contract-2 | impl | live | yes |
 | ethereum | `0x91cc8be3ddcb2d4cb27aab987e5b5675af0f9ee3` | OperatorControllerForRewardsV2 | impl | unknown | no |
 | ethereum | `0x9ae50bd64e45fd87dd05c768ff314b8fe246b3ff` | IBAgreementV2 | impl | unknown | no |
 | ethereum | `0x9cf8dcbcf115b06d8f577e73cb9edfdb27828460` | SqrtPriceMathPartial | impl | unknown | no |
@@ -131,9 +133,3 @@
 | ethereum | `0xfac7bea255a6990f749363002136af6556b31e04` | BaseRegistrarImplementation | impl | unknown | no |
 | ethereum | `0xfecc2d4689394202eabe6329acc1a0c6fe25736f` | JumpRateModel | impl | unknown | no |
 | ethereum | `0xfed24ec7e22f573c2e08aef55aa6797ca2b3a051` | TransferManagerERC1155 | impl | unknown | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x06f12b17d97ef27152b68cba208e3415ea65369b`
-- ethereum `0x9136dfac5435cd0bc627b9400415a19690134a63`

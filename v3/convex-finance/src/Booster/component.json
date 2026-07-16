@@ -1,8 +1,8 @@
 {
   "component": "Booster",
   "main_contract": "Booster",
-  "source_entry_count": 11,
-  "source_file_count": 11,
+  "source_entry_count": 1,
+  "source_file_count": 1,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,13 +10,35 @@
     "build_command": "forge build --root \"src/Booster\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf"
+  ],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1389388d01708118b497f59521f6943be2541bb7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x42e8786506d369ca54c474b64029558f991c795b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b",
       "is_proxy": false,
       "implementation_address": null,
@@ -25,14 +47,14 @@
       "logic_topography_row_id": null
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0xf403c135812408bfbe8713b5a23a04b3d48aae31",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393113"
+      "logic_topography_row_id": "393116"
     }
   ]
 }

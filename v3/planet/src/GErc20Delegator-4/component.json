@@ -1,0 +1,28 @@
+{
+  "component": "GErc20Delegator-4",
+  "main_contract": "GErc20Delegator",
+  "source_entry_count": 11,
+  "source_file_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GErc20Delegator-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xcd221e1504442671671d3330cb8e916a5edc3fc7",
+      "is_proxy": true,
+      "implementation_address": "0x62535b498e8f3655249041ce7d35b58bf0138d0e",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

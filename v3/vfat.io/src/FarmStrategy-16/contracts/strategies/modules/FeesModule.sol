@@ -2,7 +2,8 @@
 pragma solidity ^0.8.17;
 
 import "../../libraries/FeesLib.sol";
-import "../../interfaces/external/IWETH.sol";
+import { IWETH9 } from "../../interfaces/external/IWETH.sol";
+import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 import "./DelegateModule.sol";
 
@@ -19,7 +20,7 @@ contract FeesModule is DelegateModule {
 
     /// INTERNALS ///
 
-    function _chargeFees(
+    function _charge_fees(
         bytes32 feeHash,
         address tokenToCharge,
         uint256 baseAmount
@@ -35,30 +36,40 @@ contract FeesModule is DelegateModule {
         );
     }
 
-    function _sickle_charge_fees(
+    function _sickle_charge_fee(
         address strategy,
         bytes4 feeDescriptor,
-        address tokenOut
-    ) external {
+        address feeToken
+    ) public {
         IWETH9 weth = IWETH9(wrappedNativeAddress);
-
-        // charge fees
         uint256 feeBasis;
-        if (tokenOut == ETH) {
+        if (feeToken == ETH) {
             weth.withdraw(weth.balanceOf(address(this)));
             feeBasis = address(this).balance;
         } else {
-            feeBasis = IERC20(tokenOut).balanceOf(address(this));
+            feeBasis = IERC20(feeToken).balanceOf(address(this));
         }
-
-        _chargeFees(
+        _charge_fees(
             keccak256(abi.encodePacked(strategy, feeDescriptor)),
-            tokenOut,
+            feeToken,
             feeBasis
         );
     }
 
-    function _sickle_chargeTransactionCost(
+    function _sickle_charge_fees(
+        address strategy,
+        bytes4 feeDescriptor,
+        address[] memory feeTokens
+    ) external {
+        for (uint256 i = 0; i < feeTokens.length;) {
+            _sickle_charge_fee(strategy, feeDescriptor, feeTokens[i]);
+            unchecked {
+                i++;
+            }
+        }
+    }
+
+    function _sickle_charge_transaction_cost(
         address recipient,
         address wrappedNative,
         uint256 amountToCharge

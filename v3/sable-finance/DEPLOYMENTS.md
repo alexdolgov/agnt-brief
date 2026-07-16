@@ -1,6 +1,6 @@
 # sable-finance — deployments
 
-13 verified deployment(s) across 13 component(s).
+17 verified deployment(s) across 14 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -11,9 +11,13 @@
 | bsc | `0x638675b7c2e056917567571307c6f6a7d69a258a` | TimeLock | impl | live | yes |
 | bsc | `0x698ad77e62679c8e6acfafea03547c38fc5ec0ad` | SystemState | impl | live | yes |
 | bsc | `0x76dcd40843c1de96839bf83790257a36011e6632` | OracleRateCalculation | impl | live | yes |
+| bsc | `0x781285cf9c4d767f8ecdd6f48ce26958487872b7` | VestingWallet | impl | live | no |
 | bsc | `0x7fd517b06b898f1a6081e0891265516f83dc9c9e` | CommunityIssuance | impl | live | yes |
 | bsc | `0xa49bec2146fbeea7314cdbe0fd222419b0c0602f` | BorrowerOperations | impl | live | yes |
 | bsc | `0xa5220fd82c098b7f1c711e2f1c1d599ccfbcdcb3` | PriceFeed | impl | live | yes |
+| bsc | `0xb46e915cf6c6cfcaab3ac606c56d24ce4273c480` | VestingWallet | impl | live | no |
 | bsc | `0xd1bf4d208028cbfe65c6b4d68c12e68f5f3d80f8` | TroveHelper | impl | live | yes |
+| bsc | `0xd853418ca8239bb8352a9b9095cfbe7e0970f6dd` | VestingWallet | impl | live | no |
 | bsc | `0xec035081376ce975ba9eaf28dfec7c7a4c483b85` | TroveManager | impl | live | yes |
 | bsc | `0xfbc81aeb7e5c11d4a60a0690db9f36f93e25b16c` | SableStakingV2 | impl | live | yes |
+| bsc | `0xfef652b9862f8cce28f2bcb4340d9d67e4bb1fcb` | VestingWallet | impl | live | no |

@@ -10,22 +10,29 @@
     "build_command": "forge build --root \"src/WooSuperChargerVaultV2-5\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://2563590922-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FqxL8pa5qcyp6gpHL7o0j%2Fuploads%2FovDjWesvfZxK75yIGIXO%2FWOOFI%20Stake%20-%20Zellic%20Audit%20Report.pdf",
-    "https://github.com/Zellic/publications/blob/master/WOOFI%20Stake%20-%20Zellic%20Audit%20Report.pdf"
-  ],
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x8c603050d7a913b6f63836e07ebf385a4a5736e7",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd2fdab19b94b59c5f0e75dd9813365df815b56b1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401237"
+      "logic_topography_row_id": "401305"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfeecedbc3c292db79347473a2b976a463c3ac2d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401315"
     }
   ]
 }

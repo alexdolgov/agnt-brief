@@ -1,0 +1,28 @@
+{
+  "component": "RouterHelper-2",
+  "main_contract": "RouterHelper",
+  "source_entry_count": 20,
+  "source_file_count": 20,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RouterHelper-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e4387cca2703e4a463e9526d52a15d873a829a1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399838"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # avant-protocol — deployments
 
-15 verified deployment(s) across 15 component(s).
+16 verified deployment(s) across 16 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,6 +12,7 @@
 | avalanche | `0x4c129d3aa27272211d151ca39a0a01e4c16fc887` | RequestsManager | impl | unknown | no |
 | avalanche | `0x649342c6bff544d82df1b2ba3c93e0c22cdeba84` | StakedAvantCoinV2 | impl | live | no |
 | ethereum | `0x02755e2c3f95080cad3669010a60c74096fdea2b` | OFTUpgradeableWithCCIP | proxy | unknown | no |
+| ethereum | `0x09becf6e5e297825d19aa14ed6081a03524532d7` | AvantMintingV2 | impl | live | no |
 | ethereum | `0x1411f6d18d4e0015ee2dc22d4f7b6893dedbdbe1` | SimpleToken | impl | unknown | no |
 | ethereum | `0x18d3ebcef1074f30aba5da3951ff1a87b30b6ec1` | LockReleaseTokenPool | impl | live | no |
 | ethereum | `0x1a3e690b6ebc3013a89e922167570b2684d238e8` | AvantCoinSilo | impl | live | no |

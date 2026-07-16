@@ -1,9 +1,20 @@
 # tornado-cash — deployments
 
-22 verified deployment(s) across 22 component(s).
+60 verified deployment(s) across 29 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x1e34a77868e19a6647b1f2f47b51ed72dede95dd` | ETHTornado | impl | live | no |
+| arbitrum | `0x330bdfade01ee9bf63c209ee33102dd334618e0a` | Tornado-3 | impl | live | no |
+| arbitrum | `0x84443cfd09a48af6ef360c6976c5392ac5023a1f` | ETHTornado | impl | live | no |
+| arbitrum | `0xd47438c816c9e7f2e2888e060936a499af9582b3` | ETHTornado | impl | live | no |
+| avalanche | `0x1e34a77868e19a6647b1f2f47b51ed72dede95dd` | ETHTornado | impl | live | no |
+| avalanche | `0x330bdfade01ee9bf63c209ee33102dd334618e0a` | Tornado-3 | impl | live | no |
+| avalanche | `0xaf8d1839c3c67cf571aa74b5c12398d4901147b3` | ETHTornado | impl | live | no |
+| bsc | `0x1e34a77868e19a6647b1f2f47b51ed72dede95dd` | ETHTornado | impl | live | no |
+| bsc | `0x330bdfade01ee9bf63c209ee33102dd334618e0a` | ETHTornado | impl | live | no |
+| bsc | `0x84443cfd09a48af6ef360c6976c5392ac5023a1f` | ETHTornado | impl | live | no |
+| bsc | `0xd47438c816c9e7f2e2888e060936a499af9582b3` | ETHTornado | impl | live | no |
 | ethereum | `0x03893a7c7463ae47d46bc7f091665f1893656003` | cTornado | impl | live | no |
 | ethereum | `0x07687e702b410fa43f4cb4af7fa097918ffd2730` | ERC20Tornado | impl | live | no |
 | ethereum | `0x0836222f2b2b24a3f36f98668ed8f0b38d1a872f` | TornadoCash_erc20 | impl | live | no |
@@ -11,18 +22,45 @@
 | ethereum | `0x12d66f87a04a9e220743712ce6d9bb1b5616b8fc` | TornadoCash_Eth_01 | proxy | live | no |
 | ethereum | `0x158079ee67fce2f58472a96584a73c7ab9ac95c1` | CErc20 | impl | unknown | no |
 | ethereum | `0x1653c07fa6ce103b43925dddb5e31ca568e53ba1` | PriceOracleProxy | impl | unknown | no |
+| ethereum | `0x169ad27a470d064dede56a2d3ff727986b15d52b` | TornadoCash_erc20 | impl | live | no |
 | ethereum | `0x178053c06006e67e09879c09ff012ff9d263df29` | Comptroller | impl | unknown | no |
+| ethereum | `0x178169b423a011fff22b9e3f3abea13414ddd0f1` | ERC20Tornado | impl | live | no |
 | ethereum | `0x18b5b6696e6569f437f48b111734d72b225d14a7` | NCStandardInterestRateModel | impl | unknown | no |
+| ethereum | `0x22aaa7720ddd5388a3c0a3333430953c68f1849b` | TornadoCash_erc20 | impl | live | no |
+| ethereum | `0x23773e65ed146a459791799d01336db287f25334` | ERC20Tornado | impl | live | no |
+| ethereum | `0x2717c5e28cf931547b621a5dddb772ab6a35b701` | cTornado | impl | live | no |
+| ethereum | `0x4736dcf1b7a3d580672cce6e7c65cd5cc9cfba9d` | TornadoCash_erc20 | impl | live | no |
 | ethereum | `0x47ce0c6ed5b0ce3d3a51fdb1c52dc66a7c3c2936` | TornadoCash_eth | proxy | live | no |
 | ethereum | `0x4b6c07b8940a7602fe4332afa915b366e56eace5` | Proposal | impl | unknown | no |
 | ethereum | `0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5` | CEther | impl | unknown | no |
 | ethereum | `0x5562024784cc914069d67d89a28e3201bf7b57e7` | JumpRateModel | impl | unknown | no |
 | ethereum | `0x5d3a536e4d6dbd6114cc1ead35777bab948e3643` | CErc20Delegator | proxy | unknown | no |
+| ethereum | `0x610b717796ad172b316836ac95a2ffad065ceab4` | ERC20Tornado | impl | live | no |
 | ethereum | `0x645e758796408efdd65bbbd877e8ebceeb231f4c` | NCStableCoinInterestRateModel | impl | unknown | no |
 | ethereum | `0x6d903f6003cca6255d85cca4d3b5e5146dc33925` | Timelock | impl | unknown | no |
 | ethereum | `0x77777feddddffc19ff86db637967013e6c6a116c` | TORN | impl | unknown | no |
 | ethereum | `0x89450e30b806ab95341fade5a9010af146b3232b` | Mixer | impl | unknown | no |
 | ethereum | `0x8c159cfd11677a4f2fe4fd0278dd37a95b986069` | WhitePaperInterestRateModel | impl | unknown | no |
+| ethereum | `0x910cbd523d972eb0a6f4cae4618ad62622b39dbf` | TornadoCash_eth | impl | live | no |
+| ethereum | `0xa160cdab225685da1d56aa342ad8841c3b53f291` | TornadoCash_eth | impl | live | no |
+| ethereum | `0xbb93e510bbcd0b7beb5a853875f9ec60275cf498` | ERC20Tornado | impl | live | no |
+| ethereum | `0xd21be7248e0197ee08e0c20d4a96debdac3d20af` | cTornado | impl | live | no |
+| ethereum | `0xd4b88df4d29f5cedd6857912842cff3b20c8cfa3` | TornadoCash_erc20 | impl | live | no |
+| ethereum | `0xd96f2b1c14db8458374d9aca76e26c3d18364307` | TornadoCash_erc20 | impl | live | no |
 | ethereum | `0xed3b00b651c4c7af77c2fddce4a388de84b507c6` | BatchTreeUpdateVerifier | impl | unknown | no |
 | ethereum | `0xf859a1ad94bcf445a406b892ef0d3082f4174088` | Maximillion | impl | unknown | no |
+| ethereum | `0xfd8610d20aa15b7b2e3be39b396a1bc3516c7144` | TornadoCash_erc20 | impl | live | no |
+| gnosis | `0x1e34a77868e19a6647b1f2f47b51ed72dede95dd` | Tornado-4 | impl | live | no |
+| gnosis | `0x743494b60097a2230018079c02fe21a7b687eaa5` | Verifier16 | impl | live | no |
+| gnosis | `0xa5c2254e4253490c54cef0a4347fddb8f75a4998` | Tornado | impl | live | no |
+| gnosis | `0xaf4c0b70b2ea9fb7487c7cbb37ada259579fe040` | Tornado | impl | live | no |
+| gnosis | `0xdf231d99ff8b6c6cbf4e9b9a945cbacef9339178` | Tornado | impl | live | no |
+| gnosis | `0xdf3a408c53e5078af6e8fb2a85088d46ee09a61b` | Verifier2 | impl | live | no |
 | optimism | `0x1e34a77868e19a6647b1f2f47b51ed72dede95dd` | ETHTornado | impl | live | no |
+| optimism | `0x330bdfade01ee9bf63c209ee33102dd334618e0a` | ETHTornado | impl | live | no |
+| optimism | `0x84443cfd09a48af6ef360c6976c5392ac5023a1f` | ETHTornado | impl | live | no |
+| optimism | `0xd47438c816c9e7f2e2888e060936a499af9582b3` | ETHTornado | impl | live | no |
+| polygon | `0x1e34a77868e19a6647b1f2f47b51ed72dede95dd` | Tornado-5 | impl | live | no |
+| polygon | `0xa5c2254e4253490c54cef0a4347fddb8f75a4998` | Tornado-2 | impl | live | no |
+| polygon | `0xaf4c0b70b2ea9fb7487c7cbb37ada259579fe040` | Tornado-2 | impl | live | no |
+| polygon | `0xdf231d99ff8b6c6cbf4e9b9a945cbacef9339178` | Tornado-2 | impl | live | no |

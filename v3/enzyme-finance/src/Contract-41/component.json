@@ -1,0 +1,30 @@
+{
+  "component": "Contract-41",
+  "main_contract": "Contract",
+  "source_entry_count": 26,
+  "source_file_count": 26,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-41\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/enzymefinance/protocol/blob/v4/audits/2021-12-CS-fund-value-calculator-address-list-registry-paraswap-pool-together-uniswap.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe1ade612e8a568a4a060a60a22f890171d3dc63b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

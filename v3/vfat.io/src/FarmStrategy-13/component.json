@@ -1,8 +1,8 @@
 {
   "component": "FarmStrategy-13",
   "main_contract": "FarmStrategy",
-  "source_entry_count": 26,
-  "source_file_count": 26,
+  "source_entry_count": 31,
+  "source_file_count": 31,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,9 +15,9 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x3cb9ae71566a1bae8244fbbe812d436adc7dc83c",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e1044f8b4f9d7cf370d9f723613a4099a3bc311",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

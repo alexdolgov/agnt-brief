@@ -280,8 +280,8 @@ contract NftFarmStrategy is
         _zapIn(sickle, params.deposit.increase.zap);
 
         uint256 tokenId = INftLiquidityConnector(
-            connectorRegistry.connectorOf(address(params.deposit.nft))
-        ).getTokenId(address(params.deposit.nft), address(sickle));
+            connectorRegistry.connectorOf(address(params.position.nft))
+        ).getTokenId(address(params.position.nft), address(sickle));
 
         _depositNft(
             sickle,

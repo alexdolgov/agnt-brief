@@ -1,0 +1,38 @@
+{
+  "component": "CoinBridge",
+  "main_contract": "CoinBridge",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CoinBridge\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1bda1227875f0f8bb27625dd720f386b40003e14",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397687"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd6ab788159423fb1b0703ad997762e8fc856df9d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397721"
+    }
+  ]
+}

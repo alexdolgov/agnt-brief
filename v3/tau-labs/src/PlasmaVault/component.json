@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/PlasmaVault\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 8,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,16 @@
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x63103375659d0aa94e9f35df15be01a3dd1ae9c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400201"
     },
     {
       "chain": "ethereum",

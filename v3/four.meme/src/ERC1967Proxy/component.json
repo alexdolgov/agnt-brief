@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/ERC1967Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x09b44a633de9f9ebf6fb9bdd5b5629d3dd2cef13",
+      "is_proxy": true,
+      "implementation_address": "0x8366e7f3b9077c9b209fe918cea80accac58cc89",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394588"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/VersionRegistry-3\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -38,6 +38,16 @@
       "chain": "base",
       "chain_id": 8453,
       "address": "0x58d7bf13d3572b08de5d96373b8097d94b1325ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbe9d23040fe22e8bd8a88bf5101061557355ca04",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Universal_SpokePool-4\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 4,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -30,6 +30,16 @@
       "address": "0x053dc4a08302f11d13d8d2b87d8f3c9c28cedeb4",
       "is_proxy": false,
       "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x50039faefebef707cfd94d6d462fe6d10b39207a",
+      "is_proxy": true,
+      "implementation_address": "0xcdb25d0a6fffe639bc591a565f2d99507837f2b7",
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null

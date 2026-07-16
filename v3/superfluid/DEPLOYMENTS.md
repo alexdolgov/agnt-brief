@@ -1,6 +1,6 @@
 # superfluid — deployments
 
-639 verified deployment(s) across 184 component(s).
+645 verified deployment(s) across 186 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -86,12 +86,12 @@
 | avalanche | `0x34b70600b0d9068ebf82d715db8066d14017e17c` | SuperfluidPoolDeployerLibrary-4 | impl | live | no |
 | avalanche | `0x37a024d7f9ea1c7ebb658f5a14caeddd30f212b7` | SuperToken-4 | impl | live | no |
 | avalanche | `0x3903df4f25d9099b15b0b868f5c9876b1013b3b6` | SimpleACL-2 | impl | live | no |
-| avalanche | `0x3998d3f96d75e091c086fa97537b3ee5f8f0428c` | SuperfluidPool-3 | impl | live | no |
+| avalanche | `0x3998d3f96d75e091c086fa97537b3ee5f8f0428c` | SuperfluidPool-2 | impl | live | no |
 | avalanche | `0x3b387638a5d33ae8772715642a21345f23af824c` | BatchLiquidator-2 | impl | unknown | no |
 | avalanche | `0x3b5889d700d06ee054672e41bdb3c95191918d9c` | SuperTokenFactory-2 | impl | live | no |
 | avalanche | `0x3c1bcb2648c4b4c18c44f0cc7088d09b94cbab2e` | PoolAdminNFT | impl | live | no |
 | avalanche | `0x3d9a67d5ec1e72ceca8157e028855056786b6159` | TOGA-6 | impl | live | no |
-| avalanche | `0x4c37d6ec8dd1f8015f03246c3cb2d55e7961534c` | SuperfluidPool-3 | impl | live | no |
+| avalanche | `0x4c37d6ec8dd1f8015f03246c3cb2d55e7961534c` | SuperfluidPool-2 | impl | live | no |
 | avalanche | `0x511cba3de92db7891967e21dbd7c4571531ab84b` | PoolAdminNFT-4 | impl | unknown | no |
 | avalanche | `0x51fbabd31a615e14b1bc12e9d887f60997264a4e` | WrapStrategy | impl | live | no |
 | avalanche | `0x57897b796ece6633fc7c0c6490b4eb84d58509e5` | SlotsBitmapLibrary-2 | impl | live | no |
@@ -99,8 +99,8 @@
 | avalanche | `0x5a2362c459006836de9ef9de8c3a0180a2f6ed42` | ConstantFlowAgreementV1-5 | impl | live | no |
 | avalanche | `0x5ab84e4b3a5f418c95b77dbdecfaf18d0fd3b3e4` | SuperfluidPoolDeployerLibrary-2 | impl | live | no |
 | avalanche | `0x5eae10f654255c148bcb68c33c56655eff4e2c49` | SuperfluidPoolDeployerLibrary-3 | impl | live | no |
-| avalanche | `0x5f4f9a643ea05444ff3e450d9197874d0f5b6058` | SuperTokenFactory-4 | impl | live | no |
-| avalanche | `0x65bbead517e68cde6f4ec2a7682ad440e3dc5033` | SuperTokenFactory-4 | impl | live | no |
+| avalanche | `0x5f4f9a643ea05444ff3e450d9197874d0f5b6058` | SuperTokenFactory-5 | impl | live | no |
+| avalanche | `0x65bbead517e68cde6f4ec2a7682ad440e3dc5033` | SuperTokenFactory-5 | impl | live | no |
 | avalanche | `0x6da13bde224a05a288748d857b9e7ddeffd1de08` | GDAv1Forwarder-4 | impl | unknown | no |
 | avalanche | `0x79ae8bf8ee9238d8e848f7dbbf74ddb3365f6c11` | PoolAdminNFT-7 | impl | live | no |
 | avalanche | `0x7b9b7804dbcf7e6d0d0760f915617d31e54f8c6d` | SuperToken-4 | impl | live | no |
@@ -109,15 +109,17 @@
 | avalanche | `0x814618f7c2f264cf3ec80de104d00e2d20316c40` | SuperfluidPoolDeployerLibrary-2 | impl | live | no |
 | avalanche | `0x818fbe37ecfee8b981dd1a2bb2c292eebe0ab21e` | SlotsBitmapLibrary-4 | impl | live | no |
 | avalanche | `0x848497975f5757aa1a48e13bbf46d330e62b19a7` | PoolAdminNFT-7 | impl | live | no |
-| avalanche | `0x85a58e3a381415f7c94847398807e5b916bad55f` | SuperfluidPool-2 | impl | live | no |
-| avalanche | `0x85fe79b998509b77bf10a8bd4001d58475d29386` | SuperfluidPool-2 | impl | live | no |
+| avalanche | `0x85a58e3a381415f7c94847398807e5b916bad55f` | SuperfluidPool-3 | impl | live | no |
+| avalanche | `0x85fe79b998509b77bf10a8bd4001d58475d29386` | SuperfluidPool-3 | impl | live | no |
 | avalanche | `0x878d431c3617924103d991acd7110bbb857ab064` | SimpleForwarder-2 | impl | live | no |
+| avalanche | `0x8ce0ec4951249d3323e0dd4653b30d16c53568bd` | ConstantFlowAgreementV1-12 | impl | unknown | no |
 | avalanche | `0x91bd026276c23cd88011a6a7f3dba309b07796fc` | SlotsBitmapLibrary-2 | impl | live | no |
+| avalanche | `0x9a19773ebe33c5917012c2bb982bc683d91ec600` | SuperfluidPool-2 | impl | live | no |
 | avalanche | `0x9d29e1e59adb3967f6cbaaccb69765fb48a16961` | InstantDistributionAgreementV1-2 | impl | unknown | no |
 | avalanche | `0x9daf7b3dd83572a1429f3b1331e0fd891f391693` | Superfluid-2 | impl | live | no |
 | avalanche | `0x9e308cb079ae130790f604b1030cdf386670f199` | Upgrader | impl | live | no |
 | avalanche | `0xa032265ee9de740d36af6eb90cf18775577b1ef3` | SlotsBitmapLibrary | impl | live | no |
-| avalanche | `0xa347bdc5965323f92ccd950a8b7012c0e438e178` | PoolAdminNFT-8 | impl | live | no |
+| avalanche | `0xa347bdc5965323f92ccd950a8b7012c0e438e178` | PoolAdminNFT-9 | impl | live | no |
 | avalanche | `0xa4806df890e5212c2879628b4c3b07341f881ed5` | SuperfluidPoolDeployerLibrary | impl | live | no |
 | avalanche | `0xa4dd3f3b68647206e996e1c756f9c36096e65528` | TokenCustodian | impl | live | no |
 | avalanche | `0xa7b197cd5b0cef6d62c4a0a851e3581f5e62e4d2` | UUPSProxy | impl | live | no |
@@ -125,20 +127,23 @@
 | avalanche | `0xac4ef44848b6ae6bedd12e0e3f806caf4d333cdd` | InstantDistributionAgreementV1-9 | impl | live | no |
 | avalanche | `0xb3fb824283f5ece6756ed873711ff0d774415275` | InstantDistributionAgreementV1 | impl | live | no |
 | avalanche | `0xb66334f0965a7fd8bfb5471066676caeada1432b` | SimpleForwarder | impl | live | no |
+| avalanche | `0xb688e4da3100bcec4b5b3140c8fb482ad15d2013` | SuperToken-5 | impl | live | no |
 | avalanche | `0xb8065d19060a7ee66a61e1216702c199c68584eb` | PoolAdminNFT-2 | impl | live | no |
 | avalanche | `0xbfc8c07468aeea87a0a1d30a23804cf4fd73eff1` | UUPSProxy | impl | live | no |
 | avalanche | `0xc02d95c3df22639a3920cd6079991ae80ebfbb42` | SlotsBitmapLibrary-12 | impl | live | no |
+| avalanche | `0xc8f6f1720e6266445b3b53b9b9870b25ade5154e` | SuperTokenFactory-4 | impl | unknown | no |
 | avalanche | `0xcfa132e353cb4e398080b9700609bb008eceb125` | CFAv1Forwarder | impl | live | no |
 | avalanche | `0xd07ed0cb98ce6a9ed4bcf2bc797325c04f0cae54` | ConstantFlowAgreementV1-5 | impl | live | no |
 | avalanche | `0xd1d06bb11f5cf8d52b538220fd09dbece250b022` | SuperfluidPoolDeployerLibrary | impl | live | no |
 | avalanche | `0xd54799973e5e8f468a6df910c53514aedf9d4868` | Superfluid-8 | impl | live | no |
+| avalanche | `0xd59ba9a84fa02e3687bb0694e459b3c1d76586f9` | PoolMemberNFT | impl | unknown | no |
 | avalanche | `0xd5e47070a5889cdffed5f3db102b7f7c25084338` | GeneralDistributionAgreementV1 | impl | live | no |
 | avalanche | `0xde62033f32b1d0b5911290105f39e006cffc7a9e` | Superfluid-18 | impl | live | no |
 | avalanche | `0xe01f8743677da897f4e7de9073b57bf034fc2433` | InstantDistributionAgreementV1-10 | impl | live | no |
 | avalanche | `0xe2b207c005dfe7474be2e9f08578161cb7687896` | Superfluid-8 | impl | live | no |
 | avalanche | `0xe40983c2476032a0915600b9472b3141aa5b5ba9` | SlotsBitmapLibrary-6 | impl | live | no |
 | avalanche | `0xe68143171ed8149009225bee60b97fecc41e960e` | SuperfluidPoolDeployerLibrary-3 | impl | live | no |
-| avalanche | `0xe72f289584eda2be69cfe487f4638f09bac920db` | ConstantFlowAgreementV1-12 | impl | live | no |
+| avalanche | `0xe72f289584eda2be69cfe487f4638f09bac920db` | ConstantFlowAgreementV1-13 | impl | live | no |
 | avalanche | `0xe75eafe86c2be20d8d0c4ccd520a8231c13cb53f` | ERC2771Forwarder-3 | impl | live | no |
 | avalanche | `0xebd331e2cc8ca8e779a24556b5de931c5fb60032` | SimpleForwarder-2 | impl | live | no |
 | avalanche | `0xee07d9fce4cf2a891bc979e9d365929506c2982f` | MultiSigWalletWithDailyLimit-4 | impl | live | no |
@@ -148,7 +153,7 @@
 | avalanche | `0xf3668829f6af94c88e2afdfab4ef953dad62a629` | Superfluid-5 | impl | live | no |
 | avalanche | `0xfc5fa7a03ae8837cc3bad913acaed2966791497c` | ERC2771Forwarder | impl | live | no |
 | avalanche | `0xfcb633f4ff90241391ad92e4678ec2a11a94a990` | SuperToken-11 | impl | live | no |
-| avalanche | `0xff04c024e83f4d8e5d47a92d6f070140162845d1` | SuperfluidPool-2 | impl | live | no |
+| avalanche | `0xff04c024e83f4d8e5d47a92d6f070140162845d1` | SuperfluidPool-3 | impl | live | no |
 | avalanche | `0xffd0f6d73ee52c68bf1b01c8afa2529c97ca17f3` | ConstantFlowAgreementV1-3 | impl | live | no |
 | base | `0x041d4bf21367e9b92016b28fb5a2f697c1befd01` | Manager-3 | impl | live | no |
 | base | `0x04a7d7485da244edd5f99c821fbf0dbbe2abbc37` | FluidLocker | impl | live | no |
@@ -530,8 +535,8 @@
 | optimism | `0xfc5fa7a03ae8837cc3bad913acaed2966791497c` | SlotsBitmapLibrary | impl | live | no |
 | optimism | `0xfcb633f4ff90241391ad92e4678ec2a11a94a990` | SuperToken | impl | live | no |
 | optimism | `0xfd0268e33111565de546af2675351a4b1587f89f` | MacroForwarder-2 | impl | live | no |
-| polygon | `0x036ea0dca13615c2a8b48b7a3407cc255d50ff74` | SuperToken-6 | impl | live | no |
-| polygon | `0x039bcab91fb8d55ac34e48bfa1176e5a46496919` | SuperTokenFactory-5 | impl | live | no |
+| polygon | `0x036ea0dca13615c2a8b48b7a3407cc255d50ff74` | SuperToken-7 | impl | live | no |
+| polygon | `0x039bcab91fb8d55ac34e48bfa1176e5a46496919` | SuperTokenFactory-6 | impl | live | no |
 | polygon | `0x056ecdf86be66f826848b5f87230f14dc77bc372` | ERC2771Forwarder | impl | live | no |
 | polygon | `0x05df4a174fdd2ecad330c9903ccd6eeaceac5cd5` | SuperfluidPoolDeployerLibrary | impl | live | no |
 | polygon | `0x102516cdf578f40e7c0f3447cfabfbbf272249b2` | InstantDistributionAgreementV1 | impl | live | no |
@@ -539,9 +544,9 @@
 | polygon | `0x1cdb58588eea7b637e52bf2c3f6bea22d1d4cb3f` | GeneralDistributionAgreementV1 | impl | live | no |
 | polygon | `0x1d25c063ed90a365fdfbf98bb91510198a90d2e6` | ConstantFlowAgreementV1-6 | impl | live | no |
 | polygon | `0x2581c27e7f6d6af452e63fce884ede3edd716b32` | Manager-2 | impl | live | no |
-| polygon | `0x28dc4cea5580804921bcfd7871963f1df18c8b65` | SuperToken-7 | impl | live | no |
+| polygon | `0x28dc4cea5580804921bcfd7871963f1df18c8b65` | SuperToken-5 | impl | live | no |
 | polygon | `0x2e733b9fdae2654de631f391759ea0f3ecbde233` | GeneralDistributionAgreementV1 | impl | live | no |
-| polygon | `0x2fbdb15217263ec32f0219d933cf6a1397f45633` | SuperTokenFactory-6 | impl | live | no |
+| polygon | `0x2fbdb15217263ec32f0219d933cf6a1397f45633` | SuperTokenFactory-7 | impl | live | no |
 | polygon | `0x31fd5d2dfc4a23b8f0d091fc0b10d64922b1126e` | PoolAdminNFT | impl | live | no |
 | polygon | `0x32300931855fc2c93abc1b8513c9578dafe5a55b` | SuperfluidPoolDeployerLibrary-4 | impl | live | no |
 | polygon | `0x35e03269565816eeda6b453508ea57eadf462cf3` | ConstantFlowAgreementV1-7 | impl | live | no |
@@ -553,7 +558,7 @@
 | polygon | `0x413243dce382e1e7878b1f5e0ac7141a8c7406ad` | SuperfluidPool | impl | live | no |
 | polygon | `0x488913833474bbd9b11f844fdc2f0897fac0ca43` | VestingSchedulerV3 | impl | live | no |
 | polygon | `0x49c2a7e47d2529ed88b2e4aee81b4f9962a96be6` | InstantDistributionAgreementV1 | impl | live | no |
-| polygon | `0x4dbe7e0ffc69441900cd5dba2d5bd43704d3010b` | SuperTokenFactory-7 | impl | live | no |
+| polygon | `0x4dbe7e0ffc69441900cd5dba2d5bd43704d3010b` | SuperTokenFactory-4 | impl | live | no |
 | polygon | `0x4e274eef641c6c5d966f748123b38f3af2a345e8` | SuperfluidPoolDeployerLibrary-2 | impl | live | no |
 | polygon | `0x4f612e3afd340164b0ff2428a51794bfa168b9da` | SuperfluidPoolDeployerLibrary-2 | impl | live | no |
 | polygon | `0x50a85961cbabae7bff645b255f9bfecf9e8e62d0` | SuperfluidPoolDeployerLibrary-3 | impl | live | no |
@@ -581,6 +586,7 @@
 | polygon | `0x96704627ee5563b48b45695abe52921945272d47` | SuperTokenFactory-2 | impl | live | no |
 | polygon | `0x9bdcb6ee7b54bdabb5b085fa450965c665ebd156` | SuperfluidPool | impl | live | no |
 | polygon | `0x9c06f2ee56732cf04979788874af36209cf49b7e` | ConstantFlowAgreementV1-3 | impl | live | no |
+| polygon | `0xa1f477445e3c9e2eb5f40284bf99ffc665d32263` | PoolAdminNFT-8 | impl | unknown | no |
 | polygon | `0xa4f5a82806ba36f0503208f22ac8e7005ed0ec5b` | SuperfluidPoolDeployerLibrary | impl | live | no |
 | polygon | `0xa6359145a66d28ea2c61a27608a077bb35b05381` | ERC2771Forwarder | impl | live | no |
 | polygon | `0xa7afdc46999076c295cfc6812dd73d103cf64e19` | BatchLiquidator | impl | live | no |
@@ -622,7 +628,7 @@
 | polygon | `0xf3668829f6af94c88e2afdfab4ef953dad62a629` | ConstantFlowAgreementV1-11 | impl | live | no |
 | polygon | `0xf428308b426d7cd7ad8ebe549d750f31c8e060ca` | Super721SVGOffChain | impl | live | no |
 | polygon | `0xf4a0ce50ab43cd3d297607eb6599750864aa3ed2` | Superfluid-14 | impl | live | no |
-| polygon | `0xf59bf2a89fd413b0adb3f556304b3dfbde245c73` | SuperToken-5 | impl | live | no |
+| polygon | `0xf59bf2a89fd413b0adb3f556304b3dfbde245c73` | SuperToken-6 | impl | live | no |
 | polygon | `0xf76529ddee7aa7890323eca40c212758dd93b888` | SlotsBitmapLibrary | impl | live | no |
 | polygon | `0xf76f45f57a9689b670a17701878d518741d97852` | SuperfluidPoolDeployerLibrary-3 | impl | live | no |
 | polygon | `0xf7ba9a0c80d5136005a1ec13010f4df8d611e715` | SlotsBitmapLibrary-6 | impl | live | no |
@@ -634,7 +640,7 @@
 | polygon | `0xfa5846405fd739101eaad49c98c158b503f7232f` | SuperfluidPoolDeployerLibrary | impl | live | no |
 | polygon | `0xfb1b483567711d98f670aad610ae9d52cbee0083` | Pool | impl | live | no |
 | polygon | `0xfe39ab461067b230e2f265f9ed16be1a8fbc7eb6` | InstantDistributionAgreementV1-6 | impl | live | no |
-| polygon | `0xff2c723f7d19e32db09670786eab0a50176ff255` | SuperToken-5 | impl | live | no |
+| polygon | `0xff2c723f7d19e32db09670786eab0a50176ff255` | SuperToken-6 | impl | live | no |
 | polygon | `0xffd0f6d73ee52c68bf1b01c8afa2529c97ca17f3` | SlotsBitmapLibrary-11 | impl | live | no |
 | scroll | `0x0f86a21f6216c061b222c224e315d9fc34520bb7` | UUPSProxy-3 | impl | live | no |
 | scroll | `0x2eaa49beb4aa4fcc709dc14c0fa0ff1b292077b5` | BatchLiquidator-4 | impl | unknown | no |
@@ -643,13 +649,3 @@
 | scroll | `0xacfbed2bc9344c158dd3dc229b84bd7220e7c673` | SuperTokenFactory-11 | impl | unknown | no |
 | scroll | `0xb3bcd6da1eeb6c97258b3806a853a6dcd3b6c00c` | UUPSProxy-2 | impl | live | no |
 | scroll | `0xcfa132e353cb4e398080b9700609bb008eceb125` | CFAv1Forwarder-6 | impl | unknown | no |
-
-## Source unavailable (6)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- avalanche `0x8ce0ec4951249d3323e0dd4653b30d16c53568bd`
-- avalanche `0x9a19773ebe33c5917012c2bb982bc683d91ec600`
-- avalanche `0xb688e4da3100bcec4b5b3140c8fb482ad15d2013`
-- avalanche `0xc8f6f1720e6266445b3b53b9b9870b25ade5154e`
-- avalanche `0xd59ba9a84fa02e3687bb0694e459b3c1d76586f9`
-- polygon `0xa1f477445e3c9e2eb5f40284bf99ffc665d32263`

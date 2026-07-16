@@ -1,6 +1,6 @@
 # neo-tokyo — deployments
 
-13 verified deployment(s) across 9 component(s).
+14 verified deployment(s) across 9 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,6 +12,7 @@
 | ethereum | `0x9b091d2e0bb88ace4fe8f0fab87b93d8ba932ec4` | NTOuterCitizenDeploy | impl | live | no |
 | ethereum | `0xa19f5264f7d7be11c451c093d8f92592820bea86` | BYTES2 | impl | live | yes |
 | ethereum | `0xb58ae9e93b8bee7d890ad87a2a70c135a3bf4b4e` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0xb9951b43802dcf3ef5b14567cb17adf367ed1c0f` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0xcfc6a15b2952b6014a993a0c16c9d580d862e21a` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0xdf9a7c4bad39cc914e204d1adab53da21e2fafaa` | royaltySplitter | impl | live | no |
 | ethereum | `0xe7489ea1847395d7eead33e9c85fe327d513d249` | ERC1967Proxy | proxy | live | no |

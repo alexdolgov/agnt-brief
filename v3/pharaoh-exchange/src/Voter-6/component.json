@@ -1,0 +1,28 @@
+{
+  "component": "Voter-6",
+  "main_contract": "Voter",
+  "source_entry_count": 64,
+  "source_file_count": 64,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Voter-6\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xe59b0f65e11e5615579f290a11c7e3b3b312d82a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

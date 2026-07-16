@@ -1,0 +1,141 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.7.6;
+pragma experimental ABIEncoderV2;
+
+import "../interfaces/ISwapMiningOracle.sol";
+
+interface ISwapMining {
+    struct UserInfo {
+        uint256 quantity; // How many LP tokens the user has provided
+        uint256 blockNumber; // Last transaction block
+    }
+
+    struct PoolInfo {
+        address pair; // Trading pairs that can be mined
+        uint256 quantity; // Current amount of LPs
+        uint256 totalQuantity; // All quantity
+        uint256 allocPoint; // How many allocation points assigned to this pool
+        uint256 allocXMSAmount; // How many XMS
+        uint256 lastRewardBlock; // Last transaction block
+    }
+
+    // ----------- Events -----------
+
+    event Withdraw(address indexed user, uint256 amount);
+    event UpdateXmsPerBlock(address indexed user, uint256 xmsPerBlock);
+
+    // ----------- Governor only state changing API -----------
+
+    function addPool(
+        uint256 allocPoint,
+        address pair,
+        bool withUpdate
+    ) external;
+
+    function setPool(
+        uint256 pid,
+        uint256 allocPoint,
+        bool withUpdate
+    ) external;
+
+    function updateXmsPerBlock(uint256 _xmsPerBlock) external;
+
+    function addWhitelist(address _addToken) external returns (bool);
+
+    function delWhitelist(address _delToken) external returns (bool);
+
+    function setRouter(address _router) external;
+
+    function setSwapMiningOracle(ISwapMiningOracle _swapMiningOracle) external;
+
+    // ----------- Router State changing api -----------
+
+    function swap(
+        address account,
+        address input,
+        address output,
+        uint256 amount
+    ) external returns (bool);
+
+    // ----------- State changing api -----------
+
+    function massMintPools() external;
+
+    function updatePool(uint256 pid) external returns (bool);
+
+    function withdraw() external;
+
+    // ----------- Getters -----------
+
+    function xmsPerBlock() external view returns (uint256);
+
+    function totalAllocPoint() external view returns (uint256);
+
+    function startBlock() external view returns (uint256);
+
+    function router() external view returns (address);
+
+    function swapMiningOracle() external view returns (ISwapMiningOracle);
+
+    function factory() external view returns (IMarsSwapFactory);
+
+    function targetToken() external view returns (address);
+
+    function pair2Pid(address pair) external view returns (uint256);
+
+    function poolInfo(uint256 pid)
+        external
+        view
+        returns (
+            address pair,
+            uint256 quantity,
+            uint256 totalQuantity,
+            uint256 allocPoint,
+            uint256 allocXMSAmount,
+            uint256 lastRewardBlock
+        );
+
+    function userInfo(uint256 pid, address user)
+        external
+        view
+        returns (uint256 quantity, uint256 blockNumber);
+
+    function poolExistence(address pair) external view returns (bool);
+
+    function poolLength() external view returns (uint256);
+
+    function getWhitelistsLength() external view returns (uint256);
+
+    function isWhitelist(address token) external view returns (bool);
+
+    function getWhitelist(uint256 index) external view returns (address);
+
+    function getXMSBlockReward(uint256 lastRewardBlock)
+        external
+        view
+        returns (uint256);
+
+    function pendingXMS(uint256 pid, address user)
+        external
+        view
+        returns (uint256, uint256);
+
+    function getPoolInfo(uint256 pid)
+        external
+        view
+        returns (
+            address,
+            address,
+            uint256,
+            uint256,
+            uint256,
+            uint256
+        );
+
+    function getQuantity(
+        address outputToken,
+        uint256 outputAmount,
+        address anchorToken
+    ) external view returns (uint256);
+}

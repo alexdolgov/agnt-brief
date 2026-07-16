@@ -18,14 +18,14 @@
   ],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xe35e9842fceaca96570b734083f4a58e8f7c5f2a",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9295ee1d8c5b022be115a2ad3c30c72e34e7f096",
       "is_proxy": true,
-      "implementation_address": "0xae54d52223c34e4102927516900cc3c562afe02e",
+      "implementation_address": "0x4a84a43274f5f99e94aa0ebef53bc06af8bc3dfb",
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "390544"
+      "logic_topography_row_id": "390539"
     }
   ]
 }

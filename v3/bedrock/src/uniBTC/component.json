@@ -1,0 +1,38 @@
+{
+  "component": "uniBTC",
+  "main_contract": "uniBTC",
+  "source_entry_count": 15,
+  "source_file_count": 15,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/uniBTC\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x93919784c523f39cacaa98ee0a9d96c3f32b593e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392124"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x552b0c6688fcae5cf0164f27fd129b882a42fa05",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392127"
+    }
+  ]
+}

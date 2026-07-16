@@ -1,8 +1,8 @@
 {
   "component": "Contract-5",
   "main_contract": "Contract",
-  "source_entry_count": 16,
-  "source_file_count": 16,
+  "source_entry_count": 12,
+  "source_file_count": 12,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -19,7 +19,7 @@
     {
       "chain": "chain-42220",
       "chain_id": 42220,
-      "address": "0xa849b475fe5a4b5c9c3280152c7a1945b907613b",
+      "address": "0xa0fb8b16ce6af3634ff9f3f4f40e49e1c1ae4f0b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

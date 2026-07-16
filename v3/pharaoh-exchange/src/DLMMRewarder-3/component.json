@@ -17,12 +17,12 @@
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0xf1996b044a8572a6eb8d96540d479f91a3120ab7",
+      "address": "0xc997575204290ff7106ab8b2bcfa7e7dea43d783",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397778"
     }
   ]
 }

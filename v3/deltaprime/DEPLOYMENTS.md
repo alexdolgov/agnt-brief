@@ -1,6 +1,6 @@
 # deltaprime — deployments
 
-698 verified deployment(s) across 661 component(s).
+702 verified deployment(s) across 665 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -699,6 +699,10 @@
 | arbitrum | `0xffc1572403b625ebcf03288e05a6ea8336f6dbb1` | ArbVariableUtilisationRatesCalculator-5 | impl | live | no |
 | arbitrum | `0xffde7799cb27f880b689e6934b3e0df75076b06d` | GmxV2PlusFacetArbitrum-29 | impl | live | no |
 | arbitrum | `0xfff9888d991df4ae1bf2bba89034ccd933e1db14` | SolvencyFacetProdArbitrum-36 | impl | live | no |
+| avalanche | `0x2323dac85c6ab9bd6a8b5fb75b0581e31232d12b` | UsdcPoolTUP | proxy | live | no |
 | avalanche | `0x2916b3bf7c35bd21e63d01c93c62fb0d4994e56d` | SmartLoanDiamondBeacon-3 | proxy | live | yes |
 | avalanche | `0x3ea9d480295a73fd2af95b4d96c2aff88b21b03d` | SmartLoansFactoryTUP | proxy | live | yes |
+| avalanche | `0x475589b0ed87591a893df42ec6076d2499bb63d0` | BtcPoolTUP | proxy | live | no |
 | avalanche | `0xb02c43bfe00d03ecae72bbb6960b23fc0be22cf7` | UsdtPool | impl | live | no |
+| avalanche | `0xd222e10d7fe6b7f9608f14a8b5cf703c74efbca1` | UsdtPoolTUP | proxy | live | no |
+| avalanche | `0xd26e504fc642b96751fd55d3e68af295806542f5` | WavaxPoolTUP | proxy | live | no |

@@ -1,0 +1,28 @@
+{
+  "component": "LzProxyOFTV2-4",
+  "main_contract": "LzProxyOFTV2",
+  "source_entry_count": 21,
+  "source_file_count": 21,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/LzProxyOFTV2-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8d0ac6c1d28ef9a14e8c3ecfcf558a84540a84e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

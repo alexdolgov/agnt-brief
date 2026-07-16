@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "401752"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x383b5123b55f5ef823080c0c9e9bb58ffefd2c5e",
+      "is_proxy": true,
+      "implementation_address": "0x95ef4d9e0cd6573029b39ca403693a0c8733316d",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401754"
     }
   ]
 }

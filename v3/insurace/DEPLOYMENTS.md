@@ -1,10 +1,62 @@
 # insurace — deployments
 
-4 verified deployment(s) across 4 component(s).
+56 verified deployment(s) across 9 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| avalanche | `0x22182ee443e109472fa3ff95311e4532ff5880f9` | TransparentUpgradeableProxy-2 | impl | live | no |
+| avalanche | `0x265ab8950821a4a4e8ced3c81905e4d4488dfc4c` | TransparentUpgradeableProxy-2 | impl | live | no |
+| avalanche | `0x346886f3756ce8a1cfb41aa8a7ed13a5896f58c7` | TransparentUpgradeableProxy-2 | impl | live | no |
+| avalanche | `0x544c42fbb96b39b21df61cf322b5edc285ee7429` | TransparentUpgradeableProxy-2 | impl | live | no |
+| avalanche | `0x563d10af7395db31f9b0030b39fc4e3ef2598fee` | TransparentUpgradeableProxy-2 | impl | live | no |
+| avalanche | `0x599b132328a07b51b833609314824570a99ab9b0` | TransparentUpgradeableProxy-2 | impl | live | no |
+| avalanche | `0x5b9d6666398b86e2541b08b00468ae6434f79441` | TransparentUpgradeableProxy-2 | impl | live | no |
+| avalanche | `0xa29b59a149f62d390dee27b144c0092ca7dbba96` | TransparentUpgradeableProxy-2 | impl | live | no |
+| avalanche | `0xdbbb520b40c7b7c6498dbd532aee5e28c62b3611` | TransparentUpgradeableProxy-2 | impl | live | no |
+| avalanche | `0xdecafc91000d4d3802a0562a8fb896f29b6a7480` | TransparentUpgradeableProxy-2 | impl | live | no |
+| avalanche | `0xf2944068f81578f8e5b2b913f3c7039187dbde91` | TransparentUpgradeableProxy-2 | impl | live | no |
+| avalanche | `0xf851cbb9940f8baebd1d0eaf259335c108e9e893` | TransparentUpgradeableProxy-2 | impl | live | no |
+| avalanche | `0xfba24bdbb36001f1f88b3a552c77ec1c10f5e4c0` | TransparentUpgradeableProxy-2 | impl | live | no |
+| bsc | `0x22182ee443e109472fa3ff95311e4532ff5880f9` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0x2419a92d96eabf7b65f2d0a4ff7a2e002925488a` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0x265ab8950821a4a4e8ced3c81905e4d4488dfc4c` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0x3192ccddf1cdce4ff055ebc80f3f0231b86a7e30` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0x563d10af7395db31f9b0030b39fc4e3ef2598fee` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0x5b9d6666398b86e2541b08b00468ae6434f79441` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0xa5eb163588e25f6de18b9e164ba39daa6086f52b` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0xd50e8ce9d5c1f5228bcc77e318907bb4960578ef` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0xdbbb520b40c7b7c6498dbd532aee5e28c62b3611` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0xdecafc91000d4d3802a0562a8fb896f29b6a7480` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0xeedc1cd692e0d8a73264126c8374262d77ebf1fe` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0xf2ce369b6e2b96952741af463dddd7061f565946` | TransparentUpgradeableProxy | impl | live | no |
+| bsc | `0xfba24bdbb36001f1f88b3a552c77ec1c10f5e4c0` | TransparentUpgradeableProxy | impl | live | no |
 | ethereum | `0x07d8d49c5751566962a5169a9c8efdf64d1ca00b` | AdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0x136d841d4bece3fc0e4debb94356d8b6b4b93209` | AdminUpgradeabilityProxy-2 | proxy | live | no |
 | ethereum | `0x169bf778a5eadab0209c0524ea5ce8e7a616e33b` | UniswapV2Pair | impl | unknown | no |
+| ethereum | `0x1d22085990b7571034afd936d31786ed68a2aa5d` | AdminUpgradeabilityProxy-3 | impl | live | no |
+| ethereum | `0x3d9317a27f3d83f0821deeeb0befdb68d4c9cd47` | AdminUpgradeabilityProxy | impl | live | no |
 | ethereum | `0x4c702f586e3827f27f4cfd94c992bd61ad95a8e7` | InsurAceRenounceINSUROwnership | impl | unknown | no |
+| ethereum | `0x5157e052ae30381e38874a9b3452aabc9f145182` | AdminUpgradeabilityProxy-2 | impl | live | no |
+| ethereum | `0x544c42fbb96b39b21df61cf322b5edc285ee7429` | AdminUpgradeabilityProxy-2 | impl | live | no |
+| ethereum | `0x7d8c3f38c8545a770d57c8043d54e5715b1c584e` | AdminUpgradeabilityProxy-2 | impl | live | no |
+| ethereum | `0x7e68521a2814a84868da716b9f436b53e6764c1d` | AdminUpgradeabilityProxy | impl | live | no |
+| ethereum | `0x88ef6f235a4790292068646e79ee563339c796a0` | AdminUpgradeabilityProxy | impl | live | no |
+| ethereum | `0x8ce730bbaf5ed1b9e8cf2d857f474bdcdeb22275` | AdminUpgradeabilityProxy | impl | live | no |
+| ethereum | `0x9933b0419cfb71791da75ac2dcea952d0875c967` | AdminUpgradeabilityProxy | impl | live | no |
+| ethereum | `0xcd17dba771ae9c8ad63d069eb9c973c842a7618f` | AdminUpgradeabilityProxy-3 | impl | live | no |
+| ethereum | `0xd9aae8f651f323cbb39e328b8fda741d11a231e0` | AdminUpgradeabilityProxy-3 | impl | live | no |
+| ethereum | `0xdf8bec949367b677b7c951219ed66035ddc73d3f` | AdminUpgradeabilityProxy-2 | impl | live | no |
+| ethereum | `0xee516e05cecfee5fe72930f3b38b87594434fd00` | AdminUpgradeabilityProxy | impl | live | no |
+| polygon | `0x09eaa5c29cb01b39b544db165f484a0d015e562b` | TransparentUpgradeableProxy-3 | impl | live | no |
+| polygon | `0x134b906405e877585b7785abe54b45100e52a79c` | AdminUpgradeabilityProxy-3 | impl | live | no |
+| polygon | `0x3e00fe643337a0f4e345539096ca01e6b8d4374a` | TransparentUpgradeableProxy-3 | impl | live | no |
+| polygon | `0x4761dc9e122ef4e06ef4b028aebcb28967934a49` | AdminUpgradeabilityProxy-3 | impl | live | no |
+| polygon | `0x563d10af7395db31f9b0030b39fc4e3ef2598fee` | TransparentUpgradeableProxy-3 | impl | live | no |
+| polygon | `0x599b132328a07b51b833609314824570a99ab9b0` | TransparentUpgradeableProxy-3 | impl | live | no |
+| polygon | `0x7d8c3f38c8545a770d57c8043d54e5715b1c584e` | TransparentUpgradeableProxy-3 | impl | live | no |
+| polygon | `0x8a0e8b4b0903929f47c3ea30973940d4a9702067` | UpgradableProxy | impl | live | no |
+| polygon | `0xa29b59a149f62d390dee27b144c0092ca7dbba96` | TransparentUpgradeableProxy-3 | impl | live | no |
+| polygon | `0xd2171abb60d2994cf9acb767f2116cf47bbf596f` | TransparentUpgradeableProxy-3 | impl | live | no |
+| polygon | `0xd50e8ce9d5c1f5228bcc77e318907bb4960578ef` | TransparentUpgradeableProxy-3 | impl | live | no |
+| polygon | `0xdbbb520b40c7b7c6498dbd532aee5e28c62b3611` | TransparentUpgradeableProxy-3 | impl | live | no |
+| polygon | `0xdecafc91000d4d3802a0562a8fb896f29b6a7480` | TransparentUpgradeableProxy-3 | impl | live | no |

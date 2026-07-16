@@ -2,42 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "beraborrow",
-  "missing": [
-    {
-      "chain_id": 80094,
-      "chain": "chain-80094",
-      "address": "0x4a91b96a615d133e4196655bc1735430ec97a391",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 80094,
-      "chain": "chain-80094",
-      "address": "0x5f1619ffaefde17f7e54f850fe90ad5ee44dbf47",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 80094,
-      "chain": "chain-80094",
-      "address": "0x965da3f96dcbfccf3c1d0603e76356775b5afd2e",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 80094,
-      "chain": "chain-80094",
-      "address": "0xdb32ca8f3bb099a76d4ec713a2c2aacb3d8e84b9",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 80094,
-      "chain": "chain-80094",
-      "address": "0xf8519658cff16fa095a8bceb3dcc576d94399e32",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 80094,
-      "chain": "chain-80094",
-      "address": "0xfa7908287c1f1b256831c812c7194cb95bb440e6",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

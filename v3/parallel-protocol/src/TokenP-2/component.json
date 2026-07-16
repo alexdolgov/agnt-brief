@@ -1,0 +1,48 @@
+{
+  "component": "TokenP-2",
+  "main_contract": "TokenP",
+  "source_entry_count": 37,
+  "source_file_count": 37,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TokenP-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x35c6323da7d0a4be33ada37eca81e03bece0f1c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398287"
+    },
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398306"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x35c6323da7d0a4be33ada37eca81e03bece0f1c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398320"
+    }
+  ]
+}

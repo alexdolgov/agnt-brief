@@ -1,0 +1,38 @@
+{
+  "component": "EmberProtocolConfig",
+  "main_contract": "EmberProtocolConfig",
+  "source_entry_count": 16,
+  "source_file_count": 16,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EmberProtocolConfig\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3259ff4e36cf15a4188fbba2c7bc8d7a37f6b57b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x180558a4765e08d3c33ec952a841142fb9782a51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

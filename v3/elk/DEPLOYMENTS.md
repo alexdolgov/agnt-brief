@@ -1,6 +1,6 @@
 # elk — deployments
 
-27 verified deployment(s) across 23 component(s).
+29 verified deployment(s) across 25 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -30,4 +30,6 @@
 | optimism | `0xf3295f2178762aa96edf5e3e30178e60c79b6ff8` | AlgebraInterfaceMulticall | impl | unknown | no |
 | polygon | `0x28d606535d18471bf7c966c0157895a9f613d995` | ElkSeasonNFT | impl | unknown | no |
 | polygon | `0x3ada56e04ddd5cad6dfd6ed80de6fde2ce3118fd` | ElkV2FarmFactory | impl | unknown | no |
+| polygon | `0x6c21e50fb9c592d5427d790fe424ae4acc24338f` | StakeManager | impl | live | no |
+| polygon | `0x965991775da1a3550445f76b2aa799eac0a05434` | TransparentUpgradeableProxy | impl | live | no |
 | polygon | `0xc146c9b9ce89fe9ee472470395a4cc4e73b7a825` | UniswapV2Pair | impl | unknown | no |

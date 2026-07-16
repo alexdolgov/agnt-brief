@@ -1,0 +1,28 @@
+{
+  "component": "CurvedRateModel",
+  "main_contract": "CurvedRateModel",
+  "source_entry_count": 2,
+  "source_file_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CurvedRateModel\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5d3473bde2c8b408584ddb8cbbb8925f33c01fa7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395658"
+    }
+  ]
+}

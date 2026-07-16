@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/BridgeDepositStrategy-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 9,
+  "deployment_count": 10,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -28,6 +28,16 @@
       "chain": "optimism",
       "chain_id": 10,
       "address": "0x18a0a235320887dec9c1d6035e356a42609fbbd5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x2a2d2dfd492c155ce7e918709aa9a870627e0deb",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

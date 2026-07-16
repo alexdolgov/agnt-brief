@@ -1,6 +1,6 @@
 # acryptos — deployments
 
-104 verified deployment(s) across 18 component(s).
+110 verified deployment(s) across 22 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -18,6 +18,7 @@
 | bsc | `0x14b197ca1a5aef891e86e1eae7a110c865c7dcec` | ACryptoSVault | impl | live | no |
 | bsc | `0x161afe47561cfcf9603ef67c44de95114e78d33f` | ACryptoSVault | impl | live | no |
 | bsc | `0x17c9bba4c84116472309d78b18fb038d4f15e0d6` | ACryptoSVault | impl | live | no |
+| bsc | `0x191409d5a4effe25b0f4240557ba2192d18a191e` | Vyper_contract-2 | impl | live | no |
 | bsc | `0x1ba8b2e5adc5722245b6e8330139f8b0e727406b` | ACryptoSVault | impl | live | no |
 | bsc | `0x1da371dc8127b0cded8d13ff20f062bb9e02c1a3` | ACryptoSVault | impl | live | no |
 | bsc | `0x1db2f258e7f403c1f4b1bc47f686aa3e161dc655` | ACryptoSVault | impl | live | no |
@@ -32,11 +33,13 @@
 | bsc | `0x32fe1be67102c10f6f5e798cb24723e738a31943` | ACryptoSVault | impl | live | no |
 | bsc | `0x35cadd2daa782556b7fd90a98663bacdb78d863e` | ACryptoSVault | impl | live | no |
 | bsc | `0x38e3e6973ba60daadb3ba8b4df76ef3a5a8962b0` | ACryptoSVault | impl | live | no |
+| bsc | `0x3919874c7bc0699cf59c981c5eb668823fa4f958` | Vyper_contract-3 | impl | live | no |
 | bsc | `0x3a30e2029578056fa2cf422afee048fe07ab0a06` | ACryptoSVault | impl | live | no |
 | bsc | `0x3b5b3640096a5381e7378a013069c4ef925d78ec` | StrategyACryptoSVenusLeverageBnb | impl | live | no |
 | bsc | `0x40a7dd6502828ae78d12f0f05506a64dcfdcdfed` | ACryptoSVault | impl | live | no |
 | bsc | `0x4197c6ef3879a08cd51e5560da5064b773aa1d29` | ACS | impl | live | yes |
 | bsc | `0x471696dcd1d615aff82f23ed5835d8bcf0ec1f8d` | ACryptoSVault | impl | live | no |
+| bsc | `0x49440376254290b3264183807a16450457f02b28` | Vyper_contract | impl | live | no |
 | bsc | `0x4e58b693092e33e46a8734b9c4064b82afdca14f` | ACryptoSVault | impl | live | no |
 | bsc | `0x51d6b8a1d3f6b4aef8bcaecd8ead7ff2efdcbb73` | ACryptoSVault | impl | live | no |
 | bsc | `0x52525a9d0c562fc7b685efc754f496fea055c006` | ACryptoSVault | impl | live | no |
@@ -64,6 +67,7 @@
 | bsc | `0x8045db83f60fe9fc8eb67593140eeeb4a71bdf51` | StrategyACryptoS0V6_ACSI | impl | live | no |
 | bsc | `0x82b4c3edcba9b754f0ea4a9d043f6f943204bced` | ACryptoSVault | impl | live | no |
 | bsc | `0x8383661ecf333fce4bf51d498d7c94e2a0c7d5af` | ACryptoSVault | impl | live | no |
+| bsc | `0x83d69ef5c9837e21e2389d47d791714f5771f29b` | Vyper_contract | impl | live | no |
 | bsc | `0x87d5fd97436cd08024553eeff98498103264a230` | ACryptoSVault | impl | live | no |
 | bsc | `0x883a0d28dbac2e713e87aa2448595438d8016811` | ACryptoSVault | impl | live | no |
 | bsc | `0x8888888888f004100c0353d657be6300587a6ccd` | ERC1967Proxy | proxy | live | no |
@@ -82,6 +86,7 @@
 | bsc | `0xb00b62da1cd28ab88983960487f2902c64c00bc5` | ACryptoSVault | impl | live | no |
 | bsc | `0xb1dc4fee3248362d54e15192ea771e82dfafd5bd` | ACryptoSVault | impl | live | no |
 | bsc | `0xb2c1b30689b8a3fd0916b3a3c6135d0226deca7c` | ACryptoSVault | impl | live | no |
+| bsc | `0xb3f0c9ea1f05e312093fdb031e789a756659b0ac` | Vyper_contract-4 | impl | live | no |
 | bsc | `0xb6eb654fbdc697edd73174a19b074bc67c00a0c0` | ACryptoSVault-3 | impl | live | no |
 | bsc | `0xb8c134efafda61a906b657a19b37b3d733362c98` | ACryptoSVault | impl | live | no |
 | bsc | `0xb918b4609462c13272fbf9ba48cb71cf35aee9fa` | StrategyACryptoSAtlantisLeverageBnbV5 | impl | live | no |
@@ -102,6 +107,7 @@
 | bsc | `0xe9861f3624b5f7012991ba2762cd1ead4c622ff5` | ACryptoSVault | impl | live | no |
 | bsc | `0xe9d9f54ab89f712abbdbb3c0f63f2d6edaa3869c` | ACryptoSVault | impl | live | no |
 | bsc | `0xeae1425d8ed46554bf56968960e2e567b49d0bed` | MasterChef | impl | live | yes |
+| bsc | `0xeb7dc7b3bff60a450eff31edf1330355361ea5ad` | Vyper_contract | impl | live | no |
 | bsc | `0xed3f6a5fbe2b4bf4250f5ecd1eea9768a9e01765` | ACryptoSVault | impl | live | no |
 | bsc | `0xf54d438b63c1680b62418339ec2a4c6e4af6c73a` | ACryptoSVault | impl | live | no |
 | bsc | `0xf690ae6cf1f93da3b56425061d37d24046720494` | ACryptoSVault | impl | live | no |

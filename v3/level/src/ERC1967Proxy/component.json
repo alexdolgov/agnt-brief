@@ -1,0 +1,58 @@
+{
+  "component": "ERC1967Proxy",
+  "main_contract": "ERC1967Proxy",
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Proxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29759944834e08ace755dcea71491413f7e2cbad",
+      "is_proxy": true,
+      "implementation_address": "0xf56c770c4e021848ac7d1db67d48aa1b4b56e02f",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5f432430c515964c299bb4f277cdab0fcc074e25",
+      "is_proxy": true,
+      "implementation_address": "0xbd622e336d637c1f36419dbc64da1392a0317b6f",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9136ab0294986267b71beed86a75eeb3336d09e1",
+      "is_proxy": true,
+      "implementation_address": "0xb35e00313090bd9ec1b017d5f2e3de2bb90a92e7",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbd05b8b22fe4ccf093a6206c63cc39f02345e0da",
+      "is_proxy": true,
+      "implementation_address": "0x8088941f807149cd23af0f54cc6e9145dcad2b31",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

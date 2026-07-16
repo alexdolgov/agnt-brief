@@ -10,9 +10,11 @@
     "build_command": "forge build --root \"src/FarmingPlugin\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Storm-Labs-Inc/cove-audits/blob/master/disclosures/2025-06-12-farming-plugin-reentrancy.md"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -21,6 +23,16 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa74e0b738b053d9083451bbab84c538ff2cc701d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

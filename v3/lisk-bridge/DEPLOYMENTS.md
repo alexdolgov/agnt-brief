@@ -1,6 +1,6 @@
 # lisk-bridge — deployments
 
-41 verified deployment(s) across 28 component(s).
+47 verified deployment(s) across 34 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -35,6 +35,7 @@
 | ethereum | `0x95703e0982140d16f8eba6d158fccede42f04a4c` | Proxy-4 | proxy | live | no |
 | ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | AdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0xa2f987a546d4cd1c607ee8141276876c26b72bdf` | AnchorVaultProxy | proxy | live | no |
+| ethereum | `0xa58a4f5c4bb043d2cc1e170613b74e767c94189b` | UTUToken | impl | live | no |
 | ethereum | `0xa75d8afd8d3a36dd3935078e4d05153946cee84c` | TokenTransferor | impl | live | no |
 | ethereum | `0xab235c5b80860899f67f88370ba69c2c80499f23` | BurnMintTokenPool | impl | live | no |
 | ethereum | `0xab7aa6495f8694656b59bc6309d3f6190dbc8b14` | SX1155NFTFactory | impl | live | no |
@@ -43,5 +44,10 @@
 | ethereum | `0xb17548c7b510427baac4e267bea62e800b247173` | SwarmMarketsToken | impl | live | no |
 | ethereum | `0xb85e3e408d8300a002baa9cc355d40a487e9c248` | BurnMintTokenPool | impl | live | no |
 | ethereum | `0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f` | WithdrawalsManagerProxy | proxy | live | no |
+| ethereum | `0xc7315f4faab2f700fc6b4704bb801c46ff6327ac` | L1ERC20TokenBridge | impl | live | no |
+| ethereum | `0xd00e38514d66bf1b761a8937559c6b2854a5b3ad` | OptimismMintableERC20 | impl | live | no |
+| ethereum | `0xd590c2e71739c551eba7aebe00e7855df4cf5fb7` | L1VestingWallet | impl | live | no |
 | ethereum | `0xdac17f958d2ee523a2206206994597c13d831ec7` | TetherToken | impl | live | no |
 | ethereum | `0xe199e1c5201ccdd3792ed902ad3f610ce5629b59` | BurnMintTokenPool | impl | live | no |
+| ethereum | `0xe3622468ea7dd804702b56ca2a4f88c0936995e6` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0xeb99c8c87c5e0c2dcb01e2a1e35aa01f5889f677` | ERC1967Proxy-2 | proxy | live | no |

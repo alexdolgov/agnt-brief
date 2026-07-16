@@ -1,0 +1,30 @@
+{
+  "component": "Contract-31",
+  "main_contract": "Contract",
+  "source_entry_count": 24,
+  "source_file_count": 24,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-31\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/contango-xyz/core-v2/blob/main/networks.json"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x6962ba38d6493b9ed7e0a4b74624c43d844e1438",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

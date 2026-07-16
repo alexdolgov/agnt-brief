@@ -34,42 +34,54 @@ abstract contract ZapModule is SwapModule {
             }
         }
 
-        if (zapData.addLiquidityData.lpToken != address(0)) {
-            bool atLeastOneNonZero = false;
+        if (zapData.addLiquidityData.lpToken == address(0)) {
+            return;
+        }
 
-            AddLiquidityData memory addLiquidityData = zapData.addLiquidityData;
-            for (uint256 i; i < addLiquidityData.tokens.length; i++) {
-                if (addLiquidityData.tokens[i] == address(0)) {
-                    continue;
-                }
-                if (addLiquidityData.desiredAmounts[i] == 0) {
-                    addLiquidityData.desiredAmounts[i] = IERC20(
-                        addLiquidityData.tokens[i]
-                    ).balanceOf(address(this));
-                }
-                if (addLiquidityData.desiredAmounts[i] > 0) {
-                    atLeastOneNonZero = true;
-                    SafeTransferLib.safeApprove(
-                        addLiquidityData.tokens[i],
-                        addLiquidityData.router,
-                        addLiquidityData.desiredAmounts[i]
-                    );
-                }
+        bool atLeastOneNonZero = false;
+
+        AddLiquidityData memory addLiquidityData = zapData.addLiquidityData;
+        for (uint256 i; i < addLiquidityData.tokens.length; i++) {
+            if (addLiquidityData.tokens[i] == address(0)) {
+                continue;
             }
-
-            if (!atLeastOneNonZero) {
-                revert LiquidityAmountError();
+            if (addLiquidityData.desiredAmounts[i] == 0) {
+                addLiquidityData.desiredAmounts[i] =
+                    IERC20(addLiquidityData.tokens[i]).balanceOf(address(this));
             }
+            if (addLiquidityData.desiredAmounts[i] > 0) {
+                atLeastOneNonZero = true;
+                // In case there is USDT or similar dust approval, revoke it
+                SafeTransferLib.safeApprove(
+                    addLiquidityData.tokens[i], addLiquidityData.router, 0
+                );
+                SafeTransferLib.safeApprove(
+                    addLiquidityData.tokens[i],
+                    addLiquidityData.router,
+                    addLiquidityData.desiredAmounts[i]
+                );
+            }
+        }
 
-            address routerConnector =
-                connectorRegistry.connectorOf(addLiquidityData.router);
+        if (!atLeastOneNonZero) {
+            revert LiquidityAmountError();
+        }
 
-            _delegateTo(
-                routerConnector,
-                abi.encodeCall(
-                    ILiquidityConnector.addLiquidity, (addLiquidityData)
-                )
-            );
+        address routerConnector =
+            connectorRegistry.connectorOf(addLiquidityData.router);
+
+        _delegateTo(
+            routerConnector,
+            abi.encodeCall(ILiquidityConnector.addLiquidity, (addLiquidityData))
+        );
+
+        for (uint256 i; i < addLiquidityData.tokens.length; i++) {
+            if (addLiquidityData.tokens[i] != address(0)) {
+                // Revoke any dust approval in case the amount was estimated
+                SafeTransferLib.safeApprove(
+                    addLiquidityData.tokens[i], addLiquidityData.router, 0
+                );
+            }
         }
     }
 

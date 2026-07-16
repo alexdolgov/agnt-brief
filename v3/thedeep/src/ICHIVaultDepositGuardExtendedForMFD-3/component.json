@@ -1,8 +1,8 @@
 {
   "component": "ICHIVaultDepositGuardExtendedForMFD-3",
   "main_contract": "ICHIVaultDepositGuardExtendedForMFD",
-  "source_entry_count": 15,
-  "source_file_count": 15,
+  "source_entry_count": 19,
+  "source_file_count": 19,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "chain-42220",
       "chain_id": 42220,
-      "address": "0xdb771ed1930b1a5993ca878e8c4f9a3e0dd6fccc",
+      "address": "0x141db85183ddb07dee22c33846aebde2101d9f25",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "unknown",
+      "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "400250"
+      "logic_topography_row_id": "400246"
     }
   ]
 }

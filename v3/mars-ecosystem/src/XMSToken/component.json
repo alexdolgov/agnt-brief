@@ -1,0 +1,64 @@
+{
+  "component": "XMSToken",
+  "main_contract": "XMSToken",
+  "source_entry_count": 12,
+  "source_file_count": 12,
+  "source_path_remaps": [
+    {
+      "original_path": "/D/Workspace/Mars/mars-swap-master/contracts/base/XMSToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-c797d5dbd34a-XMSToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/D/Workspace/Mars/mars-swap-master/contracts/interfaces/ICore.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-0d29ff4874ff-ICore.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/D/Workspace/Mars/mars-swap-master/contracts/interfaces/ICoreRef.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-65215e59ce12-ICoreRef.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/D/Workspace/Mars/mars-swap-master/contracts/interfaces/IPermissions.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-5368114f0d82-IPermissions.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/D/Workspace/Mars/mars-swap-master/contracts/interfaces/IUSDMToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-1b4f401dfdaf-IUSDMToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/D/Workspace/Mars/mars-swap-master/contracts/interfaces/IXMSToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-fc2ccf093b32-IXMSToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/D/Workspace/Mars/mars-swap-master/contracts/refs/CoreRef.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-964d50897d68-CoreRef.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/XMSToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7859b01bbf675d67da8cd128a50d155cd881b576",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403407"
+    }
+  ]
+}

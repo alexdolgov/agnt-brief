@@ -1,6 +1,6 @@
 # gondi — deployments
 
-48 verified deployment(s) across 35 component(s).
+54 verified deployment(s) across 40 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -18,10 +18,12 @@
 | ethereum | `0x00000000000000447e69651d841bd8d104bed493` | DelegateRegistry | proxy | live | no |
 | ethereum | `0x039bc1010f0295246d8004224600d65d804f2b0a` | RangeValidator | impl | live | no |
 | ethereum | `0x14a6dcebb2bb73aae1b199ccaada75247b81976d` | UserVault | impl | live | yes |
+| ethereum | `0x18905fc7f3aab462394f45b69308509a6b75573b` | RangeValidator-2 | impl | live | no |
 | ethereum | `0x1cef7ea779acf977a9b99050bc87d9763c50df96` | PurchaseBundler | impl | live | no |
 | ethereum | `0x1e09403be51029fe676e684743b6aad2dab7c9f5` | LoanManagerRegistry | impl | live | no |
 | ethereum | `0x1fba531724ea2493a15bf5c4ea05f6ab5c0fcd62` | PurchaseBundler-6 | impl | live | no |
 | ethereum | `0x237e4421c742d843fdd96d22294d338507e17091` | AuctionLoanLiquidator | impl | live | yes |
+| ethereum | `0x265a38d265599feebcf77a7e43d4837428d1fb00` | RangeValidator-3 | impl | live | no |
 | ethereum | `0x2995ae7233fa89b314b5a707465b57a582f440f0` | AuctionWithBuyoutLoanLiquidator | impl | live | no |
 | ethereum | `0x307521f9650f6568bfe56521e3ed150f5a987803` | AddressManager-3 | impl | live | no |
 | ethereum | `0x3b59bffe109e0f33f20887343759a98b48ecdf5f` | PurchaseBundler-2 | impl | live | yes |
@@ -34,9 +36,12 @@
 | ethereum | `0x53ceda4c47585df08201955820e23bb261489140` | PurchaseBundler-2 | impl | live | yes |
 | ethereum | `0x6e9122df87bfe08648ae4b77e97ce77d91b198be` | LiquidationDistributor | impl | live | no |
 | ethereum | `0x6fee50a83ddfa8a18b40357d3e50f4beb9cc28fd` | PurchaseBundler-4 | impl | live | no |
+| ethereum | `0x7d60c8350267ff6d42741177056051d897cbb40e` | SampleToken | impl | live | no |
 | ethereum | `0x823de2c44369e94cac3da789ad4b6493e27e4bfe` | UserVault-2 | impl | live | no |
 | ethereum | `0x8fb98cc4999de00f6ace797a195381c0b90c1487` | AddressManager | impl | live | no |
 | ethereum | `0x97d34635b605c2f1630d6b4c6c5d222b8a2ca47d` | AuctionLoanLiquidator-2 | impl | live | yes |
+| ethereum | `0xac9cd5fab80c801d5d9f262b4e9f70b89d43a8b6` | RangeValidator-4 | impl | live | no |
+| ethereum | `0xb14b3159785737ddbd0b5e9395394160b146e0b9` | OldERC721Wrapper | impl | live | no |
 | ethereum | `0xb3d88d4a1dcd26bd3adfca69194db7810c90ada2` | AuctionWithBuyoutLoanLiquidator-2 | impl | live | no |
 | ethereum | `0xc0ec4e4ba06dfb2dfaf21a69fc78310d80fc5497` | OldERC721Wrapper | impl | live | no |
 | ethereum | `0xc10472ac1bf9f2e58ff2c83596b4535334c90814` | PurchaseBundler | impl | live | no |
@@ -51,4 +56,5 @@
 | ethereum | `0xf41b389e0c1950dc0b16c9498eae77131cc08a56` | MultiSourceLoan-2 | impl | live | yes |
 | ethereum | `0xf46a58cada29ff34cf62f72357d2b37815506feb` | PurchaseBundler-5 | impl | live | no |
 | ethereum | `0xf65b99ce6dc5f6c556172bcc0ff27d3665a7d9a8` | MultiSourceLoan-3 | impl | live | no |
+| ethereum | `0xfaaff69da43b8195e5b0945c4fea4476e4264157` | SampleCollection | impl | live | no |
 | ethereum | `0xfd31a0cd628f0bab2cc174c3abd6bfc2d01aca61` | PurchaseBundler-4 | impl | live | no |

@@ -1,6 +1,6 @@
 # ideamarket — deployments
 
-17 verified deployment(s) across 16 component(s).
+27 verified deployment(s) across 25 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -21,18 +21,18 @@
 | arbitrum | `0xc63d478befc1a814ec995ed926587034ec7ad46e` | TwitterHandleNameVerifier | impl | live | no |
 | arbitrum | `0xc98a2032660072514892ccfdfa31cd40e6aafe9c` | ProxyAdmin | impl | unknown | no |
 | arbitrum | `0xd2a2830b2b381eb2bca5584c5d96732fdc83ffe9` | IdeaTokenVault | impl | live | no |
+| ethereum | `0x4bc73348b49f8794fb8b4bdee17b1825e5805dbc` | Contract | impl | live | yes |
+| ethereum | `0x4c6eba5860d63308a5221715d92202298d5052df` | Contract-2 | impl | live | yes |
+| ethereum | `0x58d63aead5b593b4974be0ef34afba77f144553d` | Contract-3 | impl | live | yes |
+| ethereum | `0x8b5f5fa35f19cf769cf6158835e3ec594b9ddb3a` | Contract-4 | impl | live | yes |
+| ethereum | `0x902ed1d30212a3dacc471fbbd8e421fa80c3d2b4` | Contract-5 | impl | live | yes |
+| ethereum | `0x9f79feae013017a0830e04bcec67ea084a7c0c9c` | Contract-6 | impl | live | yes |
+| ethereum | `0xb41bd4c99da73510d9e081c5fadbe7a27ac1f814` | Contract-7 | impl | live | yes |
+| ethereum | `0xbe7e6a7cd3bebc1776e64e988bd1518aa3ad29a4` | Contract | impl | live | yes |
+| ethereum | `0xbe9c5da3624a098c05df874b6b7e357859341294` | Contract-8 | impl | live | yes |
+| ethereum | `0xe4f2a4df3722be05abcd49ab734d303b2bbbcd65` | Contract-9 | impl | live | yes |
 
-## Source unavailable (11)
+## Source unavailable (1)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - ethereum `0x2a09cd63015de5a26be51595b17c0f800090e2c1`
-- ethereum `0x4bc73348b49f8794fb8b4bdee17b1825e5805dbc`
-- ethereum `0x4c6eba5860d63308a5221715d92202298d5052df`
-- ethereum `0x58d63aead5b593b4974be0ef34afba77f144553d`
-- ethereum `0x8b5f5fa35f19cf769cf6158835e3ec594b9ddb3a`
-- ethereum `0x902ed1d30212a3dacc471fbbd8e421fa80c3d2b4`
-- ethereum `0x9f79feae013017a0830e04bcec67ea084a7c0c9c`
-- ethereum `0xb41bd4c99da73510d9e081c5fadbe7a27ac1f814`
-- ethereum `0xbe7e6a7cd3bebc1776e64e988bd1518aa3ad29a4`
-- ethereum `0xbe9c5da3624a098c05df874b6b7e357859341294`
-- ethereum `0xe4f2a4df3722be05abcd49ab734d303b2bbbcd65`

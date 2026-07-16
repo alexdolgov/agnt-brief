@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/PutManager\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x90ae2cac15f8d58a258f7b4a243657754469922a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394685"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,

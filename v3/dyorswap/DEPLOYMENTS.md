@@ -1,6 +1,6 @@
 # dyorswap — deployments
 
-9 verified deployment(s) across 7 component(s).
+10 verified deployment(s) across 8 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -9,6 +9,7 @@
 | chain-9745 | `0x11e0f991cad15a5b3cc69c84d33a91fc977a92e7` | DyorPumpToken | impl | live | no |
 | chain-9745 | `0x469e66615f8c34e1ba684b386c42d15b344a14c4` | DyorPumpToken | impl | live | no |
 | chain-9745 | `0x5dd0416835b27325917677f974a256e67dfa1983` | QuoterV3 | impl | live | no |
+| chain-9745 | `0x8704c5e94d7f2d6303f682f781183b53fd05c719` | Draw | impl | live | no |
 | chain-9745 | `0xb4376692ae84487f6b15d68bdcb6c879ec294a60` | DyorPumpToken | impl | live | no |
 | chain-9745 | `0xfc9869ef6e04e8dcf09234ad0bc48a6f78a493cc` | DyorRouterV2-2 | impl | live | no |
 | mode | `0x097de1ade6d7b46540637935c88b489860d310a2` | BEP20 | impl | unknown | no |

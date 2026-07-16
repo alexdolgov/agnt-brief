@@ -1,0 +1,31 @@
+{
+  "component": "Contract-29",
+  "main_contract": "Contract",
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-29\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/enzymefinance/protocol/blob/dev/audits/2023-09-CS--convex-aura-wrappers-v2--no-depeg-policy--arrakis-v2--erc20-deposit-wrapper--lido-withdrawals--aave-v3-debt.pdf",
+    "https://github.com/enzymefinance/protocol/blob/v4/audits/2023-09-CS--convex-aura-wrappers-v2--no-depeg-policy--arrakis-v2--erc20-deposit-wrapper--lido-withdrawals--aave-v3-debt.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa511ecea62f360e983829e408fc753adcadcdeae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -10,14 +10,27 @@
     "build_command": "forge build --root \"src/Manager\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://resources.muffin.fi/files/audits/ABDK_Muffin_Periphery_v_1_0.pdf",
+    "https://resources.muffin.fi/files/audits/Deduab-Muffin-Audit-Report.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xa9a03ff1bac0f600cbb4e1e788fd924a43f35077",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xded07e2da859714f69d93f9794344606ed67907e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

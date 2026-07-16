@@ -1,4 +1,4 @@
-// File: @openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol
+// File: node_modules\@openzeppelin\contracts-upgradeable\utils\AddressUpgradeable.sol
 
 // SPDX-License-Identifier: MIT
 
@@ -166,9 +166,7 @@ library AddressUpgradeable {
     }
 }
 
-// File: @openzeppelin/contracts-upgradeable/proxy/Initializable.sol
-
-
+// File: @openzeppelin\contracts-upgradeable\proxy\Initializable.sol
 
 // solhint-disable-next-line compiler-version
 pragma solidity >=0.4.24 <0.8.0;
@@ -223,8 +221,7 @@ abstract contract Initializable {
     }
 }
 
-// File: @openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol
-
+// File: node_modules\@openzeppelin\contracts-upgradeable\utils\ContextUpgradeable.sol
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -258,8 +255,7 @@ abstract contract ContextUpgradeable is Initializable {
     uint256[50] private __gap;
 }
 
-// File: @openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol
-
+// File: @openzeppelin\contracts-upgradeable\access\OwnableUpgradeable.sol
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -335,8 +331,7 @@ abstract contract OwnableUpgradeable is Initializable, ContextUpgradeable {
     uint256[49] private __gap;
 }
 
-// File: @openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol
-
+// File: @openzeppelin\contracts-upgradeable\utils\ReentrancyGuardUpgradeable.sol
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -406,9 +401,7 @@ abstract contract ReentrancyGuardUpgradeable is Initializable {
     uint256[49] private __gap;
 }
 
-// File: @openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol
-
-
+// File: @openzeppelin\contracts-upgradeable\utils\PausableUpgradeable.sol
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -505,7 +498,7 @@ abstract contract PausableUpgradeable is Initializable, ContextUpgradeable {
     uint256[49] private __gap;
 }
 
-// File: contracts/earnV2/strategiesV2/StrategyV2.sol
+// File: contracts\earnV2\strategiesV2\StrategyV2.sol
 
 pragma solidity 0.6.12;
 
@@ -543,7 +536,7 @@ abstract contract StrategyV2 is Initializable, OwnableUpgradeable, ReentrancyGua
     }
 }
 
-// File: contracts/earnV2/strategiesV2/fortube/StrategyFortubeV2Storage.sol
+// File: contracts\earnV2\strategiesV2\fortube\StrategyFortubeV2Storage.sol
 
 pragma solidity 0.6.12;
 
@@ -581,9 +574,7 @@ contract StrategyFortubeV2Storage {
     address public buyBackPoolAddress;
 }
 
-// File: @openzeppelin/contracts/token/ERC20/IERC20.sol
-
-
+// File: @openzeppelin\contracts\token\ERC20\IERC20.sol
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -661,7 +652,7 @@ interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-// File: contracts/earnV2/defi/fortube.sol
+// File: contracts\earnV2\defi\fortube.sol
 
 pragma solidity 0.6.12;
 
@@ -730,7 +721,7 @@ interface IFToken is IERC20 {
     
 }
 
-// File: contracts/earnV2/defi/pancake.sol
+// File: contracts\earnV2\defi\pancake.sol
 
 pragma solidity 0.6.12;
 
@@ -776,7 +767,7 @@ interface IPancakeRouter02 is IPancakeRouter01 {
 
 }
 
-// File: contracts/interfaces/Wrapped.sol
+// File: contracts\interfaces\Wrapped.sol
 
 pragma solidity 0.6.12;
 
@@ -800,8 +791,8 @@ interface IUnwrapper {
     function unwrapBNB(uint256) external;
 }
 
-// File: @openzeppelin/contracts/math/SafeMath.sol
 
+// File: node_modules\@openzeppelin\contracts\math\SafeMath.sol
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -1017,8 +1008,7 @@ library SafeMath {
     }
 }
 
-// File: @openzeppelin/contracts/utils/Address.sol
-
+// File: node_modules\@openzeppelin\contracts\utils\Address.sol
 
 
 pragma solidity >=0.6.2 <0.8.0;
@@ -1209,8 +1199,7 @@ library Address {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC20/SafeERC20.sol
-
+// File: @openzeppelin\contracts\token\ERC20\SafeERC20.sol
 
 
 pragma solidity >=0.6.0 <0.8.0;
@@ -1286,7 +1275,7 @@ library SafeERC20 {
     }
 }
 
-// File: contracts/earnV2/strategiesV2/fortube/StrategyFortubeV2.sol
+// File: contracts\earnV2\strategiesV2\fortube\StrategyFortubeV2.sol
 
 pragma solidity 0.6.12;
 
@@ -1521,6 +1510,7 @@ contract StrategyFortubeV2 is Initializable, StrategyV2, StrategyFortubeV2Storag
             .mul(buyBackPoolRate)
             .div(buyBackPoolRate.add(buyBackRate));
         if (burnAmt != 0) {
+            require(buyBackPoolAddress != address(0));
             IERC20(BELTAddress).safeTransfer(buyBackPoolAddress, burnAmt);
             emit Buyback(forAddress, _earnedAmt, buyBackAmt, BELTAddress, burnAmt, buyBackPoolAddress);
         }

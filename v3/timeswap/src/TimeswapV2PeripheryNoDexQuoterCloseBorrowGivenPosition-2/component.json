@@ -1,0 +1,38 @@
+{
+  "component": "TimeswapV2PeripheryNoDexQuoterCloseBorrowGivenPosition-2",
+  "main_contract": "TimeswapV2PeripheryNoDexQuoterCloseBorrowGivenPosition",
+  "source_entry_count": 45,
+  "source_file_count": 45,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TimeswapV2PeripheryNoDexQuoterCloseBorrowGivenPosition-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x3c9c2f5c96457f0bcad8f2b6ee864c984546b507",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404338"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x9687c805f0e0845e1b13e1e830b0ef5ca5cdb987",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404348"
+    }
+  ]
+}

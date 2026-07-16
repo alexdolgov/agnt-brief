@@ -10,19 +10,59 @@
     "build_command": "forge build --root \"src/BondDepository\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x8baaefcb8bd969f548aa3c6c71297063f694780f",
+      "address": "0x061bb1a6aecb179b79ae5da6bae179f1d1a79ac8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400158"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0d4f509b7d80bfc7b3aaaefc1c2ede4b362d8273",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400159"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1b83388d6113629c46a98d7de82f58531a8dc710",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400162"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd93e4d6cfa40bf9ed141d690e2af038aaf59ab7e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400179"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf171efc8ad41aabb798d466861dcd7144f973d62",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400183"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # autofinance — deployments
 
-673 verified deployment(s) across 357 component(s).
+690 verified deployment(s) across 367 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,6 +12,7 @@
 | arbitrum | `0x09006e65787c8389b230758f23f66b2ca3ca9312` | AccessController-2 | impl | live | no |
 | arbitrum | `0x096f44f9fbbe6116de5db5954de776fb8733e59a` | SwapRouterV2-5 | impl | live | no |
 | arbitrum | `0x09d0d6a48545e959b230600966d93600fab50322` | MinTimeGapHook | impl | live | no |
+| arbitrum | `0x0ca3d0f3bf808b4720d8ad0e9c1e9fb13534bb42` | UniV3Swap | impl | live | no |
 | arbitrum | `0x0d1212d67d676101bc9ed856b8574a95c7695426` | MaxValueSlippageHook | impl | live | no |
 | arbitrum | `0x0ed955673c18d7bffa4f1e5c84b66577dbcde632` | SwapRouterV2-2 | impl | live | no |
 | arbitrum | `0x0f23b8a998b31c27a83809affb40d0d20005efe3` | BaseAsyncSwapper | impl | live | no |
@@ -37,7 +38,7 @@
 | arbitrum | `0x39841737112ec884406b66a487f3efcdbfd80085` | EulerDestinationVault | impl | live | no |
 | arbitrum | `0x3aac1ce01127593ca0c7f87b1aedb1e153e152ae` | BackingRootOracle-2 | impl | live | no |
 | arbitrum | `0x3dbbb74e6b232bce52a0dc6afc67faf32d56fce9` | FlashBorrowerSolver | impl | live | no |
-| arbitrum | `0x400662c225ecac3ef4907ebb6826419d765ca197` | LiquidationExecutor-2 | impl | live | no |
+| arbitrum | `0x400662c225ecac3ef4907ebb6826419d765ca197` | LiquidationExecutor-3 | impl | live | no |
 | arbitrum | `0x4008dd4a6f8df7427e560b56df1b66e197ceba03` | LiquidationExecutor | impl | live | no |
 | arbitrum | `0x40454f1e95ee73d78f3876c892e9a32007aa2f74` | FluidDestinationVault | impl | live | no |
 | arbitrum | `0x42eccabc940a81bf504b574b84f80a6df5d23713` | ZeroOracle | impl | unknown | no |
@@ -86,6 +87,7 @@
 | arbitrum | `0x8d75a2b774277370d9dc8c034f23003b29032b4b` | DestinationVaultRegistry | impl | live | no |
 | arbitrum | `0x8e9ac280876826f687e509ce4a0f55ff352d402d` | SlippageBudgetHook | impl | live | no |
 | arbitrum | `0x95b5f1abce00b345990d1ec0152b416cd143c58e` | DestinationRegistry | impl | live | no |
+| arbitrum | `0x9717e1b7c338aded95fd4bda0fc5fc1fcd756f8b` | NavLookbackHook | impl | live | no |
 | arbitrum | `0x98a216c534b7eaada6d5642a9ca69393360e339a` | ERC4626Swapper | impl | live | no |
 | arbitrum | `0x9909571399f38fc9eea4eac30cf19ac4ce2e54d2` | BalancerV3StableMathOracle | impl | unknown | no |
 | arbitrum | `0x99ebce650e32cb7c72ce00b753f968e3108bed0e` | RootPriceOracle-5 | impl | live | no |
@@ -114,6 +116,7 @@
 | arbitrum | `0xbbb98962e16448c0629efe4060f0ddb94c41c3dc` | BaseAsyncSwapper | impl | live | no |
 | arbitrum | `0xbbcc2df27ef4f087a404a8dd849d21984a628433` | ChainlinkOracle | impl | unknown | no |
 | arbitrum | `0xbd6beb16d6ccf62142588fb0ce26e589254c741b` | BalancerV3BatchSwap | impl | live | no |
+| arbitrum | `0xbfd6378545d118e8fb26f633d8f3b32bda047e9f` | ProxyAdmin | impl | live | no |
 | arbitrum | `0xbfd8e6c9bf2cd5466f5651746f8e946a6c7b4220` | SystemRegistryL2 | impl | live | no |
 | arbitrum | `0xc08f3906e1291f4a470528aae9f89c14dfa917a7` | UpgradeableAutopoolFactory | impl | live | no |
 | arbitrum | `0xc14caf5329b98bc961108df404da092c666133d3` | ZeroOracle-2 | impl | live | no |
@@ -159,10 +162,13 @@
 | arbitrum | `0xfda745fe8b8bfcbb5c4f014ff09647f348010bd5` | EulerDestinationVault-2 | impl | live | no |
 | arbitrum | `0xfea07884d8918e99a8678dbe25ada77d852c618b` | DestinationRegistry-4 | impl | live | no |
 | arbitrum | `0xff004ba7df7f0d4fd0d1856f009184bd77a24192` | MorphoDestinationVault | impl | live | no |
+| base | `0x0294d71b2c9b88d10f6d3286f5b25026147b2c8c` | LiquidationExecutor-2 | impl | live | no |
 | base | `0x044e1609efb154150436cec9d03e95847f81b776` | FlashBorrowerSolver-4 | impl | live | no |
 | base | `0x136639b786c74bab4c6d17b76d46e7b83035a596` | ERC4626NonLPSpotRangeOracle | impl | live | no |
 | base | `0x18dc926095a7a007c01ef836683fdef4c4371b4e` | SystemRegistryL2-3 | impl | live | no |
+| base | `0x1bfcdfa2722c17959acd1306df1f0406a7d5be5e` | IncentiveHarvester | impl | live | no |
 | base | `0x2ab4a3a8224726cbaa91d6b04d212979f06efdf9` | AutopoolETH-3 | impl | live | no |
+| base | `0x2bb11c6407bb9dcbb5b776f789371de5aaca44a5` | AerodromeSwap | impl | live | no |
 | base | `0x30f285c7cb4304e82302ce06f24e285bd527c637` | ChainlinkStatsUpkeepV4 | impl | live | no |
 | base | `0x33608082c7cd20ac7a6fc06c6de7b8ed9e9c1678` | ERC4626NonLPSpotEthOracle-3 | impl | live | no |
 | base | `0x4103a467166bbbda3694ab739b391db6c6630595` | AutopoolMainRewarder-4 | impl | live | no |
@@ -191,6 +197,7 @@
 | base | `0xa18b89225491230fdb1883cfbda65e7931606931` | AutopilotRouter-2 | impl | live | no |
 | base | `0xa1afc8aaf80df8ceb179e99bb1a8fb4d26095ba1` | DestinationRegistry-3 | impl | live | no |
 | base | `0xa600421acee5c0a3dd6aa2051c55f2d6246be405` | ERC4626RedeemSwapper-2 | impl | live | no |
+| base | `0xa628e88155ff063d92f6fb39b58a2f39c0740e1e` | BlockchainInfo-2 | impl | inactive | no |
 | base | `0xa6efb95b7393cb419b48a933273f49b6bb48dd5d` | BalancerAuraDestinationVault-2 | impl | live | no |
 | base | `0xa80b38da84e7c7a094e6d0093de374a00e892934` | BridgedLSTCalculator | impl | live | no |
 | base | `0xa94031ed4b316b043464fdd5482877f42a39845a` | AerodromeDestinationVault | impl | live | no |
@@ -228,6 +235,10 @@
 | base | `0xfbe1cefb85716c0e43ecfd399372996646b992c1` | FlashBorrowerSolver-3 | impl | live | no |
 | base | `0xfff19270583bb6a37e023a3fd499caa5cea3a304` | FlashBorrowerSolver | impl | live | no |
 | chain-146 | `0x1a912eb51d3cf8364ebaee5a982ca37f25ad8848` | SystemRegistryL2-2 | impl | live | no |
+| chain-146 | `0x833adb5f597ef5f257914ff9f7f227812bd3d4e3` | SwapperAdapter | impl | inactive | no |
+| chain-146 | `0x8737f97b4c4d521a838f5c292309aa6c108dcef2` | Bytes32 | impl | inactive | no |
+| chain-146 | `0xb93c1927c12499106c4b14e86924a41a75dae2f2` | ArraysConverter | impl | inactive | no |
+| chain-146 | `0xf1e608c160d6ffb48b7e9b9ffdd8f2f3a687aeba` | BlockchainInfo | impl | inactive | no |
 | chain-9745 | `0x03fad8445b30bf639c5f54e9502e43ba5f4d6cad` | SolverRootOracle | impl | live | no |
 | chain-9745 | `0x07ed7ef81d7dd79fb6043d0a37c11d78f3b8f95b` | EulerDestinationVault | impl | live | no |
 | chain-9745 | `0x09708019cf2527ad3263885ff712fc79cec5d0c2` | ArraysConverter | impl | live | no |
@@ -245,6 +256,7 @@
 | chain-9745 | `0x2ddb79fdeb9f4708604acecec28e4adc247980be` | LiquidationExecutor | impl | live | no |
 | chain-9745 | `0x2fc77f22e40e2459d4794bd108c779c9dd6cd469` | BaseAsyncSwapper | impl | live | no |
 | chain-9745 | `0x35cbe9f5cad6ed153fd269eba82fc6257e331866` | BalancerAdapter | impl | live | no |
+| chain-9745 | `0x4c0be1062dcdaed7be09f73a4f00a0313a6b427b` | NavLookbackHook | impl | live | no |
 | chain-9745 | `0x596bec113eb0a63660a662519fc2f715bc821254` | TransientStorage | impl | live | no |
 | chain-9745 | `0x5ab9f9cd8cca2e8b694de0e59fa18429a05031a9` | ERC4626BackingOracle | impl | live | no |
 | chain-9745 | `0x5b2cd1b8fd200bd80a6facf9b3f60102caffd68c` | FluidDestinationVault | impl | live | no |
@@ -477,6 +489,7 @@
 | ethereum | `0xd1057b6c6736bf4f5b4a850cff02054f1f38e581` | FeeRedeemer | impl | live | no |
 | ethereum | `0xd3b5d9a561c293fb42b446fe7e237daa9bf9aa84` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xd3d13a578a53685b4ac36a1bab31912d2b2a2f36` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| ethereum | `0xd4580a56e715f14ed9d340ff30147d66230d44ba` | ERC4626RateProvider | impl | live | no |
 | ethereum | `0xd4ba036446889766e02dcfa0c92fcb4b31870568` | AutopoolETH | impl | live | no |
 | ethereum | `0xd4e7a6e2d03e4e48dfc27dd3f46df1c176647e38` | UniswapV2Pair-2 | impl | live | no |
 | ethereum | `0xd545ee3ba242e89fa45caa68665898baf4201004` | CurveV1PoolNoRebasingStatsCalculator | impl | live | no |
@@ -512,6 +525,7 @@
 | ethereum | `0xfda49984eb4ea4075b8b451032849347c633e94b` | BalancerAuraDestinationVault | impl | live | no |
 | ethereum | `0xffd22cee98c24c12b20987d4106148d88269ede3` | Rewards-5 | impl | live | no |
 | ethereum | `0xffebb3fba5b04253dfc34af690d045646b4d959f` | ERC4626Swapper | impl | live | no |
+| linea | `0x0093fff32ee2d0469cb00badb9f8d47efbb144c6` | UniV3Swap | impl | live | no |
 | linea | `0x00cc296010664ff909aa90795a919046d1423b67` | AccessHub-2 | impl | live | no |
 | linea | `0x01890ea9326d6c2d5941a51473d12f8179744be4` | UpgradeableAutopoolFactory-4 | impl | live | no |
 | linea | `0x020079c6cb277ec22306a45e7d4eaefd24d3200e` | RamsesTreasuryHelper | impl | live | no |
@@ -615,9 +629,11 @@
 | linea | `0xa04a9f0a961f8fcc4a94bcf53e676b236cbb2f58` | NonfungiblePositionManager | proxy | live | no |
 | linea | `0xa0b937aa848877b98a2c2d799ec3fc10fed4f116` | Voter-5 | impl | live | no |
 | linea | `0xa287f05761ca1af57df6ae3142eefb04b8493e46` | SystemSecurityL1-3 | impl | live | no |
+| linea | `0xa31fe55d43e0577155d71bf2231818a6bd59fa42` | NavLookbackHook-2 | impl | live | no |
 | linea | `0xa6e5ace475b117c66ffe5a0baf5e09867dacf562` | EthPeggedOracle-2 | impl | unknown | no |
 | linea | `0xaaee6a22f738db8d50a492e42edef9bb52869707` | MaxValueSlippageHook-2 | impl | live | no |
 | linea | `0xade917f16f0aaef80f1ff5939635b18b629d56d1` | Voter-6 | impl | live | no |
+| linea | `0xae315b4397e2e8fe932a933e4e3c2b97ca66bcc9` | UniV3Swap | impl | unknown | no |
 | linea | `0xae334f70a7fc44fcc2df9e6a37bc032497cf80f1` | RamsesV3Factory | impl | live | no |
 | linea | `0xb0b55dbc4449fb5bcc127e81e3dece0035af5939` | AutomatedFeeNotifier-2 | impl | live | no |
 | linea | `0xb593fa9d853ad89bfcf77c9a22d24936774fe335` | Quoter | impl | live | no |
@@ -669,6 +685,7 @@
 | linea | `0xf0e746d59032c573b91d39666eb32137917956d1` | SwapRouter-2 | impl | live | no |
 | linea | `0xf25f616ccc086dda1129323381efa1edc8d5f42c` | AutopoolRegistry-3 | impl | live | no |
 | linea | `0xf4425cb2bb4275afe3d0232a6a00a4fbfdb76a04` | AccessController-3 | impl | live | no |
+| linea | `0xf61e75fbe9147f230400a1e7737c6f6934990544` | AutopilotRouter-7 | proxy | live | no |
 | linea | `0xf63daffb0b8eb975856d7935d13e4645e66f2f47` | LstPriceHook-2 | impl | live | no |
 | linea | `0xf70dc8cf16ee9a68249f35c36cd1c1ba9c631ee4` | VoteModule | impl | live | no |
 | linea | `0xf8396260bdb72b6708b293db3842cdced90b6255` | Minter | impl | live | no |

@@ -1,0 +1,30 @@
+{
+  "component": "Contract-51",
+  "main_contract": "Contract",
+  "source_entry_count": 67,
+  "source_file_count": 67,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-51\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/contango-xyz/core-v2/blob/main/networks.json"
+  ],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x293009f7133ad3f3300e1e771f9caa66db58275b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

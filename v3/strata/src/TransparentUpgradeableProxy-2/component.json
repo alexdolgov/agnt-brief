@@ -11,20 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2026-01-23-cyfrin-strata-shares-cooldown-v2.0.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x0404ea6f1c89a5032ea2baddfbac20ce11cdf1ce",
+      "address": "0x011e55d2b28306458e37ca7e997c879bb25a455d",
       "is_proxy": true,
-      "implementation_address": "0x655c80af21fa35d5d94bd8bb32b9e325e38a1e58",
+      "implementation_address": "0x5c8df1867dae4db77903d4aec24a09e81e72a6db",
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399559"
+      "logic_topography_row_id": "399555"
     }
   ]
 }

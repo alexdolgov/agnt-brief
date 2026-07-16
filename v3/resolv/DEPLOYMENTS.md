@@ -1,10 +1,24 @@
 # resolv — deployments
 
-50 verified deployment(s) across 32 component(s).
+68 verified deployment(s) across 41 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x2492d0006411af6c8bbb1c8afc1b0197350a79e9` | TransparentUpgradeableProxy | proxy | live | no |
+| arbitrum | `0x2e1e87d0a10dd59c332b1c0e8a894b738df7059e` | BlueprintByResolv | proxy | live | no |
+| arbitrum | `0x35e5db674d8e93a03d814fa0ada70731efe8a4b9` | TransparentUpgradeableProxy | proxy | live | no |
+| arbitrum | `0x66cfbd79257dc5217903a36293120282548e2254` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| base | `0x35e5db674d8e93a03d814fa0ada70731efe8a4b9` | TransparentUpgradeableProxy | proxy | live | no |
+| base | `0xb67675158b412d53fe6b68946483ba920b135ba1` | TransparentUpgradeableProxy | proxy | live | no |
+| base | `0xc31389794ffac23331e0d9f611b7953f90aa5fdc` | TransparentUpgradeableProxy | proxy | live | no |
+| bsc | `0x0da21d330f3f75d730a1b5f1535ca75061cabf61` | SimpleOFT | impl | live | no |
+| bsc | `0x5943026e21e3936538620ba27e01525bba311255` | SimpleOFT-2 | impl | live | no |
+| chain-80094 | `0x2492d0006411af6c8bbb1c8afc1b0197350a79e9` | TransparentUpgradeableProxy | proxy | live | no |
+| chain-80094 | `0x35e5db674d8e93a03d814fa0ada70731efe8a4b9` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-9745 | `0x5943026e21e3936538620ba27e01525bba311255` | Timelock | impl | live | no |
+| chain-999 | `0x0a3d8466f5de586fa5f6de117301e2f90bcc5c48` | TransparentUpgradeableProxy | proxy | live | no |
+| chain-999 | `0x0ad339d66bf4aed5ce31c64bc37b3244b6394a77` | TransparentUpgradeableProxy | proxy | live | no |
+| chain-999 | `0x46c1c168ca597b9e5423aa7081a0dce782caeaab` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0x000bcfdc448754b25f8e8afd5fc1fcc259d7e1bc` | AccessControlledOffchainAggregator-2 | impl | live | no |
 | ethereum | `0x02238bb0085395ae52cd4755456891fc2fd5934d` | Chronicle_STETH_BTC_1 | impl | live | no |
 | ethereum | `0x04580be599d6ec1ff77125b724014e1e959bf0d3` | AccessControlledOffchainAggregator | impl | live | no |
@@ -12,7 +26,7 @@
 | ethereum | `0x064358f9b6428c51f80511d73afeb3a9e5cf0213` | ConfigRegistry_VAO_1 | impl | live | no |
 | ethereum | `0x0b4cb11fac24707f3f0f89e441a4cdf6ef01d215` | Chronicle_WSRUSD_USD_1 | impl | live | no |
 | ethereum | `0x10f4d4ead6bcd4de7849898403d88528e3dfc872` | ExternalRequestsManager | impl | live | no |
-| ethereum | `0x1202f5c7b4b9e47a1a484e8b270be34dbbc75055` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x1202f5c7b4b9e47a1a484e8b270be34dbbc75055` | TransparentUpgradeableProxy-3 | proxy | live | yes |
 | ethereum | `0x1ea387a7228b97796256cc6b109b361635195c5f` | Chronicle_Tester | impl | unknown | no |
 | ethereum | `0x212e81359f24fb871638c366f6df1c42fa789037` | StakedTokenDistributor-2 | impl | live | no |
 | ethereum | `0x277f78f39b9dc73df3723bacd40f8658f8a1a633` | Chronicle_SRUSD_USD_1 | impl | live | no |
@@ -25,6 +39,7 @@
 | ethereum | `0x51864c574fe9d69eaba03b2cc3fa4d501978e74a` | AccessControlledOffchainAggregator | impl | live | no |
 | ethereum | `0x53c5b703465234f97c5a7b17b602c6224a08031e` | StakedTokenDistributor-3 | impl | live | no |
 | ethereum | `0x552116e747a5b386b2e7eed4371002359cf2a574` | Chronicle_SPK_USD_1 | impl | live | no |
+| ethereum | `0x5ac0551f79d10f9f2a7ce74eeffad23336060b9a` | ResolvToken | impl | live | no |
 | ethereum | `0x6a4a218d3cf2ecda6de219efd03eb6091b17432f` | AccessControlledOffchainAggregator | impl | live | no |
 | ethereum | `0x6ac1f64931e0fd9582a095090fab2e838904dbaf` | StakedTokenDistributor | impl | live | no |
 | ethereum | `0x6c8984bc7dbbedaf4f6b2fd766f16ebb7d10aab4` | BurnRegistryV1 | proxy | live | yes |
@@ -36,10 +51,12 @@
 | ethereum | `0x897cfe55bceb601d5bcbdd34dbdcaee033d5dabf` | AccessControlledOffchainAggregator | impl | live | no |
 | ethereum | `0x8deccbee3ae42901080632ef7e837aca555dc511` | AccessControlledOffchainAggregator | impl | live | no |
 | ethereum | `0x909b2fb63536e22499ec81ef7ca1c66dbc62bfcc` | AccessControlledOffchainAggregator | impl | live | no |
-| ethereum | `0x91eda28735ce089a8b5133476263c3fb8303c8ca` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| ethereum | `0x91eda28735ce089a8b5133476263c3fb8303c8ca` | TransparentUpgradeableProxy-4 | proxy | live | no |
 | ethereum | `0x9f805fc8679e5f81a0683c3203ad48417efdad12` | RewardDistributor | impl | live | no |
 | ethereum | `0xa27a69ae180e202fde5d38189a3f24fe24e55861` | TheCounter | impl | live | no |
 | ethereum | `0xab63ad97b09241412f52fa6bb68f6f9876587620` | AccessControlledOffchainAggregator | impl | live | no |
+| ethereum | `0xac85ef29192487e0a109b7f9e40c267a9ea95f2e` | UsrExternalRequestsManager | impl | live | no |
+| ethereum | `0xba1600735a039e2b3bf1d1d2f1a7f80f45973da7` | StUSR | impl | live | no |
 | ethereum | `0xbac23ec6ccab8631f500ecb6c01ea0ee0b72ac69` | StakedTokenDistributor | impl | live | no |
 | ethereum | `0xbb2213e9a4515174d433cd75cc2695043c85e32c` | StakedTokenDistributor | impl | live | no |
 | ethereum | `0xbf1762fdbb06e8ee715ae59495b2bf14fb1649df` | ResolvStakingV2 | impl | live | no |
@@ -50,6 +67,7 @@
 | ethereum | `0xdd34acfafec81eec1477a1889d3c23e887f38a67` | AccessControlledOffchainAggregator | impl | live | no |
 | ethereum | `0xeb656424e16a8092592a74e6cd93cfd212204495` | Chronicle_EBTCbadger_ETH_1 | impl | live | no |
 | ethereum | `0xeef36320ee5d9f258e22ffc93df8619ec04acdd3` | ResolvStakingV2-2 | impl | live | no |
+| ethereum | `0xef4c4bcbe105170810b6ef58a286d9ce97a1fabe` | SimpleToken | impl | live | no |
 | ethereum | `0xf35a655213a9eb84dc88f07c642f20aff198f829` | AccessControlledOffchainAggregator | impl | live | no |
 | ethereum | `0xf47af3904dab5bb2ec2980a6100ec58a2f82ba80` | ExternalRequestsCoordinator-2 | impl | live | no |
 | ethereum | `0xfac0a7282a36327f88bd0a64ff57d64012750bc3` | AccessControlledOffchainAggregator | impl | live | no |

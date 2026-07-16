@@ -1,21 +1,73 @@
 # kine-finance — deployments
 
-15 verified deployment(s) across 13 component(s).
+67 verified deployment(s) across 44 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | avalanche | `0x0544be6693763d64c02f49f16986ba1390a2fc39` | KEther-4 | impl | live | no |
+| bsc | `0x013a07efbafd343bd4ed2241f97579f4bb6e3c9e` | KMCDDelegate | impl | live | no |
 | bsc | `0x1568a7f0bdf67d37dc963c345dbc4a598859eba3` | KineExchangeTreasury | impl | live | no |
+| bsc | `0x308043a2a7c62b17906f9b074a349c43ccd919ad` | StakingRewardsV2 | impl | live | no |
+| bsc | `0x3a8502fd810df171d327e080fb39c734c79b57c2` | KErc20Delegator | proxy | live | no |
+| bsc | `0x42fe8ec54db8ea76c45673723fbd69116fd28989` | KUSDMinterDelegator | proxy | live | no |
+| bsc | `0x4f1ab95b798084e44d512b8b0fed3ef933177986` | KineControllerInterface-2 | proxy | live | no |
 | bsc | `0x5fbe4eb536dadbcee54d5b55ed6559e29c60b055` | KEther-2 | impl | live | no |
+| bsc | `0x6534af0bb8cdc205be7f43fb29a602df26a0446c` | KineMultiSigWallet | impl | live | no |
+| bsc | `0x670076f14fb7bc9735af1bc9a1d1ad5266f54fa0` | KErc20Delegator | proxy | live | no |
+| bsc | `0x6c2c7c5b5c0b60a13b981accfe1aa1616985d3d7` | StakingRewardsV2-2 | impl | live | no |
+| bsc | `0xa58e822de1517aae7114714fb354ee853cd35780` | KErc20Delegator | proxy | live | no |
+| bsc | `0xaf2617aa6fd98581bb8cb099a16af74510b6555f` | KUSDVault | impl | live | no |
 | bsc | `0xbfa9df9ed8805e657d0feab5d186c6a567752d7f` | Kine | impl | live | no |
+| bsc | `0xcea2d0a0413b6bf052eb2eca9c256ee25ad7d128` | KErc20Delegate-3 | impl | live | no |
+| bsc | `0xd4c220ccac0335334d425a90f58de7c667896a06` | KaptainV2 | impl | live | no |
+| bsc | `0xd61867501b821befd5e4270a91836f8f7424b847` | KErc20Delegator | proxy | live | no |
 | bsc | `0xd819d96f9d28ea85c1dd78e66d7241134e8d4ab4` | KineUSD | impl | live | no |
+| bsc | `0xf8c7b7709dd106e70133474bdf05d9d5a87c871f` | KErc20Delegator | proxy | live | no |
+| ethereum | `0x1540e5821370ace8120ce48554d35276d86a9f0c` | KaptainV2 | impl | live | no |
+| ethereum | `0x1568a7f0bdf67d37dc963c345dbc4a598859eba3` | KErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x24ff636d8671cb8d35e63d6b36f26893818e57af` | KErc20Delegate | impl | live | no |
+| ethereum | `0x377f100a7280dd992c6f2503330f893620f586ab` | KErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x473ccdec83b7125a4f52aa6f8699026fcb878ee8` | KErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x624c0042fdda26c67e919c8a2f19072e7fab4b8d` | KErc20Delegate | impl | live | no |
+| ethereum | `0x63b63b5f0ae8057cb8f704f65fd91c19badd5a73` | KErc20Delegator-2 | proxy | live | no |
+| ethereum | `0x80850db68db03792ca5650fbdaccebe1da5e52bf` | LPStakingRewards | impl | live | no |
+| ethereum | `0x834c3bb26bb1bf025dc6b66ad5d7f9003333606b` | LPStakingRewards | impl | live | no |
+| ethereum | `0x9e8e622e0ba0dee491fbc42d1bb12ab947e2d03b` | Timelock | impl | live | no |
 | ethereum | `0xa58e822de1517aae7114714fb354ee853cd35780` | KEther | impl | live | no |
+| ethereum | `0xa6e17ae4b683ed2ee7cb7414a92bd8316f330191` | KineMultiSigWallet | impl | live | no |
 | ethereum | `0xa8d7643324df0f38764f514eb1a99d8f379cc692` | KineRanch | impl | live | no |
+| ethereum | `0xad58bea532f8fe7b7d485230000cd3757d8ae948` | KErc20Delegate | impl | live | no |
+| ethereum | `0xaf2617aa6fd98581bb8cb099a16af74510b6555f` | KineControllerInterface | proxy | live | no |
 | ethereum | `0xbb7d94a423f4978545ecf73161f0678e8afd1a92` | Exponential | proxy | live | no |
+| ethereum | `0xc75ba7e3a40e2293817b590e47beb01e52a0c9b6` | LPStakingRewards | impl | live | no |
 | ethereum | `0xcbfef8fdd706cde6f208460f2bf39aa9c785f05d` | Kine | impl | live | no |
 | ethereum | `0xcea2d0a0413b6bf052eb2eca9c256ee25ad7d128` | KUSDMinterDelegator | proxy | live | no |
 | ethereum | `0xd4c220ccac0335334d425a90f58de7c667896a06` | KineUSD | impl | live | no |
+| ethereum | `0xd61867501b821befd5e4270a91836f8f7424b847` | KUSDVault | impl | live | no |
+| ethereum | `0xf8c7b7709dd106e70133474bdf05d9d5a87c871f` | Kaptain | impl | live | no |
+| ethereum | `0xf9771bc908ffac67f05e8a69dd6b1eef9fbf755a` | KErc20Delegate | impl | live | no |
+| polygon | `0x03324bbc860fbbfd452f6ac0b0b1d76deafc99a2` | KineUSD-2 | impl | live | no |
+| polygon | `0x0544be6693763d64c02f49f16986ba1390a2fc39` | KaptainV2-2 | impl | live | no |
+| polygon | `0x1b80c2ae4927dcdb703782d01539168c98b774f9` | KUSDMinterDelegator-2 | proxy | live | no |
 | polygon | `0x1d903b731b0173654afe612d12b4489c7b32a19f` | KineExchangeTreasury-2 | impl | live | no |
+| polygon | `0x255d26b77e2dc86191e7ffac101bcdf9cc32ecd0` | KErc20Delegate-4 | impl | live | no |
+| polygon | `0x29085e521d5230eac8a2868855a84c31809e6460` | KUSDMinterV3 | impl | live | no |
+| polygon | `0x3770ebfaea8376e5f62397fdce0135d840f0b259` | KErc20Delegator-3 | proxy | live | no |
+| polygon | `0x39d1c99a244aa02502defc109e6f2d88efd6b06f` | KErc20Delegate-2 | impl | live | no |
+| polygon | `0x4d7242a89877eb044fccba6c49e96b4e032a8636` | StakingRewardsV2-3 | impl | live | no |
+| polygon | `0x4f6a33b62017dc804866e6b564c32ed5a57c49cd` | KErc20Delegator-3 | proxy | live | no |
 | polygon | `0x66a782c9a077f5adc988cc0b5fb1cdcc9d7adeda` | KineRanch-2 | impl | live | no |
+| polygon | `0x68b9737ae74cf1a169890042f1aa359647aa3e47` | KUSDVault-2 | impl | live | no |
+| polygon | `0x69c78c26f272405599382925689d0a54b8ceedf9` | StakingRewardsV2-4 | impl | live | no |
+| polygon | `0x6c0ed47f567071db4207bdff4f241af67e972d91` | KErc20Delegator-3 | proxy | live | no |
+| polygon | `0x75f21389e6e3125996a6820eacc0c25fe5520de0` | KMCDDelegate-2 | impl | live | no |
+| polygon | `0x96f4516a9d150574cb6d8ae3380f28f330e64ef7` | KErc20Delegator-4 | proxy | live | no |
+| polygon | `0xa8c2a4d5048a6be51c2a55e7a2d6015a96757198` | KineMultiSigWallet-2 | impl | live | no |
 | polygon | `0xa9c1740fa56e4c0f6ce5a792fd27095c8b6ccd87` | Kine-2 | impl | live | no |
+| polygon | `0xabdbd0461ba9ffb0a4ed5cb210866f50ce1785c8` | KErc20Delegate-2 | impl | live | no |
+| polygon | `0xc903e8a6811f5e4354ec530f34cc90bd820ac1b4` | KErc20Delegator-3 | proxy | live | no |
+| polygon | `0xcba50a7870bd9427903a105ff41678fefab5c1c4` | KErc20Delegate-2 | impl | live | no |
+| polygon | `0xcd6b46443becad4996a70ee3d8665c0b86a0c54c` | KineControllerInterface-3 | proxy | live | no |
+| polygon | `0xd546a5f08ed51b5ec1481fee51e8b659032f9494` | KineOracleV2 | impl | live | no |
+| polygon | `0xd9aa9bbaba8b69bc4a2e4959a5ad946b01d15432` | KErc20Delegate-5 | impl | live | no |
 | polygon | `0xf186a66c2bd0509beaafca2a16d6c39ba02425f9` | KEther-3 | impl | live | no |

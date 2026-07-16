@@ -10,29 +10,51 @@
     "build_command": "forge build --root \"src/AdminUpgradeabilityProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 4,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/ChainSafe/audits/blob/main/Ribbon%20Finance/ribbon-finance-11-2021.pdf"
+  ],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x98d03125c62dae2328d9d3cb32b7b969e6a87787",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x25751853eab4d0eb3652b5eb6ecb102a2789644b",
       "is_proxy": true,
-      "implementation_address": "0x807e0b0a75d34e1b4de1066604662e7a9d1ed3ab",
+      "implementation_address": "0xeaf743e9fe7449ae3ce02bc01712666530d2666e",
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398567"
+      "logic_topography_row_id": "398531"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x9dd6be071b4292cc88b8190ab718329adea3e3a3",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x53773e034d9784153471813dacaff53dbbb78e8c",
       "is_proxy": true,
-      "implementation_address": "0xa5c2f49cdc8197d7b0129d3c92af7499cc6d986c",
+      "implementation_address": "0x2bc165b7af65a94977ba7c625214438407741d77",
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398568"
+      "logic_topography_row_id": "398539"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x65a833afdc250d9d38f8cd9bc2b1e3132db13b2f",
+      "is_proxy": true,
+      "implementation_address": "0xeaf743e9fe7449ae3ce02bc01712666530d2666e",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398542"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe63151a0ed4e5fafdc951d877102cf0977abd365",
+      "is_proxy": true,
+      "implementation_address": "0x7a6a812188d01d08def011356b98425997800429",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398561"
     }
   ]
 }

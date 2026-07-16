@@ -10,9 +10,12 @@
     "build_command": "forge build --root \"src/DenManagerGetters\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://1570492309-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FffzDCMBDa391vIMqruBP%2Fuploads%2FQWVZuONAgFlu6WKnvMD2%2FCDP%20protocol%20public%20audit%20competition%20Sherlock.pdf",
+    "https://1570492309-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FffzDCMBDa391vIMqruBP%2Fuploads%2FyMggcGsUSRbnQWRepNsS%2FCDP%20protocol%20private%20audit%20Halborn%20.pdf"
+  ],
   "addresses": [
     {
       "chain": "chain-80094",
@@ -21,6 +24,16 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xfa7908287c1f1b256831c812c7194cb95bb440e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

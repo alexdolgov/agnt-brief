@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 import {IConfigurationManaged} from "../interfaces/IConfigurationManaged.sol";
 import {IConfigurationManager} from "../interfaces/IConfigurationManager.sol";
@@ -41,5 +41,15 @@ abstract contract ConfigurationManaged is IConfigurationManaged {
     /// @inheritdoc IConfigurationManaged
     function harborCommand() public view virtual returns (address) {
         return configurationManager.harborCommand();
+    }
+
+    /// @inheritdoc IConfigurationManaged
+    function fleetCommanderRewardsManagerFactory()
+        public
+        view
+        virtual
+        returns (address)
+    {
+        return configurationManager.fleetCommanderRewardsManagerFactory();
     }
 }

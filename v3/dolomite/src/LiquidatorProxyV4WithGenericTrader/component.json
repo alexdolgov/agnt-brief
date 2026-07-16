@@ -121,7 +121,7 @@
     },
     {
       "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/interfaces/IAccountRiskOverrideSetter.sol",
-      "exported_path": "__audit_export_path_conflicts__/0027-ddf4429b230c-IAccountRiskOverrideSetter.sol",
+      "exported_path": "__audit_export_path_conflicts__/0027-51d7b224e268-IAccountRiskOverrideSetter.sol",
       "reason": "unsafe_path"
     },
     {
@@ -161,7 +161,7 @@
     },
     {
       "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/external/interfaces/IGenericTraderProxyBase.sol",
-      "exported_path": "__audit_export_path_conflicts__/0035-a1c235c23b7e-IGenericTraderProxyBase.sol",
+      "exported_path": "__audit_export_path_conflicts__/0035-c5b5173fe73c-IGenericTraderProxyBase.sol",
       "reason": "unsafe_path"
     },
     {
@@ -201,19 +201,29 @@
     "build_command": "forge build --root \"src/LiquidatorProxyV4WithGenericTrader\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x22dd9f4393a3cc698d6c09ad14b0b9d515084fc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405333"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
       "address": "0x2adeafd960366411215ce8706c1afe2853c5487b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393649"
+      "logic_topography_row_id": "393707"
     }
   ]
 }

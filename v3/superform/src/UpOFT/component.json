@@ -1,0 +1,28 @@
+{
+  "component": "UpOFT",
+  "main_contract": "UpOFT",
+  "source_entry_count": 40,
+  "source_file_count": 40,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UpOFT\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x642ffc3496aca19106bab7a42f1f221a329654fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399942"
+    }
+  ]
+}

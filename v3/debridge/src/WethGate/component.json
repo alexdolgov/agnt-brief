@@ -10,23 +10,29 @@
     "build_command": "forge build --root \"src/WethGate\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_Solidity_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf",
-    "https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Main_Pre_Release_Smart_Contract_Security_Audit_Report_Halborn.pdf",
-    "https://github.com/debridge-finance/debridge-security/blob/master/debridge_solidity_smart_contract_second_audit_Halborn.pdf"
-  ],
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
+      "chain": "bsc",
+      "chain_id": 56,
       "address": "0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393511"
+      "logic_topography_row_id": "393479"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393504"
     }
   ]
 }

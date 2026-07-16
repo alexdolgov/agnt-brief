@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/FeeController\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://github.com/arcadexyz/arcade-protocol/blob/main/audits/V1_Lending_Macro_2022-04.pdf",
@@ -29,6 +29,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "391016"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe6e2337a95e195dd5f744340bc1bf485ca67b753",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

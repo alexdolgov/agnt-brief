@@ -1,8 +1,8 @@
 {
   "component": "Contract-2",
   "main_contract": "Contract",
-  "source_entry_count": 12,
-  "source_file_count": 12,
+  "source_entry_count": 17,
+  "source_file_count": 17,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -13,13 +13,14 @@
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
-    "https://github.com/enzymefinance/protocol/blob/v4/audits/2021-12-CS-fund-value-calculator-address-list-registry-paraswap-pool-together-uniswap.pdf"
+    "https://github.com/enzymefinance/protocol/blob/dev/audits/2023-02-CS--gated-redemption-shares-wrapper--balancer-v2-batch-swap--uniswap-v2-fee-on-transfer-tokens--solv-v2-bonds.pdf",
+    "https://github.com/enzymefinance/protocol/blob/v4/audits/2023-02-CS--gated-redemption-shares-wrapper--balancer-v2-batch-swap--uniswap-v2-fee-on-transfer-tokens--solv-v2-bonds.pdf"
   ],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xf35a9f4d9ceb494e3671bb79f7532607c1682f69",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0e7d828f9f9a3ce152d39f21f2e2d0ff89448b6b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

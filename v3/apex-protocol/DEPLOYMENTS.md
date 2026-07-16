@@ -1,11 +1,16 @@
 # apex-protocol — deployments
 
-70 verified deployment(s) across 63 component(s).
+78 verified deployment(s) across 66 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x52a8845df664d76c69d2eea607cd793565af42b8` | AmmFactory | impl | live | no |
+| arbitrum | `0x9e07b6aef1bbd9e513fc2eb8873e311e80b4f855` | TokenSwapAndDeposit | impl | live | no |
+| base | `0x197a309f05f4e290dfcd53943c1fd88103a39d4e` | TokenSwapAndDeposit | impl | live | no |
 | base | `0x72343e8e448fa539a1f118f870a1de1132f2fcad` | UpgradeGatekeeper | impl | live | no |
+| bsc | `0x9e07b6aef1bbd9e513fc2eb8873e311e80b4f855` | L1Pool | impl | live | no |
+| bsc | `0xb8d9f005654b7b127b34dae8f973ba729ca3a2d9` | Proxy | impl | live | no |
+| bsc | `0xd06878cb9084d92f33a2577fa0c7551d90252db7` | TokenSwapAndDeposit | impl | live | no |
 | ethereum | `0x015381651f240ed6c44122dcba6cf807c9442cd6` | CpuFrilessVerifier | impl | live | no |
 | ethereum | `0x0cd0cdf0132c566db61b691bceeba2c4d8ca5cdc` | CpuFrilessVerifier-2 | impl | live | no |
 | ethereum | `0x13e120f6c8e747983f7aaf0f7731796bfcb0d934` | GpsStatementVerifier-2 | impl | live | no |
@@ -19,6 +24,7 @@
 | ethereum | `0x30efaaa99f8efe310d9fdc83072e2a04c093d400` | FriStatementContract | impl | live | no |
 | ethereum | `0x30f3ab988cb00fe3fb5ab891f50c13684770419b` | CpuFrilessVerifier-4 | impl | live | no |
 | ethereum | `0x32a91ff604ab2adcd832e91d68b2f3f25358fdad` | MerkleStatementContract | impl | live | no |
+| ethereum | `0x35d173cdfe4d484bc5985fda55fabad5892c7b82` | Proxy | impl | live | no |
 | ethereum | `0x35e9f63efc97e008f3f9097ea3293b540483e7cb` | CpuOods | impl | live | no |
 | ethereum | `0x3641bf5a9a07ef705e8358d39dd8555919c16b10` | ProxyV5 | impl | live | no |
 | ethereum | `0x3cde3ee221ad64d096c92e0f750feb8a750519a8` | ProxyV5 | impl | live | no |
@@ -49,6 +55,7 @@
 | ethereum | `0xa55c0f91945958c40f7fa41eb650340245f4b6c2` | PedersenHashPointsYColumn | impl | live | no |
 | ethereum | `0xa67821bc089b4374e8d62475526e7e84f09da086` | AllVerifiers | impl | live | no |
 | ethereum | `0xaadfdb9cac145c65f2284fbe24600d07fb37f7bd` | PerpetualEscapeVerifier | impl | live | no |
+| ethereum | `0xac21a795a233b52f0b8a8ddd61709f6802a0797b` | TokenSwapAndDeposit | impl | live | no |
 | ethereum | `0xae325ce505aa13edc30d48187b05c24a3bac2707` | CpuOods-7 | impl | live | no |
 | ethereum | `0xaf7d1a0c128d392d99c8bd4e6b880ff95e8b907b` | ApeXPool3 | impl | live | no |
 | ethereum | `0xb45b87ba49c64f79df0ef81043a57999af5ea7a0` | PoseidonPoseidonPartialRoundKey0Column-2 | impl | live | no |
@@ -72,5 +79,6 @@
 | ethereum | `0xecc282dc2571e43696d3259490fafa3b98790e20` | PoseidonPoseidonPartialRoundKey1Column-2 | impl | live | no |
 | ethereum | `0xfe5e5b24ffe981c9faa0d4f36ce346c3b22b0066` | GpsStatementVerifier-3 | impl | live | no |
 | ethereum | `0xffc7974cd74b95f631f454cd787aac28f0476b44` | CpuFrilessVerifier-8 | impl | live | no |
+| mantle | `0x3c7c0ebfcd5786ef48df5ed127cddeb806db976c` | Proxy | impl | live | no |
 | mantle | `0x51fcaaf4d6288f21cedda92f22a3c0251e8f1870` | EsAPEX2 | impl | live | no |
 | mantle | `0x661ea23a54dcb7dcbb533be0f50dc6ea2ecfedbb` | ApeXPool3 | impl | live | no |

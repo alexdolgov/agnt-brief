@@ -1,13 +1,13 @@
 # stability — deployments
 
-101 verified deployment(s) across 95 component(s).
+102 verified deployment(s) across 95 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | base | `0x0007397cf51d5bdcd409045c2a3bf683e6e325ef` | Swapper | impl | unknown | no |
 | base | `0x22745e0262e6a94c6e8b74569a2c988189936cde` | PriceReader | impl | unknown | no |
 | base | `0x418914aabb2c21afc7dc216dceda4cb03ec2aa8e` | VaultManager | impl | unknown | no |
-| base | `0x43a6d1ba67264be41628d4ca6a493946ad11a246` | UniswapV3Adapter | proxy | unknown | no |
+| base | `0x43a6d1ba67264be41628d4ca6a493946ad11a246` | Proxy | proxy | unknown | no |
 | base | `0x57fc539b66bdc081e19bd828e6c668b249867959` | AprOracle | impl | unknown | no |
 | base | `0x79791d67588a50e613893d5d47e55303185bd7cc` | ALMPositionNameLib | impl | unknown | no |
 | base | `0xa7e1d04e82ac8f1a223f2feb634d57ceba6f3557` | StrategyLogicLib | impl | unknown | no |
@@ -17,6 +17,7 @@
 | chain-146 | `0x011d9b51758bfede6396c55129f754b684840f93` | BorrowLogic | impl | unknown | no |
 | chain-146 | `0x018af6336c7cedba68a1745b063a87e437321bf9` | TokenSender | impl | unknown | no |
 | chain-146 | `0x022787fe454e0fc45dcc9b5f1f5bb001dec25512` | RewardsController | impl | unknown | no |
+| chain-146 | `0x029dfd1a79e0ad9305d773fb8f3c01d8ef9b913d` | Proxy | proxy | live | no |
 | chain-146 | `0x0444e9156fa391f1799e7b2bcf480d0488687ef7` | UiIncentiveDataProviderV3 | impl | unknown | no |
 | chain-146 | `0x045c8a060474874c5918717ecd55f07b62c59a90` | Api3Adapter | impl | unknown | no |
 | chain-146 | `0x05f40734c64d946707417098ff40f6cd35087fc2` | ALMShadowFarmStrategy | impl | unknown | no |

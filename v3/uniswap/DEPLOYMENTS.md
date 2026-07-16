@@ -1,6 +1,6 @@
 # uniswap — deployments
 
-208 verified deployment(s) across 206 component(s).
+213 verified deployment(s) across 211 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -11,6 +11,7 @@
 | arbitrum | `0x3e84af3743cc4e7f516570b341ced56530d901e8` | L2AddressRegistry | impl | unknown | no |
 | arbitrum | `0x4b075f1d7dce6f480bf87e45df2f2e1b1a430184` | AIP1Point1Target | impl | unknown | no |
 | arbitrum | `0x6274106eedd4848371d2c09e0352d67b795ed516` | AIP1Point2Action | impl | unknown | no |
+| arbitrum | `0x82af49447d8a07e3bd95bd0d56f35241523fbab1` | ProxyAdmin | proxy | live | no |
 | arbitrum | `0x863491cc6c7275bcc15a386093e92390e2a1bda9` | BeaconProxyFactory | impl | unknown | no |
 | arbitrum | `0xd4d2f4110878a33ea5b97f0665e518253446161a` | ArbGovToken | impl | unknown | no |
 | avalanche | `0x00000000862ccf095823fc7576fa6c7e6b7385ef` | V3DutchOrderReactor | impl | live | no |
@@ -38,7 +39,9 @@
 | chain-1284 | `0x041b81cb4d223d8e70ac96c0d103f8a956ed4514` | NFTDescriptor | impl | unknown | no |
 | chain-1284 | `0x276bfef3d539cded7719b2cad25bea8ae46e200c` | QuoterV2 | impl | unknown | no |
 | chain-130 | `0x075b36de1bd11cb361c5b3b1e80a9ab0e7aa8a60` | Recover | impl | unknown | no |
+| chain-130 | `0x0dfa04b28ab68ffd0e6e17fac6ec16d4846a2004` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-130 | `0x24016ed99a69e9b86d16d84351e1661266b7ac6a` | USUPERC20Factory | impl | live | no |
+| chain-130 | `0x284f11109359a7e1306c3e447ef14d38400063ff` | UniswapV2Router02 | impl | live | no |
 | chain-130 | `0x55e74a5c3310bbccdd0b655ade2309e0d0d25826` | FeeOnTransferDetector | impl | unknown | no |
 | chain-130 | `0xab88c8cf70a3bbb2ca3b2aed808963ab4c916b83` | L1NetRecipient | impl | unknown | no |
 | chain-130 | `0xd16c47bf3ae22e0b2bac5925d990b81416f18dea` | UnichainDeployer | impl | live | no |
@@ -72,6 +75,7 @@
 | chain-42220 | `0xefb84935239dacdecf7c5ba76d8de40b077b7b33` | SortedOracles | proxy | unknown | no |
 | chain-42220 | `0xf4fa51472ca8d72af678975d9f8795a504e7ada5` | Escrow | proxy | unknown | no |
 | ethereum | `0x000000000004444c5dc75cb358380d2e3de08a90` | PoolManager | impl | unknown | no |
+| ethereum | `0x000000000022d473030f116ddee9f6b43ac78ba3` | AllowanceTransfer | impl | live | no |
 | ethereum | `0x000000009b1d0af20d8c6d0a44e162d11f9b8f00` | CaliburEntry | impl | unknown | no |
 | ethereum | `0x00000008412db3394c91a5cbd01635c6d140637c` | LiquidityLauncher | impl | live | no |
 | ethereum | `0x00000010f37b6524617b17e66796058412bbc487` | VirtualLBPStrategyFactory | impl | live | no |
@@ -204,6 +208,7 @@
 | linea | `0x581f86da293a1d5cd087a10e7227a75d2d2201a8` | CrosschainAccountLinea | impl | unknown | no |
 | mantle | `0xe3dbcd53f4ce1b06ab200f4912bd35672e68f1fa` | ElkDexInterfaceMulticall | impl | unknown | no |
 | optimism | `0x1f98415757620b543a52e61c46b32eb19261f984` | AlgebraInterfaceMulticall | impl | live | no |
+| optimism | `0x4200000000000000000000000000000000000006` | WETH9 | impl | live | no |
 | polygon | `0x02a2d80ce5c021a40aec9062a6273bbc33537e1c` | StakingRewardsFactory | impl | unknown | no |
 | polygon | `0x07f1dc544136bcd253f9cfd3369cb5f7cf405a35` | ERC20Manageable | impl | unknown | no |
 | polygon | `0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270` | WMATIC | impl | live | no |

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/PoolMemberNFT\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -21,6 +21,16 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd59ba9a84fa02e3687bb0694e459b3c1d76586f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

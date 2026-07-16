@@ -1,6 +1,6 @@
 # supernova — deployments
 
-63 verified deployment(s) across 45 component(s).
+74 verified deployment(s) across 56 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,8 +8,10 @@
 | ethereum | `0x00da8466b296e382e5da2bf20962d0cb87200c78` | SuperNova | impl | live | yes |
 | ethereum | `0x016ac7265c967581227aa6fac5cf6489d05fc144` | Bribe | impl | live | no |
 | ethereum | `0x01f99ca678f82de3c9da01dbd2998e75ce3ade8c` | AlgebraFactory | impl | live | no |
+| ethereum | `0x120ea99bdc2da6de1b98fbeb84cfaead96a6a9e3` | GaugeManager | impl | live | no |
 | ethereum | `0x15783afd1ae95cc2a9faca5a52be001a52d95564` | RouterHelperZap-2 | impl | live | no |
 | ethereum | `0x19a410046afc4203aece5fbfc7a6ac1a4f517ae2` | BeaconProxy | proxy | live | yes |
+| ethereum | `0x19f5f9ba55b676cfbb0fbb91f622020ba4621884` | VeArtProxyUpgradeable | impl | live | no |
 | ethereum | `0x1c7bf2532dfa34eeea02c3759e0ca8d87b1d8171` | BeaconProxy | proxy | live | yes |
 | ethereum | `0x1de64cd9de11525f9bc1494d1f7d39d83da20e28` | VotingBalanceLogic | impl | live | no |
 | ethereum | `0x1e862624eda92b8fe532c16253356d17dd70a337` | AlgebraEternalFarming | impl | live | no |
@@ -21,7 +23,9 @@
 | ethereum | `0x344eec31c725187cd026db73ed8805e72967c28d` | PermissionsRegistry | impl | live | yes |
 | ethereum | `0x35b842d371fb9faaee00ad751016181ae7ec59a1` | PairFees | impl | live | no |
 | ethereum | `0x3ce4670530e2a30c99d0b21fed23cf446095813b` | RouterV2 | impl | live | no |
+| ethereum | `0x428ea5b4ac84ab687851e6a2688411bdbd6c91af` | FarmingCenter | impl | live | no |
 | ethereum | `0x42a7a5baafb1818da3a39ce1b97a58799d69bbb8` | PairGenerator | impl | live | yes |
+| ethereum | `0x42e71dcbb419e75c303d9a73bec0e85af1497bb8` | AlgebraPoolAPIStorage | impl | live | no |
 | ethereum | `0x44b7fbd4d87149efa5347c451e74b9fd18e89c55` | AlgebraFactory | impl | live | no |
 | ethereum | `0x454e62e725ad5a47931043f7e6369cfbb879bdfd` | SecurityRegistry | impl | live | yes |
 | ethereum | `0x45bc0f9855a626743d57d37d989f3b9462deba45` | AlgebraPoolDeployer | impl | live | no |
@@ -40,11 +44,16 @@
 | ethereum | `0x7f8f2b6d0b0aae8e95221ce90b5c26b128c1cb66` | PairBootstrapper | impl | live | yes |
 | ethereum | `0x8217550d36823b1194b58562dac55d7fe8efb727` | QuoterV2 | impl | live | no |
 | ethereum | `0x85dc70913e49e5ebd888ada03034e3be109e5881` | veNFTAPI | impl | live | yes |
+| ethereum | `0x8bd718554d2644e4d1c7796f9097e1b93a89cbfb` | BribeFactoryV3 | impl | live | no |
 | ethereum | `0x8d38206e38ec86b14530186aa36cc3b1ed8cd674` | BeaconProxy | proxy | live | yes |
+| ethereum | `0x8e4387cca2703e4a463e9526d52a15d873a829a1` | RouterHelper-2 | impl | live | no |
 | ethereum | `0xa1154fe44a3d5c740644b9028e4d68fd876de201` | TokenHandler | impl | live | yes |
+| ethereum | `0xa2b9c0f8d866562ce744497c3160749268c32732` | MinterUpgradeable | impl | live | no |
+| ethereum | `0xa6ee3849031bd44db809d0e7447ec5f7965164f7` | VoterV3 | impl | live | no |
 | ethereum | `0xa9eae009fca124eb19092f55120fe6ba2cd2f1b5` | Pair | impl | live | no |
 | ethereum | `0xabca00f6e3fb9fe4c8adbecc5f2daffe8c851045` | NFTDescriptor | impl | live | no |
 | ethereum | `0xafc0497f052a3b5274659308d0b875271c03038d` | AlgebraVaultFactory | impl | live | yes |
+| ethereum | `0xb2fc2561cce25c9cc45970002bbb2ff1ea5660d4` | PairFactory | impl | live | no |
 | ethereum | `0xb3410a30af5033af822b8ea5ad3bd0a19490ea97` | RewardsDistributor | impl | live | yes |
 | ethereum | `0xb3a44fd78a56634cb59a3731d5719554a9d76af1` | RouterHelperZap | impl | live | no |
 | ethereum | `0xb7796f0e4275f3b20f1586e54f9656cb06370396` | RouterHelper | impl | live | no |
@@ -52,6 +61,7 @@
 | ethereum | `0xb8b5b13fdf04cfdcee36497ae9289add5589a4ba` | RouterHelper | impl | live | no |
 | ethereum | `0xbd08f4d76ca903cc922ec14fcfef90d4e1a95278` | VoterFactoryLib | impl | live | no |
 | ethereum | `0xbfae8e87053309fde07ab3ca5f4b5345f8e3058f` | RouterV2-2 | impl | live | no |
+| ethereum | `0xc0a4ba2af2efad7d8a32db42d1477bbec256e95c` | AlgebraPoolAPI | impl | live | no |
 | ethereum | `0xc3201a04fc03aab76794f5998472ffefbf220ef8` | RouterHelperZap | impl | live | no |
 | ethereum | `0xc9ba2ef71d4c5ca59b426c4c3dae6aeabe041f18` | AlgebraInterfaceMulticall | impl | live | no |
 | ethereum | `0xd8377aea61c4c4d43bf0588956f4e861720803c6` | BeaconProxy | proxy | live | yes |
@@ -65,5 +75,6 @@
 | ethereum | `0xf2c6e60b0bae3a9e129f575ef6001d7300de3a83` | Pair | impl | live | no |
 | ethereum | `0xf3212bc5c79e9c36428770dc074490cba192e878` | ASSET | impl | live | no |
 | ethereum | `0xf9439cd803dcb11fa574bcc8421207f89b529e41` | Quoter | impl | live | no |
+| ethereum | `0xfc0d0640e5a92fbbc79ee03b4375baab97f4522d` | TokenAPI | impl | live | no |
 | ethereum | `0xfe29ea1348f0990273db5e19ad521e45acda84a2` | BeaconProxy | proxy | live | yes |
 | ethereum | `0xfed77cf0e5f9fa5ce2099ec05fabac894e3d2c64` | RouterV2-4 | impl | live | no |

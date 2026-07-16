@@ -1,0 +1,30 @@
+{
+  "component": "Contract-3",
+  "main_contract": "Contract",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Aurigami-Finance/aurigami-smart-contracts/blob/main/docs/Aurigami_Finance_Audit_Report_by_WatchPug.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-1313161554",
+      "chain_id": 1313161554,
+      "address": "0xffdffbdb966cb84b50e62d70105f2dbf2e0a1e70",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

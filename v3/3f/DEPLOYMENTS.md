@@ -1,6 +1,6 @@
 # 3f — deployments
 
-107 verified deployment(s) across 106 component(s).
+108 verified deployment(s) across 107 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -98,6 +98,7 @@
 | ethereum | `0xb9dd141d26077ee38c21e25687fd80edc7bc039a` | ParetoFundFactory | impl | live | no |
 | ethereum | `0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb` | Morpho | impl | unknown | no |
 | ethereum | `0xbf875f2c6e4cc1688dfe4ecf79583193b6089972` | VesterFactory | impl | unknown | no |
+| ethereum | `0xc26a6fa2c37b38e549a4a1807543801db684f99c` | IdleCDOTranche | impl | live | no |
 | ethereum | `0xc3b2a7e46ff1c5003ea1bc0d125a226989f471fd` | CommitDeposit | impl | unknown | no |
 | ethereum | `0xcbeeaa5e6a7627d6a2b52fae481c1f32d4b56e55` | IntentDescriptor | impl | live | no |
 | ethereum | `0xcf93471a82241c2be469d83d960932721b098ffb` | EulerStakingPYTStrategy | impl | unknown | no |

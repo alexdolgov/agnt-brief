@@ -29,6 +29,9 @@ contract SwapModule is DelegateModule {
             revert SwapAmountZero();
         }
 
+        // In case there is USDT dust approval, revoke it
+        SafeTransferLib.safeApprove(tokenIn, swapData.router, 0);
+
         SafeTransferLib.safeApprove(tokenIn, swapData.router, swapData.amountIn);
 
         address connectorAddress =
@@ -41,5 +44,8 @@ contract SwapModule is DelegateModule {
             address(routerConnector),
             abi.encodeCall(routerConnector.swapExactTokensForTokens, swapData)
         );
+
+        // Revoke any approval after swap in case the swap amount was estimated
+        SafeTransferLib.safeApprove(tokenIn, swapData.router, 0);
     }
 }

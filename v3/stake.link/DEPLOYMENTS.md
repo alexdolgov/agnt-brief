@@ -1,6 +1,6 @@
 # stake.link — deployments
 
-79 verified deployment(s) across 34 component(s).
+83 verified deployment(s) across 38 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -51,12 +51,15 @@
 | ethereum | `0x8e0cd48bc25945114a173749c05ce9c7e7aaa40e` | PriorityPool-4 | impl | live | no |
 | ethereum | `0x911d86c72155c33993d594b0ec7e6206b4c803da` | WrappedSDToken-2 | impl | live | yes |
 | ethereum | `0x9a9e3e2b9c3a4a232c752875220be43f06f3d314` | StakingPool-3 | impl | live | no |
+| ethereum | `0x9e00fd7e4754cc0deca4d653c61190380318ed17` | WithdrawalPool | impl | live | no |
 | ethereum | `0xa60b5146e44ff755e32bd51532842ceb41d0c248` | BeaconProxy | proxy | live | yes |
 | ethereum | `0xa95c5ebb86e0de73b4fb8c47a45b792cfea28c23` | StakingAllowance | impl | live | yes |
 | ethereum | `0xac12290b097f6893322f5430627e472131fbc1b5` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0xb03697a0c4c86aef1a2f73d157dce101bfcfd1d4` | SDLVesting | impl | live | no |
 | ethereum | `0xb57b3d144aa18fe822ef3e4db26c74c34d864b02` | SDLVesting | impl | live | no |
+| ethereum | `0xb72d8f5213b3e52faf13aa074b03c4788e78349f` | GovernanceTimelock | impl | live | no |
 | ethereum | `0xb8b295df2cd735b15be5eb419517aa626fc43cd5` | AdminUpgradeabilityProxy | proxy | live | yes |
+| ethereum | `0xbb782308bed54266a64e61e2dfe4cdc984aa44fb` | WithdrawalPool-2 | impl | live | no |
 | ethereum | `0xcc8f8f89ef7ba61e6a649b48221b0cf2544171cb` | Vesting | impl | live | no |
 | ethereum | `0xcfa197495cf8e82d7b5df858f55b73208b8b9d67` | BeaconProxy | proxy | live | yes |
 | ethereum | `0xd2e7381d8d3fcc97c1b4d88761bdbc8dd26a0200` | BeaconProxy | proxy | live | yes |
@@ -73,6 +76,7 @@
 | ethereum | `0xecd7921ecdea1f27994cff2e8a67b069f0c63111` | StakingPool-4 | impl | live | no |
 | ethereum | `0xf0fb3aa0f6a4b84494b78f81103a789e81540344` | BeaconProxy | proxy | live | yes |
 | ethereum | `0xf12cea09f4f29ba51906f0b95ef09627d714ea43` | SDLVesting | impl | live | no |
+| ethereum | `0xf3683dc79a1447068e17d0d6fe64dd2824b897aa` | WithdrawalPool-3 | impl | live | no |
 | ethereum | `0xf36bdbc45219f9fbac0741a92a546f95c97104bd` | BeaconProxy | proxy | live | yes |
 | ethereum | `0xf509c90fbb166edbc06bcd3caa75f926842e3032` | SDLVesting | impl | live | no |
 | ethereum | `0xf7a8138302138b8eff5ffe6a228265ac449dc8f2` | SDLVesting | impl | live | no |

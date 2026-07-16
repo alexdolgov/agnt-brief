@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/VelodromeGaugeConnector-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -18,6 +18,16 @@
       "chain": "optimism",
       "chain_id": 10,
       "address": "0xdc10b474058eba67a62dd140b2c24a4923e59baf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x49606f96fa3d8d52f37dec96781fa4dd36d4890d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

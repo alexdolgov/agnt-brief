@@ -2,5 +2,12 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "hypha",
-  "missing": []
+  "missing": [
+    {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0xc300bc9b4b690ba7a182126299a0618ece268ee7",
+      "canonical_source_address": null
+    }
+  ]
 }

@@ -3,26 +3,67 @@
   "main_contract": "PrismaVoterProxy",
   "source_entry_count": 5,
   "source_file_count": 5,
-  "source_path_remaps": [],
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/PrismaVoterProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-233bd720da19-PrismaVoterProxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/ITokenMinter.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-94a9b06dae8f-ITokenMinter.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/ITokenLocker.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-5b04ddd7a1ed-ITokenLocker.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IDeposit.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-b2578beb8c80-IDeposit.sol",
+      "reason": "unsafe_path"
+    }
+  ],
   "foundry": {
     "root": ".",
     "config": "foundry.toml",
     "build_command": "forge build --root \"src/PrismaVoterProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x8ad7a9e2b3cd9214f36cb871336d8ab34ddfdd5b",
+      "address": "0x3fce074bbd66dc1cc9a9635eee6b3994fd333ca9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393098"
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x85fd46037350946ea37bb443cbb977a49e885b39",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8fbb0d24d51953b394b30950504e8e923b539872",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,6 +1,6 @@
 # magpie-ecosystem — deployments
 
-82 verified deployment(s) across 39 component(s).
+83 verified deployment(s) across 40 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -61,6 +61,7 @@
 | bsc | `0xbcfccbde45ce874adcb698cc183debcf17952812` | PancakeFactory | impl | live | no |
 | bsc | `0xca8d2451df68a9132fd9d30e8d354460642b72e9` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | bsc | `0xce54ba909d23b9d4be0ff0d84e5ae83f0add8d9a` | SmartChef-4 | impl | live | no |
+| bsc | `0xd06716e1ff2e492cc5034c2e81805562dd3b45fa` | MGP | impl | live | no |
 | bsc | `0xd0c380d31db43cd291e2bbe2da2fd6dc877b87b3` | TransparentUpgradeableProxy-12 | proxy | live | no |
 | bsc | `0xdd386880c277c3c27f604f4c35b029bae0340853` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | bsc | `0xdf0b9b59e92a2554dedb6f6f4af6918d79dd54c4` | Hypervisor-3 | impl | live | no |

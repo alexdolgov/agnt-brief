@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/ImmutableBeaconProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
     "https://github.com/contango-xyz/core-v2/blob/main/audit/ABDK_Contango_CoreV2_v_2_0.pdf",
@@ -26,6 +26,36 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "402765"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x11c4e710d366cb2aaff1fa209aea5326f51b10ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x52cf307524538b2e236a48f09c98849ffd3d1696",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xa6e01b7b84014b0741f054b4e3c802a6394eec77",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

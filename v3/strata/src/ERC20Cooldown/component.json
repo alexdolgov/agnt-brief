@@ -10,19 +10,69 @@
     "build_command": "forge build --root \"src/ERC20Cooldown\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x5c818c5894d7fb825c90e472b320c03572ab687d",
+      "address": "0x5a428cafaba7d4fb2a73546d6ddb7512dc75c1a4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405720"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x73dfde427d6f9271a451dd01415c8f26e6292219",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405727"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x74c74fd1a910da490b31501a8da449c020a78913",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405729"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x940a04880b01b26f00c72c06680a633818925933",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405737"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa14009b8865c1b951511a8750e5e3d02e574db9d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405740"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc284aeb908b25523437e81da80c24a9cd893a84e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405748"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # zerobase-cedefi — deployments
 
-35 verified deployment(s) across 8 component(s).
+36 verified deployment(s) across 9 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -32,6 +32,7 @@
 | bsc | `0xcc5df5c68d8c991035b6a437d4e00a99875228e4` | Vault-2 | proxy | live | no |
 | ethereum | `0x7336c89ff7af86131d336d504e677db0eb338a16` | zkToken | impl | live | no |
 | ethereum | `0x9ef52d8953d184840f2c69096b7b3a7da7093685` | Vault | impl | live | no |
+| ethereum | `0xfab99fcf605fd8f4593edb70a43ba56542777777` | OFTCore | impl | live | no |
 | optimism | `0xcc5df5c68d8c991035b6a437d4e00a99875228e4` | Vault | impl | live | no |
 | polygon | `0x1bd704634a64654c2ff203823772561b2c49157d` | Airdrop | impl | live | no |
 | polygon | `0xa07f347eaad1ba229dc913eda646b5f17d0661ac` | Utils | impl | live | no |

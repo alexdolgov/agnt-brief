@@ -1,6 +1,6 @@
 # pendle — deployments
 
-322 verified deployment(s) across 321 component(s).
+324 verified deployment(s) across 323 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -117,6 +117,7 @@
 | base | `0x17f100fb4be2707675c6439468d38249dd993d58` | PendleGaugeControllerUpg | proxy | unknown | no |
 | base | `0x3025680925349c9c01c0f01cf300ec963832ec64` | PendleFeeSetter | impl | unknown | no |
 | base | `0x41fad93f225b5c1c95f2445a5d7fcb85ba46713f` | PendleMoonwellTokenFix | impl | unknown | no |
+| base | `0xecac9c5f704e954931349da37f60e39f515c11c1` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | bsc | `0x026644dc6fc4cf22a45ad14231090c7736d07507` | ActionMarketAuxStatic | impl | unknown | no |
 | bsc | `0x04eb6b56ff53f457c8e857ca8d4fbc8d9a531c0c` | PendlePrincipalTokenV2 | impl | unknown | no |
 | bsc | `0x1f42fd664c66bf0015f6028cfb0dd046001272a4` | PendleAstherusASUSDFSY | impl | unknown | no |
@@ -302,6 +303,7 @@
 | ethereum | `0xdeaa5833d09179c20b55601453b9dd22216f2d76` | PendleFluxLendingSY | impl | unknown | no |
 | ethereum | `0xdf7083f2a0f8a191ab5eeafebe92ed21cd3dd915` | PendleAuraWethRethSY | impl | unknown | no |
 | ethereum | `0xeb83006b0aaddd15ad8afbebe2f4e0937f210673` | PendleSfrxEthSY | impl | unknown | no |
+| ethereum | `0xecac9c5f704e954931349da37f60e39f515c11c1` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xf6193c65cf3d1cedde0ff9d8cb9781ad21ec980f` | PendleERC4626NotRedeemableToAssetSY | impl | unknown | no |
 | mantle | `0x01d0a833c3ad951e37e6f9bf5ece86e519ff8a0c` | PendlePoolDeployHelper | impl | unknown | no |
 | mantle | `0x05320f5ff1748bc792c42ed7eea2906ba6d9d335` | ActionSwapYT | impl | unknown | no |

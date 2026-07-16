@@ -1,11 +1,12 @@
 # vela-exchange — deployments
 
-28 verified deployment(s) across 28 component(s).
+31 verified deployment(s) across 29 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x0029cf0b8e5e741416709dda22bc3c38a9c336e1` | SwapAndAirdrop | proxy | unknown | no |
 | arbitrum | `0x01d090cad4b10e3afe98f11654f2d2ccf409b2e2` | BlackMarketDealRoll | impl | unknown | no |
+| arbitrum | `0x088cd8f5ef3652623c22d48b1605dcfe860cd704` | VelaToken | impl | live | no |
 | arbitrum | `0x0cc8319ee0050f9f4b4ab94b6219f1386cab44c4` | Reader | impl | unknown | no |
 | arbitrum | `0x0d7d977075b76e7e1d69e385acba59b9927a66bc` | SettingsManager | impl | unknown | no |
 | arbitrum | `0x1e2b9fe6d886fe1e0a31c7b328cef71e7d07084e` | VelaBoost | impl | unknown | no |
@@ -22,9 +23,11 @@
 | arbitrum | `0x7ca88e153a5ea7947637db7d124cecf75041bd6e` | TraderKickback | impl | unknown | no |
 | arbitrum | `0xc5b2d9fda8a82e8dcecd5e9e6e99b78a9188eb05` | VLP | impl | live | yes |
 | arbitrum | `0xd6cc89e02fd0d552bed774563f394bcf44c14646` | GrandPrixRewardDistributorV2 | impl | unknown | no |
+| base | `0x00b01710c2098b883c4f93dd093be8cf605a7bde` | TransparentUpgradeableProxy | proxy | live | no |
 | base | `0x028b644e56367c3a151bb8d7e47225420b23ac04` | PriceManager | impl | unknown | no |
-| base | `0x0debba21390946c082e68ce3b8be4395e4cc767b` | ERC1967Upgrade | proxy | live | no |
+| base | `0x0debba21390946c082e68ce3b8be4395e4cc767b` | TransparentUpgradeableProxy | proxy | live | no |
 | base | `0x23fc7c88402fe3314d4e76ac42f4c5a3e01ae684` | Operators | impl | live | no |
+| base | `0x361a5f8fa6860b5f5c021a5dd370c1180010a561` | TransparentUpgradeableProxy | proxy | live | no |
 | base | `0x580c5684b65ac5e0618a5c12b3a7e71a32c5e6d3` | OpenInterestManager | impl | unknown | no |
 | base | `0x5a76a56ad937335168b30df3aa1327277421c6ae` | BurnableMintableCappedERC20 | impl | live | no |
 | base | `0x6c1473e4ad5a8185324fb39c909676fb46437f4f` | VolatilityManager | impl | unknown | no |

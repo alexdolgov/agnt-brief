@@ -1,21 +1,21 @@
 # silo-finance — deployments
 
-653 verified deployment(s) across 198 component(s).
+660 verified deployment(s) across 199 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| arbitrum | `0x0094c5d6b460a2efff23420db097921bcc2b2a2c` | OracleScalerFactory | impl | live | no |
+| arbitrum | `0x0094c5d6b460a2efff23420db097921bcc2b2a2c` | OracleScalerFactory-2 | impl | live | no |
 | arbitrum | `0x069a9ad00821d359f6d667be56d35b49d7ad3a18` | LiquidationHelper-4 | impl | live | no |
 | arbitrum | `0x087ae3df6b4316e88a674cb691dfd644a6c42697` | SiloHookV2-7 | impl | live | no |
 | arbitrum | `0x08a52ec31e0e981bbd64082224185e420d3f9849` | PTLinearOracleFactory-2 | impl | live | no |
-| arbitrum | `0x0b6c649ffba713e45958a2c394ed8b422ae6a456` | SiloHookV1-2 | impl | live | no |
+| arbitrum | `0x0b6c649ffba713e45958a2c394ed8b422ae6a456` | SiloHookV1-3 | impl | live | no |
 | arbitrum | `0x1157de9f428231dda3c3ab282f02259178fbf779` | DynamicKinkModel-2 | impl | live | no |
 | arbitrum | `0x1289821e12e6d194f375b5c5a5b6abdf800f9013` | SiloDeployer-10 | impl | live | no |
 | arbitrum | `0x128b7b7457e35e201da5024c9e8d024e1b0af94b` | LeverageRouter-2 | impl | live | no |
 | arbitrum | `0x18c4db23237ea523880446c01a7eb6cce056302e` | ERC4626Oracle | impl | live | no |
 | arbitrum | `0x1a5bbac2ebb511c1ff60a50a2808b91db0e30316` | ERC4626OracleWithUnderlyingFactory | impl | live | no |
 | arbitrum | `0x1a7f0b5201e3fa97f0ef1146d8d7be8ad7c3860f` | LiquidationHelper | impl | live | no |
-| arbitrum | `0x1bdebe3c773452e1f8fbe338ff4139539d9bc2f4` | SiloDeployer-6 | impl | live | no |
+| arbitrum | `0x1bdebe3c773452e1f8fbe338ff4139539d9bc2f4` | SiloDeployer-7 | impl | live | no |
 | arbitrum | `0x1c7861978d11e9fd13257607d3fcf7bf3478f6eb` | PTLinearOracleFactory-4 | impl | live | no |
 | arbitrum | `0x1ced03b5a0650d5ecb5d690e1e7f8e2afb90045a` | ERC4626OracleHardcodeQuoteFactory-3 | impl | live | no |
 | arbitrum | `0x1d51f30e5c8ec1c6efeb5d1877f7302a09a03ed1` | DynamicKinkModel-3 | impl | live | no |
@@ -102,13 +102,13 @@
 | arbitrum | `0x9ce430fa136a1be5c1e85300f829085e0fb031ae` | OracleScalerFactory-4 | impl | live | no |
 | arbitrum | `0x9e6bd1d23339e2719422478cef4ee4457904301b` | LeverageRouter | impl | live | no |
 | arbitrum | `0x9ff077e35ed418aafa50df46e88d18b6fa876c8d` | SiloFactory-3 | impl | live | no |
-| arbitrum | `0xa33b15e3ca591b59c7f115d4c453e1764827b540` | SiloDeployer-4 | impl | live | no |
+| arbitrum | `0xa33b15e3ca591b59c7f115d4c453e1764827b540` | SiloDeployer-5 | impl | live | no |
 | arbitrum | `0xa59340538b5379511594061f7cac3863d6d1bbde` | OracleScalerFactory-3 | impl | live | no |
 | arbitrum | `0xa65193c5de1a6c38326d8d5a0a9f0d6f2bbc8868` | FlatPriceOracleFactory | impl | live | no |
 | arbitrum | `0xa678aeee7edc5fb8fb51440554789b762d76ec9f` | SiloHookV3 | impl | live | no |
-| arbitrum | `0xa7495e6b7ffdb5b7413f126138193655b2ff42b0` | SiloHookV1-3 | impl | live | no |
+| arbitrum | `0xa7495e6b7ffdb5b7413f126138193655b2ff42b0` | SiloHookV1-2 | impl | live | no |
 | arbitrum | `0xa761e5d266fee9ea96a1cd7bfc00ee095342f818` | OracleForQA | impl | live | no |
-| arbitrum | `0xa77baa5d9712cb40eb7d47392ae26295340aad00` | SiloDeployer-7 | impl | live | no |
+| arbitrum | `0xa77baa5d9712cb40eb7d47392ae26295340aad00` | SiloDeployer-4 | impl | live | no |
 | arbitrum | `0xa86c228adb3753ffef4fe76dc7ec089cc0c84244` | FlatPriceOracleFactory | impl | live | no |
 | arbitrum | `0xa8c5eb9ae9c7a8fab4116d1e9c1fcfc8a478b390` | DynamicKinkModel | impl | live | no |
 | arbitrum | `0xacb7432a4bb15402ce2afe0a7c9d5b738604f6f9` | Silo | impl | live | no |
@@ -121,13 +121,13 @@
 | arbitrum | `0xb477131cf512fe4d2f46888b7a352763a168a30c` | ERC4626OracleFactory-2 | impl | live | no |
 | arbitrum | `0xb49329bf1d95d51681f4e4f644eb37f58e398abd` | ERC4626OracleHardcodeQuoteFactory | impl | live | no |
 | arbitrum | `0xb627bdf951889deaafbe4cf1e8a8ae6ded8338f8` | SiloLens-3 | impl | live | no |
-| arbitrum | `0xb80271b8941a30e021b1b7b2961adaa2a635514b` | OracleScalerFactory-2 | impl | live | no |
+| arbitrum | `0xb80271b8941a30e021b1b7b2961adaa2a635514b` | OracleScalerFactory | impl | live | no |
 | arbitrum | `0xbdbbf747402653a5ad6f6b8c49f2e8dcec37facf` | SiloIncentivesController-2 | impl | live | no |
 | arbitrum | `0xbdd37b244e5e02fde2e3f0510ab0bf3fd621d089` | SiloLens-4 | impl | live | no |
 | arbitrum | `0xbdf161ab74507831943e19814da1583b384d58bc` | DynamicKinkModel | impl | live | no |
 | arbitrum | `0xbf3c74f202fc4c2b39a48992901d4e5c3a023446` | ShareProtectedCollateralToken | impl | live | no |
 | arbitrum | `0xc1b3fb8f41398a5dec50d14e5c9d18a6f20b53ef` | Tower | impl | live | no |
-| arbitrum | `0xc2b3ebdce6597e136ff776fbddc3d41d7235a06a` | OracleScalerFactory-2 | impl | live | no |
+| arbitrum | `0xc2b3ebdce6597e136ff776fbddc3d41d7235a06a` | OracleScalerFactory | impl | live | no |
 | arbitrum | `0xc6925c71f6ece02b1ee5ee18d7af0ba8f84632da` | IdleVault | impl | live | no |
 | arbitrum | `0xc6a7a05baa05802011449789f52cee7e7b72952e` | SiloDeployer | impl | live | no |
 | arbitrum | `0xc759decfe9f6eed714d6ab6d15f0d00dbf213c39` | SiloHookV3-4 | impl | live | no |
@@ -142,7 +142,7 @@
 | arbitrum | `0xcf827892dbfe1f1b4756789620f5f87357bf8627` | ShareDebtToken | impl | live | no |
 | arbitrum | `0xcf8d34cfff69f8d4ab388395e24ef9c46f9a8992` | SiloRouterV2 | impl | live | no |
 | arbitrum | `0xd186343c00057488a18825f1513860ff56e6561b` | SiloVaultDeployer | impl | live | no |
-| arbitrum | `0xd248d7eca045fa93a51cdce0eac9fdb985a06658` | SiloDeployer-5 | impl | live | no |
+| arbitrum | `0xd248d7eca045fa93a51cdce0eac9fdb985a06658` | SiloDeployer-6 | impl | live | no |
 | arbitrum | `0xd278537de10e9d6bcba7811f355cd9cb8a4e544b` | ShareDebtToken-2 | impl | live | no |
 | arbitrum | `0xd55a06a1d30e575a37949fbb9da85c3518f21fba` | OracleScalerFactory-4 | impl | live | no |
 | arbitrum | `0xd5e41d7fa4bd66bd580ad4f68da36353ba5d3b27` | RevertingOracle | impl | live | no |
@@ -187,7 +187,7 @@
 | avalanche | `0x08a52ec31e0e981bbd64082224185e420d3f9849` | SiloIncentivesControllerCLFactory | impl | live | no |
 | avalanche | `0x1157de9f428231dda3c3ab282f02259178fbf779` | LiquidationHelper | impl | live | no |
 | avalanche | `0x1478570fc9c8422b6733455db5504378940ddae8` | Silo-2 | impl | live | no |
-| avalanche | `0x14e624d9e6b132a0d9d5fa3d8bf508a897bce90a` | OracleScalerFactory-2 | impl | unknown | no |
+| avalanche | `0x14e624d9e6b132a0d9d5fa3d8bf508a897bce90a` | OracleScalerFactory | impl | unknown | no |
 | avalanche | `0x16876af41e8beddbf9b67d2b66bb50abf3503b1c` | SiloRouterV2Implementation | impl | live | no |
 | avalanche | `0x1a5bbac2ebb511c1ff60a50a2808b91db0e30316` | ERC4626OracleFactory | impl | live | no |
 | avalanche | `0x1f39ed01ac23a1abc4038e87291d4e9ff599b7fe` | ShareDebtToken-3 | impl | live | no |
@@ -196,7 +196,7 @@
 | avalanche | `0x2375eba92e1b7ace8585ae7e2d23fedc10887493` | SiloIncentivesControllerFactory-3 | impl | live | no |
 | avalanche | `0x26dd1fd7a429ced75e5042fa20d80539a6624d90` | OracleScalerFactory-3 | impl | live | no |
 | avalanche | `0x28fcf0ee030bc6eb8897943acec9834628965449` | SiloHookV1 | impl | live | no |
-| avalanche | `0x2976d3ea35adcd185bbf79b201424f9607d49d30` | SiloDeployer-4 | impl | live | no |
+| avalanche | `0x2976d3ea35adcd185bbf79b201424f9607d49d30` | SiloDeployer-5 | impl | live | no |
 | avalanche | `0x2a3ba33389cedaf9bbc8b00f5f9e8732d805e3e2` | SiloIncentivesControllerFactory | impl | live | no |
 | avalanche | `0x2aec24e2fac282134c28c419cd44b021412c1fd1` | LeverageRouter | impl | live | no |
 | avalanche | `0x2aee31d1a1435389b1635851612b7b78d020ea2a` | SiloHookV3-2 | impl | live | no |
@@ -208,14 +208,16 @@
 | avalanche | `0x319f7155cc65f693e84689535afb1343c704c0b8` | SiloLens-3 | impl | live | no |
 | avalanche | `0x363c09672a18af5e36d6ae1757dc0751b0a16b00` | DynamicKinkModel-3 | impl | live | no |
 | avalanche | `0x38d712f9e105cdbe9367be9d8061d63bcba7a725` | ERC4626OracleFactory-2 | impl | live | no |
-| avalanche | `0x39021662ef7679845e6851e38e01912f556a861f` | OracleScalerFactory | impl | live | no |
+| avalanche | `0x39021662ef7679845e6851e38e01912f556a861f` | OracleScalerFactory-2 | impl | live | no |
 | avalanche | `0x39f7eed73d48760e19e8408b29da6b3372eee1cf` | SiloRouterV2 | impl | live | no |
 | avalanche | `0x3ce73ca5c85253b6c16d5f877dfc61809066d967` | SiloDeployer | impl | live | no |
+| avalanche | `0x3d1fe4da8812f506f65ffd5e61e2c3f6a01ccd39` | SiloDeployer-11 | impl | unknown | no |
 | avalanche | `0x499c6e65c115b52236316f776c59f8d4911d9e5f` | DynamicKinkModel-5 | impl | live | no |
 | avalanche | `0x4a6c34a6b8f5c1a1dcdc4be664cbc1259a0737a6` | Silo-6 | impl | live | no |
 | avalanche | `0x4b8cbf30c9dc9d28ce56eeed40bf23b5fd6457b6` | SiloRouterV2Implementation | impl | live | no |
 | avalanche | `0x4c5526ad3546819ee86fe3499d997453a3178043` | Silo-2 | impl | live | no |
 | avalanche | `0x504b8ca9c664afe72324388122cabafb72f9269f` | PTLinearOracleFactory-2 | impl | live | no |
+| avalanche | `0x51eaf3a6f4ed34629924519430a30ba31bba93fb` | OracleScalerFactory | impl | unknown | no |
 | avalanche | `0x528e61638a72e60a1a127a80734b24d6369591a2` | GlobalPause | impl | live | no |
 | avalanche | `0x5420ef7210a7e7ef3265b73a048b1fd92037acea` | ShareDebtToken-2 | impl | live | no |
 | avalanche | `0x55c5b74bc138c42dcb0deb206ae325a828cd1372` | SiloFactory-3 | impl | live | no |
@@ -235,7 +237,7 @@
 | avalanche | `0x72ed066bb31f4a53081fb6aec8cae602ad039a5d` | DIAOracleFactory | impl | live | no |
 | avalanche | `0x7437ac81457fa98ffb2d0c8f9943ecfe4813e2f1` | Silo-3 | impl | live | no |
 | avalanche | `0x744a309977d3449b5ff2639c9efd7a1994c7b702` | DynamicKinkModel-4 | impl | live | no |
-| avalanche | `0x75153a486244dae7c469cb2098c200f01f93a99b` | SiloHookV1-2 | impl | live | no |
+| avalanche | `0x75153a486244dae7c469cb2098c200f01f93a99b` | SiloHookV1-3 | impl | live | no |
 | avalanche | `0x774c5984e30545199928d85cd417e051e65067bf` | DynamicKinkModelFactory | impl | live | no |
 | avalanche | `0x77cbcb96fffe44d344c54a5868c49ad1c5aaac6a` | SiloVaultDeployer-5 | impl | live | no |
 | avalanche | `0x78330cde63134058d0e6322adc1f893ce954f944` | PermissionedLiquidationControllerFactory-2 | impl | live | no |
@@ -248,6 +250,7 @@
 | avalanche | `0x8cb5473553944689c53de976119b40e9bef3b5ba` | ERC4626OracleWithUnderlyingFactory-2 | impl | live | no |
 | avalanche | `0x8cee050527b758c8aa0221bc696a03a674fe6ea2` | SiloVaultDeployer | impl | live | no |
 | avalanche | `0x8e19487af8e9ad6909c12fdbd3775d3108952126` | SiloHookV2 | impl | live | no |
+| avalanche | `0x91cdec0940ba6678e2d56a034b7794b0bacab6ad` | SiloHookV1-2 | impl | unknown | no |
 | avalanche | `0x92cecb67ed267ff98026f814d813fdf3054c6ff9` | SiloFactory-6 | impl | live | no |
 | avalanche | `0x931e59f06b83dd3d9a622fd4537989b6c63b9bde` | SiloFactory | impl | live | no |
 | avalanche | `0x97d6d6196a22abf2de4a7c6c98e539230411d8bd` | ShareProtectedCollateralToken | impl | live | no |
@@ -262,7 +265,8 @@
 | avalanche | `0xa0380d22a4ee658e9706b390ddf9646f184dd521` | SiloLens-2 | impl | live | no |
 | avalanche | `0xa1d54744c9c2bab2004ce7fe1d781cca350ffa97` | DynamicKinkModelFactory | impl | live | no |
 | avalanche | `0xa5478c6db3d9c25051bcad3dc23ba0a165b82189` | SiloVirtualAssetUSD | impl | live | no |
-| avalanche | `0xa59340538b5379511594061f7cac3863d6d1bbde` | SiloDeployer-5 | impl | live | no |
+| avalanche | `0xa59340538b5379511594061f7cac3863d6d1bbde` | SiloDeployer-6 | impl | live | no |
+| avalanche | `0xa87a0475a40266eef359ef330963811babbd4145` | ERC4626OracleHardcodeQuoteFactory-3 | impl | unknown | no |
 | avalanche | `0xabcf5a9d5c6e834aaa861eb42961787d03e08f22` | SiloHookV3 | impl | live | no |
 | avalanche | `0xad1875af7e720e0058c27466a65372533b11b9bf` | PermissionedLiquidationControllerFactory | impl | live | no |
 | avalanche | `0xad84b07082c67a1105b933c28f8c8ba5b89dfcfa` | LiquidationHelper-3 | impl | live | no |
@@ -274,7 +278,7 @@
 | avalanche | `0xb4340671b34b1c8717988d0b4d8ff6b3f0d68358` | FixedPricePTAMMOracleFactory-3 | impl | live | no |
 | avalanche | `0xb49329bf1d95d51681f4e4f644eb37f58e398abd` | ERC4626OracleHardcodeQuote | impl | live | no |
 | avalanche | `0xb6f3a9a55872ec4eafc61926b02a8c462f370475` | SiloVault | impl | live | no |
-| avalanche | `0xba4a545c497cbe13424da03ea13e81797239344e` | SiloDeployer-6 | impl | live | no |
+| avalanche | `0xba4a545c497cbe13424da03ea13e81797239344e` | SiloDeployer-7 | impl | live | no |
 | avalanche | `0xbdd37b244e5e02fde2e3f0510ab0bf3fd621d089` | PermissionedLiquidationControllerFactory-3 | impl | live | no |
 | avalanche | `0xbf3c74f202fc4c2b39a48992901d4e5c3a023446` | ERC4626OracleHardcodeQuoteFactory-2 | impl | live | no |
 | avalanche | `0xc09ad86ce2caf6d6774b3ade845ee267e771105c` | VirtualTokenPrice | impl | live | no |
@@ -291,11 +295,14 @@
 | avalanche | `0xcedbca44a243ff5f67857aa242aaf039465e52ab` | SiloIncentivesControllerCLDeployer | impl | live | no |
 | avalanche | `0xcf827892dbfe1f1b4756789620f5f87357bf8627` | DynamicKinkModel | impl | live | no |
 | avalanche | `0xcf8d34cfff69f8d4ab388395e24ef9c46f9a8992` | SiloDeployer-2 | impl | live | no |
+| avalanche | `0xcfbebcf6bc36f631cbb1011633ffc014db3db22d` | LeverageRouter-3 | impl | unknown | no |
+| avalanche | `0xd13921239e3832fdc4141fde544d3d058b529a5d` | Tower | impl | unknown | no |
 | avalanche | `0xd278537de10e9d6bcba7811f355cd9cb8a4e544b` | SiloHookV3-5 | impl | live | no |
 | avalanche | `0xd831ad1639b2fe8261cd49040cd88319db7694cf` | SiloVirtualAssetBTC | impl | live | no |
 | avalanche | `0xd9393fd2140e73ca6b82ee60cc6de9b8a12eabb5` | SiloIncentivesControllerFactory-4 | impl | live | no |
 | avalanche | `0xda39759b7a4fc66bb86c34103f9903253e330b85` | PublicAllocator | impl | live | no |
 | avalanche | `0xdb8838f8d035e5fa48b3481867424f5fc6231d87` | LiquidationHelper | impl | live | no |
+| avalanche | `0xde67a8bbd0b3118b21ede247588444af374450cf` | SiloDeployer-4 | impl | unknown | no |
 | avalanche | `0xe07783619264e1affbb309b6aa4c54139b1356be` | ERC4626OracleHardcodeQuoteFactory | impl | live | no |
 | avalanche | `0xe09bd71d81444af82e1ffaa5f179144f5b64486b` | SiloLens | impl | live | no |
 | avalanche | `0xe0fc62e685e2b3183b4b88b1fe674cfec55a63f7` | Silo-3 | impl | live | no |
@@ -323,7 +330,7 @@
 | chain-146 | `0x0094c5d6b460a2efff23420db097921bcc2b2a2c` | LiquidationHelper | impl | live | no |
 | chain-146 | `0x023d9bcb63532d1215d4adbdb66a4410e506b90e` | Stream | impl | live | no |
 | chain-146 | `0x02bbb86731ec6aa81b52961e14dd1aebe5171b1d` | SiloVaultDeployer-3 | impl | live | no |
-| chain-146 | `0x03e03b56bd24e0b3b206403596a40cf48fb54279` | SiloDeployer-6 | impl | live | no |
+| chain-146 | `0x03e03b56bd24e0b3b206403596a40cf48fb54279` | SiloDeployer-7 | impl | live | no |
 | chain-146 | `0x04e209d70f7f834a7a5ab7bd31f48827f0e88049` | SiloVaultDeployer-2 | impl | live | no |
 | chain-146 | `0x08a52ec31e0e981bbd64082224185e420d3f9849` | LiquidationHelper | impl | live | no |
 | chain-146 | `0x09402f0f9f490e38413a5d4892d1e927acc0ae55` | SiloDeployer-3 | impl | live | no |
@@ -337,8 +344,8 @@
 | chain-146 | `0x1a5bbac2ebb511c1ff60a50a2808b91db0e30316` | LiquidationHelper | impl | live | no |
 | chain-146 | `0x1bdebe3c773452e1f8fbe338ff4139539d9bc2f4` | PTLinearOracleFactory-3 | impl | live | no |
 | chain-146 | `0x1c1791911483e98875d162355fec47f37613f0fb` | Silo | impl | live | no |
-| chain-146 | `0x1f28bede6922351a0c040d3dbc983f3cb937fbaf` | SiloHookV1-2 | impl | live | no |
-| chain-146 | `0x1f39ed01ac23a1abc4038e87291d4e9ff599b7fe` | SiloDeployer-5 | impl | live | no |
+| chain-146 | `0x1f28bede6922351a0c040d3dbc983f3cb937fbaf` | SiloHookV1-3 | impl | live | no |
+| chain-146 | `0x1f39ed01ac23a1abc4038e87291d4e9ff599b7fe` | SiloDeployer-6 | impl | live | no |
 | chain-146 | `0x200ae3dc21f6dfbab81842db21dbbf285e2b4cc1` | OracleForQA | impl | live | no |
 | chain-146 | `0x219656f33c58488d09d518badf50aa8cdcaca2aa` | Silo-5 | impl | live | no |
 | chain-146 | `0x21cfe326634c6ba3737f513ecadcccbb7500b59c` | SiloRouterV2-2 | impl | live | no |
@@ -359,7 +366,7 @@
 | chain-146 | `0x39021662ef7679845e6851e38e01912f556a861f` | Silo-4 | impl | live | no |
 | chain-146 | `0x39f7eed73d48760e19e8408b29da6b3372eee1cf` | SiloVaultDeployer | impl | live | no |
 | chain-146 | `0x3a2b2a1f1fa3e33dbcbf7dc7bb8147c924806dfd` | ERC4626OracleHardcodeQuoteFactory | impl | live | no |
-| chain-146 | `0x3c9737b3bcd87aa7f672674bafe07577346f267e` | SiloDeployer-4 | impl | live | no |
+| chain-146 | `0x3c9737b3bcd87aa7f672674bafe07577346f267e` | SiloDeployer-5 | impl | live | no |
 | chain-146 | `0x3ce73ca5c85253b6c16d5f877dfc61809066d967` | SiloDeployer | impl | live | no |
 | chain-146 | `0x43c70cf467474821254f5232ee531a302465e923` | SiloIncentivesControllerFactory-3 | impl | live | no |
 | chain-146 | `0x4451765739b2d7bce5f8bc95beaf966c45e1dcc9` | XSilo | impl | live | no |
@@ -378,7 +385,7 @@
 | chain-146 | `0x503628e0799ba076df56da7c0a51fe1426358d8c` | LeverageUsingSiloFlashloanWithGeneralSwap | impl | live | no |
 | chain-146 | `0x504b8ca9c664afe72324388122cabafb72f9269f` | ShareProtectedCollateralToken-2 | impl | live | no |
 | chain-146 | `0x52ad68137612fb974a0f246187f14f7ac5452cc2` | SiloLens-3 | impl | live | no |
-| chain-146 | `0x546b9491df10bb1071136da06d155ff680aa4cbe` | OracleScalerFactory-2 | impl | live | no |
+| chain-146 | `0x546b9491df10bb1071136da06d155ff680aa4cbe` | OracleScalerFactory | impl | live | no |
 | chain-146 | `0x55c5b74bc138c42dcb0deb206ae325a828cd1372` | SiloFactory | impl | live | no |
 | chain-146 | `0x5660e3b067603407e4c06a72f10530751ad3bcbc` | LiquidationHelper-3 | impl | live | no |
 | chain-146 | `0x5954ce6671d97d24b782920ddcdbb4b1e63ab2de` | Silo-5 | impl | live | no |
@@ -390,12 +397,12 @@
 | chain-146 | `0x6af76e1c9a762e6ae01b8144bc078c68636e9b3d` | ShareProtectedCollateralToken-3 | impl | live | no |
 | chain-146 | `0x6b70cd0e758a589983f06c5c899e42ccba1bfdf3` | GlobalPause-2 | impl | live | no |
 | chain-146 | `0x6e8c150224d6e9b646889b96eff6f7fd742e2c22` | Silo | impl | live | no |
-| chain-146 | `0x6f3fe54d664f129d730d619e76aca98dba5b7d5d` | SiloHookV1-3 | impl | live | no |
+| chain-146 | `0x6f3fe54d664f129d730d619e76aca98dba5b7d5d` | SiloHookV1-2 | impl | live | no |
 | chain-146 | `0x744a309977d3449b5ff2639c9efd7a1994c7b702` | DynamicKinkModel-4 | impl | live | no |
 | chain-146 | `0x75c550776c191a8f6ae22edc742ad2788723b66e` | Silo | impl | live | no |
 | chain-146 | `0x76df755a9f40463f14d0a2b7cba3ccf05404eedf` | Silo | impl | live | no |
 | chain-146 | `0x774c5984e30545199928d85cd417e051e65067bf` | ERC4626OracleWithUnderlyingFactory-2 | impl | live | no |
-| chain-146 | `0x78330cde63134058d0e6322adc1f893ce954f944` | SiloDeployer-7 | impl | live | no |
+| chain-146 | `0x78330cde63134058d0e6322adc1f893ce954f944` | SiloDeployer-4 | impl | live | no |
 | chain-146 | `0x7bd4d72d14fad915df0acd2564982ea4d853b83f` | DynamicKinkModelFactory-5 | impl | live | no |
 | chain-146 | `0x7d5d347867f2b3766114e62e68ef7c8cfe9a8ca1` | LeverageUsingSiloFlashloanWithGeneralSwap-2 | impl | live | no |
 | chain-146 | `0x7d827f1f002e6c5502450a937d78590c358a27b8` | GlobalPause-2 | impl | live | no |
@@ -406,7 +413,7 @@
 | chain-146 | `0x8cee050527b758c8aa0221bc696a03a674fe6ea2` | PermissionedLiquidationControllerFactory | impl | live | no |
 | chain-146 | `0x8e19487af8e9ad6909c12fdbd3775d3108952126` | SiloHookV2 | impl | live | no |
 | chain-146 | `0x931e59f06b83dd3d9a622fd4537989b6c63b9bde` | SiloDeployer-2 | impl | live | no |
-| chain-146 | `0x95a7bc57c738c7f64103b93d04f49cbca566affd` | SiloDeployer-6 | impl | live | no |
+| chain-146 | `0x95a7bc57c738c7f64103b93d04f49cbca566affd` | SiloDeployer-7 | impl | live | no |
 | chain-146 | `0x97d6d6196a22abf2de4a7c6c98e539230411d8bd` | ShareProtectedCollateralToken | impl | live | no |
 | chain-146 | `0x98600935be95d5b8caaaea61076cce591b95386a` | ERC4626OracleHardcodeQuoteFactory-3 | impl | live | no |
 | chain-146 | `0x9a5bb923638a891b212b65be01aab3b05160a78b` | FlatPriceOracleFactory | impl | live | no |
@@ -430,7 +437,7 @@
 | chain-146 | `0xb477131cf512fe4d2f46888b7a352763a168a30c` | SiloVirtualAssetUSD | impl | live | no |
 | chain-146 | `0xb49329bf1d95d51681f4e4f644eb37f58e398abd` | ManualLiquidationHelper-2 | impl | live | no |
 | chain-146 | `0xb95ad415b0fce49f84fbd5b26b14ec7cf4822c69` | SiloLens-5 | impl | live | no |
-| chain-146 | `0xbf3c74f202fc4c2b39a48992901d4e5c3a023446` | OracleScalerFactory | impl | live | no |
+| chain-146 | `0xbf3c74f202fc4c2b39a48992901d4e5c3a023446` | OracleScalerFactory-2 | impl | live | no |
 | chain-146 | `0xbfde5fdbc25b4e993be724bdf2c7794e5a6b8d51` | SiloIncentivesControllerCLFactory-3 | impl | live | no |
 | chain-146 | `0xc4832aebd785d9a35608e9abc5d644a2e616311d` | DynamicKinkModelFactory-2 | impl | live | no |
 | chain-146 | `0xc65de3e462968b1b94a69ee4745d2e426b430354` | DynamicKinkModel | impl | live | no |
@@ -490,7 +497,7 @@
 | ethereum | `0x2458ee990e64d8793fe61212558ad8b1a7bdd845` | SiloHookV3 | impl | live | no |
 | ethereum | `0x2534b2e33076787142246750e9340696267b96be` | SiloFactory | impl | live | no |
 | ethereum | `0x25a39b66fc3a85d13b3e9143d5095560fa73a6b8` | VirtualTokenPrice | impl | live | no |
-| ethereum | `0x26dd1fd7a429ced75e5042fa20d80539a6624d90` | OracleScalerFactory | impl | live | no |
+| ethereum | `0x26dd1fd7a429ced75e5042fa20d80539a6624d90` | OracleScalerFactory-2 | impl | live | no |
 | ethereum | `0x27a96951d7aad034265a285c395225c295384688` | SiloLens | impl | live | no |
 | ethereum | `0x28fcf0ee030bc6eb8897943acec9834628965449` | ERC4626OracleWithUnderlyingFactory-2 | impl | live | no |
 | ethereum | `0x2976d3ea35adcd185bbf79b201424f9607d49d30` | PermissionedLiquidationControllerFactory | impl | live | no |
@@ -507,15 +514,15 @@
 | ethereum | `0x3a2b2a1f1fa3e33dbcbf7dc7bb8147c924806dfd` | ERC4626OracleWithUnderlyingFactory | impl | live | no |
 | ethereum | `0x3a6df8d1d9b7c376eed1de3e1a2b61009b26e8e1` | TreasuryVester | impl | live | no |
 | ethereum | `0x3c9b67d3407929dfa7aca76a83deff7e1df2f668` | LiquidationHelper | impl | live | no |
-| ethereum | `0x3fc40c327775651bf4672ff4a9c944896c40545f` | SiloDeployer-7 | impl | live | no |
+| ethereum | `0x3fc40c327775651bf4672ff4a9c944896c40545f` | SiloDeployer-4 | impl | live | no |
 | ethereum | `0x4637369ed68530e0e3311fb828761eb87af8bcb4` | SiloVaultDeployer-2 | impl | live | no |
 | ethereum | `0x48a6e284692f4663b09fe48ee72d95f7ae0c4cc5` | TreasuryVester | impl | live | no |
 | ethereum | `0x49196144791c7564d56e80c055702aebee9a9811` | SiloIncentivesControllerCLFactory | impl | live | no |
 | ethereum | `0x4b8cbf30c9dc9d28ce56eeed40bf23b5fd6457b6` | SiloVaultDeployer | impl | live | no |
-| ethereum | `0x4bdde891aa6bb8f94d014bbd7bd5eca3fd54e9bb` | SiloHookV1-2 | impl | live | no |
+| ethereum | `0x4bdde891aa6bb8f94d014bbd7bd5eca3fd54e9bb` | SiloHookV1-3 | impl | live | no |
 | ethereum | `0x4fd711b72df2f568682a62ff9f95448baae2dcd2` | SiloIncentivesControllerCLFactory-2 | impl | live | no |
 | ethereum | `0x50daac2ffcf6276c76e7ad4162e2d7f75dda22b1` | LeverageRouter-2 | impl | live | no |
-| ethereum | `0x50f7907cbe2dafc429db960d23351b0b3a907789` | OracleScalerFactory-2 | impl | live | no |
+| ethereum | `0x50f7907cbe2dafc429db960d23351b0b3a907789` | OracleScalerFactory | impl | live | no |
 | ethereum | `0x5362d5086fdef73450145492a66f8ebf210c5b9c` | SiloVault-3 | impl | live | no |
 | ethereum | `0x5418cc3c992c19fb7a3af812da0d8bbb28ed558c` | SiloDeployer-2 | impl | live | no |
 | ethereum | `0x5420ef7210a7e7ef3265b73a048b1fd92037acea` | DynamicKinkModel-3 | impl | live | no |
@@ -528,7 +535,7 @@
 | ethereum | `0x669229276f5625046d6a1017c3258315ba69c72e` | ManualLiquidation | impl | live | no |
 | ethereum | `0x66cfbfb5a8256da57e486164b791b7778927bab8` | DIAOracleFactory | impl | live | no |
 | ethereum | `0x6870a4403203bc4e1ccb0ebd9eaced8a5e45db5e` | SiloHookV3-2 | impl | live | no |
-| ethereum | `0x6ac197a9dea6e956e5591fa25ce27848832cfb30` | OracleScalerFactory | impl | live | no |
+| ethereum | `0x6ac197a9dea6e956e5591fa25ce27848832cfb30` | OracleScalerFactory-2 | impl | live | no |
 | ethereum | `0x6c1603ab6cecf89dd60c24530dde23f97da3c229` | SiloIncentivesController-4 | impl | live | no |
 | ethereum | `0x6f29fed7bc51b6f4ee25f709ea0bc840621efe4a` | TreasuryVester-4 | impl | live | no |
 | ethereum | `0x6f80310ca7f2c654691d1383149fa1a57d8ab1f8` | SiloGovernanceToken | impl | live | yes |
@@ -568,7 +575,7 @@
 | ethereum | `0xa69fa9582065e9efe9aabf8af686b6e36bc78f49` | ShareDebtToken-4 | impl | live | no |
 | ethereum | `0xa761e5d266fee9ea96a1cd7bfc00ee095342f818` | ShareProtectedCollateralToken | impl | live | no |
 | ethereum | `0xa8174525db3e8aad80423a95da2efa33b1bb1f27` | WstEthToStEthAdapterMainnet | impl | live | no |
-| ethereum | `0xa95314ac0da743d8f389b7d62c925dd5020bfe3a` | SiloDeployer-4 | impl | live | no |
+| ethereum | `0xa95314ac0da743d8f389b7d62c925dd5020bfe3a` | SiloDeployer-5 | impl | live | no |
 | ethereum | `0xabcf5a9d5c6e834aaa861eb42961787d03e08f22` | SiloHookV2 | impl | live | no |
 | ethereum | `0xad1875af7e720e0058c27466a65372533b11b9bf` | SiloConfig-2 | impl | live | no |
 | ethereum | `0xad84b07082c67a1105b933c28f8c8ba5b89dfcfa` | LiquidationHelper-2 | impl | live | no |
@@ -590,7 +597,7 @@
 | ethereum | `0xc0e1bcfb1ed68688b0d589a6807d05cf2d68b22b` | SiloLens-5 | impl | live | no |
 | ethereum | `0xc43de36a1acb75ea0e5df9efad9d67d57ddbf79e` | TreasuryVester | impl | live | no |
 | ethereum | `0xc4832aebd785d9a35608e9abc5d644a2e616311d` | SiloDeployer-9 | impl | live | no |
-| ethereum | `0xc51f048279705a9427983dcb2813c06af1da3f5b` | SiloHookV1-3 | impl | live | no |
+| ethereum | `0xc51f048279705a9427983dcb2813c06af1da3f5b` | SiloHookV1-2 | impl | live | no |
 | ethereum | `0xc5d945f0d366af48307955382d3081ba386a1d08` | SiloRouterV2 | impl | live | no |
 | ethereum | `0xc65de3e462968b1b94a69ee4745d2e426b430354` | ShareDebtToken | impl | live | no |
 | ethereum | `0xc759decfe9f6eed714d6ab6d15f0d00dbf213c39` | SiloIncentivesControllerCLDeployer | impl | live | no |
@@ -614,7 +621,7 @@
 | ethereum | `0xda393ff755ff264fde32ba7d1cc11785778f7aab` | ERC4626OracleHardcodeQuoteFactory-3 | impl | live | no |
 | ethereum | `0xda39759b7a4fc66bb86c34103f9903253e330b85` | SiloHookV2-4 | impl | live | no |
 | ethereum | `0xdda2e99b6f33ed14183580c140964a137eaa1c44` | GlobalPause | impl | live | no |
-| ethereum | `0xde3a6c3c7a8f0534ad0756bdc17a9bf6a0da633a` | SiloDeployer-5 | impl | live | no |
+| ethereum | `0xde3a6c3c7a8f0534ad0756bdc17a9bf6a0da633a` | SiloDeployer-6 | impl | live | no |
 | ethereum | `0xde67a8bbd0b3118b21ede247588444af374450cf` | FlatPriceOracleFactory | impl | live | no |
 | ethereum | `0xe07783619264e1affbb309b6aa4c54139b1356be` | ManageableOracleFactory | impl | live | no |
 | ethereum | `0xe09bd71d81444af82e1ffaa5f179144f5b64486b` | SiloVaultsFactory | impl | live | no |
@@ -654,18 +661,11 @@
 | optimism | `0xb6bc6be0876546d73e0bdbd2aa76721ebf14b8be` | GlobalPause-2 | impl | live | no |
 | optimism | `0xbacbbefda6fd1fbf5a2d6a79916f4b6124ed2d49` | Tower | impl | live | no |
 | optimism | `0xc3f01b8c6b0338c952a5456e30a9fc26468c052a` | LiquidationHelper-4 | impl | live | no |
-| optimism | `0xc5d8a1a1110c0935f97db8f0f7a645b6b1a622fd` | SiloHookV1-3 | impl | live | no |
+| optimism | `0xc5d8a1a1110c0935f97db8f0f7a645b6b1a622fd` | SiloHookV1-2 | impl | live | no |
 | optimism | `0xc66d2a90c37c873872281a05445ec0e9e82c76a9` | SiloRouter | impl | live | no |
 | optimism | `0xfa773e2c7df79b43dc4bcdae398c5dca94236bc5` | SiloFactory-4 | impl | live | no |
 
-## Source unavailable (8)
+## Source unavailable (1)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - avalanche `0x01c6dc3bd8b175a9494f00b6d224b14edc67cd34`
-- avalanche `0x3d1fe4da8812f506f65ffd5e61e2c3f6a01ccd39`
-- avalanche `0x51eaf3a6f4ed34629924519430a30ba31bba93fb`
-- avalanche `0x91cdec0940ba6678e2d56a034b7794b0bacab6ad`
-- avalanche `0xa87a0475a40266eef359ef330963811babbd4145`
-- avalanche `0xcfbebcf6bc36f631cbb1011633ffc014db3db22d`
-- avalanche `0xd13921239e3832fdc4141fde544d3d058b529a5d`
-- avalanche `0xde67a8bbd0b3118b21ede247588444af374450cf`

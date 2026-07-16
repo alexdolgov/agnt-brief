@@ -1,0 +1,38 @@
+{
+  "component": "KaptainV2",
+  "main_contract": "KaptainV2",
+  "source_entry_count": 14,
+  "source_file_count": 14,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/KaptainV2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1540e5821370ace8120ce48554d35276d86a9f0c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395690"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd4c220ccac0335334d425a90f58de7c667896a06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395728"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "component": "ftYieldWrapperV2-2",
+  "main_contract": "ftYieldWrapperV2",
+  "source_entry_count": 19,
+  "source_file_count": 19,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ftYieldWrapperV2-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0237a67db9d55b2e0f2b25a137ea15e4c497ab6a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394576"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x9acdce593888e52ec7cf70e3d22f0cf50682cd0b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394719"
+    }
+  ]
+}

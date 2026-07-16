@@ -2,5 +2,18 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "kalax",
-  "missing": []
+  "missing": [
+    {
+      "chain_id": 81457,
+      "chain": "blast",
+      "address": "0x14ed42c74108cd77e52870470dddda6e5d880b4b",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 81457,
+      "chain": "blast",
+      "address": "0x67fb1a853d8612d2862c66dad242490253bda10e",
+      "canonical_source_address": null
+    }
+  ]
 }

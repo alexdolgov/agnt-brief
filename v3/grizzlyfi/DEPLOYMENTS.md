@@ -1,6 +1,6 @@
 # grizzlyfi — deployments
 
-53 verified deployment(s) across 52 component(s).
+54 verified deployment(s) across 53 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -42,6 +42,7 @@
 | bsc | `0x977410290f1f091948456ed0fc34fae483176396` | Reader | impl | unknown | no |
 | bsc | `0x9a28a65b3a3a06e3da0fb285cba50f10c08c8bf6` | VaultPriceFeed | impl | unknown | no |
 | bsc | `0x9a555c5804a309e516e38d7142a51b7e11914c9e` | VaultErrorController | impl | unknown | no |
+| bsc | `0xa045e37a0d1dd3a45fefb8803d22457abc0a728a` | AdminUpgradeabilityProxy | impl | live | no |
 | bsc | `0xb0b2be0d169181a936e08dad57b9b5e362385941` | PositionManager | impl | unknown | no |
 | bsc | `0xb2dbc323a658ddc9c8672d3174d6721665b50b01` | Router | impl | unknown | no |
 | bsc | `0xb4a922970b942263793ee5d85477b72ef29f22fe` | FastPriceEvents | impl | unknown | no |

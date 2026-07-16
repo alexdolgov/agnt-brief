@@ -1,6 +1,6 @@
 # smardex-ecosystem — deployments
 
-27 verified deployment(s) across 21 component(s).
+29 verified deployment(s) across 23 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -16,6 +16,7 @@
 | ethereum | `0x49f66b1616865b2a59caecb8352bbf2ac80983e1` | UniversalRouter | impl | live | yes |
 | ethereum | `0x52e7b23e1faba6d83376725e2ccad75efbd8736e` | SmardexToken | impl | live | no |
 | ethereum | `0x5de8ab7e27f6e7a1fff3e5b337584aa43961beef` | SmardexToken | impl | unknown | no |
+| ethereum | `0x656cb8c6d154aad29d8771384089be5b5141f01a` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0x7d85c0905a6e1ab5837a0b57cd94a419d3a77523` | FarmingRange-2 | impl | unknown | no |
 | ethereum | `0x85bcb7da3cd1782489d5331bc24a4bc806ec16a5` | SmarDexDegen | impl | live | no |
 | ethereum | `0x926c777c091a5a070dc24ac94ff498b5a556f92a` | SmardexRouter-2 | impl | live | no |
@@ -28,6 +29,7 @@
 | ethereum | `0xc33984abcae20f47a754ef78f6526fef266c0c6f` | SmardexRouter-4 | impl | unknown | no |
 | ethereum | `0xde17a000ba631c5d7c2bd9fb692efea52d90dee2` | Usdn | impl | live | yes |
 | ethereum | `0xf67e2dc041b8a3c39d066037d29f500757b1e886` | VaultProxy | proxy | live | no |
+| ethereum | `0xf9d36078a248af249aa57ae1d5d0c1033d6bbe27` | UsdnLongFarming | impl | live | no |
 | polygon | `0x6899face15c14348e1759371049ab64a3a06bfa6` | BridgeToken-2 | proxy | unknown | no |
 | polygon | `0x7db73a1e526db36c40e508b09428420c1fa8e46b` | FarmingRange | impl | unknown | no |
 | polygon | `0xedd758d17175dc9131992ebd02f55cc4ebeb7b7c` | SmardexRouter | impl | unknown | no |

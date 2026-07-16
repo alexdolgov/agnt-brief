@@ -1,9 +1,10 @@
 # definix — deployments
 
-6 verified deployment(s) across 6 component(s).
+7 verified deployment(s) across 7 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| bsc | `0x070a9867ea49ce7afc4505817204860e823489fe` | SIXToken | impl | live | no |
 | bsc | `0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d` | FinixToken | impl | live | yes |
 | bsc | `0x151030a9fa62fbb202eee50bd4a4057ab9e826ad` | DefinixRouter | impl | live | no |
 | bsc | `0x1b4aec66ef4f942da16845d22ce2656d759d0a15` | Apollo | impl | live | no |

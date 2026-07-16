@@ -2,5 +2,12 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "harmonix-finance",
-  "missing": []
+  "missing": [
+    {
+      "chain_id": 42161,
+      "chain": "arbitrum",
+      "address": "0x8899910a8c47e177c574454e8249f5e9dcfdf773",
+      "canonical_source_address": null
+    }
+  ]
 }

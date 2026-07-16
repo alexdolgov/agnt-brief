@@ -1,0 +1,28 @@
+{
+  "component": "GaugeFactoryV2_CL",
+  "main_contract": "GaugeFactoryV2_CL",
+  "source_entry_count": 30,
+  "source_file_count": 30,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GaugeFactoryV2_CL\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x7b555a3ed56af0411cd7fdafc909f4082aee1f2e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396327"
+    }
+  ]
+}

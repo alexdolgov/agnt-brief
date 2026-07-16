@@ -1,5 +1,5 @@
 /*
-  Copyright 2019-2022 StarkWare Industries Ltd.
+  Copyright 2019-2021 StarkWare Industries Ltd.
 
   Licensed under the Apache License, Version 2.0 (the "License").
   You may not use this file except in compliance with the License.
@@ -14,16 +14,22 @@
   and limitations under the License.
 */
 // SPDX-License-Identifier: Apache-2.0.
-pragma solidity ^0.6.12;
+pragma solidity ^0.6.11;
 
 abstract contract MGovernance {
-    function _isGovernor(address user) internal view virtual returns (bool);
+
+    function isGovernor(address testGovernor)
+        internal
+        view
+        virtual
+        returns (bool);
 
     /*
       Allows calling the function only by a Governor.
     */
-    modifier onlyGovernance() {
-        require(_isGovernor(msg.sender), "ONLY_GOVERNANCE");
+    modifier onlyGovernance ()
+    {
+        require(isGovernor(msg.sender), "ONLY_GOVERNANCE");
         _;
     }
 }

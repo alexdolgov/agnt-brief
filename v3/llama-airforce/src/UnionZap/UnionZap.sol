@@ -197,8 +197,8 @@ contract UnionZap is Ownable, UnionBase {
         IERC20(CRV_TOKEN).safeApprove(CURVE_CVXCRV_CRV_POOL, 0);
         IERC20(CRV_TOKEN).safeApprove(CURVE_CVXCRV_CRV_POOL, type(uint256).max);
 
-        IERC20(CRV_TOKEN).safeApprove(CURVE_TRICRV_POOL, 0);
-        IERC20(CRV_TOKEN).safeApprove(CURVE_TRICRV_POOL, type(uint256).max);
+        IERC20(CRV_TOKEN).safeApprove(CURVE_CRV_ETH_POOL, 0);
+        IERC20(CRV_TOKEN).safeApprove(CURVE_CRV_ETH_POOL, type(uint256).max);
 
         IERC20(CRV_TOKEN).safeApprove(CVXCRV_DEPOSIT, 0);
         IERC20(CRV_TOKEN).safeApprove(CVXCRV_DEPOSIT, type(uint256).max);
@@ -455,93 +455,19 @@ contract UnionZap is Ownable, UnionBase {
         return 0;
     }
 
-    function _balanceSalesAndBuy(
-        bool lock,
-        uint32[] calldata weights,
-        uint32[] calldata adjustOrder,
-        uint256[] calldata minAmounts,
-        uint256[] memory prices,
-        uint256[] memory amounts,
-        uint256 _totalEthBalance
-    ) internal {
-        address _outputToken;
-        uint256 _orderIndex;
-
-        for (uint256 i; i < adjustOrder.length; ++i) {
-            _orderIndex = adjustOrder[i];
-            // if weight == 0, the token would have been swapped already so no balance
-            if (weights[_orderIndex] > 0) {
-                _outputToken = outputTokens[_orderIndex];
-                // amount adjustments
-                uint256 _desired = (_totalEthBalance * weights[_orderIndex]) /
-                    DECIMALS;
-                if (amounts[_orderIndex] > _desired) {
-                    _sell(
-                        _outputToken,
-                        (((amounts[_orderIndex] - _desired) * 1e18) /
-                            prices[_orderIndex])
-                    );
-                } else {
-                    uint256 _swapAmount = _desired - amounts[_orderIndex];
-                    if (i == adjustOrder.length - 1) {
-                        _swapAmount = address(this).balance;
-                    }
-                    _buy(_outputToken, _swapAmount);
-                }
-                // we need an edge case here since it's too late
-                // to update the cvxCRV distributor's stake function
-                if (_outputToken == CRV_TOKEN) {
-                    // convert all CRV to cvxCRV
-                    _toCvxCrv(minAmounts[_orderIndex], lock);
-                } else {
-                    // slippage check
-                    assert(
-                        IERC20(_outputToken).balanceOf(address(this)) >
-                            minAmounts[_orderIndex]
-                    );
-                }
-            }
-        }
-    }
-
-    /// @notice Gets ETH token price from curve pools with edge case for CRV pool
-    /// @param _outputToken the token to get a price for
-    /// @return the ETH price of the token
-    function _getPriceFromOracle(address _outputToken)
-        internal
-        returns (uint256)
-    {
-        if (_outputToken != CRV_TOKEN) {
-            return ICurveV2Pool(tokenInfo[_outputToken].pool).price_oracle();
-        } else {
-            ICurveTriCryptoFactoryNG _pool = ICurveTriCryptoFactoryNG(
-                tokenInfo[_outputToken].pool
-            );
-            return (_pool.price_oracle(1) * 1e18) / _pool.price_oracle(0);
-        }
-    }
-
     /// @notice Splits contract balance into output tokens as per weights
     /// @param lock - whether to lock or swap crv to cvxcrv
     /// @param weights - weight of output assets (cvxCRV, FXS, CVX) in bips
-    /// @param adjustOrder - order in which to process output tokens when adjusting
     /// @param minAmounts - min amount out of each output token (cvxCRV for CRV)
     /// @dev weights must sum to 10000
-    /// @dev for adjustOrder token to be processed first should have smallest weight
-    ///      but largest balance in contract.
     function adjust(
         bool lock,
         uint32[] calldata weights,
-        uint32[] calldata adjustOrder,
         uint256[] calldata minAmounts
     ) public onlyOwner validWeights(weights) {
         require(
             minAmounts.length == outputTokens.length,
             "Invalid min amounts"
-        );
-        require(
-            adjustOrder.length == outputTokens.length,
-            "Invalid order length"
         );
         // start calculating the allocations of output tokens
         uint256 _totalEthBalance = address(this).balance;
@@ -552,12 +478,15 @@ contract UnionZap is Ownable, UnionBase {
 
         // first loop to calculate total ETH amounts and store oracle prices
         for (uint256 i; i < weights.length; ++i) {
-            _outputToken = outputTokens[i];
-            uint256 _curBalance = IERC20(_outputToken).balanceOf(address(this));
-            if ((weights[i] > 0) && (_curBalance > 1)) {
-                prices[i] = _getPriceFromOracle(_outputToken);
+            if (weights[i] > 0) {
+                _outputToken = outputTokens[i];
+                prices[i] = ICurveV2Pool(tokenInfo[_outputToken].pool)
+                    .price_oracle();
                 // compute ETH value of current token balance
-                amounts[i] = (_curBalance * prices[i]) / 1e18;
+                amounts[i] =
+                    (IERC20(_outputToken).balanceOf(address(this)) *
+                        prices[i]) /
+                    1e18;
                 // add the ETH value of token to current ETH value in contract
                 _totalEthBalance += amounts[i];
             }
@@ -567,16 +496,34 @@ contract UnionZap is Ownable, UnionBase {
         _totalEthBalance -= _levyFees(_totalEthBalance);
 
         // second loop to balance the amounts with buys and sells before distribution
-        // according to order of liquidation specified in adjustOrder
-        _balanceSalesAndBuy(
-            lock,
-            weights,
-            adjustOrder,
-            minAmounts,
-            prices,
-            amounts,
-            _totalEthBalance
-        );
+        for (uint256 i; i < weights.length; ++i) {
+            // if weight == 0, the token would have been swapped already so no balance
+            if (weights[i] > 0) {
+                _outputToken = outputTokens[i];
+                // amount adjustments
+                uint256 _desired = (_totalEthBalance * weights[i]) / DECIMALS;
+                if (amounts[i] > _desired) {
+                    _sell(
+                        _outputToken,
+                        (((amounts[i] - _desired) * 1e18) / prices[i])
+                    );
+                } else {
+                    _buy(_outputToken, _desired - amounts[i]);
+                }
+                // we need an edge case here since it's too late
+                // to update the cvxCRV distributor's stake function
+                if (_outputToken == CRV_TOKEN) {
+                    // convert all CRV to cvxCRV
+                    _toCvxCrv(minAmounts[i], lock);
+                } else {
+                    // slippage check
+                    assert(
+                        IERC20(_outputToken).balanceOf(address(this)) >
+                            minAmounts[i]
+                    );
+                }
+            }
+        }
     }
 
     /// @notice Deposits rewards to their respective merkle distributors
@@ -614,7 +561,6 @@ contract UnionZap is Ownable, UnionBase {
     /// @param claimBeforeSwap - whether to claim on Votium or not
     /// @param gasRefund - tx gas cost to refund to caller (ETH amount)
     /// @param weights - weight of output assets (cvxCRV, FXS, CVX...) in bips
-    /// @param adjustOrder - order in which to process output tokens when adjusting
     /// @param minAmounts - min amount out of each output token (cvxCRV for CRV)
     function processIncentives(
         IMultiMerkleStash.claimParam[] calldata claimParams,
@@ -623,7 +569,6 @@ contract UnionZap is Ownable, UnionBase {
         bool lock,
         uint256 gasRefund,
         uint32[] calldata weights,
-        uint32[] calldata adjustOrder,
         uint256[] calldata minAmounts
     ) external onlyOwner {
         require(
@@ -638,7 +583,7 @@ contract UnionZap is Ownable, UnionBase {
             gasRefund,
             weights
         );
-        adjust(lock, weights, adjustOrder, minAmounts);
+        adjust(lock, weights, minAmounts);
         distribute(weights);
     }
 

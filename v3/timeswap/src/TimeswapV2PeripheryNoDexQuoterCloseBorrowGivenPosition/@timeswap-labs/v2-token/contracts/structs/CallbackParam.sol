@@ -78,6 +78,7 @@ struct TimeswapV2LiquidityTokenBurnCallbackParam {
 /// @param long0Fees The amount of long0 fees withdrawn.
 /// @param long1Fees The amount of long1 fees withdrawn.
 /// @param shortFees The amount of short fees withdrawn.
+/// @param shortReturned The amount of short returned withdrawn.
 /// @param data data
 struct TimeswapV2LiquidityTokenCollectCallbackParam {
   address token0;
@@ -87,5 +88,6 @@ struct TimeswapV2LiquidityTokenCollectCallbackParam {
   uint256 long0Fees;
   uint256 long1Fees;
   uint256 shortFees;
+  uint256 shortReturned;
   bytes data;
 }

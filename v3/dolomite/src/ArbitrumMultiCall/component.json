@@ -1,0 +1,39 @@
+{
+  "component": "ArbitrumMultiCall",
+  "main_contract": "ArbitrumMultiCall",
+  "source_entry_count": 2,
+  "source_file_count": 2,
+  "source_path_remaps": [
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/external/utils/ArbitrumMultiCall.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-c311237ed761-ArbitrumMultiCall.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/external/interfaces/IArbitrumSys.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-2a9a80a0e785-IArbitrumSys.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ArbitrumMultiCall\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb18b8b1a5bdea1f3c9776715b9325f932803fb1f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393756"
+    }
+  ]
+}

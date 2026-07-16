@@ -16,9 +16,6 @@ import {PoolFactoryLibrary} from "@timeswap-labs/v2-pool/contracts/libraries/Poo
 
 import {ITimeswapV2Token} from "@timeswap-labs/v2-token/contracts/interfaces/ITimeswapV2Token.sol";
 
-import {IUniswapV3Factory} from "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol";
-import {IUniswapV3SwapCallback} from "@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol";
-
 import {TimeswapV2PeripheryBorrowGivenPrincipal} from "@timeswap-labs/v2-periphery/contracts/TimeswapV2PeripheryBorrowGivenPrincipal.sol";
 
 import {TimeswapV2PeripheryBorrowGivenPrincipalParam} from "@timeswap-labs/v2-periphery/contracts/structs/Param.sol";

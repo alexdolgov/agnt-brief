@@ -1,6 +1,6 @@
 # trueo — deployments
 
-34 verified deployment(s) across 32 component(s).
+39 verified deployment(s) across 35 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -24,11 +24,13 @@
 | base | `0x43a2ee74d28612c0a9ef90884bb47cf445c97bc4` | TruthAttesterSBT | impl | live | no |
 | base | `0x498581ff718922c3f8e6a244956af099b2652b2b` | PoolManager | impl | live | no |
 | base | `0x55e26cf92b924c069db4d8da7b0b36154374dd38` | TruthMarketSwapValidator | impl | live | no |
+| base | `0x61a98bef11867c69489b91f340fe545eefc695d7` | ERC1967Proxy | proxy | live | no |
 | base | `0x688f5b490edb7f466a89a6db4fb30829558af014` | StakingRewards-2 | impl | live | no |
 | base | `0x68ff207ab11c6b57b5eaf558838c9ea2bc06d4b9` | TruthMarketLPManager-2 | impl | live | no |
 | base | `0x6ff5693b99212da76ad316178a184ab56d299b43` | UniversalRouter | impl | live | no |
 | base | `0x74ffbbe9e2d4895a2ea75ae1803a39c71715b58c` | TruthMarketV2 | impl | live | no |
 | base | `0x7c5f5a4bbd8fd63184577525326123b519429bdc` | PositionManager | proxy | live | no |
+| base | `0x8175b0a1e803ac4205ae35f614315ba801275baa` | ERC1967Proxy | proxy | live | no |
 | base | `0x83eaed0f3122d9fe02dd4c574b94bc57c9eeae2d` | TruthMarketManager-2 | impl | live | no |
 | base | `0x87bc36ead32d5219e9cddf9f92d2077ca27992ab` | OracleCouncil | impl | live | no |
 | base | `0x8e40e16ebb1612b7592bac4f1c2df2ec68aa43da` | TruthMarketV2 | impl | live | no |
@@ -36,5 +38,8 @@
 | base | `0xa0be614a5423ed76fddca142d6df3b4c8fc79f89` | TruthMarketLPManager-3 | impl | live | no |
 | base | `0xb7b53c6b219a29afd8f2ebbed1ea2b8867eef3d1` | TruthMarket | impl | live | no |
 | base | `0xb8e8098bc5434f75b75601a90e52aabb3c81c450` | OracleCouncil-2 | impl | live | no |
+| base | `0xca7af04bc6d24eea67618c11b883be6851f198be` | ERC1967Proxy | proxy | live | no |
 | base | `0xd511918d3ab9813005ee44f76da3bbf1bc7720e2` | TruthMarket-2 | impl | live | no |
 | base | `0xeb3151902c63af869977f0ba6baaec476ffab215` | SweepStrategy | impl | live | no |
+| base | `0xf1df87646205850af7c18e7ca4514cf84d87481a` | OracleCouncil-3 | impl | live | no |
+| base | `0xff21c2c73784d35578f497e2d6975d8a430d7b9a` | OracleBonds-3 | impl | live | no |

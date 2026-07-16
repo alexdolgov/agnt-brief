@@ -1,6 +1,6 @@
 # m0 — deployments
 
-25 verified deployment(s) across 25 component(s).
+31 verified deployment(s) across 29 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -16,21 +16,22 @@
 | bsc | `0x23d8162e084aa33d8ef6fcc0ab33f4028a53ee79` | MUSD | impl | unknown | no |
 | chain-9745 | `0x01ffa0003a21f14e039d249af4f4d770f8403b6d` | HyperlaneBridgeAdapter | impl | unknown | no |
 | chain-9745 | `0xf2414b88c565b53fbb3923c96bdf826333973a27` | JMIExtension | impl | unknown | no |
+| chain-999 | `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` | ERC1967Proxy | impl | live | yes |
 | ethereum | `0x023bd2f0a95373c55fc8d1c5f8e60cc3b9bc4f4b` | UniswapV3SwapAdapter | impl | live | no |
 | ethereum | `0x119fbeedd4f4f4298fb59b720d5654442b81ae2c` | Registrar | impl | live | no |
+| ethereum | `0x25c8affc5a63d8e047c12918c0438aba5aa09c2a` | TransparentUpgradeableProxy | proxy | live | no |
+| ethereum | `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0x437cc33344a0b27a429f795ff6b469c72698b291` | Proxy | proxy | live | no |
 | ethereum | `0x51dce104e5ba88fabc19a2c519f955bb834b0dc3` | HyperlaneBridge | impl | live | yes |
 | ethereum | `0x5983b89fa184f14917013b9c3062afd9434c5b03` | PowerToken | impl | live | yes |
+| ethereum | `0x693cc3305342b02ac1549b509a704ff944cd9499` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x77ef4e9d37524069f81890c537a5c5d390bb4b4d` | LayerZeroBridgeAdapter | proxy | live | no |
 | ethereum | `0x886d405949f709bc3f4451491bdd07ff51cdf90a` | EmergencyGovernor | impl | live | yes |
 | ethereum | `0x988567fe094570cce1ffda29d1f2d842b70492be` | ZeroToken | impl | live | yes |
 | ethereum | `0xa0dafaeea4a1d44534e1b9227e19cae6358b80fe` | ZeroGovernor | impl | live | yes |
+| ethereum | `0xacffec28c4eee21c889a4e6c0704c540ed9d4fdd` | ERC1967Proxy-2 | proxy | live | no |
 | ethereum | `0xb024ac5a7c6bc92fbacc8c3387e628a07e1da016` | StandardGovernor | impl | live | yes |
 | ethereum | `0xd7298f620b0f752cf41bd818a16c756d9dcaa34f` | DistributionVault | impl | live | yes |
 | ethereum | `0xf7f9638cb444d65e5a40bf5ff98ebe4ff319f04e` | MinterGateway | impl | live | yes |
 | linea | `0x01ffa0003a21f14e039d249af4f4d770f8403b6d` | SpokePortal | impl | unknown | no |
 | optimism | `0x07dd9e3b00002f9cb178670159d4e6fe0d8cd146` | SwapFacility | impl | unknown | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-999 `0x36f586a30502ae3afb555b8aa4dcc05d233c2ece`

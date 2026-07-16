@@ -1,0 +1,38 @@
+{
+  "component": "KBCToken",
+  "main_contract": "KBCToken",
+  "source_entry_count": 29,
+  "source_file_count": 29,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/KBCToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xd965ff561c3a67d630157ecdf6170884b0fa9caf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396629"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x91ca2767ad087f69374a79c2a55615c0672df264",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405498"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # zkswap-finance — deployments
 
-37 verified deployment(s) across 28 component(s).
+38 verified deployment(s) across 29 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,6 +12,7 @@
 | chain-146 | `0x3e5239b8b19f2610769a7bcb5e9c876bf90cb362` | ZFSwap2EarnRewarder-2 | impl | live | no |
 | chain-146 | `0x43589b9ff1a9a93e5d571409b77e46c549b15843` | ZFSwap2EarnRewarder | impl | live | no |
 | chain-146 | `0x4761516344e8e101c6c5f9448974ca847b1a9d3f` | ZFGovernanceStaking | impl | live | no |
+| chain-146 | `0x4780ea7fc1fc4c51732ab31d797d4e24757c2262` | GnosisSafeProxy | impl | live | no |
 | chain-146 | `0x4784a5443c440f7431b3079d97becb0bdc3a96b7` | ZFSwap2EarnRewarder-3 | impl | live | no |
 | chain-146 | `0x54de113ad67718ba86ca8466b200fbf9200e106d` | ZFGovernanceStaking | impl | live | no |
 | chain-146 | `0x55dfa51618abab2fb0032bb48c4f995cd7679d2a` | AggregatorSmart-2 | impl | live | no |

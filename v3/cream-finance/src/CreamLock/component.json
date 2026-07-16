@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/CreamLock\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbdc3372161dfd0361161e06083ee5d52a9ce7595",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393204"
+    },
     {
       "chain": "ethereum",
       "chain_id": 1,

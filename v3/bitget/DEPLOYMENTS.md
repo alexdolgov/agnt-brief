@@ -1,6 +1,6 @@
 # bitget — deployments
 
-18 verified deployment(s) across 18 component(s).
+19 verified deployment(s) across 19 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -22,3 +22,4 @@
 | arbitrum | `0xb8b4dbcbf943f21ca956a8cfeeea917d1855c608` | LendingPoolCollateralManager | impl | unknown | no |
 | arbitrum | `0xe36d523ad4febaa09b9bc043999252f96375c621` | WalletBalanceProvider | impl | unknown | no |
 | arbitrum | `0xebf9746af2c757a20db467b007f4fa6317385e9a` | WETHGateway | impl | unknown | no |
+| ethereum | `0x54d2252757e1672eead234d27b1270728ff90581` | BitgetToken | impl | live | no |

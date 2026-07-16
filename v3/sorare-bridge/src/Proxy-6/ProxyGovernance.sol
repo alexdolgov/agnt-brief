@@ -1,5 +1,5 @@
 /*
-  Copyright 2019-2022 StarkWare Industries Ltd.
+  Copyright 2019-2021 StarkWare Industries Ltd.
 
   Licensed under the Apache License, Version 2.0 (the "License").
   You may not use this file except in compliance with the License.
@@ -14,10 +14,9 @@
   and limitations under the License.
 */
 // SPDX-License-Identifier: Apache-2.0.
-pragma solidity ^0.6.12;
+pragma solidity ^0.6.11;
 
 import "Governance.sol";
-import "GovernanceStorage.sol";
 
 /**
   The Proxy contract is governed by one or more Governors of which the initial one is the
@@ -49,34 +48,38 @@ import "GovernanceStorage.sol";
   which is needed so that it can have non-colliding function names,
   and a specific tag (key) to allow unique state storage.
 */
-contract ProxyGovernance is GovernanceStorage, Governance {
+contract ProxyGovernance is Governance {
+
     // The tag is the string key that is used in the Governance storage mapping.
     string public constant PROXY_GOVERNANCE_TAG = "StarkEx.Proxy.2019.GovernorsInformation";
 
-    /*
-      Returns the GovernanceInfoStruct associated with the governance tag.
-    */
-    function getGovernanceInfo() internal view override returns (GovernanceInfoStruct storage) {
-        return governanceInfo[PROXY_GOVERNANCE_TAG];
+    function getGovernanceTag()
+        internal
+        pure
+        override
+        returns (string memory tag) {
+        tag = PROXY_GOVERNANCE_TAG;
     }
 
-    function proxyIsGovernor(address user) external view returns (bool) {
-        return _isGovernor(user);
+    function proxyIsGovernor(address testGovernor) external view returns (bool) {
+        return isGovernor(testGovernor);
     }
 
     function proxyNominateNewGovernor(address newGovernor) external {
-        _nominateNewGovernor(newGovernor);
+        nominateNewGovernor(newGovernor);
     }
 
     function proxyRemoveGovernor(address governorForRemoval) external {
-        _removeGovernor(governorForRemoval);
+        removeGovernor(governorForRemoval);
     }
 
-    function proxyAcceptGovernance() external {
-        _acceptGovernance();
+    function proxyAcceptGovernance()
+        external
+    {
+        acceptGovernance();
     }
 
     function proxyCancelNomination() external {
-        _cancelNomination();
+        cancelNomination();
     }
 }

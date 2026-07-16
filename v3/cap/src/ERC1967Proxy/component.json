@@ -10,21 +10,29 @@
     "build_command": "forge build --root \"src/ERC1967Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/cap-labs-dev/cap-audits/blob/main/2026-03-24-Octane.pdf"
-  ],
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x99991c6aabba5a096f24f250b73580f5179b9999",
+      "address": "0x08a728cf4e6b39f4afa059c6ee376103722953ea",
       "is_proxy": true,
-      "implementation_address": "0x9c850771b321c6e7aa909413b5cc98c86ccba96f",
+      "implementation_address": "0x78f7052d1ac5633eb2fcc625195f436eceeff3ce",
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "402578"
+      "logic_topography_row_id": "402571"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x09a3976d8d63728d20dcdfee1e531c206ba91225",
+      "is_proxy": true,
+      "implementation_address": "0x7d0a7f14fc99f9a61748b1f924934966857d0227",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402572"
     }
   ]
 }

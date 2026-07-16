@@ -1,9 +1,10 @@
 # edel — deployments
 
-40 verified deployment(s) across 40 component(s).
+44 verified deployment(s) across 44 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| base | `0xfb31f85a8367210b2e4ed2360d2da9dc2d2ccc95` | ContractOne | impl | live | no |
 | ethereum | `0x03e5235753880491b1d46c44fb44787628834cc3` | AToken | impl | unknown | no |
 | ethereum | `0x07c6a25739ffe02b1dae12502632126ffa7497c2` | OndoAggregator | impl | unknown | no |
 | ethereum | `0x0882477e7895bdc5cea7cb1552ed914ab157fe56` | FiatTokenV1 | impl | unknown | no |
@@ -21,9 +22,11 @@
 | ethereum | `0x2970e7ea5e74052e99455931931840d51c0835f9` | PullRewardsTransferStrategy | impl | unknown | no |
 | ethereum | `0x2aa5c4c61a25c50d96cfcc325de62fa19bdd406b` | PoolAddressesProviderRegistry | impl | unknown | no |
 | ethereum | `0x2c05f8a12bb64ea7fa3ca98dcddb60b43bf236b8` | DefaultReserveInterestRateStrategy | impl | unknown | no |
+| ethereum | `0x349fa7e2a00fd64855713cf9b11e3c4c0232082c` | ERC4626EdelWrapperGateway | impl | live | no |
 | ethereum | `0x38554e6cc65637a5d4b6fb8daefb7cc7254c9a54` | WalletBalanceProvider | impl | unknown | no |
 | ethereum | `0x38c14f1091947572f592ca4de13462a4f5195cb2` | LiquidationLogic | impl | unknown | no |
 | ethereum | `0x3a233ecd6ff9e0b20fad37bf827937d2f7feae6a` | WrappedTokenGatewayV3 | impl | unknown | no |
+| ethereum | `0x3eeeb3cd20f844a578807fc457388ceb9a67faa6` | BaseImmutableAdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0x4eb30706831854b78bca2472952f84d92e30425c` | ConfiguratorLogic | impl | unknown | no |
 | ethereum | `0x4f8f2946a09a7137ea72f7f79261bf8f77f0d5e0` | StableDebtToken | impl | unknown | no |
 | ethereum | `0x566c11b5c2201b69c9269fe924e4395873674335` | MasterMinter | impl | unknown | no |
@@ -44,3 +47,4 @@
 | ethereum | `0xb5ace7f72413fd391300c45b4440e5f651fe8fb4` | UiIncentiveDataProviderV3 | impl | unknown | no |
 | ethereum | `0xb7277a6e95992041568d9391d09d0122023778a2` | FiatTokenV2 | impl | unknown | no |
 | ethereum | `0xc87ed0c515ffd27474ccfc05f48ac206d4924637` | Pool | impl | unknown | no |
+| ethereum | `0xfc3f2b827a1176641022a9369c483b6faa2cb6f3` | EdelZap | impl | live | no |

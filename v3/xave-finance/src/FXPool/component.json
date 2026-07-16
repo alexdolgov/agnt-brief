@@ -1,0 +1,78 @@
+{
+  "component": "FXPool",
+  "main_contract": "FXPool",
+  "source_entry_count": 36,
+  "source_file_count": 36,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FXPool\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5f8b11995d7f95faa59ca6fd5ffa1c0dbbe0ec7b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404991"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x73f8e7a9a19e284a9ac85704af58454cfe75f059",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404992"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x32cc63ffeccb7c0508d64e4d37145313cc053b27",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404993"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x427333b9f9d8bd0b67fd5fc2213371db0ef178e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404994"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6bf004bee6346852a29239b386ab4239ffbd66de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404995"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xe6d8fcd23ed4e417d7e9d1195edf2ca634684e0e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404996"
+    }
+  ]
+}

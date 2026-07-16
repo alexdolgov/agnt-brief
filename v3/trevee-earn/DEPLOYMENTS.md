@@ -1,6 +1,6 @@
 # trevee-earn — deployments
 
-60 verified deployment(s) across 27 component(s).
+68 verified deployment(s) across 35 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -37,14 +37,22 @@
 | chain-146 | `0xdb58c4db1a0f45dda3d2f8e44c3300bb6510c866` | Wrapper | impl | live | no |
 | chain-146 | `0xe18ab82c81e7eecff32b8a82b1b7d2d23f1ece96` | InitializableImmutableAdminUpgradeabilityProxy-2 | proxy | live | no |
 | chain-146 | `0xe8a41c62bb4d5863c6eadc96792cfe90a1f37c47` | Wrapper | impl | live | no |
+| chain-9745 | `0x11428a874c29367527362b9b8d60c5e4fea6c772` | PlUsdCustomAggregatorFeed | impl | live | no |
+| chain-9745 | `0x14723d7e7072b65c7d0cdff71a4fbbc5c4dc7431` | plUSD | impl | live | no |
 | chain-9745 | `0x1dd4b13fcae900c60a350589be8052959d2ed27b` | fToken-2 | impl | live | no |
 | chain-9745 | `0x24e49d2ad8f0bcd0cf7f2a5ab560ca4319f6bd75` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-9745 | `0x2b3f3514867cbccfadc80121297bb8088c683432` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-9745 | `0x2b690cab819a815732544aeb422474efdc1b0615` | TransparentUpgradeableProxy | proxy | live | no |
+| chain-9745 | `0x3404676e77abca60ffb1c00a8e09da21832796ce` | SplUsdRedemptionVaultWithSwapper | impl | live | no |
 | chain-9745 | `0x4718e64c12cae76552696934f0b346cfc1e9a7d3` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-9745 | `0x4ef9ff56162bd3cb5073fb20dbd355c59084093f` | TransparentUpgradeableProxy | proxy | live | no |
+| chain-9745 | `0x574f3132a7fc596f61cfff711770e1e7d9fa35a4` | PlUsdDataFeed | impl | live | no |
 | chain-9745 | `0x69ecab6aa7bdfddd99def0891c0317076430ae50` | TransparentUpgradeableProxy | proxy | live | no |
+| chain-9745 | `0x850ec16c59e527e262d5a1331e9ad965997bc0fc` | PlUsdRedemptionVaultWithSwapper | impl | live | no |
 | chain-9745 | `0xaa24baba4da60b2aeaf80b1db07b0a4a7fd84455` | TransparentUpgradeableProxy | proxy | live | no |
+| chain-9745 | `0xae7d92bedcf6aa692e46d731a6df5ec53f8652b0` | SplUsdCustomAggregatorFeed | impl | live | no |
+| chain-9745 | `0xc50c3d19f668b8fc355d7e21e3f9e16b2982b77d` | PlUsdDepositVault | impl | live | no |
+| chain-9745 | `0xf1e3c154dcb0c3b9e66a9b7191007d12efaa9053` | splUSD | impl | live | no |
 | chain-9745 | `0xfe5ae64f5ba6a45b9267a5ba274620539fa59566` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x1a88df1cfe15af22b3c4c783d4e6f7f9e0c1885d` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0x2371e134e3455e0593363cbf89d3b6cf53740618` | MetaMorpho | impl | live | no |

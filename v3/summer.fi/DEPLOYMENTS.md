@@ -1,6 +1,6 @@
 # summer.fi — deployments
 
-248 verified deployment(s) across 116 component(s).
+261 verified deployment(s) across 122 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -11,6 +11,7 @@
 | arbitrum | `0x106b67d2621113fdd8f6e58f5ebee418400197d3` | MorphoVaultArk-2 | impl | live | no |
 | arbitrum | `0x125dae47930c1118cf2db5a140877c64b408783c` | SiloManagedVaultArk | impl | live | no |
 | arbitrum | `0x14496b405d62c24f91f04cda1c69dc526d56fde5` | AaveProtocolDataProvider | impl | live | no |
+| arbitrum | `0x194f360d130f2393a5e9f3117a6a1b78abea1624` | SummerToken | impl | live | no |
 | arbitrum | `0x1bf59cc3e72736040c6b8fdc084e19a8070a045c` | FluidFTokenArk | impl | live | no |
 | arbitrum | `0x1fe082f764c86b362adec12691d1fb979a7dfa83` | TipJar-2 | impl | live | no |
 | arbitrum | `0x269938df5c0110a9e8de1f76cf8279f745895d28` | SiloVaultArkV2 | impl | live | no |
@@ -22,9 +23,10 @@
 | arbitrum | `0x3d3e4973ce9dd6cddee76a499f20bee6085881c7` | FluidFTokenArk | impl | live | no |
 | arbitrum | `0x4042df211ff8c05b7ed48e18ce8141abf3ada0ad` | BridgeRouter | impl | live | no |
 | arbitrum | `0x43d2c9786e8f5a960e75d6141e44411d065a4615` | AdmiralsQuartersWhitelist | impl | live | no |
-| arbitrum | `0x45342a8ac1e9ef6877d7566ed7be5fc98f7e7cae` | FleetCommander-5 | impl | live | no |
+| arbitrum | `0x447bf9d1485abdc4c1778025dfdfbe8b894c3796` | SummerTimelockController | impl | live | no |
+| arbitrum | `0x45342a8ac1e9ef6877d7566ed7be5fc98f7e7cae` | FleetCommander-6 | impl | live | no |
 | arbitrum | `0x45ff580617c41ca4fb5d76c0ecc331fa3a5ac8b5` | ERC4626Ark-3 | impl | live | no |
-| arbitrum | `0x4774d1cd62d20c288dfadefdedf79d5b4cae1856` | FleetCommander-6 | impl | live | no |
+| arbitrum | `0x4774d1cd62d20c288dfadefdedf79d5b4cae1856` | FleetCommander-7 | impl | live | no |
 | arbitrum | `0x47c327898d412cf0271675f62bcf0ce472a040cf` | HarborCommand-2 | impl | live | no |
 | arbitrum | `0x4963c6e00cf8b27580f7e9e3ae6b5c952a85b1d3` | AdmiralsQuartersWhitelist-2 | impl | live | no |
 | arbitrum | `0x497d89f32ff7dcf0d8db2a532efc8d06549a38df` | ERC4626Ark-3 | impl | live | no |
@@ -33,6 +35,7 @@
 | arbitrum | `0x4f63cfea7458221cb3a0eee2f31f7424ad34bb58` | FleetCommander | impl | live | no |
 | arbitrum | `0x525360007383bd0e6ba9deedd376c931c47135ad` | MorphoVaultArk-2 | impl | live | no |
 | arbitrum | `0x54749c15751137be18768288d3945c4934fcb800` | SiloVaultArkV2-2 | impl | live | no |
+| arbitrum | `0x54a2ea2b8f57d62c149ace01d7ac1fd9a880b8dd` | ProtocolAccessManager-3 | impl | live | no |
 | arbitrum | `0x5632b3df8a030001d0a89c2d9b420c2210eeddc5` | ConfigurationManagerWhitelist | impl | live | no |
 | arbitrum | `0x57047ebc3adeda70d58c51676301bf3990bcbb0c` | CrossChainRegistry | impl | live | no |
 | arbitrum | `0x5713503f93a3513956d9a6c361794cabf6efafe4` | ERC4626Ark-2 | impl | live | no |
@@ -56,6 +59,7 @@
 | arbitrum | `0xb3d1be8ea97d96a031e3dc22d083d6c7312e6d25` | MorphoVaultArk-2 | impl | live | no |
 | arbitrum | `0xb95a1ee7afbfda781d55893bf4b5ba2a8c149b7d` | FleetCommander-2 | impl | live | no |
 | arbitrum | `0xb960baef9665f067455ab119e56a29896d676def` | FleetCommanderWhitelist | impl | live | no |
+| arbitrum | `0xbe5a4dd68c3526f32b454fe28c9909ca0601e9fa` | SummerGovernor | impl | live | no |
 | arbitrum | `0xbeb68a57df8ed3cdae8629c7c6e497eb1b6b1c47` | TipJar | impl | live | no |
 | arbitrum | `0xc26f0f8ddeffe7d790eda0155396ca39e586e684` | MorphoVaultArk-2 | impl | live | no |
 | arbitrum | `0xcf5870ab4cc9d3de9d68e3b5222b7fbdcf841985` | ERC4626Ark-3 | impl | live | no |
@@ -66,6 +70,7 @@
 | arbitrum | `0xdd9417e27df4292d3acb778920be7314453a2cc9` | SiloManagedVaultArk-2 | impl | live | no |
 | arbitrum | `0xddccceeececb0f3c4363d0e5ad96fad2bde6fd8d` | BridgeQueue | impl | live | no |
 | arbitrum | `0xe0d25012d8bcb75d3b50f95e290b8eba558912b6` | ConfigurationManagerWhitelist | impl | live | no |
+| arbitrum | `0xf389bcea078acd9516414f5dabe3ddd5f7e39694` | ProtocolAccessManager | impl | live | no |
 | arbitrum | `0xf803baed40aa11cdfaa858294ac88420ffe0131e` | ERC4626Ark-2 | impl | live | no |
 | base | `0x0225d878d8b5ef51c0c97a41379ec5bf8ffb20b8` | SummerVestingWalletsEscrow | impl | live | no |
 | base | `0x08e19585548c8439e83239bbed99afc8e28528c6` | AdmiralsQuarters-2 | impl | live | no |
@@ -86,7 +91,8 @@
 | base | `0x49fea727a60469f2c25376ad3c7d5f3810adfd8c` | StakedSummerToken-2 | impl | live | no |
 | base | `0x4e764d15909ab8b413f6a046dda66408ee5407f1` | FluidFTokenArk | impl | live | no |
 | base | `0x4f467440b2fd1b05879ca5e4ebcd723dbea7666b` | StakedSummerToken | impl | live | no |
-| base | `0x53d0a0bcbbaea37a8d33417ef443e875b4e6feea` | FleetCommander-4 | impl | live | no |
+| base | `0x53d0a0bcbbaea37a8d33417ef443e875b4e6feea` | FleetCommander-5 | impl | live | no |
+| base | `0x54a2ea2b8f57d62c149ace01d7ac1fd9a880b8dd` | ProtocolAccessManager-3 | impl | live | no |
 | base | `0x5511c30c50762520e36ccc42af2b528ee759721a` | SummerOracleFactory | impl | live | no |
 | base | `0x55bd40ffdbfe45869969a3c10b39c11152a735bc` | MorphoVaultArk-2 | impl | live | no |
 | base | `0x5dcd920a2480b72a41bcaf1b88870f13396afbd4` | CrossChainArk | impl | live | no |
@@ -107,7 +113,7 @@
 | base | `0x879eb39f6d673edf0d45adc2876d38e304e1e90c` | FleetCommander-2 | impl | live | no |
 | base | `0x902ac48f45fefec167fe65963bff714287470a3f` | SummerStaking | impl | live | no |
 | base | `0x92176c8ce4f6c9925ba2dbfae0e2a395f03512c0` | AdmiralsQuarters-5 | impl | live | no |
-| base | `0x932ccb7d2a6f1821a1ecee9e1279ac30e0d4db32` | SummerToken-3 | impl | live | no |
+| base | `0x932ccb7d2a6f1821a1ecee9e1279ac30e0d4db32` | SummerToken-4 | impl | live | no |
 | base | `0x98c49e13bf99d7cad8069faa2a370933ec9ecf17` | FleetCommander | impl | live | no |
 | base | `0x9a35b98612d99b859d4207be681e9eba7bf419ba` | SummerOracleFactory-2 | impl | live | no |
 | base | `0x9fa92c01d771f27dfc554c70a4458131a03d18fb` | FleetProxy-5 | impl | live | no |
@@ -130,8 +136,8 @@
 | base | `0xe414b24571867a951f2c4eb7f1d8f70b98535fc0` | SummerOracleFactory-3 | impl | live | no |
 | base | `0xe94e8f40132da5366bb4d63015d25545f0ed248f` | SummerStaking | impl | live | no |
 | base | `0xece30ebeaa765472895e77deac35a09ddae9f8c7` | MorphoVaultArk-2 | impl | live | no |
-| base | `0xef79051d854c871c5331379ccddf915121a90900` | FleetCommander-4 | impl | live | no |
-| base | `0xf762b4e90b21be81e5673058ac01b83a5833a4d9` | FleetCommander-5 | impl | live | no |
+| base | `0xef79051d854c871c5331379ccddf915121a90900` | FleetCommander-5 | impl | live | no |
+| base | `0xf762b4e90b21be81e5673058ac01b83a5833a4d9` | FleetCommander-6 | impl | live | no |
 | base | `0xf909eee1e17ebace2c82377192bcd420a6ff659e` | FleetProxy | impl | live | no |
 | base | `0xfa92fe0dfea6ae882492e41095b49ba80f0b2e8d` | FleetProxy-6 | impl | live | no |
 | base | `0xfb7dad21b5bdd30d1317f20c63731dfbf834c010` | CrossChainRegistry-3 | impl | live | no |
@@ -149,6 +155,13 @@
 | chain-146 | `0xa689599c43c30e20153d2a9ed3d263fb72853e6c` | TipJar | impl | live | no |
 | chain-146 | `0xaab08ab98c93696665454b8c0a6ef8c2cd0206ef` | AdmiralsQuarters-2 | impl | live | no |
 | chain-146 | `0xc5b2e6fdbc3ebdc72aa070b8e4573d2c6d125459` | AdmiralsQuarters | impl | live | no |
+| chain-999 | `0x0398da19ebb8f5decdc2e78465c2ef4f2412233b` | SummerGovernorV2 | impl | live | no |
+| chain-999 | `0x244c6efc140b9cc4d69d3bf4d9137dc4195be86c` | SummerTimelockController-3 | impl | live | no |
+| chain-999 | `0x252e5aa42c1804b85b2ce6712cd418a0561232ba` | FleetCommander-4 | impl | live | no |
+| chain-999 | `0x2cc190fb654141dfbeac4c0f718f4d511674d346` | FleetCommander-4 | impl | live | no |
+| chain-999 | `0x38fb5a7fa70103dcd9e8a969f3975a77e0fe755f` | ProtocolAccessManager-2 | impl | live | no |
+| chain-999 | `0x47de098267eca3a5ded9ab0b986f244cb5446f21` | SummerVestingWalletFactory | impl | live | no |
+| chain-999 | `0x72c527d3efde2169aa950efc9573c838cf125d21` | SummerToken-3 | impl | live | no |
 | ethereum | `0x0264f3a10526b5eb5f75eb4004df6e3ccc3b45e3` | ERC4626Ark | impl | live | no |
 | ethereum | `0x068df9a153948b4be0d4dcc074c3a44ba787b26c` | ERC4626Ark | impl | live | no |
 | ethereum | `0x07060e282bd0fb99607c8915f1e538f8cebf5fc4` | HarborCommand | impl | live | no |

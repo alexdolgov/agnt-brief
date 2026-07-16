@@ -1,7 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import "@openzeppelin/contracts/proxy/utils/Initializable.sol";
+import { Initializable } from
+    "@openzeppelin/contracts/proxy/utils/Initializable.sol";
 
 library SickleStorageEvents {
     event ApprovedAddressChanged(address newApproved);
@@ -33,11 +34,7 @@ abstract contract SickleStorage is Initializable {
 
     /// MODIFIERS ///
 
-    /// @dev Restricts a function call to the owner, however if the admin was
-    /// not set yet,
-    /// the modifier will not restrict the call, this allows the SickleFactory
-    /// to perform
-    /// some calls on the user's behalf before passing the admin rights to them
+    /// @dev Restricts a function call to the owner of the Sickle contract
     modifier onlyOwner() {
         if (msg.sender != owner) revert NotOwnerError();
         _;
@@ -46,7 +43,7 @@ abstract contract SickleStorage is Initializable {
     /// INITIALIZATION ///
 
     /// @param owner_ Address of the owner of this Sickle contract
-    function _SickleStorage_initialize(
+    function _initializeSickleStorage(
         address owner_,
         address approved_
     ) internal onlyInitializing {
@@ -58,7 +55,9 @@ abstract contract SickleStorage is Initializable {
 
     /// @notice Sets the approved address of this Sickle
     /// @param newApproved Address meant to be approved by the owner
-    function setApproved(address newApproved) external onlyOwner {
+    function setApproved(
+        address newApproved
+    ) external onlyOwner {
         approved = newApproved;
         emit SickleStorageEvents.ApprovedAddressChanged(newApproved);
     }
@@ -67,7 +66,9 @@ abstract contract SickleStorage is Initializable {
     /// or was approved by them
     /// @param caller Address to check
     /// @return True if `caller` is either the owner of the Sickle contract
-    function isOwnerOrApproved(address caller) public view returns (bool) {
+    function isOwnerOrApproved(
+        address caller
+    ) public view returns (bool) {
         return caller == owner || caller == approved;
     }
 }

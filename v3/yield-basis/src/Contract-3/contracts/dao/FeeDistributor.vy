@@ -1,0 +1,302 @@
+# @version 0.4.3
+# pragma nonreentrancy on
+"""
+@title FeeDistributor
+@author Yield Basis
+@license GNU Affero General Public License v3.0
+@notice Multi-token fee distribution for Yield Basis
+"""
+from snekmate.auth import ownable
+from ethereum.ercs import IERC20
+
+
+initializes: ownable
+
+exports: (
+    ownable.transfer_ownership,
+    ownable.owner
+)
+
+
+interface VotingEscrow:
+    def getPastVotes(account: address, timepoint: uint256) -> uint256: view
+    def getPastTotalSupply(timepoint: uint256) -> uint256: view
+    def checkpoint(): nonpayable
+
+interface VestingEscrow:
+    def recipient_to_cliff(user: address) -> address: view
+
+
+event FundEpoch:
+    epoch: indexed(uint256)
+    token: indexed(IERC20)
+    amount: uint256
+
+event AddTokenSet:
+    token_set_id: indexed(uint256)
+    token_set: DynArray[IERC20,MAX_TOKENS]
+
+event Claim:
+    user: indexed(address)
+    token: indexed(IERC20)
+    amount: uint256
+
+event Kill:
+    is_killed: bool
+
+
+WEEK: constant(uint256) = 7 * 86400
+OVER_WEEKS: public(constant(uint256)) = 4
+MAX_TOKENS: public(constant(uint256)) = 100
+INITIAL_EPOCH: public(immutable(uint256))
+VE: public(immutable(VotingEscrow))
+VESTING_ESCROWS: public(immutable(DynArray[VestingEscrow, 5]))
+
+
+last_claimed_for: public(HashMap[address, uint256])
+token_sets: public(DynArray[IERC20,MAX_TOKENS][10**9])  # n_set -> token_set
+current_token_set: public(uint256)
+initial_set_for_epoch: public(HashMap[uint256, uint256])  # epoch_time -> token_set_id
+max_set_for_epoch: public(HashMap[uint256, uint256])
+balances_for_epoch: public(HashMap[uint256, HashMap[IERC20, uint256]])
+token_balances: public(HashMap[IERC20, uint256])
+claimed_epoch_for: public(HashMap[address, HashMap[IERC20, uint256]])
+
+user_claim_id: public(uint256)
+user_claimed_tokens: public(HashMap[address, HashMap[uint256, HashMap[IERC20, uint256]]])
+
+is_killed: public(bool)
+
+
+@deploy
+def __init__(token_set: DynArray[IERC20, MAX_TOKENS], ve: VotingEscrow,
+             vesting_escrows: DynArray[VestingEscrow, 5], owner: address):
+    INITIAL_EPOCH = (block.timestamp + WEEK) // WEEK * WEEK
+    VE = ve
+    VESTING_ESCROWS = vesting_escrows
+    self.token_sets[1] = token_set
+    self.current_token_set = 1
+    log AddTokenSet(token_set_id=1, token_set=token_set)
+
+    ownable.__init__()
+    ownable._transfer_ownership(owner)
+
+
+@internal
+def _fill_epochs():
+    assert not self.is_killed, "Ded"
+
+    set_id: uint256 = self.current_token_set
+    token_set: DynArray[IERC20, MAX_TOKENS] = self.token_sets[set_id]
+    cursor: uint256 = (block.timestamp + WEEK) // WEEK * WEEK
+    epochs: uint256[4] = [cursor, cursor + WEEK, cursor + 2*WEEK, cursor + 3*WEEK]
+
+    for epoch: uint256 in epochs:
+        if self.initial_set_for_epoch[epoch] == 0:
+            self.initial_set_for_epoch[epoch] = set_id
+        self.max_set_for_epoch[epoch] = set_id
+
+    for token: IERC20 in token_set:
+        balance: uint256 = staticcall token.balanceOf(self)
+        old_balance: uint256 = self.token_balances[token]
+        if balance > old_balance:
+            self.token_balances[token] = balance
+            balance_per_epoch: uint256 = (balance - old_balance) // OVER_WEEKS
+            for epoch: uint256 in epochs:
+                self.balances_for_epoch[epoch][token] += balance_per_epoch
+                log FundEpoch(epoch=epoch, token=token, amount=balance_per_epoch)
+
+
+@external
+def fill_epochs():
+    """
+    @notice Distribute newly arrived tokens across several (4) future epochs
+    """
+    self._fill_epochs()
+
+
+@external
+@view
+def preview_distribution(week_shift: int256 = 0) -> (DynArray[IERC20, MAX_TOKENS * 4], DynArray[uint256, MAX_TOKENS * 4]):
+    """
+    @notice Check amount of tokens claimable in a given week by all users
+    @param week_shift Which week we should check for (0 = current, 1 = next, -1 = last etc)
+    @return [tokens], [amounts]
+    """
+    epoch: uint256 = convert(convert(block.timestamp // WEEK, int256) + week_shift, uint256) * WEEK
+    out_tokens: DynArray[IERC20, MAX_TOKENS * 4] = empty(DynArray[IERC20, MAX_TOKENS * 4])
+    out_amounts: DynArray[uint256, MAX_TOKENS * 4] = empty(DynArray[uint256, MAX_TOKENS * 4])
+
+    ts_id: uint256 = self.initial_set_for_epoch[epoch]
+    if ts_id > 0:
+        max_ts_id: uint256 = self.max_set_for_epoch[epoch]
+        for j: uint256 in range(50):
+            for token: IERC20 in self.token_sets[ts_id]:
+                if token not in out_tokens:  # <- not a scalable check, quadratic on tokens in epoch
+                    out_tokens.append(token)
+                    out_amounts.append(self.balances_for_epoch[epoch][token])
+            ts_id += 1
+            if ts_id > max_ts_id:
+                break
+
+    return out_tokens, out_amounts
+
+
+@external
+def add_token_set(token_set: DynArray[IERC20, MAX_TOKENS]):
+    """
+    @notice Add token set for distribution. These tokens will be tracked and added as revenues
+    @param token_set Array with token addresses
+    """
+    ownable._check_owner()
+    self._fill_epochs()
+    current_set_id: uint256 = self.current_token_set
+    current_set_id += 1
+    self.current_token_set = current_set_id
+    self.token_sets[current_set_id] = token_set
+    log AddTokenSet(token_set_id=current_set_id, token_set=token_set)
+
+
+@internal
+def _claim(user: address, epoch_count: uint256, _for: address) -> (DynArray[IERC20, MAX_TOKENS * 4], DynArray[uint256, MAX_TOKENS * 4]):
+    assert epoch_count > 0
+    self._fill_epochs()
+    extcall VE.checkpoint()
+
+    epoch: uint256 = self.last_claimed_for[user]
+    if epoch == 0:
+        epoch = INITIAL_EPOCH
+    else:
+        epoch += WEEK
+    save_epoch: uint256 = 0
+    user_claim_id: uint256 = 0
+    if epoch <= block.timestamp:
+        user_claim_id = self.user_claim_id
+        self.user_claim_id = user_claim_id + 1
+    tokens_to_claim: DynArray[IERC20, MAX_TOKENS * 4] = empty(DynArray[IERC20, MAX_TOKENS * 4])
+    amounts_claimed: DynArray[uint256, MAX_TOKENS * 4] = empty(DynArray[uint256, MAX_TOKENS * 4])
+
+    for i: uint256 in range(50):
+        if epoch > block.timestamp or i >= epoch_count:
+            break
+
+        else:
+            save_epoch = epoch
+            votes: uint256 = staticcall VE.getPastVotes(user, epoch)
+            total_votes: uint256 = staticcall VE.getPastTotalSupply(epoch)
+
+            ts_id: uint256 = self.initial_set_for_epoch[epoch]
+            max_ts_id: uint256 = self.max_set_for_epoch[epoch]
+            for j: uint256 in range(50):
+                for token: IERC20 in self.token_sets[ts_id]:
+                    if self.claimed_epoch_for[user][token] < epoch:
+                        amount: uint256 = self.balances_for_epoch[epoch][token] * votes // total_votes
+                        if amount > 0:
+                            old_amount: uint256 = self.user_claimed_tokens[user][user_claim_id][token]
+                            if old_amount == 0:
+                                tokens_to_claim.append(token)
+                            self.user_claimed_tokens[user][user_claim_id][token] = old_amount + amount
+                        self.claimed_epoch_for[user][token] = epoch
+                ts_id += 1
+                if ts_id > max_ts_id:
+                    break
+
+        epoch += WEEK
+
+    if save_epoch > 0:
+        self.last_claimed_for[user] = save_epoch
+        for token: IERC20 in tokens_to_claim:
+            amount: uint256 = self.user_claimed_tokens[user][user_claim_id][token]
+            amounts_claimed.append(amount)
+            assert extcall token.transfer(_for, amount, default_return_value=True)
+            self.token_balances[token] = staticcall token.balanceOf(self)
+            log Claim(user=user, token=token, amount=amount)
+
+    return tokens_to_claim, amounts_claimed
+
+
+@internal
+@view
+def _similar_to_cliff_escrow(vest: address) -> bool:
+    if vest.is_contract:
+        success: bool = False
+        res: Bytes[32] = empty(Bytes[32])
+        success, res = raw_call(
+            vest,
+            method_id("VE()"),
+            max_outsize=32, is_static_call=True, revert_on_failure=False)
+        if success:
+            return convert(res, address) == VE.address
+        else:
+            return False
+    else:
+        return False
+
+
+@internal
+def _execute_claim(receiver: address, epoch_count: uint256, use_vest: bool) -> (DynArray[IERC20, MAX_TOKENS * 4], DynArray[uint256, MAX_TOKENS * 4]):
+    owner: address = receiver
+    cliff: address = empty(address)
+    if use_vest:
+        for vest: VestingEscrow in VESTING_ESCROWS:
+            cliff = staticcall vest.recipient_to_cliff(receiver)
+            if cliff != empty(address):
+                break
+    if cliff != empty(address):
+        owner = cliff
+    else:
+        # We are not sure if receiver is not someone's cliff!
+        if receiver != msg.sender:
+            # If it is msg.sender who runs the claim - it's not a cliff
+            # but otherwise we need to check that it's not a smart contract who claims
+            assert not self._similar_to_cliff_escrow(receiver), "Might be a vest"
+    return self._claim(owner, epoch_count, receiver)
+
+
+@external
+def preview_claim(receiver: address, epoch_count: uint256 = 50, use_vest: bool = False) -> (DynArray[IERC20, MAX_TOKENS * 4], DynArray[uint256, MAX_TOKENS * 4]):
+    """
+    @notice Amounts of tokens claimable by a given user
+    @dev This method MUST be renamed to view in ABI (despite compiler making it transacting)- otherwise it is useless
+    @param receiver User who will be receiving the claim
+    @param epoch_count Number of epochs to claim
+    @param use_vest Claim for a user in one of the vests
+    @return [tokens], [amounts]
+    """
+    return self._execute_claim(receiver, epoch_count, use_vest)
+
+
+@external
+def claim(receiver: address = msg.sender, epoch_count: uint256 = 50, use_vest: bool = False):
+    """
+    @notice Amounts of tokens claimable by a given user
+    @param receiver User who will be receiving the claim
+    @param epoch_count Number of epochs to claim
+    @param use_vest Claim for a user in one of the vests
+    """
+    self._execute_claim(receiver, epoch_count, use_vest)
+
+
+@external
+def recover_token(token: IERC20, receiver: address):
+    """
+    @notice Recover any token which did not go for distribution already (only by the owner)
+    @param token Token address to recover
+    @param receiver Who to send it to
+    """
+    ownable._check_owner()
+    amount: uint256 = staticcall token.balanceOf(self)
+    if not self.is_killed:
+        amount -= self.token_balances[token]
+    if amount > 0:
+        assert extcall token.transfer(receiver, amount, default_return_value=True)
+
+
+@external
+def kill_toggle(is_killed: bool):
+    """
+    @notice Kill or unkill the contract
+    """
+    ownable._check_owner()
+    self.is_killed = is_killed
+    log Kill(is_killed=is_killed)

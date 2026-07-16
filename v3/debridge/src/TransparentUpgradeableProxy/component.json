@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 8,
+  "deployment_count": 9,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -33,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "393390"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x61ef2e01e603aeb5cd96f9ec9ae76cc6a68f6cf9",
+      "is_proxy": true,
+      "implementation_address": "0x7ea200f06c17cb9f64a3c8973a76dd8359fd68fa",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393393"
     },
     {
       "chain": "bsc",

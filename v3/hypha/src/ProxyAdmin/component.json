@@ -1,0 +1,38 @@
+{
+  "component": "ProxyAdmin",
+  "main_contract": "ProxyAdmin",
+  "source_entry_count": 11,
+  "source_file_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ProxyAdmin\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x6e8fd36d51d159209054dadda7f87aa4e1aed940",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395153"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xbc5627e0b497f18dd4a321f57f4d43c1e0e9e190",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395168"
+    }
+  ]
+}

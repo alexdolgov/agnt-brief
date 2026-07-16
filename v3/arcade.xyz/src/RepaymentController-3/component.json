@@ -1,0 +1,28 @@
+{
+  "component": "RepaymentController-3",
+  "main_contract": "RepaymentController",
+  "source_entry_count": 19,
+  "source_file_count": 19,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RepaymentController-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x251440b8cbcc973a8e7f0b7814ec3ecc6bcfcbc9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

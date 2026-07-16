@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.8.18;
+pragma solidity ^0.8.11;
 
 /**
  * @title VaultErrors
@@ -33,11 +33,11 @@ error AV_WithdrawsEnabled();
 error AV_AlreadyInitialized(address ownershipToken);
 
 /**
- * @notice CanCallOn authorization returned false.
+ * @notice Call disallowed.
  *
  * @param caller                             Msg.sender of the function call.
  */
-error AV_MissingAuthorization(address caller);
+error AV_CallDisallowed(address caller);
 
 /**
  * @notice Call disallowed.
@@ -55,35 +55,6 @@ error AV_NonWhitelistedCall(address to, bytes4 data);
  */
 error AV_NonWhitelistedApproval(address token, address spender);
 
-/**
- * @notice Cannot withdraw more than 25 items from a vault at a time.
- *
- * @param arrayLength                  Total elements provided.
- */
-error AV_TooManyItems(uint256 arrayLength);
-
-/**
- * @notice The length of either the tokenIds or tokenTypes array does not match
- *         the length of the tokenAddress array.
- *
- * @param arrayType                    Array type that does not match tokenAddress array length.
- */
-error AV_LengthMismatch(string arrayType);
-
-/**
- * @notice Zero address passed in where not allowed.
- *
- * @param addressType                  The name of the parameter for which a zero address was provided.
- */
-error AV_ZeroAddress(string addressType);
-
-/**
- * @notice Delegation disallowed.
- *
- * @param token                             The token to delegate.
- */
-error AV_NonWhitelistedDelegation(address token);
-
 // ==================================== Ownable ERC721 ======================================
 /// @notice All errors prefixed with OERC721_, to separate from other contracts in the protocol.
 
@@ -98,11 +69,11 @@ error OERC721_CallerNotOwner(address caller);
 /// @notice All errors prefixed with VF_, to separate from other contracts in the protocol.
 
 /**
- * @notice Zero address passed in where not allowed.
+ * @notice Template contract is invalid.
  *
- * @param addressType                  The name of the parameter for which a zero address was provided.
+ * @param template                           Template contract to be cloned.
  */
-error VF_ZeroAddress(string addressType);
+error VF_InvalidTemplate(address template);
 
 /**
  * @notice Global index out of bounds.
@@ -117,50 +88,3 @@ error VF_TokenIdOutOfBounds(uint256 tokenId);
  * @param tokenId                            AW-V2 tokenId of the asset vault.
  */
 error VF_NoTransferWithdrawEnabled(uint256 tokenId);
-
-/**
- * @notice Not enough msg.value sent for the required mint fee.
- *
- * @param value                              The msg.value.
- * @param requiredMintFee                    The required mint fee.
- */
-error VF_InsufficientMintFee(uint256 value, uint256 requiredMintFee);
-
-/**
- * @notice Non-existant token id provided as argument.
- *
- * @param tokenId                       The ID of the token to lookup the URI for.
- */
-error VF_DoesNotExist(uint256 tokenId);
-
-// ================================== Call Whitelist ======================================
-/// @notice All errors prefixed with CW_, to separate from other contracts in the protocol.
-
-/**
- * @notice Cannot whitelist a call which has already been whitelisted.
- *
- * @param callee                             The contract to be added to CallWhitelist mapping.
- * @param selector                           The function selector to be added to CallWhitelist mapping.
- */
-error CW_AlreadyWhitelisted(address callee, bytes4 selector);
-
-/**
- * @notice Cannot remove a call from the CallWhitelist that has not yet been added.
- *
- * @param callee                             The contract to be removed from CallWhitelist mapping.
- * @param selector                           The function selector to be removed from CallWhitelist mapping.
- */
-error CW_NotWhitelisted(address callee, bytes4 selector);
-
-// ================================== Call Whitelist Delegation ======================================
-
-/**
- * @notice Zero address passed in the constructor.
- */
-error CWD_ZeroAddress();
-
-/**
- * @notice The registry address provided is currently set as the registry.
- */
-error CWD_RegistryAlreadySet();
-

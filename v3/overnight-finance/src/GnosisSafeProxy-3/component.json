@@ -1,0 +1,28 @@
+{
+  "component": "GnosisSafeProxy-3",
+  "main_contract": "GnosisSafeProxy",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GnosisSafeProxy-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xd439bd5fb6fabb2244c46f03559485c3c33e0521",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397991"
+    }
+  ]
+}

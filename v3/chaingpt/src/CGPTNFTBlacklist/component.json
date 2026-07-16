@@ -1,0 +1,58 @@
+{
+  "component": "CGPTNFTBlacklist",
+  "main_contract": "CGPTNFTBlacklist",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CGPTNFTBlacklist\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe1719a94f85754be182bfe9da2d2510e5dca57f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe1719a94f85754be182bfe9da2d2510e5dca57f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb2d64879e9108f49a4f8ecb8f508f19a7e8d5430",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xb2d64879e9108f49a4f8ecb8f508f19a7e8d5430",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

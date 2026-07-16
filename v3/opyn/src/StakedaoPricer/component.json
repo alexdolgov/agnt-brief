@@ -1,0 +1,59 @@
+{
+  "component": "StakedaoPricer",
+  "main_contract": "StakedaoPricer",
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [
+    {
+      "original_path": "/Users/aparnakrishnan/Desktop/Opyn/OpynV2/contracts/pricers/StakedaoPricer.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-16a22584a706-StakedaoPricer.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/aparnakrishnan/Desktop/Opyn/OpynV2/contracts/packages/oz/SafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-4e2c297e3282-SafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/aparnakrishnan/Desktop/Opyn/OpynV2/contracts/interfaces/OracleInterface.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-f482733f873f-OracleInterface.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/aparnakrishnan/Desktop/Opyn/OpynV2/contracts/interfaces/IStakeDao.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-883413b6fc2d-IStakeDao.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/aparnakrishnan/Desktop/Opyn/OpynV2/contracts/interfaces/ICurve.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-c46af09e9926-ICurve.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/aparnakrishnan/Desktop/Opyn/OpynV2/contracts/interfaces/ERC20Interface.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-390881e247d0-ERC20Interface.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StakedaoPricer\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaf751edcbb35beb33c945bd625eb008cd37b35d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405529"
+    }
+  ]
+}

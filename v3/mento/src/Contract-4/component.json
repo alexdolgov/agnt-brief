@@ -19,7 +19,7 @@
     {
       "chain": "chain-42220",
       "chain_id": 42220,
-      "address": "0xa472fbbf4b890a54381977ac392bdf82eec4383a",
+      "address": "0x7b2f7d11eabd576782f77bf2cca46a853410adf6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

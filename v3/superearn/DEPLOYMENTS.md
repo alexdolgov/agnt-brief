@@ -1,15 +1,19 @@
 # superearn — deployments
 
-64 verified deployment(s) across 14 component(s).
+72 verified deployment(s) across 17 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| chain-8217 | `0x3b37db3ac2a58f2daba1a7d66d023937d61fc95b` | TransparentUpgradeableProxy | impl | live | yes |
+| chain-8217 | `0x7876a2faf6aad1f6f8e47ad612d9472a4821dfda` | TransparentUpgradeableProxy | impl | live | yes |
 | ethereum | `0x0095a258bdf491fc98009516dba74f780ee86a4c` | CrosschainAdapter | impl | live | no |
 | ethereum | `0x0277f7e4100ab9ea332af8d695cc85e216e7a2ce` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x04d907db8b48eb87290426f757cd93c33c9efcc4` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x0becde49394d537b240c0272a7c5fefc932691fe` | Vyper_contract-2 | impl | live | no |
 | ethereum | `0x0e79ccf5e150c75baa4250456fb405ecec0c99dc` | LightKeeper | impl | live | no |
 | ethereum | `0x13cee5ac81a78f23be0b3846e9d5b622d62f3785` | MultiMorphoDirectAssetsProvider | impl | live | no |
 | ethereum | `0x1c097dfe13b0f511d987f7ea6077b7fb637ec83c` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x1d68a6cefed44101ed79a830e8a5ad5c0a52d8de` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x1f5b386243c42c7f297f084269b8f85636ef5a61` | StrategyMorphoV1Vault | impl | live | yes |
 | ethereum | `0x20e985976ab18260995660636c5716d2f4fc4adc` | PendleSNUSDAssetsProviderV2 | impl | live | no |
 | ethereum | `0x2572e15f1c0806bb6d8efc0d867caa27bfaedc40` | PendleUSDGAssetsProviderV2 | impl | live | no |
@@ -28,6 +32,7 @@
 | ethereum | `0x534ed562fad41d239d0903571403358c8210e95a` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x57b71db8c039ad34b28c289272efa09b5a870c20` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x609c1701ef5156e3c01bdbf80ce5ed1941dd2387` | PendlePTDiamond | proxy | live | no |
+| ethereum | `0x6172c5b4e42c13b41f82a8b58f08848f9d781bf2` | CrosschainAdapter | impl | live | no |
 | ethereum | `0x63db62e1d4e7f2d80730a01b6f4ccbe536f6d8c0` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x6458dd1433a8aed8f90d78da8cbeed150c124b50` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x6b26bcb70d61689ac3c8948b1402d04123f5b71c` | CrosschainKeeper | impl | live | no |
@@ -36,14 +41,17 @@
 | ethereum | `0x72bd06f8e2c350359952d8791df280faf6be0488` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x7437892a3e2e658038758dd7ca638334c0c2006c` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x76dffac02b1e319e2fac02a1fc06a34d820cd8e8` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x7eec57beb20576cb35c500ae5826e16960aa878b` | Vyper_contract | impl | live | no |
 | ethereum | `0x84e63d6ae32654bcdd5301e01e703959ac7a622c` | StUSDSAssetsProvider | impl | live | no |
 | ethereum | `0x8c82b2fec291a43e41aa87669eaef01f4efaa3b2` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x8dbf7f2fe1d18c1de8853cfe7fa5c03ba7b85328` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x91caae299305a8133f295a59f4f22005d16eb65d` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x947ae1c8eaac50da2bd14e3230361f986a2a59eb` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x9e3e70f4d09bcfe08f456c426eb90f7aa6f70df2` | Vyper_contract | impl | live | no |
 | ethereum | `0xa41432a67a60a79f45ddfd9e242e72b91c8ea19d` | StrategyMorphoV2Vault | impl | live | no |
 | ethereum | `0xa5540e13f476b597d7a8708e7caa2eb05c58e295` | PendlePTDiamond | proxy | live | no |
 | ethereum | `0xa77549facf00a60e7fcdc20faebbe2b2e26ed3ba` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0xa8c0c468f90cc920cea6cb4ab965f7ca7fab53bc` | CooldownVault | impl | live | no |
 | ethereum | `0xb4c91ac6436800d3a3d9e9a5ed0fb3419bc0a61d` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0xc08a98433d66c7a903998fce613c4ae47cf6190c` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0xc090e88bdaa823b7c1dd8d9e24cbacb0f35f2675` | TransparentUpgradeableProxy | proxy | live | yes |
@@ -69,9 +77,7 @@
 | ethereum | `0xf7a6a98de57d0eac06c4e6a05e8da10a6eef0bdf` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0xffbb37093493d49c864e097eeb2b6695f8eda9ac` | TransparentUpgradeableProxy | proxy | live | yes |
 
-## Source unavailable (3)
+## Source unavailable (1)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- chain-8217 `0x3b37db3ac2a58f2daba1a7d66d023937d61fc95b`
 - chain-8217 `0x650a4c074a58b18fbeed48ae766e58a382d9e5f5`
-- chain-8217 `0x7876a2faf6aad1f6f8e47ad612d9472a4821dfda`

@@ -7,15 +7,20 @@ import { SafeTransferLib } from "solmate/utils/SafeTransferLib.sol";
 import "../../ConnectorRegistry.sol";
 import "../../interfaces/ILiquidityConnector.sol";
 
-import "./DelegateModule.sol";
+import "./TransferModule.sol";
 
-contract SwapModule is DelegateModule {
+contract SwapModule is TransferModule {
     error SwapAmountZero();
 
     ConnectorRegistry immutable connectorRegistry;
 
-    constructor(ConnectorRegistry _connectorRegistry) {
-        connectorRegistry = _connectorRegistry;
+    constructor(
+        SickleFactory factory,
+        FeesLib feesLib,
+        address wrappedNativeAddress,
+        ConnectorRegistry connectorRegistry_
+    ) TransferModule(factory, feesLib, wrappedNativeAddress) {
+        connectorRegistry = connectorRegistry_;
     }
 
     function _swap(SwapData memory swapData) internal {
@@ -47,5 +52,24 @@ contract SwapModule is DelegateModule {
 
         // Revoke any approval after swap in case the swap amount was estimated
         SafeTransferLib.safeApprove(tokenIn, swapData.router, 0);
+    }
+
+    function _sickle_swap(SwapData memory swapData)
+        external
+        onlyRegisteredSickle
+    {
+        _swap(swapData);
+    }
+
+    function _sickle_swap_multiple(SwapData[] memory swapData)
+        external
+        onlyRegisteredSickle
+    {
+        for (uint256 i; i < swapData.length;) {
+            _swap(swapData[i]);
+            unchecked {
+                i++;
+            }
+        }
     }
 }

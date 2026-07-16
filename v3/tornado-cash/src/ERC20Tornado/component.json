@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/ERC20Tornado\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,46 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "404452"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x178169b423a011fff22b9e3f3abea13414ddd0f1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404456"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x23773e65ed146a459791799d01336db287f25334",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404458"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x610b717796ad172b316836ac95a2ffad065ceab4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404462"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbb93e510bbcd0b7beb5a853875f9ec60275cf498",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404465"
     }
   ]
 }

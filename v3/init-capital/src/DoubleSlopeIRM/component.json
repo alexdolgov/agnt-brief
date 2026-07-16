@@ -1,0 +1,58 @@
+{
+  "component": "DoubleSlopeIRM",
+  "main_contract": "DoubleSlopeIRM",
+  "source_entry_count": 3,
+  "source_file_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DoubleSlopeIRM\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x0959a65ab35cbf335abadc7793e2e8cac81ae7e4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395312"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x59448551523a4d244f26759e48d83e432ed1fdbf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395323"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x71e0b2e5ddcdd509d1da7029b09d310c108b2cf6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395327"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xf25e438efad5a865a72f9fe39ffd9aec1f18398e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395354"
+    }
+  ]
+}

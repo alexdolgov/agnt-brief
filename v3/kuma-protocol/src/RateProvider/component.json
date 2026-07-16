@@ -1,8 +1,8 @@
 {
   "component": "RateProvider",
   "main_contract": "RateProvider",
-  "source_entry_count": 4,
-  "source_file_count": 4,
+  "source_entry_count": 6,
+  "source_file_count": 6,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x76d8b79fb9afd4da89913458c90b6c09676628e2",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd8689e8740c23d73136744817347fd6ac464e842",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395858"
+      "logic_topography_row_id": "396526"
     }
   ]
 }

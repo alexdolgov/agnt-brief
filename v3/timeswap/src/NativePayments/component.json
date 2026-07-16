@@ -1,0 +1,38 @@
+{
+  "component": "NativePayments",
+  "main_contract": "NativePayments",
+  "source_entry_count": 66,
+  "source_file_count": 66,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/NativePayments\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x09bf6ee2797ac65e6c2df0c642252ae37a30fcc1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404212"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x480263666811753e9b841238e11e8f367e1d2e49",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404296"
+    }
+  ]
+}

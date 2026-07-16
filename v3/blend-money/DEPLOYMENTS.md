@@ -1,6 +1,6 @@
 # blend-money — deployments
 
-62 verified deployment(s) across 25 component(s).
+64 verified deployment(s) across 25 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -27,6 +27,7 @@
 | chain-999 | `0x3d39b3339063e70d03cd2d77822a0f7f61b7f5ae` | SwapAdapter-5 | impl | live | no |
 | chain-999 | `0x44c6dcba90dae9238f5c8842abbf8506c3d3b437` | MorphoVaultController-2 | impl | live | no |
 | chain-999 | `0x7eae59d64fb62723bf8a7d38bf027cd86c48fb8b` | GeneralAdapter1 | impl | live | no |
+| chain-999 | `0x7fba4a74f4518719885ea4abf9882101bec4b45e` | SwapAdapter-3 | impl | inactive | no |
 | chain-999 | `0x920029f02b87c7bb0013c8e17e245209c03dd7bf` | RolesGuard | impl | live | no |
 | chain-999 | `0x9e622e93541da48a15d4dc0cd2d49bff10f3ab6b` | SwapAdapter | impl | live | no |
 | chain-999 | `0x9f4fb60b8bf16b9b46134f803c39ceaa82f96037` | MorphoVaultController | impl | live | no |
@@ -42,8 +43,8 @@
 | ethereum | `0x509ce0134e14d60a3d67070db5af13c8b3260303` | UserWithdrawController | impl | live | no |
 | ethereum | `0x79635ab06bacee109117c8600b9b95d72527ca9a` | XChainVaultAction-2 | impl | live | no |
 | ethereum | `0x7d55a2bd88ed4e886ba8a95871df823db70acddf` | RolesReceiver-2 | impl | live | no |
-| ethereum | `0x8ccedc4f8ea3362e0f85c88a6866976ad3db3406` | SwapAdapter-3 | impl | live | no |
-| ethereum | `0x9095bfff63a69e678163f85cf4ae9e3618f12f53` | SwapAdapter-4 | impl | live | no |
+| ethereum | `0x8ccedc4f8ea3362e0f85c88a6866976ad3db3406` | SwapAdapter-4 | impl | live | no |
+| ethereum | `0x9095bfff63a69e678163f85cf4ae9e3618f12f53` | SwapAdapter-3 | impl | live | no |
 | ethereum | `0x920029f02b87c7bb0013c8e17e245209c03dd7bf` | SwapAdapter-2 | impl | live | yes |
 | ethereum | `0xad7188d0970cbedbdb233f0e5b7367cf149c3449` | MorphoVaultController | impl | live | no |
 | ethereum | `0xb50d1fdf99cbd33f2387cec1611e41770ab74089` | UserWithdrawController | impl | live | no |
@@ -53,6 +54,7 @@
 | polygon | `0x05824db4609ec96c77e99bc61c8fe0acf3269b24` | MorphoVaultController-2 | impl | live | no |
 | polygon | `0x086d13402360efa4c4189695eced9805240ce76a` | UserWithdrawController | impl | live | no |
 | polygon | `0x107b9863c91383cb4b4683a1e8d4304216a98fed` | MorphoVaultController | impl | live | no |
+| polygon | `0x20baf09df508c6e055be01b508478d3f674229c3` | SwapAdapter-3 | impl | inactive | no |
 | polygon | `0x920029f02b87c7bb0013c8e17e245209c03dd7bf` | RolesReceiver | impl | live | no |
 | polygon | `0x9f4fb60b8bf16b9b46134f803c39ceaa82f96037` | SwapAdapter-2 | impl | live | yes |
 | polygon | `0xa12e4f2b4aa4ee29e5a81fc83123822d86c0354e` | SwapAdapter | impl | live | no |

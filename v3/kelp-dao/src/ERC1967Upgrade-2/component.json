@@ -1,0 +1,48 @@
+{
+  "component": "ERC1967Upgrade-2",
+  "main_contract": "ERC1967Upgrade",
+  "source_entry_count": 12,
+  "source_file_count": 12,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Upgrade-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2155ab0b399a71df8c464dfc1b02149b53b2b2c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403297"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7550eaee86f649dc5cba74e92d3e2667b68753fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403310"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb61e0e39b6d4030c36a176f576aabe44bf59dc78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403316"
+    }
+  ]
+}

@@ -6,7 +6,7 @@ import { IUniswapV3Pool } from
 import { INonfungiblePositionManager } from
     "contracts/interfaces/external/uniswap/INonfungiblePositionManager.sol";
 import { NftZapIn, NftZapOut } from "contracts/structs/NftZapStructs.sol";
-import { SwapParams } from "contracts/structs/LiquidityStructs.sol";
+import { SwapParams } from "contracts/structs/SwapStructs.sol";
 import { Farm } from "contracts/structs/FarmStrategyStructs.sol";
 
 struct NftPosition {
@@ -45,6 +45,7 @@ struct NftHarvest {
     SimpleNftHarvest harvest;
     SwapParams[] swaps;
     address[] outputTokens;
+    address[] sweepTokens;
 }
 
 struct NftCompound {

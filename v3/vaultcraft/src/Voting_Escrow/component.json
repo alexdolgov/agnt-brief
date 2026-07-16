@@ -1,0 +1,28 @@
+{
+  "component": "Voting_Escrow",
+  "main_contract": "Voting Escrow",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Voting_Escrow\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0ab4bc35ef33089b9082ca7bb8657d7c4e819a1a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400634"
+    }
+  ]
+}

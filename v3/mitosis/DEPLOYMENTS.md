@@ -1,9 +1,10 @@
 # mitosis — deployments
 
-117 verified deployment(s) across 91 component(s).
+135 verified deployment(s) across 107 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x2416092f143378750bb29b79ed961ab195cceea5` | TransparentUpgradeableProxy-7 | proxy | live | no |
 | arbitrum | `0x35751007a407ca6feffe80b3cb397736d2cf4dbe` | ClonableBeaconProxy | proxy | live | no |
 | arbitrum | `0x3ca8f12d7b376e9ef338d1c432ca1b51dd319009` | TheoDepositVault | impl | live | no |
 | arbitrum | `0x3d15fd46ce9e551498328b1c83071d9509e2c3a0` | MultiBridgeToken | impl | live | no |
@@ -14,16 +15,20 @@
 | arbitrum | `0x8c6653eaada458c84fcf8034aec6c3d7f7bb00cb` | LiFiMigrationHelper-5 | impl | live | no |
 | arbitrum | `0x8cc6d6135c7088fdb3ebfb39b11e7cb2f9853915` | TransparentUpgradeableProxy | proxy | live | no |
 | arbitrum | `0x91c1f49f24180c7adaca53c4ba449a7f06e81a67` | LiFiMigrationHelper-3 | impl | live | no |
+| arbitrum | `0x978fc40b817fc9613c0e73db2114e29a2d032701` | GnosisSafeProxy-5 | proxy | live | no |
 | arbitrum | `0xbb4b50d8d9d9617a62b4bfec8174b645868fc38b` | LiFiMigrationHelper-6 | impl | live | no |
 | arbitrum | `0xddded3b09605ee334e76ac42f6ae2b780edf94d8` | BasicVaultMigration-2 | impl | live | no |
 | arbitrum | `0xedaaf209d6da99cbdb28ad15e605753e78bc320a` | LiFiMigrationHelper | impl | live | no |
 | arbitrum | `0xf95d42f73981533a29764a026c02592b27b98f2f` | LiFiMigrationHelper-2 | impl | live | no |
 | base | `0x2230393edad0299b7e7b59f20aa856cd1bed52e1` | MasterMinter | impl | live | no |
 | base | `0x2ae4be809273bae142c938ae1ff6a3f6853d31af` | ExtensibleVaultWithExtraData | impl | live | no |
+| base | `0x4200000000000000000000000000000000000006` | WETH9 | impl | live | no |
 | base | `0x56cdd5f86b85b5d991c7c59e24b554f2a10d6b3f` | ReclaimQueueWithExtraData-2 | impl | live | no |
 | base | `0x5c8407a434475ea9d6b89d39712b80f25230648d` | ExtensibleVaultWithExtraData | impl | live | no |
+| base | `0x747a3d7a65bd105e058f6ceca1af5a530b809c55` | ERC1967Proxy | proxy | live | no |
 | base | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | AdminUpgradeabilityProxy | proxy | live | no |
-| base | `0x8a7f5457eb8dab4d48abb6bd2bdf9ebebe97a98b` | ERC1967Proxy | proxy | live | no |
+| base | `0x8a7f5457eb8dab4d48abb6bd2bdf9ebebe97a98b` | ERC1967Proxy-2 | proxy | live | no |
+| blast | `0x213e5f064f2c14b2fd587a5978291ed3e1aa3bdb` | SafeProxy | impl | live | no |
 | blast | `0x4ce6f765bad90be684400f3d03f3c3918a761987` | LiFiMigrationHelper-6 | impl | live | no |
 | blast | `0x6d71bdf97261f11bc8ac2de87a3f214d1d8c4d5a` | LiFiMigrationHelper-5 | impl | live | no |
 | blast | `0xad62f48cdb9fb77d917b93160a058178f4a22ea9` | LiFiMigrationHelper-2 | impl | live | no |
@@ -31,7 +36,9 @@
 | blast | `0xedaaf209d6da99cbdb28ad15e605753e78bc320a` | LiFiMigrationHelper-3 | impl | live | no |
 | blast | `0xf7c7b6a7808784bceca20f2c579f25dc22596fc0` | LiFiMigrationHelper | impl | live | no |
 | bsc | `0x03f19ffc3266242df99b0f17ba6a365c17d434be` | ListaCDPStrategyManager | impl | live | no |
+| bsc | `0x213e5f064f2c14b2fd587a5978291ed3e1aa3bdb` | SafeProxy | impl | live | no |
 | bsc | `0x3f74ddb979f508a43a92eb0cc2bc3dc4aaf6407d` | ReclaimQueueWithExtraData | impl | live | no |
+| bsc | `0x55d398326f99059ff775485246999027b3197955` | BEP20USDT | impl | live | no |
 | bsc | `0x6f3ecef8ebf1a9145f6d880d8c464307a0d5a1bd` | ListaCDPStrategyManager-2 | impl | live | no |
 | bsc | `0x8bbf7c542e433bfa6eb25da9e077c2c5873b176d` | ExtensibleVaultTemp | impl | live | no |
 | bsc | `0x8deb2a40646908a67962973e40e0286d483c9533` | MerkleDistributor | impl | live | no |
@@ -49,12 +56,13 @@
 | chain-169 | `0x4a6219e25a41fd4165fbd158d89723a7175ea382` | VaultHub | impl | unknown | no |
 | chain-169 | `0x7671f415c76baa3ed21beb8e16a9c971934e0c41` | CCDMHost | impl | live | no |
 | chain-169 | `0x77b6f99970f488cfa8bd41892900b6ce881c2300` | MantaMintableERC20WithBridgeFlag | impl | live | no |
+| chain-169 | `0x8735c80fb5aeff60d35c9d6e663758af7861981e` | BeaconProxy-7 | impl | live | no |
 | chain-169 | `0x877b9ea7ce0358ef7982b2967ae7e538530a6031` | CCDMClient | impl | unknown | no |
 | chain-169 | `0x9bf486550523faf9902a8be78abb436d287a2c6c` | MantaMintableERC20WithBridgeFlag | impl | unknown | no |
 | chain-169 | `0xa53e005cecd3d7c89a4ae814617cc14828b6527e` | MantaMintableERC20WithBridgeFlag | impl | unknown | no |
 | chain-169 | `0xc8d4bcb4845f4583fd70a3ed22ed6623ef45b986` | MantaMintableERC20WithBridgeFlag | impl | unknown | no |
 | chain-169 | `0xf57104f5bbb90b27f169361b065a4e88d73ad1b3` | BasicVault-2 | impl | live | no |
-| ethereum | `0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| ethereum | `0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0x00aa8017206206dd43a2dd3679e890f9b50496ac` | LEZyVault | impl | live | no |
 | ethereum | `0x0109e9f292516dab3e15efc61811c5e5a7fa5358` | BeaconProxy | proxy | live | no |
 | ethereum | `0x02ff1f648ff443b5d88214341f0ace6ecfb94cf3` | BeaconProxy-2 | proxy | live | no |
@@ -64,7 +72,7 @@
 | ethereum | `0x0d02267b9529ba1ee284e73e107feaf91e23dd89` | EulerSwapEzEthDelegateStrategy | impl | live | no |
 | ethereum | `0x14c5a9007fdc5ee4de1581c892b5fd4623d8cdbf` | BeaconProxy-3 | proxy | live | no |
 | ethereum | `0x298fa9a644db4918af163327c8a585010161cda2` | LEZyVault-2 | impl | live | no |
-| ethereum | `0x2b5b36597be376221a098361ceedaaf426c3fd01` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0x2b5b36597be376221a098361ceedaaf426c3fd01` | TransparentUpgradeableProxy-4 | proxy | live | no |
 | ethereum | `0x35b5ebe66dd7ef372f5c36b25a297863e1b0bd9e` | ezETHValueStrategy | impl | live | no |
 | ethereum | `0x35fa164735182de50811e8e2e824cfb9b6118ac2` | ERC1967Upgrade | proxy | live | no |
 | ethereum | `0x3d48636f36be9cb6da0465010d7a6aa4c0707b61` | OperatorDelegator-2 | impl | live | no |
@@ -75,6 +83,7 @@
 | ethereum | `0x768ba6aab8b0531f66b517b988fe6aafc9892f1b` | OperatorDelegatorLib | impl | live | no |
 | ethereum | `0x77b61eaf914fcffd731c55bd4888b2a9a244dd3b` | EzRVault | impl | live | no |
 | ethereum | `0x7c4564bd54da474314f715b19d7d8c7671760395` | UsccDepositStrategy | impl | live | no |
+| ethereum | `0x8181164cb98cab2f6a52283da6f149cdf2d4cf3c` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0x834fd73e2d5a1937b7eb2d3e57de87b4bb95545a` | LEZyVault-4 | impl | live | no |
 | ethereum | `0x8bddb5e42b419d949bcaba2a1538c9c37867f4f8` | NonUnderlyingTokenTransferStrategy | impl | live | no |
 | ethereum | `0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88` | BoringVault | impl | live | no |
@@ -99,13 +108,17 @@
 | ethereum | `0xfaea8e2890065609a959549d143395e39dd9ab40` | UsccDepositStrategy-2 | impl | live | no |
 | ethereum | `0xfbc3da631779ffd435f82452fbc7382b646266d7` | LEZyVault-6 | impl | live | no |
 | linea | `0x03d020ebf629e771542bd6e02543514deed2c275` | LiFiMigrationHelper-5 | impl | live | no |
+| linea | `0x1bf74c010e6320bab11e2e5a532b5ac15e0b8aa6` | TransparentUpgradeableProxy-8 | proxy | live | no |
+| linea | `0x213e5f064f2c14b2fd587a5978291ed3e1aa3bdb` | SafeProxy-2 | impl | live | no |
 | linea | `0x34a40ecd41236b8cfa54fee973196f54445f5923` | LiFiMigrationHelper-6 | impl | live | no |
 | linea | `0x4e2293f5a7346aa4047edbac49a458bc8f1690ea` | LiFiMigrationHelper | impl | live | no |
 | linea | `0x63282934fba3ff695949ffd51677c8726ecbdb0a` | LiFiMigrationHelper-4 | impl | live | no |
 | linea | `0x6e4b3fd619b06bae8adfc4ae6fd291a5f813f425` | LiFiMigrationHelper-2 | impl | live | no |
 | linea | `0xb73676aa2e44674b1807ad8d073142c0920eb065` | LiFiMigrationHelper-14 | impl | live | no |
 | linea | `0xcf101e13b5181f79094b0726b03e89d1cb95b28c` | TheoDepositVault | impl | live | no |
-| mantle | `0xe6829d9a7ee3040e1276fa75293bde931859e8fa` | TransparentUpgradeableProxy-5 | proxy | live | no |
+| mantle | `0x213e5f064f2c14b2fd587a5978291ed3e1aa3bdb` | GnosisSafeProxy-3 | impl | live | no |
+| mantle | `0xe6829d9a7ee3040e1276fa75293bde931859e8fa` | TransparentUpgradeableProxy-6 | proxy | live | no |
+| mode | `0x04c0599ae5a44757c0af6f9ec3b93da8976c150a` | TransparentUpgradeableProxy-2 | impl | live | no |
 | mode | `0x373c48fe7c70414dfd7f9e7f6d2eedc7b8d4ec6d` | LiFiMigrationHelper-7 | impl | unknown | no |
 | mode | `0x5b42ec2d42832102ce5b30cd4b3208d9d8c8c492` | LiFiMigrationHelper-8 | impl | unknown | no |
 | mode | `0x63282934fba3ff695949ffd51677c8726ecbdb0a` | LiFiMigrationHelper-9 | impl | unknown | no |
@@ -113,11 +126,16 @@
 | mode | `0x6d71bdf97261f11bc8ac2de87a3f214d1d8c4d5a` | LiFiMigrationHelper-11 | impl | unknown | no |
 | mode | `0x843fa321fdf9fafd134fed5fb1d35e17290cfc10` | BasicVaultMigration | impl | unknown | no |
 | mode | `0x9451e33665ce2ac1d23d20d24c69bdb07a7807ff` | LiFiMigrationHelper-12 | impl | unknown | no |
+| mode | `0x978fc40b817fc9613c0e73db2114e29a2d032701` | GnosisSafeProxy-4 | impl | live | no |
+| mode | `0xa30c1544d12309a519a205a486f6af0515dfa442` | BeaconProxy-8 | impl | live | no |
 | mode | `0xe6820dfa17e22ba3d47d48d31633f00b57c65640` | LiFiMigrationHelper-13 | impl | unknown | no |
 | optimism | `0x346e03f8cce9fe01dcb3d0da3e9d00dc2c0e08f0` | OptimismMintableERC20 | impl | live | no |
 | optimism | `0x9357a0e1e0178c9a93a421ed49cc0ae6f415ce42` | LiFiMigrationHelper | impl | live | no |
-| optimism | `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` | TransparentUpgradeableProxy-4 | proxy | live | no |
+| optimism | `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` | TransparentUpgradeableProxy-5 | proxy | live | no |
 | optimism | `0x9451e33665ce2ac1d23d20d24c69bdb07a7807ff` | LiFiMigrationHelper-2 | impl | live | no |
 | optimism | `0xbb4b50d8d9d9617a62b4bfec8174b645868fc38b` | LiFiMigrationHelper-3 | impl | live | no |
+| optimism | `0xce0d519a9ba80bffa7a8f1a48024f9a7f92e7fa6` | GnosisSafeProxy-2 | proxy | live | no |
+| scroll | `0x01f0a31698c4d065659b9bdc21b3610292a1c506` | TransparentUpgradeableProxy-2 | impl | live | no |
 | scroll | `0x15eefe5b297136b8712291b632404b66a8ef4d25` | MultiBridgeToken-2 | impl | live | no |
 | scroll | `0xa0eeb418213f8472cba2c842378e1bb64e28bd28` | BasicVaultMigration | impl | live | no |
+| scroll | `0xb9ca61a6d5fa0c443f3c48ab1fbf0118964308d6` | BeaconProxy-9 | impl | live | no |

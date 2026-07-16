@@ -1,6 +1,6 @@
 # arch — deployments
 
-24 verified deployment(s) across 12 component(s).
+26 verified deployment(s) across 13 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -19,9 +19,11 @@
 | polygon | `0x6ca9c8914a14d63a6700556127d09e7721ff7d3b` | SetToken-3 | impl | live | no |
 | polygon | `0x89c53b02558e4d1c24b9bf3bed1279871187ef0b` | Chamber | impl | live | no |
 | polygon | `0x8f0d5660929ca6ac394c5c41f59497629b1dbc23` | Chamber | impl | live | no |
+| polygon | `0x9a41e03fef7f16f552c6fba37ffa7590fb1ec0c4` | UChildERC20Proxy | proxy | live | no |
 | polygon | `0xab1b1680f6037006e337764547fb82d17606c187` | FxERC20 | impl | live | no |
 | polygon | `0xafb6e8331355fae99c8e8953bb4c6dc5d11e9f3c` | Chamber | impl | live | no |
 | polygon | `0xb485c3048911225de1ad8b446432aed0fbdef211` | UniswapV3Pool-2 | impl | live | no |
+| polygon | `0xbcd2c5c78000504efbc1ce6489dfcac71835406a` | UChildERC20Proxy | proxy | live | no |
 | polygon | `0xd1ce69b4bdd3dda553ea55a2a57c21c65190f3d5` | Chamber | impl | live | no |
 | polygon | `0xde2925d582fc8711a0e93271c12615bdd043ed1c` | Chamber | impl | live | no |
 | polygon | `0xe15a66b7b8e385caa6f69fd0d55984b96d7263cf` | Chamber | impl | live | no |

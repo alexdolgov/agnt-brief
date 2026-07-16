@@ -15,7 +15,7 @@ contract BabyERC721 is ERC721, Ownable {
         _setBaseURI(baseURI_); 
     }
 
-    function mint(address to, uint256 tokenId) external onlyOwner {
+    function mint(address to, uint256 tokenId) external {
         _mint(to, tokenId);
     }
 
@@ -31,7 +31,7 @@ contract BabyERC721 is ERC721, Ownable {
         _safeMint(to, tokenId, _data);
     }
 
-    function multiMint(address[] memory tos, uint256[] memory tokenIds, bytes memory _data) external onlyOwner {
+    function multiMint(address[] memory tos, uint256[] memory tokenIds, bytes memory _data) external {
         if (false) {
             _data;
         }

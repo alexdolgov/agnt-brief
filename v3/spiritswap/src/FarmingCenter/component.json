@@ -1,0 +1,28 @@
+{
+  "component": "FarmingCenter",
+  "main_contract": "FarmingCenter",
+  "source_entry_count": 27,
+  "source_file_count": 27,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FarmingCenter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x967f26d3a2714a55bdd1bd9c6e6ed148527e51d6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399224"
+    }
+  ]
+}

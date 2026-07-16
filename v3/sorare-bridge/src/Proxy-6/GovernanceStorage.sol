@@ -1,5 +1,5 @@
 /*
-  Copyright 2019-2022 StarkWare Industries Ltd.
+  Copyright 2019-2021 StarkWare Industries Ltd.
 
   Licensed under the Apache License, Version 2.0 (the "License").
   You may not use this file except in compliance with the License.
@@ -14,13 +14,19 @@
   and limitations under the License.
 */
 // SPDX-License-Identifier: Apache-2.0.
-pragma solidity ^0.6.12;
-import {GovernanceInfoStruct} from "./Governance.sol";
+pragma solidity ^0.6.11;
 
 /*
   Holds the governance slots for ALL entities, including proxy and the main contract.
 */
 contract GovernanceStorage {
+
+    struct GovernanceInfoStruct {
+        mapping (address => bool) effectiveGovernors;
+        address candidateGovernor;
+        bool initialized;
+    }
+
     // A map from a Governor tag to its own GovernanceInfoStruct.
-    mapping(string => GovernanceInfoStruct) internal governanceInfo; //NOLINT uninitialized-state.
+    mapping (string => GovernanceInfoStruct) internal governanceInfo;
 }

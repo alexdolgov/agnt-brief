@@ -1,6 +1,6 @@
 # bearnfi — deployments
 
-66 verified deployment(s) across 64 component(s).
+67 verified deployment(s) across 65 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -44,6 +44,7 @@
 | bsc | `0x7ad8992437c0b281e0d799bc6e7d66bb2437e720` | bpUNIRewardPool | impl | unknown | no |
 | bsc | `0x7d27509c7c34b850866a80caf8a5a469eefb7d33` | bpJPYRewardPool | impl | unknown | no |
 | bsc | `0x81566135df68ffa48d2b3be6cbcbaff1bed3b173` | bDollarVoteProxy | impl | unknown | no |
+| bsc | `0x81859801b01764d4f0fa5e64729f5a6c3b91435b` | BFI | impl | live | no |
 | bsc | `0x8937f6529fc8430440d0e1417492aef96c161ce3` | CEther | impl | unknown | no |
 | bsc | `0x8a1c6b63ba5358ca58f175dda5ec2dc9570f9dcc` | ProtocolFeeRemover | impl | unknown | no |
 | bsc | `0x8a714c75fffc505d486eed7ef074fd2c1252684b` | BearnEthereumGateway | impl | unknown | no |

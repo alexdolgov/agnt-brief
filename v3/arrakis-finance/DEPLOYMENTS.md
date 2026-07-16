@@ -1,6 +1,6 @@
 # arrakis-finance — deployments
 
-218 verified deployment(s) across 128 component(s).
+220 verified deployment(s) across 130 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -141,6 +141,7 @@
 | ethereum | `0x68c68fdb1d2deaf58295008099e061b1749f94cf` | GUniPool-2 | impl | live | no |
 | ethereum | `0x6dfc8b880d6c1043bebb6eb2346913185ce1b48b` | GUniPool-3 | impl | live | no |
 | ethereum | `0x6f441151b478e0d60588f221f1a35bcc3f7ab981` | Guardian | impl | live | no |
+| ethereum | `0x700a1cda1495c1b34c4962e9742a8a8832aac03a` | Pauser | impl | live | no |
 | ethereum | `0x72aa2c8e6b14f30131081401fa999fc964a66041` | ArrakisPublicVaultRouter | impl | live | no |
 | ethereum | `0x72c321acf29f2b4ccd0cd0d17f42d4e6a2e39ee5` | GUniResolver02 | impl | live | no |
 | ethereum | `0x7679028d2135c2cd622d71c891941359ac8339c7` | ArrakisV2Resolver-3 | impl | live | no |
@@ -171,6 +172,7 @@
 | ethereum | `0xa68d6c59cf3048292dc4ec1f76ed9def8b6f9617` | SovereignPoolFactory | impl | live | no |
 | ethereum | `0xaf0c7de1ea9c654355a10fc3b99a9ffea4bd928c` | GelatoUniV3Pool | impl | live | no |
 | ethereum | `0xaf0f96e8702cb1b8160e43c8c020c608cd7b134d` | ArrakisV2 | impl | live | no |
+| ethereum | `0xaf6f9640092cb1236e5db6e517576355b6c40b7f` | TimelockController | impl | live | no |
 | ethereum | `0xb11bb8ad710579cc5ed16b1c8587808109c1f193` | ArrakisV2Resolver-4 | impl | live | no |
 | ethereum | `0xb542d5cb34ef265fb87c170181127332f7797369` | GUniPool-4 | impl | live | no |
 | ethereum | `0xb54613678c36dd51e75236060060a13d44597d82` | GUniPool-5 | impl | live | no |

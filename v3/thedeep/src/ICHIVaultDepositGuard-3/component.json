@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/ICHIVaultDepositGuard-3\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xec89a8ccb1068a74ff8d10ff69e9f1590a6712b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400244"
+    },
     {
       "chain": "chain-42220",
       "chain_id": 42220,

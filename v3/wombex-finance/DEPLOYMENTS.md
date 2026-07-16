@@ -1,6 +1,6 @@
 # wombex-finance — deployments
 
-49 verified deployment(s) across 45 component(s).
+52 verified deployment(s) across 48 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,6 +8,7 @@
 | arbitrum | `0x24d2f6be2bf9cdf3627f720cf09d4551580c1ec1` | ERC1967Proxy | proxy | live | yes |
 | arbitrum | `0x2740f3ecb90e2afbcff63077ba96412e137fbe09` | MerkleDistributorAdaptor | impl | live | no |
 | arbitrum | `0x5190f06eacefa2c552dc6bd5e763b81c73293293` | ERC1967Upgrade | proxy | live | no |
+| arbitrum | `0x51e073d92b0c226f7b0065909440b18a85769606` | SkimmableAsset | impl | live | no |
 | arbitrum | `0x6521a549834f5e6d253cd2e5f4fbe4048f86cd7b` | PoolV2 | impl | live | no |
 | arbitrum | `0x9a65781bfff8e43e4345d6b1b5157b2657f2735d` | Whitelist | impl | live | no |
 | bsc | `0x0029b7e8e9ed8001c868aa09c74a1ac6269d4183` | OptimizedTransparentUpgradeableProxy-3 | proxy | live | no |
@@ -28,6 +29,7 @@
 | bsc | `0x124ac62416fbe6a404b9c4d2eb020a5307ebea14` | LensPoker | impl | live | no |
 | bsc | `0x13e050d2aa88873d5c11704f4196ed66699a5b55` | TokenFactory | impl | live | yes |
 | bsc | `0x191601af39927ba165bf89b238bfbf615bad205b` | OptimizedTransparentUpgradeableProxy-2 | proxy | live | no |
+| bsc | `0x19609b03c976cca288fbdae5c21d4290e9a4add7` | WombatRouter | impl | live | no |
 | bsc | `0x1ee15673e07105bcf360139fa8cafebdd7754bef` | OptimizedTransparentUpgradeableProxy-2 | proxy | live | no |
 | bsc | `0x272ed55ef19d1f8e3697547ed27f81d0c0b96c1a` | BribesRewardFactory | impl | live | no |
 | bsc | `0x2b187882073dccec42fa9a992c8a54e14b44984f` | DynamicPool | impl | live | no |
@@ -52,4 +54,5 @@
 | bsc | `0xa30243610844ca7f3fe99292e2be2954df64b554` | ExtraRewardsDistributor | impl | live | no |
 | bsc | `0xa65c11dd6184f8942994565952a2741c16e94d38` | WmxPenaltyForwarder | impl | live | no |
 | bsc | `0xa75d9ca2a0a1d547409d82e1b06618ec284a2ced` | Wmx | impl | live | yes |
+| bsc | `0xad6742a35fb341a9cc6ad674738dd8da98b94fb1` | WombatERC20 | impl | live | no |
 | bsc | `0xd4e596c0d5ad06724f4980ff9b73438feb1504ee` | WmxLocker | impl | live | no |

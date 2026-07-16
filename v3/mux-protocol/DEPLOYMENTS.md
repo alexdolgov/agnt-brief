@@ -1,10 +1,11 @@
 # mux-protocol — deployments
 
-58 verified deployment(s) across 50 component(s).
+62 verified deployment(s) across 52 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x0035f6ca0417cd36eb62764bcbbe163e7d296059` | LibOrderBook2 | impl | live | no |
+| arbitrum | `0x029a4a97e892e7270d9b3b90bfef95599bc6bfd6` | GnosisSafeProxy-2 | proxy | live | no |
 | arbitrum | `0x19b9ecd3fa2dc9272cd815ee05f300534b4f1d8b` | PositionUtils | impl | live | no |
 | arbitrum | `0x1b8ac2bdf693457ab25233f2a2865f3e7d2a63ef` | LibOrderBook-3 | impl | live | no |
 | arbitrum | `0x1dc6de1bba19e04c069da8d0a8f367ace33cb1cf` | MuxLpOracle | impl | live | no |
@@ -40,6 +41,7 @@
 | arbitrum | `0xf89adc4e0f3659e9b69aa4f8606176e8fd6b72be` | GmxAdapter | impl | live | no |
 | arbitrum | `0xfe2afaf34b3016dda8cf2df75ded256ddffeb115` | GmxV2Adapter | impl | live | no |
 | avalanche | `0x3d44efa23a531fae02d8daf9ee8daaac61d66475` | LiquidityPoolHop1 | impl | live | no |
+| avalanche | `0x8564c77261094abeee6d60a26d40f8dbaf23fc94` | GnosisSafeProxy | proxy | live | no |
 | bsc | `0x2b9d445dc03fecd49d52da986b5aca38a7e7771d` | NativeUnwrapper | impl | live | yes |
 | bsc | `0x30ab1bafa1488a3deb07e98a969f08b969aa4299` | OrderBook | impl | live | no |
 | bsc | `0x30acc119f8b60c9cb92b8e3c4c7f8830c82f707e` | OrderBook-2 | impl | live | no |
@@ -61,4 +63,6 @@
 | bsc | `0xe837ada634a2eac39e3d8a2999a725dde378a3a4` | LiquidityPoolHop2-5 | impl | live | no |
 | bsc | `0xee3b94e7eabedf97981558644188fb813e94dffa` | LiquidityPoolHop2-6 | impl | live | no |
 | bsc | `0xf483423315e2a14fbeaa97451fa3866fb37a27dd` | LibOrderBook-2 | impl | live | no |
+| bsc | `0xf67d9ec4f3362589e56ab0dbee448eb7a4964204` | GnosisSafeProxy | proxy | live | no |
 | bsc | `0xfb0dcdc30bf892ec981255e7133aecb8ea642b76` | LibLiquidity-2 | impl | live | no |
+| optimism | `0x7c8126ef43c09c22bf0ccdf7426180e6c48068a5` | GnosisSafeProxy | proxy | live | no |

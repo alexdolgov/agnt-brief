@@ -1,6 +1,6 @@
 # origami-finance — deployments
 
-65 verified deployment(s) across 65 component(s).
+66 verified deployment(s) across 66 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -54,6 +54,7 @@
 | ethereum | `0x71578e532f30983af51981deeda0a7bba88da22a` | OrigamiLovTokenMorphoManagerMarketAL | impl | live | no |
 | ethereum | `0x736fdf61d94287ff54266a4027423950c2404cad` | OrigamiScaledOracle | impl | unknown | no |
 | ethereum | `0x759238fb254950d7743f5dab44714c74634e3edd` | OrigamiBundlerPluginKyberSwap | impl | unknown | no |
+| ethereum | `0x781b4c57100738095222bd92d37b07ed034ab696` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0x7b6fe436e0117346b4b014ff4f960e5158a27470` | OrigamiBundlerPluginOhmStaking | impl | unknown | no |
 | ethereum | `0x7daf45b580c456c5b4d7366ebd6aab4f0876aa15` | OpalManager | impl | unknown | no |
 | ethereum | `0x88154f69959e6c2d1a453ab60cec15a8965d06e3` | SwEthToEthExchangeRateAdapter | impl | unknown | no |

@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/EvmErc20"
+forge build --root "src/ERC1967Upgrade"
 ```
 
 ## Build every component

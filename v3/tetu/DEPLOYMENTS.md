@@ -1,6 +1,6 @@
 # tetu — deployments
 
-232 verified deployment(s) across 205 component(s).
+233 verified deployment(s) across 206 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -42,6 +42,7 @@
 | bsc | `0x13ee726d95742d437ebb664bf0d3feff8dbe2a26` | RewardShare | impl | unknown | no |
 | bsc | `0x1616589f2acc9ae962879a29daa62b49346bafd3` | StrategyVenusSupply | impl | unknown | no |
 | bsc | `0x18c792978ccf5f81a2c1dfb44737fc14597d752e` | RewardHandler_Factory_SlowRelease | impl | unknown | no |
+| bsc | `0x1f681b1c4065057e07b95a1e5e504fb2c85f4625` | AnyswapV5ERC20 | impl | live | no |
 | bsc | `0x26a3fc82f50fcaaf9a47faf4eaaa11054c4090b6` | VEPowerOracleSender | impl | unknown | no |
 | bsc | `0x27ed9675b109e725067bdcbb2c5a1fd069e18642` | MonthlyBounty | impl | unknown | no |
 | bsc | `0x2c19b304afc2cd7ff8606ac212418d55d07b0879` | NFTFactory | impl | unknown | no |

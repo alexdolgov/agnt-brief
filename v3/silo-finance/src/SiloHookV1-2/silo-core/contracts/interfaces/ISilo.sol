@@ -1,11 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.5.0;
 
-import {IERC4626, IERC20} from "openzeppelin5/interfaces/IERC4626.sol";
+import {IERC4626, IERC20, IERC20Metadata} from "openzeppelin5/interfaces/IERC4626.sol";
 
 import {IERC3156FlashLender} from "./IERC3156FlashLender.sol";
 import {ISiloConfig} from "./ISiloConfig.sol";
 import {ISiloFactory} from "./ISiloFactory.sol";
+
+import {IHookReceiver} from "./IHookReceiver.sol";
 
 // solhint-disable ordering
 interface ISilo is IERC20, IERC4626, IERC3156FlashLender {
@@ -196,7 +198,6 @@ interface ISilo is IERC20, IERC4626, IERC3156FlashLender {
     error InputZeroShares();
     error ReturnZeroAssets();
     error ReturnZeroShares();
-    error Deprecated();
 
     /// @return siloFactory The associated factory of the silo
     function factory() external view returns (ISiloFactory siloFactory);
@@ -360,10 +361,19 @@ interface ISilo is IERC20, IERC4626, IERC3156FlashLender {
     /// @return assets Amount of assets equivalent to the provided share amount
     function previewBorrowShares(uint256 _shares) external view returns (uint256 assets);
 
-    /// @notice deprecated
+    /// @notice Calculates the maximum amount of assets that can be borrowed by the given address
+    /// @param _borrower Address of the potential borrower
+    /// @return maxAssets Maximum amount of assets that the borrower can borrow, this value is underestimated
+    /// That means, in some cases when you borrow maxAssets, you will be able to borrow again eg. up to 2wei
+    /// Reason for underestimation is to return value that will not cause borrow revert
     function maxBorrowSameAsset(address _borrower) external view returns (uint256 maxAssets);
 
-    /// @notice deprecated
+    /// @notice Allows an address to borrow a specified amount of assets that will be back up with deposit made with the
+    /// same asset
+    /// @param _assets Amount of assets to borrow
+    /// @param _receiver Address receiving the borrowed assets
+    /// @param _borrower Address responsible for the borrowed assets
+    /// @return shares Amount of shares equivalent to the borrowed assets
     function borrowSameAsset(uint256 _assets, address _receiver, address _borrower)
         external returns (uint256 shares);
 
@@ -419,7 +429,8 @@ interface ISilo is IERC20, IERC4626, IERC3156FlashLender {
         external
         returns (uint256 assets);
 
-    /// @notice deprecated
+    /// @notice Switches the collateral silo to this silo
+    /// @dev Revert if the collateral silo is already set
     function switchCollateralToThisSilo() external;
 
     /// @notice Accrues interest for the asset and returns the accrued interest amount

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/ERC1967Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 5,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -33,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb9951b43802dcf3ef5b14567cb17adf367ed1c0f",
+      "is_proxy": true,
+      "implementation_address": "0xe26bdc753ad17619f0f0a3c240932ed6c7374e75",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397188"
     },
     {
       "chain": "ethereum",

@@ -1,8 +1,8 @@
 {
   "component": "Contract",
   "main_contract": "Contract",
-  "source_entry_count": 11,
-  "source_file_count": 11,
+  "source_entry_count": 29,
+  "source_file_count": 29,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,16 +10,27 @@
     "build_command": "forge build --root \"src/Contract\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
+    "https://github.com/lidofinance/audits/blob/main/L2/stETH-on-Optimism-2024-06-MixBytes-Audit-Report.pdf",
     "https://github.com/lidofinance/audits/blob/main/L2/stETH-on-Unichain-2025-02-MixBytes-deployment-verification.pdf"
   ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x755610f5be536ad7afbaa7c10f3e938ea3aa1877",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2734602c0cebba68662552cacd5553370b283e2e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x332ca368dd09ad309c51dc6350730e0bca85cffe",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

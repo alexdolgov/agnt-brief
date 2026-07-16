@@ -34,24 +34,22 @@ contract ERC20Cooldown is IERC20Cooldown, CooldownBase {
 
         uint256 requestsCount = requests.length;
         if (initialFrom != to && requestsCount >= PUBLIC_REQUEST_SLOTS_CAP) {
-            revert ExternalReceiverRequestLimitReached(token, initialFrom, to, amount);
+            revert ExternalReceiverRequestLimitRiched(token, initialFrom, to, amount);
         }
 
-        uint64 unlockAt = uint64(block.timestamp + cooldownSeconds);
+        uint256 unlockAt = block.timestamp + cooldownSeconds;
         if (requestsCount < MAX_ACTIVE_REQUEST_SLOTS) {
             if (requestsCount > 0 && requests[requestsCount - 1].unlockAt == unlockAt) {
                 // is requested within current block
                 TRequest storage last = requests[requestsCount - 1];
                 last.amount += uint192(amount);
             } else {
-                requests.push(TRequest(unlockAt, uint192(amount)));
+                requests.push(TRequest(uint64(unlockAt), uint192(amount)));
             }
         } else {
             TRequest storage last = requests[requestsCount - 1];
             last.amount += uint192(amount);
-            if (last.unlockAt < unlockAt) {
-                last.unlockAt = unlockAt;
-            }
+            last.unlockAt = uint64(unlockAt);
         }
 
         SafeERC20.safeTransferFrom(token, worker, address(this), amount);
@@ -71,7 +69,7 @@ contract ERC20Cooldown is IERC20Cooldown, CooldownBase {
         uint256 len = requests.length;
         for (uint256 i; i < len;) {
             TRequest memory req = requests[i];
-            if (isCooldownActive && req.unlockAt > at) {
+            if (req.unlockAt > at && isCooldownActive) {
                 // still pending
                 unchecked { i++; }
                 continue;
@@ -109,7 +107,7 @@ contract ERC20Cooldown is IERC20Cooldown, CooldownBase {
 
         for (uint256 i; i < l; i++) {
             TRequest memory req = requests[i];
-            if (isCooldownActive && req.unlockAt > at) {
+            if (req.unlockAt > at && isCooldownActive) {
                 pending += req.amount;
                 if (nextUnlockAt == 0 || req.unlockAt < nextUnlockAt) {
                     nextUnlockAt = req.unlockAt;

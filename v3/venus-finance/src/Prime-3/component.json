@@ -1,0 +1,28 @@
+{
+  "component": "Prime-3",
+  "main_contract": "Prime",
+  "source_entry_count": 29,
+  "source_file_count": 29,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Prime-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x62822989f8de6b2eb8d972e1b0e77e8a3286dbbc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404927"
+    }
+  ]
+}

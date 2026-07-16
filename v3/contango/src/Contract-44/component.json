@@ -1,0 +1,30 @@
+{
+  "component": "Contract-44",
+  "main_contract": "Contract",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-44\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/contango-xyz/core-v2/blob/main/networks.json"
+  ],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xfa255f5104f129b78f477e9a6d050a02f31a5d86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

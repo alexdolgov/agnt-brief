@@ -1,15 +1,14 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.17;
+pragma solidity 0.8.17;
 
 import "@openzeppelin/contracts/proxy/Clones.sol";
 
 import "./Sickle.sol";
-import "./base/Admin.sol";
 
 /// @title SickleFactory contract
 /// @author vfat.tools
 /// @notice Factory deploying new Sickle contracts
-contract SickleFactory is Admin {
+contract SickleFactory {
     /// EVENTS ///
 
     /// @notice Emitted when a new Sickle contract is deployed
@@ -17,167 +16,84 @@ contract SickleFactory is Admin {
     /// @param sickle Address of the newly deployed Sickle contract
     event Deploy(address indexed admin, address sickle);
 
-    /// @notice Thrown when the caller is not whitelisted
-    /// @param caller Address of the non-whitelisted caller
-    error CallerNotWhitelisted(address caller); // 0x252c8273
-
-    /// @notice Thrown when the factory is not active and a deploy is attempted
-    error NotActive(); // 0x80cb55e2
-
-    /// @notice Thrown when a Sickle contract is already deployed for a user
-    error SickleAlreadyDeployed(); //0xf6782ef1
-
     /// STORAGE ///
 
-    mapping(address => address) private _sickles;
-    mapping(address => address) private _admins;
-    mapping(address => bytes32) public _referralCodes;
+    /// @notice Returns the address of the Sickle contract associated with a
+    /// specific user param admin Address of the user
+    /// @return Address of the associated Sickle contract (or address(0) if no
+    /// Sickle is associated yet)
+    mapping(address => address) public sickles;
+
+    /// @notice Returns the address of the admin address associated with a
+    /// specific Sickle contract param sickle Address of the Sickle contract
+    /// @return Address of the associated admin address (or address(0) if the
+    /// input address is not a registered Sickle contract)
+    mapping(address => address) public admins;
+
+    /// @notice Keeps track of the referral code associated with each Sickle
+    mapping(address => bytes32) public referralCodes;
 
     /// @notice Address of the SickleRegistry contract
-    SickleRegistry public immutable registry;
+    address public immutable registry;
 
     /// @notice Address of the Sickle implementation contract
     address public immutable implementation;
 
-    /// @notice Address of the previous SickleFactory contract (if applicable)
-    SickleFactory public immutable previousFactory;
-
-    /// @notice Whether the factory is active (can deploy new Sickle contracts)
-    bool public isActive = true;
-
     /// WRITE FUNCTIONS ///
 
-    /// @param admin_ Address of the admin
     /// @param sickleRegistry_ Address of the SickleRegistry contract
-    /// @param sickleImplementation_ Address of the Sickle implementation
-    /// contract
-    /// @param previousFactory_ Address of the previous SickleFactory contract
-    /// if applicable
-    constructor(
-        address admin_,
-        address sickleRegistry_,
-        address sickleImplementation_,
-        address previousFactory_
-    ) Admin(admin_) {
-        registry = SickleRegistry(sickleRegistry_);
+    constructor(address sickleRegistry_, address sickleImplementation_) {
+        registry = sickleRegistry_;
         implementation = sickleImplementation_;
-        previousFactory = SickleFactory(previousFactory_);
-    }
-
-    function setActive(bool active) external onlyAdmin {
-        isActive = active;
-    }
-
-    function _deploy(
-        address admin,
-        bytes32 referralCode
-    ) internal returns (address sickle) {
-        sickle = Clones.cloneDeterministic(
-            implementation, keccak256(abi.encode(admin))
-        );
-        Sickle(payable(sickle)).initialize(admin);
-        _sickles[admin] = sickle;
-        _admins[sickle] = admin;
-        if (referralCode != bytes32(0)) {
-            _referralCodes[sickle] = referralCode;
-        }
-        emit Deploy(admin, sickle);
-    }
-
-    function _getSickle(address admin) internal returns (address sickle) {
-        sickle = _sickles[admin];
-        if (sickle != address(0)) {
-            return sickle;
-        }
-        if (address(previousFactory) != address(0)) {
-            sickle = previousFactory.sickles(admin);
-            if (sickle != address(0)) {
-                _sickles[admin] = sickle;
-                _admins[sickle] = admin;
-                _referralCodes[sickle] = previousFactory.referralCodes(sickle);
-                return sickle;
-            }
-        }
     }
 
     /// @notice Predict the address of a Sickle contract for a specific user
     /// @param admin Address receiving the admin rights of the Sickle contract
-    /// @return sickle Address of the predicted Sickle contract
     function predict(address admin) external view returns (address) {
         bytes32 salt = keccak256(abi.encode(admin));
         return Clones.predictDeterministicAddress(implementation, salt);
-    }
-
-    /// @notice Returns the Sickle contract for a specific user
-    /// @param admin Address that owns the Sickle contract
-    /// @return sickle Address of the Sickle contract
-    function sickles(address admin) external view returns (address sickle) {
-        sickle = _sickles[admin];
-        if (sickle == address(0) && address(previousFactory) != address(0)) {
-            sickle = previousFactory.sickles(admin);
-        }
-    }
-
-    /// @notice Returns the admin for a specific Sickle contract
-    /// @param sickle Address of the Sickle contract
-    /// @return admin Address that owns the Sickle contract
-    function admins(address sickle) external view returns (address admin) {
-        admin = _admins[sickle];
-        if (admin == address(0) && address(previousFactory) != address(0)) {
-            admin = previousFactory.admins(sickle);
-        }
-    }
-
-    /// @notice Returns the referral code for a specific Sickle contract
-    /// @param sickle Address of the Sickle contract
-    /// @return referralCode Referral code for the user
-    function referralCodes(address sickle)
-        external
-        view
-        returns (bytes32 referralCode)
-    {
-        referralCode = _referralCodes[sickle];
-        if (
-            referralCode == bytes32(0) && address(previousFactory) != address(0)
-        ) {
-            referralCode = previousFactory.referralCodes(sickle);
-        }
-    }
-
-    /// @notice Deploys a new Sickle contract for a specific user, or returns
-    /// the existing one if it exists
-    /// @param admin Address receiving the admin rights of the Sickle contract
-    /// @param referralCode Referral code for the user
-    /// @return sickle Address of the deployed Sickle contract
-    function getOrDeploy(
-        address admin,
-        bytes32 referralCode
-    ) external returns (address sickle) {
-        if (!isActive) {
-            revert NotActive();
-        }
-        if (!registry.isWhitelistedCaller(msg.sender)) {
-            revert CallerNotWhitelisted(msg.sender);
-        }
-        if ((sickle = _getSickle(admin)) != address(0)) {
-            return sickle;
-        }
-        return _deploy(admin, referralCode);
     }
 
     /// @notice Deploys a new Sickle contract for a specific user
     /// @dev Sickle contracts are deployed with create2, the address of the
     /// admin is used as a salt, so all the Sickle addresses can be pre-computed
     /// and only 1 Sickle will exist per address
-    /// @param referralCode Referral code for the user
-    /// @return sickle Address of the deployed Sickle contract
-    function deploy(bytes32 referralCode) external returns (address sickle) {
-        if (!isActive) {
-            revert NotActive();
+    /// @param targets Array of targets to call after the deployment
+    /// @param data Array of data to pass with the calls
+    /// @param isDelegatecall True for a delegatecall, false for a call
+    /// @param values Values to pass with the calls
+    /// @return Address of the deployed Sickle contract
+    function deploy(
+        address[] calldata targets,
+        bytes[] calldata data,
+        bool[] calldata isDelegatecall,
+        uint256[] calldata values,
+        bytes32 referralCode
+    ) external payable returns (address) {
+        Sickle sickle = Sickle(
+            payable(
+                Clones.cloneDeterministic(
+                    implementation, keccak256(abi.encode(msg.sender))
+                )
+            )
+        );
+        sickle.initialize(msg.sender);
+
+        sickles[msg.sender] = address(sickle);
+        admins[address(sickle)] = msg.sender;
+
+        if (targets.length > 0) {
+            sickle.multicall{ value: msg.value }(
+                targets, data, isDelegatecall, values
+            );
         }
-        if (_getSickle(msg.sender) != address(0)) {
-            revert SickleAlreadyDeployed();
+
+        if (referralCode != bytes32(0)) {
+            referralCodes[address(sickle)] = referralCode;
         }
-        return _deploy(msg.sender, referralCode);
+
+        emit Deploy(msg.sender, address(sickle));
+
+        return address(sickle);
     }
 }

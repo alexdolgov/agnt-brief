@@ -1,6 +1,6 @@
 # frax-finance — deployments
 
-368 verified deployment(s) across 359 component(s).
+370 verified deployment(s) across 360 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -207,6 +207,7 @@
 | ethereum | `0x5f47010f230ce1568bea53a06ebaf528d05c5c1b` | PoolManagerProxy | impl | unknown | no |
 | ethereum | `0x5fa02554432eb3c8a5397306d0b30e707bf21a6d` | FraxEtherRedemptionQueue | impl | unknown | no |
 | ethereum | `0x5fba69a794f395184b5760daf1134028608e5cd1` | PoolUtilities | impl | unknown | no |
+| ethereum | `0x5fbaa3a3b489199338fbd85f7e3d444dc0504f33` | Context | proxy | live | no |
 | ethereum | `0x603d9bb3a14d4289f622a35e40d05f0e24e05209` | ComboOracle_KyberSwapElasticV2 | impl | unknown | no |
 | ethereum | `0x604cb55e89568b68e125e1c0272a71ff1faab46b` | GovernorAlpha | impl | unknown | no |
 | ethereum | `0x6109dd117aa5486605fc85e040ab00163a75c662` | RegistrarMigration | impl | unknown | no |
@@ -250,6 +251,7 @@
 | ethereum | `0x843df6229c1b8fc41c1d74bcddc7e17788ddb0a2` | RariFuseLendingAMO | impl | unknown | no |
 | ethereum | `0x853d955acef822db058eb8505911ed77f175b99e` | FRAXShares | impl | live | yes |
 | ethereum | `0x858847c21b075e45727fcb0b544bd843cd750361` | TreasuryManager | impl | unknown | no |
+| ethereum | `0x860cc723935fc9a15ff8b1a94237a711dfef7857` | Context | proxy | live | no |
 | ethereum | `0x869d1b8610c038a6c4f37bd757135d4c29ae8917` | TimeToken | impl | unknown | no |
 | ethereum | `0x86eee0422322710866af89e9cae3f7383d55310a` | PAXImplementationV2 | impl | unknown | no |
 | ethereum | `0x884da067b66677e72530df91eabb6e3ce69c2be4` | StashFactoryV2 | impl | unknown | no |

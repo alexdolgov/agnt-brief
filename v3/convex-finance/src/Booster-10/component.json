@@ -1,0 +1,64 @@
+{
+  "component": "Booster-10",
+  "main_contract": "Booster",
+  "source_entry_count": 11,
+  "source_file_count": 11,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/Booster.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-fb737d05c4b4-Booster.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IStaker.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-ae702754325a-IStaker.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IRewards.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-842b0f022cf2-IRewards.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IRewardManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-47b70b81647f-IRewardManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IRewardFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-36b6c1129d77-IRewardFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IPoolFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-f3bde7b62eae-IPoolFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IFeeDistro.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-37afbf436410-IFeeDistro.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Booster-10\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x42e8786506d369ca54c474b64029558f991c795b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

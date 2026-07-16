@@ -1,0 +1,48 @@
+{
+  "component": "WavesMintAdapter",
+  "main_contract": "WavesMintAdapter",
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WavesMintAdapter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd7fee535f38055f71d1958a1a4219eafccac1d42",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397706"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa38ce8f596c81333692a739162ae7eda236800ed",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397720"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x882260324ad5a87bf5007904b4a8ef87023c856a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397735"
+    }
+  ]
+}

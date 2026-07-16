@@ -1,0 +1,28 @@
+{
+  "component": "Booster-7",
+  "main_contract": "Booster",
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Booster-7\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaffe966b27ba3e4ebb8a0ec124c7b7019cc762f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393102"
+    }
+  ]
+}

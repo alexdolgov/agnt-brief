@@ -1,0 +1,58 @@
+{
+  "component": "Contract",
+  "main_contract": "Contract",
+  "source_entry_count": 94,
+  "source_file_count": 94,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x6a3615489a414b3d6361fb388a714c89c5dd5625",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xb7742681bd0f7c5fd72e97ef74ad06e24aaf1716",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x1ed401dcb7679462ecf1d0920dd366587def359d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xd3a5e49fafc2efef5350647afc940ee8685f8c62",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "component": "Contract-5",
   "main_contract": "Contract",
-  "source_entry_count": 3,
-  "source_file_count": 3,
+  "source_entry_count": 8,
+  "source_file_count": 8,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,16 +10,36 @@
     "build_command": "forge build --root \"src/Contract-5\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://github.com/contango-xyz/core-v2/blob/main/networks.json"
   ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x3d9819210a31b4961b30ef54be2aed79b9c9cd3b",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xaeb62e6f27bc103702e7bc879ae98bcea56f027e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb8b1f590272b541b263a49b28bf52f8774b0e6c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbd1ba78a3976cab420a9203e6ef14d18c2b2e031",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

@@ -17,12 +17,12 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0xe58aa5826eb6e0568982018c0db833adbff925df",
-      "is_proxy": false,
-      "implementation_address": null,
+      "address": "0xb7ed4a5af620b52022fb26035c565277035d4fd7",
+      "is_proxy": true,
+      "implementation_address": "0x15ab6164fd1acfa58b751ac5aa68f136a5a9bcaf",
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397815"
     }
   ]
 }

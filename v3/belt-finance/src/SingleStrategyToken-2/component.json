@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/SingleStrategyToken-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 13,
+  "deployment_count": 15,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x090f22ca2e3429f1f4dd38052cb451653e98f0c2",
+      "is_proxy": true,
+      "implementation_address": "0x9e298c03d65817b82df10744da564e64e4fa7e14",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405239"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,
@@ -103,6 +113,16 @@
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xba2f7cb88d818bba7e932310f49d754eb29eb2ef",
+      "is_proxy": true,
+      "implementation_address": "0x20bab2188b34530a7ee9cb9c9cdbfea28510ab2d",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405255"
     },
     {
       "chain": "bsc",

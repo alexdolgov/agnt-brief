@@ -267,7 +267,6 @@ abstract contract Strategy is Ownable, ReentrancyGuard, Pausable {
     uint256 public buyBackRate = 800;
     uint256 public constant buyBackRateMax = 10000;
     uint256 public constant buyBackRateUL = 800;
-    // bsc
     address public constant buyBackAddress =
     0x000000000000000000000000000000000000dEaD;
 
@@ -316,9 +315,6 @@ abstract contract StrategyEllipsisStorage is Strategy {
 
     address[] public EPSToWantPath;
     address[] public EPSToBELTPath;
-
-    uint256 public buyBackPoolRate;
-    address public buyBackPoolAddress;
 }
 
 // File: contracts/earnV2/defi/ellipsis.sol
@@ -350,15 +346,11 @@ interface StableSwap {
     function add_liquidity(uint256[3] memory amounts, uint256 min_mint_amount) external;
     
     // [BUSD, USDC, USDT]
-    function remove_liquidity(uint256 _amount, uint256[3] memory min_amount) external;
-    
-    function balances(uint256 i) external view returns (uint256);
+    // function remove_liquidity(uint256 _amount, uint256[3] memory min_amount) external;
 
     function remove_liquidity_one_coin(uint256 _token_amount, int128 i, uint256 min_amount) external;
 
     function calc_token_amount(uint256[3] memory amounts, bool deposit) external view returns (uint256);
-    
-    function get_virtual_price() external view returns(uint256);
 }
 
 interface LpTokenStaker {
@@ -1003,15 +995,6 @@ contract StrategyEllipsisImpl is StrategyEllipsisStorage {
     using Address for address;
     using SafeMath for uint256;
 
-    event Deposit(address wantAddress, uint256 amountReceived, uint256 amountDeposited);
-    event Withdraw(address wantAddress, uint256 amountRequested, uint256 amountWithdrawn);
-    event Buyback(address earnedAddress, uint256 earnedAmount, uint256 buybackAmount, address buybackTokenAddress, uint256 burnAmount, address buybackAddress);
-
-    modifier onlyEOA() {
-        require(tx.origin == msg.sender);
-        _;
-    }
-
     function deposit(uint256 _wantAmt)
         public
         onlyOwner
@@ -1028,22 +1011,16 @@ contract StrategyEllipsisImpl is StrategyEllipsisStorage {
         uint256 before = eps3ToWant();
         _deposit(_wantAmt);
         uint256 diff = eps3ToWant().sub(before);
-        if (diff > _wantAmt) {
-            diff = _wantAmt;
-        }
-
-        emit Deposit(wantAddress, _wantAmt, diff);
-
         return diff;
     }
 
     function _deposit(uint256 _wantAmt) internal {
         uint256[3] memory depositArr;
         depositArr[getTokenIndex(wantAddress)] = _wantAmt;
-        require(isPoolSafe(), "StrategyEllipsis: pool unsafe");
+        require(isPoolSafe(), 'pool unsafe');
         StableSwap(ellipsisSwapAddress).add_liquidity(depositArr, 0);
         LpTokenStaker(ellipsisStakeAddress).deposit(poolId, IERC20(eps3Address).balanceOf(address(this)));
-        require(isPoolSafe(), "StrategyEllipsis: pool unsafe");
+        require(isPoolSafe(), 'pool unsafe');
     }
 
     function _depositAdditional(uint256 amount1, uint256 amount2, uint256 amount3) internal {
@@ -1069,15 +1046,12 @@ contract StrategyEllipsisImpl is StrategyEllipsisStorage {
         _withdraw(_wantAmt);
         wantBal = IERC20(wantAddress).balanceOf(address(this)).sub(wantBal);
         IERC20(wantAddress).safeTransfer(owner(), wantBal);
-
-        emit Withdraw(wantAddress, _wantAmt, wantBal);
-
         return wantBal;
     }
 
-    function _withdraw(uint256 _wantAmt) internal {
-        require(isPoolSafe(), "StrategyEllipsis: pool unsafe");
-        _wantAmt = _wantAmt.mul(
+    function _withdraw(uint256 _wantAmt) internal {        
+        require(isPoolSafe(), 'pool unsafe');
+    	_wantAmt = _wantAmt.mul(
             withdrawFeeDenom.sub(withdrawFeeNumer)
         ).div(withdrawFeeDenom);
 
@@ -1090,10 +1064,10 @@ contract StrategyEllipsisImpl is StrategyEllipsisStorage {
             getTokenIndexInt(wantAddress),
             0
         );
-        require(isPoolSafe(), "StrategyEllipsis: pool unsafe");
+        require(isPoolSafe(), 'pool unsafe');
     }
 
-    function earn() external whenNotPaused onlyEOA {
+    function earn() external whenNotPaused {
         uint256 earnedAmt;
         LpTokenStaker(ellipsisStakeAddress).withdraw(poolId, 0);
         FeeDistribution(ellipsisDistibAddress).exit();
@@ -1126,11 +1100,11 @@ contract StrategyEllipsisImpl is StrategyEllipsisStorage {
     }
 
     function buyBack(uint256 _earnedAmt) internal returns (uint256) {
-        if (buyBackRate == 0 && buyBackPoolRate == 0) {
+        if (buyBackRate <= 0) {
             return _earnedAmt;
         }
 
-        uint256 buyBackAmt = _earnedAmt.mul(buyBackRate.add(buyBackPoolRate)).div(buyBackRateMax);
+        uint256 buyBackAmt = _earnedAmt.mul(buyBackRate).div(buyBackRateMax);
 
         IPancakeRouter02(pancakeRouterAddress).swapExactTokensForTokens(
             buyBackAmt,
@@ -1140,25 +1114,17 @@ contract StrategyEllipsisImpl is StrategyEllipsisStorage {
             now + 600
         );
 
-        uint256 burnAmt = IERC20(BELTAddress).balanceOf(address(this))
-            .mul(buyBackPoolRate)
-            .div(buyBackPoolRate.add(buyBackRate));
-        if (burnAmt != 0) {
-            IERC20(BELTAddress).safeTransfer(buyBackPoolAddress, burnAmt);
-            emit Buyback(epsAddress, _earnedAmt, buyBackAmt, BELTAddress, burnAmt, buyBackPoolAddress);
-        }
-
-        burnAmt = IERC20(BELTAddress).balanceOf(address(this));
-        if (burnAmt != 0) {
-            IERC20(BELTAddress).safeTransfer(buyBackAddress, burnAmt);
-            emit Buyback(epsAddress, _earnedAmt, buyBackAmt, BELTAddress, burnAmt, buyBackAddress);
-        }
+        uint256 burnAmt = IERC20(BELTAddress).balanceOf(address(this));
+        IERC20(BELTAddress).safeTransfer(buyBackAddress, burnAmt);
 
         return _earnedAmt.sub(buyBackAmt);
     }
 
-    function _pause() override internal {
-        super._pause();
+    function pause() public {
+        require(msg.sender == govAddress, "Not authorised");
+
+        _pause();
+
         IERC20(epsAddress).safeApprove(pancakeRouterAddress, uint256(0));
         IERC20(wantAddress).safeApprove(pancakeRouterAddress, uint256(0));
         IERC20(busdAddress).safeApprove(ellipsisSwapAddress, uint256(0));
@@ -1167,24 +1133,16 @@ contract StrategyEllipsisImpl is StrategyEllipsisStorage {
         IERC20(eps3Address).safeApprove(ellipsisStakeAddress, uint256(0));
     }
 
-    function pause() public {
+    function unpause() external {
         require(msg.sender == govAddress, "Not authorised");
-        _pause();
-    }
+        _unpause();
 
-    function _unpause() override internal {
-        super._unpause();
         IERC20(epsAddress).safeApprove(pancakeRouterAddress, uint256(-1));
         IERC20(wantAddress).safeApprove(pancakeRouterAddress, uint256(-1));
         IERC20(busdAddress).safeApprove(ellipsisSwapAddress, uint256(-1));
         IERC20(usdcAddress).safeApprove(ellipsisSwapAddress, uint256(-1));
         IERC20(usdtAddress).safeApprove(ellipsisSwapAddress, uint256(-1));
         IERC20(eps3Address).safeApprove(ellipsisStakeAddress, uint256(-1));
-    }
-
-    function unpause() external {
-        require(msg.sender == govAddress, "Not authorised");
-        _unpause();
     }
 
     
@@ -1209,28 +1167,36 @@ contract StrategyEllipsisImpl is StrategyEllipsisStorage {
     }
 
     function eps3ToWant() public view returns (uint256) {
-        require(isPoolSafe(), "StrategyEllipsis: pool unsafe");
+        uint256 busdBal = IERC20(busdAddress).balanceOf(ellipsisSwapAddress);
+        uint256 usdcBal = IERC20(usdcAddress).balanceOf(ellipsisSwapAddress);
+        uint256 usdtBal = IERC20(usdtAddress).balanceOf(ellipsisSwapAddress);
         (uint256 curEps3Bal, )= LpTokenStaker(ellipsisStakeAddress).userInfo(poolId, address(this));
-        return curEps3Bal.mul(StableSwap(ellipsisSwapAddress).get_virtual_price()).div(1e18);
+        uint256 totEps3Bal = IERC20(eps3Address).totalSupply();
+        return busdBal.mul(curEps3Bal).div(totEps3Bal)
+            .add(
+                usdcBal.mul(curEps3Bal).div(totEps3Bal)
+            )
+            .add(
+                usdtBal.mul(curEps3Bal).div(totEps3Bal)
+            );
     }
 
     function isPoolSafe() public view returns (bool) {
-        // CHANGES: get balances of token in stableswap except admin_fee
-        uint256 busdBal = StableSwap(ellipsisSwapAddress).balances(getTokenIndex(busdAddress));
-        uint256 usdcBal = StableSwap(ellipsisSwapAddress).balances(getTokenIndex(usdcAddress));
-        uint256 usdtBal = StableSwap(ellipsisSwapAddress).balances(getTokenIndex(usdtAddress)); 
+        uint256 busdBal = IERC20(busdAddress).balanceOf(ellipsisSwapAddress);
+        uint256 usdcBal = IERC20(usdcAddress).balanceOf(ellipsisSwapAddress);
+        uint256 usdtBal = IERC20(usdtAddress).balanceOf(ellipsisSwapAddress);        
         uint256 most = busdBal > usdcBal ?
                 (busdBal > usdtBal ? busdBal : usdtBal) : 
                 (usdcBal > usdtBal ? usdcBal : usdtBal);
         uint256 least = busdBal < usdcBal ?
                 (busdBal < usdtBal ? busdBal : usdtBal) : 
                 (usdcBal < usdtBal ? usdcBal : usdtBal);
-
         return most <= least.mul(safetyCoeffNumer).div(safetyCoeffDenom);
     }
 
     function wantLockedTotal() public view returns (uint256) {
         return wantLockedInHere().add(
+            // balanceSnapshot
             eps3ToWant()
         );
     }
@@ -1240,12 +1206,10 @@ contract StrategyEllipsisImpl is StrategyEllipsisStorage {
         return wantBal;
     }
 
-    function setbuyBackRate(uint256 _buyBackRate, uint256 _buyBackPoolRate) public {
+    function setbuyBackRate(uint256 _buyBackRate) public {
         require(msg.sender == govAddress, "Not authorised");
         require(_buyBackRate <= buyBackRateUL, "too high");
-        require(_buyBackPoolRate <= buyBackRateUL, "too high");
         buyBackRate = _buyBackRate;
-        buyBackPoolRate = _buyBackPoolRate;
     }
 
     function setSafetyCoeff(uint256 _safetyNumer, uint256 _safetyDenom) public {
@@ -1290,23 +1254,9 @@ contract StrategyEllipsisImpl is StrategyEllipsisStorage {
         }
     }
 
-    function setEPSToWantPath(address[] memory newPath) public {
-        require(msg.sender == govAddress, "Not authorised");
-        EPSToWantPath = newPath;
-    }
-
-    function updateStrategy() public {
-    }
-
-    function setbuyBackPoolAddress(address _buyBackPoolAddress) external {
-        require(msg.sender == govAddress, "Not authorised");
-        require(_buyBackPoolAddress != address(0));
-        require(_buyBackPoolAddress != buyBackPoolAddress);
-        if (buyBackPoolAddress != address(0)) {
-            IERC20(BELTAddress).safeApprove(buyBackPoolAddress, 0);
-        }
-        IERC20(BELTAddress).safeApprove(_buyBackPoolAddress, uint256(-1));
-        buyBackPoolAddress = _buyBackPoolAddress;
+    function setPancakeRouterV2() public {
+        require(msg.sender == govAddress, "!gov");
+        pancakeRouterAddress = 0x10ED43C718714eb63d5aA57B78B54704E256024E;
     }
 
     receive() external payable {}

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/ERC1967Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://0xmacro.com/library/audits/superReturn-1",
@@ -18,6 +18,16 @@
     "https://github.com/SuperReturn/SuperUSD/blob/main/audit/spearbit-boring-vault-arctic-0.pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x139450c2dcef827c9a2a0bb1cb5506260940c9fd",
+      "is_proxy": true,
+      "implementation_address": "0xee4f83e83b699e91960fa237cc3188b71cc5713f",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404134"
+    },
     {
       "chain": "ethereum",
       "chain_id": 1,

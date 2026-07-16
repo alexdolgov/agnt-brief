@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Controller\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,16 @@
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf056d4f903e53432873bfd0da32f9d6fcb92825c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394677"
     }
   ]
 }

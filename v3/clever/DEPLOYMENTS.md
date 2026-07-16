@@ -1,6 +1,6 @@
 # clever — deployments
 
-19 verified deployment(s) across 15 component(s).
+21 verified deployment(s) across 17 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -10,8 +10,10 @@
 | ethereum | `0x43e54c2e7b3e294de3a155785f52ab49d87b9922` | TransparentUpgradeableProxy-4 | proxy | live | no |
 | ethereum | `0x592e353c5b97356e99eaf6a72b971ba1c9695593` | Vesting | impl | live | no |
 | ethereum | `0x69671c808c8f1c1490a4c9e0145884dfb5631378` | WeightedPool | impl | live | no |
+| ethereum | `0x6c280db098db673d30d5b34ec04b6387185d3620` | Vyper_contract | impl | live | no |
 | ethereum | `0x8341889905bdef85b87cb7644a93f7a482f28742` | Vesting | impl | live | no |
 | ethereum | `0x84c82d43f1cc64730849f3e389fe3f6d776f7a4e` | Vesting | impl | live | no |
+| ethereum | `0x86e917ad6cb44f9e6c8d9fa012acf0d0cfcf114f` | Vyper_contract-2 | impl | live | no |
 | ethereum | `0x883fd355debf417f82aa9a3e2936971487f7df1f` | CompounderGateway | impl | live | no |
 | ethereum | `0x8fc7906fc6047679dad53c0c3b40e135486421e9` | VeFeeGateway | impl | live | no |
 | ethereum | `0x96c68d861ada016ed98c30c810879f9df7c64154` | TransparentUpgradeableProxy-5 | proxy | live | no |

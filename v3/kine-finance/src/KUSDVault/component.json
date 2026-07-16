@@ -1,0 +1,38 @@
+{
+  "component": "KUSDVault",
+  "main_contract": "KUSDVault",
+  "source_entry_count": 5,
+  "source_file_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/KUSDVault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd61867501b821befd5e4270a91836f8f7424b847",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395711"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaf2617aa6fd98581bb8cb099a16af74510b6555f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395725"
+    }
+  ]
+}

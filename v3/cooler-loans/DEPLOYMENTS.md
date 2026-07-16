@@ -1,9 +1,10 @@
 # cooler-loans — deployments
 
-159 verified deployment(s) across 158 component(s).
+165 verified deployment(s) across 163 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x012bbf0481b97170577745d2167ee14f63e2ad4c` | GnosisSafeProxyFactory | proxy | live | no |
 | arbitrum | `0x20b3834091f038ce04d8686fac99ca44a0fb285c` | CrossChainBridge | impl | live | no |
 | arbitrum | `0x3129662808bec728a27ab6a6b9afd3cbaca8a43c` | ERC1155GatewayFactory | impl | unknown | no |
 | arbitrum | `0x69168c08acf66f002fd02e1b169f38c022c93b70` | RolesAdmin | impl | live | no |
@@ -23,6 +24,7 @@
 | avalanche | `0xfb288d60d3b66f9c3e231a9a39ed3f158a4269aa` | XrpSwapAsset | impl | unknown | no |
 | chain-80094 | `0x060cb087a9730e13aa191f31a6d86bff8dfcdcc0` | OlympusAuthority | impl | live | no |
 | chain-80094 | `0x22ae99d07584a2ae1af748de573c83f1b9cdb4c0` | OlympusRoles | impl | live | no |
+| chain-80094 | `0x91494d1bc2286343d51c55e46ae80c9356d099b5` | GnosisSafeProxyFactory | impl | live | no |
 | ethereum | `0x007f7735baf391e207e3aa380bb53c4bd9a5fed6` | BondFixedTermTeller | impl | live | no |
 | ethereum | `0x02331a4c97a4841084df54d7c0ec04dd3f1a9f1c` | OlympusDepositPositionManager | impl | live | no |
 | ethereum | `0x0316508a1b5abf1cae42912dc2c8b9774b682ffc` | OnsenAllocator | impl | unknown | no |
@@ -36,6 +38,7 @@
 | ethereum | `0x0822f3c03dcc24d200aff33493dc08d0e1f274a2` | OlympusStaking | impl | unknown | no |
 | ethereum | `0x09236b98144602df2d0d675183595c6442cec2d2` | TreasuryConfig | impl | unknown | no |
 | ethereum | `0x0941233c964e7d7efeb05d253176e5e634ceffcd` | Kernel | proxy | live | no |
+| ethereum | `0x0ab87046fbb341d058f17cbc4c1133f25a20a52f` | gOHM | impl | live | no |
 | ethereum | `0x0d1c9b9bfda66226e4ff3b6bf8f565baeb26254f` | NullValueCalculator | impl | unknown | no |
 | ethereum | `0x0d33c811d0fcc711bcb388dfb3a152de445be66f` | AaveAllocatorV2 | impl | live | no |
 | ethereum | `0x0e1177e47151be72e5992e0975000e73ab5fd9d4` | AaveAllocator | impl | live | no |
@@ -143,6 +146,7 @@
 | ethereum | `0xc8431feb345b46c30a4576c1b5faf080fdc54e2f` | BtrflyAllocator | impl | live | no |
 | ethereum | `0xc8b00cbc78fd9d43e5cddd86099b9394c4cef95d` | SimplePriceFeedStrategy | impl | unknown | no |
 | ethereum | `0xca6cd4f0a0033f8c20cf68d6df277e7001a386f9` | ReserveWrapper | impl | unknown | no |
+| ethereum | `0xca76543cf381ebbb277be79574059e32108e3e65` | wOHM | impl | live | no |
 | ethereum | `0xcb4e21eb404d80f3e1db781aad9ad6a1217fbbf2` | DepositManager | impl | live | no |
 | ethereum | `0xce6568338708400d03f430d29f2eb40a33a3f4c4` | OlympusDistributorContract | impl | unknown | no |
 | ethereum | `0xd3204ae00d6599ba6e182c6d640a79d76cdaad74` | OlympusGovDelegation | impl | live | yes |
@@ -150,6 +154,7 @@
 | ethereum | `0xd98b5b2e4d5d6cd554115de19efb7a9084beddd1` | ReceiptTokenManager | impl | live | no |
 | ethereum | `0xdb591ea2e5db886da872654d58f6cc584b68e7cc` | MonoCooler | impl | live | yes |
 | ethereum | `0xdb682fc2af3a1791081ac4efb60176c0a0c8ed20` | MockTreasury | impl | unknown | no |
+| ethereum | `0xde7b85f52577b113181921a7aa8fc0c22e309475` | AdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0xdfc95aaf0a107daae2b350458ded4b7906e7f728` | OlympusCvxHolder | impl | live | no |
 | ethereum | `0xe045bd0a0d85e980aa152064c06eae6b6ae358d2` | CoolerV2Migrator | impl | live | yes |
 | ethereum | `0xe1e83825613de12e8f0502da939523558f0b819e` | RedeemHelper | impl | unknown | no |
@@ -161,5 +166,6 @@
 | ethereum | `0xf577c77ee3578c7f216327f41b5d7221ead2b2a3` | BondManager | impl | live | no |
 | ethereum | `0xfbf6383dc3f6010d403ecdf12ddc1311701d143d` | CCIPCrossChainBridge | impl | live | no |
 | optimism | `0x060cb087a9730e13aa191f31a6d86bff8dfcdcc0` | OlympusERC20Token | impl | live | no |
+| optimism | `0x0b5740c6b4a97f90ef2f0220651cca420b868ffb` | SynapseERC20 | impl | live | no |
 | optimism | `0x18878df23e2a36f81e820e4b47b4a40576d3159c` | Kernel-2 | impl | live | no |
 | optimism | `0x623164a9ee2556d524b08f34f1d2389d7b4e1a1c` | OlympusMinter | impl | live | yes |

@@ -1,10 +1,11 @@
 # pantherswap — deployments
 
-8 verified deployment(s) across 8 component(s).
+9 verified deployment(s) across 9 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | bsc | `0x058451c62b96c594ad984370eda8b6fd7197bbd4` | MasterChef | impl | unknown | no |
+| bsc | `0x1f546ad641b56b86fd9dceac473d1c7a357276b7` | PantherToken | impl | live | no |
 | bsc | `0x24f7c33ae5f77e2a9eceed7ea858b4ca2fa1b7ec` | PantherRouter | impl | unknown | no |
 | bsc | `0x3950124730a3b013e402dd2bf49e8665cdfe68a9` | IPOByProxy | proxy | unknown | no |
 | bsc | `0x670f55c6284c629c23bae99f585e3f17e8b9fc31` | PantherFactory | impl | unknown | no |

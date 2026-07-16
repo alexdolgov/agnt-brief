@@ -1,9 +1,9 @@
-// SPDX-License-Identifier: BUSL
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.11;
 
 /**
- * @title Solidly+ governance killable proxy
- * @author Solidly+
+ * @title Solidly governance killable proxy
+ * @author Solidly Labs
  * @notice EIP-1967 upgradeable proxy with the ability to kill governance and render the contract immutable
  */
 contract SolidlyProxy {

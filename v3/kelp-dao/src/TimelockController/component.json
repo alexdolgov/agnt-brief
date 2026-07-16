@@ -1,0 +1,38 @@
+{
+  "component": "TimelockController",
+  "main_contract": "TimelockController",
+  "source_entry_count": 11,
+  "source_file_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TimelockController\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x10e5631320a6e7898f1b18aeade46acc81deb869",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403295"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1fda02cf28f28a763d996ad5ee37b9f1b608e674",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403296"
+    }
+  ]
+}

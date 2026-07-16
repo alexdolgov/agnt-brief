@@ -1,0 +1,28 @@
+{
+  "component": "TimeswapV2PoolFactory-2",
+  "main_contract": "TimeswapV2PoolFactory",
+  "source_entry_count": 39,
+  "source_file_count": 39,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TimeswapV2PoolFactory-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x6c9e7ede169168fb573cc95bf3558cfe936338f6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404372"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 import {IArkConfigProviderErrors} from "../errors/IArkConfigProviderErrors.sol";
 import {IArkAccessManaged} from "./IArkAccessManaged.sol";
@@ -7,12 +7,13 @@ import {IArkAccessManaged} from "./IArkAccessManaged.sol";
 import {IArkConfigProviderEvents} from "../events/IArkConfigProviderEvents.sol";
 import {ArkConfig} from "../types/ArkTypes.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import {Percentage} from "@summerfi/percentage-solidity/contracts/Percentage.sol";
+
 /**
  * @title IArkConfigProvider
  * @notice Interface for configuration of Ark contracts
  * @dev Inherits from IArkAccessManaged for access control and IArkConfigProviderEvents for event definitions
  */
-
 interface IArkConfigProvider is
     IArkAccessManaged,
     IArkConfigProviderErrors,
@@ -30,10 +31,22 @@ interface IArkConfigProvider is
     function name() external view returns (string memory);
 
     /**
+     * @notice Returns the details of the Ark
+     * @return The details of the Ark as a string
+     */
+    function details() external view returns (string memory);
+
+    /**
      * @notice Returns the deposit cap for this Ark
      * @return The maximum amount of tokens that can be deposited into the Ark
      */
     function depositCap() external view returns (uint256);
+
+    /**
+     * @notice Returns the maximum percentage of TVL that can be deposited into the Ark
+     * @return The maximum percentage of TVL that can be deposited into the Ark
+     */
+    function maxDepositPercentageOfTVL() external view returns (Percentage);
 
     /**
      * @notice Returns the maximum amount that can be moved to this Ark in one rebalance
@@ -57,7 +70,7 @@ interface IArkConfigProvider is
      * @notice Returns the ERC20 token managed by this Ark
      * @return The IERC20 interface of the managed token
      */
-    function token() external view returns (IERC20);
+    function asset() external view returns (IERC20);
 
     /**
      * @notice Returns the address of the Fleet commander managing the ark
@@ -70,6 +83,14 @@ interface IArkConfigProvider is
      * @param newDepositCap The new maximum allocation amount
      */
     function setDepositCap(uint256 newDepositCap) external;
+
+    /**
+     * @notice Sets a new maximum deposit percentage of TVL for the Ark
+     * @param newMaxDepositPercentageOfTVL The new maximum deposit percentage of TVL
+     */
+    function setMaxDepositPercentageOfTVL(
+        Percentage newMaxDepositPercentageOfTVL
+    ) external;
 
     /**
      * @notice Sets a new maximum amount that can be moved from the Ark in one rebalance

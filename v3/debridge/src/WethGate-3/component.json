@@ -1,0 +1,32 @@
+{
+  "component": "WethGate-3",
+  "main_contract": "WethGate",
+  "source_entry_count": 3,
+  "source_file_count": 3,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WethGate-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/debridge-finance/debridge-security/blob/master/DeBridge_Solidity_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf",
+    "https://github.com/debridge-finance/debridge-security/blob/master/deBridge_Main_Pre_Release_Smart_Contract_Security_Audit_Report_Halborn.pdf",
+    "https://github.com/debridge-finance/debridge-security/blob/master/debridge_solidity_smart_contract_second_audit_Halborn.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393511"
+    }
+  ]
+}

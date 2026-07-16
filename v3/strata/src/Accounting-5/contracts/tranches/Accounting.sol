@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.28;
 
 import { Math } from "@openzeppelin/contracts/utils/math/Math.sol";
@@ -21,6 +21,7 @@ contract Accounting is IAccounting, CDOComponent {
     int64   private constant APR_FEED_BOUNDARY_MAX = 2e12; // 200%
     int64   private constant APR_FEED_BOUNDARY_MIN = 0;
     uint256 private constant APR_FEED_DECIMALS = 12;
+    uint256 private immutable ONE_ASSET;
 
     /// @dev The oracle to fetch the latest APR floor and APR base.
     /// @notice When the oracle is updated, it can actively push the latest values to this contract, allowing us to adjust srtTargetIndex.
@@ -41,7 +42,7 @@ contract Accounting is IAccounting, CDOComponent {
 
     uint256 public reserveBps;
     uint256 constant PERCENTAGE_100 = 1e18;
-    uint256 constant RESERVE_BPS_MAX = 0.02e18;
+    uint256 constant RESERVE_BPS_MAX = 0.2e18;
 
     /// @dev Latest balances at T0 (latest protocol interrogation)
     uint256 public nav;
@@ -67,6 +68,12 @@ contract Accounting is IAccounting, CDOComponent {
     ///      Jrt withdrawals remain possible until the hard minimum is reached.
     uint256 public minimumJrtSrtRatioBuffer;
 
+    /// @notice The portion of Junior fees that is returned to its TVL. The remainder goes to the reserve.
+    uint256 public feeJrtRetentionBps;
+
+    /// @notice The portion of Senior fees that is returned to the Senior tranche TVL.
+    uint256 public feeSrtRetentionBps;
+
     error InvalidNavSplit(uint256 navT1, uint256 jrtAssets, uint256 srtAssets, uint256 reserveAssets);
     error ReserveTooLow(uint256 reserveNav, uint256 requestedNav);
 
@@ -76,6 +83,12 @@ contract Accounting is IAccounting, CDOComponent {
     event RiskParametersChanged(UD60x18 x, UD60x18 y, UD60x18 k);
     event MinimumJrtSrtRatioChanged(uint256 ratio);
     event MinimumJrtSrtRatioBufferChanged(uint256 ratio);
+    event FeeAccrued(bool isJrt, uint256 amountToReserve, uint256 amountToTranche);
+    event FeeRetentionChanged(uint256 feeJrtRetention, uint256 feeSrtRetention);
+
+    constructor (uint256 navDecimals) {
+        ONE_ASSET = 10 ** navDecimals;
+    }
 
     function initialize(
         address owner_,
@@ -113,6 +126,16 @@ contract Accounting is IAccounting, CDOComponent {
         return (jrtNavT1, srtNavT1, reserveNavT1);
     }
 
+    /// @notice Returns the updated total assets for each tranche and the reserve
+    /// @dev This method is used by the Tranches to get their updated total assets for the current block
+    /// @dev Actively reads NAV from the strategy.
+    /// @return jrtNavT1 The updated Junior Tranche TVL
+    /// @return srtNavT1 The updated Senior Tranche TVL
+    /// @return reserveNavT1 The updated Reserve TVL
+    function totalAssets () public view returns (uint256 jrtNavT1, uint256 srtNavT1, uint256 reserveNavT1) {
+        return totalAssets(cdo.totalStrategyAssets());
+    }
+
     /// @notice Returns the current saved total assets for each tranche and the reserve
     /// @dev These values represent the state at the last update, not necessarily the current block
     /// @return jrtNavT0 The last saved Junior Tranche TVL
@@ -134,13 +157,20 @@ contract Accounting is IAccounting, CDOComponent {
     /// @dev This function is called by the CDO contract to reduce the reserve
     /// @dev The CDO contract is responsible for withdrawing the appropriate amount to the treasury
     /// @param amount The amount by which to reduce the reserve NAV
-    function reduceReserve (uint256 amount) external onlyCDO {
+    /// @param jrtAmountIn The amount to be credited to the Junior Tranche
+    /// @param srtAmountIn The amount to be credited to the Senior Tranche
+    function reduceReserve (uint256 amount, uint256 jrtAmountIn, uint256 srtAmountIn) external onlyCDO {
         updateAccountingInner(cdo.totalStrategyAssets());
         if (amount > reserveNav) {
             revert ReserveTooLow(reserveNav, amount);
         }
+        if (amount < (jrtAmountIn + srtAmountIn)) {
+            revert ReserveTooLow(amount, jrtAmountIn + srtAmountIn);
+        }
         reserveNav = reserveNav - amount;
-        nav = nav - amount;
+        nav = nav + jrtAmountIn + srtAmountIn - amount;
+        jrtNav += jrtAmountIn;
+        srtNav += srtAmountIn;
 
         // Fetch APRs and force recalculate aprSrt, as JRT and SRT TVLs may have changed.
         (bool modified, UD60x18 aprTarget_, UD60x18 aprBase_) = fetchAprs();
@@ -151,6 +181,15 @@ contract Accounting is IAccounting, CDOComponent {
     }
 
     function maxWithdraw(bool isJrt) external view returns (uint256) {
+        return maxWithdrawInner(isJrt, false);
+    }
+    function maxWithdraw(bool isJrt, bool ownerIsSharesCooldown) external view returns (uint256) {
+        return maxWithdrawInner(isJrt, ownerIsSharesCooldown);
+    }
+    function maxWithdrawInner(bool isJrt, bool ownerIsSharesCooldown) internal view returns (uint256) {
+        if (ownerIsSharesCooldown) {
+            return isJrt ? jrtNav : srtNav;
+        }
         if (isJrt) {
             uint256 minJrt = srtNav * minimumJrtSrtRatio / 1e18;
             return Math.saturatingSub(jrtNav, minJrt);
@@ -174,6 +213,12 @@ contract Accounting is IAccounting, CDOComponent {
         updateAccountingInner(navT1);
     }
 
+    /// @notice Updates the accounting for the CDO, calculating new TVL split
+    /// @dev This method reads the current strategy TVL and updates accounting.
+    function updateAccounting () external onlyCDO {
+        updateAccountingInner(cdo.totalStrategyAssets());
+    }
+
     /// @notice Updates the Net Asset Values (NAVs) after deposits or withdrawals
     /// @dev This method should be called after any deposits or withdrawals are made in the tranches
     /// @dev It adjusts the NAVs for both Junior and Senior tranches, as well as the total NAV
@@ -195,6 +240,19 @@ contract Accounting is IAccounting, CDOComponent {
             // Recalculates aprSrt based on new TVL ratio and old APRs
             updateAprSrt(aprTarget_, aprBase_);
         }
+    }
+
+    /// @notice Called by the CDO to account for a fee by moving NAV from a tranche to the reserve.
+    function accrueFee (bool isJrt, uint256 amount) external onlyCDO {
+        uint256 retentionBps = isJrt ? feeJrtRetentionBps : feeSrtRetentionBps;
+        uint256 amountToReserve = amount * (1e18 - retentionBps) / 1e18;
+        reserveNav += amountToReserve;
+        if (isJrt) {
+            jrtNav -= amountToReserve;
+        } else {
+            srtNav -= amountToReserve;
+        }
+        emit FeeAccrued(isJrt, amountToReserve, amount - amountToReserve);
     }
 
     /// @notice Calculates the updated Net Asset Values (NAVs) for Junior, Senior tranches, and Reserve
@@ -230,7 +288,10 @@ contract Accounting is IAccounting, CDOComponent {
             // Should never happen to USDe, jic: cover by Jrt, then Reserve, then Srt
             uint256 loss = uint256(-gain_dT);
 
-            uint256 jrtLoss = Math.min(jrtNavT0, loss);
+            uint256 jrtLoss = Math.min(
+                Math.saturatingSub(jrtNavT0, ONE_ASSET),
+                loss
+            );
 
             loss -= jrtLoss;
             uint256 reserveLoss = Math.min(reserveNavT0, loss);
@@ -274,7 +335,7 @@ contract Accounting is IAccounting, CDOComponent {
         }
         uint256 srtGainTargetAbs = Math.min(
             uint256(srtGainTarget),
-            Math.saturatingSub(jrtNavT1, 1e18)
+            Math.saturatingSub(jrtNavT1, ONE_ASSET)
         );
 
         // #2 Final new Jrt
@@ -412,7 +473,7 @@ contract Accounting is IAccounting, CDOComponent {
         riskY = riskY_;
         riskK = riskK_;
         UD60x18 risk = calculateRiskPremiumInner(riskX_, riskY_, riskK_, UD60x18.wrap(1e18));
-        require(risk.unwrap() < PERCENTAGE_100, ">=100%");
+        require(risk.unwrap() <= PERCENTAGE_100, ">100%");
         emit RiskParametersChanged(riskX_, riskY_, riskK_);
         updateAprSrt(aprTarget, aprBase);
     }
@@ -437,6 +498,17 @@ contract Accounting is IAccounting, CDOComponent {
         updateAccountingInner(cdo.totalStrategyAssets());
         reserveBps = bps;
         emit ReservePercentageChanged(reserveBps);
+    }
+
+    /// @notice Sets the portion of fees from each tranche that is returned to its TVL. The remainder goes to the reserve.
+    /// @param jrtRetentionBps The percentage of junior fees that is retained by the junior tranche TVL.
+    /// @param srtRetentionBps The percentage of junior fees that is retained by the senior tranche TVL.
+    function setFeeRetentionBps (uint256 jrtRetentionBps, uint256 srtRetentionBps) external onlyOwner {
+        require(jrtRetentionBps <= PERCENTAGE_100, "InvalidJrtRetention");
+        require(srtRetentionBps <= PERCENTAGE_100, "InvalidSrtRetention");
+        feeJrtRetentionBps = jrtRetentionBps;
+        feeSrtRetentionBps = srtRetentionBps;
+        emit FeeRetentionChanged(feeJrtRetentionBps, feeSrtRetentionBps);
     }
 
     /// @notice Sets the hard minimum Jrt/Srt ratio below which Jrt withdrawals are blocked.

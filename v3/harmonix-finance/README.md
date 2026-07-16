@@ -11,4 +11,4 @@ This directory pairs the receipt-bound audit brief with a readable, deduplicated
 
 Exported source components: 2
 Exported deployments: 6
-Deployments without a cached source bundle: 0
+Deployments without a cached source bundle: 1

@@ -1,8 +1,8 @@
 {
   "component": "SwapAdapter-4",
   "main_contract": "SwapAdapter",
-  "source_entry_count": 24,
-  "source_file_count": 24,
+  "source_entry_count": 13,
+  "source_file_count": 13,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,7 +17,7 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x9095bfff63a69e678163f85cf4ae9e3618f12f53",
+      "address": "0x8ccedc4f8ea3362e0f85c88a6866976ad3db3406",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

@@ -1,27 +1,41 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {
-    AddLiquidityParams,
-    RemoveLiquidityParams,
-    SwapParams,
-    GetAmountOutParams
-} from "contracts/structs/LiquidityStructs.sol";
+struct AddLiquidityData {
+    address router;
+    address lpToken;
+    address[] tokens;
+    uint256[] desiredAmounts;
+    uint256[] minAmounts;
+    bytes extraData;
+}
+
+struct RemoveLiquidityData {
+    address router;
+    address lpToken;
+    address[] tokens;
+    uint256 lpAmountIn;
+    uint256[] minAmountsOut;
+    bytes extraData;
+}
+
+struct SwapData {
+    address router;
+    uint256 amountIn;
+    uint256 minAmountOut;
+    address tokenIn;
+    bytes extraData;
+}
 
 interface ILiquidityConnector {
-    function addLiquidity(
-        AddLiquidityParams memory addLiquidityParams
-    ) external payable;
+    function addLiquidity(AddLiquidityData memory addLiquidityData)
+        external
+        payable;
 
-    function removeLiquidity(
-        RemoveLiquidityParams memory removeLiquidityParams
-    ) external;
+    function removeLiquidity(RemoveLiquidityData memory removeLiquidityData)
+        external;
 
-    function swapExactTokensForTokens(
-        SwapParams memory swap
-    ) external payable;
-
-    function getAmountOut(
-        GetAmountOutParams memory getAmountOutParams
-    ) external view returns (uint256);
+    function swapExactTokensForTokens(SwapData memory swapData)
+        external
+        payable;
 }

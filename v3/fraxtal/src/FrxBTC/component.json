@@ -1,0 +1,28 @@
+{
+  "component": "FrxBTC",
+  "main_contract": "FrxBTC",
+  "source_entry_count": 22,
+  "source_file_count": 22,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FrxBTC\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6ca2338a21b2fe9dd39040d2fe06aad861f77f95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

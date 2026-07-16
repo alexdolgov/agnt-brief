@@ -1,0 +1,28 @@
+{
+  "component": "VenusChainlinkOracle",
+  "main_contract": "VenusChainlinkOracle",
+  "source_entry_count": 16,
+  "source_file_count": 16,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VenusChainlinkOracle\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7fabdd617200c9cb4dcf3dd2c41273e60552068a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404788"
+    }
+  ]
+}

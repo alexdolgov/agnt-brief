@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/AcrossDepositAdapter\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 6,
+  "deployment_count": 7,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -31,6 +31,16 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x298614a6d91a9f80f144784cd916348c08f2b6db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     },

@@ -10,12 +10,62 @@
     "build_command": "forge build --root \"src/VoterProxy-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 7,
   "audited": true,
   "audits_covering": [
     "https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf"
   ],
   "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x124e37ca2439b52fc6bf90a04cb8021c639bf781",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x372516d2f464907d9fc7953f966d033803096b7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6a226cfb5d66e71757c4eb7066d75031da9955d0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x6b8d22692985e238eb20b47c32bea34bd4c9c107",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8dcba0fdc0853095791e6a8d9ec89c66c2028881",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
@@ -25,6 +75,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "405329"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa0718d8e893f55ca99fc0691b0e20cb09d11e147",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

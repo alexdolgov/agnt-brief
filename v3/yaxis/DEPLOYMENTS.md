@@ -1,6 +1,6 @@
 # yaxis — deployments
 
-29 verified deployment(s) across 29 component(s).
+30 verified deployment(s) across 30 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,6 +12,7 @@
 | ethereum | `0x0d857688d6a223a2f4e58cdd44119abb7dc5a790` | StrategyControllerV2 | impl | live | no |
 | ethereum | `0x18dbefac8eb66fdf559e31d5c154f4ffbc63ff99` | yAxisMetaVaultHarvester | impl | live | no |
 | ethereum | `0x21dee38170f1e1f26baff2c30c0fc8f8362b6961` | LinkswapPair | impl | live | no |
+| ethereum | `0x226f9954a1221cde805c76cfb312a5d761630e14` | Rewards | impl | live | no |
 | ethereum | `0x22f72d1d79259ce8489e912f4bf613d192000b3e` | StrategyPickle3Crv | impl | live | no |
 | ethereum | `0x259ac58aa39a64614af1afe6a4c266cfe09510cf` | VaultHelper | impl | live | no |
 | ethereum | `0x27762c069c897ed2244e3e8164068e5f1f09e429` | yAxisMetaVaultManager | impl | live | no |

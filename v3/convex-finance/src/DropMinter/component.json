@@ -1,0 +1,59 @@
+{
+  "component": "DropMinter",
+  "main_contract": "DropMinter",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/DropMinter.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-5baaa165f8bb-DropMinter.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/ITokenMinter.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-94a9b06dae8f-ITokenMinter.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/ITokenLocker.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-5b04ddd7a1ed-ITokenLocker.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IClaimCallback.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-e6774adc6fe5-IClaimCallback.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DropMinter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8864187b257e0fb3bd74054b72d9c1834e76d712",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405301"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9c4d60fa85088d40e3d8030dba283e9708ec9292",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405306"
+    }
+  ]
+}

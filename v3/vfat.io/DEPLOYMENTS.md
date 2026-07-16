@@ -1,6 +1,6 @@
 # vfat.io — deployments
 
-1952 verified deployment(s) across 874 component(s).
+1973 verified deployment(s) across 875 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -27,7 +27,7 @@
 | arbitrum | `0x3078d82a0833b7331daaa7d9eef79be77beb9539` | BridgeLib | impl | live | no |
 | arbitrum | `0x310f87d1cf529ee33a15bc71b4ce8aa3f2ff028a` | MultiFarmStrategy | impl | live | no |
 | arbitrum | `0x31debc0909a1ebf5506d1071b88cc6d4a11537b5` | PancakeMasterchefV3Connector-3 | impl | live | no |
-| arbitrum | `0x326e6746fb95f0c2de39a1175a20d8eda8a581a8` | NftFarmStrategy-3 | impl | live | no |
+| arbitrum | `0x326e6746fb95f0c2de39a1175a20d8eda8a581a8` | NftFarmStrategy-2 | impl | live | no |
 | arbitrum | `0x32ddff55910c80b188239fe670f8432094a64b72` | SimpleFarmStrategy | impl | live | no |
 | arbitrum | `0x3508a7918ac8f31ef3af71f8bb637926b8983596` | PositionSettingsRegistry | impl | live | no |
 | arbitrum | `0x3bf1a33363ace350f09fd4d32f50121deb23a10b` | SickleMultisig | impl | live | no |
@@ -41,7 +41,7 @@
 | arbitrum | `0x4763ebb49b5f6c3990e1976d34e4fb75b1d78fd9` | MultiSwapRouter | impl | live | no |
 | arbitrum | `0x4768ae453c9584a7f6b33d193a17fb6dd36c6b2d` | BridgeWithdrawStrategy | impl | live | no |
 | arbitrum | `0x4ca6672280e8b150c8b142605966d960e6b207d3` | Automation | impl | live | no |
-| arbitrum | `0x514142806d1e338e5e62c66b6920c513c991b862` | NftFarmStrategy-2 | impl | live | no |
+| arbitrum | `0x514142806d1e338e5e62c66b6920c513c991b862` | NftFarmStrategy-3 | impl | live | no |
 | arbitrum | `0x547e55662ef732fb6e22b4c875433ab7ddb21817` | RamsesV3Connector | impl | live | no |
 | arbitrum | `0x57732ea15d14619a4bdbc4147590e0f46b2aa00c` | SickleMultisig | impl | live | no |
 | arbitrum | `0x5a1b745155b556216b35b615cd7e2ab01fe7889b` | MultiFarmStrategy-3 | impl | live | no |
@@ -106,7 +106,7 @@
 | arbitrum | `0xe866f03a09e04306a1e9df8aed3d051925747597` | RamsesV3Connector-6 | impl | live | no |
 | arbitrum | `0xe8db410b574e38eb322aad3e1d8e87eb56c6a9bc` | PancakeV3Connector-2 | impl | live | no |
 | arbitrum | `0xe9949586f627d11668a3348754d63b2a05a05a33` | MultiSwapRouter-15 | impl | live | no |
-| arbitrum | `0xe9eb1ae5db6c8f7d856d44d18fc35051391d9e44` | NftFarmStrategy-2 | impl | live | no |
+| arbitrum | `0xe9eb1ae5db6c8f7d856d44d18fc35051391d9e44` | NftFarmStrategy-3 | impl | live | no |
 | arbitrum | `0xe9ef6d9580a4f93154c980d8f9d57882c49a7ab1` | PancakeV3Connector-3 | impl | live | no |
 | arbitrum | `0xef54970d9e11f36abb3f5635728f00852e3854ac` | NftFarmStrategy-5 | impl | live | no |
 | arbitrum | `0xf0b9f58b97906ce684134034256e78cd058610d3` | ConnectorLens | impl | live | no |
@@ -123,7 +123,7 @@
 | avalanche | `0x06e2eaea943cacc9c39d170330219218c4f34593` | PangolinV3Connector | impl | live | no |
 | avalanche | `0x09fadb29cfd15abd73afb007d205c13416380d4d` | PositionSettingsRegistry-7 | impl | live | no |
 | avalanche | `0x0acd3f9b32f4557b7ffcb2e16581dd9553863730` | BridgeLib | impl | live | no |
-| avalanche | `0x0bf0f966a8c1676d2d76c1863cbd84170b949d53` | NftFarmStrategy-2 | impl | live | no |
+| avalanche | `0x0bf0f966a8c1676d2d76c1863cbd84170b949d53` | NftFarmStrategy-3 | impl | live | no |
 | avalanche | `0x0eb29e143df4e658419df23a2f09af3714ddb08a` | MultiFarmStrategy | impl | live | no |
 | avalanche | `0x117220a8f381847adf69a298e456f49e8782af44` | BridgeWithdrawStrategy | impl | live | no |
 | avalanche | `0x119ed29f4398c6909d14675bc726e405b13877f5` | PharaohV3Connector | impl | live | no |
@@ -138,7 +138,7 @@
 | avalanche | `0x2a2d2dfd492c155ce7e918709aa9a870627e0deb` | RamsesV3Connector-10 | impl | live | no |
 | avalanche | `0x2b027301799029a64b21060c995f772e02141db8` | BlackholeV3GaugeConnector | impl | live | no |
 | avalanche | `0x2d6a2a8837bad9ce42bbec462fa62900439f6940` | NftSettingsRegistry-9 | impl | live | no |
-| avalanche | `0x2e075edf77ac8df12b88f22170bb064c2ffbed44` | NftFarmStrategy-3 | impl | live | no |
+| avalanche | `0x2e075edf77ac8df12b88f22170bb064c2ffbed44` | NftFarmStrategy-2 | impl | live | no |
 | avalanche | `0x3508a7918ac8f31ef3af71f8bb637926b8983596` | BlackholeRouterConnector-2 | impl | live | no |
 | avalanche | `0x3647966e65f31f9766ceef2a26cdd7dad47c14ae` | AggregatorConnector | impl | live | no |
 | avalanche | `0x3ecdfe36124d47e7cc9803910bcf320c9d934007` | MerklConnector-3 | impl | live | no |
@@ -153,6 +153,7 @@
 | avalanche | `0x5266e1c3d727a5ee8fdddbc08e01050725e4e6b8` | BridgeWithdrawStrategy | impl | live | no |
 | avalanche | `0x53d9780dbd3831e3a797fd215be4131636cd5fdf` | SickleFactory-2 | impl | live | no |
 | avalanche | `0x5452290723b997afea3f3c39e1f3d18756c1e7f9` | FarmStrategy | impl | live | no |
+| avalanche | `0x54d81f06f7ee744a46048d0edd9983e69994eacf` | MultiFarmStrategy-10 | impl | unknown | no |
 | avalanche | `0x5bc457e175f89594e7f25d199bec0550ae472566` | BlackholeV3GaugeConnector-3 | impl | live | no |
 | avalanche | `0x5ce9c2e3e803712e6fec5368968b61a55d851cdf` | SickleMultisig | impl | live | no |
 | avalanche | `0x5e8c2cf2303d4b63e592586a14b7048192fb7719` | RamsesGaugeConnector-2 | impl | live | no |
@@ -226,6 +227,7 @@
 | avalanche | `0xedce63dc020450a5a813b522e591495216839004` | MultiSwapRouter | impl | live | no |
 | avalanche | `0xf5691e739f1f78087cb73110c572cc1ed07da704` | OmniV3Connector-3 | impl | live | no |
 | avalanche | `0xf6e2d130407c12a8390d70f4879c0edfe36d92c7` | SwapRouter | impl | live | no |
+| avalanche | `0xf8d2b58823ab2604f01fc2e87250fee99df980cb` | FarmStrategy-11 | impl | unknown | no |
 | avalanche | `0xfb903bec241df573e8d73ae59dee5bfd6e7365c8` | RamsesGaugeRegistry | impl | live | no |
 | avalanche | `0xff844443c7837869e9861d1051fd32b23e14460d` | Automation-15 | impl | live | no |
 | base | `0x00856733aa4ad4ef7a664d26f04ae12037123029` | SlipstreamNftConnector-16 | impl | live | no |
@@ -303,7 +305,7 @@
 | base | `0x917c50722872672628a456f2ab011554f0198be4` | SweepStrategy-7 | impl | live | no |
 | base | `0x940181a94a35a4569e4529a3cdfb74e38fd98631` | Aero | impl | live | no |
 | base | `0x945b7191616b2613d827690e5032ec7171573b6c` | BmxConnector-3 | impl | live | no |
-| base | `0x9699be38e6d54e51a4b36645726fee9cc736eb45` | NftFarmStrategy-2 | impl | live | no |
+| base | `0x9699be38e6d54e51a4b36645726fee9cc736eb45` | NftFarmStrategy-3 | impl | live | no |
 | base | `0x9774e26f467f1ac603b63444bcdeb4b519a4f3ea` | NftFarmStrategy-13 | impl | live | no |
 | base | `0x9903fbd663b3fcdd86e0414d4abc841fb3534ce9` | Automation-3 | impl | live | no |
 | base | `0x9960bd7dcdf8e4ecf7dc5ca1dc433921a03b9d96` | SimpleFarmStrategy-2 | impl | live | no |
@@ -343,7 +345,7 @@
 | base | `0xaf0ee4d542e29dd7d271b43f8a2d3b40a12622b6` | FeesLib-7 | impl | live | no |
 | base | `0xaf699938513710126709380706eeee40a1d77a55` | AutomatedFarmStrategy | impl | live | no |
 | base | `0xaf8afa87ca65c2751995b28d8dd30a8012c867e6` | MasterchefV3Connector-2 | impl | live | no |
-| base | `0xb01e431542bafbac3fc95057961c92ed8e06e08d` | SickleFactory-6 | impl | live | no |
+| base | `0xb01e431542bafbac3fc95057961c92ed8e06e08d` | SickleFactory-7 | impl | live | no |
 | base | `0xb024cb7c2fc16e6baae3995c56490c23f457c5a6` | LPFarmStrategy | impl | live | no |
 | base | `0xb0b5b40a5ab43e15ea111971908aa893a1d5a6fd` | DeprecatedAerodromeGaugeRegistry-2 | impl | live | no |
 | base | `0xb0c405b225f0e1df541c1662fd9d5c3b5a033751` | BridgeRouteReceiver-2 | impl | live | no |
@@ -373,7 +375,7 @@
 | base | `0xbfc6216915536bf83e94fb8f24fc197adb2e3401` | SickleRegistry | impl | live | no |
 | base | `0xbfdec182b32acf16c36ae070044b5a63323f4724` | AggregatorConnector-4 | impl | live | no |
 | base | `0xc069fc890beeba42f51801219d77fb28379231fd` | PositionSettingsRegistry-2 | impl | live | no |
-| base | `0xc0c3e0a8e4979ece2aa98370b091fd9586d412b7` | SickleFactory-7 | impl | live | no |
+| base | `0xc0c3e0a8e4979ece2aa98370b091fd9586d412b7` | SickleFactory-8 | impl | live | no |
 | base | `0xc12def1caa16c7aa8ee0b7a2acbe18c12cac5e33` | AcrossSwapAdapter | impl | live | no |
 | base | `0xc210fe52ceae0b63456a9721b7718130728384ca` | BridgeRouter | impl | live | no |
 | base | `0xc26cf586bc9abb2d84e6cb6aa04dc93bbf27c6d8` | RebalanceStrategy-6 | impl | live | no |
@@ -392,6 +394,7 @@
 | base | `0xcc6197eac5fcfd3a95df22f3ed9abea38d756a98` | FarmStrategy-7 | impl | live | no |
 | base | `0xcf11847f447a8ffb13e3b93daa0a28f094099fa1` | MasterchefV3Connector-3 | impl | live | no |
 | base | `0xcf77a3ba9a5ca399b7c97c74d54e5b1beb874e43` | Router-4 | impl | live | no |
+| base | `0xcf82a69af130de70b36767c042435232a751d508` | FeesLib-3 | impl | live | no |
 | base | `0xd0c591ce41989be115b77951dff091d9bf37bddd` | AcrossDepositAdapter-2 | impl | live | no |
 | base | `0xd0debc48754cf6f49fe1e306e03ec657a67548c3` | ExactTransferLib | impl | live | no |
 | base | `0xd1b32145fa1214d484b2aeee834b5f82fc8d249f` | NftZapLib-3 | impl | live | no |
@@ -404,7 +407,7 @@
 | base | `0xd51a36e079bc3cfa9163b6ca40b7e796257fcc97` | NftFarmStrategy-9 | impl | live | no |
 | base | `0xd59ac0c2c88394baf032a0bddfbf9914af33d71d` | MerklConnector | impl | live | no |
 | base | `0xd6080a387855eb2ed756d04c77e688c6d59fd2e1` | ThenaV3Connector | impl | live | no |
-| base | `0xd62b33a7df4d0ca5edd373576e48f73366e36179` | NftFarmStrategy-3 | impl | live | no |
+| base | `0xd62b33a7df4d0ca5edd373576e48f73366e36179` | NftFarmStrategy-2 | impl | live | no |
 | base | `0xd65eaf226cc75146b2dc9cd49264c9aeaa53773d` | FarmStrategy-21 | impl | live | no |
 | base | `0xd709d0dc1967f914825f4ea0b0ea298897d24aa8` | RouterAllowlist-4 | impl | live | no |
 | base | `0xd7c8237ed451ec984a2cd17bcf1a3b7a83655e7f` | BridgeLib-2 | impl | live | no |
@@ -414,7 +417,7 @@
 | base | `0xda84141c1d30b1c471882a2c32a6b5cc53ffe663` | AerodromeGaugeRegistry-10 | impl | live | no |
 | base | `0xdb50987908164510c5ff8a13db8dd17bdbcf2018` | RebalanceLib | impl | live | no |
 | base | `0xdc64897da40124fdac93ea587dac04d7f4c68dec` | AerodromeGaugeConnector-4 | impl | live | no |
-| base | `0xde181c7412162eef86174d9f0dcb299b4c2284f4` | SickleFactory-8 | impl | live | no |
+| base | `0xde181c7412162eef86174d9f0dcb299b4c2284f4` | SickleFactory-9 | impl | live | no |
 | base | `0xdf70bbcf26dfa446f0f492ec0fe054966e316916` | SickleRegistry-2 | impl | live | no |
 | base | `0xe16b3c51ae129b90ffb2c5714d923584b0309b4c` | AerodromeRouterConnector-5 | impl | live | no |
 | base | `0xe1c8e08dd0641c568c2abe78a745ea60aaf92c04` | NFTSVG-3 | impl | live | no |
@@ -438,7 +441,7 @@
 | base | `0xea895dcacb615d3553e434913c9429ad22e168ff` | FeesLib-8 | impl | live | no |
 | base | `0xeb018363f0a9af8f91f06fee6613a751b2a33fe5` | Minter-4 | impl | live | no |
 | base | `0xeb76cba3725806a5a861449a1f806b9cc9d15e69` | SlipstreamGaugeConnector-10 | impl | live | no |
-| base | `0xebe78f29fa7f35c13f126f9aa10cf7b4f49f47d2` | Automation-8 | impl | live | no |
+| base | `0xebe78f29fa7f35c13f126f9aa10cf7b4f49f47d2` | Automation-9 | impl | live | no |
 | base | `0xec8e5342b19977b4ef8892e02d8daecfa1315831` | CLPool-3 | impl | live | no |
 | base | `0xef054bccb4c591a2d1d924051e7deb5a0e89c34c` | VelodromeUniversalRouterAdapter | impl | live | no |
 | base | `0xef0efeb5a95aefbf80905e49e65071b7cd17e363` | CLGaugeFactory-4 | impl | live | no |
@@ -475,11 +478,25 @@
 | base | `0xfe653b9f946320232e3aae53d5466fd08362cfbc` | PancakeV3Connector-3 | impl | live | no |
 | bsc | `0x53d9780dbd3831e3a797fd215be4131636cd5fdf` | SickleFactory | impl | live | no |
 | chain-130 | `0x125caffe923eaa451461ab98353c4a88154cb45e` | RouterAllowlist-3 | impl | live | no |
+| chain-130 | `0x1732e3ebc63e8d7c5d32ba8e9bd40982c21e320f` | MultiSwapRouter | impl | live | no |
+| chain-130 | `0x1bfe637077f5a295935043805f66715707389700` | BridgeLib | impl | unknown | no |
 | chain-130 | `0x1c5a067e8902e3fad8f12b4cd169106b5ce0b142` | NftFarmStrategy | impl | live | no |
+| chain-130 | `0x1d503885f90260e3599fa86ea5deb049e67b6115` | MultiFarmStrategy-9 | impl | unknown | no |
+| chain-130 | `0x233d9067677dcf1a161954d45b4c965b9d567168` | SickleFactory-5 | impl | live | no |
 | chain-130 | `0x23e5d94e7c87a1349c5bafc5dae90a2dd64cfa4c` | MerklConnector-3 | impl | live | no |
+| chain-130 | `0x298614a6d91a9f80f144784cd916348c08f2b6db` | AcrossDepositAdapter | impl | unknown | no |
+| chain-130 | `0x2a2d2dfd492c155ce7e918709aa9a870627e0deb` | BridgeDepositStrategy-2 | impl | live | no |
+| chain-130 | `0x2eb61ceb6bd6f91587a5616fab0f5fbcab7b0427` | NftFarmStrategy-2 | impl | unknown | no |
+| chain-130 | `0x2ef5eafa8711e2441bd519eed5d09f8dfef2ecf3` | Automation-7 | impl | unknown | no |
+| chain-130 | `0x30d28c01b3c7d81cf5f460b8c78ff0bf69c52e67` | BridgeSwapReceiver-2 | impl | live | no |
+| chain-130 | `0x3538683cf26ec9c5e21f7e825817410906ad7d97` | BridgeWithdrawStrategy | impl | unknown | no |
 | chain-130 | `0x3647966e65f31f9766ceef2a26cdd7dad47c14ae` | UniswapV3PoolAdapter | impl | unknown | no |
 | chain-130 | `0x3b8886c3f6d3ba4a75d3becb3c83864c0c01e1f3` | UniswapV3RouterAdapter | impl | unknown | no |
 | chain-130 | `0x3cb9ae71566a1bae8244fbbe812d436adc7dc83c` | MerklConnector | impl | live | no |
+| chain-130 | `0x3d660d59095288fc22b7fc5d244f60ed9c492813` | BridgeSwapReceiver | impl | live | no |
+| chain-130 | `0x48ea9dc1cde3063bc7ae1c4e5973a6224e6bee4d` | BridgeSwapReceiver | impl | live | no |
+| chain-130 | `0x49606f96fa3d8d52f37dec96781fa4dd36d4890d` | VelodromeGaugeConnector-2 | impl | live | no |
+| chain-130 | `0x4a1daaa42496a208b138c92bcca3345c53a7b5b3` | AggregatorConnector-3 | impl | unknown | no |
 | chain-130 | `0x4f8833cd141e60b112105d581e852e8ed0e71780` | ConnectorRegistry-3 | impl | live | no |
 | chain-130 | `0x50f3c65c6b2c754fd1a3c86c61284c631e6f493f` | SwapLib-5 | impl | live | no |
 | chain-130 | `0x5225cb0a72cf263ea65560f036d4b4f3660d52a2` | RouterAllowlist-2 | impl | unknown | no |
@@ -528,14 +545,18 @@
 | chain-130 | `0xea895dcacb615d3553e434913c9429ad22e168ff` | VelodromeGaugeConnector | impl | live | no |
 | chain-130 | `0xeb76cba3725806a5a861449a1f806b9cc9d15e69` | CamelotV2Adapter | impl | unknown | no |
 | chain-130 | `0xf501a9eb16665657dd5493a59f821b1f5bdec3a9` | ZapLib-3 | impl | live | no |
+| chain-130 | `0xf8d2b58823ab2604f01fc2e87250fee99df980cb` | VelodromeRouterConnector | impl | live | no |
+| chain-130 | `0xfea81bb9425770ad6146ba0d52159ef0a2f4a0e4` | AcrossSwapAdapter | impl | unknown | no |
+| chain-130 | `0xff638dc7605065e33c74620c1f859d49183d9452` | BridgeLib-2 | impl | unknown | no |
 | chain-130 | `0xff844443c7837869e9861d1051fd32b23e14460d` | SickleMultisig | impl | live | no |
+| chain-130 | `0xfff75d099baee29f447866bc5299cd67c04761c8` | ZapLib-5 | impl | live | no |
 | chain-146 | `0x0385c27306e0fa285633590ead2814419c0ebec6` | BridgeSwapReceiver | impl | live | no |
-| chain-146 | `0x05a651a347fdaf918549da47c0f02d78be071427` | NftFarmStrategy-2 | impl | live | no |
+| chain-146 | `0x05a651a347fdaf918549da47c0f02d78be071427` | NftFarmStrategy-3 | impl | live | no |
 | chain-146 | `0x064abb264f2290b5d69345426ac9031bec16a5e0` | SteerRewarderConnector | impl | live | no |
 | chain-146 | `0x0998943d5caec304658b7af3b4367e134c73a8c1` | SwapRouter | impl | live | no |
 | chain-146 | `0x0ce03650ad3699cacf30200e8c7c5d1c071c48e2` | BridgeWithdrawStrategy | impl | live | no |
 | chain-146 | `0x0eb29e143df4e658419df23a2f09af3714ddb08a` | SickleMultisig | impl | live | no |
-| chain-146 | `0x0efadd4d1336926276ead3b74366f76e801542d5` | NftFarmStrategy-3 | impl | live | no |
+| chain-146 | `0x0efadd4d1336926276ead3b74366f76e801542d5` | NftFarmStrategy-2 | impl | live | no |
 | chain-146 | `0x0f592f2ee1779fa7d81a8482f4cc6d216a0fe04f` | SweepStrategy-2 | impl | live | no |
 | chain-146 | `0x10bd1657efa6cd2febb1f3cdd1d3c4a9bc9fa0f5` | CrossFarmMoveStrategy | impl | live | no |
 | chain-146 | `0x1242d59fecface4ce7f2a59896537f95255fc80b` | PancakeV3Connector-2 | impl | live | no |
@@ -673,7 +694,7 @@
 | chain-146 | `0x8368218a93872e90f89abb0bb3c625652990aa5b` | RamsesV3Factory | impl | live | no |
 | chain-146 | `0x83d50cef0dc3713161115580763e41ba76652fe7` | NftFarmStrategy-19 | impl | live | no |
 | chain-146 | `0x842b3fc1c42f3b27fd62bf679a888799e13465b8` | OmniV3Connector-2 | impl | live | no |
-| chain-146 | `0x85378fa1d0707897d948ba322b5eb43254e4d7c2` | MultiFarmStrategy-10 | impl | live | no |
+| chain-146 | `0x85378fa1d0707897d948ba322b5eb43254e4d7c2` | MultiFarmStrategy-12 | impl | live | no |
 | chain-146 | `0x86b0660f8620236ae8215d190d059a9119d1fd69` | IchiVaultRegistry | impl | live | no |
 | chain-146 | `0x8850a36a5287ec9a8dcdd225a35e6e423bad7176` | NonfungiblePositionManager-10 | impl | live | no |
 | chain-146 | `0x899fb4aa405b882e5e1db476687adfc521687cc5` | ThenaV3Connector-5 | impl | live | no |
@@ -783,7 +804,7 @@
 | chain-146 | `0xbcc69b70a11adac965cbd2654463132c775c9500` | Quoter-3 | impl | live | no |
 | chain-146 | `0xbd1a7ad06043e0f0c57798421bdcd88f55726e01` | AccessHub-14 | impl | live | no |
 | chain-146 | `0xbd60396ce676b3f1e9656d2608b869f743c45b11` | MerklConnector-5 | impl | live | no |
-| chain-146 | `0xbd69464c31b84d00ec9ed0c41d4d0a21cb513156` | FarmStrategy-18 | impl | live | no |
+| chain-146 | `0xbd69464c31b84d00ec9ed0c41d4d0a21cb513156` | FarmStrategy-11 | impl | live | no |
 | chain-146 | `0xbd89f4c0726afa67afcef8aab171108514a9bfb8` | ShadowGaugeConnector | impl | live | no |
 | chain-146 | `0xbdb8520b52be5519f03b28437743f043c9998d06` | EqualizerRouterConnector-3 | impl | live | no |
 | chain-146 | `0xbdb926f4f05c9af08af3d36df37127a396cb719f` | SwapxGaugeRegistry-3 | impl | live | no |
@@ -886,7 +907,7 @@
 | chain-146 | `0xef54970d9e11f36abb3f5635728f00852e3854ac` | ConnectorLens-2 | impl | live | no |
 | chain-146 | `0xf04581d79e340f7e944cf3318c832007050db8c8` | RamsesV3PoolDeployer | impl | live | no |
 | chain-146 | `0xf047f81eb5d76dcde0c292d783e161f26e885ce8` | SwapRouter-2 | impl | live | no |
-| chain-146 | `0xf0b9f58b97906ce684134034256e78cd058610d3` | MultiFarmStrategy-11 | impl | live | no |
+| chain-146 | `0xf0b9f58b97906ce684134034256e78cd058610d3` | MultiFarmStrategy-10 | impl | live | no |
 | chain-146 | `0xf0ee36e430f9760fbdcd95d8b65c6172c9c6aab2` | FeeDistributorFactory-2 | impl | live | no |
 | chain-146 | `0xf152172a4af1096c953e087e671b682b434158cf` | SwapxV3Connector-8 | impl | live | no |
 | chain-146 | `0xf2a751c77d5709a14922f62a3130cc64351e614d` | Quoter-4 | impl | live | no |
@@ -911,7 +932,7 @@
 | chain-146 | `0xff1a32f42cad6c3c70af3fbceb2f3a24a87d6356` | RamsesV3Factory-2 | impl | live | no |
 | chain-146 | `0xfff75d099baee29f447866bc5299cd67c04761c8` | NftTransferLib | impl | live | no |
 | chain-252 | `0x02099a96d5ef6996d0718e34a229f9c1f79bf271` | BridgeDepositStrategy-3 | impl | live | no |
-| chain-252 | `0x04a606605f3d0d1d4781a12fca38fd7aea9e51e7` | Automation-10 | impl | live | no |
+| chain-252 | `0x04a606605f3d0d1d4781a12fca38fd7aea9e51e7` | Automation-11 | impl | live | no |
 | chain-252 | `0x06b559fef135ed5c9133478a2af502d8d44d59b5` | NftFarmStrategy | impl | live | no |
 | chain-252 | `0x0eb29e143df4e658419df23a2f09af3714ddb08a` | SwapRouter | impl | live | no |
 | chain-252 | `0x0ecda55d6435de080ca26b10873a8bf4da7409b6` | FarmStrategy-5 | impl | live | no |
@@ -922,7 +943,7 @@
 | chain-252 | `0x1c5a067e8902e3fad8f12b4cd169106b5ce0b142` | SlipstreamNftConnector-6 | impl | live | no |
 | chain-252 | `0x1c9d70e5f927a841142cefd4d52a418d1ab0ed35` | NuriGaugeRegistry-2 | impl | live | no |
 | chain-252 | `0x2083a6aabdb733211a99a61615e39fd71547a463` | NftFarmStrategy-10 | impl | live | no |
-| chain-252 | `0x233d9067677dcf1a161954d45b4c965b9d567168` | Automation-7 | impl | live | no |
+| chain-252 | `0x233d9067677dcf1a161954d45b4c965b9d567168` | Automation-8 | impl | live | no |
 | chain-252 | `0x23eb5ce64769b969b58f008154d396957a7ade3b` | PositionSettingsRegistry | impl | live | no |
 | chain-252 | `0x266ebc589d5bfcb815c40e7c30112f8d4b74e012` | SlipstreamNftConnector-3 | impl | live | no |
 | chain-252 | `0x282f8343eef2adfe00fe3fef0755098fc5983027` | NuriV3Connector-2 | impl | live | no |
@@ -967,7 +988,7 @@
 | chain-252 | `0x71de28cc40154a6f198cfef48476c60d2a07be8f` | BridgeSwapReceiver | impl | live | no |
 | chain-252 | `0x72b10dc817658293b3703e9e8eb069e1627bef2e` | MultiSwapRouter-2 | impl | live | no |
 | chain-252 | `0x76384443b91a576809dfc2cdc0f7ae8f3148147a` | NftZapLib | impl | live | no |
-| chain-252 | `0x7671cba63cf2b2766ab12d42b93fbe166a692171` | NftFarmStrategy-2 | impl | live | no |
+| chain-252 | `0x7671cba63cf2b2766ab12d42b93fbe166a692171` | NftFarmStrategy-3 | impl | live | no |
 | chain-252 | `0x768caf810ea58f32054da66ba951c14ca998d19f` | NuriGaugeConnector-2 | impl | live | no |
 | chain-252 | `0x76fb09f9077a6e0deb4edde76f9e36dd625dd487` | MultiSwapRouter | impl | live | no |
 | chain-252 | `0x76fe032c942c03cc4d4d0d527ef2686cfc414b2f` | Automation-6 | impl | live | no |
@@ -980,7 +1001,7 @@
 | chain-252 | `0x83631c1dd38a48589622784c30f3119859590c4a` | ZapLib-3 | impl | live | no |
 | chain-252 | `0x84676ee313cd7c7b85869b208d2effb7af136f8a` | FarmStrategy-4 | impl | live | no |
 | chain-252 | `0x85378fa1d0707897d948ba322b5eb43254e4d7c2` | MultiFarmStrategy-4 | impl | live | no |
-| chain-252 | `0x856c99ce32734f04e2998b9e57e639b755fa5095` | VelodromeRouterConnector-2 | impl | live | no |
+| chain-252 | `0x856c99ce32734f04e2998b9e57e639b755fa5095` | VelodromeRouterConnector | impl | live | no |
 | chain-252 | `0x8a09b9784e19de39bf40106726541c6c09eec40d` | ExactTransferLib | impl | live | no |
 | chain-252 | `0x8bb9065f3c00f6cfb42ce41e0168632f00548289` | VelodromeRouterConnector-5 | impl | live | no |
 | chain-252 | `0x8bc1824b5fea1cc95fe221a9fe4e9878d360466e` | NuriV3Connector-5 | impl | live | no |
@@ -1035,7 +1056,7 @@
 | chain-252 | `0xe4cdcb723abbd3bf6031d5c3d0500f768a9af07c` | NuriGaugeRegistry-6 | impl | live | no |
 | chain-252 | `0xe569386bd22245cc8bd706dbbcb9ca503e4624e9` | RouterAllowlist | impl | live | no |
 | chain-252 | `0xea895dcacb615d3553e434913c9429ad22e168ff` | AggregatorConnector-3 | impl | live | no |
-| chain-252 | `0xeb68b3ee6f14a4abcf31a148bbcf81c7a0f0534e` | VelodromeRouterConnector | impl | live | no |
+| chain-252 | `0xeb68b3ee6f14a4abcf31a148bbcf81c7a0f0534e` | VelodromeRouterConnector-2 | impl | live | no |
 | chain-252 | `0xef54970d9e11f36abb3f5635728f00852e3854ac` | MultiFarmStrategy-5 | impl | live | no |
 | chain-252 | `0xf1ce0ea6387b81d27cd4ac691524b4bc33a4a0a7` | NuriGaugeRegistry-7 | impl | live | no |
 | chain-252 | `0xf3442bb9f63d35e668dde0abf61b7f716156d204` | NuriGaugeConnector-4 | impl | live | no |
@@ -1044,18 +1065,18 @@
 | chain-252 | `0xf99c9b005454c37357616cbeb3865011f755fc20` | NuriGaugeRegistry-8 | impl | live | no |
 | chain-252 | `0xfb578a147bdea6320eaf1d6714b7099a737dd953` | NuriRouterConnector-4 | impl | live | no |
 | chain-252 | `0xfb903bec241df573e8d73ae59dee5bfd6e7365c8` | AlgebraRouterAdapter | impl | live | no |
-| chain-252 | `0xfc4c50957f928ecbef15409cf9f8b3e1d0cd564b` | NftFarmStrategy-3 | impl | live | no |
+| chain-252 | `0xfc4c50957f928ecbef15409cf9f8b3e1d0cd564b` | NftFarmStrategy-2 | impl | live | no |
 | chain-252 | `0xfd2d0de5a902d19b3823d31f1bce9d8f70d850e7` | SlipstreamNftConnector-2 | impl | live | no |
 | chain-252 | `0xffcdd3019bc54e14d32985e3e080875e2267af30` | BridgeWithdrawStrategy | impl | live | no |
 | ethereum | `0x0bf0f966a8c1676d2d76c1863cbd84170b949d53` | ConnectorLens-3 | impl | live | no |
-| ethereum | `0x0e1044f8b4f9d7cf370d9f723613a4099a3bc311` | FarmStrategy-12 | impl | live | no |
+| ethereum | `0x0e1044f8b4f9d7cf370d9f723613a4099a3bc311` | FarmStrategy-13 | impl | live | no |
 | ethereum | `0x0e2fff65867422813c25a7404950385e36fbbff7` | LendingStrategy-3 | impl | live | no |
 | ethereum | `0x18ecff45ab659af4af3fc1bc8988311bf817c54b` | MerklConnector | impl | live | no |
 | ethereum | `0x212cf64bbd972df348be70a4b445385a3056c99c` | BlackholeV2Adapter-2 | impl | live | no |
 | ethereum | `0x21bc4fa239a477f98a172839e6d4854b5a0c37c5` | AggregatorConnector | impl | live | no |
 | ethereum | `0x223641e6866f9ce54c4a5783827ca9a6924bd69b` | SimpleLendingStrategy-2 | impl | live | no |
 | ethereum | `0x24f7eb9c0a1b93bfbe9aea2ba66e167b88190f08` | AcrossDepositAdapter-4 | impl | live | no |
-| ethereum | `0x26d7745573d4be284ad6bcd65469145c0a1578d7` | NftFarmStrategy-2 | impl | live | no |
+| ethereum | `0x26d7745573d4be284ad6bcd65469145c0a1578d7` | NftFarmStrategy-3 | impl | live | no |
 | ethereum | `0x27e6ee0a32c905dbd320cd5c47a4ef9370a34afd` | WrapAdapter | impl | live | no |
 | ethereum | `0x28abd924997efe466676df11fdaeed12e9661a7b` | SimpleLendingStrategy | impl | live | no |
 | ethereum | `0x29ba973183c8e10fefdd5985f4dee845e5e82cb7` | BridgeSwapReceiver | impl | live | no |
@@ -1104,7 +1125,7 @@
 | ethereum | `0x93c4dcfc6cde1d8c60a840be641cb634b9e9ff53` | PositionSettingsRegistry-3 | impl | live | no |
 | ethereum | `0x96613d73b8e8dcb2caa49c8a8cbce3eb0c9a2a8d` | MultiFarmStrategy-2 | impl | live | no |
 | ethereum | `0x96791c810b0df625f2ba0d55da9d553eeda26be5` | PancakeMasterchefV3Connector-5 | impl | live | no |
-| ethereum | `0x97f021f8d1cb43b35d65be276bbedcf6ef7dbc2d` | NftFarmStrategy-3 | impl | live | no |
+| ethereum | `0x97f021f8d1cb43b35d65be276bbedcf6ef7dbc2d` | NftFarmStrategy-2 | impl | live | no |
 | ethereum | `0x985a6aa5de2c73d892b560f1f04757f0cc9d32c0` | SwapLib | impl | live | no |
 | ethereum | `0x9a833864e2f6751a24acf3d959ecf87e436034f0` | MultiFarmStrategy | impl | live | no |
 | ethereum | `0x9d70b9e5ac2862c405d64a0193b4a4757aab7f95` | SickleFactory | impl | live | no |
@@ -1162,7 +1183,7 @@
 | linea | `0x0998943d5caec304658b7af3b4367e134c73a8c1` | SickleMultisig-5 | impl | live | no |
 | linea | `0x0d1e753a25ebda689453309112904807625befbe` | CakeOFT | impl | live | no |
 | linea | `0x0e1044f8b4f9d7cf370d9f723613a4099a3bc311` | SwapRouter | impl | live | no |
-| linea | `0x0f6abc6b808b377d6aed8da1fad5e135c99c81a3` | SickleFactory-10 | impl | live | no |
+| linea | `0x0f6abc6b808b377d6aed8da1fad5e135c99c81a3` | SickleFactory-11 | impl | live | no |
 | linea | `0x13c59ec73585f1437728cdf29535ae088f125089` | SweepStrategy-2 | impl | live | no |
 | linea | `0x194cdf44ef8f1bb58fadbd105b2c485aae8f9f9a` | RamsesV3Connector-4 | impl | live | no |
 | linea | `0x1c1081e2bb3c2f3805bc89e1951c15be551d7ecd` | MasterChefV3ReceiverV2 | impl | live | no |
@@ -1240,8 +1261,8 @@
 | linea | `0xc7bb3e702ec7aa8568009855fcc544238303973e` | RamsesV3Connector-2 | impl | live | no |
 | linea | `0xc7d6e281c24e2f2c9e4a61efd5322b4910c2940b` | RamsesV3Connector-3 | impl | live | no |
 | linea | `0xd1095aa3e21ce73b13e5eab530980a504fa46924` | NftFarmStrategy | impl | live | no |
-| linea | `0xd248aa0b8c6c20276f996a284a8791ff774f2fa0` | NftFarmStrategy-2 | impl | live | no |
-| linea | `0xd3926a4ab52f4f65207292c1b8153d48b7bcef31` | NftFarmStrategy-3 | impl | live | no |
+| linea | `0xd248aa0b8c6c20276f996a284a8791ff774f2fa0` | NftFarmStrategy-3 | impl | live | no |
+| linea | `0xd3926a4ab52f4f65207292c1b8153d48b7bcef31` | NftFarmStrategy-2 | impl | live | no |
 | linea | `0xdb50987908164510c5ff8a13db8dd17bdbcf2018` | AcrossSwapAdapter | impl | live | no |
 | linea | `0xdd4dc3f5c39a98c15c0c427f7cf467347f44dfff` | EtherexRouterConnector-2 | impl | live | no |
 | linea | `0xdf103a51546df07fb3ff51e541f31d36777c8831` | ExactTransferLib | impl | live | no |
@@ -1267,7 +1288,7 @@
 | mantle | `0x125caffe923eaa451461ab98353c4a88154cb45e` | RamsesGaugeRegistry | impl | live | no |
 | mantle | `0x13c59ec73585f1437728cdf29535ae088f125089` | FarmStrategy-2 | impl | live | no |
 | mantle | `0x1549de86b2de4f619663841b276b1a62002a14f6` | VestingContract | impl | live | no |
-| mantle | `0x16a54ae47b7e2eea0ed60438ab5d970c284ffcf0` | ZapLib-6 | impl | live | no |
+| mantle | `0x16a54ae47b7e2eea0ed60438ab5d970c284ffcf0` | ZapLib-5 | impl | live | no |
 | mantle | `0x1bfe637077f5a295935043805f66715707389700` | RamsesGaugeConnector-2 | impl | live | no |
 | mantle | `0x1e2bc5c694af33a3dd8dc8f06b7b959e70612f72` | WrapAdapter-2 | impl | live | no |
 | mantle | `0x23e5d94e7c87a1349c5bafc5dae90a2dd64cfa4c` | SickleMultisig | impl | live | no |
@@ -1286,7 +1307,7 @@
 | mantle | `0x4c0639d8e6aedf56103d80fe69cb58bc457bbb07` | NftFarmStrategy | impl | live | no |
 | mantle | `0x4de060a31a03b868b7e28a39ffd9cb8d0c983de7` | SolidlyAdapter | impl | live | no |
 | mantle | `0x50f3c65c6b2c754fd1a3c86c61284c631e6f493f` | NftSettingsLib | impl | live | no |
-| mantle | `0x5290487bb9a8610c844539d4b46f6c6a324d665f` | FeesLib-3 | impl | live | no |
+| mantle | `0x5290487bb9a8610c844539d4b46f6c6a324d665f` | FeesLib-4 | impl | live | no |
 | mantle | `0x55160b0f39848a7b844f3a562210489df301dee7` | TransparentUpgradeableProxy2Step | proxy | live | no |
 | mantle | `0x55d86a8f06856a902e2724cb8467c61bff7bb554` | VestingContract | impl | live | no |
 | mantle | `0x55e5838e92fc2d6fb46eeae211c0bfa93783b689` | VestingContract | impl | live | no |
@@ -1294,7 +1315,7 @@
 | mantle | `0x564dde51c3e4725542fceebf38d60f5d3068dae1` | SwapRouter | impl | live | no |
 | mantle | `0x568bd02c8f5e8f221f3b1693cee478fb1676fc02` | NftZapLib-4 | impl | live | no |
 | mantle | `0x57732ea15d14619a4bdbc4147590e0f46b2aa00c` | NftSettingsLib-2 | impl | live | no |
-| mantle | `0x5a25167c72fea35986740e6b6104c70e6505cd3e` | FeesLib-4 | impl | live | no |
+| mantle | `0x5a25167c72fea35986740e6b6104c70e6505cd3e` | FeesLib-5 | impl | live | no |
 | mantle | `0x5acb2ec8e7755366e0f23df4579cb5cfaf14715c` | ConnectorRegistry-2 | impl | live | no |
 | mantle | `0x5b8ee344996220a9983856ff74d7dee937ea8715` | ConnectorLens | impl | live | no |
 | mantle | `0x5bef015ca9424a7c07b68490616a4c1f094bedec` | MoeFactory | impl | live | no |
@@ -1330,7 +1351,7 @@
 | mantle | `0x76d8d0e37f697cc95c87f0ba9512701cf19b0cb5` | MasterChef | impl | live | no |
 | mantle | `0x76fb09f9077a6e0deb4edde76f9e36dd625dd487` | NftFarmStrategy-5 | impl | live | no |
 | mantle | `0x78bb8f32bbcf2fb36d66508361a5f003fe02894f` | VestingContract | impl | live | no |
-| mantle | `0x79768339555e213d32642ac94089ab584d9b4c9e` | Automation-7 | impl | live | no |
+| mantle | `0x79768339555e213d32642ac94089ab584d9b4c9e` | Automation-8 | impl | live | no |
 | mantle | `0x7affad07d8fe82923d24d0fcf09993e4ee181fe2` | NftFarmStrategy-9 | impl | live | no |
 | mantle | `0x7b22cc91e04d49291345293394cfaf0be9f70ba6` | ConnectorRegistry | impl | live | no |
 | mantle | `0x7badae0bf1b3b758478cb4dd94be5aeccd03804f` | RamsesGaugeRegistry | impl | unknown | no |
@@ -1411,12 +1432,12 @@
 | mantle | `0xc850df60d45c2845580e255191f1f469f592c5d2` | MoeFactory | impl | live | no |
 | mantle | `0xc8994b32f10d093a5343f45473755909b9e13126` | FarmStrategy-6 | impl | live | no |
 | mantle | `0xc96543130015b69ec282668f0f82195a87c06429` | ProxyAdmin2Step | impl | live | no |
-| mantle | `0xcaa3a49a3b1fc0c9727d9e5f936891ddd55885fd` | Automation-11 | impl | live | no |
+| mantle | `0xcaa3a49a3b1fc0c9727d9e5f936891ddd55885fd` | Automation-7 | impl | live | no |
 | mantle | `0xcc076c7c657dcafc738991297903610896d2e938` | MasterChefRewarder | impl | live | no |
 | mantle | `0xd1095aa3e21ce73b13e5eab530980a504fa46924` | BridgeSwapReceiver | impl | live | no |
 | mantle | `0xd290f6d8b57e079765c9c7a3b886c10fe4212691` | SickleVote | impl | live | no |
 | mantle | `0xd34d1328103d9cf65037aaa7e736f74b8f878dd2` | SimpleFarmStrategy-6 | impl | live | no |
-| mantle | `0xd458fc3a140692af7f00c293cb4ae99a31c2f268` | Automation-8 | impl | live | no |
+| mantle | `0xd458fc3a140692af7f00c293cb4ae99a31c2f268` | Automation-9 | impl | live | no |
 | mantle | `0xd4bd5e47548d8a6ba2a0bf4ce073cbf8fa523dcc` | MasterChef-2 | impl | live | no |
 | mantle | `0xd65eaf226cc75146b2dc9cd49264c9aeaa53773d` | PositionSettingsLib | impl | live | no |
 | mantle | `0xd6b71d2dbdafd0f87e6e91bcc5dbf023424f5a5b` | MultiFarmStrategy-3 | impl | live | no |
@@ -1459,8 +1480,8 @@
 | mantle | `0xfd2d0de5a902d19b3823d31f1bce9d8f70d850e7` | MultiFarmStrategy-8 | impl | live | no |
 | mantle | `0xfd40854b1f9113fd574640a6ef9fa55efa4afde3` | VestingContract | impl | live | no |
 | mantle | `0xfe8b6aaf50212939b52558e8813b62c9212d2d7a` | MoeHelper | impl | live | no |
-| mantle | `0xfea81bb9425770ad6146ba0d52159ef0a2f4a0e4` | NftFarmStrategy-3 | impl | live | no |
-| mantle | `0xff638dc7605065e33c74620c1f859d49183d9452` | MultiFarmStrategy-12 | impl | live | no |
+| mantle | `0xfea81bb9425770ad6146ba0d52159ef0a2f4a0e4` | NftFarmStrategy-2 | impl | live | no |
+| mantle | `0xff638dc7605065e33c74620c1f859d49183d9452` | MultiFarmStrategy-9 | impl | live | no |
 | mantle | `0xffcdd3019bc54e14d32985e3e080875e2267af30` | AggregatorConnector | impl | live | no |
 | mantle | `0xffdeab5342e5370773a88b4fe0a6016c0f741602` | VestingContract | impl | live | no |
 | mantle | `0xfff75d099baee29f447866bc5299cd67c04761c8` | PositionSettingsLib-2 | impl | live | no |
@@ -1481,7 +1502,7 @@
 | mode | `0x3647966e65f31f9766ceef2a26cdd7dad47c14ae` | ExactTransferLib-3 | impl | unknown | no |
 | mode | `0x3b8886c3f6d3ba4a75d3becb3c83864c0c01e1f3` | BridgeSwapReceiver-5 | impl | live | no |
 | mode | `0x3d660d59095288fc22b7fc5d244f60ed9c492813` | CamelotV2Adapter | impl | unknown | no |
-| mode | `0x400b2d19abd0883a80945c82492393d3c0bba104` | FarmStrategy-11 | impl | unknown | no |
+| mode | `0x400b2d19abd0883a80945c82492393d3c0bba104` | FarmStrategy-12 | impl | unknown | no |
 | mode | `0x40bd94a5295894732470328332063bcb3b78d34c` | MultiFarmStrategy-14 | impl | unknown | no |
 | mode | `0x428ef7e95888fac6b4fc6a192ed6074281edd75c` | SwapRouter-10 | impl | live | no |
 | mode | `0x46d70ffdc1487107fec4471b3157d22d1f582766` | BridgeDepositStrategy-4 | impl | live | no |
@@ -1492,7 +1513,7 @@
 | mode | `0x4c0639d8e6aedf56103d80fe69cb58bc457bbb07` | AggregatorConnector-8 | impl | unknown | no |
 | mode | `0x4de060a31a03b868b7e28a39ffd9cb8d0c983de7` | AcrossDepositAdapter-3 | impl | unknown | no |
 | mode | `0x5225cb0a72cf263ea65560f036d4b4f3660d52a2` | VelodromeGaugeConnector-5 | impl | live | no |
-| mode | `0x53d9780dbd3831e3a797fd215be4131636cd5fdf` | SickleFactory-9 | impl | live | no |
+| mode | `0x53d9780dbd3831e3a797fd215be4131636cd5fdf` | SickleFactory-10 | impl | live | no |
 | mode | `0x53e3f366be63ab95fa14162855e621af522f6e6a` | AerodromeRouterAdapter-3 | impl | unknown | no |
 | mode | `0x564dde51c3e4725542fceebf38d60f5d3068dae1` | BridgeRouter-3 | impl | unknown | no |
 | mode | `0x57732ea15d14619a4bdbc4147590e0f46b2aa00c` | ConnectorLens-4 | impl | unknown | no |
@@ -1530,7 +1551,7 @@
 | mode | `0xb7b53ae25fd776b4eebd2808ca92b61720d8b8a8` | BridgeWithdrawStrategy-2 | impl | unknown | no |
 | mode | `0xba3aee516399388c779463183d00bb579f5041ca` | SlipstreamSugar | impl | unknown | no |
 | mode | `0xc2d77fe090f7650633820b0dbf23809f66f1a3cc` | AlgebraRouterAdapter-2 | impl | unknown | no |
-| mode | `0xc49068138d0cc37a9a50443f2d5b8261f9586d19` | FarmStrategy-11 | impl | unknown | no |
+| mode | `0xc49068138d0cc37a9a50443f2d5b8261f9586d19` | FarmStrategy-12 | impl | unknown | no |
 | mode | `0xc7ba8fcc3154a4a1fe13bd038369bb650026a646` | SuperchainGaugeRegistry-8 | impl | unknown | no |
 | mode | `0xd65eaf226cc75146b2dc9cd49264c9aeaa53773d` | TransferLib-6 | impl | live | no |
 | mode | `0xd6b71d2dbdafd0f87e6e91bcc5dbf023424f5a5b` | MultiFarmStrategy-15 | impl | unknown | no |
@@ -1582,7 +1603,7 @@
 | optimism | `0x337c2dbd1ee386f954cf7bfa1cad70c2bae12b59` | SlipstreamGaugeConnector-2 | impl | live | no |
 | optimism | `0x33ba552cda49977da106d2381c32414ddc41b524` | ConnectorRegistry | impl | live | no |
 | optimism | `0x34ec3cb58f6049044f58a439425ffc0e9870f65f` | MultiFarmStrategy-4 | impl | live | no |
-| optimism | `0x34f895a2b90e60721a046a7cbf330ca74070968c` | FeesLib-5 | impl | live | no |
+| optimism | `0x34f895a2b90e60721a046a7cbf330ca74070968c` | FeesLib-6 | impl | live | no |
 | optimism | `0x372e7761997858be1ee3c492dfa01091282c5083` | SickleRegistry | impl | live | no |
 | optimism | `0x3747fd29c21eb76ddff850ae67b420bf96af9f38` | ZapLib-2 | impl | live | no |
 | optimism | `0x37f230a6de751d7940bce005869f93cbbc73018d` | SlipstreamGaugeConnector | impl | live | no |
@@ -1591,7 +1612,7 @@
 | optimism | `0x3949a9924791e7d598222a9e2ccb5ed9c95b632e` | AerodromeGaugeRegistry | impl | live | no |
 | optimism | `0x3b79a68ff15459f32fa14f708d8de95d255447a7` | FarmStrategy-3 | impl | live | no |
 | optimism | `0x3bf1a33363ace350f09fd4d32f50121deb23a10b` | FeesLib-2 | impl | live | no |
-| optimism | `0x3cb9ae71566a1bae8244fbbe812d436adc7dc83c` | FarmStrategy-13 | impl | live | no |
+| optimism | `0x3cb9ae71566a1bae8244fbbe812d436adc7dc83c` | FarmStrategy-14 | impl | live | no |
 | optimism | `0x3ea8affc1da2124231110450a738758ee30c8b46` | SwapLib-2 | impl | live | no |
 | optimism | `0x3ebc734cdd7d9fe4d9aa13be82de350295a4e5b3` | RouterAllowlist | impl | live | no |
 | optimism | `0x3ebf49368d8449b2c11602827fec41970dbbf875` | NftSettingsLib | impl | live | no |
@@ -1610,7 +1631,7 @@
 | optimism | `0x46292986df2fee3a048dd6753918e62e93806c2d` | AerodromeStrategy | impl | live | no |
 | optimism | `0x464f206417eb5fa8a34c9ec54b1c3f436b3454a7` | AggregatorConnector | impl | live | no |
 | optimism | `0x4763ebb49b5f6c3990e1976d34e4fb75b1d78fd9` | ZapLib-3 | impl | live | no |
-| optimism | `0x481d6b8406145727bf6509510151c9ad8d00ea35` | FarmStrategy-14 | impl | live | no |
+| optimism | `0x481d6b8406145727bf6509510151c9ad8d00ea35` | FarmStrategy-15 | impl | live | no |
 | optimism | `0x495193daebde03e12857f4d3bb8984da2d447a69` | SugarHelper | impl | live | no |
 | optimism | `0x49606f96fa3d8d52f37dec96781fa4dd36d4890d` | LPFarmStrategy | impl | live | no |
 | optimism | `0x49f248179e5788e5d8640fe963ee000d3f30d3a4` | NonfungibleTokenPositionDescriptor-4 | impl | live | no |
@@ -1651,8 +1672,8 @@
 | optimism | `0x5cdd49b5b5722d92731c60211bbc0e86e93a1c0f` | SlipstreamGaugeConnector | impl | live | no |
 | optimism | `0x5ce9c2e3e803712e6fec5368968b61a55d851cdf` | NftFarmStrategy-16 | impl | live | no |
 | optimism | `0x5d467ac70e6141834741664b435c8d60973f5900` | QuoterV2-6 | impl | live | no |
-| optimism | `0x60d3345c2d2fd62dbed55cf2178bdcff69d17698` | FeesLib-6 | impl | live | no |
-| optimism | `0x61d7f5c2821416600651e72ee4c9cc286b7527e2` | FarmStrategy-15 | impl | live | no |
+| optimism | `0x60d3345c2d2fd62dbed55cf2178bdcff69d17698` | FeesLib-3 | impl | live | no |
+| optimism | `0x61d7f5c2821416600651e72ee4c9cc286b7527e2` | FarmStrategy-16 | impl | live | no |
 | optimism | `0x61f42c56555391903da28d35aff8ee1362f1cdde` | CLFactory | impl | live | no |
 | optimism | `0x628ee3400ea249a575ad4422c6f9403f719a678f` | NFTSVG | impl | live | no |
 | optimism | `0x629157747ee3a635f9ea1ed37fd0dc7187d45478` | SlipstreamOracle | impl | live | no |
@@ -1678,7 +1699,7 @@
 | optimism | `0x7361e9079920fb75496e9764a2665d8ee5049d5f` | CustomSwapFeeModule-3 | impl | live | no |
 | optimism | `0x74547dd2bd05c8ad55a98272db37fcd4f2220283` | AerodromeSlipstreamStrategy | impl | live | no |
 | optimism | `0x756e7c245c69d351fffbfb88ba234aa395ada8ec` | VotingRewardsFactory | impl | live | no |
-| optimism | `0x76384443b91a576809dfc2cdc0f7ae8f3148147a` | FarmStrategy-16 | impl | live | no |
+| optimism | `0x76384443b91a576809dfc2cdc0f7ae8f3148147a` | FarmStrategy-17 | impl | live | no |
 | optimism | `0x764f216dd1628d50b3b22ea70c315b885d1d0a51` | VelodromeGaugeRegistry-4 | impl | live | no |
 | optimism | `0x7671cba63cf2b2766ab12d42b93fbe166a692171` | SlipstreamGaugeConnector-8 | impl | live | no |
 | optimism | `0x76861568ab8bb81b9875866cf22997ab2b37bf4a` | NftZapLib-2 | impl | live | no |
@@ -1692,9 +1713,9 @@
 | optimism | `0x79143633c2b1bece6ed26eaccfa85d296eff4d6c` | SlipstreamNftConnector-5 | impl | live | no |
 | optimism | `0x7ae5c457fd5d842fb909c190210f0465f1bb4f5a` | BridgeRouter | impl | live | no |
 | optimism | `0x7badae0bf1b3b758478cb4dd94be5aeccd03804f` | AggregatorConnector-4 | impl | live | no |
-| optimism | `0x7bb5af2a8ba0b35a705b8c5107a3775e56900bc4` | VelodromeRouterConnector | impl | live | no |
+| optimism | `0x7bb5af2a8ba0b35a705b8c5107a3775e56900bc4` | VelodromeRouterConnector-2 | impl | live | no |
 | optimism | `0x7d98c3b3f018931746efa5f8e7f9bcb32ba474fc` | NftFarmStrategy-12 | impl | live | no |
-| optimism | `0x7dae2ce337446978968a138c0aa254512ecb27f5` | NftFarmStrategy-2 | impl | live | no |
+| optimism | `0x7dae2ce337446978968a138c0aa254512ecb27f5` | NftFarmStrategy-3 | impl | live | no |
 | optimism | `0x7e4b995fc2a96f5f95cd5dcbc17f8090fcaa7406` | MixedRouteQuoterV1 | impl | live | no |
 | optimism | `0x7eb798450484be0b042d5219ac77ed40a239b4d4` | FarmStrategy-8 | impl | live | no |
 | optimism | `0x7ef2701d7e51b925b160a7c93b9d592236dc1d9e` | UniversalRouter | impl | live | no |
@@ -1772,7 +1793,7 @@
 | optimism | `0xa90991c28550af1ae8d4f03cb9856caffa3aea73` | CustomSwapFeeModule | impl | live | no |
 | optimism | `0xa919163bcf17de88ae78fb7950f6cb398f8337c5` | RebalanceStrategy-2 | impl | live | no |
 | optimism | `0xa924244d0b68c902d89159036f0c1502171b039f` | SlipstreamNftConnector-14 | impl | live | no |
-| optimism | `0xa94afaeabe8fd769c65282d7486660d8912b09c9` | VelodromeRouterConnector-2 | impl | live | no |
+| optimism | `0xa94afaeabe8fd769c65282d7486660d8912b09c9` | VelodromeRouterConnector | impl | live | no |
 | optimism | `0xa9c319945f706dd1809819321a2e31c9a169e9c1` | CustomSwapFeeModule | impl | live | no |
 | optimism | `0xaa0c34c6c3f24fddee2c51b23073a2707c16a714` | OmniV3Connector-2 | impl | live | no |
 | optimism | `0xab19608881742dcbc03f94f802bde1a34833d6a6` | MultiSwapRouter | impl | live | no |
@@ -1791,10 +1812,10 @@
 | optimism | `0xb18cb98a2136fec9e768e4832c37f7a77a9497de` | NonfungibleTokenPositionDescriptor-5 | impl | live | no |
 | optimism | `0xb1e94d83333ad79ab74fc8ca6f4fafff5fbac6da` | ZapLib | impl | live | no |
 | optimism | `0xb29c27d00c4fcd47353b326926cc045584f0a0c5` | SlipstreamNftConnector-10 | impl | live | no |
-| optimism | `0xb37651c4395c871176e82584d465022c9275c015` | Automation-9 | impl | live | no |
+| optimism | `0xb37651c4395c871176e82584d465022c9275c015` | Automation-10 | impl | live | no |
 | optimism | `0xb45e3ca21c0fc8677eab9e094ec89044f6c19b83` | ConnectorRegistry-3 | impl | live | no |
 | optimism | `0xb4c31b0f0b76b351395d4acc94a54dd4e6fba1e8` | SickleFactory | impl | live | no |
-| optimism | `0xb5c190fb5475df71655961c2ac16b8b15f79cc26` | FeesLib-3 | impl | live | no |
+| optimism | `0xb5c190fb5475df71655961c2ac16b8b15f79cc26` | FeesLib-4 | impl | live | no |
 | optimism | `0xb7b53ae25fd776b4eebd2808ca92b61720d8b8a8` | NftSettingsLib-3 | impl | live | no |
 | optimism | `0xb81774eb1a7a44b60032a77766870a66de632777` | MixedRouteQuoterV1-5 | impl | live | no |
 | optimism | `0xba81ec1fa19d9741371f8fe816bd3a513c283896` | SugarHelper-4 | impl | live | no |
@@ -1807,7 +1828,7 @@
 | optimism | `0xbe2c2bb137009a0845be63336ca18c14e704925e` | MultiFarmStrategy-3 | impl | live | no |
 | optimism | `0xbeb46e95ed452b4f0759a0dd0a7fa6feffecf633` | BridgeSwapReceiver | impl | live | no |
 | optimism | `0xbf02307ccdfdf853b400cd651fe46d86d8ca02f7` | AggregatorConnector-4 | impl | live | no |
-| optimism | `0xbfdec182b32acf16c36ae070044b5a63323f4724` | FeesLib-4 | impl | live | no |
+| optimism | `0xbfdec182b32acf16c36ae070044b5a63323f4724` | FeesLib-5 | impl | live | no |
 | optimism | `0xc069fc890beeba42f51801219d77fb28379231fd` | NftTransferLib | impl | live | no |
 | optimism | `0xc07b5d88b6298244f4b8a84a422cf6d54d822b8a` | VelodromeSlipstreamGaugeConnector-4 | impl | live | no |
 | optimism | `0xc28ad28853a547556780bebf7847628501a3bcbb` | CLPool-4 | impl | live | no |
@@ -1819,7 +1840,7 @@
 | optimism | `0xc6aacd959b35c6062ed422dd1537fb9cb61fc2e6` | FarmStrategy-3 | impl | live | no |
 | optimism | `0xc7bb3e702ec7aa8568009855fcc544238303973e` | FarmStrategy-3 | impl | live | no |
 | optimism | `0xc8695f08d59133945879412b9d8d477379210ffc` | MultiFarmStrategy-7 | impl | live | no |
-| optimism | `0xc8994b32f10d093a5343f45473755909b9e13126` | FarmStrategy-17 | impl | live | no |
+| optimism | `0xc8994b32f10d093a5343f45473755909b9e13126` | FarmStrategy-18 | impl | live | no |
 | optimism | `0xc9b828518a8b96fde860f014c1b400f868af648e` | CLGauge | impl | live | no |
 | optimism | `0xcaa3a49a3b1fc0c9727d9e5f936891ddd55885fd` | ZapLib-4 | impl | live | no |
 | optimism | `0xcb961312ced6be51716c4b6cfca1081cf0283991` | RebalanceStrategy-3 | impl | live | no |
@@ -1849,7 +1870,7 @@
 | optimism | `0xdf9db1c1e6958f67ac972c3d35bd31461b560653` | CustomUnstakedFeeModule | impl | live | no |
 | optimism | `0xe054aeee167dc213886f343647f451bfea6bdfa1` | MultiSwapRouter-2 | impl | live | no |
 | optimism | `0xe07eaacb21f26efe4c64314ceb6258d517eced54` | CustomUnstakedFeeModule | impl | live | no |
-| optimism | `0xe09c9208b29ad28fcc6ac6bf6334c1f12a9bea3a` | NftFarmStrategy-3 | impl | live | no |
+| optimism | `0xe09c9208b29ad28fcc6ac6bf6334c1f12a9bea3a` | NftFarmStrategy-2 | impl | live | no |
 | optimism | `0xe0a596c403e854ffb9c828ab4f07eeae04a05d37` | CLPool | impl | live | no |
 | optimism | `0xe16b3c51ae129b90ffb2c5714d923584b0309b4c` | AggregatorConnector | impl | live | no |
 | optimism | `0xe32472f3e8f1238ec25c4a8bd0d8d719020aec9b` | SwapLib-2 | impl | live | no |
@@ -1895,8 +1916,8 @@
 | polygon | `0x059571c94794349bd97a8e15f19e7201d13b74c1` | NftFarmStrategy | impl | live | no |
 | polygon | `0x06b559fef135ed5c9133478a2af502d8d44d59b5` | AggregatorConnector | impl | live | no |
 | polygon | `0x0d3e1d7b3a0861f0e8122ccc74d43eb4e816c0c2` | AcrossSwapAdapter-2 | impl | live | no |
-| polygon | `0x0f6abc6b808b377d6aed8da1fad5e135c99c81a3` | ZapLib-5 | impl | live | no |
-| polygon | `0x125caffe923eaa451461ab98353c4a88154cb45e` | NftFarmStrategy-3 | impl | live | no |
+| polygon | `0x0f6abc6b808b377d6aed8da1fad5e135c99c81a3` | ZapLib-6 | impl | live | no |
+| polygon | `0x125caffe923eaa451461ab98353c4a88154cb45e` | NftFarmStrategy-2 | impl | live | no |
 | polygon | `0x152a4f338f6765d181234d6996e6f80063bdf01c` | NftZapLib | impl | live | no |
 | polygon | `0x16a54ae47b7e2eea0ed60438ab5d970c284ffcf0` | AerodromeRouterAdapter-2 | impl | live | no |
 | polygon | `0x1732e3ebc63e8d7c5d32ba8e9bd40982c21e320f` | VelodromeUniversalRouterAdapter-2 | impl | live | no |
@@ -1938,11 +1959,11 @@
 | polygon | `0x9774e26f467f1ac603b63444bcdeb4b519a4f3ea` | PancakeInfinityAdapter | impl | live | no |
 | polygon | `0x991ce3079450f466ba3b6e6beccd1880e2a88581` | QuickswapV3Connector-3 | impl | live | no |
 | polygon | `0xa260cd81ed7dba3e8cb8c0e2139958e4dcc53a8c` | AlgebraPoolAdapter | impl | live | no |
-| polygon | `0xa452df37e4f845c15f49489486a9b4e8323bd7c4` | NftFarmStrategy-2 | impl | live | no |
+| polygon | `0xa452df37e4f845c15f49489486a9b4e8323bd7c4` | NftFarmStrategy-3 | impl | live | no |
 | polygon | `0xa66aef2c2d4d0dbdcd3dabdbb068ab700ac8293a` | BridgeSwapReceiver | impl | live | no |
 | polygon | `0xa7c8ecc21bcd023eb1db5bb35113b7123cb1f33b` | SweepStrategy | impl | live | no |
 | polygon | `0xa8d2de45490c563b1e9524f49cbc07cc3da44baf` | BlackholeV2Adapter | impl | live | no |
-| polygon | `0xac371d6e651b6450ea8c4ce346ddd44b62d851b5` | SickleFactory-5 | impl | live | no |
+| polygon | `0xac371d6e651b6450ea8c4ce346ddd44b62d851b5` | SickleFactory-6 | impl | live | no |
 | polygon | `0xad4dd7cbd75fc30b974de230815ba8b9f0d5864b` | SwapLib | impl | live | no |
 | polygon | `0xaef14a678b24e5e522e603e280861224ed4839ec` | CrossFarmMoveStrategy | impl | live | no |
 | polygon | `0xb347cd0a0c5b61db97e40f2105f6701250cdfc18` | AcrossDepositAdapter | impl | live | no |
@@ -1952,32 +1973,7 @@
 | polygon | `0xbfdec182b32acf16c36ae070044b5a63323f4724` | BridgeDepositStrategy | impl | live | no |
 | polygon | `0xd34d1328103d9cf65037aaa7e736f74b8f878dd2` | FarmStrategy-2 | impl | live | no |
 | polygon | `0xdf70bbcf26dfa446f0f492ec0fe054966e316916` | QuickswapV3Connector-4 | impl | live | no |
-| polygon | `0xf1ce0ea6387b81d27cd4ac691524b4bc33a4a0a7` | MultiFarmStrategy-9 | impl | live | no |
+| polygon | `0xf1ce0ea6387b81d27cd4ac691524b4bc33a4a0a7` | MultiFarmStrategy-11 | impl | live | no |
 | polygon | `0xf3442bb9f63d35e668dde0abf61b7f716156d204` | NftFarmStrategy-4 | impl | live | no |
 | polygon | `0xf80494f691390306f4e99fefd61692e6fdade5ac` | ExactTransferLib | impl | live | no |
 | polygon | `0xff638dc7605065e33c74620c1f859d49183d9452` | CamelotV2Adapter | impl | live | no |
-
-## Source unavailable (21)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- avalanche `0x54d81f06f7ee744a46048d0edd9983e69994eacf`
-- avalanche `0xf8d2b58823ab2604f01fc2e87250fee99df980cb`
-- base `0xcf82a69af130de70b36767c042435232a751d508`
-- chain-130 `0x1732e3ebc63e8d7c5d32ba8e9bd40982c21e320f`
-- chain-130 `0x1bfe637077f5a295935043805f66715707389700`
-- chain-130 `0x1d503885f90260e3599fa86ea5deb049e67b6115`
-- chain-130 `0x233d9067677dcf1a161954d45b4c965b9d567168`
-- chain-130 `0x298614a6d91a9f80f144784cd916348c08f2b6db`
-- chain-130 `0x2a2d2dfd492c155ce7e918709aa9a870627e0deb`
-- chain-130 `0x2eb61ceb6bd6f91587a5616fab0f5fbcab7b0427`
-- chain-130 `0x2ef5eafa8711e2441bd519eed5d09f8dfef2ecf3`
-- chain-130 `0x30d28c01b3c7d81cf5f460b8c78ff0bf69c52e67`
-- chain-130 `0x3538683cf26ec9c5e21f7e825817410906ad7d97`
-- chain-130 `0x3d660d59095288fc22b7fc5d244f60ed9c492813`
-- chain-130 `0x48ea9dc1cde3063bc7ae1c4e5973a6224e6bee4d`
-- chain-130 `0x49606f96fa3d8d52f37dec96781fa4dd36d4890d`
-- chain-130 `0x4a1daaa42496a208b138c92bcca3345c53a7b5b3`
-- chain-130 `0xf8d2b58823ab2604f01fc2e87250fee99df980cb`
-- chain-130 `0xfea81bb9425770ad6146ba0d52159ef0a2f4a0e4`
-- chain-130 `0xff638dc7605065e33c74620c1f859d49183d9452`
-- chain-130 `0xfff75d099baee29f447866bc5299cd67c04761c8`

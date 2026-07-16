@@ -439,6 +439,8 @@ library PoolLibrary {
       if (shortAmount == 0) Error.zeroOutput();
     }
 
+    liquidityPosition.mint(liquidityAmount);
+    pool.liquidity += liquidityAmount;
     // Ask the msg.sender how much long0 position and long1 position wanted.
     (long0Amount, long1Amount, data) = ITimeswapV2PoolMintCallback(msg.sender).timeswapV2PoolMintChoiceCallback(
       TimeswapV2PoolMintChoiceCallbackParam({
@@ -454,9 +456,6 @@ library PoolLibrary {
 
     if (long0Amount != 0) pool.long0Balance += long0Amount;
     if (long1Amount != 0) pool.long1Balance += long1Amount;
-
-    liquidityPosition.mint(liquidityAmount);
-    pool.liquidity += liquidityAmount;
   }
 
   /// @dev burn Liquidity and receive Short and Long tokens

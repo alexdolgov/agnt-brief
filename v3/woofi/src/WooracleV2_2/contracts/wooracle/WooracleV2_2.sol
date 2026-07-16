@@ -426,11 +426,11 @@ contract WooracleV2_2 is Ownable, IWooracleV2_2 {
         address[5] memory CONST_BASES = [
             // mload
             // NOTE: Update token address for different chains
-            0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619, // WETH
-            0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6, // WBTC
-            0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270, // WMATIC
-            0xc2132D05D31c914a87C6611C10748AEb04B58e8F, // USDT
-            0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174 // USDC.e
+            0x4200000000000000000000000000000000000006, // WETH
+            0x68f180fcCe6836688e9084f035309E29Bf0A2095, // WBTC
+            0x4200000000000000000000000000000000000042, // OP
+            0x94b008aA00579c1307B0EF2c499aD98a8ce58e58, // USDT
+            0x7F5c764cBc14f9669B88837ca1490cCa17c31607 // USDC.e
         ];
 
         return _id < CONST_BASES.length ? CONST_BASES[_id] : basesMap[_id];

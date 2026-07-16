@@ -1,15 +1,20 @@
 # threshold-network — deployments
 
-183 verified deployment(s) across 183 component(s).
+196 verified deployment(s) across 196 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x1293a54e160d1cd7075487898d65266081a15458` | TransparentUpgradeableProxy-10 | proxy | live | no |
+| arbitrum | `0x1c8d7b744b474c080faadd5bf9ad965be4258f9e` | TransparentUpgradeableProxy-11 | proxy | live | no |
+| arbitrum | `0xd7cd996a47b3293d4fec2dbcf49692370334d9b7` | TransparentUpgradeableProxy-12 | proxy | live | no |
 | base | `0x0972e6062eac0fe8686d82ea010504066dadb887` | NoOp | impl | unknown | no |
+| base | `0x09959798b95d00a3183d20fac298e4594e599eab` | TransparentUpgradeableProxy-9 | proxy | live | no |
 | ethereum | `0x00b0466f8dc04b0782dbf1a1dfdce333f0dd082b` | ProxyV5 | proxy | unknown | no |
 | ethereum | `0x01228f83c6664a14fc3bb4ea28b7d1a2fc283bf1` | EcdsaPointsXColumn | impl | unknown | no |
 | ethereum | `0x0125c8977a02b2fa3970b1ed9af02f5bedd4ef27` | EcdsaDkgValidator | impl | unknown | no |
 | ethereum | `0x01346721418045a6c07b71052e452ef8615e9084` | CommitStore | impl | unknown | no |
 | ethereum | `0x015381651f240ed6c44122dcba6cf807c9442cd6` | CpuFrilessVerifier | impl | unknown | no |
+| ethereum | `0x0184739c32edc3471d3e4860c8e39a5f3ff85a45` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x020082a7a9c2510e1921116001152dee4da81985` | PriceRegistry | impl | unknown | no |
 | ethereum | `0x0238d2c272f17cf11aedb08cde515d56ed25e2e4` | LockReleaseTokenPool | impl | unknown | no |
 | ethereum | `0x024a697788918007592572f7cd020df2bc2abd84` | BeaconDkg | impl | unknown | no |
@@ -21,6 +26,7 @@
 | ethereum | `0x03896849091ad2905eb46971117fd89beab0ae78` | ProxyV5-2 | impl | unknown | no |
 | ethereum | `0x03bd5915b56015773210ab8c8c101849daeb4409` | TransientProxy | impl | unknown | no |
 | ethereum | `0x03cb4c67d01a78f44289541281e57c33e6b834d9` | EVM2EVMOnRamp | impl | unknown | no |
+| ethereum | `0x03e342731c08fddc34cfb43e91cb3a7e424ee0f6` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0x047dd4275bbdc1ee6b8bf026239e203c617e86d1` | PedersenHashPointsXColumn | impl | unknown | no |
 | ethereum | `0x04b94f55780682478c8d8329368aaafd320f4d32` | BitcoinDepositor | impl | unknown | no |
 | ethereum | `0x04be0e2d5eccc744be21bfb28d91d4a3cbefa8eb` | CpuConstraintPoly | impl | unknown | no |
@@ -54,6 +60,7 @@
 | ethereum | `0x1753593fb64c7338e945e3dac16df92ab1f92ed8` | V3toV45ChangesExternalInitializer | impl | unknown | no |
 | ethereum | `0x179fa59e4d19ac7c7b4e3daa0cd6557a553656a0` | StarknetERC20Bridge | impl | unknown | no |
 | ethereum | `0x18084fba666a33d37592fa2633fd49a74dd93a88` | TBTC | impl | live | yes |
+| ethereum | `0x186d048097c7406c64efb0537886e3cae100a1fe` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0x192292817680196a0215a50b07d1c5e7ab8a8636` | CairoBootloaderProgram | impl | unknown | no |
 | ethereum | `0x1a6f3bd4e4b80f85a0b1974b73d981f3295899ed` | PedersenHashPointsYColumn | impl | unknown | no |
 | ethereum | `0x1ac1841a47054e070236f1664991e52c30c04dc5` | Deposit | impl | unknown | no |
@@ -141,6 +148,7 @@
 | ethereum | `0x6aed6cc30d1b2770771052555d257da86ed47fe8` | WalletRegistryGovernance | impl | unknown | no |
 | ethereum | `0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40` | KeepRegistry | impl | unknown | no |
 | ethereum | `0x7570a2350183b4bdf7ca74fad3fc19048e6437e6` | VendingMachineV3 | impl | live | no |
+| ethereum | `0x75a6e4a7c8faa162192fad6c1f7a6d48992c619a` | TransparentUpgradeableProxy-4 | proxy | live | no |
 | ethereum | `0x773a4cacbca8e3704f8f7842531eab83e437b3c4` | AuctionBidder | impl | unknown | no |
 | ethereum | `0x78aa83bd6c9de5de0a2231366900ab060a482edd` | LPRewardsTBTCSaddle | impl | unknown | no |
 | ethereum | `0x7d7b622c07f216d99efc3efb9cf71872f46d811a` | CoveragePool | impl | live | no |
@@ -152,6 +160,7 @@
 | ethereum | `0x836cdfe63fe2d63f8bdb69b96f6097f36635896e` | LightRelay | impl | unknown | no |
 | ethereum | `0x8695ff199a1216fc7e2bf97303bf662babae1c80` | DepositStates | impl | unknown | no |
 | ethereum | `0x87effef56c7ff13e2463b5d4dce81be2340faf8b` | DepositFactory | impl | unknown | no |
+| ethereum | `0x87f005317692d05baa4193ab0c961c69e175f45f` | TimelockController | impl | live | no |
 | ethereum | `0x8836b66727bbde25974110442bb46b7a4805b36c` | MultiTroveGetter | impl | unknown | no |
 | ethereum | `0x8b63b3de93431c0f756a493644d128134291fa1b` | ARM | impl | unknown | no |
 | ethereum | `0x8fa3ef45137c3aff337e42f98023c1d7dd3666c0` | PlainTransferEscrowBeneficiary | impl | unknown | no |
@@ -169,10 +178,12 @@
 | ethereum | `0xabe0080ea5f7a58b90398b1c87093cc225e33fe1` | Auction | impl | unknown | no |
 | ethereum | `0xaf3fff06b75f99352d8c2a3c4bef1339a2f94789` | FeeRebateToken | impl | unknown | no |
 | ethereum | `0xb22764f98dd05c789929716d677382df22c05cb6` | TokenAdminRegistry | impl | unknown | no |
+| ethereum | `0xb8df0a949ac45ff8f401553a1dcb742feb38e6d3` | TransparentUpgradeableProxy-5 | proxy | live | no |
 | ethereum | `0xbb59f486135145ad247b82f9cdf52be4a58a0b81` | StakerRewardsBeneficiary | impl | unknown | no |
 | ethereum | `0xbf51807acb3394b8550f0554fb9098856ef5f491` | BeaconRewards | impl | unknown | no |
 | ethereum | `0xc5ac5a8892230e0a3e1c473881a2de7353ffca88` | ECDSARewards | impl | unknown | no |
 | ethereum | `0xc67913137429985416dbce28d9fa9ec960ba47bf` | Wallets | impl | unknown | no |
+| ethereum | `0xc9031f76006da0bd4bfa9e02adf0d448db3bc155` | TransparentUpgradeableProxy-6 | proxy | live | no |
 | ethereum | `0xcdf7028ceab81fa0c6971208e83fa7872994bee5` | T | impl | live | yes |
 | ethereum | `0xce1f983c29f7a6c0c0dfa78c4d8fe7bdfe026d4b` | VendingMachineV2 | impl | unknown | no |
 | ethereum | `0xce4b16b81a28d785feeb7b1d56a9b97d450d3443` | BridgeGovernanceParameters | impl | unknown | no |
@@ -187,3 +198,5 @@
 | ethereum | `0xf17a2fa46f86b6dfc41cbbbd1a51379d98926268` | WithBatcher | impl | unknown | no |
 | ethereum | `0xfcee62af74a63906c8adb9b3364ca290d47d99d5` | OnchainVaults | impl | unknown | no |
 | ethereum | `0xff50d164e42da7bb558c1e88afe0bd66e8c2cc70` | DelayedExecutor | impl | unknown | no |
+| polygon | `0x09959798b95d00a3183d20fac298e4594e599eab` | TransparentUpgradeableProxy-7 | proxy | live | no |
+| polygon | `0x236aa50979d5f3de3bd1eeb40e81137f22ab794b` | TransparentUpgradeableProxy-8 | proxy | live | no |

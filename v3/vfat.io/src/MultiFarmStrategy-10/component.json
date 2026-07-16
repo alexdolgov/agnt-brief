@@ -10,17 +10,27 @@
     "build_command": "forge build --root \"src/MultiFarmStrategy-10\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0x85378fa1d0707897d948ba322b5eb43254e4d7c2",
+      "address": "0xf0b9f58b97906ce684134034256e78cd058610d3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x54d81f06f7ee744a46048d0edd9983e69994eacf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

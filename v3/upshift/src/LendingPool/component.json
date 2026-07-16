@@ -10,17 +10,37 @@
     "build_command": "forge build --root \"src/LendingPool\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x01630191978b6ade4e959054dcd4863a503ecce9",
+      "address": "0x3695305ca200858e9981b11b87b2fe3d91488c60",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "unknown",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x43d41393124dfca45567ef005f5c79311c57c65b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5b53d5474f4d6a3c5388f597d058eb0962b253b6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

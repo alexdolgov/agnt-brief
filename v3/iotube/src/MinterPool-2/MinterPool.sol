@@ -1,6 +1,6 @@
-// File: ownership/Ownable.sol
+// File: contracts/ownership/Ownable.sol
 
-pragma solidity ^0.5.0;
+pragma solidity <6.0 >=0.4.0;
 
 
 /**
@@ -42,7 +42,7 @@ contract Ownable {
   }
 
 }
-// File: iotube/MinterPool.sol
+// File: contracts/iotube/MinterPool.sol
 
 pragma solidity <6.0 >=0.4.24;
 

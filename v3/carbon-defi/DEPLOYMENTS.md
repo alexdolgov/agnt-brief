@@ -1,6 +1,6 @@
 # carbon-defi — deployments
 
-32 verified deployment(s) across 18 component(s).
+34 verified deployment(s) across 20 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -10,6 +10,7 @@
 | base | `0xc7dd38e64822108446872c5c2105308058c5c55c` | CarbonVortex-2 | impl | live | no |
 | base | `0xe4816658ad10bf215053c533cceae3f59e1f1087` | CarbonVortex-3 | impl | live | no |
 | blast | `0x30dd96d6b693f78730c7c48b6849d9c44caf39f0` | CarbonVortex | impl | live | no |
+| blast | `0x31548b11d685a358de7f52978e099e04116b2db0` | VortexAcrossBridge | impl | live | no |
 | blast | `0x59f21012b2e9ba67ce6a7605e74f945d0d4c84ea` | CarbonVortex-2 | impl | live | no |
 | blast | `0x5e994ac7d65d81f51a76e0bb5a236c6fda8dbf9a` | CarbonVortex-3 | impl | live | no |
 | chain-1329 | `0x4bbd9fae81734cd2c73428307c74079f4e1b08a2` | CarbonVortex | impl | live | no |
@@ -23,6 +24,7 @@
 | chain-42220 | `0x4fe1b742e484181255385a026653f8bc1115b4c1` | CarbonVortex | impl | live | no |
 | chain-42220 | `0x6cd7f631f8c017bb4427d3257593e29ed9bc2fdc` | CarbonVortex | impl | unknown | no |
 | chain-42220 | `0x8b66315ae646d3b528184c37cd9365aebae1f3a0` | CarbonVortex-2 | impl | live | no |
+| chain-42220 | `0xd9c6f857f296a27e2d64a62634a6a30eddafacdb` | VortexOpStackBridge | impl | live | no |
 | chain-42220 | `0xfe19cba3ab1a189b7fc17caa798df64ad2b54d4d` | CarbonVortex-2 | impl | live | no |
 | ethereum | `0x2c0fa8b5c3a26ae8f014efb50ff27d95dd923502` | CarbonVortex-4 | impl | live | no |
 | ethereum | `0x3660f04b79751e31128f6378eac70807e38f554e` | OptimizedTransparentUpgradeableProxy | proxy | live | yes |

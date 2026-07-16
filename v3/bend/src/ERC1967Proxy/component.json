@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/ERC1967Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 8,
+  "deployment_count": 12,
   "audited": true,
   "audits_covering": [
     "https://github.com/berachain/security-audits/blob/main/20260425-PoLNext-Spearbit.pdf"
@@ -39,6 +39,16 @@
     {
       "chain": "chain-80094",
       "chain_id": 80094,
+      "address": "0x4f4a5c2194b8e856b7a05b348f6ba3978fb6f6d5",
+      "is_proxy": true,
+      "implementation_address": "0xc7d4792c4c4542c3b33ff42018b2b4a8ed94cebb",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392049"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
       "address": "0x813dcdba9197947792985c866ce98d6739ca821a",
       "is_proxy": true,
       "implementation_address": "0x59f977fb8bbb820f4e3f09dcd9dae851b5d08462",
@@ -55,6 +65,26 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "392056"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xa4afef880f5ce1f63c9fb48f661e27f8b4216401",
+      "is_proxy": true,
+      "implementation_address": "0x6331f0a4e0220a14be27bd31af091f0a1ac036a1",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392058"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xb5f2000b5744f207c931526cae2134caa8b6862a",
+      "is_proxy": true,
+      "implementation_address": "0xd4e9dd9bb5acc31b550b618701c836faef6e0ee1",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392061"
     },
     {
       "chain": "chain-80094",
@@ -95,6 +125,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "392072"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xfcbd14dc51f0a4d49d5e53c2e0950e0bc26d0dce",
+      "is_proxy": true,
+      "implementation_address": "0x96b1a552a97da5503343d0f9ff2766c616e62905",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392075"
     }
   ]
 }

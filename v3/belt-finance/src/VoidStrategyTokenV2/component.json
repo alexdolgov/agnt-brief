@@ -1,8 +1,8 @@
 {
   "component": "VoidStrategyTokenV2",
   "main_contract": "VoidStrategyTokenV2",
-  "source_entry_count": 1,
-  "source_file_count": 1,
+  "source_entry_count": 3,
+  "source_file_count": 3,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0xa5c2b60902e445470c7e5221d396d28a5ffbcbaf",
+      "address": "0x169a78a3bb78a6754b30f2e30753be475bd978c7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392133"
     }
   ]
 }

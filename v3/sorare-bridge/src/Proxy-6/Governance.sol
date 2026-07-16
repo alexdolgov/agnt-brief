@@ -1,5 +1,5 @@
 /*
-  Copyright 2019-2022 StarkWare Industries Ltd.
+  Copyright 2019-2021 StarkWare Industries Ltd.
 
   Licensed under the Apache License, Version 2.0 (the "License").
   You may not use this file except in compliance with the License.
@@ -14,31 +14,47 @@
   and limitations under the License.
 */
 // SPDX-License-Identifier: Apache-2.0.
-pragma solidity ^0.6.12;
+pragma solidity ^0.6.11;
 
+import "GovernanceStorage.sol";
 import "MGovernance.sol";
 
 /*
   Implements Generic Governance, applicable for both proxy and main contract, and possibly others.
   Notes:
-   The use of the same function names by both the Proxy and a delegated implementation
-   is not possible since calling the implementation functions is done via the default function
-   of the Proxy. For this reason, for example, the implementation of MainContract (MainGovernance)
-   exposes mainIsGovernor, which calls the internal _isGovernor method.
+  1. This class is virtual (getGovernanceTag is not implemented).
+  2. The use of the same function names by both the Proxy and a delegated implementation
+     is not possible since calling the implementation functions is done via the default function
+     of the Proxy. For this reason, for example, the implementation of MainContract (MainGovernance)
+     exposes mainIsGovernor, which calls the internal isGovernor method.
 */
-struct GovernanceInfoStruct {
-    mapping(address => bool) effectiveGovernors;
-    address candidateGovernor;
-    bool initialized;
-}
-
-abstract contract Governance is MGovernance {
+abstract contract Governance is GovernanceStorage, MGovernance {
     event LogNominatedGovernor(address nominatedGovernor);
     event LogNewGovernorAccepted(address acceptedGovernor);
     event LogRemovedGovernor(address removedGovernor);
     event LogNominationCancelled();
 
-    function getGovernanceInfo() internal view virtual returns (GovernanceInfoStruct storage);
+    /*
+      Returns a string which uniquely identifies the type of the governance mechanism.
+    */
+    function getGovernanceTag()
+        virtual
+        internal
+        pure
+        returns (string memory);
+
+    /*
+      Returns the GovernanceInfoStruct associated with the governance tag.
+    */
+    function contractGovernanceInfo()
+        internal
+        view
+        returns (GovernanceInfoStruct storage) {
+        string memory tag = getGovernanceTag();
+        GovernanceInfoStruct storage gub = governanceInfo[tag];
+        require(gub.initialized, "NOT_INITIALIZED");
+        return gub;
+    }
 
     /*
       Current code intentionally prevents governance re-initialization.
@@ -51,59 +67,62 @@ abstract contract Governance is MGovernance {
       2. Modify the require part in this function, so that it will exit quietly
          when trying to re-initialize (uncomment the lines below).
     */
-    function initGovernance() internal {
-        GovernanceInfoStruct storage gub = getGovernanceInfo();
+    function initGovernance()
+        internal
+    {
+        string memory tag = getGovernanceTag();
+        GovernanceInfoStruct storage gub = governanceInfo[tag];
+        // TODO(Remo,01/09/2021): Consider un-commenting lines below.
+        // if (gub.initialized) {
+        //     return;
+        // }
         require(!gub.initialized, "ALREADY_INITIALIZED");
-        gub.initialized = true; // to ensure addGovernor() won't fail.
+        gub.initialized = true;  // to ensure addGovernor() won't fail.
         // Add the initial governer.
         addGovernor(msg.sender);
-
-        // Emit governance information.
-        emit LogNominatedGovernor(msg.sender);
-        emit LogNewGovernorAccepted(msg.sender);
     }
 
-    function _isGovernor(address user) internal view override returns (bool) {
-        GovernanceInfoStruct storage gub = getGovernanceInfo();
-        return gub.effectiveGovernors[user];
+    function isGovernor(address testGovernor)
+        internal view override
+        returns (bool){
+        GovernanceInfoStruct storage gub = contractGovernanceInfo();
+        return gub.effectiveGovernors[testGovernor];
     }
 
     /*
       Cancels the nomination of a governor candidate.
     */
-    function _cancelNomination() internal onlyGovernance {
-        GovernanceInfoStruct storage gub = getGovernanceInfo();
-        if (gub.candidateGovernor != address(0x0)) {
-            gub.candidateGovernor = address(0x0);
-            emit LogNominationCancelled();
-        }
+    function cancelNomination() internal onlyGovernance() {
+        GovernanceInfoStruct storage gub = contractGovernanceInfo();
+        gub.candidateGovernor = address(0x0);
+        emit LogNominationCancelled();
     }
 
-    function _nominateNewGovernor(address newGovernor) internal onlyGovernance {
-        GovernanceInfoStruct storage gub = getGovernanceInfo();
-        require(newGovernor != address(0x0), "BAD_ADDRESS");
-        require(!_isGovernor(newGovernor), "ALREADY_GOVERNOR");
-        require(gub.candidateGovernor == address(0x0), "OTHER_CANDIDATE_PENDING");
+    function nominateNewGovernor(address newGovernor) internal onlyGovernance() {
+        GovernanceInfoStruct storage gub = contractGovernanceInfo();
+        require(!isGovernor(newGovernor), "ALREADY_GOVERNOR");
         gub.candidateGovernor = newGovernor;
         emit LogNominatedGovernor(newGovernor);
     }
 
     /*
       The addGovernor is called in two cases:
-      1. by _acceptGovernance when a new governor accepts its role.
+      1. by acceptGovernance when a new governor accepts its role.
       2. by initGovernance to add the initial governor.
       The difference is that the init path skips the nominate step
       that would fail because of the onlyGovernance modifier.
     */
     function addGovernor(address newGovernor) private {
-        require(!_isGovernor(newGovernor), "ALREADY_GOVERNOR");
-        GovernanceInfoStruct storage gub = getGovernanceInfo();
+        require(!isGovernor(newGovernor), "ALREADY_GOVERNOR");
+        GovernanceInfoStruct storage gub = contractGovernanceInfo();
         gub.effectiveGovernors[newGovernor] = true;
     }
 
-    function _acceptGovernance() internal {
+    function acceptGovernance()
+        internal
+    {
         // The new governor was proposed as a candidate by the current governor.
-        GovernanceInfoStruct storage gub = getGovernanceInfo();
+        GovernanceInfoStruct storage gub = contractGovernanceInfo();
         require(msg.sender == gub.candidateGovernor, "ONLY_CANDIDATE_GOVERNOR");
 
         // Update state.
@@ -117,10 +136,10 @@ abstract contract Governance is MGovernance {
     /*
       Remove a governor from office.
     */
-    function _removeGovernor(address governorForRemoval) internal onlyGovernance {
+    function removeGovernor(address governorForRemoval) internal onlyGovernance() {
         require(msg.sender != governorForRemoval, "GOVERNOR_SELF_REMOVE");
-        GovernanceInfoStruct storage gub = getGovernanceInfo();
-        require(_isGovernor(governorForRemoval), "NOT_GOVERNOR");
+        GovernanceInfoStruct storage gub = contractGovernanceInfo();
+        require (isGovernor(governorForRemoval), "NOT_GOVERNOR");
         gub.effectiveGovernors[governorForRemoval] = false;
         emit LogRemovedGovernor(governorForRemoval);
     }

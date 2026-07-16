@@ -2,5 +2,18 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "equilibria",
-  "missing": []
+  "missing": [
+    {
+      "chain_id": 9745,
+      "chain": "chain-9745",
+      "address": "0x02c033574b6ca02ddae8e0b4070d551149d981e4",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 9745,
+      "chain": "chain-9745",
+      "address": "0xad29951cda3dcd0e570e65a6ee34aa455c53421c",
+      "canonical_source_address": null
+    }
+  ]
 }

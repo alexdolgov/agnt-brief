@@ -1,8 +1,8 @@
 {
   "component": "TrancheDepositor-3",
   "main_contract": "TrancheDepositor",
-  "source_entry_count": 33,
-  "source_file_count": 33,
+  "source_entry_count": 31,
+  "source_file_count": 31,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,7 +17,7 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xe375c1d79165ec365d0bc0d0c5105a8a17f85cee",
+      "address": "0x60f130c9d1533505c3931183693d3d91060b4f1f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

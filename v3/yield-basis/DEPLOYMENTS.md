@@ -1,6 +1,6 @@
 # yield-basis — deployments
 
-105 verified deployment(s) across 105 component(s).
+114 verified deployment(s) across 113 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -22,14 +22,16 @@
 | ethereum | `0x0b459cae3f5f91469b910a8811723606b2ddeafd` | Portal | impl | unknown | no |
 | ethereum | `0x0c46f496c410465975a427e34a976fc15a2ede4f` | BondedSortitionPoolFactory | impl | unknown | no |
 | ethereum | `0x0f4e1a1bcde549653e9302ba1caab403373f1048` | HybridFactoryOwner | impl | live | yes |
-| ethereum | `0x1043eb60cef1f44654598338b1eb305cf54c421d` | Factory | impl | unknown | no |
+| ethereum | `0x1043eb60cef1f44654598338b1eb305cf54c421d` | Factory | impl | unknown | yes |
 | ethereum | `0x10b66bd1e3b5a936b7f8dbc5976004311037cdf0` | TBTCDepositToken | impl | unknown | no |
 | ethereum | `0x10fb5943e2f4f67ee6a533dae49b6d4cc443ffe5` | WalletCoordinator | impl | unknown | no |
 | ethereum | `0x118b7642b91bcf02c565a3c417534e29e4069bd8` | StakingPoolRewardsEscrowBeneficiary | impl | unknown | no |
 | ethereum | `0x1531b6e3d51bf80f634957df81a990b92da4b154` | OnDemandSPV | impl | unknown | no |
+| ethereum | `0x18084fba666a33d37592fa2633fd49a74dd93a88` | TBTC | impl | live | no |
 | ethereum | `0x1ac1841a47054e070236f1664991e52c30c04dc5` | Deposit | impl | unknown | no |
 | ethereum | `0x1af817c36708fd0d057c87a51c92fbb0e527d1f5` | MezoBridge | impl | unknown | no |
 | ethereum | `0x1b8e50ec9fbf844c3671bc178df8eadfcff831ca` | BatchedPhasedEscrow | impl | unknown | no |
+| ethereum | `0x1be14811a3a06f6af4fa64310a636e1df04c1c21` | Contract | impl | live | yes |
 | ethereum | `0x1ca5060bf142c58168aedb974aabb020bc081a56` | DepositLiquidation | impl | unknown | no |
 | ethereum | `0x1cca7e410ee41739792ea0a24e00349dd247680e` | VendingMachine | impl | unknown | no |
 | ethereum | `0x1d5b85d4099958de09fee8bc252a546b42590daf` | NoOp | impl | unknown | no |
@@ -44,15 +46,19 @@
 | ethereum | `0x27321f84704a599ab740281e285cc4463d89a3d5` | KeepBonding | impl | unknown | no |
 | ethereum | `0x29fa8f46cbb9562b87773c8f50a7f9f27178261c` | KeepFactorySelection | impl | unknown | no |
 | ethereum | `0x2ad83decf0555945094e5d25129c1f324f212517` | DepositUtils | impl | unknown | no |
+| ethereum | `0x2be6670de1ccec715bdbba2e3a6c1a05e496ec78` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0x2c0a348500638aace229d6868c26b4e64fe46ab3` | GasPriceOracle | impl | unknown | no |
 | ethereum | `0x30019d85a86abd3cda1167f4c052690c32fbdec2` | WalletProposalValidator | impl | unknown | no |
 | ethereum | `0x3106675ede4a64d70131247466fd8704a3d42123` | MovingFunds | impl | unknown | no |
+| ethereum | `0x313698667d7fdd6789a9bc70821309ff891e729a` | Twocrypto | impl | live | no |
 | ethereum | `0x369fce62b33512b2a883cf217635ee28dd17f9cc` | ReimbursementPool | impl | unknown | no |
+| ethereum | `0x370a449febb9411c95bf897021377fe0b7d100c0` | Factory | impl | live | yes |
 | ethereum | `0x392635646bc22fc13c86859d1f02b27974ac9b95` | DepositSweep | impl | unknown | no |
 | ethereum | `0x3975ce253ff9d586cf08c3898f95064b7a5718e7` | KeepRandomBeaconOperatorStatistics | impl | unknown | no |
 | ethereum | `0x3e1d7ea6c2f5a39e90a21450a57269ca50e2b5df` | MezoAllocator | impl | unknown | no |
 | ethereum | `0x3e8640574aa764763291ed733672d3a105107ac5` | Members | impl | unknown | no |
 | ethereum | `0x41c9b5639e3f2f6c61e9b78b2c6ff3746e79d91a` | TopUps | impl | unknown | no |
+| ethereum | `0x42f2a41a0d0e65a440813190880c8a65124895fa` | ERC1967Proxy-2 | proxy | live | no |
 | ethereum | `0x43faf6fe84e01dd186cfeb9ea2f0854a1ef7442f` | SignerBondsManualSwap | impl | unknown | no |
 | ethereum | `0x478409d856cd759cbfaa6639d88b7cdcb8ec29ed` | OutsourceDepositLogging | impl | unknown | no |
 | ethereum | `0x47a5f2ffdf66d13ed7e317581f458d09b49d6f44` | LPRewardsKEEPETH | impl | unknown | no |
@@ -64,6 +70,7 @@
 | ethereum | `0x535e01f948458e0b64f9db2a01da6f32e240140f` | MaintainerProxy | impl | unknown | no |
 | ethereum | `0x5499f54b4a1cb4816eefcf78962040461be3d80b` | RandomBeacon | impl | unknown | no |
 | ethereum | `0x5b9e48f8818962699fe38f5989b130cee691bbb3` | ECDSARewardsDistributor | impl | unknown | no |
+| ethereum | `0x60043a545e22424e73a2debb98f8cd4361fe3da0` | Contract-2 | impl | live | yes |
 | ethereum | `0x62d1286683507939c065c12f2d1e80cca8ccd125` | DepositFunding | impl | unknown | no |
 | ethereum | `0x632c2d58ad870fbd4569da0a4e82ddf4b56e83e8` | BeaconAuthorization | impl | unknown | no |
 | ethereum | `0x63a152ea1cd78ac3c7c1fcf1322dc6de1126750d` | TBTCConstants | impl | unknown | no |
@@ -96,6 +103,7 @@
 | ethereum | `0xbb59f486135145ad247b82f9cdf52be4a58a0b81` | StakerRewardsBeneficiary | impl | unknown | no |
 | ethereum | `0xbdc32268851c324c6185809271dfe6d8dab8dc5b` | HybridVaultFactory | impl | live | yes |
 | ethereum | `0xbf51807acb3394b8550f0554fb9098856ef5f491` | BeaconRewards | impl | unknown | no |
+| ethereum | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | WETH9 | impl | live | no |
 | ethereum | `0xc5ac5a8892230e0a3e1c473881a2de7353ffca88` | ECDSARewards | impl | unknown | no |
 | ethereum | `0xc67913137429985416dbce28d9fa9ec960ba47bf` | Wallets | impl | unknown | no |
 | ethereum | `0xca06411bd7a7296d7dbdd0050dfc846e95febeb7` | Controller | impl | unknown | no |
@@ -103,17 +111,10 @@
 | ethereum | `0xce1f983c29f7a6c0c0dfa78c4d8fe7bdfe026d4b` | VendingMachineV2 | impl | unknown | no |
 | ethereum | `0xce4b16b81a28d785feeb7b1d56a9b97d450d3443` | BridgeGovernanceParameters | impl | unknown | no |
 | ethereum | `0xd0a3088ed9fff4357b79cd3896bd38876fcb1c63` | RandomBeaconGovernance | impl | unknown | no |
+| ethereum | `0xd11b416573ebc59b6b2387da0d2c0d1b3b1f7a90` | Contract-3 | impl | live | yes |
 | ethereum | `0xd772edf092f155f3e81e2b261d96bcfae4fdc3ac` | HybridVault | impl | live | yes |
 | ethereum | `0xda534b567099ca481384133bc121d5843f681365` | TokenStakingEscrow | impl | unknown | no |
 | ethereum | `0xdf00dac2be1250cf62cbfc617ee7bc45c0016c87` | KeepVault | impl | unknown | no |
 | ethereum | `0xdf708431162ba247ddae362d2c919e0fbafcf9de` | KeepRandomBeaconOperator | impl | unknown | no |
 | ethereum | `0xe20a5c79b39bc8c363f0f49adcfa82c2a01ab64a` | TBTCSystem | impl | unknown | no |
 | ethereum | `0xe9ca1abe343515312eb6d13178c5a2dce3c036fa` | ECDSABackportRewards | impl | unknown | no |
-
-## Source unavailable (4)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x1be14811a3a06f6af4fa64310a636e1df04c1c21`
-- ethereum `0x370a449febb9411c95bf897021377fe0b7d100c0`
-- ethereum `0x60043a545e22424e73a2debb98f8cd4361fe3da0`
-- ethereum `0xd11b416573ebc59b6b2387da0d2c0d1b3b1f7a90`

@@ -1,6 +1,6 @@
 # superform — deployments
 
-68 verified deployment(s) across 58 component(s).
+70 verified deployment(s) across 60 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -9,7 +9,9 @@
 | arbitrum | `0x9045ae36f963b7184861bdce205ea8b08913b48c` | TransparentUpgradeableProxy | proxy | live | no |
 | arbitrum | `0xcede40b40f7af69f5aa6b12d75fd5ea9ce138b93` | MultiStrategyVault | impl | live | no |
 | base | `0x2c71f70e2ec720ae061ae7e0316fc9654d94f417` | SuperVault-2 | impl | live | yes |
+| base | `0x5b2193fdc451c1f847be09ca9d13a4bf60f8c86b` | UpOFT-2 | impl | live | no |
 | base | `0xe9f2a5f9f3c846f29066d7fb3564f8e6b6b2d65b` | SuperVault | proxy | live | no |
+| chain-999 | `0x642ffc3496aca19106bab7a42f1f221a329654fe` | UpOFT | impl | live | no |
 | ethereum | `0x00fbc4e3608a26e0d05905759c2a6188fda0e2cd` | CircleGatewayRemoveDelegateHook | impl | live | no |
 | ethereum | `0x02a0a95c379220e9759960a8ee923cbbc2d305cd` | PendleRouterSwapHook | impl | live | no |
 | ethereum | `0x04916bb42564cded96e10f55c059d65e4fcb1be6` | SuperLedger | impl | live | no |

@@ -1,0 +1,68 @@
+{
+  "component": "TransparentUpgradeableProxy",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_entry_count": 13,
+  "source_file_count": 13,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x054fbebd2cb17205b57fb56a426ccc54caabfabc",
+      "is_proxy": true,
+      "implementation_address": "0xdf87072ac4722431861837492edf7adbfec0efa9",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x187922d4235d10239b2c6ccb2217ada724f56dda",
+      "is_proxy": true,
+      "implementation_address": "0x873484f654a7203296931f529680449e8a642898",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1bb632a08936e17ee3971e6eeb824910567e120b",
+      "is_proxy": true,
+      "implementation_address": "0xdf87072ac4722431861837492edf7adbfec0efa9",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3ceea6a3c98c2489b09b820f62fe568b5e21e797",
+      "is_proxy": true,
+      "implementation_address": "0xb1c89185c0fdf4d73c559d683e0ac1ad8ff010d7",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa57fc404f69fce71ca26e26f0a4df7f35c8cd5c3",
+      "is_proxy": true,
+      "implementation_address": "0x873484f654a7203296931f529680449e8a642898",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

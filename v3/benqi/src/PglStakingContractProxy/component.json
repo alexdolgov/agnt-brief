@@ -10,9 +10,11 @@
     "build_command": "forge build --root \"src/PglStakingContractProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://2452785816-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MViz_ikDZy4OemUj_VI%2Fuploads%2Fa7kg3ihdbiiAMsXjIn8z%2FBenqi_Smart_Contract_Security_Audit_Halborn_v1_1.pdf"
+  ],
   "addresses": [
     {
       "chain": "avalanche",
@@ -21,6 +23,16 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x784da19e61cf348a8c54547531795ecfee2affd1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

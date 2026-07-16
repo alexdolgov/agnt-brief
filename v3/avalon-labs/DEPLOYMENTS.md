@@ -1,6 +1,6 @@
 # avalon-labs — deployments
 
-45 verified deployment(s) across 15 component(s).
+46 verified deployment(s) across 16 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -40,6 +40,7 @@
 | ethereum | `0x87ed94868f6fbaa834db81a1c5854c445cacab67` | AaveProtocolDataProvider | impl | live | no |
 | ethereum | `0x8a60e489004ca22d775c5f2c657598278d17d9c2` | USDa-2 | impl | live | no |
 | ethereum | `0xdb8d776139e635e9ab422a295d47629762b33b50` | sAVL | impl | live | no |
+| ethereum | `0xf297230fa5614545b427616148a74c888620d659` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0xfabb0fdca4348d5a40eb1bb74aea86a1c4ead7e2` | AaveProtocolDataProvider | impl | live | no |
 | mantle | `0x075df695b8e7f4361fa7f8c1426c63f11b06e326` | USDa-2 | impl | live | no |
 | mantle | `0x2bdc204b6d192921605c66b7260cfef7be34eb2e` | USDa | impl | live | no |
@@ -49,8 +50,3 @@
 | mode | `0xc5b05b7092257ee3eeaf013198d30f1e8179b6c9` | AaveProtocolDataProvider-2 | impl | live | no |
 | scroll | `0x18cbe70602ee17f79d56971f685e9eaf49da53f2` | AaveProtocolDataProvider-2 | impl | live | no |
 | scroll | `0x4ea93e846b8c6e7b3d5a5bedf4fe6b8aed58fcee` | DefaultReserveInterestRateStrategy | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0xf297230fa5614545b427616148a74c888620d659`

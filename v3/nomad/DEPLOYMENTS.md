@@ -1,12 +1,13 @@
 # nomad — deployments
 
-75 verified deployment(s) across 73 component(s).
+77 verified deployment(s) across 75 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | chain-1284 | `0x030932a76f53dbf30fcfd51a8b3eed6833383e61` | UpgradeBeaconProxy | impl | unknown | no |
 | chain-1284 | `0x0e6a3fd785f2169a086e179004710ba6b663a892` | BridgeRouter | impl | unknown | no |
 | chain-1284 | `0x18bd26b4763912176a26b422b3f6677901896048` | BridgeToken | impl | unknown | no |
+| chain-1284 | `0x2d23b3865d5b7cd88ce9ce7514a13545672d9ef7` | GnosisSafeProxy | proxy | live | no |
 | chain-1284 | `0x2e09edd238eeaea6e4da705fbe5922b1979e03ac` | UpdaterManager | impl | unknown | no |
 | chain-1284 | `0xdb378579c2af11817eea21474a39f95b5b9dfd7e` | XAppConnectionManager | impl | unknown | no |
 | ethereum | `0x02842e47a45be8bb4bc60a7fe0ce3cc5d7398f96` | GovernanceRouter | impl | unknown | no |
@@ -66,6 +67,7 @@
 | ethereum | `0x8e0679d0d4691ea345fb8c2aec9bf9c1d3eb40ed` | RenToken | impl | unknown | no |
 | ethereum | `0x8ff192e634ef6463be60792a384e5f1219a8373a` | DEX | impl | unknown | no |
 | ethereum | `0x908262de0366e42d029b0518d5276762c92b21e1` | RenExSettlement | impl | unknown | no |
+| ethereum | `0x93277b8f5939975b9e6694d5fd2837143afbf68a` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0x9992e9341e496be5bc8f424dfc1f78a7388d3a58` | DEXAdapter | impl | unknown | no |
 | ethereum | `0xa2d578e21f430d7469cbc135952dfe5c34b69772` | BCH_DAI_Reserve | impl | unknown | no |
 | ethereum | `0xb032012073765a74f8f8fe2e6685ad70253058fa` | DarknodeRegistryForwarder | impl | unknown | no |

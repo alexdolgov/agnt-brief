@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/KUSDMinterDelegator\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "395709"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x42fe8ec54db8ea76c45673723fbd69116fd28989",
+      "is_proxy": true,
+      "implementation_address": "0x5373204f23308909a10b69d6ca3e61323fb906a3",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395718"
     }
   ]
 }

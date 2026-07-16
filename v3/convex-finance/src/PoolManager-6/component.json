@@ -1,30 +1,9 @@
 {
   "component": "PoolManager-6",
   "main_contract": "PoolManager",
-  "source_entry_count": 4,
-  "source_file_count": 4,
-  "source_path_remaps": [
-    {
-      "original_path": "/contracts/PoolManager.sol",
-      "exported_path": "__audit_export_path_conflicts__/0001-94bb75c1533f-PoolManager.sol",
-      "reason": "unsafe_path"
-    },
-    {
-      "original_path": "/contracts/interfaces/IRewardManager.sol",
-      "exported_path": "__audit_export_path_conflicts__/0002-7ffc558b548e-IRewardManager.sol",
-      "reason": "unsafe_path"
-    },
-    {
-      "original_path": "/contracts/interfaces/IGauge.sol",
-      "exported_path": "__audit_export_path_conflicts__/0003-1a3a0f2ee35a-IGauge.sol",
-      "reason": "unsafe_path"
-    },
-    {
-      "original_path": "/contracts/interfaces/IBooster.sol",
-      "exported_path": "__audit_export_path_conflicts__/0004-08c4f7c41fb0-IBooster.sol",
-      "reason": "unsafe_path"
-    }
-  ],
+  "source_entry_count": 35,
+  "source_file_count": 35,
+  "source_path_remaps": [],
   "foundry": {
     "root": ".",
     "config": "foundry.toml",
@@ -36,9 +15,9 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-252",
-      "chain_id": 252,
-      "address": "0xa7a4df20e207c9410808b4217c1810096a1dabd1",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9af12dabd518a6da606caac455b2d0efb3ef97f9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

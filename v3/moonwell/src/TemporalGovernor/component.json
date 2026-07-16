@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/TemporalGovernor\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x17c9ba3fda7ec71ccfd75f978ef31e21927aff3d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396937"
+    },
     {
       "chain": "chain-1284",
       "chain_id": 1284,

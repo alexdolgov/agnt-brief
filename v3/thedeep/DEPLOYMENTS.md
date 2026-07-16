@@ -1,18 +1,28 @@
 # thedeep — deployments
 
-45 verified deployment(s) across 27 component(s).
+57 verified deployment(s) across 34 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | base | `0x065cb8139e9fed6c97f8b0851e599c56286ea031` | ICHIVaultDeployer-3 | impl | live | no |
+| base | `0x4a094b3e476d7c94445f023b5dac837f9e0f98c2` | ICHIVaultDepositGuardExtendedForMFD | impl | live | no |
 | base | `0x5507b537650897493aed459457255996bf98d8b7` | ICHIVaultDeployer | impl | live | no |
+| base | `0x7d11de61c219b70428bb3199f0dd88ba9e76bfee` | GnosisSafeProxy-3 | impl | live | no |
 | base | `0xbf38e4ffb0b0aa075531b38d71d3b18a5f599819` | ICHIVaultDepositGuard-2 | impl | live | yes |
 | base | `0xbff23e60f41a11cf131b7180cbd2bd3d47d17ad1` | ICHIVaultFactory-3 | impl | live | no |
+| base | `0xcde73030129a32724872956ac7e419a419054b87` | ICHIVaultDepositGuardExtendedForMFD-2 | impl | live | no |
+| base | `0xe00295788e91f09c5383f95df39a8916d0ab76f7` | VolatilityCheck-3 | impl | live | no |
+| base | `0xe142091351e8b2b53c1d67c73f8868c13d5dbedd` | VolatilityCheck-4 | impl | live | no |
 | base | `0xe2381b5afae99b899596bc550184a080daa31f26` | ICHIVaultDepositGuard-2 | impl | live | yes |
+| base | `0xec89a8ccb1068a74ff8d10ff69e9f1590a6712b3` | ICHIVaultDepositGuard-3 | impl | live | no |
 | base | `0xf6b5ab192f2696921f60a1ff00b99596c4045fa6` | ICHIVaultFactory | impl | live | no |
 | base | `0xf8b3f6727e44abb211c0049fc849fbb091ff765e` | TransparentUpgradeableProxy | proxy | live | no |
+| base | `0xfa196a6c9137b320e8801252e3020f25aee5c234` | ICHIVaultDepositGuard-2 | impl | live | yes |
+| bsc | `0x05cc3ca6e768a68a7f86b09e3cee754437bd5f12` | GnosisSafeProxy | impl | live | no |
+| bsc | `0x16edb18643a49e11a253ac05e7b870827e348ef8` | ICHIVaultDepositGuard | impl | live | no |
+| bsc | `0x2454e75749322d59278bca48cbd96dd62274359b` | VolatilityCheck-2 | impl | live | no |
 | chain-42220 | `0x0de3ba021a151030f344f8d05595672bbe31658c` | VaultLocker | impl | live | no |
-| chain-42220 | `0x141db85183ddb07dee22c33846aebde2101d9f25` | ICHIVaultDepositGuardExtendedForMFD | impl | live | no |
+| chain-42220 | `0x141db85183ddb07dee22c33846aebde2101d9f25` | ICHIVaultDepositGuardExtendedForMFD-3 | impl | live | no |
 | chain-42220 | `0x215d61c7a658847c9595cdf8d145fd69c2e3a50c` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | chain-42220 | `0x238394541de407fd494e455ef17c9d991f4fbed8` | ICHIVaultDepositGuard-2 | impl | live | yes |
 | chain-42220 | `0x2a8d0321cdac91be9da82d069c6116106ed0e337` | VaultLocker | impl | live | no |
@@ -33,12 +43,14 @@
 | chain-42220 | `0xb3bf88cb919a222a6f9c90ca8a9ac261cbd3e5bf` | ICHIVaultFactory-5 | impl | live | no |
 | chain-42220 | `0xb78144a950ed367f8fb94322bfa079f30bc8eb68` | ICHIVaultDeployer-4 | impl | live | no |
 | chain-42220 | `0xd2c08d7a919b86f939cd4788caaa136de85837b3` | VaultLocker | impl | live | no |
-| chain-42220 | `0xdb771ed1930b1a5993ca878e8c4f9a3e0dd6fccc` | ICHIVaultDepositGuardExtendedForMFD-3 | impl | unknown | no |
+| chain-42220 | `0xdb771ed1930b1a5993ca878e8c4f9a3e0dd6fccc` | ICHIVaultDepositGuardExtendedForMFD | impl | unknown | no |
 | chain-42220 | `0xe1962f415feb5915962d5d3a075311e6be0f8f85` | QuoterV1 | impl | live | no |
 | chain-42220 | `0xe734a15e60d2ec14225cd3e2da56c11608e73017` | MultiFeeDistributionFactory | impl | live | no |
 | chain-42220 | `0xf6b5ab192f2696921f60a1ff00b99596c4045fa6` | UV3Math-3 | impl | live | no |
 | chain-42220 | `0xfa02638efa7d79717b071a4e4fc5062d0d1b97c5` | UV3Math-4 | impl | live | no |
+| chain-42220 | `0xfacd9c86f7766a5171bb0f9927de808929429a47` | GnosisSafeProxy-4 | impl | live | no |
 | chain-42220 | `0xfbf38920ccbcff7268ad714ae5f9fad6df607065` | ICHIVaultDeployer | impl | live | no |
+| polygon | `0x0768a75f616b98ee0937673bd83b7abf142236ea` | GnosisSafeProxy-2 | impl | live | no |
 | polygon | `0x2b8ca8e6768e49f1256f91bf5b0d8f30a776d4c6` | ICHIVaultDepositGuard | impl | live | no |
 | polygon | `0x39db7da035752c969265ef0cc5ab8481ba38510a` | VaultLocker | impl | live | no |
 | polygon | `0x4608121a8d9a5f54664649e95e40829286898738` | VaultLocker | impl | live | no |

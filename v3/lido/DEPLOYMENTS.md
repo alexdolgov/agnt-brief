@@ -1,6 +1,6 @@
 # lido — deployments
 
-352 verified deployment(s) across 327 component(s).
+383 verified deployment(s) across 343 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -16,7 +16,8 @@
 | arbitrum | `0x2149a5f5d7ca96eb98a2ee6e5b0ba1a5593a1a0a` | Pool | impl | live | no |
 | arbitrum | `0x4ea3f791511d35aa859455bd60af526537040bb3` | ManyChainMultiSig | impl | unknown | no |
 | arbitrum | `0x8a89770722c84b60ce02989aedb22ac4791f8c7f` | RBACTimelock | impl | unknown | no |
-| base | `0x0e37599436974a25ddeedf795c848d30af46eacf` | OptimismBridgeExecutor | impl | live | yes |
+| base | `0x0e37599436974a25ddeedf795c848d30af46eacf` | Contract-4 | impl | live | yes |
+| base | `0x0f9a0e7071b7b21bc7a8514da2cd251bc1ff0725` | GnosisSafeProxyFactory-2 | impl | live | no |
 | base | `0x26e0e12b1682884a557e67743c6a575fd00bf332` | Flags | impl | unknown | no |
 | base | `0x2dc44ca93a1207cb50671dca68991f64776f5fa2` | ConfirmedTransactionModule | impl | unknown | no |
 | base | `0x88038752750d7717a19f2a681ef75e65fb714f1e` | LinkToken | impl | unknown | no |
@@ -28,6 +29,7 @@
 | bsc | `0x40c4464fca8cacd550c33b39d674fc257966022f` | ERC1967Upgrade | proxy | live | yes |
 | bsc | `0x4bbaab64e8114e0026afaf6bec9135f69d46aa61` | NttManager | impl | unknown | no |
 | bsc | `0xbb1e43408bbf2c767ff3bd5bbc34e183cc1ef119` | WormholeAdapter | impl | live | yes |
+| chain-1284 | `0x007132343ca619c5449297507b26c3f85e80d1b1` | GnosisSafeProxy | proxy | live | no |
 | chain-1285 | `0x1077799f07c4dc45872e832902571f56e1f9185b` | TransparentUpgradeableProxy-11 | proxy | unknown | no |
 | chain-1285 | `0x1c7c3c6077ab51e1b656a208f1a9c3ad39b84269` | Ledger | impl | unknown | no |
 | chain-1285 | `0x36cf86ffa541fed07550ffd9536dbfaac73da7eb` | LedgerBeacon | impl | unknown | no |
@@ -38,15 +40,19 @@
 | chain-1285 | `0x780825fd0e7b09a8c136ad41090e356c138e0ede` | LedgerFactory | impl | unknown | no |
 | chain-1285 | `0xa73bc334b3c64a66969677cbe7103e38dbc8858d` | Oracle | impl | unknown | no |
 | chain-130 | `0x1a513e9b6434a12c7bb5b9af3b21963308dee372` | OssifiableProxy | proxy | live | yes |
+| chain-130 | `0x332ca368dd09ad309c51dc6350730e0bca85cffe` | Contract | impl | live | yes |
+| chain-130 | `0x3b00f262e39372df2756f809dd5dc36aeedfc4a0` | Contract-4 | impl | live | yes |
 | chain-130 | `0x537a7f9d551da3c2800cb11ca17f2946d21029af` | Contract-2 | impl | live | yes |
 | chain-130 | `0x5a007d6e37633fb297b82c074b94bb29546bebc3` | ERC20RebasableBridgedPermit | impl | live | yes |
+| chain-130 | `0xac8bc65814dd0501674f6940aff1a4ea78fc20ef` | SafeProxy | proxy | live | no |
+| chain-130 | `0xb5cf096a406c1d5297d2493073168f44eb4a1a1d` | Contract-3 | impl | live | yes |
 | ethereum | `0x00a3d6260f70b1660c8646ef25d0820effd7be60` | AddMEVBoostRelays | impl | live | yes |
 | ethereum | `0x00caaef11ec545b192f16313f53912e453c91458` | TopUpAllowedRecipients | impl | live | yes |
 | ethereum | `0x010ecb2af743c700bdfaf5ddfd55ba3c07dcf9df` | OssifiableProxy-2 | proxy | unknown | yes |
 | ethereum | `0x0112315fa1c81c35ac9a477e161b52ae4d1466b3` | ZkEvmVerifierPostEuclid | impl | unknown | no |
 | ethereum | `0x01434ae91f8b31cceee27593d88112442395458d` | ProtocolDebugBinder | impl | unknown | no |
 | ethereum | `0x01b9ac434c6cd3128e0d2f52780a91678db126c7` | BridgeOFT | impl | unknown | no |
-| ethereum | `0x02b2d3c03e705e29c6a86662fba1c11a83c205d2` | OpStackTokenRatePusher | impl | unknown | no |
+| ethereum | `0x02b2d3c03e705e29c6a86662fba1c11a83c205d2` | OpStackTokenRatePusher | impl | unknown | yes |
 | ethereum | `0x02ca7772ff14a9f6c1a08af385aa96bb1b34175a` | VaultFactory | impl | live | yes |
 | ethereum | `0x0359bc6ef9425414f9b22e8c9b877080b52793f5` | Burner | impl | unknown | no |
 | ethereum | `0x04728bf704a716c26f9ef4085013b760ac885631` | LineaRollup | impl | unknown | no |
@@ -56,10 +62,11 @@
 | ethereum | `0x06a56487494aa080dec7bf69128eda9225784553` | StakingVault | impl | live | yes |
 | ethereum | `0x06cd61045f958a209a0f8d746e103ecc625f4193` | OssifiableProxy-3 | proxy | live | yes |
 | ethereum | `0x075cef9752b42e332dab0bae1ca63801ad8e28c7` | EIP712StETH | impl | unknown | no |
-| ethereum | `0x0789f3c7f0c932cc663b0f2256c7057a80a648b6` | L1LidoTokensBridge | impl | unknown | no |
+| ethereum | `0x0789f3c7f0c932cc663b0f2256c7057a80a648b6` | L1LidoTokensBridge | impl | unknown | yes |
+| ethereum | `0x08637515e85a4633e23dfc7861e2a9f53af640f7` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0x09341022ea237a4db1644de7ccf8fa0e489d85b7` | SwellOFTAdapter | impl | unknown | no |
 | ethereum | `0x0a6c933495a7bb768d95f4667b074dd5b95b78eb` | TransparentUpgradeableProxy-3 | proxy | unknown | no |
-| ethereum | `0x0b0dec7cbc586bc1cadfaa0f20428df200276f37` | VettedGate | impl | unknown | no |
+| ethereum | `0x0b0dec7cbc586bc1cadfaa0f20428df200276f37` | VettedGate | impl | unknown | yes |
 | ethereum | `0x0b9020d4e32990d67559b1317c7bf0c15d6eb88f` | ERC1155PredicateProxy | proxy | unknown | no |
 | ethereum | `0x0bff34272af650632236703a3d6d8e3c133421cb` | RootChainManager | impl | unknown | no |
 | ethereum | `0x0c345dfa318f9f4977cdd4f33d80f9d0ffa38e8b` | CSVerifier | impl | unknown | no |
@@ -69,17 +76,19 @@
 | ethereum | `0x0dca6e1cc2c3816f1c880c9861e6c2478dd0e052` | DepositSecurityModule | impl | unknown | no |
 | ethereum | `0x0de4ea0184c2ad0baca7183356aea5b8d5bf5c6e` | OssifiableProxy-4 | proxy | live | yes |
 | ethereum | `0x0ec393209674090368c592a591b25811e490bf36` | L1USDCBridge | impl | unknown | no |
-| ethereum | `0x0eee39440b25b254d28994c5b4037b8bed58fa5e` | CSParametersRegistry | impl | unknown | no |
+| ethereum | `0x0eee39440b25b254d28994c5b4037b8bed58fa5e` | CSParametersRegistry | impl | unknown | yes |
 | ethereum | `0x0f096e343563b11e35104924111726c596d9f3b9` | OssifiableProxy-2 | proxy | unknown | yes |
 | ethereum | `0x0f25c1dc2a9922304f2eac71dca9b07e310e8e5a` | OssifiableProxy | proxy | live | yes |
 | ethereum | `0x114cb34b1a0fbbb686e31bf5542d64a98c42ee23` | ERC1967Proxy | proxy | unknown | no |
 | ethereum | `0x12176e3a3d674e4af1176f30ff4dbc4428f2da7f` | CCIPAdapter | impl | unknown | no |
+| ethereum | `0x13600b9aee86f8254969918b1e9ae6ea091b8727` | SafeProxy | proxy | live | no |
 | ethereum | `0x136d8483032e8e6f7de3ba3fb8f7e0cac9d2ccfa` | Dummy | impl | unknown | no |
 | ethereum | `0x1430194905301504e8830ce4b0b0df7187e84abd` | LidoOracle | impl | unknown | no |
 | ethereum | `0x15152eee59752f18c2de8fbd4bc83ec20c448303` | StMATIC | impl | unknown | no |
 | ethereum | `0x15a94d49fac6e23e17c1366c999117a1de8ba7b6` | Accountant | impl | unknown | no |
 | ethereum | `0x161a4552a625844c822954c5acbac928ee0f399b` | UpdateTargetValidatorLimits | impl | live | yes |
 | ethereum | `0x165813a31446a98c84e20dda8c101bb3c8228e1c` | Escrow | impl | live | yes |
+| ethereum | `0x168cfea1ad879d7032b3936ef3b0e90790b6b6d4` | L1LidoTokensBridge | impl | live | yes |
 | ethereum | `0x17305db55c908e84c58bbdca57258a7d1f7eea7c` | RegisterGroupsInOperatorGrid | impl | live | yes |
 | ethereum | `0x175742c3ddd88b0192df3ecf98f180a79cb259d0` | TiebreakerCoreCommittee | impl | unknown | no |
 | ethereum | `0x1770044a38402e3cfca2fcfa0c84a093c9b42135` | NodeOperatorsRegistry | impl | unknown | no |
@@ -101,7 +110,7 @@
 | ethereum | `0x22010d1747cafc370b1f1fbba61022a313c5693b` | RemoveAllowedRecipient | impl | live | yes |
 | ethereum | `0x226f9265cbc37231882b7409658c18bb7738173a` | StakingRouter | impl | live | yes |
 | ethereum | `0x22e5c20bb540d68f43a6790927fab8e4fbdc83e7` | TransparentUpgradeableProxy-2 | proxy | unknown | no |
-| ethereum | `0x2305e02c0d92ba3ff09f2393da9997c3404fce0a` | PermissionlessGate | impl | unknown | no |
+| ethereum | `0x2305e02c0d92ba3ff09f2393da9997c3404fce0a` | PermissionlessGate | impl | unknown | yes |
 | ethereum | `0x2309c45d44105928b483f608dd6140fb65f3ebde` | ValidatorContainerProofVerifier | impl | unknown | no |
 | ethereum | `0x230e0321cf38f09e247e50afc7801ea2351fe56f` | CLSynchronicityPriceAdapterPegToBase | impl | unknown | no |
 | ethereum | `0x23e0b465633ff5178808f4a75186e2f2f9537021` | Executor | impl | live | yes |
@@ -109,6 +118,7 @@
 | ethereum | `0x244bf7aef29f03916569470a51fa0794b62f8cd7` | L1ERC1155Gateway | impl | unknown | no |
 | ethereum | `0x259204ddd2ba29bd9b1b9a5c9b093f73d7eacf37` | Whitelist | impl | unknown | no |
 | ethereum | `0x25e35855783bec3e49355a29e110f02ed8b05ba9` | TokenRateNotifier | impl | live | yes |
+| ethereum | `0x25fdc3be9977cd4da679df72a64c8b6bd5216a78` | CSParametersRegistry | impl | live | yes |
 | ethereum | `0x274a46efd4364ccba654dc74ddb793f9010b179c` | EthLongMovePermissionsPayload | impl | unknown | no |
 | ethereum | `0x278f7b6cbb3cc37374e6a40bdfebfff08f65a5c7` | Stonks | impl | live | yes |
 | ethereum | `0x2819b65021e13ceeb9ac33e77db32c7e64e7520d` | Claimer | impl | unknown | no |
@@ -141,6 +151,7 @@
 | ethereum | `0x3d345775913a9cbfa3675024348b63ef14865d32` | PlonkVerifierMainnetFull | impl | unknown | no |
 | ethereum | `0x3d3ba54d54bbff40f2dfa2a8e27bd4de3dab2951` | TiebreakerSubCommittee | impl | live | yes |
 | ethereum | `0x3d5148ad93e2ae5dedd1f7a8b3c19e7f67f90c0e` | CSEarlyAdoption | impl | unknown | no |
+| ethereum | `0x3e2d251275a92a8169a3b17a2c49016e2de492a7` | Stonks | impl | live | yes |
 | ethereum | `0x3e3af10763c8cd302ba446ec877d57d01556f8da` | PoLidoNFT | impl | unknown | no |
 | ethereum | `0x3e40d73eb977dc6a537af587d48316fee66e9c8c` | ACL | proxy | live | no |
 | ethereum | `0x3e5021424c9e13fc853e523cd68ebbec848956a0` | CSStrikes | impl | live | yes |
@@ -157,7 +168,7 @@
 | ethereum | `0x499a865ac595e6167482d2bd5a224876bab85ab4` | EtherPredicate | impl | unknown | no |
 | ethereum | `0x4a5810f71b6836027c26c25bff9708dfcd2b5432` | L1USDCGateway | impl | unknown | no |
 | ethereum | `0x4ac40c34f8992bb1e5e856a448792158022551ca` | AllowedTokensRegistry | impl | live | yes |
-| ethereum | `0x4b1681a68793be9a03b5055e830574183dc14e70` | VettedGateFactory | impl | unknown | no |
+| ethereum | `0x4b1681a68793be9a03b5055e830574183dc14e70` | VettedGateFactory | impl | unknown | yes |
 | ethereum | `0x4b3edb22952fb4a70140e39fb1add05a6b49622b` | MerkleDistributor | impl | live | no |
 | ethereum | `0x4c86cb5cd701cbf2364f25ed9563ff3d3d493c22` | WithdrawLimitModule | impl | unknown | no |
 | ethereum | `0x4c8d4ce72afaa417d1f7e833725fdb4e793cd6b3` | ZkEvmV2 | impl | unknown | no |
@@ -181,8 +192,10 @@
 | ethereum | `0x5bcfd99c34cf7e06fc756f6f5ae7400504852bc4` | TransparentUpgradeableProxy-7 | proxy | unknown | no |
 | ethereum | `0x5bd444ad23e02376f8fbba47e3cc9d2cadb6c4f6` | ReleaseRegistry | impl | unknown | no |
 | ethereum | `0x5c3bdfa3e7f312d8cf72f56f2b797b026f6b471c` | UpdateVaultsFeesInOperatorGrid | impl | unknown | no |
+| ethereum | `0x5dcf7cf7c6645e9e822a379df046a8b0390251a1` | Contract-5 | impl | live | yes |
 | ethereum | `0x6019cb557978296ba3c08a7b73225c0975dfb2f7` | CircuitBreaker | impl | live | yes |
 | ethereum | `0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f` | L1LiskToken | impl | unknown | no |
+| ethereum | `0x6078232c54d956c901620fa4590e0f7e37c2b82f` | L1LidoTokensBridge | impl | live | yes |
 | ethereum | `0x62134f1897e236e06ed34841ba91cef55945df23` | CrowdProposal | impl | unknown | no |
 | ethereum | `0x6232397ebac4f5772e53285b26c47914e9461e75` | OracleReportSanityChecker | impl | unknown | no |
 | ethereum | `0x6260af48e8948617b8fa17f4e5cea2d21d21554b` | TransparentUpgradeableProxy | proxy | unknown | no |
@@ -191,6 +204,7 @@
 | ethereum | `0x642af405bf64660665b37977449c9c536b806318` | EnforcedTxGateway | impl | unknown | no |
 | ethereum | `0x648c8be548f43eca4e482c0801ebccccfb944931` | TopUpLegoProgram | impl | unknown | no |
 | ethereum | `0x64bc157ec2585fac63d33a31ced56cee4cb421ea` | HashConsensus | impl | unknown | no |
+| ethereum | `0x65d4d92cd0eabaa05cd5a46269c24b71c21cfdc4` | VettedGate | impl | live | yes |
 | ethereum | `0x6625c6332c9f91f2d27c304e729b86db87a3f504` | TransparentUpgradeableProxy-8 | proxy | live | no |
 | ethereum | `0x66457616dd8489df5d0afd8678f4a260088aaf55` | BaseImmutableAdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0x6774bcbd5cecef1336b5300fb5186a12ddd8b367` | TransparentUpgradeableProxy | proxy | unknown | no |
@@ -198,17 +212,20 @@
 | ethereum | `0x67988077f29fba661911d9567e05cc52c51ca1b0` | DGUpgradeOmnibusMainnet | impl | live | no |
 | ethereum | `0x6a124779fdf107c3f6bcb992731dcaad09f2276a` | SystemConfig | impl | unknown | no |
 | ethereum | `0x6a4f33f05e7412a11100353724bb6a152cf0d305` | SetJailStatusInOperatorGrid | impl | live | yes |
+| ethereum | `0x6b535f441f95046562406f4e2518d9ad7db2dc0d` | Contract-6 | impl | live | yes |
 | ethereum | `0x6b7863f2c7dee99d3b744fdaedbeb1aecc025535` | EditMEVBoostRelays | impl | live | yes |
 | ethereum | `0x6c968cd89ca358fbaf57b18e77a8973fa869a6aa` | ForceValidatorExitsInVaultHub | impl | unknown | no |
 | ethereum | `0x6eff460627b6798c2907409ea2fdfb287eaa2e55` | QueueLib | impl | live | yes |
+| ethereum | `0x6f09d2426c7405c5546413e6059f884d2d03f449` | Contract-7 | impl | live | yes |
 | ethereum | `0x6f6541c2203196feedd14cd2c09550da1cbeda31` | DummyEmptyContract | impl | unknown | no |
 | ethereum | `0x6ffda833d2cf6aa76fa199d96db22c4075c14d71` | LaunchOmnibusMainnet | impl | unknown | no |
+| ethereum | `0x71093eff8d8599b5fa340d665ad60fa7c80688e4` | Contract-8 | impl | live | yes |
 | ethereum | `0x71b821aa52a49f32eed535fca6eb5aa130085978` | DummyERC721 | impl | unknown | no |
 | ethereum | `0x723aead29acee7e9281c32d11ea4ed0070c41b13` | ERC1967Upgrade-2 | proxy | live | yes |
 | ethereum | `0x742650e0441be8503682965d601ad0ba1fb54411` | LayerZeroAdapter | impl | live | yes |
 | ethereum | `0x75100bd564415731b5936a4a94d0dc29dde5db3c` | BokkyPooBahsDateTimeContract | impl | live | no |
 | ethereum | `0x751236a1afc11b7f1a7630fe87b0bd96ac5203c4` | YieldManager | impl | unknown | no |
-| ethereum | `0x755610f5be536ad7afbaa7c10f3e938ea3aa1877` | Contract | impl | live | yes |
+| ethereum | `0x755610f5be536ad7afbaa7c10f3e938ea3aa1877` | Contract-9 | impl | live | yes |
 | ethereum | `0x755a078dee1c264a3053f02cd634e750d505cf85` | DelayedWithdraw | impl | unknown | no |
 | ethereum | `0x75ff3dd673ef9fc459a52e1054db5df2a1101212` | StakingRewardsSushi | impl | live | no |
 | ethereum | `0x77781a93c4824d2299a38ac8bbb11eb3cd6bc3b7` | TopUpRewardPrograms | impl | unknown | no |
@@ -289,11 +306,18 @@
 | ethereum | `0xcc08c36bd5bb78fdcb10f35b404ada6ffc71a023` | PredepositGuarantee | impl | unknown | no |
 | ethereum | `0xcc993499e03dda45ae8804aa1620257a1d7fb996` | IncreaseVettedValidatorsLimit | impl | unknown | no |
 | ethereum | `0xce0425301c85c5ea2a0873a2dee44d78e02d2316` | EmergencyProtectedTimelock | impl | live | yes |
+| ethereum | `0xcf33a38111d0b1246a3f38a838fb41d626b454f0` | PermissionlessGate | impl | live | yes |
 | ethereum | `0xd48c2fc419569537bb069bad2165dc0ceb160cec` | DGLaunchStateVerifier | impl | unknown | no |
+| ethereum | `0xd54c1c6413caac3477ac14b2a80d5398e3c32ffe` | OpStackTokenRatePusher | impl | live | yes |
 | ethereum | `0xd6b95c960779c72b8c6752119849318e5d550574` | TimeLock | impl | unknown | no |
 | ethereum | `0xd75778b855886fc5e1ea7d6bfada9eb68b35c19d` | SetVettedValidatorsLimits | impl | live | yes |
+| ethereum | `0xda1df6442afd2ec36abea91029794b9b2156add0` | Contract-10 | impl | live | yes |
+| ethereum | `0xda22fa1cea40d05fe4cd536967afdd839586d546` | Contract-11 | impl | live | yes |
+| ethereum | `0xda7de2ecddfccc6c3af10108db212acbbf9ea83f` | OssifiableProxy-3 | impl | live | yes |
 | ethereum | `0xdbb0236007fd3697b03a88b4b550b422f57894cf` | EthShortMovePermissionsPayload | impl | unknown | no |
 | ethereum | `0xdc00116a0d3e064427da2600449cfd2566b3037b` | TriggerableWithdrawalsGateway | impl | live | yes |
+| ethereum | `0xdc5fe1782b6943f318e05230d688713a560063dc` | Contract-12 | impl | live | yes |
+| ethereum | `0xe0b234f99e413e27d9bc31abba9a49a3e570da97` | Contract-13 | impl | live | yes |
 | ethereum | `0xe2b0cfef892c017d84d8220b8d2ac249624cd087` | L1VestingWalletPaused | impl | unknown | no |
 | ethereum | `0xe31a0599a6772bcf9b2bfc9e25cf941e793c9a7d` | ChangeNodeOperatorManagers | impl | live | yes |
 | ethereum | `0xe34949a48cd2e6f5cd41753e449bd2d43993c9ac` | Mediator | impl | unknown | no |
@@ -305,10 +329,13 @@
 | ethereum | `0xf6b6e7997338c48ea3a8bcfa4bb64a315fda76f4` | CSMSettleElStealingPenalty | impl | live | yes |
 | ethereum | `0xf738a2c7d69694b618dbb547c1c5a152d7958f06` | V3TemporaryAdmin | impl | live | no |
 | ethereum | `0xf73a1260d222f447210581ddf212d915c09a3249` | AppStorage-2 | proxy | live | no |
+| ethereum | `0xf95f069f9ad107938f6ba802a3da87892298610e` | Contract-14 | impl | live | yes |
 | ethereum | `0xfb0c26a89833762b65098dd66b6ae04b34d153be` | PlonkVerifierForDataAggregation | impl | unknown | no |
+| ethereum | `0xfdab48c4d627e500207e9af29c98579d90ea0ad4` | VettedGateFactory | impl | live | yes |
 | ethereum | `0xfe5986e06210ac1ecc1adcafc0cc7f8d63b3f977` | EVMScriptExecutor | impl | live | yes |
 | ethereum | `0xfebd8fac16de88206d4b18764e826af38546afe0` | IncreaseNodeOperatorStakingLimit | impl | live | yes |
 | ethereum | `0xff04ed5f7a6c3a0f1e5ea20617f8c6f513d5a77c` | DefaultReserveInterestRateStrategy | impl | live | no |
+| ethereum | `0xffa96d84def2ea035c7ab153d8b991128e3d72fd` | Contract-15 | impl | live | yes |
 | linea | `0x05d43713b7e333d2d54be65ce3b5f3698ab960fd` | L2MessageService | impl | unknown | no |
 | linea | `0x05f5198b1d4a37e07ac510fc7a207e1499e8aef7` | BeaconProxy | proxy | unknown | yes |
 | linea | `0x08d3ff6e65f680844fd2465393ff6f0d742b67d5` | ReverseRegistrar | impl | unknown | no |
@@ -349,40 +376,14 @@
 | optimism | `0x0f86056d00bcf39baef81bbed1786e6f32c1a5fe` | SimpleWriteAccessController | impl | unknown | no |
 | optimism | `0x0fc3de4b1bbcb315880d328e3f9c81d742d73d01` | OssifiableProxy | proxy | unknown | yes |
 | optimism | `0x1f32b1c2345538c0c6f582fcb022739c4a194ebb` | OssifiableProxy | proxy | live | yes |
+| optimism | `0x2734602c0cebba68662552cacd5553370b283e2e` | Contract | impl | live | yes |
 | optimism | `0x294ed1f214f4e0ecae31c3eae4f04ebb3b36c9d0` | OssifiableProxy | proxy | live | yes |
 | optimism | `0x37de961d6bb5865867add416be07189d2dd960e6` | DataBus | impl | live | yes |
 | optimism | `0x39afe23ce59e8ef196b81f0dcb165e9ad38b9463` | ERC20RebasableBridgedPermit | impl | unknown | yes |
+| optimism | `0x4bf0d419793d8722b8391efad4c9ce78f460ced3` | Contract-2 | impl | live | yes |
 | optimism | `0xde45f101250f2ca1c0f8adfc172576d10c12072d` | ComposableStablePool | impl | live | no |
+| optimism | `0xe9b65da5dcbe92f1b397991c464ff568dc98d761` | ERC20RebasableBridgedPermit | impl | live | yes |
+| optimism | `0xfe57042de76c8d6b1df0e9e2047329fd3e2b7334` | Contract-3 | impl | live | yes |
 | scroll | `0x0c67d8d067e349669dfeab132a7c03a90594ee09` | ScrollBridgeExecutor | impl | live | no |
 | scroll | `0x2b9beb2890dbefc7ca25af3164100d139b623c24` | L2LidoGateway | impl | live | no |
 | scroll | `0x38224d52ecc979aedfeb31b1eea0cfcebd55247e` | L2WstETHToken | impl | live | no |
-
-## Source unavailable (26)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-130 `0x332ca368dd09ad309c51dc6350730e0bca85cffe`
-- chain-130 `0x3b00f262e39372df2756f809dd5dc36aeedfc4a0`
-- chain-130 `0xb5cf096a406c1d5297d2493073168f44eb4a1a1d`
-- ethereum `0x168cfea1ad879d7032b3936ef3b0e90790b6b6d4`
-- ethereum `0x25fdc3be9977cd4da679df72a64c8b6bd5216a78`
-- ethereum `0x3e2d251275a92a8169a3b17a2c49016e2de492a7`
-- ethereum `0x5dcf7cf7c6645e9e822a379df046a8b0390251a1`
-- ethereum `0x6078232c54d956c901620fa4590e0f7e37c2b82f`
-- ethereum `0x65d4d92cd0eabaa05cd5a46269c24b71c21cfdc4`
-- ethereum `0x6b535f441f95046562406f4e2518d9ad7db2dc0d`
-- ethereum `0x6f09d2426c7405c5546413e6059f884d2d03f449`
-- ethereum `0x71093eff8d8599b5fa340d665ad60fa7c80688e4`
-- ethereum `0xcf33a38111d0b1246a3f38a838fb41d626b454f0`
-- ethereum `0xd54c1c6413caac3477ac14b2a80d5398e3c32ffe`
-- ethereum `0xda1df6442afd2ec36abea91029794b9b2156add0`
-- ethereum `0xda22fa1cea40d05fe4cd536967afdd839586d546`
-- ethereum `0xda7de2ecddfccc6c3af10108db212acbbf9ea83f`
-- ethereum `0xdc5fe1782b6943f318e05230d688713a560063dc`
-- ethereum `0xe0b234f99e413e27d9bc31abba9a49a3e570da97`
-- ethereum `0xf95f069f9ad107938f6ba802a3da87892298610e`
-- ethereum `0xfdab48c4d627e500207e9af29c98579d90ea0ad4`
-- ethereum `0xffa96d84def2ea035c7ab153d8b991128e3d72fd`
-- optimism `0x2734602c0cebba68662552cacd5553370b283e2e`
-- optimism `0x4bf0d419793d8722b8391efad4c9ce78f460ced3`
-- optimism `0xe9b65da5dcbe92f1b397991c464ff568dc98d761`
-- optimism `0xfe57042de76c8d6b1df0e9e2047329fd3e2b7334`

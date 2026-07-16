@@ -1,6 +1,6 @@
 # wagmi — deployments
 
-38 verified deployment(s) across 31 component(s).
+39 verified deployment(s) across 32 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -37,6 +37,7 @@
 | chain-146 | `0xfb3efa944e81260d316bcb2f589f12f272764132` | Vault | impl | live | no |
 | ethereum | `0x212aa024e25a9c9baf5b5397b558b7ccea81740b` | PopsicleV3Optimizer | impl | live | no |
 | ethereum | `0x5c08a6762caf9ec8a42f249ebc23aae66097218d` | PopsicleV3Optimizer-2 | impl | live | no |
+| ethereum | `0x92cc36d66e9d739d50673d1f27929a371fb83a67` | WagmiToken | impl | live | no |
 | ethereum | `0x9683d433621a83aa7dd290106e1da85251317f55` | PopsicleV3Optimizer-3 | impl | live | no |
 | ethereum | `0xa1be64bb138f2b6bcc2fbecb14c3901b63943d0e` | PopsicleV3Optimizer-4 | impl | live | no |
 | ethereum | `0xd8ac778db70221ab635921460c6bf70cc6d65293` | SwapRouter02 | impl | live | no |

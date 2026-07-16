@@ -5,9 +5,9 @@ interface ITransferLib {
     error ArrayLengthMismatch();
     error TokenInRequired();
     error AmountInRequired();
-    error DuplicateTokenIn();
+    error TwoTokenMaximum();
+    error SameTokenIn();
     error TokenOutRequired();
-    error IncompatibleEthTokens();
 
     function transferTokenToUser(
         address token

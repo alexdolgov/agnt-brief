@@ -1,0 +1,68 @@
+{
+  "component": "AmpleEarnFactory",
+  "main_contract": "AmpleEarnFactory",
+  "source_entry_count": 48,
+  "source_file_count": 48,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AmpleEarnFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-143",
+      "chain_id": 143,
+      "address": "0x9881464ade08eaea838d1ba06073a0c8f972b185",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x305ecdbfc6d40fdb6eedd046879ccae3f3e19b61",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x62b304519ee30e205621920454c2802fb99dca67",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9881464ade08eaea838d1ba06073a0c8f972b185",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402240"
+    },
+    {
+      "chain": "chain-747474",
+      "chain_id": 747474,
+      "address": "0x9881464ade08eaea838d1ba06073a0c8f972b185",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402250"
+    }
+  ]
+}

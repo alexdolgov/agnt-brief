@@ -1,0 +1,68 @@
+{
+  "component": "TimelockController",
+  "main_contract": "TimelockController",
+  "source_entry_count": 13,
+  "source_file_count": 13,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TimelockController\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8963891b913993df6845c0f3303332cb55eae985",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394487"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x16e38a8ef26f58f0af08be19515e71b8d7a01c6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394492"
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x389170532bd6838c238f39b0efa1b1ae1650c398",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394500"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x93e4a14ec4d39cf55f23cc121cc810943588c872",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394516"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xab9e67eaa99d6d69778a3af7c7120684df6d5611",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394524"
+    }
+  ]
+}

@@ -48,12 +48,11 @@ abstract contract SickleStorage is Initializable {
     /// INITIALIZATION ///
 
     /// @param owner_ Address of the owner of this Sickle contract
-    function _SickleStorage_initialize(
-        address owner_,
-        address approved_
-    ) internal onlyInitializing {
+    function _SickleStorage_initialize(address owner_)
+        internal
+        onlyInitializing
+    {
         owner = owner_;
-        approved = approved_;
     }
 
     /// WRITE FUNCTIONS ///

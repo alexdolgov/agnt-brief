@@ -1,6 +1,6 @@
 # gmx — deployments
 
-178 verified deployment(s) across 178 component(s).
+182 verified deployment(s) across 182 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -68,6 +68,7 @@
 | arbitrum | `0x184675717d5ef9f2bb3df7e9fc639f2f9c044327` | MarketStoreUtils | impl | unknown | no |
 | arbitrum | `0x19254a4dfbd855e11cc9def57cc7844ff8fa4088` | GlvUtils | impl | unknown | no |
 | arbitrum | `0x19a34c31f9af449be8c4abcc269bad49c2944db1` | GlvShiftStoreUtils | impl | unknown | no |
+| arbitrum | `0x1bc32eecaa8f504d2225096649a0347153a37f10` | Contract | impl | live | yes |
 | arbitrum | `0x1cc0a1c7a61355fa5fc0634d955c2e3fda1a3b5f` | IncreaseOrderExecutor | impl | unknown | no |
 | arbitrum | `0x1e390dc57878bae3b32d24c9e8f431cd4d5ee4b8` | GlvShiftUtils | impl | unknown | no |
 | arbitrum | `0x1e72f7c6198c3df7ca7f12173b3ebebb46434960` | TimestampInitializer | impl | unknown | no |
@@ -91,6 +92,7 @@
 | arbitrum | `0x489ee077994b6658eafa855c308275ead8097c4a` | Vault | impl | unknown | no |
 | arbitrum | `0x4bd1cdaab4254fc43ef6424653ca2375b4c94c0e` | GovTimelockController | impl | unknown | no |
 | arbitrum | `0x56f9799a53fa850d6f7c71f7e9015eb7768758a0` | EsGMX | impl | unknown | no |
+| arbitrum | `0x5a1344252f0cdfdb765dd5ab97c98734f1d7ed6d` | Contract-2 | impl | live | yes |
 | arbitrum | `0x5a44a3b026d50ec039582fdb3afdd88e2092e211` | FeeDistributor | impl | unknown | no |
 | arbitrum | `0x5ca40cbb5321bbe4ef74ddf01ccd2b4bcc76a9f9` | RiskOracleConfig | impl | unknown | no |
 | arbitrum | `0x5d6b84086da6d4b0b6c0df7e02f8a6a039226530` | GmOracleProvider | impl | unknown | no |
@@ -101,6 +103,7 @@
 | arbitrum | `0x80a9ae39310abf666a87c743d6ebbd0e8c42158e` | UniswapV3Pool | impl | unknown | no |
 | arbitrum | `0x823b558b4bc0a2c4974a0d8d7885aa1102d15dec` | MultichainReader | impl | unknown | no |
 | arbitrum | `0x931dda8e3d4e4b7832e9005812c979008b576441` | Bridge | impl | unknown | no |
+| arbitrum | `0x955aa50d2ecceffa59084be5e875eb676ffafa98` | Contract-3 | impl | live | yes |
 | arbitrum | `0xa27c20a7cf0e1c68c0460706bb674f98f362bc21` | OrderBookReader | impl | unknown | no |
 | arbitrum | `0xaf8e969e3e23f1732f614e64630498ec809d8a47` | Governable | impl | unknown | no |
 | arbitrum | `0xb9089f9b862db6b591cc54a2d12c1fbacf0bf834` | ChainlinkDataStreamProvider | impl | unknown | no |
@@ -108,6 +111,7 @@
 | arbitrum | `0xc3828fa579996090dc7767e051341338e60207ef` | EsGmxBatchSender | impl | unknown | no |
 | arbitrum | `0xc73d553473dc65ce56db96c58e6a091c20980fba` | RewardRouter | impl | unknown | no |
 | arbitrum | `0xc8ee91a54287db53897056e12d9819156d3822fb` | EventEmitter | impl | live | yes |
+| arbitrum | `0xc92741f0a0d20a95529873cbb3480b1f8c228d9f` | Contract-4 | impl | live | yes |
 | arbitrum | `0xe19ab1cca0a010521140cf5ada1cf8308c0b382c` | StakedGlpMigrator | impl | unknown | no |
 | avalanche | `0x00261e5da1f20c93bb5258e384591293da24a4f6` | GlvWithdrawalEventUtils | impl | unknown | no |
 | avalanche | `0x004e6525b733bc5dbff224f600c27b48f6ccdff5` | IncreaseOrderUtils | impl | unknown | no |
@@ -183,16 +187,12 @@
 | avalanche | `0xc57c155faccd93f62546f329d1483e0e5b9c1241` | MarketFactory | impl | live | yes |
 | avalanche | `0xefe0ebbb14b65a4c19731cb264dd8dc6c70b15f4` | SimulationRouter | impl | unknown | no |
 
-## Source unavailable (10)
+## Source unavailable (6)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
-- arbitrum `0x1bc32eecaa8f504d2225096649a0347153a37f10`
 - arbitrum `0x3d6ba4a91ffde7c519379f8dca5fe58b7125c294`
-- arbitrum `0x5a1344252f0cdfdb765dd5ab97c98734f1d7ed6d`
 - arbitrum `0x5bb6dcb09010069228b2aa766fae513ef7923472`
 - arbitrum `0x839b6e19e54a5862da61974a01675a5f6cc5c8b4`
-- arbitrum `0x955aa50d2ecceffa59084be5e875eb676ffafa98`
 - arbitrum `0xad712e1667bc8aaa6c4ea5f47dcd487ddd96bc35`
 - arbitrum `0xbad04ddcc5cc284a86493afa75d2beb970c72216`
-- arbitrum `0xc92741f0a0d20a95529873cbb3480b1f8c228d9f`
 - arbitrum `0xec0e4a27a9fbfc64e4915c254b961260df28054c`

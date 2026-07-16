@@ -1,8 +1,8 @@
 {
   "component": "Booster-5",
   "main_contract": "Booster",
-  "source_entry_count": 1,
-  "source_file_count": 1,
+  "source_entry_count": 9,
+  "source_file_count": 9,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -11,20 +11,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xf403c135812408bfbe8713b5a23a04b3d48aae31",
+      "address": "0x79a50f83e7aff970ceab5152a15461a4f1c3799e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393109"
+      "logic_topography_row_id": "405294"
     }
   ]
 }

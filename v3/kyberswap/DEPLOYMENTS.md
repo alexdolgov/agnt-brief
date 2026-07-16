@@ -1,12 +1,13 @@
 # kyberswap — deployments
 
-223 verified deployment(s) across 169 component(s).
+229 verified deployment(s) across 175 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x316772cfec9a3e976fde42c3ba21f5a13aaaff12` | AnyswapV6ERC20 | impl | live | no |
 | arbitrum | `0xb448ec505c924944ca8b2c55ef05c299ee0781df` | BurnableMintableCappedERC20-2 | impl | live | no |
 | arbitrum | `0xe4dddfe67e7164b0fe14e218d80dc4c08edc01cb` | ClonableBeaconProxy | proxy | live | no |
+| avalanche | `0x39fc9e94caeacb435842fadedecb783589f50f5f` | AnyswapV5ERC20 | impl | live | no |
 | avalanche | `0x8efa5a9ad6d594cf76830267077b78ce0bc5a5f8` | DMMRouter02-4 | impl | live | no |
 | avalanche | `0x91c9d4373b077ef8082f468c7c97f2c499e36f5b` | MultiSigWalletWithDailyLimit-3 | impl | live | no |
 | avalanche | `0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7` | WAVAX | impl | live | no |
@@ -21,6 +22,7 @@
 | bsc | `0xf67476e5d3fa43e0470f8f1d3c43bf202dc50eec` | KSRemoveLiquidityPancakeV4CLHook | impl | live | no |
 | bsc | `0xfe56d5892bdffc7bf58f2e84be1b2c32d21c308b` | BEP20UpgradeableProxy | proxy | unknown | no |
 | chain-130 | `0x444139d6b32c1ad0b00f24a616072f74b2f880c4` | UniswapV4KEMHook-2 | impl | live | no |
+| ethereum | `0x0e97c887b61ccd952a53578b04763e7134429e05` | KSZapRouterPosition | impl | live | no |
 | ethereum | `0x1c87257f5e8609940bc751a07bb085bb7f8cdbe6` | DMMRouter02 | impl | live | no |
 | ethereum | `0x20f7cf5900d0e82ab0f7fe2b6a87c3355035a7e6` | BlackFriday | impl | live | no |
 | ethereum | `0x2260fac5e5542a773aa44fbcfedf7c193bc2c599` | WBTC | impl | live | no |
@@ -139,6 +141,7 @@
 | ethereum | `0x9f59b4f7d3bd00caa85e61c57761768291155084` | NamableAddressList | impl | live | no |
 | ethereum | `0x9fb131efbac23b735d7764ab12f9e52cc68401ca` | KatanaFeeHandler | impl | live | no |
 | ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | FiatTokenProxy | proxy | live | no |
+| ethereum | `0xa16f32442209c6b978431818aa535bcc9ad2863e` | KSZapValidatorV2Part1 | impl | live | no |
 | ethereum | `0xa1c0fa73c39cfbcc11ec9eb1afc665aba9996e2c` | KyberMatchingEngine | impl | live | no |
 | ethereum | `0xa30b9677a14ed10eceb6ba87af73a27f51a17c89` | Migrate | impl | live | no |
 | ethereum | `0xa45f9b0f82e4e08506eafa8081515b67f546ca1d` | DutchReserve-5 | impl | live | no |
@@ -221,9 +224,12 @@
 | ethereum | `0xfa1ba4ee3163b97f78307516d77ce28daac99d2d` | GetDecimals-3 | impl | live | no |
 | ethereum | `0xfa68d9f61326223c7651fbd2011221ff561098fa` | MultipleEpochRewardsClaimer | impl | live | no |
 | ethereum | `0xfbd73581af42b26295cf4b88b74a5af71f209f8b` | EpochVotingPowerStrategy | impl | live | no |
+| linea | `0x3b2f62d42db19b30588648bf1c184865d4c3b1d6` | BeaconProxy | proxy | live | no |
 | optimism | `0x2b1c7b41f6a8f2b2bc45c3233a5d5fb3cd6dc9a8` | AntiSnipAttackPositionManager | impl | live | no |
 | optimism | `0x4518231a8fdf6ac553b9bbd51bbb86825b583263` | AnyswapV6ERC20 | impl | live | no |
+| optimism | `0xa00e3a3511aac35ca78530c85007afcd31753819` | L2StandardERC20 | impl | live | no |
 | polygon | `0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270` | WMATIC | impl | live | no |
+| polygon | `0x1c954e8fe737f99f68fa1ccda3e51ebdb291948c` | UpgradableProxy | proxy | live | no |
 | polygon | `0x46371c90fcce4d7367a61cb43ea7922406bc707a` | BurnableMintableCappedERC20 | impl | live | no |
 | polygon | `0x546c79662e028b661dfb4767664d0273184e4dd1` | DMMRouter02-3 | impl | live | no |
 | scroll | `0x608ef9a3bffe206b86c3108218003b3cfbf99c84` | ScrollStandardERC20 | impl | live | no |

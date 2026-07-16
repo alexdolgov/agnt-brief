@@ -1,0 +1,48 @@
+{
+  "component": "WavesCaller",
+  "main_contract": "WavesCaller",
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WavesCaller\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7a924d1978d70561521abd02fd21e1e68d050c52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397698"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1905f4c35ec2f8b9b1c24cae6f22c9642dd76cc6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397709"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8dc9ac828303cc2cfa95e27be7d0cded453c8a5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397736"
+    }
+  ]
+}

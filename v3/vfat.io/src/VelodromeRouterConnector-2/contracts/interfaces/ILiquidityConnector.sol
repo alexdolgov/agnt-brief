@@ -3,7 +3,8 @@ pragma solidity ^0.8.0;
 
 import {
     AddLiquidityParams,
-    RemoveLiquidityParams
+    RemoveLiquidityParams,
+    SwapParams
 } from "contracts/structs/LiquidityStructs.sol";
 
 interface ILiquidityConnector {
@@ -11,11 +12,19 @@ interface ILiquidityConnector {
 
     function addLiquidity(
         AddLiquidityParams memory addLiquidityParams
-    ) external;
+    ) external payable;
 
     function removeLiquidity(
         RemoveLiquidityParams memory removeLiquidityParams
     ) external;
+
+    function swapExactTokensForTokens(
+        SwapParams memory swap
+    ) external payable;
+
+    function swapExactETHForTokens(
+        SwapParams memory swap
+    ) external payable;
 
     function getPoolPrice(
         address lpToken,

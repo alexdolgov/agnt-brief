@@ -6,19 +6,7 @@
     {
       "chain_id": 8217,
       "chain": "chain-8217",
-      "address": "0x3b37db3ac2a58f2daba1a7d66d023937d61fc95b",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 8217,
-      "chain": "chain-8217",
       "address": "0x650a4c074a58b18fbeed48ae766e58a382d9e5f5",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 8217,
-      "chain": "chain-8217",
-      "address": "0x7876a2faf6aad1f6f8e47ad612d9472a4821dfda",
       "canonical_source_address": null
     }
   ]

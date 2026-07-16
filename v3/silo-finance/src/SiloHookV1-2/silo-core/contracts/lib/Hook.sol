@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-
 pragma solidity ^0.8.28;
 
 import {ISilo} from "../interfaces/ISilo.sol";
@@ -186,12 +185,12 @@ library Hook {
     uint256 internal constant NONE = 0;
     uint256 internal constant DEPOSIT = 2 ** 1;
     uint256 internal constant BORROW = 2 ** 2;
-    uint256 internal constant BORROW_SAME_ASSET = 2 ** 3; // deprecated
+    uint256 internal constant BORROW_SAME_ASSET = 2 ** 3;
     uint256 internal constant REPAY = 2 ** 4;
     uint256 internal constant WITHDRAW = 2 ** 5;
     uint256 internal constant FLASH_LOAN = 2 ** 6;
     uint256 internal constant TRANSITION_COLLATERAL = 2 ** 7;
-    uint256 internal constant SWITCH_COLLATERAL = 2 ** 8; // deprecated
+    uint256 internal constant SWITCH_COLLATERAL = 2 ** 8;
     uint256 internal constant SHARE_TOKEN_TRANSFER = 2 ** 10;
     uint256 internal constant COLLATERAL_TOKEN = 2 ** 11;
     uint256 internal constant PROTECTED_TOKEN = 2 ** 12;
@@ -297,14 +296,7 @@ library Hook {
             totalSupply := mload(add(packed, pointer))
         }
 
-        input = AfterTokenTransfer({
-            sender: sender,
-            recipient: recipient,
-            amount: amount,
-            senderBalance: senderBalance,
-            recipientBalance: recipientBalance,
-            totalSupply: totalSupply
-        });
+        input = AfterTokenTransfer(sender, recipient, amount, senderBalance, recipientBalance, totalSupply);
     }
 
     /// @dev Decodes packed data from the deposit hook
@@ -328,7 +320,7 @@ library Hook {
             receiver := mload(add(packed, pointer))
         }
 
-        input = BeforeDepositInput({assets: assets, shares: shares, receiver: receiver});
+        input = BeforeDepositInput(assets, shares, receiver);
     }
 
     /// @dev Decodes packed data from the deposit hook
@@ -358,13 +350,7 @@ library Hook {
             mintedShares := mload(add(packed, pointer))
         }
 
-        input = AfterDepositInput({
-            assets: assets,
-            shares: shares,
-            receiver: receiver,
-            receivedAssets: receivedAssets,
-            mintedShares: mintedShares
-        });
+        input = AfterDepositInput(assets, shares, receiver, receivedAssets, mintedShares);
     }
 
     /// @dev Decodes packed data from the withdraw hook
@@ -394,13 +380,7 @@ library Hook {
             spender := mload(add(packed, pointer))
         }
 
-        input = BeforeWithdrawInput({
-            assets: assets,
-            shares: shares,
-            receiver: receiver,
-            owner: owner,
-            spender: spender
-        });
+        input = BeforeWithdrawInput(assets, shares, receiver, owner, spender);
     }
 
     /// @dev Decodes packed data from the withdraw hook
@@ -436,15 +416,7 @@ library Hook {
             withdrawnShares := mload(add(packed, pointer))
         }
 
-        input = AfterWithdrawInput({
-            assets: assets,
-            shares: shares,
-            receiver: receiver,
-            owner: owner,
-            spender: spender,
-            withdrawnAssets: withdrawnAssets,
-            withdrawnShares: withdrawnShares
-        });
+        input = AfterWithdrawInput(assets, shares, receiver, owner, spender, withdrawnAssets, withdrawnShares);
     }
 
     /// @dev Decodes packed data from the before borrow hook
@@ -473,13 +445,7 @@ library Hook {
             spender := mload(add(packed, pointer))
         }
 
-        input = BeforeBorrowInput({
-            assets: assets,
-            shares: shares,
-            receiver: receiver,
-            borrower: borrower,
-            spender: spender
-        });
+        input = BeforeBorrowInput(assets, shares, receiver, borrower, spender);
     }
 
     /// @dev Decodes packed data from the after borrow hook
@@ -515,15 +481,7 @@ library Hook {
             borrowedShares := mload(add(packed, pointer))
         }
 
-        input = AfterBorrowInput({
-            assets: assets,
-            shares: shares,
-            receiver: receiver,
-            borrower: borrower,
-            spender: spender,
-            borrowedAssets: borrowedAssets,
-            borrowedShares: borrowedShares
-        });
+        input = AfterBorrowInput(assets, shares, receiver, borrower, spender, borrowedAssets, borrowedShares);
     }
 
     /// @dev Decodes packed data from the before repay hook
@@ -550,7 +508,7 @@ library Hook {
             repayer := mload(add(packed, pointer))
         }
 
-        input = BeforeRepayInput({assets: assets, shares: shares, borrower: borrower, repayer: repayer});
+        input = BeforeRepayInput(assets, shares, borrower, repayer);
     }
 
     /// @dev Decodes packed data from the after repay hook
@@ -583,14 +541,7 @@ library Hook {
             repaidShares := mload(add(packed, pointer))
         }
 
-        input = AfterRepayInput({
-            assets: assets,
-            shares: shares,
-            borrower: borrower,
-            repayer: repayer,
-            repaidAssets: repaidAssets,
-            repaidShares: repaidShares
-        });
+        input = AfterRepayInput(assets, shares, borrower, repayer, repaidAssets, repaidShares);
     }
 
     /// @dev Decodes packed data from the before flash loan hook
@@ -614,7 +565,7 @@ library Hook {
             amount := mload(add(packed, pointer))
         }
 
-        input = BeforeFlashLoanInput({receiver: receiver, token: token, amount: amount});
+        input = BeforeFlashLoanInput(receiver, token, amount);
     }
 
     /// @dev Decodes packed data from the before flash loan hook
@@ -641,7 +592,7 @@ library Hook {
             fee := mload(add(packed, pointer))
         }
 
-        input = AfterFlashLoanInput({receiver: receiver, token: token, amount: amount, fee: fee});
+        input = AfterFlashLoanInput(receiver, token, amount, fee);
     }
 
     /// @dev Decodes packed data from the transition collateral hook
@@ -662,7 +613,7 @@ library Hook {
             owner := mload(add(packed, pointer))
         }
 
-        input = BeforeTransitionCollateralInput({shares: shares, owner: owner});
+        input = BeforeTransitionCollateralInput(shares, owner);
     }
 
     /// @dev Decodes packed data from the transition collateral hook
@@ -686,7 +637,7 @@ library Hook {
             assets := mload(add(packed, pointer))
         }
 
-        input = AfterTransitionCollateralInput({shares: shares, owner: owner, assets: assets});
+        input = AfterTransitionCollateralInput(shares, owner, assets);
     }
 
     /// @dev Decodes packed data from the switch collateral hook
@@ -704,7 +655,7 @@ library Hook {
             user := mload(add(packed, pointer))
         }
 
-        input = SwitchCollateralInput({user: user});
+        input = SwitchCollateralInput(user);
     }
 
     /// @dev Converts a uint8 to a boolean

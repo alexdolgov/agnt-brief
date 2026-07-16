@@ -2,12 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "exactly",
-  "missing": [
-    {
-      "chain_id": 10,
-      "chain": "optimism",
-      "address": "0xbea586a167853adddef12818f264f1f9823fbc18",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

@@ -1,9 +1,11 @@
 # xpanse — deployments
 
-31 verified deployment(s) across 15 component(s).
+33 verified deployment(s) across 17 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| base | `0xa234f375d1733994720547bb12d92a84122648e1` | BurnRegistryV1 | impl | live | no |
+| base | `0xde6446197cd1ae02e1c5b7191a626fb0c1757377` | BeaconProxy | impl | live | no |
 | bsc | `0x0409633a72d846fc5bbe2f98d88564d35987904d` | BEP20PHB | impl | live | no |
 | bsc | `0x05178294edd61ba3f6a78ef419165ad4d0124362` | LiquidatorRewards | impl | live | no |
 | bsc | `0x19ecf0fe49a30e310a2e1a78a65f43f16772f2ad` | ProxyPerpsV2-2 | impl | live | no |

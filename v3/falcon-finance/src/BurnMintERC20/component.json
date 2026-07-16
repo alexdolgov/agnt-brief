@@ -1,0 +1,28 @@
+{
+  "component": "BurnMintERC20",
+  "main_contract": "BurnMintERC20",
+  "source_entry_count": 14,
+  "source_file_count": 14,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BurnMintERC20\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xac23b90a79504865d52b49b327328411a23d4db2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401757"
+    }
+  ]
+}

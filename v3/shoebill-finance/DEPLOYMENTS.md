@@ -1,10 +1,12 @@
 # shoebill-finance — deployments
 
-48 verified deployment(s) across 26 component(s).
+55 verified deployment(s) across 27 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | chain-1088 | `0x24e4d6d97ee1fdbec6bcc7a89d6a90fbd68725f9` | JumpRateModelV4-2 | impl | unknown | no |
+| chain-1088 | `0x2b6647f63f6fab5c73e96fbf974f4ed2ab8a4308` | TransparentUpgradeableProxy | impl | live | no |
+| chain-1088 | `0x386adca3c7d5c90523287933b05919afcc2883de` | TransparentUpgradeableProxy | impl | live | no |
 | chain-1088 | `0x5716093e354bb3c1018a6f7143b875efed58f234` | MetisOracle | impl | unknown | no |
 | chain-1088 | `0x675d672b07effe1a2049080afa9ad23e97d7f32e` | ProtocolLens | impl | unknown | no |
 | chain-1088 | `0x8ba76ded880583581e2d9d253f16b87ac29fa897` | RewardDistributor-4 | impl | unknown | no |
@@ -12,6 +14,7 @@
 | chain-1088 | `0x9c45db7ef823e208963777d2d3dfb83468c08f41` | CErc20Upgradable-2 | impl | unknown | no |
 | chain-1088 | `0x9f53cd350c3ac49ce6ce673abff647e5fe79a3cc` | Unitroller | impl | live | no |
 | chain-1088 | `0xa4430fda764b0532122ac8248c0da319d777c4c1` | MetisOracle-2 | impl | unknown | no |
+| chain-1088 | `0xb0eee8dac4e8fa3d73d84101b30ae0fb359b7a2f` | TransparentUpgradeableProxy | impl | live | no |
 | chain-1088 | `0xb4bfa069b902c40dad4d289ecdd4a8e9e63b3d52` | ProtocolLens-2 | impl | unknown | no |
 | chain-1088 | `0xb79dd63835ca697ee1e56a9c0d4d41576724cd23` | JumpRateModelV4-3 | impl | unknown | no |
 | chain-1088 | `0xb7ed6c062caaacb1a13f317e0a751289280fc306` | Comptroller | impl | unknown | yes |
@@ -50,5 +53,9 @@
 | chain-169 | `0xdfc5c71a80d210dccab7365b4687dc351645e2cf` | MantaOracle | impl | unknown | no |
 | chain-169 | `0xe6305572c2eb09d669567ce29e21fe7f0082a313` | MultiSigWallet | impl | unknown | no |
 | chain-169 | `0xf0ea5c53b1c21611a8eee699b9687e83a3ef97a8` | CErc20Upgradable | impl | unknown | no |
+| mode | `0x4d78c6cbdc2316bce415b8801762b59db7f2ffb4` | TransparentUpgradeableProxy | impl | live | no |
+| mode | `0x616cffc10f2e7662bfb048afa893d2aca42e0435` | TransparentUpgradeableProxy | impl | live | no |
+| mode | `0x8eea9ed0d547457fef88fbf459bf8a18fb04d277` | TransparentUpgradeableProxy | impl | live | no |
 | mode | `0x9f53cd350c3ac49ce6ce673abff647e5fe79a3cc` | Comptroller | impl | live | yes |
+| mode | `0xd13be8b716b18265e294831fcb1330d170840bb3` | TransparentUpgradeableProxy | impl | live | no |
 | mode | `0xeb4090ed525cb45cde8f0e5846f845192789202a` | MultiSigWallet | impl | unknown | no |

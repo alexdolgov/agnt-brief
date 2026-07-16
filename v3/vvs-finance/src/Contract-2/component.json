@@ -1,0 +1,30 @@
+{
+  "component": "Contract-2",
+  "main_contract": "Contract",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://4009539857-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FA36NpwoRiI5BHVPrATSD%2Fuploads%2F2sne8oEBgTEVLt9xBjwA%2FSlowMist%20Audit%20Report%20-%20VVS_launch.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-25",
+      "chain_id": 25,
+      "address": "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # the-idols — deployments
 
-8 verified deployment(s) across 8 component(s).
+9 verified deployment(s) across 9 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -10,5 +10,6 @@
 | ethereum | `0x4a0cedd8abf9fc5a0187cf9faa0a2466bab76652` | IdolMarketplace-2 | impl | live | no |
 | ethereum | `0x4ce4f4c4891876ffc0670bd9a25fcc4597db3bbf` | IdolMarketplace-3 | impl | live | no |
 | ethereum | `0x523fbd08ead56490dbbfa008ef582e7a272df5e6` | IdolMarketplace-4 | impl | live | no |
+| ethereum | `0x7d624c34e475a2eca893d0c118527b6e2061256a` | RewardsCollector | impl | live | no |
 | ethereum | `0x9416ba76e88d873050a06e5956a3ebf10386b863` | VirtueToken | impl | live | yes |
 | ethereum | `0xae7ab96520de3a18e5e111b5eaab095312d7fe84` | AppProxyUpgradeable | proxy | live | no |

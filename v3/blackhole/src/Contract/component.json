@@ -1,0 +1,30 @@
+{
+  "component": "Contract",
+  "main_contract": "Contract",
+  "source_entry_count": 14,
+  "source_file_count": 14,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://security-audit-links.s3.us-east-1.amazonaws.com/Code4rena+Audit-Blackhole-report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x42a53f5460f126cccaf57d1b79155c65d229f82b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

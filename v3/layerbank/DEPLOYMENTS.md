@@ -1,15 +1,35 @@
 # layerbank — deployments
 
-84 verified deployment(s) across 38 component(s).
+107 verified deployment(s) across 44 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| bsc | `0x00bce4d6c3e138c25b79a6fbf09e9335e188d33c` | Market | impl | live | no |
+| bsc | `0x10e4a696a8856ec30df96d3de96f84dc30e78e41` | Market | impl | live | no |
+| bsc | `0x1c0577f2d57e0bf3f4ad5a055a4dd2e52a0c325d` | Market | impl | live | no |
+| bsc | `0x308294607b5bc2ebbcd8b30074a37ba59b6919ff` | Market | impl | live | no |
+| bsc | `0x56294e2de1f7da3bfd9d0b26a06279c7e3c94899` | RateModelSlope-2 | impl | live | no |
+| bsc | `0x864ae2880cfdee8dd98b74cd0325d89024744e88` | Market | impl | live | no |
+| bsc | `0x8a6c881a5fdb42604c9fe6e206350dfdd6616178` | RateModelSlope-2 | impl | live | no |
 | bsc | `0x8efdd7396b83cd53ae7555224a30c41b1a100ffa` | Core-2 | impl | live | no |
+| bsc | `0x9afa0a536d695f915adea6575f102dc1a228dfa6` | Validator-3 | impl | live | no |
+| bsc | `0xc0600bfb1dc7b0c584bf67b15c773be891408865` | Market | impl | live | no |
+| bsc | `0xd1a761248ac61bc566212c3931c2605d8cb8ad3d` | Market | impl | live | no |
+| bsc | `0xd2ef9a563525c1409c1d48518dbf164ef9df3cf4` | RateModelSlope-2 | impl | live | no |
+| bsc | `0xdf62df0986fd8e7a3844949ca9918b6b9b3c8edf` | Market | impl | live | no |
+| bsc | `0xe009af49a384722657579812a304602f430f8750` | Market | impl | live | no |
+| bsc | `0xe07492f13d67bff89a82ea0102fb70eac49b0cae` | Market | impl | live | no |
+| bsc | `0xe1a2d363fa2645830f137f589de29bf7bfe12fff` | PriceCalculator-2 | impl | live | no |
+| bsc | `0xe6a89cfee340ebfe9d05b5af131526e006baf543` | Market | impl | live | no |
+| bsc | `0xeb27ea9f1891bbfe7fbc3d111d7bf3aa9709fef2` | Market | impl | live | no |
+| bsc | `0xf2794efbf9c510f107928e1400eb2a108252725d` | Market | impl | live | no |
+| bsc | `0xf8a89b4586c76e30853923b8e2803f80fd230d60` | Market | impl | live | no |
+| bsc | `0xfb9292c180bb6056487af44ef077fde90b9c86b3` | Market | impl | live | no |
 | chain-169 | `0x01be49c7734673bd407fc54735c2ac02504c27c1` | RateModelSlope | impl | live | no |
 | chain-169 | `0x20a512dbdc0d006f46e6ca11329034eb3d18c997` | LABToken | impl | live | no |
 | chain-169 | `0x27f85bd47740139a56e34124b33481ea6e1e660d` | RateModelSlope | impl | live | no |
 | chain-169 | `0x3447275b4252b7929483528cf966eb466e71277e` | Validator | impl | live | no |
-| chain-169 | `0x38f4384b457f81a4895c93a7503c255efd0746d2` | PriceCalculator-2 | impl | unknown | no |
+| chain-169 | `0x38f4384b457f81a4895c93a7503c255efd0746d2` | PriceCalculator-3 | impl | unknown | no |
 | chain-169 | `0x4054f478ec834fbdb2b192f144d4615d31bda9a6` | Leverager | impl | live | no |
 | chain-169 | `0x472d43a8f00a41c3431e549367d2de2e07c5e388` | LToken-2 | impl | live | no |
 | chain-169 | `0x604ddc9c59572d197b983f0578e58e61026765ed` | LToken-2 | impl | live | no |
@@ -24,7 +44,7 @@
 | chain-169 | `0x7e76a2112706814477a3f7638a0fcedde85733a6` | RateModelSlope | impl | unknown | no |
 | chain-169 | `0x7ebf48f06fed5fa165748c7f30337a5d0d65fb14` | RateModelSlope | impl | unknown | no |
 | chain-169 | `0x8d965181bdfd026cf5a09889898d70c4afae4684` | RateModelSlope | impl | unknown | no |
-| chain-169 | `0x90286f894020950981c9e3196bacb03a223e4cfd` | PriceCalculator-3 | impl | live | no |
+| chain-169 | `0x90286f894020950981c9e3196bacb03a223e4cfd` | PriceCalculator-4 | impl | live | no |
 | chain-169 | `0x9125548148fb44af1e772a6c1f3727a65d043599` | Vesting | impl | unknown | no |
 | chain-169 | `0x91ad6fb355252f731ecbeb30aeff6464cbbe0c07` | RateModelSlope | impl | unknown | no |
 | chain-169 | `0x9d8ecb502d2ac290644d70a096165188d47e21a4` | LToken-2 | impl | live | no |
@@ -33,11 +53,11 @@
 | chain-169 | `0xbea4070909dc939282ecc953d99840e390d891d1` | RateModelSlope | impl | unknown | no |
 | chain-169 | `0xc44a204705e0919266aee243df915ec3ae16d9a4` | Vesting | impl | unknown | no |
 | chain-169 | `0xc85836a3878e4dbbec91ac0701d4f6db08ce616d` | RebateDistributor | impl | live | no |
-| chain-169 | `0xca892a10908a38044e933836c21f28ac34ff157f` | Validator-3 | impl | unknown | no |
+| chain-169 | `0xca892a10908a38044e933836c21f28ac34ff157f` | Validator-4 | impl | unknown | no |
 | chain-169 | `0xd30726b29fae71d28c15f5632ec9ab2c2716a2f6` | RateModelSlope | impl | unknown | no |
 | chain-169 | `0xdf4b60ce539648ab05541827a3bf0a079a5fc1c2` | LToken-2 | impl | live | no |
 | chain-169 | `0xe8c8cfc7750abaf26e5889c5e3f56d1e5f96902a` | RateModelSlope | impl | unknown | no |
-| chain-169 | `0xf2c1e27a4bf0d81bb4a6e6e3e5dcd1dc6ed3a7fa` | Validator-4 | impl | unknown | no |
+| chain-169 | `0xf2c1e27a4bf0d81bb4a6e6e3e5dcd1dc6ed3a7fa` | Validator-5 | impl | unknown | no |
 | chain-169 | `0xf7e5d5afae27305b371c4d183f887b77f0848acc` | RateModelSlope | impl | unknown | no |
 | chain-169 | `0xf9a2e1cfa9760a1edc405047df638da71815ef95` | RateModelSlope | impl | unknown | no |
 | linea | `0x009a0b7c38b542208936f1179151cd08e2943833` | Core-4 | impl | live | no |
@@ -45,7 +65,7 @@
 | linea | `0x14c5a2b562754ed412708a103fb9cb65b1b16494` | Locker | impl | live | no |
 | linea | `0x2ad69a0cf272b9941c7ddcada7b0273e9046c4b0` | LToken-4 | impl | live | no |
 | linea | `0x2c88a441418e06b9f3e565c2f866fcb03c9409e2` | LToken | impl | live | no |
-| linea | `0x35a8c6050591c2f65b3e926b4b2ef825e3766bd6` | PriceCalculator-5 | impl | live | no |
+| linea | `0x35a8c6050591c2f65b3e926b4b2ef825e3766bd6` | PriceCalculator-6 | impl | live | no |
 | linea | `0x3df121931dc2e72dc4746da933126f6d50595605` | LABDistributor-3 | impl | live | no |
 | linea | `0x42e62fec1036f874a7579806530d628a59b6d7fb` | PriceCalculator | impl | live | no |
 | linea | `0x43eac5bfea14531b8de0b334e123ea98325de866` | Core-5 | impl | live | no |
@@ -53,6 +73,7 @@
 | linea | `0x5d06067f86946620c326713b846ddc8b97470957` | LABDistributor-4 | impl | live | no |
 | linea | `0x67492784ec588681e55b2bfc0118d882a8f23e48` | LToken | impl | live | no |
 | linea | `0x6fe39525298118a6b58646b83f6b23e48208a855` | LToken | impl | live | no |
+| linea | `0x709be039a87e5c6f1a085de0d167fa0a4e7477fc` | RateModelSlope-3 | impl | live | no |
 | linea | `0x720a99762bb3d2b98c8ddd64e13b0851355ca0e7` | Validator-2 | impl | live | no |
 | linea | `0x87bec95c9a414f9a83599138ba9e754d15f855bf` | RebateDistributor-3 | impl | live | no |
 | linea | `0x8fefabe1b9a530d9d0f0ef25e84a9d8b56ab2053` | LToken | impl | live | no |
@@ -62,16 +83,18 @@
 | linea | `0xb01f9de93374a6b287372008ab8739c7ddb7ce28` | LToken | impl | live | no |
 | linea | `0xb81b1e2ee4c867c95ec7041f6c22e0e89328d890` | LToken | impl | live | no |
 | linea | `0xb97f21d1f2508ff5c73e7b5af02847640b1ff75d` | LABToken-3 | impl | live | no |
+| linea | `0xc690549e0215192d1ffb527bb3ca4d4ba638cad2` | RateModelSlope-3 | impl | live | no |
 | linea | `0xc7d8489dae3d2ebef075b1db2257e2c231c9d231` | LToken-4 | impl | live | no |
 | linea | `0xc98b936d7540ba67c2260916ae91b3eeb9eefff3` | Leverager-3 | impl | live | no |
 | linea | `0xccba9ac94531e15aa55d9065e398812f06b84f14` | LToken | impl | live | no |
 | linea | `0xcdfcfdb11b75c53e43e4f1f19ecfc16b321d15f8` | LToken | impl | live | no |
 | linea | `0xe33520c74bac3c537bfeee0f65e80471f3d564b9` | LToken-4 | impl | live | no |
+| linea | `0xe9e061172117e7bdee0df103e8f697b0858d4ab9` | Validator-6 | impl | live | no |
 | linea | `0xea01659b66a682d41f4718bb62134ea8109fbfc6` | RebateDistributor-4 | impl | live | no |
 | linea | `0xea0f73296a6147fb56bae29306aae0ffaff9de5f` | LToken-4 | impl | live | no |
 | linea | `0xf46680e9987f334041656abeb83b87c2494dc751` | LToken | impl | live | no |
 | mode | `0x0ccd703acfe6ce83377243c2dbf9d55a09e12769` | Validator | impl | live | no |
-| mode | `0x310e183416d7f266c150e7244733d1dcb1470172` | PriceCalculator-4 | impl | unknown | no |
+| mode | `0x310e183416d7f266c150e7244733d1dcb1470172` | PriceCalculator-5 | impl | unknown | no |
 | mode | `0x59dd441184024a77fd17e68f07e242622806c256` | LToken-3 | impl | live | no |
 | mode | `0x66a5e18e36bfea86074a047954fec7c94ced366e` | LToken-3 | impl | live | no |
 | mode | `0x67d21527b227ec286409c6dd28d4704424ce006f` | RebateDistributor-2 | impl | live | no |

@@ -1,8 +1,8 @@
 {
   "component": "Voter-4",
   "main_contract": "Voter",
-  "source_entry_count": 83,
-  "source_file_count": 83,
+  "source_entry_count": 63,
+  "source_file_count": 63,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,7 +17,7 @@
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0xaf6c9abbeebc6f78bc77bd65fbc624da10af4019",
+      "address": "0x9334f3ce4569e04437665daa254e0189d145af21",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

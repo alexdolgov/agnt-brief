@@ -1,0 +1,33 @@
+{
+  "component": "Contract-39",
+  "main_contract": "Contract",
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-39\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/enzymefinance/protocol/blob/dev/audits/2022-11-CS--balancer-and-aura-staking--balancer-stable-pool-feed--kiln-staking--paraswap-multi-order--arbitrary-deposit-token-shares-wrapper.pdf",
+    "https://github.com/enzymefinance/protocol/blob/dev/audits/2023-07-CS--erc4626--kiln-exits--balancer-stable-pool-price-feed-fix--convex-aura-wrappers-fix.pdf",
+    "https://github.com/enzymefinance/protocol/blob/v4/audits/2022-11-CS--balancer-and-aura-staking--balancer-stable-pool-feed--kiln-staking--paraswap-multi-order--arbitrary-deposit-token-shares-wrapper.pdf",
+    "https://github.com/enzymefinance/protocol/blob/v4/audits/2023-07-CS--erc4626--kiln-exits--balancer-stable-pool-price-feed-fix--convex-aura-wrappers-fix.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfa9a7f8f30c9bc741be5959af8cd48636a6aecc2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

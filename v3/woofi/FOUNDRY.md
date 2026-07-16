@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/WooSuperChargerVaultV2"
+forge build --root "src/ProxyAdmin"
 ```
 
 ## Build every component

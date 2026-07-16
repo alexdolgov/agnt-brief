@@ -78,12 +78,6 @@ interface IAutoVault {
     /// @notice Emitted when tokens are rescued
     event Rescued(address indexed token, uint256 amount);
 
-    /// @notice Emitted when input budgets for a token are wiped
-    event InputBudgetsWiped(address indexed inputToken);
-
-    /// @notice Emitted when legacy router is set
-    event LegacyRouterSet(address indexed legacyRouter);
-
     // ═══════════════════════════════════════════════════════════════════════
     // ERRORS
     // ═══════════════════════════════════════════════════════════════════════
@@ -108,6 +102,9 @@ interface IAutoVault {
 
     /// @notice Thrown when user has insufficient balance
     error InsufficientBalance();
+
+    /// @notice Thrown when user has zero balance
+    error ZeroBalance();
 
     /// @notice Thrown when output token is not whitelisted
     error InvalidOutput();
@@ -217,14 +214,6 @@ interface IAutoVault {
     /// @param token Token to rescue
     /// @param amount Amount to rescue
     function rescue(address token, uint256 amount) external;
-
-    /// @notice Rescue full balance of token and wipe its input budgets
-    /// @param token Token to rescue and wipe
-    function rescueAndWipe(address token) external;
-
-    /// @notice Set legacy router address (for LP unwrapping)
-    /// @param _legacyRouter Legacy router address
-    function setLegacyRouter(address _legacyRouter) external;
 
     // ═══════════════════════════════════════════════════════════════════════
     // VIEW FUNCTIONS

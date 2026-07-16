@@ -10,9 +10,10 @@
     "build_command": "forge build --root \"src/Stonks\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
+    "https://github.com/lidofinance/audits/blob/main/Ackee%20Blockchain%20Lido%20Stonks%20Audit%20Report%2003-24.pdf",
     "https://github.com/lidofinance/audits/blob/main/Pessimistic%20Lido%20Stonks%20Audit%20Report%2012-23.pdf"
   ],
   "addresses": [
@@ -25,6 +26,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "401913"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3e2d251275a92a8169a3b17a2c49016e2de492a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

@@ -1,0 +1,31 @@
+{
+  "component": "Contract-7",
+  "main_contract": "Contract",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-7\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/yearn/yearn-security/blob/master/audits/20230626_ChainSecurity_yeth_core/ChainSecurity_Yearn_Yearn_yETH_audit.pdf",
+    "https://reports.chainsecurity.com/Yearn/ChainSecurity_Yearn_YearnYETH_Audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xccd04073f4bdc4510927ea9ba350875c3c65bf81",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

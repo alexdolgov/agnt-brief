@@ -4,6 +4,12 @@
   "project_key": "usdt0",
   "missing": [
     {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0x57142977ba9826793398fbdec436284065187f49",
+      "canonical_source_address": null
+    },
+    {
       "chain_id": 57073,
       "chain": "chain-57073",
       "address": "0x0200c29006150606b650577bbe7b6248f58470c1",

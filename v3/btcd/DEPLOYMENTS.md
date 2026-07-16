@@ -1,6 +1,6 @@
 # btcd — deployments
 
-64 verified deployment(s) across 64 component(s).
+65 verified deployment(s) across 64 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -42,7 +42,7 @@
 | ethereum | `0x59633b825d4aa12cb0907616746d76dd88f76f40` | ProtocolTieredFeePolicy | impl | live | no |
 | ethereum | `0x5f6c71f41232a1aeae2623c4ac7b111c38406834` | Quoter | impl | live | no |
 | ethereum | `0x656f1f3a4df83a10afb2bd2ecad8ef4a96c9e4d0` | IbBtcTokenOracle | impl | live | no |
-| ethereum | `0x68b8b995cfd068805158c1eaefa7bbfa7503a27c` | FISC | impl | live | no |
+| ethereum | `0x68b8b995cfd068805158c1eaefa7bbfa7503a27c` | FISC | impl | live | yes |
 | ethereum | `0x700ac5f087468a253920818e662f08ad7d991af5` | VaultMinting | impl | live | no |
 | ethereum | `0x707c243b59fedf29730cd3d1025fbeeea0412075` | VesperVotingPowerV3 | impl | live | no |
 | ethereum | `0x70845de4d1cc8fa169c42574e329a298ebcf44d8` | RewardsDistributor | impl | live | no |
@@ -57,6 +57,7 @@
 | ethereum | `0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb` | Morpho | impl | unknown | no |
 | ethereum | `0xc06d6347915f6b5e9dbb53fe17b988b99dbad360` | Operator | impl | live | no |
 | ethereum | `0xc6694e05b750015f54ac646544a4a9d33cbe4086` | BTCD | impl | live | yes |
+| ethereum | `0xcad51a95ad91fe0912df7b5f5150f622a7fadafd` | FISC | impl | live | yes |
 | ethereum | `0xcb6dafb36b40c9c7371108f66a5184ff3b01ee0d` | ApyTieredFeePolicy | impl | live | no |
 | ethereum | `0xcc7e22e8c8fa860ff6cd7a90c34e466ee0bd950c` | AlusdTokenMainnetOracle | impl | live | no |
 | ethereum | `0xd744320abd3bd4445dc3c90c889391bd454d5b30` | VesperVotingPowerV2 | impl | live | no |
@@ -68,8 +69,3 @@
 | ethereum | `0xf974d7435e86db32d8a6d021934712ea51f2fb41` | InfiniFiAdapter | impl | live | no |
 | ethereum | `0xfdd0224cc556af301e06d46bbe27b5298d25a0f9` | FluidLitePositionManager | impl | live | no |
 | ethereum | `0xffd74ecf5b4eec6eac2624764933fb5f2e2dfd09` | MStableTokenOracle | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0xcad51a95ad91fe0912df7b5f5150f622a7fadafd`

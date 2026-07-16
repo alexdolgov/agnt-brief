@@ -10,79 +10,182 @@
     "build_command": "forge build --root \"src/WooSuperChargerVaultV2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 7,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 17,
+  "audited": true,
+  "audits_covering": [
+    "https://2563590922-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FqxL8pa5qcyp6gpHL7o0j%2Fuploads%2FovDjWesvfZxK75yIGIXO%2FWOOFI%20Stake%20-%20Zellic%20Audit%20Report.pdf",
+    "https://github.com/Zellic/publications/blob/master/WOOFI%20Stake%20-%20Zellic%20Audit%20Report.pdf"
+  ],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x7eb8d4ccfdbd9df8d3520e9c5b5edf6a5cbe4cad",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1ddd225ef26714bb8055ddceaee2589ba09c89ed",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401121"
+      "logic_topography_row_id": "401176"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x90a2aadba560040e604ca57ca75760ab89abd085",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
-    },
-    {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x9dd5dd86b978f17628f01307a83347d9ec9b0699",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x4df34a29aabd0694a62cbf65a844e12a44617975",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401160"
+      "logic_topography_row_id": "401180"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xedbb74da05d58b22f07184bb79ed9124791799ac",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x758231b7d5204d08634dd3f9fcdf49fc17355d33",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401170"
+      "logic_topography_row_id": "401184"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x11b29ae3037f4526e4aa56952318e0d01ada836a",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x91741863a48f0b29fc0b6d10b3cde2122feb58f7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401318"
+      "logic_topography_row_id": "401187"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x1cd7b33faf4f172146bcbb841c7addc96802e6c4",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xcc96ba33eae1147ba8b0c73d3dd4cee40d681ee9",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401320"
+      "logic_topography_row_id": "401191"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x866810349b2e28e411669911bb0babb06cc60625",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xf951175d04c94bc908cab79fd846d3be7d0a37dd",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401331"
+      "logic_topography_row_id": "401198"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x2cc9938584efa3bdf0fd19ddbb1828a672ae2376",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401203"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x65753506657de6d6512df80bcbf437b7e39ae9e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401207"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x872b6ff825da431c941d12630754036278ad7049",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401211"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x944ebcd21dea579b5091d141c75ec28bfe054fca",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401213"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xa8701c6a659ebddfbb399b2df6eeda853e442257",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401216"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xd6abd5fd165fd9127b37b63ac1ab86574bf5686e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401222"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x8c603050d7a913b6f63836e07ebf385a4a5736e7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401237"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x0fd9ce310903d3750ade5cb634860fc7d11b3523",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401347"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x2cf870854469e77191b65d990418559b66688dce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401349"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xc7f6fc03539fbf6fa79270eda7d79375c65028dd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401368"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xe40d544b21b0835e09fd2642c54651499ddcb0c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401369"
     }
   ]
 }

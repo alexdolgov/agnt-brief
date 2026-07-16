@@ -1,0 +1,30 @@
+{
+  "component": "Contract-8",
+  "main_contract": "Contract",
+  "source_entry_count": 23,
+  "source_file_count": 23,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-8\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://584145091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FOSwqNrRJ9Xh6jO57yoLm%2Fuploads%2Fs1TqcqIFZ5UkYF7iD5Nt%2Fkodiak_A3_by_0xmacro.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xcfe9ee61c271fba4d190498b5a71b8cb365a3590",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

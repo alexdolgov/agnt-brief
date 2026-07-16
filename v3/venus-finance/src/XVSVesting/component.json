@@ -1,0 +1,38 @@
+{
+  "component": "XVSVesting",
+  "main_contract": "XVSVesting",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/XVSVesting\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa9dd0536ab0699d60c28ce369ff366a1e621bff1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404829"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb28dec7c7ac80f4d0b6a1b711c39e444cde8b2ce",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404839"
+    }
+  ]
+}

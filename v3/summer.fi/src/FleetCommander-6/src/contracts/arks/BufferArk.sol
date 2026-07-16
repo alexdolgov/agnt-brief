@@ -1,20 +1,30 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 import "../Ark.sol";
 
 /**
  * @title BufferArk
- * @notice Specialized Ark for Fleet Commander Buffer operations. Funds in buffer are not deployed and are not subject
- * to any
- * yield-generating strategies. We keep a ceratin percentage of the total assets in the buffer to ensure that there are
- * always
- * enough assets to quickly disembark ( see {IFleetCommanderConfigProvider-config-minimumBufferBalance}).
+ * @notice Specialized Ark contract for Fleet Buffer operations.
+ * @dev This contract holds a certain percentage of total assets in a buffer,
+ *      which are not deployed and not subject to yield-generating strategies.
+ *      The buffer ensures quick disembarkation of assets when needed.
+ *
+ * Key features:
+ * - Maintains a minimum buffer balance as per FleetCommander configuration
+ * - Does not deploy assets to any yield-generating strategies
+ * - Provides quick access to funds for disembarkation
+ * (see {IFleetCommanderConfigProvider-config-minimumBufferBalance})
  */
 contract BufferArk is Ark {
     /*//////////////////////////////////////////////////////////////
                                 CONSTRUCTOR
     //////////////////////////////////////////////////////////////*/
+    /**
+     * @notice Initializes the BufferArk
+     * @param _params The ArkParams struct containing initialization parameters
+     * @param commanderAddress The address of the Fleet Commander
+     */
     constructor(
         ArkParams memory _params,
         address commanderAddress
@@ -28,9 +38,24 @@ contract BufferArk is Ark {
 
     /**
      * @inheritdoc IArk
+     * @dev For BufferArk, total assets are simply the token balance of this contract,
+     *      as no assets are deployed to external strategies.
      */
     function totalAssets() public view override returns (uint256) {
-        return config.token.balanceOf(address(this));
+        return config.asset.balanceOf(address(this));
+    }
+
+    /**
+     * @notice Internal function to get the total assets that are withdrawable
+     * @dev For Buffer Ark, the total assets are always withdrawable
+     */
+    function _withdrawableTotalAssets()
+        internal
+        view
+        override
+        returns (uint256)
+    {
+        return totalAssets();
     }
 
     /**

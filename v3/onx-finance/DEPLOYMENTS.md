@@ -1,6 +1,6 @@
 # onx-finance — deployments
 
-89 verified deployment(s) across 85 component(s).
+91 verified deployment(s) across 87 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -44,6 +44,7 @@
 | ethereum | `0x3facaef31766a1a0dfb02d845ccf3e252182f0fa` | FETH_R14 | impl | live | no |
 | ethereum | `0x4017e2484f1c6d91eb1c0f29ba8a44506131e64f` | GlobalPool_R26 | impl | live | no |
 | ethereum | `0x40d6fc59fe5c3ecb045f9d7fe0bb5e18e7dad0a5` | Governance | impl | live | no |
+| ethereum | `0x424b1ae0af693d4577dde25081e970cb656013c7` | AdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0x42ee6669183bd26a45a249d57efdcc18a2a794f3` | Offering | impl | live | no |
 | ethereum | `0x45d866a51d76d7288a316a9095430828b0137d6f` | ONXStrategy | impl | live | no |
 | ethereum | `0x4748b69634c7d807d0ea5aa3647267549ecfce15` | GlobalPool_R22 | impl | live | no |
@@ -76,6 +77,7 @@
 | ethereum | `0xa406131ee1ced40de8cc937497c65f5ad5cfd374` | GlobalPool_R33 | impl | live | no |
 | ethereum | `0xa6d62c8c8d094ea3da1160b66f94435a88185fd9` | GlobalPool_R30 | impl | live | no |
 | ethereum | `0xa7b212a0d452cbbc89c25d6d7e388ad5898a9aa1` | FETH_R15 | impl | live | no |
+| ethereum | `0xa99f0ad2a539b2867fcfea47f7e71f240940b47c` | StakedONX | impl | live | no |
 | ethereum | `0xac2e0b6db96f345ee19fda8a9be5907e996f335c` | FETH_R10 | impl | live | no |
 | ethereum | `0xb1c25b7d1de63a7535a533c75ce551949c7e87a1` | FETH_R6 | impl | live | no |
 | ethereum | `0xb713053a8fe0becd69ef9cce4e24524133979926` | FETH_R13 | impl | live | no |

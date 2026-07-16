@@ -1,0 +1,30 @@
+{
+  "component": "Contract",
+  "main_contract": "Contract",
+  "source_entry_count": 41,
+  "source_file_count": 41,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://code4rena.com/reports/2023-01-ondo"
+  ],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x6b7443808acfcd48f1de212c2557462fa86ee945",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

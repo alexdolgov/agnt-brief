@@ -65,13 +65,10 @@ contract AppStaking is
     /// @inheritdoc IAppStaking
     uint256 public buyCooldownPeriod;
 
-    // Mapping from token ID to withdraw cooldown end timestamp
-    mapping(uint256 => uint256) private _withdrawCooldownStart;
-
     /// @inheritdoc IAppStaking
     function initialize(address _appToken, address _trackingToken, address _authority, address _burner)
         public
-        reinitializer(8)
+        reinitializer(7)
     {
         if (lastId == 0) lastId = 1;
 
@@ -229,10 +226,8 @@ contract AppStaking is
             rewardPerTokenPaid: rewardPerTokenStored,
             rewards: 0,
             cooldownEnd: 0,
-            rewardsUnlockAt: block.timestamp + rewardCooldownPeriod
+            rewardsUnlockAt: block.timestamp + Math.max(minLockDuration, rewardCooldownPeriod)
         });
-
-        _withdrawCooldownStart[tokenId] = block.timestamp + Math.max(minLockDuration, withdrawCooldownPeriod);
 
         totalStaked += amount;
 
@@ -246,7 +241,6 @@ contract AppStaking is
     function startUnstaking(uint256 tokenId) external override nonReentrant {
         require(ownerOf(tokenId) == msg.sender, "Not owner");
         require(_positions[tokenId].cooldownEnd == 0, "Already in cooldown");
-        require(_withdrawCooldownStart[tokenId] < block.timestamp, "Currently in withdraw cooldown");
 
         Position storage position = _positions[tokenId];
         _updateReward(tokenId);
@@ -278,7 +272,6 @@ contract AppStaking is
         _burn(tokenId);
         delete _positions[tokenId];
         delete _buyCooldownEnd[tokenId];
-        delete _withdrawCooldownStart[tokenId];
 
         emit PositionUnstaked(tokenId, msg.sender, amount);
     }
@@ -429,9 +422,6 @@ contract AppStaking is
         // Inherit buy cooldown from original position
         _buyCooldownEnd[newTokenId] = _buyCooldownEnd[tokenId];
 
-        // Inherit withdraw cooldown from original position
-        _withdrawCooldownStart[newTokenId] = _withdrawCooldownStart[tokenId];
-
         // Update original position
         position.amount -= splitAmount;
         position.declaredValue -= splitDeclaredValue;
@@ -472,15 +462,10 @@ contract AppStaking is
         // Keep the strictest rewards unlock schedule (the furthest date)
         position1.rewardsUnlockAt = Math.max(position1.rewardsUnlockAt, position2.rewardsUnlockAt);
 
-        // Inherit cooldowns from the original position
-        _buyCooldownEnd[tokenId1] = Math.max(_buyCooldownEnd[tokenId1], _buyCooldownEnd[tokenId2]);
-        _withdrawCooldownStart[tokenId1] = Math.max(_withdrawCooldownStart[tokenId1], _withdrawCooldownStart[tokenId2]);
-
         // Burn the second token and delete its storage
         _burn(tokenId2);
         delete _positions[tokenId2];
         delete _buyCooldownEnd[tokenId2];
-        delete _withdrawCooldownStart[tokenId2];
 
         // No change in totalStaked or tracking tokens is required since the overall amount stays the same
 
@@ -524,14 +509,6 @@ contract AppStaking is
     /// @inheritdoc IAppStaking
     function isInBuyCooldown(uint256 tokenId) external view override returns (bool) {
         return _buyCooldownEnd[tokenId] > 0 && block.timestamp < _buyCooldownEnd[tokenId];
-    }
-
-    /// @inheritdoc IAppStaking
-    function isInWithdrawCooldown(uint256 tokenId) external view override returns (bool, uint256) {
-        return (
-            _withdrawCooldownStart[tokenId] > 0 && block.timestamp < _withdrawCooldownStart[tokenId],
-            _withdrawCooldownStart[tokenId]
-        );
     }
 
     /// @notice Cancels the unstaking process and resets cooldown variables

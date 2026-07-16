@@ -2,12 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "hord",
-  "missing": [
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0x51b2f83aac13adb9ed826c4cdb593c88e6b61c92",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

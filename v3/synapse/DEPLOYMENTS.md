@@ -1,6 +1,6 @@
 # synapse — deployments
 
-303 verified deployment(s) across 173 component(s).
+309 verified deployment(s) across 176 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -9,6 +9,7 @@
 | arbitrum | `0x080f6aed32fc474dd5717105dba5ea57268f46eb` | SynapseERC20-3 | impl | live | no |
 | arbitrum | `0x0db3fe3b770c95a0b99d1ed6f2627933466c0dd8` | SwapFlashLoan-3 | impl | live | no |
 | arbitrum | `0x109523db4336e01f030ed51c581c3fa9222f878c` | SwapEthWrapper-3 | impl | live | no |
+| arbitrum | `0x12715a66773bd9c54534a01abf01d05f6b4bd35e` | TransparentUpgradeableProxy | proxy | live | no |
 | arbitrum | `0x15779fefdf5be6f422883e746a1d139a6a12a873` | SynapseBridge-22 | impl | live | no |
 | arbitrum | `0x15ada3716a7e589b1c31b7131a0cc546203e100f` | LPToken | impl | live | no |
 | arbitrum | `0x1b9651c3ff7f055b721c9b51219709e52fdbe5fd` | SynapseBridge-7 | impl | live | no |
@@ -116,6 +117,7 @@
 | avalanche | `0xfff6d276bc37c61a23f06410dce4a400f66420f8` | PositionRouter | impl | live | no |
 | base | `0x003107b3aeee133804eabe7d1df200ddfbb51dce` | AmplificationUtils-3 | impl | live | no |
 | base | `0x06fea8513ff03a0d3f61324da709d4cf06f42a5c` | SwapQuoter-2 | impl | live | no |
+| base | `0x12715a66773bd9c54534a01abf01d05f6b4bd35e` | TransparentUpgradeableProxy | proxy | live | no |
 | base | `0x15ada3716a7e589b1c31b7131a0cc546203e100f` | LPToken-4 | impl | live | no |
 | base | `0x20b587484e75752adac381ae577a7562e7f358c5` | SwapDeployer-2 | impl | live | no |
 | base | `0x25f8fa4917180ff308883e37ea27ceaeb68c1f19` | SynapseRouter | impl | live | no |
@@ -144,7 +146,7 @@
 | blast | `0x3194b0a295d87fdaa54df852c248f7a6baf6c6e0` | SynapseERC20-4 | impl | live | no |
 | blast | `0x34f52752975222d5994c206ce08c1d5b329f24dd` | FastBridge-2 | impl | live | no |
 | blast | `0x43b961aec392cfa347225528e5befa987578841c` | SwapEthWrapper-2 | impl | live | no |
-| blast | `0x55769baf6ec39b3bf4aae948eb890ea33307ef3c` | TransparentUpgradeableProxy | proxy | live | no |
+| blast | `0x55769baf6ec39b3bf4aae948eb890ea33307ef3c` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | blast | `0x9592f08387134e218327e6e8423400eb845ede0e` | SynapseERC20-4 | impl | live | no |
 | blast | `0x999fcd13c54b26e02a6ccd185f71550b3a4641c0` | SwapFlashLoan-2 | impl | live | no |
 | blast | `0xa4bd1aad7cf04567c10f38fc4355e91bba32ac9c` | SwapFlashLoan-2 | impl | live | no |
@@ -154,7 +156,8 @@
 | bsc | `0x5f300aec9573bec1ed161e07bb6564e03154e68a` | SynapseERC20 | impl | live | no |
 | bsc | `0x8f5bbb2bb8c2ee94639e55d5f41de9b4839c1280` | MiniChefV2 | impl | live | no |
 | bsc | `0xa4080f1778e69467e905b8d6f72f6e441f9e9484` | SynapseERC20 | impl | live | no |
-| bsc | `0xd123f70ae324d34a9e76b67a27bf77593ba8749f` | TransparentUpgradeableProxy | proxy | live | no |
+| bsc | `0xd123f70ae324d34a9e76b67a27bf77593ba8749f` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| chain-1088 | `0x06fea8513ff03a0d3f61324da709d4cf06f42a5c` | TransparentUpgradeableProxy-4 | impl | live | no |
 | chain-1088 | `0x20b587484e75752adac381ae577a7562e7f358c5` | SynapseBridge-2 | impl | unknown | no |
 | chain-1088 | `0x22cdc93f53ee3f6b8ad66fad6f98915a5349950e` | SynapseERC20Factory-3 | impl | unknown | no |
 | chain-1088 | `0x67c10c397dd0ba417329543c1a40eb48aaa7cd00` | SynapseERC20-5 | impl | live | no |
@@ -176,6 +179,7 @@
 | ethereum | `0x0642026e7f0b6ccac5925b4e7fa61384250e1701` | Coin | impl | live | no |
 | ethereum | `0x0f2d719407fdbeff09d87557abb7232601fd9f29` | SynapseERC20 | impl | live | no |
 | ethereum | `0x1116898dda4015ed8ddefb84b6e8bc24528af2d8` | SwapFlashLoan | impl | live | no |
+| ethereum | `0x12715a66773bd9c54534a01abf01d05f6b4bd35e` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0x184f3fad8618a6f458c16bae63f70c426fe784b3` | OlympusTokenMigrator | impl | live | no |
 | ethereum | `0x19e5a60c1646c921ac592409548d1bce5b071faa` | SaffronLPBalanceToken | impl | live | no |
 | ethereum | `0x1b84765de8b7566e4ceaf4d0fd3c5af52d3dde4f` | LPToken | impl | live | no |
@@ -213,6 +217,7 @@
 | ethereum | `0xf3c2bdfccb75cafda3d69d807c336bede956563f` | Vault-3 | impl | live | no |
 | ethereum | `0xf442e3a8041199747f94b01a64632134256f847f` | MerkleDistributorSdt | impl | live | no |
 | linea | `0x34f52752975222d5994c206ce08c1d5b329f24dd` | FastBridge-2 | impl | live | no |
+| optimism | `0x12715a66773bd9c54534a01abf01d05f6b4bd35e` | TransparentUpgradeableProxy | proxy | live | no |
 | optimism | `0x5523d3c98809dddb82c686e152f5c58b1b0fb59e` | FastBridge | impl | live | no |
 | optimism | `0x5a5fff6f753d7c11a56a52fe47a177a87e431655` | SynapseERC20-2 | impl | live | no |
 | optimism | `0x67c10c397dd0ba417329543c1a40eb48aaa7cd00` | SynapseERC20-2 | impl | live | no |
@@ -231,6 +236,7 @@
 | polygon | `0x0adf879bd8215654abdc354b66dbfdfb013d2362` | SynapseERC20Factory | impl | live | no |
 | polygon | `0x104127ccd4b1378898916894eb59c97e690b6e9e` | MetaSwapDeployer | impl | live | no |
 | polygon | `0x1259adc9f2a0410d0db5e226563920a2d49f4454` | MetaSwapDeployer-2 | impl | live | no |
+| polygon | `0x12715a66773bd9c54534a01abf01d05f6b4bd35e` | TransparentUpgradeableProxy | proxy | live | no |
 | polygon | `0x145000be67701a49e62c904a20e8fc110f2a8cce` | SynapseBridge-4 | impl | live | no |
 | polygon | `0x1bfe50bb2a8a75fefa46892db10313898ddbff8f` | ECDSANodeManagement | impl | live | no |
 | polygon | `0x1c6ae197ff4bf7ba96c66c5fd64cb22450af9cc8` | L2BridgeZap | impl | live | no |
@@ -265,7 +271,7 @@
 | polygon | `0x85fcd7dd0a1e1a9fcd5fd886ed522de8221c3ee5` | SwapFlashLoan | impl | live | no |
 | polygon | `0x88e7af57270f70bcf32cd61fff0ff635775c8f7c` | MetaSwapDeployer | impl | live | no |
 | polygon | `0x8c7d546ffb89a43227c3e2b2665d79cd3ae82cc3` | BridgeConfigV2-2 | impl | live | no |
-| polygon | `0x8f5bbb2bb8c2ee94639e55d5f41de9b4839c1280` | TransparentUpgradeableProxy | proxy | live | no |
+| polygon | `0x8f5bbb2bb8c2ee94639e55d5f41de9b4839c1280` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | polygon | `0x911766fa1a425cb7cccb0377bc152f37f276f8d6` | MetaSwapDeployer | impl | live | no |
 | polygon | `0x93616be16cf1aa4a138bfcb2320875148429713c` | BridgeConfigV2-3 | impl | live | no |
 | polygon | `0x966e35c01842d029cfceddc7a7feb937c2f62a8a` | SynapseBridge-2 | impl | live | no |

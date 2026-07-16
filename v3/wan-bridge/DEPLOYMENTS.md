@@ -1,6 +1,6 @@
 # wan-bridge — deployments
 
-53 verified deployment(s) across 36 component(s).
+54 verified deployment(s) across 37 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -54,6 +54,7 @@
 | optimism | `0x1e7e46945e50bbe7df7014c086b642e6b7b4a625` | SimpleMultiSender | impl | live | no |
 | optimism | `0x2f676cb3e9178eb4913ab4d42506d1fde82296fb` | WanCctpV2 | impl | live | no |
 | optimism | `0x329f162550e3d5d9898a0aae05e21bfcd5f1cf83` | GroupApprove-2 | impl | live | no |
+| optimism | `0x592de30bebff484b5a43a6e8e3ec1a814902e0b6` | Fee | impl | live | no |
 | optimism | `0xf5db314d1bb8e6166a2b54b057dca934ac3b5d43` | CommonProxy | proxy | live | no |
 | polygon | `0x2216072a246a84f7b9ce0f1415dd239c9bf201ab` | CrossProxy-2 | proxy | live | no |
 | polygon | `0xcfad8a6ed9b7075c5a3b42557cf2b343b266c472` | WrappedERC721T1 | impl | live | no |

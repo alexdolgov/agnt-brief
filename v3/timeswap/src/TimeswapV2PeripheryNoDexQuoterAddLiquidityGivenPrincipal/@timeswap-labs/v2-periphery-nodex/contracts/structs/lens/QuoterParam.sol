@@ -68,6 +68,18 @@ struct TimeswapV2PeripheryNoDexQuoterBorrowGivenPrincipalParam {
   uint256 tokenAmount;
 }
 
+struct TimeswapV2PeripheryNoDexQuoterBorrowGivenPositionParam {
+  address token0;
+  address token1;
+  uint256 strike;
+  uint256 maturity;
+  address tokenTo;
+  address longTo;
+  bool isToken0;
+  bool isLong0;
+  uint256 positionAmount;
+}
+
 struct TimeswapV2PeripheryNoDexQuoterCloseLendGivenPositionParam {
   address token0;
   address token1;
@@ -79,6 +91,15 @@ struct TimeswapV2PeripheryNoDexQuoterCloseLendGivenPositionParam {
 }
 
 struct TimeswapV2PeripheryNoDexQuoterWithdrawParam {
+  address token0;
+  address token1;
+  uint256 strike;
+  uint256 maturity;
+  address to;
+  bool isToken0;
+  uint256 positionAmount;
+}
+struct TimeswapV2PeripheryNoDexQuoterShortAfterMaturityParam {
   address token0;
   address token1;
   uint256 strike;

@@ -1,0 +1,38 @@
+{
+  "component": "StrategyAave-2",
+  "main_contract": "StrategyAave",
+  "source_entry_count": 20,
+  "source_file_count": 20,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StrategyAave-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbeae1b06949d033da628ba3e5af267c3e740494b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401248"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xcd1b9810872aec66d450c761e93638fb9fe09db0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401251"
+    }
+  ]
+}

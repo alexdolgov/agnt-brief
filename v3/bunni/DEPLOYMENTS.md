@@ -1,6 +1,6 @@
 # bunni — deployments
 
-22 verified deployment(s) across 22 component(s).
+23 verified deployment(s) across 23 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -17,6 +17,7 @@
 | ethereum | `0x00000000d5248262c18c5a8c706b2a3e740b8760` | UniformDistribution | impl | live | yes |
 | ethereum | `0x00000000ff3ba1257149f69cd0d22263dd0a14ea` | BunniZone | impl | live | yes |
 | ethereum | `0x0000001cc485ca6d3c966fbcba7dba6302c45ba9` | BunniHookOracle | impl | live | no |
+| ethereum | `0x00000042877f4a1cc0693383ebdac7c0e0a1bf77` | Voting_Escrow | impl | live | no |
 | ethereum | `0x0000005f3a0733345412b510b63fc2d3ca5375f0` | VeAirdrop | impl | live | no |
 | ethereum | `0x0000009856ebf1b73b431fb59f2a2f200e9e78b0` | MasterBunni | impl | live | no |
 | ethereum | `0x000000c2552ac621a551170d95b5ae6cb97ad811` | TokenMigrator | impl | live | no |

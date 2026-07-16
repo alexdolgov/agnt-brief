@@ -1,6 +1,6 @@
 # keep3r-network — deployments
 
-171 verified deployment(s) across 65 component(s).
+172 verified deployment(s) across 66 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -31,6 +31,7 @@
 | ethereum | `0x19d1666f543d42ef17f66e376944a22aea1a8e46` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x1b3e95e8ecf7a7cab6c4de1b344f94865abd12d5` | CErc20Delegator-2 | proxy | live | no |
 | ethereum | `0x1b428b6c389e25133bf0f466fc5d3e2764f3582b` | MMVault-2 | impl | live | no |
+| ethereum | `0x1ceb5cb57c4d4e2b2433641b95dd330a33185a44` | Keep3rV1 | impl | live | no |
 | ethereum | `0x1d0986fb43985c88ffa9ad959cc24e6a087c7e35` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x1e074d6da2987f0cb5a44f2ab1c5bfeddd81f23f` | MMVault | impl | live | no |
 | ethereum | `0x1f2bcc260483443a9dd686307bb2809a78400a4f` | UniswapV2Pair | impl | live | no |

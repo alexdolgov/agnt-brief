@@ -1,0 +1,28 @@
+{
+  "component": "ProxyToken",
+  "main_contract": "ProxyToken",
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ProxyToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7834959e1e552e443933e7c5979c24b9eca01e4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405204"
+    }
+  ]
+}

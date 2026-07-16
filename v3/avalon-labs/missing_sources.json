@@ -2,12 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "avalon-labs",
-  "missing": [
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0xf297230fa5614545b427616148a74c888620d659",
-      "canonical_source_address": "0x713efc245745b370d4246759ed8a856c885ddafb"
-    }
-  ]
+  "missing": []
 }

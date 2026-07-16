@@ -17,12 +17,12 @@
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x4200000000000000000000000000000000000020",
+      "address": "0x4200000000000000000000000000000000000018",
       "is_proxy": true,
-      "implementation_address": "0x6232208d66bac2305b46b4cb6bcb3857b298df13",
+      "implementation_address": "0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30018",
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "394951"
+      "logic_topography_row_id": "394950"
     }
   ]
 }

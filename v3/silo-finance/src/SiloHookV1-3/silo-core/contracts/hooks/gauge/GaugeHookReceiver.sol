@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 pragma solidity 0.8.28;
 
+// solhint-disable ordering
+
 import {Ownable1and2Steps} from "common/access/Ownable1and2Steps.sol";
 import {IShareToken} from "silo-core/contracts/interfaces/IShareToken.sol";
-import {ISiloConfig} from "silo-core/contracts/interfaces/ISiloConfig.sol";
-import {IPartialLiquidation} from "silo-core/contracts/interfaces/IPartialLiquidation.sol";
 import {Hook} from "silo-core/contracts/lib/Hook.sol";
 import {ISiloIncentivesController} from "silo-core/contracts/incentives/interfaces/ISiloIncentivesController.sol";
 import {IGaugeHookReceiver, IHookReceiver} from "silo-core/contracts/interfaces/IGaugeHookReceiver.sol";
@@ -40,6 +40,8 @@ abstract contract GaugeHookReceiver is BaseHookReceiver, IGaugeHookReceiver, Own
         uint256 action = tokenType | Hook.SHARE_TOKEN_TRANSFER;
         hooksAfter = hooksAfter.addAction(action);
 
+        // Safe: hook configuration uses 24-bit bitmasks by design.
+        // forge-lint: disable-next-line(unsafe-typecast)
         _setHookConfig(silo, uint24(_getHooksBefore(silo)), uint24(hooksAfter));
 
         configuredGauges[_shareToken] = _gauge;
@@ -102,7 +104,7 @@ abstract contract GaugeHookReceiver is BaseHookReceiver, IGaugeHookReceiver, Own
 
     /// @notice Set the owner of the hook receiver
     /// @param _owner Owner address
-    function __GaugeHookReceiver_init(address _owner)
+    function __GaugeHookReceiver_init(address _owner) // solhint-disable-line func-name-mixedcase
         internal
         onlyInitializing
         virtual

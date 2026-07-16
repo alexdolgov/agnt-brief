@@ -1,0 +1,28 @@
+{
+  "component": "SuzakuToken",
+  "main_contract": "SuzakuToken",
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SuzakuToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x451532f1c9eb7e4dc2d493db52b682c0acf6f5ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399878"
+    }
+  ]
+}

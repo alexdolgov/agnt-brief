@@ -1,8 +1,8 @@
 {
   "component": "veSPA_v1",
   "main_contract": "veSPA_v1",
-  "source_entry_count": 9,
-  "source_file_count": 9,
+  "source_entry_count": 11,
+  "source_file_count": 11,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xd16f5343fddd2dcf6a8791e302a204c13069d165",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa3f8745548a98ee67545abcb0cc8ed3129b8ff8d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399211"
+      "logic_topography_row_id": "399206"
     }
   ]
 }

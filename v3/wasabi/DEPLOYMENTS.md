@@ -1,6 +1,6 @@
 # wasabi — deployments
 
-250 verified deployment(s) across 53 component(s).
+254 verified deployment(s) across 53 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -66,6 +66,7 @@
 | base | `0xa3480075f3abf26474fb4528b8c08ae379464f80` | ERC1967Proxy | proxy | live | yes |
 | base | `0xa3a575fa43eb1b6ad393e785ef431dbd53470fb2` | ERC1967Proxy | proxy | live | yes |
 | base | `0xa3ae97b2420d172b6fb3f7f10953289ab7c2a188` | ERC1967Proxy | proxy | live | yes |
+| base | `0xa456c77d358c9c89f4dfb294fa2a47470b7da37c` | ERC1967Proxy | proxy | live | yes |
 | base | `0xabb56620ae17b1a06a11a790d34dc56fc8c3a9d8` | ERC1967Proxy | proxy | live | yes |
 | base | `0xac4550eadcd13a8887c2b939acf1eb8739fb3b8a` | WasabiVault-4 | impl | live | no |
 | base | `0xadac74154febd85a8deb0e972bb26991e8b86a98` | ERC1967Proxy | proxy | live | yes |
@@ -74,6 +75,7 @@
 | base | `0xb1a597b693eb1c843f15485f131eb1d6700bd0c4` | ERC1967Proxy | proxy | live | yes |
 | base | `0xb8da93ded809ac035c72b543ab728a55017239a0` | ERC1967Proxy | proxy | live | yes |
 | base | `0xbcc88965632c84999c29ea4a24588316e7058117` | ERC1967Proxy | proxy | live | yes |
+| base | `0xbdae5df498a45c5f058e3a09afe9ba4da7b248aa` | ERC1967Proxy | proxy | live | yes |
 | base | `0xbf666865b24c1d64c319fb3e42b58d0a24629cc4` | ERC1967Proxy | proxy | live | yes |
 | base | `0xc626971985e0c1eee00c95c129924f676cc8970f` | ERC1967Proxy | proxy | live | yes |
 | base | `0xc84879ac01794fc3bab26b5167e3c287bd1df3e3` | ERC1967Proxy | proxy | live | yes |
@@ -129,6 +131,7 @@
 | blast | `0xce979f9a3bc1f3bf57d573c653c8f8b0f2d4de4d` | ERC1967Proxy | proxy | live | yes |
 | blast | `0xf2abb552eb3c8a8a580c22558ad7fbeb34a6af53` | ERC1967Proxy | proxy | live | yes |
 | blast | `0xff2cdb9cdb79a60a31188fe37bdc6774107cc268` | ERC1967Proxy | proxy | live | yes |
+| chain-80094 | `0x0da575d3edd4e3ee1d904936f94ec043c06bb12b` | ERC1967Proxy | proxy | live | yes |
 | chain-80094 | `0x0ebddd4cc9758fbadd49263dc57c8ac610be4e9c` | ERC1967Proxy | proxy | live | yes |
 | chain-80094 | `0x2bf4e5deea48d66226fc25191a01e18378fbc8bb` | Disperse | impl | live | no |
 | chain-80094 | `0x3ee6c6cdaa0073de6da00091329de4390b0df1ee` | ERC1967Proxy | proxy | live | yes |
@@ -200,6 +203,7 @@
 | ethereum | `0x8826d2ec9229249feda46f9b47fcf62ad73cbc96` | WasabiShortPool | impl | live | no |
 | ethereum | `0x8c71baa29d66e2f09627bafef6f8ba1ef8e3ee10` | BeaconProxy | proxy | live | yes |
 | ethereum | `0x8d48b8d948726d4636aa15a9d6124422f461e153` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0x8e0edfd6d15f858adbb41677b82ab64797d5afc0` | BeaconProxy | proxy | live | yes |
 | ethereum | `0x8e19c040b4c1c8d2a63e6cb375f01ab65d2ddc04` | WasabiLongPool-5 | impl | live | no |
 | ethereum | `0x8e26dab15e7af842acbe030b65808618b50de32d` | ERC1967Proxy | proxy | live | yes |
 | ethereum | `0x8e3fddb3142027c49d1b602cd9fc4d9c42ebcf2f` | ERC1967Proxy | proxy | live | yes |

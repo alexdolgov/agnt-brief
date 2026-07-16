@@ -1,6 +1,6 @@
 # hypha — deployments
 
-35 verified deployment(s) across 34 component(s).
+38 verified deployment(s) across 36 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -18,6 +18,8 @@
 | avalanche | `0x576d98d26419c5ce9595833403f64d919eca7323` | TokenggAVAX | impl | live | no |
 | avalanche | `0x6476a72282ea701748f56dcfb8a9ffa919bb286c` | ClaimProtocolDAO-2 | impl | live | no |
 | avalanche | `0x69260b9483f9871ca57f81a90d91e2f96c2cd11d` | TokenGGP | impl | live | yes |
+| avalanche | `0x6c104d5b914931ba179168d63739a297dc29bcf3` | GnosisSafeProxy | proxy | live | no |
+| avalanche | `0x6e8fd36d51d159209054dadda7f87aa4e1aed940` | ProxyAdmin | impl | live | no |
 | avalanche | `0x7759c62e0e3c1c6ee5789b60ccd0826936cb618d` | StAvaxWavaxOracle | impl | live | no |
 | avalanche | `0x7fff419c562dd8b3cf16c335a01cdb37ea1b6a3b` | MultisigManager | impl | live | yes |
 | avalanche | `0x84e71ced65470fab9d9d2d1a7eab33e1ddceb922` | TokenggAVAX-2 | impl | live | no |
@@ -32,10 +34,16 @@
 | avalanche | `0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7` | WAVAX | impl | live | no |
 | avalanche | `0xb42cfad450b46fdc9cac5fbf14bc2e6091afc35c` | ClaimNodeOp | impl | live | yes |
 | avalanche | `0xb6ddbf75e2f0c7fc363b47b84b5c03959526aecb` | Staking-3 | impl | live | yes |
-| avalanche | `0xc300bc9b4b690ba7a182126299a0618ece268ee7` | MinipoolManager | impl | live | yes |
+| avalanche | `0xbc5627e0b497f18dd4a321f57f4d43c1e0e9e190` | ProxyAdmin | impl | live | no |
+| avalanche | `0xca11bde05977b3631167028862be2a173976ca11` | Multicall3 | impl | live | no |
 | avalanche | `0xcd385f1947d532186f3f6aaa93966e3e9c14af41` | Timelock | impl | live | no |
 | avalanche | `0xd45cb6f5aca41afaaaebdbe4efba49c1bc41e6ba` | Vault | impl | live | yes |
 | avalanche | `0xd960ce17d15bd0d056bc4aadc491cbb3fa16e584` | TokenggAVAX | impl | live | no |
 | avalanche | `0xfad33e5854d7d0065cd4cd1e2ee9a64928163752` | TokenggAVAX-3 | impl | live | no |
 | avalanche | `0xfc3ea32c03b4be326bced178431789f7e2d8051a` | ProtocolDAO-3 | impl | live | yes |
 | avalanche | `0xffdc3b731c57a7179b90fe7f5c2b5b87a5ad5542` | Ocyticus | impl | live | yes |
+
+## Source unavailable (1)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- avalanche `0xc300bc9b4b690ba7a182126299a0618ece268ee7`

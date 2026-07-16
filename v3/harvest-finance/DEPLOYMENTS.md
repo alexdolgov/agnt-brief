@@ -1,6 +1,6 @@
 # harvest-finance — deployments
 
-215 verified deployment(s) across 46 component(s).
+216 verified deployment(s) across 47 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -219,3 +219,4 @@
 | ethereum | `0xfbfbe380489882831dad5258cfd2e29307e23b82` | PotPool-2 | impl | live | no |
 | ethereum | `0xfd1121b2292ebd475791ee2d646ccc8451c9f7ae` | PotPool-6 | impl | live | no |
 | ethereum | `0xfe09e53a81fe2808bc493ea64319109b5baa573e` | VaultProxy-2 | proxy | live | no |
+| polygon | `0xab0b2ddb9c7e440fac8e140a89c0dbcbf2d7bbff` | UChildERC20Proxy | proxy | live | no |

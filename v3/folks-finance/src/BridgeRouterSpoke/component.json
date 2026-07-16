@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/BridgeRouterSpoke\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4701fd475d90365a64a1c58fa8932bfa83f4d48f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394649"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,
@@ -33,6 +43,16 @@
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xdf34f43ba8045cab5c8a9a7589d5b5066c708af3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405392"
     }
   ]
 }

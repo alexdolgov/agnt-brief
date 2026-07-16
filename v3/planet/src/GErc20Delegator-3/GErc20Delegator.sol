@@ -1,8 +1,4 @@
 /**
- *Submitted for verification at BscScan.com on 2021-11-17
-*/
-
-/**
  *Submitted for verification at BscScan.com on 2021-10-12
 */
 
@@ -605,7 +601,7 @@ contract Ownable is Context {
 contract PlanetDiscount is Exponential,Ownable{
     
     
-        address public gGammaAddress = 0x9436c5384a14f8fF3dafe7771150BD36F3A90BCc;
+    address public gGammaAddress = 0x9436c5384a14f8fF3dafe7771150BD36F3A90BCc;
     address public gammatroller = 0x0F6Bc276b3b61AAEa65761c92cb01d87A5FCd026;
     address public oracle = 0x3c84650c611b38999e8c5eA7064cDef949D20649;
     

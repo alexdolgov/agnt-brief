@@ -1,10 +1,11 @@
 # satlayer — deployments
 
-180 verified deployment(s) across 108 component(s).
+183 verified deployment(s) across 111 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | base | `0x422d6c77ee640fd4dd87bbacc2bad64e427f9802` | ReceiptToken-3 | impl | live | no |
+| base | `0x552b0c6688fcae5cf0164f27fd129b882a42fa05` | Contract | impl | live | no |
 | base | `0x93919784c523f39cacaa98ee0a9d96c3f32b593e` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | base | `0x9ed4b12eddcf7ba4325d7d09e00dfa31d4165add` | ReceiptToken-3 | impl | live | no |
 | base | `0xb57752ddc2ec2defe9edbb1fdb99db1ca9b0b9b3` | SatlayerPool-3 | impl | live | no |
@@ -13,6 +14,7 @@
 | bsc | `0x1346b618dc92810ec74163e4c27004c921d446a5` | Proxy | proxy | live | no |
 | bsc | `0x17140b69ffadff9e87bf1d86d99119ee10ad24ff` | ReceiptToken | impl | live | no |
 | bsc | `0x42a856dbebb97abc1269eab32f3bb40c15102819` | SatlayerPool-2 | impl | live | no |
+| bsc | `0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c` | BEP20Token | impl | live | no |
 | bsc | `0xe2c6755c10d0b61d8b11dd2851ae8266cea912dc` | ReceiptToken | impl | live | no |
 | chain-80094 | `0x0f6f337b09cb5131cf0ce9df3beb295b8e728f3b` | Proxy | proxy | live | no |
 | chain-80094 | `0x2a5fc05f71cfc54ddcad19457cee79e3aaf415c9` | ReceiptToken-2 | impl | live | no |
@@ -178,6 +180,7 @@
 | ethereum | `0xf0ba63262089de637cfeb51fc0043d4392c04d8c` | Manager | impl | live | no |
 | ethereum | `0xf30592a16908dd1cad9276b050ea3b5cd8228076` | Manager-16 | impl | live | no |
 | ethereum | `0xf42b8eb69b6fcadb9191c15aa005a9c4a6d5cf00` | StrategyAvalon | impl | live | no |
+| ethereum | `0xf469fbd2abcd6b9de8e169d128226c0fc90a012e` | PumpToken | impl | live | no |
 | ethereum | `0xf4f0a7f0f63201ff768f84590bc0862e6ca87446` | Manager | impl | live | no |
 | ethereum | `0xf7de2b7afdb07aa5dd143180ed758165821e076e` | ReceiptToken | impl | live | no |
 | ethereum | `0xf9e1a6e00c319a9713bc7e64893cfa8f26fffdc5` | StrategyZero | impl | live | no |

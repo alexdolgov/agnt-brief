@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/BridgeableTokenP"
+forge build --root "src/ERC1967Proxy"
 ```
 
 ## Build every component

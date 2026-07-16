@@ -1,6 +1,6 @@
 # revert — deployments
 
-415 verified deployment(s) across 117 component(s).
+416 verified deployment(s) across 117 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -136,7 +136,7 @@
 | base | `0x5964f2e1753469d3a125cd8adca55bccedb099ed` | LeverageTransformer-4 | impl | live | no |
 | base | `0x5a6cd5e1afd72ea6c80e62ffac9c2d788c19e7f6` | V3Oracle-2 | impl | live | no |
 | base | `0x5b1c319f52ff939ac8f61f895210d46bb51e24aa` | AutoCompound | impl | unknown | no |
-| base | `0x5b2f7cc65f8eb6222289c714547b9ab22db86be5` | V3Utils-7 | impl | live | no |
+| base | `0x5b2f7cc65f8eb6222289c714547b9ab22db86be5` | V3Utils-6 | impl | live | no |
 | base | `0x5b3b61342c09c9455bd1913cf0be4c13c053d046` | AutoExit-7 | impl | unknown | no |
 | base | `0x5b5e47bf6dfdcdf4f5cec0814b08979f2fc9c4df` | InterestRateModel-3 | impl | live | no |
 | base | `0x5b6ccd0f3238ca2a1a4a9bfbc2d06efe2b8a79ab` | GaugeManager-4 | impl | live | no |
@@ -345,6 +345,7 @@
 | bsc | `0xedfc4481f53447f2ea4c1db24cf906a6c7cb0782` | V3Utils-4 | impl | live | no |
 | bsc | `0xf0136d61d177fedd475558506b29ac7bad2f9385` | AutoExit-6 | impl | live | no |
 | bsc | `0xf3f77839579ba569a2c0645718f1f5b8859a197e` | AutoRange-10 | impl | live | no |
+| bsc | `0xf6d2daf6fd57b1498d60dfe2237c9b7f5735a376` | V3Utils-6 | impl | live | no |
 | bsc | `0xf82a64e421601bb16fdc33f6b99b877bd746b826` | AutoRange | impl | live | no |
 | chain-130 | `0x4a8c2bdf0d8d2473b985f869815d9caa36a57ee4` | V4Utils-4 | impl | live | no |
 | chain-130 | `0x5411894842e610c4d0f6ed4c232da689400f94a1` | V4Utils | impl | live | no |
@@ -380,7 +381,7 @@
 | ethereum | `0xa851b72a4d548ef7f0a272c66b9e79fecb4e5627` | V3Utils-2 | impl | live | no |
 | ethereum | `0xa9bfa7bf4549fed3dec487686a431a721db44bb7` | LeverageTransformer-6 | impl | live | no |
 | ethereum | `0xaa740d62c2fdfdf7578fffcc95884d636115c0eb` | LeverageTransformer-5 | impl | live | no |
-| ethereum | `0xab52f8c11e72d00d4f717a657378ef9b8bf7c2b6` | V3Utils-6 | impl | live | no |
+| ethereum | `0xab52f8c11e72d00d4f717a657378ef9b8bf7c2b6` | V3Utils-7 | impl | live | no |
 | ethereum | `0xae8999da4d81cb81b42288b12176fe20d7ead578` | V3Utils-3 | impl | unknown | no |
 | ethereum | `0xb1e602c3d098560135fa208d16b75c6a34dc937f` | InterestRateModel-3 | impl | live | no |
 | ethereum | `0xb306f936d69cc8425dd3a7d260690b5df5a2cba6` | BridgeTester2 | impl | live | no |
@@ -419,8 +420,3 @@
 | polygon | `0x8c696def6db3104df72f7843730784460795659a` | UniswapV3Staker | proxy | live | no |
 | polygon | `0xad58d1df63afcf090cc930475db3dd3cd8f739ea` | SelfCompoundor | impl | live | no |
 | polygon | `0xf887e57ad9114bb31c7506890efc181f355e9783` | AutoCompound-2 | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- bsc `0xf6d2daf6fd57b1498d60dfe2237c9b7f5735a376`

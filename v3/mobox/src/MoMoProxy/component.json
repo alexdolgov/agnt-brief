@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/MoMoProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x2873d94d21efa8af064b02174413966b357c69e7",
+      "address": "0x529e2a515ce4499c41b23102e56e45025e393757",
       "is_proxy": true,
-      "implementation_address": "0xe704dc798c0bfa2d596048b2c311491ead8457d7",
+      "implementation_address": "0x7d1f27cd020608e53e647377de0876368916ee82",
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x98387108842a7cfc7ba23e080030351f6ea68ac0",
+      "is_proxy": true,
+      "implementation_address": "0x295f68795e21f8c8b03038317b507124c13d2741",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396799"
     }
   ]
 }

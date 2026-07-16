@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/MinterPool\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x964f4f19bc823e72cc1f806021937cfc06f63b45",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf72cfb704d49ac7bb7ffa420ae5f084c671a29be",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395388"
+      "logic_topography_row_id": "405417"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x12af43ef94b05a0a3447a05eee629c7d88a30a5f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395515"
     }
   ]
 }

@@ -1,4 +1,4 @@
-// File: ownership/Ownable.sol
+// File: contracts/ownership/Ownable.sol
 
 pragma solidity ^0.5.0;
 
@@ -42,7 +42,7 @@ contract Ownable {
   }
 
 }
-// File: iotube/UniqueAppendOnlyAddressList.sol
+// File: contracts/iotube/UniqueAppendOnlyAddressList.sol
 
 pragma solidity <6.0 >=0.4.24;
 
@@ -107,7 +107,7 @@ contract UniqueAppendOnlyAddressList is Ownable {
         }
     }
 }
-// File: iotube/TokenList.sol
+// File: contracts/iotube/TokenList.sol
 
 pragma solidity <6.0 >=0.4.24;
 

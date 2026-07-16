@@ -1,0 +1,28 @@
+{
+  "component": "ToriMinting",
+  "main_contract": "ToriMinting",
+  "source_entry_count": 30,
+  "source_file_count": 30,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ToriMinting\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe16b821b9f6b0a6f06a2c4a61d5d1f71cfa53f1e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

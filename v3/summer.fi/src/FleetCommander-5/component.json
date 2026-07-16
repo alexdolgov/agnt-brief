@@ -17,7 +17,7 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0xf762b4e90b21be81e5673058ac01b83a5833a4d9",
+      "address": "0x53d0a0bcbbaea37a8d33417ef443e875b4e6feea",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
@@ -25,9 +25,9 @@
       "logic_topography_row_id": null
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x45342a8ac1e9ef6877d7566ed7be5fc98f7e7cae",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xef79051d854c871c5331379ccddf915121a90900",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

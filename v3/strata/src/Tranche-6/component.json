@@ -1,0 +1,38 @@
+{
+  "component": "Tranche-6",
+  "main_contract": "Tranche",
+  "source_entry_count": 39,
+  "source_file_count": 39,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Tranche-6\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe894055ca1c73648927e225f3ca38ed48e30210b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405756"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe91869f96806b480dd61d57e17919068d35ac09c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405757"
+    }
+  ]
+}

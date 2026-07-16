@@ -1,6 +1,6 @@
 # autoshark — deployments
 
-16 verified deployment(s) across 16 component(s).
+17 verified deployment(s) across 17 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -14,6 +14,7 @@
 | bsc | `0x7e2658c045fce430f47faa5ef035d77cff182e5a` | SmartChefFactory | impl | unknown | no |
 | bsc | `0x8857af8205f224870dea119e2c75af386efb192a` | MasterOcean | impl | unknown | no |
 | bsc | `0xa41b47399288994c6bce1c5e26b14ec9e948e9a5` | SharkReferral | impl | unknown | no |
+| bsc | `0xa96cea606d206310e4ffaa65577d316d49043cdf` | Zap | impl | live | no |
 | bsc | `0xd160e30a68b502a52f4d4e22e1232c0db743236a` | EcosystemFund | impl | unknown | no |
 | bsc | `0xd9bafd0024d931d103289721de0d43077e7c2b49` | StrategyHelperV1 | impl | unknown | no |
 | bsc | `0xdd97ab35e3c0820215bc85a395e13671d84ccba2` | JawsToken | impl | unknown | no |

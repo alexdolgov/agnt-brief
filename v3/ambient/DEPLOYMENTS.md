@@ -1,12 +1,13 @@
 # ambient — deployments
 
-11 verified deployment(s) across 7 component(s).
+12 verified deployment(s) across 8 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | blast | `0x07ec4ad8478d667e5cad4e4601879cd5ae65cfdd` | LongPath | impl | live | no |
 | blast | `0x6050cf4b9125c81dbccb5d662131d4de04d5bb86` | HotProxy | impl | live | no |
 | blast | `0x6e26253238becf5e7099cbe2e74cbf378d03132f` | HotProxy | impl | live | no |
+| blast | `0x79cf6e6af136b04c145f330509ad547b0d7ef6e9` | HotProxy-2 | impl | live | no |
 | blast | `0x8296b24386b85471af51ee4bfe6166df1f1d1534` | MicroPaths | impl | live | no |
 | blast | `0x852c3a00162efdbce7e5bee4dfe065116d0e9915` | HotProxy | impl | live | no |
 | blast | `0x99f213608941b6116e8f1fab1908ddb33d796ca5` | HotProxy | impl | live | no |

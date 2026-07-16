@@ -1,9 +1,10 @@
 # domination-finance — deployments
 
-29 verified deployment(s) across 9 component(s).
+37 verified deployment(s) across 17 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| base | `0x037eab3c386fdb78c42521edfec1c7267adcb95a` | Contract | impl | live | no |
 | base | `0x0c6a461aadbf4fc4e245fb1ea05eacd4c7722d0c` | DomfiVerifier | impl | live | yes |
 | base | `0x0d3c9454837c9e7ab60c34084fb502371d668235` | DomfiTimelockOwner | impl | live | yes |
 | base | `0x11765119ec66fb434447fd56e9041746c8ecbf85` | DomfiLockedDepositNft | impl | live | yes |
@@ -11,11 +12,15 @@
 | base | `0x1ab9c3a2e1a09f2d06bf4a75d1721c7e113b8d4d` | DomfiOracle | impl | live | yes |
 | base | `0x1b50c91b8ae6c655b38ee171ea86b0f8519d7d52` | DomfiLockedDepositNft | impl | live | yes |
 | base | `0x350bf8ac9990f2f5dfda719ff94da4dc241da27e` | DomfiVerifier | impl | live | yes |
+| base | `0x36c92904a7f01718beac987e4bffd190b22914c9` | Contract-2 | impl | live | no |
 | base | `0x444079ddcafd4fee3812e2ff79c5f74a1f4f9be1` | TransparentUpgradeableProxy | proxy | live | yes |
 | base | `0x49d57753b420c60b037543caddf1a7748ec1d1df` | DomfiVerifier | impl | live | yes |
 | base | `0x608ff95777f419040a3b1e42ed73dd3eff42cc24` | TransparentUpgradeableProxy | proxy | live | yes |
 | base | `0x63d7f6d4edf6d4e83c1a8c60345f8d40590514da` | DomfiLockedDepositNft | impl | live | yes |
 | base | `0x6641bb66e9e3d158d12b18f7a684b37232efd3d1` | DomfiRegistry | impl | live | yes |
+| base | `0x68e190d7db144da2f0096e30a0936487d0bbe648` | DomfiOpenPnl | impl | live | no |
+| base | `0x6aa35afff680786b31e28232881152a460890e2b` | DomfiPriceRouter | impl | live | no |
+| base | `0x6b82fcd39c0084c04af2665ae92eacea1a46d34b` | ProxyAdmin | impl | live | no |
 | base | `0x7447cb5350a096364a13beaf77916dfb35db9445` | TransparentUpgradeableProxy | proxy | live | yes |
 | base | `0x7a0d8c95d52d27b9d581275300e56a7dc8a2d4e8` | IncentiveToken | impl | live | no |
 | base | `0x837a6e61c123c6e7cdfff2219a46898d0415343f` | TransparentUpgradeableProxy | proxy | live | yes |
@@ -23,7 +28,10 @@
 | base | `0x9986b895a4e8b43e171e1c19f5bf0d2ea13b3044` | DomfiTimelockOwner | impl | live | yes |
 | base | `0xa371d51e9dd8275e6a459d0009cd15a87f78b9cc` | DomfiOracle | impl | live | yes |
 | base | `0xaffc3b5960f72b8b48c66195c3583bfab6fb8379` | DomfiOracle | impl | live | yes |
+| base | `0xb2c18e95e53aa824e075f13ad627b0a2c890a1d2` | DomfiPairInfos | impl | live | no |
 | base | `0xdf2b2f7eb9740bfda2555467fc3dd27760832188` | DomfiVerifier | impl | live | yes |
+| base | `0xdf425e2e3407ba2d9e7e6d42dce9c8dbd610c292` | DomfiPrivatePriceUpKeep | impl | live | no |
+| base | `0xe2c590d6da2e0db4ed999a2c5d7d42d90392b219` | DomfiVault-2 | impl | live | no |
 | base | `0xe2ea297394d9f3e6221a40c7c405a0c810425adf` | DomfiLockedDepositNft | impl | live | yes |
 | base | `0xe438360464eada40b7921c993322bd4da8881103` | DomfiRegistry | impl | live | yes |
 | base | `0xf29541ee3c80d262ee903b7f20306dacb072b796` | DomfiTimelockOwner | impl | live | yes |

@@ -2,18 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "mento",
-  "missing": [
-    {
-      "chain_id": 42220,
-      "chain": "chain-42220",
-      "address": "0x2d5d7e2767c5493610cae84e0ab7f9d2cce8c1a5",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 42220,
-      "chain": "chain-42220",
-      "address": "0xa0fb8b16ce6af3634ff9f3f4f40e49e1c1ae4f0b",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

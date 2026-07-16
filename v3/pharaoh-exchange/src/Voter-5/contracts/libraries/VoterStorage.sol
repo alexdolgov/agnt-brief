@@ -79,6 +79,10 @@ library VoterStorage {
         address rewardValidator;
         /// @dev Multiple nfpManagers support
         EnumerableSet.AddressSet authorizedClaimers;
+        /// @dev DLMM additions
+        address dlmmFactory;
+        mapping(address rewarder => bool dlmmRewarder) isDLMMRewarder;
+        mapping(address manager => bool authorizedDLMMManager) isAuthorizedDLMMManager;
     }
 
     /// @dev Return state storage struct for reading and writing

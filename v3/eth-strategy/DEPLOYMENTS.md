@@ -1,6 +1,6 @@
 # eth-strategy — deployments
 
-54 verified deployment(s) across 33 component(s).
+55 verified deployment(s) across 34 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -25,6 +25,7 @@
 | ethereum | `0x63aceb46b6bf8877b8983710fdf9a7b1a5a56bf4` | StratPresale | impl | live | no |
 | ethereum | `0x666651c520bf4721f2f5b0460ed8b8d60bbdde8b` | Underlying | impl | live | no |
 | ethereum | `0x67e26e7ef3344b9e8970f6413dc678b138c30317` | UniswapV3Pool | impl | live | no |
+| ethereum | `0x75efa088e34da03966a5d2b84fa16c77ff25adfa` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0x771200261c99ff4e0a072b0484b76c56c826229d` | pnETH | impl | live | no |
 | ethereum | `0x7e1d17b580dd4f89037db331430eaee8b8e50c91` | SuperToken | impl | live | no |
 | ethereum | `0x8180eccc825b692ef65ff099a0a387743788bf78` | Vault | impl | live | no |

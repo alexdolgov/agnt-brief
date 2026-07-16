@@ -1,6 +1,6 @@
 # xwin-finance — deployments
 
-29 verified deployment(s) across 7 component(s).
+31 verified deployment(s) across 9 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,6 +12,7 @@
 | arbitrum | `0x8a3c24716447992c85a86231606759931f83c667` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0x0a652784df3f8abde85daeeee77d1ea97f5c5b24` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0x1bf7fe7568211ecff68b6bc7ccad31ecd8fe8092` | xWinDefi | impl | live | no |
+| bsc | `0x367712b4be88d71cc82dd9b18640d3718ed979e7` | xWinMasterChef | impl | live | no |
 | bsc | `0x482ae949e4a70953fca090717b68359b73b8602a` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0x4b87a60fc5a94e5ac886867977e29c9711c2e903` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0x4fdca7b4c19c70ad1f275934160400f9ded0bc18` | xWinFarm | impl | live | no |
@@ -28,6 +29,7 @@
 | bsc | `0xc4c0171a31b6ced6daa4342343425f2eea703cc6` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0xd09774e3d5dc02fa969896c53d3cbb5bc8900a60` | TransparentUpgradeableProxy | proxy | live | yes |
 | bsc | `0xd4a3dcf47887636b19ed1b54aab722bd620e5fb4` | PancakePair | impl | live | no |
+| bsc | `0xd6f8548cffd8d37b0be85b563e73c082b961b810` | xWinLockedStake | impl | live | no |
 | bsc | `0xd88ca08d8eec1e9e09562213ae83a7853ebb5d28` | XWINToken | impl | live | no |
 | polygon | `0x75dab5000af15e7a9dd9c2365ae69e394c252a5a` | TransparentUpgradeableProxy | proxy | live | yes |
 | polygon | `0x9ebc52d849f961b43289d6da55663f3b9f628a68` | TransparentUpgradeableProxy | proxy | live | yes |

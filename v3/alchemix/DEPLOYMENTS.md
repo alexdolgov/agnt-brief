@@ -1,6 +1,6 @@
 # alchemix — deployments
 
-222 verified deployment(s) across 99 component(s).
+235 verified deployment(s) across 106 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -13,7 +13,7 @@
 | arbitrum | `0x143c2118417f2df7489ad241023b3be915906865` | AlchemistAllocator | impl | live | no |
 | arbitrum | `0x17573150d67d820542efb24210371545a4868b03` | TransparentUpgradeableProxy-10 | proxy | live | no |
 | arbitrum | `0x1eb7d78d7f6d73e5de67fa62fd8b55c54aa9c0d4` | TransparentUpgradeableProxy-2 | proxy | live | no |
-| arbitrum | `0x21cfa80d878104890b327038c44d8dfab278ddff` | TransmuterV2 | impl | live | no |
+| arbitrum | `0x21cfa80d878104890b327038c44d8dfab278ddff` | TransmuterV2-2 | impl | live | no |
 | arbitrum | `0x2584e8b0616b3e750492c9629a3b27679c410cb9` | Transmuter | impl | live | no |
 | arbitrum | `0x2e76a67ee5f134c939c4380c9e2b6bbf93aa668b` | Whitelist | impl | live | no |
 | arbitrum | `0x347371c17d14ee7943943995e2a0a9df4fd83d50` | AlchemistTokenVault | impl | live | no |
@@ -28,6 +28,7 @@
 | arbitrum | `0x5979d7b546e38e414f7e9822514be443a4800529` | OssifiableProxy | proxy | live | no |
 | arbitrum | `0x5aa8e010912763d28a2019e3f0a89ed194d60de2` | ERC4626Strategy | impl | live | no |
 | arbitrum | `0x5e06d74c7de317bf8809f7032eb6a49c71351b80` | Whitelist | impl | live | no |
+| arbitrum | `0x649020f591288af5cfe73fd8fffd761ae956007e` | NextAlchemicTokenV2 | impl | live | no |
 | arbitrum | `0x654e16a0b161b150f5d1c8a5ba6e7a7b7760703a` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | arbitrum | `0x693b7594ae0633d9c5574d0da46a040f92f5b281` | Transmuter | impl | live | no |
 | arbitrum | `0x6e94c527e6a1def124ebf5be38c8c876a541bffb` | MigrationTool | impl | live | no |
@@ -45,7 +46,7 @@
 | arbitrum | `0xa8c4da98ce8e86638e412da43b72544699a51698` | WstETHAdapterArbitrum | impl | live | no |
 | arbitrum | `0xaeea02683f652dd1fb4846be71fb8cf26f3393d4` | ERC4626Strategy | impl | live | no |
 | arbitrum | `0xaf88d065e77c8cc2239327c5edb3a432268e5831` | FiatTokenProxy-2 | proxy | live | no |
-| arbitrum | `0xb3058de74cc9e41367c9466e2ca2e6d4a68e9ff5` | AlchemistV2 | impl | live | no |
+| arbitrum | `0xb3058de74cc9e41367c9466e2ca2e6d4a68e9ff5` | AlchemistV2-2 | impl | live | no |
 | arbitrum | `0xb46ee2e4165f629b4abce04b7eb4237f951ac66f` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | arbitrum | `0xb6d30d097773bf2905af086b46d9bd269f76910a` | MigrationTool | impl | live | no |
 | arbitrum | `0xc774f30484818f06a261a89a1d66367e6bbe3e5a` | AlchemistRouter | impl | live | no |
@@ -68,19 +69,25 @@
 | ethereum | `0x062bf725dc4cdf947aa79ca2aaccd4f385b13b5c` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0x0639076265e9f88542c91dcdeda65127974a5ca5` | CommunalFarm_SaddleD4 | impl | live | no |
 | ethereum | `0x073598132f37756a7e665fb52f1757463120bd3c` | Transmuter | impl | live | no |
+| ethereum | `0x0fba3630ddf56457d3ffc2864f260fbe73167f42` | TransmuterBuffer | impl | live | no |
 | ethereum | `0x13c88a2da8e83ba6933fd3aa51e008986b91b1fd` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x15da4c7db6404b92894d5214fac92057fb8a263d` | AlchemistV3Position | impl | live | no |
 | ethereum | `0x19a0a70a68fbc604bf20a03b787df8f7ac1d50f0` | veFXSYieldDistributor | impl | live | no |
 | ethereum | `0x1b40183efb4dd766f11bda7a7c3ad8982e998421` | VSP | impl | live | no |
+| ethereum | `0x211c74db951c161c5a379363716ebdca5125ef59` | Whitelist-2 | impl | live | no |
 | ethereum | `0x2337c59180357ce1d771da2b2df56a91e7c442c0` | TransparentUpgradeableProxy-5 | proxy | live | no |
 | ethereum | `0x2397321b301b80a1c0911d6f9ed4b6033d43cf51` | FPIControllerPool | impl | live | no |
 | ethereum | `0x23a3c27bb007887fd8cbfeaf323799093a450e7e` | AlchemistAllocator | impl | live | no |
 | ethereum | `0x2584e8b0616b3e750492c9629a3b27679c410cb9` | Transmuter | impl | live | no |
 | ethereum | `0x26598e3e511adfadefd70ab2c3475ff741741104` | BaseRewardPool | impl | live | no |
 | ethereum | `0x318334a6dd21d16a8442ab0b7204e81aa3fb416e` | StaticAToken-2 | impl | live | no |
+| ethereum | `0x35b2c16de6f283ab0949964d90ccf930f378ade6` | Whitelist-2 | impl | live | no |
 | ethereum | `0x3669c421b77340b2979d1a00a792cc2ee0fce737` | Vyper_contract-2 | impl | live | no |
+| ethereum | `0x3f950f06064a43d42a8e7c199bb77b8e3a4b2096` | Whitelist-2 | impl | live | no |
+| ethereum | `0x4370675ab54fc710a27e29ea2bb5563468b5948f` | TransmuterBuffer-2 | impl | live | no |
 | ethereum | `0x4610815e65901e66237ef07493a06cbac783c188` | TokeAutoStrategy | impl | live | no |
 | ethereum | `0x467ec89b9e2cd62e66d1b28bd45db1470d4908a5` | TokeAutoStrategy-2 | impl | live | no |
+| ethereum | `0x46f992d00c2dfb6fbbbb64d69ab353c2fc435ace` | Whitelist-2 | impl | live | no |
 | ethereum | `0x479a8666ad530af3054209db74f3c74ecd295f8d` | PoolRewards | impl | live | no |
 | ethereum | `0x48bc302d8295fea1f8c3e7f57d4ddc9981fee410` | BaseRewardPool | impl | live | no |
 | ethereum | `0x49930ad9ebbbc0eb120ccf1a318c3ae5bb24df55` | TransparentUpgradeableProxy-6 | proxy | live | no |
@@ -102,6 +109,7 @@
 | ethereum | `0x745c1085657035ad04c7f87438c13d525a5bd70d` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x75619e9f479f9415630d21ddc99919da47c0a737` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x763f5d567403add750e13234db896cfe6b423059` | AlchemistV3 | impl | live | no |
+| ethereum | `0x78537a6ceba16f412e123a90472c6e0e9a8f1132` | Whitelist-2 | impl | live | no |
 | ethereum | `0x7915ce4f43e1378f0c3720351a973a023f7fb3e8` | Redeemer | impl | live | no |
 | ethereum | `0x7c6226a0a3d6e87bb79a301c74004bd0240e639e` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x7d61e3cde8b58c4be192a7a35e9d626c419302a4` | AlchemistCurator | impl | live | no |
@@ -129,11 +137,13 @@
 | ethereum | `0xa2f987a546d4cd1c607ee8141276876c26b72bdf` | AnchorVaultProxy | proxy | live | no |
 | ethereum | `0xa34dc8502d6e6c2031834608156a064991825e72` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xa354f35829ae975e850e23e9615b11da1b3dc4de` | Vyper_contract | impl | live | no |
+| ethereum | `0xa3dfccbad1333dc69997da28c961ff8b2879e653` | Whitelist-2 | impl | live | no |
 | ethereum | `0xa840c73a004026710471f727252a9a2800a5197f` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0xa8ccbf1c81219c3caa7621a51ac6c1f8a57cc9b3` | ERC4626Strategy | impl | live | no |
 | ethereum | `0xa9af8f4202996528d23d913378f92ef932eee400` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xa9e886c5b439143126b49e3c3a4777eb77e33240` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xab8e74017a8cc7c15ffccd726603790d26d7deca` | StakingPools | impl | live | no |
+| ethereum | `0xad2a6c1c6025be8c703930dcd921a2fa25220298` | TransmuterV2 | impl | live | no |
 | ethereum | `0xb039ea6153c827e59b620bdcd974f7bbfe68214a` | YearnVaultAdapter | impl | live | no |
 | ethereum | `0xb9d7934878b5fb9610b3fe8a5e441e8fad7e293f` | WithdrawalsManagerProxy | proxy | live | no |
 | ethereum | `0xbafa44efe7901e04e39dad13167d089c559c1138` | frxETHMinter | impl | live | no |
@@ -149,7 +159,9 @@
 | ethereum | `0xdac17f958d2ee523a2206206994597c13d831ec7` | TetherToken | impl | live | no |
 | ethereum | `0xdb7d25b0bfd1585a797f6bf7d7ccba26e77253cc` | AlchemistStrategyClassifier | impl | live | no |
 | ethereum | `0xdb852896a23c7e2519b75aea692cacf834d086ab` | AlchemistRouter | impl | live | no |
+| ethereum | `0xdbdb4d16eda451d0503b854cf79d55697f90c8df` | AlchemixToken | impl | live | no |
 | ethereum | `0xdd56b00302e91c4c2b8246156bdeaa1cedc58984` | VaultV2Factory | impl | live | no |
+| ethereum | `0xdd8ac2d5a739bb4a591c5b0c7e613b810fe83ff1` | Whitelist-2 | impl | live | no |
 | ethereum | `0xde44c213f0730e9f38401daf8edf31129de80681` | WstETHEthereumStrategy | impl | live | no |
 | ethereum | `0xdfdc17f784e16d7634ac270911d98755c68ae220` | ERC4626Strategy | impl | live | no |
 | ethereum | `0xe107fa35d775c77924926c0292a9ec1fc14262b2` | TransparentUpgradeableProxy-3 | proxy | live | no |
@@ -161,6 +173,7 @@
 | ethereum | `0xeb83112d925268bede86654c13d423a987587e3e` | TransparentUpgradeableProxy-4 | proxy | live | no |
 | ethereum | `0xed2647bbf875b2936aaf95a3f5bbc82819e3d3fe` | veFXSYieldDistributorV3 | impl | live | no |
 | ethereum | `0xee69bd81bd056339368c97c4b2837b4dc4b796e7` | TransmuterB | impl | live | no |
+| ethereum | `0xf547b87cd37607bddabafd9bf1ea4587a0f4acfb` | AlchemistV2 | impl | live | no |
 | ethereum | `0xf591d878608e2e5c7d4f1e499330f4ab9bbae37a` | StaticAToken | impl | live | no |
 | ethereum | `0xf700c7e40efca6f7a810e172afcee3592ff4ad33` | AlchemistV3 | impl | live | no |
 | ethereum | `0xf8317bd5f48b6fe608a52b48c856d3367540b73b` | AlchemistEth | impl | live | no |

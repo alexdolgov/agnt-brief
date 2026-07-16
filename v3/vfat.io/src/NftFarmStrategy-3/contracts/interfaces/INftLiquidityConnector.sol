@@ -12,7 +12,7 @@ import {
 interface INftLiquidityConnector {
     function addLiquidity(
         NftAddLiquidity memory addLiquidityParams
-    ) external;
+    ) external payable;
 
     function removeLiquidity(
         NftRemoveLiquidity memory removeLiquidityParams

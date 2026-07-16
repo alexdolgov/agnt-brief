@@ -7,6 +7,8 @@ import {ITimeswapV2OptionFactory} from "@timeswap-labs/v2-option/contracts/inter
 import {ITimeswapV2Option} from "@timeswap-labs/v2-option/contracts/interfaces/ITimeswapV2Option.sol";
 import {TimeswapV2OptionBurnParam, TimeswapV2OptionSwapParam} from "@timeswap-labs/v2-option/contracts/structs/Param.sol";
 import {TimeswapV2OptionSwapCallbackParam} from "@timeswap-labs/v2-option/contracts/structs/CallbackParam.sol";
+import {CatchError} from "@timeswap-labs/v2-library/contracts/CatchError.sol";
+import {Error} from "@timeswap-labs/v2-library/contracts/Error.sol";
 
 import {TimeswapV2OptionBurn, TimeswapV2OptionSwap} from "@timeswap-labs/v2-option/contracts/enums/Transaction.sol";
 import {TimeswapV2OptionPosition} from "@timeswap-labs/v2-option/contracts/enums/Position.sol";
@@ -36,6 +38,8 @@ abstract contract TimeswapV2PeripheryCloseBorrowGivenPosition is
   ITimeswapV2PeripheryCloseBorrowGivenPosition,
   ERC1155Receiver
 {
+  using CatchError for bytes;
+
   /* ===== MODEL ===== */
   /// @inheritdoc ITimeswapV2PeripheryCloseBorrowGivenPosition
   address public immutable override optionFactory;
@@ -60,7 +64,7 @@ abstract contract TimeswapV2PeripheryCloseBorrowGivenPosition is
   function closeBorrowGivenPosition(
     TimeswapV2PeripheryCloseBorrowGivenPositionParam memory param
   ) internal returns (uint256 token0Amount, uint256 token1Amount, bytes memory data) {
-    (, address poolPair) = PoolFactoryLibrary.getWithCheck(optionFactory, poolFactory, param.token0, param.token1);
+    (address optionPair, address poolPair) = PoolFactoryLibrary.getWithCheck(optionFactory, poolFactory, param.token0, param.token1);
 
     // Burn the ERC1155 token and unwrap the long position
     ITimeswapV2Token(tokens).burn(
@@ -83,7 +87,7 @@ abstract contract TimeswapV2PeripheryCloseBorrowGivenPosition is
 
     // Call the deleverage function to swap long for short from the pool
     // The next logic goes to the timeswapV2PoolDeleverageChoiceCallback function
-    (token0Amount, token1Amount, , data) = ITimeswapV2Pool(poolPair).deleverage(
+    try ITimeswapV2Pool(poolPair).deleverage(
       TimeswapV2PoolDeleverageParam({
         strike: param.strike,
         maturity: param.maturity,
@@ -97,7 +101,64 @@ abstract contract TimeswapV2PeripheryCloseBorrowGivenPosition is
         ),
         data: data
       })
-    );
+    ) returns (uint256 _token0Amount, uint256 _token1Amount, uint256, bytes memory _data) {
+      token0Amount = _token0Amount;
+      token1Amount = _token1Amount;
+      data = _data;
+    } catch (bytes memory reason) {
+      reason.catchError(Error.ZeroOutput.selector);
+
+      uint256 tokenAmount = StrikeConversion.combine(
+          param.isLong0 ? param.positionAmount : 0,
+          param.isLong0 ? 0 : param.positionAmount,
+          param.strike,
+          false
+        );
+
+      // Ask the inheritor contract to decide how much long0 and long1 to be sent to the pool
+      (token0Amount, token1Amount, data) = timeswapV2PeripheryCloseBorrowGivenPositionChoiceInternal(
+        TimeswapV2PeripheryCloseBorrowGivenPositionChoiceInternalParam({
+          token0: param.token0,
+          token1: param.token1,
+          strike: param.strike,
+          maturity: param.maturity,
+          isLong0: param.isLong0,
+          tokenAmount: tokenAmount,
+          data: param.data
+        })
+      );
+
+      Error.checkEnough(StrikeConversion.combine(token0Amount, token1Amount, param.strike, false), tokenAmount);
+
+      // Transfer the long positions to the pool
+      if ((param.isLong0 ? token0Amount : token1Amount) != 0)
+        ITimeswapV2Option(optionPair).transferPosition(
+          param.strike,
+          param.maturity,
+          poolPair,
+          param.isLong0 ? TimeswapV2OptionPosition.Long0 : TimeswapV2OptionPosition.Long1,
+          param.isLong0 ? token0Amount : token1Amount
+        );
+
+      if ((param.isLong0 ? token1Amount : token0Amount) != 0) {
+        data = abi.encode(param.token0, param.token1, param.isLong0, 0, param.positionAmount, data);
+
+        // Transform/swap the long0 or long1 to long1 or long0 respectively
+        // The next logic goes to the timeswapV2OptionSwapCallback function
+        (, , data) = ITimeswapV2Option(optionPair).swap(
+          TimeswapV2OptionSwapParam({
+            strike: param.strike,
+            maturity: param.maturity,
+            tokenTo: param.to,
+            longTo: poolPair,
+            isLong0ToLong1: param.isLong0,
+            transaction: param.isLong0 ? TimeswapV2OptionSwap.GivenToken0AndLong0 : TimeswapV2OptionSwap.GivenToken1AndLong1,
+            amount: param.positionAmount - (param.isLong0 ? token0Amount : token1Amount),
+            data: data
+          })
+        );
+      } else revert Error.ZeroOutput();
+    }
   }
 
   /// @notice the abstract implementation for deleverageChoiceCallback function

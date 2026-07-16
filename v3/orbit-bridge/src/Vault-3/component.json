@@ -1,0 +1,28 @@
+{
+  "component": "Vault-3",
+  "main_contract": "Vault",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Vault-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x979cd0826c2bf62703ef62221a4fea1f23da3777",
+      "is_proxy": true,
+      "implementation_address": "0x7eaab7a96fc311377709b12a81cd87228780af17",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

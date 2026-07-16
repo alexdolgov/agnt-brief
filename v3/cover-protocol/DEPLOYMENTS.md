@@ -1,6 +1,6 @@
 # cover-protocol — deployments
 
-99 verified deployment(s) across 97 component(s).
+101 verified deployment(s) across 99 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -17,6 +17,7 @@
 | ethereum | `0x06a8fee7a607c5c887f5f0672f7d8849583ddcc1` | iCollateralVaultProxy | impl | live | no |
 | ethereum | `0x0a03b4f6d5314bb257540dc7702c326f97f5c080` | Keep3rV1OracleUSD | impl | live | no |
 | ethereum | `0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e` | YFI | impl | live | no |
+| ethereum | `0x0c134e734b7e1e7955706f9abae7837b00f829a0` | WETHDistributor | impl | live | no |
 | ethereum | `0x101dd6f1f5e396f6ab87407df637cce814e24a9f` | TendiesFarm | impl | live | no |
 | ethereum | `0x10d7cb15642d540a4521a7b2840dab01287081fc` | Signer | impl | live | no |
 | ethereum | `0x11980d4bb4465cb4fc77a57b98a16787b3d834e7` | StableYieldCredit | impl | live | no |
@@ -34,6 +35,7 @@
 | ethereum | `0x1bf16291d2336ac3320f17cad646b56bd5c8f6c0` | Keep3rV2Helper | impl | live | no |
 | ethereum | `0x1cb3391feff3806a6f7fa11b372cb70659304791` | CoverPoolFactory | impl | live | no |
 | ethereum | `0x1ed97638af0dac459c29b1c650edcfb4b4ea0aab` | Address | impl | live | no |
+| ethereum | `0x2166c76d081610716ab93f02891558b9ba226454` | CoverDistributor | impl | live | no |
 | ethereum | `0x2266be1ee5d345914976fd4ce9f4be65737880cb` | Keep3rV2OracleFactory | impl | live | no |
 | ethereum | `0x2288c409e67b6ce52180f97a8cddf7abc24ec989` | StrategySNXSUSD | impl | live | no |
 | ethereum | `0x24dd028bd027511482e701d08bae002cd6e82a5d` | yCollateralVaultProxy | impl | live | no |

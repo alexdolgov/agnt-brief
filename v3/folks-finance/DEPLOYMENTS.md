@@ -1,6 +1,6 @@
 # folks-finance — deployments
 
-154 verified deployment(s) across 54 component(s).
+164 verified deployment(s) across 59 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -18,10 +18,13 @@
 | arbitrum | `0xc0a3536e0b6799014a14664ba4370bbd5d0c7590` | SpokeErc20Token | impl | live | no |
 | arbitrum | `0xcd68014c002184707eae7218516cb0762a44fddf` | SpokeErc20Token | impl | live | no |
 | arbitrum | `0xdf2da9288c4d0adf6c52ccbb5062b8c73fb19111` | SpokeErc20Token | impl | live | no |
+| arbitrum | `0xdf34f43ba8045cab5c8a9a7589d5b5066c708af3` | BridgeRouterSpoke | impl | live | no |
 | arbitrum | `0xe69e068539ee627bab1ce878843a6c76484cbd2c` | SpokeErc20Token | impl | live | no |
+| arbitrum | `0xf14535db61b2993264e16daed208a7603e749cdc` | CCIPDataAdapter | impl | live | no |
 | arbitrum | `0xf4c542518320f09943c35db6773b2f9feb2f847e` | SpokeCircleToken-2 | impl | live | no |
 | avalanche | `0x06d47f3fb376649c3a9dafe069b3d6e35572219e` | StakedAvUSDV2 | impl | live | no |
 | avalanche | `0x24de8771bc5ddb3362db529fc3358f2df3a0e346` | AvUSD | impl | live | no |
+| avalanche | `0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335` | ERC1967Proxy | proxy | live | no |
 | avalanche | `0x3524609c4d8111d45afc912bf1e1270cd5a1bd85` | AvantOFTAdapter | impl | live | no |
 | avalanche | `0x4c129d3aa27272211d151ca39a0a01e4c16fc887` | RequestsManager | impl | live | no |
 | avalanche | `0x58c32c34fd4ae48a7d45ec4b3c940b41d676cc04` | AvantMintingV2 | impl | live | no |
@@ -58,6 +61,7 @@
 | base | `0xf4c542518320f09943c35db6773b2f9feb2f847e` | SpokeCircleToken-2 | impl | live | no |
 | bsc | `0x0700b2cb26688c035bd5dbbda070be408c20779c` | SpokeCircleToken-3 | impl | live | no |
 | bsc | `0x12db9758c4d9902334c523b94e436258eb54156f` | SpokeErc20Token-2 | impl | live | yes |
+| bsc | `0x1b2a8d56967d00700dd5c94e27b1a116a1def8df` | CCIPDataAdapter | impl | live | no |
 | bsc | `0x4db12f554623e4b0b3f5bacf1c8490d4493380a5` | SpokeErc20Token-2 | impl | live | yes |
 | bsc | `0x531490b7674ef239c9fec39d2cf3cc10645d14d4` | SpokeRewardsV2Common | impl | live | no |
 | bsc | `0x57d77fd37670e22188d1c92d7cec931bccf074a4` | BridgeRouterSpoke | impl | live | no |
@@ -65,7 +69,7 @@
 | bsc | `0x7218bd1050d41a9ecfc517abdd294fb8116aee81` | SpokeCircleToken-2 | impl | live | no |
 | bsc | `0xc7bc4a43384f84b8fc937ab58173edab23a4c3cd` | SpokeCommon | impl | live | no |
 | bsc | `0xcd7ee494fa616fdbe38aa0a9355e20b7215108bf` | SpokeCircleToken | impl | live | no |
-| chain-1329 | `0x0700b2cb26688c035bd5dbbda070be408c20779c` | BridgeRouterSpoke-2 | impl | live | no |
+| chain-1329 | `0x0700b2cb26688c035bd5dbbda070be408c20779c` | BridgeRouterSpoke-3 | impl | live | no |
 | chain-1329 | `0x12db9758c4d9902334c523b94e436258eb54156f` | SpokeErc20Token | impl | live | no |
 | chain-1329 | `0x13379b489fb2e76cedf96bceaa2441e5930d75e1` | CreditMessaging | impl | live | no |
 | chain-1329 | `0x1502fa4be69d526124d453619276faccab275d3d` | TokenMessaging | impl | live | no |
@@ -73,6 +77,7 @@
 | chain-1329 | `0x1b2a8d56967d00700dd5c94e27b1a116a1def8df` | SpokeRewardsV2Common-2 | impl | live | no |
 | chain-1329 | `0x4db12f554623e4b0b3f5bacf1c8490d4493380a5` | SpokeErc20Token | impl | live | no |
 | chain-1329 | `0x5c60f12838b8e3eeb525f299cd7c454c989dd04e` | CCIPTokenAdapter | impl | live | no |
+| chain-1329 | `0x5cf6826140c1c56ff49c808a1a75407cd1df9423` | NativeSeiTokensERC20 | impl | live | no |
 | chain-1329 | `0x5f2f4771b7dc7e2f7e9c1308b154e1e8957ecab0` | SpokeGasToken-2 | impl | live | no |
 | chain-1329 | `0x711b5aafd4d0a5b7b863ca434a2678d086830d8e` | FeeLibV1 | impl | live | no |
 | chain-1329 | `0x7218bd1050d41a9ecfc517abdd294fb8116aee81` | SpokeErc20Token | impl | live | no |
@@ -82,6 +87,7 @@
 | chain-1329 | `0xcd4302d950e7e6606b6910cd232758b5ad423311` | FeeLibV1 | impl | live | no |
 | chain-1329 | `0xde48600aa18ae707f5d57e0faafec7c118abaeb2` | TokenMessaging | impl | live | no |
 | chain-1329 | `0xeb48a1ee43b91959a1686b70b7cd482c65de69c9` | CCIPDataAdapter | impl | live | no |
+| ethereum | `0x0b8c6ec1495068abe2a25fb4e63b652d83467572` | CCIPDataAdapter | impl | live | no |
 | ethereum | `0x1073d55dfb892ed86151015402db8b1cdb6ede78` | MultiSign-2 | impl | live | no |
 | ethereum | `0x12d4fedd9ce1b4d7db90b07366284ac1675a5a90` | SpokeErc20Token | impl | live | no |
 | ethereum | `0x2147bdf49a0b78b4b5058eb8306ab61026bbc5fd` | MultiSign | impl | live | no |
@@ -92,6 +98,7 @@
 | ethereum | `0x3ecbf8d5f66c26a7498aa2090475d8e5c8a3d566` | MultiSign | impl | live | no |
 | ethereum | `0x40ec5b33f54e0e8a33a975908c5ba1c14e5bbbdf` | ERC20PredicateProxy | proxy | live | no |
 | ethereum | `0x46f05709230c5a6c780d9bc1f629a991084eaa53` | MultiSign | impl | live | no |
+| ethereum | `0x4701fd475d90365a64a1c58fa8932bfa83f4d48f` | BridgeRouterSpoke | impl | live | no |
 | ethereum | `0x49218440314834dacc38051e39a5054b7958ea19` | MultiSign | impl | live | no |
 | ethereum | `0x509712f368255e92410893ba2e488f40f7e986ea` | SyrupDrip | impl | live | no |
 | ethereum | `0x5162acbe83d50fae95fb6a9e878a7e6734bf8cfa` | SpokeCircleToken | impl | live | no |
@@ -123,6 +130,7 @@
 | ethereum | `0xb60fa2ad48959c016fb7545d045aeb60086aca2a` | MultiSign | impl | live | no |
 | ethereum | `0xb723d5ef303711d774fed6435ed6f5e82ed155ea` | MultiSign | impl | live | no |
 | ethereum | `0xb7ab35580a6f609b8e9f9cfa28b4a4e9464d7884` | SpokeCircleToken | impl | live | no |
+| ethereum | `0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b` | AethirToken | impl | live | no |
 | ethereum | `0xc6c682b1d8c7b402c6ed8aba3a6238eb956c38cc` | SpokeRewardsV2Common | impl | live | no |
 | ethereum | `0xc7bc4a43384f84b8fc937ab58173edab23a4c3cd` | SpokeCommon | impl | live | no |
 | ethereum | `0xc7e8b36e0766d9b04c93de68a9d47dd11f260b45` | xMPL | impl | live | no |
@@ -133,11 +141,13 @@
 | ethereum | `0xd9334dd55b25f928b702d143981a8173c7272761` | MultiSign | impl | live | no |
 | ethereum | `0xe230900ece18f5ca83c8640b2eb73de74f9df5ae` | MultiSign | impl | live | no |
 | ethereum | `0xe3b0e4db870aa58a24f87d895c62d3dc5cd05883` | SpokeGasToken | impl | live | no |
+| ethereum | `0xeb48a1ee43b91959a1686b70b7cd482c65de69c9` | CCIPDataAdapter-2 | impl | live | no |
 | ethereum | `0xf1dcb5394d27a41662847d512dcc903cda30056f` | MultiSign | impl | live | no |
 | ethereum | `0xf26b8bb4e76528e7f061df4441965df80d72a71f` | MultiSign | impl | live | no |
 | ethereum | `0xf4c542518320f09943c35db6773b2f9feb2f847e` | SpokeCircleToken-2 | impl | live | no |
 | ethereum | `0xf7db20653fe8951e3c72f168310f4229d9945b3a` | MultiSign | impl | live | no |
 | ethereum | `0xfbca8b5f5794456b59ad4177e5b212d0db600bb6` | MultiSign | impl | live | no |
+| ethereum | `0xfc828c500c90e63134b2b73537cc6cadff4ce695` | BridgeRouterSpoke-2 | impl | live | no |
 | ethereum | `0xff72e13a7eafd2170fe8fdf1fe73c7349c209ecb` | MultiSign | impl | live | no |
 | ethereum | `0xff785fb7bfbbe03ed09089f73151ae563b211723` | SpokeErc20Token | impl | live | no |
 | polygon | `0x1a40208e9506e08a6f62dbccf8de7387743179e9` | SpokeErc20Token | impl | live | no |

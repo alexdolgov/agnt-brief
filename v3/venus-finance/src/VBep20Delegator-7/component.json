@@ -1,0 +1,38 @@
+{
+  "component": "VBep20Delegator-7",
+  "main_contract": "VBep20Delegator",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VBep20Delegator-7\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x78366446547d062f45b4c0f320cdaa6d710d87bb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404783"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb91a659e88b51474767cd97ef3196a3e7cedd2c8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404844"
+    }
+  ]
+}

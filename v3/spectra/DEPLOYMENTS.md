@@ -1,6 +1,6 @@
 # spectra — deployments
 
-178 verified deployment(s) across 74 component(s).
+184 verified deployment(s) across 79 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -15,6 +15,7 @@
 | arbitrum | `0x2605704c89578d83a3a31bb6d0b0079ca29ea42e` | BridgeGatekeeper | impl | live | no |
 | arbitrum | `0x270188c2f683731a5383dcc1663ce9f3602b4f54` | PrincipalToken | impl | live | no |
 | arbitrum | `0x3ec941200ccb65d77d33d547d4d234695e78e488` | VaultDeployer-2 | impl | live | no |
+| arbitrum | `0x417c5997fc9f1fd341742c71de9b1908028fe381` | GnosisSafeProxy-3 | proxy | live | no |
 | arbitrum | `0x45f2cc696caffb6f3ce9b3b44e044b42693d53e4` | MetavaultsRegistry | impl | live | no |
 | arbitrum | `0x4bfa6a074c7570946548b565ec047a96fe11c339` | BridgeInterfaceCCTP | impl | live | no |
 | arbitrum | `0x5128b9c466270fe44a8baf2bc6e035cd2272889d` | TransparentUpgradeableProxy | proxy | live | no |
@@ -68,6 +69,7 @@
 | avalanche | `0xf85a6c95bf447f30b512d7dce2858101fd528529` | SafeSetupHelper | impl | live | no |
 | base | `0x00cd6829b5df2cf4a757d690fdcedb3f3a89a53d` | RegistryV2Deployer-2 | impl | live | no |
 | base | `0x07ab18facbf032c4bbcfab448fc8041f005214e5` | MetavaultsRegistry-3 | impl | live | no |
+| base | `0x0b8742710a7120d409ecb5b8df7ee9da75c548da` | RouterUtil-2 | impl | live | no |
 | base | `0x0c95de2c03a4bd4efaeae697d7ff897a1bb3992f` | MetavaultPrincipalTokenZap | impl | live | no |
 | base | `0x1a4d55d6f936f9069163fa86e984592ce66749d8` | WrapperModule | impl | live | no |
 | base | `0x1e0eb1a41bd39a382bae176508d9c21e07ca9b4c` | BridgeGatekeeper | impl | live | no |
@@ -127,6 +129,7 @@
 | base | `0xda41a0ecd56febefe0c5e1565ab0f68e377812f7` | TransparentUpgradeableProxy | proxy | live | no |
 | base | `0xdb4d5091df24c79ed281d74d333626947d7d96bd` | CommandsModule | impl | live | no |
 | base | `0xdc19e4e223da7858a1582d9630da291d6c617591` | TransparentUpgradeableProxy | proxy | live | no |
+| base | `0xe59d75c87ed608e4f5f22c9f9affb7b6fd02cc7c` | GnosisSafeProxy | proxy | live | no |
 | base | `0xed96d832b84cdf29fe551cc1c5b852614e86adea` | MetaVaultWrapper-5 | impl | live | no |
 | base | `0xf342a22973ac8fecfa756728ef05da01cb437427` | DelayOnlyDeployer | impl | live | no |
 | base | `0xfcb46dc64f3668c08b37f35122b14353da547f96` | MetavaultsRegistry-8 | impl | live | no |
@@ -136,6 +139,7 @@
 | bsc | `0xdd200a77eeab1ec010a038f48b3d34d22d82d42a` | PrincipalToken | impl | live | no |
 | bsc | `0xe78c6459612b5adcf48294a5d172c46234c6991e` | PrincipalToken-2 | impl | live | no |
 | chain-146 | `0x0fc2fbd3e8391744426c8be5228b668481c59532` | PrincipalToken | impl | live | no |
+| chain-146 | `0x589269998df4d7d16351aa2ff996486aec1db6c2` | GnosisSafeProxy | proxy | live | no |
 | chain-999 | `0x069cf003b37b53be58982f70a2f17beb311eed21` | PrincipalToken-3 | impl | live | no |
 | chain-999 | `0x071350a9ee4d153c272fc75ea9557372eb6ce0a0` | AccessManager | impl | live | no |
 | chain-999 | `0x3d20601ac0ba9cae4564ddf7870825c505b69f1a` | PrincipalToken | impl | live | no |
@@ -174,6 +178,7 @@
 | ethereum | `0xc63498346f978f4152d4efe5637472f16f764bc3` | DelayOnlyDeployer | impl | live | no |
 | ethereum | `0xc7e436b9aec8a416f79af97e8c3d2ceb4929b3d2` | AccessManager | impl | live | no |
 | ethereum | `0xda41a0ecd56febefe0c5e1565ab0f68e377812f7` | ReceiverLock | impl | live | no |
+| ethereum | `0xdbbfc051d200438dd5847b093b22484b842de9e7` | Proxy | proxy | live | no |
 | ethereum | `0xed96d832b84cdf29fe551cc1c5b852614e86adea` | DutchAuction | impl | live | no |
 | ethereum | `0xee84b9454f1523c9787599f82d66c44deca09536` | DutchAuction | impl | live | no |
 | ethereum | `0xf2d266e4bf3f95160144d9fbb015fed8ae2d5ab4` | SafeSetupHelper | impl | live | no |
@@ -182,8 +187,4 @@
 | ethereum | `0xfc1b408af2cec0d8ef58546c2a4668e0c515201a` | SafeDeployer | impl | live | no |
 | optimism | `0x948990ea07e98c0ea0810c351563f6255c75f3a5` | PrincipalToken | impl | live | no |
 | optimism | `0xacfee9a21fc48040f12793bd5a478dd155ac04fd` | AMTransparentUpgradeableProxy | proxy | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0x0b8742710a7120d409ecb5b8df7ee9da75c548da`
+| optimism | `0xf8576b3830fa131bbd39da1e97fbb24864156470` | GnosisSafeProxy-2 | proxy | live | no |

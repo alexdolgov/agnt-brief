@@ -1,6 +1,6 @@
 # qidao — deployments
 
-1764 verified deployment(s) across 155 component(s).
+1800 verified deployment(s) across 173 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -144,6 +144,7 @@
 | arbitrum | `0x4f4258fec14bba30d95aaa9474444008461078ef` | ContractOne | impl | live | no |
 | arbitrum | `0x4f50149e65923a375b35cc86483ab96dc8c573a9` | ContractOne | impl | live | no |
 | arbitrum | `0x4f8f1f33488642fc0a01e5fedae85e72610a4678` | ContractOne | impl | live | no |
+| arbitrum | `0x4fc050d75dba5bf2d6ebd3667ffec731a45b1f35` | PerformanceTokens-7 | impl | live | no |
 | arbitrum | `0x502aa620ed42f629fd5d213eadaba14b805809ca` | ContractOne | impl | live | no |
 | arbitrum | `0x503ee17258e8506e3a601e5dea244367fdaafa3c` | ContractOne | impl | live | no |
 | arbitrum | `0x5057effde2979fb5c7038a362a9dd46eabf30b05` | ContractOne | impl | live | no |
@@ -1052,14 +1053,17 @@
 | base | `0x4c2651b7f56a5580dd448955e1693e406c8bdceb` | graceQiVaultPeriphery | impl | live | no |
 | base | `0x643c389f532b0e6b15296ba60b0f3e66564f6bad` | AerodromeClaimModule | impl | unknown | no |
 | base | `0x654a31ba7d714cfcab19b17d0066171c1a292349` | stableQiVault-3 | impl | live | no |
+| base | `0x657240bfbfe9e2087a0c09e54e029dfef42ba54f` | GnosisSafeProxy-3 | impl | live | no |
 | base | `0x7333fd58d8d73a8e5fc1a16c8037ada4f580fa2b` | stableQiVault-3 | impl | live | no |
 | base | `0x77191793b5a2c9f027c1e7ff1ec0f1b1052f418a` | GraceVaultClaimLogic-2 | impl | live | no |
 | base | `0x806c0287f0e7124567c35d9a2a20b79c94179313` | stableQiVault-14 | impl | live | no |
 | base | `0x83d41737d086033a9c3ace2f1ad9350d7d91cf02` | BeefyVaultPSM | impl | live | no |
 | base | `0x88960e693ce3bd88e8b46450097ab9ec25b6cd4c` | MorphoVaultPSM | impl | live | no |
 | base | `0x8d6cebd76f18e1558d4db88138e2defb3909fad6` | stableQiVault-3 | impl | live | no |
+| base | `0x8fc068436e798997c29b767ef559a8ba51e253fb` | GnosisSafeProxy-3 | impl | live | no |
 | base | `0x91f8101b155132e405c344514b3b0653afb7ef53` | BeefyVaultPSM | impl | live | no |
 | base | `0x92a3e0d2bc21271d36a9da63a53419aa9948ac8e` | GraceVaultClaimLogic-2 | impl | live | no |
+| base | `0x96c8f7d6ea190df5c5ef2ebab6ecd2a86262b810` | PerformanceTokensV2 | impl | live | no |
 | base | `0x999b049d16efb3282fbd9320cf795a63ee0fbe32` | GraceVaultClaimLogic | impl | live | no |
 | base | `0x9b571788753c8fc5fd0dd6874c11b2b53d609c58` | graceQiVaultPeriphery-2 | impl | live | no |
 | base | `0x9c36e1bc784bebca53c12960073bc010fdfbb84e` | graceQiVaultPeriphery-3 | impl | live | no |
@@ -1070,6 +1074,7 @@
 | base | `0xb2b7302872cd2dd1d5fb36245c0e6584862178df` | graceQiVault | impl | live | no |
 | base | `0xba2871bc86775d54ebe258af08e55d8794e896ce` | graceQiVault | impl | live | no |
 | base | `0xbf1aea8670d2528e08334083616dd9c5f3b087ae` | EditableERC20-5 | impl | live | no |
+| base | `0xc765d6b7ea9d4b9ccd8cbadbb0e4726d68e195e4` | PerformanceTokens-6 | impl | live | no |
 | base | `0xca29267b30c82c0d1396a7e911663e634b82f18b` | FlightScanner-2 | impl | live | no |
 | base | `0xcdb4083dedd3c3f6d37bbadbc4980d55c37f9917` | FlightScanner-3 | impl | live | no |
 | base | `0xdbcec81eadbe4eff4890ad6018d3a5a6980a3735` | AerodromeClaimModule-2 | impl | live | no |
@@ -1080,26 +1085,39 @@
 | base | `0xfe486b8d04f0f127b996364474aff7f4ad720002` | GraceVaultClaimLogic | impl | live | no |
 | bsc | `0x014a177e9642d1b4e970418f894985dc1b85657f` | crosschainQiStablecoinSlim-5 | impl | live | no |
 | bsc | `0x3f56e0c36d275367b8c502090edf38289b3dea0d` | EditableERC20-4 | impl | live | no |
+| bsc | `0x4158bc0ced1d4d81e4a4346788cdf8b0d7b4b50c` | GnosisSafeProxy | proxy | live | no |
 | bsc | `0x7333fd58d8d73a8e5fc1a16c8037ada4f580fa2b` | stableQiVault-6 | impl | live | no |
 | bsc | `0xa56f9a54880afbc30cf29bb66d2d9adcdcaeadd6` | crosschainQiStablecoinSlim-2 | impl | live | no |
+| bsc | `0xdc6b30aee17c967788d1e04bc466b969f5726d7a` | GnosisSafeProxy | proxy | live | no |
 | bsc | `0xddc3d26baa9d2d979f5e2e42515478bf18f354d5` | EditableERC20-4 | impl | live | no |
+| bsc | `0xff34fdcf12174293a518e585807c9b60decf5843` | GnosisSafeProxy | proxy | live | no |
 | chain-1088 | `0x10dcbee8afa39a847707e16aea5eb34c6b01aba9` | stableQiVault-6 | impl | live | no |
 | chain-1088 | `0x19cb63ccbfac2f28b1fd79923f6adfc096e6ebb4` | stableQiVault-18 | impl | live | no |
+| chain-1088 | `0x32b00a62328881f72f68cbe28675be515a2f627a` | GnosisSafe | impl | live | no |
 | chain-1088 | `0x3f56e0c36d275367b8c502090edf38289b3dea0d` | EditableERC20 | impl | unknown | no |
 | chain-1088 | `0x5a03716bd1f338d7849f5c9581ad5015ce0020b0` | stableQiVault | impl | live | no |
 | chain-1088 | `0x7a802aab2185480dfe16d936462fd3becceecb00` | USDCVaultDDW | impl | live | no |
 | chain-1088 | `0xb89c1b3d9f335b9d8bb16016f3d60160ae71041f` | stableQiVault-2 | impl | unknown | no |
 | chain-1088 | `0xc09c73f7b32573d178138e76c0e286ba21085c20` | stableQiVault-2 | impl | unknown | no |
+| chain-1088 | `0xc9d3750d3ccb25835799087a34bf9ed9cad854d8` | GnosisSafe | impl | live | no |
 | chain-1088 | `0xdb961a3ec076ef684bc03199ef202f002dbe937e` | VaultFeeManagerGamma-2 | impl | unknown | no |
 | chain-1088 | `0xdfa46478f9e5ea86d57387849598dbfb2e964b02` | EditableERC20 | impl | live | no |
+| chain-1088 | `0xe892526cfeb5adb6cb3e5215be39f9d09ecd7926` | GnosisSafe | impl | live | no |
 | chain-1284 | `0x3756465c5b1c1c4cee473880c9726e20875284f1` | stableQiVault-13 | impl | live | no |
 | chain-1284 | `0x3a82f4da24f93a32dc3c2a28cfa9d6e63ec28531` | stableQiVault-13 | impl | live | no |
 | chain-1285 | `0x97d811a7eb99ef4cb027ad59800ce27e68ee1109` | crosschainQiStablecoin-4 | impl | live | no |
+| chain-1285 | `0xca8a932e5aa63961d975afa005d34ef73c59bb45` | CrossChainHub | impl | live | no |
 | chain-1285 | `0xfb2019dfd635a03cfff624d210aee6af2b00fc2c` | EditableERC20-2 | impl | live | no |
+| chain-252 | `0xbbbe9837120ab7ba7c2660b399da27dfb7188542` | GnosisSafeProxy | impl | live | no |
 | chain-252 | `0xbf1aea8670d2528e08334083616dd9c5f3b087ae` | stableQiVault-17 | impl | live | no |
+| chain-252 | `0xe7748203ec71eebb207700da94a3f829bf0632f7` | GnosisSafeProxy | impl | live | no |
+| chain-252 | `0xecd02b92160e28a616e0daed07c34792f7d7bc5e` | GnosisSafeProxy | impl | live | no |
+| ethereum | `0x1bffabc6dfcafb4177046db6686e3f135e8bc732` | VotingEscrowGamma | impl | live | no |
+| ethereum | `0x3182e6856c3b59c39114416075770ec9dc9ff436` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0x4ce4c542d96ce1872fea4fa3fbb2e7ae31862bad` | stableQiVault-5 | impl | live | no |
 | ethereum | `0x559b7bfc48a5274754b08819f75c5f27af53d53b` | EditableERC20-3 | impl | live | no |
 | ethereum | `0x5773e8953cf60f495eb3c2db45dd753b5c4b7473` | stableQiVault-5 | impl | live | no |
+| ethereum | `0x594f17028522bf85e830b689973682967e0dbcbc` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0x60d133c666919b54a3254e0d3f14332cb783b733` | stableQiVault | impl | live | no |
 | ethereum | `0x82e90eb7034c1df646bd06afb9e67281aab5ed28` | stableQiVault | impl | live | no |
 | ethereum | `0x8549ba7f483afb13b8321830d6f07f30f0a2f1de` | RewardDistributor | impl | live | no |
@@ -1107,8 +1125,11 @@
 | ethereum | `0x8d6cebd76f18e1558d4db88138e2defb3909fad6` | EditableERC20-3 | impl | live | no |
 | ethereum | `0x954ac12c339c60eafbb32213b15af3f7c7a0dec2` | stableQiVault-5 | impl | live | no |
 | ethereum | `0x98eb27e5f24fb83b7d129d789665b08c258b4ccf` | stableQiVault | impl | live | no |
+| ethereum | `0x9d3c8a651e48e4d89ca5d1553035a4be3c17cfe6` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0xca3eb45fb186ed4e75b9b22a514ff1d4abadd123` | stableQiVault-5 | impl | live | no |
 | ethereum | `0xcc61ee649a95f2e2f0830838681f839bdb7cb823` | stableQiVault | impl | live | no |
+| ethereum | `0xd3fdcb837dafdb7c9c3ebd48fe22a53f6dd3d7d7` | QiDaoProxyOFT | impl | live | no |
+| ethereum | `0xe9d954a9a6a1a61bc1120970f84cdd76562c4a0c` | PerformanceTokens-2 | impl | live | no |
 | ethereum | `0xecbd32bd581e241739be1763dfe7a8ffcc844ae1` | stableQiVault | impl | live | no |
 | gnosis | `0x014a177e9642d1b4e970418f894985dc1b85657f` | crosschainQiStablecoinSlim-6 | impl | live | no |
 | gnosis | `0x3f56e0c36d275367b8c502090edf38289b3dea0d` | EditableERC20 | impl | live | no |
@@ -1119,13 +1140,22 @@
 | linea | `0x7f9dd991e8fd0cbb52cb8eb35dd35c474a9a7a70` | stableQiVault-3 | impl | live | no |
 | linea | `0x83d41737d086033a9c3ace2f1ad9350d7d91cf02` | LineaTaskModule | impl | live | no |
 | linea | `0x8ab01c5ee3422099156ab151eecb83c095626599` | stableQiVault-3 | impl | live | no |
+| linea | `0xa8f1af37779a8a3a3b1410a547fa92b57574fbf5` | GnosisSafeProxy | proxy | live | no |
+| linea | `0xcdc0482831bac3d4c6ce5be18edec75ff052c42c` | GnosisSafeProxy | proxy | live | no |
+| linea | `0xf1da2623e31be26d8faea038c3046d142341cf20` | GnosisSafeProxy | proxy | live | no |
 | linea | `0xf3b001d64c656e30a62fbaaca003b1336b4ce12a` | EditableERC20-5 | impl | live | no |
+| mantle | `0x98f62d5b6bdb0d4b4c20dc5c881b72a228dc563f` | GnosisSafeProxy-2 | impl | live | no |
+| mantle | `0xb06bb69208855d4390a9ae57e5808fff3ecaa1cd` | GnosisSafeProxy-2 | impl | live | no |
 | optimism | `0x062016cd29fabb26c52bab646878987fc9b0bc55` | crosschainQiStablecoinSlim-4 | impl | live | no |
+| optimism | `0x22f39d6535df5767f8f57fee3b2f941410773ec4` | PerformanceTokens-3 | impl | live | no |
 | optimism | `0x3f56e0c36d275367b8c502090edf38289b3dea0d` | EditableERC20-6 | impl | live | no |
+| optimism | `0x6ffcd0a428bde1ece553e326b9569a15b18be76c` | GnosisSafeProxy | proxy | live | no |
 | optimism | `0x7198ff382b5798dab7dc72a23c1fec9dc091893b` | stableQiVault-8 | impl | live | no |
 | optimism | `0x812dc8e1dc490862493010eeab0f0592e4cbb5d8` | Farmv3-2 | impl | live | no |
 | optimism | `0x86f78d3cbca0636817ad9e27a44996c738ec4932` | stableQiVault-8 | impl | live | no |
+| optimism | `0x8befba32e3f1b69b53cf72d3114afb1ce1871878` | GnosisSafeProxy | proxy | live | no |
 | optimism | `0xa478e708a27853848c6bc979668fe6225fee46fa` | stableQiVault-8 | impl | live | no |
+| optimism | `0xb1a8d1d6dc07ca0e1e78a0004aa0bb034fa73d60` | GnosisSafeProxy | proxy | live | no |
 | optimism | `0xbf1aea8670d2528e08334083616dd9c5f3b087ae` | stableQiVault-6 | impl | live | no |
 | optimism | `0xc09c73f7b32573d178138e76c0e286ba21085c20` | Farmv3-2 | impl | live | no |
 | optimism | `0xdfa46478f9e5ea86d57387849598dbfb2e964b02` | EditableERC20-7 | impl | live | no |
@@ -1244,11 +1274,13 @@
 | polygon | `0x2a5622be69a4670e09586d69357700977cdc24ad` | erc20basic | impl | live | no |
 | polygon | `0x2ab3e4a0b82fe7b806462dee6a2078e11e2e650c` | Farmv3 | impl | live | no |
 | polygon | `0x2ac40313ad462958cfd153ead67a0d67f75a58ea` | Farmv3 | impl | live | no |
+| polygon | `0x2acd702f7d35d3d2915663d7f7cbdf2863ec6e79` | PerformanceTokens | impl | live | no |
 | polygon | `0x2ae35c8e3d4bd57e8898ff7cd2bbff87166ef8cb` | VaultNFT | impl | live | no |
 | polygon | `0x2af6b4b18f609a8b7e964273726bdbf82ec2c1a8` | erc20basic | impl | live | no |
 | polygon | `0x2b44782c1b6f2848c28cf970c3050fa87465297c` | VaultMetaProvider | impl | live | no |
 | polygon | `0x2bf851ae3ed5c00ff9d2ad20730e23dad9ced117` | erc20basic | impl | live | no |
 | polygon | `0x2dbf6c36e6411acd8b76e8472bd93f119326dec3` | erc20basic | impl | live | no |
+| polygon | `0x2dea91e68fdc5693b63924c5fee0a28cfb78a801` | PerformanceTokens-4 | impl | live | no |
 | polygon | `0x2e5d15780b395a89f81c5ba41ba8a69a53e90ba9` | erc20basic | impl | live | no |
 | polygon | `0x2e6d6e3ae042d51df68ab1a957211f01cd582b29` | VaultMetaProvider | impl | live | no |
 | polygon | `0x2f8195d269ccd644d7b2fea81220a6dae972719f` | erc20basic | impl | live | no |
@@ -1316,6 +1348,7 @@
 | polygon | `0x4c0372bb5c0d6cdb2133230fe2060d8103125100` | erc20basic | impl | live | no |
 | polygon | `0x4c0835c37b414e104beadf13a3a4abb90a80acc2` | MaiGUniOracle | impl | live | no |
 | polygon | `0x4c52dcaf743c0de907f996470db0bb028fe0e548` | VaultMetaRegistry | impl | live | no |
+| polygon | `0x4c8dfb55d08bd030814cb6fe774420f3c01a5edb` | PerformanceTokens | impl | live | no |
 | polygon | `0x4cab283a479ee3d2bf02af5ed1e67a32aa5109ab` | shareOracle | impl | live | no |
 | polygon | `0x4d653bebbc78800d11be8de9ddde8bd150612c52` | LPOracle | impl | live | no |
 | polygon | `0x4d87cbac2283873bca6f0b08a31a52a638e1206f` | VaultMetaRegistry | impl | live | no |
@@ -1405,6 +1438,7 @@
 | polygon | `0x6f883822c9036a67333d62cdaef278e21359f188` | erc20basic | impl | live | no |
 | polygon | `0x6fb13052f402a5fbfbd2d3948437002766efc227` | VaultNFT | impl | live | no |
 | polygon | `0x701a1824e5574b0b6b1c8da808b184a7ab7a2867` | erc20QiStablecoin-6 | impl | live | no |
+| polygon | `0x7068ea5255cb05931efa8026bd04b18f3deb8b0b` | camWMATIC | impl | live | no |
 | polygon | `0x7098878066b99c2899a3e95409310689b742b073` | VaultMetaRegistry | impl | live | no |
 | polygon | `0x71135191cdef2dcac71aa30341f6a6e69e226c6f` | erc20basic | impl | live | no |
 | polygon | `0x714c9815b40c1f744d26ed082e47e5ec8e4415a9` | LPOracle | impl | live | no |
@@ -1629,6 +1663,7 @@
 | polygon | `0xcb235557f7037d75d6f4b4460bbe184a77bf3a64` | erc20QiStablecoin-3 | impl | live | no |
 | polygon | `0xcb51471ee22fd3b19e8cc9fb8ea8b5266bf8dc58` | erc20basic | impl | live | no |
 | polygon | `0xcbbfbe3c6a6d68d982737601f9ec3a62ff0ee22c` | erc20basic | impl | live | no |
+| polygon | `0xcc03032fbf096f14a2de8809c79d8b584151212b` | PerformanceTokens-5 | impl | live | no |
 | polygon | `0xcc54afcecd0d89e0b2db58f5d9e58468e7ad20dc` | Farmv3 | impl | live | no |
 | polygon | `0xccf6a5d59cc5d750e5a11481fd49c3a5392c6091` | Farmv3 | impl | live | no |
 | polygon | `0xcd848325335b89f0ef0aeeb065e84a3e60665c27` | erc20basic | impl | live | no |
@@ -1705,6 +1740,7 @@
 | polygon | `0xe8cad73be2360621020eb755b0f316b5b0ada9b5` | VaultMetaRegistry | impl | live | no |
 | polygon | `0xe9ff7ca898f6cdf23a28a1975cb5fbf1ff6a1fbe` | erc20basic | impl | live | no |
 | polygon | `0xea0e2822f5229d5dc7021a1b5487716cda559101` | erc20basic | impl | live | no |
+| polygon | `0xea4040b21cb68afb94889cb60834b13427cfc4eb` | camAave | impl | live | no |
 | polygon | `0xeac32c4df4980a3e2cc5f6ace4a92f30f4bdeb3f` | erc20basic | impl | live | no |
 | polygon | `0xeb3b098d4319acf81f670be7aa7b47e9dd85f336` | VaultNFT | impl | live | no |
 | polygon | `0xeb3d4bff9b5b72582f9fce44ec569c45ddab41c9` | VaultMetaRegistry | impl | live | no |

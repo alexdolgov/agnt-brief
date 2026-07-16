@@ -1,11 +1,14 @@
 # base-bridge — deployments
 
-44 verified deployment(s) across 28 component(s).
+52 verified deployment(s) across 33 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | base | `0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e` | ERC1967Upgrade | proxy | live | no |
 | base | `0x0b144e07a0826182b6b59788c34b32bfa86fb711` | RiscZeroVerifierRouter | impl | unknown | no |
+| base | `0x4200000000000000000000000000000000000000` | Proxy | proxy | live | no |
+| base | `0x4200000000000000000000000000000000000002` | Proxy | proxy | live | no |
+| base | `0x4200000000000000000000000000000000000006` | WETH9 | impl | live | no |
 | base | `0x4200000000000000000000000000000000000007` | Proxy | proxy | live | no |
 | base | `0x420000000000000000000000000000000000000f` | Proxy | proxy | live | no |
 | base | `0x4200000000000000000000000000000000000010` | Proxy | proxy | live | no |
@@ -17,15 +20,20 @@
 | base | `0x4200000000000000000000000000000000000017` | Proxy | proxy | live | no |
 | base | `0x4200000000000000000000000000000000000019` | Proxy | proxy | live | no |
 | base | `0x420000000000000000000000000000000000001a` | Proxy | proxy | live | no |
+| base | `0x420000000000000000000000000000000000001b` | Proxy | proxy | live | no |
 | base | `0x4200000000000000000000000000000000000020` | Proxy | proxy | live | no |
 | base | `0x4200000000000000000000000000000000000021` | Proxy | proxy | live | no |
 | base | `0xf10122d428b4bc8a9d050d06a2037259b4c4b83b` | ERC20Factory | impl | live | no |
 | ethereum | `0x04595c25e4bf27b8176c81c74a0081c7975cfecc` | PermissionedDisputeGame | impl | unknown | no |
+| ethereum | `0x0475cbcaebd9ce8afa5025828d5b98dfb67e059e` | L1ChugSplashProxy-2 | impl | live | no |
 | ethereum | `0x05cc379ebd9b30bba19c6fa282ab29218ec61d84` | Proxy-2 | proxy | live | no |
 | ethereum | `0x08aed6c108e500540a9544bef7a8b8a05e056e87` | RiscZeroVerifierEmergencyStop | impl | unknown | no |
+| ethereum | `0x14536667cd30e52c0b458baaccb9fada7046e056` | GnosisSafeProxyFactory | proxy | live | no |
+| ethereum | `0x1af2a7e537de2ee795de5b8bfbb1ad0dd513a5aa` | Proxy-3 | proxy | live | no |
 | ethereum | `0x1bd8db5139ba7ac9277684650c15e6e341761919` | AggregateVerifier | impl | unknown | no |
 | ethereum | `0x1fba0c57b07af804a9717e51dec9cc27fbc12228` | TEEVerifier | impl | live | no |
 | ethereum | `0x1fe3fdd1f0193dd657c0a9aac37314d6b479e557` | Proxy-2 | proxy | live | no |
+| ethereum | `0x20acf55a3dcfe07fc4cecacfa1628f788ec8a4dd` | SafeProxy | proxy | live | no |
 | ethereum | `0x3154cf16ccdb4c6d922629664174b904d80f2c35` | L1ChugSplashProxy | proxy | live | no |
 | ethereum | `0x3311ac7f72bb4108d9f4d5d50e7623b1498a9ec0` | L1ERC721Bridge | impl | unknown | no |
 | ethereum | `0x3e8a0b63f57e975c268d610ece93da5f78c01321` | DelayedWETH | proxy | unknown | no |

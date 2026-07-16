@@ -1,0 +1,28 @@
+{
+  "component": "YoRegistry",
+  "main_contract": "YoRegistry",
+  "source_entry_count": 12,
+  "source_file_count": 12,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/YoRegistry\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x542d29b2b69f83fa65eec2f3c782968c43bc8ae8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401461"
+    }
+  ]
+}

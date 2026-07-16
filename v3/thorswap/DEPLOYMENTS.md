@@ -1,6 +1,6 @@
 # thorswap — deployments
 
-16 verified deployment(s) across 16 component(s).
+17 verified deployment(s) across 17 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -16,6 +16,7 @@
 | ethereum | `0x6755630c583f12ffbd10568eb633c0319db34922` | SingleStaking | impl | live | no |
 | ethereum | `0x815c23eca83261b6ec689b60cc4a58b54bc24d8d` | vTHOR | impl | live | no |
 | ethereum | `0x8793cd69895c45b2d2474236b3cb28fc5c764775` | yTHOR | impl | live | no |
+| ethereum | `0xa5f2211b9b8170f694421f2046281775e8468044` | ThorToken | impl | live | no |
 | ethereum | `0xae1fc3947ee83aeb3b7fec237bcc1d194c88bc24` | SingleStaking-2 | impl | live | no |
 | ethereum | `0xb54147e6031086ed015602248e0cc34e64c0d25f` | TokenVesting-2 | impl | live | no |
 | ethereum | `0xd31f7e39afecec4855fecc51b693f9a0cec49fd2` | TSAggregatorGeneric-2 | impl | live | no |

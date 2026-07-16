@@ -1,6 +1,6 @@
 # ethichub — deployments
 
-27 verified deployment(s) across 25 component(s).
+28 verified deployment(s) across 26 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -26,6 +26,7 @@
 | ethereum | `0xb14b9464b52f502b0edf51ba3a529bc63706b458` | UniswapV2Pair | impl | live | no |
 | ethereum | `0xb27132625173f813085e438ee19c011867063073` | ERC20Reserve-3 | impl | unknown | no |
 | ethereum | `0xb93aa4cdeef1293303f628e16dd06ddd42db19f1` | BPool | impl | unknown | no |
+| ethereum | `0xcb16e29d0b667bad7266e5d0cd59b711b6273c6b` | IncentiveVestingReserve | impl | live | no |
 | ethereum | `0xde629ec5423f560b914de73a927067a408870cf5` | InvestorsVestingReserve | impl | live | no |
 | ethereum | `0xe1ca72ff3434b131765c62cbcbc26060f7aba03d` | PermittableToken | impl | live | no |
 | ethereum | `0xfd09911130e6930bf87f2b0554c44f400bd80d3e` | AdminUpgradeabilityProxy | proxy | unknown | no |

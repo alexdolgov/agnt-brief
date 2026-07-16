@@ -423,14 +423,13 @@ contract WooracleV2_2 is Ownable, IWooracleV2_2 {
     }
 
     function getBase(uint8 _id) public view returns (address) {
-        address[5] memory CONST_BASES = [
+        address[4] memory CONST_BASES = [
             // mload
             // NOTE: Update token address for different chains
-            0x82aF49447D8a07e3bd95BD0d56f35241523fBab1, // WETH
-            0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f, // WBTC
-            0x912CE59144191C1204E64559FE8253a0e49E6548, // ARB
-            0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9, // USDT
-            0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8  // USDC.e
+            0x2170Ed0880ac9A755fd29B2688956BD959F933F8, // ETH
+            0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c, // BTCB
+            0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c, // WBNB
+            0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82 // CAKE
         ];
 
         return _id < CONST_BASES.length ? CONST_BASES[_id] : basesMap[_id];

@@ -10,9 +10,12 @@
     "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 7,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 8,
+  "audited": true,
+  "audits_covering": [
+    "https://1022099409-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mk3LEacyGwD8y6mb9-2%2Fuploads%2F0QLb9sa0V8su4O0MaCLK%2FStatemind%20Mellow%20Multi%20Vault%20Audit%20Report.pdf",
+    "https://1022099409-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mk3LEacyGwD8y6mb9-2%2Fuploads%2FUabZ3jdmQWi13qIivg13%2FChainSecurity%20Mellow%20Multivault%20Audit.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -83,6 +86,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "403468"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe88cf95e44a2ff048315b8b3858e59bb11b8a602",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

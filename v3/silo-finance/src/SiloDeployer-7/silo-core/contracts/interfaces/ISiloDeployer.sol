@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0;
 
+import {IInterestRateModelV2} from "./IInterestRateModelV2.sol";
 import {IDynamicKinkModel} from "./IDynamicKinkModel.sol";
 import {ISiloConfig} from "./ISiloConfig.sol";
 
@@ -35,11 +36,6 @@ interface ISiloDeployer {
         address initialOwner;
     }
 
-    struct MarketOptions {
-        /// @param permissionedLiquidators list of addresses that are allowed to perform liquidations
-        address[] permissionedLiquidators;
-    }
-
     /// @dev Emit after the Silo creation
     event SiloCreated(ISiloConfig siloConfig);
 
@@ -49,23 +45,18 @@ interface ISiloDeployer {
     /// @dev Revert if for the deployment provided both hook receiver and hook receiver implementation
     error HookReceiverMisconfigured();
 
-    /// @dev Revert if the hook initialization data is different from expected
-    error InvalidHookInitData();
-
-    /// @notice Deploy silo with additional options for the market
+    /// @notice Deploy silo
     /// @param _oracles Oracles to be create during the silo creation
     /// @param _irmConfigData0 IRM config data for a silo `_TOKEN0`
     /// @param _irmConfigData1 IRM config data for a silo `_TOKEN1`
     /// @param _clonableHookReceiver Hook receiver implementation to clone (ignored if implementation has address(0))
     /// @param _siloInitData Silo configuration for the silo creation
-    /// @param _marketOptions additional market options for the silo creation
     function deploy(
         Oracles calldata _oracles,
         bytes calldata _irmConfigData0,
         bytes calldata _irmConfigData1,
         ClonableHookReceiver calldata _clonableHookReceiver,
-        ISiloConfig.InitData memory _siloInitData,
-        MarketOptions calldata _marketOptions
+        ISiloConfig.InitData memory _siloInitData
     )
         external
         returns (ISiloConfig siloConfig);

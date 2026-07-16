@@ -87,3 +87,12 @@ struct TimeswapV2PeripheryNoDexQuoterWithdrawParam {
   bool isToken0;
   uint256 positionAmount;
 }
+struct TimeswapV2PeripheryNoDexQuoterShortAfterMaturityParam {
+  address token0;
+  address token1;
+  uint256 strike;
+  uint256 maturity;
+  address to;
+  bool isToken0;
+  uint256 positionAmount;
+}

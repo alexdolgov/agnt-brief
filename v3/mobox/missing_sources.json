@@ -2,5 +2,12 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "mobox",
-  "missing": []
+  "missing": [
+    {
+      "chain_id": 56,
+      "chain": "bsc",
+      "address": "0x295f68795e21f8c8b03038317b507124c13d2741",
+      "canonical_source_address": null
+    }
+  ]
 }

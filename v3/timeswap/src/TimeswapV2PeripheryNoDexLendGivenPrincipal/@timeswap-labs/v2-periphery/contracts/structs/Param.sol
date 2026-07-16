@@ -313,3 +313,21 @@ struct TimeswapV2PeripheryWithdrawParam {
   address token1To;
   uint256 positionAmount;
 }
+
+/// @dev The parameter for calling the short after maturity function.
+/// @param token0 The address of the smaller size ERC20 contract.
+/// @param token1 The address of the larger size ERC20 contract.
+/// @param strike The strike price of the position in UQ128.128.
+/// @param maturity The maturity of the position in seconds.
+/// @param token0To The receiver of any token0 ERC20 tokens.
+/// @param token1To The receiver of any token1 ERC20 tokens.
+/// @param positionAmount The amount of short tokens to burn.
+struct TimeswapV2PeripheryShortAfterMaturityParam {
+  address token0;
+  address token1;
+  uint256 strike;
+  uint256 maturity;
+  address token0To;
+  address token1To;
+  uint256 positionAmount;
+}

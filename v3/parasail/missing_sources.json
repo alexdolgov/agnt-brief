@@ -2,5 +2,18 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "parasail",
-  "missing": []
+  "missing": [
+    {
+      "chain_id": 42161,
+      "chain": "arbitrum",
+      "address": "0x277aebb81f19a2c4dc0436857724e5363f40bce0",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 42161,
+      "chain": "arbitrum",
+      "address": "0x8eebfa31b90f1cb92da3f33b1e2106e434786ef3",
+      "canonical_source_address": null
+    }
+  ]
 }

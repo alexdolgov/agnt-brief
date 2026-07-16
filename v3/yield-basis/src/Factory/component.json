@@ -10,9 +10,15 @@
     "build_command": "forge build --root \"src/Factory\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.yieldbasis.com/pdf/audit/chainsecurity.pdf",
+    "https://docs.yieldbasis.com/pdf/audit/mixbytes.pdf",
+    "https://docs.yieldbasis.com/pdf/audit/pashov.pdf",
+    "https://docs.yieldbasis.com/pdf/audit/quantstamp.pdf",
+    "https://github.com/yield-basis/yb-core/blob/master/audits/Chainsecurity_LP_Oracle.md"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -21,6 +27,16 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x370a449febb9411c95bf897021377fe0b7d100c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

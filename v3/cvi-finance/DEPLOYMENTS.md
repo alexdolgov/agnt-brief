@@ -1,10 +1,12 @@
 # cvi-finance — deployments
 
-17 verified deployment(s) across 14 component(s).
+19 verified deployment(s) across 16 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x07e49d5de43dda6162fa28d24d5935c151875283` | ClonableBeaconProxy | proxy | live | no |
+| arbitrum | `0x223013bd8b4569628d50ee106ccba93189a02ada` | GnosisSafeProxy | proxy | live | no |
+| arbitrum | `0x7f4b135782c4a3b1c78c93f23f2016cb5cd96cc8` | GnosisSafeProxyFactory | proxy | live | no |
 | arbitrum | `0x8096ad3107715747361acefe685943bfb427c722` | TransparentUpgradeableProxy | proxy | live | no |
 | arbitrum | `0xfdeb59a2b4891ea17610ee38665249acc9fcc506` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0x197e99bd87f98dfde461afe3f706de36c9635a5d` | UniswapV2Pair-2 | impl | live | no |

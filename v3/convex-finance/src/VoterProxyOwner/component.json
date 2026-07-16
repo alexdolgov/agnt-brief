@@ -1,0 +1,39 @@
+{
+  "component": "VoterProxyOwner",
+  "main_contract": "VoterProxyOwner",
+  "source_entry_count": 2,
+  "source_file_count": 2,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/arbi/VoterProxyOwner.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-44ccb6fadbb7-VoterProxyOwner.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IVoterProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-6aa546efbfd0-IVoterProxy.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VoterProxyOwner\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb1d7c7bd55d6679e662e3482671d2735de0e69e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393354"
+    }
+  ]
+}

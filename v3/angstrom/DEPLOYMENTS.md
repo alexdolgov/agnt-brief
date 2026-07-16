@@ -1,6 +1,6 @@
 # angstrom — deployments
 
-14 verified deployment(s) across 12 component(s).
+15 verified deployment(s) across 13 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -13,6 +13,7 @@
 | ethereum | `0x06d9f5e807eeca914482bbd8ed3f40c55ce06c79` | VaultExtension | impl | live | no |
 | ethereum | `0x1746484ea5e11c75e009252c102c8c33e0315fd4` | ControllerV1 | impl | live | no |
 | ethereum | `0x4cf26a7e680d5d86232f985b91c6cb9e0774b89d` | PriceOracle | impl | live | no |
+| ethereum | `0x60d41d9708bbefd29000d1486c6406ef23526c01` | TimelockController | impl | live | no |
 | ethereum | `0x6582c770fc4167aa807c3846c73e6006e90c169c` | AngstromVaultFactory | impl | live | no |
 | ethereum | `0x814e3b8dfdc2376b59a5ab70e8784dcb3bebf8cc` | Swapper | impl | live | no |
 | ethereum | `0xb3df869572ac94bb1acf5e9ecbfae3afee8a00df` | EventEmitter | impl | live | no |

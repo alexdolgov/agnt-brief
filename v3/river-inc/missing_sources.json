@@ -2,5 +2,24 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "river-inc",
-  "missing": []
+  "missing": [
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x026f086b76b63210602c5ce3665c4d378595b7f8",
+      "canonical_source_address": "0x922b2618dbc660a7edfa2880f650d2ef5d2afd45"
+    },
+    {
+      "chain_id": 1,
+      "chain": "ethereum",
+      "address": "0x2135efef5ac35ba549cc791cec4d15e8c8115611",
+      "canonical_source_address": "0xba50ddac6b2f5482ca064efac621e0c7c0f6a783"
+    },
+    {
+      "chain_id": 8453,
+      "chain": "base",
+      "address": "0x01df7d28c51639f2f2f95dcf2fdff374269327b0",
+      "canonical_source_address": "0x15c5c9ad5745254977d73bb2487a93c817577f76"
+    }
+  ]
 }

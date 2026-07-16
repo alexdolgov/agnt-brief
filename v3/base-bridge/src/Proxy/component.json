@@ -10,10 +10,30 @@
     "build_command": "forge build --root \"src/Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 13,
+  "deployment_count": 16,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4200000000000000000000000000000000000000",
+      "is_proxy": true,
+      "implementation_address": "0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30000",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401641"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x4200000000000000000000000000000000000002",
+      "is_proxy": true,
+      "implementation_address": "0xc0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d3c0d30002",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401642"
+    },
     {
       "chain": "base",
       "chain_id": 8453,
@@ -123,6 +143,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "401654"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x420000000000000000000000000000000000001b",
+      "is_proxy": true,
+      "implementation_address": "0x4fa2be8cd41504037f1838bce3bcc93bc68ff537",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401655"
     },
     {
       "chain": "base",

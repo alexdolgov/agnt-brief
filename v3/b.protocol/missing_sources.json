@@ -2,18 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "b.protocol",
-  "missing": [
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0x5cbe121949f965472611d4b39907548598c86af2",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0x5eae7715d1970867e4d57c58b08e6acf405a094d",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x657acb8a3bf9383e561565d422ea9b9a90ce0052",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x15452454a9735d68df430879b2941316a09295b1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "397669"
+      "logic_topography_row_id": "397649"
     }
   ]
 }

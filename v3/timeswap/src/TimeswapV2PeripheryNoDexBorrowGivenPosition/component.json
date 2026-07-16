@@ -1,0 +1,224 @@
+{
+  "component": "TimeswapV2PeripheryNoDexBorrowGivenPosition",
+  "main_contract": "TimeswapV2PeripheryNoDexBorrowGivenPosition",
+  "source_entry_count": 50,
+  "source_file_count": 50,
+  "source_path_remaps": [
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-aa5d7afbb9e0-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-93237d5b93f1-SafeERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-library/contracts/Error.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-68ba91587b59-Error.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-library/contracts/StrikeConversion.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-699a1a5e065c-StrikeConversion.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-option/contracts/enums/Position.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-1737a3ac7152-Position.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-pool/contracts/interfaces/ITimeswapV2Pool.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-e78751f30f86-ITimeswapV2Pool.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-token/contracts/interfaces/ITimeswapV2Token.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-fc456901fa6d-ITimeswapV2Token.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-periphery/contracts/TimeswapV2PeripheryBorrowGivenPosition.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-0795bb4b5ff0-TimeswapV2PeripheryBorrowGivenPosition.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-periphery/contracts/structs/Param.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-efab6c39ae20-Param.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-periphery/contracts/structs/InternalParam.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-2ac81aaab247-InternalParam.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-library/contracts/Math.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-3d6f2b8c6a93-Math.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-6c4d06a18e9f-IERC20Permit.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/utils/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-3abb636fe18e-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-library/contracts/FullMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-77a0630f1abd-FullMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-option/contracts/structs/StrikeAndMaturity.sol",
+      "exported_path": "__audit_export_path_conflicts__/0020-60cc25c01eaa-StrikeAndMaturity.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-pool/contracts/structs/Param.sol",
+      "exported_path": "__audit_export_path_conflicts__/0021-f4e581676122-Param.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
+      "exported_path": "__audit_export_path_conflicts__/0022-51aaa071d8fc-IERC1155.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-token/contracts/structs/Position.sol",
+      "exported_path": "__audit_export_path_conflicts__/0023-928f97606e8a-Position.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-token/contracts/structs/Param.sol",
+      "exported_path": "__audit_export_path_conflicts__/0024-7b28f1d8d069-Param.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-pool/contracts/libraries/PoolFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0025-c3410af8c705-PoolFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-option/contracts/interfaces/ITimeswapV2OptionFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0026-b181fd5dc8a1-ITimeswapV2OptionFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-option/contracts/interfaces/ITimeswapV2Option.sol",
+      "exported_path": "__audit_export_path_conflicts__/0027-0f3d007bc3e8-ITimeswapV2Option.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-option/contracts/structs/Param.sol",
+      "exported_path": "__audit_export_path_conflicts__/0028-0e5dd1839b73-Param.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-option/contracts/structs/CallbackParam.sol",
+      "exported_path": "__audit_export_path_conflicts__/0029-446dbdb44482-CallbackParam.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-option/contracts/enums/Transaction.sol",
+      "exported_path": "__audit_export_path_conflicts__/0030-f5e92950f0a2-Transaction.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-pool/contracts/interfaces/ITimeswapV2PoolFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0031-8ae2c5868334-ITimeswapV2PoolFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-pool/contracts/structs/CallbackParam.sol",
+      "exported_path": "__audit_export_path_conflicts__/0032-72a11cf99de8-CallbackParam.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-pool/contracts/enums/Transaction.sol",
+      "exported_path": "__audit_export_path_conflicts__/0033-b69b497fa613-Transaction.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-token/contracts/structs/CallbackParam.sol",
+      "exported_path": "__audit_export_path_conflicts__/0034-67e4f4fcc505-CallbackParam.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-periphery/contracts/interfaces/ITimeswapV2PeripheryBorrowGivenPosition.sol",
+      "exported_path": "__audit_export_path_conflicts__/0035-e44f58ee3abd-ITimeswapV2PeripheryBorrowGivenPosition.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-periphery/contracts/libraries/Verify.sol",
+      "exported_path": "__audit_export_path_conflicts__/0036-e7343f8dd3c8-Verify.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../../node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "exported_path": "__audit_export_path_conflicts__/0043-57d47baf86b7-IERC165.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-option/contracts/libraries/OptionFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0044-b530d86bbf23-OptionFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-pool/contracts/interfaces/IOwnableTwoSteps.sol",
+      "exported_path": "__audit_export_path_conflicts__/0045-29473c0e7122-IOwnableTwoSteps.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-option/contracts/interfaces/callbacks/ITimeswapV2OptionMintCallback.sol",
+      "exported_path": "__audit_export_path_conflicts__/0046-408651a8126e-ITimeswapV2OptionMintCallback.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-option/contracts/interfaces/callbacks/ITimeswapV2OptionSwapCallback.sol",
+      "exported_path": "__audit_export_path_conflicts__/0047-7f23c1b1c8aa-ITimeswapV2OptionSwapCallback.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-pool/contracts/interfaces/callbacks/ITimeswapV2PoolLeverageCallback.sol",
+      "exported_path": "__audit_export_path_conflicts__/0048-a6d7ffd7469a-ITimeswapV2PoolLeverageCallback.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-token/contracts/interfaces/callbacks/ITimeswapV2TokenMintCallback.sol",
+      "exported_path": "__audit_export_path_conflicts__/0049-43156f92ef2e-ITimeswapV2TokenMintCallback.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "../v2-option/contracts/libraries/OptionPair.sol",
+      "exported_path": "__audit_export_path_conflicts__/0050-e09046ad8dee-OptionPair.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TimeswapV2PeripheryNoDexBorrowGivenPosition\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xb1b04800c8d99274fa49dcc50410764de8df5778",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404432"
+    }
+  ]
+}

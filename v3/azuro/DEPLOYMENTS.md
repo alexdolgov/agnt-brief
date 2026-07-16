@@ -1,6 +1,6 @@
 # azuro — deployments
 
-106 verified deployment(s) across 87 component(s).
+119 verified deployment(s) across 95 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,14 +8,18 @@
 | base | `0x01e5389ad8e0ddd857969982090309eaa95d09e7` | Pool | impl | live | no |
 | base | `0x14375f13a9f8d91d46f14b30345387f5f90c8224` | LP | impl | live | no |
 | base | `0x172fb426946efe19c9dda221f91429157d74abbd` | Pool-2 | impl | live | no |
+| base | `0x18cc83f854372b5d6bc98388b002ea0fe678a4a8` | Relayer | impl | unknown | no |
 | base | `0x276f297ded7767c93768b08448fa82b986d00294` | Trading-2 | impl | live | no |
+| base | `0x2c3f4f70b3e425f89dc39749d657ee2f3610b61c` | LiveCore-2 | impl | inactive | no |
 | base | `0x397253eb3da8986eb424bcf77a7e3f049d430ecb` | Trading-3 | impl | live | no |
+| base | `0x4200000000000000000000000000000000000006` | WETH9 | impl | live | no |
 | base | `0x43f30998446a831b49cdaa7f3e642549e7ea47e1` | PayMaster-3 | impl | live | no |
 | base | `0x4dab4a1a222048c4ec3a23b835cf5fa6e1454111` | Trading-4 | impl | live | no |
 | base | `0x5d510e5db0c93f7f270b794de0982345a2a98e39` | Trading-5 | impl | live | no |
-| base | `0x5dc8cd04f0c3529a113c693efc08b95c2d9a6045` | Relayer-3 | impl | unknown | no |
+| base | `0x5dc8cd04f0c3529a113c693efc08b95c2d9a6045` | Relayer-7 | impl | unknown | no |
 | base | `0x5e99e000c9e37c723dbbb12808523726940b814f` | Trading-6 | impl | live | no |
-| base | `0x66900efd3ccb329f83b4820877efeb70135b1e87` | LiveCore-2 | impl | live | no |
+| base | `0x66900efd3ccb329f83b4820877efeb70135b1e87` | LiveCore-3 | impl | live | no |
+| base | `0x68ec35cac94e53032206fcc9ecb03719c0955c0f` | Relayer-2 | impl | inactive | no |
 | base | `0x72fcb1819cc002cc3bf2cdcb5bfd7ac3cd9b515b` | Trading-7 | impl | live | no |
 | base | `0x8f91dfaa8de30b2fb41391f6872f354ff6eb3c74` | Trading-8 | impl | live | no |
 | base | `0x9e6be44cc1236eef7e1f197418592d363bedcd5a` | LP-2 | impl | live | no |
@@ -23,16 +27,19 @@
 | base | `0xae0830d7588ab44e5d4443168a8d666b54f385fe` | Trading-10 | impl | live | no |
 | base | `0xb8836aa6ce3e08ba33ee6437daaea9e907659627` | TestERC20-2 | impl | live | no |
 | base | `0xceb4f28bfaa07a16ae7f7b08a7116f7f8ee9936c` | Trading-11 | impl | live | no |
+| base | `0xda26cb81140f2a98ded4cf25d4e2fa88b76e9818` | CashOut | impl | live | no |
 | base | `0xdb8210a02696b38d22998fbac2f5d1b57d1d291a` | Trading-12 | impl | live | no |
+| base | `0xe6021285a66ad4665e1b1fc66b39d1e4683d3385` | Relayer-3 | impl | inactive | no |
 | base | `0xf26be662cc75780655ee65ebb94932fbd7ba47c9` | Trading | impl | live | no |
 | base | `0xf7c7e23af5708b1a2c3e2aec8ae0f3dfb0f56cd1` | LP-5 | impl | live | no |
 | base | `0xfdb493145e0122a8de661ce6eb428ce114ff880b` | Trading | impl | live | no |
-| bsc | `0x8da05c0021e6b35865fdc959c54dcef3a4abba9d` | Relayer | impl | live | no |
+| bsc | `0x8da05c0021e6b35865fdc959c54dcef3a4abba9d` | Relayer-4 | impl | live | no |
 | bsc | `0x92baea8bcd5b10d1a76e154d23cf63f918ee9e17` | AzuroBet-2 | impl | live | no |
 | bsc | `0x9340979e5ff72102ff5ec69f78e0e364d92a8d17` | LP-6 | impl | live | no |
 | bsc | `0x9e6be44cc1236eef7e1f197418592d363bedcd5a` | Access | impl | live | no |
 | bsc | `0xd1025891129f02f0e66d5126fc73e52aecb918c3` | LP | impl | live | no |
-| bsc | `0xe485001661476f0dede323c5d0ca893f96013126` | Relayer-2 | impl | live | no |
+| bsc | `0xe485001661476f0dede323c5d0ca893f96013126` | Relayer | impl | live | no |
+| gnosis | `0x319c3936043611c6a47f997f14b9c91a455ea8f4` | Contract | impl | live | yes |
 | gnosis | `0x987e319843ecf809d55a812b0d2d5ee654d7bb82` | AffiliateHelper | impl | live | no |
 | gnosis | `0x98949e3cb6511f75f3f0d53c838695f280b927ec` | TestERC20 | impl | live | no |
 | gnosis | `0x98c98bc97fc199255a305098a1a97b727e1eff6c` | LP-7 | impl | live | no |
@@ -95,24 +102,24 @@
 | gnosis | `0xef05a086840ebe7d25504a50cabf3d82fcb7517b` | BetExpress-8 | impl | live | no |
 | gnosis | `0xefae91fdc86c7cc0959fe94487af9e9ac8b49abb` | FreeBet-5 | impl | live | no |
 | gnosis | `0xf5bf2a0441e28034b03b642c19787bb505c5ffc1` | EntryPoint | impl | live | no |
-| gnosis | `0xf8edaf6771af2ca9a328366e95e12502fd5b89f9` | CashOut | impl | live | no |
+| gnosis | `0xf8edaf6771af2ca9a328366e95e12502fd5b89f9` | CashOut-2 | impl | live | no |
 | gnosis | `0xfb56807121477d1d96919745ce7989b190e1422f` | Core-7 | impl | live | no |
 | gnosis | `0xfc1785fbe783993ad08559e74db231af6b76c5ad` | PrematchCore | impl | live | no |
 | gnosis | `0xfde055a86ff689530a13e7a8d3408c87ee507293` | LP-3 | impl | live | no |
 | gnosis | `0xfe199c59b70f2c8db6527b6a2dbc11e5e109622b` | LP-13 | impl | live | no |
 | gnosis | `0xfe42ddcd28b03ddd317b1980ee46882a3ab7c669` | BetExpress-9 | impl | live | no |
 | gnosis | `0xffaa642c576965e7e2d789ac397ac88b809577e8` | Factory | impl | live | no |
+| linea | `0xa219439258ca9da29e9cc4ce5596924745e12b93` | Contract | proxy | live | yes |
+| polygon | `0x07c5adfbd546afcdb356c4b8ea870295420f4200` | Relayer-5 | impl | unknown | no |
 | polygon | `0x2f2f5566ce6402bbf3eab8c6066cecc5a0b40d72` | LP | impl | live | no |
 | polygon | `0x33fd3757c2b2df912898713bb9319bf615676ac5` | PayMaster-2 | impl | live | no |
 | polygon | `0x53d0b41d8c8fd04c851290bec26a1d4f16504fdf` | LP-5 | impl | live | no |
+| polygon | `0x72954c01d28456064e7dbd134e433956db30d744` | CashOut | impl | live | no |
 | polygon | `0x8397259c983751daf40400790063935a11afa28a` | FxChild | impl | live | no |
+| polygon | `0x9340979e5ff72102ff5ec69f78e0e364d92a8d17` | Relayer-2 | impl | inactive | no |
 | polygon | `0x9e6be44cc1236eef7e1f197418592d363bedcd5a` | LP-2 | impl | live | no |
+| polygon | `0xa49b0c641f4d45827d5ead0a4fa7e26ae533b627` | Relayer-6 | impl | unknown | no |
 | polygon | `0xa6fa4fb5f76172d178d61b04b0ecd319c5d1c0aa` | ChildChainManagerProxy | proxy | live | no |
 | polygon | `0xc2132d05d31c914a87c6611c10748aeb04b58e8f` | UpgradableProxy | proxy | live | no |
 | polygon | `0xebbb122388fbf76e16655a4425afe844c1771ef8` | Access-2 | impl | live | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- gnosis `0x319c3936043611c6a47f997f14b9c91a455ea8f4`
-- polygon `0xa49b0c641f4d45827d5ead0a4fa7e26ae533b627`
+| polygon | `0xf751c47d20a3fa992ce95a1dbd8521baaf300895` | Relayer-3 | impl | inactive | no |

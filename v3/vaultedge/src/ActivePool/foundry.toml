@@ -1,8 +1,0 @@
-[profile.default]
-src = "."
-test = "__foundry_no_tests__"
-script = "__foundry_no_scripts__"
-out = ".foundry/out"
-cache_path = ".foundry/cache"
-libs = ["lib", "node_modules"]
-auto_detect_solc = true

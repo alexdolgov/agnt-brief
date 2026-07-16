@@ -97,16 +97,6 @@ interface IDolomiteMargin is IDolomiteMarginAdmin {
     ) external view returns (address);
 
     /**
-     * Return the maximum amount of the market that can be supplied on Dolomite. Always 0 or positive.
-     *
-     * @param  marketId  The market to query
-     * @return           The max amount of the market that can be supplied
-     */
-    function getMarketMaxWei(
-        uint256 marketId
-    ) external view returns (Wei memory);
-
-    /**
      * Return true if a particular market is in closing mode. Additional borrows cannot be taken
      * from a market that is closing.
      *
@@ -481,12 +471,6 @@ interface IDolomiteMargin is IDolomiteMarginAdmin {
      * @return               The adjusted liquidation spread
      */
     function getLiquidationSpreadForPair(
-        uint256 heldMarketId,
-        uint256 owedMarketId
-    ) external view returns (Decimal memory);
-
-    function getLiquidationSpreadForAccountAndPair(
-        AccountInfo calldata account,
         uint256 heldMarketId,
         uint256 owedMarketId
     ) external view returns (Decimal memory);

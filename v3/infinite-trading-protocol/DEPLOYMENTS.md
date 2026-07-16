@@ -1,6 +1,6 @@
 # infinite-trading-protocol — deployments
 
-362 verified deployment(s) across 162 component(s).
+363 verified deployment(s) across 163 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -280,6 +280,7 @@
 | base | `0xf41fd7adf57ec196efa1f6f5706b452c13719c9c` | PoolLogicLib-2 | impl | live | no |
 | base | `0xf5d88bdb24eb3505591eb0ee1b215e9365cf9ecb` | OdosV3ContractGuard | impl | live | no |
 | optimism | `0x0a167dc9daf2c7c2ec8e3a73c5ff6985414b96f0` | Disperse-2 | impl | live | no |
+| optimism | `0x0a7b751fcdbbaa8bb988b9217ad5fb5cfe7bf7a0` | ITP | impl | live | no |
 | optimism | `0x1824daffe0ef476bd7ef7e83fd1a1abed34efbd0` | PoolLogicLib | impl | live | no |
 | optimism | `0x1b7726646032b3f5c36f849e407835ba4e9d9d2b` | EasySwapperV2ContractGuard-2 | impl | live | no |
 | optimism | `0x23371aeeaf8718955c93aec726b3cafc772b9e37` | ItpStakingV1 | impl | live | no |

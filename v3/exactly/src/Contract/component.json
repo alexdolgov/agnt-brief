@@ -1,0 +1,31 @@
+{
+  "component": "Contract",
+  "main_contract": "Contract",
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/exactly/audits/blob/main/ABDK%20EscrowedEXA%20(Sep-23).pdf",
+    "https://github.com/exactly/audits/blob/main/OpenZeppelin%20EscrowedEXA%20(Oct-23).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xbea586a167853adddef12818f264f1f9823fbc18",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

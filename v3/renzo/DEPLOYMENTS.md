@@ -1,6 +1,6 @@
 # renzo — deployments
 
-64 verified deployment(s) across 54 component(s).
+67 verified deployment(s) across 57 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -34,6 +34,7 @@
 | ethereum | `0x0c431c66f4de941d089625e5b423d00707977060` | PauserRegistry | impl | unknown | no |
 | ethereum | `0x0d02267b9529ba1ee284e73e107feaf91e23dd89` | EulerSwapEzEthDelegateStrategy | impl | unknown | no |
 | ethereum | `0x10586b9b7ff0f842913a57539f8167ce143c3011` | PaymentSplitter | proxy | unknown | no |
+| ethereum | `0x1736011d3e075351b319dbc1da28dac68ea830a6` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x174a0ed7c1989fa693b2cf93c5162e07d9478efe` | PaymentSplitter | proxy | unknown | no |
 | ethereum | `0x179f0063d87bb7ca4f75ca693566018ca9eb55ba` | EmptyContract | proxy | unknown | no |
 | ethereum | `0x18ac4d26acd4c5c4fe98c9098d2e5e1e501a042a` | RestakeManager | impl | unknown | no |
@@ -58,6 +59,7 @@
 | ethereum | `0x7c4564bd54da474314f715b19d7d8c7671760395` | UsccDepositStrategy | impl | unknown | no |
 | ethereum | `0x86e532b66872dc801d737276fc1d2ff425deb9cf` | XERC20Factory | impl | unknown | no |
 | ethereum | `0x8bddb5e42b419d949bcaba2a1538c9c37867f4f8` | NonUnderlyingTokenTransferStrategy | impl | unknown | no |
+| ethereum | `0x8c9532a60e0e7c6bbd2b2c1303f63ace1c3e9811` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0x91e677b07f7af907ec9a428aafa9fc14a0d3a338` | EmptyContract | proxy | unknown | no |
 | ethereum | `0xa6db1a8c5a981d1536266d2a393c5f8ddb210eaf` | Timelock | impl | unknown | no |
 | ethereum | `0xbca64801a6639ebda2c28cc0bdddf804424957db` | MerklClaimerStrategy | impl | unknown | no |
@@ -66,5 +68,6 @@
 | ethereum | `0xd92145c07f8ed1d392c1b88017934e301cc1c3cd` | EmptyContract | proxy | unknown | no |
 | ethereum | `0xebb77a6a553646f81eaf57429c8fc004f9bbd86a` | ezETHConversionStrategy | impl | unknown | no |
 | linea | `0x174a0ed7c1989fa693b2cf93c5162e07d9478efe` | EthLineaValueTransfer | impl | unknown | no |
+| linea | `0x4d7572040b84b41a6aa2efe4a93efff182388f88` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | mode | `0x1120ea466b51e86be7cacc0ed5b0d7021eb17fb4` | EzAdminL2 | impl | unknown | no |
 | mode | `0x3ea4d0467c976e9877adb96869fdeb0551fd0930` | ConnextReceiver | impl | unknown | no |

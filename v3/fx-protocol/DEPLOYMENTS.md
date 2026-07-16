@@ -1,12 +1,13 @@
 # fx-protocol — deployments
 
-65 verified deployment(s) across 40 component(s).
+66 verified deployment(s) across 41 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | ethereum | `0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x0055e248ee7feab91969b77ab32f184b72be82fa` | ShortPool | impl | live | no |
 | ethereum | `0x05c630e9fc8a064f0e8e6fbb9e2b5d2215da5653` | RebalancePoolGaugeClaimer-2 | impl | live | no |
+| ethereum | `0x07d1718ff05a8c53c8f05adaed57c0d672945f9a` | Proxy | proxy | live | no |
 | ethereum | `0x0b9e51d9a436b6b78b5e2666f15b2d0666a7a851` | FxUSDPriceOracle | impl | live | no |
 | ethereum | `0x0d73d31e1e0d4cc266f0805c94f8e2b9b37d4c3a` | PoolManager | impl | live | no |
 | ethereum | `0x0e67460226a71df07115c1f169418dd159e5521b` | RevenuePool | impl | live | no |

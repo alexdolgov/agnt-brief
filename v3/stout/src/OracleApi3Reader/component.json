@@ -1,0 +1,68 @@
+{
+  "component": "OracleApi3Reader",
+  "main_contract": "OracleApi3Reader",
+  "source_entry_count": 2,
+  "source_file_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OracleApi3Reader\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x25456cff86e96fe4b9b3d70aec13199297042264",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399501"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x6d515498ff34fd8c0abfb74ff5a64d50f7c10f82",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399509"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x863a1d4f12fdb634c605e68635af320e7f4aa60c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399511"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x943697f4d59d2847d38ccf8b75d50a8c42fbd7bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399513"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xfc73f48939ee51929190b3697ae913de135f76a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399528"
+    }
+  ]
+}

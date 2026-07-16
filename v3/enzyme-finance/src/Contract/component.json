@@ -1,8 +1,8 @@
 {
   "component": "Contract",
   "main_contract": "Contract",
-  "source_entry_count": 26,
-  "source_file_count": 26,
+  "source_entry_count": 8,
+  "source_file_count": 8,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -13,13 +13,14 @@
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
-    "https://github.com/enzymefinance/protocol/blob/v4/audits/2021-12-CS-fund-value-calculator-address-list-registry-paraswap-pool-together-uniswap.pdf"
+    "https://github.com/enzymefinance/protocol/blob/dev/audits/2023-12-CS--stakewise-v3.pdf",
+    "https://github.com/enzymefinance/protocol/blob/dev/audits/2025-05-CS--stakewise-v3.pdf"
   ],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0xe1ade612e8a568a4a060a60a22f890171d3dc63b",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0aa852b87d5134df6b7233dbd2b8274d54e3ae0e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

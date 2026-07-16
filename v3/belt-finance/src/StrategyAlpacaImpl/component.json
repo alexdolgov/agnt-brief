@@ -1,8 +1,8 @@
 {
   "component": "StrategyAlpacaImpl",
   "main_contract": "StrategyAlpacaImpl",
-  "source_entry_count": 1,
-  "source_file_count": 1,
+  "source_entry_count": 3,
+  "source_file_count": 3,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x80e00ccedff9328fb0a5d8b4d34fbc03303c30d0",
+      "address": "0x06d9d41b69c11a9a6cd7119797164e8e31ee4eaf",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392132"
     }
   ]
 }

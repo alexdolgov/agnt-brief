@@ -1,6 +1,6 @@
 # adamant-finance — deployments
 
-38 verified deployment(s) across 38 component(s).
+42 verified deployment(s) across 42 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -23,6 +23,7 @@
 | polygon | `0x269509bc3c5c24e56de9ffe5136950d7ceac0b97` | StrategyUSDCmaUSDC | impl | live | no |
 | polygon | `0x28c798a4b06e48d672db1065a80be022da458522` | WhaleStrategyDeployer | impl | live | no |
 | polygon | `0x28f67424d7bdbdc11a830d754638276a90bd783e` | StrategySingleAssetWhale | impl | live | no |
+| polygon | `0x341c6003d7e7d08aaf9580c0f1ce799fecd4b8ac` | TokenLocker | impl | live | no |
 | polygon | `0x3709ff1da9d1f485576a5ebd3191b3eca01eafea` | StrategyDeployerCometh | impl | live | no |
 | polygon | `0x3d32f459c52b009d615e5251494bac3170422433` | StrategyDarkBuildRebasingUSD | impl | live | no |
 | polygon | `0x44ae845cd2cba0756fbaef1f96daece3e55da4dd` | StrategyWhale | impl | live | no |
@@ -38,7 +39,10 @@
 | polygon | `0xa1e1e47c4a4e968f9ebf475abfbabd6cc1e15dd2` | TitanIronStrategyDeployer | impl | live | no |
 | polygon | `0xa3a03922be28d0f0cd49fd2c1fed417cf07005ee` | StrategyWaultWexPair | impl | live | no |
 | polygon | `0xa4c1763aef101958635a0ed1e0a744f4bf630b73` | AddyEthPool | impl | live | no |
+| polygon | `0xaae758a2db4204e1334236acd6e6e73035704921` | Minter | impl | live | no |
 | polygon | `0xafd9338c49a4074e32cc8e77357473c917907234` | StrategyElkPair | impl | live | no |
 | polygon | `0xb0732cf1e3924f51f621b7479b793b8613e6e8b6` | MultiSigWallet | impl | live | no |
 | polygon | `0xf3ec226e32467ab5a1d4671045e2fc6d012ae8ff` | PolyPupStrategyDeployer | impl | live | no |
+| polygon | `0xf4c1dfe482570bba9c8b941b162a7509b9c54958` | SimpleLocker | impl | live | no |
+| polygon | `0xf7661ee874ec599c2b450e0df5c40ce823fef9d3` | AddyStakingRewards | impl | live | no |
 | polygon | `0xfe3c01247b6c1718d7ea4c8252369635f42a2b73` | StrategyQuickPair | impl | live | no |

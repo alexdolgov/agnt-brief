@@ -1,0 +1,68 @@
+{
+  "component": "JumpRateModel",
+  "main_contract": "JumpRateModel",
+  "source_entry_count": 2,
+  "source_file_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/JumpRateModel\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x52196ff255aa200552b5d24d56a725b0e206a26b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0x692d0bf5112b221ab14c5dc8c2159ddd87ff196b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xa282a20b9bab553d434faec7d473c08b2e8d88fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xc6c06859d6caef79a6e750ebc43dd2df63291aa2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-1329",
+      "chain_id": 1329,
+      "address": "0xed908ab644212969249bc7b167e3a2df30709e1e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

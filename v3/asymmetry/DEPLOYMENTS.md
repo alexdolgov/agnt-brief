@@ -1,6 +1,6 @@
 # asymmetry — deployments
 
-124 verified deployment(s) across 73 component(s).
+126 verified deployment(s) across 75 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -52,6 +52,7 @@
 | ethereum | `0x54867de8786dbd761463729f570b76172733f010` | ZapperAsFuck | impl | live | no |
 | ethereum | `0x552f4b850d4963d914e6b2c011b5fe475468d3b8` | PirexMigrator | impl | live | yes |
 | ethereum | `0x5602eb937b25f783a4b7b522b7c0baf28be58815` | WBTCToCRVUSDExchange | impl | live | no |
+| ethereum | `0x56664ffccff6bb282cca96808af03d9042e1f799` | Contract | impl | live | no |
 | ethereum | `0x57bd20ae68f845b35b76fe6e0239c9929eb48469` | BorrowerOperations | impl | live | no |
 | ethereum | `0x588e859cb38fecf2d56925c0512471ab47aa9ff1` | StafiSuperNode | impl | live | no |
 | ethereum | `0x58d1a68f882eed25a63cd4c2c5b574066a78f961` | ZapperAsFuck | impl | live | no |
@@ -77,6 +78,7 @@
 | ethereum | `0x7b6633c0cd81dc338688a528c0a3f346561f5ca3` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0x7bd47eca45ee18609d3d64ba683ce488ca9320a3` | TroveManager | impl | live | no |
 | ethereum | `0x7f575323ddedfbad449fef5459fad031fe49520b` | WETHPriceFeed | impl | live | no |
+| ethereum | `0x7fd713fe57fcd0a7636c152faba6bdc2d3b27d15` | ERC20Wrapper | impl | live | no |
 | ethereum | `0x7fe24f1a024d33506966cb7ca48bab8c65fb632d` | dASF | impl | live | no |
 | ethereum | `0x838a1f38c361ffa1b23201640752149adb4e865a` | HintHelpers | impl | live | no |
 | ethereum | `0x83e5bde77d7477ecd972e338541b90af57675536` | StabilityPool | impl | live | no |

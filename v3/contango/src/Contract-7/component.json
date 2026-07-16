@@ -1,8 +1,8 @@
 {
   "component": "Contract-7",
   "main_contract": "Contract",
-  "source_entry_count": 13,
-  "source_file_count": 13,
+  "source_entry_count": 20,
+  "source_file_count": 20,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Contract-7\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://github.com/contango-xyz/core-v2/blob/main/networks.json"
@@ -19,7 +19,17 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xc0121817ff224a018840e4d15a864747d36e6eb2",
+      "address": "0x331243a425f7ee2468f0fddce5cd83f58733cc1c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe89d07da1438177eaa0ae7277d7d9a4dddc16c0f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

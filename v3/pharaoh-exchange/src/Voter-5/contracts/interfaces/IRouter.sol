@@ -2,6 +2,9 @@
 pragma solidity ^0.8.0;
 
 interface IRouter {
+    /// @notice returns the address of the pair factory
+    function factory() external view returns (address);
+
     struct route {
         /// @dev token from
         address from;
@@ -10,9 +13,6 @@ interface IRouter {
         /// @dev is stable route
         bool stable;
     }
-
-    /// @notice returns the address of the pair factory
-    function factory() external view returns (address);
 
     /// @notice sorts the tokens to see what the expected LP output would be for token0 and token1 (A/B)
     /// @param tokenA the address of tokenA

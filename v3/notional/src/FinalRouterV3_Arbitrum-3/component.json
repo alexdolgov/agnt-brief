@@ -1,0 +1,28 @@
+{
+  "component": "FinalRouterV3_Arbitrum-3",
+  "main_contract": "FinalRouterV3_Arbitrum",
+  "source_entry_count": 19,
+  "source_file_count": 19,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FinalRouterV3_Arbitrum-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf3f7dd5de37a7b41e92776e6577454612ec0dee7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

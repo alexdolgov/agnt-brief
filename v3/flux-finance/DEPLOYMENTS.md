@@ -1,11 +1,12 @@
 # flux-finance — deployments
 
-28 verified deployment(s) across 28 component(s).
+29 verified deployment(s) across 29 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | ethereum | `0x02d77d39c3889bf1da64c96f6f3b9a22aee2b51d` | WOMMFFactory | impl | unknown | no |
 | ethereum | `0x049e2aab49813c7a34656a193777019ed74651a9` | CErc20DelegatorKYC | impl | unknown | no |
+| ethereum | `0x0502c5ae08e7cd64fe1aeda7d6e229413ecc6abe` | RWAOracleExternalComparisonCheck | impl | live | no |
 | ethereum | `0x0576f565bdd00199b8e353f569ce903bb2eccc22` | RWAOracleRateCheck | impl | unknown | no |
 | ethereum | `0x076c8405d6e2ecb84ebe265b255519e0f0d527e0` | Comptroller | impl | unknown | no |
 | ethereum | `0x0a5fa0e21517d13e532904cfb1868d9d164659f4` | Unitroller | impl | unknown | no |

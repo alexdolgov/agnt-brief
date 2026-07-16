@@ -2,12 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "keep-network",
-  "missing": [
-    {
-      "chain_id": 8453,
-      "chain": "base",
-      "address": "0xdebd9aa9bc4845c7cd2d9a997f82a2daea540bd5",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

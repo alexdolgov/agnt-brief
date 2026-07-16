@@ -12,22 +12,15 @@ interface IBetting is IOrder {
         bytes calldata data
     ) external returns (uint256[] memory tokenIds);
 
+    function getOrderBetsAmounts(
+        OrderData calldata order
+    ) external view returns (uint128 totalAmount, uint128[] memory amounts);
+
     function resolvePayout(
         uint256 tokenId
     ) external returns (address account, uint128 payout);
 
     function viewPayout(uint256 tokenId) external view returns (uint128 payout);
-
-    function getBetData(
-        uint256 tokenId
-    )
-        external
-        view
-        returns (uint64 timestemp, ComboPartOdds[] memory comboParts);
-
-    function isConditionCanceled(
-        uint256 conditionId
-    ) external view returns (bool);
 
     function lp() external view returns (address);
 }

@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.28;
 
-// solhint-disable ordering
-
 import {Math} from "openzeppelin5/utils/math/Math.sol";
 import {Rounding} from "../lib/Rounding.sol";
 import {ISilo} from "../interfaces/ISilo.sol";
@@ -362,8 +360,6 @@ library SiloMathLib {
             // integral is amount above 1e18 after adding _currentFraction and remainder
             integral = (_currentFraction + remainder) / _PRECISION_DECIMALS;
             // fraction is what we get below 1e18
-            // Safe: modulo by `_PRECISION_DECIMALS` guarantees value <= 1e18 - 1, far below uint64 max.
-            // forge-lint: disable-next-line(unsafe-typecast)
             fraction = uint64((_currentFraction + remainder) % _PRECISION_DECIMALS);
         }
     }

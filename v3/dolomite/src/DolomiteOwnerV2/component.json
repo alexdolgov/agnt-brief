@@ -1,0 +1,58 @@
+{
+  "component": "DolomiteOwnerV2",
+  "main_contract": "DolomiteOwnerV2",
+  "source_entry_count": 13,
+  "source_file_count": 13,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DolomiteOwnerV2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0xc2b66e247dae5ee749ae1d827190115f3653de06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393695"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xc2b66e247dae5ee749ae1d827190115f3653de06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393723"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc2b66e247dae5ee749ae1d827190115f3653de06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393758"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xc2b66e247dae5ee749ae1d827190115f3653de06",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393797"
+    }
+  ]
+}

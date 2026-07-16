@@ -5,12 +5,9 @@ import { Admin } from "contracts/base/Admin.sol";
 import { TimelockAdmin } from "contracts/base/TimelockAdmin.sol";
 
 error ConnectorNotRegistered(address target);
-error CustomRegistryAlreadyRegistered();
 
 interface ICustomConnectorRegistry {
-    function connectorOf(
-        address target
-    ) external view returns (address);
+    function connectorOf(address target) external view returns (address);
 }
 
 contract ConnectorRegistry is Admin, TimelockAdmin {
@@ -20,9 +17,9 @@ contract ConnectorRegistry is Admin, TimelockAdmin {
 
     error ConnectorAlreadySet(address target);
     error ConnectorNotSet(address target);
-    error ArrayLengthMismatch();
 
     ICustomConnectorRegistry[] public customRegistries;
+    mapping(ICustomConnectorRegistry => bool) public isCustomRegistry;
 
     mapping(address target => address connector) private connectors_;
 
@@ -30,8 +27,6 @@ contract ConnectorRegistry is Admin, TimelockAdmin {
         address admin_,
         address timelockAdmin_
     ) Admin(admin_) TimelockAdmin(timelockAdmin_) { }
-
-    /// Admin functions
 
     /// @notice Update connector addresses for a batch of targets.
     /// @dev Controls which connector contracts are used for the specified
@@ -41,9 +36,6 @@ contract ConnectorRegistry is Admin, TimelockAdmin {
         address[] calldata targets,
         address[] calldata connectors
     ) external onlyAdmin {
-        if (targets.length != connectors.length) {
-            revert ArrayLengthMismatch();
-        }
         for (uint256 i; i != targets.length;) {
             if (connectors_[targets[i]] != address(0)) {
                 revert ConnectorAlreadySet(targets[i]);
@@ -61,9 +53,6 @@ contract ConnectorRegistry is Admin, TimelockAdmin {
         address[] calldata targets,
         address[] calldata connectors
     ) external onlyTimelockAdmin {
-        if (targets.length != connectors.length) {
-            revert ArrayLengthMismatch();
-        }
         for (uint256 i; i != targets.length;) {
             if (connectors_[targets[i]] == address(0)) {
                 revert ConnectorNotSet(targets[i]);
@@ -79,14 +68,12 @@ contract ConnectorRegistry is Admin, TimelockAdmin {
 
     /// @notice Append an address to the custom registries list.
     /// @custom:access Restricted to protocol admin.
-    function addCustomRegistry(
-        ICustomConnectorRegistry registry
-    ) external onlyAdmin {
-        if (isCustomRegistry(registry)) {
-            revert CustomRegistryAlreadyRegistered();
-        }
-
+    function addCustomRegistry(ICustomConnectorRegistry registry)
+        external
+        onlyAdmin
+    {
         customRegistries.push(registry);
+        isCustomRegistry[registry] = true;
         emit CustomRegistryAdded(address(registry));
     }
 
@@ -96,71 +83,33 @@ contract ConnectorRegistry is Admin, TimelockAdmin {
         uint256 index,
         ICustomConnectorRegistry newRegistry
     ) external onlyTimelockAdmin {
-        ICustomConnectorRegistry oldRegistry = customRegistries[index];
-        emit CustomRegistryRemoved(address(oldRegistry));
+        address oldRegistry = address(customRegistries[index]);
+        isCustomRegistry[customRegistries[index]] = false;
+        emit CustomRegistryRemoved(oldRegistry);
         customRegistries[index] = newRegistry;
+        isCustomRegistry[newRegistry] = true;
         if (address(newRegistry) != address(0)) {
             emit CustomRegistryAdded(address(newRegistry));
         }
     }
 
-    /// Public functions
-
-    function connectorOf(
-        address target
-    ) external view returns (address) {
-        address connector = _getConnector(target);
-
-        if (connector != address(0)) {
-            return connector;
-        }
-
-        revert ConnectorNotRegistered(target);
-    }
-
-    function hasConnector(
-        address target
-    ) external view returns (bool) {
-        return _getConnector(target) != address(0);
-    }
-
-    function isCustomRegistry(
-        ICustomConnectorRegistry registry
-    ) public view returns (bool) {
-        for (uint256 i; i != customRegistries.length;) {
-            if (address(customRegistries[i]) == address(registry)) {
-                return true;
-            }
-            unchecked {
-                ++i;
-            }
-        }
-        return false;
-    }
-
-    /// Internal functions
-
-    function _getConnector(
-        address target
-    ) internal view returns (address) {
+    function connectorOf(address target) external view returns (address) {
         address connector = connectors_[target];
         if (connector != address(0)) {
             return connector;
         }
+
         uint256 length = customRegistries.length;
         for (uint256 i; i != length;) {
             if (address(customRegistries[i]) != address(0)) {
-                (bool success, bytes memory data) = address(customRegistries[i])
-                    .staticcall(
-                    abi.encodeWithSelector(
-                        ICustomConnectorRegistry.connectorOf.selector, target
-                    )
-                );
-                if (success && data.length == 32) {
-                    address _connector = abi.decode(data, (address));
+                try customRegistries[i].connectorOf(target) returns (
+                    address _connector
+                ) {
                     if (_connector != address(0)) {
                         return _connector;
                     }
+                } catch {
+                    // Ignore
                 }
             }
 
@@ -169,6 +118,33 @@ contract ConnectorRegistry is Admin, TimelockAdmin {
             }
         }
 
-        return address(0);
+        revert ConnectorNotRegistered(target);
+    }
+
+    function hasConnector(address target) external view returns (bool) {
+        if (connectors_[target] != address(0)) {
+            return true;
+        }
+
+        uint256 length = customRegistries.length;
+        for (uint256 i; i != length;) {
+            if (address(customRegistries[i]) != address(0)) {
+                try customRegistries[i].connectorOf(target) returns (
+                    address _connector
+                ) {
+                    if (_connector != address(0)) {
+                        return true;
+                    }
+                } catch {
+                    // Ignore
+                }
+
+                unchecked {
+                    ++i;
+                }
+            }
+        }
+
+        return false;
     }
 }

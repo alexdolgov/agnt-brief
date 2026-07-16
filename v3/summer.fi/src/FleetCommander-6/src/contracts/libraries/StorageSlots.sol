@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 /**
  * @dev This library defines storage slots using the technique described in EIP-1967.
@@ -94,6 +94,46 @@ library StorageSlots {
                         "fleetCommander.storage.isWithdrawableArksTotalAssetsCached"
                     )
                 ) - 1
+            )
+        ) & ~bytes32(uint256(0xff));
+    bytes32 public constant ARK_INFLOW_BALANCE_STORAGE =
+        keccak256(
+            abi.encode(
+                uint256(keccak256("fleetCommander.storage.arkInflowBalance")) -
+                    1
+            )
+        ) & ~bytes32(uint256(0xff));
+
+    bytes32 public constant ARK_OUTFLOW_BALANCE_STORAGE =
+        keccak256(
+            abi.encode(
+                uint256(keccak256("fleetCommander.storage.arkOutflowBalance")) -
+                    1
+            )
+        ) & ~bytes32(uint256(0xff));
+
+    bytes32 public constant ARK_MAX_INFLOW_BALANCE_STORAGE =
+        keccak256(
+            abi.encode(
+                uint256(
+                    keccak256("fleetCommander.storage.arkMaxInflowBalance")
+                ) - 1
+            )
+        ) & ~bytes32(uint256(0xff));
+
+    bytes32 public constant ARK_MAX_OUTFLOW_BALANCE_STORAGE =
+        keccak256(
+            abi.encode(
+                uint256(
+                    keccak256("fleetCommander.storage.arkMaxOutflowBalance")
+                ) - 1
+            )
+        ) & ~bytes32(uint256(0xff));
+    bytes32 public constant TIP_TAKEN_STORAGE =
+        keccak256(
+            abi.encode(
+                uint256(keccak256("fleetCommander.storage._isCollectingTip")) -
+                    1
             )
         ) & ~bytes32(uint256(0xff));
 }

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// OpenZeppelin Contracts (last updated v4.7.0) (access/AccessControl.sol)
+// OpenZeppelin Contracts v4.4.1 (access/AccessControl.sol)
 
 pragma solidity ^0.8.0;
 
@@ -49,6 +49,9 @@ import "../proxy/utils/Initializable.sol";
  */
 abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable, IAccessControlUpgradeable, ERC165Upgradeable {
     function __AccessControl_init() internal onlyInitializing {
+        __Context_init_unchained();
+        __ERC165_init_unchained();
+        __AccessControl_init_unchained();
     }
 
     function __AccessControl_init_unchained() internal onlyInitializing {
@@ -73,7 +76,7 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
      * _Available since v4.1._
      */
     modifier onlyRole(bytes32 role) {
-        _checkRole(role);
+        _checkRole(role, _msgSender());
         _;
     }
 
@@ -87,20 +90,8 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
     /**
      * @dev Returns `true` if `account` has been granted `role`.
      */
-    function hasRole(bytes32 role, address account) public view virtual override returns (bool) {
+    function hasRole(bytes32 role, address account) public view override returns (bool) {
         return _roles[role].members[account];
-    }
-
-    /**
-     * @dev Revert with a standard message if `_msgSender()` is missing `role`.
-     * Overriding this function changes the behavior of the {onlyRole} modifier.
-     *
-     * Format of the revert message is described in {_checkRole}.
-     *
-     * _Available since v4.6._
-     */
-    function _checkRole(bytes32 role) internal view virtual {
-        _checkRole(role, _msgSender());
     }
 
     /**
@@ -110,7 +101,7 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
      *
      *  /^AccessControl: account (0x[0-9a-f]{40}) is missing role (0x[0-9a-f]{64})$/
      */
-    function _checkRole(bytes32 role, address account) internal view virtual {
+    function _checkRole(bytes32 role, address account) internal view {
         if (!hasRole(role, account)) {
             revert(
                 string(
@@ -131,7 +122,7 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
      *
      * To change a role's admin, use {_setRoleAdmin}.
      */
-    function getRoleAdmin(bytes32 role) public view virtual override returns (bytes32) {
+    function getRoleAdmin(bytes32 role) public view override returns (bytes32) {
         return _roles[role].adminRole;
     }
 
@@ -144,8 +135,6 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
      * Requirements:
      *
      * - the caller must have ``role``'s admin role.
-     *
-     * May emit a {RoleGranted} event.
      */
     function grantRole(bytes32 role, address account) public virtual override onlyRole(getRoleAdmin(role)) {
         _grantRole(role, account);
@@ -159,8 +148,6 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
      * Requirements:
      *
      * - the caller must have ``role``'s admin role.
-     *
-     * May emit a {RoleRevoked} event.
      */
     function revokeRole(bytes32 role, address account) public virtual override onlyRole(getRoleAdmin(role)) {
         _revokeRole(role, account);
@@ -179,8 +166,6 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
      * Requirements:
      *
      * - the caller must be `account`.
-     *
-     * May emit a {RoleRevoked} event.
      */
     function renounceRole(bytes32 role, address account) public virtual override {
         require(account == _msgSender(), "AccessControl: can only renounce roles for self");
@@ -194,8 +179,6 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
      * If `account` had not been already granted `role`, emits a {RoleGranted}
      * event. Note that unlike {grantRole}, this function doesn't perform any
      * checks on the calling account.
-     *
-     * May emit a {RoleGranted} event.
      *
      * [WARNING]
      * ====
@@ -227,8 +210,6 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
      * @dev Grants `role` to `account`.
      *
      * Internal function without access restriction.
-     *
-     * May emit a {RoleGranted} event.
      */
     function _grantRole(bytes32 role, address account) internal virtual {
         if (!hasRole(role, account)) {
@@ -241,8 +222,6 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
      * @dev Revokes `role` from `account`.
      *
      * Internal function without access restriction.
-     *
-     * May emit a {RoleRevoked} event.
      */
     function _revokeRole(bytes32 role, address account) internal virtual {
         if (hasRole(role, account)) {
@@ -250,11 +229,5 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
             emit RoleRevoked(role, account, _msgSender());
         }
     }
-
-    /**
-     * @dev This empty reserved space is put in place to allow future versions to add new
-     * variables without shifting down storage in the inheritance chain.
-     * See https://docs.openzeppelin.com/contracts/4.x/upgradeable#storage_gaps
-     */
     uint256[49] private __gap;
 }

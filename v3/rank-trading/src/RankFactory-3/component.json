@@ -1,0 +1,50 @@
+{
+  "component": "RankFactory-3",
+  "main_contract": "RankFactory",
+  "source_entry_count": 55,
+  "source_file_count": 55,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/RankFactory-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://hashlock.com/wp-content/uploads/2025/02/RankTrading-Smart-Contract-Audit-Report-Final-Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6e9d30690e433503d3db7001610f60290a286a3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398037"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7cd6ead7e0834ae8bc393ba4c933bb9e80e7dc19",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398038"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf9b1859266b21dfc02c8bd31e11103f97a1aaffd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398045"
+    }
+  ]
+}

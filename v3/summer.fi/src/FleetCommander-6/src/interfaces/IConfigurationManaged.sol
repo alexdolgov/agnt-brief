@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 import {IConfigurationManager} from "./IConfigurationManager.sol";
 
@@ -43,6 +43,15 @@ interface IConfigurationManaged {
      * @return The address of the HarborCommand contract
      */
     function harborCommand() external view returns (address);
+
+    /**
+     * @notice Gets the address of the Fleet Commander Rewards Manager Factory contract
+     * @return The address of the Fleet Commander Rewards Manager Factory contract
+     */
+    function fleetCommanderRewardsManagerFactory()
+        external
+        view
+        returns (address);
 
     error ConfigurationManagerZeroAddress();
 }

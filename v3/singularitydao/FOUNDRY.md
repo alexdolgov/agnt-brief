@@ -6,7 +6,7 @@ Components are intentionally not flattened together because their source paths a
 ## Build one component
 
 ```sh
-forge build --root "src/BscDynaset"
+forge build --root "src/ForgeV1"
 ```
 
 ## Build every component

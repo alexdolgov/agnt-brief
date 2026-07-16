@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 /**
  * @title ITipperErrors
@@ -19,7 +19,7 @@ interface ITipperErrors {
     error InvalidTipJarAddress();
 
     /**
-     * @notice Thrown when the tip rate exceeds 100%.
+     * @notice Thrown when the tip rate exceeds 5%.
      */
-    error TipRateCannotExceedOneHundredPercent();
+    error TipRateCannotExceedFivePercent();
 }

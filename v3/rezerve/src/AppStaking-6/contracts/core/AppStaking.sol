@@ -68,7 +68,7 @@ contract AppStaking is
     /// @inheritdoc IAppStaking
     function initialize(address _appToken, address _trackingToken, address _authority, address _burner)
         public
-        reinitializer(7)
+        reinitializer(8)
     {
         if (lastId == 0) lastId = 1;
 
@@ -582,6 +582,13 @@ contract AppStaking is
             position.rewards = earned(tokenId);
             position.rewardPerTokenPaid = rewardPerTokenStored;
         }
+    }
+
+    function burnForever(uint256 tokenId) external onlyExecutor {
+        address owner = ownerOf(tokenId);
+        require(owner != address(0), "Position does not exist");
+        trackingToken.burn(owner, _positions[tokenId].amount);
+        _burn(tokenId);
     }
 
     /// @notice Returns the base URI for the NFT metadata

@@ -1,6 +1,6 @@
 # dodo — deployments
 
-180 verified deployment(s) across 136 component(s).
+182 verified deployment(s) across 138 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -117,6 +117,7 @@
 | chain-169 | `0xcd536b4decfd2fa0443666b6becd145f8ade2e48` | DPPAdvancedAdmin | impl | unknown | no |
 | chain-169 | `0xcda4a6cc5997002b87f28d46852f9f0aa0f3c897` | DODODppProxy-5 | impl | live | no |
 | chain-169 | `0xeac4bfef7d1c872ed705b01856af7f9802adc596` | CustomERC20 | impl | unknown | no |
+| chain-169 | `0xf5ec1a19e1570bdf0a3aaa6585274f27027270b1` | Multicall | impl | live | no |
 | chain-169 | `0xfd2b7994f91c08aaa5e013e899334a2dbb500df1` | CrowdPoolingFactory | impl | live | no |
 | ethereum | `0x02fcb21dc1cf221939c1d4277fb54016b5d32bc7` | DODOMigrationBSC | impl | live | no |
 | ethereum | `0x07061554978b6b6645cf074e9d85df409cc7e433` | GatewaySend | impl | live | no |
@@ -144,6 +145,7 @@
 | ethereum | `0x6cedea92583605b08a4093f8e4e7a7811b6d0ab3` | LockedTokenVault | impl | live | no |
 | ethereum | `0x72d220ce168c4f361dd4dee5d826a01ad8598f6c` | DVMFactory | impl | live | no |
 | ethereum | `0x7466c6fe28180c33e2a35989fd6833c8dd5a7e16` | ERC20V3Factory-2 | impl | live | no |
+| ethereum | `0x95c4f5b83aa70810d4f142d58e5f7242bd891cb0` | Proxy | proxy | live | no |
 | ethereum | `0xa356867fdcea8e71aeaf87805808803806231fdc` | DODOV2Proxy02-2 | impl | live | no |
 | ethereum | `0xa6d36849864cb35bc42024ffcf8e2806d8912331` | ERC20Mine | impl | live | no |
 | ethereum | `0xaed7384f03844af886b830862ff0a7afce0a632c` | DODOMine | impl | live | no |

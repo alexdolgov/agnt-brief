@@ -1,6 +1,6 @@
 # lets-get-hai — deployments
 
-28 verified deployment(s) across 22 component(s).
+29 verified deployment(s) across 23 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -10,6 +10,7 @@
 | optimism | `0x20a7eaf4a922df50b312ef61aea8b6e1deb5ddd6` | WrappedTokenV2 | impl | live | no |
 | optimism | `0x2d442a71e7dc14068168a7e0680abcc043e26585` | PessimisticVeloSingleOracle-2 | impl | live | no |
 | optimism | `0x30ce72230a47a0967b7e52a1bae0178dbd7c6ea3` | CoinJoin | impl | live | no |
+| optimism | `0x4200000000000000000000000000000000000006` | WETH9 | impl | live | no |
 | optimism | `0x4200000000000000000000000000000000000042` | GovernanceToken | impl | live | no |
 | optimism | `0x557c249ee1b982397ae0fcf3da94665fb2a19e6c` | PessimisticVeloSingleOracle | impl | live | no |
 | optimism | `0x6270403b908505f02da05be5c1956abb59fdb3a6` | OracleRelayer | impl | live | no |

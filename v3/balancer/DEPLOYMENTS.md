@@ -1,6 +1,6 @@
 # balancer — deployments
 
-135 verified deployment(s) across 135 component(s).
+141 verified deployment(s) across 141 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -72,6 +72,9 @@
 | ethereum | `0x254f3a2974b97dc2e675f6115c845567c55f83b0` | PoolSwapFeeHelper | impl | unknown | no |
 | ethereum | `0x26575a44755e0aaa969fdda1e4291df22c5624ea` | SmartWalletCheckerCoordinator | impl | unknown | no |
 | ethereum | `0x26743984e3357efc59f2fd6c1afdc310335a61c9` | FeeDistributor | impl | unknown | no |
+| ethereum | `0x27ad56b2bfcb923091d80ca2d657aeba5ac3121c` | WrappedBalancerPoolToken | impl | live | no |
+| ethereum | `0x2cf8e145bdfe7c52b49ad9bb3c294a31b2736c59` | Boost_Delegation_V2.1 | impl | live | no |
+| ethereum | `0x2e96068b3d5b5bae3d7515da4a1d2e52d08a2647` | Vyper_contract | impl | live | no |
 | ethereum | `0x2ffb7b215ae7f088ec2530c7aa8e1b24e398f26a` | GaugeAdder | impl | live | no |
 | ethereum | `0x3083a1c455ff38d39e58dbac5040f465cf73c5c8` | OptimismRootGaugeFactory | impl | live | no |
 | ethereum | `0x309abcaefa19ca6d34f0d8ff4a4103317c138657` | AggregatorRouter | impl | live | no |
@@ -93,6 +96,7 @@
 | ethereum | `0x50c2fe8177a05d01ccde47e1c5637b1ab914d0d4` | BridgeHelper | impl | unknown | no |
 | ethereum | `0x527d0e14acc53fb040debeae1cab973d23fb3568` | WeightedPool | impl | live | yes |
 | ethereum | `0x56a1baf2f7a163ce66067f0062da60930dd0cb31` | SNXRecoveryCoordinator | impl | unknown | no |
+| ethereum | `0x5a962cdc2786875ca5c40adc09d874e4d6711a74` | ProtocolFeeHelper | impl | live | no |
 | ethereum | `0x5addcca35b7a0d07c74063c48700c8590e87864e` | BalancerHelpers | impl | unknown | no |
 | ethereum | `0x5d3d2d18148baace45d09254513bcf2c548c4480` | SingleRecipientGauge | impl | live | no |
 | ethereum | `0x5ef4c5352882b10893b70dbcaa0c000965bd23c5` | ProtocolFeesWithdrawer | impl | unknown | no |
@@ -113,6 +117,7 @@
 | ethereum | `0x8e3b64b3737097f283e965869e3503aa20f31e4d` | BaseRootGaugeFactory | impl | live | no |
 | ethereum | `0x8e5698dc4897dc12243c8642e77b4f21349db97c` | GaugeControllerQuerier | impl | unknown | no |
 | ethereum | `0x91f17800ca7dd29f2124d9d9ea8d4794693192c7` | BalancerContractRegistryInitializer | impl | unknown | no |
+| ethereum | `0x99364f84d1c68d87aead0ce92eb47409a0c52c58` | ConstantPriceFeed | impl | live | no |
 | ethereum | `0x9a4d642b9876231bb9062559521a48097abfe6cb` | BaseRootGauge | impl | live | no |
 | ethereum | `0x9b8168e330776fee6f857914faca5fb831dd2ab0` | LBPMigrationRouter | impl | unknown | no |
 | ethereum | `0x9bf951848288ccd87d06fac426150262cd3447de` | PolygonZkEVMRootGaugeFactory | impl | live | no |
@@ -131,6 +136,7 @@
 | ethereum | `0xcf0a32bbef8f064969f21f7e02328fb577382018` | TkMrsR | impl | unknown | no |
 | ethereum | `0xd13afc362f619b840c8f4aac1d957ce219ef37ca` | veBALL2GaugeSetupCoordinator | impl | live | no |
 | ethereum | `0xdab2583911e872a00a851fb80dcc78a4b46ba57c` | GaugeWorkingBalanceHelper | impl | live | no |
+| ethereum | `0xe241c6e48ca045c7f631600a0f1403b2bfea05ad` | OmniVotingEscrow | impl | live | no |
 | ethereum | `0xe39b5e3b6d74016b2f6a9673d7d7493b6df549d5` | BalancerQueries | impl | unknown | no |
 | ethereum | `0xe53d8f8aaafd95fcc7196e393ec5a907df44495e` | PolygonRootGauge | impl | live | no |
 | ethereum | `0xeb151668006cd04dadd098afd0a82e78f77076c3` | veBALDeploymentCoordinator | impl | unknown | no |

@@ -1,6 +1,6 @@
 # aegis-markets — deployments
 
-24 verified deployment(s) across 21 component(s).
+25 verified deployment(s) across 22 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,9 +12,10 @@
 | chain-130 | `0x4529a01c7a0410167c5740c487a8de60232617bf` | PositionManager | proxy | live | no |
 | chain-130 | `0x5a09c037eab964ce925ee88ab1facf8af6d9d13f` | Timelock | impl | live | no |
 | chain-130 | `0x825b158857d283deb3f0c6a5c52d79a65323c40e` | Timelock-2 | impl | live | no |
+| chain-130 | `0x88c9ff9fc0b22cca42265d3f1d1c2c39e41cdacc` | Spot | impl | live | no |
 | chain-130 | `0x94e43144067e93f778d29406110b2a6a8730b310` | SponsorCenter | impl | live | no |
 | chain-130 | `0x96573d7f83628d80ce2ff7cabe13e09afcf6f3eb` | Timelock-3 | impl | live | no |
-| chain-130 | `0xa0b0d2d00fd544d8e0887f1a3cedd6e24baf10cc` | Spot | impl | live | yes |
+| chain-130 | `0xa0b0d2d00fd544d8e0887f1a3cedd6e24baf10cc` | Spot-2 | impl | live | yes |
 | chain-130 | `0xa16eb8f1e03696ca0b4acb0085918e2ed77d3006` | PoolPolicyManager | impl | live | no |
 | chain-130 | `0xa7b3e2306a0b46dbde3b533c4e2c3be6a24352a3` | FullRangeLiquidityManager | impl | live | no |
 | chain-130 | `0xa7ce35e886e58926ad0c149f4cc558e27d458a2c` | FullRangeLiquidityManager-2 | impl | live | yes |

@@ -1,8 +1,8 @@
 {
   "component": "FleetCommander-4",
   "main_contract": "FleetCommander",
-  "source_entry_count": 79,
-  "source_file_count": 79,
+  "source_entry_count": 82,
+  "source_file_count": 82,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,24 +15,24 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x53d0a0bcbbaea37a8d33417ef443e875b4e6feea",
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x252e5aa42c1804b85b2ce6712cd418a0561232ba",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399919"
     },
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xef79051d854c871c5331379ccddf915121a90900",
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x2cc190fb654141dfbeac4c0f718f4d511674d346",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399920"
     }
   ]
 }

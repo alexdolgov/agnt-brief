@@ -1,6 +1,6 @@
 # union-protocol — deployments
 
-30 verified deployment(s) across 24 component(s).
+36 verified deployment(s) across 26 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -32,15 +32,11 @@
 | optimism | `0x2683666a3004c553b3a40ed13c32678ed11d9b49` | RegisterHelper | impl | unknown | no |
 | optimism | `0x27be7878ec75291b84e36f2d17f5b47f0dab211b` | ClubMemberNFTV3 | proxy | unknown | no |
 | optimism | `0x60659aa7caeb9ddcd7ddf3fd902e8268fbfae7e5` | UnionClubPluginV3 | impl | unknown | no |
+| optimism | `0x6d44e3b49a6e85cc316ef19b423e84a63f7c6d0c` | Contract | impl | live | yes |
+| optimism | `0x8e195d65b9932185fcc76db5144534e0f3597628` | Contract | impl | live | yes |
+| optimism | `0x946a2c918f3d928b918c01d813644f27bcd29d96` | Contract-2 | impl | live | yes |
+| optimism | `0x9b8d609ecce72d6f71c026539370f7b5e55a1343` | Contract | impl | live | yes |
 | optimism | `0x9c69fc4edcce8d3410ab59e9f9d9e65e5f41350b` | AdminUpgradeabilityProxy | proxy | live | yes |
 | optimism | `0xda10009cbd5d07dd0cecc66161fc93d7c9000da1` | Dai | impl | live | no |
-
-## Source unavailable (6)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- optimism `0x6d44e3b49a6e85cc316ef19b423e84a63f7c6d0c`
-- optimism `0x8e195d65b9932185fcc76db5144534e0f3597628`
-- optimism `0x946a2c918f3d928b918c01d813644f27bcd29d96`
-- optimism `0x9b8d609ecce72d6f71c026539370f7b5e55a1343`
-- optimism `0xe478b5e7a423d7cdb224692d0a816ca146a744b2`
-- optimism `0xe4addfdf5641eb4e15f60a81f63ced4884b49823`
+| optimism | `0xe478b5e7a423d7cdb224692d0a816ca146a744b2` | Contract | impl | live | yes |
+| optimism | `0xe4addfdf5641eb4e15f60a81f63ced4884b49823` | Contract | impl | live | yes |

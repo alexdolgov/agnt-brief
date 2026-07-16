@@ -1,4 +1,6 @@
-// File: @openzeppelin/contracts/utils/Context.sol
+// Sources flattened with hardhat v2.9.3 https://hardhat.org
+
+// File @openzeppelin/contracts/utils/Context.sol@v3.4.1
 
 // SPDX-License-Identifier: MIT
 
@@ -25,7 +27,8 @@ abstract contract Context {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC20/IERC20.sol
+
+// File @openzeppelin/contracts/token/ERC20/IERC20.sol@v3.4.1
 
 
 
@@ -105,7 +108,8 @@ interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-// File: @openzeppelin/contracts/math/SafeMath.sol
+
+// File @openzeppelin/contracts/math/SafeMath.sol@v3.4.1
 
 
 
@@ -322,12 +326,12 @@ library SafeMath {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC20/ERC20.sol
+
+// File @openzeppelin/contracts/token/ERC20/ERC20.sol@v3.4.1
 
 
 
 pragma solidity >=0.6.0 <0.8.0;
-
 
 
 
@@ -630,7 +634,8 @@ contract ERC20 is Context, IERC20 {
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual { }
 }
 
-// File: @openzeppelin/contracts/access/Ownable.sol
+
+// File @openzeppelin/contracts/access/Ownable.sol@v3.4.1
 
 
 
@@ -700,7 +705,8 @@ abstract contract Ownable is Context {
     }
 }
 
-// File: @openzeppelin/contracts/utils/ReentrancyGuard.sol
+
+// File @openzeppelin/contracts/utils/ReentrancyGuard.sol@v3.4.1
 
 
 
@@ -765,13 +771,10 @@ abstract contract ReentrancyGuard {
     }
 }
 
-// File: contracts/earnV2/tokens/StrategyToken.sol
+
+// File contracts/bsc/earnV2/tokens/StrategyToken.sol
 
 pragma solidity 0.6.12;
-
-
-
-
 abstract contract StrategyToken is ERC20, ReentrancyGuard, Ownable {
     address public token;
 
@@ -786,11 +789,10 @@ abstract contract StrategyToken is ERC20, ReentrancyGuard, Ownable {
     bool public withdrawPaused;
 }
 
-// File: contracts/earnV2/tokens/MultiStrategyTokenStorage.sol
+
+// File contracts/bsc/earnV2/tokens/MultiStrategyTokenStorage.sol
 
 pragma solidity 0.6.12;
-
-
 abstract contract MultiStrategyTokenStorage is StrategyToken {
     // bsc wbnb
     address public constant wbnbAddress =
@@ -823,11 +825,10 @@ abstract contract MultiStrategyTokenStorage is StrategyToken {
     address public voidStrategyTokenAddress;
 }
 
-// File: contracts/interfaces/Wrapped.sol
+
+// File contracts/bsc/interfaces/Wrapped.sol
 
 pragma solidity 0.6.12;
-
-
 // do not inherit these interfaces 
 
 interface Wrapped is IERC20 {
@@ -847,11 +848,10 @@ interface IUnwrapper {
     function unwrapBNB(uint256) external;
 }
 
-// File: contracts/interfaces/IStrategyToken.sol
+
+// File contracts/bsc/interfaces/IStrategyToken.sol
 
 pragma solidity 0.6.12;
-
-
 // do not inherit these interfaces 
 
 interface IStrategyToken is IERC20 {    
@@ -872,6 +872,8 @@ interface IStrategyToken is IERC20 {
     
     function deposit(uint256 _amount, uint256 _minShares) external;
     function withdraw(uint256 _shares, uint256 _minAmount) external;
+    function depositBNB(uint256 _minShares) payable external;
+    function withdrawBNB(uint256 _shares, uint256 _minAmount) external;
 
     function setGovAddress(address _govAddress) external;
     function pauseDeposit() external;
@@ -912,17 +914,19 @@ interface IMultiStrategyToken is IStrategyToken {
     // doesn"t guarantee that withdrawing shares returned by this function will always be successful.
     function getMaxWithdrawableShares() external view returns (uint256);
 
-    
-    function setPolicyAdmin(address _policyAdmin) external;
+    function setVoidStrategyTokenAddress(address _voidStrategyTokenAddress) external;
     function rebalance() external;
     function changeRatio(uint256 index, uint256 value) external;
     function setStrategyActive(uint256 index, bool isDeposit, bool b) external;
     function setRebalanceThreshold(uint256 _rebalanceThresholdNumer, uint256 _rebalanceThresholdDenom) external;
     function inCaseTokensGetStuck(address _token, uint256 _amount, address _to) external;
     function updateAllStrategies() external;
+    function addStrategy(address strategyAddress) external;
+    function removeStrategy(address strategyAddress) external;
 }
 
-// File: @openzeppelin/contracts/utils/Address.sol
+
+// File @openzeppelin/contracts/utils/Address.sol@v3.4.1
 
 
 
@@ -1114,12 +1118,10 @@ library Address {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC20/SafeERC20.sol
 
-
+// File @openzeppelin/contracts/token/ERC20/SafeERC20.sol@v3.4.1
 
 pragma solidity >=0.6.0 <0.8.0;
-
 
 
 
@@ -1191,17 +1193,10 @@ library SafeERC20 {
     }
 }
 
-// File: contracts/earnV2/tokens/MultiStrategyTokenImpl.sol
+
+// File contracts/bsc/earnV2/tokens/MultiStrategyTokenImpl.sol
 
 pragma solidity 0.6.12;
-
-
-
-
-
-
-
-
 contract MultiStrategyTokenImpl is MultiStrategyTokenStorage {
     using SafeERC20 for IERC20;
     using Address for address;
@@ -1225,9 +1220,9 @@ contract MultiStrategyTokenImpl is MultiStrategyTokenStorage {
         govAddress = _govAddress;
     }
 
-    function setPolicyAdmin(address _policyAdmin) external {
+    function setVoidStrategyTokenAddress(address _voidStrategyTokenAddress) external {
         require(msg.sender == govAddress || msg.sender == owner(), "Not authorized");
-        policyAdmin = _policyAdmin;
+        voidStrategyTokenAddress = _voidStrategyTokenAddress;
     }
 
     function pauseDeposit() external {
@@ -1291,6 +1286,7 @@ contract MultiStrategyTokenImpl is MultiStrategyTokenStorage {
                 .div(_pool);
         }
         require(sharesToMint >= _minShares, "did not meet minimum shares requested");
+        require(sharesToMint != 0, "shares must be greater than 0");
 
         _mint(msg.sender, sharesToMint);
 
@@ -1365,7 +1361,7 @@ contract MultiStrategyTokenImpl is MultiStrategyTokenStorage {
     }
 
     function rebalance() public {
-        require(msg.sender == govAddress || msg.sender == policyAdmin || msg.sender == owner(), "Not authorized");
+        require(msg.sender == govAddress || msg.sender == owner(), "Not authorized");
         address strategyToWithdraw;
         uint256 strategyAvailableAmount;
         address strategyToDeposit;
@@ -1556,7 +1552,7 @@ contract MultiStrategyTokenImpl is MultiStrategyTokenStorage {
     }
 
     function changeRatio(uint256 index, uint256 value) external {
-        require(msg.sender == govAddress || msg.sender == policyAdmin || msg.sender == owner(), "Not authorized");
+        require(msg.sender == govAddress || msg.sender == owner(), "Not authorized");
         // require(index != 0);
         require(strategies.length > index, "invalid index");
         uint256 valueBefore = ratios[strategies[index]];
@@ -1592,7 +1588,7 @@ contract MultiStrategyTokenImpl is MultiStrategyTokenStorage {
     }
     
     function setStrategyActive(uint256 index, bool isDeposit, bool b) public {
-        require(msg.sender == govAddress || msg.sender == policyAdmin || msg.sender == owner(), "Not authorized");
+        require(msg.sender == govAddress || msg.sender == owner(), "Not authorized");
         mapping(address => bool) storage isActive = isDeposit ? depositActive : withdrawActive;
         require(index < strategies.length, "invalid index");
         require(isActive[strategies[index]] != b, b ? "already active" : "already inactive");
@@ -1607,7 +1603,7 @@ contract MultiStrategyTokenImpl is MultiStrategyTokenStorage {
     }
 
     function setRebalanceThreshold(uint256 _rebalanceThresholdNumer, uint256 _rebalanceThresholdDenom) external {
-        require(msg.sender == govAddress || msg.sender == policyAdmin || msg.sender == owner(), "Not authorized");
+        require(msg.sender == govAddress || msg.sender == owner(), "Not authorized");
         require(_rebalanceThresholdDenom != 0, "denominator should not be 0");
         require(_rebalanceThresholdDenom >= _rebalanceThresholdNumer, "denominator should be greater than or equal to the numerator");
         rebalanceThresholdNumer = _rebalanceThresholdNumer;
@@ -1687,7 +1683,8 @@ contract MultiStrategyTokenImpl is MultiStrategyTokenStorage {
         revert("invalid strategy address");
     }
 
-    function addStrategy(address strategyAddress) internal {
+    function addStrategy(address strategyAddress) public {
+        require(msg.sender == govAddress || msg.sender == owner(), "!gov");
         uint8 i = 0;
         for (; i < strategies.length; i += 1) {
             require(strategies[i] != strategyAddress, "Strategy Already Exists");
@@ -1697,7 +1694,8 @@ contract MultiStrategyTokenImpl is MultiStrategyTokenStorage {
         emit StrategyAdded(strategyAddress);
     }
 
-    function removeStrategy(address strategyAddress) internal {
+    function removeStrategy(address strategyAddress) public {
+        require(msg.sender == govAddress || msg.sender == owner(), "!gov");
         uint8 index = getStrategyIndex(strategyAddress);
         require(index < strategies.length);
 
@@ -1725,20 +1723,9 @@ contract MultiStrategyTokenImpl is MultiStrategyTokenStorage {
         emit StrategyRemoved(strategyToRemove);
     }
 
-    // always keep this function into an empty function only containing the require statement in the first line 
-    function updateMultiStrategy() public {
-        require(msg.sender == govAddress || msg.sender == owner(), "!gov");
-        for (uint8 i = 0; i < strategies.length; i += 1) {
-            (bool result, bytes memory data) = strategies[i].call(abi.encodeWithSignature("txAllowed()"));
-            if (result && data.length > 0) {
-                (address resultAddr) = abi.decode(data, (address));
-                if (address(this) == resultAddr) {
-                    voidStrategyTokenAddress = strategies[i];
-                    break;
-                }
-            }
-        }
-    }
+    // function updateMultiStrategy() public {
+    //     require(msg.sender == govAddress || msg.sender == owner(), "!gov");
+    // }
 
     fallback() external payable {}
     receive() external payable {}

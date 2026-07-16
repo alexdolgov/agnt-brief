@@ -1,6 +1,6 @@
 # zkbob_ — deployments
 
-23 verified deployment(s) across 17 component(s).
+26 verified deployment(s) across 20 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -15,6 +15,7 @@
 | optimism | `0x2c34afcb1c51796c3c0c7710c72a56eb72e1e81d` | TreeUpdateVerifier | impl | live | no |
 | optimism | `0x318e2c1f5f6ac4fdd5979e73d498342b255fc869` | ZkBobPool | proxy | live | yes |
 | optimism | `0x3c28fb3aa25239e6a35a6a36757d38fe9303f21c` | OPSupplyReductionHelper | impl | unknown | no |
+| optimism | `0x4200000000000000000000000000000000000006` | WETH9 | impl | live | no |
 | optimism | `0x4b8c0b14aa7cb5a7cff3546415bbdcacd7c75a2e` | MutableOperatorManager | impl | unknown | no |
 | optimism | `0x58320a55bbc5f89e5d0c92108f762ac0172c5992` | ZkBobPool | proxy | live | yes |
 | optimism | `0x70429f78c2d7d1de6f89be421bce64ba876c325b` | MasterMinter | impl | unknown | no |
@@ -26,4 +27,6 @@
 | optimism | `0xbd17deee53a58b48548117a11a2e7bbf2d0d6fa7` | FiatTokenV2_1 | impl | unknown | no |
 | optimism | `0xbf3d58f026642951990c0421964179c83e2c9c1b` | ZkBobAccounting | impl | unknown | no |
 | optimism | `0xbff0020638011357315302727ed55c5193a95f7b` | AccountingMigrator | impl | unknown | no |
+| polygon | `0x2791bca1f2de4661ed88a30c99a7a9449aa84174` | UChildERC20Proxy | proxy | live | no |
 | polygon | `0x72e6b59d4a90ab232e55d4bb7ed2dd17494d62fb` | ZkBobPool | proxy | live | yes |
+| polygon | `0x9ec9d8b2ff9b9f93d7ed3362d714d751b4f8982a` | TimelockController | impl | live | no |

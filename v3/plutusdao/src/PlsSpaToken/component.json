@@ -1,0 +1,28 @@
+{
+  "component": "PlsSpaToken",
+  "main_contract": "PlsSpaToken",
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PlsSpaToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0d111e482146fe9ac9ca3a65d92e65610bbc1ba6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403714"
+    }
+  ]
+}

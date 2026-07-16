@@ -1,6 +1,6 @@
 # cove-finance — deployments
 
-36 verified deployment(s) across 35 component(s).
+41 verified deployment(s) across 37 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -10,7 +10,7 @@
 | ethereum | `0x05dcdbf02f29239d1f8d9797e22589a2de1c152f` | YearnStakingDelegate | impl | live | no |
 | ethereum | `0x07a573bb8c5278d5cbea3ec04e316ca8c3feb7c3` | CrossAdapter | impl | unknown | no |
 | ethereum | `0x087f2b76aedf6d7d103e780c31694641f2506c48` | ChainlinkOracle | impl | unknown | no |
-| ethereum | `0x0894ce556d81c7de6b373d91a0d691673d6dd4c1` | FarmingPlugin | impl | unknown | no |
+| ethereum | `0x0894ce556d81c7de6b373d91a0d691673d6dd4c1` | FarmingPlugin | impl | unknown | yes |
 | ethereum | `0x093f4fca4b71912edb33b2d4bb92e5b85658d833` | ERC20RewardsGauge | impl | live | no |
 | ethereum | `0x10f77d8cfcbb623b9abf57502c4da824eb91fede` | PythOracleMarketHours | impl | unknown | no |
 | ethereum | `0x10fcf995e7b32bb0d07bd84abedda09bd919345b` | BasicRetryOperator | impl | unknown | no |
@@ -20,7 +20,7 @@
 | ethereum | `0x15633dc0ce383babc96fdcdabf08a29e87ce53e3` | Yearn4626RouterExt | impl | live | no |
 | ethereum | `0x15ddad641337ce39e63f1e4f659b2a9c2c2d711b` | YSDRewardsGauge | impl | live | no |
 | ethereum | `0x1d21dcf9787dfe268b76f0336d1bfb9a32d473c9` | AssetRegistry | impl | unknown | no |
-| ethereum | `0x1db6482f07b223fad08e8ec4648024601b2da7ad` | CoWSwapAdapter | impl | unknown | no |
+| ethereum | `0x1db6482f07b223fad08e8ec4648024601b2da7ad` | CoWSwapAdapter | impl | unknown | yes |
 | ethereum | `0x2772a1464024d6fcab5fc75d379eee928e2966b9` | CurveEMAOracleUnderlying | impl | live | yes |
 | ethereum | `0x2c2f185593a57e0927c33dd983925874df6cc919` | DynamicSlippageChecker | impl | unknown | no |
 | ethereum | `0x3052a99326a54ceaf546f97dcabbac15cf3074a9` | RedstoneCoreOracle | impl | unknown | no |
@@ -35,16 +35,13 @@
 | ethereum | `0x4cb99eb83a0abed477c4a99234bc58e0464aa280` | BasketManager | impl | live | yes |
 | ethereum | `0x53ead38ca96d562433427f7bbfcac960cc1f2e2d` | MiniChefV3 | proxy | live | no |
 | ethereum | `0x63a8b9d57227a1db1620f617964ba9ccab0451a7` | CoWSwapCloneWithAppData | impl | unknown | no |
+| ethereum | `0x705f82bb431fada1a0f11d7b77b3f0586c545cbc` | TimelockController | impl | live | no |
 | ethereum | `0x842b22eb2a1c1c54344eddbe6959f787c2d15844` | CoveYearnGaugeFactory | impl | live | no |
+| ethereum | `0x9219401e7e2e473770e56203e4eeba85083c7f7e` | BasketManager | impl | live | yes |
 | ethereum | `0x9aa729fa58e8298aaec4c4c33189ed137b3b74f0` | GaugeRewardReceiver | impl | live | no |
 | ethereum | `0x9dadf9487737de29ac685d231bb94348a2635cbb` | SwapAndLock | impl | live | no |
+| ethereum | `0xa74e0b738b053d9083451bbab84c538ff2cc701d` | FarmingPlugin | impl | live | yes |
 | ethereum | `0xb418cd485e6835af43c6583e80087564068bb256` | UniV2ExpectedOutCalculator | impl | unknown | no |
+| ethereum | `0xb97c12781fb1de1f07b4735526db7b3420f26f99` | Contract | impl | live | yes |
+| ethereum | `0xc50dd21a8515cbfd597d65c8fe9f4653f1b1d35b` | CoWSwapAdapter | impl | live | yes |
 | ethereum | `0xff71841eefca78a64421db28060855036765c248` | CoveYFI | impl | live | no |
-
-## Source unavailable (4)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x9219401e7e2e473770e56203e4eeba85083c7f7e`
-- ethereum `0xa74e0b738b053d9083451bbab84c538ff2cc701d`
-- ethereum `0xb97c12781fb1de1f07b4735526db7b3420f26f99`
-- ethereum `0xc50dd21a8515cbfd597d65c8fe9f4653f1b1d35b`

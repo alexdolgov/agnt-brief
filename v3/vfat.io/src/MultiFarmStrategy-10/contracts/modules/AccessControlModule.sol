@@ -12,7 +12,9 @@ contract AccessControlModule {
     error SickleNotDeployed();
     error NotRegisteredSickle();
 
-    constructor(SickleFactory factory_) {
+    constructor(
+        SickleFactory factory_
+    ) {
         factory = factory_;
     }
 
@@ -26,7 +28,9 @@ contract AccessControlModule {
 
     // @dev allow access only to the sickle's owner or addresses approved by him
     // to use only for functions such as claiming rewards or compounding rewards
-    modifier onlyApproved(Sickle sickle) {
+    modifier onlyApproved(
+        Sickle sickle
+    ) {
         // Here we check if the Sickle was really deployed, this gives use the
         // guarantee that the contract that we are going to call is genuine
         if (factory.admins(address(sickle)) == address(0)) {

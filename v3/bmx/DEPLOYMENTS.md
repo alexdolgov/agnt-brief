@@ -1,6 +1,6 @@
 # bmx — deployments
 
-259 verified deployment(s) across 141 component(s).
+262 verified deployment(s) across 144 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -73,6 +73,7 @@
 | base | `0x3ea260c2dc55bd9429f610baf4122aaabfac89d4` | LPStaking | impl | live | no |
 | base | `0x3f7b17685195f2edd0eacbf017330769fe1a031c` | FeeDistributor-3 | impl | live | no |
 | base | `0x3fe7064dab8817c2da3137a3d36dba0bfca799c7` | BoardwalkFeeCollector-3 | impl | live | no |
+| base | `0x3ff7ab26f2dfd482c40bdadfc0e88d01bff79713` | OptionTokenV3 | impl | live | no |
 | base | `0x4197d75f6604dae5593d15230f822e4792537c43` | VestingStream | impl | live | no |
 | base | `0x41c4671f3f8adb82804477783839720a7fd075f9` | V4PositionHandler-2 | impl | live | no |
 | base | `0x4395b5e71e78d810224819e071213f4f3722786b` | DailyEpochGauge-3 | impl | live | no |
@@ -83,6 +84,7 @@
 | base | `0x4b819f0be09c57a59dd4e69eaf29b32222949453` | PositionManagerAdapter-2 | impl | live | no |
 | base | `0x4ba159be071ddb0d36da9eb05a7756321a156438` | BoostBurn | impl | live | no |
 | base | `0x4e500def833ef98560705e3a95ac66f01b233834` | BoardwalkLPManager-2 | impl | live | no |
+| base | `0x4e74d4db6c0726ccded4656d0bce448876bb4c7a` | Yearn_Token_Vault | impl | live | no |
 | base | `0x4ea968ae42bbb66dbf4af5f64a86da8009731803` | ParticipationDistributor | impl | live | no |
 | base | `0x4f870d3150c733ca3e620ad54da6531f427dcf5a` | FeeDistributor | impl | live | no |
 | base | `0x4fd2d0fbdc491ea69c63bd03aa4e002e9160d651` | BoardwalkToken-3 | impl | live | no |
@@ -241,6 +243,7 @@
 | base | `0xfd9ca05205c01b71d2429192827f906661763656` | PositionManagerAdapter-2 | impl | live | no |
 | base | `0xffebacee18069b406d6d2c4e4c8d98541577bd84` | V2PositionHandler | impl | live | no |
 | chain-146 | `0x0a2653a193595d91678830512de2733727953169` | Router | impl | live | yes |
+| chain-146 | `0x2ddcf85d3cf27dea338e0371d38409ba80058630` | wSLT | impl | live | no |
 | chain-146 | `0x5174c02f20fe8b2da3e3a64fa7df5596cef9bad2` | VaultUtils-2 | impl | live | yes |
 | chain-146 | `0x55f1234662bb538231d56636bb182915b43d4364` | OrderBook | impl | live | no |
 | chain-146 | `0x620253be916a915fee00fab30840a04a2389c886` | PositionManager | impl | live | yes |

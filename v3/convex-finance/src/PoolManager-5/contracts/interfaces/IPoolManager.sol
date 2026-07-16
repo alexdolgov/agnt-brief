@@ -106,9 +106,8 @@ interface IPoolManager {
   /// @param pool The address of pool to redeem.
   /// @param debts The amount of debt tokens to redeem.
   /// @param minColls The minimum amount of collateral tokens should redeem.
-  /// @return actualDebts The actual amount of debt tokens used.
   /// @return colls The amount of collateral tokens redeemed.
-  function redeem(address pool, uint256 debts, uint256 minColls) external returns (uint256 actualDebts, uint256 colls);
+  function redeem(address pool, uint256 debts, uint256 minColls) external returns (uint256 colls);
 
   /// @notice Harvest pending rewards of the given pool.
   /// @param pool The address of pool to harvest.

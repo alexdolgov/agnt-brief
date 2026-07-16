@@ -1,8 +1,8 @@
 {
   "component": "Seam",
   "main_contract": "Seam",
-  "source_entry_count": 36,
-  "source_file_count": 36,
+  "source_entry_count": 35,
+  "source_file_count": 35,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0xff7c1fdc6294a42104896854c5483711a45e7847",
+      "address": "0x57b4b7f830244fc854cd1123ff14afd4c1aefd3f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398743"
     }
   ]
 }

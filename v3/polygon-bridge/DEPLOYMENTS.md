@@ -1,6 +1,6 @@
 # polygon-bridge — deployments
 
-47 verified deployment(s) across 46 component(s).
+49 verified deployment(s) across 48 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -38,6 +38,8 @@
 | ethereum | `0x88f65097ba6e10f25e93bf41987f9416bbb303eb` | StakeManagerProxy | proxy | unknown | no |
 | ethereum | `0x8e51a119e892d3fb324c0410f11f39f61dec9dc8` | MerklePatriciaProof | impl | live | no |
 | ethereum | `0x96cddf45c0cd9a59876a2a29029d7c54f6e54ad3` | RootERC721 | impl | live | no |
+| ethereum | `0x96d358795782a73d90f2ed2d505ab235d197ca05` | SafeMath | impl | live | no |
+| ethereum | `0xa45b966996374e9e65ab991c6fe4bfce3a56dde8` | MaticWETH | impl | live | no |
 | ethereum | `0xa7a8e43ef0e579c3d64618d2a34dd456ae14dc0a` | OptimismPortal2 | impl | unknown | no |
 | ethereum | `0xcb8b435481da1ed5abc895e03535ce0bba3b6905` | CommunityTreasuryVotes | impl | unknown | no |
 | ethereum | `0xd75f1d6a8a7dc558a65c2f30ebf876ddbee035a2` | RLPReader | impl | live | no |

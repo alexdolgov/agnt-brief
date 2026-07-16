@@ -1,6 +1,6 @@
 # secured-finance — deployments
 
-123 verified deployment(s) across 93 component(s).
+126 verified deployment(s) across 94 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -27,6 +27,7 @@
 | ethereum | `0x3179d2a6e92c5a3f830ff88107ab53902f761b84` | StaticPriceAggregator | impl | live | no |
 | ethereum | `0x3482cfcd46d580260eb85d173b3856273a8bb820` | FundManagementLogic | impl | live | no |
 | ethereum | `0x354662817ceef04e56d8c7a6c9f1289929e4dc04` | StaticPriceAggregator | impl | live | no |
+| ethereum | `0x35e9d8e0223a75e51a67aa731127c91ea0779fe2` | Contract | impl | live | yes |
 | ethereum | `0x37808387929c4ca07cd01929aeb142e2ddb32efc` | LendingMarketUserLogic | impl | live | no |
 | ethereum | `0x3794230a72430fcc0a7030205a8df648b0106848` | StaticPriceAggregator | impl | live | no |
 | ethereum | `0x39fce9528d756f7fa43058c6c6fe862f09efac9e` | LendingMarket-2 | impl | live | no |
@@ -48,6 +49,7 @@
 | ethereum | `0x51dfbe45de29e3a5b332bb8ab8c46f912b0a51b7` | StaticPriceAggregator | impl | live | no |
 | ethereum | `0x54a3f4ef9854c43926563348508d1e9c0f1d7926` | OrderActionLogic-3 | impl | live | no |
 | ethereum | `0x5615074bcd7ea63f10f961064f9ebb8af61fa960` | ProxyController-2 | impl | live | no |
+| ethereum | `0x581e463841bd2b30285929448e1a93d74708719f` | Contract | impl | live | yes |
 | ethereum | `0x59d58018ea583b965bfcf8f098344ee60bd846c1` | TokenFaucet-2 | impl | unknown | no |
 | ethereum | `0x5a074d18c00c07f7f7bc13e89919bfb00236cb59` | MigrationAddressResolver-3 | impl | live | no |
 | ethereum | `0x5a32079a5bfc4e5e6da8e7369e9daf1a2c777030` | LendingMarket | impl | live | no |
@@ -66,7 +68,8 @@
 | ethereum | `0x732bad54734203deabe371e9172a330423c01262` | StaticPriceAggregator | impl | live | no |
 | ethereum | `0x79b9bf7ffb20976698bb78228b5851e701a51b8f` | LendingMarketController-3 | impl | live | no |
 | ethereum | `0x7a1932c859354d12c3d4ada1b9cabe3b44e7b3c8` | ZCToken-3 | impl | live | no |
-| ethereum | `0x7dca6b6bf30cd28ade83e86e21e82e3f852bf2dc` | Contract | impl | live | yes |
+| ethereum | `0x7a6e3635694952dc00f6ba4d4ad1a7b892028789` | Yearn_V3_Vault | impl | live | no |
+| ethereum | `0x7dca6b6bf30cd28ade83e86e21e82e3f852bf2dc` | Contract-2 | impl | live | yes |
 | ethereum | `0x7fd3cc946cc5a538a83de69fe5c22285f206d034` | StaticPriceAggregator | impl | live | no |
 | ethereum | `0x813dd1713b13bfe476b3fbccca3bbb77aede74ee` | StaticPriceAggregator | impl | live | no |
 | ethereum | `0x819cc14d52c97d778a43c1e4d509d67a9b46b52d` | LendingMarket | impl | live | no |
@@ -75,7 +78,7 @@
 | ethereum | `0x8a44ed77eda02c03697052bb0f253aebd4c4c897` | BeaconProxyController-2 | impl | live | no |
 | ethereum | `0x8bd2e1ac0e990c1b610f4a491cc92364c6bda6fb` | ReserveFund-3 | impl | live | no |
 | ethereum | `0x9271604178b08dc1f19d8195494a017b2629dd1d` | LendingMarket-3 | impl | live | no |
-| ethereum | `0xa2700d5fedb13b86bba3228008c7a0d464a07f2b` | ERC1967Upgrade | proxy | live | yes |
+| ethereum | `0xa2700d5fedb13b86bba3228008c7a0d464a07f2b` | Contract | proxy | live | yes |
 | ethereum | `0xa3719bd2146c6bb00f24164168d01469ee368e4a` | AddressResolver-2 | impl | live | no |
 | ethereum | `0xa4c30de289fb8f1c37ac7b9b6c86de40ce1b8f30` | LendingMarketOperationLogic-4 | impl | live | no |
 | ethereum | `0xac98b3afa0b59b8d770e29d5bf1f7cd623b817fc` | QuickSort | impl | live | no |
@@ -86,7 +89,7 @@
 | ethereum | `0xafc8cf94f8e43e874a1f9a3e19b112305f38c4a7` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xb4c8522c141818a334fa83061182d4ab19fd01ad` | ReserveFund | impl | live | no |
 | ethereum | `0xb5b2367a2d6f6069f1e458467141a89751cb9fb9` | LiquidationLogic-4 | impl | live | no |
-| ethereum | `0xb74749b2213916b1da3b869e41c7c57f1db69393` | ERC1967Upgrade | proxy | live | yes |
+| ethereum | `0xb74749b2213916b1da3b869e41c7c57f1db69393` | Contract | proxy | live | yes |
 | ethereum | `0xb92ac525e5029961f7383449f4f1f6cf4cd7cb26` | TokenFaucet | impl | unknown | no |
 | ethereum | `0xb9e1aff156937ecb0b4d1b8e1e34419c33e9dc79` | OrderActionLogic-5 | impl | live | no |
 | ethereum | `0xbc542b1f3b1e1e69306a7baeb1c59ff7b8a16819` | LendingMarket-5 | impl | live | no |
@@ -101,7 +104,7 @@
 | ethereum | `0xd06dd40ba7c2cff3a6aa2f59c55d249aca57e521` | LendingMarket-6 | impl | live | no |
 | ethereum | `0xd0ae7b08cefee9eda4f8635ebe87ab6f8cf0214c` | LendingMarketController-4 | impl | live | no |
 | ethereum | `0xd0fdb0518c63f7b05766ebc62724e4da2a587b37` | StaticPriceAggregator | impl | live | no |
-| ethereum | `0xd2683e22331b9a6e9f38350d829dbeb64ad2778e` | ERC1967Upgrade | proxy | live | yes |
+| ethereum | `0xd2683e22331b9a6e9f38350d829dbeb64ad2778e` | Contract | proxy | live | yes |
 | ethereum | `0xd4e37bd9e8b95a883158375a5ad6b3a9bf824223` | FundManagementLogic-4 | impl | live | no |
 | ethereum | `0xd60551dc2e7d13fce88aca2c63e6b63be3fd9765` | DepositManagementLogic-4 | impl | live | no |
 | ethereum | `0xd778d1673c160f3ec4113ed8a956ea30d14df7ef` | StaticPriceAggregator | impl | live | no |
@@ -127,9 +130,3 @@
 | ethereum | `0xfc8c59903b064a4abf013ae2757f570f2e007439` | CurrencyController | impl | live | no |
 | ethereum | `0xfcb48a904befc6ed35e8cd08e9355b31b1d55d4e` | ReserveFund-5 | impl | live | no |
 | ethereum | `0xfe622577e607946330d99aefb0ae34b4ce58bb1a` | GenesisValueVault-5 | impl | live | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x35e9d8e0223a75e51a67aa731127c91ea0779fe2`
-- ethereum `0x581e463841bd2b30285929448e1a93d74708719f`

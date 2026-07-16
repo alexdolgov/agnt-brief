@@ -2,5 +2,12 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "init-capital",
-  "missing": []
+  "missing": [
+    {
+      "chain_id": 5000,
+      "chain": "mantle",
+      "address": "0x442d034b4bc112a1194eef8544b2f98b467c4bda",
+      "canonical_source_address": null
+    }
+  ]
 }

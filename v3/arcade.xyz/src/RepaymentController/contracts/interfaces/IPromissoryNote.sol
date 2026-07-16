@@ -1,19 +1,12 @@
-// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
-pragma solidity 0.8.18;
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol";
-
-import "./INFTWithDescriptor.sol";
-
-interface IPromissoryNote is INFTWithDescriptor, IERC721Enumerable {
-    // ============== Token Operations ==============
+interface IPromissoryNote is IERC721 {
+    // Getter for mapping: mapping(uint256 => uint256) public loanIdByNoteId;
+    function loanIdByNoteId(uint256 noteId) external view returns (uint256);
 
     function mint(address to, uint256 loanId) external returns (uint256);
 
     function burn(uint256 tokenId) external;
-
-    // ============== Initializer ==============
-
-    function initialize(address loanCore) external;
 }

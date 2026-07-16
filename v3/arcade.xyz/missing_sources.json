@@ -2,18 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "arcade.xyz",
-  "missing": [
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0x1f563cdd688ad47b75e474fde74e87c643d129b7",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0x24ec19f05fc4a29d49617e1221ce7dc8a1ed5a3d",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

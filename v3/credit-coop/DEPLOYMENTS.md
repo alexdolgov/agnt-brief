@@ -1,6 +1,6 @@
 # credit-coop — deployments
 
-14 verified deployment(s) across 6 component(s).
+15 verified deployment(s) across 6 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -14,6 +14,7 @@
 | base | `0xe2c11985daf500cd4a3571c49cea0f6e041ce960` | LiquidStrategy | impl | live | no |
 | ethereum | `0x6c99a74a62aaf2e6aa3ff08ce7661d5c86e01dbc` | LendingVault | impl | live | no |
 | ethereum | `0x6dacaf632017e2dfc929484606b0feb93088b623` | LendingVault | impl | live | no |
+| ethereum | `0x6df7ff4b8c6743b3ded7bb3c8f21ce7f5b9d11f5` | LiquidStrategy | impl | live | no |
 | ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | FiatTokenProxy | proxy | live | no |
 | ethereum | `0xb8c65ceb54b64950e0d3e80cd5dadcd7ebbeef6d` | LendingVault | impl | live | no |
 | ethereum | `0xd462e8929282495a6f9196c30639cde8d687ac14` | LiquidStrategy | impl | live | no |

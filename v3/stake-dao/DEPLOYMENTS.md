@@ -1,6 +1,6 @@
 # stake-dao — deployments
 
-841 verified deployment(s) across 836 component(s).
+842 verified deployment(s) across 837 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -519,6 +519,7 @@
 | ethereum | `0x73353801921417f465377c8d898c6f4c0270282c` | Keep3rV1Oracle | impl | unknown | no |
 | ethereum | `0x734fd1fd1f3720379f52cb9d8168d76cd1ca4a73` | ComboOracle_KyberSwapElastic | impl | unknown | no |
 | ethereum | `0x7396899638410094b3690f8bd2b56f07fdab620c` | Keep3rV1JobRegistry | impl | unknown | no |
+| ethereum | `0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f` | SDT | impl | live | no |
 | ethereum | `0x73b1b12065d0ae21dff4848d5871ca2a5227889f` | PoolManagerShutdownProxy | impl | unknown | no |
 | ethereum | `0x73b4ffe5334b9b8c7757186871f966d606a437d6` | RateOracleRegistry | impl | unknown | no |
 | ethereum | `0x73f88bfc32f5946b0e0851ca53f277fe177bd87c` | StashFactory | impl | unknown | no |

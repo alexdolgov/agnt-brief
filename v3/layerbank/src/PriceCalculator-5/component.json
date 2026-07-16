@@ -1,8 +1,8 @@
 {
   "component": "PriceCalculator-5",
   "main_contract": "PriceCalculator",
-  "source_entry_count": 10,
-  "source_file_count": 10,
+  "source_entry_count": 12,
+  "source_file_count": 12,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,12 +15,12 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "linea",
-      "chain_id": 59144,
-      "address": "0x35a8c6050591c2f65b3e926b4b2ef825e3766bd6",
+      "chain": "mode",
+      "chain_id": 34443,
+      "address": "0x310e183416d7f266c150e7244733d1dcb1470172",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live",
+      "liveness": null,
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

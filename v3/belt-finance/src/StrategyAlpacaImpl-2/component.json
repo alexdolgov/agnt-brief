@@ -17,7 +17,7 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0xa396039fe325b32fa74391ce49f8fb06e130d2fd",
+      "address": "0x80e00ccedff9328fb0a5d8b4d34fbc03303c30d0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

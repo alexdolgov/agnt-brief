@@ -1,0 +1,28 @@
+{
+  "component": "AmmOpenSwapServiceWstEthBaseV1",
+  "main_contract": "AmmOpenSwapServiceWstEthBaseV1",
+  "source_entry_count": 36,
+  "source_file_count": 36,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AmmOpenSwapServiceWstEthBaseV1\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfbe094bcc8731fa45eb88850592248e5d6ac9472",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

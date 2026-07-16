@@ -1,6 +1,6 @@
 # yieldseeker — deployments
 
-426 verified deployment(s) across 113 component(s).
+428 verified deployment(s) across 115 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -63,6 +63,7 @@
 | base | `0x1a2b34e824b779fcca100eb6ea8a5a82a39dc4e8` | GaugeManager | impl | live | no |
 | base | `0x1ac20bd4e85573abdb4c6bdb47e676541f9d11b9` | GaugeManager-6 | impl | live | no |
 | base | `0x1c4a802fd6b591bb71daa01d8335e43719048b24` | ERC1967Proxy | proxy | live | no |
+| base | `0x1ce58b462284b2ee8084ef36030fe03ae89cf3ec` | YieldSeekerSwapSellPolicy | impl | live | no |
 | base | `0x1d3b1cd0a0f242d598834b3f2d126dc6bd774657` | MetaMorphoV1_1 | impl | live | no |
 | base | `0x1d4f04fc6aeb73907f3984d087a36a38635fb7be` | LeverageTransformer-6 | impl | live | no |
 | base | `0x1e5f25983cf46f86a75b24bbadd7e0a087aa3915` | ERC1967Proxy | proxy | live | no |
@@ -99,6 +100,7 @@
 | base | `0x313409b70a2a6bd149ebe632634659b0dd0b8b2d` | ERC1967Proxy | proxy | live | no |
 | base | `0x31c8ae1e4d7a1788536ac19c92ce3ebae3f4731f` | V3Oracle-6 | impl | live | no |
 | base | `0x31d3c6081d59ed3335ae48b1ea07bf7f809a43c2` | AutoCompound | impl | unknown | no |
+| base | `0x32403455357589523435db18b414057d7ce05051` | YieldSeekerAgentWalletV1 | impl | live | no |
 | base | `0x32eb0ff84ae13fb2d0a7a0d173e69446edbd88c4` | GaugeManager-2 | impl | live | no |
 | base | `0x33a8abf9ebc9d971a231c71402ba90e8d9c901a6` | V3Vault-7 | impl | live | no |
 | base | `0x3411e48290826f47ea376a24d5168bbcd7856b7d` | GaugeManager-12 | impl | live | no |

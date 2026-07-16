@@ -1,6 +1,6 @@
 # fira — deployments
 
-63 verified deployment(s) across 62 component(s).
+65 verified deployment(s) across 64 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -17,6 +17,7 @@
 | ethereum | `0x0d62b4cc02b4b51ed19ddf41d7a7979cf394c99f` | LinearVestV0 | impl | unknown | no |
 | ethereum | `0x0e9ca42bc60be25f9a67f52173067cc0bb405bb5` | LockReleaseTokenPool | impl | unknown | no |
 | ethereum | `0x17ea07eb87bf7b091070999a0d313556d4ac580b` | CouponToken | impl | live | yes |
+| ethereum | `0x2104f638a839ca7260180d9ee7f4865c92df4ce5` | LiquidityInjector | impl | live | no |
 | ethereum | `0x23f20b7ea6194b639f75f2295a8a98ccdf6be18b` | SwapperEngine | impl | unknown | no |
 | ethereum | `0x26227b1f96c773c0ed4c6ea99fc8b0d69efd8d0b` | DaoCollateral | impl | unknown | no |
 | ethereum | `0x2792dad98fd6ba3743ca3484dbc2ce436faa9440` | YieldModule | impl | unknown | no |
@@ -49,6 +50,7 @@
 | ethereum | `0x8cbde23b1416cac07a52591bba744c744d77a91a` | FiatToken | impl | unknown | no |
 | ethereum | `0x95cf8c1cb7d256082eccf71371e50a5dbccc5220` | ClassicalOracle | impl | unknown | no |
 | ethereum | `0x967234d7a4416380107da653e5d3afc9c7bf8874` | ActionMiscV3 | impl | live | no |
+| ethereum | `0x97fd565b913b439ff16774da152b1f71f05a82f1` | SafeProxy | proxy | live | no |
 | ethereum | `0x9d594d1fba500113ede103c071dcf68535da69b4` | Patch0000 | impl | unknown | no |
 | ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | FiatTokenProxy | proxy | live | no |
 | ethereum | `0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf` | FiatTokenV2_1 | impl | unknown | no |

@@ -1,0 +1,28 @@
+{
+  "component": "BondingCalculator",
+  "main_contract": "BondingCalculator",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BondingCalculator\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1285",
+      "chain_id": 1285,
+      "address": "0xd7fe341fce9f3882d57eba5692221877830a5ddd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400195"
+    }
+  ]
+}

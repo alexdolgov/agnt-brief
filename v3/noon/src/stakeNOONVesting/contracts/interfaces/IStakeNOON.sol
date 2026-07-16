@@ -22,12 +22,14 @@ interface IStakeNOON is IERC165, IERC721 {
     error NotOwner();
     error StakeNotFound();
     error StakeNotExpired();
+    error StakeNotWithdrawn();
     error NewStakeMustBeLonger();
     error TransfersNotEnabled();
     error VIPTokensNotTransferable();
     error InvalidVestingContractAddress();
     error VestingContractNotSet();
     error NoVestingSchedulesForStake();
+    error ScheduleNotForStake();
     error InvalidProof();
     error InsufficientClaimableAmount();
     error AlreadyClaimed();
@@ -40,8 +42,10 @@ interface IStakeNOON is IERC165, IERC721 {
     error UnlockAlreadyStarted();
     error UnlockNotStarted();
     error UnlockPeriodNotCompleted();
+    error UnlockNotRequired();
     error VIPStakeInWithdrawingPeriod();
     error CannotIncreaseVIPStakeAmount();
+    error InvalidPercentage();
 
     event VIPUnlockStarted(uint256 indexed tokenId, uint256 startTime);
     event VipUnlockingPeriodUpdated(uint256 newPeriod);
@@ -57,13 +61,17 @@ interface IStakeNOON is IERC165, IERC721 {
     event ClaimAndStaked(address indexed user, uint256 tokenId, uint256 amount, uint256 stakeEnd, uint256 multiplier);
     event MerkleRootUpdated(bytes32 merkleRoot, uint256 totalAmount);
     event StakeAmountIncreased(uint256 indexed tokenId, uint256 additionalAmount, uint256 newTotalAmount);
-    event VestingScheduleCreated(address indexed user, uint256 indexed tokenId, uint256 amount);
     event VestingClaimed(address indexed user, uint256 indexed tokenId, uint256 amount);
     event VIPClaimed(address indexed user, uint256 amount);
+    event WithdrawalRewardClaimed(uint256 indexed tokenId, uint256 rewardAmount);
+    event VipStakePercentageUpdated(uint256 percentage);
+    event VipDirectTransfer(address indexed user, uint256 amount);
+    event VestingClaimFailed(uint256 indexed tokenId);
+    event VestingContractUpdated(address indexed newVestingContract);
 
     function createStake(uint256 amount, uint256 stakeDuration) external returns (uint256);
 
-    function withdraw(uint256 tokenId) external;
+    function withdrawWithReward(uint256 tokenId, uint256 rewardAmount, bytes32[] calldata proof) external;
 
     function getVotingPower(address user) external view returns (uint256);
 
@@ -75,7 +83,15 @@ interface IStakeNOON is IERC165, IERC721 {
 
     function setTransferable(bool _isTransferable) external;
 
-    function increaseStakeAmount(uint256 tokenId, uint256 additionalAmount) external;
+    function updateStake(
+        uint256 tokenId,
+        uint256 additionalAmount,
+        uint256 newStakeDuration,
+        uint256 rewardAmount,
+        bytes32[] calldata proof
+    ) external;
 
     function getVIPUnlockStartTime(uint256 tokenId) external view returns (uint256);
+
+    function claimWithdrawalReward(uint256 tokenId, uint256 rewardAmount, bytes32[] calldata proof) external;
 }

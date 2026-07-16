@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/BasketManager\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://github.com/Storm-Labs-Inc/cove-audits/blob/master/2024-12-23%5FZellic%5FCove.pdf",
@@ -40,6 +40,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "402656"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9219401e7e2e473770e56203e4eeba85083c7f7e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

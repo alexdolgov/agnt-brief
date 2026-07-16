@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/LiquidStrategy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6df7ff4b8c6743b3ded7bb3c8f21ce7f5b9d11f5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393119"
+    },
     {
       "chain": "ethereum",
       "chain_id": 1,

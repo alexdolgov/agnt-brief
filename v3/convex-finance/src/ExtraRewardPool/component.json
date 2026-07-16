@@ -31,10 +31,20 @@
     "build_command": "forge build --root \"src/ExtraRewardPool\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0x757c2375b511f10e6347943a54e3b8f9b1b9137c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "chain-252",
       "chain_id": 252,
@@ -42,6 +52,16 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-252",
+      "chain_id": 252,
+      "address": "0xde6b403c26564694372eb38b571632bee5858d20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

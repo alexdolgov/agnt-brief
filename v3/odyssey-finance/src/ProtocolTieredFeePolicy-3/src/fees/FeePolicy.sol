@@ -11,7 +11,6 @@ abstract contract FeePolicy is IFeePolicy, Initializable {
 
     uint256 constant MAX_FEE = 0.2e18;
 
-    address private positionRegistry__DEPRECATED;
     uint256 public depositFee; // 18 decimals percent (e.g. 0.05 == 5%)
     uint256 public withdrawFee; // 18 decimals percent (e.g. 0.05 == 5%)
 

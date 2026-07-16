@@ -1,6 +1,6 @@
 # arcadia-finance — deployments
 
-201 verified deployment(s) across 164 component(s).
+210 verified deployment(s) across 172 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -33,10 +33,12 @@
 | base | `0x3923820118a3b654644d31653bcc650f655c43a6` | EsComplexRewarder-2 | impl | live | no |
 | base | `0x393893caeb06b5c16728bb1e354b6c36942b1382` | Tranche-3 | impl | live | no |
 | base | `0x3aa57f8a8fac29ce6897212ba950ea433b30b211` | EsComplexRewarder | impl | live | no |
+| base | `0x3ade1f1fdc666b1bfad376345ea878d1c11eb73b` | SlipstreamAM-3 | impl | live | no |
 | base | `0x3ceb26bb6ad94f2dfdd98f10cb4d6caf02bec9dc` | BunniLensV2 | impl | live | no |
 | base | `0x3d3a5ad6d7beab234d7f0338a01e62b1d36d8ea0` | EsToken | impl | live | no |
 | base | `0x3ec4a293fb906dd2cd440c20decb250def141df1` | LendingPool-4 | impl | live | no |
 | base | `0x3f42d7254ed785951885a30e3e86ac1c32252811` | EsComplexRewarder | impl | live | no |
+| base | `0x4200000000000000000000000000000000000006` | WETH9-2 | impl | live | no |
 | base | `0x436325b40fa6c3aa7fad7c320cc7f40fc6fa80b5` | ArcadiaTiers | impl | live | no |
 | base | `0x467837f44a71e3eab90aecfc995c84dc6b3cfcf7` | CompounderSlipstream-4 | impl | live | no |
 | base | `0x4a023efe4b5cd304e800f29074186164fda36978` | EsToken | impl | live | no |
@@ -88,11 +90,13 @@
 | base | `0xc741beb2156827704a1466575cca1cbf726a1178` | NonfungiblePositionManager-4 | proxy | live | no |
 | base | `0xc8bf4b2c740ff665864e9494832520f18822871c` | YieldClaimerSlipstream | impl | live | no |
 | base | `0xc928013a219ec9f18de7b2dee6a50ba626811854` | CowSwapper-2 | impl | live | yes |
+| base | `0xcaf4167de878cfb23d9912b1ff5869f2b3527189` | SlipstreamAM | impl | live | no |
 | base | `0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf` | AdminUpgradeabilityProxy-3 | proxy | live | no |
 | base | `0xcbbb8035cac7d4b3ca7abb74cf7bdf900215ce0d` | SwapRouter-4 | impl | live | no |
 | base | `0xccc21f4750e8b3e9c095bcb5d2ff59247a2ccd35` | CustomUnstakedFeeModule | impl | live | no |
 | base | `0xcf77a3ba9a5ca399b7c97c74d54e5b1beb874e43` | Router-2 | impl | live | no |
 | base | `0xd1fac4f51457e4a6d35bdc7311718e5d6de92bb9` | BunniHubA | impl | live | no |
+| base | `0xd3a7055bbcda4f8f49e5c5de7e83b09a33633f44` | SlipstreamAM-4 | impl | live | no |
 | base | `0xd42a3ac56456bd5422835b36c35cacb6448ddcd9` | CompounderSlipstream-5 | impl | live | no |
 | base | `0xd74339e0f10fce96894916b93e5cc7de89c98272` | WrappedStakedSlipstream-4 | impl | live | no |
 | base | `0xd82bfa27d49e5a394ba371b293dae65e9b7a8c60` | TrancheWrapper-3 | impl | live | no |
@@ -123,6 +127,7 @@
 | chain-130 | `0x354dbba1348985cc952c467b8ddaf5dd07590667` | RouterTrampoline-2 | impl | live | no |
 | chain-130 | `0x393893caeb06b5c16728bb1e354b6c36942b1382` | Tranche-2 | impl | live | no |
 | chain-130 | `0x3ec4a293fb906dd2cd440c20decb250def141df1` | LendingPool | impl | live | no |
+| chain-130 | `0x4200000000000000000000000000000000000006` | WETH | impl | live | no |
 | chain-130 | `0x4529a01c7a0410167c5740c487a8de60232617bf` | PositionManager | proxy | live | no |
 | chain-130 | `0x467837f44a71e3eab90aecfc995c84dc6b3cfcf7` | CompounderSlipstream-2 | impl | live | no |
 | chain-130 | `0x5802454749cc0c4a6f28d5001b4cd84432e2b79f` | RebalancerSlipstream | impl | live | no |
@@ -142,6 +147,7 @@
 | chain-130 | `0xbc10718571fcb3c3f67800e7c0887e450d2ff398` | TrancheWrapper-2 | impl | live | no |
 | chain-130 | `0xbea2b6d45acaf62385877d835970a0788719cae1` | AccountPlaceholder-2 | impl | live | no |
 | chain-130 | `0xd0690557600eb8be8391d1d97346e2aab5300d5f` | RegistryL1 | impl | live | yes |
+| chain-130 | `0xd3a7055bbcda4f8f49e5c5de7e83b09a33633f44` | SlipstreamAM-2 | impl | live | no |
 | chain-130 | `0xd74339e0f10fce96894916b93e5cc7de89c98272` | WrappedStakedSlipstream-2 | impl | live | no |
 | chain-130 | `0xd82bfa27d49e5a394ba371b293dae65e9b7a8c60` | TrancheWrapper-2 | impl | live | no |
 | chain-130 | `0xd8aa21ab7f9b8601cb7d7a776d3afa1602d5d8d4` | YieldClaimerUniswapV4-2 | impl | live | no |
@@ -162,9 +168,11 @@
 | optimism | `0x2529ae4a3c9d3285dd06cadfc8516d3fabd6240b` | AccountsGuard | impl | live | no |
 | optimism | `0x354dbba1348985cc952c467b8ddaf5dd07590667` | RouterTrampoline | impl | live | no |
 | optimism | `0x393893caeb06b5c16728bb1e354b6c36942b1382` | Tranche | impl | live | no |
+| optimism | `0x3c3ea4b57a46241e54610e5f022e5c45859a1017` | PositionManager-2 | impl | live | no |
 | optimism | `0x3ec4a293fb906dd2cd440c20decb250def141df1` | LendingPool-2 | impl | live | no |
 | optimism | `0x416b433906b1b72fa758e166e239c43d68dc6f29` | NonfungiblePositionManager-5 | proxy | live | no |
 | optimism | `0x41c914ee0c7e1a5edcd0295623e6dc557b5abf3c` | Voter | impl | live | no |
+| optimism | `0x4200000000000000000000000000000000000006` | WETH9 | impl | live | no |
 | optimism | `0x467837f44a71e3eab90aecfc995c84dc6b3cfcf7` | CompounderSlipstream | impl | live | no |
 | optimism | `0x4bf3e32de155359d1d75e8b474b66848221142fc` | UniversalRouter | impl | live | no |
 | optimism | `0x5802454749cc0c4a6f28d5001b4cd84432e2b79f` | RebalancerSlipstream-2 | impl | live | no |
@@ -193,6 +201,7 @@
 | optimism | `0xc36442b4a4522e871399cd717abdd847ab11fe88` | NonfungiblePositionManager-2 | proxy | live | no |
 | optimism | `0xc4d3d804ed64c1f78097799208d46b1db4252749` | WrappedStakedSlipstream | impl | live | no |
 | optimism | `0xd0690557600eb8be8391d1d97346e2aab5300d5f` | RegistryL2 | impl | live | no |
+| optimism | `0xd3a7055bbcda4f8f49e5c5de7e83b09a33633f44` | SlipstreamAM | impl | live | no |
 | optimism | `0xd74339e0f10fce96894916b93e5cc7de89c98272` | WrappedStakedSlipstream | impl | live | no |
 | optimism | `0xd82bfa27d49e5a394ba371b293dae65e9b7a8c60` | TrancheWrapper | impl | live | no |
 | optimism | `0xd8aa21ab7f9b8601cb7d7a776d3afa1602d5d8d4` | YieldClaimerUniswapV4 | impl | live | no |

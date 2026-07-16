@@ -1,0 +1,43 @@
+{
+  "component": "Contract",
+  "main_contract": "Contract",
+  "source_entry_count": 15,
+  "source_file_count": 15,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/stakehouse-dev/Audits/blob/main/Certora_Stakehouse_Report.pdf",
+    "https://github.com/stakehouse-dev/Audits/blob/main/Halborn_Stakehouse_Smart_Contract_Security_Audit_Report.pdf",
+    "https://github.com/stakehouse-dev/Audits/blob/main/Runtime_Verification_Stakehouse_Smart_Contracts_2nd_Audit_Report.pdf",
+    "https://github.com/stakehouse-dev/Audits/blob/main/Runtime_Verification_Stakehouse_Smart_Contracts_Audit_Report.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8035a7ab484d57a5a82469e0d6a38b2c942afbef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc6306c52ea0405d3630249f202751ae3043056bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

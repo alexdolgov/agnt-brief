@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 /**
  * @title IFleetCommanderConfigProviderErrors
@@ -38,7 +38,20 @@ interface IFleetCommanderConfigProviderErrors {
     error FleetCommanderInvalidArkAddress();
 
     /**
-     * @notice Thrown when trying to add a commander to an Ark that already has a commander
+     * @notice Thrown when trying to set a StakingRewardsManager to the zero address
      */
-    error FleetCommanderArkAlreadyHasCommander();
+    error FleetCommanderInvalidStakingRewardsManager();
+
+    /**
+     * @notice Thrown when trying to set a max rebalance operations to a value greater than the max allowed
+     * @param newMaxRebalanceOperations The new max rebalance operations value
+     */
+    error FleetCommanderMaxRebalanceOperationsTooHigh(
+        uint256 newMaxRebalanceOperations
+    );
+
+    /**
+     * @notice Thrown when the asset of the Ark does not match the asset of the FleetCommander
+     */
+    error FleetCommanderAssetMismatch();
 }

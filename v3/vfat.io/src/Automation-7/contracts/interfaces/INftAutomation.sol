@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import { IUniswapV3Pool } from
-    "contracts/interfaces/external/uniswap/IUniswapV3Pool.sol";
 import { Sickle } from "contracts/Sickle.sol";
 import {
     NftPosition,

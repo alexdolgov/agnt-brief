@@ -1,0 +1,30 @@
+{
+  "component": "Contract-3",
+  "main_contract": "Contract",
+  "source_entry_count": 16,
+  "source_file_count": 16,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/enzymefinance/protocol/blob/v4/audits/2022-05-CS-curve-fixes-maple-shares-splitter-convex-voting-paraswap-fee-liquity-graph-delegation.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x12fa6805a1ff2d21318dcbcf677712bde8a033e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

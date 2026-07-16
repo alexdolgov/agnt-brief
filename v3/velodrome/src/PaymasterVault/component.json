@@ -1,0 +1,48 @@
+{
+  "component": "PaymasterVault",
+  "main_contract": "PaymasterVault",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PaymasterVault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x479bec910d4025b4ac440ec27acf28eac522242b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400772"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x916e0ad2d7e3f446a26b0333ca37a9e8972030c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400781"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xb9d32bf44a71bc0a383bd2061584e98a1e09c8d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400788"
+    }
+  ]
+}

@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/CoreBorrow\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "gnosis",
-      "chain_id": 100,
-      "address": "0x31429d1856ad1377a8a0079410b297e1a9e214c2",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5183f032bf42109cd370b9559fd22207e432301e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5183f032bf42109cd370b9559fd22207e432301e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391116"
     }
   ]
 }

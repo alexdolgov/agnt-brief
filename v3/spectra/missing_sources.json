@@ -2,12 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "spectra",
-  "missing": [
-    {
-      "chain_id": 8453,
-      "chain": "base",
-      "address": "0x0b8742710a7120d409ecb5b8df7ee9da75c548da",
-      "canonical_source_address": "0xf19eaaab5432086eeedc7e5e24007202da2b5420"
-    }
-  ]
+  "missing": []
 }

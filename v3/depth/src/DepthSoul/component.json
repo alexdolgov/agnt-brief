@@ -1,0 +1,28 @@
+{
+  "component": "DepthSoul",
+  "main_contract": "DepthSoul",
+  "source_entry_count": 16,
+  "source_file_count": 16,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/DepthSoul\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-2741",
+      "chain_id": 2741,
+      "address": "0x7c0bab11b67ac041c2ff870ef2f7807428ae4cb2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393517"
+    }
+  ]
+}

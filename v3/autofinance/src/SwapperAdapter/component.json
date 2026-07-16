@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/SwapperAdapter\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x833adb5f597ef5f257914ff9f7f227812bd3d4e3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "chain-9745",
       "chain_id": 9745,

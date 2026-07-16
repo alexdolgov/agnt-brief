@@ -763,7 +763,7 @@ contract Router02 is IRouter02, ITarotCallee {
                         hex"ff",
                         cDeployer,
                         keccak256(abi.encodePacked(factory, underlying)),
-                        hex"5caf389f3c99ab6804e0c6a0ca7534b4e4d69ee703e936e8cb04b655b536e213" // Collateral bytecode keccak256
+                        hex"3221282817c301cb19a0abc531367b97206a146ef7ccb701c62ab5d18c6124eb" // Collateral bytecode keccak256
                     )
                 )
             )

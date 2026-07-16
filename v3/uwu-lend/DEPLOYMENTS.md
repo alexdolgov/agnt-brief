@@ -1,6 +1,6 @@
 # uwu-lend — deployments
 
-98 verified deployment(s) across 53 component(s).
+115 verified deployment(s) across 64 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -21,18 +21,25 @@
 | ethereum | `0x2409af0251dcb89ee3dee572629291f9b087c668` | DefaultReserveInterestRateStrategy | proxy | live | yes |
 | ethereum | `0x24179cd81c9e782a4096035f7ec97fb8b783e007` | BorrowerOperations | impl | live | no |
 | ethereum | `0x243387a7036bfcb09f9bf4eced1e60765d31aa70` | DefaultReserveInterestRateStrategy | proxy | live | yes |
+| ethereum | `0x24911dad45220af2f258fa2434ac51e7b979215b` | IncentivesControllerV3 | impl | inactive | no |
 | ethereum | `0x24959f75d7bda1884f1ec9861f644821ce233c7d` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | yes |
 | ethereum | `0x26fa3fffb6efe8c1e69103acb4044c26b9a106a9` | sSpellV1 | impl | live | no |
 | ethereum | `0x29127fe04ffa4c32acac0ffe17280abd74eac313` | TokenMintERC20Token | impl | live | no |
+| ethereum | `0x29a906316ad99270f294ef779fa61589f5b184bd` | MultiFeeDistributionV3 | impl | inactive | no |
 | ethereum | `0x29d567fa37b4af64dd1b886571cd1ff5d403ac3f` | DefaultReserveInterestRateStrategy | proxy | live | yes |
 | ethereum | `0x2e9f846ce3820531b52c08d3d4543be5c8fe7ddb` | LendingPoolCollateralManager | impl | live | no |
 | ethereum | `0x2fd22a9db5e07bfff9145e549c463967864d7d2f` | WETHGateway | impl | live | no |
+| ethereum | `0x34a7db36d435e3404b82dfd338d48255e1e4a3ec` | LendingPoolAddressesProviderRegistry | impl | inactive | no |
 | ethereum | `0x39a873f3f60bb4cd81fe46f3beb6285bdb7726b9` | AToken | proxy | live | yes |
+| ethereum | `0x3b79a28264fc52c7b4cea90558aa0b162f7faf57` | AnyswapV5ERC20 | impl | live | no |
 | ethereum | `0x3c0ada81038a078cc1272ac22745ddd1ab8839af` | DefaultReserveInterestRateStrategy | impl | live | yes |
 | ethereum | `0x3d32e8b97ed5881324241cf03b2da5e2ebce5521` | CollSurplusPool | impl | live | no |
 | ethereum | `0x3e04863dba602713bb5d0edbf7db7c3a9a2b6027` | UniswapV2Pair | impl | live | no |
 | ethereum | `0x408c9764993209dc772eb12ff641f4b55f5b005c` | AToken | proxy | live | yes |
 | ethereum | `0x40daf7be3a99b898f54fb7968d16db5103835347` | DefaultReserveInterestRateStrategy | impl | live | yes |
+| ethereum | `0x413a1f0098a8c5ba1078552af515bd0146522fe4` | LendingRateOracle | impl | live | no |
+| ethereum | `0x415243c28ee353c0c5dd3ba76d3e011114560ec3` | IncentivesControllerV3-2 | impl | inactive | no |
+| ethereum | `0x4392393bc2e46d528ad1a891ea9d78f7cbe9ccca` | LendingPoolAddressesProviderRegistry | impl | inactive | no |
 | ethereum | `0x453842ba9dcd4569407b2adedeb8636314d023d3` | AToken | proxy | live | yes |
 | ethereum | `0x4be75900f8a54d7d5962e950f3af98d61f8fbdd9` | ReserveLogic | impl | live | yes |
 | ethereum | `0x4c9edd5852cd905f086c759e8383e09bff1e68b3` | USDe | impl | live | no |
@@ -43,11 +50,13 @@
 | ethereum | `0x51e0f19bf0b765bc55724c7374fe00ab229427d9` | AToken | proxy | live | yes |
 | ethereum | `0x55c08ca52497e2f1534b59e2917bf524d4765257` | UwU | impl | live | no |
 | ethereum | `0x57619fe9c539f890b19c61812226f9703ce37137` | ChickenBondManager | impl | live | no |
+| ethereum | `0x5938999dd0cc4d480c3b1a451aecc78ae4ddaab5` | SifuM | impl | live | no |
 | ethereum | `0x5c8cb0e43cb17553ab4a37011c3dc743aeb3f241` | AToken | proxy | live | yes |
 | ethereum | `0x5f98805a4e8be255a32880fdec7f6728c6568ba0` | LUSDToken | impl | live | no |
 | ethereum | `0x630de1180a22e76e70e041da5eb9b676ce2bdd44` | MultiFeeDistributionV3 | impl | live | no |
 | ethereum | `0x64e4843ffdfb62d205b049ddbe8b949534e4e2d4` | AToken | proxy | live | yes |
 | ethereum | `0x66017d22b0f8556afdd19fc67041899eb65a21bb` | StabilityPool | impl | live | no |
+| ethereum | `0x668b234b42deb9d8607271428bc1cfd23f0dd9ef` | LendingPoolAddressesProviderRegistry | impl | inactive | no |
 | ethereum | `0x67bd2425823614a8d0a90c467cf36c34db30edab` | Migration | impl | live | no |
 | ethereum | `0x67fadbd9bf8899d7c578db22d7af5e2e500e13e5` | AToken | proxy | live | yes |
 | ethereum | `0x690dcb18c1a56cd2711102c2427729739dff494a` | DefaultReserveInterestRateStrategy-2 | impl | live | no |
@@ -59,10 +68,14 @@
 | ethereum | `0x7c0bf1108935e7105e218bbb4f670e5942c5e237` | MultiFeeDistribution | impl | live | yes |
 | ethereum | `0x8028ea7da2ea9bcb9288c1f6f603169b8aea90a6` | AToken | proxy | live | yes |
 | ethereum | `0x82a49c799c4ca5bdb629bcd6107737a3de8d2805` | AToken | proxy | live | yes |
+| ethereum | `0x83f20f44975d03b1b09e64809b757c47f942beea` | SavingsDai | impl | live | no |
+| ethereum | `0x843a69bf787d260a42c0c54f1fd0e563ccff16d8` | LendingPoolAddressesProviderRegistry | impl | inactive | no |
 | ethereum | `0x853d955acef822db058eb8505911ed77f175b99e` | FRAXStablecoin | impl | live | no |
 | ethereum | `0x8c240c385305aeb2d5ceb60425aabcb3488fa93d` | AToken | proxy | live | yes |
+| ethereum | `0x8c7f54a2fb90c9366e3fa8b31af47c0dd357aedf` | IncentivesControllerV3-3 | impl | inactive | no |
 | ethereum | `0x8dd09822e83313adca54c75696ae80c5429697ff` | Sifu | impl | live | no |
 | ethereum | `0x9203a201800c95399e66ebcdd2fe42ba81cf1a9c` | DefaultReserveInterestRateStrategy-2 | impl | live | no |
+| ethereum | `0x93ad34560df42bd90f608ceb7872b8cc80dd453a` | IncentivesControllerV3-4 | impl | inactive | no |
 | ethereum | `0x97bf1ff371ceabbb9e821480d31dd743c4b71e0e` | DSToken | impl | live | no |
 | ethereum | `0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3` | MagicInternetMoneyV1 | impl | live | no |
 | ethereum | `0x9abe34021128c17de3c2180a02932eb5e1bb18ef` | AToken | proxy | live | yes |
@@ -78,16 +91,19 @@
 | ethereum | `0xaede01960810a655aecf86278bfdf5c968198b89` | LendingPool | impl | live | yes |
 | ethereum | `0xb87872e3ef8916e9606231cab8787712ab5543b0` | DefaultReserveInterestRateStrategy-2 | impl | live | no |
 | ethereum | `0xb95bd0793bcc5524af358ffaae3e38c3903c7626` | AToken | proxy | live | yes |
+| ethereum | `0xb9d7dddca9a4ac480991865efef82e01273f79c3` | BLUSDToken | impl | live | no |
 | ethereum | `0xb9e8bcd56f26b0540989a66aa24d431cdb0affa0` | AToken | proxy | live | yes |
 | ethereum | `0xba285ed9a1fc13b4860e2d2cb8910bcd1be9e6a6` | DefaultReserveInterestRateStrategy | impl | live | yes |
 | ethereum | `0xbac9d17f290260a1d5f1b69cac84dba6b4488d66` | AToken | proxy | live | yes |
 | ethereum | `0xbcdad8dedff0bdf425bbf7cb5970157da492279a` | StableAndVariableTokensHelper | impl | live | no |
+| ethereum | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | WETH9 | impl | live | no |
 | ethereum | `0xc480a11a524e4db27c6d4e814b4d9b3646bc12fc` | AToken | proxy | live | yes |
 | ethereum | `0xc4bf704f51aa4ce1aa946ffe15646f9b271ba0fa` | AToken | proxy | live | yes |
 | ethereum | `0xc818d61b4e601ab5c957c7f9ec0cf65e387a89c5` | DefaultReserveInterestRateStrategy-2 | impl | live | no |
 | ethereum | `0xcc80c051057b774cd75067dc48f8987c4eb97a5e` | NEC | impl | live | no |
 | ethereum | `0xd1e6b03bf65b381cbdeccf275535d40d4c3510e2` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | yes |
 | ethereum | `0xd37a77e71ddf3373a79be2ebb76b6c4808bdf0d5` | Unipool | impl | live | no |
+| ethereum | `0xd533a949740bb3306d119cc777fa900ba034cd52` | Vyper_contract | impl | live | no |
 | ethereum | `0xd5bfd3d736477f48efc873ee464f4a8b5447850b` | DefaultReserveInterestRateStrategy | proxy | live | yes |
 | ethereum | `0xd7f6e4e10fd1e7faf642fa924c5ea2b6c5450d11` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | yes |
 | ethereum | `0xdac17f958d2ee523a2206206994597c13d831ec7` | TetherToken | impl | live | no |
@@ -102,3 +118,4 @@
 | ethereum | `0xf1293141fc6ab23b2a0143acc196e3429e0b67a6` | InitializableImmutableAdminUpgradeabilityProxy | proxy | live | yes |
 | ethereum | `0xf15ca7550959b8541dbff631fc7aac65088c1836` | DefaultReserveInterestRateStrategy-3 | impl | live | no |
 | ethereum | `0xf8390b84533db97d3e415b4c7bf4251953d6c568` | IncentivesControllerV3 | impl | live | no |
+| ethereum | `0xf939e0a03fb07f59a73314e73794be0e57ac1b4e` | crvUSD_Stablecoin | impl | live | no |

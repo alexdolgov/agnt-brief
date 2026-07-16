@@ -1,0 +1,38 @@
+{
+  "component": "WooAccessManager-2",
+  "main_contract": "WooAccessManager",
+  "source_entry_count": 5,
+  "source_file_count": 5,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/WooAccessManager-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x925afa2318825fcac673ef4ef551208b125dd965",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401157"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd14a997308f9e7514a8fea835064d596cdcaa99e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401304"
+    }
+  ]
+}

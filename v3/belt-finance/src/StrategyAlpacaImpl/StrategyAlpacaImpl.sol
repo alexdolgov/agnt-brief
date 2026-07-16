@@ -1,4 +1,4 @@
-// File: @openzeppelin/contracts/utils/Context.sol
+// File: node_modules\@openzeppelin\contracts\utils\Context.sol
 
 // SPDX-License-Identifier: MIT
 
@@ -25,9 +25,7 @@ abstract contract Context {
     }
 }
 
-// File: @openzeppelin/contracts/access/Ownable.sol
-
-
+// File: @openzeppelin\contracts\access\Ownable.sol
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -95,9 +93,7 @@ abstract contract Ownable is Context {
     }
 }
 
-// File: @openzeppelin/contracts/utils/ReentrancyGuard.sol
-
-
+// File: @openzeppelin\contracts\utils\ReentrancyGuard.sol
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -160,9 +156,7 @@ abstract contract ReentrancyGuard {
     }
 }
 
-// File: @openzeppelin/contracts/utils/Pausable.sol
-
-
+// File: @openzeppelin\contracts\utils\Pausable.sol
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -252,7 +246,7 @@ abstract contract Pausable is Context {
     }
 }
 
-// File: contracts/earnV2/strategies/Strategy.sol
+// File: contracts\earnV2\strategies\Strategy.sol
 
 pragma solidity 0.6.12;
 
@@ -275,7 +269,7 @@ abstract contract Strategy is Ownable, ReentrancyGuard, Pausable {
     uint256 public withdrawFeeDenom = 100;
 }
 
-// File: contracts/earnV2/strategies/alpaca/StrategyAlpacaStorage.sol
+// File: contracts\earnV2\strategies\alpaca\StrategyAlpacaStorage.sol
 
 pragma solidity 0.6.12;
 
@@ -313,9 +307,7 @@ abstract contract StrategyAlpacaStorage is Strategy {
     address public buyBackPoolAddress;
 }
 
-// File: @openzeppelin/contracts/token/ERC20/IERC20.sol
-
-
+// File: @openzeppelin\contracts\token\ERC20\IERC20.sol
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -393,8 +385,7 @@ interface IERC20 {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
 
-// File: contracts/earnV2/defi/alpaca.sol
-
+// File: contracts\earnV2\defi\alpaca.sol
 
 pragma solidity 0.6.12;
 
@@ -418,7 +409,7 @@ interface FairLaunch {
 interface AlpacaToken is IERC20 {
 }
 
-// File: contracts/earnV2/defi/pancake.sol
+// File: contracts\earnV2\defi\pancake.sol
 
 pragma solidity 0.6.12;
 
@@ -464,7 +455,7 @@ interface IPancakeRouter02 is IPancakeRouter01 {
 
 }
 
-// File: contracts/interfaces/Wrapped.sol
+// File: contracts\interfaces\Wrapped.sol
 
 pragma solidity 0.6.12;
 
@@ -488,9 +479,8 @@ interface IUnwrapper {
     function unwrapBNB(uint256) external;
 }
 
-// File: @openzeppelin/contracts/math/SafeMath.sol
 
-
+// File: node_modules\@openzeppelin\contracts\math\SafeMath.sol
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -705,8 +695,7 @@ library SafeMath {
     }
 }
 
-// File: @openzeppelin/contracts/utils/Address.sol
-
+// File: node_modules\@openzeppelin\contracts\utils\Address.sol
 
 
 pragma solidity >=0.6.2 <0.8.0;
@@ -897,9 +886,7 @@ library Address {
     }
 }
 
-// File: @openzeppelin/contracts/token/ERC20/SafeERC20.sol
-
-
+// File: @openzeppelin\contracts\token\ERC20\SafeERC20.sol
 
 pragma solidity >=0.6.0 <0.8.0;
 
@@ -974,7 +961,7 @@ library SafeERC20 {
     }
 }
 
-// File: contracts/earnV2/strategies/alpaca/StrategyAlpacaImpl.sol
+// File: contracts\earnV2\strategies\alpaca\StrategyAlpacaImpl.sol
 
 pragma solidity 0.6.12;
 
@@ -1039,7 +1026,8 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
         FairLaunch(fairLaunchAddress).deposit(address(this), poolId, Vault(vaultAddress).balanceOf(address(this)));
     }
 
-    function earn() external whenNotPaused onlyEOA {
+    function earn(uint256 _minAmount) external whenNotPaused {
+        require(msg.sender == govAddress, "Not authorised");
         FairLaunch(fairLaunchAddress).harvest(poolId);
 
         uint256 earnedAmt = AlpacaToken(alpacaAddress).balanceOf(address(this));
@@ -1048,10 +1036,10 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
         if (alpacaAddress != wantAddress) {
             IPancakeRouter02(uniRouterAddress).swapExactTokensForTokens(
                 earnedAmt,
-                0,
+                _minAmount,
                 alpacaToWantPath,
                 address(this),
-                now.add(600)
+                now
             );
         }
 
@@ -1104,6 +1092,7 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
                 .mul(buyBackPoolRate)
                 .div(buyBackRate.add(buyBackPoolRate));
             if (burnAmt != 0) {
+                require(buyBackPoolAddress != address(0));
                 IERC20(BELTAddress).safeTransfer(buyBackPoolAddress, burnAmt);
                 emit BuybackWant(wantAddress, _earnedAmt, buyBackAmt, BELTAddress, burnAmt, buyBackPoolAddress);
             }
@@ -1135,6 +1124,7 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
             .mul(buyBackPoolRate)
             .div(buyBackRate.add(buyBackPoolRate));
         if (burnAmt != 0) {
+            require(buyBackPoolAddress != address(0));
             IERC20(BELTAddress).safeTransfer(buyBackPoolAddress, burnAmt);
             emit Buyback(alpacaAddress, _earnedAmt, buyBackAmt, BELTAddress, burnAmt, buyBackPoolAddress);
         }

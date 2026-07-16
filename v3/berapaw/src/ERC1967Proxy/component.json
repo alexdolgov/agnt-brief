@@ -1,0 +1,54 @@
+{
+  "component": "ERC1967Proxy",
+  "main_contract": "ERC1967Proxy",
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Proxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://drive.google.com/file/d/1-QYOlw-qVZRdeFvqeNrqwFHh27zhjojC/view?usp=drive_link",
+    "https://drive.google.com/file/d/18EWumO-MPJrPbNMDQvWrT6mYXlFZGupw/view?usp=drive_link",
+    "https://drive.google.com/file/d/1DxzKgFjstAunklmUoHKFwY2z_uWfcysk/view?usp=drive_link",
+    "https://drive.google.com/file/d/1G43j12bsHnqktqF75Z1Bu2aaUh1Hekad/view?usp=drive_link",
+    "https://drive.google.com/file/d/1lbUUP96kl8Z2Hba8aIEeLS8g8wtAJKTb/view?usp=drive_link"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x4b1d14c4fea305c4144b51ee64141567a0f0b00b",
+      "is_proxy": true,
+      "implementation_address": "0x99702eba8d441664af945fc48fe416ecf9098980",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402492"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xe3e61dbb030998110b91c0d1de8215db761f52c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0xfeedb9750d6ac77d2e52e0c9eb8fb79f9de5cafe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

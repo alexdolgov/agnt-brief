@@ -10,13 +10,23 @@
     "build_command": "forge build --root \"src/ERC1967Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://1433280965-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FC2o2dJlijOInJR8UAhrX%2Fuploads%2Fp1lutmFVHrdK8qIa7Cwu%2FThUSD%20-%20Zellic%20Audit%20Report.pdf",
     "https://github.com/Zellic/publications/blob/master/ThUSD%20-%20Zellic%20Audit%20Report.pdf"
   ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5fa487bca6158c64046b2813623e20755091da0b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404167"
+    },
     {
       "chain": "ethereum",
       "chain_id": 1,

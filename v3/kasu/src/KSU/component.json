@@ -1,0 +1,28 @@
+{
+  "component": "KSU",
+  "main_contract": "KSU",
+  "source_entry_count": 17,
+  "source_file_count": 17,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/KSU\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7923837dc93d897e12696e0f4fd50b51fbacf693",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395570"
+    }
+  ]
+}

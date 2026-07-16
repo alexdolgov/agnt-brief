@@ -1,11 +1,12 @@
 # hyperbeat — deployments
 
-259 verified deployment(s) across 55 component(s).
+267 verified deployment(s) across 63 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | chain-999 | `0x0058fa9192f7829b52316096456e98d83980b7a8` | Depositor | impl | live | no |
 | chain-999 | `0x0126c0bc7b1dca51e1b9c7293f393f57c0715105` | DepositReceiver | impl | live | no |
+| chain-999 | `0x042e8217be08dac98aaaee834d47ea3a7f77ba34` | wVLP | impl | live | no |
 | chain-999 | `0x059d7a4d777aa7bd87edbea070c5dc5f88cf6ce6` | Pricer-2 | impl | live | no |
 | chain-999 | `0x060690ec182a5a61f5cdfa0aefae058e04342312` | MultiRolesAuthority | impl | live | no |
 | chain-999 | `0x06a76e722ef59fe830db23feea1c475bfe2eb60d` | HBUsdtDepositVault | impl | live | no |
@@ -115,6 +116,7 @@
 | chain-999 | `0x6b1331d4e885ae3143ee23726573acadabe2e137` | LiquidHypeRedemptionVaultWithSwapper | impl | live | no |
 | chain-999 | `0x6b68c4459e0f76244e4f0a87e3202d31869c1089` | WithdrawalQueue | impl | live | no |
 | chain-999 | `0x6c042edd73f1f7e8e9b716505efefc0020c6fc6e` | DepositReceiver | impl | live | no |
+| chain-999 | `0x6d684992f8d105b33f9b1bbaa77bdd0e0f71f585` | liquidHYPE | impl | live | no |
 | chain-999 | `0x6ff429955ce15b85b8a820d45acb47614024be21` | Depositor | impl | live | no |
 | chain-999 | `0x70bc294f3a2937af8fcc8448817352c168109f39` | WithdrawalQueue | impl | live | no |
 | chain-999 | `0x712eb0d313e99c8f6f33f2be4d7b6ce0091a3b38` | DnHypeDepositVault | impl | live | no |
@@ -126,7 +128,9 @@
 | chain-999 | `0x75b6f098a6fd7d50e21e903c7f246f04d2bcfc16` | LstHypeRedemptionVaultWithSwapper | impl | live | no |
 | chain-999 | `0x75eac60b245c2a186521d85203f26feb249bdc30` | DnCoreWriterVault | impl | live | no |
 | chain-999 | `0x763ab4504a61dd36cfcb933c73450395a1bfa215` | MultiRolesAuthority | impl | live | no |
+| chain-999 | `0x76a20173c5792c04a9cc6754d7e888ac84c54871` | hbUSDC | impl | live | no |
 | chain-999 | `0x76a48c429a48346cb5b80544bffc8132a30defa8` | Depositor | impl | live | no |
+| chain-999 | `0x77b13307d6a36511ee7d887ae7ae9eb28e78e690` | hbUSDT | impl | live | no |
 | chain-999 | `0x77ce3e36ee2b58547f17c93f8ebbfdad13bc195b` | ExchangeRateUpdater | impl | live | no |
 | chain-999 | `0x786108769ff049c70be52bc36bf1bb559642d523` | MultiRolesAuthority | impl | live | no |
 | chain-999 | `0x7881b0280a25bbbb59bf00fea5d4aefbec42c489` | Pricer | impl | live | no |
@@ -134,8 +138,10 @@
 | chain-999 | `0x79285f2a44db96e477ec8ebbe26a12edb47ae5b6` | MultiRolesAuthority | impl | live | no |
 | chain-999 | `0x7abf6da6c2c131b58c1f4cb3947b0cfe2edc1c2a` | DepositReceiver | impl | live | no |
 | chain-999 | `0x7b12a82266d57664f335cdc03905361eebff9fa2` | MultiRolesAuthority | impl | live | no |
+| chain-999 | `0x7b5bd5a38677a5355a54adc9b3113c3023709d03` | lstHYPE | impl | live | no |
 | chain-999 | `0x7e89acffac47435778dd158aa622a150de045e10` | BeatPotWithdrawalQueue | impl | live | yes |
 | chain-999 | `0x81956faa91751046f33bfb2588c97f427b3feb29` | DnCoreWriterVault | impl | live | no |
+| chain-999 | `0x8211c4c0015ffc4edd4799aeb2478552ceac1523` | hbXAUt | impl | live | no |
 | chain-999 | `0x82999519c6f7012037375e4930f59474cd27c4eb` | MultiRolesAuthority | impl | live | no |
 | chain-999 | `0x8315ff03a06e8af86e649757337d7cea37dbfd76` | Depositor-2 | impl | live | no |
 | chain-999 | `0x842537e39d618cb485d163793906d94bebff4b5a` | VaultToken | impl | live | yes |
@@ -215,6 +221,7 @@
 | chain-999 | `0xcb45612ce6b0d874898fe22031a7726227c7b078` | Pricer-3 | impl | live | no |
 | chain-999 | `0xccbc13af723bee139a5cc48f0c7169a56e10d2d3` | Depositor | impl | live | no |
 | chain-999 | `0xcd867efcdd92c18b0e18e6331940b3cb0e94ada0` | VaultToken | impl | live | yes |
+| chain-999 | `0xce3f7652c12f03ca5482318ac142045741f1ceee` | dnPUMP | impl | live | no |
 | chain-999 | `0xcead893b162d38e714d82d06a7fe0b0dc3c38e0b` | UUPSProxy | proxy | live | yes |
 | chain-999 | `0xd08a65fb49efba8c4132f383e7949cbb79eaf45a` | ExchangeRateUpdater-2 | impl | live | no |
 | chain-999 | `0xd1556d45d2e1ebbf50f9a38382e9487ba89d9673` | BeatPotWithdrawalQueue | impl | live | yes |
@@ -238,6 +245,7 @@
 | chain-999 | `0xe098e46e3059570c5330cb2580923bf7cb6280db` | DepositReceiver | impl | live | no |
 | chain-999 | `0xe0995a641d454c149e6c808baa37cb2b38763316` | Pricer | impl | live | no |
 | chain-999 | `0xe247614720afedfa15364ad4319440aa8b65171d` | ExchangeRateUpdater-2 | impl | live | no |
+| chain-999 | `0xe4c53a0fbc1d87006e41848c126afadd9e9c1891` | dnHYPE | impl | live | no |
 | chain-999 | `0xe5aba3ad9a8c852700a1971c3ac362df7da948d9` | VaultFactoryLite-3 | impl | live | no |
 | chain-999 | `0xe69da04c13faa6c172ad2bf5da54124dc49d7707` | DnCoreWriterVault | impl | live | no |
 | chain-999 | `0xe73722fda598895030bcb3d445825556f2df7507` | WithdrawalQueue-3 | impl | live | no |

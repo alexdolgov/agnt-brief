@@ -391,7 +391,7 @@ contract PoolManager is ProtocolFees, FlashLoans, AssetManagement, ILongPoolMana
     address pool,
     uint256 debts,
     uint256 minColls
-  ) external onlyRegisteredPool(pool) nonReentrant whenNotPaused returns (uint256 colls) {
+  ) external onlyRegisteredPool(pool) nonReentrant whenNotPaused returns (uint256 actualDebts, uint256 colls) {
     if (debts > IERC20(fxUSD).balanceOf(_msgSender())) {
       revert ErrorRedeemExceedBalance();
     }
@@ -402,7 +402,9 @@ contract PoolManager is ProtocolFees, FlashLoans, AssetManagement, ILongPoolMana
       revert ErrorRedeemNotAllowed();
     }
 
-    uint256 rawColls = ILongPool(pool).redeem(debts);
+    uint256 rawColls;
+    (actualDebts, rawColls) = ILongPool(pool).redeem(debts);
+    debts = actualDebts;
 
     address collateralToken = ILongPool(pool).collateralToken();
     uint256 scalingFactor = _getTokenScalingFactor(collateralToken);
@@ -673,7 +675,7 @@ contract PoolManager is ProtocolFees, FlashLoans, AssetManagement, ILongPoolMana
     address collateralToken = ILongPool(longPool).collateralToken();
     uint256 scalingFactor = _getTokenScalingFactor(collateralToken);
 
-    uint256 redeemedRawColls = ILongPool(longPool).redeem(amountFxUSD);
+    (, uint256 redeemedRawColls) = ILongPool(longPool).redeem(amountFxUSD);
     uint256 redeemedColls = _scaleDown(redeemedRawColls, scalingFactor);
 
     shortfall = totalBorrowed - redeemedColls;

@@ -619,6 +619,7 @@ contract ERC20 is IERC20, Context {
     }
 }
 
+
 /**
  * @title SafeERC20
  * @dev Wrappers around ERC20 operations that throw on failure (when the token
@@ -684,82 +685,6 @@ library SafeERC20 {
             // solhint-disable-next-line max-line-length
             require(abi.decode(returndata, (bool)), "SafeERC20: ERC20 operation did not succeed");
         }
-    }
-}
-
-
-interface IMoboxToken {
-    function transfer(address recipient, uint256 amount) external returns (bool);
-    function burn(uint256 amount_) external;
-}
-
-contract MoboxEventPool is Ownable {
-    using SafeMath for uint256;
-
-    event EventApply(
-        address applyer,
-        address applyTo,
-        uint256 amount,
-        uint256 eventAmount,
-        uint256 devTeamAmount,
-        bytes reason
-    ); 
-
-    event EventPoolBurn(
-        address bunner,
-        uint256 amount,
-        bytes reason
-    );
-
-    uint256 public constant devTeamRate = 2000;
-    address public moboxToken;
-    address public finance;
-    address public devTeam;
-    string public poolName;     // Event/Partner
-
-    constructor() public {
-
-    }
-
-    function init(string memory name_, address mobox_, address finance_) external onlyOwner {
-        require(mobox_ != address(0) && finance_ != address(0), "invalid param");
-        poolName = name_;
-        finance = finance_;
-        moboxToken = mobox_;
-    }
-
-    modifier onlyFinance() {
-        require(msg.sender == finance, "not finance");
-        _;
-    }
-
-    function setDevTeam(address addr_) external onlyOwner {
-        devTeam = addr_;
-    }
-
-    function setFinance(address addr_) external onlyFinance {
-        require(addr_ != address(0), "invalid addr");
-        finance = addr_;
-    }
-
-    function applyFor(address to_, uint256 amount_, bytes memory reason_) external onlyFinance {
-        require(to_ != address(0) && devTeam != address(0) && reason_.length <= 256, "invalid param");
-        uint256 devTeamAmount = amount_.mul(devTeamRate).div(10000);
-        uint256 eventAmount = amount_.sub(devTeamAmount);
-
-        IMoboxToken mbox = IMoboxToken(moboxToken);
-        mbox.transfer(to_, eventAmount);
-        mbox.transfer(devTeam, devTeamAmount);
-
-        emit EventApply(msg.sender, to_, amount_, eventAmount, devTeamAmount, reason_);
-    }
-
-    function burn(uint256 amount_, bytes memory reason_) external onlyFinance {
-        require(reason_.length <= 256, "invalid param");
-
-        IMoboxToken(moboxToken).burn(amount_);
-
-        emit EventPoolBurn(msg.sender, amount_, reason_);
     }
 }
 
@@ -1035,5 +960,217 @@ contract TransparentUpgradeableProxy is UpgradeableProxy {
 
 contract MoMoProxy is TransparentUpgradeableProxy {
     constructor(address _implementation, address _admin, bytes memory _data) public TransparentUpgradeableProxy(_implementation, _admin, _data) {
+    }
+}
+
+contract MoMoSetting is Ownable {
+    address public settingGuardian;
+
+    uint256 public levelMaxV4;
+    uint256 public levelMaxV5;
+    uint256 public levelMaxV6;
+    
+    mapping (uint256 => uint256) _levelUpV4;
+    mapping (uint256 => uint256) _levelUpV5;
+    mapping (uint256 => uint256) _levelUpV6;
+
+
+    mapping (uint256 => string) _ipfsUrisGeneral; 
+    mapping (uint256 => string) _ipfsUrisSpecial;
+    mapping (address => bool) _erc721Receiver;
+    mapping (address => bool) _erc1155Receiver;
+    bool public disableERC721ReceiveCheck;
+    bool public disableERC1155ReceiveCheck;
+
+
+    constructor() public {
+        
+    }
+
+    function setSettingGuardian(address addr_) external onlyOwner {
+        settingGuardian = addr_;
+    }
+
+    modifier onlyGuardian() {
+        require(msg.sender == settingGuardian, "not writer");
+        _;
+    }
+
+    function setMaxLevel(uint256 lvv4_, uint256 lvv5_, uint256 lvv6_) external onlyGuardian {
+        require(lvv4_ > levelMaxV4 && lvv4_ < 256, "invalid lvv4");
+        require(lvv5_ > levelMaxV5 && lvv5_ < 256, "invalid lvv5");
+        require(lvv6_ > levelMaxV6 && lvv6_ < 256, "invalid lvv6");
+
+        levelMaxV4 = lvv4_;
+        levelMaxV5 = lvv5_;
+        levelMaxV6 = lvv6_;
+    }
+
+    function setUri(uint256 prototype_, string memory uri_) external onlyGuardian {
+        _ipfsUrisGeneral[prototype_] = uri_;
+    }
+
+    function setUriSpecial(uint256 tokenId_, string memory uri_, bool remove_) external onlyGuardian {
+        if (remove_) {
+            delete _ipfsUrisSpecial[tokenId_];
+        } else {
+            _ipfsUrisSpecial[tokenId_] = uri_;
+        }
+    }
+
+    function setReceiver721(address addr_, bool v_) external onlyGuardian {
+        _erc721Receiver[addr_] = v_;
+    }
+
+    function setReceiver1155(address addr_, bool v_) external onlyGuardian {
+        _erc1155Receiver[addr_] = v_;
+    }
+
+    function setReceiverAll(address addr_, bool v_) external onlyGuardian {
+        _erc721Receiver[addr_] = v_;
+        _erc1155Receiver[addr_] = v_;
+    }
+
+    function setNFTReceiveCheck(bool disable721_, bool disable1155_) external onlyGuardian {
+        disableERC721ReceiveCheck = disable721_;
+        disableERC1155ReceiveCheck = disable1155_;
+    }
+
+    function setLevelUpV4(
+        uint256[] memory lvs_, 
+        uint256[] memory countV1_, 
+        uint256[] memory countV2_, 
+        uint256[] memory countV3_, 
+        uint256[] memory countV4self_,
+        uint256[] memory levelV4_
+    ) external onlyGuardian {
+        require(lvs_.length == countV1_.length && lvs_.length == countV2_.length, "invalid param");
+        require(lvs_.length == countV3_.length && lvs_.length == countV4self_.length, "invalid param");
+        uint256 level;
+        for (uint256 i = 0; i < lvs_.length; ++i) {
+            level = lvs_[i];
+            require(level > 0 && level <= levelMaxV4, "invalid prototype");
+            uint256 cfgVal = countV1_[i] + (countV2_[i] << 32) + (countV3_[i] << 64) + (countV4self_[i] << 96) + (levelV4_[i] << 128);
+            _levelUpV4[level] = cfgVal;
+        }
+    }
+
+    function setLevelUpV5(
+        uint256[] memory lvs_, 
+        uint256[] memory countV1_, 
+        uint256[] memory countV2_, 
+        uint256[] memory countV3_,
+        uint256[] memory countV4_, 
+        uint256[] memory levelV4_,
+        uint256[] memory countV5self_
+    ) external onlyGuardian {
+        require(lvs_.length == countV1_.length && lvs_.length == countV2_.length && lvs_.length == countV3_.length, "invalid param");
+        require(lvs_.length == countV4_.length && lvs_.length == levelV4_.length && lvs_.length == countV5self_.length, "invalid param");
+        uint256 level;
+        for (uint256 i = 0; i < lvs_.length; ++i) {
+            level = lvs_[i];
+            require(level > 0 && level <= levelMaxV5, "invalid prototype");
+            uint256 cfgVal = countV1_[i] + (countV2_[i] << 32) + (countV3_[i] << 64) + (countV4_[i] << 96) + (levelV4_[i] << 128) + (countV5self_[i] << 160);
+            _levelUpV5[level] = cfgVal;
+        }
+    }
+
+    function setLevelUpV6(
+        uint256[] memory lvs_, 
+        uint256[] memory countV1_, 
+        uint256[] memory countV2_, 
+        uint256[] memory countV3_,
+        uint256[] memory countV4_, 
+        uint256[] memory levelV4_,
+        uint256[] memory countV5_
+    ) external onlyGuardian {
+        require(lvs_.length == countV1_.length && lvs_.length == countV2_.length && lvs_.length == countV3_.length, "invalid param");
+        require(lvs_.length == countV4_.length && lvs_.length == levelV4_.length && lvs_.length == countV5_.length, "invalid param");
+        uint256 level;
+        for (uint256 i = 0; i < lvs_.length; ++i) {
+            level = lvs_[i];
+            require(level > 0 && level <= levelMaxV6, "invalid prototype");
+            uint256 cfgVal = countV1_[i] + (countV2_[i] << 32) + (countV3_[i] << 64) + (countV4_[i] << 96) + (levelV4_[i] << 128) + (countV5_[i] << 160);
+            _levelUpV6[level] = cfgVal;
+        }
+    }
+
+    function getURI(uint256 tokenId_, uint256 prototype_) external view returns(string memory uri) {
+        uri = _ipfsUrisSpecial[tokenId_];
+        if (bytes(uri).length < 1) {
+            uri = _ipfsUrisGeneral[prototype_];
+        } 
+    }
+
+    function isReceiver721(address addr_) external view returns(bool) {
+        return disableERC721ReceiveCheck || _erc721Receiver[addr_];
+    }
+
+    function isReceiver1155(address addr_) external view returns(bool) {
+        return disableERC1155ReceiveCheck || _erc1155Receiver[addr_];
+    }
+
+    function getLevelUpV4(uint256 currentLevel_) 
+        external 
+        view 
+        returns(
+            uint256 countV1,
+            uint256 countV2,
+            uint256 countV3,
+            uint256 countV4Self,
+            uint256 levelV4
+        ) 
+    {
+        uint256 cfgVal = _levelUpV4[currentLevel_];
+        require(cfgVal > 0 && currentLevel_ < levelMaxV4, "level limited");
+        countV1 = cfgVal % 0x0100000000;
+        countV2 = (cfgVal >> 32) % 0x0100000000;
+        countV3 = (cfgVal >> 64) % 0x0100000000;
+        countV4Self = (cfgVal >> 96) % 0x0100000000;
+        levelV4 = (cfgVal >> 128) % 0x0100000000;
+    }
+
+    function getLevelUpV5(uint256 currentLevel_) 
+        external 
+        view 
+        returns(
+            uint256 countV1,
+            uint256 countV2,
+            uint256 countV3,
+            uint256 countV4,
+            uint256 levelV4,
+            uint256 countV5Self
+        ) 
+    {
+        uint256 cfgVal = _levelUpV5[currentLevel_];
+        require(cfgVal > 0 && currentLevel_ < levelMaxV5, "level limited");
+        countV1 = cfgVal % 0x0100000000;
+        countV2 = (cfgVal >> 32) % 0x0100000000;
+        countV3 = (cfgVal >> 64) % 0x0100000000;
+        countV4 = (cfgVal >> 96) % 0x0100000000;
+        levelV4 = (cfgVal >> 128) % 0x0100000000;
+        countV5Self = (cfgVal >> 160) % 0x0100000000;
+    }
+
+    function getLevelUpV6(uint256 currentLevel_) 
+        external 
+        view 
+        returns(
+            uint256 countV1,
+            uint256 countV2,
+            uint256 countV3,
+            uint256 countV4,
+            uint256 levelV4,
+            uint256 countV5
+        ) 
+    {
+        uint256 cfgVal = _levelUpV6[currentLevel_];
+        require(cfgVal > 0 && currentLevel_ < levelMaxV6, "level limited");
+        countV1 = cfgVal % 0x0100000000;
+        countV2 = (cfgVal >> 32) % 0x0100000000;
+        countV3 = (cfgVal >> 64) % 0x0100000000;
+        countV4 = (cfgVal >> 96) % 0x0100000000;
+        levelV4 = (cfgVal >> 128) % 0x0100000000;
+        countV5 = (cfgVal >> 160) % 0x0100000000;
     }
 }

@@ -1,6 +1,6 @@
 # tranchess — deployments
 
-174 verified deployment(s) across 57 component(s).
+185 verified deployment(s) across 63 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -146,26 +146,36 @@
 | bsc | `0xfdc8a37f4286868751ad24af083cc31cbb991286` | ShareV2 | impl | live | no |
 | bsc | `0xff23266e1d30582bb4280d3f01f573a75bb79c7c` | ShareV2 | impl | live | no |
 | bsc | `0xfff9fc084cb58974defaa27e05e1fe2439b75dd9` | Share-3 | impl | live | no |
+| ethereum | `0x1bf019a44a708fbeba7adc79bdad3d0769ff3a7b` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0x25cd496d66708166a06da16ed641dd286ce76815` | ProxyOFTPool | impl | live | no |
+| ethereum | `0x2871956fb1cde2b28f8d77bbecb4d806a4664a9f` | LiquidityGaugeV2 | impl | live | no |
+| ethereum | `0x307462d1a183659e9af73fa1bca7a0d858714598` | ShareV2-4 | impl | live | no |
+| ethereum | `0x37473872769ff711bd6d800e518061fae67e10a9` | ConstAprOracle | impl | live | no |
 | ethereum | `0x379e8d9f6a8a045a8654169fabff8bcfec0d3934` | ShareV2 | impl | live | no |
+| ethereum | `0x58e2dbf7b25f485ae00983671b517c4cebb7a8ac` | ChessControllerV6 | impl | live | no |
 | ethereum | `0x657498143d67e14d9928bc5ec1608c771e6c3314` | SwapRouter | impl | live | no |
 | ethereum | `0x69c53679ec1c06f3275b64c428e8cd069a2d3966` | FundV4 | impl | live | yes |
+| ethereum | `0x6aff2526d50fa742ca08ed1cf6e3cf7987a30f5c` | ShareV2 | impl | live | no |
 | ethereum | `0x811c9dd8b7b670a78d02fac592ebbe465e5dd0fa` | FundV5 | impl | live | yes |
 | ethereum | `0x93ef1ea305d11a9b2a3ebb9bb4fcc34695292e7d` | ShareV2-4 | impl | live | no |
+| ethereum | `0x96ccae5662de55c50b997f13396e6a183074f9d5` | FeeConverter | impl | live | no |
 | ethereum | `0x97238bc81fcede211ecb49a6b16ca0ad1d55a1d5` | BatchOperationHelper | impl | live | no |
 | ethereum | `0x9c69b6caf5074a2dec33bdb84d0f871d509240fa` | WstETHPrimaryMarketRouter | impl | live | yes |
+| ethereum | `0xa8be5ab62794a647254e1e62844201efc8477e22` | PrimaryMarketV5 | impl | live | no |
 | ethereum | `0xa9f575d735439eb4187b7bbc07459124811feaac` | AprOracle | impl | live | yes |
 | ethereum | `0xad06a2dbd34da8f8cf5f85d284a5b93a2057bdb5` | WstETHBishopStableSwap | impl | live | no |
+| ethereum | `0xbb18521b4b19bcb7e6c2327f13bbd8e8149ca3a9` | ShareV2-4 | impl | live | no |
 | ethereum | `0xcf116313bc9c3712a8165d9a8e1c311567c4c829` | PrimaryMarketV4 | impl | live | yes |
 | ethereum | `0xd2df8d600f7b32b8e708900646f8898c52158690` | ShareV2 | impl | live | no |
 | ethereum | `0xd462276ef4aa78a3533cf13518d97a16b96e0c95` | FlashSwapRouterV3 | impl | live | no |
 | ethereum | `0xd6123271f980d966b00ca4fca6c2c021f05e2e73` | AnyswapChess | impl | live | no |
+| ethereum | `0xffd3196ce42bed1fa988020c902fe7ea6624a15a` | BeaconStakingOracle | impl | live | no |
 | scroll | `0x088e2f0fcb2acaa5ad990311839b1d37ee41679d` | MaturityPrimaryMarket-2 | impl | live | no |
 | scroll | `0x09750800529e7bbcd07d4760989b19061e79165b` | ShareV2-3 | impl | live | no |
 | scroll | `0x0e6a005790559b60bff5b8c3ea68d2361f92ccaa` | ShareV2-3 | impl | live | no |
 | scroll | `0x21366de9707a1044e351280f085821c734791cee` | MaturityPrimaryMarket-2 | impl | live | no |
 | scroll | `0x3b97ccc0c8c5e10ac3e7f1594b55b6239a493eea` | ShareV2-3 | impl | live | no |
-| scroll | `0x3c8465c04e7478b11c7b5cee3919781db5e6d464` | LiquidityGaugeV2 | impl | live | no |
+| scroll | `0x3c8465c04e7478b11c7b5cee3919781db5e6d464` | LiquidityGaugeV2-2 | impl | live | no |
 | scroll | `0x3d9f20e4f1f5ac1d5f24e271ce6364b2eed71ca6` | BishopStableSwapV2-2 | impl | live | no |
 | scroll | `0x47b3913e6ac7dcb9752769465f875596c6f194d4` | MaturityPrimaryMarket-2 | impl | live | no |
 | scroll | `0x6e20e4f0f1a3a6836840001e4195b65d7735d92d` | ShareV2-3 | impl | live | no |
@@ -178,3 +188,4 @@
 | scroll | `0xd151ce31322aea25e4779678df0a3f376f9ffc6f` | BishopStableSwapV2-2 | impl | live | no |
 | scroll | `0xec8bfa1d15842d6b670d11777a08c39b09a5ff00` | BishopStableSwapV2-2 | impl | live | no |
 | scroll | `0xf440e381e682a458505c12db813dbc36da4f5970` | ProxyOFTPool-3 | impl | live | no |
+| scroll | `0xffd17794bf2e3ba798170f358225763f1af8f5ba` | TransparentUpgradeableProxy | impl | live | no |

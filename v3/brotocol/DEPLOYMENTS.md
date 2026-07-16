@@ -1,10 +1,11 @@
 # brotocol — deployments
 
-120 verified deployment(s) across 55 component(s).
+129 verified deployment(s) across 64 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x0d3c781313b1d4abbb45459621f0168826a6cf07` | BridgeEndpointWithSwap | impl | live | no |
+| arbitrum | `0x25d887ce7a35172c62febfd67a1856f20faebb00` | PepeToken | impl | live | no |
 | arbitrum | `0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f` | BeaconProxyFactory | proxy | live | no |
 | arbitrum | `0x31761a152f1e96f966c041291644129144233b0b` | BridgeEndpointWithSwap-4 | impl | live | no |
 | arbitrum | `0x4306374f07382b36aae832a50831c8c5b26cd41e` | BridgeEndpointWithSwap | impl | live | no |
@@ -33,6 +34,7 @@
 | avalanche | `0x50b7545627a5162f82a992c33b87adc75187b218` | BridgeToken-9 | impl | live | no |
 | avalanche | `0x5947bb275c521040051d82396192181b413227a3` | BridgeToken-10 | impl | live | no |
 | avalanche | `0x596fa47043f99a4e0f122243b841e55375cde0d2` | BridgeToken-11 | impl | live | no |
+| avalanche | `0x5e0e90e268bc247cc850c789a0db0d5c7621fb59` | ERC20BridgeToken | impl | live | no |
 | avalanche | `0x62f7d5f4adf9521cfc609ba452839dcb4e81e79c` | MultisigWallet-2 | impl | live | no |
 | avalanche | `0x63a72806098bd3d9520cc43356dd78afe5d386d9` | BridgeToken-12 | impl | live | no |
 | avalanche | `0x88128fd4b259552a9a1d457f435a6527aab72d42` | BridgeToken-13 | impl | live | no |
@@ -52,6 +54,7 @@
 | base | `0x144b4256ac30c9b65666336c278d2bc3fb432318` | BridgeEndpointWithSwap-5 | impl | live | no |
 | base | `0x18c05ec3799eb15fe49a141ce844e55514438fa7` | BridgeEndpointWithSwap-2 | impl | live | no |
 | base | `0x2230393edad0299b7e7b59f20aa856cd1bed52e1` | MasterMinter | impl | live | no |
+| base | `0x4200000000000000000000000000000000000006` | WETH9 | impl | live | no |
 | base | `0x7a087e75807f2e5143c161a817e64df6dc5eafe0` | BridgeToken | impl | live | no |
 | base | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | AdminUpgradeabilityProxy | proxy | live | no |
 | base | `0x916e5dfdf66fdd9df738c63159d5f01268ed21cb` | BridgeEndpointWithSwap-3 | impl | live | no |
@@ -71,12 +74,18 @@
 | bsc | `0x46b20f3106b8bffb9bf63633a854a7a96dfc6379` | BridgeEndpointWithSwap | impl | live | no |
 | bsc | `0x4a1a7048f54d4913156ca79c329a8ecd2b6a5f7f` | BridgeEndpointWithSwap-2 | impl | live | no |
 | bsc | `0x5298718429046b1d38106864bbfdc9326c840092` | BridgeEndpointWithSwap-2 | impl | live | no |
+| bsc | `0x55d398326f99059ff775485246999027b3197955` | BEP20USDT | impl | live | no |
+| bsc | `0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c` | BEP20Token | impl | live | no |
+| bsc | `0x795d2710e383f33fbebe980a155b29757b6703f3` | Token | impl | live | no |
 | bsc | `0x82d25bd400631de5daf832c1e9cca547ec4b2aab` | BridgeEndpointWithSwap-2 | impl | live | no |
 | bsc | `0x99b0341830356d13053a4c14ede8fa83ac34a2c3` | BridgeEndpointWithSwap-7 | impl | live | no |
+| bsc | `0x9bf543d8460583ff8a669aae01d9cdbee4defe3c` | TeamToken | impl | live | no |
 | bsc | `0xb75231778c0e7c132a1eb0bc1d91134817316a15` | BridgeEndpointWithSwap-5 | impl | live | no |
 | bsc | `0xc355e278bf9631173501393dbcdcd5356d3a1334` | BridgeEndpointWithSwap-6 | impl | live | no |
+| ethereum | `0x18084fba666a33d37592fa2633fd49a74dd93a88` | TBTC | impl | live | no |
 | ethereum | `0x2df927f8b46d74142fa3ddbd0626c1dcc93d4ee4` | BridgeEndpointWithSwap-4 | impl | live | no |
 | ethereum | `0x31761a152f1e96f966c041291644129144233b0b` | BridgeToken | impl | live | no |
+| ethereum | `0x4306374f07382b36aae832a50831c8c5b26cd41e` | MigrateToken | impl | live | no |
 | ethereum | `0x65dfacfd08afdd1cc02caf3de411661603394090` | MultisigWallet-5 | impl | live | no |
 | ethereum | `0x80074f342764027f5c4e2f7cd7d0ded611dfb7cd` | BridgeToken | impl | live | no |
 | ethereum | `0xa831a4e181f25d3b35949e582ff27cc44e703f37` | BridgeToken-3 | impl | live | no |

@@ -1,6 +1,6 @@
 # openeden — deployments
 
-389 verified deployment(s) across 121 component(s).
+390 verified deployment(s) across 122 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -335,6 +335,7 @@
 | ethereum | `0xda8e2d926d28a86aee933d928357583aae5d3b85` | ERC1967Proxy-2 | proxy | live | no |
 | ethereum | `0xdae70f90620bcbb7d7b3b536683bb2ba257e0fc9` | RedemptionQueue | impl | live | no |
 | ethereum | `0xdc12c462687261599c80b7d379088f71fefbe732` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0xdd50c053c096cb04a3e3362e2b622529ec5f2e8a` | AdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0xddf17a432b312a6c0e42f3b34adbe914b12cb44f` | ERC1967Proxy-2 | proxy | live | no |
 | ethereum | `0xdf472a3ebe9ed18a32c12708dbde5f80cc107b94` | BulkOperator | impl | live | no |
 | ethereum | `0xdfe06076a833e289fd0d6f2483a16259e9fb9627` | ERC1967Proxy | proxy | live | yes |

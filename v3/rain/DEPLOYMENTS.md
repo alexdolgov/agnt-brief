@@ -1,6 +1,6 @@
 # rain — deployments
 
-124 verified deployment(s) across 58 component(s).
+125 verified deployment(s) across 59 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -86,6 +86,7 @@
 | arbitrum | `0x9fac123f86825d060186cca052a9298104bfe820` | InfoFacet | impl | live | no |
 | arbitrum | `0xa0ce8c008a29ac3942cef1e9f0abfe9fdd8113bb` | TradingFacet | impl | live | no |
 | arbitrum | `0xa2849e4db96205e75c2ca1736f0d8a879f0191c9` | RainDeployer | impl | live | no |
+| arbitrum | `0xa8640b62d755e42c9ed6a86d0fc65ce09e31f264` | ERC1967Proxy | impl | live | no |
 | arbitrum | `0xa9ff29273801df0466fbc0cc09ec4d3c6415feea` | RainDiamondFactory-2 | impl | live | no |
 | arbitrum | `0xb0da34c8795105b6df43ed8c1cb6acb6a1298ec5` | DisputeFacet | impl | live | no |
 | arbitrum | `0xb453ac3fec3b0ae5700a7dbb7d37b5c94c7a00e0` | CancelOrderFacet | impl | live | no |

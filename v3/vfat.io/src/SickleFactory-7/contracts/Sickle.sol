@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.17;
+pragma solidity 0.8.17;
 
 import "./base/SickleStorage.sol";
 import "./base/Multicall.sol";
@@ -30,14 +30,5 @@ contract Sickle is SickleStorage, Multicall {
 
     function _Sickle_initialize(address sickleOwner_) internal {
         SickleStorage._SickleStorage_initialize(sickleOwner_);
-    }
-
-    function onERC721Received(
-        address, // operator
-        address, // from
-        uint256, // tokenId
-        bytes calldata // data
-    ) external pure returns (bytes4) {
-        return this.onERC721Received.selector;
     }
 }

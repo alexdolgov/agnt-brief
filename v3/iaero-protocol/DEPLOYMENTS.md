@@ -1,12 +1,13 @@
 # iaero-protocol — deployments
 
-40 verified deployment(s) across 37 component(s).
+44 verified deployment(s) across 41 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | base | `0x06026fe30ce9e9a613a21a87af210022c80565a4` | VotingManager | impl | live | no |
 | base | `0x08d49da370ecffbc4c6fdd2ae82b2d6ae238affd` | Pool | impl | live | no |
 | base | `0x0ab24cdd6e23040e37fc24b19e1d43fbe9e65ee8` | TreasuryDistributor-2 | impl | live | no |
+| base | `0x1039cb48254a3150fc604d4b9ea08f66f4739d37` | GnosisSafeProxy | proxy | live | no |
 | base | `0x16613524e02ad97edfef371bc883f2f5d6c480a5` | Voter | impl | unknown | no |
 | base | `0x1702ddf00e4ff3ed892e569a26e0f1f6858e6fbb` | VotingManagerOptimised | impl | live | no |
 | base | `0x180dab53968e599dd43cf431e27cb01aa5c37909` | PermalockVault_V5 | impl | live | no |
@@ -37,6 +38,7 @@
 | base | `0xcf77a3ba9a5ca399b7c97c74d54e5b1beb874e43` | Router | impl | unknown | no |
 | base | `0xd36b84eefd1f481a737595c8212c43a9cd76c8e0` | TreasuryDistributor | impl | live | no |
 | base | `0xd3e32b22da6bf601a5917ecd344a7ec46bca072c` | RewardTokenRegistry | impl | live | no |
+| base | `0xd4ad2eeeb3314d54212a92f4cbbe684195defe3e` | RewardsSugar | impl | live | no |
 | base | `0xde7785264cf9aceaf00e535bfb1067cd8d328c7f` | VotingManager-3 | impl | live | no |
 | base | `0xdf5ebfba1e39e206f1dcdbf93231ee5b7061cebf` | VotingManager-4 | impl | live | no |
 | base | `0xe7082a6ecd7218ad6c8af732acb2305b5e5589b0` | VotingManagerOptimised | impl | live | no |
@@ -44,3 +46,5 @@
 | base | `0xe9fd07f2161d3fe49939acb379f157c4839459c4` | RewardsHarvester-4 | impl | live | no |
 | base | `0xeb018363f0a9af8f91f06fee6613a751b2a33fe5` | Minter | impl | live | no |
 | base | `0xebf418fe2512e7e6bd9b87a8f0f294acdc67e6b4` | VotingEscrow | impl | unknown | no |
+| base | `0xf1d25f4ee64988afad0f1612cc3d540725f319db` | LIQLinearVester | impl | live | no |
+| base | `0xfe5c929677d97723dc822c86c93c7e2d1b59c774` | iAEROAutoUSDCVault | impl | live | no |

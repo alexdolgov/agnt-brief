@@ -1,6 +1,6 @@
 # yearn — deployments
 
-455 verified deployment(s) across 454 component(s).
+491 verified deployment(s) across 489 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -11,20 +11,24 @@
 | arbitrum | `0x3a8efa2d87d60c0289f19b44a0928f4269c0f094` | AddressesGeneratorV2Vaults | impl | live | no |
 | arbitrum | `0x3bf72024420bdc4d7ca6a8b6211829476d6685b1` | RoleManager | impl | live | no |
 | arbitrum | `0x5ea7e501c9a23f4a76dc7d33a11d995b13a1dd25` | CalculationsSushiswap | impl | live | no |
+| arbitrum | `0x90d0f26025571295d18a6c041e47450b81886b51` | SafeProxy | impl | live | no |
 | arbitrum | `0x941f727f267913e76e3f03a25d3bc7c07e891763` | AddressesGeneratorIronBank | impl | unknown | no |
 | arbitrum | `0xddb6cd2ab6415dca60a46c62f634b6e4d148a337` | CustomTrigger | impl | unknown | no |
+| base | `0x01fe3347316b2223961b20689c65eaea71348e93` | GnosisSafe | impl | live | no |
 | base | `0x02754ce97319adb7eb03782dc541d7b6f1bcf6aa` | StrategyFactory | impl | unknown | no |
 | base | `0x02ff746d8cb62709aeec611cec9b17d7dd1d3480` | Treasury | impl | live | no |
 | base | `0x0d80c2adfeabd3663ef64ca17a9b2a3c77a55960` | AddressesProvider | impl | unknown | no |
 | base | `0x103df3248e4e4b45159cc29ff0f37b272a9a742c` | AllowancesHelper | impl | unknown | no |
 | base | `0x1f399808fe52d0e960cab84b6b54d5707ab27c8a` | Accountant | impl | live | no |
 | base | `0x2d12caffa46ab3b6c5ceb224620de8b4de3cdff1` | VelodromeGlobal | impl | live | no |
+| base | `0x90d0f26025571295d18a6c041e47450b81886b51` | SafeProxy-2 | proxy | live | no |
 | base | `0xd0f08e42a40569ff83d28aa783a5b6537462667c` | YearnPartnerTracker | impl | unknown | no |
 | ethereum | `0x0001fb050fe7312791bf6475b96569d83f695c9f` | YearnRewards | impl | unknown | no |
 | ethereum | `0x000ca04b3225137b9110e77e12f1b484cc227de9` | ConvexDepositToken | impl | unknown | no |
 | ethereum | `0x001f751cdfee02e2f0714831be2f8384db0f71a2` | Strategy | impl | unknown | no |
 | ethereum | `0x0020609046710676cafc8eb5ce95fc110ccedeee` | FlashSeller | impl | unknown | no |
 | ethereum | `0x016aaf67c352ee493d1e17177de0eabc3d76ab39` | Getter | impl | unknown | no |
+| ethereum | `0x01791f726b4103694969820be083196cc7c045ff` | YBToken | impl | live | no |
 | ethereum | `0x017e71e96f2ae777c679740d2d8dc15ed4231981` | WrappedYFI | impl | unknown | no |
 | ethereum | `0x01b354a9fb34760455ee9cbe7d71d2ce5c11ab5c` | StrategyDForceUSDC | impl | unknown | no |
 | ethereum | `0x02027bda2425204f152b8aa35fb78687d65e1af5` | CrvStrategyKeep3rJob | impl | unknown | no |
@@ -92,6 +96,7 @@
 | ethereum | `0x1530a2924805aed2385f8b91849cab7fe95a5df9` | Keep3rV1Helper | impl | unknown | no |
 | ethereum | `0x1542ec733b1a938be7d30acf49e7f4a6a5ba0f82` | Keep3rV3OracleUSD | impl | unknown | no |
 | ethereum | `0x15b434fa5eb482b5aeb56f07df7a29bf261fff61` | PrismaPSM | impl | unknown | no |
+| ethereum | `0x16388463d60ffe0661cf7f1f31a7d658ac790ff7` | Proxy | proxy | live | no |
 | ethereum | `0x16c20cfeda6e9ebfb9e557e76a2dfbe85c597c7a` | StrategyProxy | impl | unknown | no |
 | ethereum | `0x16de59092dae5ccf4a1e6439d611fd0653f0bd01` | yDAI | impl | unknown | no |
 | ethereum | `0x170411a2d872945ee8c59e4ef5c3402ebe2a221c` | yCRV | impl | unknown | no |
@@ -104,6 +109,7 @@
 | ethereum | `0x1824df8d751704fa10fa371d62a37f9b8772ab90` | TrustedVaultMigrator | impl | unknown | no |
 | ethereum | `0x1981ad9f44f2ea9add2dc4ad7d075c102c70af92` | AprOracle | impl | live | no |
 | ethereum | `0x1994b59e02cd0d09d839b03660c205e88a929b81` | Timelock | impl | unknown | no |
+| ethereum | `0x1ab62413e0cf2ebeb73da7d40c70e7202ae14467` | Contract | impl | live | yes |
 | ethereum | `0x1abe682c785ccf18c91f4da045792115ae7744d1` | PlatformFactory | impl | unknown | no |
 | ethereum | `0x1b7e6fb817112b036eaa4ae85479ff1c2e9330a2` | SwapperV5 | impl | unknown | no |
 | ethereum | `0x1b88f199d42f2114de341c5b68e9c92af1c271ee` | USDCToUSDS | proxy | unknown | no |
@@ -114,6 +120,7 @@
 | ethereum | `0x1c0eeef670d82498f7547062aac7ee2143ec52ff` | StringSplit | impl | unknown | no |
 | ethereum | `0x1c662cac382140bfc148f3003fd14b0d58dc9524` | GaugeValidator | impl | unknown | no |
 | ethereum | `0x1d02f6a86ed5650f93e40fcd62fa5727c32ad746` | SingleTokenRewardDistributor | impl | live | no |
+| ethereum | `0x1d0fdcb628b2f8c0e22354d45b3b2d4ce9936f8b` | Gauge_registry | impl | live | no |
 | ethereum | `0x1d385beeb7b325f4a5c0a9507fd8a1071b232e4c` | YPrismaFeeDistributor | impl | unknown | no |
 | ethereum | `0x1e07cfbf666741b2fb3a33516a23293cae7d0438` | VulnerableTroveRedeemer | impl | unknown | no |
 | ethereum | `0x1e7efabf282614aa2543edaa50517ef5a23c868b` | BaseFeeOracle | impl | unknown | no |
@@ -135,9 +142,11 @@
 | ethereum | `0x2266be1ee5d345914976fd4ce9f4be65737880cb` | Keep3rV2OracleFactory | impl | unknown | no |
 | ethereum | `0x2288c409e67b6ce52180f97a8cddf7abc24ec989` | StrategySNXSUSD | impl | unknown | no |
 | ethereum | `0x22c582ff022cbca971b89c77088b5661b3d6beea` | YearnGovernance | impl | unknown | no |
+| ethereum | `0x2391fc8f5e417526338f5aa3968b1851c16d894e` | dYFI_Reward_Pool | impl | live | no |
 | ethereum | `0x23e25843e09a1c2347fb2a27121b6ddbb3b3dae2` | Trigonometry | impl | unknown | no |
 | ethereum | `0x240315db938d44bb124ae619f5fd0269a02d1271` | RegisteryAdapterV2Vaults | impl | live | no |
 | ethereum | `0x24dd028bd027511482e701d08bae002cd6e82a5d` | yCollateralVaultProxy | impl | unknown | no |
+| ethereum | `0x2548bf65916fdabb5a5673fc4225011ff29ee884` | Voting_Escrow_Reward_Distributor | impl | live | no |
 | ethereum | `0x25faca21dd2ad7edb3a027d543e617496820d8d6` | StrategyVaultUSDC | impl | unknown | no |
 | ethereum | `0x262be1d31d0754399d8d5dc63b99c22146e9f738` | YBSRegistry | impl | unknown | no |
 | ethereum | `0x265c8d21a322b04804524b857089de2fef619569` | YBSUtilities | impl | live | no |
@@ -166,6 +175,7 @@
 | ethereum | `0x30084324619d9645019c3f2cb3a94611601a3078` | DforceStrategyKeep3r | impl | unknown | no |
 | ethereum | `0x30285a1ce301fc7eb57628a7f53d02fbded3288f` | LiquidTransferProxy | impl | unknown | no |
 | ethereum | `0x3051cc7114c07365c99cf82de13cd9d10e603a4a` | PoolRegistry | impl | unknown | no |
+| ethereum | `0x310ac28acf5e514abdbff9ab25e21f1bfe22bcac` | Yearn_Vault_Factory | impl | live | no |
 | ethereum | `0x31641a4836c172640fa1c02999b09c5d1069156f` | StrategyMStableSavings | impl | unknown | no |
 | ethereum | `0x328ee88a60da26e270061533c6e9fa03c031df80` | SUSDSUSDTExchange | impl | unknown | no |
 | ethereum | `0x33163e60d47255fe54392c6ab6fa2178315cb074` | AddLiquidityChecker | impl | unknown | no |
@@ -187,6 +197,7 @@
 | ethereum | `0x3bd13c2c082cb269c54432746335a7814972ad24` | StrategyRouterV2 | impl | unknown | no |
 | ethereum | `0x3c5871d69c8d6503001e1a8f3bf7e5ebe447a9cd` | MultiCollateralHintHelpers | impl | unknown | no |
 | ethereum | `0x3cce081280060811889b63b98bf3d607029cc802` | Introspection | impl | unknown | no |
+| ethereum | `0x3d4ced97adb0ae3a53da95a47ffc749aad26bc8f` | Liquid_Locker_Depositor | impl | live | no |
 | ethereum | `0x3d7ec4a09cd4330f5c2c4341621a8249001a6cb0` | StaticCallProxy | impl | unknown | no |
 | ethereum | `0x3da70a551c0f785580a291b7d8c7d0f3dc4c6688` | HarvestV2Keep3rJob | impl | unknown | no |
 | ethereum | `0x3da992f4694d1a1624c32cafb5e57fe75b4bc867` | ConvexFactory | impl | unknown | no |
@@ -198,13 +209,17 @@
 | ethereum | `0x3f870c0ee9ed1662b42d2d91781f1958f355e995` | PropertiesAggregator | impl | unknown | no |
 | ethereum | `0x404f9ecabd4a0d4507c81766e01f76fe52ca0acb` | StableCreditHelper | impl | unknown | no |
 | ethereum | `0x40bd98e3cce4f34c087a73dd3d05558733549afb` | StrategyCreamYFI | impl | unknown | no |
+| ethereum | `0x41252e8691e964f7de35156b68493bab6797a275` | dYFI | impl | live | no |
 | ethereum | `0x41303e87db5be5b1c7a341440d04ec6a11343eeb` | YearnLiquidationKeep3r | impl | unknown | no |
 | ethereum | `0x4165ef806ec952bad7ba1d5db81aef2bdebc1c38` | GasPoolReimburser | impl | unknown | no |
+| ethereum | `0x41b994c192183793bb9cc35baab8bd9c6885c6bf` | Contract-2 | impl | live | yes |
 | ethereum | `0x41e41068618ae53f126175eb32fea3c29c1d3e86` | PriceFeedNoPrevious | impl | unknown | no |
 | ethereum | `0x41edfd5575fa4590a20f669bbda6c4ae367cd0d8` | CrvStrategyKeep3rStealthJob2 | impl | unknown | no |
+| ethereum | `0x42b25284e8ae427d79da78b65dffc232aaecc016` | Staked_YFI | impl | live | no |
 | ethereum | `0x437758d475f70249e03eda6be23684ad1fc375f0` | AddressesGenerator_VAULT_V2 | impl | live | no |
 | ethereum | `0x4404ff820dad76afc4f931079eb13fd418c9ae7a` | TroveManagerGetters | impl | unknown | no |
 | ethereum | `0x442510ba285d5390cb5385a91a380d4268e0b81c` | StrategyMStableSavingsTUSD | impl | unknown | no |
+| ethereum | `0x444045c5c13c246e117ed36437303cac8e250ab0` | Contract-3 | impl | live | yes |
 | ethereum | `0x44ff2af361e4b6a2892523d513df5245fc53b367` | yAffiliateFactoryV2 | impl | unknown | no |
 | ethereum | `0x452cce47601f5a8053f612b0b65b2e142e2059de` | GearboxCrvUSDOracle | impl | unknown | no |
 | ethereum | `0x4591dbff62656e7859afe5e45f6f47d3669fbb28` | DebtToken | impl | unknown | no |
@@ -235,9 +250,11 @@
 | ethereum | `0x560144c25e53149ac410e5d33bdb131e49a850e5` | TvlAdapterVeCrv | impl | live | no |
 | ethereum | `0x566c11b5c2201b69c9269fe924e4395873674335` | MasterMinter | impl | unknown | no |
 | ethereum | `0x56a3d20972fdf872ca8c799f83718f7297d371b2` | BoostViewVoodoo2 | impl | unknown | no |
+| ethereum | `0x56af9c2780e0323810acfdaeab3f58ef6e76fafd` | Ownership_proxy | impl | live | no |
 | ethereum | `0x56d27f6ba42ec4c4e37dae0561e8e872abb196ad` | DepositorV3 | impl | unknown | no |
 | ethereum | `0x572a4a527ab4d073d641e0eddbcebe82a20c9d2a` | CurveDepositToken | impl | unknown | no |
 | ethereum | `0x57ca31224bec6901b353251840ae4d10c3cb70d8` | VaultsRegistryHelper2 | impl | unknown | no |
+| ethereum | `0x583019ff0f430721ada9cfb4fac8f06ca104d0b4` | yETH_staking_contract | impl | live | no |
 | ethereum | `0x5835c751ead74de1e75f49627226d7e75be4ee12` | Agent | impl | unknown | no |
 | ethereum | `0x58fa5521f48b258b5e48a56b9b1bd95bffa1eb1c` | MultiTroveGetter | impl | unknown | no |
 | ethereum | `0x590dd9399bb53f1085097399c3265c7137c1c4cf` | Dumper | impl | live | no |
@@ -292,6 +309,7 @@
 | ethereum | `0x75a4d0b18e98674199829ddd2a6477ea25cd25eb` | IEther | impl | unknown | no |
 | ethereum | `0x76a56db217bc1fee1c4098a716f1b229671f1075` | YLiquidMarketAprOracle | impl | unknown | no |
 | ethereum | `0x76df88aa8711822472cb40ed8c972a461a20ecdc` | YPrismaFeeReceiver | impl | unknown | no |
+| ethereum | `0x775f09d6f3c8d2182dfa8bce8628acf51105653c` | Protocol_Address_Provider | impl | live | no |
 | ethereum | `0x77d851a9f62a4c76481cda94d40772642b353d7f` | Wallet | impl | unknown | no |
 | ethereum | `0x7811bdc0e906eecaaf951057305187d0a4badf5c` | StrategyYearnBasic | impl | unknown | no |
 | ethereum | `0x787c771035bde631391ced5c083db424a4a64bd8` | StrategyDForceUSDT | impl | unknown | no |
@@ -308,12 +326,14 @@
 | ethereum | `0x7d33110619e8f95f12a750f21a08b8c7cfb864e1` | EnsHelper | impl | unknown | no |
 | ethereum | `0x7d8dac450df7e222ae1d591046eb7b5324c9d44f` | StakingRewardsRegistry | impl | unknown | no |
 | ethereum | `0x7e0cc5edf2dd01fc543d698b7e00ff54c6c39085` | Keep3rLiquidityManagerJob | impl | unknown | no |
+| ethereum | `0x7efc3953bed2fc20b9f825ebffab1cc8b072a000` | Liquid_Locker_Reward_Distributor | impl | live | no |
 | ethereum | `0x7fe9501b4b4ba5a259f5fece1d10257839acb773` | FactoryVaultsAdapter | impl | unknown | no |
 | ethereum | `0x812ac0eaeb422efa44eac670aa2246a25ecfa017` | DistributeYFI | impl | unknown | no |
 | ethereum | `0x823fd217dcc5ce36ca6bc1489586ecb42b61081c` | GaugeProxy | impl | unknown | no |
 | ethereum | `0x83a34a6469dbfd7654ae6d842d20977e89ccd73d` | Keep3rEscrowJob | impl | unknown | no |
 | ethereum | `0x8558c4815625ffce94ec6e3eff97dbe6e1b7b73b` | Bits | impl | unknown | no |
 | ethereum | `0x859df6fe178ffbf55693a7a833aadb10c6a43861` | FluidLenderFactoryMainnet | impl | unknown | no |
+| ethereum | `0x88ba032be87d5ef1fbe87336b7090767f367bf73` | TimelockController | impl | live | no |
 | ethereum | `0x8a3bc2cce3ea37ead933422252e349512f4fc744` | SUSDSExchange | impl | unknown | no |
 | ethereum | `0x8b4fd02326db6ebe095e0707e2973c9e045da3dc` | BlackScholesEstimate | impl | unknown | no |
 | ethereum | `0x8b65438178cd4ef67b0177135de84fe7e3c30ec3` | YearnAccumulator | impl | unknown | no |
@@ -324,6 +344,8 @@
 | ethereum | `0x8e89f5b28411d7cdf3efa24b056ecafca4f7f925` | EnsAddressResolver | impl | unknown | no |
 | ethereum | `0x906e0d769aae4fb3f53d3c989a50520a8e851f42` | EmissionSchedule | impl | unknown | no |
 | ethereum | `0x9084b5a98e3b4b257affd82ae4a1753f87906dce` | RouterStrategy | impl | unknown | no |
+| ethereum | `0x90c1f9220d90d3966fbee24045edd73e1d588ad5` | Contract-4 | impl | live | yes |
+| ethereum | `0x90d0f26025571295d18a6c041e47450b81886b51` | SafeProxy | proxy | live | no |
 | ethereum | `0x9214a67186965fd5fe582a64a8646ff058f023aa` | Normalizer | impl | unknown | no |
 | ethereum | `0x922cf0e43f8c8dc02399a10fcf25f3f17c6c1096` | RewardDepositor | impl | unknown | no |
 | ethereum | `0x929401e30aab6bd648def2d30ff44952bab04478` | Protocol_Owned_Liquidity | impl | live | yes |
@@ -334,12 +356,15 @@
 | ethereum | `0x93dfa873b15ad496ba8116ce6cfec52ef30a9372` | MetaKeep3r | impl | unknown | no |
 | ethereum | `0x941e716833734c7cafafc38f6bb8fec1858201e0` | DepositorV2 | impl | unknown | no |
 | ethereum | `0x94f44706a61845a4f9e59c4bc08cea4503e48d12` | AuctionRegistry | impl | live | no |
+| ethereum | `0x952b31960c97e76362ac340d07d183ada15e3d6e` | Delegated_Staking_Reward_Distributor | impl | live | no |
+| ethereum | `0x95547ede56cf74b73dd78a37f547127dffda6113` | Staking_Reward_Distributor | impl | live | no |
 | ethereum | `0x97785a81b3505ea9026b2affa709dfd0c9ef24f6` | YearnWethCreamStratV2 | impl | unknown | no |
 | ethereum | `0x98158e133f7f56a574fc806e579e1355048039ca` | ConverterDAItoYCRV | impl | unknown | no |
 | ethereum | `0x9956ca141c344e177829671ec0f1a9d4ab3cb1fd` | CalculationsFixedForex | impl | unknown | no |
 | ethereum | `0x9a65e8ecc9d0112dab0e05c9496894227765b6b8` | Sharer | impl | unknown | no |
 | ethereum | `0x9aad75f860a05b14853efe4f2ae75a3a261bad70` | FluidExchange | impl | unknown | no |
 | ethereum | `0x9b1327ccb2405e8410f29dbec78f18236c3521f3` | ERC4626FluidExchange | impl | unknown | no |
+| ethereum | `0x9c42461aa8422926e3aef7b1c6e3743597149d79` | Delegated_Staked_YFI | impl | live | no |
 | ethereum | `0x9db355769b637249d8d5f8df2378dc77eff216b2` | Memory | impl | unknown | no |
 | ethereum | `0x9ea775672e4424c403f048ab08c7f56015c5d0f3` | LazyHarvest | impl | unknown | no |
 | ethereum | `0x9ecbb5c5b836dff9566b85ea7154ba360326b9a7` | RescueStrategy | impl | unknown | no |
@@ -356,6 +381,7 @@
 | ethereum | `0xa67cfa1f29411c3e9b4842a32d15a740bb06a2ba` | GearboxOracle | impl | unknown | no |
 | ethereum | `0xa6b9ce48ec380dbbe3fc32c199f4fab3d08c57f9` | BaseConvertor | impl | unknown | no |
 | ethereum | `0xa7496763f035e73ec6b56f4c86312cc1874a01e3` | StrategyRouterV3 | impl | unknown | no |
+| ethereum | `0xa82454009e01ae697012a73cb232d85e61b05e50` | Reward_Claimer | impl | live | no |
 | ethereum | `0xa8646ce5d983e996eba22eb39e5956653ec63762` | OracleBondedKeeper | impl | unknown | no |
 | ethereum | `0xa8b5ff097a10a264c30ec302023730fe51b7d8d7` | CalculationsZeroPrice | impl | unknown | no |
 | ethereum | `0xa8c992f43b067f92ce866f216897fae54bab53d9` | YLockerProxy | impl | unknown | no |
@@ -366,16 +392,20 @@
 | ethereum | `0xae9de8a3e62e8e2f1e3800d142d23527680a5179` | Incentives_for_Snapshot_votes | impl | live | yes |
 | ethereum | `0xb01419e74d8a2abb1bbad82925b19c36c191a701` | YearnFeeRewards | impl | unknown | no |
 | ethereum | `0xb10e11f3e38dc35e06397689e45fa939eb3b0f69` | iCollateralVaultFactory | impl | unknown | no |
+| ethereum | `0xb287a1964aee422911c7b8409f5e5a273c1412fa` | Contract-5 | impl | live | yes |
 | ethereum | `0xb41772890c8b1564c5015a12c0dc6f18b0af955e` | Keep3rHelper | impl | unknown | no |
 | ethereum | `0xb5a187cd9140b6b0db97f014f5c6af5802a3098d` | ShortOTokenActionWithSwapBtc | impl | unknown | no |
 | ethereum | `0xb5ebcc79fb618bada1a537d06af93717ac307d31` | YLocker | impl | unknown | no |
 | ethereum | `0xb68e7deb279eaa11f234dff4931458d2c002d10d` | Keep3rJob | impl | unknown | no |
 | ethereum | `0xb7277a6e95992041568d9391d09d0122023778a2` | FiatTokenV2 | impl | unknown | no |
+| ethereum | `0xb7a528cf6d36f736fa678a629b98a427d43e5ba5` | Generic_governor | impl | live | no |
 | ethereum | `0xb7e60dab3799e238d01e0f90c4506eef8f6a1503` | RewardsPuller | impl | unknown | no |
 | ethereum | `0xb86c97f61db0b339d4ffe7f39f7725b80a121d5d` | PublicAllocatorTendExecutor | impl | unknown | no |
 | ethereum | `0xb9a3a8735a453b2f8ad375654939cbb08411d9fa` | Forwarder | impl | unknown | no |
+| ethereum | `0xba18d0df75a3ff58ef40a8fc0d3e4db74a0e681d` | Liquid_Locker_Redemption | impl | live | no |
 | ethereum | `0xba7fcb508c7195ee5ae823f37ee2c11d7ed52f8e` | AuctionFactory | impl | live | no |
 | ethereum | `0xbabe5d223fb31a37ce184481678a6667ac8cd98b` | AngleVoterV2 | impl | unknown | no |
+| ethereum | `0xbb51273d6c746910c7c06fe718f30c936170fed0` | Contract-6 | impl | live | yes |
 | ethereum | `0xbe197e668d13746bb92e675dea2868ff14da0b73` | StrategyYffi | impl | unknown | no |
 | ethereum | `0xc01a529c01f9399c928a4afc50e25f12d1e5b142` | DelegatedBalanceMapping | impl | live | no |
 | ethereum | `0xc368ed8efc69d8e38ed4b4d726c40f9f9ad28839` | Donator | impl | unknown | no |
@@ -391,13 +421,16 @@
 | ethereum | `0xca53fe979d427a7c2c5f45f54d9d9fae622b4008` | FxsAccumulator | impl | unknown | no |
 | ethereum | `0xcb354dff03c15499ab9834faa63b6839c3be9d21` | RescueStrat | impl | unknown | no |
 | ethereum | `0xcb7dce63abe175ca354dcca9cc10554d255777ee` | Staking | impl | live | yes |
+| ethereum | `0xccd04073f4bdc4510927ea9ba350875c3c65bf81` | Contract-7 | impl | live | yes |
 | ethereum | `0xce29d34c8e88a2e1edde10ad4eee4f3e379fc041` | AddressesGeneratorV1Vaults | impl | live | no |
+| ethereum | `0xce62d9eb4409af3800e24719e08a736aab7d2022` | Curve_LP_Module | impl | live | no |
 | ethereum | `0xcf63089a8ad2a9d8bd6bb8022f3190eb7e1ed0f1` | OSMedianizer | impl | unknown | no |
 | ethereum | `0xd059575a78508b02e89ef9ae0c1b409b07853d37` | LftLocker | impl | unknown | no |
 | ethereum | `0xd0ac37e3524f295d141d3839d5ed5f26a40b589d` | CrvStrategyKeep3r | impl | unknown | no |
 | ethereum | `0xd1f5aee3f025d2f4e42dd74dec17d5faa4707cbc` | YUnsafeOracleV1 | impl | unknown | no |
 | ethereum | `0xd210bc75b822795a80672413e189312598e1e42b` | ResupplyPair | impl | unknown | no |
 | ethereum | `0xd2367b534c1eb09867bfabe13cb72d2bbe5c9b05` | AllowlistImplementationPartnerTracker | impl | unknown | no |
+| ethereum | `0xd31911a33a5577be233dc096f6f5a7e496ff5934` | Reward_Distributor | impl | live | no |
 | ethereum | `0xd362efc75ef1879f37a900823495f402cfdb0986` | PawnBrokerLooper | impl | unknown | no |
 | ethereum | `0xd39164369c37c412a04603666dcf4c7b33137748` | DelegationFactory | impl | unknown | no |
 | ethereum | `0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038` | Registry | impl | live | no |
@@ -418,6 +451,7 @@
 | ethereum | `0xe7f4ab593aec81eca754da1b3b7ce0c42a13ec0c` | YearnV1EarnKeep3r | impl | unknown | no |
 | ethereum | `0xe8d5a85758fe98f7dce251cad552691d49b499bb` | MechanicsRegistry | impl | unknown | no |
 | ethereum | `0xe9409b50cd0f25d203319f7bcf729f195a7bd0f0` | SyrupExchange | impl | unknown | no |
+| ethereum | `0xe9462885290eb79ece41367d92712d6f525ba5fa` | Shutdown_Module | impl | live | no |
 | ethereum | `0xea3030b900d94ed36e5a4e8b15b1db76530acc56` | PrismaSnapshotMockToken | impl | unknown | no |
 | ethereum | `0xea87e0f350abd0b0c213269f587d4c50a4665cfb` | EthCream | impl | unknown | no |
 | ethereum | `0xeb8d98f9e42a15b0eb35315f737bdfda1a8d2eaa` | YVEmpire | impl | unknown | no |
@@ -445,6 +479,7 @@
 | ethereum | `0xfe928ca6a9c0cdf658a26a374b7373b9d6cefbcf` | ApwineDepositor | impl | unknown | no |
 | ethereum | `0xff71841eefca78a64421db28060855036765c248` | CoveYFI | impl | live | no |
 | ethereum | `0xff7c33eb1c2020674e04b398368c884a2541c437` | FixedRateStrategyAprOracle | impl | unknown | no |
+| optimism | `0x0000000022d53366457f9d5e68ec105046fc4383` | Vyper_contract | impl | live | no |
 | optimism | `0x009c05bfb6d51fa0439d1473681b472019bf8dfe` | StakingRewards | impl | unknown | no |
 | optimism | `0x02ff746d8cb62709aeec611cec9b17d7dd1d3480` | String | impl | unknown | no |
 | optimism | `0x03153325e09aab45926ec74c85e1eb1299c6d19b` | StrategyVelodromeFactoryClonable | impl | unknown | no |
@@ -458,15 +493,5 @@
 | optimism | `0x9046d36440290ffde54fe0dd84db8b1cfee9107b` | OptimismMintableERC20 | impl | live | no |
 | optimism | `0x9ce0115381f009e382acd52761127eff61061482` | KeeperWrapper | impl | unknown | no |
 | optimism | `0xbcfca75ff12e2c1bb404c2c216dbf901be047690` | RegistryAdapterV2Vault | impl | live | no |
+| polygon | `0x16388000546eded4d476bd2a4a374b5a16125bc1` | GnosisSafeProxy | proxy | live | no |
 | polygon | `0x54483f1592ab0adea2757ae0d62e6393361d4cee` | RefundAccountant | impl | live | no |
-
-## Source unavailable (7)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x1ab62413e0cf2ebeb73da7d40c70e7202ae14467`
-- ethereum `0x41b994c192183793bb9cc35baab8bd9c6885c6bf`
-- ethereum `0x444045c5c13c246e117ed36437303cac8e250ab0`
-- ethereum `0x90c1f9220d90d3966fbee24045edd73e1d588ad5`
-- ethereum `0xb287a1964aee422911c7b8409f5e5a273c1412fa`
-- ethereum `0xbb51273d6c746910c7c06fe718f30c936170fed0`
-- ethereum `0xccd04073f4bdc4510927ea9ba350875c3c65bf81`

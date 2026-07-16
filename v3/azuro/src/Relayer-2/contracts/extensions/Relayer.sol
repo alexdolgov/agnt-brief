@@ -60,7 +60,6 @@ contract Relayer is OrderTools, OwnableUpgradeable {
         address indexed relayer,
         address indexed affiliate,
         address indexed bettor,
-        address core,
         uint256[] tokenIds,
         uint256 amount
     );
@@ -89,17 +88,17 @@ contract Relayer is OrderTools, OwnableUpgradeable {
             IOrder.OrderData memory order = orders[i];
             IOrder.ClientData memory data = getClientData(order);
             hashes = getHashes(order);
+            uint256[] memory sponsoredTokenIds;
 
             // init needed payments
-            (
-                uint128 betAmount,
-                uint128[] memory amounts
-            ) = _getOrderBetsAmounts(order);
+            (uint128 betAmount, uint128[] memory amounts) = getOrderBetsAmounts(
+                order
+            );
             bettorsFee = data.relayerFeeAmount;
 
             // if fee or bet sponsored, reduce bettor's payments
             if (data.isFeeSponsored || data.isBetSponsored) {
-                (betAmount, bettorsFee) = payMaster.pay(
+                (betAmount, bettorsFee, sponsoredTokenIds) = payMaster.pay(
                     msg.sender,
                     order,
                     data,
@@ -119,8 +118,17 @@ contract Relayer is OrderTools, OwnableUpgradeable {
                 );
             }
 
-            // if bet not sponsored, bettor make bet
-            if (!data.isBetSponsored) {
+            // if bet sponsored
+            if (data.isBetSponsored) {
+                emit FeeSponsored(
+                    msg.sender,
+                    data.affiliate,
+                    order.betOwner,
+                    sponsoredTokenIds,
+                    data.relayerFeeAmount
+                );
+            } else {
+                // bettor make bet
                 uint256[] memory tokenIds = _betOrder(
                     data.core,
                     order,
@@ -134,7 +142,6 @@ contract Relayer is OrderTools, OwnableUpgradeable {
                         msg.sender,
                         data.affiliate,
                         order.betOwner,
-                        data.core,
                         tokenIds,
                         data.relayerFeeAmount
                     );
@@ -168,7 +175,6 @@ contract Relayer is OrderTools, OwnableUpgradeable {
                 relayExecutor,
                 data.affiliate,
                 order.betOwner,
-                data.core,
                 tokenIds,
                 data.relayerFeeAmount
             );
@@ -306,34 +312,5 @@ contract Relayer is OrderTools, OwnableUpgradeable {
         }
 
         return abi.encodePacked(structHash, messageHash);
-    }
-
-    function _getOrderBetsAmounts(
-        OrderData memory order
-    )
-        internal
-        pure
-        virtual
-        returns (uint128 totalAmount, uint128[] memory amounts)
-    {
-        if (order.betType == BetType.COMBO) {
-            totalAmount = abi
-                .decode(order.clientBetData, (ClientComboBetData))
-                .amount;
-            amounts = new uint128[](1);
-            amounts[0] = totalAmount;
-            return (totalAmount, amounts);
-        }
-
-        ClientBetData memory betData = abi.decode(
-            order.clientBetData,
-            (ClientBetData)
-        );
-        amounts = new uint128[](betData.bets.length);
-        for (uint256 i; i < betData.bets.length; ++i) {
-            uint128 _amount = betData.bets[i].amount;
-            amounts[i] = _amount;
-            totalAmount += _amount;
-        }
     }
 }

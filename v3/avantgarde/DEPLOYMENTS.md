@@ -1,6 +1,6 @@
 # avantgarde — deployments
 
-59 verified deployment(s) across 57 component(s).
+61 verified deployment(s) across 58 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -38,6 +38,7 @@
 | ethereum | `0x4a6c312ec70e8747a587ee860a0353cd42be0ae0` | EthereumGeneralAdapter1 | impl | live | no |
 | ethereum | `0x4f75953c2661d3a0138fcd80551ea10b80dd08c7` | KeeperRegistry | impl | live | no |
 | ethereum | `0x50d3d6fd7518682155e3c1b65fdd50e1b35649d9` | MorphoOFTAdapter | impl | live | no |
+| ethereum | `0x5b56f90340dbaa6a8693dadb141d620f0e154fe6` | MetaMorphoV1_1 | impl | live | no |
 | ethereum | `0x6566194141eefa99af43bb5aa71460ca2dc90245` | Bundler3 | impl | live | no |
 | ethereum | `0x6d32736220291d20e927b891aba976c6fc89891f` | ERC4626Feed | impl | live | no |
 | ethereum | `0x72d2277c7242a4464d9b277cf682e350205e6938` | Executor | impl | live | no |
@@ -61,5 +62,6 @@
 | ethereum | `0xdba5bde29ea030bfa6a608592dfca1d02cb26773` | CompoundV3MigrationAdapter | impl | live | no |
 | ethereum | `0xebbae8cfabb0092d5b32f00ebee0c8139d24ddcd` | VaultV2 | impl | live | yes |
 | ethereum | `0xf14dc5bdfa8050a3ebf330092f71c54d3febd16b` | WstethBot | impl | live | no |
+| ethereum | `0xf79f51f8f473ed34f6b2b13ee74c3208286d53eb` | MetaMorphoV1_1 | impl | live | no |
 | ethereum | `0xf83d17dfe160597b19e4fdd8ea61a23e9a87f962` | ERC20WrapperAdapter | impl | live | no |
 | ethereum | `0xf99e3796f94000462f736925cf32162fea82c168` | BulkerGateway | impl | live | no |

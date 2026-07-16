@@ -1,0 +1,58 @@
+{
+  "component": "TransparentUpgradeableProxy",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_entry_count": 13,
+  "source_file_count": 13,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x0edc2b1239d3d4ad03a2deb23517a50a406eb6d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395650"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x44010cbf1ec8b8d8275d86d8e28278c06dd07c48",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395653"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7854d4cfa7d0b877e399bcbdffb49536d7a14fc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395660"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xce71f99c6b09ba50aea18f8132d674dc57fe0839",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395666"
+    }
+  ]
+}

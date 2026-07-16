@@ -1,6 +1,6 @@
 # camelot — deployments
 
-36 verified deployment(s) across 34 component(s).
+39 verified deployment(s) across 37 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -20,6 +20,8 @@
 | arbitrum | `0x46fca952fe399b6bafbf55c4b5b1929b6e1780aa` | AlgebraAdapter-2 | impl | live | no |
 | arbitrum | `0x4ee15342d6deb297c3a2aa7cffd451f788675f53` | SwapRouter-2 | impl | live | no |
 | arbitrum | `0x4efc8a4ceeeeefbb81bfac55a001100b5af39e07` | AlgebraStaticQuoter | impl | live | no |
+| arbitrum | `0x5422aa06a38fd9875fc2501380b40659feebd3bb` | DividendsV2 | impl | live | no |
+| arbitrum | `0x594fb2ec5c7adf3cb68db1e90ace58e643c118a5` | Launchpad | impl | live | no |
 | arbitrum | `0x64c0861a141a7f80ac0b3a32312acad3c62947f3` | AlgebraV2Adapter | impl | live | no |
 | arbitrum | `0x6b692b588def775a92a6d0f3b6cccc8a4a4e5bb8` | AlgebraFactory-2 | impl | live | no |
 | arbitrum | `0x6eccab422d763ac031210895c81787e87b43a652` | CamelotFactory | impl | unknown | no |
@@ -38,5 +40,6 @@
 | arbitrum | `0xd27c373950e7466c53e5cd6ee3f70b240dc0b1b1` | YieldBooster | impl | live | yes |
 | arbitrum | `0xd4f3dce6b616e5283d5c288b287bd8beea47880c` | Distributor-2 | impl | live | no |
 | arbitrum | `0xe04538e23c58022cb8bce506e7d01e04fac5594f` | AlgebraV2StaticQuoter | impl | live | no |
+| arbitrum | `0xe458018ad4283c90fb7f5460e24c4016f81b8175` | PositionHelper | proxy | live | no |
 | arbitrum | `0xe9f6226f173706a96021d8e11474a216da845152` | CamelotYakRouter-3 | impl | live | no |
 | arbitrum | `0xfe24b2cdff01b644995bc248ba8497467d688f7b` | Quoter-2 | impl | live | no |

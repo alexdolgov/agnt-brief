@@ -1,0 +1,28 @@
+{
+  "component": "PlUsdDepositVault",
+  "main_contract": "PlUsdDepositVault",
+  "source_entry_count": 38,
+  "source_file_count": 38,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PlUsdDepositVault\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xc50c3d19f668b8fc355d7e21e3f9e16b2982b77d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405649"
+    }
+  ]
+}

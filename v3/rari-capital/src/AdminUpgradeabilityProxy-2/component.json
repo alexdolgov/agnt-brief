@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/AdminUpgradeabilityProxy-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,26 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "398092"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x66f4856f1bbd1eb09e1c8d9d646f5a3a193da569",
+      "is_proxy": true,
+      "implementation_address": "0xdac4585b741e5b6625cec460d2a255fb3fbe0d47",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398097"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xafd2aade64e6ea690173f6de59fc09f5c9190d74",
+      "is_proxy": true,
+      "implementation_address": "0xb42bc0a99a176a16de9af1a490cae0c6832b43b8",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398105"
     }
   ]
 }

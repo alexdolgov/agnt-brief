@@ -1,0 +1,48 @@
+{
+  "component": "VToken",
+  "main_contract": "VToken",
+  "source_entry_count": 17,
+  "source_file_count": 17,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3d5e269787d562b74acc55f18bd26c5d09fa245e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404735"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6d3bd68e90b42615cb5abf4b8de92b154adc435e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404771"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x92e6ea74a1a3047dabf4186405a21c7d63a0612a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404807"
+    }
+  ]
+}

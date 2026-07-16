@@ -1,6 +1,6 @@
 # shell-protocol — deployments
 
-13 verified deployment(s) across 13 component(s).
+14 verified deployment(s) across 14 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -17,3 +17,4 @@
 | arbitrum | `0xcf17664006851a27d5bd93d497f30853ac558792` | CrabDistributor | impl | live | no |
 | arbitrum | `0xe47ba52f326806559c1dec7ddd997f6957d0317d` | BeaconProxyFactory | proxy | live | no |
 | ethereum | `0x0a440f7b5414dfa7f5ea94a01a21b8fc36f23276` | SeedPoem | impl | live | no |
+| ethereum | `0x8dcaec45365e5ada5676073a07b418c2f538145a` | Shell | impl | live | no |

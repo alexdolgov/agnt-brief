@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/AdminUpgradeabilityProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 8,
+  "deployment_count": 15,
   "audited": true,
   "audits_covering": [
     "https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/add-collateral-routine/PeckShield-Audit-Report-Alpaca-addCollateral-v1.0.pdf",
@@ -20,6 +20,16 @@
     "https://github.com/alpaca-finance/bsc-alpaca-contract/blob/main/audits/protocol/PeckShield-Audit-Report-Alpaca-v1.0.pdf"
   ],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x02da7035bed00ae645516bdb0c282a7fd4aa7442",
+      "is_proxy": true,
+      "implementation_address": "0x036664394715d255895f600861fe882a167dbf57",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390814"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,
@@ -43,12 +53,52 @@
     {
       "chain": "bsc",
       "chain_id": 56,
+      "address": "0x158da805682bdc8ee32d52833ad41e74bb951e59",
+      "is_proxy": true,
+      "implementation_address": "0x7684966f3a3d679939622ef0260ec9a20318e981",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390818"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x262de19b5fde97ed5bdba10d630e34fb9a1b59b2",
+      "is_proxy": true,
+      "implementation_address": "0x036664394715d255895f600861fe882a167dbf57",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405178"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
       "address": "0x3282d2a151ca00bfe7ed17aa16e42880248cd3cd",
       "is_proxy": true,
       "implementation_address": "0x4a54a18222e45ae16db86677cfac730cf32dc5db",
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "390822"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x3b4fbb2b8536ab144048abafdd27eaf52f0fa4dc",
+      "is_proxy": true,
+      "implementation_address": "0x036664394715d255895f600861fe882a167dbf57",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405179"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6a3487ce84fd83c66b83e598b18412bd1d2a55f9",
+      "is_proxy": true,
+      "implementation_address": "0x036664394715d255895f600861fe882a167dbf57",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405185"
     },
     {
       "chain": "bsc",
@@ -69,6 +119,26 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "405186"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x92110af24d280e412b3a89691f6b0b9e09258fe6",
+      "is_proxy": true,
+      "implementation_address": "0x036664394715d255895f600861fe882a167dbf57",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405190"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xb76ed435b93477511e4604c441550a23d5aeaf84",
+      "is_proxy": true,
+      "implementation_address": "0x036664394715d255895f600861fe882a167dbf57",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405193"
     },
     {
       "chain": "bsc",

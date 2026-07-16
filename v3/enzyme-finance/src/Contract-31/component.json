@@ -1,0 +1,30 @@
+{
+  "component": "Contract-31",
+  "main_contract": "Contract",
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-31\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/enzymefinance/protocol/blob/dev/audits/2023-12-CS--term-finance-lending--zero-ex-v4-otc--maple-fix.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa95c7bab91692df52255b8ad50c5ed2bcc9064ad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

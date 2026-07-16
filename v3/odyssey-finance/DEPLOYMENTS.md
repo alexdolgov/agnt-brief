@@ -1,6 +1,6 @@
 # odyssey-finance — deployments
 
-179 verified deployment(s) across 91 component(s).
+193 verified deployment(s) across 94 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -15,7 +15,8 @@
 | base | `0x2047895ae389f775e9196170aab4ed969f2a2298` | PoolRegistry | impl | live | no |
 | base | `0x206eba040e4e86667b8ab4275bb75f220e9a2821` | AaveV3 | impl | live | no |
 | base | `0x24186a4814a826c84ba127f7f24eac6b06c957d0` | DebtToken | impl | live | no |
-| base | `0x2b77378c70f4b43de2824d217e9ae4910cddf6a8` | PerformanceFeePolicy-2 | impl | live | no |
+| base | `0x2b77378c70f4b43de2824d217e9ae4910cddf6a8` | PerformanceFeePolicy-3 | impl | live | no |
+| base | `0x3078742bacdfecbe6f8d9e77f1aaa1000c074fcf` | PerformanceFeePolicy-2 | impl | live | no |
 | base | `0x3a6c9bcd6fb76df40d7aa66ced63ad8399f6066b` | OFT | impl | live | no |
 | base | `0x3b2cd4d53680ec024f558b3e6ba2c92bc02941d5` | RecurringSwapExecutor | impl | live | no |
 | base | `0x3efcee552716472dd2b321326654e4097f58d79b` | AaveV3BorrowStrategy | impl | live | no |
@@ -26,7 +27,7 @@
 | base | `0x52edbc52fe7fe1b2e34a9da11b4ec0c323525f07` | CrossChainDispatcher | impl | live | no |
 | base | `0x5ea5c6c661936de3f2461c50d3f01157b14af671` | Quoter | impl | live | no |
 | base | `0x64b5bb3b7ef0267019fee5b826c60cb9b7609373` | Operator | impl | live | no |
-| base | `0x669954e6b63b2156e120f815d0b734589153f334` | ProtocolTieredFeePolicy-2 | impl | live | no |
+| base | `0x669954e6b63b2156e120f815d0b734589153f334` | ProtocolTieredFeePolicy-3 | impl | live | no |
 | base | `0x67799bd3b0abaf070e5ea94a5bc5f7d9c4a401e1` | ProxyOFT | impl | live | no |
 | base | `0x6a7c1d820d672c2d25d5c5d9ac5442d9243b2ef4` | ERC4626 | impl | live | no |
 | base | `0x6aa69c031170b04e2d6ec02520b6f49d649031b8` | MorphoFlashLoan-2 | impl | live | no |
@@ -41,16 +42,18 @@
 | base | `0x87acd9823c1269ec5a2233fc941b22d747366910` | MorphoBorrowStrategy | impl | live | no |
 | base | `0x8a654093e21703afc8d038ff253a3c974c5c2957` | OFT-2 | impl | live | no |
 | base | `0x96a11f928ca1cd5341ffaa773a97bec85c4acf31` | Pool | impl | live | no |
-| base | `0x9a1ba8f5ee3c1ac0d724c4b55d4b3cac35c9ddd5` | ProtocolTieredFeePolicy-3 | impl | live | no |
+| base | `0x9a1ba8f5ee3c1ac0d724c4b55d4b3cac35c9ddd5` | ProtocolTieredFeePolicy-4 | impl | live | no |
 | base | `0x9e1a7ec69a311af701c071049e24d51ea06d6b4e` | ERC4626Adapter | impl | live | no |
 | base | `0xa3ceec1740090b303a9682cd43f1f14d7bac4da2` | PositionRegistry-7 | impl | live | no |
 | base | `0xab890edfc63959a2b3794800b4f68f608b0827c3` | CompoundV3VesperStrategy | impl | live | no |
 | base | `0xad42b83c53dd7cffcab35a5e4d4f5db313c81562` | PositionRegistry-3 | impl | live | no |
 | base | `0xb174750002068862dfe7df38f974a950f189386a` | OFT-2 | impl | live | no |
+| base | `0xc0bc99efeb9039493e888900a81ed30a3468370e` | ProxyAdmin | impl | live | no |
 | base | `0xc276309a6c01cee346ca913db44ce4936ec8b9c5` | CompoundV3BorrowStrategy | impl | live | no |
 | base | `0xc6fffa0e234e5ec80b8654cb351da90a092f6c95` | OFT-3 | impl | live | no |
 | base | `0xcb6dafb36b40c9c7371108f66a5184ff3b01ee0d` | Treasury | impl | live | no |
 | base | `0xccf1f2ad7137347daa5815048c99952fb9639f3c` | Vesper | impl | live | no |
+| base | `0xceb64bcdbee34f5d390d95f501d54ce8305c83e8` | ProxyAdmin | impl | live | no |
 | base | `0xda108077f35278f8c95d70f4fdbb3673f82cf6ca` | OFT | impl | live | no |
 | base | `0xde433f614e50d7c0b21fd00a3d625b000c9c9736` | AjnaBorrowStrategy | impl | live | no |
 | base | `0xe08acc210b828588947cab3ec4dc8d4f4fabd828` | PositionRegistry-3 | impl | live | no |
@@ -60,6 +63,7 @@
 | base | `0xf4868cec8c7e13bba1e3ba65b029449c13ea0543` | ERC4626Strategy | impl | live | no |
 | base | `0xf70acacfb981c8be2ddc48093f4042b88f0da5d9` | CallOrderExecutor | impl | live | no |
 | base | `0xf8dea58979a47f226ac46dfe204a7146a8e06892` | Morpho | impl | live | no |
+| base | `0xfca22bb50375f172692303deb373c21378ddbaaa` | ProxyAdmin | impl | live | no |
 | base | `0xff7ad44c16cd9a758af57f2506d5a08af1188540` | DepositToken | impl | live | no |
 | ethereum | `0x010f0bd6576949e6ac6eea11ed8c535388340e94` | OFTAdapter | impl | live | no |
 | ethereum | `0x01491b3598a90c080b9429f9a86764fa6845ae65` | PoolRegistry | impl | live | no |
@@ -110,21 +114,25 @@
 | ethereum | `0xa574a43c881639cb173d355413c187e6d4cdc67f` | PerformanceFeePolicy | impl | live | no |
 | ethereum | `0xa6a4db8d44769c0420742a750fc8a5c4ec077585` | FeeProvider | impl | live | no |
 | ethereum | `0xa716249b1f06483d08c2073a46e4308b9539ae13` | OFT | impl | live | no |
+| ethereum | `0xaa59006ae8dcfc7137a352e6142b39c2dee8622e` | PerformanceFeePolicy-2 | impl | live | no |
 | ethereum | `0xab890edfc63959a2b3794800b4f68f608b0827c3` | CompoundV3VesperStrategy | impl | live | no |
 | ethereum | `0xac6369fa74dc3585a85c5efcd59f869fc01fb90d` | OFTAdapter | impl | live | no |
 | ethereum | `0xb3fa4a7323b86fece91639eb8f312fed4bf01792` | PoolRegistry | impl | live | no |
 | ethereum | `0xb5a44c7f34e93a72425efdd002b9754ac2b98445` | AaveV2 | impl | live | yes |
 | ethereum | `0xb8d187ce5c5b172984cd1544d1679eacaf107aec` | SmartFarmingManager | impl | live | no |
 | ethereum | `0xc06d6347915f6b5e9dbb53fe17b988b99dbad360` | Operator | impl | live | no |
+| ethereum | `0xc0bc99efeb9039493e888900a81ed30a3468370e` | ProxyAdmin | impl | live | no |
 | ethereum | `0xc276309a6c01cee346ca913db44ce4936ec8b9c5` | CompoundV3BorrowStrategy | impl | live | no |
 | ethereum | `0xc67abc3fba59860b2dbf77fd1cf59d5455d6ed14` | SwapAggregator | impl | live | no |
 | ethereum | `0xccf1f2ad7137347daa5815048c99952fb9639f3c` | Vesper-2 | impl | live | no |
 | ethereum | `0xce32679c865f37ae6513a366118aa783ae15780e` | CompoundV2VesperStrategy | impl | live | yes |
+| ethereum | `0xceb64bcdbee34f5d390d95f501d54ce8305c83e8` | ProxyAdmin | impl | live | no |
 | ethereum | `0xd0aab6695b8ad921baa1ac8821e54d062c400e06` | ProtocolTieredFeePolicy | impl | live | no |
 | ethereum | `0xd8a7ceccecbeded9f5350f4ca8faf55ab92f3390` | SyntheticToken | impl | live | no |
 | ethereum | `0xde433f614e50d7c0b21fd00a3d625b000c9c9736` | AjnaBorrowStrategy | impl | live | no |
 | ethereum | `0xe08acc210b828588947cab3ec4dc8d4f4fabd828` | PositionRegistry-2 | impl | live | no |
 | ethereum | `0xe32ad0e671a9ec7cdeec85c6664466efb5548682` | InifniFiAdapter-2 | impl | live | no |
+| ethereum | `0xeb1df74c87875be3eef1a2407aa906665bfa5684` | ProtocolTieredFeePolicy-2 | impl | live | no |
 | ethereum | `0xf4868cec8c7e13bba1e3ba65b029449c13ea0543` | ERC4626Strategy-2 | impl | live | no |
 | ethereum | `0xf6f3fee894abf3bf1d11c1bb50c252df19410559` | LooprFactory | impl | live | no |
 | ethereum | `0xf70acacfb981c8be2ddc48093f4042b88f0da5d9` | CallOrderExecutor | impl | live | no |
@@ -132,6 +140,7 @@
 | ethereum | `0xf974d7435e86db32d8a6d021934712ea51f2fb41` | InfiniFiAdapter | impl | live | no |
 | ethereum | `0xf9eeae6a02c91914f046331bf2dc4c4a9ca7ef51` | AgentUpgrader-2 | impl | live | no |
 | ethereum | `0xfc8acf5ef1e8839ec94151740cfed95d7e579afb` | OFTAdapter | impl | live | no |
+| ethereum | `0xfca22bb50375f172692303deb373c21378ddbaaa` | ProxyAdmin | impl | live | no |
 | ethereum | `0xfcb475b05682f84b489083b131f62b77cef1d0ed` | AaveV2BorrowStrategy | impl | live | yes |
 | optimism | `0x077f89c0fc4259b8e2abc0fe6eec655eb2da87d5` | Quoter | impl | live | no |
 | optimism | `0x0b874b240ef6d9d9543dbdeb224cddc4ba71fd0f` | OFT | impl | live | no |
@@ -165,21 +174,26 @@
 | optimism | `0x9614bfc8e5350e559a9a02eab4574d5b332fc87f` | SwapOrdersFillerUsingUniV2 | impl | live | no |
 | optimism | `0x983419398942ca35ab21fe55150a77a068db73e6` | PositionRegistry-4 | impl | live | no |
 | optimism | `0x9a41fde326d3de75b4672f8e9315dbcd56d128d7` | SyntheticToken-2 | impl | live | no |
+| optimism | `0xa6798b67e38e180d86474330c0f49e7ef1adab14` | PerformanceFeePolicy-2 | impl | live | no |
 | optimism | `0xaa023c88d8327c63c6e7253f1ffd9193348238d6` | Pool | impl | live | no |
 | optimism | `0xae4b310cacd09ca7fd839973c34e514b200150c0` | DebtToken | impl | live | no |
 | optimism | `0xb5259c05764468c33c9c36e327caad020a8e5fe1` | OFT-3 | impl | live | no |
 | optimism | `0xb591169e6508983cc6618738cc73c9f09c38de14` | OFT-4 | impl | live | no |
 | optimism | `0xb6ecf1a552b0f4e520ff2934e60b756055f0c362` | CrossChainDispatcher | impl | live | no |
 | optimism | `0xc04bcdf8ffb0c126a0fa5229e8db65771aa1bd7c` | Treasury | impl | live | no |
+| optimism | `0xc0bc99efeb9039493e888900a81ed30a3468370e` | ProxyAdmin | impl | live | no |
 | optimism | `0xc38aaff68a81dff9f809b03f9cba84e9aed821ba` | ProxyOFT | impl | live | no |
 | optimism | `0xc507ef1f4cd0862980b4bd0d8e56e18606a50d87` | OFT | impl | live | no |
 | optimism | `0xccf1f2ad7137347daa5815048c99952fb9639f3c` | Vesper | impl | live | no |
+| optimism | `0xceb64bcdbee34f5d390d95f501d54ce8305c83e8` | ProxyAdmin | impl | live | no |
 | optimism | `0xd5386d8f78a810c1574f0b7bbbea5cb22a260121` | NativeTokenGateway | impl | live | no |
 | optimism | `0xdce663bf14e025f7164d992fe455e6fa88f34a91` | FeeProvider | impl | live | no |
+| optimism | `0xe0af15b4689cf81a9f1bfc6857d842f2813d3017` | ProtocolTieredFeePolicy-2 | impl | live | no |
 | optimism | `0xf4868cec8c7e13bba1e3ba65b029449c13ea0543` | ERC4626Strategy | impl | live | no |
 | optimism | `0xf67e6579a2b9a83c537353efb0fa5646ac1cc9ea` | PositionRegistry | impl | live | no |
 | optimism | `0xf70acacfb981c8be2ddc48093f4042b88f0da5d9` | CallOrderExecutor | impl | live | no |
 | optimism | `0xf8dea58979a47f226ac46dfe204a7146a8e06892` | Morpho | impl | live | no |
 | optimism | `0xf9bd6b94c11e3a6d8bb412296de27bca367edd2d` | PositionRegistry | impl | live | no |
 | optimism | `0xfc51f8edc0f1bc897ba1e0909aa48f04cbeb08bf` | SmartFarmingManager | impl | live | no |
+| optimism | `0xfca22bb50375f172692303deb373c21378ddbaaa` | ProxyAdmin | impl | live | no |
 | optimism | `0xfd7d5edd096b98ac2391043b22b96aa63dd63613` | CallOrdersFillerUsingUniV2 | impl | live | no |

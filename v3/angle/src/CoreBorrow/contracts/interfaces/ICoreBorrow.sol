@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity ^0.8.12;
+pragma solidity 0.8.12;
 
 /// @title ICoreBorrow
-/// @author Angle Labs, Inc.
+/// @author Angle Core Team
 /// @notice Interface for the `CoreBorrow` contract
 /// @dev This interface only contains functions of the `CoreBorrow` contract which are called by other contracts
 /// of this module

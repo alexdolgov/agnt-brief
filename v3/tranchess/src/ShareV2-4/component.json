@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/ShareV2-4\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x307462d1a183659e9af73fa1bca7a0d858714598",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400448"
+    },
     {
       "chain": "ethereum",
       "chain_id": 1,
@@ -23,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "400408"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xbb18521b4b19bcb7e6c2327f13bbd8e8149ca3a9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400456"
     }
   ]
 }

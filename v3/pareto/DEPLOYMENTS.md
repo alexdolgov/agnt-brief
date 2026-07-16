@@ -1,6 +1,6 @@
 # pareto — deployments
 
-75 verified deployment(s) across 75 component(s).
+79 verified deployment(s) across 79 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -63,6 +63,7 @@
 | ethereum | `0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf` | FiatTokenV2_1 | impl | unknown | no |
 | ethereum | `0xaefb1325a2c1756bc3fcc516d6c2cf947d225358` | IdlePriceCalculator | impl | unknown | no |
 | ethereum | `0xb7277a6e95992041568d9391d09d0122023778a2` | FiatTokenV2 | impl | unknown | no |
+| ethereum | `0xbaecba470c229984b75bc860efe8e97ae082bb9f` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0xbf875f2c6e4cc1688dfe4ecf79583193b6089972` | VesterFactory | impl | unknown | no |
 | ethereum | `0xcf93471a82241c2be469d83d960932721b098ffb` | EulerStakingPYTStrategy | impl | unknown | no |
 | ethereum | `0xd3af1317450d291c328525a8eb183d5cca45553d` | IdlePYT | impl | unknown | no |
@@ -73,9 +74,12 @@
 | optimism | `0x0fdcdc3df70420bad4f7ead4852f961b5d809df1` | IdlePYTClear | impl | unknown | no |
 | optimism | `0x6976e70270ac078391880515b8ce2dc047a724dc` | IdleCDOEpochDepositQueue | impl | unknown | no |
 | optimism | `0x6b8a1e78ac707f9b0b5eb4f34b02d9af84d2b689` | IdleCDOOptimism | impl | unknown | no |
+| optimism | `0xfdbb4d606c199f091143bd604c85c191a526fbd0` | GnosisSafeProxy | impl | live | no |
 | polygon | `0x168dc532aa8071003daa1a8094d938511f412e2b` | KeyringIdleWhitelist | impl | unknown | no |
 | polygon | `0x17e0d3f5caede03c97becac4ecb27739a15e9485` | IdleTokenHelperMatic | impl | unknown | no |
 | polygon | `0x1b0f494ef778907336bd7e631607db2c8019bf76` | HypernativeBatchPauser | impl | unknown | no |
 | polygon | `0x2540971d944921b51e3434503922ea92f2ee0862` | TokenGeyserPolygon | impl | unknown | no |
+| polygon | `0x45f4fb4d0ccc439bb7b85ba63064958ab7e31ee4` | Timelock | impl | live | no |
 | polygon | `0x466cfdff869666941cdb89daa412c3cddc55d6c1` | StakingRewards | impl | unknown | no |
+| polygon | `0x61a944ca131ab78b23c8449e0a2ef935981d5cf6` | GnosisSafeProxy-2 | proxy | live | no |
 | polygon | `0xad27d10ef37e809b67b1a7e74f65e781cc5a693d` | MinimalInitializableProxyFactory | impl | unknown | no |

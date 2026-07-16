@@ -1,0 +1,44 @@
+{
+  "component": "FeeReceiverCvxPrisma",
+  "main_contract": "FeeReceiverCvxPrisma",
+  "source_entry_count": 7,
+  "source_file_count": 7,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/FeeReceiverCvxPrisma.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-7160d7420551-FeeReceiverCvxPrisma.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IRewards.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-3584726f594e-IRewards.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IFeeReceiver.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-3e1d12a38add-IFeeReceiver.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FeeReceiverCvxPrisma\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaf92400476cd81c7379bb54fd2646e8fa476cf3f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405307"
+    }
+  ]
+}

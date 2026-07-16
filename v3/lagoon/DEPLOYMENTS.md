@@ -1,11 +1,12 @@
 # lagoon — deployments
 
-11 verified deployment(s) across 11 component(s).
+12 verified deployment(s) across 11 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x23fbda54849e8904154c8f8436a59b95b1d397cb` | ShowcaseBug | impl | unknown | no |
 | chain-1329 | `0x2f02db0a974841f710362e96742cacc2c786dbfd` | MockLogicRegistry | impl | unknown | no |
+| chain-999 | `0x90beb507a1ba7d64633540cbce615b574224cd84` | Context | proxy | live | yes |
 | ethereum | `0x03d1ec0d01b659b89a87eabb56e4af5cb6e14bfc` | LagoonVault | proxy | unknown | no |
 | ethereum | `0x065ef71bcdc43adb76bd0585d02ffe7c9e0d8950` | Vault | impl | unknown | no |
 | ethereum | `0x23fbda54849e8904154c8f8436a59b95b1d397cb` | Vault_v0_5_0 | impl | unknown | no |

@@ -70,13 +70,12 @@ contract SickleFactory is Admin {
 
     function _deploy(
         address admin,
-        address approved,
         bytes32 referralCode
     ) internal returns (address sickle) {
         sickle = Clones.cloneDeterministic(
             implementation, keccak256(abi.encode(admin))
         );
-        Sickle(payable(sickle)).initialize(admin, approved);
+        Sickle(payable(sickle)).initialize(admin);
         _sickles[admin] = sickle;
         _admins[sickle] = admin;
         if (referralCode != bytes32(0)) {
@@ -152,7 +151,6 @@ contract SickleFactory is Admin {
     /// @return sickle Address of the deployed Sickle contract
     function getOrDeploy(
         address admin,
-        address approved,
         bytes32 referralCode
     ) external returns (address sickle) {
         if (!isActive) {
@@ -164,7 +162,7 @@ contract SickleFactory is Admin {
         if ((sickle = _getSickle(admin)) != address(0)) {
             return sickle;
         }
-        return _deploy(admin, approved, referralCode);
+        return _deploy(admin, referralCode);
     }
 
     /// @notice Deploys a new Sickle contract for a specific user
@@ -173,16 +171,13 @@ contract SickleFactory is Admin {
     /// and only 1 Sickle will exist per address
     /// @param referralCode Referral code for the user
     /// @return sickle Address of the deployed Sickle contract
-    function deploy(
-        address approved,
-        bytes32 referralCode
-    ) external returns (address sickle) {
+    function deploy(bytes32 referralCode) external returns (address sickle) {
         if (!isActive) {
             revert NotActive();
         }
         if (_getSickle(msg.sender) != address(0)) {
             revert SickleAlreadyDeployed();
         }
-        return _deploy(msg.sender, approved, referralCode);
+        return _deploy(msg.sender, referralCode);
     }
 }

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/BridgeWithdrawStrategy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 19,
+  "deployment_count": 20,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -51,6 +51,16 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0x3538683cf26ec9c5e21f7e825817410906ad7d97",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     },

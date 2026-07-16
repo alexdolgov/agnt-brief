@@ -1,9 +1,35 @@
 {
   "component": "Booster-2",
   "main_contract": "Booster",
-  "source_entry_count": 1,
-  "source_file_count": 1,
-  "source_path_remaps": [],
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/Booster.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-940a796fb136-Booster.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/ITokenLocker.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-5b04ddd7a1ed-ITokenLocker.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IStaker.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-4e4cfb27b67f-IStaker.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IPrismaVault.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-3f858622baf9-IPrismaVault.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IFeeReceiver.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-3e1d12a38add-IFeeReceiver.sol",
+      "reason": "unsafe_path"
+    }
+  ],
   "foundry": {
     "root": ".",
     "config": "foundry.toml",
@@ -11,30 +37,28 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 2,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2a465a53404d4ad945b65ba29fc725cd4eca0a74",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live",
+      "liveness": "inactive",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xf403c135812408bfbe8713b5a23a04b3d48aae31",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcce10d2d2e71d7803242c0d72040ede966a2de96",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393116"
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

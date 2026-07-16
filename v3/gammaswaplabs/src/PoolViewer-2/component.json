@@ -1,0 +1,28 @@
+{
+  "component": "PoolViewer-2",
+  "main_contract": "PoolViewer",
+  "source_entry_count": 21,
+  "source_file_count": 21,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PoolViewer-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5fbe219e88f6c6f214ce6f5b1fcaa0294f31ae1b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

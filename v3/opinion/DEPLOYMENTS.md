@@ -1,6 +1,6 @@
 # opinion — deployments
 
-20 verified deployment(s) across 10 component(s).
+21 verified deployment(s) across 11 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -17,6 +17,7 @@
 | bsc | `0x7aeef402cf76b2007ed842ed883f60465b223d1d` | CTFExecutionEngine-2 | impl | live | no |
 | bsc | `0x932a47f289a30b0a2ab84d5aadc6ba72127398d3` | CTFExecutionEngine | impl | live | no |
 | bsc | `0x95665d44be0f3ad1bbe3b05cd96512d89ce20585` | CTFExecutionEngine-2 | impl | live | no |
+| bsc | `0x998739bfdaadde7c933b942a68053933098f9eda` | MultiSend | impl | live | no |
 | bsc | `0xa26fbc2271703cb59738ad8f0fb38777779cf9b0` | CTFExecutionEngine-4 | impl | live | no |
 | bsc | `0xad1a38cec043e70e83a3ec30443db285ed10d774` | ConditionalTokens | impl | live | yes |
 | bsc | `0xc9063dc52deefb518e5b6634a6b8d624bc5d7c36` | CTFExchangeFeeManager-4 | impl | live | yes |

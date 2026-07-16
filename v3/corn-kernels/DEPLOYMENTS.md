@@ -1,10 +1,11 @@
 # corn-kernels — deployments
 
-121 verified deployment(s) across 113 component(s).
+127 verified deployment(s) across 119 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | ethereum | `0x003ea7f54b6dcf6cee86986edc18143a35f15505` | MiniMeTokenFactory | impl | unknown | no |
+| ethereum | `0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x006e1248be5e40b4a4e7099397719df7ab872de7` | DVN | impl | unknown | no |
 | ethereum | `0x021e401c2a1a60618c5e6353a40524971eba1e8d` | DVNFeeLib | impl | unknown | no |
 | ethereum | `0x0253642ead35b0ff26ba96992a3079c1ca51c1bd` | Bitcorn | proxy | unknown | yes |
@@ -19,6 +20,7 @@
 | ethereum | `0x087cebbd85a161a50f91b9d7743e8b89fc384e2e` | NonceContractRadar | impl | unknown | no |
 | ethereum | `0x0882477e7895bdc5cea7cb1552ed914ab157fe56` | FiatTokenV1 | impl | unknown | no |
 | ethereum | `0x0969f8752a32b4f1f9d07b751c7bacbf6d9ae733` | CornDeployer | impl | unknown | no |
+| ethereum | `0x09def5abc67e967d54e8233a4b5ebbc1b3fbe34b` | waBTC | impl | live | no |
 | ethereum | `0x0a3bd90a5a1e52c2900c863bd2b37c3bf65ee310` | TimelockControllerEnumerable | impl | unknown | no |
 | ethereum | `0x0ab536262d4d44b0ec1fc7bf4e6dec4b4557ad21` | LzExecutor | impl | unknown | no |
 | ethereum | `0x0ac774014e2306dbddac4af7cb0f80087de76f52` | PodOwner | impl | unknown | no |
@@ -110,6 +112,7 @@
 | ethereum | `0xb823359367978a28eae71e90f79d95b62348bd80` | AssetRouter | impl | unknown | no |
 | ethereum | `0xbb2ea70c9e858123480642cf96acbcce1372dce1` | SendUln302 | impl | unknown | no |
 | ethereum | `0xbec6f0034cb9055b68dc5f02873b45841ab56af7` | OptimizedTransparentUpgradeableProxy-4 | proxy | unknown | no |
+| ethereum | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | WETH9 | impl | live | no |
 | ethereum | `0xc02ab410f0734efa3f14628780e6e695156024c2` | ReceiveUln302 | impl | unknown | no |
 | ethereum | `0xc1fe8a0daed7e912d3b5b56ff6e05f17d82059c8` | Mailbox | impl | unknown | no |
 | ethereum | `0xc3ecfe771564e3f28cfb7a9b203f4d10279338ed` | GMPBasculeV1 | impl | unknown | no |
@@ -121,7 +124,10 @@
 | ethereum | `0xd231084bfb234c107d3ee2b22f97f3346fdaf705` | SendUln301 | impl | unknown | no |
 | ethereum | `0xd2b8c78a5eb18a5f3b0392c5479bb45c77d02ff5` | LRTSquaredAdmin | impl | unknown | no |
 | ethereum | `0xd5edf7730abad812247f6f54d7bd31a52554e35e` | UUPSProxy-9 | proxy | unknown | no |
+| ethereum | `0xd9d920aa40f578ab794426f5c90f6c731d159def` | BeaconProxy | proxy | live | no |
 | ethereum | `0xe04f26f3f47b6054aeb15796ac4af3c61f08e832` | MPTValidatorV5 | impl | unknown | no |
 | ethereum | `0xe20403867780129b9b5be8da9a84511b406fc6d2` | TreasuryFeeHandler | impl | unknown | no |
 | ethereum | `0xe9ae261d3aff7d3fccf38fa2d612dd3897e07b2d` | MPTValidatorV2 | impl | unknown | no |
+| ethereum | `0xf6718b2701d4a6498ef77d7c152b2137ab28b8a3` | stBTC | impl | live | no |
 | ethereum | `0xf6c8bd9229b908dbc54fd5eab7dbca037b18c46d` | ReceiveUln302View | impl | unknown | no |
+| ethereum | `0xf939e0a03fb07f59a73314e73794be0e57ac1b4e` | crvUSDStablecoin | impl | live | no |

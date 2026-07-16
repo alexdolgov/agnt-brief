@@ -1,6 +1,6 @@
 # yieldnest — deployments
 
-12 verified deployment(s) across 4 component(s).
+14 verified deployment(s) across 5 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -16,3 +16,5 @@
 | ethereum | `0x657d9aba1dbb59e53f9f3ecaa878447dcfc96dcb` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x8c33a1d6d062db7b51f79702355771d44359cd7d` | Contract | impl | live | yes |
 | ethereum | `0xd1573de52fff44dd92d275e20fdab0296ccff141` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| optimism | `0xdb8e54f39aff243b25a41e4747957ed517af0511` | Context | proxy | live | no |
+| optimism | `0xe231db5f348d709239ef1741ea30961b3b635a61` | Context | proxy | live | no |

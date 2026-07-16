@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/ICHIVaultDepositGuard-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 4,
+  "deployment_count": 5,
   "audited": true,
   "audits_covering": [
     "https://github.com/bailsec/BailSec/blob/main/Bailsec%20-%20ICHI%20-%20Vaults%20-%20Final%20Report.pdf"
@@ -35,6 +35,16 @@
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfa196a6c9137b320e8801252e3020f25aee5c234",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400245"
     },
     {
       "chain": "chain-42220",

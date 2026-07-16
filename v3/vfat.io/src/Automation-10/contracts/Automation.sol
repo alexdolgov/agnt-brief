@@ -40,9 +40,6 @@ import {
 contract Automation is Admin, NonDelegateMulticall {
     error InvalidInputLength();
     error NotApprovedAutomator();
-    error InvalidAutomator();
-    error ApprovedAutomatorNotSet(address approvedAutomator);
-    error ApprovedAutomatorAlreadySet(address approvedAutomator);
 
     event HarvestedFor(
         Sickle indexed sickle,
@@ -82,30 +79,21 @@ contract Automation is Admin, NonDelegateMulticall {
         address indexed nftAddress,
         uint256 indexed tokenId
     );
-
     event ApprovedAutomatorSet(address approvedAutomator);
-    event ApprovedAutomatorRevoked(address approvedAutomator);
 
-    address[] public approvedAutomators;
-    mapping(address => bool) public isApprovedAutomator;
+    address payable public approvedAutomator;
 
     constructor(
         SickleRegistry registry_,
         address payable approvedAutomator_,
         address admin_
     ) Admin(admin_) NonDelegateMulticall(registry_) {
-        _setApprovedAutomator(approvedAutomator_);
+        approvedAutomator = approvedAutomator_;
     }
 
     modifier onlyApprovedAutomator() {
-        if (!isApprovedAutomator[msg.sender]) revert NotApprovedAutomator();
+        if (msg.sender != approvedAutomator) revert NotApprovedAutomator();
         _;
-    }
-
-    /// Public functions
-
-    function approvedAutomatorsLength() external view returns (uint256) {
-        return approvedAutomators.length;
     }
 
     // Admin functions
@@ -118,25 +106,8 @@ contract Automation is Admin, NonDelegateMulticall {
     function setApprovedAutomator(
         address payable approvedAutomator_
     ) external onlyAdmin {
-        _setApprovedAutomator(approvedAutomator_);
-    }
-
-    function revokeApprovedAutomator(
-        address approvedAutomator_
-    ) external onlyAdmin {
-        if (!isApprovedAutomator[approvedAutomator_]) {
-            revert ApprovedAutomatorNotSet(approvedAutomator_);
-        }
-        for (uint256 i; i < approvedAutomators.length; i++) {
-            if (approvedAutomators[i] == approvedAutomator_) {
-                approvedAutomators[i] =
-                    approvedAutomators[approvedAutomators.length - 1];
-                approvedAutomators.pop();
-                break;
-            }
-        }
-        isApprovedAutomator[approvedAutomator_] = false;
-        emit ApprovedAutomatorRevoked(approvedAutomator_);
+        approvedAutomator = approvedAutomator_;
+        emit ApprovedAutomatorSet(approvedAutomator_);
     }
 
     // Automator functions
@@ -158,7 +129,7 @@ contract Automation is Admin, NonDelegateMulticall {
 
         address[] memory targets = new address[](strategiesLength);
         bytes[] memory data = new bytes[](strategiesLength);
-        for (uint256 i; i < strategiesLength;) {
+        for (uint256 i; i < strategiesLength; i++) {
             Sickle sickle = sickles[i];
             CompoundParams memory param = params[i];
             targets[i] = address(strategies[i]);
@@ -172,9 +143,6 @@ contract Automation is Admin, NonDelegateMulticall {
                 param.depositFarm.stakingContract,
                 param.depositFarm.poolIndex
             );
-            unchecked {
-                ++i;
-            }
         }
         this.multicall(targets, data);
     }
@@ -189,7 +157,6 @@ contract Automation is Admin, NonDelegateMulticall {
         uint256 strategiesLength = strategies.length;
         if (
             strategiesLength != sickles.length
-                || strategiesLength != farms.length
                 || strategiesLength != params.length
                 || strategiesLength != sweepTokens.length
         ) {
@@ -198,7 +165,7 @@ contract Automation is Admin, NonDelegateMulticall {
 
         address[] memory targets = new address[](strategiesLength);
         bytes[] memory data = new bytes[](strategiesLength);
-        for (uint256 i; i < strategiesLength;) {
+        for (uint256 i; i < strategiesLength; i++) {
             Sickle sickle = sickles[i];
             Farm memory farm = farms[i];
             HarvestParams memory param = params[i];
@@ -207,9 +174,6 @@ contract Automation is Admin, NonDelegateMulticall {
                 IAutomation.harvestFor, (sickle, farm, param, sweepTokens[i])
             );
             emit HarvestedFor(sickle, farm.stakingContract, farm.poolIndex);
-            unchecked {
-                ++i;
-            }
         }
         this.multicall(targets, data);
     }
@@ -237,7 +201,7 @@ contract Automation is Admin, NonDelegateMulticall {
 
         address[] memory targets = new address[](strategiesLength);
         bytes[] memory data = new bytes[](strategiesLength);
-        for (uint256 i; i < strategiesLength;) {
+        for (uint256 i; i < strategiesLength; i++) {
             targets[i] = address(strategies[i]);
             data[i] = abi.encodeCall(
                 IAutomation.exitFor,
@@ -253,9 +217,6 @@ contract Automation is Admin, NonDelegateMulticall {
             emit ExitedFor(
                 sickles[i], farms[i].stakingContract, farms[i].poolIndex
             );
-            unchecked {
-                ++i;
-            }
         }
         this.multicall(targets, data);
     }
@@ -280,7 +241,7 @@ contract Automation is Admin, NonDelegateMulticall {
 
         address[] memory targets = new address[](strategiesLength);
         bytes[] memory data = new bytes[](strategiesLength);
-        for (uint256 i; i < strategiesLength;) {
+        for (uint256 i; i < strategiesLength; i++) {
             Sickle sickle = sickles[i];
             NftPosition memory position = positions[i];
             targets[i] = address(strategies[i]);
@@ -290,9 +251,6 @@ contract Automation is Admin, NonDelegateMulticall {
             emit NftHarvestedFor(
                 sickle, address(position.nft), position.tokenId
             );
-            unchecked {
-                ++i;
-            }
         }
         this.multicall(targets, data);
     }
@@ -310,7 +268,6 @@ contract Automation is Admin, NonDelegateMulticall {
             strategiesLength != sickles.length
                 || strategiesLength != positions.length
                 || strategiesLength != params.length
-                || strategiesLength != inPlace.length
                 || strategiesLength != sweepTokens.length
         ) {
             revert InvalidInputLength();
@@ -318,7 +275,7 @@ contract Automation is Admin, NonDelegateMulticall {
 
         address[] memory targets = new address[](strategiesLength);
         bytes[] memory data = new bytes[](strategiesLength);
-        for (uint256 i; i < strategiesLength;) {
+        for (uint256 i; i < strategiesLength; i++) {
             Sickle sickle = sickles[i];
             NftPosition memory position = positions[i];
             targets[i] = address(strategies[i]);
@@ -329,9 +286,6 @@ contract Automation is Admin, NonDelegateMulticall {
             emit NftCompoundedFor(
                 sickle, address(position.nft), position.tokenId
             );
-            unchecked {
-                ++i;
-            }
         }
         this.multicall(targets, data);
     }
@@ -357,7 +311,7 @@ contract Automation is Admin, NonDelegateMulticall {
 
         address[] memory targets = new address[](strategiesLength);
         bytes[] memory data = new bytes[](strategiesLength);
-        for (uint256 i; i < strategiesLength;) {
+        for (uint256 i; i < strategiesLength; i++) {
             Sickle sickle = sickles[i];
             NftPosition memory position = positions[i];
             targets[i] = address(strategies[i]);
@@ -372,9 +326,6 @@ contract Automation is Admin, NonDelegateMulticall {
                 )
             );
             emit NftExitedFor(sickle, address(position.nft), position.tokenId);
-            unchecked {
-                ++i;
-            }
         }
         this.multicall(targets, data);
     }
@@ -396,7 +347,7 @@ contract Automation is Admin, NonDelegateMulticall {
 
         address[] memory targets = new address[](strategiesLength);
         bytes[] memory data = new bytes[](strategiesLength);
-        for (uint256 i; i < strategiesLength;) {
+        for (uint256 i; i < strategiesLength; i++) {
             NftRebalance memory param = params[i];
             Sickle sickle = sickles[i];
             targets[i] = address(strategies[i]);
@@ -406,24 +357,7 @@ contract Automation is Admin, NonDelegateMulticall {
             emit NftRebalancedFor(
                 sickle, address(param.position.nft), param.position.tokenId
             );
-            unchecked {
-                ++i;
-            }
         }
         this.multicall(targets, data);
-    }
-
-    // Internal
-
-    function _setApprovedAutomator(
-        address payable approvedAutomator_
-    ) internal {
-        if (approvedAutomator_ == address(0)) revert InvalidAutomator();
-        if (isApprovedAutomator[approvedAutomator_]) {
-            revert ApprovedAutomatorAlreadySet(approvedAutomator_);
-        }
-        isApprovedAutomator[approvedAutomator_] = true;
-        approvedAutomators.push(approvedAutomator_);
-        emit ApprovedAutomatorSet(approvedAutomator_);
     }
 }

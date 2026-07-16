@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 /**
  * @title IFleetCommanderErrors
@@ -22,13 +22,15 @@ interface IFleetCommanderErrors {
     /**
      * @notice Thrown when attempting to rebalance to an invalid Ark.
      * @param ark The address of the invalid Ark.
+     * @param amount Amount of tokens added to target ark
+     * @param effectiveDepositCap Effective deposit cap of the ark (minimum of % of fleet TVL or arbitrary ark deposit
+     * cap)
      */
-    error FleetCommanderCantRebalanceToArk(address ark);
-
-    /**
-     * @notice Thrown when an invalid buffer adjustment is attempted.
-     */
-    error FleetCommanderInvalidBufferAdjustment();
+    error FleetCommanderEffectiveDepositCapExceeded(
+        address ark,
+        uint256 amount,
+        uint256 effectiveDepositCap
+    );
 
     /**
      * @notice Thrown when there is insufficient buffer for an operation.
@@ -104,9 +106,9 @@ interface IFleetCommanderErrors {
     error FleetCommanderCantUseRebalanceOnBufferArk();
 
     /**
-     * @notice Thrown when attempting to use the maximum uint value for buffer adjustment.
+     * @notice Thrown when attempting to use the maximum uint value for buffer adjustment from buffer.
      */
-    error FleetCommanderCantUseMaxUintForBufferAdjustement();
+    error FleetCommanderCantUseMaxUintMovingFromBuffer();
 
     /**
      * @notice Thrown when a rebalance operation exceeds the maximum outflow for an Ark.
@@ -131,4 +133,14 @@ interface IFleetCommanderErrors {
         uint256 amount,
         uint256 maxRebalanceInflow
     );
+
+    /**
+     * @notice Thrown when the staking rewards manager is not set.
+     */
+    error FleetCommanderStakingRewardsManagerNotSet();
+
+    /**
+     * @notice Thrown when user attempts to deposit/mint or withdraw/redeem 0 units
+     */
+    error FleetCommanderZeroAmount();
 }

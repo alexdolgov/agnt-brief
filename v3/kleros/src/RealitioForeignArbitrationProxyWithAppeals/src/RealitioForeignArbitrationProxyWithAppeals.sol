@@ -1,30 +1,31 @@
 // SPDX-License-Identifier: MIT
 
 /**
- *  @authors: [@hbarcelos*, @unknownunknown1]
- *  @reviewers: [@MerlinEgalite*, @shalzz, @jaybuidl, @ferittuncer, @fnanni-0]
+ *  @authors: [@hbarcelos, @unknownunknown1, @shalzz]
+ *  @reviewers: [@MerlinEgalite*, @jaybuidl, @unknownunknown1, @fnanni-0*]
  *  @auditors: []
  *  @bounties: []
  *  @deployments: []
  */
 
-pragma solidity ^0.7.2;
+pragma solidity ^0.8.0;
 
-import {IDisputeResolver, IArbitrator} from "@kleros/dispute-resolver-interface-contract/contracts/solc-0.7.x/IDisputeResolver.sol";
-import {CappedMath} from "@kleros/ethereum-libraries/contracts/CappedMath.sol";
-import {IAMB} from "./dependencies/IAMB.sol";
+import {IDisputeResolver, IArbitrator} from "@kleros/dispute-resolver-interface-contract/contracts/IDisputeResolver.sol";
+import {CappedMath} from "./dependencies/lib/CappedMath.sol";
+import {FxBaseRootTunnel} from "./dependencies/FxBaseRootTunnel.sol";
 import {IForeignArbitrationProxy, IHomeArbitrationProxy} from "./ArbitrationProxyInterfaces.sol";
 
 /**
  * @title Arbitration proxy for Realitio on Ethereum side (A.K.A. the Foreign Chain).
- * This version of the contract has an appeal support.
  * @dev This contract is meant to be deployed to the Ethereum chains where Kleros is deployed.
  */
-contract RealitioForeignArbitrationProxyWithAppeals is IForeignArbitrationProxy, IDisputeResolver {
+contract RealitioForeignArbitrationProxyWithAppeals is IForeignArbitrationProxy, IDisputeResolver, FxBaseRootTunnel {
     using CappedMath for uint256;
 
     /* Constants */
-    uint256 public constant NUMBER_OF_CHOICES_FOR_ARBITRATOR = type(uint256).max; // The number of choices for the arbitrator.
+    // The number of choices for the arbitrator.
+    uint256 public constant NUMBER_OF_CHOICES_FOR_ARBITRATOR = type(uint256).max;
+    uint256 public constant REFUSE_TO_ARBITRATE_REALITIO = type(uint256).max; // Constant that represents "Refuse to rule" in realitio format.
     uint256 public constant MULTIPLIER_DIVISOR = 10000; // Divisor parameter for multipliers.
     uint256 public constant META_EVIDENCE_ID = 0; // The ID of the MetaEvidence for disputes.
 
@@ -42,7 +43,7 @@ contract RealitioForeignArbitrationProxyWithAppeals is IForeignArbitrationProxy,
         Status status; // Status of the arbitration.
         uint248 deposit; // The deposit paid by the requester at the time of the arbitration.
         uint256 disputeID; // The ID of the dispute in arbitrator contract.
-        uint256 answer; // The answer given by the arbitrator shifted by -1 to match Realitio format.
+        uint256 answer; // The answer given by the arbitrator.
         Round[] rounds; // Tracks each appeal round of a dispute.
     }
 
@@ -63,12 +64,6 @@ contract RealitioForeignArbitrationProxyWithAppeals is IForeignArbitrationProxy,
     IArbitrator public immutable arbitrator; // The address of the arbitrator. TRUSTED.
     bytes public arbitratorExtraData; // The extra data used to raise a dispute in the arbitrator.
 
-    IAMB public immutable amb; // ArbitraryMessageBridge contract address. TRUSTED.
-    address public immutable homeProxy; // Address of the counter-party proxy on the Home Chain. TRUSTED.
-    bytes32 public immutable homeChainId; // The chain ID where the home proxy is deployed.
-
-    string public termsOfService; // The path for the Terms of Service for Kleros as an arbitrator for Realitio.
-
     // Multipliers are in basis points.
     uint256 public immutable winnerMultiplier; // Multiplier for calculating the appeal fee that must be paid for the answer that was chosen by the arbitrator in the previous round.
     uint256 public immutable loserMultiplier; // Multiplier for calculating the appeal fee that must be paid for the answer that the arbitrator didn't rule for in the previous round.
@@ -79,46 +74,42 @@ contract RealitioForeignArbitrationProxyWithAppeals is IForeignArbitrationProxy,
     mapping(uint256 => bool) public arbitrationIDToDisputeExists; // Whether a dispute has already been created for the given arbitration ID or not.
     mapping(uint256 => address) public arbitrationIDToRequester; // Maps arbitration ID to the requester who was able to complete the arbitration request.
 
-    /* Modifiers */
-
-    modifier onlyHomeProxy() {
-        require(msg.sender == address(amb), "Only AMB allowed");
-        require(amb.messageSourceChainId() == homeChainId, "Only home chain allowed");
-        require(amb.messageSender() == homeProxy, "Only home proxy allowed");
+    /**
+     * @dev This is applied to functions called via the internal function
+     * `_processMessageFromChild` which is invoked via the Polygon bridge (see FxBaseRootTunnel)
+     *
+     * The functions requiring this modifier cannot simply be declared internal as
+     * we still need the ABI generated of these functions to be able to call them
+     * across contracts and have the compiler type check the function signatures.
+     */
+    modifier onlyBridge() {
+        require(msg.sender == address(this), "Can only be called via bridge");
         _;
     }
 
     /**
      * @notice Creates an arbitration proxy on the foreign chain.
-     * @param _amb ArbitraryMessageBridge contract address.
-     * @param _homeProxy The address of the proxy.
-     * @param _homeChainId The chain ID where the home proxy is deployed.
+     * @param _checkpointManager For Polygon FX-portal bridge.
+     * @param _fxRoot Address of the FxRoot contract of the Polygon bridge.
      * @param _arbitrator Arbitrator contract address.
      * @param _arbitratorExtraData The extra data used to raise a dispute in the arbitrator.
      * @param _metaEvidence The URI of the meta evidence file.
-     * @param _termsOfService The path for the Terms of Service for Kleros as an arbitrator for Realitio.
      * @param _winnerMultiplier Multiplier for calculating the appeal cost of the winning answer.
      * @param _loserMultiplier Multiplier for calculation the appeal cost of the losing answer.
      * @param _loserAppealPeriodMultiplier Multiplier for calculating the appeal period for the losing answer.
      */
     constructor(
-        IAMB _amb,
-        address _homeProxy,
-        bytes32 _homeChainId,
+        address _checkpointManager,
+        address _fxRoot,
         IArbitrator _arbitrator,
         bytes memory _arbitratorExtraData,
         string memory _metaEvidence,
-        string memory _termsOfService,
         uint256 _winnerMultiplier,
         uint256 _loserMultiplier,
         uint256 _loserAppealPeriodMultiplier
-    ) {
-        amb = _amb;
-        homeProxy = _homeProxy;
-        homeChainId = _homeChainId;
+    ) FxBaseRootTunnel(_checkpointManager, _fxRoot) {
         arbitrator = _arbitrator;
         arbitratorExtraData = _arbitratorExtraData;
-        termsOfService = _termsOfService;
         winnerMultiplier = _winnerMultiplier;
         loserMultiplier = _loserMultiplier;
         loserAppealPeriodMultiplier = _loserAppealPeriodMultiplier;
@@ -149,9 +140,9 @@ contract RealitioForeignArbitrationProxyWithAppeals is IForeignArbitrationProxy,
         arbitration.status = Status.Requested;
         arbitration.deposit = uint248(msg.value);
 
-        bytes4 methodSelector = IHomeArbitrationProxy(0).receiveArbitrationRequest.selector;
+        bytes4 methodSelector = IHomeArbitrationProxy.receiveArbitrationRequest.selector;
         bytes memory data = abi.encodeWithSelector(methodSelector, _questionID, msg.sender, _maxPrevious);
-        amb.requireToPassMessage(homeProxy, data, amb.maxGasPerTx());
+        _sendMessageToChild(data);
 
         emit ArbitrationRequested(_questionID, msg.sender, _maxPrevious);
     }
@@ -161,11 +152,7 @@ contract RealitioForeignArbitrationProxyWithAppeals is IForeignArbitrationProxy,
      * @param _questionID The ID of the question.
      * @param _requester The requester.
      */
-    function receiveArbitrationAcknowledgement(bytes32 _questionID, address _requester)
-        external
-        override
-        onlyHomeProxy
-    {
+    function receiveArbitrationAcknowledgement(bytes32 _questionID, address _requester) external override onlyBridge {
         uint256 arbitrationID = uint256(_questionID);
         ArbitrationRequest storage arbitration = arbitrationRequests[arbitrationID][_requester];
         require(arbitration.status == Status.Requested, "Invalid arbitration status");
@@ -212,7 +199,7 @@ contract RealitioForeignArbitrationProxyWithAppeals is IForeignArbitrationProxy,
      * @param _questionID The ID of the question.
      * @param _requester The requester.
      */
-    function receiveArbitrationCancelation(bytes32 _questionID, address _requester) external override onlyHomeProxy {
+    function receiveArbitrationCancelation(bytes32 _questionID, address _requester) external override onlyBridge {
         uint256 arbitrationID = uint256(_questionID);
         ArbitrationRequest storage arbitration = arbitrationRequests[arbitrationID][_requester];
         require(arbitration.status == Status.Requested, "Invalid arbitration status");
@@ -238,9 +225,9 @@ contract RealitioForeignArbitrationProxyWithAppeals is IForeignArbitrationProxy,
         delete arbitrationRequests[arbitrationID][_requester];
         payable(_requester).send(deposit);
 
-        bytes4 methodSelector = IHomeArbitrationProxy(0).receiveArbitrationFailure.selector;
+        bytes4 methodSelector = IHomeArbitrationProxy.receiveArbitrationFailure.selector;
         bytes memory data = abi.encodeWithSelector(methodSelector, _questionID, _requester);
-        amb.requireToPassMessage(homeProxy, data, amb.maxGasPerTx());
+        _sendMessageToChild(data);
 
         emit ArbitrationCanceled(_questionID, _requester);
     }
@@ -311,7 +298,7 @@ contract RealitioForeignArbitrationProxyWithAppeals is IForeignArbitrationProxy,
             arbitrator.appeal{value: appealCost}(disputeID, arbitratorExtraData);
         }
 
-        if (msg.value.subCap(contribution) > 0) msg.sender.send(msg.value.subCap(contribution)); // Sending extra value back to contributor. It is the user's responsibility to accept ETH.
+        if (msg.value.subCap(contribution) > 0) payable(msg.sender).send(msg.value.subCap(contribution)); // Sending extra value back to contributor. It is the user's responsibility to accept ETH.
         return round.hasPaid[_answer];
     }
 
@@ -402,6 +389,7 @@ contract RealitioForeignArbitrationProxyWithAppeals is IForeignArbitrationProxy,
         require(msg.sender == address(arbitrator), "Only arbitrator allowed");
         require(arbitration.status == Status.Created, "Invalid arbitration status");
         uint256 finalRuling = _ruling;
+        uint256 realitioRuling; // Realitio ruling is shifted by 1 compared to Kleros.
 
         // If one side paid its fees, the ruling is in its favor. Note that if the other side had also paid, an appeal would have been created.
         Round storage round = arbitration.rounds[arbitration.rounds.length - 1];
@@ -410,11 +398,11 @@ contract RealitioForeignArbitrationProxyWithAppeals is IForeignArbitrationProxy,
         arbitration.answer = finalRuling;
         arbitration.status = Status.Ruled;
 
-        bytes4 methodSelector = IHomeArbitrationProxy(0).receiveArbitrationAnswer.selector;
-        // Realitio ruling is shifted by 1 compared to Kleros.
-        // Note that this shifting won't work in the latest compiler versions (0.8.0 and further), because of the innate underflow checks.
-        bytes memory data = abi.encodeWithSelector(methodSelector, bytes32(arbitrationID), bytes32(finalRuling - 1));
-        amb.requireToPassMessage(homeProxy, data, amb.maxGasPerTx());
+        realitioRuling = finalRuling != 0 ? finalRuling - 1 : REFUSE_TO_ARBITRATE_REALITIO;
+
+        bytes4 methodSelector = IHomeArbitrationProxy.receiveArbitrationAnswer.selector;
+        bytes memory data = abi.encodeWithSelector(methodSelector, bytes32(arbitrationID), bytes32(realitioRuling));
+        _sendMessageToChild(data);
 
         emit Ruling(arbitrator, _disputeID, finalRuling);
     }
@@ -609,5 +597,11 @@ contract RealitioForeignArbitrationProxyWithAppeals is IForeignArbitrationProxy,
      */
     function externalIDtoLocalID(uint256 _externalDisputeID) external view override returns (uint256) {
         return disputeIDToDisputeDetails[_externalDisputeID].arbitrationID;
+    }
+
+    function _processMessageFromChild(bytes memory _data) internal override {
+        // solhint-disable-next-line avoid-low-level-calls
+        (bool success, ) = address(this).call(_data);
+        require(success, "Failed to call contract");
     }
 }

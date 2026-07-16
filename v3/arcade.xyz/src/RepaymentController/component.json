@@ -1,8 +1,8 @@
 {
   "component": "RepaymentController",
   "main_contract": "RepaymentController",
-  "source_entry_count": 20,
-  "source_file_count": 20,
+  "source_entry_count": 19,
+  "source_file_count": 19,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,17 +10,37 @@
     "build_command": "forge build --root \"src/RepaymentController\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x74241e1a9c021643289476426b9b70229ab40d53",
+      "address": "0x9ece636e942bcb67f9e0b7b6c51a56570ef6f38d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live",
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd7b4586b4ed87e2b98ad2df37a6c949c5ab1b1db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf6c8ee885dab34025ca275e269f8ec4bd85ad7fb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

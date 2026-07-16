@@ -1,0 +1,38 @@
+{
+  "component": "KUMASwap-2",
+  "main_contract": "KUMASwap",
+  "source_entry_count": 39,
+  "source_file_count": 39,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/KUMASwap-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x43ea73168b8f192dbdec088da29f2c5e517f6fcb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396611"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4cd485a0d20252ac3a145086052e5f661a15dcdf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396612"
+    }
+  ]
+}

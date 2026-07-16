@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/BeaconProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
     "https://drive.google.com/file/d/13YDEwoplZPotcu_rGE3Ox8IsOljh-SKx/view?usp=sharing"
@@ -25,6 +25,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "405523"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd3f58365428f9325d13787a405f846374a58a0fb",
+      "is_proxy": true,
+      "implementation_address": "0x62977f7b95b493e1d07735910291e275cc3bc2da",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405525"
     }
   ]
 }

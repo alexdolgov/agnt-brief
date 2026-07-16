@@ -1,10 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import "@openzeppelin/contracts/proxy/Clones.sol";
+import { Clones } from "@openzeppelin/contracts/proxy/Clones.sol";
 
-import "./Sickle.sol";
-import "./base/Admin.sol";
+import { Sickle } from "contracts/Sickle.sol";
+import { SickleRegistry } from "contracts/SickleRegistry.sol";
+import { Admin } from "contracts/base/Admin.sol";
 
 /// @title SickleFactory contract
 /// @author vfat.tools
@@ -156,6 +157,7 @@ contract SickleFactory is Admin {
     /// @notice Deploys a new Sickle contract for a specific user, or returns
     /// the existing one if it exists
     /// @param admin Address receiving the admin rights of the Sickle contract
+    /// @param approved Address approved to manage automation
     /// @param referralCode Referral code for the user
     /// @return sickle Address of the deployed Sickle contract
     function getOrDeploy(
@@ -179,6 +181,7 @@ contract SickleFactory is Admin {
     /// @dev Sickle contracts are deployed with create2, the address of the
     /// admin is used as a salt, so all the Sickle addresses can be pre-computed
     /// and only 1 Sickle will exist per address
+    /// @param approved Address approved to manage automation
     /// @param referralCode Referral code for the user
     /// @return sickle Address of the deployed Sickle contract
     function deploy(

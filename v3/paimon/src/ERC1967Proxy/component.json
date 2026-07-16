@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/ERC1967Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 6,
   "audited": true,
   "audits_covering": [
     "https://github.com/Paimon-R-D/paimon-gitbook/blob/main/.gitbook/assets/audit-report-2026-01.pdf"
@@ -19,9 +19,59 @@
     {
       "chain": "bsc",
       "chain_id": 56,
+      "address": "0x05353dabf163fb2fec87f9e0f00f94eae4ac1631",
+      "is_proxy": true,
+      "implementation_address": "0x6bfc2bf728e005cbae3d0d288d69441ee5ea2e81",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x48e9a6846d9722599621af8a6af0f23b0db8184a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x6dc9a487bf8fd047e41ab336003ae6e4fe602646",
+      "is_proxy": true,
+      "implementation_address": "0x234eb7b6c83420fe6cb80438e637c017c5603cd6",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x748560eaccd4c01fc29b3b5b72d3b8c85b2b5017",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
       "address": "0x8505c32631034a7ce8800239c08547e0434edad9",
       "is_proxy": true,
       "implementation_address": "0x56d2f19d5cf0275fb5107a6f3cb451a56aaac0f7",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xea088af719f3238982823fa5ee1c1facb2e0e231",
+      "is_proxy": true,
+      "implementation_address": "0xc437d6ed00c14b05740ebc2b4dcf5c3a50e6ff12",
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null

@@ -1,40 +1,56 @@
 # moonwell-apollo — deployments
 
-84 verified deployment(s) across 53 component(s).
+114 verified deployment(s) across 59 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| base | `0x10ff57877b79e9bd949b3815220ec87b9fc5d2ee` | MErc20Delegator-2 | proxy | live | no |
 | base | `0x1382cff3cee10d283dcca55a30496187759e4caf` | WethUnwrapper-2 | impl | live | no |
 | base | `0x1a8ae46098ff418e2054243491544ed8564c3cdb` | FeeSplitter | impl | live | no |
+| base | `0x29ea8b56341ee95c819f4438bc048c6239ae5b71` | MoonwellViewsV2 | impl | live | no |
+| base | `0x2f90bb22eb3979f5ffad31ea6c3f0792ca66da32` | MErc20Delegator-2 | proxy | live | no |
 | base | `0x31ccfb038771d9bf486ef7c7f3a9f91be72124c4` | WETHRouter-2 | impl | live | no |
 | base | `0x543257ef2161176d7c8cd90ba65c2d4caef5a796` | MetaMorpho | impl | live | no |
 | base | `0x593355faef3075af1b20ca22fedabf6f3d2fd66c` | TransparentUpgradeableProxy-4 | proxy | live | no |
+| base | `0x627fe393bc6edda28e99ae648fd6ff362514304b` | MErc20Delegator-3 | proxy | live | no |
+| base | `0x6308204872bdb7432df97b04b42443c714904f3e` | MErc20Delegator-2 | proxy | live | no |
 | base | `0x6bfd8137e702540e7a42b74178a4a49ba43920c4` | Bundler3-2 | impl | live | no |
 | base | `0x6d8cb0c4c5caa9876939cb6e5eed8ca84d474c0c` | JumpRateModel | impl | live | no |
 | base | `0x70778cfcfc475c7ea0f24cc625baf6eae475d0c9` | WETHRouter-3 | impl | live | no |
 | base | `0x734abbce07679c9a6b4fe3bc16325e028fa6dbb7` | TransparentUpgradeableProxy | proxy | live | no |
+| base | `0x73902f619ceb9b31fd8efecf435cbdf89e369ba6` | MErc20Delegator | proxy | live | no |
 | base | `0x75eba76fb3f99efb569b73fb3fa01265a6393c39` | OEVProtocolFeeRedeemer | impl | live | no |
 | base | `0x7fc0dbc713649b96e984b2a5935016d3a5d1ed31` | TransparentUpgradeableProxy | proxy | live | no |
 | base | `0x8b621804a7637b781e2bbd58e256a591f2df7d51` | TemporalGovernor-2 | impl | live | no |
 | base | `0x8d189997ccd6ab6909ef89836e5bcef94599cce0` | TransparentUpgradeableProxy | proxy | live | no |
 | base | `0x98b14fc2cc69186d8cffa342087d9e84228017de` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| base | `0x9a858ebff1beb0d3495bb0e2897c1528ed84a218` | MErc20Delegator-2 | proxy | live | no |
 | base | `0xa0e430870c4604ccfc7b38ca7845b1ff653d0ff1` | MetaMorpho | impl | live | no |
 | base | `0xab05f7216b4ecd0594e703f21fb0de6183bfecf3` | OEVProtocolFeeRedeemer | impl | live | no |
 | base | `0xaeee6335f50e1f8af924df0742b1879c9761f5f5` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | base | `0xb25b49c555a458c3c4de3205040da6a582ff331d` | OEVProtocolFeeRedeemer | impl | live | no |
+| base | `0xb4fb8fed5b3aaa8434f0b19b1b623d977e07e86d` | MErc20Delegator-2 | proxy | live | no |
+| base | `0xb6419c6c2e60c4025d6d06ee4f913ce89425a357` | MErc20Delegator-2 | proxy | live | no |
+| base | `0xb8051464c8c92209c92f3a4cd9c73746c4c3cfb3` | MErc20Delegator | proxy | live | no |
 | base | `0xb98c948cfa24072e58935bc004a8a7b376ae746a` | GeneralAdapter1 | impl | live | no |
 | base | `0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb` | Morpho | impl | live | no |
 | base | `0xc1256ae5ff1cf2719d4937adb3bbccab2e00a2ca` | MetaMorpho | impl | live | no |
+| base | `0xcb1dacd30638ae38f2b94ea64f066045b7d45f44` | MErc20Delegator-3 | proxy | live | no |
 | base | `0xcd6e19dc27d63979c9e29d6f2e126a57b59cd6dd` | OEVProtocolFeeRedeemer | impl | live | no |
 | base | `0xcf1a3322977ef557899ad2bf3056d8411edc87a1` | JumpRateModel | impl | live | no |
 | base | `0xd64bcb70c613a6d1f4d7d57ba64bb4a0767a9682` | MErc20Delegator-2 | impl | live | no |
+| base | `0xdc7810b47eaab250de623f0ee07764afa5f71ed1` | MErc20Delegator-2 | proxy | live | no |
+| base | `0xde8df9d942d78ede3ca06e60712582f79cfffc64` | MErc20Delegator-2 | proxy | live | no |
 | base | `0xe0278b32c627ff6ffbbe7de6a18ade145603e949` | TransparentUpgradeableProxy | proxy | live | no |
+| base | `0xe2747a3f7dd8585eb04c7632a9561d9616454b29` | StakedWell | impl | live | no |
 | base | `0xe69de7abfcf2a252874d66bc7aef6490b1978e7b` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | base | `0xe770bd40b6976efbbb095174395dd2cb794c938a` | Factory4626 | impl | live | no |
 | base | `0xec942be8a8114bfd0396a5052c36027f2ca6a9d0` | ChainlinkOracle-2 | impl | live | no |
 | base | `0xf08cef2ee2e5be584a581209637b02637f312072` | ERC4626RateLimitedAllowance | impl | live | no |
 | base | `0xf24608e0ccb972b0b0f4a6446a0bbf58c701a026` | MetaMorpho | impl | live | no |
 | base | `0xf4dccae864edf2b218b40a950c4407c3383dadb9` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| base | `0xf877acafa28c19b96727966690b2f44d35ad5976` | MErc20Delegator | proxy | live | no |
+| base | `0xfc41b49d064ac646015b459c522820db9472f4b5` | MErc20Delegator | proxy | live | no |
 | base | `0xfd1013c72cbb0ffb920d347c5836bf88965d0d5e` | STIXToken | impl | live | no |
 | base | `0xff8adec2221f9f4d8dfbafa6b9a297d17603493d` | BridgeToken | proxy | live | no |
 | chain-1284 | `0x091608f4e4a15335145be0a279483c0f8e4c7955` | MGlimmer | impl | live | yes |
@@ -54,6 +70,7 @@
 | chain-1284 | `0xf5f2ae75d762b7e2b42d53f48018436f52ce5401` | MoonwellViewsV1 | impl | live | no |
 | chain-1284 | `0xfb26a4947a38cb53e2d083c6490060ccce7438c5` | xWELLRouter-3 | impl | live | no |
 | chain-1285 | `0x1650c0ad9483158f9e240fd58d0e173807a80ccc` | Maximillion-2 | impl | unknown | no |
+| chain-1285 | `0x2a55ba986a8c6ee17979f6233985414a865a280f` | MoonwellViewsV1-2 | impl | live | no |
 | chain-1285 | `0x2be2e230e89c59c8e20e633c524ad2de246e7370` | MoonwellGovernorApollo | impl | unknown | no |
 | chain-1285 | `0x6a1a771c7826596652dadc9145feaae62b1cd07f` | MGlimmer-2 | impl | unknown | no |
 | chain-1285 | `0xbb8d88bcd9749636bc4d2be22aac4bb3b01a58f1` | Mfam | impl | live | no |
@@ -62,8 +79,10 @@
 | ethereum | `0x3b1bddc0998058dd266e2a0ac855d0d750700a7f` | xWELL | impl | live | no |
 | ethereum | `0x4605da8b6b0d8d8ac4389606ea135e27b61da2f6` | WethUnwrapper | impl | live | no |
 | ethereum | `0x599a01297fc181558bdfa1737cafee513694b654` | ChainlinkOracle | impl | live | no |
+| ethereum | `0x5b710010586c1b728b047c3e42473c700eea4026` | SafeProxy | proxy | live | no |
 | ethereum | `0x636080eb65f1b665b646f47d31f21901cdaaee9f` | MErc20Delegator | impl | live | no |
 | ethereum | `0x6e13ed42145d4ab8b7951da267c28442bd76b2ed` | JumpRateModel | impl | live | no |
+| ethereum | `0x701551a3cd30a29ccc012e8f160fb2cac9b0f5af` | StakedWell-2 | impl | live | no |
 | ethereum | `0x734abbce07679c9a6b4fe3bc16325e028fa6dbb7` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x8769b70ac7c93af0e75de0d69877709b66d75838` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x98e708bbce1f158c1bde25f206afa7562fd0157f` | EcosystemReserveController | impl | live | no |
@@ -77,12 +96,23 @@
 | ethereum | `0xe655790552c68f2871eb44b2cfe3dcfe6a63e62e` | MErc20Delegator | impl | live | no |
 | ethereum | `0xe86b7b1481fc365576b29352cfcafca1a0dfc366` | JumpRateModel | impl | live | no |
 | ethereum | `0xeddc25b67d474eeecfa4f69227b81d870c467011` | MErc20Delegator | impl | live | no |
+| optimism | `0x17c9ba3fda7ec71ccfd75f978ef31e21927aff3d` | TemporalGovernor | impl | live | no |
 | optimism | `0x2ad2f20ff29c11fd4bf20031e04476026c830845` | OEVProtocolFeeRedeemer-2 | impl | live | no |
 | optimism | `0x2eed2b7d44e2cf64a41b6b3f78be2fdc56223d2b` | MultiRewards | impl | live | no |
 | optimism | `0x3520e1a10038131a3c00bf2158835a75e929642d` | MetaMorphoV1_1 | impl | live | no |
 | optimism | `0x3c968481be3ba1a99fed5f73db2ff51151037738` | TransparentUpgradeableProxy | proxy | live | no |
+| optimism | `0x3fe782c2fe7668c2f1eb313acf3022a31fead6b2` | MErc20Delegator | proxy | live | no |
+| optimism | `0x4c2e35e3ec4a0c82849637bc04a4609dbe53d321` | MErc20Delegator | proxy | live | no |
+| optimism | `0x6e6ca598a06e609c913551b729a228b023f06fdb` | MErc20Delegator | proxy | live | no |
 | optimism | `0x734abbce07679c9a6b4fe3bc16325e028fa6dbb7` | TransparentUpgradeableProxy | proxy | live | no |
+| optimism | `0x78feb72aea00b912ac45438e0764a02213266568` | StakedWell | impl | live | no |
+| optimism | `0x8e08617b0d66359d73aa11e11017834c29155525` | MErc20Delegator | proxy | live | no |
+| optimism | `0x95c84f369bd0251ca903052600a3c96838d78ba1` | MErc20Delegator | proxy | live | no |
+| optimism | `0x9fc345a20541bf8773988515c5950ed69af01847` | MErc20Delegator | proxy | live | no |
+| optimism | `0xa3a53899ee8f9f6e963437c5b3f805fec538bf84` | MErc20Delegator | proxy | live | no |
 | optimism | `0xad3315f8b0c17f3bf97186b65ef91da9fbff170b` | OEVProtocolFeeRedeemer | impl | live | no |
+| optimism | `0xb4104c02bbf4e9be85aaa41a62974e4e28d59a33` | MErc20Delegator | proxy | live | no |
+| optimism | `0xbb3b1ab66efb43b10923b87460c0106643b83f9d` | MErc20Delegator | proxy | live | no |
 | optimism | `0xc4ab8c031717d7ecccd653be898e0f92410e11dc` | WETHRouter | impl | live | no |
 | optimism | `0xcb95579c706144f3150f7c3b1bd3f24a48d3463e` | OEVProtocolFeeRedeemer | impl | live | no |
 | optimism | `0xed37cd7872c6fe4020982d35104be7919b8f8b33` | MErc20Delegator-2 | impl | live | no |

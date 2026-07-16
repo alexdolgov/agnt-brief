@@ -1,8 +1,8 @@
 {
   "component": "ProtocolTieredFeePolicy-2",
   "main_contract": "ProtocolTieredFeePolicy",
-  "source_entry_count": 5,
-  "source_file_count": 5,
+  "source_entry_count": 4,
+  "source_file_count": 4,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/ProtocolTieredFeePolicy-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0x669954e6b63b2156e120f815d0b734589153f334",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeb1df74c87875be3eef1a2407aa906665bfa5684",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397456"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe0af15b4689cf81a9f1bfc6857d842f2813d3017",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397484"
     }
   ]
 }

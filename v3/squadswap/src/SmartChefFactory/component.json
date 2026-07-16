@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/SmartChefFactory\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x6427824d446e5be25326ab1b88c8102f0d52ec16",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x29626c367d4f334f92fa21b1c5958bbe1dc2af09",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "399391"
+      "logic_topography_row_id": "399692"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x7171ea998e068ab490c7c4f3afb86a146dfea1a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

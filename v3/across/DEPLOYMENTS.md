@@ -1,20 +1,29 @@
 # across — deployments
 
-245 verified deployment(s) across 111 component(s).
+271 verified deployment(s) across 119 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x0f7ae28de1c8532170ad4ee566b5801485c13a0e` | MulticallHandler | impl | live | no |
+| arbitrum | `0x10d8b8daa26d307489803e10477de69c0492b610` | SpokePoolPeriphery | impl | live | no |
 | arbitrum | `0xaf88d065e77c8cc2239327c5edb3a432268e5831` | FiatTokenProxy-2 | proxy | live | no |
-| arbitrum | `0xe35e9842fceaca96570b734083f4a58e8f7c5f2a` | ERC1967Proxy-4 | proxy | live | yes |
+| arbitrum | `0xe35e9842fceaca96570b734083f4a58e8f7c5f2a` | ERC1967Proxy-7 | proxy | live | yes |
+| base | `0x09aea4b2242abc8bb4bb78d537a67a245a7bec64` | ERC1967Proxy-5 | proxy | live | no |
+| base | `0x0f7ae28de1c8532170ad4ee566b5801485c13a0e` | MulticallHandler | impl | live | no |
+| base | `0x10d8b8daa26d307489803e10477de69c0492b610` | SpokePoolPeriphery | impl | live | no |
 | base | `0x2230393edad0299b7e7b59f20aa856cd1bed52e1` | MasterMinter | impl | live | no |
 | base | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | FiatTokenProxy | proxy | live | no |
-| blast | `0x2d509190ed0172ba588407d4c2df918f955cc6e1` | ERC1967Proxy-5 | proxy | live | yes |
+| blast | `0x0f7ae28de1c8532170ad4ee566b5801485c13a0e` | MulticallHandler | impl | live | no |
+| blast | `0x10d8b8daa26d307489803e10477de69c0492b610` | SpokePoolPeriphery | impl | live | no |
+| blast | `0x2d509190ed0172ba588407d4c2df918f955cc6e1` | ERC1967Proxy-8 | proxy | live | yes |
 | blast | `0x3bad7ad0728f9917d1bf08af5782dcbd516cdd96` | Finder | impl | live | no |
 | blast | `0x3ca11702f7c0f28e0b4e03c31f7492969862c569` | OptimisticOracle | impl | live | no |
 | blast | `0x4e8e101924ede233c13e2d8622dc8aed2872d505` | OptimisticOracleV2 | impl | live | no |
 | blast | `0x4f617cf2812006059bd9162624d3f9403331133e` | OP_SpokePool-2 | impl | live | no |
 | blast | `0xe8ff2a3d5cc19ddcbd93328371e1dd8995e7afaa` | OptimisticOracleV3 | impl | live | no |
 | bsc | `0x026ed73a36b37b871be7bfd25d1c62b9bfb358b5` | Universal_SpokePool | impl | live | no |
+| bsc | `0x0f7ae28de1c8532170ad4ee566b5801485c13a0e` | MulticallHandler | impl | live | no |
+| bsc | `0x10d8b8daa26d307489803e10477de69c0492b610` | SpokePoolPeriphery | impl | live | no |
 | bsc | `0x64a14b477d16f1e9d490b00218ada0c142c885dd` | Universal_SpokePool-5 | impl | live | no |
 | bsc | `0x64f4aee94e5b919b0c89fee2cf923ea219686fdd` | Universal_SpokePool-3 | impl | live | no |
 | bsc | `0xad285f02b6853a34660253c643d1c06aec4b1059` | Universal_SpokePool-3 | impl | live | no |
@@ -23,8 +32,13 @@
 | bsc | `0xcd23467a80df72b24363da84d07af2b1dfc4de03` | Universal_SpokePool | impl | live | no |
 | bsc | `0xde7c02ad2b925587bd16724810f994a2948c4a38` | Universal_SpokePool-3 | impl | live | no |
 | bsc | `0xff0ea019ed1504d34507d99dd54f2339e3b11592` | Universal_SpokePool | impl | live | no |
+| chain-130 | `0x09aea4b2242abc8bb4bb78d537a67a245a7bec64` | ERC1967Proxy-3 | proxy | live | no |
+| chain-130 | `0x10d8b8daa26d307489803e10477de69c0492b610` | SpokePoolPeriphery | impl | live | no |
 | chain-9745 | `0x011a76d5ca7f537b4877d0fb6475065a90638478` | Universal_SpokePool-4 | impl | live | no |
 | chain-9745 | `0x053dc4a08302f11d13d8d2b87d8f3c9c28cedeb4` | Universal_SpokePool-4 | impl | live | no |
+| chain-9745 | `0x10d8b8daa26d307489803e10477de69c0492b610` | SpokePoolPeriphery | impl | live | no |
+| chain-9745 | `0x50039faefebef707cfd94d6d462fe6d10b39207a` | Universal_SpokePool-4 | proxy | live | no |
+| chain-9745 | `0x5e7840e06faccb6d1c3b5f5e0d1d3d07f2829bba` | MulticallHandler-2 | impl | live | no |
 | chain-9745 | `0x98a9703310d1fd0e268ab67917b0e581d295a086` | Universal_SpokePool-4 | impl | live | no |
 | chain-9745 | `0xa0747016cbd78302a1d35f15640528edac1c203a` | Universal_SpokePool-4 | impl | live | no |
 | chain-9745 | `0xb0b9f73b424ad8dc58156c2ae0d7a1115d1eccd1` | Universal_SpokePool-2 | impl | live | no |
@@ -43,6 +57,7 @@
 | chain-999 | `0x0d137e83e3cc52731014a69ede21ea006a8a9859` | HyperliquidDepositHandler | impl | live | no |
 | chain-999 | `0x1037a21a30aeff90c269b01c3933eb9a5285d9b8` | SponsoredCCTPDstPeriphery-6 | impl | live | no |
 | chain-999 | `0x105864d5c2298e703748358a6171a07c7605752d` | DstOFTHandler-4 | impl | live | no |
+| chain-999 | `0x10d8b8daa26d307489803e10477de69c0492b610` | SpokePoolPeriphery | impl | live | no |
 | chain-999 | `0x129b61ce378b2b4b5ebeac648019e2427b74527e` | Universal_SpokePool-2 | impl | live | no |
 | chain-999 | `0x1635eb08fe35e8297ddd394abc6d53f39330a8fe` | DonationBox-2 | impl | live | no |
 | chain-999 | `0x170b5b00b84ddb0c668e9ba394fdd4d6ffcf59a3` | DonationBox-3 | impl | live | no |
@@ -95,6 +110,7 @@
 | chain-999 | `0x5a973f8aec01511156b4fa61989067df49d3f9a6` | DonationBox | impl | live | no |
 | chain-999 | `0x5bee4302ad0498dc0dfa7669e5741fc85637ed68` | Universal_SpokePool | impl | live | no |
 | chain-999 | `0x5e531b547c03fad0996901d86fdda30048fbd873` | PermissionedMulticallHandler | impl | live | no |
+| chain-999 | `0x5e7840e06faccb6d1c3b5f5e0d1d3d07f2829bba` | MulticallHandler-2 | impl | live | no |
 | chain-999 | `0x604f676bc77f0e6ca462c739d4d786c3a8f2f433` | DonationBox | impl | live | no |
 | chain-999 | `0x64a0a69d16518e4544fab83c624e01339dc36945` | DonationBox-2 | impl | live | no |
 | chain-999 | `0x653419399f47579664a6a6c03fa96c9e88a530a8` | DstOFTHandler-2 | impl | live | no |
@@ -223,6 +239,8 @@
 | chain-999 | `0xff0ea019ed1504d34507d99dd54f2339e3b11592` | PermissionedMulticallHandler-2 | impl | live | no |
 | ethereum | `0x02fbb64517e1c6ed69a6faa3abf37db0482f1152` | BridgePoolProd-2 | impl | live | no |
 | ethereum | `0x04fa0d235c4abf4bcf4787af4cf447de572ef828` | VotingToken | impl | live | no |
+| ethereum | `0x0f7ae28de1c8532170ad4ee566b5801485c13a0e` | MulticallHandler | impl | live | no |
+| ethereum | `0x10d8b8daa26d307489803e10477de69c0492b610` | SpokePoolPeriphery | impl | live | no |
 | ethereum | `0x256c8919ce1ab0e33974cf6aa9c71561ef3017b6` | BridgePoolProd | impl | live | no |
 | ethereum | `0x43298f9f91a4545df64748e78a2c777c580573d6` | BridgePoolProd-3 | impl | live | no |
 | ethereum | `0x43f133fe6fdfa17c417695c476447dc2a449ba5b` | BridgePoolProd-4 | impl | live | no |
@@ -235,6 +253,7 @@
 | ethereum | `0xee1dc6bcf1ee967a350e9ac6caaaa236109002ea` | BondToken | impl | live | no |
 | linea | `0x0188efd7eba935fb6fe452c13bb08b9959079026` | SponsoredCCTPSrcPeriphery-3 | impl | live | no |
 | linea | `0x09aea4b2242abc8bb4bb78d537a67a245a7bec64` | Linea_SpokePool | impl | live | no |
+| linea | `0x10d8b8daa26d307489803e10477de69c0492b610` | SpokePoolPeriphery | impl | live | no |
 | linea | `0x18a4101bee53bf0dfda36faecea99b961417753a` | CounterfactualBeacon | impl | live | no |
 | linea | `0x4060dba72344da74edaeeae51a71a57f7e96b6b4` | DonationBox-2 | impl | live | no |
 | linea | `0x57322327b4f532cf401a21eb87fa975641cba0e6` | PermissionedMulticallHandler-5 | impl | live | no |
@@ -244,8 +263,15 @@
 | linea | `0x7e63a5f1a8f0b4d0934b2f2327daed3f6bb2ee75` | AdminUpgradeabilityProxy | proxy | live | yes |
 | linea | `0xd4b79aab2af8a316861aa04899a3d1085feea270` | CounterfactualBeacon-2 | impl | live | no |
 | linea | `0xe3e88958d181ab43bf3902f8f00af57cf5d44e8c` | SponsoredCCTPSrcPeriphery | impl | live | no |
+| mode | `0x0f7ae28de1c8532170ad4ee566b5801485c13a0e` | MulticallHandler-3 | impl | live | no |
+| mode | `0x10d8b8daa26d307489803e10477de69c0492b610` | SpokePoolPeriphery-2 | impl | live | no |
 | mode | `0x2e8986eb686b945a25151273d6bad582d166c385` | Mode_SpokePool | impl | unknown | no |
+| mode | `0x3bad7ad0728f9917d1bf08af5782dcbd516cdd96` | ERC1967Proxy-6 | impl | live | no |
 | mode | `0xc49226858478de8757e425661b1b5297102330d7` | Mode_SpokePool | impl | unknown | no |
 | mode | `0xc7772ce23a3ed7f87fe51b87617c7c7d21f15d39` | OP_SpokePool | impl | unknown | no |
+| optimism | `0x0f7ae28de1c8532170ad4ee566b5801485c13a0e` | MulticallHandler | impl | live | no |
+| optimism | `0x10d8b8daa26d307489803e10477de69c0492b610` | SpokePoolPeriphery | impl | live | no |
 | optimism | `0x6f26bf09b1c792e3228e5467807a900a503c0281` | ERC1967Proxy-2 | proxy | live | yes |
-| polygon | `0x9295ee1d8c5b022be115a2ad3c30c72e34e7f096` | ERC1967Proxy-3 | proxy | live | yes |
+| polygon | `0x0f7ae28de1c8532170ad4ee566b5801485c13a0e` | MulticallHandler | impl | live | no |
+| polygon | `0x10d8b8daa26d307489803e10477de69c0492b610` | SpokePoolPeriphery | impl | live | no |
+| polygon | `0x9295ee1d8c5b022be115a2ad3c30c72e34e7f096` | ERC1967Proxy-4 | proxy | live | yes |

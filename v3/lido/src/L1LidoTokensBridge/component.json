@@ -10,9 +10,12 @@
     "build_command": "forge build --root \"src/L1LidoTokensBridge\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/lidofinance/audits/blob/main/L2/stETH-on-Optimism-2024-06-MixBytes-Audit-Report.pdf",
+    "https://github.com/lidofinance/audits/blob/main/L2/stETH-on-Unichain-2025-02-MixBytes-deployment-verification.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
@@ -21,6 +24,26 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "unknown",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x168cfea1ad879d7032b3936ef3b0e90790b6b6d4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6078232c54d956c901620fa4590e0f7e37c2b82f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

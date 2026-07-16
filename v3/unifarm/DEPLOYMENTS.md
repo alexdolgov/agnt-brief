@@ -1,6 +1,6 @@
 # unifarm — deployments
 
-205 verified deployment(s) across 204 component(s).
+208 verified deployment(s) across 207 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -9,6 +9,7 @@
 | bsc | `0x030afaa593bb1ec8db1446c5813cf5dc8ea2f480` | PartnershipsVesting | impl | unknown | no |
 | bsc | `0x053a511b59ae70d07a2b2cdbac5803f625f65ba2` | TokenConverter | impl | unknown | no |
 | bsc | `0x0571ad1d5f2d21866137a5286a7c5f708864b4ec` | SHO2 | impl | unknown | no |
+| bsc | `0x0a356f512f6fce740111ee04ab1699017a908680` | TransparentUpgradeableProxy | proxy | live | no |
 | bsc | `0x0a3e9d4b234caf8090d8658c09834d72fc7dc0ae` | sGlobalDAOToken | impl | unknown | no |
 | bsc | `0x0acd927684e8b5fa8620a616fbf0595e7d65d390` | OROToken | impl | unknown | no |
 | bsc | `0x0c29c5dd40db17641b61a9a21e69a9df9d531e1d` | Timelock | impl | unknown | no |
@@ -133,6 +134,7 @@
 | ethereum | `0x3713a4e37a2fdc230a44cd6bfc99a183af394d56` | ReefLiquidityBond | impl | unknown | no |
 | ethereum | `0x3889503d210b377fd334fdd27822dae09fba457a` | RandomWinner | impl | unknown | no |
 | ethereum | `0x3e56d34ce0b6317810882142dec186fc3b0fae8c` | MarketRegistryNew | impl | unknown | no |
+| ethereum | `0x40986a85b4cfcdb054a6cbfb1210194fee51af88` | UnifarmToken | impl | live | no |
 | ethereum | `0x436e36af7f907ef0f8144fae9bdf95853b81c352` | CentaurStakingV2 | impl | unknown | no |
 | ethereum | `0x448cb15b00ced3ac47467e33493d602f34c8e77e` | RoyaUserToken | impl | unknown | no |
 | ethereum | `0x45b05cdf918571471925fb5240161b096e045fda` | PaidToken | proxy | unknown | no |
@@ -204,6 +206,7 @@
 | polygon | `0x96537bac94c8adc38fd17d70077ebcb958c1362f` | UnifarmV21 | impl | unknown | no |
 | polygon | `0x9b71d089db7195504aa26ccb7f543f8fcf367122` | NativeWhirl | impl | unknown | no |
 | polygon | `0xa59fb2739bb5256a09800a02c8e990f2f46b7d65` | LeaderboardContract | impl | unknown | no |
+| polygon | `0xa7305ae84519ff8be02484cda45834c4e7d13dd6` | UChildERC20Proxy | impl | live | no |
 | polygon | `0xae4b0fc97f02497a2ca48e0d432a7b6873237c23` | PixelRaceGame | impl | unknown | no |
 | polygon | `0xc5e7789285223e8d279bd74ff2139e99039b0716` | PlayerContract | impl | unknown | no |
 | polygon | `0xee32c30c1faa0364d3022b6ca2456363dadaf71b` | UnifarmV13 | impl | unknown | no |

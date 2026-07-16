@@ -1,0 +1,28 @@
+{
+  "component": "StrataCDO-6",
+  "main_contract": "StrataCDO",
+  "source_entry_count": 26,
+  "source_file_count": 26,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StrataCDO-6\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x94a95681e7cdc57abe77d656f3ffbe4c8b94c24c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405738"
+    }
+  ]
+}

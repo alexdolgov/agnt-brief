@@ -268,12 +268,12 @@ abstract contract Strategy is Ownable, ReentrancyGuard, Pausable {
     uint256 public constant buyBackRateMax = 10000;
     uint256 public constant buyBackRateUL = 800;
     // bsc
-    address public constant buyBackAddress =
-    0x000000000000000000000000000000000000dEaD;
+    // address public constant buyBackAddress =
+    // 0x000000000000000000000000000000000000dEaD;
     
     // except bsc
-    // address public buyBackAddress =
-    // 0x000000000000000000000000000000000000dEaD;
+    address public buyBackAddress =
+    0x000000000000000000000000000000000000dEaD;
 
     uint256 public withdrawFeeNumer = 0;
     uint256 public withdrawFeeDenom = 100;

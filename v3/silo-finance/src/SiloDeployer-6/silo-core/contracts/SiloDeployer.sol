@@ -80,6 +80,7 @@ contract SiloDeployer is Create2Factory, ISiloDeployer {
     /// @notice Deploy `SiloConfig` with predicted addresses
     /// @param _siloInitData Silo configuration for the silo creation
     /// @return siloConfig Deployed `SiloConfig`
+    // solhint-disable-next-line function-max-lines
     function _deploySiloConfig(ISiloConfig.InitData memory _siloInitData) internal returns (ISiloConfig siloConfig) {
         uint256 creatorSiloCounter = SILO_FACTORY.creatorSiloCounter(msg.sender);
 
@@ -253,6 +254,8 @@ contract SiloDeployer is Create2Factory, ISiloDeployer {
 
         require(success && data.length == 32, FailedToCreateAnOracle(factory));
 
+        // Safe: `data` length is exactly 32 bytes and encodes an EVM address in the low 20 bytes.
+        // forge-lint: disable-next-line(unsafe-typecast)
         _oracle = address(uint160(uint256(bytes32(data))));
     }
 

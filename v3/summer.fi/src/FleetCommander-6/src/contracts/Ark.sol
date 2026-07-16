@@ -1,24 +1,38 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 import {IArk} from "../interfaces/IArk.sol";
-
 import {IFleetCommander} from "../interfaces/IFleetCommander.sol";
 import {ArkConfig, ArkParams} from "../types/ArkTypes.sol";
-
 import {ArkConfigProvider} from "./ArkConfigProvider.sol";
-import {Constants} from "./libraries/Constants.sol";
+
 import {IERC20, SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import {IDistributor} from "../interfaces/merkl/IDistributor.sol";
+import {Constants} from "@summerfi/constants/Constants.sol";
+import {ReentrancyGuardTransient} from "@summerfi/dependencies/openzeppelin-next/ReentrancyGuardTransient.sol";
 
 /**
  * @title Ark
  * @author SummerFi
- * @custom:see IArk
+ * @notice This contract implements the core functionality for the Ark system,
+ *         handling asset boarding, disembarking, and harvesting operations.
+ * @dev This is an abstract contract that should be inherited by specific Ark implementations.
+ *      Inheriting contracts must implement the abstract functions defined here.
  */
-abstract contract Ark is IArk, ArkConfigProvider {
+abstract contract Ark is IArk, ArkConfigProvider, ReentrancyGuardTransient {
     using SafeERC20 for IERC20;
+    IDistributor constant MERKL_DISTRIBUTOR =
+        IDistributor(0x3Ef3D8bA38EBe18DB133cEc108f4D14CE00Dd9Ae);
+
+    /*//////////////////////////////////////////////////////////////
+                            CONSTRUCTOR
+    //////////////////////////////////////////////////////////////*/
 
     constructor(ArkParams memory _params) ArkConfigProvider(_params) {}
+
+    /*//////////////////////////////////////////////////////////////
+                                MODIFIERS
+    //////////////////////////////////////////////////////////////*/
 
     /**
      * @notice Modifier to validate board data.
@@ -46,39 +60,54 @@ abstract contract Ark is IArk, ArkConfigProvider {
         _;
     }
 
-    /* @inheritdoc IArk */
+    /*//////////////////////////////////////////////////////////////
+                            EXTERNAL FUNCTIONS
+    //////////////////////////////////////////////////////////////*/
+
+    /// @inheritdoc IArk
     function totalAssets() external view virtual returns (uint256) {}
 
-    /* EXTERNAL - RAFT */
-    /* @inheritdoc IArk */
+    /// @inheritdoc IArk
+    function withdrawableTotalAssets() external view returns (uint256) {
+        if (config.requiresKeeperData) {
+            return 0;
+        }
+        return _withdrawableTotalAssets();
+    }
+
+    /// @inheritdoc IArk
     function harvest(
         bytes calldata additionalData
     )
         external
         onlyRaft
+        nonReentrant
         returns (address[] memory rewardTokens, uint256[] memory rewardAmounts)
     {
         (rewardTokens, rewardAmounts) = _harvest(additionalData);
         emit ArkHarvested(rewardTokens, rewardAmounts);
     }
 
-    /* @inheritdoc IArk */
+    /// @inheritdoc IArk
     function sweep(
         address[] memory tokens
     )
         external
         onlyRaft
+        nonReentrant
         returns (address[] memory sweptTokens, uint256[] memory sweptAmounts)
     {
         sweptTokens = new address[](tokens.length);
         sweptAmounts = new uint256[](tokens.length);
-        if (config.token.balanceOf(address(this)) > 0) {
-            config.token.safeTransfer(
-                address(
-                    IFleetCommander(config.commander).getConfig().bufferArk
-                ),
-                config.token.balanceOf(address(this))
-            );
+        IERC20 asset = config.asset;
+
+        address bufferArk = address(
+            IFleetCommander(config.commander).bufferArk()
+        );
+
+        if (asset.balanceOf(address(this)) > 0 && address(this) != bufferArk) {
+            asset.forceApprove(bufferArk, asset.balanceOf(address(this)));
+            IArk(bufferArk).board(asset.balanceOf(address(this)), bytes(""));
         }
         for (uint256 i = 0; i < tokens.length; i++) {
             uint256 amount = IERC20(tokens[i]).balanceOf(address(this));
@@ -94,36 +123,42 @@ abstract contract Ark is IArk, ArkConfigProvider {
         emit ArkSwept(sweptTokens, sweptAmounts);
     }
 
-    /* EXTERNAL - COMMANDER */
-    /* @inheritdoc IArk */
+    function whitelistMerklOperator(address operator) external onlyKeeper {
+        MERKL_DISTRIBUTOR.toggleOperator(address(this), operator);
+    }
+
+    /// @inheritdoc IArk
     function board(
         uint256 amount,
         bytes calldata boardData
     )
         external
+        nonReentrant
         onlyAuthorizedToBoard(this.commander())
         validateBoardData(boardData)
     {
         address msgSender = msg.sender;
-        config.token.safeTransferFrom(msgSender, address(this), amount);
+        IERC20 asset = config.asset;
+        asset.safeTransferFrom(msgSender, address(this), amount);
         _board(amount, boardData);
 
-        emit Boarded(msgSender, address(config.token), amount);
+        emit Boarded(msgSender, address(asset), amount);
     }
 
-    /* @inheritdoc IArk */
+    /// @inheritdoc IArk
     function disembark(
         uint256 amount,
         bytes calldata disembarkData
-    ) external onlyCommander validateDisembarkData(disembarkData) {
+    ) external onlyCommander nonReentrant validateDisembarkData(disembarkData) {
         address msgSender = msg.sender;
+        IERC20 asset = config.asset;
         _disembark(amount, disembarkData);
-        config.token.safeTransfer(msgSender, amount);
+        asset.safeTransfer(msgSender, amount);
 
-        emit Disembarked(msgSender, address(config.token), amount);
+        emit Disembarked(msgSender, address(asset), amount);
     }
 
-    /* @inheritdoc IArk */
+    /// @inheritdoc IArk
     function move(
         uint256 amount,
         address receiverArk,
@@ -132,15 +167,26 @@ abstract contract Ark is IArk, ArkConfigProvider {
     ) external onlyCommander validateDisembarkData(disembarkData) {
         _disembark(amount, disembarkData);
 
-        config.token.approve(receiverArk, amount);
+        IERC20 asset = config.asset;
+        asset.forceApprove(receiverArk, amount);
         IArk(receiverArk).board(amount, boardData);
 
-        emit Moved(address(this), receiverArk, address(config.token), amount);
+        emit Moved(address(this), receiverArk, address(asset), amount);
     }
 
-    /* EXTERNAL - GOVERNANCE */
+    /*//////////////////////////////////////////////////////////////
+                            INTERNAL FUNCTIONS
+    //////////////////////////////////////////////////////////////*/
 
-    /* INTERNAL */
+    /**
+     * @notice Internal function to get the total assets that are withdrawable
+     * @dev This function should be implemented by derived contracts to define specific withdrawability logic
+     * @dev The Ark is withdrawable if it doesnt require keeper data and _withdrawableTotalAssets returns a non-zero
+     * value
+     * @return uint256 The total assets that are withdrawable
+     */
+    function _withdrawableTotalAssets() internal view virtual returns (uint256);
+
     /**
      * @notice Internal function to handle the boarding (depositing) of assets
      * @dev This function should be implemented by derived contracts to define specific boarding logic
@@ -205,6 +251,6 @@ abstract contract Ark is IArk, ArkConfigProvider {
      * @return The balance of the Ark's asset
      */
     function _balanceOfAsset() internal view virtual returns (uint256) {
-        return config.token.balanceOf(address(this));
+        return config.asset.balanceOf(address(this));
     }
 }

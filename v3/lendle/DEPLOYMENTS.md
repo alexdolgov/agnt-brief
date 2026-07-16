@@ -1,6 +1,6 @@
 # lendle — deployments
 
-36 verified deployment(s) across 16 component(s).
+37 verified deployment(s) across 17 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -32,6 +32,7 @@
 | mantle | `0xb92ead4d4ea7290187690ce980e1e6ab43eb0f13` | DefaultReserveInterestRateStrategy | impl | live | no |
 | mantle | `0xc430c4b737abef0bf8c16c7e22af2b36c4fc2f7a` | ATokenV2 | impl | live | no |
 | mantle | `0xc7f65c6b94a8a1c0977add58b6799ad456d72392` | LendingRateOracle | impl | live | yes |
+| mantle | `0xc90c10c7e3b2f14870cc870a046bd099ccddee12` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | mantle | `0xce848c40762c9a65c2b71c90a4d5bc5580191383` | MerkleERC20Distributor | impl | live | no |
 | mantle | `0xd1d9c7be232920bfd971b2f3b83b1c5efe4b15d8` | VaultV7 | impl | live | no |
 | mantle | `0xd1fc69f097141189a4d46ee84e11992e6be87cae` | VaultV7 | impl | live | no |

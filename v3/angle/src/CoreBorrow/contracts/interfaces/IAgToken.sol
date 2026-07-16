@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity ^0.8.12;
+pragma solidity 0.8.12;
 
 import "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol";
 
 /// @title IAgToken
-/// @author Angle Labs, Inc.
+/// @author Angle Core Team
 /// @notice Interface for the stablecoins `AgToken` contracts
 /// @dev This interface only contains functions of the `AgToken` contract which are called by other contracts
 /// of this module or of the first module of the Angle Protocol
@@ -62,7 +62,4 @@ interface IAgToken is IERC20Upgradeable {
     /// @param minter Address for which the minting right should be checked
     /// @return Whether the address has the right to mint agTokens or not
     function isMinter(address minter) external view returns (bool);
-
-    /// @notice Get the associated treasury
-    function treasury() external view returns (address);
 }

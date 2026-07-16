@@ -1,6 +1,6 @@
 # snowball — deployments
 
-208 verified deployment(s) across 208 component(s).
+212 verified deployment(s) across 212 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -134,6 +134,7 @@
 | avalanche | `0x82491550daa8365ac4a5121e143d1759f4d5aded` | StrategyPngAvaxCra | impl | unknown | no |
 | avalanche | `0x848f8b5e78cb509e1ce49179cc9ad1d278a50d46` | StrategyJoeAvaxMaiLp | impl | unknown | no |
 | avalanche | `0x88569a232c84b3dda282bfcf2bdc88e5143e8060` | StrategyPngAvaxUsdcE | impl | unknown | no |
+| avalanche | `0x89a3e2b87ea5fca3a68ead5643f040a0f636a46b` | SherpaNFTClimb | impl | live | no |
 | avalanche | `0x8a757940f003109726995c507237edab521471a4` | StrategyJoeAvaxWbtcE | impl | unknown | no |
 | avalanche | `0x8b3fb9f70ce637409e4d4d9238beb76d6a661e2b` | StrategyPngAvaxFeed | impl | unknown | no |
 | avalanche | `0x8d38ed04f489f973d2eb497965f084531504ff7d` | StrategyJoeAvaxIme | impl | unknown | no |
@@ -156,6 +157,7 @@
 | avalanche | `0x9e61da0111a844b1e1dbbc027edc51d8398097bb` | StrategyJoeAvaxUsdc | impl | unknown | no |
 | avalanche | `0x9f38233653606e6a12255e15103caae92d0e483d` | StrategyJoeAvaxMeltLp | impl | unknown | no |
 | avalanche | `0x9f8eeae99578882ff045d65441b75a85ba11c8c2` | StrategyJoeUsdt | impl | unknown | no |
+| avalanche | `0x9ff1918d212c435ad1f1734e9c4dc2db835161af` | SnowballNFTHolidayHat | impl | live | no |
 | avalanche | `0xa0f8e092f7dfb7f78e04e8bda651d2f92f01500f` | StrategyPngAvaxZee | impl | unknown | no |
 | avalanche | `0xa10248624402acc8733f9697f6e22e10087f7b34` | StrategyJoeUsdcJoe | impl | unknown | no |
 | avalanche | `0xa4c083d3454ea77c3882e61f3e73ee03168245ef` | StrategyPngAvaxPln | impl | unknown | no |
@@ -180,12 +182,14 @@
 | avalanche | `0xba5f105a3e3d7c0eaa36aaa1e3be11d77f1a6162` | MetaSwapDeposit | impl | unknown | no |
 | avalanche | `0xbaca6772f7313f5852eaef64119b606629329186` | StrategyJoeUsdc | impl | unknown | no |
 | avalanche | `0xc231e58f0dcf1d67e0f98b4bf5e27d67c5bd3c1c` | StrategyJoeAvaxGmx | impl | unknown | no |
+| avalanche | `0xc38f41a296a4493ff429f1238e030924a1542e50` | Snowball | impl | live | no |
 | avalanche | `0xc4c6b32567d79b69bb100251d8e3ec767ad21685` | StrategyAxialAM3DLp | impl | unknown | no |
 | avalanche | `0xc59748579367a9c7c1c0edaead7f8dad74be7083` | StrategyPngAvaxOddz | impl | unknown | no |
 | avalanche | `0xc66af7148559cc59dc98c9a64ad159e730e20719` | StrategyJoeAvaxLost | impl | unknown | no |
 | avalanche | `0xc7d536a04ecc43269b6b95ac1ce0a06e0000d095` | AxialControllerV4 | impl | live | no |
 | avalanche | `0xc819b69f92dbafc5afb4ae9f01d825c7c9dd1290` | StrategyPngAvaxMoney | impl | unknown | no |
 | avalanche | `0xc95ca1b7c329a0208e6fa8c071ff62176876fe6d` | StrategyJoeAvaxAmplLp | impl | unknown | no |
+| avalanche | `0xcb42072b73fbd80a4c8005336c2ea78f770c223b` | GnosisSafeProxy | proxy | live | no |
 | avalanche | `0xcb63cdd4ca868e18bf6c6eb8618acd76db32801f` | StrategyJoeAvaxUst | impl | unknown | no |
 | avalanche | `0xcd19f93c12333a4f22892eeed04ad31b13a54658` | StrategyJoeAvaxYakLp | impl | unknown | no |
 | avalanche | `0xcf5ca9ac98e292bd1d96a3c750f652367104036d` | StrategyJoeAvaxCraxLp | impl | unknown | no |

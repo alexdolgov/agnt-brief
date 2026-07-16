@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/pFT\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc55253ea84050700e1efa8878d4a5053b6bf7c5e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394688"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,

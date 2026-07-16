@@ -10,9 +10,11 @@
     "build_command": "forge build --root \"src/OssifiableProxy-3\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
+    "https://github.com/lidofinance/audits/blob/main/Ackee%20Blockchain%20Lido%20Community%20Staking%20Module%20Report%2004-25.pdf",
+    "https://github.com/lidofinance/audits/blob/main/Ackee%20Blockchain%20Lido%20Community%20Staking%20Module%20Report%2010-24.pdf",
     "https://github.com/lidofinance/audits/blob/main/MixBytes%20Lido%20CSM%20Security%20Audit%20Report%2007-2025.pdf",
     "https://github.com/lidofinance/audits/blob/main/MixBytes%20Lido%20CSM%20Security%20Audit%20Report%2010-24.pdf",
     "https://github.com/lidofinance/audits/blob/main/Statemind%20Triggerable%20Withdrawals%20and%20CSM%20v2%20Audit%20Report%2009-2025.pdf"
@@ -47,6 +49,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "401931"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xda7de2ecddfccc6c3af10108db212acbbf9ea83f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

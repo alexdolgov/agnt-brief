@@ -1,0 +1,28 @@
+{
+  "component": "ZipVaultTokenFactory",
+  "main_contract": "ZipVaultTokenFactory",
+  "source_entry_count": 21,
+  "source_file_count": 21,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ZipVaultTokenFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x54950cae3d8513ea041066f31697903de5909f57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400153"
+    }
+  ]
+}

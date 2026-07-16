@@ -1,0 +1,48 @@
+{
+  "component": "MultiTroveGetter",
+  "main_contract": "MultiTroveGetter",
+  "source_entry_count": 29,
+  "source_file_count": 29,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MultiTroveGetter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x42186eefc0e6d7e3cfb82f3845671ef1600dcf6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392086"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x42186eefc0e6d7e3cfb82f3845671ef1600dcf6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392318"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x42186eefc0e6d7e3cfb82f3845671ef1600dcf6b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392358"
+    }
+  ]
+}

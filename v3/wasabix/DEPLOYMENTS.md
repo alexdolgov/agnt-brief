@@ -1,6 +1,6 @@
 # wasabix — deployments
 
-58 verified deployment(s) across 58 component(s).
+59 verified deployment(s) across 59 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -14,6 +14,7 @@
 | bsc | `0x5cda2a223458316cfe2f829bde7e5581c9d1e4cd` | AlpacaBNBVaultAdapterWithIndirection | impl | live | no |
 | bsc | `0x80c6901659b70a79bc55b821e7df81840385abbe` | AlpacaBNBVaultAdapter | impl | live | no |
 | bsc | `0x84e6fd3595010aa6ee461ea2bffa03776780f412` | YumAlpacaBUSDVault | impl | live | no |
+| bsc | `0x86e73212002f80c57070efad4765ff0117de5aea` | BurnableWasabiToken | impl | live | no |
 | bsc | `0x99b399b4c79b8c51c4bc8c0df4f49a77cfdec340` | MigratableBUSDTransmuterV2 | impl | live | no |
 | bsc | `0xa33b1b67288e47303ec3612662d00ab489d161dc` | AlpacaVaultAdapter | impl | live | no |
 | bsc | `0xb4f52916414119e4212369569d9089f90070b6dc` | YumAlpacaBNBVault | impl | live | no |

@@ -1,0 +1,38 @@
+{
+  "component": "SharesCooldown",
+  "main_contract": "SharesCooldown",
+  "source_entry_count": 28,
+  "source_file_count": 28,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SharesCooldown\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x25f7ce4cd3b5faef99350a9964ce9356ea58bcae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405713"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8da07f0050f1a36682164657d72c7fa3606638cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405734"
+    }
+  ]
+}

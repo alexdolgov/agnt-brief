@@ -1,6 +1,6 @@
 # ratex — deployments
 
-17 verified deployment(s) across 9 component(s).
+18 verified deployment(s) across 10 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -9,6 +9,7 @@
 | bsc | `0x34b504a5cf0ff41f8a480580533b6dda687fa3da` | TransparentUpgradeableProxy | proxy | live | no |
 | bsc | `0x34f18e18330468ffaedfdcd8ffdaff23aa80eafc` | PToken | impl | live | no |
 | bsc | `0x456fb811c0b4083afffe2e5b37915db8a1b6b28b` | ClearingHouse | impl | live | no |
+| bsc | `0x4829a1d1fb6ded1f81d26868ab8976648baf9893` | OFTCore | impl | live | no |
 | bsc | `0x58f2d3b1b810fa6b7f57eeae6b353558d7b49566` | ClearingHouse | impl | live | no |
 | bsc | `0x5a0e3291514f5f1797a0c7efefdac81eec70ec01` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | bsc | `0x64e30b9e176b4551b5d9f17d72716152540cbd98` | Market | impl | live | no |

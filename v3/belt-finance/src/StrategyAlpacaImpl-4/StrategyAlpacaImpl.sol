@@ -1137,6 +1137,9 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
         uint wantBal;
 
         if(_wantAmt > wantLockedInHere()) {
+            balanceSnapshot = balanceSnapshot.sub(_wantAmt.sub(
+                wantLockedInHere()
+            ));
             _withdraw(_wantAmt.sub(
                 wantLockedInHere()
             ));
@@ -1153,8 +1156,6 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
         }
 
         IERC20(wantAddress).safeTransfer(owner(), wantBal);
-
-        balanceSnapshot = balanceSnapshot.sub(_wantAmt);
 
         emit Withdraw(wantAddress, _wantAmt, wantBal);
 

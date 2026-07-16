@@ -1,6 +1,6 @@
 # scientix — deployments
 
-54 verified deployment(s) across 53 component(s).
+57 verified deployment(s) across 56 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -9,6 +9,7 @@
 | bsc | `0x064bb6eea2339cad2bdaf895c3d3728e2c6bdac1` | CollateralPoolConfig | impl | unknown | no |
 | bsc | `0x0a3617197113ed2a9bbcadfb3c4f417734b1f8aa` | SingleAssetWorkerConfig | impl | unknown | no |
 | bsc | `0x0a7233ade189237e4ecc86ff201d3bac2c96fbd6` | FlashMintModule | impl | unknown | no |
+| bsc | `0x0e5c2b15666eee4b66788e45cf4da0392c070fa7` | ScToken | impl | live | no |
 | bsc | `0x0e98f04411d43c800608ca5019c216c212aae694` | Vault | impl | unknown | no |
 | bsc | `0x1391fb5efc2394f33930a0cffb9d407abdbf1481` | AlpacaStablecoinProxyActions | impl | unknown | no |
 | bsc | `0x13c052c34beaed5f7c4856faa4da0544b9df99a7` | StrategyAddBaseTokenOnly | impl | unknown | no |
@@ -17,6 +18,7 @@
 | bsc | `0x1afadbe730d44b95aeec909846d4bfdd8d3831af` | PriceOracle | impl | unknown | no |
 | bsc | `0x1c25da226ab9f03d30243465dd83f18bc22e2b0e` | Scientist | impl | unknown | no |
 | bsc | `0x25be5dae973894acfa810e9f4db7e3d73a3f6fad` | AlpacaFeeder | impl | unknown | no |
+| bsc | `0x2cfc48cdfea0678137854f010b5390c5144c0aa5` | ScientixToken | impl | live | no |
 | bsc | `0x2d5408f2287bf9f9b05404794459a846651d0a59` | Timelock | impl | unknown | no |
 | bsc | `0x30275f8980ade89febfd93023a4af67da0fe700f` | DeltaNeutralVaultConfig | impl | unknown | no |
 | bsc | `0x3175ec52c36fff63dce00e8a50e6066d38884a11` | WorkerConfig | impl | unknown | no |
@@ -47,6 +49,7 @@
 | bsc | `0x89110091631f49fdcb7141f791640096b98763cd` | RevenueTreasury | impl | unknown | no |
 | bsc | `0x8ef228fe83393411c434306bf7ce56532a0c50dc` | StaticPriceFeed | impl | unknown | no |
 | bsc | `0x9d97bad1fd253ba3ac46a8281ae6571ad6d307de` | WaultSwapWorker | impl | unknown | no |
+| bsc | `0xa43487b3a77de47cb0192f1aec43ea4e4701d360` | GnosisSafeProxy | proxy | live | no |
 | bsc | `0xa96b313cb2e81505b306250946e3be86b26706b1` | YearnVaultAdapterWithIndirection | impl | live | no |
 | bsc | `0xabe59308ac72f04b1a2d04175d5247ba981075a6` | StrategyAddTwoSidesOptimal | impl | unknown | no |
 | bsc | `0xb63acd06c7d6ece492dfba61c606855e49fb93f3` | PancakeswapWorker | impl | unknown | no |

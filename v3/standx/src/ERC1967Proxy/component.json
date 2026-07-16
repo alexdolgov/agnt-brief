@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/ERC1967Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": true,
   "audits_covering": [
     "https://github.com/standx-labs/stand_audit/blob/main/RigSec_StandX_DUSD_EVM_Audit.pdf",
@@ -18,6 +18,16 @@
     "https://github.com/standx-labs/stand_audit/blob/main/WatchPug_StandX_Highway_SVM_Audit.pdf"
   ],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x00b4f9b510893505acefb10ec91cbc972185088e",
+      "is_proxy": true,
+      "implementation_address": "0xb69f4f80ec472ff9fe86933ac739329f8f72dc3b",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399407"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,

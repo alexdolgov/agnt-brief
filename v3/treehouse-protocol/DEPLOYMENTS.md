@@ -1,6 +1,6 @@
 # treehouse-protocol — deployments
 
-30 verified deployment(s) across 29 component(s).
+32 verified deployment(s) across 31 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -19,10 +19,12 @@
 | ethereum | `0x60d2d94acb969ca54e781007ee89f04c1a2e5943` | Strategy | proxy | live | yes |
 | ethereum | `0x72cca9794018c10ce47af3fc8d47e167d0761e96` | tETH | impl | live | no |
 | ethereum | `0x7fadb6358950c5faa66cb5eb8ee5147de3df355a` | HashConsensus | impl | live | no |
+| ethereum | `0x8113f001ea456759264317007220cbc939ca8435` | LockReleaseTokenPool | impl | live | no |
 | ethereum | `0x829525417cd78cba0f99a8736426fc299506c0d6` | TreehouseFastlane | impl | live | no |
 | ethereum | `0x852ded011285fe67063a08005c71a85690503cee` | OssifiableProxy-2 | proxy | live | no |
 | ethereum | `0x90a02936ba645ab719574512b578ee85d208257a` | GearboxRedeemV31 | impl | live | no |
 | ethereum | `0x98273a098e2bb7663be83b48ee2c0ac3ecc02455` | Strategy-2 | impl | live | no |
+| ethereum | `0xa10d15538e09479186b4d3278ba5c979110dddb1` | CurveStableSwapNG | impl | live | no |
 | ethereum | `0xa1150cd4a014e06f5e0a6ec9453fe0208da5adab` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0xa1c069c2f77b26a54e9f175fa2eade21c34a94e1` | ESRProxy | proxy | live | no |
 | ethereum | `0xba12222222228d8ba445958a75a0704d566bf2c8` | Vault-2 | impl | live | no |

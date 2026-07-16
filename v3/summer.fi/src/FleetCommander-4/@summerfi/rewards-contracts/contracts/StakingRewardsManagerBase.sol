@@ -10,7 +10,7 @@ pragma solidity 0.8.28;
  */
 import {IStakingRewardsManagerBase} from "../interfaces/IStakingRewardsManagerBase.sol";
 import {ProtocolAccessManaged} from "@summerfi/access-contracts/contracts/ProtocolAccessManaged.sol";
-import {ReentrancyGuardTransient} from "@summerfi/dependencies/openzeppelin-next/ReentrancyGuardTransient.sol";
+import {ReentrancyGuardTransient} from "@openzeppelin/contracts/utils/ReentrancyGuardTransient.sol";
 import {IERC20, SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import {IERC20Metadata} from "@openzeppelin/contracts/interfaces/IERC20Metadata.sol";
 import {EnumerableSet} from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
@@ -285,6 +285,18 @@ abstract contract StakingRewardsManagerBase is
         if (!success) revert RewardTokenDoesNotExist();
 
         emit RewardTokenRemoved(address(rewardToken));
+    }
+
+    /// @inheritdoc IStakingRewardsManagerBase
+    function rescueToken(
+        address _token,
+        address _to
+    ) public virtual onlyGovernor {
+        // Sweep entire token balance to the target; used for emergency recovery only
+        IERC20(_token).safeTransfer(
+            _to,
+            IERC20(_token).balanceOf(address(this))
+        );
     }
 
     /*//////////////////////////////////////////////////////////////

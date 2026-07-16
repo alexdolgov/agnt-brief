@@ -1,6 +1,6 @@
 # bob-bridge — deployments
 
-41 verified deployment(s) across 23 component(s).
+45 verified deployment(s) across 27 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -14,8 +14,11 @@
 | ethereum | `0x2c2da5effabda3a9ffe8e3d526c5b1f3b42fea6d` | OPSuccinctDisputeGame | impl | live | no |
 | ethereum | `0x2dd08101104c64cb98443a9b92cd21c7936f15b2` | PermissionedDisputeGame | impl | live | no |
 | ethereum | `0x33f9c5201f97dd1856a97fd0c527b7c0f6a710a3` | PermissionedDisputeGame | impl | live | no |
+| ethereum | `0x340f923e5c7cbb2171146f64169ec9d5a9ffe647` | SystemConfig | impl | live | no |
 | ethereum | `0x3f6ce1b36e5120bbc59d0cfe8a5ac8b6464ac1f7` | L1ChugSplashProxy | proxy | live | no |
 | ethereum | `0x4695931f9b659eec35e1c2057d08341f16e05dad` | PermissionedDisputeGame | impl | live | no |
+| ethereum | `0x4bba758f006ef09402ef31724203f316ab74e4a0` | DisputeGameFactory | impl | live | no |
+| ethereum | `0x5493f4677a186f64805fe7317d6993ba4863988f` | OptimismMintableERC20 | impl | live | no |
 | ethereum | `0x5d5a095665886119693f0b41d8dfee78da033e8b` | L1CrossDomainMessenger | impl | live | no |
 | ethereum | `0x6753df477d00ce9b6a1d81d143cc0fc1382f6776` | PermissionedDisputeGame | impl | live | no |
 | ethereum | `0x68749665ff8d2d112fa859aa293f07a622782f38` | TransparentUpgradeableProxy | proxy | live | no |
@@ -30,6 +33,7 @@
 | ethereum | `0x9937033cc967eed9d753e31c77d2f146d002ae53` | KailuaTreasury | impl | live | no |
 | ethereum | `0x9b3e1661bccaf907893b71e4016c01513ae9263c` | KailuaTreasury-2 | impl | live | no |
 | ethereum | `0xa5d58aa93682a9a29492588d153304e093e39084` | PermissionedDisputeGame | impl | live | no |
+| ethereum | `0xb443da3e07052204a02d630a8933dac05a0d6fb4` | OptimismPortal2 | impl | live | no |
 | ethereum | `0xbcee7287370b3ed030e9b15ec94003307716fb8b` | PermissionedDisputeGame | impl | live | no |
 | ethereum | `0xbdab72602e9ad40fc6a6852caf43258113b8f7a5` | SideToken | impl | live | no |
 | ethereum | `0xbdbb63f938c8961af31ead3deba5c96e6a323dd1` | SideToken-2 | impl | live | no |

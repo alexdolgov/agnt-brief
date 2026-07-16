@@ -1,6 +1,6 @@
 # bancor — deployments
 
-266 verified deployment(s) across 225 component(s).
+269 verified deployment(s) across 226 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -9,6 +9,7 @@
 | ethereum | `0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c` | SmartToken-4 | impl | live | yes |
 | ethereum | `0x2a2a2be5ccf20f3633c6ca2d429ac51186a631e1` | TransparentUpgradeableProxyImmutable-4 | proxy | live | yes |
 | ethereum | `0x2f9ec37d6ccfff1cab21733bdadede11c823ccb0` | BancorNetwork | impl | live | no |
+| ethereum | `0x48fb253446873234f2febbf9bdeaa72d9d387f94` | DSToken | impl | live | no |
 | ethereum | `0x52d7c77cd866a535e16d57b9d542cf0526f1ffa2` | BancorConverterFactory | impl | live | no |
 | ethereum | `0x53f36c56ecd4fb145989710fa3e3cc28ae4ace88` | LiquidityProtection | impl | live | no |
 | ethereum | `0x54c75fec898d34f40960b2da65adc1e46ab84f65` | LiquidityProtection-2 | impl | live | no |
@@ -214,9 +215,11 @@
 | ethereum | `0xda96defa6e41ece0c45f9ada1db4503b018409a0` | BancorConverterFactory-10 | impl | live | no |
 | ethereum | `0xdbc3c64508e3fae19b0bcc2472f8811b9d8fa9f2` | StandardPoolConverterFactory-2 | impl | live | no |
 | ethereum | `0xdbcb8a64f89cc5f028b18a45e59fd99eaa9af34a` | BancorArbitrage-7 | impl | live | no |
+| ethereum | `0xdbd62d3c1405d28c57f51c823d9d14f3f4a54e20` | DSToken | impl | live | no |
 | ethereum | `0xdbe6a39be797092bcd3898f63db70c00f0a245c9` | ConverterRegistry | impl | live | no |
 | ethereum | `0xdc0aeb8fdbe2230b0fd183ddcf63a5fe02c356c0` | BancorConverter-16 | impl | live | no |
 | ethereum | `0xdc2f2b295bd68e8d0c97344a67f8c843cdd30109` | BancorConverter | impl | live | no |
+| ethereum | `0xdce1563642db84161c9b99c6c2322cde05fbaf17` | DSToken | impl | live | no |
 | ethereum | `0xddc05ac0dc00faf1762e91454176c17827e4f5fb` | LiquidityProtection-9 | impl | live | no |
 | ethereum | `0xdde116487fc20923f684c098a8419e6f6af32ae7` | SmartToken | impl | live | no |
 | ethereum | `0xddfceea65cd7d7417feb7c9024ffb8abdd0b82b3` | LiquidTokenConverter-4 | impl | live | no |

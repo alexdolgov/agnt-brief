@@ -1,12 +1,16 @@
 # keep-network — deployments
 
-579 verified deployment(s) across 230 component(s).
+589 verified deployment(s) across 238 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| arbitrum | `0xd7cd996a47b3293d4fec2dbcf49692370334d9b7` | TransparentUpgradeableProxy-6 | proxy | live | no |
-| base | `0x236aa50979d5f3de3bd1eeb40e81137f22ab794b` | BeaconProxy | proxy | live | no |
-| base | `0xe931f1ac6b00400e1dad153e184afee164d2d88b` | TransparentUpgradeableProxy-5 | proxy | live | no |
+| arbitrum | `0x1293a54e160d1cd7075487898d65266081a15458` | TransparentUpgradeableProxy-10 | proxy | live | no |
+| arbitrum | `0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40` | AdminUpgradeabilityProxy | proxy | live | no |
+| arbitrum | `0xd7cd996a47b3293d4fec2dbcf49692370334d9b7` | TransparentUpgradeableProxy-11 | proxy | live | no |
+| base | `0x09959798b95d00a3183d20fac298e4594e599eab` | TransparentUpgradeableProxy-8 | proxy | live | no |
+| base | `0x236aa50979d5f3de3bd1eeb40e81137f22ab794b` | BeaconProxy | proxy | live | yes |
+| base | `0xdebd9aa9bc4845c7cd2d9a997f82a2daea540bd5` | BeaconProxy | impl | live | yes |
+| base | `0xe931f1ac6b00400e1dad153e184afee164d2d88b` | TransparentUpgradeableProxy-9 | proxy | live | no |
 | ethereum | `0x01346721418045a6c07b71052e452ef8615e9084` | CommitStore-5 | impl | live | no |
 | ethereum | `0x015381651f240ed6c44122dcba6cf807c9442cd6` | CpuFrilessVerifier | impl | live | no |
 | ethereum | `0x0428df02c581e605aabf83005b427b1561b587de` | CommitStore | impl | live | no |
@@ -27,6 +31,7 @@
 | ethereum | `0x13e120f6c8e747983f7aaf0f7731796bfcb0d934` | GpsStatementVerifier-3 | impl | live | no |
 | ethereum | `0x1807769abe5133c9b41ca6746044b6a1d83f5633` | CommitStore-2 | impl | live | no |
 | ethereum | `0x18084fba666a33d37592fa2633fd49a74dd93a88` | TBTC | impl | live | yes |
+| ethereum | `0x186d048097c7406c64efb0537886e3cae100a1fe` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0x192292817680196a0215a50b07d1c5e7ab8a8636` | CairoBootloaderProgram | impl | live | no |
 | ethereum | `0x1b0534bc3f43b11ebde71f0fc68cf61df4d7e29d` | Redemption-3 | impl | live | no |
 | ethereum | `0x1bddba5dc2cd6ed3343a8e94d02023cc720533b9` | CommitStore | impl | live | no |
@@ -50,7 +55,7 @@
 | ethereum | `0x32a91ff604ab2adcd832e91d68b2f3f25358fdad` | MerkleStatementContract | impl | live | no |
 | ethereum | `0x330349112e13232131da51f9f3b153d825f65e61` | EVM2EVMOffRamp-2 | impl | live | no |
 | ethereum | `0x33276152d082120f5190362e6e5f6783bbcb2b26` | EVM2EVMOffRamp-2 | impl | live | no |
-| ethereum | `0x347cc7ede7e5517bd47d20620b2cf1b406edcf07` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0x347cc7ede7e5517bd47d20620b2cf1b406edcf07` | TransparentUpgradeableProxy-4 | proxy | live | no |
 | ethereum | `0x34eec7eca3ce1e693028255ebe2063728224a604` | EVM2EVMOffRamp | impl | live | no |
 | ethereum | `0x3597c5cbcbcb30079a0bd2a68cde5f98272f9feb` | CallProxy | impl | live | no |
 | ethereum | `0x359ee79b17c3b6cd06eca4d38481048e7e1caea1` | NativeBTCDepositor | impl | live | no |
@@ -128,6 +133,7 @@
 | ethereum | `0x74cb66502d855992137c5dc8a502c396a6e77931` | EVM2EVMOnRamp | impl | live | no |
 | ethereum | `0x7559a84ae7b75f4b0e0e540312a3ec912b2128ca` | BurnMintTokenPool | impl | live | no |
 | ethereum | `0x7570a2350183b4bdf7ca74fad3fc19048e6437e6` | VendingMachineV3 | impl | live | no |
+| ethereum | `0x75a6e4a7c8faa162192fad6c1f7a6d48992c619a` | TransparentUpgradeableProxy-5 | proxy | live | no |
 | ethereum | `0x75a852478792e5a99bc4cdd0adbd97129b0d9799` | LockReleaseTokenPoolAndProxy | impl | live | no |
 | ethereum | `0x75c881c77a36c8233d3c8c77447958f3e2493f7d` | ProxyV5 | impl | live | no |
 | ethereum | `0x75d536eed32f4c8bb39f4b0c992163f5ba49b84e` | EVM2EVMOnRamp | impl | live | no |
@@ -187,6 +193,7 @@
 | ethereum | `0x8705f734b7ac1fc0bb2d16f60c6efac5ed646159` | CommitStore-2 | impl | live | no |
 | ethereum | `0x87945d417fa023ae001572e57980b4b2e6eeca21` | EcdsaPointsXColumn-2 | impl | live | no |
 | ethereum | `0x87c55d48df6ef7b08153ab079e76bfecbb793d75` | CommitStore-3 | impl | live | no |
+| ethereum | `0x87f005317692d05baa4193ab0c961c69e175f45f` | TimelockController | impl | live | no |
 | ethereum | `0x88ba01753f2e96c3a00c6aaf76eaeb36ccf715c1` | CpuOods-3 | impl | live | no |
 | ethereum | `0x89b7a7276cbc8cb35ec11fae9da83b20db3edf20` | CpuConstraintPoly-8 | impl | live | no |
 | ethereum | `0x89c2f79c097f7d901ccb7f746dc9b3907843cb2e` | Allowlist | impl | live | no |
@@ -225,6 +232,7 @@
 | ethereum | `0x91d25a56db77ad5147437d8b83eb563d46ebfa69` | EVM2EVMOnRamp-2 | impl | live | no |
 | ethereum | `0x923f2775003a0394a6535fd889f6f71f43c3ee81` | LockReleaseTokenPool | impl | live | no |
 | ethereum | `0x925228d7b82d883dde340a55fe8e6da56244a22c` | EVM2EVMOnRamp-2 | impl | live | no |
+| ethereum | `0x92f2d8b72a7f6a551be60b9aa4194248e9b4913d` | Timelock | impl | live | no |
 | ethereum | `0x92fbcf9b006189c242146c21f5e8ce4fea9da04f` | EVM2EVMOffRamp-2 | impl | live | no |
 | ethereum | `0x943248da0ffd5834da56c5ad5308e2e2991378eb` | CpuConstraintPoly-9 | impl | live | no |
 | ethereum | `0x947685395d50833829bc1f6f203c79c471b630b9` | TACoApplication-2 | impl | live | no |
@@ -341,6 +349,7 @@
 | ethereum | `0xb5f14646dd0c251bf3a5be087095e8623d8e0c80` | LockReleaseTokenPool-4 | impl | live | no |
 | ethereum | `0xb62dc40175812208f509b69506315a48c92fb15a` | CpuConstraintPoly-3 | impl | live | no |
 | ethereum | `0xb640935b164024ef1bc0b9e176432c440a5cd4dc` | CpuOods | impl | live | no |
+| ethereum | `0xb810abd43d8fcfd812d6feb14fefc236e92a341a` | BeaconProxy | proxy | live | yes |
 | ethereum | `0xb854536206eb6c1013b1642b576196e5ef19d7ba` | LockReleaseTokenPool | impl | live | no |
 | ethereum | `0xb8a882f3b88bd52d1ff56a873bfdb84b70431937` | EVM2EVMOnRamp | impl | live | no |
 | ethereum | `0xb97394b55b4807a835619edbcc6af6b1d3c71e98` | TokensAndRamping-2 | impl | live | no |
@@ -582,9 +591,5 @@
 | ethereum | `0xffc7974cd74b95f631f454cd787aac28f0476b44` | CpuFrilessVerifier-28 | impl | live | no |
 | optimism | `0x1293a54e160d1cd7075487898d65266081a15458` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | optimism | `0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40` | TransparentUpgradeableProxy-2 | proxy | live | no |
-| polygon | `0x236aa50979d5f3de3bd1eeb40e81137f22ab794b` | TransparentUpgradeableProxy-4 | proxy | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0xdebd9aa9bc4845c7cd2d9a997f82a2daea540bd5`
+| polygon | `0x09959798b95d00a3183d20fac298e4594e599eab` | TransparentUpgradeableProxy-6 | proxy | live | no |
+| polygon | `0x236aa50979d5f3de3bd1eeb40e81137f22ab794b` | TransparentUpgradeableProxy-7 | proxy | live | no |

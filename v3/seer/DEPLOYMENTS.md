@@ -1,6 +1,6 @@
 # seer — deployments
 
-75 verified deployment(s) across 45 component(s).
+76 verified deployment(s) across 46 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -11,6 +11,7 @@
 | ethereum | `0xa638f22cdd13013494971b0e1325718aa45280dc` | FutarchyRealityProxy | impl | live | no |
 | ethereum | `0xac9bf8eba6bd31f8e8c76f8e8b2aad0bd93f98dc` | FutarchyRouter | impl | live | no |
 | ethereum | `0xc59b0e4de5f1248c1140964e0ff287b192407e0c` | ConditionalTokens | impl | live | no |
+| ethereum | `0xd194319d1804c1051dd21ba1dc931ca72410b79f` | Wrapped1155Factory | impl | live | no |
 | ethereum | `0xf9369c0f7a84cac3b7ef78c837cf7313309d3678` | FutarchyFactory | impl | live | no |
 | gnosis | `0x02d727a6a93eb45d2c20f6d9c7a97ae8fce2e5c2` | TradingCredits | impl | live | no |
 | gnosis | `0x075b4c46f87daf3969ada24643257476b3decc15` | TradingCredits-2 | impl | live | no |

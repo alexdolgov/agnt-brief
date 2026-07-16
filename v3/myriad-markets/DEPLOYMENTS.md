@@ -1,6 +1,6 @@
 # myriad-markets — deployments
 
-23 verified deployment(s) across 23 component(s).
+24 verified deployment(s) across 24 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,6 +8,7 @@
 | bsc | `0x39e66ee6b2ddaf4defded3038e0162180dbef340` | Proxy | proxy | live | yes |
 | bsc | `0x3f5c62b07a38bce116fb5fcc61cbc262b43a3364` | MyriadCTFExchange | impl | unknown | no |
 | bsc | `0x423abc7b68dd11c3756f59fb2c155d27f003a7e7` | FeeModule | impl | unknown | no |
+| bsc | `0x55d398326f99059ff775485246999027b3197955` | BEP20USDT | impl | live | no |
 | bsc | `0x6413734f92248d4b29ae35883290bd93212654dc` | ConditionalTokens | impl | unknown | no |
 | bsc | `0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d` | ERC1967Upgrade | proxy | live | no |
 | bsc | `0x9ab1213d360bea3eda75d88d81d7fbfc9fd37f2b` | PredictionMarketV3ManagerCLOB | impl | unknown | no |

@@ -1,6 +1,6 @@
 # wardenswap — deployments
 
-18 verified deployment(s) across 18 component(s).
+19 verified deployment(s) across 19 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -11,6 +11,7 @@
 | bsc | `0x359b9fc0765481569c33ccef23bd14d0878125ae` | WardenSwap1_5 | impl | live | no |
 | bsc | `0x3657952d7ba5a0a4799809b5b6fdff9ec5b46293` | WardenFactory | impl | unknown | no |
 | bsc | `0x372aed0528ea4bc95e1101b2882cb15fca4b226e` | Tempest | impl | unknown | no |
+| bsc | `0x451ef8d6b645a60115eb8b8bea76b39c0c761004` | WardenRouterV2 | impl | live | no |
 | bsc | `0x64e16e42493c9d537521a0346c91e254de9ff415` | WardenswapValueDefiRouter | impl | unknown | no |
 | bsc | `0x68fac8a95d04b69bdbf66ca554f47a8193d0e5b6` | WardenSwap1_5_Aegis | impl | live | yes |
 | bsc | `0x71ac17934b60a4610dc58b715b61e45dcbde4054` | WardenswapV2Router02 | impl | live | no |

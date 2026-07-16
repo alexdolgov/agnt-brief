@@ -1,8 +1,8 @@
 {
   "component": "Contract",
   "main_contract": "Contract",
-  "source_entry_count": 16,
-  "source_file_count": 16,
+  "source_entry_count": 48,
+  "source_file_count": 48,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -13,13 +13,14 @@
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
-    "https://reports.chainsecurity.com/Mento/ChainSecurity_Mento_MentoCoreV3_Audit.pdf"
+    "https://reports.chainsecurity.com/Mento/ChainSecurity_Mento_MentoLiquityV2_Audit.pdf",
+    "https://www.chainsecurity.com/security-audit/mento-liquity-v2"
   ],
   "addresses": [
     {
       "chain": "chain-42220",
       "chain_id": 42220,
-      "address": "0x4255cf38e51516766180b33122029a88cb853806",
+      "address": "0x2d5d7e2767c5493610cae84e0ab7f9d2cce8c1a5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

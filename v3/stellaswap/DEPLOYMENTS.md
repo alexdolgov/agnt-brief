@@ -1,9 +1,10 @@
 # stellaswap — deployments
 
-59 verified deployment(s) across 58 component(s).
+65 verified deployment(s) across 63 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| chain-1284 | `0x002d34d6a1b4a8e665fec43fd5d923f4d7cd254f` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-1284 | `0x01821b961b6191efc71a1db38b8644d3d3d45c14` | AlgebraPoolDeployer | impl | unknown | no |
 | chain-1284 | `0x01834cf26717f0351d9762cc9cca7dc059d140df` | Zap | impl | unknown | no |
 | chain-1284 | `0x02c8a6bbdda6e51f2a721dcb7d259f8f1d73fedc` | AlgebraFactory | impl | unknown | no |
@@ -11,6 +12,7 @@
 | chain-1284 | `0x051fcf8986b30860a1341e0031e5622bd18d8a85` | StellaSwapV2Pair | impl | unknown | no |
 | chain-1284 | `0x085416975fe14c2a731a97ec38b9bf8135231f62` | BurnableMintableCappedERC20 | impl | unknown | no |
 | chain-1284 | `0x09af4b478aea7aa6dd06b83b67eae74a4f55febb` | LPToken | impl | unknown | no |
+| chain-1284 | `0x0d4f8a55a5b2583189468ca3b0a32d972f90e6e5` | FarmingCenter | proxy | live | no |
 | chain-1284 | `0x0e358838ce72d5e61e0018a2ffac4bec5f4c88d2` | Stella | impl | live | yes |
 | chain-1284 | `0x0fa8cde3e0cddf150d79add0f3d63cb6e0f2f079` | Oracle | impl | live | no |
 | chain-1284 | `0x0fbe981966da95b801d68394dbf0d9ff72d1af57` | OracleMaster | impl | unknown | no |
@@ -18,6 +20,7 @@
 | chain-1284 | `0x1dc78acda13a8bc4408b207c9e48cdbc096d95e0` | UpgradeBeaconProxy | proxy | unknown | no |
 | chain-1284 | `0x1e6dde8c277b64e9960cf383ef48fe2112bfbdb4` | AmplificationUtils | impl | unknown | no |
 | chain-1284 | `0x1ff2adaa387dd27c22b31086e658108588eda03a` | NonfungiblePositionManager | proxy | live | no |
+| chain-1284 | `0x21b23cb583056d10d81378ede349086fa1940819` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | chain-1284 | `0x22bcc43ba85dd1cb9630e5c422d8006dc16f1ded` | AmplificationUtils | impl | unknown | no |
 | chain-1284 | `0x247a323daa63cc97c2bad61b4d6f1e0120b5c9e2` | ComboOracle | impl | unknown | no |
 | chain-1284 | `0x24d357c3deda4f412a4d7b5e0db5f8e4a63d6e96` | AlgebraInterfaceMulticall | impl | live | no |
@@ -30,6 +33,7 @@
 | chain-1284 | `0x4a40198373de481741bdf629b44dc98f12f18161` | ComboOracle_UniV2_UniV3_Zenlink | impl | unknown | no |
 | chain-1284 | `0x54e2d14df9348b3fba7e372328595b9f3ae243fe` | StellaVault | impl | unknown | no |
 | chain-1284 | `0x58fb43988ce99da388b1183a36264ea1161e45dd` | CrossChainBridgeBacker_MNBM_Nomad | impl | unknown | no |
+| chain-1284 | `0x5927e31cd0b8213892fb0c44f7c1c94dcb830263` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-1284 | `0x5c3dc0ab1bd70c5cdc8d0865e023164d4d3fd8ec` | SwapFlashLoan | impl | unknown | no |
 | chain-1284 | `0x65bf1e4a5af9939549afc7c8e9d2438f5ed1d27e` | SetText | impl | unknown | no |
 | chain-1284 | `0x686967bb5a0c8a115b70215827e5aa7f5d9376b3` | SwapRouter | impl | unknown | no |
@@ -46,10 +50,12 @@
 | chain-1284 | `0x841ce48f9446c8e281d3f1444cb859b4a6d0738c` | Bridge | impl | unknown | no |
 | chain-1284 | `0x891220b8c2134a29813dc27c113ebf2bfb700abb` | GasSwap | impl | unknown | no |
 | chain-1284 | `0x8d22d5a8a9962fb563909d4a8b37429f51c07325` | StellaDistributor | impl | unknown | no |
+| chain-1284 | `0x965a857955d868fd98482e9439b1af297623fb94` | Contract | impl | live | yes |
 | chain-1284 | `0x973771645a89ddb6a956e3a4d92409bcc013cddc` | CrossChainOracleSingleAsset | impl | unknown | no |
 | chain-1284 | `0x9a0b83dfe94767c1f72386c0df2f1f52480290aa` | RewarderFactory | impl | unknown | no |
 | chain-1284 | `0xa0f2d90bbdb0c57bc65e07203d9d863fb81c57d2` | OffchainHelper | impl | unknown | no |
 | chain-1284 | `0xa732097e1c284fc4e64f077dd5360da81e1f2c68` | LedgerFactory | impl | live | no |
+| chain-1284 | `0xabe1655110112d0e45ef91e94f8d757e4ddba59c` | Contract-2 | impl | live | yes |
 | chain-1284 | `0xb0dfd6f3fddb219e60fcdc1ea3d04b22f2ffa9cc` | Router | impl | unknown | no |
 | chain-1284 | `0xb2d7367643ca6ef2af562a6c3b288adfce68ba8f` | CrossChainOracleSingleAssetV2 | impl | unknown | no |
 | chain-1284 | `0xb4630acbab32254cd42728d2a1851c88604490ad` | V3Migrator | impl | live | no |
@@ -63,9 +69,3 @@
 | chain-1284 | `0xe5870c6770d86d1cb91bb782986abf607be130d1` | ZapHelper | impl | unknown | no |
 | chain-1284 | `0xf722a295abd8cfb691c78dd9b6699701491c3ff5` | AlgebraLimitFarming | impl | live | no |
 | chain-1284 | `0xffffffff15e1b7e3df971dd813bc394deb899abf` | XC20 | impl | unknown | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-1284 `0x965a857955d868fd98482e9439b1af297623fb94`
-- chain-1284 `0xabe1655110112d0e45ef91e94f8d757e4ddba59c`

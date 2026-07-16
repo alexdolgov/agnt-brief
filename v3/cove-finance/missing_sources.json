@@ -2,30 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "cove-finance",
-  "missing": [
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0x9219401e7e2e473770e56203e4eeba85083c7f7e",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0xa74e0b738b053d9083451bbab84c538ff2cc701d",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0xb97c12781fb1de1f07b4735526db7b3420f26f99",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0xc50dd21a8515cbfd597d65c8fe9f4653f1b1d35b",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

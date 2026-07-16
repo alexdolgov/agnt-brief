@@ -10,11 +10,12 @@
     "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 48,
+  "deployment_count": 51,
   "audited": true,
   "audits_covering": [
     "https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.02.19-certik.pdf",
     "https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.04.07-certik.pdf",
+    "https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.04.28-certik.pdf",
     "https://github.com/superearn-io/superearn-audit-reports/blob/main/2026.05.21-spearbit.pdf"
   ],
   "addresses": [
@@ -47,6 +48,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "399759"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d68a6cefed44101ed79a830e8a5ad5c0a52d8de",
+      "is_proxy": true,
+      "implementation_address": "0x267e13c34095aad1551dc8f45320d0e0337fdb07",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399760"
     },
     {
       "chain": "ethereum",
@@ -494,6 +505,26 @@
       "address": "0xffbb37093493d49c864e097eeb2b6695f8eda9ac",
       "is_proxy": true,
       "implementation_address": "0x73d54a12cb9fd490d8f63826c8eba09a4e437355",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-8217",
+      "chain_id": 8217,
+      "address": "0x3b37db3ac2a58f2daba1a7d66d023937d61fc95b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-8217",
+      "chain_id": 8217,
+      "address": "0x7876a2faf6aad1f6f8e47ad612d9472a4821dfda",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null

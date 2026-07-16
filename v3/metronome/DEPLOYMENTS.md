@@ -1,6 +1,6 @@
 # metronome — deployments
 
-104 verified deployment(s) across 95 component(s).
+108 verified deployment(s) across 99 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,6 +8,7 @@
 | base | `0x0efbfe4979da0cb457a6a80db6f3da6861e120fc` | TreasuryUpgrader | impl | unknown | no |
 | base | `0x1a8ea5ab935285dc96cb853e8dd7d21eeb245771` | DebtTokenUpgrader | impl | unknown | no |
 | base | `0x1ac222833b85c3ed1ccbc8a7d45f38021d9269d8` | AmoUpgrader | impl | unknown | no |
+| base | `0x2f4f85be85245c91779c3e36cbddf87b4ed73e3d` | TransparentUpgradeableProxy | proxy | live | no |
 | base | `0x305b30dc978e931642d243852b4aa5d31a0da8c4` | ProxyOFTUpgrader | impl | unknown | no |
 | base | `0x31e41aa5eab8317187879c2f1a0e07de36260e72` | PoolAccountantUpgrader | impl | unknown | no |
 | base | `0x720501250d7937ac3b6b308e24466c03a61efb70` | SmartFarmingManagerUpgrader | impl | unknown | no |
@@ -42,6 +43,7 @@
 | ethereum | `0x28817036451a4de34ac3df935a6762a2a1c60c97` | ERC4626TokenOracle | impl | unknown | no |
 | ethereum | `0x2b5de50a1db84dd2dc66146cd513d2688394b609` | EulerVesperXy | impl | unknown | no |
 | ethereum | `0x2e597e6c827a8527413c19065ec0725e03eeac6e` | RedstoneMainnetPriceProvider | impl | unknown | no |
+| ethereum | `0x2ebd53d035150f328bd754d6dc66b99b0edb89aa` | Metronome2 | impl | live | no |
 | ethereum | `0x2f8b104748a0ad707ae610d0ce97686cb4dd1745` | RoutedSwapper | impl | unknown | no |
 | ethereum | `0x3078742bacdfecbe6f8d9e77f1aaa1000c074fcf` | ATokenOracle | impl | unknown | no |
 | ethereum | `0x32a21ec8ee93971d4b4093c0895fd841c7169a23` | PriceProvidersAggregator | impl | unknown | no |
@@ -78,6 +80,7 @@
 | ethereum | `0x82f53ce55c412b7614beaca41ae7607405c3458a` | RariFuse8Eth | impl | unknown | no |
 | ethereum | `0x89c4aedcd10df1b19cf2d4b540af3fcad5d4c21a` | Rewards | proxy | unknown | no |
 | ethereum | `0x951397286e4b78ae5827502ed494d7902d3cca8c` | Rewards | proxy | unknown | no |
+| ethereum | `0x993946155060d4324b8fd6cb6a4d69024c23c10f` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0xa24b17e30e88d8ea582a2c41d0d8c9208efe8416` | InifniFiAdapter | impl | unknown | no |
 | ethereum | `0xc06d6347915f6b5e9dbb53fe17b988b99dbad360` | Operator | impl | unknown | no |
 | ethereum | `0xc0cef6cf59e56a9427cef967f8dfb7bde06173b3` | TokenPorter | impl | unknown | no |
@@ -106,5 +109,6 @@
 | optimism | `0x69e35c5c52a7b009b27d1da1e547dacea068a935` | CrossChainDispatcherUpgrader | impl | unknown | no |
 | optimism | `0x76d20a609a9dc010b9e6d479c360458b19bf3256` | SyntheticTokenUpgrader | impl | unknown | no |
 | optimism | `0x997f6dae65bb2de3824fd7425a82f93361b92ffc` | PoolRegistryUpgraderV2 | impl | unknown | no |
+| optimism | `0x9a2e53158e12bc09270af10c16a466cb2b5d7836` | L2StandardERC20 | impl | live | no |
 | optimism | `0xc44f15dde7b39da0e687a86b3201b4c8e8ce8cc3` | SyntheticTokenUpgraderV2 | impl | unknown | no |
 | optimism | `0xce774a71fb63dd92c32d41b2b7ef7e83894b19d8` | CrossChainDispatcherUpgraderV2 | impl | unknown | no |

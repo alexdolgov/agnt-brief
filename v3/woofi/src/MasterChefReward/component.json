@@ -1,0 +1,38 @@
+{
+  "component": "MasterChefReward",
+  "main_contract": "MasterChefReward",
+  "source_entry_count": 12,
+  "source_file_count": 12,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MasterChefReward\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0fad8f10746171c0616ce4b7b4e2e9439a9a02e2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401175"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x82fde5086784e348aed03eb7b19ded97652db7a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401209"
+    }
+  ]
+}

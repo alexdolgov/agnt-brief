@@ -1,0 +1,49 @@
+{
+  "component": "FeeDepositV2-2",
+  "main_contract": "FeeDepositV2",
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/FeeDepositV2.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-8d7d8d0070d4-FeeDepositV2.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IVoterProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-938fbdf8a2ad-IVoterProxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IFeeReceiver.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-6e418cc856bf-IFeeReceiver.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IBooster.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-e32907997ca2-IBooster.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/FeeDepositV2-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35b6d13b334a428b894eaeae2fb2a7fe22ffa7a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

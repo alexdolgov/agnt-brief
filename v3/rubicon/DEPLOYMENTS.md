@@ -1,6 +1,6 @@
 # rubicon — deployments
 
-41 verified deployment(s) across 41 component(s).
+43 verified deployment(s) across 43 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -27,6 +27,7 @@
 | base | `0x79f17c4d4fdb9db42e2b7839d56a2cff10231e04` | ClearingV2 | impl | unknown | no |
 | base | `0x865c9ccc7c5ac4a6cc206a23ce299a61408829a4` | RolesAuthority | impl | unknown | no |
 | base | `0x8d38290f53aa056726f30fe972b454a63c8843b4` | Admin | impl | unknown | no |
+| base | `0xb3836098d1e94ec651d74d053d4a0813316b2a2f` | OptimismMintableERC20 | impl | live | no |
 | base | `0xd13a6f548f29dea6efb4b26654885e4a97724e5f` | BondFixedTermTeller | impl | unknown | no |
 | base | `0xece03d9d58086ad6e5e04fcc88d21fb1d1bbe897` | BondAggregator | impl | unknown | no |
 | ethereum | `0x0c27278542ec10c205d475ea382d9be348fcccd8` | Executor | impl | unknown | no |
@@ -38,6 +39,7 @@
 | optimism | `0x0299d5f49dcccdd56b80f9fc2730ac3b75d3ffac` | BathBuddy | impl | unknown | no |
 | optimism | `0x03660e5261c8effd8ec62971ae64e18c4d878a57` | BathPair | impl | unknown | no |
 | optimism | `0x04fdd1602c0a2f6a39fe64bb0f315080386ada1b` | MarketAidFactory | impl | unknown | no |
+| optimism | `0x07f4d8b815458b42ecc27440140c99c764e33b6c` | MerkleClaim | impl | live | no |
 | optimism | `0x0daaf796d2b87cad097908399a0b7e8a1b8b52f5` | BathHouse | impl | unknown | no |
 | optimism | `0x0fc9b5f4aeaf77d4aab26e0a3dd27710415db839` | MarketAid | impl | unknown | no |
 | optimism | `0x2b290e6c443ffb909eaee2c3269a2bfd6a39c442` | OptimismBridgeExecutor | impl | live | no |

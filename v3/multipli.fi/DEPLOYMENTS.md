@@ -1,11 +1,12 @@
 # multipli.fi — deployments
 
-23 verified deployment(s) across 21 component(s).
+24 verified deployment(s) across 22 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | ethereum | `0x026782f431bfc233c67128af42a4e9de7f834bf5` | End | impl | live | no |
 | ethereum | `0x15a36d5caf263160c2a49dde6429c045fb711ddd` | Dog | impl | live | no |
+| ethereum | `0x194ebc1b9b382ef0e6998caace59af843cf53b99` | SafeProxy | proxy | live | no |
 | ethereum | `0x2fcc0d9972f489ec42804a00ba2029e7f6c9b412` | GetCdps | impl | live | no |
 | ethereum | `0x3621351d3f44a3a5e9ac1a3f3e9ca045313d3e13` | rwaUSD | impl | unknown | no |
 | ethereum | `0x3c9567c3b9c20e72858cd5714209ea7d7a8011fd` | GemJoin5 | impl | live | no |

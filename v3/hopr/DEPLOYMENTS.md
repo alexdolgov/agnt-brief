@@ -1,6 +1,6 @@
 # hopr — deployments
 
-85 verified deployment(s) across 42 component(s).
+89 verified deployment(s) across 42 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -16,6 +16,7 @@
 | gnosis | `0x15a315e1320cff0de84671c0139042ee320ce38d` | HoprNetworkRegistry | impl | live | no |
 | gnosis | `0x191ee0d1494eb159a5f758bc7c05e434cfaff6e1` | ERC777 | impl | live | no |
 | gnosis | `0x1e158754342432d866f1ab6e2e23dd71e496bc6b` | HoprNodeManagementModule-3 | impl | live | no |
+| gnosis | `0x225b4b6ffe08228db1182946b5f9e905f1a19a4d` | ERC777 | proxy | live | no |
 | gnosis | `0x27de67e72a57d18e99d0828a31298d4cc1c43d46` | HoprTicketPriceOracle-2 | impl | live | no |
 | gnosis | `0x2ccd294e00593ce482216b88f3b481df5eeff357` | HoprChannels-2 | impl | live | no |
 | gnosis | `0x2ecec248ec225834e272a03e10016f890994f29a` | HoprAnnouncements | impl | live | no |
@@ -78,6 +79,8 @@
 | gnosis | `0xca9559e2fba20bcdf455879b17158a28f26f6b39` | HoprTicketPriceOracle-3 | impl | live | no |
 | gnosis | `0xcb0841cc3dbde97ac52b945f02ee4f3d8707d977` | HoprNodeStakeFactory-3 | impl | live | no |
 | gnosis | `0xcffe25caf9b1cca3cc4b54842a4e0e520a05ae17` | HoprTicketPriceOracle-2 | impl | live | no |
+| gnosis | `0xdff6cdf1a12905f424b812004e78cafb78b4991d` | ERC777 | impl | live | no |
+| gnosis | `0xe08e8efac66c83a5e2ce9e0a696f8416a5ab6136` | ERC777 | proxy | live | no |
 | gnosis | `0xe15c24a0910311c83ac78b5930d771089e93077b` | HoprNodeSafeRegistry-2 | impl | live | no |
 | gnosis | `0xe45a8dbdadafd86ab7e2368b4749864083331cfc` | HoprAnnouncements-2 | impl | live | no |
 | gnosis | `0xe74ebb2a63ac86a84d6c0040a17465e3997f3f68` | HoprNodeManagementModule-9 | impl | live | no |
@@ -85,6 +88,7 @@
 | gnosis | `0xe95b481aa95e1d071a4b250ea5f9dd498a19646b` | HoprNodeSafeMigration | impl | live | no |
 | gnosis | `0xe9670b5d87c87111c9050d915971b73b9f5021a9` | HoprNodeSafeMigration-3 | impl | live | no |
 | gnosis | `0xe9a9cf50534eb0817f9fbb115e00bf8463e973db` | HoprNodeStakeFactory | impl | live | no |
+| gnosis | `0xedb388a829806e170acf9e7b4a993372beddc9bd` | ERC777 | impl | live | no |
 | gnosis | `0xf2d64bb29a5207dfcf6185161e43364d3b2d9a27` | HoprWinningProbabilityOracle | impl | live | no |
 | gnosis | `0xf69a919baf23e16a83fcebb56f6b50602a91fd6e` | HoprTicketPriceOracle-3 | impl | live | no |
 | gnosis | `0xfa251d4c367683d6181531afd5964e660acf43a0` | HoprTicketPriceOracle | impl | live | no |

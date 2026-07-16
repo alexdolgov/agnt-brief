@@ -1,5 +1,8 @@
 // SPDX-License-Identifier: BUSL-1.1
+
 pragma solidity ^0.8.28;
+
+// solhint-disable ordering
 
 import {SafeERC20} from "openzeppelin5/token/ERC20/utils/SafeERC20.sol";
 import {IERC20} from "openzeppelin5/token/ERC20/IERC20.sol";
@@ -95,6 +98,7 @@ library SiloLendingLib {
     /// @param _daoFee DAO's fee in 18 decimals points
     /// @param _deployerFee Deployer's fee in 18 decimals points
     /// @return accruedInterest The total amount of interest accrued
+    // solhint-disable-next-line function-max-lines
     function accrueInterestForAsset(address _interestRateModel, uint256 _daoFee, uint256 _deployerFee)
         external
         returns (uint256 accruedInterest)
@@ -153,6 +157,7 @@ library SiloLendingLib {
 
         // we operating on chunks (fees) of real tokens, so overflow should not happen
         // fee is simply too small to overflow on cast to uint192, even if, we will get lower fee
+        // forge-lint: disable-next-line(unsafe-typecast)
         unchecked { $.daoAndDeployerRevenue += uint192(totalFees); }
     }
 
@@ -292,7 +297,7 @@ library SiloLendingLib {
         }
     }
 
-    function maxBorrow(address _borrower, bool _sameAsset)
+    function maxBorrow(address _borrower)
         internal
         view
         returns (uint256 maxAssets, uint256 maxShares)
@@ -303,12 +308,7 @@ library SiloLendingLib {
         ISiloConfig.ConfigData memory collateralConfig;
         ISiloConfig.ConfigData memory debtConfig;
 
-        if (_sameAsset) {
-            debtConfig = siloConfig.getConfig(address(this));
-            collateralConfig = debtConfig;
-        } else {
-            (collateralConfig, debtConfig) = siloConfig.getConfigsForBorrow({_debtSilo: address(this)});
-        }
+        (collateralConfig, debtConfig) = siloConfig.getConfigsForBorrow({_debtSilo: address(this)});
 
         (uint256 totalDebtAssets, uint256 totalDebtShares) =
             SiloStdLib.getTotalAssetsAndTotalSharesWithInterest(debtConfig, ISilo.AssetType.Debt);
@@ -356,6 +356,7 @@ library SiloLendingLib {
     /// @param _totalDebtShares Total shares of the debt
     /// @return assets Maximum borrowable assets
     /// @return shares Maximum borrowable shares
+    // solhint-disable-next-line function-max-lines
     function maxBorrowValueToAssetsAndShares(
         uint256 _maxBorrowValue,
         address _debtAsset,

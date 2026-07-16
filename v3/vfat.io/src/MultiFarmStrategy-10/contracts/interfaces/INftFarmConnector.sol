@@ -25,4 +25,14 @@ interface INftFarmConnector {
         uint128 maxAmount1,
         bytes calldata extraData
     ) external payable;
+
+    function earned(
+        NftPosition calldata position,
+        address[] memory rewardTokens
+    ) external view returns (uint256[] memory);
+
+    function isStaked(
+        address user,
+        NftPosition calldata position
+    ) external view returns (bool);
 }

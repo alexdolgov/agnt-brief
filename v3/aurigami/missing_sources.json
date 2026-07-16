@@ -2,12 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "aurigami",
-  "missing": [
-    {
-      "chain_id": 1313161554,
-      "chain": "chain-1313161554",
-      "address": "0xffdffbdb966cb84b50e62d70105f2dbf2e0a1e70",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

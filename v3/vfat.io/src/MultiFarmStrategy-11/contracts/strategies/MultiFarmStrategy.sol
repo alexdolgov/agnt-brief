@@ -288,14 +288,6 @@ contract MultiFarmStrategy is
             abi.encodeCall(INftFarmConnector.withdrawNft, (position, extraData));
 
         sickle.multicall(targets, data);
-
-        emit SickleWithdrewNft(
-            sickle,
-            position.nft,
-            position.tokenId,
-            position.farm.stakingContract,
-            position.farm.poolIndex
-        );
     }
 
     function _depositNft(
@@ -315,14 +307,6 @@ contract MultiFarmStrategy is
         );
 
         sickle.multicall(targets, data);
-
-        emit SickleDepositedNft(
-            sickle,
-            position.nft,
-            position.tokenId,
-            position.farm.stakingContract,
-            position.farm.poolIndex
-        );
     }
 
     function _emitHarvestEvents(

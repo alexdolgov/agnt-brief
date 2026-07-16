@@ -1,110 +1,103 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.8.18;
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 
 import "../libraries/LoanLibrary.sol";
+
 import "./IPromissoryNote.sol";
+import "./IAssetWrapper.sol";
+import "./IFeeController.sol";
+import "./ILoanCore.sol";
 
+/**
+ * @dev Interface for the LoanCore contract
+ */
 interface ILoanCore {
+    /**
+     * @dev Emitted on initialization to share location of dependent notes
+     */
+    event Initialized(address collateralToken, address borrowerNote, address lenderNote);
 
-    // ================ Data Types =================
+    /**
+     * @dev Emitted when a loan is initially created
+     */
+    event LoanCreated(LoanLibrary.LoanTerms terms, uint256 loanId);
 
-    struct AffiliateSplit {
-        address affiliate;
-        uint96 splitBps;
-    }
-
-    struct NoteReceipt {
-        address token;
-        uint256 amount;
-    }
-
-    // ================ Events =================
-
+    /**
+     * @dev Emitted when a loan is started and principal is distributed to the borrower.
+     */
     event LoanStarted(uint256 loanId, address lender, address borrower);
+
+    /**
+     * @dev Emitted when a loan is repaid by the borrower
+     */
     event LoanRepaid(uint256 loanId);
-    event ForceRepay(uint256 loanId);
-    event LoanRolledOver(uint256 oldLoanId, uint256 newLoanId);
+
+    /**
+     * @dev Emitted when a loan collateral is claimed by the lender
+     */
     event LoanClaimed(uint256 loanId);
-    event NoteRedeemed(address indexed token, address indexed caller, address indexed to, uint256 tokenId, uint256 amount);
-    event NonceUsed(address indexed user, uint160 nonce);
 
-    event FeesWithdrawn(address indexed token, address indexed caller, address indexed to, uint256 amount);
-    event AffiliateSet(bytes32 indexed code, address indexed affiliate, uint96 splitBps);
+    /**
+     * @dev Emitted when fees are claimed by admin
+     */
+    event FeesClaimed(address token, address to, uint256 amount);
 
-    // ============== Lifecycle Operations ==============
+    /**
+     * @dev Get LoanData by loanId
+     */
+    function getLoan(uint256 loanId) external view returns (LoanLibrary.LoanData calldata loanData);
 
+    /**
+     * @dev Create store a loan object with some given terms
+     */
+    function createLoan(LoanLibrary.LoanTerms calldata terms) external returns (uint256 loanId);
+
+    /**
+     * @dev Start a loan with the given borrower and lender
+     *  Distributes the principal less the protocol fee to the borrower
+     *
+     * Requirements:
+     *  - This function can only be called by a whitelisted OriginationController
+     *  - The proper principal and collateral must have been sent to this contract before calling.
+     */
     function startLoan(
         address lender,
         address borrower,
-        LoanLibrary.LoanTerms calldata terms,
-        uint256 _amountFromLender,
-        uint256 _amountToBorrower,
-        LoanLibrary.FeeSnapshot calldata feeSnapshot
-    ) external returns (uint256 loanId);
-
-    function repay(
-        uint256 loanId,
-        address payer,
-        uint256 _amountFromPayer,
-        uint256 _amountToLender
+        uint256 loanId
     ) external;
 
-    function forceRepay(
-        uint256 loanId,
-        address payer,
-        uint256 _amountFromPayer,
-        uint256 _amountToLender
-    ) external;
+    /**
+     * @dev Repay the given loan
+     *
+     * Requirements:
+     *  - The caller must be a holder of the borrowerNote
+     *  - The caller must send in principal + interest
+     *  - The loan must be in state Active
+     */
+    function repay(uint256 loanId) external;
 
-    function claim(
-        uint256 loanId,
-        uint256 _amountFromLender
-    ) external;
+    /**
+     * @dev Claim the collateral of the given delinquent loan
+     *
+     * Requirements:
+     *  - The caller must be a holder of the lenderNote
+     *  - The loan must be in state Active
+     *  - The current time must be beyond the dueDate
+     */
+    function claim(uint256 loanId) external;
 
-    function redeemNote(
-        uint256 loanId,
-        uint256 _amountFromLender,
-        address to
-    ) external;
+    /**
+     * @dev Getters for integrated contracts
+     *
+     */
+    function borrowerNote() external returns (IPromissoryNote);
 
-    function rollover(
-        uint256 oldLoanId,
-        address borrower,
-        address lender,
-        LoanLibrary.LoanTerms calldata terms,
-        uint256 _settledAmount,
-        uint256 _amountToOldLender,
-        uint256 _amountToLender,
-        uint256 _amountToBorrower
-    ) external returns (uint256 newLoanId);
+    function lenderNote() external returns (IPromissoryNote);
 
-    // ============== Nonce Management ==============
+    function collateralToken() external returns (IERC721);
 
-    function consumeNonce(address user, uint160 nonce) external;
-
-    function cancelNonce(uint160 nonce) external;
-
-    // ============== Fee Management ==============
-
-    function withdraw(address token, uint256 amount, address to) external;
-
-    function withdrawProtocolFees(address token, address to) external;
-
-    // ============== Admin Operations ==============
-
-    function setAffiliateSplits(bytes32[] calldata codes, AffiliateSplit[] calldata splits) external;
-
-    // ============== View Functions ==============
-
-    function getLoan(uint256 loanId) external view returns (LoanLibrary.LoanData calldata loanData);
-
-    function getNoteReceipt(uint256 loanId) external view returns (address token, uint256 amount);
-
-    function isNonceUsed(address user, uint160 nonce) external view returns (bool);
-
-    function borrowerNote() external view returns (IPromissoryNote);
-
-    function lenderNote() external view returns (IPromissoryNote);
-
+    function feeController() external returns (IFeeController);
 }

@@ -7,22 +7,17 @@ import { ICLPool } from "contracts/interfaces/external/aerodrome/ICLPool.sol";
 import {
     ILiquidityConnector,
     AddLiquidityParams,
-    RemoveLiquidityParams,
-    SwapParams
+    RemoveLiquidityParams
 } from "contracts/interfaces/ILiquidityConnector.sol";
 
 struct VelodromeLiquidityExtraData {
     bool isStablePool;
 }
 
-struct VelodromeSwapExtraData {
-    IRouter.Route[] routes;
-}
-
 contract VelodromeRouterConnector is ILiquidityConnector {
     function addLiquidity(
         AddLiquidityParams memory addLiquidityParams
-    ) external payable override {
+    ) external override {
         VelodromeLiquidityExtraData memory _extraData = abi.decode(
             addLiquidityParams.extraData, (VelodromeLiquidityExtraData)
         );
@@ -54,30 +49,6 @@ contract VelodromeRouterConnector is ILiquidityConnector {
             removeLiquidityParams.minAmountsOut[1],
             address(this),
             block.timestamp
-        );
-    }
-
-    function swapExactTokensForTokens(
-        SwapParams memory swap
-    ) external payable virtual override {
-        VelodromeSwapExtraData memory _extraData =
-            abi.decode(swap.extraData, (VelodromeSwapExtraData));
-        IRouter(swap.router).swapExactTokensForTokens(
-            swap.amountIn,
-            swap.minAmountOut,
-            _extraData.routes,
-            address(this),
-            block.timestamp
-        );
-    }
-
-    function swapExactETHForTokens(
-        SwapParams memory swap
-    ) external payable virtual override {
-        VelodromeSwapExtraData memory _extraData =
-            abi.decode(swap.extraData, (VelodromeSwapExtraData));
-        IRouter(swap.router).swapExactETHForTokens{ value: swap.amountIn }(
-            swap.minAmountOut, _extraData.routes, address(this), block.timestamp
         );
     }
 

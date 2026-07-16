@@ -1,38 +1,64 @@
 # arcade.xyz — deployments
 
-26 verified deployment(s) across 23 component(s).
+58 verified deployment(s) across 43 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | ethereum | `0x06af8c358c0787640588734e4733a779961a2bca` | UniswapV2Pair | impl | live | no |
+| ethereum | `0x07352ed030c6fd8d12f8258d2df6f99cba533dc9` | FlashRolloverV1toV2 | impl | live | no |
+| ethereum | `0x094db3031258d6204a4cfc99415eb66f9a01a8c6` | FlashRolloverStakingVaultUpgrade | impl | live | no |
+| ethereum | `0x0e8ea5e5415b30dc1873df03ae9f7beecf74805f` | CallWhitelist-2 | impl | inactive | no |
+| ethereum | `0x0facdc440d496798e095f87e50a8ed3a5680d133` | FeeController-3 | impl | inactive | no |
 | ethereum | `0x16d99ec34aa91162d71c84bcbe7a7ead5908b8e2` | PunksVerifier | impl | live | yes |
+| ethereum | `0x1f2dfcfea1c2a7190225635b05075f00ecdd8eaa` | CallWhitelist | impl | inactive | yes |
+| ethereum | `0x1f563cdd688ad47b75e474fde74e87c643d129b7` | Contract | impl | live | yes |
+| ethereum | `0x21b346622e607fcc936a320d3ab8224fb36b3c0c` | VaultFactory | impl | live | no |
 | ethereum | `0x24611fad669350ca869fbed4b62877d1a409da12` | FlashRollover | impl | live | yes |
-| ethereum | `0x269363665dbb1582b143099a3cb467e98a476d55` | VaultFactory | impl | live | no |
+| ethereum | `0x24ec19f05fc4a29d49617e1221ce7dc8a1ed5a3d` | Contract-2 | impl | live | yes |
+| ethereum | `0x251440b8cbcc973a8e7f0b7814ec3ecc6bcfcbc9` | RepaymentController-3 | impl | inactive | no |
+| ethereum | `0x269363665dbb1582b143099a3cb467e98a476d55` | VaultFactory-2 | impl | live | no |
+| ethereum | `0x2a62005db1c5ae759552e28981d1bb55af2c690f` | CallWhitelist | impl | inactive | yes |
 | ethereum | `0x2b49c3b0340df9eca71d9f130084821c63c9ae38` | ArcadeAirdrop | impl | live | no |
 | ethereum | `0x337104a4f06260ff327d6734c555a0f5d8f863aa` | PromissoryNote | impl | live | no |
+| ethereum | `0x371e4f7698760caac721989e5f1af72b7d6c596f` | VaultFactory | impl | live | no |
+| ethereum | `0x3a0f9a98714ed4a36cd5ebc07f364f39c88c2e8a` | VaultInventoryReporter | impl | live | no |
 | ethereum | `0x41e538817c3311ed032653bee5487a113f8cff9f` | FeeController | impl | live | yes |
+| ethereum | `0x4b95640d56f81fc851f952793f4e5485e352bed2` | VaultDepositRouter | impl | live | no |
+| ethereum | `0x4cccc5c5ef1d8c4a6ad6765a36651ef523e42e75` | FeeController-2 | impl | inactive | no |
 | ethereum | `0x54b7235db74103395dd48a2c3dd993e3b7d39856` | ArcadeCoreVoting | impl | live | no |
+| ethereum | `0x584503250fc246ce459e117195a64cf96544f027` | AssetVault-2 | impl | inactive | no |
+| ethereum | `0x5e87d274dd30c621fd2f12391d9f3725709f0597` | CallWhitelist | impl | inactive | yes |
+| ethereum | `0x6079f3beffd5660ba3eadebb923550b5ad88de5d` | AssetVault | impl | inactive | yes |
 | ethereum | `0x666faa632e5f7ba20a7fce36596a6736f87133be` | AdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0x6ddb57101a17854109c3b9feb80ae19662ea950f` | Contract-3 | impl | live | no |
 | ethereum | `0x6e9b4c2f6bd57b7b924d29b5dcfca1273ecc94a2` | AdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0x72854fbb44d3dd87109d46a9298aeb0d018740f0` | AirdropSingleSidedStaking | impl | live | no |
-| ethereum | `0x74241e1a9c021643289476426b9b70229ab40d53` | RepaymentController | impl | live | no |
+| ethereum | `0x74241e1a9c021643289476426b9b70229ab40d53` | RepaymentController-4 | impl | live | no |
 | ethereum | `0x7594916540e60fc8d6e9ba5c3c83632f7001cf53` | AdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0x78ff43ea7ddbca2bf8f00cbd3d7d53e3192eda7b` | FeeController-2 | impl | inactive | no |
+| ethereum | `0x796c486a2215da68f4f5a752923659444889f4bd` | AssetVault-3 | impl | inactive | no |
 | ethereum | `0x80bddd56b947c547ab8964d80e98e42ff77a5793` | ArcadeStakingRewards | impl | live | no |
 | ethereum | `0x81b2f8fc75bab64a6b144aa6d2faa127b4fa7fd9` | AdminUpgradeabilityProxy | proxy | live | no |
+| ethereum | `0x833835fe565008fa66fff31156b78a1fd710bcb5` | AssetVault-4 | impl | live | no |
 | ethereum | `0x89bc08ba00f135d608bc335f6b33d7a9abcc98af` | LoanCore | impl | live | no |
+| ethereum | `0x9217487e2b750fd6f4c5795b9bf488591ddf43a0` | RepaymentController-2 | impl | inactive | no |
 | ethereum | `0x92ed78b41537c902ad287608d8535bb6780a7618` | PromissoryNote-2 | impl | live | no |
+| ethereum | `0x9988d4918d85a814149225642175a4f7e5992fd9` | AssetVault | impl | inactive | yes |
+| ethereum | `0x9ece636e942bcb67f9e0b7b6c51a56570ef6f38d` | RepaymentController | impl | inactive | no |
 | ethereum | `0xabfd9d9e4157695db5812eee279d923a4f948df0` | ArcadeItemsVerifier | impl | live | yes |
 | ethereum | `0xae40af135c060e10b218c617c2d74a370b09c40f` | ARCDVestingVault | impl | live | no |
+| ethereum | `0xb39dab85fa05c381767ff992ccde4c94619993d4` | RepaymentController-2 | impl | live | no |
 | ethereum | `0xb4496f9798cebd003c5d5a956b5b8f3933178c82` | CallWhitelist | impl | live | yes |
 | ethereum | `0xb4515a8e5616005f7138d9eb25b581362d9fdb95` | CallWhitelistApprovals | impl | live | yes |
+| ethereum | `0xb56a5ccad374c0d7fb4820322cc336fec5d1424a` | AssetVault-5 | impl | inactive | no |
 | ethereum | `0xb7bfcca7d7ff0f371867b770856fac184b185878` | OriginationController | impl | live | no |
+| ethereum | `0xd7b4586b4ed87e2b98ad2df37a6c949c5ab1b1db` | RepaymentController | impl | inactive | no |
 | ethereum | `0xd898456e39a461b102ce4626aac191582c38acb6` | AssetVault | impl | live | yes |
 | ethereum | `0xdd7a92062d1939357fb17a66288cde30b3711e53` | ImmutableVestingVault | impl | live | no |
 | ethereum | `0xe020b01b6fbd83066aa2e8ee0ccd1eb8d9cc70bf` | ArcadeToken | impl | live | no |
 | ethereum | `0xe5b12befaf3a91065da7fdd461ded2d8f8ecb7be` | PromissoryNote-3 | impl | live | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x1f563cdd688ad47b75e474fde74e87c643d129b7`
-- ethereum `0x24ec19f05fc4a29d49617e1221ce7dc8a1ed5a3d`
+| ethereum | `0xe6e2337a95e195dd5f744340bc1bf485ca67b753` | FeeController | impl | inactive | yes |
+| ethereum | `0xf5399cfa412ea2f817b973ae0ae043ba82f9df5b` | CallWhitelist-3 | impl | inactive | no |
+| ethereum | `0xf6c8ee885dab34025ca275e269f8ec4bd85ad7fb` | RepaymentController | impl | inactive | no |
+| ethereum | `0xf764442856eb3fe68a0828e07246a4b395e800fa` | FeeController-4 | impl | inactive | no |
+| ethereum | `0xfdda20a20cb4249e73e3356f468ddfdfb61483f6` | VaultDepositRouter | impl | live | no |

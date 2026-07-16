@@ -1,8 +1,8 @@
 {
   "component": "FeesLib-4",
   "main_contract": "FeesLib",
-  "source_entry_count": 12,
-  "source_file_count": 12,
+  "source_entry_count": 6,
+  "source_file_count": 6,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,7 +17,7 @@
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0xbfdec182b32acf16c36ae070044b5a63323f4724",
+      "address": "0xb5c190fb5475df71655961c2ac16b8b15f79cc26",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
@@ -27,7 +27,7 @@
     {
       "chain": "mantle",
       "chain_id": 5000,
-      "address": "0x5a25167c72fea35986740e6b6104c70e6505cd3e",
+      "address": "0x5290487bb9a8610c844539d4b46f6c6a324d665f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

@@ -1,0 +1,28 @@
+{
+  "component": "SinkGaugeFactory",
+  "main_contract": "SinkGaugeFactory",
+  "source_entry_count": 25,
+  "source_file_count": 25,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SinkGaugeFactory\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe62b4bc24eb6446675a1cb3faca2339676e9e5a2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400790"
+    }
+  ]
+}

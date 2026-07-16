@@ -1,0 +1,28 @@
+{
+  "component": "VoltVoterUpgradeable",
+  "main_contract": "VoltVoterUpgradeable",
+  "source_entry_count": 18,
+  "source_file_count": 18,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VoltVoterUpgradeable\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb14900cc638f84a3e4f167a2776502c7bcd42cdd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404670"
+    }
+  ]
+}

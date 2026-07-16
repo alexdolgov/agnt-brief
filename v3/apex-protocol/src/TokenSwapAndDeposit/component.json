@@ -1,0 +1,58 @@
+{
+  "component": "TokenSwapAndDeposit",
+  "main_contract": "TokenSwapAndDeposit",
+  "source_entry_count": 18,
+  "source_file_count": 18,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TokenSwapAndDeposit\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xac21a795a233b52f0b8a8ddd61709f6802a0797b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390996"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd06878cb9084d92f33a2577fa0c7551d90252db7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "390999"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x197a309f05f4e290dfcd53943c1fd88103a39d4e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391001"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9e07b6aef1bbd9e513fc2eb8873e311e80b4f855",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391004"
+    }
+  ]
+}

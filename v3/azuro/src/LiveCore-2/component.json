@@ -1,8 +1,8 @@
 {
   "component": "LiveCore-2",
   "main_contract": "LiveCore",
-  "source_entry_count": 29,
-  "source_file_count": 29,
+  "source_entry_count": 31,
+  "source_file_count": 31,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,10 +17,10 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x66900efd3ccb329f83b4820877efeb70135b1e87",
+      "address": "0x2c3f4f70b3e425f89dc39749d657ee2f3610b61c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live",
+      "liveness": "inactive",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

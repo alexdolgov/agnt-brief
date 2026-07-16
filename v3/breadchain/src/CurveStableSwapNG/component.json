@@ -1,0 +1,28 @@
+{
+  "component": "CurveStableSwapNG",
+  "main_contract": "CurveStableSwapNG",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CurveStableSwapNG\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xf3d8f3de71657d342db60dd714c8a2ae37eac6b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

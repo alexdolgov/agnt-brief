@@ -44,9 +44,20 @@ interface IStakeNOONVesting {
         uint256 stakeId
     ) external view returns (uint256);
 
+    /// @dev Same curve as vesting (t/T)^3*0.73 + (t/T)*0.27 but without cliffs. Used for VP over 4 years.
+    function calculateCurveSmooth(
+        uint256 totalAmount,
+        uint256 startTime,
+        uint256 endTime
+    ) external view returns (uint256);
+
     function claimVesting(address user, uint256 scheduleId) external;
 
     function getVestingSchedulesCount(address user) external view returns (uint256);
 
     function getClaimableAmount(address user, uint256 scheduleId) external view returns (uint256);
+
+    function VESTING_MULTIPLIER() external view returns (uint256);
+
+    function CLIFF_PERIOD() external view returns (uint256);
 }

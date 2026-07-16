@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import "./base/Admin.sol";
+import { Admin } from "contracts/base/Admin.sol";
 
 library SickleRegistryEvents {
     event CollectorChanged(address newCollector);
@@ -17,6 +17,10 @@ library SickleRegistryEvents {
 /// @author vfat.tools
 /// @notice Manages the whitelisted contracts and the collector address
 contract SickleRegistry is Admin {
+    /// CONSTANTS ///
+
+    uint256 constant MAX_FEE = 500; // 5%
+
     /// ERRORS ///
 
     error ArrayLengthMismatch(); // 0xa24a13a6
@@ -75,7 +79,9 @@ contract SickleRegistry is Admin {
     /// @notice Updates the fee collector address
     /// @param newCollector Address of the new fee collector
     /// @custom:access Restricted to protocol admin.
-    function updateCollector(address newCollector) external onlyAdmin {
+    function updateCollector(
+        address newCollector
+    ) external onlyAdmin {
         collector = newCollector;
         emit SickleRegistryEvents.CollectorChanged(newCollector);
     }
@@ -101,7 +107,9 @@ contract SickleRegistry is Admin {
     }
 
     /// @notice Associates a referral code to the address of the caller
-    function setReferralCode(bytes32 referralCode) external {
+    function setReferralCode(
+        bytes32 referralCode
+    ) external {
         if (referralCodes[referralCode] != address(0)) {
             revert InvalidReferralCode();
         }
@@ -123,8 +131,7 @@ contract SickleRegistry is Admin {
         }
 
         for (uint256 i = 0; i < feeHashes.length;) {
-            if (feesArray[i] <= 500) {
-                // maximum fee of 5%
+            if (feesArray[i] <= MAX_FEE) {
                 feeRegistry[feeHashes[i]] = feesArray[i];
             } else {
                 revert FeeAboveMaxLimit();

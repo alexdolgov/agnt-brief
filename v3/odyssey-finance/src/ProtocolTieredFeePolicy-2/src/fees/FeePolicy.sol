@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.29;
+pragma solidity 0.8.23;
 
 import {Initializable} from "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import {IFeePolicy} from "../interfaces/IFeePolicy.sol";
@@ -7,10 +7,8 @@ import {IFeePolicy} from "../interfaces/IFeePolicy.sol";
 /// @title Default Fee Policy
 abstract contract FeePolicy is IFeePolicy, Initializable {
     error AddressIsNull();
-    error InvalidFee();
 
-    uint256 constant MAX_FEE = 0.2e18;
-
+    address public positionRegistry;
     uint256 public depositFee; // 18 decimals percent (e.g. 0.05 == 5%)
     uint256 public withdrawFee; // 18 decimals percent (e.g. 0.05 == 5%)
 
@@ -18,8 +16,15 @@ abstract contract FeePolicy is IFeePolicy, Initializable {
         _disableInitializers();
     }
 
-    function __FeePolicy_init(uint256 depositFee_, uint256 withdrawFee_) internal onlyInitializing {
-        if (depositFee_ > MAX_FEE || withdrawFee_ > MAX_FEE) revert InvalidFee();
+    function __FeePolicy_init(
+        address positionRegistry_,
+        uint256 depositFee_,
+        uint256 withdrawFee_
+    ) internal onlyInitializing {
+        if (positionRegistry_ == address(0)) revert AddressIsNull();
+
+        positionRegistry = positionRegistry_;
+
         depositFee = depositFee_;
         withdrawFee = withdrawFee_;
     }
@@ -31,7 +36,10 @@ abstract contract FeePolicy is IFeePolicy, Initializable {
     /// @param amount_ The total allocated delta amount
     /// @return _fee The fee amount
     function quoteAllocatedInFee(uint256 amount_) external view virtual returns (uint256 _fee) {
-        return _calculateDepositFee(amount_);
+        uint256 _depositFee = depositFee;
+        if (_depositFee > 0) {
+            _fee = (amount_ * _depositFee) / 1e18;
+        }
     }
 
     /// @notice Quote fee to pay when decreasing position's allocated amount
@@ -41,7 +49,10 @@ abstract contract FeePolicy is IFeePolicy, Initializable {
     /// @param amount_ The total allocated delta amount
     /// @return _fee The fee amount
     function quoteAllocatedOutFee(uint256 amount_) external view virtual returns (uint256 _fee) {
-        return _calculateWithdrawFee(amount_);
+        uint256 _withdrawFee = withdrawFee;
+        if (_withdrawFee > 0) {
+            _fee = (amount_ * _withdrawFee) / 1e18;
+        }
     }
 
     /// @notice Quote fee to pay based on time
@@ -49,24 +60,4 @@ abstract contract FeePolicy is IFeePolicy, Initializable {
     //
     /// @return The fee amount
     function quoteTimeBasedFee() external view virtual returns (uint256 /*_fee*/) {}
-
-    /// @notice Internal function to calculate deposit fee
-    /// @param amount_ The total allocated delta amount
-    /// @return _fee The fee amount
-    function _calculateDepositFee(uint256 amount_) internal view returns (uint256 _fee) {
-        uint256 _depositFee = depositFee;
-        if (_depositFee > 0) {
-            _fee = (amount_ * _depositFee) / 1e18;
-        }
-    }
-
-    /// @notice Internal function to calculate withdraw fee
-    /// @param amount_ The total allocated delta amount
-    /// @return _fee The fee amount
-    function _calculateWithdrawFee(uint256 amount_) internal view returns (uint256 _fee) {
-        uint256 _withdrawFee = withdrawFee;
-        if (_withdrawFee > 0) {
-            _fee = (amount_ * _withdrawFee) / 1e18;
-        }
-    }
 }

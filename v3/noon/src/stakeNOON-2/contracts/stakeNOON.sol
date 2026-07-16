@@ -16,8 +16,11 @@ import "./interfaces/IStakeNOONVesting.sol";
 /**
  * @title stakeNOON
  * @dev Implementation of the staking contract for NOON tokens.
- * This contract allows users to stake NOON tokens and receive voting power based on their stake duration.
- * It also supports VIP stakes with additional benefits and vesting schedules.
+ * Voting power (VP) uses a smooth curve over 4 years (no cliffs): VP = curve(baseVP) where
+ * - Non-VIP: baseVP = stake.amount
+ * - VIP: baseVP = sum per schedule of (vested + totalAmount/9); vested = 90% portion (cliffs over 12mo), totalAmount/9 = 10% immediate
+ * VP is 0 at t=0 and reaches full baseVP at stakeDate + 4 years.
+ * Withdrawals are allowed anytime; stake.end is stored for offchain use only.
  */
 contract stakeNOON is
     Initializable,
@@ -70,6 +73,9 @@ contract stakeNOON is
     mapping(uint256 => uint256) public claimedWithdrawalRewards;
     /// @dev Mapping of withdrawn stakes by token ID (for reward claiming)
     mapping(uint256 => address) public withdrawnStakeOwners;
+    /// @dev Snapshot of vipUnlockingPeriod when unlock started (prevents owner from extending wait)
+    mapping(uint256 => uint256) public vipUnlockPeriodSnapshot;
+
 
     /// @custom:oz-upgrades-unsafe-allow constructor
     constructor() {
@@ -150,18 +156,15 @@ contract stakeNOON is
         uint256 normalStakeCount = balanceOf(msg.sender) - userVipStakeCount[msg.sender];
         if (normalStakeCount >= maxNormalStakes) revert MaxNormalStakesReached();
 
-        // Calculate multiplier based on stake duration
-        uint256 multiplier = calculateMultiplier(stakeDuration);
-
         // Transfer NOON tokens
-        noon.transferFrom(msg.sender, address(this), amount);
+        require(noon.transferFrom(msg.sender, address(this), amount), TokenTransferFailed());
 
-        // Create new stake
+        // Create new stake (multiplier set to 1e18 - no longer used for voting power)
         uint256 tokenId = _nextTokenId++;
         Stake memory newStake = Stake({
             amount: amount,
             end: block.timestamp + stakeDuration,
-            multiplier: multiplier,
+            multiplier: 1e18,
             isVip: false,
             stakeDate: block.timestamp,
             isPermanent: false
@@ -176,7 +179,7 @@ contract stakeNOON is
         // Mint NFT
         _safeMint(msg.sender, tokenId);
 
-        emit StakeCreated(msg.sender, tokenId, amount, newStake.end, multiplier);
+        emit StakeCreated(msg.sender, tokenId, amount, newStake.end, 1e18);
         return tokenId;
     }
 
@@ -184,12 +187,12 @@ contract stakeNOON is
      * @dev Updates a stake by adding amount, extending duration, and/or compounding rewards
      * @param tokenId ID of the stake to update
      * @param additionalAmount Additional amount of tokens to stake (0 if not adding)
-     * @param newStakeDuration New duration for the stake (0 if not extending, must be longer if provided)
+     * @param newStakeDuration New duration for the stake (0 if not extending)
      * @param rewardAmount Reward amount to compound (0 if no reward to compound)
      * @param proof Merkle proof for the reward (empty if no reward to compound)
      */
     function updateStake(
-        uint256 tokenId,
+        uint256 tokenId, 
         uint256 additionalAmount,
         uint256 newStakeDuration,
         uint256 rewardAmount,
@@ -198,12 +201,12 @@ contract stakeNOON is
         Stake storage stake = stakes[tokenId];
         if (stake.amount == 0) revert StakeNotFound();
         if (stake.isVip) revert CannotIncreaseVIPStakeAmount();
-        if (block.timestamp < stake.end) revert StakeNotExpired();
+        uint256 originalEnd = stake.end;
 
         // Add additional amount if provided
         if (additionalAmount > 0) {
             // Transfer additional NOON tokens
-            noon.transferFrom(msg.sender, address(this), additionalAmount);
+            require(noon.transferFrom(msg.sender, address(this), additionalAmount), TokenTransferFailed());
 
             // Update stake amount
             stake.amount += additionalAmount;
@@ -221,18 +224,23 @@ contract stakeNOON is
             uint256 newEnd = block.timestamp + newStakeDuration;
             if (newEnd <= stake.end) revert NewStakeMustBeLonger();
 
-            // Calculate new multiplier based on total stake duration
-            uint256 newMultiplier = calculateMultiplier(newStakeDuration);
+            // Update stake (multiplier kept at 1e18 - no longer used for voting power)
+            // If stake has expired, reset stakeDate to current time
+            if (block.timestamp >= stake.end) {
+                stake.stakeDate = block.timestamp;
+            }
 
             // Update stake
             stake.end = newEnd;
-            stake.multiplier = newMultiplier;
+            stake.multiplier = 1e18;
 
-            emit StakeExtended(tokenId, newEnd, newMultiplier);
+            emit StakeExtended(tokenId, newEnd, 1e18);
         }
 
         // Check for unclaimed/uncompounded rewards and compound them
         if (rewardAmount > 0) {
+            // User must have an expired stake to compound rewards
+            if (block.timestamp < originalEnd) revert StakeNotExpired();
             // Verify merkle proof for withdrawal reward
             _verifyWithdrawalRewardProof(tokenId, rewardAmount, proof);
 
@@ -263,7 +271,8 @@ contract stakeNOON is
     }
 
     /**
-     * @dev Withdraws tokens from an expired stake with optional reward
+     * @dev Withdraws tokens from a stake with optional reward.
+     *      stake.end is stored for offchain data only; withdrawal is allowed at any time.
      * @param tokenId ID of the stake to withdraw from
      * @param rewardAmount Additional reward amount (0 if no reward)
      * @param proof Merkle proof for additional reward (empty if no reward)
@@ -276,7 +285,6 @@ contract stakeNOON is
         Stake storage stake = stakes[tokenId];
         if (stake.amount == 0) revert StakeNotFound();
         if (stake.isVip) revert NotVIPStake(); // VIP stakes must use withdrawVip
-        if (block.timestamp < stake.end) revert StakeNotExpired();
 
         uint256 amount = stake.amount;
         uint256 additionalReward = 0;
@@ -314,11 +322,11 @@ contract stakeNOON is
         _burn(tokenId);
 
         // Transfer NOON tokens back (stake amount)
-        noon.transfer(msg.sender, amount);
+        require(noon.transfer(msg.sender, amount), TokenTransferFailed());
 
         // Transfer additional reward if applicable
         if (additionalReward > 0) {
-            noon.transfer(msg.sender, additionalReward);
+            require(noon.transfer(msg.sender, additionalReward), TokenTransferFailed());
         }
 
         emit StakeWithdrawn(tokenId, amount);
@@ -328,22 +336,49 @@ contract stakeNOON is
     }
 
     /**
-     * @dev Internal function to calculate base voting power for a stake
-     * @param stake The stake to calculate voting power for
-     * @param tokenId ID of the stake (needed for vesting calculation)
-     * @return baseVotingPower The calculated voting power
+     * @dev Calculates voting power for a stake. Curve applied per schedule (each schedule ramps over 4y from its startTime).
+     * @param stake The stake
+     * @param tokenId ID of the stake
+     * @return tokenVP Voting power
+     * @notice VIP: tokenVP = sum over schedules of curve(vested + totalAmount/9, schedule.startTime, schedule.startTime + 4y).
+     *         Non-VIP: tokenVP = curve(stake.amount, stake.stakeDate, stake.stakeDate + 4y).
+     *         vestingContract=0: returns stake.amount/10 (legacy)
      */
     function _calculateBaseVotingPower(Stake storage stake, uint256 tokenId) internal view returns (uint256) {
-        if (stake.isVip) {
-            // For VIP stakes, apply multiplier to (amount + vested amount)
-            if (address(vestingContract) != address(0)) {
-                return ((stake.amount + vestingContract.getVestedAmountForStake(tokenId)) * stake.multiplier) / 1e18;
-            }
-            return 0;
-        } else {
-            // For non-permanent stakes, voting power is constant (amount * multiplier)
-            return (stake.amount * stake.multiplier) / 1e18;
+        if (address(vestingContract) == address(0)) {
+            return stake.amount / 10;
         }
+
+        if (stake.isVip) {
+            uint256 tokenVP = 0;
+            IStakeNOONVesting.VestingSchedule[] memory schedules =
+                vestingContract.getVestingSchedulesForStake(tokenId);
+
+            for (uint256 i = 0; i < schedules.length; i++) {
+                if (schedules[i].stakeId != tokenId || schedules[i].claimedAmount != 0) continue;
+
+                uint256 vested = vestingContract.calculateVestedAmount(
+                    schedules[i].totalAmount,
+                    schedules[i].startTime,
+                    schedules[i].endTime,
+                    schedules[i].stakeId
+                );
+                uint256 scheduleBaseVP = vested + schedules[i].totalAmount / 9;
+
+                tokenVP += vestingContract.calculateCurveSmooth(
+                    scheduleBaseVP,
+                    schedules[i].startTime,
+                    schedules[i].startTime + MAX_STAKE_TIME
+                );
+            }
+            return tokenVP;
+        }
+
+        return vestingContract.calculateCurveSmooth(
+            stake.amount,
+            stake.stakeDate,
+            stake.stakeDate + MAX_STAKE_TIME
+        );
     }
 
     /**
@@ -360,9 +395,6 @@ contract stakeNOON is
             Stake storage stake = stakes[tokenId];
             if (stake.amount == 0) continue;
 
-            // For non-VIP stakes, skip if expired (voting power is 0)
-            if (!stake.isVip && block.timestamp >= stake.end) continue;
-
             totalVotingPower += _calculateBaseVotingPower(stake, tokenId);
         }
 
@@ -377,11 +409,6 @@ contract stakeNOON is
     function getTokenVotingPower(uint256 tokenId) external view override returns (uint256) {
         Stake storage stake = stakes[tokenId];
         if (stake.amount == 0) revert StakeNotFound();
-
-        // For non-VIP stakes, if expired, voting power is 0
-        if (!stake.isVip && block.timestamp >= stake.end) {
-            return 0;
-        }
 
         return _calculateBaseVotingPower(stake, tokenId);
     }
@@ -510,12 +537,14 @@ contract stakeNOON is
 
     /**
      * @dev Claims and stakes tokens using a merkle proof
-     * @param amount Amount of tokens to claim and stake
+     * @param amount Amount of tokens to claim
+     * @param stakePercentage Percentage of claimed amount to stake (0-100). Remainder sent to wallet.
      * @param proof Merkle proof for the claim
-     * @return tokenId ID of the newly created stake
+     * @return tokenId ID of the newly created or updated stake
      */
-    function claimAndStake(uint256 amount, bytes32[] calldata proof) external nonReentrant returns (uint256) {
+    function claimAndStake(uint256 amount, uint256 stakePercentage, bytes32[] calldata proof) external nonReentrant returns (uint256) {
         if (amount == 0) revert AmountMustBeGreaterThanZero();
+        if (stakePercentage > 100) revert InvalidPercentage();
         if (totalClaimableAmount < amount - claimedAmounts[msg.sender]) revert InsufficientClaimableAmount();
 
         // Verify merkle proof
@@ -525,8 +554,14 @@ contract stakeNOON is
         // Check if user has already claimed
         if (claimedAmounts[msg.sender] >= amount) revert AlreadyClaimed();
 
-        // VIP multiplier is constant 2x (hardcoded to avoid storage slot issues)
-        uint256 multiplier = 2 * 1e18;
+        // Multiplier set to 1e18 - no longer used for voting power
+        uint256 multiplier = 1e18;
+
+        uint256 additionalAmount = amount - claimedAmounts[msg.sender];
+
+        // Apply caller-chosen stake percentage: only a portion is staked, the rest goes to wallet
+        uint256 stakeAmount = (additionalAmount * stakePercentage) / 100;
+        uint256 directAmount = additionalAmount - stakeAmount;
 
         uint256 tokenId;
         if (userVipStakeCount[msg.sender] > 0) {
@@ -542,23 +577,22 @@ contract stakeNOON is
             }
             if (tokenId == 0) revert NoVIPStakeFound();
 
-            // Update existing stake
+            // Update existing stake (only the staked portion)
             Stake storage stake = stakes[tokenId];
-            uint256 additionalAmount = amount - claimedAmounts[msg.sender];
-            stake.amount += additionalAmount;
+            stake.amount += stakeAmount;
             stake.end = block.timestamp + MAX_STAKE_TIME;
             stake.multiplier = multiplier;
             stake.stakeDate = block.timestamp;
 
-            // Create vesting schedule for the additional amount
-            if (address(vestingContract) != address(0)) {
-                vestingContract.createVestingSchedule(msg.sender, additionalAmount, tokenId);
+            // Create vesting schedule for the staked portion (9x via VESTING_MULTIPLIER in vesting contract)
+            if (address(vestingContract) != address(0) && stakeAmount > 0) {
+                vestingContract.createVestingSchedule(msg.sender, stakeAmount, tokenId);
             }
         } else {
-            // Create new stake with a new token ID
+            // Create new stake with a new token ID (only the staked portion)
             tokenId = _nextTokenId++;
             Stake memory newStake = Stake({
-                amount: amount,
+                amount: stakeAmount,
                 end: block.timestamp + MAX_STAKE_TIME,
                 multiplier: multiplier,
                 isVip: true,
@@ -572,18 +606,25 @@ contract stakeNOON is
 
             // Mint NFT
             _safeMint(msg.sender, tokenId);
-            // Create vesting schedule for the full amount
-            if (address(vestingContract) != address(0)) {
-                vestingContract.createVestingSchedule(msg.sender, amount, tokenId);
+
+            // Create vesting schedule for the staked portion (9x via VESTING_MULTIPLIER in vesting contract)
+            if (address(vestingContract) != address(0) && stakeAmount > 0) {
+                vestingContract.createVestingSchedule(msg.sender, stakeAmount, tokenId);
             }
         }
 
         // Update global state
-        totalStaked += amount - claimedAmounts[msg.sender];
-        totalClaimableAmount -= amount - claimedAmounts[msg.sender];
+        totalStaked += stakeAmount;
+        totalClaimableAmount -= additionalAmount;
         claimedAmounts[msg.sender] = amount;
 
-        emit ClaimAndStaked(msg.sender, tokenId, amount, block.timestamp + MAX_STAKE_TIME, multiplier);
+        // Transfer the direct (non-staked) portion to user wallet
+        if (directAmount > 0) {
+            require(noon.transfer(msg.sender, directAmount), TokenTransferFailed());
+            emit VipDirectTransfer(msg.sender, directAmount);
+        }
+
+        emit ClaimAndStaked(msg.sender, tokenId, stakeAmount, block.timestamp + MAX_STAKE_TIME, multiplier);
         return tokenId;
     }
 
@@ -622,27 +663,65 @@ contract stakeNOON is
         if (stake.amount == 0) revert StakeNotFound();
 
         if (!stake.isVip) revert NotVIPStake();
+        if (vipUnlockingPeriod == 0) revert UnlockNotRequired();
         if (vipUnlockStartTime[tokenId] != 0) revert UnlockAlreadyStarted();
 
         uint256 unlockStartTime = block.timestamp;
         vipUnlockStartTime[tokenId] = unlockStartTime;
+        vipUnlockPeriodSnapshot[tokenId] = vipUnlockingPeriod;
 
         emit VIPUnlockStarted(tokenId, unlockStartTime);
     }
 
     /**
-     * @dev Withdraws tokens from a VIP stake after the unlock period
+     * @dev Internal helper to finalize (clean up) a VIP stake.
+     *      Deletes stake data, clears unlock time, decrements VIP count, and burns the NFT.
+     * @param tokenId ID of the stake to finalize
+     * @param user Address of the stake owner
+     */
+    function _finalizeVipStake(uint256 tokenId, address user) internal {
+        // Transfer any remaining stake.amount to user
+        uint256 remaining = stakes[tokenId].amount;
+        if (remaining > 0) {
+            totalStaked -= remaining;
+            require(noon.transfer(user, remaining), TokenTransferFailed());
+        }
+
+        // Store owner for potential withdrawal reward claiming (same as withdrawWithReward)
+        withdrawnStakeOwners[tokenId] = user;
+
+        // Clear stake and associated data
+        delete stakes[tokenId];
+        delete vipUnlockStartTime[tokenId];
+        delete vipUnlockPeriodSnapshot[tokenId];
+
+        // Decrease VIP stake count
+        userVipStakeCount[user]--;
+
+        // Burn NFT
+        _burn(tokenId);
+
+        emit StakeWithdrawn(tokenId, remaining);
+    }
+
+    /**
+     * @dev Withdraws tokens from a VIP stake after the unlock period.
+     *      When vipUnlockingPeriod is 0, allows one-step direct withdrawal without startVIPUnstake.
      * @param tokenId ID of the stake to withdraw from
      */
     function withdrawVip(uint256 tokenId) external nonReentrant onlyTokenOwner(tokenId) {
         Stake storage stake = stakes[tokenId];
-        if (stake.amount == 0) revert StakeNotFound();
+        if (stake.stakeDate == 0) revert StakeNotFound();
         if (!stake.isVip) revert NotVIPStake();
 
-        // Check if unlocking period has started and completed
-        if (vipUnlockStartTime[tokenId] == 0) revert UnlockNotStarted();
-        if (block.timestamp < vipUnlockStartTime[tokenId] + vipUnlockingPeriod) revert UnlockPeriodNotCompleted();
+        // When vipUnlockingPeriod is 0: one-step flow, withdraw directly without startVIPUnstake
+        if (vipUnlockingPeriod > 0) {
+            if (vipUnlockStartTime[tokenId] == 0) revert UnlockNotStarted();
+            uint256 period = vipUnlockPeriodSnapshot[tokenId];
+            if (block.timestamp < vipUnlockStartTime[tokenId] + period) revert UnlockPeriodNotCompleted();
+        }
 
+        // Claim all remaining vesting schedules (revert on any failure)
         if (address(vestingContract) != address(0)) {
             IStakeNOONVesting.VestingSchedule[] memory schedules = vestingContract.getVestingSchedulesForStake(tokenId);
             uint256 length = schedules.length;
@@ -652,25 +731,8 @@ contract stakeNOON is
             }
         }
 
-        uint256 amount = stake.amount;
-
-        // Update global state
-        totalStaked -= amount;
-
-        // Clear stake
-        delete stakes[tokenId];
-        delete vipUnlockStartTime[tokenId];
-
-        // Decrease VIP stake count
-        userVipStakeCount[msg.sender]--;
-
-        // Burn NFT
-        _burn(tokenId);
-
-        // Transfer NOON tokens back
-        noon.transfer(msg.sender, amount);
-
-        emit StakeWithdrawn(tokenId, amount);
+        // Finalize: transfer remaining stake.amount, delete stake, burn NFT
+        _finalizeVipStake(tokenId, msg.sender);
     }
 
     /**
@@ -680,25 +742,53 @@ contract stakeNOON is
     function setVestingContract(address _vestingContract) external onlyOwner {
         if (_vestingContract == address(0)) revert InvalidVestingContractAddress();
         vestingContract = IStakeNOONVesting(_vestingContract);
+        emit VestingContractUpdated(_vestingContract);
     }
 
     /**
-     * @dev Claims vested tokens for a stake
+     * @dev Claims vested tokens for a stake.
+     *      Also releases the corresponding 10% portion from stake.amount,
+     *      since each schedule's totalAmount = stakedAmount * VESTING_MULTIPLIER (9x = 90%),
+     *      and the matching 10% (1x) sits in stake.amount.
      * @param tokenId ID of the stake
      * @param scheduleId ID of the vesting schedule to claim from
      */
     function claimVesting(uint256 tokenId, uint256 scheduleId) external nonReentrant onlyTokenOwner(tokenId) {
         if (address(vestingContract) == address(0)) revert VestingContractNotSet();
-        if (vipUnlockStartTime[tokenId] == 0) revert UnlockNotStarted();
-        if (block.timestamp < vipUnlockStartTime[tokenId] + vipUnlockingPeriod) revert UnlockPeriodNotCompleted();
+        // When vipUnlockingPeriod is 0: allow direct claim without startVIPUnstake
+        if (vipUnlockingPeriod > 0) {
+            if (vipUnlockStartTime[tokenId] == 0) revert UnlockNotStarted();
+            uint256 period = vipUnlockPeriodSnapshot[tokenId];
+            if (block.timestamp < vipUnlockStartTime[tokenId] + period) revert UnlockPeriodNotCompleted();
+        }
 
         // Get all vesting schedules for this stake
         IStakeNOONVesting.VestingSchedule[] memory schedules = vestingContract.getVestingSchedulesForStake(tokenId);
         if (schedules.length == 0) revert NoVestingSchedulesForStake();
+        if (scheduleId >= schedules.length) revert NoVestingSchedulesForStake();
+        if (schedules[scheduleId].stakeId != tokenId) revert ScheduleNotForStake();
 
+        // Calculate the 10% portion for this schedule
+        // schedule.totalAmount = stakedAmount * VESTING_MULTIPLIER, so stakedAmount = totalAmount / VESTING_MULTIPLIER
+        uint256 immediateAmount = schedules[scheduleId].totalAmount / vestingContract.VESTING_MULTIPLIER();
+
+        // Reduce stake.amount by the 10% portion
+        Stake storage stake = stakes[tokenId];
+        stake.amount -= immediateAmount;
+        totalStaked -= immediateAmount;
+
+        // Claim the 90% vested portion from vesting contract
         vestingContract.claimVesting(msg.sender, scheduleId);
 
+        // Transfer the 10% to user
+        require(noon.transfer(msg.sender, immediateAmount), TokenTransferFailed());
+
         emit VestingClaimed(msg.sender, tokenId, scheduleId);
+
+        // If stake.amount reached 0, finalize: clean up stake data and burn NFT
+        if (stake.amount == 0) {
+            _finalizeVipStake(tokenId, msg.sender);
+        }
     }
 
     /**
@@ -740,6 +830,7 @@ contract stakeNOON is
         emit VipUnlockingPeriodUpdated(_vipUnlockingPeriod);
     }
 
+
     /**
      * @dev Internal function to verify withdrawal reward merkle proof
      * @param tokenId ID of the stake
@@ -774,8 +865,8 @@ contract stakeNOON is
         // Verify the caller was the original owner of the withdrawn stake
         if (withdrawnStakeOwners[tokenId] != msg.sender) revert NotOwner();
 
-        // Verify the stake is unlocked (withdrawn) - stake should not exist anymore
-        if (stakes[tokenId].amount > 0) revert StakeNotExpired();
+        // Verify the stake has been withdrawn first
+        if (stakes[tokenId].amount > 0) revert StakeNotWithdrawn();
 
         // Check if reward has already been claimed
         if (claimedWithdrawalRewards[tokenId] >= rewardAmount) revert AlreadyClaimed();
@@ -794,7 +885,7 @@ contract stakeNOON is
         totalClaimableAmount -= additionalRewardAmount;
 
         // Transfer reward to user
-        noon.transfer(msg.sender, additionalRewardAmount);
+        require(noon.transfer(msg.sender, additionalRewardAmount), TokenTransferFailed());
 
         emit WithdrawalRewardClaimed(tokenId, rewardAmount);
     }
@@ -804,5 +895,5 @@ contract stakeNOON is
      * variables without shifting down storage in the inheritance chain.
      * See https://docs.openzeppelin.com/contracts/4.x/upgradeable#storage_gaps
      */
-    uint256[48] private __gap;
+    uint256[46] private __gap;
 }

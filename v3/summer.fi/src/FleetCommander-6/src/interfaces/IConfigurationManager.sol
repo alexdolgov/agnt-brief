@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 import {IConfigurationManagerErrors} from "../errors/IConfigurationManagerErrors.sol";
 import {IConfigurationManagerEvents} from "../events/IConfigurationManagerEvents.sol";
 import {ConfigurationManagerParams} from "../types/ConfigurationManagerTypes.sol";
+
 /**
  * @title IConfigurationManager
  * @notice Interface for the ConfigurationManager contract, which manages system-wide parameters
@@ -54,6 +55,15 @@ interface IConfigurationManager is
     function harborCommand() external view returns (address);
 
     /**
+     * @notice Get the address of the Fleet Commander Rewards Manager Factory contract
+     * @return The address of the Fleet Commander Rewards Manager Factory contract
+     */
+    function fleetCommanderRewardsManagerFactory()
+        external
+        view
+        returns (address);
+
+    /**
      * @notice Set a new address for the Raft contract
      * @param newRaft The new address for the Raft contract
      * @dev Can only be called by the governor
@@ -80,4 +90,13 @@ interface IConfigurationManager is
      * @dev Can only be called by the governor
      */
     function setHarborCommand(address newHarborCommand) external;
+
+    /**
+     * @notice Set a new fleet commander rewards manager factory address
+     * @param newFleetCommanderRewardsManagerFactory The address of the new fleet commander rewards manager factory
+     * @dev Can only be called by the governor
+     */
+    function setFleetCommanderRewardsManagerFactory(
+        address newFleetCommanderRewardsManagerFactory
+    ) external;
 }

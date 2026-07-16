@@ -1,6 +1,6 @@
 # tau-labs — deployments
 
-137 verified deployment(s) across 112 component(s).
+139 verified deployment(s) across 113 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -56,6 +56,7 @@
 | ethereum | `0x5d9f02e85cccec44450c4c9c5bc71fb09bc3c71a` | RewardsManagerFactory | impl | live | no |
 | ethereum | `0x604117f0c94561231060f56cd2ddd16245d434c5` | PlasmaVault-2 | impl | live | no |
 | ethereum | `0x60e36a79c3d21120350e39b5ea59ae26b75ae74c` | PlasmaVault | impl | live | no |
+| ethereum | `0x63103375659d0aa94e9f35df15be01a3dd1ae9c0` | PlasmaVault | impl | live | no |
 | ethereum | `0x641b81e993e1c52a74a84caf17f1ad50a49675b3` | UniversalTokenSwapperFuse-2 | impl | live | no |
 | ethereum | `0x6558eb96c61ccb8b23cfa26a6b91facd6a0ab162` | PriceManagerFactory-2 | impl | live | no |
 | ethereum | `0x6857b21d872141e960d2eac6f92480c2c666e0c7` | IporFusionAccessManager | impl | live | no |
@@ -99,6 +100,7 @@
 | ethereum | `0xae4362a98cd22f711f9b9f9f3edb9bb1379a573c` | PlasmaVault | impl | live | no |
 | ethereum | `0xae9a37dd9229687662834e6696e396e7837baabd` | EulerV2BalanceFuse | impl | live | no |
 | ethereum | `0xb03a4f04aa4cc8ef88e6cf709d61f54571d6752e` | RewardsManagerFactory | impl | live | no |
+| ethereum | `0xb0f56bb0bf13ee05fef8cd2d8df5ffdfcac7a74f` | PlasmaVault-4 | impl | live | no |
 | ethereum | `0xb20e1dc72f261c857b6eae41bc59a24fcf0cd802` | RewardsClaimManager-4 | impl | live | no |
 | ethereum | `0xb3a7f15034d664fa295b472732bffc6953eefb33` | EbisuZapperBalanceFuse | impl | live | no |
 | ethereum | `0xb3d5c1b8d512bd41d845817f84e4ea29bf038fb5` | SiloV2SupplyBorrowableCollateralFuse | impl | live | no |

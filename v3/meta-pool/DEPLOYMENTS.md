@@ -1,10 +1,13 @@
 # meta-pool — deployments
 
-8 verified deployment(s) across 5 component(s).
+11 verified deployment(s) across 8 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| ethereum | `0x24d9664ba8384d94499d6698ab285b69e879d971` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0x3747484567119592ff6841df399cf679955a111a` | Staking-2 | impl | live | no |
+| ethereum | `0x798bcb35d2d48c8ce7ef8171860b8d53a98b361d` | MpDaoToken | impl | live | no |
+| ethereum | `0x806f870ee04a2cc8bf2ad053baa5ed9999a1f182` | ProxyAdmin | impl | live | no |
 | ethereum | `0xaba64e88f55c769d46c17beb4c70fde62d37513c` | LiquidUnstakePool | impl | live | no |
 | ethereum | `0xb112841c67d94d9536d356631224340e2ef27b39` | Staking | impl | live | no |
 | ethereum | `0xcadd976ae3a04352b4ab28865af07ad2c366d675` | LiquidUnstakePool-2 | impl | live | no |

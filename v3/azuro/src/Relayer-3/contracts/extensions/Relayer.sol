@@ -91,10 +91,9 @@ contract Relayer is OrderTools, OwnableUpgradeable {
             hashes = getHashes(order);
 
             // init needed payments
-            (
-                uint128 betAmount,
-                uint128[] memory amounts
-            ) = _getOrderBetsAmounts(order);
+            (uint128 betAmount, uint128[] memory amounts) = getOrderBetsAmounts(
+                order
+            );
             bettorsFee = data.relayerFeeAmount;
 
             // if fee or bet sponsored, reduce bettor's payments
@@ -306,34 +305,5 @@ contract Relayer is OrderTools, OwnableUpgradeable {
         }
 
         return abi.encodePacked(structHash, messageHash);
-    }
-
-    function _getOrderBetsAmounts(
-        OrderData memory order
-    )
-        internal
-        pure
-        virtual
-        returns (uint128 totalAmount, uint128[] memory amounts)
-    {
-        if (order.betType == BetType.COMBO) {
-            totalAmount = abi
-                .decode(order.clientBetData, (ClientComboBetData))
-                .amount;
-            amounts = new uint128[](1);
-            amounts[0] = totalAmount;
-            return (totalAmount, amounts);
-        }
-
-        ClientBetData memory betData = abi.decode(
-            order.clientBetData,
-            (ClientBetData)
-        );
-        amounts = new uint128[](betData.bets.length);
-        for (uint256 i; i < betData.bets.length; ++i) {
-            uint128 _amount = betData.bets[i].amount;
-            amounts[i] = _amount;
-            totalAmount += _amount;
-        }
     }
 }

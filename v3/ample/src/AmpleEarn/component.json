@@ -1,0 +1,68 @@
+{
+  "component": "AmpleEarn",
+  "main_contract": "AmpleEarn",
+  "source_entry_count": 45,
+  "source_file_count": 45,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AmpleEarn\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-143",
+      "chain_id": 143,
+      "address": "0xe89d322b5822d828b8252d3087be8486cc2048ef",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x00a7ab758367da6a3909b75bd30ccc68e8755809",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1688aeb3ec7b23a22e2418fdf5bccc67ecf39c0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd1be1f98991cf69355e468ad15b6d0b6429bcfcb",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-747474",
+      "chain_id": 747474,
+      "address": "0xe5092ab6b8b0c37b1bec12c606614706063d04e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402251"
+    }
+  ]
+}

@@ -10,10 +10,22 @@
     "build_command": "forge build --root \"src/BeaconProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/thesis/defense_public_security-audit-reports/blob/main/PDFs/240411_Thesis_Defense-Threshold_tBTC_Base_Smart_Contracts_Security_Audit_Report.pdf"
+  ],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb810abd43d8fcfd812d6feb14fefc236e92a341a",
+      "is_proxy": true,
+      "implementation_address": "0x9a5250c7bea10f7472eb9d50bb757b83d67fb5ed",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395770"
+    },
     {
       "chain": "base",
       "chain_id": 8453,
@@ -23,6 +35,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "395777"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xdebd9aa9bc4845c7cd2d9a997f82a2daea540bd5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

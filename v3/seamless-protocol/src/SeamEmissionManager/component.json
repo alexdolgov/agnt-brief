@@ -1,0 +1,38 @@
+{
+  "component": "SeamEmissionManager",
+  "main_contract": "SeamEmissionManager",
+  "source_entry_count": 18,
+  "source_file_count": 18,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SeamEmissionManager\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x03eeedf76a007dce47b3a0044d9f0a04badd9cfa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398729"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x1fdfc3872a70a7af5a818f27bb14fbea4ee38f9c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398734"
+    }
+  ]
+}

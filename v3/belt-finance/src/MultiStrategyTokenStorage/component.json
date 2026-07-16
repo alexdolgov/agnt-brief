@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/MultiStrategyTokenStorage\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 4,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -53,6 +53,16 @@
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xaa20e8cb61299df2357561c2ac2e1172bc68bc25",
+      "is_proxy": true,
+      "implementation_address": "0x55c82b38eca698e7d589f658bdd5db4939a5f5de",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405254"
     }
   ]
 }

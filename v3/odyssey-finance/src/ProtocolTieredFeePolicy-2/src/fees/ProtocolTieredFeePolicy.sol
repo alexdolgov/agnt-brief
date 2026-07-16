@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.29;
+pragma solidity 0.8.23;
 
 import {FeePolicy} from "./FeePolicy.sol";
 
@@ -29,13 +29,14 @@ contract ProtocolTieredFeePolicy is FeePolicy {
     IMetronomePool public metronomePool;
 
     function initialize(
+        address positionRegistry_,
         address metronomePool_,
         address[] calldata vesperPools_,
         uint256[4] calldata performanceFeeTiers_,
         uint256 depositFee_,
         uint256 withdrawFee_
     ) external initializer {
-        __FeePolicy_init(depositFee_, withdrawFee_);
+        __FeePolicy_init(positionRegistry_, depositFee_, withdrawFee_);
 
         if (metronomePool_ == address(0)) revert AddressIsNull();
 
@@ -53,12 +54,16 @@ contract ProtocolTieredFeePolicy is FeePolicy {
 
     /// @inheritdoc FeePolicy
     function quoteAllocatedInFee(uint256 amount_) external view override returns (uint256 _fee) {
-        _fee = _calculateDepositFee(amount_) + _quote({amountIn_: amount_, amountOut_: 0});
+        uint256 _depositFee = depositFee;
+        if (_depositFee > 0) _fee = (amount_ * _depositFee) / 1e18;
+        _fee += _quote({amountIn_: amount_, amountOut_: 0});
     }
 
     /// @inheritdoc FeePolicy
     function quoteAllocatedOutFee(uint256 amount_) external view override returns (uint256 _fee) {
-        _fee = _calculateWithdrawFee(amount_) + _quote({amountIn_: 0, amountOut_: amount_});
+        uint256 _withdrawFee = withdrawFee;
+        if (_withdrawFee > 0) _fee = (amount_ * _withdrawFee) / 1e18;
+        _fee += _quote({amountIn_: 0, amountOut_: amount_});
     }
 
     /// @inheritdoc FeePolicy

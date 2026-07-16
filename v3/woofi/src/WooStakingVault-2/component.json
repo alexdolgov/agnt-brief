@@ -1,8 +1,8 @@
 {
   "component": "WooStakingVault-2",
   "main_contract": "WooStakingVault",
-  "source_entry_count": 13,
-  "source_file_count": 13,
+  "source_entry_count": 12,
+  "source_file_count": 12,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x9321785d257b3f0ef7ff75436a87141c683dc99d",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x2aeab1a338bcb1758f71bd5af40637cee2085076",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401285"
+      "logic_topography_row_id": "401111"
     }
   ]
 }

@@ -1,11 +1,14 @@
 # equilibria — deployments
 
-72 verified deployment(s) across 27 component(s).
+98 verified deployment(s) across 43 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x09bae4c38b1a9142726c6f08dc4d1260b0c8e94d` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0x0c880f6761f1af8d9aa9c466984b80dab9a8c9e8` | ClonableBeaconProxy | proxy | live | no |
+| arbitrum | `0x29828f442c98aaa71a853594fec7c0c3806f0444` | GnosisSafeProxy-2 | proxy | live | no |
+| arbitrum | `0x37227785a1f4545ed914690e395e4cfe96b8319f` | TransparentUpgradeableProxy-6 | proxy | live | no |
+| arbitrum | `0x39f4789bdc5560ade254fce8b7f221205df6993d` | EqbZap-6 | impl | live | no |
 | arbitrum | `0x4250ea96f880c5725931a72a87dcbe01fc654a92` | BeaconProxy | proxy | live | yes |
 | arbitrum | `0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0x64627901dadb46ed7f275fd4fc87d086cff1e6e3` | TransparentUpgradeableProxy | proxy | live | yes |
@@ -13,20 +16,28 @@
 | arbitrum | `0x8c9b5b2e6e136b6ee66fca6229191e749c0029f5` | EPendleOFT | impl | live | no |
 | arbitrum | `0xbfbcfe8873fe28dfa25f1099282b088d52bbad9c` | BeaconProxyFactory | proxy | live | no |
 | arbitrum | `0xd4848211b699503c772aa1bc7d33b433c4242ac3` | BeaconProxyFactory | proxy | live | no |
+| arbitrum | `0xe5b4b7c575a6ccedc072622b9dcbc11552baef8e` | BribeManager | impl | live | no |
+| arbitrum | `0xfda441270c1166d80f68aa6b5396e56b732724e4` | GnosisSafeProxy-3 | proxy | live | no |
+| arbitrum | `0xfe80d611c6403f70e5b1b9b722d2b3510b740b2b` | XEqbToken | impl | live | no |
 | base | `0x010cd9b9be7e416e07793dc6ce2f45868a80a50a` | OptimismMintableERC20-2 | impl | live | no |
 | base | `0x2350ea954113b1a1eebaaccc47f3a4985f709913` | EPendleOFT | impl | live | no |
 | base | `0x2583a2538272f31e9a15dd12a432b8c96ab4821d` | BeaconProxy | proxy | live | yes |
+| base | `0x357f55b46821a6c6e476cc32ebb2674cd125e849` | EqbZap-2 | impl | live | no |
 | base | `0x6ee066b813cd8c2586d86f79ed0025e81801b923` | BeaconProxy | proxy | live | yes |
 | base | `0x920873e5b302a619c54c908adfb77a1c4256a3b8` | BeaconProxy | proxy | live | yes |
 | base | `0xa99f6e6785da0f5d6fb42495fe424bce029eeb3e` | OptimismMintableERC20-3 | impl | live | no |
 | base | `0xc6e669606b28f4e8ba3ec3fef20d8f651bf239f0` | OptimismMintableERC20-4 | impl | live | no |
+| base | `0xd6ecfd0d5f1dfd3ad30f267a3a29b3e1bc4fd54f` | XEqbToken | impl | live | no |
+| bsc | `0x03e2bc724bb0caeb6c1bbd043b0424b310634513` | EqbZap | impl | live | no |
 | bsc | `0x06fd8e5dae63afcbfdf10604efca3143df534f37` | EPendleOFT-3 | impl | live | no |
+| bsc | `0x0cf6ab3c169b0169e35ad58d350cbacdaf80e139` | XEqbToken | impl | live | no |
 | bsc | `0x374ca32fd7934c5d43240e1e73fa9b2283468609` | BridgeToken | proxy | live | no |
 | bsc | `0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf` | BeaconProxy | proxy | live | yes |
 | bsc | `0x52f0bbe0325097ac93e1ec85c32a950e47789ca5` | BeaconProxy | proxy | live | yes |
 | bsc | `0x5fec857958fbde28e45f779daf5aba8fdd5bd6bc` | BridgeToken | proxy | live | no |
 | bsc | `0x64627901dadb46ed7f275fd4fc87d086cff1e6e3` | BeaconProxy | proxy | live | yes |
 | bsc | `0x89a4e4044bdb53e00e40c1b2e1005bd61663186b` | BeaconProxy | proxy | live | yes |
+| chain-146 | `0x22fc5a29bd3d6cce19a06f844019fd506fce4455` | EqbZap-4 | impl | live | no |
 | chain-146 | `0x479603de0a8b6d2f4d4eaa1058eea0d7ac9e218d` | BeaconProxy | proxy | live | yes |
 | chain-146 | `0x48540d1140331277b9157a096e40e6f5506fc335` | ERC1967Proxy | proxy | live | no |
 | chain-146 | `0x4abc7c5f0445d847e1d4544dd15f049e996eadd2` | MerkleDistributorV2 | impl | live | no |
@@ -35,18 +46,23 @@
 | chain-146 | `0x9cacb579227d10a9fbe0951861b9fcb4847e8c6b` | ERC1967Proxy | proxy | live | no |
 | chain-146 | `0x9f14535a90bc7ca72739a73c1d382bd272ca341a` | BeaconProxy | proxy | live | yes |
 | chain-146 | `0xf1ef7d2d4c0c881cd634481e0586ed5d2871a74b` | ERC1967Proxy | proxy | live | no |
+| chain-146 | `0xfe80d611c6403f70e5b1b9b722d2b3510b740b2b` | XEqbToken | impl | live | no |
 | chain-80094 | `0x18c61629e6cbadb85c29ba7993f251b3ebe2b356` | BeaconProxy | proxy | live | yes |
 | chain-80094 | `0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf` | BeaconProxy | proxy | live | yes |
 | chain-80094 | `0x5e73e741b0b15e10789a30a91953794e44ea4531` | BeaconProxy | proxy | live | yes |
 | chain-80094 | `0x88bb2bf040fa5bf2bd3b79ff9dfa035ed1289032` | WOFT | impl | live | no |
+| chain-80094 | `0x96c4a48abdf781e9c931cfa92ec0167ba219ad8e` | XEqbToken | impl | live | no |
+| chain-80094 | `0xf8aa1d80692f72614bfb5e96ae3f92f47b920332` | EqbZap | impl | live | no |
 | chain-80094 | `0xf9ee98099f5078078bb8e17e6b4a4f95137e2037` | WOFT | impl | live | no |
 | chain-80094 | `0xff9c599d51c407a45d631c6e89cb047efb88aef6` | WOFT | impl | live | no |
 | chain-9745 | `0x17bac5f906c9a0282ac06a59958d85796c831f24` | PendleOFT | impl | live | no |
 | chain-9745 | `0xd6ecfd0d5f1dfd3ad30f267a3a29b3e1bc4fd54f` | BeaconProxy | proxy | live | yes |
 | chain-999 | `0x03b86b5b4f49fd2059c813b3f928c0b276c88e4e` | VaultDepositToken | impl | live | no |
+| chain-999 | `0x09bae4c38b1a9142726c6f08dc4d1260b0c8e94d` | XEqbToken-2 | impl | live | no |
 | chain-999 | `0x1679fe95b11959c694af8627e5360267e146723b` | BaseRewardPoolV2_1 | impl | live | no |
 | chain-999 | `0x18c61629e6cbadb85c29ba7993f251b3ebe2b356` | BeaconProxy | proxy | live | yes |
 | chain-999 | `0x3ce8426dc0b90a36f0e20d7c2acaaf4578ad4e50` | EQBOFT | impl | live | no |
+| chain-999 | `0x5e73e741b0b15e10789a30a91953794e44ea4531` | BeaconProxy | proxy | live | yes |
 | chain-999 | `0x6408d91e853bfa11caa719a4578fe659dbd16005` | ePendleOFT-2 | impl | live | no |
 | chain-999 | `0x73e247faabf71a67afa8f75773139998464cac8c` | EQBOFT | impl | live | no |
 | chain-999 | `0x7700eb46bb40163985c5337de39704482aed33b1` | BeaconProxy | proxy | live | yes |
@@ -55,24 +71,40 @@
 | chain-999 | `0xb2d167eb1fff17ebd727b0a21e7f5f50424264c8` | EPendleOFT-4 | impl | live | no |
 | chain-999 | `0xb4484a64ad7dccb4e8cc89e84fe02140e42cefd1` | EQBOFT | impl | live | no |
 | chain-999 | `0xbda88ae50b788f99da7d0cb12118e0f645f6035b` | MerkleDistributorV2 | impl | live | no |
+| chain-999 | `0xc7517f481cc0a645e63f870830a4b2e580421e32` | EqbZap-5 | impl | live | no |
 | chain-999 | `0xf7498deabbae0e8d5673336a8fb348ef95052981` | DepositTokenV2 | impl | live | no |
+| ethereum | `0x0140de476f49b6b42f7b73612b6dc317ab91d3bc` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0x05eaaa615f01ab1b8a0bd1e6a487d80c8910f7a0` | VaultDepositTokenFactory | impl | live | no |
+| ethereum | `0x397aa01343b89f18934979824c3ad227f251afa0` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0x473e8407f2ad24148ac1fe18873b8a22aa8a713b` | StakingPoolManager | impl | live | no |
+| ethereum | `0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0x50c6f7aa9c05b4435a6e4ebb0dfd1eaa38da5e97` | StakingPoolManager | impl | live | no |
 | ethereum | `0x5be392312897c797ba720c5654c05ff1a4254886` | MerkleDistributorV2 | impl | live | no |
-| ethereum | `0x64627901dadb46ed7f275fd4fc87d086cff1e6e3` | TransparentUpgradeableProxy-2 | proxy | live | yes |
+| ethereum | `0x64627901dadb46ed7f275fd4fc87d086cff1e6e3` | TransparentUpgradeableProxy-3 | proxy | live | yes |
+| ethereum | `0x6ae382814e24b6ddf588901c597f26a9e945c577` | EPendleProxyOFT | impl | live | no |
 | ethereum | `0xbf6871fddb01384fc4d8bf4db029c0a1998b372c` | StakingPoolManager | impl | live | no |
-| ethereum | `0xd30d6fd662c0d92b49f3c3e478e125ba1d968059` | TransparentUpgradeableProxy-3 | proxy | live | yes |
+| ethereum | `0xd30d6fd662c0d92b49f3c3e478e125ba1d968059` | TransparentUpgradeableProxy-4 | proxy | live | yes |
+| mantle | `0x22fc5a29bd3d6cce19a06f844019fd506fce4455` | EqbZap-2 | impl | live | no |
 | mantle | `0x3e7ef8f50246f725885102e8238cbba33f276747` | L2StandardERC20 | impl | live | no |
 | mantle | `0x479603de0a8b6d2f4d4eaa1058eea0d7ac9e218d` | BeaconProxy | proxy | live | yes |
 | mantle | `0x7700eb46bb40163985c5337de39704482aed33b1` | EPendleOFT | impl | live | no |
 | mantle | `0x920873e5b302a619c54c908adfb77a1c4256a3b8` | BeaconProxy | proxy | live | yes |
 | mantle | `0x9e1028f5f1d5ede59748ffcee5532509976840e0` | L2StandardERC20 | impl | live | no |
 | mantle | `0x9f14535a90bc7ca72739a73c1d382bd272ca341a` | BeaconProxy | proxy | live | yes |
+| mantle | `0xfe80d611c6403f70e5b1b9b722d2b3510b740b2b` | XEqbToken | impl | live | no |
 | optimism | `0x0140de476f49b6b42f7b73612b6dc317ab91d3bc` | BeaconProxy | proxy | live | yes |
+| optimism | `0x18c61629e6cbadb85c29ba7993f251b3ebe2b356` | TransparentUpgradeableProxy-5 | proxy | live | no |
+| optimism | `0x41f5e9895c293fcbab3ca33bede1299b7045b8ed` | EqbZap-3 | impl | live | no |
 | optimism | `0x4d32c8ff2facc771ec7efc70d6a8468bc30c26bf` | BeaconProxy | proxy | live | yes |
 | optimism | `0x76c37f9949e05b37c8373d155c1fef46a6858481` | OptimismMintableERC20 | impl | live | no |
 | optimism | `0x8a5a4348f5cfe9da08b0f3d9ae76bef6e8bbd36c` | EPendleOFT | impl | live | no |
+| optimism | `0x96c4a48abdf781e9c931cfa92ec0167ba219ad8e` | XEqbToken | impl | live | no |
 | optimism | `0xaf3a6f67af1624d3878a8d30b09fae7915dca2a0` | OptimismMintableERC20 | impl | live | no |
 | optimism | `0xbc7b1ff1c6989f006a1185318ed4e7b5796e66e1` | OptimismMintableERC20 | impl | live | no |
 | optimism | `0xf19fbc1d3693ecca9979ea31272e422903e94cec` | BeaconProxy | proxy | live | yes |
+
+## Source unavailable (2)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- chain-9745 `0x02c033574b6ca02ddae8e0b4070d551149d981e4`
+- chain-9745 `0xad29951cda3dcd0e570e65a6ee34aa455c53421c`

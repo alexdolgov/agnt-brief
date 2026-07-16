@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/BeaconProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 20,
+  "deployment_count": 21,
   "audited": true,
   "audits_covering": [
     "https://wasabi-public.s3.amazonaws.com/audits/v1/Wasabi+Perps+-+Zellic+Audit+Report.pdf",
@@ -166,6 +166,16 @@
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8e0edfd6d15f858adbb41677b82ab64797d5afc0",
+      "is_proxy": true,
+      "implementation_address": "0x1f392a1f7c737aa4777ed3dc608ec153dfd39c7e",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400937"
     },
     {
       "chain": "ethereum",

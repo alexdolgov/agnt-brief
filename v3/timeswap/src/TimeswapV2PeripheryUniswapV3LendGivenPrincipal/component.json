@@ -1,0 +1,38 @@
+{
+  "component": "TimeswapV2PeripheryUniswapV3LendGivenPrincipal",
+  "main_contract": "TimeswapV2PeripheryUniswapV3LendGivenPrincipal",
+  "source_entry_count": 68,
+  "source_file_count": 68,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TimeswapV2PeripheryUniswapV3LendGivenPrincipal\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5073657c5459a6bcb66a769ad9687d2576630f53",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404228"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x36b34ab7538061089700ba976ba7e88d7ad500e9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404292"
+    }
+  ]
+}

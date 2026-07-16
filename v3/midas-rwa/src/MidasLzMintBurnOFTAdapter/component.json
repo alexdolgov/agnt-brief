@@ -1,0 +1,58 @@
+{
+  "component": "MidasLzMintBurnOFTAdapter",
+  "main_contract": "MidasLzMintBurnOFTAdapter",
+  "source_entry_count": 41,
+  "source_file_count": 41,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/MidasLzMintBurnOFTAdapter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x148c86390a4ae6f7a02df5903bc0a89e8b4581a0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403788"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb67f81069e890a1b3e02c7bed3a9f78ba54a445c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403849"
+    },
+    {
+      "chain": "chain-143",
+      "chain_id": 143,
+      "address": "0x08bc5ef2e2afe697614bf3a9eaa71dcbb577f2df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403875"
+    },
+    {
+      "chain": "chain-143",
+      "chain_id": 143,
+      "address": "0xe9977b9b22ed2c19dcd68d0403163efcd45bf874",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403882"
+    }
+  ]
+}

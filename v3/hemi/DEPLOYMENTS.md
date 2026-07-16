@@ -1,6 +1,6 @@
 # hemi — deployments
 
-28 verified deployment(s) across 22 component(s).
+29 verified deployment(s) across 23 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -29,6 +29,7 @@
 | optimism | `0x4200000000000000000000000000000000000012` | Proxy-7 | proxy | live | no |
 | optimism | `0x4200000000000000000000000000000000000015` | Proxy-8 | proxy | live | no |
 | optimism | `0x4200000000000000000000000000000000000016` | Proxy-9 | proxy | live | no |
-| optimism | `0x4200000000000000000000000000000000000020` | Proxy-10 | proxy | live | no |
-| optimism | `0x4200000000000000000000000000000000000021` | Proxy-11 | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000018` | Proxy-10 | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000020` | Proxy-11 | proxy | live | no |
+| optimism | `0x4200000000000000000000000000000000000021` | Proxy-12 | proxy | live | no |
 | optimism | `0x4200000000000000000000000000000000000042` | GovernanceToken | impl | live | no |

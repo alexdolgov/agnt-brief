@@ -1,6 +1,6 @@
 # mochifi — deployments
 
-18 verified deployment(s) across 17 component(s).
+19 verified deployment(s) across 18 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -8,6 +8,7 @@
 | ethereum | `0x083c0c100426ab4758435180c836ca11be2f457c` | MochiProfileV0 | impl | unknown | no |
 | ethereum | `0x091a8460e20761bb3ced9bc3a0de62aab3d24115` | MochiNFTEngine | impl | unknown | no |
 | ethereum | `0x0e0f438482ce5ee70d859d1f463c9b4d323081f3` | FixedPriceAdapter | impl | unknown | no |
+| ethereum | `0x31d4eb09a216e181ec8a43ce79226a487d6f0ba9` | USDM | impl | live | no |
 | ethereum | `0x39ad803d61ecabc64f32edaae97c2fffb0617ff6` | DutchAuctionLiquidator | impl | unknown | no |
 | ethereum | `0x3e99506fa2643368943065aac0495437834b6f8d` | MochiVault | impl | unknown | no |
 | ethereum | `0x5005bd0fe21d2ed57df4dbbbc159a6734d5dcb34` | NoDiscountProfile | impl | unknown | no |

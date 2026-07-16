@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/FeeLibV1-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 13,
+  "deployment_count": 16,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -143,6 +143,36 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "399599"
+    },
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x2a6c43e0dbdcde23d40c82f45682bc6d8a6db219",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399678"
+    },
+    {
+      "chain": "scroll",
+      "chain_id": 534352,
+      "address": "0x503c5cfea3477e0a576c8cf5354023854b7a06ff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399682"
+    },
+    {
+      "chain": "chain-1313161554",
+      "chain_id": 1313161554,
+      "address": "0x6e3d884c96d640526f273c61dfcf08915ebd7e2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399688"
     }
   ]
 }

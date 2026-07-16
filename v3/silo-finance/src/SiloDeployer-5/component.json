@@ -1,8 +1,8 @@
 {
   "component": "SiloDeployer-5",
   "main_contract": "SiloDeployer",
-  "source_entry_count": 53,
-  "source_file_count": 53,
+  "source_entry_count": 71,
+  "source_file_count": 71,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,7 +17,7 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xde3a6c3c7a8f0534ad0756bdc17a9bf6a0da633a",
+      "address": "0xa95314ac0da743d8f389b7d62c925dd5020bfe3a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
@@ -27,7 +27,7 @@
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0x1f39ed01ac23a1abc4038e87291d4e9ff599b7fe",
+      "address": "0x3c9737b3bcd87aa7f672674bafe07577346f267e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
@@ -37,7 +37,7 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xd248d7eca045fa93a51cdce0eac9fdb985a06658",
+      "address": "0xa33b15e3ca591b59c7f115d4c453e1764827b540",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
@@ -47,7 +47,7 @@
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0xa59340538b5379511594061f7cac3863d6d1bbde",
+      "address": "0x2976d3ea35adcd185bbf79b201424f9607d49d30",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

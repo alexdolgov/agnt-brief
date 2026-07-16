@@ -1,8 +1,8 @@
 {
   "component": "SickleFactory-6",
   "main_contract": "SickleFactory",
-  "source_entry_count": 12,
-  "source_file_count": 12,
+  "source_entry_count": 9,
+  "source_file_count": 9,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,9 +15,9 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xb01e431542bafbac3fc95057961c92ed8e06e08d",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xac371d6e651b6450ea8c4ce346ddd44b62d851b5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

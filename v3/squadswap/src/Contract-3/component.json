@@ -1,0 +1,30 @@
+{
+  "component": "Contract-3",
+  "main_contract": "Contract",
+  "source_entry_count": 32,
+  "source_file_count": 32,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/cyberscope-io/audits/blob/main/squadswap/v1/audit.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x53616b1baa9e224092bbaf64f2fb5da2b11dd62a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

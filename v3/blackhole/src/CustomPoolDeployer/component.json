@@ -1,0 +1,28 @@
+{
+  "component": "CustomPoolDeployer",
+  "main_contract": "CustomPoolDeployer",
+  "source_entry_count": 21,
+  "source_file_count": 21,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/CustomPoolDeployer\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9f52f2beec30f2ebc9bbeb105e68cfe73dd4d74f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "392262"
+    }
+  ]
+}

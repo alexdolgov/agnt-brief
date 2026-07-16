@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/ProxyOracle\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "403253"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb97b916436e4a3b0aea6c6be2419c636d368035d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403256"
     }
   ]
 }

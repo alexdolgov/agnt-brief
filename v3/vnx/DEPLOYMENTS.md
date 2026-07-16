@@ -1,6 +1,6 @@
 # vnx — deployments
 
-32 verified deployment(s) across 11 component(s).
+34 verified deployment(s) across 12 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -18,6 +18,7 @@
 | avalanche | `0x9b357fac02e035159dffad8dd21333e39f25a660` | VNXProxyAdmin | impl | live | no |
 | base | `0x1724768a253476159a622a1689146862d3b762c2` | VNXProxyAdmin-2 | impl | live | no |
 | base | `0x35bb28feef0499d7580ed8e8ef1a19ab346b79e8` | VNXProxyAdmin | impl | live | no |
+| base | `0x709616610224dd12542bf7e862c00d0beb4a66c5` | VNXDGR | impl | live | no |
 | base | `0xae80e93c53d813f6b9cd6ab06d088831effb649b` | VNXAnyTransferProvider | impl | live | no |
 | base | `0xb6622a9ec19561b0a39de87a71b845ffa5cb60ee` | VNXManager-2 | impl | live | no |
 | base | `0xc4c917fda20fc2f39c629c809c4c3662a8cf7d9d` | VNXManager | impl | live | no |
@@ -33,6 +34,7 @@
 | chain-42220 | `0xdf491003cba7edaac75870cb285b25e0e640bceb` | VNXDGR | impl | live | no |
 | chain-42220 | `0xe003bd3eccdf612fd6573bcf382d4a9cec72fabc` | VNXProxyAdmin-2 | impl | live | no |
 | chain-42220 | `0xfc4210a4e7484350f4a26ab76630b72cb1d50eee` | VNXManager | impl | live | no |
+| ethereum | `0x1c17d67706423735b8bbf5b234d63b872bd584c4` | VNXDGR-2 | impl | live | no |
 | ethereum | `0xc8bb8eda94931ca2f20ef43ea7dbd58e68400400` | VNXProxyAdmin-3 | impl | live | no |
 | ethereum | `0xcdb3867935247049e87c38ea270edd305d84c9ae` | VNXManager-3 | impl | live | no |
 | polygon | `0xc8bb8eda94931ca2f20ef43ea7dbd58e68400400` | TransparentUpgradeableProxy | proxy | live | no |

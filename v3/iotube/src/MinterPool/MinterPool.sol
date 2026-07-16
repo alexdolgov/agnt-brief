@@ -1,4 +1,4 @@
-// File: contracts/ownership/Ownable.sol
+// File: ownership/Ownable.sol
 
 pragma solidity <6.0 >=0.4.0;
 
@@ -42,17 +42,23 @@ contract Ownable {
   }
 
 }
-// File: contracts/iotube/MinterPool.sol
+// File: token/MintableToken.sol
+
+pragma solidity <0.6 >=0.4.24;
+
+interface MintableToken {
+    function mint(address, uint) external returns (bool);
+    function burn(uint) external returns (bool);
+}
+
+// File: iotube/MinterPool.sol
 
 pragma solidity <6.0 >=0.4.24;
 
 
-interface IMintableToken {
-    function mint(address, uint256) external returns(bool);
-}
 
 contract MinterPool is Ownable {
     function mint(address _token, address _to, uint256 _amount) public onlyOwner returns (bool) {
-        return IMintableToken(_token).mint(_to, _amount);
+        return MintableToken(_token).mint(_to, _amount);
     }
 }

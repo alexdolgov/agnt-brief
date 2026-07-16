@@ -10,8 +10,9 @@ import "./interfaces/IStakeNOON.sol";
 
 /**
  * @title stakeNOONVesting
- * @dev Implementation of the vesting contract for NOON tokens staked in stakeNOON.
- * This contract handles the vesting schedules and claims for boosted staked NOON tokens.
+ * @dev Vesting for VIP stakes: totalAmount = 90% vesting (12mo, quarterly cliffs) + 10% immediate.
+ * calculateVestedAmount returns the vested portion (90%); totalAmount/9 gives the 10% immediate.
+ * calculateCurveSmooth: same curve formula but no cliffs, used for VP over 4-year window.
  */
 contract stakeNOONVesting is Initializable, OwnableUpgradeable, ReentrancyGuardUpgradeable, IStakeNOONVesting {
     // Constants for exponential vesting calculation
@@ -37,6 +38,9 @@ contract stakeNOONVesting is Initializable, OwnableUpgradeable, ReentrancyGuardU
     uint256 public totalVestingAllocation;
     /// @dev Total amount of NOON tokens claimed
     uint256 public totalClaimed;
+
+    /// @dev Cliff period for vesting claims (3 months)
+    uint256 public constant CLIFF_PERIOD = 90 days;
 
     /**
      * @dev Modifier to restrict function access to only the stakeNOON contract
@@ -107,12 +111,13 @@ contract stakeNOONVesting is Initializable, OwnableUpgradeable, ReentrancyGuardU
     }
 
     /**
-     * @dev Calculates the vested amount for a given schedule
-     * @param totalAmount Total amount of tokens in the schedule
-     * @param startTime Start time of the vesting period
-     * @param endTime End time of the vesting period
-     * @param stakeId ID of the associated stake
-     * @return The amount of tokens that have vested
+     * @dev Returns the vested portion (90%) for a schedule. Uses quarterly cliffs over 12 months.
+     *      10% immediate = totalAmount/9 (not included here). Full claimable = vested + totalAmount/9.
+     * @param totalAmount Total in schedule (stakedAmount * 9 = 90% vesting)
+     * @param startTime Start of vesting
+     * @param endTime End of vesting (12 months)
+     * @param stakeId For unlock-time cap when VIP unstaking
+     * @return The vested amount
      */
     function calculateVestedAmount(
         uint256 totalAmount,
@@ -140,6 +145,15 @@ contract stakeNOONVesting is Initializable, OwnableUpgradeable, ReentrancyGuardU
             return totalAmount;
         }
 
+        // Floor elapsed days to nearest cliff period (3-month / 90-day steps)
+        // 0-89 days → 0, 90-179 days → 90, 180-269 days → 180, 270-364 days → 270
+        elapsedDays = (elapsedDays / 90) * 90;
+
+        // If floored to 0, nothing is vested yet
+        if (elapsedDays == 0) {
+            return 0;
+        }
+
         // Calculate time ratio ( equivalent)
         uint256 timeRatio = (elapsedDays * SCALE) / totalDays;
 
@@ -151,8 +165,7 @@ contract stakeNOONVesting is Initializable, OwnableUpgradeable, ReentrancyGuardU
         uint256 linearComponent = (timeRatio * LINEAR_VESTING_PERCENTAGE) / 100; // 0.27
 
         // Combine components and scale to total amount
-        uint256 combinedRatio = cubicComponent + linearComponent;
-        uint256 vestedAmount = (totalAmount * combinedRatio) / SCALE;
+        uint256 vestedAmount = (totalAmount * (cubicComponent + linearComponent)) / SCALE;
 
         // Ensure we don't exceed the total amount
         if (vestedAmount > totalAmount) {
@@ -160,6 +173,36 @@ contract stakeNOONVesting is Initializable, OwnableUpgradeable, ReentrancyGuardU
         }
 
         return vestedAmount;
+    }
+
+    /**
+     * @dev Same curve (t/T)^3*0.73 + (t/T)*0.27 but without cliffs. Used for VP over 4-year window.
+     * @param totalAmount Base amount (baseVP for stakeNOON)
+     * @param startTime Window start (stakeDate)
+     * @param endTime Window end (stakeDate + 4 years)
+     * @return Amount scaled by smooth curve (0 at start, full at end)
+     */
+    function calculateCurveSmooth(
+        uint256 totalAmount,
+        uint256 startTime,
+        uint256 endTime
+    ) public view returns (uint256) {
+        if (block.timestamp <= startTime) return 0;
+
+        uint256 actualEnd = block.timestamp < endTime ? block.timestamp : endTime;
+        uint256 elapsed = actualEnd - startTime;
+        uint256 total = endTime - startTime;
+        if (elapsed >= total) return totalAmount;
+
+        // Smooth: use elapsed/total directly, no cliff flooring
+        uint256 timeRatio = (elapsed * SCALE) / total;
+
+        uint256 cubicComponent =
+            (((timeRatio * timeRatio * timeRatio) / (SCALE * SCALE)) * CUBIC_VESTING_PERCENTAGE) / 100;
+        uint256 linearComponent = (timeRatio * LINEAR_VESTING_PERCENTAGE) / 100;
+
+        uint256 vestedAmount = (totalAmount * (cubicComponent + linearComponent)) / SCALE;
+        return vestedAmount > totalAmount ? totalAmount : vestedAmount;
     }
 
     /**

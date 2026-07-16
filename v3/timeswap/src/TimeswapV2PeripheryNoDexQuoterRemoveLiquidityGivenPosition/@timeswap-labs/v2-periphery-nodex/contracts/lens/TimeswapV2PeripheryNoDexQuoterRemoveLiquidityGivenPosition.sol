@@ -113,6 +113,7 @@ contract TimeswapV2PeripheryNoDexQuoterRemoveLiquidityGivenPosition is
         isToken0,
         false
       );
+      tokenAmountWithdrawNotPreferred = tokenAmountWithdrawNotPreferred.min(isToken0 ? token1Balance : token0Balance);
 
       token0AmountWithdraw = isToken0 ? tokenAmountWithdrawPreferred : tokenAmountWithdrawNotPreferred;
       token1AmountWithdraw = isToken0 ? tokenAmountWithdrawNotPreferred : tokenAmountWithdrawPreferred;

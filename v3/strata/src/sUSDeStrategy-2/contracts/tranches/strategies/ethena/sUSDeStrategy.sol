@@ -1,20 +1,16 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: BUSL-1.1
 pragma solidity ^0.8.28;
 
 import { Math } from "@openzeppelin/contracts/utils/math/Math.sol";
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import { IERC4626 } from "@openzeppelin/contracts/interfaces/IERC4626.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-
-
 import { IErrors } from "../../interfaces/IErrors.sol";
-import { IStrategy } from "../../interfaces/IStrategy.sol";
 import { IStrataCDO } from "../../interfaces/IStrataCDO.sol";
 import { IERC20Cooldown, IUnstakeCooldown } from "../../interfaces/cooldown/ICooldown.sol";
-
 import { Strategy } from "../../Strategy.sol";
 
-contract sUSDeStrategy is IStrategy, Strategy {
+contract sUSDeStrategy is Strategy {
 
     IERC4626 public immutable sUSDe;
     IERC20 public immutable USDe;
@@ -119,13 +115,16 @@ contract sUSDeStrategy is IStrategy, Strategy {
      */
     function reduceReserve (address token, uint256 tokenAmount, address receiver) external onlyCDO {
         if (token == address(sUSDe)) {
-            erc20Cooldown.transfer(sUSDe, address(cdo), receiver, tokenAmount, 0);
+            erc20Cooldown.transfer(sUSDe, receiver, receiver, tokenAmount, 0);
             return;
         }
         if (token == address(USDe)) {
             // tokenAmount is in USDe, convert to sUSDe shares (Rounding.Floor/in favor of protocol) and trigger unstaking
             uint256 shares = sUSDe.convertToShares(tokenAmount);
-            unstakeCooldown.transfer(sUSDe, address(cdo), receiver, shares);
+            if (shares == 0) {
+                revert ZeroAmount();
+            }
+            unstakeCooldown.transfer(sUSDe, receiver, receiver, shares);
             return;
         }
         revert UnsupportedToken(token);

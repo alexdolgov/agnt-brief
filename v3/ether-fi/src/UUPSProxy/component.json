@@ -1,0 +1,138 @@
+{
+  "component": "UUPSProxy",
+  "main_contract": "UUPSProxy",
+  "source_entry_count": 8,
+  "source_file_count": 8,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/UUPSProxy\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 12,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1b7a4c3797236a1c37f8741c0be35c2c72736fff",
+      "is_proxy": true,
+      "implementation_address": "0x9d795b303b9da3488fd3a4ca4702c872576bd0c6",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2093bbb221f1d8c7c932c32ee28be6dee4a37a6a",
+      "is_proxy": true,
+      "implementation_address": "0xdc9e0d46bd75aa2837b266715d870b497104fae7",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2ecd155405ca52a5ca0e552981ff44a8252fab81",
+      "is_proxy": true,
+      "implementation_address": "0x19c10a7e39d5457c4a3cb2c8909297d6020594d7",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x35e7d6fef6f72add3c3e39dec6d9ccc29e3345fa",
+      "is_proxy": true,
+      "implementation_address": "0x554b2a0c78840bbd4fdb24e198cdd93f99e29456",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x62247d29b4b9becf4bb73e0c722cf6445cfc7ce9",
+      "is_proxy": true,
+      "implementation_address": "0x3a75019f8b09c278d152279d446c97d009e064f3",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6c7c54cfc2225fa985cd25f04d923b93c60a02f8",
+      "is_proxy": true,
+      "implementation_address": "0x1dd43c32f03f8a74b8160926d559d34358880a89",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x73f7b1184b5cd361cc0f7654998953e2a251dd58",
+      "is_proxy": true,
+      "implementation_address": "0x408de8d339f40086c5643ee4778e0f872ab5e423",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x89e45081437c959a827d2027135bc201ab33a2c8",
+      "is_proxy": true,
+      "implementation_address": "0xcb6e9a5943946307815eadf3bedc49fe30290ca8",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9a8c5046a290664bf42d065d33512fe403484534",
+      "is_proxy": true,
+      "implementation_address": "0xd3f3480511fb25a3d86568b6e1efba09d0adeebf",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcfc6d9bd7411962bfe7145451a7ef71a24b6a7a2",
+      "is_proxy": true,
+      "implementation_address": "0xe87797a1afb329216811dfa22c87380128ca17d8",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdadef1ffbfeaab4f68a9fd181395f68b4e4e7ae0",
+      "is_proxy": true,
+      "implementation_address": "0x6bd191582f40012b2f2cdf66bd3d32bde41191f7",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfbfe6b9cee0e555bad7e2e7309effc75200cbe38",
+      "is_proxy": true,
+      "implementation_address": "0x3f313f0a856ae12b0a16178e29b6ada84c256952",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "component": "AmpleEarnCrossChainRouter",
+  "main_contract": "AmpleEarnCrossChainRouter",
+  "source_entry_count": 29,
+  "source_file_count": 29,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AmpleEarnCrossChainRouter\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-143",
+      "chain_id": 143,
+      "address": "0xc9086278b317d6316151945d720ce7b602fbe463",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0xc9086278b317d6316151945d720ce7b602fbe463",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402236"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xf132654d677034c804cfb6432d27526088deb0c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xcab6a41090e274efe7fe64cf0ec906f413686d36",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-747474",
+      "chain_id": 747474,
+      "address": "0x7beb2204fd629bf686ce85c640a5bcd66b392e65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "402245"
+    }
+  ]
+}

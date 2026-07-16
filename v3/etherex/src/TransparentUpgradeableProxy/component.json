@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 4,
+  "deployment_count": 6,
   "audited": true,
   "audits_covering": [
     "https://cantina.xyz/portfolio/48fc9b98-ded3-43fa-80a2-5aedb3a5a51e"
@@ -25,6 +25,16 @@
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x3950d9b43c77cf5e165ee9aa5c59efdc5a542dc3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394150"
     },
     {
       "chain": "linea",
@@ -55,6 +65,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "394160"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xdc78e9400ba73dad459b6179b06e1e70853d384e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394168"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # kpk — deployments
 
-23 verified deployment(s) across 23 component(s).
+25 verified deployment(s) across 25 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -14,6 +14,7 @@
 | ethereum | `0x305bdb829066c9ce15d5a2af0c4267b326c8a1cf` | ezETH_PriceOracle | impl | unknown | no |
 | ethereum | `0x35b2aae4de9e66cd6d86fc2ed360e9bcb79a4561` | wstETH_PriceOracle | impl | unknown | no |
 | ethereum | `0x38ef95d5f8b7a276a5c1a38fdc358d977c88ab42` | KpkShares | impl | unknown | no |
+| ethereum | `0x38f6a1b46144faee6a6d9f79d8de264c18e23848` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0x45006c280bf3dc44d7d370c9a801c95ec501aa3e` | Aura | impl | unknown | no |
 | ethereum | `0x5e7a6154ace2ec453de9527d7f81b13e7b5e5b59` | weETH_PriceOracle | impl | unknown | no |
 | ethereum | `0x70dd216ccd75551a170e361bebd33db64fc0cfae` | CrossRatePriceAdapter | impl | unknown | no |
@@ -24,6 +25,7 @@
 | ethereum | `0x8ecc77db1f9d2b1dfe3948b53d4d0e6c1569d50e` | StakeWiseV3OsTokenBalanceOracle | impl | unknown | no |
 | ethereum | `0x957d726b1848d074fc0208017023b64f393c5bfd` | cbETH_PriceOracle | impl | unknown | no |
 | ethereum | `0x9c2ea278a490284d775bdd7899972a35e86f9713` | eETH_PriceOracle | impl | unknown | no |
+| ethereum | `0xa57a641417fe2703c5364c2f57f35297b16189a5` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0xb812cc304cb417b635470681160e75cffb0006b0` | CapBalanceOracle | impl | unknown | no |
 | ethereum | `0xc73ed3f07e2d1d6c59294936c12048dae2b8cbe7` | syrupUSDC_PriceOracle | impl | unknown | no |
 | ethereum | `0xde04bb0a8fd927c137547401f30213fcc7607d63` | sUSDe_PriceOracle | impl | unknown | no |

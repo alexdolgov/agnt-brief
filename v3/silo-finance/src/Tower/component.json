@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Tower\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 4,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -51,6 +51,16 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd13921239e3832fdc4141fde544d3d058b529a5d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null,
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

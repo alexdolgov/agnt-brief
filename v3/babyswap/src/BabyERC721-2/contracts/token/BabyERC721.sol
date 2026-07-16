@@ -31,16 +31,6 @@ contract BabyERC721 is ERC721, Ownable {
         _safeMint(to, tokenId, _data);
     }
 
-    function multiMint(address[] memory tos, uint256[] memory tokenIds, bytes memory _data) external onlyOwner {
-        if (false) {
-            _data;
-        }
-        require(tos.length == tokenIds.length, "illegal length");
-        for (uint i = 0; i < tos.length; i ++) {
-            _mint(tos[i], tokenIds[i]);
-        }
-    }
-
     function multiSafeMint(address[] memory tos, uint256[] memory tokenIds, bytes memory _data) external onlyOwner {
         require(tos.length == tokenIds.length, "illegal length");
         for (uint i = 0; i < tos.length; i ++) {

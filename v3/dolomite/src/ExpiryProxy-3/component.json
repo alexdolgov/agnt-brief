@@ -1,0 +1,159 @@
+{
+  "component": "ExpiryProxy-3",
+  "main_contract": "ExpiryProxy",
+  "source_entry_count": 29,
+  "source_file_count": 29,
+  "source_path_remaps": [
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/external/proxies/ExpiryProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-e755181591fd-ExpiryProxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/lib/Types.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-86f6a3e89712-Types.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/lib/Token.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-a4aa5543cda7-Token.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/lib/Time.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-84e2d18d65d5-Time.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/lib/Storage.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-73afabdadc49-Storage.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/lib/Require.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-5830c5c9686c-Require.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/lib/Monetary.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-6d5cbc1e03b5-Monetary.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/lib/Interest.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-8404859bc7eb-Interest.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/lib/EnumerableSet.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-d2dbddd6f723-EnumerableSet.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/lib/DolomiteMarginMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-cea71c9aad9c-DolomiteMarginMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/lib/Decimal.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-db8b225ec9c4-Decimal.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/lib/Cache.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-2037dc953a6b-Cache.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/lib/Bits.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-b6deeb798701-Bits.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/lib/Actions.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-69849e4305df-Actions.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/lib/Account.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-3c7fbd014a19-Account.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/interfaces/IPriceOracle.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-36e7724d3683-IPriceOracle.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/interfaces/IInterestSetter.sol",
+      "exported_path": "__audit_export_path_conflicts__/0020-789d62c355de-IInterestSetter.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/interfaces/IERC20Detailed.sol",
+      "exported_path": "__audit_export_path_conflicts__/0021-19ec1eea3d55-IERC20Detailed.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/protocol/interfaces/IDolomiteMargin.sol",
+      "exported_path": "__audit_export_path_conflicts__/0022-84d684d8155e-IDolomiteMargin.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/external/lib/AccountBalanceLib.sol",
+      "exported_path": "__audit_export_path_conflicts__/0023-9709cee0b38e-AccountBalanceLib.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/external/lib/AccountActionLib.sol",
+      "exported_path": "__audit_export_path_conflicts__/0024-23aa89924a03-AccountActionLib.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/external/interfaces/ILiquidatorAssetRegistry.sol",
+      "exported_path": "__audit_export_path_conflicts__/0025-ff0324d17527-ILiquidatorAssetRegistry.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/external/interfaces/IExpiry.sol",
+      "exported_path": "__audit_export_path_conflicts__/0026-b7e93703569b-IExpiry.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/external/helpers/OnlyDolomiteMargin.sol",
+      "exported_path": "__audit_export_path_conflicts__/0027-21dc19cf422c-OnlyDolomiteMargin.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/external/helpers/LiquidatorProxyBase.sol",
+      "exported_path": "__audit_export_path_conflicts__/0028-88e6dbb1190b-LiquidatorProxyBase.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/home/cdc218/projects/dolomite-protocol-v2/contracts/external/helpers/HasLiquidatorRegistry.sol",
+      "exported_path": "__audit_export_path_conflicts__/0029-0d4dfbb0e1cc-HasLiquidatorRegistry.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ExpiryProxy-3\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x40899e265a7899968f0f153410321b9175730b00",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393740"
+    }
+  ]
+}

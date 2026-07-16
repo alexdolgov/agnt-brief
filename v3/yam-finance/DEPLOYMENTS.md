@@ -1,6 +1,6 @@
 # yam-finance — deployments
 
-24 verified deployment(s) across 24 component(s).
+25 verified deployment(s) across 25 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -16,6 +16,7 @@
 | ethereum | `0x6009a344c7f993b16eba2c673fefd2e07f9be5fd` | YAMLENDPool | impl | unknown | no |
 | ethereum | `0x62702387c2a26c903985e9d078d18c45acae0908` | GovernorAlpha | impl | unknown | no |
 | ethereum | `0x6c3fc1ffdb14d92394f40eec91d9ce8b807f132d` | YAMSNXPool | impl | unknown | no |
+| ethereum | `0x72cfed9293cbfb2bfc7515c413048c697c6c811c` | Migrator | impl | live | no |
 | ethereum | `0x8538e5910c6f80419cd3170c26073ff238048c9e` | YAMCOMPPool | impl | unknown | no |
 | ethereum | `0x86ad8caa66c407d7485b05584b9ac9a7e2371275` | YAMYFIPool | impl | unknown | no |
 | ethereum | `0x8b4f1616751117c38a0f84f9a146cca191ea3ec5` | Timelock | impl | live | no |

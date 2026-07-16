@@ -1,28 +1,59 @@
 {
   "component": "PoolManager",
   "main_contract": "PoolManager",
-  "source_entry_count": 34,
-  "source_file_count": 34,
-  "source_path_remaps": [],
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/PoolManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-c5dc965509bb-PoolManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IRewardManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-47b70b81647f-IRewardManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IGauge.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-133d32a28a51-IGauge.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IBooster.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-4163017d9fa7-IBooster.sol",
+      "reason": "unsafe_path"
+    }
+  ],
   "foundry": {
     "root": ".",
     "config": "foundry.toml",
     "build_command": "forge build --root \"src/PoolManager\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x0d73d31e1e0d4cc266f0805c94f8e2b9b37d4c3a",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xfc0a2ffdea23804494aa1707741e5a6eaa2f8017",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393350"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x98ece0d8abd1f96672a497d3053999df172faa8b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393353"
     }
   ]
 }

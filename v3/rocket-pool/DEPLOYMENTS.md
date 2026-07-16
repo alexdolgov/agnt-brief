@@ -1,6 +1,6 @@
 # rocket-pool — deployments
 
-112 verified deployment(s) across 104 component(s).
+114 verified deployment(s) across 106 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -17,6 +17,7 @@
 | ethereum | `0x0d8d8f8541b12a0e1194b7cc4b6d954b90ab82ec` | RocketNodeStaking | impl | unknown | no |
 | ethereum | `0x0f160f97b274c6152a3d5fa729a4547816a8aaa4` | RocketMegapoolDelegate | impl | unknown | yes |
 | ethereum | `0x12759f8df234f8f2cddb3d2ed5604adf9accfc9f` | RocketOvmRebasingPriceMessenger | impl | unknown | no |
+| ethereum | `0x16d5a408e807db8ef7c578279beeee6b228f1c1c` | RocketSwapRouter | impl | live | no |
 | ethereum | `0x17e5063ab2617445e2a249a88409d02f87fbecd9` | LinkedListStorage | impl | unknown | yes |
 | ethereum | `0x191c794ae561c09179dec45cc8a8ab93675b5b1a` | RocketNodeDeposit | impl | unknown | yes |
 | ethereum | `0x1a2f00d187c9388fda3bf2dc46a6b4740849ecce` | RocketAuctionManager | impl | live | yes |
@@ -101,18 +102,19 @@
 | ethereum | `0xd4e96ef8eee8678dbff4d535e033ed1a4f7605b7` | RocketSmoothingPool | impl | live | yes |
 | ethereum | `0xd5bffeaa9f373b9c367132772faa0b88e3f0e38b` | RocketMegapoolFactory | impl | live | yes |
 | ethereum | `0xda1ab39e62e0a5297af44c7064e501b0613f0d01` | RocketDAONodeTrustedSettingsMembers | impl | live | yes |
+| ethereum | `0xdd3f50f8a6cafbe9b31a427582963f465e745af8` | RocketBase-9 | impl | live | no |
 | ethereum | `0xde8ab526b19fca2d5a57c4a78b698041717be591` | RocketMinipoolBondReducer | impl | live | yes |
 | ethereum | `0xe228017f77b3e0785e794e4c0a8a6b935bb4037c` | RocketNodeDistributorFactory | impl | live | yes |
-| ethereum | `0xe37f2d9dfb7397caf671df5190a5dfb601028f17` | RocketBase-9 | impl | live | yes |
-| ethereum | `0xe4e2612ee8d7fdc8518faea85770a3b9c886e2f5` | RocketBase-10 | impl | live | yes |
-| ethereum | `0xe535fa45e12d748393c117c6d8eebe1a7d124d95` | RocketBase-11 | impl | live | yes |
+| ethereum | `0xe37f2d9dfb7397caf671df5190a5dfb601028f17` | RocketBase-10 | impl | live | yes |
+| ethereum | `0xe4e2612ee8d7fdc8518faea85770a3b9c886e2f5` | RocketBase-11 | impl | live | yes |
+| ethereum | `0xe535fa45e12d748393c117c6d8eebe1a7d124d95` | RocketBase-12 | impl | live | yes |
 | ethereum | `0xe54b8c641fd96de5d6747f47c19964c6b824d62c` | RocketNodeStaking-2 | impl | live | yes |
 | ethereum | `0xe64ac47b6e2fecfcdea35147fe61af9894a06ba6` | RocketMinipoolPenalty | impl | live | yes |
 | ethereum | `0xe9a114c50f26001443b91079ab5573a90d2d8469` | BeaconStateVerifier | impl | live | yes |
 | ethereum | `0xeaa442df4bb5394c66c8024efb4979bec89eb59a` | RocketDAOSecurityActions | impl | live | yes |
-| ethereum | `0xed0493de30e82be7c16c8925c7204ce9d1136b3a` | RocketBase-12 | impl | live | yes |
+| ethereum | `0xed0493de30e82be7c16c8925c7204ce9d1136b3a` | RocketBase-13 | impl | live | yes |
 | ethereum | `0xedfc7dcae43ff954577a2875a9d805874490ee3e` | RocketNodeStaking-3 | impl | live | yes |
 | ethereum | `0xf2ccd522ba5ffeda28fe0389963845d61f342034` | RocketMegapoolManager | impl | live | yes |
-| ethereum | `0xf6ad771dfb1cd10c66f688e251b5e5c21cbfdf81` | RocketBase-13 | impl | live | yes |
-| ethereum | `0xf824e2d69dc7e7c073162c2bde87da4746d27a0f` | RocketBase-14 | impl | live | yes |
-| ethereum | `0xfb2f2ab63dcf412ced6cde5f4f809215ed0c81aa` | RocketBase-15 | impl | live | yes |
+| ethereum | `0xf6ad771dfb1cd10c66f688e251b5e5c21cbfdf81` | RocketBase-14 | impl | live | yes |
+| ethereum | `0xf824e2d69dc7e7c073162c2bde87da4746d27a0f` | RocketBase-15 | impl | live | yes |
+| ethereum | `0xfb2f2ab63dcf412ced6cde5f4f809215ed0c81aa` | RocketBase-16 | impl | live | yes |

@@ -1,15 +1,18 @@
 # cap — deployments
 
-59 verified deployment(s) across 59 component(s).
+64 verified deployment(s) across 63 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| ethereum | `0x0036c7b9b62c53f47c804a5643f0c09f864bef0b` | ERC1967Proxy-2 | proxy | live | no |
 | ethereum | `0x019697e7832dba533c320c0e2a36faa2da958de9` | EthereumPriceFeedWbtcbtcWithoutRoundsV1 | impl | unknown | no |
 | ethereum | `0x031b51bed47543aa87d2f74ab3b1fcd606c99b24` | CapToken | impl | unknown | no |
 | ethereum | `0x041a85430c75cb8cfc9cbaa59166ff9e575f33d7` | EthereumPriceFeedStrcWithoutRoundsV1 | impl | unknown | no |
 | ethereum | `0x068083069ed92da4c5291dba52d8912abfcc5523` | DSToken | impl | unknown | no |
 | ethereum | `0x0882477e7895bdc5cea7cb1552ed914ab157fe56` | FiatTokenV1 | impl | unknown | no |
+| ethereum | `0x08a728cf4e6b39f4afa059c6ee376103722953ea` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0x09639692ce6ff12a06ca3ae9a24b3aae4cd80dc8` | EthereumPriceFeedUsdxWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x09a3976d8d63728d20dcdfee1e531c206ba91225` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0x09ba943f3b38e0f28e8909a00f3b58135dcd5b06` | EthereumPriceFeedNgiplusFundamentalWithoutRoundsV1 | impl | unknown | no |
 | ethereum | `0x09f9a127fba172c41d8c29e49b3c1326d2eb577e` | EthereumPriceFeedEthfiWithoutRoundsV1 | impl | unknown | no |
 | ethereum | `0x0ad237e4441ca07691c2deec716061881eed8eed` | VaultComposerSync | impl | unknown | no |
@@ -27,6 +30,7 @@
 | ethereum | `0x3401daf2b1f150ef0c709cc0283b5f2e55c3df29` | EthereumPriceFeedSusdxEthFundamentalWithoutRoundsV1 | impl | unknown | no |
 | ethereum | `0x386c93f9f0a8a681c5a3e826063106a2474958ab` | Delegation | impl | unknown | no |
 | ethereum | `0x3d01242aadc0425209544520093e74fd151daeb9` | EthereumPriceFeedXrpWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0x3ed6aa32c930253fc990de58ff882b9186cd0072` | Yearn_V3_Vault | impl | live | no |
 | ethereum | `0x3f145fd2cc3ed0806cae3eba73472e5991f5a721` | EthereumPriceFeedSpkWithoutRoundsV1 | impl | unknown | no |
 | ethereum | `0x3f2c697fcce450a65092eb50ad6f24bd478818de` | EthereumPriceFeedAzndFundamentalWithoutRoundsV1 | impl | unknown | no |
 | ethereum | `0x40ea33ea76fbe35e9fb422edd175b8c8d84a63cc` | EthereumPriceFeedVbillEthereumDailyAccrualWithoutRoundsV1 | impl | unknown | no |
@@ -49,7 +53,7 @@
 | ethereum | `0x8cbde23b1416cac07a52591bba744c744d77a91a` | FiatToken | impl | unknown | no |
 | ethereum | `0x8e3386b2f6084eb1b0988070c3d826995bd175c0` | MorphoChainlinkOracleV2 | impl | unknown | no |
 | ethereum | `0x97e3c432d1c7b765d3daeecf45f7b85dc8c0147a` | EthereumPriceFeedStacFundamentalWithoutRoundsV1 | impl | unknown | no |
-| ethereum | `0x99991c6aabba5a096f24f250b73580f5179b9999` | ERC1967Proxy | proxy | live | yes |
+| ethereum | `0x99991c6aabba5a096f24f250b73580f5179b9999` | ERC1967Proxy-3 | proxy | live | yes |
 | ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | FiatTokenProxy | proxy | unknown | no |
 | ethereum | `0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf` | FiatTokenV2_1 | impl | unknown | no |
 | ethereum | `0xa99c0ae66dd5131ae155f25f42aceb1d1a00ff6f` | Oracle | impl | unknown | no |
@@ -62,4 +66,5 @@
 | ethereum | `0xb90de8357ee4f5c145c159f8e3822ba9b17be4f1` | Harvester | impl | unknown | no |
 | ethereum | `0xc1942a91d84b670d21d424f30fa583f45448e621` | CoverageLens | impl | unknown | no |
 | ethereum | `0xc9e11c60e24bef478cc999fa9fa2d89cc098a86e` | EthereumPriceFeedBfbtcFundamentalWithoutRoundsV1 | impl | unknown | no |
+| ethereum | `0xd8236031d8279d82e615af2bfab5fc0127a329ab` | TimelockController | impl | live | no |
 | ethereum | `0xe7f71d6a24ebc391f5ee57b867ed429eb7bd74f4` | EthereumPriceFeedEthxWithoutRoundsV1 | impl | unknown | no |

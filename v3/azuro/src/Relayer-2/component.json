@@ -10,17 +10,27 @@
     "build_command": "forge build --root \"src/Relayer-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0xe485001661476f0dede323c5d0ca893f96013126",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9340979e5ff72102ff5ec69f78e0e364d92a8d17",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live",
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x68ec35cac94e53032206fcc9ecb03719c0955c0f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

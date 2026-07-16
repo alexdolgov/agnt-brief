@@ -1,6 +1,6 @@
 # pharaoh-exchange — deployments
 
-82 verified deployment(s) across 67 component(s).
+93 verified deployment(s) across 74 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -14,6 +14,7 @@
 | avalanche | `0x088e2efad10f3262e745c6c01f661112f353bb64` | FeeCollector | impl | live | no |
 | avalanche | `0x0b4478e810d48b5882d4019d435a2f864bab4f39` | RamsesV3PositionManager | proxy | live | no |
 | avalanche | `0x12d54ad6daf65d55b029df1b34b260c68fc0ddcf` | TimeLock | impl | live | no |
+| avalanche | `0x13a466998ce03db73abc2d4df3bbd845ed1f28e7` | Pharaoh | impl | live | no |
 | avalanche | `0x15c50acd86be6be893ab57cf4f47d0da7e24d292` | GaugeV3 | impl | live | no |
 | avalanche | `0x19ff41165ad2f6493a8a4f3e9904ae0815d7fcd8` | GaugeV3 | impl | live | no |
 | avalanche | `0x1e1e2a861205767d69a51edf03cf5e3a278437bc` | FeeCollector-2 | impl | live | yes |
@@ -21,15 +22,18 @@
 | avalanche | `0x26e9dbe75aed331e41272bece932ff1b48926ca9` | P33 | impl | live | no |
 | avalanche | `0x272cd330263b85b6c1693c78ed1ad2a972ea4bfb` | AccessHub-4 | impl | live | no |
 | avalanche | `0x282a4fae014862b43535620b4ea81f8ed4c096ec` | AccessHubPhar | impl | live | no |
+| avalanche | `0x3176f6e4be2448c53edd59c27651edfaa74bf483` | Context | proxy | live | no |
 | avalanche | `0x31a8a3f4ca7b74b098d48a47aaa3f03a49925d35` | Voter | impl | live | no |
 | avalanche | `0x3265d621c7d993151c8eb2acd4902cda0499a8a0` | MixedRouteQuoterV1 | impl | live | no |
 | avalanche | `0x34f233f868cdb42446a18562710ee705d66f846b` | VoteModule | impl | live | no |
 | avalanche | `0x3a7aeb3c33922073f4f23207d0ff247e9694a100` | TickLens | impl | live | no |
+| avalanche | `0x3b91972c1ff63296cb824a30997c7e4a982b7ee6` | Context | impl | live | no |
 | avalanche | `0x3f3af1ba2cdceeb618fb57de98d1dbb6483c9e4f` | AccessHubPhar-2 | impl | live | no |
 | avalanche | `0x47a2c15eeeef5018a3e13caf987b235d702c8825` | AutoVault | impl | live | no |
 | avalanche | `0x49128053ae71470a6670895bb932ce19384f3e96` | MockPoolDeployer | impl | live | no |
 | avalanche | `0x4bb1932724c9276992cd02de1742779e00ab5586` | AutoVault-2 | impl | live | no |
 | avalanche | `0x51d6ab0a20a39eb87f10c008910da956349b3d4b` | AutoVault | impl | live | no |
+| avalanche | `0x5363e33b444ccfd438204266d025a26c048f0f7b` | Voter-2 | impl | live | no |
 | avalanche | `0x5acc35397d2ce81ac54a4b1c6d9e1fb29f8ec6c6` | UniversalRouter | impl | live | no |
 | avalanche | `0x5af7fad6e813fb4637e5cfacc7dde6c5445125ac` | FeeDistributorFactory | impl | live | no |
 | avalanche | `0x5ca009013f6b898d134b6798b336a4592f3b4af2` | RamsesV3Pool | impl | live | yes |
@@ -37,7 +41,8 @@
 | avalanche | `0x640d2ef09d550f4c79bf897412876d7b4a8867e6` | P33 | impl | live | no |
 | avalanche | `0x64963852966aa7ff2258434f361ec933bf0eaf03` | AutomatedFeeNotifier-2 | impl | live | no |
 | avalanche | `0x65b9016c376604fe0af38c1e336ffcec0f8ecbbd` | RamsesV3Pool | impl | live | yes |
-| avalanche | `0x677e397d76cc2135bd15f1821b8cbd9aa7ab35f2` | Voter-2 | impl | live | no |
+| avalanche | `0x660862d49e92f80f29e56c2770027e8d83e97882` | Context | proxy | live | no |
+| avalanche | `0x677e397d76cc2135bd15f1821b8cbd9aa7ab35f2` | Voter-3 | impl | live | no |
 | avalanche | `0x684b340014556d15d754b812ef7d1b134b42289c` | DLMMFeeCollector | impl | live | no |
 | avalanche | `0x6a4113ed0915bcf5e48e758e8f4cebffc07c66f9` | RamsesV3Pool | impl | live | yes |
 | avalanche | `0x6c6fc88d8c06c7e29225dd00d422280e20a6eeb0` | AccessHub-5 | impl | live | no |
@@ -46,7 +51,8 @@
 | avalanche | `0x82a411555f4262769077cb9b8775c897a1185222` | FeeCollector-3 | impl | live | no |
 | avalanche | `0x88451ac528cdf5ca4a853407db494455ff0c91e6` | AccessHub | impl | live | no |
 | avalanche | `0x906b9802271e3752e6d6e6f5813430c71881dfdb` | RamsesTreasuryHelper-3 | impl | live | no |
-| avalanche | `0x9334f3ce4569e04437665daa254e0189d145af21` | Voter-3 | impl | live | no |
+| avalanche | `0x922b9ca8e2207bfb850b6ff647c054d4b58a2aa7` | Context | proxy | live | no |
+| avalanche | `0x9334f3ce4569e04437665daa254e0189d145af21` | Voter-4 | impl | live | no |
 | avalanche | `0x9bfe3108cc16d17a9ec65545a0f50b2ca1c970c0` | RamsesV3Pool-2 | impl | live | no |
 | avalanche | `0x9cee04bdce127da7e448a333f006defb3d5e38cc` | Router | impl | live | no |
 | avalanche | `0x9daea9462ff3dd535643e07be587517a9790acc5` | SwapRouter-2 | impl | live | no |
@@ -61,27 +67,32 @@
 | avalanche | `0xab559850a251a6ebdba31076019ccf44165309d8` | MevModule | impl | live | no |
 | avalanche | `0xadae75447d112cfc401c952744de3e6d32456465` | Quoter | impl | live | no |
 | avalanche | `0xae6e5c62328ade73ceefd42228528b70c8157d0d` | RamsesV3Factory | impl | live | yes |
-| avalanche | `0xaf6c9abbeebc6f78bc77bd65fbc624da10af4019` | Voter-4 | impl | live | no |
+| avalanche | `0xaf6c9abbeebc6f78bc77bd65fbc624da10af4019` | Voter-5 | impl | live | no |
 | avalanche | `0xaf9440faeab0026dc00f1461be1c8fbd11d4c011` | RamsesTreasuryHelper | impl | live | no |
 | avalanche | `0xb7297301b7cc659bb96d51754643a0df6eea2138` | QuoterV2 | impl | live | no |
 | avalanche | `0xbbe734f62b31ff396e5a1210e3f22b6e891ebb32` | AutomatedFeeNotifier | impl | live | no |
 | avalanche | `0xc2a1044f8f67e65fed15644a76725b2637fc9eba` | AccessHub | impl | live | no |
 | avalanche | `0xc8b8fcbdb5c019d7802ffb0b39603395d7d3915c` | SwapRouter-3 | impl | live | no |
+| avalanche | `0xc997575204290ff7106ab8b2bcfa7e7dea43d783` | DLMMRewarder-3 | impl | live | no |
 | avalanche | `0xcda4195a11a9497114dea8360f8bf8ff8122ca80` | P33-2 | impl | live | no |
+| avalanche | `0xd1b27ccaf2a4ddca0ac32181374c70282492d843` | SafeProxy | proxy | live | no |
 | avalanche | `0xd23f124bbbc958bcddc0ce624042b48154222fde` | Minter | impl | live | no |
+| avalanche | `0xd28467ede84cede6b05070779e39eaff4988548c` | DLMMRewarder-4 | proxy | live | no |
 | avalanche | `0xd57ec4a690dfd7ca1b6295aa726f6f00acd057e6` | RamsesTreasuryHelper-5 | impl | live | no |
 | avalanche | `0xd8ee2b6b71949ebcdd33e50546b163cf8e4d4bd8` | P33-3 | impl | live | no |
 | avalanche | `0xd9a63c24f69f015ebe3ff61817645dc7cc5906b1` | GaugeFactory | impl | unknown | no |
 | avalanche | `0xdb73614c843ee0723cdbbe801a19a680590da90e` | GaugeV3 | impl | live | no |
 | avalanche | `0xddae0aa4e93be4936c1bcc12d3001b35c75fef40` | DLMMQuoter | impl | live | no |
 | avalanche | `0xe565310baa582c768a77a3bb7f86a892ef07d04e` | GaugeV3-2 | proxy | live | yes |
-| avalanche | `0xe59b0f65e11e5615579f290a11c7e3b3b312d82a` | Voter-5 | impl | live | no |
-| avalanche | `0xe7187f0d21e1039e8fd8346aa4f9a7c9f99975c4` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| avalanche | `0xe59b0f65e11e5615579f290a11c7e3b3b312d82a` | Voter-6 | impl | live | no |
+| avalanche | `0xe7187f0d21e1039e8fd8346aa4f9a7c9f99975c4` | Context | proxy | live | no |
+| avalanche | `0xe8164ea89665dab7a553e667f81f30cfda736b9a` | XPhar | impl | live | no |
 | avalanche | `0xeb480050b016f6c6d45203d2346b68bddda23d4d` | DLMMFactory | impl | live | no |
 | avalanche | `0xec8962784e464e32ed6a97c59850fe36bf5fdc81` | RamsesTreasuryHelper-6 | impl | live | no |
 | avalanche | `0xf01449c0ba930b6e2caca3def3ccbd7a3e589534` | RamsesV3Pool | impl | live | yes |
-| avalanche | `0xf1996b044a8572a6eb8d96540d479f91a3120ab7` | DLMMRewarder-3 | impl | live | no |
-| avalanche | `0xf2593b9efc323e19551eb69e9b76b6e5c05984b1` | RamsesTreasuryHelper-7 | impl | live | no |
+| avalanche | `0xf03ce48d5e8dedff1012dcd32a3352f7cc90a1f4` | RamsesTreasuryHelper-7 | impl | live | no |
+| avalanche | `0xf1996b044a8572a6eb8d96540d479f91a3120ab7` | DLMMRewarder-5 | impl | live | no |
+| avalanche | `0xf2593b9efc323e19551eb69e9b76b6e5c05984b1` | RamsesTreasuryHelper-8 | impl | live | no |
 | avalanche | `0xf296bb0eaeab6703d876b1bfe9d5693ef302b855` | UniswapInterfaceMulticall | impl | live | no |
 | avalanche | `0xf41253c1258a7a3c291e695158267b173c26d710` | DLMMPool | impl | live | no |
 | avalanche | `0xff0855a9027f5f5c2bbacc4aac477afbeeefbea9` | RamsesV3Pool | impl | live | yes |

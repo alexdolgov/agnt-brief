@@ -1,17 +1,38 @@
 # spiko — deployments
 
-55 verified deployment(s) across 9 component(s).
+80 verified deployment(s) across 11 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x021289588cd81dc1ac87ea91e91607eef68303f5` | ERC1967Proxy | proxy | live | no |
+| arbitrum | `0x0c709396739b9cfb72bcea6ac691ce0ddf66479c` | ERC1967Proxy-2 | impl | live | no |
+| arbitrum | `0x0e389c83bc1d16d86412476f6103027555c03265` | ERC1967Proxy | impl | live | no |
+| arbitrum | `0x1412632f2b89e87bfa20c1318a43ced25f1d7b76` | ERC1967Proxy-2 | impl | live | no |
+| arbitrum | `0x15ea0ec460a0e6847ec0aa8d50a84b3a51b95f74` | ERC1967Proxy | impl | live | no |
 | arbitrum | `0x17e2b2eed8e07328302a7b4135ed1b2dc57c447c` | SpikoDefensiveSenderReceiver-2 | impl | live | no |
 | arbitrum | `0x1b952b0db5c39ef801fedd1cbbef47d404689b1e` | ERC1967Proxy-2 | impl | live | no |
+| arbitrum | `0x3868d4e336d14d38031cf680329d31e4712e11cc` | ERC1967Proxy | impl | live | no |
+| arbitrum | `0x4640a8bf08d5917dcaef42edb14d3e06e1b23f39` | ERC1967Proxy | impl | live | no |
 | arbitrum | `0x4c3ba0eae5ab65c9510769a2877cf4d93330bc87` | ERC1967Proxy | impl | live | no |
+| arbitrum | `0x4f33acf823e6eeb697180d553ce0c710124c8d59` | ERC1967Proxy | impl | live | no |
 | arbitrum | `0x77926af72cadbc6d6a308c6a6b6aaa5fbdf43218` | ERC1967Proxy-2 | impl | live | no |
+| arbitrum | `0x78f59adebdf873c5c3b351dde1c196d1b0501579` | ERC1967Proxy-2 | impl | live | no |
+| arbitrum | `0x7a16df1c2cd8b9eeb9ed9942c82c2e7c90bb93db` | ERC1967Proxy | impl | live | no |
+| arbitrum | `0x8226e968efd24d9baf156eca15179d1cc1bfd828` | ERC1967Proxy | impl | live | no |
 | arbitrum | `0x8513fcdd66e148e4b5e4940be21f50c20d112731` | SpikoDefensiveSenderReceiver | impl | live | no |
+| arbitrum | `0x8d18e2cfc4c47a9ada7baa4e1efebf5ef366993e` | ERC1967Proxy-2 | impl | live | no |
+| arbitrum | `0x903d5990119bc799423e9c25c56518ba7dd19474` | ERC1967Proxy | impl | live | no |
+| arbitrum | `0x970e2adc2fdf53aea6b5fa73ca6dc30eafedfe3d` | ERC1967Proxy | impl | live | no |
+| arbitrum | `0x97e7962bcd091e7ecfb583fc96289b1e1553ac6e` | ERC1967Proxy-2 | impl | live | no |
+| arbitrum | `0x99f70a0e1786402a6796c6b0aa997ef340a5c6da` | ERC1967Proxy | impl | live | no |
+| arbitrum | `0xa260d72df8ff2696f3a8d0be46b7bc4d743be764` | ERC1967Proxy | impl | live | no |
 | arbitrum | `0xa390a927d0ea7438cf8f3409791b540d56a6ddcd` | SpikoDefensiveSenderReceiver | impl | live | no |
+| arbitrum | `0xa925c217e4c1c82ee721ebd496d3863d5c2d829a` | ERC1967Proxy | impl | live | no |
 | arbitrum | `0xaead1f7c9b189816cb845363d142cfcf339084c2` | Minter | impl | live | no |
+| arbitrum | `0xb114e0e00622ffe5800004a98c8e01cd2c0c393b` | ERC1967Proxy-2 | impl | live | no |
+| arbitrum | `0xbe023308ac2ef7e1c3799f4e6a3003ee6d342635` | ERC1967Proxy-2 | impl | live | no |
+| arbitrum | `0xcbeb19549054cc0a6257a77736fc78c367216ce7` | ERC1967Proxy | impl | live | no |
+| arbitrum | `0xe4880249745eac5f1ed9d8f7df844792d560e750` | ERC1967Proxy | impl | live | no |
 | base | `0x0bb754d8940e283d9ff6855ab5dafbc14165c059` | ERC1967Proxy-2 | proxy | live | no |
 | base | `0x1b952b0db5c39ef801fedd1cbbef47d404689b1e` | SpikoDefensiveSenderReceiver | impl | live | no |
 | base | `0x2f6c0e5e06b43512706a9cdf66cd21f723fe0ec3` | Proxy | proxy | live | no |
@@ -25,6 +46,7 @@
 | base | `0xa390a927d0ea7438cf8f3409791b540d56a6ddcd` | SpikoDefensiveSenderReceiver | impl | live | no |
 | base | `0xa8de1f55aa0e381cb456e1dcc9ff781ea0079068` | ERC1967Proxy | proxy | live | no |
 | base | `0xaead1f7c9b189816cb845363d142cfcf339084c2` | ERC1967Proxy | proxy | live | no |
+| base | `0xd3f5f1524e1a472b51374a3ff41b8936eb5b658e` | PermissionManager | impl | live | no |
 | base | `0xd879846cbe20751bde8a9342a3cca00a3e56ca47` | Proxy | proxy | live | no |
 | base | `0xd9aa2300e126869182dfb6ecf54984e4c687f36b` | Proxy | proxy | live | no |
 | base | `0xda5599f04e9b437c8394b0c2bc68b502a66ebfe8` | ERC1967Proxy | proxy | live | no |
@@ -41,8 +63,10 @@
 | ethereum | `0x5ed5a75eeed1934ea060186e35187eaa73331366` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0xa0769f7a8fc65e47de93797b4e21c073c117fc80` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0xa2850a72abe63d0c7258910564ed56fcfd355893` | Token | impl | live | no |
+| ethereum | `0xbd6ad96f51e8d732811587468d0e2f9efa55f605` | MultiATM | impl | live | no |
 | ethereum | `0xc273986a91e4bfc543610a5cb5860b7cfefb6cc0` | Proxy | proxy | live | no |
 | ethereum | `0xcbade7d9bdee88411cb6cbcbb29952b742036992` | ERC1967Proxy-2 | proxy | live | no |
+| ethereum | `0xd3f5f1524e1a472b51374a3ff41b8936eb5b658e` | PermissionManager | impl | live | no |
 | ethereum | `0xda5599f04e9b437c8394b0c2bc68b502a66ebfe8` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0xe4880249745eac5f1ed9d8f7df844792d560e750` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0xf695df6c0f3bb45918a7a82e83348fc59517734e` | ERC1967Proxy | proxy | live | no |
@@ -57,5 +81,6 @@
 | polygon | `0x9de2b2dcdcf43540e47143f28484b6d15118f089` | Proxy | proxy | live | no |
 | polygon | `0xa0769f7a8fc65e47de93797b4e21c073c117fc80` | ERC1967Proxy | proxy | live | no |
 | polygon | `0xaead1f7c9b189816cb845363d142cfcf339084c2` | ERC1967Proxy | proxy | live | no |
+| polygon | `0xd3f5f1524e1a472b51374a3ff41b8936eb5b658e` | PermissionManager | impl | live | no |
 | polygon | `0xda5599f04e9b437c8394b0c2bc68b502a66ebfe8` | ERC1967Proxy | proxy | live | no |
 | polygon | `0xe4880249745eac5f1ed9d8f7df844792d560e750` | ERC1967Proxy | proxy | live | no |

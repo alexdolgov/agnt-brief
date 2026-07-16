@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.17;
+pragma solidity ^0.8.17;
 
 import "./base/Admin.sol";
 
@@ -19,9 +19,9 @@ library SickleRegistryEvents {
 contract SickleRegistry is Admin {
     /// ERRORS ///
 
-    error ArrayLengthMismatch();
-    error FeeAboveMaxLimit();
-    error InvalidReferralCode();
+    error ArrayLengthMismatch(); // 0xa24a13a6
+    error FeeAboveMaxLimit(); // 0xd6cf7b5e
+    error InvalidReferralCode(); // 0xe55b4629
 
     /// STORAGE ///
 

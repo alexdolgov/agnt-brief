@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/ThBillOFT\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,26 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "404176"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404179"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404182"
     }
   ]
 }

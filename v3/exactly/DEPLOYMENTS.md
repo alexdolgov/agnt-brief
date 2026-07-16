@@ -1,6 +1,6 @@
 # exactly — deployments
 
-25 verified deployment(s) across 15 component(s).
+26 verified deployment(s) across 16 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -27,10 +27,6 @@
 | optimism | `0x0810a8c5a2365943300523f4f947ae1546d4c076` | EXA | impl | live | no |
 | optimism | `0x3427a595ed6e05cc2d8115e28bad151cb879616e` | ExaAccountFactory | impl | live | no |
 | optimism | `0x3c3a02b4e7576ed584e71a29d311084d44ed3442` | EXA | impl | live | no |
+| optimism | `0xbea586a167853adddef12818f264f1f9823fbc18` | Contract | impl | live | yes |
 | optimism | `0xcbeaaf42cc39c17e84cbefe85160995b515a9668` | ExaAccountFactory-2 | impl | live | no |
 | optimism | `0xd5f8c9d87b7691449dec453d041d9054e0fdd228` | Refunder | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- optimism `0xbea586a167853adddef12818f264f1f9823fbc18`

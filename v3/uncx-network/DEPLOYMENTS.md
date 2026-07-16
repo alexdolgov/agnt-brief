@@ -1,6 +1,6 @@
 # uncx-network — deployments
 
-91 verified deployment(s) across 91 component(s).
+92 verified deployment(s) across 92 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -31,6 +31,7 @@
 | avalanche | `0xaff90532e2937ff290009521e7e120ed062d4f34` | Cliff | impl | unknown | no |
 | avalanche | `0xe5cddafd0f7af3deaf4bd213bbaee7a5927ab7e7` | Maximillion | impl | unknown | no |
 | avalanche | `0xfdf50fea3527fad31fa840b748fd3694ae8a47cc` | JoeLens | impl | unknown | no |
+| base | `0x231278edd38b00b07fbd52120cef685b9baebcc1` | UNCX_LiquidityLocker_UniV3 | impl | live | no |
 | base | `0x80c7dd17b01855a6d2347444a0fcc36136a314de` | NonfungiblePositionManager | proxy | unknown | no |
 | base | `0x91934e488809be1d03646c035f45c8d8947d9885` | FeeOnTransferDetector | impl | unknown | no |
 | base | `0xf4d73326c13a4fc5fd7a064217e12780e9bd62c3` | TickLens | impl | unknown | no |

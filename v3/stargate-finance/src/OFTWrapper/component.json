@@ -1,0 +1,68 @@
+{
+  "component": "OFTWrapper",
+  "main_contract": "OFTWrapper",
+  "source_entry_count": 25,
+  "source_file_count": 25,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OFTWrapper\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-50",
+      "chain_id": 50,
+      "address": "0x936ab8c674bcb567cd5deb85d8a216494704e9d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399546"
+    },
+    {
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0x824d8fcdc36e81618377d140bec12c3b7e4e4cba",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x2d93fbce4cffc15dd385a80b3f4cc1d4e76c38b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-33139",
+      "chain_id": 33139,
+      "address": "0xc6bc407706b7140ee8eef2f86f9504651b63e7f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399645"
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x8731d54e9d02c286767d56ac03e8037c07e01e98",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399668"
+    }
+  ]
+}

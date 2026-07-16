@@ -1,0 +1,38 @@
+{
+  "component": "KIBToken-2",
+  "main_contract": "KIBToken",
+  "source_entry_count": 34,
+  "source_file_count": 34,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/KIBToken-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3cd09352eebe8b9e302b83a59d90d19031290f80",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405479"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x94abc2880f0205ff170d0e6e20a2d9e35a851ab3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405481"
+    }
+  ]
+}

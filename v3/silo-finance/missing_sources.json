@@ -8,48 +8,6 @@
       "chain": "avalanche",
       "address": "0x01c6dc3bd8b175a9494f00b6d224b14edc67cd34",
       "canonical_source_address": "0x0094c5d6b460a2efff23420db097921bcc2b2a2c"
-    },
-    {
-      "chain_id": 43114,
-      "chain": "avalanche",
-      "address": "0x3d1fe4da8812f506f65ffd5e61e2c3f6a01ccd39",
-      "canonical_source_address": "0x03e03b56bd24e0b3b206403596a40cf48fb54279"
-    },
-    {
-      "chain_id": 43114,
-      "chain": "avalanche",
-      "address": "0x51eaf3a6f4ed34629924519430a30ba31bba93fb",
-      "canonical_source_address": "0x0094c5d6b460a2efff23420db097921bcc2b2a2c"
-    },
-    {
-      "chain_id": 43114,
-      "chain": "avalanche",
-      "address": "0x91cdec0940ba6678e2d56a034b7794b0bacab6ad",
-      "canonical_source_address": "0x0b6c649ffba713e45958a2c394ed8b422ae6a456"
-    },
-    {
-      "chain_id": 43114,
-      "chain": "avalanche",
-      "address": "0xa87a0475a40266eef359ef330963811babbd4145",
-      "canonical_source_address": "0x1ced03b5a0650d5ecb5d690e1e7f8e2afb90045a"
-    },
-    {
-      "chain_id": 43114,
-      "chain": "avalanche",
-      "address": "0xcfbebcf6bc36f631cbb1011633ffc014db3db22d",
-      "canonical_source_address": "0x128b7b7457e35e201da5024c9e8d024e1b0af94b"
-    },
-    {
-      "chain_id": 43114,
-      "chain": "avalanche",
-      "address": "0xd13921239e3832fdc4141fde544d3d058b529a5d",
-      "canonical_source_address": "0x597d275faa31e7eb8261b33bd32563fcf3f9fff7"
-    },
-    {
-      "chain_id": 43114,
-      "chain": "avalanche",
-      "address": "0xde67a8bbd0b3118b21ede247588444af374450cf",
-      "canonical_source_address": "0x03e03b56bd24e0b3b206403596a40cf48fb54279"
     }
   ]
 }

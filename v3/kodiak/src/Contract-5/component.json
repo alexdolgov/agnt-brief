@@ -1,0 +1,30 @@
+{
+  "component": "Contract-5",
+  "main_contract": "Contract",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-5\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://584145091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FOSwqNrRJ9Xh6jO57yoLm%2Fuploads%2FEGTuI70lM40vmr8YwZQT%2F%5BKALOS%5D%20KODIAK%20Audit%20Report%20(ENG).pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x89ff70257bc747f310bb538eefc46add763e75d8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

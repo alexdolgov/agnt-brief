@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.17;
+pragma solidity ^0.8.17;
 
 import "@openzeppelin/contracts/proxy/utils/Initializable.sol";
 
@@ -18,11 +18,11 @@ abstract contract SickleStorage is Initializable {
     /// ERRORS ///
 
     /// @notice Thrown when the caller is not the owner of the Sickle contract
-    error NotOwnerError();
+    error NotOwnerError(); // 0x74a21527
 
     /// @notice Thrown when the caller is not a strategy contract or the
     /// Flashloan Stub
-    error NotStrategyError();
+    error NotStrategyError(); // 0x4581ba62
 
     /// STORAGE ///
 
@@ -48,11 +48,12 @@ abstract contract SickleStorage is Initializable {
     /// INITIALIZATION ///
 
     /// @param owner_ Address of the owner of this Sickle contract
-    function _SickleStorage_initialize(address owner_)
-        internal
-        onlyInitializing
-    {
+    function _SickleStorage_initialize(
+        address owner_,
+        address approved_
+    ) internal onlyInitializing {
         owner = owner_;
+        approved = approved_;
     }
 
     /// WRITE FUNCTIONS ///

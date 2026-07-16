@@ -41,13 +41,12 @@ import '@openzeppelin/contracts/math/SafeMath.sol';
 import '@openzeppelin/contracts/access/Ownable.sol';
 import '@openzeppelin/contracts/utils/Address.sol';
 import '@openzeppelin/contracts/utils/Pausable.sol';
-import '@openzeppelin/contracts/utils/ReentrancyGuard.sol';
 import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
 
 import './libraries/DecimalMath.sol';
 import './interfaces/IWooAccessManager.sol';
 
-contract WooStakingVault is ERC20, Ownable, ReentrancyGuard, Pausable {
+contract WooStakingVault is ERC20, Ownable, Pausable {
     using SafeERC20 for IERC20;
     using SafeMath for uint256;
     using DecimalMath for uint256;
@@ -111,11 +110,8 @@ contract WooStakingVault is ERC20, Ownable, ReentrancyGuard, Pausable {
 
     /* ----- External Functions ----- */
 
-    function deposit(uint256 amount) external nonReentrant whenNotPaused {
-        // require(amount > 0, 'WooStakingVault: amount_CAN_NOT_BE_ZERO');
-        if (amount == 0) {
-            return;
-        }
+    function deposit(uint256 amount) external whenNotPaused {
+        require(amount > 0, 'WooStakingVault: amount_CAN_NOT_BE_ZERO');
 
         uint256 balanceBefore = balance();
         TransferHelper.safeTransferFrom(address(stakedToken), msg.sender, address(this), amount);
@@ -124,7 +120,6 @@ contract WooStakingVault is ERC20, Ownable, ReentrancyGuard, Pausable {
 
         uint256 xTotalSupply = totalSupply();
         uint256 shares = xTotalSupply == 0 ? amount : amount.mul(xTotalSupply).div(balanceBefore);
-        require(shares > 0, '!shares');
 
         // must be executed before _mint
         _updateCostSharePrice(amount, shares);
@@ -134,14 +129,14 @@ contract WooStakingVault is ERC20, Ownable, ReentrancyGuard, Pausable {
         emit Deposit(msg.sender, amount, shares);
     }
 
-    function reserveWithdraw(uint256 shares) external nonReentrant {
+    function reserveWithdraw(uint256 shares) external {
         require(shares > 0, 'WooStakingVault: shares_CAN_NOT_BE_ZERO');
         require(shares <= balanceOf(msg.sender), 'WooStakingVault: shares exceed balance');
 
         uint256 currentReserveAmount = shares.mulFloor(getPricePerFullShare()); // calculate reserveAmount before _burn
         uint256 poolBalance = balance();
         if (poolBalance < currentReserveAmount) {
-            // in case reserve amount exceeds pool balance
+            // incase reserve amount exceeds pool balance
             currentReserveAmount = poolBalance;
         }
         _burn(msg.sender, shares);
@@ -155,7 +150,7 @@ contract WooStakingVault is ERC20, Ownable, ReentrancyGuard, Pausable {
         emit ReserveWithdraw(msg.sender, currentReserveAmount, shares);
     }
 
-    function withdraw() external nonReentrant {
+    function withdraw() external {
         UserInfo storage user = userInfo[msg.sender];
 
         uint256 withdrawAmount = user.reserveAmount;
@@ -177,7 +172,7 @@ contract WooStakingVault is ERC20, Ownable, ReentrancyGuard, Pausable {
         emit Withdraw(msg.sender, withdrawAmount, fee);
     }
 
-    function instantWithdraw(uint256 shares) external nonReentrant {
+    function instantWithdraw(uint256 shares) external {
         require(shares > 0, 'WooStakingVault: shares_CAN_NOT_BE_ZERO');
         require(shares <= balanceOf(msg.sender), 'WooStakingVault: shares exceed balance');
 

@@ -1,0 +1,38 @@
+{
+  "component": "BDeployer",
+  "main_contract": "BDeployer",
+  "source_entry_count": 18,
+  "source_file_count": 18,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/BDeployer\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x54b00658f247ee34e8b23055b19d73217a7d5420",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405633"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x952e9c6391d9c0f6c6174d395aa9b4ec1030335a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405636"
+    }
+  ]
+}

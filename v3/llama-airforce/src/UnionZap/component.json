@@ -1,8 +1,8 @@
 {
   "component": "UnionZap",
   "main_contract": "UnionZap",
-  "source_entry_count": 19,
-  "source_file_count": 19,
+  "source_entry_count": 18,
+  "source_file_count": 18,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xd52ca71aafa4d2590aac1e35e3005242dd31e5ed",
+      "address": "0x7a7f79c5706716bae853c1b96e36538c7eaa4925",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "396150"
+      "logic_topography_row_id": "396122"
     }
   ]
 }

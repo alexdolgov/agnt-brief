@@ -2,18 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "mellow-protocol",
-  "missing": [
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0xd1547c9a5155c3f34a6ff0db0cf16171819fe08b",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0xe88cf95e44a2ff048315b8b3858e59bb11b8a602",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

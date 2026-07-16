@@ -1,6 +1,6 @@
 # nexus-mutual — deployments
 
-20 verified deployment(s) across 11 component(s).
+21 verified deployment(s) across 12 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -24,3 +24,4 @@
 | ethereum | `0xcafeaed98d7fce8f355c03c9f3507b90a974f37e` | SwapOperator | impl | live | no |
 | ethereum | `0xcafeaf6ea90cb931ae43a8cf4b25a73a24cf6158` | Pool | impl | live | no |
 | ethereum | `0xcafeafb97bf8831d95c0fc659b8eb3946b101cb3` | StakingPoolFactory | impl | live | no |
+| ethereum | `0xcb2b736652d2dbf7d72e4db880cf6b7d99507814` | CoverBroker | impl | live | no |

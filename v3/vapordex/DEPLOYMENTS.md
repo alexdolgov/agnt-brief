@@ -1,13 +1,15 @@
 # vapordex — deployments
 
-28 verified deployment(s) across 28 component(s).
+30 verified deployment(s) across 30 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| avalanche | `0x08e287adcf9bf6773a87e1a278aa9042bef44b60` | ERC1967Upgrade | proxy | live | no |
 | avalanche | `0x0fa2ccc39cc3b225a7649ed84ec76ee5217d07c4` | ReplenishmentPool | impl | live | no |
 | avalanche | `0x18f7e04f7968340e4604646999109ac4ae1cd790` | UnlockFacet | impl | unknown | no |
 | avalanche | `0x19c0fc4562a4b76f27f86c676ef5a7e38d12a20d` | VaporDEXRouter02 | impl | live | no |
 | avalanche | `0x1ad983287c5417fe39b4190d9e46cd6fc1e751c3` | AuthorizationFacet | impl | unknown | no |
+| avalanche | `0x1c9cba0cec8ad45f75d5f5bdb0c539acb55b8d94` | BeaconProxy | proxy | live | no |
 | avalanche | `0x20b27c17c613cd82e8fdafcda55dd87bd4da4b19` | DiamondManagerFacet | impl | unknown | no |
 | avalanche | `0x26b794235422e7c6f3ac6c717b10598c2a144203` | BytesManipulation | impl | unknown | no |
 | avalanche | `0x359ef23e2c8bcfe0ee5192bc34d3f6a2c808873a` | RewardsPool | impl | unknown | no |

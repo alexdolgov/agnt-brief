@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/EpochRewardsVault\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xea95e4636badc00881f8f73a0623b0fe8627b6da",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394706"
+    },
     {
       "chain": "chain-146",
       "chain_id": 146,
@@ -23,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x5aee4b34df62790581e2f2c31468ddfd7020e841",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405390"
     }
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "component": "OToken",
+  "main_contract": "OToken",
+  "source_entry_count": 17,
+  "source_file_count": 17,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1101",
+      "chain_id": 1101,
+      "address": "0x1eef85b09c8bc5e58a9ed81ff6b2e1420747857d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395680"
+    }
+  ]
+}

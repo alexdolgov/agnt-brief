@@ -17,12 +17,12 @@
     {
       "chain": "chain-169",
       "chain_id": 169,
-      "address": "0x90286f894020950981c9e3196bacb03a223e4cfd",
+      "address": "0x38f4384b457f81a4895c93a7503c255efd0746d2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395954"
+      "liveness": null,
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

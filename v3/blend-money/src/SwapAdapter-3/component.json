@@ -1,8 +1,8 @@
 {
   "component": "SwapAdapter-3",
   "main_contract": "SwapAdapter",
-  "source_entry_count": 13,
-  "source_file_count": 13,
+  "source_entry_count": 24,
+  "source_file_count": 24,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,17 +10,37 @@
     "build_command": "forge build --root \"src/SwapAdapter-3\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x8ccedc4f8ea3362e0f85c88a6866976ad3db3406",
+      "address": "0x9095bfff63a69e678163f85cf4ae9e3618f12f53",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x20baf09df508c6e055be01b508478d3f674229c3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-999",
+      "chain_id": 999,
+      "address": "0x7fba4a74f4518719885ea4abf9882101bec4b45e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
     }

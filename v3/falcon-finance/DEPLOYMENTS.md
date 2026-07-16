@@ -1,9 +1,10 @@
 # falcon-finance — deployments
 
-28 verified deployment(s) across 28 component(s).
+30 verified deployment(s) across 29 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| bsc | `0xac23b90a79504865d52b49b327328411a23d4db2` | BurnMintERC20 | impl | live | no |
 | ethereum | `0x000bcfdc448754b25f8e8afd5fc1fcc259d7e1bc` | AccessControlledOffchainAggregator | impl | unknown | no |
 | ethereum | `0x00f0efb3d9dbe7fe91fee44ae09dae5dfa65c382` | AccessControlledOCR2Aggregator | impl | unknown | no |
 | ethereum | `0x02aae1a04f9828517b3007f83f6181900cad910c` | VRFV2PlusWrapper | impl | unknown | no |
@@ -17,6 +18,7 @@
 | ethereum | `0x2919a6255a697e9ba0550aa573a0c47e0c9c043d` | FalconBundler | impl | unknown | no |
 | ethereum | `0x2a382c429668fcf4fd85371fc690fd27ddf5562e` | FalconPosition | proxy | unknown | no |
 | ethereum | `0x3503b2a4692f62dd2c5d4c0a6546fb50ba579acf` | FunctionsCoordinator | impl | unknown | no |
+| ethereum | `0x383b5123b55f5ef823080c0c9e9bb58ffefd2c5e` | Proxy | proxy | live | no |
 | ethereum | `0x39f2e28be7ccb03f99493a730be61cdd5122a426` | ViewVestingClaim | impl | unknown | no |
 | ethereum | `0x3a4f41dac6000a59b79669b9356b5eb71bf4cc59` | PreCollateralizedMinter | impl | unknown | no |
 | ethereum | `0x3adf34c09dac24e4baefb1b1df4c2992edc2b789` | USDf | impl | unknown | no |

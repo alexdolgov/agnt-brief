@@ -97,7 +97,7 @@ contract WooLendingManager is Ownable, ReentrancyGuard {
     }
 
     modifier onlyBorrower() {
-        require(isBorrower[msg.sender], "WooLendingManager: !borrower");
+        require(isBorrower[msg.sender] || msg.sender == wooPP, "WooLendingManager: !borrower");
         _;
     }
 
@@ -128,8 +128,7 @@ contract WooLendingManager is Ownable, ReentrancyGuard {
     }
 
     function debtAfterPerfFee() public view returns (uint256 assets) {
-        uint256 perfFee = (borrowedInterest * perfRate) / 10000;
-        return borrowedPrincipal + borrowedInterest - perfFee;
+        return debt();
     }
 
     function borrowState()
@@ -202,19 +201,10 @@ contract WooLendingManager is Ownable, ReentrancyGuard {
         emit Borrow(msg.sender, amount);
     }
 
-    // NOTE: this is the view functiono;
+    // NOTE: this is the view function;
     // Remember to call the accureInterest to ensure the latest repayment state.
     function weeklyRepayment() public view returns (uint256 repayAmount) {
-        uint256 neededAmount = superChargerVault.weeklyNeededAmountForWithdraw();
-        if (neededAmount == 0) {
-            return 0;
-        }
-        if (neededAmount <= borrowedInterest) {
-            repayAmount = (neededAmount * 10000) / (uint256(10000) - perfRate);
-        } else {
-            repayAmount = neededAmount - borrowedInterest + ((borrowedInterest * 10000) / (uint256(10000) - perfRate));
-        }
-        repayAmount = repayAmount + 1;
+        (repayAmount, , , ) = weeklyRepaymentBreakdown();
     }
 
     function weeklyRepaymentBreakdown()
@@ -232,66 +222,57 @@ contract WooLendingManager is Ownable, ReentrancyGuard {
             return (0, 0, 0, 0);
         }
         if (neededAmount <= borrowedInterest) {
-            repayAmount = (neededAmount * 10000) / (uint256(10000) - perfRate);
-            principal = 0;
             interest = neededAmount;
+            principal = 0;
         } else {
-            repayAmount = neededAmount - borrowedInterest + ((borrowedInterest * 10000) / (uint256(10000) - perfRate));
-            principal = neededAmount - borrowedInterest;
             interest = borrowedInterest;
+            principal = neededAmount - borrowedInterest;
         }
-        repayAmount = repayAmount + 1;
-        perfFee = repayAmount - neededAmount;
+        perfFee = (interest * perfRate) / 10000;
+        repayAmount = principal + interest + perfFee;
     }
 
     function repayWeekly() external onlyBorrower returns (uint256 repaidAmount) {
         accureInterest();
-        repaidAmount = weeklyRepayment();
-        if (repaidAmount != 0) {
-            repay(repaidAmount);
-        } else {
-            emit Repay(msg.sender, 0, 0);
-        }
+        uint256 _principal;
+        uint256 _interest;
+        (, _principal, _interest, ) = weeklyRepaymentBreakdown();
+        return _repay(_principal, _interest);
     }
 
     function repayAll() external onlyBorrower returns (uint256 repaidAmount) {
         accureInterest();
-        repaidAmount = debt();
-        if (repaidAmount != 0) {
-            repay(repaidAmount);
-        } else {
-            emit Repay(msg.sender, 0, 0);
-        }
+        return _repay(borrowedPrincipal, borrowedInterest);
     }
 
-    function repay(uint256 amount) public onlyBorrower {
-        require(amount > 0);
-
+    // NOTE: repay the specified principal amount with all the borrowed interest
+    function repayPrincipal(uint256 _principal) external onlyBorrower returns (uint256 repaidAmount) {
         accureInterest();
+        return _repay(_principal, borrowedInterest);
+    }
 
-        TransferHelper.safeTransferFrom(want, msg.sender, address(this), amount);
-
-        require(IERC20(want).balanceOf(address(this)) >= amount);
-
-        uint256 perfFee;
-        if (borrowedInterest >= amount) {
-            borrowedInterest = borrowedInterest - amount;
-            perfFee = (amount * perfRate) / 10000;
-        } else {
-            perfFee = (borrowedInterest * perfRate) / 10000;
-            borrowedPrincipal = borrowedPrincipal - (amount - borrowedInterest);
-            borrowedInterest = 0;
+    function _repay(uint256 _principal, uint256 _interest) private returns (uint256 repaidAmount) {
+        if (_principal == 0 && _interest == 0) {
+            emit Repay(msg.sender, 0, 0);
+            return 0;
         }
-        TransferHelper.safeTransfer(want, treasury, perfFee);
-        uint256 amountRepaid = amount - perfFee;
 
-        TransferHelper.safeApprove(want, address(superChargerVault), amountRepaid);
-        uint256 beforeBalance = IERC20(want).balanceOf(address(this));
-        superChargerVault.repayFromLendingManager(amountRepaid);
-        uint256 afterBalance = IERC20(want).balanceOf(address(this));
-        require(beforeBalance - afterBalance == amountRepaid, "WooLendingManager: REPAY_AMOUNT_ERROR");
+        uint256 _perfFee = (_interest * perfRate) / 10000;
+        uint256 _totalAmount = _principal + _interest + _perfFee;
 
-        emit Repay(msg.sender, amount, perfFee);
+        TransferHelper.safeTransferFrom(want, msg.sender, address(this), _totalAmount);
+
+        borrowedInterest -= _interest;
+        borrowedPrincipal -= _principal;
+
+        TransferHelper.safeTransfer(want, treasury, _perfFee);
+
+        TransferHelper.safeApprove(want, address(superChargerVault), _principal + _interest);
+        superChargerVault.repayFromLendingManager(_principal + _interest);
+
+        emit Repay(msg.sender, _totalAmount, _perfFee);
+
+        return _totalAmount;
     }
 
     function inCaseTokenGotStuck(address stuckToken) external onlyOwner {

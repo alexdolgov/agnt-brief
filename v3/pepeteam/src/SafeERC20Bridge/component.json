@@ -10,10 +10,30 @@
     "build_command": "forge build --root \"src/SafeERC20Bridge\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x8bfac9422a23a53e32ec37c0fd16389fd03f739a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397700"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf57db884606a0ed589c06320d9004fbed4f81e4a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397724"
+    },
     {
       "chain": "polygon",
       "chain_id": 137,

@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/QuoterV2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xc701e92db1ef14ab64f66f18536b1e07678db678",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394129"
+    },
     {
       "chain": "base",
       "chain_id": 8453,

@@ -1,0 +1,39 @@
+{
+  "component": "Contract-2",
+  "main_contract": "Contract",
+  "source_entry_count": 34,
+  "source_file_count": 34,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://1570492309-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FffzDCMBDa391vIMqruBP%2Fuploads%2F6Dqc3dUpShsp5KUa26IS%2F%20CDP%20protocol%20private%20audit%20Sherlock.pdf",
+    "https://1570492309-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FffzDCMBDa391vIMqruBP%2Fuploads%2FNcoDAsYQi9wt7W9eA9wS%2FInvariant%20Testing%20CDP%20protocol%20Recon.pdf",
+    "https://1570492309-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FffzDCMBDa391vIMqruBP%2Fuploads%2FQWVZuONAgFlu6WKnvMD2%2FCDP%20protocol%20public%20audit%20competition%20Sherlock.pdf",
+    "https://1570492309-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FffzDCMBDa391vIMqruBP%2Fuploads%2FS9FcsWw1G8YNzsJcbXLg%2FPeriphery%20and%20feeds%20extension%20private%20audit%20Sherlock.pdf",
+    "https://1570492309-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FffzDCMBDa391vIMqruBP%2Fuploads%2FU3O3q3LdCRT0zlsItfKJ%2FBoycoVault%20private%20audit%20Sherlock.pdf",
+    "https://1570492309-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FffzDCMBDa391vIMqruBP%2Fuploads%2FmxZQ0WeLKd6haJRL3ohF%2FCDP%20protocol%20public%20audit%20competition%20Cantina%20(1).pdf",
+    "https://1570492309-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FffzDCMBDa391vIMqruBP%2Fuploads%2FyMggcGsUSRbnQWRepNsS%2FCDP%20protocol%20private%20audit%20Halborn%20.pdf",
+    "https://github.com/santipu03/santipu03/blob/main/private-audits/Beraborrow_Report.pdf",
+    "https://github.com/santipu03/santipu03/blob/main/private-audits/Cantina_Beraborrow.pdf",
+    "https://github.com/santipu03/santipu03/blob/main/private-audits/Sherlock_Beraborrow_Update.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x5f1619ffaefde17f7e54f850fe90ad5ee44dbf47",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -26,7 +26,7 @@ import { Cache } from "./Cache.sol";
 import { Decimal } from "./Decimal.sol";
 import { Interest } from "./Interest.sol";
 import { EnumerableSet } from "./EnumerableSet.sol";
-import { DolomiteMarginMath } from "./DolomiteMarginMath.sol";
+import { Math } from "./Math.sol";
 import { Monetary } from "./Monetary.sol";
 import { Require } from "./Require.sol";
 import { Time } from "./Time.sol";
@@ -46,7 +46,7 @@ import { IPriceOracle } from "../interfaces/IPriceOracle.sol";
 library Storage {
     using Cache for Cache.MarketCache;
     using Storage for Storage.State;
-    using DolomiteMarginMath for uint256;
+    using Math for uint256;
     using Types for Types.Par;
     using Types for Types.Wei;
     using SafeMath for uint256;
@@ -97,7 +97,7 @@ library Storage {
         Decimal.D256 spreadPremium;
 
         // The maximum amount that can be held by the protocol. This allows the protocol to cap any additional risk
-        // that is inferred by allowing borrowing against low-cap or assets with increased volatility. Setting this
+        // that is inferred by allowing borrowing against low-cap or assets with increased volatility. Settings this
         // value to 0 is analogous to having no limit. This value can never be below 0.
         Types.Wei maxWei;
     }
@@ -117,8 +117,8 @@ library Storage {
         // There must be sufficient incentivize to liquidate undercollateralized accounts
         Monetary.Value minBorrowedValue;
 
-        // The maximum number of markets a user can have a non-zero balance for a given account.
-        uint256 accountMaxNumberOfMarketsWithBalances;
+        // The maximum number of markets a user can have a non-zero balance for, when the account has any debt.
+        uint256 maxNumberOfMarketsWithBalancesAndDebt;
     }
 
     // The maximum RiskParam values that can be set
@@ -313,18 +313,6 @@ library Storage {
         return state.accounts[account.owner][account.number].marketsWithNonZeroBalanceSet.values();
     }
 
-    function getAccountMarketWithBalanceAtIndex(
-        Storage.State storage state,
-        Account.Info memory account,
-        uint256 index
-    )
-    internal
-    view
-    returns (uint256)
-    {
-        return state.accounts[account.owner][account.number].marketsWithNonZeroBalanceSet.getAtIndex(index);
-    }
-
     function getNumberOfMarketsWithBalances(
         Storage.State storage state,
         Account.Info memory account
@@ -336,7 +324,7 @@ library Storage {
         return state.accounts[account.owner][account.number].marketsWithNonZeroBalanceSet.length();
     }
 
-    function getAccountNumberOfMarketsWithDebt(
+    function getNumberOfMarketsWithBorrow(
         Storage.State storage state,
         Account.Info memory account
     )
@@ -344,7 +332,7 @@ library Storage {
     view
     returns (uint256)
     {
-        return state.accounts[account.owner][account.number].numberOfMarketsWithDebt;
+        return state.accounts[account.owner][account.number].numberOfMarketsWithBorrow;
     }
 
     function getLiquidationSpreadForPair(
@@ -474,10 +462,18 @@ library Storage {
         view
         returns (bool)
     {
-        if (state.getAccountNumberOfMarketsWithDebt(account) == 0) {
+        if (state.getNumberOfMarketsWithBorrow(account) == 0) {
             // The user does not have a balance with a borrow amount, so they must be collateralized
             return true;
         }
+
+        Require.that(
+            state.getNumberOfMarketsWithBalances(account) <= state.riskParams.maxNumberOfMarketsWithBalancesAndDebt,
+            FILE,
+            "Too many non-zero balances",
+            account.owner,
+            account.number
+        );
 
         // get account values (adjusted for liquidity)
         (
@@ -485,6 +481,9 @@ library Storage {
             Monetary.Value memory borrowValue
         ) = state.getAccountValues(account, cache, /* adjustForLiquidity = */ true);
 
+        if (borrowValue.value == 0) {
+            return true;
+        }
         if (requireMinBorrow) {
             Require.that(
                 borrowValue.value >= state.riskParams.minBorrowedValue.value,
@@ -757,10 +756,10 @@ library Storage {
 
         if (oldPar.isLessThanZero() && newPar.isGreaterThanOrEqualToZero()) {
             // user went from borrowing to repaying or positive
-            state.accounts[account.owner][account.number].numberOfMarketsWithDebt -= 1;
+            state.accounts[account.owner][account.number].numberOfMarketsWithBorrow -= 1;
         } else if (oldPar.isGreaterThanOrEqualToZero() && newPar.isLessThanZero()) {
             // user went from zero or positive to borrowing
-            state.accounts[account.owner][account.number].numberOfMarketsWithDebt += 1;
+            state.accounts[account.owner][account.number].numberOfMarketsWithBorrow += 1;
         }
 
         if (newPar.isZero() && (!oldPar.isZero())) {
@@ -811,7 +810,7 @@ library Storage {
         uint counter = 0;
 
         // Really neat byproduct of iterating through a bitmap using the least significant bit, where each set flag
-        // represents the marketId, --> the initialized `cache.markets` array is sorted in O(n)!
+        // represents the marketId, --> the initialized `cache.markets` array is sorted in O(n)!!!!!!
         // Meaning, this function call is O(n) where `n` is the number of markets in the cache
         for (uint i = 0; i < cache.marketBitmaps.length; i++) {
             uint bitmap = cache.marketBitmaps[i];

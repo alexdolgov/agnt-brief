@@ -1,12 +1,14 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import {Percentage} from "@summerfi/percentage-solidity/contracts/Percentage.sol";
 
 /**
  * @title ArkParams
  * @notice Constructor parameters for the Ark contract
- * @dev This struct is used to initialize an Ark contract with all necessary parameters
+ *
+ *  @dev This struct is used to initialize an Ark contract with all necessary parameters
  */
 struct ArkParams {
     /**
@@ -14,6 +16,11 @@ struct ArkParams {
      * @dev This should be a unique, human-readable identifier for the Ark
      */
     string name;
+    /**
+     * @notice Additional details about the Ark
+     * @dev This can be used to store additional information about the Ark
+     */
+    string details;
     /**
      * @notice The address of the access manager contract
      * @dev This contract manages roles and permissions for the Ark
@@ -28,7 +35,7 @@ struct ArkParams {
      * @notice The address of the ERC20 token managed by this Ark
      * @dev This is the underlying asset that the Ark will handle
      */
-    address token;
+    address asset;
     /**
      * @notice The maximum amount of tokens that can be deposited into the Ark
      * @dev This cap helps to manage risk and exposure
@@ -49,6 +56,12 @@ struct ArkParams {
      * @dev This flag is used to determine whether Keepr data is required for rebalance transactions
      */
     bool requiresKeeperData;
+    /**
+     * @notice The maximum percentage of Total Value Locked (TVL) that can be deposited into this Ark
+     * @dev This value is represented as a percentage with 18 decimal places (1e18 = 100%)
+     *      For example, 0.5e18 represents 50% of TVL
+     */
+    Percentage maxDepositPercentageOfTVL;
 }
 
 /**
@@ -71,7 +84,7 @@ struct ArkConfig {
      * @notice The ERC20 token interface for the asset managed by this Ark
      * @dev This allows direct interaction with the token contract
      */
-    IERC20 token;
+    IERC20 asset;
     /**
      * @notice The current maximum amount of tokens that can be deposited into the Ark
      * @dev This can be adjusted by the commander to manage capacity
@@ -92,5 +105,20 @@ struct ArkConfig {
      * @dev This is typically set at initialization and not changed
      */
     string name;
+    /**
+     * @notice Additional details about the Ark
+     * @dev This can be used to store additional information about the Ark
+     */
+    string details;
+    /**
+     * @notice Whether the Ark requires Keeper data to be passed in with rebalance transactions
+     * @dev This flag is used to determine whether Keeper data is required for rebalance transactions
+     */
     bool requiresKeeperData;
+    /**
+     * @notice The maximum percentage of Total Value Locked (TVL) that can be deposited into this Ark
+     * @dev This value is represented as a percentage with 18 decimal places (1e18 = 100%)
+     *      For example, 0.5e18 represents 50% of TVL
+     */
+    Percentage maxDepositPercentageOfTVL;
 }

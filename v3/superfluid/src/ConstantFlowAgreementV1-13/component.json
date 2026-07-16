@@ -1,0 +1,114 @@
+{
+  "component": "ConstantFlowAgreementV1-13",
+  "main_contract": "ConstantFlowAgreementV1",
+  "source_entry_count": 22,
+  "source_file_count": 22,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/agreements/ConstantFlowAgreementV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-8bec8ee48138-ConstantFlowAgreementV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSUtils.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-c4b242bb6177-UUPSUtils.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/upgradability/UUPSProxiable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-663dc69ad720-UUPSProxiable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/tokens/TokenInfo.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-4de612989cce-TokenInfo.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/tokens/ERC20WithTokenInfo.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-e4de97e1d373-ERC20WithTokenInfo.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluidToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-34d3861c140f-ISuperfluidToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluidGovernance.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-9aefb6ebb23b-ISuperfluidGovernance.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperfluid.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-d3b5a246adfa-ISuperfluid.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperTokenFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-73088d7fa53f-ISuperTokenFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperToken.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-ec60d22c3be9-ISuperToken.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperApp.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-97f30e4d8c5c-ISuperApp.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/ISuperAgreement.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-15fc100fc1f3-ISuperAgreement.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/superfluid/Definitions.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-ef3573c1d540-Definitions.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/IConstantFlowAgreementV1.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-c55e1b50cace-IConstantFlowAgreementV1.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/agreements/IConstantFlowAgreementHook.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-5d61c31450b0-IConstantFlowAgreementHook.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/agreements/AgreementLibrary.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-b8f1a047a548-AgreementLibrary.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/agreements/AgreementBase.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-1822eb7717c7-AgreementBase.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ConstantFlowAgreementV1-13\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xe72f289584eda2be69cfe487f4638f09bac920db",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

@@ -10,10 +10,30 @@
     "build_command": "forge build --root \"src/TransparentUpgradeableProxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x0b2c83b6e39e32f694a86633b4d1fe69d13b63c5",
+      "is_proxy": true,
+      "implementation_address": "0x286200bb331d736ac141115cb7970c60a9bcec23",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396318"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x8d95f56b0bac46e8ac1d3a3f12fb1e5bc39b4c0c",
+      "is_proxy": true,
+      "implementation_address": "0xee617555d081515ca6c340e7b0db0ef6b332fd8b",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396329"
+    },
     {
       "chain": "linea",
       "chain_id": 59144,

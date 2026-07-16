@@ -8,7 +8,7 @@ interface IFarmConnector {
         Farm calldata farm,
         address token,
         bytes memory extraData
-    ) external;
+    ) external payable;
 
     function withdraw(
         Farm calldata farm,
@@ -17,20 +17,4 @@ interface IFarmConnector {
     ) external;
 
     function claim(Farm calldata farm, bytes memory extraData) external;
-
-    function balanceOf(
-        Farm calldata farm,
-        address user
-    ) external view returns (uint256);
-
-    function earned(
-        Farm calldata farm,
-        address user,
-        address[] calldata rewardTokens
-    ) external view returns (uint256[] memory);
-
-    function isStaked(
-        Farm calldata farm,
-        address user
-    ) external view returns (bool);
 }

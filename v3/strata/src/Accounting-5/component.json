@@ -1,8 +1,8 @@
 {
   "component": "Accounting-5",
   "main_contract": "Accounting",
-  "source_entry_count": 56,
-  "source_file_count": 56,
+  "source_entry_count": 58,
+  "source_file_count": 58,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xc89951cc4c03927ff11a0e47806e2ac3aa7734f3",
+      "address": "0x8cabd13af1d45404a484ab22bb65dadf71048643",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405733"
     }
   ]
 }

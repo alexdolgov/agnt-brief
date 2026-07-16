@@ -1,6 +1,6 @@
 # aarna-protocol — deployments
 
-57 verified deployment(s) across 57 component(s).
+59 verified deployment(s) across 59 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -48,6 +48,7 @@
 | ethereum | `0x316f9708bb98af7da9c68c1c3b5e79039cd336e3` | ConfiguratorProxy | proxy | unknown | no |
 | ethereum | `0x3a66dd5d1be2179fda40631708f334fc04a7593c` | AFiFactory | impl | unknown | no |
 | ethereum | `0x401cf9c74f83f53f0a8a804b49d3aeeee289b8bc` | WrappedBoosterTL | impl | unknown | no |
+| ethereum | `0x45afbac8be713d5f7cb42a7b1e6d034a681a2dff` | PendleAdapter | impl | live | no |
 | ethereum | `0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5` | CEther | impl | unknown | no |
 | ethereum | `0x5562024784cc914069d67d89a28e3201bf7b57e7` | JumpRateModel | impl | unknown | no |
 | ethereum | `0x5d3a536e4d6dbd6114cc1ead35777bab948e3643` | CErc20Delegator | proxy | unknown | no |
@@ -59,5 +60,6 @@
 | ethereum | `0xa394a082273998bdaeea3f1ee6435008d6f6d3a7` | SYAtvAdapter | impl | unknown | no |
 | ethereum | `0xa397a8c2086c554b531c02e29f3291c9704b00c7` | MainnetBulker | impl | unknown | no |
 | ethereum | `0xb61c66a4d83da8e04f40ca844c0c4b508ca81fa3` | Liquidator | impl | unknown | no |
+| ethereum | `0xc2b275d096403e2e4160b8af440ba47f89d9f49b` | SafeProxy | proxy | live | no |
 | ethereum | `0xd72ac1bce9177cfe7aeb5d0516a38c88a64ce0ab` | ConstantPriceFeed | impl | unknown | no |
 | ethereum | `0xf859a1ad94bcf445a406b892ef0d3082f4174088` | Maximillion | impl | unknown | no |

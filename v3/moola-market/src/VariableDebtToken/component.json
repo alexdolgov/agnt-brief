@@ -1,0 +1,28 @@
+{
+  "component": "VariableDebtToken",
+  "main_contract": "VariableDebtToken",
+  "source_entry_count": 19,
+  "source_file_count": 19,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VariableDebtToken\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-42220",
+      "chain_id": 42220,
+      "address": "0x0301cf8f1fcd9255bd32fb7e0fe5b3494f445c2c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396880"
+    }
+  ]
+}

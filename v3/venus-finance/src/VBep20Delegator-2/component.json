@@ -1,0 +1,78 @@
+{
+  "component": "VBep20Delegator-2",
+  "main_contract": "VBep20Delegator",
+  "source_entry_count": 17,
+  "source_file_count": 17,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/VBep20Delegator-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 6,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x4d41a36d04d97785bcea57b057c412b278e6edcc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404746"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x74ca6930108f775cc667894eea33843e691680d7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404778"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x86e06eafa6a1ea631eab51de500e3d474933739f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404792"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9e4e5fed5ac5b9f732d0d850a615206330bf1866",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404819"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbf515ba4d1b52ffdceabf20d31d705ce789f2cec",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404850"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf841cb62c19fcd4ff5cd0aab5939f3140baac3ea",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404899"
+    }
+  ]
+}

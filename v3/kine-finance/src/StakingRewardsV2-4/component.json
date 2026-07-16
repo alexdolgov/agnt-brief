@@ -1,0 +1,74 @@
+{
+  "component": "StakingRewardsV2-4",
+  "main_contract": "StakingRewardsV2",
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/Address.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-d45044dd4176-Address.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/Context.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-f8a722feadf1-Context.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/IERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-4de85607805d-IERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/KineSafeMath.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-fef21564b23d-KineSafeMath.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/LPStakingRewards.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-4fdd04780cb0-LPStakingRewards.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/Math.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-5f708b1f7019-Math.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/Ownable.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-64702c23edec-Ownable.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/SafeERC20.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-3318f13ced4a-SafeERC20.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/Users/guocheng/kine-protocol-2/kine-protocol/contracts/StakingRewardsV2.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-acc718fccbd7-StakingRewardsV2.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StakingRewardsV2-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x69c78c26f272405599382925689d0a54b8ceedf9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395743"
+    }
+  ]
+}

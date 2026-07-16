@@ -1,6 +1,6 @@
 # reserve-protocol — deployments
 
-493 verified deployment(s) across 209 component(s).
+494 verified deployment(s) across 209 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -208,6 +208,7 @@
 | base | `0xbd769ea5e93a4b232cee08ed4c2a67ff5ba692df` | AssetPluginRegistry | impl | live | no |
 | base | `0xbe6fb2b2908d85179e34ee0d996e32fa2bf4410a` | FacadeWriteLib | impl | live | no |
 | base | `0xbe70970a10c186185b1bc1be980ea09bd68fd97a` | FiatCollateral | impl | live | no |
+| base | `0xbe9d23040fe22e8bd8a88bf5101061557355ca04` | VersionRegistry-3 | impl | live | no |
 | base | `0xbf121c8a390a2b5c896c0e35419aeadac1cbe66b` | Upgrade4_2_0-3 | impl | live | no |
 | base | `0xbf1fa29142c9c453966df07e4df805397510df9f` | FolioGovernor | impl | live | no |
 | base | `0xbf6e8f64547bdec55bc3fbb0664722465fcc2f0f` | FacadeWriteLib-3 | impl | live | no |
@@ -497,8 +498,3 @@
 | ethereum | `0xf4a9288d5deb0eae987e5926795094bf6f4662f8` | Governance | impl | live | no |
 | ethereum | `0xf683e671a7bd91257a32079ca219cc8398088aec` | AssetRegistryP1-4 | impl | live | no |
 | ethereum | `0xf8b09c5b3a1eacd095627fb1354665432dc1d077` | CTokenFiatCollateral-2 | impl | live | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- base `0xbe9d23040fe22e8bd8a88bf5101061557355ca04`

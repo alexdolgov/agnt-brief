@@ -1,0 +1,148 @@
+{
+  "component": "TransparentUpgradeableProxy-2",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxy-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 13,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x22182ee443e109472fa3ff95311e4532ff5880f9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403198"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x265ab8950821a4a4e8ced3c81905e4d4488dfc4c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403199"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x346886f3756ce8a1cfb41aa8a7ed13a5896f58c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403200"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x544c42fbb96b39b21df61cf322b5edc285ee7429",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403201"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x563d10af7395db31f9b0030b39fc4e3ef2598fee",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403202"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x599b132328a07b51b833609314824570a99ab9b0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403203"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x5b9d6666398b86e2541b08b00468ae6434f79441",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403204"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xa29b59a149f62d390dee27b144c0092ca7dbba96",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403205"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xdbbb520b40c7b7c6498dbd532aee5e28c62b3611",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403206"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xdecafc91000d4d3802a0562a8fb896f29b6a7480",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403207"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf2944068f81578f8e5b2b913f3c7039187dbde91",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403208"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xf851cbb9940f8baebd1d0eaf259335c108e9e893",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403209"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xfba24bdbb36001f1f88b3a552c77ec1c10f5e4c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403210"
+    }
+  ]
+}

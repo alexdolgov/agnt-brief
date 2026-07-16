@@ -1,0 +1,31 @@
+{
+  "component": "Contract",
+  "main_contract": "Contract",
+  "source_entry_count": 2,
+  "source_file_count": 2,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://docs.yieldbasis.com/pdf/audit/electisec.pdf",
+    "https://docs.yieldbasis.com/pdf/audit/mixbytes.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1be14811a3a06f6af4fa64310a636e1df04c1c21",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

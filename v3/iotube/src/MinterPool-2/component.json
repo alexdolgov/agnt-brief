@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x4799d57abf5f12ca4ef5375c9dadf8fe7fa5a454",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x964f4f19bc823e72cc1f806021937cfc06f63b45",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395400"
+      "logic_topography_row_id": "395388"
     }
   ]
 }

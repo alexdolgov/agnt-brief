@@ -1,8 +1,8 @@
 {
   "component": "FarmStrategy-14",
   "main_contract": "FarmStrategy",
-  "source_entry_count": 28,
-  "source_file_count": 28,
+  "source_entry_count": 26,
+  "source_file_count": 26,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,7 +17,7 @@
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x481d6b8406145727bf6509510151c9ad8d00ea35",
+      "address": "0x3cb9ae71566a1bae8244fbbe812d436adc7dc83c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

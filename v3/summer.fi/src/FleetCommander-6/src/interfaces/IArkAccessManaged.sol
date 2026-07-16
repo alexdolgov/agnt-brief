@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 /**
- * @title ArkAccessControl
+ * @title IArkAccessManaged
  * @notice Extends the ProtocolAccessManaged contract with Ark specific AccessControl
  *         Used to specifically tie one FleetCommander to each Ark
  *

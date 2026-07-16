@@ -1,23 +1,27 @@
 # ribbon-finance — deployments
 
-37 verified deployment(s) across 22 component(s).
+61 verified deployment(s) across 34 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | avalanche | `0x084a82fe209f014b3cb6d5986b2c65b584168303` | SAVAXDepositHelper | impl | live | no |
 | avalanche | `0x0a59f35f00a482bb04d95428e1ec051cbac216c9` | SAvaxPricer | impl | live | no |
-| avalanche | `0x6bf686d99a4ce17798c45d09c21181fac29a9fb3` | AdminUpgradeabilityProxy-5 | proxy | live | no |
-| avalanche | `0x98d03125c62dae2328d9d3cb32b7b969e6a87787` | AdminUpgradeabilityProxy | proxy | live | no |
+| avalanche | `0x6bf686d99a4ce17798c45d09c21181fac29a9fb3` | AdminUpgradeabilityProxy-6 | proxy | live | no |
+| avalanche | `0x98d03125c62dae2328d9d3cb32b7b969e6a87787` | AdminUpgradeabilityProxy-3 | proxy | live | no |
 | avalanche | `0x9d1d31190f945b72f6de8f1c72b97931c9d5014a` | RibbonThetaVault-3 | impl | inactive | no |
-| avalanche | `0x9dd6be071b4292cc88b8190ab718329adea3e3a3` | AdminUpgradeabilityProxy | proxy | live | no |
+| avalanche | `0x9dd6be071b4292cc88b8190ab718329adea3e3a3` | AdminUpgradeabilityProxy-3 | proxy | live | no |
 | avalanche | `0xa0db6c4c2906de0158802ba8d98798d04f52b79a` | RibbonThetaVault-2 | impl | inactive | no |
 | avalanche | `0xa5b1170f2eb3c7e1ee1a4ff6a60b3a018ae1c23d` | RibbonThetaVault | impl | inactive | no |
 | avalanche | `0xf08d6a9c2c5a2dc9b8645c5ac0b529d4046d19aa` | RibbonVaultPauser | impl | live | no |
 | ethereum | `0x00e81211ce0fa2a46a2838d6b4861b5bdb5cc87f` | ManualPricer | impl | live | no |
 | ethereum | `0x07f36cf3c834e423536680f560b6bad0319f5411` | STETHDepositHelper | impl | live | no |
 | ethereum | `0x090185f2135308bad17527004364ebcc2d37e5f6` | Spell | impl | live | no |
+| ethereum | `0x0cb9cc35cefa5622e8d25af36dd56de142ef6415` | Vyper_contract-2 | impl | live | no |
 | ethereum | `0x0ff7c2d2a935d31d354bf7ea7fdad39de0141a5a` | RibbonThetaVault | impl | inactive | no |
+| ethereum | `0x1929605b714517b76bb733198e0f3c3d4ab08608` | Vyper_contract-3 | impl | live | no |
+| ethereum | `0x19854c9a5ffa8116f48f984bdf946fb9cea9b5f7` | Vyper_contract-4 | impl | live | no |
 | ethereum | `0x2530298e2f5c026e794f8b39bda39f50c70bc6b4` | RibbonThetaVaultWithSwap | impl | live | no |
+| ethereum | `0x25751853eab4d0eb3652b5eb6ecb102a2789644b` | AdminUpgradeabilityProxy | proxy | live | yes |
 | ethereum | `0x2a0b88f5e1fba2909843a46877a9369d8ae8b5b5` | RibbonThetaVault-2 | impl | inactive | no |
 | ethereum | `0x30b3059b1e870203aef55b071110b49b22341fc6` | RethPricer | impl | live | no |
 | ethereum | `0x3250e0d6730869233d304842d53f52c40a865c86` | ManualPricer | impl | live | no |
@@ -25,19 +29,39 @@
 | ethereum | `0x393952f6da58524140469abb59ae9161fd66bce4` | ManualPricer | impl | live | no |
 | ethereum | `0x3c8114263092fd27acfeaa99549d4f3066d7036c` | ManualStrikeSelection-2 | impl | live | no |
 | ethereum | `0x3e3aa8444ac0157a15b6bf4b9a4057c8cd4ebcb1` | ManualPricer | impl | live | no |
-| ethereum | `0x53773e034d9784153471813dacaff53dbbb78e8c` | AdminUpgradeabilityProxy-2 | proxy | live | yes |
+| ethereum | `0x43277c92f9936aeb5d6a2713a44cd2f096f171cc` | Vyper_contract-5 | impl | live | no |
+| ethereum | `0x4ba4afa8071b0a9fe3097700cdade02dd0e16fd0` | Vyper_contract | impl | live | no |
+| ethereum | `0x4e079dca26a4fe2586928c1319b20b1bf9f9be72` | Vyper_contract | impl | live | no |
+| ethereum | `0x53773e034d9784153471813dacaff53dbbb78e8c` | AdminUpgradeabilityProxy | proxy | live | yes |
+| ethereum | `0x5b0655f938a72052c46d2e94d206ccb6ff625a3a` | Vyper_contract-6 | impl | live | no |
 | ethereum | `0x6123b0049f904d730db3c36a31167d9d4121fa6b` | RibbonToken | impl | live | no |
 | ethereum | `0x65112b0932c257b821217fcccb783c7e0c227ae0` | RibbonThetaVault-3 | impl | inactive | no |
+| ethereum | `0x65a833afdc250d9d38f8cd9bc2b1e3132db13b2f` | AdminUpgradeabilityProxy | proxy | live | yes |
 | ethereum | `0x80a0def4483267e5bf39e7a6b4be972cee46c525` | ManualPricer | impl | live | no |
+| ethereum | `0x84c2b16fa6877a8ff4f3271db7ea837233dfd6f0` | AdminUpgradeabilityProxy-2 | proxy | live | yes |
+| ethereum | `0x8913eab16a302de3e498bba39940e7a55c0b9325` | Vyper_contract | impl | live | no |
 | ethereum | `0x8a09674406da7c96b7f6cb941e92b7cabec26fe3` | ManualStrikeSelection | impl | live | no |
-| ethereum | `0x8fe74471f198e426e96be65f40eed1f8ba96e54f` | AdminUpgradeabilityProxy-3 | proxy | live | yes |
+| ethereum | `0x8fe74471f198e426e96be65f40eed1f8ba96e54f` | AdminUpgradeabilityProxy-4 | proxy | live | yes |
+| ethereum | `0x9038403c3f7c6b5ca361c82448daa48780d7c8bd` | Vyper_contract | impl | live | no |
 | ethereum | `0x9246cb31fdd179f266f3b5bb3a0f66e9cebe8b8e` | ManualStrikeSelection | impl | live | no |
+| ethereum | `0x9674126ff31e5ece36de0cf03a49351a7c814587` | Vyper_contract | impl | live | no |
+| ethereum | `0x98c371567b8a196518dcb4a4383387a2c7339382` | Vyper_contract | impl | live | no |
 | ethereum | `0xa1a436335d24d8a1700fa6674d428ba2e79512a7` | ManualPricer | impl | live | no |
+| ethereum | `0xa1da0580fa96129e753d736a5901c31df5ec5edf` | AdminUpgradeabilityProxy-2 | proxy | live | yes |
+| ethereum | `0xa8a9699161f266f7e79080ca0b65210820be8732` | Vyper_contract | impl | live | no |
 | ethereum | `0xab40513b6f0a33a68b59ccf90cb6f892b4be1573` | ManualStrikeSelection | impl | live | no |
+| ethereum | `0xad4dbd3be46f7bdab82702b581b1d4c5f584741a` | Vyper_contract | impl | live | no |
+| ethereum | `0xb380162a6a68f37b07503ba1543d0e623bd81c3c` | RibbonEarnVault | impl | live | no |
+| ethereum | `0xb7fd36eb847c04a144fab717e85b94da1d8c9b4e` | Vyper_contract-7 | impl | live | no |
+| ethereum | `0xb913090f0fcc2473dfcceaf41653a806bcb85fab` | Vyper_contract-8 | impl | live | no |
 | ethereum | `0xba100000625a3754423978a60c9317c58a424e3d` | BalancerGovernanceToken | impl | live | no |
 | ethereum | `0xbc396689893d065f41bc2c6ecbee5e0085233447` | PerpToken | impl | live | no |
 | ethereum | `0xbeba74374e7cf9362fdedd0b9e2bc4a04549e4ad` | RibbonThetaVault | impl | inactive | no |
-| ethereum | `0xcc323557c71c0d1d20a1861dc69c06c5f3cc9624` | AdminUpgradeabilityProxy-4 | proxy | live | yes |
+| ethereum | `0xcc323557c71c0d1d20a1861dc69c06c5f3cc9624` | AdminUpgradeabilityProxy-2 | proxy | live | yes |
 | ethereum | `0xcd87867e13b10a4a320b48f8e317534e3f5450fc` | RibbonThetaVaultWithSwap | impl | live | no |
+| ethereum | `0xce5513474e077f5336cf1b33c1347fdd8d48ae8c` | AdminUpgradeabilityProxy-5 | proxy | live | no |
+| ethereum | `0xe63151a0ed4e5fafdc951d877102cf0977abd365` | AdminUpgradeabilityProxy | proxy | live | yes |
+| ethereum | `0xe97d824116a17435e3d15efd8e16ee7344a4b8b8` | RibbonEarnVaultFixedRate | impl | live | no |
+| ethereum | `0xf2e186d6f3cafe17bcc89c50133cfbc2db6cf55a` | FeeCustody | impl | live | no |
 | ethereum | `0xfc988789fc586b8f1d5e03825a9f3614309fb0b7` | ManualPricer | impl | live | no |
 | ethereum | `0xfd48f39be14990bd8d96a446c12e7fd08c51b451` | ManualStrikeSelection | impl | live | no |

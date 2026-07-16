@@ -1,0 +1,28 @@
+{
+  "component": "EmergencyCouncil",
+  "main_contract": "EmergencyCouncil",
+  "source_entry_count": 23,
+  "source_file_count": 23,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/EmergencyCouncil\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf7a15f27533c2db26341220c1e0b939b56defeda",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400794"
+    }
+  ]
+}

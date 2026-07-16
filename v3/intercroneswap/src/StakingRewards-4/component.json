@@ -1,0 +1,68 @@
+{
+  "component": "StakingRewards-4",
+  "main_contract": "StakingRewards",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/StakingRewards-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x38692505d759f645d32b0f07a57b0117df22ef17",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403222"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x607f20cb5225e34e869a2e08cfc947cafb707fff",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403229"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x66cbd687402588d45a4338b3e40677bba8407db6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403232"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xde577f2297b03b0b41802ad9341d1243e2580b6a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403241"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdf22eaf69a3bcbbe989a666e098e616bf1c57709",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403242"
+    }
+  ]
+}

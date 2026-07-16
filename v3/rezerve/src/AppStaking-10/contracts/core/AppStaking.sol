@@ -71,7 +71,7 @@ contract AppStaking is
     /// @inheritdoc IAppStaking
     function initialize(address _appToken, address _trackingToken, address _authority, address _burner)
         public
-        reinitializer(9)
+        reinitializer(10)
     {
         if (lastId == 0) lastId = 1;
 
@@ -207,122 +207,26 @@ contract AppStaking is
         nonReentrant
         returns (uint256 tokenId, uint256 taxPaid)
     {
-        require(declaredValue > 0, "Declared value must be greater than 0");
-        _updateReward(0);
-
-        // Transfer RZR tokens from user
-        appToken.safeTransferFrom(msg.sender, address(this), amount);
-
-        // Calculate and collect harberger tax
-        taxPaid = _distributeTax(declaredValue);
-        amount -= taxPaid;
-
-        require(amount > 0, "Amount must be greater than 0");
-
-        // Create new position
-        tokenId = lastId++;
-        _mint(to, tokenId);
-
-        _positions[tokenId] = Position({
-            amount: amount,
-            declaredValue: declaredValue,
-            rewardPerTokenPaid: rewardPerTokenStored,
-            rewards: 0,
-            cooldownEnd: 0,
-            rewardsUnlockAt: block.timestamp + rewardCooldownPeriod
-        });
-
-        _withdrawCooldownStart[tokenId] = block.timestamp + minLockDuration;
-
-        totalStaked += amount;
-
-        // Mint tracking tokens for the staked amount
-        trackingToken.mint(to, amount);
-
-        emit PositionCreated(tokenId, to, amount, declaredValue);
+        require(false, "paused");
     }
 
     /// @inheritdoc IAppStaking
     function startUnstaking(uint256 tokenId) external override nonReentrant {
-        require(ownerOf(tokenId) == msg.sender, "Not owner");
-        require(_positions[tokenId].cooldownEnd == 0, "Already in cooldown");
-        require(_withdrawCooldownStart[tokenId] <= block.timestamp, "Currently in withdraw cooldown");
-
-        Position storage position = _positions[tokenId];
-        _updateReward(tokenId);
-        position.cooldownEnd = block.timestamp + withdrawCooldownPeriod;
-
-        emit CooldownStarted(tokenId, msg.sender);
+        require(false, "paused");
     }
 
     /// @inheritdoc IAppStaking
     function completeUnstaking(uint256 tokenId) external override nonReentrant {
-        require(ownerOf(tokenId) == msg.sender, "Not owner");
-
-        Position storage position = _positions[tokenId];
-        require(position.cooldownEnd > 0, "Not in cooldown");
-        require(block.timestamp >= position.cooldownEnd, "Cooldown not finished");
-
-        _updateReward(tokenId);
-
-        uint256 amount = position.amount;
-        totalStaked -= amount;
-
-        // Burn tracking tokens for the unstaked amount
-        trackingToken.burn(msg.sender, amount);
-
-        // Transfer RZR tokens back to user
-        appToken.safeTransfer(msg.sender, amount);
-
-        // Burn the NFT
-        _burn(tokenId);
-        delete _positions[tokenId];
-        delete _buyCooldownEnd[tokenId];
-        delete _withdrawCooldownStart[tokenId];
-
-        emit PositionUnstaked(tokenId, msg.sender, amount);
+        require(false, "paused");
     }
 
     function updateWithdrawCooldown(uint256 tokenId, uint256 newCooldownEnd) external onlyGovernor {
-        _withdrawCooldownStart[tokenId] = newCooldownEnd;
+        require(false, "paused");
     }
 
     /// @inheritdoc IAppStaking
     function buyPosition(uint256 tokenId) external override nonReentrant {
-        address seller = ownerOf(tokenId);
-        require(seller != address(0), "Position does not exist");
-        require(seller != msg.sender, "Cannot buy your own position");
-
-        // Check if position is in buy cooldown
-        require(
-            _buyCooldownEnd[tokenId] == 0 || block.timestamp >= _buyCooldownEnd[tokenId], "Position in buy cooldown"
-        );
-
-        Position storage position = _positions[tokenId];
-        uint256 price = position.declaredValue;
-
-        // Calculate resell fee
-        uint256 resellFee = (price * resellFeeRate) / BASIS_POINTS;
-        uint256 sellerAmount = price - resellFee;
-
-        // Transfer RZR tokens from buyer
-        appToken.safeTransferFrom(msg.sender, address(this), price);
-
-        // Distribute payment
-        appToken.safeTransfer(seller, sellerAmount);
-        appToken.safeTransfer(burner, resellFee);
-
-        // Transfer NFT to buyer (tracking tokens are transferred in _update)
-        _transfer(seller, msg.sender, tokenId);
-
-        // Cancel unstaking and claim any pending rewards to avoid getting sniped
-        _cancelUnstaking(tokenId);
-        _claimRewards(tokenId);
-
-        // Set buy cooldown end timestamp
-        _buyCooldownEnd[tokenId] = block.timestamp + buyCooldownPeriod;
-
-        emit PositionSold(tokenId, seller, msg.sender, price);
+        require(false, "paused");
     }
 
     /// @inheritdoc IAppStaking
@@ -348,51 +252,12 @@ contract AppStaking is
         nonReentrant
         returns (uint256 taxPaid)
     {
-        require(ownerOf(tokenId) != address(0), "Position does not exist");
-        require(additionalAmount > 0, "Amount must be greater than 0");
-        require(_positions[tokenId].cooldownEnd == 0, "Position is in cooldown");
-        require(addtionalDeclaredValue > 0 || additionalAmount > 0, "Declared value or amount must be greater than 0");
-
-        _updateReward(tokenId);
-
-        Position storage position = _positions[tokenId];
-        address owner = ownerOf(tokenId);
-
-        // Transfer RZR tokens from user
-        if (additionalAmount > 0) {
-            appToken.safeTransferFrom(msg.sender, address(this), additionalAmount);
-        }
-
-        // Calculate harberger tax on the additional amount
-        taxPaid = _distributeTax(addtionalDeclaredValue);
-        additionalAmount -= taxPaid;
-        _updateReward(tokenId);
-
-        // Update position
-        position.amount += additionalAmount;
-        position.declaredValue += addtionalDeclaredValue;
-        totalStaked += additionalAmount;
-
-        require(position.amount > 0, "Position amount must be greater than 0");
-
-        // Update rewards
-        _updateReward(tokenId);
-
-        // Mint tracking tokens for the additional amount
-        trackingToken.mint(owner, additionalAmount);
-
-        emit PositionUpdated(tokenId, owner, position.amount, position.declaredValue);
+        require(false, "paused");
     }
 
     /// @inheritdoc IAppStaking
     function cancelUnstaking(uint256 tokenId) external override nonReentrant {
-        require(ownerOf(tokenId) == msg.sender, "Not owner");
-
-        Position storage position = _positions[tokenId];
-        require(position.cooldownEnd > 0, "Not in cooldown");
-
-        // Update rewards to resume accrual
-        _cancelUnstaking(tokenId);
+        require(false, "paused");
     }
 
     /// @inheritdoc IAppStaking
@@ -402,52 +267,7 @@ contract AppStaking is
         nonReentrant
         returns (uint256 newTokenId)
     {
-        require(ownerOf(tokenId) == msg.sender, "Not owner");
-        require(to != address(0), "Invalid recipient address");
-        require(splitRatio > 0, "Split ratio must be greater than 0");
-        require(splitRatio <= 1e18, "Split ratio must be less than or equal to 100%");
-
-        Position storage position = _positions[tokenId];
-        require(position.cooldownEnd == 0, "Position is in cooldown");
-
-        // Update rewards for the original position
-        _updateReward(tokenId);
-
-        // Create new position
-        newTokenId = lastId++;
-        _mint(to, newTokenId);
-
-        uint256 splitAmount = position.amount * splitRatio / 1e18;
-        uint256 splitDeclaredValue = position.declaredValue * splitRatio / 1e18;
-
-        // Create new position with split values
-        _positions[newTokenId] = Position({
-            amount: splitAmount,
-            declaredValue: splitDeclaredValue,
-            rewardPerTokenPaid: rewardPerTokenStored,
-            rewards: 0,
-            cooldownEnd: 0,
-            rewardsUnlockAt: position.rewardsUnlockAt
-        });
-
-        // Inherit buy cooldown from original position
-        _buyCooldownEnd[newTokenId] = _buyCooldownEnd[tokenId];
-
-        // Inherit withdraw cooldown from original position
-        _withdrawCooldownStart[newTokenId] = _withdrawCooldownStart[tokenId];
-
-        // Update original position
-        position.amount -= splitAmount;
-        position.declaredValue -= splitDeclaredValue;
-
-        // Update tracking tokens for the new position
-        trackingToken.mint(to, splitAmount);
-        trackingToken.burn(msg.sender, splitAmount);
-
-        _updateReward(tokenId);
-        _updateReward(newTokenId);
-
-        emit PositionSplit(tokenId, newTokenId, msg.sender, to, splitAmount, splitDeclaredValue);
+        require(false, "paused");
     }
 
     /// @inheritdoc IAppStaking
@@ -457,43 +277,7 @@ contract AppStaking is
         nonReentrant
         returns (uint256 mergedTokenId)
     {
-        require(tokenId1 != tokenId2, "Token IDs must differ");
-        require(ownerOf(tokenId1) == msg.sender && ownerOf(tokenId2) == msg.sender, "Not owner of both tokens");
-
-        // Ensure neither position is in cooldown
-        Position storage position1 = _positions[tokenId1];
-        Position storage position2 = _positions[tokenId2];
-        require(position1.cooldownEnd == 0 && position2.cooldownEnd == 0, "Position in cooldown");
-
-        // Update rewards for both positions so that their rewards are up to date before merging
-        _updateReward(tokenId1);
-        _updateReward(tokenId2);
-
-        // Aggregate values
-        position1.amount += position2.amount;
-        position1.declaredValue += position2.declaredValue;
-        position1.rewards += position2.rewards;
-        // Keep the strictest rewards unlock schedule (the furthest date)
-        position1.rewardsUnlockAt = Math.max(position1.rewardsUnlockAt, position2.rewardsUnlockAt);
-
-        // Inherit cooldowns from the original position
-        _buyCooldownEnd[tokenId1] = Math.max(_buyCooldownEnd[tokenId1], _buyCooldownEnd[tokenId2]);
-        _withdrawCooldownStart[tokenId1] = Math.max(_withdrawCooldownStart[tokenId1], _withdrawCooldownStart[tokenId2]);
-
-        // Burn the second token and delete its storage
-        _burn(tokenId2);
-        delete _positions[tokenId2];
-        delete _buyCooldownEnd[tokenId2];
-        delete _withdrawCooldownStart[tokenId2];
-
-        // No change in totalStaked or tracking tokens is required since the overall amount stays the same
-
-        // Refresh accounting for the merged position
-        _updateReward(tokenId1);
-
-        emit PositionMerged(tokenId1, tokenId2, msg.sender, position1.amount, position1.declaredValue);
-
-        return tokenId1;
+        require(false, "paused");
     }
 
     function increaseDeclaredValue(uint256 tokenId, uint256 additionalDeclaredValue)
@@ -501,28 +285,7 @@ contract AppStaking is
         nonReentrant
         returns (uint256 taxPaid)
     {
-        require(ownerOf(tokenId) != address(0), "Position does not exist");
-        require(ownerOf(tokenId) == msg.sender, "Not owner");
-        require(_positions[tokenId].cooldownEnd == 0, "Position is in cooldown");
-        require(additionalDeclaredValue > 0, "Additional value must be greater than 0");
-
-        // Update rewards before mutation to keep accounting correct
-        _updateReward(tokenId);
-
-        // Calculate and collect Harberger tax on the new declared value increment.
-        // Caller MUST have already transferred the required tax tokens to this contract before calling.
-        taxPaid = _distributeTax(additionalDeclaredValue);
-
-        // Increase the declared value for the position
-        Position storage position = _positions[tokenId];
-        position.declaredValue += additionalDeclaredValue;
-        position.amount -= taxPaid;
-
-        require(position.amount > 0, "Position amount must be greater than 0");
-
-        _updateReward(tokenId);
-
-        emit PositionUpdated(tokenId, ownerOf(tokenId), position.amount, position.declaredValue);
+        require(false, "paused");
     }
 
     /// @inheritdoc IAppStaking
@@ -541,53 +304,21 @@ contract AppStaking is
     /// @notice Cancels the unstaking process and resets cooldown variables
     /// @param tokenId The position ID
     function _cancelUnstaking(uint256 tokenId) internal {
-        Position storage position = _positions[tokenId];
-
-        if (position.cooldownEnd > 0) {
-            _updateReward(tokenId);
-            position.cooldownEnd = 0;
-            position.rewardsUnlockAt = 0;
-            emit UnstakingCancelled(tokenId, msg.sender);
-        }
-
-        _updateReward(tokenId);
+        require(false, "paused");
     }
 
     /// @notice Claims rewards for a position
     /// @param tokenId The position ID
     /// @return reward The amount of rewards claimed
     function _claimRewards(uint256 tokenId) internal returns (uint256 reward) {
-        Position storage position = _positions[tokenId];
-        // todo
-        // require(block.timestamp >= position.rewardsUnlockAt, "Rewards in cooldown");
-
-        _updateReward(tokenId);
-
-        reward = position.rewards;
-        if (reward > 0) {
-            address owner = ownerOf(tokenId);
-            position.rewards = 0;
-            appToken.safeTransfer(owner, reward);
-            emit RewardsClaimed(tokenId, owner, reward);
-        }
+        require(false, "paused");
     }
 
     /// @notice Hooks into ERC721 transfers/mints/burns to keep trackingToken in sync.
     /// @dev When a position NFT moves between addresses, burn tracking tokens from the sender and mint to the receiver
     ///      equivalent to the position.amount. Mints and burns keep their existing behaviour.
     function _update(address to, uint256 tokenId, address auth) internal override returns (address from) {
-        // Call parent which performs the actual state update and returns the previous owner (or zero address on mint).
-        from = super._update(to, tokenId, auth);
-
-        // Skip for mint (from == 0) and burn (to == 0). Only handle transfers between non-zero addresses.
-        if (from != address(0) && to != address(0)) {
-            uint256 amt = _positions[tokenId].amount;
-            if (amt > 0) {
-                // Burn tracking tokens from the sender and mint to the receiver.
-                trackingToken.burn(from, amt);
-                trackingToken.mint(to, amt);
-            }
-        }
+        require(false, "paused");
     }
 
     /// @notice Distributes the tax to the operations treasury and protocol treasury
@@ -609,6 +340,10 @@ contract AppStaking is
             position.rewards = earned(tokenId);
             position.rewardPerTokenPaid = rewardPerTokenStored;
         }
+    }
+
+    function refundTokens(address to, uint256 amount) external onlyGovernor {
+        appToken.safeTransfer(to, amount);
     }
 
     /// @notice Returns the base URI for the NFT metadata

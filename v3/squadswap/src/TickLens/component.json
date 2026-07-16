@@ -10,10 +10,30 @@
     "build_command": "forge build --root \"src/TickLens\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7c9c9220b563a09167943fd327d50e858c0a6373",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405625"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5fbd88f04963c25e51ccae20951f815577a234c9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "399693"
+    },
     {
       "chain": "base",
       "chain_id": 8453,

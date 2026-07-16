@@ -10,10 +10,30 @@
     "build_command": "forge build --root \"src/CCIPDataAdapter\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0b8c6ec1495068abe2a25fb4e63b652d83467572",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394590"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x1b2a8d56967d00700dd5c94e27b1a116a1def8df",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394678"
+    },
     {
       "chain": "chain-1329",
       "chain_id": 1329,
@@ -23,6 +43,16 @@
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xf14535db61b2993264e16daed208a7603e749cdc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394680"
     }
   ]
 }

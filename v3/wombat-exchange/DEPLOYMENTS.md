@@ -1,6 +1,6 @@
 # wombat-exchange — deployments
 
-138 verified deployment(s) across 42 component(s).
+148 verified deployment(s) across 52 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -34,12 +34,14 @@
 | arbitrum | `0xbcd5e80dac3925416a8605b158cac3a2cc1ebd6e` | Asset-2 | impl | live | no |
 | arbitrum | `0xbcf4c3ac471686e4bf7bf2e38b2141ee1a47a661` | Asset-2 | impl | live | no |
 | arbitrum | `0xbd7568d25338940ba212e3f299d2ccc138fa35f0` | SkimmableAsset | impl | live | no |
+| arbitrum | `0xc37a89cdb064ac2921fcc8b3538ac0d6a3aadf48` | GnosisSafeProxy-3 | proxy | live | no |
 | arbitrum | `0xc4b2f992496376c6127e73f1211450322e580668` | WombatRouter-4 | impl | live | no |
 | arbitrum | `0xc74a9d15037886ea357f0ef243c50010b11133cb` | Asset-4 | impl | live | no |
 | arbitrum | `0xdce5e19a3e313d8be0b9eadc6b911c37f2cf3816` | Asset-2 | impl | live | no |
 | arbitrum | `0xdddc78f940e012cfc1ad04de2ca089eb94900145` | Asset | impl | live | no |
 | arbitrum | `0xe5232c2837204ee66952f365f104c09140fb2e43` | Asset | impl | live | no |
 | arbitrum | `0xe62880cc6872c9e9fb1ddd73f400850fdabe798d` | DynamicAsset | impl | live | no |
+| arbitrum | `0xeb7e2f8efac7ab8079837417b65cd927f05f7465` | WstETHAsset | impl | live | no |
 | arbitrum | `0xef9187a5f03b988326a79ebd21569a2319df2486` | Asset | impl | live | no |
 | arbitrum | `0xf4b72e9a18e4b7c65165e437c57ff6b6202e4505` | Asset | impl | live | no |
 | arbitrum | `0xf9c2356a21b60c0c4ddf2397f828dd158f82a274` | SkimmableAsset | impl | live | no |
@@ -47,6 +49,7 @@
 | avalanche | `0x375883a1f801138b6f5ee953a7a11072129ac624` | Asset-2 | impl | live | no |
 | avalanche | `0x4a88c44b8d9b9f3f2ba4d97236f737cf03df76cd` | WombatRouter | impl | live | no |
 | avalanche | `0xa15e4544d141aa98c4581a1ea10eb9048c3b3382` | BridgeToken-5 | proxy | live | no |
+| avalanche | `0xc096ff2606152ed2a06dd12f15a3c0466aa5a9fa` | sAVAXAsset | impl | live | no |
 | avalanche | `0xd05cf2bcaaee3a221e9efff58bf2874b9f11e47b` | Asset-2 | impl | live | no |
 | base | `0x375883a1f801138b6f5ee953a7a11072129ac624` | Asset-2 | impl | live | no |
 | base | `0x4a88c44b8d9b9f3f2ba4d97236f737cf03df76cd` | WombatRouter | impl | live | no |
@@ -55,6 +58,7 @@
 | base | `0xe2a60c52c4abb9fbc3f711da3cb9e633269dbc67` | Asset-2 | impl | live | no |
 | bsc | `0x0321d1d769cc1e81ba21a157992b635363740f86` | DynamicAsset-5 | impl | live | no |
 | bsc | `0x082059fd29672d59ce582176cf2cf6d0da8c9078` | Asset | impl | live | no |
+| bsc | `0x0e202a0bcad2712d1fdeeb94ec98c58beed0679f` | StkbnbAsset | impl | live | no |
 | bsc | `0x0e99fbfd04c255124a168c6ae68cce3c7dcc5760` | DynamicAsset | impl | live | no |
 | bsc | `0x10f7c62f47f19e3ce08fef38f74e3c0bb31fc24f` | BnbxAsset | impl | live | no |
 | bsc | `0x128fa2c0708bd0e357cd97eadaafa3bc9608228b` | AnkrStakingAsset | impl | live | no |
@@ -76,6 +80,7 @@
 | bsc | `0x4968e21be7bb0ced1bd3859d3db993ad3a05d2e6` | Asset | impl | live | no |
 | bsc | `0x4d41e9ede1783b85756d3f5bd136c50c4fb8e67e` | DynamicAsset-2 | impl | live | no |
 | bsc | `0x4f95fe57bea74b7f642cf9c097311959b9b988f7` | Asset-6 | impl | live | no |
+| bsc | `0x56177d9f2cb78422610ee8263fe9b7231216410c` | rBNBAsset | impl | live | no |
 | bsc | `0x591ccb3bac62f1710d013e090e36ee760d70ef87` | Asset-2 | impl | live | no |
 | bsc | `0x5a65cb65c601a396e79ff9e03650bdc97ed2de8b` | DynamicAsset | impl | live | no |
 | bsc | `0x5d38a3b0f04f6c6026c24ffa78ccdf421f91df38` | DynamicAsset | impl | live | no |
@@ -93,6 +98,7 @@
 | bsc | `0x8df8b50b73849f0433ee3314bd956e624e67b3ce` | Asset | impl | live | no |
 | bsc | `0x90f6f0e11ef071aecdbbca5ef01c2d630f2b5201` | DynamicAsset | impl | live | no |
 | bsc | `0x93012ad2367e247ca4275270cfc0bbcbf098abbc` | Asset-5 | impl | live | no |
+| bsc | `0x975693afe5bb69088a716e3a7f9bff77ec51d57f` | WBETHAsset | impl | live | no |
 | bsc | `0x9d0a463d5dcb82008e86bf506eb048708a15dd84` | Asset-6 | impl | live | no |
 | bsc | `0x9d2dead9547eb65aa78e239647a0c783f296406b` | ABnbcAsset | impl | live | no |
 | bsc | `0x9f9cea30d242d7f5527fa900f9fb0f77a98fda82` | Asset | impl | live | no |
@@ -101,11 +107,13 @@
 | bsc | `0xa649be04619a8f3b3475498e1ac15c90c9661c1a` | Asset-3 | impl | live | no |
 | bsc | `0xa6ef6c45ebfdbc13f6d032fbdfec9b389c1603e5` | Asset-3 | impl | live | no |
 | bsc | `0xa9a08133af8241e36193b57e4dfe43d147cd23cc` | PriceFeedAsset | impl | live | no |
+| bsc | `0xaa0811aff60fbe2d7d7d0a18f26e584b8c148ee8` | SnBNBAsset | impl | live | no |
 | bsc | `0xad6742a35fb341a9cc6ad674738dd8da98b94fb1` | WombatERC20 | impl | live | yes |
 | bsc | `0xb43ee2863370a56d3b7743edcd8407259100b8e2` | Asset-6 | impl | live | no |
 | bsc | `0xb5c9368545a26b91d5f7340205e5d9559f48bcf8` | Asset-3 | impl | live | no |
 | bsc | `0xb6d83f199b361403bda2c44712a77f55e7f8855f` | ABnbcAsset-2 | impl | live | no |
 | bsc | `0xbd459e33307a4ae92fffcb45c6893084cfc273b1` | SkimmableAsset | impl | live | no |
+| bsc | `0xc37a89cdb064ac2921fcc8b3538ac0d6a3aadf48` | GnosisSafeProxy-2 | proxy | live | no |
 | bsc | `0xc74a9d15037886ea357f0ef243c50010b11133cb` | Asset-2 | impl | live | no |
 | bsc | `0xcec37c0803f00d4a622f9e2b1f682d627b62279b` | Asset | impl | live | no |
 | bsc | `0xcf434949c242c2d32514ba971947bd3700efb015` | Asset-3 | impl | live | no |
@@ -117,7 +125,9 @@
 | bsc | `0xeaba290b154af45de72fdf2a40e56349e4e68ac2` | Asset-3 | impl | live | no |
 | bsc | `0xf319947ece3823b790dd87b0a509396fe325745a` | Asset-6 | impl | live | no |
 | bsc | `0xf9bdc872d75f76b946e0770f96851b1f2f653cac` | Asset-3 | impl | live | no |
+| ethereum | `0x25c9dd8a3774ef7c918cd28ff59cf9e29504c914` | ERC4626Asset | impl | live | no |
 | ethereum | `0x3f90a5a47364c0467031fb00246192d40e3d2d9d` | Asset-4 | impl | live | no |
+| ethereum | `0x5781b4fe4fadb61ea2483eedd9498388f9b353b1` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0x5dace27d0b921b177cd9c6706c6acdeb3ec7bea7` | Asset-4 | impl | live | no |
 | ethereum | `0x6966553568634f4225330d559a8783de7649c7d3` | Asset-5 | impl | live | no |
 | ethereum | `0x6bb82a9b0b9b9716b885baeefdbe47b685a0f919` | WombatRouter-2 | impl | live | no |

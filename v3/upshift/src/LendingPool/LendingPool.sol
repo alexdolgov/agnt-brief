@@ -4,6 +4,19 @@ pragma solidity >= 0.8.26;
 
 
 
+interface ITimelockedCall {
+    function initScheduler(address addr, uint256 newTimeLockDuration) external;
+    function enableScheduler(address addr) external;
+    function disableScheduler(address addr) external;
+
+    function schedule(bytes32 h, address consumerAddr) external;
+    function consume(bytes32 h) external;
+    function consumeOwnership(bytes32 h, address prevOwnerAddr, address newOwnerAddr) external;
+}
+
+
+
+
 
 
 
@@ -121,6 +134,7 @@ interface IPeerToPeerOpenTermLoan {
     function callLoan(uint256 callbackPeriodInSeconds, uint256 gracePeriodInSeconds) external;
     function liquidate() external;
     function proposeNewApr(uint256 newAprWithTwoDecimals) external;
+    function acceptPrincipalIncrease() external;
     function changeOracle(address newOracle) external;
     function changeLateFees(uint256 lateInterestFeeWithTwoDecimals, uint256 latePrincipalFeeWithTwoDecimals) external;
     function changeMaintenanceCollateralRatio(uint256 maintenanceCollateralRatioWith2Decimals) external;
@@ -129,6 +143,7 @@ interface IPeerToPeerOpenTermLoan {
 
     // Functions available to the borrower only
     function acceptApr() external;
+    function proposePrincipalIncrease(uint256 additionalPrincipalAmount) external;
     function borrowerCommitment() external;
     function claimCollateral() external;
     function repay(uint256 paymentAmount) external;
@@ -1582,6 +1597,8 @@ abstract contract BaseUpgradeableERC20 is IERC20, Initializable, BaseReentrancyG
     /// @dev The allowance of each spender, which is set by each owner
     mapping(address => mapping(address => uint256)) internal _allowances;
 
+    mapping(address => bool) public isBlacklisted;
+
     /**
      * @notice This event is triggered when the maximum limit for minting tokens is updated.
      * @param prevValue The previous limit
@@ -1592,14 +1609,6 @@ abstract contract BaseUpgradeableERC20 is IERC20, Initializable, BaseReentrancyG
     // --------------------------------------------------------------------------
     // Modifiers
     // --------------------------------------------------------------------------
-    /**
-     * @notice Indicates if this contract implementation was initialized at the proxy
-     * @dev Throws if the contract was not initialized
-     */
-    modifier onlyIfInitialized() {
-        require(_getInitializedVersion() != type(uint8).max, "Contract not initialized yet");
-        _;
-    }
 
     // --------------------------------------------------------------------------
     // ERC-20 interface implementation
@@ -1610,7 +1619,7 @@ abstract contract BaseUpgradeableERC20 is IERC20, Initializable, BaseReentrancyG
      * @param value The amount to be transferred.
      * @return Returns true in case of success.
      */
-    function transfer(address to, uint256 value) external override onlyIfInitialized nonReentrant returns (bool) {
+    function transfer(address to, uint256 value) external override nonReentrant returns (bool) {
         return _executeErc20Transfer(msg.sender, to, value);
     }
 
@@ -1623,7 +1632,7 @@ abstract contract BaseUpgradeableERC20 is IERC20, Initializable, BaseReentrancyG
      * @param value uint256 the amount of tokens to be transferred
      * @return Returns true in case of success.
      */
-    function transferFrom(address from, address to, uint256 value) external override onlyIfInitialized nonReentrant returns (bool) {
+    function transferFrom(address from, address to, uint256 value) external override nonReentrant returns (bool) {
         uint256 currentAllowance = _allowances[from][msg.sender];
         require(currentAllowance >= value, "Amount exceeds allowance");
 
@@ -1644,7 +1653,7 @@ abstract contract BaseUpgradeableERC20 is IERC20, Initializable, BaseReentrancyG
      * @param value The amount of tokens to be spent.
      * @return Returns true in case of success.
      */
-    function approve(address spender, uint256 value) external override onlyIfInitialized nonReentrant returns (bool) {
+    function approve(address spender, uint256 value) external override nonReentrant returns (bool) {
         _approveSpender(msg.sender, spender, value);
         return true;
     }
@@ -1653,7 +1662,7 @@ abstract contract BaseUpgradeableERC20 is IERC20, Initializable, BaseReentrancyG
      * @notice Gets the current version of the token.
      * @return uint8 The current version of the contract.
      */
-    function getInitializedVersion() external view onlyIfInitialized returns (uint8) {
+    function getInitializedVersion() external view returns (uint8) {
         return _getInitializedVersion();
     }
 
@@ -1661,7 +1670,7 @@ abstract contract BaseUpgradeableERC20 is IERC20, Initializable, BaseReentrancyG
      * @notice Gets the total circulating supply of tokens
      * @return uint256 The total circulating supply of tokens
      */
-    function totalSupply() external view override onlyIfInitialized returns (uint256) {
+    function totalSupply() external view override returns (uint256) {
         return _totalSupply;
     }
 
@@ -1670,7 +1679,7 @@ abstract contract BaseUpgradeableERC20 is IERC20, Initializable, BaseReentrancyG
      * @param addr The address to query the balance of.
      * @return uint256 An uint256 representing the amount owned by the passed address.
      */
-    function balanceOf(address addr) external view override onlyIfInitialized returns (uint256) {
+    function balanceOf(address addr) external view override returns (uint256) {
         return _balances[addr];
     }
 
@@ -1680,7 +1689,7 @@ abstract contract BaseUpgradeableERC20 is IERC20, Initializable, BaseReentrancyG
      * @param spenderAddr address The address which will spend the funds.
      * @return uint256 A uint256 specifying the amount of tokens still available for the spender.
      */
-    function allowance(address ownerAddr, address spenderAddr) external view override onlyIfInitialized returns (uint256) {
+    function allowance(address ownerAddr, address spenderAddr) external view override returns (uint256) {
         return _allowances[ownerAddr][spenderAddr];
     }
 
@@ -1688,7 +1697,7 @@ abstract contract BaseUpgradeableERC20 is IERC20, Initializable, BaseReentrancyG
      * @notice Gets the maximum token supply.
      * @return uint256 The maximum token supply.
      */
-    function maxSupply() external view onlyIfInitialized returns (uint256) {
+    function maxSupply() external view returns (uint256) {
         return _maxSupply;
     }
 
@@ -1839,6 +1848,7 @@ abstract contract BaseUpgradeableERC4626 is IERC4626, BaseUpgradeableERC20 {
         address receiver
     ) external override nonReentrant ifConfigured ifDepositsNotPaused returns (uint256 shares) {
         require(receiver != address(0) && receiver != address(this), "Invalid receiver");
+        require(!isBlacklisted[msg.sender] && !isBlacklisted[receiver], "Address blacklisted");
         require(assets > 0, "Assets amount required");
         require(assets <= maxDeposit(receiver), "Deposit limit reached");
 
@@ -1860,6 +1870,7 @@ abstract contract BaseUpgradeableERC4626 is IERC4626, BaseUpgradeableERC20 {
         address receiver
     ) external override nonReentrant ifConfigured ifDepositsNotPaused returns (uint256 assets) {
         require(receiver != address(0) && receiver != address(this), "Invalid receiver");
+        require(!isBlacklisted[msg.sender] && !isBlacklisted[receiver], "Address blacklisted");
         require(shares > 0, "Shares amount required");
         require(shares <= maxMint(receiver), "ERC4626: mint more than max");
 
@@ -1873,7 +1884,7 @@ abstract contract BaseUpgradeableERC4626 is IERC4626, BaseUpgradeableERC20 {
      * @notice Gets the underlying asset of the pool.
      * @return address The address of the asset.
      */
-    function asset() external view override onlyIfInitialized returns (address) {
+    function asset() external view override returns (address) {
         return address(_underlyingAsset);
     }
 
@@ -1881,47 +1892,47 @@ abstract contract BaseUpgradeableERC4626 is IERC4626, BaseUpgradeableERC20 {
      * @notice Gets the total assets amount managed by the pool.
      * @return uint256 The assets amount.
      */
-    function totalAssets() external view virtual override ifConfigured returns (uint256) {
+    function totalAssets() external view virtual override returns (uint256) {
         return _getTotalAssets();
     }
 
-    function previewDeposit(uint256 assets) public view virtual override ifConfigured returns (uint256) {
+    function previewDeposit(uint256 assets) public view virtual override returns (uint256) {
         return _convertToShares(assets, MathUpgradeable.Rounding.Down);
     }
 
-    function previewMint(uint256 shares) public view virtual override ifConfigured returns (uint256) {
+    function previewMint(uint256 shares) public view virtual override returns (uint256) {
         return _convertToAssets(shares, MathUpgradeable.Rounding.Up);
     }
 
-    function previewWithdraw(uint256 assets) public view virtual override ifConfigured returns (uint256) {
+    function previewWithdraw(uint256 assets) public view virtual override returns (uint256) {
         return _convertToShares(assets, MathUpgradeable.Rounding.Up);
     }
 
-    function previewRedeem(uint256 shares) public view virtual override ifConfigured returns (uint256 assets) {
+    function previewRedeem(uint256 shares) public view virtual override returns (uint256 assets) {
         (, assets) = _previewRedeemWithFees(shares);
     }
 
-    function convertToShares(uint256 assets) public view virtual override ifConfigured returns (uint256) {
+    function convertToShares(uint256 assets) public view virtual override returns (uint256) {
         return _convertToShares(assets, MathUpgradeable.Rounding.Down);
     }
 
-    function convertToAssets(uint256 shares) public view virtual override ifConfigured returns (uint256) {
+    function convertToAssets(uint256 shares) public view virtual override returns (uint256) {
         return _convertToAssets(shares, MathUpgradeable.Rounding.Down);
     }
 
-    function maxDeposit(address) public view virtual override ifConfigured returns (uint256) {
-        return _isVaultHealthy() ? maxDepositAmount : 0;
+    function maxDeposit(address) public view virtual override returns (uint256) {
+        return (_totalSupply == 0 || _getTotalAssets() > 0) ? maxDepositAmount : 0;
     }
 
-    function maxMint(address) public view virtual override ifConfigured returns (uint256) {
+    function maxMint(address) public view virtual override returns (uint256) {
         return _maxSupply;
     }
 
-    function maxWithdraw(address holderAddr) public view virtual override ifConfigured returns (uint256) {
+    function maxWithdraw(address holderAddr) public view virtual override returns (uint256) {
         return _convertToAssets(_balances[holderAddr], MathUpgradeable.Rounding.Down);
     }
 
-    function maxRedeem(address holderAddr) public view virtual override ifConfigured returns (uint256) {
+    function maxRedeem(address holderAddr) public view virtual override returns (uint256) {
         return _balances[holderAddr];
     }
 
@@ -1977,10 +1988,6 @@ abstract contract BaseUpgradeableERC4626 is IERC4626, BaseUpgradeableERC20 {
     // Inner views
     // --------------------------------------------------------------------------
     function _getTotalAssets() internal view virtual returns (uint256);
-
-    function _isVaultHealthy() internal view virtual returns (bool) {
-        return _totalSupply == 0 || _getTotalAssets() > 0;
-    }
 
     // Internal conversion function (from assets to shares) to apply when the vault is empty.
     function _initialConvertToShares(uint256 assets, MathUpgradeable.Rounding) internal view virtual returns (uint256 shares) {
@@ -2044,6 +2051,8 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
     /// @notice The total amount of collectable fees, at any point in time.
     uint256 public totalCollectableFees;
 
+    address public settlementAccount;
+
     /// @dev The liability (forecast) that needs to be fulfilled at a given point in time
     mapping (bytes32 => RedeemSummary) internal _dailyRequirement;
 
@@ -2051,7 +2060,7 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
     mapping (bytes32 => address[]) internal _uniqueReceiversPerCluster;
 
     /// @dev The index of each unique receiver per cluster
-    mapping (bytes32 => mapping(address => uint256)) private _receiverIndexes;
+    mapping (bytes32 => mapping(address => uint256)) internal _receiverIndexes;
 
     /// @dev The amount of underlying tokens that can be claimed by a given address at a specific point in time
     mapping (bytes32 => mapping(address => uint256)) internal _receiverAmounts;
@@ -2059,7 +2068,11 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
     /// @dev The number of shares that can be burned by a given address at a specific point in time
     mapping (bytes32 => mapping(address => uint256)) internal _burnableAmounts;
 
+    /// @dev Tracks the applicable fee per receiver per period
     mapping (bytes32 => mapping(address => uint256)) internal _feeAmountsByReceiver;
+
+    /// @dev Tracks the latest unix epoch of the redeem request for a given receiver
+    mapping (bytes32 => mapping(address => uint256)) internal _traceableRequests;
 
     /**
      * @notice This event is triggered when a holder requests a withdrawal.
@@ -2073,6 +2086,17 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
      * @param day The day component of the scheduled date.
      */
     event WithdrawalRequested (address ownerAddr, address receiverAddr, uint256 shares, uint256 assets, uint256 fee, uint256 year, uint256 month, uint256 day);
+
+    /**
+     * @notice This event is triggered when funds are effectively transferred to the receiving address specified by the holder.
+     * @param assetsAmount The amount of underlying assets sent to the receiving address.
+     * @param processedOn The unix epoch in which the claim was processed.
+     * @param receiverAddr The address of the receiver.
+     * @param requestedOn The unix epoch of the withdrawal request.
+     * @param wasBlacklisted Indicates if the receiver was blacklisted. In this case the funds are sent to the settlement account.
+     */
+    event WithdrawalProcessed(uint256 assetsAmount, uint256 processedOn, address receiverAddr, uint256 requestedOn, bool wasBlacklisted);
+
 
     // ----------------------------------------
     // ERC-4626 endpoint overrides
@@ -2131,6 +2155,8 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
         uint256 assets, 
         uint256 claimableEpoch
     ) {
+        require(!isBlacklisted[msg.sender] && !isBlacklisted[receiverAddr] && !isBlacklisted[holderAddr], "Address blacklisted");
+
         uint256 year;
         uint256 month;
         uint256 day;
@@ -2159,6 +2185,8 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
         uint256 day,
         address receiverAddr
     ) external nonReentrant ifConfigured ifWithdrawalsNotPaused returns (uint256, uint256) {
+        require(!isBlacklisted[msg.sender] && !isBlacklisted[receiverAddr], "Address blacklisted");
+
         // This function is provided as a fallback.
         // If -for any reason- a third party does not process the scheduled withdrawals then the 
         // legitimate receiver can claim the respective funds on their own.
@@ -2181,6 +2209,8 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
         uint256 maxLimit
     ) external nonReentrant ifConfigured ifWithdrawalsNotPaused {
         require(maxLimit > 0, "Limit required");
+        require(!isBlacklisted[msg.sender], "Address blacklisted");
+        require(settlementAccount != address(0), "Settlement account not set");
 
         bytes32 dailyCluster = keccak256(abi.encode(year, month, day));
 
@@ -2229,9 +2259,7 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
         _burnErc20(address(this), sharesToBurn);
 
         // Untrusted external calls        
-        for (uint256 i; i < receivers.length; i++) {
-            SafeERC20.safeTransfer(_underlyingAsset, receivers[i], amounts[i]);
-        }
+        _sendFunds(dailyCluster, receivers, amounts);
 
         // Balance check, provided the external asset is untrusted
         require(IERC20(_underlyingAsset).balanceOf(address(this)) == balanceBefore - assetsToSend, "Balance check failed");
@@ -2247,7 +2275,7 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
      * @return day The day.
      * @return claimableEpoch The Unix epoch at which your withdrawal request can be claimed.
      */
-    function getWithdrawalEpoch() external view ifConfigured returns (
+    function getWithdrawalEpoch() external view returns (
         uint256 year, 
         uint256 month, 
         uint256 day,
@@ -2270,7 +2298,7 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
         uint256 year, 
         uint256 month, 
         uint256 day
-    ) external view onlyIfInitialized returns (uint256 shares, uint256 assets) {
+    ) external view returns (uint256 shares, uint256 assets) {
         bytes32 dailyCluster = keccak256(abi.encode(year, month, day));        
         shares = _dailyRequirement[dailyCluster].shares;
         assets = _dailyRequirement[dailyCluster].assets;
@@ -2290,7 +2318,7 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
         uint256 month, 
         uint256 day,
         address receiverAddr
-    ) external view onlyIfInitialized returns (uint256) {
+    ) external view returns (uint256) {
         bytes32 dailyCluster = keccak256(abi.encode(year, month, day));
         return _receiverAmounts[dailyCluster][receiverAddr];
     }
@@ -2309,7 +2337,7 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
         uint256 month, 
         uint256 day,
         address receiverAddr
-    ) external view onlyIfInitialized returns (uint256) {
+    ) external view returns (uint256) {
         bytes32 dailyCluster = keccak256(abi.encode(year, month, day));
 
         return _burnableAmounts[dailyCluster][receiverAddr];
@@ -2327,7 +2355,7 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
         uint256 year, 
         uint256 month, 
         uint256 day
-    ) external view ifConfigured returns (uint256 totalTransactions, uint256 executionEpoch) {
+    ) external view returns (uint256 totalTransactions, uint256 executionEpoch) {
         bytes32 dailyCluster = keccak256(abi.encode(year, month, day));
 
         totalTransactions = _uniqueReceiversPerCluster[dailyCluster].length;
@@ -2349,8 +2377,7 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
         uint256 day, 
         uint256 effectiveAssetsAmount
     ) {
-        require(receiverAddr != address(0) && receiverAddr != address(this), "Invalid receiver");
-        require(holderAddr != address(0) && holderAddr != address(this), "Invalid holder");
+        require(holderAddr != address(this), "Invalid holder");
         require(shares > 0, "Shares amount required");
         require(_balances[holderAddr] >= shares, "Insufficient shares");
 
@@ -2397,6 +2424,11 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
         _burnableAmounts[dailyCluster][receiverAddr] += shares;
         _feeAmountsByReceiver[dailyCluster][receiverAddr] += applicableFee;
 
+        // The unix epoch of the latest redeem request. It overrides any previous requests.
+        // For example, if the holder submits 1000 requests then the mapping below gets updated based on the latest request.
+        _traceableRequests[dailyCluster][receiverAddr] = block.timestamp;
+
+        // Emit the event
         emit WithdrawalRequested(holderAddr, receiverAddr, shares, assetsAmount, applicableFee, year, month, day);
     }
 
@@ -2406,15 +2438,10 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
         uint256 day,
         address receiverAddr
     ) internal returns (uint256, uint256) {
-        require(receiverAddr != address(0), "Invalid receiver");
-
         bytes32 dailyCluster = keccak256(abi.encode(year, month, day));
 
         uint256 shares = _burnableAmounts[dailyCluster][receiverAddr];
         require(shares > 0, "No shares for receiver");
-
-        uint256 receiverIndex = _receiverIndexes[dailyCluster][receiverAddr];
-        require(receiverIndex > 0, "Invalid receiver index");
 
         uint256 claimableAssets = _receiverAmounts[dailyCluster][receiverAddr];
         uint256 assetFee = _feeAmountsByReceiver[dailyCluster][receiverAddr];
@@ -2436,6 +2463,7 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
         _deleteReceiver(dailyCluster, receiverAddr);
 
         _burnErc20(address(this), shares);
+        emit WithdrawalProcessed(claimableAssets, block.timestamp, receiverAddr, _traceableRequests[dailyCluster][receiverAddr], false);
 
         // Make sure the pool has enough balance to cover withdrawals.
         uint256 balanceBefore = IERC20(_underlyingAsset).balanceOf(address(this));
@@ -2449,19 +2477,29 @@ abstract contract TimelockedERC4626 is BaseUpgradeableERC4626 {
 
     function _deleteReceiver(bytes32 dailyCluster, address addr) private {
         uint256 idx = _receiverIndexes[dailyCluster][addr] - 1;
-        //require(idx < _uniqueReceiversPerCluster[dailyCluster].length, "Invalid receiver index");
-        require(_uniqueReceiversPerCluster[dailyCluster][idx] == addr, "Address/index mismatch");
-
         uint256 totalReceiversByDate = _uniqueReceiversPerCluster[dailyCluster].length;
         address lastItem = _uniqueReceiversPerCluster[dailyCluster][totalReceiversByDate - 1];
 
         if (addr != lastItem) {
             _uniqueReceiversPerCluster[dailyCluster][totalReceiversByDate - 1] = _uniqueReceiversPerCluster[dailyCluster][idx];
             _uniqueReceiversPerCluster[dailyCluster][idx] = lastItem;
+            _receiverIndexes[dailyCluster][lastItem] = idx + 1;
         }
         
         _uniqueReceiversPerCluster[dailyCluster].pop();
         _receiverIndexes[dailyCluster][addr] = 0;
+    }
+
+    function _sendFunds(bytes32 dailyCluster, address[] memory receivers, uint256[] memory amounts) private {
+        address recipientAddr;
+
+        for (uint256 i; i < receivers.length; i++) {
+            recipientAddr = (isBlacklisted[receivers[i]]) ? settlementAccount : receivers[i];
+            
+            emit WithdrawalProcessed(amounts[i], block.timestamp, receivers[i], _traceableRequests[dailyCluster][receivers[i]], isBlacklisted[receivers[i]]);
+
+            SafeERC20.safeTransfer(_underlyingAsset, recipientAddr, amounts[i]);
+        }
     }
 }
 
@@ -2488,10 +2526,9 @@ abstract contract OwnableLiquidityPool is TimelockedERC4626, BaseOwnable {
         IERC20 token,
         address destinationAddr
     ) external virtual nonReentrant ifConfigured onlyOwner {
-        require(destinationAddr != address(0) && destinationAddr != address(this), "Invalid address");
+        require(!isBlacklisted[destinationAddr], "Address blacklisted");
 
         uint256 currentBalance = token.balanceOf(address(this));
-        require(currentBalance > 0, "Insufficient balance");
 
         if (address(token) == address(_underlyingAsset)) {
             // Automatically pause deposits and withdrawals in order to prevent fluctuations on the price of the LP token
@@ -2507,7 +2544,7 @@ abstract contract OwnableLiquidityPool is TimelockedERC4626, BaseOwnable {
      * @notice Gets the owner of the pool.
      * @return address The address who owns the pool.
      */
-    function owner() external view onlyIfInitialized returns (address) {
+    function owner() external view returns (address) {
         return _owner;
     }
 }
@@ -2546,6 +2583,15 @@ abstract contract AbstractLender is OwnableLiquidityPool {
     }
 
     /**
+     * @notice Accepts the principal increase proposed by the borrrower.
+     * @param loanAddr The address of the loan.
+     */
+    function acceptPrincipalIncrease(address loanAddr) external nonReentrant ifConfigured onlyLoansOperator {
+        _ensureValidLoan(loanAddr);
+        IPeerToPeerOpenTermLoan(loanAddr).acceptPrincipalIncrease();
+    }
+
+    /**
      * @notice Updates the late fees of the loan specified.
      * @param loanAddr The address of the loan.
      * @param lateInterestFeeWithTwoDecimals The late interest fee (percentage) with 2 decimal places.
@@ -2576,16 +2622,16 @@ abstract contract AbstractLender is OwnableLiquidityPool {
     /**
      * @notice Calls the loan specified.
      * @param loanAddr The address of the loan.
-     * @param callbackPeriodInHours The callback period, measured in hours.
-     * @param gracePeriodInHours The grace period, measured in hours.
+     * @param callbackPeriodInSeconds The callback period, measured in seconds.
+     * @param gracePeriodInSeconds The grace period, measured in seconds.
      */
     function callLoan(
         address loanAddr, 
-        uint256 callbackPeriodInHours, 
-        uint256 gracePeriodInHours
+        uint256 callbackPeriodInSeconds, 
+        uint256 gracePeriodInSeconds
     ) external nonReentrant ifConfigured onlyLoansOperator {
         _ensureValidLoan(loanAddr);
-        IPeerToPeerOpenTermLoan(loanAddr).callLoan(callbackPeriodInHours, gracePeriodInHours);
+        IPeerToPeerOpenTermLoan(loanAddr).callLoan(callbackPeriodInSeconds, gracePeriodInSeconds);
     }
 
     /**
@@ -2686,6 +2732,9 @@ abstract contract BaseLendingPool is HookableLender {
     /// @notice Triggers when the lending pool deploys a new loan.
     event NewLoanDeployedByPool(address loanAddr, uint256 aprWithTwoDecimals);
 
+    /// @notice Triggers when the address of the fee collector changes.
+    event FeeCollectorUpdated(address newFeeCollectorAddr);
+
     /**
      * @notice Deploys a new loan on behalf of the Credit Pool. This contract acts as a lender.
      * @param loanParams The parameters of the loan to deploy.
@@ -2745,13 +2794,20 @@ abstract contract BaseLendingPool is HookableLender {
     /**
      * @notice Collects the fees available in the pool. Fees are sent to the fee collector address.
      */
-    function collectFees() external nonReentrant ifConfigured onlyOwner {
-        require(totalCollectableFees > 0, "No fees to collect");
-        
+    function collectFees() external nonReentrant ifConfigured onlyOwner {        
         uint256 feesAmount = totalCollectableFees;
 
         totalCollectableFees = 0;
         SafeERC20.safeTransfer(_underlyingAsset, feesCollector, feesAmount);
+    }
+
+    /**
+     * @notice Updates the address of the fees collector.
+     * @param newFeeCollectorAddr The new address for the fees collector.
+     */
+    function updateFeeCollector(address newFeeCollectorAddr) external nonReentrant ifConfigured onlyOwner {
+        feesCollector = newFeeCollectorAddr;
+        emit FeeCollectorUpdated(newFeeCollectorAddr);
     }
 
     /**
@@ -2769,6 +2825,9 @@ abstract contract BaseLendingPool is HookableLender {
  * @dev The lending pool is an address-preserving transparent proxy.
  */
 contract LendingPool is BaseLendingPool {
+    /// @notice The address of the scheduler contract. This contract handles time-locked calls.
+    address public scheduledCallerAddress;
+
     constructor() {
         _disableInitializers();
     }
@@ -2811,6 +2870,7 @@ contract LendingPool is BaseLendingPool {
      * @param newLoansOperator The address responsible for managing the loans of the pool.
      * @param newLoansDeployerAddress The address of the smart contract you will use for deploying loans on behalf of this pool.
      * @param newFeesCollectorAddr The address of the fees collector.
+     * @param newScheduledCallerAddress The address of the contract that handles time-locked function calls.
      * @param newProcessingHour The hour (UTC) at which all withdrawal requests will be processed. The value ranges from [0..23]
      */
     function configurePool(
@@ -2822,8 +2882,9 @@ contract LendingPool is BaseLendingPool {
         address newLoansOperator,
         address newLoansDeployerAddress,
         address newFeesCollectorAddr,
+        address newScheduledCallerAddress,
         uint8 newProcessingHour
-    ) external onlyIfInitialized nonReentrant ifNotConfigured onlyOwner {
+    ) external nonReentrant ifNotConfigured onlyOwner {
         require(newLoansOperator != address(0), "Operator required");
         require(newLoansDeployerAddress != address(0), "Deployer required");
         require(newFeesCollectorAddr != address(0), "Collector required");
@@ -2844,19 +2905,38 @@ contract LendingPool is BaseLendingPool {
         // Resume deposits and withdrawals
         depositsPaused = false;
         withdrawalsPaused = false;
+        scheduledCallerAddress = newScheduledCallerAddress;
+
+        // Set the initial scheduler and duration for time-locked function calls
+        ITimelockedCall(newScheduledCallerAddress).initScheduler(_owner, 24 hours);
     }
 
     /**
      * @notice Transfers ownership of the contract to a new account.
-     * @dev Throws if the caller is not the current owner. Additional constraints apply.
+     * @dev Throws if the tx was not scheduled by the original owner. Also fails if the time-lock is still in place.
      * @param newOwner The new owner of this contract.
      */
-    function transferOwnership(address newOwner) external onlyIfInitialized nonReentrant onlyOwner {
-        require(newOwner != address(0) && newOwner != address(this), "Invalid owner");
-        require(newOwner != loansOperator, "Owner cannot be operator");
-        require(newOwner != loansDeployerAddress, "Owner cannot be deployer");
+    function transferOwnership(address newOwner) external nonReentrant onlyOwner {
+        // Checks
+        //require(newOwner != address(0) && newOwner != address(this), "Invalid owner");
+        //require(newOwner != loansOperator, "Owner cannot be operator");
+        //require(newOwner != loansDeployerAddress, "Owner cannot be deployer");
+        require(!isBlacklisted[newOwner], "Address blacklisted");
 
+        // State changes
+        address prevOwnerAddr = _owner;
         _transferOwnership(newOwner);
+
+        // Attempt to consume the time-locked hash. The call reverts if the hash can't be consumed.
+        bytes32 h = keccak256(abi.encode(
+            abi.encodeWithSignature(
+                "transferOwnership(address)", 
+                newOwner
+            )
+        ));
+
+        // This is a special case for consuming a hash. It rotates the scheduler in a single call.
+        ITimelockedCall(scheduledCallerAddress).consumeOwnership(h, prevOwnerAddr, newOwner);
     }
 
     /**
@@ -2892,6 +2972,16 @@ contract LendingPool is BaseLendingPool {
     function updateTimelockDuration(uint256 newDuration) external nonReentrant ifConfigured onlyOwner {
         if (newDuration <= lagDuration) require(globalLiabilityShares == 0, "Process claims first");
         lagDuration = newDuration;
+
+        // Build the hash of this call and attempt to consume it. The call reverts if the hash can't be consumed.
+        bytes32 h = keccak256(abi.encode(
+            abi.encodeWithSignature(
+                "updateTimelockDuration(uint256)", 
+                newDuration
+            )
+        ));
+
+        ITimelockedCall(scheduledCallerAddress).consume(h);
     }
 
     /**
@@ -2900,8 +2990,32 @@ contract LendingPool is BaseLendingPool {
      */
     function updateWithdrawalFee(uint256 newWithdrawalFee) external nonReentrant ifConfigured onlyOwner {
         require(newWithdrawalFee < 9900, "Fee too high");
-        require(withdrawalFee != newWithdrawalFee, "Fee already set");
-
         withdrawalFee = newWithdrawalFee;
+    }
+
+    /**
+     * @notice Blacklists the address specified.
+     * @param addr The address to blacklist
+     */
+    function addToBlacklist(address addr) external nonReentrant ifConfigured onlyOwner {
+        require(addr != _owner, "Cannot blacklist owner");
+        isBlacklisted[addr] = true;
+    }
+
+    /**
+     * @notice Removes the address specified from the blacklist.
+     * @param addr The address to remove from the blacklist
+     */
+    function removeFromBlacklist(address addr) external nonReentrant ifConfigured onlyOwner {
+        isBlacklisted[addr] = false;
+    }
+
+    /**
+     * @notice Sets the address of the settlement account.
+     * @param addr The address of the settlement account.
+     */
+    function updateSettlementAccount(address addr) external nonReentrant ifConfigured onlyOwner {
+        //require(addr != address(0), "Invalid address");
+        settlementAccount = addr;
     }
 }

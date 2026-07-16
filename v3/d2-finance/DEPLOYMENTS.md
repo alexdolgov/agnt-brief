@@ -1,6 +1,6 @@
 # d2-finance — deployments
 
-327 verified deployment(s) across 112 component(s).
+330 verified deployment(s) across 114 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -26,6 +26,7 @@
 | arbitrum | `0x3a89ab3af8de88839e188160a1fa5d9d442621d8` | VaultV1Whitelisted | impl | live | no |
 | arbitrum | `0x3af80995db5a8897714dabdf214d023bcf943266` | Strategy-2 | impl | live | no |
 | arbitrum | `0x3b3a8ca73d810420692f3c6409b1e2ee00ed35a0` | GMXV2_Module-4 | impl | live | no |
+| arbitrum | `0x3d04fbea4e8315846dd8a65bdb2e477a357a81d7` | GnosisSafeProxy | proxy | live | no |
 | arbitrum | `0x3d78271daf904d962cd3015f8e6311b1e917b52d` | WETH_Module | impl | live | no |
 | arbitrum | `0x3e8bbe74d16fab85870f7221b52b039b8c55768a` | Strategy_ETH-2 | impl | live | no |
 | arbitrum | `0x3fdc9d2a6dde60ff7b6cabe76fcb6a4236a49ece` | Strategy_D2 | impl | live | no |
@@ -45,6 +46,7 @@
 | arbitrum | `0x526ec68ace50eaf3b09cf6ec96d2e4de4c56d3b4` | VaultV1Whitelisted | impl | live | no |
 | arbitrum | `0x5630128c6726481966074ec1d16c9e386202f513` | VaultV3-2 | impl | live | no |
 | arbitrum | `0x56f1f223e972e3fb95681baf39fe227e25a2563b` | VaultV1Whitelisted-6 | impl | live | no |
+| arbitrum | `0x571b8bd8c14850942d53b3eb5e482ecfd3e7645d` | GnosisSafeProxyFactory | proxy | live | no |
 | arbitrum | `0x577fcbf8d16d8b38ecd517e9badfc098f080cea2` | VaultV1Whitelisted-3 | impl | live | no |
 | arbitrum | `0x57f467c9c4639b066f5a4d676cd8ed7d87c1791b` | VaultV0-8 | impl | live | no |
 | arbitrum | `0x58036a82965af474f2aa591cdd8d7ff86b55fa28` | Strategy-3 | impl | live | no |
@@ -207,6 +209,7 @@
 | arbitrum | `0xe654581dc9f3ba93f375a99d1146bdbdf9d3d460` | ContributorVesting | impl | live | no |
 | arbitrum | `0xe695847017f14fd5dba09fb494c479ba9c1b2e8c` | ContributorVesting | impl | live | no |
 | arbitrum | `0xe6eb2cb7807ccbe930375572b3b6c24f57e23cc7` | ContributorVesting | impl | live | no |
+| arbitrum | `0xe7eb925300075e49fc5caad5d408a50dd22f92d6` | GnosisSafeProxyFactory | proxy | live | no |
 | arbitrum | `0xe93972f0322692d74ddc952276bf14e3ce5c0cbb` | Strategy_ETH-2 | impl | live | no |
 | arbitrum | `0xea721d3ae9a4eeabad065f02f6d8a2d6ecca804a` | ContributorVesting | impl | live | no |
 | arbitrum | `0xea737b6dbc7c767bfd91dcb158035e9b8a11b870` | ContributorVesting | impl | live | no |

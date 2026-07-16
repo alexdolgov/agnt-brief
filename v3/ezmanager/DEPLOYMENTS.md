@@ -1,6 +1,6 @@
 # ezmanager — deployments
 
-85 verified deployment(s) across 21 component(s).
+90 verified deployment(s) across 22 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -9,6 +9,7 @@
 | arbitrum | `0x57f5b24e2c55d51ea171f405c0e2c122bf2bc2aa` | CLManager | impl | live | no |
 | arbitrum | `0x91d0acacb9979e2332d05d370ff94e676516c449` | EZWrapper | impl | live | no |
 | arbitrum | `0xa7e6a3d530bdf6933e0f4d1f9fe62e052fee09b4` | RebalancePlanner | impl | live | no |
+| arbitrum | `0xab9e67eaa99d6d69778a3af7c7120684df6d5611` | TimelockController | impl | live | no |
 | arbitrum | `0xbe682de7356cd5e5908400fd271b44fa4f350269` | CLManager-3 | impl | live | no |
 | arbitrum | `0xc0fac58f632b4be80e9c040134cb6867b0f6fc1d` | UniswapAdapter-2 | impl | live | no |
 | arbitrum | `0xc3e111c8c81b4675df243a3ba0e0821c0fe7014a` | ProtocolReserve | impl | live | yes |
@@ -34,6 +35,7 @@
 | base | `0x84600d1a569520dc41bb417f3b3025949888643a` | RebalancePlanner | impl | live | no |
 | base | `0x846fb837eb67e0781f6204d88be0a1d49a791a7c` | CLManager-2 | impl | live | no |
 | base | `0x8ca465180b9fb5aafa7ef2a16da0e9760442caee` | Lens-2 | impl | live | no |
+| base | `0x93e4a14ec4d39cf55f23cc121cc810943588c872` | TimelockController | impl | live | no |
 | base | `0x9efde1640231a5306304317649f548be73a5fa28` | AerodromeAdapter | impl | live | yes |
 | base | `0xab31a2e26b03e46cb28ba63a67f3141043f6ff28` | ReferralManager | impl | live | no |
 | base | `0xae79b33073b8ee252de6b13a6dff63ed3871a548` | Valuation-2 | impl | live | yes |
@@ -46,6 +48,7 @@
 | base | `0xe24135604d1d4add8f795153d5884ae1eb2e6811` | ProtocolReserve | impl | live | yes |
 | base | `0xf408ed6233807ced3b02c5fb79c790ef1ee81d82` | Lens-4 | impl | live | no |
 | bsc | `0x10c6d38f0c19c09b7cefde5f42494e4feca08eb2` | CLCore-2 | impl | live | no |
+| bsc | `0x16e38a8ef26f58f0af08be19515e71b8d7a01c6b` | TimelockController | impl | live | no |
 | bsc | `0x1b5f42003e77ae9389a1688c64441ca5cbebfd35` | ReferralManager | impl | live | no |
 | bsc | `0x43f44c3936e90ce5a32d70fe32779b715c6a884d` | CLManager | impl | live | no |
 | bsc | `0x4d5a83c157026c28ff3aabbfb3d713a2704be153` | CLManager | impl | live | no |
@@ -62,6 +65,7 @@
 | bsc | `0xf3af047b66ad5d38fe7f2471bb401789a47b5889` | ProtocolReserve | impl | live | yes |
 | bsc | `0xf3e9dcf940a880044c7f17a6d0d0b0188973f23d` | ProtocolReserve | impl | live | yes |
 | bsc | `0xfdbeb935e2097d9fdff27a73f89b1890e681d48d` | EZWrapper | impl | live | no |
+| chain-999 | `0x389170532bd6838c238f39b0efa1b1ae1650c398` | TimelockController | impl | live | no |
 | chain-999 | `0x43ea78157b39fbacc599162f63b855e4a8d49799` | ProtocolReserve | impl | live | yes |
 | chain-999 | `0x5a049dbfed26b5f06c8c657450d5aa5b8aa04cc7` | Valuation | impl | live | no |
 | chain-999 | `0x5afebf92e99ccb0b13215bebe85dabc63f8ec338` | EZWrapper | impl | live | no |
@@ -85,6 +89,7 @@
 | ethereum | `0x43ea78157b39fbacc599162f63b855e4a8d49799` | Valuation-2 | impl | live | yes |
 | ethereum | `0x738db78bf64dcf2d9b6d9d9a5708083d946727e3` | Valuation-2 | impl | live | yes |
 | ethereum | `0x7adce92b8bc6f1dfaf63cbeccd8999e67e8659f2` | ProtocolReserve | impl | live | yes |
+| ethereum | `0x8963891b913993df6845c0f3303332cb55eae985` | TimelockController | impl | live | no |
 | ethereum | `0x9a1fce1d87b922a6714c0946a2206a3699e19b7b` | RebalancePlanner | impl | live | no |
 | ethereum | `0xab264652495d3d0bdccfcccc308c794ea0160312` | CLCore | impl | live | yes |
 | ethereum | `0xbcab6cc4b2f1990f8e6e9f11c881a229d69cbb27` | RebalancePlanner-2 | impl | live | no |

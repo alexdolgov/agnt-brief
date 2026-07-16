@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import { Admin } from "contracts/base/Admin.sol";
-import { TimelockAdmin } from "contracts/base/TimelockAdmin.sol";
+import "./base/Admin.sol";
 
 error ConnectorNotRegistered(address target);
 
@@ -10,23 +9,17 @@ interface ICustomConnectorRegistry {
     function connectorOf(address target) external view returns (address);
 }
 
-contract ConnectorRegistry is Admin, TimelockAdmin {
+contract ConnectorRegistry is Admin {
     event ConnectorChanged(address target, address connector);
     event CustomRegistryAdded(address registry);
     event CustomRegistryRemoved(address registry);
-
-    error ConnectorAlreadySet(address target);
-    error ConnectorNotSet(address target);
 
     ICustomConnectorRegistry[] public customRegistries;
     mapping(ICustomConnectorRegistry => bool) public isCustomRegistry;
 
     mapping(address target => address connector) private connectors_;
 
-    constructor(
-        address admin_,
-        address timelockAdmin_
-    ) Admin(admin_) TimelockAdmin(timelockAdmin_) { }
+    constructor(address admin_) Admin(admin_) { }
 
     /// @notice Update connector addresses for a batch of targets.
     /// @dev Controls which connector contracts are used for the specified
@@ -37,26 +30,6 @@ contract ConnectorRegistry is Admin, TimelockAdmin {
         address[] calldata connectors
     ) external onlyAdmin {
         for (uint256 i; i != targets.length;) {
-            if (connectors_[targets[i]] != address(0)) {
-                revert ConnectorAlreadySet(targets[i]);
-            }
-            connectors_[targets[i]] = connectors[i];
-            emit ConnectorChanged(targets[i], connectors[i]);
-
-            unchecked {
-                ++i;
-            }
-        }
-    }
-
-    function updateConnectors(
-        address[] calldata targets,
-        address[] calldata connectors
-    ) external onlyTimelockAdmin {
-        for (uint256 i; i != targets.length;) {
-            if (connectors_[targets[i]] == address(0)) {
-                revert ConnectorNotSet(targets[i]);
-            }
             connectors_[targets[i]] = connectors[i];
             emit ConnectorChanged(targets[i], connectors[i]);
 
@@ -79,18 +52,15 @@ contract ConnectorRegistry is Admin, TimelockAdmin {
 
     /// @notice Replace an address in the custom registries list.
     /// @custom:access Restricted to protocol admin.
-    function updateCustomRegistry(
+    function replaceCustomRegistry(
         uint256 index,
         ICustomConnectorRegistry newRegistry
-    ) external onlyTimelockAdmin {
+    ) external onlyAdmin {
         address oldRegistry = address(customRegistries[index]);
         isCustomRegistry[customRegistries[index]] = false;
         emit CustomRegistryRemoved(oldRegistry);
         customRegistries[index] = newRegistry;
         isCustomRegistry[newRegistry] = true;
-        if (address(newRegistry) != address(0)) {
-            emit CustomRegistryAdded(address(newRegistry));
-        }
     }
 
     function connectorOf(address target) external view returns (address) {

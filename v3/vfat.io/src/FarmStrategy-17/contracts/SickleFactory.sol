@@ -64,6 +64,9 @@ contract SickleFactory is Admin {
         previousFactory = SickleFactory(previousFactory_);
     }
 
+    /// @notice Update the isActive flag.
+    /// @dev Effectively pauses and unpauses new Sickle deployments.
+    /// @custom:access Restricted to protocol admin.
     function setActive(bool active) external onlyAdmin {
         isActive = active;
     }

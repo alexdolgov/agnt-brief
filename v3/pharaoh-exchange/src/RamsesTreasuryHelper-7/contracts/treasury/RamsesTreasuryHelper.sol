@@ -51,10 +51,18 @@ contract RamsesTreasuryHelper is Initializable {
         mapping(address => bool) whitelistedAggregators;
         EnumerableMap.AddressToUintMap memberWeights;
         uint256 totalWeight;
+        uint256 lastDistribute;
     }
 
     //keccak256(abi.encode(uint256(keccak256("ram.treasury.manager.helper.v1")) - 1)) & ~bytes32(uint256(0xff))
     bytes32 public constant STORAGE_LOCATION = 0xacb1ad4144b50fefb1895703d57807b08cda0f602f2d3e0d88f68fb649911100; 
+
+    address public constant USDC = 0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E;
+
+    // SETTINGS
+    uint256 public constant MULTISIG_CLAWBACK_AMT = 5_000e6;
+    uint256 public constant BUYBACK_CLAWBACK_PCT = 50;
+
     /// @dev Return state storage struct for reading and writing
     function getStorage() internal pure returns (Storage storage $) {
         assembly {
@@ -207,6 +215,54 @@ contract RamsesTreasuryHelper is Initializable {
         }
     }
 
+    function compoundToAutoVault() external onlyOperator {
+        Storage storage $ = getStorage();
+        IXPhar xRam = IXPhar($.accessHub.xRam());
+        address ram = xRam.phar();
+
+        // 1. convert RAM -> xRAM
+        uint256 ramBalance = IERC20(ram).balanceOf(address(this));
+        if (ramBalance > 0) {
+            IERC20(ram).approve(address(xRam), ramBalance);
+            xRam.convertEmissionsToken(ramBalance);
+        }
+
+        // 2. redeem p33 -> xRAM
+        IERC4626 r33 = IERC4626(address($.accessHub.r33()));
+        uint256 r33Balance = r33.balanceOf(address(this));
+        if (r33Balance > 0) {
+            r33.redeem(r33Balance, address(this), address(this));
+        }
+
+        // 3. deposit all xRAM -> AutoVault with USDC output preference
+        IAutoVault vault = $.accessHub.autoVault();
+        uint256 xRamBalance = IERC20(address(xRam)).balanceOf(address(this));
+        if (xRamBalance > 0) {
+            IERC20(address(xRam)).approve(address(vault), xRamBalance);
+            vault.deposit(xRamBalance, USDC);
+        }
+    }
+
+    function convertPharToP33(uint256 _amount) external onlyOperatorOrTreasury {
+        Storage storage $ = getStorage();
+        IXPhar xRam = IXPhar($.accessHub.xRam());
+        address ram = xRam.phar();
+
+        if (_amount == 0) {
+            _amount = IERC20(ram).balanceOf(address(this));
+        }
+        if (_amount == 0) revert ZeroAmount();
+
+        // 1. PHAR -> xPHAR (1:1)
+        IERC20(ram).approve(address(xRam), _amount);
+        xRam.convertEmissionsToken(_amount);
+
+        // 2. xPHAR -> P33
+        IERC4626 r33 = IERC4626(address($.accessHub.r33()));
+        IERC20(address(xRam)).approve(address(r33), _amount);
+        r33.deposit(_amount, address(this));
+    }
+
     function claimIncentives(address[] calldata _feeDistributors, address[][] calldata _tokens) external onlyOperator {
         Storage storage $ = getStorage();
         IVoter voter = IVoter($.accessHub.voter());
@@ -303,6 +359,18 @@ contract RamsesTreasuryHelper is Initializable {
         
         uint256 balance = IERC20(_token).balanceOf(address(this));
         if (balance == 0) revert NoBalance();
+
+        if (_token == USDC) {
+            uint256 currentPeriod = block.timestamp / 1 weeks;
+
+            if ($.lastDistribute < currentPeriod && balance > MULTISIG_CLAWBACK_AMT) {
+                $.lastDistribute = currentPeriod;
+                IERC20(USDC).transfer($.accessHub.treasury(), MULTISIG_CLAWBACK_AMT);
+                balance -= MULTISIG_CLAWBACK_AMT;
+            }
+
+            balance = (balance * (100 - BUYBACK_CLAWBACK_PCT)) / 100;
+        }
 
         for (uint256 i = 0; i < $.memberWeights.length(); i++) {
             (address account, uint256 weight) = $.memberWeights.at(i);

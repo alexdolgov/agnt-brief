@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import { SickleStorage } from "contracts/base/SickleStorage.sol";
-import { SickleRegistry } from "contracts/SickleRegistry.sol";
+import "../base/SickleStorage.sol";
+import "../SickleRegistry.sol";
 
 /// @title Multicall contract
 /// @author vfat.tools

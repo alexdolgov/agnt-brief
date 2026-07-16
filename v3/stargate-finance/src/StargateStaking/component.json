@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/StargateStaking\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 9,
+  "deployment_count": 11,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -35,6 +35,16 @@
       "logic_topography_row_id": "399541"
     },
     {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x26727c78b0209d9e787b2f9ac8f0238b122a3098",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
       "chain": "polygon",
       "chain_id": 137,
       "address": "0x4694900bdba99edf07a2e46c4093f88f9106a90d",
@@ -43,6 +53,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "399573"
+    },
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0xbba60da06c2c5424f03f7434542280fcad453d10",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     },
     {
       "chain": "chain-1088",

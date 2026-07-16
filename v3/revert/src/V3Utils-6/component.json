@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/V3Utils-6\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xab52f8c11e72d00d4f717a657378ef9b8bf7c2b6",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf6d2daf6fd57b1498d60dfe2237c9b7f5735a376",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5b2f7cc65f8eb6222289c714547b9ab22db86be5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398476"
     }
   ]
 }

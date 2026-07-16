@@ -1,0 +1,28 @@
+{
+  "component": "JumpRateModel",
+  "main_contract": "JumpRateModel",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/JumpRateModel\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x17f7b994510e7652981bd115f174a9241323a779",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397559"
+    }
+  ]
+}

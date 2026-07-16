@@ -2,17 +2,14 @@
 pragma solidity ^0.8.17;
 
 import { SafeTransferLib } from "solmate/utils/SafeTransferLib.sol";
-import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import { WETH } from "solmate/tokens/WETH.sol";
 
-import "../Sickle.sol";
 import "../SickleRegistry.sol";
 
-library FeesLibEvents {
-    event FeeCharged(bytes32 feesHash, uint256 amount, address token);
-}
-
 contract FeesLib {
+    event FeeCharged(bytes32 feesHash, uint256 amount, address token);
+    event TransactionCostCharged(address recipient, uint256 amount);
+
     /// @notice Fees library version
     uint256 public constant VERSION = 1;
 
@@ -58,7 +55,7 @@ contract FeesLib {
             );
         }
 
-        emit FeesLibEvents.FeeCharged(feeHash, amountToCharge, tokenToCharge);
+        emit FeeCharged(feeHash, amountToCharge, tokenToCharge);
         return baseAmount - amountToCharge;
     }
 
@@ -69,5 +66,6 @@ contract FeesLib {
     ) public payable {
         WETH(payable(wrappedNative)).withdraw(amountToCharge);
         SafeTransferLib.safeTransferETH(recipient, amountToCharge);
+        emit TransactionCostCharged(recipient, amountToCharge);
     }
 }

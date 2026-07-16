@@ -43,35 +43,29 @@ interface INonfungiblePositionManager is IERC721Enumerable {
         uint128 amount1Max;
     }
 
-    function increaseLiquidity(
-        IncreaseLiquidityParams memory params
-    )
+    function increaseLiquidity(IncreaseLiquidityParams memory params)
         external
         payable
         returns (uint256 amount0, uint256 amount1, uint256 liquidity);
 
-    function decreaseLiquidity(
-        DecreaseLiquidityParams calldata params
-    ) external payable returns (uint256 amount0, uint256 amount1);
+    function decreaseLiquidity(DecreaseLiquidityParams calldata params)
+        external
+        payable
+        returns (uint256 amount0, uint256 amount1);
 
-    function mint(
-        MintParams memory params
-    )
+    function mint(MintParams memory params)
         external
         payable
         returns (uint256 tokenId, uint256 amount0, uint256 amount1);
 
-    function collect(
-        CollectParams calldata params
-    ) external payable returns (uint256 amount0, uint256 amount1);
+    function collect(CollectParams calldata params)
+        external
+        payable
+        returns (uint256 amount0, uint256 amount1);
 
-    function burn(
-        uint256 tokenId
-    ) external payable;
+    function burn(uint256 tokenId) external payable;
 
-    function positions(
-        uint256 tokenId
-    )
+    function positions(uint256 tokenId)
         external
         view
         returns (
@@ -88,6 +82,4 @@ interface INonfungiblePositionManager is IERC721Enumerable {
             uint128 tokensOwed0,
             uint128 tokensOwed1
         );
-
-    function factory() external view returns (address);
 }

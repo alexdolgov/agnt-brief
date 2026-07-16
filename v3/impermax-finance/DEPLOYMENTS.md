@@ -1,6 +1,6 @@
 # impermax-finance — deployments
 
-77 verified deployment(s) across 54 component(s).
+79 verified deployment(s) across 56 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -14,6 +14,7 @@
 | arbitrum | `0xb7e5e74b52b9ada1042594cfd8abbdee506cc6c5` | UniswapV2Pair-3 | impl | live | no |
 | arbitrum | `0xe8cd0de416e98df926ff318d96e5049d4dac8459` | ImpermaxV3UniV3Router01-2 | impl | live | no |
 | arbitrum | `0xf09d8f374bab880d7abdd6ebe34e3e62eb1c2232` | ImpermaxV2UniV2Router01 | impl | live | no |
+| avalanche | `0x089d3daf549f99553c2182db24bc4336a4f0c824` | MultiBridgeToken | impl | live | no |
 | avalanche | `0x3039c26f9126833baca8edbf61c761cd909f461f` | Router02-3 | impl | live | no |
 | avalanche | `0x677dce0683e6db30325cd97e8d04d138f34821a6` | StakedLPToken0212 | impl | live | no |
 | avalanche | `0x96f1f13865f11e2ec0e15051415f420dac440ec1` | StakedLPTokenSolidlyBase1 | impl | live | no |
@@ -80,4 +81,5 @@
 | polygon | `0x9c7213207b5f8726164c96a76a4b9c0fbf984aba` | MerkleDistributor | impl | live | no |
 | polygon | `0xd7f63a4f2d317b51e84e64cb0d1edb9f70956ac9` | Router03Solidly | impl | live | no |
 | polygon | `0xf117a35038cdcffaaea6f953438e048d9440a9c2` | Router03-2 | impl | live | no |
+| polygon | `0xf972daced7c6b03223710c11413036d17eb298f6` | UpgradableProxy | proxy | live | no |
 | scroll | `0x78ab77f7d590fb101aa18affc238cbfea31ead5b` | ScrollStandardERC20 | impl | live | no |

@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/ERC1967Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 7,
+  "deployment_count": 8,
   "audited": true,
   "audits_covering": [
     "https://github.com/sherlock-audit/2024-10-ethos-network",
@@ -79,6 +79,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "405368"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd56695235933ce2d9de477467b44378322ecd194",
+      "is_proxy": true,
+      "implementation_address": "0x323a8314362a4ce13e26cf67e3590989d143ca2a",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405370"
     },
     {
       "chain": "base",

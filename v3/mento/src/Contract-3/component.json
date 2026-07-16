@@ -13,13 +13,14 @@
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
-    "https://reports.chainsecurity.com/Mento/ChainSecurity_Mento_MentoCoreV3_Audit.pdf"
+    "https://reports.chainsecurity.com/Mento/ChainSecurity_Mento_MentoCoreV3_Audit.pdf",
+    "https://www.chainsecurity.com/security-audit/mento-core-v3"
   ],
   "addresses": [
     {
       "chain": "chain-42220",
       "chain_id": 42220,
-      "address": "0x7b2f7d11eabd576782f77bf2cca46a853410adf6",
+      "address": "0x4e78bd9565341eabe99cdc024acb044d9bdcb985",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

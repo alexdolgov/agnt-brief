@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/SashimiPlate\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -23,6 +23,26 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "398618"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x722669a18852c659110d4a1e44f9647fc44edcc2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398621"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x81885d776d2963941ec7434f30d61b851e9697fa",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398624"
     },
     {
       "chain": "ethereum",
@@ -43,6 +63,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "398633"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe6cb949e11beb2a7b48f4cb5bfd8724501cfda91",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398637"
     }
   ]
 }

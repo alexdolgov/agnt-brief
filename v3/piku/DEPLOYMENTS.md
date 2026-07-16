@@ -1,6 +1,6 @@
 # piku — deployments
 
-43 verified deployment(s) across 19 component(s).
+44 verified deployment(s) across 20 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -32,6 +32,7 @@
 | ethereum | `0x84760fda5e2184ab989fffc6d77350fc491dcfdf` | TransparentUpgradeableProxy-8 | proxy | live | no |
 | ethereum | `0x936af9f9dd1f8f1377cdf3063690a9074a773f54` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x9d0fc59f88acb85520a8cfb74c7fe141d8563185` | TransparentUpgradeableProxy-9 | proxy | live | no |
+| ethereum | `0x9e40b6be5affc984f36cf118c778f0a83be20370` | ERC20IssuanceUpgradeable_Blacklist_v1 | impl | live | no |
 | ethereum | `0xa26938b7eb9f097e23e73af30c8f2ad6d06e3c6a` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0xacd577ccc29e88a2b7aaa15026533abd91fdd6be` | PendleYieldToken | impl | live | no |
 | ethereum | `0xadbeb9e3afe0186c57cac78c6a801cc38c82fb62` | TransparentUpgradeableProxy-2 | proxy | live | no |

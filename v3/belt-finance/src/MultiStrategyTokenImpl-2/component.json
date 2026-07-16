@@ -17,12 +17,12 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0xe4342c1f88290f387f0db0c7a270e3520402f19e",
+      "address": "0x55c82b38eca698e7d589f658bdd5db4939a5f5de",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405269"
     }
   ]
 }

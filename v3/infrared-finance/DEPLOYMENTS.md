@@ -1,6 +1,6 @@
 # infrared-finance — deployments
 
-32 verified deployment(s) across 10 component(s).
+33 verified deployment(s) across 11 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -24,6 +24,7 @@
 | chain-80094 | `0x8d44170e120b80a7e898bfba8cb26b01ad21298c` | ERC1967Proxy | proxy | live | yes |
 | chain-80094 | `0x920598318d0c48a19a9cbd26d86aa0d8079b139a` | WrappedVault | impl | live | no |
 | chain-80094 | `0x9b6761bf2397bb5a6624a856cc84a3a14dcd3fe5` | ERC1967Proxy | proxy | live | yes |
+| chain-80094 | `0xa1b644aec990ad6023811ced36e6a2d6d128c7c9` | InfraredGovernanceTokenV1_2 | impl | live | no |
 | chain-80094 | `0xa3a376e370666d0c3e10a5b1067095f2f080f26f` | WrappedVault | impl | live | no |
 | chain-80094 | `0xac03caba51e17c86c921e1f6cbfbdc91f8bb2e6b` | InfraredBGT | impl | live | yes |
 | chain-80094 | `0xb38b0d08965654f11377c0c90f2338d63926c9b9` | WrappedVault | impl | live | no |

@@ -1,6 +1,6 @@
 # nerve — deployments
 
-49 verified deployment(s) across 33 component(s).
+50 verified deployment(s) across 34 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -51,5 +51,6 @@
 | bsc | `0xe30b5f73b653c18c5f97a079a66de6c48b826eea` | MetaSwapUtils-3 | impl | live | no |
 | bsc | `0xef93762698d736f76593782924df8a5f22bd6488` | TokenVesting | impl | live | no |
 | bsc | `0xefe2df2a05bb9db3ea7feede20fc1c277427f973` | MetaSwapDeployer-5 | impl | live | no |
+| bsc | `0xf0e406c49c63abf358030a299c0e00118c4c6ba5` | ERC20Minter | impl | live | no |
 | bsc | `0xfa97adb530b38639a83b1890ee17942804035ddf` | MetaSwap | impl | live | no |
 | bsc | `0xfcc3976ebdc240ce83e8a94bc83be5cd4ad4a053` | MetaSwap-4 | impl | live | no |

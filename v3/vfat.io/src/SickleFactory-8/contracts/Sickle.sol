@@ -18,24 +18,18 @@ contract Sickle is SickleStorage, Multicall {
         initializer
         Multicall(sickleRegistry_)
     {
-        _Sickle_initialize(address(0), address(0));
+        _Sickle_initialize(address(0));
     }
 
     /// @param sickleOwner_ Address of the Sickle owner
-    function initialize(
-        address sickleOwner_,
-        address approved_
-    ) external initializer {
-        _Sickle_initialize(sickleOwner_, approved_);
+    function initialize(address sickleOwner_) external initializer {
+        _Sickle_initialize(sickleOwner_);
     }
 
     /// INTERNALS ///
 
-    function _Sickle_initialize(
-        address sickleOwner_,
-        address approved_
-    ) internal {
-        SickleStorage._SickleStorage_initialize(sickleOwner_, approved_);
+    function _Sickle_initialize(address sickleOwner_) internal {
+        SickleStorage._SickleStorage_initialize(sickleOwner_);
     }
 
     function onERC721Received(

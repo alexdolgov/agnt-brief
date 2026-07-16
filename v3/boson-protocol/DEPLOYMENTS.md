@@ -1,9 +1,10 @@
 # boson-protocol — deployments
 
-27 verified deployment(s) across 27 component(s).
+28 verified deployment(s) across 28 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| ethereum | `0xc477d038d5420c6a9e0b031712f61c5120090de9` | ERC20Permit | impl | live | no |
 | optimism | `0x208e1180211959c9caf9305ff725aa5625484f69` | SequentialCommitHandlerFacet | impl | unknown | no |
 | optimism | `0x25ed04c326a89b67c66fa8aafc8827770a9cf72c` | PriceDiscoveryHandlerFacet | impl | unknown | no |
 | optimism | `0x3ce6a434dad2ace6c8dbec6dc007d6a8fad068e9` | DiamondCutFacet | impl | unknown | no |

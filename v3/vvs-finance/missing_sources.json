@@ -12,24 +12,6 @@
     {
       "chain_id": 25,
       "chain": "chain-25",
-      "address": "0x3bc41521a7bf38b279fc5c3bd6c0dc290767b115",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 25,
-      "chain": "chain-25",
-      "address": "0x5c7f8a570d578ed84e63fdfa7b1ee72deae1ae23",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 25,
-      "chain": "chain-25",
-      "address": "0x6a2d178585806de5a2e5e7f9acfce44680637284",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 25,
-      "chain": "chain-25",
       "address": "0x990e9683e6ba5079cdb235838856029a50dad84c",
       "canonical_source_address": null
     },

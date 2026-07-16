@@ -1,17 +1,39 @@
 # alphagrowth — deployments
 
-38 verified deployment(s) across 12 component(s).
+64 verified deployment(s) across 15 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| base | `0x085178078796da17b191f9081b5e2fccc79a7ee7` | BeaconProxy-2 | proxy | live | no |
+| base | `0x0a1a3b5f2041f33522c4efc754a7d096f880ee16` | BeaconProxy-3 | proxy | live | no |
+| base | `0x358f25f82644eabb441d0df4af8746614fb9ea49` | BeaconProxy | proxy | live | no |
+| base | `0x3f0d3fd87a42bdaa3dfcc13ada42ea922e638a7a` | BeaconProxy | proxy | live | no |
+| base | `0x5fe2de3e565a6a501a4ec44aab8664b1d674ac25` | BeaconProxy | proxy | live | no |
+| base | `0x7b181d6509deabfbd1a23af1e65fd46e89572609` | BeaconProxy | proxy | live | no |
+| base | `0x859160db5841e5cfb8d3f144c6b3381a85a4b410` | BeaconProxy | proxy | live | no |
+| base | `0x882018411bc4a020a879cee183441fc9fa5d7f8b` | BeaconProxy | proxy | live | no |
+| base | `0x990d616ca6e7192625d1b7c41fb67b5758df7cf2` | BeaconProxy | proxy | live | no |
+| base | `0xd4a805261b28f375fc9c3d89ecd2c952cd130d14` | BeaconProxy | proxy | live | no |
+| base | `0xe72ea97aaf905c5f10040f78887cc8de8eaec7e4` | BeaconProxy | proxy | live | no |
+| base | `0xfab9af50f7a1cfe201cae1c15fcfddae7705ccd3` | BeaconProxy | proxy | live | no |
+| chain-130 | `0x1f3134c3f3f8add904b9635acbefc0ea0d0e1ffc` | BeaconProxy | proxy | live | no |
+| chain-130 | `0x54ff502df96cd9b9585094eacd86aafce902d06a` | BeaconProxy | proxy | live | no |
+| chain-130 | `0x5d2511c1ebc795f4394f7f659f693f8c15796485` | BeaconProxy | proxy | live | no |
+| chain-130 | `0x6eae95ee783e4d862867c4e0e4c3f4b95aa682ba` | BeaconProxy | proxy | live | no |
+| chain-130 | `0x7650d7ae1981f2189d352b0ec743b9099d24086f` | BeaconProxy | proxy | live | no |
+| chain-130 | `0xd49181c522ecdb265f0d9c175cf26fface64ead3` | BeaconProxy | proxy | live | no |
+| chain-130 | `0xe36da4ea4d07e54b1029ef26a896a656a3729f86` | BeaconProxy | proxy | live | no |
 | ethereum | `0x0c9a3dd6b8f28529d72d7f9ce918d493519ee383` | EthereumVaultConnector | proxy | live | no |
 | ethereum | `0x130eabada6f4c663095c8e9e276ab5da670ffaed` | CrossAdapter | impl | live | no |
 | ethereum | `0x15226e1796c24a635a9662bff2b8dc6cc3aac6bb` | CrossAdapter | impl | live | no |
 | ethereum | `0x208ff5eb543814789321daa1b5eb551881d16b06` | EulerSwapPeriphery | impl | live | no |
 | ethereum | `0x28e36ea7481934a651da81483358c67a51583b85` | ChronicleOracle | impl | live | no |
+| ethereum | `0x2f849ba554c1ea2ede9c240bbe9d247dd6ec8a6b` | BeaconProxy | proxy | live | no |
 | ethereum | `0x336d821459db40ba9bfb8a1a89457d689afba6e8` | CrossAdapter | impl | live | no |
 | ethereum | `0x35400831044167e9e2de613d26515eee37e30a1b` | GovernorAccessControlEmergency | impl | unknown | no |
+| ethereum | `0x3573a84bee11d49a1cbce2b291538de7a7dd81c6` | BeaconProxy | proxy | live | no |
 | ethereum | `0x3fc2228e67d131de974a0a42fb2e1a94d71b4f12` | CrossAdapter | impl | live | no |
+| ethereum | `0x412d0e31790d77b6e7a7872a9fd6967b6e640229` | BeaconProxy | proxy | live | no |
 | ethereum | `0x4a35fe57388d8e637690ed27d744917a6fb205af` | CrossAdapter | impl | inactive | no |
 | ethereum | `0x5171aed04fa9551db484f07c853f252bc6f53b63` | EulerSwapProtocolFeeConfig | impl | live | no |
 | ethereum | `0x55757d7db2811dd57b4edd5f3594aa7a9058dcc1` | CrossAdapter | impl | live | no |
@@ -42,3 +64,7 @@
 | ethereum | `0xf6151700c3c1d5de33319171bfe5174b705e6683` | CrossAdapter | impl | live | no |
 | ethereum | `0xf9de4293f3a11d657ac403a8985fc2f5dd156ce6` | CrossAdapter | impl | live | no |
 | ethereum | `0xffe3b09b0647cd496d37815f9c8540dca9fab24e` | CrossAdapter | impl | live | no |
+| linea | `0x359e363c11fc619be76eec8baaa01e61d521aa18` | BeaconProxy | proxy | live | no |
+| linea | `0x8955d7dcde9bd9694b64732ad28ff2113eb217b4` | BeaconProxy | proxy | live | no |
+| linea | `0xa8a02e6a894a490d04b6cd480857a19477854968` | BeaconProxy | proxy | live | no |
+| linea | `0xf4712fc5e6483de9e1ff661d95dd686664327086` | BeaconProxy | proxy | live | no |

@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/MErc20Delegator-4\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x42a96c0681b74838ec525adbd13c37f66388f289",
+      "is_proxy": true,
+      "implementation_address": "0x948ccfff51f894dba5c250aa2844d58e169f8ad9",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396967"
+    },
     {
       "chain": "chain-1284",
       "chain_id": 1284,

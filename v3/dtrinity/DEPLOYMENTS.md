@@ -1,6 +1,6 @@
 # dtrinity — deployments
 
-123 verified deployment(s) across 88 component(s).
+147 verified deployment(s) across 97 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -37,6 +37,7 @@
 | chain-146 | `0xff3df1bb48d63a1433d57572a39c17bbc840e01b` | DStakeProxyAdmin | impl | live | no |
 | chain-252 | `0x09c418a9d8027ef890a91ccdfce3c14d055e44dd` | ERC4626BalanceChecker | impl | live | no |
 | chain-252 | `0x09ddf55a7ec642635788970dcbf4b6aa2552bb14` | DefaultReserveInterestRateStrategy-2 | impl | live | no |
+| chain-252 | `0x0f51b15939a42bd995ecd3a2c151dc58621856c6` | DStakeToken-2 | impl | live | no |
 | chain-252 | `0x145555c56718437093c020cef4e8dd11cd7d2662` | ReservesSetupHelper-3 | impl | live | no |
 | chain-252 | `0x1ec13ef0b22c53298a00b23b03203e03d999b7a2` | Issuer-2 | impl | live | no |
 | chain-252 | `0x20a24d51aded06b5ccbc3cc8f71d1e141391a6d7` | L2Pool-2 | impl | live | no |
@@ -46,6 +47,7 @@
 | chain-252 | `0x5432ed4a370718d6904485e2fc114762c68cc7be` | DStakeCollateralVault-2 | impl | live | yes |
 | chain-252 | `0x57bbd5026503bb54cc50a4129c4896cba40bebae` | AmoManagerV2-3 | impl | live | no |
 | chain-252 | `0x58acc2600835211dcb5847c5fa422791fd492409` | ERC1967Upgrade | proxy | live | yes |
+| chain-252 | `0x624e12de7a97b8cfc1ad1f050a1c9263b1f4febc` | CollateralHolderVault-2 | impl | live | no |
 | chain-252 | `0x67c3ad684243430ca1f7f32fe4a64eb223ad2662` | AtomicMarketListingHelper | impl | live | no |
 | chain-252 | `0x7a2949ef4595bc27ff5ec6e3889f51fce42ab7d9` | ERC4626BalanceChecker-2 | impl | live | no |
 | chain-252 | `0x85c7287fc53a06ec7995db5ae6f2610200ec0f85` | RebasingTokenWrapperFactory | impl | live | no |
@@ -53,17 +55,24 @@
 | chain-252 | `0x93d2e552f0ac25927bbd3f6c71cab43b73a3acdf` | ACLManager-3 | impl | live | no |
 | chain-252 | `0x99a434c9387dac572bdd6dacb1b7e27314eafb16` | InitializableAdminUpgradeabilityProxy | proxy | live | no |
 | chain-252 | `0x9e8d871077bb496e388fd48f659cedd6d0abdc3a` | IssuerV2_2-2 | impl | live | no |
+| chain-252 | `0xa5f9f6238406b1301d0ed09555a2893dc1a26a49` | ACLManager-4 | impl | live | no |
+| chain-252 | `0xa9c3cf89d9b7680cc2433e2a2bf8e2b357a03d65` | GnosisSafeProxy | impl | live | no |
+| chain-252 | `0xabfbcf92986b4ba43faaecf545f0b2cc45067af9` | GnosisSafeProxy | impl | live | no |
 | chain-252 | `0xacd97c7d23a0534d79439b8d065d6d9d772ec949` | RedeemerV2-3 | impl | live | no |
+| chain-252 | `0xaf2d757bfbded5f84f71d28223acda06352fddb6` | ERC20StablecoinUpgradeable-2 | impl | live | no |
 | chain-252 | `0xb029d67e4eb9d71d2e7140425e7227c5074dd2ba` | OdosSwapLogic | impl | live | no |
 | chain-252 | `0xb0499d608836dac2894e6c2f7db4e6f28cbd8d16` | RedeemerWithFees-2 | impl | live | no |
 | chain-252 | `0xced414797155d79fce11bf3d11f36b1b31860e08` | WrappedDLendConversionAdapter-3 | impl | live | no |
 | chain-252 | `0xd95f1cfd9559b6e4d75488938de161a147f9fbca` | IssuerV2-2 | impl | live | no |
+| chain-252 | `0xdb104e0bb0b2955f69e8e092eb80831913d85431` | GnosisSafeProxy | proxy | live | no |
 | chain-252 | `0xde914ec384346fea47339e5086d2d399b7f4733b` | DStakeProxyAdmin-2 | impl | live | no |
 | chain-252 | `0xeef617864c0c2357bf28250e07cedf1809e4019c` | DefaultReserveInterestRateStrategy-4 | impl | live | no |
 | chain-252 | `0xefc15efb330112a2c313d5da8f1b29893ad4cd99` | DStakeRouterDLend | impl | live | no |
 | chain-252 | `0xf224e69c461a2dd3c5f6f6814529c8cf557a1367` | DStakeRewardManagerDLend | impl | live | no |
 | chain-252 | `0xfa7560956807d95dcef22990ddd92e38dbaf5cdd` | OracleAggregator-2 | impl | live | no |
+| chain-252 | `0xfc2f89f9982be98a9672cefc3ea6dbbdd88bc8e9` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0x02165d665e171566629822d9380ad93b975b186c` | OracleAggregatorV1_1 | impl | live | no |
+| ethereum | `0x04401537ca997a43ebcfec8194c7e88c7ee79804` | SafeProxy-2 | proxy | live | no |
 | ethereum | `0x06f0c640c47fcfe030da1cdd7dfb5080cb5a0ea8` | RewardsController | impl | live | no |
 | ethereum | `0x093e9db2c2ec21ff7e5e1f5766bbfb48b7ba90cd` | RedeemerV2 | impl | live | no |
 | ethereum | `0x185e9c639dea54d77d62dcb87466fb8de6ded6b9` | PoolConfigurator | impl | live | no |
@@ -73,11 +82,14 @@
 | ethereum | `0x1e5be5059d4a95297604355dc6abd0baf036cc95` | HardPegOracleWrapperV1_1 | impl | live | no |
 | ethereum | `0x26326b406208e206cbe9a2417bf61700b4239b4b` | EModeLogic | impl | live | no |
 | ethereum | `0x29532f74a9302e0a1e9f7d015fe355ffde6e6880` | AmoManagerV2 | impl | live | no |
+| ethereum | `0x2b820fd4911876160c3988e57a10d8a5b85dff35` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | ethereum | `0x2e89df2934aff1b671923a45bacf2b21f3cf64a8` | DStakeRouterV2 | impl | live | no |
 | ethereum | `0x31bf6b030d20af8a92d169632ffd8077456e6316` | PullRewardsTransferStrategy | impl | live | no |
 | ethereum | `0x349ee07146157648d40fd471380b510b4d56a2f2` | CollateralHolderVault | impl | live | no |
+| ethereum | `0x38262effcd17cd64f6311ef688b2caa61102f3db` | SafeProxy | proxy | live | no |
 | ethereum | `0x391afc4190a92350b5c812434b7fbf381feb8631` | StableDebtToken | impl | live | no |
 | ethereum | `0x426bb6039a05f0ec90617cb7a838d6ed4fb0044a` | DefaultReserveInterestRateStrategy | impl | live | no |
+| ethereum | `0x43b1bccff0e4bfef2c32774e53a69a762006c118` | SafeProxy | proxy | live | no |
 | ethereum | `0x44c69f0ef7a0d96b77437ec2e1bf9d74f5c5e7a2` | PoolLogic | impl | live | no |
 | ethereum | `0x4acbcfa29fb085097c5f31783403ef7a7930f6fe` | DStakeCollateralVaultV2 | impl | live | yes |
 | ethereum | `0x4ef48062d6d5e7594ed1b59ea42faf772b2aa54a` | HardPegOracleWrapperV1_1 | impl | live | no |
@@ -88,23 +100,33 @@
 | ethereum | `0x64dc6def99c4144466a4e5a040e5d5efc7ec6c7d` | DefaultReserveInterestRateStrategy | impl | live | no |
 | ethereum | `0x683f183070ee9c12b25618db3483266888ce9809` | RedeemerV2 | impl | live | no |
 | ethereum | `0x6f3b7cc3d3c8c201373900402ea0f5a61da61dde` | DStakeRouterV2RebalanceModule | impl | live | no |
+| ethereum | `0x6f83cbdf37863eaf43d11b3af1d024c336814d1b` | ERC20StablecoinUpgradeable | impl | live | no |
 | ethereum | `0x70bfbe78548f1159cb9b453e4d6ad0e3648a5a8d` | IssuerV2_2 | impl | live | no |
 | ethereum | `0x788d96f655735f52c676a133f4dfc53cec614d4a` | HardPegOracleWrapperV1_1 | impl | live | no |
 | ethereum | `0x78a4dad0ac32c80da6ef60a366b1c035145380bc` | DStakeIdleVault | impl | live | no |
 | ethereum | `0x7aefde8e021f0efbcec7348f601e1fd12789c55f` | DStakeRouterV2RebalanceModule | impl | live | no |
 | ethereum | `0x7cb20517776636ed76b68edb3d99dcce356abf02` | TransparentUpgradeableProxy | proxy | live | yes |
+| ethereum | `0x7f90988393d1db8ef33cc9f4294a7dda389d7cf1` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | ethereum | `0x80f7023e25a32e4a020ed71346c0f37c10589609` | ACLManager | impl | live | no |
 | ethereum | `0x81036951050a25cf6f0501ff3f981e3ed3b72786` | BorrowLogic | impl | live | no |
 | ethereum | `0x837c1c92b0e7ae7bb4e1dddf08772c0181fc638a` | HardPegOracleWrapperV1_1 | impl | live | no |
 | ethereum | `0x837c4ac320cd6a17c66cb5deea99dc9bd007d270` | DefaultReserveInterestRateStrategy | impl | live | no |
 | ethereum | `0x84c58066a4408454b7380f168c95f571419253f4` | CollateralHolderVault | impl | live | no |
+| ethereum | `0x88a4eed28a1d7bcee95228721678662421a1c748` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | ethereum | `0x8cf140bde76323a5785d87645fc3ddfe837b6703` | DStakeRouterV2GovernanceModule | impl | live | no |
 | ethereum | `0x8d369c2f439de8475e095940b081e067859b7688` | FlashLoanLogic | impl | live | no |
+| ethereum | `0x9477297feacd988be2e8bc42dfb0edf44bbfb59b` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
+| ethereum | `0x979fb79d36c0d3006cde38e992d9f51768efaad8` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
+| ethereum | `0x9c278036c3c4529472751502dfc71bb1f0a3bfd4` | DStakeTokenV2 | impl | live | no |
+| ethereum | `0xa17571a95bd22dc1a6f54d7f6e396d2398dfe493` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | ethereum | `0xa51fa58c76d92f1b0d4d6e3b88d2ba0aff2c2b56` | GenericERC4626ConversionAdapter | impl | live | no |
+| ethereum | `0xa5535fc58fd1be43a37367f4b66669f691a26eae` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | ethereum | `0xa5cae880272183d7c8b69f8b0edf395f8e42e751` | PoolAddressesProvider | impl | live | no |
 | ethereum | `0xb1c1d6150c4f072f5426aa918f7924ee73c6ac2d` | WrappedTokenGatewayV3 | impl | live | no |
+| ethereum | `0xb33276a11cabe6e1cd0252c4e1770ffd30a8029c` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | ethereum | `0xbc53406583d4370ea4a5dc2bfd5592ef9cea56a7` | AmoManagerV2-2 | impl | live | no |
 | ethereum | `0xc18b93cac3c2404cca2187332e9767bb73feb7ed` | ConfiguratorLogic | impl | live | no |
+| ethereum | `0xc247736eaaa1b45d21ae1668d13965b4b50e9011` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | ethereum | `0xc40f4303505320f782972ad4756ed2a7390a9d9c` | OracleAggregatorV1_1 | impl | live | no |
 | ethereum | `0xc792f223c6c836f9e628ce29bed5f4aee6e18cc6` | DStakeRouterV2RebalanceModule | impl | live | no |
 | ethereum | `0xcb8f92b9e8b368bfe690a5c6f39a0d6920e1d877` | StaticATokenFactory | impl | live | no |
@@ -115,10 +137,12 @@
 | ethereum | `0xd66c168fb7f3e04654082534c87b6544e6036cac` | RedeemerV2 | impl | live | no |
 | ethereum | `0xdc43d538935d187864b21997f8ad05de66afae4b` | RedeemerV2 | impl | live | no |
 | ethereum | `0xdd26c236ec95d03ddf3cb67b7f54864719e9be5a` | DStakeRouterV2 | impl | live | no |
+| ethereum | `0xdfaee67e4ef9009a728dae88453275c616a5877f` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | ethereum | `0xe1c986e12eaa37e40a2e2cf4f52a6b786dc4e671` | BridgeLogic | impl | live | no |
 | ethereum | `0xe3ee2d4bde6695cc1ae4a4cda466bdc6d5df479e` | UiIncentiveDataProviderV3 | impl | live | no |
 | ethereum | `0xe58dec03a5c25bab45daf83dc8917a29b4817ddb` | SupplyLogic | impl | live | no |
 | ethereum | `0xe5ae8775a23293dbf5a59019aa32ba358900cbc4` | WalletBalanceProvider | impl | live | no |
+| ethereum | `0xe83c188a7be46b90715c757a06cf917175f30262` | SafeProxy | proxy | live | no |
 | ethereum | `0xeb5260baff0f2018e2faa4fc81d82d0de1c07776` | StaticATokenLM | impl | live | no |
 | ethereum | `0xedbccd4fc36a67429f74376c36f134ae3f28a88b` | DStakeRouterV2GovernanceModule-2 | impl | live | no |
 | ethereum | `0xefd794e2d8024f3c25aa343588dd6d4481b5db7c` | GenericERC4626ConversionAdapter-2 | impl | live | no |

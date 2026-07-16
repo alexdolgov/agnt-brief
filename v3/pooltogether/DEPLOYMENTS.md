@@ -1,6 +1,6 @@
 # pooltogether — deployments
 
-114 verified deployment(s) across 71 component(s).
+115 verified deployment(s) across 72 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -83,6 +83,7 @@
 | optimism | `0x29cb69d4780b53c1e5cd4d2b817142d2e9890715` | Vault | impl | live | no |
 | optimism | `0x31515cfc4550d9c83e2d86e8a352886d1364e2d9` | Vault-2 | impl | live | no |
 | optimism | `0x36be31e7acd4b0d755bcc7858ef04848a3ec66c6` | PrizePoolTwabRewards | impl | live | no |
+| optimism | `0x395ae52bb17aef68c2888d941736a71dc6d4e125` | L2StandardERC20 | impl | live | no |
 | optimism | `0x3d2ef6c091f7cb69f06ec3117f36a28bc596aa7b` | RngWitnet-2 | impl | live | no |
 | optimism | `0x49148543034f9ba3005c1d40ca9e6ffaf20b42c6` | TwabDelegator | impl | live | no |
 | optimism | `0x68a100a3729fc04ab26fb4c0862df22ceec2f18b` | EzDepositor | impl | live | no |

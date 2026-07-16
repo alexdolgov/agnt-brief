@@ -1,0 +1,38 @@
+{
+  "component": "IntegrationHelper-2",
+  "main_contract": "IntegrationHelper",
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/IntegrationHelper-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x96329d66074eb8386ae8bfd6698b2e3fda87e15e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401094"
+    },
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0x7e1996945ea8866de873179dc1677e93a4380107",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401356"
+    }
+  ]
+}

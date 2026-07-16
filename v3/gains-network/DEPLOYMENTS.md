@@ -1,6 +1,6 @@
 # gains-network — deployments
 
-31 verified deployment(s) across 26 component(s).
+33 verified deployment(s) across 28 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -9,6 +9,7 @@
 | arbitrum | `0x18c11fd286c5ec11c3b683caa813b77f5163a122` | GainsNetworkToken-3 | impl | live | no |
 | arbitrum | `0x32e5594f14de658b0d577d6560fa0d9c6f1aa724` | NyanRewards | impl | live | no |
 | arbitrum | `0x4ca1638754be8060e544aca4a4f43702be30e0d1` | GTokenOpenPnlFeed-5 | impl | live | no |
+| arbitrum | `0x5f5e4892bab94d94dc57a3edea3c138167c4df0f` | GNSTimelockOwner | impl | live | no |
 | arbitrum | `0x62ff5be795262999fc1ebac29277575031d2da2c` | NyanRewards | impl | live | no |
 | arbitrum | `0x9197b730af08b9f8b5ab233560feb2ecd1db471a` | GNSTradingInteractions | impl | live | no |
 | arbitrum | `0x990ba9edd8a9615a23e4c452e63a80e519a4a23d` | GTokenOpenPnlFeed-6 | impl | live | no |
@@ -16,6 +17,7 @@
 | arbitrum | `0xcdcb434d576c5b1cf387cb272756199b7e72c44d` | GNSTradingV6_3_2 | impl | live | no |
 | arbitrum | `0xd846b17a07e26f9832f8de940101c5f764df3804` | GTokenLockedDepositNft-3 | impl | live | no |
 | base | `0x1671e2265cbbb3f13dfbbf76661cbc19d82143a9` | ERC20Bridge-2 | impl | live | no |
+| base | `0x496bfda33238adf534034ed859d8c12afee8906c` | Contract | impl | live | no |
 | base | `0x7d0131aceefd2acc919d7b2ac32e8e6c81a05ceb` | GTokenLockedDepositNft-2 | impl | live | no |
 | base | `0xb7cb7cb7c3cd96e251c9bf8800b9631134bbadc6` | TransparentUpgradeableProxy | proxy | live | no |
 | base | `0xcec10c66d711250db67945254f79628457365cc8` | GTokenOpenPnlFeed-3 | impl | live | no |

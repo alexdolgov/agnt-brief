@@ -1,18 +1,24 @@
 # cyclone — deployments
 
-34 verified deployment(s) across 18 component(s).
+40 verified deployment(s) across 23 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | bsc | `0x10ed43c718714eb63d5aa57b78b54704e256024e` | PancakeRouter | impl | live | no |
 | bsc | `0x2ad2c5314028897aecfcf37fd923c079beeb2c56` | PancakeRouter-2 | impl | live | no |
+| bsc | `0x66b5e322dc31f8c7a33ffd23975163795f8d16c7` | CycloneV2-2 | impl | live | no |
+| bsc | `0x79459751f6882868d1299bfa412428488b434541` | CycloneV2 | impl | live | no |
 | bsc | `0x810ee35443639348adbbc467b33310d2ab43c168` | CycloneToken-2 | impl | live | yes |
 | bsc | `0x92a737097d711bec4c31351997254e98e5f0d430` | AeolusV2 | impl | live | yes |
+| bsc | `0xbe19d541389c9d3e03efc08f3d5008e8c9cc42a5` | CycloneV2 | impl | live | no |
 | bsc | `0xca143ce32fe78f1f7019d7d551a6402fc5350c73` | PancakeFactory | impl | live | no |
 | bsc | `0xd90a6bf8439ef7214cf00da83e926068b6a507ec` | CycloneV2dot1 | impl | live | yes |
+| ethereum | `0x09f03488291063a8f3c67d2aab7002419d11c113` | CycloneV2dot3-2 | impl | live | no |
 | ethereum | `0x10ed43c718714eb63d5aa57b78b54704e256024e` | Recovery | impl | live | no |
 | ethereum | `0x37d9c7f451e5c619a7d4ca01e06761eb7dae6f89` | UniswapV2Pair | impl | live | no |
 | ethereum | `0x8861cff2366c1128fd699b68304ad99a0764ef9a` | CycloneToken | impl | live | no |
+| ethereum | `0xa38b6742cef9573f7f97c387278fa31482539c3d` | CycloneV2dot3-3 | impl | live | no |
+| ethereum | `0xd619c8da0a58b63be7fa69b4cc648916fe95fa1b` | CycloneV2dot2 | impl | live | no |
 | ethereum | `0xdac17f958d2ee523a2206206994597c13d831ec7` | TetherToken | impl | live | no |
 | ethereum | `0xdc71bc29d12960a3ee5452fac6f033a1b8e756fb` | AeolusV2dot1 | impl | live | no |
 | polygon | `0x39fa48bf36a65834c88ec4ecb44c867f7e071a69` | CycloneV2dot3 | impl | live | no |

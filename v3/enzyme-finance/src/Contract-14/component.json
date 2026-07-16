@@ -1,0 +1,30 @@
+{
+  "component": "Contract-14",
+  "main_contract": "Contract",
+  "source_entry_count": 15,
+  "source_file_count": 15,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-14\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/enzymefinance/protocol/blob/dev/audits/2024-07-CS--pendle-v2--swell--gsn-updates--etherfi-eth-price--redemption-queue--share-price-throttled-asset-manager--allowed-redeemers-for-specific-assets-policy--non-standard-precision-simulated-aggregator.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x50bae03333dd8495263c9049091a8925063b068e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

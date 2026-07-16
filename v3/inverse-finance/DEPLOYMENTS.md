@@ -1,10 +1,12 @@
 # inverse-finance — deployments
 
-178 verified deployment(s) across 106 component(s).
+184 verified deployment(s) across 109 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x1230bd56bf23bf7adf95b9f861711301e3ccd6b3` | GovernanceProxy-2 | impl | live | no |
 | arbitrum | `0x402f38457800c32c67c5983381a685a4a1d4f8bb` | ExchangeRateUpdater | impl | live | no |
+| arbitrum | `0x4c7b266b4bf0a8758fa85e69292ee55c212236cf` | ERC20Mintable-2 | impl | live | no |
 | arbitrum | `0x607bcd974bb69c78ecdbf0b68748b791bba24d94` | GovernanceProxy | impl | live | no |
 | arbitrum | `0x788c3efc8182393915e216174a03cd81395f8c7a` | ERC20Mintable | impl | live | no |
 | arbitrum | `0x7a1e123e41458aabab8068bfed6010d8f9480898` | ERC20Mintable | impl | live | no |
@@ -14,8 +16,10 @@
 | arbitrum | `0xc761ebd4e2bd6cc171cbfb29e81bc9819e7f2a16` | GovernanceProxy | impl | live | no |
 | arbitrum | `0xede7aae6c97a757b23fceb4f78349f296ae8dcdb` | LockedTokenPoolFactory | impl | live | no |
 | base | `0x1c064265e053d23d120c518fdbb542e6537f82d1` | GovernanceProxy | impl | live | no |
+| base | `0x5d5392505ee69f9fe7a6a1c1af14f17db3b3e364` | GovernanceProxy-2 | impl | live | no |
 | base | `0x788c3efc8182393915e216174a03cd81395f8c7a` | ExchangeRateUpdater | impl | live | no |
 | base | `0x7a1e123e41458aabab8068bfed6010d8f9480898` | ExchangeRateUpdater | impl | live | no |
+| base | `0x8bbd036d018657e454f679e7c4726f7a8ece2773` | ERC20Mintable-2 | impl | live | no |
 | base | `0x912fa810fc246bc60689a7b537d7344ee0366f69` | BurnTokenPoolFactory | impl | live | no |
 | base | `0xc415ff1574a106e238bc29693457af5d224ec27c` | GovernanceProxy | impl | live | no |
 | base | `0xca78ee4544ec5a33af86f1e786efc7d3652bf005` | ERC20Mintable | impl | live | no |
@@ -114,6 +118,7 @@
 | ethereum | `0x9063007b3d024fb24c31ea9b6c29ac6cd41c707f` | VaultExchangeRateProvider | impl | live | no |
 | ethereum | `0x91b79a9e3c5a18f09786fa3a2a228905649971b8` | ClampFeed | impl | live | no |
 | ethereum | `0x9229331500bb1773bf305cd05641ef9cea2e6bf6` | Helper-2 | impl | live | no |
+| ethereum | `0x926df14a23be491164dcf93f4c468a50ef659d5b` | Timelock | impl | live | no |
 | ethereum | `0x933cbe81313d9dd523df6dc9b899a7af8ba073e3` | Auction-2 | impl | live | no |
 | ethereum | `0x93c0610b258e42c43544e74cfc1efec8c1f5459b` | Helper-3 | impl | live | no |
 | ethereum | `0x941c2699ec7e55a50bde030d8e1e70649839259d` | Guardian | impl | live | no |
@@ -180,5 +185,6 @@
 | optimism | `0x912fa810fc246bc60689a7b537d7344ee0366f69` | ERC20Mintable | impl | live | no |
 | optimism | `0xaf956837af704d825c1fcbe2651d5c3c37ad5289` | GovernanceProxy | impl | live | no |
 | optimism | `0xca78ee4544ec5a33af86f1e786efc7d3652bf005` | ExchangeRateUpdater | impl | live | no |
+| optimism | `0xcbb162b761b83578b2a0226cbaf4c1ade0d60b2e` | GovernanceProxy-2 | impl | live | no |
 | optimism | `0xede7aae6c97a757b23fceb4f78349f296ae8dcdb` | ExchangeRateUpdater | impl | live | no |
 | optimism | `0xfc63c9c8ba44ae89c01265453ed4f427c80cbd4e` | ERC20Mintable | impl | live | no |

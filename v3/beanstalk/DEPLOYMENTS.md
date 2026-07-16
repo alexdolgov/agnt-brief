@@ -1,6 +1,6 @@
 # beanstalk — deployments
 
-109 verified deployment(s) across 29 component(s).
+121 verified deployment(s) across 39 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -36,6 +36,7 @@
 | arbitrum | `0x3815dd45cde3bfaf1e3db6d7ff9ef3b437d6d0e0` | EACAggregatorProxy | impl | live | no |
 | arbitrum | `0x3861d83ed006a6570ce8eb9878f4df0df889a2da` | EACAggregatorProxy | impl | live | no |
 | arbitrum | `0x387e40ed22ee3396288c874411b00c48f6978653` | LockReleaseTokenPoolAndProxy | impl | live | no |
+| arbitrum | `0x390b023d316c2e92dd96a9bcc7fae8db12a2fbc1` | SafeProxy | impl | live | no |
 | arbitrum | `0x3971cfef12c4cc6ed14d65b39c9ec6c740c19a40` | PriceRegistry | impl | live | no |
 | arbitrum | `0x39ae1032cf4b334a1ed41cdd0833bdd7c7e7751e` | TokenAdminRegistry | impl | live | no |
 | arbitrum | `0x3b9c34dc5b6bfc1de896496afcef1ca705d0c762` | EACAggregatorProxy | impl | live | no |
@@ -48,6 +49,8 @@
 | arbitrum | `0x4b13dd76de990db9a2dab58d35c2c02e5e3ae848` | EACAggregatorProxy | impl | live | no |
 | arbitrum | `0x54a82bc6c6540f95c0b84690773635acc97a92ff` | EACAggregatorProxy | impl | live | no |
 | arbitrum | `0x552c92c0c09a73d569ab52ff4c17a153c3472be3` | EACAggregatorProxy | impl | live | no |
+| arbitrum | `0x555555987d98079b9f43cdcdbd52dbb24ffeeef5` | ShipmentPlanner | impl | live | no |
+| arbitrum | `0x5a5a5ade4c9713172a5228703213d4d39608e2cd` | Junction | impl | live | no |
 | arbitrum | `0x5fb8e23065c362080e540e01e0bd4119b6cb53fe` | EACAggregatorProxy | impl | live | no |
 | arbitrum | `0x639fe6ab55c921f74e7fac1ee960c0b6293ba612` | EACAggregatorProxy-2 | impl | unknown | no |
 | arbitrum | `0x670bd6d743fa996dc512e2c652b7c8ffa8e7c23f` | EACAggregatorProxy | impl | live | no |
@@ -67,6 +70,7 @@
 | arbitrum | `0x7c7dffec76f590e9648ea468ba2fdd0a9892a595` | EACAggregatorProxy | impl | live | no |
 | arbitrum | `0x7c8e67de37937bce98116c605053ed06826691ad` | EACAggregatorProxy | impl | live | no |
 | arbitrum | `0x818792c958ac33c01c58d5026cec91a86e9071d7` | RegistryModuleOwnerCustom | impl | live | no |
+| arbitrum | `0x82af49447d8a07e3bd95bd0d56f35241523fbab1` | ProxyAdmin | proxy | live | no |
 | arbitrum | `0x86e53cf1b870786351da77a57575e79cb55812cb` | EACAggregatorProxy-2 | impl | live | no |
 | arbitrum | `0x86e5d529cb7caef5c475aab0727a84739e12ea3f` | EACAggregatorProxy-2 | impl | live | no |
 | arbitrum | `0x926eed7973ebc57a8767659c5b35b9a0bab6302f` | EACAggregatorProxy-2 | impl | live | no |
@@ -91,9 +95,12 @@
 | arbitrum | `0xd01d5e889659d33aaf01b34b1d41123f07b11b57` | EACAggregatorProxy | impl | live | no |
 | arbitrum | `0xd0e9220a422ba14676dc34042f5f70c6fbc3f7af` | EACAggregatorProxy | impl | live | no |
 | arbitrum | `0xd1a0060ba708bc4bcd3da6c37efa8dedf015fb70` | Diamond | proxy | live | yes |
+| arbitrum | `0xd39a31e5f23d90371d61a976cacb728842e04ca9` | SafeProxy | proxy | live | no |
+| arbitrum | `0xd6fc4a63d7e93267c3007ea176081052369a4749` | UnwrapAndSendETH | impl | live | no |
 | arbitrum | `0xdb0c64efa0395063033b10769a80c62f885a620a` | EACAggregatorProxy | impl | live | no |
 | arbitrum | `0xdbff913e9058c1e60446150d23bb0ffe9144d531` | EACAggregatorProxy | impl | live | no |
 | arbitrum | `0xdc1a8f77cdc46d1fb7f22f94dfca4ddbf566fa23` | EACAggregatorProxy | impl | live | no |
+| arbitrum | `0xdd5b31e73db1c566ca09e1f1f74df34913daaf69` | GnosisSafeProxy | proxy | live | no |
 | arbitrum | `0xde4af8b4747192ea29339d0feb36d9830d399134` | EACAggregatorProxy | impl | live | no |
 | arbitrum | `0xe46a44cb6f15edfbf01873e00b131c596860aa3a` | EACAggregatorProxy | impl | live | no |
 | arbitrum | `0xe4c892be702f8e0771122ccaaa0e50bf9639e2fd` | EACAggregatorProxy | impl | live | no |
@@ -108,8 +115,13 @@
 | arbitrum | `0xff6b58d50dadf1ecc69101b2784b2ebb2edc30f6` | EACAggregatorProxy | impl | live | no |
 | ethereum | `0x1bea0050e63e05fbb5d8ba2f10cf5800b6224449` | BeanstalkERC20-3 | impl | unknown | no |
 | ethereum | `0x1bea3ccd22f4ebd3d37d731ba31eeca95713716d` | BeanstalkERC20 | impl | unknown | no |
+| ethereum | `0x3a70dfa7d2262988064a2d051dd47521e43c9bdd` | Vyper_contract | impl | live | no |
 | ethereum | `0x87898263b6c5babe34b4ec53f22d98430b91e371` | JamUniswapV2Pair | impl | live | no |
+| ethereum | `0xa755a670aaf1fecef2bea56115e65e03f7722a79` | BeaNFT | impl | live | no |
 | ethereum | `0xbea0000029ad1c77d3d5d23ba2d8893db9d1efab` | BeanstalkERC20 | impl | unknown | no |
 | ethereum | `0xbea0e11282e2bb5893bece110cf199501e872bad` | Well | impl | unknown | no |
 | ethereum | `0xc1e088fc1323b20bcbee9bd1b9fc9546db5624c5` | DiamondLoupeFacet | proxy | live | yes |
+| ethereum | `0xc9c32cd16bf7efb85ff14e0c8603cc90f6f2ee49` | Vyper_contract | impl | unknown | no |
+| ethereum | `0xd23ca44dadf271c7f0d540a571864043c36c1f27` | BeaNFT-2 | impl | live | no |
+| ethereum | `0xd652c40fbb3f06d6b58cb9aa9cff063ee63d465d` | Vyper_contract-2 | impl | live | no |
 | ethereum | `0xdc59ac4fefa32293a95889dc396682858d52e5db` | Bean | impl | live | yes |

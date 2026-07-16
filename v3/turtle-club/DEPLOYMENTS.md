@@ -1,6 +1,6 @@
 # turtle-club — deployments
 
-1540 verified deployment(s) across 750 component(s).
+1541 verified deployment(s) across 751 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -459,6 +459,7 @@
 | ethereum | `0x2d362158034eeb28e1a7062f24ffc436b1d01858` | TurtleStakingVaultProxy | proxy | live | no |
 | ethereum | `0x2d3b4bb82bdf0a3593bcf098b5c5b6f7570211a7` | swETH | impl | live | no |
 | ethereum | `0x2de7320004f837925ba31326ff66210be90171ab` | PlasmaVaultBase | impl | live | no |
+| ethereum | `0x2e0355922ef3a5b77d29287c808aeafb4e7f25b2` | SafeProxy | proxy | live | no |
 | ethereum | `0x2e3266358674c8a54ead81610c3c41033279e7dd` | Erc4626BalanceFuse | impl | live | no |
 | ethereum | `0x2e894952809c3d48937fa1ffc689953358e1e1b0` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0x2fa5758ee41b34b2f80983351a799084ec8a6cf5` | RedstoneCoreOracle | impl | live | no |

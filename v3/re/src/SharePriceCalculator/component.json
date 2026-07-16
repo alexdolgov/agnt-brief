@@ -1,0 +1,28 @@
+{
+  "component": "SharePriceCalculator",
+  "main_contract": "SharePriceCalculator",
+  "source_entry_count": 12,
+  "source_file_count": 12,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/SharePriceCalculator\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5cd24d20e2f3c6742be752cb0f8c2531ca3b7425",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403919"
+    }
+  ]
+}

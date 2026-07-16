@@ -3,17 +3,12 @@ pragma solidity 0.8.28;
 
 import {ISiloConfig} from "silo-core/contracts/interfaces/ISiloConfig.sol";
 import {IHookReceiver} from "silo-core/contracts/interfaces/IHookReceiver.sol";
-import {IVersioned} from "silo-core/contracts/interfaces/IVersioned.sol";
 
 import {GaugeHookReceiver} from "silo-core/contracts/hooks/gauge/GaugeHookReceiver.sol";
 import {PartialLiquidation} from "silo-core/contracts/hooks/liquidation/PartialLiquidation.sol";
 import {BaseHookReceiver} from "silo-core/contracts/hooks/_common/BaseHookReceiver.sol";
 
-contract SiloHookV1 is GaugeHookReceiver, PartialLiquidation, IVersioned {
-    function VERSION() external pure virtual returns (string memory) { // solhint-disable-line func-name-mixedcase
-        return "SiloHookV1 4.19.0";
-    }
-
+contract SiloHookV1 is GaugeHookReceiver, PartialLiquidation {
     /// @inheritdoc IHookReceiver
     function initialize(ISiloConfig _config, bytes calldata _data)
         public
@@ -24,7 +19,6 @@ contract SiloHookV1 is GaugeHookReceiver, PartialLiquidation, IVersioned {
 
         BaseHookReceiver.__BaseHookReceiver_init(_config);
         GaugeHookReceiver.__GaugeHookReceiver_init(owner);
-        PartialLiquidation.__PartialLiquidation_init(owner);
     }
 
     /// @inheritdoc IHookReceiver

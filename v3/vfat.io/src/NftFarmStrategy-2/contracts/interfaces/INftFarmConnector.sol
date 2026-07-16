@@ -7,13 +7,12 @@ interface INftFarmConnector {
     function depositExistingNft(
         NftPosition calldata position,
         bytes calldata extraData
-    ) external payable;
+    ) external;
 
     function withdrawNft(
         NftPosition calldata position,
         bytes calldata extraData
-    ) external payable;
-    // Payable in case an NFT is withdrawn to be increased with ETH
+    ) external;
 
     function claim(
         NftPosition calldata position,
@@ -21,7 +20,7 @@ interface INftFarmConnector {
         uint128 maxAmount0, // For collecting
         uint128 maxAmount1,
         bytes calldata extraData
-    ) external payable;
+    ) external;
 
     function earned(
         address user,

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 /**
  * @title IConfigurationManagerEvents
@@ -38,5 +38,15 @@ interface IConfigurationManagerEvents {
     event HarborCommandUpdated(
         address oldHarborCommand,
         address newHarborCommand
+    );
+
+    /**
+     * @notice Emitted when the Fleet Commander Rewards Manager Factory address is updated
+     * @param oldFleetCommanderRewardsManagerFactory The address of the old Fleet Commander Rewards Manager Factory
+     * @param newFleetCommanderRewardsManagerFactory The address of the new Fleet Commander Rewards Manager Factory
+     */
+    event FleetCommanderRewardsManagerFactoryUpdated(
+        address oldFleetCommanderRewardsManagerFactory,
+        address newFleetCommanderRewardsManagerFactory
     );
 }

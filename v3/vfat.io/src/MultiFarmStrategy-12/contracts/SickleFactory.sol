@@ -2,9 +2,8 @@
 pragma solidity ^0.8.17;
 
 import { Clones } from "@openzeppelin/contracts/proxy/Clones.sol";
-
-import { Sickle } from "contracts/Sickle.sol";
 import { SickleRegistry } from "contracts/SickleRegistry.sol";
+import { Sickle } from "contracts/Sickle.sol";
 import { Admin } from "contracts/base/Admin.sol";
 
 /// @title SickleFactory contract
@@ -65,9 +64,10 @@ contract SickleFactory is Admin {
         previousFactory = SickleFactory(previousFactory_);
     }
 
-    function setActive(
-        bool active
-    ) external onlyAdmin {
+    /// @notice Update the isActive flag.
+    /// @dev Effectively pauses and unpauses new Sickle deployments.
+    /// @custom:access Restricted to protocol admin.
+    function setActive(bool active) external onlyAdmin {
         isActive = active;
     }
 
@@ -88,9 +88,7 @@ contract SickleFactory is Admin {
         emit Deploy(admin, sickle);
     }
 
-    function _getSickle(
-        address admin
-    ) internal returns (address sickle) {
+    function _getSickle(address admin) internal returns (address sickle) {
         sickle = _sickles[admin];
         if (sickle != address(0)) {
             return sickle;
@@ -109,9 +107,7 @@ contract SickleFactory is Admin {
     /// @notice Predict the address of a Sickle contract for a specific user
     /// @param admin Address receiving the admin rights of the Sickle contract
     /// @return sickle Address of the predicted Sickle contract
-    function predict(
-        address admin
-    ) external view returns (address) {
+    function predict(address admin) external view returns (address) {
         bytes32 salt = keccak256(abi.encode(admin));
         return Clones.predictDeterministicAddress(implementation, salt);
     }
@@ -119,9 +115,7 @@ contract SickleFactory is Admin {
     /// @notice Returns the Sickle contract for a specific user
     /// @param admin Address that owns the Sickle contract
     /// @return sickle Address of the Sickle contract
-    function sickles(
-        address admin
-    ) external view returns (address sickle) {
+    function sickles(address admin) external view returns (address sickle) {
         sickle = _sickles[admin];
         if (sickle == address(0) && address(previousFactory) != address(0)) {
             sickle = previousFactory.sickles(admin);
@@ -131,9 +125,7 @@ contract SickleFactory is Admin {
     /// @notice Returns the admin for a specific Sickle contract
     /// @param sickle Address of the Sickle contract
     /// @return admin Address that owns the Sickle contract
-    function admins(
-        address sickle
-    ) external view returns (address admin) {
+    function admins(address sickle) external view returns (address admin) {
         admin = _admins[sickle];
         if (admin == address(0) && address(previousFactory) != address(0)) {
             admin = previousFactory.admins(sickle);
@@ -143,9 +135,11 @@ contract SickleFactory is Admin {
     /// @notice Returns the referral code for a specific Sickle contract
     /// @param sickle Address of the Sickle contract
     /// @return referralCode Referral code for the user
-    function referralCodes(
-        address sickle
-    ) external view returns (bytes32 referralCode) {
+    function referralCodes(address sickle)
+        external
+        view
+        returns (bytes32 referralCode)
+    {
         referralCode = _referralCodes[sickle];
         if (
             referralCode == bytes32(0) && address(previousFactory) != address(0)
@@ -157,7 +151,6 @@ contract SickleFactory is Admin {
     /// @notice Deploys a new Sickle contract for a specific user, or returns
     /// the existing one if it exists
     /// @param admin Address receiving the admin rights of the Sickle contract
-    /// @param approved Address approved to manage automation
     /// @param referralCode Referral code for the user
     /// @return sickle Address of the deployed Sickle contract
     function getOrDeploy(
@@ -181,7 +174,6 @@ contract SickleFactory is Admin {
     /// @dev Sickle contracts are deployed with create2, the address of the
     /// admin is used as a salt, so all the Sickle addresses can be pre-computed
     /// and only 1 Sickle will exist per address
-    /// @param approved Address approved to manage automation
     /// @param referralCode Referral code for the user
     /// @return sickle Address of the deployed Sickle contract
     function deploy(

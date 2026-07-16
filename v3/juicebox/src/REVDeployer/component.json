@@ -1,0 +1,48 @@
+{
+  "component": "REVDeployer",
+  "main_contract": "REVDeployer",
+  "source_entry_count": 124,
+  "source_file_count": 124,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/REVDeployer\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x2ca27bde7e7d33e353b44c27acfcf6c78dde251d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396647"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x2ca27bde7e7d33e353b44c27acfcf6c78dde251d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396703"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2ca27bde7e7d33e353b44c27acfcf6c78dde251d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "396742"
+    }
+  ]
+}

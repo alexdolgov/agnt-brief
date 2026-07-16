@@ -1,6 +1,6 @@
 # neku — deployments
 
-43 verified deployment(s) across 8 component(s).
+44 verified deployment(s) across 9 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -28,6 +28,7 @@
 | arbitrum | `0x874a86e9e78d123abb745cae5e97369d79d41554` | CErc20Delegator | impl | live | no |
 | arbitrum | `0x8e9027803d0f448dd96dd73069c35b0641151b07` | CErc20Delegator | impl | live | no |
 | arbitrum | `0x9ac8f7a521dcbc12cb4d54b22fa1fbf1c5f50caf` | CErc20Delegator | impl | live | no |
+| arbitrum | `0xa4cc4a18a44595d8c7dc34431a99994545997ce3` | WrappedToken | impl | live | no |
 | arbitrum | `0xa7ad08399bce6dd0f7110d88cc6303f9561acd48` | CErc20Delegator | impl | live | no |
 | arbitrum | `0xa9958d6a3ec9604507f6f99f402103eaa2cae784` | CErc20Delegator | impl | live | no |
 | arbitrum | `0xb575244296c27e7897382e6c140708c44a6a4229` | StableMint | impl | live | no |

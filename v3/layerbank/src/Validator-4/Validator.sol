@@ -19,6 +19,7 @@ contract Validator is IValidator, Ownable {
 
   IPriceCalculator public oracle;
   uint256 private constant labPriceCollateralCap = 75e15;
+  uint256 private constant DUST = 1000;
 
   /* ========== STATE VARIABLES ========== */
 
@@ -104,6 +105,7 @@ contract Validator is IValidator, Ownable {
   }
 
   function borrowAllowed(address lToken, address borrower, uint256 borrowAmount) external override returns (bool) {
+    require(borrowAmount > DUST, "Validator: too small borrow amount");
     require(core.checkMembership(borrower, address(lToken)), "Validator: enterMarket required");
     require(oracle.getUnderlyingPrice(address(lToken)) > 0, "Validator: Underlying price error");
 

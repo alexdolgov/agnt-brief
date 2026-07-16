@@ -1,0 +1,38 @@
+{
+  "component": "Contract-2",
+  "main_contract": "Contract",
+  "source_entry_count": 22,
+  "source_file_count": 22,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x21fc7b250ccaeecdb2abb38e04617d1f24d98772",
+      "is_proxy": true,
+      "implementation_address": "0x73b47fcc02aa3774c67865c1f3d65640f2c29a95",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x73b47fcc02aa3774c67865c1f3d65640f2c29a95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

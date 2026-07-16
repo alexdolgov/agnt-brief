@@ -1,6 +1,6 @@
 # connext — deployments
 
-114 verified deployment(s) across 112 component(s).
+125 verified deployment(s) across 123 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -17,8 +17,10 @@
 | arbitrum | `0x4b075f1d7dce6f480bf87e45df2f2e1b1a430184` | AIP1Point1Target | impl | unknown | no |
 | arbitrum | `0x5d8063df0319457f777a353efef0dc0189a15ba1` | DForce | impl | unknown | no |
 | arbitrum | `0x6274106eedd4848371d2c09e0352d67b795ed516` | AIP1Point2Action | impl | unknown | no |
+| arbitrum | `0x82af49447d8a07e3bd95bd0d56f35241523fbab1` | ProxyAdmin | proxy | live | no |
 | arbitrum | `0xaefc25750d8c2bd331293076e2dc5d5ad414b4a2` | L2TestSpell | impl | unknown | no |
 | arbitrum | `0xba4eee20f434bc3908a0b18da496348657133a7e` | ArbitrumExtension | impl | unknown | no |
+| arbitrum | `0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9` | TransparentUpgradeableProxy | proxy | live | no |
 | base | `0x01ede4fdf8cf7ef9942a935305c3145f8daa180a` | Unwrapper | impl | live | no |
 | base | `0x0296da2ce82eb3b98eb05925bc5777c7da0d0f09` | LPToken | impl | unknown | no |
 | base | `0x0645265e254caeb175d75890259db3696e7a81ed` | ConnextDiamond | impl | unknown | no |
@@ -28,9 +30,12 @@
 | base | `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913` | FiatTokenProxy | proxy | live | no |
 | bsc | `0x0b081b724cdc4dd9186e64f259b5fc589a4fd7d0` | PancakeV3Swapper | impl | unknown | no |
 | bsc | `0x13a1dbf4c746775f606c77f2fb36bbe90bb3b676` | UpgradeBeaconController | impl | unknown | no |
+| bsc | `0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3` | BEP20DAI | impl | live | no |
 | bsc | `0x1fa4a73a3f0133f0025378af00236f3abdee5d63` | BEP20UpgradeableProxy | proxy | unknown | no |
+| bsc | `0x2170ed0880ac9a755fd29b2688956bd959f933f8` | BEP20Ethereum | impl | live | no |
 | bsc | `0x24a1eb8fae716ef04dca073e3f99f5f5c7497137` | CrossMinter | impl | unknown | no |
 | bsc | `0x250632378e573c6be1ac2f97fcdf00515d0aa91b` | BEP20UpgradeableProxy-2 | proxy | unknown | no |
+| bsc | `0x55d398326f99059ff775485246999027b3197955` | BEP20USDT | impl | live | no |
 | chain-1088 | `0x0296da2ce82eb3b98eb05925bc5777c7da0d0f09` | RoutersFacet | impl | unknown | no |
 | chain-1088 | `0x0645265e254caeb175d75890259db3696e7a81ed` | SwapAdminFacet | impl | unknown | no |
 | chain-1088 | `0x191d761a722e13085e4c95b95cbcf3cc4938600a` | PortalFacet | impl | unknown | no |
@@ -107,7 +112,10 @@
 | optimism | `0x035aba93c18d407dec788ca2fdc77b90feba836b` | RelayerProxy | impl | unknown | no |
 | optimism | `0x1135cc96a7e9d8f161be8b6bdb74f896a9658a08` | UniV3Swapper | impl | unknown | no |
 | optimism | `0x1bcdbf11f9eb8ddac1725bb346890e45f14dcbd5` | ProposedOwnableFacet | proxy | unknown | yes |
+| optimism | `0x4200000000000000000000000000000000000006` | WETH9 | impl | live | no |
 | optimism | `0x58b9cb810a68a7f3e1e4f8cb45d1b9b3c79705e8` | ProposedOwnable | proxy | live | no |
+| optimism | `0x7f5c764cbc14f9669b88837ca1490cca17c31607` | OVMFiatToken | impl | live | no |
+| optimism | `0x94b008aa00579c1307b0ef2c499ad98a8ce58e58` | USDT | impl | live | no |
 | optimism | `0xd47bd37deaa7d960659f5ddab98f4e4729165d3f` | xDonate | impl | unknown | no |
 | optimism | `0xface86b9f34230624cf48eb582aff4bba970edcd` | MeanFinanceSource | impl | unknown | no |
 | polygon | `0x0296da2ce82eb3b98eb05925bc5777c7da0d0f09` | SwapUtilsExternal | impl | unknown | no |
@@ -115,6 +123,9 @@
 | polygon | `0x11984dc4465481512eb5b777e44061c158cf2259` | ProposedOwnableFacet | proxy | live | yes |
 | polygon | `0x137072f68708eb7c82edceececcf64d6c29c171b` | WatcherManager | impl | unknown | no |
 | polygon | `0x1a238087e8fb9f6b248ec4143d94f11b1497383a` | PolygonSpokeConnector | impl | unknown | no |
+| polygon | `0x2791bca1f2de4661ed88a30c99a7a9449aa84174` | UChildERC20Proxy | proxy | live | no |
 | polygon | `0x3bee41753779e18a2d459a84c612ac6ef903c5c2` | IXTLockboxAdapter | impl | unknown | no |
 | polygon | `0x3e64213564cc30107beb81cd0dced3f18df79b35` | MeanFinanceTarget | impl | unknown | no |
 | polygon | `0x4e02ac4b0942e670dd0366fa504f665a2257443c` | MidasProtocolTarget | impl | unknown | no |
+| polygon | `0x7ceb23fd6bc0add59e62ac25578270cff1b9f619` | EIP712Base | impl | live | no |
+| polygon | `0xc2132d05d31c914a87c6611c10748aeb04b58e8f` | UpgradableProxy | proxy | live | no |

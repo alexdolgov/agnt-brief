@@ -1,6 +1,6 @@
 # bio-protocol — deployments
 
-62 verified deployment(s) across 28 component(s).
+63 verified deployment(s) across 29 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -51,6 +51,7 @@
 | ethereum | `0xad032c243c88d41973ba75e0c2b6585273cb42c1` | FairAuctionVesting | impl | live | no |
 | ethereum | `0xb1729b20dad1fa670f96e4cf4bffe21ac6a8f3b8` | LockedToken | impl | live | no |
 | ethereum | `0xb35d73f8a8c8fa5926ea77d3866c314c96cb400f` | FairAuctionVesting | impl | live | no |
+| ethereum | `0xc0a2ca1c2c05ac200c109f0bb571fd5710403e93` | VeBIO | impl | live | no |
 | ethereum | `0xc85f5dd5880d5162faf5fdb24d40845b7c8f976f` | DAOToken | impl | live | no |
 | ethereum | `0xc8cd729902e344bedf8585fe1af0545c44582b5b` | LockedToken-2 | impl | live | no |
 | ethereum | `0xcb1592591996765ec0efc1f92599a19767ee5ffa` | BioToken | impl | live | no |

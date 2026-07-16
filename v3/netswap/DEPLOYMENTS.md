@@ -1,22 +1,26 @@
 # netswap — deployments
 
-58 verified deployment(s) across 29 component(s).
+65 verified deployment(s) across 33 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | chain-1088 | `0x0071ddb5a2e80b6b22317594a0307599836621cd` | Multicall | impl | live | yes |
 | chain-1088 | `0x0724d37522585e87d27c802728e824862dc72861` | NetswapPair | impl | unknown | no |
+| chain-1088 | `0x0ecdc3d1747dc0ba37c9f7a0711501657136f553` | BoostedNETTFarm | impl | live | no |
 | chain-1088 | `0x0f21d33f6f4fcab61e6c21539280c90a140def34` | Unlimited | impl | live | no |
 | chain-1088 | `0x1c5f80666406d528ca91c72cf8f0c536cf2fcadf` | SimpleRewarderPerSec-6 | impl | unknown | no |
 | chain-1088 | `0x1cad5f8f5d4c0ad49646b2565cc0ca725e4280ea` | NetswapPair | impl | unknown | no |
 | chain-1088 | `0x1ddf972f2ccbf896b4df62befb434f7e9f553634` | SimpleRewarderPerSec-2 | impl | unknown | no |
 | chain-1088 | `0x1e876cce41b7b844fde09e38fa1cf00f213bff56` | NetswapRouter | impl | live | yes |
+| chain-1088 | `0x276164cde2607ce3e45dd76fe7f4f31511d9db9d` | TransparentUpgradeableProxy | impl | live | no |
 | chain-1088 | `0x2ac666026515acc3d8a29b99785c6cdd989c096b` | StakingRewards-2 | impl | unknown | no |
 | chain-1088 | `0x2bd9e5da0c3ccd017eacbe7420180faadfb5a0b7` | SimpleRewarderPerSec-4 | impl | unknown | no |
+| chain-1088 | `0x2dc348972df99dff6716007d19368eaaa6e75ed7` | CommunityTreasury | impl | live | no |
 | chain-1088 | `0x35a316370da5dfcd6239290325cb38a00007b02c` | StakingRewards | impl | unknown | no |
 | chain-1088 | `0x35c3123e3e274f05f921a792bd0d80414d50d07f` | LaunchpadHelper | impl | unknown | no |
 | chain-1088 | `0x3751a5b7b1f16d997776261555b0b9fbc702262a` | Mining | impl | unknown | no |
 | chain-1088 | `0x38d283e53c6530dfa8ccf954fdb3419aaee530f6` | SimpleRewarderPerSec-3 | impl | unknown | no |
+| chain-1088 | `0x3c13674ae82dac9fffe5d7f6e9ee555536bc9961` | TransparentUpgradeableProxy | impl | live | no |
 | chain-1088 | `0x3d60afecf67e6ba950b499137a72478b2ca7c5a1` | NetswapPair | impl | unknown | no |
 | chain-1088 | `0x4cccede3d5a6fc96ff921b8e765446c827f4b294` | SimpleRewarderPerSec-2 | impl | unknown | no |
 | chain-1088 | `0x4d2f0f5409b51172dc229b3c8dcaa1365a9c9c27` | StakingRewards-3 | impl | live | no |
@@ -27,6 +31,7 @@
 | chain-1088 | `0x587e879e48ae1753d44d9f33603141c6afb87f76` | PadFactory | impl | live | no |
 | chain-1088 | `0x59051b5f5172b69e66869048dc69d35db0b3610d` | NetswapPair | impl | unknown | no |
 | chain-1088 | `0x5ae3ee7fbb3cb28c17e7adc3a6ae605ae2465091` | NetswapPair | impl | unknown | no |
+| chain-1088 | `0x5e1f9cd1b9635506af6bc3b2414ac9c8b2840efa` | TransparentUpgradeableProxy | impl | live | no |
 | chain-1088 | `0x60312d4ebbf3617d3d33841906b5868a86931cbd` | NetswapPair | impl | unknown | no |
 | chain-1088 | `0x6535db9e8ba2c4304fe45b25d866b37346cc2bd5` | VeNETT | impl | live | no |
 | chain-1088 | `0x66496b381c5806167d9526bb164caa632c6cbb6c` | SimpleRewarderPerSec | impl | unknown | no |
@@ -40,6 +45,7 @@
 | chain-1088 | `0x8196b259d309efe84d22e34ea76dc8547c99b7d2` | NETT | impl | unknown | no |
 | chain-1088 | `0x82e7fb15c1c173013f67b677f967ecf0ca4838ce` | SimpleRewarderPerSec | impl | unknown | no |
 | chain-1088 | `0x846b62d627f07fe5e2804a32cd5a0cec408b98f7` | BasicModel | impl | unknown | no |
+| chain-1088 | `0x8738e9e9a8263065b07ad460beb66815dd7b81a5` | wNETT | impl | live | no |
 | chain-1088 | `0x876488d7beb48ede40e74346a70fe587e8f7da66` | SimpleRewarderPerSec-2 | impl | unknown | no |
 | chain-1088 | `0x8d8be2b72515680f6c31dc5d9a3fb30f1366df60` | FarmLens | impl | live | no |
 | chain-1088 | `0x90fe084f877c65e1b577c7b2ea64b8d8dd1ab278` | NETT-2 | impl | live | yes |
@@ -52,6 +58,7 @@
 | chain-1088 | `0xb7d2ab19798c9eb056e9a9aa1290d48e1af60f21` | SimpleRewarderPerSec | impl | unknown | no |
 | chain-1088 | `0xbedf6ea5f501b27e88882ec0e3dc0a58ea4ffe97` | SimpleRewarderPerSec | impl | unknown | no |
 | chain-1088 | `0xcae5caeb285379a6d35d71bd628e79421ea5eb1e` | SimpleRewarderPerSec-4 | impl | unknown | no |
+| chain-1088 | `0xd365e36086f70d187e4f5b83c912e555e57110fa` | TransparentUpgradeableProxy | impl | live | no |
 | chain-1088 | `0xd56c7ff349596c7b3a0f0abf564b800a8ec6fba7` | SimpleRewarderPerSec | impl | unknown | no |
 | chain-1088 | `0xd5a3ea7d65d7b814c77d0d287c9ced8184bea7a1` | SimpleRewarderPerSec | impl | unknown | no |
 | chain-1088 | `0xd64894df18ca14d3fe051bec9ee9e0efd0a521e8` | SimpleRewarderPerSec | impl | unknown | no |

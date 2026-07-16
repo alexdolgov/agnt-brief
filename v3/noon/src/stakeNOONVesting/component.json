@@ -10,14 +10,24 @@
     "build_command": "forge build --root \"src/stakeNOONVesting\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xb6aced50a83c893949680ad830651ea969558e05",
+      "address": "0x628c2b6259b45a6b22dbe21ef84b1dc9f63642c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405527"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc6bd83ec60ae3ab25d0eee700ed2b7c0cdcd2cc1",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

@@ -1,6 +1,62 @@
 # ipor — deployments
 
-0 verified deployment(s) across 0 component(s).
+56 verified deployment(s) across 38 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x056bbd8e00e6314b811d3b904e2d788b75a7a23a` | IporArbitrumAirdrop | impl | live | no |
+| arbitrum | `0x0dfde348bdd8e74369713c033a31a5fbb6a50f86` | AmmPoolsServiceUsdc | impl | live | no |
+| arbitrum | `0x168376391db04f43e3924260e5ace9bec48a1372` | AmmOpenSwapServiceUsdc | impl | live | no |
+| arbitrum | `0x21f1209692ed441664183413f2fdd675adb3223b` | ERC1967Proxy-2 | proxy | live | no |
+| arbitrum | `0x221a9a6a40a932816a56abfef1a8384dff98d856` | AmmOpenSwapServiceWstEth | impl | live | no |
+| arbitrum | `0x32365802690ebc1e1db767f1e16974358ec3f5ec` | AmmCloseSwapServiceWstEth-2 | impl | live | no |
+| arbitrum | `0x326804339ec2a210e5f9246f4959ae50961c5c28` | ERC1967Proxy-2 | proxy | live | no |
+| arbitrum | `0x34229b3f16fbcdfa8d8d9d17c0852f9496f4c7bb` | ClonableBeaconProxy | proxy | live | no |
+| arbitrum | `0x42444c388beac2d1685ebfafaed1e86b9e7a1b3d` | SpreadBaseV1-2 | impl | live | no |
+| arbitrum | `0x485cac13e6492ccf4d47764b0e4e07b5272b0167` | IpToken-2 | impl | live | no |
+| arbitrum | `0x486230b2d9acd4f10254595d5d5b9522fde9b73a` | IporArbitrumAirdrop | impl | live | no |
+| arbitrum | `0x4a319901c17748a637c2e0c4902f071fa1fd79bc` | IpToken-2 | impl | live | no |
+| arbitrum | `0x4cbacb8f649483506a697e6c8acd184cbfd5ae3f` | StakeService-2 | impl | live | no |
+| arbitrum | `0x52395372f2355491bc823d752bdb347807864308` | ERC1967Proxy-3 | proxy | live | no |
+| arbitrum | `0x70ddde503edf4816b5991ca5e2f9de79e295f2d0` | ERC1967Proxy-2 | proxy | live | no |
+| arbitrum | `0x760fa0ab719c4067d3a8d4727cf07e8f3bf118db` | ERC1967Proxy-2 | proxy | live | no |
+| arbitrum | `0x7bb6cbd3c2ffb7ef31a55f98b7b3d11416ab9954` | AmmPoolsLensWstEth | impl | live | no |
+| arbitrum | `0x88a4052faba59ad82908d7064c8ef1778c6ea867` | ERC1967Proxy-3 | proxy | live | no |
+| arbitrum | `0x8c8a41f7c02d6828941ae7e8b689fc16e9630517` | PowerTokenLens-2 | impl | live | no |
+| arbitrum | `0x8cc274cced430ff6dce4e95089b9307122803c18` | AmmCloseSwapServiceUsdc | impl | live | no |
+| arbitrum | `0x8cd6db83d972da3289effb2d02a866584a719a7f` | AmmPoolsServiceWstEth | impl | live | no |
+| arbitrum | `0x8f98636d8c70fc8aebfa46c7e62d63a90fea65dd` | AmmSwapsLensArbitrum | impl | live | no |
+| arbitrum | `0x9324d39b29c85440cadd2202e4703e6f5d1e98f9` | ERC1967Proxy-3 | proxy | live | no |
+| arbitrum | `0x9568a0970e5619f215f1ba06623cbac1ef06301d` | AmmPoolsServiceUsdm | impl | live | no |
+| arbitrum | `0xad2a3cbfa2bd5dfe1382491414e8a28c13ff4fc7` | LiquidityMiningLens-2 | impl | live | no |
+| arbitrum | `0xb264e232d5cd6120a016e419a3ab3ed2db86f14c` | ERC1967Proxy-3 | proxy | live | no |
+| arbitrum | `0xbd013ea2e01c2ab3462dd67e9c83aa3834882a5d` | ERC1967Proxy-2 | proxy | live | no |
+| arbitrum | `0xbda4b3e17a9b0ecb811e68c6f08907156cba503c` | IpToken-3 | impl | live | no |
+| arbitrum | `0xd07bca51eb945ec2652ad149a0046835c692cdbc` | AmmGovernanceServiceArbitrum | impl | live | no |
+| arbitrum | `0xde645ab0560e5a413820234d9dded5f4a55ff6dd` | ERC1967Proxy-2 | proxy | live | no |
+| arbitrum | `0xe56dc533ec51662df5f96bd1e0e4de8d8ac95ffc` | FlowsService-2 | impl | live | no |
+| base | `0x09388e18d5c331449c6ef636726dd1fd007b8ddf` | ERC1967Proxy | proxy | live | no |
+| base | `0x12bdfdbf97d68fc3ccc45ef6e9c3ca2c1f3f7522` | AmmPoolsServiceUsdcBaseV1 | impl | live | no |
+| base | `0x15aa5cd0ed90c77b8d5a6f6b163cf8d374eff55b` | StakeService | impl | live | no |
+| base | `0x1aba7a3c3bec8139b10a4807087084064a454a24` | ERC1967Proxy | proxy | live | no |
+| base | `0x21d337ebf86e584e614ecc18a2b1144d3c375918` | ERC1967Proxy | proxy | live | no |
+| base | `0x29399d76921e23314ae259cf5e17116f48ae65b7` | ERC1967Proxy | proxy | live | no |
+| base | `0x2bb871ac1823c7a7daef9c00198e3f996c65401c` | AmmPoolsServiceWstEthBaseV1 | impl | live | no |
+| base | `0x3d21adf3b0ff5b3fdffc8d5ffa6634bd65949924` | SpreadBaseV1 | impl | live | no |
+| base | `0x4084e842e232d8b4460deb0bf792e94d513caa33` | PowerTokenLens | impl | live | no |
+| base | `0x498eb532c9d3b4cf20351b8767dceb4b5d28fe4c` | AmmGovernanceServiceBaseV1 | impl | live | no |
+| base | `0x4aee7072ac1a49a3f84d0a95e32f3b7d1c97fb30` | IpToken | impl | live | no |
+| base | `0x6834bdfe5864c6b1703b999d04b092229a322943` | AmmSwapsLensBaseV1 | impl | live | no |
+| base | `0x85564fb392e18a84a64343a3fb65839206936c0f` | ERC1967Proxy | proxy | live | no |
+| base | `0x8572eb57f92f50913d9da78e5c6a8065b0449a3d` | AmmCloseSwapServiceUsdcBaseV2 | impl | live | no |
+| base | `0x86d94f5bacb94dac2088a0096e88b06b1944ab1d` | ERC1967Proxy | proxy | live | no |
+| base | `0xa4989a9225f6dd130e8ce4a4b5ef7902c8c389dc` | AmmPoolsLensBaseV1 | impl | live | no |
+| base | `0xa8799d46a00ad19b2ebd0d0d18792b4baf26c0cc` | ERC1967Proxy | proxy | live | no |
+| base | `0xbd4e5c2f8de5065993d29a9794e2b7cefc41437a` | OptimismMintableERC20 | impl | live | no |
+| base | `0xd3626cf9dc33bb6bdecc6cc1e2b6a6a69b561faf` | AmmCloseSwapServiceWstEth | impl | live | no |
+| base | `0xdb6b7c05e2ce7a1f0f0ee8eed788e5d52c909def` | FlowsService | impl | live | no |
+| base | `0xdf884ccef3f18b107e0b9423aae3b605461bb54d` | AmmOpenSwapServiceUsdcBaseV1 | impl | live | no |
+| base | `0xe9331948766593ee9cebbb426fae317b44daf0f2` | ERC1967Proxy | proxy | live | no |
+| base | `0xf9f7ffd661f4c8de141732eee07cee7447c013d4` | LiquidityMiningLens | impl | live | no |
+| base | `0xfbe094bcc8731fa45eb88850592248e5d6ac9472` | AmmOpenSwapServiceWstEthBaseV1 | impl | live | no |
+| base | `0xff7907cdca84db03f09702a4a49c262908af48af` | IpToken | impl | live | no |

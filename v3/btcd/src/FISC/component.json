@@ -10,14 +10,26 @@
     "build_command": "forge build --root \"src/FISC\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 2,
+  "audited": true,
+  "audits_covering": [
+    "https://1304119658-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FnIdk11PalG0VB24i5MDQ%2Fuploads%2FrWme4izaqYP4p8HHl0pE%2FNethermind-BTCD-Audit-2.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x68b8b995cfd068805158c1eaefa7bbfa7503a27c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcad51a95ad91fe0912df7b5f5150f622a7fadafd",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

@@ -1,34 +1,65 @@
 # llama-airforce — deployments
 
-28 verified deployment(s) across 28 component(s).
+59 verified deployment(s) across 57 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | ethereum | `0x06c3b252c01225fdf3017551f39668c9b6599ac5` | stkCvxPrismaMigration | impl | live | no |
 | ethereum | `0x0cb569209d5d9eeb40b24c5bb79d3184e75528c3` | stkCvxPrismaDistributorZaps | impl | live | no |
+| ethereum | `0x0ed7d0497194fc029ae02223fec6d4d567696f17` | stkCvxCrvMerkleDistributor | impl | live | no |
+| ethereum | `0x110a888f88b65a2c34a6922f518128eda4fb70de` | stkCvxFxsStrategy | impl | live | no |
+| ethereum | `0x11fe17c5ab68cc4cc6d3c281feddfff80bc1d4c7` | FXSMerkleDistributor | impl | live | no |
 | ethereum | `0x17ac69dd3fb8f22b4f52dbdb8a3a0eb059367efc` | sCrvUsdDistributor | impl | live | no |
-| ethereum | `0x2c5e808fca6d8299ce194e12ed728f0fdbbf06c8` | stkCvxCrvMerkleDistributor | impl | live | no |
+| ethereum | `0x1f409ec6f395493ad39f5b27945f1a6658a23908` | stkCvxFxsZaps | impl | live | no |
+| ethereum | `0x2c5e808fca6d8299ce194e12ed728f0fdbbf06c8` | stkCvxCrvMerkleDistributor-2 | impl | live | no |
+| ethereum | `0x35a398425d9f1029021a92bc3d2557d42c8588d7` | PirexCvx | impl | live | no |
+| ethereum | `0x3a886455e5b33300a31c5e77bac01e76c0c7b29c` | stkCvxFxsVault | impl | live | no |
+| ethereum | `0x45f97d07dab04b21f36fa3b1149c35e316b35d03` | UnionPirexStrategy | impl | live | no |
+| ethereum | `0x469788fe6e9e9681c6ebf3bf78e7fd26fc015446` | DelegateRegistry | impl | live | no |
+| ethereum | `0x4b0987bef3f966354c6ecd22f6d844d621ee5077` | AuraBalStrategy | impl | live | no |
 | ethereum | `0x4ebad8dbd4edbd74db0278714fbd67ebc76b89b7` | stkCvxCrvVault | impl | live | no |
 | ethereum | `0x55b2b51f661e269aed638a5ddbf2fc930125690a` | sReUsdDistributor | impl | live | no |
 | ethereum | `0x5682a28919389b528ae74dd627e0d632ca7e398c` | stkCvxFxsMerkleDistributor | impl | live | no |
+| ethereum | `0x5beef400f378df4f353fb42e58498f9779002624` | stkCvxPrismaZaps | impl | live | no |
+| ethereum | `0x5c53174c8d88f0f56c33f923b8c6a84a1760e484` | BBUSDHandler | impl | live | no |
 | ethereum | `0x63f0797015489d407fc2ac7e3891467e1ed0166c` | CvxFxsZaps | impl | live | no |
 | ethereum | `0x6508ef65b0bd57eabd0f1d52685a70433b2d290b` | Treasury | impl | live | no |
 | ethereum | `0x6788234f40931ca615b0d221c1afbf0ec07afcc5` | CVXMerkleDistributor | impl | live | no |
 | ethereum | `0x68b56567af308fe8d94876ab0fe88541ed025e1c` | stkCvxCrvDistributorZaps | impl | live | no |
+| ethereum | `0x6ed9c171e02de08aaedf0fc1d589923d807061d6` | GnosisSafeProxyFactory | proxy | live | no |
+| ethereum | `0x7374c3dcaf8ff2c9bb706eaff7bf4ebbf9ac6067` | AuraBalZaps | impl | live | no |
 | ethereum | `0x783c13b94123ccdcc5d597deb93a69983e1d4a51` | PirexDistributorZaps | impl | live | no |
+| ethereum | `0x7a7f79c5706716bae853c1b96e36538c7eaa4925` | UnionZap | impl | live | no |
+| ethereum | `0x835076176ab24f2c4372ba15c8e7e76c1429e66f` | UnionZap-2 | impl | live | no |
+| ethereum | `0x83507cc8c8b67ed48badd1f59f684d5d02884c81` | UnionVault | impl | live | no |
+| ethereum | `0x83d6cdd50110cb3fd9547618cc94540b79733f76` | AuraHandler | impl | live | no |
+| ethereum | `0x853dcbf4dd00dbc6a70002ff87be3671ac966067` | UnionZap-3 | impl | live | no |
 | ethereum | `0x8659fc767cad6005de79af65dafe4249c57927af` | UnionPirexVault | impl | live | no |
+| ethereum | `0x88011c72623777f6452a7d6d8bab10ec67e89e01` | stkCvxPrismaStrategy | impl | live | no |
 | ethereum | `0x8c4eb0fc6805ee7337ac126f89a807271a88dd67` | AuraBalVault | impl | live | no |
+| ethereum | `0x8d2aee9a7d581f3ed29e961a05c54f2be90eb7f3` | stkCvxCrvStrategy | impl | live | no |
 | ethereum | `0x92e6e43f99809df84ed2d533e1fd8017eb966ee2` | AddressRegistry | impl | live | no |
 | ethereum | `0x966a2f2dc3aff00965c6eccf6290d0d402fd4567` | MultiMerkleStash | impl | live | no |
+| ethereum | `0x9bc7c6ad7e7cf3a6fcb58fb21e27752ac1e53f99` | GnosisSafeProxyFactory | proxy | live | no |
+| ethereum | `0x9bfd08d7b3cc40129132a17b4d5b9ea3351464bd` | stkCvxPrismaVault | impl | live | no |
 | ethereum | `0x9da701a9b76e0dd136d3508cb60a4c436dda25e4` | CVXMerkleDistributor-2 | impl | live | no |
 | ethereum | `0xa1fdfcab1c53e6f80439462f7f394c1f2ba65981` | PirexDistributorZaps-2 | impl | live | no |
 | ethereum | `0xae12bf0ad604ddb1c5f048e14b48d719fbdc7d7c` | stkCvxFxsDistributorZaps | impl | live | no |
+| ethereum | `0xaef6ea60f6443bad046e825c1d2b0c0b5ebc1f16` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0xb192908e533fc64109a20ee7d056175a24f17a55` | PCvxZaps | impl | live | no |
 | ethereum | `0xbce0cf87f513102f22232436cca2ca49e815c3ac` | PxCvx | impl | live | no |
+| ethereum | `0xc044613b702ed11567a38108703ac5478a3f7db8` | ERC1155PresetMinterSupply | impl | live | no |
 | ethereum | `0xc8d1335d18c0ef56a00dbb8b7a639183ee1c4d78` | stkCvxCrvZaps | impl | live | no |
+| ethereum | `0xcc2a0f5e95c88aabd7b8e0db5c5252820cd47f91` | UnionZap-4 | impl | live | no |
+| ethereum | `0xce45e2e9a1ca8ba9a311bf862606b890c1f5d988` | UnionZap-5 | impl | live | no |
 | ethereum | `0xcfa23b8f9062369b21049b9f4a4ce79d640d1873` | AssetRegistry | impl | live | no |
-| ethereum | `0xd52ca71aafa4d2590aac1e35e3005242dd31e5ed` | UnionZap | impl | live | no |
+| ethereum | `0xd248e64b2d3d00d7f6a21009c3fcc1bd593600c9` | UnionZap-6 | impl | live | no |
+| ethereum | `0xd52ca71aafa4d2590aac1e35e3005242dd31e5ed` | UnionZap-7 | impl | live | no |
+| ethereum | `0xd6fc1ecd9965ba9cac895654979564a291c74c29` | AuraBalVault | impl | live | no |
 | ethereum | `0xd835cdedc20ca3075f86dea4e0d914499d0c5b25` | stkCvxCrvZaps-2 | impl | live | no |
 | ethereum | `0xde2bef0a01845257b4aef2a2eaa48f6eaeafa8b7` | stkCvxCrvVault-2 | impl | live | no |
+| ethereum | `0xec221ae5c62029cb03d91eff85611a378a1f8883` | stkCvxCrvStrategy-2 | impl | live | no |
 | ethereum | `0xed41c3402c4b62777939b7334b4d3d2407517ff9` | PirexClaims | impl | live | no |
 | ethereum | `0xf09320ed7db384cab7fce9ea9947436a806754d3` | stkCvxPrismaMerkleDistributor | impl | live | no |
+| ethereum | `0xf4112931c955fda9fb7f184da3518e6050a30eb7` | UnionZap-8 | impl | live | no |
+| ethereum | `0xf964b0e3ffdea659c44a5a52bc0b82a24b89ce0e` | GenericUnionVault | impl | live | no |

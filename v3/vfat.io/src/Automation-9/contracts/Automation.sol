@@ -1,87 +1,68 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import { IUniswapV3Pool } from
-    "contracts/interfaces/external/uniswap/IUniswapV3Pool.sol";
-
 import { Admin } from "contracts/base/Admin.sol";
 import { NonDelegateMulticall } from "contracts/base/NonDelegateMulticall.sol";
 import { Sickle } from "contracts/Sickle.sol";
 import { SickleRegistry } from "contracts/SickleRegistry.sol";
-import { IAutomation } from "contracts/interfaces/IAutomation.sol";
-import { INftAutomation } from "contracts/interfaces/INftAutomation.sol";
+import { ICompoundable } from "contracts/interfaces/ICompoundable.sol";
+import { IHarvestable } from "contracts/interfaces/IHarvestable.sol";
 import {
-    NftRebalance,
-    NftPosition,
-    NftHarvest,
-    NftWithdraw,
-    NftCompound
-} from "contracts/structs/NftFarmStrategyStructs.sol";
+    IRebalanceable,
+    RebalanceParams
+} from "contracts/interfaces/IRebalanceable.sol";
 import {
-    Farm,
     HarvestParams,
-    WithdrawParams,
     CompoundParams
 } from "contracts/structs/FarmStrategyStructs.sol";
 
+enum RewardAutomation {
+    None,
+    Harvest,
+    Compound
+}
+
 // @title Automation contract for automating farming strategies
 // @notice This contract allows users to automate their farming strategies
-// by enabling auto-compound or auto-harvest for non-NFT positions.
+// by enabling auto-compound or auto-harvest.
+// The contract also allows an approved automator to compound, harvest or
+// auto-rebalance farming positions on behalf of users.
 // Only one of Auto-Compound or Auto-Harvest can be enabled:
 // all user positions will be either auto-compounded or auto-harvested.
-// For NFT positions, all automation settings are handled by NftSettingsRegistry
-// instead.
-// The contract also allows an approved automator to compound, harvest, exit or
-// rebalance farming positions on behalf of users.
+// Auto-Rebalance settings are per NFT, and are not affected by this contract.
 // @dev This contract is expected to be used by an external automation bot
 // that will call the compoundFor, harvestFor, and rebalanceFor functions.
 // The automation bot is expected to be the EOA of the approved automator.
 // The approved automator is set by the protocol admin.
 contract Automation is Admin, NonDelegateMulticall {
     error InvalidInputLength();
+    error AutomationNotSet();
+    error AutomationAlreadySet();
     error NotApprovedAutomator();
+    error InvalidSlippage();
 
-    event HarvestedFor(
-        Sickle indexed sickle,
-        address indexed stakingContract,
-        uint256 indexed poolIndex
-    );
+    event HarvestedFor(address indexed user, address indexed stakingContract);
     event CompoundedFor(
-        Sickle indexed sickle,
-        address indexed claimStakingContract,
-        uint256 claimPoolIndex,
-        address indexed depositStakingContract,
-        uint256 depositPoolIndex
+        address indexed user,
+        address indexed claimContract,
+        address indexed depositContract
     );
-    event ExitedFor(
-        Sickle indexed sickle,
-        address indexed stakingContract,
-        uint256 indexed poolIndex
-    );
-
-    event NftHarvestedFor(
-        Sickle indexed sickle,
-        address indexed nftAddress,
-        uint256 indexed tokenId
-    );
-    event NftCompoundedFor(
-        Sickle indexed sickle,
-        address indexed nftAddress,
-        uint256 indexed tokenId
-    );
-    event NftExitedFor(
-        Sickle indexed sickle,
-        address indexed nftAddress,
-        uint256 indexed tokenId
-    );
-    event NftRebalancedFor(
-        Sickle indexed sickle,
+    event RebalancedFor(
+        address indexed user,
         address indexed nftAddress,
         uint256 indexed tokenId
     );
     event ApprovedAutomatorSet(address approvedAutomator);
 
+    event AutoHarvestEnabled(address indexed user, address tokenOut);
+    event AutoCompoundEnabled(address indexed user);
+    event AutoHarvestDisabled(address indexed user);
+    event AutoCompoundDisabled(address indexed user);
+
     address payable public approvedAutomator;
+
+    mapping(address => RewardAutomation) public rewardAutomation;
+    mapping(address => address) public harvestTokensOut;
 
     constructor(
         SickleRegistry registry_,
@@ -103,9 +84,10 @@ contract Automation is Admin, NonDelegateMulticall {
     /// compound farming positions for Sickles. This is expected to be the EOA
     /// of an automation bot.
     /// @custom:access Restricted to protocol admin.
-    function setApprovedAutomator(
-        address payable approvedAutomator_
-    ) external onlyAdmin {
+    function setApprovedAutomator(address payable approvedAutomator_)
+        external
+        onlyAdmin
+    {
         approvedAutomator = approvedAutomator_;
         emit ApprovedAutomatorSet(approvedAutomator_);
     }
@@ -113,9 +95,10 @@ contract Automation is Admin, NonDelegateMulticall {
     // Automator functions
 
     function compoundFor(
-        IAutomation[] memory strategies,
+        ICompoundable[] memory strategies,
         Sickle[] memory sickles,
         CompoundParams[] memory params,
+        bool[] memory inPlace,
         address[][] memory sweepTokens
     ) external onlyApprovedAutomator {
         uint256 strategiesLength = strategies.length;
@@ -130,27 +113,26 @@ contract Automation is Admin, NonDelegateMulticall {
         address[] memory targets = new address[](strategiesLength);
         bytes[] memory data = new bytes[](strategiesLength);
         for (uint256 i; i < strategiesLength; i++) {
-            Sickle sickle = sickles[i];
+            address user = sickles[i].owner();
+            if (rewardAutomation[user] != RewardAutomation.Compound) {
+                revert AutomationNotSet();
+            }
             CompoundParams memory param = params[i];
             targets[i] = address(strategies[i]);
             data[i] = abi.encodeCall(
-                IAutomation.compoundFor, (sickle, param, sweepTokens[i])
+                ICompoundable.compoundFor,
+                (sickles[i], param, inPlace[i], sweepTokens[i])
             );
             emit CompoundedFor(
-                sickle,
-                param.claimFarm.stakingContract,
-                param.claimFarm.poolIndex,
-                param.depositFarm.stakingContract,
-                param.depositFarm.poolIndex
+                user, param.claimContractAddress, param.depositContractAddress
             );
         }
         this.multicall(targets, data);
     }
 
     function harvestFor(
-        IAutomation[] memory strategies,
+        IHarvestable[] memory strategies,
         Sickle[] memory sickles,
-        Farm[] memory farms,
         HarvestParams[] memory params,
         address[][] memory sweepTokens
     ) external onlyApprovedAutomator {
@@ -166,174 +148,24 @@ contract Automation is Admin, NonDelegateMulticall {
         address[] memory targets = new address[](strategiesLength);
         bytes[] memory data = new bytes[](strategiesLength);
         for (uint256 i; i < strategiesLength; i++) {
-            Sickle sickle = sickles[i];
-            Farm memory farm = farms[i];
+            address user = sickles[i].owner();
+            if (rewardAutomation[user] != RewardAutomation.Harvest) {
+                revert AutomationNotSet();
+            }
             HarvestParams memory param = params[i];
             targets[i] = address(strategies[i]);
             data[i] = abi.encodeCall(
-                IAutomation.harvestFor, (sickle, farm, param, sweepTokens[i])
+                IHarvestable.harvestFor, (sickles[i], param, sweepTokens[i])
             );
-            emit HarvestedFor(sickle, farm.stakingContract, farm.poolIndex);
-        }
-        this.multicall(targets, data);
-    }
-
-    function exitFor(
-        IAutomation[] memory strategies,
-        Sickle[] memory sickles,
-        Farm[] memory farms,
-        HarvestParams[] memory harvestParams,
-        address[][] memory harvestSweepTokens,
-        WithdrawParams[] memory withdrawParams,
-        address[][] memory withdrawSweepTokens
-    ) external onlyApprovedAutomator {
-        uint256 strategiesLength = strategies.length;
-        if (
-            strategiesLength != sickles.length
-                || strategiesLength != farms.length
-                || strategiesLength != harvestParams.length
-                || strategiesLength != withdrawParams.length
-                || strategiesLength != harvestSweepTokens.length
-                || strategiesLength != withdrawSweepTokens.length
-        ) {
-            revert InvalidInputLength();
-        }
-
-        address[] memory targets = new address[](strategiesLength);
-        bytes[] memory data = new bytes[](strategiesLength);
-        for (uint256 i; i < strategiesLength; i++) {
-            targets[i] = address(strategies[i]);
-            data[i] = abi.encodeCall(
-                IAutomation.exitFor,
-                (
-                    sickles[i],
-                    farms[i],
-                    harvestParams[i],
-                    harvestSweepTokens[i],
-                    withdrawParams[i],
-                    withdrawSweepTokens[i]
-                )
-            );
-            emit ExitedFor(
-                sickles[i], farms[i].stakingContract, farms[i].poolIndex
-            );
-        }
-        this.multicall(targets, data);
-    }
-
-    // NFT Automator functions
-    // Validation is done in the NftAutomation contract
-
-    function harvestFor(
-        INftAutomation[] memory strategies,
-        Sickle[] memory sickles,
-        NftPosition[] memory positions,
-        NftHarvest[] memory params
-    ) external onlyApprovedAutomator {
-        uint256 strategiesLength = strategies.length;
-        if (
-            strategiesLength != sickles.length
-                || strategiesLength != positions.length
-                || strategiesLength != params.length
-        ) {
-            revert InvalidInputLength();
-        }
-
-        address[] memory targets = new address[](strategiesLength);
-        bytes[] memory data = new bytes[](strategiesLength);
-        for (uint256 i; i < strategiesLength; i++) {
-            Sickle sickle = sickles[i];
-            NftPosition memory position = positions[i];
-            targets[i] = address(strategies[i]);
-            data[i] = abi.encodeCall(
-                INftAutomation.harvestFor, (sickle, position, params[i])
-            );
-            emit NftHarvestedFor(
-                sickle, address(position.nft), position.tokenId
-            );
-        }
-        this.multicall(targets, data);
-    }
-
-    function compoundFor(
-        INftAutomation[] memory strategies,
-        Sickle[] memory sickles,
-        NftPosition[] memory positions,
-        NftCompound[] memory params,
-        bool[] memory inPlace,
-        address[][] memory sweepTokens
-    ) external onlyApprovedAutomator {
-        uint256 strategiesLength = strategies.length;
-        if (
-            strategiesLength != sickles.length
-                || strategiesLength != positions.length
-                || strategiesLength != params.length
-                || strategiesLength != sweepTokens.length
-        ) {
-            revert InvalidInputLength();
-        }
-
-        address[] memory targets = new address[](strategiesLength);
-        bytes[] memory data = new bytes[](strategiesLength);
-        for (uint256 i; i < strategiesLength; i++) {
-            Sickle sickle = sickles[i];
-            NftPosition memory position = positions[i];
-            targets[i] = address(strategies[i]);
-            data[i] = abi.encodeCall(
-                INftAutomation.compoundFor,
-                (sickle, position, params[i], inPlace[i], sweepTokens[i])
-            );
-            emit NftCompoundedFor(
-                sickle, address(position.nft), position.tokenId
-            );
-        }
-        this.multicall(targets, data);
-    }
-
-    function exitFor(
-        INftAutomation[] memory strategies,
-        Sickle[] memory sickles,
-        NftPosition[] memory positions,
-        NftHarvest[] memory harvestParams,
-        NftWithdraw[] memory withdrawParams,
-        address[][] memory sweepTokens
-    ) external onlyApprovedAutomator {
-        uint256 strategiesLength = strategies.length;
-        if (
-            strategiesLength != sickles.length
-                || strategiesLength != positions.length
-                || strategiesLength != harvestParams.length
-                || strategiesLength != withdrawParams.length
-                || strategiesLength != sweepTokens.length
-        ) {
-            revert InvalidInputLength();
-        }
-
-        address[] memory targets = new address[](strategiesLength);
-        bytes[] memory data = new bytes[](strategiesLength);
-        for (uint256 i; i < strategiesLength; i++) {
-            Sickle sickle = sickles[i];
-            NftPosition memory position = positions[i];
-            targets[i] = address(strategies[i]);
-            data[i] = abi.encodeCall(
-                INftAutomation.exitFor,
-                (
-                    sickle,
-                    position,
-                    harvestParams[i],
-                    withdrawParams[i],
-                    sweepTokens[i]
-                )
-            );
-            emit NftExitedFor(sickle, address(position.nft), position.tokenId);
+            emit HarvestedFor(user, param.stakingContractAddress);
         }
         this.multicall(targets, data);
     }
 
     function rebalanceFor(
-        INftAutomation[] memory strategies,
+        IRebalanceable[] memory strategies,
         Sickle[] memory sickles,
-        NftRebalance[] memory params,
+        RebalanceParams[] memory params,
         address[][] memory sweepTokens
     ) external onlyApprovedAutomator {
         uint256 strategiesLength = strategies.length;
@@ -348,16 +180,60 @@ contract Automation is Admin, NonDelegateMulticall {
         address[] memory targets = new address[](strategiesLength);
         bytes[] memory data = new bytes[](strategiesLength);
         for (uint256 i; i < strategiesLength; i++) {
-            NftRebalance memory param = params[i];
-            Sickle sickle = sickles[i];
+            RebalanceParams memory param = params[i];
+            address user = sickles[i].owner();
             targets[i] = address(strategies[i]);
             data[i] = abi.encodeCall(
-                INftAutomation.rebalanceFor, (sickle, param, sweepTokens[i])
+                IRebalanceable.rebalanceFor, (sickles[i], param, sweepTokens[i])
             );
-            emit NftRebalancedFor(
-                sickle, address(param.position.nft), param.position.tokenId
+            emit RebalancedFor(
+                user, address(param.nftInfo.nftManager), param.nftInfo.tokenId
             );
         }
         this.multicall(targets, data);
+    }
+
+    // User functions
+
+    function enableAutoCompound() external {
+        RewardAutomation automation = rewardAutomation[msg.sender];
+        if (automation == RewardAutomation.Compound) {
+            revert AutomationAlreadySet();
+        }
+        if (automation == RewardAutomation.Harvest) {
+            delete harvestTokensOut[msg.sender];
+        }
+        rewardAutomation[msg.sender] = RewardAutomation.Compound;
+        emit AutoCompoundEnabled(msg.sender);
+    }
+
+    function enableAutoHarvest(address tokenOut) external {
+        if (
+            rewardAutomation[msg.sender] == RewardAutomation.Harvest
+                && harvestTokensOut[msg.sender] == tokenOut
+        ) {
+            revert AutomationAlreadySet();
+        }
+        rewardAutomation[msg.sender] = RewardAutomation.Harvest;
+        harvestTokensOut[msg.sender] = tokenOut;
+        emit AutoHarvestEnabled(msg.sender, tokenOut);
+    }
+
+    function disableAutoCompound() external {
+        if (rewardAutomation[msg.sender] != RewardAutomation.Compound) {
+            revert AutomationNotSet();
+        }
+        delete rewardAutomation[msg.sender];
+        emit AutoCompoundDisabled(msg.sender);
+    }
+
+    function disableAutoHarvest() external {
+        if (rewardAutomation[msg.sender] != RewardAutomation.Harvest) {
+            revert AutomationNotSet();
+        }
+        delete rewardAutomation[msg.sender];
+        delete harvestTokensOut[msg.sender];
+
+        emit AutoHarvestDisabled(msg.sender);
     }
 }

@@ -10,5 +10,5 @@ This directory pairs the receipt-bound audit brief with a readable, deduplicated
 - [`src/`](./src/) contains one standalone Foundry root per unique verified source bundle.
 
 Exported source components: 34
-Exported deployments: 34
-Deployments without a cached source bundle: 1
+Exported deployments: 35
+Deployments without a cached source bundle: 0

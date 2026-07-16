@@ -1,8 +1,8 @@
 {
   "component": "BridgeRouterSpoke-2",
   "main_contract": "BridgeRouterSpoke",
-  "source_entry_count": 19,
-  "source_file_count": 19,
+  "source_entry_count": 18,
+  "source_file_count": 18,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -15,14 +15,14 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1329",
-      "chain_id": 1329,
-      "address": "0x0700b2cb26688c035bd5dbbda070be408c20779c",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfc828c500c90e63134b2b73537cc6cadff4ce695",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394660"
     }
   ]
 }

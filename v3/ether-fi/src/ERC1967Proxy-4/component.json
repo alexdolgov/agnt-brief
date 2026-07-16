@@ -1,0 +1,28 @@
+{
+  "component": "ERC1967Proxy-4",
+  "main_contract": "ERC1967Proxy",
+  "source_entry_count": 6,
+  "source_file_count": 6,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Proxy-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7189fb5b6504bbff6a852b13b7b82a3c118fdc27",
+      "is_proxy": true,
+      "implementation_address": "0xcf5d8bc4ac508a26b038d91e8caca318a177b6c1",
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

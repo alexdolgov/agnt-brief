@@ -1,6 +1,6 @@
 # dsu-money — deployments
 
-83 verified deployment(s) across 82 component(s).
+90 verified deployment(s) across 89 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -76,14 +76,21 @@
 | ethereum | `0x408a45844cfe015e0e4afb2116475620dc4f1df3` | Deployer1 | impl | unknown | no |
 | ethereum | `0x42340c735e4b6018661183dcd5b267f3bb5f9ee4` | ReserveImpl | impl | live | no |
 | ethereum | `0x443d2f2755db5942601fa062cc248aaa153313d3` | Proxy | proxy | live | no |
+| ethereum | `0x4d2a5e3b7831156f62c8df47604e321cdaf35fec` | ProxyRoot | impl | live | no |
 | ethereum | `0x560276178203095afe2b055eb06e4e9eaf4ce0b1` | MilliSqueethPayoff | impl | unknown | no |
+| ethereum | `0x6ec80df362d7042c50d4469bcfbc174c9dd9109a` | Vyper_contract | impl | live | no |
 | ethereum | `0x71fac51091a5dc87e02419ce22ab922d8c7e897a` | Deployer3 | impl | unknown | no |
 | ethereum | `0x87f6b212a25677b9b12e7fcfa8c08fb3df25bc4c` | Funder | impl | live | no |
 | ethereum | `0xa9c962be526ecbde40259c58a48e2362a96851f5` | Claimer | impl | unknown | no |
 | ethereum | `0xabbc87e789a3d5ba5a9e976867e686dbf3f3121f` | Deployer2 | impl | unknown | no |
 | ethereum | `0xaef566ca7e84d1e736f999765a804687f39d9094` | TwoWayBatcher | impl | unknown | no |
 | ethereum | `0xb80ad6c00bd663c2b7893cd6ede3f3c5c055e014` | Proxy | impl | unknown | no |
+| ethereum | `0xc5285ee6d5c9adf4e04f5ccb47d0501ae638c7a9` | Registry | impl | live | no |
+| ethereum | `0xc61d12896421613b30d56f85c093cdda43ab2ce7` | Migrator | impl | live | no |
 | ethereum | `0xcadd30b39f01cfdfb848174b19bbb5b1b7486159` | UniswapV2Pair | impl | live | no |
 | ethereum | `0xfc20bcca96bde758e9c69151d99cecfeae3ab37e` | Forwarder | impl | unknown | no |
+| optimism | `0x0d49c416103cbd276d9c3cd96710db264e3a0c27` | ERC1967Proxy | proxy | live | no |
+| optimism | `0x52c64b8998eb7c80b6f526e99e29abdcc86b841b` | DSU | impl | live | no |
 | optimism | `0x58e0c542ab540e0dd3b4fd96cc46b0aad1196bfe` | SimpleReserve | impl | unknown | no |
 | optimism | `0x7b4adf64b0d60ff97d672e473420203d52562a84` | UCrossChainOwner_Optimism | impl | unknown | no |
+| optimism | `0x7f5c764cbc14f9669b88837ca1490cca17c31607` | OVMFiatToken | impl | live | no |

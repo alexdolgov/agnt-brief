@@ -3,7 +3,28 @@
   "main_contract": "FeeDepositV2",
   "source_entry_count": 8,
   "source_file_count": 8,
-  "source_path_remaps": [],
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/FeeDepositV2.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-7c710b1b0695-FeeDepositV2.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IVoterProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-087a0774d1ad-IVoterProxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IFeeReceiver.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-c68ac62ca449-IFeeReceiver.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IBooster.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-9ab4943e8e31-IBooster.sol",
+      "reason": "unsafe_path"
+    }
+  ],
   "foundry": {
     "root": ".",
     "config": "foundry.toml",
@@ -17,12 +38,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x7a527d8bb09f7d70c148ab5de919e9bf68a0d769",
+      "address": "0x30575fdcfb2b76096047f0a8651b52159ab835f7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393095"
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

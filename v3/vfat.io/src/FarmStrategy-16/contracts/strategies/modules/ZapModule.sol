@@ -10,8 +10,6 @@ abstract contract ZapModule is SwapModule {
     error LiquidityAmountError(); // 0x4d0ab6b4
 
     struct ZapInData {
-        address tokenIn;
-        uint256 amountIn;
         SwapData[] swaps;
         AddLiquidityData addLiquidityData;
     }
@@ -19,14 +17,20 @@ abstract contract ZapModule is SwapModule {
     struct ZapOutData {
         RemoveLiquidityData removeLiquidityData;
         SwapData[] swaps;
-        address tokenOut;
     }
 
-    constructor(ConnectorRegistry _connectorRegistry)
-        SwapModule(_connectorRegistry)
-    { }
+    constructor(
+        SickleFactory factory,
+        FeesLib feesLib,
+        address wrappedNativeAddress,
+        ConnectorRegistry connectorRegistry
+    ) SwapModule(factory, feesLib, wrappedNativeAddress, connectorRegistry) { }
 
-    function zapIn(ZapInData memory zapData) external payable {
+    function _sickle_zap_in(ZapInData memory zapData)
+        external
+        payable
+        onlyRegisteredSickle
+    {
         for (uint256 i; i < zapData.swaps.length;) {
             _swap(zapData.swaps[i]);
             unchecked {
@@ -85,7 +89,10 @@ abstract contract ZapModule is SwapModule {
         }
     }
 
-    function zapOut(ZapOutData memory zapData) external {
+    function _sickle_zap_out(ZapOutData memory zapData)
+        external
+        onlyRegisteredSickle
+    {
         if (zapData.removeLiquidityData.lpToken != address(0)) {
             if (zapData.removeLiquidityData.lpAmountIn > 0) {
                 SafeTransferLib.safeApprove(

@@ -1,28 +1,26 @@
 # kodiak — deployments
 
-2 verified deployment(s) across 2 component(s).
+20 verified deployment(s) across 20 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | chain-80094 | `0x040ea7d4b559357425407fdfc3c774c5dfc04677` | XKodiakToken | impl | unknown | no |
+| chain-80094 | `0x5261c5a5f08818c08ed0eb036d9575ba1e02c1d6` | Contract | impl | live | yes |
+| chain-80094 | `0x5e705e184d233ff2a7cb1553793464a9d0c3028f` | Contract-2 | impl | live | yes |
+| chain-80094 | `0x644c8d6e501f7c994b74f5cea96abe65d0ba662b` | Contract-3 | impl | live | yes |
+| chain-80094 | `0x88eb43086eddf189856af7b00a09259598de8210` | TokenMigrator | impl | live | no |
+| chain-80094 | `0x89c8c594f8dea5600bf8a30877e921a5e63dccf3` | Contract-4 | impl | live | yes |
+| chain-80094 | `0x89ff70257bc747f310bb538eefc46add763e75d8` | Contract-5 | impl | live | yes |
+| chain-80094 | `0xa73c6f1fec76d5487dc30bdb8f11d1f390394b48` | Contract-6 | impl | live | yes |
+| chain-80094 | `0xac335fe675699b0ce4c927bdaa572eb647ed9f02` | Contract-7 | impl | live | yes |
+| chain-80094 | `0xbc3dfe5ee6bce8b301a3661b3528a5c605eaf6af` | KodiakRewards | impl | live | no |
 | chain-80094 | `0xc0d1ac00a30fa4e30e44afc7313d6312c87e21df` | KodiakToken | impl | unknown | no |
-
-## Source unavailable (16)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- chain-80094 `0x5261c5a5f08818c08ed0eb036d9575ba1e02c1d6`
-- chain-80094 `0x5e705e184d233ff2a7cb1553793464a9d0c3028f`
-- chain-80094 `0x644c8d6e501f7c994b74f5cea96abe65d0ba662b`
-- chain-80094 `0x89c8c594f8dea5600bf8a30877e921a5e63dccf3`
-- chain-80094 `0x89ff70257bc747f310bb538eefc46add763e75d8`
-- chain-80094 `0xa73c6f1fec76d5487dc30bdb8f11d1f390394b48`
-- chain-80094 `0xac335fe675699b0ce4c927bdaa572eb647ed9f02`
-- chain-80094 `0xcfe9ee61c271fba4d190498b5a71b8cb365a3590`
-- chain-80094 `0xd84cbf0b02636e7f53db9e5e45a616e05d710990`
-- chain-80094 `0xd91dd58387ccd9b66b390ae2d7c66dbd46bc6022`
-- chain-80094 `0xe301e48f77963d3f7dbd2a4796962bd7f3867fb4`
-- chain-80094 `0xeb81a9eeaf156d4cfec2af364af36ad65cf9f0fa`
-- chain-80094 `0xed158c4b336a6fcb5b193a5570e3a571f6cbe690`
-- chain-80094 `0xfa0276f06161cc2f66aa51f3500484edf8fc94bb`
-- chain-80094 `0xfe5e8c83ffe4d9627a75eaa7fee864768db989bd`
-- chain-80094 `0xffcaed1971c28ccceaff111f4ed2235532537b8f`
+| chain-80094 | `0xcfe9ee61c271fba4d190498b5a71b8cb365a3590` | Contract-8 | impl | live | yes |
+| chain-80094 | `0xd84cbf0b02636e7f53db9e5e45a616e05d710990` | Contract-9 | impl | live | yes |
+| chain-80094 | `0xd91dd58387ccd9b66b390ae2d7c66dbd46bc6022` | Contract-10 | impl | live | yes |
+| chain-80094 | `0xe301e48f77963d3f7dbd2a4796962bd7f3867fb4` | Contract-11 | impl | live | yes |
+| chain-80094 | `0xeb81a9eeaf156d4cfec2af364af36ad65cf9f0fa` | Contract-12 | impl | live | yes |
+| chain-80094 | `0xed158c4b336a6fcb5b193a5570e3a571f6cbe690` | Contract-13 | impl | live | yes |
+| chain-80094 | `0xfa0276f06161cc2f66aa51f3500484edf8fc94bb` | Contract-14 | impl | live | yes |
+| chain-80094 | `0xfe5e8c83ffe4d9627a75eaa7fee864768db989bd` | Contract-15 | impl | live | yes |
+| chain-80094 | `0xffcaed1971c28ccceaff111f4ed2235532537b8f` | Contract-16 | impl | live | yes |

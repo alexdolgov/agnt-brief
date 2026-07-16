@@ -1,6 +1,6 @@
 # frax-fpi — deployments
 
-93 verified deployment(s) across 93 component(s).
+94 verified deployment(s) across 94 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -52,6 +52,7 @@
 | ethereum | `0x66807b5598a848602734b82e432dd88dbe13fc8f` | ProxyFactory | impl | unknown | no |
 | ethereum | `0x66b7dff2ac66dc4d6fbb3db1cb627bbb01ff3146` | CPITrackerOracle | impl | unknown | no |
 | ethereum | `0x6a5a26e5b91cc9eb1d84da16a8360bc1df8212bc` | WrapperFactory | impl | unknown | no |
+| ethereum | `0x6a7efa964cf6d9ab3bc3c47ebddb853a8853c502` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0x6d6bcac2266468a44da9fa482ca54aaed586e1e7` | Harvester | impl | unknown | no |
 | ethereum | `0x6f94fe4dadd7a6f4ce67e607bab531a9d1717624` | FeeReceiverVeFxs | impl | unknown | no |
 | ethereum | `0x723f9aa67fdd9b0e375ef8553eb2afc28ecd4a96` | PoolRewardHook | impl | unknown | no |

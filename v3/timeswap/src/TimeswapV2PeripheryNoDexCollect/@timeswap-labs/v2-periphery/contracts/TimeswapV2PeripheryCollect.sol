@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: BUSL-1.1
 pragma solidity =0.8.8;
 
+import {Math} from "@timeswap-labs/v2-library/contracts/Math.sol";
+
 import {ERC1155Receiver} from "@openzeppelin/contracts/token/ERC1155/utils/ERC1155Receiver.sol";
 
 import {ITimeswapV2OptionFactory} from "@timeswap-labs/v2-option/contracts/interfaces/ITimeswapV2OptionFactory.sol";
@@ -24,11 +26,10 @@ import {TimeswapV2TokenBurnParam, TimeswapV2LiquidityTokenCollectParam} from "@t
 import {TimeswapV2PeripheryCollectParam} from "./structs/Param.sol";
 
 import {ITimeswapV2PeripheryCollect} from "./interfaces/ITimeswapV2PeripheryCollect.sol";
-// import {ITimeswapV2Pool} from "@timeswap-labs/v2-pool/contracts/interfaces/ITimeswapV2Pool.sol";
-// import {ITimeswapV2PoolFactory} from "@timeswap-labs/v2-pool/contracts/interfaces/ITimeswapV2PoolFactory.sol";
-import {TimeswapV2OptionPosition} from "@timeswap-labs/v2-option/contracts/enums/Position.sol";
 
 abstract contract TimeswapV2PeripheryCollect is ITimeswapV2PeripheryCollect, ERC1155Receiver {
+  using Math for uint256;
+
   /* ===== MODEL ===== */
   /// @inheritdoc ITimeswapV2PeripheryCollect
   address public immutable override optionFactory;
@@ -51,9 +52,12 @@ abstract contract TimeswapV2PeripheryCollect is ITimeswapV2PeripheryCollect, ERC
   /// @return token1Amount is the token1Amount recieved
   function collect(
     TimeswapV2PeripheryCollectParam memory param
-  ) internal returns (uint256 token0Amount, uint256 token1Amount) {
+  )
+    internal
+    returns (uint256 token0Amount, uint256 token1Amount, uint256 shortFeesWithdrawn, uint256 shortReturnedWithdrawn)
+  {
     // Get the amount of short fees and short returned the msg.sender has
-    (, , uint256 shortFees, uint256 shortReturned) = ITimeswapV2LiquidityToken(liquidityTokens)
+    (, , shortFeesWithdrawn, shortReturnedWithdrawn) = ITimeswapV2LiquidityToken(liquidityTokens)
       .feesEarnedAndShortReturnedOf(
         msg.sender,
         TimeswapV2LiquidityTokenPosition({
@@ -67,7 +71,7 @@ abstract contract TimeswapV2PeripheryCollect is ITimeswapV2PeripheryCollect, ERC
     uint256 shortAmount;
 
     // Include the short fees and short returned to the total amount of short to burn and withdraw the base ERC20
-    if (shortFees != 0 || shortReturned != 0) {
+    if (shortFeesWithdrawn != 0 || shortReturnedWithdrawn != 0) {
       uint256 shortReturnedAmount;
 
       (, , shortAmount, shortReturnedAmount, ) = ITimeswapV2LiquidityToken(liquidityTokens).collect(
@@ -83,8 +87,8 @@ abstract contract TimeswapV2PeripheryCollect is ITimeswapV2PeripheryCollect, ERC
           shortReturnedTo: address(this),
           long0FeesDesired: 0,
           long1FeesDesired: 0,
-          shortFeesDesired: shortFees,
-          shortReturnedDesired: shortReturned,
+          shortFeesDesired: shortFeesWithdrawn,
+          shortReturnedDesired: shortReturnedWithdrawn,
           data: bytes("")
         })
       );
@@ -114,12 +118,12 @@ abstract contract TimeswapV2PeripheryCollect is ITimeswapV2PeripheryCollect, ERC
 
     address optionPair = OptionFactoryLibrary.getWithCheck(optionFactory, param.token0, param.token1);
 
-    shortAmount = ITimeswapV2Option(optionPair).positionOf(
-      param.strike,
-      param.maturity,
-      address(this),
-      TimeswapV2OptionPosition.Short
-    );
+    // shortAmount = ITimeswapV2Option(optionPair).positionOf(
+    //   param.strike,
+    //   param.maturity,
+    //   address(this),
+    //   TimeswapV2OptionPosition.Short
+    // );
 
     // Collect the underlying ERC20 token by burning the short total
     (token0Amount, token1Amount, , ) = ITimeswapV2Option(optionPair).collect(

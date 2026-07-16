@@ -1,30 +1,34 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 import {IArkAccessManaged} from "../interfaces/IArkAccessManaged.sol";
 
 import {IConfigurationManaged} from "../interfaces/IConfigurationManaged.sol";
 import {IFleetCommander} from "../interfaces/IFleetCommander.sol";
-import {ContractSpecificRoles} from "../interfaces/IProtocolAccessManager.sol";
+import {ContractSpecificRoles} from "@summerfi/access-contracts/interfaces/IProtocolAccessManager.sol";
 
-import {ProtocolAccessManaged} from "./ProtocolAccessManaged.sol";
+import {ProtocolAccessManaged} from "@summerfi/access-contracts/contracts/ProtocolAccessManaged.sol";
 
 /**
  * @title ArkAccessManaged
  * @author SummerFi
+ * @notice This contract manages access control for Ark-related operations.
+ * @dev Inherits from ProtocolAccessManaged and implements IArkAccessManaged.
  * @custom:see IArkAccessManaged
  */
 contract ArkAccessManaged is IArkAccessManaged, ProtocolAccessManaged {
     /**
-     * @param accessManager The access manager address
+     * @notice Initializes the ArkAccessManaged contract.
+     * @param accessManager The address of the access manager contract.
      */
     constructor(address accessManager) ProtocolAccessManaged(accessManager) {}
 
     /**
-     * @dev Modifier to check that the caller has the appropriate role to board
-     * @param commander The address of the FleetCommander
+     * @notice Checks if the caller is authorized to board funds.
+     * @dev This modifier allows the Commander, RAFT contract, or active Arks to proceed.
+     * @param commander The address of the FleetCommander contract.
      * @custom:internal-logic
-     * - Checks if the caller has the Commander role
+     * - Checks if the caller is the registered commander
      * - If not, checks if the caller is the RAFT contract
      * - If not, checks if the caller is an active Ark in the FleetCommander
      * @custom:effects
@@ -35,13 +39,15 @@ contract ArkAccessManaged is IArkAccessManaged, ProtocolAccessManaged {
      * - Relies on the correct setup of the FleetCommander and RAFT contracts
      */
     modifier onlyAuthorizedToBoard(address commander) {
-        if (!_hasCommanderRole()) {
+        if (commander != _msgSender()) {
             address msgSender = _msgSender();
             bool isRaft = msgSender ==
                 IConfigurationManaged(address(this)).raft();
 
             if (!isRaft) {
-                bool isArk = IFleetCommander(commander).isArkActive(msgSender);
+                bool isArk = IFleetCommander(commander).isArkActiveOrBufferArk(
+                    msgSender
+                );
                 if (!isArk) {
                     revert CallerIsNotAuthorizedToBoard(msgSender);
                 }
@@ -51,6 +57,7 @@ contract ArkAccessManaged is IArkAccessManaged, ProtocolAccessManaged {
     }
 
     /**
+     * @notice Restricts access to only the RAFT contract.
      * @dev Modifier to check that the caller is the RAFT contract
      * @custom:internal-logic
      * - Retrieves the RAFT address from the ConfigurationManaged contract
@@ -70,24 +77,7 @@ contract ArkAccessManaged is IArkAccessManaged, ProtocolAccessManaged {
     }
 
     /**
-     * @dev Modifier to check that the caller has the Commander role
-     * @custom:internal-logic
-     * - Calls the internal _hasCommanderRole function to check the caller's role
-     * @custom:effects
-     * - Reverts if the caller doesn't have the Commander role
-     * - Allows the function to proceed if the caller has the Commander role
-     * @custom:security-considerations
-     * - Ensures that only the designated Commander can call certain functions
-     * - Relies on the correct setup of the access control system
-     */
-    modifier onlyCommander() {
-        if (!_hasCommanderRole()) {
-            revert CallerIsNotCommander(_msgSender());
-        }
-        _;
-    }
-
-    /**
+     * @notice Checks if the caller has the Commander role.
      * @dev Internal function to check if the caller has the Commander role
      * @return bool True if the caller has the Commander role, false otherwise
      * @custom:internal-logic

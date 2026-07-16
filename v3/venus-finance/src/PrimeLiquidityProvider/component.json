@@ -1,0 +1,58 @@
+{
+  "component": "PrimeLiquidityProvider",
+  "main_contract": "PrimeLiquidityProvider",
+  "source_entry_count": 18,
+  "source_file_count": 18,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/PrimeLiquidityProvider\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xf3b8d6b1778548f975d6ebebd8a8e515832cfb0a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404687"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x46bed43b29d73835ff075bba1a0002a1ed1e4de8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404744"
+    },
+    {
+      "chain": "chain-130",
+      "chain_id": 130,
+      "address": "0xe20e19e37e240d5a19a3899e988c474a922bb8fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404916"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x646df53c39e9220ddeb4a72f2c3a8bd50fbefa11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404919"
+    }
+  ]
+}

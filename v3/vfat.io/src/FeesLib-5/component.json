@@ -10,14 +10,24 @@
     "build_command": "forge build --root \"src/FeesLib-5\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x34f895a2b90e60721a046a7cbf330ca74070968c",
+      "address": "0xbfdec182b32acf16c36ae070044b5a63323f4724",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x5a25167c72fea35986740e6b6104c70e6505cd3e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

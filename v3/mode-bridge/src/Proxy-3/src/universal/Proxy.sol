@@ -1,13 +1,19 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.15;
 
-import { Constants } from "src/libraries/Constants.sol";
-
 /// @title Proxy
 /// @notice Proxy is a transparent proxy that passes through the call if the caller is the owner or
 ///         if the caller is address(0), meaning that the call originated from an off-chain
 ///         simulation.
 contract Proxy {
+    /// @notice The storage slot that holds the address of the implementation.
+    ///         bytes32(uint256(keccak256('eip1967.proxy.implementation')) - 1)
+    bytes32 internal constant IMPLEMENTATION_KEY = 0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc;
+
+    /// @notice The storage slot that holds the address of the owner.
+    ///         bytes32(uint256(keccak256('eip1967.proxy.admin')) - 1)
+    bytes32 internal constant OWNER_KEY = 0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103;
+
     /// @notice An event that is emitted each time the implementation is changed. This event is part
     ///         of the EIP-1967 specification.
     /// @param implementation The address of the implementation contract
@@ -101,9 +107,8 @@ contract Proxy {
     /// @notice Sets the implementation address.
     /// @param _implementation New implementation address.
     function _setImplementation(address _implementation) internal {
-        bytes32 proxyImplementation = Constants.PROXY_IMPLEMENTATION_ADDRESS;
         assembly {
-            sstore(proxyImplementation, _implementation)
+            sstore(IMPLEMENTATION_KEY, _implementation)
         }
         emit Upgraded(_implementation);
     }
@@ -112,9 +117,8 @@ contract Proxy {
     /// @param _admin New owner of the proxy contract.
     function _changeAdmin(address _admin) internal {
         address previous = _getAdmin();
-        bytes32 proxyOwner = Constants.PROXY_OWNER_ADDRESS;
         assembly {
-            sstore(proxyOwner, _admin)
+            sstore(OWNER_KEY, _admin)
         }
         emit AdminChanged(previous, _admin);
     }
@@ -148,9 +152,8 @@ contract Proxy {
     /// @return Implementation address.
     function _getImplementation() internal view returns (address) {
         address impl;
-        bytes32 proxyImplementation = Constants.PROXY_IMPLEMENTATION_ADDRESS;
         assembly {
-            impl := sload(proxyImplementation)
+            impl := sload(IMPLEMENTATION_KEY)
         }
         return impl;
     }
@@ -159,9 +162,8 @@ contract Proxy {
     /// @return Owner address.
     function _getAdmin() internal view returns (address) {
         address owner;
-        bytes32 proxyOwner = Constants.PROXY_OWNER_ADDRESS;
         assembly {
-            owner := sload(proxyOwner)
+            owner := sload(OWNER_KEY)
         }
         return owner;
     }

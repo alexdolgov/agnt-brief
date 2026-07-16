@@ -1,6 +1,6 @@
 # kinza-finance — deployments
 
-9 verified deployment(s) across 6 component(s).
+10 verified deployment(s) across 7 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -13,3 +13,4 @@
 | ethereum | `0x39abeda13579fbb4effb31b5f38bdc91ae754a39` | AaveOracle | impl | live | no |
 | ethereum | `0x9074fca9c7a77c7078b5bbfec33f74191d095fdb` | ACLManager | impl | live | no |
 | ethereum | `0xa4cd4b5004ab42758bcb8893a10c5b3532781087` | WrappedTokenGatewayV3 | impl | live | no |
+| mantle | `0xb00083e6c3c57c2443ad5d7b98314d98ea12ee28` | GnosisSafeProxy | impl | live | no |

@@ -1,30 +1,32 @@
 /**
-  *       .
-  *      / \
-  *     |.'.|
-  *     |'.'|
-  *   ,'|   |`.
-  *  |,-'-|-'-.|
-  *   __|_| |         _        _      _____           _
-  *  | ___ \|        | |      | |    | ___ \         | |
-  *  | |_/ /|__   ___| | _____| |_   | |_/ /__   ___ | |
-  *  |    // _ \ / __| |/ / _ \ __|  |  __/ _ \ / _ \| |
-  *  | |\ \ (_) | (__|   <  __/ |_   | | | (_) | (_) | |
-  *  \_| \_\___/ \___|_|\_\___|\__|  \_|  \___/ \___/|_|
-  * +---------------------------------------------------+
-  * |  DECENTRALISED STAKING PROTOCOL FOR ETHEREUM 2.0  |
-  * +---------------------------------------------------+
-  *
-  *  Rocket Pool is a first-of-its-kind ETH2 Proof of Stake protocol, designed to be community owned,
-  *  decentralised, trustless and compatible with staking in Ethereum 2.0.
-  *
-  *  For more information about Rocket Pool, visit https://rocketpool.net
-  *
-  *  Authors: David Rugendyke, Jake Pospischil, Kane Wallmann, Darren Langley, Joe Clapis, Nick Doherty
-  *
-  */
+   *       .
+   *      / \
+   *     |.'.|
+   *     |'.'|
+   *   ,'|   |'.
+   *  |,-'-|-'-.|
+   *   __|_| |         _        _      _____           _
+   *  | ___ \|        | |      | |    | ___ \         | |
+   *  | |_/ /|__   ___| | _____| |_   | |_/ /__   ___ | |
+   *  |    // _ \ / __| |/ / _ \ __|  |  __/ _ \ / _ \| |
+   *  | |\ \ (_) | (__|   <  __/ |_   | | | (_) | (_) | |
+   *  \_| \_\___/ \___|_|\_\___|\__|  \_|  \___/ \___/|_|
+   * +---------------------------------------------------+
+   * |    DECENTRALISED STAKING PROTOCOL FOR ETHEREUM    |
+   * +---------------------------------------------------+
+   *
+   *  Rocket Pool is a first-of-its-kind Ethereum staking pool protocol, designed to
+   *  be community-owned, decentralised, permissionless, & trustless.
+   *
+   *  For more information about Rocket Pool, visit https://rocketpool.net
+   *
+   *  Authored by the Rocket Pool Core Team
+   *  Contributors: https://github.com/rocket-pool/rocketpool/graphs/contributors
+   *  A special thanks to the Rocket Pool community for all their contributions.
+   *
+   */
 
-pragma solidity 0.7.6;
+pragma solidity >0.5.0 <0.9.0;
 
 // SPDX-License-Identifier: GPL-3.0-only
 
@@ -42,7 +44,7 @@ abstract contract RocketBase {
     uint8 public version;
 
     // The main storage contract where primary persistant storage is maintained
-    RocketStorageInterface rocketStorage = RocketStorageInterface(0);
+    RocketStorageInterface rocketStorage = RocketStorageInterface(address(0));
 
 
     /*** Modifiers **********************************************************/
@@ -86,7 +88,25 @@ abstract contract RocketBase {
         require(getBool(keccak256(abi.encodePacked("minipool.exists", _minipoolAddress))), "Invalid minipool");
         _;
     }
-    
+
+    /**
+    * @dev Throws if called by any sender that isn't a registered megapool
+    */
+    modifier onlyRegisteredMegapool(address _megapoolAddress) {
+        require(getBool(keccak256(abi.encodePacked("megapool.exists", _megapoolAddress))), "Invalid megapool");
+        _;
+    }
+
+    /**
+    * @dev Throws if called by any sender that isn't a registered minipool or megapool
+    */
+    modifier onlyRegisteredMinipoolOrMegapool(address _caller) {
+        require(
+            getBool(keccak256(abi.encodePacked("megapool.exists", _caller))) ||
+            getBool(keccak256(abi.encodePacked("minipool.exists", _caller)))
+        , "Invalid caller");
+        _;
+    }
 
     /**
     * @dev Throws if called by any account other than a guardian account (temporary account allowed access to settings before DAO is fully enabled)

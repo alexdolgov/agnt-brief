@@ -10,10 +10,30 @@
     "build_command": "forge build --root \"src/ThUSDOFT\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9aa9aa0530a6af70ee7bc47cf1240100f514b065",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404174"
+    },
+    {
+      "chain": "mantle",
+      "chain_id": 5000,
+      "address": "0x9aa9aa0530a6af70ee7bc47cf1240100f514b065",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404177"
+    },
     {
       "chain": "arbitrum",
       "chain_id": 42161,

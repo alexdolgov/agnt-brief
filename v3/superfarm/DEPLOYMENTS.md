@@ -1,6 +1,6 @@
 # superfarm — deployments
 
-21 verified deployment(s) across 16 component(s).
+23 verified deployment(s) across 18 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -19,7 +19,9 @@
 | ethereum | `0x9cb7a4ef0cae65b07362bc679a0b874041e3da53` | ERC20FixedSupply | impl | live | no |
 | ethereum | `0xa7a05e655cbed5356d2fa851e96f7f68e4a6f954` | REVVInventory | impl | live | no |
 | ethereum | `0xb3ea98747440addc6a262735e71b5a5cb29edd80` | Staker-2 | impl | live | no |
+| ethereum | `0xba48bcc66b6665495ec643ece7811db5723aaf91` | RewardStaker | impl | live | no |
 | ethereum | `0xe114bce907a86d81f321c6fd8d8c51d542022c92` | GameeVouchers | impl | live | no |
+| ethereum | `0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55` | Token | impl | live | no |
 | ethereum | `0xea614f1d42af662199b0aac8e70ddabb7863b793` | OFTAdapterFixedSupply | impl | live | no |
 | ethereum | `0xeb55451173b3efb3950129e7f344d81da3814edf` | MultiSigWallet | impl | live | no |
 | ethereum | `0xebaabac3e56e06d4ce4056593f98599d316557e6` | MultiSigWallet | impl | live | no |

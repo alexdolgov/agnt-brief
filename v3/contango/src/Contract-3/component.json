@@ -1,8 +1,8 @@
 {
   "component": "Contract-3",
   "main_contract": "Contract",
-  "source_entry_count": 21,
-  "source_file_count": 21,
+  "source_entry_count": 47,
+  "source_file_count": 47,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/Contract-3\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": true,
   "audits_covering": [
     "https://github.com/contango-xyz/core-v2/blob/main/networks.json"
@@ -19,7 +19,37 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x0d52d06ceb8dcdeeb40cfd9f17489b350dd7f8a3",
+      "address": "0x2752c0702dca594ea8bc4494431b98a8e70d9ce6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc77c122363022048d5d70f7cef5cf65cba505d8a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd983427f7800a736727c6cbc6b359abd5b4b76b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfb8f0bee639f65bdbaa411690fe72e0842c16950",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

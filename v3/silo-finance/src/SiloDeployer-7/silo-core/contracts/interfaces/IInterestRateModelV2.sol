@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.5.0;
 
+import {IInterestRateModelV2Config} from "./IInterestRateModelV2Config.sol";
+
 interface IInterestRateModelV2 {
     struct Config {
         // uopt ∈ (0, 1) – optimal utilization;

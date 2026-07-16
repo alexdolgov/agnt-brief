@@ -3,6 +3,7 @@ pragma solidity 0.8.28;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "./ITotalSupplyOracle.sol";
 
 /// @title IAppStaking
 /// @notice Interface for the staking system that allows users to stake RZR tokens and earn rewards
@@ -14,16 +15,38 @@ interface IAppStaking is IERC721Enumerable {
     /// @param declaredValue Self-declared value in RZR for harberger tax
     /// @param rewardPerTokenPaid Last reward per token paid to this position
     /// @param rewards Accumulated rewards for this position
-    /// @param cooldownEnd Timestamp when cooldown period ends; if 0, position is not in cooldown
-    /// @param rewardsUnlockAt Timestamp when rewards can be claimed; if >0, rewards can't be claimed before this time
+    /// @param withdrawCooldownEnd Timestamp when withdraw cooldown period ends; if 0, position is not in withdraw cooldown
+    /// @param withdrawCooldownStart Timestamp when withdraw cooldown period starts; if 0, position is not in withdraw cooldown
+    /// @param buyCooldownEnd Timestamp when buy cooldown period ends; if 0, position is not in buy cooldown
+    /// @param taxPerSecond Tax rate for this position
+    /// @param taxCredit Tax credit for this position
+    /// @param lastTaxCollectionTime Timestamp of last tax collection for this position
     struct Position {
         uint256 amount;
         uint256 declaredValue;
         uint256 rewardPerTokenPaid;
         uint256 rewards;
-        uint256 cooldownEnd;
-        uint256 rewardsUnlockAt;
+        uint256 withdrawCooldownEnd;
+        uint256 withdrawCooldownStart;
+        uint256 buyCooldownEnd;
+        uint256 taxPerSecond;
+        uint256 taxCredit;
+        uint256 lastTaxCollectionTime;
     }
+
+    struct Variables {
+        uint256 harbergerTaxRate;
+        uint256 resellFeeRate;
+        uint256 withdrawCooldownPeriod;
+        uint256 buyCooldownPeriod;
+        uint256 lowDemandThreshold;
+        uint256 highDemandThreshold;
+        uint256 maxDepositFee;
+    }
+
+    /// @notice Emitted when variables are updated
+    /// @param variables The new variables
+    event VariablesUpdated(Variables variables);
 
     // Events
     /// @notice Emitted when a new staking position is created
@@ -32,6 +55,27 @@ interface IAppStaking is IERC721Enumerable {
     /// @param amount The amount of RZR tokens staked
     /// @param declaredValue The self-declared value for harberger tax
     event PositionCreated(uint256 indexed tokenId, address indexed owner, uint256 amount, uint256 declaredValue);
+
+    /// @notice Emitted when a position is migrated
+    /// @param tokenId The ID of the migrated position NFT
+    /// @param owner The address of the position owner
+    /// @param amount The amount of RZR tokens staked
+    /// @param declaredValue The self-declared value for harberger tax
+    event PositionMigrated(uint256 indexed tokenId, address indexed owner, uint256 amount, uint256 declaredValue);
+
+    /// @notice Emitted when variables are overwritten
+    /// @param periodFinish The timestamp when the reward period finishes
+    /// @param rewardRate The reward rate
+    /// @param lastUpdateTime The timestamp of the last reward update
+    /// @param rewardPerTokenStored The reward per token stored
+    /// @param totalStaked The total amount of tokens staked
+    event VariablesOverwritten(
+        uint256 periodFinish,
+        uint256 rewardRate,
+        uint256 lastUpdateTime,
+        uint256 rewardPerTokenStored,
+        uint256 totalStaked
+    );
 
     /// @notice Emitted when a staking position is sold
     /// @param tokenId The ID of the position NFT
@@ -83,40 +127,16 @@ interface IAppStaking is IERC721Enumerable {
     /// @param reward The amount of rewards paid
     event RewardPaid(address indexed user, uint256 reward);
 
-    /// @notice Emitted when harberger tax rate is updated
-    /// @param oldValue The old harberger tax rate
-    /// @param newValue The new harberger tax rate
-    event HarbergerTaxRateUpdated(uint256 oldValue, uint256 newValue);
+    /// @notice Emitted when upfront tax credit is set for a position
+    /// @param tokenId The position ID
+    /// @param creditAmount The amount of upfront tax credit set
+    event UpfrontTaxCreditSet(uint256 indexed tokenId, uint256 creditAmount);
 
-    /// @notice Emitted when staking fee rate is updated
-    /// @param oldValue The old staking fee rate
-    /// @param newValue The new staking fee rate
-    event StakingFeeRateUpdated(uint256 oldValue, uint256 newValue);
-
-    /// @notice Emitted when basis points is updated
-    /// @param oldValue The old basis points
-    /// @param newValue The new basis points
-    event BasisPointsUpdated(uint256 oldValue, uint256 newValue);
-
-    /// @notice Emitted when withdraw cooldown period is updated
-    /// @param oldValue The old withdraw cooldown period
-    /// @param newValue The new withdraw cooldown period
-    event WithdrawCooldownPeriodUpdated(uint256 oldValue, uint256 newValue);
-
-    /// @notice Emitted when reward cooldown period is updated
-    /// @param oldValue The old reward cooldown period
-    /// @param newValue The new reward cooldown period
-    event RewardCooldownPeriodUpdated(uint256 oldValue, uint256 newValue);
-
-    /// @notice Emitted when buy cooldown period is updated
-    /// @param oldValue The old buy cooldown period
-    /// @param newValue The new buy cooldown period
-    event BuyCooldownPeriodUpdated(uint256 oldValue, uint256 newValue);
-
-    /// @notice Emitted when epoch duration is updated
-    /// @param oldValue The old epoch duration
-    /// @param newValue The new epoch duration
-    event EpochDurationUpdated(uint256 oldValue, uint256 newValue);
+    /// @notice Emitted when upfront tax credit is consumed
+    /// @param tokenId The position ID
+    /// @param creditConsumed The amount of credit consumed
+    /// @param remainingCredit The remaining credit amount
+    event UpfrontTaxCreditConsumed(uint256 indexed tokenId, uint256 creditConsumed, uint256 remainingCredit);
 
     /// @notice Emitted when a position is split
     /// @param originalTokenId The ID of the original position NFT
@@ -148,12 +168,31 @@ interface IAppStaking is IERC721Enumerable {
         uint256 newDeclaredValue
     );
 
+    /// @notice Emitted when streaming tax is collected from a position
+    /// @param tokenId The ID of the position NFT
+    /// @param taxAmount The amount of tax collected
+    event StreamingTaxCollected(uint256 indexed tokenId, uint256 taxAmount);
+
+    /// @notice Emitted when streaming tax rate is updated for a position
+    /// @param tokenId The ID of the position NFT
+    /// @param oldRate The old streaming tax rate
+    /// @param newRate The new streaming tax rate
+    event StreamingTaxRateUpdated(uint256 indexed tokenId, uint256 oldRate, uint256 newRate);
+
     /// @notice Initializes the staking contract
     /// @param _appToken The address of the dre token
     /// @param _trackingToken The address of the tracking token
     /// @param _authority The address of the authority contract
     /// @param _burner The address of the burner contract
     function initialize(address _appToken, address _trackingToken, address _authority, address _burner) external;
+
+    /// @notice Sets the variables
+    /// @param _variables The new variables
+    function setVariables(Variables memory _variables) external;
+
+    /// @notice Gets the variables
+    /// @return The variables
+    function variables() external view returns (Variables memory);
 
     // View functions
     /// @notice Gets the last time rewards were applicable
@@ -224,6 +263,16 @@ interface IAppStaking is IERC721Enumerable {
     /// @return The position details
     function positions(uint256 tokenId) external view returns (Position memory);
 
+    /// @notice Sets upfront tax credit for a position (governor only)
+    /// @param tokenId The position ID
+    /// @param creditAmount The amount of upfront tax credit to set
+    function setUpfrontTaxCredit(uint256 tokenId, uint256 creditAmount) external;
+
+    /// @notice Gets the remaining upfront tax credit for a position
+    /// @param tokenId The position ID
+    /// @return The remaining upfront tax credit
+    function getUpfrontTaxCredit(uint256 tokenId) external view returns (uint256);
+
     /// @notice Gets the current reward rate
     /// @return The current reward rate
     function rewardRate() external view returns (uint256);
@@ -243,38 +292,6 @@ interface IAppStaking is IERC721Enumerable {
     /// @notice Gets the address of the burner contract
     /// @return The address of the burner contract
     function burner() external view returns (address);
-
-    /// @notice Gets the harberger tax rate
-    /// @return The harberger tax rate
-    function harbergerTaxRate() external view returns (uint256);
-
-    /// @notice Gets the withdraw cooldown period
-    /// @return The withdraw cooldown period
-    function withdrawCooldownPeriod() external view returns (uint256);
-
-    /// @notice Gets the reward cooldown period
-    /// @return The reward cooldown period
-    function rewardCooldownPeriod() external view returns (uint256);
-
-    /// @notice Checks if a bond position is in cooldown (vesting period)
-    /// @param _tokenId The ID of the bond position NFT
-    /// @return bool True if the position is in cooldown, false otherwise
-    function isInBuyCooldown(uint256 _tokenId) external view returns (bool);
-
-    /// @notice Checks if a bond position is in withdraw cooldown (vesting period)
-    /// @param _tokenId The ID of the bond position NFT
-    /// @return bool True if the position is in withdraw cooldown, false otherwise
-    /// @return withdrawCooldownEnd The timestamp when the withdraw cooldown ends
-    function isInWithdrawCooldown(uint256 _tokenId) external view returns (bool, uint256 withdrawCooldownEnd);
-
-    /// @notice Gets the buy cooldown period
-    /// @return buyCooldownPeriod The buy cooldown period
-    function buyCooldownPeriod() external view returns (uint256);
-
-    /// @notice Gets the buy cooldown end timestamp for a position
-    /// @param _tokenId The ID of the position NFT
-    /// @return buyCooldownEnd The buy cooldown end timestamp
-    function getBuyCooldownEnd(uint256 _tokenId) external view returns (uint256 buyCooldownEnd);
 
     /// @notice Gets the epoch duration
     /// @return The epoch duration
@@ -297,11 +314,14 @@ interface IAppStaking is IERC721Enumerable {
     /// @return mergedTokenId The ID of the resulting merged position (equals tokenId1)
     function mergePositions(uint256 tokenId1, uint256 tokenId2) external returns (uint256 mergedTokenId);
 
-    /// @notice Increases only the declared (buy-out) value of a position and pays the corresponding Harberger tax.
-    /// @param tokenId The ID of the position NFT
-    /// @param additionalDeclaredValue The additional declared value to add (in RZR)
-    /// @return taxPaid The amount of tax paid for the declared value increment
-    function increaseDeclaredValue(uint256 tokenId, uint256 additionalDeclaredValue)
-        external
-        returns (uint256 taxPaid);
+    /// @notice Collects streaming tax from a position
+    /// @param id The ID of the position NFT
+    /// @return tax The amount of tax collected
+    /// @return credit The amount of credit used
+    function collectStreamingTax(uint256 id) external returns (uint256 tax, uint256 credit);
+
+    /// @notice Calculates the streaming tax owed for a position
+    /// @param id The ID of the position NFT
+    /// @return tax The amount of tax owed
+    function calculateStreamingTax(uint256 id) external view returns (uint256 tax);
 }

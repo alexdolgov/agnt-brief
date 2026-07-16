@@ -7,7 +7,6 @@ import "../interfaces/IFarmConnector.sol";
 import "../interfaces/external/IWETH.sol";
 import "./modules/ZapModule.sol";
 import { SafeTransferLib } from "solmate/utils/SafeTransferLib.sol";
-import { FixedPointMathLib } from "solmate/utils/FixedPointMathLib.sol";
 
 library FarmStrategyFees {
     bytes4 constant Deposit = bytes4(keccak256("FarmDepositFee"));
@@ -48,15 +47,13 @@ contract FarmStrategy is TransferModule, ZapModule {
         address[] memory targets = new address[](arrayLength);
         bytes[] memory data = new bytes[](arrayLength);
 
+        bytes4 feeSelector =
+            zapInRequired ? FarmStrategyFees.Deposit : bytes4(0);
+
         targets[0] = address(this);
         data[0] = abi.encodeCall(
             this._sickle_transfer_from_user,
-            (
-                zapData.tokenIn,
-                zapData.amountIn,
-                address(this),
-                FarmStrategyFees.Deposit
-            )
+            (zapData.tokenIn, zapData.amountIn, address(this), feeSelector)
         );
 
         if (zapInRequired) {
@@ -338,5 +335,60 @@ contract FarmStrategy is TransferModule, ZapModule {
     ) external {
         harvest(stakingContractAddress, harvestZapData, extraData);
         withdraw(stakingContractAddress, withdrawZapData, extraData);
+    }
+
+    function rebalance(
+        address fromStakingContractAddress,
+        ZapModule.ZapOutData calldata withdrawZapData,
+        bytes memory withdrawExtraData,
+        address toStakingContractAddress,
+        ZapModule.ZapInData calldata depositZapData,
+        bytes memory depositExtraData,
+        address[] memory sweepTokens
+    ) external {
+        Sickle sickle = Sickle(payable(factory.sickles(msg.sender)));
+        if (address(sickle) == address(0)) {
+            revert SickleNotDeployed();
+        }
+
+        address[] memory targets = new address[](6);
+        bytes[] memory data = new bytes[](6);
+
+        targets[0] = connectorRegistry.connectorOf(fromStakingContractAddress);
+        data[0] = abi.encodeCall(
+            IFarmConnector.withdraw,
+            (
+                fromStakingContractAddress,
+                withdrawZapData.removeLiquidityData.lpAmountIn,
+                withdrawExtraData
+            )
+        );
+
+        targets[1] = address(this);
+        data[1] = abi.encodeCall(ZapModule.zapOut, (withdrawZapData));
+
+        targets[2] = address(this);
+        data[2] = abi.encodeCall(
+            this._sickle_charge_fees,
+            (address(this), FarmStrategyFees.Withdraw, withdrawZapData.tokenOut)
+        );
+
+        targets[3] = address(this);
+        data[3] = abi.encodeCall(ZapModule.zapIn, (depositZapData));
+
+        targets[4] = connectorRegistry.connectorOf(toStakingContractAddress);
+        data[4] = abi.encodeCall(
+            IFarmConnector.deposit,
+            (
+                toStakingContractAddress,
+                depositZapData.addLiquidityData.lpToken,
+                depositExtraData
+            )
+        );
+
+        targets[5] = address(this);
+        data[5] = abi.encodeCall(this._sickle_transfer_to_user, (sweepTokens));
+
+        sickle.multicall(targets, data);
     }
 }

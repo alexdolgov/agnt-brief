@@ -6,7 +6,25 @@
     {
       "chain_id": 43114,
       "chain": "avalanche",
-      "address": "0x42a53f5460f126cccaf57d1b79155c65d229f82b",
+      "address": "0x19844c931406cc9bd237aa3e169310978a33f0b9",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0x6b19153936b35eb5d035193463491ee902bfd9da",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0x6c4acf40b81b15643ab58ac145a8b043497baf2f",
+      "canonical_source_address": null
+    },
+    {
+      "chain_id": 43114,
+      "chain": "avalanche",
+      "address": "0x86eba1b766667b99dd4f9a40d01960e36cf753e3",
       "canonical_source_address": null
     }
   ]

@@ -24,12 +24,6 @@
     {
       "chain_id": 1,
       "chain": "ethereum",
-      "address": "0x8035a7ab484d57a5a82469e0d6a38b2c942afbef",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
       "address": "0x88e6c7072b867f9546a232548a5d3271986b3c0c",
       "canonical_source_address": null
     },
@@ -37,12 +31,6 @@
       "chain_id": 1,
       "chain": "ethereum",
       "address": "0xc01dc3c7f83b12cfdf6c0aaa09c880eb45c48569",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0xc6306c52ea0405d3630249f202751ae3043056bd",
       "canonical_source_address": null
     },
     {

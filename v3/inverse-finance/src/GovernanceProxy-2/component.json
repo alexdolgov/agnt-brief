@@ -1,0 +1,48 @@
+{
+  "component": "GovernanceProxy-2",
+  "main_contract": "GovernanceProxy",
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/GovernanceProxy-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xcbb162b761b83578b2a0226cbaf4c1ade0d60b2e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395453"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5d5392505ee69f9fe7a6a1c1af14f17db3b3e364",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395456"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x1230bd56bf23bf7adf95b9f861711301e3ccd6b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395459"
+    }
+  ]
+}

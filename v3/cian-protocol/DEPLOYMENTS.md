@@ -1,6 +1,6 @@
 # cian-protocol — deployments
 
-82 verified deployment(s) across 81 component(s).
+83 verified deployment(s) across 82 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -25,6 +25,7 @@
 | avalanche | `0x61a4d381fa26a764360ee71565ed938914111529` | BenqiAdapter | impl | live | no |
 | avalanche | `0x6b2ba8f249cc1376f2a02a9faf8beca5d7718dcf` | SAVAXAdapter | impl | live | no |
 | avalanche | `0x8729438eb15e2c8b576fcc6aecda6a148776c0f5` | Qi | impl | live | no |
+| avalanche | `0xa02b10bc4f25c7a4c398227306354cf93dd671d2` | Context | proxy | live | no |
 | avalanche | `0xa1f5ae0ce9308750ed0c2da5283ab2ad5d6bb618` | QiTokenSaleDistributorProxy | impl | live | no |
 | avalanche | `0xa246dbf6f90204f8f2bbeec015f75cf226fa39ae` | FeeBoxSAVAX | impl | live | no |
 | avalanche | `0xac33e98174a897ecf21bd5c6e67696007aa58527` | ConnectV2QiAvalanche | impl | live | no |

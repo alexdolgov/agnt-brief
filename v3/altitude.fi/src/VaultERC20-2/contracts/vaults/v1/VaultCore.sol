@@ -37,8 +37,8 @@ abstract contract VaultCoreV1 is
         // Token indexes
 
         /// !!! ADJUST BEFORE DEPLOYMENT [1 of 3] !!! ///
-        // supplyToken.setInterestIndex(supplyToken.interestIndex() * 1e9); // wstETH
-        supplyToken.setInterestIndex(supplyToken.interestIndex() * 1e19); // cbBTC
+        supplyToken.setInterestIndex(supplyToken.interestIndex() * 1e9); // wstETH
+        // supplyToken.setInterestIndex(supplyToken.interestIndex() * 1e19); // cbBTC
         /// ----------------------------------------- ///
 
         debtToken.setInterestIndex(debtIndex * 1e21);
@@ -46,8 +46,8 @@ abstract contract VaultCoreV1 is
         // Harvest indexes
         for (uint i; i < snapshots.length; i++) {
             /// !!! ADJUST BEFORE DEPLOYMENT [2 of 3] !!! ///
-            // snapshots[i].supplyIndex *= 1e9; // wstETH
-            snapshots[i].supplyIndex *= 1e19; // cbBTC
+            snapshots[i].supplyIndex *= 1e9; // wstETH
+            // snapshots[i].supplyIndex *= 1e19; // cbBTC
             /// ----------------------------------------- ///
             snapshots[i].borrowIndex *= 1e21;
         }
@@ -67,8 +67,8 @@ abstract contract VaultCoreV1 is
                 users[i],
                 supplyToken.balanceStored(users[i]),
                 /// !!! ADJUST BEFORE DEPLOYMENT [3 of 3] !!! ///
-                // supplyToken.userIndex(users[i]) * 1e9 // wstETH
-                supplyToken.userIndex(users[i]) * 1e19 // cbBTC
+                supplyToken.userIndex(users[i]) * 1e9 // wstETH
+                // supplyToken.userIndex(users[i]) * 1e19 // cbBTC
                 /// ----------------------------------------- ///
             );
 

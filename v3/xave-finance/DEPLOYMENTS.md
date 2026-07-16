@@ -1,9 +1,13 @@
 # xave-finance — deployments
 
-47 verified deployment(s) across 47 component(s).
+57 verified deployment(s) across 50 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| avalanche | `0x21720736ada52d8887afac20b05f02005fd6f272` | UsdcToUsdAssimilator-2 | impl | live | no |
+| avalanche | `0x4cda5bde8e78abd4a53fe6c1568c5c18d2d0f73e` | BaseToUsdAssimilator | impl | live | no |
+| avalanche | `0xb803906e5b39f8fa31c6ba2105925c5fa17beb54` | BaseToUsdAssimilator | impl | live | no |
+| avalanche | `0xc2750ad1cbd8523be6e51f7d8fc6394dd7194d2d` | BaseToUsdAssimilator | impl | live | no |
 | ethereum | `0x00ee7f1020bbc5423a25ec5f5a08139a17d12344` | StableDebtToken | impl | unknown | no |
 | ethereum | `0x02f937266007d93706fae23c2b0b071f4eff2799` | AToken | impl | unknown | no |
 | ethereum | `0x057b4e0f15b642494013984543872a801f99e3c3` | SingleRecipientGaugeFactory | impl | unknown | no |
@@ -21,8 +25,10 @@
 | ethereum | `0x4924bebf9a3ac9eaf0d3a83e30bfee2b3fa0b36c` | PriceOracle | impl | unknown | no |
 | ethereum | `0x49dd29b8d2c7a979e0a406225fefc48bbfe3f4ce` | LiquidityGaugeFactory | impl | unknown | no |
 | ethereum | `0x585b52fe4712a74404aba83deb09a0e087d80802` | Router | impl | unknown | no |
+| ethereum | `0x5f8b11995d7f95faa59ca6fd5ffa1c0dbbe0ec7b` | FXPool | impl | live | no |
 | ethereum | `0x6b4761dfab4cf4c531adc379e83e85d62b553dde` | Authorizer | impl | unknown | no |
 | ethereum | `0x70ba0482fd6343e8fcbd2480c8b4c11d6c654df5` | TcadToUsdAssimilator | impl | unknown | no |
+| ethereum | `0x73f8e7a9a19e284a9ac85704af58454cfe75f059` | FXPool | impl | live | no |
 | ethereum | `0x85476ab9523168d8143a20bb873e33ee7e522fbf` | Swaps | impl | unknown | no |
 | ethereum | `0x9355fdfba6acd5178f6fcba48a4d3218f705b673` | LendingPoolCollateralManager | impl | unknown | no |
 | ethereum | `0x9f9d0bb490f7fa5894ffbd07dc46f858bd5b968b` | ViewLiquidity | impl | unknown | no |
@@ -47,7 +53,11 @@
 | polygon | `0x14728e0997be392af7e35ff99191dc259d11d901` | FXPoolDeployer | impl | unknown | no |
 | polygon | `0x1cd131aef741b378cf886ad1be5aaa2b871535f1` | AssimilatorFactory | impl | unknown | no |
 | polygon | `0x1d5da10918cac00a62a22532881b9c83c1c9551a` | LendingPoolAddressesProvider | impl | unknown | no |
+| polygon | `0x32cc63ffeccb7c0508d64e4d37145313cc053b27` | FXPool | impl | live | no |
+| polygon | `0x427333b9f9d8bd0b67fd5fc2213371db0ef178e1` | FXPool | impl | live | no |
 | polygon | `0x58e352054e8f15d40da2093283ada632aec9ae2f` | VNXAUGramOracle | impl | unknown | no |
 | polygon | `0x627d759314d5c4007b461a74ebafa7ebc5dfed71` | FXPoolFactory | impl | unknown | no |
+| polygon | `0x6bf004bee6346852a29239b386ab4239ffbd66de` | FXPool | impl | live | no |
 | polygon | `0xa2fc51a7f5246a718848f5bdadbc4a78191a8e2a` | FXPoolDeployerTracker | impl | unknown | no |
 | polygon | `0xa9a66d796e38a9f5154d023f68d6f7b3b6c9b949` | ST_Basic_Token | impl | unknown | no |
+| polygon | `0xe6d8fcd23ed4e417d7e9d1195edf2ca634684e0e` | FXPool | impl | live | no |

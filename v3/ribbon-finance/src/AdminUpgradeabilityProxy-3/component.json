@@ -10,21 +10,29 @@
     "build_command": "forge build --root \"src/AdminUpgradeabilityProxy-3\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/ribbon-finance/audit/blob/master/reports/RibbonThetaYearn-18june.pdf"
-  ],
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x8fe74471f198e426e96be65f40eed1f8ba96e54f",
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x98d03125c62dae2328d9d3cb32b7b969e6a87787",
       "is_proxy": true,
-      "implementation_address": "0xd4d28743861ff6c2c622cf093919710b2e22e64d",
+      "implementation_address": "0x807e0b0a75d34e1b4de1066604662e7a9d1ed3ab",
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "398548"
+      "logic_topography_row_id": "398567"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9dd6be071b4292cc88b8190ab718329adea3e3a3",
+      "is_proxy": true,
+      "implementation_address": "0xa5c2f49cdc8197d7b0129d3c92af7499cc6d986c",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "398568"
     }
   ]
 }

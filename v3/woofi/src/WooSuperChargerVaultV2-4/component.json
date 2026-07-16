@@ -10,29 +10,39 @@
     "build_command": "forge build --root \"src/WooSuperChargerVaultV2-4\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 2,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xd2fdab19b94b59c5f0e75dd9813365df815b56b1",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x5cb9ba4a6f05c4125d61172e1b2c1dbe3afb3158",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401305"
+      "logic_topography_row_id": "401118"
     },
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xfeecedbc3c292db79347473a2b976a463c3ac2d6",
+      "address": "0x6fc2c9f904a98caeeef6aaba6de625b5698f3f08",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401315"
+      "logic_topography_row_id": "401278"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7f3f2a499c00c2d7018300f99a232896fd295bb1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401282"
     }
   ]
 }

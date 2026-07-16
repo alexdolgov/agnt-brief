@@ -17,7 +17,7 @@
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0x0d0210ac2da3c8fde507712f785d16ea9cafe5e3",
+      "address": "0x0088f5d8e27bc971f8f2696f8507efaf51bdec8a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

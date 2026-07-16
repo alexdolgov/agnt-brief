@@ -1,6 +1,6 @@
 # concentrator — deployments
 
-185 verified deployment(s) across 147 component(s).
+187 verified deployment(s) across 149 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -53,6 +53,7 @@
 | ethereum | `0x3c20ac688410be8f391be1fb00afc5c212972f86` | CLeverToken | impl | live | no |
 | ethereum | `0x3cfe091c9028154cc5cb721258e9360803b130f5` | SavingFxUSDFacet | impl | live | no |
 | ethereum | `0x3d35dc5948c948f131ddd9e3a341b99e45174a74` | ShortPositionOperateFlashLoanFacet | impl | live | no |
+| ethereum | `0x3f0e7916681452d23cd36b1281457da721f2e5df` | Vyper_contract | impl | live | no |
 | ethereum | `0x402f878bdd1f5c66fdaf0fababcf74741b68ac36` | sdToken | impl | live | no |
 | ethereum | `0x414cbb5c7cf637b7030965b5ee84504c64c10c29` | Merkle | impl | live | no |
 | ethereum | `0x43e54c2e7b3e294de3a155785f52ab49d87b9922` | TransparentUpgradeableProxy-3 | proxy | live | no |
@@ -69,6 +70,7 @@
 | ethereum | `0x592e353c5b97356e99eaf6a72b971ba1c9695593` | Vesting | impl | live | no |
 | ethereum | `0x5ac1a882e6cedc58511b7e42b02bab42e2c02956` | RevenuePool | impl | live | no |
 | ethereum | `0x5af15da84a4a6edf2d9fa6720de921e1026e37b7` | Vault-2 | impl | live | no |
+| ethereum | `0x5bc3dd6e6b4e5dd811d558843da6a1bfbb9c9dca` | Vyper_contract-2 | impl | live | no |
 | ethereum | `0x5c28b966ab37cfb9397bbc04595f91f0fbf06d9b` | FxGateway | impl | live | no |
 | ethereum | `0x5c5ccb2e511fcdeaa16737810787a47507cf0922` | LockerPreLaunch | impl | live | no |
 | ethereum | `0x5d2c6215555b36889ef235c6d5ccde22e9964e6a` | InversePriceOracle | impl | live | no |

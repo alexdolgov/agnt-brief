@@ -1,6 +1,6 @@
 # smilee-finance — deployments
 
-65 verified deployment(s) across 31 component(s).
+67 verified deployment(s) across 33 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -15,6 +15,7 @@
 | arbitrum | `0x1e5132a2636deb590521ad0efbd8ff8ffc7517e5` | Finance | impl | live | no |
 | arbitrum | `0x1ee870cbb5e4a6a722c415ce99fb97a1599f003f` | IG | impl | live | no |
 | arbitrum | `0x2f8b57d0d542945986250e51b9fb0059f095ae80` | TimeLock | impl | live | no |
+| arbitrum | `0x3d4d50654574f8c8fd417fc77adf5c6165f6dceb` | IGAccessNFT | impl | live | no |
 | arbitrum | `0x45c0c776242c2ea752a4b152902f203af40d7924` | Vault-3 | impl | live | no |
 | arbitrum | `0x49a07a6ba53f600106055764cb35f30a6c34056a` | PositionManager | impl | live | no |
 | arbitrum | `0x4c04182da5dfc05c662598f72ccfd3e7ba757f97` | FinanceIGPayoff | impl | live | no |
@@ -49,6 +50,7 @@
 | arbitrum | `0xb7c6072c3a94771cfbf845e6fd5ea70bdee26739` | VaultLib | impl | live | no |
 | arbitrum | `0xbd80e2b3cc71300985506181c366a2295c251182` | Vault | impl | live | no |
 | arbitrum | `0xc1894fa9a94f454f9689be3f2b5e63b3fde569f4` | Vault | impl | live | no |
+| arbitrum | `0xc471663f523f8c04ac8ca026a1d3b56af08b9e1f` | VaultAccessNFT | impl | live | no |
 | arbitrum | `0xc5cd7159a28675225ae0d63d958826ea52fc4fac` | IG | impl | live | no |
 | arbitrum | `0xc9293cc81013ff1e05e93531f7563788b3fed768` | IG-2 | impl | live | no |
 | arbitrum | `0xc948d7456d3ceda873367ef4fa4a21654131221b` | Vault-2 | impl | live | no |

@@ -1,8 +1,8 @@
 {
   "component": "TransparentUpgradeableProxy-3",
   "main_contract": "TransparentUpgradeableProxy",
-  "source_entry_count": 17,
-  "source_file_count": 17,
+  "source_entry_count": 8,
+  "source_file_count": 8,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -17,12 +17,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x1eb1b47d0d8bcd9d761f52d26fcd90bba225344c",
-      "is_proxy": true,
-      "implementation_address": "0xea08230de3a5978ebef254a6b7d8f2f8b837a373",
+      "address": "0x1056178977457a5f4be33929520455a7d2e28670",
+      "is_proxy": false,
+      "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "391046"
     }
   ]
 }

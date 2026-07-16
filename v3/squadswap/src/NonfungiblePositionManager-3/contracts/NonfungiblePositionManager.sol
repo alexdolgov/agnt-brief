@@ -17,8 +17,6 @@ import './base/ERC721Permit.sol';
 import './base/PeripheryValidation.sol';
 import './base/SelfPermit.sol';
 import './base/PoolInitializer.sol';
-import "./blast/SquadGas.sol";
-import "./blast/interfaces/IBlastPoints.sol";
 
 /// @title NFT positions
 /// @notice Wraps Squad V3 positions in the ERC721 non-fungible token interface
@@ -30,8 +28,7 @@ contract NonfungiblePositionManager is
     PoolInitializer,
     LiquidityManagement,
     PeripheryValidation,
-    SelfPermit,
-    SquadGas
+    SelfPermit
 {
     // details about the squad position
     struct Position {
@@ -71,18 +68,13 @@ contract NonfungiblePositionManager is
     /// @dev The address of the token descriptor contract, which handles generating token URIs for position tokens
     address private immutable _tokenDescriptor;
 
-    address public manager = 0xb0eF30C3635289eD71A37D7AeE5B2551322Ac828;
-    address private constant BLAST_POINTS = 0x2536FE9ab3F511540F2f9e2eC2A805005C3Dd800; // mainnet
-    // address private constant BLAST_POINTS = 0x2fc95838c71e76ec69ff817983BFf17c710F34E0; // testnet
-
     constructor(
         address _deployer,
         address _factory,
         address _WETH9,
         address _tokenDescriptor_
-    ) ERC721Permit('Squad V3 Positions NFT-V1', 'SS-V3-POS', '1') PeripheryImmutableState(_deployer, _factory, _WETH9) SquadGas(manager)  {
+    ) ERC721Permit('Squad V3 Positions NFT-V1', 'SS-V3-POS', '1') PeripheryImmutableState(_deployer, _factory, _WETH9) {
         _tokenDescriptor = _tokenDescriptor_;
-        IBlastPoints(BLAST_POINTS).configurePointsOperator(manager);
     }
 
     /// @inheritdoc INonfungiblePositionManager
@@ -397,6 +389,7 @@ contract NonfungiblePositionManager is
     /// @inheritdoc IERC721
     function getApproved(uint256 tokenId) public view override(ERC721, IERC721) returns (address) {
         require(_exists(tokenId), 'ERC721: approved query for nonexistent token');
+
         return _positions[tokenId].operator;
     }
 
@@ -404,9 +397,5 @@ contract NonfungiblePositionManager is
     function _approve(address to, uint256 tokenId) internal override(ERC721) {
         _positions[tokenId].operator = to;
         emit Approval(ownerOf(tokenId), to, tokenId);
-    }
-
-    function updatePointsAdmin(address _admin) public onlyManager {
-        IBlastPoints(BLAST_POINTS).configurePointsOperator(_admin);
     }
 }

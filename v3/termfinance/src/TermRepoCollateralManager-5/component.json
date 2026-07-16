@@ -1,0 +1,28 @@
+{
+  "component": "TermRepoCollateralManager-5",
+  "main_contract": "TermRepoCollateralManager",
+  "source_entry_count": 71,
+  "source_file_count": 71,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TermRepoCollateralManager-5\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd7fc64cc9e5345fa5f26b31c92216781b4fae65a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

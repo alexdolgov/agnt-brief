@@ -10,10 +10,30 @@
     "build_command": "forge build --root \"src/ProxyFactory\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 6,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf5e2cfde016bd55bef42a5a4baad7e21cd39720d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfcdeb46a92ff6b2980b60e175c5e6523d5d4cbab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "optimism",
       "chain_id": 10,

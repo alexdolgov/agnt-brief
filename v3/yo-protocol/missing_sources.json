@@ -2,12 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "yo-protocol",
-  "missing": [
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0xa425d3c9a1c048be1183d8e396406bda813b4826",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

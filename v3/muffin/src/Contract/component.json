@@ -1,0 +1,32 @@
+{
+  "component": "Contract",
+  "main_contract": "Contract",
+  "source_entry_count": 23,
+  "source_file_count": 23,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://resources.muffin.fi/files/audits/ABDK_Muffin_Core_v_2_0.pdf",
+    "https://resources.muffin.fi/files/audits/Deduab-Muffin-Audit-Report.pdf",
+    "https://resources.muffin.fi/files/audits/PeckShield-Audit-Report-Muffin-v1.0.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6690384822aff0b65fe0c21a809f187f5c3fcdd8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

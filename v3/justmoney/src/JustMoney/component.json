@@ -10,10 +10,20 @@
     "build_command": "forge build --root \"src/JustMoney\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x388d819724dd6d71760a38f00dc01d310d879771",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403288"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,
@@ -23,6 +33,16 @@
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
       "logic_topography_row_id": "403289"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x388d819724dd6d71760a38f00dc01d310d879771",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "403290"
     }
   ]
 }

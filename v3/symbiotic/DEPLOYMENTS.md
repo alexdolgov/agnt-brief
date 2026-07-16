@@ -1,6 +1,6 @@
 # symbiotic — deployments
 
-45 verified deployment(s) across 43 component(s).
+48 verified deployment(s) across 46 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -22,7 +22,9 @@
 | ethereum | `0x653815a6e2accd3ae3edc41d48bec9192d5b8651` | BaseSlasherHints | impl | unknown | no |
 | ethereum | `0x685c2ed7d59814d2a597409058ee7a92f21e48fd` | SlasherFactory | impl | unknown | no |
 | ethereum | `0x6d52fc402b2da2669348cc2682d85c61c122755d` | DefaultOperatorRewardsFactory | impl | unknown | no |
+| ethereum | `0x6f80fd397120164e44d23b9334910c8de41ce4ce` | Contract | impl | live | yes |
 | ethereum | `0x7133415b33b438843d581013f98a08704316633c` | OptInService | impl | unknown | no |
+| ethereum | `0x788823c9579a049d986eb76718bc758c0998594a` | Contract-2 | impl | live | yes |
 | ethereum | `0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0` | WstETH | impl | unknown | no |
 | ethereum | `0x89391b703223511796f0778f0838e68da66d90fb` | OperatorNetworkSpecificDelegator | impl | unknown | no |
 | ethereum | `0x89e3915c9eb07d1bff5d78e24b28d409dba9b272` | rETH_Burner | impl | unknown | no |
@@ -32,6 +34,7 @@
 | ethereum | `0x9422446ab9828821c913185ae012dfa60913dfaa` | CuratorRegistry | impl | unknown | no |
 | ethereum | `0x97efa50898ac1bb814fa10e09fe08a9111125e5d` | MetadataService | impl | unknown | no |
 | ethereum | `0x985ed57af9d475f1d83c1c1c8826a0e5a34e8c7b` | DelegatorFactory | impl | unknown | no |
+| ethereum | `0x9983edcd02f57b8b94bd8de9d18e614dfb964d6d` | Contract-3 | impl | live | yes |
 | ethereum | `0x99f2b89fb3c363fbafd8d826e5aa77b28bab70a0` | BurnerRouterFactory | impl | unknown | no |
 | ethereum | `0xa298e96fe9bd30ca6801d35ba28f6d1c004123c7` | BaseDelegatorHints | impl | unknown | no |
 | ethereum | `0xad817a6bc954f678451a71363f04150fdd81af9f` | OperatorRegistry | impl | unknown | no |
@@ -49,10 +52,3 @@
 | ethereum | `0xe58ed8d0788bd93d665552409dc60d43c9e6a29f` | OptInServiceHints | impl | unknown | no |
 | ethereum | `0xeaddc9f93a7d7b845084a30da09400f0170fc9bc` | VaultHints | impl | unknown | no |
 | ethereum | `0xef91d6730688b2966b959383a1b42aa23130aedf` | OperatorSpecificDelegator | impl | unknown | no |
-
-## Source unavailable (3)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- ethereum `0x6f80fd397120164e44d23b9334910c8de41ce4ce`
-- ethereum `0x788823c9579a049d986eb76718bc758c0998594a`
-- ethereum `0x9983edcd02f57b8b94bd8de9d18e614dfb964d6d`

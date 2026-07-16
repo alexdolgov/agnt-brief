@@ -71,7 +71,7 @@ contract TimeswapV2PeripheryNoDexCollect is
         })
       );
 
-    (token0Amount, token1Amount) = collect(
+    (token0Amount, token1Amount, , ) = collect(
       TimeswapV2PeripheryCollectParam({
         token0: param.token0,
         token1: param.token1,

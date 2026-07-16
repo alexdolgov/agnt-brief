@@ -1,6 +1,6 @@
 # ondo-finance — deployments
 
-102 verified deployment(s) across 98 component(s).
+105 verified deployment(s) across 101 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -70,6 +70,7 @@
 | ethereum | `0x5cd9e3a4c9933133b512da1b6ba4672160e0c665` | AllowlistStub | impl | unknown | no |
 | ethereum | `0x6315aa908c50376d1028412c028aa0629f0355a6` | FiatTokenUtil | impl | unknown | no |
 | ethereum | `0x71923a93a1f4837e931d888c90a10de4e3678336` | KYCRegistry | impl | unknown | no |
+| ethereum | `0x72be8c14b7564f7a61ba2f6b7e50d18dc1d4b63d` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0x7554815084eb70e8de277141650fad7e3d50673f` | GovernerAlpha | impl | unknown | no |
 | ethereum | `0x7fb0228c6338da4ec948df7b6a8e22ad2bb2bfb5` | USDYPricer | impl | unknown | no |
 | ethereum | `0x87b126e5518b6a1bb8465779b4607c45c643df90` | USDYOracleWrapper | impl | unknown | no |
@@ -106,9 +107,5 @@
 | mantle | `0x36bd938202ed388ece7f9857cc526519ed7330c1` | USDYW_Factory | impl | unknown | no |
 | mantle | `0x4109074822b86a6c41fdce1a92030dc7298c64d1` | rUSDYW_Factory | impl | unknown | no |
 | mantle | `0x5be26527e817998a7206475496fde1e68957c5a6` | TokenProxy | proxy | live | no |
-
-## Source unavailable (2)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- polygon `0x6b7443808acfcd48f1de212c2557462fa86ee945`
-- polygon `0x7cd852c0d7613aa869e632929560f310d4059ac1`
+| polygon | `0x6b7443808acfcd48f1de212c2557462fa86ee945` | Contract | impl | live | yes |
+| polygon | `0x7cd852c0d7613aa869e632929560f310d4059ac1` | Contract-2 | impl | live | yes |

@@ -1,6 +1,6 @@
 # lybra-finance — deployments
 
-18 verified deployment(s) across 17 component(s).
+19 verified deployment(s) across 18 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -20,5 +20,6 @@
 | ethereum | `0xb72da4a9866b0993b9a7d842e5060716f74bf262` | LybraWBETHVault | impl | unknown | no |
 | ethereum | `0xc626867660df1cc6274ce0338e7dfb92474647c5` | LBRPriceOFeed | impl | unknown | no |
 | ethereum | `0xd3e9de27d66f1d8ade2bee73334b76734e797cd4` | MigrateHelper | impl | unknown | no |
+| ethereum | `0xd585aaafa2b58b1cd75092b51ade9fa4ce52f247` | PeUSDMainnet | impl | live | no |
 | ethereum | `0xdf284087c7887df16bb1b686421dc34766ee20af` | NonBoost | impl | unknown | no |
 | ethereum | `0xdf3ac4f479375802a821f7b7b46cd7eb5e4262cc` | EUSD | impl | unknown | no |

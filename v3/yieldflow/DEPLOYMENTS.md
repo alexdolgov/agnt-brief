@@ -1,9 +1,10 @@
 # yieldflow — deployments
 
-21 verified deployment(s) across 21 component(s).
+22 verified deployment(s) across 22 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x113a05170273e9087f5d0e0cdee0388478a1546d` | Yieldflow | impl | live | no |
 | ethereum | `0x01af749e58c076c301b1f57d0bcbbf2d49b503bd` | RangePositionManager | impl | live | no |
 | ethereum | `0x06b1ae9fb6407252fe26886c652463b6d9e4eb21` | UniV2LPETHFactory | impl | unknown | no |
 | ethereum | `0x06cef69e7df2de1bb8bc4cf416142f1ea6494829` | SwapManager | impl | unknown | no |

@@ -267,7 +267,6 @@ abstract contract Strategy is Ownable, ReentrancyGuard, Pausable {
     uint256 public buyBackRate = 800;
     uint256 public constant buyBackRateMax = 10000;
     uint256 public constant buyBackRateUL = 800;
-    // bsc
     address public constant buyBackAddress =
     0x000000000000000000000000000000000000dEaD;
 
@@ -459,30 +458,6 @@ interface IPancakeRouter01 {
 
 interface IPancakeRouter02 is IPancakeRouter01 {
 
-}
-
-// File: contracts/interfaces/Wrapped.sol
-
-pragma solidity 0.6.12;
-
-
-// do not inherit these interfaces 
-
-interface Wrapped is IERC20 {
-    function deposit() external payable;
-
-    function withdraw(uint256 wad) external;
-}
-
-interface IWBNB is Wrapped {
-}
-
-interface IWHT is Wrapped {
-}
-
-
-interface IUnwrapper {
-    function unwrapBNB(uint256) external;
 }
 
 // File: @openzeppelin/contracts/math/SafeMath.sol
@@ -980,22 +955,19 @@ pragma solidity 0.6.12;
 
 
 
+interface IWBNB is IERC20 {
+    function deposit() external payable;
+    function withdraw(uint256 wad) external;
+}
 
+interface HelperLike {
+    function unwrapBNB(uint256) external;
+}
 
 contract StrategyAlpacaImpl is StrategyAlpacaStorage {
     using SafeERC20 for IERC20;
     using Address for address;
     using SafeMath for uint256;
-
-    event Deposit(address wantAddress, uint256 amountReceived, uint256 amountDeposited);
-    event Withdraw(address wantAddress, uint256 amountRequested, uint256 amountWithdrawn);    
-    event BuybackWant(address wantAddress, uint256 earnedAmount, uint256 buybackAmount, address buybackTokenAddress, uint256 burnAmount, address buybackAddress);
-    event Buyback(address earnedAddress, uint256 earnedAmount, uint256 buybackAmount, address buybackTokenAddress, uint256 burnAmount, address buybackAddress);
-
-    modifier onlyEOA() {
-        require(tx.origin == msg.sender);
-        _;
-    }
 
     function deposit(uint256 _wantAmt)
         public
@@ -1019,8 +991,6 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
 
         balanceSnapshot = balanceSnapshot.add(diff);
 
-        emit Deposit(wantAddress, _wantAmt, diff);
-
         return diff;
     }
 
@@ -1035,7 +1005,7 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
         FairLaunch(fairLaunchAddress).deposit(address(this), poolId, Vault(vaultAddress).balanceOf(address(this)));
     }
 
-    function earn() external whenNotPaused onlyEOA {
+    function earn() external whenNotPaused {
         FairLaunch(fairLaunchAddress).harvest(poolId);
 
         uint256 earnedAmt = AlpacaToken(alpacaAddress).balanceOf(address(this));
@@ -1097,8 +1067,7 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
             );
 
             uint256 burnAmt = IERC20(BELTAddress).balanceOf(address(this));
-            IERC20(BELTAddress).safeTransfer(buyBackAddress, burnAmt);
-            emit BuybackWant(wantAddress, _earnedAmt, buyBackAmt, BELTAddress, burnAmt, buyBackAddress);
+            IERC20(BELTAddress).safeTransfer(buyBackAddress, burnAmt);        
         }
     }
 
@@ -1119,8 +1088,7 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
 
         uint256 burnAmt = IERC20(BELTAddress).balanceOf(address(this));
         IERC20(BELTAddress).safeTransfer(buyBackAddress, burnAmt);
-        emit Buyback(alpacaAddress, _earnedAmt, buyBackAmt, BELTAddress, burnAmt, buyBackAddress);
-        
+
         return _earnedAmt.sub(buyBackAmt);
     }
 
@@ -1137,9 +1105,6 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
         uint wantBal;
 
         if(_wantAmt > wantLockedInHere()) {
-            balanceSnapshot = balanceSnapshot.sub(_wantAmt.sub(
-                wantLockedInHere()
-            ));
             _withdraw(_wantAmt.sub(
                 wantLockedInHere()
             ));
@@ -1157,7 +1122,7 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
 
         IERC20(wantAddress).safeTransfer(owner(), wantBal);
 
-        emit Withdraw(wantAddress, _wantAmt, wantBal);
+        balanceSnapshot = balanceSnapshot.sub(_wantAmt);
 
         return wantBal;
     }
@@ -1173,34 +1138,29 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
         return _amount.mul(Vault(vaultAddress).totalToken()).div(Vault(vaultAddress).totalSupply());
     }
 
-    function _pause() override internal {
-        super._pause();
-        
+    function pause() public {
+        require(msg.sender == govAddress, "Not authorised");
+
+        _pause();
+
         IERC20(alpacaAddress).safeApprove(uniRouterAddress, 0);
         IERC20(wantAddress).safeApprove(uniRouterAddress, 0);
         IERC20(wantAddress).safeApprove(vaultAddress, 0);
     }
 
-    function pause() external {
+    function unpause() external {
         require(msg.sender == govAddress, "Not authorised");
-        _pause();
-    }
+        _unpause();
 
-    function _unpause() override internal {
-        super._unpause();
-        
         IERC20(alpacaAddress).safeApprove(uniRouterAddress, uint256(-1));
         IERC20(wantAddress).safeApprove(uniRouterAddress, uint256(-1));
         IERC20(wantAddress).safeApprove(vaultAddress, uint256(-1));
     }
 
-    function unpause() external {
-        require(msg.sender == govAddress, "Not authorised");
-        _unpause();
-    }
-
     function wantLockedTotal() public view returns (uint256) {
-        return wantLockedInHere().add(balanceSnapshot);
+        return wantLockedInHere().add(
+            balanceSnapshot
+        );
     }
 
     function wantLockedInHere() public view returns (uint256) {
@@ -1243,7 +1203,7 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
         uint256 wbnbBal = IERC20(wbnbAddress).balanceOf(address(this));
         if (wbnbBal > 0) {
             IERC20(wbnbAddress).safeApprove(bnbHelper, wbnbBal);
-            IUnwrapper(bnbHelper).unwrapBNB(wbnbBal);
+            HelperLike(bnbHelper).unwrapBNB(wbnbBal);
         }
     }
 
@@ -1270,10 +1230,11 @@ contract StrategyAlpacaImpl is StrategyAlpacaStorage {
         bnbHelper = _helper;
     }
 
-    function updateStrategy() public {
+    function setPancakeRouterV2() public {
+        require(msg.sender == govAddress, "!gov");
+        uniRouterAddress = 0x10ED43C718714eb63d5aA57B78B54704E256024E;
     }
 
     fallback() external payable {}
-
     receive() external payable {}
 }

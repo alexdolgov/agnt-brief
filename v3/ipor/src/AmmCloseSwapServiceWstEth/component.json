@@ -1,0 +1,28 @@
+{
+  "component": "AmmCloseSwapServiceWstEth",
+  "main_contract": "AmmCloseSwapServiceWstEth",
+  "source_entry_count": 60,
+  "source_file_count": 60,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/AmmCloseSwapServiceWstEth\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xd3626cf9dc33bb6bdecc6cc1e2b6a6a69b561faf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

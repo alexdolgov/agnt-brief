@@ -1,0 +1,28 @@
+{
+  "component": "OrbiterNFT",
+  "main_contract": "OrbiterNFT",
+  "source_entry_count": 27,
+  "source_file_count": 27,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/OrbiterNFT\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1284",
+      "chain_id": 1284,
+      "address": "0x6cc6c17d25bd3646b3710d6188d0467f5d398642",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "unknown",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "397570"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "component": "SuperToken-6",
   "main_contract": "SuperToken",
-  "source_entry_count": 44,
-  "source_file_count": 44,
+  "source_entry_count": 6,
+  "source_file_count": 6,
   "source_path_remaps": [],
   "foundry": {
     "root": ".",
@@ -10,14 +10,24 @@
     "build_command": "forge build --root \"src/SuperToken-6\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x036ea0dca13615c2a8b48b7a3407cc255d50ff74",
+      "address": "0xf59bf2a89fd413b0adb3f556304b3dfbde245c73",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xff2c723f7d19e32db09670786eab0a50176ff255",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

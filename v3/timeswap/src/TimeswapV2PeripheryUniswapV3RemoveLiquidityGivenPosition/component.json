@@ -1,0 +1,38 @@
+{
+  "component": "TimeswapV2PeripheryUniswapV3RemoveLiquidityGivenPosition",
+  "main_contract": "TimeswapV2PeripheryUniswapV3RemoveLiquidityGivenPosition",
+  "source_entry_count": 74,
+  "source_file_count": 74,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TimeswapV2PeripheryUniswapV3RemoveLiquidityGivenPosition\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x49d45f7bc491caee1e718274741a841139d70f4e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404226"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x25f6a6b5f9cb6a501098a5d80ce9a31b80a5db37",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "404290"
+    }
+  ]
+}

@@ -1,21 +1,27 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.28;
 
-import "../interface/IBet.sol";
-import "../interface/IBetExpress.sol";
-import "../interface/ICoreBase.sol";
+import "../interface/IBetting.sol";
+import "../interface/ILiveCore.sol";
 import "../libraries/FixedMath.sol";
-import "../utils/OwnableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
-import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
+import "@openzeppelin/contracts/utils/cryptography/MessageHashUtils.sol";
+import "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol";
+import "@openzeppelin/contracts/utils/cryptography/SignatureChecker.sol";
 import "@uniswap/lib/contracts/libraries/TransferHelper.sol";
 
 interface Core {
-    function bets(uint256) external view returns (ICoreBase.Bet memory);
+    struct Bet {
+        uint256 conditionId;
+        uint128 amount;
+    }
+
+    function bets(uint256) external view returns (Bet memory);
 }
 
 interface ICashOut {
@@ -44,8 +50,10 @@ interface ICashOut {
 
     error BetAlreadyPaid();
     error BetAlreadyResolved();
+    error BetNotOwned();
     error BetOwnerSignatureExpired();
     error BettingContractNotAllowed();
+    error ComboBetResolving();
     error InsufficientBalance();
     error InvalidBetOwnerSignature();
     error InvalidChainId();
@@ -68,6 +76,7 @@ interface ICashOut {
     function withdrawToken(address token, address to, uint256 value) external;
 
     function cashOutBets(
+        address betOwner,
         CashOutOrder calldata order,
         uint64[] calldata odds,
         bytes calldata betOwnerSignature,
@@ -93,7 +102,7 @@ contract CashOut is
     IERC20 payoutToken;
 
     function initialize(IERC20 payoutToken_) external initializer {
-        __Ownable_init();
+        __Ownable_init_unchained(msg.sender); // set ownership
         __Pausable_init();
         __EIP712_init("Cash Out", "1.0.0");
         payoutToken = payoutToken_;
@@ -168,11 +177,13 @@ contract CashOut is
      *      - `bettingContract`: The address of the betting engine contract where the bet is placed.
      *      - `minOdds`: The minimum odds allowed for cashing out the bet.
      *  - `expiresAt`: The timestamp after which the cash-out order is no longer valid.
+     * @param betOwner The owner of the bet to be cashed out.
      * @param odds An array of odds at the time of cash-out, corresponding to each item in the `order.items` array.
      * @param betOwnerSignature The signature of the bet owner authorizing the cash-out.
      * @param oracleSignature The signature of an authorized oracle.
      */
     function cashOutBets(
+        address betOwner,
         CashOutOrder calldata order,
         uint64[] calldata odds,
         bytes calldata betOwnerSignature,
@@ -186,13 +197,21 @@ contract CashOut is
         if (odds.length == 0 || odds.length != numOfItems)
             revert InvalidOddsCount();
 
-        address oracle = keccak256(abi.encode(order, odds, betOwnerSignature))
-            .toEthSignedMessageHash()
+        address oracle = MessageHashUtils
+            .toEthSignedMessageHash(
+                keccak256(abi.encode(order, odds, betOwnerSignature))
+            )
             .recover(oracleSignature);
         if (!isOracle[oracle]) revert InvalidOracleSignature();
 
         bytes32 digest = _hashTypedDataV4(_hashCashOutOrder(order));
-        address betOwner = digest.recover(betOwnerSignature);
+        if (
+            !SignatureChecker.isValidSignatureNow(
+                betOwner,
+                digest,
+                betOwnerSignature
+            )
+        ) revert InvalidBetOwnerSignature();
 
         uint256 payout;
         for (uint256 i; i < numOfItems; ++i) {
@@ -225,29 +244,21 @@ contract CashOut is
         address betToken = betTokens[item.bettingContract];
         if (betToken == address(0)) revert BettingContractNotAllowed();
         if (betOwner != IERC721(betToken).ownerOf(item.betId))
-            revert InvalidBetOwnerSignature();
+            revert BetNotOwned();
 
-        try IBet(item.bettingContract).viewPayout(item.betId) {
+        try IBetting(item.bettingContract).viewPayout(item.betId) {
             revert BetAlreadyResolved();
         } catch (bytes memory error) {
-            if (bytes4(error) == IBet.AlreadyPaid.selector) {
+            if (bytes4(error) == ILiveCore.AlreadyPaid.selector) {
                 revert BetAlreadyPaid();
+            }
+            if (bytes4(error) == ILiveCore.ComboBetResolvedPartially.selector) {
+                revert ComboBetResolving();
             }
         }
 
-        uint128 betAmount;
-        if (item.bettingContract == betToken) {
-            IBetExpress.Bet memory bet = IBetExpress(item.bettingContract)
-                .getBet(item.betId);
-            betAmount = bet.amount;
-        } else {
-            ICoreBase.Bet memory bet = Core(item.bettingContract).bets(
-                item.betId
-            );
-            betAmount = bet.amount;
-        }
-
-        payout = betAmount.mul(odds);
+        uint256 amount = Core(item.bettingContract).bets(item.betId).amount;
+        payout = amount.mul(odds);
 
         IERC721(betToken).transferFrom(betOwner, address(this), item.betId);
 
@@ -265,7 +276,7 @@ contract CashOut is
     ) internal pure returns (bytes32) {
         uint256 numOfItems = order.items.length;
         bytes32[] memory itemsHashes = new bytes32[](numOfItems);
-        for (uint256 i = 0; i < numOfItems; ++i) {
+        for (uint256 i; i < numOfItems; ++i) {
             itemsHashes[i] = _hashCashOutItem(order.items[i]);
         }
 

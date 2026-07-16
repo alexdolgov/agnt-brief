@@ -10,7 +10,7 @@
     "build_command": "forge build --root \"src/ERC1967Proxy\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 174,
+  "deployment_count": 177,
   "audited": true,
   "audits_covering": [
     "https://wasabi-public.s3.us-east-1.amazonaws.com/audits/v1/Wasabi+Perps+-+Zellic+Audit+Report+2.pdf"
@@ -1099,6 +1099,16 @@
     {
       "chain": "base",
       "chain_id": 8453,
+      "address": "0xa456c77d358c9c89f4dfb294fa2a47470b7da37c",
+      "is_proxy": true,
+      "implementation_address": "0xec2e15d85d66f8174fa616042726ef6ebc3147d7",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400938"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
       "address": "0xabb56620ae17b1a06a11a790d34dc56fc8c3a9d8",
       "is_proxy": true,
       "implementation_address": "0x0b7142b5305ccba97c191ed64c88e76185dcf827",
@@ -1165,6 +1175,16 @@
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xbdae5df498a45c5f058e3a09afe9ba4da7b248aa",
+      "is_proxy": true,
+      "implementation_address": "0x6a39877084a13d26d2210f9ef86c082fc55988a5",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400939"
     },
     {
       "chain": "base",
@@ -1385,6 +1405,16 @@
       "liveness": "live",
       "logic_topography_run_id": null,
       "logic_topography_row_id": null
+    },
+    {
+      "chain": "chain-80094",
+      "chain_id": 80094,
+      "address": "0x0da575d3edd4e3ee1d904936f94ec043c06bb12b",
+      "is_proxy": true,
+      "implementation_address": "0x076c44085fed29bc7ba6dd5c197e710166f08afd",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400940"
     },
     {
       "chain": "chain-80094",

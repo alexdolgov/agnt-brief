@@ -1,0 +1,48 @@
+{
+  "component": "TransparentUpgradeableProxy-2",
+  "main_contract": "TransparentUpgradeableProxy",
+  "source_entry_count": 1,
+  "source_file_count": 1,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransparentUpgradeableProxy-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 3,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x4769222c2ba104623023de49188030f6f30a332f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395668"
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0x8903dc1f4736d2fcb90c1497aebbaba133daac76",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395672"
+    },
+    {
+      "chain": "chain-169",
+      "chain_id": 169,
+      "address": "0xe371cdaf86482f07e7b2ea17f4ccd5b202f59f15",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395678"
+    }
+  ]
+}

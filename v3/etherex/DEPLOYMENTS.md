@@ -1,9 +1,10 @@
 # etherex — deployments
 
-103 verified deployment(s) across 84 component(s).
+107 verified deployment(s) across 85 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| linea | `0x007e783be0f271510ef919357466c122fd539cce` | SafeProxy | impl | live | no |
 | linea | `0x00cc296010664ff909aa90795a919046d1423b67` | AccessHub-2 | impl | live | no |
 | linea | `0x020079c6cb277ec22306a45e7d4eaefd24d3200e` | RamsesTreasuryHelper | impl | live | no |
 | linea | `0x09aaa525f9c4e5c5e0ac05a6b994d77e21fbea2a` | AccessHub-3 | impl | live | no |
@@ -23,6 +24,7 @@
 | linea | `0x32db39c56c171b4c96e974ddede8e42498929c54` | Router | impl | live | no |
 | linea | `0x34413f3cddafef7db46f92296a7cea444b3140fd` | ProtocolActions | impl | live | no |
 | linea | `0x389df9430143880ddb13bdd5fd30daf2d57e7d55` | Oracle | impl | live | no |
+| linea | `0x3950d9b43c77cf5e165ee9aa5c59efdc5a542dc3` | TransparentUpgradeableProxy | impl | live | yes |
 | linea | `0x3add8307bcc1b6c757cf1d7664b2f37c9bba039b` | FeeLiquidator | impl | live | no |
 | linea | `0x3fd55d05fed2fb9c463b598bc52ab4b5f5d6d071` | AccessHub-7 | impl | live | no |
 | linea | `0x432a5219320d4ae3ebf33a84ae9944f655e8e2b8` | TickLens | impl | live | no |
@@ -90,6 +92,8 @@
 | linea | `0xd434fe96a2aa23b0fabb07c1f837ff85c006805e` | AccessHub | impl | live | no |
 | linea | `0xd766d9da469c4a7d325b66ffcf33139650c4a200` | GaugeFactory | impl | unknown | no |
 | linea | `0xd7cb73ffdea0da4d2b3551a30cf75f531a81ac2c` | AutomatedFeeNotifier | impl | live | no |
+| linea | `0xdc78e9400ba73dad459b6179b06e1e70853d384e` | TransparentUpgradeableProxy | impl | live | yes |
+| linea | `0xde4b22eb9f9c2c55e72e330c87663b28e9d388f7` | SafeProxy | proxy | live | no |
 | linea | `0xdf278799d1b15c6cecc5543c17f4821869088d5b` | MevModule-2 | impl | live | no |
 | linea | `0xe345ada88f71c1f8215530c862fc6277b5ddc6bc` | AccessHub-24 | impl | live | no |
 | linea | `0xe4eeb461ad1e4ef8b8ef71a33694ccd84af051c4` | REX33 | impl | live | yes |

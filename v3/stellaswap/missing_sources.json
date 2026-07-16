@@ -2,18 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "stellaswap",
-  "missing": [
-    {
-      "chain_id": 1284,
-      "chain": "chain-1284",
-      "address": "0x965a857955d868fd98482e9439b1af297623fb94",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 1284,
-      "chain": "chain-1284",
-      "address": "0xabe1655110112d0e45ef91e94f8d757e4ddba59c",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

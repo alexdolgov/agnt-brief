@@ -1,6 +1,6 @@
 # vaultcraft — deployments
 
-31 verified deployment(s) across 24 component(s).
+35 verified deployment(s) across 28 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -14,6 +14,7 @@
 | arbitrum | `0xd3a17928245064b6df5095a76e277fe441d538a4` | Vault-3 | impl | live | no |
 | arbitrum | `0xd6dfe8b986e89ce841331f833ba82dc12b8cd828` | GenericVaultAdapter | impl | live | no |
 | arbitrum | `0xe1543d4b3b25913d788ccf80288095ab298f20f8` | MultiStrategyVault-2 | impl | live | no |
+| ethereum | `0x0ab4bc35ef33089b9082ca7bb8657d7c4e819a1a` | Voting_Escrow | impl | live | no |
 | ethereum | `0x11eaa7a46afe1023f47040691071e174125366c8` | OracleVault-2 | impl | live | no |
 | ethereum | `0x434e7ea9bc77c93c3f4680862281603338c7ae02` | Vault | impl | live | no |
 | ethereum | `0x4995f3bb85e1381d02699e2164bc1c6c6fa243cd` | VaultRouter | impl | live | no |
@@ -24,6 +25,8 @@
 | ethereum | `0x7b42e0d1b7f2111b04c6547fca8ca2b0f271498c` | OracleVault-4 | impl | live | no |
 | ethereum | `0x9d7d271ce727252053748f3c3adab5e7c33dc3f3` | PORExchangeRateFeed | impl | live | no |
 | ethereum | `0xa48d49f63dfc185cdd409b65f042955f509d9658` | Vault | impl | live | no |
+| ethereum | `0xafa52e3860b4371ab9d8f08e801e9ea1027c0ca2` | OptionsToken | impl | live | no |
+| ethereum | `0xb85e0d4ad9078676ca86c6baa51228ab3e21f5da` | GnosisSafeProxy | proxy | live | no |
 | ethereum | `0xcf9273ba04b875f94e4a9d8914bbd6b3c1f08edb` | OracleVault-5 | impl | live | no |
 | ethereum | `0xd0cd466b34a24fcb2f87676278af2005ca8a78c4` | MiniMeToken | impl | live | no |
 | ethereum | `0xd13f3d74904101ee2b8690d5ff7499abf434c3ea` | OracleVault | impl | live | no |
@@ -35,3 +38,4 @@
 | optimism | `0x3828845f4d7212b6a0dc3d67482aff4544002919` | VaultRouter-2 | impl | live | no |
 | optimism | `0x4e93cc7b2d4be75b9c3cfbc6436dd4315c46c412` | Vault | impl | live | no |
 | optimism | `0xd41d34d6b50785fdc025cad971fe940b8aa1be45` | OptimismMintableERC20 | impl | live | no |
+| polygon | `0xc5b57e9a1e7914fda753a88f24e5703e617ee50c` | UpgradableProxy | proxy | live | no |

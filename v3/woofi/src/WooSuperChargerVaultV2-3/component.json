@@ -10,39 +10,69 @@
     "build_command": "forge build --root \"src/WooSuperChargerVaultV2-3\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 3,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x5cb9ba4a6f05c4125d61172e1b2c1dbe3afb3158",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x18aa88bb25b8f15fdbe329f789dd000bf679753e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401118"
+      "logic_topography_row_id": "401078"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x6fc2c9f904a98caeeef6aaba6de625b5698f3f08",
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x4baa5fd82a455f2bfeff4fbb91969288d7de7316",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401278"
+      "logic_topography_row_id": "401084"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x7f3f2a499c00c2d7018300f99a232896fd295bb1",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x1109e03516eb25eab2150d0b274b8d4f5f3cf549",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "401282"
+      "logic_topography_row_id": "401137"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x697c97a37bc00c2306f2b08ca14f3d55db6ffccd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401148"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x44df096d2600c6a6db77899db3de3aecff746cb8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401229"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb772122c4a37fe1754b46ab1799b909351e8cb43",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "401245"
     }
   ]
 }

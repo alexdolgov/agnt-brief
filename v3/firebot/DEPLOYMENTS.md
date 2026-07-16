@@ -1,6 +1,6 @@
 # firebot — deployments
 
-59 verified deployment(s) across 56 component(s).
+60 verified deployment(s) across 57 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -58,6 +58,7 @@
 | polygon | `0xe344dbaa709c52982ecd3bbdd9b690631d127b9a` | FireVaultFBX-3 | impl | live | no |
 | polygon | `0xe44f4eb297ab29e163968a72df27a2442c05f5f8` | FireVaultFBXV2-17 | impl | live | no |
 | polygon | `0xe7b7cf919e2798defc1f08133312cd151e5a5bed` | UniswapV2Pair | impl | live | no |
+| polygon | `0xea459c173753da4126e665530e6c82ccb7bf370a` | Pyromancy | impl | live | no |
 | polygon | `0xefb4ff51dd2643f2d700a5561bf36959f4994740` | Test | impl | live | no |
 | polygon | `0xf312bf23569151becd5ba27745e4e05e9d7eb39c` | firebotMarket-2 | impl | live | no |
 | polygon | `0xf378f8e9603c2ec54b21f0a876ef847df976082e` | WorldCupPool | impl | live | no |

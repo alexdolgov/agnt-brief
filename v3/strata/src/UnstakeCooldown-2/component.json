@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/UnstakeCooldown-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xff8d8a1a38ee927777eb78702005a70c4533ac7a",
+      "address": "0x2822b8d7db77102937b040ed17ac6785dfd98ce5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405714"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd2843c620d188796b031d805fd869b597f6f3451",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405750"
     }
   ]
 }

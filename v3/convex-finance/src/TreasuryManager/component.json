@@ -1,9 +1,35 @@
 {
   "component": "TreasuryManager",
   "main_contract": "TreasuryManager",
-  "source_entry_count": 8,
-  "source_file_count": 8,
-  "source_path_remaps": [],
+  "source_entry_count": 9,
+  "source_file_count": 9,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/TreasuryManager.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-53957a77bc7d-TreasuryManager.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IPrismaDepositor.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-e8c65a946fd0-IPrismaDepositor.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/ICurveExchange.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-8eff5c68d787-ICurveExchange.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IConvexStaking.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-8a2d0ca80426-IConvexStaking.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IConvexDeposits.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-53babf445492-IConvexDeposits.sol",
+      "reason": "unsafe_path"
+    }
+  ],
   "foundry": {
     "root": ".",
     "config": "foundry.toml",
@@ -17,12 +43,12 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xeb8121b44a290ee16981d87b92fc16b2366de6b3",
+      "address": "0xbb48c21e9101a85ee6d00b4f1a7b946df1b09ea7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405311"
     }
   ]
 }

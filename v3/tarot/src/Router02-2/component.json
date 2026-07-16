@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/Router02-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x8a3b1b9f4e3fabb80623c215aa88f97bcaf53d8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "400243"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
       "address": "0x1cafcb9f3b5a152b1553bc2c688ba6a18054b653",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "405639"
     }
   ]
 }

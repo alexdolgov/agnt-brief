@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 /**
  * @title ICooldownEnforcer
@@ -7,6 +7,20 @@ pragma solidity 0.8.27;
  *            period, allows to update the cooldown period and provides a modifier to enforce the cooldown.
  */
 interface ICooldownEnforcer {
+    /**
+     * ERRORS
+     */
+
+    /**
+     * @notice Error thrown when the cooldown period is too short
+     */
+    error CooldownEnforcerCooldownTooShort();
+
+    /**
+     * @notice Error thrown when the cooldown period is too long
+     */
+    error CooldownEnforcerCooldownTooLong();
+
     /**
      * VIEW FUNCTIONS
      */

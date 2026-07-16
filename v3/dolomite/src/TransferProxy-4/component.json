@@ -1,0 +1,134 @@
+{
+  "component": "TransferProxy-4",
+  "main_contract": "TransferProxy",
+  "source_entry_count": 24,
+  "source_file_count": 24,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/external/proxies/TransferProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-6c71b752fcef-TransferProxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/lib/Types.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-7cb51eb0f07c-Types.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/lib/Token.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-82afc70dc106-Token.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/lib/Time.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-f65542e4c641-Time.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/lib/Storage.sol",
+      "exported_path": "__audit_export_path_conflicts__/0005-c70cb5737fc2-Storage.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/lib/Require.sol",
+      "exported_path": "__audit_export_path_conflicts__/0006-9a1d09893eb0-Require.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/lib/Monetary.sol",
+      "exported_path": "__audit_export_path_conflicts__/0007-044b72f2c7a4-Monetary.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/lib/Math.sol",
+      "exported_path": "__audit_export_path_conflicts__/0008-70462fcd725c-Math.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/lib/Interest.sol",
+      "exported_path": "__audit_export_path_conflicts__/0009-9cff36bba5bd-Interest.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/lib/EnumerableSet.sol",
+      "exported_path": "__audit_export_path_conflicts__/0010-5d6c38bd7363-EnumerableSet.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/lib/Decimal.sol",
+      "exported_path": "__audit_export_path_conflicts__/0011-ba1c3e8d401f-Decimal.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/lib/Cache.sol",
+      "exported_path": "__audit_export_path_conflicts__/0012-de1ec811d1e4-Cache.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/lib/Bits.sol",
+      "exported_path": "__audit_export_path_conflicts__/0013-1f9d59bba95a-Bits.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/lib/Actions.sol",
+      "exported_path": "__audit_export_path_conflicts__/0014-1e1674d7a240-Actions.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/lib/Account.sol",
+      "exported_path": "__audit_export_path_conflicts__/0015-9e2fe6847e5e-Account.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/interfaces/IPriceOracle.sol",
+      "exported_path": "__audit_export_path_conflicts__/0016-8002b189885f-IPriceOracle.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/interfaces/IInterestSetter.sol",
+      "exported_path": "__audit_export_path_conflicts__/0017-921f560d73b9-IInterestSetter.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/interfaces/IERC20Detailed.sol",
+      "exported_path": "__audit_export_path_conflicts__/0018-d3e9ce793fbe-IERC20Detailed.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/protocol/interfaces/IDolomiteMargin.sol",
+      "exported_path": "__audit_export_path_conflicts__/0019-ea3d4141f9ab-IDolomiteMargin.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/external/interfaces/ITransferProxy.sol",
+      "exported_path": "__audit_export_path_conflicts__/0020-bb33205a1629-ITransferProxy.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/external/helpers/OnlyDolomiteMargin.sol",
+      "exported_path": "__audit_export_path_conflicts__/0021-b01356b4d9f6-OnlyDolomiteMargin.sol",
+      "reason": "unsafe_path"
+    }
+  ],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/TransferProxy-4\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x86cfc6ba3bbbc603b8dec5b032afa10a3592470d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "393748"
+    }
+  ]
+}

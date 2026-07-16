@@ -1,6 +1,6 @@
 # suzaku — deployments
 
-67 verified deployment(s) across 26 component(s).
+68 verified deployment(s) across 27 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -23,6 +23,7 @@
 | avalanche | `0x3fc5101a5d022e1af9d71cc47417d66c1b56f00b` | AvalancheL1Middleware | impl | live | no |
 | avalanche | `0x42de24a11f50e66b755056c3daa832c5cbfc1aa0` | VestingWallet | impl | live | no |
 | avalanche | `0x430d6094fe512f8b5a7a4445e49899744786faed` | MiddlewareVaultManager | impl | live | no |
+| avalanche | `0x451532f1c9eb7e4dc2d493db52b682c0acf6f5ef` | SuzakuToken | impl | live | no |
 | avalanche | `0x4817d2239ce85313a2a9393ef844d19ef9636710` | MiddlewareVaultManager | impl | live | no |
 | avalanche | `0x48a990a31ec2b994a54f248bfd560954991fa574` | OperatorL1OptInService | impl | live | no |
 | avalanche | `0x51111e1f63d3341573882c0ed844e0876efd634d` | DefaultCollateral | impl | live | no |

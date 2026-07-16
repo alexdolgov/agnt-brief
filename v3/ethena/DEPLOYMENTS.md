@@ -1,11 +1,12 @@
 # ethena — deployments
 
-17 verified deployment(s) across 17 component(s).
+18 verified deployment(s) across 18 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | ethereum | `0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2` | StakedUSDeOFTAdapter | impl | unknown | no |
 | ethereum | `0x231fa76fd55284082ec5aba51272b9ff68331c3c` | VaultRouter | impl | unknown | no |
+| ethereum | `0x2b5ab59163a6e93b4486f6055d33ca4a115dd4d5` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0x2cc440b721d2cafd6d64908d6d8c4acc57f8afc3` | EthenaMinting | impl | live | yes |
 | ethereum | `0x435664008f38b0650fbc1c9fc971d0a3bc2f1e47` | UniswapV3Pool | impl | unknown | no |
 | ethereum | `0x4c9edd5852cd905f086c759e8383e09bff1e68b3` | USDe | impl | live | yes |

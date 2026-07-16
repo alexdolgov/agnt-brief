@@ -1,6 +1,6 @@
 # clober — deployments
 
-6 verified deployment(s) across 5 component(s).
+8 verified deployment(s) across 7 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -10,3 +10,5 @@
 | base | `0x8ca3a6f4a6260661fcb9a25584c796a1fa380112` | BookManager | impl | live | no |
 | base | `0xc8f98f60ce54e72ccbb18aa8628fa7a2885f098f` | Minter-2 | impl | live | no |
 | base | `0xca1f6e4ae690d06e3bf943b9019c5ca060c0b834` | ERC1967Proxy | proxy | live | yes |
+| base | `0xcd166f67f13c7d5c4b899fb1c980dceff278f029` | ERC1967Proxy-2 | proxy | live | no |
+| base | `0xd0175b064dc022fadf46bba7604dad5653cd7309` | BookViewer | impl | live | no |

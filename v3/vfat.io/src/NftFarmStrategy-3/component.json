@@ -17,7 +17,7 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x97f021f8d1cb43b35d65be276bbedcf6ef7dbc2d",
+      "address": "0x26d7745573d4be284ad6bcd65469145c0a1578d7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
@@ -27,7 +27,7 @@
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0xe09c9208b29ad28fcc6ac6bf6334c1f12a9bea3a",
+      "address": "0x7dae2ce337446978968a138c0aa254512ecb27f5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
@@ -37,7 +37,7 @@
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x125caffe923eaa451461ab98353c4a88154cb45e",
+      "address": "0xa452df37e4f845c15f49489486a9b4e8323bd7c4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
@@ -47,7 +47,7 @@
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0x0efadd4d1336926276ead3b74366f76e801542d5",
+      "address": "0x05a651a347fdaf918549da47c0f02d78be071427",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
@@ -57,17 +57,7 @@
     {
       "chain": "chain-252",
       "chain_id": 252,
-      "address": "0xfc4c50957f928ecbef15409cf9f8b3e1d0cd564b",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
-    },
-    {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0xfea81bb9425770ad6146ba0d52159ef0a2f4a0e4",
+      "address": "0x7671cba63cf2b2766ab12d42b93fbe166a692171",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
@@ -77,7 +67,7 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0xd62b33a7df4d0ca5edd373576e48f73366e36179",
+      "address": "0x9699be38e6d54e51a4b36645726fee9cc736eb45",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
@@ -87,7 +77,17 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x326e6746fb95f0c2de39a1175a20d8eda8a581a8",
+      "address": "0x514142806d1e338e5e62c66b6920c513c991b862",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe9eb1ae5db6c8f7d856d44d18fc35051391d9e44",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
@@ -97,7 +97,7 @@
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x2e075edf77ac8df12b88f22170bb064c2ffbed44",
+      "address": "0x0bf0f966a8c1676d2d76c1863cbd84170b949d53",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
@@ -107,7 +107,7 @@
     {
       "chain": "linea",
       "chain_id": 59144,
-      "address": "0xd3926a4ab52f4f65207292c1b8153d48b7bcef31",
+      "address": "0xd248aa0b8c6c20276f996a284a8791ff774f2fa0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

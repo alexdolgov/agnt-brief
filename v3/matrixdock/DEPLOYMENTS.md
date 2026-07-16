@@ -1,13 +1,15 @@
 # matrixdock — deployments
 
-10 verified deployment(s) across 8 component(s).
+12 verified deployment(s) across 10 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | bsc | `0x2a918b3a032174dd89c3d9e7f27ea0d7710bbf18` | CCWSTBTMessager | impl | unknown | no |
 | ethereum | `0x0978aa6ed342ff8327e97415653f5af790e3f004` | CustomerManager | impl | unknown | no |
+| ethereum | `0x0be91692750982b4ba92dabc3985c548098f68c5` | BeaconProxy | proxy | live | no |
 | ethereum | `0x0eb8f11ec17c160b0d51586b0e420faff07b6f47` | StbtTimelockController | impl | unknown | no |
 | ethereum | `0x102874ca109a5a7e94a0385f1380cebc905fb878` | MTokenMessagerV2 | impl | unknown | no |
+| ethereum | `0x123ffe0a3c62878dcbee2742227dc8990058d9e1` | BeaconProxy-2 | proxy | live | no |
 | ethereum | `0x20377b5e38e0e992bbdcf3502ec72ded6a5e28ab` | FallbackReserveFeed | impl | live | no |
 | ethereum | `0x24f5b8e0e4a0a9ccdcc4fa05a9885a28140fc948` | StbtTimelockController | impl | unknown | no |
 | ethereum | `0x288a8005c53632d920045b7c7c2e54a3f1bc4c83` | WSTBT | impl | unknown | no |

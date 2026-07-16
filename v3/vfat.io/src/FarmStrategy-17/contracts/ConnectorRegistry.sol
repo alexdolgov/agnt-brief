@@ -20,6 +20,10 @@ contract ConnectorRegistry is Admin {
 
     constructor(address admin_) Admin(admin_) { }
 
+    /// @notice Update connector addresses for a batch of targets.
+    /// @dev Controls which connector contracts are used for the specified
+    /// targets.
+    /// @custom:access Restricted to protocol admin.
     function setConnectors(
         address[] calldata targets,
         address[] calldata connectors
@@ -48,6 +52,8 @@ contract ConnectorRegistry is Admin {
         return false;
     }
 
+    /// @notice Append an address to the custom registries list.
+    /// @custom:access Restricted to protocol admin.
     function addCustomRegistry(ICustomConnectorRegistry registry)
         external
         onlyAdmin
@@ -56,10 +62,15 @@ contract ConnectorRegistry is Admin {
         emit CustomRegistryAdded(address(registry));
     }
 
-    function removeCustomRegistry(uint256 index) external onlyAdmin {
-        address registry = address(customRegistries[index]);
-        delete customRegistries[index];
-        emit CustomRegistryRemoved(registry);
+    /// @notice Replace an address in the custom registries list.
+    /// @custom:access Restricted to protocol admin.
+    function replaceCustomRegistry(
+        uint256 index,
+        ICustomConnectorRegistry newRegistry
+    ) external onlyAdmin {
+        address oldRegistry = address(customRegistries[index]);
+        emit CustomRegistryRemoved(oldRegistry);
+        customRegistries[index] = newRegistry;
     }
 
     function connectorOf(address target) external view returns (address) {
@@ -69,14 +80,16 @@ contract ConnectorRegistry is Admin {
         }
 
         for (uint256 i; i != customRegistries.length;) {
-            try customRegistries[i].connectorOf(target) returns (
-                address _connector
-            ) {
-                if (_connector != address(0)) {
-                    return _connector;
+            if (address(customRegistries[i]) != address(0)) {
+                try customRegistries[i].connectorOf(target) returns (
+                    address _connector
+                ) {
+                    if (_connector != address(0)) {
+                        return _connector;
+                    }
+                } catch {
+                    // Ignore
                 }
-            } catch {
-                // Ignore
             }
 
             unchecked {
@@ -93,18 +106,20 @@ contract ConnectorRegistry is Admin {
         }
 
         for (uint256 i; i != customRegistries.length;) {
-            try customRegistries[i].connectorOf(target) returns (
-                address _connector
-            ) {
-                if (_connector != address(0)) {
-                    return true;
+            if (address(customRegistries[i]) != address(0)) {
+                try customRegistries[i].connectorOf(target) returns (
+                    address _connector
+                ) {
+                    if (_connector != address(0)) {
+                        return true;
+                    }
+                } catch {
+                    // Ignore
                 }
-            } catch {
-                // Ignore
-            }
 
-            unchecked {
-                ++i;
+                unchecked {
+                    ++i;
+                }
             }
         }
 

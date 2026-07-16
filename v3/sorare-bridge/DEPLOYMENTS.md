@@ -1,6 +1,6 @@
 # sorare-bridge — deployments
 
-10 verified deployment(s) across 10 component(s).
+11 verified deployment(s) across 11 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -13,4 +13,5 @@
 | ethereum | `0x879cd57975d596004863d30c59d579ef78bbbe32` | Committee-3 | impl | live | no |
 | ethereum | `0xae0ee0a63a2ce6baeeffe56e7714fb4efe48d419` | Proxy-4 | proxy | live | no |
 | ethereum | `0xbb3400f107804dfb482565ff1ec8d8ae66747605` | Proxy-5 | proxy | live | no |
-| ethereum | `0xf6080d9fbeebcd44d89affbfd42f098cbff92816` | Proxy-6 | proxy | live | no |
+| ethereum | `0xf5c9f957705bea56a7e806943f98f7777b995826` | Proxy-6 | proxy | live | no |
+| ethereum | `0xf6080d9fbeebcd44d89affbfd42f098cbff92816` | Proxy-7 | proxy | live | no |

@@ -15,7 +15,9 @@ contract StrategyModule is AccessControlModule {
         connectorRegistry = connectorRegistry_;
     }
 
-    function getSickle(address owner) public view returns (Sickle) {
+    function getSickle(
+        address owner
+    ) public view returns (Sickle) {
         Sickle sickle = Sickle(payable(factory.sickles(owner)));
         if (address(sickle) == address(0)) {
             revert SickleNotDeployed();

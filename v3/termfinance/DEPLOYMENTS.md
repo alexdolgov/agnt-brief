@@ -1,6 +1,71 @@
 # termfinance — deployments
 
-0 verified deployment(s) across 0 component(s).
+65 verified deployment(s) across 59 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| ethereum | `0x01c5afdc4d40d4632c630e8371c49088084ea9c3` | TermRepoServicer | impl | live | no |
+| ethereum | `0x04fcd15c3582f0fa81a46533795196a5257f79c8` | Contract | proxy | live | no |
+| ethereum | `0x062663509b99d508119cf9ac524332509bf7fe86` | TermEventEmitter | impl | live | no |
+| ethereum | `0x06528722ff473d89b337405786e82c5f92717594` | TermRepoServicer-2 | impl | live | no |
+| ethereum | `0x11b11b89fa31d3a3125320f128b16e90ebc3838e` | TermAuctionOfferLocker | impl | live | no |
+| ethereum | `0x12e85c509f6f71e058c6d5eafb53af3c4bb791e6` | TermAuctionOfferLocker-2 | impl | live | no |
+| ethereum | `0x13ca4ddb295d621761057d682a1c7b5f5d7bba4c` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0x155c07b833d660617a1bd42deb95d9862c10c16b` | TermInitializer | impl | live | no |
+| ethereum | `0x1c41cc8495cf570b825fcf17ec4c9159e728cc4a` | TermEventEmitter-2 | impl | live | no |
+| ethereum | `0x1cd6480a836eabc66288ec4e8735d9442511f957` | TermAuction | impl | live | no |
+| ethereum | `0x1d2508c50bfdaa0c046c385544d90fc56c46c4c5` | TermPriceConsumerV3 | impl | live | no |
+| ethereum | `0x2161f952fce31b86caa54f1517164ef350945aca` | TermAuctionBidLocker | impl | live | no |
+| ethereum | `0x21fc7b250ccaeecdb2abb38e04617d1f24d98772` | Contract-2 | proxy | live | no |
+| ethereum | `0x245de1fd2782dd55c1e1c14533171a54a0c96713` | TermRepoRolloverManager | impl | live | no |
+| ethereum | `0x268cb106ddd13bce313505bd976b644c298d3c34` | TermAuction-2 | impl | live | no |
+| ethereum | `0x2879c9d15406e7ebd46770f4b0781fe665f9da1b` | TermController | impl | live | no |
+| ethereum | `0x3285ff3f510d61c69c6a217278f574395c11a04c` | TermAuctionOfferLocker-3 | impl | live | no |
+| ethereum | `0x3552258c0e4da5c5148818be15a776e539a41ead` | TermAuction-3 | impl | live | no |
+| ethereum | `0x47d437bb536ba279762ebdeca2f10de654816f38` | TermPriceConsumerV3-2 | impl | live | no |
+| ethereum | `0x4a3945f6e78219df3b389f96dd157ac321e8ec41` | TermRepoRolloverManager-2 | impl | live | no |
+| ethereum | `0x4c39f8b130ff1cfc7ecdc8e9917b11bf37f5d2df` | TermController-2 | impl | live | no |
+| ethereum | `0x4c6aeb4e8dbbaf53c13af495c847d4ec68994bd4` | Contract-3 | proxy | live | no |
+| ethereum | `0x4ff7335888f1e1d28a41dde0a99d9597f2a0aa41` | TermRepoCollateralManager-2 | impl | live | no |
+| ethereum | `0x529fdc0971d7a3caedef43fb3144a0f5c9f0d607` | TermEventEmitter-3 | impl | live | no |
+| ethereum | `0x542f335cd30148c82db2d3ac32ecca154257ea00` | TermRepoToken | impl | live | no |
+| ethereum | `0x5a8562e19551925d301155571808dd2535d82805` | TermPriceConsumerV3-3 | impl | live | no |
+| ethereum | `0x5a9fc6c2f9d8976dc78ed208c79116676cd5fd3f` | TermInitializer-2 | impl | live | no |
+| ethereum | `0x5ad7d46d3c15d3a4049de67f2386acf55a466450` | TermRepoLocker | impl | live | no |
+| ethereum | `0x5f7ff77249a309d6a670cbec6ce2a8587ff6306c` | TermAuctionBidLocker-2 | impl | live | no |
+| ethereum | `0x608e17b09dc92ebcb03297703791f302f989fd66` | TermAuctionOfferLocker-4 | impl | live | no |
+| ethereum | `0x61258decab510b0ac39b0873e5464e68d5041ab1` | TermRepoServicer-3 | impl | live | no |
+| ethereum | `0x670fbaea148f5082ea4dac541b1fe67be3493d1e` | TermRepoRolloverManager-3 | impl | live | no |
+| ethereum | `0x67bb61554180d23790ae0d7b7df0d582de3d0f11` | TermAuctionBidLocker-3 | impl | live | no |
+| ethereum | `0x68d05b886642aa5401fa152fbe90a1504a0479d6` | TermRepoToken-2 | impl | live | no |
+| ethereum | `0x6a2e09f23ef3a1f5eced9d4daed3b27d181f93e1` | TermRepoCollateralManager-3 | impl | live | no |
+| ethereum | `0x6dc0880fbbb57afb63f2d3652e6f6953a1830cb0` | TermRepoLocker-2 | impl | live | no |
+| ethereum | `0x73b47fcc02aa3774c67865c1f3d65640f2c29a95` | Contract-2 | impl | live | no |
+| ethereum | `0x83e3a19fb44e0c99a39e5484a8fcc1c79ab0788a` | TermRepoRolloverManager-4 | impl | live | no |
+| ethereum | `0x92e5028315ec168da29dc1bfc4d0e54defd0648e` | TermRepoLocker-3 | impl | live | no |
+| ethereum | `0x9cb21e2b82a2235fe9faa542e409850ac8b51bb6` | TermInitializer-3 | impl | live | no |
+| ethereum | `0xa0d81bdb1bbf620892c74d9c1940116437a0f11b` | TermRepoToken-3 | impl | live | no |
+| ethereum | `0xa241f9ee0edac5c66dd9d95b4df20ea386f577bb` | TermRepoLocker-4 | impl | live | no |
+| ethereum | `0xa96b1611cc45f8411b26631472259413c797b474` | TermAuctionBidLocker-4 | impl | live | no |
+| ethereum | `0xaab02fd974e924be8353cae591c70da308c0ac32` | TermRepoServicer-4 | impl | live | no |
+| ethereum | `0xad7f2a936be83d78d1674da19ed8a428e23b7508` | TermAuctionOfferLocker-5 | impl | live | no |
+| ethereum | `0xb1d418c44ada2dcd5a39605c6629c44ec86a069b` | TermRepoServicer-5 | impl | live | no |
+| ethereum | `0xb481db29312cedc1956090d24a5b3b5fcfaa8b9f` | TermRepoToken-4 | impl | live | no |
+| ethereum | `0xb99f5a082465b4cd8037e28ac7e0bf81b609df53` | TermRepoCollateralManager-4 | impl | live | no |
+| ethereum | `0xc3e49355fcf95af200250843d3872203589e6204` | Contract | impl | live | no |
+| ethereum | `0xc6d96f1752dbc73276c3e6b07c04d04c61fc2cd6` | TermInitializer-4 | impl | live | no |
+| ethereum | `0xc887080fbfab316269c62f120ec95adc88ea6c0d` | TermAuction-4 | impl | live | no |
+| ethereum | `0xcee55c9286b9fbd3ec8c50cc93cfebe7090e02af` | Contract-4 | proxy | live | no |
+| ethereum | `0xd32c3f92fca993c3c27789ae14674fd4fa02f421` | TermAuctionBidLocker-5 | impl | live | no |
+| ethereum | `0xd5b6b9a938e8d78597dca20b1843bba1823b79ee` | Contract-4 | impl | live | no |
+| ethereum | `0xd7fc64cc9e5345fa5f26b31c92216781b4fae65a` | TermRepoCollateralManager-5 | impl | live | no |
+| ethereum | `0xd902ebb8aeb832643af38f43d466a6155cd8bd5a` | ERC1967Proxy | proxy | live | no |
+| ethereum | `0xdbb134f2e318feda60bae521303b53c132aaf0c7` | TermRepoToken-5 | impl | live | no |
+| ethereum | `0xe0fc587e1f56b5968a7d5dc3667ba1f385fddb38` | TermRepoCollateralManager | impl | live | no |
+| ethereum | `0xe94dfe01cbd8f86299b6bd260a52908345b8cb9a` | TermAuction-5 | impl | live | no |
+| ethereum | `0xea93ea14b7ad812c1769a353d226e6b0899b347d` | TermRepoRolloverManager-5 | impl | live | no |
+| ethereum | `0xec2125566ee98761d0605e42b0c3b2adeb051007` | TermAuctionBidLocker-6 | impl | live | no |
+| ethereum | `0xf021b31282a60528b2f47d07ce353da870be78b3` | ERC1967Proxy-2 | proxy | live | no |
+| ethereum | `0xf7ebe094b0c94b10e3776451b238cc7baa3b5fbc` | TermRepoCollateralManager | impl | live | no |
+| ethereum | `0xfcf4ef17d1bc11df6c6200a809c54cb06f16e86e` | TermRepoLocker-5 | impl | live | no |
+| ethereum | `0xfed347e7ecb227eaaffae7b428c0447981283156` | Contract-3 | impl | live | no |

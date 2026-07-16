@@ -1,0 +1,28 @@
+{
+  "component": "ERC1967Proxy-2",
+  "main_contract": "ERC1967Proxy",
+  "source_entry_count": 11,
+  "source_file_count": 11,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/ERC1967Proxy-2\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x5fab43b6e906f05d5d5e9d4b0582dd7b4eedc7e7",
+      "is_proxy": true,
+      "implementation_address": "0x6045d0fcfe7a54c85c095a1b2877964baf4aa9bd",
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "394191"
+    }
+  ]
+}

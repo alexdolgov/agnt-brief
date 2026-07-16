@@ -1,9 +1,30 @@
 {
   "component": "RewardFactory",
   "main_contract": "RewardFactory",
-  "source_entry_count": 1,
-  "source_file_count": 1,
-  "source_path_remaps": [],
+  "source_entry_count": 4,
+  "source_file_count": 4,
+  "source_path_remaps": [
+    {
+      "original_path": "/contracts/RewardFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0001-1ee7ba14e478-RewardFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IProxyFactory.sol",
+      "exported_path": "__audit_export_path_conflicts__/0002-b1168f73b75b-IProxyFactory.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IConvexRewardPool.sol",
+      "exported_path": "__audit_export_path_conflicts__/0003-cbc2e305aba2-IConvexRewardPool.sol",
+      "reason": "unsafe_path"
+    },
+    {
+      "original_path": "/contracts/interfaces/IBooster.sol",
+      "exported_path": "__audit_export_path_conflicts__/0004-4163017d9fa7-IBooster.sol",
+      "reason": "unsafe_path"
+    }
+  ],
   "foundry": {
     "root": ".",
     "config": "foundry.toml",
@@ -11,20 +32,18 @@
     "compiler_selection": "source_pragmas"
   },
   "deployment_count": 1,
-  "audited": true,
-  "audits_covering": [
-    "https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf"
-  ],
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x8014595f2ab54cd7c604b00e9fb932176fdc86ae",
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xcf50b810e57ac33b91dcf525c6ddd9881b139332",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "393352"
+      "logic_topography_row_id": "393328"
     }
   ]
 }

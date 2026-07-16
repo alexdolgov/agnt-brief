@@ -17,7 +17,7 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0xde181c7412162eef86174d9f0dcb299b4c2284f4",
+      "address": "0xc0c3e0a8e4979ece2aa98370b091fd9586d412b7",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",

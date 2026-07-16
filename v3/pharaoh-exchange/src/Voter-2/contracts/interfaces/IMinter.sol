@@ -20,14 +20,15 @@ interface IMinter {
     /// @return period the new period
     function updatePeriod() external returns (uint256 period);
 
+    /// @notice update the epoch (period) and rebase -- callable once a week at >= Thursday 0 UTC
+    function updatePeriodAndRebase() external;
+
     /// @notice intialize epoch0 + emissions (immediately active for this week)
     function initEpoch0() external;
 
-    /// @notice adjusts emissions by a basis points change
-    /// @param _basisPointsChange The basis points to change emissions by
-    /// @dev For epochs < 3: Bounded to ±10000 (±100%)
-    /// @dev For epochs >= 3: Bounded to ±2500 (±25%)
-    function adjustEmissions(int256 _basisPointsChange) external;
+    /// @notice updates the emissions multiplier
+    /// @param _emissionsMultiplier the new emissions multiplier
+    function updateEmissionsMultiplier(uint256 _emissionsMultiplier) external;
 
     /// @notice calculates the emissions to be sent to the voter
     /// @return _weeklyEmissions the amount of emissions for the week
@@ -39,7 +40,7 @@ interface IMinter {
         address _voter,
         uint256 _initialWeeklyEmissions,
         uint256 _initialMultiplier,
-        address _xPhar
+        address _xRam
     ) external;
 
     /// @notice returns (block.timestamp / 1 week) for gauge use

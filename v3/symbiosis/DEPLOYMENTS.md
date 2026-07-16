@@ -1,6 +1,6 @@
 # symbiosis — deployments
 
-40 verified deployment(s) across 24 component(s).
+43 verified deployment(s) across 27 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -17,6 +17,7 @@
 | base | `0x8097f0b9f06c27af9579f75762f971d745bb222f` | AdminUpgradeabilityProxy | proxy | live | yes |
 | ethereum | `0x22278fe9a52a8ccb3a914f3f61bb6c70fe5fd9a1` | BranchedUnlocker | impl | live | yes |
 | ethereum | `0x2260fac5e5542a773aa44fbcfedf7c193bc2c599` | WBTC | impl | live | no |
+| ethereum | `0x4d224452801aced8b2f0aebe155379bb5d594381` | Astgik | impl | live | no |
 | ethereum | `0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9` | FflonkVerifier | impl | unknown | no |
 | ethereum | `0x5523985926aa12ba58dc5ad00ddca99678d7227e` | TransparentUpgradeableProxy-3 | proxy | live | yes |
 | ethereum | `0x67480c30ff8cc128cf0250e25616857302df647f` | USDCOFTAdapter | impl | live | no |
@@ -25,10 +26,12 @@
 | ethereum | `0x84deb7fc54a1f734aef6ddc0c0f74182bdf941a8` | BranchedUnlocker | impl | live | yes |
 | ethereum | `0x931c6728470394507049f5642bab16da029f48f6` | SymbiosisTokenVesting | impl | live | no |
 | ethereum | `0x9a99eb7e9794ef5a7c00c87d64ee067cfc10c9f0` | BtcRefundUnlocker | impl | live | no |
+| ethereum | `0x9c7beba8f6ef6643abd725e45a4e8387ef260649` | GravityTokenG | impl | live | no |
 | ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | AdminUpgradeabilityProxy-2 | proxy | live | no |
 | ethereum | `0xb8f275fbf7a959f4bce59999a2ef122a099e81a8` | TransparentUpgradeableProxy-4 | proxy | live | yes |
 | ethereum | `0xbbfb7cb70f84fb6fe1cb13e42a0b71efde769428` | AdminUpgradeabilityProxy | proxy | unknown | yes |
 | ethereum | `0xbc7f244e2b38657bd014a5f6f4e4ba1125c14b84` | OFTMock | impl | live | no |
+| ethereum | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | WETH9 | impl | live | no |
 | ethereum | `0xcd108089057dd0e9f841eb9e00fcf5105534341e` | BranchedUnlocker | impl | live | yes |
 | ethereum | `0xd38bb40815d2b0c2d2c866e0c72c5728ffc76dd9` | Symbiosis | impl | live | yes |
 | ethereum | `0xd7c3df25683871d18bc838e4f619126442dd38b3` | AdminUpgradeabilityProxy | proxy | live | yes |

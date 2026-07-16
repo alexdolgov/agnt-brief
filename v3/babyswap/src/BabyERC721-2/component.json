@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/BabyERC721-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x9f0225d5c92b9cee4024f6406c4f13e546fd91a8",
+      "address": "0xd92a8dee914ae6e1a86de70d4ace2a57b36909d5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live",
-      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "391820"
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf3a360d731c0fce897002b7fa28e1c642aeef11e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
     }
   ]
 }

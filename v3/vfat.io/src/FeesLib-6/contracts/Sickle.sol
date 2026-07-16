@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.17;
+pragma solidity ^0.8.17;
 
 import "./base/SickleStorage.sol";
 import "./base/Multicall.sol";
@@ -14,21 +14,56 @@ contract Sickle is SickleStorage, Multicall {
     receive() external payable { }
 
     /// @param sickleRegistry_ Address of the SickleRegistry contract
-    constructor(address sickleRegistry_)
+    constructor(SickleRegistry sickleRegistry_)
         initializer
         Multicall(sickleRegistry_)
     {
-        _Sickle_initialize(address(0));
+        _Sickle_initialize(address(0), address(0));
     }
 
     /// @param sickleOwner_ Address of the Sickle owner
-    function initialize(address sickleOwner_) external initializer {
-        _Sickle_initialize(sickleOwner_);
+    function initialize(
+        address sickleOwner_,
+        address approved_
+    ) external initializer {
+        _Sickle_initialize(sickleOwner_, approved_);
     }
 
     /// INTERNALS ///
 
-    function _Sickle_initialize(address sickleOwner_) internal {
-        SickleStorage._SickleStorage_initialize(sickleOwner_);
+    function _Sickle_initialize(
+        address sickleOwner_,
+        address approved_
+    ) internal {
+        SickleStorage._SickleStorage_initialize(sickleOwner_, approved_);
+    }
+
+    function onERC721Received(
+        address, // operator
+        address, // from
+        uint256, // tokenId
+        bytes calldata // data
+    ) external pure returns (bytes4) {
+        return this.onERC721Received.selector;
+    }
+
+    function onERC1155Received(
+        address, // operator
+        address, // from
+        uint256, // id
+        uint256, // value
+        bytes calldata // data
+    ) external pure returns (bytes4) {
+        return this.onERC1155Received.selector;
+    }
+
+    function onERC1155BatchReceived(
+        address, // operator
+        address, // from
+        uint256[] calldata, // ids
+        uint256[] calldata, // values
+        bytes calldata // data
+    ) external pure returns (bytes4) {
+        return this.onERC1155BatchReceived.selector;
     }
 }

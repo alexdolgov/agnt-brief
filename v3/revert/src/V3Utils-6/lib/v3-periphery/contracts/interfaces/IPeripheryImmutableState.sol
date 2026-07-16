@@ -9,7 +9,4 @@ interface IPeripheryImmutableState {
 
     /// @return Returns the address of WETH9
     function WETH9() external view returns (address);
-
-    /// @return Returns the address of the deployer
-    function deployer() external view returns (address);
 }

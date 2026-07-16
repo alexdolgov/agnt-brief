@@ -1,6 +1,6 @@
 # flaunch — deployments
 
-96 verified deployment(s) across 43 component(s).
+97 verified deployment(s) across 44 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -31,6 +31,7 @@
 | base | `0x3d8931a6290ec9e071c2410e2d6319c981d00a95` | Memecoin | impl | live | no |
 | base | `0x46bc5b1b003e9659d5638715e3302e15c372d59d` | Memecoin | impl | live | no |
 | base | `0x48af8b28ddc5e5a86c4906212fc35fa808ca8763` | TreasuryManagerFactory | impl | live | yes |
+| base | `0x498581ff718922c3f8e6a244956af099b2652b2b` | PoolManager | impl | live | no |
 | base | `0x49886a44ed16245216817e82f33bc4b63ce51039` | Memecoin | impl | live | no |
 | base | `0x4dc442403e8c758425b93c59dc737da522f32640` | FairLaunch | impl | live | no |
 | base | `0x4dfc76a31a2a0110739611683a8b6c5201480fa1` | ClosedPermissions | impl | live | no |

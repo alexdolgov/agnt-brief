@@ -28,15 +28,13 @@ contract V3Utils is Transformer, Swapper, IERC721Receiver {
 
     /// @notice Constructor
     /// @param _nonfungiblePositionManager Uniswap v3 position manager
-    /// @param _universalRouter Uniswap Universal Router
-    /// @param _zeroxAllowanceHolder 0x Protocol AllowanceHolder contract
-    /// @param _permit2 Permit2 contract
+    /// @param _zeroxRouter 0x Exchange Proxy
     constructor(
         INonfungiblePositionManager _nonfungiblePositionManager,
+        address _zeroxRouter,
         address _universalRouter,
-        address _zeroxAllowanceHolder,
         address _permit2
-    ) Swapper(_nonfungiblePositionManager, _universalRouter, _zeroxAllowanceHolder) {
+    ) Swapper(_nonfungiblePositionManager, _zeroxRouter, _universalRouter) {
         permit2 = IPermit2(_permit2);
     }
 

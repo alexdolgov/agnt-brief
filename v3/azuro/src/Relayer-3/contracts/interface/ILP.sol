@@ -35,7 +35,6 @@ interface ILP is IOrder {
     }
 
     event AffiliateChanged(address newAffilaite);
-    event AffiliateRewardsClaimed(uint256 rewards);
     event BettorWin(
         address indexed core,
         address indexed bettor,
@@ -85,7 +84,6 @@ interface ILP is IOrder {
     error IncorrectMinDepo();
     error IncorrectReinforcementAbility();
     error IncorrectRelayer();
-    error InsufficientReward();
     error LiquidityNotOwned();
     error LockedBetToken(uint256 tokenId);
     error LockedLiquidityLimitReached();
@@ -146,8 +144,7 @@ interface ILP is IOrder {
     function addReserve(
         uint128 lockedReserve,
         uint128 profitReserve,
-        uint48 depositId,
-        bool isCombo
+        uint48 depositId
     ) external;
 
     function withdrawPayout(
@@ -181,32 +178,9 @@ interface ILP is IOrder {
 
     function factory() external view returns (IOwnable);
 
-    function changeByPercent(
-        bool isIncrease,
-        uint256 amount
-    ) external view returns (uint128);
-
     function dataProvider() external view returns (address);
 
     function checkOwner(address owner) external view;
 
-    function rejectConditionFee(uint256 conditionId) external;
-
-    function rejectFee(
-        uint128 amount,
-        uint256 conditionId,
-        uint64 timestamp
-    ) external;
-
-    function rejectFeeComboPart(
-        uint128 betAmount,
-        uint256 conditionId,
-        uint256 count,
-        uint256 element,
-        uint64 timestamp
-    ) external;
-
     function relayer() external view returns (address);
-
-    function releaseFee(uint256 conditionId) external;
 }

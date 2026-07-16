@@ -1,13 +1,15 @@
 # swell — deployments
 
-38 verified deployment(s) across 32 component(s).
+42 verified deployment(s) across 36 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | ethereum | `0x09341022ea237a4db1644de7ccf8fa0e489d85b7` | SwellOFTAdapter | impl | live | no |
+| ethereum | `0x0a6e7ba5042b38349e437ec6db6214aec7b35676` | SwellToken | impl | live | no |
 | ethereum | `0x15a94d49fac6e23e17c1366c999117a1de8ba7b6` | Accountant | impl | live | yes |
 | ethereum | `0x1da9cefa0f46b2087b2cf7dbf9e62dd94076ece1` | TellerWithMultiAssetSupport | impl | unknown | no |
 | ethereum | `0x1f5dddf627c3796a589c6271b36a570f18d3a016` | RolesAuthority | impl | unknown | no |
+| ethereum | `0x358d94b5b2f147d741088803d932acb566acb7b6` | Yearn_V3_Vault | impl | live | no |
 | ethereum | `0x38d43a6cb8da0e855a42fb6b0733a0498531d774` | SimpleStakingERC20 | impl | live | no |
 | ethereum | `0x411c78bc8c36c3c66784514f28c56209e1df2755` | AccountantWithRateProviders | impl | unknown | no |
 | ethereum | `0x46ddc39e780088b1b146aba8cbbe15dc321a1a1d` | TransparentUpgradeableProxy | proxy | live | yes |
@@ -27,7 +29,9 @@
 | ethereum | `0x805c6d95c9e707332215f42cb89f93752ffa55b8` | DelayedWithdraw-2 | impl | live | yes |
 | ethereum | `0x88b96f11ab91d282b4200b73fe401f6fc388603a` | Registry | impl | live | no |
 | ethereum | `0x8d0b4dfccc8b2a268486d9754b135d8ad1ee7258` | BeaconProxy | proxy | live | no |
+| ethereum | `0x8db2350d78abc13f5673a411d4700bcf87864dde` | Yearn_V3_Vault-2 | impl | live | no |
 | ethereum | `0x939f1cc163fdc38a77571019eb4ad1794873bf8c` | RegistryFactory | impl | live | yes |
+| ethereum | `0x981771292052c5f77b14a3bd4df22e43a8b17bb0` | Yearn_Vault_Factory | impl | live | no |
 | ethereum | `0x9b07fb810ef909b01f959911cef2cc834433f562` | SwETHOFTAdapter | impl | live | no |
 | ethereum | `0x9d663f1dd3cb752b47301abdc22d620d1868f377` | RolesAuthority-2 | impl | live | no |
 | ethereum | `0x9ed15383940cc380faef0a75edace507cc775f22` | BoringVault-2 | impl | unknown | no |

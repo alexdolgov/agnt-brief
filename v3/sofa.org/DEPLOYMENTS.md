@@ -1,12 +1,16 @@
 # sofa.org — deployments
 
-30 verified deployment(s) across 9 component(s).
+56 verified deployment(s) across 32 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x00aeca021d0f06c7dee54d58ee6af47b5645ab19` | BeaconProxy | proxy | live | yes |
+| arbitrum | `0x0243cb49228c95dcb6cb13770417ab9528c51583` | LeverageSmartTrendVault-3 | impl | live | no |
+| arbitrum | `0x0338c2d1908549f4fcbca9da84039de1bac5c6c1` | Automator | impl | live | no |
 | arbitrum | `0x1893b75a9711e1c84be86a81edc7f2929d6e5aff` | AutomatorFactory | impl | live | no |
-| arbitrum | `0x4bd6be959897631fbe5a8aae01707219850e032f` | FeeCollector-2 | impl | live | no |
+| arbitrum | `0x3fe4fd33935bf189e39abb8b58fcdfd80daeede3` | LeverageDNTVault | impl | live | no |
+| arbitrum | `0x4140ab4afc36b93270a9659bd8387660cc6509b5` | DNTVault | impl | live | no |
+| arbitrum | `0x4bd6be959897631fbe5a8aae01707219850e032f` | FeeCollector | impl | live | no |
 | arbitrum | `0x4c241483b4a85e44c59bcecfe17a4e7d0a073cdb` | BeaconProxy | proxy | live | yes |
 | arbitrum | `0x6e72c8726c71a4cbc6e31ff7d47b399fa983c7b8` | BeaconProxy | proxy | live | yes |
 | arbitrum | `0x7ecd1b5255543f4c2d7d8e475afcd01699dbe2b0` | BeaconProxy | proxy | live | yes |
@@ -14,23 +18,45 @@
 | arbitrum | `0xa76ee91c6e51d248782d7c81826df91522a6ef96` | BeaconProxy | proxy | live | yes |
 | arbitrum | `0xbefb3aad1dfb1660444f0d76a91261ef755b2b86` | BeaconProxy | proxy | live | yes |
 | arbitrum | `0xdfeb3460771148799b2d4344c369e2b2d6c26c42` | BeaconProxy | proxy | live | yes |
+| bsc | `0x53b4b7312e543435f77f25648fa9b269d0918bc5` | LeverageSmartTrendVault-2 | impl | live | no |
 | bsc | `0x842e97baa96cfe1534f1a50da112c7800134656a` | BeaconProxy | proxy | live | yes |
 | bsc | `0x89c82d1b7616b0a465311ff077db6bc21d43ea22` | BeaconProxy | proxy | live | yes |
+| bsc | `0xec722a53efee08ebff8d2c61622991a33705fa79` | FeeCollector | impl | live | no |
 | chain-1329 | `0x634b69cc4168cfc1c366078fdeb874affbb478b5` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-1329 | `0x64bb275066e7275fb0803c3e617ae3ab2a882ff3` | TransparentUpgradeableProxy | proxy | live | no |
 | chain-1329 | `0x842e97baa96cfe1534f1a50da112c7800134656a` | BeaconProxy | proxy | live | yes |
 | ethereum | `0x00aeca021d0f06c7dee54d58ee6af47b5645ab19` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| ethereum | `0x1d2faad42cbf3dc121659d856a9a405ed1067873` | SmartTrendVault | impl | live | no |
 | ethereum | `0x21f759bcb31739032a00b37e3560a216ae52efdc` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0x267adc3e106b72ce3b0f2bbdb6c638a12110cf8c` | CrvUSDAutomator | impl | live | no |
+| ethereum | `0x2b7b938717ca07970e9768db98f7e7541d3638b7` | StETHDNTVault | impl | live | no |
+| ethereum | `0x2b9aea129b85f51a468274e7271434a83c3bb6b4` | StRCH | impl | live | no |
+| ethereum | `0x3079993b5be4d18d504a6e58939ac6637d47dc1a` | RCHAutomatorFactory | impl | live | no |
 | ethereum | `0x3191a0008415deb5c5161c4b394ec46c8c703f8c` | BeaconProxy | proxy | live | yes |
-| ethereum | `0x4140ab4afc36b93270a9659bd8387660cc6509b5` | FeeCollector | impl | live | no |
+| ethereum | `0x31d22b4afec06e67a37af38a62a6ec9546c1bf8a` | CrvUSDAutomator-2 | impl | live | no |
+| ethereum | `0x322665298cfa800518d4ef7919893b59514ba9d1` | FeeCollectorSimple | impl | live | no |
+| ethereum | `0x4140ab4afc36b93270a9659bd8387660cc6509b5` | FeeCollector-2 | impl | live | no |
 | ethereum | `0x57b96d4af698605563a4653d882635da59bf11af` | RCH | impl | live | yes |
+| ethereum | `0x57f841c0a9c22ef1f0d8a1604b6388bfa3536932` | LeverageSmartTrendVault | impl | live | no |
 | ethereum | `0x5a8cdda6ca37b284b32ef8d513ef71ddac553270` | MerkleAirdrop | impl | live | no |
 | ethereum | `0x62104e40fa81a19f2b7e17c78c3ffbf4aca4f212` | BeaconProxy | proxy | live | yes |
+| ethereum | `0x6e72c8726c71a4cbc6e31ff7d47b399fa983c7b8` | SmartTrendVault-2 | impl | live | no |
+| ethereum | `0x893b33977395642039de1b04a0cc788b4af0ba08` | ZenRCH | impl | live | no |
+| ethereum | `0x8ea01d16882596863d215640451287b44077df0f` | LeverageDNTVault | impl | live | no |
 | ethereum | `0x9377f17abde96887943e5fcc92db034c76820529` | BeaconProxy | proxy | live | yes |
 | ethereum | `0x989897f1d976ee0b59bf0a3172c170d8f3cb84e3` | BeaconProxy | proxy | live | yes |
 | ethereum | `0x99c59d82b10c56950f6c031946656e6d0ad509ca` | BeaconProxy | proxy | live | yes |
+| ethereum | `0xa065585ce98cab62c4f1aff3c26ef4316ee72178` | StETHLeverageSmartTrendVault | impl | live | no |
+| ethereum | `0xa5a79cf343da9477fcea21a5910c154cb0271767` | StETHLeverageDNTVault | impl | live | no |
 | ethereum | `0xc9aa266e2e50ec2474cd881566845480f8dae931` | BeaconProxy | proxy | live | yes |
+| ethereum | `0xcba5c0ffe525312ce1515c2587f3c64f8ae953b6` | RCHDNTVault | impl | live | no |
+| ethereum | `0xdfeb3460771148799b2d4344c369e2b2d6c26c42` | DNTVault | impl | live | no |
 | ethereum | `0xe483d580664cd72b0a8cae0d65effa6587bd2263` | BeaconProxy | proxy | live | yes |
+| ethereum | `0xe497ba440e2e878d6defd2d91683c52d45385aa3` | StETHSmartTrendVault | impl | live | no |
 | ethereum | `0xf6c70b5f034070001e833c9ebc6a3a0176b683a6` | BeaconProxy | proxy | live | yes |
+| ethereum | `0xf82491af99d6eee7fb7a964bb8bf6edc67a230f0` | DNTVault-2 | impl | live | no |
+| ethereum | `0xfa19cf314cb0ddd21a9f993f4619ef4fc77e06e5` | CrvUSDSmartTrendVault | impl | live | no |
+| ethereum | `0xfce59048fe68f07a9872a678332667a7d7c1749e` | RCHSmartTrendVault | impl | live | no |
 | polygon | `0x46706780749bc41e7ab99d13bc1b2a74df40a7da` | BeaconProxy | proxy | live | yes |
 | polygon | `0x4fd90c6b2a81d65a10e366dc5051d4d1a2a1c021` | BeaconProxy | proxy | live | yes |
+| polygon | `0x6a7f97ed710a162cf5f1eb8024e613fc9ce9d563` | FeeCollectorSimple-2 | impl | live | no |

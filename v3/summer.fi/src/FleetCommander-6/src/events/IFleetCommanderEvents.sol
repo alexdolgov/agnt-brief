@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: BUSL-1.1
-pragma solidity 0.8.27;
+pragma solidity 0.8.28;
 
 import {RebalanceData} from "../types/FleetCommanderTypes.sol";
 
@@ -62,15 +62,6 @@ interface IFleetCommanderEvents {
         address indexed user,
         uint256 prevBalance,
         uint256 newBalance
-    );
-    /**
-     *
-     * @param keeper Keeper address
-     * @param totalMoved Total amount of funds moved to arks
-     */
-    event FleetCommanderBufferAdjusted(
-        address indexed keeper,
-        uint256 totalMoved
     );
 
     /**

@@ -1,6 +1,6 @@
 # lighter — deployments
 
-7 verified deployment(s) across 7 component(s).
+9 verified deployment(s) across 9 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -11,3 +11,5 @@
 | arbitrum | `0x7882f88895666781e472f8e1b6cd8b84440b1877` | OrderBookDeployerLib | impl | unknown | no |
 | arbitrum | `0x8dd0635fef368ee7caa7d8f2d6de4792f5962c60` | MinLinkedListLib | impl | unknown | no |
 | arbitrum | `0xa1e78740217910ba0bb65eeee875cfcf8bffee97` | OrderBookHelper | impl | unknown | no |
+| ethereum | `0x232ce3bd40fcd6f80f3d55a522d03f25df784ee2` | Lighter | impl | live | no |
+| ethereum | `0x3b4d794a66304f130a4db8f2551b0070dfcf5ca7` | Proxy | impl | live | no |

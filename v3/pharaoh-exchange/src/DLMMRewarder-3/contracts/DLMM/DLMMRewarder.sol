@@ -27,6 +27,7 @@ contract DLMMRewarder is DLMMBaseHooks, Initializable, OwnableUpgradeable {
 
     event NotifyReward(address indexed from, address indexed reward, uint256 amount);
     event ClaimRewards(address indexed from, address indexed reward, uint256 amount);
+    event BinRewardAccumulatorsUpdated(uint24 startBinId, uint256[] accRewardsPerShareX64);
 
     uint8 internal constant OFFSET_PRECISION = 128;
     int256 internal constant MAX_NUMBER_OF_BINS = 11;
@@ -340,13 +341,25 @@ contract DLMMRewarder is DLMMBaseHooks, Initializable, OwnableUpgradeable {
 
         totalUnclaimedRewards += pendingTotalRewards;
 
+        uint256[] memory accRewardsPerShareX64 = new uint256[](ids.length);
+        bool updated;
+
         for (uint256 i; i < ids.length; ++i) {
             uint256 totalSupplyX64 = totalSuppliesX64[i];
+            uint24 id = ids[i].safe24();
             if (totalSupplyX64 > 0) {
                 uint256 weightX128 = liquiditiesX128[i].shiftDivRoundDown(OFFSET_PRECISION, totalLiquiditiesX128);
-                bins[ids[i]].accRewardsPerShareX64 += pendingTotalRewards.mulDivRoundDown(weightX128, totalSupplyX64);
+                uint256 accRewardsDeltaX64 = pendingTotalRewards.mulDivRoundDown(weightX128, totalSupplyX64);
+                if (accRewardsDeltaX64 > 0) {
+                    bins[id].accRewardsPerShareX64 += accRewardsDeltaX64;
+                    updated = true;
+                }
             }
+
+            accRewardsPerShareX64[i] = bins[id].accRewardsPerShareX64;
         }
+
+        if (updated) emit BinRewardAccumulatorsUpdated(ids[0].safe24(), accRewardsPerShareX64);
     }
 
     function _updateUser(address user, uint256[] memory ids) internal {

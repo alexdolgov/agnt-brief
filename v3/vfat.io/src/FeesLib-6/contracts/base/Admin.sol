@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.17;
+pragma solidity ^0.8.17;
 
 /// @title Admin contract
 /// @author vfat.tools
@@ -8,7 +8,7 @@ abstract contract Admin {
     /// ERRORS ///
 
     /// @notice Thrown when the caller is not the admin
-    error NotAdminError();
+    error NotAdminError(); //0xb5c42b3b
 
     /// EVENTS ///
 

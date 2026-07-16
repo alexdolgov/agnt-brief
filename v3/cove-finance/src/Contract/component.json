@@ -1,0 +1,35 @@
+{
+  "component": "Contract",
+  "main_contract": "Contract",
+  "source_entry_count": 10,
+  "source_file_count": 10,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/Storm-Labs-Inc/cove-audits/blob/master/2024-12-23%5FZellic%5FCove.pdf",
+    "https://github.com/Storm-Labs-Inc/cove-audits/blob/master/2024-12-23_Zellic_Cove.pdf",
+    "https://github.com/Storm-Labs-Inc/cove-audits/blob/master/2025-01-16%5FPashov%5FCove.pdf",
+    "https://github.com/Storm-Labs-Inc/cove-audits/blob/master/2025-01-16_Pashov_Cove.pdf",
+    "https://github.com/Storm-Labs-Inc/cove-audits/blob/master/2025-04-19%5FPashov%5FCove.pdf",
+    "https://github.com/Storm-Labs-Inc/cove-audits/blob/master/2025-04-19_Pashov_Cove.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xb97c12781fb1de1f07b4735526db7b3420f26f99",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

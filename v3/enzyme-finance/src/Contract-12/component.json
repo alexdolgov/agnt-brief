@@ -1,0 +1,33 @@
+{
+  "component": "Contract-12",
+  "main_contract": "Contract",
+  "source_entry_count": 26,
+  "source_file_count": 26,
+  "source_path_remaps": [],
+  "foundry": {
+    "root": ".",
+    "config": "foundry.toml",
+    "build_command": "forge build --root \"src/Contract-12\"",
+    "compiler_selection": "source_pragmas"
+  },
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/enzymefinance/protocol/blob/dev/audits/2021-01-CS-protocol-v2.pdf",
+    "https://github.com/enzymefinance/protocol/blob/v4/audits/2021-01-CS-protocol-v2.pdf",
+    "https://github.com/enzymefinance/protocol/blob/v4/audits/2022-01-CS-protocol-v4-revisions-curve-synthetix-olympus-compound.pdf",
+    "https://github.com/enzymefinance/protocol/blob/v4/audits/2022-02-CS-protocol-v4-revisions-performance-fee-convex.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4baf8282571febdfd8768b475551ec14e144edb3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    }
+  ]
+}

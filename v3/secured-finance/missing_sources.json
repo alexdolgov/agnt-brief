@@ -2,18 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "secured-finance",
-  "missing": [
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0x35e9d8e0223a75e51a67aa731127c91ea0779fe2",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 1,
-      "chain": "ethereum",
-      "address": "0x581e463841bd2b30285929448e1a93d74708719f",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

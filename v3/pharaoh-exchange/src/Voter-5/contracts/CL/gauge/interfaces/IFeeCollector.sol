@@ -9,6 +9,7 @@ interface IFeeCollector {
     /// @param newTreasury The new treasury address.
     event TreasuryChanged(address oldTreasury, address newTreasury);
 
+
     /// @notice Emitted when the treasury fees value is changed.
     /// @param oldTreasuryFees The previous value of the treasury fees.
     /// @param newTreasuryFees The new value of the treasury fees.
@@ -33,6 +34,10 @@ interface IFeeCollector {
     /// @notice Sets the treasury address to a new value.
     /// @param newTreasury The new address to set as the treasury.
     function setTreasury(address newTreasury) external;
+
+    /// @notice Sets the voter address to a new value.
+    /// @param newVoter The new address to set as the voter.
+    function setVoter(address newVoter) external;
 
     /// @notice Sets the value of treasury fees to a new amount.
     /// @param _treasuryFees The new amount of treasury fees to be set.

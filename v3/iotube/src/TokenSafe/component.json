@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/TokenSafe\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xc2e0f31d739cb3153ba5760a203b3bd7c27f0d7a",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xfbe9a4138afdf1fa639a8c2818a0c4513fc4ce4b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
       "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
-      "logic_topography_row_id": "395390"
+      "logic_topography_row_id": "405418"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xa239f03cda98a7d2aaaa51e7bf408e5d73399e45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395516"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # swissborg — deployments
 
-60 verified deployment(s) across 59 component(s).
+61 verified deployment(s) across 60 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,6 +12,7 @@
 | ethereum | `0x0cbeae4005826a63153875d0fbbfe8a91736bd76` | OrderbookBTC | impl | unknown | no |
 | ethereum | `0x13eedd9cd79b55719fa1e656fbedc800d7f3d5f9` | GloboX | impl | unknown | no |
 | ethereum | `0x19da36dcf89327b2cc3d477b97dba499576f8e60` | ArmorCeramics | impl | unknown | no |
+| ethereum | `0x259c444b50e3ab173c4f850bb40d85a9ea0230f3` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0x282eaf0c93b535731c1a2ef26a568e6131980c4a` | FluxCoin | impl | unknown | no |
 | ethereum | `0x2af703b86b8ccf30040d82b088b73842573d3d9c` | AssetWithCompliance | impl | unknown | no |
 | ethereum | `0x38d3d9abbdba8305ebb8b72996efe55bf785aed0` | UnicornSPXSecurityToken | impl | unknown | no |

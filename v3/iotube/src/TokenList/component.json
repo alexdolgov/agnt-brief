@@ -10,10 +10,30 @@
     "build_command": "forge build --root \"src/TokenList\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7c0bef36e1b1cbeb1f1a5541300786a7b608aede",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395514"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0d793f4d4287265b9bda86b7a4083193e8743b34",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395392"
+    },
     {
       "chain": "bsc",
       "chain_id": 56,

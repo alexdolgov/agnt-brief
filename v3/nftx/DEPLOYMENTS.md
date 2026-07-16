@@ -1,17 +1,22 @@
 # nftx — deployments
 
-86 verified deployment(s) across 58 component(s).
+102 verified deployment(s) across 72 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
+| arbitrum | `0x000000000022d473030f116ddee9f6b43ac78ba3` | AllowanceTransfer | impl | live | no |
+| arbitrum | `0x0da69287b4c1b28181e5d155dddda7fa5c32e5ad` | UniversalRouter-2 | impl | live | no |
 | arbitrum | `0x1a0f3d0e40e9c211bd2d215e709b6fd2c17f35a2` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0x1a2c03abd4af7c87d8b4d5ad39b56fa98e8c4cc6` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0x3f2797b0e19cbf2377b8de2d1cec2698aca7b081` | TickLens | impl | live | no |
 | arbitrum | `0x52731751dede22827ad47109f5e9697d75a3ef4d` | NFTXRouter-3 | impl | live | no |
 | arbitrum | `0x5326a720f76cfbdfe9e18fa618c3a3f7abdf3934` | TransparentUpgradeableProxy | proxy | live | yes |
 | arbitrum | `0x66f26e38bd50fd52a50da8e87e435f04f98001b7` | NFTXMarketplaceZap-2 | impl | live | no |
 | arbitrum | `0x68a7f493f6c40556931559afd22d7ed868d3f78e` | TransparentUpgradeableProxy | proxy | live | yes |
+| arbitrum | `0x732e5f7fe7c40333dfeff57755666f85d1e164c1` | MultiProxyController-2 | impl | live | no |
 | arbitrum | `0x82af49447d8a07e3bd95bd0d56f35241523fbab1` | ProxyAdmin | proxy | live | no |
 | arbitrum | `0x8ad238377531547838370b9c4ac346b9ed5466ea` | NonfungiblePositionManager-2 | impl | live | no |
+| arbitrum | `0x96c394cdd3b09b7b2971aa6fb8c0435c914e1df9` | TimelockExcludeList | impl | live | no |
 | arbitrum | `0xb14b8f97ba435c72c9814e05f946a00593559d2e` | NFTXVaultUpgradeable-18 | impl | live | no |
 | arbitrum | `0xca523fbaf06a157f3d96735b6fc0626323a65baa` | NFTXVaultUpgradeable-2 | impl | live | no |
 | arbitrum | `0xd4031c7cf0e726c1d67832d5218a3bf7c5034338` | NFTXVaultUpgradeable | impl | live | no |
@@ -19,12 +24,16 @@
 | arbitrum | `0xe7a3ee18abb273e55de74d824b8aaeb6d2a4f7ed` | NFTXVaultUpgradeable-3 | impl | live | no |
 | arbitrum | `0xf09bcfdb9dd2068234e08002e58f7e47b86316b7` | NFTXVaultUpgradeable-3 | impl | live | no |
 | arbitrum | `0xf56296b3010a59ef7f0915569dd44e1302b9ca40` | MarketplaceUniversalRouterZap-2 | impl | live | no |
+| arbitrum | `0xfb8664e4eb4d2f8b0220d358d0d9c4896dc84959` | NFTXStakingZap | impl | live | no |
 | arbitrum | `0xfde612740eb6d59d6a316e1e7fccf7c59cb05342` | NFTXVaultUpgradeable | impl | live | no |
+| arbitrum | `0xff3957cb28ab34186543281e0bbe0de05c9e7d6d` | QuoterV2-2 | impl | live | no |
+| ethereum | `0x000000000022d473030f116ddee9f6b43ac78ba3` | AllowanceTransfer | impl | live | no |
 | ethereum | `0x013cf78239144abcf06bbd56d3d190c65d7f9635` | Create2BeaconProxy | impl | live | no |
 | ethereum | `0x0463a06fbc8bf28b3f120cd1bfc59483f099d332` | UniswapV2Pair | impl | live | no |
 | ethereum | `0x06012c8cf97bead5deae237070f9587f8e7a266d` | KittyCore | impl | live | no |
 | ethereum | `0x08765c76c758da951dc73d3a8863b34752dd76fb` | Create2BeaconProxy-2 | proxy | live | no |
 | ethereum | `0x0b3d8fd85f43e2963d39e927d4a9ec1406a28e8e` | NFTXInventoryStakingV3Upgradeable | impl | live | no |
+| ethereum | `0x0b8ee2ee7d6f3bfb73c9ae2127558d1172b65fb1` | NFTXStakingZap-2 | impl | live | no |
 | ethereum | `0x0fa0fd98727c443dd5275774c44d27cff9d279ed` | NFTXVaultUpgradeable-4 | impl | live | no |
 | ethereum | `0x0fc584529a2aefa997697fafacba5831fac0c22d` | NFTXMarketplaceZap | impl | live | no |
 | ethereum | `0x0fe629d1e84e171f8ff0c1ded2cc2221caa48a3f` | XToken | impl | live | no |
@@ -40,6 +49,7 @@
 | ethereum | `0x2b2e8cda09bba9660dca5cb6233787738ad68329` | LSSVMRouter | impl | live | no |
 | ethereum | `0x2c556ffbdcbd5abae92fed0231e2d1752a29d493` | NFTXVaultUpgradeable-6 | impl | live | no |
 | ethereum | `0x2d7db053ada8af9449a34390256dddfcaabb198e` | NFTXVaultUpgradeable-7 | impl | live | no |
+| ethereum | `0x35fb4026dcf19f8ca37dcca4d2d68a549548750c` | MultiProxyController | impl | live | no |
 | ethereum | `0x36b799160cdc2d9809d108224d1967cc9b7d321c` | NFTXVaultUpgradeable-8 | impl | live | no |
 | ethereum | `0x3b3e4e76cac64eb29c399dcad1f3c401d2254f5f` | NFTXRouter | impl | live | no |
 | ethereum | `0x4333b49244cc455f0a4f6010df5a4db86bfc4671` | CErc20Delegator | proxy | live | no |
@@ -47,6 +57,8 @@
 | ethereum | `0x49706a576bb823cde3180c930f9947d59e2ded4d` | XToken | impl | live | no |
 | ethereum | `0x4acc9c89f47f5330b2f4f412ef157e3016333f58` | XToken | impl | live | no |
 | ethereum | `0x4d6d117bf2fd1ffc790b95c219f4fa7e338d3172` | NFTXVaultUpgradeable-2 | impl | live | no |
+| ethereum | `0x5493df723c17b6a768aa61f79405ba56ffc5294a` | QuoterV2 | impl | live | no |
+| ethereum | `0x58efca0e52f254b76aec95dbd8d8e687e1bb70b1` | NFTXFeeDistributor | impl | live | no |
 | ethereum | `0x59304d0a0c594c4c2f84be7fc2a5f38765e134ca` | CErc20Delegator | proxy | live | no |
 | ethereum | `0x595a8974c1473717c4b5d456350cd594d9bda687` | MineablePunks | impl | live | no |
 | ethereum | `0x59a82f0ff8e88804a34dd467b7061f1986fe1769` | XToken | impl | live | no |
@@ -61,10 +73,13 @@
 | ethereum | `0x87d73e916d7057945c9bcd8cdd94e42a6f47f776` | MiniMeToken | impl | live | no |
 | ethereum | `0x881ca986802e8628b50b3ffffcfdbdac110f6c14` | NFTXVaultUpgradeable-10 | impl | live | no |
 | ethereum | `0x8b0c35a8593d399105448f0040011d250330cd26` | NFTXVaultUpgradeable-11 | impl | live | no |
+| ethereum | `0x925297edcb4893d0d914e6d28f49381d47b864b0` | XTokenClonable | impl | live | no |
 | ethereum | `0x92cca15553f244196970eefcd45e13d459418539` | PunkToken | impl | live | no |
+| ethereum | `0x9c5a36aef5a7b04b0123b2064bd20bc47183e1dc` | XBounties | impl | live | no |
 | ethereum | `0x9cea2ed9e47059260c97d697f82b8a14efa61ea5` | XToken | impl | live | no |
 | ethereum | `0xab9c92a9337a1494c6d545e48187fa37144403c8` | XToken | impl | live | no |
 | ethereum | `0xaba49db7e374cc6954401dc0a886e0b02670536e` | XToken | impl | live | no |
+| ethereum | `0xaf93fcce0548d3124a5fc3045adaf1dde4e8bf7e` | AdminUpgradeabilityProxy-2 | proxy | live | no |
 | ethereum | `0xb13907103606118d01d18c9deb249b89f6c31545` | NFTXVaultUpgradeable-12 | impl | live | no |
 | ethereum | `0xb14b8f97ba435c72c9814e05f946a00593559d2e` | NFTXVaultUpgradeable-13 | impl | live | no |
 | ethereum | `0xb1690c08e213a35ed9bab7b318de14420fb57d8c` | SaleClockAuction | impl | live | no |
@@ -74,6 +89,7 @@
 | ethereum | `0xbbc53022af15bb973ad906577c84784c47c14371` | NFTXMarketplace0xZap | impl | live | no |
 | ethereum | `0xbe54738723cea167a76ad5421b50caa49692e7b7` | XStore | impl | live | yes |
 | ethereum | `0xbe86f647b167567525ccaafcd6f881f1ee558216` | AdminUpgradeabilityProxy | proxy | live | yes |
+| ethereum | `0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2` | WETH9 | impl | live | no |
 | ethereum | `0xc4bf60b93ac60db9a45ad232368d50de0a354849` | XToken | impl | live | no |
 | ethereum | `0xc653e1b3a971078812a72d11c45ad71e00f3ad1f` | Multisender | impl | live | no |
 | ethereum | `0xc7af99fe5513eb6710e6d5f44f9989da40f27f26` | SiringClockAuction | impl | live | no |

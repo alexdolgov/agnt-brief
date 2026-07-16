@@ -1,27 +1,17 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
-pragma solidity 0.8.18;
+pragma solidity ^0.8.11;
 
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
-import "@openzeppelin/contracts/utils/introspection/ERC165.sol";
-import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Upgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol";
 import "@openzeppelin/contracts/proxy/Clones.sol";
-import "@openzeppelin/contracts/utils/Strings.sol";
-import "@openzeppelin/contracts/utils/Address.sol";
 
-import "../interfaces/IVaultFactory.sol";
 import "../interfaces/IAssetVault.sol";
-import "../interfaces/IFeeController.sol";
-import "../interfaces/INFTDescriptor.sol";
-import "../nft/ERC721Permit.sol";
+import "../interfaces/IVaultFactory.sol";
+import "../ERC721PermitUpgradeable.sol";
 
-import {
-    VF_ZeroAddress,
-    VF_TokenIdOutOfBounds,
-    VF_NoTransferWithdrawEnabled,
-    VF_InsufficientMintFee,
-    VF_DoesNotExist
-} from "../errors/Vault.sol";
+import { VF_InvalidTemplate, VF_TokenIdOutOfBounds, VF_NoTransferWithdrawEnabled } from "../errors/Vault.sol";
 
 /**
  * @title VaultFactory
@@ -31,7 +21,7 @@ import {
  * is also an ERC721 that maps "ownership" of its tokens to ownership of created
  * vault assets (see OwnableERC721).
  *
- * Each Asset Vault is created via "initializeBundle", and uses a specified template
+ * Each Asset Vault is created via "intializeBundle", and uses a specified template
  * and the OpenZeppelin Clones library to cheaply deploy a new clone pointing to logic
  * in the template. The address the newly created vault is deployed to is converted
  * into a uint256, which ends up being the token ID minted.
@@ -41,66 +31,44 @@ import {
  * VaultFactory in order to determine their own contract owner. The VaultFactory contains
  * conveniences to allow switching between the address and uint256 formats.
  */
-contract VaultFactory is IVaultFactory, ERC165, ERC721Permit, AccessControlEnumerable, ERC721Enumerable {
-    using Strings for uint256;
-    using Address for address payable;
-
+contract VaultFactory is ERC721EnumerableUpgradeable, ERC721PermitUpgradeable, IVaultFactory {
     // ============================================ STATE ==============================================
 
-    // =================== Constants =====================
-
-    bytes32 public constant ADMIN_ROLE = keccak256("ADMIN");
-    bytes32 public constant FEE_CLAIMER_ROLE = keccak256("FEE_CLAIMER");
-    bytes32 public constant RESOURCE_MANAGER_ROLE = keccak256("RESOURCE_MANAGER");
-
-    // ================= State Variables ==================
-
-    /// @dev The template contract for asset vaults
-    address public immutable template;
-    /// @dev The CallWhitelist contract defining the calling restrictions for vaults.
-    address public immutable whitelist;
-    /// @dev The contract specifying minting fees, if non-zero
-    IFeeController public immutable feeController;
-
-    /// @dev Contract for returning tokenURI resources.
-    INFTDescriptor public descriptor;
+    /// @dev The template contract for asset vaults.
+    address public template;
+    /// @dev The CallWhitelist contract definining the calling restrictions for vaults.
+    address public whitelist;
 
     // ========================================== CONSTRUCTOR ===========================================
 
     /**
-     * @notice Deploys a new VaultFactory, with a given template and whitelist.
+     * @notice Runs the initializer function in an upgradeable contract.
      *
-     * @param _template          The address of the template contract for vaults.
-     * @param _whitelist         The address of the CallWhitelist contract.
-     * @param _feeController     The contract reporting fees for vault minting.
-     * @param _descriptor        The resource descriptor contract.
+     * @dev Added unsafe-allow comment to notify upgrades plugin to accept the constructor.
      */
-    constructor(
-        address _template,
-        address _whitelist,
-        address _feeController,
-        address _descriptor
-    ) ERC721("Asset Vault", "AV") ERC721Permit("Asset Vault") {
-        if (_template == address(0)) revert VF_ZeroAddress("template");
-        if (_whitelist == address(0)) revert VF_ZeroAddress("whitelist");
-        if (_feeController == address(0)) revert VF_ZeroAddress("feeController");
-        if (_descriptor == address(0)) revert VF_ZeroAddress("descriptor");
+    /// @custom:oz-upgrades-unsafe-allow constructor
+    constructor() initializer {}
 
+    // ========================================== INITIALIZER ===========================================
+
+    function initialize(address _template, address _whitelist) public initializer {
+        __ERC721_init("Asset Vault", "AV");
+        __ERC721PermitUpgradeable_init("Asset Vault");
+        __ERC721Enumerable_init_unchained();
+
+        if (_template == address(0)) revert VF_InvalidTemplate(_template);
         template = _template;
         whitelist = _whitelist;
-        descriptor = INFTDescriptor(_descriptor);
-        feeController = IFeeController(_feeController);
-
-        _setupRole(ADMIN_ROLE, msg.sender);
-        _setRoleAdmin(ADMIN_ROLE, ADMIN_ROLE);
-
-        _setupRole(FEE_CLAIMER_ROLE, msg.sender);
-        _setRoleAdmin(FEE_CLAIMER_ROLE, ADMIN_ROLE);
-
-        _setRoleAdmin(RESOURCE_MANAGER_ROLE, ADMIN_ROLE);
     }
 
-    // ========================================= VIEW FUNCTIONS =========================================
+    // ===================================== UPGRADE AUTHORIZATION ======================================
+
+    /**
+     * @notice Authorization function to define who should be allowed to upgrade the contract.
+     *
+     * @param newImplementation     The address of the upgraded version of this contract.
+     */
+    function _authorizeUpgrade(address newImplementation) internal override onlyRole(ADMIN_ROLE) {}
 
     /**
      * @notice Check if the given address is a vault instance created by this factory.
@@ -156,25 +124,16 @@ contract VaultFactory is IVaultFactory, ERC165, ERC721Permit, AccessControlEnume
      * @notice Creates a new bundle token and vault contract for `to`. Its token ID will be
      * automatically assigned (and available on the emitted {IERC721-Transfer} event)
      *
-     * See {ERC721-_safeMint}.
+     * See {ERC721-_mint}.
      *
      * @param to                    The address that will own the new vault.
      *
      * @return tokenID              The token ID of the bundle token, derived from the vault address.
      */
-    function initializeBundle(address to) external payable override returns (uint256) {
-        uint256 mintFee = feeController.getVaultMintFee();
-
-        if (msg.value < mintFee) revert VF_InsufficientMintFee(msg.value, mintFee);
-
+    function initializeBundle(address to) external override returns (uint256) {
         address vault = _create();
 
-        _safeMint(to, uint256(uint160(vault)));
-
-        // Sends remaining value back to the sender,
-        // with no gas restrictions - acceptable because msg.sender has no reason
-        // to incur extra gas cost on their own transaction
-        if (msg.value > mintFee) payable(msg.sender).sendValue(msg.value - mintFee);
+        _mint(to, uint256(uint160(vault)));
 
         emit VaultCreated(vault, to);
         return uint256(uint160(vault));
@@ -192,48 +151,7 @@ contract VaultFactory is IVaultFactory, ERC165, ERC721Permit, AccessControlEnume
         return vault;
     }
 
-    /**
-     * @notice Claim any accrued minting fees. Only callable by FEE_CLAIMER_ROLE.
-     */
-    function claimFees(address to) external onlyRole(FEE_CLAIMER_ROLE) {
-        if (to == address(0)) revert VF_ZeroAddress("to");
-
-        uint256 balance = address(this).balance;
-        // transfer() only sends 2300 gas. if the recipient is a contract with logic inside
-        // of receive(), the transaction will most likely fail because of out-of-gas revert
-        payable(to).transfer(balance);
-
-        emit ClaimFees(to, balance);
-    }
-
     // ===================================== ERC721 UTILITIES ===========================================
-
-    /**
-     * @notice Getter of specific URI for a bundle token ID.
-     *
-     * @param tokenId               The ID of the bundle to get the URI for.
-     *
-     * @return                      The bundle ID's URI string.
-     */
-    function tokenURI(uint256 tokenId) public view override(INFTWithDescriptor, ERC721) returns (string memory) {
-        if (!_exists(tokenId)) revert VF_DoesNotExist(tokenId);
-
-        return descriptor.tokenURI(address(this), tokenId);
-    }
-
-    /**
-     * @notice Changes the descriptor contract for reporting tokenURI
-     *         resources. Can only be called by a resource manager.
-     *
-     * @param _descriptor           The new descriptor contract.
-     */
-    function setDescriptor(address _descriptor) external override onlyRole(RESOURCE_MANAGER_ROLE) {
-        if (_descriptor == address(0)) revert VF_ZeroAddress("descriptor");
-
-        descriptor = INFTDescriptor(_descriptor);
-
-        emit SetDescriptor(msg.sender, _descriptor);
-    }
 
     /**
      * @dev Hook that is called before any token transfer.
@@ -250,7 +168,7 @@ contract VaultFactory is IVaultFactory, ERC165, ERC721Permit, AccessControlEnume
         address from,
         address to,
         uint256 tokenId
-    ) internal virtual override(ERC721, ERC721Enumerable) {
+    ) internal virtual override(ERC721Upgradeable, ERC721EnumerableUpgradeable) {
         IAssetVault vault = IAssetVault(address(uint160(tokenId)));
         if (vault.withdrawEnabled()) revert VF_NoTransferWithdrawEnabled(tokenId);
 
@@ -264,7 +182,7 @@ contract VaultFactory is IVaultFactory, ERC165, ERC721Permit, AccessControlEnume
         public
         view
         virtual
-        override(IERC165, ERC165, ERC721, ERC721Enumerable, AccessControlEnumerable)
+        override(ERC721PermitUpgradeable, ERC721EnumerableUpgradeable)
         returns (bool)
     {
         return super.supportsInterface(interfaceId);

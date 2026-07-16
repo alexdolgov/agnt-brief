@@ -10,12 +10,23 @@
     "build_command": "forge build --root \"src/Contract-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": true,
   "audits_covering": [
+    "https://github.com/lidofinance/audits/blob/main/L2/stETH-on-Optimism-2024-06-MixBytes-Audit-Report.pdf",
     "https://github.com/lidofinance/audits/blob/main/L2/stETH-on-Unichain-2025-02-MixBytes-deployment-verification.pdf"
   ],
   "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x4bf0d419793d8722b8391efad4c9ce78f460ced3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": null,
+      "logic_topography_row_id": null
+    },
     {
       "chain": "chain-130",
       "chain_id": 130,

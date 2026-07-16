@@ -1,6 +1,6 @@
 # biswap — deployments
 
-59 verified deployment(s) across 9 component(s).
+60 verified deployment(s) across 10 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -60,6 +60,7 @@
 | bsc | `0xf31f62a6afb0546771a821e0f98fd187ee7f7d4c` | SmartChef | impl | live | no |
 | bsc | `0xf4540b8dd7b957ca9b1acdbf75ec6b6f17950f0d` | SmartChef | impl | live | no |
 | bsc | `0xf54c23398fdbd72ab1d1708099d5faad84cd9ff1` | SmartChef-2 | impl | live | no |
+| bsc | `0xf5d6fed0f4735ff2036ce4be535bd32e77dae9fe` | Timelock | impl | live | no |
 | bsc | `0xf62e2321b04248a381bbac9ed2ac788775d1c899` | SmartChef | impl | live | no |
 | bsc | `0xfd6820eca12a8dd9e92b1bbb7dfc9f4afa367275` | SmartChef-2 | impl | live | no |
 | ethereum | `0x66e09ec17629574a0cc8abc480b0c2572fcd6985` | InterchainToken | impl | live | no |

@@ -1,6 +1,6 @@
 # hypersurface — deployments
 
-160 verified deployment(s) across 112 component(s).
+161 verified deployment(s) across 113 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -158,9 +158,15 @@
 | base | `0xfe417372088146476ca28fa35d00f5e0f60b64f7` | Referral | impl | live | no |
 | base | `0xff3bb81651592bc9c64220093a98ffb10d2b2706` | MamoStakingRegistry | impl | live | no |
 | chain-999 | `0x04fe57fc72f75bfdca4a3f910256797e97fb126d` | MarginPool | impl | live | no |
+| chain-999 | `0x1e1be1b7205d0038e2588a7c7d1059875ae5dfaf` | MMTradeHelper | impl | live | no |
 | chain-999 | `0x2ef31a3c848e0789feefc56377b46db63329d0c5` | HedgedPool-2 | impl | live | no |
 | chain-999 | `0x384dfc8d5e0a6256a13fa257415563f219ea1a71` | HedgedPoolLib | impl | live | no |
 | chain-999 | `0x9749a02658008b814eee4c123e8b18a2055ab298` | HedgedPool | impl | live | no |
 | chain-999 | `0xe16f4b4204534ca3bdb6b817c841d1c938d1f48b` | HedgedPoolLib-2 | impl | live | no |
 | chain-999 | `0xeea2e4459b4065be147d7f060f4b331b3c95ed61` | Whitelist | impl | live | no |
 | chain-999 | `0xf6d788dd55738f82d03f97597660221ca8b4c98d` | OtokenFactory | impl | live | no |
+
+## Source unavailable (1)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- chain-999 `0x578858dd49292ecc818f1a88f95fc079b8663fe0`

@@ -1,6 +1,6 @@
 # aura — deployments
 
-196 verified deployment(s) across 128 component(s).
+210 verified deployment(s) across 133 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -97,13 +97,16 @@
 | ethereum | `0x5b2364fd757e262253423373e4d57c5c011ad7f4` | AuraClaimZapV3 | impl | live | no |
 | ethereum | `0x5c6ee304399dbdb9c8ef030ab642b10820db8f56` | WeightedPool2Tokens | impl | live | no |
 | ethereum | `0x5e5ea2048475854a5702f5b8468a51ba1296efcc` | BaseRewardPool-3 | impl | live | no |
+| ethereum | `0x60421ffaa36f3a8e69c25887e575689f52b055f7` | BridgeDelegateReceiver | impl | live | yes |
 | ethereum | `0x68655ad9852a99c87c0934c7290bb62cfa5d4123` | CrvDepositorWrapper | impl | live | no |
 | ethereum | `0x6d3a388e310aaa498430d1fe541d6d64ddb423de` | PoolManagerV4 | impl | live | no |
 | ethereum | `0x6d6bcac2266468a44da9fa482ca54aaed586e1e7` | Harvester | impl | live | no |
 | ethereum | `0x72a19342e8f1838460ebfccef09f6585e32db86e` | CvxLockerV2 | impl | live | no |
 | ethereum | `0x7818a1da7bd1e64c199029e86ba244a9798eee10` | Booster | impl | live | no |
 | ethereum | `0x7a527d8bb09f7d70c148ab5de919e9bf68a0d769` | FeeDepositV2 | impl | live | no |
+| ethereum | `0x7eb87c3a4eabdad158781d0dbb7ab3589b9c2b4c` | BridgeDelegateReceiver | impl | live | yes |
 | ethereum | `0x8014595f2ab54cd7c604b00e9fb932176fdc86ae` | CrvDepositor | impl | live | no |
+| ethereum | `0x80b1116fc9f5334bc8d6502e59dc4c42ce98ab8d` | BridgeDelegateReceiver | impl | live | yes |
 | ethereum | `0x817f426b5a79599464488eccf82c3f54b9330e15` | KeeperMulticall3 | impl | live | no |
 | ethereum | `0x928966752dc0cc0d7babe343fc2937ba13a5120c` | AuraRedemption | impl | live | no |
 | ethereum | `0x96d15d08538a17a03b0210fd1626d5f42bdba9a4` | AuraDistributor | impl | live | no |
@@ -114,12 +117,15 @@
 | ethereum | `0xa6bbf685b7ea73878b4fb867a96f1ca3ed5eb358` | AuraVestedEscrow | impl | live | no |
 | ethereum | `0xaa54f3b282805822419265208e669d12372a3811` | L1Coordinator | impl | live | yes |
 | ethereum | `0xac16927429c5c7af63dd75bc9d8a58c63ffd0147` | VirtualBalanceRewardPool | impl | live | no |
+| ethereum | `0xac962acd42f93c6f26e1cf83271d2a53b208daa6` | BridgeDelegateReceiver | impl | live | yes |
 | ethereum | `0xaf52695e1bb01a16d33d7194c28c42b10e0dbec2` | VoterProxy-2 | impl | live | no |
 | ethereum | `0xaf824c80aa77ae7f379da3dc05fea0dc1941c200` | ClaimFeesHelper | impl | live | no |
 | ethereum | `0xb188b1cb84fb0ba13cb9ee1292769f903a9fec59` | RewardPoolDepositWrapper-2 | impl | live | no |
 | ethereum | `0xb314f7c160d078923eaaae9c6cbde8f1b7bfe7fd` | Booster-3 | impl | live | no |
+| ethereum | `0xb370ebd7ded0c87b4509ff6f13f07b7f1693bf46` | GnosisSafeProxy-2 | proxy | live | no |
 | ethereum | `0xb401f0cff9f05d10699c0e2c88a81dd923c1ffff` | AuraProxyOFT | impl | live | yes |
 | ethereum | `0xba100000625a3754423978a60c9317c58a424e3d` | BalancerGovernanceToken | impl | live | no |
+| ethereum | `0xbcf3b107a5ecdd8efb70a74f44b827a1f7108c48` | BridgeDelegateReceiver | impl | live | yes |
 | ethereum | `0xbcfd07b87c27656031a1b25fffede7f9b955009a` | AuraLockerModule-2 | impl | live | no |
 | ethereum | `0xc0c293ce456ff0ed870add98a0828dd4d2903dbf` | AuraToken | impl | live | no |
 | ethereum | `0xc44d3604a332b71e2e6a87a714614a505ee88bc8` | RAuraRedemption | impl | live | no |
@@ -137,14 +143,18 @@
 | ethereum | `0xefc9f1fa4ce75290deeeeb57a3b75dc79066ac3f` | AuraVestedEscrow-2 | impl | live | no |
 | ethereum | `0xf37c41ef2281893b5971769370d6cdd35864b503` | Utilities | impl | live | no |
 | ethereum | `0xf403c135812408bfbe8713b5a23a04b3d48aae31` | Booster-5 | impl | live | no |
+| ethereum | `0xf5e2cfde016bd55bef42a5a4baad7e21cd39720d` | ProxyFactory | impl | inactive | no |
 | ethereum | `0xfaa2ed111b4f580fcb85c48e6dc6782dc5fcd7a6` | AuraBalVault | impl | live | no |
+| ethereum | `0xfcdeb46a92ff6b2980b60e175c5e6523d5d4cbab` | ProxyFactory | impl | inactive | no |
 | gnosis | `0x0f641b291ba374ec9b17a878c54b98005a0bacae` | RewardFactory-2 | impl | live | no |
 | gnosis | `0x0fec3d212bcc29ef3e505b555d7a7343df0b7f76` | RewardPoolDepositWrapper-3 | impl | live | no |
 | gnosis | `0x1509706a6c66ca549ff0cb464de88231ddbe213b` | AuraOFT | impl | live | no |
 | gnosis | `0x254f3a2974b97dc2e675f6115c845567c55f83b0` | CowSwapFeeBurner | impl | live | no |
 | gnosis | `0x37aa9ad9744d0686df1c7053225e700ce13e31dd` | KeeperMulticall3 | impl | live | no |
+| gnosis | `0x421dbf836b903b15ba09c40553ad305d22275482` | SidechainView | impl | live | no |
 | gnosis | `0x4ea38a5739d467f7f84c06155ee2ad745e5328e8` | SidechainClaimZap-3 | impl | live | no |
 | gnosis | `0x4eff2d77d9ffbaefb4b141a3e494c085b3ff4cb5` | Router-2 | impl | live | no |
+| gnosis | `0x57acb721fcf3d900b480a90a55191cf8f37ad478` | GnosisSafeProxy | proxy | live | no |
 | gnosis | `0x5915dea04ce390f0f44ca0806f7c6dd99ce2f941` | ERC4626CowSwapFeeBurner | impl | live | no |
 | gnosis | `0x6ead84af26e997d27998fc9f8614e8a19bb93938` | CompositeLiquidityRouter-2 | impl | live | no |
 | gnosis | `0x731886426a3199b988194831031dfb993f25d961` | ProxyFactory | impl | live | no |
@@ -158,6 +168,7 @@
 | gnosis | `0xc181edc719480bd089b94647c2dc504e2700a2b0` | RewardFactory | impl | live | yes |
 | gnosis | `0xca85e2ce206b48ee28a87b0a06f9519abe627451` | ChildStashRewardDistro | impl | live | no |
 | gnosis | `0xcb3fe6cc529101af5880a05429729f967501c9e7` | LBPMigrationRouter | impl | live | no |
+| gnosis | `0xd86ceb76e9430d3bde90ded79c82ae62bc66d68b` | GnosisSafeProxy | proxy | live | no |
 | gnosis | `0xd9e91f7ad501929b089992842a3f193795e6479e` | FixedPriceLBPoolFactory | impl | live | no |
 | gnosis | `0xe2fa4e1d17725e72dcdafe943ecf45df4b9e285b` | BatchRouter | impl | live | no |
 | gnosis | `0xeb1eeabf0126d813589c3d2cfeffe410d9ae3863` | WeightedPoolFactory-2 | impl | live | no |
@@ -165,6 +176,7 @@
 | gnosis | `0xf24074a1a6ad620adc14745f9cc1fb1e7ba6ca71` | RewardFactory | impl | live | yes |
 | gnosis | `0xf9309a99836b5f07a2440c177c049b0f0a9a2c33` | LBPMigrationRouter-2 | impl | live | no |
 | optimism | `0x03cbccbe8d2073a1dc186ae6bcd95390fcdff36f` | UnbalancedAddViaSwapRouter | impl | live | no |
+| optimism | `0x0451255563e2aca170b2552111837572e7a0bacd` | OptimismBridgeSender-2 | impl | live | no |
 | optimism | `0x0f08eef2c785aa5e7539684af04755dec1347b7c` | WeightedPoolFactory-3 | impl | live | no |
 | optimism | `0x1509706a6c66ca549ff0cb464de88231ddbe213b` | AuraOFT-3 | impl | live | no |
 | optimism | `0x254f3a2974b97dc2e675f6115c845567c55f83b0` | WeightedPoolFactory | impl | live | no |
@@ -196,9 +208,11 @@
 | polygon | `0x87299312c820607f1e7e4d0c6715ceb594306fe9` | RewardFactory | impl | live | yes |
 | polygon | `0x8b9da502cccb32dbf19cd68e258e6fd05e1b5eee` | BoosterOwnerLite | impl | live | no |
 | polygon | `0x98ef32edd24e2c92525e59afc4475c1242a30184` | RewardFactory | impl | live | yes |
+| polygon | `0x9e4cbe2eaff2fa727bc805e6cbbf2ff01ddb812b` | AuraViewHelpersLite-2 | impl | live | no |
 | polygon | `0xb292be31649a0b079dbdb772fcf5c7a02a6e0144` | RewardFactory | impl | live | yes |
 | polygon | `0xc181edc719480bd089b94647c2dc504e2700a2b0` | RewardFactory | impl | live | yes |
 | polygon | `0xce66e8300dc1d1f5b0e46e9145fdf680a7e41146` | RewardPoolDepositWrapper | impl | live | no |
+| polygon | `0xea865d0dacf923c8d6254de734f31294ca74c1dc` | SidechainView-2 | impl | live | no |
 | polygon | `0xf24074a1a6ad620adc14745f9cc1fb1e7ba6ca71` | RewardFactory | impl | live | yes |
 
 ## Source unavailable (1)

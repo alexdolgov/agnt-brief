@@ -10,19 +10,29 @@
     "build_command": "forge build --root \"src/TokenList-2\"",
     "compiler_selection": "source_pragmas"
   },
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x14bf347a597aac623240ae7ac8383ae198966277",
+      "address": "0xc8dc8dcdfd94f9cb953f379a7ad8da5fdc303f3e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live",
-      "logic_topography_run_id": null,
-      "logic_topography_row_id": null
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395531"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xde9395d2f4940aa501f9a27b98592589d14bb0f7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live",
+      "logic_topography_run_id": "logic-topography-normalized-candidate-20260715-v1",
+      "logic_topography_row_id": "395532"
     }
   ]
 }

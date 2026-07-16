@@ -2,18 +2,5 @@
   "schema_version": "repo_tree_missing_sources@v1",
   "network_policy": "offline_cache_only",
   "project_key": "ondo-finance",
-  "missing": [
-    {
-      "chain_id": 137,
-      "chain": "polygon",
-      "address": "0x6b7443808acfcd48f1de212c2557462fa86ee945",
-      "canonical_source_address": null
-    },
-    {
-      "chain_id": 137,
-      "chain": "polygon",
-      "address": "0x7cd852c0d7613aa869e632929560f310d4059ac1",
-      "canonical_source_address": null
-    }
-  ]
+  "missing": []
 }

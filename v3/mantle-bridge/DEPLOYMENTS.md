@@ -1,6 +1,6 @@
 # mantle-bridge — deployments
 
-26 verified deployment(s) across 23 component(s).
+32 verified deployment(s) across 24 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -13,11 +13,11 @@
 | ethereum | `0x291dc3819b863e19b0a9b9809f8025d2eb4aae93` | CanonicalTransactionChain | impl | unknown | no |
 | ethereum | `0x2cc62ecbb6c99eb687acc079ce367eafec007222` | L1ERC721Bridge | impl | unknown | no |
 | ethereum | `0x31abe1c466c2a8b95fd84258dd1471472979b650` | BondManager | impl | unknown | no |
-| ethereum | `0x31d543e7be1da6efdc2206ef7822879045b9f481` | Proxy | proxy | live | yes |
-| ethereum | `0x3b96c878cc334a7d9ea994ec4b6c28bddde00eb2` | Proxy | proxy | live | yes |
+| ethereum | `0x31d543e7be1da6efdc2206ef7822879045b9f481` | Proxy-2 | proxy | live | yes |
+| ethereum | `0x3b96c878cc334a7d9ea994ec4b6c28bddde00eb2` | Proxy-2 | proxy | live | yes |
 | ethereum | `0x3e6475fc2b78fdb0b03fdce4c8a2ee4106ee9f2f` | EmptyContract | impl | unknown | no |
 | ethereum | `0x3f75372387670ab855e45c5a498b2c271e8967ae` | L1CrossDomainMessenger | impl | unknown | no |
-| ethereum | `0x427ea0710fa5252057f0d88274f7aeb308386caf` | Proxy | proxy | live | yes |
+| ethereum | `0x427ea0710fa5252057f0d88274f7aeb308386caf` | Proxy-2 | proxy | live | yes |
 | ethereum | `0x5dd48ef85b99e3e3d711ca8b41cbc07da1677f3e` | ChainStorageContainer | impl | unknown | no |
 | ethereum | `0x65ca5f4eafc1509909d0dde211ffc6ea2a3e0502` | PortalSender | impl | unknown | no |
 | ethereum | `0x6968f3f16c3e64003f02e121cf0d5ccbf5625a42` | Lib_AddressManager | impl | live | no |
@@ -29,4 +29,10 @@
 | ethereum | `0xfe92ac303841f9ee446828e5215affb044937d0d` | AddressDictator | impl | unknown | no |
 | ethereum | `0xffb94c81d9a283ab4373ab4ba3534dc4fb8d1295` | MantleTokenMigrator | impl | unknown | no |
 | mantle | `0x1858d52cf57c07a018171d7a1e68dc081f17144f` | AgniPool | impl | unknown | no |
+| mantle | `0x4200000000000000000000000000000000000007` | Proxy | proxy | live | no |
+| mantle | `0x4200000000000000000000000000000000000010` | Proxy | proxy | live | no |
+| mantle | `0x4200000000000000000000000000000000000011` | Proxy | proxy | live | no |
+| mantle | `0x4200000000000000000000000000000000000013` | Proxy | proxy | live | no |
+| mantle | `0x4200000000000000000000000000000000000016` | Proxy | proxy | live | no |
+| mantle | `0x4200000000000000000000000000000000000019` | Proxy | proxy | live | no |
 | mantle | `0x6968f3f16c3e64003f02e121cf0d5ccbf5625a42` | IONX | impl | live | no |
